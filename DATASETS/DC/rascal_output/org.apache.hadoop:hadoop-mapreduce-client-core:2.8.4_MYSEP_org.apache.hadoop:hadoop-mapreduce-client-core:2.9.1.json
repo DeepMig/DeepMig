@@ -1,0 +1,745 @@
+[
+  {
+    "coordinatesV1": "org.apache.hadoop:hadoop-mapreduce-client-core:2.8.4",
+    "coordinatesV2": "org.apache.hadoop:hadoop-mapreduce-client-core:2.9.1",
+    "caller": "|java+method:///org/apache/hadoop/mapred/Master/getMasterPrincipal(org.apache.hadoop.conf.Configuration)|",
+    "called": "|java+method:///org/apache/hadoop/yarn/client/util/YarnClientUtils/getRmPrincipal(org.apache.hadoop.conf.Configuration)|",
+    "v1Body": [
+      "|java+method:///java/net/InetSocketAddress/getHostName()|",
+      "|java+method:///org/apache/hadoop/mapred/Master/getMasterUserName(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///org/apache/hadoop/security/SecurityUtil/getServerPrincipal(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/hadoop/mapred/Master/getMasterAddress(org.apache.hadoop.conf.Configuration)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/yarn/client/util/YarnClientUtils/getRmPrincipal(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/apache/hadoop/security/SecurityUtil/getServerPrincipal(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/hadoop/conf/Configuration/get(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/hadoop/conf/Configuration/get(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/mapred/Master/getMasterAddress(org.apache.hadoop.conf.Configuration)|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-yarn-client:2.9.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.hadoop:hadoop-mapreduce-client-core:2.8.4",
+    "coordinatesV2": "org.apache.hadoop:hadoop-mapreduce-client-core:2.9.1",
+    "caller": "|java+constructor:///org/apache/hadoop/mapreduce/jobhistory/MapAttemptFinishedEvent/MapAttemptFinishedEvent(org.apache.hadoop.mapreduce.TaskAttemptID,org.apache.hadoop.mapreduce.TaskType,java.lang.String,long,long,java.lang.String,int,java.lang.String,java.lang.String,org.apache.hadoop.mapreduce.Counters,int%5B%5D%5B%5D)|",
+    "called": "|java+method:///org/apache/hadoop/yarn/util/SystemClock/getTime()|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/mapred/ProgressSplitsBlock/arrayGetPhysMemKbytes(int%5B%5D%5B%5D)|",
+      "|java+method:///org/apache/hadoop/mapred/ProgressSplitsBlock/arrayGetVMemKbytes(int%5B%5D%5B%5D)|",
+      "|java+method:///org/apache/hadoop/mapred/ProgressSplitsBlock/arrayGetCPUTime(int%5B%5D%5B%5D)|",
+      "|java+method:///org/apache/hadoop/mapred/ProgressSplitsBlock/arrayGetWallclockTime(int%5B%5D%5B%5D)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/yarn/util/SystemClock/getTime()|",
+      "|java+constructor:///org/apache/hadoop/mapreduce/jobhistory/MapAttemptFinishedEvent/MapAttemptFinishedEvent(org.apache.hadoop.mapreduce.TaskAttemptID,org.apache.hadoop.mapreduce.TaskType,java.lang.String,long,long,java.lang.String,int,java.lang.String,java.lang.String,org.apache.hadoop.mapreduce.Counters,int%5B%5D%5B%5D,long)|",
+      "|java+method:///org/apache/hadoop/yarn/util/SystemClock/getInstance()|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-yarn-common:2.9.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.hadoop:hadoop-mapreduce-client-core:2.8.4",
+    "coordinatesV2": "org.apache.hadoop:hadoop-mapreduce-client-core:2.9.1",
+    "caller": "|java+constructor:///org/apache/hadoop/mapreduce/jobhistory/TaskFailedEvent/TaskFailedEvent(org.apache.hadoop.mapreduce.TaskID,long,org.apache.hadoop.mapreduce.TaskType,java.lang.String,java.lang.String,org.apache.hadoop.mapreduce.TaskAttemptID,org.apache.hadoop.mapreduce.Counters)|",
+    "called": "|java+method:///org/apache/hadoop/yarn/util/SystemClock/getTime()|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/yarn/util/SystemClock/getInstance()|",
+      "|java+constructor:///org/apache/hadoop/mapreduce/jobhistory/TaskFailedEvent/TaskFailedEvent(org.apache.hadoop.mapreduce.TaskID,long,org.apache.hadoop.mapreduce.TaskType,java.lang.String,java.lang.String,org.apache.hadoop.mapreduce.TaskAttemptID,org.apache.hadoop.mapreduce.Counters,long)|",
+      "|java+method:///org/apache/hadoop/yarn/util/SystemClock/getTime()|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-yarn-common:2.9.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.hadoop:hadoop-mapreduce-client-core:2.8.4",
+    "coordinatesV2": "org.apache.hadoop:hadoop-mapreduce-client-core:2.9.1",
+    "caller": "|java+constructor:///org/apache/hadoop/mapreduce/jobhistory/TaskAttemptUnsuccessfulCompletionEvent/TaskAttemptUnsuccessfulCompletionEvent(org.apache.hadoop.mapreduce.TaskAttemptID,org.apache.hadoop.mapreduce.TaskType,java.lang.String,long,java.lang.String,int,java.lang.String,java.lang.String,org.apache.hadoop.mapreduce.Counters,int%5B%5D%5B%5D)|",
+    "called": "|java+method:///org/apache/hadoop/yarn/util/SystemClock/getTime()|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/mapred/ProgressSplitsBlock/arrayGetPhysMemKbytes(int%5B%5D%5B%5D)|",
+      "|java+method:///org/apache/hadoop/mapred/ProgressSplitsBlock/arrayGetVMemKbytes(int%5B%5D%5B%5D)|",
+      "|java+method:///org/apache/hadoop/mapred/ProgressSplitsBlock/arrayGetCPUTime(int%5B%5D%5B%5D)|",
+      "|java+method:///org/apache/hadoop/mapred/ProgressSplitsBlock/arrayGetWallclockTime(int%5B%5D%5B%5D)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/yarn/util/SystemClock/getInstance()|",
+      "|java+constructor:///org/apache/hadoop/mapreduce/jobhistory/TaskAttemptUnsuccessfulCompletionEvent/TaskAttemptUnsuccessfulCompletionEvent(org.apache.hadoop.mapreduce.TaskAttemptID,org.apache.hadoop.mapreduce.TaskType,java.lang.String,long,java.lang.String,int,java.lang.String,java.lang.String,org.apache.hadoop.mapreduce.Counters,int%5B%5D%5B%5D,long)|",
+      "|java+method:///org/apache/hadoop/yarn/util/SystemClock/getTime()|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-yarn-common:2.9.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.hadoop:hadoop-mapreduce-client-core:2.8.4",
+    "coordinatesV2": "org.apache.hadoop:hadoop-mapreduce-client-core:2.9.1",
+    "caller": "|java+constructor:///org/apache/hadoop/mapreduce/jobhistory/TaskAttemptFinishedEvent/TaskAttemptFinishedEvent(org.apache.hadoop.mapreduce.TaskAttemptID,org.apache.hadoop.mapreduce.TaskType,java.lang.String,long,java.lang.String,java.lang.String,java.lang.String,org.apache.hadoop.mapreduce.Counters)|",
+    "called": "|java+method:///org/apache/hadoop/yarn/util/SystemClock/getTime()|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/yarn/util/SystemClock/getTime()|",
+      "|java+constructor:///org/apache/hadoop/mapreduce/jobhistory/TaskAttemptFinishedEvent/TaskAttemptFinishedEvent(org.apache.hadoop.mapreduce.TaskAttemptID,org.apache.hadoop.mapreduce.TaskType,java.lang.String,long,java.lang.String,java.lang.String,java.lang.String,org.apache.hadoop.mapreduce.Counters,long)|",
+      "|java+method:///org/apache/hadoop/yarn/util/SystemClock/getInstance()|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-yarn-common:2.9.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.hadoop:hadoop-mapreduce-client-core:2.8.4",
+    "coordinatesV2": "org.apache.hadoop:hadoop-mapreduce-client-core:2.9.1",
+    "caller": "|java+method:///org/apache/hadoop/mapreduce/tools/CLI/run(java.lang.String%5B%5D)|",
+    "called": "|java+constructor:///org/apache/hadoop/yarn/logaggregation/LogCLIHelpers/LogCLIHelpers()|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/Job/submit()|",
+      "|java+method:///org/apache/hadoop/mapreduce/tools/CLI/viewHistory(java.lang.String,boolean)|",
+      "|java+constructor:///org/apache/hadoop/yarn/logaggregation/LogCLIHelpers/LogCLIHelpers()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/hadoop/mapreduce/tools/CLI/displayUsage(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/hadoop/yarn/logaggregation/LogCLIHelpers/setConf(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///org/apache/hadoop/util/StringUtils/toLowerCase(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/mapreduce/Job/setPriorityAsInteger(int)|",
+      "|java+method:///org/apache/hadoop/util/StringUtils/toUpperCase(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/mapreduce/tools/CLI/getJob(org.apache.hadoop.mapreduce.JobID)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/mapreduce/Job/killJob()|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/mapreduce/v2/LogParams/getApplicationId()|",
+      "|java+constructor:///org/apache/hadoop/mapred/JobConf/JobConf(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/mapreduce/TaskAttemptID/getJobID()|",
+      "|java+method:///org/apache/hadoop/mapreduce/tools/CLI/listEvents(org.apache.hadoop.mapreduce.Job,int,int)|",
+      "|java+method:///java/io/PrintStream/println()|",
+      "|java+method:///java/io/IOException/getMessage()|",
+      "|java+method:///org/apache/hadoop/mapreduce/tools/CLI/getCounter(org.apache.hadoop.mapreduce.Counters,java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/hadoop/mapreduce/tools/CLI/listActiveTrackers(org.apache.hadoop.mapreduce.Cluster)|",
+      "|java+method:///org/apache/commons/logging/Log/info(java.lang.Object)|",
+      "|java+method:///org/apache/hadoop/mapreduce/Job/getJobID()|",
+      "|java+method:///org/apache/hadoop/yarn/logaggregation/LogCLIHelpers/dumpAContainersLogs(java.lang.String,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/hadoop/mapreduce/JobPriority/valueOf(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/mapreduce/v2/LogParams/getOwner()|",
+      "|java+method:///org/apache/hadoop/mapreduce/Job/getStatus()|",
+      "|java+method:///java/io/PrintStream/println(long)|",
+      "|java+method:///org/apache/hadoop/mapreduce/Cluster/getLogParams(org.apache.hadoop.mapreduce.JobID,org.apache.hadoop.mapreduce.TaskAttemptID)|",
+      "|java+method:///org/apache/hadoop/mapreduce/tools/CLI/getConf()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/apache/hadoop/mapreduce/JobID/forName(java.lang.String)|",
+      "|java+method:///java/util/Set/contains(java.lang.Object)|",
+      "|java+method:///org/apache/hadoop/mapreduce/Job/getInstance(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///org/apache/hadoop/ipc/RemoteException/unwrapRemoteException()|",
+      "|java+method:///org/apache/hadoop/mapreduce/Job/setPriority(org.apache.hadoop.mapreduce.JobPriority)|",
+      "|java+method:///org/apache/hadoop/mapreduce/JobStatus/getState()|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/mapreduce/v2/LogParams/getNodeId()|",
+      "|java+method:///org/apache/hadoop/mapreduce/tools/CLI/createCluster()|",
+      "|java+method:///org/apache/hadoop/mapreduce/Job/killTask(org.apache.hadoop.mapreduce.TaskAttemptID,boolean)|",
+      "|java+method:///org/apache/hadoop/mapreduce/Job/getCounters()|",
+      "|java+method:///org/apache/hadoop/mapreduce/v2/LogParams/getContainerId()|",
+      "|java+method:///org/apache/hadoop/mapreduce/tools/CLI/listJobs(org.apache.hadoop.mapreduce.Cluster)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/apache/hadoop/mapreduce/tools/CLI/listAllJobs(org.apache.hadoop.mapreduce.Cluster)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.Object)|",
+      "|java+method:///org/apache/hadoop/mapreduce/tools/CLI/listBlacklistedTrackers(org.apache.hadoop.mapreduce.Cluster)|",
+      "|java+method:///org/apache/hadoop/mapreduce/TaskAttemptID/forName(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/mapreduce/tools/CLI/displayTasks(org.apache.hadoop.mapreduce.Job,java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/hadoop/mapreduce/Cluster/close()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/Job/submit()|",
+      "|java+method:///org/apache/hadoop/mapreduce/tools/CLI/viewHistory(java.lang.String,boolean,java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/apache/hadoop/yarn/logaggregation/LogCLIHelpers/LogCLIHelpers()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/hadoop/mapreduce/tools/CLI/displayUsage(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/yarn/logaggregation/LogCLIHelpers/setConf(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///org/apache/hadoop/util/StringUtils/toLowerCase(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/mapreduce/Job/setPriorityAsInteger(int)|",
+      "|java+method:///org/apache/hadoop/util/StringUtils/toUpperCase(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/mapreduce/tools/CLI/getJob(org.apache.hadoop.mapreduce.JobID)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/mapreduce/Job/killJob()|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/mapreduce/v2/LogParams/getApplicationId()|",
+      "|java+constructor:///org/apache/hadoop/mapred/JobConf/JobConf(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/mapreduce/TaskAttemptID/getJobID()|",
+      "|java+method:///org/apache/hadoop/mapreduce/tools/CLI/listEvents(org.apache.hadoop.mapreduce.Job,int,int)|",
+      "|java+method:///java/io/PrintStream/println()|",
+      "|java+method:///java/io/IOException/getMessage()|",
+      "|java+method:///org/apache/hadoop/mapreduce/tools/CLI/getCounter(org.apache.hadoop.mapreduce.Counters,java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/hadoop/mapreduce/tools/CLI/listActiveTrackers(org.apache.hadoop.mapreduce.Cluster)|",
+      "|java+method:///org/apache/hadoop/fs/FileSystem/copyToLocalFile(org.apache.hadoop.fs.Path,org.apache.hadoop.fs.Path)|",
+      "|java+method:///org/apache/commons/logging/Log/info(java.lang.Object)|",
+      "|java+method:///org/apache/hadoop/mapreduce/Job/getJobID()|",
+      "|java+method:///org/apache/hadoop/mapreduce/Job/getJobFile()|",
+      "|java+method:///org/apache/hadoop/yarn/logaggregation/LogCLIHelpers/dumpAContainersLogs(java.lang.String,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/hadoop/mapreduce/JobPriority/valueOf(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/mapreduce/v2/LogParams/getOwner()|",
+      "|java+method:///org/apache/hadoop/mapreduce/Job/getStatus()|",
+      "|java+method:///java/io/PrintStream/println(long)|",
+      "|java+method:///org/apache/hadoop/mapreduce/Cluster/getLogParams(org.apache.hadoop.mapreduce.JobID,org.apache.hadoop.mapreduce.TaskAttemptID)|",
+      "|java+method:///org/apache/hadoop/mapreduce/tools/CLI/getConf()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/apache/hadoop/mapreduce/JobID/forName(java.lang.String)|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+method:///java/util/Set/contains(java.lang.Object)|",
+      "|java+method:///org/apache/hadoop/mapreduce/Job/getInstance(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///org/apache/hadoop/ipc/RemoteException/unwrapRemoteException()|",
+      "|java+method:///org/apache/hadoop/mapreduce/Job/setPriority(org.apache.hadoop.mapreduce.JobPriority)|",
+      "|java+method:///org/apache/hadoop/mapreduce/JobStatus/getState()|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/mapreduce/v2/LogParams/getNodeId()|",
+      "|java+method:///org/apache/hadoop/mapreduce/tools/CLI/createCluster()|",
+      "|java+method:///org/apache/hadoop/mapreduce/Job/killTask(org.apache.hadoop.mapreduce.TaskAttemptID,boolean)|",
+      "|java+method:///org/apache/hadoop/mapreduce/Job/getCounters()|",
+      "|java+method:///org/apache/hadoop/mapreduce/v2/LogParams/getContainerId()|",
+      "|java+method:///org/apache/hadoop/mapreduce/tools/CLI/listJobs(org.apache.hadoop.mapreduce.Cluster)|",
+      "|java+method:///org/apache/hadoop/mapreduce/tools/CLI/listAllJobs(org.apache.hadoop.mapreduce.Cluster)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.Object)|",
+      "|java+method:///org/apache/hadoop/mapreduce/tools/CLI/listBlacklistedTrackers(org.apache.hadoop.mapreduce.Cluster)|",
+      "|java+method:///org/apache/hadoop/mapreduce/Job/getHistoryUrl()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/apache/hadoop/fs/FileSystem/get(org.apache.hadoop.conf.Configuration)|",
+      "|java+constructor:///org/apache/hadoop/fs/Path/Path(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/mapreduce/TaskAttemptID/forName(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/mapreduce/tools/CLI/displayTasks(org.apache.hadoop.mapreduce.Job,java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/hadoop/mapreduce/Cluster/close()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/String/endsWith(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-yarn-common:2.9.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.hadoop:hadoop-mapreduce-client-core:2.8.4",
+    "coordinatesV2": "org.apache.hadoop:hadoop-mapreduce-client-core:2.9.1",
+    "caller": "|java+constructor:///org/apache/hadoop/mapreduce/jobhistory/ReduceAttemptFinishedEvent/ReduceAttemptFinishedEvent(org.apache.hadoop.mapreduce.TaskAttemptID,org.apache.hadoop.mapreduce.TaskType,java.lang.String,long,long,long,java.lang.String,int,java.lang.String,java.lang.String,org.apache.hadoop.mapreduce.Counters,int%5B%5D%5B%5D)|",
+    "called": "|java+method:///org/apache/hadoop/yarn/util/SystemClock/getTime()|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/mapred/ProgressSplitsBlock/arrayGetPhysMemKbytes(int%5B%5D%5B%5D)|",
+      "|java+method:///org/apache/hadoop/mapred/ProgressSplitsBlock/arrayGetVMemKbytes(int%5B%5D%5B%5D)|",
+      "|java+method:///org/apache/hadoop/mapred/ProgressSplitsBlock/arrayGetCPUTime(int%5B%5D%5B%5D)|",
+      "|java+method:///org/apache/hadoop/mapred/ProgressSplitsBlock/arrayGetWallclockTime(int%5B%5D%5B%5D)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/yarn/util/SystemClock/getInstance()|",
+      "|java+constructor:///org/apache/hadoop/mapreduce/jobhistory/ReduceAttemptFinishedEvent/ReduceAttemptFinishedEvent(org.apache.hadoop.mapreduce.TaskAttemptID,org.apache.hadoop.mapreduce.TaskType,java.lang.String,long,long,long,java.lang.String,int,java.lang.String,java.lang.String,org.apache.hadoop.mapreduce.Counters,int%5B%5D%5B%5D,long)|",
+      "|java+method:///org/apache/hadoop/yarn/util/SystemClock/getTime()|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-yarn-common:2.9.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.hadoop:hadoop-mapreduce-client-core:2.8.4",
+    "coordinatesV2": "org.apache.hadoop:hadoop-mapreduce-client-core:2.9.1",
+    "caller": "|java+constructor:///org/apache/hadoop/mapreduce/jobhistory/TaskFinishedEvent/TaskFinishedEvent(org.apache.hadoop.mapreduce.TaskID,org.apache.hadoop.mapreduce.TaskAttemptID,long,org.apache.hadoop.mapreduce.TaskType,java.lang.String,org.apache.hadoop.mapreduce.Counters)|",
+    "called": "|java+method:///org/apache/hadoop/yarn/util/SystemClock/getTime()|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/yarn/util/SystemClock/getInstance()|",
+      "|java+constructor:///org/apache/hadoop/mapreduce/jobhistory/TaskFinishedEvent/TaskFinishedEvent(org.apache.hadoop.mapreduce.TaskID,org.apache.hadoop.mapreduce.TaskAttemptID,long,org.apache.hadoop.mapreduce.TaskType,java.lang.String,org.apache.hadoop.mapreduce.Counters,long)|",
+      "|java+method:///org/apache/hadoop/yarn/util/SystemClock/getTime()|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-yarn-common:2.9.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.hadoop:hadoop-mapreduce-client-core:2.8.4",
+    "coordinatesV2": "org.apache.hadoop:hadoop-mapreduce-client-core:2.9.1",
+    "caller": "|java+constructor:///org/apache/hadoop/mapreduce/jobhistory/JobFinished$Builder/JobFinished$Builder(org.apache.hadoop.mapreduce.jobhistory.JobFinished$Builder)|",
+    "called": "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/JobFinished$Builder/isValidValue(org.apache.avro.Schema$Field,java.lang.Object)|",
+      "|java+method:///org/apache/avro/Schema$Field/schema()|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/JobFinished$Builder/fields()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/JobFinished$Builder/fieldSetFlags()|",
+      "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|",
+      "|java+method:///org/apache/avro/generic/GenericData/deepCopy(org.apache.avro.Schema,java.lang.Object)|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/JobFinished$Builder/data()|"
+    ],
+    "affectedLib": "org.apache.avro:avro:1.7.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.hadoop:hadoop-mapreduce-client-core:2.8.4",
+    "coordinatesV2": "org.apache.hadoop:hadoop-mapreduce-client-core:2.9.1",
+    "caller": "|java+constructor:///org/apache/hadoop/mapreduce/jobhistory/JobQueueChange$Builder/JobQueueChange$Builder(org.apache.hadoop.mapreduce.jobhistory.JobQueueChange$Builder)|",
+    "called": "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/JobQueueChange$Builder/data()|",
+      "|java+method:///org/apache/avro/generic/GenericData/deepCopy(org.apache.avro.Schema,java.lang.Object)|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/JobQueueChange$Builder/fields()|",
+      "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/JobQueueChange$Builder/fieldSetFlags()|",
+      "|java+method:///org/apache/avro/Schema$Field/schema()|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/JobQueueChange$Builder/isValidValue(org.apache.avro.Schema$Field,java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.avro:avro:1.7.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.hadoop:hadoop-mapreduce-client-core:2.8.4",
+    "coordinatesV2": "org.apache.hadoop:hadoop-mapreduce-client-core:2.9.1",
+    "caller": "|java+constructor:///org/apache/hadoop/mapreduce/jobhistory/JobPriorityChange$Builder/JobPriorityChange$Builder(org.apache.hadoop.mapreduce.jobhistory.JobPriorityChange$Builder)|",
+    "called": "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/JobPriorityChange$Builder/data()|",
+      "|java+method:///org/apache/avro/generic/GenericData/deepCopy(org.apache.avro.Schema,java.lang.Object)|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/JobPriorityChange$Builder/isValidValue(org.apache.avro.Schema$Field,java.lang.Object)|",
+      "|java+method:///org/apache/avro/Schema$Field/schema()|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/JobPriorityChange$Builder/fields()|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/JobPriorityChange$Builder/fieldSetFlags()|",
+      "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|"
+    ],
+    "affectedLib": "org.apache.avro:avro:1.7.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.hadoop:hadoop-mapreduce-client-core:2.8.4",
+    "coordinatesV2": "org.apache.hadoop:hadoop-mapreduce-client-core:2.9.1",
+    "caller": "|java+constructor:///org/apache/hadoop/mapreduce/jobhistory/TaskFinished$Builder/TaskFinished$Builder(org.apache.hadoop.mapreduce.jobhistory.TaskFinished$Builder)|",
+    "called": "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/TaskFinished$Builder/isValidValue(org.apache.avro.Schema$Field,java.lang.Object)|",
+      "|java+method:///org/apache/avro/generic/GenericData/deepCopy(org.apache.avro.Schema,java.lang.Object)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/TaskFinished$Builder/fieldSetFlags()|",
+      "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/TaskFinished$Builder/fields()|",
+      "|java+method:///org/apache/avro/Schema$Field/schema()|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/TaskFinished$Builder/data()|"
+    ],
+    "affectedLib": "org.apache.avro:avro:1.7.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.hadoop:hadoop-mapreduce-client-core:2.8.4",
+    "coordinatesV2": "org.apache.hadoop:hadoop-mapreduce-client-core:2.9.1",
+    "caller": "|java+constructor:///org/apache/hadoop/mapreduce/jobhistory/JobUnsuccessfulCompletion$Builder/JobUnsuccessfulCompletion$Builder(org.apache.hadoop.mapreduce.jobhistory.JobUnsuccessfulCompletion$Builder)|",
+    "called": "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/JobUnsuccessfulCompletion$Builder/data()|",
+      "|java+method:///org/apache/avro/Schema$Field/schema()|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/JobUnsuccessfulCompletion$Builder/fieldSetFlags()|",
+      "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|",
+      "|java+method:///org/apache/avro/generic/GenericData/deepCopy(org.apache.avro.Schema,java.lang.Object)|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/JobUnsuccessfulCompletion$Builder/isValidValue(org.apache.avro.Schema$Field,java.lang.Object)|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/JobUnsuccessfulCompletion$Builder/fields()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "affectedLib": "org.apache.avro:avro:1.7.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.hadoop:hadoop-mapreduce-client-core:2.8.4",
+    "coordinatesV2": "org.apache.hadoop:hadoop-mapreduce-client-core:2.9.1",
+    "caller": "|java+constructor:///org/apache/hadoop/mapreduce/jobhistory/TaskAttemptFinished$Builder/TaskAttemptFinished$Builder(org.apache.hadoop.mapreduce.jobhistory.TaskAttemptFinished$Builder)|",
+    "called": "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/TaskAttemptFinished$Builder/fieldSetFlags()|",
+      "|java+method:///org/apache/avro/generic/GenericData/deepCopy(org.apache.avro.Schema,java.lang.Object)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/TaskAttemptFinished$Builder/fields()|",
+      "|java+method:///org/apache/avro/Schema$Field/schema()|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/TaskAttemptFinished$Builder/isValidValue(org.apache.avro.Schema$Field,java.lang.Object)|",
+      "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/TaskAttemptFinished$Builder/data()|"
+    ],
+    "affectedLib": "org.apache.avro:avro:1.7.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.hadoop:hadoop-mapreduce-client-core:2.8.4",
+    "coordinatesV2": "org.apache.hadoop:hadoop-mapreduce-client-core:2.9.1",
+    "caller": "|java+constructor:///org/apache/hadoop/mapreduce/jobhistory/MapAttemptFinished$Builder/MapAttemptFinished$Builder(org.apache.hadoop.mapreduce.jobhistory.MapAttemptFinished$Builder)|",
+    "called": "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/MapAttemptFinished$Builder/data()|",
+      "|java+method:///org/apache/avro/generic/GenericData/deepCopy(org.apache.avro.Schema,java.lang.Object)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/MapAttemptFinished$Builder/isValidValue(org.apache.avro.Schema$Field,java.lang.Object)|",
+      "|java+method:///org/apache/avro/Schema$Field/schema()|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/MapAttemptFinished$Builder/fields()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/MapAttemptFinished$Builder/fieldSetFlags()|"
+    ],
+    "affectedLib": "org.apache.avro:avro:1.7.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.hadoop:hadoop-mapreduce-client-core:2.8.4",
+    "coordinatesV2": "org.apache.hadoop:hadoop-mapreduce-client-core:2.9.1",
+    "caller": "|java+constructor:///org/apache/hadoop/mapreduce/jobhistory/JobStatusChanged$Builder/JobStatusChanged$Builder(org.apache.hadoop.mapreduce.jobhistory.JobStatusChanged$Builder)|",
+    "called": "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/JobStatusChanged$Builder/data()|",
+      "|java+method:///org/apache/avro/generic/GenericData/deepCopy(org.apache.avro.Schema,java.lang.Object)|",
+      "|java+method:///org/apache/avro/Schema$Field/schema()|",
+      "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/JobStatusChanged$Builder/fieldSetFlags()|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/JobStatusChanged$Builder/fields()|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/JobStatusChanged$Builder/isValidValue(org.apache.avro.Schema$Field,java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.avro:avro:1.7.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.hadoop:hadoop-mapreduce-client-core:2.8.4",
+    "coordinatesV2": "org.apache.hadoop:hadoop-mapreduce-client-core:2.9.1",
+    "caller": "|java+constructor:///org/apache/hadoop/mapreduce/jobhistory/JhCounter$Builder/JhCounter$Builder(org.apache.hadoop.mapreduce.jobhistory.JhCounter$Builder)|",
+    "called": "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/JhCounter$Builder/fieldSetFlags()|",
+      "|java+method:///org/apache/avro/Schema$Field/schema()|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/JhCounter$Builder/data()|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/JhCounter$Builder/isValidValue(org.apache.avro.Schema$Field,java.lang.Object)|",
+      "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|",
+      "|java+method:///org/apache/avro/generic/GenericData/deepCopy(org.apache.avro.Schema,java.lang.Object)|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/JhCounter$Builder/fields()|"
+    ],
+    "affectedLib": "org.apache.avro:avro:1.7.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.hadoop:hadoop-mapreduce-client-core:2.8.4",
+    "coordinatesV2": "org.apache.hadoop:hadoop-mapreduce-client-core:2.9.1",
+    "caller": "|java+constructor:///org/apache/hadoop/mapreduce/jobhistory/AMStarted$Builder/AMStarted$Builder(org.apache.hadoop.mapreduce.jobhistory.AMStarted$Builder)|",
+    "called": "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/AMStarted$Builder/data()|",
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///org/apache/avro/generic/GenericData/deepCopy(org.apache.avro.Schema,java.lang.Object)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/apache/avro/Schema$Field/schema()|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/AMStarted$Builder/fieldSetFlags()|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/AMStarted$Builder/fields()|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/AMStarted$Builder/isValidValue(org.apache.avro.Schema$Field,java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.avro:avro:1.7.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.hadoop:hadoop-mapreduce-client-core:2.8.4",
+    "coordinatesV2": "org.apache.hadoop:hadoop-mapreduce-client-core:2.9.1",
+    "caller": "|java+constructor:///org/apache/hadoop/mapreduce/jobhistory/JhCounterGroup$Builder/JhCounterGroup$Builder(org.apache.hadoop.mapreduce.jobhistory.JhCounterGroup$Builder)|",
+    "called": "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/JhCounterGroup$Builder/data()|",
+      "|java+method:///org/apache/avro/generic/GenericData/deepCopy(org.apache.avro.Schema,java.lang.Object)|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/JhCounterGroup$Builder/isValidValue(org.apache.avro.Schema$Field,java.lang.Object)|",
+      "|java+method:///org/apache/avro/Schema$Field/schema()|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/JhCounterGroup$Builder/fields()|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/JhCounterGroup$Builder/fieldSetFlags()|",
+      "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|"
+    ],
+    "affectedLib": "org.apache.avro:avro:1.7.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.hadoop:hadoop-mapreduce-client-core:2.8.4",
+    "coordinatesV2": "org.apache.hadoop:hadoop-mapreduce-client-core:2.9.1",
+    "caller": "|java+constructor:///org/apache/hadoop/mapreduce/jobhistory/TaskStarted$Builder/TaskStarted$Builder(org.apache.hadoop.mapreduce.jobhistory.TaskStarted$Builder)|",
+    "called": "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/TaskStarted$Builder/fields()|",
+      "|java+method:///org/apache/avro/Schema$Field/schema()|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/TaskStarted$Builder/isValidValue(org.apache.avro.Schema$Field,java.lang.Object)|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/TaskStarted$Builder/data()|",
+      "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|",
+      "|java+method:///org/apache/avro/generic/GenericData/deepCopy(org.apache.avro.Schema,java.lang.Object)|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/TaskStarted$Builder/fieldSetFlags()|"
+    ],
+    "affectedLib": "org.apache.avro:avro:1.7.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.hadoop:hadoop-mapreduce-client-core:2.8.4",
+    "coordinatesV2": "org.apache.hadoop:hadoop-mapreduce-client-core:2.9.1",
+    "caller": "|java+constructor:///org/apache/hadoop/mapreduce/jobhistory/TaskUpdated$Builder/TaskUpdated$Builder(org.apache.hadoop.mapreduce.jobhistory.TaskUpdated$Builder)|",
+    "called": "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/TaskUpdated$Builder/fieldSetFlags()|",
+      "|java+method:///org/apache/avro/generic/GenericData/deepCopy(org.apache.avro.Schema,java.lang.Object)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/TaskUpdated$Builder/data()|",
+      "|java+method:///org/apache/avro/Schema$Field/schema()|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/TaskUpdated$Builder/fields()|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/TaskUpdated$Builder/isValidValue(org.apache.avro.Schema$Field,java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.avro:avro:1.7.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.hadoop:hadoop-mapreduce-client-core:2.8.4",
+    "coordinatesV2": "org.apache.hadoop:hadoop-mapreduce-client-core:2.9.1",
+    "caller": "|java+constructor:///org/apache/hadoop/mapreduce/jobhistory/JobSubmitted$Builder/JobSubmitted$Builder(org.apache.hadoop.mapreduce.jobhistory.JobSubmitted$Builder)|",
+    "called": "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/avro/generic/GenericData/deepCopy(org.apache.avro.Schema,java.lang.Object)|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/JobSubmitted$Builder/isValidValue(org.apache.avro.Schema$Field,java.lang.Object)|",
+      "|java+method:///org/apache/avro/Schema$Field/schema()|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/JobSubmitted$Builder/fields()|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/JobSubmitted$Builder/fieldSetFlags()|",
+      "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/JobSubmitted$Builder/data()|",
+      "|java+method:///java/lang/Long/valueOf(long)|"
+    ],
+    "affectedLib": "org.apache.avro:avro:1.7.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.hadoop:hadoop-mapreduce-client-core:2.8.4",
+    "coordinatesV2": "org.apache.hadoop:hadoop-mapreduce-client-core:2.9.1",
+    "caller": "|java+constructor:///org/apache/hadoop/mapreduce/jobhistory/Event$Builder/Event$Builder(org.apache.hadoop.mapreduce.jobhistory.Event$Builder)|",
+    "called": "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/Event$Builder/fieldSetFlags()|",
+      "|java+method:///org/apache/avro/generic/GenericData/deepCopy(org.apache.avro.Schema,java.lang.Object)|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/Event$Builder/fields()|",
+      "|java+method:///org/apache/avro/Schema$Field/schema()|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/Event$Builder/isValidValue(org.apache.avro.Schema$Field,java.lang.Object)|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/Event$Builder/data()|",
+      "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|"
+    ],
+    "affectedLib": "org.apache.avro:avro:1.7.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.hadoop:hadoop-mapreduce-client-core:2.8.4",
+    "coordinatesV2": "org.apache.hadoop:hadoop-mapreduce-client-core:2.9.1",
+    "caller": "|java+constructor:///org/apache/hadoop/mapreduce/jobhistory/JobInfoChange$Builder/JobInfoChange$Builder(org.apache.hadoop.mapreduce.jobhistory.JobInfoChange$Builder)|",
+    "called": "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/JobInfoChange$Builder/fieldSetFlags()|",
+      "|java+method:///org/apache/avro/generic/GenericData/deepCopy(org.apache.avro.Schema,java.lang.Object)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/JobInfoChange$Builder/fields()|",
+      "|java+method:///org/apache/avro/Schema$Field/schema()|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/JobInfoChange$Builder/isValidValue(org.apache.avro.Schema$Field,java.lang.Object)|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/JobInfoChange$Builder/data()|",
+      "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|"
+    ],
+    "affectedLib": "org.apache.avro:avro:1.7.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.hadoop:hadoop-mapreduce-client-core:2.8.4",
+    "coordinatesV2": "org.apache.hadoop:hadoop-mapreduce-client-core:2.9.1",
+    "caller": "|java+constructor:///org/apache/hadoop/mapreduce/jobhistory/TaskAttemptUnsuccessfulCompletion$Builder/TaskAttemptUnsuccessfulCompletion$Builder(org.apache.hadoop.mapreduce.jobhistory.TaskAttemptUnsuccessfulCompletion$Builder)|",
+    "called": "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/avro/generic/GenericData/deepCopy(org.apache.avro.Schema,java.lang.Object)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/TaskAttemptUnsuccessfulCompletion$Builder/fields()|",
+      "|java+method:///org/apache/avro/Schema$Field/schema()|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/TaskAttemptUnsuccessfulCompletion$Builder/isValidValue(org.apache.avro.Schema$Field,java.lang.Object)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/TaskAttemptUnsuccessfulCompletion$Builder/data()|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/TaskAttemptUnsuccessfulCompletion$Builder/fieldSetFlags()|",
+      "|java+method:///java/lang/Integer/intValue()|"
+    ],
+    "affectedLib": "org.apache.avro:avro:1.7.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.hadoop:hadoop-mapreduce-client-core:2.8.4",
+    "coordinatesV2": "org.apache.hadoop:hadoop-mapreduce-client-core:2.9.1",
+    "caller": "|java+constructor:///org/apache/hadoop/mapreduce/jobhistory/JhCounters$Builder/JhCounters$Builder(org.apache.hadoop.mapreduce.jobhistory.JhCounters$Builder)|",
+    "called": "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/avro/generic/GenericData/deepCopy(org.apache.avro.Schema,java.lang.Object)|",
+      "|java+method:///org/apache/avro/Schema$Field/schema()|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/JhCounters$Builder/fieldSetFlags()|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/JhCounters$Builder/data()|",
+      "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/JhCounters$Builder/isValidValue(org.apache.avro.Schema$Field,java.lang.Object)|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/JhCounters$Builder/fields()|"
+    ],
+    "affectedLib": "org.apache.avro:avro:1.7.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.hadoop:hadoop-mapreduce-client-core:2.8.4",
+    "coordinatesV2": "org.apache.hadoop:hadoop-mapreduce-client-core:2.9.1",
+    "caller": "|java+constructor:///org/apache/hadoop/mapreduce/jobhistory/TaskFailed$Builder/TaskFailed$Builder(org.apache.hadoop.mapreduce.jobhistory.TaskFailed$Builder)|",
+    "called": "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/TaskFailed$Builder/data()|",
+      "|java+method:///org/apache/avro/generic/GenericData/deepCopy(org.apache.avro.Schema,java.lang.Object)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/TaskFailed$Builder/isValidValue(org.apache.avro.Schema$Field,java.lang.Object)|",
+      "|java+method:///org/apache/avro/Schema$Field/schema()|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/TaskFailed$Builder/fields()|",
+      "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/TaskFailed$Builder/fieldSetFlags()|"
+    ],
+    "affectedLib": "org.apache.avro:avro:1.7.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.hadoop:hadoop-mapreduce-client-core:2.8.4",
+    "coordinatesV2": "org.apache.hadoop:hadoop-mapreduce-client-core:2.9.1",
+    "caller": "|java+constructor:///org/apache/hadoop/mapreduce/jobhistory/TaskAttemptStarted$Builder/TaskAttemptStarted$Builder(org.apache.hadoop.mapreduce.jobhistory.TaskAttemptStarted$Builder)|",
+    "called": "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/TaskAttemptStarted$Builder/isValidValue(org.apache.avro.Schema$Field,java.lang.Object)|",
+      "|java+method:///org/apache/avro/generic/GenericData/deepCopy(org.apache.avro.Schema,java.lang.Object)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/TaskAttemptStarted$Builder/data()|",
+      "|java+method:///org/apache/avro/Schema$Field/schema()|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/TaskAttemptStarted$Builder/fieldSetFlags()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/TaskAttemptStarted$Builder/fields()|",
+      "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|"
+    ],
+    "affectedLib": "org.apache.avro:avro:1.7.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.hadoop:hadoop-mapreduce-client-core:2.8.4",
+    "coordinatesV2": "org.apache.hadoop:hadoop-mapreduce-client-core:2.9.1",
+    "caller": "|java+constructor:///org/apache/hadoop/mapreduce/jobhistory/ReduceAttemptFinished$Builder/ReduceAttemptFinished$Builder(org.apache.hadoop.mapreduce.jobhistory.ReduceAttemptFinished$Builder)|",
+    "called": "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/ReduceAttemptFinished$Builder/fieldSetFlags()|",
+      "|java+method:///org/apache/avro/generic/GenericData/deepCopy(org.apache.avro.Schema,java.lang.Object)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/ReduceAttemptFinished$Builder/fields()|",
+      "|java+method:///org/apache/avro/Schema$Field/schema()|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/ReduceAttemptFinished$Builder/isValidValue(org.apache.avro.Schema$Field,java.lang.Object)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/ReduceAttemptFinished$Builder/data()|"
+    ],
+    "affectedLib": "org.apache.avro:avro:1.7.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.hadoop:hadoop-mapreduce-client-core:2.8.4",
+    "coordinatesV2": "org.apache.hadoop:hadoop-mapreduce-client-core:2.9.1",
+    "caller": "|java+constructor:///org/apache/hadoop/mapreduce/jobhistory/JobInited$Builder/JobInited$Builder(org.apache.hadoop.mapreduce.jobhistory.JobInited$Builder)|",
+    "called": "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/JobInited$Builder/data()|",
+      "|java+method:///org/apache/avro/Schema$Field/schema()|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/JobInited$Builder/fieldSetFlags()|",
+      "|java+constructor:///org/apache/avro/specific/SpecificRecordBuilderBase/SpecificRecordBuilderBase(org.apache.avro.specific.SpecificRecordBuilderBase)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+method:///org/apache/avro/generic/GenericData/deepCopy(org.apache.avro.Schema,java.lang.Object)|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/JobInited$Builder/isValidValue(org.apache.avro.Schema$Field,java.lang.Object)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/apache/hadoop/mapreduce/jobhistory/JobInited$Builder/fields()|"
+    ],
+    "affectedLib": "org.apache.avro:avro:1.7.7",
+    "change": "UPDATED"
+  }
+]

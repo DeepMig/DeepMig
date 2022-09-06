@@ -1,0 +1,122 @@
+[
+  {
+    "coordinatesV1": "com.qwazr:qwazr-server:1.3.1",
+    "coordinatesV2": "com.qwazr:qwazr-server:1.4.0",
+    "caller": "|java+method:///com/qwazr/server/BaseServer/stop()|",
+    "called": "|java+method:///com/qwazr/utils/concurrent/ThreadUtils/sleep(long,java.util.concurrent.TimeUnit)|",
+    "v1Body": [
+      "|java+method:///com/qwazr/server/GenericServer/stopAll()|",
+      "|java+method:///com/qwazr/server/BaseServer/getServer()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/qwazr/utils/concurrent/ThreadUtils/sleep(long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///com/qwazr/server/GenericServer/stopAll()|",
+      "|java+method:///com/qwazr/server/BaseServer/getServer()|"
+    ],
+    "affectedLib": "com.qwazr:qwazr-utils:1.4.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.qwazr:qwazr-server:1.3.1",
+    "coordinatesV2": "com.qwazr:qwazr-server:1.4.0",
+    "caller": "|java+method:///com/qwazr/server/RemoteService$Builder/setQuery(java.lang.String)|",
+    "called": "|java+method:///com/qwazr/utils/LinkUtils/getQueryParameters(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///javax/ws/rs/core/MultivaluedMap/getFirst(java.lang.Object)|",
+      "|java+method:///com/qwazr/utils/LinkUtils/getQueryParameters(java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+method:///com/qwazr/server/RemoteService$Builder/setTimeout(java.lang.Integer)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/ws/rs/core/MultivaluedMap/getFirst(java.lang.Object)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///com/qwazr/utils/LinkUtils/getQueryParameters(java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+method:///com/qwazr/server/RemoteService$Builder/setTimeout(java.lang.Integer)|"
+    ],
+    "affectedLib": "com.qwazr:qwazr-utils:1.4.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.qwazr:qwazr-server:1.3.1",
+    "coordinatesV2": "com.qwazr:qwazr-server:1.4.0",
+    "caller": "|java+method:///com/qwazr/server/InFileSessionPersistenceManager/lambda$loadSessionAttributes$7(long,java.util.Map,java.nio.file.Path)|",
+    "called": "|java+method:///com/qwazr/utils/FileUtils/deleteDirectory(java.nio.file.Path)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/io/File/getName()|",
+      "|java+method:///java/util/logging/Logger/log(java.util.logging.Level,java.lang.Throwable,java.util.function.Supplier)|",
+      "|java+method:///java/nio/file/Path/toFile()|",
+      "|java+method:///com/qwazr/server/InFileSessionPersistenceManager/readSession(java.io.File)|",
+      "|java+method:///java/util/Date/getTime()|",
+      "|java+method:///java/nio/file/Files/deleteIfExists(java.nio.file.Path)|",
+      "|java+method:///io/undertow/servlet/api/SessionPersistenceManager$PersistentSession/getExpiration()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/io/File/getName()|",
+      "|java+method:///com/qwazr/utils/FileUtils/deleteDirectory(java.nio.file.Path)|",
+      "|java+method:///java/util/logging/Logger/log(java.util.logging.Level,java.lang.Throwable,java.util.function.Supplier)|",
+      "|java+method:///io/undertow/servlet/api/SessionPersistenceManager$PersistentSession/getExpiration()|",
+      "|java+method:///java/nio/file/Path/toFile()|",
+      "|java+method:///com/qwazr/server/InFileSessionPersistenceManager/readSession(java.io.File)|",
+      "|java+method:///java/util/Date/getTime()|"
+    ],
+    "affectedLib": "com.qwazr:qwazr-utils:1.4.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.qwazr:qwazr-server:1.3.1",
+    "coordinatesV2": "com.qwazr:qwazr-server:1.4.0",
+    "caller": "|java+method:///com/qwazr/server/GenericServer/stopAll()|",
+    "called": "|java+method:///io/undertow/Undertow/stop()|",
+    "v1Body": [
+      "|java+method:///io/undertow/servlet/api/DeploymentManager/undeploy()|",
+      "|java+method:///io/undertow/servlet/api/DeploymentManager/stop()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Collection/forEach(java.util.function.Consumer)|",
+      "|java+method:///com/qwazr/server/GenericServer/executeListener(java.util.Collection,boolean)|",
+      "|java+method:///java/util/logging/Logger/info(java.lang.String)|",
+      "|java+method:///com/qwazr/server/UdpServerThread/shutdown()|",
+      "|java+method:///java/util/Collection/clear()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///io/undertow/servlet/api/DeploymentManager/getState()|",
+      "|java+method:///java/util/logging/Logger/log(java.util.logging.Level,java.lang.Throwable,java.util.function.Supplier)|",
+      "|java+method:///java/util/Collection/isEmpty()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///javax/management/MBeanServer/unregisterMBean(javax.management.ObjectName)|",
+      "|java+method:///java/lang/management/ManagementFactory/getPlatformMBeanServer()|",
+      "|java+method:///java/util/logging/Logger/log(java.util.logging.Level,java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/concurrent/ExecutorService/shutdown()|",
+      "|java+method:///java/util/concurrent/ExecutorService/awaitTermination(long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///java/lang/InterruptedException/getMessage()|",
+      "|java+method:///java/util/Collection/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/undertow/servlet/api/DeploymentManager/undeploy()|",
+      "|java+method:///io/undertow/servlet/api/DeploymentManager/stop()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///io/undertow/Undertow/stop()|",
+      "|java+method:///com/qwazr/server/GenericServer/executeListener(java.util.Collection,java.util.logging.Logger)|",
+      "|java+method:///java/util/logging/Logger/info(java.lang.String)|",
+      "|java+method:///com/qwazr/server/UdpServerThread/shutdown()|",
+      "|java+method:///java/util/Collection/clear()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///io/undertow/servlet/api/DeploymentManager/getState()|",
+      "|java+method:///java/util/logging/Logger/log(java.util.logging.Level,java.lang.Throwable,java.util.function.Supplier)|",
+      "|java+method:///java/util/Collection/isEmpty()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///javax/management/MBeanServer/unregisterMBean(javax.management.ObjectName)|",
+      "|java+method:///java/lang/management/ManagementFactory/getPlatformMBeanServer()|",
+      "|java+method:///java/util/logging/Logger/log(java.util.logging.Level,java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/concurrent/ExecutorService/shutdown()|",
+      "|java+method:///java/util/concurrent/ExecutorService/awaitTermination(long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///java/lang/InterruptedException/getMessage()|",
+      "|java+method:///java/util/Collection/iterator()|"
+    ],
+    "affectedLib": "io.undertow:undertow-core:1.4.24.Final",
+    "change": "UPDATED"
+  }
+]

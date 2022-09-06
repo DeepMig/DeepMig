@@ -1,0 +1,142 @@
+[
+  {
+    "coordinatesV1": "org.apache.directory.shared:shared-converter:0.9.11",
+    "coordinatesV2": "org.apache.directory.shared:shared-converter:0.9.12",
+    "caller": "|java+method:///org/apache/directory/shared/converter/schema/SchemaElementImpl/nameToLdif()|",
+    "called": "|java+constructor:///org/apache/directory/shared/ldap/entry/client/DefaultClientAttribute/DefaultClientAttribute(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///javax/naming/directory/Attribute/add(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///org/apache/directory/shared/ldap/message/AttributeImpl/AttributeImpl(java.lang.String)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///org/apache/directory/shared/ldap/message/AttributesImpl/AttributesImpl()|",
+      "|java+method:///javax/naming/directory/Attributes/put(javax.naming.directory.Attribute)|",
+      "|java+method:///org/apache/directory/shared/ldap/ldif/LdifUtils/convertToLdif(javax.naming.directory.Attributes)|",
+      "|java+method:///java/util/List/iterator()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/directory/shared/ldap/entry/client/DefaultClientEntry/DefaultClientEntry()|",
+      "|java+method:///org/apache/directory/shared/ldap/entry/EntryAttribute/add(java.lang.String%5B%5D)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/directory/shared/ldap/ldif/LdifUtils/convertToLdif(org.apache.directory.shared.ldap.entry.Entry)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///org/apache/directory/shared/ldap/entry/client/DefaultClientAttribute/DefaultClientAttribute(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/directory/shared/ldap/entry/Entry/put(org.apache.directory.shared.ldap.entry.EntryAttribute%5B%5D)|"
+    ],
+    "affectedLib": "org.apache.directory.shared:shared-ldap:0.9.12",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.shared:shared-converter:0.9.11",
+    "coordinatesV2": "org.apache.directory.shared:shared-converter:0.9.12",
+    "caller": "|java+method:///org/apache/directory/shared/converter/schema/AttributeTypeHolder/dnToLdif(java.lang.String)|",
+    "called": "|java+constructor:///org/apache/directory/shared/ldap/entry/client/DefaultClientAttribute/DefaultClientAttribute(java.lang.String,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/directory/shared/ldap/name/Rdn/escapeValue(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/message/AttributeImpl/AttributeImpl(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/message/AttributesImpl/AttributesImpl()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///javax/naming/directory/Attributes/put(javax.naming.directory.Attribute)|",
+      "|java+method:///org/apache/directory/shared/ldap/ldif/LdifUtils/convertToLdif(javax.naming.directory.Attributes)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/directory/shared/ldap/entry/client/DefaultClientEntry/DefaultClientEntry()|",
+      "|java+constructor:///org/apache/directory/shared/ldap/entry/client/DefaultClientAttribute/DefaultClientAttribute(java.lang.String,java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/directory/shared/ldap/name/Rdn/escapeValue(java.lang.String)|",
+      "|java+method:///org/apache/directory/shared/ldap/ldif/LdifUtils/convertToLdif(org.apache.directory.shared.ldap.entry.Entry)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/directory/shared/ldap/entry/Entry/put(org.apache.directory.shared.ldap.entry.EntryAttribute%5B%5D)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.apache.directory.shared:shared-ldap:0.9.12",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.shared:shared-converter:0.9.11",
+    "coordinatesV2": "org.apache.directory.shared:shared-converter:0.9.12",
+    "caller": "|java+method:///org/apache/directory/shared/converter/schema/SchemaElementImpl/descToLdif()|",
+    "called": "|java+method:///org/apache/directory/shared/ldap/util/StringTools/isEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/shared/ldap/message/AttributeImpl/AttributeImpl(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/message/AttributesImpl/AttributesImpl()|",
+      "|java+method:///javax/naming/directory/Attributes/put(javax.naming.directory.Attribute)|",
+      "|java+method:///org/apache/directory/shared/ldap/ldif/LdifUtils/convertToLdif(javax.naming.directory.Attributes)|",
+      "|java+method:///org/apache/directory/shared/ldap/util/StringTools/isEmpty(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/directory/shared/ldap/entry/client/DefaultClientEntry/DefaultClientEntry()|",
+      "|java+constructor:///org/apache/directory/shared/ldap/entry/client/DefaultClientAttribute/DefaultClientAttribute(java.lang.String,java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/directory/shared/ldap/ldif/LdifUtils/convertToLdif(org.apache.directory.shared.ldap.entry.Entry)|",
+      "|java+method:///org/apache/directory/shared/ldap/entry/Entry/put(org.apache.directory.shared.ldap.entry.EntryAttribute%5B%5D)|",
+      "|java+method:///org/apache/directory/shared/ldap/util/StringTools/isEmpty(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.directory.shared:shared-ldap:0.9.12",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.shared:shared-converter:0.9.11",
+    "coordinatesV2": "org.apache.directory.shared:shared-converter:0.9.12",
+    "caller": "|java+method:///org/apache/directory/shared/converter/schema/SchemaElementImpl/extensionsToLdif(java.lang.String)|",
+    "called": "|java+constructor:///org/apache/directory/shared/ldap/entry/client/DefaultClientAttribute/DefaultClientAttribute(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///javax/naming/directory/Attribute/add(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///org/apache/directory/shared/ldap/message/AttributeImpl/AttributeImpl(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///org/apache/directory/shared/ldap/message/AttributesImpl/AttributesImpl()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/directory/shared/ldap/ldif/LdifUtils/convertToLdif(javax.naming.directory.Attributes)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/directory/shared/ldap/entry/client/DefaultClientEntry/DefaultClientEntry()|",
+      "|java+method:///org/apache/directory/shared/ldap/entry/EntryAttribute/add(java.lang.String%5B%5D)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/directory/shared/ldap/ldif/LdifUtils/convertToLdif(org.apache.directory.shared.ldap.entry.Entry)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///org/apache/directory/shared/ldap/entry/client/DefaultClientAttribute/DefaultClientAttribute(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.apache.directory.shared:shared-ldap:0.9.12",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.shared:shared-converter:0.9.11",
+    "coordinatesV2": "org.apache.directory.shared:shared-converter:0.9.12",
+    "caller": "|java+method:///org/apache/directory/shared/converter/schema/ObjectClassHolder/dnToLdif(java.lang.String)|",
+    "called": "|java+constructor:///org/apache/directory/shared/ldap/entry/client/DefaultClientAttribute/DefaultClientAttribute(java.lang.String,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/directory/shared/ldap/name/Rdn/escapeValue(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/message/AttributeImpl/AttributeImpl(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/message/AttributesImpl/AttributesImpl()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///javax/naming/directory/Attributes/put(javax.naming.directory.Attribute)|",
+      "|java+method:///org/apache/directory/shared/ldap/ldif/LdifUtils/convertToLdif(javax.naming.directory.Attributes)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/directory/shared/ldap/entry/client/DefaultClientEntry/DefaultClientEntry()|",
+      "|java+constructor:///org/apache/directory/shared/ldap/entry/client/DefaultClientAttribute/DefaultClientAttribute(java.lang.String,java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/directory/shared/ldap/name/Rdn/escapeValue(java.lang.String)|",
+      "|java+method:///org/apache/directory/shared/ldap/ldif/LdifUtils/convertToLdif(org.apache.directory.shared.ldap.entry.Entry)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/directory/shared/ldap/entry/Entry/put(org.apache.directory.shared.ldap.entry.EntryAttribute%5B%5D)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.apache.directory.shared:shared-ldap:0.9.12",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,638 @@
+[
+  {
+    "coordinatesV1": "org.apache.geronimo.modules:geronimo-openejb:3.0-M1",
+    "coordinatesV2": "org.apache.geronimo.modules:geronimo-openejb:3.0-beta-1",
+    "caller": "|java+method:///org/apache/geronimo/openejb/GeronimoSecurityService/getCallerPrincipal()|",
+    "called": "|java+method:///org/apache/openejb/core/ThreadContext/getThreadContext()|",
+    "v1Body": [
+      "|java+method:///org/apache/geronimo/security/ContextManager/getCurrentPrincipal(javax.security.auth.Subject)|",
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/isSecurityEnabled()|",
+      "|java+method:///org/apache/openejb/core/ThreadContext/getThreadContext()|",
+      "|java+method:///org/apache/openejb/BeanContext/get(java.lang.Class)|",
+      "|java+method:///org/apache/openejb/core/ThreadContext/getBeanContext()|",
+      "|java+method:///org/apache/geronimo/security/ContextManager/getCurrentCaller()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/geronimo/security/ContextManager/getCurrentPrincipal(javax.security.auth.Subject)|",
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/isSecurityEnabled()|",
+      "|java+method:///org/apache/geronimo/security/ContextManager/getCurrentCaller()|",
+      "|java+method:///org/apache/openejb/core/ThreadContext/getDeploymentInfo()|",
+      "|java+method:///org/apache/openejb/core/ThreadContext/getThreadContext()|",
+      "|java+method:///org/apache/openejb/core/CoreDeploymentInfo/get(java.lang.Class)|"
+    ],
+    "affectedLib": "org.apache.openejb:openejb-core:4.0.0-beta-1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.geronimo.modules:geronimo-openejb:3.0-M1",
+    "coordinatesV2": "org.apache.geronimo.modules:geronimo-openejb:3.0-beta-1",
+    "caller": "|java+method:///org/apache/geronimo/openejb/GeronimoSecurityService/isCallerAuthorized(java.lang.reflect.Method,org.apache.openejb.InterfaceType)|",
+    "called": "|java+method:///org/apache/openejb/core/ThreadContext/getThreadContext()|",
+    "v1Body": [
+      "|java+method:///org/apache/geronimo/security/ContextManager/getCurrentContext()|",
+      "|java+constructor:///javax/security/jacc/EJBMethodPermission/EJBMethodPermission(java.lang.String,java.lang.String,java.lang.reflect.Method)|",
+      "|java+method:///org/apache/openejb/BeanContext/getInterfaceType(java.lang.Class)|",
+      "|java+method:///org/apache/openejb/InterfaceType/getSpecName()|",
+      "|java+method:///org/apache/openejb/core/ThreadContext/getBeanContext()|",
+      "|java+method:///org/apache/openejb/BeanContext/getEjbName()|",
+      "|java+method:///org/apache/openejb/core/ThreadContext/getThreadContext()|",
+      "|java+method:///org/apache/openejb/BeanContext/get(java.lang.Class)|",
+      "|java+method:///java/lang/reflect/Method/getDeclaringClass()|",
+      "|java+method:///java/security/AccessControlContext/checkPermission(java.security.Permission)|",
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/isSecurityEnabled()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/geronimo/security/ContextManager/getCurrentContext()|",
+      "|java+constructor:///javax/security/jacc/EJBMethodPermission/EJBMethodPermission(java.lang.String,java.lang.String,java.lang.reflect.Method)|",
+      "|java+method:///org/apache/openejb/InterfaceType/getSpecName()|",
+      "|java+method:///org/apache/openejb/core/CoreDeploymentInfo/getInterfaceType(java.lang.Class)|",
+      "|java+method:///org/apache/openejb/core/CoreDeploymentInfo/getEjbName()|",
+      "|java+method:///java/lang/reflect/Method/getDeclaringClass()|",
+      "|java+method:///org/apache/openejb/core/ThreadContext/getDeploymentInfo()|",
+      "|java+method:///java/security/AccessControlContext/checkPermission(java.security.Permission)|",
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/isSecurityEnabled()|",
+      "|java+method:///org/apache/openejb/core/ThreadContext/getThreadContext()|",
+      "|java+method:///org/apache/openejb/core/CoreDeploymentInfo/get(java.lang.Class)|"
+    ],
+    "affectedLib": "org.apache.openejb:openejb-core:4.0.0-beta-1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.geronimo.modules:geronimo-openejb:3.0-M1",
+    "coordinatesV2": "org.apache.geronimo.modules:geronimo-openejb:3.0-beta-1",
+    "caller": "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getBusinessRemoteHome()|",
+    "called": "|java+method:///org/apache/openejb/BeanContext/getBusinessRemoteHome()|",
+    "v1Body": [
+      "|java+method:///org/apache/openejb/BeanContext/getBusinessRemoteHome()|",
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getDeploymentInfo()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/openejb/core/CoreDeploymentInfo/getBusinessRemoteHome()|"
+    ],
+    "affectedLib": "org.apache.openejb:openejb-core:4.0.0-beta-1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.geronimo.modules:geronimo-openejb:3.0-M1",
+    "coordinatesV2": "org.apache.geronimo.modules:geronimo-openejb:3.0-beta-1",
+    "caller": "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getBusinessLocalInterface()|",
+    "called": "|java+method:///org/apache/openejb/BeanContext/getBusinessLocalInterface()|",
+    "v1Body": [
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getDeploymentInfo()|",
+      "|java+method:///org/apache/openejb/BeanContext/getBusinessLocalInterface()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/openejb/core/CoreDeploymentInfo/getBusinessLocalInterface()|"
+    ],
+    "affectedLib": "org.apache.openejb:openejb-core:4.0.0-beta-1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.geronimo.modules:geronimo-openejb:3.0-M1",
+    "coordinatesV2": "org.apache.geronimo.modules:geronimo-openejb:3.0-beta-1",
+    "caller": "|java+method:///org/apache/geronimo/openejb/GeronimoSecurityService/isCallerInRole(java.lang.String)|",
+    "called": "|java+method:///org/apache/openejb/core/ThreadContext/getThreadContext()|",
+    "v1Body": [
+      "|java+method:///org/apache/geronimo/security/ContextManager/getCurrentContext()|",
+      "|java+method:///org/apache/openejb/core/ThreadContext/getBeanContext()|",
+      "|java+method:///org/apache/openejb/BeanContext/getEjbName()|",
+      "|java+method:///org/apache/openejb/core/ThreadContext/getThreadContext()|",
+      "|java+method:///org/apache/openejb/BeanContext/get(java.lang.Class)|",
+      "|java+constructor:///javax/security/jacc/EJBRoleRefPermission/EJBRoleRefPermission(java.lang.String,java.lang.String)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/security/AccessControlContext/checkPermission(java.security.Permission)|",
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/isSecurityEnabled()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/geronimo/security/ContextManager/getCurrentContext()|",
+      "|java+method:///org/apache/openejb/core/CoreDeploymentInfo/getEjbName()|",
+      "|java+constructor:///javax/security/jacc/EJBRoleRefPermission/EJBRoleRefPermission(java.lang.String,java.lang.String)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///org/apache/openejb/core/ThreadContext/getDeploymentInfo()|",
+      "|java+method:///java/security/AccessControlContext/checkPermission(java.security.Permission)|",
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/isSecurityEnabled()|",
+      "|java+method:///org/apache/openejb/core/ThreadContext/getThreadContext()|",
+      "|java+method:///org/apache/openejb/core/CoreDeploymentInfo/get(java.lang.Class)|"
+    ],
+    "affectedLib": "org.apache.openejb:openejb-core:4.0.0-beta-1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.geronimo.modules:geronimo-openejb:3.0-M1",
+    "coordinatesV2": "org.apache.geronimo.modules:geronimo-openejb:3.0-beta-1",
+    "caller": "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getTransactionType(java.lang.reflect.Method)|",
+    "called": "|java+method:///org/apache/openejb/BeanContext/getTransactionType(java.lang.reflect.Method)|",
+    "v1Body": [
+      "|java+method:///org/apache/openejb/BeanContext/getTransactionType(java.lang.reflect.Method)|",
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getDeploymentInfo()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/openejb/core/CoreDeploymentInfo/getTransactionType(java.lang.reflect.Method)|"
+    ],
+    "affectedLib": "org.apache.openejb:openejb-core:4.0.0-beta-1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.geronimo.modules:geronimo-openejb:3.0-M1",
+    "coordinatesV2": "org.apache.geronimo.modules:geronimo-openejb:3.0-beta-1",
+    "caller": "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getBusinessRemoteInterface()|",
+    "called": "|java+method:///org/apache/openejb/BeanContext/getBusinessRemoteInterface()|",
+    "v1Body": [
+      "|java+method:///org/apache/openejb/BeanContext/getBusinessRemoteInterface()|",
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getDeploymentInfo()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/openejb/core/CoreDeploymentInfo/getBusinessRemoteInterface()|"
+    ],
+    "affectedLib": "org.apache.openejb:openejb-core:4.0.0-beta-1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.geronimo.modules:geronimo-openejb:3.0-M1",
+    "coordinatesV2": "org.apache.geronimo.modules:geronimo-openejb:3.0-beta-1",
+    "caller": "|java+method:///org/apache/geronimo/openejb/GeronimoThreadContextListener/contextExited(org.apache.openejb.core.ThreadContext,org.apache.openejb.core.ThreadContext)|",
+    "called": "|java+method:///org/apache/openejb/core/ThreadContext/get(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getTrackedConnectionAssociator()|",
+      "|java+method:///org/apache/geronimo/openejb/GeronimoThreadContextListener$GeronimoCallContext/access$600(org.apache.geronimo.openejb.GeronimoThreadContextListener$GeronimoCallContext)|",
+      "|java+method:///org/apache/geronimo/openejb/GeronimoThreadContextListener$GeronimoCallContext/access$400(org.apache.geronimo.openejb.GeronimoThreadContextListener$GeronimoCallContext)|",
+      "|java+method:///org/apache/geronimo/openejb/GeronimoThreadContextListener$GeronimoCallContext/access$300(org.apache.geronimo.openejb.GeronimoThreadContextListener$GeronimoCallContext)|",
+      "|java+method:///org/apache/geronimo/openejb/GeronimoThreadContextListener$GeronimoCallContext/access$200(org.apache.geronimo.openejb.GeronimoThreadContextListener$GeronimoCallContext)|",
+      "|java+method:///org/apache/geronimo/connector/outbound/connectiontracking/TrackedConnectionAssociator/exit(org.apache.geronimo.connector.outbound.connectiontracking.ConnectorInstanceContext)|",
+      "|java+method:///org/apache/openejb/core/ThreadContext/getBeanContext()|",
+      "|java+method:///javax/security/jacc/PolicyContext/setContextID(java.lang.String)|",
+      "|java+method:///org/apache/openejb/BeanContext/get(java.lang.Class)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+method:///org/apache/geronimo/security/ContextManager/popCallers(org.apache.geronimo.security.Callers)|",
+      "|java+method:///org/apache/geronimo/openejb/GeronimoThreadContextListener$GeronimoCallContext/access$500(org.apache.geronimo.openejb.GeronimoThreadContextListener$GeronimoCallContext)|",
+      "|java+method:///org/apache/geronimo/naming/java/RootContext/setComponentContext(javax.naming.Context)|",
+      "|java+method:///org/apache/openejb/core/ThreadContext/get(java.lang.Class)|",
+      "|java+method:///org/apache/geronimo/security/ContextManager/clearCallers()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getTrackedConnectionAssociator()|",
+      "|java+method:///org/apache/geronimo/openejb/GeronimoThreadContextListener$GeronimoCallContext/access$400(org.apache.geronimo.openejb.GeronimoThreadContextListener$GeronimoCallContext)|",
+      "|java+method:///org/apache/geronimo/openejb/GeronimoThreadContextListener$GeronimoCallContext/access$300(org.apache.geronimo.openejb.GeronimoThreadContextListener$GeronimoCallContext)|",
+      "|java+method:///org/apache/geronimo/openejb/GeronimoThreadContextListener$GeronimoCallContext/access$200(org.apache.geronimo.openejb.GeronimoThreadContextListener$GeronimoCallContext)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+method:///org/apache/geronimo/security/ContextManager/popCallers(org.apache.geronimo.security.Callers)|",
+      "|java+method:///org/apache/openejb/core/ThreadContext/getDeploymentInfo()|",
+      "|java+method:///org/apache/geronimo/openejb/GeronimoThreadContextListener$GeronimoCallContext/access$500(org.apache.geronimo.openejb.GeronimoThreadContextListener$GeronimoCallContext)|",
+      "|java+method:///org/apache/geronimo/naming/java/RootContext/setComponentContext(javax.naming.Context)|",
+      "|java+method:///org/apache/geronimo/connector/outbound/connectiontracking/TrackedConnectionAssociator/exit(org.apache.geronimo.connector.outbound.connectiontracking.ConnectorInstanceContext)|",
+      "|java+method:///org/apache/geronimo/openejb/GeronimoThreadContextListener$GeronimoCallContext/access$100(org.apache.geronimo.openejb.GeronimoThreadContextListener$GeronimoCallContext)|",
+      "|java+method:///javax/security/jacc/PolicyContext/setContextID(java.lang.String)|",
+      "|java+method:///org/apache/openejb/core/CoreDeploymentInfo/get(java.lang.Class)|",
+      "|java+method:///org/apache/openejb/core/ThreadContext/get(java.lang.Class)|",
+      "|java+method:///org/apache/geronimo/security/ContextManager/clearCallers()|"
+    ],
+    "affectedLib": "org.apache.openejb:openejb-core:4.0.0-beta-1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.geronimo.modules:geronimo-openejb:3.0-M1",
+    "coordinatesV2": "org.apache.geronimo.modules:geronimo-openejb:3.0-beta-1",
+    "caller": "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getBusinessLocalHome()|",
+    "called": "|java+method:///org/apache/openejb/BeanContext/getBusinessLocalHome()|",
+    "v1Body": [
+      "|java+method:///org/apache/openejb/BeanContext/getBusinessLocalHome()|",
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getDeploymentInfo()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/openejb/core/CoreDeploymentInfo/getBusinessLocalHome()|"
+    ],
+    "affectedLib": "org.apache.openejb:openejb-core:4.0.0-beta-1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.geronimo.modules:geronimo-openejb:3.0-M1",
+    "coordinatesV2": "org.apache.geronimo.modules:geronimo-openejb:3.0-beta-1",
+    "caller": "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getEJBHome()|",
+    "called": "|java+method:///org/apache/openejb/BeanContext/getEJBHome()|",
+    "v1Body": [
+      "|java+method:///org/apache/openejb/BeanContext/getEJBHome()|",
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getDeploymentInfo()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/openejb/core/CoreDeploymentInfo/getEJBHome()|"
+    ],
+    "affectedLib": "org.apache.openejb:openejb-core:4.0.0-beta-1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.geronimo.modules:geronimo-openejb:3.0-M1",
+    "coordinatesV2": "org.apache.geronimo.modules:geronimo-openejb:3.0-beta-1",
+    "caller": "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getEJBLocalHome()|",
+    "called": "|java+method:///org/apache/openejb/BeanContext/getEJBLocalHome()|",
+    "v1Body": [
+      "|java+method:///org/apache/openejb/BeanContext/getEJBLocalHome()|",
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getDeploymentInfo()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/openejb/core/CoreDeploymentInfo/getEJBLocalHome()|"
+    ],
+    "affectedLib": "org.apache.openejb:openejb-core:4.0.0-beta-1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.geronimo.modules:geronimo-openejb:3.0-M1",
+    "coordinatesV2": "org.apache.geronimo.modules:geronimo-openejb:3.0-beta-1",
+    "caller": "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getEjbObject(java.lang.Object)|",
+    "called": "|java+method:///org/apache/openejb/core/ivm/EjbObjectProxyHandler/createProxy(org.apache.openejb.BeanContext,java.lang.Object,org.apache.openejb.InterfaceType,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getHomeInterface()|",
+      "|java+method:///org/apache/openejb/core/ivm/EjbObjectProxyHandler/createProxy(org.apache.openejb.BeanContext,java.lang.Object,org.apache.openejb.InterfaceType,java.lang.Class)|",
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getDeploymentInfo()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/openejb/core/ivm/EjbObjectProxyHandler/createProxy(org.apache.openejb.DeploymentInfo,java.lang.Object,org.apache.openejb.InterfaceType)|"
+    ],
+    "affectedLib": "org.apache.openejb:openejb-core:4.0.0-beta-1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.geronimo.modules:geronimo-openejb:3.0-M1",
+    "coordinatesV2": "org.apache.geronimo.modules:geronimo-openejb:3.0-beta-1",
+    "caller": "|java+method:///org/apache/geronimo/openejb/GeronimoThreadContextListener/contextEntered(org.apache.openejb.core.ThreadContext,org.apache.openejb.core.ThreadContext)|",
+    "called": "|java+method:///org/apache/openejb/core/ThreadContext/set(java.lang.Class,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getTrackedConnectionAssociator()|",
+      "|java+method:///javax/security/jacc/PolicyContext/getContextID()|",
+      "|java+method:///org/apache/geronimo/openejb/GeronimoThreadContextListener/getEjbDeployment(org.apache.openejb.BeanContext)|",
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getApplicationManagedSecurityResources()|",
+      "|java+method:///org/apache/geronimo/naming/java/RootContext/setComponentContext(javax.naming.Context)|",
+      "|java+method:///org/apache/geronimo/openejb/GeronimoThreadContextListener$GeronimoCallContext/access$202(org.apache.geronimo.openejb.GeronimoThreadContextListener$GeronimoCallContext,org.apache.geronimo.connector.outbound.connectiontracking.ConnectorInstanceContext)|",
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getUnshareableResources()|",
+      "|java+method:///javax/security/jacc/PolicyContext/setContextID(java.lang.String)|",
+      "|java+method:///org/apache/geronimo/security/ContextManager/setCallers(javax.security.auth.Subject,javax.security.auth.Subject)|",
+      "|java+method:///org/apache/openejb/BeanContext/getJndiEnc()|",
+      "|java+method:///org/apache/geronimo/openejb/GeronimoThreadContextListener$GeronimoCallContext/access$602(org.apache.geronimo.openejb.GeronimoThreadContextListener$GeronimoCallContext,org.apache.geronimo.security.Callers)|",
+      "|java+constructor:///org/apache/geronimo/openejb/GeronimoThreadContextListener$GeronimoCallContext/GeronimoThreadContextListener$GeronimoCallContext(org.apache.geronimo.openejb.GeronimoThreadContextListener$1)|",
+      "|java+method:///org/apache/geronimo/openejb/GeronimoThreadContextListener$GeronimoCallContext/access$502(org.apache.geronimo.openejb.GeronimoThreadContextListener$GeronimoCallContext,boolean)|",
+      "|java+constructor:///org/apache/geronimo/connector/outbound/connectiontracking/ConnectorInstanceContextImpl/ConnectorInstanceContextImpl(java.util.Set,java.util.Set)|",
+      "|java+method:///org/apache/openejb/core/ThreadContext/getBeanContext()|",
+      "|java+method:///org/apache/geronimo/security/ContextManager/getCurrentCaller()|",
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getRunAs()|",
+      "|java+method:///org/apache/geronimo/openejb/GeronimoThreadContextListener$GeronimoCallContext/access$402(org.apache.geronimo.openejb.GeronimoThreadContextListener$GeronimoCallContext,java.lang.String)|",
+      "|java+method:///org/apache/geronimo/connector/outbound/connectiontracking/TrackedConnectionAssociator/enter(org.apache.geronimo.connector.outbound.connectiontracking.ConnectorInstanceContext)|",
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getDefaultSubject()|",
+      "|java+method:///org/apache/geronimo/openejb/GeronimoThreadContextListener$GeronimoCallContext/access$302(org.apache.geronimo.openejb.GeronimoThreadContextListener$GeronimoCallContext,javax.naming.Context)|",
+      "|java+method:///org/apache/geronimo/security/ContextManager/pushNextCaller(javax.security.auth.Subject)|",
+      "|java+method:///org/apache/openejb/BeanContext/getModuleID()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+method:///org/apache/geronimo/naming/java/RootContext/getComponentContext()|",
+      "|java+method:///org/apache/openejb/core/ThreadContext/set(java.lang.Class,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getTrackedConnectionAssociator()|",
+      "|java+method:///javax/security/jacc/PolicyContext/getContextID()|",
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getApplicationManagedSecurityResources()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///org/apache/geronimo/naming/java/RootContext/setComponentContext(javax.naming.Context)|",
+      "|java+constructor:///org/apache/geronimo/connector/outbound/connectiontracking/ConnectorInstanceContextImpl/ConnectorInstanceContextImpl(java.util.Set,java.util.Set)|",
+      "|java+method:///org/apache/openejb/core/CoreDeploymentInfo/isDestroyed()|",
+      "|java+method:///org/apache/geronimo/openejb/GeronimoThreadContextListener$GeronimoCallContext/access$302(org.apache.geronimo.openejb.GeronimoThreadContextListener$GeronimoCallContext,java.lang.String)|",
+      "|java+method:///org/apache/geronimo/connector/outbound/connectiontracking/TrackedConnectionAssociator/enter(org.apache.geronimo.connector.outbound.connectiontracking.ConnectorInstanceContext)|",
+      "|java+method:///org/apache/geronimo/openejb/GeronimoThreadContextListener$GeronimoCallContext/access$202(org.apache.geronimo.openejb.GeronimoThreadContextListener$GeronimoCallContext,javax.naming.Context)|",
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getDefaultSubject()|",
+      "|java+method:///org/apache/geronimo/security/ContextManager/setCallers(javax.security.auth.Subject,javax.security.auth.Subject)|",
+      "|java+method:///org/apache/openejb/core/CoreDeploymentInfo/getModuleID()|",
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getComponentContext()|",
+      "|java+method:///org/apache/geronimo/openejb/GeronimoThreadContextListener$GeronimoCallContext/access$502(org.apache.geronimo.openejb.GeronimoThreadContextListener$GeronimoCallContext,org.apache.geronimo.security.Callers)|",
+      "|java+method:///org/apache/openejb/core/ThreadContext/getDeploymentInfo()|",
+      "|java+constructor:///org/apache/geronimo/openejb/GeronimoThreadContextListener$GeronimoCallContext/GeronimoThreadContextListener$GeronimoCallContext(org.apache.geronimo.openejb.GeronimoThreadContextListener$1)|",
+      "|java+method:///org/apache/geronimo/openejb/GeronimoThreadContextListener$GeronimoCallContext/access$402(org.apache.geronimo.openejb.GeronimoThreadContextListener$GeronimoCallContext,boolean)|",
+      "|java+method:///org/apache/geronimo/openejb/GeronimoThreadContextListener$GeronimoCallContext/access$102(org.apache.geronimo.openejb.GeronimoThreadContextListener$GeronimoCallContext,org.apache.geronimo.connector.outbound.connectiontracking.ConnectorInstanceContext)|",
+      "|java+method:///org/apache/geronimo/security/ContextManager/getCurrentCaller()|",
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getRunAs()|",
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getUnshareableResources()|",
+      "|java+method:///java/lang/Object/wait()|",
+      "|java+method:///javax/security/jacc/PolicyContext/setContextID(java.lang.String)|",
+      "|java+method:///org/apache/openejb/core/CoreDeploymentInfo/get(java.lang.Class)|",
+      "|java+method:///org/apache/geronimo/security/ContextManager/pushNextCaller(javax.security.auth.Subject)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+method:///org/apache/geronimo/naming/java/RootContext/getComponentContext()|",
+      "|java+method:///org/apache/openejb/core/ThreadContext/set(java.lang.Class,java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.openejb:openejb-core:4.0.0-beta-1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.geronimo.modules:geronimo-openejb:3.0-beta-1",
+    "coordinatesV2": "org.apache.geronimo.modules:geronimo-openejb:3.0-M1",
+    "caller": "|java+method:///org/apache/geronimo/openejb/GeronimoSecurityService/getCallerPrincipal()|",
+    "called": "|java+method:///org/apache/openejb/core/ThreadContext/getThreadContext()|",
+    "v1Body": [
+      "|java+method:///org/apache/geronimo/security/ContextManager/getCurrentPrincipal(javax.security.auth.Subject)|",
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/isSecurityEnabled()|",
+      "|java+method:///org/apache/openejb/core/ThreadContext/getThreadContext()|",
+      "|java+method:///org/apache/openejb/BeanContext/get(java.lang.Class)|",
+      "|java+method:///org/apache/openejb/core/ThreadContext/getBeanContext()|",
+      "|java+method:///org/apache/geronimo/security/ContextManager/getCurrentCaller()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/geronimo/security/ContextManager/getCurrentPrincipal(javax.security.auth.Subject)|",
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/isSecurityEnabled()|",
+      "|java+method:///org/apache/geronimo/security/ContextManager/getCurrentCaller()|",
+      "|java+method:///org/apache/openejb/core/ThreadContext/getDeploymentInfo()|",
+      "|java+method:///org/apache/openejb/core/ThreadContext/getThreadContext()|",
+      "|java+method:///org/apache/openejb/core/CoreDeploymentInfo/get(java.lang.Class)|"
+    ],
+    "affectedLib": "org.apache.geronimo.ext.openejb:openejb-core:3.1.3.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.geronimo.modules:geronimo-openejb:3.0-beta-1",
+    "coordinatesV2": "org.apache.geronimo.modules:geronimo-openejb:3.0-M1",
+    "caller": "|java+method:///org/apache/geronimo/openejb/GeronimoSecurityService/isCallerAuthorized(java.lang.reflect.Method,org.apache.openejb.InterfaceType)|",
+    "called": "|java+method:///org/apache/openejb/core/ThreadContext/getThreadContext()|",
+    "v1Body": [
+      "|java+method:///org/apache/geronimo/security/ContextManager/getCurrentContext()|",
+      "|java+constructor:///javax/security/jacc/EJBMethodPermission/EJBMethodPermission(java.lang.String,java.lang.String,java.lang.reflect.Method)|",
+      "|java+method:///org/apache/openejb/BeanContext/getInterfaceType(java.lang.Class)|",
+      "|java+method:///org/apache/openejb/InterfaceType/getSpecName()|",
+      "|java+method:///org/apache/openejb/core/ThreadContext/getBeanContext()|",
+      "|java+method:///org/apache/openejb/BeanContext/getEjbName()|",
+      "|java+method:///org/apache/openejb/core/ThreadContext/getThreadContext()|",
+      "|java+method:///org/apache/openejb/BeanContext/get(java.lang.Class)|",
+      "|java+method:///java/lang/reflect/Method/getDeclaringClass()|",
+      "|java+method:///java/security/AccessControlContext/checkPermission(java.security.Permission)|",
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/isSecurityEnabled()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/geronimo/security/ContextManager/getCurrentContext()|",
+      "|java+constructor:///javax/security/jacc/EJBMethodPermission/EJBMethodPermission(java.lang.String,java.lang.String,java.lang.reflect.Method)|",
+      "|java+method:///org/apache/openejb/InterfaceType/getSpecName()|",
+      "|java+method:///org/apache/openejb/core/CoreDeploymentInfo/getInterfaceType(java.lang.Class)|",
+      "|java+method:///org/apache/openejb/core/CoreDeploymentInfo/getEjbName()|",
+      "|java+method:///java/lang/reflect/Method/getDeclaringClass()|",
+      "|java+method:///org/apache/openejb/core/ThreadContext/getDeploymentInfo()|",
+      "|java+method:///java/security/AccessControlContext/checkPermission(java.security.Permission)|",
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/isSecurityEnabled()|",
+      "|java+method:///org/apache/openejb/core/ThreadContext/getThreadContext()|",
+      "|java+method:///org/apache/openejb/core/CoreDeploymentInfo/get(java.lang.Class)|"
+    ],
+    "affectedLib": "org.apache.geronimo.ext.openejb:openejb-core:3.1.3.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.geronimo.modules:geronimo-openejb:3.0-beta-1",
+    "coordinatesV2": "org.apache.geronimo.modules:geronimo-openejb:3.0-M1",
+    "caller": "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getBusinessRemoteHome()|",
+    "called": "|java+method:///org/apache/openejb/core/CoreDeploymentInfo/getBusinessRemoteHome()|",
+    "v1Body": [
+      "|java+method:///org/apache/openejb/BeanContext/getBusinessRemoteHome()|",
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getDeploymentInfo()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/openejb/core/CoreDeploymentInfo/getBusinessRemoteHome()|"
+    ],
+    "affectedLib": "org.apache.geronimo.ext.openejb:openejb-core:3.1.3.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.geronimo.modules:geronimo-openejb:3.0-beta-1",
+    "coordinatesV2": "org.apache.geronimo.modules:geronimo-openejb:3.0-M1",
+    "caller": "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getBusinessLocalInterface()|",
+    "called": "|java+method:///org/apache/openejb/core/CoreDeploymentInfo/getBusinessLocalInterface()|",
+    "v1Body": [
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getDeploymentInfo()|",
+      "|java+method:///org/apache/openejb/BeanContext/getBusinessLocalInterface()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/openejb/core/CoreDeploymentInfo/getBusinessLocalInterface()|"
+    ],
+    "affectedLib": "org.apache.geronimo.ext.openejb:openejb-core:3.1.3.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.geronimo.modules:geronimo-openejb:3.0-beta-1",
+    "coordinatesV2": "org.apache.geronimo.modules:geronimo-openejb:3.0-M1",
+    "caller": "|java+method:///org/apache/geronimo/openejb/GeronimoSecurityService/isCallerInRole(java.lang.String)|",
+    "called": "|java+method:///org/apache/openejb/core/ThreadContext/getThreadContext()|",
+    "v1Body": [
+      "|java+method:///org/apache/geronimo/security/ContextManager/getCurrentContext()|",
+      "|java+method:///org/apache/openejb/core/ThreadContext/getBeanContext()|",
+      "|java+method:///org/apache/openejb/BeanContext/getEjbName()|",
+      "|java+method:///org/apache/openejb/core/ThreadContext/getThreadContext()|",
+      "|java+method:///org/apache/openejb/BeanContext/get(java.lang.Class)|",
+      "|java+constructor:///javax/security/jacc/EJBRoleRefPermission/EJBRoleRefPermission(java.lang.String,java.lang.String)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/security/AccessControlContext/checkPermission(java.security.Permission)|",
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/isSecurityEnabled()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/geronimo/security/ContextManager/getCurrentContext()|",
+      "|java+method:///org/apache/openejb/core/CoreDeploymentInfo/getEjbName()|",
+      "|java+constructor:///javax/security/jacc/EJBRoleRefPermission/EJBRoleRefPermission(java.lang.String,java.lang.String)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///org/apache/openejb/core/ThreadContext/getDeploymentInfo()|",
+      "|java+method:///java/security/AccessControlContext/checkPermission(java.security.Permission)|",
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/isSecurityEnabled()|",
+      "|java+method:///org/apache/openejb/core/ThreadContext/getThreadContext()|",
+      "|java+method:///org/apache/openejb/core/CoreDeploymentInfo/get(java.lang.Class)|"
+    ],
+    "affectedLib": "org.apache.geronimo.ext.openejb:openejb-core:3.1.3.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.geronimo.modules:geronimo-openejb:3.0-beta-1",
+    "coordinatesV2": "org.apache.geronimo.modules:geronimo-openejb:3.0-M1",
+    "caller": "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getTransactionType(java.lang.reflect.Method)|",
+    "called": "|java+method:///org/apache/openejb/core/CoreDeploymentInfo/getTransactionType(java.lang.reflect.Method)|",
+    "v1Body": [
+      "|java+method:///org/apache/openejb/BeanContext/getTransactionType(java.lang.reflect.Method)|",
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getDeploymentInfo()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/openejb/core/CoreDeploymentInfo/getTransactionType(java.lang.reflect.Method)|"
+    ],
+    "affectedLib": "org.apache.geronimo.ext.openejb:openejb-core:3.1.3.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.geronimo.modules:geronimo-openejb:3.0-beta-1",
+    "coordinatesV2": "org.apache.geronimo.modules:geronimo-openejb:3.0-M1",
+    "caller": "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getBusinessRemoteInterface()|",
+    "called": "|java+method:///org/apache/openejb/core/CoreDeploymentInfo/getBusinessRemoteInterface()|",
+    "v1Body": [
+      "|java+method:///org/apache/openejb/BeanContext/getBusinessRemoteInterface()|",
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getDeploymentInfo()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/openejb/core/CoreDeploymentInfo/getBusinessRemoteInterface()|"
+    ],
+    "affectedLib": "org.apache.geronimo.ext.openejb:openejb-core:3.1.3.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.geronimo.modules:geronimo-openejb:3.0-beta-1",
+    "coordinatesV2": "org.apache.geronimo.modules:geronimo-openejb:3.0-M1",
+    "caller": "|java+method:///org/apache/geronimo/openejb/GeronimoThreadContextListener/contextExited(org.apache.openejb.core.ThreadContext,org.apache.openejb.core.ThreadContext)|",
+    "called": "|java+method:///org/apache/openejb/core/ThreadContext/get(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getTrackedConnectionAssociator()|",
+      "|java+method:///org/apache/geronimo/openejb/GeronimoThreadContextListener$GeronimoCallContext/access$600(org.apache.geronimo.openejb.GeronimoThreadContextListener$GeronimoCallContext)|",
+      "|java+method:///org/apache/geronimo/openejb/GeronimoThreadContextListener$GeronimoCallContext/access$400(org.apache.geronimo.openejb.GeronimoThreadContextListener$GeronimoCallContext)|",
+      "|java+method:///org/apache/geronimo/openejb/GeronimoThreadContextListener$GeronimoCallContext/access$300(org.apache.geronimo.openejb.GeronimoThreadContextListener$GeronimoCallContext)|",
+      "|java+method:///org/apache/geronimo/openejb/GeronimoThreadContextListener$GeronimoCallContext/access$200(org.apache.geronimo.openejb.GeronimoThreadContextListener$GeronimoCallContext)|",
+      "|java+method:///org/apache/geronimo/connector/outbound/connectiontracking/TrackedConnectionAssociator/exit(org.apache.geronimo.connector.outbound.connectiontracking.ConnectorInstanceContext)|",
+      "|java+method:///org/apache/openejb/core/ThreadContext/getBeanContext()|",
+      "|java+method:///javax/security/jacc/PolicyContext/setContextID(java.lang.String)|",
+      "|java+method:///org/apache/openejb/BeanContext/get(java.lang.Class)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+method:///org/apache/geronimo/security/ContextManager/popCallers(org.apache.geronimo.security.Callers)|",
+      "|java+method:///org/apache/geronimo/openejb/GeronimoThreadContextListener$GeronimoCallContext/access$500(org.apache.geronimo.openejb.GeronimoThreadContextListener$GeronimoCallContext)|",
+      "|java+method:///org/apache/geronimo/naming/java/RootContext/setComponentContext(javax.naming.Context)|",
+      "|java+method:///org/apache/openejb/core/ThreadContext/get(java.lang.Class)|",
+      "|java+method:///org/apache/geronimo/security/ContextManager/clearCallers()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getTrackedConnectionAssociator()|",
+      "|java+method:///org/apache/geronimo/openejb/GeronimoThreadContextListener$GeronimoCallContext/access$400(org.apache.geronimo.openejb.GeronimoThreadContextListener$GeronimoCallContext)|",
+      "|java+method:///org/apache/geronimo/openejb/GeronimoThreadContextListener$GeronimoCallContext/access$300(org.apache.geronimo.openejb.GeronimoThreadContextListener$GeronimoCallContext)|",
+      "|java+method:///org/apache/geronimo/openejb/GeronimoThreadContextListener$GeronimoCallContext/access$200(org.apache.geronimo.openejb.GeronimoThreadContextListener$GeronimoCallContext)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+method:///org/apache/geronimo/security/ContextManager/popCallers(org.apache.geronimo.security.Callers)|",
+      "|java+method:///org/apache/openejb/core/ThreadContext/getDeploymentInfo()|",
+      "|java+method:///org/apache/geronimo/openejb/GeronimoThreadContextListener$GeronimoCallContext/access$500(org.apache.geronimo.openejb.GeronimoThreadContextListener$GeronimoCallContext)|",
+      "|java+method:///org/apache/geronimo/naming/java/RootContext/setComponentContext(javax.naming.Context)|",
+      "|java+method:///org/apache/geronimo/connector/outbound/connectiontracking/TrackedConnectionAssociator/exit(org.apache.geronimo.connector.outbound.connectiontracking.ConnectorInstanceContext)|",
+      "|java+method:///org/apache/geronimo/openejb/GeronimoThreadContextListener$GeronimoCallContext/access$100(org.apache.geronimo.openejb.GeronimoThreadContextListener$GeronimoCallContext)|",
+      "|java+method:///javax/security/jacc/PolicyContext/setContextID(java.lang.String)|",
+      "|java+method:///org/apache/openejb/core/CoreDeploymentInfo/get(java.lang.Class)|",
+      "|java+method:///org/apache/openejb/core/ThreadContext/get(java.lang.Class)|",
+      "|java+method:///org/apache/geronimo/security/ContextManager/clearCallers()|"
+    ],
+    "affectedLib": "org.apache.geronimo.ext.openejb:openejb-core:3.1.3.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.geronimo.modules:geronimo-openejb:3.0-beta-1",
+    "coordinatesV2": "org.apache.geronimo.modules:geronimo-openejb:3.0-M1",
+    "caller": "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getBusinessLocalHome()|",
+    "called": "|java+method:///org/apache/openejb/core/CoreDeploymentInfo/getBusinessLocalHome()|",
+    "v1Body": [
+      "|java+method:///org/apache/openejb/BeanContext/getBusinessLocalHome()|",
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getDeploymentInfo()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/openejb/core/CoreDeploymentInfo/getBusinessLocalHome()|"
+    ],
+    "affectedLib": "org.apache.geronimo.ext.openejb:openejb-core:3.1.3.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.geronimo.modules:geronimo-openejb:3.0-beta-1",
+    "coordinatesV2": "org.apache.geronimo.modules:geronimo-openejb:3.0-M1",
+    "caller": "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getEJBHome()|",
+    "called": "|java+method:///org/apache/openejb/core/CoreDeploymentInfo/getEJBHome()|",
+    "v1Body": [
+      "|java+method:///org/apache/openejb/BeanContext/getEJBHome()|",
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getDeploymentInfo()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/openejb/core/CoreDeploymentInfo/getEJBHome()|"
+    ],
+    "affectedLib": "org.apache.geronimo.ext.openejb:openejb-core:3.1.3.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.geronimo.modules:geronimo-openejb:3.0-beta-1",
+    "coordinatesV2": "org.apache.geronimo.modules:geronimo-openejb:3.0-M1",
+    "caller": "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getEJBLocalHome()|",
+    "called": "|java+method:///org/apache/openejb/core/CoreDeploymentInfo/getEJBLocalHome()|",
+    "v1Body": [
+      "|java+method:///org/apache/openejb/BeanContext/getEJBLocalHome()|",
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getDeploymentInfo()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/openejb/core/CoreDeploymentInfo/getEJBLocalHome()|"
+    ],
+    "affectedLib": "org.apache.geronimo.ext.openejb:openejb-core:3.1.3.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.geronimo.modules:geronimo-openejb:3.0-beta-1",
+    "coordinatesV2": "org.apache.geronimo.modules:geronimo-openejb:3.0-M1",
+    "caller": "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getEjbObject(java.lang.Object)|",
+    "called": "|java+method:///org/apache/openejb/core/ivm/EjbObjectProxyHandler/createProxy(org.apache.openejb.DeploymentInfo,java.lang.Object,org.apache.openejb.InterfaceType)|",
+    "v1Body": [
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getHomeInterface()|",
+      "|java+method:///org/apache/openejb/core/ivm/EjbObjectProxyHandler/createProxy(org.apache.openejb.BeanContext,java.lang.Object,org.apache.openejb.InterfaceType,java.lang.Class)|",
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getDeploymentInfo()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/openejb/core/ivm/EjbObjectProxyHandler/createProxy(org.apache.openejb.DeploymentInfo,java.lang.Object,org.apache.openejb.InterfaceType)|"
+    ],
+    "affectedLib": "org.apache.geronimo.ext.openejb:openejb-core:3.1.3.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.geronimo.modules:geronimo-openejb:3.0-beta-1",
+    "coordinatesV2": "org.apache.geronimo.modules:geronimo-openejb:3.0-M1",
+    "caller": "|java+method:///org/apache/geronimo/openejb/GeronimoThreadContextListener/contextEntered(org.apache.openejb.core.ThreadContext,org.apache.openejb.core.ThreadContext)|",
+    "called": "|java+method:///org/apache/openejb/core/ThreadContext/set(java.lang.Class,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getTrackedConnectionAssociator()|",
+      "|java+method:///javax/security/jacc/PolicyContext/getContextID()|",
+      "|java+method:///org/apache/geronimo/openejb/GeronimoThreadContextListener/getEjbDeployment(org.apache.openejb.BeanContext)|",
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getApplicationManagedSecurityResources()|",
+      "|java+method:///org/apache/geronimo/naming/java/RootContext/setComponentContext(javax.naming.Context)|",
+      "|java+method:///org/apache/geronimo/openejb/GeronimoThreadContextListener$GeronimoCallContext/access$202(org.apache.geronimo.openejb.GeronimoThreadContextListener$GeronimoCallContext,org.apache.geronimo.connector.outbound.connectiontracking.ConnectorInstanceContext)|",
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getUnshareableResources()|",
+      "|java+method:///javax/security/jacc/PolicyContext/setContextID(java.lang.String)|",
+      "|java+method:///org/apache/geronimo/security/ContextManager/setCallers(javax.security.auth.Subject,javax.security.auth.Subject)|",
+      "|java+method:///org/apache/openejb/BeanContext/getJndiEnc()|",
+      "|java+method:///org/apache/geronimo/openejb/GeronimoThreadContextListener$GeronimoCallContext/access$602(org.apache.geronimo.openejb.GeronimoThreadContextListener$GeronimoCallContext,org.apache.geronimo.security.Callers)|",
+      "|java+constructor:///org/apache/geronimo/openejb/GeronimoThreadContextListener$GeronimoCallContext/GeronimoThreadContextListener$GeronimoCallContext(org.apache.geronimo.openejb.GeronimoThreadContextListener$1)|",
+      "|java+method:///org/apache/geronimo/openejb/GeronimoThreadContextListener$GeronimoCallContext/access$502(org.apache.geronimo.openejb.GeronimoThreadContextListener$GeronimoCallContext,boolean)|",
+      "|java+constructor:///org/apache/geronimo/connector/outbound/connectiontracking/ConnectorInstanceContextImpl/ConnectorInstanceContextImpl(java.util.Set,java.util.Set)|",
+      "|java+method:///org/apache/openejb/core/ThreadContext/getBeanContext()|",
+      "|java+method:///org/apache/geronimo/security/ContextManager/getCurrentCaller()|",
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getRunAs()|",
+      "|java+method:///org/apache/geronimo/openejb/GeronimoThreadContextListener$GeronimoCallContext/access$402(org.apache.geronimo.openejb.GeronimoThreadContextListener$GeronimoCallContext,java.lang.String)|",
+      "|java+method:///org/apache/geronimo/connector/outbound/connectiontracking/TrackedConnectionAssociator/enter(org.apache.geronimo.connector.outbound.connectiontracking.ConnectorInstanceContext)|",
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getDefaultSubject()|",
+      "|java+method:///org/apache/geronimo/openejb/GeronimoThreadContextListener$GeronimoCallContext/access$302(org.apache.geronimo.openejb.GeronimoThreadContextListener$GeronimoCallContext,javax.naming.Context)|",
+      "|java+method:///org/apache/geronimo/security/ContextManager/pushNextCaller(javax.security.auth.Subject)|",
+      "|java+method:///org/apache/openejb/BeanContext/getModuleID()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+method:///org/apache/geronimo/naming/java/RootContext/getComponentContext()|",
+      "|java+method:///org/apache/openejb/core/ThreadContext/set(java.lang.Class,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getTrackedConnectionAssociator()|",
+      "|java+method:///javax/security/jacc/PolicyContext/getContextID()|",
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getApplicationManagedSecurityResources()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///org/apache/geronimo/naming/java/RootContext/setComponentContext(javax.naming.Context)|",
+      "|java+constructor:///org/apache/geronimo/connector/outbound/connectiontracking/ConnectorInstanceContextImpl/ConnectorInstanceContextImpl(java.util.Set,java.util.Set)|",
+      "|java+method:///org/apache/openejb/core/CoreDeploymentInfo/isDestroyed()|",
+      "|java+method:///org/apache/geronimo/openejb/GeronimoThreadContextListener$GeronimoCallContext/access$302(org.apache.geronimo.openejb.GeronimoThreadContextListener$GeronimoCallContext,java.lang.String)|",
+      "|java+method:///org/apache/geronimo/connector/outbound/connectiontracking/TrackedConnectionAssociator/enter(org.apache.geronimo.connector.outbound.connectiontracking.ConnectorInstanceContext)|",
+      "|java+method:///org/apache/geronimo/openejb/GeronimoThreadContextListener$GeronimoCallContext/access$202(org.apache.geronimo.openejb.GeronimoThreadContextListener$GeronimoCallContext,javax.naming.Context)|",
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getDefaultSubject()|",
+      "|java+method:///org/apache/geronimo/security/ContextManager/setCallers(javax.security.auth.Subject,javax.security.auth.Subject)|",
+      "|java+method:///org/apache/openejb/core/CoreDeploymentInfo/getModuleID()|",
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getComponentContext()|",
+      "|java+method:///org/apache/geronimo/openejb/GeronimoThreadContextListener$GeronimoCallContext/access$502(org.apache.geronimo.openejb.GeronimoThreadContextListener$GeronimoCallContext,org.apache.geronimo.security.Callers)|",
+      "|java+method:///org/apache/openejb/core/ThreadContext/getDeploymentInfo()|",
+      "|java+constructor:///org/apache/geronimo/openejb/GeronimoThreadContextListener$GeronimoCallContext/GeronimoThreadContextListener$GeronimoCallContext(org.apache.geronimo.openejb.GeronimoThreadContextListener$1)|",
+      "|java+method:///org/apache/geronimo/openejb/GeronimoThreadContextListener$GeronimoCallContext/access$402(org.apache.geronimo.openejb.GeronimoThreadContextListener$GeronimoCallContext,boolean)|",
+      "|java+method:///org/apache/geronimo/openejb/GeronimoThreadContextListener$GeronimoCallContext/access$102(org.apache.geronimo.openejb.GeronimoThreadContextListener$GeronimoCallContext,org.apache.geronimo.connector.outbound.connectiontracking.ConnectorInstanceContext)|",
+      "|java+method:///org/apache/geronimo/security/ContextManager/getCurrentCaller()|",
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getRunAs()|",
+      "|java+method:///org/apache/geronimo/openejb/EjbDeployment/getUnshareableResources()|",
+      "|java+method:///java/lang/Object/wait()|",
+      "|java+method:///javax/security/jacc/PolicyContext/setContextID(java.lang.String)|",
+      "|java+method:///org/apache/openejb/core/CoreDeploymentInfo/get(java.lang.Class)|",
+      "|java+method:///org/apache/geronimo/security/ContextManager/pushNextCaller(javax.security.auth.Subject)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+method:///org/apache/geronimo/naming/java/RootContext/getComponentContext()|",
+      "|java+method:///org/apache/openejb/core/ThreadContext/set(java.lang.Class,java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.geronimo.ext.openejb:openejb-core:3.1.3.0",
+    "change": "ADDED"
+  }
+]

@@ -1,0 +1,76 @@
+[
+  {
+    "coordinatesV1": "org.jboss.arquillian.protocol:arquillian-protocol-servlet:1.0.0.Beta2",
+    "coordinatesV2": "org.jboss.arquillian.protocol:arquillian-protocol-servlet:1.0.0.Alpha5",
+    "caller": "|java+method:///org/jboss/arquillian/protocol/servlet/runner/ServletTestRunner/createFailedResult(java.lang.Throwable)|",
+    "called": "|java+constructor:///org/jboss/arquillian/spi/TestResult/TestResult(org.jboss.arquillian.spi.TestResult$Status,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///org/jboss/arquillian/spi/TestResult/TestResult(org.jboss.arquillian.spi.TestResult$Status,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/jboss/arquillian/test/spi/TestResult/TestResult(org.jboss.arquillian.test.spi.TestResult$Status,java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.jboss.arquillian:arquillian-spi:1.0.0.Alpha5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.jboss.arquillian.protocol:arquillian-protocol-servlet:1.0.0.Beta2",
+    "coordinatesV2": "org.jboss.arquillian.protocol:arquillian-protocol-servlet:1.0.0.Alpha5",
+    "caller": "|java+method:///org/jboss/arquillian/protocol/servlet/runner/ServletTestRunner/doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+    "called": "|java+method:///org/jboss/arquillian/spi/util/TestRunners/getTestRunner()|",
+    "v1Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getParameter(java.lang.String)|",
+      "|java+method:///java/lang/String/equalsIgnoreCase(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/sendError(int,java.lang.String)|",
+      "|java+method:///org/jboss/arquillian/spi/TestRunner/execute(java.lang.Class,java.lang.String)|",
+      "|java+method:///java/io/PrintWriter/write(java.lang.String)|",
+      "|java+method:///org/jboss/arquillian/protocol/servlet/runner/ServletTestRunner/writeObject(java.lang.Object,javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/getWriter()|",
+      "|java+method:///java/lang/ClassLoader/loadClass(java.lang.String)|",
+      "|java+method:///org/jboss/arquillian/spi/util/TestRunners/getTestRunner()|",
+      "|java+method:///org/jboss/arquillian/protocol/servlet/runner/ServletTestRunner/createFailedResult(java.lang.Throwable)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///org/jboss/arquillian/protocol/servlet/runner/SecurityActions/getThreadContextClassLoader()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/setContentType(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/setStatus(int)|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jboss/arquillian/protocol/servlet/runner/ServletTestRunner/execute(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|"
+    ],
+    "affectedLib": "org.jboss.arquillian:arquillian-spi:1.0.0.Alpha5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.jboss.arquillian.protocol:arquillian-protocol-servlet:1.0.0.Beta2",
+    "coordinatesV2": "org.jboss.arquillian.protocol:arquillian-protocol-servlet:1.0.0.Alpha5",
+    "caller": "|java+method:///org/jboss/arquillian/protocol/servlet/BaseServletProtocol/getDescription()|",
+    "called": "|java+constructor:///org/jboss/arquillian/spi/client/protocol/ProtocolDescription/ProtocolDescription(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/jboss/arquillian/protocol/servlet/BaseServletProtocol/getProtcolName()|",
+      "|java+constructor:///org/jboss/arquillian/spi/client/protocol/ProtocolDescription/ProtocolDescription(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jboss/arquillian/protocol/servlet/BaseServletProtocol/getProtcolName()|",
+      "|java+constructor:///org/jboss/arquillian/container/spi/client/protocol/ProtocolDescription/ProtocolDescription(java.lang.String)|"
+    ],
+    "affectedLib": "org.jboss.arquillian:arquillian-spi:1.0.0.Alpha5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.jboss.arquillian.protocol:arquillian-protocol-servlet:1.0.0.Alpha5",
+    "coordinatesV2": "org.jboss.arquillian.protocol:arquillian-protocol-servlet:1.0.0.Beta2",
+    "caller": "|java+method:///org/jboss/arquillian/protocol/servlet/BaseServletProtocol/getDescription()|",
+    "called": "|java+constructor:///org/jboss/arquillian/container/spi/client/protocol/ProtocolDescription/ProtocolDescription(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/jboss/arquillian/protocol/servlet/BaseServletProtocol/getProtcolName()|",
+      "|java+constructor:///org/jboss/arquillian/spi/client/protocol/ProtocolDescription/ProtocolDescription(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jboss/arquillian/protocol/servlet/BaseServletProtocol/getProtcolName()|",
+      "|java+constructor:///org/jboss/arquillian/container/spi/client/protocol/ProtocolDescription/ProtocolDescription(java.lang.String)|"
+    ],
+    "affectedLib": "org.jboss.arquillian.container:arquillian-container-spi:1.0.0.Beta2",
+    "change": "ADDED"
+  }
+]

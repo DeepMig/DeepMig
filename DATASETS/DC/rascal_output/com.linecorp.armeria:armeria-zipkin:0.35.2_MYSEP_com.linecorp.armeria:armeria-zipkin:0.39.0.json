@@ -1,0 +1,91 @@
+[
+  {
+    "coordinatesV1": "com.linecorp.armeria:armeria-zipkin:0.35.2",
+    "coordinatesV2": "com.linecorp.armeria:armeria-zipkin:0.39.0",
+    "caller": "|java+method:///com/linecorp/armeria/server/tracing/HttpTracingService/getTraceData(com.linecorp.armeria.server.ServiceRequestContext,com.linecorp.armeria.common.http.HttpRequest)|",
+    "called": "|java+method:///com/github/kristofa/brave/SpanId$Builder/sampled(java.lang.Boolean)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/equalsIgnoreCase(java.lang.String)|",
+      "|java+method:///com/github/kristofa/brave/TraceData$Builder/spanId(com.github.kristofa.brave.SpanId)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///com/github/kristofa/brave/TraceData$Builder/build()|",
+      "|java+method:///com/github/kristofa/brave/SpanId$Builder/parentId(java.lang.Long)|",
+      "|java+method:///com/github/kristofa/brave/TraceData$Builder/sample(java.lang.Boolean)|",
+      "|java+method:///com/github/kristofa/brave/SpanId$Builder/build()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///com/github/kristofa/brave/IdConversion/convertToLong(java.lang.String)|",
+      "|java+method:///com/github/kristofa/brave/TraceData/builder()|",
+      "|java+method:///com/github/kristofa/brave/SpanId$Builder/spanId(long)|",
+      "|java+method:///com/linecorp/armeria/common/http/HttpRequest/headers()|",
+      "|java+method:///com/github/kristofa/brave/SpanId$Builder/traceId(long)|",
+      "|java+method:///com/github/kristofa/brave/SpanId/builder()|",
+      "|java+method:///com/linecorp/armeria/common/http/HttpHeaders/get(java.lang.Object)|",
+      "|java+method:///com/github/kristofa/brave/SpanId$Builder/sampled(java.lang.Boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/equalsIgnoreCase(java.lang.String)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///com/github/kristofa/brave/SpanId$Builder/parentId(java.lang.Long)|",
+      "|java+method:///com/github/kristofa/brave/SpanId$Builder/build()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///com/github/kristofa/brave/TraceData/create(com.github.kristofa.brave.SpanId)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///com/github/kristofa/brave/IdConversion/convertToLong(java.lang.String)|",
+      "|java+method:///com/github/kristofa/brave/SpanId$Builder/spanId(long)|",
+      "|java+method:///com/linecorp/armeria/common/http/HttpRequest/headers()|",
+      "|java+method:///com/github/kristofa/brave/SpanId$Builder/traceId(long)|",
+      "|java+method:///com/github/kristofa/brave/SpanId/builder()|",
+      "|java+method:///com/linecorp/armeria/common/http/HttpHeaders/get(java.lang.Object)|",
+      "|java+method:///com/github/kristofa/brave/SpanId$Builder/sampled(java.lang.Boolean)|"
+    ],
+    "affectedLib": "io.zipkin.brave:brave-core:4.0.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.linecorp.armeria:armeria-zipkin:0.35.2",
+    "coordinatesV2": "com.linecorp.armeria:armeria-zipkin:0.39.0",
+    "caller": "|java+method:///com/linecorp/armeria/server/tracing/AbstractTracingService/closeSpan(com.linecorp.armeria.server.ServiceRequestContext,com.github.kristofa.brave.ServerSpan,com.linecorp.armeria.common.logging.RequestLog)|",
+    "called": "|java+method:///com/twitter/zipkin/gen/Span/setName(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/linecorp/armeria/server/tracing/ServerTracingInterceptor/closeSpan(com.github.kristofa.brave.ServerSpan,com.github.kristofa.brave.ServerResponseAdapter)|",
+      "|java+method:///com/twitter/zipkin/gen/Span/setName(java.lang.String)|",
+      "|java+method:///com/linecorp/armeria/common/thrift/ThriftCall/header()|",
+      "|java+method:///com/linecorp/armeria/common/logging/RequestLog/requestContent()|",
+      "|java+method:///com/linecorp/armeria/server/tracing/AbstractTracingService/createResponseAdapter(com.linecorp.armeria.server.ServiceRequestContext,com.linecorp.armeria.common.logging.RequestLog)|",
+      "|java+method:///com/github/kristofa/brave/ServerSpan/getSpan()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/twitter/zipkin/gen/Span/setName(java.lang.String)|",
+      "|java+method:///com/linecorp/armeria/common/logging/RequestLog/requestContent()|",
+      "|java+method:///com/linecorp/armeria/common/RpcRequest/method()|",
+      "|java+method:///com/linecorp/armeria/server/tracing/ServerTracingInterceptor/closeSpan(com.github.kristofa.brave.ServerSpan,com.github.kristofa.brave.ServerResponseAdapter)|",
+      "|java+method:///com/linecorp/armeria/server/tracing/AbstractTracingService/createResponseAdapter(com.linecorp.armeria.server.ServiceRequestContext,com.linecorp.armeria.common.logging.RequestLog)|",
+      "|java+method:///com/github/kristofa/brave/ServerSpan/getSpan()|"
+    ],
+    "affectedLib": "io.zipkin.brave:brave-core:4.0.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.linecorp.armeria:armeria-zipkin:0.35.2",
+    "coordinatesV2": "com.linecorp.armeria:armeria-zipkin:0.39.0",
+    "caller": "|java+method:///com/linecorp/armeria/client/tracing/AbstractTracingClient/closeSpan(com.linecorp.armeria.client.ClientRequestContext,com.twitter.zipkin.gen.Span,com.linecorp.armeria.common.logging.RequestLog)|",
+    "called": "|java+method:///com/twitter/zipkin/gen/Span/setName(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/linecorp/armeria/client/tracing/ClientTracingInterceptor/closeSpan(com.twitter.zipkin.gen.Span,com.github.kristofa.brave.ClientResponseAdapter)|",
+      "|java+method:///com/twitter/zipkin/gen/Span/setName(java.lang.String)|",
+      "|java+method:///com/linecorp/armeria/client/tracing/AbstractTracingClient/createResponseAdapter(com.linecorp.armeria.client.ClientRequestContext,com.linecorp.armeria.common.logging.RequestLog)|",
+      "|java+method:///com/linecorp/armeria/common/thrift/ThriftCall/header()|",
+      "|java+method:///com/linecorp/armeria/common/logging/RequestLog/requestContent()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/linecorp/armeria/client/tracing/ClientTracingInterceptor/closeSpan(com.twitter.zipkin.gen.Span,com.github.kristofa.brave.ClientResponseAdapter)|",
+      "|java+method:///com/linecorp/armeria/common/RpcRequest/method()|",
+      "|java+method:///com/twitter/zipkin/gen/Span/setName(java.lang.String)|",
+      "|java+method:///com/linecorp/armeria/client/tracing/AbstractTracingClient/createResponseAdapter(com.linecorp.armeria.client.ClientRequestContext,com.linecorp.armeria.common.logging.RequestLog)|",
+      "|java+method:///com/linecorp/armeria/common/logging/RequestLog/requestContent()|"
+    ],
+    "affectedLib": "io.zipkin.brave:brave-core:4.0.6",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,55 @@
+[
+  {
+    "coordinatesV1": "com.buschmais.xo:xo.neo4j:0.3.0",
+    "coordinatesV2": "com.buschmais.xo:xo.neo4j:0.4.0",
+    "caller": "|java+method:///com/buschmais/xo/neo4j/impl/datastore/Neo4jMetadataFactory/createRelationMetadata(com.buschmais.xo.spi.reflection.AnnotatedElement,java.util.Map)|",
+    "called": "|java+method:///org/neo4j/graphdb/DynamicRelationshipType/withName(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/buschmais/xo/neo4j/api/annotation/Relation/value()|",
+      "|java+method:///com/buschmais/xo/neo4j/impl/datastore/Neo4jMetadataFactory/createRelationMetadata(com.buschmais.xo.spi.reflection.AnnotatedElement,java.util.Map)|",
+      "|java+method:///com/buschmais/xo/spi/reflection/AnnotatedElement/getAnnotation(java.lang.Class)|",
+      "|java+method:///com/buschmais/xo/spi/reflection/PropertyMethod/getAnnotationOfProperty(java.lang.Class)|",
+      "|java+constructor:///com/buschmais/xo/neo4j/impl/datastore/metadata/RelationshipMetadata/RelationshipMetadata(com.buschmais.xo.neo4j.impl.datastore.metadata.Neo4jRelationshipType)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/capitalize(java.lang.String)|",
+      "|java+constructor:///com/buschmais/xo/neo4j/impl/datastore/metadata/Neo4jRelationshipType/Neo4jRelationshipType(org.neo4j.graphdb.RelationshipType)|",
+      "|java+method:///com/buschmais/xo/spi/reflection/AnnotatedElement/getName()|",
+      "|java+method:///org/neo4j/graphdb/DynamicRelationshipType/withName(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/buschmais/xo/neo4j/api/annotation/Relation/value()|",
+      "|java+method:///com/buschmais/xo/neo4j/impl/datastore/Neo4jMetadataFactory/createRelationMetadata(com.buschmais.xo.spi.reflection.AnnotatedElement,java.util.Map)|",
+      "|java+method:///com/buschmais/xo/spi/reflection/AnnotatedElement/getAnnotation(java.lang.Class)|",
+      "|java+method:///com/buschmais/xo/spi/reflection/PropertyMethod/getAnnotationOfProperty(java.lang.Class)|",
+      "|java+constructor:///com/buschmais/xo/neo4j/impl/datastore/metadata/RelationshipMetadata/RelationshipMetadata(com.buschmais.xo.neo4j.impl.datastore.metadata.RelationshipType)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///com/buschmais/xo/neo4j/impl/datastore/metadata/RelationshipType/RelationshipType(org.neo4j.graphdb.RelationshipType)|",
+      "|java+method:///com/google/common/base/CaseFormat/to(com.google.common.base.CaseFormat,java.lang.String)|",
+      "|java+method:///com/buschmais/xo/spi/reflection/AnnotatedElement/getName()|",
+      "|java+method:///org/neo4j/graphdb/DynamicRelationshipType/withName(java.lang.String)|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-kernel:2.1.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.buschmais.xo:xo.neo4j:0.3.0",
+    "coordinatesV2": "com.buschmais.xo:xo.neo4j:0.4.0",
+    "caller": "|java+method:///com/buschmais/xo/neo4j/api/Neo4jXOProvider/createDatastore(com.buschmais.xo.api.bootstrap.XOUnit)|",
+    "called": "|java+constructor:///com/buschmais/xo/api/XOException/XOException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///com/buschmais/xo/api/XOException/XOException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/buschmais/xo/neo4j/api/Neo4jXOProvider/lookupFactory(java.net.URI)|",
+      "|java+method:///com/buschmais/xo/api/bootstrap/XOUnit/getUri()|",
+      "|java+method:///com/buschmais/xo/neo4j/api/DatastoreFactory/createGraphDatabaseService(java.net.URI)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/buschmais/xo/api/bootstrap/XOUnit/getProperties()|",
+      "|java+constructor:///com/buschmais/xo/api/XOException/XOException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/buschmais/xo/neo4j/api/DatastoreFactory/createGraphDatabaseService(java.net.URI,java.util.Properties)|",
+      "|java+method:///com/buschmais/xo/neo4j/api/Neo4jXOProvider/lookupFactory(java.net.URI)|",
+      "|java+method:///com/buschmais/xo/api/bootstrap/XOUnit/getUri()|"
+    ],
+    "affectedLib": "com.buschmais.xo:xo.api:0.4.0",
+    "change": "UPDATED"
+  }
+]

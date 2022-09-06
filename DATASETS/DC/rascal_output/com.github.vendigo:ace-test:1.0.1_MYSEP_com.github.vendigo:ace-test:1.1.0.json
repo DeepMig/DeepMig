@@ -1,0 +1,156 @@
+[
+  {
+    "coordinatesV1": "com.github.vendigo:ace-test:1.1.0",
+    "coordinatesV2": "com.github.vendigo:ace-test:1.0.1",
+    "caller": "|java+method:///com/github/vendigo/acetest/db/DatasourceContext/getOnlyDbName()|",
+    "called": "|java+method:///com/google/common/collect/Iterables/getOnlyElement(java.lang.Iterable)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/keySet()|",
+      "|java+method:///com/google/common/collect/Iterables/getOnlyElement(java.lang.Iterable)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/vendigo/acetest/utils/Utils/getOnlyElement(java.util.Collection)|",
+      "|java+method:///java/util/Map/keySet()|"
+    ],
+    "affectedLib": "com.google.guava:guava:20.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.github.vendigo:ace-test:1.1.0",
+    "coordinatesV2": "com.github.vendigo:ace-test:1.0.1",
+    "caller": "|java+method:///com/github/vendigo/acetest/conversion/NumberConversions/integerToLong(java.lang.Number)|",
+    "called": "|java+method:///com/google/common/math/DoubleMath/roundToLong(double,java.math.RoundingMode)|",
+    "v1Body": [
+      "|java+method:///com/google/common/math/DoubleMath/roundToLong(double,java.math.RoundingMode)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/Number/doubleValue()|",
+      "|java+method:///java/lang/Number/longValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/Number/doubleValue()|",
+      "|java+method:///java/lang/Number/longValue()|"
+    ],
+    "affectedLib": "com.google.guava:guava:20.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.github.vendigo:ace-test:1.1.0",
+    "coordinatesV2": "com.github.vendigo:ace-test:1.0.1",
+    "caller": "|java+method:///com/github/vendigo/acetest/assertion/DbDataMatcher/collectColumnNames(java.util.List)|",
+    "called": "|java+method:///com/google/common/collect/Iterables/getFirst(java.lang.Iterable,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/util/Collections/emptyMap()|",
+      "|java+method:///com/google/common/collect/Iterables/getFirst(java.lang.Iterable,java.lang.Object)|",
+      "|java+method:///java/util/Map/keySet()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Collections/emptyMap()|",
+      "|java+method:///java/util/Map/keySet()|",
+      "|java+method:///com/github/vendigo/acetest/utils/Utils/getFirst(java.util.Collection,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:20.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.github.vendigo:ace-test:1.1.0",
+    "coordinatesV2": "com.github.vendigo:ace-test:1.0.1",
+    "caller": "|java+method:///com/github/vendigo/acetest/db/DatasourceContext/createDatasource(com.github.vendigo.acetest.config.DatasourceConfig)|",
+    "called": "|java+constructor:///org/apache/commons/dbcp/BasicDataSource/BasicDataSource()|",
+    "v1Body": [
+      "|java+method:///com/github/vendigo/acetest/config/DatasourceConfig/getDbName()|",
+      "|java+method:///org/apache/commons/dbcp/BasicDataSource/setUrl(java.lang.String)|",
+      "|java+method:///com/github/vendigo/acetest/config/DatasourceConfig/getUrl()|",
+      "|java+method:///org/apache/commons/dbcp/BasicDataSource/setDriverClassName(java.lang.String)|",
+      "|java+constructor:///org/apache/commons/dbcp/BasicDataSource/BasicDataSource()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/vendigo/acetest/config/DatasourceConfig/getDbName()|",
+      "|java+method:///org/apache/commons/dbcp2/BasicDataSource/setUrl(java.lang.String)|",
+      "|java+method:///com/github/vendigo/acetest/config/DatasourceConfig/getUrl()|",
+      "|java+method:///org/apache/commons/dbcp2/BasicDataSource/setDriverClassName(java.lang.String)|",
+      "|java+constructor:///org/apache/commons/dbcp2/BasicDataSource/BasicDataSource()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "commons-dbcp:commons-dbcp:1.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.github.vendigo:ace-test:1.0.1",
+    "coordinatesV2": "com.github.vendigo:ace-test:1.1.0",
+    "caller": "|java+method:///com/github/vendigo/acetest/db/DatasourceContext/createDatasource(com.github.vendigo.acetest.config.DatasourceConfig)|",
+    "called": "|java+constructor:///org/apache/commons/dbcp2/BasicDataSource/BasicDataSource()|",
+    "v1Body": [
+      "|java+method:///com/github/vendigo/acetest/config/DatasourceConfig/getDbName()|",
+      "|java+method:///org/apache/commons/dbcp/BasicDataSource/setUrl(java.lang.String)|",
+      "|java+method:///com/github/vendigo/acetest/config/DatasourceConfig/getUrl()|",
+      "|java+method:///org/apache/commons/dbcp/BasicDataSource/setDriverClassName(java.lang.String)|",
+      "|java+constructor:///org/apache/commons/dbcp/BasicDataSource/BasicDataSource()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/vendigo/acetest/config/DatasourceConfig/getDbName()|",
+      "|java+method:///org/apache/commons/dbcp2/BasicDataSource/setUrl(java.lang.String)|",
+      "|java+method:///com/github/vendigo/acetest/config/DatasourceConfig/getUrl()|",
+      "|java+method:///org/apache/commons/dbcp2/BasicDataSource/setDriverClassName(java.lang.String)|",
+      "|java+constructor:///org/apache/commons/dbcp2/BasicDataSource/BasicDataSource()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-dbcp2:2.1.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.vendigo:ace-test:1.0.1",
+    "coordinatesV2": "com.github.vendigo:ace-test:1.1.0",
+    "caller": "|java+method:///com/github/vendigo/acetest/db/DatasourceContext/applyLiquibase(com.github.vendigo.acetest.config.DatasourceConfig,javax.sql.DataSource)|",
+    "called": "|java+method:///org/springframework/util/StringUtils/isEmpty(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///liquibase/integration/spring/SpringLiquibase/setResourceLoader(org.springframework.core.io.ResourceLoader)|",
+      "|java+method:///liquibase/integration/spring/SpringLiquibase/setDefaultSchema(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///liquibase/integration/spring/SpringLiquibase/setDataSource(javax.sql.DataSource)|",
+      "|java+constructor:///org/springframework/core/io/DefaultResourceLoader/DefaultResourceLoader()|",
+      "|java+method:///com/github/vendigo/acetest/config/DatasourceConfig/getLiquibaseConfig()|",
+      "|java+constructor:///liquibase/integration/spring/SpringLiquibase/SpringLiquibase()|",
+      "|java+method:///liquibase/integration/spring/SpringLiquibase/setChangeLog(java.lang.String)|",
+      "|java+method:///com/github/vendigo/acetest/config/DatasourceConfig/getDbName()|",
+      "|java+method:///liquibase/integration/spring/SpringLiquibase/afterPropertiesSet()|"
+    ],
+    "v2Body": [
+      "|java+method:///liquibase/integration/spring/SpringLiquibase/setContexts(java.lang.String)|",
+      "|java+method:///liquibase/integration/spring/SpringLiquibase/setResourceLoader(org.springframework.core.io.ResourceLoader)|",
+      "|java+method:///liquibase/integration/spring/SpringLiquibase/setDefaultSchema(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///liquibase/integration/spring/SpringLiquibase/setDataSource(javax.sql.DataSource)|",
+      "|java+constructor:///org/springframework/core/io/DefaultResourceLoader/DefaultResourceLoader()|",
+      "|java+method:///liquibase/integration/spring/SpringLiquibase/setChangeLog(java.lang.String)|",
+      "|java+method:///com/github/vendigo/acetest/config/DatasourceConfig/getDbName()|",
+      "|java+method:///liquibase/integration/spring/SpringLiquibase/afterPropertiesSet()|",
+      "|java+method:///com/github/vendigo/acetest/config/DatasourceConfig/getLiquibaseConfig()|",
+      "|java+method:///org/springframework/util/StringUtils/isEmpty(java.lang.Object)|",
+      "|java+method:///com/github/vendigo/acetest/config/DatasourceConfig/getLiquibaseContexts()|",
+      "|java+constructor:///liquibase/integration/spring/SpringLiquibase/SpringLiquibase()|"
+    ],
+    "affectedLib": "org.springframework:spring-core:4.3.9.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.github.vendigo:ace-test:1.0.1",
+    "coordinatesV2": "com.github.vendigo:ace-test:1.1.0",
+    "caller": "|java+method:///com/github/vendigo/acetest/config/ConfigParser/readConfig()|",
+    "called": "|java+method:///org/yaml/snakeyaml/Yaml/loadAs(java.io.InputStream,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/lang/ClassLoader/getResourceAsStream(java.lang.String)|",
+      "|java+method:///org/yaml/snakeyaml/Yaml/loadAs(java.io.InputStream,java.lang.Class)|",
+      "|java+constructor:///org/yaml/snakeyaml/Yaml/Yaml()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/vendigo/acetest/config/ConfigParser/getConfigFile()|",
+      "|java+method:///org/yaml/snakeyaml/Yaml/loadAs(java.io.InputStream,java.lang.Class)|",
+      "|java+constructor:///org/yaml/snakeyaml/Yaml/Yaml()|"
+    ],
+    "affectedLib": "org.yaml:snakeyaml:1.18",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,176 @@
+[
+  {
+    "coordinatesV1": "org.jboss.remoting:jboss-remoting:3.3.0.Beta1",
+    "coordinatesV2": "org.jboss.remoting:jboss-remoting:3.1.0.Beta1",
+    "caller": "|java+method:///org/jboss/remoting3/remote/RemoteConnectionHandler/closeAction()|",
+    "called": "|java+method:///org/jboss/marshalling/util/IntKeyMap/iterator()|",
+    "v1Body": [
+      "|java+method:///org/jboss/remoting3/remote/OutboundClient/getRequestHandler()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/jboss/xnio/Cancellable/cancel()|",
+      "|java+method:///org/jboss/remoting3/spi/SpiUtils/safeHandleException(org.jboss.remoting3.spi.ReplyHandler,java.io.IOException)|",
+      "|java+method:///org/jboss/remoting3/remote/OutboundRequest/getInboundReplyHandler()|",
+      "|java+method:///org/jboss/marshalling/util/IntKeyMap$Entry/getValue()|",
+      "|java+method:///org/jboss/marshalling/util/IntKeyMap/iterator()|",
+      "|java+constructor:///org/jboss/remoting3/IndeterminateOutcomeException/IndeterminateOutcomeException(java.lang.String)|",
+      "|java+method:///org/jboss/xnio/IoUtils/safeClose(java.io.Closeable)|",
+      "|java+method:///org/jboss/remoting3/remote/InboundClient/getHandler()|",
+      "|java+method:///org/jboss/remoting3/remote/InboundRequest/getCancellable()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/jboss/remoting3/remote/RemoteConnection/close()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jboss/remoting3/remote/RemoteConnectionHandler/sendCloseRequest()|"
+    ],
+    "affectedLib": "org.jboss.marshalling:marshalling-api:1.3.0.CR1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.jboss.remoting:jboss-remoting:3.1.0.Beta1",
+    "coordinatesV2": "org.jboss.remoting:jboss-remoting:3.3.0.Beta1",
+    "caller": "|java+initializer:///org/jboss/remoting3/spi/AbstractHandleableCloseable/AbstractHandleableCloseable$initializer|",
+    "called": "|java+method:///org/jboss/logging/Logger/getLogger(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/jboss/xnio/log/Logger/getLogger(java.lang.String)|",
+      "|java+method:///java/security/AccessController/doPrivileged(java.security.PrivilegedAction)|",
+      "|java+constructor:///org/jboss/remoting3/spi/AbstractHandleableCloseable$1/AbstractHandleableCloseable$1()|",
+      "|java+method:///java/lang/Boolean/parseBoolean(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jboss/logging/Logger/getLogger(java.lang.String)|",
+      "|java+method:///java/security/AccessController/doPrivileged(java.security.PrivilegedAction)|",
+      "|java+constructor:///org/jboss/remoting3/spi/AbstractHandleableCloseable$1/AbstractHandleableCloseable$1()|",
+      "|java+method:///java/lang/Boolean/parseBoolean(java.lang.String)|"
+    ],
+    "affectedLib": "org.jboss.logging:jboss-logging:3.1.0.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jboss.remoting:jboss-remoting:3.1.0.Beta1",
+    "coordinatesV2": "org.jboss.remoting:jboss-remoting:3.3.0.Beta1",
+    "caller": "|java+method:///org/jboss/remoting3/spi/AbstractHandleableCloseable/close()|",
+    "called": "|java+method:///org/jboss/logging/Logger/tracef(java.lang.Throwable,java.lang.String,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/jboss/remoting3/spi/AbstractHandleableCloseable/closeAction()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException()|",
+      "|java+method:///java/lang/Thread/currentThread()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/jboss/remoting3/spi/AbstractHandleableCloseable$State/ordinal()|",
+      "|java+method:///java/lang/Object/notifyAll()|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///org/jboss/remoting3/spi/AbstractHandleableCloseable/runCloseTask(java.util.concurrent.Executor,java.lang.Runnable)|",
+      "|java+method:///org/jboss/xnio/log/Logger/trace(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/Map/values()|",
+      "|java+constructor:///org/jboss/remoting3/spi/AbstractHandleableCloseable$CloseHandlerTask/AbstractHandleableCloseable$CloseHandlerTask(org.jboss.remoting3.spi.AbstractHandleableCloseable,org.jboss.remoting3.CloseHandler,org.jboss.remoting3.spi.AbstractHandleableCloseable$1)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.Throwable)|",
+      "|java+method:///org/jboss/remoting3/spi/AbstractHandleableCloseable/runCloseTask(java.lang.Runnable)|",
+      "|java+method:///org/jboss/remoting3/spi/AbstractHandleableCloseable/closeAction()|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException()|",
+      "|java+method:///java/lang/Object/wait()|",
+      "|java+method:///java/util/Map/values()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/io/InterruptedIOException/InterruptedIOException(java.lang.String)|",
+      "|java+method:///org/jboss/remoting3/spi/AbstractHandleableCloseable$State/ordinal()|",
+      "|java+method:///org/jboss/remoting3/spi/SpiUtils/glueStackTraces(java.lang.Throwable,java.lang.StackTraceElement%5B%5D,int,java.lang.String)|",
+      "|java+method:///java/lang/Object/notifyAll()|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///org/jboss/logging/Logger/tracef(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/jboss/logging/Logger/tracef(java.lang.Throwable,java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/jboss/remoting3/spi/AbstractHandleableCloseable/clone(java.io.IOException)|",
+      "|java+method:///org/jboss/logging/Logger/errorf(java.lang.Throwable,java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/Thread/currentThread()|",
+      "|java+method:///java/lang/Thread/interrupt()|",
+      "|java+method:///java/lang/Thread/getStackTrace()|",
+      "|java+constructor:///org/jboss/remoting3/spi/AbstractHandleableCloseable$CloseHandlerTask/AbstractHandleableCloseable$CloseHandlerTask(org.jboss.remoting3.spi.AbstractHandleableCloseable,org.jboss.remoting3.CloseHandler,java.io.IOException)|"
+    ],
+    "affectedLib": "org.jboss.logging:jboss-logging:3.1.0.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jboss.remoting:jboss-remoting:3.1.0.Beta1",
+    "coordinatesV2": "org.jboss.remoting:jboss-remoting:3.3.0.Beta1",
+    "caller": "|java+initializer:///org/jboss/remoting3/spi/SpiUtils/SpiUtils$initializer|",
+    "called": "|java+method:///org/jboss/logging/Logger/getLogger(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/jboss/xnio/log/Logger/getLogger(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jboss/logging/Logger/getLogger(java.lang.String)|"
+    ],
+    "affectedLib": "org.jboss.logging:jboss-logging:3.1.0.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jboss.remoting:jboss-remoting:3.1.0.Beta1",
+    "coordinatesV2": "org.jboss.remoting:jboss-remoting:3.3.0.Beta1",
+    "caller": "|java+initializer:///org/jboss/remoting3/EndpointImpl/EndpointImpl$initializer|",
+    "called": "|java+method:///org/jboss/logging/Logger/infof(java.lang.String,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/jboss/xnio/log/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/jboss/xnio/log/Logger/getLogger(java.lang.String)|",
+      "|java+constructor:///org/jboss/remoting3/security/RemotingPermission/RemotingPermission(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/regex/Pattern/compile(java.lang.String)|",
+      "|java+method:///java/nio/charset/Charset/forName(java.lang.String)|",
+      "|java+constructor:///org/jboss/remoting3/security/RemotingPermission/RemotingPermission(java.lang.String)|",
+      "|java+method:///org/jboss/remoting3/Version/getVersionString()|",
+      "|java+method:///org/jboss/logging/Logger/infof(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/jboss/logging/Logger/getLogger(java.lang.String)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicIntegerFieldUpdater/newUpdater(java.lang.Class,java.lang.String)|",
+      "|java+constructor:///org/jboss/remoting3/EndpointImpl$UserAndRealm/EndpointImpl$UserAndRealm(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|"
+    ],
+    "affectedLib": "org.jboss.logging:jboss-logging:3.1.0.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jboss.remoting:jboss-remoting:3.1.0.Beta1",
+    "coordinatesV2": "org.jboss.remoting:jboss-remoting:3.3.0.Beta1",
+    "caller": "|java+method:///org/jboss/remoting3/spi/AbstractHandleableCloseable/finalize()|",
+    "called": "|java+method:///org/jboss/logging/Logger/warnf(java.lang.Throwable,java.lang.String,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/lang/Throwable/setStackTrace(java.lang.StackTraceElement%5B%5D)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/jboss/remoting3/spi/AbstractHandleableCloseable/isOpen()|",
+      "|java+method:///java/lang/Object/finalize()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///org/jboss/remoting3/spi/AbstractHandleableCloseable$LeakThrowable/AbstractHandleableCloseable$LeakThrowable()|",
+      "|java+method:///org/jboss/xnio/log/Logger/warn(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jboss/xnio/IoUtils/safeClose(java.io.Closeable)|",
+      "|java+method:///org/jboss/xnio/log/Logger/warn(java.lang.Throwable,java.lang.String,java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Throwable/setStackTrace(java.lang.StackTraceElement%5B%5D)|",
+      "|java+method:///org/jboss/logging/Logger/warnf(java.lang.Throwable,java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/jboss/remoting3/spi/AbstractHandleableCloseable/isOpen()|",
+      "|java+method:///java/lang/Object/finalize()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///org/jboss/remoting3/spi/AbstractHandleableCloseable$LeakThrowable/AbstractHandleableCloseable$LeakThrowable()|",
+      "|java+method:///org/jboss/logging/Logger/tracef(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jboss/remoting3/spi/AbstractHandleableCloseable/closeAsync()|"
+    ],
+    "affectedLib": "org.jboss.logging:jboss-logging:3.1.0.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jboss.remoting:jboss-remoting:3.1.0.Beta1",
+    "coordinatesV2": "org.jboss.remoting:jboss-remoting:3.3.0.Beta1",
+    "caller": "|java+initializer:///org/jboss/remoting3/RemotingOptions/RemotingOptions$initializer|",
+    "called": "|java+method:///org/xnio/Option/simple(java.lang.Class,java.lang.String,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/jboss/xnio/Option/sequence(java.lang.Class,java.lang.String,java.lang.Class)|",
+      "|java+method:///org/jboss/xnio/Option/simple(java.lang.Class,java.lang.String,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/xnio/Option/simple(java.lang.Class,java.lang.String,java.lang.Class)|"
+    ],
+    "affectedLib": "org.jboss.xnio:xnio-api:3.0.7.GA",
+    "change": "UPDATED"
+  }
+]

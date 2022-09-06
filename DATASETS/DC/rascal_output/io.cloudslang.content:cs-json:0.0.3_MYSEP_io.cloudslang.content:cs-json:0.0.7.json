@@ -1,0 +1,233 @@
+[
+  {
+    "coordinatesV1": "io.cloudslang.content:cs-json:0.0.3",
+    "coordinatesV2": "io.cloudslang.content:cs-json:0.0.7",
+    "caller": "|java+method:///io/cloudslang/content/json/actions/RemoveEmptyElementAction/removeEmptyElements(java.lang.String)|",
+    "called": "|java+method:///io/cloudslang/content/utils/OutputUtilities/getFailureResultsMap(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///io/cloudslang/content/json/services/JsonService/removeEmptyElementsJson(java.lang.String)|",
+      "|java+method:///io/cloudslang/content/json/utils/StringUtils/getStackTraceAsString(java.lang.Throwable)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///io/cloudslang/content/json/services/JsonService/JsonService()|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/cloudslang/content/json/services/JsonService/removeEmptyElementsJson(java.lang.String)|",
+      "|java+method:///io/cloudslang/content/utils/OutputUtilities/getFailureResultsMap(java.lang.Throwable)|",
+      "|java+constructor:///io/cloudslang/content/json/services/JsonService/JsonService()|",
+      "|java+method:///io/cloudslang/content/utils/OutputUtilities/getSuccessResultsMap(java.lang.String)|"
+    ],
+    "affectedLib": "io.cloudslang.content:cs-commons:0.0.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.cloudslang.content:cs-json:0.0.3",
+    "coordinatesV2": "io.cloudslang.content:cs-json:0.0.7",
+    "caller": "|java+constructor:///io/cloudslang/content/json/utils/Constants$InputNames/Constants$InputNames()|",
+    "called": "|java+constructor:///io/cloudslang/content/constants/InputNames/InputNames()|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/cloudslang/content/constants/InputNames/InputNames()|"
+    ],
+    "affectedLib": "io.cloudslang.content:cs-commons:0.0.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.cloudslang.content:cs-json:0.0.3",
+    "coordinatesV2": "io.cloudslang.content:cs-json:0.0.7",
+    "caller": "|java+method:///io/cloudslang/content/json/actions/GetValueFromObject/execute(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/JsonNode/isValueNode()|",
+    "v1Body": [
+      "|java+method:///com/fasterxml/jackson/databind/JsonNode/asText()|",
+      "|java+method:///io/cloudslang/content/json/actions/GetValueFromObject/getObject(com.fasterxml.jackson.databind.JsonNode,java.lang.String%5B%5D,int)|",
+      "|java+method:///io/cloudslang/content/json/utils/JsonUtils/isBlank(java.lang.String)|",
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/JsonNode/toString()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/Exception/Exception(java.lang.String)|",
+      "|java+method:///io/cloudslang/content/json/utils/JsonUtils/populateResult(java.util.Map,java.lang.String,java.lang.Exception)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readTree(java.lang.String)|",
+      "|java+method:///io/cloudslang/content/json/utils/JsonUtils/populateResult(java.util.Map,java.lang.Exception)|",
+      "|java+method:///com/fasterxml/jackson/databind/JsonNode/isValueNode()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/JsonNode/asText()|",
+      "|java+method:///io/cloudslang/content/json/actions/GetValueFromObject/getObject(com.fasterxml.jackson.databind.JsonNode,java.lang.String%5B%5D,int)|",
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/JsonNode/toString()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///io/cloudslang/content/utils/StringUtilities/isBlank(java.lang.CharSequence)|",
+      "|java+constructor:///java/lang/Exception/Exception(java.lang.String)|",
+      "|java+method:///io/cloudslang/content/json/utils/JsonUtils/populateResult(java.util.Map,java.lang.String,java.lang.Exception)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readTree(java.lang.String)|",
+      "|java+method:///io/cloudslang/content/json/utils/JsonUtils/populateResult(java.util.Map,java.lang.Exception)|",
+      "|java+method:///com/fasterxml/jackson/databind/JsonNode/isValueNode()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.8.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.cloudslang.content:cs-json:0.0.3",
+    "coordinatesV2": "io.cloudslang.content:cs-json:0.0.7",
+    "caller": "|java+method:///io/cloudslang/content/json/actions/MergeArrays/execute(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/node/ArrayNode/toString()|",
+    "v1Body": [
+      "|java+method:///io/cloudslang/content/json/utils/JsonUtils/isBlank(java.lang.String)|",
+      "|java+constructor:///com/fasterxml/jackson/databind/node/ArrayNode/ArrayNode(com.fasterxml.jackson.databind.node.JsonNodeFactory)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/node/ArrayNode/toString()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/String/replaceFirst(java.lang.String,java.lang.String)|",
+      "|java+constructor:///java/lang/Exception/Exception(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readTree(java.lang.String)|",
+      "|java+method:///io/cloudslang/content/json/utils/JsonUtils/populateResult(java.util.Map,java.lang.Exception)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/getNodeFactory()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/fasterxml/jackson/databind/node/ArrayNode/addAll(com.fasterxml.jackson.databind.node.ArrayNode)|",
+      "|java+method:///io/cloudslang/content/json/utils/JsonUtils/populateResult(java.util.Map,java.lang.String,java.lang.Exception)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/fasterxml/jackson/databind/node/ArrayNode/ArrayNode(com.fasterxml.jackson.databind.node.JsonNodeFactory)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/node/ArrayNode/toString()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///io/cloudslang/content/utils/StringUtilities/isBlank(java.lang.CharSequence)|",
+      "|java+method:///java/lang/String/replaceFirst(java.lang.String,java.lang.String)|",
+      "|java+constructor:///java/lang/Exception/Exception(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readTree(java.lang.String)|",
+      "|java+method:///io/cloudslang/content/json/utils/JsonUtils/populateResult(java.util.Map,java.lang.Exception)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/getNodeFactory()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/fasterxml/jackson/databind/node/ArrayNode/addAll(com.fasterxml.jackson.databind.node.ArrayNode)|",
+      "|java+method:///io/cloudslang/content/json/utils/JsonUtils/populateResult(java.util.Map,java.lang.String,java.lang.Exception)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.8.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.cloudslang.content:cs-json:0.0.3",
+    "coordinatesV2": "io.cloudslang.content:cs-json:0.0.7",
+    "caller": "|java+method:///io/cloudslang/content/json/actions/ArraySize/execute(java.lang.String)|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/node/ArrayNode/size()|",
+    "v1Body": [
+      "|java+method:///io/cloudslang/content/json/utils/JsonUtils/isBlank(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/Integer/toString(int)|",
+      "|java+method:///java/io/IOException/getMessage()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/Exception/Exception(java.lang.String)|",
+      "|java+method:///io/cloudslang/content/json/utils/JsonUtils/populateResult(java.util.Map,java.lang.String,java.lang.Exception)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readTree(java.lang.String)|",
+      "|java+method:///io/cloudslang/content/json/utils/JsonUtils/populateResult(java.util.Map,java.lang.Exception)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/fasterxml/jackson/databind/node/ArrayNode/size()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/Integer/toString(int)|",
+      "|java+method:///java/io/IOException/getMessage()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///io/cloudslang/content/utils/StringUtilities/isBlank(java.lang.CharSequence)|",
+      "|java+constructor:///java/lang/Exception/Exception(java.lang.String)|",
+      "|java+method:///io/cloudslang/content/json/utils/JsonUtils/populateResult(java.util.Map,java.lang.String,java.lang.Exception)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readTree(java.lang.String)|",
+      "|java+method:///io/cloudslang/content/json/utils/JsonUtils/populateResult(java.util.Map,java.lang.Exception)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/fasterxml/jackson/databind/node/ArrayNode/size()|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.8.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.cloudslang.content:cs-json:0.0.3",
+    "coordinatesV2": "io.cloudslang.content:cs-json:0.0.7",
+    "caller": "|java+method:///io/cloudslang/content/json/actions/AddJsonPropertyToObject/execute(java.lang.String,java.lang.String,java.lang.String,java.lang.String)|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/node/ArrayNode/add(com.fasterxml.jackson.databind.JsonNode)|",
+    "v1Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/valueToTree(java.lang.Object)|",
+      "|java+method:///com/fasterxml/jackson/databind/node/ContainerNode/toString()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/Exception/Exception(java.lang.String)|",
+      "|java+method:///io/cloudslang/content/json/utils/JsonUtils/populateResult(java.util.Map,java.lang.String,java.lang.Exception)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readTree(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/node/ArrayNode/add(com.fasterxml.jackson.databind.JsonNode)|",
+      "|java+method:///io/cloudslang/content/json/utils/JsonUtils/isBlank(java.lang.String)|",
+      "|java+method:///io/cloudslang/content/json/utils/JsonUtils/parseBooleanWithDefault(java.lang.String,boolean)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///io/cloudslang/content/json/utils/JsonUtils/populateResult(java.util.Map,java.lang.Exception)|",
+      "|java+method:///com/fasterxml/jackson/databind/node/ObjectNode/putPOJO(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/valueToTree(java.lang.Object)|",
+      "|java+method:///com/fasterxml/jackson/databind/node/ContainerNode/toString()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///io/cloudslang/content/utils/StringUtilities/isBlank(java.lang.CharSequence)|",
+      "|java+constructor:///java/lang/Exception/Exception(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readTree(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/node/ArrayNode/add(com.fasterxml.jackson.databind.JsonNode)|",
+      "|java+method:///io/cloudslang/content/json/utils/JsonUtils/parseBooleanWithDefault(java.lang.String,boolean)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/configure(com.fasterxml.jackson.core.JsonParser$Feature,boolean)|",
+      "|java+method:///io/cloudslang/content/json/utils/JsonUtils/populateResult(java.util.Map,java.lang.String,java.lang.Exception)|",
+      "|java+method:///io/cloudslang/content/json/utils/JsonUtils/populateResult(java.util.Map,java.lang.Exception)|",
+      "|java+method:///com/fasterxml/jackson/databind/node/ObjectNode/putPOJO(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.8.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.cloudslang.content:cs-json:0.0.3",
+    "coordinatesV2": "io.cloudslang.content:cs-json:0.0.7",
+    "caller": "|java+method:///io/cloudslang/content/json/services/JsonService/parseJsonForInconsistencies(java.lang.String)|",
+    "called": "|java+constructor:///com/jayway/jsonpath/spi/json/GsonJsonProvider/GsonJsonProvider()|",
+    "v1Body": [
+      "|java+method:///com/jayway/jsonpath/Configuration/builder()|",
+      "|java+constructor:///com/jayway/jsonpath/internal/spi/json/GsonJsonProvider/GsonJsonProvider()|",
+      "|java+method:///com/jayway/jsonpath/Configuration$ConfigurationBuilder/jsonProvider(com.jayway.jsonpath.spi.json.JsonProvider)|",
+      "|java+method:///com/jayway/jsonpath/JsonPath/parse(java.lang.String,com.jayway.jsonpath.Configuration)|",
+      "|java+method:///com/jayway/jsonpath/Configuration$ConfigurationBuilder/build()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/jayway/jsonpath/Configuration/builder()|",
+      "|java+method:///com/jayway/jsonpath/Configuration$ConfigurationBuilder/jsonProvider(com.jayway.jsonpath.spi.json.JsonProvider)|",
+      "|java+method:///com/jayway/jsonpath/JsonPath/parse(java.lang.String,com.jayway.jsonpath.Configuration)|",
+      "|java+constructor:///com/jayway/jsonpath/spi/json/GsonJsonProvider/GsonJsonProvider()|",
+      "|java+method:///com/jayway/jsonpath/Configuration$ConfigurationBuilder/build()|"
+    ],
+    "affectedLib": "com.jayway.jsonpath:json-path:2.2.0",
+    "change": "UPDATED"
+  }
+]

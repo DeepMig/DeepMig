@@ -1,0 +1,27 @@
+[
+  {
+    "coordinatesV1": "com.cloudbees:cloudbees-api-client:1.5.2",
+    "coordinatesV2": "com.cloudbees:cloudbees-api-client:1.5.3",
+    "caller": "|java+method:///com/cloudbees/api/BeesClient/jsonPOJORequest(java.lang.String,java.lang.Object,java.lang.Class,java.lang.String)|",
+    "called": "|java+method:///org/codehaus/jackson/map/ObjectMapper/writeValueAsString(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/cloudbees/api/HttpReply/getCode()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/cloudbees/api/HttpReply/getContent()|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/writeValueAsString(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/cloudbees/api/BeesClient/jsonRequest(java.lang.String,java.lang.String,java.util.Map,java.lang.String)|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/cloudbees/api/HttpReply/bind(java.lang.Class,com.cloudbees.api.BeesClient)|",
+      "|java+method:///com/cloudbees/api/BeesClient/jsonRequest(java.lang.String,java.lang.String,java.util.Map,java.lang.String)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/writeValueAsString(java.lang.Object)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.2",
+    "change": "UPDATED"
+  }
+]

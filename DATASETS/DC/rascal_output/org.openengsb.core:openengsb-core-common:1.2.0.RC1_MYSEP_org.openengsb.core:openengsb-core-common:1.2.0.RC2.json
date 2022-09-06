@@ -1,0 +1,175 @@
+[
+  {
+    "coordinatesV1": "org.openengsb.core:openengsb-core-common:1.2.0.RC1",
+    "coordinatesV2": "org.openengsb.core:openengsb-core-common:1.2.0.RC2",
+    "caller": "|java+method:///org/openengsb/core/common/marshaling/ReturnMapping/createFromMessage(java.lang.String)|",
+    "called": "|java+method:///org/codehaus/jackson/map/ObjectMapper/convertValue(java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+      "|java+method:///org/openengsb/core/common/marshaling/ReturnMapping/setArg(java.lang.Object)|",
+      "|java+method:///org/openengsb/core/common/marshaling/ReturnMapping/getType()|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/convertValue(java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/openengsb/core/common/marshaling/ReturnMapping/getArg()|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///org/openengsb/core/common/marshaling/ReturnMapping/getClassName()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+method:///org/openengsb/core/common/marshaling/ReturnMapping/createObjectMapper()|",
+      "|java+method:///org/openengsb/core/common/marshaling/ReturnMapping/setArg(java.lang.Object)|",
+      "|java+method:///org/openengsb/core/common/marshaling/ReturnMapping/getType()|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/convertValue(java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/openengsb/core/common/marshaling/ReturnMapping/getArg()|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///org/openengsb/core/common/marshaling/ReturnMapping/getClassName()|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.8.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.core:openengsb-core-common:1.2.0.RC1",
+    "coordinatesV2": "org.openengsb.core:openengsb-core-common:1.2.0.RC2",
+    "caller": "|java+method:///org/openengsb/core/common/marshaling/RequestMapping/createFromMessage(java.lang.String)|",
+    "called": "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(java.io.Reader,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(java.io.Reader,java.lang.Class)|",
+      "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+      "|java+constructor:///java/io/StringReader/StringReader(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(java.io.Reader,java.lang.Class)|",
+      "|java+method:///org/openengsb/core/common/marshaling/RequestMapping/createObjectMapper()|",
+      "|java+constructor:///java/io/StringReader/StringReader(java.lang.String)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.8.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.core:openengsb-core-common:1.2.0.RC1",
+    "coordinatesV2": "org.openengsb.core:openengsb-core-common:1.2.0.RC2",
+    "caller": "|java+method:///org/openengsb/core/common/marshaling/RequestMapping/convertToMessage()|",
+    "called": "|java+method:///org/codehaus/jackson/map/ObjectMapper/writeValue(java.io.Writer,java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/writeValue(java.io.Writer,java.lang.Object)|",
+      "|java+constructor:///java/io/StringWriter/StringWriter()|",
+      "|java+method:///java/io/StringWriter/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/openengsb/core/common/marshaling/RequestMapping/createObjectMapper()|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/writeValue(java.io.Writer,java.lang.Object)|",
+      "|java+constructor:///java/io/StringWriter/StringWriter()|",
+      "|java+method:///java/io/StringWriter/toString()|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.8.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.core:openengsb-core-common:1.2.0.RC1",
+    "coordinatesV2": "org.openengsb.core:openengsb-core-common:1.2.0.RC2",
+    "caller": "|java+method:///org/openengsb/core/common/marshaling/ReturnMapping/convertToMessage()|",
+    "called": "|java+method:///org/codehaus/jackson/map/ObjectMapper/writeValue(java.io.Writer,java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/writeValue(java.io.Writer,java.lang.Object)|",
+      "|java+constructor:///java/io/StringWriter/StringWriter()|",
+      "|java+method:///java/io/StringWriter/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/openengsb/core/common/marshaling/ReturnMapping/createObjectMapper()|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/writeValue(java.io.Writer,java.lang.Object)|",
+      "|java+constructor:///java/io/StringWriter/StringWriter()|",
+      "|java+method:///java/io/StringWriter/toString()|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.8.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.core:openengsb-core-common:1.2.0.RC1",
+    "coordinatesV2": "org.openengsb.core:openengsb-core-common:1.2.0.RC2",
+    "caller": "|java+method:///org/openengsb/core/common/marshaling/RequestMapping/resetArgs()|",
+    "called": "|java+method:///org/codehaus/jackson/map/ObjectMapper/convertValue(java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///java/util/List/toArray()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/convertValue(java.lang.Object,java.lang.Class)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/openengsb/core/common/marshaling/RequestMapping/setArgs(java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/openengsb/core/common/marshaling/RequestMapping/getClasses()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/openengsb/core/common/marshaling/RequestMapping/getArgs()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///org/openengsb/core/common/marshaling/RequestMapping/createObjectMapper()|",
+      "|java+method:///java/util/List/toArray()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/convertValue(java.lang.Object,java.lang.Class)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/openengsb/core/common/marshaling/RequestMapping/setArgs(java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/openengsb/core/common/marshaling/RequestMapping/getClasses()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/openengsb/core/common/marshaling/RequestMapping/getArgs()|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.8.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.core:openengsb-core-common:1.2.0.RC1",
+    "coordinatesV2": "org.openengsb.core:openengsb-core-common:1.2.0.RC2",
+    "caller": "|java+constructor:///org/openengsb/core/common/marshaling/RequestMapping/RequestMapping(org.openengsb.core.api.remote.MethodCall)|",
+    "called": "|java+constructor:///org/openengsb/core/api/remote/MethodCall/MethodCall(java.lang.String,java.lang.Object%5B%5D,java.util.Map,java.lang.String,boolean,java.util.List)|",
+    "v1Body": [
+      "|java+method:///org/openengsb/core/api/remote/MethodCall/getMethodName()|",
+      "|java+method:///org/openengsb/core/api/remote/MethodCall/getMetaData()|",
+      "|java+method:///org/openengsb/core/common/marshaling/RequestMapping/setMetaData(java.util.Map)|",
+      "|java+method:///org/openengsb/core/common/marshaling/RequestMapping/setMethodName(java.lang.String)|",
+      "|java+method:///org/openengsb/core/common/marshaling/RequestMapping/setArgs(java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/openengsb/core/api/remote/MethodCall/MethodCall()|",
+      "|java+method:///org/openengsb/core/api/remote/MethodCall/getArgs()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/openengsb/core/api/remote/MethodCall/getClasses()|",
+      "|java+method:///org/openengsb/core/api/remote/MethodCall/getMethodName()|",
+      "|java+method:///org/openengsb/core/api/remote/MethodCall/getMetaData()|",
+      "|java+method:///org/openengsb/core/api/remote/MethodCall/getArgs()|",
+      "|java+method:///org/openengsb/core/api/remote/MethodCall/isAnswer()|",
+      "|java+method:///org/openengsb/core/api/remote/MethodCall/getCallId()|",
+      "|java+constructor:///org/openengsb/core/api/remote/MethodCall/MethodCall(java.lang.String,java.lang.Object%5B%5D,java.util.Map,java.lang.String,boolean,java.util.List)|"
+    ],
+    "affectedLib": "org.openengsb.core:openengsb-core-api:1.2.0.RC2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.core:openengsb-core-common:1.2.0.RC1",
+    "coordinatesV2": "org.openengsb.core:openengsb-core-common:1.2.0.RC2",
+    "caller": "|java+constructor:///org/openengsb/core/common/marshaling/ReturnMapping/ReturnMapping(org.openengsb.core.api.remote.MethodReturn)|",
+    "called": "|java+constructor:///org/openengsb/core/api/remote/MethodReturn/MethodReturn(org.openengsb.core.api.remote.MethodReturn$ReturnType,java.lang.Object,java.util.Map,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/openengsb/core/api/remote/MethodReturn/getType()|",
+      "|java+constructor:///org/openengsb/core/api/remote/MethodReturn/MethodReturn(org.openengsb.core.api.remote.MethodReturn$ReturnType,java.lang.Object,java.util.Map)|",
+      "|java+method:///org/openengsb/core/api/remote/MethodReturn/getMetaData()|",
+      "|java+method:///org/openengsb/core/api/remote/MethodReturn/getArg()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/openengsb/core/api/remote/MethodReturn/getCallId()|",
+      "|java+method:///org/openengsb/core/api/remote/MethodReturn/getType()|",
+      "|java+constructor:///org/openengsb/core/api/remote/MethodReturn/MethodReturn(org.openengsb.core.api.remote.MethodReturn$ReturnType,java.lang.Object,java.util.Map,java.lang.String)|",
+      "|java+method:///org/openengsb/core/api/remote/MethodReturn/getMetaData()|",
+      "|java+method:///org/openengsb/core/api/remote/MethodReturn/getArg()|"
+    ],
+    "affectedLib": "org.openengsb.core:openengsb-core-api:1.2.0.RC2",
+    "change": "UPDATED"
+  }
+]

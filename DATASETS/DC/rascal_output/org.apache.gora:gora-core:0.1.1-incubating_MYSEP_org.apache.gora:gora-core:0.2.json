@@ -1,0 +1,324 @@
+[
+  {
+    "coordinatesV1": "org.apache.gora:gora-core:0.2",
+    "coordinatesV2": "org.apache.gora:gora-core:0.1.1-incubating",
+    "caller": "|java+initializer:///org/apache/gora/store/DataStoreFactory/DataStoreFactory$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/apache/gora/store/DataStoreFactory/readProperties()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/gora/store/DataStoreFactory/createProps()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.gora:gora-core:0.1.1-incubating",
+    "coordinatesV2": "org.apache.gora:gora-core:0.2",
+    "caller": "|java+method:///org/apache/gora/examples/mapreduce/QueryCounter/run(java.lang.String%5B%5D)|",
+    "called": "|java+constructor:///org/apache/hadoop/conf/Configuration/Configuration()|",
+    "v1Body": [
+      "|java+method:///org/apache/gora/store/DataStoreFactory/getDataStore(java.lang.Class,java.lang.Class)|",
+      "|java+method:///org/apache/gora/store/DataStoreFactory/getDataStore(java.lang.Class,java.lang.Class,java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+method:///org/apache/gora/examples/mapreduce/QueryCounter/countQuery(org.apache.gora.store.DataStore)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/hadoop/conf/Configuration/Configuration()|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///org/apache/gora/store/DataStoreFactory/getDataStore(java.lang.Class,java.lang.Class,java.lang.Class,org.apache.hadoop.conf.Configuration)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+method:///org/apache/gora/examples/mapreduce/QueryCounter/countQuery(org.apache.gora.store.DataStore)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///org/apache/gora/util/ClassLoadingUtils/loadClass(java.lang.String)|",
+      "|java+method:///org/apache/gora/store/DataStoreFactory/getDataStore(java.lang.Class,java.lang.Class,org.apache.hadoop.conf.Configuration)|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-core:1.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.gora:gora-core:0.1.1-incubating",
+    "coordinatesV2": "org.apache.gora:gora-core:0.2",
+    "caller": "|java+method:///org/apache/gora/store/impl/DataStoreBase/readFields(java.io.DataInput)|",
+    "called": "|java+method:///org/apache/hadoop/io/Text/readString(java.io.DataInput)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+method:///org/apache/gora/store/impl/DataStoreBase/initialize(java.lang.Class,java.lang.Class,java.util.Properties)|",
+      "|java+method:///org/apache/hadoop/io/Text/readString(java.io.DataInput)|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/gora/store/impl/DataStoreBase/initialize(java.lang.Class,java.lang.Class,java.util.Properties)|",
+      "|java+method:///org/apache/gora/util/ClassLoadingUtils/loadClass(java.lang.String)|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.Throwable)|",
+      "|java+method:///org/apache/gora/util/WritableUtils/readProperties(java.io.DataInput)|",
+      "|java+method:///org/apache/hadoop/io/Text/readString(java.io.DataInput)|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-core:1.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.gora:gora-core:0.1.1-incubating",
+    "coordinatesV2": "org.apache.gora:gora-core:0.2",
+    "caller": "|java+method:///org/apache/gora/util/IOUtils/loadFromConf(org.apache.hadoop.conf.Configuration,java.lang.String)|",
+    "called": "|java+method:///org/apache/hadoop/conf/Configuration/get(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/io/DefaultStringifier/load(org.apache.hadoop.conf.Configuration,java.lang.String,java.lang.Class)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/hadoop/conf/Configuration/get(java.lang.String)|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/io/DefaultStringifier/load(org.apache.hadoop.conf.Configuration,java.lang.String,java.lang.Class)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/gora/util/ClassLoadingUtils/loadClass(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/conf/Configuration/get(java.lang.String)|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-core:1.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.gora:gora-core:0.1.1-incubating",
+    "coordinatesV2": "org.apache.gora:gora-core:0.2",
+    "caller": "|java+method:///org/apache/gora/query/impl/QueryBase/readFields(java.io.DataInput)|",
+    "called": "|java+method:///org/apache/hadoop/io/Text/readString(java.io.DataInput)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+method:///org/apache/gora/store/DataStore/getKeyClass()|",
+      "|java+method:///org/apache/gora/util/IOUtils/readStringArray(java.io.DataInput)|",
+      "|java+method:///org/apache/hadoop/util/ReflectionUtils/newInstance(java.lang.Class,org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///org/apache/gora/store/DataStore/readFields(java.io.DataInput)|",
+      "|java+method:///org/apache/gora/util/IOUtils/readNullFieldsInfo(java.io.DataInput)|",
+      "|java+method:///org/apache/hadoop/io/Text/readString(java.io.DataInput)|",
+      "|java+method:///org/apache/gora/util/IOUtils/deserialize(org.apache.hadoop.conf.Configuration,java.io.DataInput,java.lang.Object,java.lang.Class)|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.Throwable)|",
+      "|java+method:///org/apache/hadoop/io/WritableUtils/readVLong(java.io.DataInput)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/gora/store/DataStore/getKeyClass()|",
+      "|java+method:///org/apache/gora/util/IOUtils/readStringArray(java.io.DataInput)|",
+      "|java+method:///org/apache/hadoop/util/ReflectionUtils/newInstance(java.lang.Class,org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///org/apache/gora/store/DataStore/readFields(java.io.DataInput)|",
+      "|java+method:///org/apache/gora/util/IOUtils/readNullFieldsInfo(java.io.DataInput)|",
+      "|java+method:///org/apache/hadoop/io/Text/readString(java.io.DataInput)|",
+      "|java+method:///org/apache/gora/util/ClassLoadingUtils/loadClass(java.lang.String)|",
+      "|java+method:///org/apache/gora/util/IOUtils/deserialize(org.apache.hadoop.conf.Configuration,java.io.DataInput,java.lang.Object,java.lang.Class)|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.Throwable)|",
+      "|java+method:///org/apache/hadoop/io/WritableUtils/readVLong(java.io.DataInput)|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-core:1.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.gora:gora-core:0.1.1-incubating",
+    "coordinatesV2": "org.apache.gora:gora-core:0.2",
+    "caller": "|java+method:///org/apache/gora/examples/WebPageDataCreator/run(java.lang.String%5B%5D)|",
+    "called": "|java+constructor:///org/apache/hadoop/conf/Configuration/Configuration()|",
+    "v1Body": [
+      "|java+method:///org/apache/gora/store/DataStoreFactory/getDataStore(java.lang.String,java.lang.Class,java.lang.Class)|",
+      "|java+method:///org/apache/gora/examples/WebPageDataCreator/createWebPageData(org.apache.gora.store.DataStore)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/gora/examples/WebPageDataCreator/createWebPageData(org.apache.gora.store.DataStore)|",
+      "|java+method:///org/apache/gora/store/DataStoreFactory/getDataStore(java.lang.String,java.lang.Class,java.lang.Class,org.apache.hadoop.conf.Configuration)|",
+      "|java+constructor:///org/apache/hadoop/conf/Configuration/Configuration()|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-core:1.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.gora:gora-core:0.1.1-incubating",
+    "coordinatesV2": "org.apache.gora:gora-core:0.2",
+    "caller": "|java+method:///org/apache/gora/store/impl/DataStoreBase/write(java.io.DataOutput)|",
+    "called": "|java+method:///org/apache/hadoop/io/Text/writeString(java.io.DataOutput,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/gora/store/impl/DataStoreBase/getKeyClass()|",
+      "|java+method:///org/apache/gora/store/impl/DataStoreBase/getPersistentClass()|",
+      "|java+method:///java/lang/Class/getCanonicalName()|",
+      "|java+method:///org/apache/hadoop/io/Text/writeString(java.io.DataOutput,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/gora/store/impl/DataStoreBase/getKeyClass()|",
+      "|java+method:///org/apache/gora/util/WritableUtils/writeProperties(java.io.DataOutput,java.util.Properties)|",
+      "|java+method:///org/apache/gora/store/impl/DataStoreBase/getPersistentClass()|",
+      "|java+method:///java/lang/Class/getCanonicalName()|",
+      "|java+method:///org/apache/hadoop/io/Text/writeString(java.io.DataOutput,java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-core:1.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.gora:gora-core:0.1.1-incubating",
+    "coordinatesV2": "org.apache.gora:gora-core:0.2",
+    "caller": "|java+method:///org/apache/gora/examples/mapreduce/WordCount/run(java.lang.String%5B%5D)|",
+    "called": "|java+constructor:///org/apache/hadoop/conf/Configuration/Configuration()|",
+    "v1Body": [
+      "|java+method:///org/apache/gora/store/DataStoreFactory/getDataStore(java.lang.Class,java.lang.Class)|",
+      "|java+method:///org/apache/gora/store/DataStoreFactory/getDataStore(java.lang.String,java.lang.Class,java.lang.Class)|",
+      "|java+method:///org/apache/gora/examples/mapreduce/WordCount/wordCount(org.apache.gora.store.DataStore,org.apache.gora.store.DataStore)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/gora/store/DataStoreFactory/getDataStore(java.lang.Class,java.lang.Class,org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///org/apache/gora/examples/mapreduce/WordCount/wordCount(org.apache.gora.store.DataStore,org.apache.gora.store.DataStore)|",
+      "|java+method:///org/apache/gora/store/DataStoreFactory/getDataStore(java.lang.String,java.lang.Class,java.lang.Class,org.apache.hadoop.conf.Configuration)|",
+      "|java+constructor:///org/apache/hadoop/conf/Configuration/Configuration()|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-core:1.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.gora:gora-core:0.1.1-incubating",
+    "coordinatesV2": "org.apache.gora:gora-core:0.2",
+    "caller": "|java+method:///org/apache/gora/util/IOUtils/deserialize(org.apache.hadoop.conf.Configuration,java.io.DataInput,java.lang.Object)|",
+    "called": "|java+method:///org/apache/hadoop/io/Text/readString(java.io.DataInput)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/io/Text/readString(java.io.DataInput)|",
+      "|java+method:///org/apache/gora/util/IOUtils/deserialize(org.apache.hadoop.conf.Configuration,java.io.DataInput,java.lang.Object,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/io/Text/readString(java.io.DataInput)|",
+      "|java+method:///org/apache/gora/util/ClassLoadingUtils/loadClass(java.lang.String)|",
+      "|java+method:///org/apache/gora/util/IOUtils/deserialize(org.apache.hadoop.conf.Configuration,java.io.DataInput,java.lang.Object,java.lang.Class)|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-core:1.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.gora:gora-core:0.1.1-incubating",
+    "coordinatesV2": "org.apache.gora:gora-core:0.2",
+    "caller": "|java+method:///org/apache/gora/mapreduce/GoraOutputFormat/getRecordWriter(org.apache.hadoop.mapreduce.TaskAttemptContext)|",
+    "called": "|java+method:///org/apache/hadoop/conf/Configuration/getClass(java.lang.String,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/TaskAttemptContext/getConfiguration()|",
+      "|java+method:///org/apache/gora/mapreduce/GoraOutputFormat/setOutputPath(org.apache.gora.store.DataStore,org.apache.hadoop.mapreduce.TaskAttemptContext)|",
+      "|java+method:///org/apache/gora/store/DataStoreFactory/createDataStore(java.lang.Class,java.lang.Class,java.lang.Class)|",
+      "|java+method:///org/apache/hadoop/conf/Configuration/getClass(java.lang.String,java.lang.Class)|",
+      "|java+constructor:///org/apache/gora/mapreduce/GoraRecordWriter/GoraRecordWriter(org.apache.gora.store.DataStore,org.apache.hadoop.mapreduce.TaskAttemptContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/TaskAttemptContext/getConfiguration()|",
+      "|java+method:///org/apache/gora/mapreduce/GoraOutputFormat/setOutputPath(org.apache.gora.store.DataStore,org.apache.hadoop.mapreduce.TaskAttemptContext)|",
+      "|java+method:///org/apache/hadoop/conf/Configuration/getClass(java.lang.String,java.lang.Class)|",
+      "|java+method:///org/apache/gora/store/DataStoreFactory/createDataStore(java.lang.Class,java.lang.Class,java.lang.Class,org.apache.hadoop.conf.Configuration)|",
+      "|java+constructor:///org/apache/gora/mapreduce/GoraRecordWriter/GoraRecordWriter(org.apache.gora.store.DataStore,org.apache.hadoop.mapreduce.TaskAttemptContext)|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-core:1.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.gora:gora-core:0.1.1-incubating",
+    "coordinatesV2": "org.apache.gora:gora-core:0.2",
+    "caller": "|java+method:///org/apache/gora/avro/PersistentDatumReader/readRecord(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.ResolvingDecoder)|",
+    "called": "|java+method:///org/apache/avro/Schema/getFields()|",
+    "v1Body": [
+      "|java+method:///org/apache/gora/avro/PersistentDatumReader/setField(java.lang.Object,java.lang.String,int,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/gora/avro/PersistentDatumReader/newRecord(java.lang.Object,org.apache.avro.Schema)|",
+      "|java+method:///org/apache/gora/persistency/Persistent/clear()|",
+      "|java+method:///org/apache/avro/Schema$Field/schema()|",
+      "|java+method:///org/apache/avro/Schema/equals(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/gora/persistency/Persistent/setDirty(int)|",
+      "|java+method:///org/apache/gora/avro/PersistentDatumReader/read(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.ResolvingDecoder)|",
+      "|java+method:///org/apache/gora/avro/PersistentDatumReader/getField(java.lang.Object,java.lang.String,int)|",
+      "|java+method:///org/apache/avro/Schema$Field/name()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/apache/avro/Schema$Field/pos()|",
+      "|java+method:///org/apache/gora/util/IOUtils/readBoolArray(org.apache.avro.io.Decoder)|",
+      "|java+method:///org/apache/avro/Schema/getFields()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/gora/avro/PersistentDatumReader/setField(java.lang.Object,java.lang.String,int,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/gora/avro/PersistentDatumReader/newRecord(java.lang.Object,org.apache.avro.Schema)|",
+      "|java+method:///org/apache/gora/persistency/Persistent/clear()|",
+      "|java+method:///org/apache/avro/Schema$Field/schema()|",
+      "|java+method:///org/apache/avro/Schema/equals(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/gora/persistency/Persistent/setDirty(int)|",
+      "|java+method:///org/apache/gora/avro/PersistentDatumReader/read(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.ResolvingDecoder)|",
+      "|java+method:///org/apache/gora/avro/PersistentDatumReader/getField(java.lang.Object,java.lang.String,int)|",
+      "|java+method:///org/apache/avro/Schema$Field/name()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/apache/gora/persistency/Persistent/clearDirty(int)|",
+      "|java+method:///org/apache/avro/Schema$Field/pos()|",
+      "|java+method:///org/apache/gora/util/IOUtils/readBoolArray(org.apache.avro.io.Decoder)|",
+      "|java+method:///org/apache/avro/Schema/getFields()|"
+    ],
+    "affectedLib": "org.apache.hadoop:avro:1.3.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.gora:gora-core:0.1.1-incubating",
+    "coordinatesV2": "org.apache.gora:gora-core:0.2",
+    "caller": "|java+method:///org/apache/gora/persistency/impl/PersistentBase/clear()|",
+    "called": "|java+method:///org/apache/avro/Schema/getFields()|",
+    "v1Body": [
+      "|java+method:///org/apache/avro/Schema/getFields()|",
+      "|java+method:///org/apache/gora/persistency/impl/PersistentBase/put(int,java.lang.Object)|",
+      "|java+method:///org/apache/avro/Schema$Field/schema()|",
+      "|java+method:///org/apache/avro/Schema$Type/ordinal()|",
+      "|java+method:///org/apache/gora/persistency/impl/PersistentBase/get(int)|",
+      "|java+method:///org/apache/gora/persistency/impl/PersistentBase/getSchema()|",
+      "|java+method:///org/apache/gora/persistency/impl/PersistentBase/clearReadable()|",
+      "|java+method:///org/apache/avro/Schema/getType()|",
+      "|java+method:///java/lang/Double/valueOf(double)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+constructor:///org/apache/gora/persistency/ListGenericArray/ListGenericArray(org.apache.avro.Schema)|",
+      "|java+method:///org/apache/gora/persistency/Persistent/clear()|",
+      "|java+method:///java/lang/Float/valueOf(float)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///org/apache/gora/persistency/impl/PersistentBase/getFields()|",
+      "|java+method:///org/apache/gora/persistency/impl/PersistentBase/clearDirty()|",
+      "|java+method:///org/apache/gora/persistency/ListGenericArray/clear()|",
+      "|java+method:///java/util/Map/clear()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/util/List/get(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/avro/Schema/getFields()|",
+      "|java+method:///org/apache/avro/Schema$Field/schema()|",
+      "|java+method:///org/apache/avro/Schema$Type/ordinal()|",
+      "|java+method:///org/apache/gora/persistency/impl/PersistentBase/get(int)|",
+      "|java+method:///org/apache/gora/persistency/impl/PersistentBase/getSchema()|",
+      "|java+method:///org/apache/gora/persistency/impl/PersistentBase/clearReadable()|",
+      "|java+method:///org/apache/avro/Schema/getType()|",
+      "|java+method:///org/apache/gora/persistency/impl/PersistentBase/put(int,java.lang.Object)|",
+      "|java+method:///org/apache/gora/persistency/StatefulHashMap/reuse()|",
+      "|java+method:///java/lang/Double/valueOf(double)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+constructor:///org/apache/gora/persistency/ListGenericArray/ListGenericArray(org.apache.avro.Schema)|",
+      "|java+method:///org/apache/gora/persistency/Persistent/clear()|",
+      "|java+method:///java/lang/Float/valueOf(float)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///org/apache/gora/persistency/impl/PersistentBase/getFields()|",
+      "|java+method:///org/apache/gora/persistency/impl/PersistentBase/clearDirty()|",
+      "|java+method:///org/apache/gora/persistency/ListGenericArray/clear()|",
+      "|java+method:///java/util/Map/clear()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/util/List/get(int)|"
+    ],
+    "affectedLib": "org.apache.hadoop:avro:1.3.3",
+    "change": "UPDATED"
+  }
+]

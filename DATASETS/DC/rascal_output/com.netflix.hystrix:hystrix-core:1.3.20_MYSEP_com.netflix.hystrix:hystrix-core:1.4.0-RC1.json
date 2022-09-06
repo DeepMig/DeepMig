@@ -1,0 +1,259 @@
+[
+  {
+    "coordinatesV1": "com.netflix.hystrix:hystrix-core:1.4.0-RC1",
+    "coordinatesV2": "com.netflix.hystrix:hystrix-core:1.3.20",
+    "caller": "|java+method:///com/netflix/hystrix/HystrixCommand/toObservable(rx.Scheduler,boolean)|",
+    "called": "|java+method:///rx/schedulers/Schedulers/immediate()|",
+    "v1Body": [
+      "|java+constructor:///com/netflix/hystrix/HystrixCommand$CachedObservableOriginal/HystrixCommand$CachedObservableOriginal(rx.Observable,com.netflix.hystrix.HystrixCommand)|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+constructor:///com/netflix/hystrix/HystrixCommand$TimeoutObservable/HystrixCommand$TimeoutObservable(rx.Observable,com.netflix.hystrix.HystrixCommand,boolean)|",
+      "|java+method:///rx/Observable/finallyDo(rx.functions.Action0)|",
+      "|java+constructor:///com/netflix/hystrix/HystrixCommand$CachedObservableResponse/HystrixCommand$CachedObservableResponse(com.netflix.hystrix.HystrixCommand$CachedObservableOriginal,com.netflix.hystrix.HystrixCommand)|",
+      "|java+method:///rx/Observable/onErrorResumeNext(rx.functions.Func1)|",
+      "|java+method:///com/netflix/hystrix/HystrixCommandMetrics/markResponseFromCache()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicBoolean/compareAndSet(boolean,boolean)|",
+      "|java+method:///com/netflix/hystrix/HystrixRequestCache/get(java.lang.String)|",
+      "|java+method:///com/netflix/hystrix/HystrixCommand/isRequestCachingEnabled()|",
+      "|java+method:///com/netflix/hystrix/HystrixCommandProperties/executionIsolationStrategy()|",
+      "|java+method:///com/netflix/hystrix/strategy/properties/HystrixProperty/get()|",
+      "|java+method:///rx/Observable/observeOn(rx.Scheduler)|",
+      "|java+constructor:///com/netflix/hystrix/strategy/concurrency/HystrixContextScheduler/HystrixContextScheduler(com.netflix.hystrix.strategy.concurrency.HystrixConcurrencyStrategy,rx.Scheduler)|",
+      "|java+constructor:///com/netflix/hystrix/HystrixCommand$2/HystrixCommand$2(com.netflix.hystrix.HystrixCommand,com.netflix.hystrix.HystrixCommand)|",
+      "|java+method:///rx/schedulers/Schedulers/immediate()|",
+      "|java+constructor:///com/netflix/hystrix/HystrixCommand$ObservableCommand/HystrixCommand$ObservableCommand(rx.Observable,com.netflix.hystrix.HystrixCommand)|",
+      "|java+method:///com/netflix/hystrix/HystrixCommandProperties$ExecutionIsolationStrategy/equals(java.lang.Object)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+constructor:///com/netflix/hystrix/HystrixCommand$3/HystrixCommand$3(com.netflix.hystrix.HystrixCommand)|",
+      "|java+constructor:///com/netflix/hystrix/HystrixCommand$4/HystrixCommand$4(com.netflix.hystrix.HystrixCommand)|",
+      "|java+method:///com/netflix/hystrix/HystrixRequestCache/putIfAbsent(java.lang.String,rx.Observable)|",
+      "|java+method:///com/netflix/hystrix/HystrixCommand/getCacheKey()|",
+      "|java+method:///rx/Observable/create(rx.Observable$OnSubscribe)|",
+      "|java+method:///rx/Observable/cache()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/netflix/hystrix/HystrixCommand$HystrixCommandFromObservableCommand/toObservable(rx.Scheduler,boolean)|"
+    ],
+    "affectedLib": "io.reactivex:rxjava:1.0.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.netflix.hystrix:hystrix-core:1.4.0-RC1",
+    "coordinatesV2": "com.netflix.hystrix:hystrix-core:1.3.20",
+    "caller": "|java+method:///com/netflix/hystrix/HystrixCommand/observe()|",
+    "called": "|java+method:///rx/Observable/subscribe(rx.Observer)|",
+    "v1Body": [
+      "|java+method:///com/netflix/hystrix/HystrixCommand/toObservable()|",
+      "|java+method:///rx/Observable/subscribe(rx.Observer)|",
+      "|java+method:///rx/subjects/ReplaySubject/create()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/netflix/hystrix/HystrixCommand$HystrixCommandFromObservableCommand/observe()|"
+    ],
+    "affectedLib": "io.reactivex:rxjava:1.0.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.netflix.hystrix:hystrix-core:1.4.0-RC1",
+    "coordinatesV2": "com.netflix.hystrix:hystrix-core:1.3.20",
+    "caller": "|java+method:///com/netflix/hystrix/HystrixCollapser/queue()|",
+    "called": "|java+method:///rx/observables/BlockingObservable/toFuture()|",
+    "v1Body": [
+      "|java+method:///rx/observables/BlockingObservable/toFuture()|",
+      "|java+method:///com/netflix/hystrix/HystrixCollapser/toObservable()|",
+      "|java+method:///rx/Observable/toBlocking()|"
+    ],
+    "v2Body": [
+      "|java+method:///rx/observables/BlockingObservable/toFuture()|",
+      "|java+method:///com/netflix/hystrix/HystrixCollapser/toObservable()|",
+      "|java+method:///rx/Observable/toBlockingObservable()|"
+    ],
+    "affectedLib": "io.reactivex:rxjava:1.0.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.netflix.hystrix:hystrix-core:1.4.0-RC1",
+    "coordinatesV2": "com.netflix.hystrix:hystrix-core:1.3.20",
+    "caller": "|java+method:///com/netflix/hystrix/collapser/RequestBatch/executeBatchIfNotAlreadyStarted()|",
+    "called": "|java+method:///rx/Observable/subscribe(rx.Observer)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/concurrent/locks/ReentrantReadWriteLock$WriteLock/unlock()|",
+      "|java+method:///com/netflix/hystrix/collapser/HystrixCollapserBridge/shardRequests(java.util.Collection)|",
+      "|java+method:///rx/Observable/subscribe(rx.Observer)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/concurrent/locks/ReentrantReadWriteLock$WriteLock/lock()|",
+      "|java+constructor:///com/netflix/hystrix/collapser/RequestBatch$BatchRequestObserver/RequestBatch$BatchRequestObserver(com.netflix.hystrix.collapser.HystrixCollapserBridge,java.util.Collection,com.netflix.hystrix.collapser.RequestBatch$1)|",
+      "|java+method:///com/netflix/hystrix/collapser/HystrixCollapserBridge/createObservableCommand(java.util.Collection)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicBoolean/compareAndSet(boolean,boolean)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///java/util/concurrent/locks/ReentrantReadWriteLock/writeLock()|",
+      "|java+method:///com/netflix/hystrix/HystrixCollapser$CollapsedRequest/setException(java.lang.Exception)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/concurrent/ConcurrentLinkedQueue/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/concurrent/locks/ReentrantReadWriteLock$WriteLock/unlock()|",
+      "|java+method:///com/netflix/hystrix/collapser/HystrixCollapserBridge/shardRequests(java.util.Collection)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/concurrent/locks/ReentrantReadWriteLock$WriteLock/lock()|",
+      "|java+constructor:///com/netflix/hystrix/collapser/RequestBatch$BatchRequestObserver/RequestBatch$BatchRequestObserver(com.netflix.hystrix.collapser.HystrixCollapserBridge,java.util.Collection,com.netflix.hystrix.collapser.RequestBatch$1)|",
+      "|java+method:///com/netflix/hystrix/collapser/HystrixCollapserBridge/createObservableCommand(java.util.Collection)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicBoolean/compareAndSet(boolean,boolean)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///java/util/concurrent/locks/ReentrantReadWriteLock/writeLock()|",
+      "|java+method:///rx/Observable/single()|",
+      "|java+method:///rx/Observable/subscribe(rx.Observer)|",
+      "|java+method:///com/netflix/hystrix/HystrixCollapser$CollapsedRequest/setException(java.lang.Exception)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/concurrent/ConcurrentLinkedQueue/iterator()|"
+    ],
+    "affectedLib": "io.reactivex:rxjava:1.0.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.netflix.hystrix:hystrix-core:1.4.0-RC1",
+    "coordinatesV2": "com.netflix.hystrix:hystrix-core:1.3.20",
+    "caller": "|java+constructor:///com/netflix/hystrix/strategy/concurrency/HystrixContextScheduler/HystrixContextScheduler(com.netflix.hystrix.strategy.concurrency.HystrixConcurrencyStrategy,com.netflix.hystrix.HystrixThreadPool)|",
+    "called": "|java+constructor:///rx/Scheduler/Scheduler()|",
+    "v1Body": [
+      "|java+constructor:///com/netflix/hystrix/strategy/concurrency/HystrixContextScheduler$ThreadPoolScheduler/HystrixContextScheduler$ThreadPoolScheduler(com.netflix.hystrix.HystrixThreadPool)|",
+      "|java+constructor:///rx/Scheduler/Scheduler()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/netflix/hystrix/HystrixThreadPool/getExecutor()|",
+      "|java+method:///rx/schedulers/Schedulers/executor(java.util.concurrent.Executor)|",
+      "|java+constructor:///rx/Scheduler/Scheduler()|"
+    ],
+    "affectedLib": "io.reactivex:rxjava:1.0.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.netflix.hystrix:hystrix-core:1.4.0-RC1",
+    "coordinatesV2": "com.netflix.hystrix:hystrix-core:1.3.20",
+    "caller": "|java+method:///com/netflix/hystrix/HystrixCommand/queue()|",
+    "called": "|java+method:///rx/schedulers/Schedulers/immediate()|",
+    "v1Body": [
+      "|java+method:///rx/schedulers/Schedulers/immediate()|",
+      "|java+method:///rx/observables/BlockingObservable/toFuture()|",
+      "|java+method:///com/netflix/hystrix/HystrixCommand/decomposeException(java.lang.Exception)|",
+      "|java+constructor:///com/netflix/hystrix/HystrixCommand$1/HystrixCommand$1(com.netflix.hystrix.HystrixCommand,java.util.concurrent.Future,com.netflix.hystrix.HystrixCommand$ObservableCommand)|",
+      "|java+method:///com/netflix/hystrix/HystrixCommand$ObservableCommand/toBlocking()|",
+      "|java+method:///com/netflix/hystrix/HystrixCommand/toObservable(rx.Scheduler,boolean)|",
+      "|java+method:///java/util/concurrent/Future/isDone()|",
+      "|java+method:///com/netflix/hystrix/exception/HystrixRuntimeException/getFailureType()|",
+      "|java+method:///java/util/concurrent/Future/get()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/netflix/hystrix/HystrixCommand$HystrixCommandFromObservableCommand/queue()|"
+    ],
+    "affectedLib": "io.reactivex:rxjava:1.0.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.netflix.hystrix:hystrix-core:1.3.20",
+    "coordinatesV2": "com.netflix.hystrix:hystrix-core:1.4.0-RC1",
+    "caller": "|java+method:///com/netflix/hystrix/collapser/RequestBatch/executeBatchIfNotAlreadyStarted()|",
+    "called": "|java+method:///rx/Observable/subscribe(rx.Observer)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/concurrent/locks/ReentrantReadWriteLock$WriteLock/unlock()|",
+      "|java+method:///com/netflix/hystrix/collapser/HystrixCollapserBridge/shardRequests(java.util.Collection)|",
+      "|java+method:///rx/Observable/subscribe(rx.Observer)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/concurrent/locks/ReentrantReadWriteLock$WriteLock/lock()|",
+      "|java+constructor:///com/netflix/hystrix/collapser/RequestBatch$BatchRequestObserver/RequestBatch$BatchRequestObserver(com.netflix.hystrix.collapser.HystrixCollapserBridge,java.util.Collection,com.netflix.hystrix.collapser.RequestBatch$1)|",
+      "|java+method:///com/netflix/hystrix/collapser/HystrixCollapserBridge/createObservableCommand(java.util.Collection)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicBoolean/compareAndSet(boolean,boolean)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///java/util/concurrent/locks/ReentrantReadWriteLock/writeLock()|",
+      "|java+method:///com/netflix/hystrix/HystrixCollapser$CollapsedRequest/setException(java.lang.Exception)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/concurrent/ConcurrentLinkedQueue/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/concurrent/locks/ReentrantReadWriteLock$WriteLock/unlock()|",
+      "|java+method:///com/netflix/hystrix/collapser/HystrixCollapserBridge/shardRequests(java.util.Collection)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/concurrent/locks/ReentrantReadWriteLock$WriteLock/lock()|",
+      "|java+constructor:///com/netflix/hystrix/collapser/RequestBatch$BatchRequestObserver/RequestBatch$BatchRequestObserver(com.netflix.hystrix.collapser.HystrixCollapserBridge,java.util.Collection,com.netflix.hystrix.collapser.RequestBatch$1)|",
+      "|java+method:///com/netflix/hystrix/collapser/HystrixCollapserBridge/createObservableCommand(java.util.Collection)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicBoolean/compareAndSet(boolean,boolean)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///java/util/concurrent/locks/ReentrantReadWriteLock/writeLock()|",
+      "|java+method:///rx/Observable/single()|",
+      "|java+method:///rx/Observable/subscribe(rx.Observer)|",
+      "|java+method:///com/netflix/hystrix/HystrixCollapser$CollapsedRequest/setException(java.lang.Exception)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/concurrent/ConcurrentLinkedQueue/iterator()|"
+    ],
+    "affectedLib": "com.netflix.rxjava:rxjava-core:0.17.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.netflix.hystrix:hystrix-core:1.3.20",
+    "coordinatesV2": "com.netflix.hystrix:hystrix-core:1.4.0-RC1",
+    "caller": "|java+constructor:///com/netflix/hystrix/strategy/concurrency/HystrixContextScheduler/HystrixContextScheduler(com.netflix.hystrix.strategy.concurrency.HystrixConcurrencyStrategy,com.netflix.hystrix.HystrixThreadPool)|",
+    "called": "|java+constructor:///rx/Scheduler/Scheduler()|",
+    "v1Body": [
+      "|java+constructor:///com/netflix/hystrix/strategy/concurrency/HystrixContextScheduler$ThreadPoolScheduler/HystrixContextScheduler$ThreadPoolScheduler(com.netflix.hystrix.HystrixThreadPool)|",
+      "|java+constructor:///rx/Scheduler/Scheduler()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/netflix/hystrix/HystrixThreadPool/getExecutor()|",
+      "|java+method:///rx/schedulers/Schedulers/executor(java.util.concurrent.Executor)|",
+      "|java+constructor:///rx/Scheduler/Scheduler()|"
+    ],
+    "affectedLib": "com.netflix.rxjava:rxjava-core:0.17.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.netflix.hystrix:hystrix-core:1.3.20",
+    "coordinatesV2": "com.netflix.hystrix:hystrix-core:1.4.0-RC1",
+    "caller": "|java+method:///com/netflix/hystrix/HystrixCollapser/queue()|",
+    "called": "|java+method:///rx/Observable/toBlockingObservable()|",
+    "v1Body": [
+      "|java+method:///rx/observables/BlockingObservable/toFuture()|",
+      "|java+method:///com/netflix/hystrix/HystrixCollapser/toObservable()|",
+      "|java+method:///rx/Observable/toBlocking()|"
+    ],
+    "v2Body": [
+      "|java+method:///rx/observables/BlockingObservable/toFuture()|",
+      "|java+method:///com/netflix/hystrix/HystrixCollapser/toObservable()|",
+      "|java+method:///rx/Observable/toBlockingObservable()|"
+    ],
+    "affectedLib": "com.netflix.rxjava:rxjava-core:0.17.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.netflix.hystrix:hystrix-core:1.3.20",
+    "coordinatesV2": "com.netflix.hystrix:hystrix-core:1.4.0-RC1",
+    "caller": "|java+method:///com/netflix/hystrix/collapser/CollapsedRequestObservableFunction/call(rx.Subscriber)|",
+    "called": "|java+method:///rx/Subscriber/add(rx.Subscription)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicReference/compareAndSet(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicReference/get()|",
+      "|java+method:///com/netflix/hystrix/collapser/CollapsedRequestObservableFunction$ResponseHolder/setObserver(rx.Observer)|",
+      "|java+method:///com/netflix/hystrix/collapser/CollapsedRequestObservableFunction/sendResponseIfRequired(rx.subscriptions.BooleanSubscription,com.netflix.hystrix.collapser.CollapsedRequestObservableFunction$ResponseHolder)|",
+      "|java+method:///com/netflix/hystrix/collapser/CollapsedRequestObservableFunction$ResponseHolder/getObserver()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicReference/compareAndSet(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicReference/get()|",
+      "|java+method:///com/netflix/hystrix/collapser/CollapsedRequestObservableFunction$ResponseHolder/setObserver(rx.Observer)|",
+      "|java+method:///com/netflix/hystrix/collapser/CollapsedRequestObservableFunction/sendResponseIfRequired(rx.subscriptions.BooleanSubscription,com.netflix.hystrix.collapser.CollapsedRequestObservableFunction$ResponseHolder)|",
+      "|java+method:///com/netflix/hystrix/collapser/CollapsedRequestObservableFunction$ResponseHolder/getObserver()|",
+      "|java+method:///rx/Subscriber/add(rx.Subscription)|"
+    ],
+    "affectedLib": "com.netflix.rxjava:rxjava-core:0.17.1",
+    "change": "ADDED"
+  }
+]

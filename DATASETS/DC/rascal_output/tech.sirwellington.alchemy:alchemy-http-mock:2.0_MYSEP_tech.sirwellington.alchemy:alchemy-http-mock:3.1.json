@@ -1,0 +1,222 @@
+[
+  {
+    "coordinatesV1": "tech.sirwellington.alchemy:alchemy-http-mock:2.0",
+    "coordinatesV2": "tech.sirwellington.alchemy:alchemy-http-mock:3.1",
+    "caller": "|java+constructor:///tech/sirwellington/alchemy/http/mock/AlchemyHttpMockFactory/AlchemyHttpMockFactory()|",
+    "called": "|java+method:///sir/wellington/alchemy/collections/maps/Maps/createSynchronized()|",
+    "v1Body": [
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+constructor:///com/google/gson/Gson/Gson()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///sir/wellington/alchemy/collections/maps/Maps/createSynchronized()|",
+      "|java+constructor:///com/google/gson/Gson/Gson()|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "tech.sirwellington.alchemy:alchemy-collections:2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "tech.sirwellington.alchemy:alchemy-http-mock:2.0",
+    "coordinatesV2": "tech.sirwellington.alchemy:alchemy-http-mock:3.1",
+    "caller": "|java+constructor:///tech/sirwellington/alchemy/http/mock/MockAlchemyHttp/MockAlchemyHttp(java.util.Map)|",
+    "called": "|java+method:///sir/wellington/alchemy/collections/lists/Lists/create()|",
+    "v1Body": [
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+method:///java/util/Map/putAll(java.util.Map)|",
+      "|java+method:///sir/wellington/alchemy/collections/lists/Lists/create()|",
+      "|java+method:///tech/sirwellington/alchemy/test/Checks$Internal/checkNotNull(java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///tech/sirwellington/alchemy/arguments/AssertionBuilder/isA(tech.sirwellington.alchemy.arguments.AlchemyAssertion)|",
+      "|java+method:///tech/sirwellington/alchemy/arguments/assertions/Assertions/nonNullReference()|",
+      "|java+method:///tech/sirwellington/alchemy/arguments/Arguments/checkThat(java.lang.Object)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/util/Map/putAll(java.util.Map)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///sir/wellington/alchemy/collections/maps/Maps/createSynchronized()|",
+      "|java+method:///sir/wellington/alchemy/collections/lists/Lists/create()|"
+    ],
+    "affectedLib": "tech.sirwellington.alchemy:alchemy-collections:2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "tech.sirwellington.alchemy:alchemy-http-mock:2.0",
+    "coordinatesV2": "tech.sirwellington.alchemy:alchemy-http-mock:3.1",
+    "caller": "|java+method:///tech/sirwellington/alchemy/http/mock/AlchemyHttpMockFactory/whenPost()|",
+    "called": "|java+method:///tech/sirwellington/alchemy/http/HttpRequest$Builder/build()|",
+    "v1Body": [
+      "|java+constructor:///tech/sirwellington/alchemy/http/mock/MockRequest/MockRequest()|",
+      "|java+method:///tech/sirwellington/alchemy/http/HttpRequest$Builder/build()|",
+      "|java+method:///tech/sirwellington/alchemy/http/HttpRequest$Builder/newInstance()|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlin/jvm/internal/Intrinsics/throwNpe()|",
+      "|java+constructor:///tech/sirwellington/alchemy/http/mock/MockRequest/MockRequest(java.net.URL,tech.sirwellington.alchemy.http.RequestMethod,java.lang.Object,java.util.Map,java.util.Map,int,kotlin.jvm.internal.DefaultConstructorMarker)|",
+      "|java+method:///tech/sirwellington/alchemy/http/mock/MockRequest/setMethod$alchemy_http_mock(tech.sirwellington.alchemy.http.RequestMethod)|",
+      "|java+method:///tech/sirwellington/alchemy/http/HttpRequest$Builder/build()|",
+      "|java+method:///tech/sirwellington/alchemy/http/HttpRequest$Builder$Companion/newInstance()|"
+    ],
+    "affectedLib": "tech.sirwellington.alchemy:alchemy-http:3.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "tech.sirwellington.alchemy:alchemy-http-mock:2.0",
+    "coordinatesV2": "tech.sirwellington.alchemy:alchemy-http-mock:3.1",
+    "caller": "|java+method:///tech/sirwellington/alchemy/http/mock/MockAlchemyHttp/getResponseFor(tech.sirwellington.alchemy.http.mock.MockRequest)|",
+    "called": "|java+constructor:///tech/sirwellington/alchemy/http/exceptions/AlchemyHttpException/AlchemyHttpException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///tech/sirwellington/alchemy/arguments/assertions/Assertions/notNull()|",
+      "|java+method:///tech/sirwellington/alchemy/arguments/assertions/Assertions/instanceOf(java.lang.Class)|",
+      "|java+method:///tech/sirwellington/alchemy/arguments/assertions/Assertions/nonNullReference()|",
+      "|java+method:///tech/sirwellington/alchemy/http/mock/MockAlchemyHttp/expectedRequest()|",
+      "|java+method:///tech/sirwellington/alchemy/arguments/Arguments/checkThat(java.lang.Object)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///tech/sirwellington/alchemy/arguments/AssertionBuilder/is(tech.sirwellington.alchemy.arguments.AlchemyAssertion)|",
+      "|java+method:///tech/sirwellington/alchemy/http/mock/MockAlchemyHttp/findMatchingActionFor(tech.sirwellington.alchemy.http.mock.MockRequest)|",
+      "|java+constructor:///tech/sirwellington/alchemy/http/exceptions/AlchemyHttpException/AlchemyHttpException(java.lang.Throwable)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/concurrent/Callable/call()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///tech/sirwellington/alchemy/arguments/AssertionBuilder/usingMessage(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///tech/sirwellington/alchemy/arguments/assertions/Assertions/notNull()|",
+      "|java+method:///tech/sirwellington/alchemy/arguments/assertions/Assertions/instanceOf(java.lang.Class)|",
+      "|java+method:///tech/sirwellington/alchemy/http/mock/MockAlchemyHttp/expectedRequest()|",
+      "|java+method:///tech/sirwellington/alchemy/arguments/Arguments/checkThat(java.lang.Object)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///kotlin/TypeCastException/TypeCastException(java.lang.String)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///tech/sirwellington/alchemy/http/mock/MockAlchemyHttp/findMatchingActionFor(tech.sirwellington.alchemy.http.mock.MockRequest)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/throwNpe()|",
+      "|java+method:///tech/sirwellington/alchemy/arguments/AssertionBuilder/isA(tech.sirwellington.alchemy.arguments.AlchemyAssertion)|",
+      "|java+constructor:///tech/sirwellington/alchemy/http/exceptions/AlchemyHttpException/AlchemyHttpException(java.lang.Throwable)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/concurrent/Callable/call()|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///tech/sirwellington/alchemy/arguments/AssertionBuilder/usingMessage(java.lang.String)|"
+    ],
+    "affectedLib": "tech.sirwellington.alchemy:alchemy-http:3.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "tech.sirwellington.alchemy:alchemy-http-mock:2.0",
+    "coordinatesV2": "tech.sirwellington.alchemy:alchemy-http-mock:3.1",
+    "caller": "|java+method:///tech/sirwellington/alchemy/http/mock/MockSteps$MockStep2/nothing()|",
+    "called": "|java+method:///tech/sirwellington/alchemy/http/AlchemyRequestSteps$Step2$DefaultImpls/nothing(tech.sirwellington.alchemy.http.AlchemyRequestSteps$Step2)|",
+    "v1Body": [
+      "|java+constructor:///tech/sirwellington/alchemy/http/mock/MockSteps$MockStep3/MockSteps$MockStep3(tech.sirwellington.alchemy.http.mock.MockAlchemyHttp,tech.sirwellington.alchemy.http.mock.MockRequest)|"
+    ],
+    "v2Body": [
+      "|java+method:///tech/sirwellington/alchemy/http/AlchemyRequestSteps$Step2$DefaultImpls/nothing(tech.sirwellington.alchemy.http.AlchemyRequestSteps$Step2)|"
+    ],
+    "affectedLib": "tech.sirwellington.alchemy:alchemy-http:3.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "tech.sirwellington.alchemy:alchemy-http-mock:2.0",
+    "coordinatesV2": "tech.sirwellington.alchemy:alchemy-http-mock:3.1",
+    "caller": "|java+method:///tech/sirwellington/alchemy/http/mock/MockAlchemyHttp/getResponseFor(tech.sirwellington.alchemy.http.mock.MockRequest,java.lang.Class)|",
+    "called": "|java+constructor:///tech/sirwellington/alchemy/http/exceptions/AlchemyHttpException/AlchemyHttpException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///tech/sirwellington/alchemy/arguments/assertions/Assertions/notNull()|",
+      "|java+method:///tech/sirwellington/alchemy/arguments/assertions/Assertions/instanceOf(java.lang.Class)|",
+      "|java+method:///tech/sirwellington/alchemy/arguments/AssertionBuilder/are(tech.sirwellington.alchemy.arguments.AlchemyAssertion)|",
+      "|java+method:///tech/sirwellington/alchemy/arguments/Arguments/checkThat(java.lang.Object)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///tech/sirwellington/alchemy/arguments/AssertionBuilder/is(tech.sirwellington.alchemy.arguments.AlchemyAssertion)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///tech/sirwellington/alchemy/arguments/Arguments/checkThat(java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///tech/sirwellington/alchemy/http/mock/MockAlchemyHttp/expectedRequest()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///tech/sirwellington/alchemy/http/exceptions/AlchemyHttpException/AlchemyHttpException(java.lang.Throwable)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/concurrent/Callable/call()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///tech/sirwellington/alchemy/arguments/AssertionBuilder/usingMessage(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///tech/sirwellington/alchemy/http/mock/MockAlchemyHttp/findMatchingActionFor(tech.sirwellington.alchemy.http.mock.MockRequest)|"
+    ],
+    "v2Body": [
+      "|java+method:///tech/sirwellington/alchemy/arguments/assertions/Assertions/notNull()|",
+      "|java+method:///tech/sirwellington/alchemy/arguments/assertions/Assertions/instanceOf(java.lang.Class)|",
+      "|java+method:///tech/sirwellington/alchemy/arguments/AssertionBuilder/are(tech.sirwellington.alchemy.arguments.AlchemyAssertion)|",
+      "|java+method:///tech/sirwellington/alchemy/arguments/Arguments/checkThat(java.lang.Object)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///tech/sirwellington/alchemy/arguments/Arguments/checkThat(java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/throwNpe()|",
+      "|java+method:///tech/sirwellington/alchemy/arguments/AssertionBuilder/isA(tech.sirwellington.alchemy.arguments.AlchemyAssertion)|",
+      "|java+method:///tech/sirwellington/alchemy/http/mock/MockAlchemyHttp/expectedRequest()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///tech/sirwellington/alchemy/http/exceptions/AlchemyHttpException/AlchemyHttpException(java.lang.Throwable)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/concurrent/Callable/call()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///tech/sirwellington/alchemy/arguments/AssertionBuilder/usingMessage(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///tech/sirwellington/alchemy/http/mock/MockAlchemyHttp/findMatchingActionFor(tech.sirwellington.alchemy.http.mock.MockRequest)|"
+    ],
+    "affectedLib": "tech.sirwellington.alchemy:alchemy-http:3.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "tech.sirwellington.alchemy:alchemy-http-mock:2.0",
+    "coordinatesV2": "tech.sirwellington.alchemy:alchemy-http-mock:3.1",
+    "caller": "|java+method:///tech/sirwellington/alchemy/http/mock/MockSteps$MockStep6/at(java.net.URL)|",
+    "called": "|java+constructor:///tech/sirwellington/alchemy/http/exceptions/AlchemyHttpException/AlchemyHttpException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///tech/sirwellington/alchemy/arguments/assertions/Assertions/notNull()|",
+      "|java+method:///tech/sirwellington/alchemy/http/AlchemyRequest$OnSuccess/processResponse(java.lang.Object)|",
+      "|java+method:///tech/sirwellington/alchemy/arguments/Arguments/checkThat(java.lang.Object)|",
+      "|java+method:///tech/sirwellington/alchemy/arguments/AssertionBuilder/is(tech.sirwellington.alchemy.arguments.AlchemyAssertion)|",
+      "|java+method:///tech/sirwellington/alchemy/http/mock/MockAlchemyHttp/getResponseFor(tech.sirwellington.alchemy.http.mock.MockRequest,java.lang.Class)|",
+      "|java+constructor:///tech/sirwellington/alchemy/http/exceptions/AlchemyHttpException/AlchemyHttpException(java.lang.Throwable)|",
+      "|java+method:///tech/sirwellington/alchemy/http/AlchemyRequest$OnFailure/handleError(tech.sirwellington.alchemy.http.exceptions.AlchemyHttpException)|",
+      "|java+method:///tech/sirwellington/alchemy/arguments/AssertionBuilder/usingMessage(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///tech/sirwellington/alchemy/http/AlchemyRequestSteps$OnFailure/handleError(tech.sirwellington.alchemy.http.exceptions.AlchemyHttpException)|",
+      "|java+method:///tech/sirwellington/alchemy/arguments/AssertionBuilder/isA(tech.sirwellington.alchemy.arguments.AlchemyAssertion)|",
+      "|java+method:///tech/sirwellington/alchemy/arguments/assertions/Assertions/nonNullReference()|",
+      "|java+method:///tech/sirwellington/alchemy/arguments/Arguments/checkThat(java.lang.Object)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///tech/sirwellington/alchemy/http/mock/MockAlchemyHttp/getResponseFor(tech.sirwellington.alchemy.http.mock.MockRequest,java.lang.Class)|",
+      "|java+method:///tech/sirwellington/alchemy/http/mock/MockRequest/setUrl$alchemy_http_mock(java.net.URL)|",
+      "|java+method:///tech/sirwellington/alchemy/arguments/AssertionBuilder/usingMessage(java.lang.String)|",
+      "|java+constructor:///tech/sirwellington/alchemy/http/exceptions/AlchemyHttpException/AlchemyHttpException(java.lang.Throwable)|",
+      "|java+method:///tech/sirwellington/alchemy/http/AlchemyRequestSteps$OnSuccess/processResponse(java.lang.Object)|"
+    ],
+    "affectedLib": "tech.sirwellington.alchemy:alchemy-http:3.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "tech.sirwellington.alchemy:alchemy-http-mock:2.0",
+    "coordinatesV2": "tech.sirwellington.alchemy:alchemy-http-mock:3.1",
+    "caller": "|java+constructor:///tech/sirwellington/alchemy/http/mock/AlchemyHttpMockFactory/AlchemyHttpMockFactory()|",
+    "called": "|java+constructor:///com/google/gson/Gson/Gson()|",
+    "v1Body": [
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+constructor:///com/google/gson/Gson/Gson()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///sir/wellington/alchemy/collections/maps/Maps/createSynchronized()|",
+      "|java+constructor:///com/google/gson/Gson/Gson()|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.code.gson:gson:2.8.5",
+    "change": "UPDATED"
+  }
+]

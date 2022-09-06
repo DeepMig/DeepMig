@@ -1,0 +1,128 @@
+[
+  {
+    "coordinatesV1": "ru.vyarus:guice-persist-orient:3.3.1",
+    "coordinatesV2": "ru.vyarus:guice-persist-orient:3.3.2",
+    "caller": "|java+method:///ru/vyarus/guice/persist/orient/support/repository/mixin/graph/delegate/EdgesSupportDelegate/getVertex(java.lang.Object)|",
+    "called": "|java+method:///com/tinkerpop/blueprints/impls/orient/OrientBaseGraph/getVertex(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/tinkerpop/blueprints/impls/orient/OrientBaseGraph/getVertex(java.lang.Object)|",
+      "|java+method:///com/google/inject/Provider/get()|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///ru/vyarus/guice/persist/orient/db/util/RidUtils/getRid(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///ru/vyarus/guice/persist/orient/db/util/RidUtils/getRid(java.lang.Object)|",
+      "|java+method:///com/tinkerpop/blueprints/impls/orient/OrientBaseGraph/getVertex(java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.String,java.lang.Object)|",
+      "|java+method:///com/google/inject/Provider/get()|"
+    ],
+    "affectedLib": "com.orientechnologies:orientdb-graphdb:2.2.33",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "ru.vyarus:guice-persist-orient:3.3.1",
+    "coordinatesV2": "ru.vyarus:guice-persist-orient:3.3.2",
+    "caller": "|java+method:///ru/vyarus/guice/persist/orient/db/scheme/impl/AbstractObjectInitializer/scan()|",
+    "called": "|java+method:///com/orientechnologies/common/reflection/OReflectionHelper/getClassesFor(java.lang.String,java.lang.ClassLoader)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/google/common/base/Joiner/join(java.lang.Object%5B%5D)|",
+      "|java+method:///com/google/common/collect/Lists/newArrayList(java.lang.Iterable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/List/addAll(java.util.Collection)|",
+      "|java+method:///com/google/common/base/Preconditions/checkState(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///ru/vyarus/guice/persist/orient/db/scheme/impl/AbstractObjectInitializer$1/AbstractObjectInitializer$1(ru.vyarus.guice.persist.orient.db.scheme.impl.AbstractObjectInitializer)|",
+      "|java+method:///com/orientechnologies/common/reflection/OReflectionHelper/getClassesFor(java.lang.String,java.lang.ClassLoader)|",
+      "|java+method:///java/lang/Thread/getContextClassLoader()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/google/common/collect/Iterables/filter(java.lang.Iterable,com.google.common.base.Predicate)|",
+      "|java+method:///com/google/common/base/Joiner/on(java.lang.String)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///com/google/common/collect/Lists/newArrayList()|",
+      "|java+method:///java/lang/Thread/currentThread()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/google/common/base/Joiner/join(java.lang.Object%5B%5D)|",
+      "|java+method:///com/google/common/collect/Lists/newArrayList(java.lang.Iterable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/List/addAll(java.util.Collection)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/orientechnologies/common/reflection/OReflectionHelper/getClassesFor(java.lang.String,java.lang.ClassLoader)|",
+      "|java+method:///java/lang/Thread/getContextClassLoader()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/google/common/collect/Iterables/filter(java.lang.Iterable,com.google.common.base.Predicate)|",
+      "|java+method:///com/google/common/base/Joiner/on(java.lang.String)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///com/google/common/collect/Lists/newArrayList()|",
+      "|java+method:///java/lang/Thread/currentThread()|",
+      "|java+constructor:///ru/vyarus/guice/persist/orient/db/scheme/impl/AbstractObjectInitializer$1/AbstractObjectInitializer$1(ru.vyarus.guice.persist.orient.db.scheme.impl.AbstractObjectInitializer)|",
+      "|java+method:///com/google/common/base/Preconditions/checkState(boolean,java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "com.orientechnologies:orientdb-core:2.2.33",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "ru.vyarus:guice-persist-orient:3.3.1",
+    "coordinatesV2": "ru.vyarus:guice-persist-orient:3.3.2",
+    "caller": "|java+method:///ru/vyarus/guice/persist/orient/db/user/UserManager/executeWithTxUser(com.orientechnologies.orient.core.metadata.security.OSecurityUser,ru.vyarus.guice.persist.orient.db.user.SpecificUserAction)|",
+    "called": "|java+method:///com/orientechnologies/orient/core/db/document/ODatabaseDocumentTx/setUser(com.orientechnologies.orient.core.metadata.security.OSecurityUser)|",
+    "v1Body": [
+      "|java+method:///java/lang/ThreadLocal/remove()|",
+      "|java+method:///com/google/common/base/Throwables/propagateIfPossible(java.lang.Throwable)|",
+      "|java+method:///ru/vyarus/guice/persist/orient/db/user/UserManager/checkSpecificUserConditions(java.lang.String)|",
+      "|java+method:///java/lang/ThreadLocal/set(java.lang.Object)|",
+      "|java+method:///com/orientechnologies/orient/core/metadata/security/OSecurityUser/getName()|",
+      "|java+method:///ru/vyarus/guice/persist/orient/db/user/SpecificUserAction/execute()|",
+      "|java+method:///javax/inject/Provider/get()|",
+      "|java+method:///com/orientechnologies/orient/core/db/document/ODatabaseDocumentTx/getUser()|",
+      "|java+constructor:///ru/vyarus/guice/persist/orient/db/user/UserActionException/UserActionException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/orientechnologies/orient/core/db/document/ODatabaseDocumentTx/setUser(com.orientechnologies.orient.core.metadata.security.OSecurityUser)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/ThreadLocal/remove()|",
+      "|java+method:///ru/vyarus/guice/persist/orient/db/user/UserManager/checkSpecificUserConditions(java.lang.String)|",
+      "|java+method:///java/lang/ThreadLocal/set(java.lang.Object)|",
+      "|java+method:///com/orientechnologies/orient/core/metadata/security/OSecurityUser/getName()|",
+      "|java+method:///ru/vyarus/guice/persist/orient/db/user/SpecificUserAction/execute()|",
+      "|java+method:///javax/inject/Provider/get()|",
+      "|java+method:///com/google/common/base/Throwables/throwIfUnchecked(java.lang.Throwable)|",
+      "|java+method:///com/orientechnologies/orient/core/db/document/ODatabaseDocumentTx/getUser()|",
+      "|java+constructor:///ru/vyarus/guice/persist/orient/db/user/UserActionException/UserActionException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/orientechnologies/orient/core/db/document/ODatabaseDocumentTx/setUser(com.orientechnologies.orient.core.metadata.security.OSecurityUser)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "com.orientechnologies:orientdb-core:2.2.33",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "ru.vyarus:guice-persist-orient:3.3.1",
+    "coordinatesV2": "ru.vyarus:guice-persist-orient:3.3.2",
+    "caller": "|java+method:///ru/vyarus/guice/persist/orient/db/user/UserManager/executeWithTxUser(java.lang.String,ru.vyarus.guice.persist.orient.db.user.SpecificUserAction)|",
+    "called": "|java+method:///com/orientechnologies/orient/core/db/document/ODatabaseDocumentTx/getMetadata()|",
+    "v1Body": [
+      "|java+method:///ru/vyarus/guice/persist/orient/db/user/UserManager/executeWithTxUser(com.orientechnologies.orient.core.metadata.security.OSecurityUser,ru.vyarus.guice.persist.orient.db.user.SpecificUserAction)|",
+      "|java+method:///ru/vyarus/guice/persist/orient/db/user/UserManager/checkSpecificUserConditions(java.lang.String)|",
+      "|java+method:///com/orientechnologies/orient/core/db/document/ODatabaseDocumentTx/getUser()|",
+      "|java+method:///com/orientechnologies/orient/core/db/document/ODatabaseDocumentTx/getMetadata()|",
+      "|java+method:///com/google/common/base/Preconditions/checkState(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/inject/Provider/get()|",
+      "|java+method:///com/orientechnologies/orient/core/metadata/OMetadataDefault/getSecurity()|",
+      "|java+method:///com/orientechnologies/orient/core/metadata/security/OSecurity/getUser(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///ru/vyarus/guice/persist/orient/db/user/UserManager/executeWithTxUser(com.orientechnologies.orient.core.metadata.security.OSecurityUser,ru.vyarus.guice.persist.orient.db.user.SpecificUserAction)|",
+      "|java+method:///ru/vyarus/guice/persist/orient/db/user/UserManager/checkSpecificUserConditions(java.lang.String)|",
+      "|java+method:///com/orientechnologies/orient/core/db/document/ODatabaseDocumentTx/getUser()|",
+      "|java+method:///com/orientechnologies/orient/core/db/document/ODatabaseDocumentTx/getMetadata()|",
+      "|java+method:///com/google/common/base/Preconditions/checkState(boolean,java.lang.String,java.lang.Object)|",
+      "|java+method:///javax/inject/Provider/get()|",
+      "|java+method:///com/orientechnologies/orient/core/metadata/OMetadataDefault/getSecurity()|",
+      "|java+method:///com/orientechnologies/orient/core/metadata/security/OSecurity/getUser(java.lang.String)|"
+    ],
+    "affectedLib": "com.orientechnologies:orientdb-core:2.2.33",
+    "change": "UPDATED"
+  }
+]

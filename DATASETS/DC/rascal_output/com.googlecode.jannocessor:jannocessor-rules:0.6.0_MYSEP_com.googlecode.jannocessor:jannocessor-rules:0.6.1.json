@@ -1,0 +1,119 @@
+[
+  {
+    "coordinatesV1": "com.googlecode.jannocessor:jannocessor-rules:0.6.1",
+    "coordinatesV2": "com.googlecode.jannocessor:jannocessor-rules:0.6.0",
+    "caller": "|java+constructor:///org/jannocessor/service/rules/RulesGeneratorImpl/RulesGeneratorImpl(org.jannocessor.service.api.TemplateRenderer,org.jannocessor.service.api.FileService,org.jannocessor.service.api.PatternService)|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|",
+      "|java+method:///org/jannocessor/service/api/TemplateRenderer/configure(java.lang.String,boolean)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.googlecode.jannocessor:jannocessor-rules:0.6.0",
+    "coordinatesV2": "com.googlecode.jannocessor:jannocessor-rules:0.6.1",
+    "caller": "|java+method:///org/jannocessor/service/rules/RuleExecutorImpl/loadKnowledgeBase()|",
+    "called": "|java+constructor:///org/jannocessor/JannocessorException/JannocessorException(java.lang.String,java.lang.Exception)|",
+    "v1Body": [
+      "|java+method:///org/jannocessor/service/api/Configurator/getKnowledgeBaseFilename()|",
+      "|java+method:///org/jannocessor/service/rules/RuleExecutorImpl/deleteKnowledgeBase()|",
+      "|java+method:///java/io/ObjectInputStream/close()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+constructor:///java/io/ObjectInputStream/ObjectInputStream(java.io.InputStream)|",
+      "|java+constructor:///org/jannocessor/processor/model/JannocessorException/JannocessorException(java.lang.String,java.lang.Exception)|",
+      "|java+constructor:///java/io/FileInputStream/FileInputStream(java.lang.String)|",
+      "|java+method:///java/io/ObjectInputStream/readObject()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/jannocessor/JannocessorException/JannocessorException(java.lang.String,java.lang.Exception)|",
+      "|java+method:///org/jannocessor/service/api/Configurator/getKnowledgeBaseFilename()|",
+      "|java+method:///org/jannocessor/service/rules/RuleExecutorImpl/deleteKnowledgeBase()|",
+      "|java+method:///java/io/ObjectInputStream/close()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+constructor:///java/io/ObjectInputStream/ObjectInputStream(java.io.InputStream)|",
+      "|java+constructor:///java/io/FileInputStream/FileInputStream(java.lang.String)|",
+      "|java+method:///java/io/ObjectInputStream/readObject()|"
+    ],
+    "affectedLib": "com.googlecode.jannocessor:jannocessor-common:0.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.googlecode.jannocessor:jannocessor-rules:0.6.0",
+    "coordinatesV2": "com.googlecode.jannocessor:jannocessor-rules:0.6.1",
+    "caller": "|java+method:///org/jannocessor/service/rules/RuleExecutorImpl/executeRules(java.lang.String,java.util.List,java.util.Map)|",
+    "called": "|java+constructor:///org/jannocessor/JannocessorException/JannocessorException(java.lang.String,java.lang.Exception)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/lang/Exception/printStackTrace()|",
+      "|java+method:///org/jannocessor/service/rules/RuleExecutorImpl/execute(java.lang.String,java.util.List,java.util.Map)|",
+      "|java+constructor:///org/jannocessor/processor/model/JannocessorException/JannocessorException(java.lang.String,java.lang.Exception)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/jannocessor/JannocessorException/JannocessorException(java.lang.String,java.lang.Exception)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/lang/Exception/printStackTrace()|",
+      "|java+method:///org/jannocessor/service/rules/RuleExecutorImpl/execute(java.lang.String,java.util.List,java.util.Map)|"
+    ],
+    "affectedLib": "com.googlecode.jannocessor:jannocessor-common:0.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.googlecode.jannocessor:jannocessor-rules:0.6.0",
+    "coordinatesV2": "com.googlecode.jannocessor:jannocessor-rules:0.6.1",
+    "caller": "|java+method:///org/jannocessor/service/rules/RulesGeneratorImpl/loadRule(java.lang.String)|",
+    "called": "|java+constructor:///org/jannocessor/context/Rule/Rule(java.lang.String,java.lang.String,java.util.List)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/jannocessor/service/api/FileService/readClasspathFile(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/jannocessor/processor/model/Rule/Rule(java.lang.String,java.lang.String,java.util.List)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/jannocessor/service/api/PatternService/extractPatternVariables(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/jannocessor/context/Rule/Rule(java.lang.String,java.lang.String,java.util.List)|",
+      "|java+method:///org/jannocessor/service/api/FileService/readClasspathFile(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/jannocessor/service/api/PatternService/extractPatternVariables(java.lang.String)|"
+    ],
+    "affectedLib": "com.googlecode.jannocessor:jannocessor-common:0.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.googlecode.jannocessor:jannocessor-rules:0.6.0",
+    "coordinatesV2": "com.googlecode.jannocessor:jannocessor-rules:0.6.1",
+    "caller": "|java+method:///org/jannocessor/service/rules/RuleExecutorImpl/saveKnowledgeBase(org.drools.KnowledgeBase)|",
+    "called": "|java+constructor:///org/jannocessor/JannocessorException/JannocessorException(java.lang.String,java.lang.Exception)|",
+    "v1Body": [
+      "|java+method:///org/jannocessor/service/api/Configurator/getKnowledgeBaseFilename()|",
+      "|java+constructor:///java/io/FileOutputStream/FileOutputStream(java.lang.String)|",
+      "|java+method:///java/io/ObjectOutputStream/writeObject(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+constructor:///java/io/ObjectOutputStream/ObjectOutputStream(java.io.OutputStream)|",
+      "|java+constructor:///org/jannocessor/processor/model/JannocessorException/JannocessorException(java.lang.String,java.lang.Exception)|",
+      "|java+method:///java/io/ObjectOutputStream/close()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/jannocessor/JannocessorException/JannocessorException(java.lang.String,java.lang.Exception)|",
+      "|java+method:///org/jannocessor/service/api/Configurator/getKnowledgeBaseFilename()|",
+      "|java+constructor:///java/io/FileOutputStream/FileOutputStream(java.lang.String)|",
+      "|java+method:///java/io/ObjectOutputStream/writeObject(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+constructor:///java/io/ObjectOutputStream/ObjectOutputStream(java.io.OutputStream)|",
+      "|java+method:///java/io/ObjectOutputStream/close()|"
+    ],
+    "affectedLib": "com.googlecode.jannocessor:jannocessor-common:0.6.1",
+    "change": "UPDATED"
+  }
+]

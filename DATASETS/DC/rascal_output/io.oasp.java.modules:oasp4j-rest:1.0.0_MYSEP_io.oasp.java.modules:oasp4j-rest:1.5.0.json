@@ -1,0 +1,111 @@
+[
+  {
+    "coordinatesV1": "io.oasp.java.modules:oasp4j-rest:1.0.0",
+    "coordinatesV2": "io.oasp.java.modules:oasp4j-rest:1.5.0",
+    "caller": "|java+method:///io/oasp/module/rest/service/impl/RestServiceExceptionFacade/handleSecurityError(java.lang.Throwable)|",
+    "called": "|java+constructor:///net/sf/mmm/util/security/api/SecurityErrorUserException/SecurityErrorUserException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/oasp/module/rest/service/impl/RestServiceExceptionFacade/createResponse(javax.ws.rs.core.Response$Status,java.lang.String,java.lang.String,java.util.UUID)|",
+      "|java+method:///net/sf/mmm/util/exception/api/NlsRuntimeException/getUuid()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///io/oasp/module/rest/service/impl/RestServiceExceptionFacade/getExposedErrorDetails(java.lang.Throwable)|",
+      "|java+constructor:///net/sf/mmm/util/security/api/SecurityErrorUserException/SecurityErrorUserException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/oasp/module/rest/service/impl/RestServiceExceptionFacade/createResponse(javax.ws.rs.core.Response$Status,java.lang.String,java.lang.String,java.util.UUID,java.util.Map)|",
+      "|java+method:///net/sf/mmm/util/exception/api/NlsRuntimeException/getUuid()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///io/oasp/module/rest/service/impl/RestServiceExceptionFacade/getExposedErrorDetails(java.lang.Throwable)|",
+      "|java+constructor:///net/sf/mmm/util/security/api/SecurityErrorUserException/SecurityErrorUserException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "net.sf.m-m-m:mmm-util-core:7.0.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.oasp.java.modules:oasp4j-rest:1.0.0",
+    "coordinatesV2": "io.oasp.java.modules:oasp4j-rest:1.5.0",
+    "caller": "|java+method:///io/oasp/module/rest/service/impl/RestServiceExceptionFacade/createResponse(javax.ws.rs.WebApplicationException)|",
+    "called": "|java+constructor:///net/sf/mmm/util/exception/api/TechnicalErrorUserException/TechnicalErrorUserException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/oasp/module/rest/service/impl/RestServiceExceptionFacade/createResponse(javax.ws.rs.core.Response$Status,java.lang.String,java.lang.String,java.util.UUID)|",
+      "|java+method:///javax/ws/rs/WebApplicationException/getResponse()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/UUID/randomUUID()|",
+      "|java+method:///javax/ws/rs/core/Response/getStatus()|",
+      "|java+method:///io/oasp/module/rest/service/impl/RestServiceExceptionFacade/createResponse(javax.ws.rs.core.Response$Status,net.sf.mmm.util.exception.api.NlsRuntimeException)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///net/sf/mmm/util/exception/api/TechnicalErrorUserException/TechnicalErrorUserException(java.lang.Throwable)|",
+      "|java+method:///javax/ws/rs/WebApplicationException/getMessage()|",
+      "|java+method:///javax/ws/rs/core/Response$Status/fromStatusCode(int)|",
+      "|java+method:///java/lang/String/valueOf(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/UUID/randomUUID()|",
+      "|java+method:///io/oasp/module/rest/service/impl/RestServiceExceptionFacade/createResponse(javax.ws.rs.core.Response$Status,java.lang.String,java.lang.String,java.util.UUID,java.util.Map)|",
+      "|java+method:///javax/ws/rs/core/Response/getStatus()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///net/sf/mmm/util/exception/api/TechnicalErrorUserException/TechnicalErrorUserException(java.lang.Throwable)|",
+      "|java+method:///javax/ws/rs/WebApplicationException/getMessage()|",
+      "|java+method:///javax/ws/rs/core/Response$Status/fromStatusCode(int)|",
+      "|java+method:///java/lang/String/valueOf(int)|",
+      "|java+method:///io/oasp/module/rest/service/impl/RestServiceExceptionFacade/createResponse(javax.ws.rs.core.Response$Status,net.sf.mmm.util.exception.api.NlsRuntimeException,java.util.Map)|",
+      "|java+method:///javax/ws/rs/WebApplicationException/getResponse()|"
+    ],
+    "affectedLib": "net.sf.m-m-m:mmm-util-core:7.0.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.oasp.java.modules:oasp4j-rest:1.0.0",
+    "coordinatesV2": "io.oasp.java.modules:oasp4j-rest:1.5.0",
+    "caller": "|java+method:///io/oasp/module/rest/service/impl/RestServiceExceptionFacade/toResponse(java.lang.Throwable)|",
+    "called": "|java+constructor:///net/sf/mmm/util/validation/api/ValidationErrorUserException/ValidationErrorUserException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/isAssignableFrom(java.lang.Class)|",
+      "|java+constructor:///net/sf/mmm/util/validation/api/ValidationErrorUserException/ValidationErrorUserException(java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///io/oasp/module/rest/service/impl/RestServiceExceptionFacade/createResponse(javax.ws.rs.WebApplicationException)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///javax/validation/ConstraintViolationException/getConstraintViolations()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///javax/validation/ValidationException/ValidationException(java.lang.String)|",
+      "|java+method:///io/oasp/module/rest/service/impl/RestServiceExceptionFacade/handleGenericError(java.lang.Throwable)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///javax/validation/ConstraintViolation/getPropertyPath()|",
+      "|java+method:///javax/validation/ConstraintViolation/getMessage()|",
+      "|java+method:///io/oasp/module/rest/service/impl/RestServiceExceptionFacade/createResponse(java.lang.Throwable,net.sf.mmm.util.validation.api.ValidationErrorUserException)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///io/oasp/module/rest/service/impl/RestServiceExceptionFacade/handleSecurityError(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/isAssignableFrom(java.lang.Class)|",
+      "|java+method:///io/oasp/module/rest/service/impl/RestServiceExceptionFacade/createResponse(java.lang.Throwable,net.sf.mmm.util.validation.api.ValidationErrorUserException,java.util.Map)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///io/oasp/module/rest/service/impl/RestServiceExceptionFacade/createResponse(javax.ws.rs.WebApplicationException)|",
+      "|java+method:///javax/validation/ConstraintViolation/getMessage()|",
+      "|java+method:///javax/validation/ConstraintViolationException/getConstraintViolations()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///javax/validation/ValidationException/ValidationException(java.lang.String)|",
+      "|java+method:///io/oasp/module/rest/service/impl/RestServiceExceptionFacade/handleSecurityError(java.lang.Throwable)|",
+      "|java+constructor:///net/sf/mmm/util/validation/api/ValidationErrorUserException/ValidationErrorUserException(java.lang.Throwable)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///io/oasp/module/rest/service/impl/RestServiceExceptionFacade/handleGenericError(java.lang.Throwable)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///javax/validation/ConstraintViolation/getPropertyPath()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///javax/validation/Path/iterator()|",
+      "|java+method:///java/util/Set/iterator()|"
+    ],
+    "affectedLib": "net.sf.m-m-m:mmm-util-core:7.0.0",
+    "change": "UPDATED"
+  }
+]

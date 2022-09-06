@@ -1,0 +1,1157 @@
+[
+  {
+    "coordinatesV1": "org.commonjava.aprox:aprox-core:0.4",
+    "coordinatesV2": "org.commonjava.aprox:aprox-core:0.3",
+    "caller": "|java+constructor:///org/commonjava/aprox/core/change/GroupConsistencyListener/GroupConsistencyListener()|",
+    "called": "|java+constructor:///org/commonjava/couch/util/ChangeSynchronizer/ChangeSynchronizer()|",
+    "v1Body": [
+      "|java+constructor:///org/commonjava/util/logging/Logger/Logger(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///org/commonjava/couch/util/ChangeSynchronizer/ChangeSynchronizer()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/commonjava/util/logging/Logger/Logger(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///org/commonjava/aprox/util/ChangeSynchronizer/ChangeSynchronizer()|"
+    ],
+    "affectedLib": "org.commonjava.couch:couch-app-support:1.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.aprox:aprox-core:0.4",
+    "coordinatesV2": "org.commonjava.aprox:aprox-core:0.3",
+    "caller": "|java+method:///org/commonjava/aprox/core/change/GroupConsistencyListener/waitForChange(long,long)|",
+    "called": "|java+method:///org/commonjava/couch/util/ChangeSynchronizer/waitForChange(long,long)|",
+    "v1Body": [
+      "|java+method:///org/commonjava/couch/util/ChangeSynchronizer/waitForChange(long,long)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/aprox/util/ChangeSynchronizer/waitForChange(int,long,long)|"
+    ],
+    "affectedLib": "org.commonjava.couch:couch-app-support:1.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.aprox:aprox-core:0.3",
+    "coordinatesV2": "org.commonjava.aprox:aprox-core:0.4",
+    "caller": "|java+method:///org/commonjava/aprox/core/change/TimeoutManager/getStoreKey(org.commonjava.shelflife.model.ExpirationKey)|",
+    "called": "|java+method:///org/commonjava/shelflife/model/ExpirationKey/getParts()|",
+    "v1Body": [
+      "|java+constructor:///org/commonjava/aprox/core/model/StoreKey/StoreKey(org.commonjava.aprox.core.model.StoreType,java.lang.String)|",
+      "|java+method:///org/commonjava/shelflife/model/ExpirationKey/getParts()|",
+      "|java+method:///org/commonjava/aprox/core/model/StoreType/valueOf(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/aprox/model/StoreType/valueOf(java.lang.String)|",
+      "|java+method:///org/commonjava/shelflife/model/ExpirationKey/getParts()|",
+      "|java+constructor:///org/commonjava/aprox/model/StoreKey/StoreKey(org.commonjava.aprox.model.StoreType,java.lang.String)|"
+    ],
+    "affectedLib": "org.commonjava.shelflife:shelflife-api:0.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.aprox:aprox-core:0.3",
+    "coordinatesV2": "org.commonjava.aprox:aprox-core:0.4",
+    "caller": "|java+method:///org/commonjava/aprox/core/rest/access/DefaultGroupAccessResource/createContent(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)|",
+    "called": "|java+method:///org/commonjava/aprox/rest/AproxWorkflowException/getMessage()|",
+    "v1Body": [
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/aprox/core/rest/util/retrieve/GroupHandlerChain/store(org.commonjava.aprox.core.model.Group,java.util.List,java.lang.String,java.io.InputStream)|",
+      "|java+method:///javax/ws/rs/core/Response/created(java.net.URI)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getInputStream()|",
+      "|java+method:///java/io/IOException/getMessage()|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///javax/ws/rs/core/Response/serverError()|",
+      "|java+method:///javax/ws/rs/core/UriBuilder/build(java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/aprox/core/data/ProxyDataException/getMessage()|",
+      "|java+method:///javax/ws/rs/core/UriInfo/getAbsolutePathBuilder()|",
+      "|java+method:///org/commonjava/aprox/core/rest/RESTWorkflowException/getResponse()|",
+      "|java+method:///org/commonjava/aprox/core/model/DeployPoint/getName()|",
+      "|java+method:///org/commonjava/aprox/core/data/StoreDataManager/getGroup(java.lang.String)|",
+      "|java+method:///javax/ws/rs/core/UriBuilder/path(java.lang.String)|",
+      "|java+method:///org/commonjava/aprox/core/rest/RESTWorkflowException/getMessage()|",
+      "|java+method:///org/commonjava/aprox/core/data/StoreDataManager/getOrderedConcreteStoresInGroup(java.lang.String)|",
+      "|java+method:///javax/ws/rs/core/Response/status(javax.ws.rs.core.Response$Status)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/aprox/io/StorageItem/getStoreKey()|",
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/Response/created(java.net.URI)|",
+      "|java+method:///java/io/IOException/getMessage()|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///javax/ws/rs/core/Response/serverError()|",
+      "|java+method:///javax/ws/rs/core/UriBuilder/build(java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/aprox/model/DeployPoint/getName()|",
+      "|java+method:///javax/ws/rs/core/UriInfo/getAbsolutePathBuilder()|",
+      "|java+method:///org/commonjava/aprox/rest/AproxWorkflowException/getMessage()|",
+      "|java+method:///org/commonjava/aprox/data/ProxyDataException/getMessage()|",
+      "|java+method:///javax/ws/rs/core/UriBuilder/path(java.lang.String)|",
+      "|java+method:///org/commonjava/aprox/rest/util/GroupContentManager/store(java.lang.String,java.lang.String,java.io.InputStream)|",
+      "|java+method:///javax/ws/rs/core/Response/status(javax.ws.rs.core.Response$Status)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getInputStream()|",
+      "|java+method:///org/commonjava/aprox/rest/AproxWorkflowException/getResponse()|",
+      "|java+method:///org/commonjava/aprox/model/StoreKey/getName()|",
+      "|java+method:///org/commonjava/aprox/data/StoreDataManager/getDeployPoint(java.lang.String)|"
+    ],
+    "affectedLib": "org.commonjava.aprox:aprox-api:0.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.aprox:aprox-core:0.3",
+    "coordinatesV2": "org.commonjava.aprox:aprox-core:0.4",
+    "caller": "|java+method:///org/commonjava/aprox/core/rest/admin/DefaultDeployPointAdminResource/get(java.lang.String)|",
+    "called": "|java+method:///org/commonjava/aprox/data/ProxyDataException/getMessage()|",
+    "v1Body": [
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/Response/status(javax.ws.rs.core.Response$Status)|",
+      "|java+method:///org/commonjava/util/logging/Logger/info(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/Response/ok()|",
+      "|java+constructor:///javax/ws/rs/WebApplicationException/WebApplicationException(javax.ws.rs.core.Response$Status)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///org/commonjava/aprox/core/data/ProxyDataException/getMessage()|",
+      "|java+method:///org/commonjava/aprox/core/model/io/AProxModelSerializer/toString(org.commonjava.aprox.core.model.DeployPoint)|",
+      "|java+method:///org/commonjava/aprox/core/data/StoreDataManager/getDeployPoint(java.lang.String)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/entity(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/Response/status(javax.ws.rs.core.Response$Status)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/entity(java.lang.Object)|",
+      "|java+method:///org/commonjava/util/logging/Logger/info(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/Response/ok()|",
+      "|java+method:///org/commonjava/aprox/data/StoreDataManager/getDeployPoint(java.lang.String)|",
+      "|java+constructor:///javax/ws/rs/WebApplicationException/WebApplicationException(javax.ws.rs.core.Response$Status)|",
+      "|java+method:///org/commonjava/aprox/data/ProxyDataException/getMessage()|",
+      "|java+method:///org/commonjava/aprox/core/model/io/AProxModelSerializer/toString(org.commonjava.aprox.model.DeployPoint)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|"
+    ],
+    "affectedLib": "org.commonjava.aprox:aprox-api:0.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.aprox:aprox-core:0.3",
+    "coordinatesV2": "org.commonjava.aprox:aprox-core:0.4",
+    "caller": "|java+method:///org/commonjava/aprox/core/rest/access/DefaultRepositoryAccessResource/getArtifactStore(java.lang.String)|",
+    "called": "|java+constructor:///org/commonjava/aprox/rest/AproxWorkflowException/AproxWorkflowException(javax.ws.rs.core.Response,java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+constructor:///org/commonjava/aprox/core/rest/RESTWorkflowException/RESTWorkflowException(javax.ws.rs.core.Response,java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/aprox/core/rest/access/DefaultRepositoryAccessResource/getArtifactStore(java.lang.String)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///javax/ws/rs/core/Response/serverError()|",
+      "|java+method:///org/commonjava/aprox/core/data/ProxyDataException/getMessage()|",
+      "|java+method:///org/commonjava/aprox/core/data/StoreDataManager/getRepository(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/aprox/core/rest/access/DefaultRepositoryAccessResource/getArtifactStore(java.lang.String)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///javax/ws/rs/core/Response/serverError()|",
+      "|java+method:///org/commonjava/aprox/data/StoreDataManager/getRepository(java.lang.String)|",
+      "|java+constructor:///org/commonjava/aprox/rest/AproxWorkflowException/AproxWorkflowException(javax.ws.rs.core.Response,java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/aprox/data/ProxyDataException/getMessage()|"
+    ],
+    "affectedLib": "org.commonjava.aprox:aprox-api:0.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.aprox:aprox-core:0.3",
+    "coordinatesV2": "org.commonjava.aprox:aprox-core:0.4",
+    "caller": "|java+method:///org/commonjava/aprox/core/rest/access/AbstractSimpleAccessResource/getContent(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/commonjava/aprox/rest/AproxWorkflowException/getMessage()|",
+    "v1Body": [
+      "|java+method:///org/commonjava/aprox/core/io/StorageItem/isDirectory()|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+constructor:///javax/activation/MimetypesFileTypeMap/MimetypesFileTypeMap()|",
+      "|java+method:///org/commonjava/aprox/core/rest/access/AbstractSimpleAccessResource/getArtifactStore(java.lang.String)|",
+      "|java+method:///org/commonjava/aprox/core/rest/RESTWorkflowException/getResponse()|",
+      "|java+method:///org/commonjava/aprox/core/io/StorageItem/getStream()|",
+      "|java+method:///org/commonjava/aprox/core/rest/util/FileManager/retrieve(org.commonjava.aprox.core.model.ArtifactStore,java.lang.String)|",
+      "|java+method:///javax/activation/MimetypesFileTypeMap/getContentType(java.lang.String)|",
+      "|java+method:///javax/ws/rs/core/Response/ok(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/commonjava/aprox/core/io/StorageItem/getPath()|",
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/aprox/core/rest/RESTWorkflowException/getMessage()|",
+      "|java+method:///javax/ws/rs/core/Response/status(javax.ws.rs.core.Response$Status)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/Response/status(javax.ws.rs.core.Response$Status)|",
+      "|java+method:///org/commonjava/aprox/io/StorageItem/openInputStream()|",
+      "|java+method:///java/io/IOException/getMessage()|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+constructor:///javax/activation/MimetypesFileTypeMap/MimetypesFileTypeMap()|",
+      "|java+method:///org/commonjava/aprox/core/rest/access/AbstractSimpleAccessResource/getArtifactStore(java.lang.String)|",
+      "|java+method:///org/commonjava/aprox/rest/AproxWorkflowException/getMessage()|",
+      "|java+method:///org/commonjava/aprox/filer/FileManager/retrieve(org.commonjava.aprox.model.ArtifactStore,java.lang.String)|",
+      "|java+method:///javax/activation/MimetypesFileTypeMap/getContentType(java.lang.String)|",
+      "|java+method:///javax/ws/rs/core/Response/ok(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/commonjava/aprox/rest/AproxWorkflowException/getResponse()|",
+      "|java+method:///org/commonjava/aprox/io/StorageItem/getPath()|",
+      "|java+method:///javax/ws/rs/core/Response/serverError()|",
+      "|java+method:///org/commonjava/aprox/io/StorageItem/isDirectory()|"
+    ],
+    "affectedLib": "org.commonjava.aprox:aprox-api:0.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.aprox:aprox-core:0.3",
+    "coordinatesV2": "org.commonjava.aprox:aprox-core:0.4",
+    "caller": "|java+method:///org/commonjava/aprox/core/webctl/InstallerListener/contextInitialized(javax.servlet.ServletContextEvent)|",
+    "called": "|java+constructor:///org/commonjava/aprox/model/Repository/Repository(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/commonjava/util/logging/Logger/info(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/aprox/core/data/StoreDataManager/storeGroup(org.commonjava.aprox.core.model.Group,boolean)|",
+      "|java+constructor:///org/commonjava/aprox/core/model/Repository/Repository(java.lang.String,java.lang.String)|",
+      "|java+method:///org/commonjava/aprox/core/stats/AProxVersioning/getVersion()|",
+      "|java+constructor:///org/commonjava/aprox/core/model/Group/Group(java.lang.String,org.commonjava.aprox.core.model.StoreKey%5B%5D)|",
+      "|java+method:///org/commonjava/aprox/core/stats/AProxVersioning/getBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/commonjava/aprox/core/model/StoreKey/StoreKey(org.commonjava.aprox.core.model.StoreType,java.lang.String)|",
+      "|java+method:///org/commonjava/aprox/core/stats/AProxVersioning/getCommitId()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/commonjava/aprox/core/data/StoreDataManager/storeRepository(org.commonjava.aprox.core.model.Repository,boolean)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/commonjava/aprox/core/data/ProxyDataException/getMessage()|",
+      "|java+method:///org/commonjava/aprox/core/stats/AProxVersioning/getTimestamp()|",
+      "|java+method:///org/commonjava/aprox/core/data/StoreDataManager/install()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/aprox/stats/AProxVersioning/getVersion()|",
+      "|java+method:///org/commonjava/aprox/stats/AProxVersioning/getBuilder()|",
+      "|java+method:///org/commonjava/util/logging/Logger/info(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/commonjava/aprox/model/StoreKey/StoreKey(org.commonjava.aprox.model.StoreType,java.lang.String)|",
+      "|java+method:///org/commonjava/aprox/data/StoreDataManager/install()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/commonjava/aprox/model/Repository/Repository(java.lang.String,java.lang.String)|",
+      "|java+method:///org/commonjava/aprox/data/ProxyDataException/getMessage()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///org/commonjava/aprox/model/Group/Group(java.lang.String,org.commonjava.aprox.model.StoreKey%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/commonjava/aprox/data/StoreDataManager/storeRepository(org.commonjava.aprox.model.Repository,boolean)|",
+      "|java+method:///org/commonjava/aprox/stats/AProxVersioning/getTimestamp()|",
+      "|java+method:///org/commonjava/aprox/stats/AProxVersioning/getCommitId()|",
+      "|java+method:///org/commonjava/aprox/data/StoreDataManager/storeGroup(org.commonjava.aprox.model.Group,boolean)|"
+    ],
+    "affectedLib": "org.commonjava.aprox:aprox-api:0.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.aprox:aprox-core:0.3",
+    "coordinatesV2": "org.commonjava.aprox:aprox-core:0.4",
+    "caller": "|java+method:///org/commonjava/aprox/core/rest/admin/DefaultDeployPointAdminResource/store(java.lang.String)|",
+    "called": "|java+method:///org/commonjava/aprox/data/ProxyDataException/getMessage()|",
+    "v1Body": [
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/Response/created(java.net.URI)|",
+      "|java+method:///org/commonjava/aprox/core/model/io/AProxModelSerializer/deployPointFromRequestBody(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///org/commonjava/aprox/core/data/StoreDataManager/getDeployPoint(java.lang.String)|",
+      "|java+method:///org/commonjava/aprox/core/model/DeployPoint/isAllowSnapshots()|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///org/commonjava/aprox/core/model/DeployPoint/setAllowReleases(boolean)|",
+      "|java+method:///javax/ws/rs/core/UriBuilder/build(java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/aprox/core/model/DeployPoint/getSnapshotTimeoutSeconds()|",
+      "|java+method:///org/commonjava/aprox/core/data/ProxyDataException/getMessage()|",
+      "|java+method:///javax/ws/rs/core/UriInfo/getAbsolutePathBuilder()|",
+      "|java+method:///org/commonjava/aprox/core/data/StoreDataManager/storeDeployPoint(org.commonjava.aprox.core.model.DeployPoint)|",
+      "|java+method:///org/commonjava/aprox/core/model/DeployPoint/setSnapshotTimeoutSeconds(int)|",
+      "|java+method:///org/commonjava/aprox/core/model/DeployPoint/setAllowSnapshots(boolean)|",
+      "|java+method:///org/commonjava/aprox/core/model/DeployPoint/isAllowReleases()|",
+      "|java+method:///javax/ws/rs/core/Response/status(javax.ws.rs.core.Response$Status)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/Response/created(java.net.URI)|",
+      "|java+method:///org/commonjava/aprox/core/model/io/AProxModelSerializer/deployPointFromRequestBody(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///javax/ws/rs/core/Response/status(javax.ws.rs.core.Response$Status)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///javax/ws/rs/core/UriBuilder/build(java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/UriInfo/getAbsolutePathBuilder()|",
+      "|java+method:///org/commonjava/aprox/data/ProxyDataException/getMessage()|",
+      "|java+method:///org/commonjava/aprox/data/StoreDataManager/storeDeployPoint(org.commonjava.aprox.model.DeployPoint,boolean)|"
+    ],
+    "affectedLib": "org.commonjava.aprox:aprox-api:0.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.aprox:aprox-core:0.3",
+    "coordinatesV2": "org.commonjava.aprox:aprox-core:0.4",
+    "caller": "|java+method:///org/commonjava/aprox/core/rest/admin/DefaultDeployPointAdminResource/create()|",
+    "called": "|java+method:///org/commonjava/aprox/data/ProxyDataException/getMessage()|",
+    "v1Body": [
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/Response/created(java.net.URI)|",
+      "|java+method:///org/commonjava/aprox/core/model/io/AProxModelSerializer/deployPointFromRequestBody(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///javax/ws/rs/core/Response/status(javax.ws.rs.core.Response$Status)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/entity(java.lang.Object)|",
+      "|java+method:///org/commonjava/util/logging/Logger/info(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///javax/ws/rs/core/UriBuilder/build(java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/aprox/core/data/ProxyDataException/getMessage()|",
+      "|java+method:///javax/ws/rs/core/UriInfo/getAbsolutePathBuilder()|",
+      "|java+method:///org/commonjava/aprox/core/model/DeployPoint/getName()|",
+      "|java+method:///org/commonjava/aprox/core/data/StoreDataManager/storeDeployPoint(org.commonjava.aprox.core.model.DeployPoint,boolean)|",
+      "|java+method:///javax/ws/rs/core/UriBuilder/path(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/Response/created(java.net.URI)|",
+      "|java+method:///org/commonjava/aprox/core/model/io/AProxModelSerializer/deployPointFromRequestBody(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///javax/ws/rs/core/Response/status(javax.ws.rs.core.Response$Status)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/entity(java.lang.Object)|",
+      "|java+method:///org/commonjava/util/logging/Logger/info(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/UriBuilder/build(java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/aprox/model/DeployPoint/getName()|",
+      "|java+method:///javax/ws/rs/core/UriInfo/getAbsolutePathBuilder()|",
+      "|java+method:///org/commonjava/aprox/data/ProxyDataException/getMessage()|",
+      "|java+method:///javax/ws/rs/core/UriBuilder/path(java.lang.String)|",
+      "|java+method:///org/commonjava/aprox/data/StoreDataManager/storeDeployPoint(org.commonjava.aprox.model.DeployPoint,boolean)|",
+      "|java+method:///org/commonjava/aprox/core/model/io/AProxModelSerializer/toString(org.commonjava.aprox.model.DeployPoint)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|"
+    ],
+    "affectedLib": "org.commonjava.aprox:aprox-api:0.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.aprox:aprox-core:0.3",
+    "coordinatesV2": "org.commonjava.aprox:aprox-core:0.4",
+    "caller": "|java+method:///org/commonjava/aprox/core/rest/access/DefaultDeployPointAccessResource/getArtifactStore(java.lang.String)|",
+    "called": "|java+constructor:///org/commonjava/aprox/rest/AproxWorkflowException/AproxWorkflowException(javax.ws.rs.core.Response,java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+constructor:///org/commonjava/aprox/core/rest/RESTWorkflowException/RESTWorkflowException(javax.ws.rs.core.Response,java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/aprox/core/data/StoreDataManager/getDeployPoint(java.lang.String)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///javax/ws/rs/core/Response/serverError()|",
+      "|java+method:///org/commonjava/aprox/core/data/ProxyDataException/getMessage()|",
+      "|java+method:///org/commonjava/aprox/core/rest/access/DefaultDeployPointAccessResource/getArtifactStore(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/aprox/data/StoreDataManager/getDeployPoint(java.lang.String)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///javax/ws/rs/core/Response/serverError()|",
+      "|java+constructor:///org/commonjava/aprox/rest/AproxWorkflowException/AproxWorkflowException(javax.ws.rs.core.Response,java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/aprox/data/ProxyDataException/getMessage()|",
+      "|java+method:///org/commonjava/aprox/core/rest/access/DefaultDeployPointAccessResource/getArtifactStore(java.lang.String)|"
+    ],
+    "affectedLib": "org.commonjava.aprox:aprox-api:0.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.aprox:aprox-core:0.3",
+    "coordinatesV2": "org.commonjava.aprox:aprox-core:0.4",
+    "caller": "|java+method:///org/commonjava/aprox/core/rest/admin/DefaultDeployPointAdminResource/getAll()|",
+    "called": "|java+method:///org/commonjava/aprox/data/ProxyDataException/getMessage()|",
+    "v1Body": [
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/commonjava/web/json/model/Listing/Listing(java.util.Collection)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/entity(java.lang.Object)|",
+      "|java+method:///org/commonjava/util/logging/Logger/info(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///org/commonjava/aprox/core/data/ProxyDataException/getMessage()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/join(java.util.Collection,java.lang.String)|",
+      "|java+method:///org/commonjava/aprox/core/model/io/AProxModelSerializer/deployPointListingToString(org.commonjava.web.json.model.Listing)|",
+      "|java+method:///javax/ws/rs/core/Response/ok()|",
+      "|java+constructor:///javax/ws/rs/WebApplicationException/WebApplicationException(javax.ws.rs.core.Response$Status)|",
+      "|java+method:///org/commonjava/aprox/core/data/StoreDataManager/getAllDeployPoints()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/commonjava/web/json/model/Listing/Listing(java.util.Collection)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/entity(java.lang.Object)|",
+      "|java+method:///org/commonjava/util/logging/Logger/info(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///javax/ws/rs/WebApplicationException/WebApplicationException(javax.ws.rs.core.Response$Status)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///org/commonjava/aprox/data/StoreDataManager/getAllDeployPoints()|",
+      "|java+method:///org/commonjava/aprox/data/ProxyDataException/getMessage()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/join(java.util.Collection,java.lang.String)|",
+      "|java+method:///org/commonjava/aprox/core/model/io/AProxModelSerializer/deployPointListingToString(org.commonjava.web.json.model.Listing)|",
+      "|java+method:///javax/ws/rs/core/Response/ok()|"
+    ],
+    "affectedLib": "org.commonjava.aprox:aprox-api:0.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.aprox:aprox-core:0.3",
+    "coordinatesV2": "org.commonjava.aprox:aprox-core:0.4",
+    "caller": "|java+method:///org/commonjava/aprox/core/rest/admin/DefaultRepositoryAdminResource/store(java.lang.String)|",
+    "called": "|java+method:///org/commonjava/aprox/data/ProxyDataException/getMessage()|",
+    "v1Body": [
+      "|java+method:///org/commonjava/aprox/core/model/Repository/getServerCertPem()|",
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/aprox/core/model/Repository/getPassword()|",
+      "|java+method:///org/commonjava/aprox/core/model/Repository/setTimeoutSeconds(int)|",
+      "|java+method:///org/commonjava/aprox/core/model/Repository/setUrl(java.lang.String)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///javax/ws/rs/core/UriBuilder/build(java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///javax/ws/rs/core/UriInfo/getAbsolutePathBuilder()|",
+      "|java+method:///org/commonjava/aprox/core/model/Repository/setProxyUser(java.lang.String)|",
+      "|java+method:///org/commonjava/aprox/core/model/Repository/isPassthrough()|",
+      "|java+method:///org/commonjava/aprox/core/model/Repository/getKeyCertPem()|",
+      "|java+method:///javax/ws/rs/core/Response/created(java.net.URI)|",
+      "|java+method:///org/commonjava/aprox/core/model/Repository/setKeyCertPem(java.lang.String)|",
+      "|java+method:///org/commonjava/aprox/core/model/Repository/getTimeoutSeconds()|",
+      "|java+method:///javax/ws/rs/core/Response/status(javax.ws.rs.core.Response$Status)|",
+      "|java+method:///org/commonjava/aprox/core/model/Repository/getProxyHost()|",
+      "|java+method:///org/commonjava/aprox/core/model/Repository/setProxyPort(int)|",
+      "|java+method:///org/commonjava/aprox/core/model/Repository/setPassthrough(boolean)|",
+      "|java+method:///org/commonjava/util/logging/Logger/info(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/aprox/core/model/Repository/setProxyPassword(java.lang.String)|",
+      "|java+method:///org/commonjava/aprox/core/model/Repository/getProxyUser()|",
+      "|java+method:///org/commonjava/aprox/core/data/StoreDataManager/storeRepository(org.commonjava.aprox.core.model.Repository,boolean)|",
+      "|java+method:///org/commonjava/aprox/core/model/Repository/setPassword(java.lang.String)|",
+      "|java+method:///org/commonjava/aprox/core/model/Repository/getKeyPassword()|",
+      "|java+method:///org/commonjava/aprox/core/model/io/AProxModelSerializer/repositoryFromRequestBody(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///org/commonjava/aprox/core/model/Repository/getCacheTimeoutSeconds()|",
+      "|java+method:///org/commonjava/aprox/core/model/Repository/setServerCertPem(java.lang.String)|",
+      "|java+method:///org/commonjava/aprox/core/model/Repository/getName()|",
+      "|java+method:///org/commonjava/aprox/core/model/Repository/getUser()|",
+      "|java+method:///org/commonjava/aprox/core/model/Repository/setProxyHost(java.lang.String)|",
+      "|java+method:///org/commonjava/aprox/core/data/ProxyDataException/getMessage()|",
+      "|java+method:///org/commonjava/aprox/core/model/Repository/setCacheTimeoutSeconds(int)|",
+      "|java+method:///org/commonjava/aprox/core/model/Repository/getProxyPassword()|",
+      "|java+method:///org/commonjava/aprox/core/model/Repository/setKeyPassword(java.lang.String)|",
+      "|java+method:///org/commonjava/aprox/core/data/StoreDataManager/getRepository(java.lang.String)|",
+      "|java+method:///org/commonjava/aprox/core/model/Repository/setUser(java.lang.String)|",
+      "|java+method:///org/commonjava/aprox/core/model/Repository/getProxyPort()|",
+      "|java+method:///org/commonjava/aprox/core/model/Repository/getUrl()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/Response/created(java.net.URI)|",
+      "|java+method:///javax/ws/rs/core/Response/status(javax.ws.rs.core.Response$Status)|",
+      "|java+method:///org/commonjava/util/logging/Logger/info(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/aprox/core/model/io/AProxModelSerializer/repositoryFromRequestBody(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///javax/ws/rs/core/UriBuilder/build(java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///javax/ws/rs/core/UriInfo/getAbsolutePathBuilder()|",
+      "|java+method:///org/commonjava/aprox/model/Repository/getName()|",
+      "|java+method:///org/commonjava/aprox/data/ProxyDataException/getMessage()|",
+      "|java+method:///org/commonjava/aprox/data/StoreDataManager/storeRepository(org.commonjava.aprox.model.Repository,boolean)|"
+    ],
+    "affectedLib": "org.commonjava.aprox:aprox-api:0.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.aprox:aprox-core:0.3",
+    "coordinatesV2": "org.commonjava.aprox:aprox-core:0.4",
+    "caller": "|java+method:///org/commonjava/aprox/core/rest/admin/DefaultGroupAdminResource/store(java.lang.String)|",
+    "called": "|java+method:///org/commonjava/aprox/data/ProxyDataException/getMessage()|",
+    "v1Body": [
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/Response/status(javax.ws.rs.core.Response$Status)|",
+      "|java+method:///org/commonjava/aprox/core/data/StoreDataManager/storeGroup(org.commonjava.aprox.core.model.Group)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///javax/ws/rs/core/UriBuilder/build(java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/aprox/core/data/ProxyDataException/getMessage()|",
+      "|java+method:///org/commonjava/aprox/core/model/Group/getConstituents()|",
+      "|java+method:///javax/ws/rs/core/UriInfo/getAbsolutePathBuilder()|",
+      "|java+method:///org/commonjava/aprox/core/model/io/AProxModelSerializer/groupFromRequestBody(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///org/commonjava/aprox/core/data/StoreDataManager/getGroup(java.lang.String)|",
+      "|java+method:///javax/ws/rs/core/Response/created(java.net.URI)|",
+      "|java+method:///org/commonjava/aprox/core/model/Group/setConstituents(java.util.List)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/Response/created(java.net.URI)|",
+      "|java+method:///javax/ws/rs/core/Response/status(javax.ws.rs.core.Response$Status)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///javax/ws/rs/core/UriBuilder/build(java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/UriInfo/getAbsolutePathBuilder()|",
+      "|java+method:///org/commonjava/aprox/data/StoreDataManager/storeGroup(org.commonjava.aprox.model.Group,boolean)|",
+      "|java+method:///org/commonjava/aprox/data/ProxyDataException/getMessage()|",
+      "|java+method:///org/commonjava/aprox/core/model/io/AProxModelSerializer/groupFromRequestBody(javax.servlet.http.HttpServletRequest)|"
+    ],
+    "affectedLib": "org.commonjava.aprox:aprox-api:0.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.aprox:aprox-core:0.3",
+    "coordinatesV2": "org.commonjava.aprox:aprox-core:0.4",
+    "caller": "|java+method:///org/commonjava/aprox/core/rest/admin/DefaultRepositoryAdminResource/delete(java.lang.String)|",
+    "called": "|java+method:///org/commonjava/aprox/data/ProxyDataException/getMessage()|",
+    "v1Body": [
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/Response/status(javax.ws.rs.core.Response$Status)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///org/commonjava/aprox/core/data/ProxyDataException/getMessage()|",
+      "|java+method:///org/commonjava/aprox/core/data/StoreDataManager/deleteRepository(java.lang.String)|",
+      "|java+method:///javax/ws/rs/core/Response/ok()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/Response/status(javax.ws.rs.core.Response$Status)|",
+      "|java+method:///javax/ws/rs/core/Response/ok()|",
+      "|java+method:///org/commonjava/aprox/data/ProxyDataException/getMessage()|",
+      "|java+method:///org/commonjava/aprox/data/StoreDataManager/deleteRepository(java.lang.String)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|"
+    ],
+    "affectedLib": "org.commonjava.aprox:aprox-api:0.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.aprox:aprox-core:0.3",
+    "coordinatesV2": "org.commonjava.aprox:aprox-core:0.4",
+    "caller": "|java+method:///org/commonjava/aprox/core/rest/admin/DefaultGroupAdminResource/delete(java.lang.String)|",
+    "called": "|java+method:///org/commonjava/aprox/data/ProxyDataException/getMessage()|",
+    "v1Body": [
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/Response/status(javax.ws.rs.core.Response$Status)|",
+      "|java+method:///javax/ws/rs/core/Response/ok()|",
+      "|java+method:///org/commonjava/aprox/core/data/StoreDataManager/deleteGroup(java.lang.String)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///org/commonjava/aprox/core/data/ProxyDataException/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/Response/status(javax.ws.rs.core.Response$Status)|",
+      "|java+method:///org/commonjava/aprox/data/StoreDataManager/deleteGroup(java.lang.String)|",
+      "|java+method:///javax/ws/rs/core/Response/ok()|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///org/commonjava/aprox/data/ProxyDataException/getMessage()|"
+    ],
+    "affectedLib": "org.commonjava.aprox:aprox-api:0.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.aprox:aprox-core:0.3",
+    "coordinatesV2": "org.commonjava.aprox:aprox-core:0.4",
+    "caller": "|java+constructor:///org/commonjava/aprox/core/change/GroupConsistencyListener/GroupConsistencyListener()|",
+    "called": "|java+constructor:///org/commonjava/aprox/util/ChangeSynchronizer/ChangeSynchronizer()|",
+    "v1Body": [
+      "|java+constructor:///org/commonjava/util/logging/Logger/Logger(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///org/commonjava/couch/util/ChangeSynchronizer/ChangeSynchronizer()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/commonjava/util/logging/Logger/Logger(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///org/commonjava/aprox/util/ChangeSynchronizer/ChangeSynchronizer()|"
+    ],
+    "affectedLib": "org.commonjava.aprox:aprox-api:0.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.aprox:aprox-core:0.3",
+    "coordinatesV2": "org.commonjava.aprox:aprox-core:0.4",
+    "caller": "|java+method:///org/commonjava/aprox/core/rest/admin/DefaultGroupAdminResource/get(java.lang.String)|",
+    "called": "|java+method:///org/commonjava/aprox/data/ProxyDataException/getMessage()|",
+    "v1Body": [
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/Response/status(javax.ws.rs.core.Response$Status)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/entity(java.lang.Object)|",
+      "|java+method:///org/commonjava/util/logging/Logger/info(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/Response/ok()|",
+      "|java+method:///org/commonjava/aprox/core/model/io/AProxModelSerializer/toString(org.commonjava.aprox.core.model.Group)|",
+      "|java+constructor:///javax/ws/rs/WebApplicationException/WebApplicationException(javax.ws.rs.core.Response$Status)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///org/commonjava/aprox/core/data/ProxyDataException/getMessage()|",
+      "|java+method:///org/commonjava/aprox/core/data/StoreDataManager/getGroup(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/aprox/data/StoreDataManager/getGroup(java.lang.String)|",
+      "|java+method:///javax/ws/rs/core/Response/status(javax.ws.rs.core.Response$Status)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/entity(java.lang.Object)|",
+      "|java+method:///org/commonjava/util/logging/Logger/info(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/Response/ok()|",
+      "|java+constructor:///javax/ws/rs/WebApplicationException/WebApplicationException(javax.ws.rs.core.Response$Status)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///org/commonjava/aprox/core/model/io/AProxModelSerializer/toString(org.commonjava.aprox.model.Group)|",
+      "|java+method:///org/commonjava/aprox/data/ProxyDataException/getMessage()|"
+    ],
+    "affectedLib": "org.commonjava.aprox:aprox-api:0.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.aprox:aprox-core:0.3",
+    "coordinatesV2": "org.commonjava.aprox:aprox-core:0.4",
+    "caller": "|java+method:///org/commonjava/aprox/core/change/sl/SnapshotFilter/accept(java.io.File,java.lang.String)|",
+    "called": "|java+method:///org/commonjava/aprox/rest/util/ArtifactPathInfo/isSnapshot(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/commonjava/aprox/core/rest/util/ArtifactPathInfo/isSnapshot(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/aprox/rest/util/ArtifactPathInfo/isSnapshot(java.lang.String)|"
+    ],
+    "affectedLib": "org.commonjava.aprox:aprox-api:0.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.aprox:aprox-core:0.3",
+    "coordinatesV2": "org.commonjava.aprox:aprox-core:0.4",
+    "caller": "|java+method:///org/commonjava/aprox/core/change/GroupConsistencyListener/waitForChange(long,long)|",
+    "called": "|java+method:///org/commonjava/aprox/util/ChangeSynchronizer/waitForChange(int,long,long)|",
+    "v1Body": [
+      "|java+method:///org/commonjava/couch/util/ChangeSynchronizer/waitForChange(long,long)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/aprox/util/ChangeSynchronizer/waitForChange(int,long,long)|"
+    ],
+    "affectedLib": "org.commonjava.aprox:aprox-api:0.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.aprox:aprox-core:0.3",
+    "coordinatesV2": "org.commonjava.aprox:aprox-core:0.4",
+    "caller": "|java+method:///org/commonjava/aprox/core/rest/admin/DefaultGroupAdminResource/getAll()|",
+    "called": "|java+method:///org/commonjava/aprox/data/ProxyDataException/getMessage()|",
+    "v1Body": [
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/commonjava/web/json/model/Listing/Listing(java.util.Collection)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/entity(java.lang.Object)|",
+      "|java+method:///javax/ws/rs/core/Response/ok()|",
+      "|java+constructor:///javax/ws/rs/WebApplicationException/WebApplicationException(javax.ws.rs.core.Response$Status)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///org/commonjava/aprox/core/data/ProxyDataException/getMessage()|",
+      "|java+method:///org/commonjava/aprox/core/data/StoreDataManager/getAllGroups()|",
+      "|java+method:///org/commonjava/aprox/core/model/io/AProxModelSerializer/groupListingToString(org.commonjava.web.json.model.Listing)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/commonjava/web/json/model/Listing/Listing(java.util.Collection)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/entity(java.lang.Object)|",
+      "|java+method:///javax/ws/rs/core/Response/ok()|",
+      "|java+constructor:///javax/ws/rs/WebApplicationException/WebApplicationException(javax.ws.rs.core.Response$Status)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///org/commonjava/aprox/data/ProxyDataException/getMessage()|",
+      "|java+method:///org/commonjava/aprox/data/StoreDataManager/getAllGroups()|",
+      "|java+method:///org/commonjava/aprox/core/model/io/AProxModelSerializer/groupListingToString(org.commonjava.web.json.model.Listing)|"
+    ],
+    "affectedLib": "org.commonjava.aprox:aprox-api:0.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.aprox:aprox-core:0.3",
+    "coordinatesV2": "org.commonjava.aprox:aprox-core:0.4",
+    "caller": "|java+method:///org/commonjava/aprox/core/change/TimeoutManager/onExpirationEvent(org.commonjava.shelflife.expire.ExpirationEvent)|",
+    "called": "|java+method:///org/commonjava/aprox/rest/util/ArtifactPathInfo/isSnapshot(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/shelflife/model/Expiration/getData()|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+method:///org/commonjava/aprox/core/change/TimeoutManager/updateSnapshotVersions(org.commonjava.aprox.core.model.StoreKey,java.lang.String)|",
+      "|java+method:///java/io/File/getAbsolutePath()|",
+      "|java+method:///org/commonjava/shelflife/expire/ExpirationEvent/getType()|",
+      "|java+method:///org/commonjava/shelflife/model/Expiration/getKey()|",
+      "|java+method:///org/commonjava/aprox/core/rest/util/FileManager/formatStorageReference(org.commonjava.aprox.core.model.StoreKey,java.lang.String)|",
+      "|java+method:///org/commonjava/util/logging/Logger/info(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/aprox/core/rest/util/ArtifactPathInfo/isSnapshot(java.lang.String)|",
+      "|java+method:///org/commonjava/aprox/core/change/TimeoutManager/isAproxFileExpirationEvent(org.commonjava.shelflife.expire.ExpirationEvent)|",
+      "|java+method:///org/commonjava/aprox/core/change/TimeoutManager/getStoreKey(org.commonjava.shelflife.model.ExpirationKey)|",
+      "|java+method:///java/io/IOException/getMessage()|",
+      "|java+method:///org/commonjava/shelflife/expire/ExpirationEvent/getExpiration()|",
+      "|java+method:///org/commonjava/aprox/core/change/TimeoutManager/cleanMetadata(org.commonjava.aprox.core.model.StoreKey,java.lang.String)|",
+      "|java+method:///org/apache/commons/io/FileUtils/forceDelete(java.io.File)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/shelflife/model/Expiration/getData()|",
+      "|java+method:///org/commonjava/aprox/core/change/TimeoutManager/cleanMetadata(org.commonjava.aprox.model.StoreKey,java.lang.String)|",
+      "|java+method:///org/commonjava/aprox/io/StorageItem/exists()|",
+      "|java+method:///org/commonjava/aprox/io/StorageItem/delete()|",
+      "|java+method:///org/commonjava/aprox/io/StorageItem/getFullPath()|",
+      "|java+method:///org/commonjava/shelflife/model/Expiration/getKey()|",
+      "|java+method:///org/commonjava/aprox/core/change/TimeoutManager/isNFCEvent(org.commonjava.shelflife.expire.ExpirationEvent)|",
+      "|java+method:///org/commonjava/aprox/rest/util/ArtifactPathInfo/isSnapshot(java.lang.String)|",
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/aprox/core/change/TimeoutManager/updateSnapshotVersions(org.commonjava.aprox.model.StoreKey,java.lang.String)|",
+      "|java+method:///org/commonjava/util/logging/Logger/info(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/aprox/core/change/TimeoutManager/isAproxFileExpirationEvent(org.commonjava.shelflife.expire.ExpirationEvent)|",
+      "|java+method:///org/commonjava/aprox/core/change/TimeoutManager/getStoreKey(org.commonjava.shelflife.model.ExpirationKey)|",
+      "|java+method:///java/io/IOException/getMessage()|",
+      "|java+method:///org/commonjava/shelflife/expire/ExpirationEvent/getExpiration()|",
+      "|java+method:///org/commonjava/aprox/filer/FileManager/getStorageReference(org.commonjava.aprox.model.StoreKey,java.lang.String%5B%5D)|",
+      "|java+method:///org/commonjava/shelflife/expire/ExpirationEvent/getType()|",
+      "|java+method:///org/commonjava/aprox/data/ProxyDataException/getMessage()|",
+      "|java+method:///org/commonjava/aprox/filer/NotFoundCache/clearExactMissing(java.lang.String)|"
+    ],
+    "affectedLib": "org.commonjava.aprox:aprox-api:0.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.aprox:aprox-core:0.3",
+    "coordinatesV2": "org.commonjava.aprox:aprox-core:0.4",
+    "caller": "|java+method:///org/commonjava/aprox/core/change/TimeoutManager/getStoreKey(org.commonjava.shelflife.model.ExpirationKey)|",
+    "called": "|java+constructor:///org/commonjava/aprox/model/StoreKey/StoreKey(org.commonjava.aprox.model.StoreType,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/commonjava/aprox/core/model/StoreKey/StoreKey(org.commonjava.aprox.core.model.StoreType,java.lang.String)|",
+      "|java+method:///org/commonjava/shelflife/model/ExpirationKey/getParts()|",
+      "|java+method:///org/commonjava/aprox/core/model/StoreType/valueOf(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/aprox/model/StoreType/valueOf(java.lang.String)|",
+      "|java+method:///org/commonjava/shelflife/model/ExpirationKey/getParts()|",
+      "|java+constructor:///org/commonjava/aprox/model/StoreKey/StoreKey(org.commonjava.aprox.model.StoreType,java.lang.String)|"
+    ],
+    "affectedLib": "org.commonjava.aprox:aprox-api:0.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.aprox:aprox-core:0.3",
+    "coordinatesV2": "org.commonjava.aprox:aprox-core:0.4",
+    "caller": "|java+method:///org/commonjava/aprox/core/rest/admin/DefaultRepositoryAdminResource/get(java.lang.String)|",
+    "called": "|java+method:///org/commonjava/aprox/data/ProxyDataException/getMessage()|",
+    "v1Body": [
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/Response/status(javax.ws.rs.core.Response$Status)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/entity(java.lang.Object)|",
+      "|java+method:///org/commonjava/util/logging/Logger/info(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/Response/ok()|",
+      "|java+constructor:///javax/ws/rs/WebApplicationException/WebApplicationException(javax.ws.rs.core.Response$Status)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///org/commonjava/aprox/core/data/StoreDataManager/getRepository(java.lang.String)|",
+      "|java+method:///org/commonjava/aprox/core/model/io/AProxModelSerializer/toString(org.commonjava.aprox.core.model.Repository)|",
+      "|java+method:///org/commonjava/aprox/core/data/ProxyDataException/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/entity(java.lang.Object)|",
+      "|java+method:///org/commonjava/util/logging/Logger/info(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/Response/ok()|",
+      "|java+constructor:///javax/ws/rs/WebApplicationException/WebApplicationException(javax.ws.rs.core.Response$Status)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///org/commonjava/aprox/data/StoreDataManager/getRepository(java.lang.String)|",
+      "|java+method:///org/commonjava/aprox/data/ProxyDataException/getMessage()|",
+      "|java+method:///org/commonjava/aprox/core/model/io/AProxModelSerializer/toString(org.commonjava.aprox.model.Repository)|",
+      "|java+method:///javax/ws/rs/core/Response/status(javax.ws.rs.core.Response$Status)|"
+    ],
+    "affectedLib": "org.commonjava.aprox:aprox-api:0.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.aprox:aprox-core:0.3",
+    "coordinatesV2": "org.commonjava.aprox:aprox-core:0.4",
+    "caller": "|java+method:///org/commonjava/aprox/core/rest/access/DefaultGroupAccessResource/getProxyContent(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/commonjava/aprox/rest/AproxWorkflowException/getMessage()|",
+    "v1Body": [
+      "|java+method:///org/commonjava/aprox/core/io/StorageItem/isDirectory()|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///javax/ws/rs/core/Response/serverError()|",
+      "|java+constructor:///javax/activation/MimetypesFileTypeMap/MimetypesFileTypeMap()|",
+      "|java+method:///org/commonjava/aprox/core/data/ProxyDataException/getMessage()|",
+      "|java+method:///org/commonjava/aprox/core/rest/RESTWorkflowException/getResponse()|",
+      "|java+method:///org/commonjava/aprox/core/rest/util/retrieve/GroupHandlerChain/retrieve(org.commonjava.aprox.core.model.Group,java.util.List,java.lang.String)|",
+      "|java+method:///javax/activation/MimetypesFileTypeMap/getContentType(java.lang.String)|",
+      "|java+method:///javax/ws/rs/core/Response/ok(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/commonjava/aprox/core/io/StorageItem/getPath()|",
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/aprox/core/rest/RESTWorkflowException/getMessage()|",
+      "|java+method:///org/commonjava/aprox/core/data/StoreDataManager/getOrderedConcreteStoresInGroup(java.lang.String)|",
+      "|java+method:///javax/ws/rs/core/Response/status(javax.ws.rs.core.Response$Status)|",
+      "|java+method:///org/commonjava/aprox/core/io/StorageItem/getStream()|",
+      "|java+method:///org/commonjava/aprox/core/data/StoreDataManager/getGroup(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/Response/status(javax.ws.rs.core.Response$Status)|",
+      "|java+method:///org/commonjava/aprox/io/StorageItem/openInputStream()|",
+      "|java+method:///java/io/IOException/getMessage()|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///javax/ws/rs/core/Response/serverError()|",
+      "|java+constructor:///javax/activation/MimetypesFileTypeMap/MimetypesFileTypeMap()|",
+      "|java+method:///org/commonjava/aprox/rest/AproxWorkflowException/getMessage()|",
+      "|java+method:///org/commonjava/aprox/rest/util/GroupContentManager/retrieve(java.lang.String,java.lang.String)|",
+      "|java+method:///javax/activation/MimetypesFileTypeMap/getContentType(java.lang.String)|",
+      "|java+method:///javax/ws/rs/core/Response/ok(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/commonjava/aprox/rest/AproxWorkflowException/getResponse()|",
+      "|java+method:///org/commonjava/aprox/io/StorageItem/getPath()|"
+    ],
+    "affectedLib": "org.commonjava.aprox:aprox-api:0.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.aprox:aprox-core:0.3",
+    "coordinatesV2": "org.commonjava.aprox:aprox-core:0.4",
+    "caller": "|java+method:///org/commonjava/aprox/core/rest/admin/DefaultDeployPointAdminResource/delete(java.lang.String)|",
+    "called": "|java+method:///org/commonjava/aprox/data/ProxyDataException/getMessage()|",
+    "v1Body": [
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/Response/status(javax.ws.rs.core.Response$Status)|",
+      "|java+method:///javax/ws/rs/core/Response/ok()|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///org/commonjava/aprox/core/data/ProxyDataException/getMessage()|",
+      "|java+method:///org/commonjava/aprox/core/data/StoreDataManager/deleteDeployPoint(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/Response/status(javax.ws.rs.core.Response$Status)|",
+      "|java+method:///javax/ws/rs/core/Response/ok()|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///org/commonjava/aprox/data/StoreDataManager/deleteDeployPoint(java.lang.String)|",
+      "|java+method:///org/commonjava/aprox/data/ProxyDataException/getMessage()|"
+    ],
+    "affectedLib": "org.commonjava.aprox:aprox-api:0.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.aprox:aprox-core:0.3",
+    "coordinatesV2": "org.commonjava.aprox:aprox-core:0.4",
+    "caller": "|java+method:///org/commonjava/aprox/core/rest/admin/DefaultRepositoryAdminResource/getAll()|",
+    "called": "|java+method:///org/commonjava/aprox/data/ProxyDataException/getMessage()|",
+    "v1Body": [
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/commonjava/web/json/model/Listing/Listing(java.util.Collection)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/entity(java.lang.Object)|",
+      "|java+method:///org/commonjava/util/logging/Logger/info(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/Response/ok()|",
+      "|java+method:///org/commonjava/aprox/core/data/StoreDataManager/getAllRepositories()|",
+      "|java+constructor:///javax/ws/rs/WebApplicationException/WebApplicationException(javax.ws.rs.core.Response$Status)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///org/commonjava/aprox/core/data/ProxyDataException/getMessage()|",
+      "|java+method:///org/commonjava/aprox/core/model/io/AProxModelSerializer/repoListingToString(org.commonjava.web.json.model.Listing)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/join(java.util.Collection,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/commonjava/web/json/model/Listing/Listing(java.util.Collection)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/entity(java.lang.Object)|",
+      "|java+method:///org/commonjava/util/logging/Logger/info(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/Response/ok()|",
+      "|java+constructor:///javax/ws/rs/WebApplicationException/WebApplicationException(javax.ws.rs.core.Response$Status)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///org/commonjava/aprox/data/StoreDataManager/getAllRepositories()|",
+      "|java+method:///org/commonjava/aprox/core/model/io/AProxModelSerializer/repoListingToString(org.commonjava.web.json.model.Listing)|",
+      "|java+method:///org/commonjava/aprox/data/ProxyDataException/getMessage()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/join(java.util.Collection,java.lang.String)|"
+    ],
+    "affectedLib": "org.commonjava.aprox:aprox-api:0.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.aprox:aprox-core:0.3",
+    "coordinatesV2": "org.commonjava.aprox:aprox-core:0.4",
+    "caller": "|java+method:///org/commonjava/aprox/core/rest/admin/DefaultRepositoryAdminResource/create()|",
+    "called": "|java+method:///org/commonjava/aprox/data/ProxyDataException/getMessage()|",
+    "v1Body": [
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/Response/created(java.net.URI)|",
+      "|java+method:///javax/ws/rs/core/Response/status(javax.ws.rs.core.Response$Status)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/entity(java.lang.Object)|",
+      "|java+method:///org/commonjava/util/logging/Logger/info(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/aprox/core/data/StoreDataManager/storeRepository(org.commonjava.aprox.core.model.Repository,boolean)|",
+      "|java+method:///org/commonjava/aprox/core/model/io/AProxModelSerializer/repositoryFromRequestBody(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///javax/ws/rs/core/UriBuilder/build(java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/aprox/core/model/Repository/getName()|",
+      "|java+method:///org/commonjava/aprox/core/data/ProxyDataException/getMessage()|",
+      "|java+method:///javax/ws/rs/core/UriInfo/getAbsolutePathBuilder()|",
+      "|java+method:///javax/ws/rs/core/UriBuilder/path(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/Response/created(java.net.URI)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/entity(java.lang.Object)|",
+      "|java+method:///org/commonjava/util/logging/Logger/info(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/aprox/core/model/io/AProxModelSerializer/repositoryFromRequestBody(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///javax/ws/rs/core/UriBuilder/build(java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/UriInfo/getAbsolutePathBuilder()|",
+      "|java+method:///org/commonjava/aprox/model/Repository/getName()|",
+      "|java+method:///org/commonjava/aprox/data/ProxyDataException/getMessage()|",
+      "|java+method:///javax/ws/rs/core/UriBuilder/path(java.lang.String)|",
+      "|java+method:///org/commonjava/aprox/data/StoreDataManager/storeRepository(org.commonjava.aprox.model.Repository,boolean)|",
+      "|java+method:///org/commonjava/aprox/core/model/io/AProxModelSerializer/toString(org.commonjava.aprox.model.Repository)|",
+      "|java+method:///javax/ws/rs/core/Response/status(javax.ws.rs.core.Response$Status)|"
+    ],
+    "affectedLib": "org.commonjava.aprox:aprox-api:0.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.aprox:aprox-core:0.3",
+    "coordinatesV2": "org.commonjava.aprox:aprox-core:0.4",
+    "caller": "|java+method:///org/commonjava/aprox/core/rest/access/DefaultDeployPointAccessResource/createContent(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)|",
+    "called": "|java+method:///org/commonjava/aprox/rest/AproxWorkflowException/getMessage()|",
+    "v1Body": [
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/Response/created(java.net.URI)|",
+      "|java+method:///org/commonjava/aprox/core/rest/RESTWorkflowException/getMessage()|",
+      "|java+method:///org/commonjava/aprox/core/rest/access/DefaultDeployPointAccessResource/getFileManager()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getInputStream()|",
+      "|java+method:///java/io/IOException/getMessage()|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///javax/ws/rs/core/Response/serverError()|",
+      "|java+method:///javax/ws/rs/core/UriBuilder/build(java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/aprox/core/rest/util/FileManager/store(org.commonjava.aprox.core.model.DeployPoint,java.lang.String,java.io.InputStream)|",
+      "|java+method:///javax/ws/rs/core/UriInfo/getAbsolutePathBuilder()|",
+      "|java+method:///org/commonjava/aprox/core/rest/RESTWorkflowException/getResponse()|",
+      "|java+method:///org/commonjava/aprox/core/model/DeployPoint/getName()|",
+      "|java+method:///javax/ws/rs/core/UriBuilder/path(java.lang.String)|",
+      "|java+method:///org/commonjava/aprox/core/rest/access/DefaultDeployPointAccessResource/getArtifactStore(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/Response/created(java.net.URI)|",
+      "|java+method:///org/commonjava/aprox/core/rest/access/DefaultDeployPointAccessResource/getFileManager()|",
+      "|java+method:///java/io/IOException/getMessage()|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///javax/ws/rs/core/Response/serverError()|",
+      "|java+method:///javax/ws/rs/core/UriBuilder/build(java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/aprox/filer/FileManager/store(org.commonjava.aprox.model.DeployPoint,java.lang.String,java.io.InputStream)|",
+      "|java+method:///org/commonjava/aprox/model/DeployPoint/getName()|",
+      "|java+method:///javax/ws/rs/core/UriInfo/getAbsolutePathBuilder()|",
+      "|java+method:///org/commonjava/aprox/rest/AproxWorkflowException/getMessage()|",
+      "|java+method:///javax/ws/rs/core/UriBuilder/path(java.lang.String)|",
+      "|java+method:///org/commonjava/aprox/core/rest/access/DefaultDeployPointAccessResource/getArtifactStore(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getInputStream()|",
+      "|java+method:///org/commonjava/aprox/rest/AproxWorkflowException/getResponse()|"
+    ],
+    "affectedLib": "org.commonjava.aprox:aprox-api:0.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.aprox:aprox-core:0.3",
+    "coordinatesV2": "org.commonjava.aprox:aprox-core:0.4",
+    "caller": "|java+method:///org/commonjava/aprox/core/rest/stats/BasicStatsResource/getAllEndpoints()|",
+    "called": "|java+method:///org/commonjava/aprox/data/ProxyDataException/getMessage()|",
+    "v1Body": [
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/commonjava/web/json/ser/JsonSerializer/toString(java.lang.Object)|",
+      "|java+method:///org/commonjava/aprox/core/data/StoreDataManager/getAllRepositories()|",
+      "|java+method:///org/commonjava/aprox/core/data/StoreDataManager/getAllDeployPoints()|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///org/commonjava/aprox/core/data/ProxyDataException/getMessage()|",
+      "|java+method:///javax/ws/rs/core/Response/ok(java.lang.Object)|",
+      "|java+method:///javax/ws/rs/core/Response/serverError()|",
+      "|java+method:///java/util/List/addAll(java.util.Collection)|",
+      "|java+constructor:///org/commonjava/aprox/core/rest/stats/EndpointViewListing/EndpointViewListing(java.util.Collection,javax.ws.rs.core.UriInfo)|",
+      "|java+method:///org/commonjava/aprox/core/data/StoreDataManager/getAllGroups()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/commonjava/web/json/ser/JsonSerializer/toString(java.lang.Object)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///org/commonjava/aprox/data/StoreDataManager/getAllRepositories()|",
+      "|java+method:///org/commonjava/aprox/data/StoreDataManager/getAllDeployPoints()|",
+      "|java+method:///javax/ws/rs/core/Response/ok(java.lang.Object)|",
+      "|java+constructor:///org/commonjava/aprox/core/rest/stats/EndpointViewListing/EndpointViewListing(java.util.Collection,javax.ws.rs.core.UriInfo)|",
+      "|java+method:///org/commonjava/aprox/data/ProxyDataException/getMessage()|",
+      "|java+method:///org/commonjava/aprox/data/StoreDataManager/getAllGroups()|",
+      "|java+method:///javax/ws/rs/core/Response/serverError()|",
+      "|java+method:///java/util/List/addAll(java.util.Collection)|"
+    ],
+    "affectedLib": "org.commonjava.aprox:aprox-api:0.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.aprox:aprox-core:0.3",
+    "coordinatesV2": "org.commonjava.aprox:aprox-core:0.4",
+    "caller": "|java+method:///org/commonjava/aprox/core/rest/admin/DefaultGroupAdminResource/create()|",
+    "called": "|java+method:///org/commonjava/aprox/data/ProxyDataException/getMessage()|",
+    "v1Body": [
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/Response/created(java.net.URI)|",
+      "|java+method:///javax/ws/rs/core/Response/status(javax.ws.rs.core.Response$Status)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/entity(java.lang.Object)|",
+      "|java+method:///org/commonjava/util/logging/Logger/info(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///org/commonjava/aprox/core/data/StoreDataManager/storeGroup(org.commonjava.aprox.core.model.Group,boolean)|",
+      "|java+method:///org/commonjava/aprox/core/data/ProxyDataException/getMessage()|",
+      "|java+method:///javax/ws/rs/core/UriInfo/getAbsolutePathBuilder()|",
+      "|java+method:///org/commonjava/aprox/core/model/io/AProxModelSerializer/groupFromRequestBody(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///javax/ws/rs/core/UriBuilder/path(java.lang.String)|",
+      "|java+method:///javax/ws/rs/core/UriBuilder/build(java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/aprox/core/model/Group/getName()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/Response/created(java.net.URI)|",
+      "|java+method:///javax/ws/rs/core/Response/status(javax.ws.rs.core.Response$Status)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/entity(java.lang.Object)|",
+      "|java+method:///org/commonjava/util/logging/Logger/info(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/aprox/model/Group/getName()|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///javax/ws/rs/core/UriBuilder/build(java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/UriInfo/getAbsolutePathBuilder()|",
+      "|java+method:///org/commonjava/aprox/core/model/io/AProxModelSerializer/toString(org.commonjava.aprox.model.Group)|",
+      "|java+method:///javax/ws/rs/core/UriBuilder/path(java.lang.String)|",
+      "|java+method:///org/commonjava/aprox/data/StoreDataManager/storeGroup(org.commonjava.aprox.model.Group,boolean)|",
+      "|java+method:///org/commonjava/aprox/data/ProxyDataException/getMessage()|",
+      "|java+method:///org/commonjava/aprox/core/model/io/AProxModelSerializer/groupFromRequestBody(javax.servlet.http.HttpServletRequest)|"
+    ],
+    "affectedLib": "org.commonjava.aprox:aprox-api:0.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.aprox:aprox-core:0.3",
+    "coordinatesV2": "org.commonjava.aprox:aprox-core:0.4",
+    "caller": "|java+method:///org/commonjava/aprox/core/model/io/AProxModelSerializer/repositoryFromRequestBody(javax.servlet.http.HttpServletRequest)|",
+    "called": "|java+method:///org/commonjava/web/json/ser/JsonSerializer/fromRequestBody(javax.servlet.http.HttpServletRequest,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/commonjava/web/json/ser/JsonSerializer/fromRequestBody(javax.servlet.http.HttpServletRequest,java.lang.Class,org.commonjava.web.json.ser.DeserializerPostProcessor%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/web/json/ser/JsonSerializer/fromRequestBody(javax.servlet.http.HttpServletRequest,java.lang.Class)|"
+    ],
+    "affectedLib": "org.commonjava.web:json-serialization:0.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.aprox:aprox-core:0.3",
+    "coordinatesV2": "org.commonjava.aprox:aprox-core:0.4",
+    "caller": "|java+method:///org/commonjava/aprox/core/rest/admin/DefaultDeployPointAdminResource/getAll()|",
+    "called": "|java+constructor:///org/commonjava/web/json/model/Listing/Listing(java.util.Collection)|",
+    "v1Body": [
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/commonjava/web/json/model/Listing/Listing(java.util.Collection)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/entity(java.lang.Object)|",
+      "|java+method:///org/commonjava/util/logging/Logger/info(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///org/commonjava/aprox/core/data/ProxyDataException/getMessage()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/join(java.util.Collection,java.lang.String)|",
+      "|java+method:///org/commonjava/aprox/core/model/io/AProxModelSerializer/deployPointListingToString(org.commonjava.web.json.model.Listing)|",
+      "|java+method:///javax/ws/rs/core/Response/ok()|",
+      "|java+constructor:///javax/ws/rs/WebApplicationException/WebApplicationException(javax.ws.rs.core.Response$Status)|",
+      "|java+method:///org/commonjava/aprox/core/data/StoreDataManager/getAllDeployPoints()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/commonjava/web/json/model/Listing/Listing(java.util.Collection)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/entity(java.lang.Object)|",
+      "|java+method:///org/commonjava/util/logging/Logger/info(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///javax/ws/rs/WebApplicationException/WebApplicationException(javax.ws.rs.core.Response$Status)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///org/commonjava/aprox/data/StoreDataManager/getAllDeployPoints()|",
+      "|java+method:///org/commonjava/aprox/data/ProxyDataException/getMessage()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/join(java.util.Collection,java.lang.String)|",
+      "|java+method:///org/commonjava/aprox/core/model/io/AProxModelSerializer/deployPointListingToString(org.commonjava.web.json.model.Listing)|",
+      "|java+method:///javax/ws/rs/core/Response/ok()|"
+    ],
+    "affectedLib": "org.commonjava.web:json-serialization:0.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.aprox:aprox-core:0.3",
+    "coordinatesV2": "org.commonjava.aprox:aprox-core:0.4",
+    "caller": "|java+method:///org/commonjava/aprox/core/model/io/AProxModelSerializer/groupFromRequestBody(javax.servlet.http.HttpServletRequest)|",
+    "called": "|java+method:///org/commonjava/web/json/ser/JsonSerializer/fromRequestBody(javax.servlet.http.HttpServletRequest,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/commonjava/web/json/ser/JsonSerializer/fromRequestBody(javax.servlet.http.HttpServletRequest,java.lang.Class,org.commonjava.web.json.ser.DeserializerPostProcessor%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/web/json/ser/JsonSerializer/fromRequestBody(javax.servlet.http.HttpServletRequest,java.lang.Class)|"
+    ],
+    "affectedLib": "org.commonjava.web:json-serialization:0.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.aprox:aprox-core:0.3",
+    "coordinatesV2": "org.commonjava.aprox:aprox-core:0.4",
+    "caller": "|java+method:///org/commonjava/aprox/core/rest/admin/DefaultRepositoryAdminResource/getAll()|",
+    "called": "|java+constructor:///org/commonjava/web/json/model/Listing/Listing(java.util.Collection)|",
+    "v1Body": [
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/commonjava/web/json/model/Listing/Listing(java.util.Collection)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/entity(java.lang.Object)|",
+      "|java+method:///org/commonjava/util/logging/Logger/info(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/Response/ok()|",
+      "|java+method:///org/commonjava/aprox/core/data/StoreDataManager/getAllRepositories()|",
+      "|java+constructor:///javax/ws/rs/WebApplicationException/WebApplicationException(javax.ws.rs.core.Response$Status)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///org/commonjava/aprox/core/data/ProxyDataException/getMessage()|",
+      "|java+method:///org/commonjava/aprox/core/model/io/AProxModelSerializer/repoListingToString(org.commonjava.web.json.model.Listing)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/join(java.util.Collection,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/commonjava/web/json/model/Listing/Listing(java.util.Collection)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/entity(java.lang.Object)|",
+      "|java+method:///org/commonjava/util/logging/Logger/info(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/Response/ok()|",
+      "|java+constructor:///javax/ws/rs/WebApplicationException/WebApplicationException(javax.ws.rs.core.Response$Status)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///org/commonjava/aprox/data/StoreDataManager/getAllRepositories()|",
+      "|java+method:///org/commonjava/aprox/core/model/io/AProxModelSerializer/repoListingToString(org.commonjava.web.json.model.Listing)|",
+      "|java+method:///org/commonjava/aprox/data/ProxyDataException/getMessage()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/join(java.util.Collection,java.lang.String)|"
+    ],
+    "affectedLib": "org.commonjava.web:json-serialization:0.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.aprox:aprox-core:0.3",
+    "coordinatesV2": "org.commonjava.aprox:aprox-core:0.4",
+    "caller": "|java+method:///org/commonjava/aprox/core/rest/stats/BasicStatsResource/getAllEndpoints()|",
+    "called": "|java+method:///org/commonjava/web/json/ser/JsonSerializer/toString(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/commonjava/web/json/ser/JsonSerializer/toString(java.lang.Object)|",
+      "|java+method:///org/commonjava/aprox/core/data/StoreDataManager/getAllRepositories()|",
+      "|java+method:///org/commonjava/aprox/core/data/StoreDataManager/getAllDeployPoints()|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///org/commonjava/aprox/core/data/ProxyDataException/getMessage()|",
+      "|java+method:///javax/ws/rs/core/Response/ok(java.lang.Object)|",
+      "|java+method:///javax/ws/rs/core/Response/serverError()|",
+      "|java+method:///java/util/List/addAll(java.util.Collection)|",
+      "|java+constructor:///org/commonjava/aprox/core/rest/stats/EndpointViewListing/EndpointViewListing(java.util.Collection,javax.ws.rs.core.UriInfo)|",
+      "|java+method:///org/commonjava/aprox/core/data/StoreDataManager/getAllGroups()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/commonjava/web/json/ser/JsonSerializer/toString(java.lang.Object)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///org/commonjava/aprox/data/StoreDataManager/getAllRepositories()|",
+      "|java+method:///org/commonjava/aprox/data/StoreDataManager/getAllDeployPoints()|",
+      "|java+method:///javax/ws/rs/core/Response/ok(java.lang.Object)|",
+      "|java+constructor:///org/commonjava/aprox/core/rest/stats/EndpointViewListing/EndpointViewListing(java.util.Collection,javax.ws.rs.core.UriInfo)|",
+      "|java+method:///org/commonjava/aprox/data/ProxyDataException/getMessage()|",
+      "|java+method:///org/commonjava/aprox/data/StoreDataManager/getAllGroups()|",
+      "|java+method:///javax/ws/rs/core/Response/serverError()|",
+      "|java+method:///java/util/List/addAll(java.util.Collection)|"
+    ],
+    "affectedLib": "org.commonjava.web:json-serialization:0.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.aprox:aprox-core:0.3",
+    "coordinatesV2": "org.commonjava.aprox:aprox-core:0.4",
+    "caller": "|java+method:///org/commonjava/aprox/core/rest/admin/DefaultGroupAdminResource/getAll()|",
+    "called": "|java+constructor:///org/commonjava/web/json/model/Listing/Listing(java.util.Collection)|",
+    "v1Body": [
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/commonjava/web/json/model/Listing/Listing(java.util.Collection)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/entity(java.lang.Object)|",
+      "|java+method:///javax/ws/rs/core/Response/ok()|",
+      "|java+constructor:///javax/ws/rs/WebApplicationException/WebApplicationException(javax.ws.rs.core.Response$Status)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///org/commonjava/aprox/core/data/ProxyDataException/getMessage()|",
+      "|java+method:///org/commonjava/aprox/core/data/StoreDataManager/getAllGroups()|",
+      "|java+method:///org/commonjava/aprox/core/model/io/AProxModelSerializer/groupListingToString(org.commonjava.web.json.model.Listing)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/commonjava/web/json/model/Listing/Listing(java.util.Collection)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/entity(java.lang.Object)|",
+      "|java+method:///javax/ws/rs/core/Response/ok()|",
+      "|java+constructor:///javax/ws/rs/WebApplicationException/WebApplicationException(javax.ws.rs.core.Response$Status)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///org/commonjava/aprox/data/ProxyDataException/getMessage()|",
+      "|java+method:///org/commonjava/aprox/data/StoreDataManager/getAllGroups()|",
+      "|java+method:///org/commonjava/aprox/core/model/io/AProxModelSerializer/groupListingToString(org.commonjava.web.json.model.Listing)|"
+    ],
+    "affectedLib": "org.commonjava.web:json-serialization:0.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.aprox:aprox-core:0.3",
+    "coordinatesV2": "org.commonjava.aprox:aprox-core:0.4",
+    "caller": "|java+method:///org/commonjava/aprox/core/model/io/AProxModelSerializer/deployPointFromRequestBody(javax.servlet.http.HttpServletRequest)|",
+    "called": "|java+method:///org/commonjava/web/json/ser/JsonSerializer/fromRequestBody(javax.servlet.http.HttpServletRequest,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/commonjava/web/json/ser/JsonSerializer/fromRequestBody(javax.servlet.http.HttpServletRequest,java.lang.Class,org.commonjava.web.json.ser.DeserializerPostProcessor%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/web/json/ser/JsonSerializer/fromRequestBody(javax.servlet.http.HttpServletRequest,java.lang.Class)|"
+    ],
+    "affectedLib": "org.commonjava.web:json-serialization:0.3",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,159 @@
+[
+  {
+    "coordinatesV1": "org.apache.jackrabbit:oak-authorization-cug:1.6.13",
+    "coordinatesV2": "org.apache.jackrabbit:oak-authorization-cug:1.7.0",
+    "caller": "|java+method:///org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugUtil/definesCug(org.apache.jackrabbit.oak.api.Tree)|",
+    "called": "|java+method:///org/apache/jackrabbit/oak/plugins/tree/TreeUtil/getPrimaryTypeName(org.apache.jackrabbit.oak.api.Tree)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/apache/jackrabbit/oak/api/Tree/getName()|",
+      "|java+method:///org/apache/jackrabbit/oak/util/TreeUtil/getPrimaryTypeName(org.apache.jackrabbit.oak.api.Tree)|",
+      "|java+method:///org/apache/jackrabbit/oak/api/Tree/exists()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/jackrabbit/oak/plugins/tree/TreeUtil/getPrimaryTypeName(org.apache.jackrabbit.oak.api.Tree)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/apache/jackrabbit/oak/api/Tree/getName()|",
+      "|java+method:///org/apache/jackrabbit/oak/api/Tree/exists()|"
+    ],
+    "affectedLib": "org.apache.jackrabbit:oak-core:1.7.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.jackrabbit:oak-authorization-cug:1.6.13",
+    "coordinatesV2": "org.apache.jackrabbit:oak-authorization-cug:1.7.0",
+    "caller": "|java+method:///org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugConfiguration/registerCugNodeTypes(org.apache.jackrabbit.oak.api.Root)|",
+    "called": "|java+method:///org/apache/jackrabbit/oak/plugins/nodetype/ReadOnlyNodeTypeManager/hasNodeType(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/getResourceAsStream(java.lang.String)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/jackrabbit/oak/plugins/nodetype/write/NodeTypeRegistry/register(org.apache.jackrabbit.oak.api.Root,java.io.InputStream,java.lang.String)|",
+      "|java+method:///java/io/InputStream/close()|",
+      "|java+method:///org/apache/jackrabbit/oak/plugins/nodetype/ReadOnlyNodeTypeManager/hasNodeType(java.lang.String)|",
+      "|java+constructor:///org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugConfiguration$2/CugConfiguration$2(org.apache.jackrabbit.oak.api.Root)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/getResourceAsStream(java.lang.String)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/io/InputStream/close()|",
+      "|java+method:///org/apache/jackrabbit/oak/plugins/nodetype/ReadOnlyNodeTypeManager/hasNodeType(java.lang.String)|",
+      "|java+constructor:///org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugConfiguration$1/CugConfiguration$1(org.apache.jackrabbit.oak.api.Root)|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+method:///org/apache/jackrabbit/oak/plugins/nodetype/write/NodeTypeRegistry/register(org.apache.jackrabbit.oak.api.Root,java.io.InputStream,java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.jackrabbit:oak-core:1.7.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.jackrabbit:oak-authorization-cug:1.6.13",
+    "coordinatesV2": "org.apache.jackrabbit:oak-authorization-cug:1.7.0",
+    "caller": "|java+method:///org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugAccessControlManager/removePolicy(java.lang.String,javax.jcr.security.AccessControlPolicy)|",
+    "called": "|java+method:///org/apache/jackrabbit/oak/plugins/tree/TreeUtil/getNames(org.apache.jackrabbit.oak.api.Tree,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/apache/jackrabbit/oak/api/Tree/getChild(java.lang.String)|",
+      "|java+method:///com/google/common/collect/Sets/newHashSet(java.lang.Iterable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///javax/jcr/security/AccessControlException/AccessControlException(java.lang.String)|",
+      "|java+method:///org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugAccessControlManager/getOakPath(java.lang.String)|",
+      "|java+method:///org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugAccessControlManager/isSupportedPath(java.lang.String)|",
+      "|java+method:///org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugUtil/definesCug(org.apache.jackrabbit.oak.api.Tree)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/Set/remove(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/jackrabbit/oak/api/Tree/remove()|",
+      "|java+method:///org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugAccessControlManager/checkValidPolicy(java.lang.String,javax.jcr.security.AccessControlPolicy)|",
+      "|java+method:///org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugAccessControlManager/getTree(java.lang.String,long,boolean)|",
+      "|java+method:///org/apache/jackrabbit/oak/api/Tree/setProperty(java.lang.String,java.lang.Object,org.apache.jackrabbit.oak.api.Type)|",
+      "|java+method:///org/apache/jackrabbit/oak/util/TreeUtil/getNames(org.apache.jackrabbit.oak.api.Tree,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/apache/jackrabbit/oak/api/Tree/getChild(java.lang.String)|",
+      "|java+method:///com/google/common/collect/Sets/newHashSet(java.lang.Iterable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///javax/jcr/security/AccessControlException/AccessControlException(java.lang.String)|",
+      "|java+method:///org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugAccessControlManager/isSupportedPath(java.lang.String)|",
+      "|java+method:///org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugUtil/definesCug(org.apache.jackrabbit.oak.api.Tree)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/jackrabbit/oak/api/Tree/setProperty(java.lang.String,java.lang.Object,org.apache.jackrabbit.oak.api.Type)|",
+      "|java+method:///java/util/Set/remove(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/jackrabbit/oak/api/Tree/remove()|",
+      "|java+method:///org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugAccessControlManager/checkValidPolicy(java.lang.String,javax.jcr.security.AccessControlPolicy)|",
+      "|java+method:///org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugAccessControlManager/getTree(java.lang.String,long,boolean)|",
+      "|java+method:///org/apache/jackrabbit/oak/plugins/tree/TreeUtil/getNames(org.apache.jackrabbit.oak.api.Tree,java.lang.String)|",
+      "|java+method:///org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugAccessControlManager/getOakPath(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.jackrabbit:oak-core:1.7.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.jackrabbit:oak-authorization-cug:1.6.13",
+    "coordinatesV2": "org.apache.jackrabbit:oak-authorization-cug:1.7.0",
+    "caller": "|java+method:///org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugAccessControlManager/setPolicy(java.lang.String,javax.jcr.security.AccessControlPolicy)|",
+    "called": "|java+method:///org/apache/jackrabbit/oak/plugins/tree/TreeUtil/addMixin(org.apache.jackrabbit.oak.api.Tree,java.lang.String,org.apache.jackrabbit.oak.api.Tree,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/jackrabbit/oak/api/Tree/getChild(java.lang.String)|",
+      "|java+method:///org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugAccessControlManager/getRoot()|",
+      "|java+method:///org/apache/jackrabbit/oak/api/Root/getTree(java.lang.String)|",
+      "|java+method:///org/apache/jackrabbit/oak/util/TreeUtil/addMixin(org.apache.jackrabbit.oak.api.Tree,java.lang.String,org.apache.jackrabbit.oak.api.Tree,java.lang.String)|",
+      "|java+constructor:///javax/jcr/security/AccessControlException/AccessControlException(java.lang.String)|",
+      "|java+method:///org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugAccessControlManager/getOakPath(java.lang.String)|",
+      "|java+method:///org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugUtil/definesCug(org.apache.jackrabbit.oak.api.Tree)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/jackrabbit/oak/api/Tree/setProperty(java.lang.String,java.lang.Object,org.apache.jackrabbit.oak.api.Type)|",
+      "|java+method:///org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugPolicyImpl/getPrincipalNames()|",
+      "|java+method:///org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugAccessControlManager/checkValidPolicy(java.lang.String,javax.jcr.security.AccessControlPolicy)|",
+      "|java+method:///org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugAccessControlManager/getTree(java.lang.String,long,boolean)|",
+      "|java+method:///org/apache/jackrabbit/oak/util/TreeUtil/addChild(org.apache.jackrabbit.oak.api.Tree,java.lang.String,java.lang.String,org.apache.jackrabbit.oak.api.Tree,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugAccessControlManager/isSupportedPath(java.lang.String)|",
+      "|java+method:///org/apache/jackrabbit/oak/util/TreeUtil/isNodeType(org.apache.jackrabbit.oak.api.Tree,java.lang.String,org.apache.jackrabbit.oak.api.Tree)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/jackrabbit/oak/api/Tree/hasChild(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/jackrabbit/oak/api/Tree/getChild(java.lang.String)|",
+      "|java+method:///org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugAccessControlManager/getRoot()|",
+      "|java+method:///org/apache/jackrabbit/oak/api/Root/getTree(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///javax/jcr/security/AccessControlException/AccessControlException(java.lang.String)|",
+      "|java+method:///org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugAccessControlManager/getOakPath(java.lang.String)|",
+      "|java+method:///org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugAccessControlManager/isSupportedPath(java.lang.String)|",
+      "|java+method:///org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugUtil/definesCug(org.apache.jackrabbit.oak.api.Tree)|",
+      "|java+method:///org/apache/jackrabbit/oak/plugins/tree/TreeUtil/addChild(org.apache.jackrabbit.oak.api.Tree,java.lang.String,java.lang.String,org.apache.jackrabbit.oak.api.Tree,java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/jackrabbit/oak/api/Tree/setProperty(java.lang.String,java.lang.Object,org.apache.jackrabbit.oak.api.Type)|",
+      "|java+method:///org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugPolicyImpl/getPrincipalNames()|",
+      "|java+method:///org/apache/jackrabbit/oak/plugins/tree/TreeUtil/isNodeType(org.apache.jackrabbit.oak.api.Tree,java.lang.String,org.apache.jackrabbit.oak.api.Tree)|",
+      "|java+method:///org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugAccessControlManager/checkValidPolicy(java.lang.String,javax.jcr.security.AccessControlPolicy)|",
+      "|java+method:///org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugAccessControlManager/getTree(java.lang.String,long,boolean)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/jackrabbit/oak/plugins/tree/TreeUtil/addMixin(org.apache.jackrabbit.oak.api.Tree,java.lang.String,org.apache.jackrabbit.oak.api.Tree,java.lang.String)|",
+      "|java+method:///org/apache/jackrabbit/oak/api/Tree/hasChild(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.jackrabbit:oak-core:1.7.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.jackrabbit:oak-authorization-cug:1.6.13",
+    "coordinatesV2": "org.apache.jackrabbit:oak-authorization-cug:1.7.0",
+    "caller": "|java+method:///org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugUtil/getCug(org.apache.jackrabbit.oak.api.Tree)|",
+    "called": "|java+method:///org/apache/jackrabbit/oak/plugins/tree/TreeUtil/getPrimaryTypeName(org.apache.jackrabbit.oak.api.Tree)|",
+    "v1Body": [
+      "|java+method:///org/apache/jackrabbit/oak/api/Tree/getChild(java.lang.String)|",
+      "|java+method:///org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugUtil/hasCug(org.apache.jackrabbit.oak.api.Tree)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/apache/jackrabbit/oak/util/TreeUtil/getPrimaryTypeName(org.apache.jackrabbit.oak.api.Tree)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/jackrabbit/oak/api/Tree/getChild(java.lang.String)|",
+      "|java+method:///org/apache/jackrabbit/oak/plugins/tree/TreeUtil/getPrimaryTypeName(org.apache.jackrabbit.oak.api.Tree)|",
+      "|java+method:///org/apache/jackrabbit/oak/spi/security/authorization/cug/impl/CugUtil/hasCug(org.apache.jackrabbit.oak.api.Tree)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.jackrabbit:oak-core:1.7.0",
+    "change": "UPDATED"
+  }
+]

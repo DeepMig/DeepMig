@@ -1,0 +1,98 @@
+[
+  {
+    "coordinatesV1": "im.actor.server:actor-runtime:1.0.122",
+    "coordinatesV2": "im.actor.server:actor-runtime:1.0.123",
+    "caller": "|java+method:///im/actor/acl/ACLBase$class/randomLong(im.actor.acl.ACLBase)|",
+    "called": "|java+method:///im/actor/util/ThreadLocalSecureRandom$/current()|",
+    "v1Body": [
+      "|java+method:///scala/concurrent/forkjoin/ThreadLocalRandom/current()|",
+      "|java+method:///im/actor/acl/ACLBase/randomLong(scala.concurrent.forkjoin.ThreadLocalRandom)|"
+    ],
+    "v2Body": [
+      "|java+method:///im/actor/util/ThreadLocalSecureRandom$/current()|",
+      "|java+method:///im/actor/acl/ACLBase/randomLong(im.actor.util.ThreadLocalSecureRandom)|"
+    ],
+    "affectedLib": "im.actor:actor-util_2.11:0.0.12",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "im.actor.server:actor-runtime:1.0.122",
+    "coordinatesV2": "im.actor.server:actor-runtime:1.0.123",
+    "caller": "|java+method:///im/actor/util/misc/IdUtils$/nextIntId()|",
+    "called": "|java+method:///im/actor/util/ThreadLocalSecureRandom$/current()|",
+    "v1Body": [
+      "|java+method:///im/actor/util/misc/IdUtils$/nextIntId(scala.concurrent.forkjoin.ThreadLocalRandom)|",
+      "|java+method:///scala/concurrent/forkjoin/ThreadLocalRandom/current()|"
+    ],
+    "v2Body": [
+      "|java+method:///im/actor/util/misc/IdUtils$/nextIntId(im.actor.util.ThreadLocalSecureRandom)|",
+      "|java+method:///im/actor/util/ThreadLocalSecureRandom$/current()|"
+    ],
+    "affectedLib": "im.actor:actor-util_2.11:0.0.12",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "im.actor.server:actor-runtime:1.0.122",
+    "coordinatesV2": "im.actor.server:actor-runtime:1.0.123",
+    "caller": "|java+method:///im/actor/util/misc/IdUtils$/nextLongId()|",
+    "called": "|java+method:///im/actor/util/ThreadLocalSecureRandom$/current()|",
+    "v1Body": [
+      "|java+method:///scala/concurrent/forkjoin/ThreadLocalRandom/nextLong()|",
+      "|java+method:///scala/concurrent/forkjoin/ThreadLocalRandom/current()|"
+    ],
+    "v2Body": [
+      "|java+method:///im/actor/util/ThreadLocalSecureRandom/nextLong()|",
+      "|java+method:///im/actor/util/ThreadLocalSecureRandom$/current()|"
+    ],
+    "affectedLib": "im.actor:actor-util_2.11:0.0.12",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "im.actor.server:actor-runtime:1.0.122",
+    "coordinatesV2": "im.actor.server:actor-runtime:1.0.123",
+    "caller": "|java+method:///im/actor/acl/ACLBase$class/nextAccessSalt(im.actor.acl.ACLBase)|",
+    "called": "|java+method:///im/actor/util/ThreadLocalSecureRandom$/current()|",
+    "v1Body": [
+      "|java+method:///im/actor/acl/ACLBase/nextAccessSalt(scala.concurrent.forkjoin.ThreadLocalRandom)|",
+      "|java+method:///scala/concurrent/forkjoin/ThreadLocalRandom/current()|"
+    ],
+    "v2Body": [
+      "|java+method:///im/actor/acl/ACLBase/nextAccessSalt(im.actor.util.ThreadLocalSecureRandom)|",
+      "|java+method:///im/actor/util/ThreadLocalSecureRandom$/current()|"
+    ],
+    "affectedLib": "im.actor:actor-util_2.11:0.0.12",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "im.actor.server:actor-runtime:1.0.122",
+    "coordinatesV2": "im.actor.server:actor-runtime:1.0.123",
+    "caller": "|java+method:///im/actor/acl/ACLBase$class/randomString(im.actor.acl.ACLBase)|",
+    "called": "|java+method:///im/actor/util/ThreadLocalSecureRandom$/current()|",
+    "v1Body": [
+      "|java+method:///im/actor/acl/ACLBase/randomString(scala.concurrent.forkjoin.ThreadLocalRandom)|",
+      "|java+method:///scala/concurrent/forkjoin/ThreadLocalRandom/current()|"
+    ],
+    "v2Body": [
+      "|java+method:///im/actor/acl/ACLBase/randomString(im.actor.util.ThreadLocalSecureRandom)|",
+      "|java+method:///im/actor/util/ThreadLocalSecureRandom$/current()|"
+    ],
+    "affectedLib": "im.actor:actor-util_2.11:0.0.12",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "im.actor.server:actor-runtime:1.0.122",
+    "coordinatesV2": "im.actor.server:actor-runtime:1.0.123",
+    "caller": "|java+method:///im/actor/util/misc/IdUtils$/nextAuthId()|",
+    "called": "|java+method:///im/actor/util/ThreadLocalSecureRandom$/current()|",
+    "v1Body": [
+      "|java+method:///scala/concurrent/forkjoin/ThreadLocalRandom/current()|",
+      "|java+method:///im/actor/util/misc/IdUtils$/nextAuthId(scala.concurrent.forkjoin.ThreadLocalRandom)|"
+    ],
+    "v2Body": [
+      "|java+method:///im/actor/util/ThreadLocalSecureRandom$/current()|",
+      "|java+method:///im/actor/util/misc/IdUtils$/nextAuthId(im.actor.util.ThreadLocalSecureRandom)|"
+    ],
+    "affectedLib": "im.actor:actor-util_2.11:0.0.12",
+    "change": "ADDED"
+  }
+]

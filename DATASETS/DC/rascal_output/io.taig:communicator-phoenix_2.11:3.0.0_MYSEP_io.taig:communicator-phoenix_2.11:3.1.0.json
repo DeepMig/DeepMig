@@ -1,0 +1,86 @@
+[
+  {
+    "coordinatesV1": "io.taig:communicator-phoenix_2.11:3.1.0",
+    "coordinatesV2": "io.taig:communicator-phoenix_2.11:3.0.0",
+    "caller": "|java+method:///io/taig/communicator/phoenix/Phoenix$$anonfun$heartbeat$1/apply(long)|",
+    "called": "|java+method:///io/circe/syntax/package$EncoderOps$/asJson$extension(java.lang.Object,io.circe.Encoder)|",
+    "v1Body": [
+      "|java+method:///io/taig/communicator/phoenix/message/Request$/apply$default$3()|",
+      "|java+method:///io/taig/communicator/phoenix/message/Request$/apply$default$4()|",
+      "|java+method:///io/circe/Json/noSpaces()|",
+      "|java+method:///io/circe/syntax/package$EncoderOps$/asJson$extension(java.lang.Object,io.circe.Encoder)|",
+      "|java+method:///io/circe/syntax/package$/EncoderOps(java.lang.Object)|",
+      "|java+method:///io/taig/communicator/phoenix/Topic$/Phoenix()|",
+      "|java+constructor:///io/taig/communicator/phoenix/message/Request/Request(io.taig.communicator.phoenix.Topic,io.taig.communicator.phoenix.Event,io.circe.Json,java.lang.String)|",
+      "|java+method:///io/taig/communicator/phoenix/message/Request$/encodeRequest()|",
+      "|java+constructor:///io/taig/communicator/phoenix/Event/Event(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/taig/phoenix/models/Request$/apply$default$3()|",
+      "|java+method:///io/taig/phoenix/models/Request$/apply$default$4()|",
+      "|java+constructor:///io/taig/phoenix/models/Request/Request(io.taig.phoenix.models.Topic,io.taig.phoenix.models.Event,io.circe.Json,java.lang.String)|",
+      "|java+constructor:///io/taig/phoenix/models/Event/Event(java.lang.String)|",
+      "|java+method:///io/taig/phoenix/models/Topic$/Phoenix()|"
+    ],
+    "affectedLib": "io.circe:circe-core_2.11:0.6.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "io.taig:communicator-phoenix_2.11:3.0.0",
+    "coordinatesV2": "io.taig:communicator-phoenix_2.11:3.1.0",
+    "caller": "|java+method:///io/taig/communicator/phoenix/Phoenix$/send$default$4()|",
+    "called": "|java+method:///io/taig/phoenix/models/Ref$/unique()|",
+    "v1Body": [
+      "|java+method:///io/taig/communicator/phoenix/Ref$/unique()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/taig/phoenix/models/Ref$/unique()|"
+    ],
+    "affectedLib": "io.taig:phoenix-models_2.11:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.taig:communicator-phoenix_2.11:3.0.0",
+    "coordinatesV2": "io.taig:communicator-phoenix_2.11:3.1.0",
+    "caller": "|java+method:///io/taig/communicator/phoenix/Phoenix$$anonfun$heartbeat$1/apply(long)|",
+    "called": "|java+constructor:///io/taig/phoenix/models/Request/Request(io.taig.phoenix.models.Topic,io.taig.phoenix.models.Event,io.circe.Json,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///io/taig/communicator/phoenix/message/Request$/apply$default$3()|",
+      "|java+method:///io/taig/communicator/phoenix/message/Request$/apply$default$4()|",
+      "|java+method:///io/circe/Json/noSpaces()|",
+      "|java+method:///io/circe/syntax/package$EncoderOps$/asJson$extension(java.lang.Object,io.circe.Encoder)|",
+      "|java+method:///io/circe/syntax/package$/EncoderOps(java.lang.Object)|",
+      "|java+method:///io/taig/communicator/phoenix/Topic$/Phoenix()|",
+      "|java+constructor:///io/taig/communicator/phoenix/message/Request/Request(io.taig.communicator.phoenix.Topic,io.taig.communicator.phoenix.Event,io.circe.Json,java.lang.String)|",
+      "|java+method:///io/taig/communicator/phoenix/message/Request$/encodeRequest()|",
+      "|java+constructor:///io/taig/communicator/phoenix/Event/Event(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/taig/phoenix/models/Request$/apply$default$3()|",
+      "|java+method:///io/taig/phoenix/models/Request$/apply$default$4()|",
+      "|java+constructor:///io/taig/phoenix/models/Request/Request(io.taig.phoenix.models.Topic,io.taig.phoenix.models.Event,io.circe.Json,java.lang.String)|",
+      "|java+constructor:///io/taig/phoenix/models/Event/Event(java.lang.String)|",
+      "|java+method:///io/taig/phoenix/models/Topic$/Phoenix()|"
+    ],
+    "affectedLib": "io.taig:phoenix-models_2.11:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.taig:communicator-phoenix_2.11:3.0.0",
+    "coordinatesV2": "io.taig:communicator-phoenix_2.11:3.1.0",
+    "caller": "|java+method:///io/taig/communicator/phoenix/Phoenix$/heartbeat(scala.concurrent.duration.FiniteDuration)|",
+    "called": "|java+method:///monix/reactive/Observable$/intervalWithFixedDelay(scala.concurrent.duration.FiniteDuration,scala.concurrent.duration.FiniteDuration)|",
+    "v1Body": [
+      "|java+method:///monix/reactive/Observable$/interval(scala.concurrent.duration.FiniteDuration)|",
+      "|java+method:///monix/reactive/Observable/map(scala.Function1)|",
+      "|java+constructor:///io/taig/communicator/phoenix/Phoenix$$anonfun$heartbeat$1/Phoenix$$anonfun$heartbeat$1()|"
+    ],
+    "v2Body": [
+      "|java+method:///monix/reactive/Observable/map(scala.Function1)|",
+      "|java+constructor:///io/taig/communicator/phoenix/Phoenix$$anonfun$heartbeat$1/Phoenix$$anonfun$heartbeat$1()|",
+      "|java+method:///monix/reactive/Observable$/intervalWithFixedDelay(scala.concurrent.duration.FiniteDuration,scala.concurrent.duration.FiniteDuration)|"
+    ],
+    "affectedLib": "io.monix:monix-reactive_2.11:2.2.0",
+    "change": "UPDATED"
+  }
+]

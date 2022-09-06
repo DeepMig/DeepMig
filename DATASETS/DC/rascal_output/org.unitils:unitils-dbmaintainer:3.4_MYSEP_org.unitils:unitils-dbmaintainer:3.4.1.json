@@ -1,0 +1,48 @@
+[
+  {
+    "coordinatesV1": "org.unitils:unitils-dbmaintainer:3.4",
+    "coordinatesV2": "org.unitils:unitils-dbmaintainer:3.4.1",
+    "caller": "|java+method:///org/unitils/dbmaintainer/script/impl/DefaultScriptRunner/execute(org.unitils.dbmaintainer.script.ScriptContentHandle)|",
+    "called": "|java+method:///org/unitils/thirdparty/org/apache/commons/io/IOUtils/closeQuietly(java.io.Reader)|",
+    "v1Body": [
+      "|java+method:///org/unitils/dbmaintainer/script/impl/DefaultScriptRunner/createScriptParser()|",
+      "|java+method:///org/unitils/dbmaintainer/script/ScriptParser/getNextStatement()|",
+      "|java+method:///org/unitils/dbmaintainer/script/ScriptContentHandle/openScriptContentReader()|",
+      "|java+method:///org/unitils/dbmaintainer/script/ScriptParser/init(java.util.Properties,java.io.Reader)|",
+      "|java+method:///org/unitils/thirdparty/org/apache/commons/io/IOUtils/closeQuietly(java.io.Reader)|",
+      "|java+method:///org/unitils/core/dbsupport/SQLHandler/executeUpdateAndCommit(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/unitils/dbmaintainer/script/impl/DefaultScriptRunner/createScriptParser(java.lang.String)|",
+      "|java+method:///org/unitils/dbmaintainer/script/ScriptParser/getNextStatement()|",
+      "|java+method:///org/unitils/dbmaintainer/script/ScriptContentHandle/openScriptContentReader()|",
+      "|java+method:///org/unitils/dbmaintainer/script/ScriptParser/init(java.util.Properties,java.io.Reader)|",
+      "|java+method:///org/unitils/thirdparty/org/apache/commons/io/IOUtils/closeQuietly(java.io.Reader)|",
+      "|java+method:///org/unitils/core/dbsupport/SQLHandler/executeUpdateAndCommit(java.lang.String)|"
+    ],
+    "affectedLib": "org.unitils:unitils-core:3.4.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.unitils:unitils-dbmaintainer:3.4",
+    "coordinatesV2": "org.unitils:unitils-dbmaintainer:3.4.1",
+    "caller": "|java+method:///org/unitils/dbmaintainer/DBMaintainer/shouldUpdateDatabaseFromScratch(org.unitils.dbmaintainer.version.Version,java.util.Set)|",
+    "called": "|java+constructor:///org/unitils/core/UnitilsException/UnitilsException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/Log/warn(java.lang.Object)|",
+      "|java+constructor:///org/unitils/core/UnitilsException/UnitilsException(java.lang.String)|",
+      "|java+method:///org/unitils/dbmaintainer/DBMaintainer/errorInIndexedScriptDuringLastUpdate(java.util.Set)|",
+      "|java+method:///org/unitils/dbmaintainer/script/ScriptSource/isExistingIndexedScriptModified(org.unitils.dbmaintainer.version.Version,java.util.Set)|",
+      "|java+method:///org/apache/commons/logging/Log/info(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/unitils/core/UnitilsException/UnitilsException(java.lang.String)|",
+      "|java+method:///org/unitils/dbmaintainer/DBMaintainer/errorInIndexedScriptDuringLastUpdate(java.util.Set)|",
+      "|java+method:///org/apache/commons/logging/Log/info(java.lang.Object)|",
+      "|java+method:///org/unitils/dbmaintainer/script/ScriptSource/isExistingIndexedScriptModified(org.unitils.dbmaintainer.version.Version,java.util.Set,java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/Log/warn(java.lang.Object)|"
+    ],
+    "affectedLib": "org.unitils:unitils-core:3.4.1",
+    "change": "UPDATED"
+  }
+]

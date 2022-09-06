@@ -1,0 +1,87 @@
+[
+  {
+    "coordinatesV1": "com.github.ldeitos:extendedValidation:0.3.0",
+    "coordinatesV2": "com.github.ldeitos:extendedValidation:0.4.0",
+    "caller": "|java+constructor:///com/github/ldeitos/validation/impl/configuration/Configuration/Configuration()|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/github/ldeitos/validation/impl/configuration/ConfigurationLoader/loadConfiguration()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/ldeitos/validation/impl/configuration/ConfigurationLoader/loadConfiguration()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.7",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.ldeitos:extendedValidation:0.3.0",
+    "coordinatesV2": "com.github.ldeitos:extendedValidation:0.4.0",
+    "caller": "|java+constructor:///com/github/ldeitos/validation/impl/factory/CdiLookupConstraintValidationFactory/CdiLookupConstraintValidationFactory()|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///javax/validation/bootstrap/GenericBootstrap/configure()|",
+      "|java+method:///javax/validation/Configuration/getDefaultConstraintValidatorFactory()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///javax/validation/Validation/byDefaultProvider()|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/validation/bootstrap/GenericBootstrap/configure()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///javax/validation/Configuration/getDefaultConstraintValidatorFactory()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///javax/validation/Validation/byDefaultProvider()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.7",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.ldeitos:extendedValidation:0.3.0",
+    "coordinatesV2": "com.github.ldeitos:extendedValidation:0.4.0",
+    "caller": "|java+method:///com/github/ldeitos/validation/impl/configuration/Configuration/getConfiguredMessagesSource()|",
+    "called": "|java+method:///com/github/ldeitos/exception/InvalidConfigurationException/throwNew(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///java/lang/ClassNotFoundException/getMessage()|",
+      "|java+method:///com/github/ldeitos/exception/InvalidConfigurationException/throwNew(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/github/ldeitos/util/ManualContext/lookupCDI(java.lang.Class,java.lang.annotation.Annotation%5B%5D)|",
+      "|java+method:///java/lang/ClassLoader/getSystemClassLoader()|",
+      "|java+method:///java/lang/Class/forName(java.lang.String,boolean,java.lang.ClassLoader)|",
+      "|java+method:///com/github/ldeitos/validation/impl/configuration/dto/ConfigurationDTO/getMessageSource()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/github/ldeitos/validation/impl/configuration/dto/ConfigurationDTO/getMessageSource()|",
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///java/lang/ClassNotFoundException/getMessage()|",
+      "|java+method:///com/github/ldeitos/validation/impl/configuration/Configuration/resolveMessagesSourceBean(java.lang.Class)|",
+      "|java+method:///com/github/ldeitos/exception/InvalidConfigurationException/throwNew(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "com.github.ldeitos:extendedValidation-core:0.4.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.github.ldeitos:extendedValidation:0.3.0",
+    "coordinatesV2": "com.github.ldeitos:extendedValidation:0.4.0",
+    "caller": "|java+method:///com/github/ldeitos/validation/impl/factory/CdiLookupConstraintValidationFactory/getInstance(java.lang.Class)|",
+    "called": "|java+method:///com/github/ldeitos/util/ManualContext/lookupCDI(java.lang.Class,java.lang.annotation.Annotation%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/github/ldeitos/util/ManualContext/lookupCDI(java.lang.Class,java.lang.annotation.Annotation%5B%5D)|",
+      "|java+method:///javax/validation/ConstraintValidatorFactory/getInstance(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///com/github/ldeitos/util/ManualContext/lookupCDI(java.lang.Class,java.lang.annotation.Annotation%5B%5D)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/validation/ConstraintValidatorFactory/getInstance(java.lang.Class)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String)|"
+    ],
+    "affectedLib": "com.github.ldeitos:cdi-util:0.4.0",
+    "change": "UPDATED"
+  }
+]

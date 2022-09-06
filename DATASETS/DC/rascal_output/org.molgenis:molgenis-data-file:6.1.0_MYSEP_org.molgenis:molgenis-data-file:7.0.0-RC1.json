@@ -1,0 +1,125 @@
+[
+  {
+    "coordinatesV1": "org.molgenis:molgenis-data-file:6.1.0",
+    "coordinatesV2": "org.molgenis:molgenis-data-file:7.0.0-RC1",
+    "caller": "|java+method:///org/molgenis/data/file/FileStore/store(java.io.InputStream,java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/io/IOUtils/copy(java.io.InputStream,java.io.OutputStream)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/io/IOUtils/copy(java.io.InputStream,java.io.OutputStream)|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.InputStream)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.OutputStream)|",
+      "|java+constructor:///java/io/FileOutputStream/FileOutputStream(java.io.File)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/io/IOUtils/copy(java.io.InputStream,java.io.OutputStream)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.OutputStream)|",
+      "|java+constructor:///java/io/FileOutputStream/FileOutputStream(java.io.File)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "commons-io:commons-io:2.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.molgenis:molgenis-data-file:6.1.0",
+    "coordinatesV2": "org.molgenis:molgenis-data-file:7.0.0-RC1",
+    "caller": "|java+method:///org/molgenis/data/file/model/FileMetaMetaData/init()|",
+    "called": "|java+method:///org/molgenis/data/meta/model/Attribute/setAuto(boolean)|",
+    "v1Body": [
+      "|java+method:///org/molgenis/data/meta/model/Attribute/setVisible(boolean)|",
+      "|java+method:///org/molgenis/data/file/model/FileMetaMetaData/addAttribute(java.lang.String,org.molgenis.data.meta.model.EntityType$AttributeRole%5B%5D)|",
+      "|java+method:///org/molgenis/data/meta/model/Attribute/setDataType(org.molgenis.data.meta.AttributeType)|",
+      "|java+method:///org/molgenis/data/meta/model/Attribute/setLabel(java.lang.String)|",
+      "|java+method:///org/molgenis/data/file/model/FileMetaMetaData/setLabel(java.lang.String)|",
+      "|java+method:///org/molgenis/data/meta/model/Attribute/setNillable(boolean)|",
+      "|java+method:///org/molgenis/data/meta/model/Attribute/setUnique(boolean)|",
+      "|java+method:///org/molgenis/data/meta/model/Attribute/setDescription(java.lang.String)|",
+      "|java+method:///org/molgenis/data/file/model/FileMetaMetaData/setExtends(org.molgenis.data.meta.model.EntityType)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/molgenis/data/meta/model/Attribute/setVisible(boolean)|",
+      "|java+method:///org/molgenis/data/meta/model/Attribute/setAuto(boolean)|",
+      "|java+method:///org/molgenis/data/file/model/FileMetaMetaData/addAttribute(java.lang.String,org.molgenis.data.meta.model.EntityType$AttributeRole%5B%5D)|",
+      "|java+method:///org/molgenis/data/file/model/FileMetaMetaData/setRowLevelSecured(boolean)|",
+      "|java+method:///org/molgenis/data/meta/model/Attribute/setDataType(org.molgenis.data.meta.AttributeType)|",
+      "|java+method:///org/molgenis/data/meta/model/Attribute/setLabel(java.lang.String)|",
+      "|java+method:///org/molgenis/data/file/model/FileMetaMetaData/setLabel(java.lang.String)|",
+      "|java+method:///org/molgenis/data/meta/model/Attribute/setNillable(boolean)|",
+      "|java+method:///org/molgenis/data/meta/model/Attribute/setUnique(boolean)|",
+      "|java+method:///org/molgenis/data/meta/model/Attribute/setDescription(java.lang.String)|"
+    ],
+    "affectedLib": "org.molgenis:molgenis-data:7.0.0-RC1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.molgenis:molgenis-data-file:6.1.0",
+    "coordinatesV2": "org.molgenis:molgenis-data-file:7.0.0-RC1",
+    "caller": "|java+constructor:///org/molgenis/data/file/model/FileMeta/FileMeta(org.molgenis.data.Entity)|",
+    "called": "|java+constructor:///org/molgenis/data/support/StaticEntity/StaticEntity(org.molgenis.data.Entity)|",
+    "v1Body": [
+      "|java+constructor:///org/molgenis/data/security/owned/OwnedEntity/OwnedEntity(org.molgenis.data.Entity)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/molgenis/data/support/StaticEntity/StaticEntity(org.molgenis.data.Entity)|"
+    ],
+    "affectedLib": "org.molgenis:molgenis-data:7.0.0-RC1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.molgenis:molgenis-data-file:6.1.0",
+    "coordinatesV2": "org.molgenis:molgenis-data-file:7.0.0-RC1",
+    "caller": "|java+constructor:///org/molgenis/data/file/model/FileMeta/FileMeta(java.lang.String,org.molgenis.data.meta.model.EntityType)|",
+    "called": "|java+constructor:///org/molgenis/data/support/StaticEntity/StaticEntity()|",
+    "v1Body": [
+      "|java+method:///org/molgenis/data/file/model/FileMeta/setId(java.lang.String)|",
+      "|java+constructor:///org/molgenis/data/security/owned/OwnedEntity/OwnedEntity(org.molgenis.data.meta.model.EntityType)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/molgenis/data/support/StaticEntity/StaticEntity()|",
+      "|java+method:///org/molgenis/data/file/model/FileMeta/setId(java.lang.String)|"
+    ],
+    "affectedLib": "org.molgenis:molgenis-data:7.0.0-RC1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.molgenis:molgenis-data-file:6.1.0",
+    "coordinatesV2": "org.molgenis:molgenis-data-file:7.0.0-RC1",
+    "caller": "|java+constructor:///org/molgenis/data/file/model/FileMeta/FileMeta(org.molgenis.data.meta.model.EntityType)|",
+    "called": "|java+constructor:///org/molgenis/data/support/StaticEntity/StaticEntity(org.molgenis.data.meta.model.EntityType)|",
+    "v1Body": [
+      "|java+constructor:///org/molgenis/data/security/owned/OwnedEntity/OwnedEntity(org.molgenis.data.meta.model.EntityType)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/molgenis/data/support/StaticEntity/StaticEntity(org.molgenis.data.meta.model.EntityType)|"
+    ],
+    "affectedLib": "org.molgenis:molgenis-data:7.0.0-RC1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.molgenis:molgenis-data-file:6.1.0",
+    "coordinatesV2": "org.molgenis:molgenis-data-file:7.0.0-RC1",
+    "caller": "|java+method:///org/molgenis/data/file/FileMetaRepositoryDecorator/getFileMeta(java.lang.Object)|",
+    "called": "|java+constructor:///org/molgenis/data/UnknownEntityException/UnknownEntityException(org.molgenis.data.meta.model.EntityType,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///org/molgenis/data/file/FileMetaRepositoryDecorator/findOneById(java.lang.Object)|",
+      "|java+method:///org/molgenis/data/meta/model/EntityType/getLabel()|",
+      "|java+method:///org/molgenis/data/file/FileMetaRepositoryDecorator/getEntityType()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/molgenis/data/UnknownEntityException/UnknownEntityException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/molgenis/data/file/FileMetaRepositoryDecorator/findOneById(java.lang.Object)|",
+      "|java+method:///org/molgenis/data/file/FileMetaRepositoryDecorator/getEntityType()|",
+      "|java+constructor:///org/molgenis/data/UnknownEntityException/UnknownEntityException(org.molgenis.data.meta.model.EntityType,java.lang.Object)|"
+    ],
+    "affectedLib": "org.molgenis:molgenis-data:7.0.0-RC1",
+    "change": "UPDATED"
+  }
+]

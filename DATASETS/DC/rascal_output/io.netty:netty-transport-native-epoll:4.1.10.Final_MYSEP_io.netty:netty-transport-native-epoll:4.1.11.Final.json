@@ -1,0 +1,1852 @@
+[
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollDatagramChannel/doWriteMessage(java.lang.Object)|",
+    "called": "|java+method:///io/netty/channel/unix/IovArray/add(io.netty.buffer.ByteBuf)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/epoll/IovArray/memoryAddress(int)|",
+      "|java+method:///io/netty/buffer/ByteBuf/readerIndex()|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannel/eventLoop()|",
+      "|java+method:///io/netty/buffer/ByteBuf/readableBytes()|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannel/fd()|",
+      "|java+method:///java/nio/ByteBuffer/position()|",
+      "|java+method:///io/netty/channel/unix/Socket/sendToAddress(long,int,int,java.net.InetAddress,int)|",
+      "|java+method:///io/netty/channel/AddressedEnvelope/recipient()|",
+      "|java+method:///io/netty/channel/AddressedEnvelope/content()|",
+      "|java+method:///java/net/InetSocketAddress/getPort()|",
+      "|java+method:///io/netty/buffer/ByteBuf/hasMemoryAddress()|",
+      "|java+method:///io/netty/channel/unix/Socket/sendToAddresses(long,int,java.net.InetAddress,int)|",
+      "|java+method:///io/netty/channel/epoll/IovArray/add(io.netty.buffer.ByteBuf)|",
+      "|java+method:///io/netty/buffer/ByteBuf/memoryAddress()|",
+      "|java+method:///io/netty/channel/epoll/IovArray/count()|",
+      "|java+method:///io/netty/channel/epoll/EpollEventLoop/cleanArray()|",
+      "|java+method:///io/netty/channel/unix/Socket/sendTo(java.nio.ByteBuffer,int,int,java.net.InetAddress,int)|",
+      "|java+method:///java/nio/ByteBuffer/limit()|",
+      "|java+method:///java/net/InetSocketAddress/getAddress()|",
+      "|java+constructor:///java/nio/channels/NotYetConnectedException/NotYetConnectedException()|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|",
+      "|java+method:///io/netty/buffer/ByteBuf/internalNioBuffer(int,int)|",
+      "|java+method:///io/netty/buffer/ByteBuf/writerIndex()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/sendToAddress(long,int,int,java.net.InetAddress,int)|",
+      "|java+method:///java/nio/ByteBuffer/position()|",
+      "|java+method:///io/netty/channel/unix/IovArray/count()|",
+      "|java+method:///io/netty/channel/unix/IovArray/memoryAddress(int)|",
+      "|java+method:///io/netty/buffer/ByteBuf/readerIndex()|",
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/sendToAddresses(long,int,java.net.InetAddress,int)|",
+      "|java+method:///java/nio/ByteBuffer/limit()|",
+      "|java+method:///io/netty/buffer/ByteBuf/readableBytes()|",
+      "|java+method:///io/netty/channel/AddressedEnvelope/recipient()|",
+      "|java+method:///io/netty/channel/AddressedEnvelope/content()|",
+      "|java+method:///java/net/InetSocketAddress/getPort()|",
+      "|java+method:///io/netty/buffer/ByteBuf/hasMemoryAddress()|",
+      "|java+method:///io/netty/buffer/ByteBuf/memoryAddress()|",
+      "|java+method:///io/netty/channel/epoll/EpollEventLoop/cleanArray()|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannel/eventLoop()|",
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/sendTo(java.nio.ByteBuffer,int,int,java.net.InetAddress,int)|",
+      "|java+method:///io/netty/channel/unix/IovArray/add(io.netty.buffer.ByteBuf)|",
+      "|java+method:///java/net/InetSocketAddress/getAddress()|",
+      "|java+constructor:///java/nio/channels/NotYetConnectedException/NotYetConnectedException()|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|",
+      "|java+method:///io/netty/buffer/ByteBuf/internalNioBuffer(int,int)|",
+      "|java+method:///io/netty/buffer/ByteBuf/writerIndex()|"
+    ],
+    "affectedLib": "io.netty:netty-transport-native-unix-common:4.1.11.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollServerSocketChannel/newChildChannel(int,byte%5B%5D,int,int)|",
+    "called": "|java+method:///io/netty/channel/unix/NativeInetAddress/address(byte%5B%5D,int,int)|",
+    "v1Body": [
+      "|java+constructor:///io/netty/channel/epoll/EpollSocketChannel/EpollSocketChannel(io.netty.channel.Channel,io.netty.channel.unix.Socket,java.net.InetSocketAddress)|",
+      "|java+method:///io/netty/channel/unix/NativeInetAddress/address(byte%5B%5D,int,int)|",
+      "|java+constructor:///io/netty/channel/unix/Socket/Socket(int)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/netty/channel/epoll/EpollSocketChannel/EpollSocketChannel(io.netty.channel.Channel,io.netty.channel.epoll.LinuxSocket,java.net.InetSocketAddress)|",
+      "|java+constructor:///io/netty/channel/epoll/LinuxSocket/LinuxSocket(int)|",
+      "|java+method:///io/netty/channel/unix/NativeInetAddress/address(byte%5B%5D,int,int)|"
+    ],
+    "affectedLib": "io.netty:netty-transport-native-unix-common:4.1.11.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+constructor:///io/netty/channel/epoll/NativeDatagramPacketArray$NativeDatagramPacket/NativeDatagramPacketArray$NativeDatagramPacket()|",
+    "called": "|java+constructor:///io/netty/channel/unix/IovArray/IovArray()|",
+    "v1Body": [
+      "|java+constructor:///io/netty/channel/epoll/IovArray/IovArray()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/netty/channel/unix/IovArray/IovArray()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "io.netty:netty-transport-native-unix-common:4.1.11.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/NativeDatagramPacketArray$NativeDatagramPacket/release()|",
+    "called": "|java+method:///io/netty/channel/unix/IovArray/release()|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/epoll/IovArray/release()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/unix/IovArray/release()|"
+    ],
+    "affectedLib": "io.netty:netty-transport-native-unix-common:4.1.11.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+constructor:///io/netty/channel/epoll/EpollChannelOption/EpollChannelOption()|",
+    "called": "|java+constructor:///io/netty/channel/unix/UnixChannelOption/UnixChannelOption()|",
+    "v1Body": [
+      "|java+constructor:///io/netty/channel/ChannelOption/ChannelOption(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/netty/channel/unix/UnixChannelOption/UnixChannelOption()|"
+    ],
+    "affectedLib": "io.netty:netty-transport-native-unix-common:4.1.11.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollEventLoop/cleanup()|",
+    "called": "|java+method:///io/netty/channel/unix/FileDescriptor/close()|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/epoll/EpollEventArray/free()|",
+      "|java+method:///io/netty/channel/epoll/IovArray/release()|",
+      "|java+method:///io/netty/util/internal/logging/InternalLogger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///io/netty/channel/unix/FileDescriptor/close()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/unix/IovArray/release()|",
+      "|java+method:///io/netty/channel/epoll/EpollEventArray/free()|",
+      "|java+method:///io/netty/util/internal/logging/InternalLogger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///io/netty/channel/unix/FileDescriptor/close()|"
+    ],
+    "affectedLib": "io.netty:netty-transport-native-unix-common:4.1.11.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+constructor:///io/netty/channel/epoll/EpollEventLoop/EpollEventLoop(io.netty.channel.EventLoopGroup,java.util.concurrent.Executor,int,io.netty.channel.SelectStrategy,io.netty.util.concurrent.RejectedExecutionHandler)|",
+    "called": "|java+constructor:///io/netty/channel/unix/IovArray/IovArray()|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/epoll/Native/newEpollCreate()|",
+      "|java+method:///io/netty/util/internal/ObjectUtil/checkNotNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///io/netty/channel/SingleThreadEventLoop/SingleThreadEventLoop(io.netty.channel.EventLoopGroup,java.util.concurrent.Executor,boolean,int,io.netty.util.concurrent.RejectedExecutionHandler)|",
+      "|java+constructor:///io/netty/util/collection/IntObjectHashMap/IntObjectHashMap(int)|",
+      "|java+method:///io/netty/channel/unix/FileDescriptor/close()|",
+      "|java+method:///io/netty/channel/epoll/Native/epollCtlAdd(int,int,int)|",
+      "|java+constructor:///io/netty/channel/epoll/EpollEventArray/EpollEventArray(int)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///io/netty/channel/epoll/IovArray/IovArray()|",
+      "|java+constructor:///io/netty/channel/epoll/EpollEventLoop$1/EpollEventLoop$1(io.netty.channel.epoll.EpollEventLoop)|",
+      "|java+constructor:///io/netty/channel/epoll/EpollEventLoop$2/EpollEventLoop$2(io.netty.channel.epoll.EpollEventLoop)|",
+      "|java+method:///io/netty/channel/epoll/Native/newEventFd()|",
+      "|java+method:///io/netty/channel/unix/FileDescriptor/intValue()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///io/netty/channel/epoll/Native/newEpollCreate()|",
+      "|java+method:///io/netty/util/internal/ObjectUtil/checkNotNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///io/netty/channel/SingleThreadEventLoop/SingleThreadEventLoop(io.netty.channel.EventLoopGroup,java.util.concurrent.Executor,boolean,int,io.netty.util.concurrent.RejectedExecutionHandler)|",
+      "|java+constructor:///io/netty/channel/unix/IovArray/IovArray()|",
+      "|java+constructor:///io/netty/util/collection/IntObjectHashMap/IntObjectHashMap(int)|",
+      "|java+method:///io/netty/channel/unix/FileDescriptor/close()|",
+      "|java+method:///io/netty/channel/epoll/Native/epollCtlAdd(int,int,int)|",
+      "|java+constructor:///io/netty/channel/epoll/EpollEventArray/EpollEventArray(int)|",
+      "|java+constructor:///io/netty/channel/epoll/EpollEventLoop$1/EpollEventLoop$1(io.netty.channel.epoll.EpollEventLoop)|",
+      "|java+constructor:///io/netty/channel/epoll/EpollEventLoop$2/EpollEventLoop$2(io.netty.channel.epoll.EpollEventLoop)|",
+      "|java+method:///io/netty/channel/epoll/Native/newEventFd()|",
+      "|java+method:///io/netty/channel/unix/FileDescriptor/intValue()|"
+    ],
+    "affectedLib": "io.netty:netty-transport-native-unix-common:4.1.11.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollDomainSocketChannel$EpollDomainUnsafe/epollInReadFd()|",
+    "called": "|java+constructor:///io/netty/channel/unix/FileDescriptor/FileDescriptor(int)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/epoll/EpollRecvByteAllocatorHandle/reset(io.netty.channel.ChannelConfig)|",
+      "|java+method:///io/netty/channel/epoll/EpollRecvByteAllocatorHandle/lastBytesRead()|",
+      "|java+method:///io/netty/channel/epoll/EpollDomainSocketChannel$EpollDomainUnsafe/close(io.netty.channel.ChannelPromise)|",
+      "|java+method:///io/netty/channel/epoll/Native/recvFd(int)|",
+      "|java+method:///io/netty/channel/epoll/EpollRecvByteAllocatorHandle/lastBytesRead(int)|",
+      "|java+method:///io/netty/channel/epoll/EpollDomainSocketChannel/fd()|",
+      "|java+method:///io/netty/channel/epoll/EpollDomainSocketChannel$EpollDomainUnsafe/voidPromise()|",
+      "|java+method:///io/netty/channel/epoll/EpollDomainSocketChannel$EpollDomainUnsafe/epollInBefore()|",
+      "|java+method:///io/netty/channel/unix/Socket/intValue()|",
+      "|java+method:///io/netty/channel/ChannelPipeline/fireExceptionCaught(java.lang.Throwable)|",
+      "|java+constructor:///io/netty/channel/unix/FileDescriptor/FileDescriptor(int)|",
+      "|java+method:///io/netty/channel/unix/Socket/isInputShutdown()|",
+      "|java+method:///io/netty/channel/epoll/EpollDomainSocketChannel$EpollDomainUnsafe/recvBufAllocHandle()|",
+      "|java+method:///io/netty/channel/epoll/EpollRecvByteAllocatorHandle/incMessagesRead(int)|",
+      "|java+method:///io/netty/channel/epoll/EpollDomainSocketChannel$EpollDomainUnsafe/clearEpollIn0()|",
+      "|java+method:///io/netty/channel/epoll/EpollRecvByteAllocatorHandle/continueReading()|",
+      "|java+method:///io/netty/channel/epoll/EpollRecvByteAllocatorHandle/edgeTriggered(boolean)|",
+      "|java+method:///io/netty/channel/epoll/EpollDomainSocketChannel/isFlagSet(int)|",
+      "|java+method:///io/netty/channel/ChannelPipeline/fireChannelReadComplete()|",
+      "|java+method:///io/netty/channel/epoll/EpollRecvByteAllocatorHandle/readComplete()|",
+      "|java+method:///io/netty/channel/epoll/EpollDomainSocketChannel/pipeline()|",
+      "|java+method:///io/netty/channel/epoll/EpollDomainSocketChannel/config()|",
+      "|java+method:///io/netty/channel/ChannelPipeline/fireChannelRead(java.lang.Object)|",
+      "|java+method:///io/netty/channel/epoll/EpollDomainSocketChannel$EpollDomainUnsafe/epollInFinally(io.netty.channel.ChannelConfig)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/epoll/EpollRecvByteAllocatorHandle/reset(io.netty.channel.ChannelConfig)|",
+      "|java+method:///io/netty/channel/epoll/EpollRecvByteAllocatorHandle/lastBytesRead()|",
+      "|java+method:///io/netty/channel/epoll/EpollDomainSocketChannel$EpollDomainUnsafe/close(io.netty.channel.ChannelPromise)|",
+      "|java+method:///io/netty/channel/epoll/EpollRecvByteAllocatorHandle/lastBytesRead(int)|",
+      "|java+method:///io/netty/channel/epoll/EpollDomainSocketChannel$EpollDomainUnsafe/voidPromise()|",
+      "|java+method:///io/netty/channel/epoll/EpollDomainSocketChannel$EpollDomainUnsafe/epollInBefore()|",
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/recvFd()|",
+      "|java+method:///io/netty/channel/ChannelPipeline/fireExceptionCaught(java.lang.Throwable)|",
+      "|java+constructor:///io/netty/channel/unix/FileDescriptor/FileDescriptor(int)|",
+      "|java+method:///io/netty/channel/epoll/EpollDomainSocketChannel$EpollDomainUnsafe/recvBufAllocHandle()|",
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/isInputShutdown()|",
+      "|java+method:///io/netty/channel/epoll/EpollRecvByteAllocatorHandle/incMessagesRead(int)|",
+      "|java+method:///io/netty/channel/epoll/EpollDomainSocketChannel$EpollDomainUnsafe/clearEpollIn0()|",
+      "|java+method:///io/netty/channel/epoll/EpollRecvByteAllocatorHandle/continueReading()|",
+      "|java+method:///io/netty/channel/epoll/EpollRecvByteAllocatorHandle/edgeTriggered(boolean)|",
+      "|java+method:///io/netty/channel/epoll/EpollDomainSocketChannel/isFlagSet(int)|",
+      "|java+method:///io/netty/channel/ChannelPipeline/fireChannelReadComplete()|",
+      "|java+method:///io/netty/channel/epoll/EpollRecvByteAllocatorHandle/readComplete()|",
+      "|java+method:///io/netty/channel/epoll/EpollDomainSocketChannel/pipeline()|",
+      "|java+method:///io/netty/channel/epoll/EpollDomainSocketChannel/config()|",
+      "|java+method:///io/netty/channel/ChannelPipeline/fireChannelRead(java.lang.Object)|",
+      "|java+method:///io/netty/channel/epoll/EpollDomainSocketChannel$EpollDomainUnsafe/epollInFinally(io.netty.channel.ChannelConfig)|"
+    ],
+    "affectedLib": "io.netty:netty-transport-native-unix-common:4.1.11.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/AbstractEpollStreamChannel$SpliceFdTask/spliceIn(io.netty.channel.RecvByteBufAllocator$Handle)|",
+    "called": "|java+method:///io/netty/channel/unix/FileDescriptor/pipe()|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/EventLoop/inEventLoop()|",
+      "|java+method:///io/netty/channel/ChannelPromise/setFailure(java.lang.Throwable)|",
+      "|java+method:///io/netty/channel/epoll/Native/splice(int,long,int,long,long)|",
+      "|java+method:///io/netty/channel/unix/FileDescriptor/pipe()|",
+      "|java+method:///io/netty/channel/epoll/AbstractEpollStreamChannel/access$1200(io.netty.channel.unix.FileDescriptor)|",
+      "|java+method:///io/netty/channel/epoll/AbstractEpollStreamChannel$SpliceFdTask/spliceIn(io.netty.channel.unix.FileDescriptor,io.netty.channel.RecvByteBufAllocator$Handle)|",
+      "|java+method:///io/netty/channel/ChannelPromise/setSuccess()|",
+      "|java+method:///io/netty/channel/epoll/AbstractEpollStreamChannel/eventLoop()|",
+      "|java+method:///io/netty/channel/unix/FileDescriptor/intValue()|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/EventLoop/inEventLoop()|",
+      "|java+method:///io/netty/channel/ChannelPromise/setFailure(java.lang.Throwable)|",
+      "|java+method:///io/netty/channel/epoll/Native/splice(int,long,int,long,long)|",
+      "|java+method:///io/netty/channel/epoll/AbstractEpollStreamChannel$SpliceFdTask/spliceIn(io.netty.channel.unix.FileDescriptor,io.netty.channel.RecvByteBufAllocator$Handle)|",
+      "|java+method:///io/netty/channel/ChannelPromise/setSuccess()|",
+      "|java+method:///io/netty/channel/epoll/AbstractEpollStreamChannel/eventLoop()|",
+      "|java+method:///io/netty/channel/unix/FileDescriptor/intValue()|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|",
+      "|java+method:///io/netty/channel/epoll/AbstractEpollStreamChannel/access$1100(io.netty.channel.unix.FileDescriptor)|",
+      "|java+method:///io/netty/channel/unix/FileDescriptor/pipe()|"
+    ],
+    "affectedLib": "io.netty:netty-transport-native-unix-common:4.1.11.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/AbstractEpollStreamChannel$SpliceInChannelTask/spliceIn(io.netty.channel.RecvByteBufAllocator$Handle)|",
+    "called": "|java+method:///io/netty/channel/unix/FileDescriptor/pipe()|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/EventLoop/inEventLoop()|",
+      "|java+method:///io/netty/channel/epoll/AbstractEpollStreamChannel/unsafe()|",
+      "|java+method:///io/netty/channel/epoll/AbstractEpollStreamChannel/access$1000(io.netty.channel.epoll.AbstractEpollStreamChannel)|",
+      "|java+method:///io/netty/channel/ChannelPromise/setFailure(java.lang.Throwable)|",
+      "|java+method:///io/netty/channel/epoll/AbstractEpollStreamChannel/access$1002(io.netty.channel.epoll.AbstractEpollStreamChannel,io.netty.channel.unix.FileDescriptor)|",
+      "|java+method:///io/netty/channel/epoll/AbstractEpollStreamChannel$SpliceInChannelTask/spliceIn(io.netty.channel.unix.FileDescriptor,io.netty.channel.RecvByteBufAllocator$Handle)|",
+      "|java+method:///io/netty/channel/ChannelPromise/addListener(io.netty.util.concurrent.GenericFutureListener)|",
+      "|java+method:///io/netty/channel/ChannelPromise/setSuccess()|",
+      "|java+method:///io/netty/channel/epoll/AbstractEpollStreamChannel/newPromise()|",
+      "|java+method:///io/netty/channel/Channel$Unsafe/write(java.lang.Object,io.netty.channel.ChannelPromise)|",
+      "|java+method:///io/netty/channel/epoll/AbstractEpollStreamChannel/eventLoop()|",
+      "|java+method:///io/netty/channel/Channel$Unsafe/flush()|",
+      "|java+method:///io/netty/channel/ChannelPromise/isDone()|",
+      "|java+method:///io/netty/channel/epoll/EpollChannelConfig/setAutoRead(boolean)|",
+      "|java+method:///io/netty/channel/epoll/AbstractEpollStreamChannel/config()|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|",
+      "|java+method:///io/netty/channel/epoll/AbstractEpollStreamChannel/access$1102(io.netty.channel.epoll.AbstractEpollStreamChannel,io.netty.channel.unix.FileDescriptor)|",
+      "|java+method:///io/netty/channel/unix/FileDescriptor/pipe()|",
+      "|java+constructor:///io/netty/channel/epoll/AbstractEpollStreamChannel$SpliceOutTask/AbstractEpollStreamChannel$SpliceOutTask(io.netty.channel.epoll.AbstractEpollStreamChannel,io.netty.channel.epoll.AbstractEpollStreamChannel,int,boolean)|",
+      "|java+method:///io/netty/channel/epoll/EpollChannelConfig/isAutoRead()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/EventLoop/inEventLoop()|",
+      "|java+method:///io/netty/channel/epoll/AbstractEpollStreamChannel/unsafe()|",
+      "|java+method:///io/netty/channel/epoll/AbstractEpollStreamChannel/access$902(io.netty.channel.epoll.AbstractEpollStreamChannel,io.netty.channel.unix.FileDescriptor)|",
+      "|java+method:///io/netty/channel/ChannelPromise/setFailure(java.lang.Throwable)|",
+      "|java+method:///io/netty/channel/unix/FileDescriptor/pipe()|",
+      "|java+method:///io/netty/channel/epoll/AbstractEpollStreamChannel$SpliceInChannelTask/spliceIn(io.netty.channel.unix.FileDescriptor,io.netty.channel.RecvByteBufAllocator$Handle)|",
+      "|java+method:///io/netty/channel/ChannelPromise/addListener(io.netty.util.concurrent.GenericFutureListener)|",
+      "|java+method:///io/netty/channel/ChannelPromise/setSuccess()|",
+      "|java+method:///io/netty/channel/epoll/AbstractEpollStreamChannel/newPromise()|",
+      "|java+method:///io/netty/channel/Channel$Unsafe/write(java.lang.Object,io.netty.channel.ChannelPromise)|",
+      "|java+method:///io/netty/channel/epoll/AbstractEpollStreamChannel/eventLoop()|",
+      "|java+method:///io/netty/channel/Channel$Unsafe/flush()|",
+      "|java+method:///io/netty/channel/ChannelPromise/isDone()|",
+      "|java+method:///io/netty/channel/epoll/EpollChannelConfig/setAutoRead(boolean)|",
+      "|java+method:///io/netty/channel/epoll/AbstractEpollStreamChannel/config()|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|",
+      "|java+method:///io/netty/channel/epoll/AbstractEpollStreamChannel/access$1002(io.netty.channel.epoll.AbstractEpollStreamChannel,io.netty.channel.unix.FileDescriptor)|",
+      "|java+method:///io/netty/channel/epoll/AbstractEpollStreamChannel/access$900(io.netty.channel.epoll.AbstractEpollStreamChannel)|",
+      "|java+constructor:///io/netty/channel/epoll/AbstractEpollStreamChannel$SpliceOutTask/AbstractEpollStreamChannel$SpliceOutTask(io.netty.channel.epoll.AbstractEpollStreamChannel,io.netty.channel.epoll.AbstractEpollStreamChannel,int,boolean)|",
+      "|java+method:///io/netty/channel/epoll/EpollChannelConfig/isAutoRead()|"
+    ],
+    "affectedLib": "io.netty:netty-transport-native-unix-common:4.1.11.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollServerDomainSocketChannel/newChildChannel(int,byte%5B%5D,int,int)|",
+    "called": "|java+constructor:///io/netty/channel/unix/Socket/Socket(int)|",
+    "v1Body": [
+      "|java+constructor:///io/netty/channel/epoll/EpollDomainSocketChannel/EpollDomainSocketChannel(io.netty.channel.Channel,io.netty.channel.unix.Socket)|",
+      "|java+constructor:///io/netty/channel/unix/Socket/Socket(int)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/netty/channel/epoll/EpollDomainSocketChannel/EpollDomainSocketChannel(io.netty.channel.Channel,io.netty.channel.unix.FileDescriptor)|",
+      "|java+constructor:///io/netty/channel/unix/Socket/Socket(int)|"
+    ],
+    "affectedLib": "io.netty:netty-transport-native-unix-common:4.1.11.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/NativeDatagramPacketArray$NativeDatagramPacket/init(io.netty.buffer.ByteBuf,java.net.InetSocketAddress)|",
+    "called": "|java+method:///io/netty/channel/unix/NativeInetAddress/ipv4MappedIpv6Address(byte%5B%5D)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/epoll/IovArray/memoryAddress(int)|",
+      "|java+method:///java/net/InetAddress/getAddress()|",
+      "|java+method:///io/netty/channel/epoll/IovArray/count()|",
+      "|java+method:///java/net/InetSocketAddress/getAddress()|",
+      "|java+method:///io/netty/channel/unix/NativeInetAddress/ipv4MappedIpv6Address(byte%5B%5D)|",
+      "|java+method:///java/net/InetSocketAddress/getPort()|",
+      "|java+method:///io/netty/channel/epoll/IovArray/clear()|",
+      "|java+method:///java/net/Inet6Address/getScopeId()|",
+      "|java+method:///io/netty/channel/epoll/IovArray/add(io.netty.buffer.ByteBuf)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/unix/IovArray/clear()|",
+      "|java+method:///io/netty/channel/unix/IovArray/memoryAddress(int)|",
+      "|java+method:///java/net/InetSocketAddress/getPort()|",
+      "|java+method:///java/net/Inet6Address/getScopeId()|",
+      "|java+method:///io/netty/channel/unix/NativeInetAddress/ipv4MappedIpv6Address(byte%5B%5D)|",
+      "|java+method:///io/netty/channel/unix/IovArray/count()|",
+      "|java+method:///java/net/InetAddress/getAddress()|",
+      "|java+method:///io/netty/channel/unix/IovArray/add(io.netty.buffer.ByteBuf)|",
+      "|java+method:///java/net/InetSocketAddress/getAddress()|"
+    ],
+    "affectedLib": "io.netty:netty-transport-native-unix-common:4.1.11.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+initializer:///io/netty/channel/epoll/Native/Native$initializer|",
+    "called": "|java+method:///io/netty/channel/unix/Errors/newConnectionResetException(java.lang.String,int)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/epoll/NativeStaticallyReferencedJniMethods/epollout()|",
+      "|java+method:///io/netty/channel/epoll/NativeStaticallyReferencedJniMethods/uioMaxIov()|",
+      "|java+method:///io/netty/channel/epoll/NativeStaticallyReferencedJniMethods/isSupportingTcpFastopen()|",
+      "|java+method:///io/netty/channel/epoll/NativeStaticallyReferencedJniMethods/ssizeMax()|",
+      "|java+method:///io/netty/util/internal/ThrowableUtil/unknownStackTrace(java.lang.Throwable,java.lang.Class,java.lang.String)|",
+      "|java+method:///io/netty/channel/epoll/NativeStaticallyReferencedJniMethods/iovMax()|",
+      "|java+method:///io/netty/channel/epoll/Native/loadNativeLibrary()|",
+      "|java+method:///io/netty/channel/epoll/NativeStaticallyReferencedJniMethods/epollet()|",
+      "|java+method:///io/netty/channel/unix/Errors/newConnectionResetException(java.lang.String,int)|",
+      "|java+method:///io/netty/channel/epoll/NativeStaticallyReferencedJniMethods/isSupportingSendmmsg()|",
+      "|java+method:///io/netty/channel/epoll/Native/offsetofEpollData()|",
+      "|java+method:///io/netty/channel/epoll/NativeStaticallyReferencedJniMethods/kernelVersion()|",
+      "|java+method:///io/netty/channel/epoll/NativeStaticallyReferencedJniMethods/epollerr()|",
+      "|java+constructor:///java/nio/channels/ClosedChannelException/ClosedChannelException()|",
+      "|java+method:///io/netty/channel/epoll/NativeStaticallyReferencedJniMethods/tcpMd5SigMaxKeyLen()|",
+      "|java+method:///io/netty/channel/epoll/NativeStaticallyReferencedJniMethods/epollin()|",
+      "|java+method:///io/netty/channel/epoll/NativeStaticallyReferencedJniMethods/epollrdhup()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/epoll/NativeStaticallyReferencedJniMethods/epollout()|",
+      "|java+method:///io/netty/channel/epoll/NativeStaticallyReferencedJniMethods/isSupportingTcpFastopen()|",
+      "|java+method:///io/netty/util/internal/ThrowableUtil/unknownStackTrace(java.lang.Throwable,java.lang.Class,java.lang.String)|",
+      "|java+method:///io/netty/channel/epoll/Native/loadNativeLibrary()|",
+      "|java+method:///io/netty/channel/epoll/NativeStaticallyReferencedJniMethods/epollet()|",
+      "|java+method:///io/netty/channel/unix/Errors/newConnectionResetException(java.lang.String,int)|",
+      "|java+method:///io/netty/channel/epoll/NativeStaticallyReferencedJniMethods/isSupportingSendmmsg()|",
+      "|java+method:///io/netty/channel/epoll/Native/offsetofEpollData()|",
+      "|java+method:///io/netty/channel/epoll/NativeStaticallyReferencedJniMethods/kernelVersion()|",
+      "|java+method:///io/netty/channel/epoll/NativeStaticallyReferencedJniMethods/epollerr()|",
+      "|java+constructor:///java/nio/channels/ClosedChannelException/ClosedChannelException()|",
+      "|java+method:///io/netty/channel/epoll/NativeStaticallyReferencedJniMethods/tcpMd5SigMaxKeyLen()|",
+      "|java+method:///io/netty/channel/epoll/NativeStaticallyReferencedJniMethods/epollin()|",
+      "|java+method:///io/netty/channel/epoll/NativeStaticallyReferencedJniMethods/epollrdhup()|"
+    ],
+    "affectedLib": "io.netty:netty-transport-native-unix-common:4.1.11.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollServerChannelConfig/getReceiveBufferSize()|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/unix/Socket/getReceiveBufferSize()|",
+      "|java+method:///io/netty/channel/epoll/AbstractEpollChannel/fd()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/getReceiveBufferSize()|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollSocketChannelConfig/setTrafficClass(int)|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/epoll/Native/setTrafficClass(int,int)|",
+      "|java+method:///io/netty/channel/epoll/EpollSocketChannel/fd()|",
+      "|java+method:///io/netty/channel/epoll/EpollSocketChannelConfig/setTrafficClass(int)|",
+      "|java+method:///io/netty/channel/unix/Socket/intValue()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/epoll/EpollSocketChannelConfig/setTrafficClass(int)|",
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/setTrafficClass(int)|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollDatagramChannelConfig/isReusePort()|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/unix/Socket/intValue()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+      "|java+method:///io/netty/channel/epoll/Native/isReusePort(int)|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannel/fd()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/isReusePort()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollDatagramChannelConfig/isReuseAddress()|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/epoll/Native/isReuseAddress(int)|",
+      "|java+method:///io/netty/channel/unix/Socket/intValue()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannel/fd()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/isReuseAddress()|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollSocketChannelConfig/setTcpNotSentLowAt(long)|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/epoll/EpollSocketChannel/fd()|",
+      "|java+method:///io/netty/channel/epoll/Native/setTcpNotSentLowAt(int,int)|",
+      "|java+method:///io/netty/channel/unix/Socket/intValue()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/setTcpNotSentLowAt(long)|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollSocketChannelConfig/getTcpNotSentLowAt()|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/epoll/Native/getTcpNotSentLowAt(int)|",
+      "|java+method:///io/netty/channel/epoll/EpollSocketChannel/fd()|",
+      "|java+method:///io/netty/channel/unix/Socket/intValue()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/getTcpNotSentLowAt()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollServerChannelConfig/isReuseAddress()|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/epoll/Native/isReuseAddress(int)|",
+      "|java+method:///io/netty/channel/unix/Socket/intValue()|",
+      "|java+method:///io/netty/channel/epoll/AbstractEpollChannel/fd()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/isReuseAddress()|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollServerSocketChannelConfig/isReusePort()|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/unix/Socket/intValue()|",
+      "|java+method:///io/netty/channel/epoll/AbstractEpollChannel/fd()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+      "|java+method:///io/netty/channel/epoll/Native/isReusePort(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/isReusePort()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollSocketChannel/tcpInfo(io.netty.channel.epoll.EpollTcpInfo)|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/epoll/EpollSocketChannel/fd()|",
+      "|java+method:///io/netty/channel/epoll/Native/tcpInfo(int,io.netty.channel.epoll.EpollTcpInfo)|",
+      "|java+method:///io/netty/channel/unix/Socket/intValue()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/getTcpInfo(io.netty.channel.epoll.EpollTcpInfo)|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollSocketChannelConfig/isReuseAddress()|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/epoll/Native/isReuseAddress(int)|",
+      "|java+method:///io/netty/channel/epoll/EpollSocketChannel/fd()|",
+      "|java+method:///io/netty/channel/unix/Socket/intValue()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/isReuseAddress()|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollServerSocketChannelConfig/setFreeBind(boolean)|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/epoll/Native/setIpFreeBind(int,int)|",
+      "|java+method:///io/netty/channel/unix/Socket/intValue()|",
+      "|java+method:///io/netty/channel/epoll/AbstractEpollChannel/fd()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/setIpFreeBind(boolean)|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/AbstractEpollStreamChannel/doWriteMultiple(io.netty.channel.ChannelOutboundBuffer,int)|",
+    "called": "|java+method:///io/netty/channel/ChannelOutboundBuffer/removeBytes(long)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/ChannelOutboundBuffer/forEachFlushedMessage(io.netty.channel.ChannelOutboundBuffer$MessageProcessor)|",
+      "|java+method:///io/netty/channel/ChannelOutboundBuffer/removeBytes(long)|",
+      "|java+method:///io/netty/channel/ChannelOutboundBuffer/nioBufferSize()|",
+      "|java+method:///io/netty/channel/ChannelOutboundBuffer/nioBufferCount()|",
+      "|java+method:///io/netty/channel/epoll/AbstractEpollStreamChannel/writeBytesMultiple(io.netty.channel.ChannelOutboundBuffer,io.netty.channel.epoll.IovArray,int)|",
+      "|java+method:///io/netty/util/internal/PlatformDependent/hasUnsafe()|",
+      "|java+method:///io/netty/channel/epoll/AbstractEpollStreamChannel/writeBytesMultiple(io.netty.channel.ChannelOutboundBuffer,java.nio.ByteBuffer%5B%5D,int,long,int)|",
+      "|java+method:///io/netty/channel/epoll/IovArray/count()|",
+      "|java+method:///io/netty/channel/epoll/EpollEventLoop/cleanArray()|",
+      "|java+method:///io/netty/channel/epoll/AbstractEpollStreamChannel/eventLoop()|",
+      "|java+method:///io/netty/channel/ChannelOutboundBuffer/nioBuffers()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/ChannelOutboundBuffer/forEachFlushedMessage(io.netty.channel.ChannelOutboundBuffer$MessageProcessor)|",
+      "|java+method:///io/netty/channel/epoll/AbstractEpollStreamChannel/writeBytesMultiple(io.netty.channel.ChannelOutboundBuffer,io.netty.channel.unix.IovArray,int)|",
+      "|java+method:///io/netty/channel/ChannelOutboundBuffer/removeBytes(long)|",
+      "|java+method:///io/netty/channel/unix/IovArray/count()|",
+      "|java+method:///io/netty/channel/ChannelOutboundBuffer/nioBufferSize()|",
+      "|java+method:///io/netty/channel/epoll/EpollEventLoop/cleanArray()|",
+      "|java+method:///io/netty/channel/ChannelOutboundBuffer/nioBufferCount()|",
+      "|java+method:///io/netty/util/internal/PlatformDependent/hasUnsafe()|",
+      "|java+method:///io/netty/channel/epoll/AbstractEpollStreamChannel/writeBytesMultiple(io.netty.channel.ChannelOutboundBuffer,java.nio.ByteBuffer%5B%5D,int,long,int)|",
+      "|java+method:///io/netty/channel/epoll/AbstractEpollStreamChannel/eventLoop()|",
+      "|java+method:///io/netty/channel/ChannelOutboundBuffer/nioBuffers()|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollSocketChannelConfig/setSendBufferSize(int)|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/epoll/EpollSocketChannelConfig/setSendBufferSize(int)|",
+      "|java+method:///io/netty/channel/unix/Socket/setSendBufferSize(int)|",
+      "|java+method:///io/netty/channel/epoll/EpollSocketChannel/fd()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/epoll/EpollSocketChannelConfig/setSendBufferSize(int)|",
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/setSendBufferSize(int)|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollSocketChannelConfig/setTcpUserTimeout(int)|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/epoll/Native/setTcpUserTimeout(int,int)|",
+      "|java+method:///io/netty/channel/epoll/EpollSocketChannel/fd()|",
+      "|java+method:///io/netty/channel/unix/Socket/intValue()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/setTcpUserTimeout(int)|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollDatagramChannelConfig/setReuseAddress(boolean)|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/epoll/Native/setReuseAddress(int,int)|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannelConfig/setReuseAddress(boolean)|",
+      "|java+method:///io/netty/channel/unix/Socket/intValue()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannel/fd()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannelConfig/setReuseAddress(boolean)|",
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/setReuseAddress(boolean)|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollSocketChannelConfig/setReuseAddress(boolean)|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/epoll/Native/setReuseAddress(int,int)|",
+      "|java+method:///io/netty/channel/epoll/EpollSocketChannel/fd()|",
+      "|java+method:///io/netty/channel/epoll/EpollSocketChannelConfig/setReuseAddress(boolean)|",
+      "|java+method:///io/netty/channel/unix/Socket/intValue()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/epoll/EpollSocketChannelConfig/setReuseAddress(boolean)|",
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/setReuseAddress(boolean)|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollSocketChannelConfig/setTcpCork(boolean)|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/unix/Socket/setTcpCork(boolean)|",
+      "|java+method:///io/netty/channel/epoll/EpollSocketChannel/fd()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/setTcpCork(boolean)|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollSocketChannelConfig/setSoLinger(int)|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/unix/Socket/setSoLinger(int)|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+      "|java+method:///io/netty/channel/epoll/EpollSocketChannelConfig/setSoLinger(int)|",
+      "|java+method:///io/netty/channel/epoll/EpollSocketChannel/fd()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/epoll/EpollSocketChannelConfig/setSoLinger(int)|",
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/setSoLinger(int)|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/AbstractEpollStreamChannel$EpollStreamUnsafe$1/run()|",
+    "called": "|java+constructor:///io/netty/channel/ConnectTimeoutException/ConnectTimeoutException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/epoll/AbstractEpollStreamChannel/access$500(io.netty.channel.epoll.AbstractEpollStreamChannel)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///io/netty/channel/epoll/AbstractEpollStreamChannel$EpollStreamUnsafe/close(io.netty.channel.ChannelPromise)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+constructor:///io/netty/channel/ConnectTimeoutException/ConnectTimeoutException(java.lang.String)|",
+      "|java+method:///io/netty/channel/ChannelPromise/tryFailure(java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///io/netty/channel/epoll/AbstractEpollStreamChannel$EpollStreamUnsafe/voidPromise()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/epoll/AbstractEpollStreamChannel/access$400(io.netty.channel.epoll.AbstractEpollStreamChannel)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///io/netty/channel/epoll/AbstractEpollStreamChannel$EpollStreamUnsafe/close(io.netty.channel.ChannelPromise)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+constructor:///io/netty/channel/ConnectTimeoutException/ConnectTimeoutException(java.lang.String)|",
+      "|java+method:///io/netty/channel/ChannelPromise/tryFailure(java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///io/netty/channel/epoll/AbstractEpollStreamChannel$EpollStreamUnsafe/voidPromise()|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollSocketChannelConfig/getSendBufferSize()|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/unix/Socket/getSendBufferSize()|",
+      "|java+method:///io/netty/channel/epoll/EpollSocketChannel/fd()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/getSendBufferSize()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollSocketChannelConfig/setTcpKeepIdle(int)|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/epoll/EpollSocketChannel/fd()|",
+      "|java+method:///io/netty/channel/unix/Socket/intValue()|",
+      "|java+method:///io/netty/channel/epoll/Native/setTcpKeepIdle(int,int)|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/setTcpKeepIdle(int)|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollDatagramChannelConfig/setReusePort(boolean)|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/unix/Socket/intValue()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannel/fd()|",
+      "|java+method:///io/netty/channel/epoll/Native/setReusePort(int,int)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/setReusePort(boolean)|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollDatagramChannel$EpollDatagramChannelUnsafe/epollInReady()|",
+    "called": "|java+constructor:///io/netty/channel/socket/DatagramPacket/DatagramPacket(io.netty.buffer.ByteBuf,java.net.InetSocketAddress,java.net.InetSocketAddress)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/epoll/EpollRecvByteAllocatorHandle/reset(io.netty.channel.ChannelConfig)|",
+      "|java+method:///io/netty/channel/unix/Socket/recvFromAddress(long,int,int)|",
+      "|java+method:///io/netty/channel/epoll/EpollRecvByteAllocatorHandle/edgeTriggered(boolean)|",
+      "|java+constructor:///io/netty/channel/socket/DatagramPacket/DatagramPacket(io.netty.buffer.ByteBuf,java.net.InetSocketAddress,java.net.InetSocketAddress)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///io/netty/channel/unix/Socket/recvFrom(java.nio.ByteBuffer,int,int)|",
+      "|java+method:///io/netty/buffer/ByteBuf/memoryAddress()|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannel/isFlagSet(int)|",
+      "|java+method:///io/netty/channel/socket/DatagramChannelConfig/getAllocator()|",
+      "|java+method:///io/netty/buffer/ByteBuf/writerIndex(int)|",
+      "|java+method:///io/netty/channel/EventLoop/inEventLoop()|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannel/pipeline()|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannel/config()|",
+      "|java+method:///io/netty/channel/epoll/EpollRecvByteAllocatorHandle/continueReading()|",
+      "|java+method:///java/nio/ByteBuffer/position()|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannel$EpollDatagramChannelUnsafe/epollInFinally(io.netty.channel.ChannelConfig)|",
+      "|java+method:///io/netty/channel/epoll/EpollRecvByteAllocatorHandle/lastBytesRead()|",
+      "|java+method:///io/netty/buffer/ByteBuf/release()|",
+      "|java+method:///io/netty/channel/unix/DatagramSocketAddress/receivedAmount()|",
+      "|java+method:///io/netty/channel/epoll/EpollRecvByteAllocatorHandle/attemptedBytesRead(int)|",
+      "|java+method:///io/netty/channel/ChannelPipeline/fireChannelReadComplete()|",
+      "|java+method:///io/netty/channel/epoll/EpollRecvByteAllocatorHandle/readComplete()|",
+      "|java+method:///io/netty/buffer/ByteBuf/writableBytes()|",
+      "|java+method:///io/netty/buffer/ByteBuf/hasMemoryAddress()|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannel$EpollDatagramChannelUnsafe/epollInBefore()|",
+      "|java+method:///io/netty/channel/epoll/EpollRecvByteAllocatorHandle/lastBytesRead(int)|",
+      "|java+method:///io/netty/buffer/ByteBuf/capacity()|",
+      "|java+method:///java/util/List/clear()|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannel/eventLoop()|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannel$EpollDatagramChannelUnsafe/localAddress()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///io/netty/channel/ChannelPipeline/fireExceptionCaught(java.lang.Throwable)|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannel/shouldBreakEpollInReady(io.netty.channel.ChannelConfig)|",
+      "|java+method:///java/nio/ByteBuffer/limit()|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///io/netty/channel/epoll/EpollRecvByteAllocatorHandle/incMessagesRead(int)|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannel$EpollDatagramChannelUnsafe/clearEpollIn0()|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannel/fd()|",
+      "|java+method:///io/netty/channel/ChannelPipeline/fireChannelRead(java.lang.Object)|",
+      "|java+method:///io/netty/buffer/ByteBuf/internalNioBuffer(int,int)|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|",
+      "|java+method:///io/netty/channel/epoll/EpollRecvByteAllocatorHandle/allocate(io.netty.buffer.ByteBufAllocator)|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannel$EpollDatagramChannelUnsafe/recvBufAllocHandle()|",
+      "|java+method:///io/netty/buffer/ByteBuf/writerIndex()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/epoll/EpollRecvByteAllocatorHandle/reset(io.netty.channel.ChannelConfig)|",
+      "|java+method:///io/netty/channel/epoll/EpollRecvByteAllocatorHandle/edgeTriggered(boolean)|",
+      "|java+constructor:///io/netty/channel/socket/DatagramPacket/DatagramPacket(io.netty.buffer.ByteBuf,java.net.InetSocketAddress,java.net.InetSocketAddress)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///io/netty/buffer/ByteBuf/memoryAddress()|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannel/isFlagSet(int)|",
+      "|java+method:///io/netty/channel/socket/DatagramChannelConfig/getAllocator()|",
+      "|java+method:///io/netty/buffer/ByteBuf/writerIndex(int)|",
+      "|java+method:///io/netty/channel/EventLoop/inEventLoop()|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannel/pipeline()|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannel/config()|",
+      "|java+method:///io/netty/channel/epoll/EpollRecvByteAllocatorHandle/continueReading()|",
+      "|java+method:///java/nio/ByteBuffer/position()|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannel$EpollDatagramChannelUnsafe/epollInFinally(io.netty.channel.ChannelConfig)|",
+      "|java+method:///io/netty/channel/epoll/EpollRecvByteAllocatorHandle/lastBytesRead()|",
+      "|java+method:///io/netty/buffer/ByteBuf/release()|",
+      "|java+method:///io/netty/channel/unix/DatagramSocketAddress/receivedAmount()|",
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/recvFromAddress(long,int,int)|",
+      "|java+method:///io/netty/channel/epoll/EpollRecvByteAllocatorHandle/attemptedBytesRead(int)|",
+      "|java+method:///io/netty/channel/ChannelPipeline/fireChannelReadComplete()|",
+      "|java+method:///io/netty/channel/epoll/EpollRecvByteAllocatorHandle/readComplete()|",
+      "|java+method:///io/netty/buffer/ByteBuf/writableBytes()|",
+      "|java+method:///io/netty/buffer/ByteBuf/hasMemoryAddress()|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannel$EpollDatagramChannelUnsafe/epollInBefore()|",
+      "|java+method:///io/netty/channel/epoll/EpollRecvByteAllocatorHandle/lastBytesRead(int)|",
+      "|java+method:///io/netty/buffer/ByteBuf/capacity()|",
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/recvFrom(java.nio.ByteBuffer,int,int)|",
+      "|java+method:///java/util/List/clear()|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannel/eventLoop()|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannel$EpollDatagramChannelUnsafe/localAddress()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///io/netty/channel/ChannelPipeline/fireExceptionCaught(java.lang.Throwable)|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannel/shouldBreakEpollInReady(io.netty.channel.ChannelConfig)|",
+      "|java+method:///java/nio/ByteBuffer/limit()|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///io/netty/channel/epoll/EpollRecvByteAllocatorHandle/incMessagesRead(int)|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannel$EpollDatagramChannelUnsafe/clearEpollIn0()|",
+      "|java+method:///io/netty/channel/ChannelPipeline/fireChannelRead(java.lang.Object)|",
+      "|java+method:///io/netty/buffer/ByteBuf/internalNioBuffer(int,int)|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|",
+      "|java+method:///io/netty/channel/epoll/EpollRecvByteAllocatorHandle/allocate(io.netty.buffer.ByteBufAllocator)|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannel$EpollDatagramChannelUnsafe/recvBufAllocHandle()|",
+      "|java+method:///io/netty/buffer/ByteBuf/writerIndex()|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollDatagramChannelConfig/getTrafficClass()|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannel/fd()|",
+      "|java+method:///io/netty/channel/unix/Socket/intValue()|",
+      "|java+method:///io/netty/channel/epoll/Native/getTrafficClass(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/getTrafficClass()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollServerSocketChannelConfig/setReusePort(boolean)|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/unix/Socket/intValue()|",
+      "|java+method:///io/netty/channel/epoll/AbstractEpollChannel/fd()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+      "|java+method:///io/netty/channel/epoll/Native/setReusePort(int,int)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/setReusePort(boolean)|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/AbstractEpollStreamChannel/writeBytesMultiple(io.netty.channel.ChannelOutboundBuffer,java.nio.ByteBuffer%5B%5D,int,long,int)|",
+    "called": "|java+method:///io/netty/channel/ChannelOutboundBuffer/removeBytes(long)|",
+    "v1Body": [
+      "|java+method:///java/nio/ByteBuffer/position()|",
+      "|java+method:///io/netty/channel/unix/Socket/writev(java.nio.ByteBuffer%5B%5D,int,int)|",
+      "|java+method:///io/netty/channel/ChannelOutboundBuffer/removeBytes(long)|",
+      "|java+method:///java/nio/ByteBuffer/position(int)|",
+      "|java+method:///java/nio/ByteBuffer/limit()|",
+      "|java+method:///io/netty/channel/epoll/AbstractEpollStreamChannel/fd()|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/nio/ByteBuffer/position()|",
+      "|java+method:///io/netty/channel/ChannelOutboundBuffer/removeBytes(long)|",
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/writev(java.nio.ByteBuffer%5B%5D,int,int)|",
+      "|java+method:///java/nio/ByteBuffer/position(int)|",
+      "|java+method:///java/nio/ByteBuffer/limit()|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/AbstractEpollStreamChannel/writeDefaultFileRegion(io.netty.channel.ChannelOutboundBuffer,io.netty.channel.DefaultFileRegion,int)|",
+    "called": "|java+method:///io/netty/channel/ChannelOutboundBuffer/progress(long)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/DefaultFileRegion/transferred()|",
+      "|java+method:///io/netty/channel/epoll/Native/sendfile(int,io.netty.channel.DefaultFileRegion,long,long,long)|",
+      "|java+method:///io/netty/channel/DefaultFileRegion/position()|",
+      "|java+method:///io/netty/channel/DefaultFileRegion/count()|",
+      "|java+method:///io/netty/channel/ChannelOutboundBuffer/progress(long)|",
+      "|java+method:///io/netty/channel/unix/Socket/intValue()|",
+      "|java+method:///io/netty/channel/epoll/AbstractEpollStreamChannel/fd()|",
+      "|java+method:///io/netty/channel/ChannelOutboundBuffer/remove()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/DefaultFileRegion/transferred()|",
+      "|java+method:///io/netty/channel/epoll/Native/sendfile(int,io.netty.channel.DefaultFileRegion,long,long,long)|",
+      "|java+method:///io/netty/channel/DefaultFileRegion/position()|",
+      "|java+method:///io/netty/channel/DefaultFileRegion/count()|",
+      "|java+method:///io/netty/channel/ChannelOutboundBuffer/progress(long)|",
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/intValue()|",
+      "|java+method:///io/netty/channel/ChannelOutboundBuffer/remove()|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollSocketChannelConfig/getReceiveBufferSize()|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/unix/Socket/getReceiveBufferSize()|",
+      "|java+method:///io/netty/channel/epoll/EpollSocketChannel/fd()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/getReceiveBufferSize()|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollSocketChannelConfig/getTcpKeepIntvl()|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/epoll/EpollSocketChannel/fd()|",
+      "|java+method:///io/netty/channel/epoll/Native/getTcpKeepIntvl(int)|",
+      "|java+method:///io/netty/channel/unix/Socket/intValue()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/getTcpKeepIntvl()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollSocketChannelConfig/isTcpQuickAck()|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/epoll/EpollSocketChannel/fd()|",
+      "|java+method:///io/netty/channel/unix/Socket/isTcpQuickAck()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/isTcpQuickAck()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollSocketChannelConfig/isTcpCork()|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/epoll/EpollSocketChannel/fd()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+      "|java+method:///io/netty/channel/unix/Socket/isTcpCork()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/isTcpCork()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollSocketChannelConfig/setTcpKeepIntvl(int)|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/epoll/Native/setTcpKeepIntvl(int,int)|",
+      "|java+method:///io/netty/channel/epoll/EpollSocketChannel/fd()|",
+      "|java+method:///io/netty/channel/unix/Socket/intValue()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/setTcpKeepIntvl(int)|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollServerChannelConfig/setReceiveBufferSize(int)|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/unix/Socket/setReceiveBufferSize(int)|",
+      "|java+method:///io/netty/channel/epoll/AbstractEpollChannel/fd()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/setReceiveBufferSize(int)|",
+      "|java+method:///io/netty/channel/epoll/EpollServerChannelConfig/setReceiveBufferSize(int)|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollDatagramChannelConfig/isBroadcast()|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/epoll/Native/isBroadcast(int)|",
+      "|java+method:///io/netty/channel/unix/Socket/intValue()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannel/fd()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/isBroadcast()|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollDatagramChannelConfig/setSendBufferSize(int)|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/unix/Socket/setSendBufferSize(int)|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannelConfig/setSendBufferSize(int)|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannel/fd()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/setSendBufferSize(int)|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannelConfig/setSendBufferSize(int)|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollSocketChannelConfig/setKeepAlive(boolean)|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/unix/Socket/setKeepAlive(boolean)|",
+      "|java+method:///io/netty/channel/epoll/EpollSocketChannelConfig/setKeepAlive(boolean)|",
+      "|java+method:///io/netty/channel/epoll/EpollSocketChannel/fd()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/setKeepAlive(boolean)|",
+      "|java+method:///io/netty/channel/epoll/EpollSocketChannelConfig/setKeepAlive(boolean)|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollDatagramChannelConfig/getReceiveBufferSize()|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/unix/Socket/getReceiveBufferSize()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannel/fd()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/getReceiveBufferSize()|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollSocketChannelConfig/setTcpKeepCntl(int)|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/epoll/EpollSocketChannel/fd()|",
+      "|java+method:///io/netty/channel/unix/Socket/intValue()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+      "|java+method:///io/netty/channel/epoll/Native/setTcpKeepCnt(int,int)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/setTcpKeepCnt(int)|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollDomainSocketChannel/doWriteSingle(io.netty.channel.ChannelOutboundBuffer,int)|",
+    "called": "|java+method:///io/netty/channel/ChannelOutboundBuffer/remove()|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/epoll/AbstractEpollStreamChannel/doWriteSingle(io.netty.channel.ChannelOutboundBuffer,int)|",
+      "|java+method:///io/netty/channel/epoll/Native/sendFd(int,int)|",
+      "|java+method:///io/netty/channel/epoll/EpollDomainSocketChannel/fd()|",
+      "|java+method:///io/netty/channel/unix/FileDescriptor/intValue()|",
+      "|java+method:///io/netty/channel/ChannelOutboundBuffer/remove()|",
+      "|java+method:///io/netty/channel/ChannelOutboundBuffer/current()|",
+      "|java+method:///io/netty/channel/unix/Socket/intValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/ChannelOutboundBuffer/current()|",
+      "|java+method:///io/netty/channel/unix/FileDescriptor/intValue()|",
+      "|java+method:///io/netty/channel/ChannelOutboundBuffer/remove()|",
+      "|java+method:///io/netty/channel/epoll/AbstractEpollStreamChannel/doWriteSingle(io.netty.channel.ChannelOutboundBuffer,int)|",
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/sendFd(int)|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/AbstractEpollChannel$AbstractEpollUnsafe/epollOutReady()|",
+    "called": "|java+method:///io/netty/channel/AbstractChannel$AbstractUnsafe/flush0()|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/AbstractChannel$AbstractUnsafe/flush0()|",
+      "|java+method:///io/netty/channel/unix/Socket/isOutputShutdown()|",
+      "|java+method:///io/netty/channel/epoll/AbstractEpollChannel/fd()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/AbstractChannel$AbstractUnsafe/flush0()|",
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/isOutputShutdown()|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollServerChannelConfig/setReuseAddress(boolean)|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/epoll/Native/setReuseAddress(int,int)|",
+      "|java+method:///io/netty/channel/unix/Socket/intValue()|",
+      "|java+method:///io/netty/channel/epoll/AbstractEpollChannel/fd()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/epoll/EpollServerChannelConfig/setReuseAddress(boolean)|",
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/setReuseAddress(boolean)|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollSocketChannelConfig/getTcpKeepIdle()|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/unix/Socket/intValue()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+      "|java+method:///io/netty/channel/epoll/Native/getTcpKeepIdle(int)|",
+      "|java+method:///io/netty/channel/epoll/EpollSocketChannel/fd()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/getTcpKeepIdle()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollDatagramChannelConfig/setReceiveBufferSize(int)|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/unix/Socket/setReceiveBufferSize(int)|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannelConfig/setReceiveBufferSize(int)|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannel/fd()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/setReceiveBufferSize(int)|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannelConfig/setReceiveBufferSize(int)|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollSocketChannelConfig/isTcpNoDelay()|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/epoll/EpollSocketChannel/fd()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+      "|java+method:///io/netty/channel/unix/Socket/isTcpNoDelay()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/isTcpNoDelay()|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollDatagramChannelConfig/setTrafficClass(int)|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannelConfig/setTrafficClass(int)|",
+      "|java+method:///io/netty/channel/epoll/Native/setTrafficClass(int,int)|",
+      "|java+method:///io/netty/channel/unix/Socket/intValue()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannel/fd()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannelConfig/setTrafficClass(int)|",
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/setTrafficClass(int)|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollServerSocketChannelConfig/isFreeBind()|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/unix/Socket/intValue()|",
+      "|java+method:///io/netty/channel/epoll/Native/isIpFreeBind(int)|",
+      "|java+method:///io/netty/channel/epoll/AbstractEpollChannel/fd()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/isIpFreeBind()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollSocketChannelConfig/setTcpQuickAck(boolean)|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/epoll/EpollSocketChannel/fd()|",
+      "|java+method:///io/netty/channel/unix/Socket/setTcpQuickAck(boolean)|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/setTcpQuickAck(boolean)|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollSocketChannelConfig/getTrafficClass()|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/epoll/EpollSocketChannel/fd()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+      "|java+method:///io/netty/channel/unix/Socket/intValue()|",
+      "|java+method:///io/netty/channel/epoll/Native/getTrafficClass(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/getTrafficClass()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollSocketChannelConfig/setTcpNoDelay(boolean)|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/epoll/EpollSocketChannel/fd()|",
+      "|java+method:///io/netty/channel/epoll/EpollSocketChannelConfig/setTcpNoDelay(boolean)|",
+      "|java+method:///io/netty/channel/unix/Socket/setTcpNoDelay(boolean)|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/epoll/EpollSocketChannelConfig/setTcpNoDelay(boolean)|",
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/setTcpNoDelay(boolean)|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollSocketChannelConfig/setReceiveBufferSize(int)|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/unix/Socket/setReceiveBufferSize(int)|",
+      "|java+method:///io/netty/channel/epoll/EpollSocketChannelConfig/setReceiveBufferSize(int)|",
+      "|java+method:///io/netty/channel/epoll/EpollSocketChannel/fd()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/setReceiveBufferSize(int)|",
+      "|java+method:///io/netty/channel/epoll/EpollSocketChannelConfig/setReceiveBufferSize(int)|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollSocketChannelConfig/getTcpKeepCnt()|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/epoll/Native/getTcpKeepCnt(int)|",
+      "|java+method:///io/netty/channel/epoll/EpollSocketChannel/fd()|",
+      "|java+method:///io/netty/channel/unix/Socket/intValue()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/getTcpKeepCnt()|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollServerSocketChannelConfig/setTcpDeferAccept(int)|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+      "|java+method:///io/netty/channel/unix/Socket/setTcpDeferAccept(int)|",
+      "|java+method:///io/netty/channel/epoll/AbstractEpollChannel/fd()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/setTcpDeferAccept(int)|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollSocketChannelConfig/getSoLinger()|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/epoll/EpollSocketChannel/fd()|",
+      "|java+method:///io/netty/channel/unix/Socket/getSoLinger()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/getSoLinger()|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollSocketChannelConfig/getTcpUserTimeout()|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/epoll/EpollSocketChannel/fd()|",
+      "|java+method:///io/netty/channel/unix/Socket/intValue()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+      "|java+method:///io/netty/channel/epoll/Native/getTcpUserTimeout(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/getTcpUserTimeout()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+constructor:///io/netty/channel/epoll/EpollEventLoop/EpollEventLoop(io.netty.channel.EventLoopGroup,java.util.concurrent.Executor,int,io.netty.channel.SelectStrategy,io.netty.util.concurrent.RejectedExecutionHandler)|",
+    "called": "|java+constructor:///io/netty/channel/SingleThreadEventLoop/SingleThreadEventLoop(io.netty.channel.EventLoopGroup,java.util.concurrent.Executor,boolean,int,io.netty.util.concurrent.RejectedExecutionHandler)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/epoll/Native/newEpollCreate()|",
+      "|java+method:///io/netty/util/internal/ObjectUtil/checkNotNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///io/netty/channel/SingleThreadEventLoop/SingleThreadEventLoop(io.netty.channel.EventLoopGroup,java.util.concurrent.Executor,boolean,int,io.netty.util.concurrent.RejectedExecutionHandler)|",
+      "|java+constructor:///io/netty/util/collection/IntObjectHashMap/IntObjectHashMap(int)|",
+      "|java+method:///io/netty/channel/unix/FileDescriptor/close()|",
+      "|java+method:///io/netty/channel/epoll/Native/epollCtlAdd(int,int,int)|",
+      "|java+constructor:///io/netty/channel/epoll/EpollEventArray/EpollEventArray(int)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///io/netty/channel/epoll/IovArray/IovArray()|",
+      "|java+constructor:///io/netty/channel/epoll/EpollEventLoop$1/EpollEventLoop$1(io.netty.channel.epoll.EpollEventLoop)|",
+      "|java+constructor:///io/netty/channel/epoll/EpollEventLoop$2/EpollEventLoop$2(io.netty.channel.epoll.EpollEventLoop)|",
+      "|java+method:///io/netty/channel/epoll/Native/newEventFd()|",
+      "|java+method:///io/netty/channel/unix/FileDescriptor/intValue()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///io/netty/channel/epoll/Native/newEpollCreate()|",
+      "|java+method:///io/netty/util/internal/ObjectUtil/checkNotNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///io/netty/channel/SingleThreadEventLoop/SingleThreadEventLoop(io.netty.channel.EventLoopGroup,java.util.concurrent.Executor,boolean,int,io.netty.util.concurrent.RejectedExecutionHandler)|",
+      "|java+constructor:///io/netty/channel/unix/IovArray/IovArray()|",
+      "|java+constructor:///io/netty/util/collection/IntObjectHashMap/IntObjectHashMap(int)|",
+      "|java+method:///io/netty/channel/unix/FileDescriptor/close()|",
+      "|java+method:///io/netty/channel/epoll/Native/epollCtlAdd(int,int,int)|",
+      "|java+constructor:///io/netty/channel/epoll/EpollEventArray/EpollEventArray(int)|",
+      "|java+constructor:///io/netty/channel/epoll/EpollEventLoop$1/EpollEventLoop$1(io.netty.channel.epoll.EpollEventLoop)|",
+      "|java+constructor:///io/netty/channel/epoll/EpollEventLoop$2/EpollEventLoop$2(io.netty.channel.epoll.EpollEventLoop)|",
+      "|java+method:///io/netty/channel/epoll/Native/newEventFd()|",
+      "|java+method:///io/netty/channel/unix/FileDescriptor/intValue()|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollDatagramChannel/doWrite(io.netty.channel.ChannelOutboundBuffer)|",
+    "called": "|java+method:///io/netty/channel/ChannelOutboundBuffer/remove()|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannel/config()|",
+      "|java+method:///io/netty/channel/epoll/NativeDatagramPacketArray/packets()|",
+      "|java+method:///io/netty/channel/epoll/NativeDatagramPacketArray/getInstance(io.netty.channel.ChannelOutboundBuffer)|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannel/setFlag(int)|",
+      "|java+method:///io/netty/channel/ChannelOutboundBuffer/size()|",
+      "|java+method:///io/netty/channel/epoll/NativeDatagramPacketArray/count()|",
+      "|java+method:///io/netty/channel/epoll/Native/sendmmsg(int,io.netty.channel.epoll.NativeDatagramPacketArray$NativeDatagramPacket%5B%5D,int,int)|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannel/clearFlag(int)|",
+      "|java+method:///io/netty/channel/ChannelOutboundBuffer/current()|",
+      "|java+method:///io/netty/channel/unix/Socket/intValue()|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannel/fd()|",
+      "|java+method:///io/netty/channel/ChannelOutboundBuffer/remove(java.lang.Throwable)|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannel/doWriteMessage(java.lang.Object)|",
+      "|java+method:///io/netty/channel/ChannelOutboundBuffer/remove()|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannelConfig/getWriteSpinCount()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannel/config()|",
+      "|java+method:///io/netty/channel/epoll/NativeDatagramPacketArray/packets()|",
+      "|java+method:///io/netty/channel/epoll/NativeDatagramPacketArray/getInstance(io.netty.channel.ChannelOutboundBuffer)|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannel/setFlag(int)|",
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/intValue()|",
+      "|java+method:///io/netty/channel/ChannelOutboundBuffer/current()|",
+      "|java+method:///io/netty/channel/ChannelOutboundBuffer/size()|",
+      "|java+method:///io/netty/channel/ChannelOutboundBuffer/remove(java.lang.Throwable)|",
+      "|java+method:///io/netty/channel/epoll/NativeDatagramPacketArray/count()|",
+      "|java+method:///io/netty/channel/epoll/Native/sendmmsg(int,io.netty.channel.epoll.NativeDatagramPacketArray$NativeDatagramPacket%5B%5D,int,int)|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannel/clearFlag(int)|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannel/doWriteMessage(java.lang.Object)|",
+      "|java+method:///io/netty/channel/ChannelOutboundBuffer/remove()|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannelConfig/getWriteSpinCount()|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/AbstractEpollStreamChannel/writeFileRegion(io.netty.channel.ChannelOutboundBuffer,io.netty.channel.FileRegion,int)|",
+    "called": "|java+method:///io/netty/channel/ChannelOutboundBuffer/progress(long)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/FileRegion/transferred()|",
+      "|java+method:///io/netty/channel/ChannelOutboundBuffer/progress(long)|",
+      "|java+method:///io/netty/channel/FileRegion/count()|",
+      "|java+method:///io/netty/channel/FileRegion/transferTo(java.nio.channels.WritableByteChannel,long)|",
+      "|java+constructor:///io/netty/channel/epoll/AbstractEpollStreamChannel$SocketWritableByteChannel/AbstractEpollStreamChannel$SocketWritableByteChannel(io.netty.channel.epoll.AbstractEpollStreamChannel,io.netty.channel.epoll.AbstractEpollStreamChannel$1)|",
+      "|java+method:///io/netty/channel/ChannelOutboundBuffer/remove()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/FileRegion/transferred()|",
+      "|java+method:///io/netty/channel/ChannelOutboundBuffer/progress(long)|",
+      "|java+method:///io/netty/channel/FileRegion/count()|",
+      "|java+constructor:///io/netty/channel/epoll/AbstractEpollStreamChannel$EpollSocketWritableByteChannel/AbstractEpollStreamChannel$EpollSocketWritableByteChannel(io.netty.channel.epoll.AbstractEpollStreamChannel)|",
+      "|java+method:///io/netty/channel/FileRegion/transferTo(java.nio.channels.WritableByteChannel,long)|",
+      "|java+method:///io/netty/channel/ChannelOutboundBuffer/remove()|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollSocketChannelConfig/isKeepAlive()|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/unix/Socket/isKeepAlive()|",
+      "|java+method:///io/netty/channel/epoll/EpollSocketChannel/fd()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/isKeepAlive()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollServerSocketChannelConfig/getTcpDeferAccept()|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/unix/Socket/getTcpDeferAccept()|",
+      "|java+method:///io/netty/channel/epoll/AbstractEpollChannel/fd()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/getTcpDeferAccept()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollDatagramChannelConfig/setBroadcast(boolean)|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannelConfig/setBroadcast(boolean)|",
+      "|java+method:///io/netty/channel/epoll/Native/setBroadcast(int,int)|",
+      "|java+method:///io/netty/channel/unix/Socket/intValue()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannel/fd()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannelConfig/setBroadcast(boolean)|",
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/setBroadcast(boolean)|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/EpollDatagramChannelConfig/getSendBufferSize()|",
+    "called": "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/unix/Socket/getSendBufferSize()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|",
+      "|java+method:///io/netty/channel/epoll/EpollDatagramChannel/fd()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/getSendBufferSize()|",
+      "|java+constructor:///io/netty/channel/ChannelException/ChannelException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+method:///io/netty/channel/epoll/TcpMd5Util/newTcpMd5Sigs(io.netty.channel.epoll.AbstractEpollChannel,java.util.Collection,java.util.Map)|",
+    "called": "|java+method:///io/netty/util/internal/ObjectUtil/checkNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList(int)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/util/Map/isEmpty()|",
+      "|java+method:///java/util/Map/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/Map/containsKey(java.lang.Object)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///io/netty/util/internal/ObjectUtil/checkNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/util/Collections/emptySet()|",
+      "|java+method:///io/netty/channel/unix/Socket/intValue()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+method:///java/util/Collection/add(java.lang.Object)|",
+      "|java+constructor:///java/lang/NullPointerException/NullPointerException(java.lang.String)|",
+      "|java+method:///io/netty/channel/epoll/AbstractEpollChannel/fd()|",
+      "|java+method:///io/netty/channel/epoll/Native/setTcpMd5Sig(int,java.net.InetAddress,byte%5B%5D)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/Map$Entry/getValue()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList(int)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/util/Map/isEmpty()|",
+      "|java+method:///java/util/Map/size()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/util/Map/containsKey(java.lang.Object)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///io/netty/util/internal/ObjectUtil/checkNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/util/Collections/emptySet()|",
+      "|java+method:///io/netty/channel/epoll/LinuxSocket/setTcpMd5Sig(java.net.InetAddress,byte%5B%5D)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+method:///java/util/Collection/add(java.lang.Object)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+constructor:///java/lang/NullPointerException/NullPointerException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/Map$Entry/getValue()|"
+    ],
+    "affectedLib": "io.netty:netty-common:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+initializer:///io/netty/channel/epoll/EpollEventLoop/EpollEventLoop$initializer|",
+    "called": "|java+method:///io/netty/util/internal/logging/InternalLoggerFactory/getInstance(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/util/concurrent/atomic/AtomicIntegerFieldUpdater/newUpdater(java.lang.Class,java.lang.String)|",
+      "|java+method:///io/netty/util/internal/logging/InternalLoggerFactory/getInstance(java.lang.Class)|",
+      "|java+method:///java/lang/Class/desiredAssertionStatus()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/epoll/Epoll/ensureAvailability()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicIntegerFieldUpdater/newUpdater(java.lang.Class,java.lang.String)|",
+      "|java+method:///io/netty/util/internal/logging/InternalLoggerFactory/getInstance(java.lang.Class)|",
+      "|java+method:///java/lang/Class/desiredAssertionStatus()|"
+    ],
+    "affectedLib": "io.netty:netty-common:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+initializer:///io/netty/channel/epoll/Native/Native$initializer|",
+    "called": "|java+method:///io/netty/util/internal/ThrowableUtil/unknownStackTrace(java.lang.Throwable,java.lang.Class,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/epoll/NativeStaticallyReferencedJniMethods/epollout()|",
+      "|java+method:///io/netty/channel/epoll/NativeStaticallyReferencedJniMethods/uioMaxIov()|",
+      "|java+method:///io/netty/channel/epoll/NativeStaticallyReferencedJniMethods/isSupportingTcpFastopen()|",
+      "|java+method:///io/netty/channel/epoll/NativeStaticallyReferencedJniMethods/ssizeMax()|",
+      "|java+method:///io/netty/util/internal/ThrowableUtil/unknownStackTrace(java.lang.Throwable,java.lang.Class,java.lang.String)|",
+      "|java+method:///io/netty/channel/epoll/NativeStaticallyReferencedJniMethods/iovMax()|",
+      "|java+method:///io/netty/channel/epoll/Native/loadNativeLibrary()|",
+      "|java+method:///io/netty/channel/epoll/NativeStaticallyReferencedJniMethods/epollet()|",
+      "|java+method:///io/netty/channel/unix/Errors/newConnectionResetException(java.lang.String,int)|",
+      "|java+method:///io/netty/channel/epoll/NativeStaticallyReferencedJniMethods/isSupportingSendmmsg()|",
+      "|java+method:///io/netty/channel/epoll/Native/offsetofEpollData()|",
+      "|java+method:///io/netty/channel/epoll/NativeStaticallyReferencedJniMethods/kernelVersion()|",
+      "|java+method:///io/netty/channel/epoll/NativeStaticallyReferencedJniMethods/epollerr()|",
+      "|java+constructor:///java/nio/channels/ClosedChannelException/ClosedChannelException()|",
+      "|java+method:///io/netty/channel/epoll/NativeStaticallyReferencedJniMethods/tcpMd5SigMaxKeyLen()|",
+      "|java+method:///io/netty/channel/epoll/NativeStaticallyReferencedJniMethods/epollin()|",
+      "|java+method:///io/netty/channel/epoll/NativeStaticallyReferencedJniMethods/epollrdhup()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/epoll/NativeStaticallyReferencedJniMethods/epollout()|",
+      "|java+method:///io/netty/channel/epoll/NativeStaticallyReferencedJniMethods/isSupportingTcpFastopen()|",
+      "|java+method:///io/netty/util/internal/ThrowableUtil/unknownStackTrace(java.lang.Throwable,java.lang.Class,java.lang.String)|",
+      "|java+method:///io/netty/channel/epoll/Native/loadNativeLibrary()|",
+      "|java+method:///io/netty/channel/epoll/NativeStaticallyReferencedJniMethods/epollet()|",
+      "|java+method:///io/netty/channel/unix/Errors/newConnectionResetException(java.lang.String,int)|",
+      "|java+method:///io/netty/channel/epoll/NativeStaticallyReferencedJniMethods/isSupportingSendmmsg()|",
+      "|java+method:///io/netty/channel/epoll/Native/offsetofEpollData()|",
+      "|java+method:///io/netty/channel/epoll/NativeStaticallyReferencedJniMethods/kernelVersion()|",
+      "|java+method:///io/netty/channel/epoll/NativeStaticallyReferencedJniMethods/epollerr()|",
+      "|java+constructor:///java/nio/channels/ClosedChannelException/ClosedChannelException()|",
+      "|java+method:///io/netty/channel/epoll/NativeStaticallyReferencedJniMethods/tcpMd5SigMaxKeyLen()|",
+      "|java+method:///io/netty/channel/epoll/NativeStaticallyReferencedJniMethods/epollin()|",
+      "|java+method:///io/netty/channel/epoll/NativeStaticallyReferencedJniMethods/epollrdhup()|"
+    ],
+    "affectedLib": "io.netty:netty-common:4.1.11.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.netty:netty-transport-native-epoll:4.1.10.Final",
+    "coordinatesV2": "io.netty:netty-transport-native-epoll:4.1.11.Final",
+    "caller": "|java+constructor:///io/netty/channel/epoll/EpollEventLoop/EpollEventLoop(io.netty.channel.EventLoopGroup,java.util.concurrent.Executor,int,io.netty.channel.SelectStrategy,io.netty.util.concurrent.RejectedExecutionHandler)|",
+    "called": "|java+method:///io/netty/util/internal/ObjectUtil/checkNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/epoll/Native/newEpollCreate()|",
+      "|java+method:///io/netty/util/internal/ObjectUtil/checkNotNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///io/netty/channel/SingleThreadEventLoop/SingleThreadEventLoop(io.netty.channel.EventLoopGroup,java.util.concurrent.Executor,boolean,int,io.netty.util.concurrent.RejectedExecutionHandler)|",
+      "|java+constructor:///io/netty/util/collection/IntObjectHashMap/IntObjectHashMap(int)|",
+      "|java+method:///io/netty/channel/unix/FileDescriptor/close()|",
+      "|java+method:///io/netty/channel/epoll/Native/epollCtlAdd(int,int,int)|",
+      "|java+constructor:///io/netty/channel/epoll/EpollEventArray/EpollEventArray(int)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///io/netty/channel/epoll/IovArray/IovArray()|",
+      "|java+constructor:///io/netty/channel/epoll/EpollEventLoop$1/EpollEventLoop$1(io.netty.channel.epoll.EpollEventLoop)|",
+      "|java+constructor:///io/netty/channel/epoll/EpollEventLoop$2/EpollEventLoop$2(io.netty.channel.epoll.EpollEventLoop)|",
+      "|java+method:///io/netty/channel/epoll/Native/newEventFd()|",
+      "|java+method:///io/netty/channel/unix/FileDescriptor/intValue()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///io/netty/channel/epoll/Native/newEpollCreate()|",
+      "|java+method:///io/netty/util/internal/ObjectUtil/checkNotNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///io/netty/channel/SingleThreadEventLoop/SingleThreadEventLoop(io.netty.channel.EventLoopGroup,java.util.concurrent.Executor,boolean,int,io.netty.util.concurrent.RejectedExecutionHandler)|",
+      "|java+constructor:///io/netty/channel/unix/IovArray/IovArray()|",
+      "|java+constructor:///io/netty/util/collection/IntObjectHashMap/IntObjectHashMap(int)|",
+      "|java+method:///io/netty/channel/unix/FileDescriptor/close()|",
+      "|java+method:///io/netty/channel/epoll/Native/epollCtlAdd(int,int,int)|",
+      "|java+constructor:///io/netty/channel/epoll/EpollEventArray/EpollEventArray(int)|",
+      "|java+constructor:///io/netty/channel/epoll/EpollEventLoop$1/EpollEventLoop$1(io.netty.channel.epoll.EpollEventLoop)|",
+      "|java+constructor:///io/netty/channel/epoll/EpollEventLoop$2/EpollEventLoop$2(io.netty.channel.epoll.EpollEventLoop)|",
+      "|java+method:///io/netty/channel/epoll/Native/newEventFd()|",
+      "|java+method:///io/netty/channel/unix/FileDescriptor/intValue()|"
+    ],
+    "affectedLib": "io.netty:netty-common:4.1.11.Final",
+    "change": "UPDATED"
+  }
+]

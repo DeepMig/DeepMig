@@ -1,0 +1,96 @@
+[
+  {
+    "coordinatesV1": "net.liftweb:lift-util_2.12:3.2.0",
+    "coordinatesV2": "net.liftweb:lift-util_2.12:3.3.0-M2",
+    "caller": "|java+method:///net/liftweb/util/BCrypt/gensalt(int)|",
+    "called": "|java+method:///org/mindrot/jbcrypt/BCrypt/gensalt(int)|",
+    "v1Body": [
+      "|java+constructor:///java/security/SecureRandom/SecureRandom()|",
+      "|java+method:///net/liftweb/util/BCrypt/gensalt(int,java.security.SecureRandom)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/mindrot/jbcrypt/BCrypt/gensalt(int)|"
+    ],
+    "affectedLib": "org.mindrot:jbcrypt:0.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.liftweb:lift-util_2.12:3.2.0",
+    "coordinatesV2": "net.liftweb:lift-util_2.12:3.3.0-M2",
+    "caller": "|java+method:///net/liftweb/util/BCrypt/checkpw(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/mindrot/jbcrypt/BCrypt/checkpw(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/compareTo(java.lang.String)|",
+      "|java+method:///net/liftweb/util/BCrypt/hashpw(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/mindrot/jbcrypt/BCrypt/checkpw(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.mindrot:jbcrypt:0.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.liftweb:lift-util_2.12:3.2.0",
+    "coordinatesV2": "net.liftweb:lift-util_2.12:3.3.0-M2",
+    "caller": "|java+method:///net/liftweb/util/BCrypt/gensalt()|",
+    "called": "|java+method:///org/mindrot/jbcrypt/BCrypt/gensalt()|",
+    "v1Body": [
+      "|java+method:///net/liftweb/util/BCrypt/gensalt(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/mindrot/jbcrypt/BCrypt/gensalt()|"
+    ],
+    "affectedLib": "org.mindrot:jbcrypt:0.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.liftweb:lift-util_2.12:3.2.0",
+    "coordinatesV2": "net.liftweb:lift-util_2.12:3.3.0-M2",
+    "caller": "|java+method:///net/liftweb/util/BCrypt/gensalt(int,java.security.SecureRandom)|",
+    "called": "|java+method:///org/mindrot/jbcrypt/BCrypt/gensalt(int,java.security.SecureRandom)|",
+    "v1Body": [
+      "|java+method:///java/lang/Integer/toString(int)|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+method:///java/security/SecureRandom/nextBytes(byte%5B%5D)|",
+      "|java+method:///net/liftweb/util/BCrypt/encode_base64(byte%5B%5D,int)|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/mindrot/jbcrypt/BCrypt/gensalt(int,java.security.SecureRandom)|"
+    ],
+    "affectedLib": "org.mindrot:jbcrypt:0.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.liftweb:lift-util_2.12:3.2.0",
+    "coordinatesV2": "net.liftweb:lift-util_2.12:3.3.0-M2",
+    "caller": "|java+method:///net/liftweb/util/BCrypt/hashpw(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/mindrot/jbcrypt/BCrypt/hashpw(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///net/liftweb/util/BCrypt/decode_base64(java.lang.String,int)|",
+      "|java+method:///java/lang/StringBuffer/append(char)|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError(java.lang.Object)|",
+      "|java+method:///java/lang/Integer/toString(int)|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/charAt(int)|",
+      "|java+method:///net/liftweb/util/BCrypt/crypt_raw(byte%5B%5D,byte%5B%5D,int)|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+method:///java/lang/String/getBytes(java.lang.String)|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///net/liftweb/util/BCrypt/encode_base64(byte%5B%5D,int)|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+constructor:///net/liftweb/util/BCrypt/BCrypt()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/mindrot/jbcrypt/BCrypt/hashpw(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.mindrot:jbcrypt:0.4",
+    "change": "ADDED"
+  }
+]

@@ -1,0 +1,63 @@
+[
+  {
+    "coordinatesV1": "org.jboss.arquillian:arquillian-impl-base:1.0.0.Alpha4-OSGi",
+    "coordinatesV2": "org.jboss.arquillian:arquillian-impl-base:1.0.0.Alpha5",
+    "caller": "|java+method:///org/jboss/arquillian/impl/EventTestRunnerAdaptor/afterSuite()|",
+    "called": "|java+constructor:///org/jboss/arquillian/spi/event/suite/AfterSuite/AfterSuite()|",
+    "v1Body": [
+      "|java+method:///org/jboss/arquillian/impl/context/ContextLifecycleManager/createRestoreSuiteContext()|",
+      "|java+method:///java/util/Stack/pop()|",
+      "|java+method:///org/jboss/arquillian/impl/context/ContextLifecycleManager/destroySuiteContext()|",
+      "|java+method:///org/jboss/arquillian/impl/context/SuiteContext/fire(org.jboss.arquillian.spi.event.Event)|",
+      "|java+constructor:///org/jboss/arquillian/spi/event/suite/AfterSuite/AfterSuite()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jboss/arquillian/impl/core/spi/Manager/fire(java.lang.Object)|",
+      "|java+constructor:///org/jboss/arquillian/spi/event/suite/AfterSuite/AfterSuite()|"
+    ],
+    "affectedLib": "org.jboss.arquillian:arquillian-spi:1.0.0.Alpha5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jboss.arquillian:arquillian-impl-base:1.0.0.Alpha4-OSGi",
+    "coordinatesV2": "org.jboss.arquillian:arquillian-impl-base:1.0.0.Alpha5",
+    "caller": "|java+method:///org/jboss/arquillian/impl/EventTestRunnerAdaptor/beforeSuite()|",
+    "called": "|java+constructor:///org/jboss/arquillian/spi/event/suite/BeforeSuite/BeforeSuite()|",
+    "v1Body": [
+      "|java+method:///org/jboss/arquillian/impl/context/ContextLifecycleManager/createRestoreSuiteContext()|",
+      "|java+method:///org/jboss/arquillian/spi/Context/fire(org.jboss.arquillian.spi.event.Event)|",
+      "|java+method:///java/util/Stack/push(java.lang.Object)|",
+      "|java+constructor:///org/jboss/arquillian/spi/event/suite/BeforeSuite/BeforeSuite()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/jboss/arquillian/spi/event/suite/BeforeSuite/BeforeSuite()|",
+      "|java+method:///org/jboss/arquillian/impl/core/spi/Manager/fire(java.lang.Object)|"
+    ],
+    "affectedLib": "org.jboss.arquillian:arquillian-spi:1.0.0.Alpha5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jboss.arquillian:arquillian-impl-base:1.0.0.Alpha4-OSGi",
+    "coordinatesV2": "org.jboss.arquillian:arquillian-impl-base:1.0.0.Alpha5",
+    "caller": "|java+method:///org/jboss/arquillian/impl/EventTestRunnerAdaptor/test(org.jboss.arquillian.spi.TestMethodExecutor)|",
+    "called": "|java+constructor:///org/jboss/arquillian/spi/event/suite/Test/Test(org.jboss.arquillian.spi.TestMethodExecutor)|",
+    "v1Body": [
+      "|java+method:///org/jboss/arquillian/impl/context/TestContext/get(java.lang.Class)|",
+      "|java+method:///org/jboss/arquillian/impl/Validate/notNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///org/jboss/arquillian/spi/event/suite/Test/Test(org.jboss.arquillian.spi.TestMethodExecutor)|",
+      "|java+method:///org/jboss/arquillian/spi/TestMethodExecutor/getInstance()|",
+      "|java+method:///org/jboss/arquillian/impl/context/TestContext/fire(org.jboss.arquillian.spi.event.Event)|",
+      "|java+method:///org/jboss/arquillian/impl/context/ContextLifecycleManager/createRestoreTestContext(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/jboss/arquillian/impl/core/spi/Manager/fire(java.lang.Object,org.jboss.arquillian.impl.core.spi.NonManagedObserver)|",
+      "|java+method:///org/jboss/arquillian/impl/Validate/notNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///org/jboss/arquillian/impl/EventTestRunnerAdaptor$1/EventTestRunnerAdaptor$1(org.jboss.arquillian.impl.EventTestRunnerAdaptor,java.util.List)|",
+      "|java+constructor:///org/jboss/arquillian/spi/event/suite/Test/Test(org.jboss.arquillian.spi.TestMethodExecutor)|",
+      "|java+method:///java/util/List/get(int)|"
+    ],
+    "affectedLib": "org.jboss.arquillian:arquillian-spi:1.0.0.Alpha5",
+    "change": "UPDATED"
+  }
+]

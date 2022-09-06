@@ -1,0 +1,122 @@
+[
+  {
+    "coordinatesV1": "org.jvnet.annox:annox:0.4.2",
+    "coordinatesV2": "org.jvnet.annox:annox:0.4.1",
+    "caller": "|java+method:///org/jvnet/annox/model/XMethod/check()|",
+    "called": "|java+method:///org/apache/commons/lang/Validate/isTrue(boolean,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/Validate/isTrue(boolean,java.lang.String)|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/jvnet/annox/model/XMethod/getMethod()|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/jvnet/annox/model/XMethod$XParameter/getType()|",
+      "|java+method:///org/jvnet/annox/model/XMethod/getParameters()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/reflect/Method/getParameterTypes()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/jvnet/annox/model/XMethod/getMethod()|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/jvnet/annox/model/XMethod/getParameters()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/reflect/Method/getParameterTypes()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/jvnet/annox/model/XParameter/getType()|",
+      "|java+method:///org/apache/commons/lang/Validate/isTrue(boolean,java.lang.String)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.jvnet.annox:annox:0.4.2",
+    "coordinatesV2": "org.jvnet.annox:annox:0.4.1",
+    "caller": "|java+method:///org/jvnet/annox/parser/XAnnotationFieldParser$XFieldParser/parse(org.w3c.dom.Element,java.lang.String,java.lang.Class)|",
+    "called": "|java+method:///org/apache/commons/lang/Validate/notNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/jvnet/annox/parser/XAnnotationFieldParser$XFieldParser/construct(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/apache/commons/lang/Validate/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/jvnet/annox/parser/XAnnotationFieldParser$XFieldParser/parse(java.lang.String,java.lang.Class)|",
+      "|java+method:///org/jvnet/annox/util/ElementUtils/getValue(org.w3c.dom.Element,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jvnet/annox/parser/XAnnotationFieldParser$XFieldParser/construct(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/apache/commons/lang/Validate/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/jvnet/annox/parser/XAnnotationFieldParser$XFieldParser/parse(java.lang.String,java.lang.Class)|",
+      "|java+constructor:///org/jvnet/annox/parser/AnnotationElementParseException/AnnotationElementParseException(org.w3c.dom.Element,java.lang.Throwable)|",
+      "|java+method:///org/jvnet/annox/util/ElementUtils/getValue(org.w3c.dom.Element,java.lang.String)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.jvnet.annox:annox:0.4.2",
+    "coordinatesV2": "org.jvnet.annox:annox:0.4.1",
+    "caller": "|java+method:///org/jvnet/annox/parser/XAnnotationParser/parse(org.w3c.dom.Element)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/jvnet/annox/model/XAnnotation/XAnnotation(java.lang.Class,org.jvnet.annox.model.XAnnotationField%5B%5D)|",
+      "|java+method:///org/w3c/dom/Element/getAttributeNS(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang/Validate/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///org/w3c/dom/Element/getLocalName()|",
+      "|java+method:///org/w3c/dom/Element/getNamespaceURI()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+method:///java/lang/Class/isAssignableFrom(java.lang.Class)|",
+      "|java+method:///org/jvnet/annox/parser/XAnnotationParser/parseFields(org.w3c.dom.Element,java.lang.Class)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/jvnet/annox/model/XAnnotation/XAnnotation(java.lang.Class,org.jvnet.annox.model.XAnnotationField%5B%5D)|",
+      "|java+method:///org/w3c/dom/Element/getAttributeNS(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang/Validate/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///org/w3c/dom/Element/getLocalName()|",
+      "|java+method:///org/w3c/dom/Element/getNamespaceURI()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///org/jvnet/annox/parser/AnnotationElementParseException/AnnotationElementParseException(org.w3c.dom.Element,java.lang.Throwable)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+method:///java/lang/Class/isAssignableFrom(java.lang.Class)|",
+      "|java+method:///org/jvnet/annox/parser/XAnnotationParser/parseFields(org.w3c.dom.Element,java.lang.Class)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+constructor:///org/jvnet/annox/annotation/AnnotationClassNotFoundException/AnnotationClassNotFoundException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.jvnet.annox:annox:0.4.2",
+    "coordinatesV2": "org.jvnet.annox:annox:0.4.1",
+    "caller": "|java+method:///org/jvnet/annox/parser/XAnnotationParser/parse(org.w3c.dom.Element%5B%5D)|",
+    "called": "|java+method:///org/apache/commons/lang/Validate/noNullElements(java.lang.Object%5B%5D,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/jvnet/annox/parser/XAnnotationParser/parse(org.w3c.dom.Element)|",
+      "|java+method:///org/apache/commons/lang/Validate/noNullElements(java.lang.Object%5B%5D,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jvnet/annox/parser/XAnnotationParser/parse(org.w3c.dom.Element)|",
+      "|java+constructor:///org/jvnet/annox/parser/AnnotationElementParseException/AnnotationElementParseException(org.w3c.dom.Element,java.lang.Throwable)|",
+      "|java+method:///org/apache/commons/lang/Validate/noNullElements(java.lang.Object%5B%5D,java.lang.String)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.1",
+    "change": "REMOVED"
+  }
+]

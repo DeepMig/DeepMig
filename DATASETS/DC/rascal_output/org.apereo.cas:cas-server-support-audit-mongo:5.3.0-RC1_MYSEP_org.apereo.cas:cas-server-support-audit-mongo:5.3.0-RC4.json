@@ -1,0 +1,32 @@
+[
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-audit-mongo:5.3.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-audit-mongo:5.3.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/config/CasSupportMongoDbAuditConfiguration/mongoDbAuditTrailManager()|",
+    "called": "|java+method:///org/apereo/cas/mongo/MongoDbConnectionFactory/buildMongoTemplate(org.apereo.cas.configuration.model.support.mongo.BaseMongoDbProperties)|",
+    "v1Body": [
+      "|java+method:///org/apereo/cas/configuration/model/core/audit/AuditProperties/getMongo()|",
+      "|java+method:///org/apereo/cas/configuration/CasConfigurationProperties/getAudit()|",
+      "|java+method:///org/apereo/cas/mongo/MongoDbConnectionFactory/createCollection(org.springframework.data.mongodb.core.MongoOperations,java.lang.String,boolean)|",
+      "|java+method:///org/apereo/cas/mongo/MongoDbConnectionFactory/buildMongoTemplate(org.apereo.cas.configuration.model.support.mongo.BaseMongoDbProperties)|",
+      "|java+method:///org/apereo/cas/configuration/model/core/audit/AuditMongoDbProperties/getCollection()|",
+      "|java+constructor:///org/apereo/cas/mongo/MongoDbConnectionFactory/MongoDbConnectionFactory()|",
+      "|java+method:///org/apereo/cas/configuration/model/core/audit/AuditMongoDbProperties/isDropCollection()|",
+      "|java+constructor:///org/apereo/cas/audit/MongoDbAuditTrailManager/MongoDbAuditTrailManager(org.springframework.data.mongodb.core.MongoTemplate,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apereo/cas/configuration/CasConfigurationProperties/getAudit()|",
+      "|java+method:///org/apereo/cas/mongo/MongoDbConnectionFactory/createCollection(org.springframework.data.mongodb.core.MongoOperations,java.lang.String,boolean)|",
+      "|java+method:///org/apereo/cas/mongo/MongoDbConnectionFactory/buildMongoTemplate(org.apereo.cas.configuration.model.support.mongo.BaseMongoDbProperties)|",
+      "|java+method:///org/apereo/cas/configuration/model/core/audit/AuditMongoDbProperties/getCollection()|",
+      "|java+constructor:///org/apereo/cas/mongo/MongoDbConnectionFactory/MongoDbConnectionFactory()|",
+      "|java+method:///org/apereo/cas/configuration/model/core/audit/AuditMongoDbProperties/isAsynchronous()|",
+      "|java+method:///org/apereo/cas/configuration/model/core/audit/AuditProperties/getMongo()|",
+      "|java+method:///org/apereo/cas/configuration/model/core/audit/AuditMongoDbProperties/isDropCollection()|",
+      "|java+constructor:///org/apereo/cas/audit/MongoDbAuditTrailManager/MongoDbAuditTrailManager(org.springframework.data.mongodb.core.MongoTemplate,java.lang.String)|",
+      "|java+method:///org/apereo/cas/audit/MongoDbAuditTrailManager/setAsynchronous(boolean)|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-support-mongo-core:5.3.0-RC4",
+    "change": "UPDATED"
+  }
+]

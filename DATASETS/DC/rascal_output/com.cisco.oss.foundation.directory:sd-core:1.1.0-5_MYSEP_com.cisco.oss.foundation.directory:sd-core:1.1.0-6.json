@@ -1,0 +1,81 @@
+[
+  {
+    "coordinatesV1": "com.cisco.oss.foundation.directory:sd-core:1.1.0-6",
+    "coordinatesV2": "com.cisco.oss.foundation.directory:sd-core:1.1.0-5",
+    "caller": "|java+constructor:///com/cisco/oss/foundation/directory/utils/JsonSerializer/JsonSerializer()|",
+    "called": "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.12",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.cisco.oss.foundation.directory:sd-core:1.1.0-6",
+    "coordinatesV2": "com.cisco.oss.foundation.directory:sd-core:1.1.0-5",
+    "caller": "|java+method:///com/cisco/oss/foundation/directory/utils/JsonSerializer/deserialize(byte%5B%5D,java.lang.Class)|",
+    "called": "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(byte%5B%5D,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(byte%5B%5D,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(byte%5B%5D,java.lang.Class)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.12",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.cisco.oss.foundation.directory:sd-core:1.1.0-6",
+    "coordinatesV2": "com.cisco.oss.foundation.directory:sd-core:1.1.0-5",
+    "caller": "|java+method:///com/cisco/oss/foundation/directory/utils/JsonSerializer/serialize(java.lang.Object)|",
+    "called": "|java+method:///org/codehaus/jackson/map/ObjectMapper/writeValue(java.io.OutputStream,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/writeValue(java.io.OutputStream,java.lang.Object)|",
+      "|java+method:///java/io/ByteArrayOutputStream/toByteArray()|",
+      "|java+constructor:///java/io/ByteArrayOutputStream/ByteArrayOutputStream()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValue(java.io.OutputStream,java.lang.Object)|",
+      "|java+method:///java/io/ByteArrayOutputStream/toByteArray()|",
+      "|java+constructor:///java/io/ByteArrayOutputStream/ByteArrayOutputStream()|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.12",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.cisco.oss.foundation.directory:sd-core:1.1.0-5",
+    "coordinatesV2": "com.cisco.oss.foundation.directory:sd-core:1.1.0-6",
+    "caller": "|java+method:///com/cisco/oss/foundation/directory/utils/JsonSerializer/deserialize(byte%5B%5D,java.lang.Class)|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(byte%5B%5D,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(byte%5B%5D,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(byte%5B%5D,java.lang.Class)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.2.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.cisco.oss.foundation.directory:sd-core:1.1.0-5",
+    "coordinatesV2": "com.cisco.oss.foundation.directory:sd-core:1.1.0-6",
+    "caller": "|java+method:///com/cisco/oss/foundation/directory/utils/JsonSerializer/serialize(java.lang.Object)|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValue(java.io.OutputStream,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/writeValue(java.io.OutputStream,java.lang.Object)|",
+      "|java+method:///java/io/ByteArrayOutputStream/toByteArray()|",
+      "|java+constructor:///java/io/ByteArrayOutputStream/ByteArrayOutputStream()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValue(java.io.OutputStream,java.lang.Object)|",
+      "|java+method:///java/io/ByteArrayOutputStream/toByteArray()|",
+      "|java+constructor:///java/io/ByteArrayOutputStream/ByteArrayOutputStream()|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.2.2",
+    "change": "ADDED"
+  }
+]

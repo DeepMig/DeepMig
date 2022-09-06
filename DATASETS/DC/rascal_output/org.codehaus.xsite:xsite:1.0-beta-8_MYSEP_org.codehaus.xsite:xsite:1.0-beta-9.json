@@ -1,0 +1,65 @@
+[
+  {
+    "coordinatesV1": "org.codehaus.xsite:xsite:1.0-beta-8",
+    "coordinatesV2": "org.codehaus.xsite:xsite:1.0-beta-9",
+    "caller": "|java+constructor:///org/codehaus/xsite/XSite/XSite()|",
+    "called": "|java+constructor:///com/thoughtworks/xstream/io/xml/DomDriver/DomDriver()|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/xsite/extractors/SiteMeshPageExtractor/SiteMeshPageExtractor()|",
+      "|java+constructor:///org/codehaus/xsite/skins/FreemarkerSkin/FreemarkerSkin()|",
+      "|java+constructor:///com/thoughtworks/xstream/XStream/XStream(com.thoughtworks.xstream.io.HierarchicalStreamDriver)|",
+      "|java+constructor:///org/codehaus/xsite/loaders/XStreamSitemapLoader/XStreamSitemapLoader(org.codehaus.xsite.PageExtractor,com.thoughtworks.xstream.XStream)|",
+      "|java+constructor:///org/codehaus/xsite/XSite/XSite(org.codehaus.xsite.SitemapLoader,org.codehaus.xsite.Skin,org.codehaus.xsite.LinkValidator%5B%5D)|",
+      "|java+constructor:///com/thoughtworks/xstream/io/xml/DomDriver/DomDriver()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/codehaus/xsite/io/CommonsFileSystem/CommonsFileSystem()|",
+      "|java+constructor:///org/codehaus/xsite/extractors/SiteMeshPageExtractor/SiteMeshPageExtractor()|",
+      "|java+constructor:///org/codehaus/xsite/skins/FreemarkerSkin/FreemarkerSkin()|",
+      "|java+constructor:///org/codehaus/xsite/loaders/XStreamSitemapLoader/XStreamSitemapLoader(org.codehaus.xsite.PageExtractor,com.thoughtworks.xstream.XStream)|",
+      "|java+constructor:///com/thoughtworks/xstream/io/xml/DomDriver/DomDriver()|",
+      "|java+constructor:///org/codehaus/xsite/XSite/XSite(org.codehaus.xsite.SitemapLoader,org.codehaus.xsite.Skin,org.codehaus.xsite.LinkValidator%5B%5D,org.codehaus.xsite.FileSystem)|",
+      "|java+constructor:///com/thoughtworks/xstream/XStream/XStream(com.thoughtworks.xstream.io.HierarchicalStreamDriver)|"
+    ],
+    "affectedLib": "com.thoughtworks.xstream:xstream:1.2.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.codehaus.xsite:xsite:1.0-beta-8",
+    "coordinatesV2": "org.codehaus.xsite:xsite:1.0-beta-9",
+    "caller": "|java+constructor:///org/codehaus/xsite/loaders/XStreamSitemapLoader$PageConverter/XStreamSitemapLoader$PageConverter(java.io.File,org.codehaus.xsite.PageExtractor)|",
+    "called": "|java+constructor:///com/thoughtworks/xstream/converters/basic/AbstractSingleValueConverter/AbstractSingleValueConverter()|",
+    "v1Body": [
+      "|java+constructor:///com/thoughtworks/xstream/converters/basic/AbstractBasicConverter/AbstractBasicConverter()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/thoughtworks/xstream/converters/basic/AbstractSingleValueConverter/AbstractSingleValueConverter()|"
+    ],
+    "affectedLib": "com.thoughtworks.xstream:xstream:1.2.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.codehaus.xsite:xsite:1.0-beta-8",
+    "coordinatesV2": "org.codehaus.xsite:xsite:1.0-beta-9",
+    "caller": "|java+method:///org/codehaus/xsite/loaders/XStreamSitemapLoader/loadFrom(java.io.File)|",
+    "called": "|java+method:///com/thoughtworks/xstream/XStream/registerConverter(com.thoughtworks.xstream.converters.SingleValueConverter)|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/xsite/loaders/XStreamSitemapLoader$PageConverter/XStreamSitemapLoader$PageConverter(java.io.File,org.codehaus.xsite.PageExtractor)|",
+      "|java+constructor:///java/io/FileReader/FileReader(java.io.File)|",
+      "|java+method:///java/io/File/getParentFile()|",
+      "|java+method:///com/thoughtworks/xstream/XStream/fromXML(java.io.Reader)|",
+      "|java+method:///java/io/Reader/close()|",
+      "|java+method:///com/thoughtworks/xstream/XStream/registerConverter(com.thoughtworks.xstream.converters.Converter)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/codehaus/xsite/loaders/XStreamSitemapLoader$PageConverter/XStreamSitemapLoader$PageConverter(java.io.File,org.codehaus.xsite.PageExtractor)|",
+      "|java+method:///com/thoughtworks/xstream/XStream/registerConverter(com.thoughtworks.xstream.converters.SingleValueConverter)|",
+      "|java+constructor:///java/io/FileReader/FileReader(java.io.File)|",
+      "|java+method:///java/io/File/getParentFile()|",
+      "|java+method:///com/thoughtworks/xstream/XStream/fromXML(java.io.Reader)|",
+      "|java+method:///java/io/Reader/close()|"
+    ],
+    "affectedLib": "com.thoughtworks.xstream:xstream:1.2.2",
+    "change": "UPDATED"
+  }
+]

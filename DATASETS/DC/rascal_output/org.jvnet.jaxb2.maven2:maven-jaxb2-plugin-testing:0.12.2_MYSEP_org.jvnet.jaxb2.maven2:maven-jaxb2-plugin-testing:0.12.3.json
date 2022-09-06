@@ -1,0 +1,70 @@
+[
+  {
+    "coordinatesV1": "org.jvnet.jaxb2.maven2:maven-jaxb2-plugin-testing:0.12.3",
+    "coordinatesV2": "org.jvnet.jaxb2.maven2:maven-jaxb2-plugin-testing:0.12.2",
+    "caller": "|java+constructor:///org/jvnet/jaxb2/maven2/test/plugin/foo/FooPlugin/FooPlugin()|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///com/sun/tools/xjc/Plugin/Plugin()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///com/sun/tools/xjc/Plugin/Plugin()|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.jvnet.jaxb2.maven2:maven-jaxb2-plugin-testing:0.12.3",
+    "coordinatesV2": "org.jvnet.jaxb2.maven2:maven-jaxb2-plugin-testing:0.12.2",
+    "caller": "|java+constructor:///org/jvnet/jaxb2/maven2/test/RunXJC2Mojo/RunXJC2Mojo()|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///junit/framework/TestCase/TestCase()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///junit/framework/TestCase/TestCase()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.jvnet.jaxb2.maven2:maven-jaxb2-plugin-testing:0.12.2",
+    "coordinatesV2": "org.jvnet.jaxb2.maven2:maven-jaxb2-plugin-testing:0.12.3",
+    "caller": "|java+constructor:///org/jvnet/jaxb2/maven2/test/plugin/foo/FooPlugin/FooPlugin()|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///com/sun/tools/xjc/Plugin/Plugin()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///com/sun/tools/xjc/Plugin/Plugin()|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.7",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jvnet.jaxb2.maven2:maven-jaxb2-plugin-testing:0.12.2",
+    "coordinatesV2": "org.jvnet.jaxb2.maven2:maven-jaxb2-plugin-testing:0.12.3",
+    "caller": "|java+constructor:///org/jvnet/jaxb2/maven2/test/RunXJC2Mojo/RunXJC2Mojo()|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///junit/framework/TestCase/TestCase()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///junit/framework/TestCase/TestCase()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.7",
+    "change": "ADDED"
+  }
+]

@@ -1,0 +1,81 @@
+[
+  {
+    "coordinatesV1": "org.microemu:microemu-midp:2.0.1",
+    "coordinatesV2": "org.microemu:microemu-midp:2.0.2",
+    "caller": "|java+constructor:///javax/microedition/lcdui/Display/Display()|",
+    "called": "|java+constructor:///edu/emory/mathcs/backport/java/util/concurrent/LinkedBlockingQueue/LinkedBlockingQueue()|",
+    "v1Body": [
+      "|java+method:///javax/microedition/lcdui/Display$EventDispatcher/schedule(java.lang.Runnable,long)|",
+      "|java+constructor:///javax/microedition/lcdui/Display$PaintThread/Display$PaintThread(javax.microedition.lcdui.Display,javax.microedition.lcdui.Display$1)|",
+      "|java+method:///java/lang/Thread/start()|",
+      "|java+constructor:///javax/microedition/lcdui/Display$1/Display$1(javax.microedition.lcdui.Display)|",
+      "|java+constructor:///javax/microedition/lcdui/Display$DisplayAccessor/Display$DisplayAccessor(javax.microedition.lcdui.Display,javax.microedition.lcdui.Display)|",
+      "|java+constructor:///javax/microedition/lcdui/Display$EventDispatcher/Display$EventDispatcher(javax.microedition.lcdui.Display,javax.microedition.lcdui.Display$1)|",
+      "|java+constructor:///java/lang/Thread/Thread(java.lang.Runnable,java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/lang/Thread/setDaemon(boolean)|",
+      "|java+constructor:///javax/microedition/lcdui/Display$2/Display$2(javax.microedition.lcdui.Display)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///javax/microedition/lcdui/Display$TickerPaintTask/Display$TickerPaintTask(javax.microedition.lcdui.Display,javax.microedition.lcdui.Display$1)|",
+      "|java+constructor:///edu/emory/mathcs/backport/java/util/concurrent/LinkedBlockingQueue/LinkedBlockingQueue()|",
+      "|java+constructor:///edu/emory/mathcs/backport/java/util/concurrent/Semaphore/Semaphore(int)|",
+      "|java+constructor:///javax/microedition/lcdui/Display$RunnableWrapper/Display$RunnableWrapper(javax.microedition.lcdui.Display,java.lang.Runnable)|",
+      "|java+method:///java/util/Timer/scheduleAtFixedRate(java.util.TimerTask,long,long)|",
+      "|java+method:///javax/microedition/lcdui/Display/startEventDispatcher()|",
+      "|java+constructor:///javax/microedition/lcdui/Display$DisplayAccessor/Display$DisplayAccessor(javax.microedition.lcdui.Display,javax.microedition.lcdui.Display)|",
+      "|java+constructor:///javax/microedition/lcdui/Display$EventDispatcher/Display$EventDispatcher(javax.microedition.lcdui.Display,javax.microedition.lcdui.Display$1)|",
+      "|java+constructor:///javax/microedition/lcdui/Display$GaugePaintTask/Display$GaugePaintTask(javax.microedition.lcdui.Display,javax.microedition.lcdui.Display$1)|",
+      "|java+constructor:///java/util/Timer/Timer()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "backport-util-concurrent:backport-util-concurrent:3.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.microemu:microemu-midp:2.0.1",
+    "coordinatesV2": "org.microemu:microemu-midp:2.0.2",
+    "caller": "|java+method:///javax/microedition/lcdui/Display/serviceRepaints()|",
+    "called": "|java+method:///edu/emory/mathcs/backport/java/util/concurrent/Semaphore/acquire()|",
+    "v1Body": [
+      "|java+method:///javax/microedition/lcdui/Display$PaintThread/serviceRepaints()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/microemu/device/DeviceDisplay/repaint(int,int,int,int)|",
+      "|java+method:///javax/microedition/lcdui/Displayable/getWidth()|",
+      "|java+method:///java/lang/Thread/getName()|",
+      "|java+method:///java/lang/Thread/currentThread()|",
+      "|java+method:///org/microemu/device/DeviceFactory/getDevice()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/InterruptedException/printStackTrace()|",
+      "|java+method:///edu/emory/mathcs/backport/java/util/concurrent/Semaphore/acquire()|",
+      "|java+method:///javax/microedition/lcdui/Displayable/getHeight()|",
+      "|java+method:///javax/microedition/lcdui/Display/putInQueue(java.lang.Runnable)|",
+      "|java+method:///org/microemu/device/Device/getDeviceDisplay()|",
+      "|java+constructor:///javax/microedition/lcdui/Display$1/Display$1(javax.microedition.lcdui.Display)|"
+    ],
+    "affectedLib": "backport-util-concurrent:backport-util-concurrent:3.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.microemu:microemu-midp:2.0.1",
+    "coordinatesV2": "org.microemu:microemu-midp:2.0.2",
+    "caller": "|java+method:///javax/microedition/lcdui/Display$1/run()|",
+    "called": "|java+method:///edu/emory/mathcs/backport/java/util/concurrent/Semaphore/release()|",
+    "v1Body": [
+      "|java+method:///javax/microedition/lcdui/Display$EventDispatcher/schedule(java.lang.Runnable,long)|",
+      "|java+method:///javax/microedition/lcdui/Displayable/getWidth()|",
+      "|java+method:///javax/microedition/lcdui/Display/access$000(javax.microedition.lcdui.Display)|",
+      "|java+method:///javax/microedition/lcdui/Display/access$200(javax.microedition.lcdui.Display)|",
+      "|java+method:///javax/microedition/lcdui/Display/repaint(javax.microedition.lcdui.Displayable,int,int,int,int)|",
+      "|java+method:///javax/microedition/lcdui/Displayable/getHeight()|",
+      "|java+method:///javax/microedition/lcdui/Displayable/getTicker()|"
+    ],
+    "v2Body": [
+      "|java+method:///edu/emory/mathcs/backport/java/util/concurrent/Semaphore/release()|",
+      "|java+method:///javax/microedition/lcdui/Display/access$900(javax.microedition.lcdui.Display)|"
+    ],
+    "affectedLib": "backport-util-concurrent:backport-util-concurrent:3.0",
+    "change": "ADDED"
+  }
+]

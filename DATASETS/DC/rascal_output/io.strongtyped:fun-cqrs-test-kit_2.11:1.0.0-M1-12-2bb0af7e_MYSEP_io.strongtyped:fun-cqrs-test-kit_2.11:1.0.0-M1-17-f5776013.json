@@ -1,0 +1,141 @@
+[
+  {
+    "coordinatesV1": "io.strongtyped:fun-cqrs-test-kit_2.11:1.0.0-M1-12-2bb0af7e",
+    "coordinatesV2": "io.strongtyped:fun-cqrs-test-kit_2.11:1.0.0-M1-17-f5776013",
+    "caller": "|java+method:///io/funcqrs/test/backend/InMemoryBackend/configure(io.funcqrs.config.ProjectionConfig)|",
+    "called": "|java+method:///rx/RxReactiveStreams/toObservable(org.reactivestreams.Publisher)|",
+    "v1Body": [
+      "|java+method:///rx/lang/scala/Subject/subscribe(scala.Function1)|",
+      "|java+constructor:///io/funcqrs/test/backend/InMemoryBackend$$anonfun$configure$1/InMemoryBackend$$anonfun$configure$1(io.funcqrs.test.backend.InMemoryBackend,io.funcqrs.config.ProjectionConfig)|",
+      "|java+method:///io/funcqrs/test/backend/InMemoryBackend/io$funcqrs$test$backend$InMemoryBackend$$eventStream()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/funcqrs/test/backend/InMemoryBackend$$anonfun$configure$1/InMemoryBackend$$anonfun$configure$1(io.funcqrs.test.backend.InMemoryBackend,io.funcqrs.config.ProjectionConfig)|",
+      "|java+method:///io/funcqrs/config/ProjectionConfig/publisherFactory()|",
+      "|java+method:///rx/RxReactiveStreams/toObservable(org.reactivestreams.Publisher)|",
+      "|java+method:///io/funcqrs/projections/PublisherFactory/from(scala.Option)|",
+      "|java+method:///rx/lang/scala/JavaConversions$/toScalaObservable(rx.Observable)|",
+      "|java+method:///rx/lang/scala/Observable/subscribe(scala.Function1)|"
+    ],
+    "affectedLib": "io.reactivex:rxjava-reactive-streams:1.2.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.strongtyped:fun-cqrs-test-kit_2.11:1.0.0-M1-12-2bb0af7e",
+    "coordinatesV2": "io.strongtyped:fun-cqrs-test-kit_2.11:1.0.0-M1-17-f5776013",
+    "caller": "|java+method:///io/funcqrs/test/InMemoryTestSupport$$anon$1/onFailure()|",
+    "called": "|java+method:///io/funcqrs/projections/Projection$class/onFailure(io.funcqrs.projections.Projection)|",
+    "v1Body": [
+      "|java+method:///io/funcqrs/Projection$class/onFailure(io.funcqrs.Projection)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/funcqrs/projections/Projection$class/onFailure(io.funcqrs.projections.Projection)|"
+    ],
+    "affectedLib": "io.strongtyped:fun-cqrs-core_2.11:1.0.0-M1-17-f5776013",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.strongtyped:fun-cqrs-test-kit_2.11:1.0.0-M1-12-2bb0af7e",
+    "coordinatesV2": "io.strongtyped:fun-cqrs-test-kit_2.11:1.0.0-M1-17-f5776013",
+    "caller": "|java+method:///io/funcqrs/test/InMemoryTestSupport$class/backend(io.funcqrs.test.InMemoryTestSupport)|",
+    "called": "|java+method:///io/funcqrs/config/Api$/projection(io.funcqrs.projections.Projection,io.funcqrs.projections.PublisherFactory,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///io/funcqrs/test/backend/InMemoryBackend/InMemoryBackend()|",
+      "|java+method:///io/funcqrs/config/package$/api()|",
+      "|java+method:///io/funcqrs/test/InMemoryTestSupport/configure(io.funcqrs.test.backend.InMemoryBackend)|",
+      "|java+method:///io/funcqrs/test/InMemoryTestSupport/io$funcqrs$test$InMemoryTestSupport$$internalProjection()|",
+      "|java+method:///io/funcqrs/config/Api$/projection(io.funcqrs.backend.Query,io.funcqrs.Projection,java.lang.String)|",
+      "|java+method:///io/funcqrs/test/backend/InMemoryBackend/configure(io.funcqrs.config.ProjectionConfig)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/funcqrs/test/backend/InMemoryBackend/InMemoryBackend()|",
+      "|java+method:///io/funcqrs/config/package$/api()|",
+      "|java+method:///io/funcqrs/test/InMemoryTestSupport/configure(io.funcqrs.test.backend.InMemoryBackend)|",
+      "|java+method:///io/funcqrs/config/Api$/projection(io.funcqrs.projections.Projection,io.funcqrs.projections.PublisherFactory,java.lang.String)|",
+      "|java+method:///io/funcqrs/test/InMemoryTestSupport/io$funcqrs$test$InMemoryTestSupport$$internalProjection()|",
+      "|java+method:///io/funcqrs/test/backend/InMemoryBackend/inMemoryPublisherFactory()|",
+      "|java+method:///io/funcqrs/test/backend/InMemoryBackend/configure(io.funcqrs.config.ProjectionConfig)|"
+    ],
+    "affectedLib": "io.strongtyped:fun-cqrs-core_2.11:1.0.0-M1-17-f5776013",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.strongtyped:fun-cqrs-test-kit_2.11:1.0.0-M1-12-2bb0af7e",
+    "coordinatesV2": "io.strongtyped:fun-cqrs-test-kit_2.11:1.0.0-M1-17-f5776013",
+    "caller": "|java+method:///io/funcqrs/test/InMemoryTestSupport$$anon$1/name()|",
+    "called": "|java+method:///io/funcqrs/projections/Projection$class/name(io.funcqrs.projections.Projection)|",
+    "v1Body": [
+      "|java+method:///io/funcqrs/Projection$class/name(io.funcqrs.Projection)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/funcqrs/projections/Projection$class/name(io.funcqrs.projections.Projection)|"
+    ],
+    "affectedLib": "io.strongtyped:fun-cqrs-core_2.11:1.0.0-M1-17-f5776013",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.strongtyped:fun-cqrs-test-kit_2.11:1.0.0-M1-12-2bb0af7e",
+    "coordinatesV2": "io.strongtyped:fun-cqrs-test-kit_2.11:1.0.0-M1-17-f5776013",
+    "caller": "|java+method:///io/funcqrs/test/InMemoryTestSupport$$anon$1/handleEvent()|",
+    "called": "|java+method:///io/funcqrs/projections/Projection$sync$HandleEvent$/apply(scala.PartialFunction)|",
+    "v1Body": [
+      "|java+constructor:///io/funcqrs/test/InMemoryTestSupport$$anon$1$$anonfun$handleEvent$1/InMemoryTestSupport$$anon$1$$anonfun$handleEvent$1(io.funcqrs.test.InMemoryTestSupport$$anon$1)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/funcqrs/test/InMemoryTestSupport$$anon$1/sync()|",
+      "|java+method:///io/funcqrs/projections/Projection$sync$/HandleEvent()|",
+      "|java+constructor:///io/funcqrs/test/InMemoryTestSupport$$anon$1$$anonfun$handleEvent$1/InMemoryTestSupport$$anon$1$$anonfun$handleEvent$1(io.funcqrs.test.InMemoryTestSupport$$anon$1)|",
+      "|java+method:///io/funcqrs/projections/Projection$sync$HandleEvent$/apply(scala.PartialFunction)|"
+    ],
+    "affectedLib": "io.strongtyped:fun-cqrs-core_2.11:1.0.0-M1-17-f5776013",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.strongtyped:fun-cqrs-test-kit_2.11:1.0.0-M1-12-2bb0af7e",
+    "coordinatesV2": "io.strongtyped:fun-cqrs-test-kit_2.11:1.0.0-M1-17-f5776013",
+    "caller": "|java+method:///io/funcqrs/test/backend/InMemoryBackend$InMemoryAggregateRef/exists()|",
+    "called": "|java+method:///io/funcqrs/AggregateRef$class/exists(io.funcqrs.AggregateRef)|",
+    "v1Body": [
+      "|java+method:///scala/Option/isDefined()|",
+      "|java+method:///io/funcqrs/test/backend/InMemoryBackend$InMemoryAggregateRef/exists()|",
+      "|java+method:///scala/runtime/BoxesRunTime/boxToBoolean(boolean)|",
+      "|java+method:///io/funcqrs/test/backend/InMemoryBackend$InMemoryAggregateRef/aggregateState()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/funcqrs/AggregateRef$class/exists(io.funcqrs.AggregateRef)|"
+    ],
+    "affectedLib": "io.strongtyped:fun-cqrs-core_2.11:1.0.0-M1-17-f5776013",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.strongtyped:fun-cqrs-test-kit_2.11:1.0.0-M1-12-2bb0af7e",
+    "coordinatesV2": "io.strongtyped:fun-cqrs-test-kit_2.11:1.0.0-M1-17-f5776013",
+    "caller": "|java+method:///io/funcqrs/test/InMemoryTestSupport$$anon$1/onEvent(java.lang.Object)|",
+    "called": "|java+method:///io/funcqrs/projections/Projection$class/onEvent(io.funcqrs.projections.Projection,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///io/funcqrs/Projection$class/onEvent(io.funcqrs.Projection,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/funcqrs/projections/Projection$class/onEvent(io.funcqrs.projections.Projection,java.lang.Object)|"
+    ],
+    "affectedLib": "io.strongtyped:fun-cqrs-core_2.11:1.0.0-M1-17-f5776013",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.strongtyped:fun-cqrs-test-kit_2.11:1.0.0-M1-12-2bb0af7e",
+    "coordinatesV2": "io.strongtyped:fun-cqrs-test-kit_2.11:1.0.0-M1-17-f5776013",
+    "caller": "|java+method:///io/funcqrs/test/backend/InMemoryBackend$InMemoryAggregateRef$$anon$1/exists()|",
+    "called": "|java+method:///io/funcqrs/AggregateRef$class/exists(io.funcqrs.AggregateRef)|",
+    "v1Body": [
+      "|java+method:///scala/concurrent/Future$/successful(java.lang.Object)|",
+      "|java+method:///io/funcqrs/test/backend/InMemoryBackend$InMemoryAggregateRef/exists()|",
+      "|java+method:///scala/runtime/BoxesRunTime/boxToBoolean(boolean)|",
+      "|java+method:///io/funcqrs/test/backend/InMemoryBackend$InMemoryAggregateRef$$anon$1/exists()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/funcqrs/AggregateRef$class/exists(io.funcqrs.AggregateRef)|"
+    ],
+    "affectedLib": "io.strongtyped:fun-cqrs-core_2.11:1.0.0-M1-17-f5776013",
+    "change": "UPDATED"
+  }
+]

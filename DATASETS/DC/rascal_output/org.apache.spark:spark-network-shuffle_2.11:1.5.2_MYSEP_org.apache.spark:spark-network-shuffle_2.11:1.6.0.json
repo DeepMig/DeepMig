@@ -1,0 +1,181 @@
+[
+  {
+    "coordinatesV1": "org.apache.spark:spark-network-shuffle_2.11:1.5.2",
+    "coordinatesV2": "org.apache.spark:spark-network-shuffle_2.11:1.6.0",
+    "caller": "|java+initializer:///org/apache/spark/network/shuffle/ExternalShuffleBlockResolver/ExternalShuffleBlockResolver$initializer|",
+    "called": "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/spark/network/shuffle/ExternalShuffleBlockResolver$StoreVersion/ExternalShuffleBlockResolver$StoreVersion(int,int)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.4.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.spark:spark-network-shuffle_2.11:1.5.2",
+    "coordinatesV2": "org.apache.spark:spark-network-shuffle_2.11:1.6.0",
+    "caller": "|java+method:///org/apache/spark/network/shuffle/ExternalShuffleBlockResolver/registerExecutor(java.lang.String,java.lang.String,org.apache.spark.network.shuffle.protocol.ExecutorShuffleInfo)|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValueAsString(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/concurrent/ConcurrentMap/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/apache/spark/network/shuffle/ExternalShuffleBlockResolver$AppExecId/ExternalShuffleBlockResolver$AppExecId(java.lang.String,java.lang.String,org.apache.spark.network.shuffle.ExternalShuffleBlockResolver$1)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/spark/network/shuffle/ExternalShuffleBlockResolver/dbAppExecKey(org.apache.spark.network.shuffle.ExternalShuffleBlockResolver$AppExecId)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValueAsString(java.lang.Object)|",
+      "|java+method:///org/iq80/leveldb/DB/put(byte%5B%5D,byte%5B%5D)|",
+      "|java+method:///java/util/concurrent/ConcurrentMap/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///org/apache/spark/network/shuffle/ExternalShuffleBlockResolver$AppExecId/ExternalShuffleBlockResolver$AppExecId(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/String/getBytes(java.nio.charset.Charset)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.4.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.spark:spark-network-shuffle_2.11:1.5.2",
+    "coordinatesV2": "org.apache.spark:spark-network-shuffle_2.11:1.6.0",
+    "caller": "|java+method:///org/apache/spark/network/shuffle/mesos/MesosExternalShuffleClient/registerDriverWithShuffleService(java.lang.String,int)|",
+    "called": "|java+method:///org/apache/spark/network/client/TransportClient/sendRpc(java.nio.ByteBuffer,org.apache.spark.network.client.RpcResponseCallback)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/spark/network/shuffle/protocol/mesos/RegisterDriver/RegisterDriver(java.lang.String)|",
+      "|java+method:///org/apache/spark/network/shuffle/protocol/mesos/RegisterDriver/toByteArray()|",
+      "|java+method:///org/apache/spark/network/client/TransportClient/sendRpc(byte%5B%5D,org.apache.spark.network.client.RpcResponseCallback)|",
+      "|java+method:///org/apache/spark/network/client/TransportClientFactory/createClient(java.lang.String,int)|",
+      "|java+method:///org/apache/spark/network/shuffle/mesos/MesosExternalShuffleClient/checkInit()|",
+      "|java+constructor:///org/apache/spark/network/shuffle/mesos/MesosExternalShuffleClient$1/MesosExternalShuffleClient$1(org.apache.spark.network.shuffle.mesos.MesosExternalShuffleClient)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/spark/network/shuffle/protocol/mesos/RegisterDriver/RegisterDriver(java.lang.String)|",
+      "|java+method:///org/apache/spark/network/client/TransportClient/sendRpc(java.nio.ByteBuffer,org.apache.spark.network.client.RpcResponseCallback)|",
+      "|java+method:///org/apache/spark/network/client/TransportClientFactory/createClient(java.lang.String,int)|",
+      "|java+method:///org/apache/spark/network/shuffle/protocol/mesos/RegisterDriver/toByteBuffer()|",
+      "|java+method:///org/apache/spark/network/shuffle/mesos/MesosExternalShuffleClient/checkInit()|",
+      "|java+constructor:///org/apache/spark/network/shuffle/mesos/MesosExternalShuffleClient$1/MesosExternalShuffleClient$1(org.apache.spark.network.shuffle.mesos.MesosExternalShuffleClient)|"
+    ],
+    "affectedLib": "org.apache.spark:spark-network-common_2.11:1.6.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.spark:spark-network-shuffle_2.11:1.5.2",
+    "coordinatesV2": "org.apache.spark:spark-network-shuffle_2.11:1.6.0",
+    "caller": "|java+method:///org/apache/spark/network/shuffle/ExternalShuffleClient/init(java.lang.String)|",
+    "called": "|java+constructor:///org/apache/spark/network/TransportContext/TransportContext(org.apache.spark.network.util.TransportConf,org.apache.spark.network.server.RpcHandler,boolean)|",
+    "v1Body": [
+      "|java+method:///org/apache/spark/network/TransportContext/createClientFactory(java.util.List)|",
+      "|java+constructor:///org/apache/spark/network/server/NoOpRpcHandler/NoOpRpcHandler()|",
+      "|java+method:///org/spark-project/guava/collect/Lists/newArrayList()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///org/apache/spark/network/sasl/SaslClientBootstrap/SaslClientBootstrap(org.apache.spark.network.util.TransportConf,java.lang.String,org.apache.spark.network.sasl.SecretKeyHolder,boolean)|",
+      "|java+constructor:///org/apache/spark/network/TransportContext/TransportContext(org.apache.spark.network.util.TransportConf,org.apache.spark.network.server.RpcHandler)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/spark/network/TransportContext/createClientFactory(java.util.List)|",
+      "|java+constructor:///org/apache/spark/network/server/NoOpRpcHandler/NoOpRpcHandler()|",
+      "|java+method:///org/spark-project/guava/collect/Lists/newArrayList()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///org/apache/spark/network/sasl/SaslClientBootstrap/SaslClientBootstrap(org.apache.spark.network.util.TransportConf,java.lang.String,org.apache.spark.network.sasl.SecretKeyHolder,boolean)|",
+      "|java+constructor:///org/apache/spark/network/TransportContext/TransportContext(org.apache.spark.network.util.TransportConf,org.apache.spark.network.server.RpcHandler,boolean)|"
+    ],
+    "affectedLib": "org.apache.spark:spark-network-common_2.11:1.6.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.spark:spark-network-shuffle_2.11:1.5.2",
+    "coordinatesV2": "org.apache.spark:spark-network-shuffle_2.11:1.6.0",
+    "caller": "|java+method:///org/apache/spark/network/shuffle/ExternalShuffleBlockHandler/handleMessage(org.apache.spark.network.shuffle.protocol.BlockTransferMessage,org.apache.spark.network.client.TransportClient,org.apache.spark.network.client.RpcResponseCallback)|",
+    "called": "|java+method:///org/apache/spark/network/server/OneForOneStreamManager/registerStream(java.lang.String,java.util.Iterator)|",
+    "v1Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/spark/network/shuffle/ExternalShuffleBlockResolver/registerExecutor(java.lang.String,java.lang.String,org.apache.spark.network.shuffle.protocol.ExecutorShuffleInfo)|",
+      "|java+method:///org/apache/spark/network/server/OneForOneStreamManager/registerStream(java.util.Iterator)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/UnsupportedOperationException/UnsupportedOperationException(java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/spark/network/shuffle/protocol/StreamHandle/toByteArray()|",
+      "|java+method:///org/apache/spark/network/shuffle/ExternalShuffleBlockResolver/getBlockData(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/spark-project/guava/collect/Lists/newArrayList()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/apache/spark/network/client/RpcResponseCallback/onSuccess(byte%5B%5D)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///org/apache/spark/network/shuffle/protocol/StreamHandle/StreamHandle(long,int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/spark/network/shuffle/ExternalShuffleBlockResolver/getBlockData(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/spark/network/client/TransportClient/getClientId()|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/spark/network/server/OneForOneStreamManager/registerStream(java.lang.String,java.util.Iterator)|",
+      "|java+method:///org/apache/spark/network/shuffle/ExternalShuffleBlockResolver/registerExecutor(java.lang.String,java.lang.String,org.apache.spark.network.shuffle.protocol.ExecutorShuffleInfo)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/UnsupportedOperationException/UnsupportedOperationException(java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/nio/ByteBuffer/wrap(byte%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/spark/network/shuffle/ExternalShuffleBlockHandler/checkAuth(org.apache.spark.network.client.TransportClient,java.lang.String)|",
+      "|java+method:///org/apache/spark/network/shuffle/protocol/StreamHandle/toByteBuffer()|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/spark-project/guava/collect/Lists/newArrayList()|",
+      "|java+method:///org/apache/spark/network/client/RpcResponseCallback/onSuccess(java.nio.ByteBuffer)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///org/apache/spark/network/shuffle/protocol/StreamHandle/StreamHandle(long,int)|"
+    ],
+    "affectedLib": "org.apache.spark:spark-network-common_2.11:1.6.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.spark:spark-network-shuffle_2.11:1.5.2",
+    "coordinatesV2": "org.apache.spark:spark-network-shuffle_2.11:1.6.0",
+    "caller": "|java+method:///org/apache/spark/network/shuffle/OneForOneBlockFetcher/start()|",
+    "called": "|java+method:///org/apache/spark/network/client/TransportClient/sendRpc(java.nio.ByteBuffer,org.apache.spark.network.client.RpcResponseCallback)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/spark/network/shuffle/OneForOneBlockFetcher$1/OneForOneBlockFetcher$1(org.apache.spark.network.shuffle.OneForOneBlockFetcher)|",
+      "|java+method:///org/apache/spark/network/shuffle/protocol/OpenBlocks/toByteArray()|",
+      "|java+method:///org/apache/spark/network/client/TransportClient/sendRpc(byte%5B%5D,org.apache.spark.network.client.RpcResponseCallback)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/spark/network/client/TransportClient/sendRpc(java.nio.ByteBuffer,org.apache.spark.network.client.RpcResponseCallback)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+constructor:///org/apache/spark/network/shuffle/OneForOneBlockFetcher$1/OneForOneBlockFetcher$1(org.apache.spark.network.shuffle.OneForOneBlockFetcher)|",
+      "|java+method:///org/apache/spark/network/shuffle/protocol/OpenBlocks/toByteBuffer()|"
+    ],
+    "affectedLib": "org.apache.spark:spark-network-common_2.11:1.6.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.spark:spark-network-shuffle_2.11:1.5.2",
+    "coordinatesV2": "org.apache.spark:spark-network-shuffle_2.11:1.6.0",
+    "caller": "|java+method:///org/apache/spark/network/shuffle/ExternalShuffleClient/registerWithShuffleServer(java.lang.String,int,java.lang.String,org.apache.spark.network.shuffle.protocol.ExecutorShuffleInfo)|",
+    "called": "|java+method:///org/apache/spark/network/client/TransportClientFactory/createUnmanagedClient(java.lang.String,int)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/spark/network/shuffle/protocol/RegisterExecutor/RegisterExecutor(java.lang.String,java.lang.String,org.apache.spark.network.shuffle.protocol.ExecutorShuffleInfo)|",
+      "|java+method:///org/apache/spark/network/client/TransportClient/sendRpcSync(byte%5B%5D,long)|",
+      "|java+method:///org/apache/spark/network/shuffle/protocol/RegisterExecutor/toByteArray()|",
+      "|java+method:///org/apache/spark/network/client/TransportClientFactory/createClient(java.lang.String,int)|",
+      "|java+method:///org/apache/spark/network/shuffle/ExternalShuffleClient/checkInit()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/spark/network/client/TransportClient/sendRpcSync(java.nio.ByteBuffer,long)|",
+      "|java+method:///org/apache/spark/network/client/TransportClientFactory/createUnmanagedClient(java.lang.String,int)|",
+      "|java+method:///org/apache/spark/network/shuffle/ExternalShuffleClient/checkInit()|",
+      "|java+method:///org/apache/spark/network/client/TransportClient/close()|",
+      "|java+constructor:///org/apache/spark/network/shuffle/protocol/RegisterExecutor/RegisterExecutor(java.lang.String,java.lang.String,org.apache.spark.network.shuffle.protocol.ExecutorShuffleInfo)|",
+      "|java+method:///org/apache/spark/network/shuffle/protocol/RegisterExecutor/toByteBuffer()|"
+    ],
+    "affectedLib": "org.apache.spark:spark-network-common_2.11:1.6.0",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,94 @@
+[
+  {
+    "coordinatesV1": "com.foxinmy:easemob4j:1.1.0",
+    "coordinatesV2": "com.foxinmy:easemob4j:1.0",
+    "caller": "|java+method:///com/foxinmy/easemob4j/api/UserApi/createUser(com.foxinmy.easemob4j.model.User%5B%5D)|",
+    "called": "|java+method:///com/alibaba/fastjson/JSON/toJSONString(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/foxinmy/easemob4j/token/TokenHolder/getToken()|",
+      "|java+method:///com/foxinmy/easemob4j/http/HttpRequest/post(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///com/foxinmy/easemob4j/model/EMAccount/getAppName()|",
+      "|java+method:///com/foxinmy/easemob4j/model/EMAccount/getOrgName()|",
+      "|java+method:///com/foxinmy/easemob4j/token/Token/getAccessToken()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/foxinmy/easemob4j/api/UserApi/getRequestUri(java.lang.String)|",
+      "|java+method:///com/foxinmy/easemob4j/http/Response/getAsResult()|",
+      "|java+method:///com/alibaba/fastjson/JSON/toJSONString(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/foxinmy/easemob4j/token/EasemobTokenHolder/getToken()|",
+      "|java+method:///com/foxinmy/easemob4j/model/EMAccount/getAppName()|",
+      "|java+method:///com/foxinmy/easemob4j/model/EMAccount/getOrgName()|",
+      "|java+method:///com/alibaba/fastjson/JSON/toJavaObject(com.alibaba.fastjson.JSON,java.lang.Class)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/foxinmy/easemob4j/api/UserApi/post(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///com/alibaba/fastjson/JSON/toJSONString(java.lang.Object)|",
+      "|java+method:///com/foxinmy/weixin4j/model/Token/getAccessToken()|",
+      "|java+method:///com/foxinmy/easemob4j/api/UserApi/getRequestUri(java.lang.String)|"
+    ],
+    "affectedLib": "com.alibaba:fastjson:1.2.3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.foxinmy:easemob4j:1.0",
+    "coordinatesV2": "com.foxinmy:easemob4j:1.1.0",
+    "caller": "|java+constructor:///com/foxinmy/easemob4j/EasemobProxy/EasemobProxy()|",
+    "called": "|java+constructor:///com/foxinmy/weixin4j/token/FileTokenStorager/FileTokenStorager(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///com/foxinmy/easemob4j/token/FileTokenHolder/FileTokenHolder()|",
+      "|java+constructor:///com/foxinmy/easemob4j/EasemobProxy/EasemobProxy(com.foxinmy.easemob4j.token.TokenHolder)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/foxinmy/easemob4j/EasemobProxy/EasemobProxy(com.foxinmy.easemob4j.model.EMAccount,com.foxinmy.weixin4j.token.TokenStorager)|",
+      "|java+constructor:///com/foxinmy/weixin4j/token/FileTokenStorager/FileTokenStorager(java.lang.String)|",
+      "|java+method:///com/foxinmy/easemob4j/util/Easemob4jConfigUtil/getValue(java.lang.String,java.lang.String)|",
+      "|java+method:///com/foxinmy/easemob4j/util/Easemob4jConfigUtil/getAccount()|"
+    ],
+    "affectedLib": "com.foxinmy:weixin4j-base:1.6.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.foxinmy:easemob4j:1.0",
+    "coordinatesV2": "com.foxinmy:easemob4j:1.1.0",
+    "caller": "|java+constructor:///com/foxinmy/easemob4j/exception/EasemobException/EasemobException(java.lang.String)|",
+    "called": "|java+constructor:///com/foxinmy/weixin4j/exception/WeixinException/WeixinException(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Exception/Exception()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/foxinmy/weixin4j/exception/WeixinException/WeixinException(java.lang.String)|"
+    ],
+    "affectedLib": "com.foxinmy:weixin4j-base:1.6.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.foxinmy:easemob4j:1.0",
+    "coordinatesV2": "com.foxinmy:easemob4j:1.1.0",
+    "caller": "|java+constructor:///com/foxinmy/easemob4j/exception/EasemobException/EasemobException(java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///com/foxinmy/weixin4j/exception/WeixinException/WeixinException(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Exception/Exception()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/foxinmy/weixin4j/exception/WeixinException/WeixinException(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "com.foxinmy:weixin4j-base:1.6.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.foxinmy:easemob4j:1.0",
+    "coordinatesV2": "com.foxinmy:easemob4j:1.1.0",
+    "caller": "|java+constructor:///com/foxinmy/easemob4j/api/BaseApi/BaseApi()|",
+    "called": "|java+method:///com/foxinmy/weixin4j/http/factory/HttpClientFactory/getInstance()|",
+    "v1Body": [
+      "|java+constructor:///com/foxinmy/easemob4j/http/HttpRequest/HttpRequest()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/foxinmy/weixin4j/http/factory/HttpClientFactory/getInstance()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.foxinmy:weixin4j-base:1.6.4",
+    "change": "ADDED"
+  }
+]

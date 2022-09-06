@@ -1,0 +1,417 @@
+[
+  {
+    "coordinatesV1": "org.databene:databene-webdecs:0.4.9-SR1",
+    "coordinatesV2": "org.databene:databene-webdecs:0.5.0",
+    "caller": "|java+method:///org/databene/text/AbbreviatedNumberFormat/formatFixed(double,java.lang.StringBuffer,java.text.FieldPosition)|",
+    "called": "|java+method:///org/databene/commons/StringUtil/isEmpty(java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+method:///org/databene/commons/StringUtil/isEmpty(java.lang.String)|",
+      "|java+method:///java/lang/StringBuffer/append(char)|",
+      "|java+method:///java/text/NumberFormat/format(double,java.lang.StringBuffer,java.text.FieldPosition)|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuffer/append(char)|",
+      "|java+method:///java/text/NumberFormat/format(double,java.lang.StringBuffer,java.text.FieldPosition)|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+method:///org/databene/commons/StringUtil/isEmpty(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "org.databene:databene-commons:0.5.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.databene:databene-webdecs:0.4.9-SR1",
+    "coordinatesV2": "org.databene:databene-webdecs:0.5.0",
+    "caller": "|java+method:///org/databene/script/ScriptUtil/parseConfigFile()|",
+    "called": "|java+constructor:///org/databene/commons/ConfigurationError/ConfigurationError(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///javax/script/ScriptEngineFactory/getScriptEngine()|",
+      "|java+constructor:///org/databene/commons/ConfigurationError/ConfigurationError(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///javax/script/ScriptEngineManager/ScriptEngineManager()|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///javax/script/ScriptEngineFactory/getNames()|",
+      "|java+method:///java/lang/String/toString()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///org/databene/commons/BeanUtil/newInstance(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/Log/error(java.lang.Object)|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/databene/commons/IOUtil/readProperties(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///javax/script/ScriptEngineManager/getEngineFactories()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///org/databene/script/jsr227/Jsr223ScriptFactory/Jsr223ScriptFactory(javax.script.ScriptEngine)|",
+      "|java+method:///java/util/Map/entrySet()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/databene/commons/ConfigurationError/ConfigurationError(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///javax/script/ScriptEngineManager/ScriptEngineManager()|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///javax/script/ScriptEngineFactory/getNames()|",
+      "|java+method:///org/databene/script/ScriptUtil/addFactory(java.lang.String,org.databene.script.ScriptFactory)|",
+      "|java+method:///java/lang/String/toString()|",
+      "|java+method:///org/databene/commons/BeanUtil/newInstance(java.lang.String)|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/databene/commons/IOUtil/readProperties(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///javax/script/ScriptEngineFactory/getScriptEngine()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///javax/script/ScriptEngineManager/getEngineFactories()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+constructor:///org/databene/script/jsr227/Jsr223ScriptFactory/Jsr223ScriptFactory(javax.script.ScriptEngine)|",
+      "|java+method:///java/util/Map/entrySet()|"
+    ],
+    "affectedLib": "org.databene:databene-commons:0.5.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.databene:databene-webdecs:0.4.9-SR1",
+    "coordinatesV2": "org.databene:databene-webdecs:0.5.0",
+    "caller": "|java+method:///org/databene/webdecs/demo/TextFilterDemo/main(java.lang.String%5B%5D)|",
+    "called": "|java+constructor:///org/databene/commons/iterator/FilteringIterator/FilteringIterator(java.util.Iterator,org.databene.commons.Filter)|",
+    "v1Body": [
+      "|java+method:///java/io/Reader/close()|",
+      "|java+constructor:///java/io/BufferedWriter/BufferedWriter(java.io.Writer)|",
+      "|java+constructor:///org/databene/webdecs/demo/TextFilterDemo$LineFilter/TextFilterDemo$LineFilter(org.databene.webdecs.demo.TextFilterDemo$1)|",
+      "|java+method:///java/io/Writer/close()|",
+      "|java+method:///org/databene/commons/iterator/FilteringIterator/hasNext()|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///org/databene/commons/iterator/FilteringIterator/next()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+constructor:///org/databene/commons/iterator/FilteringIterator/FilteringIterator(java.util.Iterator,org.databene.commons.Filter)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+constructor:///org/databene/commons/ReaderLineIterator/ReaderLineIterator(java.io.Reader)|",
+      "|java+constructor:///java/io/FileReader/FileReader(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+constructor:///java/io/FileWriter/FileWriter(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/io/Writer/write(java.lang.String)|",
+      "|java+method:///org/databene/commons/ReaderLineIterator/lineCount()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/io/BufferedWriter/BufferedWriter(java.io.Writer)|",
+      "|java+method:///java/io/Writer/close()|",
+      "|java+method:///org/databene/commons/iterator/FilteringIterator/hasNext()|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///org/databene/commons/iterator/FilteringIterator/next()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/io/Reader/close()|",
+      "|java+constructor:///org/databene/webdecs/demo/TextFilterDemo$LineFilter/TextFilterDemo$LineFilter()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+constructor:///org/databene/commons/iterator/FilteringIterator/FilteringIterator(java.util.Iterator,org.databene.commons.Filter)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+constructor:///org/databene/commons/ReaderLineIterator/ReaderLineIterator(java.io.Reader)|",
+      "|java+constructor:///java/io/FileReader/FileReader(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+constructor:///java/io/FileWriter/FileWriter(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/io/Writer/write(java.lang.String)|",
+      "|java+method:///org/databene/commons/ReaderLineIterator/lineCount()|"
+    ],
+    "affectedLib": "org.databene:databene-commons:0.5.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.databene:databene-webdecs:0.4.9-SR1",
+    "coordinatesV2": "org.databene:databene-webdecs:0.5.0",
+    "caller": "|java+method:///org/databene/html/HTML2XML/convert(java.lang.String)|",
+    "called": "|java+method:///org/databene/commons/IOUtil/close(java.io.Closeable)|",
+    "v1Body": [
+      "|java+method:///java/io/StringWriter/getBuffer()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+constructor:///java/io/StringReader/StringReader(java.lang.String)|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+method:///org/databene/commons/IOUtil/close(java.io.Reader)|",
+      "|java+constructor:///java/io/StringWriter/StringWriter()|",
+      "|java+method:///org/databene/html/HTML2XML/convert(java.io.Reader,java.io.Writer)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/StringWriter/getBuffer()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+constructor:///java/io/StringReader/StringReader(java.lang.String)|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+constructor:///java/io/StringWriter/StringWriter()|",
+      "|java+method:///org/databene/html/HTML2XML/convert(java.io.Reader,java.io.Writer)|",
+      "|java+method:///org/databene/commons/IOUtil/close(java.io.Closeable)|"
+    ],
+    "affectedLib": "org.databene:databene-commons:0.5.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.databene:databene-webdecs:0.4.9-SR1",
+    "coordinatesV2": "org.databene:databene-webdecs:0.5.0",
+    "caller": "|java+constructor:///org/databene/document/flat/BeanFlatFileWriter$BeanFlatFileScript/BeanFlatFileWriter$BeanFlatFileScript(org.databene.document.flat.FlatFileColumnDescriptor%5B%5D)|",
+    "called": "|java+constructor:///org/databene/commons/format/PadFormat/PadFormat(int,org.databene.commons.format.Alignment,char)|",
+    "v1Body": [
+      "|java+constructor:///org/databene/commons/converter/ToStringConverter/ToStringConverter()|",
+      "|java+constructor:///org/databene/commons/converter/FormatFormatConverter/FormatFormatConverter(java.lang.Class,java.text.Format)|",
+      "|java+constructor:///org/databene/commons/bean/BeanToPropertyArrayConverter/BeanToPropertyArrayConverter(java.lang.String%5B%5D)|",
+      "|java+method:///org/databene/document/flat/FlatFileColumnDescriptor/getAlignment()|",
+      "|java+method:///org/databene/document/flat/FlatFileColumnDescriptor/getWidth()|",
+      "|java+constructor:///org/databene/commons/converter/ConverterChain/ConverterChain(org.databene.commons.Converter%5B%5D)|",
+      "|java+method:///org/databene/document/flat/FlatFileColumnDescriptor/getName()|",
+      "|java+constructor:///org/databene/commons/format/PadFormat/PadFormat(int,org.databene.commons.format.Alignment,char)|",
+      "|java+constructor:///org/databene/commons/converter/ArrayConverter/ArrayConverter(java.lang.Class,java.lang.Class,org.databene.commons.Converter%5B%5D)|",
+      "|java+constructor:///org/databene/script/AbstractScript/AbstractScript()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/databene/commons/converter/ToStringConverter/ToStringConverter()|",
+      "|java+constructor:///org/databene/commons/converter/FormatFormatConverter/FormatFormatConverter(java.lang.Class,java.text.Format,boolean)|",
+      "|java+constructor:///org/databene/commons/bean/BeanToPropertyArrayConverter/BeanToPropertyArrayConverter(java.lang.String%5B%5D)|",
+      "|java+method:///org/databene/document/flat/FlatFileColumnDescriptor/getAlignment()|",
+      "|java+method:///org/databene/document/flat/FlatFileColumnDescriptor/getWidth()|",
+      "|java+constructor:///org/databene/commons/converter/ConverterChain/ConverterChain(org.databene.commons.Converter%5B%5D)|",
+      "|java+method:///org/databene/document/flat/FlatFileColumnDescriptor/getName()|",
+      "|java+constructor:///org/databene/commons/format/PadFormat/PadFormat(int,org.databene.commons.format.Alignment,char)|",
+      "|java+constructor:///org/databene/commons/converter/ArrayConverter/ArrayConverter(java.lang.Class,java.lang.Class,org.databene.commons.Converter%5B%5D)|",
+      "|java+constructor:///org/databene/script/AbstractScript/AbstractScript()|"
+    ],
+    "affectedLib": "org.databene:databene-commons:0.5.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.databene:databene-webdecs:0.4.9-SR1",
+    "coordinatesV2": "org.databene:databene-webdecs:0.5.0",
+    "caller": "|java+constructor:///org/databene/text/DelocalizingConverter/DelocalizingConverter()|",
+    "called": "|java+constructor:///org/databene/commons/converter/ThreadSafeConverter/ThreadSafeConverter(java.lang.Class,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/databene/text/DelocalizingConverter/init()|",
+      "|java+constructor:///org/databene/commons/converter/FixedSourceTypeConverter/FixedSourceTypeConverter(java.lang.Class,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/databene/text/DelocalizingConverter/init()|",
+      "|java+constructor:///org/databene/commons/converter/ThreadSafeConverter/ThreadSafeConverter(java.lang.Class,java.lang.Class)|"
+    ],
+    "affectedLib": "org.databene:databene-commons:0.5.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.databene:databene-webdecs:0.4.9-SR1",
+    "coordinatesV2": "org.databene:databene-webdecs:0.5.0",
+    "caller": "|java+method:///org/databene/webdecs/demo/CSVFilterDemo/main(java.lang.String%5B%5D)|",
+    "called": "|java+constructor:///org/databene/commons/iterator/FilteringIterator/FilteringIterator(java.util.Iterator,org.databene.commons.Filter)|",
+    "v1Body": [
+      "|java+method:///java/io/Reader/close()|",
+      "|java+constructor:///java/io/BufferedWriter/BufferedWriter(java.io.Writer)|",
+      "|java+constructor:///org/databene/document/csv/ArrayCSVWriter/ArrayCSVWriter(java.io.Writer,char)|",
+      "|java+method:///java/io/Writer/close()|",
+      "|java+method:///org/databene/document/csv/CSVLineIterator/lineCount()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+constructor:///org/databene/document/csv/CSVLineIterator/CSVLineIterator(java.io.Reader,char)|",
+      "|java+constructor:///org/databene/commons/iterator/FilteringIterator/FilteringIterator(java.util.Iterator,org.databene.commons.Filter)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+constructor:///java/io/FileReader/FileReader(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+constructor:///java/io/FileWriter/FileWriter(java.lang.String)|",
+      "|java+constructor:///org/databene/webdecs/demo/CSVFilterDemo$RowFilter/CSVFilterDemo$RowFilter(org.databene.webdecs.demo.CSVFilterDemo$1)|",
+      "|java+method:///org/databene/commons/iterator/FilteringIterator/hasNext()|",
+      "|java+method:///org/databene/commons/DocumentWriter/writeElement(java.lang.Object)|",
+      "|java+method:///org/databene/commons/iterator/FilteringIterator/next()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/Reader/close()|",
+      "|java+constructor:///java/io/BufferedWriter/BufferedWriter(java.io.Writer)|",
+      "|java+constructor:///org/databene/document/csv/ArrayCSVWriter/ArrayCSVWriter(java.io.Writer,char)|",
+      "|java+constructor:///org/databene/webdecs/demo/CSVFilterDemo$RowFilter/CSVFilterDemo$RowFilter()|",
+      "|java+method:///java/io/Writer/close()|",
+      "|java+method:///org/databene/document/csv/CSVLineIterator/lineCount()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/databene/commons/iterator/FilteringIterator/hasNext()|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+constructor:///org/databene/document/csv/CSVLineIterator/CSVLineIterator(java.io.Reader,char)|",
+      "|java+constructor:///org/databene/commons/iterator/FilteringIterator/FilteringIterator(java.util.Iterator,org.databene.commons.Filter)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+constructor:///java/io/FileReader/FileReader(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+constructor:///java/io/FileWriter/FileWriter(java.lang.String)|",
+      "|java+method:///org/databene/commons/DocumentWriter/writeElement(java.lang.Object)|",
+      "|java+method:///org/databene/commons/iterator/FilteringIterator/next()|"
+    ],
+    "affectedLib": "org.databene:databene-commons:0.5.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.databene:databene-webdecs:0.4.9-SR1",
+    "coordinatesV2": "org.databene:databene-webdecs:0.5.0",
+    "caller": "|java+constructor:///org/databene/text/SplitStringConverter/SplitStringConverter(char)|",
+    "called": "|java+constructor:///org/databene/commons/converter/ThreadSafeConverter/ThreadSafeConverter(java.lang.Class,java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///org/databene/commons/converter/FixedSourceTypeConverter/FixedSourceTypeConverter(java.lang.Class,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/databene/commons/converter/ThreadSafeConverter/ThreadSafeConverter(java.lang.Class,java.lang.Class)|"
+    ],
+    "affectedLib": "org.databene:databene-commons:0.5.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.databene:databene-webdecs:0.4.9-SR1",
+    "coordinatesV2": "org.databene:databene-webdecs:0.5.0",
+    "caller": "|java+method:///org/databene/text/AbbreviatedNumberFormat/format(double,java.lang.StringBuffer,java.text.FieldPosition)|",
+    "called": "|java+method:///org/databene/commons/StringUtil/isEmpty(java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+method:///org/databene/text/AbbreviatedNumberFormat/formatFixed(double,java.lang.StringBuffer,java.text.FieldPosition)|",
+      "|java+method:///org/databene/commons/StringUtil/isEmpty(java.lang.String)|",
+      "|java+method:///org/databene/text/AbbreviatedNumberFormat/formatFree(double,java.lang.StringBuffer,java.text.FieldPosition)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/databene/text/AbbreviatedNumberFormat/formatFixed(double,java.lang.StringBuffer,java.text.FieldPosition)|",
+      "|java+method:///org/databene/text/AbbreviatedNumberFormat/formatFree(double,java.lang.StringBuffer,java.text.FieldPosition)|",
+      "|java+method:///org/databene/commons/StringUtil/isEmpty(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "org.databene:databene-commons:0.5.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.databene:databene-webdecs:0.4.9-SR1",
+    "coordinatesV2": "org.databene:databene-webdecs:0.5.0",
+    "caller": "|java+constructor:///org/databene/document/flat/FlatFileLineIterator/FlatFileLineIterator(java.lang.String,org.databene.commons.format.PadFormat%5B%5D)|",
+    "called": "|java+method:///org/databene/commons/SystemInfo/getFileEncoding()|",
+    "v1Body": [
+      "|java+constructor:///org/databene/document/flat/FlatFileLineIterator/FlatFileLineIterator(java.lang.String,org.databene.commons.format.PadFormat%5B%5D,java.lang.String)|",
+      "|java+method:///org/databene/commons/SystemInfo/getFileEncoding()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/databene/commons/SystemInfo/getFileEncoding()|",
+      "|java+constructor:///org/databene/document/flat/FlatFileLineIterator/FlatFileLineIterator(java.lang.String,org.databene.commons.format.PadFormat%5B%5D,boolean,java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.databene:databene-commons:0.5.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.databene:databene-webdecs:0.4.9-SR1",
+    "coordinatesV2": "org.databene:databene-webdecs:0.5.0",
+    "caller": "|java+constructor:///org/databene/document/flat/ArrayFlatFileWriter$ArrayFlatFileScript/ArrayFlatFileWriter$ArrayFlatFileScript(org.databene.document.flat.FlatFileColumnDescriptor%5B%5D)|",
+    "called": "|java+constructor:///org/databene/commons/format/PadFormat/PadFormat(int,org.databene.commons.format.Alignment,char)|",
+    "v1Body": [
+      "|java+constructor:///org/databene/commons/converter/ToStringConverter/ToStringConverter()|",
+      "|java+constructor:///org/databene/commons/format/PadFormat/PadFormat(int,org.databene.commons.format.Alignment,char)|",
+      "|java+constructor:///org/databene/commons/converter/FormatFormatConverter/FormatFormatConverter(java.lang.Class,java.text.Format)|",
+      "|java+constructor:///org/databene/script/AbstractScript/AbstractScript()|",
+      "|java+method:///org/databene/document/flat/FlatFileColumnDescriptor/getAlignment()|",
+      "|java+method:///org/databene/document/flat/FlatFileColumnDescriptor/getWidth()|",
+      "|java+constructor:///org/databene/commons/converter/ConverterChain/ConverterChain(org.databene.commons.Converter%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/databene/commons/converter/ToStringConverter/ToStringConverter()|",
+      "|java+constructor:///org/databene/commons/format/PadFormat/PadFormat(int,org.databene.commons.format.Alignment,char)|",
+      "|java+constructor:///org/databene/script/AbstractScript/AbstractScript()|",
+      "|java+constructor:///org/databene/commons/converter/FormatFormatConverter/FormatFormatConverter(java.lang.Class,java.text.Format,boolean)|",
+      "|java+method:///org/databene/document/flat/FlatFileColumnDescriptor/getAlignment()|",
+      "|java+method:///org/databene/document/flat/FlatFileColumnDescriptor/getWidth()|",
+      "|java+constructor:///org/databene/commons/converter/ConverterChain/ConverterChain(org.databene.commons.Converter%5B%5D)|"
+    ],
+    "affectedLib": "org.databene:databene-commons:0.5.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.databene:databene-webdecs:0.4.9-SR1",
+    "coordinatesV2": "org.databene:databene-webdecs:0.5.0",
+    "caller": "|java+constructor:///org/databene/script/ScriptConverter/ScriptConverter(org.databene.commons.Context)|",
+    "called": "|java+constructor:///org/databene/commons/converter/ThreadSafeConverter/ThreadSafeConverter(java.lang.Class,java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///org/databene/commons/converter/FixedSourceTypeConverter/FixedSourceTypeConverter(java.lang.Class,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/databene/commons/converter/ThreadSafeConverter/ThreadSafeConverter(java.lang.Class,java.lang.Class)|"
+    ],
+    "affectedLib": "org.databene:databene-commons:0.5.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.databene:databene-webdecs:0.4.9-SR1",
+    "coordinatesV2": "org.databene:databene-webdecs:0.5.0",
+    "caller": "|java+constructor:///org/databene/text/NormalizeSpaceConverter/NormalizeSpaceConverter()|",
+    "called": "|java+constructor:///org/databene/commons/converter/ThreadSafeConverter/ThreadSafeConverter(java.lang.Class,java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///org/databene/commons/converter/FixedSourceTypeConverter/FixedSourceTypeConverter(java.lang.Class,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/databene/commons/converter/ThreadSafeConverter/ThreadSafeConverter(java.lang.Class,java.lang.Class)|"
+    ],
+    "affectedLib": "org.databene:databene-commons:0.5.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.databene:databene-webdecs:0.4.9-SR1",
+    "coordinatesV2": "org.databene:databene-webdecs:0.5.0",
+    "caller": "|java+method:///org/databene/document/csv/CSVTokenizer/close()|",
+    "called": "|java+method:///org/databene/commons/IOUtil/close(java.io.Closeable)|",
+    "v1Body": [
+      "|java+method:///org/databene/commons/IOUtil/close(java.io.Reader)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/databene/commons/IOUtil/close(java.io.Closeable)|"
+    ],
+    "affectedLib": "org.databene:databene-commons:0.5.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.databene:databene-webdecs:0.4.9-SR1",
+    "coordinatesV2": "org.databene:databene-webdecs:0.5.0",
+    "caller": "|java+method:///org/databene/document/flat/FlatFileLineIterator/fetchNextLine()|",
+    "called": "|java+method:///org/databene/commons/ReaderLineIterator/next()|",
+    "v1Body": [
+      "|java+method:///org/databene/commons/format/PadFormat/getLength()|",
+      "|java+method:///org/databene/commons/StringUtil/isEmpty(java.lang.String)|",
+      "|java+method:///org/databene/commons/ReaderLineIterator/hasNext()|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///org/databene/commons/ReaderLineIterator/next()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/Math/min(int,int)|",
+      "|java+method:///org/databene/document/flat/FlatFileLineIterator/close()|",
+      "|java+method:///org/databene/commons/format/PadFormat/parseObject(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int,int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/databene/commons/ReaderLineIterator/hasNext()|",
+      "|java+method:///org/databene/document/flat/FlatLineParser/parse(java.lang.String)|",
+      "|java+method:///java/util/regex/Matcher/matches()|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///org/databene/commons/ReaderLineIterator/next()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/regex/Pattern/matcher(java.lang.CharSequence)|",
+      "|java+method:///org/databene/document/flat/FlatFileLineIterator/close()|",
+      "|java+method:///org/databene/commons/StringUtil/isEmpty(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "org.databene:databene-commons:0.5.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.databene:databene-webdecs:0.4.9-SR1",
+    "coordinatesV2": "org.databene:databene-webdecs:0.5.0",
+    "caller": "|java+initializer:///org/databene/html/DefaultHTMLTokenizer/DefaultHTMLTokenizer$initializer|",
+    "called": "|java+constructor:///org/databene/commons/CharSet/CharSet(char,char)|",
+    "v1Body": [
+      "|java+constructor:///org/databene/commons/CharSet/CharSet(char,char)|",
+      "|java+method:///org/databene/commons/CharSet/addRange(char,char)|",
+      "|java+method:///org/databene/commons/CharSet/add(char)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/databene/commons/CharSet/CharSet(char,char)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///org/databene/commons/CharSet/addRange(char,char)|",
+      "|java+method:///org/databene/commons/CharSet/add(char)|"
+    ],
+    "affectedLib": "org.databene:databene-commons:0.5.0",
+    "change": "UPDATED"
+  }
+]

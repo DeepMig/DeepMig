@@ -1,0 +1,93 @@
+[
+  {
+    "coordinatesV1": "org.kie.remote:kie-remote-jaxb:7.0.0.Beta1",
+    "coordinatesV2": "org.kie.remote:kie-remote-jaxb:6.2.0.Beta1",
+    "caller": "|java+method:///org/kie/services/client/serialization/jaxb/impl/deploy/JaxbDeploymentUnit/getIdentifier()|",
+    "called": "|java+method:///org/drools/core/util/StringUtils/isEmpty(java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+method:///org/kie/services/client/serialization/jaxb/impl/deploy/JaxbDeploymentUnit/getGroupId()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/String/concat(java.lang.String)|",
+      "|java+method:///org/drools/core/util/StringUtils/isEmpty(java.lang.CharSequence)|",
+      "|java+method:///org/kie/services/client/serialization/jaxb/impl/deploy/JaxbDeploymentUnit/getArtifactId()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/kie/services/client/serialization/jaxb/impl/deploy/JaxbDeploymentUnit/getVersion()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/kie/services/client/serialization/jaxb/impl/deploy/JaxbDeploymentUnit/getGroupId()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/String/concat(java.lang.String)|",
+      "|java+method:///org/kie/services/client/serialization/jaxb/impl/deploy/JaxbDeploymentUnit/getArtifactId()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/kie/services/client/serialization/jaxb/impl/deploy/JaxbDeploymentUnit/getVersion()|"
+    ],
+    "affectedLib": "org.drools:drools-core:6.2.0.Beta1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.kie.remote:kie-remote-jaxb:6.2.0.Beta1",
+    "coordinatesV2": "org.kie.remote:kie-remote-jaxb:7.0.0.Beta1",
+    "caller": "|java+constructor:///org/kie/services/client/serialization/JsonSerializationProvider/JsonSerializationProvider()|",
+    "called": "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+    "v1Body": [
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/enableDefaultTyping(org.codehaus.jackson.map.ObjectMapper$DefaultTyping)|",
+      "|java+constructor:///org/kie/services/client/serialization/JsonSerializationProvider$JaxbJacksonObjectMapper/JsonSerializationProvider$JaxbJacksonObjectMapper()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.13",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.kie.remote:kie-remote-jaxb:6.2.0.Beta1",
+    "coordinatesV2": "org.kie.remote:kie-remote-jaxb:7.0.0.Beta1",
+    "caller": "|java+method:///org/kie/services/client/serialization/JsonSerializationProvider/serialize(java.lang.Object)|",
+    "called": "|java+method:///org/codehaus/jackson/map/ObjectMapper/writeValueAsString(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///org/kie/services/client/serialization/JsonSerializationProvider/serialize(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/writeValueAsString(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/kie/services/client/serialization/SerializationException/SerializationException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/writeValueAsString(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/kie/services/client/serialization/SerializationException/SerializationException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.13",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.kie.remote:kie-remote-jaxb:6.2.0.Beta1",
+    "coordinatesV2": "org.kie.remote:kie-remote-jaxb:7.0.0.Beta1",
+    "caller": "|java+initializer:///org/kie/services/client/serialization/JaxbSerializationProvider/JaxbSerializationProvider$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///java/util/concurrent/CopyOnWriteArraySet/CopyOnWriteArraySet(java.util.Collection)|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/concurrent/CopyOnWriteArraySet/CopyOnWriteArraySet(java.util.Collection)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.7",
+    "change": "ADDED"
+  }
+]

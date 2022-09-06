@@ -1,0 +1,452 @@
+[
+  {
+    "coordinatesV1": "org.openl.rules:org.openl.rules.repository.jcr:5.7.3",
+    "coordinatesV2": "org.openl.rules:org.openl.rules.repository.jcr:5.7.4",
+    "caller": "|java+method:///org/openl/rules/repository/factories/AbstractJcrRepositoryFactory/checkSchemaVersion(javax.jcr.nodetype.NodeTypeManager)|",
+    "called": "|java+constructor:///javax/jcr/RepositoryException/RepositoryException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///javax/jcr/nodetype/NodeTypeManager/getNodeType(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/openl/rules/repository/factories/AbstractJcrRepositoryFactory/getExpectedSchemaVersion()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///javax/jcr/nodetype/NoSuchNodeTypeException/getMessage()|",
+      "|java+method:///javax/jcr/Value/getString()|",
+      "|java+method:///javax/jcr/nodetype/PropertyDefinition/getName()|",
+      "|java+method:///javax/jcr/nodetype/NodeType/getPropertyDefinitions()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///javax/jcr/RepositoryException/RepositoryException(java.lang.String)|",
+      "|java+method:///javax/jcr/nodetype/PropertyDefinition/getDefaultValues()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///javax/jcr/RepositoryException/RepositoryException(java.lang.String)|",
+      "|java+method:///org/openl/rules/repository/factories/AbstractJcrRepositoryFactory/getExpectedSchemaVersion()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/openl/rules/repository/factories/AbstractJcrRepositoryFactory/getCurrentSchemaVersion(javax.jcr.nodetype.NodeTypeManager)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "javax.jcr:jcr:2.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openl.rules:org.openl.rules.repository.jcr:5.7.3",
+    "coordinatesV2": "org.openl.rules:org.openl.rules.repository.jcr:5.7.4",
+    "caller": "|java+method:///org/openl/rules/repository/jcr/JcrLock/getLockedBy()|",
+    "called": "|java+constructor:///org/openl/rules/common/impl/CommonUserImpl/CommonUserImpl(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///javax/jcr/Node/getProperty(java.lang.String)|",
+      "|java+method:///javax/jcr/Node/hasProperty(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/Log/info(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///javax/jcr/Property/getString()|",
+      "|java+constructor:///org/openl/rules/repository/CommonUserImpl/CommonUserImpl(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/jcr/Node/getProperty(java.lang.String)|",
+      "|java+method:///javax/jcr/Node/hasProperty(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/Log/info(java.lang.Object,java.lang.Throwable)|",
+      "|java+constructor:///org/openl/rules/common/impl/CommonUserImpl/CommonUserImpl(java.lang.String)|",
+      "|java+method:///javax/jcr/Property/getString()|"
+    ],
+    "affectedLib": "org.openl.rules:org.openl.rules.repository:5.7.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openl.rules:org.openl.rules.repository.jcr:5.7.3",
+    "coordinatesV2": "org.openl.rules:org.openl.rules.repository.jcr:5.7.4",
+    "caller": "|java+method:///org/openl/rules/repository/jcr/JcrProperty/setValue(java.lang.Object)|",
+    "called": "|java+constructor:///org/openl/rules/repository/exceptions/RRepositoryException/RRepositoryException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///org/openl/rules/repository/RPropertyType/ordinal()|",
+      "|java+method:///org/openl/rules/repository/jcr/JcrEntity/removeProperty(java.lang.String)|",
+      "|java+method:///javax/jcr/Property/setValue(java.lang.String)|",
+      "|java+method:///javax/jcr/Property/setValue(java.util.Calendar)|",
+      "|java+method:///javax/jcr/Node/getProperty(java.lang.String)|",
+      "|java+method:///org/openl/rules/repository/jcr/JcrProperty/date2Calendar(java.util.Date)|",
+      "|java+constructor:///org/openl/rules/repository/exceptions/RRepositoryException/RRepositoryException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///org/openl/rules/repository/jcr/JcrEntity/node()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///javax/jcr/Property/setValue(java.lang.String)|",
+      "|java+method:///org/openl/rules/common/ValueType/ordinal()|",
+      "|java+method:///javax/jcr/Property/setValue(java.util.Calendar)|",
+      "|java+constructor:///org/openl/rules/repository/exceptions/RRepositoryException/RRepositoryException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/jcr/Node/getProperty(java.lang.String)|",
+      "|java+method:///org/openl/rules/repository/jcr/JcrProperty/date2Calendar(java.util.Date)|"
+    ],
+    "affectedLib": "org.openl.rules:org.openl.rules.repository:5.7.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openl.rules:org.openl.rules.repository.jcr:5.7.3",
+    "coordinatesV2": "org.openl.rules:org.openl.rules.repository.jcr:5.7.4",
+    "caller": "|java+constructor:///org/openl/rules/repository/jcr/JcrVersion/JcrVersion(org.openl.rules.repository.RVersion)|",
+    "called": "|java+constructor:///org/openl/rules/common/impl/CommonVersionImpl/CommonVersionImpl(org.openl.rules.common.CommonVersion)|",
+    "v1Body": [
+      "|java+constructor:///org/openl/rules/repository/CommonVersionImpl/CommonVersionImpl(org.openl.rules.repository.CommonVersion)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/openl/rules/repository/RVersion/getCreated()|",
+      "|java+method:///org/openl/rules/common/CommonUser/getUserName()|",
+      "|java+method:///org/openl/rules/repository/RVersion/getCreatedBy()|",
+      "|java+constructor:///org/openl/rules/common/impl/CommonVersionImpl/CommonVersionImpl(org.openl.rules.common.CommonVersion)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.openl.rules:org.openl.rules.repository:5.7.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openl.rules:org.openl.rules.repository.jcr:5.7.3",
+    "coordinatesV2": "org.openl.rules:org.openl.rules.repository.jcr:5.7.4",
+    "caller": "|java+method:///org/openl/rules/repository/jcr/JcrCommonProject/riseVersion(int,int)|",
+    "called": "|java+constructor:///org/openl/rules/common/impl/CommonVersionImpl/CommonVersionImpl(int,int,int)|",
+    "v1Body": [
+      "|java+method:///org/openl/rules/repository/jcr/JcrVersion/getMajor()|",
+      "|java+constructor:///org/openl/rules/repository/exceptions/RRepositoryException/RRepositoryException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/openl/rules/repository/jcr/JcrVersion/getMinor()|",
+      "|java+constructor:///org/openl/rules/repository/CommonVersionImpl/CommonVersionImpl(int,int,int)|",
+      "|java+method:///org/openl/rules/repository/jcr/JcrVersion/getRevision()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/openl/rules/repository/jcr/JcrVersion/getMajor()|",
+      "|java+method:///org/openl/rules/repository/jcr/JcrVersion/getRevision()|",
+      "|java+constructor:///org/openl/rules/common/impl/CommonVersionImpl/CommonVersionImpl(int,int,int)|",
+      "|java+constructor:///org/openl/rules/repository/exceptions/RRepositoryException/RRepositoryException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/openl/rules/repository/jcr/JcrVersion/getMinor()|"
+    ],
+    "affectedLib": "org.openl.rules:org.openl.rules.repository:5.7.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openl.rules:org.openl.rules.repository.jcr:5.7.3",
+    "coordinatesV2": "org.openl.rules:org.openl.rules.repository.jcr:5.7.4",
+    "caller": "|java+method:///org/openl/rules/repository/jcr/JcrDependency/wrapProp(java.lang.String)|",
+    "called": "|java+constructor:///org/openl/rules/common/impl/CommonVersionImpl/CommonVersionImpl(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///javax/jcr/Node/getProperty(java.lang.String)|",
+      "|java+method:///javax/jcr/Node/hasProperty(java.lang.String)|",
+      "|java+constructor:///org/openl/rules/repository/CommonVersionImpl/CommonVersionImpl(java.lang.String)|",
+      "|java+method:///org/openl/rules/repository/jcr/JcrDependency/node()|",
+      "|java+method:///javax/jcr/Property/getString()|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/jcr/Node/getProperty(java.lang.String)|",
+      "|java+method:///javax/jcr/Node/hasProperty(java.lang.String)|",
+      "|java+constructor:///org/openl/rules/common/impl/CommonVersionImpl/CommonVersionImpl(java.lang.String)|",
+      "|java+method:///org/openl/rules/repository/jcr/JcrDependency/node()|",
+      "|java+method:///javax/jcr/Property/getString()|"
+    ],
+    "affectedLib": "org.openl.rules:org.openl.rules.repository:5.7.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openl.rules:org.openl.rules.repository.jcr:5.7.3",
+    "coordinatesV2": "org.openl.rules:org.openl.rules.repository.jcr:5.7.4",
+    "caller": "|java+method:///org/openl/rules/repository/jcr/JcrOldFolder/listNodes(java.util.List,boolean)|",
+    "called": "|java+constructor:///org/openl/rules/repository/exceptions/RRepositoryException/RRepositoryException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///javax/jcr/NodeIterator/nextNode()|",
+      "|java+method:///javax/jcr/Node/getProperty(java.lang.String)|",
+      "|java+method:///org/openl/rules/repository/jcr/JcrOldFolder/node()|",
+      "|java+constructor:///org/openl/rules/repository/jcr/JcrOldFile/JcrOldFile(org.openl.rules.repository.jcr.JcrOldEntity,java.lang.String,javax.jcr.Node)|",
+      "|java+constructor:///org/openl/rules/repository/jcr/JcrOldFolder/JcrOldFolder(org.openl.rules.repository.jcr.JcrOldEntity,java.lang.String,javax.jcr.Node,org.openl.rules.repository.CommonVersion)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///javax/jcr/Node/getNodes()|",
+      "|java+method:///javax/jcr/Property/getString()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///org/openl/rules/repository/exceptions/RRepositoryException/RRepositoryException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///javax/jcr/NodeIterator/hasNext()|",
+      "|java+method:///javax/jcr/Node/getName()|",
+      "|java+method:///org/openl/rules/repository/jcr/NodeUtil/normalizeOldNode(javax.jcr.Node,org.openl.rules.repository.CommonVersion)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/jcr/NodeIterator/nextNode()|",
+      "|java+method:///javax/jcr/Node/getProperty(java.lang.String)|",
+      "|java+method:///org/openl/rules/repository/jcr/JcrOldFolder/node()|",
+      "|java+constructor:///org/openl/rules/repository/jcr/JcrOldFile/JcrOldFile(org.openl.rules.repository.jcr.JcrOldEntity,java.lang.String,javax.jcr.Node)|",
+      "|java+constructor:///org/openl/rules/repository/jcr/JcrOldFolder/JcrOldFolder(org.openl.rules.repository.jcr.JcrOldEntity,java.lang.String,javax.jcr.Node,org.openl.rules.common.CommonVersion)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///javax/jcr/Node/getNodes()|",
+      "|java+method:///javax/jcr/Property/getString()|",
+      "|java+method:///org/openl/rules/repository/jcr/NodeUtil/normalizeOldNode(javax.jcr.Node,org.openl.rules.common.CommonVersion)|",
+      "|java+method:///javax/jcr/Node/getName()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///org/openl/rules/repository/exceptions/RRepositoryException/RRepositoryException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///javax/jcr/NodeIterator/hasNext()|"
+    ],
+    "affectedLib": "org.openl.rules:org.openl.rules.repository:5.7.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openl.rules:org.openl.rules.repository.jcr:5.7.3",
+    "coordinatesV2": "org.openl.rules:org.openl.rules.repository.jcr:5.7.4",
+    "caller": "|java+method:///org/openl/rules/repository/jcr/JcrVersion/nextRevision()|",
+    "called": "|java+constructor:///org/openl/rules/common/impl/CommonVersionImpl/CommonVersionImpl(int,int,int)|",
+    "v1Body": [
+      "|java+constructor:///org/openl/rules/repository/CommonVersionImpl/CommonVersionImpl(int,int,int)|",
+      "|java+method:///org/openl/rules/repository/CommonVersionImpl/getMinor()|",
+      "|java+method:///org/openl/rules/repository/CommonVersionImpl/getRevision()|",
+      "|java+method:///org/openl/rules/repository/CommonVersionImpl/getMajor()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/openl/rules/common/impl/CommonVersionImpl/CommonVersionImpl(int,int,int)|",
+      "|java+method:///org/openl/rules/common/impl/CommonVersionImpl/getRevision()|",
+      "|java+method:///org/openl/rules/common/impl/CommonVersionImpl/getMinor()|",
+      "|java+method:///org/openl/rules/common/impl/CommonVersionImpl/getMajor()|"
+    ],
+    "affectedLib": "org.openl.rules:org.openl.rules.repository:5.7.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openl.rules:org.openl.rules.repository.jcr:5.7.3",
+    "coordinatesV2": "org.openl.rules:org.openl.rules.repository.jcr:5.7.4",
+    "caller": "|java+method:///org/openl/rules/repository/jcr/JcrEntity/getProperty(java.lang.String)|",
+    "called": "|java+constructor:///org/openl/rules/repository/exceptions/RRepositoryException/RRepositoryException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+constructor:///org/openl/rules/repository/exceptions/RRepositoryException/RRepositoryException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/jcr/Node/hasProperty(java.lang.String)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/openl/rules/repository/jcr/JcrProperty/JcrProperty(javax.jcr.Node,javax.jcr.Property)|",
+      "|java+constructor:///org/openl/rules/repository/exceptions/RRepositoryException/RRepositoryException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///javax/jcr/Node/getProperty(java.lang.String)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/openl/rules/repository/exceptions/RRepositoryException/RRepositoryException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///org/openl/rules/repository/jcr/JcrEntity/node()|"
+    ],
+    "affectedLib": "org.openl.rules:org.openl.rules.repository:5.7.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openl.rules:org.openl.rules.repository.jcr:5.7.3",
+    "coordinatesV2": "org.openl.rules:org.openl.rules.repository.jcr:5.7.4",
+    "caller": "|java+method:///org/openl/rules/repository/jcr/JcrVersion/getCreatedBy()|",
+    "called": "|java+constructor:///org/openl/rules/common/impl/CommonUserImpl/CommonUserImpl(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/openl/rules/repository/CommonUserImpl/CommonUserImpl(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/openl/rules/common/impl/CommonUserImpl/CommonUserImpl(java.lang.String)|"
+    ],
+    "affectedLib": "org.openl.rules:org.openl.rules.repository:5.7.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openl.rules:org.openl.rules.repository.jcr:5.7.3",
+    "coordinatesV2": "org.openl.rules:org.openl.rules.repository.jcr:5.7.4",
+    "caller": "|java+method:///org/openl/rules/repository/jcr/JcrVersion/initVersion(javax.jcr.Node)|",
+    "called": "|java+constructor:///org/openl/rules/common/impl/CommonVersionImpl/CommonVersionImpl(int,int,int)|",
+    "v1Body": [
+      "|java+method:///javax/jcr/Property/getLong()|",
+      "|java+method:///javax/jcr/Node/getProperty(java.lang.String)|",
+      "|java+method:///javax/jcr/Node/hasProperty(java.lang.String)|",
+      "|java+constructor:///org/openl/rules/repository/CommonVersionImpl/CommonVersionImpl(int,int,int)|",
+      "|java+method:///javax/jcr/Property/getString()|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/jcr/Property/getLong()|",
+      "|java+method:///javax/jcr/Node/getProperty(java.lang.String)|",
+      "|java+method:///javax/jcr/Node/hasProperty(java.lang.String)|",
+      "|java+constructor:///org/openl/rules/common/impl/CommonVersionImpl/CommonVersionImpl(int,int,int)|",
+      "|java+method:///javax/jcr/Property/getString()|"
+    ],
+    "affectedLib": "org.openl.rules:org.openl.rules.repository:5.7.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openl.rules:org.openl.rules.repository.jcr:5.7.3",
+    "coordinatesV2": "org.openl.rules:org.openl.rules.repository.jcr:5.7.4",
+    "caller": "|java+method:///org/openl/rules/repository/jcr/JcrRepository/runQuery(java.lang.String)|",
+    "called": "|java+constructor:///org/openl/rules/repository/exceptions/RRepositoryException/RRepositoryException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///javax/jcr/query/QueryManager/createQuery(java.lang.String,java.lang.String)|",
+      "|java+method:///javax/jcr/Workspace/getQueryManager()|",
+      "|java+method:///java/util/LinkedList/add(java.lang.Object)|",
+      "|java+constructor:///java/util/LinkedList/LinkedList()|",
+      "|java+method:///javax/jcr/query/Query/execute()|",
+      "|java+method:///javax/jcr/query/QueryResult/getNodes()|",
+      "|java+constructor:///org/openl/rules/repository/jcr/JcrProject/JcrProject(javax.jcr.Node)|",
+      "|java+method:///javax/jcr/Session/getWorkspace()|",
+      "|java+method:///javax/jcr/NodeIterator/nextNode()|",
+      "|java+constructor:///org/openl/rules/repository/exceptions/RRepositoryException/RRepositoryException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///javax/jcr/NodeIterator/hasNext()|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/jcr/Session/getWorkspace()|",
+      "|java+method:///javax/jcr/query/QueryManager/createQuery(java.lang.String,java.lang.String)|",
+      "|java+method:///javax/jcr/Workspace/getQueryManager()|",
+      "|java+method:///javax/jcr/query/Query/execute()|",
+      "|java+method:///javax/jcr/query/QueryResult/getNodes()|",
+      "|java+constructor:///org/openl/rules/repository/exceptions/RRepositoryException/RRepositoryException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.openl.rules:org.openl.rules.repository:5.7.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openl.rules:org.openl.rules.repository.jcr:5.7.3",
+    "coordinatesV2": "org.openl.rules:org.openl.rules.repository.jcr:5.7.4",
+    "caller": "|java+method:///org/openl/rules/repository/jcr/JcrOldEntity/getProperty(java.lang.String)|",
+    "called": "|java+constructor:///org/openl/rules/repository/exceptions/RRepositoryException/RRepositoryException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///org/openl/rules/repository/exceptions/RRepositoryException/RRepositoryException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/jcr/Node/getProperty(java.lang.String)|",
+      "|java+method:///javax/jcr/Node/hasProperty(java.lang.String)|",
+      "|java+method:///org/openl/rules/repository/jcr/JcrOldEntity/node()|",
+      "|java+constructor:///org/openl/rules/repository/jcr/JcrProperty/JcrProperty(javax.jcr.Node,javax.jcr.Property)|",
+      "|java+constructor:///org/openl/rules/repository/exceptions/RRepositoryException/RRepositoryException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.openl.rules:org.openl.rules.repository:5.7.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openl.rules:org.openl.rules.repository.jcr:5.7.3",
+    "coordinatesV2": "org.openl.rules:org.openl.rules.repository.jcr:5.7.4",
+    "caller": "|java+method:///org/openl/rules/repository/jcr/JcrCommonArtefact/delete()|",
+    "called": "|java+constructor:///org/openl/rules/repository/exceptions/RRepositoryException/RRepositoryException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/openl/rules/repository/jcr/NodeUtil/smartCheckout(javax.jcr.Node,boolean)|",
+      "|java+method:///org/openl/rules/repository/jcr/JcrCommonArtefact/node()|",
+      "|java+constructor:///org/openl/rules/repository/exceptions/RRepositoryException/RRepositoryException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///javax/jcr/Node/remove()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/openl/rules/repository/jcr/JcrCommonArtefact/node()|",
+      "|java+method:///javax/jcr/Node/getParent()|",
+      "|java+method:///javax/jcr/Node/remove()|",
+      "|java+constructor:///org/openl/rules/repository/exceptions/RRepositoryException/RRepositoryException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///javax/jcr/Node/save()|"
+    ],
+    "affectedLib": "org.openl.rules:org.openl.rules.repository:5.7.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openl.rules:org.openl.rules.repository.jcr:5.7.3",
+    "coordinatesV2": "org.openl.rules:org.openl.rules.repository.jcr:5.7.4",
+    "caller": "|java+method:///org/openl/rules/repository/jcr/JcrVersion/set(int,int)|",
+    "called": "|java+constructor:///org/openl/rules/common/impl/CommonVersionImpl/CommonVersionImpl(int,int,int)|",
+    "v1Body": [
+      "|java+constructor:///org/openl/rules/repository/CommonVersionImpl/CommonVersionImpl(int,int,int)|",
+      "|java+method:///org/openl/rules/repository/CommonVersionImpl/getRevision()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/openl/rules/common/impl/CommonVersionImpl/CommonVersionImpl(int,int,int)|",
+      "|java+method:///org/openl/rules/common/impl/CommonVersionImpl/getRevision()|"
+    ],
+    "affectedLib": "org.openl.rules:org.openl.rules.repository:5.7.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openl.rules:org.openl.rules.repository.jcr:5.7.3",
+    "coordinatesV2": "org.openl.rules:org.openl.rules.repository.jcr:5.7.4",
+    "caller": "|java+method:///org/openl/rules/repository/jcr/JcrProductionRepository/findNodes(org.openl.rules.repository.RProductionRepository$SearchParams)|",
+    "called": "|java+constructor:///org/openl/rules/repository/exceptions/RRepositoryException/RRepositoryException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///org/openl/rules/repository/jcr/JcrProductionDeployment/JcrProductionDeployment(javax.jcr.Node)|",
+      "|java+method:///javax/jcr/query/QueryManager/createQuery(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///javax/jcr/query/QueryResult/getNodes()|",
+      "|java+constructor:///org/openl/rules/repository/jcr/JcrProductionProject/JcrProductionProject(javax.jcr.Node)|",
+      "|java+constructor:///org/openl/rules/repository/jcr/JcrProductionFolder/JcrProductionFolder(javax.jcr.Node)|",
+      "|java+method:///org/openl/rules/repository/jcr/JcrProductionRepository/buildQuery(org.openl.rules.repository.RProductionRepository$SearchParams)|",
+      "|java+method:///javax/jcr/Session/getWorkspace()|",
+      "|java+method:///javax/jcr/NodeIterator/nextNode()|",
+      "|java+method:///javax/jcr/Node/getPrimaryNodeType()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///javax/jcr/nodetype/NodeType/getName()|",
+      "|java+method:///javax/jcr/Workspace/getQueryManager()|",
+      "|java+method:///javax/jcr/query/Query/execute()|",
+      "|java+constructor:///org/openl/rules/repository/jcr/JcrProductionFile/JcrProductionFile(javax.jcr.Node)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///org/openl/rules/repository/exceptions/RRepositoryException/RRepositoryException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///javax/jcr/NodeIterator/hasNext()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/openl/rules/repository/jcr/JcrProductionRepository$JCR_SQL2QueryBuilder/JcrProductionRepository$JCR_SQL2QueryBuilder()|",
+      "|java+method:///javax/jcr/query/QueryManager/createQuery(java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/openl/rules/common/impl/ArtefactPathImpl/ArtefactPathImpl(java.lang.String%5B%5D)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///javax/jcr/query/Query/execute()|",
+      "|java+method:///javax/jcr/query/QueryResult/getNodes()|",
+      "|java+constructor:///org/openl/rules/repository/jcr/JcrFolderAPI/JcrFolderAPI(javax.jcr.Node,org.openl.rules.common.ArtefactPath)|",
+      "|java+method:///org/openl/rules/repository/jcr/JcrProductionRepository$JCR_SQL2QueryBuilder/buildQuery(org.openl.rules.repository.RProductionRepository$SearchParams)|",
+      "|java+method:///javax/jcr/Session/getWorkspace()|",
+      "|java+method:///javax/jcr/NodeIterator/nextNode()|",
+      "|java+method:///javax/jcr/Node/getPrimaryNodeType()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///javax/jcr/nodetype/NodeType/getName()|",
+      "|java+method:///javax/jcr/Workspace/getQueryManager()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///org/openl/rules/repository/exceptions/RRepositoryException/RRepositoryException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///javax/jcr/NodeIterator/hasNext()|",
+      "|java+constructor:///org/openl/rules/repository/jcr/JcrFileAPI/JcrFileAPI(javax.jcr.Node,org.openl.rules.common.ArtefactPath,boolean)|",
+      "|java+method:///javax/jcr/Node/getName()|"
+    ],
+    "affectedLib": "org.openl.rules:org.openl.rules.repository:5.7.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openl.rules:org.openl.rules.repository.jcr:5.7.3",
+    "coordinatesV2": "org.openl.rules:org.openl.rules.repository.jcr:5.7.4",
+    "caller": "|java+method:///org/openl/rules/repository/jcr/JcrVersion/getVersionName()|",
+    "called": "|java+method:///org/openl/rules/common/impl/CommonVersionImpl/getVersionName()|",
+    "v1Body": [
+      "|java+method:///org/openl/rules/repository/CommonVersionImpl/getVersionName()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/openl/rules/common/impl/CommonVersionImpl/getVersionName()|"
+    ],
+    "affectedLib": "org.openl.rules:org.openl.rules.repository:5.7.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openl.rules:org.openl.rules.repository.jcr:5.7.3",
+    "coordinatesV2": "org.openl.rules:org.openl.rules.repository.jcr:5.7.4",
+    "caller": "|java+method:///org/openl/rules/repository/jcr/JcrDependencies/updateDependencies(java.util.Collection)|",
+    "called": "|java+constructor:///org/openl/rules/repository/exceptions/RRepositoryException/RRepositoryException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/openl/rules/repository/jcr/NodeUtil/smartCheckout(javax.jcr.Node,boolean)|",
+      "|java+method:///javax/jcr/NodeIterator/nextNode()|",
+      "|java+method:///org/openl/rules/repository/RDependency/getUpperLimit()|",
+      "|java+method:///org/openl/rules/repository/RDependency/getLowerLimit()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/openl/rules/repository/jcr/JcrDependency/createDependency(javax.jcr.Node,java.lang.String,org.openl.rules.repository.CommonVersion,org.openl.rules.repository.CommonVersion)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/openl/rules/repository/RDependency/getProjectName()|",
+      "|java+method:///javax/jcr/Node/getNodes()|",
+      "|java+method:///org/openl/rules/repository/jcr/JcrDependencies/node()|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///javax/jcr/Node/remove()|",
+      "|java+constructor:///org/openl/rules/repository/exceptions/RRepositoryException/RRepositoryException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///javax/jcr/Node/save()|",
+      "|java+method:///javax/jcr/NodeIterator/hasNext()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/openl/rules/repository/jcr/NodeUtil/smartCheckout(javax.jcr.Node,boolean)|",
+      "|java+method:///javax/jcr/NodeIterator/nextNode()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/openl/rules/common/ProjectDependency/getProjectName()|",
+      "|java+method:///org/openl/rules/common/ProjectDependency/getUpperLimit()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///javax/jcr/Node/getNodes()|",
+      "|java+method:///org/openl/rules/repository/jcr/JcrDependencies/node()|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///javax/jcr/Node/remove()|",
+      "|java+method:///org/openl/rules/common/ProjectDependency/getLowerLimit()|",
+      "|java+method:///org/openl/rules/repository/jcr/JcrDependency/createDependency(javax.jcr.Node,java.lang.String,org.openl.rules.common.CommonVersion,org.openl.rules.common.CommonVersion)|",
+      "|java+constructor:///org/openl/rules/repository/exceptions/RRepositoryException/RRepositoryException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///javax/jcr/Node/save()|",
+      "|java+method:///javax/jcr/NodeIterator/hasNext()|"
+    ],
+    "affectedLib": "org.openl.rules:org.openl.rules.repository:5.7.4",
+    "change": "UPDATED"
+  }
+]

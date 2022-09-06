@@ -1,0 +1,26 @@
+[
+  {
+    "coordinatesV1": "io.opentracing.contrib:opentracing-okhttp3:0.0.4",
+    "coordinatesV2": "io.opentracing.contrib:opentracing-okhttp3:0.1.0",
+    "caller": "|java+method:///io/opentracing/contrib/okhttp3/TracingInterceptor/addTracing(okhttp3.OkHttpClient$Builder,io.opentracing.Tracer,java.util.List)|",
+    "called": "|java+constructor:///io/opentracing/contrib/concurrent/TracedExecutorService/TracedExecutorService(java.util.concurrent.ExecutorService,io.opentracing.Tracer)|",
+    "v1Body": [
+      "|java+constructor:///io/opentracing/contrib/okhttp3/TracingInterceptor/TracingInterceptor(io.opentracing.Tracer,java.util.List)|",
+      "|java+method:///okhttp3/OkHttpClient$Builder/addInterceptor(okhttp3.Interceptor)|",
+      "|java+method:///okhttp3/OkHttpClient$Builder/addNetworkInterceptor(okhttp3.Interceptor)|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/OkHttpClient$Builder/dispatcher(okhttp3.Dispatcher)|",
+      "|java+constructor:///okhttp3/Dispatcher/Dispatcher(java.util.concurrent.ExecutorService)|",
+      "|java+method:///okhttp3/OkHttpClient$Builder/networkInterceptors()|",
+      "|java+constructor:///io/opentracing/contrib/concurrent/TracedExecutorService/TracedExecutorService(java.util.concurrent.ExecutorService,io.opentracing.Tracer)|",
+      "|java+method:///okhttp3/OkHttpClient$Builder/interceptors()|",
+      "|java+constructor:///io/opentracing/contrib/okhttp3/TracingInterceptor/TracingInterceptor(io.opentracing.Tracer,java.util.List)|",
+      "|java+method:///okhttp3/OkHttpClient$Builder/build()|",
+      "|java+method:///java/util/concurrent/Executors/newFixedThreadPool(int)|",
+      "|java+method:///java/util/List/add(int,java.lang.Object)|"
+    ],
+    "affectedLib": "io.opentracing.contrib:opentracing-concurrent:0.1.0",
+    "change": "ADDED"
+  }
+]

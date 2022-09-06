@@ -1,0 +1,114 @@
+[
+  {
+    "coordinatesV1": "net.sf.jmimemagic:jmimemagic:0.1.5",
+    "coordinatesV2": "net.sf.jmimemagic:jmimemagic:0.1.4",
+    "caller": "|java+method:///net/sf/jmimemagic/MagicMatcher/testRegex(java.lang.String)|",
+    "called": "|java+constructor:///org/apache/oro/text/perl/Perl5Util/Perl5Util()|",
+    "v1Body": [
+      "|java+method:///net/sf/jmimemagic/MagicMatch/getTest()|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///net/sf/jmimemagic/MagicMatch/getComparator()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/apache/oro/text/perl/Perl5Util/Perl5Util()|",
+      "|java+method:///java/nio/ByteBuffer/array()|",
+      "|java+method:///org/apache/oro/text/perl/Perl5Util/match(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///net/sf/jmimemagic/MagicMatch/getTest()|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///net/sf/jmimemagic/MagicMatch/getComparator()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/regex/Pattern/matches(java.lang.String,java.lang.CharSequence)|",
+      "|java+method:///java/nio/ByteBuffer/array()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D)|"
+    ],
+    "affectedLib": "oro:oro:2.0.8",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "net.sf.jmimemagic:jmimemagic:0.1.5",
+    "coordinatesV2": "net.sf.jmimemagic:jmimemagic:0.1.4",
+    "caller": "|java+method:///net/sf/jmimemagic/detectors/TextFileDetector/process(byte%5B%5D,int,int,long,char,java.lang.String,java.util.Map)|",
+    "called": "|java+constructor:///org/apache/oro/text/perl/Perl5Util/Perl5Util()|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+constructor:///org/apache/commons/io/input/BOMInputStream/BOMInputStream(java.io.InputStream,org.apache.commons.io.ByteOrderMark%5B%5D)|",
+      "|java+constructor:///org/apache/oro/text/perl/Perl5Util/Perl5Util()|",
+      "|java+constructor:///java/io/ByteArrayInputStream/ByteArrayInputStream(byte%5B%5D)|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D,java.lang.String)|",
+      "|java+method:///org/apache/commons/io/input/BOMInputStream/hasBOM()|",
+      "|java+method:///org/apache/commons/logging/Log/error(java.lang.Object)|",
+      "|java+method:///org/apache/oro/text/perl/Perl5Util/match(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.InputStream)|",
+      "|java+constructor:///org/apache/commons/io/input/BOMInputStream/BOMInputStream(java.io.InputStream,org.apache.commons.io.ByteOrderMark%5B%5D)|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D,java.lang.String)|",
+      "|java+method:///org/apache/commons/io/input/BOMInputStream/hasBOM()|",
+      "|java+method:///org/apache/commons/logging/Log/error(java.lang.Object)|",
+      "|java+method:///java/util/regex/Pattern/matches(java.lang.String,java.lang.CharSequence)|",
+      "|java+constructor:///java/io/ByteArrayInputStream/ByteArrayInputStream(byte%5B%5D)|"
+    ],
+    "affectedLib": "oro:oro:2.0.8",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "net.sf.jmimemagic:jmimemagic:0.1.4",
+    "coordinatesV2": "net.sf.jmimemagic:jmimemagic:0.1.5",
+    "caller": "|java+method:///net/sf/jmimemagic/detectors/TextFileDetector/process(java.io.File,int,int,long,char,java.lang.String,java.util.Map)|",
+    "called": "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.InputStream)|",
+    "v1Body": [
+      "|java+method:///java/io/BufferedInputStream/read(byte%5B%5D,int,int)|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///net/sf/jmimemagic/detectors/TextFileDetector/process(byte%5B%5D,int,int,long,char,java.lang.String,java.util.Map)|",
+      "|java+method:///org/apache/commons/logging/Log/error(java.lang.Object,java.lang.Throwable)|",
+      "|java+constructor:///java/io/BufferedInputStream/BufferedInputStream(java.io.InputStream)|",
+      "|java+constructor:///java/io/FileInputStream/FileInputStream(java.io.File)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/BufferedInputStream/read(byte%5B%5D,int,int)|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.InputStream)|",
+      "|java+method:///net/sf/jmimemagic/detectors/TextFileDetector/process(byte%5B%5D,int,int,long,char,java.lang.String,java.util.Map)|",
+      "|java+method:///org/apache/commons/logging/Log/error(java.lang.Object,java.lang.Throwable)|",
+      "|java+constructor:///java/io/BufferedInputStream/BufferedInputStream(java.io.InputStream)|",
+      "|java+constructor:///java/io/FileInputStream/FileInputStream(java.io.File)|"
+    ],
+    "affectedLib": "commons-io:commons-io:2.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.sf.jmimemagic:jmimemagic:0.1.4",
+    "coordinatesV2": "net.sf.jmimemagic:jmimemagic:0.1.5",
+    "caller": "|java+method:///net/sf/jmimemagic/detectors/TextFileDetector/process(byte%5B%5D,int,int,long,char,java.lang.String,java.util.Map)|",
+    "called": "|java+constructor:///org/apache/commons/io/input/BOMInputStream/BOMInputStream(java.io.InputStream,org.apache.commons.io.ByteOrderMark%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+constructor:///org/apache/commons/io/input/BOMInputStream/BOMInputStream(java.io.InputStream,org.apache.commons.io.ByteOrderMark%5B%5D)|",
+      "|java+constructor:///org/apache/oro/text/perl/Perl5Util/Perl5Util()|",
+      "|java+constructor:///java/io/ByteArrayInputStream/ByteArrayInputStream(byte%5B%5D)|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D,java.lang.String)|",
+      "|java+method:///org/apache/commons/io/input/BOMInputStream/hasBOM()|",
+      "|java+method:///org/apache/commons/logging/Log/error(java.lang.Object)|",
+      "|java+method:///org/apache/oro/text/perl/Perl5Util/match(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.InputStream)|",
+      "|java+constructor:///org/apache/commons/io/input/BOMInputStream/BOMInputStream(java.io.InputStream,org.apache.commons.io.ByteOrderMark%5B%5D)|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D,java.lang.String)|",
+      "|java+method:///org/apache/commons/io/input/BOMInputStream/hasBOM()|",
+      "|java+method:///org/apache/commons/logging/Log/error(java.lang.Object)|",
+      "|java+method:///java/util/regex/Pattern/matches(java.lang.String,java.lang.CharSequence)|",
+      "|java+constructor:///java/io/ByteArrayInputStream/ByteArrayInputStream(byte%5B%5D)|"
+    ],
+    "affectedLib": "commons-io:commons-io:2.1",
+    "change": "ADDED"
+  }
+]

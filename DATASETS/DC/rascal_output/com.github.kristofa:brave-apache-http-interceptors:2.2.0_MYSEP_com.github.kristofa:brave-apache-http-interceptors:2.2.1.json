@@ -1,0 +1,77 @@
+[
+  {
+    "coordinatesV1": "com.github.kristofa:brave-apache-http-interceptors:2.2.0",
+    "coordinatesV2": "com.github.kristofa:brave-apache-http-interceptors:2.2.1",
+    "caller": "|java+method:///com/github/kristofa/brave/httpclient/BraveHttpRequestInterceptor/process(org.apache.http.HttpRequest,org.apache.http.protocol.HttpContext)|",
+    "called": "|java+method:///com/github/kristofa/brave/client/ClientRequestInterceptor/handle(com.github.kristofa.brave.ClientRequestAdapter,com.google.common.base.Optional)|",
+    "v1Body": [
+      "|java+method:///com/github/kristofa/brave/ClientTracer/setClientSent()|",
+      "|java+method:///com/github/kristofa/brave/BraveHttpHeaders/getName()|",
+      "|java+method:///com/github/kristofa/brave/SpanId/getSpanId()|",
+      "|java+method:///java/lang/String/valueOf(java.lang.Object)|",
+      "|java+constructor:///java/net/URI/URI(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apache/http/HttpRequest/addHeader(java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/apache/http/HttpException/HttpException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/http/RequestLine/getUri()|",
+      "|java+method:///com/github/kristofa/brave/SpanId/getParentSpanId()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/http/RequestLine/getMethod()|",
+      "|java+method:///com/github/kristofa/brave/SpanId/getTraceId()|",
+      "|java+method:///com/github/kristofa/brave/ClientTracer/submitBinaryAnnotation(java.lang.String,java.lang.String)|",
+      "|java+method:///java/net/URISyntaxException/getMessage()|",
+      "|java+method:///com/github/kristofa/brave/ClientTracer/startNewSpan(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/apache/http/HttpRequest/getRequestLine()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/http/Header/getValue()|",
+      "|java+method:///org/apache/http/HttpRequest/getFirstHeader(java.lang.String)|",
+      "|java+method:///com/github/kristofa/brave/ClientTracer/setCurrentClientServiceName(java.lang.String)|",
+      "|java+method:///java/lang/String/valueOf(long)|",
+      "|java+method:///com/github/kristofa/brave/httpclient/BraveHttpRequestInterceptor/buildServiceAndSpanName(java.net.URI)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/kristofa/brave/client/ClientRequestInterceptor/handle(com.github.kristofa.brave.ClientRequestAdapter,com.google.common.base.Optional)|",
+      "|java+constructor:///com/github/kristofa/brave/httpclient/ApacheRequestAdapter/ApacheRequestAdapter(org.apache.http.HttpRequest)|"
+    ],
+    "affectedLib": "com.github.kristofa:brave-client:2.2.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.kristofa:brave-apache-http-interceptors:2.2.0",
+    "coordinatesV2": "com.github.kristofa:brave-apache-http-interceptors:2.2.1",
+    "caller": "|java+constructor:///com/github/kristofa/brave/httpclient/BraveHttpResponseInterceptor/BraveHttpResponseInterceptor(com.github.kristofa.brave.ClientTracer)|",
+    "called": "|java+constructor:///com/github/kristofa/brave/client/ClientResponseInterceptor/ClientResponseInterceptor(com.github.kristofa.brave.ClientTracer)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/Validate/notNull(java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/github/kristofa/brave/client/ClientResponseInterceptor/ClientResponseInterceptor(com.github.kristofa.brave.ClientTracer)|",
+      "|java+method:///org/apache/commons/lang/Validate/notNull(java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.github.kristofa:brave-client:2.2.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.kristofa:brave-apache-http-interceptors:2.2.0",
+    "coordinatesV2": "com.github.kristofa:brave-apache-http-interceptors:2.2.1",
+    "caller": "|java+method:///com/github/kristofa/brave/httpclient/BraveHttpResponseInterceptor/process(org.apache.http.HttpResponse,org.apache.http.protocol.HttpContext)|",
+    "called": "|java+method:///com/github/kristofa/brave/client/ClientResponseInterceptor/handle(com.github.kristofa.brave.ClientResponseAdapter)|",
+    "v1Body": [
+      "|java+method:///org/apache/http/HttpResponse/getStatusLine()|",
+      "|java+method:///com/github/kristofa/brave/ClientTracer/setClientReceived()|",
+      "|java+method:///org/apache/http/StatusLine/getStatusCode()|",
+      "|java+method:///com/github/kristofa/brave/ClientTracer/submitBinaryAnnotation(java.lang.String,int)|",
+      "|java+method:///com/github/kristofa/brave/ClientTracer/submitAnnotation(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/github/kristofa/brave/httpclient/ApacheClientResponseAdapter/ApacheClientResponseAdapter(org.apache.http.HttpResponse)|",
+      "|java+method:///com/github/kristofa/brave/client/ClientResponseInterceptor/handle(com.github.kristofa.brave.ClientResponseAdapter)|"
+    ],
+    "affectedLib": "com.github.kristofa:brave-client:2.2.1",
+    "change": "ADDED"
+  }
+]

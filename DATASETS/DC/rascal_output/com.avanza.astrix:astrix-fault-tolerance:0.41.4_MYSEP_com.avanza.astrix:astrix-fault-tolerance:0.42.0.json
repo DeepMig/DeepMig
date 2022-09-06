@@ -1,0 +1,136 @@
+[
+  {
+    "coordinatesV1": "com.avanza.astrix:astrix-fault-tolerance:0.41.4",
+    "coordinatesV2": "com.avanza.astrix:astrix-fault-tolerance:0.42.0",
+    "caller": "|java+method:///com/avanza/astrix/ft/hystrix/HystrixFaultToleranceFactory/getThreadPoolKey(com.avanza.astrix.beans.core.AstrixBeanKey)|",
+    "called": "|java+method:///com/avanza/hystrix/multiconfig/MultiConfigId/encode(com.netflix.hystrix.HystrixThreadPoolKey)|",
+    "v1Body": [
+      "|java+method:///com/netflix/hystrix/HystrixThreadPoolKey/name()|",
+      "|java+method:///com/avanza/astrix/ft/hystrix/BeanMapping/registerBeanKey(java.lang.String,com.avanza.astrix.beans.core.AstrixBeanKey)|",
+      "|java+method:///com/avanza/astrix/ft/hystrix/HystrixCommandKeyFactory/createThreadPoolKey(com.avanza.astrix.beans.core.AstrixBeanKey)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/netflix/hystrix/HystrixThreadPoolKey/name()|",
+      "|java+method:///com/avanza/hystrix/multiconfig/MultiConfigId/encode(com.netflix.hystrix.HystrixThreadPoolKey)|",
+      "|java+method:///com/avanza/astrix/ft/hystrix/BeanMapping/registerBeanKey(java.lang.String,com.avanza.astrix.beans.core.AstrixBeanKey)|",
+      "|java+method:///com/avanza/astrix/ft/hystrix/HystrixCommandKeyFactory/createThreadPoolKey(com.avanza.astrix.beans.core.AstrixBeanKey)|"
+    ],
+    "affectedLib": "com.avanza.astrix:hystrix-multiconfig:0.42.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.avanza.astrix:astrix-fault-tolerance:0.41.4",
+    "coordinatesV2": "com.avanza.astrix:astrix-fault-tolerance:0.42.0",
+    "caller": "|java+method:///com/avanza/astrix/ft/hystrix/HystrixFaultToleranceFactory/getGroupKey(com.avanza.astrix.beans.core.AstrixBeanKey)|",
+    "called": "|java+method:///com/avanza/hystrix/multiconfig/MultiConfigId/encode(com.netflix.hystrix.HystrixCommandGroupKey)|",
+    "v1Body": [
+      "|java+method:///com/netflix/hystrix/HystrixCommandGroupKey/name()|",
+      "|java+method:///com/avanza/astrix/ft/hystrix/BeanMapping/registerBeanKey(java.lang.String,com.avanza.astrix.beans.core.AstrixBeanKey)|",
+      "|java+method:///com/avanza/astrix/ft/hystrix/HystrixCommandKeyFactory/createGroupKey(com.avanza.astrix.beans.core.AstrixBeanKey)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/netflix/hystrix/HystrixCommandGroupKey/name()|",
+      "|java+method:///com/avanza/astrix/ft/hystrix/BeanMapping/registerBeanKey(java.lang.String,com.avanza.astrix.beans.core.AstrixBeanKey)|",
+      "|java+method:///com/avanza/astrix/ft/hystrix/HystrixCommandKeyFactory/createGroupKey(com.avanza.astrix.beans.core.AstrixBeanKey)|",
+      "|java+method:///com/avanza/hystrix/multiconfig/MultiConfigId/encode(com.netflix.hystrix.HystrixCommandGroupKey)|"
+    ],
+    "affectedLib": "com.avanza.astrix:hystrix-multiconfig:0.42.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.avanza.astrix:astrix-fault-tolerance:0.41.4",
+    "coordinatesV2": "com.avanza.astrix:astrix-fault-tolerance:0.42.0",
+    "caller": "|java+constructor:///com/avanza/astrix/ft/hystrix/HystrixFaultToleranceFactory/HystrixFaultToleranceFactory(com.avanza.astrix.beans.ft.HystrixCommandNamingStrategy,com.avanza.astrix.ft.hystrix.AstrixConcurrencyStrategy,com.avanza.astrix.ft.hystrix.BeanConfigurationPropertiesStrategy,com.avanza.astrix.ft.hystrix.BeanMapping,com.avanza.astrix.beans.config.AstrixConfig)|",
+    "called": "|java+method:///com/avanza/hystrix/multiconfig/MultiConfigId/create(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/util/concurrent/atomic/AtomicInteger/incrementAndGet()|",
+      "|java+method:///com/avanza/astrix/ft/hystrix/HystrixStrategyDispatcher/registerStrategies(com.avanza.astrix.ft.hystrix.HystrixStrategies)|",
+      "|java+method:///java/lang/Integer/toString(int)|",
+      "|java+constructor:///com/avanza/astrix/ft/hystrix/HystrixCommandKeyFactory/HystrixCommandKeyFactory(java.lang.String,com.avanza.astrix.beans.ft.HystrixCommandNamingStrategy)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///com/avanza/astrix/ft/hystrix/FailedServiceInvocationLogger/FailedServiceInvocationLogger(com.avanza.astrix.ft.hystrix.BeanMapping,com.avanza.astrix.beans.config.AstrixConfig)|",
+      "|java+constructor:///com/avanza/astrix/ft/hystrix/HystrixStrategies/HystrixStrategies(com.netflix.hystrix.strategy.properties.HystrixPropertiesStrategy,com.netflix.hystrix.strategy.concurrency.HystrixConcurrencyStrategy,com.netflix.hystrix.strategy.eventnotifier.HystrixEventNotifier,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/atomic/AtomicInteger/incrementAndGet()|",
+      "|java+method:///com/avanza/astrix/ft/hystrix/HystrixStrategyDispatcher/registerStrategies(com.avanza.astrix.ft.hystrix.HystrixStrategies)|",
+      "|java+method:///java/lang/Integer/toString(int)|",
+      "|java+method:///com/avanza/hystrix/multiconfig/MultiConfigId/create(java.lang.String)|",
+      "|java+constructor:///com/avanza/astrix/ft/hystrix/HystrixCommandKeyFactory/HystrixCommandKeyFactory(java.lang.String,com.avanza.astrix.beans.ft.HystrixCommandNamingStrategy)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///com/avanza/astrix/ft/hystrix/FailedServiceInvocationLogger/FailedServiceInvocationLogger(com.avanza.astrix.ft.hystrix.BeanMapping,com.avanza.astrix.beans.config.AstrixConfig)|",
+      "|java+constructor:///com/avanza/astrix/ft/hystrix/HystrixStrategies/HystrixStrategies(com.netflix.hystrix.strategy.properties.HystrixPropertiesStrategy,com.netflix.hystrix.strategy.concurrency.HystrixConcurrencyStrategy,com.netflix.hystrix.strategy.eventnotifier.HystrixEventNotifier,java.lang.String)|"
+    ],
+    "affectedLib": "com.avanza.astrix:hystrix-multiconfig:0.42.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.avanza.astrix:astrix-fault-tolerance:0.41.4",
+    "coordinatesV2": "com.avanza.astrix:astrix-fault-tolerance:0.42.0",
+    "caller": "|java+method:///com/avanza/astrix/ft/hystrix/HystrixStrategyDispatcher/registerDispatcherStrategies()|",
+    "called": "|java+method:///com/avanza/hystrix/multiconfig/MultiConfigs/register(java.lang.String,com.netflix.hystrix.strategy.properties.HystrixPropertiesStrategy)|",
+    "v1Body": [
+      "|java+method:///com/netflix/hystrix/strategy/HystrixPlugins/registerEventNotifier(com.netflix.hystrix.strategy.eventnotifier.HystrixEventNotifier)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///com/netflix/hystrix/strategy/HystrixPlugins/registerConcurrencyStrategy(com.netflix.hystrix.strategy.concurrency.HystrixConcurrencyStrategy)|",
+      "|java+constructor:///com/avanza/astrix/ft/hystrix/PropertiesStrategyDispatcher/PropertiesStrategyDispatcher(com.avanza.astrix.ft.hystrix.HystrixStrategyMapping)|",
+      "|java+method:///com/netflix/hystrix/strategy/HystrixPlugins/getInstance()|",
+      "|java+constructor:///com/avanza/astrix/ft/hystrix/ConcurrencyStrategyDispatcher/ConcurrencyStrategyDispatcher(com.avanza.astrix.ft.hystrix.HystrixStrategyMapping)|",
+      "|java+constructor:///com/avanza/astrix/ft/hystrix/EventNotifierDispatcher/EventNotifierDispatcher(com.avanza.astrix.ft.hystrix.HystrixStrategyMapping)|",
+      "|java+method:///com/netflix/hystrix/strategy/HystrixPlugins/registerPropertiesStrategy(com.netflix.hystrix.strategy.properties.HystrixPropertiesStrategy)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/avanza/hystrix/multiconfig/MultiConfigs/register(java.lang.String,com.netflix.hystrix.strategy.properties.HystrixPropertiesStrategy)|",
+      "|java+constructor:///com/avanza/astrix/ft/hystrix/EventNotifierDispatcher/EventNotifierDispatcher(com.avanza.astrix.ft.hystrix.HystrixStrategyMapping)|",
+      "|java+method:///com/avanza/hystrix/multiconfig/MultiConfigs/register(java.lang.String,com.netflix.hystrix.strategy.concurrency.HystrixConcurrencyStrategy)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+constructor:///com/avanza/astrix/ft/hystrix/PropertiesStrategyDispatcher/PropertiesStrategyDispatcher(com.avanza.astrix.ft.hystrix.HystrixStrategyMapping)|",
+      "|java+method:///com/avanza/hystrix/multiconfig/MultiConfigs/register(java.lang.String,com.netflix.hystrix.strategy.eventnotifier.HystrixEventNotifier)|",
+      "|java+constructor:///com/avanza/astrix/ft/hystrix/ConcurrencyStrategyDispatcher/ConcurrencyStrategyDispatcher(com.avanza.astrix.ft.hystrix.HystrixStrategyMapping)|"
+    ],
+    "affectedLib": "com.avanza.astrix:hystrix-multiconfig:0.42.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.avanza.astrix:astrix-fault-tolerance:0.41.4",
+    "coordinatesV2": "com.avanza.astrix:astrix-fault-tolerance:0.42.0",
+    "caller": "|java+method:///com/avanza/astrix/ft/hystrix/HystrixFaultToleranceFactory/getCommandKey(com.avanza.astrix.beans.core.AstrixBeanKey)|",
+    "called": "|java+method:///com/avanza/hystrix/multiconfig/MultiConfigId/encode(com.netflix.hystrix.HystrixCommandKey)|",
+    "v1Body": [
+      "|java+method:///com/avanza/astrix/ft/hystrix/HystrixCommandKeyFactory/createCommandKey(com.avanza.astrix.beans.core.AstrixBeanKey)|",
+      "|java+method:///com/avanza/astrix/ft/hystrix/BeanMapping/registerBeanKey(java.lang.String,com.avanza.astrix.beans.core.AstrixBeanKey)|",
+      "|java+method:///com/netflix/hystrix/HystrixCommandKey/name()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/avanza/astrix/ft/hystrix/HystrixCommandKeyFactory/createCommandKey(com.avanza.astrix.beans.core.AstrixBeanKey)|",
+      "|java+method:///com/avanza/astrix/ft/hystrix/BeanMapping/registerBeanKey(java.lang.String,com.avanza.astrix.beans.core.AstrixBeanKey)|",
+      "|java+method:///com/avanza/hystrix/multiconfig/MultiConfigId/encode(com.netflix.hystrix.HystrixCommandKey)|",
+      "|java+method:///com/netflix/hystrix/HystrixCommandKey/name()|"
+    ],
+    "affectedLib": "com.avanza.astrix:hystrix-multiconfig:0.42.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.avanza.astrix:astrix-fault-tolerance:0.41.4",
+    "coordinatesV2": "com.avanza.astrix:astrix-fault-tolerance:0.42.0",
+    "caller": "|java+method:///com/avanza/astrix/ft/hystrix/HystrixStrategyDispatcher/verifyInitialized()|",
+    "called": "|java+method:///com/avanza/hystrix/multiconfig/MultiConfigs/verifyRegistered()|",
+    "v1Body": [
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///com/avanza/astrix/ft/hystrix/HystrixStrategyDispatcher/registerDispatcherStrategies()|",
+      "|java+method:///com/netflix/hystrix/strategy/HystrixPlugins/getPropertiesStrategy()|",
+      "|java+method:///com/netflix/hystrix/strategy/HystrixPlugins/reset()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///com/netflix/hystrix/strategy/HystrixPlugins/getInstance()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/avanza/hystrix/multiconfig/MultiConfigs/verifyRegistered()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///com/avanza/astrix/ft/hystrix/HystrixStrategyDispatcher/registerDispatcherStrategies()|",
+      "|java+method:///com/avanza/hystrix/multiconfig/MultiConfigs/containsAllMappings(java.lang.String)|"
+    ],
+    "affectedLib": "com.avanza.astrix:hystrix-multiconfig:0.42.0",
+    "change": "ADDED"
+  }
+]

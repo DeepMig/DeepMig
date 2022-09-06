@@ -1,0 +1,406 @@
+[
+  {
+    "coordinatesV1": "com.tinkerpop.blueprints:blueprints-core:2.3.0",
+    "coordinatesV2": "com.tinkerpop.blueprints:blueprints-core:2.2.0",
+    "caller": "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/edgeFromJson(java.io.InputStream,com.tinkerpop.blueprints.Vertex,com.tinkerpop.blueprints.Vertex)|",
+    "called": "|java+method:///org/codehaus/jackson/JsonFactory/createJsonParser(java.io.InputStream)|",
+    "v1Body": [
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/edgeFromJson(org.codehaus.jackson.JsonNode,com.tinkerpop.blueprints.Vertex,com.tinkerpop.blueprints.Vertex)|",
+      "|java+method:///org/codehaus/jackson/JsonFactory/createJsonParser(java.io.InputStream)|",
+      "|java+method:///org/codehaus/jackson/JsonParser/readValueAsTree()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/core/JsonParser/readValueAsTree()|",
+      "|java+method:///com/fasterxml/jackson/core/JsonFactory/createJsonParser(java.io.InputStream)|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/edgeFromJson(com.fasterxml.jackson.databind.JsonNode,com.tinkerpop.blueprints.Vertex,com.tinkerpop.blueprints.Vertex)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-core-asl:1.8.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.tinkerpop.blueprints:blueprints-core:2.3.0",
+    "coordinatesV2": "com.tinkerpop.blueprints:blueprints-core:2.2.0",
+    "caller": "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONReader/inputGraph(com.tinkerpop.blueprints.Graph,java.io.InputStream,int,java.util.Set,java.util.Set)|",
+    "called": "|java+method:///org/codehaus/jackson/JsonFactory/createJsonParser(java.io.InputStream)|",
+    "v1Body": [
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONMode/valueOf(java.lang.String)|",
+      "|java+method:///org/codehaus/jackson/JsonNode/get(java.lang.String)|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/getTypedValueFromJsonNode(org.codehaus.jackson.JsonNode)|",
+      "|java+method:///org/codehaus/jackson/JsonParser/close()|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/edgeFromJson(org.codehaus.jackson.JsonNode,com.tinkerpop.blueprints.Vertex,com.tinkerpop.blueprints.Vertex)|",
+      "|java+method:///org/codehaus/jackson/JsonFactory/createJsonParser(java.io.InputStream)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/codehaus/jackson/JsonParser/getText()|",
+      "|java+method:///org/codehaus/jackson/JsonParser/getCurrentName()|",
+      "|java+method:///org/codehaus/jackson/JsonParser/nextToken()|",
+      "|java+constructor:///com/tinkerpop/blueprints/util/io/graphson/GraphElementFactory/GraphElementFactory(com.tinkerpop.blueprints.Graph)|",
+      "|java+method:///org/codehaus/jackson/JsonParser/readValueAsTree()|",
+      "|java+constructor:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/GraphSONUtility(com.tinkerpop.blueprints.util.io.graphson.GraphSONMode,com.tinkerpop.blueprints.util.io.graphson.ElementFactory,java.util.Set,java.util.Set)|",
+      "|java+method:///com/tinkerpop/blueprints/util/wrappers/batch/BatchGraph/getVertex(java.lang.Object)|",
+      "|java+method:///com/tinkerpop/blueprints/util/wrappers/batch/BatchGraph/wrap(com.tinkerpop.blueprints.Graph,long)|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/vertexFromJson(org.codehaus.jackson.JsonNode)|",
+      "|java+method:///com/tinkerpop/blueprints/util/wrappers/batch/BatchGraph/stopTransaction(com.tinkerpop.blueprints.TransactionalGraph$Conclusion)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONMode/valueOf(java.lang.String)|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/getTypedValueFromJsonNode(com.fasterxml.jackson.databind.JsonNode)|",
+      "|java+method:///com/fasterxml/jackson/core/JsonParser/readValueAsTree()|",
+      "|java+method:///com/fasterxml/jackson/databind/JsonNode/get(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/core/JsonFactory/createJsonParser(java.io.InputStream)|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/edgeFromJson(com.fasterxml.jackson.databind.JsonNode,com.tinkerpop.blueprints.Vertex,com.tinkerpop.blueprints.Vertex)|",
+      "|java+method:///com/fasterxml/jackson/core/JsonParser/getCurrentName()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///com/tinkerpop/blueprints/util/io/graphson/GraphElementFactory/GraphElementFactory(com.tinkerpop.blueprints.Graph)|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/vertexFromJson(com.fasterxml.jackson.databind.JsonNode)|",
+      "|java+method:///com/fasterxml/jackson/core/JsonParser/nextToken()|",
+      "|java+method:///com/tinkerpop/blueprints/util/wrappers/batch/BatchGraph/getVertex(java.lang.Object)|",
+      "|java+method:///com/tinkerpop/blueprints/util/wrappers/batch/BatchGraph/wrap(com.tinkerpop.blueprints.Graph,long)|",
+      "|java+method:///com/fasterxml/jackson/core/JsonParser/close()|",
+      "|java+method:///com/tinkerpop/blueprints/util/wrappers/batch/BatchGraph/commit()|",
+      "|java+method:///com/fasterxml/jackson/core/JsonParser/getText()|",
+      "|java+constructor:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/GraphSONUtility(com.tinkerpop.blueprints.util.io.graphson.GraphSONMode,com.tinkerpop.blueprints.util.io.graphson.ElementFactory,java.util.Set,java.util.Set)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-core-asl:1.8.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.tinkerpop.blueprints:blueprints-core:2.3.0",
+    "coordinatesV2": "com.tinkerpop.blueprints:blueprints-core:2.2.0",
+    "caller": "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/vertexFromJson(java.io.InputStream)|",
+    "called": "|java+method:///org/codehaus/jackson/JsonFactory/createJsonParser(java.io.InputStream)|",
+    "v1Body": [
+      "|java+method:///org/codehaus/jackson/JsonFactory/createJsonParser(java.io.InputStream)|",
+      "|java+method:///org/codehaus/jackson/JsonParser/readValueAsTree()|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/vertexFromJson(org.codehaus.jackson.JsonNode)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/core/JsonParser/readValueAsTree()|",
+      "|java+method:///com/fasterxml/jackson/core/JsonFactory/createJsonParser(java.io.InputStream)|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/vertexFromJson(com.fasterxml.jackson.databind.JsonNode)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-core-asl:1.8.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.tinkerpop.blueprints:blueprints-core:2.3.0",
+    "coordinatesV2": "com.tinkerpop.blueprints:blueprints-core:2.2.0",
+    "caller": "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONWriter/outputGraph(java.io.OutputStream,java.util.Set,java.util.Set,com.tinkerpop.blueprints.util.io.graphson.GraphSONMode)|",
+    "called": "|java+method:///org/codehaus/jackson/JsonGenerator/writeArrayFieldStart(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/tinkerpop/blueprints/Graph/getEdges()|",
+      "|java+method:///org/codehaus/jackson/JsonFactory/createJsonGenerator(java.io.OutputStream)|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONMode/toString()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/codehaus/jackson/JsonGenerator/writeTree(org.codehaus.jackson.JsonNode)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/codehaus/jackson/JsonGenerator/close()|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+method:///org/codehaus/jackson/JsonGenerator/writeStringField(java.lang.String,java.lang.String)|",
+      "|java+method:///org/codehaus/jackson/JsonGenerator/writeArrayFieldStart(java.lang.String)|",
+      "|java+constructor:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/GraphSONUtility(com.tinkerpop.blueprints.util.io.graphson.GraphSONMode,com.tinkerpop.blueprints.util.io.graphson.ElementFactory,java.util.Set,java.util.Set)|",
+      "|java+method:///com/tinkerpop/blueprints/Graph/getVertices()|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/objectNodeFromElement(com.tinkerpop.blueprints.Element)|",
+      "|java+method:///org/codehaus/jackson/JsonGenerator/writeEndArray()|",
+      "|java+method:///org/codehaus/jackson/JsonGenerator/writeEndObject()|",
+      "|java+method:///org/codehaus/jackson/JsonGenerator/writeStartObject()|",
+      "|java+method:///org/codehaus/jackson/JsonGenerator/flush()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/core/JsonGenerator/writeEndObject()|",
+      "|java+method:///com/tinkerpop/blueprints/Graph/getEdges()|",
+      "|java+method:///com/fasterxml/jackson/core/JsonGenerator/writeArrayFieldStart(java.lang.String)|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONMode/toString()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/fasterxml/jackson/core/JsonGenerator/writeStartObject()|",
+      "|java+method:///com/fasterxml/jackson/core/JsonGenerator/close()|",
+      "|java+method:///com/fasterxml/jackson/core/JsonGenerator/writeStringField(java.lang.String,java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/core/JsonGenerator/writeEndArray()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/fasterxml/jackson/core/JsonGenerator/writeTree(com.fasterxml.jackson.core.TreeNode)|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+method:///com/fasterxml/jackson/core/JsonGenerator/flush()|",
+      "|java+method:///com/fasterxml/jackson/core/JsonFactory/createJsonGenerator(java.io.OutputStream)|",
+      "|java+constructor:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/GraphSONUtility(com.tinkerpop.blueprints.util.io.graphson.GraphSONMode,com.tinkerpop.blueprints.util.io.graphson.ElementFactory,java.util.Set,java.util.Set)|",
+      "|java+method:///com/tinkerpop/blueprints/Graph/getVertices()|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/objectNodeFromElement(com.tinkerpop.blueprints.Element)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-core-asl:1.8.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.tinkerpop.blueprints:blueprints-core:2.3.0",
+    "coordinatesV2": "com.tinkerpop.blueprints:blueprints-core:2.2.0",
+    "caller": "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/edgeFromJson(java.lang.String,com.tinkerpop.blueprints.Vertex,com.tinkerpop.blueprints.Vertex)|",
+    "called": "|java+method:///org/codehaus/jackson/JsonFactory/createJsonParser(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/codehaus/jackson/JsonFactory/createJsonParser(java.lang.String)|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/edgeFromJson(org.codehaus.jackson.JsonNode,com.tinkerpop.blueprints.Vertex,com.tinkerpop.blueprints.Vertex)|",
+      "|java+method:///org/codehaus/jackson/JsonParser/readValueAsTree()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/core/JsonParser/readValueAsTree()|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/edgeFromJson(com.fasterxml.jackson.databind.JsonNode,com.tinkerpop.blueprints.Vertex,com.tinkerpop.blueprints.Vertex)|",
+      "|java+method:///com/fasterxml/jackson/core/JsonFactory/createJsonParser(java.lang.String)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-core-asl:1.8.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.tinkerpop.blueprints:blueprints-core:2.3.0",
+    "coordinatesV2": "com.tinkerpop.blueprints:blueprints-core:2.2.0",
+    "caller": "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/vertexFromJson(java.lang.String)|",
+    "called": "|java+method:///org/codehaus/jackson/JsonFactory/createJsonParser(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/codehaus/jackson/JsonFactory/createJsonParser(java.lang.String)|",
+      "|java+method:///org/codehaus/jackson/JsonParser/readValueAsTree()|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/vertexFromJson(org.codehaus.jackson.JsonNode)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/core/JsonParser/readValueAsTree()|",
+      "|java+method:///com/fasterxml/jackson/core/JsonFactory/createJsonParser(java.lang.String)|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/vertexFromJson(com.fasterxml.jackson.databind.JsonNode)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-core-asl:1.8.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.tinkerpop.blueprints:blueprints-core:2.3.0",
+    "coordinatesV2": "com.tinkerpop.blueprints:blueprints-core:2.2.0",
+    "caller": "|java+initializer:///com/tinkerpop/blueprints/util/io/graphson/GraphSONReader/GraphSONReader$initializer|",
+    "called": "|java+constructor:///org/codehaus/jackson/map/MappingJsonFactory/MappingJsonFactory()|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/jackson/map/MappingJsonFactory/MappingJsonFactory()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/fasterxml/jackson/databind/MappingJsonFactory/MappingJsonFactory()|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.8.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.tinkerpop.blueprints:blueprints-core:2.3.0",
+    "coordinatesV2": "com.tinkerpop.blueprints:blueprints-core:2.2.0",
+    "caller": "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/createJSONMap(java.util.Map,java.util.Set,boolean)|",
+    "called": "|java+method:///org/codehaus/jackson/node/JsonNodeFactory/objectNode()|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/isArray()|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/createJSONMap(java.util.Map,java.util.Set,boolean)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/codehaus/jackson/node/JsonNodeFactory/objectNode()|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/objectNodeFromElement(com.tinkerpop.blueprints.Element,java.util.Set,com.tinkerpop.blueprints.util.io.graphson.GraphSONMode)|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/createJSONList(java.util.List,java.util.Set,boolean)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Map/keySet()|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/convertArrayToList(java.lang.Object)|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/getValue(java.lang.Object,boolean)|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/putObject(org.codehaus.jackson.node.ObjectNode,java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/isArray()|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/createJSONMap(java.util.Map,java.util.Set,boolean)|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/createJSONList(java.util.List,java.util.Set,boolean)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Map/keySet()|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/convertArrayToList(java.lang.Object)|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/getValue(java.lang.Object,boolean)|",
+      "|java+method:///com/fasterxml/jackson/databind/node/JsonNodeFactory/objectNode()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/putObject(com.fasterxml.jackson.databind.node.ObjectNode,java.lang.String,java.lang.Object)|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/objectNodeFromElement(com.tinkerpop.blueprints.Element,java.util.Set,com.tinkerpop.blueprints.util.io.graphson.GraphSONMode)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.8.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.tinkerpop.blueprints:blueprints-core:2.3.0",
+    "coordinatesV2": "com.tinkerpop.blueprints:blueprints-core:2.2.0",
+    "caller": "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/createJSONList(java.util.List,java.util.Set,boolean)|",
+    "called": "|java+method:///org/codehaus/jackson/node/JsonNodeFactory/arrayNode()|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/isArray()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/codehaus/jackson/node/ArrayNode/add(org.codehaus.jackson.JsonNode)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/addObject(org.codehaus.jackson.node.ArrayNode,java.lang.Object)|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/createJSONMap(java.util.Map,java.util.Set,boolean)|",
+      "|java+method:///org/codehaus/jackson/node/JsonNodeFactory/arrayNode()|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/convertArrayToList(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/objectNodeFromElement(com.tinkerpop.blueprints.Element,java.util.Set,com.tinkerpop.blueprints.util.io.graphson.GraphSONMode)|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/createJSONList(java.util.List,java.util.Set,boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/isArray()|",
+      "|java+method:///com/fasterxml/jackson/databind/node/ArrayNode/add(com.fasterxml.jackson.databind.JsonNode)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/createJSONMap(java.util.Map,java.util.Set,boolean)|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/addObject(com.fasterxml.jackson.databind.node.ArrayNode,java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/objectNodeFromElement(com.tinkerpop.blueprints.Element,java.util.Set,com.tinkerpop.blueprints.util.io.graphson.GraphSONMode)|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/createJSONList(java.util.List,java.util.Set,boolean)|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/convertArrayToList(java.lang.Object)|",
+      "|java+method:///com/fasterxml/jackson/databind/node/JsonNodeFactory/arrayNode()|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.8.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.tinkerpop.blueprints:blueprints-core:2.3.0",
+    "coordinatesV2": "com.tinkerpop.blueprints:blueprints-core:2.2.0",
+    "caller": "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/jsonFromElement(com.tinkerpop.blueprints.Element)|",
+    "called": "|java+method:///org/codehaus/jackson/map/ObjectMapper/writeValueAsString(java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/jettison/json/JSONTokener/JSONTokener(java.lang.String)|",
+      "|java+constructor:///org/codehaus/jettison/json/JSONObject/JSONObject(org.codehaus.jettison.json.JSONTokener)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/writeValueAsString(java.lang.Object)|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/objectNodeFromElement(com.tinkerpop.blueprints.Element)|",
+      "|java+constructor:///org/codehaus/jettison/json/JSONException/JSONException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/codehaus/jettison/json/JSONTokener/JSONTokener(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValueAsString(java.lang.Object)|",
+      "|java+constructor:///org/codehaus/jettison/json/JSONObject/JSONObject(org.codehaus.jettison.json.JSONTokener)|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/objectNodeFromElement(com.tinkerpop.blueprints.Element)|",
+      "|java+constructor:///org/codehaus/jettison/json/JSONException/JSONException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.8.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.tinkerpop.blueprints:blueprints-core:2.3.0",
+    "coordinatesV2": "com.tinkerpop.blueprints:blueprints-core:2.2.0",
+    "caller": "|java+initializer:///com/tinkerpop/blueprints/util/io/graphson/GraphSONWriter/GraphSONWriter$initializer|",
+    "called": "|java+constructor:///org/codehaus/jackson/map/MappingJsonFactory/MappingJsonFactory()|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/jackson/map/MappingJsonFactory/MappingJsonFactory()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/fasterxml/jackson/databind/MappingJsonFactory/MappingJsonFactory()|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.8.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.tinkerpop.blueprints:blueprints-core:2.3.0",
+    "coordinatesV2": "com.tinkerpop.blueprints:blueprints-core:2.2.0",
+    "caller": "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/objectNodeFromElement(com.tinkerpop.blueprints.Element)|",
+    "called": "|java+method:///org/codehaus/jackson/node/ObjectNode/put(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/createPropertyMap(com.tinkerpop.blueprints.Element,java.util.Set)|",
+      "|java+method:///com/tinkerpop/blueprints/Element/getId()|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/createJSONMap(java.util.Map,java.util.Set,boolean)|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/putObject(org.codehaus.jackson.node.ObjectNode,java.lang.String,java.lang.Object)|",
+      "|java+method:///com/tinkerpop/blueprints/Edge/getLabel()|",
+      "|java+method:///com/tinkerpop/blueprints/Vertex/getId()|",
+      "|java+method:///org/codehaus/jackson/node/ObjectNode/put(java.lang.String,java.lang.String)|",
+      "|java+method:///com/tinkerpop/blueprints/Edge/getVertex(com.tinkerpop.blueprints.Direction)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/createPropertyMap(com.tinkerpop.blueprints.Element,java.util.Set,com.tinkerpop.blueprints.util.io.graphson.ElementPropertyConfig$ElementPropertiesRule)|",
+      "|java+method:///com/tinkerpop/blueprints/Edge/getVertex(com.tinkerpop.blueprints.Direction)|",
+      "|java+method:///com/fasterxml/jackson/databind/node/ObjectNode/put(java.lang.String,java.lang.String)|",
+      "|java+method:///com/tinkerpop/blueprints/Element/getId()|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/createJSONMap(java.util.Map,java.util.Set,boolean)|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/putObject(com.fasterxml.jackson.databind.node.ObjectNode,java.lang.String,java.lang.Object)|",
+      "|java+method:///com/tinkerpop/blueprints/Edge/getLabel()|",
+      "|java+method:///com/tinkerpop/blueprints/Vertex/getId()|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.8.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.tinkerpop.blueprints:blueprints-core:2.3.0",
+    "coordinatesV2": "com.tinkerpop.blueprints:blueprints-core:2.2.0",
+    "caller": "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/getValue(java.lang.Object,boolean)|",
+    "called": "|java+method:///org/codehaus/jackson/node/JsonNodeFactory/objectNode()|",
+    "v1Body": [
+      "|java+method:///org/codehaus/jackson/node/ArrayNode/size()|",
+      "|java+method:///org/codehaus/jackson/node/ObjectNode/getFieldNames()|",
+      "|java+method:///org/codehaus/jackson/node/ArrayNode/get(int)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/addObject(org.codehaus.jackson.node.ArrayNode,java.lang.Object)|",
+      "|java+method:///org/codehaus/jackson/node/JsonNodeFactory/objectNode()|",
+      "|java+method:///org/codehaus/jackson/node/ObjectNode/putArray(java.lang.String)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/determineType(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/getTypedValueFromJsonNode(org.codehaus.jackson.JsonNode)|",
+      "|java+method:///org/codehaus/jackson/node/ObjectNode/put(java.lang.String,java.lang.String)|",
+      "|java+method:///org/codehaus/jackson/node/ObjectNode/put(java.lang.String,org.codehaus.jackson.JsonNode)|",
+      "|java+method:///org/codehaus/jackson/node/ObjectNode/get(java.lang.String)|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/getValue(java.lang.Object,boolean)|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/putObject(org.codehaus.jackson.node.ObjectNode,java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/getTypedValueFromJsonNode(com.fasterxml.jackson.databind.JsonNode)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/fasterxml/jackson/databind/node/ObjectNode/fieldNames()|",
+      "|java+method:///com/fasterxml/jackson/databind/node/ObjectNode/get(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/node/ObjectNode/put(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/getValue(java.lang.Object,boolean)|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/addObject(com.fasterxml.jackson.databind.node.ArrayNode,java.lang.Object)|",
+      "|java+method:///com/fasterxml/jackson/databind/node/JsonNodeFactory/objectNode()|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/putObject(com.fasterxml.jackson.databind.node.ObjectNode,java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/determineType(java.lang.Object)|",
+      "|java+method:///com/fasterxml/jackson/databind/node/ObjectNode/put(java.lang.String,com.fasterxml.jackson.databind.JsonNode)|",
+      "|java+method:///com/fasterxml/jackson/databind/node/ArrayNode/get(int)|",
+      "|java+method:///com/fasterxml/jackson/databind/node/ArrayNode/size()|",
+      "|java+method:///com/fasterxml/jackson/databind/node/ObjectNode/putArray(java.lang.String)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.8.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.tinkerpop.blueprints:blueprints-core:2.3.0",
+    "coordinatesV2": "com.tinkerpop.blueprints:blueprints-core:2.2.0",
+    "caller": "|java+initializer:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/GraphSONUtility$initializer|",
+    "called": "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+      "|java+constructor:///org/codehaus/jackson/map/MappingJsonFactory/MappingJsonFactory()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/fasterxml/jackson/databind/MappingJsonFactory/MappingJsonFactory()|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.8.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.tinkerpop.blueprints:blueprints-core:2.2.0",
+    "coordinatesV2": "com.tinkerpop.blueprints:blueprints-core:2.3.0",
+    "caller": "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/jsonFromElement(com.tinkerpop.blueprints.Element)|",
+    "called": "|java+constructor:///org/codehaus/jettison/json/JSONTokener/JSONTokener(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/jettison/json/JSONTokener/JSONTokener(java.lang.String)|",
+      "|java+constructor:///org/codehaus/jettison/json/JSONObject/JSONObject(org.codehaus.jettison.json.JSONTokener)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/writeValueAsString(java.lang.Object)|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/objectNodeFromElement(com.tinkerpop.blueprints.Element)|",
+      "|java+constructor:///org/codehaus/jettison/json/JSONException/JSONException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/codehaus/jettison/json/JSONTokener/JSONTokener(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValueAsString(java.lang.Object)|",
+      "|java+constructor:///org/codehaus/jettison/json/JSONObject/JSONObject(org.codehaus.jettison.json.JSONTokener)|",
+      "|java+method:///com/tinkerpop/blueprints/util/io/graphson/GraphSONUtility/objectNodeFromElement(com.tinkerpop.blueprints.Element)|",
+      "|java+constructor:///org/codehaus/jettison/json/JSONException/JSONException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.codehaus.jettison:jettison:1.3.3",
+    "change": "UPDATED"
+  }
+]

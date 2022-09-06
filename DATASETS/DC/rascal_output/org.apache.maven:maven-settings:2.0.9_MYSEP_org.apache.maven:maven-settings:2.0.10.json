@@ -1,0 +1,77 @@
+[
+  {
+    "coordinatesV1": "org.apache.maven:maven-settings:2.0.9",
+    "coordinatesV2": "org.apache.maven:maven-settings:2.0.10",
+    "caller": "|java+method:///org/apache/maven/settings/io/xpp3/SettingsXpp3Reader/read(java.io.Reader,boolean)|",
+    "called": "|java+constructor:///org/codehaus/plexus/util/xml/pull/MXParser/MXParser()|",
+    "v1Body": [
+      "|java+method:///org/codehaus/plexus/util/xml/pull/XmlPullParser/next()|",
+      "|java+constructor:///org/codehaus/plexus/util/xml/pull/MXParser/MXParser()|",
+      "|java+method:///org/codehaus/plexus/util/xml/pull/XmlPullParser/defineEntityReplacementText(java.lang.String,java.lang.String)|",
+      "|java+method:///org/codehaus/plexus/util/xml/pull/XmlPullParser/getInputEncoding()|",
+      "|java+method:///org/codehaus/plexus/util/xml/pull/XmlPullParser/setInput(java.io.Reader)|",
+      "|java+method:///org/apache/maven/settings/io/xpp3/SettingsXpp3Reader/parseSettings(java.lang.String,org.codehaus.plexus.util.xml.pull.XmlPullParser,boolean,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/codehaus/plexus/util/xml/pull/XmlPullParser/next()|",
+      "|java+constructor:///org/codehaus/plexus/util/xml/pull/MXParser/MXParser()|",
+      "|java+method:///org/apache/maven/settings/io/xpp3/SettingsXpp3Reader/parseSettings(java.lang.String,org.codehaus.plexus.util.xml.pull.XmlPullParser,boolean)|",
+      "|java+method:///org/codehaus/plexus/util/xml/pull/XmlPullParser/defineEntityReplacementText(java.lang.String,java.lang.String)|",
+      "|java+method:///org/codehaus/plexus/util/xml/pull/XmlPullParser/setInput(java.io.Reader)|"
+    ],
+    "affectedLib": "org.codehaus.plexus:plexus-utils:1.5.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.maven:maven-settings:2.0.9",
+    "coordinatesV2": "org.apache.maven:maven-settings:2.0.10",
+    "caller": "|java+method:///org/apache/maven/settings/DefaultMavenSettingsBuilder/readSettings(java.io.File)|",
+    "called": "|java+constructor:///org/codehaus/plexus/util/interpolation/RegexBasedInterpolator/RegexBasedInterpolator()|",
+    "v1Body": [
+      "|java+method:///org/codehaus/plexus/util/interpolation/RegexBasedInterpolator/interpolate(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/maven/settings/io/xpp3/SettingsXpp3Reader/read(java.io.Reader)|",
+      "|java+method:///org/apache/maven/settings/RuntimeInfo/setFile(java.io.File)|",
+      "|java+method:///org/codehaus/plexus/util/interpolation/RegexBasedInterpolator/addValueSource(org.codehaus.plexus.util.interpolation.ValueSource)|",
+      "|java+constructor:///org/apache/maven/settings/io/xpp3/SettingsXpp3Reader/SettingsXpp3Reader()|",
+      "|java+constructor:///java/io/StringWriter/StringWriter()|",
+      "|java+method:///java/io/StringWriter/toString()|",
+      "|java+method:///org/apache/maven/settings/Settings/setRuntimeInfo(org.apache.maven.settings.RuntimeInfo)|",
+      "|java+constructor:///org/codehaus/plexus/util/interpolation/RegexBasedInterpolator/RegexBasedInterpolator()|",
+      "|java+method:///org/codehaus/plexus/logging/Logger/debug(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/codehaus/plexus/util/IOUtil/copy(java.io.Reader,java.io.Writer)|",
+      "|java+method:///org/codehaus/plexus/logging/Logger/warn(java.lang.String)|",
+      "|java+constructor:///org/codehaus/plexus/util/interpolation/EnvarBasedValueSource/EnvarBasedValueSource()|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+method:///org/apache/maven/settings/DefaultMavenSettingsBuilder/getLogger()|",
+      "|java+constructor:///java/io/StringReader/StringReader(java.lang.String)|",
+      "|java+method:///org/codehaus/plexus/util/ReaderFactory/newXmlReader(java.io.File)|",
+      "|java+constructor:///org/apache/maven/settings/RuntimeInfo/RuntimeInfo(org.apache.maven.settings.Settings)|",
+      "|java+method:///org/codehaus/plexus/util/IOUtil/close(java.io.Reader)|",
+      "|java+method:///java/io/File/isFile()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/codehaus/plexus/util/interpolation/RegexBasedInterpolator/interpolate(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/maven/settings/io/xpp3/SettingsXpp3Reader/read(java.io.Reader)|",
+      "|java+method:///org/apache/maven/settings/RuntimeInfo/setFile(java.io.File)|",
+      "|java+method:///org/codehaus/plexus/util/interpolation/RegexBasedInterpolator/addValueSource(hidden.org.codehaus.plexus.interpolation.ValueSource)|",
+      "|java+constructor:///org/apache/maven/settings/io/xpp3/SettingsXpp3Reader/SettingsXpp3Reader()|",
+      "|java+constructor:///java/io/StringWriter/StringWriter()|",
+      "|java+method:///java/io/StringWriter/toString()|",
+      "|java+method:///org/apache/maven/settings/Settings/setRuntimeInfo(org.apache.maven.settings.RuntimeInfo)|",
+      "|java+constructor:///org/codehaus/plexus/util/interpolation/RegexBasedInterpolator/RegexBasedInterpolator()|",
+      "|java+method:///org/codehaus/plexus/logging/Logger/debug(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/codehaus/plexus/util/IOUtil/copy(java.io.Reader,java.io.Writer)|",
+      "|java+method:///org/codehaus/plexus/logging/Logger/warn(java.lang.String)|",
+      "|java+constructor:///org/codehaus/plexus/util/interpolation/EnvarBasedValueSource/EnvarBasedValueSource()|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+method:///org/apache/maven/settings/DefaultMavenSettingsBuilder/getLogger()|",
+      "|java+constructor:///java/io/StringReader/StringReader(java.lang.String)|",
+      "|java+method:///org/codehaus/plexus/util/ReaderFactory/newXmlReader(java.io.File)|",
+      "|java+constructor:///org/apache/maven/settings/RuntimeInfo/RuntimeInfo(org.apache.maven.settings.Settings)|",
+      "|java+method:///org/codehaus/plexus/util/IOUtil/close(java.io.Reader)|",
+      "|java+method:///java/io/File/isFile()|"
+    ],
+    "affectedLib": "org.codehaus.plexus:plexus-utils:1.5.5",
+    "change": "UPDATED"
+  }
+]

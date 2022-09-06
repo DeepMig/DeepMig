@@ -1,0 +1,67 @@
+[
+  {
+    "coordinatesV1": "org.symphonyoss.s2.fugue:fugue-core:0.0.8",
+    "coordinatesV2": "org.symphonyoss.s2.fugue:fugue-core:0.0.9",
+    "caller": "|java+constructor:///org/symphonyoss/s2/fugue/core/trace/log/LoggerTraceContext/LoggerTraceContext(org.symphonyoss.s2.fugue.core.trace.log.LoggerTraceContext,java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/symphonyoss/s2/common/hash/HashProvider/getCompositeHashOf(java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/util/UUID/randomUUID()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/symphonyoss/s2/common/hash/HashProvider/getCompositeHashOf(java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/UUID/randomUUID()|",
+      "|java+method:///org/symphonyoss/s2/fugue/core/trace/log/LoggerTraceContext/trace(java.lang.String,org.symphonyoss.s2.common.hash.Hash)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.symphonyoss.s2.common:S2-common-core:0.1.20",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.symphonyoss.s2.fugue:fugue-core:0.0.8",
+    "coordinatesV2": "org.symphonyoss.s2.fugue:fugue-core:0.0.9",
+    "caller": "|java+method:///org/symphonyoss/s2/fugue/BaseConfigurationProvider/getConfiguration(java.lang.String)|",
+    "called": "|java+constructor:///org/symphonyoss/s2/common/fault/CodingFault/CodingFault(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///com/fasterxml/jackson/databind/JsonNode/get(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/JsonNode/isObject()|",
+      "|java+constructor:///org/symphonyoss/s2/common/exception/NotFoundException/NotFoundException(java.lang.String)|",
+      "|java+constructor:///org/symphonyoss/s2/fugue/BaseConfigurationProvider/BaseConfigurationProvider(com.fasterxml.jackson.databind.JsonNode)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/symphonyoss/s2/fugue/BaseConfigurationProvider/getConfiguration(java.lang.String)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/JsonNode/get(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readTree(java.lang.String)|",
+      "|java+constructor:///org/symphonyoss/s2/fugue/BaseConfigurationProvider/BaseConfigurationProvider(com.fasterxml.jackson.databind.JsonNode)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/fasterxml/jackson/databind/JsonNode/isObject()|",
+      "|java+constructor:///org/symphonyoss/s2/common/fault/CodingFault/CodingFault(java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.symphonyoss.s2.common:S2-common-core:0.1.20",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.symphonyoss.s2.fugue:fugue-core:0.0.8",
+    "coordinatesV2": "org.symphonyoss.s2.fugue:fugue-core:0.0.9",
+    "caller": "|java+constructor:///org/symphonyoss/s2/fugue/core/trace/log/LoggerTraceContext/LoggerTraceContext(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/symphonyoss/s2/common/hash/HashProvider/getCompositeHashOf(java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/util/UUID/randomUUID()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/symphonyoss/s2/common/hash/HashProvider/getCompositeHashOf(java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/UUID/randomUUID()|",
+      "|java+method:///org/symphonyoss/s2/fugue/core/trace/log/LoggerTraceContext/trace(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.symphonyoss.s2.common:S2-common-core:0.1.20",
+    "change": "UPDATED"
+  }
+]

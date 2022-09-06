@@ -1,0 +1,196 @@
+[
+  {
+    "coordinatesV1": "com.bestellensoftware:jsync.io:1.10.2",
+    "coordinatesV2": "com.bestellensoftware:jsync.io:1.10.1",
+    "caller": "|java+constructor:///io/jsync/logging/impl/Log4jLogDelegate/Log4jLogDelegate(java.lang.String)|",
+    "called": "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.bestellensoftware:jsync.io:1.10.2",
+    "coordinatesV2": "com.bestellensoftware:jsync.io:1.10.1",
+    "caller": "|java+method:///io/jsync/logging/impl/Log4jLogDelegate/isTraceEnabled()|",
+    "called": "|java+method:///org/apache/log4j/Logger/isTraceEnabled()|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/isTraceEnabled()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/logging/log4j/Logger/isTraceEnabled()|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.bestellensoftware:jsync.io:1.10.2",
+    "coordinatesV2": "com.bestellensoftware:jsync.io:1.10.1",
+    "caller": "|java+method:///io/jsync/logging/impl/Log4jLogDelegate/trace(java.lang.Object)|",
+    "called": "|java+method:///org/apache/log4j/Logger/trace(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/trace(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/logging/log4j/Logger/trace(java.lang.Object)|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.bestellensoftware:jsync.io:1.10.2",
+    "coordinatesV2": "com.bestellensoftware:jsync.io:1.10.1",
+    "caller": "|java+method:///io/jsync/logging/impl/Log4jLogDelegate/trace(java.lang.Object,java.lang.Throwable)|",
+    "called": "|java+method:///org/apache/log4j/Logger/trace(java.lang.Object,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/trace(java.lang.Object,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/logging/log4j/Logger/trace(java.lang.Object,java.lang.Throwable)|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.bestellensoftware:jsync.io:1.10.1",
+    "coordinatesV2": "com.bestellensoftware:jsync.io:1.10.2",
+    "caller": "|java+constructor:///io/jsync/logging/impl/Log4jLogDelegate/Log4jLogDelegate(java.lang.String)|",
+    "called": "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.apache.logging.log4j:log4j-api:2.6.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.bestellensoftware:jsync.io:1.10.1",
+    "coordinatesV2": "com.bestellensoftware:jsync.io:1.10.2",
+    "caller": "|java+method:///io/jsync/http/impl/DefaultHttpServer$ServerHandler/handshake(io.netty.handler.codec.http.FullHttpRequest,io.netty.channel.Channel,io.netty.channel.ChannelHandlerContext)|",
+    "called": "|java+constructor:///io/netty/handler/codec/http/websocketx/WebSocketServerHandshakerFactory/WebSocketServerHandshakerFactory(java.lang.String,java.lang.String,boolean,int)|",
+    "v1Body": [
+      "|java+method:///io/jsync/http/impl/DefaultHttpServer/access$900(io.jsync.http.impl.DefaultHttpServer)|",
+      "|java+method:///io/jsync/http/impl/DefaultHttpServer$ServerHandler/getWebSocketLocation(io.netty.channel.ChannelPipeline,io.netty.handler.codec.http.FullHttpRequest)|",
+      "|java+constructor:///io/jsync/http/impl/DefaultServerWebSocket/DefaultServerWebSocket(io.jsync.impl.AsyncInternal,java.lang.String,java.lang.String,java.lang.String,io.jsync.MultiMap,io.jsync.net.impl.ConnectionBase,java.lang.Runnable)|",
+      "|java+constructor:///io/netty/handler/codec/http/websocketx/WebSocketServerHandshakerFactory/WebSocketServerHandshakerFactory(java.lang.String,java.lang.String,boolean,int)|",
+      "|java+method:///io/netty/channel/Channel/writeAndFlush(java.lang.Object)|",
+      "|java+method:///io/netty/channel/ChannelHandlerContext/pipeline()|",
+      "|java+method:///io/jsync/http/impl/DefaultHttpServer/access$400()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///io/netty/handler/codec/http/FullHttpRequest/getUri()|",
+      "|java+method:///io/jsync/http/impl/DefaultHttpServer/access$500(io.jsync.http.impl.DefaultHttpServer)|",
+      "|java+method:///io/netty/handler/codec/http/websocketx/WebSocketServerHandshakerFactory/newHandshaker(io.netty.handler.codec.http.HttpRequest)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///java/net/URI/URI(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///io/jsync/http/impl/ServerConnection/ServerConnection(io.jsync.http.impl.DefaultHttpServer,io.netty.channel.Channel,io.jsync.impl.DefaultContext,java.lang.String)|",
+      "|java+method:///java/net/URI/toString()|",
+      "|java+method:///io/netty/channel/Channel/eventLoop()|",
+      "|java+method:///io/jsync/net/impl/HandlerManager/chooseHandler(io.netty.channel.EventLoop)|",
+      "|java+method:///io/netty/channel/Channel/pipeline()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///io/netty/handler/codec/http/DefaultFullHttpResponse/DefaultFullHttpResponse(io.netty.handler.codec.http.HttpVersion,io.netty.handler.codec.http.HttpResponseStatus)|",
+      "|java+method:///java/net/URI/getQuery()|",
+      "|java+method:///java/util/Set/isEmpty()|",
+      "|java+method:///io/jsync/http/impl/ServerConnection/handleWebsocketConnect(io.jsync.http.impl.DefaultServerWebSocket)|",
+      "|java+method:///io/jsync/http/impl/DefaultServerWebSocket/isRejected()|",
+      "|java+method:///java/net/URI/getPath()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///io/netty/channel/ChannelPipeline/remove(io.netty.channel.ChannelHandler)|",
+      "|java+method:///io/jsync/logging/Logger/error(java.lang.Object)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+constructor:///io/jsync/http/impl/HttpHeadersAdapter/HttpHeadersAdapter(io.netty.handler.codec.http.HttpHeaders)|",
+      "|java+constructor:///io/jsync/http/impl/DefaultHttpServer$ServerHandler$1/DefaultHttpServer$ServerHandler$1(io.jsync.http.impl.DefaultHttpServer$ServerHandler,io.netty.channel.Channel,io.jsync.http.impl.ServerConnection,io.netty.handler.codec.http.websocketx.WebSocketServerHandshaker,io.netty.handler.codec.http.FullHttpRequest)|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+method:///io/jsync/http/impl/DefaultServerWebSocket/connectNow()|",
+      "|java+method:///io/netty/handler/codec/http/FullHttpRequest/headers()|",
+      "|java+method:///io/netty/handler/codec/http/websocketx/WebSocketServerHandshakerFactory/sendUnsupportedWebSocketVersionResponse(io.netty.channel.Channel)|",
+      "|java+method:///io/jsync/http/impl/ServerConnection/wsHandler(io.jsync.Handler)|",
+      "|java+method:///io/jsync/http/impl/DefaultHttpServer/access$700(io.jsync.http.impl.DefaultHttpServer)|",
+      "|java+method:///io/netty/channel/ChannelPipeline/get(java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///io/jsync/http/impl/DefaultHttpServer/access$800(io.jsync.http.impl.DefaultHttpServer)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/jsync/http/impl/DefaultHttpServer/access$900(io.jsync.http.impl.DefaultHttpServer)|",
+      "|java+constructor:///io/jsync/http/impl/DefaultServerWebSocket/DefaultServerWebSocket(io.jsync.impl.AsyncInternal,java.lang.String,java.lang.String,java.lang.String,io.jsync.MultiMap,io.jsync.net.impl.ConnectionBase,java.lang.Runnable)|",
+      "|java+constructor:///io/netty/handler/codec/http/websocketx/WebSocketServerHandshakerFactory/WebSocketServerHandshakerFactory(java.lang.String,java.lang.String,boolean,int)|",
+      "|java+method:///io/netty/channel/Channel/writeAndFlush(java.lang.Object)|",
+      "|java+method:///io/netty/channel/ChannelHandlerContext/pipeline()|",
+      "|java+method:///io/jsync/http/impl/DefaultHttpServer/access$400()|",
+      "|java+method:///io/netty/handler/codec/http/FullHttpRequest/headers()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///io/netty/handler/codec/http/FullHttpRequest/getUri()|",
+      "|java+method:///io/jsync/http/impl/DefaultHttpServer/access$500(io.jsync.http.impl.DefaultHttpServer)|",
+      "|java+method:///io/netty/handler/codec/http/websocketx/WebSocketServerHandshakerFactory/newHandshaker(io.netty.handler.codec.http.HttpRequest)|",
+      "|java+method:///io/jsync/http/impl/DefaultHttpServer$ServerHandler/getWebSocketLocation(io.netty.channel.ChannelPipeline,io.netty.handler.codec.http.FullHttpRequest)|",
+      "|java+method:///io/netty/handler/codec/http/websocketx/WebSocketServerHandshakerFactory/sendUnsupportedVersionResponse(io.netty.channel.Channel)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///java/net/URI/URI(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///io/jsync/http/impl/ServerConnection/ServerConnection(io.jsync.http.impl.DefaultHttpServer,io.netty.channel.Channel,io.jsync.impl.DefaultContext,java.lang.String)|",
+      "|java+method:///java/net/URI/toString()|",
+      "|java+method:///io/netty/channel/Channel/eventLoop()|",
+      "|java+method:///io/jsync/net/impl/HandlerManager/chooseHandler(io.netty.channel.EventLoop)|",
+      "|java+method:///io/netty/channel/Channel/pipeline()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///io/netty/handler/codec/http/DefaultFullHttpResponse/DefaultFullHttpResponse(io.netty.handler.codec.http.HttpVersion,io.netty.handler.codec.http.HttpResponseStatus)|",
+      "|java+method:///java/net/URI/getQuery()|",
+      "|java+method:///java/util/Set/isEmpty()|",
+      "|java+method:///io/jsync/http/impl/ServerConnection/handleWebsocketConnect(io.jsync.http.impl.DefaultServerWebSocket)|",
+      "|java+method:///io/jsync/http/impl/DefaultServerWebSocket/isRejected()|",
+      "|java+method:///java/net/URI/getPath()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///io/netty/channel/ChannelPipeline/remove(io.netty.channel.ChannelHandler)|",
+      "|java+method:///io/jsync/logging/Logger/error(java.lang.Object)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+constructor:///io/jsync/http/impl/HttpHeadersAdapter/HttpHeadersAdapter(io.netty.handler.codec.http.HttpHeaders)|",
+      "|java+constructor:///io/jsync/http/impl/DefaultHttpServer$ServerHandler$1/DefaultHttpServer$ServerHandler$1(io.jsync.http.impl.DefaultHttpServer$ServerHandler,io.netty.channel.Channel,io.jsync.http.impl.ServerConnection,io.netty.handler.codec.http.websocketx.WebSocketServerHandshaker,io.netty.handler.codec.http.FullHttpRequest)|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+method:///io/jsync/http/impl/DefaultServerWebSocket/connectNow()|",
+      "|java+method:///io/jsync/http/impl/ServerConnection/wsHandler(io.jsync.Handler)|",
+      "|java+method:///io/jsync/http/impl/DefaultHttpServer/access$700(io.jsync.http.impl.DefaultHttpServer)|",
+      "|java+method:///io/netty/channel/ChannelPipeline/get(java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///io/jsync/http/impl/DefaultHttpServer/access$800(io.jsync.http.impl.DefaultHttpServer)|"
+    ],
+    "affectedLib": "io.netty:netty-all:4.0.41.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.bestellensoftware:jsync.io:1.10.1",
+    "coordinatesV2": "com.bestellensoftware:jsync.io:1.10.2",
+    "caller": "|java+method:///io/jsync/sockjs/impl/JsonCodec$1/serialize(java.lang.String,com.fasterxml.jackson.core.JsonGenerator,com.fasterxml.jackson.databind.SerializerProvider)|",
+    "called": "|java+constructor:///com/fasterxml/jackson/core/JsonGenerationException/JsonGenerationException(java.lang.String,com.fasterxml.jackson.core.JsonGenerator)|",
+    "v1Body": [
+      "|java+method:///com/fasterxml/jackson/core/json/JsonWriteContext/writeValue()|",
+      "|java+constructor:///com/fasterxml/jackson/core/JsonGenerationException/JsonGenerationException(java.lang.String)|",
+      "|java+method:///io/jsync/sockjs/impl/JsonCodec$1/writeUnicodeEscape(com.fasterxml.jackson.core.JsonGenerator,char)|",
+      "|java+method:///io/jsync/sockjs/impl/JsonCodec$1/writeShortEscape(com.fasterxml.jackson.core.JsonGenerator,char)|",
+      "|java+method:///com/fasterxml/jackson/core/JsonGenerator/getOutputContext()|",
+      "|java+method:///java/lang/String/toCharArray()|",
+      "|java+method:///com/fasterxml/jackson/core/JsonGenerator/writeRaw(char)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/core/json/JsonWriteContext/writeValue()|",
+      "|java+method:///io/jsync/sockjs/impl/JsonCodec$1/writeUnicodeEscape(com.fasterxml.jackson.core.JsonGenerator,char)|",
+      "|java+method:///io/jsync/sockjs/impl/JsonCodec$1/writeShortEscape(com.fasterxml.jackson.core.JsonGenerator,char)|",
+      "|java+method:///com/fasterxml/jackson/core/JsonGenerator/getOutputContext()|",
+      "|java+constructor:///com/fasterxml/jackson/core/JsonGenerationException/JsonGenerationException(java.lang.String,com.fasterxml.jackson.core.JsonGenerator)|",
+      "|java+method:///java/lang/String/toCharArray()|",
+      "|java+method:///com/fasterxml/jackson/core/JsonGenerator/writeRaw(char)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-core:2.8.2",
+    "change": "UPDATED"
+  }
+]

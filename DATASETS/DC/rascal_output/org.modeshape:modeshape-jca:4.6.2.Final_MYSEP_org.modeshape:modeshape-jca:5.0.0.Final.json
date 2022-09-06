@@ -1,0 +1,62 @@
+[
+  {
+    "coordinatesV1": "org.modeshape:modeshape-jca:4.6.2.Final",
+    "coordinatesV2": "org.modeshape:modeshape-jca:5.0.0.Final",
+    "caller": "|java+constructor:///org/modeshape/jca/JcrManagedConnection/JcrManagedConnection(org.modeshape.jca.JcrManagedConnectionFactory,org.modeshape.jca.JcrConnectionRequestInfo)|",
+    "called": "|java+method:///org/modeshape/jcr/JcrSession/getRepository()|",
+    "v1Body": [
+      "|java+constructor:///java/util/concurrent/CopyOnWriteArrayList/CopyOnWriteArrayList()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/modeshape/jca/JcrManagedConnection/openSession()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/modeshape/jcr/JcrRepository/transactions()|",
+      "|java+constructor:///java/util/concurrent/CopyOnWriteArrayList/CopyOnWriteArrayList()|",
+      "|java+method:///org/modeshape/jcr/JcrSession/getRepository()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/modeshape/jca/JcrManagedConnection/openSession()|"
+    ],
+    "affectedLib": "org.modeshape:modeshape-jcr:5.0.0.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.modeshape:modeshape-jca:4.6.2.Final",
+    "coordinatesV2": "org.modeshape:modeshape-jca:5.0.0.Final",
+    "caller": "|java+method:///org/modeshape/jca/JcrManagedConnection/cleanup()|",
+    "called": "|java+method:///org/modeshape/jcr/JcrSession/logout()|",
+    "v1Body": [
+      "|java+method:///javax/jcr/Session/logout()|",
+      "|java+method:///java/util/List/clear()|",
+      "|java+method:///org/modeshape/jca/JcrManagedConnection/openSession()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/modeshape/jcr/JcrSession/logout()|",
+      "|java+method:///org/modeshape/jcr/JcrRepository/transactions()|",
+      "|java+method:///java/util/List/clear()|",
+      "|java+method:///org/modeshape/jcr/JcrSession/getRepository()|",
+      "|java+method:///org/modeshape/jca/JcrManagedConnection/openSession()|"
+    ],
+    "affectedLib": "org.modeshape:modeshape-jcr:5.0.0.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.modeshape:modeshape-jca:4.6.2.Final",
+    "coordinatesV2": "org.modeshape:modeshape-jca:5.0.0.Final",
+    "caller": "|java+method:///org/modeshape/jca/JcrManagedConnection/destroy()|",
+    "called": "|java+method:///org/modeshape/jcr/JcrSession/logout()|",
+    "v1Body": [
+      "|java+method:///org/modeshape/common/logging/Logger/debug(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/jcr/Session/logout()|",
+      "|java+method:///org/modeshape/jca/JcrManagedConnectionFactory/getRepositoryURL()|",
+      "|java+method:///java/util/List/clear()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/modeshape/common/logging/Logger/debug(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/modeshape/jcr/JcrSession/logout()|",
+      "|java+method:///org/modeshape/jca/JcrManagedConnectionFactory/getRepositoryURL()|",
+      "|java+method:///java/util/List/clear()|"
+    ],
+    "affectedLib": "org.modeshape:modeshape-jcr:5.0.0.Final",
+    "change": "UPDATED"
+  }
+]

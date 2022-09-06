@@ -1,0 +1,80 @@
+[
+  {
+    "coordinatesV1": "com.facebook.presto:presto-thrift-connector:0.188",
+    "coordinatesV2": "com.facebook.presto:presto-thrift-connector:0.189",
+    "caller": "|java+method:///com/facebook/presto/connector/thrift/clientproviders/RetryingPrestoThriftServiceProvider$RetryingService/close()|",
+    "called": "|java+method:///io/airlift/log/Logger/warn(java.lang.Throwable,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/facebook/presto/connector/thrift/api/PrestoThriftService/close()|",
+      "|java+method:///com/facebook/presto/connector/thrift/clientproviders/RetryingPrestoThriftServiceProvider/access$000()|",
+      "|java+method:///io/airlift/log/Logger/warn(java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/airlift/log/Logger/warn(java.lang.Throwable,java.lang.String)|",
+      "|java+method:///com/facebook/presto/connector/thrift/api/PrestoThriftService/close()|",
+      "|java+method:///com/facebook/presto/connector/thrift/clientproviders/RetryingPrestoThriftServiceProvider/access$000()|"
+    ],
+    "affectedLib": "io.airlift:log:0.156",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.facebook.presto:presto-thrift-connector:0.188",
+    "coordinatesV2": "com.facebook.presto:presto-thrift-connector:0.189",
+    "caller": "|java+method:///com/facebook/presto/connector/thrift/ThriftSplitManager/getSplits(com.facebook.presto.spi.connector.ConnectorTransactionHandle,com.facebook.presto.spi.ConnectorSession,com.facebook.presto.spi.ConnectorTableLayoutHandle)|",
+    "called": "|java+constructor:///com/facebook/presto/connector/thrift/api/PrestoThriftSchemaTableName/PrestoThriftSchemaTableName(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///com/facebook/presto/connector/thrift/api/PrestoThriftSchemaTableName/PrestoThriftSchemaTableName(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Optional/map(java.util.function.Function)|",
+      "|java+method:///com/facebook/presto/connector/thrift/ThriftTableLayoutHandle/getTableName()|",
+      "|java+method:///com/facebook/presto/connector/thrift/ThriftTableLayoutHandle/getColumns()|",
+      "|java+constructor:///com/facebook/presto/connector/thrift/ThriftSplitManager$ThriftSplitSource/ThriftSplitManager$ThriftSplitSource(com.facebook.presto.connector.thrift.api.PrestoThriftService,com.facebook.presto.connector.thrift.api.PrestoThriftSchemaTableName,java.util.Optional,com.facebook.presto.connector.thrift.api.PrestoThriftTupleDomain)|",
+      "|java+method:///com/facebook/presto/connector/thrift/ThriftTableLayoutHandle/getConstraint()|",
+      "|java+method:///com/facebook/presto/connector/thrift/ThriftSplitManager/tupleDomainToThriftTupleDomain(com.facebook.presto.spi.predicate.TupleDomain)|",
+      "|java+method:///com/facebook/presto/connector/thrift/clientproviders/PrestoThriftServiceProvider/anyHostClient()|",
+      "|java+method:///com/facebook/presto/connector/thrift/ThriftTableLayoutHandle/getSchemaName()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/facebook/presto/connector/thrift/util/TupleDomainConversion/tupleDomainToThriftTupleDomain(com.facebook.presto.spi.predicate.TupleDomain)|",
+      "|java+constructor:///com/facebook/presto/connector/thrift/api/PrestoThriftSchemaTableName/PrestoThriftSchemaTableName(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Optional/map(java.util.function.Function)|",
+      "|java+method:///com/facebook/presto/connector/thrift/ThriftTableLayoutHandle/getTableName()|",
+      "|java+method:///com/facebook/presto/connector/thrift/ThriftTableLayoutHandle/getColumns()|",
+      "|java+constructor:///com/facebook/presto/connector/thrift/ThriftSplitManager$ThriftSplitSource/ThriftSplitManager$ThriftSplitSource(com.facebook.presto.connector.thrift.api.PrestoThriftService,com.facebook.presto.connector.thrift.api.PrestoThriftSchemaTableName,java.util.Optional,com.facebook.presto.connector.thrift.api.PrestoThriftTupleDomain)|",
+      "|java+method:///com/facebook/presto/connector/thrift/ThriftTableLayoutHandle/getConstraint()|",
+      "|java+method:///com/facebook/presto/connector/thrift/clientproviders/PrestoThriftServiceProvider/anyHostClient()|",
+      "|java+method:///com/facebook/presto/connector/thrift/ThriftTableLayoutHandle/getSchemaName()|"
+    ],
+    "affectedLib": "com.facebook.presto:presto-thrift-connector-api:0.189",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.facebook.presto:presto-thrift-connector:0.188",
+    "coordinatesV2": "com.facebook.presto:presto-thrift-connector:0.189",
+    "caller": "|java+method:///com/facebook/presto/connector/thrift/ThriftMetadata/lambda$getTableMetadataInternal$2(com.facebook.presto.spi.SchemaTableName,com.facebook.presto.connector.thrift.api.PrestoThriftService)|",
+    "called": "|java+constructor:///com/facebook/presto/connector/thrift/api/PrestoThriftSchemaTableName/PrestoThriftSchemaTableName(com.facebook.presto.spi.SchemaTableName)|",
+    "v1Body": [
+      "|java+method:///java/util/Objects/equals(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/facebook/presto/spi/ConnectorTableMetadata/getTable()|",
+      "|java+method:///com/facebook/presto/connector/thrift/api/PrestoThriftSchemaTableName/fromSchemaTableName(com.facebook.presto.spi.SchemaTableName)|",
+      "|java+method:///com/facebook/presto/connector/thrift/api/PrestoThriftService/getTableMetadata(com.facebook.presto.connector.thrift.api.PrestoThriftSchemaTableName)|",
+      "|java+method:///java/util/Optional/of(java.lang.Object)|",
+      "|java+method:///com/facebook/presto/connector/thrift/api/PrestoThriftTableMetadata/toConnectorTableMetadata(com.facebook.presto.spi.type.TypeManager)|",
+      "|java+constructor:///com/facebook/presto/spi/PrestoException/PrestoException(com.facebook.presto.spi.ErrorCodeSupplier,java.lang.String)|",
+      "|java+method:///java/util/Optional/empty()|",
+      "|java+method:///com/facebook/presto/connector/thrift/api/PrestoThriftNullableTableMetadata/getTableMetadata()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Objects/equals(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///com/facebook/presto/connector/thrift/ThriftTableMetadata/ThriftTableMetadata(com.facebook.presto.connector.thrift.api.PrestoThriftTableMetadata,com.facebook.presto.spi.type.TypeManager)|",
+      "|java+constructor:///com/facebook/presto/connector/thrift/api/PrestoThriftSchemaTableName/PrestoThriftSchemaTableName(com.facebook.presto.spi.SchemaTableName)|",
+      "|java+method:///com/facebook/presto/connector/thrift/api/PrestoThriftService/getTableMetadata(com.facebook.presto.connector.thrift.api.PrestoThriftSchemaTableName)|",
+      "|java+method:///java/util/Optional/of(java.lang.Object)|",
+      "|java+method:///com/facebook/presto/connector/thrift/ThriftTableMetadata/getSchemaTableName()|",
+      "|java+constructor:///com/facebook/presto/spi/PrestoException/PrestoException(com.facebook.presto.spi.ErrorCodeSupplier,java.lang.String)|",
+      "|java+method:///java/util/Optional/empty()|",
+      "|java+method:///com/facebook/presto/connector/thrift/api/PrestoThriftNullableTableMetadata/getTableMetadata()|"
+    ],
+    "affectedLib": "com.facebook.presto:presto-thrift-connector-api:0.189",
+    "change": "UPDATED"
+  }
+]

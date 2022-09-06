@@ -1,0 +1,77 @@
+[
+  {
+    "coordinatesV1": "org.apache.camel:camel-csv:2.15.2",
+    "coordinatesV2": "org.apache.camel:camel-csv:2.14.4",
+    "caller": "|java+method:///org/apache/camel/dataformat/csv/CsvDataFormat/marshal(org.apache.camel.Exchange,java.lang.Object,java.io.OutputStream)|",
+    "called": "|java+constructor:///org/apache/commons/csv/writer/CSVWriter/CSVWriter(org.apache.commons.csv.writer.CSVConfig)|",
+    "v1Body": [
+      "|java+method:///org/apache/camel/dataformat/csv/CsvDataFormat/doMarshalRecord(org.apache.camel.Exchange,java.util.Map,java.io.Writer,org.apache.commons.csv.writer.CSVWriter)|",
+      "|java+method:///java/lang/String/charAt(int)|",
+      "|java+constructor:///java/io/OutputStreamWriter/OutputStreamWriter(java.io.OutputStream,java.lang.String)|",
+      "|java+method:///org/apache/camel/util/ExchangeHelper/convertToMandatoryType(org.apache.camel.Exchange,java.lang.Class,java.lang.Object)|",
+      "|java+method:///org/apache/camel/util/ExchangeHelper/convertToType(org.apache.camel.Exchange,java.lang.Class,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///org/apache/commons/csv/writer/CSVWriter/CSVWriter(org.apache.commons.csv.writer.CSVConfig)|",
+      "|java+method:///org/apache/commons/csv/writer/CSVWriter/setWriter(java.io.Writer)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/commons/csv/writer/CSVConfig/setDelimiter(char)|",
+      "|java+method:///org/apache/camel/util/IOHelper/close(java.io.Closeable)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/apache/camel/util/IOHelper/getCharsetName(org.apache.camel.Exchange)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/camel/dataformat/csv/CsvMarshaller/marshal(org.apache.camel.Exchange,java.lang.Object,java.io.OutputStream)|",
+      "|java+method:///org/apache/camel/dataformat/csv/CsvDataFormat/getActiveFormat()|",
+      "|java+method:///org/apache/camel/dataformat/csv/CsvMarshaller/create(org.apache.commons.csv.CSVFormat,org.apache.camel.dataformat.csv.CsvDataFormat)|"
+    ],
+    "affectedLib": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.commons-csv:1.0-r706899_5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.camel:camel-csv:2.15.2",
+    "coordinatesV2": "org.apache.camel:camel-csv:2.14.4",
+    "caller": "|java+method:///org/apache/camel/dataformat/csv/CsvDataFormat/unmarshal(org.apache.camel.Exchange,java.io.InputStream)|",
+    "called": "|java+constructor:///org/apache/commons/csv/CSVParser/CSVParser(java.io.Reader,org.apache.commons.csv.CSVStrategy)|",
+    "v1Body": [
+      "|java+method:///org/apache/camel/dataformat/csv/CsvDataFormat/loadAllAsList(org.apache.camel.dataformat.csv.CsvIterator)|",
+      "|java+constructor:///org/apache/camel/dataformat/csv/CsvIterator/CsvIterator(org.apache.commons.csv.CSVParser,java.io.Reader,org.apache.camel.dataformat.csv.CsvLineConverter)|",
+      "|java+method:///org/apache/commons/csv/writer/CSVConfig/setDelimiter(char)|",
+      "|java+method:///org/apache/commons/csv/CSVStrategy/setDelimiter(char)|",
+      "|java+method:///org/apache/commons/csv/writer/CSVConfig/getFields()|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream,java.lang.String)|",
+      "|java+method:///org/apache/camel/dataformat/csv/CsvLineConverters/getListConverter()|",
+      "|java+method:///org/apache/camel/dataformat/csv/CsvLineConverters/getMapLineConverter(java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/commons/csv/CSVParser/getLine()|",
+      "|java+method:///org/apache/commons/csv/writer/CSVField/getName()|",
+      "|java+method:///org/apache/camel/util/IOHelper/buffered(java.io.Reader)|",
+      "|java+constructor:///org/apache/commons/csv/CSVParser/CSVParser(java.io.Reader,org.apache.commons.csv.CSVStrategy)|",
+      "|java+method:///org/apache/commons/csv/writer/CSVConfig/getDelimiter()|",
+      "|java+method:///java/lang/String/charAt(int)|",
+      "|java+method:///org/apache/camel/util/IOHelper/close(java.io.Closeable)|",
+      "|java+method:///org/apache/camel/util/IOHelper/getCharsetName(org.apache.camel.Exchange)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/camel/dataformat/csv/CsvUnmarshaller/create(org.apache.commons.csv.CSVFormat,org.apache.camel.dataformat.csv.CsvDataFormat)|",
+      "|java+method:///org/apache/camel/dataformat/csv/CsvUnmarshaller/unmarshal(org.apache.camel.Exchange,java.io.InputStream)|",
+      "|java+method:///org/apache/camel/dataformat/csv/CsvDataFormat/getActiveFormat()|"
+    ],
+    "affectedLib": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.commons-csv:1.0-r706899_5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.camel:camel-csv:2.15.2",
+    "coordinatesV2": "org.apache.camel:camel-csv:2.14.4",
+    "caller": "|java+constructor:///org/apache/camel/dataformat/csv/CsvDataFormat/CsvDataFormat()|",
+    "called": "|java+constructor:///org/apache/commons/csv/writer/CSVConfig/CSVConfig()|",
+    "v1Body": [
+      "|java+method:///org/apache/camel/dataformat/csv/CsvDataFormat/cloneCSVStrategyIfNecessary(org.apache.commons.csv.CSVStrategy)|",
+      "|java+constructor:///org/apache/commons/csv/writer/CSVConfig/CSVConfig()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.commons-csv:1.0-r706899_5",
+    "change": "REMOVED"
+  }
+]

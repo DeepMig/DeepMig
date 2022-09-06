@@ -1,0 +1,300 @@
+[
+  {
+    "coordinatesV1": "com.comcast.money:money-aspectj_2.11:0.9.0-RC1",
+    "coordinatesV2": "com.comcast.money:money-aspectj_2.11:0.8.14",
+    "caller": "|java+method:///com/comcast/money/aspectj/TraceAspect/extractTracedDataAnnotations(java.lang.reflect.Method)|",
+    "called": "|java+method:///com/comcast/money/reflect/Reflections$class/extractTracedDataAnnotations(com.comcast.money.reflect.Reflections,java.lang.reflect.Method)|",
+    "v1Body": [
+      "|java+method:///com/comcast/money/reflect/Reflections$class/extractTracedDataAnnotations(com.comcast.money.reflect.Reflections,java.lang.reflect.Method)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/comcast/money/core/reflect/Reflections$class/extractTracedDataAnnotations(com.comcast.money.core.reflect.Reflections,java.lang.reflect.Method)|"
+    ],
+    "affectedLib": "com.comcast.money:money-core_2.11:0.8.14",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.comcast.money:money-aspectj_2.11:0.9.0-RC1",
+    "coordinatesV2": "com.comcast.money:money-aspectj_2.11:0.8.14",
+    "caller": "|java+method:///com/comcast/money/aspectj/TraceAspect/logException(java.lang.Throwable)|",
+    "called": "|java+method:///com/comcast/money/logging/TraceLogging$class/logException(com.comcast.money.logging.TraceLogging,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///com/comcast/money/logging/TraceLogging$class/logException(com.comcast.money.logging.TraceLogging,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/comcast/money/core/logging/TraceLogging$class/logException(com.comcast.money.core.logging.TraceLogging,java.lang.Throwable)|"
+    ],
+    "affectedLib": "com.comcast.money:money-core_2.11:0.8.14",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.comcast.money:money-aspectj_2.11:0.9.0-RC1",
+    "coordinatesV2": "com.comcast.money:money-aspectj_2.11:0.8.14",
+    "caller": "|java+constructor:///com/comcast/money/aspectj/TraceAspect/TraceAspect()|",
+    "called": "|java+method:///com/comcast/money/logging/TraceLogging$class/$init$(com.comcast.money.logging.TraceLogging)|",
+    "v1Body": [
+      "|java+constructor:///com/comcast/money/internal/MDCSupport/MDCSupport(boolean)|",
+      "|java+method:///com/comcast/money/core/Money$/tracer()|",
+      "|java+method:///com/comcast/money/internal/MDCSupport$/$lessinit$greater$default$1()|",
+      "|java+method:///com/comcast/money/reflect/Reflections$class/$init$(com.comcast.money.reflect.Reflections)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///com/comcast/money/logging/TraceLogging$class/$init$(com.comcast.money.logging.TraceLogging)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/comcast/money/core/logging/TraceLogging$class/$init$(com.comcast.money.core.logging.TraceLogging)|",
+      "|java+method:///com/comcast/money/core/reflect/Reflections$class/$init$(com.comcast.money.core.reflect.Reflections)|",
+      "|java+method:///com/comcast/money/core/internal/MDCSupport$/$lessinit$greater$default$1()|",
+      "|java+method:///com/comcast/money/core/Money/tracer()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///com/comcast/money/core/internal/MDCSupport/MDCSupport(boolean)|",
+      "|java+method:///com/comcast/money/core/Money$/Environment()|"
+    ],
+    "affectedLib": "com.comcast.money:money-core_2.11:0.8.14",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.comcast.money:money-aspectj_2.11:0.9.0-RC1",
+    "coordinatesV2": "com.comcast.money:money-aspectj_2.11:0.8.14",
+    "caller": "|java+method:///com/comcast/money/aspectj/TraceAspect/recordTracedParameters(java.lang.reflect.Method,java.lang.Object%5B%5D,com.comcast.money.core.Tracer)|",
+    "called": "|java+method:///com/comcast/money/reflect/Reflections$class/recordTracedParameters(com.comcast.money.reflect.Reflections,java.lang.reflect.Method,java.lang.Object%5B%5D,com.comcast.money.core.Tracer)|",
+    "v1Body": [
+      "|java+method:///com/comcast/money/reflect/Reflections$class/recordTracedParameters(com.comcast.money.reflect.Reflections,java.lang.reflect.Method,java.lang.Object%5B%5D,com.comcast.money.core.Tracer)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/comcast/money/core/reflect/Reflections$class/recordTracedParameters(com.comcast.money.core.reflect.Reflections,java.lang.reflect.Method,java.lang.Object%5B%5D,com.comcast.money.core.Tracer)|"
+    ],
+    "affectedLib": "com.comcast.money:money-core_2.11:0.8.14",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.comcast.money:money-aspectj_2.11:0.9.0-RC1",
+    "coordinatesV2": "com.comcast.money:money-aspectj_2.11:0.8.14",
+    "caller": "|java+method:///com/comcast/money/aspectj/TraceAspect/adviseMethodsWithTracing(org.aspectj.lang.ProceedingJoinPoint,com.comcast.money.annotations.Traced)|",
+    "called": "|java+method:///com/comcast/money/core/Result$/success()|",
+    "v1Body": [
+      "|java+method:///com/comcast/money/internal/MDCSupport/getSpanNameMDC()|",
+      "|java+method:///com/comcast/money/aspectj/TraceAspect/tracer()|",
+      "|java+method:///com/comcast/money/aspectj/TraceAspect/exceptionMatches(java.lang.Throwable,java.lang.Class%5B%5D)|",
+      "|java+method:///com/comcast/money/core/Tracer/stopSpan(com.comcast.money.core.Note)|",
+      "|java+method:///com/comcast/money/core/Result$/success()|",
+      "|java+constructor:///scala/Some/Some(java.lang.Object)|",
+      "|java+method:///com/comcast/money/annotations/Traced/ignoredExceptions()|",
+      "|java+method:///com/comcast/money/aspectj/TraceAspect/traceMethodArguments(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///com/comcast/money/aspectj/TraceAspect/logException(java.lang.Throwable)|",
+      "|java+method:///com/comcast/money/core/Result$/failed()|",
+      "|java+method:///com/comcast/money/core/Tracer/startSpan(java.lang.String)|",
+      "|java+method:///org/aspectj/lang/ProceedingJoinPoint/proceed()|",
+      "|java+method:///com/comcast/money/annotations/Traced/value()|",
+      "|java+method:///com/comcast/money/internal/MDCSupport/setSpanNameMDC(scala.Option)|",
+      "|java+method:///com/comcast/money/aspectj/TraceAspect/mdcSupport()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/comcast/money/aspectj/TraceAspect/tracer()|",
+      "|java+method:///com/comcast/money/core/Tracer/startSpan(java.lang.String)|",
+      "|java+method:///com/comcast/money/aspectj/TraceAspect/exceptionMatches(java.lang.Throwable,java.lang.Class%5B%5D)|",
+      "|java+constructor:///scala/Some/Some(java.lang.Object)|",
+      "|java+method:///com/comcast/money/annotations/Traced/ignoredExceptions()|",
+      "|java+method:///com/comcast/money/aspectj/TraceAspect/mdcSupport()|",
+      "|java+method:///com/comcast/money/aspectj/TraceAspect/traceMethodArguments(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///com/comcast/money/core/internal/MDCSupport/getSpanNameMDC()|",
+      "|java+method:///org/aspectj/lang/ProceedingJoinPoint/proceed()|",
+      "|java+method:///com/comcast/money/core/internal/MDCSupport/setSpanNameMDC(scala.Option)|",
+      "|java+method:///com/comcast/money/annotations/Traced/value()|",
+      "|java+method:///com/comcast/money/core/Tracer/stopSpan(boolean)|",
+      "|java+method:///com/comcast/money/aspectj/TraceAspect/logException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "com.comcast.money:money-core_2.11:0.8.14",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.comcast.money:money-aspectj_2.11:0.9.0-RC1",
+    "coordinatesV2": "com.comcast.money:money-aspectj_2.11:0.8.14",
+    "caller": "|java+method:///com/comcast/money/aspectj/TraceAspect/extractTracedDataValues(java.lang.reflect.Method,java.lang.Object%5B%5D)|",
+    "called": "|java+method:///com/comcast/money/reflect/Reflections$class/extractTracedDataValues(com.comcast.money.reflect.Reflections,java.lang.reflect.Method,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/comcast/money/reflect/Reflections$class/extractTracedDataValues(com.comcast.money.reflect.Reflections,java.lang.reflect.Method,java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/comcast/money/core/reflect/Reflections$class/extractTracedDataValues(com.comcast.money.core.reflect.Reflections,java.lang.reflect.Method,java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "com.comcast.money:money-core_2.11:0.8.14",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.comcast.money:money-aspectj_2.11:0.9.0-RC1",
+    "coordinatesV2": "com.comcast.money:money-aspectj_2.11:0.8.14",
+    "caller": "|java+method:///com/comcast/money/aspectj/TraceAspect/shouldLogExceptions$lzycompute()|",
+    "called": "|java+method:///com/comcast/money/logging/TraceLogging$class/shouldLogExceptions(com.comcast.money.logging.TraceLogging)|",
+    "v1Body": [
+      "|java+method:///com/comcast/money/logging/TraceLogging$class/shouldLogExceptions(com.comcast.money.logging.TraceLogging)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/comcast/money/core/logging/TraceLogging$class/shouldLogExceptions(com.comcast.money.core.logging.TraceLogging)|"
+    ],
+    "affectedLib": "com.comcast.money:money-core_2.11:0.8.14",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.comcast.money:money-aspectj_2.11:0.9.0-RC1",
+    "coordinatesV2": "com.comcast.money:money-aspectj_2.11:0.8.14",
+    "caller": "|java+method:///com/comcast/money/aspectj/TraceAspect/exceptionMatches(java.lang.Throwable,java.lang.Class%5B%5D)|",
+    "called": "|java+method:///com/comcast/money/reflect/Reflections$class/exceptionMatches(com.comcast.money.reflect.Reflections,java.lang.Throwable,java.lang.Class%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/comcast/money/reflect/Reflections$class/exceptionMatches(com.comcast.money.reflect.Reflections,java.lang.Throwable,java.lang.Class%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/comcast/money/core/reflect/Reflections$class/exceptionMatches(com.comcast.money.core.reflect.Reflections,java.lang.Throwable,java.lang.Class%5B%5D)|"
+    ],
+    "affectedLib": "com.comcast.money:money-core_2.11:0.8.14",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.comcast.money:money-aspectj_2.11:0.8.14",
+    "coordinatesV2": "com.comcast.money:money-aspectj_2.11:0.9.0-RC1",
+    "caller": "|java+method:///com/comcast/money/aspectj/TraceAspect/extractTracedDataAnnotations(java.lang.reflect.Method)|",
+    "called": "|java+method:///com/comcast/money/core/reflect/Reflections$class/extractTracedDataAnnotations(com.comcast.money.core.reflect.Reflections,java.lang.reflect.Method)|",
+    "v1Body": [
+      "|java+method:///com/comcast/money/reflect/Reflections$class/extractTracedDataAnnotations(com.comcast.money.reflect.Reflections,java.lang.reflect.Method)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/comcast/money/core/reflect/Reflections$class/extractTracedDataAnnotations(com.comcast.money.core.reflect.Reflections,java.lang.reflect.Method)|"
+    ],
+    "affectedLib": "com.comcast.money:money-core-scala_2.11:0.9.0-RC1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.comcast.money:money-aspectj_2.11:0.8.14",
+    "coordinatesV2": "com.comcast.money:money-aspectj_2.11:0.9.0-RC1",
+    "caller": "|java+method:///com/comcast/money/aspectj/TraceAspect/recordTracedParameters(java.lang.reflect.Method,java.lang.Object%5B%5D,com.comcast.money.core.Tracer)|",
+    "called": "|java+method:///com/comcast/money/core/reflect/Reflections$class/recordTracedParameters(com.comcast.money.core.reflect.Reflections,java.lang.reflect.Method,java.lang.Object%5B%5D,com.comcast.money.core.Tracer)|",
+    "v1Body": [
+      "|java+method:///com/comcast/money/reflect/Reflections$class/recordTracedParameters(com.comcast.money.reflect.Reflections,java.lang.reflect.Method,java.lang.Object%5B%5D,com.comcast.money.core.Tracer)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/comcast/money/core/reflect/Reflections$class/recordTracedParameters(com.comcast.money.core.reflect.Reflections,java.lang.reflect.Method,java.lang.Object%5B%5D,com.comcast.money.core.Tracer)|"
+    ],
+    "affectedLib": "com.comcast.money:money-core-scala_2.11:0.9.0-RC1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.comcast.money:money-aspectj_2.11:0.8.14",
+    "coordinatesV2": "com.comcast.money:money-aspectj_2.11:0.9.0-RC1",
+    "caller": "|java+constructor:///com/comcast/money/aspectj/TraceAspect/TraceAspect()|",
+    "called": "|java+method:///com/comcast/money/core/Money$/Environment()|",
+    "v1Body": [
+      "|java+constructor:///com/comcast/money/internal/MDCSupport/MDCSupport(boolean)|",
+      "|java+method:///com/comcast/money/core/Money$/tracer()|",
+      "|java+method:///com/comcast/money/internal/MDCSupport$/$lessinit$greater$default$1()|",
+      "|java+method:///com/comcast/money/reflect/Reflections$class/$init$(com.comcast.money.reflect.Reflections)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///com/comcast/money/logging/TraceLogging$class/$init$(com.comcast.money.logging.TraceLogging)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/comcast/money/core/logging/TraceLogging$class/$init$(com.comcast.money.core.logging.TraceLogging)|",
+      "|java+method:///com/comcast/money/core/reflect/Reflections$class/$init$(com.comcast.money.core.reflect.Reflections)|",
+      "|java+method:///com/comcast/money/core/internal/MDCSupport$/$lessinit$greater$default$1()|",
+      "|java+method:///com/comcast/money/core/Money/tracer()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///com/comcast/money/core/internal/MDCSupport/MDCSupport(boolean)|",
+      "|java+method:///com/comcast/money/core/Money$/Environment()|"
+    ],
+    "affectedLib": "com.comcast.money:money-core-scala_2.11:0.9.0-RC1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.comcast.money:money-aspectj_2.11:0.8.14",
+    "coordinatesV2": "com.comcast.money:money-aspectj_2.11:0.9.0-RC1",
+    "caller": "|java+method:///com/comcast/money/aspectj/TraceAspect/logException(java.lang.Throwable)|",
+    "called": "|java+method:///com/comcast/money/core/logging/TraceLogging$class/logException(com.comcast.money.core.logging.TraceLogging,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///com/comcast/money/logging/TraceLogging$class/logException(com.comcast.money.logging.TraceLogging,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/comcast/money/core/logging/TraceLogging$class/logException(com.comcast.money.core.logging.TraceLogging,java.lang.Throwable)|"
+    ],
+    "affectedLib": "com.comcast.money:money-core-scala_2.11:0.9.0-RC1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.comcast.money:money-aspectj_2.11:0.8.14",
+    "coordinatesV2": "com.comcast.money:money-aspectj_2.11:0.9.0-RC1",
+    "caller": "|java+method:///com/comcast/money/aspectj/TraceAspect/adviseMethodsWithTracing(org.aspectj.lang.ProceedingJoinPoint,com.comcast.money.annotations.Traced)|",
+    "called": "|java+method:///com/comcast/money/core/internal/MDCSupport/getSpanNameMDC()|",
+    "v1Body": [
+      "|java+method:///com/comcast/money/internal/MDCSupport/getSpanNameMDC()|",
+      "|java+method:///com/comcast/money/aspectj/TraceAspect/tracer()|",
+      "|java+method:///com/comcast/money/aspectj/TraceAspect/exceptionMatches(java.lang.Throwable,java.lang.Class%5B%5D)|",
+      "|java+method:///com/comcast/money/core/Tracer/stopSpan(com.comcast.money.core.Note)|",
+      "|java+method:///com/comcast/money/core/Result$/success()|",
+      "|java+constructor:///scala/Some/Some(java.lang.Object)|",
+      "|java+method:///com/comcast/money/annotations/Traced/ignoredExceptions()|",
+      "|java+method:///com/comcast/money/aspectj/TraceAspect/traceMethodArguments(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///com/comcast/money/aspectj/TraceAspect/logException(java.lang.Throwable)|",
+      "|java+method:///com/comcast/money/core/Result$/failed()|",
+      "|java+method:///com/comcast/money/core/Tracer/startSpan(java.lang.String)|",
+      "|java+method:///org/aspectj/lang/ProceedingJoinPoint/proceed()|",
+      "|java+method:///com/comcast/money/annotations/Traced/value()|",
+      "|java+method:///com/comcast/money/internal/MDCSupport/setSpanNameMDC(scala.Option)|",
+      "|java+method:///com/comcast/money/aspectj/TraceAspect/mdcSupport()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/comcast/money/aspectj/TraceAspect/tracer()|",
+      "|java+method:///com/comcast/money/core/Tracer/startSpan(java.lang.String)|",
+      "|java+method:///com/comcast/money/aspectj/TraceAspect/exceptionMatches(java.lang.Throwable,java.lang.Class%5B%5D)|",
+      "|java+constructor:///scala/Some/Some(java.lang.Object)|",
+      "|java+method:///com/comcast/money/annotations/Traced/ignoredExceptions()|",
+      "|java+method:///com/comcast/money/aspectj/TraceAspect/mdcSupport()|",
+      "|java+method:///com/comcast/money/aspectj/TraceAspect/traceMethodArguments(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///com/comcast/money/core/internal/MDCSupport/getSpanNameMDC()|",
+      "|java+method:///org/aspectj/lang/ProceedingJoinPoint/proceed()|",
+      "|java+method:///com/comcast/money/core/internal/MDCSupport/setSpanNameMDC(scala.Option)|",
+      "|java+method:///com/comcast/money/annotations/Traced/value()|",
+      "|java+method:///com/comcast/money/core/Tracer/stopSpan(boolean)|",
+      "|java+method:///com/comcast/money/aspectj/TraceAspect/logException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "com.comcast.money:money-core-scala_2.11:0.9.0-RC1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.comcast.money:money-aspectj_2.11:0.8.14",
+    "coordinatesV2": "com.comcast.money:money-aspectj_2.11:0.9.0-RC1",
+    "caller": "|java+method:///com/comcast/money/aspectj/TraceAspect/extractTracedDataValues(java.lang.reflect.Method,java.lang.Object%5B%5D)|",
+    "called": "|java+method:///com/comcast/money/core/reflect/Reflections$class/extractTracedDataValues(com.comcast.money.core.reflect.Reflections,java.lang.reflect.Method,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/comcast/money/reflect/Reflections$class/extractTracedDataValues(com.comcast.money.reflect.Reflections,java.lang.reflect.Method,java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/comcast/money/core/reflect/Reflections$class/extractTracedDataValues(com.comcast.money.core.reflect.Reflections,java.lang.reflect.Method,java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "com.comcast.money:money-core-scala_2.11:0.9.0-RC1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.comcast.money:money-aspectj_2.11:0.8.14",
+    "coordinatesV2": "com.comcast.money:money-aspectj_2.11:0.9.0-RC1",
+    "caller": "|java+method:///com/comcast/money/aspectj/TraceAspect/shouldLogExceptions$lzycompute()|",
+    "called": "|java+method:///com/comcast/money/core/logging/TraceLogging$class/shouldLogExceptions(com.comcast.money.core.logging.TraceLogging)|",
+    "v1Body": [
+      "|java+method:///com/comcast/money/logging/TraceLogging$class/shouldLogExceptions(com.comcast.money.logging.TraceLogging)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/comcast/money/core/logging/TraceLogging$class/shouldLogExceptions(com.comcast.money.core.logging.TraceLogging)|"
+    ],
+    "affectedLib": "com.comcast.money:money-core-scala_2.11:0.9.0-RC1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.comcast.money:money-aspectj_2.11:0.8.14",
+    "coordinatesV2": "com.comcast.money:money-aspectj_2.11:0.9.0-RC1",
+    "caller": "|java+method:///com/comcast/money/aspectj/TraceAspect/exceptionMatches(java.lang.Throwable,java.lang.Class%5B%5D)|",
+    "called": "|java+method:///com/comcast/money/core/reflect/Reflections$class/exceptionMatches(com.comcast.money.core.reflect.Reflections,java.lang.Throwable,java.lang.Class%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/comcast/money/reflect/Reflections$class/exceptionMatches(com.comcast.money.reflect.Reflections,java.lang.Throwable,java.lang.Class%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/comcast/money/core/reflect/Reflections$class/exceptionMatches(com.comcast.money.core.reflect.Reflections,java.lang.Throwable,java.lang.Class%5B%5D)|"
+    ],
+    "affectedLib": "com.comcast.money:money-core-scala_2.11:0.9.0-RC1",
+    "change": "ADDED"
+  }
+]

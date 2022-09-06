@@ -1,0 +1,29 @@
+[
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-yubikey-mongo:5.3.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-yubikey-mongo:5.3.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/adaptors/yubikey/dao/MongoDbYubiKeyAccountRegistry/registerAccountFor(java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///org/apereo/cas/adaptors/yubikey/YubiKeyAccount/YubiKeyAccount()|",
+    "v1Body": [
+      "|java+method:///org/apereo/cas/adaptors/yubikey/YubiKeyAccount/setPublicId(java.lang.String)|",
+      "|java+method:///com/yubico/client/v2/YubicoClient/getPublicId(java.lang.String)|",
+      "|java+method:///org/apereo/cas/adaptors/yubikey/YubiKeyAccount/setUsername(java.lang.String)|",
+      "|java+method:///org/springframework/data/mongodb/core/MongoOperations/save(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///org/apereo/cas/adaptors/yubikey/YubiKeyAccount/YubiKeyAccount()|",
+      "|java+method:///org/apereo/cas/adaptors/yubikey/YubiKeyAccountValidator/isValid(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apereo/cas/adaptors/yubikey/YubiKeyAccountValidator/getTokenPublicId(java.lang.String)|",
+      "|java+method:///org/apereo/cas/adaptors/yubikey/dao/MongoDbYubiKeyAccountRegistry/getCipherExecutor()|",
+      "|java+method:///org/apereo/cas/adaptors/yubikey/dao/MongoDbYubiKeyAccountRegistry/getAccountValidator()|",
+      "|java+method:///org/apereo/cas/adaptors/yubikey/YubiKeyAccount/setPublicId(java.lang.String)|",
+      "|java+method:///org/apereo/cas/adaptors/yubikey/YubiKeyAccount/setUsername(java.lang.String)|",
+      "|java+method:///org/springframework/data/mongodb/core/MongoOperations/save(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/apereo/cas/adaptors/yubikey/YubiKeyAccountValidator/isValid(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apereo/cas/CipherExecutor/encode(java.lang.Object)|",
+      "|java+constructor:///org/apereo/cas/adaptors/yubikey/YubiKeyAccount/YubiKeyAccount()|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-support-yubikey-core-mfa:5.3.0-RC4",
+    "change": "UPDATED"
+  }
+]

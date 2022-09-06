@@ -1,0 +1,104 @@
+[
+  {
+    "coordinatesV1": "org.switchyard:switchyard-api:1.1.0.M4",
+    "coordinatesV2": "org.switchyard:switchyard-api:0.8.0.Final",
+    "caller": "|java+method:///org/switchyard/label/Label$Util/ofName(java.lang.Class,java.lang.String)|",
+    "called": "|java+method:///org/switchyard/common/lang/Strings/trimToNull(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/toUpperCase()|",
+      "|java+method:///java/lang/Enum/valueOf(java.lang.Class,java.lang.String)|",
+      "|java+method:///org/switchyard/common/lang/Strings/trimToNull(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/switchyard/label/Label$Util/trimToNull(java.lang.String)|",
+      "|java+method:///java/lang/String/toUpperCase()|",
+      "|java+method:///java/lang/Enum/valueOf(java.lang.Class,java.lang.String)|"
+    ],
+    "affectedLib": "org.switchyard:switchyard-common:0.8.0.Final",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.switchyard:switchyard-api:1.1.0.M4",
+    "coordinatesV2": "org.switchyard:switchyard-api:0.8.0.Final",
+    "caller": "|java+initializer:///org/switchyard/transform/TransformSequence/TransformSequence$initializer|",
+    "called": "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jboss/logging/Logger/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.16",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.switchyard:switchyard-api:0.8.0.Final",
+    "coordinatesV2": "org.switchyard:switchyard-api:1.1.0.M4",
+    "caller": "|java+method:///org/switchyard/transform/TransformSequence/apply(org.switchyard.Message,org.switchyard.transform.TransformerRegistry)|",
+    "called": "|java+method:///org/jboss/logging/Logger/debug(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/isAssignableFrom(java.lang.Class)|",
+      "|java+method:///org/apache/log4j/Logger/warn(java.lang.Object)|",
+      "|java+method:///org/switchyard/transform/Transformer/transform(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/switchyard/transform/Transformer/getFrom()|",
+      "|java+method:///org/switchyard/transform/TransformerRegistry/getTransformer(javax.xml.namespace.QName,javax.xml.namespace.QName)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///org/switchyard/transform/Transformer/getTo()|",
+      "|java+method:///org/switchyard/Message/setContent(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/switchyard/Message/getContent(java.lang.Class)|",
+      "|java+method:///org/switchyard/transform/Transformer/getFromType()|",
+      "|java+method:///org/apache/log4j/Logger/isDebugEnabled()|",
+      "|java+method:///java/util/List/remove(int)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/log4j/Logger/debug(java.lang.Object)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/lang/System/identityHashCode(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/switchyard/transform/Transformer/transform(java.lang.Object)|",
+      "|java+method:///java/util/List/remove(int)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/switchyard/transform/Transformer/getFrom()|",
+      "|java+method:///org/switchyard/transform/TransformerRegistry/getTransformer(javax.xml.namespace.QName,javax.xml.namespace.QName)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///org/switchyard/transform/Transformer/getTo()|",
+      "|java+method:///org/switchyard/Message/setContent(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Class/isAssignableFrom(java.lang.Class)|",
+      "|java+method:///org/jboss/logging/Logger/isDebugEnabled()|",
+      "|java+method:///org/switchyard/APILogger/nullTransformResult(java.lang.String,javax.xml.namespace.QName,javax.xml.namespace.QName)|",
+      "|java+method:///org/switchyard/Message/getContent(java.lang.Class)|",
+      "|java+method:///org/switchyard/transform/Transformer/getFromType()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/jboss/logging/Logger/debug(java.lang.Object)|",
+      "|java+method:///java/lang/System/identityHashCode(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "org.jboss.logging:jboss-logging:3.1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.switchyard:switchyard-api:0.8.0.Final",
+    "coordinatesV2": "org.switchyard:switchyard-api:1.1.0.M4",
+    "caller": "|java+initializer:///org/switchyard/transform/TransformSequence/TransformSequence$initializer|",
+    "called": "|java+method:///org/jboss/logging/Logger/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jboss/logging/Logger/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.jboss.logging:jboss-logging:3.1.2.GA",
+    "change": "ADDED"
+  }
+]

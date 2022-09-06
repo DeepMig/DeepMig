@@ -1,0 +1,41 @@
+[
+  {
+    "coordinatesV1": "org.apache.activemq.examples.soak:openwire-perf:1.1.0",
+    "coordinatesV2": "org.apache.activemq.examples.soak:openwire-perf:1.2.0",
+    "caller": "|java+method:///org/apache/activemq/artemis/jms/example/PerfBase/init()|",
+    "called": "|java+constructor:///org/apache/qpid/jms/JmsConnectionFactory/JmsConnectionFactory(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///javax/jms/Connection/createSession(boolean,int)|",
+      "|java+constructor:///org/apache/activemq/ActiveMQConnectionFactory/ActiveMQConnectionFactory(java.lang.String)|",
+      "|java+method:///org/apache/activemq/artemis/jms/example/PerfParams/getUri()|",
+      "|java+method:///org/apache/activemq/artemis/jms/example/PerfParams/isOpenwire()|",
+      "|java+method:///org/apache/activemq/artemis/jms/example/PerfParams/isDupsOK()|",
+      "|java+constructor:///org/apache/activemq/command/ActiveMQQueue/ActiveMQQueue(java.lang.String)|",
+      "|java+method:///javax/jms/ConnectionFactory/createConnection()|",
+      "|java+method:///org/apache/activemq/artemis/jms/example/PerfParams/getDestinationName()|",
+      "|java+constructor:///org/apache/activemq/artemis/jms/client/ActiveMQConnectionFactory/ActiveMQConnectionFactory(java.lang.String)|",
+      "|java+method:///org/apache/activemq/artemis/jms/example/PerfParams/isSessionTransacted()|",
+      "|java+constructor:///org/apache/activemq/artemis/jms/client/ActiveMQQueue/ActiveMQQueue(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/jms/Connection/createSession(boolean,int)|",
+      "|java+method:///javax/jms/Session/close()|",
+      "|java+method:///org/apache/activemq/artemis/jms/example/PerfParams/getUri()|",
+      "|java+method:///org/apache/activemq/artemis/jms/example/PerfParams/isOpenwire()|",
+      "|java+method:///org/apache/activemq/artemis/jms/example/PerfParams/isDupsOK()|",
+      "|java+constructor:///org/apache/activemq/command/ActiveMQQueue/ActiveMQQueue(java.lang.String)|",
+      "|java+method:///org/apache/activemq/artemis/jms/example/PerfParams/getDestinationName()|",
+      "|java+constructor:///org/apache/activemq/artemis/jms/client/ActiveMQConnectionFactory/ActiveMQConnectionFactory(java.lang.String)|",
+      "|java+method:///org/apache/activemq/artemis/jms/example/PerfParams/isCore()|",
+      "|java+method:///javax/jms/Session/createQueue(java.lang.String)|",
+      "|java+method:///org/apache/activemq/artemis/jms/example/PerfParams/isSessionTransacted()|",
+      "|java+constructor:///org/apache/activemq/artemis/jms/client/ActiveMQQueue/ActiveMQQueue(java.lang.String)|",
+      "|java+constructor:///org/apache/activemq/ActiveMQConnectionFactory/ActiveMQConnectionFactory(java.lang.String)|",
+      "|java+method:///org/apache/activemq/artemis/jms/example/PerfParams/isAMQP()|",
+      "|java+constructor:///org/apache/qpid/jms/JmsConnectionFactory/JmsConnectionFactory(java.lang.String)|",
+      "|java+method:///javax/jms/ConnectionFactory/createConnection()|"
+    ],
+    "affectedLib": "org.apache.qpid:qpid-jms-client:0.5.0",
+    "change": "ADDED"
+  }
+]

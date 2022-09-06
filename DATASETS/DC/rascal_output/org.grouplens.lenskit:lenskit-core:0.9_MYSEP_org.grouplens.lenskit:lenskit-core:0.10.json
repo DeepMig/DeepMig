@@ -1,0 +1,127 @@
+[
+  {
+    "coordinatesV1": "org.grouplens.lenskit:lenskit-core:0.9",
+    "coordinatesV2": "org.grouplens.lenskit:lenskit-core:0.10",
+    "caller": "|java+method:///org/grouplens/lenskit/baseline/GlobalMeanPredictor/computeMeanRating(org.grouplens.lenskit.data.snapshot.RatingSnapshot)|",
+    "called": "|java+method:///org/grouplens/lenskit/collections/CollectionUtils/fast(java.lang.Iterable)|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+method:///org/grouplens/lenskit/collections/FastCollection/fast()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/grouplens/lenskit/data/snapshot/RatingSnapshot/getRatings()|",
+      "|java+method:///org/grouplens/lenskit/data/pref/Preference/getValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+method:///org/grouplens/lenskit/collections/CollectionUtils/fast(java.lang.Iterable)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/grouplens/lenskit/data/snapshot/RatingSnapshot/getRatings()|",
+      "|java+method:///org/grouplens/lenskit/data/pref/Preference/getValue()|"
+    ],
+    "affectedLib": "org.grouplens.lenskit:lenskit-data-structures:0.10",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.grouplens.lenskit:lenskit-core:0.9",
+    "coordinatesV2": "org.grouplens.lenskit:lenskit-core:0.10",
+    "caller": "|java+method:///org/grouplens/lenskit/norm/MeanVarianceNormalizer$Builder/build()|",
+    "called": "|java+method:///org/grouplens/lenskit/collections/CollectionUtils/fast(java.lang.Iterable)|",
+    "v1Body": [
+      "|java+method:///org/grouplens/lenskit/collections/FastCollection/size()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/grouplens/lenskit/norm/MeanVarianceNormalizer$Builder/build()|",
+      "|java+constructor:///org/grouplens/lenskit/norm/MeanVarianceNormalizer/MeanVarianceNormalizer(double,double)|",
+      "|java+method:///org/grouplens/lenskit/collections/FastCollection/fast()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/grouplens/lenskit/data/snapshot/RatingSnapshot/getRatings()|",
+      "|java+method:///org/grouplens/lenskit/data/pref/IndexedPreference/getValue()|",
+      "|java+method:///java/lang/Iterable/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/grouplens/lenskit/collections/FastCollection/size()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/grouplens/lenskit/norm/MeanVarianceNormalizer$Builder/build()|",
+      "|java+constructor:///org/grouplens/lenskit/norm/MeanVarianceNormalizer/MeanVarianceNormalizer(double,double)|",
+      "|java+method:///org/grouplens/lenskit/collections/CollectionUtils/fast(java.lang.Iterable)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/grouplens/lenskit/data/snapshot/RatingSnapshot/getRatings()|",
+      "|java+method:///org/grouplens/lenskit/data/pref/IndexedPreference/getValue()|",
+      "|java+method:///java/lang/Iterable/iterator()|"
+    ],
+    "affectedLib": "org.grouplens.lenskit:lenskit-data-structures:0.10",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.grouplens.lenskit:lenskit-core:0.9",
+    "coordinatesV2": "org.grouplens.lenskit:lenskit-core:0.10",
+    "caller": "|java+method:///org/grouplens/lenskit/data/dao/SimpleFileRatingDAO/getEvents(java.lang.Class,org.grouplens.lenskit.data.dao.SortOrder)|",
+    "called": "|java+method:///org/grouplens/lenskit/cursors/Cursors/sort(org.grouplens.lenskit.cursors.Cursor,java.util.Comparator)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/isAssignableFrom(java.lang.Class)|",
+      "|java+method:///java/net/URL/openStream()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///org/grouplens/lenskit/cursors/Cursors/sort(org.grouplens.lenskit.cursors.Cursor,java.util.Comparator)|",
+      "|java+method:///org/grouplens/lenskit/data/dao/SimpleFileRatingDAO/getComparator(org.grouplens.lenskit.data.dao.SortOrder)|",
+      "|java+constructor:///org/grouplens/lenskit/data/dao/ScannerRatingCursor/ScannerRatingCursor(java.util.Scanner,java.lang.String,java.lang.String)|",
+      "|java+method:///org/grouplens/lenskit/cursors/Cursors/empty()|",
+      "|java+constructor:///java/util/Scanner/Scanner(java.io.InputStream)|",
+      "|java+constructor:///java/util/Scanner/Scanner(java.io.File)|",
+      "|java+method:///java/io/File/getPath()|",
+      "|java+method:///java/net/URL/toString()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/isAssignableFrom(java.lang.Class)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///org/grouplens/lenskit/util/io/LKFileUtils/openInput(java.io.File,org.grouplens.lenskit.util.io.CompressionMode)|",
+      "|java+method:///org/grouplens/lenskit/cursors/Cursors/sort(org.grouplens.lenskit.cursors.Cursor,java.util.Comparator)|",
+      "|java+method:///org/grouplens/lenskit/data/dao/SimpleFileRatingDAO/getComparator(org.grouplens.lenskit.data.dao.SortOrder)|",
+      "|java+method:///org/grouplens/lenskit/cursors/Cursors/empty()|",
+      "|java+constructor:///java/io/BufferedReader/BufferedReader(java.io.Reader)|",
+      "|java+constructor:///org/grouplens/lenskit/data/dao/DelimitedTextRatingCursor/DelimitedTextRatingCursor(java.io.BufferedReader,java.lang.String,java.lang.String)|",
+      "|java+method:///org/grouplens/lenskit/util/io/LKFileUtils/close(org.slf4j.Logger,java.io.Closeable%5B%5D)|",
+      "|java+method:///java/io/File/getPath()|"
+    ],
+    "affectedLib": "org.grouplens.lenskit:lenskit-data-structures:0.10",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.grouplens.lenskit:lenskit-core:0.9",
+    "coordinatesV2": "org.grouplens.lenskit:lenskit-core:0.10",
+    "caller": "|java+method:///org/grouplens/lenskit/core/ScoreBasedItemRecommender/recommend(int,org.grouplens.lenskit.vectors.SparseVector)|",
+    "called": "|java+method:///org/grouplens/lenskit/vectors/SparseVector/isEmpty()|",
+    "v1Body": [
+      "|java+method:///org/grouplens/lenskit/util/ScoredItemAccumulator/put(long,double)|",
+      "|java+method:///org/grouplens/lenskit/vectors/SparseVector/isEmpty()|",
+      "|java+method:///it/unimi/dsi/fastutil/longs/Long2DoubleMap$Entry/getDoubleValue()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///it/unimi/dsi/fastutil/longs/Long2DoubleMap$Entry/getLongKey()|",
+      "|java+constructor:///org/grouplens/lenskit/util/ScoredItemAccumulator/ScoredItemAccumulator(int)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/grouplens/lenskit/vectors/SparseVector/fast()|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+constructor:///org/grouplens/lenskit/collections/ScoredLongArrayList/ScoredLongArrayList()|",
+      "|java+method:///org/grouplens/lenskit/vectors/SparseVector/size()|",
+      "|java+method:///org/grouplens/lenskit/util/ScoredItemAccumulator/finish()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/grouplens/lenskit/util/ScoredItemAccumulator/put(long,double)|",
+      "|java+method:///org/grouplens/lenskit/vectors/SparseVector/isEmpty()|",
+      "|java+method:///it/unimi/dsi/fastutil/longs/Long2DoubleMap$Entry/getDoubleValue()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///it/unimi/dsi/fastutil/longs/Long2DoubleMap$Entry/getLongKey()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/grouplens/lenskit/vectors/SparseVector/fast()|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+constructor:///org/grouplens/lenskit/collections/ScoredLongArrayList/ScoredLongArrayList()|",
+      "|java+constructor:///org/grouplens/lenskit/util/TopNScoredItemAccumulator/TopNScoredItemAccumulator(int)|",
+      "|java+method:///org/grouplens/lenskit/vectors/SparseVector/size()|",
+      "|java+method:///org/grouplens/lenskit/util/ScoredItemAccumulator/finish()|"
+    ],
+    "affectedLib": "org.grouplens.lenskit:lenskit-data-structures:0.10",
+    "change": "UPDATED"
+  }
+]

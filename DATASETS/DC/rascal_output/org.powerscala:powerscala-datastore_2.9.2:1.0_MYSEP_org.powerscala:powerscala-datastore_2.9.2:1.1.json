@@ -1,0 +1,112 @@
+[
+  {
+    "coordinatesV1": "org.powerscala:powerscala-datastore_2.9.2:1.0",
+    "coordinatesV2": "org.powerscala:powerscala-datastore_2.9.2:1.1",
+    "caller": "|java+method:///org/powerscala/datastore/impl/mongodb/MongoDBDatastoreCollection/size()|",
+    "called": "|java+method:///com/mongodb/DBCollection/count()|",
+    "v1Body": [
+      "|java+method:///scala/collection/TraversableOnce$class/size(scala.collection.TraversableOnce)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/mongodb/DBCollection/count()|",
+      "|java+method:///org/powerscala/datastore/impl/mongodb/MongoDBDatastoreCollection/collection()|"
+    ],
+    "affectedLib": "org.mongodb:mongo-java-driver:2.8.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powerscala:powerscala-datastore_2.9.2:1.0",
+    "coordinatesV2": "org.powerscala:powerscala-datastore_2.9.2:1.1",
+    "caller": "|java+constructor:///org/powerscala/datastore/impl/mongodb/MongoDBDatastoreSession/MongoDBDatastoreSession(org.powerscala.datastore.impl.mongodb.MongoDBDatastore)|",
+    "called": "|java+method:///com/mongodb/Mongo/getDB(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/powerscala/datastore/DatastoreSession$class/$init$(org.powerscala.datastore.DatastoreSession)|",
+      "|java+method:///com/mongodb/Mongo/getDB(java.lang.String)|",
+      "|java+method:///org/powerscala/datastore/impl/mongodb/MongoDBDatastoreSession/connection()|",
+      "|java+constructor:///com/mongodb/Mongo/Mongo(java.lang.String,int)|",
+      "|java+method:///org/powerscala/datastore/impl/mongodb/MongoDBDatastore/database()|",
+      "|java+method:///org/powerscala/datastore/impl/mongodb/MongoDBDatastore/port()|",
+      "|java+method:///org/powerscala/datastore/impl/mongodb/MongoDBDatastore/host()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/mongodb/Mongo/getDB(java.lang.String)|",
+      "|java+method:///org/powerscala/datastore/impl/mongodb/MongoDBDatastoreSession/connection()|",
+      "|java+constructor:///com/mongodb/Mongo/Mongo(java.lang.String,int)|",
+      "|java+method:///org/powerscala/datastore/impl/mongodb/MongoDBDatastore/database()|",
+      "|java+method:///org/powerscala/datastore/impl/mongodb/MongoDBDatastore/port()|",
+      "|java+method:///org/powerscala/datastore/impl/mongodb/MongoDBDatastore/host()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/powerscala/datastore/DatastoreSession$class/$init$(org.powerscala.datastore.DatastoreSession)|",
+      "|java+method:///org/powerscala/event/Listenable$class/$init$(org.powerscala.event.Listenable)|"
+    ],
+    "affectedLib": "org.mongodb:mongo-java-driver:2.8.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powerscala:powerscala-datastore_2.9.2:1.0",
+    "coordinatesV2": "org.powerscala:powerscala-datastore_2.9.2:1.1",
+    "caller": "|java+method:///org/powerscala/datastore/converter/DataObjectConverter$/toDBList(scala.collection.Seq,org.powerscala.datastore.DatastoreCollection)|",
+    "called": "|java+constructor:///com/mongodb/BasicDBList/BasicDBList()|",
+    "v1Body": [
+      "|java+constructor:///org/powerscala/datastore/converter/DataObjectConverter$$anonfun$toDBList$1/DataObjectConverter$$anonfun$toDBList$1(org.powerscala.datastore.DatastoreCollection)|",
+      "|java+method:///scala/collection/TraversableLike/map(scala.Function1,scala.collection.generic.CanBuildFrom)|",
+      "|java+method:///scala/collection/JavaConverters$/seqAsJavaListConverter(scala.collection.Seq)|",
+      "|java+method:///scala/collection/JavaConverters$AsJava/asJava()|",
+      "|java+method:///scala/collection/Seq$/canBuildFrom()|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/collection/IterableLike/foreach(scala.Function1)|",
+      "|java+constructor:///org/powerscala/datastore/converter/DataObjectConverter$$anonfun$toDBList$1/DataObjectConverter$$anonfun$toDBList$1(org.powerscala.datastore.DatastoreCollection,com.mongodb.BasicDBList)|",
+      "|java+constructor:///com/mongodb/BasicDBList/BasicDBList()|"
+    ],
+    "affectedLib": "org.mongodb:mongo-java-driver:2.8.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powerscala:powerscala-datastore_2.9.2:1.0",
+    "coordinatesV2": "org.powerscala:powerscala-datastore_2.9.2:1.1",
+    "caller": "|java+constructor:///org/powerscala/datastore/impl/mongodb/MongoDBDatastoreSession/MongoDBDatastoreSession(org.powerscala.datastore.impl.mongodb.MongoDBDatastore)|",
+    "called": "|java+method:///org/powerscala/event/Listenable$class/$init$(org.powerscala.event.Listenable)|",
+    "v1Body": [
+      "|java+method:///org/powerscala/datastore/DatastoreSession$class/$init$(org.powerscala.datastore.DatastoreSession)|",
+      "|java+method:///com/mongodb/Mongo/getDB(java.lang.String)|",
+      "|java+method:///org/powerscala/datastore/impl/mongodb/MongoDBDatastoreSession/connection()|",
+      "|java+constructor:///com/mongodb/Mongo/Mongo(java.lang.String,int)|",
+      "|java+method:///org/powerscala/datastore/impl/mongodb/MongoDBDatastore/database()|",
+      "|java+method:///org/powerscala/datastore/impl/mongodb/MongoDBDatastore/port()|",
+      "|java+method:///org/powerscala/datastore/impl/mongodb/MongoDBDatastore/host()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/mongodb/Mongo/getDB(java.lang.String)|",
+      "|java+method:///org/powerscala/datastore/impl/mongodb/MongoDBDatastoreSession/connection()|",
+      "|java+constructor:///com/mongodb/Mongo/Mongo(java.lang.String,int)|",
+      "|java+method:///org/powerscala/datastore/impl/mongodb/MongoDBDatastore/database()|",
+      "|java+method:///org/powerscala/datastore/impl/mongodb/MongoDBDatastore/port()|",
+      "|java+method:///org/powerscala/datastore/impl/mongodb/MongoDBDatastore/host()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/powerscala/datastore/DatastoreSession$class/$init$(org.powerscala.datastore.DatastoreSession)|",
+      "|java+method:///org/powerscala/event/Listenable$class/$init$(org.powerscala.event.Listenable)|"
+    ],
+    "affectedLib": "org.powerscala:powerscala-event_2.9.2:1.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.powerscala:powerscala-datastore_2.9.2:1.0",
+    "coordinatesV2": "org.powerscala:powerscala-datastore_2.9.2:1.1",
+    "caller": "|java+constructor:///org/powerscala/datastore/impl/mongodb/MongoDBDatastore/MongoDBDatastore(java.lang.String,int,java.lang.String)|",
+    "called": "|java+method:///org/powerscala/event/Listenable$class/$init$(org.powerscala.event.Listenable)|",
+    "v1Body": [
+      "|java+method:///org/powerscala/datastore/Datastore$class/$init$(org.powerscala.datastore.Datastore)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/powerscala/event/Listenable$class/$init$(org.powerscala.event.Listenable)|",
+      "|java+method:///org/powerscala/datastore/Datastore$class/$init$(org.powerscala.datastore.Datastore)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.powerscala:powerscala-event_2.9.2:1.1",
+    "change": "UPDATED"
+  }
+]

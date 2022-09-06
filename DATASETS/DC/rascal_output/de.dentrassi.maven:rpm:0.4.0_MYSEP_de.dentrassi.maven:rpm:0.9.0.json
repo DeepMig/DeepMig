@@ -1,0 +1,97 @@
+[
+  {
+    "coordinatesV1": "de.dentrassi.maven:rpm:0.4.0",
+    "coordinatesV2": "de.dentrassi.maven:rpm:0.9.0",
+    "caller": "|java+method:///de/dentrassi/rpm/builder/RpmMojo/makeVersion()|",
+    "called": "|java+constructor:///org/eclipse/packagedrone/utils/rpm/RpmVersion/RpmVersion(java.lang.Integer,java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/eclipse/packagedrone/utils/rpm/RpmVersion/RpmVersion(java.lang.Integer,java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///de/dentrassi/rpm/builder/RpmMojo/getBuildTimestamp()|",
+      "|java+method:///de/dentrassi/rpm/builder/Logger/info(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/maven/project/MavenProject/getVersion()|",
+      "|java+method:///de/dentrassi/rpm/builder/RpmMojo/isSnapshotVersion()|"
+    ],
+    "v2Body": [
+      "|java+method:///de/dentrassi/rpm/builder/Logger/info(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/eclipse/packagedrone/utils/rpm/RpmVersion/RpmVersion(java.lang.Integer,java.lang.String,java.lang.String)|",
+      "|java+method:///de/dentrassi/rpm/builder/RpmMojo/makeSnapshotReleaseString()|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+method:///org/apache/maven/project/MavenProject/getVersion()|",
+      "|java+method:///de/dentrassi/rpm/builder/RpmMojo/isSnapshotVersion()|"
+    ],
+    "affectedLib": "org.eclipse.packagedrone:org.eclipse.packagedrone.utils.rpm:0.14.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "de.dentrassi.maven:rpm:0.4.0",
+    "coordinatesV2": "de.dentrassi.maven:rpm:0.9.0",
+    "caller": "|java+method:///de/dentrassi/rpm/builder/RpmMojo/makeRsaSigner(de.dentrassi.rpm.builder.Signature)|",
+    "called": "|java+constructor:///org/eclipse/packagedrone/utils/rpm/signature/RsaHeaderSignatureProcessor/RsaHeaderSignatureProcessor(org.bouncycastle.openpgp.PGPPrivateKey,org.eclipse.packagedrone.utils.rpm.HashAlgorithm)|",
+    "v1Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/bouncycastle/openpgp/PGPPrivateKey/getKeyID()|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///de/dentrassi/rpm/builder/Signature/getKeyId()|",
+      "|java+method:///de/dentrassi/rpm/builder/Signature/isSkip()|",
+      "|java+constructor:///org/apache/maven/plugin/MojoFailureException/MojoFailureException(java.lang.Object,java.lang.String,java.lang.String)|",
+      "|java+method:///org/eclipse/packagedrone/repo/signing/pgp/PgpHelper/loadPrivateKey(java.io.InputStream,java.lang.String,java.lang.String)|",
+      "|java+method:///de/dentrassi/rpm/builder/Logger/info(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///de/dentrassi/rpm/builder/Signature/getPassphrase()|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///org/eclipse/packagedrone/utils/rpm/signature/RsaHeaderSignatureProcessor/RsaHeaderSignatureProcessor(org.bouncycastle.openpgp.PGPPrivateKey,org.eclipse.packagedrone.utils.rpm.signature.RsaHeaderSignatureProcessor$HashAlgorithm)|",
+      "|java+method:///de/dentrassi/rpm/builder/Signature/getKeyringFile()|",
+      "|java+constructor:///org/apache/maven/plugin/MojoFailureException/MojoFailureException(java.lang.String)|",
+      "|java+method:///org/eclipse/packagedrone/utils/rpm/signature/RsaHeaderSignatureProcessor$HashAlgorithm/from(java.lang.String)|",
+      "|java+method:///java/io/InputStream/close()|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+method:///de/dentrassi/rpm/builder/Signature/getHashAlgorithm()|",
+      "|java+constructor:///java/io/FileInputStream/FileInputStream(java.io.File)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/eclipse/packagedrone/utils/rpm/signature/RsaHeaderSignatureProcessor/RsaHeaderSignatureProcessor(org.bouncycastle.openpgp.PGPPrivateKey,org.eclipse.packagedrone.utils.rpm.HashAlgorithm)|",
+      "|java+method:///org/eclipse/packagedrone/utils/rpm/HashAlgorithm/from(java.lang.String)|",
+      "|java+method:///de/dentrassi/rpm/builder/Signature/getHashAlgorithm()|",
+      "|java+method:///de/dentrassi/rpm/builder/SigningHelper/loadKey(de.dentrassi.rpm.builder.Signature,de.dentrassi.rpm.builder.Logger)|"
+    ],
+    "affectedLib": "org.eclipse.packagedrone:org.eclipse.packagedrone.utils.rpm:0.14.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "de.dentrassi.maven:rpm:0.4.0",
+    "coordinatesV2": "de.dentrassi.maven:rpm:0.9.0",
+    "caller": "|java+method:///de/dentrassi/rpm/builder/RpmMojo/makeVersion()|",
+    "called": "|java+method:///org/apache/maven/project/MavenProject/getVersion()|",
+    "v1Body": [
+      "|java+constructor:///org/eclipse/packagedrone/utils/rpm/RpmVersion/RpmVersion(java.lang.Integer,java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///de/dentrassi/rpm/builder/RpmMojo/getBuildTimestamp()|",
+      "|java+method:///de/dentrassi/rpm/builder/Logger/info(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/maven/project/MavenProject/getVersion()|",
+      "|java+method:///de/dentrassi/rpm/builder/RpmMojo/isSnapshotVersion()|"
+    ],
+    "v2Body": [
+      "|java+method:///de/dentrassi/rpm/builder/Logger/info(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/eclipse/packagedrone/utils/rpm/RpmVersion/RpmVersion(java.lang.Integer,java.lang.String,java.lang.String)|",
+      "|java+method:///de/dentrassi/rpm/builder/RpmMojo/makeSnapshotReleaseString()|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+method:///org/apache/maven/project/MavenProject/getVersion()|",
+      "|java+method:///de/dentrassi/rpm/builder/RpmMojo/isSnapshotVersion()|"
+    ],
+    "affectedLib": "org.apache.maven:maven-core:3.3.9",
+    "change": "UPDATED"
+  }
+]

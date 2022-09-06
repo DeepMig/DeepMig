@@ -1,0 +1,2341 @@
+[
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:2.1.0",
+    "coordinatesV2": "com.spotify:async-datastore-client:1.0.3",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Value/getString()|",
+    "called": "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/getStringValue()|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/getStringValue()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/hasStringValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/Value/getStringValue()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Value/isString()|"
+    ],
+    "affectedLib": "com.google.apis:google-api-services-datastore-protobuf:v1beta2-rev1-4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:2.1.0",
+    "coordinatesV2": "com.spotify:async-datastore-client:1.0.3",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Update/getPb(java.lang.String)|",
+    "called": "|java+method:///com/google/api/services/datastore/DatastoreV1$Mutation/newBuilder()|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Mutation$Builder/addUpdate(com.google.api.services.datastore.DatastoreV1$Entity)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Mutation$Builder/build()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Entity$Builder/build()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Mutation/newBuilder()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Mutation$Builder/addUpsert(com.google.api.services.datastore.DatastoreV1$Entity)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Entity/getPb(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/Mutation/newBuilder()|",
+      "|java+method:///com/google/datastore/v1/Mutation$Builder/build()|",
+      "|java+method:///com/google/datastore/v1/Mutation$Builder/setUpdate(com.google.datastore.v1.Entity)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Entity$Builder/build()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Entity/getPb(java.lang.String)|",
+      "|java+method:///com/google/datastore/v1/Mutation$Builder/setUpsert(com.google.datastore.v1.Entity)|"
+    ],
+    "affectedLib": "com.google.apis:google-api-services-datastore-protobuf:v1beta2-rev1-4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:2.1.0",
+    "coordinatesV2": "com.spotify:async-datastore-client:1.0.3",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Query/orderBy(com.spotify.asyncdatastoreclient.Order)|",
+    "called": "|java+method:///com/google/api/services/datastore/DatastoreV1$Query$Builder/addOrder(com.google.api.services.datastore.DatastoreV1$PropertyOrder)|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Query$Builder/addOrder(com.google.api.services.datastore.DatastoreV1$PropertyOrder)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Order/getPb()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/Query$Builder/addOrder(com.google.datastore.v1.PropertyOrder)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Order/getPb()|"
+    ],
+    "affectedLib": "com.google.apis:google-api-services-datastore-protobuf:v1beta2-rev1-4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:2.1.0",
+    "coordinatesV2": "com.spotify:async-datastore-client:1.0.3",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Query/fromCursor(com.google.protobuf.ByteString)|",
+    "called": "|java+method:///com/google/api/services/datastore/DatastoreV1$Query$Builder/setStartCursor(com.google.protobuf.ByteString)|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Query$Builder/setStartCursor(com.google.protobuf.ByteString)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/Query$Builder/setStartCursor(com.google.protobuf.ByteString)|"
+    ],
+    "affectedLib": "com.google.apis:google-api-services-datastore-protobuf:v1beta2-rev1-4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:2.1.0",
+    "coordinatesV2": "com.spotify:async-datastore-client:1.0.3",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Value/getBlob()|",
+    "called": "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/getStringValueBytes()|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/getStringValueBytes()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/hasBlobValue()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/getBlobValue()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/hasStringValue()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/getMeaning()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/hasMeaning()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/spotify/asyncdatastoreclient/Value/isBlob()|",
+      "|java+method:///com/google/datastore/v1/Value/getBlobValue()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|"
+    ],
+    "affectedLib": "com.google.apis:google-api-services-datastore-protobuf:v1beta2-rev1-4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:2.1.0",
+    "coordinatesV2": "com.spotify:async-datastore-client:1.0.3",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Key/getName()|",
+    "called": "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$PathElement/getName()|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$PathElement/getName()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$PathElement/hasName()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key/getPathElementList()|",
+      "|java+method:///com/google/common/collect/Iterables/getLast(java.lang.Iterable,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/spotify/asyncdatastoreclient/Key/isName(com.google.datastore.v1.Key$PathElement)|",
+      "|java+method:///com/google/datastore/v1/Key$PathElement/getName()|",
+      "|java+method:///com/google/datastore/v1/Key/getPathList()|",
+      "|java+method:///com/google/common/collect/Iterables/getLast(java.lang.Iterable,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.apis:google-api-services-datastore-protobuf:v1beta2-rev1-4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:2.1.0",
+    "coordinatesV2": "com.spotify:async-datastore-client:1.0.3",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Delete/getPb(java.lang.String)|",
+    "called": "|java+method:///com/google/api/services/datastore/DatastoreV1$Mutation/newBuilder()|",
+    "v1Body": [
+      "|java+method:///com/spotify/asyncdatastoreclient/Delete/getKey()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Key/getPb(java.lang.String)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Mutation$Builder/addDelete(com.google.api.services.datastore.DatastoreV1$Key)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Mutation$Builder/build()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Mutation/newBuilder()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/spotify/asyncdatastoreclient/Delete/getKey()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Key/getPb(java.lang.String)|",
+      "|java+method:///com/google/datastore/v1/Mutation/newBuilder()|",
+      "|java+method:///com/google/datastore/v1/Mutation$Builder/build()|",
+      "|java+method:///com/google/datastore/v1/Mutation$Builder/setDelete(com.google.datastore.v1.Key)|"
+    ],
+    "affectedLib": "com.google.apis:google-api-services-datastore-protobuf:v1beta2-rev1-4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:2.1.0",
+    "coordinatesV2": "com.spotify:async-datastore-client:1.0.3",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Key$Builder/path(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$PathElement$Builder/setName(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$PathElement$Builder/setName(java.lang.String)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$PathElement$Builder/setKind(java.lang.String)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$PathElement/newBuilder()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$Builder/addPathElement(com.google.api.services.datastore.DatastoreV1$Key$PathElement$Builder)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/Key$PathElement/newBuilder()|",
+      "|java+method:///com/google/datastore/v1/Key$PathElement$Builder/setName(java.lang.String)|",
+      "|java+method:///com/google/datastore/v1/Key$PathElement$Builder/setKind(java.lang.String)|",
+      "|java+method:///com/google/datastore/v1/Key$Builder/addPath(com.google.datastore.v1.Key$PathElement$Builder)|"
+    ],
+    "affectedLib": "com.google.apis:google-api-services-datastore-protobuf:v1beta2-rev1-4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:2.1.0",
+    "coordinatesV2": "com.spotify:async-datastore-client:1.0.3",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Entity/getKey()|",
+    "called": "|java+method:///com/google/api/services/datastore/DatastoreV1$Entity/getKey()|",
+    "v1Body": [
+      "|java+method:///com/spotify/asyncdatastoreclient/Key/builder(com.google.api.services.datastore.DatastoreV1$Key)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Key$Builder/build()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Entity/getKey()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/spotify/asyncdatastoreclient/Key$Builder/build()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Key/builder(com.google.datastore.v1.Key)|",
+      "|java+method:///com/google/datastore/v1/Entity/getKey()|"
+    ],
+    "affectedLib": "com.google.apis:google-api-services-datastore-protobuf:v1beta2-rev1-4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:2.1.0",
+    "coordinatesV2": "com.spotify:async-datastore-client:1.0.3",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Key/getNamespace()|",
+    "called": "|java+method:///com/google/api/services/datastore/DatastoreV1$PartitionId/getNamespace()|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$PartitionId/hasNamespace()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$PartitionId/getNamespace()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key/hasPartitionId()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key/getPartitionId()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/Key/getPartitionId()|",
+      "|java+method:///com/google/datastore/v1/PartitionId/getNamespaceId()|"
+    ],
+    "affectedLib": "com.google.apis:google-api-services-datastore-protobuf:v1beta2-rev1-4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:2.1.0",
+    "coordinatesV2": "com.spotify:async-datastore-client:1.0.3",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Value$Builder/build()|",
+    "called": "|java+method:///com/google/api/services/datastore/DatastoreV1$Value$Builder/build()|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value$Builder/build()|",
+      "|java+constructor:///com/spotify/asyncdatastoreclient/Value/Value(com.google.api.services.datastore.DatastoreV1$Value,com.spotify.asyncdatastoreclient.Value$1)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/spotify/asyncdatastoreclient/Value/Value(com.google.datastore.v1.Value,com.spotify.asyncdatastoreclient.Value$1)|",
+      "|java+method:///com/google/datastore/v1/Value$Builder/build()|",
+      "|java+method:///com/google/datastore/v1/Value$Builder/setExcludeFromIndexes(boolean)|"
+    ],
+    "affectedLib": "com.google.apis:google-api-services-datastore-protobuf:v1beta2-rev1-4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:2.1.0",
+    "coordinatesV2": "com.spotify:async-datastore-client:1.0.3",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Entity$Builder/lambda$build$1(java.util.Map$Entry)|",
+    "called": "|java+method:///com/google/api/services/datastore/DatastoreV1$Property/newBuilder()|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Property$Builder/setValue(com.google.api.services.datastore.DatastoreV1$Value)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Property$Builder/build()|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Property/newBuilder()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Property$Builder/setName(java.lang.String)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Value/getPb()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/Value/toBuilder()|",
+      "|java+method:///com/google/datastore/v1/Value$Builder/build()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Value/getPb()|"
+    ],
+    "affectedLib": "com.google.apis:google-api-services-datastore-protobuf:v1beta2-rev1-4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:2.1.0",
+    "coordinatesV2": "com.spotify:async-datastore-client:1.0.3",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/example/Example/main(java.lang.String%5B%5D)|",
+    "called": "|java+method:///com/google/api/services/datastore/client/DatastoreHelper/getComputeEngineCredential()|",
+    "v1Body": [
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/build()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/example/Example/addDataInTransaction(com.spotify.asyncdatastoreclient.Datastore)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/namespace(java.lang.String)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/example/Example/queryData(com.spotify.asyncdatastoreclient.Datastore)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/credential(com.google.api.client.auth.oauth2.Credential)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/example/Example/deleteData(com.spotify.asyncdatastoreclient.Datastore)|",
+      "|java+method:///com/google/api/services/datastore/client/DatastoreHelper/getComputeEngineCredential()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig/builder()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/requestRetry(int)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/connectTimeout(int)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Datastore/create(com.spotify.asyncdatastoreclient.DatastoreConfig)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/requestTimeout(int)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/maxConnections(int)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/example/Example/addData(com.spotify.asyncdatastoreclient.Datastore)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/dataset(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/build()|",
+      "|java+method:///com/google/api/client/googleapis/auth/oauth2/GoogleCredential/getApplicationDefault()|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/project(java.lang.String)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/example/Example/addDataInTransaction(com.spotify.asyncdatastoreclient.Datastore)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/namespace(java.lang.String)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/example/Example/queryData(com.spotify.asyncdatastoreclient.Datastore)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/credential(com.google.api.client.auth.oauth2.Credential)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/example/Example/deleteData(com.spotify.asyncdatastoreclient.Datastore)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig/builder()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/requestRetry(int)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/connectTimeout(int)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Datastore/create(com.spotify.asyncdatastoreclient.DatastoreConfig)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/requestTimeout(int)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/maxConnections(int)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/example/Example/addData(com.spotify.asyncdatastoreclient.Datastore)|"
+    ],
+    "affectedLib": "com.google.apis:google-api-services-datastore-protobuf:v1beta2-rev1-4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:2.1.0",
+    "coordinatesV2": "com.spotify:async-datastore-client:1.0.3",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Key$Builder/path(com.spotify.asyncdatastoreclient.Key$Element)|",
+    "called": "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$Builder/addPathElement(com.google.api.services.datastore.DatastoreV1$Key$PathElement)|",
+    "v1Body": [
+      "|java+method:///com/spotify/asyncdatastoreclient/Key$Element/getPb()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$Builder/addPathElement(com.google.api.services.datastore.DatastoreV1$Key$PathElement)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/spotify/asyncdatastoreclient/Key$Element/getPb()|",
+      "|java+method:///com/google/datastore/v1/Key$Builder/addPath(com.google.datastore.v1.Key$PathElement)|"
+    ],
+    "affectedLib": "com.google.apis:google-api-services-datastore-protobuf:v1beta2-rev1-4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:2.1.0",
+    "coordinatesV2": "com.spotify:async-datastore-client:1.0.3",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Key/getKind()|",
+    "called": "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$PathElement/getKind()|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key/getPathElementList()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$PathElement/getKind()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$PathElement/hasKind()|",
+      "|java+method:///com/google/common/collect/Iterables/getLast(java.lang.Iterable,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/Key/getPathList()|",
+      "|java+method:///com/google/common/collect/Iterables/getLast(java.lang.Iterable,java.lang.Object)|",
+      "|java+method:///com/google/datastore/v1/Key$PathElement/getKind()|"
+    ],
+    "affectedLib": "com.google.apis:google-api-services-datastore-protobuf:v1beta2-rev1-4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:2.1.0",
+    "coordinatesV2": "com.spotify:async-datastore-client:1.0.3",
+    "caller": "|java+constructor:///com/spotify/asyncdatastoreclient/Query/Query()|",
+    "called": "|java+method:///com/google/api/services/datastore/DatastoreV1$Query/newBuilder()|",
+    "v1Body": [
+      "|java+method:///com/google/api/client/util/Lists/newArrayList()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Query/newBuilder()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/Query/newBuilder()|",
+      "|java+method:///com/google/api/client/util/Lists/newArrayList()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.apis:google-api-services-datastore-protobuf:v1beta2-rev1-4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:2.1.0",
+    "coordinatesV2": "com.spotify:async-datastore-client:1.0.3",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Key$Builder/namespace(java.lang.String)|",
+    "called": "|java+method:///com/google/api/services/datastore/DatastoreV1$PartitionId/newBuilder()|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$Builder/setPartitionId(com.google.api.services.datastore.DatastoreV1$PartitionId$Builder)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$PartitionId/newBuilder()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$PartitionId$Builder/setNamespace(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/PartitionId$Builder/setNamespaceId(java.lang.String)|",
+      "|java+method:///com/google/datastore/v1/PartitionId/newBuilder()|",
+      "|java+method:///com/google/datastore/v1/Key$Builder/setPartitionId(com.google.datastore.v1.PartitionId$Builder)|"
+    ],
+    "affectedLib": "com.google.apis:google-api-services-datastore-protobuf:v1beta2-rev1-4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:2.1.0",
+    "coordinatesV2": "com.spotify:async-datastore-client:1.0.3",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Entity$Builder/build()|",
+    "called": "|java+method:///com/google/api/services/datastore/DatastoreV1$Entity$Builder/clearProperty()|",
+    "v1Body": [
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Entity$Builder/addAllProperty(java.lang.Iterable)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Entity$Builder/clearProperty()|",
+      "|java+method:///java/util/stream/Collectors/toList()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Entity$Builder/build()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+constructor:///com/spotify/asyncdatastoreclient/Entity/Entity(com.google.api.services.datastore.DatastoreV1$Entity,com.spotify.asyncdatastoreclient.Entity$1)|",
+      "|java+method:///java/util/Set/stream()|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/Entity$Builder/getMutableProperties()|",
+      "|java+method:///java/util/stream/Collectors/toMap(java.util.function.Function,java.util.function.Function)|",
+      "|java+method:///java/util/Map/clear()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///java/util/Set/stream()|",
+      "|java+method:///com/google/datastore/v1/Entity$Builder/build()|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|",
+      "|java+constructor:///com/spotify/asyncdatastoreclient/Entity/Entity(com.google.datastore.v1.Entity,com.spotify.asyncdatastoreclient.Entity$1)|",
+      "|java+method:///com/google/datastore/v1/Entity$Builder/putAllProperties(java.util.Map)|"
+    ],
+    "affectedLib": "com.google.apis:google-api-services-datastore-protobuf:v1beta2-rev1-4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:2.1.0",
+    "coordinatesV2": "com.spotify:async-datastore-client:1.0.3",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Key$Builder/path(java.lang.String)|",
+    "called": "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$PathElement/newBuilder()|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$PathElement$Builder/setKind(java.lang.String)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$PathElement/newBuilder()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$Builder/addPathElement(com.google.api.services.datastore.DatastoreV1$Key$PathElement$Builder)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/Key$PathElement/newBuilder()|",
+      "|java+method:///com/google/datastore/v1/Key$PathElement$Builder/setKind(java.lang.String)|",
+      "|java+method:///com/google/datastore/v1/Key$Builder/addPath(com.google.datastore.v1.Key$PathElement$Builder)|"
+    ],
+    "affectedLib": "com.google.apis:google-api-services-datastore-protobuf:v1beta2-rev1-4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:2.1.0",
+    "coordinatesV2": "com.spotify:async-datastore-client:1.0.3",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Query/kindOf(java.lang.String)|",
+    "called": "|java+method:///com/google/api/services/datastore/DatastoreV1$KindExpression$Builder/build()|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$KindExpression$Builder/setName(java.lang.String)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$KindExpression/newBuilder()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$KindExpression$Builder/build()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Query$Builder/addKind(com.google.api.services.datastore.DatastoreV1$KindExpression)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/KindExpression/newBuilder()|",
+      "|java+method:///com/google/datastore/v1/KindExpression$Builder/setName(java.lang.String)|",
+      "|java+method:///com/google/datastore/v1/Query$Builder/addKind(com.google.datastore.v1.KindExpression$Builder)|"
+    ],
+    "affectedLib": "com.google.apis:google-api-services-datastore-protobuf:v1beta2-rev1-4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:2.1.0",
+    "coordinatesV2": "com.spotify:async-datastore-client:1.0.3",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Entity/getPb(java.lang.String)|",
+    "called": "|java+method:///com/google/api/services/datastore/DatastoreV1$Entity$Builder/setKey(com.google.api.services.datastore.DatastoreV1$Key)|",
+    "v1Body": [
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Entity$Builder/addAllProperty(java.lang.Iterable)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Entity/getKey()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Entity$Builder/build()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Entity$Builder/setKey(com.google.api.services.datastore.DatastoreV1$Key)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Entity/getPropertyList()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Entity$Builder/clearProperty()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Entity/newBuilder(com.google.api.services.datastore.DatastoreV1$Entity)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Key/getPb(java.lang.String)|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|",
+      "|java+method:///java/util/stream/Collectors/toList()|",
+      "|java+method:///java/util/List/stream()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/Entity$Builder/setKey(com.google.datastore.v1.Key)|",
+      "|java+method:///com/google/datastore/v1/Entity$Builder/putAllProperties(java.util.Map)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Entity/getKey()|",
+      "|java+method:///com/google/datastore/v1/Entity/getProperties()|",
+      "|java+method:///com/google/datastore/v1/Entity/newBuilder()|",
+      "|java+method:///java/util/stream/Collectors/toMap(java.util.function.Function,java.util.function.Function)|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///java/util/Set/stream()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Key/getPb(java.lang.String)|",
+      "|java+method:///com/google/datastore/v1/Entity$Builder/build()|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|"
+    ],
+    "affectedLib": "com.google.apis:google-api-services-datastore-protobuf:v1beta2-rev1-4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:2.1.0",
+    "coordinatesV2": "com.spotify:async-datastore-client:1.0.3",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Key$Builder/build()|",
+    "called": "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$Builder/build()|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$Builder/build()|",
+      "|java+constructor:///com/spotify/asyncdatastoreclient/Key/Key(com.google.api.services.datastore.DatastoreV1$Key,com.spotify.asyncdatastoreclient.Key$1)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/spotify/asyncdatastoreclient/Key/Key(com.google.datastore.v1.Key,com.spotify.asyncdatastoreclient.Key$1)|",
+      "|java+method:///com/google/datastore/v1/Key$Builder/build()|"
+    ],
+    "affectedLib": "com.google.apis:google-api-services-datastore-protobuf:v1beta2-rev1-4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:2.1.0",
+    "coordinatesV2": "com.spotify:async-datastore-client:1.0.3",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Value$Builder/value(java.lang.Object)|",
+    "called": "|java+method:///com/google/api/services/datastore/DatastoreV1$Value$Builder/setIndexed(boolean)|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value$Builder/setEntityValue(com.google.api.services.datastore.DatastoreV1$Entity)|",
+      "|java+method:///java/lang/Float/doubleValue()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value$Builder/setStringValue(java.lang.String)|",
+      "|java+method:///java/lang/Integer/longValue()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Key/getPb()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value$Builder/setDoubleValue(double)|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value$Builder/setIntegerValue(long)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value$Builder/setIndexed(boolean)|",
+      "|java+method:///java/lang/Double/doubleValue()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value$Builder/setKeyValue(com.google.api.services.datastore.DatastoreV1$Key)|",
+      "|java+method:///java/util/Date/getTime()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value$Builder/setBooleanValue(boolean)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value$Builder/setTimestampMicrosecondsValue(long)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value$Builder/setBlobValue(com.google.protobuf.ByteString)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Entity/getPb()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/Value$Builder/setDoubleValue(double)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Value/access$100(java.util.Date)|",
+      "|java+method:///com/google/datastore/v1/Value$Builder/setKeyValue(com.google.datastore.v1.Key)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/google/datastore/v1/Value$Builder/setEntityValue(com.google.datastore.v1.Entity)|",
+      "|java+method:///com/google/datastore/v1/Value$Builder/setTimestampValue(com.google.protobuf.Timestamp)|",
+      "|java+method:///com/google/datastore/v1/Value$Builder/setStringValue(java.lang.String)|",
+      "|java+method:///com/google/datastore/v1/Value$Builder/setBooleanValue(boolean)|",
+      "|java+method:///com/google/datastore/v1/Value$Builder/setBlobValue(com.google.protobuf.ByteString)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/Float/doubleValue()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/lang/Integer/longValue()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Key/getPb()|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///java/lang/Double/doubleValue()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///com/google/datastore/v1/Value$Builder/setIntegerValue(long)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Entity/getPb()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/google/datastore/v1/Value$Builder/setExcludeFromIndexes(boolean)|"
+    ],
+    "affectedLib": "com.google.apis:google-api-services-datastore-protobuf:v1beta2-rev1-4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:2.1.0",
+    "coordinatesV2": "com.spotify:async-datastore-client:1.0.3",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Insert/getPb(java.lang.String)|",
+    "called": "|java+method:///com/google/api/services/datastore/DatastoreV1$Mutation$Builder/addInsertAutoId(com.google.api.services.datastore.DatastoreV1$Entity)|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Mutation$Builder/addInsert(com.google.api.services.datastore.DatastoreV1$Entity)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Mutation$Builder/addInsertAutoId(com.google.api.services.datastore.DatastoreV1$Entity)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Insert/getKey()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Key/isComplete()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Mutation$Builder/build()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Entity/getPb(java.lang.String)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Entity$Builder/build()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Mutation/newBuilder()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/Mutation$Builder/setInsert(com.google.datastore.v1.Entity)|",
+      "|java+method:///com/google/datastore/v1/Mutation/newBuilder()|",
+      "|java+method:///com/google/datastore/v1/Mutation$Builder/build()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Entity/getPb(java.lang.String)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Entity$Builder/build()|"
+    ],
+    "affectedLib": "com.google.apis:google-api-services-datastore-protobuf:v1beta2-rev1-4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:2.1.0",
+    "coordinatesV2": "com.spotify:async-datastore-client:1.0.3",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Value/getEntity()|",
+    "called": "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/getEntityValue()|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/hasEntityValue()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/getEntityValue()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Entity/builder(com.google.api.services.datastore.DatastoreV1$Entity)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Entity$Builder/build()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/Value/getEntityValue()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Value/isEntity()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Entity/builder(com.google.datastore.v1.Entity)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Entity$Builder/build()|"
+    ],
+    "affectedLib": "com.google.apis:google-api-services-datastore-protobuf:v1beta2-rev1-4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:2.1.0",
+    "coordinatesV2": "com.spotify:async-datastore-client:1.0.3",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Value$Builder/value(java.util.List)|",
+    "called": "|java+method:///com/google/api/services/datastore/DatastoreV1$Value$Builder/addAllListValue(java.lang.Iterable)|",
+    "v1Body": [
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value$Builder/addAllListValue(java.lang.Iterable)|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|",
+      "|java+method:///java/util/stream/Collectors/toList()|",
+      "|java+method:///java/util/List/stream()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+method:///com/google/datastore/v1/ArrayValue$Builder/addAllValues(java.lang.Iterable)|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|",
+      "|java+method:///com/google/datastore/v1/Value$Builder/setArrayValue(com.google.datastore.v1.ArrayValue)|",
+      "|java+method:///com/google/datastore/v1/ArrayValue/newBuilder()|",
+      "|java+method:///com/google/datastore/v1/ArrayValue$Builder/build()|",
+      "|java+method:///java/util/stream/Collectors/toList()|",
+      "|java+method:///java/util/List/stream()|"
+    ],
+    "affectedLib": "com.google.apis:google-api-services-datastore-protobuf:v1beta2-rev1-4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:2.1.0",
+    "coordinatesV2": "com.spotify:async-datastore-client:1.0.3",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/MutationResult/getInsertKey()|",
+    "called": "|java+method:///com/google/api/services/datastore/DatastoreV1$MutationResult/getInsertAutoIdKeyCount()|",
+    "v1Body": [
+      "|java+method:///com/spotify/asyncdatastoreclient/Key/builder(com.google.api.services.datastore.DatastoreV1$Key)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Key$Builder/build()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$MutationResult/getInsertAutoIdKey(int)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$MutationResult/getInsertAutoIdKeyCount()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/spotify/asyncdatastoreclient/Key$Builder/build()|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///com/google/datastore/v1/MutationResult/getKey()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Key/builder(com.google.datastore.v1.Key)|"
+    ],
+    "affectedLib": "com.google.apis:google-api-services-datastore-protobuf:v1beta2-rev1-4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:2.1.0",
+    "coordinatesV2": "com.spotify:async-datastore-client:1.0.3",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Key/isComplete()|",
+    "called": "|java+method:///com/google/api/services/datastore/DatastoreV1$Key/getPathElementCount()|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key/getPathElementList()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$PathElement/hasId()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key/getPathElementCount()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$PathElement/hasName()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/List/stream()|",
+      "|java+method:///com/google/datastore/v1/Key/getPathList()|",
+      "|java+method:///com/google/datastore/v1/Key/getPathCount()|",
+      "|java+method:///java/util/stream/Stream/allMatch(java.util.function.Predicate)|"
+    ],
+    "affectedLib": "com.google.apis:google-api-services-datastore-protobuf:v1beta2-rev1-4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:2.1.0",
+    "coordinatesV2": "com.spotify:async-datastore-client:1.0.3",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Value/toString()|",
+    "called": "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/getListValueCount()|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/toString()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/hasBooleanValue()|",
+      "|java+method:///java/lang/String/valueOf(boolean)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/hasBlobValue()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/getListValueCount()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Key/toString()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/getDoubleValue()|",
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/getStringValue()|",
+      "|java+method:///java/lang/String/valueOf(double)|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Value/getKey()|",
+      "|java+method:///java/util/Date/toString()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/getIntegerValue()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Value/getList()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/hasEntityValue()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Entity/toString()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/hasKeyValue()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/hasIntegerValue()|",
+      "|java+method:///java/util/List/stream()|",
+      "|java+method:///java/util/stream/Collectors/joining(java.lang.CharSequence)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Value/getEntity()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Value/getDate()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/hasTimestampMicrosecondsValue()|",
+      "|java+method:///java/lang/String/valueOf(long)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/hasStringValue()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/hasDoubleValue()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/getBooleanValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+method:///java/lang/String/valueOf(boolean)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Value/getList()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Entity/toString()|",
+      "|java+method:///java/util/List/stream()|",
+      "|java+method:///com/google/datastore/v1/Value/getValueTypeCase()|",
+      "|java+method:///com/google/datastore/v1/Value$ValueTypeCase/ordinal()|",
+      "|java+method:///com/google/datastore/v1/Value/getIntegerValue()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/google/datastore/v1/Value/toString()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Value/getDate()|",
+      "|java+method:///java/lang/String/valueOf(long)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Key/toString()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/String/valueOf(double)|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|",
+      "|java+method:///com/google/datastore/v1/Value/getBooleanValue()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Value/getKey()|",
+      "|java+method:///java/util/Date/toString()|",
+      "|java+method:///java/util/stream/Collectors/joining(java.lang.CharSequence)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Value/getEntity()|",
+      "|java+method:///com/google/datastore/v1/Value/getStringValue()|",
+      "|java+method:///com/google/datastore/v1/Value/getDoubleValue()|"
+    ],
+    "affectedLib": "com.google.apis:google-api-services-datastore-protobuf:v1beta2-rev1-4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:2.1.0",
+    "coordinatesV2": "com.spotify:async-datastore-client:1.0.3",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Key$Builder/path(java.lang.String,long)|",
+    "called": "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$PathElement/newBuilder()|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$PathElement$Builder/setKind(java.lang.String)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$PathElement/newBuilder()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$Builder/addPathElement(com.google.api.services.datastore.DatastoreV1$Key$PathElement$Builder)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$PathElement$Builder/setId(long)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/Key$PathElement$Builder/setId(long)|",
+      "|java+method:///com/google/datastore/v1/Key$PathElement/newBuilder()|",
+      "|java+method:///com/google/datastore/v1/Key$PathElement$Builder/setKind(java.lang.String)|",
+      "|java+method:///com/google/datastore/v1/Key$Builder/addPath(com.google.datastore.v1.Key$PathElement$Builder)|"
+    ],
+    "affectedLib": "com.google.apis:google-api-services-datastore-protobuf:v1beta2-rev1-4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:2.1.0",
+    "coordinatesV2": "com.spotify:async-datastore-client:1.0.3",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Key$Element/getName()|",
+    "called": "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$PathElement/getName()|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$PathElement/getName()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$PathElement/hasName()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/spotify/asyncdatastoreclient/Key/access$100(com.google.datastore.v1.Key$PathElement)|",
+      "|java+method:///com/google/datastore/v1/Key$PathElement/getName()|"
+    ],
+    "affectedLib": "com.google.apis:google-api-services-datastore-protobuf:v1beta2-rev1-4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:2.1.0",
+    "coordinatesV2": "com.spotify:async-datastore-client:1.0.3",
+    "caller": "|java+constructor:///com/spotify/asyncdatastoreclient/Entity$Builder/Entity$Builder()|",
+    "called": "|java+method:///com/google/api/services/datastore/DatastoreV1$Entity/newBuilder()|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Entity/newBuilder()|",
+      "|java+method:///com/google/api/client/util/Maps/newHashMap()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/collect/Maps/newHashMap()|",
+      "|java+method:///com/google/datastore/v1/Entity/newBuilder()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.apis:google-api-services-datastore-protobuf:v1beta2-rev1-4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:2.1.0",
+    "coordinatesV2": "com.spotify:async-datastore-client:1.0.3",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Query/keysOnly()|",
+    "called": "|java+method:///com/google/api/services/datastore/DatastoreV1$PropertyExpression/newBuilder()|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$PropertyReference$Builder/setName(java.lang.String)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$PropertyReference/newBuilder()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$PropertyExpression$Builder/setProperty(com.google.api.services.datastore.DatastoreV1$PropertyReference$Builder)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$PropertyExpression/newBuilder()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Query$Builder/addProjection(com.google.api.services.datastore.DatastoreV1$PropertyExpression$Builder)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/PropertyReference/newBuilder()|",
+      "|java+method:///com/google/datastore/v1/Projection/newBuilder()|",
+      "|java+method:///com/google/datastore/v1/Projection$Builder/setProperty(com.google.datastore.v1.PropertyReference)|",
+      "|java+method:///com/google/datastore/v1/PropertyReference$Builder/build()|",
+      "|java+method:///com/google/datastore/v1/PropertyReference$Builder/setName(java.lang.String)|",
+      "|java+method:///com/google/datastore/v1/Query$Builder/addProjection(com.google.datastore.v1.Projection$Builder)|"
+    ],
+    "affectedLib": "com.google.apis:google-api-services-datastore-protobuf:v1beta2-rev1-4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:2.1.0",
+    "coordinatesV2": "com.spotify:async-datastore-client:1.0.3",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Value/getList()|",
+    "called": "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/getListValueCount()|",
+    "v1Body": [
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/getListValueList()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/getListValueCount()|",
+      "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.util.Collection)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/util/stream/Collectors/toList()|",
+      "|java+method:///java/util/List/stream()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+method:///com/google/datastore/v1/Value/getArrayValue()|",
+      "|java+method:///java/util/stream/Stream/iterator()|",
+      "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.util.Iterator)|",
+      "|java+method:///com/google/datastore/v1/ArrayValue/getValuesList()|",
+      "|java+method:///java/util/List/stream()|"
+    ],
+    "affectedLib": "com.google.apis:google-api-services-datastore-protobuf:v1beta2-rev1-4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:2.1.0",
+    "coordinatesV2": "com.spotify:async-datastore-client:1.0.3",
+    "caller": "|java+constructor:///com/spotify/asyncdatastoreclient/Value$Builder/Value$Builder()|",
+    "called": "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/newBuilder()|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/newBuilder()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/Value/newBuilder()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.apis:google-api-services-datastore-protobuf:v1beta2-rev1-4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:2.1.0",
+    "coordinatesV2": "com.spotify:async-datastore-client:1.0.3",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Value/getPb(java.lang.String)|",
+    "called": "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/newBuilder(com.google.api.services.datastore.DatastoreV1$Value)|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/newBuilder(com.google.api.services.datastore.DatastoreV1$Value)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value$Builder/build()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Key/getPb(java.lang.String)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Value/getKey()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/hasKeyValue()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value$Builder/setKeyValue(com.google.api.services.datastore.DatastoreV1$Key)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/Value/newBuilder(com.google.datastore.v1.Value)|",
+      "|java+method:///com/google/datastore/v1/Value$Builder/setKeyValue(com.google.datastore.v1.Key)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Key/getPb(java.lang.String)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Value/getKey()|",
+      "|java+method:///com/google/datastore/v1/Value$Builder/build()|",
+      "|java+method:///com/google/datastore/v1/Key/getPathCount()|",
+      "|java+method:///com/google/datastore/v1/Value/getKeyValue()|"
+    ],
+    "affectedLib": "com.google.apis:google-api-services-datastore-protobuf:v1beta2-rev1-4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:2.1.0",
+    "coordinatesV2": "com.spotify:async-datastore-client:1.0.3",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Entity$Builder/key(com.spotify.asyncdatastoreclient.Key)|",
+    "called": "|java+method:///com/google/api/services/datastore/DatastoreV1$Entity$Builder/setKey(com.google.api.services.datastore.DatastoreV1$Key)|",
+    "v1Body": [
+      "|java+method:///com/spotify/asyncdatastoreclient/Key/getPb()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Entity$Builder/setKey(com.google.api.services.datastore.DatastoreV1$Key)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/Entity$Builder/setKey(com.google.datastore.v1.Key)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Key/getPb()|"
+    ],
+    "affectedLib": "com.google.apis:google-api-services-datastore-protobuf:v1beta2-rev1-4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:2.1.0",
+    "coordinatesV2": "com.spotify:async-datastore-client:1.0.3",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Query/properties(java.util.List)|",
+    "called": "|java+method:///com/google/api/services/datastore/DatastoreV1$Query$Builder/addAllProjection(java.lang.Iterable)|",
+    "v1Body": [
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Query$Builder/addAllProjection(java.lang.Iterable)|",
+      "|java+method:///java/util/stream/Collectors/toList()|",
+      "|java+method:///java/util/List/stream()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+method:///com/google/datastore/v1/Query$Builder/addAllProjection(java.lang.Iterable)|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|",
+      "|java+method:///java/util/stream/Collectors/toList()|",
+      "|java+method:///java/util/List/stream()|"
+    ],
+    "affectedLib": "com.google.apis:google-api-services-datastore-protobuf:v1beta2-rev1-4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:2.1.0",
+    "coordinatesV2": "com.spotify:async-datastore-client:1.0.3",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Key/getPb(java.lang.String)|",
+    "called": "|java+method:///com/google/api/services/datastore/DatastoreV1$PartitionId/newBuilder()|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key/newBuilder(com.google.api.services.datastore.DatastoreV1$Key)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$PartitionId/newBuilder()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$PartitionId$Builder/setNamespace(java.lang.String)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$Builder/setPartitionId(com.google.api.services.datastore.DatastoreV1$PartitionId$Builder)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$Builder/build()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/Key/newBuilder(com.google.datastore.v1.Key)|",
+      "|java+method:///com/google/datastore/v1/PartitionId$Builder/setNamespaceId(java.lang.String)|",
+      "|java+method:///com/google/datastore/v1/PartitionId/newBuilder()|",
+      "|java+method:///com/google/datastore/v1/Key$Builder/setPartitionId(com.google.datastore.v1.PartitionId$Builder)|",
+      "|java+method:///com/google/datastore/v1/Key$Builder/build()|"
+    ],
+    "affectedLib": "com.google.apis:google-api-services-datastore-protobuf:v1beta2-rev1-4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:2.1.0",
+    "coordinatesV2": "com.spotify:async-datastore-client:1.0.3",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Batch/getPb(java.lang.String)|",
+    "called": "|java+method:///com/google/api/services/datastore/DatastoreV1$Mutation/newBuilder()|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Mutation$Builder/mergeFrom(com.google.api.services.datastore.DatastoreV1$Mutation)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/MutationStatement/getPb(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Mutation$Builder/build()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Mutation/newBuilder()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|",
+      "|java+method:///java/util/stream/Collectors/toList()|",
+      "|java+method:///java/util/List/stream()|"
+    ],
+    "affectedLib": "com.google.apis:google-api-services-datastore-protobuf:v1beta2-rev1-4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:2.1.0",
+    "coordinatesV2": "com.spotify:async-datastore-client:1.0.3",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Order/getPb()|",
+    "called": "|java+method:///com/google/api/services/datastore/DatastoreV1$PropertyOrder$Builder/setProperty(com.google.api.services.datastore.DatastoreV1$PropertyReference$Builder)|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$PropertyOrder$Builder/setProperty(com.google.api.services.datastore.DatastoreV1$PropertyReference$Builder)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$PropertyReference$Builder/setName(java.lang.String)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$PropertyOrder/newBuilder()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$PropertyReference/newBuilder()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$PropertyOrder$Builder/build()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$PropertyOrder$Builder/setDirection(com.google.api.services.datastore.DatastoreV1$PropertyOrder$Direction)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/PropertyReference/newBuilder()|",
+      "|java+method:///com/google/datastore/v1/PropertyOrder$Builder/setProperty(com.google.datastore.v1.PropertyReference$Builder)|",
+      "|java+method:///com/google/datastore/v1/PropertyReference$Builder/setName(java.lang.String)|",
+      "|java+method:///com/google/datastore/v1/PropertyOrder$Builder/build()|",
+      "|java+method:///com/google/datastore/v1/PropertyOrder$Builder/setDirection(com.google.datastore.v1.PropertyOrder$Direction)|",
+      "|java+method:///com/google/datastore/v1/PropertyOrder/newBuilder()|"
+    ],
+    "affectedLib": "com.google.apis:google-api-services-datastore-protobuf:v1beta2-rev1-4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:2.1.0",
+    "coordinatesV2": "com.spotify:async-datastore-client:1.0.3",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Query/limit(int)|",
+    "called": "|java+method:///com/google/api/services/datastore/DatastoreV1$Query$Builder/setLimit(int)|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Query$Builder/setLimit(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/Query$Builder/setLimit(com.google.protobuf.Int32Value$Builder)|",
+      "|java+method:///com/google/protobuf/Int32Value/newBuilder()|",
+      "|java+method:///com/google/protobuf/Int32Value$Builder/setValue(int)|"
+    ],
+    "affectedLib": "com.google.apis:google-api-services-datastore-protobuf:v1beta2-rev1-4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:2.1.0",
+    "coordinatesV2": "com.spotify:async-datastore-client:1.0.3",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Group/getPb()|",
+    "called": "|java+method:///com/google/api/services/datastore/DatastoreV1$PropertyReference$Builder/build()|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$PropertyReference$Builder/setName(java.lang.String)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$PropertyReference$Builder/build()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$PropertyReference/newBuilder()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/PropertyReference/newBuilder()|",
+      "|java+method:///com/google/datastore/v1/PropertyReference$Builder/setName(java.lang.String)|",
+      "|java+method:///com/google/datastore/v1/PropertyReference$Builder/build()|"
+    ],
+    "affectedLib": "com.google.apis:google-api-services-datastore-protobuf:v1beta2-rev1-4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:2.1.0",
+    "coordinatesV2": "com.spotify:async-datastore-client:1.0.3",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Query/groupBy(com.spotify.asyncdatastoreclient.Group)|",
+    "called": "|java+method:///com/google/api/services/datastore/DatastoreV1$Query$Builder/addGroupBy(com.google.api.services.datastore.DatastoreV1$PropertyReference)|",
+    "v1Body": [
+      "|java+method:///com/spotify/asyncdatastoreclient/Group/getPb()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Query$Builder/addGroupBy(com.google.api.services.datastore.DatastoreV1$PropertyReference)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/spotify/asyncdatastoreclient/Group/getPb()|",
+      "|java+method:///com/google/datastore/v1/Query$Builder/addDistinctOn(com.google.datastore.v1.PropertyReference)|"
+    ],
+    "affectedLib": "com.google.apis:google-api-services-datastore-protobuf:v1beta2-rev1-4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:2.1.0",
+    "coordinatesV2": "com.spotify:async-datastore-client:1.0.3",
+    "caller": "|java+constructor:///com/spotify/asyncdatastoreclient/Key$Builder/Key$Builder()|",
+    "called": "|java+method:///com/google/api/services/datastore/DatastoreV1$Key/newBuilder()|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key/newBuilder()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/Key/newBuilder()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.apis:google-api-services-datastore-protobuf:v1beta2-rev1-4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:2.1.0",
+    "coordinatesV2": "com.spotify:async-datastore-client:1.0.3",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Value/getKey()|",
+    "called": "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/getKeyValue()|",
+    "v1Body": [
+      "|java+method:///com/spotify/asyncdatastoreclient/Key/builder(com.google.api.services.datastore.DatastoreV1$Key)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/getKeyValue()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Key$Builder/build()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/hasKeyValue()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/spotify/asyncdatastoreclient/Key$Builder/build()|",
+      "|java+method:///com/google/datastore/v1/Value/getKeyValue()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Key/builder(com.google.datastore.v1.Key)|"
+    ],
+    "affectedLib": "com.google.apis:google-api-services-datastore-protobuf:v1beta2-rev1-4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:2.1.0",
+    "coordinatesV2": "com.spotify:async-datastore-client:1.0.3",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Key$Element/getKind()|",
+    "called": "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$PathElement/getKind()|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$PathElement/getKind()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$PathElement/hasKind()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/Key$PathElement/getKind()|"
+    ],
+    "affectedLib": "com.google.apis:google-api-services-datastore-protobuf:v1beta2-rev1-4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:2.1.0",
+    "coordinatesV2": "com.spotify:async-datastore-client:1.0.3",
+    "caller": "|java+constructor:///com/spotify/asyncdatastoreclient/Entity$Builder/Entity$Builder(com.spotify.asyncdatastoreclient.Key)|",
+    "called": "|java+method:///com/google/api/services/datastore/DatastoreV1$Entity$Builder/setKey(com.google.api.services.datastore.DatastoreV1$Key)|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Entity/newBuilder()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Key/getPb()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Entity$Builder/setKey(com.google.api.services.datastore.DatastoreV1$Key)|",
+      "|java+method:///com/google/api/client/util/Maps/newHashMap()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/spotify/asyncdatastoreclient/Key/getPb()|",
+      "|java+method:///com/google/datastore/v1/Entity/newBuilder()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///com/google/common/collect/Maps/newHashMap()|",
+      "|java+method:///com/google/datastore/v1/Entity$Builder/setKey(com.google.datastore.v1.Key)|"
+    ],
+    "affectedLib": "com.google.apis:google-api-services-datastore-protobuf:v1beta2-rev1-4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:2.1.0",
+    "coordinatesV2": "com.spotify:async-datastore-client:1.0.3",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/example/ExampleAsync/main(java.lang.String%5B%5D)|",
+    "called": "|java+method:///com/google/api/services/datastore/client/DatastoreHelper/getComputeEngineCredential()|",
+    "v1Body": [
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/build()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/dataset(java.lang.String)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/example/ExampleAsync/addDataInTransaction(com.spotify.asyncdatastoreclient.Datastore)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/namespace(java.lang.String)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/credential(com.google.api.client.auth.oauth2.Credential)|",
+      "|java+method:///com/google/common/util/concurrent/Futures/transform(com.google.common.util.concurrent.ListenableFuture,com.google.common.util.concurrent.AsyncFunction)|",
+      "|java+method:///com/google/api/services/datastore/client/DatastoreHelper/getComputeEngineCredential()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig/builder()|",
+      "|java+method:///com/google/common/util/concurrent/Futures/addCallback(com.google.common.util.concurrent.ListenableFuture,com.google.common.util.concurrent.FutureCallback)|",
+      "|java+method:///com/google/common/util/concurrent/Futures/allAsList(com.google.common.util.concurrent.ListenableFuture%5B%5D)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/requestRetry(int)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/connectTimeout(int)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Datastore/create(com.spotify.asyncdatastoreclient.DatastoreConfig)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/requestTimeout(int)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/maxConnections(int)|",
+      "|java+constructor:///com/spotify/asyncdatastoreclient/example/ExampleAsync$1/ExampleAsync$1()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/example/ExampleAsync/addData(com.spotify.asyncdatastoreclient.Datastore)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/build()|",
+      "|java+method:///com/google/api/client/googleapis/auth/oauth2/GoogleCredential/getApplicationDefault()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/project(java.lang.String)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/example/ExampleAsync/addDataInTransaction(com.spotify.asyncdatastoreclient.Datastore)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/namespace(java.lang.String)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/credential(com.google.api.client.auth.oauth2.Credential)|",
+      "|java+method:///com/google/common/util/concurrent/Futures/transform(com.google.common.util.concurrent.ListenableFuture,com.google.common.util.concurrent.AsyncFunction)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig/builder()|",
+      "|java+method:///com/google/common/util/concurrent/Futures/addCallback(com.google.common.util.concurrent.ListenableFuture,com.google.common.util.concurrent.FutureCallback)|",
+      "|java+method:///com/google/common/util/concurrent/Futures/allAsList(com.google.common.util.concurrent.ListenableFuture%5B%5D)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/requestRetry(int)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/connectTimeout(int)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Datastore/create(com.spotify.asyncdatastoreclient.DatastoreConfig)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/requestTimeout(int)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/maxConnections(int)|",
+      "|java+constructor:///com/spotify/asyncdatastoreclient/example/ExampleAsync$1/ExampleAsync$1()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/example/ExampleAsync/addData(com.spotify.asyncdatastoreclient.Datastore)|"
+    ],
+    "affectedLib": "com.google.apis:google-api-services-datastore-protobuf:v1beta2-rev1-4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/example/ExampleAsync/main(java.lang.String%5B%5D)|",
+    "called": "|java+method:///com/google/api/client/googleapis/auth/oauth2/GoogleCredential/getApplicationDefault()|",
+    "v1Body": [
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/build()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/dataset(java.lang.String)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/example/ExampleAsync/addDataInTransaction(com.spotify.asyncdatastoreclient.Datastore)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/namespace(java.lang.String)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/credential(com.google.api.client.auth.oauth2.Credential)|",
+      "|java+method:///com/google/common/util/concurrent/Futures/transform(com.google.common.util.concurrent.ListenableFuture,com.google.common.util.concurrent.AsyncFunction)|",
+      "|java+method:///com/google/api/services/datastore/client/DatastoreHelper/getComputeEngineCredential()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig/builder()|",
+      "|java+method:///com/google/common/util/concurrent/Futures/addCallback(com.google.common.util.concurrent.ListenableFuture,com.google.common.util.concurrent.FutureCallback)|",
+      "|java+method:///com/google/common/util/concurrent/Futures/allAsList(com.google.common.util.concurrent.ListenableFuture%5B%5D)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/requestRetry(int)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/connectTimeout(int)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Datastore/create(com.spotify.asyncdatastoreclient.DatastoreConfig)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/requestTimeout(int)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/maxConnections(int)|",
+      "|java+constructor:///com/spotify/asyncdatastoreclient/example/ExampleAsync$1/ExampleAsync$1()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/example/ExampleAsync/addData(com.spotify.asyncdatastoreclient.Datastore)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/build()|",
+      "|java+method:///com/google/api/client/googleapis/auth/oauth2/GoogleCredential/getApplicationDefault()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/project(java.lang.String)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/example/ExampleAsync/addDataInTransaction(com.spotify.asyncdatastoreclient.Datastore)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/namespace(java.lang.String)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/credential(com.google.api.client.auth.oauth2.Credential)|",
+      "|java+method:///com/google/common/util/concurrent/Futures/transform(com.google.common.util.concurrent.ListenableFuture,com.google.common.util.concurrent.AsyncFunction)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig/builder()|",
+      "|java+method:///com/google/common/util/concurrent/Futures/addCallback(com.google.common.util.concurrent.ListenableFuture,com.google.common.util.concurrent.FutureCallback)|",
+      "|java+method:///com/google/common/util/concurrent/Futures/allAsList(com.google.common.util.concurrent.ListenableFuture%5B%5D)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/requestRetry(int)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/connectTimeout(int)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Datastore/create(com.spotify.asyncdatastoreclient.DatastoreConfig)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/requestTimeout(int)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/maxConnections(int)|",
+      "|java+constructor:///com/spotify/asyncdatastoreclient/example/ExampleAsync$1/ExampleAsync$1()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/example/ExampleAsync/addData(com.spotify.asyncdatastoreclient.Datastore)|"
+    ],
+    "affectedLib": "com.google.api-client:google-api-client:1.21.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/example/Example/main(java.lang.String%5B%5D)|",
+    "called": "|java+method:///com/google/api/client/googleapis/auth/oauth2/GoogleCredential/getApplicationDefault()|",
+    "v1Body": [
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/build()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/example/Example/addDataInTransaction(com.spotify.asyncdatastoreclient.Datastore)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/namespace(java.lang.String)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/example/Example/queryData(com.spotify.asyncdatastoreclient.Datastore)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/credential(com.google.api.client.auth.oauth2.Credential)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/example/Example/deleteData(com.spotify.asyncdatastoreclient.Datastore)|",
+      "|java+method:///com/google/api/services/datastore/client/DatastoreHelper/getComputeEngineCredential()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig/builder()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/requestRetry(int)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/connectTimeout(int)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Datastore/create(com.spotify.asyncdatastoreclient.DatastoreConfig)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/requestTimeout(int)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/maxConnections(int)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/example/Example/addData(com.spotify.asyncdatastoreclient.Datastore)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/dataset(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/build()|",
+      "|java+method:///com/google/api/client/googleapis/auth/oauth2/GoogleCredential/getApplicationDefault()|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/project(java.lang.String)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/example/Example/addDataInTransaction(com.spotify.asyncdatastoreclient.Datastore)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/namespace(java.lang.String)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/example/Example/queryData(com.spotify.asyncdatastoreclient.Datastore)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/credential(com.google.api.client.auth.oauth2.Credential)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/example/Example/deleteData(com.spotify.asyncdatastoreclient.Datastore)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig/builder()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/requestRetry(int)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/connectTimeout(int)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Datastore/create(com.spotify.asyncdatastoreclient.DatastoreConfig)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/requestTimeout(int)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/DatastoreConfig$Builder/maxConnections(int)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/example/Example/addData(com.spotify.asyncdatastoreclient.Datastore)|"
+    ],
+    "affectedLib": "com.google.api-client:google-api-client:1.21.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Value/getBoolean()|",
+    "called": "|java+method:///com/google/datastore/v1/Value/getBooleanValue()|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/hasBooleanValue()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/getBooleanValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/Value/getBooleanValue()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Value/isBoolean()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Query/orderBy(com.spotify.asyncdatastoreclient.Order)|",
+    "called": "|java+method:///com/google/datastore/v1/Query$Builder/addOrder(com.google.datastore.v1.PropertyOrder)|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Query$Builder/addOrder(com.google.api.services.datastore.DatastoreV1$PropertyOrder)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Order/getPb()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/Query$Builder/addOrder(com.google.datastore.v1.PropertyOrder)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Order/getPb()|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Value/getDate()|",
+    "called": "|java+method:///com/google/datastore/v1/Value/getTimestampValue()|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/getIntegerValue()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/hasIntegerValue()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/hasTimestampMicrosecondsValue()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/getMeaning()|",
+      "|java+constructor:///java/util/Date/Date(long)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/getTimestampMicrosecondsValue()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/hasMeaning()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/spotify/asyncdatastoreclient/Value/toDate(com.google.protobuf.Timestamp)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Value/isDate()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///com/google/datastore/v1/Value/getTimestampValue()|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Key/getName()|",
+    "called": "|java+method:///com/google/datastore/v1/Key$PathElement/getName()|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$PathElement/getName()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$PathElement/hasName()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key/getPathElementList()|",
+      "|java+method:///com/google/common/collect/Iterables/getLast(java.lang.Iterable,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/spotify/asyncdatastoreclient/Key/isName(com.google.datastore.v1.Key$PathElement)|",
+      "|java+method:///com/google/datastore/v1/Key$PathElement/getName()|",
+      "|java+method:///com/google/datastore/v1/Key/getPathList()|",
+      "|java+method:///com/google/common/collect/Iterables/getLast(java.lang.Iterable,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Delete/getPb(java.lang.String)|",
+    "called": "|java+method:///com/google/datastore/v1/Mutation/newBuilder()|",
+    "v1Body": [
+      "|java+method:///com/spotify/asyncdatastoreclient/Delete/getKey()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Key/getPb(java.lang.String)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Mutation$Builder/addDelete(com.google.api.services.datastore.DatastoreV1$Key)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Mutation$Builder/build()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Mutation/newBuilder()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/spotify/asyncdatastoreclient/Delete/getKey()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Key/getPb(java.lang.String)|",
+      "|java+method:///com/google/datastore/v1/Mutation/newBuilder()|",
+      "|java+method:///com/google/datastore/v1/Mutation$Builder/build()|",
+      "|java+method:///com/google/datastore/v1/Mutation$Builder/setDelete(com.google.datastore.v1.Key)|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Key$Builder/path(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///com/google/datastore/v1/Key$PathElement$Builder/setName(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$PathElement$Builder/setName(java.lang.String)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$PathElement$Builder/setKind(java.lang.String)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$PathElement/newBuilder()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$Builder/addPathElement(com.google.api.services.datastore.DatastoreV1$Key$PathElement$Builder)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/Key$PathElement/newBuilder()|",
+      "|java+method:///com/google/datastore/v1/Key$PathElement$Builder/setName(java.lang.String)|",
+      "|java+method:///com/google/datastore/v1/Key$PathElement$Builder/setKind(java.lang.String)|",
+      "|java+method:///com/google/datastore/v1/Key$Builder/addPath(com.google.datastore.v1.Key$PathElement$Builder)|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Value$Builder/build()|",
+    "called": "|java+method:///com/google/datastore/v1/Value$Builder/setExcludeFromIndexes(boolean)|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value$Builder/build()|",
+      "|java+constructor:///com/spotify/asyncdatastoreclient/Value/Value(com.google.api.services.datastore.DatastoreV1$Value,com.spotify.asyncdatastoreclient.Value$1)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/spotify/asyncdatastoreclient/Value/Value(com.google.datastore.v1.Value,com.spotify.asyncdatastoreclient.Value$1)|",
+      "|java+method:///com/google/datastore/v1/Value$Builder/build()|",
+      "|java+method:///com/google/datastore/v1/Value$Builder/setExcludeFromIndexes(boolean)|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Key/getNamespace()|",
+    "called": "|java+method:///com/google/datastore/v1/Key/getPartitionId()|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$PartitionId/hasNamespace()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$PartitionId/getNamespace()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key/hasPartitionId()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key/getPartitionId()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/Key/getPartitionId()|",
+      "|java+method:///com/google/datastore/v1/PartitionId/getNamespaceId()|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Entity$Builder/lambda$build$1(java.util.Map$Entry)|",
+    "called": "|java+method:///com/google/datastore/v1/Value/toBuilder()|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Property$Builder/setValue(com.google.api.services.datastore.DatastoreV1$Value)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Property$Builder/build()|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Property/newBuilder()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Property$Builder/setName(java.lang.String)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Value/getPb()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/Value/toBuilder()|",
+      "|java+method:///com/google/datastore/v1/Value$Builder/build()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Value/getPb()|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+constructor:///com/spotify/asyncdatastoreclient/Query/Query()|",
+    "called": "|java+method:///com/google/datastore/v1/Query/newBuilder()|",
+    "v1Body": [
+      "|java+method:///com/google/api/client/util/Lists/newArrayList()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Query/newBuilder()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/Query/newBuilder()|",
+      "|java+method:///com/google/api/client/util/Lists/newArrayList()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Key$Element/getId()|",
+    "called": "|java+method:///com/google/datastore/v1/Key$PathElement/getId()|",
+    "v1Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$PathElement/getId()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$PathElement/hasId()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/spotify/asyncdatastoreclient/Key/access$000(com.google.datastore.v1.Key$PathElement)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///com/google/datastore/v1/Key$PathElement/getId()|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Key$Builder/path(java.lang.String)|",
+    "called": "|java+method:///com/google/datastore/v1/Key$PathElement$Builder/setKind(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$PathElement$Builder/setKind(java.lang.String)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$PathElement/newBuilder()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$Builder/addPathElement(com.google.api.services.datastore.DatastoreV1$Key$PathElement$Builder)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/Key$PathElement/newBuilder()|",
+      "|java+method:///com/google/datastore/v1/Key$PathElement$Builder/setKind(java.lang.String)|",
+      "|java+method:///com/google/datastore/v1/Key$Builder/addPath(com.google.datastore.v1.Key$PathElement$Builder)|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Entity/getPb(java.lang.String)|",
+    "called": "|java+method:///com/google/datastore/v1/Entity/getProperties()|",
+    "v1Body": [
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Entity$Builder/addAllProperty(java.lang.Iterable)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Entity/getKey()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Entity$Builder/build()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Entity$Builder/setKey(com.google.api.services.datastore.DatastoreV1$Key)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Entity/getPropertyList()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Entity$Builder/clearProperty()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Entity/newBuilder(com.google.api.services.datastore.DatastoreV1$Entity)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Key/getPb(java.lang.String)|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|",
+      "|java+method:///java/util/stream/Collectors/toList()|",
+      "|java+method:///java/util/List/stream()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/Entity$Builder/setKey(com.google.datastore.v1.Key)|",
+      "|java+method:///com/google/datastore/v1/Entity$Builder/putAllProperties(java.util.Map)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Entity/getKey()|",
+      "|java+method:///com/google/datastore/v1/Entity/getProperties()|",
+      "|java+method:///com/google/datastore/v1/Entity/newBuilder()|",
+      "|java+method:///java/util/stream/Collectors/toMap(java.util.function.Function,java.util.function.Function)|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///java/util/Set/stream()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Key/getPb(java.lang.String)|",
+      "|java+method:///com/google/datastore/v1/Entity$Builder/build()|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Key$Builder/build()|",
+    "called": "|java+method:///com/google/datastore/v1/Key$Builder/build()|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$Builder/build()|",
+      "|java+constructor:///com/spotify/asyncdatastoreclient/Key/Key(com.google.api.services.datastore.DatastoreV1$Key,com.spotify.asyncdatastoreclient.Key$1)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/spotify/asyncdatastoreclient/Key/Key(com.google.datastore.v1.Key,com.spotify.asyncdatastoreclient.Key$1)|",
+      "|java+method:///com/google/datastore/v1/Key$Builder/build()|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Value$Builder/value(java.lang.Object)|",
+    "called": "|java+method:///com/google/datastore/v1/Value$Builder/setExcludeFromIndexes(boolean)|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value$Builder/setEntityValue(com.google.api.services.datastore.DatastoreV1$Entity)|",
+      "|java+method:///java/lang/Float/doubleValue()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value$Builder/setStringValue(java.lang.String)|",
+      "|java+method:///java/lang/Integer/longValue()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Key/getPb()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value$Builder/setDoubleValue(double)|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value$Builder/setIntegerValue(long)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value$Builder/setIndexed(boolean)|",
+      "|java+method:///java/lang/Double/doubleValue()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value$Builder/setKeyValue(com.google.api.services.datastore.DatastoreV1$Key)|",
+      "|java+method:///java/util/Date/getTime()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value$Builder/setBooleanValue(boolean)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value$Builder/setTimestampMicrosecondsValue(long)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value$Builder/setBlobValue(com.google.protobuf.ByteString)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Entity/getPb()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/Value$Builder/setDoubleValue(double)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Value/access$100(java.util.Date)|",
+      "|java+method:///com/google/datastore/v1/Value$Builder/setKeyValue(com.google.datastore.v1.Key)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/google/datastore/v1/Value$Builder/setEntityValue(com.google.datastore.v1.Entity)|",
+      "|java+method:///com/google/datastore/v1/Value$Builder/setTimestampValue(com.google.protobuf.Timestamp)|",
+      "|java+method:///com/google/datastore/v1/Value$Builder/setStringValue(java.lang.String)|",
+      "|java+method:///com/google/datastore/v1/Value$Builder/setBooleanValue(boolean)|",
+      "|java+method:///com/google/datastore/v1/Value$Builder/setBlobValue(com.google.protobuf.ByteString)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/Float/doubleValue()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/lang/Integer/longValue()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Key/getPb()|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///java/lang/Double/doubleValue()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///com/google/datastore/v1/Value$Builder/setIntegerValue(long)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Entity/getPb()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/google/datastore/v1/Value$Builder/setExcludeFromIndexes(boolean)|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Insert/getPb(java.lang.String)|",
+    "called": "|java+method:///com/google/datastore/v1/Mutation$Builder/setInsert(com.google.datastore.v1.Entity)|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Mutation$Builder/addInsert(com.google.api.services.datastore.DatastoreV1$Entity)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Mutation$Builder/addInsertAutoId(com.google.api.services.datastore.DatastoreV1$Entity)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Insert/getKey()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Key/isComplete()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Mutation$Builder/build()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Entity/getPb(java.lang.String)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Entity$Builder/build()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Mutation/newBuilder()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/Mutation$Builder/setInsert(com.google.datastore.v1.Entity)|",
+      "|java+method:///com/google/datastore/v1/Mutation/newBuilder()|",
+      "|java+method:///com/google/datastore/v1/Mutation$Builder/build()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Entity/getPb(java.lang.String)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Entity$Builder/build()|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Value$Builder/value(java.util.List)|",
+    "called": "|java+method:///com/google/datastore/v1/Value$Builder/setArrayValue(com.google.datastore.v1.ArrayValue)|",
+    "v1Body": [
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value$Builder/addAllListValue(java.lang.Iterable)|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|",
+      "|java+method:///java/util/stream/Collectors/toList()|",
+      "|java+method:///java/util/List/stream()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+method:///com/google/datastore/v1/ArrayValue$Builder/addAllValues(java.lang.Iterable)|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|",
+      "|java+method:///com/google/datastore/v1/Value$Builder/setArrayValue(com.google.datastore.v1.ArrayValue)|",
+      "|java+method:///com/google/datastore/v1/ArrayValue/newBuilder()|",
+      "|java+method:///com/google/datastore/v1/ArrayValue$Builder/build()|",
+      "|java+method:///java/util/stream/Collectors/toList()|",
+      "|java+method:///java/util/List/stream()|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/MutationResult/getInsertKey()|",
+    "called": "|java+method:///com/google/datastore/v1/MutationResult/getKey()|",
+    "v1Body": [
+      "|java+method:///com/spotify/asyncdatastoreclient/Key/builder(com.google.api.services.datastore.DatastoreV1$Key)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Key$Builder/build()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$MutationResult/getInsertAutoIdKey(int)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$MutationResult/getInsertAutoIdKeyCount()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/spotify/asyncdatastoreclient/Key$Builder/build()|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///com/google/datastore/v1/MutationResult/getKey()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Key/builder(com.google.datastore.v1.Key)|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Key/isComplete()|",
+    "called": "|java+method:///com/google/datastore/v1/Key/getPathCount()|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key/getPathElementList()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$PathElement/hasId()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key/getPathElementCount()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$PathElement/hasName()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/List/stream()|",
+      "|java+method:///com/google/datastore/v1/Key/getPathList()|",
+      "|java+method:///com/google/datastore/v1/Key/getPathCount()|",
+      "|java+method:///java/util/stream/Stream/allMatch(java.util.function.Predicate)|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Value/toString()|",
+    "called": "|java+method:///com/google/datastore/v1/Value/getValueTypeCase()|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/toString()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/hasBooleanValue()|",
+      "|java+method:///java/lang/String/valueOf(boolean)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/hasBlobValue()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/getListValueCount()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Key/toString()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/getDoubleValue()|",
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/getStringValue()|",
+      "|java+method:///java/lang/String/valueOf(double)|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Value/getKey()|",
+      "|java+method:///java/util/Date/toString()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/getIntegerValue()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Value/getList()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/hasEntityValue()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Entity/toString()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/hasKeyValue()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/hasIntegerValue()|",
+      "|java+method:///java/util/List/stream()|",
+      "|java+method:///java/util/stream/Collectors/joining(java.lang.CharSequence)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Value/getEntity()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Value/getDate()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/hasTimestampMicrosecondsValue()|",
+      "|java+method:///java/lang/String/valueOf(long)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/hasStringValue()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/hasDoubleValue()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/getBooleanValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+method:///java/lang/String/valueOf(boolean)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Value/getList()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Entity/toString()|",
+      "|java+method:///java/util/List/stream()|",
+      "|java+method:///com/google/datastore/v1/Value/getValueTypeCase()|",
+      "|java+method:///com/google/datastore/v1/Value$ValueTypeCase/ordinal()|",
+      "|java+method:///com/google/datastore/v1/Value/getIntegerValue()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/google/datastore/v1/Value/toString()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Value/getDate()|",
+      "|java+method:///java/lang/String/valueOf(long)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Key/toString()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/String/valueOf(double)|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|",
+      "|java+method:///com/google/datastore/v1/Value/getBooleanValue()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Value/getKey()|",
+      "|java+method:///java/util/Date/toString()|",
+      "|java+method:///java/util/stream/Collectors/joining(java.lang.CharSequence)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Value/getEntity()|",
+      "|java+method:///com/google/datastore/v1/Value/getStringValue()|",
+      "|java+method:///com/google/datastore/v1/Value/getDoubleValue()|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Key$Builder/path(java.lang.String,long)|",
+    "called": "|java+method:///com/google/datastore/v1/Key$PathElement$Builder/setId(long)|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$PathElement$Builder/setKind(java.lang.String)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$PathElement/newBuilder()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$Builder/addPathElement(com.google.api.services.datastore.DatastoreV1$Key$PathElement$Builder)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$PathElement$Builder/setId(long)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/Key$PathElement$Builder/setId(long)|",
+      "|java+method:///com/google/datastore/v1/Key$PathElement/newBuilder()|",
+      "|java+method:///com/google/datastore/v1/Key$PathElement$Builder/setKind(java.lang.String)|",
+      "|java+method:///com/google/datastore/v1/Key$Builder/addPath(com.google.datastore.v1.Key$PathElement$Builder)|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Key$Element/getName()|",
+    "called": "|java+method:///com/google/datastore/v1/Key$PathElement/getName()|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$PathElement/getName()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$PathElement/hasName()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/spotify/asyncdatastoreclient/Key/access$100(com.google.datastore.v1.Key$PathElement)|",
+      "|java+method:///com/google/datastore/v1/Key$PathElement/getName()|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+constructor:///com/spotify/asyncdatastoreclient/Entity$Builder/Entity$Builder()|",
+    "called": "|java+method:///com/google/datastore/v1/Entity/newBuilder()|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Entity/newBuilder()|",
+      "|java+method:///com/google/api/client/util/Maps/newHashMap()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/collect/Maps/newHashMap()|",
+      "|java+method:///com/google/datastore/v1/Entity/newBuilder()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Query/keysOnly()|",
+    "called": "|java+method:///com/google/datastore/v1/Projection/newBuilder()|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$PropertyReference$Builder/setName(java.lang.String)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$PropertyReference/newBuilder()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$PropertyExpression$Builder/setProperty(com.google.api.services.datastore.DatastoreV1$PropertyReference$Builder)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$PropertyExpression/newBuilder()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Query$Builder/addProjection(com.google.api.services.datastore.DatastoreV1$PropertyExpression$Builder)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/PropertyReference/newBuilder()|",
+      "|java+method:///com/google/datastore/v1/Projection/newBuilder()|",
+      "|java+method:///com/google/datastore/v1/Projection$Builder/setProperty(com.google.datastore.v1.PropertyReference)|",
+      "|java+method:///com/google/datastore/v1/PropertyReference$Builder/build()|",
+      "|java+method:///com/google/datastore/v1/PropertyReference$Builder/setName(java.lang.String)|",
+      "|java+method:///com/google/datastore/v1/Query$Builder/addProjection(com.google.datastore.v1.Projection$Builder)|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Value/getList()|",
+    "called": "|java+method:///com/google/datastore/v1/Value/getArrayValue()|",
+    "v1Body": [
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/getListValueList()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/getListValueCount()|",
+      "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.util.Collection)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/util/stream/Collectors/toList()|",
+      "|java+method:///java/util/List/stream()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+method:///com/google/datastore/v1/Value/getArrayValue()|",
+      "|java+method:///java/util/stream/Stream/iterator()|",
+      "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.util.Iterator)|",
+      "|java+method:///com/google/datastore/v1/ArrayValue/getValuesList()|",
+      "|java+method:///java/util/List/stream()|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+constructor:///com/spotify/asyncdatastoreclient/Value$Builder/Value$Builder()|",
+    "called": "|java+method:///com/google/datastore/v1/Value/newBuilder()|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/newBuilder()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/Value/newBuilder()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Entity/getProperties()|",
+    "called": "|java+method:///com/google/datastore/v1/Entity/getProperties()|",
+    "v1Body": [
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|",
+      "|java+method:///java/util/List/stream()|",
+      "|java+method:///com/google/common/collect/ImmutableSortedMap/copyOf(java.util.Map)|",
+      "|java+method:///java/util/stream/Collectors/toMap(java.util.function.Function,java.util.function.Function)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Entity/getPropertyList()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/Entity/getProperties()|",
+      "|java+method:///java/util/stream/Collectors/toMap(java.util.function.Function,java.util.function.Function)|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///java/util/Set/stream()|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Query/limit(int)|",
+    "called": "|java+method:///com/google/protobuf/Int32Value/newBuilder()|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Query$Builder/setLimit(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/Query$Builder/setLimit(com.google.protobuf.Int32Value$Builder)|",
+      "|java+method:///com/google/protobuf/Int32Value/newBuilder()|",
+      "|java+method:///com/google/protobuf/Int32Value$Builder/setValue(int)|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Group/getPb()|",
+    "called": "|java+method:///com/google/datastore/v1/PropertyReference$Builder/setName(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$PropertyReference$Builder/setName(java.lang.String)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$PropertyReference$Builder/build()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$PropertyReference/newBuilder()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/PropertyReference/newBuilder()|",
+      "|java+method:///com/google/datastore/v1/PropertyReference$Builder/setName(java.lang.String)|",
+      "|java+method:///com/google/datastore/v1/PropertyReference$Builder/build()|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Query/groupBy(com.spotify.asyncdatastoreclient.Group)|",
+    "called": "|java+method:///com/google/datastore/v1/Query$Builder/addDistinctOn(com.google.datastore.v1.PropertyReference)|",
+    "v1Body": [
+      "|java+method:///com/spotify/asyncdatastoreclient/Group/getPb()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Query$Builder/addGroupBy(com.google.api.services.datastore.DatastoreV1$PropertyReference)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/spotify/asyncdatastoreclient/Group/getPb()|",
+      "|java+method:///com/google/datastore/v1/Query$Builder/addDistinctOn(com.google.datastore.v1.PropertyReference)|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+constructor:///com/spotify/asyncdatastoreclient/Key$Builder/Key$Builder()|",
+    "called": "|java+method:///com/google/datastore/v1/Key/newBuilder()|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key/newBuilder()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/Key/newBuilder()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Value/getInteger()|",
+    "called": "|java+method:///com/google/datastore/v1/Value/getIntegerValue()|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/getIntegerValue()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/hasIntegerValue()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/spotify/asyncdatastoreclient/Value/isInteger()|",
+      "|java+method:///com/google/datastore/v1/Value/getIntegerValue()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Value/getString()|",
+    "called": "|java+method:///com/google/datastore/v1/Value/getStringValue()|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/getStringValue()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/hasStringValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/Value/getStringValue()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Value/isString()|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Value/getDouble()|",
+    "called": "|java+method:///com/google/datastore/v1/Value/getDoubleValue()|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/getDoubleValue()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/hasDoubleValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/Value/getDoubleValue()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Value/isDouble()|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Update/getPb(java.lang.String)|",
+    "called": "|java+method:///com/google/datastore/v1/Mutation/newBuilder()|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Mutation$Builder/addUpdate(com.google.api.services.datastore.DatastoreV1$Entity)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Mutation$Builder/build()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Entity$Builder/build()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Mutation/newBuilder()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Mutation$Builder/addUpsert(com.google.api.services.datastore.DatastoreV1$Entity)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Entity/getPb(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/Mutation/newBuilder()|",
+      "|java+method:///com/google/datastore/v1/Mutation$Builder/build()|",
+      "|java+method:///com/google/datastore/v1/Mutation$Builder/setUpdate(com.google.datastore.v1.Entity)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Entity$Builder/build()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Entity/getPb(java.lang.String)|",
+      "|java+method:///com/google/datastore/v1/Mutation$Builder/setUpsert(com.google.datastore.v1.Entity)|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Query/fromCursor(com.google.protobuf.ByteString)|",
+    "called": "|java+method:///com/google/datastore/v1/Query$Builder/setStartCursor(com.google.protobuf.ByteString)|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Query$Builder/setStartCursor(com.google.protobuf.ByteString)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/Query$Builder/setStartCursor(com.google.protobuf.ByteString)|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Entity/getKey()|",
+    "called": "|java+method:///com/google/datastore/v1/Entity/getKey()|",
+    "v1Body": [
+      "|java+method:///com/spotify/asyncdatastoreclient/Key/builder(com.google.api.services.datastore.DatastoreV1$Key)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Key$Builder/build()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Entity/getKey()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/spotify/asyncdatastoreclient/Key$Builder/build()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Key/builder(com.google.datastore.v1.Key)|",
+      "|java+method:///com/google/datastore/v1/Entity/getKey()|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Key$Builder/path(com.spotify.asyncdatastoreclient.Key$Element)|",
+    "called": "|java+method:///com/google/datastore/v1/Key$Builder/addPath(com.google.datastore.v1.Key$PathElement)|",
+    "v1Body": [
+      "|java+method:///com/spotify/asyncdatastoreclient/Key$Element/getPb()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$Builder/addPathElement(com.google.api.services.datastore.DatastoreV1$Key$PathElement)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/spotify/asyncdatastoreclient/Key$Element/getPb()|",
+      "|java+method:///com/google/datastore/v1/Key$Builder/addPath(com.google.datastore.v1.Key$PathElement)|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Key/getKind()|",
+    "called": "|java+method:///com/google/datastore/v1/Key$PathElement/getKind()|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key/getPathElementList()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$PathElement/getKind()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$PathElement/hasKind()|",
+      "|java+method:///com/google/common/collect/Iterables/getLast(java.lang.Iterable,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/Key/getPathList()|",
+      "|java+method:///com/google/common/collect/Iterables/getLast(java.lang.Iterable,java.lang.Object)|",
+      "|java+method:///com/google/datastore/v1/Key$PathElement/getKind()|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Key$Builder/namespace(java.lang.String)|",
+    "called": "|java+method:///com/google/datastore/v1/Key$Builder/setPartitionId(com.google.datastore.v1.PartitionId$Builder)|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$Builder/setPartitionId(com.google.api.services.datastore.DatastoreV1$PartitionId$Builder)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$PartitionId/newBuilder()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$PartitionId$Builder/setNamespace(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/PartitionId$Builder/setNamespaceId(java.lang.String)|",
+      "|java+method:///com/google/datastore/v1/PartitionId/newBuilder()|",
+      "|java+method:///com/google/datastore/v1/Key$Builder/setPartitionId(com.google.datastore.v1.PartitionId$Builder)|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Entity$Builder/build()|",
+    "called": "|java+method:///com/google/datastore/v1/Entity$Builder/putAllProperties(java.util.Map)|",
+    "v1Body": [
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Entity$Builder/addAllProperty(java.lang.Iterable)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Entity$Builder/clearProperty()|",
+      "|java+method:///java/util/stream/Collectors/toList()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Entity$Builder/build()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+constructor:///com/spotify/asyncdatastoreclient/Entity/Entity(com.google.api.services.datastore.DatastoreV1$Entity,com.spotify.asyncdatastoreclient.Entity$1)|",
+      "|java+method:///java/util/Set/stream()|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/Entity$Builder/getMutableProperties()|",
+      "|java+method:///java/util/stream/Collectors/toMap(java.util.function.Function,java.util.function.Function)|",
+      "|java+method:///java/util/Map/clear()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///java/util/Set/stream()|",
+      "|java+method:///com/google/datastore/v1/Entity$Builder/build()|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|",
+      "|java+constructor:///com/spotify/asyncdatastoreclient/Entity/Entity(com.google.datastore.v1.Entity,com.spotify.asyncdatastoreclient.Entity$1)|",
+      "|java+method:///com/google/datastore/v1/Entity$Builder/putAllProperties(java.util.Map)|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Query/kindOf(java.lang.String)|",
+    "called": "|java+method:///com/google/datastore/v1/KindExpression$Builder/setName(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$KindExpression$Builder/setName(java.lang.String)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$KindExpression/newBuilder()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$KindExpression$Builder/build()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Query$Builder/addKind(com.google.api.services.datastore.DatastoreV1$KindExpression)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/KindExpression/newBuilder()|",
+      "|java+method:///com/google/datastore/v1/KindExpression$Builder/setName(java.lang.String)|",
+      "|java+method:///com/google/datastore/v1/Query$Builder/addKind(com.google.datastore.v1.KindExpression$Builder)|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Value/getEntity()|",
+    "called": "|java+method:///com/google/datastore/v1/Value/getEntityValue()|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/hasEntityValue()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/getEntityValue()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Entity/builder(com.google.api.services.datastore.DatastoreV1$Entity)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Entity$Builder/build()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/Value/getEntityValue()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Value/isEntity()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Entity/builder(com.google.datastore.v1.Entity)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Entity$Builder/build()|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Key/getId()|",
+    "called": "|java+method:///com/google/datastore/v1/Key$PathElement/getId()|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$PathElement/getId()|",
+      "|java+method:///com/google/common/collect/Iterables/getLast(java.lang.Iterable,java.lang.Object)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$PathElement/hasId()|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key/getPathElementList()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///com/google/common/collect/Iterables/getLast(java.lang.Iterable,java.lang.Object)|",
+      "|java+method:///com/google/datastore/v1/Key$PathElement/getId()|",
+      "|java+method:///com/google/datastore/v1/Key/getPathList()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Key/isId(com.google.datastore.v1.Key$PathElement)|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Value/getPb(java.lang.String)|",
+    "called": "|java+method:///com/google/datastore/v1/Key/getPathCount()|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/newBuilder(com.google.api.services.datastore.DatastoreV1$Value)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value$Builder/build()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Key/getPb(java.lang.String)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Value/getKey()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/hasKeyValue()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value$Builder/setKeyValue(com.google.api.services.datastore.DatastoreV1$Key)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/Value/newBuilder(com.google.datastore.v1.Value)|",
+      "|java+method:///com/google/datastore/v1/Value$Builder/setKeyValue(com.google.datastore.v1.Key)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Key/getPb(java.lang.String)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Value/getKey()|",
+      "|java+method:///com/google/datastore/v1/Value$Builder/build()|",
+      "|java+method:///com/google/datastore/v1/Key/getPathCount()|",
+      "|java+method:///com/google/datastore/v1/Value/getKeyValue()|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Entity$Builder/key(com.spotify.asyncdatastoreclient.Key)|",
+    "called": "|java+method:///com/google/datastore/v1/Entity$Builder/setKey(com.google.datastore.v1.Key)|",
+    "v1Body": [
+      "|java+method:///com/spotify/asyncdatastoreclient/Key/getPb()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Entity$Builder/setKey(com.google.api.services.datastore.DatastoreV1$Key)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/Entity$Builder/setKey(com.google.datastore.v1.Key)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Key/getPb()|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Query/properties(java.util.List)|",
+    "called": "|java+method:///com/google/datastore/v1/Query$Builder/addAllProjection(java.lang.Iterable)|",
+    "v1Body": [
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Query$Builder/addAllProjection(java.lang.Iterable)|",
+      "|java+method:///java/util/stream/Collectors/toList()|",
+      "|java+method:///java/util/List/stream()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+method:///com/google/datastore/v1/Query$Builder/addAllProjection(java.lang.Iterable)|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|",
+      "|java+method:///java/util/stream/Collectors/toList()|",
+      "|java+method:///java/util/List/stream()|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Key/getPb(java.lang.String)|",
+    "called": "|java+method:///com/google/datastore/v1/Key/newBuilder(com.google.datastore.v1.Key)|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key/newBuilder(com.google.api.services.datastore.DatastoreV1$Key)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$PartitionId/newBuilder()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$PartitionId$Builder/setNamespace(java.lang.String)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$Builder/setPartitionId(com.google.api.services.datastore.DatastoreV1$PartitionId$Builder)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$Builder/build()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/Key/newBuilder(com.google.datastore.v1.Key)|",
+      "|java+method:///com/google/datastore/v1/PartitionId$Builder/setNamespaceId(java.lang.String)|",
+      "|java+method:///com/google/datastore/v1/PartitionId/newBuilder()|",
+      "|java+method:///com/google/datastore/v1/Key$Builder/setPartitionId(com.google.datastore.v1.PartitionId$Builder)|",
+      "|java+method:///com/google/datastore/v1/Key$Builder/build()|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Order/getPb()|",
+    "called": "|java+method:///com/google/datastore/v1/PropertyOrder$Builder/setDirection(com.google.datastore.v1.PropertyOrder$Direction)|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$PropertyOrder$Builder/setProperty(com.google.api.services.datastore.DatastoreV1$PropertyReference$Builder)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$PropertyReference$Builder/setName(java.lang.String)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$PropertyOrder/newBuilder()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$PropertyReference/newBuilder()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$PropertyOrder$Builder/build()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$PropertyOrder$Builder/setDirection(com.google.api.services.datastore.DatastoreV1$PropertyOrder$Direction)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/PropertyReference/newBuilder()|",
+      "|java+method:///com/google/datastore/v1/PropertyOrder$Builder/setProperty(com.google.datastore.v1.PropertyReference$Builder)|",
+      "|java+method:///com/google/datastore/v1/PropertyReference$Builder/setName(java.lang.String)|",
+      "|java+method:///com/google/datastore/v1/PropertyOrder$Builder/build()|",
+      "|java+method:///com/google/datastore/v1/PropertyOrder$Builder/setDirection(com.google.datastore.v1.PropertyOrder$Direction)|",
+      "|java+method:///com/google/datastore/v1/PropertyOrder/newBuilder()|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Value/getKey()|",
+    "called": "|java+method:///com/google/datastore/v1/Value/getKeyValue()|",
+    "v1Body": [
+      "|java+method:///com/spotify/asyncdatastoreclient/Key/builder(com.google.api.services.datastore.DatastoreV1$Key)|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/getKeyValue()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Key$Builder/build()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Value/hasKeyValue()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/spotify/asyncdatastoreclient/Key$Builder/build()|",
+      "|java+method:///com/google/datastore/v1/Value/getKeyValue()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Key/builder(com.google.datastore.v1.Key)|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+method:///com/spotify/asyncdatastoreclient/Key$Element/getKind()|",
+    "called": "|java+method:///com/google/datastore/v1/Key$PathElement/getKind()|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$PathElement/getKind()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Key$PathElement/hasKind()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/datastore/v1/Key$PathElement/getKind()|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:async-datastore-client:1.0.3",
+    "coordinatesV2": "com.spotify:async-datastore-client:2.1.0",
+    "caller": "|java+constructor:///com/spotify/asyncdatastoreclient/Entity$Builder/Entity$Builder(com.spotify.asyncdatastoreclient.Key)|",
+    "called": "|java+method:///com/google/datastore/v1/Entity$Builder/setKey(com.google.datastore.v1.Key)|",
+    "v1Body": [
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Entity/newBuilder()|",
+      "|java+method:///com/spotify/asyncdatastoreclient/Key/getPb()|",
+      "|java+method:///com/google/api/services/datastore/DatastoreV1$Entity$Builder/setKey(com.google.api.services.datastore.DatastoreV1$Key)|",
+      "|java+method:///com/google/api/client/util/Maps/newHashMap()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/spotify/asyncdatastoreclient/Key/getPb()|",
+      "|java+method:///com/google/datastore/v1/Entity/newBuilder()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///com/google/common/collect/Maps/newHashMap()|",
+      "|java+method:///com/google/datastore/v1/Entity$Builder/setKey(com.google.datastore.v1.Key)|"
+    ],
+    "affectedLib": "com.google.cloud.datastore:datastore-v1-protos:1.0.1",
+    "change": "ADDED"
+  }
+]

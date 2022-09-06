@@ -1,0 +1,76 @@
+[
+  {
+    "coordinatesV1": "org.neo4j:neo4j-kernel-api:3.4.0-alpha09",
+    "coordinatesV2": "org.neo4j:neo4j-kernel-api:3.4.0-alpha10",
+    "caller": "|java+method:///org/neo4j/internal/kernel/api/IndexQuery$GeometryRangePredicate/acceptsValue(org.neo4j.values.storable.Value)|",
+    "called": "|java+method:///org/neo4j/values/storable/PointValue/withinRange(org.neo4j.values.storable.PointValue,boolean,org.neo4j.values.storable.PointValue,boolean)|",
+    "v1Body": [
+      "|java+method:///org/neo4j/values/storable/PointValue/withinRange(org.neo4j.values.storable.PointValue,boolean,org.neo4j.values.storable.PointValue,boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/neo4j/values/storable/CoordinateReferenceSystem/equals(java.lang.Object)|",
+      "|java+method:///org/neo4j/values/storable/PointValue/getCoordinateReferenceSystem()|",
+      "|java+method:///org/neo4j/values/storable/PointValue/withinRange(org.neo4j.values.storable.PointValue,boolean,org.neo4j.values.storable.PointValue,boolean)|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-values:3.4.0-alpha10",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.neo4j:neo4j-kernel-api:3.4.0-alpha09",
+    "coordinatesV2": "org.neo4j:neo4j-kernel-api:3.4.0-alpha10",
+    "caller": "|java+method:///org/neo4j/internal/kernel/api/IndexQuery$NumberRangePredicate/from()|",
+    "called": "|java+method:///org/neo4j/values/storable/NumberValue/asObject()|",
+    "v1Body": [
+      "|java+method:///org/neo4j/values/storable/Value/asObject()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/neo4j/values/storable/NumberValue/asObject()|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-values:3.4.0-alpha10",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.neo4j:neo4j-kernel-api:3.4.0-alpha09",
+    "coordinatesV2": "org.neo4j:neo4j-kernel-api:3.4.0-alpha10",
+    "caller": "|java+method:///org/neo4j/internal/kernel/api/IndexQuery/range(int,java.lang.Number,boolean,java.lang.Number,boolean)|",
+    "called": "|java+method:///org/neo4j/values/storable/Values/numberValue(java.lang.Number)|",
+    "v1Body": [
+      "|java+constructor:///org/neo4j/internal/kernel/api/IndexQuery$NumberRangePredicate/IndexQuery$NumberRangePredicate(int,java.lang.Number,boolean,java.lang.Number,boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/neo4j/values/storable/Values/numberValue(java.lang.Number)|",
+      "|java+constructor:///org/neo4j/internal/kernel/api/IndexQuery$NumberRangePredicate/IndexQuery$NumberRangePredicate(int,org.neo4j.values.storable.NumberValue,boolean,org.neo4j.values.storable.NumberValue,boolean)|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-values:3.4.0-alpha10",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.neo4j:neo4j-kernel-api:3.4.0-alpha09",
+    "coordinatesV2": "org.neo4j:neo4j-kernel-api:3.4.0-alpha10",
+    "caller": "|java+method:///org/neo4j/internal/kernel/api/IndexQuery/range(int,java.lang.String,boolean,java.lang.String,boolean)|",
+    "called": "|java+method:///org/neo4j/values/storable/Values/stringValue(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/neo4j/internal/kernel/api/IndexQuery$StringRangePredicate/IndexQuery$StringRangePredicate(int,java.lang.String,boolean,java.lang.String,boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/neo4j/values/storable/Values/stringValue(java.lang.String)|",
+      "|java+constructor:///org/neo4j/internal/kernel/api/IndexQuery$TextRangePredicate/IndexQuery$TextRangePredicate(int,org.neo4j.values.storable.TextValue,boolean,org.neo4j.values.storable.TextValue,boolean)|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-values:3.4.0-alpha10",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.neo4j:neo4j-kernel-api:3.4.0-alpha09",
+    "coordinatesV2": "org.neo4j:neo4j-kernel-api:3.4.0-alpha10",
+    "caller": "|java+method:///org/neo4j/internal/kernel/api/IndexQuery$NumberRangePredicate/to()|",
+    "called": "|java+method:///org/neo4j/values/storable/NumberValue/asObject()|",
+    "v1Body": [
+      "|java+method:///org/neo4j/values/storable/Value/asObject()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/neo4j/values/storable/NumberValue/asObject()|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-values:3.4.0-alpha10",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,573 @@
+[
+  {
+    "coordinatesV1": "org.neo4j:neo4j-ha:1.8.3",
+    "coordinatesV2": "org.neo4j:neo4j-ha:1.9.M01",
+    "caller": "|java+method:///org/neo4j/kernel/ha/MasterImpl/allocateIds(org.neo4j.kernel.IdType)|",
+    "called": "|java+method:///org/neo4j/com/ServerUtil/packResponseWithoutTransactionStream(org.neo4j.kernel.impl.nioneo.store.StoreId,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/neo4j/kernel/impl/nioneo/store/IdGenerator/getHighId()|",
+      "|java+method:///org/neo4j/kernel/impl/nioneo/store/IdGenerator/getDefragCount()|",
+      "|java+method:///org/neo4j/kernel/GraphDatabaseAPI/getIdGeneratorFactory()|",
+      "|java+method:///org/neo4j/kernel/IdGeneratorFactory/get(org.neo4j.kernel.IdType)|",
+      "|java+constructor:///org/neo4j/kernel/ha/IdAllocation/IdAllocation(org.neo4j.kernel.impl.nioneo.store.IdRange,long,long)|",
+      "|java+method:///org/neo4j/com/ServerUtil/packResponseWithoutTransactionStream(org.neo4j.kernel.GraphDatabaseAPI,org.neo4j.com.RequestContext,java.lang.Object)|",
+      "|java+method:///org/neo4j/kernel/impl/nioneo/store/IdGenerator/nextIdBatch(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/neo4j/kernel/impl/nioneo/store/IdGenerator/getHighId()|",
+      "|java+method:///org/neo4j/kernel/impl/nioneo/store/IdGenerator/getDefragCount()|",
+      "|java+method:///org/neo4j/kernel/GraphDatabaseAPI/getIdGeneratorFactory()|",
+      "|java+method:///org/neo4j/kernel/IdGeneratorFactory/get(org.neo4j.kernel.IdType)|",
+      "|java+constructor:///org/neo4j/kernel/ha/IdAllocation/IdAllocation(org.neo4j.kernel.impl.nioneo.store.IdRange,long,long)|",
+      "|java+method:///org/neo4j/com/ServerUtil/packResponseWithoutTransactionStream(org.neo4j.kernel.impl.nioneo.store.StoreId,java.lang.Object)|",
+      "|java+method:///org/neo4j/kernel/GraphDatabaseAPI/getStoreId()|",
+      "|java+method:///org/neo4j/kernel/impl/nioneo/store/IdGenerator/nextIdBatch(int)|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-com:1.9.M01",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.neo4j:neo4j-ha:1.8.3",
+    "coordinatesV2": "org.neo4j:neo4j-ha:1.9.M01",
+    "caller": "|java+method:///org/neo4j/kernel/ha/MasterImpl/getMasterIdForCommittedTx(long,org.neo4j.kernel.impl.nioneo.store.StoreId)|",
+    "called": "|java+method:///org/neo4j/com/ServerUtil/packResponseWithoutTransactionStream(org.neo4j.kernel.impl.nioneo.store.StoreId,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/neo4j/kernel/impl/transaction/xaframework/XaDataSource/getMasterForCommittedTx(long)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/neo4j/kernel/GraphDatabaseAPI/getXaDataSourceManager()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/neo4j/kernel/impl/transaction/XaDataSourceManager/getNeoStoreDataSource()|",
+      "|java+method:///org/neo4j/com/ServerUtil/packResponseWithoutTransactionStream(org.neo4j.kernel.GraphDatabaseAPI,org.neo4j.com.RequestContext,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/neo4j/kernel/impl/transaction/xaframework/XaDataSource/getMasterForCommittedTx(long)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/neo4j/kernel/impl/transaction/XaDataSourceManager/getNeoStoreDataSource()|",
+      "|java+method:///org/neo4j/com/ServerUtil/packResponseWithoutTransactionStream(org.neo4j.kernel.impl.nioneo.store.StoreId,java.lang.Object)|",
+      "|java+method:///org/neo4j/kernel/GraphDatabaseAPI/getStoreId()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/neo4j/kernel/GraphDatabaseAPI/getXaDataSourceManager()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-com:1.9.M01",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.neo4j:neo4j-ha:1.8.3",
+    "coordinatesV2": "org.neo4j:neo4j-ha:1.9.M01",
+    "caller": "|java+method:///org/neo4j/kernel/ha/SlaveTxIdGenerator/committed(org.neo4j.kernel.impl.transaction.xaframework.XaDataSource,int,long,java.lang.Integer)|",
+    "called": "|java+method:///org/neo4j/com/Response/close()|",
+    "v1Body": [
+      "|java+method:///org/neo4j/helpers/Pair/first()|",
+      "|java+method:///org/neo4j/kernel/ha/Broker/getMaster()|",
+      "|java+method:///org/neo4j/kernel/ha/Master/pushTransaction(org.neo4j.com.RequestContext,java.lang.String,long)|",
+      "|java+method:///org/neo4j/com/Response/close()|",
+      "|java+method:///org/neo4j/kernel/impl/transaction/xaframework/XaDataSource/getName()|",
+      "|java+method:///org/neo4j/kernel/ha/SlaveDatabaseOperations/getSlaveContext(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/neo4j/kernel/impl/transaction/xaframework/XaDataSource/getName()|",
+      "|java+method:///org/neo4j/kernel/ha/RequestContextFactory/newRequestContext(int)|",
+      "|java+method:///org/neo4j/kernel/ha/Master/pushTransaction(org.neo4j.com.RequestContext,java.lang.String,long)|",
+      "|java+method:///org/neo4j/com/Response/close()|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-com:1.9.M01",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.neo4j:neo4j-ha:1.8.3",
+    "coordinatesV2": "org.neo4j:neo4j-ha:1.9.M01",
+    "caller": "|java+method:///org/neo4j/kernel/ha/SlaveImpl/pullUpdates(java.lang.String,long)|",
+    "called": "|java+method:///org/neo4j/com/ServerUtil/packResponseWithoutTransactionStream(org.neo4j.kernel.impl.nioneo.store.StoreId,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/neo4j/kernel/ha/SlaveDatabaseOperations/receive(org.neo4j.com.Response)|",
+      "|java+method:///org/neo4j/kernel/ha/Broker/getMaster()|",
+      "|java+method:///org/neo4j/kernel/ha/SlaveDatabaseOperations/getSlaveContext(int)|",
+      "|java+method:///org/neo4j/com/ServerUtil/packResponseWithoutTransactionStream(org.neo4j.kernel.GraphDatabaseAPI,org.neo4j.com.RequestContext,java.lang.Object)|",
+      "|java+method:///org/neo4j/helpers/Pair/first()|",
+      "|java+method:///org/neo4j/kernel/ha/Master/pullUpdates(org.neo4j.com.RequestContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/neo4j/kernel/ha/Master/pullUpdates(org.neo4j.com.RequestContext)|",
+      "|java+method:///org/neo4j/kernel/ha/HaXaDataSourceManager/applyTransactions(org.neo4j.com.Response,org.neo4j.com.ServerUtil$TxHandler)|",
+      "|java+method:///org/neo4j/kernel/ha/RequestContextFactory/newRequestContext(int)|",
+      "|java+method:///org/neo4j/com/ServerUtil/packResponseWithoutTransactionStream(org.neo4j.kernel.impl.nioneo.store.StoreId,java.lang.Object)|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-com:1.9.M01",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.neo4j:neo4j-ha:1.8.3",
+    "coordinatesV2": "org.neo4j:neo4j-ha:1.9.M01",
+    "caller": "|java+constructor:///org/neo4j/kernel/ha/SlaveClient/SlaveClient(int,java.lang.String,int,org.neo4j.kernel.impl.util.StringLogger,org.neo4j.kernel.impl.nioneo.store.StoreId,int,int)|",
+    "called": "|java+constructor:///org/neo4j/com/Client/Client(java.lang.String,int,org.neo4j.kernel.impl.util.StringLogger,org.neo4j.kernel.impl.nioneo.store.StoreId,int,byte,long,int,int,int)|",
+    "v1Body": [
+      "|java+constructor:///org/neo4j/com/Client/Client(java.lang.String,int,org.neo4j.kernel.impl.util.StringLogger,org.neo4j.kernel.impl.nioneo.store.StoreId,int,byte,int,int,int,org.neo4j.com.ConnectionLostHandler,int)|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+method:///org/neo4j/kernel/configuration/ConfigurationDefaults/getDefault(org.neo4j.graphdb.factory.GraphDatabaseSetting,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/neo4j/com/Client/Client(java.lang.String,int,org.neo4j.kernel.impl.util.StringLogger,org.neo4j.kernel.impl.nioneo.store.StoreId,int,byte,long,int,int,int)|",
+      "|java+method:///org/neo4j/graphdb/factory/GraphDatabaseSetting$TimeSpanSetting/valueOf(java.lang.String,org.neo4j.kernel.configuration.Config)|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///org/neo4j/kernel/configuration/ConfigurationDefaults/getDefault(org.neo4j.graphdb.factory.GraphDatabaseSetting,java.lang.Class)|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-com:1.9.M01",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.neo4j:neo4j-ha:1.8.3",
+    "coordinatesV2": "org.neo4j:neo4j-ha:1.9.M01",
+    "caller": "|java+method:///org/neo4j/kernel/ha/MasterImpl/getMasterIdForCommittedTx(long,org.neo4j.kernel.impl.nioneo.store.StoreId)|",
+    "called": "|java+method:///org/neo4j/kernel/impl/transaction/xaframework/XaDataSource/getMasterForCommittedTx(long)|",
+    "v1Body": [
+      "|java+method:///org/neo4j/kernel/impl/transaction/xaframework/XaDataSource/getMasterForCommittedTx(long)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/neo4j/kernel/GraphDatabaseAPI/getXaDataSourceManager()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/neo4j/kernel/impl/transaction/XaDataSourceManager/getNeoStoreDataSource()|",
+      "|java+method:///org/neo4j/com/ServerUtil/packResponseWithoutTransactionStream(org.neo4j.kernel.GraphDatabaseAPI,org.neo4j.com.RequestContext,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/neo4j/kernel/impl/transaction/xaframework/XaDataSource/getMasterForCommittedTx(long)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/neo4j/kernel/impl/transaction/XaDataSourceManager/getNeoStoreDataSource()|",
+      "|java+method:///org/neo4j/com/ServerUtil/packResponseWithoutTransactionStream(org.neo4j.kernel.impl.nioneo.store.StoreId,java.lang.Object)|",
+      "|java+method:///org/neo4j/kernel/GraphDatabaseAPI/getStoreId()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/neo4j/kernel/GraphDatabaseAPI/getXaDataSourceManager()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-kernel:1.9.M01",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.neo4j:neo4j-ha:1.8.3",
+    "coordinatesV2": "org.neo4j:neo4j-ha:1.9.M01",
+    "caller": "|java+constructor:///org/neo4j/kernel/ha/HaSettings$BranchedDataPolicySetting/HaSettings$BranchedDataPolicySetting()|",
+    "called": "|java+constructor:///org/neo4j/graphdb/factory/GraphDatabaseSetting$EnumerableSetting/GraphDatabaseSetting$EnumerableSetting(java.lang.String,java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///org/neo4j/graphdb/factory/GraphDatabaseSetting$OptionsSetting/GraphDatabaseSetting$OptionsSetting(java.lang.String,java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/neo4j/graphdb/factory/GraphDatabaseSetting$EnumerableSetting/GraphDatabaseSetting$EnumerableSetting(java.lang.String,java.lang.Class)|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-kernel:1.9.M01",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.neo4j:neo4j-ha:1.8.3",
+    "coordinatesV2": "org.neo4j:neo4j-ha:1.9.M01",
+    "caller": "|java+method:///org/neo4j/kernel/ha/SlaveTxHook/hasAnyLocks(javax.transaction.Transaction)|",
+    "called": "|java+method:///org/neo4j/kernel/impl/core/LockReleaser/hasLocks(javax.transaction.Transaction)|",
+    "v1Body": [
+      "|java+method:///org/neo4j/kernel/GraphDatabaseAPI/getLockReleaser()|",
+      "|java+method:///org/neo4j/kernel/impl/core/LockReleaser/hasLocks(javax.transaction.Transaction)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/neo4j/kernel/impl/core/LockReleaser/hasLocks(javax.transaction.Transaction)|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-kernel:1.9.M01",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.neo4j:neo4j-ha:1.8.3",
+    "coordinatesV2": "org.neo4j:neo4j-ha:1.9.M01",
+    "caller": "|java+method:///org/neo4j/kernel/ha/SlaveTxIdGenerator/generate(org.neo4j.kernel.impl.transaction.xaframework.XaDataSource,int)|",
+    "called": "|java+method:///org/neo4j/helpers/Exceptions/withCause(java.lang.Throwable,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/neo4j/kernel/ha/SlaveDatabaseOperations/exceptionHappened(java.lang.RuntimeException)|",
+      "|java+method:///org/neo4j/kernel/ha/Master/commitSingleResourceTransaction(org.neo4j.com.RequestContext,java.lang.String,org.neo4j.com.TxExtractor)|",
+      "|java+constructor:///javax/transaction/xa/XAException/XAException(int)|",
+      "|java+method:///org/neo4j/kernel/ha/SlaveDatabaseOperations/receive(org.neo4j.com.Response)|",
+      "|java+method:///org/neo4j/kernel/impl/transaction/TxManager/getEventIdentifier()|",
+      "|java+method:///org/neo4j/helpers/Pair/first()|",
+      "|java+method:///org/neo4j/kernel/ha/Broker/getMaster()|",
+      "|java+method:///org/neo4j/helpers/Exceptions/withCause(java.lang.Throwable,java.lang.Throwable)|",
+      "|java+method:///org/neo4j/com/ServerUtil/onlyIncludeResource(org.neo4j.com.RequestContext,org.neo4j.kernel.impl.transaction.xaframework.XaDataSource)|",
+      "|java+method:///org/neo4j/kernel/impl/transaction/xaframework/XaDataSource/getName()|",
+      "|java+method:///org/neo4j/kernel/ha/SlaveDatabaseOperations/getSlaveContext(int)|",
+      "|java+constructor:///org/neo4j/kernel/ha/SlaveTxIdGenerator$1/SlaveTxIdGenerator$1(org.neo4j.kernel.ha.SlaveTxIdGenerator,org.neo4j.kernel.impl.transaction.xaframework.XaDataSource,int)|",
+      "|java+method:///java/lang/Long/longValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/neo4j/kernel/ha/Master/commitSingleResourceTransaction(org.neo4j.com.RequestContext,java.lang.String,org.neo4j.com.TxExtractor)|",
+      "|java+constructor:///javax/transaction/xa/XAException/XAException(int)|",
+      "|java+method:///org/neo4j/kernel/ha/RequestContextFactory/newRequestContext(org.neo4j.kernel.impl.transaction.xaframework.XaDataSource)|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///org/neo4j/com/Response/response()|",
+      "|java+method:///org/neo4j/helpers/Exceptions/withCause(java.lang.Throwable,java.lang.Throwable)|",
+      "|java+method:///org/neo4j/kernel/ha/SlaveTxIdGenerator/myPreparedTransactionToCommit(org.neo4j.kernel.impl.transaction.xaframework.XaDataSource,int)|",
+      "|java+method:///org/neo4j/kernel/impl/transaction/xaframework/XaDataSource/getName()|",
+      "|java+method:///org/neo4j/kernel/ha/HaXaDataSourceManager/applyTransactions(org.neo4j.com.Response)|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-kernel:1.9.M01",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.neo4j:neo4j-ha:1.8.3",
+    "coordinatesV2": "org.neo4j:neo4j-ha:1.9.M01",
+    "caller": "|java+method:///org/neo4j/kernel/ha/SlaveLockManager/getReadLock(java.lang.Object,javax.transaction.Transaction)|",
+    "called": "|java+method:///org/neo4j/kernel/impl/transaction/LockManagerImpl/getReadLock(java.lang.Object,javax.transaction.Transaction)|",
+    "v1Body": [
+      "|java+method:///org/neo4j/kernel/ha/SlaveDatabaseOperations/exceptionHappened(java.lang.RuntimeException)|",
+      "|java+constructor:///org/neo4j/kernel/DeadlockDetectedException/DeadlockDetectedException(java.lang.String)|",
+      "|java+method:///org/neo4j/kernel/ha/SlaveLockManager/getLocalTxId()|",
+      "|java+method:///org/neo4j/kernel/ha/SlaveLockManager/initializeTxIfFirst()|",
+      "|java+method:///org/neo4j/kernel/ha/SlaveDatabaseOperations/receive(org.neo4j.com.Response)|",
+      "|java+method:///org/neo4j/kernel/ha/LockStatus/ordinal()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///org/neo4j/kernel/ha/Broker/getMaster()|",
+      "|java+method:///org/neo4j/kernel/ha/SlaveDatabaseOperations/getSlaveContext(int)|",
+      "|java+method:///org/neo4j/kernel/ha/LockResult/getDeadlockMessage()|",
+      "|java+method:///org/neo4j/helpers/Pair/first()|",
+      "|java+method:///org/neo4j/kernel/ha/LockResult/getStatus()|",
+      "|java+method:///org/neo4j/kernel/ha/SlaveLockManager$LockGrabber/acquireLock(org.neo4j.kernel.ha.Master,org.neo4j.com.RequestContext,java.lang.Object)|",
+      "|java+method:///org/neo4j/kernel/impl/transaction/LockManager/getReadLock(java.lang.Object,javax.transaction.Transaction)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/neo4j/kernel/ha/SlaveLockManager/getReadLockOnMaster(java.lang.Object)|",
+      "|java+method:///org/neo4j/kernel/impl/transaction/LockManagerImpl/getReadLock(java.lang.Object,javax.transaction.Transaction)|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-kernel:1.9.M01",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.neo4j:neo4j-ha:1.8.3",
+    "coordinatesV2": "org.neo4j:neo4j-ha:1.9.M01",
+    "caller": "|java+method:///org/neo4j/kernel/ha/MasterImpl/finishThisAndResumeOther(javax.transaction.Transaction,org.neo4j.com.RequestContext,boolean)|",
+    "called": "|java+method:///org/neo4j/helpers/Exceptions/launderedException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/neo4j/kernel/GraphDatabaseAPI/getTxManager()|",
+      "|java+method:///javax/transaction/TransactionManager/commit()|",
+      "|java+method:///javax/transaction/TransactionManager/resume(javax.transaction.Transaction)|",
+      "|java+method:///javax/transaction/TransactionManager/rollback()|",
+      "|java+method:///org/neo4j/helpers/Exceptions/launderedException(java.lang.Throwable)|",
+      "|java+method:///java/util/Map/remove(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/transaction/TransactionManager/commit()|",
+      "|java+method:///javax/transaction/TransactionManager/resume(javax.transaction.Transaction)|",
+      "|java+method:///javax/transaction/TransactionManager/rollback()|",
+      "|java+method:///org/neo4j/helpers/Exceptions/launderedException(java.lang.Throwable)|",
+      "|java+method:///java/util/Map/remove(java.lang.Object)|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-kernel:1.9.M01",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.neo4j:neo4j-ha:1.8.3",
+    "coordinatesV2": "org.neo4j:neo4j-ha:1.9.M01",
+    "caller": "|java+method:///org/neo4j/kernel/ha/MasterTxIdGenerator/filter(java.util.Iterator,java.lang.Integer)|",
+    "called": "|java+constructor:///org/neo4j/helpers/collection/FilteringIterator/FilteringIterator(java.util.Iterator,org.neo4j.helpers.Predicate)|",
+    "v1Body": [
+      "|java+constructor:///org/neo4j/helpers/collection/FilteringIterator/FilteringIterator(java.util.Iterator,org.neo4j.helpers.Predicate)|",
+      "|java+constructor:///org/neo4j/kernel/ha/MasterTxIdGenerator$1/MasterTxIdGenerator$1(org.neo4j.kernel.ha.MasterTxIdGenerator,java.lang.Integer)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/neo4j/helpers/collection/FilteringIterator/FilteringIterator(java.util.Iterator,org.neo4j.helpers.Predicate)|",
+      "|java+constructor:///org/neo4j/kernel/ha/MasterTxIdGenerator$3/MasterTxIdGenerator$3(org.neo4j.kernel.ha.MasterTxIdGenerator,java.lang.Integer)|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-kernel:1.9.M01",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.neo4j:neo4j-ha:1.8.3",
+    "coordinatesV2": "org.neo4j:neo4j-ha:1.9.M01",
+    "caller": "|java+method:///org/neo4j/kernel/ha/MasterImpl/suspendThisAndResumeOther(javax.transaction.Transaction,org.neo4j.com.RequestContext)|",
+    "called": "|java+method:///org/neo4j/helpers/Exceptions/launderedException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///javax/transaction/TransactionManager/suspend()|",
+      "|java+method:///org/neo4j/kernel/GraphDatabaseAPI/getTxManager()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/neo4j/kernel/ha/MasterImpl/finishThisAndResumeOther(javax.transaction.Transaction,org.neo4j.com.RequestContext,boolean)|",
+      "|java+method:///javax/transaction/TransactionManager/resume(javax.transaction.Transaction)|",
+      "|java+method:///org/neo4j/kernel/ha/MasterImpl$MasterTransaction/finishAsap()|",
+      "|java+method:///org/neo4j/kernel/ha/MasterImpl$MasterTransaction/updateTime()|",
+      "|java+method:///org/neo4j/helpers/Exceptions/launderedException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/transaction/TransactionManager/suspend()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/neo4j/kernel/ha/MasterImpl/finishThisAndResumeOther(javax.transaction.Transaction,org.neo4j.com.RequestContext,boolean)|",
+      "|java+method:///javax/transaction/TransactionManager/resume(javax.transaction.Transaction)|",
+      "|java+method:///org/neo4j/kernel/ha/MasterImpl$MasterTransaction/finishAsap()|",
+      "|java+method:///org/neo4j/kernel/ha/MasterImpl$MasterTransaction/updateTime()|",
+      "|java+method:///org/neo4j/helpers/Exceptions/launderedException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-kernel:1.9.M01",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.neo4j:neo4j-ha:1.8.3",
+    "coordinatesV2": "org.neo4j:neo4j-ha:1.9.M01",
+    "caller": "|java+method:///org/neo4j/kernel/ha/MasterImpl/suspendOtherAndResumeThis(org.neo4j.com.RequestContext,boolean)|",
+    "called": "|java+method:///org/neo4j/helpers/Exceptions/launderedException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///org/neo4j/kernel/GraphDatabaseAPI/getTxManager()|",
+      "|java+constructor:///org/neo4j/kernel/ha/UnableToResumeTransactionException/UnableToResumeTransactionException(java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///javax/transaction/TransactionManager/resume(javax.transaction.Transaction)|",
+      "|java+method:///org/neo4j/kernel/ha/MasterImpl/beginTx(org.neo4j.com.RequestContext)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/neo4j/helpers/Exceptions/launderedException(java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///javax/transaction/TransactionManager/suspend()|",
+      "|java+method:///org/neo4j/kernel/ha/MasterImpl/getTx(org.neo4j.com.RequestContext)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///javax/transaction/TransactionManager/getTransaction()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+constructor:///org/neo4j/kernel/ha/UnableToResumeTransactionException/UnableToResumeTransactionException(java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///javax/transaction/TransactionManager/resume(javax.transaction.Transaction)|",
+      "|java+method:///org/neo4j/kernel/ha/MasterImpl/beginTx(org.neo4j.com.RequestContext)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/neo4j/helpers/Exceptions/launderedException(java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///javax/transaction/TransactionManager/suspend()|",
+      "|java+method:///org/neo4j/kernel/ha/MasterImpl/getTx(org.neo4j.com.RequestContext)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///javax/transaction/TransactionManager/getTransaction()|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-kernel:1.9.M01",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.neo4j:neo4j-ha:1.8.3",
+    "coordinatesV2": "org.neo4j:neo4j-ha:1.9.M01",
+    "caller": "|java+constructor:///org/neo4j/kernel/ha/SlaveClient/SlaveClient(int,java.lang.String,int,org.neo4j.kernel.impl.util.StringLogger,org.neo4j.kernel.impl.nioneo.store.StoreId,int,int)|",
+    "called": "|java+method:///org/neo4j/graphdb/factory/GraphDatabaseSetting$TimeSpanSetting/valueOf(java.lang.String,org.neo4j.kernel.configuration.Config)|",
+    "v1Body": [
+      "|java+constructor:///org/neo4j/com/Client/Client(java.lang.String,int,org.neo4j.kernel.impl.util.StringLogger,org.neo4j.kernel.impl.nioneo.store.StoreId,int,byte,int,int,int,org.neo4j.com.ConnectionLostHandler,int)|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+method:///org/neo4j/kernel/configuration/ConfigurationDefaults/getDefault(org.neo4j.graphdb.factory.GraphDatabaseSetting,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/neo4j/com/Client/Client(java.lang.String,int,org.neo4j.kernel.impl.util.StringLogger,org.neo4j.kernel.impl.nioneo.store.StoreId,int,byte,long,int,int,int)|",
+      "|java+method:///org/neo4j/graphdb/factory/GraphDatabaseSetting$TimeSpanSetting/valueOf(java.lang.String,org.neo4j.kernel.configuration.Config)|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///org/neo4j/kernel/configuration/ConfigurationDefaults/getDefault(org.neo4j.graphdb.factory.GraphDatabaseSetting,java.lang.Class)|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-kernel:1.9.M01",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.neo4j:neo4j-ha:1.8.3",
+    "coordinatesV2": "org.neo4j:neo4j-ha:1.9.M01",
+    "caller": "|java+method:///org/neo4j/kernel/ha/MasterImpl$1/run()|",
+    "called": "|java+method:///org/neo4j/kernel/impl/util/StringLogger/logMessage(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/neo4j/kernel/impl/util/StringLogger/logMessage(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/neo4j/kernel/ha/MasterImpl$MasterTransaction/access$100(org.neo4j.kernel.ha.MasterImpl$MasterTransaction)|",
+      "|java+method:///org/neo4j/kernel/ha/MasterImpl$MasterTransaction/access$300(org.neo4j.kernel.ha.MasterImpl$MasterTransaction)|",
+      "|java+method:///org/neo4j/kernel/ha/MasterImpl/finishThisAndResumeOther(javax.transaction.Transaction,org.neo4j.com.RequestContext,boolean)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///org/neo4j/kernel/ha/MasterImpl/suspendOtherAndResumeThis(org.neo4j.com.RequestContext,boolean)|",
+      "|java+method:///org/neo4j/kernel/ha/MasterImpl/access$000(org.neo4j.kernel.ha.MasterImpl)|",
+      "|java+method:///org/neo4j/kernel/ha/MasterImpl/access$200(org.neo4j.kernel.ha.MasterImpl)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+constructor:///java/util/HashMap/HashMap(java.util.Map)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicLong/get()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///org/neo4j/kernel/ha/MasterImpl/access$400(org.neo4j.kernel.ha.MasterImpl)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/neo4j/kernel/impl/util/StringLogger/logMessage(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/neo4j/kernel/ha/MasterImpl$MasterTransaction/access$100(org.neo4j.kernel.ha.MasterImpl$MasterTransaction)|",
+      "|java+method:///org/neo4j/kernel/ha/MasterImpl$MasterTransaction/access$300(org.neo4j.kernel.ha.MasterImpl$MasterTransaction)|",
+      "|java+method:///org/neo4j/kernel/ha/MasterImpl/finishThisAndResumeOther(javax.transaction.Transaction,org.neo4j.com.RequestContext,boolean)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///org/neo4j/kernel/ha/MasterImpl/suspendOtherAndResumeThis(org.neo4j.com.RequestContext,boolean)|",
+      "|java+method:///org/neo4j/kernel/ha/MasterImpl/access$000(org.neo4j.kernel.ha.MasterImpl)|",
+      "|java+method:///org/neo4j/kernel/ha/MasterImpl/access$200(org.neo4j.kernel.ha.MasterImpl)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+constructor:///java/util/HashMap/HashMap(java.util.Map)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicLong/get()|",
+      "|java+method:///org/neo4j/kernel/ha/MasterImpl$MasterTransaction/finishAsap()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///org/neo4j/kernel/ha/MasterImpl/access$400(org.neo4j.kernel.ha.MasterImpl)|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-kernel:1.9.M01",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.neo4j:neo4j-ha:1.8.3",
+    "coordinatesV2": "org.neo4j:neo4j-ha:1.9.M01",
+    "caller": "|java+method:///org/neo4j/kernel/ha/SlaveLockManager/getWriteLock(java.lang.Object,javax.transaction.Transaction)|",
+    "called": "|java+method:///org/neo4j/kernel/impl/transaction/LockManagerImpl/getWriteLock(java.lang.Object,javax.transaction.Transaction)|",
+    "v1Body": [
+      "|java+method:///org/neo4j/kernel/ha/SlaveDatabaseOperations/exceptionHappened(java.lang.RuntimeException)|",
+      "|java+constructor:///org/neo4j/kernel/DeadlockDetectedException/DeadlockDetectedException(java.lang.String)|",
+      "|java+method:///org/neo4j/kernel/ha/SlaveLockManager/getLocalTxId()|",
+      "|java+method:///org/neo4j/kernel/ha/SlaveLockManager/initializeTxIfFirst()|",
+      "|java+method:///org/neo4j/kernel/ha/SlaveDatabaseOperations/receive(org.neo4j.com.Response)|",
+      "|java+method:///org/neo4j/kernel/ha/LockStatus/ordinal()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///org/neo4j/kernel/ha/Broker/getMaster()|",
+      "|java+method:///org/neo4j/kernel/ha/SlaveDatabaseOperations/getSlaveContext(int)|",
+      "|java+method:///org/neo4j/kernel/ha/SlaveLockManager$LockGrabber/acquireLock(org.neo4j.kernel.ha.Master,org.neo4j.com.RequestContext,java.lang.Object)|",
+      "|java+method:///org/neo4j/kernel/ha/LockResult/getDeadlockMessage()|",
+      "|java+method:///org/neo4j/kernel/impl/transaction/LockManager/getWriteLock(java.lang.Object,javax.transaction.Transaction)|",
+      "|java+method:///org/neo4j/helpers/Pair/first()|",
+      "|java+method:///org/neo4j/kernel/ha/LockResult/getStatus()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/neo4j/kernel/ha/SlaveLockManager/getWriteLockOnMaster(java.lang.Object)|",
+      "|java+method:///org/neo4j/kernel/impl/transaction/LockManagerImpl/getWriteLock(java.lang.Object,javax.transaction.Transaction)|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-kernel:1.9.M01",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.neo4j:neo4j-ha:1.8.3",
+    "coordinatesV2": "org.neo4j:neo4j-ha:1.9.M01",
+    "caller": "|java+method:///org/neo4j/kernel/ha/MasterTxIdGenerator/start()|",
+    "called": "|java+constructor:///org/neo4j/helpers/NamedThreadFactory/NamedThreadFactory(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/util/concurrent/Executors/newCachedThreadPool(java.util.concurrent.ThreadFactory)|",
+      "|java+constructor:///org/neo4j/helpers/NamedThreadFactory/NamedThreadFactory(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/neo4j/kernel/ha/MasterTxIdGenerator$Configuration/getTxPushFactor()|",
+      "|java+method:///java/util/concurrent/Executors/newCachedThreadPool(java.util.concurrent.ThreadFactory)|",
+      "|java+constructor:///org/neo4j/helpers/NamedThreadFactory/NamedThreadFactory(java.lang.String)|",
+      "|java+method:///org/neo4j/kernel/ha/MasterTxIdGenerator$Configuration/getReplicationStrategy()|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-kernel:1.9.M01",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.neo4j:neo4j-ha:1.8.3",
+    "coordinatesV2": "org.neo4j:neo4j-ha:1.9.M01",
+    "caller": "|java+method:///org/neo4j/kernel/ha/MasterTxIdGenerator/committed(org.neo4j.kernel.impl.transaction.xaframework.XaDataSource,int,long,java.lang.Integer)|",
+    "called": "|java+method:///org/neo4j/kernel/impl/util/StringLogger/logMessage(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Throwable/printStackTrace()|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/util/Collection/isEmpty()|",
+      "|java+method:///org/neo4j/kernel/impl/transaction/xaframework/XaDataSource/getName()|",
+      "|java+method:///java/util/Collection/addAll(java.util.Collection)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///org/neo4j/kernel/ha/MasterTxIdGenerator/filter(java.util.Iterator,java.lang.Integer)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/Collection/add(java.lang.Object)|",
+      "|java+method:///org/neo4j/kernel/ha/MasterTxIdGenerator/slaveCommitter(org.neo4j.kernel.impl.transaction.xaframework.XaDataSource,org.neo4j.kernel.ha.Slave,long,org.neo4j.kernel.ha.MasterTxIdGenerator$CompletionNotifier)|",
+      "|java+method:///java/util/concurrent/Future/isDone()|",
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/neo4j/kernel/ha/MasterTxIdGenerator$CompletionNotifier/MasterTxIdGenerator$CompletionNotifier(org.neo4j.kernel.ha.MasterTxIdGenerator$1)|",
+      "|java+method:///org/neo4j/kernel/ha/MasterTxIdGenerator/isSuccessful(java.util.concurrent.Future)|",
+      "|java+method:///org/neo4j/kernel/impl/util/StringLogger/logMessage(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/neo4j/kernel/impl/util/StringLogger/logMessage(java.lang.String)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/neo4j/kernel/ha/Broker/getSlaves()|",
+      "|java+method:///java/util/Collection/removeAll(java.util.Collection)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Collection/clear()|",
+      "|java+method:///java/util/concurrent/Future/cancel(boolean)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///org/neo4j/kernel/ha/MasterTxIdGenerator$CompletionNotifier/waitForAnyCompletion()|",
+      "|java+method:///org/neo4j/kernel/ha/SlavePriority/prioritize(org.neo4j.kernel.ha.Slave%5B%5D)|",
+      "|java+method:///java/util/concurrent/ExecutorService/submit(java.util.concurrent.Callable)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/neo4j/kernel/ha/MasterTxIdGenerator$CompletionNotifier/MasterTxIdGenerator$CompletionNotifier(org.neo4j.kernel.ha.MasterTxIdGenerator$1)|",
+      "|java+method:///java/lang/Throwable/printStackTrace()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/neo4j/kernel/ha/Slaves/getSlaves()|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/util/Collection/isEmpty()|",
+      "|java+method:///org/neo4j/kernel/impl/transaction/xaframework/XaDataSource/getName()|",
+      "|java+method:///java/util/Collection/addAll(java.util.Collection)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/neo4j/kernel/ha/MasterTxIdGenerator/isSuccessfull(java.util.concurrent.Future)|",
+      "|java+method:///java/util/concurrent/Future/isDone()|",
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+method:///java/util/concurrent/ExecutorService/submit(java.util.concurrent.Callable)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/neo4j/kernel/impl/util/StringLogger/logMessage(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/neo4j/kernel/impl/util/StringLogger/logMessage(java.lang.String)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/Collection/removeAll(java.util.Collection)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/neo4j/kernel/ha/MasterTxIdGenerator/filter(java.util.Iterator,java.lang.Integer)|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+method:///java/util/Collection/clear()|",
+      "|java+method:///java/util/concurrent/Future/cancel(boolean)|",
+      "|java+method:///org/neo4j/kernel/ha/MasterTxIdGenerator/slaveCommitter(org.neo4j.kernel.impl.transaction.xaframework.XaDataSource,int,org.neo4j.kernel.ha.Slave,long,org.neo4j.kernel.ha.MasterTxIdGenerator$CompletionNotifier)|",
+      "|java+method:///org/neo4j/kernel/ha/SlavePriority/prioritize(java.lang.Iterable)|",
+      "|java+method:///java/util/Collection/add(java.lang.Object)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///org/neo4j/kernel/ha/MasterTxIdGenerator$CompletionNotifier/waitForAnyCompletion()|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-kernel:1.9.M01",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.neo4j:neo4j-ha:1.8.3",
+    "coordinatesV2": "org.neo4j:neo4j-ha:1.9.M01",
+    "caller": "|java+initializer:///org/neo4j/kernel/ha/HaSettings/HaSettings$initializer|",
+    "called": "|java+constructor:///org/neo4j/graphdb/factory/GraphDatabaseSetting$TimeSpanSetting/GraphDatabaseSetting$TimeSpanSetting(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/neo4j/graphdb/factory/GraphDatabaseSetting$BooleanSetting/GraphDatabaseSetting$BooleanSetting(java.lang.String)|",
+      "|java+constructor:///org/neo4j/kernel/ha/EnterpriseConfigurationMigrator/EnterpriseConfigurationMigrator()|",
+      "|java+constructor:///org/neo4j/graphdb/factory/GraphDatabaseSetting$IntegerSetting/GraphDatabaseSetting$IntegerSetting(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+constructor:///org/neo4j/graphdb/factory/GraphDatabaseSetting$StringSetting/GraphDatabaseSetting$StringSetting(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/neo4j/graphdb/factory/GraphDatabaseSetting$IntegerRangeNumberOfBytesSetting/GraphDatabaseSetting$IntegerRangeNumberOfBytesSetting(java.lang.String,int)|",
+      "|java+constructor:///org/neo4j/kernel/ha/HaSettings$BranchedDataPolicySetting/HaSettings$BranchedDataPolicySetting()|",
+      "|java+constructor:///org/neo4j/kernel/ha/HaSettings$TxPushStrategySetting/HaSettings$TxPushStrategySetting()|",
+      "|java+constructor:///org/neo4j/graphdb/factory/GraphDatabaseSetting$IntegerSetting/GraphDatabaseSetting$IntegerSetting(java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer)|",
+      "|java+constructor:///org/neo4j/kernel/ha/HaSettings$SlaveUpdateModeSetting/HaSettings$SlaveUpdateModeSetting()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/neo4j/graphdb/factory/GraphDatabaseSetting$BooleanSetting/GraphDatabaseSetting$BooleanSetting(java.lang.String)|",
+      "|java+constructor:///org/neo4j/kernel/ha/EnterpriseConfigurationMigrator/EnterpriseConfigurationMigrator()|",
+      "|java+constructor:///org/neo4j/graphdb/factory/GraphDatabaseSetting$IntegerSetting/GraphDatabaseSetting$IntegerSetting(java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/neo4j/graphdb/factory/GraphDatabaseSetting$IntegerSetting/GraphDatabaseSetting$IntegerSetting(java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+constructor:///org/neo4j/kernel/ha/HaSettings$BranchedDataPolicySetting/HaSettings$BranchedDataPolicySetting()|",
+      "|java+constructor:///org/neo4j/kernel/ha/HaSettings$TxPushStrategySetting/HaSettings$TxPushStrategySetting()|",
+      "|java+constructor:///org/neo4j/graphdb/factory/GraphDatabaseSetting$StringSetting/GraphDatabaseSetting$StringSetting(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/neo4j/graphdb/factory/GraphDatabaseSetting$TimeSpanSetting/GraphDatabaseSetting$TimeSpanSetting(java.lang.String)|",
+      "|java+constructor:///org/neo4j/graphdb/factory/GraphDatabaseSetting$HostnamePortSetting/GraphDatabaseSetting$HostnamePortSetting(java.lang.String)|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-kernel:1.9.M01",
+    "change": "UPDATED"
+  }
+]

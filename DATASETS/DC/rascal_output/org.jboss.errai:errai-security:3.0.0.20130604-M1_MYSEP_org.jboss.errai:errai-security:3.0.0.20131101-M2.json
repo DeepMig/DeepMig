@@ -1,0 +1,228 @@
+[
+  {
+    "coordinatesV1": "org.jboss.errai:errai-security:3.0.0.20131101-M2",
+    "coordinatesV2": "org.jboss.errai:errai-security:3.0.0.20130604-M1",
+    "caller": "|java+method:///org/jboss/errai/security/server/SecurityAnnotationExtendsion/copyAnnotation(javax.enterprise.inject.spi.ProcessAnnotatedType,java.lang.reflect.Method,java.lang.Class)|",
+    "called": "|java+method:///org/picketlink/deltaspike/core/util/metadata/builder/AnnotatedTypeBuilder/create()|",
+    "v1Body": [
+      "|java+method:///org/picketlink/deltaspike/core/util/metadata/builder/AnnotatedTypeBuilder/addToMethod(javax.enterprise.inject.spi.AnnotatedMethod,java.lang.annotation.Annotation)|",
+      "|java+method:///java/lang/reflect/Method/getAnnotation(java.lang.Class)|",
+      "|java+method:///org/picketlink/deltaspike/core/util/metadata/builder/AnnotatedTypeBuilder/create()|",
+      "|java+method:///java/lang/reflect/Method/isAnnotationPresent(java.lang.Class)|",
+      "|java+method:///javax/enterprise/inject/spi/ProcessAnnotatedType/setAnnotatedType(javax.enterprise.inject.spi.AnnotatedType)|",
+      "|java+method:///java/lang/reflect/Method/getName()|",
+      "|java+method:///org/picketlink/deltaspike/core/util/metadata/builder/AnnotatedTypeBuilder/readFromType(javax.enterprise.inject.spi.AnnotatedType)|",
+      "|java+method:///javax/enterprise/inject/spi/ProcessAnnotatedType/getAnnotatedType()|",
+      "|java+method:///org/jboss/errai/security/server/SecurityAnnotationExtendsion/getMethod(javax.enterprise.inject.spi.ProcessAnnotatedType,java.lang.String)|",
+      "|java+constructor:///org/picketlink/deltaspike/core/util/metadata/builder/AnnotatedTypeBuilder/AnnotatedTypeBuilder()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jboss/errai/security/server/SecurityAnnotationExtendsion/getMethod(javax.enterprise.inject.spi.ProcessAnnotatedType,java.lang.String)|",
+      "|java+constructor:///org/apache/deltaspike/core/util/metadata/builder/AnnotatedTypeBuilder/AnnotatedTypeBuilder()|",
+      "|java+method:///org/apache/deltaspike/core/util/metadata/builder/AnnotatedTypeBuilder/addToMethod(javax.enterprise.inject.spi.AnnotatedMethod,java.lang.annotation.Annotation)|",
+      "|java+method:///java/lang/reflect/Method/getAnnotation(java.lang.Class)|",
+      "|java+method:///java/lang/reflect/Method/isAnnotationPresent(java.lang.Class)|",
+      "|java+method:///javax/enterprise/inject/spi/ProcessAnnotatedType/setAnnotatedType(javax.enterprise.inject.spi.AnnotatedType)|",
+      "|java+method:///java/lang/reflect/Method/getName()|",
+      "|java+method:///javax/enterprise/inject/spi/ProcessAnnotatedType/getAnnotatedType()|",
+      "|java+method:///org/apache/deltaspike/core/util/metadata/builder/AnnotatedTypeBuilder/create()|",
+      "|java+method:///org/apache/deltaspike/core/util/metadata/builder/AnnotatedTypeBuilder/readFromType(javax.enterprise.inject.spi.AnnotatedType)|"
+    ],
+    "affectedLib": "org.picketlink:picketlink-core-impl:3.0.0.Beta1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.jboss.errai:errai-security:3.0.0.20131101-M2",
+    "coordinatesV2": "org.jboss.errai:errai-security:3.0.0.20130604-M1",
+    "caller": "|java+method:///org/jboss/errai/security/server/PicketLinkAuthenticationService/login(java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///org/picketlink/idm/credential/Password/Password(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/jboss/errai/security/server/PicketLinkAuthenticationService/createUser(org.picketlink.idm.model.User)|",
+      "|java+method:///org/picketlink/credential/DefaultLoginCredentials/setCredential(java.lang.Object)|",
+      "|java+constructor:///org/picketlink/idm/credential/Password/Password(java.lang.String)|",
+      "|java+method:///org/picketlink/Identity/login()|",
+      "|java+constructor:///org/jboss/errai/security/shared/LoggedInEvent/LoggedInEvent(org.jboss.errai.security.shared.User)|",
+      "|java+method:///org/picketlink/credential/DefaultLoginCredentials/setUserId(java.lang.String)|",
+      "|java+method:///org/picketlink/Identity/getUser()|",
+      "|java+constructor:///java/lang/SecurityException/SecurityException()|",
+      "|java+method:///javax/enterprise/event/Event/fire(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/picketlink/Identity/getAgent()|",
+      "|java+method:///org/jboss/errai/security/server/PicketLinkAuthenticationService/createUser(org.picketlink.idm.model.User)|",
+      "|java+method:///org/picketlink/credential/DefaultLoginCredentials/setUserId(java.lang.String)|",
+      "|java+method:///org/picketlink/credential/DefaultLoginCredentials/setCredential(java.lang.Object)|",
+      "|java+constructor:///org/picketlink/idm/credential/Password/Password(java.lang.String)|",
+      "|java+method:///org/picketlink/Identity/login()|",
+      "|java+constructor:///org/jboss/errai/security/shared/LoggedInEvent/LoggedInEvent(org.jboss.errai.security.shared.User)|",
+      "|java+constructor:///java/lang/SecurityException/SecurityException()|",
+      "|java+method:///javax/enterprise/event/Event/fire(java.lang.Object)|"
+    ],
+    "affectedLib": "org.picketlink:picketlink-idm-api:3.0.0.Beta1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.jboss.errai:errai-security:3.0.0.20130604-M1",
+    "coordinatesV2": "org.jboss.errai:errai-security:3.0.0.20131101-M2",
+    "caller": "|java+method:///org/jboss/errai/security/server/PicketLinkAuthenticationService/login(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/picketlink/credential/DefaultLoginCredentials/setUserId(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/jboss/errai/security/server/PicketLinkAuthenticationService/createUser(org.picketlink.idm.model.User)|",
+      "|java+method:///org/picketlink/credential/DefaultLoginCredentials/setCredential(java.lang.Object)|",
+      "|java+constructor:///org/picketlink/idm/credential/Password/Password(java.lang.String)|",
+      "|java+method:///org/picketlink/Identity/login()|",
+      "|java+constructor:///org/jboss/errai/security/shared/LoggedInEvent/LoggedInEvent(org.jboss.errai.security.shared.User)|",
+      "|java+method:///org/picketlink/credential/DefaultLoginCredentials/setUserId(java.lang.String)|",
+      "|java+method:///org/picketlink/Identity/getUser()|",
+      "|java+constructor:///java/lang/SecurityException/SecurityException()|",
+      "|java+method:///javax/enterprise/event/Event/fire(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/picketlink/Identity/getAgent()|",
+      "|java+method:///org/jboss/errai/security/server/PicketLinkAuthenticationService/createUser(org.picketlink.idm.model.User)|",
+      "|java+method:///org/picketlink/credential/DefaultLoginCredentials/setUserId(java.lang.String)|",
+      "|java+method:///org/picketlink/credential/DefaultLoginCredentials/setCredential(java.lang.Object)|",
+      "|java+constructor:///org/picketlink/idm/credential/Password/Password(java.lang.String)|",
+      "|java+method:///org/picketlink/Identity/login()|",
+      "|java+constructor:///org/jboss/errai/security/shared/LoggedInEvent/LoggedInEvent(org.jboss.errai.security.shared.User)|",
+      "|java+constructor:///java/lang/SecurityException/SecurityException()|",
+      "|java+method:///javax/enterprise/event/Event/fire(java.lang.Object)|"
+    ],
+    "affectedLib": "org.picketlink:picketlink-api:2.5.0.Beta4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jboss.errai:errai-security:3.0.0.20130604-M1",
+    "coordinatesV2": "org.jboss.errai:errai-security:3.0.0.20131101-M2",
+    "caller": "|java+method:///org/jboss/errai/security/server/SecurityAnnotationExtendsion/copyAnnotation(javax.enterprise.inject.spi.ProcessAnnotatedType,java.lang.reflect.Method,java.lang.Class)|",
+    "called": "|java+method:///org/apache/deltaspike/core/util/metadata/builder/AnnotatedTypeBuilder/readFromType(javax.enterprise.inject.spi.AnnotatedType)|",
+    "v1Body": [
+      "|java+method:///org/picketlink/deltaspike/core/util/metadata/builder/AnnotatedTypeBuilder/addToMethod(javax.enterprise.inject.spi.AnnotatedMethod,java.lang.annotation.Annotation)|",
+      "|java+method:///java/lang/reflect/Method/getAnnotation(java.lang.Class)|",
+      "|java+method:///org/picketlink/deltaspike/core/util/metadata/builder/AnnotatedTypeBuilder/create()|",
+      "|java+method:///java/lang/reflect/Method/isAnnotationPresent(java.lang.Class)|",
+      "|java+method:///javax/enterprise/inject/spi/ProcessAnnotatedType/setAnnotatedType(javax.enterprise.inject.spi.AnnotatedType)|",
+      "|java+method:///java/lang/reflect/Method/getName()|",
+      "|java+method:///org/picketlink/deltaspike/core/util/metadata/builder/AnnotatedTypeBuilder/readFromType(javax.enterprise.inject.spi.AnnotatedType)|",
+      "|java+method:///javax/enterprise/inject/spi/ProcessAnnotatedType/getAnnotatedType()|",
+      "|java+method:///org/jboss/errai/security/server/SecurityAnnotationExtendsion/getMethod(javax.enterprise.inject.spi.ProcessAnnotatedType,java.lang.String)|",
+      "|java+constructor:///org/picketlink/deltaspike/core/util/metadata/builder/AnnotatedTypeBuilder/AnnotatedTypeBuilder()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jboss/errai/security/server/SecurityAnnotationExtendsion/getMethod(javax.enterprise.inject.spi.ProcessAnnotatedType,java.lang.String)|",
+      "|java+constructor:///org/apache/deltaspike/core/util/metadata/builder/AnnotatedTypeBuilder/AnnotatedTypeBuilder()|",
+      "|java+method:///org/apache/deltaspike/core/util/metadata/builder/AnnotatedTypeBuilder/addToMethod(javax.enterprise.inject.spi.AnnotatedMethod,java.lang.annotation.Annotation)|",
+      "|java+method:///java/lang/reflect/Method/getAnnotation(java.lang.Class)|",
+      "|java+method:///java/lang/reflect/Method/isAnnotationPresent(java.lang.Class)|",
+      "|java+method:///javax/enterprise/inject/spi/ProcessAnnotatedType/setAnnotatedType(javax.enterprise.inject.spi.AnnotatedType)|",
+      "|java+method:///java/lang/reflect/Method/getName()|",
+      "|java+method:///javax/enterprise/inject/spi/ProcessAnnotatedType/getAnnotatedType()|",
+      "|java+method:///org/apache/deltaspike/core/util/metadata/builder/AnnotatedTypeBuilder/create()|",
+      "|java+method:///org/apache/deltaspike/core/util/metadata/builder/AnnotatedTypeBuilder/readFromType(javax.enterprise.inject.spi.AnnotatedType)|"
+    ],
+    "affectedLib": "org.apache.deltaspike.core:deltaspike-core-api:0.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jboss.errai:errai-security:3.0.0.20130604-M1",
+    "coordinatesV2": "org.jboss.errai:errai-security:3.0.0.20131101-M2",
+    "caller": "|java+method:///org/jboss/errai/security/client/local/Identity$1/callback(org.jboss.errai.security.shared.User)|",
+    "called": "|java+method:///org/jboss/errai/ui/shared/api/style/StyleBindingsRegistry/updateStyles()|",
+    "v1Body": [
+      "|java+method:///com/google/gwt/user/client/rpc/AsyncCallback/onSuccess(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jboss/errai/ioc/client/container/SyncBeanManager/lookupBean(java.lang.Class,java.lang.annotation.Annotation%5B%5D)|",
+      "|java+method:///org/jboss/errai/ioc/client/container/IOCBeanDef/getInstance()|",
+      "|java+method:///org/jboss/errai/ui/nav/client/local/Navigation/goTo(java.lang.String)|",
+      "|java+method:///org/jboss/errai/ioc/client/container/IOC/getBeanManager()|",
+      "|java+method:///com/google/gwt/user/client/Cookies/removeCookie(java.lang.String)|",
+      "|java+method:///com/google/gwt/user/client/Cookies/getCookie(java.lang.String)|",
+      "|java+method:///org/jboss/errai/ui/shared/api/style/StyleBindingsRegistry/updateStyles()|",
+      "|java+method:///org/jboss/errai/ui/shared/api/style/StyleBindingsRegistry/get()|",
+      "|java+method:///org/jboss/errai/common/client/api/RemoteCallback/callback(java.lang.Object)|"
+    ],
+    "affectedLib": "org.jboss.errai:errai-ui:3.0.0.20131101-M2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jboss.errai:errai-security:3.0.0.20130604-M1",
+    "coordinatesV2": "org.jboss.errai:errai-security:3.0.0.20131101-M2",
+    "caller": "|java+method:///org/jboss/errai/security/client/local/Identity$1/callback(org.jboss.errai.security.shared.User)|",
+    "called": "|java+method:///org/jboss/errai/ioc/client/container/IOC/getBeanManager()|",
+    "v1Body": [
+      "|java+method:///com/google/gwt/user/client/rpc/AsyncCallback/onSuccess(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jboss/errai/ioc/client/container/SyncBeanManager/lookupBean(java.lang.Class,java.lang.annotation.Annotation%5B%5D)|",
+      "|java+method:///org/jboss/errai/ioc/client/container/IOCBeanDef/getInstance()|",
+      "|java+method:///org/jboss/errai/ui/nav/client/local/Navigation/goTo(java.lang.String)|",
+      "|java+method:///org/jboss/errai/ioc/client/container/IOC/getBeanManager()|",
+      "|java+method:///com/google/gwt/user/client/Cookies/removeCookie(java.lang.String)|",
+      "|java+method:///com/google/gwt/user/client/Cookies/getCookie(java.lang.String)|",
+      "|java+method:///org/jboss/errai/ui/shared/api/style/StyleBindingsRegistry/updateStyles()|",
+      "|java+method:///org/jboss/errai/ui/shared/api/style/StyleBindingsRegistry/get()|",
+      "|java+method:///org/jboss/errai/common/client/api/RemoteCallback/callback(java.lang.Object)|"
+    ],
+    "affectedLib": "org.jboss.errai:errai-ioc:3.0.0.20131101-M2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jboss.errai:errai-security:3.0.0.20130604-M1",
+    "coordinatesV2": "org.jboss.errai:errai-security:3.0.0.20131101-M2",
+    "caller": "|java+method:///org/jboss/errai/security/client/local/Identity$1/callback(org.jboss.errai.security.shared.User)|",
+    "called": "|java+method:///org/jboss/errai/ui/nav/client/local/Navigation/goTo(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/google/gwt/user/client/rpc/AsyncCallback/onSuccess(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jboss/errai/ioc/client/container/SyncBeanManager/lookupBean(java.lang.Class,java.lang.annotation.Annotation%5B%5D)|",
+      "|java+method:///org/jboss/errai/ioc/client/container/IOCBeanDef/getInstance()|",
+      "|java+method:///org/jboss/errai/ui/nav/client/local/Navigation/goTo(java.lang.String)|",
+      "|java+method:///org/jboss/errai/ioc/client/container/IOC/getBeanManager()|",
+      "|java+method:///com/google/gwt/user/client/Cookies/removeCookie(java.lang.String)|",
+      "|java+method:///com/google/gwt/user/client/Cookies/getCookie(java.lang.String)|",
+      "|java+method:///org/jboss/errai/ui/shared/api/style/StyleBindingsRegistry/updateStyles()|",
+      "|java+method:///org/jboss/errai/ui/shared/api/style/StyleBindingsRegistry/get()|",
+      "|java+method:///org/jboss/errai/common/client/api/RemoteCallback/callback(java.lang.Object)|"
+    ],
+    "affectedLib": "org.jboss.errai:errai-navigation:3.0.0.20131101-M2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jboss.errai:errai-security:3.0.0.20130604-M1",
+    "coordinatesV2": "org.jboss.errai:errai-security:3.0.0.20131101-M2",
+    "caller": "|java+method:///org/jboss/errai/security/client/local/Identity/hasPermission(com.google.gwt.user.client.rpc.AsyncCallback,java.lang.String%5B%5D)|",
+    "called": "|java+method:///org/jboss/errai/bus/client/api/base/MessageBuilder/createCall(org.jboss.errai.common.client.api.RemoteCallback,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/jboss/errai/security/shared/AuthenticationService/getRoles()|",
+      "|java+constructor:///org/jboss/errai/security/client/local/Identity$2/Identity$2(org.jboss.errai.security.client.local.Identity,java.lang.String%5B%5D,com.google.gwt.user.client.rpc.AsyncCallback)|",
+      "|java+method:///org/jboss/errai/bus/client/api/base/MessageBuilder/createCall(org.jboss.errai.common.client.api.RemoteCallback,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jboss/errai/security/shared/AuthenticationService/getRoles()|",
+      "|java+constructor:///org/jboss/errai/security/client/local/Identity$3/Identity$3(org.jboss.errai.security.client.local.Identity,java.lang.String%5B%5D,com.google.gwt.user.client.rpc.AsyncCallback)|",
+      "|java+method:///org/jboss/errai/bus/client/api/base/MessageBuilder/createCall(org.jboss.errai.common.client.api.RemoteCallback,java.lang.Class)|"
+    ],
+    "affectedLib": "org.jboss.errai:errai-bus:3.0.0.20131101-M2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jboss.errai:errai-security:3.0.0.20130604-M1",
+    "coordinatesV2": "org.jboss.errai:errai-security:3.0.0.20131101-M2",
+    "caller": "|java+method:///org/jboss/errai/security/client/local/Identity/getUser(com.google.gwt.user.client.rpc.AsyncCallback)|",
+    "called": "|java+method:///org/jboss/errai/bus/client/api/base/MessageBuilder/createCall(org.jboss.errai.common.client.api.RemoteCallback,java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///org/jboss/errai/security/client/local/Identity$1/Identity$1(org.jboss.errai.security.client.local.Identity,com.google.gwt.user.client.rpc.AsyncCallback)|",
+      "|java+method:///org/jboss/errai/security/shared/AuthenticationService/getUser()|",
+      "|java+method:///org/jboss/errai/bus/client/api/base/MessageBuilder/createCall(org.jboss.errai.common.client.api.RemoteCallback,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/jboss/errai/security/client/local/Identity$2/Identity$2(org.jboss.errai.security.client.local.Identity,com.google.gwt.user.client.rpc.AsyncCallback)|",
+      "|java+method:///org/jboss/errai/security/shared/AuthenticationService/getUser()|",
+      "|java+method:///org/jboss/errai/bus/client/api/base/MessageBuilder/createCall(org.jboss.errai.common.client.api.RemoteCallback,java.lang.Class)|"
+    ],
+    "affectedLib": "org.jboss.errai:errai-bus:3.0.0.20131101-M2",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,160 @@
+Podam Bean Validation Support
+
+  Podam supports Bean Validation annotation constraints to fill attributes with
+  the values fulfilling these constaints.
+  For the full syntax of Bean Validation annotations, please refer to the
+  {{http://docs.oracle.com/javaee/6/tutorial/doc/gircz.html}}
+
+* Usage
+
+  Annotate fields, constructor parameters or setter parameters with
+  constraint annotations
+
++-----------------------------------
+
+package uk.co.jemos.podam.test.dto;
+
+import java.math.BigDecimal;
+import java.util.Calendar;
+import java.util.Collection;
+import java.util.Date;
+
+import javax.validation.constraints.AssertFalse;
+import javax.validation.constraints.AssertTrue;
+import javax.validation.constraints.DecimalMax;
+import javax.validation.constraints.DecimalMin;
+import javax.validation.constraints.Digits;
+import javax.validation.constraints.Future;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.Null;
+import javax.validation.constraints.Past;
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
+
+/**
+* POJO to test bean validation API
+*
+* @author daivanov
+*
+*/
+public class ValidatedPojo {
+
+    @AssertTrue
+    private Boolean boolTrue;
+
+    @AssertFalse
+    private Boolean boolFalse;
+
+    @Null
+    private String emptyString;
+
+    @DecimalMin("-5.5")
+    @DecimalMax("5.5")
+    private String decimalString;
+
+    @DecimalMin("-5.5")
+    @DecimalMax("5.5")
+    private Double decimalDouble;
+
+    @Min(-10)
+    @Max(10)
+    private Integer intInteger;
+
+    @Min(-10)
+    @Max(10)
+    private String intString;
+
+    @Digits(integer = 3, fraction = 2)
+    private String fractionString;
+
+    @Digits(integer = 3, fraction = 2)
+    private BigDecimal fractionDecimal;
+
+    @Past
+    private Date pastDate;
+
+    @Future
+    private Calendar futureCalendar;
+
+    @Size(min = 7, max = 10)
+    private String sizedString;
+
+    @Size(max = 2)
+    private Collection<String> maxCollection;
+
+    @Size(min = 2)
+    private Collection<String> minCollection;
+
+    @Pattern(regexp = "^[a-zA-Z0-9_]*$")
+    private String identifier;
+
+	...etc
+
+}
+
++-----------------------------------
+
+  Then just manufacture the POJO as normal.
+  Podam will introspect annotations and will follow constraints.
+
++-----------------------------------
+ValidatedPojo pojo = factory.manufacturePojo(ValidatedPojo.class);
++-----------------------------------
+
+  To test your POJO you need to add validation provider. For example,
+  <hibernate-validator> artifact provides one.
+  Then you can run something like:
+
++-----------------------------------
+ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
+Validator validator = factory.getValidator();
+Set<ConstraintViolation<ValidatedPojo>> violations = validator.validate(pojo);
+Assert.assertTrue("Unexpected " + violations.size() + " violations "
+    + violations, violations.isEmpty());
++-----------------------------------
+
+* Custom constraints support
+
+  If you use constraint annotations, which are not part of <javax.validation.constraints>
+  package:
+
++-----------------------------------
+
+public class ValidatedPojo {
+
+    @Email
+    private String email;
+
+    etc...
+}
+
++-----------------------------------
+
+  Then you have to tell Podam how to handle them:
+
++-----------------------------------
+
+Class<AttributeStrategy<?>> attrStrategy = (Class<AttributeStrategy<?>>)(Class<?>)EmailStrategy.class;
+((RandomDataProviderStrategy)factory.getStrategy()).addAttributeStrategy(Email.class, attrStrategy);
+ValidatedPojo pojo = factory.manufacturePojo(ValidatedPojo.class);
+
++-----------------------------------
+
+  <EmailStrategy> implementation:
+
++-----------------------------------
+
+public class EmailStrategy implements AttributeStrategy<String> {
+
+    @Override
+    public String getValue() {
+        return "aaa.bbb@ccc.ddd";
+    }
+}
+
++-----------------------------------
+
+* Limitations
+
+  * @Pattern annotation is not yet supported

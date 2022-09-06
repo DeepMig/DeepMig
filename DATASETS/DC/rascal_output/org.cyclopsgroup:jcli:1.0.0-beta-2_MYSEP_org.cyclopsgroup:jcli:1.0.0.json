@@ -1,0 +1,700 @@
+[
+  {
+    "coordinatesV1": "org.cyclopsgroup:jcli:1.0.0",
+    "coordinatesV2": "org.cyclopsgroup:jcli:1.0.0-beta-2",
+    "caller": "|java+method:///org/cyclopsgroup/jcli/impl/OptionHelp/getLongName()|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/isBlank(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/cyclopsgroup/jcli/spi/Option/getLongName()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isBlank(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/cyclopsgroup/jcli/spi/Option/getLongName()|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isBlank(java.lang.CharSequence)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.cyclopsgroup:jcli:1.0.0",
+    "coordinatesV2": "org.cyclopsgroup:jcli:1.0.0-beta-2",
+    "caller": "|java+method:///org/cyclopsgroup/jcli/spi/CommandLine/toString()|",
+    "called": "|java+method:///org/apache/commons/lang/builder/ToStringBuilder/reflectionToString(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/builder/ToStringBuilder/reflectionToString(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/builder/ToStringBuilder/reflectionToString(java.lang.Object)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.cyclopsgroup:jcli:1.0.0",
+    "coordinatesV2": "org.cyclopsgroup:jcli:1.0.0-beta-2",
+    "caller": "|java+method:///org/cyclopsgroup/jcli/impl/AnnotationOption/hashCode()|",
+    "called": "|java+method:///org/apache/commons/lang/builder/HashCodeBuilder/reflectionHashCode(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/builder/HashCodeBuilder/reflectionHashCode(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/builder/HashCodeBuilder/reflectionHashCode(java.lang.Object,java.lang.String%5B%5D)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.cyclopsgroup:jcli:1.0.0",
+    "coordinatesV2": "org.cyclopsgroup:jcli:1.0.0-beta-2",
+    "caller": "|java+method:///org/cyclopsgroup/jcli/impl/DefaultHelpPrinter/printHelp(org.cyclopsgroup.jcli.impl.AnnotationParsingContext,java.io.PrintWriter)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/isNotBlank(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/cyclopsgroup/jcli/spi/Argument/getDisplayName()|",
+      "|java+method:///org/cyclopsgroup/caff/format/Formats/newFixLengthFormat(java.lang.Class)|",
+      "|java+method:///org/cyclopsgroup/caff/format/Format/formatToString(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/cyclopsgroup/jcli/impl/AnnotationParsingContext/options()|",
+      "|java+method:///org/cyclopsgroup/jcli/impl/AnnotationParsingContext/cli()|",
+      "|java+constructor:///org/cyclopsgroup/jcli/impl/OptionHelp/OptionHelp(org.cyclopsgroup.jcli.spi.Option)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isBlank(java.lang.String)|",
+      "|java+method:///org/cyclopsgroup/jcli/spi/Cli/getNote()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///org/cyclopsgroup/jcli/impl/AnnotationParsingContext/argument()|",
+      "|java+method:///org/cyclopsgroup/jcli/spi/Cli/getName()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/cyclopsgroup/jcli/spi/Argument/getDescription()|",
+      "|java+method:///org/cyclopsgroup/jcli/spi/Cli/getDescription()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isNotBlank(java.lang.String)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/io/PrintWriter/println(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/cyclopsgroup/jcli/spi/Argument/getDisplayName()|",
+      "|java+method:///org/cyclopsgroup/caff/format/Formats/newFixLengthFormat(java.lang.Class)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/cyclopsgroup/jcli/impl/AnnotationParsingContext/options()|",
+      "|java+method:///org/cyclopsgroup/jcli/impl/AnnotationParsingContext/cli()|",
+      "|java+constructor:///org/cyclopsgroup/jcli/impl/OptionHelp/OptionHelp(org.cyclopsgroup.jcli.spi.Option)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/cyclopsgroup/jcli/spi/Cli/getNote()|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///org/cyclopsgroup/jcli/spi/Cli/getDescription()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isBlank(java.lang.CharSequence)|",
+      "|java+method:///org/cyclopsgroup/caff/format/Format/formatToString(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///org/cyclopsgroup/jcli/impl/AnnotationParsingContext/argument()|",
+      "|java+method:///org/cyclopsgroup/jcli/spi/Cli/getName()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/cyclopsgroup/jcli/spi/Argument/getDescription()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/io/PrintWriter/println(java.lang.String)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.cyclopsgroup:jcli:1.0.0",
+    "coordinatesV2": "org.cyclopsgroup:jcli:1.0.0-beta-2",
+    "caller": "|java+constructor:///org/cyclopsgroup/jcli/jline/CliCompletor/CliCompletor(java.lang.Object,org.cyclopsgroup.caff.token.ValueTokenizer)|",
+    "called": "|java+method:///org/apache/commons/lang/Validate/notNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/cyclopsgroup/jcli/jline/CliCompletor$1/CliCompletor$1(org.cyclopsgroup.jcli.jline.CliCompletor)|",
+      "|java+method:///org/apache/commons/lang/Validate/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/cyclopsgroup/jcli/ArgumentProcessor/newInstance(java.lang.Class)|",
+      "|java+method:///org/cyclopsgroup/jcli/ArgumentProcessor/createParsingContext()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/cyclopsgroup/jcli/ArgumentProcessor/createParsingContext()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///org/cyclopsgroup/jcli/jline/CliCompletor$1/CliCompletor$1(org.cyclopsgroup.jcli.jline.CliCompletor)|",
+      "|java+method:///org/apache/commons/lang3/Validate/notNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/cyclopsgroup/jcli/ArgumentProcessor/forType(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.cyclopsgroup:jcli:1.0.0",
+    "coordinatesV2": "org.cyclopsgroup:jcli:1.0.0-beta-2",
+    "caller": "|java+method:///org/cyclopsgroup/jcli/example/UserControl/toString()|",
+    "called": "|java+method:///org/apache/commons/lang/builder/ToStringBuilder/reflectionToString(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/builder/ToStringBuilder/reflectionToString(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/builder/ToStringBuilder/reflectionToString(java.lang.Object)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.cyclopsgroup:jcli:1.0.0",
+    "coordinatesV2": "org.cyclopsgroup:jcli:1.0.0-beta-2",
+    "caller": "|java+method:///org/cyclopsgroup/jcli/impl/Reference/toString()|",
+    "called": "|java+method:///org/apache/commons/lang/builder/ToStringBuilder/reflectionToString(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/builder/ToStringBuilder/reflectionToString(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/builder/ToStringBuilder/reflectionToString(java.lang.Object)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.cyclopsgroup:jcli:1.0.0",
+    "coordinatesV2": "org.cyclopsgroup:jcli:1.0.0-beta-2",
+    "caller": "|java+constructor:///org/cyclopsgroup/jcli/ValidationResult$UnexpectedOption/ValidationResult$UnexpectedOption(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang/Validate/notNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/Validate/notNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///org/cyclopsgroup/jcli/ValidationResult$Violation/ValidationResult$Violation()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/Validate/notNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/cyclopsgroup/jcli/ValidationResult$Violation/ValidationResult$Violation()|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.cyclopsgroup:jcli:1.0.0",
+    "coordinatesV2": "org.cyclopsgroup:jcli:1.0.0-beta-2",
+    "caller": "|java+method:///org/cyclopsgroup/jcli/jline/CliCompletor/suggestArguments(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList(java.util.Collection)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+      "|java+method:///java/util/Collections/emptyList()|",
+      "|java+method:///org/cyclopsgroup/jcli/jline/CliCompletor/filterList(java.util.List,java.lang.String)|",
+      "|java+method:///java/util/Collections/sort(java.util.List)|",
+      "|java+method:///org/cyclopsgroup/jcli/AutoCompletable/suggestArgument(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList(java.util.Collection)|",
+      "|java+method:///java/util/Collections/emptyList()|",
+      "|java+method:///org/cyclopsgroup/jcli/jline/CliCompletor/filterList(java.util.List,java.lang.String)|",
+      "|java+method:///java/util/Collections/sort(java.util.List)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isEmpty(java.lang.CharSequence)|",
+      "|java+method:///org/cyclopsgroup/jcli/AutoCompletable/suggestArgument(java.lang.String)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.cyclopsgroup:jcli:1.0.0",
+    "coordinatesV2": "org.cyclopsgroup:jcli:1.0.0-beta-2",
+    "caller": "|java+method:///org/cyclopsgroup/jcli/impl/OptionHelp/getDescription()|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/isNotBlank(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/cyclopsgroup/jcli/spi/Option/getDefaultValue()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isNotBlank(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/cyclopsgroup/jcli/spi/Option/getDescription()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/cyclopsgroup/jcli/spi/Option/isFlag()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/valueOf(java.lang.Object)|",
+      "|java+method:///org/cyclopsgroup/jcli/spi/Option/getDefaultValue()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///org/cyclopsgroup/jcli/spi/Option/getDescription()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/cyclopsgroup/jcli/spi/Option/isFlag()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.cyclopsgroup:jcli:1.0.0",
+    "coordinatesV2": "org.cyclopsgroup:jcli:1.0.0-beta-2",
+    "caller": "|java+method:///org/cyclopsgroup/jcli/jline/CliCompletor/filterList(java.util.List,java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///java/util/List/iterator()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isEmpty(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.cyclopsgroup:jcli:1.0.0",
+    "coordinatesV2": "org.cyclopsgroup:jcli:1.0.0-beta-2",
+    "caller": "|java+constructor:///org/cyclopsgroup/jcli/ValidationResult$OptionMissing/ValidationResult$OptionMissing(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang/Validate/notNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/Validate/notNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///org/cyclopsgroup/jcli/ValidationResult$Violation/ValidationResult$Violation()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/Validate/notNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/cyclopsgroup/jcli/ValidationResult$Violation/ValidationResult$Violation()|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.cyclopsgroup:jcli:1.0.0",
+    "coordinatesV2": "org.cyclopsgroup:jcli:1.0.0-beta-2",
+    "caller": "|java+method:///org/cyclopsgroup/jcli/impl/AnnotationOption/equals(java.lang.Object)|",
+    "called": "|java+method:///org/apache/commons/lang/builder/EqualsBuilder/reflectionEquals(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/builder/EqualsBuilder/reflectionEquals(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/builder/EqualsBuilder/reflectionEquals(java.lang.Object,java.lang.Object,java.lang.String%5B%5D)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.cyclopsgroup:jcli:1.0.0",
+    "coordinatesV2": "org.cyclopsgroup:jcli:1.0.0-beta-2",
+    "caller": "|java+method:///org/cyclopsgroup/jcli/jline/CliCompletor/suggestOptionValue(org.cyclopsgroup.jcli.spi.Option,java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList(java.util.Collection)|",
+      "|java+method:///org/cyclopsgroup/jcli/spi/Option/getName()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+      "|java+method:///java/util/Collections/emptyList()|",
+      "|java+method:///org/cyclopsgroup/jcli/jline/CliCompletor/filterList(java.util.List,java.lang.String)|",
+      "|java+method:///java/util/Collections/sort(java.util.List)|",
+      "|java+method:///org/cyclopsgroup/jcli/AutoCompletable/suggestOption(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList(java.util.Collection)|",
+      "|java+method:///org/cyclopsgroup/jcli/spi/Option/getName()|",
+      "|java+method:///java/util/Collections/emptyList()|",
+      "|java+method:///org/cyclopsgroup/jcli/jline/CliCompletor/filterList(java.util.List,java.lang.String)|",
+      "|java+method:///java/util/Collections/sort(java.util.List)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isEmpty(java.lang.CharSequence)|",
+      "|java+method:///org/cyclopsgroup/jcli/AutoCompletable/suggestOption(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.cyclopsgroup:jcli:1.0.0",
+    "coordinatesV2": "org.cyclopsgroup:jcli:1.0.0-beta-2",
+    "caller": "|java+method:///org/cyclopsgroup/jcli/spi/CommandLine$OptionValue/toString()|",
+    "called": "|java+method:///org/apache/commons/lang/builder/ToStringBuilder/reflectionToString(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/builder/ToStringBuilder/reflectionToString(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/builder/ToStringBuilder/reflectionToString(java.lang.Object)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.cyclopsgroup:jcli:1.0.0-beta-2",
+    "coordinatesV2": "org.cyclopsgroup:jcli:1.0.0",
+    "caller": "|java+method:///org/cyclopsgroup/jcli/impl/OptionHelp/getLongName()|",
+    "called": "|java+method:///org/apache/commons/lang3/StringUtils/isBlank(java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+method:///org/cyclopsgroup/jcli/spi/Option/getLongName()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isBlank(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/cyclopsgroup/jcli/spi/Option/getLongName()|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isBlank(java.lang.CharSequence)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.7",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.cyclopsgroup:jcli:1.0.0-beta-2",
+    "coordinatesV2": "org.cyclopsgroup:jcli:1.0.0",
+    "caller": "|java+method:///org/cyclopsgroup/jcli/spi/CommandLine/toString()|",
+    "called": "|java+method:///org/apache/commons/lang3/builder/ToStringBuilder/reflectionToString(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/builder/ToStringBuilder/reflectionToString(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/builder/ToStringBuilder/reflectionToString(java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.7",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.cyclopsgroup:jcli:1.0.0-beta-2",
+    "coordinatesV2": "org.cyclopsgroup:jcli:1.0.0",
+    "caller": "|java+method:///org/cyclopsgroup/jcli/impl/AnnotationOption/hashCode()|",
+    "called": "|java+method:///org/apache/commons/lang3/builder/HashCodeBuilder/reflectionHashCode(java.lang.Object,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/builder/HashCodeBuilder/reflectionHashCode(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/builder/HashCodeBuilder/reflectionHashCode(java.lang.Object,java.lang.String%5B%5D)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.7",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.cyclopsgroup:jcli:1.0.0-beta-2",
+    "coordinatesV2": "org.cyclopsgroup:jcli:1.0.0",
+    "caller": "|java+method:///org/cyclopsgroup/jcli/impl/DefaultHelpPrinter/printHelp(org.cyclopsgroup.jcli.impl.AnnotationParsingContext,java.io.PrintWriter)|",
+    "called": "|java+method:///org/apache/commons/lang3/StringUtils/isBlank(java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+method:///org/cyclopsgroup/jcli/spi/Argument/getDisplayName()|",
+      "|java+method:///org/cyclopsgroup/caff/format/Formats/newFixLengthFormat(java.lang.Class)|",
+      "|java+method:///org/cyclopsgroup/caff/format/Format/formatToString(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/cyclopsgroup/jcli/impl/AnnotationParsingContext/options()|",
+      "|java+method:///org/cyclopsgroup/jcli/impl/AnnotationParsingContext/cli()|",
+      "|java+constructor:///org/cyclopsgroup/jcli/impl/OptionHelp/OptionHelp(org.cyclopsgroup.jcli.spi.Option)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isBlank(java.lang.String)|",
+      "|java+method:///org/cyclopsgroup/jcli/spi/Cli/getNote()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///org/cyclopsgroup/jcli/impl/AnnotationParsingContext/argument()|",
+      "|java+method:///org/cyclopsgroup/jcli/spi/Cli/getName()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/cyclopsgroup/jcli/spi/Argument/getDescription()|",
+      "|java+method:///org/cyclopsgroup/jcli/spi/Cli/getDescription()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isNotBlank(java.lang.String)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/io/PrintWriter/println(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/cyclopsgroup/jcli/spi/Argument/getDisplayName()|",
+      "|java+method:///org/cyclopsgroup/caff/format/Formats/newFixLengthFormat(java.lang.Class)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/cyclopsgroup/jcli/impl/AnnotationParsingContext/options()|",
+      "|java+method:///org/cyclopsgroup/jcli/impl/AnnotationParsingContext/cli()|",
+      "|java+constructor:///org/cyclopsgroup/jcli/impl/OptionHelp/OptionHelp(org.cyclopsgroup.jcli.spi.Option)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/cyclopsgroup/jcli/spi/Cli/getNote()|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///org/cyclopsgroup/jcli/spi/Cli/getDescription()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isBlank(java.lang.CharSequence)|",
+      "|java+method:///org/cyclopsgroup/caff/format/Format/formatToString(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///org/cyclopsgroup/jcli/impl/AnnotationParsingContext/argument()|",
+      "|java+method:///org/cyclopsgroup/jcli/spi/Cli/getName()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/cyclopsgroup/jcli/spi/Argument/getDescription()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/io/PrintWriter/println(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.7",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.cyclopsgroup:jcli:1.0.0-beta-2",
+    "coordinatesV2": "org.cyclopsgroup:jcli:1.0.0",
+    "caller": "|java+constructor:///org/cyclopsgroup/jcli/jline/CliCompletor/CliCompletor(java.lang.Object,org.cyclopsgroup.caff.token.ValueTokenizer)|",
+    "called": "|java+method:///org/apache/commons/lang3/Validate/notNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+constructor:///org/cyclopsgroup/jcli/jline/CliCompletor$1/CliCompletor$1(org.cyclopsgroup.jcli.jline.CliCompletor)|",
+      "|java+method:///org/apache/commons/lang/Validate/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/cyclopsgroup/jcli/ArgumentProcessor/newInstance(java.lang.Class)|",
+      "|java+method:///org/cyclopsgroup/jcli/ArgumentProcessor/createParsingContext()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/cyclopsgroup/jcli/ArgumentProcessor/createParsingContext()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///org/cyclopsgroup/jcli/jline/CliCompletor$1/CliCompletor$1(org.cyclopsgroup.jcli.jline.CliCompletor)|",
+      "|java+method:///org/apache/commons/lang3/Validate/notNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/cyclopsgroup/jcli/ArgumentProcessor/forType(java.lang.Class)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.7",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.cyclopsgroup:jcli:1.0.0-beta-2",
+    "coordinatesV2": "org.cyclopsgroup:jcli:1.0.0",
+    "caller": "|java+method:///org/cyclopsgroup/jcli/example/UserControl/toString()|",
+    "called": "|java+method:///org/apache/commons/lang3/builder/ToStringBuilder/reflectionToString(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/builder/ToStringBuilder/reflectionToString(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/builder/ToStringBuilder/reflectionToString(java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.7",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.cyclopsgroup:jcli:1.0.0-beta-2",
+    "coordinatesV2": "org.cyclopsgroup:jcli:1.0.0",
+    "caller": "|java+method:///org/cyclopsgroup/jcli/impl/Reference/toString()|",
+    "called": "|java+method:///org/apache/commons/lang3/builder/ToStringBuilder/reflectionToString(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/builder/ToStringBuilder/reflectionToString(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/builder/ToStringBuilder/reflectionToString(java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.7",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.cyclopsgroup:jcli:1.0.0-beta-2",
+    "coordinatesV2": "org.cyclopsgroup:jcli:1.0.0",
+    "caller": "|java+constructor:///org/cyclopsgroup/jcli/ValidationResult$UnexpectedOption/ValidationResult$UnexpectedOption(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang3/Validate/notNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/Validate/notNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///org/cyclopsgroup/jcli/ValidationResult$Violation/ValidationResult$Violation()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/Validate/notNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/cyclopsgroup/jcli/ValidationResult$Violation/ValidationResult$Violation()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.7",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.cyclopsgroup:jcli:1.0.0-beta-2",
+    "coordinatesV2": "org.cyclopsgroup:jcli:1.0.0",
+    "caller": "|java+method:///org/cyclopsgroup/jcli/jline/CliCompletor/suggestArguments(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang3/StringUtils/isEmpty(java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList(java.util.Collection)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+      "|java+method:///java/util/Collections/emptyList()|",
+      "|java+method:///org/cyclopsgroup/jcli/jline/CliCompletor/filterList(java.util.List,java.lang.String)|",
+      "|java+method:///java/util/Collections/sort(java.util.List)|",
+      "|java+method:///org/cyclopsgroup/jcli/AutoCompletable/suggestArgument(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList(java.util.Collection)|",
+      "|java+method:///java/util/Collections/emptyList()|",
+      "|java+method:///org/cyclopsgroup/jcli/jline/CliCompletor/filterList(java.util.List,java.lang.String)|",
+      "|java+method:///java/util/Collections/sort(java.util.List)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isEmpty(java.lang.CharSequence)|",
+      "|java+method:///org/cyclopsgroup/jcli/AutoCompletable/suggestArgument(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.7",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.cyclopsgroup:jcli:1.0.0-beta-2",
+    "coordinatesV2": "org.cyclopsgroup:jcli:1.0.0",
+    "caller": "|java+method:///org/cyclopsgroup/jcli/impl/OptionHelp/getDescription()|",
+    "called": "|java+method:///org/apache/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+method:///org/cyclopsgroup/jcli/spi/Option/getDefaultValue()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isNotBlank(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/cyclopsgroup/jcli/spi/Option/getDescription()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/cyclopsgroup/jcli/spi/Option/isFlag()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/valueOf(java.lang.Object)|",
+      "|java+method:///org/cyclopsgroup/jcli/spi/Option/getDefaultValue()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///org/cyclopsgroup/jcli/spi/Option/getDescription()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/cyclopsgroup/jcli/spi/Option/isFlag()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.7",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.cyclopsgroup:jcli:1.0.0-beta-2",
+    "coordinatesV2": "org.cyclopsgroup:jcli:1.0.0",
+    "caller": "|java+method:///org/cyclopsgroup/jcli/jline/CliCompletor/filterList(java.util.List,java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang3/StringUtils/isEmpty(java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///java/util/List/iterator()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isEmpty(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.7",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.cyclopsgroup:jcli:1.0.0-beta-2",
+    "coordinatesV2": "org.cyclopsgroup:jcli:1.0.0",
+    "caller": "|java+method:///org/cyclopsgroup/jcli/impl/AnnotationOption/equals(java.lang.Object)|",
+    "called": "|java+method:///org/apache/commons/lang3/builder/EqualsBuilder/reflectionEquals(java.lang.Object,java.lang.Object,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/builder/EqualsBuilder/reflectionEquals(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/builder/EqualsBuilder/reflectionEquals(java.lang.Object,java.lang.Object,java.lang.String%5B%5D)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.7",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.cyclopsgroup:jcli:1.0.0-beta-2",
+    "coordinatesV2": "org.cyclopsgroup:jcli:1.0.0",
+    "caller": "|java+method:///org/cyclopsgroup/jcli/jline/CliCompletor/suggestOptionValue(org.cyclopsgroup.jcli.spi.Option,java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang3/StringUtils/isEmpty(java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList(java.util.Collection)|",
+      "|java+method:///org/cyclopsgroup/jcli/spi/Option/getName()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+      "|java+method:///java/util/Collections/emptyList()|",
+      "|java+method:///org/cyclopsgroup/jcli/jline/CliCompletor/filterList(java.util.List,java.lang.String)|",
+      "|java+method:///java/util/Collections/sort(java.util.List)|",
+      "|java+method:///org/cyclopsgroup/jcli/AutoCompletable/suggestOption(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList(java.util.Collection)|",
+      "|java+method:///org/cyclopsgroup/jcli/spi/Option/getName()|",
+      "|java+method:///java/util/Collections/emptyList()|",
+      "|java+method:///org/cyclopsgroup/jcli/jline/CliCompletor/filterList(java.util.List,java.lang.String)|",
+      "|java+method:///java/util/Collections/sort(java.util.List)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isEmpty(java.lang.CharSequence)|",
+      "|java+method:///org/cyclopsgroup/jcli/AutoCompletable/suggestOption(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.7",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.cyclopsgroup:jcli:1.0.0-beta-2",
+    "coordinatesV2": "org.cyclopsgroup:jcli:1.0.0",
+    "caller": "|java+constructor:///org/cyclopsgroup/jcli/ValidationResult$OptionMissing/ValidationResult$OptionMissing(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang3/Validate/notNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/Validate/notNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///org/cyclopsgroup/jcli/ValidationResult$Violation/ValidationResult$Violation()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/Validate/notNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/cyclopsgroup/jcli/ValidationResult$Violation/ValidationResult$Violation()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.7",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.cyclopsgroup:jcli:1.0.0-beta-2",
+    "coordinatesV2": "org.cyclopsgroup:jcli:1.0.0",
+    "caller": "|java+method:///org/cyclopsgroup/jcli/spi/CommandLine$OptionValue/toString()|",
+    "called": "|java+method:///org/apache/commons/lang3/builder/ToStringBuilder/reflectionToString(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/builder/ToStringBuilder/reflectionToString(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/builder/ToStringBuilder/reflectionToString(java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.7",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.cyclopsgroup:jcli:1.0.0-beta-2",
+    "coordinatesV2": "org.cyclopsgroup:jcli:1.0.0",
+    "caller": "|java+method:///org/cyclopsgroup/jcli/impl/DefaultHelpPrinter/printHelp(org.cyclopsgroup.jcli.impl.AnnotationParsingContext,java.io.PrintWriter)|",
+    "called": "|java+method:///org/cyclopsgroup/caff/format/Format/formatToString(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/cyclopsgroup/jcli/spi/Argument/getDisplayName()|",
+      "|java+method:///org/cyclopsgroup/caff/format/Formats/newFixLengthFormat(java.lang.Class)|",
+      "|java+method:///org/cyclopsgroup/caff/format/Format/formatToString(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/cyclopsgroup/jcli/impl/AnnotationParsingContext/options()|",
+      "|java+method:///org/cyclopsgroup/jcli/impl/AnnotationParsingContext/cli()|",
+      "|java+constructor:///org/cyclopsgroup/jcli/impl/OptionHelp/OptionHelp(org.cyclopsgroup.jcli.spi.Option)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isBlank(java.lang.String)|",
+      "|java+method:///org/cyclopsgroup/jcli/spi/Cli/getNote()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///org/cyclopsgroup/jcli/impl/AnnotationParsingContext/argument()|",
+      "|java+method:///org/cyclopsgroup/jcli/spi/Cli/getName()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/cyclopsgroup/jcli/spi/Argument/getDescription()|",
+      "|java+method:///org/cyclopsgroup/jcli/spi/Cli/getDescription()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isNotBlank(java.lang.String)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/io/PrintWriter/println(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/cyclopsgroup/jcli/spi/Argument/getDisplayName()|",
+      "|java+method:///org/cyclopsgroup/caff/format/Formats/newFixLengthFormat(java.lang.Class)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/cyclopsgroup/jcli/impl/AnnotationParsingContext/options()|",
+      "|java+method:///org/cyclopsgroup/jcli/impl/AnnotationParsingContext/cli()|",
+      "|java+constructor:///org/cyclopsgroup/jcli/impl/OptionHelp/OptionHelp(org.cyclopsgroup.jcli.spi.Option)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/cyclopsgroup/jcli/spi/Cli/getNote()|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///org/cyclopsgroup/jcli/spi/Cli/getDescription()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isBlank(java.lang.CharSequence)|",
+      "|java+method:///org/cyclopsgroup/caff/format/Format/formatToString(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///org/cyclopsgroup/jcli/impl/AnnotationParsingContext/argument()|",
+      "|java+method:///org/cyclopsgroup/jcli/spi/Cli/getName()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/cyclopsgroup/jcli/spi/Argument/getDescription()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/io/PrintWriter/println(java.lang.String)|"
+    ],
+    "affectedLib": "org.cyclopsgroup:caff:0.4.1",
+    "change": "UPDATED"
+  }
+]

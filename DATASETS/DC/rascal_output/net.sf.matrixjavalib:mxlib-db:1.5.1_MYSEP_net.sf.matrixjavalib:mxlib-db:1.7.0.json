@@ -1,0 +1,101 @@
+[
+  {
+    "coordinatesV1": "net.sf.matrixjavalib:mxlib-db:1.5.1",
+    "coordinatesV2": "net.sf.matrixjavalib:mxlib-db:1.7.0",
+    "caller": "|java+method:///net/matrix/sql/hibernate/SessionFactoryManager/reset()|",
+    "called": "|java+method:///org/hibernate/boot/registry/StandardServiceRegistryBuilder/destroy(org.hibernate.service.ServiceRegistry)|",
+    "v1Body": [
+      "|java+method:///org/hibernate/service/ServiceRegistryBuilder/destroy(org.hibernate.service.ServiceRegistry)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/hibernate/SessionFactory/close()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/hibernate/boot/registry/StandardServiceRegistryBuilder/destroy(org.hibernate.service.ServiceRegistry)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/hibernate/SessionFactory/close()|"
+    ],
+    "affectedLib": "org.hibernate:hibernate-core:4.3.1.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.sf.matrixjavalib:mxlib-db:1.5.1",
+    "coordinatesV2": "net.sf.matrixjavalib:mxlib-db:1.7.0",
+    "caller": "|java+method:///net/matrix/sql/hibernate/SessionFactoryManager/getServiceRegistry()|",
+    "called": "|java+method:///org/hibernate/boot/registry/StandardServiceRegistryBuilder/build()|",
+    "v1Body": [
+      "|java+method:///org/hibernate/service/ServiceRegistryBuilder/applySettings(java.util.Map)|",
+      "|java+method:///org/hibernate/service/ServiceRegistryBuilder/buildServiceRegistry()|",
+      "|java+constructor:///java/sql/SQLException/SQLException(java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///net/matrix/sql/hibernate/SessionFactoryManager/getConfiguration()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+constructor:///org/hibernate/service/ServiceRegistryBuilder/ServiceRegistryBuilder()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/hibernate/cfg/Configuration/getProperties()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/sql/SQLException/SQLException(java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/hibernate/boot/registry/StandardServiceRegistryBuilder/applySettings(java.util.Map)|",
+      "|java+method:///net/matrix/sql/hibernate/SessionFactoryManager/getConfiguration()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/hibernate/boot/registry/StandardServiceRegistryBuilder/StandardServiceRegistryBuilder()|",
+      "|java+method:///org/hibernate/cfg/Configuration/getProperties()|",
+      "|java+method:///org/hibernate/boot/registry/StandardServiceRegistryBuilder/build()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.hibernate:hibernate-core:4.3.1.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.sf.matrixjavalib:mxlib-db:1.5.1",
+    "coordinatesV2": "net.sf.matrixjavalib:mxlib-db:1.7.0",
+    "caller": "|java+method:///net/matrix/sql/hibernate/HibernateDAO/delete(java.io.Serializable)|",
+    "called": "|java+constructor:///org/hibernate/ObjectNotFoundException/ObjectNotFoundException(java.io.Serializable,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/commons/lang3/Validate/notNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///net/matrix/sql/hibernate/HibernateDAO/get(java.io.Serializable)|",
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///net/matrix/sql/hibernate/HibernateDAO/delete(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///net/matrix/sql/hibernate/HibernateDAO/delete(java.lang.Object)|",
+      "|java+constructor:///org/hibernate/ObjectNotFoundException/ObjectNotFoundException(java.io.Serializable,java.lang.String)|",
+      "|java+method:///net/matrix/sql/hibernate/HibernateDAO/findOne(java.io.Serializable)|"
+    ],
+    "affectedLib": "org.hibernate:hibernate-core:4.3.1.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.sf.matrixjavalib:mxlib-db:1.5.1",
+    "coordinatesV2": "net.sf.matrixjavalib:mxlib-db:1.7.0",
+    "caller": "|java+method:///net/matrix/sql/hibernate/HibernateDAO/findBy(java.lang.String,java.lang.Object)|",
+    "called": "|java+method:///org/hibernate/criterion/Restrictions/eq(java.lang.String,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///net/matrix/sql/hibernate/HibernateDAO/find(org.hibernate.criterion.Criterion%5B%5D)|",
+      "|java+method:///org/apache/commons/lang3/Validate/notBlank(java.lang.CharSequence,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/hibernate/criterion/Restrictions/eq(java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///net/matrix/sql/hibernate/HibernateDAO/find(org.hibernate.criterion.Criterion%5B%5D)|",
+      "|java+method:///org/hibernate/criterion/Restrictions/eq(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "org.hibernate:hibernate-core:4.3.1.Final",
+    "change": "UPDATED"
+  }
+]

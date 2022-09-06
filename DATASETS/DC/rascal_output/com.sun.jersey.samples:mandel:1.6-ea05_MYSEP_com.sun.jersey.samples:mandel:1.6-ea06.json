@@ -1,0 +1,76 @@
+[
+  {
+    "coordinatesV1": "com.sun.jersey.samples:mandel:1.6-ea06",
+    "coordinatesV2": "com.sun.jersey.samples:mandel:1.6-ea05",
+    "caller": "|java+method:///com/sun/jersey/samples/mandel/MandelServer$/main(java.lang.String%5B%5D)|",
+    "called": "|java+method:///com/sun/grizzly/http/SelectorThread/stopEndpoint()|",
+    "v1Body": [
+      "|java+method:///com/sun/jersey/samples/mandel/MandelServer$/BASE_URI()|",
+      "|java+method:///scala/Predef$/println(java.lang.Object)|",
+      "|java+method:///com/sun/grizzly/http/SelectorThread/stopEndpoint()|",
+      "|java+constructor:///scala/collection/mutable/StringBuilder/StringBuilder()|",
+      "|java+method:///com/sun/jersey/samples/mandel/MandelServer$/startServer()|",
+      "|java+method:///scala/collection/mutable/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///scala/collection/mutable/StringBuilder/toString()|",
+      "|java+method:///java/lang/System/exit(int)|",
+      "|java+method:///java/io/InputStream/read()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/sun/jersey/samples/mandel/MandelServer$/BASE_URI()|",
+      "|java+method:///scala/Predef$/println(java.lang.Object)|",
+      "|java+method:///org/glassfish/grizzly/http/server/HttpServer/stop()|",
+      "|java+constructor:///scala/collection/mutable/StringBuilder/StringBuilder()|",
+      "|java+method:///com/sun/jersey/samples/mandel/MandelServer$/startServer()|",
+      "|java+method:///scala/collection/mutable/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///scala/collection/mutable/StringBuilder/toString()|",
+      "|java+method:///java/lang/System/exit(int)|",
+      "|java+method:///java/io/InputStream/read()|"
+    ],
+    "affectedLib": "com.sun.grizzly:grizzly-servlet-webserver:1.9.18-i",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.sun.jersey.samples:mandel:1.6-ea06",
+    "coordinatesV2": "com.sun.jersey.samples:mandel:1.6-ea05",
+    "caller": "|java+method:///com/sun/jersey/samples/mandel/MandelServer$/startServer()|",
+    "called": "|java+method:///com/sun/jersey/api/container/grizzly/GrizzlyWebContainerFactory/create(java.net.URI,java.util.Map)|",
+    "v1Body": [
+      "|java+method:///com/sun/jersey/samples/mandel/MandelServer$/BASE_URI()|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///com/sun/jersey/api/container/grizzly/GrizzlyWebContainerFactory/create(java.net.URI,java.util.Map)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/util/HashMap/put(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/sun/jersey/samples/mandel/MandelServer$/BASE_URI()|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///com/sun/jersey/api/container/grizzly2/GrizzlyWebContainerFactory/create(java.net.URI,java.util.Map)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/util/HashMap/put(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "com.sun.jersey:jersey-grizzly:1.6-ea05",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.sun.jersey.samples:mandel:1.6-ea05",
+    "coordinatesV2": "com.sun.jersey.samples:mandel:1.6-ea06",
+    "caller": "|java+method:///com/sun/jersey/samples/mandel/MandelServer$/startServer()|",
+    "called": "|java+method:///com/sun/jersey/api/container/grizzly2/GrizzlyWebContainerFactory/create(java.net.URI,java.util.Map)|",
+    "v1Body": [
+      "|java+method:///com/sun/jersey/samples/mandel/MandelServer$/BASE_URI()|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///com/sun/jersey/api/container/grizzly/GrizzlyWebContainerFactory/create(java.net.URI,java.util.Map)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/util/HashMap/put(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/sun/jersey/samples/mandel/MandelServer$/BASE_URI()|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///com/sun/jersey/api/container/grizzly2/GrizzlyWebContainerFactory/create(java.net.URI,java.util.Map)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/util/HashMap/put(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "com.sun.jersey:jersey-grizzly2:1.6-ea06",
+    "change": "ADDED"
+  }
+]

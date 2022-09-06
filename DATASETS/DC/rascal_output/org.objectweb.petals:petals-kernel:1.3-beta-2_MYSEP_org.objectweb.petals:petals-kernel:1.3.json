@@ -1,0 +1,584 @@
+[
+  {
+    "coordinatesV1": "org.objectweb.petals:petals-kernel:1.3-beta-2",
+    "coordinatesV2": "org.objectweb.petals:petals-kernel:1.3",
+    "caller": "|java+method:///org/objectweb/petals/jbi/component/lifecycle/Installer/createBootstrapClassloader()|",
+    "called": "|java+method:///org/objectweb/petals/common/descriptor/JBIDescriptor/isParentFirst(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/objectweb/petals/jbi/component/lifecycle/Installer/createClassLoader(java.lang.String,java.util.List,boolean,java.util.List)|",
+      "|java+method:///org/objectweb/petals/tools/jbicommon/descriptor/ComponentDescription/getBootstrapClassPath()|",
+      "|java+method:///org/objectweb/petals/tools/jbicommon/descriptor/JBIDescriptor/isParentFirst(java.lang.String)|",
+      "|java+method:///org/objectweb/petals/util/LoggingUtil/call()|",
+      "|java+method:///org/objectweb/petals/tools/jbicommon/descriptor/ComponentDescription/getBootstrapClassLoaderDelegation()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/objectweb/petals/jbi/component/lifecycle/Installer/createClassLoader(java.lang.String,java.util.List,boolean,java.util.List)|",
+      "|java+method:///org/objectweb/petals/common/descriptor/ComponentDescription/getBootstrapClassLoaderDelegation()|",
+      "|java+method:///org/objectweb/petals/common/descriptor/JBIDescriptor/isParentFirst(java.lang.String)|",
+      "|java+method:///org/objectweb/petals/common/descriptor/ComponentDescription/getBootstrapClassPath()|",
+      "|java+method:///org/objectweb/petals/util/LoggingUtil/call()|"
+    ],
+    "affectedLib": "org.objectweb.petals:petals-common:1.4.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.objectweb.petals:petals-kernel:1.3-beta-2",
+    "coordinatesV2": "org.objectweb.petals:petals-kernel:1.3",
+    "caller": "|java+method:///org/objectweb/petals/jbi/management/systemstate/SystemStateServiceImpl/createServiceAssemblyNode(java.lang.String,java.lang.String,java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/objectweb/petals/common/util/XMLUtil/createNode(org.w3c.dom.Document,java.lang.String,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/objectweb/petals/tools/jbicommon/util/XMLUtil/createNode(org.w3c.dom.Document,java.lang.String,java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/objectweb/petals/common/util/XMLUtil/createNode(org.w3c.dom.Document,java.lang.String,java.lang.String%5B%5D)|"
+    ],
+    "affectedLib": "org.objectweb.petals:petals-common:1.4.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.objectweb.petals:petals-kernel:1.3-beta-2",
+    "coordinatesV2": "org.objectweb.petals:petals-kernel:1.3",
+    "caller": "|java+method:///org/objectweb/petals/jbi/messaging/MessageExchangeFactoryImpl/createExchange()|",
+    "called": "|java+method:///org/objectweb/petals/common/util/IDGenerator/getNewID()|",
+    "v1Body": [
+      "|java+method:///org/objectweb/petals/jbi/messaging/DeliveryChannelImpl/checkDeliveryChannelIsOpened()|",
+      "|java+method:///org/objectweb/petals/jbi/messaging/MessageExchangeImpl/setExchangeId(java.lang.String)|",
+      "|java+method:///org/objectweb/petals/util/LoggingUtil/call()|",
+      "|java+method:///org/objectweb/petals/jbi/messaging/MessageExchangeFactoryImpl/setDefaultMessageExchangeProperties(org.objectweb.petals.jbi.messaging.MessageExchangeImpl)|",
+      "|java+method:///org/objectweb/petals/jbi/messaging/MessageExchangeFactoryImpl/createId()|",
+      "|java+constructor:///org/objectweb/petals/jbi/messaging/MessageExchangeImpl/MessageExchangeImpl(org.objectweb.petals.jbi.registry.ConsumerEndpoint)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/objectweb/petals/jbi/messaging/DeliveryChannelImpl/checkDeliveryChannelIsOpened()|",
+      "|java+method:///org/objectweb/petals/common/util/IDGenerator/getNewID()|",
+      "|java+method:///org/objectweb/petals/util/LoggingUtil/call()|",
+      "|java+method:///org/objectweb/petals/jbi/messaging/MessageExchangeFactoryImpl/setDefaultMessageExchangeProperties(org.objectweb.petals.jbi.messaging.MessageExchangeImpl)|",
+      "|java+method:///org/objectweb/petals/jbi/messaging/MessageExchangeImpl/setExchangeId(java.lang.String)|",
+      "|java+constructor:///org/objectweb/petals/jbi/messaging/MessageExchangeImpl/MessageExchangeImpl(org.objectweb.petals.jbi.servicedesc.ConsumerEndpoint)|"
+    ],
+    "affectedLib": "org.objectweb.petals:petals-common:1.4.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.objectweb.petals:petals-kernel:1.3-beta-2",
+    "coordinatesV2": "org.objectweb.petals:petals-kernel:1.3",
+    "caller": "|java+method:///org/objectweb/petals/jbi/management/util/PackageHandler/loadDescriptor(java.io.File)|",
+    "called": "|java+constructor:///org/objectweb/petals/common/descriptor/JBIDescriptorBuilder/JBIDescriptorBuilder(java.net.URI,java.util.logging.Logger)|",
+    "v1Body": [
+      "|java+method:///org/objectweb/petals/util/LoggingUtil/start()|",
+      "|java+constructor:///java/io/File/File(java.io.File,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/objectweb/petals/tools/jbicommon/descriptor/JBIDescriptorBuilder/build()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///java/io/File/toURI()|",
+      "|java+method:///java/io/File/getAbsolutePath()|",
+      "|java+method:///org/objectweb/petals/util/LoggingUtil/end()|",
+      "|java+constructor:///org/objectweb/petals/tools/jbicommon/descriptor/JBIDescriptorBuilder/JBIDescriptorBuilder(java.net.URI,java.util.logging.Logger)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/objectweb/petals/util/LoggingUtil/error(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///org/objectweb/petals/util/LoggingUtil/error(java.lang.Object)|",
+      "|java+constructor:///org/objectweb/petals/PetalsException/PetalsException(java.lang.String)|",
+      "|java+constructor:///org/objectweb/petals/PetalsException/PetalsException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/objectweb/petals/util/LoggingUtil/start()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/objectweb/petals/common/descriptor/JBIDescriptorBuilder/build()|",
+      "|java+method:///java/io/File/toURI()|",
+      "|java+method:///java/io/File/getAbsolutePath()|",
+      "|java+method:///org/objectweb/petals/util/LoggingUtil/end()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/io/File/File(java.io.File,java.lang.String)|",
+      "|java+constructor:///org/objectweb/petals/common/descriptor/JBIDescriptorBuilder/JBIDescriptorBuilder(java.net.URI,java.util.logging.Logger)|",
+      "|java+method:///org/objectweb/petals/util/LoggingUtil/error(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///org/objectweb/petals/util/LoggingUtil/error(java.lang.Object)|",
+      "|java+constructor:///org/objectweb/petals/PetalsException/PetalsException(java.lang.String)|",
+      "|java+constructor:///org/objectweb/petals/PetalsException/PetalsException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.objectweb.petals:petals-common:1.4.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.objectweb.petals:petals-kernel:1.3-beta-2",
+    "coordinatesV2": "org.objectweb.petals:petals-kernel:1.3",
+    "caller": "|java+method:///org/objectweb/petals/jbi/management/task/deployment/deploy/SACheckPackageTask/checkTargetComponentAndZip(java.lang.String,java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/objectweb/petals/common/util/StringHelper/isNullOrEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/objectweb/petals/tools/jbicommon/util/StringHelper/isNullOrEmpty(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/objectweb/petals/util/LoggingUtil/error(java.lang.Object)|",
+      "|java+constructor:///org/objectweb/petals/PetalsException/PetalsException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/objectweb/petals/common/util/StringHelper/isNullOrEmpty(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/objectweb/petals/util/LoggingUtil/error(java.lang.Object)|",
+      "|java+constructor:///org/objectweb/petals/PetalsException/PetalsException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.objectweb.petals:petals-common:1.4.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.objectweb.petals:petals-kernel:1.3-beta-2",
+    "coordinatesV2": "org.objectweb.petals:petals-kernel:1.3",
+    "caller": "|java+method:///org/objectweb/petals/jbi/management/task/installation/InstallationUtils/checkClassPathElements(java.io.File,java.util.List)|",
+    "called": "|java+method:///org/objectweb/petals/common/util/StringHelper/isNullOrEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/objectweb/petals/tools/jbicommon/util/StringHelper/isNullOrEmpty(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/objectweb/petals/jbi/management/task/installation/InstallationUtils/hasEntry(java.io.File,java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///org/objectweb/petals/PetalsException/PetalsException(java.lang.String)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/objectweb/petals/common/util/StringHelper/isNullOrEmpty(java.lang.String)|",
+      "|java+method:///org/objectweb/petals/jbi/management/task/installation/InstallationUtils/hasEntry(java.io.File,java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///org/objectweb/petals/PetalsException/PetalsException(java.lang.String)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.objectweb.petals:petals-common:1.4.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.objectweb.petals:petals-kernel:1.3-beta-2",
+    "coordinatesV2": "org.objectweb.petals:petals-kernel:1.3",
+    "caller": "|java+method:///org/objectweb/petals/jbi/management/systemstate/SystemStateServiceImpl/getServiceAssembliesNode()|",
+    "called": "|java+method:///org/objectweb/petals/common/util/XMLUtil/getNode(org.w3c.dom.Document,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/objectweb/petals/tools/jbicommon/util/XMLUtil/getNode(org.w3c.dom.Document,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/objectweb/petals/common/util/XMLUtil/getNode(org.w3c.dom.Document,java.lang.String)|"
+    ],
+    "affectedLib": "org.objectweb.petals:petals-common:1.4.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.objectweb.petals:petals-kernel:1.3-beta-2",
+    "coordinatesV2": "org.objectweb.petals:petals-kernel:1.3",
+    "caller": "|java+method:///org/objectweb/petals/jbi/management/admin/AdminServiceImpl/getServiceDescription(java.lang.String,javax.jbi.servicedesc.ServiceEndpoint)|",
+    "called": "|java+method:///org/objectweb/petals/common/util/XMLUtil/createStringFromDOMDocument(org.w3c.dom.Node)|",
+    "v1Body": [
+      "|java+method:///org/objectweb/petals/jbi/component/lifecycle/ComponentLifeCycle/getComponent()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/objectweb/petals/util/LoggingUtil/call()|",
+      "|java+method:///org/objectweb/petals/util/LoggingUtil/error(java.lang.Object)|",
+      "|java+method:///javax/jbi/component/Component/getServiceDescription(javax.jbi.servicedesc.ServiceEndpoint)|",
+      "|java+method:///org/objectweb/petals/jbi/management/admin/AdminServiceImpl/getComponentLifeCycleByName(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/objectweb/petals/tools/jbicommon/util/XMLUtil/createStringFromDOMDocument(org.w3c.dom.Node)|",
+      "|java+constructor:///org/objectweb/petals/PetalsException/PetalsException(java.lang.String)|",
+      "|java+constructor:///org/objectweb/petals/PetalsException/PetalsException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/objectweb/petals/common/util/XMLUtil/createStringFromDOMDocument(org.w3c.dom.Node)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/objectweb/petals/jbi/component/lifecycle/ComponentLifeCycle/getComponent()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/objectweb/petals/util/LoggingUtil/call()|",
+      "|java+method:///org/objectweb/petals/util/LoggingUtil/error(java.lang.Object)|",
+      "|java+method:///javax/jbi/component/Component/getServiceDescription(javax.jbi.servicedesc.ServiceEndpoint)|",
+      "|java+method:///org/objectweb/petals/jbi/management/admin/AdminServiceImpl/getComponentLifeCycleByName(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/objectweb/petals/PetalsException/PetalsException(java.lang.String)|",
+      "|java+constructor:///org/objectweb/petals/PetalsException/PetalsException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.objectweb.petals:petals-common:1.4.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.objectweb.petals:petals-kernel:1.3-beta-2",
+    "coordinatesV2": "org.objectweb.petals:petals-kernel:1.3",
+    "caller": "|java+method:///org/objectweb/petals/jbi/management/systemstate/SystemStateServiceImpl/createSharedLibrary(org.w3c.dom.Node)|",
+    "called": "|java+method:///org/objectweb/petals/common/util/XMLUtil/getAttributeValue(org.w3c.dom.Node,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/objectweb/petals/tools/jbicommon/util/XMLUtil/getAttributeValue(org.w3c.dom.Node,java.lang.String)|",
+      "|java+constructor:///org/objectweb/petals/jbi/management/systemstate/SharedLibraryState/SharedLibraryState(java.lang.String,java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/objectweb/petals/common/util/XMLUtil/getAttributeValue(org.w3c.dom.Node,java.lang.String)|",
+      "|java+constructor:///org/objectweb/petals/jbi/management/systemstate/SharedLibraryState/SharedLibraryState(java.lang.String,java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.objectweb.petals:petals-common:1.4.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.objectweb.petals:petals-kernel:1.3-beta-2",
+    "coordinatesV2": "org.objectweb.petals:petals-kernel:1.3",
+    "caller": "|java+method:///org/objectweb/petals/jbi/management/util/PackageHandler/loadDescriptor(java.net.URI)|",
+    "called": "|java+constructor:///org/objectweb/petals/common/descriptor/JBIDescriptorBuilder/JBIDescriptorBuilder(java.net.URI,java.util.logging.Logger)|",
+    "v1Body": [
+      "|java+method:///org/objectweb/petals/util/LoggingUtil/start()|",
+      "|java+method:///java/net/URI/toString()|",
+      "|java+method:///org/objectweb/petals/tools/jbicommon/descriptor/JBIDescriptorBuilder/build()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/objectweb/petals/util/LoggingUtil/end()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/objectweb/petals/util/ZipUtil/openZipFile(java.net.URI)|",
+      "|java+method:///org/objectweb/petals/util/ZipUtil/getEntryAsTemp(java.util.zip.ZipFile,java.lang.String)|",
+      "|java+method:///java/net/URI/getPath()|",
+      "|java+method:///java/util/zip/ZipFile/close()|",
+      "|java+method:///java/io/File/toURI()|",
+      "|java+method:///org/objectweb/petals/util/LoggingUtil/error(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///org/objectweb/petals/util/LoggingUtil/error(java.lang.Object)|",
+      "|java+constructor:///org/objectweb/petals/PetalsException/PetalsException(java.lang.String)|",
+      "|java+constructor:///org/objectweb/petals/PetalsException/PetalsException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///org/objectweb/petals/tools/jbicommon/descriptor/JBIDescriptorBuilder/JBIDescriptorBuilder(java.net.URI,java.util.logging.Logger)|",
+      "|java+method:///java/io/File/delete()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/objectweb/petals/util/LoggingUtil/start()|",
+      "|java+constructor:///org/objectweb/petals/common/descriptor/JBIDescriptorBuilder/JBIDescriptorBuilder(java.net.URI,java.util.logging.Logger)|",
+      "|java+method:///java/net/URI/toString()|",
+      "|java+constructor:///org/objectweb/petals/PetalsException/PetalsException(java.lang.Throwable)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/objectweb/petals/util/LoggingUtil/error(java.lang.Object)|",
+      "|java+method:///org/objectweb/petals/util/LoggingUtil/end()|",
+      "|java+method:///java/io/File/delete()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/objectweb/petals/util/ZipUtil/openZipFile(java.net.URI)|",
+      "|java+method:///org/objectweb/petals/util/ZipUtil/getEntryAsTemp(java.util.zip.ZipFile,java.lang.String)|",
+      "|java+method:///java/net/URI/getPath()|",
+      "|java+method:///org/objectweb/petals/common/descriptor/JBIDescriptorBuilder/build()|",
+      "|java+method:///java/util/zip/ZipFile/close()|",
+      "|java+method:///java/io/File/toURI()|",
+      "|java+constructor:///org/objectweb/petals/PetalsException/PetalsException(java.lang.String)|",
+      "|java+constructor:///org/objectweb/petals/PetalsException/PetalsException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.objectweb.petals:petals-common:1.4.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.objectweb.petals:petals-kernel:1.3-beta-2",
+    "coordinatesV2": "org.objectweb.petals:petals-kernel:1.3",
+    "caller": "|java+method:///org/objectweb/petals/jbi/management/systemstate/SystemStateServiceImpl/createComponentNode(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/objectweb/petals/common/util/XMLUtil/createNode(org.w3c.dom.Document,java.lang.String,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/objectweb/petals/tools/jbicommon/util/XMLUtil/createNode(org.w3c.dom.Document,java.lang.String,java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/objectweb/petals/common/util/XMLUtil/createNode(org.w3c.dom.Document,java.lang.String,java.lang.String%5B%5D)|"
+    ],
+    "affectedLib": "org.objectweb.petals:petals-common:1.4.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.objectweb.petals:petals-kernel:1.3-beta-2",
+    "coordinatesV2": "org.objectweb.petals:petals-kernel:1.3",
+    "caller": "|java+method:///org/objectweb/petals/jbi/management/systemstate/SystemStateServiceImpl/createComponent(org.w3c.dom.Node)|",
+    "called": "|java+method:///org/objectweb/petals/common/util/XMLUtil/getAttributeValue(org.w3c.dom.Node,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/objectweb/petals/tools/jbicommon/util/XMLUtil/getAttributeValue(org.w3c.dom.Node,java.lang.String)|",
+      "|java+constructor:///org/objectweb/petals/jbi/management/systemstate/ComponentState/ComponentState(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/objectweb/petals/common/util/XMLUtil/getAttributeValue(org.w3c.dom.Node,java.lang.String)|",
+      "|java+constructor:///org/objectweb/petals/jbi/management/systemstate/ComponentState/ComponentState(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.objectweb.petals:petals-common:1.4.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.objectweb.petals:petals-kernel:1.3-beta-2",
+    "coordinatesV2": "org.objectweb.petals:petals-kernel:1.3",
+    "caller": "|java+method:///org/objectweb/petals/jbi/management/systemstate/SystemStateServiceImpl/createSharedLibraryNode(java.lang.String,java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/objectweb/petals/common/util/XMLUtil/createNode(org.w3c.dom.Document,java.lang.String,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/objectweb/petals/tools/jbicommon/util/XMLUtil/createNode(org.w3c.dom.Document,java.lang.String,java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/objectweb/petals/common/util/XMLUtil/createNode(org.w3c.dom.Document,java.lang.String,java.lang.String%5B%5D)|"
+    ],
+    "affectedLib": "org.objectweb.petals:petals-common:1.4.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.objectweb.petals:petals-kernel:1.3-beta-2",
+    "coordinatesV2": "org.objectweb.petals:petals-kernel:1.3",
+    "caller": "|java+method:///org/objectweb/petals/jbi/management/systemstate/SystemStateServiceImpl/getComponentsNode()|",
+    "called": "|java+method:///org/objectweb/petals/common/util/XMLUtil/getNode(org.w3c.dom.Document,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/objectweb/petals/tools/jbicommon/util/XMLUtil/getNode(org.w3c.dom.Document,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/objectweb/petals/common/util/XMLUtil/getNode(org.w3c.dom.Document,java.lang.String)|"
+    ],
+    "affectedLib": "org.objectweb.petals:petals-common:1.4.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.objectweb.petals:petals-kernel:1.3-beta-2",
+    "coordinatesV2": "org.objectweb.petals:petals-kernel:1.3",
+    "caller": "|java+method:///org/objectweb/petals/jbi/management/systemstate/ServiceAssemblyState/equals(java.lang.Object)|",
+    "called": "|java+method:///org/objectweb/petals/common/util/StringHelper/equal(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/objectweb/petals/tools/jbicommon/util/StringHelper/equal(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/objectweb/petals/common/util/StringHelper/equal(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.objectweb.petals:petals-common:1.4.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.objectweb.petals:petals-kernel:1.3-beta-2",
+    "coordinatesV2": "org.objectweb.petals:petals-kernel:1.3",
+    "caller": "|java+method:///org/objectweb/petals/jbi/management/systemstate/SystemStateServiceImpl/getNode(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/objectweb/petals/common/util/XMLUtil/getNode(org.w3c.dom.Document,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/objectweb/petals/tools/jbicommon/util/XMLUtil/getNode(org.w3c.dom.Document,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/objectweb/petals/common/util/XMLUtil/getNode(org.w3c.dom.Document,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.objectweb.petals:petals-common:1.4.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.objectweb.petals:petals-kernel:1.3-beta-2",
+    "coordinatesV2": "org.objectweb.petals:petals-kernel:1.3",
+    "caller": "|java+method:///org/objectweb/petals/jbi/management/task/deployment/deploy/SACheckPackageTask/checkSUIdentifier(java.util.List,java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/objectweb/petals/common/util/StringHelper/isNullOrEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/objectweb/petals/tools/jbicommon/util/StringHelper/isNullOrEmpty(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/objectweb/petals/util/LoggingUtil/error(java.lang.Object)|",
+      "|java+constructor:///org/objectweb/petals/PetalsException/PetalsException(java.lang.String)|",
+      "|java+method:///java/util/List/contains(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/objectweb/petals/common/util/StringHelper/isNullOrEmpty(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/objectweb/petals/util/LoggingUtil/error(java.lang.Object)|",
+      "|java+constructor:///org/objectweb/petals/PetalsException/PetalsException(java.lang.String)|",
+      "|java+method:///java/util/List/contains(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.objectweb.petals:petals-common:1.4.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.objectweb.petals:petals-kernel:1.3-beta-2",
+    "coordinatesV2": "org.objectweb.petals:petals-kernel:1.3",
+    "caller": "|java+method:///org/objectweb/petals/jbi/component/lifecycle/Installer/createComponentClassloader()|",
+    "called": "|java+method:///org/objectweb/petals/common/descriptor/JBIDescriptor/isParentFirst(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/objectweb/petals/jbi/component/context/InstallationContextImpl/InstallationContextImpl(org.objectweb.petals.tools.jbicommon.descriptor.ComponentDescription,javax.jbi.component.ComponentContext,boolean)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/objectweb/petals/jbi/component/lifecycle/Installer/createClassLoader(java.lang.String,java.util.List,boolean,java.util.List)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/objectweb/petals/tools/jbicommon/descriptor/SharedLibraryList/getName()|",
+      "|java+method:///org/objectweb/petals/tools/jbicommon/descriptor/JBIDescriptor/isParentFirst(java.lang.String)|",
+      "|java+method:///org/objectweb/petals/tools/jbicommon/descriptor/ComponentDescription/getComponentClassLoaderDelegation()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/objectweb/petals/util/LoggingUtil/call()|",
+      "|java+method:///org/objectweb/petals/tools/jbicommon/descriptor/ComponentDescription/getSharedLibraryList()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///javax/jbi/component/InstallationContext/getClassPathElements()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/objectweb/petals/common/descriptor/JBIDescriptor/isParentFirst(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///org/objectweb/petals/jbi/component/context/InstallationContextImpl/InstallationContextImpl(org.objectweb.petals.common.descriptor.ComponentDescription,javax.jbi.component.ComponentContext,boolean)|",
+      "|java+method:///org/objectweb/petals/common/descriptor/ComponentDescription/getSharedLibraryList()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/objectweb/petals/util/LoggingUtil/call()|",
+      "|java+method:///org/objectweb/petals/common/descriptor/ComponentDescription/getComponentClassLoaderDelegation()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/objectweb/petals/jbi/component/lifecycle/Installer/createClassLoader(java.lang.String,java.util.List,boolean,java.util.List)|",
+      "|java+method:///org/objectweb/petals/common/descriptor/SharedLibraryList/getName()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///javax/jbi/component/InstallationContext/getClassPathElements()|"
+    ],
+    "affectedLib": "org.objectweb.petals:petals-common:1.4.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.objectweb.petals:petals-kernel:1.3-beta-2",
+    "coordinatesV2": "org.objectweb.petals:petals-kernel:1.3",
+    "caller": "|java+method:///org/objectweb/petals/jbi/management/systemstate/ComponentState/equals(java.lang.Object)|",
+    "called": "|java+method:///org/objectweb/petals/common/util/StringHelper/equal(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/objectweb/petals/tools/jbicommon/util/StringHelper/equal(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/objectweb/petals/common/util/StringHelper/equal(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.objectweb.petals:petals-common:1.4.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.objectweb.petals:petals-kernel:1.3-beta-2",
+    "coordinatesV2": "org.objectweb.petals:petals-kernel:1.3",
+    "caller": "|java+method:///org/objectweb/petals/jbi/management/systemstate/SystemStateServiceImpl/getSharedLibrariesNode()|",
+    "called": "|java+method:///org/objectweb/petals/common/util/XMLUtil/getNode(org.w3c.dom.Document,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/objectweb/petals/tools/jbicommon/util/XMLUtil/getNode(org.w3c.dom.Document,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/objectweb/petals/common/util/XMLUtil/getNode(org.w3c.dom.Document,java.lang.String)|"
+    ],
+    "affectedLib": "org.objectweb.petals:petals-common:1.4.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.objectweb.petals:petals-kernel:1.3-beta-2",
+    "coordinatesV2": "org.objectweb.petals:petals-kernel:1.3",
+    "caller": "|java+method:///org/objectweb/petals/jbi/management/util/PackageHandler/loadDescriptor(java.lang.String,org.objectweb.petals.repository.RepositoryServiceImpl$EntityType)|",
+    "called": "|java+constructor:///org/objectweb/petals/common/descriptor/JBIDescriptorBuilder/JBIDescriptorBuilder(java.net.URI,java.util.logging.Logger)|",
+    "v1Body": [
+      "|java+method:///org/objectweb/petals/repository/RepositoryService/getSharedLibInstallRoot(java.lang.String)|",
+      "|java+method:///org/objectweb/petals/util/LoggingUtil/start()|",
+      "|java+method:///org/objectweb/petals/jbi/management/util/PackageHandler/$SWITCH_TABLE$org$objectweb$petals$repository$RepositoryServiceImpl$EntityType()|",
+      "|java+method:///org/objectweb/petals/repository/RepositoryService/getServiceAssemblyInstallRoot(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/objectweb/petals/tools/jbicommon/descriptor/JBIDescriptorBuilder/build()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///java/io/File/toURI()|",
+      "|java+method:///org/objectweb/petals/repository/RepositoryServiceImpl$EntityType/ordinal()|",
+      "|java+method:///org/objectweb/petals/util/LoggingUtil/end()|",
+      "|java+constructor:///org/objectweb/petals/tools/jbicommon/descriptor/JBIDescriptorBuilder/JBIDescriptorBuilder(java.net.URI,java.util.logging.Logger)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/io/File/File(java.io.File,java.lang.String)|",
+      "|java+method:///org/objectweb/petals/repository/RepositoryService/getComponentInstallRoot(java.lang.String)|",
+      "|java+method:///org/objectweb/petals/util/LoggingUtil/error(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///org/objectweb/petals/util/LoggingUtil/error(java.lang.Object)|",
+      "|java+constructor:///org/objectweb/petals/PetalsException/PetalsException(java.lang.String)|",
+      "|java+constructor:///org/objectweb/petals/PetalsException/PetalsException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/objectweb/petals/repository/RepositoryService/getSharedLibInstallRoot(java.lang.String)|",
+      "|java+method:///org/objectweb/petals/util/LoggingUtil/start()|",
+      "|java+method:///org/objectweb/petals/jbi/management/util/PackageHandler/$SWITCH_TABLE$org$objectweb$petals$repository$RepositoryServiceImpl$EntityType()|",
+      "|java+method:///org/objectweb/petals/repository/RepositoryService/getServiceAssemblyInstallRoot(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/objectweb/petals/common/descriptor/JBIDescriptorBuilder/build()|",
+      "|java+method:///java/io/File/toURI()|",
+      "|java+method:///org/objectweb/petals/repository/RepositoryServiceImpl$EntityType/ordinal()|",
+      "|java+method:///org/objectweb/petals/util/LoggingUtil/end()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/io/File/File(java.io.File,java.lang.String)|",
+      "|java+method:///org/objectweb/petals/repository/RepositoryService/getComponentInstallRoot(java.lang.String)|",
+      "|java+constructor:///org/objectweb/petals/common/descriptor/JBIDescriptorBuilder/JBIDescriptorBuilder(java.net.URI,java.util.logging.Logger)|",
+      "|java+method:///org/objectweb/petals/util/LoggingUtil/error(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///org/objectweb/petals/util/LoggingUtil/error(java.lang.Object)|",
+      "|java+constructor:///org/objectweb/petals/PetalsException/PetalsException(java.lang.String)|",
+      "|java+constructor:///org/objectweb/petals/PetalsException/PetalsException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.objectweb.petals:petals-common:1.4.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.objectweb.petals:petals-kernel:1.3-beta-2",
+    "coordinatesV2": "org.objectweb.petals:petals-kernel:1.3",
+    "caller": "|java+method:///org/objectweb/petals/jbi/management/task/deployment/deploy/SACheckPackageTask/checkConnections(java.util.List)|",
+    "called": "|java+method:///org/objectweb/petals/common/util/StringHelper/isNullOrEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/objectweb/petals/tools/jbicommon/util/StringHelper/isNullOrEmpty(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/objectweb/petals/tools/jbicommon/descriptor/Connection/getProviderEndpointName()|",
+      "|java+method:///org/objectweb/petals/tools/jbicommon/descriptor/Connection/getConsumerServiceName()|",
+      "|java+method:///org/objectweb/petals/tools/jbicommon/descriptor/Connection/getProviderServiceName()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/objectweb/petals/util/LoggingUtil/error(java.lang.Object)|",
+      "|java+constructor:///org/objectweb/petals/PetalsException/PetalsException(java.lang.String)|",
+      "|java+method:///javax/xml/namespace/QName/getLocalPart()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/objectweb/petals/tools/jbicommon/descriptor/Connection/getConsumerInterfaceName()|",
+      "|java+method:///org/objectweb/petals/tools/jbicommon/descriptor/Connection/getConsumerEndpointName()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/objectweb/petals/common/descriptor/Connection/getConsumerServiceName()|",
+      "|java+method:///org/objectweb/petals/common/descriptor/Connection/getProviderServiceName()|",
+      "|java+method:///org/objectweb/petals/common/util/StringHelper/isNullOrEmpty(java.lang.String)|",
+      "|java+method:///org/objectweb/petals/common/descriptor/Connection/getProviderEndpointName()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/objectweb/petals/common/descriptor/Connection/getConsumerEndpointName()|",
+      "|java+method:///org/objectweb/petals/util/LoggingUtil/error(java.lang.Object)|",
+      "|java+constructor:///org/objectweb/petals/PetalsException/PetalsException(java.lang.String)|",
+      "|java+method:///javax/xml/namespace/QName/getLocalPart()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/objectweb/petals/common/descriptor/Connection/getConsumerInterfaceName()|"
+    ],
+    "affectedLib": "org.objectweb.petals:petals-common:1.4.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.objectweb.petals:petals-kernel:1.3-beta-2",
+    "coordinatesV2": "org.objectweb.petals:petals-kernel:1.3",
+    "caller": "|java+method:///org/objectweb/petals/jbi/management/systemstate/SharedLibraryState/equals(java.lang.Object)|",
+    "called": "|java+method:///org/objectweb/petals/common/util/StringHelper/equal(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/objectweb/petals/tools/jbicommon/util/StringHelper/equal(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/objectweb/petals/common/util/StringHelper/equal(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.objectweb.petals:petals-common:1.4.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.objectweb.petals:petals-kernel:1.3-beta-2",
+    "coordinatesV2": "org.objectweb.petals:petals-kernel:1.3",
+    "caller": "|java+method:///org/objectweb/petals/jbi/management/deployment/DeploymentServiceImpl/getJbiDescriptorAsString(java.net.URI)|",
+    "called": "|java+constructor:///org/objectweb/petals/common/descriptor/JBIDescriptorBuilder/JBIDescriptorBuilder(java.net.URI,java.util.logging.Logger)|",
+    "v1Body": [
+      "|java+method:///org/objectweb/petals/tools/jbicommon/descriptor/JBIDescriptorBuilder/getJbiDescriptorAsString()|",
+      "|java+constructor:///org/objectweb/petals/tools/jbicommon/descriptor/JBIDescriptorBuilder/JBIDescriptorBuilder(java.net.URI,java.util.logging.Logger)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/objectweb/petals/common/descriptor/JBIDescriptorBuilder/JBIDescriptorBuilder(java.net.URI,java.util.logging.Logger)|",
+      "|java+method:///org/objectweb/petals/common/descriptor/JBIDescriptorBuilder/getJbiDescriptorAsString()|"
+    ],
+    "affectedLib": "org.objectweb.petals:petals-common:1.4.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.objectweb.petals:petals-kernel:1.3-beta-2",
+    "coordinatesV2": "org.objectweb.petals:petals-kernel:1.3",
+    "caller": "|java+method:///org/objectweb/petals/jbi/management/systemstate/SystemStateServiceImpl/createServiceAssembly(org.w3c.dom.Node)|",
+    "called": "|java+method:///org/objectweb/petals/common/util/XMLUtil/getAttributeValue(org.w3c.dom.Node,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/objectweb/petals/tools/jbicommon/util/XMLUtil/getAttributeValue(org.w3c.dom.Node,java.lang.String)|",
+      "|java+constructor:///org/objectweb/petals/jbi/management/systemstate/ServiceAssemblyState/ServiceAssemblyState(java.lang.String,java.lang.String,java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/objectweb/petals/common/util/XMLUtil/getAttributeValue(org.w3c.dom.Node,java.lang.String)|",
+      "|java+constructor:///org/objectweb/petals/jbi/management/systemstate/ServiceAssemblyState/ServiceAssemblyState(java.lang.String,java.lang.String,java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.objectweb.petals:petals-common:1.4.1",
+    "change": "UPDATED"
+  }
+]

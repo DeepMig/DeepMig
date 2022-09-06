@@ -1,0 +1,56 @@
+[
+  {
+    "coordinatesV1": "org.codehaus.sonar:sonar-commons:1.3RC1",
+    "coordinatesV2": "org.codehaus.sonar:sonar-commons:1.1-beta1",
+    "caller": "|java+method:///ch/hortis/sonar/model/Metric/hashCode()|",
+    "called": "|java+constructor:///org/apache/commons/lang/builder/HashCodeBuilder/HashCodeBuilder(int,int)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/commons/lang/builder/HashCodeBuilder/HashCodeBuilder(int,int)|",
+      "|java+method:///org/apache/commons/lang/builder/HashCodeBuilder/append(java.lang.Object)|",
+      "|java+method:///org/apache/commons/lang/builder/HashCodeBuilder/toHashCode()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/hashCode()|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.codehaus.sonar:sonar-commons:1.3RC1",
+    "coordinatesV2": "org.codehaus.sonar:sonar-commons:1.1-beta1",
+    "caller": "|java+method:///ch/hortis/sonar/model/Snapshot/equals(java.lang.Object)|",
+    "called": "|java+method:///org/apache/commons/lang/builder/EqualsBuilder/append(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///ch/hortis/sonar/model/Snapshot/getId()|",
+      "|java+method:///org/apache/commons/lang/builder/EqualsBuilder/isEquals()|",
+      "|java+constructor:///org/apache/commons/lang/builder/EqualsBuilder/EqualsBuilder()|",
+      "|java+method:///org/apache/commons/lang/builder/EqualsBuilder/append(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///ch/hortis/sonar/model/Snapshot/getCreatedAt()|",
+      "|java+method:///org/apache/commons/lang/builder/EqualsBuilder/isEquals()|",
+      "|java+constructor:///org/apache/commons/lang/builder/EqualsBuilder/EqualsBuilder()|",
+      "|java+method:///ch/hortis/sonar/model/Snapshot/getMavenProject()|",
+      "|java+method:///org/apache/commons/lang/builder/EqualsBuilder/append(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.codehaus.sonar:sonar-commons:1.3RC1",
+    "coordinatesV2": "org.codehaus.sonar:sonar-commons:1.1-beta1",
+    "caller": "|java+method:///ch/hortis/sonar/model/Metric/equals(java.lang.Object)|",
+    "called": "|java+method:///org/apache/commons/lang/builder/EqualsBuilder/append(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/builder/EqualsBuilder/isEquals()|",
+      "|java+constructor:///org/apache/commons/lang/builder/EqualsBuilder/EqualsBuilder()|",
+      "|java+method:///org/apache/commons/lang/builder/EqualsBuilder/append(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///ch/hortis/sonar/model/Metric/getName()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.3",
+    "change": "REMOVED"
+  }
+]

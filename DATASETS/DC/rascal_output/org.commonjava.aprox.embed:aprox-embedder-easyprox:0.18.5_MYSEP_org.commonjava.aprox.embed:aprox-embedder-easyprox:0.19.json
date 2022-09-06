@@ -1,0 +1,340 @@
+[
+  {
+    "coordinatesV1": "org.commonjava.aprox.embed:aprox-embedder-easyprox:0.19",
+    "coordinatesV2": "org.commonjava.aprox.embed:aprox-embedder-easyprox:0.18.5",
+    "caller": "|java+method:///org/commonjava/aprox/subsys/maven/MavenComponentManager/getComponent(java.lang.Class)|",
+    "called": "|java+method:///org/codehaus/plexus/component/repository/exception/ComponentLookupException/getMessage()|",
+    "v1Body": [
+      "|java+method:///org/codehaus/plexus/component/repository/exception/ComponentLookupException/getMessage()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/apache/maven/mae/internal/container/MAEContainer/lookup(java.lang.Class)|",
+      "|java+method:///org/commonjava/aprox/subsys/maven/plogger/Log4JLoggerManager/getLoggerForComponent(java.lang.String)|",
+      "|java+method:///org/codehaus/plexus/logging/LogEnabled/enableLogging(org.codehaus.plexus.logging.Logger)|",
+      "|java+constructor:///org/commonjava/aprox/subsys/maven/MavenComponentException/MavenComponentException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/commonjava/aprox/subsys/maven/plogger/Log4JLoggerManager/getLoggerForComponent(java.lang.String)|",
+      "|java+method:///org/codehaus/plexus/component/repository/exception/ComponentLookupException/getMessage()|",
+      "|java+method:///org/codehaus/plexus/PlexusContainer/lookup(java.lang.Class)|",
+      "|java+method:///org/codehaus/plexus/logging/LogEnabled/enableLogging(org.codehaus.plexus.logging.Logger)|",
+      "|java+constructor:///org/commonjava/aprox/subsys/maven/MavenComponentException/MavenComponentException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "org.sonatype.sisu:sisu-inject-plexus:2.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.aprox.embed:aprox-embedder-easyprox:0.19",
+    "coordinatesV2": "org.commonjava.aprox.embed:aprox-embedder-easyprox:0.18.5",
+    "caller": "|java+method:///org/commonjava/aprox/subsys/maven/MavenComponentManager/getComponent(java.lang.Class,java.lang.String)|",
+    "called": "|java+method:///org/codehaus/plexus/component/repository/exception/ComponentLookupException/getMessage()|",
+    "v1Body": [
+      "|java+method:///org/apache/maven/mae/internal/container/MAEContainer/lookup(java.lang.Class,java.lang.String)|",
+      "|java+method:///org/codehaus/plexus/component/repository/exception/ComponentLookupException/getMessage()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/commonjava/aprox/subsys/maven/plogger/Log4JLoggerManager/getLoggerForComponent(java.lang.String,java.lang.String)|",
+      "|java+method:///org/codehaus/plexus/logging/LogEnabled/enableLogging(org.codehaus.plexus.logging.Logger)|",
+      "|java+constructor:///org/commonjava/aprox/subsys/maven/MavenComponentException/MavenComponentException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/codehaus/plexus/PlexusContainer/lookup(java.lang.Class,java.lang.String)|",
+      "|java+method:///org/codehaus/plexus/component/repository/exception/ComponentLookupException/getMessage()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/commonjava/aprox/subsys/maven/plogger/Log4JLoggerManager/getLoggerForComponent(java.lang.String,java.lang.String)|",
+      "|java+method:///org/codehaus/plexus/logging/LogEnabled/enableLogging(org.codehaus.plexus.logging.Logger)|",
+      "|java+constructor:///org/commonjava/aprox/subsys/maven/MavenComponentException/MavenComponentException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "org.sonatype.sisu:sisu-inject-plexus:2.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.aprox.embed:aprox-embedder-easyprox:0.19",
+    "coordinatesV2": "org.commonjava.aprox.embed:aprox-embedder-easyprox:0.18.5",
+    "caller": "|java+method:///org/commonjava/aprox/subsys/maven/MavenComponentManager/startMAE()|",
+    "called": "|java+constructor:///org/apache/maven/mae/conf/MAEConfiguration/MAEConfiguration()|",
+    "v1Body": [
+      "|java+method:///org/apache/maven/mae/internal/container/ComponentSelector/setSelection(java.lang.Class,java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/apache/maven/mae/internal/container/ComponentSelector/ComponentSelector()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/maven/mae/internal/container/MAEContainer/setLoggerManager(org.codehaus.plexus.logging.LoggerManager)|",
+      "|java+method:///org/apache/maven/mae/boot/embed/MAEEmbedderBuilder/withConfiguration(org.apache.maven.mae.conf.MAEConfiguration)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/maven/mae/conf/MAEConfiguration/withComponentSelections(org.apache.maven.mae.internal.container.ComponentSelector)|",
+      "|java+method:///org/apache/maven/mae/internal/container/ComponentSelector/setSelection(java.lang.Class,java.lang.String)|",
+      "|java+method:///org/commonjava/aprox/subsys/maven/MavenComponentDefinitions/iterator()|",
+      "|java+method:///org/apache/maven/mae/conf/MAEConfiguration/withLibrary(org.apache.maven.mae.conf.MAELibrary)|",
+      "|java+method:///javax/enterprise/inject/Instance/iterator()|",
+      "|java+constructor:///org/apache/maven/mae/conf/MAEConfiguration/MAEConfiguration()|",
+      "|java+method:///org/commonjava/aprox/subsys/maven/MavenComponentDefinition/getOverriddenHint()|",
+      "|java+method:///org/commonjava/aprox/subsys/maven/MavenComponentDefinition/getComponentClass()|",
+      "|java+constructor:///org/commonjava/aprox/subsys/maven/plogger/Log4JLoggerManager/Log4JLoggerManager()|",
+      "|java+constructor:///org/apache/maven/mae/boot/embed/MAEEmbedderBuilder/MAEEmbedderBuilder()|",
+      "|java+method:///org/commonjava/aprox/subsys/maven/MavenComponentDefinition/getHint()|",
+      "|java+constructor:///org/apache/maven/mae/conf/CoreLibrary/CoreLibrary()|",
+      "|java+method:///org/apache/maven/mae/boot/embed/MAEEmbedderBuilder/container()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///org/commonjava/aprox/subsys/maven/plogger/Log4JLoggerManager/Log4JLoggerManager()|",
+      "|java+constructor:///org/codehaus/plexus/DefaultPlexusContainer/DefaultPlexusContainer(org.codehaus.plexus.ContainerConfiguration)|",
+      "|java+constructor:///org/codehaus/plexus/DefaultContainerConfiguration/DefaultContainerConfiguration()|",
+      "|java+method:///org/codehaus/plexus/PlexusContainerException/getMessage()|"
+    ],
+    "affectedLib": "org.apache.maven.mae:mae-api:1.0-alpha-1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.aprox.embed:aprox-embedder-easyprox:0.19",
+    "coordinatesV2": "org.commonjava.aprox.embed:aprox-embedder-easyprox:0.18.5",
+    "caller": "|java+method:///org/commonjava/aprox/subsys/maven/MavenComponentManager/getComponent(java.lang.Class)|",
+    "called": "|java+method:///org/apache/maven/mae/internal/container/MAEContainer/lookup(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/codehaus/plexus/component/repository/exception/ComponentLookupException/getMessage()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/apache/maven/mae/internal/container/MAEContainer/lookup(java.lang.Class)|",
+      "|java+method:///org/commonjava/aprox/subsys/maven/plogger/Log4JLoggerManager/getLoggerForComponent(java.lang.String)|",
+      "|java+method:///org/codehaus/plexus/logging/LogEnabled/enableLogging(org.codehaus.plexus.logging.Logger)|",
+      "|java+constructor:///org/commonjava/aprox/subsys/maven/MavenComponentException/MavenComponentException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/commonjava/aprox/subsys/maven/plogger/Log4JLoggerManager/getLoggerForComponent(java.lang.String)|",
+      "|java+method:///org/codehaus/plexus/component/repository/exception/ComponentLookupException/getMessage()|",
+      "|java+method:///org/codehaus/plexus/PlexusContainer/lookup(java.lang.Class)|",
+      "|java+method:///org/codehaus/plexus/logging/LogEnabled/enableLogging(org.codehaus.plexus.logging.Logger)|",
+      "|java+constructor:///org/commonjava/aprox/subsys/maven/MavenComponentException/MavenComponentException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "org.apache.maven.mae:mae-container:1.0-alpha-1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.aprox.embed:aprox-embedder-easyprox:0.19",
+    "coordinatesV2": "org.commonjava.aprox.embed:aprox-embedder-easyprox:0.18.5",
+    "caller": "|java+method:///org/commonjava/aprox/subsys/maven/MavenComponentManager/getComponent(java.lang.Class,java.lang.String)|",
+    "called": "|java+method:///org/apache/maven/mae/internal/container/MAEContainer/lookup(java.lang.Class,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/maven/mae/internal/container/MAEContainer/lookup(java.lang.Class,java.lang.String)|",
+      "|java+method:///org/codehaus/plexus/component/repository/exception/ComponentLookupException/getMessage()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/commonjava/aprox/subsys/maven/plogger/Log4JLoggerManager/getLoggerForComponent(java.lang.String,java.lang.String)|",
+      "|java+method:///org/codehaus/plexus/logging/LogEnabled/enableLogging(org.codehaus.plexus.logging.Logger)|",
+      "|java+constructor:///org/commonjava/aprox/subsys/maven/MavenComponentException/MavenComponentException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/codehaus/plexus/PlexusContainer/lookup(java.lang.Class,java.lang.String)|",
+      "|java+method:///org/codehaus/plexus/component/repository/exception/ComponentLookupException/getMessage()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/commonjava/aprox/subsys/maven/plogger/Log4JLoggerManager/getLoggerForComponent(java.lang.String,java.lang.String)|",
+      "|java+method:///org/codehaus/plexus/logging/LogEnabled/enableLogging(org.codehaus.plexus.logging.Logger)|",
+      "|java+constructor:///org/commonjava/aprox/subsys/maven/MavenComponentException/MavenComponentException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "org.apache.maven.mae:mae-container:1.0-alpha-1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.aprox.embed:aprox-embedder-easyprox:0.19",
+    "coordinatesV2": "org.commonjava.aprox.embed:aprox-embedder-easyprox:0.18.5",
+    "caller": "|java+method:///org/commonjava/aprox/subsys/maven/MavenComponentManager/startMAE()|",
+    "called": "|java+method:///org/apache/maven/mae/boot/embed/MAEEmbedderBuilder/container()|",
+    "v1Body": [
+      "|java+method:///org/apache/maven/mae/internal/container/ComponentSelector/setSelection(java.lang.Class,java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/apache/maven/mae/internal/container/ComponentSelector/ComponentSelector()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/maven/mae/internal/container/MAEContainer/setLoggerManager(org.codehaus.plexus.logging.LoggerManager)|",
+      "|java+method:///org/apache/maven/mae/boot/embed/MAEEmbedderBuilder/withConfiguration(org.apache.maven.mae.conf.MAEConfiguration)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/maven/mae/conf/MAEConfiguration/withComponentSelections(org.apache.maven.mae.internal.container.ComponentSelector)|",
+      "|java+method:///org/apache/maven/mae/internal/container/ComponentSelector/setSelection(java.lang.Class,java.lang.String)|",
+      "|java+method:///org/commonjava/aprox/subsys/maven/MavenComponentDefinitions/iterator()|",
+      "|java+method:///org/apache/maven/mae/conf/MAEConfiguration/withLibrary(org.apache.maven.mae.conf.MAELibrary)|",
+      "|java+method:///javax/enterprise/inject/Instance/iterator()|",
+      "|java+constructor:///org/apache/maven/mae/conf/MAEConfiguration/MAEConfiguration()|",
+      "|java+method:///org/commonjava/aprox/subsys/maven/MavenComponentDefinition/getOverriddenHint()|",
+      "|java+method:///org/commonjava/aprox/subsys/maven/MavenComponentDefinition/getComponentClass()|",
+      "|java+constructor:///org/commonjava/aprox/subsys/maven/plogger/Log4JLoggerManager/Log4JLoggerManager()|",
+      "|java+constructor:///org/apache/maven/mae/boot/embed/MAEEmbedderBuilder/MAEEmbedderBuilder()|",
+      "|java+method:///org/commonjava/aprox/subsys/maven/MavenComponentDefinition/getHint()|",
+      "|java+constructor:///org/apache/maven/mae/conf/CoreLibrary/CoreLibrary()|",
+      "|java+method:///org/apache/maven/mae/boot/embed/MAEEmbedderBuilder/container()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///org/commonjava/aprox/subsys/maven/plogger/Log4JLoggerManager/Log4JLoggerManager()|",
+      "|java+constructor:///org/codehaus/plexus/DefaultPlexusContainer/DefaultPlexusContainer(org.codehaus.plexus.ContainerConfiguration)|",
+      "|java+constructor:///org/codehaus/plexus/DefaultContainerConfiguration/DefaultContainerConfiguration()|",
+      "|java+method:///org/codehaus/plexus/PlexusContainerException/getMessage()|"
+    ],
+    "affectedLib": "org.apache.maven.mae:mae-booter:1.0-alpha-1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.aprox.embed:aprox-embedder-easyprox:0.18.5",
+    "coordinatesV2": "org.commonjava.aprox.embed:aprox-embedder-easyprox:0.19",
+    "caller": "|java+method:///org/commonjava/aprox/subsys/maven/MavenComponentManager/getComponent(java.lang.Class)|",
+    "called": "|java+method:///org/codehaus/plexus/component/repository/exception/ComponentLookupException/getMessage()|",
+    "v1Body": [
+      "|java+method:///org/codehaus/plexus/component/repository/exception/ComponentLookupException/getMessage()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/apache/maven/mae/internal/container/MAEContainer/lookup(java.lang.Class)|",
+      "|java+method:///org/commonjava/aprox/subsys/maven/plogger/Log4JLoggerManager/getLoggerForComponent(java.lang.String)|",
+      "|java+method:///org/codehaus/plexus/logging/LogEnabled/enableLogging(org.codehaus.plexus.logging.Logger)|",
+      "|java+constructor:///org/commonjava/aprox/subsys/maven/MavenComponentException/MavenComponentException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/commonjava/aprox/subsys/maven/plogger/Log4JLoggerManager/getLoggerForComponent(java.lang.String)|",
+      "|java+method:///org/codehaus/plexus/component/repository/exception/ComponentLookupException/getMessage()|",
+      "|java+method:///org/codehaus/plexus/PlexusContainer/lookup(java.lang.Class)|",
+      "|java+method:///org/codehaus/plexus/logging/LogEnabled/enableLogging(org.codehaus.plexus.logging.Logger)|",
+      "|java+constructor:///org/commonjava/aprox/subsys/maven/MavenComponentException/MavenComponentException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "org.codehaus.plexus:plexus-container-default:1.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.aprox.embed:aprox-embedder-easyprox:0.18.5",
+    "coordinatesV2": "org.commonjava.aprox.embed:aprox-embedder-easyprox:0.19",
+    "caller": "|java+method:///org/commonjava/aprox/subsys/maven/MavenComponentManager/getComponent(java.lang.Class,java.lang.String)|",
+    "called": "|java+method:///org/codehaus/plexus/component/repository/exception/ComponentLookupException/getMessage()|",
+    "v1Body": [
+      "|java+method:///org/apache/maven/mae/internal/container/MAEContainer/lookup(java.lang.Class,java.lang.String)|",
+      "|java+method:///org/codehaus/plexus/component/repository/exception/ComponentLookupException/getMessage()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/commonjava/aprox/subsys/maven/plogger/Log4JLoggerManager/getLoggerForComponent(java.lang.String,java.lang.String)|",
+      "|java+method:///org/codehaus/plexus/logging/LogEnabled/enableLogging(org.codehaus.plexus.logging.Logger)|",
+      "|java+constructor:///org/commonjava/aprox/subsys/maven/MavenComponentException/MavenComponentException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/codehaus/plexus/PlexusContainer/lookup(java.lang.Class,java.lang.String)|",
+      "|java+method:///org/codehaus/plexus/component/repository/exception/ComponentLookupException/getMessage()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/commonjava/aprox/subsys/maven/plogger/Log4JLoggerManager/getLoggerForComponent(java.lang.String,java.lang.String)|",
+      "|java+method:///org/codehaus/plexus/logging/LogEnabled/enableLogging(org.codehaus.plexus.logging.Logger)|",
+      "|java+constructor:///org/commonjava/aprox/subsys/maven/MavenComponentException/MavenComponentException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "org.codehaus.plexus:plexus-container-default:1.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.aprox.embed:aprox-embedder-easyprox:0.18.5",
+    "coordinatesV2": "org.commonjava.aprox.embed:aprox-embedder-easyprox:0.19",
+    "caller": "|java+method:///org/commonjava/aprox/subsys/maven/MavenComponentManager/startMAE()|",
+    "called": "|java+constructor:///org/codehaus/plexus/DefaultContainerConfiguration/DefaultContainerConfiguration()|",
+    "v1Body": [
+      "|java+method:///org/apache/maven/mae/internal/container/ComponentSelector/setSelection(java.lang.Class,java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/apache/maven/mae/internal/container/ComponentSelector/ComponentSelector()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/maven/mae/internal/container/MAEContainer/setLoggerManager(org.codehaus.plexus.logging.LoggerManager)|",
+      "|java+method:///org/apache/maven/mae/boot/embed/MAEEmbedderBuilder/withConfiguration(org.apache.maven.mae.conf.MAEConfiguration)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/maven/mae/conf/MAEConfiguration/withComponentSelections(org.apache.maven.mae.internal.container.ComponentSelector)|",
+      "|java+method:///org/apache/maven/mae/internal/container/ComponentSelector/setSelection(java.lang.Class,java.lang.String)|",
+      "|java+method:///org/commonjava/aprox/subsys/maven/MavenComponentDefinitions/iterator()|",
+      "|java+method:///org/apache/maven/mae/conf/MAEConfiguration/withLibrary(org.apache.maven.mae.conf.MAELibrary)|",
+      "|java+method:///javax/enterprise/inject/Instance/iterator()|",
+      "|java+constructor:///org/apache/maven/mae/conf/MAEConfiguration/MAEConfiguration()|",
+      "|java+method:///org/commonjava/aprox/subsys/maven/MavenComponentDefinition/getOverriddenHint()|",
+      "|java+method:///org/commonjava/aprox/subsys/maven/MavenComponentDefinition/getComponentClass()|",
+      "|java+constructor:///org/commonjava/aprox/subsys/maven/plogger/Log4JLoggerManager/Log4JLoggerManager()|",
+      "|java+constructor:///org/apache/maven/mae/boot/embed/MAEEmbedderBuilder/MAEEmbedderBuilder()|",
+      "|java+method:///org/commonjava/aprox/subsys/maven/MavenComponentDefinition/getHint()|",
+      "|java+constructor:///org/apache/maven/mae/conf/CoreLibrary/CoreLibrary()|",
+      "|java+method:///org/apache/maven/mae/boot/embed/MAEEmbedderBuilder/container()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///org/commonjava/aprox/subsys/maven/plogger/Log4JLoggerManager/Log4JLoggerManager()|",
+      "|java+constructor:///org/codehaus/plexus/DefaultPlexusContainer/DefaultPlexusContainer(org.codehaus.plexus.ContainerConfiguration)|",
+      "|java+constructor:///org/codehaus/plexus/DefaultContainerConfiguration/DefaultContainerConfiguration()|",
+      "|java+method:///org/codehaus/plexus/PlexusContainerException/getMessage()|"
+    ],
+    "affectedLib": "org.codehaus.plexus:plexus-container-default:1.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.aprox.embed:aprox-embedder-easyprox:0.18.5",
+    "coordinatesV2": "org.commonjava.aprox.embed:aprox-embedder-easyprox:0.19",
+    "caller": "|java+constructor:///org/commonjava/aprox/subsys/http/AproxHttpConnectionManager/AproxHttpConnectionManager(boolean)|",
+    "called": "|java+constructor:///org/apache/http/impl/conn/PoolingHttpClientConnectionManager/PoolingHttpClientConnectionManager()|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///org/apache/http/impl/conn/PoolingClientConnectionManager/PoolingClientConnectionManager()|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///org/apache/http/impl/conn/PoolingHttpClientConnectionManager/PoolingHttpClientConnectionManager()|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.aprox.embed:aprox-embedder-easyprox:0.18.5",
+    "coordinatesV2": "org.commonjava.aprox.embed:aprox-embedder-easyprox:0.19",
+    "caller": "|java+method:///org/commonjava/aprox/autoprox/data/AutoProxDataManagerDecorator/checkValidity(java.lang.String)|",
+    "called": "|java+constructor:///org/apache/http/client/methods/HttpHead/HttpHead(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/http/HttpResponse/getStatusLine()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/commonjava/aprox/subsys/http/AproxHttpProvider/clearRepositoryCredentials()|",
+      "|java+method:///org/commonjava/aprox/autoprox/data/AutoProxCatalog/getRemoteValidationUrl(java.lang.String)|",
+      "|java+method:///org/commonjava/aprox/autoprox/data/AutoProxCatalog/createValidationRemote(java.lang.String)|",
+      "|java+method:///org/commonjava/aprox/autoprox/data/AutoProxRuleException/getMessage()|",
+      "|java+constructor:///org/commonjava/aprox/data/AproxDataException/AproxDataException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/aprox/subsys/http/AproxHttpProvider/getClient()|",
+      "|java+method:///org/commonjava/aprox/subsys/http/AproxHttpProvider/bindRepositoryCredentialsTo(org.commonjava.aprox.model.core.RemoteRepository,org.apache.http.HttpRequest)|",
+      "|java+method:///org/commonjava/maven/galley/util/PathUtils/normalize(java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/http/StatusLine/getStatusCode()|",
+      "|java+method:///org/commonjava/aprox/autoprox/data/AutoProxCatalog/isValidationEnabled(java.lang.String)|",
+      "|java+constructor:///org/apache/http/client/methods/HttpHead/HttpHead(java.lang.String)|",
+      "|java+method:///org/commonjava/aprox/model/core/RemoteRepository/getUrl()|",
+      "|java+method:///org/apache/http/client/HttpClient/execute(org.apache.http.client.methods.HttpUriRequest)|",
+      "|java+method:///org/commonjava/aprox/subsys/http/AproxHttpProvider/closeConnection()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/http/HttpResponse/getStatusLine()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/commonjava/aprox/autoprox/data/AutoProxCatalogManager/getRemoteValidationUrl(java.lang.String)|",
+      "|java+method:///org/commonjava/aprox/subsys/http/AproxHttpProvider/clearRepositoryCredentials()|",
+      "|java+method:///org/commonjava/aprox/autoprox/data/AutoProxRuleException/getMessage()|",
+      "|java+constructor:///org/commonjava/aprox/data/AproxDataException/AproxDataException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/aprox/subsys/http/AproxHttpProvider/getClient()|",
+      "|java+method:///org/apache/http/client/methods/HttpHead/reset()|",
+      "|java+method:///org/commonjava/aprox/subsys/http/AproxHttpProvider/bindRepositoryCredentialsTo(org.commonjava.aprox.model.core.RemoteRepository,org.apache.http.HttpRequest)|",
+      "|java+method:///org/commonjava/maven/galley/util/PathUtils/normalize(java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/http/StatusLine/getStatusCode()|",
+      "|java+constructor:///org/apache/http/client/methods/HttpHead/HttpHead(java.lang.String)|",
+      "|java+method:///org/commonjava/aprox/autoprox/data/AutoProxCatalogManager/isValidationEnabled(java.lang.String)|",
+      "|java+method:///org/commonjava/aprox/model/core/RemoteRepository/getUrl()|",
+      "|java+method:///org/apache/http/client/HttpClient/execute(org.apache.http.client.methods.HttpUriRequest)|",
+      "|java+method:///org/commonjava/aprox/subsys/http/AproxHttpProvider/closeConnection()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/commonjava/aprox/autoprox/data/AutoProxCatalogManager/createValidationRemote(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.aprox.embed:aprox-embedder-easyprox:0.18.5",
+    "coordinatesV2": "org.commonjava.aprox.embed:aprox-embedder-easyprox:0.19",
+    "caller": "|java+constructor:///org/commonjava/aprox/subsys/http/AproxHttpConnectionManager/AproxHttpConnectionManager()|",
+    "called": "|java+constructor:///org/apache/http/impl/conn/PoolingHttpClientConnectionManager/PoolingHttpClientConnectionManager()|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///org/apache/http/impl/conn/PoolingClientConnectionManager/PoolingClientConnectionManager()|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///org/apache/http/impl/conn/PoolingHttpClientConnectionManager/PoolingHttpClientConnectionManager()|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.4",
+    "change": "UPDATED"
+  }
+]

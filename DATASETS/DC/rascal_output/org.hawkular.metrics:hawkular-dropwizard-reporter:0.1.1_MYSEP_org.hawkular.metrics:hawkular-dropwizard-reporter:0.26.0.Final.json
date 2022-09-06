@@ -1,0 +1,254 @@
+[
+  {
+    "coordinatesV1": "org.hawkular.metrics:hawkular-dropwizard-reporter:0.26.0.Final",
+    "coordinatesV2": "org.hawkular.metrics:hawkular-dropwizard-reporter:0.1.1",
+    "caller": "|java+method:///org/hawkular/metrics/dropwizard/HawkularReporterBuilder/lambda$build$3()|",
+    "called": "|java+constructor:///org/hawkular/metrics/reporter/http/JdkHawkularHttpClient/JdkHawkularHttpClient(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/hawkular/metrics/reporter/http/JdkHawkularHttpClient/JdkHawkularHttpClient(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/hawkular/metrics/client/common/http/JdkHawkularHttpClient/JdkHawkularHttpClient(java.lang.String)|"
+    ],
+    "affectedLib": "org.hawkular.metrics:hawkular-dropwizard-reporter-common:0.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.hawkular.metrics:hawkular-dropwizard-reporter:0.26.0.Final",
+    "coordinatesV2": "org.hawkular.metrics:hawkular-dropwizard-reporter:0.1.1",
+    "caller": "|java+method:///org/hawkular/metrics/dropwizard/MetricsTagger/tagMetric(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/hawkular/metrics/reporter/http/HawkularJson/tagsToString(java.util.Map)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/hawkular/metrics/reporter/http/HawkularHttpClient/putTags(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Map/putAll(java.util.Map)|",
+      "|java+method:///java/util/Map/isEmpty()|",
+      "|java+method:///org/hawkular/metrics/reporter/http/HawkularJson/tagsToString(java.util.Map)|",
+      "|java+method:///java/util/Optional/map(java.util.function.Function)|",
+      "|java+constructor:///java/util/LinkedHashMap/LinkedHashMap(java.util.Map)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/hawkular/metrics/dropwizard/MetricsTagger/getTagsForMetrics(java.lang.String)|",
+      "|java+method:///java/util/Optional/orElse(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/hawkular/metrics/client/common/http/HawkularHttpClient/putTags(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///org/hawkular/metrics/client/common/http/HawkularJson/tagsToString(java.util.Map)|",
+      "|java+method:///java/util/Map/putAll(java.util.Map)|",
+      "|java+method:///java/util/Map/isEmpty()|",
+      "|java+method:///java/util/Optional/map(java.util.function.Function)|",
+      "|java+constructor:///java/util/LinkedHashMap/LinkedHashMap(java.util.Map)|",
+      "|java+method:///org/hawkular/metrics/dropwizard/MetricsTagger/getTagsForMetrics(java.lang.String)|",
+      "|java+method:///java/util/Optional/orElse(java.lang.Object)|"
+    ],
+    "affectedLib": "org.hawkular.metrics:hawkular-dropwizard-reporter-common:0.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.hawkular.metrics:hawkular-dropwizard-reporter:0.26.0.Final",
+    "coordinatesV2": "org.hawkular.metrics:hawkular-dropwizard-reporter:0.1.1",
+    "caller": "|java+method:///org/hawkular/metrics/dropwizard/MetricsTagger/tagMetric(java.lang.String,org.hawkular.metrics.dropwizard.MetricPart,java.lang.String)|",
+    "called": "|java+method:///org/hawkular/metrics/reporter/http/HawkularJson/tagsToString(java.util.Map)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/hawkular/metrics/reporter/http/HawkularHttpClient/putTags(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Map/isEmpty()|",
+      "|java+method:///org/hawkular/metrics/reporter/http/HawkularJson/tagsToString(java.util.Map)|",
+      "|java+method:///org/hawkular/metrics/dropwizard/MetricPart/getSuffix()|",
+      "|java+method:///java/util/Optional/map(java.util.function.Function)|",
+      "|java+constructor:///java/util/LinkedHashMap/LinkedHashMap(java.util.Map)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/hawkular/metrics/dropwizard/MetricPart/getMetricType()|",
+      "|java+method:///org/hawkular/metrics/dropwizard/MetricPart/getMetricNameWithSuffix(java.lang.String)|",
+      "|java+method:///java/util/Map/putAll(java.util.Map)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/hawkular/metrics/dropwizard/MetricsTagger/getTagsForMetrics(java.lang.String)|",
+      "|java+method:///java/util/Optional/orElse(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/hawkular/metrics/client/common/http/HawkularJson/tagsToString(java.util.Map)|",
+      "|java+method:///org/hawkular/metrics/dropwizard/MetricPart/getMetricType()|",
+      "|java+method:///java/util/Map/isEmpty()|",
+      "|java+method:///org/hawkular/metrics/dropwizard/MetricPart/getSuffix()|",
+      "|java+method:///java/util/Optional/map(java.util.function.Function)|",
+      "|java+constructor:///java/util/LinkedHashMap/LinkedHashMap(java.util.Map)|",
+      "|java+method:///org/hawkular/metrics/client/common/http/HawkularHttpClient/putTags(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/hawkular/metrics/dropwizard/MetricPart/getMetricNameWithSuffix(java.lang.String)|",
+      "|java+method:///java/util/Map/putAll(java.util.Map)|",
+      "|java+method:///org/hawkular/metrics/dropwizard/MetricsTagger/getTagsForMetrics(java.lang.String)|",
+      "|java+method:///java/util/Optional/orElse(java.lang.Object)|"
+    ],
+    "affectedLib": "org.hawkular.metrics:hawkular-dropwizard-reporter-common:0.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.hawkular.metrics:hawkular-dropwizard-reporter:0.26.0.Final",
+    "coordinatesV2": "org.hawkular.metrics:hawkular-dropwizard-reporter:0.1.1",
+    "caller": "|java+method:///org/hawkular/metrics/dropwizard/HawkularReporter/report(java.util.SortedMap,java.util.SortedMap,java.util.SortedMap,java.util.SortedMap,java.util.SortedMap)|",
+    "called": "|java+method:///org/hawkular/metrics/reporter/http/HawkularJson/metricsToString(java.lang.Long,java.util.Map,java.util.Map)|",
+    "v1Body": [
+      "|java+method:///org/hawkular/metrics/dropwizard/HawkularReporter/processTimers(org.hawkular.metrics.dropwizard.HawkularReporter$DataAccumulator,java.util.Map)|",
+      "|java+method:///org/hawkular/metrics/dropwizard/HawkularReporter/processHistograms(org.hawkular.metrics.dropwizard.HawkularReporter$DataAccumulator,java.util.Map)|",
+      "|java+constructor:///org/hawkular/metrics/dropwizard/HawkularReporter$DataAccumulator/HawkularReporter$DataAccumulator(org.hawkular.metrics.dropwizard.HawkularReporter,org.hawkular.metrics.dropwizard.HawkularReporter$1)|",
+      "|java+method:///org/hawkular/metrics/reporter/http/HawkularHttpClient/manageFailover()|",
+      "|java+method:///org/hawkular/metrics/dropwizard/HawkularReporter/processCounters(org.hawkular.metrics.dropwizard.HawkularReporter$DataAccumulator,java.util.Map)|",
+      "|java+method:///com/codahale/metrics/Clock/getTime()|",
+      "|java+method:///org/hawkular/metrics/dropwizard/HawkularReporter$DataAccumulator/access$200(org.hawkular.metrics.dropwizard.HawkularReporter$DataAccumulator)|",
+      "|java+method:///java/util/SortedMap/isEmpty()|",
+      "|java+method:///org/hawkular/metrics/dropwizard/HawkularReporter/processMeters(org.hawkular.metrics.dropwizard.HawkularReporter$DataAccumulator,java.util.Map)|",
+      "|java+method:///org/hawkular/metrics/reporter/http/HawkularJson/metricsToString(java.lang.Long,java.util.Map,java.util.Map)|",
+      "|java+method:///org/hawkular/metrics/reporter/http/HawkularHttpClient/postMetrics(java.lang.String)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/hawkular/metrics/dropwizard/HawkularReporter/processGauges(org.hawkular.metrics.dropwizard.HawkularReporter$DataAccumulator,java.util.Map)|",
+      "|java+method:///org/hawkular/metrics/dropwizard/HawkularReporter$DataAccumulator/access$100(org.hawkular.metrics.dropwizard.HawkularReporter$DataAccumulator)|",
+      "|java+method:///java/util/Map/isEmpty()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/hawkular/metrics/dropwizard/HawkularReporter/processTimers(org.hawkular.metrics.dropwizard.HawkularReporter$DataAccumulator,java.util.Map)|",
+      "|java+method:///org/hawkular/metrics/dropwizard/HawkularReporter/processHistograms(org.hawkular.metrics.dropwizard.HawkularReporter$DataAccumulator,java.util.Map)|",
+      "|java+constructor:///org/hawkular/metrics/dropwizard/HawkularReporter$DataAccumulator/HawkularReporter$DataAccumulator(org.hawkular.metrics.dropwizard.HawkularReporter,org.hawkular.metrics.dropwizard.HawkularReporter$1)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/hawkular/metrics/dropwizard/HawkularReporter/processCounters(org.hawkular.metrics.dropwizard.HawkularReporter$DataAccumulator,java.util.Map)|",
+      "|java+method:///com/codahale/metrics/Clock/getTime()|",
+      "|java+method:///org/hawkular/metrics/dropwizard/HawkularReporter$DataAccumulator/access$200(org.hawkular.metrics.dropwizard.HawkularReporter$DataAccumulator)|",
+      "|java+method:///org/hawkular/metrics/client/common/http/HawkularHttpClient/manageFailover()|",
+      "|java+method:///java/util/SortedMap/isEmpty()|",
+      "|java+method:///org/hawkular/metrics/client/common/http/HawkularJson/metricsToString(java.lang.Long,java.util.Map,java.util.Map)|",
+      "|java+method:///org/hawkular/metrics/dropwizard/HawkularReporter/processMeters(org.hawkular.metrics.dropwizard.HawkularReporter$DataAccumulator,java.util.Map)|",
+      "|java+method:///org/hawkular/metrics/client/common/http/HawkularHttpClient/postMetrics(java.lang.String)|",
+      "|java+method:///org/hawkular/metrics/dropwizard/HawkularReporter/processGauges(org.hawkular.metrics.dropwizard.HawkularReporter$DataAccumulator,java.util.Map)|",
+      "|java+method:///org/hawkular/metrics/dropwizard/HawkularReporter$DataAccumulator/access$100(org.hawkular.metrics.dropwizard.HawkularReporter$DataAccumulator)|",
+      "|java+method:///java/util/Map/isEmpty()|"
+    ],
+    "affectedLib": "org.hawkular.metrics:hawkular-dropwizard-reporter-common:0.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.hawkular.metrics:hawkular-dropwizard-reporter:0.1.1",
+    "coordinatesV2": "org.hawkular.metrics:hawkular-dropwizard-reporter:0.26.0.Final",
+    "caller": "|java+method:///org/hawkular/metrics/dropwizard/HawkularReporterBuilder/lambda$build$3()|",
+    "called": "|java+constructor:///org/hawkular/metrics/client/common/http/JdkHawkularHttpClient/JdkHawkularHttpClient(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/hawkular/metrics/reporter/http/JdkHawkularHttpClient/JdkHawkularHttpClient(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/hawkular/metrics/client/common/http/JdkHawkularHttpClient/JdkHawkularHttpClient(java.lang.String)|"
+    ],
+    "affectedLib": "org.hawkular.metrics:hawkular-metrics-clients-common:0.26.0.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.hawkular.metrics:hawkular-dropwizard-reporter:0.1.1",
+    "coordinatesV2": "org.hawkular.metrics:hawkular-dropwizard-reporter:0.26.0.Final",
+    "caller": "|java+method:///org/hawkular/metrics/dropwizard/MetricsTagger/tagMetric(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/hawkular/metrics/client/common/http/HawkularJson/tagsToString(java.util.Map)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/hawkular/metrics/reporter/http/HawkularHttpClient/putTags(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Map/putAll(java.util.Map)|",
+      "|java+method:///java/util/Map/isEmpty()|",
+      "|java+method:///org/hawkular/metrics/reporter/http/HawkularJson/tagsToString(java.util.Map)|",
+      "|java+method:///java/util/Optional/map(java.util.function.Function)|",
+      "|java+constructor:///java/util/LinkedHashMap/LinkedHashMap(java.util.Map)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/hawkular/metrics/dropwizard/MetricsTagger/getTagsForMetrics(java.lang.String)|",
+      "|java+method:///java/util/Optional/orElse(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/hawkular/metrics/client/common/http/HawkularHttpClient/putTags(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///org/hawkular/metrics/client/common/http/HawkularJson/tagsToString(java.util.Map)|",
+      "|java+method:///java/util/Map/putAll(java.util.Map)|",
+      "|java+method:///java/util/Map/isEmpty()|",
+      "|java+method:///java/util/Optional/map(java.util.function.Function)|",
+      "|java+constructor:///java/util/LinkedHashMap/LinkedHashMap(java.util.Map)|",
+      "|java+method:///org/hawkular/metrics/dropwizard/MetricsTagger/getTagsForMetrics(java.lang.String)|",
+      "|java+method:///java/util/Optional/orElse(java.lang.Object)|"
+    ],
+    "affectedLib": "org.hawkular.metrics:hawkular-metrics-clients-common:0.26.0.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.hawkular.metrics:hawkular-dropwizard-reporter:0.1.1",
+    "coordinatesV2": "org.hawkular.metrics:hawkular-dropwizard-reporter:0.26.0.Final",
+    "caller": "|java+method:///org/hawkular/metrics/dropwizard/MetricsTagger/tagMetric(java.lang.String,org.hawkular.metrics.dropwizard.MetricPart,java.lang.String)|",
+    "called": "|java+method:///org/hawkular/metrics/client/common/http/HawkularJson/tagsToString(java.util.Map)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/hawkular/metrics/reporter/http/HawkularHttpClient/putTags(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Map/isEmpty()|",
+      "|java+method:///org/hawkular/metrics/reporter/http/HawkularJson/tagsToString(java.util.Map)|",
+      "|java+method:///org/hawkular/metrics/dropwizard/MetricPart/getSuffix()|",
+      "|java+method:///java/util/Optional/map(java.util.function.Function)|",
+      "|java+constructor:///java/util/LinkedHashMap/LinkedHashMap(java.util.Map)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/hawkular/metrics/dropwizard/MetricPart/getMetricType()|",
+      "|java+method:///org/hawkular/metrics/dropwizard/MetricPart/getMetricNameWithSuffix(java.lang.String)|",
+      "|java+method:///java/util/Map/putAll(java.util.Map)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/hawkular/metrics/dropwizard/MetricsTagger/getTagsForMetrics(java.lang.String)|",
+      "|java+method:///java/util/Optional/orElse(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/hawkular/metrics/client/common/http/HawkularJson/tagsToString(java.util.Map)|",
+      "|java+method:///org/hawkular/metrics/dropwizard/MetricPart/getMetricType()|",
+      "|java+method:///java/util/Map/isEmpty()|",
+      "|java+method:///org/hawkular/metrics/dropwizard/MetricPart/getSuffix()|",
+      "|java+method:///java/util/Optional/map(java.util.function.Function)|",
+      "|java+constructor:///java/util/LinkedHashMap/LinkedHashMap(java.util.Map)|",
+      "|java+method:///org/hawkular/metrics/client/common/http/HawkularHttpClient/putTags(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/hawkular/metrics/dropwizard/MetricPart/getMetricNameWithSuffix(java.lang.String)|",
+      "|java+method:///java/util/Map/putAll(java.util.Map)|",
+      "|java+method:///org/hawkular/metrics/dropwizard/MetricsTagger/getTagsForMetrics(java.lang.String)|",
+      "|java+method:///java/util/Optional/orElse(java.lang.Object)|"
+    ],
+    "affectedLib": "org.hawkular.metrics:hawkular-metrics-clients-common:0.26.0.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.hawkular.metrics:hawkular-dropwizard-reporter:0.1.1",
+    "coordinatesV2": "org.hawkular.metrics:hawkular-dropwizard-reporter:0.26.0.Final",
+    "caller": "|java+method:///org/hawkular/metrics/dropwizard/HawkularReporter/report(java.util.SortedMap,java.util.SortedMap,java.util.SortedMap,java.util.SortedMap,java.util.SortedMap)|",
+    "called": "|java+method:///org/hawkular/metrics/client/common/http/HawkularJson/metricsToString(java.lang.Long,java.util.Map,java.util.Map)|",
+    "v1Body": [
+      "|java+method:///org/hawkular/metrics/dropwizard/HawkularReporter/processTimers(org.hawkular.metrics.dropwizard.HawkularReporter$DataAccumulator,java.util.Map)|",
+      "|java+method:///org/hawkular/metrics/dropwizard/HawkularReporter/processHistograms(org.hawkular.metrics.dropwizard.HawkularReporter$DataAccumulator,java.util.Map)|",
+      "|java+constructor:///org/hawkular/metrics/dropwizard/HawkularReporter$DataAccumulator/HawkularReporter$DataAccumulator(org.hawkular.metrics.dropwizard.HawkularReporter,org.hawkular.metrics.dropwizard.HawkularReporter$1)|",
+      "|java+method:///org/hawkular/metrics/reporter/http/HawkularHttpClient/manageFailover()|",
+      "|java+method:///org/hawkular/metrics/dropwizard/HawkularReporter/processCounters(org.hawkular.metrics.dropwizard.HawkularReporter$DataAccumulator,java.util.Map)|",
+      "|java+method:///com/codahale/metrics/Clock/getTime()|",
+      "|java+method:///org/hawkular/metrics/dropwizard/HawkularReporter$DataAccumulator/access$200(org.hawkular.metrics.dropwizard.HawkularReporter$DataAccumulator)|",
+      "|java+method:///java/util/SortedMap/isEmpty()|",
+      "|java+method:///org/hawkular/metrics/dropwizard/HawkularReporter/processMeters(org.hawkular.metrics.dropwizard.HawkularReporter$DataAccumulator,java.util.Map)|",
+      "|java+method:///org/hawkular/metrics/reporter/http/HawkularJson/metricsToString(java.lang.Long,java.util.Map,java.util.Map)|",
+      "|java+method:///org/hawkular/metrics/reporter/http/HawkularHttpClient/postMetrics(java.lang.String)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/hawkular/metrics/dropwizard/HawkularReporter/processGauges(org.hawkular.metrics.dropwizard.HawkularReporter$DataAccumulator,java.util.Map)|",
+      "|java+method:///org/hawkular/metrics/dropwizard/HawkularReporter$DataAccumulator/access$100(org.hawkular.metrics.dropwizard.HawkularReporter$DataAccumulator)|",
+      "|java+method:///java/util/Map/isEmpty()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/hawkular/metrics/dropwizard/HawkularReporter/processTimers(org.hawkular.metrics.dropwizard.HawkularReporter$DataAccumulator,java.util.Map)|",
+      "|java+method:///org/hawkular/metrics/dropwizard/HawkularReporter/processHistograms(org.hawkular.metrics.dropwizard.HawkularReporter$DataAccumulator,java.util.Map)|",
+      "|java+constructor:///org/hawkular/metrics/dropwizard/HawkularReporter$DataAccumulator/HawkularReporter$DataAccumulator(org.hawkular.metrics.dropwizard.HawkularReporter,org.hawkular.metrics.dropwizard.HawkularReporter$1)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/hawkular/metrics/dropwizard/HawkularReporter/processCounters(org.hawkular.metrics.dropwizard.HawkularReporter$DataAccumulator,java.util.Map)|",
+      "|java+method:///com/codahale/metrics/Clock/getTime()|",
+      "|java+method:///org/hawkular/metrics/dropwizard/HawkularReporter$DataAccumulator/access$200(org.hawkular.metrics.dropwizard.HawkularReporter$DataAccumulator)|",
+      "|java+method:///org/hawkular/metrics/client/common/http/HawkularHttpClient/manageFailover()|",
+      "|java+method:///java/util/SortedMap/isEmpty()|",
+      "|java+method:///org/hawkular/metrics/client/common/http/HawkularJson/metricsToString(java.lang.Long,java.util.Map,java.util.Map)|",
+      "|java+method:///org/hawkular/metrics/dropwizard/HawkularReporter/processMeters(org.hawkular.metrics.dropwizard.HawkularReporter$DataAccumulator,java.util.Map)|",
+      "|java+method:///org/hawkular/metrics/client/common/http/HawkularHttpClient/postMetrics(java.lang.String)|",
+      "|java+method:///org/hawkular/metrics/dropwizard/HawkularReporter/processGauges(org.hawkular.metrics.dropwizard.HawkularReporter$DataAccumulator,java.util.Map)|",
+      "|java+method:///org/hawkular/metrics/dropwizard/HawkularReporter$DataAccumulator/access$100(org.hawkular.metrics.dropwizard.HawkularReporter$DataAccumulator)|",
+      "|java+method:///java/util/Map/isEmpty()|"
+    ],
+    "affectedLib": "org.hawkular.metrics:hawkular-metrics-clients-common:0.26.0.Final",
+    "change": "ADDED"
+  }
+]

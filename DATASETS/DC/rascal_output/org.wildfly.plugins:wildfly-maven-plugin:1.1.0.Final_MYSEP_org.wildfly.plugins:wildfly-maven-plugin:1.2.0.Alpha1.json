@@ -1,0 +1,100 @@
+[
+  {
+    "coordinatesV1": "org.wildfly.plugins:wildfly-maven-plugin:1.1.0.Final",
+    "coordinatesV2": "org.wildfly.plugins:wildfly-maven-plugin:1.2.0.Alpha1",
+    "caller": "|java+method:///org/wildfly/plugin/common/AbstractServerConnection/createClient()|",
+    "called": "|java+method:///org/wildfly/security/auth/client/ElytronXmlParser/parseAuthenticationClientConfiguration(java.net.URI)|",
+    "v1Body": [
+      "|java+method:///org/wildfly/plugin/common/AbstractServerConnection/getClientConfiguration()|",
+      "|java+method:///org/jboss/as/controller/client/ModelControllerClient$Factory/create(org.jboss.as.controller.client.ModelControllerClientConfiguration)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/wildfly/plugin/common/AbstractServerConnection/getClientConfiguration()|",
+      "|java+method:///java/net/URL/toURI()|",
+      "|java+constructor:///org/wildfly/plugin/core/ContextualModelControllerClient/ContextualModelControllerClient(org.jboss.as.controller.client.ModelControllerClient,org.wildfly.common.context.Contextual)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/wildfly/security/SecurityFactory/create()|",
+      "|java+method:///org/wildfly/security/auth/client/ElytronXmlParser/parseAuthenticationClientConfiguration(java.net.URI)|",
+      "|java+method:///org/jboss/as/controller/client/ModelControllerClient$Factory/create(org.jboss.as.controller.client.ModelControllerClientConfiguration)|"
+    ],
+    "affectedLib": "org.wildfly.security:wildfly-elytron:1.1.0.Beta18",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.wildfly.plugins:wildfly-maven-plugin:1.1.0.Final",
+    "coordinatesV2": "org.wildfly.plugins:wildfly-maven-plugin:1.2.0.Alpha1",
+    "caller": "|java+method:///org/wildfly/plugin/common/AbstractServerConnection/createClient()|",
+    "called": "|java+method:///org/jboss/as/controller/client/ModelControllerClient$Factory/create(org.jboss.as.controller.client.ModelControllerClientConfiguration)|",
+    "v1Body": [
+      "|java+method:///org/wildfly/plugin/common/AbstractServerConnection/getClientConfiguration()|",
+      "|java+method:///org/jboss/as/controller/client/ModelControllerClient$Factory/create(org.jboss.as.controller.client.ModelControllerClientConfiguration)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/wildfly/plugin/common/AbstractServerConnection/getClientConfiguration()|",
+      "|java+method:///java/net/URL/toURI()|",
+      "|java+constructor:///org/wildfly/plugin/core/ContextualModelControllerClient/ContextualModelControllerClient(org.jboss.as.controller.client.ModelControllerClient,org.wildfly.common.context.Contextual)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/wildfly/security/SecurityFactory/create()|",
+      "|java+method:///org/wildfly/security/auth/client/ElytronXmlParser/parseAuthenticationClientConfiguration(java.net.URI)|",
+      "|java+method:///org/jboss/as/controller/client/ModelControllerClient$Factory/create(org.jboss.as.controller.client.ModelControllerClientConfiguration)|"
+    ],
+    "affectedLib": "org.wildfly.core:wildfly-controller-client:3.0.0.Alpha16",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.wildfly.plugins:wildfly-maven-plugin:1.1.0.Final",
+    "coordinatesV2": "org.wildfly.plugins:wildfly-maven-plugin:1.2.0.Alpha1",
+    "caller": "|java+method:///org/wildfly/plugin/generated/HelpMojo/build()|",
+    "called": "|java+constructor:///org/apache/maven/plugin/MojoExecutionException/MojoExecutionException(java.lang.String,java.lang.Exception)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/getResourceAsStream(java.lang.String)|",
+      "|java+method:///org/apache/maven/plugin/logging/Log/debug(java.lang.CharSequence)|",
+      "|java+method:///java/io/IOException/getMessage()|",
+      "|java+method:///org/xml/sax/SAXException/getMessage()|",
+      "|java+method:///javax/xml/parsers/DocumentBuilderFactory/newDocumentBuilder()|",
+      "|java+method:///javax/xml/parsers/DocumentBuilderFactory/newInstance()|",
+      "|java+method:///javax/xml/parsers/ParserConfigurationException/getMessage()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///org/apache/maven/plugin/MojoExecutionException/MojoExecutionException(java.lang.String,java.lang.Exception)|",
+      "|java+method:///org/wildfly/plugin/generated/HelpMojo/getLog()|",
+      "|java+method:///javax/xml/parsers/DocumentBuilder/parse(java.io.InputStream)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/getResourceAsStream(java.lang.String)|",
+      "|java+method:///org/apache/maven/plugin/logging/Log/debug(java.lang.CharSequence)|",
+      "|java+method:///java/io/IOException/getMessage()|",
+      "|java+method:///org/xml/sax/SAXException/getMessage()|",
+      "|java+method:///java/io/InputStream/close()|",
+      "|java+method:///javax/xml/parsers/DocumentBuilderFactory/newDocumentBuilder()|",
+      "|java+method:///javax/xml/parsers/DocumentBuilderFactory/newInstance()|",
+      "|java+method:///javax/xml/parsers/ParserConfigurationException/getMessage()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///org/apache/maven/plugin/MojoExecutionException/MojoExecutionException(java.lang.String,java.lang.Exception)|",
+      "|java+method:///org/wildfly/plugin/generated/HelpMojo/getLog()|",
+      "|java+method:///javax/xml/parsers/DocumentBuilder/parse(java.io.InputStream)|"
+    ],
+    "affectedLib": "org.apache.maven:maven-plugin-api:3.3.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.wildfly.plugins:wildfly-maven-plugin:1.1.0.Final",
+    "coordinatesV2": "org.wildfly.plugins:wildfly-maven-plugin:1.2.0.Alpha1",
+    "caller": "|java+method:///org/wildfly/plugin/common/AbstractServerConnection/createClient()|",
+    "called": "|java+constructor:///org/wildfly/plugin/core/ContextualModelControllerClient/ContextualModelControllerClient(org.jboss.as.controller.client.ModelControllerClient,org.wildfly.common.context.Contextual)|",
+    "v1Body": [
+      "|java+method:///org/wildfly/plugin/common/AbstractServerConnection/getClientConfiguration()|",
+      "|java+method:///org/jboss/as/controller/client/ModelControllerClient$Factory/create(org.jboss.as.controller.client.ModelControllerClientConfiguration)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/wildfly/plugin/common/AbstractServerConnection/getClientConfiguration()|",
+      "|java+method:///java/net/URL/toURI()|",
+      "|java+constructor:///org/wildfly/plugin/core/ContextualModelControllerClient/ContextualModelControllerClient(org.jboss.as.controller.client.ModelControllerClient,org.wildfly.common.context.Contextual)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/wildfly/security/SecurityFactory/create()|",
+      "|java+method:///org/wildfly/security/auth/client/ElytronXmlParser/parseAuthenticationClientConfiguration(java.net.URI)|",
+      "|java+method:///org/jboss/as/controller/client/ModelControllerClient$Factory/create(org.jboss.as.controller.client.ModelControllerClientConfiguration)|"
+    ],
+    "affectedLib": "org.wildfly.plugins:wildfly-plugin-core:1.2.0.Alpha1",
+    "change": "UPDATED"
+  }
+]

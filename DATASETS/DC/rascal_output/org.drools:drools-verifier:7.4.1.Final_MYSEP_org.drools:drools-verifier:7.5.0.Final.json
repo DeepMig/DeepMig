@@ -1,0 +1,62 @@
+[
+  {
+    "coordinatesV1": "org.drools:drools-verifier:7.4.1.Final",
+    "coordinatesV2": "org.drools:drools-verifier:7.5.0.Final",
+    "caller": "|java+method:///org/drools/verifier/report/XMLReportWriter/writeReport(java.io.OutputStream,org.drools.verifier.data.VerifierReport)|",
+    "called": "|java+method:///org/kie/soup/commons/xstream/XStreamUtils/createTrustingXStream()|",
+    "v1Body": [
+      "|java+method:///com/thoughtworks/xstream/XStream/alias(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/String/getBytes(java.nio.charset.Charset)|",
+      "|java+method:///org/kie/internal/xstream/XStreamUtils/createXStream()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/io/OutputStream/write(byte%5B%5D)|",
+      "|java+method:///com/thoughtworks/xstream/XStream/toXML(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/thoughtworks/xstream/XStream/alias(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/String/getBytes(java.nio.charset.Charset)|",
+      "|java+method:///org/kie/soup/commons/xstream/XStreamUtils/createTrustingXStream()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/io/OutputStream/write(byte%5B%5D)|",
+      "|java+method:///com/thoughtworks/xstream/XStream/toXML(java.lang.Object)|"
+    ],
+    "affectedLib": "org.kie.soup:kie-soup-commons:7.5.0.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.drools:drools-verifier:7.4.1.Final",
+    "coordinatesV2": "org.drools:drools-verifier:7.5.0.Final",
+    "caller": "|java+method:///org/drools/verifier/jarloader/PackageHeaderLoader/findImportsFromJars(java.util.Collection,java.util.List)|",
+    "called": "|java+constructor:///org/kie/soup/project/datamodel/commons/types/ClassTypeResolver/ClassTypeResolver(java.util.Set,java.lang.ClassLoader)|",
+    "v1Body": [
+      "|java+method:///org/drools/verifier/jarloader/PackageHeaderLoader/addFields(java.lang.Class)|",
+      "|java+constructor:///org/drools/core/base/ClassTypeResolver/ClassTypeResolver(java.util.Set,java.lang.ClassLoader)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/drools/core/base/ClassTypeResolver/resolveType(java.lang.String)|",
+      "|java+constructor:///org/drools/verifier/jarloader/VerifierMapBackedClassLoader/VerifierMapBackedClassLoader(java.util.Collection)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/drools/verifier/jarloader/PackageHeaderLoader/addFields(java.lang.Class)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///org/drools/verifier/jarloader/VerifierMapBackedClassLoader/VerifierMapBackedClassLoader(java.util.Collection)|",
+      "|java+constructor:///org/kie/soup/project/datamodel/commons/types/ClassTypeResolver/ClassTypeResolver(java.util.Set,java.lang.ClassLoader)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///org/kie/soup/project/datamodel/commons/types/ClassTypeResolver/resolveType(java.lang.String)|",
+      "|java+constructor:///java/util/HashSet/HashSet()|"
+    ],
+    "affectedLib": "org.kie.soup:kie-soup-project-datamodel-commons:7.5.0.Final",
+    "change": "ADDED"
+  }
+]

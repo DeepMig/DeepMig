@@ -1,0 +1,248 @@
+[
+  {
+    "coordinatesV1": "org.subtlelib:poi.builder:1.0.3",
+    "coordinatesV2": "org.subtlelib:poi.builder:1.0.1",
+    "caller": "|java+method:///org/subtlelib/poi/impl/workbook/WorkbookContextFactory/createWorkbook()|",
+    "called": "|java+constructor:///org/apache/poi/hssf/usermodel/HSSFWorkbook/HSSFWorkbook()|",
+    "v1Body": [
+      "|java+constructor:///org/subtlelib/poi/impl/workbook/WorkbookContextImpl/WorkbookContextImpl(org.apache.poi.hssf.usermodel.HSSFWorkbook,org.subtlelib.poi.api.style.StyleConfiguration,org.subtlelib.poi.api.configuration.Configuration)|",
+      "|java+constructor:///org/subtlelib/poi/impl/style/defaults/DefaultStyleConfiguration/DefaultStyleConfiguration()|",
+      "|java+constructor:///org/apache/poi/hssf/usermodel/HSSFWorkbook/HSSFWorkbook()|",
+      "|java+constructor:///org/subtlelib/poi/impl/configuration/DefaultConfiguration/DefaultConfiguration()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/subtlelib/poi/impl/workbook/WorkbookContextFactory/newWorkBook()|",
+      "|java+method:///org/subtlelib/poi/impl/workbook/WorkbookContextFactory/useWorkbook(org.apache.poi.ss.usermodel.Workbook)|"
+    ],
+    "affectedLib": "org.apache.poi:poi:3.10.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.subtlelib:poi.builder:1.0.3",
+    "coordinatesV2": "org.subtlelib:poi.builder:1.0.1",
+    "caller": "|java+method:///org/subtlelib/poi/impl/row/RowContextImpl/writeText(java.lang.String,org.subtlelib.poi.api.style.Style)|",
+    "called": "|java+constructor:///org/apache/poi/hssf/usermodel/HSSFRichTextString/HSSFRichTextString(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/apache/poi/hssf/usermodel/HSSFRichTextString/HSSFRichTextString(java.lang.String)|",
+      "|java+method:///org/subtlelib/poi/impl/row/RowContextImpl/createCell(int,org.subtlelib.poi.api.style.Style)|",
+      "|java+method:///org/apache/poi/ss/usermodel/Cell/setCellValue(org.apache.poi.ss.usermodel.RichTextString)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/poi/ss/usermodel/Cell/setCellValue(java.lang.String)|",
+      "|java+method:///org/subtlelib/poi/impl/row/RowContextImpl/createCell(int,org.subtlelib.poi.api.style.Style)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "affectedLib": "org.apache.poi:poi:3.10.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.subtlelib:poi.builder:1.0.3",
+    "coordinatesV2": "org.subtlelib:poi.builder:1.0.1",
+    "caller": "|java+method:///org/subtlelib/poi/impl/workbook/WorkbookContextFactory/createWorkbook(org.subtlelib.poi.api.style.StyleConfiguration)|",
+    "called": "|java+constructor:///org/apache/poi/hssf/usermodel/HSSFWorkbook/HSSFWorkbook()|",
+    "v1Body": [
+      "|java+constructor:///org/subtlelib/poi/impl/workbook/WorkbookContextImpl/WorkbookContextImpl(org.apache.poi.hssf.usermodel.HSSFWorkbook,org.subtlelib.poi.api.style.StyleConfiguration,org.subtlelib.poi.api.configuration.Configuration)|",
+      "|java+constructor:///org/apache/poi/hssf/usermodel/HSSFWorkbook/HSSFWorkbook()|",
+      "|java+constructor:///org/subtlelib/poi/impl/configuration/DefaultConfiguration/DefaultConfiguration()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/subtlelib/poi/impl/workbook/WorkbookContextFactory/newWorkBook()|",
+      "|java+method:///org/subtlelib/poi/impl/workbook/WorkbookContextFactory/useWorkbook(org.apache.poi.ss.usermodel.Workbook,org.subtlelib.poi.api.style.StyleConfiguration)|"
+    ],
+    "affectedLib": "org.apache.poi:poi:3.10.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.subtlelib:poi.builder:1.0.3",
+    "coordinatesV2": "org.subtlelib:poi.builder:1.0.1",
+    "caller": "|java+method:///org/subtlelib/poi/impl/workbook/WorkbookContextImpl/createSheet(java.lang.String)|",
+    "called": "|java+method:///org/apache/poi/hssf/usermodel/HSSFWorkbook/createSheet(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/poi/hssf/usermodel/HSSFWorkbook/createSheet(java.lang.String)|",
+      "|java+constructor:///org/subtlelib/poi/impl/sheet/SheetContextImpl/SheetContextImpl(org.apache.poi.ss.usermodel.Sheet,org.subtlelib.poi.api.workbook.WorkbookContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/poi/ss/usermodel/Workbook/createSheet(java.lang.String)|",
+      "|java+constructor:///org/subtlelib/poi/impl/sheet/SheetContextImpl/SheetContextImpl(org.apache.poi.ss.usermodel.Sheet,org.subtlelib.poi.api.workbook.WorkbookContext)|"
+    ],
+    "affectedLib": "org.apache.poi:poi:3.10.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.subtlelib:poi.builder:1.0.3",
+    "coordinatesV2": "org.subtlelib:poi.builder:1.0.1",
+    "caller": "|java+method:///org/subtlelib/poi/impl/workbook/WorkbookContextImpl/registerStyle(org.subtlelib.poi.api.style.Style)|",
+    "called": "|java+method:///org/apache/poi/hssf/usermodel/HSSFWorkbook/createCellStyle()|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+method:///org/subtlelib/poi/api/style/Style/enrich(org.apache.poi.hssf.usermodel.HSSFWorkbook,org.apache.poi.hssf.usermodel.HSSFCellStyle)|",
+      "|java+method:///org/apache/poi/hssf/usermodel/HSSFWorkbook/createCellStyle()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+method:///org/apache/poi/ss/usermodel/Workbook/createCellStyle()|",
+      "|java+method:///org/subtlelib/poi/api/style/Style/enrich(org.subtlelib.poi.api.workbook.WorkbookContext,org.apache.poi.ss.usermodel.CellStyle)|"
+    ],
+    "affectedLib": "org.apache.poi:poi:3.10.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.subtlelib:poi.builder:1.0.3",
+    "coordinatesV2": "org.subtlelib:poi.builder:1.0.1",
+    "caller": "|java+method:///org/subtlelib/poi/impl/workbook/WorkbookContextFactory/createWorkbook(org.subtlelib.poi.api.configuration.Configuration)|",
+    "called": "|java+constructor:///org/apache/poi/hssf/usermodel/HSSFWorkbook/HSSFWorkbook()|",
+    "v1Body": [
+      "|java+constructor:///org/subtlelib/poi/impl/workbook/WorkbookContextImpl/WorkbookContextImpl(org.apache.poi.hssf.usermodel.HSSFWorkbook,org.subtlelib.poi.api.style.StyleConfiguration,org.subtlelib.poi.api.configuration.Configuration)|",
+      "|java+constructor:///org/subtlelib/poi/impl/style/defaults/DefaultStyleConfiguration/DefaultStyleConfiguration()|",
+      "|java+constructor:///org/apache/poi/hssf/usermodel/HSSFWorkbook/HSSFWorkbook()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/subtlelib/poi/impl/workbook/WorkbookContextFactory/newWorkBook()|",
+      "|java+method:///org/subtlelib/poi/impl/workbook/WorkbookContextFactory/useWorkbook(org.apache.poi.ss.usermodel.Workbook,org.subtlelib.poi.api.configuration.Configuration)|"
+    ],
+    "affectedLib": "org.apache.poi:poi:3.10.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.subtlelib:poi.builder:1.0.3",
+    "coordinatesV2": "org.subtlelib:poi.builder:1.0.1",
+    "caller": "|java+method:///org/subtlelib/poi/impl/workbook/WorkbookContextImpl/toNativeBytes()|",
+    "called": "|java+method:///org/apache/poi/hssf/usermodel/HSSFWorkbook/write(java.io.OutputStream)|",
+    "v1Body": [
+      "|java+method:///org/apache/poi/hssf/usermodel/HSSFWorkbook/write(java.io.OutputStream)|",
+      "|java+constructor:///java/io/ByteArrayOutputStream/ByteArrayOutputStream()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/io/ByteArrayOutputStream/toByteArray()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/poi/ss/usermodel/Workbook/write(java.io.OutputStream)|",
+      "|java+constructor:///java/io/ByteArrayOutputStream/ByteArrayOutputStream()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/io/ByteArrayOutputStream/toByteArray()|"
+    ],
+    "affectedLib": "org.apache.poi:poi:3.10.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.subtlelib:poi.builder:1.0.3",
+    "coordinatesV2": "org.subtlelib:poi.builder:1.0.1",
+    "caller": "|java+method:///org/subtlelib/poi/impl/row/RowContextImpl/writeMultilineText(java.util.Collection,org.subtlelib.poi.api.style.Style)|",
+    "called": "|java+constructor:///org/apache/poi/hssf/usermodel/HSSFRichTextString/HSSFRichTextString(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/apache/poi/hssf/usermodel/HSSFRichTextString/HSSFRichTextString(java.lang.String)|",
+      "|java+method:///java/util/Collection/size()|",
+      "|java+method:///org/subtlelib/poi/impl/row/RowContextImpl/createCell(int,org.subtlelib.poi.api.style.Style)|",
+      "|java+method:///org/apache/poi/ss/usermodel/Cell/setCellValue(org.apache.poi.ss.usermodel.RichTextString)|",
+      "|java+method:///com/google/common/base/Joiner/join(java.lang.Iterable)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/subtlelib/poi/impl/style/StylesInternal/combineOrOverride(org.subtlelib.poi.api.style.Style,org.subtlelib.poi.api.style.Style)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/poi/ss/usermodel/Cell/setCellValue(java.lang.String)|",
+      "|java+method:///java/util/Collection/size()|",
+      "|java+method:///org/subtlelib/poi/impl/row/RowContextImpl/createCell(int,org.subtlelib.poi.api.style.Style)|",
+      "|java+method:///com/google/common/base/Joiner/join(java.lang.Iterable)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/subtlelib/poi/impl/style/StylesInternal/combineOrOverride(org.subtlelib.poi.api.style.Style,org.subtlelib.poi.api.style.Style)|"
+    ],
+    "affectedLib": "org.apache.poi:poi:3.10.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.subtlelib:poi.builder:1.0.1",
+    "coordinatesV2": "org.subtlelib:poi.builder:1.0.3",
+    "caller": "|java+method:///org/subtlelib/poi/impl/row/RowContextImpl/writeText(java.lang.String,org.subtlelib.poi.api.style.Style)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/apache/poi/hssf/usermodel/HSSFRichTextString/HSSFRichTextString(java.lang.String)|",
+      "|java+method:///org/subtlelib/poi/impl/row/RowContextImpl/createCell(int,org.subtlelib.poi.api.style.Style)|",
+      "|java+method:///org/apache/poi/ss/usermodel/Cell/setCellValue(org.apache.poi.ss.usermodel.RichTextString)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/poi/ss/usermodel/Cell/setCellValue(java.lang.String)|",
+      "|java+method:///org/subtlelib/poi/impl/row/RowContextImpl/createCell(int,org.subtlelib.poi.api.style.Style)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.subtlelib:poi.builder:1.0.1",
+    "coordinatesV2": "org.subtlelib:poi.builder:1.0.3",
+    "caller": "|java+method:///org/subtlelib/poi/impl/workbook/WorkbookContextImpl/registerStyle(org.subtlelib.poi.api.style.Style)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+method:///org/subtlelib/poi/api/style/Style/enrich(org.apache.poi.hssf.usermodel.HSSFWorkbook,org.apache.poi.hssf.usermodel.HSSFCellStyle)|",
+      "|java+method:///org/apache/poi/hssf/usermodel/HSSFWorkbook/createCellStyle()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+method:///org/apache/poi/ss/usermodel/Workbook/createCellStyle()|",
+      "|java+method:///org/subtlelib/poi/api/style/Style/enrich(org.subtlelib.poi.api.workbook.WorkbookContext,org.apache.poi.ss.usermodel.CellStyle)|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.subtlelib:poi.builder:1.0.1",
+    "coordinatesV2": "org.subtlelib:poi.builder:1.0.3",
+    "caller": "|java+method:///org/subtlelib/poi/impl/sheet/SheetContextImpl/currentRow()|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkState(boolean,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/subtlelib/poi/impl/sheet/SheetContextImpl/currentRow()|",
+      "|java+method:///com/google/common/base/Preconditions/checkState(boolean,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/subtlelib/poi/impl/sheet/SheetContextImpl/currentRow()|",
+      "|java+method:///com/google/common/base/Preconditions/checkState(boolean,java.lang.Object)|",
+      "|java+method:///org/subtlelib/poi/impl/row/Rows/getOrCreate(org.apache.poi.ss.usermodel.Sheet,int)|",
+      "|java+constructor:///org/subtlelib/poi/impl/row/RowContextImpl/RowContextImpl(org.apache.poi.ss.usermodel.Row,org.subtlelib.poi.api.sheet.SheetContext,org.subtlelib.poi.api.style.StyleRegistry,int)|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.subtlelib:poi.builder:1.0.1",
+    "coordinatesV2": "org.subtlelib:poi.builder:1.0.3",
+    "caller": "|java+method:///org/subtlelib/poi/impl/row/RowContextImpl/writeMultilineText(java.util.Collection,org.subtlelib.poi.api.style.Style)|",
+    "called": "|java+method:///com/google/common/base/Joiner/join(java.lang.Iterable)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/apache/poi/hssf/usermodel/HSSFRichTextString/HSSFRichTextString(java.lang.String)|",
+      "|java+method:///java/util/Collection/size()|",
+      "|java+method:///org/subtlelib/poi/impl/row/RowContextImpl/createCell(int,org.subtlelib.poi.api.style.Style)|",
+      "|java+method:///org/apache/poi/ss/usermodel/Cell/setCellValue(org.apache.poi.ss.usermodel.RichTextString)|",
+      "|java+method:///com/google/common/base/Joiner/join(java.lang.Iterable)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/subtlelib/poi/impl/style/StylesInternal/combineOrOverride(org.subtlelib.poi.api.style.Style,org.subtlelib.poi.api.style.Style)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/poi/ss/usermodel/Cell/setCellValue(java.lang.String)|",
+      "|java+method:///java/util/Collection/size()|",
+      "|java+method:///org/subtlelib/poi/impl/row/RowContextImpl/createCell(int,org.subtlelib.poi.api.style.Style)|",
+      "|java+method:///com/google/common/base/Joiner/join(java.lang.Iterable)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/subtlelib/poi/impl/style/StylesInternal/combineOrOverride(org.subtlelib.poi.api.style.Style,org.subtlelib.poi.api.style.Style)|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "UPDATED"
+  }
+]

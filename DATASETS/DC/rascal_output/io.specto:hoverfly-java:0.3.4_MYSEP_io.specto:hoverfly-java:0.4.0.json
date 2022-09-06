@@ -1,0 +1,278 @@
+[
+  {
+    "coordinatesV1": "io.specto:hoverfly-java:0.4.0",
+    "coordinatesV2": "io.specto:hoverfly-java:0.3.4",
+    "caller": "|java+method:///io/specto/hoverfly/junit/core/Hoverfly/getSimulation()|",
+    "called": "|java+method:///com/sun/jersey/api/client/WebResource/path(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/sun/jersey/api/client/WebResource/path(java.lang.String)|",
+      "|java+method:///com/sun/jersey/api/client/WebResource/get(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/Request$Builder/build()|",
+      "|java+method:///io/specto/hoverfly/junit/core/Hoverfly/createRequestBuilderWithUrl(java.lang.String)|",
+      "|java+method:///okhttp3/Request$Builder/get()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.Throwable)|",
+      "|java+method:///io/specto/hoverfly/junit/core/Hoverfly/readSimulation(okhttp3.Call)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///okhttp3/OkHttpClient/newCall(okhttp3.Request)|"
+    ],
+    "affectedLib": "com.sun.jersey:jersey-client:1.19.3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "io.specto:hoverfly-java:0.4.0",
+    "coordinatesV2": "io.specto:hoverfly-java:0.3.4",
+    "caller": "|java+method:///io/specto/hoverfly/junit/core/Hoverfly/isHealthy()|",
+    "called": "|java+method:///com/sun/jersey/api/client/ClientResponse/close()|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///com/sun/jersey/api/client/WebResource/path(java.lang.String)|",
+      "|java+method:///com/sun/jersey/api/client/ClientResponse$Status/getStatusCode()|",
+      "|java+method:///com/sun/jersey/api/client/ClientResponse/close()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///com/sun/jersey/api/client/WebResource/get(java.lang.Class)|",
+      "|java+method:///com/sun/jersey/api/client/ClientResponse/getStatus()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///okhttp3/Request$Builder/build()|",
+      "|java+method:///okhttp3/Response/close()|",
+      "|java+method:///io/specto/hoverfly/junit/core/Hoverfly/createRequestBuilderWithUrl(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///okhttp3/Request$Builder/get()|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+method:///okhttp3/Response/isSuccessful()|",
+      "|java+method:///okhttp3/Response/code()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///okhttp3/OkHttpClient/newCall(okhttp3.Request)|",
+      "|java+method:///okhttp3/Call/execute()|"
+    ],
+    "affectedLib": "com.sun.jersey:jersey-client:1.19.3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "io.specto:hoverfly-java:0.4.0",
+    "coordinatesV2": "io.specto:hoverfly-java:0.3.4",
+    "caller": "|java+method:///io/specto/hoverfly/junit/core/Hoverfly/exportSimulation(java.nio.file.Path)|",
+    "called": "|java+method:///com/sun/jersey/api/client/WebResource/path(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/nio/file/Files/write(java.nio.file.Path,byte%5B%5D,java.nio.file.OpenOption%5B%5D)|",
+      "|java+method:///com/sun/jersey/api/client/WebResource/path(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/nio/file/Files/deleteIfExists(java.nio.file.Path)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/String/getBytes()|",
+      "|java+method:///com/sun/jersey/api/client/WebResource/get(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/Request$Builder/build()|",
+      "|java+method:///io/specto/hoverfly/junit/core/Hoverfly/createRequestBuilderWithUrl(java.lang.String)|",
+      "|java+method:///okhttp3/Request$Builder/get()|",
+      "|java+method:///java/nio/file/Files/deleteIfExists(java.nio.file.Path)|",
+      "|java+method:///io/specto/hoverfly/junit/core/Hoverfly/persistSimulation(java.nio.file.Path,io.specto.hoverfly.junit.core.model.Simulation)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///okhttp3/OkHttpClient/newCall(okhttp3.Request)|",
+      "|java+method:///io/specto/hoverfly/junit/core/Hoverfly/readSimulation(okhttp3.Call)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|"
+    ],
+    "affectedLib": "com.sun.jersey:jersey-client:1.19.3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "io.specto:hoverfly-java:0.4.0",
+    "coordinatesV2": "io.specto:hoverfly-java:0.3.4",
+    "caller": "|java+constructor:///io/specto/hoverfly/junit/core/Hoverfly/Hoverfly(io.specto.hoverfly.junit.core.HoverflyConfig,io.specto.hoverfly.junit.core.HoverflyMode)|",
+    "called": "|java+method:///com/sun/jersey/api/client/Client/create()|",
+    "v1Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///io/specto/hoverfly/junit/core/HoverflyConfig/getProxyPort()|",
+      "|java+method:///io/specto/hoverfly/junit/core/HoverflyConfig/getAdminPort()|",
+      "|java+method:///io/specto/hoverfly/junit/core/HoverflyUtils/findUnusedPort()|",
+      "|java+method:///io/specto/hoverfly/junit/core/HoverflyConfig/getRemoteHost()|",
+      "|java+method:///io/specto/hoverfly/junit/core/HoverflyConfig/isRemoteInstance()|",
+      "|java+method:///javax/ws/rs/core/UriBuilder/build(java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/UriBuilder/fromUri(java.lang.String)|",
+      "|java+method:///com/sun/jersey/api/client/Client/create()|",
+      "|java+method:///io/specto/hoverfly/junit/core/HoverflyConfig/configs()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///javax/ws/rs/core/UriBuilder/port(int)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///com/sun/jersey/api/client/Client/resource(java.net.URI)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/specto/hoverfly/junit/core/TempFileManager/TempFileManager()|",
+      "|java+method:///io/specto/hoverfly/junit/core/HoverflyConfigValidator/validate(io.specto.hoverfly.junit.core.HoverflyConfig)|",
+      "|java+constructor:///okhttp3/OkHttpClient/OkHttpClient()|",
+      "|java+constructor:///io/specto/hoverfly/junit/core/SslConfigurer/SslConfigurer()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///io/specto/hoverfly/junit/core/HoverflyConfigValidator/HoverflyConfigValidator()|"
+    ],
+    "affectedLib": "com.sun.jersey:jersey-client:1.19.3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "io.specto:hoverfly-java:0.3.4",
+    "coordinatesV2": "io.specto:hoverfly-java:0.4.0",
+    "caller": "|java+method:///io/specto/hoverfly/junit/core/Hoverfly/importSimulation(io.specto.hoverfly.junit.core.SimulationSource)|",
+    "called": "|java+method:///okhttp3/Request$Builder/build()|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/util/Optional/ifPresent(java.util.function.Consumer)|",
+      "|java+method:///io/specto/hoverfly/junit/core/SimulationSource/getSimulation()|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/Request$Builder/build()|",
+      "|java+method:///okhttp3/Response/close()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.Throwable)|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///okhttp3/Response/isSuccessful()|",
+      "|java+method:///io/specto/hoverfly/junit/core/SimulationSource/getSimulation()|",
+      "|java+method:///okhttp3/Request$Builder/put(okhttp3.RequestBody)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///okhttp3/RequestBody/create(okhttp3.MediaType,byte%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///io/specto/hoverfly/junit/core/Hoverfly/createRequestBuilderWithUrl(java.lang.String)|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValueAsBytes(java.lang.Object)|",
+      "|java+method:///okhttp3/OkHttpClient/newCall(okhttp3.Request)|",
+      "|java+method:///okhttp3/Call/execute()|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.6.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.specto:hoverfly-java:0.3.4",
+    "coordinatesV2": "io.specto:hoverfly-java:0.4.0",
+    "caller": "|java+method:///io/specto/hoverfly/junit/core/Hoverfly/getSimulation()|",
+    "called": "|java+method:///okhttp3/Request$Builder/build()|",
+    "v1Body": [
+      "|java+method:///com/sun/jersey/api/client/WebResource/path(java.lang.String)|",
+      "|java+method:///com/sun/jersey/api/client/WebResource/get(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/Request$Builder/build()|",
+      "|java+method:///io/specto/hoverfly/junit/core/Hoverfly/createRequestBuilderWithUrl(java.lang.String)|",
+      "|java+method:///okhttp3/Request$Builder/get()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.Throwable)|",
+      "|java+method:///io/specto/hoverfly/junit/core/Hoverfly/readSimulation(okhttp3.Call)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///okhttp3/OkHttpClient/newCall(okhttp3.Request)|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.6.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.specto:hoverfly-java:0.3.4",
+    "coordinatesV2": "io.specto:hoverfly-java:0.4.0",
+    "caller": "|java+method:///io/specto/hoverfly/junit/core/Hoverfly/isHealthy()|",
+    "called": "|java+method:///okhttp3/Request$Builder/build()|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///com/sun/jersey/api/client/WebResource/path(java.lang.String)|",
+      "|java+method:///com/sun/jersey/api/client/ClientResponse$Status/getStatusCode()|",
+      "|java+method:///com/sun/jersey/api/client/ClientResponse/close()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///com/sun/jersey/api/client/WebResource/get(java.lang.Class)|",
+      "|java+method:///com/sun/jersey/api/client/ClientResponse/getStatus()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///okhttp3/Request$Builder/build()|",
+      "|java+method:///okhttp3/Response/close()|",
+      "|java+method:///io/specto/hoverfly/junit/core/Hoverfly/createRequestBuilderWithUrl(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///okhttp3/Request$Builder/get()|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+method:///okhttp3/Response/isSuccessful()|",
+      "|java+method:///okhttp3/Response/code()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///okhttp3/OkHttpClient/newCall(okhttp3.Request)|",
+      "|java+method:///okhttp3/Call/execute()|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.6.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.specto:hoverfly-java:0.3.4",
+    "coordinatesV2": "io.specto:hoverfly-java:0.4.0",
+    "caller": "|java+method:///io/specto/hoverfly/junit/core/Hoverfly/exportSimulation(java.nio.file.Path)|",
+    "called": "|java+method:///okhttp3/Request$Builder/build()|",
+    "v1Body": [
+      "|java+method:///java/nio/file/Files/write(java.nio.file.Path,byte%5B%5D,java.nio.file.OpenOption%5B%5D)|",
+      "|java+method:///com/sun/jersey/api/client/WebResource/path(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/nio/file/Files/deleteIfExists(java.nio.file.Path)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/String/getBytes()|",
+      "|java+method:///com/sun/jersey/api/client/WebResource/get(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/Request$Builder/build()|",
+      "|java+method:///io/specto/hoverfly/junit/core/Hoverfly/createRequestBuilderWithUrl(java.lang.String)|",
+      "|java+method:///okhttp3/Request$Builder/get()|",
+      "|java+method:///java/nio/file/Files/deleteIfExists(java.nio.file.Path)|",
+      "|java+method:///io/specto/hoverfly/junit/core/Hoverfly/persistSimulation(java.nio.file.Path,io.specto.hoverfly.junit.core.model.Simulation)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///okhttp3/OkHttpClient/newCall(okhttp3.Request)|",
+      "|java+method:///io/specto/hoverfly/junit/core/Hoverfly/readSimulation(okhttp3.Call)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.6.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.specto:hoverfly-java:0.3.4",
+    "coordinatesV2": "io.specto:hoverfly-java:0.4.0",
+    "caller": "|java+initializer:///io/specto/hoverfly/junit/core/Hoverfly/Hoverfly$initializer|",
+    "called": "|java+method:///okhttp3/MediaType/parse(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+      "|java+method:///okhttp3/MediaType/parse(java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.6.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.specto:hoverfly-java:0.3.4",
+    "coordinatesV2": "io.specto:hoverfly-java:0.4.0",
+    "caller": "|java+constructor:///io/specto/hoverfly/junit/core/Hoverfly/Hoverfly(io.specto.hoverfly.junit.core.HoverflyConfig,io.specto.hoverfly.junit.core.HoverflyMode)|",
+    "called": "|java+constructor:///okhttp3/OkHttpClient/OkHttpClient()|",
+    "v1Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///io/specto/hoverfly/junit/core/HoverflyConfig/getProxyPort()|",
+      "|java+method:///io/specto/hoverfly/junit/core/HoverflyConfig/getAdminPort()|",
+      "|java+method:///io/specto/hoverfly/junit/core/HoverflyUtils/findUnusedPort()|",
+      "|java+method:///io/specto/hoverfly/junit/core/HoverflyConfig/getRemoteHost()|",
+      "|java+method:///io/specto/hoverfly/junit/core/HoverflyConfig/isRemoteInstance()|",
+      "|java+method:///javax/ws/rs/core/UriBuilder/build(java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/UriBuilder/fromUri(java.lang.String)|",
+      "|java+method:///com/sun/jersey/api/client/Client/create()|",
+      "|java+method:///io/specto/hoverfly/junit/core/HoverflyConfig/configs()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///javax/ws/rs/core/UriBuilder/port(int)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///com/sun/jersey/api/client/Client/resource(java.net.URI)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/specto/hoverfly/junit/core/TempFileManager/TempFileManager()|",
+      "|java+method:///io/specto/hoverfly/junit/core/HoverflyConfigValidator/validate(io.specto.hoverfly.junit.core.HoverflyConfig)|",
+      "|java+constructor:///okhttp3/OkHttpClient/OkHttpClient()|",
+      "|java+constructor:///io/specto/hoverfly/junit/core/SslConfigurer/SslConfigurer()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///io/specto/hoverfly/junit/core/HoverflyConfigValidator/HoverflyConfigValidator()|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.6.0",
+    "change": "ADDED"
+  }
+]

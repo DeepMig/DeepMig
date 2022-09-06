@@ -1,0 +1,60 @@
+[
+  {
+    "coordinatesV1": "com.hubspot.dropwizard:dropwizard-guice:0.7.1",
+    "coordinatesV2": "com.hubspot.dropwizard:dropwizard-guice:0.7.0.2",
+    "caller": "|java+constructor:///com/hubspot/dropwizard/guice/GuiceContainer$ServletGuiceComponentProviderFactory/GuiceContainer$ServletGuiceComponentProviderFactory(com.hubspot.dropwizard.guice.GuiceContainer,com.sun.jersey.api.core.ResourceConfig,com.google.inject.Injector)|",
+    "called": "|java+constructor:///com/sun/jersey/guice/spi/container/GuiceComponentProviderFactory/GuiceComponentProviderFactory(com.sun.jersey.api.core.ResourceConfig,com.google.inject.Injector)|",
+    "v1Body": [
+      "|java+constructor:///com/sun/jersey/guice/spi/container/GuiceComponentProviderFactory/GuiceComponentProviderFactory(com.sun.jersey.api.core.ResourceConfig,com.google.inject.Injector)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/hubspot/dropwizard/guice/GuiceComponentProviderFactory/GuiceComponentProviderFactory(com.sun.jersey.api.core.ResourceConfig,com.google.inject.Injector)|"
+    ],
+    "affectedLib": "com.sun.jersey.contribs:jersey-guice:1.18.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hubspot.dropwizard:dropwizard-guice:0.7.1",
+    "coordinatesV2": "com.hubspot.dropwizard:dropwizard-guice:0.7.0.2",
+    "caller": "|java+constructor:///com/hubspot/dropwizard/guice/JerseyContainerModule/JerseyContainerModule(com.hubspot.dropwizard.guice.GuiceContainer)|",
+    "called": "|java+constructor:///com/sun/jersey/guice/JerseyServletModule/JerseyServletModule()|",
+    "v1Body": [
+      "|java+constructor:///com/sun/jersey/guice/JerseyServletModule/JerseyServletModule()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/google/inject/servlet/ServletModule/ServletModule()|"
+    ],
+    "affectedLib": "com.sun.jersey.contribs:jersey-guice:1.18.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hubspot.dropwizard:dropwizard-guice:0.7.1",
+    "coordinatesV2": "com.hubspot.dropwizard:dropwizard-guice:0.7.0.2",
+    "caller": "|java+method:///com/hubspot/dropwizard/guice/GuiceContainer$ServletGuiceComponentProviderFactory/createScopeMap()|",
+    "called": "|java+method:///com/sun/jersey/guice/spi/container/GuiceComponentProviderFactory/createScopeMap()|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/sun/jersey/guice/spi/container/GuiceComponentProviderFactory/createScopeMap()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/hubspot/dropwizard/guice/GuiceComponentProviderFactory/createScopeMap()|"
+    ],
+    "affectedLib": "com.sun.jersey.contribs:jersey-guice:1.18.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hubspot.dropwizard:dropwizard-guice:0.7.0.2",
+    "coordinatesV2": "com.hubspot.dropwizard:dropwizard-guice:0.7.1",
+    "caller": "|java+constructor:///com/hubspot/dropwizard/guice/JerseyContainerModule/JerseyContainerModule(com.hubspot.dropwizard.guice.GuiceContainer)|",
+    "called": "|java+constructor:///com/google/inject/servlet/ServletModule/ServletModule()|",
+    "v1Body": [
+      "|java+constructor:///com/sun/jersey/guice/JerseyServletModule/JerseyServletModule()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/google/inject/servlet/ServletModule/ServletModule()|"
+    ],
+    "affectedLib": "com.google.inject.extensions:guice-servlet:4.0-beta5",
+    "change": "UPDATED"
+  }
+]

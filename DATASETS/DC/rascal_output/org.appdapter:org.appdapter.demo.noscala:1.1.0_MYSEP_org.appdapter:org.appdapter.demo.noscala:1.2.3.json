@@ -1,0 +1,247 @@
+[
+  {
+    "coordinatesV1": "org.appdapter:org.appdapter.demo.noscala:1.1.0",
+    "coordinatesV2": "org.appdapter:org.appdapter.demo.noscala:1.2.3",
+    "caller": "|java+method:///org/appdapter/core/item/JenaResourceItem/getIdentInSameModel(java.lang.String)|",
+    "called": "|java+method:///com/hp/hpl/jena/rdf/model/ResourceFactory/createResource(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/rdf/model/Model/createResource(java.lang.String)|",
+      "|java+constructor:///org/appdapter/core/item/JenaResourceItem/JenaResourceItem(com.hp.hpl.jena.rdf.model.Resource)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/Resource/getModel()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/rdf/model/Model/createResource(java.lang.String)|",
+      "|java+method:///org/appdapter/core/item/JenaResourceItem/makeItemOfMyJClazz(com.hp.hpl.jena.rdf.model.Resource)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/ResourceFactory/createResource(java.lang.String)|",
+      "|java+method:///org/appdapter/core/item/JenaResourceItem/getModel()|"
+    ],
+    "affectedLib": "org.appdapter:ext.bundle.jena_all_2_10_1:1.2.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.appdapter:org.appdapter.demo.noscala:1.1.0",
+    "coordinatesV2": "org.appdapter:org.appdapter.demo.noscala:1.2.3",
+    "caller": "|java+method:///org/appdapter/core/item/JenaResourceItem/equals(java.lang.Object)|",
+    "called": "|java+method:///org/appdapter/core/item/JenaResourceItem/getAbsUriString()|",
+    "v1Body": [
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///org/appdapter/core/name/Ident/getAbsUriString()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/appdapter/core/item/JenaResourceItem/getAbsUriString()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/rdf/model/Resource/equals(java.lang.Object)|",
+      "|java+method:///org/appdapter/core/name/Ident/getAbsUriString()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/appdapter/core/item/JenaResourceItem/getAbsUriString()|"
+    ],
+    "affectedLib": "org.appdapter:org.appdapter.lib.core:1.2.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.appdapter:org.appdapter.demo.noscala:1.1.0",
+    "coordinatesV2": "org.appdapter:org.appdapter.demo.noscala:1.2.3",
+    "caller": "|java+method:///org/appdapter/demo/DemoDatabase/initConnector()|",
+    "called": "|java+constructor:///org/appdapter/bind/sql/h2/DatabaseConnector$Config/DatabaseConnector$Config()|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/lang/Class/getCanonicalName()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+constructor:///org/appdapter/bind/sql/h2/DatabaseConnector/DatabaseConnector()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/appdapter/bind/sql/h2/DatabaseConnector/init(org.appdapter.bind.sql.h2.DatabaseConnector$Config)|",
+      "|java+constructor:///org/appdapter/bind/sql/h2/DatabaseConnector$Config/DatabaseConnector$Config()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/lang/Class/getCanonicalName()|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/appdapter/bind/sql/h2/DatabaseConnector/init(org.appdapter.bind.sql.h2.DatabaseConnector$Config)|",
+      "|java+constructor:///org/appdapter/bind/sql/h2/DatabaseConnector$Config/DatabaseConnector$Config()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///org/appdapter/bind/sql/h2/DatabaseConnector/DatabaseConnector()|",
+      "|java+method:///java/io/File/deleteOnExit()|"
+    ],
+    "affectedLib": "org.appdapter:org.appdapter.lib.core:1.2.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.appdapter:org.appdapter.demo.noscala:1.1.0",
+    "coordinatesV2": "org.appdapter:org.appdapter.demo.noscala:1.2.3",
+    "caller": "|java+constructor:///org/appdapter/core/name/FreeIdent/FreeIdent(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/appdapter/core/name/FreeIdent/previousURI(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/String/endsWith(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/appdapter/core/name/FreeIdent/previousURI(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/String/endsWith(java.lang.String)|"
+    ],
+    "affectedLib": "org.appdapter:org.appdapter.lib.core:1.2.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.appdapter:org.appdapter.demo.noscala:1.1.0",
+    "coordinatesV2": "org.appdapter:org.appdapter.demo.noscala:1.2.3",
+    "caller": "|java+method:///org/appdapter/core/item/JenaResourceItem/getSinglePropertyVal(org.appdapter.core.name.Ident,boolean)|",
+    "called": "|java+method:///org/appdapter/core/item/JenaResourceItem/getPropertyValues(org.appdapter.core.name.Ident,org.appdapter.core.item.Item$LinkDirection)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/appdapter/core/item/JenaResourceItem/getPropertyValues(org.appdapter.core.name.Ident)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/appdapter/core/item/JenaResourceItem/getPropertyValues(org.appdapter.core.name.Ident,org.appdapter.core.item.Item$LinkDirection)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.appdapter:org.appdapter.lib.core:1.2.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.appdapter:org.appdapter.demo.noscala:1.1.0",
+    "coordinatesV2": "org.appdapter:org.appdapter.demo.noscala:1.2.3",
+    "caller": "|java+method:///org/appdapter/bind/sql/h2/DatabaseConnector/init(org.appdapter.bind.sql.h2.DatabaseConnector$Config)|",
+    "called": "|java+method:///org/appdapter/bind/sql/h2/DatabaseConnector/makeConnection(java.lang.String,java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/h2/tools/Server/start()|",
+      "|java+method:///org/appdapter/bind/sql/h2/DatabaseConnector/makeWebServer(java.lang.String)|",
+      "|java+method:///org/appdapter/bind/sql/h2/DatabaseConnector/makeTcpServer(java.lang.String)|",
+      "|java+method:///org/appdapter/bind/sql/h2/DatabaseConnector/makeConnection(java.lang.String,java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/h2/tools/Server/start()|",
+      "|java+method:///com/hp/hpl/jena/sdb/SDB/init()|",
+      "|java+method:///org/appdapter/bind/sql/h2/DatabaseConnector/makeWebServer(java.lang.String)|",
+      "|java+method:///org/appdapter/bind/sql/h2/DatabaseConnector/makeTcpServer(java.lang.String)|",
+      "|java+method:///org/appdapter/bind/sql/h2/DatabaseConnector/makeConnection(java.lang.String,java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.appdapter:org.appdapter.lib.core:1.2.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.appdapter:org.appdapter.demo.noscala:1.1.0",
+    "coordinatesV2": "org.appdapter:org.appdapter.demo.noscala:1.2.3",
+    "caller": "|java+method:///org/appdapter/core/item/JenaResourceItem/getLinkedOrderedList(org.appdapter.core.name.Ident)|",
+    "called": "|java+method:///org/appdapter/core/item/JenaResourceItem/getSinglePropertyVal(org.appdapter.core.name.Ident,boolean)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/appdapter/core/item/JenaResourceItem/getSinglePropertyVal(org.appdapter.core.name.Ident,boolean)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/RDFList/asJavaList()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/RDFNode/as(java.lang.Class)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/RDFNode/asResource()|",
+      "|java+constructor:///org/appdapter/core/item/JenaResourceItem/JenaResourceItem(com.hp.hpl.jena.rdf.model.Resource)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/appdapter/core/item/JenaResourceItem/getSinglePropertyVal(org.appdapter.core.name.Ident,boolean)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/RDFList/asJavaList()|",
+      "|java+method:///org/appdapter/core/item/JenaResourceItem/makeItemOfMyJClazz(com.hp.hpl.jena.rdf.model.Resource)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/RDFNode/asResource()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/RDFNode/as(java.lang.Class)|"
+    ],
+    "affectedLib": "org.appdapter:org.appdapter.lib.core:1.2.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.appdapter:org.appdapter.demo.noscala:1.1.0",
+    "coordinatesV2": "org.appdapter:org.appdapter.demo.noscala:1.2.3",
+    "caller": "|java+method:///org/appdapter/core/item/ItemFuncs/getLinkedItemSet(org.appdapter.core.item.Item,java.lang.String)|",
+    "called": "|java+method:///org/appdapter/core/item/ItemFuncs/getNeighborIdent(org.appdapter.core.item.Item,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/appdapter/core/item/ItemFuncs/getNeighborIdent(org.appdapter.core.item.Item,java.lang.String)|",
+      "|java+method:///org/appdapter/core/item/Item/getLinkedItemSet(org.appdapter.core.name.Ident)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/appdapter/core/item/ItemFuncs/getNeighborIdent(org.appdapter.core.item.Item,java.lang.String)|",
+      "|java+method:///org/appdapter/core/item/Item/getLinkedItemSet(org.appdapter.core.name.Ident,org.appdapter.core.item.Item$LinkDirection)|"
+    ],
+    "affectedLib": "org.appdapter:org.appdapter.lib.core:1.2.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.appdapter:org.appdapter.demo.noscala:1.1.0",
+    "coordinatesV2": "org.appdapter:org.appdapter.demo.noscala:1.2.3",
+    "caller": "|java+method:///org/appdapter/core/item/JenaResourceItem/getIdentInSameModel(java.lang.String)|",
+    "called": "|java+method:///org/appdapter/core/item/JenaResourceItem/getModel()|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/rdf/model/Model/createResource(java.lang.String)|",
+      "|java+constructor:///org/appdapter/core/item/JenaResourceItem/JenaResourceItem(com.hp.hpl.jena.rdf.model.Resource)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/Resource/getModel()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/rdf/model/Model/createResource(java.lang.String)|",
+      "|java+method:///org/appdapter/core/item/JenaResourceItem/makeItemOfMyJClazz(com.hp.hpl.jena.rdf.model.Resource)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/ResourceFactory/createResource(java.lang.String)|",
+      "|java+method:///org/appdapter/core/item/JenaResourceItem/getModel()|"
+    ],
+    "affectedLib": "org.appdapter:org.appdapter.lib.core:1.2.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.appdapter:org.appdapter.demo.noscala:1.1.0",
+    "coordinatesV2": "org.appdapter:org.appdapter.demo.noscala:1.2.3",
+    "caller": "|java+constructor:///org/appdapter/core/name/FreeIdent/FreeIdent(java.lang.String)|",
+    "called": "|java+method:///org/appdapter/core/name/FreeIdent/previousURI(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/lang/String/indexOf(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/appdapter/core/name/FreeIdent/previousURI(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/lang/String/indexOf(int)|"
+    ],
+    "affectedLib": "org.appdapter:org.appdapter.lib.core:1.2.3",
+    "change": "UPDATED"
+  }
+]

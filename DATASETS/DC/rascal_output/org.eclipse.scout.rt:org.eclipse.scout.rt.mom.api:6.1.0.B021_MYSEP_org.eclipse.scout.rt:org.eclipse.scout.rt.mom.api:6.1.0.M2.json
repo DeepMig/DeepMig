@@ -1,0 +1,255 @@
+[
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.mom.api:6.1.0.M2",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.mom.api:6.1.0.B021",
+    "caller": "|java+method:///org/eclipse/scout/rt/mom/api/marshaller/JsonMarshaller/unmarshall(java.lang.Object,java.util.Map)|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/rt/platform/BEANS/get(java.lang.Class)|",
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+method:///org/eclipse/scout/rt/platform/exception/DefaultRuntimeExceptionTranslator/translate(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/jr/ob/JSON/beanFrom(java.lang.Class,java.lang.Object)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/rt/platform/BEANS/get(java.lang.Class)|",
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+method:///org/eclipse/scout/rt/platform/exception/DefaultRuntimeExceptionTranslator/translate(java.lang.Throwable)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.8.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.mom.api:6.1.0.M2",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.mom.api:6.1.0.B021",
+    "caller": "|java+method:///org/eclipse/scout/rt/mom/api/marshaller/JsonMarshaller/marshall(java.lang.Object,java.util.Map)|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValueAsString(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/exception/DefaultRuntimeExceptionTranslator/translate(java.lang.Throwable)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValueAsString(java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/rt/platform/BEANS/get(java.lang.Class)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/exception/DefaultRuntimeExceptionTranslator/translate(java.lang.Throwable)|",
+      "|java+method:///java/io/StringWriter/getBuffer()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/io/StringWriter/close()|",
+      "|java+method:///org/eclipse/scout/rt/platform/BEANS/get(java.lang.Class)|",
+      "|java+constructor:///java/io/StringWriter/StringWriter()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+method:///com/fasterxml/jackson/jr/ob/JSON/write(java.lang.Object,java.io.Writer)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///java/lang/StringBuffer/toString()|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.8.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.mom.api:6.1.0.B021",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.mom.api:6.1.0.M2",
+    "caller": "|java+method:///org/eclipse/scout/rt/mom/api/marshaller/JsonMarshaller/unmarshall(java.lang.Object,java.util.Map)|",
+    "called": "|java+method:///com/fasterxml/jackson/jr/ob/JSON/beanFrom(java.lang.Class,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/rt/platform/BEANS/get(java.lang.Class)|",
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+method:///org/eclipse/scout/rt/platform/exception/DefaultRuntimeExceptionTranslator/translate(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/jr/ob/JSON/beanFrom(java.lang.Class,java.lang.Object)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/rt/platform/BEANS/get(java.lang.Class)|",
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+method:///org/eclipse/scout/rt/platform/exception/DefaultRuntimeExceptionTranslator/translate(java.lang.Throwable)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.jr:jackson-jr-objects:2.8.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.mom.api:6.1.0.B021",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.mom.api:6.1.0.M2",
+    "caller": "|java+method:///org/eclipse/scout/rt/mom/api/marshaller/JsonMarshaller/marshall(java.lang.Object,java.util.Map)|",
+    "called": "|java+method:///com/fasterxml/jackson/jr/ob/JSON/write(java.lang.Object,java.io.Writer)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/exception/DefaultRuntimeExceptionTranslator/translate(java.lang.Throwable)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValueAsString(java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/rt/platform/BEANS/get(java.lang.Class)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/exception/DefaultRuntimeExceptionTranslator/translate(java.lang.Throwable)|",
+      "|java+method:///java/io/StringWriter/getBuffer()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/io/StringWriter/close()|",
+      "|java+method:///org/eclipse/scout/rt/platform/BEANS/get(java.lang.Class)|",
+      "|java+constructor:///java/io/StringWriter/StringWriter()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+method:///com/fasterxml/jackson/jr/ob/JSON/write(java.lang.Object,java.io.Writer)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///java/lang/StringBuffer/toString()|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.jr:jackson-jr-objects:2.8.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.mom.api:6.1.0.B021",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.mom.api:6.1.0.M2",
+    "caller": "|java+constructor:///org/eclipse/scout/rt/mom/api/IMom$RequestReplyCancellationTopicProperty/IMom$RequestReplyCancellationTopicProperty()|",
+    "called": "|java+constructor:///org/eclipse/scout/rt/platform/config/AbstractStringConfigProperty/AbstractStringConfigProperty()|",
+    "v1Body": [
+      "|java+constructor:///org/eclipse/scout/rt/mom/api/AbstractDestinationConfigProperty/AbstractDestinationConfigProperty()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/eclipse/scout/rt/platform/config/AbstractStringConfigProperty/AbstractStringConfigProperty()|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:6.1.0.M2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.mom.api:6.1.0.B021",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.mom.api:6.1.0.M2",
+    "caller": "|java+method:///org/eclipse/scout/rt/mom/api/MOM/request(java.lang.Class,org.eclipse.scout.rt.mom.api.IBiDestination,java.lang.Object)|",
+    "called": "|java+method:///org/eclipse/scout/rt/platform/BEANS/get(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/scout/rt/mom/api/MOM/newPublishInput()|",
+      "|java+method:///org/eclipse/scout/rt/platform/BEANS/get(java.lang.Class)|",
+      "|java+method:///org/eclipse/scout/rt/mom/api/IMomTransport/request(org.eclipse.scout.rt.mom.api.IBiDestination,java.lang.Object,org.eclipse.scout.rt.mom.api.PublishInput)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/scout/rt/mom/api/IMom/request(org.eclipse.scout.rt.mom.api.IBiDestination,java.lang.Object,org.eclipse.scout.rt.mom.api.PublishInput)|",
+      "|java+method:///org/eclipse/scout/rt/mom/api/MOM/newPublishInput()|",
+      "|java+method:///org/eclipse/scout/rt/platform/BEANS/get(java.lang.Class)|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:6.1.0.M2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.mom.api:6.1.0.B021",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.mom.api:6.1.0.M2",
+    "caller": "|java+method:///org/eclipse/scout/rt/mom/api/MOM/request(java.lang.Class,org.eclipse.scout.rt.mom.api.IBiDestination,java.lang.Object,org.eclipse.scout.rt.mom.api.PublishInput)|",
+    "called": "|java+method:///org/eclipse/scout/rt/platform/BEANS/get(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/BEANS/get(java.lang.Class)|",
+      "|java+method:///org/eclipse/scout/rt/mom/api/IMomTransport/request(org.eclipse.scout.rt.mom.api.IBiDestination,java.lang.Object,org.eclipse.scout.rt.mom.api.PublishInput)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/BEANS/get(java.lang.Class)|",
+      "|java+method:///org/eclipse/scout/rt/mom/api/IMom/request(org.eclipse.scout.rt.mom.api.IBiDestination,java.lang.Object,org.eclipse.scout.rt.mom.api.PublishInput)|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:6.1.0.M2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.mom.api:6.1.0.B021",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.mom.api:6.1.0.M2",
+    "caller": "|java+method:///org/eclipse/scout/rt/mom/api/MOM/registerMarshaller(java.lang.Class,org.eclipse.scout.rt.mom.api.IDestination,org.eclipse.scout.rt.mom.api.marshaller.IMarshaller)|",
+    "called": "|java+method:///org/eclipse/scout/rt/platform/BEANS/get(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/BEANS/get(java.lang.Class)|",
+      "|java+method:///org/eclipse/scout/rt/mom/api/IMomTransport/registerMarshaller(org.eclipse.scout.rt.mom.api.IDestination,org.eclipse.scout.rt.mom.api.marshaller.IMarshaller)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/BEANS/get(java.lang.Class)|",
+      "|java+method:///org/eclipse/scout/rt/mom/api/IMom/registerMarshaller(org.eclipse.scout.rt.mom.api.IDestination,org.eclipse.scout.rt.mom.api.marshaller.IMarshaller)|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:6.1.0.M2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.mom.api:6.1.0.B021",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.mom.api:6.1.0.M2",
+    "caller": "|java+method:///org/eclipse/scout/rt/mom/api/marshaller/JsonMarshaller/marshall(java.lang.Object,java.util.Map)|",
+    "called": "|java+method:///org/eclipse/scout/rt/platform/BEANS/get(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/exception/DefaultRuntimeExceptionTranslator/translate(java.lang.Throwable)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValueAsString(java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/rt/platform/BEANS/get(java.lang.Class)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/exception/DefaultRuntimeExceptionTranslator/translate(java.lang.Throwable)|",
+      "|java+method:///java/io/StringWriter/getBuffer()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/io/StringWriter/close()|",
+      "|java+method:///org/eclipse/scout/rt/platform/BEANS/get(java.lang.Class)|",
+      "|java+constructor:///java/io/StringWriter/StringWriter()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+method:///com/fasterxml/jackson/jr/ob/JSON/write(java.lang.Object,java.io.Writer)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///java/lang/StringBuffer/toString()|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:6.1.0.M2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.mom.api:6.1.0.B021",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.mom.api:6.1.0.M2",
+    "caller": "|java+method:///org/eclipse/scout/rt/mom/api/marshaller/JsonMarshaller/unmarshall(java.lang.Object,java.util.Map)|",
+    "called": "|java+method:///org/eclipse/scout/rt/platform/BEANS/get(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/rt/platform/BEANS/get(java.lang.Class)|",
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+method:///org/eclipse/scout/rt/platform/exception/DefaultRuntimeExceptionTranslator/translate(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/jr/ob/JSON/beanFrom(java.lang.Class,java.lang.Object)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/rt/platform/BEANS/get(java.lang.Class)|",
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+method:///org/eclipse/scout/rt/platform/exception/DefaultRuntimeExceptionTranslator/translate(java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:6.1.0.M2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.mom.api:6.1.0.B021",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.mom.api:6.1.0.M2",
+    "caller": "|java+method:///org/eclipse/scout/rt/mom/api/MOM/publish(java.lang.Class,org.eclipse.scout.rt.mom.api.IDestination,java.lang.Object,org.eclipse.scout.rt.mom.api.PublishInput)|",
+    "called": "|java+method:///org/eclipse/scout/rt/platform/BEANS/get(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/scout/rt/mom/api/IMomTransport/publish(org.eclipse.scout.rt.mom.api.IDestination,java.lang.Object,org.eclipse.scout.rt.mom.api.PublishInput)|",
+      "|java+method:///org/eclipse/scout/rt/mom/api/MOM/newPublishInput()|",
+      "|java+method:///org/eclipse/scout/rt/platform/BEANS/get(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/BEANS/get(java.lang.Class)|",
+      "|java+method:///org/eclipse/scout/rt/mom/api/IMom/publish(org.eclipse.scout.rt.mom.api.IDestination,java.lang.Object,org.eclipse.scout.rt.mom.api.PublishInput)|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:6.1.0.M2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.mom.api:6.1.0.B021",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.mom.api:6.1.0.M2",
+    "caller": "|java+method:///org/eclipse/scout/rt/mom/api/Destination/toString()|",
+    "called": "|java+constructor:///org/eclipse/scout/rt/platform/util/ToStringBuilder/ToStringBuilder(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/util/ToStringBuilder/toString()|",
+      "|java+constructor:///org/eclipse/scout/rt/platform/util/ToStringBuilder/ToStringBuilder(java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/ToStringBuilder/attr(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/ToStringBuilder/attr(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/util/ToStringBuilder/toString()|",
+      "|java+constructor:///org/eclipse/scout/rt/platform/util/ToStringBuilder/ToStringBuilder(java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/ToStringBuilder/attr(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:6.1.0.M2",
+    "change": "UPDATED"
+  }
+]

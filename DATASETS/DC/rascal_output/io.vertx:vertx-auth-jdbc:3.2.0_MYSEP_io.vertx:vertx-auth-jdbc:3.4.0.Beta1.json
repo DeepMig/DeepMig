@@ -1,0 +1,53 @@
+[
+  {
+    "coordinatesV1": "io.vertx:vertx-auth-jdbc:3.2.0",
+    "coordinatesV2": "io.vertx:vertx-auth-jdbc:3.4.0.Beta1",
+    "caller": "|java+method:///io/vertx/ext/auth/jdbc/JDBCAuthOptions/createProvider(io.vertx.core.Vertx)|",
+    "called": "|java+method:///io/vertx/ext/jdbc/JDBCClient/createShared(io.vertx.core.Vertx,io.vertx.core.json.JsonObject,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///io/vertx/ext/auth/jdbc/JDBCAuth/setRolePrefix(java.lang.String)|",
+      "|java+method:///io/vertx/ext/jdbc/JDBCClient/createNonShared(io.vertx.core.Vertx,io.vertx.core.json.JsonObject)|",
+      "|java+method:///io/vertx/ext/auth/jdbc/JDBCAuth/setAuthenticationQuery(java.lang.String)|",
+      "|java+method:///io/vertx/ext/auth/jdbc/JDBCAuth/setRolesQuery(java.lang.String)|",
+      "|java+method:///io/vertx/ext/jdbc/JDBCClient/createShared(io.vertx.core.Vertx,io.vertx.core.json.JsonObject,java.lang.String)|",
+      "|java+method:///io/vertx/ext/jdbc/JDBCClient/createShared(io.vertx.core.Vertx,io.vertx.core.json.JsonObject)|",
+      "|java+method:///io/vertx/ext/auth/jdbc/JDBCAuthOptions/createProvider(io.vertx.core.Vertx)|",
+      "|java+method:///io/vertx/ext/auth/jdbc/JDBCAuth/create(io.vertx.ext.jdbc.JDBCClient)|",
+      "|java+method:///io/vertx/ext/auth/jdbc/JDBCAuth/setPermissionsQuery(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/vertx/ext/auth/jdbc/JDBCAuth/setRolePrefix(java.lang.String)|",
+      "|java+method:///io/vertx/ext/jdbc/JDBCClient/createNonShared(io.vertx.core.Vertx,io.vertx.core.json.JsonObject)|",
+      "|java+method:///io/vertx/ext/auth/jdbc/JDBCAuth/setAuthenticationQuery(java.lang.String)|",
+      "|java+method:///io/vertx/ext/auth/jdbc/JDBCAuth/setRolesQuery(java.lang.String)|",
+      "|java+method:///io/vertx/ext/jdbc/JDBCClient/createShared(io.vertx.core.Vertx,io.vertx.core.json.JsonObject,java.lang.String)|",
+      "|java+method:///io/vertx/ext/jdbc/JDBCClient/createShared(io.vertx.core.Vertx,io.vertx.core.json.JsonObject)|",
+      "|java+method:///io/vertx/ext/auth/jdbc/JDBCAuth/create(io.vertx.core.Vertx,io.vertx.ext.jdbc.JDBCClient)|",
+      "|java+method:///io/vertx/ext/auth/jdbc/JDBCAuthOptions/createProvider(io.vertx.core.Vertx)|",
+      "|java+method:///io/vertx/ext/auth/jdbc/JDBCAuth/setPermissionsQuery(java.lang.String)|"
+    ],
+    "affectedLib": "io.vertx:vertx-jdbc-client:3.4.0.Beta1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.vertx:vertx-auth-jdbc:3.2.0",
+    "coordinatesV2": "io.vertx:vertx-auth-jdbc:3.4.0.Beta1",
+    "caller": "|java+method:///io/vertx/ext/auth/jdbc/impl/JDBCAuthImpl$DefaultHashStrategy/computeHash(java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///io/vertx/core/VertxException/VertxException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/vertx/ext/auth/jdbc/impl/JDBCAuthImpl/computeHash(java.lang.String,java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///io/vertx/ext/auth/jdbc/impl/JDBCAuthImpl$DefaultHashStrategy/bytesToHex(byte%5B%5D)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///io/vertx/core/VertxException/VertxException(java.lang.Throwable)|",
+      "|java+method:///java/lang/String/getBytes(java.nio.charset.Charset)|",
+      "|java+method:///java/security/MessageDigest/digest(byte%5B%5D)|",
+      "|java+method:///java/security/MessageDigest/getInstance(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "io.vertx:vertx-core:3.4.0.Beta1",
+    "change": "UPDATED"
+  }
+]

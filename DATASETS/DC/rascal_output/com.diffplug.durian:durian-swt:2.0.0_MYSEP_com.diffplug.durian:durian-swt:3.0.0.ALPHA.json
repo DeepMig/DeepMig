@@ -1,0 +1,340 @@
+[
+  {
+    "coordinatesV1": "com.diffplug.durian:durian-swt:3.0.0.ALPHA",
+    "coordinatesV2": "com.diffplug.durian:durian-swt:2.0.0",
+    "caller": "|java+constructor:///com/diffplug/common/swt/SwtExec$SwtScheduler/SwtExec$SwtScheduler(com.diffplug.common.swt.SwtExec)|",
+    "called": "|java+constructor:///rx/Scheduler/Scheduler()|",
+    "v1Body": [
+      "|java+constructor:///rx/Scheduler/Scheduler()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/reactivex/Scheduler/Scheduler()|"
+    ],
+    "affectedLib": "io.reactivex:rxjava:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.diffplug.durian:durian-swt:3.0.0.ALPHA",
+    "coordinatesV2": "com.diffplug.durian:durian-swt:2.0.0",
+    "caller": "|java+method:///com/diffplug/common/swt/SwtRx/addListener(org.eclipse.swt.widgets.Widget,java.util.stream.Stream)|",
+    "called": "|java+method:///rx/subjects/PublishSubject/create()|",
+    "v1Body": [
+      "|java+method:///rx/subjects/PublishSubject/asObservable()|",
+      "|java+method:///rx/subjects/PublishSubject/create()|",
+      "|java+method:///java/util/stream/Stream/forEach(java.util.function.Consumer)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/stream/Stream/forEach(java.util.function.Consumer)|",
+      "|java+method:///io/reactivex/subjects/PublishSubject/create()|"
+    ],
+    "affectedLib": "io.reactivex:rxjava:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.diffplug.durian:durian-swt:3.0.0.ALPHA",
+    "coordinatesV2": "com.diffplug.durian:durian-swt:2.0.0",
+    "caller": "|java+constructor:///com/diffplug/common/swt/SwtExec$SwtOnlyScheduler$InnerImmediateScheduler/SwtExec$SwtOnlyScheduler$InnerImmediateScheduler()|",
+    "called": "|java+constructor:///rx/Scheduler$Worker/Scheduler$Worker()|",
+    "v1Body": [
+      "|java+constructor:///rx/Scheduler$Worker/Scheduler$Worker()|",
+      "|java+constructor:///rx/subscriptions/BooleanSubscription/BooleanSubscription()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/reactivex/disposables/Disposables/empty()|",
+      "|java+constructor:///io/reactivex/Scheduler$Worker/Scheduler$Worker()|"
+    ],
+    "affectedLib": "io.reactivex:rxjava:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.diffplug.durian:durian-swt:3.0.0.ALPHA",
+    "coordinatesV2": "com.diffplug.durian:durian-swt:2.0.0",
+    "caller": "|java+constructor:///com/diffplug/common/swt/SwtExec$SwtOnlyScheduler/SwtExec$SwtOnlyScheduler()|",
+    "called": "|java+constructor:///rx/Scheduler/Scheduler()|",
+    "v1Body": [
+      "|java+constructor:///rx/Scheduler/Scheduler()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/reactivex/Scheduler/Scheduler()|"
+    ],
+    "affectedLib": "io.reactivex:rxjava:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.diffplug.durian:durian-swt:3.0.0.ALPHA",
+    "coordinatesV2": "com.diffplug.durian:durian-swt:2.0.0",
+    "caller": "|java+method:///com/diffplug/common/swt/SwtExec/lambda$static$54(com.diffplug.common.swt.SwtExec)|",
+    "called": "|java+method:///rx/schedulers/Schedulers/immediate()|",
+    "v1Body": [
+      "|java+method:///rx/schedulers/Schedulers/immediate()|",
+      "|java+method:///com/diffplug/common/util/concurrent/MoreExecutors/directExecutor()|",
+      "|java+method:///com/diffplug/common/rx/Rx/callbackOn(java.util.concurrent.Executor,rx.Scheduler)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/diffplug/common/rx/Rx/callbackOn(java.util.concurrent.Executor,io.reactivex.Scheduler)|",
+      "|java+method:///io/reactivex/schedulers/Schedulers/trampoline()|",
+      "|java+method:///com/diffplug/common/util/concurrent/MoreExecutors/directExecutor()|"
+    ],
+    "affectedLib": "io.reactivex:rxjava:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.diffplug.durian:durian-swt:3.0.0.ALPHA",
+    "coordinatesV2": "com.diffplug.durian:durian-swt:2.0.0",
+    "caller": "|java+method:///com/diffplug/common/swt/Shells/confirmClose(org.eclipse.swt.widgets.Shell,java.lang.String,java.lang.String,java.lang.Runnable)|",
+    "called": "|java+method:///rx/subscriptions/BooleanSubscription/create(rx.functions.Action0)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/swt/widgets/Shell/addListener(int,org.eclipse.swt.widgets.Listener)|",
+      "|java+method:///rx/subscriptions/BooleanSubscription/create(rx.functions.Action0)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/swt/widgets/Shell/addListener(int,org.eclipse.swt.widgets.Listener)|",
+      "|java+method:///io/reactivex/disposables/Disposables/fromRunnable(java.lang.Runnable)|"
+    ],
+    "affectedLib": "io.reactivex:rxjava:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.diffplug.durian:durian-swt:3.0.0.ALPHA",
+    "coordinatesV2": "com.diffplug.durian:durian-swt:2.0.0",
+    "caller": "|java+method:///com/diffplug/common/swt/SwtRx/rightClickLocal(org.eclipse.swt.widgets.Control)|",
+    "called": "|java+method:///rx/subjects/PublishSubject/create()|",
+    "v1Body": [
+      "|java+method:///rx/subjects/PublishSubject/create()|",
+      "|java+method:///org/eclipse/swt/widgets/Control/addListener(int,org.eclipse.swt.widgets.Listener)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/swt/widgets/Control/addListener(int,org.eclipse.swt.widgets.Listener)|",
+      "|java+method:///io/reactivex/subjects/PublishSubject/create()|"
+    ],
+    "affectedLib": "io.reactivex:rxjava:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.diffplug.durian:durian-swt:3.0.0.ALPHA",
+    "coordinatesV2": "com.diffplug.durian:durian-swt:2.0.0",
+    "caller": "|java+method:///com/diffplug/common/swt/SwtRx/rightClickGlobal(org.eclipse.swt.widgets.Control)|",
+    "called": "|java+method:///rx/Observable/map(rx.functions.Func1)|",
+    "v1Body": [
+      "|java+method:///rx/Observable/map(rx.functions.Func1)|",
+      "|java+method:///com/diffplug/common/swt/SwtRx/rightClickLocal(org.eclipse.swt.widgets.Control)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/diffplug/common/swt/SwtRx/rightClickLocal(org.eclipse.swt.widgets.Control)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///io/reactivex/Observable/map(io.reactivex.functions.Function)|"
+    ],
+    "affectedLib": "io.reactivex:rxjava:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.diffplug.durian:durian-swt:3.0.0.ALPHA",
+    "coordinatesV2": "com.diffplug.durian:durian-swt:2.0.0",
+    "caller": "|java+constructor:///com/diffplug/common/swt/SwtExec$SwtScheduler$SwtWorker/SwtExec$SwtScheduler$SwtWorker(com.diffplug.common.swt.SwtExec)|",
+    "called": "|java+constructor:///rx/Scheduler$Worker/Scheduler$Worker()|",
+    "v1Body": [
+      "|java+constructor:///rx/Scheduler$Worker/Scheduler$Worker()|",
+      "|java+constructor:///java/util/HashSet/HashSet()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/reactivex/Scheduler$Worker/Scheduler$Worker()|",
+      "|java+constructor:///java/util/HashSet/HashSet()|"
+    ],
+    "affectedLib": "io.reactivex:rxjava:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.diffplug.durian:durian-swt:2.0.0",
+    "coordinatesV2": "com.diffplug.durian:durian-swt:3.0.0.ALPHA",
+    "caller": "|java+constructor:///com/diffplug/common/swt/SwtExec$SwtScheduler/SwtExec$SwtScheduler(com.diffplug.common.swt.SwtExec)|",
+    "called": "|java+constructor:///io/reactivex/Scheduler/Scheduler()|",
+    "v1Body": [
+      "|java+constructor:///rx/Scheduler/Scheduler()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/reactivex/Scheduler/Scheduler()|"
+    ],
+    "affectedLib": "io.reactivex.rxjava2:rxjava:2.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.diffplug.durian:durian-swt:2.0.0",
+    "coordinatesV2": "com.diffplug.durian:durian-swt:3.0.0.ALPHA",
+    "caller": "|java+constructor:///com/diffplug/common/swt/SwtExec$SwtOnlyScheduler/SwtExec$SwtOnlyScheduler()|",
+    "called": "|java+constructor:///io/reactivex/Scheduler/Scheduler()|",
+    "v1Body": [
+      "|java+constructor:///rx/Scheduler/Scheduler()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/reactivex/Scheduler/Scheduler()|"
+    ],
+    "affectedLib": "io.reactivex.rxjava2:rxjava:2.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.diffplug.durian:durian-swt:2.0.0",
+    "coordinatesV2": "com.diffplug.durian:durian-swt:3.0.0.ALPHA",
+    "caller": "|java+method:///com/diffplug/common/swt/SwtRx/addListener(org.eclipse.swt.widgets.Widget,java.util.stream.Stream)|",
+    "called": "|java+method:///io/reactivex/subjects/PublishSubject/create()|",
+    "v1Body": [
+      "|java+method:///rx/subjects/PublishSubject/asObservable()|",
+      "|java+method:///rx/subjects/PublishSubject/create()|",
+      "|java+method:///java/util/stream/Stream/forEach(java.util.function.Consumer)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/stream/Stream/forEach(java.util.function.Consumer)|",
+      "|java+method:///io/reactivex/subjects/PublishSubject/create()|"
+    ],
+    "affectedLib": "io.reactivex.rxjava2:rxjava:2.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.diffplug.durian:durian-swt:2.0.0",
+    "coordinatesV2": "com.diffplug.durian:durian-swt:3.0.0.ALPHA",
+    "caller": "|java+constructor:///com/diffplug/common/swt/SwtExec$SwtOnlyScheduler$InnerImmediateScheduler/SwtExec$SwtOnlyScheduler$InnerImmediateScheduler()|",
+    "called": "|java+method:///io/reactivex/disposables/Disposables/empty()|",
+    "v1Body": [
+      "|java+constructor:///rx/Scheduler$Worker/Scheduler$Worker()|",
+      "|java+constructor:///rx/subscriptions/BooleanSubscription/BooleanSubscription()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/reactivex/disposables/Disposables/empty()|",
+      "|java+constructor:///io/reactivex/Scheduler$Worker/Scheduler$Worker()|"
+    ],
+    "affectedLib": "io.reactivex.rxjava2:rxjava:2.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.diffplug.durian:durian-swt:2.0.0",
+    "coordinatesV2": "com.diffplug.durian:durian-swt:3.0.0.ALPHA",
+    "caller": "|java+method:///com/diffplug/common/swt/Shells/confirmClose(org.eclipse.swt.widgets.Shell,java.lang.String,java.lang.String,java.lang.Runnable)|",
+    "called": "|java+method:///io/reactivex/disposables/Disposables/fromRunnable(java.lang.Runnable)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/swt/widgets/Shell/addListener(int,org.eclipse.swt.widgets.Listener)|",
+      "|java+method:///rx/subscriptions/BooleanSubscription/create(rx.functions.Action0)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/swt/widgets/Shell/addListener(int,org.eclipse.swt.widgets.Listener)|",
+      "|java+method:///io/reactivex/disposables/Disposables/fromRunnable(java.lang.Runnable)|"
+    ],
+    "affectedLib": "io.reactivex.rxjava2:rxjava:2.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.diffplug.durian:durian-swt:2.0.0",
+    "coordinatesV2": "com.diffplug.durian:durian-swt:3.0.0.ALPHA",
+    "caller": "|java+method:///com/diffplug/common/swt/SwtRx/rightClickLocal(org.eclipse.swt.widgets.Control)|",
+    "called": "|java+method:///io/reactivex/subjects/PublishSubject/create()|",
+    "v1Body": [
+      "|java+method:///rx/subjects/PublishSubject/create()|",
+      "|java+method:///org/eclipse/swt/widgets/Control/addListener(int,org.eclipse.swt.widgets.Listener)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/swt/widgets/Control/addListener(int,org.eclipse.swt.widgets.Listener)|",
+      "|java+method:///io/reactivex/subjects/PublishSubject/create()|"
+    ],
+    "affectedLib": "io.reactivex.rxjava2:rxjava:2.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.diffplug.durian:durian-swt:2.0.0",
+    "coordinatesV2": "com.diffplug.durian:durian-swt:3.0.0.ALPHA",
+    "caller": "|java+method:///com/diffplug/common/swt/SwtRx/rightClickGlobal(org.eclipse.swt.widgets.Control)|",
+    "called": "|java+method:///io/reactivex/Observable/map(io.reactivex.functions.Function)|",
+    "v1Body": [
+      "|java+method:///rx/Observable/map(rx.functions.Func1)|",
+      "|java+method:///com/diffplug/common/swt/SwtRx/rightClickLocal(org.eclipse.swt.widgets.Control)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/diffplug/common/swt/SwtRx/rightClickLocal(org.eclipse.swt.widgets.Control)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///io/reactivex/Observable/map(io.reactivex.functions.Function)|"
+    ],
+    "affectedLib": "io.reactivex.rxjava2:rxjava:2.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.diffplug.durian:durian-swt:2.0.0",
+    "coordinatesV2": "com.diffplug.durian:durian-swt:3.0.0.ALPHA",
+    "caller": "|java+constructor:///com/diffplug/common/swt/SwtExec$SwtScheduler$SwtWorker/SwtExec$SwtScheduler$SwtWorker(com.diffplug.common.swt.SwtExec)|",
+    "called": "|java+constructor:///io/reactivex/Scheduler$Worker/Scheduler$Worker()|",
+    "v1Body": [
+      "|java+constructor:///rx/Scheduler$Worker/Scheduler$Worker()|",
+      "|java+constructor:///java/util/HashSet/HashSet()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/reactivex/Scheduler$Worker/Scheduler$Worker()|",
+      "|java+constructor:///java/util/HashSet/HashSet()|"
+    ],
+    "affectedLib": "io.reactivex.rxjava2:rxjava:2.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.diffplug.durian:durian-swt:2.0.0",
+    "coordinatesV2": "com.diffplug.durian:durian-swt:3.0.0.ALPHA",
+    "caller": "|java+method:///com/diffplug/common/swt/SwtDebug/dumpEvents(java.lang.String,org.eclipse.swt.widgets.Widget,com.diffplug.common.base.StringPrinter,java.util.stream.Stream)|",
+    "called": "|java+method:///com/diffplug/common/rx/Rx/subscribe(io.reactivex.Observable,java.util.function.Consumer)|",
+    "v1Body": [
+      "|java+method:///com/diffplug/common/rx/Rx/subscribe(rx.Observable,java.util.function.Consumer)|",
+      "|java+method:///com/diffplug/common/swt/SwtRx/addListener(org.eclipse.swt.widgets.Widget,java.util.stream.Stream)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/diffplug/common/swt/SwtRx/addListener(org.eclipse.swt.widgets.Widget,java.util.stream.Stream)|",
+      "|java+method:///com/diffplug/common/rx/Rx/subscribe(io.reactivex.Observable,java.util.function.Consumer)|"
+    ],
+    "affectedLib": "com.diffplug.durian:durian-rx:3.0.0.ALPHA",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.diffplug.durian:durian-swt:2.0.0",
+    "coordinatesV2": "com.diffplug.durian:durian-swt:3.0.0.ALPHA",
+    "caller": "|java+method:///com/diffplug/common/swt/SwtExec/lambda$new$49(com.diffplug.common.swt.SwtExec)|",
+    "called": "|java+method:///com/diffplug/common/rx/Rx/callbackOn(java.util.concurrent.Executor,io.reactivex.Scheduler)|",
+    "v1Body": [
+      "|java+constructor:///com/diffplug/common/swt/SwtExec$SwtScheduler/SwtExec$SwtScheduler(com.diffplug.common.swt.SwtExec)|",
+      "|java+method:///com/diffplug/common/rx/Rx/callbackOn(java.util.concurrent.Executor,rx.Scheduler)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/diffplug/common/swt/SwtExec$SwtScheduler/SwtExec$SwtScheduler(com.diffplug.common.swt.SwtExec)|",
+      "|java+method:///com/diffplug/common/rx/Rx/callbackOn(java.util.concurrent.Executor,io.reactivex.Scheduler)|"
+    ],
+    "affectedLib": "com.diffplug.durian:durian-rx:3.0.0.ALPHA",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.diffplug.durian:durian-swt:2.0.0",
+    "coordinatesV2": "com.diffplug.durian:durian-swt:3.0.0.ALPHA",
+    "caller": "|java+method:///com/diffplug/common/swt/SwtExec/lambda$swtOnly$52(com.diffplug.common.swt.SwtExec)|",
+    "called": "|java+method:///com/diffplug/common/rx/Rx/callbackOn(java.util.concurrent.Executor,io.reactivex.Scheduler)|",
+    "v1Body": [
+      "|java+constructor:///com/diffplug/common/swt/SwtExec$SwtOnlyScheduler/SwtExec$SwtOnlyScheduler()|",
+      "|java+method:///com/diffplug/common/rx/Rx/callbackOn(java.util.concurrent.Executor,rx.Scheduler)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/diffplug/common/rx/Rx/callbackOn(java.util.concurrent.Executor,io.reactivex.Scheduler)|",
+      "|java+constructor:///com/diffplug/common/swt/SwtExec$SwtOnlyScheduler/SwtExec$SwtOnlyScheduler()|"
+    ],
+    "affectedLib": "com.diffplug.durian:durian-rx:3.0.0.ALPHA",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.diffplug.durian:durian-swt:2.0.0",
+    "coordinatesV2": "com.diffplug.durian:durian-swt:3.0.0.ALPHA",
+    "caller": "|java+method:///com/diffplug/common/swt/SwtExec/lambda$static$54(com.diffplug.common.swt.SwtExec)|",
+    "called": "|java+method:///com/diffplug/common/rx/Rx/callbackOn(java.util.concurrent.Executor,io.reactivex.Scheduler)|",
+    "v1Body": [
+      "|java+method:///rx/schedulers/Schedulers/immediate()|",
+      "|java+method:///com/diffplug/common/util/concurrent/MoreExecutors/directExecutor()|",
+      "|java+method:///com/diffplug/common/rx/Rx/callbackOn(java.util.concurrent.Executor,rx.Scheduler)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/diffplug/common/rx/Rx/callbackOn(java.util.concurrent.Executor,io.reactivex.Scheduler)|",
+      "|java+method:///io/reactivex/schedulers/Schedulers/trampoline()|",
+      "|java+method:///com/diffplug/common/util/concurrent/MoreExecutors/directExecutor()|"
+    ],
+    "affectedLib": "com.diffplug.durian:durian-rx:3.0.0.ALPHA",
+    "change": "UPDATED"
+  }
+]

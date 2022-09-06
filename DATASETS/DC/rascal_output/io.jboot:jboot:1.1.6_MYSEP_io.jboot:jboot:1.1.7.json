@@ -1,0 +1,35 @@
+[
+  {
+    "coordinatesV1": "io.jboot:jboot:1.1.6",
+    "coordinatesV2": "io.jboot:jboot:1.1.7",
+    "caller": "|java+method:///io/jboot/core/serializer/FastjsonSerializer/deserialize(byte%5B%5D)|",
+    "called": "|java+method:///com/alibaba/fastjson/JSONObject/getObject(java.lang.String,java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///io/jboot/exception/JbootException/JbootException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/alibaba/fastjson/JSON/parseObject(java.lang.String)|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D)|",
+      "|java+method:///com/alibaba/fastjson/JSONObject/getObject(java.lang.String,java.lang.Class)|"
+    ],
+    "affectedLib": "com.alibaba:fastjson:1.2.42",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.jboot:jboot:1.1.6",
+    "coordinatesV2": "io.jboot:jboot:1.1.7",
+    "caller": "|java+method:///io/jboot/core/serializer/FastjsonSerializer/serialize(java.lang.Object)|",
+    "called": "|java+method:///com/alibaba/fastjson/JSON/toJSONString(java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///io/jboot/exception/JbootException/JbootException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/jboot/core/serializer/FastjsonSerializer$FastJsonCacheObject/FastjsonSerializer$FastJsonCacheObject(java.lang.Class,java.lang.Object)|",
+      "|java+method:///com/alibaba/fastjson/JSON/toJSONString(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/String/getBytes()|"
+    ],
+    "affectedLib": "com.alibaba:fastjson:1.2.42",
+    "change": "UPDATED"
+  }
+]

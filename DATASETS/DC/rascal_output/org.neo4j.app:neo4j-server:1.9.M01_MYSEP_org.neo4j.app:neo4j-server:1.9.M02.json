@@ -1,0 +1,94 @@
+[
+  {
+    "coordinatesV1": "org.neo4j.app:neo4j-server:1.9.M01",
+    "coordinatesV2": "org.neo4j.app:neo4j-server:1.9.M02",
+    "caller": "|java+method:///org/neo4j/server/database/CypherExecutor/start()|",
+    "called": "|java+constructor:///org/neo4j/cypher/javacompat/ExecutionEngine/ExecutionEngine(org.neo4j.graphdb.GraphDatabaseService,org.neo4j.kernel.impl.util.StringLogger)|",
+    "v1Body": [
+      "|java+constructor:///org/neo4j/cypher/javacompat/ExecutionEngine/ExecutionEngine(org.neo4j.graphdb.GraphDatabaseService)|",
+      "|java+method:///org/neo4j/server/database/Database/getGraph()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/neo4j/cypher/javacompat/ExecutionEngine/ExecutionEngine(org.neo4j.graphdb.GraphDatabaseService,org.neo4j.kernel.impl.util.StringLogger)|",
+      "|java+method:///org/neo4j/server/database/Database/getGraph()|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-cypher:1.9.M02",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.neo4j.app:neo4j-server:1.9.M01",
+    "coordinatesV2": "org.neo4j.app:neo4j-server:1.9.M02",
+    "caller": "|java+method:///org/neo4j/server/webadmin/console/CypherSession/evaluate(java.lang.String)|",
+    "called": "|java+method:///org/neo4j/cypher/javacompat/ExecutionEngine/execute(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/neo4j/cypher/javacompat/ExecutionResult/toString()|",
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///org/neo4j/server/logging/Logger/error(java.lang.Throwable)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/neo4j/cypher/SyntaxException/getMessage()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///org/neo4j/helpers/Pair/of(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/neo4j/cypher/javacompat/ExecutionEngine/execute(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/neo4j/cypher/javacompat/ExecutionResult/toString()|",
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///org/neo4j/server/logging/Logger/error(java.lang.Throwable)|",
+      "|java+method:///org/neo4j/server/database/CypherExecutor/getExecutionEngine()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/neo4j/cypher/SyntaxException/getMessage()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///org/neo4j/helpers/Pair/of(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/neo4j/cypher/javacompat/ExecutionEngine/execute(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-cypher:1.9.M02",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.neo4j.app:neo4j-server:1.9.M01",
+    "coordinatesV2": "org.neo4j.app:neo4j-server:1.9.M02",
+    "caller": "|java+method:///org/neo4j/server/rest/repr/ExceptionRepresentation/serialize(org.neo4j.server.rest.repr.MappingSerializer)|",
+    "called": "|java+method:///org/neo4j/server/rest/repr/MappingSerializer/putList(java.lang.String,org.neo4j.server.rest.repr.ListRepresentation)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList(int)|",
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///java/lang/Throwable/getStackTrace()|",
+      "|java+method:///org/neo4j/server/rest/repr/MappingSerializer/putList(java.lang.String,org.neo4j.server.rest.repr.ListRepresentation)|",
+      "|java+method:///java/util/Collection/add(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/String/matches(java.lang.String)|",
+      "|java+method:///java/lang/StackTraceElement/toString()|",
+      "|java+method:///org/neo4j/server/rest/repr/ListRepresentation/string(java.lang.Iterable)|",
+      "|java+method:///java/lang/Throwable/getMessage()|",
+      "|java+method:///org/neo4j/server/rest/repr/MappingSerializer/putString(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList(int)|",
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///java/lang/Throwable/getStackTrace()|",
+      "|java+method:///java/lang/Throwable/getCause()|",
+      "|java+method:///org/neo4j/server/rest/repr/MappingSerializer/putList(java.lang.String,org.neo4j.server.rest.repr.ListRepresentation)|",
+      "|java+method:///java/util/Collection/add(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/neo4j/server/rest/repr/MappingSerializer/putMapping(java.lang.String,org.neo4j.server.rest.repr.MappingRepresentation)|",
+      "|java+constructor:///org/neo4j/server/rest/repr/ExceptionRepresentation/ExceptionRepresentation(java.lang.Throwable)|",
+      "|java+method:///java/lang/String/matches(java.lang.String)|",
+      "|java+method:///java/lang/StackTraceElement/toString()|",
+      "|java+method:///org/neo4j/server/rest/repr/ListRepresentation/string(java.lang.Iterable)|",
+      "|java+method:///java/lang/Throwable/getMessage()|",
+      "|java+method:///org/neo4j/server/rest/repr/MappingSerializer/putString(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.neo4j:server-api:1.9.M02",
+    "change": "UPDATED"
+  }
+]

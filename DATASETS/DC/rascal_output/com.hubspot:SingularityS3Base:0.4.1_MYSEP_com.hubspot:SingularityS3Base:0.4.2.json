@@ -1,0 +1,46 @@
+[
+  {
+    "coordinatesV1": "com.hubspot:SingularityS3Base:0.4.1",
+    "coordinatesV2": "com.hubspot:SingularityS3Base:0.4.2",
+    "caller": "|java+method:///com/hubspot/singularity/s3/base/config/SingularityS3Configuration/toString()|",
+    "called": "|java+method:///com/hubspot/singularity/runner/base/jackson/ObfuscateAnnotationIntrospector$ObfuscateSerializer/obfuscateValue(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hubspot/singularity/runner/base/jackson/ObfuscateAnnotationIntrospector$ObfuscateSerializer/obfuscateValue(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "com.hubspot:SingularityRunnerBase:0.4.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.hubspot:SingularityS3Base:0.4.1",
+    "coordinatesV2": "com.hubspot:SingularityS3Base:0.4.2",
+    "caller": "|java+constructor:///com/hubspot/singularity/s3/base/ArtifactManager/ArtifactManager(com.hubspot.singularity.s3.base.config.SingularityS3Configuration,org.slf4j.Logger)|",
+    "called": "|java+constructor:///com/hubspot/singularity/runner/base/shared/SimpleProcessManager/SimpleProcessManager(org.slf4j.Logger)|",
+    "v1Body": [
+      "|java+method:///com/hubspot/singularity/s3/base/config/SingularityS3Configuration/getCacheDirectory()|",
+      "|java+method:///java/nio/file/Paths/get(java.lang.String,java.lang.String%5B%5D)|",
+      "|java+constructor:///com/hubspot/singularity/s3/base/S3ArtifactDownloader/S3ArtifactDownloader(com.hubspot.singularity.s3.base.config.SingularityS3Configuration,org.slf4j.Logger)|",
+      "|java+constructor:///com/hubspot/singularity/runner/base/shared/SimpleProcessManager/SimpleProcessManager(org.slf4j.Logger)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/nio/file/Paths/get(java.lang.String,java.lang.String%5B%5D)|",
+      "|java+constructor:///com/hubspot/singularity/s3/base/S3ArtifactDownloader/S3ArtifactDownloader(com.hubspot.singularity.s3.base.config.SingularityS3Configuration,org.slf4j.Logger)|",
+      "|java+constructor:///com/hubspot/singularity/runner/base/shared/SimpleProcessManager/SimpleProcessManager(org.slf4j.Logger)|",
+      "|java+method:///com/hubspot/singularity/s3/base/config/SingularityS3Configuration/getArtifactCacheDirectory()|"
+    ],
+    "affectedLib": "com.hubspot:SingularityRunnerBase:0.4.2",
+    "change": "UPDATED"
+  }
+]

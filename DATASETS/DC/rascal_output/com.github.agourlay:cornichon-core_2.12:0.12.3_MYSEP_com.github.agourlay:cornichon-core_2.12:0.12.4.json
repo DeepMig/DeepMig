@@ -1,0 +1,44 @@
+[
+  {
+    "coordinatesV1": "com.github.agourlay:cornichon-core_2.12:0.12.3",
+    "coordinatesV2": "com.github.agourlay:cornichon-core_2.12:0.12.4",
+    "caller": "|java+method:///com/github/agourlay/cornichon/steps/wrapped/ConcurrentlyStep/run(com.github.agourlay.cornichon.core.Engine,com.github.agourlay.cornichon.core.RunState,monix.execution.Scheduler)|",
+    "called": "|java+method:///monix/reactive/Observable/toListL()|",
+    "v1Body": [
+      "|java+method:///scala/collection/immutable/List$/canBuildFrom()|",
+      "|java+method:///com/github/agourlay/cornichon/steps/wrapped/ConcurrentlyStep/nested()|",
+      "|java+method:///com/github/agourlay/cornichon/util/Futures$/failAfter(scala.concurrent.duration.FiniteDuration,scala.Function0,java.lang.Exception,monix.execution.Scheduler)|",
+      "|java+method:///com/github/agourlay/cornichon/steps/wrapped/ConcurrentlyTimeout$/toException()|",
+      "|java+method:///scala/collection/immutable/List$/fill(int,scala.Function0)|",
+      "|java+method:///scala/concurrent/Future/flatMap(scala.Function1,scala.concurrent.ExecutionContext)|",
+      "|java+method:///com/github/agourlay/cornichon/core/RunState/forNestedSteps(scala.collection.immutable.List)|",
+      "|java+method:///scala/concurrent/Future$/sequence(scala.collection.TraversableOnce,scala.collection.generic.CanBuildFrom,scala.concurrent.ExecutionContext)|",
+      "|java+method:///com/github/agourlay/cornichon/core/RunState/depth()|",
+      "|java+method:///java/lang/System/nanoTime()|",
+      "|java+method:///com/github/agourlay/cornichon/steps/wrapped/ConcurrentlyStep/factor()|",
+      "|java+method:///com/github/agourlay/cornichon/steps/wrapped/ConcurrentlyStep/maxTime()|"
+    ],
+    "v2Body": [
+      "|java+method:///monix/reactive/observables/ObservableLike/takeUntil(monix.reactive.Observable)|",
+      "|java+method:///com/github/agourlay/cornichon/steps/wrapped/ConcurrentlyStep/nested()|",
+      "|java+method:///monix/reactive/Observable/toListL()|",
+      "|java+method:///com/github/agourlay/cornichon/steps/wrapped/ConcurrentlyStep/run(com.github.agourlay.cornichon.core.Engine,com.github.agourlay.cornichon.core.RunState,monix.execution.Scheduler)|",
+      "|java+method:///monix/execution/CancelableFuture/recover(scala.PartialFunction,scala.concurrent.ExecutionContext)|",
+      "|java+method:///monix/execution/CancelableFuture/flatMap(scala.Function1,scala.concurrent.ExecutionContext)|",
+      "|java+method:///monix/reactive/Observable$/fromIterator(scala.collection.Iterator)|",
+      "|java+method:///monix/reactive/Observable/mapAsync(int,scala.Function1)|",
+      "|java+method:///scala/collection/LinearSeqLike/iterator()|",
+      "|java+constructor:///com/github/agourlay/cornichon/steps/wrapped/ConcurrentlyStep$$anonfun$run$8/ConcurrentlyStep$$anonfun$run$8(com.github.agourlay.cornichon.steps.wrapped.ConcurrentlyStep,com.github.agourlay.cornichon.core.RunState,int)|",
+      "|java+method:///scala/collection/immutable/List$/fill(int,scala.Function0)|",
+      "|java+method:///com/github/agourlay/cornichon/core/RunState/forNestedSteps(scala.collection.immutable.List)|",
+      "|java+method:///com/github/agourlay/cornichon/core/RunState/depth()|",
+      "|java+method:///java/lang/System/nanoTime()|",
+      "|java+method:///com/github/agourlay/cornichon/steps/wrapped/ConcurrentlyStep/factor()|",
+      "|java+method:///com/github/agourlay/cornichon/steps/wrapped/ConcurrentlyStep/maxTime()|",
+      "|java+method:///monix/reactive/Observable$/evalDelayed(scala.concurrent.duration.FiniteDuration,scala.Function0)|",
+      "|java+method:///monix/eval/Task/runAsync(monix.execution.Scheduler)|"
+    ],
+    "affectedLib": "io.monix:monix-reactive_2.12:2.3.0",
+    "change": "ADDED"
+  }
+]

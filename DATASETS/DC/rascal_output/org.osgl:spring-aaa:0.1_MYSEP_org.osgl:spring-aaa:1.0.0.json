@@ -1,0 +1,100 @@
+[
+  {
+    "coordinatesV1": "org.osgl:spring-aaa:0.1",
+    "coordinatesV2": "org.osgl:spring-aaa:1.0.0",
+    "caller": "|java+method:///org/osgl/aaa/spring/web/A3SessionManager/onSessionResolved(org.rythmengine.spring.web.Session)|",
+    "called": "|java+method:///org/rythmengine/spring/web/Session/get(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/ThreadLocal/set(java.lang.Object)|",
+      "|java+method:///org/osgl/aaa/spring/web/AAAConfigurer/getAAAContext()|",
+      "|java+method:///org/osgl/aaa/AAAContext/getPersistentService()|",
+      "|java+method:///org/osgl/aaa/AAAPersistentService/findByName(java.lang.String,java.lang.Class)|",
+      "|java+method:///org/osgl/aaa/spring/web/A3SessionManager/fireEvent(org.osgl.aaa.Principal,java.lang.Object)|",
+      "|java+method:///java/lang/ThreadLocal/get()|",
+      "|java+method:///org/osgl/aaa/AAA/setContext(org.osgl.aaa.AAAContext)|",
+      "|java+method:///org/osgl/_/T2(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/osgl/aaa/AAAContext/setCurrentPrincipal(org.osgl.aaa.Principal)|",
+      "|java+method:///org/rythmengine/spring/web/Session/get(java.lang.String)|",
+      "|java+method:///org/osgl/aaa/spring/web/AAAConfigurer/getSessionKeyUserName()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/ThreadLocal/set(java.lang.Object)|",
+      "|java+method:///org/osgl/aaa/AAAContext/setCurrentPrincipal(org.osgl.aaa.Principal)|",
+      "|java+method:///org/osgl/aaa/AAAPersistentService/findByName(java.lang.String,java.lang.Class)|",
+      "|java+method:///org/osgl/aaa/spring/web/A3SessionManager/fireEvent(org.osgl.aaa.Principal,java.lang.Object)|",
+      "|java+method:///java/lang/ThreadLocal/get()|",
+      "|java+method:///org/osgl/aaa/AAA/setContext(org.osgl.aaa.AAAContext)|",
+      "|java+method:///org/osgl/$/T2(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/osgl/aaa/spring/web/AAAConfigurer/createAAAContext()|",
+      "|java+method:///org/osgl/aaa/AAAContext/getPersistentService()|",
+      "|java+method:///org/rythmengine/spring/web/Session/get(java.lang.String)|",
+      "|java+method:///org/osgl/aaa/spring/web/AAAConfigurer/getSessionKeyUserName()|"
+    ],
+    "affectedLib": "org.rythmengine:spring-rythm:1.2.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.osgl:spring-aaa:0.1",
+    "coordinatesV2": "org.osgl:spring-aaa:1.0.0",
+    "caller": "|java+method:///org/osgl/aaa/spring/web/A3SessionManager/register(org.springframework.web.servlet.config.annotation.InterceptorRegistry)|",
+    "called": "|java+method:///org/rythmengine/spring/web/SessionManager/addListener(org.rythmengine.spring.web.SessionManager$Listener)|",
+    "v1Body": [
+      "|java+method:///org/rythmengine/spring/web/SessionManager/addListener(org.rythmengine.spring.web.SessionManager$Listener)|",
+      "|java+method:///org/springframework/web/servlet/config/annotation/InterceptorRegistry/addInterceptor(org.springframework.web.servlet.HandlerInterceptor)|",
+      "|java+method:///org/rythmengine/spring/web/RythmConfigurer/sessionManagerEnabled()|",
+      "|java+method:///org/rythmengine/spring/web/RythmConfigurer/getInstance()|",
+      "|java+constructor:///org/osgl/aaa/spring/web/A3HttpSessionManager/A3HttpSessionManager()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/rythmengine/spring/web/SessionManager/addListener(org.rythmengine.spring.web.SessionManager$Listener)|",
+      "|java+method:///org/springframework/web/servlet/config/annotation/InterceptorRegistry/addInterceptor(org.springframework.web.servlet.HandlerInterceptor)|",
+      "|java+method:///org/rythmengine/spring/web/RythmConfigurer/sessionManagerEnabled()|",
+      "|java+method:///org/rythmengine/spring/web/RythmConfigurer/getInstance()|"
+    ],
+    "affectedLib": "org.rythmengine:spring-rythm:1.2.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.osgl:spring-aaa:0.1",
+    "coordinatesV2": "org.osgl:spring-aaa:1.0.0",
+    "caller": "|java+method:///org/osgl/aaa/spring/web/AAAConfigurer/getAAAContext()|",
+    "called": "|java+constructor:///org/osgl/aaa/impl/SimpleAAAContext/SimpleAAAContext(org.osgl.aaa.AuthenticationService,org.osgl.aaa.AuthorizationService,org.osgl.aaa.AAAPersistentService,org.osgl.aaa.Auditor,int,org.osgl.aaa.Principal,boolean)|",
+    "v1Body": [
+      "|java+method:///org/osgl/aaa/impl/SimplePrincipal/createSystemPrincipal(java.lang.String)|",
+      "|java+constructor:///org/osgl/aaa/impl/SimpleAAAContext/SimpleAAAContext(org.osgl.aaa.AuthenticationService,org.osgl.aaa.AuthorizationService,org.osgl.aaa.AAAPersistentService,int,org.osgl.aaa.Principal,boolean)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/osgl/aaa/impl/SimpleAAAContext/SimpleAAAContext(org.osgl.aaa.AuthenticationService,org.osgl.aaa.AuthorizationService,org.osgl.aaa.AAAPersistentService,org.osgl.aaa.Auditor,int,org.osgl.aaa.Principal,boolean)|"
+    ],
+    "affectedLib": "org.osgl:aaa-core:1.3.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.osgl:spring-aaa:0.1",
+    "coordinatesV2": "org.osgl:spring-aaa:1.0.0",
+    "caller": "|java+method:///org/osgl/aaa/spring/web/A3Manager/preHandle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Object)|",
+    "called": "|java+method:///org/osgl/util/S/notEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/osgl/aaa/AAAPersistentService/findByName(java.lang.String,java.lang.Class)|",
+      "|java+method:///org/osgl/aaa/spring/web/A3Manager/firePrincipalResolved(org.osgl.aaa.Principal,java.lang.Object)|",
+      "|java+method:///org/osgl/aaa/spring/web/AAAConfigurer/getAAAContext()|",
+      "|java+method:///org/rythmengine/utils/S/notEmpty(java.lang.String)|",
+      "|java+method:///org/osgl/aaa/AAA/setContext(org.osgl.aaa.AAAContext)|",
+      "|java+method:///org/osgl/aaa/AAAContext/setCurrentPrincipal(org.osgl.aaa.Principal)|",
+      "|java+method:///org/osgl/aaa/spring/web/A3Manager/resolveUserName(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///org/osgl/aaa/AAAContext/getPersistentService()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/osgl/aaa/AAAPersistentService/findByName(java.lang.String,java.lang.Class)|",
+      "|java+method:///org/osgl/aaa/spring/web/A3Manager/firePrincipalResolved(org.osgl.aaa.Principal,java.lang.Object)|",
+      "|java+method:///org/osgl/aaa/AAA/setContext(org.osgl.aaa.AAAContext)|",
+      "|java+method:///org/osgl/aaa/AAAContext/setCurrentPrincipal(org.osgl.aaa.Principal)|",
+      "|java+method:///org/osgl/aaa/spring/web/A3Manager/resolveUserName(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///org/osgl/util/S/notEmpty(java.lang.String)|",
+      "|java+method:///org/osgl/aaa/spring/web/AAAConfigurer/createAAAContext()|",
+      "|java+method:///org/osgl/aaa/AAAContext/getPersistentService()|"
+    ],
+    "affectedLib": "org.osgl:osgl-tool:1.7.0",
+    "change": "UPDATED"
+  }
+]

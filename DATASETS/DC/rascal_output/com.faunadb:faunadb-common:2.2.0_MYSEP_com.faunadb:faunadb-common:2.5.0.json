@@ -1,0 +1,140 @@
+[
+  {
+    "coordinatesV1": "com.faunadb:faunadb-common:2.5.0",
+    "coordinatesV2": "com.faunadb:faunadb-common:2.2.0",
+    "caller": "|java+method:///com/faunadb/common/Connection/logFailure(com.ning.http.client.Request,java.lang.Throwable)|",
+    "called": "|java+method:///com/google/common/base/Optional/fromNullable(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/ning/http/client/Request/getStringData()|",
+      "|java+method:///com/ning/http/client/Request/getMethod()|",
+      "|java+method:///java/lang/Throwable/getMessage()|",
+      "|java+method:///com/google/common/base/Optional/or(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/ning/http/client/Request/getUrl()|",
+      "|java+method:///com/google/common/base/Optional/fromNullable(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/ning/http/client/Request/getStringData()|",
+      "|java+method:///com/ning/http/client/Request/getMethod()|",
+      "|java+method:///java/lang/Throwable/getMessage()|",
+      "|java+method:///java/util/Optional/ofNullable(java.lang.Object)|",
+      "|java+method:///java/util/Optional/orElse(java.lang.Object)|",
+      "|java+method:///com/ning/http/client/Request/getUrl()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.faunadb:faunadb-common:2.5.0",
+    "coordinatesV2": "com.faunadb:faunadb-common:2.2.0",
+    "caller": "|java+method:///com/faunadb/common/Connection$1/onThrowable(java.lang.Throwable)|",
+    "called": "|java+method:///com/google/common/util/concurrent/SettableFuture/setException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///com/faunadb/common/Connection/access$300(com.faunadb.common.Connection,com.ning.http.client.Request,java.lang.Throwable)|",
+      "|java+method:///com/codahale/metrics/Timer$Context/stop()|",
+      "|java+method:///com/google/common/util/concurrent/SettableFuture/setException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/faunadb/common/Connection/access$300(com.faunadb.common.Connection,com.ning.http.client.Request,java.lang.Throwable)|",
+      "|java+method:///com/codahale/metrics/Timer$Context/stop()|",
+      "|java+method:///java/util/concurrent/CompletableFuture/completeExceptionally(java.lang.Throwable)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.faunadb:faunadb-common:2.5.0",
+    "coordinatesV2": "com.faunadb:faunadb-common:2.2.0",
+    "caller": "|java+method:///com/faunadb/common/Connection$1/onCompleted(com.ning.http.client.Response)|",
+    "called": "|java+method:///com/google/common/util/concurrent/SettableFuture/set(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/faunadb/common/Connection$1/onCompleted(com.ning.http.client.Response)|",
+      "|java+method:///com/faunadb/common/Connection/access$400(com.faunadb.common.Connection,com.ning.http.client.Request,com.ning.http.client.Response)|",
+      "|java+method:///com/codahale/metrics/Timer$Context/stop()|",
+      "|java+method:///com/google/common/util/concurrent/SettableFuture/set(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/CompletableFuture/complete(java.lang.Object)|",
+      "|java+method:///com/faunadb/common/Connection$1/onCompleted(com.ning.http.client.Response)|",
+      "|java+method:///com/faunadb/common/Connection/access$400(com.faunadb.common.Connection)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicLong/compareAndSet(long,long)|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicLong/get()|",
+      "|java+method:///com/ning/http/client/Response/getHeader(java.lang.String)|",
+      "|java+method:///java/lang/Long/valueOf(java.lang.String)|",
+      "|java+method:///com/faunadb/common/Connection/access$500(com.faunadb.common.Connection,com.ning.http.client.Request,com.ning.http.client.Response)|",
+      "|java+method:///com/codahale/metrics/Timer$Context/stop()|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.faunadb:faunadb-common:2.5.0",
+    "coordinatesV2": "com.faunadb:faunadb-common:2.2.0",
+    "caller": "|java+method:///com/faunadb/common/Connection/logSuccess(com.ning.http.client.Request,com.ning.http.client.Response)|",
+    "called": "|java+method:///com/google/common/base/Optional/fromNullable(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///com/ning/http/client/Request/getStringData()|",
+      "|java+method:///com/faunadb/common/Connection/getResponseBody(com.ning.http.client.Response)|",
+      "|java+method:///com/ning/http/client/Request/getMethod()|",
+      "|java+method:///com/ning/http/client/Response/getHeader(java.lang.String)|",
+      "|java+method:///com/google/common/base/Optional/or(java.lang.Object)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///com/ning/http/client/Response/getStatusCode()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/ning/http/client/Request/getUrl()|",
+      "|java+method:///com/google/common/base/Optional/fromNullable(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///com/ning/http/client/Request/getStringData()|",
+      "|java+method:///com/faunadb/common/Connection/getResponseBody(com.ning.http.client.Response)|",
+      "|java+method:///com/ning/http/client/Request/getMethod()|",
+      "|java+method:///java/util/Optional/ofNullable(java.lang.Object)|",
+      "|java+method:///java/util/Optional/orElse(java.lang.Object)|",
+      "|java+method:///com/ning/http/client/Response/getHeader(java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///com/ning/http/client/Request/getUrl()|",
+      "|java+method:///com/ning/http/client/Response/getStatusCode()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.faunadb:faunadb-common:2.5.0",
+    "coordinatesV2": "com.faunadb:faunadb-common:2.2.0",
+    "caller": "|java+method:///com/faunadb/common/Connection/performRequest(com.ning.http.client.Request)|",
+    "called": "|java+method:///com/google/common/util/concurrent/SettableFuture/create()|",
+    "v1Body": [
+      "|java+method:///com/ning/http/client/AsyncHttpClient$BoundRequestBuilder/execute(com.ning.http.client.AsyncHandler)|",
+      "|java+method:///com/codahale/metrics/Timer/time()|",
+      "|java+method:///com/codahale/metrics/MetricRegistry/timer(java.lang.String)|",
+      "|java+method:///com/google/common/util/concurrent/SettableFuture/create()|",
+      "|java+constructor:///com/faunadb/common/Connection$1/Connection$1(com.faunadb.common.Connection,com.codahale.metrics.Timer$Context,com.google.common.util.concurrent.SettableFuture,com.ning.http.client.Request)|",
+      "|java+method:///com/ning/http/client/AsyncHttpClient$BoundRequestBuilder/setHeader(java.lang.String,java.lang.String)|",
+      "|java+method:///com/ning/http/client/AsyncHttpClient$BoundRequestBuilder/addHeader(java.lang.String,java.lang.String)|",
+      "|java+method:///com/faunadb/common/RefAwareHttpClient/prepareRequest(com.ning.http.client.Request)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/ning/http/client/AsyncHttpClient$BoundRequestBuilder/execute(com.ning.http.client.AsyncHandler)|",
+      "|java+method:///com/codahale/metrics/Timer/time()|",
+      "|java+method:///java/lang/Long/toString(long)|",
+      "|java+constructor:///com/faunadb/common/Connection$1/Connection$1(com.faunadb.common.Connection,com.codahale.metrics.Timer$Context,java.util.concurrent.CompletableFuture,com.ning.http.client.Request)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicLong/get()|",
+      "|java+method:///com/ning/http/client/AsyncHttpClient$BoundRequestBuilder/setHeader(java.lang.String,java.lang.String)|",
+      "|java+method:///com/ning/http/client/AsyncHttpClient$BoundRequestBuilder/addHeader(java.lang.String,java.lang.String)|",
+      "|java+method:///com/faunadb/common/RefAwareHttpClient/prepareRequest(com.ning.http.client.Request)|",
+      "|java+method:///com/codahale/metrics/MetricRegistry/timer(java.lang.String)|",
+      "|java+constructor:///java/util/concurrent/CompletableFuture/CompletableFuture()|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "REMOVED"
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "coordinatesV1": "org.kill-bill.billing:killbill-overdue:0.17.1",
+    "coordinatesV2": "org.kill-bill.billing:killbill-overdue:0.17.2",
+    "caller": "|java+method:///org/killbill/billing/overdue/wrapper/OverdueWrapperFactory/createOverdueWrapperFor(java.util.UUID,org.killbill.billing.callcontext.InternalTenantContext)|",
+    "called": "|java+constructor:///org/killbill/billing/overdue/config/api/OverdueException/OverdueException(org.killbill.billing.BillingExceptionBase)|",
+    "v1Body": [
+      "|java+constructor:///org/killbill/billing/overdue/config/api/OverdueException/OverdueException(org.killbill.billing.BillingExceptionBase)|",
+      "|java+constructor:///org/killbill/billing/overdue/wrapper/OverdueWrapper/OverdueWrapper(org.killbill.billing.account.api.ImmutableAccountData,org.killbill.billing.junction.BlockingInternalApi,org.killbill.billing.overdue.config.api.OverdueStateSet,org.killbill.commons.locker.GlobalLocker,org.killbill.clock.Clock,org.killbill.billing.overdue.calculator.BillingStateCalculator,org.killbill.billing.overdue.applicator.OverdueStateApplicator)|",
+      "|java+method:///org/killbill/billing/overdue/wrapper/OverdueWrapperFactory/getOverdueStateSet(org.killbill.billing.callcontext.InternalTenantContext)|",
+      "|java+method:///org/killbill/billing/account/api/AccountInternalApi/getImmutableAccountDataById(java.util.UUID,org.killbill.billing.callcontext.InternalTenantContext)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/killbill/billing/overdue/config/api/OverdueException/OverdueException(org.killbill.billing.BillingExceptionBase)|",
+      "|java+constructor:///org/killbill/billing/overdue/wrapper/OverdueWrapper/OverdueWrapper(org.killbill.billing.account.api.ImmutableAccountData,org.killbill.billing.junction.BlockingInternalApi,org.killbill.billing.overdue.config.api.OverdueStateSet,org.killbill.commons.locker.GlobalLocker,org.killbill.clock.Clock,org.killbill.billing.overdue.calculator.BillingStateCalculator,org.killbill.billing.overdue.applicator.OverdueStateApplicator,org.killbill.billing.util.callcontext.InternalCallContextFactory)|",
+      "|java+method:///org/killbill/billing/overdue/wrapper/OverdueWrapperFactory/getOverdueStateSet(org.killbill.billing.callcontext.InternalTenantContext)|",
+      "|java+method:///org/killbill/billing/account/api/AccountInternalApi/getImmutableAccountDataById(java.util.UUID,org.killbill.billing.callcontext.InternalTenantContext)|"
+    ],
+    "affectedLib": "org.kill-bill.billing:killbill-internal-api:0.17.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.kill-bill.billing:killbill-overdue:0.17.1",
+    "coordinatesV2": "org.kill-bill.billing:killbill-overdue:0.17.2",
+    "caller": "|java+method:///org/killbill/billing/overdue/listener/OverdueListener/insertBusEventIntoNotificationQueue(java.util.UUID,org.killbill.billing.overdue.notification.OverdueAsyncBusNotificationKey$OverdueAsyncBusNotificationAction,org.killbill.billing.callcontext.InternalCallContext)|",
+    "called": "|java+method:///org/killbill/billing/util/callcontext/InternalCallContextFactory/createInternalTenantContext(java.util.UUID,org.killbill.billing.callcontext.InternalTenantContext)|",
+    "v1Body": [
+      "|java+method:///org/killbill/clock/Clock/getUTCNow()|",
+      "|java+method:///org/killbill/billing/overdue/listener/OverdueListener/shouldInsertNotification(org.killbill.billing.callcontext.InternalTenantContext)|",
+      "|java+method:///org/killbill/billing/overdue/notification/OverduePoster/insertOverdueNotification(java.util.UUID,org.joda.time.DateTime,java.lang.String,org.killbill.billing.overdue.notification.OverdueCheckNotificationKey,org.killbill.billing.callcontext.InternalCallContext)|",
+      "|java+constructor:///org/killbill/billing/overdue/notification/OverdueAsyncBusNotificationKey/OverdueAsyncBusNotificationKey(java.util.UUID,org.killbill.billing.overdue.notification.OverdueAsyncBusNotificationKey$OverdueAsyncBusNotificationAction)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/killbill/clock/Clock/getUTCNow()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/killbill/billing/overdue/listener/OverdueListener/shouldInsertNotification(org.killbill.billing.callcontext.InternalTenantContext)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+method:///org/killbill/billing/account/api/AccountInternalApi/getChildrenAccounts(java.util.UUID,org.killbill.billing.callcontext.InternalCallContext)|",
+      "|java+method:///org/killbill/billing/overdue/notification/OverduePoster/insertOverdueNotification(java.util.UUID,org.joda.time.DateTime,java.lang.String,org.killbill.billing.overdue.notification.OverdueCheckNotificationKey,org.killbill.billing.callcontext.InternalCallContext)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/killbill/billing/account/api/Account/isPaymentDelegatedToParent()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/killbill/billing/util/callcontext/InternalCallContextFactory/createInternalCallContext(java.lang.Long,org.killbill.billing.callcontext.InternalCallContext)|",
+      "|java+method:///org/killbill/billing/util/callcontext/InternalCallContextFactory/createInternalTenantContext(java.util.UUID,org.killbill.billing.callcontext.InternalTenantContext)|",
+      "|java+method:///org/killbill/billing/callcontext/InternalTenantContext/getAccountRecordId()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/killbill/billing/account/api/Account/getId()|",
+      "|java+constructor:///org/killbill/billing/overdue/notification/OverdueAsyncBusNotificationKey/OverdueAsyncBusNotificationKey(java.util.UUID,org.killbill.billing.overdue.notification.OverdueAsyncBusNotificationKey$OverdueAsyncBusNotificationAction)|"
+    ],
+    "affectedLib": "org.kill-bill.billing:killbill-util:0.17.2",
+    "change": "UPDATED"
+  }
+]

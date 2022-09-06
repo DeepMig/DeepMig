@@ -1,0 +1,76 @@
+[
+  {
+    "coordinatesV1": "org.locationtech.geotrellis:geotrellis-accumulo_2.11:1.0.0",
+    "coordinatesV2": "org.locationtech.geotrellis:geotrellis-accumulo_2.11:1.1.0-RC1",
+    "caller": "|java+method:///geotrellis/spark/io/accumulo/AccumuloLayerDeleter/delete(geotrellis.spark.LayerId)|",
+    "called": "|java+constructor:///geotrellis/spark/io/package$LayerDeleteError/package$LayerDeleteError(geotrellis.spark.LayerId)|",
+    "v1Body": [
+      "|java+method:///org/apache/accumulo/core/client/BatchDeleter/setRanges(java.util.Collection)|",
+      "|java+method:///org/apache/accumulo/core/client/Connector/createBatchDeleter(java.lang.String,org.apache.accumulo.core.security.Authorizations,int,org.apache.accumulo.core.client.BatchWriterConfig)|",
+      "|java+method:///geotrellis/spark/io/accumulo/AccumuloLayerHeader/tileTable()|",
+      "|java+method:///org/apache/accumulo/core/client/BatchWriterConfig/setMaxWriteThreads(int)|",
+      "|java+method:///org/apache/accumulo/core/client/BatchDeleter/fetchColumnFamily(org.apache.hadoop.io.Text)|",
+      "|java+method:///geotrellis/spark/io/accumulo/package$/columnFamily(geotrellis.spark.LayerId)|",
+      "|java+method:///geotrellis/spark/io/accumulo/AccumuloLayerDeleter/attributeStore()|",
+      "|java+method:///geotrellis/spark/io/accumulo/package$/stringToText(java.lang.String)|",
+      "|java+constructor:///org/apache/accumulo/core/security/Authorizations/Authorizations()|",
+      "|java+method:///org/apache/accumulo/core/client/BatchDeleter/delete()|",
+      "|java+constructor:///org/apache/accumulo/core/data/Range/Range()|",
+      "|java+constructor:///org/apache/accumulo/core/client/BatchWriterConfig/BatchWriterConfig()|",
+      "|java+method:///geotrellis/spark/io/package$LayerDeleteError/initCause(java.lang.Throwable)|",
+      "|java+method:///scala/collection/immutable/Nil$/$colon$colon(java.lang.Object)|",
+      "|java+method:///scala/collection/JavaConversions$/seqAsJavaList(scala.collection.Seq)|",
+      "|java+method:///geotrellis/spark/io/AttributeStore/layerExists(geotrellis.spark.LayerId)|",
+      "|java+method:///geotrellis/spark/io/AttributeStore/delete(geotrellis.spark.LayerId)|",
+      "|java+method:///geotrellis/spark/io/AttributeStore/readHeader(geotrellis.spark.LayerId,spray.json.JsonFormat)|",
+      "|java+constructor:///geotrellis/spark/io/package$LayerDeleteError/package$LayerDeleteError(geotrellis.spark.LayerId)|",
+      "|java+constructor:///geotrellis/spark/io/package$LayerNotFoundError/package$LayerNotFoundError(geotrellis.spark.LayerId)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/accumulo/core/client/BatchDeleter/setRanges(java.util.Collection)|",
+      "|java+method:///org/apache/accumulo/core/client/Connector/createBatchDeleter(java.lang.String,org.apache.accumulo.core.security.Authorizations,int,org.apache.accumulo.core.client.BatchWriterConfig)|",
+      "|java+method:///geotrellis/spark/io/accumulo/AccumuloLayerHeader/tileTable()|",
+      "|java+method:///org/apache/accumulo/core/client/BatchWriterConfig/setMaxWriteThreads(int)|",
+      "|java+method:///org/apache/accumulo/core/client/BatchDeleter/fetchColumnFamily(org.apache.hadoop.io.Text)|",
+      "|java+method:///scala/Predef$/wrapRefArray(java.lang.Object%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///geotrellis/spark/io/accumulo/AccumuloLayerDeleter/attributeStore()|",
+      "|java+method:///scala/Predef$/genericWrapArray(java.lang.Object)|",
+      "|java+method:///geotrellis/spark/io/accumulo/package$/stringToText(java.lang.String)|",
+      "|java+method:///scala/collection/JavaConversions$/seqAsJavaList(scala.collection.Seq)|",
+      "|java+constructor:///org/apache/accumulo/core/security/Authorizations/Authorizations()|",
+      "|java+constructor:///geotrellis/spark/io/package$LayerDeleteError/package$LayerDeleteError(geotrellis.spark.LayerId)|",
+      "|java+method:///scala/StringContext/s(scala.collection.Seq)|",
+      "|java+constructor:///org/apache/accumulo/core/data/Range/Range()|",
+      "|java+constructor:///org/apache/accumulo/core/client/BatchWriterConfig/BatchWriterConfig()|",
+      "|java+method:///geotrellis/spark/io/package$LayerDeleteError/initCause(java.lang.Throwable)|",
+      "|java+method:///scala/collection/immutable/Nil$/$colon$colon(java.lang.Object)|",
+      "|java+method:///geotrellis/spark/io/accumulo/package$/columnFamily(geotrellis.spark.LayerId)|",
+      "|java+constructor:///scala/StringContext/StringContext(scala.collection.Seq)|",
+      "|java+method:///org/slf4j/Logger/isInfoEnabled()|",
+      "|java+method:///org/apache/accumulo/core/client/BatchDeleter/delete()|",
+      "|java+method:///com/typesafe/scalalogging/Logger/underlying()|",
+      "|java+method:///geotrellis/spark/io/AttributeStore/delete(geotrellis.spark.LayerId)|",
+      "|java+method:///geotrellis/spark/io/accumulo/AccumuloLayerDeleter/logger()|",
+      "|java+method:///geotrellis/spark/io/AttributeStore/readHeader(geotrellis.spark.LayerId,spray.json.JsonFormat)|"
+    ],
+    "affectedLib": "org.locationtech.geotrellis:geotrellis-spark_2.11:1.1.0-RC1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.locationtech.geotrellis:geotrellis-accumulo_2.11:1.0.0",
+    "coordinatesV2": "org.locationtech.geotrellis:geotrellis-accumulo_2.11:1.1.0-RC1",
+    "caller": "|java+constructor:///geotrellis/spark/io/accumulo/AccumuloLayerUpdater/AccumuloLayerUpdater(geotrellis.spark.io.accumulo.AccumuloInstance,geotrellis.spark.io.AttributeStore,geotrellis.spark.io.accumulo.AccumuloLayerReader,geotrellis.spark.io.accumulo.AccumuloLayerWriter$Options)|",
+    "called": "|java+constructor:///geotrellis/spark/io/LayerUpdater/LayerUpdater()|",
+    "v1Body": [
+      "|java+method:///com/typesafe/scalalogging/LazyLogging$class/$init$(com.typesafe.scalalogging.LazyLogging)|",
+      "|java+constructor:///geotrellis/spark/io/LayerUpdater/LayerUpdater()|"
+    ],
+    "v2Body": [
+      "|java+method:///geotrellis/util/LazyLogging$class/$init$(geotrellis.util.LazyLogging)|",
+      "|java+constructor:///geotrellis/spark/io/LayerUpdater/LayerUpdater()|"
+    ],
+    "affectedLib": "org.locationtech.geotrellis:geotrellis-spark_2.11:1.1.0-RC1",
+    "change": "ADDED"
+  }
+]

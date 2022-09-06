@@ -1,0 +1,102 @@
+[
+  {
+    "coordinatesV1": "org.smarti18n:smarti18n-api:0.1-M11",
+    "coordinatesV2": "org.smarti18n:smarti18n-api:1.0-PRE4",
+    "caller": "|java+method:///org/smarti18n/api/UserApiImpl/register(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/springframework/web/util/UriComponentsBuilder/queryParam(java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/springframework/web/util/UriComponents/encode()|",
+      "|java+method:///org/springframework/web/util/UriComponents/toUri()|",
+      "|java+method:///org/smarti18n/api/UserApiImpl/handleResponse(org.springframework.http.ResponseEntity)|",
+      "|java+method:///org/smarti18n/api/UserApiImpl/uri(java.lang.String)|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/queryParam(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/springframework/web/client/RestTemplate/exchange(java.net.URI,org.springframework.http.HttpMethod,org.springframework.http.HttpEntity,java.lang.Class)|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/build()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/smarti18n/api/UserApiImpl/get(org.springframework.web.util.UriComponentsBuilder,java.lang.Class)|",
+      "|java+method:///org/smarti18n/api/UserApiImpl/uri(java.lang.String)|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/queryParam(java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "org.springframework:spring-web:5.0.2.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.smarti18n:smarti18n-api:0.1-M11",
+    "coordinatesV2": "org.smarti18n:smarti18n-api:1.0-PRE4",
+    "caller": "|java+method:///org/smarti18n/api/UserApiImpl/findOne(java.lang.String)|",
+    "called": "|java+method:///org/springframework/web/util/UriComponentsBuilder/queryParam(java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/springframework/web/util/UriComponents/encode()|",
+      "|java+method:///org/springframework/web/util/UriComponents/toUri()|",
+      "|java+method:///org/smarti18n/api/UserApiImpl/handleResponse(org.springframework.http.ResponseEntity)|",
+      "|java+method:///org/smarti18n/api/UserApiImpl/uri(java.lang.String)|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/queryParam(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/springframework/web/client/RestTemplate/exchange(java.net.URI,org.springframework.http.HttpMethod,org.springframework.http.HttpEntity,java.lang.Class)|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/build()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/smarti18n/api/UserApiImpl/get(org.springframework.web.util.UriComponentsBuilder,java.lang.Class)|",
+      "|java+method:///org/smarti18n/api/UserApiImpl/uri(java.lang.String)|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/queryParam(java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "org.springframework:spring-web:5.0.2.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.smarti18n:smarti18n-api:0.1-M11",
+    "coordinatesV2": "org.smarti18n:smarti18n-api:1.0-PRE4",
+    "caller": "|java+method:///org/smarti18n/api/AbstractApiImpl/headers()|",
+    "called": "|java+method:///org/springframework/http/HttpHeaders/add(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/smarti18n/api/UserCredentialsSupplier/getBase64Credentials()|",
+      "|java+method:///org/springframework/http/HttpHeaders/add(java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/springframework/http/HttpHeaders/HttpHeaders()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/springframework/http/HttpHeaders/setAccept(java.util.List)|",
+      "|java+method:///java/util/Collections/singletonList(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/http/HttpHeaders/add(java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/springframework/http/HttpHeaders/HttpHeaders()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/Collections/singletonList(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/smarti18n/models/UserCredentialsSupplier/getBase64Credentials()|",
+      "|java+method:///org/springframework/http/HttpHeaders/setAccept(java.util.List)|"
+    ],
+    "affectedLib": "org.springframework:spring-web:5.0.2.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.smarti18n:smarti18n-api:0.1-M11",
+    "coordinatesV2": "org.smarti18n:smarti18n-api:1.0-PRE4",
+    "caller": "|java+method:///org/smarti18n/api/AbstractApiImpl/handleResponse(org.springframework.http.ResponseEntity)|",
+    "called": "|java+method:///org/springframework/http/ResponseEntity/getStatusCode()|",
+    "v1Body": [
+      "|java+method:///org/springframework/http/HttpStatus/isError()|",
+      "|java+method:///org/springframework/http/ResponseEntity/getStatusCode()|",
+      "|java+constructor:///org/smarti18n/api/ApiException/ApiException(java.lang.String)|",
+      "|java+method:///org/springframework/http/ResponseEntity/getBody()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/springframework/http/HttpStatus/getReasonPhrase()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/http/HttpStatus/isError()|",
+      "|java+method:///org/springframework/http/ResponseEntity/getStatusCode()|",
+      "|java+method:///org/springframework/http/ResponseEntity/getBody()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/smarti18n/exceptions/UnexpectedApiException/UnexpectedApiException(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/springframework/http/HttpStatus/getReasonPhrase()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.springframework:spring-web:5.0.2.RELEASE",
+    "change": "UPDATED"
+  }
+]

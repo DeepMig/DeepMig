@@ -1,0 +1,47 @@
+[
+  {
+    "coordinatesV1": "com.talanlabs:config-properties:1.0.0",
+    "coordinatesV2": "com.talanlabs:config-properties:1.1.0",
+    "caller": "|java+method:///com/talanlabs/configproperties/properties/AutoConfigProperty/setProperty(java.util.Properties,com.talanlabs.component.IComponent)|",
+    "called": "|java+method:///com/talanlabs/component/factory/ComponentFactory/getInstance()|",
+    "v1Body": [
+      "|java+method:///com/talanlabs/component/factory/ComponentFactory/getInstance()|",
+      "|java+method:///com/talanlabs/configproperties/properties/AutoConfigProperty/setProperty(java.util.Properties,com.talanlabs.component.IComponent)|",
+      "|java+method:///com/talanlabs/configproperties/properties/AutoConfigProperty/setProperty(java.util.Properties,com.talanlabs.component.IComponent,com.talanlabs.component.factory.ComponentDescriptor,java.lang.String)|",
+      "|java+method:///com/talanlabs/component/factory/ComponentFactory/getDescriptor(com.talanlabs.component.IComponent)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/talanlabs/component/factory/ComponentFactory/getInstance()|",
+      "|java+method:///com/talanlabs/configproperties/properties/AutoConfigProperty/setProperty(java.util.Properties,com.talanlabs.component.IComponent)|",
+      "|java+method:///com/talanlabs/configproperties/properties/AutoConfigProperty/setProperty(java.util.Properties,com.talanlabs.component.IComponent,com.talanlabs.component.factory.ComponentDescriptor,java.lang.String,java.lang.String,boolean)|",
+      "|java+method:///com/talanlabs/component/factory/ComponentFactory/getDescriptor(com.talanlabs.component.IComponent)|"
+    ],
+    "affectedLib": "com.talanlabs:component-bean:1.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.talanlabs:config-properties:1.0.0",
+    "coordinatesV2": "com.talanlabs:config-properties:1.1.0",
+    "caller": "|java+method:///com/talanlabs/configproperties/ConfigBuilder/build()|",
+    "called": "|java+method:///com/talanlabs/component/factory/ComponentFactory/createInstance(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/talanlabs/configproperties/loader/IConfigLoader/readProperties()|",
+      "|java+method:///com/talanlabs/component/factory/ComponentFactory/getInstance()|",
+      "|java+method:///java/util/List/forEach(java.util.function.Consumer)|",
+      "|java+method:///com/talanlabs/component/factory/ComponentFactory/createInstance(java.lang.Class)|",
+      "|java+method:///com/talanlabs/configproperties/loader/DefaultConfigLoader/newBuilder()|",
+      "|java+method:///com/talanlabs/configproperties/loader/DefaultConfigLoader$Builder/build()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/talanlabs/configproperties/loader/ResourceConfigLoader/ResourceConfigLoader(java.lang.String)|",
+      "|java+method:///com/talanlabs/configproperties/loader/IConfigLoader/readProperties()|",
+      "|java+method:///java/util/List/forEach(java.util.function.Consumer)|",
+      "|java+method:///com/talanlabs/component/factory/ComponentFactory/createInstance(java.lang.Class)|",
+      "|java+constructor:///com/talanlabs/configproperties/loader/FirstNotNullConfigLoader/FirstNotNullConfigLoader(com.talanlabs.configproperties.loader.IConfigLoader%5B%5D)|",
+      "|java+method:///com/talanlabs/component/factory/ComponentFactory/getInstance()|",
+      "|java+constructor:///com/talanlabs/configproperties/loader/SystemConfigLoader/SystemConfigLoader()|"
+    ],
+    "affectedLib": "com.talanlabs:component-bean:1.0.1",
+    "change": "UPDATED"
+  }
+]

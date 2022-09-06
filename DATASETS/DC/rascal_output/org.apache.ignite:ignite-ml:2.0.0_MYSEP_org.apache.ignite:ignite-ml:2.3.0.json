@@ -1,0 +1,89 @@
+[
+  {
+    "coordinatesV1": "org.apache.ignite:ignite-ml:2.0.0",
+    "coordinatesV2": "org.apache.ignite:ignite-ml:2.3.0",
+    "caller": "|java+constructor:///org/apache/ignite/ml/math/impls/storage/matrix/SparseDistributedMatrixStorage/SparseDistributedMatrixStorage(int,int,int,int)|",
+    "called": "|java+method:///org/apache/ignite/lang/IgniteUuid/randomUuid()|",
+    "v1Body": [
+      "|java+method:///org/apache/ignite/ml/math/impls/storage/matrix/SparseDistributedMatrixStorage/assertStorageMode(int)|",
+      "|java+method:///org/apache/ignite/ml/math/impls/storage/matrix/SparseDistributedMatrixStorage/newCache()|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|",
+      "|java+method:///org/apache/ignite/ml/math/impls/storage/matrix/SparseDistributedMatrixStorage/assertAccessMode(int)|",
+      "|java+constructor:///org/apache/ignite/ml/math/impls/CacheUtils/CacheUtils()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/ignite/ml/math/distributed/CacheUtils/CacheUtils()|",
+      "|java+method:///org/apache/ignite/ml/math/impls/storage/matrix/SparseDistributedMatrixStorage/assertStorageMode(int)|",
+      "|java+method:///org/apache/ignite/ml/math/impls/storage/matrix/SparseDistributedMatrixStorage/newCache()|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|",
+      "|java+method:///org/apache/ignite/ml/math/impls/storage/matrix/SparseDistributedMatrixStorage/assertAccessMode(int)|",
+      "|java+method:///org/apache/ignite/lang/IgniteUuid/randomUuid()|"
+    ],
+    "affectedLib": "org.apache.ignite:ignite-core:2.3.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.ignite:ignite-ml:2.0.0",
+    "coordinatesV2": "org.apache.ignite:ignite-ml:2.3.0",
+    "caller": "|java+method:///org/apache/ignite/ml/math/impls/storage/matrix/SparseDistributedMatrixStorage/equals(java.lang.Object)|",
+    "called": "|java+method:///org/apache/ignite/lang/IgniteUuid/equals(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/apache/ignite/lang/IgniteUuid/equals(java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.ignite:ignite-core:2.3.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.ignite:ignite-ml:2.0.0",
+    "coordinatesV2": "org.apache.ignite:ignite-ml:2.3.0",
+    "caller": "|java+method:///org/apache/ignite/ml/math/impls/storage/matrix/SparseDistributedMatrixStorage/newCache()|",
+    "called": "|java+method:///org/apache/ignite/Ignition/localIgnite()|",
+    "v1Body": [
+      "|java+method:///org/apache/ignite/Ignite/getOrCreateCache(org.apache.ignite.configuration.CacheConfiguration)|",
+      "|java+method:///org/apache/ignite/configuration/CacheConfiguration/setEvictionPolicy(org.apache.ignite.cache.eviction.EvictionPolicy)|",
+      "|java+method:///org/apache/ignite/configuration/CacheConfiguration/setCacheMode(org.apache.ignite.cache.CacheMode)|",
+      "|java+constructor:///org/apache/ignite/configuration/CacheConfiguration/CacheConfiguration()|",
+      "|java+method:///org/apache/ignite/configuration/CacheConfiguration/setCopyOnRead(boolean)|",
+      "|java+method:///org/apache/ignite/configuration/CacheConfiguration/setWriteSynchronizationMode(org.apache.ignite.cache.CacheWriteSynchronizationMode)|",
+      "|java+method:///org/apache/ignite/configuration/CacheConfiguration/setName(java.lang.String)|",
+      "|java+method:///org/apache/ignite/lang/IgniteUuid/shortString()|",
+      "|java+method:///org/apache/ignite/configuration/CacheConfiguration/setAtomicityMode(org.apache.ignite.cache.CacheAtomicityMode)|",
+      "|java+method:///org/apache/ignite/Ignition/localIgnite()|",
+      "|java+constructor:///org/apache/ignite/lang/IgniteUuid/IgniteUuid()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/ignite/Ignite/getOrCreateCache(org.apache.ignite.configuration.CacheConfiguration)|",
+      "|java+method:///org/apache/ignite/configuration/CacheConfiguration/setEvictionPolicy(org.apache.ignite.cache.eviction.EvictionPolicy)|",
+      "|java+method:///org/apache/ignite/configuration/CacheConfiguration/setCacheMode(org.apache.ignite.cache.CacheMode)|",
+      "|java+constructor:///org/apache/ignite/configuration/CacheConfiguration/CacheConfiguration()|",
+      "|java+method:///org/apache/ignite/configuration/CacheConfiguration/setCopyOnRead(boolean)|",
+      "|java+method:///org/apache/ignite/configuration/CacheConfiguration/setWriteSynchronizationMode(org.apache.ignite.cache.CacheWriteSynchronizationMode)|",
+      "|java+method:///org/apache/ignite/configuration/CacheConfiguration/setName(java.lang.String)|",
+      "|java+method:///org/apache/ignite/configuration/CacheConfiguration/setAtomicityMode(org.apache.ignite.cache.CacheAtomicityMode)|",
+      "|java+method:///org/apache/ignite/Ignition/localIgnite()|"
+    ],
+    "affectedLib": "org.apache.ignite:ignite-core:2.3.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.ignite:ignite-ml:2.0.0",
+    "coordinatesV2": "org.apache.ignite:ignite-ml:2.3.0",
+    "caller": "|java+method:///org/apache/ignite/ml/math/impls/storage/matrix/SparseDistributedMatrixStorage/hashCode()|",
+    "called": "|java+method:///org/apache/ignite/lang/IgniteUuid/hashCode()|",
+    "v1Body": [
+      "|java+method:///java/lang/Object/hashCode()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/ignite/lang/IgniteUuid/hashCode()|",
+      "|java+method:///java/lang/Object/hashCode()|"
+    ],
+    "affectedLib": "org.apache.ignite:ignite-core:2.3.0",
+    "change": "UPDATED"
+  }
+]

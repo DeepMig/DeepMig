@@ -1,0 +1,403 @@
+[
+  {
+    "coordinatesV1": "org.eclipse.ditto:ditto-services-gateway-endpoints:0.8.0-M1",
+    "coordinatesV2": "org.eclipse.ditto:ditto-services-gateway-endpoints:0.3.0-M2",
+    "caller": "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/RootRoute/RootRoute(akka.actor.ActorSystem,com.typesafe.config.Config,akka.actor.ActorRef,akka.actor.ActorRef,akka.actor.ActorRef,java.util.function.Supplier,org.eclipse.ditto.services.gateway.starter.service.util.HttpClientFacade)|",
+    "called": "|java+method:///org/eclipse/ditto/protocoladapter/DittoProtocolAdapter/newInstance()|",
+    "v1Body": [
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/devops/DevOpsRoute/DevOpsRoute(akka.actor.ActorRef,akka.actor.ActorSystem)|",
+      "|java+method:///com/typesafe/config/Config/getInt(java.lang.String)|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/stats/StatsRoute/StatsRoute(akka.actor.ActorRef,akka.actor.ActorSystem)|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/policies/PoliciesRoute/PoliciesRoute(akka.actor.ActorRef,akka.actor.ActorSystem)|",
+      "|java+method:///akka/actor/ActorSystem/dispatchers()|",
+      "|java+method:///akka/dispatch/Dispatchers/lookup(java.lang.String)|",
+      "|java+method:///org/eclipse/ditto/services/gateway/health/DittoStatusAndHealthProviderFactory/of(akka.actor.ActorSystem,java.util.function.Supplier)|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/sse/SseThingsRoute/SseThingsRoute(akka.actor.ActorRef,akka.actor.ActorSystem,akka.actor.ActorRef)|",
+      "|java+method:///akka/actor/ActorSystem/eventStream()|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/websocket/WebsocketRoute/WebsocketRoute(akka.actor.ActorRef,int,int,org.eclipse.ditto.protocoladapter.ProtocolAdapter,akka.event.EventStream)|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/thingsearch/ThingSearchRoute/ThingSearchRoute(akka.actor.ActorRef,akka.actor.ActorSystem)|",
+      "|java+method:///com/typesafe/config/Config/getDuration(java.lang.String)|",
+      "|java+method:///com/typesafe/config/Config/getIntList(java.lang.String)|",
+      "|java+method:///org/eclipse/ditto/services/gateway/endpoints/utils/DittoRejectionHandlerFactory/createInstance()|",
+      "|java+method:///org/eclipse/ditto/model/base/common/ConditionChecker/checkNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/eclipse/ditto/services/gateway/endpoints/routes/RootRoute/createExceptionHandler()|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/things/ThingsRoute/ThingsRoute(akka.actor.ActorRef,akka.actor.ActorSystem,java.time.Duration,java.time.Duration,java.time.Duration,java.time.Duration)|",
+      "|java+method:///org/eclipse/ditto/services/gateway/endpoints/routes/RootRoute/generateGatewayAuthenticationDirective(com.typesafe.config.Config,org.eclipse.ditto.services.gateway.starter.service.util.HttpClientFacade,akka.dispatch.MessageDispatcher)|",
+      "|java+method:///org/eclipse/ditto/protocoladapter/DittoProtocolAdapter/newInstance()|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/health/CachingHealthRoute/CachingHealthRoute(org.eclipse.ditto.services.gateway.health.StatusAndHealthProvider,java.time.Duration)|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/status/OverallStatusRoute/OverallStatusRoute(akka.actor.ActorSystem,java.util.function.Supplier,akka.actor.ActorRef,org.eclipse.ditto.services.gateway.health.StatusAndHealthProvider)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///akka/actor/ActorSystem/eventStream()|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/websocket/WebsocketRoute/WebsocketRoute(akka.actor.ActorRef,int,int,akka.event.EventStream)|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/devops/DevOpsRoute/DevOpsRoute(akka.actor.ActorRef,akka.actor.ActorSystem)|",
+      "|java+method:///com/typesafe/config/Config/getInt(java.lang.String)|",
+      "|java+method:///org/eclipse/ditto/services/utils/protocol/ProtocolConfigReader/loadProtocolAdapterProvider(akka.actor.ActorSystem)|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/stats/StatsRoute/StatsRoute(akka.actor.ActorRef,akka.actor.ActorSystem)|",
+      "|java+method:///org/eclipse/ditto/services/utils/protocol/ProtocolAdapterProvider/createProtocolAdapter()|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/policies/PoliciesRoute/PoliciesRoute(akka.actor.ActorRef,akka.actor.ActorSystem)|",
+      "|java+method:///org/eclipse/ditto/services/utils/protocol/ProtocolConfigReader/fromRawConfig(com.typesafe.config.Config)|",
+      "|java+method:///org/eclipse/ditto/services/gateway/endpoints/routes/RootRoute/generateGatewayAuthenticationDirective(com.typesafe.config.Config,org.eclipse.ditto.services.gateway.starter.service.util.HttpClientFacade)|",
+      "|java+method:///org/eclipse/ditto/services/gateway/health/DittoStatusAndHealthProviderFactory/of(akka.actor.ActorSystem,java.util.function.Supplier)|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/sse/SseThingsRoute/SseThingsRoute(akka.actor.ActorRef,akka.actor.ActorSystem,akka.actor.ActorRef)|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/things/ThingsRoute/ThingsRoute(akka.actor.ActorRef,akka.actor.ActorSystem,java.time.Duration,java.time.Duration,java.time.Duration,java.time.Duration)|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/health/CachingHealthRoute/CachingHealthRoute(org.eclipse.ditto.services.gateway.health.StatusAndHealthProvider,java.time.Duration)|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/thingsearch/ThingSearchRoute/ThingSearchRoute(akka.actor.ActorRef,akka.actor.ActorSystem)|",
+      "|java+method:///com/typesafe/config/Config/getDuration(java.lang.String)|",
+      "|java+method:///com/typesafe/config/Config/getIntList(java.lang.String)|",
+      "|java+method:///org/eclipse/ditto/services/gateway/endpoints/utils/DittoRejectionHandlerFactory/createInstance()|",
+      "|java+method:///org/eclipse/ditto/model/base/common/ConditionChecker/checkNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/eclipse/ditto/services/gateway/endpoints/routes/RootRoute/createExceptionHandler()|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/status/OverallStatusRoute/OverallStatusRoute(akka.actor.ActorSystem,java.util.function.Supplier,akka.actor.ActorRef,org.eclipse.ditto.services.gateway.health.StatusAndHealthProvider)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.eclipse.ditto:ditto-protocol-adapter:0.3.0-M2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.ditto:ditto-services-gateway-endpoints:0.3.0-M2",
+    "coordinatesV2": "org.eclipse.ditto:ditto-services-gateway-endpoints:0.8.0-M1",
+    "caller": "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/RootRoute/RootRoute(akka.actor.ActorSystem,com.typesafe.config.Config,akka.actor.ActorRef,akka.actor.ActorRef,akka.actor.ActorRef,java.util.function.Supplier,org.eclipse.ditto.services.gateway.starter.service.util.HttpClientFacade)|",
+    "called": "|java+method:///org/eclipse/ditto/services/utils/protocol/ProtocolConfigReader/fromRawConfig(com.typesafe.config.Config)|",
+    "v1Body": [
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/devops/DevOpsRoute/DevOpsRoute(akka.actor.ActorRef,akka.actor.ActorSystem)|",
+      "|java+method:///com/typesafe/config/Config/getInt(java.lang.String)|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/stats/StatsRoute/StatsRoute(akka.actor.ActorRef,akka.actor.ActorSystem)|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/policies/PoliciesRoute/PoliciesRoute(akka.actor.ActorRef,akka.actor.ActorSystem)|",
+      "|java+method:///akka/actor/ActorSystem/dispatchers()|",
+      "|java+method:///akka/dispatch/Dispatchers/lookup(java.lang.String)|",
+      "|java+method:///org/eclipse/ditto/services/gateway/health/DittoStatusAndHealthProviderFactory/of(akka.actor.ActorSystem,java.util.function.Supplier)|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/sse/SseThingsRoute/SseThingsRoute(akka.actor.ActorRef,akka.actor.ActorSystem,akka.actor.ActorRef)|",
+      "|java+method:///akka/actor/ActorSystem/eventStream()|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/websocket/WebsocketRoute/WebsocketRoute(akka.actor.ActorRef,int,int,org.eclipse.ditto.protocoladapter.ProtocolAdapter,akka.event.EventStream)|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/thingsearch/ThingSearchRoute/ThingSearchRoute(akka.actor.ActorRef,akka.actor.ActorSystem)|",
+      "|java+method:///com/typesafe/config/Config/getDuration(java.lang.String)|",
+      "|java+method:///com/typesafe/config/Config/getIntList(java.lang.String)|",
+      "|java+method:///org/eclipse/ditto/services/gateway/endpoints/utils/DittoRejectionHandlerFactory/createInstance()|",
+      "|java+method:///org/eclipse/ditto/model/base/common/ConditionChecker/checkNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/eclipse/ditto/services/gateway/endpoints/routes/RootRoute/createExceptionHandler()|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/things/ThingsRoute/ThingsRoute(akka.actor.ActorRef,akka.actor.ActorSystem,java.time.Duration,java.time.Duration,java.time.Duration,java.time.Duration)|",
+      "|java+method:///org/eclipse/ditto/services/gateway/endpoints/routes/RootRoute/generateGatewayAuthenticationDirective(com.typesafe.config.Config,org.eclipse.ditto.services.gateway.starter.service.util.HttpClientFacade,akka.dispatch.MessageDispatcher)|",
+      "|java+method:///org/eclipse/ditto/protocoladapter/DittoProtocolAdapter/newInstance()|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/health/CachingHealthRoute/CachingHealthRoute(org.eclipse.ditto.services.gateway.health.StatusAndHealthProvider,java.time.Duration)|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/status/OverallStatusRoute/OverallStatusRoute(akka.actor.ActorSystem,java.util.function.Supplier,akka.actor.ActorRef,org.eclipse.ditto.services.gateway.health.StatusAndHealthProvider)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///akka/actor/ActorSystem/eventStream()|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/websocket/WebsocketRoute/WebsocketRoute(akka.actor.ActorRef,int,int,akka.event.EventStream)|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/devops/DevOpsRoute/DevOpsRoute(akka.actor.ActorRef,akka.actor.ActorSystem)|",
+      "|java+method:///com/typesafe/config/Config/getInt(java.lang.String)|",
+      "|java+method:///org/eclipse/ditto/services/utils/protocol/ProtocolConfigReader/loadProtocolAdapterProvider(akka.actor.ActorSystem)|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/stats/StatsRoute/StatsRoute(akka.actor.ActorRef,akka.actor.ActorSystem)|",
+      "|java+method:///org/eclipse/ditto/services/utils/protocol/ProtocolAdapterProvider/createProtocolAdapter()|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/policies/PoliciesRoute/PoliciesRoute(akka.actor.ActorRef,akka.actor.ActorSystem)|",
+      "|java+method:///org/eclipse/ditto/services/utils/protocol/ProtocolConfigReader/fromRawConfig(com.typesafe.config.Config)|",
+      "|java+method:///org/eclipse/ditto/services/gateway/endpoints/routes/RootRoute/generateGatewayAuthenticationDirective(com.typesafe.config.Config,org.eclipse.ditto.services.gateway.starter.service.util.HttpClientFacade)|",
+      "|java+method:///org/eclipse/ditto/services/gateway/health/DittoStatusAndHealthProviderFactory/of(akka.actor.ActorSystem,java.util.function.Supplier)|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/sse/SseThingsRoute/SseThingsRoute(akka.actor.ActorRef,akka.actor.ActorSystem,akka.actor.ActorRef)|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/things/ThingsRoute/ThingsRoute(akka.actor.ActorRef,akka.actor.ActorSystem,java.time.Duration,java.time.Duration,java.time.Duration,java.time.Duration)|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/health/CachingHealthRoute/CachingHealthRoute(org.eclipse.ditto.services.gateway.health.StatusAndHealthProvider,java.time.Duration)|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/thingsearch/ThingSearchRoute/ThingSearchRoute(akka.actor.ActorRef,akka.actor.ActorSystem)|",
+      "|java+method:///com/typesafe/config/Config/getDuration(java.lang.String)|",
+      "|java+method:///com/typesafe/config/Config/getIntList(java.lang.String)|",
+      "|java+method:///org/eclipse/ditto/services/gateway/endpoints/utils/DittoRejectionHandlerFactory/createInstance()|",
+      "|java+method:///org/eclipse/ditto/model/base/common/ConditionChecker/checkNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/eclipse/ditto/services/gateway/endpoints/routes/RootRoute/createExceptionHandler()|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/status/OverallStatusRoute/OverallStatusRoute(akka.actor.ActorSystem,java.util.function.Supplier,akka.actor.ActorRef,org.eclipse.ditto.services.gateway.health.StatusAndHealthProvider)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.eclipse.ditto:ditto-services-utils-protocol:0.8.0-M1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.ditto:ditto-services-gateway-endpoints:0.3.0-M2",
+    "coordinatesV2": "org.eclipse.ditto:ditto-services-gateway-endpoints:0.8.0-M1",
+    "caller": "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/things/MessagesRoute/MessagesRoute(akka.actor.ActorRef,akka.actor.ActorSystem,java.time.Duration,java.time.Duration,java.time.Duration,java.time.Duration)|",
+    "called": "|java+method:///org/eclipse/ditto/services/utils/protocol/ProtocolConfigReader/fromRawConfig(com.typesafe.config.Config)|",
+    "v1Body": [
+      "|java+method:///com/typesafe/config/Config/getStringList(java.lang.String)|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/AbstractRoute/AbstractRoute(akka.actor.ActorRef,akka.actor.ActorSystem)|",
+      "|java+method:///akka/actor/ActorSystem/settings()|",
+      "|java+method:///akka/actor/ActorSystem$Settings/config()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/ditto/services/utils/protocol/ProtocolAdapterProvider/createHttpHeaderTranslator()|",
+      "|java+method:///org/eclipse/ditto/services/utils/protocol/ProtocolConfigReader/loadProtocolAdapterProvider(akka.actor.ActorSystem)|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/AbstractRoute/AbstractRoute(akka.actor.ActorRef,akka.actor.ActorSystem)|",
+      "|java+method:///akka/actor/ActorSystem/settings()|",
+      "|java+method:///org/eclipse/ditto/services/utils/protocol/ProtocolConfigReader/fromRawConfig(com.typesafe.config.Config)|",
+      "|java+method:///akka/actor/ActorSystem$Settings/config()|"
+    ],
+    "affectedLib": "org.eclipse.ditto:ditto-services-utils-protocol:0.8.0-M1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.ditto:ditto-services-gateway-endpoints:0.3.0-M2",
+    "coordinatesV2": "org.eclipse.ditto:ditto-services-gateway-endpoints:0.8.0-M1",
+    "caller": "|java+method:///org/eclipse/ditto/services/gateway/endpoints/routes/RootRoute/lambda$null$9(java.util.function.Function,java.lang.String)|",
+    "called": "|java+method:///akka/http/javadsl/server/Directives/handleExceptions(akka.http.javadsl.server.ExceptionHandler,java.util.function.Supplier)|",
+    "v1Body": [
+      "|java+method:///java/util/function/Function/apply(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///akka/http/javadsl/server/Directives/handleExceptions(akka.http.javadsl.server.ExceptionHandler,java.util.function.Supplier)|"
+    ],
+    "affectedLib": "com.typesafe.akka:akka-http_2.12:10.1.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.ditto:ditto-services-gateway-endpoints:0.3.0-M2",
+    "coordinatesV2": "org.eclipse.ditto:ditto-services-gateway-endpoints:0.8.0-M1",
+    "caller": "|java+method:///org/eclipse/ditto/services/gateway/endpoints/routes/RootRoute/lambda$null$1(java.lang.String,akka.http.javadsl.server.RequestContext)|",
+    "called": "|java+method:///akka/http/javadsl/server/PathMatchers/segment(java.util.regex.Pattern)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/ditto/services/gateway/endpoints/routes/stats/StatsRoute/buildStatsRoute(java.lang.String)|",
+      "|java+method:///org/eclipse/ditto/services/gateway/endpoints/routes/RootRoute/ws(java.lang.String)|",
+      "|java+method:///org/eclipse/ditto/services/gateway/endpoints/routes/RootRoute/api(akka.http.javadsl.server.RequestContext,java.lang.String)|",
+      "|java+method:///akka/http/javadsl/server/Directives/route(akka.http.javadsl.server.Route%5B%5D)|",
+      "|java+method:///akka/http/javadsl/server/Directives/pathPrefixTest(akka.http.javadsl.server.PathMatcher1,java.util.function.Function)|",
+      "|java+method:///akka/http/javadsl/server/PathMatchers/segment(java.util.regex.Pattern)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/ditto/services/gateway/endpoints/routes/stats/StatsRoute/buildStatsRoute(java.lang.String)|",
+      "|java+method:///org/eclipse/ditto/services/gateway/endpoints/routes/RootRoute/ws(java.lang.String)|",
+      "|java+method:///org/eclipse/ditto/services/gateway/endpoints/routes/RootRoute/api(akka.http.javadsl.server.RequestContext,java.lang.String)|",
+      "|java+method:///akka/http/javadsl/server/Directives/route(akka.http.javadsl.server.Route%5B%5D)|",
+      "|java+method:///akka/http/javadsl/server/Directives/pathPrefixTest(akka.http.javadsl.server.PathMatcher1,java.util.function.Function)|",
+      "|java+method:///akka/http/javadsl/server/PathMatchers/segment(java.util.regex.Pattern)|",
+      "|java+method:///org/eclipse/ditto/services/gateway/endpoints/routes/health/CachingHealthRoute/buildHealthRoute()|"
+    ],
+    "affectedLib": "com.typesafe.akka:akka-http_2.12:10.1.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.ditto:ditto-services-gateway-endpoints:0.3.0-M2",
+    "coordinatesV2": "org.eclipse.ditto:ditto-services-gateway-endpoints:0.8.0-M1",
+    "caller": "|java+method:///org/eclipse/ditto/services/gateway/endpoints/routes/RootRoute/lambda$null$17(java.lang.Integer,java.lang.String,akka.http.javadsl.server.RequestContext,org.eclipse.ditto.model.base.auth.AuthorizationContext)|",
+    "called": "|java+method:///akka/http/javadsl/server/Directives/parameterOptional(java.lang.String,java.util.function.Function)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/ditto/services/gateway/endpoints/routes/RootRoute/extractDittoHeaders(org.eclipse.ditto.model.base.auth.AuthorizationContext,java.lang.Integer,java.lang.String,java.util.function.Function)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/ditto/protocoladapter/TopicPath$Channel/getName()|",
+      "|java+method:///akka/http/javadsl/server/Directives/parameterOptional(java.lang.String,java.util.function.Function)|"
+    ],
+    "affectedLib": "com.typesafe.akka:akka-http_2.12:10.1.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.ditto:ditto-services-gateway-endpoints:0.3.0-M2",
+    "coordinatesV2": "org.eclipse.ditto:ditto-services-gateway-endpoints:0.8.0-M1",
+    "caller": "|java+method:///org/eclipse/ditto/services/gateway/endpoints/routes/RootRoute/buildApiSubRoutes(akka.http.javadsl.server.RequestContext,org.eclipse.ditto.model.base.headers.DittoHeaders)|",
+    "called": "|java+method:///akka/http/javadsl/server/Directives/route(akka.http.javadsl.server.Route%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/ditto/services/gateway/endpoints/routes/thingsearch/ThingSearchRoute/buildSearchRoute(akka.http.javadsl.server.RequestContext,org.eclipse.ditto.model.base.headers.DittoHeaders)|",
+      "|java+method:///akka/http/javadsl/server/Directives/route(akka.http.javadsl.server.Route%5B%5D)|",
+      "|java+method:///org/eclipse/ditto/services/gateway/endpoints/routes/sse/SseThingsRoute/buildThingsSseRoute(akka.http.javadsl.server.RequestContext,org.eclipse.ditto.model.base.headers.DittoHeaders)|",
+      "|java+method:///org/eclipse/ditto/services/gateway/endpoints/routes/things/ThingsRoute/buildThingsRoute(akka.http.javadsl.server.RequestContext,org.eclipse.ditto.model.base.headers.DittoHeaders)|",
+      "|java+method:///org/eclipse/ditto/services/gateway/endpoints/routes/policies/PoliciesRoute/buildPoliciesRoute(akka.http.javadsl.server.RequestContext,org.eclipse.ditto.model.base.headers.DittoHeaders)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/ditto/services/gateway/endpoints/routes/thingsearch/ThingSearchRoute/buildSearchRoute(akka.http.javadsl.server.RequestContext,org.eclipse.ditto.model.base.headers.DittoHeaders)|",
+      "|java+method:///org/eclipse/ditto/services/gateway/endpoints/routes/sse/SseThingsRoute/buildThingsSseRoute(akka.http.javadsl.server.RequestContext,org.eclipse.ditto.model.base.headers.DittoHeaders,java.util.function.Function)|",
+      "|java+method:///akka/http/javadsl/server/Directives/route(akka.http.javadsl.server.Route%5B%5D)|",
+      "|java+method:///org/eclipse/ditto/services/gateway/endpoints/routes/things/ThingsRoute/buildThingsRoute(akka.http.javadsl.server.RequestContext,org.eclipse.ditto.model.base.headers.DittoHeaders)|",
+      "|java+method:///java/util/function/Function/identity()|",
+      "|java+method:///org/eclipse/ditto/services/gateway/endpoints/routes/policies/PoliciesRoute/buildPoliciesRoute(akka.http.javadsl.server.RequestContext,org.eclipse.ditto.model.base.headers.DittoHeaders)|"
+    ],
+    "affectedLib": "com.typesafe.akka:akka-http_2.12:10.1.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.ditto:ditto-services-gateway-endpoints:0.3.0-M2",
+    "coordinatesV2": "org.eclipse.ditto:ditto-services-gateway-endpoints:0.8.0-M1",
+    "caller": "|java+method:///org/eclipse/ditto/services/gateway/endpoints/routes/RootRoute/lambda$null$10(java.util.function.Function,java.lang.String)|",
+    "called": "|java+method:///akka/http/javadsl/server/Directives/handleRejections(akka.http.javadsl.server.RejectionHandler,java.util.function.Supplier)|",
+    "v1Body": [
+      "|java+method:///akka/http/javadsl/server/Directives/handleExceptions(akka.http.javadsl.server.ExceptionHandler,java.util.function.Supplier)|"
+    ],
+    "v2Body": [
+      "|java+method:///akka/http/javadsl/server/Directives/handleRejections(akka.http.javadsl.server.RejectionHandler,java.util.function.Supplier)|"
+    ],
+    "affectedLib": "com.typesafe.akka:akka-http_2.12:10.1.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.ditto:ditto-services-gateway-endpoints:0.3.0-M2",
+    "coordinatesV2": "org.eclipse.ditto:ditto-services-gateway-endpoints:0.8.0-M1",
+    "caller": "|java+method:///org/eclipse/ditto/services/gateway/endpoints/routes/stats/StatsRoute/buildSubRoutes(akka.http.javadsl.server.RequestContext,java.lang.String)|",
+    "called": "|java+method:///akka/http/javadsl/server/Directives/route(akka.http.javadsl.server.Route%5B%5D)|",
+    "v1Body": [
+      "|java+method:///akka/http/javadsl/server/Directives/route(akka.http.javadsl.server.Route%5B%5D)|",
+      "|java+method:///akka/http/javadsl/server/Directives/path(java.lang.String,java.util.function.Supplier)|"
+    ],
+    "v2Body": [
+      "|java+method:///akka/http/javadsl/server/Directives/pathPrefix(java.lang.String,java.util.function.Supplier)|",
+      "|java+method:///akka/http/javadsl/server/Directives/route(akka.http.javadsl.server.Route%5B%5D)|",
+      "|java+method:///akka/http/javadsl/server/Directives/path(java.lang.String,java.util.function.Supplier)|"
+    ],
+    "affectedLib": "com.typesafe.akka:akka-http_2.12:10.1.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.ditto:ditto-services-gateway-endpoints:0.3.0-M2",
+    "coordinatesV2": "org.eclipse.ditto:ditto-services-gateway-endpoints:0.8.0-M1",
+    "caller": "|java+method:///org/eclipse/ditto/services/gateway/endpoints/routes/RootRoute/lambda$null$0(akka.http.javadsl.server.RequestContext,java.lang.String)|",
+    "called": "|java+method:///akka/http/javadsl/server/Directives/route(akka.http.javadsl.server.Route%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/ditto/services/gateway/endpoints/routes/devops/DevOpsRoute/buildDevopsRoute(akka.http.javadsl.server.RequestContext)|",
+      "|java+method:///org/eclipse/ditto/services/gateway/endpoints/directives/DevopsBasicAuthenticationDirective/authenticateDevopsBasic(java.lang.String,akka.http.javadsl.server.Route)|",
+      "|java+method:///org/eclipse/ditto/services/gateway/endpoints/routes/health/CachingHealthRoute/buildHealthRoute()|",
+      "|java+method:///org/eclipse/ditto/services/gateway/endpoints/routes/status/OverallStatusRoute/buildStatusRoute()|",
+      "|java+method:///akka/http/javadsl/server/Directives/route(akka.http.javadsl.server.Route%5B%5D)|",
+      "|java+method:///org/eclipse/ditto/services/gateway/endpoints/routes/RootRoute/getRealmFromSegment(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/ditto/services/gateway/endpoints/routes/devops/DevOpsRoute/buildDevopsRoute(akka.http.javadsl.server.RequestContext)|",
+      "|java+method:///akka/http/javadsl/server/Directives/route(akka.http.javadsl.server.Route%5B%5D)|",
+      "|java+method:///org/eclipse/ditto/services/gateway/endpoints/directives/DevopsBasicAuthenticationDirective/authenticateDevopsBasic(java.lang.String,akka.http.javadsl.server.Route)|",
+      "|java+method:///org/eclipse/ditto/services/gateway/endpoints/routes/status/OverallStatusRoute/buildStatusRoute()|"
+    ],
+    "affectedLib": "com.typesafe.akka:akka-http_2.12:10.1.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.ditto:ditto-services-gateway-endpoints:0.3.0-M2",
+    "coordinatesV2": "org.eclipse.ditto:ditto-services-gateway-endpoints:0.8.0-M1",
+    "caller": "|java+method:///org/eclipse/ditto/services/gateway/endpoints/directives/RequestResultLoggingDirective/lambda$logRequestResult$4(java.lang.String,java.util.function.Supplier,akka.http.javadsl.server.RequestContext)|",
+    "called": "|java+method:///akka/http/javadsl/server/RequestContext/getRequest()|",
+    "v1Body": [
+      "|java+method:///akka/http/javadsl/server/RequestContext/getRequest()|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///java/lang/System/nanoTime()|",
+      "|java+method:///akka/http/javadsl/model/HttpRequest/getUri()|",
+      "|java+method:///akka/http/javadsl/server/Directives/mapRouteResult(java.util.function.Function,java.util.function.Supplier)|",
+      "|java+method:///akka/http/javadsl/model/HttpRequest/method()|",
+      "|java+method:///akka/http/javadsl/model/Uri/toRelative()|",
+      "|java+method:///akka/http/javadsl/model/HttpMethod/name()|"
+    ],
+    "v2Body": [
+      "|java+method:///akka/http/javadsl/server/RequestContext/getRequest()|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///akka/http/javadsl/model/HttpRequest/getUri()|",
+      "|java+method:///akka/http/javadsl/server/Directives/mapRouteResult(java.util.function.Function,java.util.function.Supplier)|",
+      "|java+method:///akka/http/javadsl/model/HttpRequest/method()|",
+      "|java+method:///akka/http/javadsl/model/Uri/toRelative()|",
+      "|java+method:///akka/http/javadsl/model/HttpMethod/name()|"
+    ],
+    "affectedLib": "com.typesafe.akka:akka-http_2.12:10.1.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.ditto:ditto-services-gateway-endpoints:0.3.0-M2",
+    "coordinatesV2": "org.eclipse.ditto:ditto-services-gateway-endpoints:0.8.0-M1",
+    "caller": "|java+method:///org/eclipse/ditto/services/gateway/endpoints/routes/stats/StatsRoute/lambda$null$3(akka.http.javadsl.server.RequestContext,java.lang.String)|",
+    "called": "|java+method:///org/eclipse/ditto/signals/commands/devops/RetrieveStatisticsDetails/of(org.eclipse.ditto.model.base.headers.DittoHeaders)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/ditto/signals/commands/devops/RetrieveStatistics/of(org.eclipse.ditto.model.base.headers.DittoHeaders)|",
+      "|java+method:///org/eclipse/ditto/services/gateway/endpoints/routes/stats/StatsRoute/handleDevOpsPerRequest(akka.http.javadsl.server.RequestContext,org.eclipse.ditto.signals.commands.devops.DevOpsCommand)|",
+      "|java+method:///org/eclipse/ditto/services/gateway/endpoints/routes/stats/StatsRoute/buildDevOpsDittoHeaders(java.lang.CharSequence)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/ditto/services/gateway/endpoints/routes/stats/StatsRoute/handleDevOpsPerRequest(akka.http.javadsl.server.RequestContext,org.eclipse.ditto.signals.commands.devops.DevOpsCommand)|",
+      "|java+method:///org/eclipse/ditto/services/gateway/endpoints/routes/stats/StatsRoute/buildDevOpsDittoHeaders(java.lang.CharSequence)|",
+      "|java+method:///org/eclipse/ditto/services/gateway/endpoints/directives/DevopsBasicAuthenticationDirective/authenticateDevopsBasic(java.lang.String,akka.http.javadsl.server.Route)|",
+      "|java+method:///org/eclipse/ditto/signals/commands/devops/RetrieveStatisticsDetails/of(org.eclipse.ditto.model.base.headers.DittoHeaders)|"
+    ],
+    "affectedLib": "org.eclipse.ditto:ditto-signals-commands-devops:0.8.0-M1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.ditto:ditto-services-gateway-endpoints:0.3.0-M2",
+    "coordinatesV2": "org.eclipse.ditto:ditto-services-gateway-endpoints:0.8.0-M1",
+    "caller": "|java+method:///org/eclipse/ditto/services/gateway/endpoints/routes/stats/StatsRoute/lambda$buildSubRoutes$6(akka.http.javadsl.server.RequestContext,java.lang.String)|",
+    "called": "|java+method:///org/eclipse/ditto/services/models/thingsearch/commands/sudo/SudoCountThings/of(org.eclipse.ditto.model.base.headers.DittoHeaders)|",
+    "v1Body": [
+      "|java+method:///akka/http/javadsl/server/Directives/pathEndOrSingleSlash(java.util.function.Supplier)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/ditto/services/gateway/endpoints/routes/stats/StatsRoute/handleSudoCountThingsPerRequest(akka.http.javadsl.server.RequestContext,org.eclipse.ditto.services.models.thingsearch.commands.sudo.SudoCountThings)|",
+      "|java+method:///org/eclipse/ditto/services/models/thingsearch/commands/sudo/SudoCountThings/of(org.eclipse.ditto.model.base.headers.DittoHeaders)|",
+      "|java+method:///org/eclipse/ditto/services/gateway/endpoints/routes/stats/StatsRoute/buildDevOpsDittoHeaders(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "org.eclipse.ditto:ditto-services-models-thingsearch:0.8.0-M1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.ditto:ditto-services-gateway-endpoints:0.3.0-M2",
+    "coordinatesV2": "org.eclipse.ditto:ditto-services-gateway-endpoints:0.8.0-M1",
+    "caller": "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/RootRoute/RootRoute(akka.actor.ActorSystem,com.typesafe.config.Config,akka.actor.ActorRef,akka.actor.ActorRef,akka.actor.ActorRef,java.util.function.Supplier,org.eclipse.ditto.services.gateway.starter.service.util.HttpClientFacade)|",
+    "called": "|java+method:///org/eclipse/ditto/services/gateway/health/DittoStatusAndHealthProviderFactory/of(akka.actor.ActorSystem,java.util.function.Supplier)|",
+    "v1Body": [
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/devops/DevOpsRoute/DevOpsRoute(akka.actor.ActorRef,akka.actor.ActorSystem)|",
+      "|java+method:///com/typesafe/config/Config/getInt(java.lang.String)|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/stats/StatsRoute/StatsRoute(akka.actor.ActorRef,akka.actor.ActorSystem)|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/policies/PoliciesRoute/PoliciesRoute(akka.actor.ActorRef,akka.actor.ActorSystem)|",
+      "|java+method:///akka/actor/ActorSystem/dispatchers()|",
+      "|java+method:///akka/dispatch/Dispatchers/lookup(java.lang.String)|",
+      "|java+method:///org/eclipse/ditto/services/gateway/health/DittoStatusAndHealthProviderFactory/of(akka.actor.ActorSystem,java.util.function.Supplier)|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/sse/SseThingsRoute/SseThingsRoute(akka.actor.ActorRef,akka.actor.ActorSystem,akka.actor.ActorRef)|",
+      "|java+method:///akka/actor/ActorSystem/eventStream()|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/websocket/WebsocketRoute/WebsocketRoute(akka.actor.ActorRef,int,int,org.eclipse.ditto.protocoladapter.ProtocolAdapter,akka.event.EventStream)|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/thingsearch/ThingSearchRoute/ThingSearchRoute(akka.actor.ActorRef,akka.actor.ActorSystem)|",
+      "|java+method:///com/typesafe/config/Config/getDuration(java.lang.String)|",
+      "|java+method:///com/typesafe/config/Config/getIntList(java.lang.String)|",
+      "|java+method:///org/eclipse/ditto/services/gateway/endpoints/utils/DittoRejectionHandlerFactory/createInstance()|",
+      "|java+method:///org/eclipse/ditto/model/base/common/ConditionChecker/checkNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/eclipse/ditto/services/gateway/endpoints/routes/RootRoute/createExceptionHandler()|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/things/ThingsRoute/ThingsRoute(akka.actor.ActorRef,akka.actor.ActorSystem,java.time.Duration,java.time.Duration,java.time.Duration,java.time.Duration)|",
+      "|java+method:///org/eclipse/ditto/services/gateway/endpoints/routes/RootRoute/generateGatewayAuthenticationDirective(com.typesafe.config.Config,org.eclipse.ditto.services.gateway.starter.service.util.HttpClientFacade,akka.dispatch.MessageDispatcher)|",
+      "|java+method:///org/eclipse/ditto/protocoladapter/DittoProtocolAdapter/newInstance()|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/health/CachingHealthRoute/CachingHealthRoute(org.eclipse.ditto.services.gateway.health.StatusAndHealthProvider,java.time.Duration)|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/status/OverallStatusRoute/OverallStatusRoute(akka.actor.ActorSystem,java.util.function.Supplier,akka.actor.ActorRef,org.eclipse.ditto.services.gateway.health.StatusAndHealthProvider)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///akka/actor/ActorSystem/eventStream()|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/websocket/WebsocketRoute/WebsocketRoute(akka.actor.ActorRef,int,int,akka.event.EventStream)|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/devops/DevOpsRoute/DevOpsRoute(akka.actor.ActorRef,akka.actor.ActorSystem)|",
+      "|java+method:///com/typesafe/config/Config/getInt(java.lang.String)|",
+      "|java+method:///org/eclipse/ditto/services/utils/protocol/ProtocolConfigReader/loadProtocolAdapterProvider(akka.actor.ActorSystem)|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/stats/StatsRoute/StatsRoute(akka.actor.ActorRef,akka.actor.ActorSystem)|",
+      "|java+method:///org/eclipse/ditto/services/utils/protocol/ProtocolAdapterProvider/createProtocolAdapter()|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/policies/PoliciesRoute/PoliciesRoute(akka.actor.ActorRef,akka.actor.ActorSystem)|",
+      "|java+method:///org/eclipse/ditto/services/utils/protocol/ProtocolConfigReader/fromRawConfig(com.typesafe.config.Config)|",
+      "|java+method:///org/eclipse/ditto/services/gateway/endpoints/routes/RootRoute/generateGatewayAuthenticationDirective(com.typesafe.config.Config,org.eclipse.ditto.services.gateway.starter.service.util.HttpClientFacade)|",
+      "|java+method:///org/eclipse/ditto/services/gateway/health/DittoStatusAndHealthProviderFactory/of(akka.actor.ActorSystem,java.util.function.Supplier)|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/sse/SseThingsRoute/SseThingsRoute(akka.actor.ActorRef,akka.actor.ActorSystem,akka.actor.ActorRef)|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/things/ThingsRoute/ThingsRoute(akka.actor.ActorRef,akka.actor.ActorSystem,java.time.Duration,java.time.Duration,java.time.Duration,java.time.Duration)|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/health/CachingHealthRoute/CachingHealthRoute(org.eclipse.ditto.services.gateway.health.StatusAndHealthProvider,java.time.Duration)|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/thingsearch/ThingSearchRoute/ThingSearchRoute(akka.actor.ActorRef,akka.actor.ActorSystem)|",
+      "|java+method:///com/typesafe/config/Config/getDuration(java.lang.String)|",
+      "|java+method:///com/typesafe/config/Config/getIntList(java.lang.String)|",
+      "|java+method:///org/eclipse/ditto/services/gateway/endpoints/utils/DittoRejectionHandlerFactory/createInstance()|",
+      "|java+method:///org/eclipse/ditto/model/base/common/ConditionChecker/checkNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/eclipse/ditto/services/gateway/endpoints/routes/RootRoute/createExceptionHandler()|",
+      "|java+constructor:///org/eclipse/ditto/services/gateway/endpoints/routes/status/OverallStatusRoute/OverallStatusRoute(akka.actor.ActorSystem,java.util.function.Supplier,akka.actor.ActorRef,org.eclipse.ditto.services.gateway.health.StatusAndHealthProvider)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.eclipse.ditto:ditto-services-gateway-health:0.8.0-M1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.ditto:ditto-services-gateway-endpoints:0.3.0-M2",
+    "coordinatesV2": "org.eclipse.ditto:ditto-services-gateway-endpoints:0.8.0-M1",
+    "caller": "|java+method:///org/eclipse/ditto/services/gateway/endpoints/HttpRequestActor/logDittoRuntimeException(org.eclipse.ditto.model.base.exceptions.DittoRuntimeException)|",
+    "called": "|java+method:///org/eclipse/ditto/services/utils/akka/LogUtil/enhanceLogWithCorrelationId(akka.event.DiagnosticLoggingAdapter,org.eclipse.ditto.model.base.headers.WithDittoHeaders)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/ditto/model/base/exceptions/DittoRuntimeException/getMessage()|",
+      "|java+method:///org/eclipse/ditto/model/base/exceptions/DittoRuntimeException/getErrorCode()|",
+      "|java+method:///akka/event/DiagnosticLoggingAdapter/info(java.lang.String,java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/ditto/model/base/exceptions/DittoRuntimeException/getMessage()|",
+      "|java+method:///org/eclipse/ditto/services/utils/akka/LogUtil/enhanceLogWithCorrelationId(akka.event.DiagnosticLoggingAdapter,org.eclipse.ditto.model.base.headers.WithDittoHeaders)|",
+      "|java+method:///org/eclipse/ditto/model/base/exceptions/DittoRuntimeException/getErrorCode()|",
+      "|java+method:///akka/event/DiagnosticLoggingAdapter/info(java.lang.String,java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "org.eclipse.ditto:ditto-services-utils-akka:0.8.0-M1",
+    "change": "UPDATED"
+  }
+]

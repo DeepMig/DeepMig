@@ -1,0 +1,491 @@
+	---------------------
+ 	Welcome to Jemos PODAM (POjo DAta Mocker)
+	---------------------
+	Marco Tedone
+	---------------------
+
+Introduction
+
+  PODAM is a lightweight tool to auto-fill Java POJOs with data. This comes handy when developing unit tests. Thanks
+  to PODAM users now have a one-liner that does all the work them.
+
+* PODAM main features:
+
+  * Automatic introspection of your POJOs to fill all possible attributes with random data. You can customise this behaviour.
+
+  * Extension points to customise the data strategy, fields exclusions based on names or annotations
+
+  * Support for your custom annotations to either provide data or exclude fields
+
+  * The option to select minimal constructors (for lightweight POJOs) or full constructors
+
+  * Support for Java types, enumerations, arrays, collections (lists, sets, maps)
+
+  * Support for generics
+
+  * Support for your own factories when PODAM cannot introspect enough information to generate a
+  type (e.g. XMLGregorianCalendar)
+
+  * Support for arbitrary method executions when the normal lifecycle has ended
+
+
+* Using PODAM in your project
+
+  To see how you add PODAM to your project, please refer 
+  to {{{./usage.html} the usage page}}.
+
+* How to use PODAM API        
+  
++-----------------------------------
+// Simplest scenario. Will delegate to Podam all decisions
+PodamFactory factory = new PodamFactoryImpl();
+
+// This will use constructor with minimum arguments and
+// then setters to populate POJO
+Pojo myPojo = factory.manufacturePojo(Pojo.class);
+
+// This will use constructor with maximum arguments and
+// then setters to populate POJO
+Pojo myPojo2 = factory.manufacturePojoWithFullData(Pojo.class);
+
+// If object instance is already available,
+// Podam can fill it with random data
+Pojo myPojo3 = MyFactory.getPojoInstance();
+factory.populatePojo(myPojo3);
++-----------------------------------
+
+  PODAM allows users to customise the way data are assigned in several ways: 
+  
+  * By defining a global strategy
+  
+  * By defining strategies at the attribute level
+  
+  * For primitive and wrapper types, by customising the numeric value through annotations
+  
+  * For strings by customising the string value and length through annotation
+  
+  * To skip a certain attribute by using the <@PodamExclude> annotation or by name
+
+  * By defining a collection of methods that Podam should execute while filling POJOs
+  
+** Defining a global data provider strategy
+
+   The default strategy for PODAM is Random values. However users can define their own global strategy by providing an
+   implementation of the <<DataProviderStrategy>> interface, as follows: 
+  
++-----------------------------------
+
+DataProviderStrategy strategy = new MyDataProviderStrategy();
+PodamFactory factory = new PodamFactoryImpl(strategy);
+
+Pojo myPojo = factory.manufacturePojo(Pojo.class);
+
+Pojo myPojo2 = factory.manufacturePojoWithFullData(Pojo.class);
+
++-----------------------------------
+
+  Please note that annotations are not required to use PODAM. The tool will automatically introspect
+  and fill your tree of POJOs out-of-the-box. The preferred way to customise the way PODAM fills your data
+  is through a custom <DataProviderStrategy>, as shown above. However one can annotate Java classes to 
+  provide custom values, as shown below. Podam also supports your own annotations.
+
+** Defining an attribute-level strategy
+
+  PODAM allows also users to define data strategies at the attribute level: this includes the capability to define
+  custom strategies for elements and keys in collections, maps and arrays. 
+  In order to define an attribute-level strategy, users will need to: 
+  
+  * Provide an implementation of the <<AttributeStrategy\<T\>>> interface
+  
+  * Use the <<@PodamStrategyValue>> annotation
+
+  []
+
+  Example: 
+  
++-----------------------------------
+
+@PodamStrategyValue(PostCodeStrategy.class)
+private String postCode;
+
+@PodamStrategyValue(MyBirthdayStrategy.class)
+private Calendar myBirthday;
+
++-----------------------------------
+
+  In this example I defined two attribute-level strategies: 
+  
+  * PostCodeStrategy to create a UK-like postcode
+  
+  * MyBirthdayStrategy to create a Calendar which contains the exact time of my birth
+
+  []
+
+  The <PostCodeStrategy> class looks like the following:
+  
++-----------------------------------
+/**
+ * 
+ */
+package uk.co.jemos.podam.test.strategies;
+
+import uk.co.jemos.podam.api.AttributeStrategy;
+import uk.co.jemos.podam.exceptions.PodamMockeryException;
+import uk.co.jemos.podam.test.utils.PodamTestConstants;
+
+/**
+ * A test strategy to manufacture UK-like post codes.
+ * 
+ * @author mtedone
+ * 
+ */
+public class PostCodeStrategy implements AttributeStrategy<String> {
+	
+	/**
+	 * It returns an English post code.
+	 * <p>
+	 * This is just an example. More elaborated code could the implemented by
+	 * this method. This is just to proof the point.
+	 * </p>
+	 * 
+	 * {@inheritDoc}
+	 */
+	public String getValue() throws PodamMockeryException {
+		return PodamTestConstants.POST_CODE;
+	}
+	
+}
+
++-----------------------------------
+
+  There is nothing special about the above class: it's job is just to provide a value of the right type.
+  
+  The <MyBirthdayStrategy> class looks like the following: 
+  
++-----------------------------------
+
+/**
+ * 
+ */
+package uk.co.jemos.podam.test.strategies;
+
+import java.util.Calendar;
+
+import uk.co.jemos.podam.api.AttributeStrategy;
+import uk.co.jemos.podam.exceptions.PodamMockeryException;
+import uk.co.jemos.podam.test.utils.PodamTestUtils;
+
+/**
+ * An attribute strategy which returns a Calendar object set with my DOB.
+ *
+ * @author mtedone
+ * 
+ */
+public class MyBirthdayStrategy implements AttributeStrategy<Calendar> {
+
+	/**
+	 * It returns a {@link Calendar} object set with the exact date of my
+	 * birthday.
+	 * 
+	 * {@inheritDoc}
+	 */
+	public Calendar getValue() throws PodamMockeryException {
+
+		Calendar myBirthday = PodamTestUtils.getMyBirthday();
+
+		return myBirthday;
+	}
+		
+}
+
+
++-----------------------------------
+
+  The capability to customise the strategy PODAM uses to fill attribute data is extended to container-like data
+  structures, such as Collections, Maps and Arrays; however for these data structures use the <@PodamCollection>
+  annotation. Please refer to {{{./annotations.html} The annotation}} page for more details.
+  
+  Example on how to use PODAM custom attribute strategy to fill collection elements: 
+  
++-----------------------------------
+
+@PodamCollection(nbrElements = 2, collectionElementStrategy = MyBirthdayStrategy.class)
+private List<Calendar> myBirthdays = new ArrayList<Calendar>();
+
++-----------------------------------
+
+  Example on how to use PODAM custom attribute strategy to fill Map keys and elements. Please note that <@PodamCollection> offers 
+  also the possibility to define a strategy to set the values for keys in a Map, through the <mapKeyStrategy> attribute:  
+  
++-----------------------------------
+
+@PodamCollection(nbrElements = 2, mapElementStrategy = MyBirthdayStrategy.class)
+private Map<String, Calendar> myBirthdaysMap = new HashMap<String, Calendar>();
+
++-----------------------------------     
+
+  Example on how to use PODAM custom attribute strategy to fill array elements:
+  
++-----------------------------------
+
+@PodamCollection(nbrElements = 2, collectionElementStrategy = MyBirthdayStrategy.class)
+private Calendar[] myBirthdaysArray;
+
++-----------------------------------     
+  
+  PODAM will use the MyBirthdayStrategy to set the value for the two array elements. 
+  
+  
+
+** Customising PODAM behaviour for primitives and wrapper types
+
+  Primitive and Wrapper type values can be customised through annotations. 
+  
++-----------------------------------
+@PodamDoubleValue(minValue = PodamTestConstants.NUMBER_DOUBLE_MIN_VALUE, maxValue = PodamTestConstants.NUMBER_DOUBLE_MAX_VALUE)
+private double doubleFieldWithMinAndMaxValue;
++-----------------------------------
+  
+  Please note that by contract (DataProviderStrategy) min and max values are inclusive. 
+  
+  For a full list of supported annotations, please refer to the {{{./annotations.html} Annotations}} page.
+  
+  To know more about how PODAM works, please refer to the {{{./walk-through-example.html} The walk-through example}} page 
+  or to the {{{./corner-cases.html} Corner Cases }} page on the left menu.
+
+** A simple example to manufacture collections
+
+  You can use PODAM to fill in generic collections with dummy data. 
+
++-----------------------------------
+PodamFactory podam = new PodamFactoryImpl();
+
+// Annotation required to remove warning because of type erasure although it would work without
+@SuppressWarnings("unchecked")
+List<String> list = podam.manufacturePojo(ArrayList.class, String.class);
+
++-----------------------------------  
+
+** Defining an attribute-level strategy with <DataProviderStrategy>
+
+  Assuming we are filling the class
+
++-----------------------------------
+public static class Pojo {
+	private String randomString;
+	private String postCode;
+	private URL url;
+
+	public String getRandomString() { return randomString; }
+
+	public void setRandomString(String randomString) { this.randomString = randomString; }
+
+	public String getUrl() { return url.toString(); }
+
+	public void setUrl(String url) throws MalformedURLException { this.url = new URL(url); }
+
+	public String getPostCode() { return postCode; }
+
+	public void setPostCode(String postCode) { this.postCode = postCode; }
+}
++-----------------------------------
+
+  Define custom <DataProviderStrategy>, which will be producing values
+  depending on attribute type
+
++-----------------------------------
+public class CustomProviderStrategy extends AbstractRandomDataProviderStrategy {
+
+	@Override
+	public String getStringValue(AttributeMetadata attributeMetadata) {
+
+		if (Pojo.class.isAssignableFrom(attributeMetadata.getPojoClass())) {
+
+			if ("url".equals(attributeMetadata.getAttributeName())) {
+				return "http://wikipedia.org";
+			} else if ("postCode".equals(attributeMetadata.getAttributeName())) {
+				return "00100";
+			}
+		}
+		return super.getStringValue(attributeMetadata);
+	}
+}
++-----------------------------------
+
+  Intantiate POJO with <PodamFactory>
+
++-----------------------------------
+CustomProviderStrategy providerStrategy = new CustomProviderStrategy();
+PodamFactory factory = new PodamFactoryImpl(providerStrategy);
+Pojo pojo = factory.manufacturePojo(Pojo.class);
++-----------------------------------
+
+  Result:
+
++-----------------------------------
+{
+  "randomString":"rP_yOK2EtR",
+  "postCode":"00100",
+  "url":"http://wikipedia.org"
+}
++-----------------------------------
+
+** Manufacturing generic types
+
+  Sometimes you may want to manufacture a generic type directly without a wrapper class or a subclass.
+  
+  As you should have noticed, the <manufacturePojo> method of the <PodamFactory> interface can take some additional
+  parameters through varargs. This is a way to allow the definition of the generic types for a given class.
+  
+  The following class is an example of a generic POJO:
+  
++-----------------------------------
+public class GenericPojo<F, S> {
+
+	private F firstValue;
+	private S secondValue;
+	@PodamCollection(nbrElements = 2)
+	private List<F> firstList;
+	@PodamCollection(nbrElements = 2)
+	private S[] secondArray;
+	@PodamCollection(nbrElements = 2)
+	private Map<F, S> firstSecondMap;
+	
+	... getter, setters and toString
+}
++-----------------------------------
+
+  Now imagine that you want an instance of this class defining <F> and <S> as <Double> and <String> respectively.
+  This is how it should be done:
+  
++-----------------------------------
+GenericPojo pojo = factory.manufacturePojo(GenericPojo.class, Double.class, String.class);
++-----------------------------------
+
+  As you can see, the first class is the POJO to be manufactured (<GenericPojo>), and the subsequent classes are the
+  type parameters to be used for this <GenericPojo> instance.
+  
+  This is the result of the call above:
+  
++-----------------------------------
+GenericPojo [
+    firstValue=0.03181392348712919,
+    secondValue=L4OicBAhKY,
+    firstList=[0.770082469177622, 0.7924208229673068],
+    secondArray=[8EsGFHtwwE, Zqz8B_4oAr],
+    firstSecondMap={0.778926356384843=sl4FxQIEYe, 0.2909259461070528=j8mlZshNsv}
+]
++-----------------------------------
+
+  It is also possible to specify some complex nested generic types like
+  <GenericPojo<GenericPojo<String, Long>>, <Map<Integer, List<Boolean>>>> using the
+  <uk.co.jemos.podam.api.PodamParameterizedType> class as in the following example:
+  
++-----------------------------------
+ParameterizedType stringLongGenericPojoType =
+		new PodamParameterizedType(GenericPojo.class, String.class, Long.class);
+
+ParameterizedType IntegerBooleanListMapType =
+		new PodamParameterizedType(Map.class,
+				Integer.class,
+				new PodamParameterizedType(List.class, Boolean.class));
+
+GenericPojo<GenericPojo<String, Long>, Map<Integer, List<Boolean>>> pojo =
+		factory.manufacturePojo(GenericPojo.class, stringLongGenericPojoType, IntegerBooleanListMapType);
++-----------------------------------
+  
+  Running the code above the following result is produced:
+  
++-----------------------------------
+GenericPojo [
+    firstValue=GenericPojo [
+        firstValue=e0NI7ZnKfW,
+        secondValue=1340165351073,
+        firstList=[2UlUwNJdOS, bZ7X0KZWtV],
+        secondArray=[1340165351073, 1340165351073],
+        firstSecondMap={QiB36seL99=1340165351072, Dk_KwHCGOq=1340165351072}
+    ],
+    secondValue={2081811337=[true]},
+    firstList=[
+        GenericPojo [
+            firstValue=ECNfFuF6WM,
+            secondValue=1340165351067,
+            firstList=[QfZXnqOk1N, HDAGfxdat0],
+            secondArray=[1340165351067, 1340165351067],
+            firstSecondMap={UgJ4VNvro_=1340165351067, 5NGtW0hH0h=1340165351067}
+        ],
+        GenericPojo [
+            firstValue=kHryFVavEn,
+            secondValue=1340165351070,
+            firstList=[wAKe40d3zO, OH8q03P9Cw],
+            secondArray=[1340165351070, 1340165351070],
+            firstSecondMap={LhRoWR2DNX=1340165351068, zg0IAN4ZZ5=1340165351068}
+        ]
+    ],
+    secondArray=[{2115657799=[true, true], -1507554610=[true, true]}, {1990372468=[true, true], -340173617=[true, true]}],
+    firstSecondMap={
+        GenericPojo [
+            firstValue=WeEDkbr2pc,
+            secondValue=1340165351058,
+            firstList=[0TRSKWur8n, vbIptzObXA],
+            secondArray=[1340165351057, 1340165351057],
+            firstSecondMap={49wLsEiuip=1340165351056, LGIUi7CptX=1340165351056}
+        ] = {1126207473=[true, true], -1973087621=[true, true]},
+        GenericPojo [
+            firstValue=2RtNOrjgjZ,
+            secondValue=1340165351064,
+            firstList=[l1S7URCgFT, ntoKQnI1Kj],
+            secondArray=[1340165351064, 1340165351064],
+            firstSecondMap={F0gqzGJMZL=1340165351061, vXdlU9NCfR=1340165351061}
+        ] = {-485029362=[true, true], 609129754=[true, true]}
+    }
+]
++-----------------------------------
+
+
+** Tweaking PODAM for performance
+
+  Building huge graphs of nested objects may take time. Podam has a memoization option which is the default.
+  When enabled, Podam will only create a unique object for each class and reuse it.
+  This reduces algorithmic complexity in scenarios where distinct random data is not needed.
+  To disable memoization, you can do the following:
+
++-----------------------------------
+PodamFactory podam = new PodamFactoryImpl();
+podam.getStrategy().setMemoizationEnabled(false);
++-----------------------------------
+
+** Executing arbitrary methods after POJO instantiation
+
+  Class info strategy can be instructed to execute arbitrary methods after POJO creation and hydation.
+
+  For example, the class
+
++-----------------------------------
+public class MyPojo {
+
+    private String strValue;
+    private Integer intValue;
+
+    public void init(String strValue, Integer intValue) {
+        this.strValue = strValue;
+        this.intValue = intValue;
+    }
+}
++-----------------------------------
+
+  One needs to specify POJO class, method name and list of method parameter types.
+
++-----------------------------------
+DefaultClassInfoStrategy classInfoStrategy = DefaultClassInfoStrategy.getInstance();
+classInfoStrategy.addExtraMethod(MyPojo.class, "init", String.class, Integer.class);
++-----------------------------------
+
+  Then instantiation will look like:
+
++-----------------------------------
+PodamFactory podam = new PodamFactoryImpl();
+Pojo myPojo = factory.manufacturePojo(Pojo.class);
++-----------------------------------
+
+  PODAM will use values provided by <DataProviderStrategy> as parameters to call the methods.

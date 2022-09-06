@@ -1,0 +1,75 @@
+[
+  {
+    "coordinatesV1": "pl.allegro.tech.hermes:hermes-frontend:0.10.0",
+    "coordinatesV2": "pl.allegro.tech.hermes:hermes-frontend:0.10.2",
+    "caller": "|java+constructor:///pl/allegro/tech/hermes/frontend/publishing/handlers/MessageReadHandler/MessageReadHandler(io.undertow.server.HttpHandler,io.undertow.server.HttpHandler,pl.allegro.tech.hermes.common.config.ConfigFactory,pl.allegro.tech.hermes.frontend.publishing.handlers.end.MessageErrorProcessor)|",
+    "called": "|java+method:///pl/allegro/tech/hermes/common/config/ConfigFactory/getIntProperty(pl.allegro.tech.hermes.common.config.Configs)|",
+    "v1Body": [
+      "|java+method:///pl/allegro/tech/hermes/common/config/ConfigFactory/getIntProperty(pl.allegro.tech.hermes.common.config.Configs)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///pl/allegro/tech/hermes/frontend/publishing/handlers/ContentLengthChecker/ContentLengthChecker(pl.allegro.tech.hermes.common.config.ConfigFactory)|",
+      "|java+method:///pl/allegro/tech/hermes/common/config/ConfigFactory/getIntProperty(pl.allegro.tech.hermes.common.config.Configs)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "pl.allegro.tech.hermes:hermes-common:0.10.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "pl.allegro.tech.hermes:hermes-frontend:0.10.0",
+    "coordinatesV2": "pl.allegro.tech.hermes:hermes-frontend:0.10.2",
+    "caller": "|java+constructor:///pl/allegro/tech/hermes/frontend/HermesFrontend/HermesFrontend(pl.allegro.tech.hermes.common.hook.HooksHandler,java.util.List,java.util.List,boolean)|",
+    "called": "|java+constructor:///pl/allegro/tech/hermes/common/hook/FlushLogsShutdownHook/FlushLogsShutdownHook()|",
+    "v1Body": [
+      "|java+method:///org/glassfish/hk2/api/ServiceLocator/getService(java.lang.Class,java.lang.annotation.Annotation%5B%5D)|",
+      "|java+method:///pl/allegro/tech/hermes/frontend/HermesFrontend/gracefulShutdownHook()|",
+      "|java+method:///pl/allegro/tech/hermes/common/hook/HooksHandler/addShutdownHook(pl.allegro.tech.hermes.common.hook.ServiceAwareHook)|",
+      "|java+method:///pl/allegro/tech/hermes/frontend/HermesFrontend/defaultShutdownHook()|",
+      "|java+method:///pl/allegro/tech/hermes/common/config/ConfigFactory/getBooleanProperty(pl.allegro.tech.hermes.common.config.Configs)|",
+      "|java+method:///pl/allegro/tech/hermes/common/hook/HooksHandler/addStartupHook(pl.allegro.tech.hermes.common.hook.ServiceAwareHook)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///pl/allegro/tech/hermes/common/hook/FlushLogsShutdownHook/FlushLogsShutdownHook()|",
+      "|java+method:///pl/allegro/tech/hermes/frontend/HermesFrontend/createDIContainer(java.util.List)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/glassfish/hk2/api/ServiceLocator/getService(java.lang.Class,java.lang.annotation.Annotation%5B%5D)|",
+      "|java+method:///pl/allegro/tech/hermes/frontend/HermesFrontend/gracefulShutdownHook()|",
+      "|java+method:///pl/allegro/tech/hermes/common/hook/HooksHandler/addShutdownHook(pl.allegro.tech.hermes.common.hook.ServiceAwareHook)|",
+      "|java+method:///pl/allegro/tech/hermes/common/config/ConfigFactory/getBooleanProperty(pl.allegro.tech.hermes.common.config.Configs)|",
+      "|java+method:///pl/allegro/tech/hermes/common/hook/HooksHandler/addStartupHook(pl.allegro.tech.hermes.common.hook.ServiceAwareHook)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///pl/allegro/tech/hermes/frontend/HermesFrontend/defaultShutdownHook()|",
+      "|java+method:///pl/allegro/tech/hermes/common/hook/HooksHandler/addBeforeStartHook(pl.allegro.tech.hermes.common.hook.ServiceAwareHook)|",
+      "|java+constructor:///pl/allegro/tech/hermes/common/hook/FlushLogsShutdownHook/FlushLogsShutdownHook()|",
+      "|java+method:///pl/allegro/tech/hermes/frontend/HermesFrontend/createDIContainer(java.util.List)|"
+    ],
+    "affectedLib": "pl.allegro.tech.hermes:hermes-common:0.10.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "pl.allegro.tech.hermes:hermes-frontend:0.10.0",
+    "coordinatesV2": "pl.allegro.tech.hermes:hermes-frontend:0.10.2",
+    "caller": "|java+method:///pl/allegro/tech/hermes/frontend/HermesFrontend/start()|",
+    "called": "|java+method:///pl/allegro/tech/hermes/common/hook/HooksHandler/startup(org.glassfish.hk2.api.ServiceLocator)|",
+    "v1Body": [
+      "|java+method:///org/glassfish/hk2/api/ServiceLocator/getService(java.lang.Class,java.lang.annotation.Annotation%5B%5D)|",
+      "|java+method:///pl/allegro/tech/hermes/common/hook/HooksHandler/startup(org.glassfish.hk2.api.ServiceLocator)|",
+      "|java+method:///java/util/List/forEach(java.util.function.Consumer)|",
+      "|java+method:///pl/allegro/tech/hermes/frontend/HermesFrontend/startCaches(org.glassfish.hk2.api.ServiceLocator)|",
+      "|java+method:///pl/allegro/tech/hermes/frontend/server/HermesServer/start()|",
+      "|java+method:///pl/allegro/tech/hermes/frontend/di/PersistentBufferExtension/extend()|"
+    ],
+    "v2Body": [
+      "|java+method:///pl/allegro/tech/hermes/common/hook/HooksHandler/runBeforeStartHooks(org.glassfish.hk2.api.ServiceLocator)|",
+      "|java+method:///org/glassfish/hk2/api/ServiceLocator/getService(java.lang.Class,java.lang.annotation.Annotation%5B%5D)|",
+      "|java+method:///pl/allegro/tech/hermes/common/hook/HooksHandler/startup(org.glassfish.hk2.api.ServiceLocator)|",
+      "|java+method:///java/util/List/forEach(java.util.function.Consumer)|",
+      "|java+method:///pl/allegro/tech/hermes/frontend/HermesFrontend/startCaches(org.glassfish.hk2.api.ServiceLocator)|",
+      "|java+method:///pl/allegro/tech/hermes/frontend/server/HermesServer/start()|",
+      "|java+method:///pl/allegro/tech/hermes/frontend/di/PersistentBufferExtension/extend()|"
+    ],
+    "affectedLib": "pl.allegro.tech.hermes:hermes-common:0.10.2",
+    "change": "UPDATED"
+  }
+]

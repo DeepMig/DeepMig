@@ -1,0 +1,108 @@
+[
+  {
+    "coordinatesV1": "com.netflix.metacat:metacat-common-server:1.0.12",
+    "coordinatesV2": "com.netflix.metacat:metacat-common-server:1.1.0-rc.1",
+    "caller": "|java+method:///com/netflix/metacat/common/server/util/PoolStatsInterceptor/publishMetric(org.apache.tomcat.jdbc.pool.ConnectionPool)|",
+    "called": "|java+method:///org/apache/tomcat/jdbc/pool/ConnectionPool/getSize()|",
+    "v1Body": [
+      "|java+method:///org/apache/tomcat/jdbc/pool/ConnectionPool/getIdle()|",
+      "|java+method:///com/netflix/metacat/common/server/monitoring/DynamicGauge/set(java.lang.String,double)|",
+      "|java+method:///org/apache/tomcat/jdbc/pool/ConnectionPool/getSize()|",
+      "|java+method:///org/apache/tomcat/jdbc/pool/ConnectionPool/getActive()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/tomcat/jdbc/pool/ConnectionPool/getIdle()|",
+      "|java+method:///org/apache/tomcat/jdbc/pool/ConnectionPool/getSize()|",
+      "|java+method:///org/apache/tomcat/jdbc/pool/ConnectionPool/getActive()|",
+      "|java+method:///com/netflix/spectator/api/Gauge/set(double)|"
+    ],
+    "affectedLib": "org.apache.tomcat:tomcat-jdbc:8.5.15",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.netflix.metacat:metacat-common-server:1.0.12",
+    "coordinatesV2": "com.netflix.metacat:metacat-common-server:1.1.0-rc.1",
+    "caller": "|java+constructor:///com/netflix/metacat/common/server/util/PoolStatsInterceptor/PoolStatsInterceptor()|",
+    "called": "|java+constructor:///org/apache/tomcat/jdbc/pool/JdbcInterceptor/JdbcInterceptor()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/tomcat/jdbc/pool/JdbcInterceptor/JdbcInterceptor()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/tomcat/jdbc/pool/JdbcInterceptor/JdbcInterceptor()|",
+      "|java+method:///com/netflix/spectator/api/Spectator/globalRegistry()|"
+    ],
+    "affectedLib": "org.apache.tomcat:tomcat-jdbc:8.5.15",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.netflix.metacat:metacat-common-server:1.0.12",
+    "coordinatesV2": "com.netflix.metacat:metacat-common-server:1.1.0-rc.1",
+    "caller": "|java+constructor:///com/netflix/metacat/common/server/connectors/DefaultConnectorFactory/DefaultConnectorFactory(java.lang.String,java.lang.Iterable)|",
+    "called": "|java+method:///com/google/inject/Guice/createInjector(java.lang.Iterable)|",
+    "v1Body": [
+      "|java+method:///com/google/inject/Guice/createInjector(java.lang.Iterable)|",
+      "|java+constructor:///java/lang/NullPointerException/NullPointerException(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/inject/Guice/createInjector(java.lang.Iterable)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.inject:guice:3.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.netflix.metacat:metacat-common-server:1.0.12",
+    "coordinatesV2": "com.netflix.metacat:metacat-common-server:1.1.0-rc.1",
+    "caller": "|java+initializer:///com/netflix/metacat/common/server/util/DataSourceManager/DataSourceManager$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///com/netflix/metacat/common/server/util/DataSourceManager/DataSourceManager()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/netflix/metacat/common/server/util/DataSourceManager/DataSourceManager()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.25",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.netflix.metacat:metacat-common-server:1.0.12",
+    "coordinatesV2": "com.netflix.metacat:metacat-common-server:1.1.0-rc.1",
+    "caller": "|java+method:///com/netflix/metacat/common/server/connectors/ConnectorUtils/paginate(java.util.List,com.netflix.metacat.common.dto.Pageable)|",
+    "called": "|java+method:///com/netflix/metacat/common/dto/Pageable/getOffset()|",
+    "v1Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///com/netflix/metacat/common/dto/Pageable/isPageable()|",
+      "|java+method:///com/netflix/metacat/common/dto/Pageable/getOffset()|",
+      "|java+method:///com/google/common/collect/ImmutableList$Builder/build()|",
+      "|java+constructor:///java/lang/NullPointerException/NullPointerException(java.lang.String)|",
+      "|java+method:///com/netflix/metacat/common/dto/Pageable/getLimit()|",
+      "|java+method:///java/util/stream/Stream/limit(long)|",
+      "|java+method:///java/util/stream/Stream/skip(long)|",
+      "|java+method:///com/google/common/collect/ImmutableList/builder()|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|",
+      "|java+method:///com/google/common/collect/ImmutableList$Builder/addAll(java.lang.Iterable)|",
+      "|java+method:///java/util/stream/Collectors/toList()|",
+      "|java+method:///java/util/List/stream()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///com/netflix/metacat/common/dto/Pageable/isPageable()|",
+      "|java+method:///com/netflix/metacat/common/dto/Pageable/getOffset()|",
+      "|java+method:///com/google/common/collect/ImmutableList$Builder/build()|",
+      "|java+method:///com/netflix/metacat/common/dto/Pageable/getLimit()|",
+      "|java+method:///java/util/stream/Stream/limit(long)|",
+      "|java+method:///java/util/stream/Stream/skip(long)|",
+      "|java+method:///com/google/common/collect/ImmutableList/builder()|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|",
+      "|java+method:///com/google/common/collect/ImmutableList$Builder/addAll(java.lang.Iterable)|",
+      "|java+method:///java/util/stream/Collectors/toList()|",
+      "|java+method:///java/util/List/stream()|"
+    ],
+    "affectedLib": "com.netflix.metacat:metacat-common:1.1.0-rc.1",
+    "change": "UPDATED"
+  }
+]

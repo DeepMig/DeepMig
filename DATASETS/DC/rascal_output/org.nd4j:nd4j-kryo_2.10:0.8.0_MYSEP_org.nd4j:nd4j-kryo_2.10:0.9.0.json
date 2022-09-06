@@ -1,0 +1,50 @@
+[
+  {
+    "coordinatesV1": "org.nd4j:nd4j-kryo_2.10:0.9.0",
+    "coordinatesV2": "org.nd4j:nd4j-kryo_2.10:0.8.0",
+    "caller": "|java+method:///org/nd4j/Nd4jRegistrator/registerClasses(com.esotericsoftware.kryo.Kryo)|",
+    "called": "|java+method:///com/esotericsoftware/kryo/Kryo/register(java.lang.Class,com.esotericsoftware.kryo.Serializer)|",
+    "v1Body": [
+      "|java+method:///org/nd4j/linalg/factory/Nd4jBackend/getComplexNDArrayClass()|",
+      "|java+method:///org/nd4j/linalg/factory/Nd4j/getBackend()|",
+      "|java+method:///org/nd4j/linalg/factory/Nd4jBackend/getNDArrayClass()|",
+      "|java+method:///com/esotericsoftware/kryo/Kryo/register(java.lang.Class,com.esotericsoftware.kryo.Serializer)|",
+      "|java+constructor:///org/nd4j/Nd4jSerializer/Nd4jSerializer()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/nd4j/linalg/factory/Nd4jBackend/getComplexNDArrayClass()|",
+      "|java+method:///org/nd4j/linalg/factory/Nd4j/getBackend()|",
+      "|java+method:///org/nd4j/linalg/factory/Nd4jBackend/getNDArrayClass()|",
+      "|java+method:///de/javakaffee/kryoserializers/UnmodifiableCollectionsSerializer/registerSerializers(com.esotericsoftware.kryo.Kryo)|",
+      "|java+method:///com/esotericsoftware/kryo/Kryo/register(java.lang.Class,com.esotericsoftware.kryo.Serializer)|",
+      "|java+constructor:///org/nd4j/Nd4jSerializer/Nd4jSerializer()|",
+      "|java+method:///de/javakaffee/kryoserializers/SynchronizedCollectionsSerializer/registerSerializers(com.esotericsoftware.kryo.Kryo)|"
+    ],
+    "affectedLib": "com.esotericsoftware.kryo:kryo:2.21",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.nd4j:nd4j-kryo_2.10:0.8.0",
+    "coordinatesV2": "org.nd4j:nd4j-kryo_2.10:0.9.0",
+    "caller": "|java+method:///org/nd4j/Nd4jRegistrator/registerClasses(com.esotericsoftware.kryo.Kryo)|",
+    "called": "|java+method:///de/javakaffee/kryoserializers/SynchronizedCollectionsSerializer/registerSerializers(com.esotericsoftware.kryo.Kryo)|",
+    "v1Body": [
+      "|java+method:///org/nd4j/linalg/factory/Nd4jBackend/getComplexNDArrayClass()|",
+      "|java+method:///org/nd4j/linalg/factory/Nd4j/getBackend()|",
+      "|java+method:///org/nd4j/linalg/factory/Nd4jBackend/getNDArrayClass()|",
+      "|java+method:///com/esotericsoftware/kryo/Kryo/register(java.lang.Class,com.esotericsoftware.kryo.Serializer)|",
+      "|java+constructor:///org/nd4j/Nd4jSerializer/Nd4jSerializer()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/nd4j/linalg/factory/Nd4jBackend/getComplexNDArrayClass()|",
+      "|java+method:///org/nd4j/linalg/factory/Nd4j/getBackend()|",
+      "|java+method:///org/nd4j/linalg/factory/Nd4jBackend/getNDArrayClass()|",
+      "|java+method:///de/javakaffee/kryoserializers/UnmodifiableCollectionsSerializer/registerSerializers(com.esotericsoftware.kryo.Kryo)|",
+      "|java+method:///com/esotericsoftware/kryo/Kryo/register(java.lang.Class,com.esotericsoftware.kryo.Serializer)|",
+      "|java+constructor:///org/nd4j/Nd4jSerializer/Nd4jSerializer()|",
+      "|java+method:///de/javakaffee/kryoserializers/SynchronizedCollectionsSerializer/registerSerializers(com.esotericsoftware.kryo.Kryo)|"
+    ],
+    "affectedLib": "de.javakaffee:kryo-serializers:0.41",
+    "change": "ADDED"
+  }
+]

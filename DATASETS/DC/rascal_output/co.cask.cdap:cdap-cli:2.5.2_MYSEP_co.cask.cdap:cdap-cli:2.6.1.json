@@ -1,0 +1,1612 @@
+[
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.6.1",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.5.2",
+    "caller": "|java+initializer:///org/slf4j/impl/StaticLoggerBinder/StaticLoggerBinder$initializer|",
+    "called": "|java+constructor:///org/slf4j/impl/StaticLoggerBinder/StaticLoggerBinder()|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///org/slf4j/impl/StaticLoggerBinder/StaticLoggerBinder()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/slf4j/impl/StaticLoggerBinder/StaticLoggerBinder()|",
+      "|java+method:///org/slf4j/impl/StaticLoggerBinder/init()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-nop:1.7.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+initializer:///org/slf4j/impl/StaticLoggerBinder/StaticLoggerBinder$initializer|",
+    "called": "|java+method:///org/slf4j/impl/StaticLoggerBinder/init()|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///org/slf4j/impl/StaticLoggerBinder/StaticLoggerBinder()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/slf4j/impl/StaticLoggerBinder/StaticLoggerBinder()|",
+      "|java+method:///org/slf4j/impl/StaticLoggerBinder/init()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "ch.qos.logback:logback-classic:1.0.9",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+constructor:///org/slf4j/impl/StaticLoggerBinder/StaticLoggerBinder()|",
+    "called": "|java+method:///ch/qos/logback/classic/LoggerContext/setName(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/slf4j/helpers/NOPLoggerFactory/NOPLoggerFactory()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///ch/qos/logback/classic/util/ContextSelectorStaticBinder/getSingleton()|",
+      "|java+constructor:///ch/qos/logback/classic/LoggerContext/LoggerContext()|",
+      "|java+method:///ch/qos/logback/classic/LoggerContext/setName(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "ch.qos.logback:logback-classic:1.0.9",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///org/slf4j/impl/StaticMDCBinder/getMDCA()|",
+    "called": "|java+constructor:///ch/qos/logback/classic/util/LogbackMDCAdapter/LogbackMDCAdapter()|",
+    "v1Body": [
+      "|java+constructor:///org/slf4j/helpers/NOPMDCAdapter/NOPMDCAdapter()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///ch/qos/logback/classic/util/LogbackMDCAdapter/LogbackMDCAdapter()|"
+    ],
+    "affectedLib": "ch.qos.logback:logback-classic:1.0.9",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/DatasetModuleClient/delete(java.lang.String)|",
+    "called": "|java+constructor:///co/cask/cdap/client/exception/DatasetModuleCannotBeDeletedException/DatasetModuleCannotBeDeletedException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///co/cask/cdap/common/http/HttpResponse/getResponseCode()|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.cdap.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+constructor:///co/cask/cdap/client/exception/DatasetModuleNotFoundException/DatasetModuleNotFoundException(java.lang.String)|",
+      "|java+constructor:///co/cask/cdap/client/exception/DatasetModuleCannotBeDeletedException/DatasetModuleCannotBeDeletedException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///co/cask/common/http/HttpResponse/getResponseCode()|",
+      "|java+constructor:///co/cask/cdap/client/exception/DatasetModuleNotFoundException/DatasetModuleNotFoundException(java.lang.String)|",
+      "|java+constructor:///co/cask/cdap/client/exception/DatasetModuleCannotBeDeletedException/DatasetModuleCannotBeDeletedException(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/StreamClient/getEvents(java.lang.String,long,long,int,com.google.common.base.Function)|",
+    "called": "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+    "v1Body": [
+      "|java+method:///co/cask/cdap/common/http/HttpRequests/disableCertCheck(javax.net.ssl.HttpsURLConnection)|",
+      "|java+method:///java/net/HttpURLConnection/disconnect()|",
+      "|java+method:///java/net/URL/openConnection()|",
+      "|java+method:///co/cask/cdap/security/authentication/client/AccessToken/getTokenType()|",
+      "|java+method:///com/google/gson/stream/JsonReader/peek()|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream,java.nio.charset.Charset)|",
+      "|java+method:///java/net/HttpURLConnection/setRequestProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getDefaultConfig()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/net/HttpURLConnection/getInputStream()|",
+      "|java+method:///com/google/gson/stream/JsonReader/beginArray()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/google/common/base/Function/apply(java.lang.Object)|",
+      "|java+method:///co/cask/cdap/security/authentication/client/AccessToken/getValue()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///com/google/gson/Gson/fromJson(com.google.gson.stream.JsonReader,java.lang.reflect.Type)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///co/cask/cdap/client/exception/StreamNotFoundException/StreamNotFoundException(java.lang.String)|",
+      "|java+method:///co/cask/cdap/common/http/HttpRequestConfig/isVerifySSLCert()|",
+      "|java+method:///java/net/HttpURLConnection/getResponseCode()|",
+      "|java+constructor:///com/google/gson/stream/JsonReader/JsonReader(java.io.Reader)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/net/HttpURLConnection/disconnect()|",
+      "|java+method:///java/net/URL/openConnection()|",
+      "|java+method:///co/cask/cdap/security/authentication/client/AccessToken/getTokenType()|",
+      "|java+method:///com/google/gson/stream/JsonReader/peek()|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream,java.nio.charset.Charset)|",
+      "|java+method:///java/net/HttpURLConnection/setRequestProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///com/google/gson/stream/JsonReader/beginArray()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/google/common/base/Function/apply(java.lang.Object)|",
+      "|java+method:///co/cask/cdap/security/authentication/client/AccessToken/getValue()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///com/google/gson/Gson/fromJson(com.google.gson.stream.JsonReader,java.lang.reflect.Type)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///co/cask/cdap/client/exception/StreamNotFoundException/StreamNotFoundException(java.lang.String)|",
+      "|java+method:///java/net/HttpURLConnection/getResponseCode()|",
+      "|java+method:///co/cask/common/http/HttpRequests/disableCertCheck(javax.net.ssl.HttpsURLConnection)|",
+      "|java+method:///java/net/HttpURLConnection/getInputStream()|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/isVerifySSLCert()|",
+      "|java+constructor:///com/google/gson/stream/JsonReader/JsonReader(java.io.Reader)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/DatasetClient/create(java.lang.String,co.cask.cdap.proto.DatasetInstanceConfiguration)|",
+    "called": "|java+constructor:///co/cask/cdap/client/exception/DatasetTypeNotFoundException/DatasetTypeNotFoundException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///co/cask/cdap/proto/DatasetInstanceConfiguration/getTypeName()|",
+      "|java+method:///co/cask/cdap/common/http/HttpRequest/put(java.net.URL)|",
+      "|java+method:///co/cask/cdap/common/http/HttpResponse/getResponseCode()|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/cdap/common/http/HttpRequest$Builder/build()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///co/cask/cdap/client/exception/DatasetTypeNotFoundException/DatasetTypeNotFoundException(java.lang.String)|",
+      "|java+method:///com/google/gson/Gson/toJson(java.lang.Object)|",
+      "|java+constructor:///co/cask/cdap/client/exception/DatasetAlreadyExistsException/DatasetAlreadyExistsException(java.lang.String)|",
+      "|java+method:///co/cask/cdap/common/http/HttpRequest$Builder/withBody(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.cdap.common.http.HttpRequest,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///co/cask/common/http/HttpRequest$Builder/build()|",
+      "|java+method:///co/cask/cdap/proto/DatasetInstanceConfiguration/getTypeName()|",
+      "|java+method:///co/cask/common/http/HttpRequest$Builder/withBody(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.common.http.HttpRequest,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///co/cask/common/http/HttpResponse/getResponseCode()|",
+      "|java+constructor:///co/cask/cdap/client/exception/DatasetTypeNotFoundException/DatasetTypeNotFoundException(java.lang.String)|",
+      "|java+method:///com/google/gson/Gson/toJson(java.lang.Object)|",
+      "|java+method:///co/cask/common/http/HttpRequest/put(java.net.URL)|",
+      "|java+constructor:///co/cask/cdap/client/exception/DatasetAlreadyExistsException/DatasetAlreadyExistsException(java.lang.String)|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/DatasetClient/delete(java.lang.String)|",
+    "called": "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+    "v1Body": [
+      "|java+method:///co/cask/cdap/common/http/HttpResponse/getResponseCode()|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.cdap.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+constructor:///co/cask/cdap/client/exception/DatasetNotFoundException/DatasetNotFoundException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///co/cask/common/http/HttpResponse/getResponseCode()|",
+      "|java+constructor:///co/cask/cdap/client/exception/DatasetNotFoundException/DatasetNotFoundException(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/StreamClient/create(java.lang.String)|",
+    "called": "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+    "v1Body": [
+      "|java+method:///co/cask/cdap/common/http/HttpResponse/getResponseCode()|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.cdap.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/common/http/HttpResponse/getResponseBodyAsString()|",
+      "|java+constructor:///co/cask/cdap/client/exception/BadRequestException/BadRequestException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///co/cask/common/http/HttpResponse/getResponseCode()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+constructor:///co/cask/cdap/client/exception/BadRequestException/BadRequestException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/common/http/HttpResponse/getResponseBodyAsString()|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/ProgramClient/setFlowletInstances(java.lang.String,java.lang.String,java.lang.String,int)|",
+    "called": "|java+constructor:///co/cask/cdap/client/exception/NotFoundException/NotFoundException(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///co/cask/cdap/common/http/HttpRequest/put(java.net.URL)|",
+      "|java+method:///co/cask/cdap/common/http/HttpResponse/getResponseCode()|",
+      "|java+constructor:///co/cask/cdap/proto/Instances/Instances(int)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/cdap/common/http/HttpRequest$Builder/build()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///co/cask/cdap/client/exception/NotFoundException/NotFoundException(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/google/gson/Gson/toJson(java.lang.Object)|",
+      "|java+method:///co/cask/cdap/common/http/HttpRequest$Builder/withBody(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.cdap.common.http.HttpRequest,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///co/cask/common/http/HttpRequest$Builder/build()|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.common.http.HttpRequest,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///co/cask/cdap/client/exception/NotFoundException/NotFoundException(java.lang.String,java.lang.String)|",
+      "|java+method:///co/cask/common/http/HttpResponse/getResponseCode()|",
+      "|java+method:///co/cask/common/http/HttpRequest/put(java.net.URL)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///co/cask/cdap/proto/Instances/Instances(int)|",
+      "|java+method:///co/cask/common/http/HttpRequest$Builder/withBody(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/google/gson/Gson/toJson(java.lang.Object)|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/ProcedureClient/call(java.lang.String,java.lang.String,java.lang.String,java.util.Map)|",
+    "called": "|java+constructor:///co/cask/cdap/client/exception/NotFoundException/NotFoundException(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///co/cask/cdap/common/http/HttpResponse/getResponseCode()|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/cdap/common/http/HttpRequest$Builder/build()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///co/cask/cdap/client/exception/NotFoundException/NotFoundException(java.lang.String,java.lang.String)|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D,java.nio.charset.Charset)|",
+      "|java+method:///co/cask/cdap/common/http/HttpResponse/getResponseBody()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/google/gson/Gson/toJson(java.lang.Object)|",
+      "|java+method:///co/cask/cdap/common/http/HttpRequest$Builder/withBody(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.cdap.common.http.HttpRequest,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///co/cask/cdap/common/http/HttpRequest/post(java.net.URL)|",
+      "|java+constructor:///co/cask/cdap/client/exception/BadRequestException/BadRequestException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///co/cask/common/http/HttpRequest$Builder/build()|",
+      "|java+method:///co/cask/common/http/HttpResponse/getResponseBody()|",
+      "|java+method:///co/cask/common/http/HttpRequest$Builder/withBody(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.common.http.HttpRequest,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///co/cask/cdap/client/exception/NotFoundException/NotFoundException(java.lang.String,java.lang.String)|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D,java.nio.charset.Charset)|",
+      "|java+method:///co/cask/common/http/HttpResponse/getResponseCode()|",
+      "|java+constructor:///co/cask/cdap/client/exception/BadRequestException/BadRequestException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/common/http/HttpRequest/post(java.net.URL)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/google/gson/Gson/toJson(java.lang.Object)|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/ProgramClient/getStatus(java.lang.String,co.cask.cdap.proto.ProgramType,java.lang.String)|",
+    "called": "|java+constructor:///co/cask/cdap/client/exception/ProgramNotFoundException/ProgramNotFoundException(co.cask.cdap.proto.ProgramType,java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///co/cask/cdap/common/http/HttpResponse/getResponseCode()|",
+      "|java+constructor:///co/cask/cdap/client/exception/ProgramNotFoundException/ProgramNotFoundException(co.cask.cdap.proto.ProgramType,java.lang.String,java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.cdap.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///co/cask/cdap/common/http/ObjectResponse/getResponseObject()|",
+      "|java+method:///co/cask/cdap/proto/ProgramType/getCategoryName()|",
+      "|java+method:///co/cask/cdap/proto/ProgramStatus/getStatus()|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/cdap/common/http/ObjectResponse/fromJsonBody(co.cask.cdap.common.http.HttpResponse,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///co/cask/cdap/client/exception/ProgramNotFoundException/ProgramNotFoundException(co.cask.cdap.proto.ProgramType,java.lang.String,java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/common/http/ObjectResponse/fromJsonBody(co.cask.common.http.HttpResponse,java.lang.Class)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///co/cask/common/http/HttpResponse/getResponseCode()|",
+      "|java+method:///co/cask/cdap/proto/ProgramType/getCategoryName()|",
+      "|java+method:///co/cask/cdap/proto/ProgramStatus/getStatus()|",
+      "|java+method:///co/cask/common/http/ObjectResponse/getResponseObject()|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/StreamClient/list()|",
+    "called": "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+    "v1Body": [
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.cdap.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///co/cask/cdap/common/http/ObjectResponse/getResponseObject()|",
+      "|java+constructor:///co/cask/cdap/client/StreamClient$1/StreamClient$1(co.cask.cdap.client.StreamClient)|",
+      "|java+method:///co/cask/cdap/common/http/ObjectResponse/fromJsonBody(co.cask.cdap.common.http.HttpResponse,com.google.common.reflect.TypeToken)|"
+    ],
+    "v2Body": [
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+constructor:///co/cask/cdap/client/StreamClient$1/StreamClient$1(co.cask.cdap.client.StreamClient)|",
+      "|java+method:///co/cask/common/http/ObjectResponse/getResponseObject()|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///co/cask/common/http/ObjectResponse/fromJsonBody(co.cask.common.http.HttpResponse,com.google.common.reflect.TypeToken)|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/ProgramClient/setServiceRunnableInstances(java.lang.String,java.lang.String,java.lang.String,int)|",
+    "called": "|java+constructor:///co/cask/cdap/client/exception/NotFoundException/NotFoundException(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///co/cask/cdap/common/http/HttpRequest/put(java.net.URL)|",
+      "|java+method:///co/cask/cdap/common/http/HttpResponse/getResponseCode()|",
+      "|java+constructor:///co/cask/cdap/proto/Instances/Instances(int)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/cdap/common/http/HttpRequest$Builder/build()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///co/cask/cdap/client/exception/NotFoundException/NotFoundException(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/google/gson/Gson/toJson(java.lang.Object)|",
+      "|java+method:///co/cask/cdap/common/http/HttpRequest$Builder/withBody(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.cdap.common.http.HttpRequest,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///co/cask/common/http/HttpRequest$Builder/build()|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.common.http.HttpRequest,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///co/cask/cdap/client/exception/NotFoundException/NotFoundException(java.lang.String,java.lang.String)|",
+      "|java+method:///co/cask/common/http/HttpResponse/getResponseCode()|",
+      "|java+method:///co/cask/common/http/HttpRequest/put(java.net.URL)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///co/cask/cdap/proto/Instances/Instances(int)|",
+      "|java+method:///co/cask/common/http/HttpRequest$Builder/withBody(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/google/gson/Gson/toJson(java.lang.Object)|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/ProgramClient/setProcedureInstances(java.lang.String,java.lang.String,int)|",
+    "called": "|java+constructor:///co/cask/cdap/client/exception/NotFoundException/NotFoundException(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///co/cask/cdap/common/http/HttpRequest/put(java.net.URL)|",
+      "|java+method:///co/cask/cdap/common/http/HttpResponse/getResponseCode()|",
+      "|java+constructor:///co/cask/cdap/proto/Instances/Instances(int)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/cdap/common/http/HttpRequest$Builder/build()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///co/cask/cdap/client/exception/NotFoundException/NotFoundException(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/google/gson/Gson/toJson(java.lang.Object)|",
+      "|java+method:///co/cask/cdap/common/http/HttpRequest$Builder/withBody(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.cdap.common.http.HttpRequest,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///co/cask/common/http/HttpRequest$Builder/build()|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.common.http.HttpRequest,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///co/cask/cdap/client/exception/NotFoundException/NotFoundException(java.lang.String,java.lang.String)|",
+      "|java+method:///co/cask/common/http/HttpResponse/getResponseCode()|",
+      "|java+method:///co/cask/common/http/HttpRequest/put(java.net.URL)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///co/cask/cdap/proto/Instances/Instances(int)|",
+      "|java+method:///co/cask/common/http/HttpRequest$Builder/withBody(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/google/gson/Gson/toJson(java.lang.Object)|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/ProgramClient/getProgramLogs(java.lang.String,co.cask.cdap.proto.ProgramType,java.lang.String,long,long)|",
+    "called": "|java+constructor:///co/cask/cdap/client/exception/ProgramNotFoundException/ProgramNotFoundException(co.cask.cdap.proto.ProgramType,java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///co/cask/cdap/common/http/HttpResponse/getResponseCode()|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.cdap.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D,java.nio.charset.Charset)|",
+      "|java+method:///co/cask/cdap/proto/ProgramType/getCategoryName()|",
+      "|java+method:///co/cask/cdap/common/http/HttpResponse/getResponseBody()|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+constructor:///co/cask/cdap/client/exception/ProgramNotFoundException/ProgramNotFoundException(co.cask.cdap.proto.ProgramType,java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///co/cask/common/http/HttpResponse/getResponseBody()|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D,java.nio.charset.Charset)|",
+      "|java+method:///co/cask/common/http/HttpResponse/getResponseCode()|",
+      "|java+method:///co/cask/cdap/proto/ProgramType/getCategoryName()|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+constructor:///co/cask/cdap/client/exception/ProgramNotFoundException/ProgramNotFoundException(co.cask.cdap.proto.ProgramType,java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/ProgramClient/setRuntimeArgs(java.lang.String,co.cask.cdap.proto.ProgramType,java.lang.String,java.util.Map)|",
+    "called": "|java+constructor:///co/cask/cdap/client/exception/ProgramNotFoundException/ProgramNotFoundException(co.cask.cdap.proto.ProgramType,java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///co/cask/cdap/common/http/HttpRequest/put(java.net.URL)|",
+      "|java+method:///co/cask/cdap/common/http/HttpResponse/getResponseCode()|",
+      "|java+constructor:///co/cask/cdap/client/exception/ProgramNotFoundException/ProgramNotFoundException(co.cask.cdap.proto.ProgramType,java.lang.String,java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/cdap/common/http/HttpRequest$Builder/build()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/google/gson/Gson/toJson(java.lang.Object)|",
+      "|java+method:///co/cask/cdap/proto/ProgramType/getCategoryName()|",
+      "|java+method:///co/cask/cdap/common/http/HttpRequest$Builder/withBody(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.cdap.common.http.HttpRequest,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///co/cask/common/http/HttpRequest$Builder/build()|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.common.http.HttpRequest,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///co/cask/common/http/HttpResponse/getResponseCode()|",
+      "|java+method:///com/google/gson/Gson/toJson(java.lang.Object)|",
+      "|java+method:///co/cask/common/http/HttpRequest$Builder/withBody(java.lang.String)|",
+      "|java+constructor:///co/cask/cdap/client/exception/ProgramNotFoundException/ProgramNotFoundException(co.cask.cdap.proto.ProgramType,java.lang.String,java.lang.String)|",
+      "|java+method:///co/cask/cdap/proto/ProgramType/getCategoryName()|",
+      "|java+method:///co/cask/common/http/HttpRequest/put(java.net.URL)|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/DatasetClient/list()|",
+    "called": "|java+constructor:///co/cask/cdap/client/DatasetClient$1/DatasetClient$1(co.cask.cdap.client.DatasetClient)|",
+    "v1Body": [
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.cdap.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///co/cask/cdap/common/http/ObjectResponse/getResponseObject()|",
+      "|java+constructor:///co/cask/cdap/client/DatasetClient$1/DatasetClient$1(co.cask.cdap.client.DatasetClient)|",
+      "|java+method:///co/cask/cdap/common/http/ObjectResponse/fromJsonBody(co.cask.cdap.common.http.HttpResponse,com.google.common.reflect.TypeToken)|"
+    ],
+    "v2Body": [
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+constructor:///co/cask/cdap/client/DatasetClient$1/DatasetClient$1(co.cask.cdap.client.DatasetClient)|",
+      "|java+method:///co/cask/common/http/ObjectResponse/getResponseObject()|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///co/cask/common/http/ObjectResponse/fromJsonBody(co.cask.common.http.HttpResponse,com.google.common.reflect.TypeToken)|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/PingClient/ping()|",
+    "called": "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+    "v1Body": [
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.cdap.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/ProgramClient/getFlowletInstances(java.lang.String,java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///co/cask/cdap/client/exception/NotFoundException/NotFoundException(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///co/cask/cdap/proto/Instances/getInstances()|",
+      "|java+method:///co/cask/cdap/common/http/HttpResponse/getResponseCode()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.cdap.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/cdap/common/http/ObjectResponse/fromJsonBody(co.cask.cdap.common.http.HttpResponse,java.lang.Class)|",
+      "|java+method:///co/cask/cdap/common/http/ObjectResponse/getResponseObject()|",
+      "|java+constructor:///co/cask/cdap/client/exception/NotFoundException/NotFoundException(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///co/cask/cdap/proto/Instances/getInstances()|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/common/http/ObjectResponse/fromJsonBody(co.cask.common.http.HttpResponse,java.lang.Class)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///co/cask/cdap/client/exception/NotFoundException/NotFoundException(java.lang.String,java.lang.String)|",
+      "|java+method:///co/cask/common/http/HttpResponse/getResponseCode()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///co/cask/common/http/ObjectResponse/getResponseObject()|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/ApplicationClient/listPrograms(java.lang.String,co.cask.cdap.proto.ProgramType)|",
+    "called": "|java+constructor:///co/cask/cdap/client/ApplicationClient$5/ApplicationClient$5(co.cask.cdap.client.ApplicationClient)|",
+    "v1Body": [
+      "|java+constructor:///co/cask/cdap/client/ApplicationClient$3/ApplicationClient$3(co.cask.cdap.client.ApplicationClient)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/cdap/common/http/HttpRequest/get(java.net.URL)|",
+      "|java+method:///co/cask/cdap/common/http/HttpRequest$Builder/build()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///co/cask/cdap/common/http/ObjectResponse/getResponseObject()|",
+      "|java+constructor:///co/cask/cdap/client/exception/ApplicationNotFoundException/ApplicationNotFoundException(java.lang.String)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean)|",
+      "|java+method:///co/cask/cdap/proto/ProgramType/getCategoryName()|",
+      "|java+method:///co/cask/cdap/common/http/ObjectResponse/fromJsonBody(co.cask.cdap.common.http.HttpResponse,com.google.common.reflect.TypeToken)|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.cdap.common.http.HttpRequest,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///co/cask/cdap/common/http/ObjectResponse/getResponseCode()|",
+      "|java+method:///co/cask/cdap/proto/ProgramType/isListable()|"
+    ],
+    "v2Body": [
+      "|java+method:///co/cask/common/http/HttpRequest$Builder/build()|",
+      "|java+constructor:///co/cask/cdap/client/ApplicationClient$5/ApplicationClient$5(co.cask.cdap.client.ApplicationClient)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.common.http.HttpRequest,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///co/cask/cdap/client/exception/ApplicationNotFoundException/ApplicationNotFoundException(java.lang.String)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean)|",
+      "|java+method:///co/cask/cdap/proto/ProgramType/getCategoryName()|",
+      "|java+method:///co/cask/common/http/ObjectResponse/getResponseObject()|",
+      "|java+method:///co/cask/common/http/ObjectResponse/fromJsonBody(co.cask.common.http.HttpResponse,com.google.common.reflect.TypeToken)|",
+      "|java+method:///co/cask/common/http/ObjectResponse/getResponseCode()|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/proto/ProgramType/isListable()|",
+      "|java+method:///co/cask/common/http/HttpRequest/get(java.net.URL)|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/util/RESTClient/create(co.cask.cdap.client.config.ClientConfig)|",
+    "called": "|java+constructor:///co/cask/cdap/client/util/RESTClient/RESTClient(co.cask.common.http.HttpRequestConfig,co.cask.common.http.HttpRequestConfig,int)|",
+    "v1Body": [
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getUploadConfig()|",
+      "|java+constructor:///co/cask/cdap/client/util/RESTClient/RESTClient(co.cask.cdap.common.http.HttpRequestConfig,co.cask.cdap.common.http.HttpRequestConfig)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getDefaultConfig()|"
+    ],
+    "v2Body": [
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getUploadHttpConfig()|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getUnavailableRetryLimit()|",
+      "|java+constructor:///co/cask/cdap/client/util/RESTClient/RESTClient(co.cask.common.http.HttpRequestConfig,co.cask.common.http.HttpRequestConfig,int)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getDefaultHttpConfig()|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/ProgramClient/start(java.lang.String,co.cask.cdap.proto.ProgramType,java.lang.String)|",
+    "called": "|java+constructor:///co/cask/cdap/client/exception/ProgramNotFoundException/ProgramNotFoundException(co.cask.cdap.proto.ProgramType,java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///co/cask/cdap/common/http/HttpResponse/getResponseCode()|",
+      "|java+constructor:///co/cask/cdap/client/exception/ProgramNotFoundException/ProgramNotFoundException(co.cask.cdap.proto.ProgramType,java.lang.String,java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.cdap.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///co/cask/cdap/proto/ProgramType/getCategoryName()|"
+    ],
+    "v2Body": [
+      "|java+method:///co/cask/common/http/HttpRequest$Builder/build()|",
+      "|java+constructor:///co/cask/cdap/client/exception/ProgramNotFoundException/ProgramNotFoundException(co.cask.cdap.proto.ProgramType,java.lang.String,java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.common.http.HttpRequest,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///co/cask/common/http/HttpResponse/getResponseCode()|",
+      "|java+method:///co/cask/cdap/proto/ProgramType/getCategoryName()|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/common/http/HttpRequest/post(java.net.URL)|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/MonitorClient/getAllSystemServiceStatus()|",
+    "called": "|java+constructor:///co/cask/cdap/client/MonitorClient$3/MonitorClient$3(co.cask.cdap.client.MonitorClient)|",
+    "v1Body": [
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.cdap.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///co/cask/cdap/common/http/ObjectResponse/getResponseObject()|",
+      "|java+method:///co/cask/cdap/common/http/ObjectResponse/fromJsonBody(co.cask.cdap.common.http.HttpResponse,com.google.common.reflect.TypeToken)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+constructor:///co/cask/cdap/client/MonitorClient$3/MonitorClient$3(co.cask.cdap.client.MonitorClient)|"
+    ],
+    "v2Body": [
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/common/http/ObjectResponse/getResponseObject()|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///co/cask/common/http/ObjectResponse/fromJsonBody(co.cask.common.http.HttpResponse,com.google.common.reflect.TypeToken)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+constructor:///co/cask/cdap/client/MonitorClient$3/MonitorClient$3(co.cask.cdap.client.MonitorClient)|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/MetricsClient/getMetric(java.lang.String,java.lang.String,java.lang.String,java.lang.String)|",
+    "called": "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+    "v1Body": [
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.cdap.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///co/cask/cdap/common/http/ObjectResponse/getResponseObject()|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/cdap/common/http/ObjectResponse/fromJsonBody(co.cask.cdap.common.http.HttpResponse,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/common/http/ObjectResponse/fromJsonBody(co.cask.common.http.HttpResponse,java.lang.Class)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///co/cask/common/http/ObjectResponse/getResponseObject()|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/DatasetTypeClient/get(java.lang.String)|",
+    "called": "|java+constructor:///co/cask/cdap/client/exception/DatasetTypeNotFoundException/DatasetTypeNotFoundException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.cdap.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///co/cask/cdap/common/http/ObjectResponse/getResponseObject()|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/cdap/common/http/ObjectResponse/fromJsonBody(co.cask.cdap.common.http.HttpResponse,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/common/http/ObjectResponse/fromJsonBody(co.cask.common.http.HttpResponse,java.lang.Class)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///co/cask/common/http/HttpResponse/getResponseCode()|",
+      "|java+constructor:///co/cask/cdap/client/exception/DatasetTypeNotFoundException/DatasetTypeNotFoundException(java.lang.String)|",
+      "|java+method:///co/cask/common/http/ObjectResponse/getResponseObject()|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/MonitorClient/getSystemServiceStatus(java.lang.String)|",
+    "called": "|java+constructor:///co/cask/cdap/client/exception/NotFoundException/NotFoundException(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///co/cask/cdap/common/http/HttpResponse/getResponseCode()|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///com/google/gson/Gson/fromJson(java.lang.String,java.lang.reflect.Type)|",
+      "|java+constructor:///co/cask/cdap/client/MonitorClient$2/MonitorClient$2(co.cask.cdap.client.MonitorClient)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.cdap.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+constructor:///co/cask/cdap/client/exception/NotFoundException/NotFoundException(java.lang.String,java.lang.String)|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D)|",
+      "|java+method:///co/cask/cdap/client/MonitorClient$2/getType()|",
+      "|java+method:///co/cask/cdap/common/http/HttpResponse/getResponseBody()|",
+      "|java+constructor:///co/cask/cdap/client/exception/BadRequestException/BadRequestException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///co/cask/common/http/HttpResponse/getResponseBody()|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///com/google/gson/Gson/fromJson(java.lang.String,java.lang.reflect.Type)|",
+      "|java+constructor:///co/cask/cdap/client/MonitorClient$2/MonitorClient$2(co.cask.cdap.client.MonitorClient)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///co/cask/cdap/client/exception/NotFoundException/NotFoundException(java.lang.String,java.lang.String)|",
+      "|java+method:///co/cask/common/http/HttpResponse/getResponseCode()|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D)|",
+      "|java+method:///co/cask/cdap/client/MonitorClient$2/getType()|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+constructor:///co/cask/cdap/client/exception/BadRequestException/BadRequestException(java.lang.String)|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/ProgramClient/getLiveInfo(java.lang.String,co.cask.cdap.proto.ProgramType,java.lang.String)|",
+    "called": "|java+constructor:///co/cask/cdap/client/exception/ProgramNotFoundException/ProgramNotFoundException(co.cask.cdap.proto.ProgramType,java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///co/cask/cdap/common/http/HttpResponse/getResponseCode()|",
+      "|java+constructor:///co/cask/cdap/client/exception/ProgramNotFoundException/ProgramNotFoundException(co.cask.cdap.proto.ProgramType,java.lang.String,java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.cdap.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///co/cask/cdap/common/http/ObjectResponse/getResponseObject()|",
+      "|java+method:///co/cask/cdap/proto/ProgramType/getCategoryName()|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/cdap/common/http/ObjectResponse/fromJsonBody(co.cask.cdap.common.http.HttpResponse,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///co/cask/cdap/client/exception/ProgramNotFoundException/ProgramNotFoundException(co.cask.cdap.proto.ProgramType,java.lang.String,java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/common/http/ObjectResponse/fromJsonBody(co.cask.common.http.HttpResponse,java.lang.Class)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///co/cask/common/http/HttpResponse/getResponseCode()|",
+      "|java+method:///co/cask/cdap/proto/ProgramType/getCategoryName()|",
+      "|java+method:///co/cask/common/http/ObjectResponse/getResponseObject()|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/DatasetClient/truncate(java.lang.String)|",
+    "called": "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+    "v1Body": [
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.cdap.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/ProcedureClient/list()|",
+    "called": "|java+constructor:///co/cask/cdap/client/ProcedureClient$1/ProcedureClient$1(co.cask.cdap.client.ProcedureClient)|",
+    "v1Body": [
+      "|java+constructor:///co/cask/cdap/client/ProcedureClient$1/ProcedureClient$1(co.cask.cdap.client.ProcedureClient)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.cdap.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///co/cask/cdap/common/http/ObjectResponse/getResponseObject()|",
+      "|java+method:///co/cask/cdap/common/http/ObjectResponse/fromJsonBody(co.cask.cdap.common.http.HttpResponse,com.google.common.reflect.TypeToken)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///co/cask/cdap/client/ProcedureClient$1/ProcedureClient$1(co.cask.cdap.client.ProcedureClient)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/common/http/ObjectResponse/getResponseObject()|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///co/cask/common/http/ObjectResponse/fromJsonBody(co.cask.common.http.HttpResponse,com.google.common.reflect.TypeToken)|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/ServiceClient/get(java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///co/cask/cdap/client/exception/NotFoundException/NotFoundException(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.cdap.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///co/cask/cdap/common/http/ObjectResponse/getResponseObject()|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/cdap/common/http/ObjectResponse/fromJsonBody(co.cask.cdap.common.http.HttpResponse,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/common/http/ObjectResponse/fromJsonBody(co.cask.common.http.HttpResponse,java.lang.Class)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///co/cask/cdap/client/exception/NotFoundException/NotFoundException(java.lang.String,java.lang.String)|",
+      "|java+method:///co/cask/common/http/HttpResponse/getResponseCode()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///co/cask/common/http/ObjectResponse/getResponseObject()|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+constructor:///co/cask/cdap/client/QueryClient/QueryClient(co.cask.cdap.client.config.ClientConfig)|",
+    "called": "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+    "v1Body": [
+      "|java+method:///co/cask/cdap/client/util/RESTClient/create(co.cask.cdap.client.config.ClientConfig)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///co/cask/cdap/security/authentication/client/AccessToken/getValue()|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getPort()|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getHostname()|",
+      "|java+constructor:///co/cask/cdap/explore/client/FixedAddressExploreClient/FixedAddressExploreClient(java.lang.String,int,java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/ProgramClient/getServiceRunnableLogs(java.lang.String,java.lang.String,java.lang.String,long,long)|",
+    "called": "|java+constructor:///co/cask/cdap/client/exception/NotFoundException/NotFoundException(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///co/cask/cdap/common/http/HttpResponse/getResponseCode()|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.cdap.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+constructor:///co/cask/cdap/client/exception/NotFoundException/NotFoundException(java.lang.String,java.lang.String)|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D,java.nio.charset.Charset)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///co/cask/cdap/common/http/HttpResponse/getResponseBody()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///co/cask/common/http/HttpResponse/getResponseBody()|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///co/cask/cdap/client/exception/NotFoundException/NotFoundException(java.lang.String,java.lang.String)|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D,java.nio.charset.Charset)|",
+      "|java+method:///co/cask/common/http/HttpResponse/getResponseCode()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+    "called": "|java+method:///co/cask/cdap/client/config/ClientConfig/getBaseURI()|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/net/URI/toURL()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/net/URI/resolve(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/net/URI/toURL()|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getBaseURI()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/net/URI/resolve(java.lang.String)|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/DatasetModuleClient/get(java.lang.String)|",
+    "called": "|java+constructor:///co/cask/cdap/client/exception/DatasetModuleNotFoundException/DatasetModuleNotFoundException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///co/cask/cdap/common/http/HttpResponse/getResponseCode()|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.cdap.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///co/cask/cdap/common/http/ObjectResponse/getResponseObject()|",
+      "|java+constructor:///co/cask/cdap/client/exception/DatasetModuleNotFoundException/DatasetModuleNotFoundException(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/cdap/common/http/ObjectResponse/fromJsonBody(co.cask.cdap.common.http.HttpResponse,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/common/http/ObjectResponse/fromJsonBody(co.cask.common.http.HttpResponse,java.lang.Class)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///co/cask/common/http/HttpResponse/getResponseCode()|",
+      "|java+constructor:///co/cask/cdap/client/exception/DatasetModuleNotFoundException/DatasetModuleNotFoundException(java.lang.String)|",
+      "|java+method:///co/cask/common/http/ObjectResponse/getResponseObject()|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/StreamClient/getConfig(java.lang.String)|",
+    "called": "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+    "v1Body": [
+      "|java+method:///co/cask/cdap/common/http/HttpResponse/getResponseCode()|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.cdap.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///co/cask/cdap/common/http/ObjectResponse/getResponseObject()|",
+      "|java+constructor:///co/cask/cdap/client/exception/StreamNotFoundException/StreamNotFoundException(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/cdap/common/http/ObjectResponse/fromJsonBody(co.cask.cdap.common.http.HttpResponse,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/common/http/ObjectResponse/fromJsonBody(co.cask.common.http.HttpResponse,java.lang.Class)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///co/cask/common/http/HttpResponse/getResponseCode()|",
+      "|java+constructor:///co/cask/cdap/client/exception/StreamNotFoundException/StreamNotFoundException(java.lang.String)|",
+      "|java+method:///co/cask/common/http/ObjectResponse/getResponseObject()|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/StreamClient/truncate(java.lang.String)|",
+    "called": "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+    "v1Body": [
+      "|java+method:///co/cask/cdap/common/http/HttpResponse/getResponseCode()|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.cdap.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+constructor:///co/cask/cdap/client/exception/StreamNotFoundException/StreamNotFoundException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///co/cask/common/http/HttpResponse/getResponseCode()|",
+      "|java+constructor:///co/cask/cdap/client/exception/StreamNotFoundException/StreamNotFoundException(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/ApplicationClient/listAllPrograms(co.cask.cdap.proto.ProgramType)|",
+    "called": "|java+constructor:///co/cask/cdap/client/ApplicationClient$4/ApplicationClient$4(co.cask.cdap.client.ApplicationClient)|",
+    "v1Body": [
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/common/http/HttpRequest/get(java.net.URL)|",
+      "|java+method:///co/cask/cdap/common/http/HttpRequest$Builder/build()|",
+      "|java+method:///co/cask/cdap/common/http/ObjectResponse/getResponseObject()|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean)|",
+      "|java+method:///co/cask/cdap/proto/ProgramType/getCategoryName()|",
+      "|java+method:///co/cask/cdap/common/http/ObjectResponse/fromJsonBody(co.cask.cdap.common.http.HttpResponse,com.google.common.reflect.TypeToken)|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.cdap.common.http.HttpRequest,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///co/cask/cdap/proto/ProgramType/isListable()|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+constructor:///co/cask/cdap/client/ApplicationClient$2/ApplicationClient$2(co.cask.cdap.client.ApplicationClient)|"
+    ],
+    "v2Body": [
+      "|java+method:///co/cask/common/http/HttpRequest$Builder/build()|",
+      "|java+constructor:///co/cask/cdap/client/ApplicationClient$4/ApplicationClient$4(co.cask.cdap.client.ApplicationClient)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.common.http.HttpRequest,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean)|",
+      "|java+method:///co/cask/cdap/proto/ProgramType/getCategoryName()|",
+      "|java+method:///co/cask/common/http/ObjectResponse/getResponseObject()|",
+      "|java+method:///co/cask/common/http/ObjectResponse/fromJsonBody(co.cask.common.http.HttpResponse,com.google.common.reflect.TypeToken)|",
+      "|java+method:///co/cask/cdap/proto/ProgramType/isListable()|",
+      "|java+method:///co/cask/common/http/HttpRequest/get(java.net.URL)|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/ApplicationClient/list()|",
+    "called": "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+    "v1Body": [
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+constructor:///co/cask/cdap/client/ApplicationClient$1/ApplicationClient$1(co.cask.cdap.client.ApplicationClient)|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.cdap.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///co/cask/cdap/common/http/ObjectResponse/getResponseObject()|",
+      "|java+method:///co/cask/cdap/common/http/ObjectResponse/fromJsonBody(co.cask.cdap.common.http.HttpResponse,com.google.common.reflect.TypeToken)|"
+    ],
+    "v2Body": [
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+constructor:///co/cask/cdap/client/ApplicationClient$1/ApplicationClient$1(co.cask.cdap.client.ApplicationClient)|",
+      "|java+method:///co/cask/common/http/ObjectResponse/getResponseObject()|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///co/cask/common/http/ObjectResponse/fromJsonBody(co.cask.common.http.HttpResponse,com.google.common.reflect.TypeToken)|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/MonitorClient/setSystemServiceInstances(java.lang.String,int)|",
+    "called": "|java+constructor:///co/cask/cdap/client/exception/NotFoundException/NotFoundException(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///co/cask/cdap/common/http/HttpRequest/put(java.net.URL)|",
+      "|java+method:///co/cask/cdap/common/http/HttpResponse/getResponseCode()|",
+      "|java+constructor:///co/cask/cdap/proto/Instances/Instances(int)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/cdap/common/http/HttpRequest$Builder/build()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///co/cask/cdap/client/exception/NotFoundException/NotFoundException(java.lang.String,java.lang.String)|",
+      "|java+method:///co/cask/cdap/common/http/HttpResponse/getResponseBody()|",
+      "|java+constructor:///co/cask/cdap/client/exception/BadRequestException/BadRequestException(java.lang.String)|",
+      "|java+method:///com/google/gson/Gson/toJson(java.lang.Object)|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D)|",
+      "|java+method:///co/cask/cdap/common/http/HttpRequest$Builder/withBody(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.cdap.common.http.HttpRequest,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///co/cask/common/http/HttpRequest$Builder/build()|",
+      "|java+method:///co/cask/common/http/HttpResponse/getResponseBody()|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.common.http.HttpRequest,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///co/cask/cdap/client/exception/NotFoundException/NotFoundException(java.lang.String,java.lang.String)|",
+      "|java+method:///co/cask/common/http/HttpResponse/getResponseCode()|",
+      "|java+method:///co/cask/common/http/HttpRequest/put(java.net.URL)|",
+      "|java+constructor:///co/cask/cdap/client/exception/BadRequestException/BadRequestException(java.lang.String)|",
+      "|java+constructor:///co/cask/cdap/proto/Instances/Instances(int)|",
+      "|java+method:///co/cask/common/http/HttpRequest$Builder/withBody(java.lang.String)|",
+      "|java+method:///com/google/gson/Gson/toJson(java.lang.Object)|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D)|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/DatasetModuleClient/add(java.lang.String,java.lang.String,java.io.File)|",
+    "called": "|java+constructor:///co/cask/cdap/client/exception/DatasetModuleAlreadyExistsException/DatasetModuleAlreadyExistsException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///co/cask/cdap/client/util/RESTClient/upload(co.cask.cdap.common.http.HttpRequest,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///co/cask/cdap/common/http/HttpRequest/put(java.net.URL)|",
+      "|java+method:///co/cask/cdap/common/http/HttpResponse/getResponseCode()|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/common/http/HttpRequest$Builder/build()|",
+      "|java+method:///co/cask/cdap/common/http/HttpRequest$Builder/addHeaders(java.util.Map)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///co/cask/cdap/client/exception/DatasetModuleAlreadyExistsException/DatasetModuleAlreadyExistsException(java.lang.String)|",
+      "|java+method:///com/google/common/collect/ImmutableMap/of(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///co/cask/cdap/client/exception/BadRequestException/BadRequestException(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/cdap/common/http/HttpRequest$Builder/withBody(java.io.File)|"
+    ],
+    "v2Body": [
+      "|java+method:///co/cask/common/http/HttpRequest$Builder/build()|",
+      "|java+method:///co/cask/common/http/HttpRequest$Builder/addHeaders(java.util.Map)|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/upload(co.cask.common.http.HttpRequest,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///co/cask/common/http/HttpResponse/getResponseCode()|",
+      "|java+constructor:///co/cask/cdap/client/exception/DatasetModuleAlreadyExistsException/DatasetModuleAlreadyExistsException(java.lang.String)|",
+      "|java+method:///com/google/common/collect/ImmutableMap/of(java.lang.Object,java.lang.Object)|",
+      "|java+method:///co/cask/common/http/HttpRequest$Builder/withBody(java.io.File)|",
+      "|java+method:///co/cask/common/http/HttpRequest/put(java.net.URL)|",
+      "|java+constructor:///co/cask/cdap/client/exception/BadRequestException/BadRequestException(java.lang.String)|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/ApplicationClient/deploy(java.io.File)|",
+    "called": "|java+method:///co/cask/cdap/client/util/RESTClient/upload(co.cask.common.http.HttpRequest,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+    "v1Body": [
+      "|java+method:///co/cask/cdap/client/util/RESTClient/upload(co.cask.cdap.common.http.HttpRequest,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///java/io/File/getName()|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/common/http/HttpRequest$Builder/build()|",
+      "|java+method:///co/cask/cdap/common/http/HttpRequest$Builder/addHeaders(java.util.Map)|",
+      "|java+method:///com/google/common/collect/ImmutableMap/of(java.lang.Object,java.lang.Object)|",
+      "|java+method:///co/cask/cdap/common/http/HttpRequest/post(java.net.URL)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/cdap/common/http/HttpRequest$Builder/withBody(java.io.File)|"
+    ],
+    "v2Body": [
+      "|java+method:///co/cask/common/http/HttpRequest$Builder/build()|",
+      "|java+method:///co/cask/common/http/HttpRequest$Builder/addHeaders(java.util.Map)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///com/google/common/collect/ImmutableMap/of(java.lang.Object,java.lang.Object)|",
+      "|java+method:///co/cask/common/http/HttpRequest$Builder/withBody(java.io.File)|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/upload(co.cask.common.http.HttpRequest,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///java/io/File/getName()|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/common/http/HttpRequest/post(java.net.URL)|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/ProgramClient/getRuntimeArgs(java.lang.String,co.cask.cdap.proto.ProgramType,java.lang.String)|",
+    "called": "|java+constructor:///co/cask/cdap/client/exception/ProgramNotFoundException/ProgramNotFoundException(co.cask.cdap.proto.ProgramType,java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///co/cask/cdap/common/http/HttpResponse/getResponseCode()|",
+      "|java+constructor:///co/cask/cdap/client/exception/ProgramNotFoundException/ProgramNotFoundException(co.cask.cdap.proto.ProgramType,java.lang.String,java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+constructor:///co/cask/cdap/client/ProgramClient$3/ProgramClient$3(co.cask.cdap.client.ProgramClient)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.cdap.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///co/cask/cdap/common/http/ObjectResponse/getResponseObject()|",
+      "|java+method:///co/cask/cdap/proto/ProgramType/getCategoryName()|",
+      "|java+method:///co/cask/cdap/common/http/ObjectResponse/fromJsonBody(co.cask.cdap.common.http.HttpResponse,com.google.common.reflect.TypeToken)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///co/cask/cdap/client/exception/ProgramNotFoundException/ProgramNotFoundException(co.cask.cdap.proto.ProgramType,java.lang.String,java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///co/cask/common/http/HttpResponse/getResponseCode()|",
+      "|java+method:///co/cask/cdap/proto/ProgramType/getCategoryName()|",
+      "|java+method:///co/cask/common/http/ObjectResponse/getResponseObject()|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///co/cask/common/http/ObjectResponse/fromJsonBody(co.cask.common.http.HttpResponse,com.google.common.reflect.TypeToken)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+constructor:///co/cask/cdap/client/ProgramClient$4/ProgramClient$4(co.cask.cdap.client.ProgramClient)|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/StreamClient/writeEvent(java.net.URL,java.lang.String,java.lang.String)|",
+    "called": "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+    "v1Body": [
+      "|java+method:///co/cask/cdap/common/http/HttpResponse/getResponseCode()|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/cdap/common/http/HttpRequest$Builder/build()|",
+      "|java+constructor:///co/cask/cdap/client/exception/StreamNotFoundException/StreamNotFoundException(java.lang.String)|",
+      "|java+method:///co/cask/cdap/common/http/HttpRequest/post(java.net.URL)|",
+      "|java+method:///co/cask/cdap/common/http/HttpRequest$Builder/withBody(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.cdap.common.http.HttpRequest,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///co/cask/common/http/HttpRequest$Builder/build()|",
+      "|java+method:///co/cask/common/http/HttpRequest$Builder/withBody(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.common.http.HttpRequest,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///co/cask/common/http/HttpResponse/getResponseCode()|",
+      "|java+constructor:///co/cask/cdap/client/exception/StreamNotFoundException/StreamNotFoundException(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/common/http/HttpRequest/post(java.net.URL)|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/DatasetModuleClient/list()|",
+    "called": "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+    "v1Body": [
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.cdap.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///co/cask/cdap/common/http/ObjectResponse/fromJsonBody(co.cask.cdap.common.http.HttpResponse,com.google.common.reflect.TypeToken)|",
+      "|java+method:///co/cask/cdap/common/http/ObjectResponse/getResponseObject()|",
+      "|java+constructor:///co/cask/cdap/client/DatasetModuleClient$1/DatasetModuleClient$1(co.cask.cdap.client.DatasetModuleClient)|"
+    ],
+    "v2Body": [
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+constructor:///co/cask/cdap/client/DatasetModuleClient$1/DatasetModuleClient$1(co.cask.cdap.client.DatasetModuleClient)|",
+      "|java+method:///co/cask/common/http/ObjectResponse/getResponseObject()|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///co/cask/common/http/ObjectResponse/fromJsonBody(co.cask.common.http.HttpResponse,com.google.common.reflect.TypeToken)|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/ProgramClient/stop(java.lang.String,co.cask.cdap.proto.ProgramType,java.lang.String)|",
+    "called": "|java+constructor:///co/cask/cdap/client/exception/ProgramNotFoundException/ProgramNotFoundException(co.cask.cdap.proto.ProgramType,java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///co/cask/cdap/common/http/HttpResponse/getResponseCode()|",
+      "|java+constructor:///co/cask/cdap/client/exception/ProgramNotFoundException/ProgramNotFoundException(co.cask.cdap.proto.ProgramType,java.lang.String,java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.cdap.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///co/cask/cdap/proto/ProgramType/getCategoryName()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///co/cask/cdap/client/exception/ProgramNotFoundException/ProgramNotFoundException(co.cask.cdap.proto.ProgramType,java.lang.String,java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///co/cask/common/http/HttpResponse/getResponseCode()|",
+      "|java+method:///co/cask/cdap/proto/ProgramType/getCategoryName()|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/MonitorClient/getSystemServiceInstances(java.lang.String)|",
+    "called": "|java+constructor:///co/cask/cdap/client/exception/NotFoundException/NotFoundException(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///co/cask/cdap/proto/Instances/getInstances()|",
+      "|java+method:///co/cask/cdap/common/http/HttpResponse/getResponseCode()|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.cdap.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+constructor:///co/cask/cdap/client/exception/ServiceNotEnabledException/ServiceNotEnabledException(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/cdap/common/http/ObjectResponse/fromJsonBody(co.cask.cdap.common.http.HttpResponse,java.lang.Class)|",
+      "|java+method:///co/cask/cdap/common/http/ObjectResponse/getResponseObject()|",
+      "|java+constructor:///co/cask/cdap/client/exception/NotFoundException/NotFoundException(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///co/cask/cdap/proto/Instances/getInstances()|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/common/http/ObjectResponse/fromJsonBody(co.cask.common.http.HttpResponse,java.lang.Class)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///co/cask/cdap/client/exception/NotFoundException/NotFoundException(java.lang.String,java.lang.String)|",
+      "|java+method:///co/cask/common/http/HttpResponse/getResponseCode()|",
+      "|java+constructor:///co/cask/cdap/client/exception/ServiceNotEnabledException/ServiceNotEnabledException(java.lang.String)|",
+      "|java+method:///co/cask/common/http/ObjectResponse/getResponseObject()|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/MonitorClient/listSystemServices()|",
+    "called": "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+    "v1Body": [
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+constructor:///co/cask/cdap/client/MonitorClient$1/MonitorClient$1(co.cask.cdap.client.MonitorClient)|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.cdap.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///co/cask/cdap/common/http/ObjectResponse/getResponseObject()|",
+      "|java+method:///co/cask/cdap/common/http/ObjectResponse/fromJsonBody(co.cask.cdap.common.http.HttpResponse,com.google.common.reflect.TypeToken)|"
+    ],
+    "v2Body": [
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+constructor:///co/cask/cdap/client/MonitorClient$1/MonitorClient$1(co.cask.cdap.client.MonitorClient)|",
+      "|java+method:///co/cask/common/http/ObjectResponse/getResponseObject()|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///co/cask/common/http/ObjectResponse/fromJsonBody(co.cask.common.http.HttpResponse,com.google.common.reflect.TypeToken)|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/ApplicationClient/promote(java.lang.String)|",
+    "called": "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+    "v1Body": [
+      "|java+method:///co/cask/cdap/common/http/HttpResponse/getResponseCode()|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.cdap.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+constructor:///co/cask/cdap/client/exception/ApplicationNotFoundException/ApplicationNotFoundException(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/common/http/HttpResponse/getResponseCode()|",
+      "|java+constructor:///co/cask/cdap/client/exception/ApplicationNotFoundException/ApplicationNotFoundException(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/ProgramClient/getProcedureInstances(java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///co/cask/cdap/client/exception/NotFoundException/NotFoundException(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///co/cask/cdap/proto/Instances/getInstances()|",
+      "|java+method:///co/cask/cdap/common/http/HttpResponse/getResponseCode()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.cdap.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/cdap/common/http/ObjectResponse/fromJsonBody(co.cask.cdap.common.http.HttpResponse,java.lang.Class)|",
+      "|java+method:///co/cask/cdap/common/http/ObjectResponse/getResponseObject()|",
+      "|java+constructor:///co/cask/cdap/client/exception/NotFoundException/NotFoundException(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///co/cask/cdap/proto/Instances/getInstances()|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/common/http/ObjectResponse/fromJsonBody(co.cask.common.http.HttpResponse,java.lang.Class)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///co/cask/cdap/client/exception/NotFoundException/NotFoundException(java.lang.String,java.lang.String)|",
+      "|java+method:///co/cask/common/http/HttpResponse/getResponseCode()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///co/cask/common/http/ObjectResponse/getResponseObject()|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/DatasetModuleClient/deleteAll()|",
+    "called": "|java+constructor:///co/cask/cdap/client/exception/DatasetModuleCannotBeDeletedException/DatasetModuleCannotBeDeletedException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///co/cask/cdap/common/http/HttpResponse/getResponseCode()|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.cdap.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+constructor:///co/cask/cdap/client/exception/DatasetModuleCannotBeDeletedException/DatasetModuleCannotBeDeletedException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/common/http/HttpResponse/getResponseCode()|",
+      "|java+constructor:///co/cask/cdap/client/exception/DatasetModuleCannotBeDeletedException/DatasetModuleCannotBeDeletedException(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/ProgramClient/getServiceRunnableInstances(java.lang.String,java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///co/cask/cdap/client/exception/NotFoundException/NotFoundException(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///co/cask/cdap/proto/Instances/getInstances()|",
+      "|java+method:///co/cask/cdap/common/http/HttpResponse/getResponseCode()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.cdap.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/cdap/common/http/ObjectResponse/fromJsonBody(co.cask.cdap.common.http.HttpResponse,java.lang.Class)|",
+      "|java+method:///co/cask/cdap/common/http/ObjectResponse/getResponseObject()|",
+      "|java+constructor:///co/cask/cdap/client/exception/NotFoundException/NotFoundException(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///co/cask/cdap/proto/Instances/getInstances()|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/common/http/ObjectResponse/fromJsonBody(co.cask.common.http.HttpResponse,java.lang.Class)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///co/cask/cdap/client/exception/NotFoundException/NotFoundException(java.lang.String,java.lang.String)|",
+      "|java+method:///co/cask/common/http/HttpResponse/getResponseCode()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///co/cask/common/http/ObjectResponse/getResponseObject()|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/StreamClient/setTTL(java.lang.String,long)|",
+    "called": "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+    "v1Body": [
+      "|java+method:///co/cask/cdap/common/http/HttpRequest/put(java.net.URL)|",
+      "|java+method:///co/cask/cdap/common/http/HttpResponse/getResponseCode()|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/cdap/common/http/HttpRequest$Builder/build()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/google/common/collect/ImmutableMap/of(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/google/gson/Gson/toJson(java.lang.Object)|",
+      "|java+constructor:///co/cask/cdap/client/exception/StreamNotFoundException/StreamNotFoundException(java.lang.String)|",
+      "|java+method:///co/cask/cdap/common/http/HttpRequest$Builder/withBody(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.cdap.common.http.HttpRequest,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///co/cask/common/http/HttpRequest$Builder/build()|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.common.http.HttpRequest,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///co/cask/common/http/HttpResponse/getResponseCode()|",
+      "|java+method:///com/google/common/collect/ImmutableMap/of(java.lang.Object,java.lang.Object)|",
+      "|java+method:///co/cask/common/http/HttpRequest/put(java.net.URL)|",
+      "|java+method:///co/cask/common/http/HttpRequest$Builder/withBody(java.lang.String)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///com/google/gson/Gson/toJson(java.lang.Object)|",
+      "|java+constructor:///co/cask/cdap/client/exception/StreamNotFoundException/StreamNotFoundException(java.lang.String)|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/ApplicationClient/delete(java.lang.String)|",
+    "called": "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+    "v1Body": [
+      "|java+method:///co/cask/cdap/common/http/HttpResponse/getResponseCode()|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.cdap.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+constructor:///co/cask/cdap/client/exception/ApplicationNotFoundException/ApplicationNotFoundException(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/common/http/HttpResponse/getResponseCode()|",
+      "|java+constructor:///co/cask/cdap/client/exception/ApplicationNotFoundException/ApplicationNotFoundException(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "co.cask.cdap:cdap-cli:2.5.2",
+    "coordinatesV2": "co.cask.cdap:cdap-cli:2.6.1",
+    "caller": "|java+method:///co/cask/cdap/client/DatasetTypeClient/list()|",
+    "called": "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+    "v1Body": [
+      "|java+constructor:///co/cask/cdap/client/DatasetTypeClient$1/DatasetTypeClient$1(co.cask.cdap.client.DatasetTypeClient)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.cdap.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///co/cask/cdap/common/http/ObjectResponse/getResponseObject()|",
+      "|java+method:///co/cask/cdap/common/http/ObjectResponse/fromJsonBody(co.cask.cdap.common.http.HttpResponse,com.google.common.reflect.TypeToken)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///co/cask/cdap/client/DatasetTypeClient$1/DatasetTypeClient$1(co.cask.cdap.client.DatasetTypeClient)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/resolveURL(java.lang.String)|",
+      "|java+method:///co/cask/cdap/client/config/ClientConfig/getAccessToken()|",
+      "|java+method:///co/cask/common/http/ObjectResponse/getResponseObject()|",
+      "|java+method:///co/cask/cdap/client/util/RESTClient/execute(co.cask.common.http.HttpMethod,java.net.URL,co.cask.cdap.security.authentication.client.AccessToken,int%5B%5D)|",
+      "|java+method:///co/cask/common/http/ObjectResponse/fromJsonBody(co.cask.common.http.HttpResponse,com.google.common.reflect.TypeToken)|"
+    ],
+    "affectedLib": "co.cask.cdap:cdap-client:2.6.1",
+    "change": "UPDATED"
+  }
+]

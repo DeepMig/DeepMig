@@ -1,0 +1,111 @@
+[
+  {
+    "coordinatesV1": "io.apiman:apiman-gateway-engine-es:1.3.1.Final",
+    "coordinatesV2": "io.apiman:apiman-gateway-engine-es:1.3.2.Final",
+    "caller": "|java+method:///io/apiman/gateway/engine/es/ESRegistry/lookupClient(java.lang.String,java.lang.String,java.lang.String)|",
+    "called": "|java+method:///io/apiman/common/es/util/ESUtils/queryWithEscapedArgs(java.lang.String,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+constructor:///io/apiman/gateway/engine/beans/exceptions/ClientNotFoundException/ClientNotFoundException(java.lang.String,java.lang.Exception)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/io/IOException/IOException()|",
+      "|java+constructor:///io/searchbox/core/Search$Builder/Search$Builder(java.lang.String)|",
+      "|java+method:///io/searchbox/core/Search$Builder/build()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///io/searchbox/core/SearchResult/getTotal()|",
+      "|java+method:///io/apiman/gateway/engine/es/ESRegistry/getClient()|",
+      "|java+method:///io/searchbox/core/Search$Builder/addIndex(java.lang.String)|",
+      "|java+method:///io/searchbox/core/SearchResult/getFirstHit(java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///io/apiman/gateway/engine/es/i18n/Messages/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///io/apiman/gateway/engine/es/ESRegistry/getIndexName()|",
+      "|java+method:///io/searchbox/core/Search$Builder/addType(java.lang.String)|",
+      "|java+method:///io/searchbox/client/JestClient/execute(io.searchbox.action.Action)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/searchbox/core/SearchResult/getErrorMessage()|",
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+constructor:///io/apiman/gateway/engine/beans/exceptions/ClientNotFoundException/ClientNotFoundException(java.lang.String,java.lang.Exception)|",
+      "|java+constructor:///java/io/IOException/IOException()|",
+      "|java+constructor:///io/searchbox/core/Search$Builder/Search$Builder(java.lang.String)|",
+      "|java+method:///io/searchbox/core/Search$Builder/build()|",
+      "|java+method:///io/apiman/common/es/util/ESUtils/queryWithEscapedArgs(java.lang.String,java.lang.String%5B%5D)|",
+      "|java+method:///io/apiman/gateway/engine/es/ESRegistry/getClient()|",
+      "|java+method:///io/searchbox/core/Search$Builder/addIndex(java.lang.String)|",
+      "|java+method:///io/searchbox/core/SearchResult/getFirstHit(java.lang.Class)|",
+      "|java+method:///io/searchbox/core/SearchResult/isSucceeded()|",
+      "|java+method:///io/apiman/gateway/engine/es/i18n/Messages/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///io/apiman/gateway/engine/es/ESRegistry/getIndexName()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+method:///io/searchbox/core/SearchResult/getTotal()|",
+      "|java+method:///io/searchbox/core/Search$Builder/addType(java.lang.String)|",
+      "|java+method:///io/searchbox/client/JestClient/execute(io.searchbox.action.Action)|"
+    ],
+    "affectedLib": "io.apiman:apiman-common-es:1.3.2.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.apiman:apiman-gateway-engine-es:1.3.1.Final",
+    "coordinatesV2": "io.apiman:apiman-gateway-engine-es:1.3.2.Final",
+    "caller": "|java+method:///io/apiman/gateway/engine/es/ESRegistry/getApiId(java.lang.String,java.lang.String,java.lang.String)|",
+    "called": "|java+method:///io/apiman/common/es/util/ESUtils/escape(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///io/apiman/common/es/util/ESUtils/escape(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "io.apiman:apiman-common-es:1.3.2.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.apiman:apiman-gateway-engine-es:1.3.1.Final",
+    "coordinatesV2": "io.apiman:apiman-gateway-engine-es:1.3.2.Final",
+    "caller": "|java+method:///io/apiman/gateway/engine/es/ESRegistry/lookupClient(java.lang.String,java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///io/apiman/gateway/engine/beans/exceptions/ClientNotFoundException/ClientNotFoundException(java.lang.String,java.lang.Exception)|",
+    "v1Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+constructor:///io/apiman/gateway/engine/beans/exceptions/ClientNotFoundException/ClientNotFoundException(java.lang.String,java.lang.Exception)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/io/IOException/IOException()|",
+      "|java+constructor:///io/searchbox/core/Search$Builder/Search$Builder(java.lang.String)|",
+      "|java+method:///io/searchbox/core/Search$Builder/build()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///io/searchbox/core/SearchResult/getTotal()|",
+      "|java+method:///io/apiman/gateway/engine/es/ESRegistry/getClient()|",
+      "|java+method:///io/searchbox/core/Search$Builder/addIndex(java.lang.String)|",
+      "|java+method:///io/searchbox/core/SearchResult/getFirstHit(java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///io/apiman/gateway/engine/es/i18n/Messages/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///io/apiman/gateway/engine/es/ESRegistry/getIndexName()|",
+      "|java+method:///io/searchbox/core/Search$Builder/addType(java.lang.String)|",
+      "|java+method:///io/searchbox/client/JestClient/execute(io.searchbox.action.Action)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/searchbox/core/SearchResult/getErrorMessage()|",
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+constructor:///io/apiman/gateway/engine/beans/exceptions/ClientNotFoundException/ClientNotFoundException(java.lang.String,java.lang.Exception)|",
+      "|java+constructor:///java/io/IOException/IOException()|",
+      "|java+constructor:///io/searchbox/core/Search$Builder/Search$Builder(java.lang.String)|",
+      "|java+method:///io/searchbox/core/Search$Builder/build()|",
+      "|java+method:///io/apiman/common/es/util/ESUtils/queryWithEscapedArgs(java.lang.String,java.lang.String%5B%5D)|",
+      "|java+method:///io/apiman/gateway/engine/es/ESRegistry/getClient()|",
+      "|java+method:///io/searchbox/core/Search$Builder/addIndex(java.lang.String)|",
+      "|java+method:///io/searchbox/core/SearchResult/getFirstHit(java.lang.Class)|",
+      "|java+method:///io/searchbox/core/SearchResult/isSucceeded()|",
+      "|java+method:///io/apiman/gateway/engine/es/i18n/Messages/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///io/apiman/gateway/engine/es/ESRegistry/getIndexName()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+method:///io/searchbox/core/SearchResult/getTotal()|",
+      "|java+method:///io/searchbox/core/Search$Builder/addType(java.lang.String)|",
+      "|java+method:///io/searchbox/client/JestClient/execute(io.searchbox.action.Action)|"
+    ],
+    "affectedLib": "io.apiman:apiman-gateway-engine-beans:1.3.2.Final",
+    "change": "UPDATED"
+  }
+]

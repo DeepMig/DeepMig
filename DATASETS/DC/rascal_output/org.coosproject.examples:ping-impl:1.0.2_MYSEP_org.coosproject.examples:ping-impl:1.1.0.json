@@ -1,0 +1,127 @@
+[
+  {
+    "coordinatesV1": "org.coosproject.examples:ping-impl:1.1.0",
+    "coordinatesV2": "org.coosproject.examples:ping-impl:1.0.2",
+    "caller": "|java+method:///org/coos/messaging/examples/pingpong/ping/PingProducer/start()|",
+    "called": "|java+method:///org/coos/messaging/InteractionHelper/send(java.lang.String,org.coos.messaging.Exchange)|",
+    "v1Body": [
+      "|java+constructor:///org/coos/messaging/InteractionHelper/InteractionHelper(org.coos.messaging.Endpoint)|",
+      "|java+method:///org/coos/messaging/examples/pingpong/ping/PingProducer/getEndpoint()|",
+      "|java+method:///org/coos/modules/pongapi/PongMessageFactory/createSendPingExchange(java.lang.Integer)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/coos/messaging/InteractionHelper/send(java.lang.String,org.coos.messaging.Exchange)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Thread/start()|",
+      "|java+constructor:///java/lang/Thread/Thread(java.lang.Runnable)|",
+      "|java+constructor:///org/coos/messaging/examples/pingpong/ping/PingHandler/PingHandler(org.coos.messaging.examples.pingpong.ping.PingProducer,int)|"
+    ],
+    "affectedLib": "org.coosproject.messaging:messaging-j2se:1.0.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.coosproject.examples:ping-impl:1.1.0",
+    "coordinatesV2": "org.coosproject.examples:ping-impl:1.0.2",
+    "caller": "|java+method:///org/coos/messaging/examples/pingpong/ping/PingHandler/ping(int)|",
+    "called": "|java+method:///org/coos/messaging/InteractionHelper/request(java.lang.String,org.coos.messaging.Exchange)|",
+    "v1Body": [
+      "|java+method:///org/coos/messaging/InteractionHelper/request(java.lang.String,org.coos.messaging.Exchange)|",
+      "|java+constructor:///org/coos/messaging/InteractionHelper/InteractionHelper(org.coos.messaging.Endpoint)|",
+      "|java+method:///org/coos/messaging/Message/setBody(java.util.Hashtable)|",
+      "|java+method:///org/coos/messaging/Exchange/setOutBoundMessage(org.coos.messaging.Message)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/coos/messaging/examples/pingpong/ping/PingProducer/getEndpoint()|",
+      "|java+constructor:///org/coos/messaging/impl/DefaultMessage/DefaultMessage(java.lang.String)|",
+      "|java+method:///java/util/Hashtable/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/util/Hashtable/Hashtable()|",
+      "|java+method:///org/coos/messaging/Endpoint/createExchange()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/coos/messaging/InteractionHelper/request(java.lang.String,org.coos.messaging.Exchange)|",
+      "|java+method:///org/coos/messaging/util/Log/error(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/coos/messaging/InteractionHelper/InteractionHelper(org.coos.messaging.Endpoint)|",
+      "|java+method:///org/coos/messaging/Exchange/getInBoundMessage()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/coos/messaging/util/Log/info(java.lang.String)|",
+      "|java+method:///org/coos/modules/pongapi/PongMessageFactory/createSendPingExchange(java.lang.Integer)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/coos/messaging/examples/pingpong/ping/PingProducer/getEndpoint()|",
+      "|java+method:///org/coos/messaging/examples/pingpong/ping/PingProducer/setInMsg(org.coos.messaging.Message)|"
+    ],
+    "affectedLib": "org.coosproject.messaging:messaging-j2se:1.0.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.coosproject.examples:ping-impl:1.0.2",
+    "coordinatesV2": "org.coosproject.examples:ping-impl:1.1.0",
+    "caller": "|java+method:///org/coos/messaging/examples/pingpong/ping/PingHandler/ping(int)|",
+    "called": "|java+method:///org/coos/messaging/InteractionHelper/request(java.lang.String,org.coos.messaging.Exchange)|",
+    "v1Body": [
+      "|java+method:///org/coos/messaging/InteractionHelper/request(java.lang.String,org.coos.messaging.Exchange)|",
+      "|java+constructor:///org/coos/messaging/InteractionHelper/InteractionHelper(org.coos.messaging.Endpoint)|",
+      "|java+method:///org/coos/messaging/Message/setBody(java.util.Hashtable)|",
+      "|java+method:///org/coos/messaging/Exchange/setOutBoundMessage(org.coos.messaging.Message)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/coos/messaging/examples/pingpong/ping/PingProducer/getEndpoint()|",
+      "|java+constructor:///org/coos/messaging/impl/DefaultMessage/DefaultMessage(java.lang.String)|",
+      "|java+method:///java/util/Hashtable/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/util/Hashtable/Hashtable()|",
+      "|java+method:///org/coos/messaging/Endpoint/createExchange()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/coos/messaging/InteractionHelper/request(java.lang.String,org.coos.messaging.Exchange)|",
+      "|java+method:///org/coos/messaging/util/Log/error(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/coos/messaging/InteractionHelper/InteractionHelper(org.coos.messaging.Endpoint)|",
+      "|java+method:///org/coos/messaging/Exchange/getInBoundMessage()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/coos/messaging/util/Log/info(java.lang.String)|",
+      "|java+method:///org/coos/modules/pongapi/PongMessageFactory/createSendPingExchange(java.lang.Integer)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/coos/messaging/examples/pingpong/ping/PingProducer/getEndpoint()|",
+      "|java+method:///org/coos/messaging/examples/pingpong/ping/PingProducer/setInMsg(org.coos.messaging.Message)|"
+    ],
+    "affectedLib": "org.coosproject.messaging:messaging-lib:1.1.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.coosproject.examples:ping-impl:1.0.2",
+    "coordinatesV2": "org.coosproject.examples:ping-impl:1.1.0",
+    "caller": "|java+method:///org/coos/messaging/examples/pingpong/ping/PingHandler/ping(int)|",
+    "called": "|java+method:///org/coos/modules/pongapi/PongMessageFactory/createSendPingExchange(java.lang.Integer)|",
+    "v1Body": [
+      "|java+method:///org/coos/messaging/InteractionHelper/request(java.lang.String,org.coos.messaging.Exchange)|",
+      "|java+constructor:///org/coos/messaging/InteractionHelper/InteractionHelper(org.coos.messaging.Endpoint)|",
+      "|java+method:///org/coos/messaging/Message/setBody(java.util.Hashtable)|",
+      "|java+method:///org/coos/messaging/Exchange/setOutBoundMessage(org.coos.messaging.Message)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/coos/messaging/examples/pingpong/ping/PingProducer/getEndpoint()|",
+      "|java+constructor:///org/coos/messaging/impl/DefaultMessage/DefaultMessage(java.lang.String)|",
+      "|java+method:///java/util/Hashtable/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/util/Hashtable/Hashtable()|",
+      "|java+method:///org/coos/messaging/Endpoint/createExchange()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/coos/messaging/InteractionHelper/request(java.lang.String,org.coos.messaging.Exchange)|",
+      "|java+method:///org/coos/messaging/util/Log/error(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/coos/messaging/InteractionHelper/InteractionHelper(org.coos.messaging.Endpoint)|",
+      "|java+method:///org/coos/messaging/Exchange/getInBoundMessage()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/coos/messaging/util/Log/info(java.lang.String)|",
+      "|java+method:///org/coos/modules/pongapi/PongMessageFactory/createSendPingExchange(java.lang.Integer)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/coos/messaging/examples/pingpong/ping/PingProducer/getEndpoint()|",
+      "|java+method:///org/coos/messaging/examples/pingpong/ping/PingProducer/setInMsg(org.coos.messaging.Message)|"
+    ],
+    "affectedLib": "org.coosproject.examples:pong-api:1.1.0",
+    "change": "UPDATED"
+  }
+]

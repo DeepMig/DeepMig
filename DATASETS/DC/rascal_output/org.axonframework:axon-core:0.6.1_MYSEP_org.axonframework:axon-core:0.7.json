@@ -1,0 +1,148 @@
+[
+  {
+    "coordinatesV1": "org.axonframework:axon-core:0.6.1",
+    "coordinatesV2": "org.axonframework:axon-core:0.7",
+    "caller": "|java+method:///org/axonframework/eventstore/XStreamEventSerializer/deserialize(byte%5B%5D)|",
+    "called": "|java+constructor:///org/dom4j/io/XPP3Reader/XPP3Reader()|",
+    "v1Body": [
+      "|java+constructor:///java/io/ByteArrayInputStream/ByteArrayInputStream(byte%5B%5D)|",
+      "|java+method:///org/axonframework/util/GenericXStreamSerializer/deserialize(java.io.InputStream)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/axonframework/serializer/GenericXStreamSerializer/deserialize(com.thoughtworks.xstream.io.HierarchicalStreamReader)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/axonframework/eventstore/EventUpcaster/upcast(java.lang.Object)|",
+      "|java+constructor:///org/dom4j/io/XPP3Reader/XPP3Reader()|",
+      "|java+method:///org/axonframework/serializer/GenericXStreamSerializer/deserialize(java.io.InputStream)|",
+      "|java+constructor:///com/thoughtworks/xstream/io/xml/Dom4JReader/Dom4JReader(org.dom4j.Document)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+constructor:///java/io/ByteArrayInputStream/ByteArrayInputStream(byte%5B%5D)|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream,java.nio.charset.Charset)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///org/axonframework/util/SerializationException/SerializationException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/dom4j/io/XPP3Reader/read(java.io.Reader)|"
+    ],
+    "affectedLib": "dom4j:dom4j:1.6.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.axonframework:axon-core:0.6.1",
+    "coordinatesV2": "org.axonframework:axon-core:0.7",
+    "caller": "|java+method:///org/axonframework/eventstore/fs/FileSystemEventStore/appendEvents(java.lang.String,org.axonframework.domain.DomainEventStream)|",
+    "called": "|java+method:///org/joda/time/LocalDateTime/toString()|",
+    "v1Body": [
+      "|java+method:///org/axonframework/domain/DomainEvent/getAggregateIdentifier()|",
+      "|java+method:///org/axonframework/domain/DomainEventStream/next()|",
+      "|java+method:///org/axonframework/eventstore/fs/EventSerializationUtils/writeEventEntry(java.io.OutputStream,long,java.lang.String,byte%5B%5D)|",
+      "|java+method:///org/axonframework/eventstore/EventSerializer/serialize(org.axonframework.domain.DomainEvent)|",
+      "|java+constructor:///org/axonframework/eventstore/EventStoreException/EventStoreException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/axonframework/domain/DomainEvent/getTimestamp()|",
+      "|java+method:///org/joda/time/LocalDateTime/toString()|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///org/axonframework/domain/DomainEventStream/hasNext()|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.OutputStream)|",
+      "|java+method:///org/axonframework/domain/DomainEvent/getSequenceNumber()|",
+      "|java+method:///org/axonframework/eventstore/fs/EventFileResolver/openEventFileForWriting(java.lang.String,java.util.UUID)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/axonframework/domain/DomainEvent/getAggregateIdentifier()|",
+      "|java+method:///org/axonframework/domain/DomainEventStream/next()|",
+      "|java+method:///org/axonframework/eventstore/fs/EventSerializationUtils/writeEventEntry(java.io.OutputStream,long,java.lang.String,byte%5B%5D)|",
+      "|java+method:///org/axonframework/eventstore/EventSerializer/serialize(org.axonframework.domain.DomainEvent)|",
+      "|java+constructor:///org/axonframework/eventstore/EventStoreException/EventStoreException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/axonframework/domain/DomainEvent/getSequenceNumber()|",
+      "|java+method:///org/axonframework/domain/DomainEvent/getTimestamp()|",
+      "|java+method:///org/joda/time/LocalDateTime/toString()|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.OutputStream)|",
+      "|java+method:///org/axonframework/eventstore/fs/EventFileResolver/openEventFileForWriting(java.lang.String,org.axonframework.domain.AggregateIdentifier)|",
+      "|java+method:///org/axonframework/domain/DomainEventStream/hasNext()|"
+    ],
+    "affectedLib": "joda-time:joda-time:1.6.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.axonframework:axon-core:0.6.1",
+    "coordinatesV2": "org.axonframework:axon-core:0.7",
+    "caller": "|java+constructor:///org/axonframework/domain/EventBase/EventBase()|",
+    "called": "|java+constructor:///org/joda/time/LocalDateTime/LocalDateTime()|",
+    "v1Body": [
+      "|java+constructor:///org/joda/time/LocalDateTime/LocalDateTime()|",
+      "|java+method:///java/util/UUID/randomUUID()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/joda/time/LocalDateTime/LocalDateTime()|",
+      "|java+method:///java/util/UUID/randomUUID()|",
+      "|java+constructor:///org/axonframework/domain/MutableEventMetaData/MutableEventMetaData(org.joda.time.LocalDateTime,java.util.UUID)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "joda-time:joda-time:1.6.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.axonframework:axon-core:0.6.1",
+    "coordinatesV2": "org.axonframework:axon-core:0.7",
+    "caller": "|java+method:///org/axonframework/eventstore/fs/FileSystemEventStore/appendSnapshotEvent(java.lang.String,org.axonframework.domain.DomainEvent)|",
+    "called": "|java+method:///org/joda/time/LocalDateTime/toString()|",
+    "v1Body": [
+      "|java+method:///org/axonframework/domain/DomainEvent/getAggregateIdentifier()|",
+      "|java+method:///org/axonframework/eventstore/EventSerializer/serialize(org.axonframework.domain.DomainEvent)|",
+      "|java+constructor:///org/axonframework/eventstore/EventStoreException/EventStoreException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/joda/time/LocalDateTime/toString()|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.OutputStream)|",
+      "|java+constructor:///org/axonframework/eventstore/fs/SnapshotEventEntry/SnapshotEventEntry(byte%5B%5D,long,java.lang.String,long)|",
+      "|java+method:///org/axonframework/eventstore/fs/FileSystemEventStore/calculateOffset(java.lang.String,java.util.UUID,long)|",
+      "|java+method:///org/axonframework/eventstore/fs/EventSerializationUtils/writeSnapshotEntry(java.io.OutputStream,org.axonframework.eventstore.fs.SnapshotEventEntry)|",
+      "|java+method:///org/axonframework/domain/DomainEvent/getSequenceNumber()|",
+      "|java+method:///org/axonframework/eventstore/fs/EventFileResolver/openSnapshotFileForWriting(java.lang.String,java.util.UUID)|",
+      "|java+method:///org/axonframework/domain/DomainEvent/getTimestamp()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/axonframework/domain/DomainEvent/getAggregateIdentifier()|",
+      "|java+method:///org/axonframework/eventstore/EventSerializer/serialize(org.axonframework.domain.DomainEvent)|",
+      "|java+constructor:///org/axonframework/eventstore/EventStoreException/EventStoreException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/axonframework/domain/DomainEvent/getTimestamp()|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.OutputStream)|",
+      "|java+constructor:///org/axonframework/eventstore/fs/SnapshotEventEntry/SnapshotEventEntry(byte%5B%5D,long,java.lang.String,long)|",
+      "|java+method:///org/axonframework/eventstore/fs/EventFileResolver/openSnapshotFileForWriting(java.lang.String,org.axonframework.domain.AggregateIdentifier)|",
+      "|java+method:///org/axonframework/eventstore/fs/EventSerializationUtils/writeSnapshotEntry(java.io.OutputStream,org.axonframework.eventstore.fs.SnapshotEventEntry)|",
+      "|java+method:///org/axonframework/domain/DomainEvent/getSequenceNumber()|",
+      "|java+method:///org/axonframework/eventstore/fs/FileSystemEventStore/calculateOffset(java.lang.String,org.axonframework.domain.AggregateIdentifier,long)|",
+      "|java+method:///org/joda/time/LocalDateTime/toString()|"
+    ],
+    "affectedLib": "joda-time:joda-time:1.6.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.axonframework:axon-core:0.6.1",
+    "coordinatesV2": "org.axonframework:axon-core:0.7",
+    "caller": "|java+constructor:///org/axonframework/eventstore/jpa/AbstractEventEntry/AbstractEventEntry(java.lang.String,org.axonframework.domain.DomainEvent,org.axonframework.eventstore.EventSerializer)|",
+    "called": "|java+method:///org/joda/time/LocalDateTime/toString()|",
+    "v1Body": [
+      "|java+method:///org/axonframework/domain/DomainEvent/getAggregateIdentifier()|",
+      "|java+method:///org/axonframework/eventstore/EventSerializer/serialize(org.axonframework.domain.DomainEvent)|",
+      "|java+method:///org/axonframework/domain/DomainEvent/getSequenceNumber()|",
+      "|java+method:///org/axonframework/domain/DomainEvent/getTimestamp()|",
+      "|java+method:///org/joda/time/LocalDateTime/toString()|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///java/util/UUID/toString()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/axonframework/domain/DomainEvent/getAggregateIdentifier()|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///org/axonframework/eventstore/EventSerializer/serialize(org.axonframework.domain.DomainEvent)|",
+      "|java+method:///org/axonframework/domain/DomainEvent/getSequenceNumber()|",
+      "|java+method:///org/axonframework/domain/DomainEvent/getTimestamp()|",
+      "|java+method:///org/joda/time/LocalDateTime/toString()|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "joda-time:joda-time:1.6.2",
+    "change": "UPDATED"
+  }
+]

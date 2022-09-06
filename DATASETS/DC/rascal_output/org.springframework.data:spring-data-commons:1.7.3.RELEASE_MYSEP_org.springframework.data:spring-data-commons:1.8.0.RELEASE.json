@@ -1,0 +1,690 @@
+[
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-commons:1.7.3.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-commons:1.8.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/mapping/model/AbstractPersistentProperty/isAssociation()|",
+    "called": "|java+method:///org/springframework/core/annotation/AnnotationUtils/getAnnotation(java.lang.reflect.AnnotatedElement,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/lang/reflect/Field/getDeclaredAnnotations()|",
+      "|java+method:///java/lang/Class/isAnnotationPresent(java.lang.Class)|",
+      "|java+method:///java/lang/annotation/Annotation/annotationType()|",
+      "|java+method:///java/lang/reflect/Field/isAnnotationPresent(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/core/annotation/AnnotationUtils/getAnnotation(java.lang.reflect.AnnotatedElement,java.lang.Class)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.2.9.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-commons:1.7.3.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-commons:1.8.0.RELEASE",
+    "caller": "|java+constructor:///org/springframework/data/repository/core/support/TransactionalRepositoryProxyPostProcessor/TransactionalRepositoryProxyPostProcessor(org.springframework.beans.factory.ListableBeanFactory,java.lang.String)|",
+    "called": "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/data/repository/core/support/TransactionalRepositoryProxyPostProcessor$CustomAnnotationTransactionAttributeSource/TransactionalRepositoryProxyPostProcessor$CustomAnnotationTransactionAttributeSource()|",
+      "|java+method:///org/springframework/transaction/interceptor/TransactionInterceptor/setBeanFactory(org.springframework.beans.factory.BeanFactory)|",
+      "|java+method:///org/springframework/transaction/interceptor/TransactionInterceptor/afterPropertiesSet()|",
+      "|java+constructor:///org/springframework/transaction/interceptor/TransactionInterceptor/TransactionInterceptor(org.springframework.transaction.PlatformTransactionManager,org.springframework.transaction.interceptor.TransactionAttributeSource)|",
+      "|java+method:///org/springframework/transaction/interceptor/TransactionInterceptor/setTransactionManagerBeanName(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.2.9.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-commons:1.7.3.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-commons:1.8.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/mapping/model/BeanWrapper/create(java.lang.Object,org.springframework.core.convert.ConversionService)|",
+    "called": "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/data/mapping/model/BeanWrapper/BeanWrapper(java.lang.Object,org.springframework.core.convert.ConversionService)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/springframework/data/mapping/model/BeanWrapper/BeanWrapper(java.lang.Object,org.springframework.core.convert.ConversionService)|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.2.9.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-commons:1.7.3.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-commons:1.8.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/repository/core/support/RepositoryFactorySupport$QueryExecutorMethodInterceptor/invoke(org.aopalliance.intercept.MethodInvocation)|",
+    "called": "|java+method:///org/springframework/core/convert/support/GenericConversionService/canConvert(org.springframework.core.convert.TypeDescriptor,org.springframework.core.convert.TypeDescriptor)|",
+    "v1Body": [
+      "|java+method:///org/aopalliance/intercept/MethodInvocation/getMethod()|",
+      "|java+method:///org/springframework/data/repository/core/support/RepositoryFactorySupport$QueryExecutorMethodInterceptor/isCustomMethodInvocation(org.aopalliance.intercept.MethodInvocation)|",
+      "|java+method:///org/springframework/util/ReflectionUtils/makeAccessible(java.lang.reflect.Method)|",
+      "|java+method:///org/springframework/data/repository/core/support/RepositoryFactorySupport$QueryExecutorMethodInterceptor/executeMethodOn(java.lang.Object,java.lang.reflect.Method,java.lang.Object%5B%5D)|",
+      "|java+method:///org/springframework/data/repository/core/support/RepositoryFactorySupport$QueryExecutorMethodInterceptor/hasQueryFor(java.lang.reflect.Method)|",
+      "|java+method:///org/springframework/data/repository/query/RepositoryQuery/execute(java.lang.Object%5B%5D)|",
+      "|java+method:///org/springframework/data/repository/core/RepositoryInformation/getTargetClassMethod(java.lang.reflect.Method)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/aopalliance/intercept/MethodInvocation/getArguments()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/core/convert/support/GenericConversionService/convert(java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/springframework/data/repository/core/support/RepositoryFactorySupport/access$400()|",
+      "|java+method:///org/springframework/core/convert/support/GenericConversionService/canConvert(java.lang.Class,java.lang.Class)|",
+      "|java+method:///org/springframework/core/convert/support/GenericConversionService/canConvert(org.springframework.core.convert.TypeDescriptor,org.springframework.core.convert.TypeDescriptor)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/springframework/data/repository/core/support/RepositoryFactorySupport$QueryExecutorMethodInterceptor/doInvoke(org.aopalliance.intercept.MethodInvocation)|",
+      "|java+method:///org/springframework/data/repository/util/QueryExecutionConverters/supports(java.lang.Class)|",
+      "|java+constructor:///org/springframework/data/repository/util/NullableWrapper/NullableWrapper(java.lang.Object)|",
+      "|java+method:///org/springframework/core/convert/TypeDescriptor/valueOf(java.lang.Class)|",
+      "|java+method:///org/aopalliance/intercept/MethodInvocation/getMethod()|",
+      "|java+method:///org/springframework/core/convert/support/GenericConversionService/canBypassConvert(org.springframework.core.convert.TypeDescriptor,org.springframework.core.convert.TypeDescriptor)|",
+      "|java+method:///java/lang/Class/isInstance(java.lang.Object)|",
+      "|java+method:///org/springframework/core/convert/TypeDescriptor/nested(org.springframework.core.MethodParameter,int)|",
+      "|java+method:///java/lang/reflect/Method/getReturnType()|",
+      "|java+constructor:///org/springframework/core/MethodParameter/MethodParameter(java.lang.reflect.Method,int)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.2.9.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-commons:1.7.3.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-commons:1.8.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/repository/query/Parameters/assertEitherAllParamAnnotatedOrNone()|",
+    "called": "|java+method:///org/springframework/util/Assert/isTrue(boolean,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/springframework/data/repository/query/Parameter/isNamedParameter()|",
+      "|java+method:///org/springframework/util/Assert/isTrue(boolean,java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/springframework/data/repository/query/Parameters/getBindableParameters()|",
+      "|java+method:///org/springframework/data/repository/query/Parameters/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/springframework/data/repository/query/Parameter/isNamedParameter()|",
+      "|java+method:///org/springframework/data/repository/query/Parameter/isFirst()|",
+      "|java+method:///org/springframework/util/Assert/isTrue(boolean,java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/springframework/data/repository/query/Parameters/getBindableParameters()|",
+      "|java+method:///org/springframework/data/repository/query/Parameters/iterator()|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.2.9.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-commons:1.7.3.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-commons:1.8.0.RELEASE",
+    "caller": "|java+constructor:///org/springframework/data/convert/MappingContextTypeInformationMapper/MappingContextTypeInformationMapper(org.springframework.data.mapping.context.MappingContext)|",
+    "called": "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/springframework/data/mapping/PersistentEntity/getTypeInformation()|",
+      "|java+method:///org/springframework/data/mapping/PersistentEntity/getTypeAlias()|",
+      "|java+method:///org/springframework/data/convert/MappingContextTypeInformationMapper/safelyAddToCache(org.springframework.data.util.TypeInformation,java.lang.Object)|",
+      "|java+method:///org/springframework/data/mapping/context/MappingContext/getPersistentEntities()|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/springframework/data/mapping/PersistentEntity/getTypeAlias()|",
+      "|java+method:///org/springframework/data/mapping/context/MappingContext/getPersistentEntities()|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///org/springframework/data/convert/MappingContextTypeInformationMapper/safelyAddToCache(org.springframework.data.util.ClassTypeInformation,java.lang.Object)|",
+      "|java+method:///org/springframework/data/util/TypeInformation/getRawTypeInformation()|",
+      "|java+method:///org/springframework/data/mapping/PersistentEntity/getTypeInformation()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.2.9.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-commons:1.7.3.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-commons:1.8.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/util/TypeVariableTypeInformation/hashCode()|",
+    "called": "|java+method:///org/springframework/util/ObjectUtils/nullSafeHashCode(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/springframework/data/util/TypeVariableTypeInformation/getType()|",
+      "|java+method:///org/springframework/util/ObjectUtils/nullSafeHashCode(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/util/ObjectUtils/nullSafeHashCode(java.lang.Object)|",
+      "|java+method:///org/springframework/data/util/ParentTypeAwareTypeInformation/hashCode()|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.2.9.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-commons:1.7.3.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-commons:1.8.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/repository/query/QueryMethod/isCollectionQuery()|",
+    "called": "|java+method:///org/springframework/util/ClassUtils/isAssignable(java.lang.Class,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/isArray()|",
+      "|java+method:///org/springframework/util/ClassUtils/isAssignable(java.lang.Class,java.lang.Class)|",
+      "|java+method:///java/lang/reflect/Method/getReturnType()|",
+      "|java+method:///org/springframework/data/repository/query/QueryMethod/isPageQuery()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/isArray()|",
+      "|java+method:///org/springframework/util/ClassUtils/isAssignable(java.lang.Class,java.lang.Class)|",
+      "|java+method:///org/springframework/data/repository/query/QueryMethod/isSliceQuery()|",
+      "|java+method:///java/lang/reflect/Method/getReturnType()|",
+      "|java+method:///org/springframework/data/repository/query/QueryMethod/isPageQuery()|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.2.9.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-commons:1.7.3.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-commons:1.8.0.RELEASE",
+    "caller": "|java+constructor:///org/springframework/data/mapping/context/AbstractMappingContext$PersistentPropertyCreator/AbstractMappingContext$PersistentPropertyCreator(org.springframework.data.mapping.context.AbstractMappingContext,org.springframework.data.mapping.model.MutablePersistentEntity,java.util.Map)|",
+    "called": "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/HashMap/HashMap(java.util.Map)|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.2.9.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-commons:1.7.3.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-commons:1.8.0.RELEASE",
+    "caller": "|java+constructor:///org/springframework/data/auditing/AuditableBeanWrapperFactory$ReflectionAuditingBeanWrapper/AuditableBeanWrapperFactory$ReflectionAuditingBeanWrapper(java.lang.Object)|",
+    "called": "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/springframework/data/auditing/AuditableBeanWrapperFactory/access$000()|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/springframework/core/convert/support/ConfigurableConversionService/addConverter(org.springframework.core.convert.converter.Converter)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///org/springframework/format/support/DefaultFormattingConversionService/DefaultFormattingConversionService()|",
+      "|java+method:///org/springframework/data/auditing/AnnotationAuditingMetadata/getMetadata(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/data/auditing/AnnotationAuditingMetadata/getMetadata(java.lang.Class)|",
+      "|java+constructor:///org/springframework/data/auditing/AuditableBeanWrapperFactory$DateConvertingAuditableBeanWrapper/AuditableBeanWrapperFactory$DateConvertingAuditableBeanWrapper()|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.2.9.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-commons:1.7.3.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-commons:1.8.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/auditing/config/AuditingBeanDefinitionRegistrarSupport/registerBeanDefinitions(org.springframework.core.type.AnnotationMetadata,org.springframework.beans.factory.support.BeanDefinitionRegistry)|",
+    "called": "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/springframework/data/auditing/config/AuditingBeanDefinitionRegistrarSupport/registerAuditHandlerBeanDefinition(org.springframework.beans.factory.support.BeanDefinitionRegistry,org.springframework.data.auditing.config.AnnotationAuditingConfiguration)|",
+      "|java+method:///org/springframework/data/auditing/config/AuditingBeanDefinitionRegistrarSupport/registerAuditListenerBeanDefinition(org.springframework.beans.factory.config.BeanDefinition,org.springframework.beans.factory.support.BeanDefinitionRegistry)|",
+      "|java+method:///org/springframework/data/auditing/config/AuditingBeanDefinitionRegistrarSupport/getConfiguration(org.springframework.core.type.AnnotationMetadata)|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/data/auditing/config/AuditingBeanDefinitionRegistrarSupport/registerAuditListenerBeanDefinition(org.springframework.beans.factory.config.BeanDefinition,org.springframework.beans.factory.support.BeanDefinitionRegistry)|",
+      "|java+method:///org/springframework/data/auditing/config/AuditingBeanDefinitionRegistrarSupport/registerAuditHandlerBeanDefinition(org.springframework.beans.factory.support.BeanDefinitionRegistry,org.springframework.data.auditing.config.AuditingConfiguration)|",
+      "|java+method:///org/springframework/data/auditing/config/AuditingBeanDefinitionRegistrarSupport/getConfiguration(org.springframework.core.type.AnnotationMetadata)|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.2.9.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-commons:1.7.3.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-commons:1.8.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/mapping/context/AbstractMappingContext/addPersistentEntity(org.springframework.data.util.TypeInformation)|",
+    "called": "|java+method:///org/springframework/util/ReflectionUtils/doWithFields(java.lang.Class,org.springframework.util.ReflectionUtils$FieldCallback,org.springframework.util.ReflectionUtils$FieldFilter)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/concurrent/locks/Lock/unlock()|",
+      "|java+method:///org/springframework/data/mapping/context/AbstractMappingContext/createPersistentEntity(org.springframework.data.util.TypeInformation)|",
+      "|java+constructor:///org/springframework/data/mapping/context/MappingContextEvent/MappingContextEvent(org.springframework.data.mapping.context.MappingContext,org.springframework.data.mapping.PersistentEntity)|",
+      "|java+method:///org/springframework/data/mapping/model/MutablePersistentEntity/verify()|",
+      "|java+constructor:///org/springframework/data/mapping/model/MappingException/MappingException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/concurrent/locks/Lock/lock()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/beans/IntrospectionException/getMessage()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/springframework/context/ApplicationEventPublisher/publishEvent(org.springframework.context.ApplicationEvent)|",
+      "|java+method:///org/springframework/util/ReflectionUtils/doWithFields(java.lang.Class,org.springframework.util.ReflectionUtils$FieldCallback,org.springframework.util.ReflectionUtils$FieldFilter)|",
+      "|java+method:///java/beans/BeanInfo/getPropertyDescriptors()|",
+      "|java+method:///java/beans/PropertyDescriptor/getName()|",
+      "|java+method:///java/beans/Introspector/getBeanInfo(java.lang.Class)|",
+      "|java+constructor:///org/springframework/data/mapping/context/AbstractMappingContext$PersistentPropertyCreator/AbstractMappingContext$PersistentPropertyCreator(org.springframework.data.mapping.context.AbstractMappingContext,org.springframework.data.mapping.model.MutablePersistentEntity,java.util.Map,org.springframework.data.mapping.context.AbstractMappingContext$1)|",
+      "|java+method:///java/util/Map/remove(java.lang.Object)|",
+      "|java+method:///org/springframework/data/util/TypeInformation/getType()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/concurrent/locks/Lock/unlock()|",
+      "|java+method:///org/springframework/data/mapping/context/AbstractMappingContext/createPersistentEntity(org.springframework.data.util.TypeInformation)|",
+      "|java+constructor:///org/springframework/data/mapping/context/MappingContextEvent/MappingContextEvent(org.springframework.data.mapping.context.MappingContext,org.springframework.data.mapping.PersistentEntity)|",
+      "|java+method:///org/springframework/data/mapping/model/MutablePersistentEntity/verify()|",
+      "|java+constructor:///org/springframework/data/mapping/model/MappingException/MappingException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/concurrent/locks/Lock/lock()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/beans/IntrospectionException/getMessage()|",
+      "|java+method:///org/springframework/context/ApplicationEventPublisher/publishEvent(org.springframework.context.ApplicationEvent)|",
+      "|java+method:///org/springframework/util/ReflectionUtils/doWithFields(java.lang.Class,org.springframework.util.ReflectionUtils$FieldCallback,org.springframework.util.ReflectionUtils$FieldFilter)|",
+      "|java+method:///java/beans/BeanInfo/getPropertyDescriptors()|",
+      "|java+method:///java/beans/PropertyDescriptor/getName()|",
+      "|java+method:///org/springframework/data/mapping/context/AbstractMappingContext$PersistentPropertyCreator/addPropertiesForRemainingDescriptors()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/beans/Introspector/getBeanInfo(java.lang.Class)|",
+      "|java+constructor:///org/springframework/data/mapping/context/AbstractMappingContext$PersistentPropertyCreator/AbstractMappingContext$PersistentPropertyCreator(org.springframework.data.mapping.context.AbstractMappingContext,org.springframework.data.mapping.model.MutablePersistentEntity,java.util.Map,org.springframework.data.mapping.context.AbstractMappingContext$1)|",
+      "|java+method:///java/util/Map/remove(java.lang.Object)|",
+      "|java+method:///org/springframework/data/util/TypeInformation/getType()|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.2.9.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-commons:1.7.3.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-commons:1.8.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/convert/SimpleTypeInformationMapper/resolveTypeFrom(java.lang.Object)|",
+    "called": "|java+method:///org/springframework/util/StringUtils/hasText(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/springframework/util/StringUtils/hasText(java.lang.String)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/springframework/util/ClassUtils/forName(java.lang.String,java.lang.ClassLoader)|",
+      "|java+method:///org/springframework/data/util/ClassTypeInformation/from(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/springframework/util/StringUtils/hasText(java.lang.String)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/springframework/util/ClassUtils/forName(java.lang.String,java.lang.ClassLoader)|",
+      "|java+method:///org/springframework/data/convert/SimpleTypeInformationMapper/resolveTypeFrom(java.lang.Object)|",
+      "|java+method:///org/springframework/data/util/ClassTypeInformation/from(java.lang.Class)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.2.9.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-commons:1.7.3.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-commons:1.8.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/mapping/context/AbstractMappingContext$PersistentPropertyCreator/doWith(java.lang.reflect.Field)|",
+    "called": "|java+method:///org/springframework/util/ReflectionUtils/makeAccessible(java.lang.reflect.Field)|",
+    "v1Body": [
+      "|java+method:///org/springframework/data/mapping/PersistentProperty/getPersistentEntityType()|",
+      "|java+method:///java/lang/reflect/Field/getName()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/springframework/data/mapping/model/MutablePersistentEntity/addPersistentProperty(org.springframework.data.mapping.PersistentProperty)|",
+      "|java+method:///org/springframework/data/mapping/model/MutablePersistentEntity/addAssociation(org.springframework.data.mapping.Association)|",
+      "|java+method:///org/springframework/data/mapping/PersistentProperty/getAssociation()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+method:///org/springframework/data/mapping/PersistentProperty/isTransient()|",
+      "|java+method:///org/springframework/data/mapping/model/MutablePersistentEntity/getType()|",
+      "|java+method:///org/springframework/data/mapping/context/AbstractMappingContext/addPersistentEntity(org.springframework.data.util.TypeInformation)|",
+      "|java+method:///org/springframework/data/mapping/context/AbstractMappingContext/createPersistentProperty(java.lang.reflect.Field,java.beans.PropertyDescriptor,org.springframework.data.mapping.model.MutablePersistentEntity,org.springframework.data.mapping.model.SimpleTypeHolder)|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///org/springframework/util/ReflectionUtils/makeAccessible(java.lang.reflect.Field)|",
+      "|java+method:///org/springframework/data/mapping/PersistentProperty/getRawType()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/springframework/data/mapping/PersistentProperty/isAssociation()|",
+      "|java+method:///org/springframework/data/mapping/context/AbstractMappingContext/access$100(org.springframework.data.mapping.context.AbstractMappingContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/reflect/Field/getName()|",
+      "|java+method:///org/springframework/util/ReflectionUtils/makeAccessible(java.lang.reflect.Field)|",
+      "|java+method:///org/springframework/data/mapping/context/AbstractMappingContext$PersistentPropertyCreator/createAndRegisterProperty(java.lang.reflect.Field,java.beans.PropertyDescriptor)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/util/Map/remove(java.lang.Object)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.2.9.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-commons:1.7.3.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-commons:1.8.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/mapping/model/BeanWrapper/setProperty(org.springframework.data.mapping.PersistentProperty,java.lang.Object)|",
+    "called": "|java+method:///org/springframework/util/ReflectionUtils/makeAccessible(java.lang.reflect.Field)|",
+    "v1Body": [
+      "|java+method:///org/springframework/data/mapping/model/BeanWrapper/setProperty(org.springframework.data.mapping.PersistentProperty,java.lang.Object,boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/data/mapping/PersistentProperty/getType()|",
+      "|java+method:///org/springframework/util/ReflectionUtils/makeAccessible(java.lang.reflect.Method)|",
+      "|java+constructor:///org/springframework/data/mapping/model/MappingException/MappingException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/springframework/data/mapping/PersistentProperty/getSetter()|",
+      "|java+method:///org/springframework/util/ReflectionUtils/setField(java.lang.reflect.Field,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/springframework/data/mapping/model/BeanWrapper/getPotentiallyConvertedValue(java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/springframework/data/mapping/PersistentProperty/usePropertyAccess()|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/lang/reflect/Method/getParameterTypes()|",
+      "|java+method:///org/springframework/util/ReflectionUtils/invokeMethod(java.lang.reflect.Method,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/springframework/data/mapping/PersistentProperty/getField()|",
+      "|java+method:///org/springframework/util/ReflectionUtils/makeAccessible(java.lang.reflect.Field)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.2.9.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-commons:1.7.3.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-commons:1.8.0.RELEASE",
+    "caller": "|java+constructor:///org/springframework/data/repository/core/support/RepositoryFactorySupport$QueryExecutorMethodInterceptor/RepositoryFactorySupport$QueryExecutorMethodInterceptor(org.springframework.data.repository.core.support.RepositoryFactorySupport,org.springframework.data.repository.core.RepositoryInformation,java.lang.Object,java.lang.Object)|",
+    "called": "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+method:///org/springframework/data/repository/core/support/RepositoryFactorySupport/access$200(org.springframework.data.repository.core.support.RepositoryFactorySupport)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/springframework/data/repository/core/support/RepositoryFactorySupport/getQueryLookupStrategy(org.springframework.data.repository.query.QueryLookupStrategy$Key)|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+method:///org/springframework/data/repository/query/QueryLookupStrategy/resolveQuery(java.lang.reflect.Method,org.springframework.data.repository.core.RepositoryMetadata,org.springframework.data.repository.core.NamedQueries)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/springframework/data/repository/core/RepositoryInformation/getQueryMethods()|",
+      "|java+method:///org/springframework/data/repository/core/support/RepositoryFactorySupport$QueryExecutorMethodInterceptor/invokeListeners(org.springframework.data.repository.query.RepositoryQuery)|",
+      "|java+method:///org/springframework/data/repository/core/support/RepositoryFactorySupport/access$100(org.springframework.data.repository.core.support.RepositoryFactorySupport)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+method:///org/springframework/data/repository/core/support/RepositoryFactorySupport/access$200(org.springframework.data.repository.core.support.RepositoryFactorySupport)|",
+      "|java+constructor:///org/springframework/core/convert/support/DefaultConversionService/DefaultConversionService()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/springframework/data/repository/core/support/RepositoryFactorySupport/getQueryLookupStrategy(org.springframework.data.repository.query.QueryLookupStrategy$Key)|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/springframework/data/repository/util/QueryExecutionConverters/registerConvertersIn(org.springframework.core.convert.support.ConfigurableConversionService)|",
+      "|java+method:///org/springframework/data/repository/query/QueryLookupStrategy/resolveQuery(java.lang.reflect.Method,org.springframework.data.repository.core.RepositoryMetadata,org.springframework.data.repository.core.NamedQueries)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/springframework/data/repository/core/RepositoryInformation/getQueryMethods()|",
+      "|java+method:///org/springframework/data/repository/core/support/RepositoryFactorySupport$QueryExecutorMethodInterceptor/invokeListeners(org.springframework.data.repository.query.RepositoryQuery)|",
+      "|java+method:///org/springframework/data/repository/core/support/RepositoryFactorySupport/access$100(org.springframework.data.repository.core.support.RepositoryFactorySupport)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.2.9.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-commons:1.7.3.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-commons:1.8.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/repository/config/RepositoryBeanDefinitionRegistrarSupport/registerBeanDefinitions(org.springframework.core.type.AnnotationMetadata,org.springframework.beans.factory.support.BeanDefinitionRegistry)|",
+    "called": "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/springframework/data/repository/config/RepositoryConfigurationDelegate/registerRepositoriesIn(org.springframework.beans.factory.support.BeanDefinitionRegistry,org.springframework.data.repository.config.RepositoryConfigurationExtension)|",
+      "|java+method:///org/springframework/core/type/AnnotationMetadata/getAnnotationAttributes(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///org/springframework/data/repository/config/AnnotationRepositoryConfigurationSource/AnnotationRepositoryConfigurationSource(org.springframework.core.type.AnnotationMetadata,java.lang.Class,org.springframework.core.io.ResourceLoader,org.springframework.core.env.Environment)|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/springframework/data/repository/config/RepositoryBeanDefinitionRegistrarSupport/defaultEnvironment(org.springframework.core.env.Environment,org.springframework.core.io.ResourceLoader)|",
+      "|java+method:///org/springframework/data/repository/config/RepositoryBeanDefinitionRegistrarSupport/getExtension()|",
+      "|java+method:///org/springframework/data/repository/config/RepositoryBeanDefinitionRegistrarSupport/getAnnotation()|",
+      "|java+constructor:///org/springframework/data/repository/config/RepositoryConfigurationDelegate/RepositoryConfigurationDelegate(org.springframework.data.repository.config.RepositoryConfigurationSource,org.springframework.core.io.ResourceLoader,org.springframework.core.env.Environment)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/data/repository/config/RepositoryConfigurationDelegate/registerRepositoriesIn(org.springframework.beans.factory.support.BeanDefinitionRegistry,org.springframework.data.repository.config.RepositoryConfigurationExtension)|",
+      "|java+method:///org/springframework/core/type/AnnotationMetadata/getAnnotationAttributes(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///org/springframework/data/repository/config/AnnotationRepositoryConfigurationSource/AnnotationRepositoryConfigurationSource(org.springframework.core.type.AnnotationMetadata,java.lang.Class,org.springframework.core.io.ResourceLoader,org.springframework.core.env.Environment)|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/springframework/data/repository/config/RepositoryBeanDefinitionRegistrarSupport/getExtension()|",
+      "|java+method:///org/springframework/data/repository/config/RepositoryBeanDefinitionRegistrarSupport/getAnnotation()|",
+      "|java+constructor:///org/springframework/data/repository/config/RepositoryConfigurationDelegate/RepositoryConfigurationDelegate(org.springframework.data.repository.config.RepositoryConfigurationSource,org.springframework.core.io.ResourceLoader,org.springframework.core.env.Environment)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.2.9.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-commons:1.7.3.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-commons:1.8.0.RELEASE",
+    "caller": "|java+constructor:///org/springframework/data/mapping/model/AbstractPersistentProperty/AbstractPersistentProperty(java.lang.reflect.Field,java.beans.PropertyDescriptor,org.springframework.data.mapping.PersistentEntity,org.springframework.data.mapping.model.SimpleTypeHolder)|",
+    "called": "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/lang/reflect/Field/getName()|",
+      "|java+method:///org/springframework/data/mapping/model/AbstractPersistentProperty/createAssociation()|",
+      "|java+method:///org/springframework/data/mapping/PersistentEntity/getTypeInformation()|",
+      "|java+method:///java/lang/reflect/Field/getType()|",
+      "|java+method:///org/springframework/data/util/TypeInformation/getProperty(java.lang.String)|",
+      "|java+method:///org/springframework/data/mapping/model/AbstractPersistentProperty/isAssociation()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/reflect/Field/getName()|",
+      "|java+method:///org/springframework/data/mapping/model/AbstractPersistentProperty/createAssociation()|",
+      "|java+method:///java/beans/PropertyDescriptor/getName()|",
+      "|java+method:///org/springframework/data/mapping/PersistentEntity/getTypeInformation()|",
+      "|java+method:///java/beans/PropertyDescriptor/getPropertyType()|",
+      "|java+method:///java/lang/reflect/Field/getType()|",
+      "|java+method:///org/springframework/data/util/TypeInformation/getProperty(java.lang.String)|",
+      "|java+method:///org/springframework/data/mapping/model/AbstractPersistentProperty/isAssociation()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.2.9.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-commons:1.7.3.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-commons:1.8.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/web/PageableHandlerMethodArgumentResolver/getDefaultFromAnnotationOrFallback(org.springframework.core.MethodParameter)|",
+    "called": "|java+method:///org/springframework/core/MethodParameter/hasParameterAnnotation(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/data/domain/PageRequest/PageRequest(int,int,org.springframework.data.domain.Sort)|",
+      "|java+method:///org/springframework/data/web/PageableArgumentResolver/getDefaultPageRequestFrom(org.springframework.data.web.PageableDefaults)|",
+      "|java+method:///org/springframework/data/domain/Pageable/getPageSize()|",
+      "|java+method:///org/springframework/data/domain/Pageable/getPageNumber()|",
+      "|java+method:///org/springframework/core/MethodParameter/getParameterAnnotation(java.lang.Class)|",
+      "|java+method:///org/springframework/data/domain/Pageable/getSort()|",
+      "|java+method:///org/springframework/data/web/PageableHandlerMethodArgumentResolver/getDefaultPageRequestFrom(org.springframework.core.MethodParameter)|",
+      "|java+method:///org/springframework/core/MethodParameter/hasParameterAnnotation(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/data/web/PageableHandlerMethodArgumentResolver/getDefaultPageRequestFrom(org.springframework.core.MethodParameter)|",
+      "|java+method:///org/springframework/core/MethodParameter/hasParameterAnnotation(java.lang.Class)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.2.9.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-commons:1.7.3.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-commons:1.8.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/repository/core/support/TransactionalRepositoryProxyPostProcessor$AbstractFallbackTransactionAttributeSource/computeTransactionAttribute(java.lang.reflect.Method,java.lang.Class)|",
+    "called": "|java+method:///org/springframework/util/ClassUtils/getUserClass(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/springframework/core/BridgeMethodResolver/findBridgedMethod(java.lang.reflect.Method)|",
+      "|java+method:///org/springframework/data/repository/core/support/TransactionalRepositoryProxyPostProcessor$AbstractFallbackTransactionAttributeSource/allowPublicMethodsOnly()|",
+      "|java+method:///org/springframework/data/repository/core/support/TransactionalRepositoryProxyPostProcessor$AbstractFallbackTransactionAttributeSource/findTransactionAttribute(java.lang.reflect.Method)|",
+      "|java+method:///java/lang/reflect/Method/getModifiers()|",
+      "|java+method:///org/springframework/data/repository/core/support/TransactionalRepositoryProxyPostProcessor$AbstractFallbackTransactionAttributeSource/findTransactionAttribute(java.lang.Class)|",
+      "|java+method:///java/lang/reflect/Modifier/isPublic(int)|",
+      "|java+method:///org/springframework/util/ClassUtils/getMostSpecificMethod(java.lang.reflect.Method,java.lang.Class)|",
+      "|java+method:///java/lang/reflect/Method/getDeclaringClass()|",
+      "|java+method:///org/springframework/util/ClassUtils/getUserClass(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/core/BridgeMethodResolver/findBridgedMethod(java.lang.reflect.Method)|",
+      "|java+method:///org/springframework/data/repository/core/support/TransactionalRepositoryProxyPostProcessor$AbstractFallbackTransactionAttributeSource/allowPublicMethodsOnly()|",
+      "|java+method:///org/springframework/data/repository/core/support/TransactionalRepositoryProxyPostProcessor$AbstractFallbackTransactionAttributeSource/findTransactionAttribute(java.lang.reflect.Method)|",
+      "|java+method:///java/lang/reflect/Method/getModifiers()|",
+      "|java+method:///java/lang/reflect/Method/equals(java.lang.Object)|",
+      "|java+method:///org/springframework/data/repository/core/support/TransactionalRepositoryProxyPostProcessor$AbstractFallbackTransactionAttributeSource/findTransactionAttribute(java.lang.Class)|",
+      "|java+method:///java/lang/reflect/Modifier/isPublic(int)|",
+      "|java+method:///org/springframework/util/ClassUtils/getMostSpecificMethod(java.lang.reflect.Method,java.lang.Class)|",
+      "|java+method:///java/lang/reflect/Method/getDeclaringClass()|",
+      "|java+method:///org/springframework/data/repository/core/RepositoryInformation/getTargetClassMethod(java.lang.reflect.Method)|",
+      "|java+method:///org/springframework/util/ClassUtils/getUserClass(java.lang.Class)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.2.9.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-commons:1.7.3.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-commons:1.8.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/util/TypeVariableTypeInformation/equals(java.lang.Object)|",
+    "called": "|java+method:///org/springframework/util/ObjectUtils/nullSafeEquals(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///org/springframework/data/util/TypeVariableTypeInformation/getType()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/util/ObjectUtils/nullSafeEquals(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/springframework/data/util/ParentTypeAwareTypeInformation/equals(java.lang.Object)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.2.9.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-commons:1.7.3.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-commons:1.8.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/repository/config/RepositoryConfigurationDelegate/registerRepositoriesIn(org.springframework.beans.factory.support.BeanDefinitionRegistry,org.springframework.data.repository.config.RepositoryConfigurationExtension)|",
+    "called": "|java+constructor:///org/springframework/beans/factory/parsing/BeanComponentDefinition/BeanComponentDefinition(org.springframework.beans.factory.config.BeanDefinition,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///org/springframework/beans/factory/parsing/BeanComponentDefinition/BeanComponentDefinition(org.springframework.beans.factory.config.BeanDefinition,java.lang.String)|",
+      "|java+method:///org/springframework/beans/factory/support/BeanDefinitionBuilder/getBeanDefinition()|",
+      "|java+method:///org/springframework/beans/factory/support/BeanDefinitionRegistry/registerBeanDefinition(java.lang.String,org.springframework.beans.factory.config.BeanDefinition)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/springframework/data/repository/config/RepositoryConfigurationExtension/postProcess(org.springframework.beans.factory.support.BeanDefinitionBuilder,org.springframework.data.repository.config.XmlRepositoryConfigurationSource)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/beans/factory/support/BeanNameGenerator/generateBeanName(org.springframework.beans.factory.config.BeanDefinition,org.springframework.beans.factory.support.BeanDefinitionRegistry)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/springframework/data/repository/config/RepositoryConfigurationExtension/getRepositoryConfigurations(org.springframework.data.repository.config.RepositoryConfigurationSource,org.springframework.core.io.ResourceLoader)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///org/springframework/data/repository/config/RepositoryConfigurationExtension/getRepositoryFactoryClassName()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/springframework/data/repository/config/RepositoryBeanDefinitionBuilder/RepositoryBeanDefinitionBuilder(org.springframework.beans.factory.support.BeanDefinitionRegistry,org.springframework.data.repository.config.RepositoryConfigurationExtension,org.springframework.core.io.ResourceLoader,org.springframework.core.env.Environment)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/springframework/data/repository/config/RepositoryConfigurationExtension/registerBeansForRoot(org.springframework.beans.factory.support.BeanDefinitionRegistry,org.springframework.data.repository.config.RepositoryConfigurationSource)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/springframework/data/repository/config/RepositoryConfigurationExtension/postProcess(org.springframework.beans.factory.support.BeanDefinitionBuilder,org.springframework.data.repository.config.AnnotationRepositoryConfigurationSource)|",
+      "|java+method:///org/springframework/data/repository/config/RepositoryConfiguration/getRepositoryInterface()|",
+      "|java+method:///org/springframework/data/repository/config/RepositoryBeanDefinitionBuilder/build(org.springframework.data.repository.config.RepositoryConfiguration)|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///org/springframework/beans/factory/parsing/BeanComponentDefinition/BeanComponentDefinition(org.springframework.beans.factory.config.BeanDefinition,java.lang.String)|",
+      "|java+method:///org/springframework/beans/factory/support/BeanDefinitionBuilder/getBeanDefinition()|",
+      "|java+method:///org/springframework/beans/factory/support/BeanDefinitionRegistry/registerBeanDefinition(java.lang.String,org.springframework.beans.factory.config.BeanDefinition)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/springframework/data/repository/config/RepositoryConfigurationExtension/postProcess(org.springframework.beans.factory.support.BeanDefinitionBuilder,org.springframework.data.repository.config.XmlRepositoryConfigurationSource)|",
+      "|java+method:///org/springframework/beans/factory/support/BeanNameGenerator/generateBeanName(org.springframework.beans.factory.config.BeanDefinition,org.springframework.beans.factory.support.BeanDefinitionRegistry)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/springframework/data/repository/config/RepositoryConfigurationExtension/getRepositoryConfigurations(org.springframework.data.repository.config.RepositoryConfigurationSource,org.springframework.core.io.ResourceLoader)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///org/springframework/data/repository/config/RepositoryConfigurationExtension/getRepositoryFactoryClassName()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/springframework/data/repository/config/RepositoryBeanDefinitionBuilder/RepositoryBeanDefinitionBuilder(org.springframework.beans.factory.support.BeanDefinitionRegistry,org.springframework.data.repository.config.RepositoryConfigurationExtension,org.springframework.core.io.ResourceLoader,org.springframework.core.env.Environment)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/data/repository/config/RepositoryConfigurationExtension/postProcess(org.springframework.beans.factory.support.BeanDefinitionBuilder,org.springframework.data.repository.config.RepositoryConfigurationSource)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/springframework/data/repository/config/RepositoryConfigurationExtension/registerBeansForRoot(org.springframework.beans.factory.support.BeanDefinitionRegistry,org.springframework.data.repository.config.RepositoryConfigurationSource)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/springframework/data/repository/config/RepositoryConfigurationExtension/postProcess(org.springframework.beans.factory.support.BeanDefinitionBuilder,org.springframework.data.repository.config.AnnotationRepositoryConfigurationSource)|",
+      "|java+method:///org/springframework/data/repository/config/RepositoryConfiguration/getRepositoryInterface()|",
+      "|java+method:///org/springframework/data/repository/config/RepositoryBeanDefinitionBuilder/build(org.springframework.data.repository.config.RepositoryConfiguration)|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|"
+    ],
+    "affectedLib": "org.springframework:spring-beans:3.2.9.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-commons:1.7.3.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-commons:1.8.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/web/PagedResourcesAssembler/addPaginationLinks(org.springframework.hateoas.PagedResources,org.springframework.data.domain.Page,java.lang.String)|",
+    "called": "|java+constructor:///org/springframework/hateoas/Link/Link(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/springframework/data/web/PagedResourcesAssembler/foo(org.springframework.hateoas.PagedResources,org.springframework.data.domain.Pageable,java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/springframework/hateoas/Link/Link(java.lang.String)|",
+      "|java+method:///org/springframework/data/domain/Page/previousPageable()|",
+      "|java+method:///org/springframework/data/web/PagedResourcesAssembler/appendPaginationParameterTemplates(org.springframework.hateoas.Link)|",
+      "|java+method:///org/springframework/data/domain/Page/hasNextPage()|",
+      "|java+method:///org/springframework/hateoas/PagedResources/add(org.springframework.hateoas.Link)|",
+      "|java+method:///org/springframework/data/domain/Page/nextPageable()|",
+      "|java+method:///org/springframework/data/domain/Page/hasPreviousPage()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/hateoas/PagedResources/add(org.springframework.hateoas.Link)|",
+      "|java+method:///org/springframework/data/web/PagedResourcesAssembler/foo(org.springframework.hateoas.PagedResources,org.springframework.data.domain.Pageable,java.lang.String,java.lang.String)|",
+      "|java+method:///org/springframework/data/domain/Page/nextPageable()|",
+      "|java+constructor:///org/springframework/hateoas/Link/Link(java.lang.String)|",
+      "|java+method:///org/springframework/data/domain/Page/previousPageable()|",
+      "|java+method:///org/springframework/data/domain/Page/hasNext()|",
+      "|java+method:///org/springframework/data/domain/Page/hasPrevious()|",
+      "|java+method:///org/springframework/data/web/PagedResourcesAssembler/appendPaginationParameterTemplates(org.springframework.hateoas.Link)|"
+    ],
+    "affectedLib": "org.springframework.hateoas:spring-hateoas:0.12.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-commons:1.7.3.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-commons:1.8.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/web/HateoasSortHandlerMethodArgumentResolver/enhance(org.springframework.web.util.UriComponentsBuilder,org.springframework.core.MethodParameter,java.lang.Object)|",
+    "called": "|java+method:///org/springframework/web/util/UriComponentsBuilder/queryParam(java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/replaceQueryParam(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/springframework/data/web/HateoasSortHandlerMethodArgumentResolver/legacyFoldExpressions(org.springframework.data.domain.Sort)|",
+      "|java+method:///org/springframework/data/web/HateoasSortHandlerMethodArgumentResolver/foldIntoExpressions(org.springframework.data.domain.Sort)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/queryParam(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/springframework/data/web/HateoasSortHandlerMethodArgumentResolver/getLegacyDirectionParameter(org.springframework.core.MethodParameter)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/springframework/util/Assert/isTrue(boolean,java.lang.String)|",
+      "|java+method:///org/springframework/data/web/HateoasSortHandlerMethodArgumentResolver/getSortParameter(org.springframework.core.MethodParameter)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/util/List/get(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/replaceQueryParam(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/springframework/data/web/HateoasSortHandlerMethodArgumentResolver/foldIntoExpressions(org.springframework.data.domain.Sort)|",
+      "|java+method:///org/springframework/data/web/HateoasSortHandlerMethodArgumentResolver/getSortParameter(org.springframework.core.MethodParameter)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/queryParam(java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "org.springframework:spring-web:3.2.9.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-commons:1.7.3.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-commons:1.8.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/web/PagedResourcesAssemblerArgumentResolver/resolveBaseUri(org.springframework.core.MethodParameter)|",
+    "called": "|java+method:///org/springframework/web/util/UriComponentsBuilder/build()|",
+    "v1Body": [
+      "|java+method:///org/springframework/core/MethodParameter/getMethod()|",
+      "|java+method:///org/springframework/hateoas/Link/getHref()|",
+      "|java+method:///org/springframework/core/MethodParameter/getDeclaringClass()|",
+      "|java+method:///org/springframework/hateoas/LinkBuilder/withSelfRel()|",
+      "|java+method:///org/springframework/hateoas/MethodLinkBuilderFactory/linkTo(java.lang.Class,java.lang.reflect.Method,java.lang.Object%5B%5D)|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/fromUriString(java.lang.String)|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/build()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/core/MethodParameter/getMethod()|",
+      "|java+method:///org/springframework/hateoas/Link/getHref()|",
+      "|java+method:///org/springframework/hateoas/LinkBuilder/withSelfRel()|",
+      "|java+method:///org/springframework/hateoas/MethodLinkBuilderFactory/linkTo(java.lang.reflect.Method,java.lang.Object%5B%5D)|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/fromUriString(java.lang.String)|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/build()|"
+    ],
+    "affectedLib": "org.springframework:spring-web:3.2.9.RELEASE",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "coordinatesV1": "io.micrometer:micrometer-registry-datadog:1.0.0-rc.6",
+    "coordinatesV2": "io.micrometer:micrometer-registry-datadog:1.0.0",
+    "caller": "|java+method:///io/micrometer/datadog/DatadogMetricMetadata/editMetadataBody()|",
+    "called": "|java+method:///org/apache/commons/text/StringEscapeUtils/escapeJson(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///io/micrometer/core/instrument/Meter$Id/getDescription()|",
+      "|java+method:///io/micrometer/core/instrument/Meter$Id/getBaseUnit()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/util/Set/contains(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/micrometer/core/instrument/Meter$Id/getDescription()|",
+      "|java+method:///io/micrometer/core/instrument/Meter$Id/getBaseUnit()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/Set/contains(java.lang.Object)|",
+      "|java+method:///org/apache/commons/text/StringEscapeUtils/escapeJson(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-text:1.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.micrometer:micrometer-registry-datadog:1.0.0-rc.6",
+    "coordinatesV2": "io.micrometer:micrometer-registry-datadog:1.0.0",
+    "caller": "|java+method:///io/micrometer/datadog/DatadogMeterRegistry/writeTimer(io.micrometer.core.instrument.Timer,java.util.Map)|",
+    "called": "|java+method:///io/micrometer/core/instrument/distribution/HistogramSnapshot/mean(java.util.concurrent.TimeUnit)|",
+    "v1Body": [
+      "|java+method:///io/micrometer/datadog/DatadogMeterRegistry/writeMetric(io.micrometer.core.instrument.Meter$Id,java.lang.String,long,double)|",
+      "|java+method:///io/micrometer/core/instrument/Timer/getId()|",
+      "|java+method:///io/micrometer/datadog/DatadogMeterRegistry/addToMetadataList(java.util.Map,io.micrometer.core.instrument.Meter$Id,java.lang.String,io.micrometer.core.instrument.Statistic,java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///io/micrometer/datadog/DatadogMeterRegistry/getBaseTimeUnit()|",
+      "|java+method:///io/micrometer/core/instrument/Timer/takeSnapshot(boolean)|",
+      "|java+method:///java/util/stream/Stream/builder()|",
+      "|java+method:///io/micrometer/core/instrument/ValueAtPercentile/value(java.util.concurrent.TimeUnit)|",
+      "|java+method:///io/micrometer/core/instrument/HistogramSnapshot/percentileValues()|",
+      "|java+method:///java/util/stream/Stream$Builder/add(java.lang.Object)|",
+      "|java+method:///java/util/stream/Stream$Builder/build()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///io/micrometer/core/instrument/util/DoubleFormat/toString(double)|",
+      "|java+method:///io/micrometer/core/instrument/HistogramSnapshot/count()|",
+      "|java+method:///io/micrometer/core/instrument/Clock/wallTime()|",
+      "|java+method:///io/micrometer/core/instrument/HistogramSnapshot/total(java.util.concurrent.TimeUnit)|",
+      "|java+method:///io/micrometer/core/instrument/ValueAtPercentile/percentile()|",
+      "|java+method:///io/micrometer/core/instrument/HistogramSnapshot/max(java.util.concurrent.TimeUnit)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///io/micrometer/core/instrument/HistogramSnapshot/mean(java.util.concurrent.TimeUnit)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/micrometer/datadog/DatadogMeterRegistry/writeMetric(io.micrometer.core.instrument.Meter$Id,java.lang.String,long,double)|",
+      "|java+method:///io/micrometer/core/instrument/distribution/HistogramSnapshot/mean(java.util.concurrent.TimeUnit)|",
+      "|java+method:///io/micrometer/core/instrument/Timer/getId()|",
+      "|java+method:///io/micrometer/core/instrument/Clock/wallTime()|",
+      "|java+method:///io/micrometer/core/instrument/distribution/HistogramSnapshot/count()|",
+      "|java+method:///io/micrometer/datadog/DatadogMeterRegistry/addToMetadataList(java.util.Map,io.micrometer.core.instrument.Meter$Id,java.lang.String,io.micrometer.core.instrument.Statistic,java.lang.String)|",
+      "|java+method:///io/micrometer/datadog/DatadogMeterRegistry/getBaseTimeUnit()|",
+      "|java+method:///io/micrometer/core/instrument/Timer/takeSnapshot(boolean)|",
+      "|java+method:///java/util/stream/Stream/builder()|",
+      "|java+method:///java/util/stream/Stream$Builder/add(java.lang.Object)|",
+      "|java+method:///java/util/stream/Stream$Builder/build()|",
+      "|java+method:///io/micrometer/core/instrument/distribution/HistogramSnapshot/max(java.util.concurrent.TimeUnit)|",
+      "|java+method:///io/micrometer/core/instrument/distribution/HistogramSnapshot/total(java.util.concurrent.TimeUnit)|"
+    ],
+    "affectedLib": "io.micrometer:micrometer-core:1.0.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.micrometer:micrometer-registry-datadog:1.0.0-rc.6",
+    "coordinatesV2": "io.micrometer:micrometer-registry-datadog:1.0.0",
+    "caller": "|java+method:///io/micrometer/datadog/DatadogConfig/apiKey()|",
+    "called": "|java+constructor:///io/micrometer/core/instrument/config/MissingRequiredConfigurationException/MissingRequiredConfigurationException(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///io/micrometer/datadog/DatadogConfig/prefix()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///io/micrometer/datadog/DatadogConfig/get(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/micrometer/datadog/DatadogConfig/prefix()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///io/micrometer/core/instrument/config/MissingRequiredConfigurationException/MissingRequiredConfigurationException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///io/micrometer/datadog/DatadogConfig/get(java.lang.String)|"
+    ],
+    "affectedLib": "io.micrometer:micrometer-core:1.0.0",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,87 @@
+[
+  {
+    "coordinatesV1": "io.bigio:bigio-agent:1.0.2",
+    "coordinatesV2": "io.bigio:bigio-agent:1.1",
+    "caller": "|java+constructor:///io/bigio/agent/MessageTransformer/MessageTransformer()|",
+    "called": "|java+method:///javassist/ClassPool/getDefault()|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///javassist/ClassPool/getDefault()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.javassist:javassist:3.18.2-GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.bigio:bigio-agent:1.0.2",
+    "coordinatesV2": "io.bigio:bigio-agent:1.1",
+    "caller": "|java+method:///io/bigio/agent/MessageTransformer/transform(java.lang.ClassLoader,java.lang.String,java.lang.Class,java.security.ProtectionDomain,byte%5B%5D)|",
+    "called": "|java+method:///javassist/ClassPool/makeClass(java.io.InputStream)|",
+    "v1Body": [
+      "|java+method:///org/objectweb/asm/ClassReader/accept(org.objectweb.asm.ClassVisitor,int)|",
+      "|java+method:///io/bigio/agent/MessageAdapter/wasMessage()|",
+      "|java+constructor:///org/objectweb/asm/ClassReader/ClassReader(byte%5B%5D)|",
+      "|java+constructor:///io/bigio/agent/MessageAdapter/MessageAdapter(org.objectweb.asm.ClassVisitor)|",
+      "|java+method:///org/objectweb/asm/ClassWriter/toByteArray()|",
+      "|java+constructor:///org/objectweb/asm/ClassWriter/ClassWriter(org.objectweb.asm.ClassReader,int)|",
+      "|java+method:///io/bigio/agent/MessageAdapter/wasEnum()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/objectweb/asm/ClassReader/accept(org.objectweb.asm.ClassVisitor,int)|",
+      "|java+constructor:///org/objectweb/asm/ClassReader/ClassReader(byte%5B%5D)|",
+      "|java+constructor:///java/io/ByteArrayInputStream/ByteArrayInputStream(byte%5B%5D)|",
+      "|java+method:///io/bigio/agent/SignatureCollector/getSignatures()|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///javassist/CtClass/toBytecode()|",
+      "|java+constructor:///org/objectweb/asm/ClassWriter/ClassWriter(org.objectweb.asm.ClassReader,int)|",
+      "|java+method:///io/bigio/agent/AnnotationChecker/hasAnnotation()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///io/bigio/agent/SignatureCollector/SignatureCollector(org.objectweb.asm.ClassVisitor)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///javassist/ClassPool/makeClass(java.io.InputStream)|",
+      "|java+constructor:///io/bigio/agent/AnnotationChecker/AnnotationChecker(org.objectweb.asm.ClassVisitor)|",
+      "|java+method:///io/bigio/agent/JATransformer/transform(javassist.CtClass,java.util.Map,javassist.ClassPool)|"
+    ],
+    "affectedLib": "org.javassist:javassist:3.18.2-GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.bigio:bigio-agent:1.0.2",
+    "coordinatesV2": "io.bigio:bigio-agent:1.1",
+    "caller": "|java+method:///io/bigio/agent/MessageTransformer/transform(java.lang.ClassLoader,java.lang.String,java.lang.Class,java.security.ProtectionDomain,byte%5B%5D)|",
+    "called": "|java+constructor:///org/objectweb/asm/ClassWriter/ClassWriter(org.objectweb.asm.ClassReader,int)|",
+    "v1Body": [
+      "|java+method:///org/objectweb/asm/ClassReader/accept(org.objectweb.asm.ClassVisitor,int)|",
+      "|java+method:///io/bigio/agent/MessageAdapter/wasMessage()|",
+      "|java+constructor:///org/objectweb/asm/ClassReader/ClassReader(byte%5B%5D)|",
+      "|java+constructor:///io/bigio/agent/MessageAdapter/MessageAdapter(org.objectweb.asm.ClassVisitor)|",
+      "|java+method:///org/objectweb/asm/ClassWriter/toByteArray()|",
+      "|java+constructor:///org/objectweb/asm/ClassWriter/ClassWriter(org.objectweb.asm.ClassReader,int)|",
+      "|java+method:///io/bigio/agent/MessageAdapter/wasEnum()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/objectweb/asm/ClassReader/accept(org.objectweb.asm.ClassVisitor,int)|",
+      "|java+constructor:///org/objectweb/asm/ClassReader/ClassReader(byte%5B%5D)|",
+      "|java+constructor:///java/io/ByteArrayInputStream/ByteArrayInputStream(byte%5B%5D)|",
+      "|java+method:///io/bigio/agent/SignatureCollector/getSignatures()|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///javassist/CtClass/toBytecode()|",
+      "|java+constructor:///org/objectweb/asm/ClassWriter/ClassWriter(org.objectweb.asm.ClassReader,int)|",
+      "|java+method:///io/bigio/agent/AnnotationChecker/hasAnnotation()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///io/bigio/agent/SignatureCollector/SignatureCollector(org.objectweb.asm.ClassVisitor)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///javassist/ClassPool/makeClass(java.io.InputStream)|",
+      "|java+constructor:///io/bigio/agent/AnnotationChecker/AnnotationChecker(org.objectweb.asm.ClassVisitor)|",
+      "|java+method:///io/bigio/agent/JATransformer/transform(javassist.CtClass,java.util.Map,javassist.ClassPool)|"
+    ],
+    "affectedLib": "org.ow2.asm:asm:5.0.3",
+    "change": "UPDATED"
+  }
+]

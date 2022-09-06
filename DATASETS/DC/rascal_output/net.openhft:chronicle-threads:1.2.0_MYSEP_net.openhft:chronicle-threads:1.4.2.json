@@ -1,0 +1,259 @@
+[
+  {
+    "coordinatesV1": "net.openhft:chronicle-threads:1.2.0",
+    "coordinatesV2": "net.openhft:chronicle-threads:1.4.2",
+    "caller": "|java+method:///net/openhft/chronicle/threads/VanillaEventLoop/run()|",
+    "called": "|java+method:///net/openhft/affinity/AffinityLock/release()|",
+    "v1Body": [
+      "|java+method:///net/openhft/chronicle/threads/VanillaEventLoop/runTimerHandlers()|",
+      "|java+method:///net/openhft/chronicle/threads/Pauser/reset()|",
+      "|java+method:///net/openhft/chronicle/core/util/Time/currentTimeMillis()|",
+      "|java+method:///net/openhft/chronicle/threads/Pauser/pause()|",
+      "|java+method:///net/openhft/chronicle/threads/VanillaEventLoop/runAllLowHandler()|",
+      "|java+method:///net/openhft/chronicle/threads/VanillaEventLoop/runOneTenthLowHandler(int)|",
+      "|java+method:///net/openhft/affinity/AffinityLock/acquireLock()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicBoolean/get()|",
+      "|java+method:///net/openhft/affinity/AffinityLock/release()|",
+      "|java+method:///net/openhft/chronicle/threads/VanillaEventLoop/acceptNewHandlers()|",
+      "|java+method:///net/openhft/chronicle/threads/VanillaEventLoop/runAllHighHandlers()|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/lang/Thread/currentThread()|",
+      "|java+method:///net/openhft/chronicle/threads/VanillaEventLoop/runDaemonHandlers()|",
+      "|java+method:///java/util/function/Consumer/accept(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///net/openhft/chronicle/threads/VanillaEventLoop/runTimerHandlers()|",
+      "|java+method:///net/openhft/chronicle/threads/Pauser/reset()|",
+      "|java+method:///net/openhft/chronicle/core/util/Time/currentTimeMillis()|",
+      "|java+method:///net/openhft/chronicle/threads/Pauser/pause()|",
+      "|java+method:///net/openhft/chronicle/threads/VanillaEventLoop/dumpRunningHandlers()|",
+      "|java+method:///net/openhft/chronicle/threads/VanillaEventLoop/closeAllHandlers()|",
+      "|java+method:///net/openhft/affinity/AffinityLock/acquireLock()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicBoolean/get()|",
+      "|java+method:///net/openhft/chronicle/threads/VanillaEventLoop/runAllMediumHandler()|",
+      "|java+method:///net/openhft/affinity/AffinityLock/release()|",
+      "|java+method:///net/openhft/chronicle/threads/VanillaEventLoop/acceptNewHandlers()|",
+      "|java+method:///net/openhft/chronicle/threads/VanillaEventLoop/runAllHighHandlers()|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/lang/Thread/currentThread()|",
+      "|java+method:///net/openhft/chronicle/threads/VanillaEventLoop/runDaemonHandlers()|",
+      "|java+method:///java/util/function/Consumer/accept(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String)|",
+      "|java+method:///net/openhft/chronicle/threads/VanillaEventLoop/runOneTenthLowHandler(int)|"
+    ],
+    "affectedLib": "net.openhft:affinity:3.0.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.openhft:chronicle-threads:1.2.0",
+    "coordinatesV2": "net.openhft:chronicle-threads:1.4.2",
+    "caller": "|java+method:///net/openhft/chronicle/threads/PauserMonitor/action()|",
+    "called": "|java+constructor:///net/openhft/chronicle/core/threads/InvalidEventHandlerException/InvalidEventHandlerException()|",
+    "v1Body": [
+      "|java+method:///java/lang/ref/WeakReference/get()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///net/openhft/chronicle/threads/Pauser/countPaused()|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+constructor:///net/openhft/chronicle/threads/api/InvalidEventHandlerException/InvalidEventHandlerException()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///java/lang/StringBuilder/append(double)|",
+      "|java+method:///java/lang/Math/abs(double)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///net/openhft/chronicle/threads/Pauser/timePaused()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/ref/WeakReference/get()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///net/openhft/chronicle/threads/Pauser/countPaused()|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///java/lang/StringBuilder/append(double)|",
+      "|java+method:///java/lang/Math/abs(double)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///net/openhft/chronicle/core/threads/InvalidEventHandlerException/InvalidEventHandlerException()|",
+      "|java+method:///net/openhft/chronicle/threads/Pauser/timePaused()|"
+    ],
+    "affectedLib": "net.openhft:chronicle-core:1.4.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.openhft:chronicle-threads:1.2.0",
+    "coordinatesV2": "net.openhft:chronicle-threads:1.4.2",
+    "caller": "|java+method:///net/openhft/chronicle/threads/BlockingEventLoop/close()|",
+    "called": "|java+method:///net/openhft/chronicle/core/io/Closeable/closeQuietly(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///net/openhft/chronicle/core/io/Closeable/closeQuietly(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/concurrent/ExecutorService/shutdownNow()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/Thread/getStackTrace()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Thread/isAlive()|",
+      "|java+method:///java/lang/Thread/currentThread()|",
+      "|java+method:///java/lang/Thread/interrupt()|",
+      "|java+method:///java/util/concurrent/ExecutorService/shutdown()|",
+      "|java+method:///java/util/concurrent/ExecutorService/awaitTermination(long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///java/lang/Thread/join(long)|",
+      "|java+method:///net/openhft/chronicle/core/Jvm/trimStackTrace(java.lang.StringBuilder,java.lang.StackTraceElement%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///net/openhft/chronicle/core/io/Closeable/closeQuietly(java.lang.Object)|",
+      "|java+method:///java/util/concurrent/ExecutorService/shutdownNow()|",
+      "|java+method:///java/util/concurrent/ExecutorService/shutdown()|",
+      "|java+method:///java/util/concurrent/ExecutorService/awaitTermination(long,java.util.concurrent.TimeUnit)|"
+    ],
+    "affectedLib": "net.openhft:chronicle-core:1.4.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.openhft:chronicle-threads:1.2.0",
+    "coordinatesV2": "net.openhft:chronicle-threads:1.4.2",
+    "caller": "|java+method:///net/openhft/chronicle/threads/VanillaEventLoop/runDaemonHandlers()|",
+    "called": "|java+method:///net/openhft/chronicle/core/io/Closeable/closeQuietly(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/util/List/remove(int)|",
+      "|java+method:///net/openhft/chronicle/core/io/Closeable/closeQuietly(java.lang.Object)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///java/util/function/Consumer/accept(java.lang.Object)|",
+      "|java+method:///net/openhft/chronicle/threads/api/EventHandler/action()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/List/remove(int)|",
+      "|java+method:///net/openhft/chronicle/core/io/Closeable/closeQuietly(java.lang.Object)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/function/Consumer/accept(java.lang.Object)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///net/openhft/chronicle/core/threads/EventHandler/action()|"
+    ],
+    "affectedLib": "net.openhft:chronicle-core:1.4.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.openhft:chronicle-threads:1.2.0",
+    "coordinatesV2": "net.openhft:chronicle-threads:1.4.2",
+    "caller": "|java+method:///net/openhft/chronicle/threads/VanillaEventLoop/runTimerHandlers()|",
+    "called": "|java+method:///net/openhft/chronicle/core/io/Closeable/closeQuietly(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/util/List/remove(int)|",
+      "|java+method:///net/openhft/chronicle/core/io/Closeable/closeQuietly(java.lang.Object)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///java/util/function/Consumer/accept(java.lang.Object)|",
+      "|java+method:///net/openhft/chronicle/threads/api/EventHandler/action()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/List/remove(int)|",
+      "|java+method:///net/openhft/chronicle/core/io/Closeable/closeQuietly(java.lang.Object)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/function/Consumer/accept(java.lang.Object)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///net/openhft/chronicle/core/threads/EventHandler/action()|"
+    ],
+    "affectedLib": "net.openhft:chronicle-core:1.4.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.openhft:chronicle-threads:1.2.0",
+    "coordinatesV2": "net.openhft:chronicle-threads:1.4.2",
+    "caller": "|java+method:///net/openhft/chronicle/threads/VanillaEventLoop/runAllHighHandlers()|",
+    "called": "|java+method:///net/openhft/chronicle/core/io/Closeable/closeQuietly(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/util/List/remove(int)|",
+      "|java+method:///net/openhft/chronicle/core/io/Closeable/closeQuietly(java.lang.Object)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///java/util/function/Consumer/accept(java.lang.Object)|",
+      "|java+method:///net/openhft/chronicle/threads/api/EventHandler/action()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/List/remove(int)|",
+      "|java+method:///net/openhft/chronicle/core/io/Closeable/closeQuietly(java.lang.Object)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/function/Consumer/accept(java.lang.Object)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///net/openhft/chronicle/core/threads/EventHandler/action()|"
+    ],
+    "affectedLib": "net.openhft:chronicle-core:1.4.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.openhft:chronicle-threads:1.2.0",
+    "coordinatesV2": "net.openhft:chronicle-threads:1.4.2",
+    "caller": "|java+method:///net/openhft/chronicle/threads/VanillaEventLoop/runOneTenthLowHandler(int)|",
+    "called": "|java+method:///net/openhft/chronicle/core/io/Closeable/closeQuietly(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/util/List/remove(int)|",
+      "|java+method:///net/openhft/chronicle/core/io/Closeable/closeQuietly(java.lang.Object)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///java/util/function/Consumer/accept(java.lang.Object)|",
+      "|java+method:///net/openhft/chronicle/threads/api/EventHandler/action()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/List/remove(int)|",
+      "|java+method:///net/openhft/chronicle/core/io/Closeable/closeQuietly(java.lang.Object)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/function/Consumer/accept(java.lang.Object)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///net/openhft/chronicle/core/threads/EventHandler/action()|"
+    ],
+    "affectedLib": "net.openhft:chronicle-core:1.4.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.openhft:chronicle-threads:1.2.0",
+    "coordinatesV2": "net.openhft:chronicle-threads:1.4.2",
+    "caller": "|java+method:///net/openhft/chronicle/threads/EventGroup$LoopBlockMonitor/action()|",
+    "called": "|java+constructor:///net/openhft/chronicle/core/threads/InvalidEventHandlerException/InvalidEventHandlerException()|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///net/openhft/chronicle/core/util/Time/currentTimeMillis()|",
+      "|java+method:///net/openhft/chronicle/core/Jvm/isDebug()|",
+      "|java+method:///net/openhft/chronicle/threads/EventGroup/access$000()|",
+      "|java+method:///java/lang/Math/max(long,long)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+constructor:///net/openhft/chronicle/threads/api/InvalidEventHandlerException/InvalidEventHandlerException()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///net/openhft/chronicle/threads/VanillaEventLoop/isAlive()|",
+      "|java+method:///net/openhft/chronicle/threads/VanillaEventLoop/loopStartMS()|",
+      "|java+method:///net/openhft/chronicle/threads/VanillaEventLoop/dumpRunningState(java.lang.String,java.util.function.BooleanSupplier)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///net/openhft/chronicle/threads/VanillaEventLoop/name()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///net/openhft/chronicle/core/util/Time/currentTimeMillis()|",
+      "|java+method:///net/openhft/chronicle/core/Jvm/isDebug()|",
+      "|java+method:///net/openhft/chronicle/threads/EventGroup/access$000()|",
+      "|java+method:///java/lang/Math/max(long,long)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///net/openhft/chronicle/threads/VanillaEventLoop/isAlive()|",
+      "|java+method:///net/openhft/chronicle/threads/VanillaEventLoop/loopStartMS()|",
+      "|java+method:///net/openhft/chronicle/threads/VanillaEventLoop/dumpRunningState(java.lang.String,java.util.function.BooleanSupplier)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///net/openhft/chronicle/threads/VanillaEventLoop/name()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///net/openhft/chronicle/core/threads/InvalidEventHandlerException/InvalidEventHandlerException()|"
+    ],
+    "affectedLib": "net.openhft:chronicle-core:1.4.6",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,61 @@
+[
+  {
+    "coordinatesV1": "io.gravitee.gateway:gravitee-gateway-reactor:1.0.1",
+    "coordinatesV2": "io.gravitee.gateway:gravitee-gateway-reactor:1.4.0",
+    "caller": "|java+method:///io/gravitee/gateway/reactor/handler/ResponseTimeHandler/handle(io.gravitee.gateway.api.Response)|",
+    "called": "|java+method:///io/gravitee/common/http/HttpHeaders/contentType()|",
+    "v1Body": [
+      "|java+method:///io/gravitee/common/http/HttpHeaders/contentType()|",
+      "|java+method:///io/gravitee/gateway/api/Response/status()|",
+      "|java+method:///io/gravitee/reporter/api/http/RequestMetrics/setResponseContentType(java.lang.String)|",
+      "|java+method:///io/gravitee/gateway/api/Request/metrics()|",
+      "|java+method:///io/gravitee/common/http/HttpHeaders/contentLength()|",
+      "|java+method:///io/gravitee/gateway/api/Response/headers()|",
+      "|java+method:///io/gravitee/reporter/api/http/RequestMetrics/getApiResponseTimeMs()|",
+      "|java+method:///io/gravitee/reporter/api/http/RequestMetrics/setResponseContentLength(long)|",
+      "|java+method:///io/gravitee/gateway/api/handler/Handler/handle(java.lang.Object)|",
+      "|java+method:///io/gravitee/reporter/api/http/RequestMetrics/timestamp()|",
+      "|java+method:///io/gravitee/reporter/api/http/RequestMetrics/setProxyLatencyMs(long)|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///java/time/Instant/toEpochMilli()|",
+      "|java+method:///io/gravitee/reporter/api/http/RequestMetrics/setProxyResponseTimeMs(long)|",
+      "|java+method:///io/gravitee/reporter/api/http/RequestMetrics/setResponseHttpStatus(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/gravitee/common/http/HttpHeaders/contentType()|",
+      "|java+method:///io/gravitee/gateway/api/Response/status()|",
+      "|java+method:///io/gravitee/reporter/api/http/RequestMetrics/setResponseContentType(java.lang.String)|",
+      "|java+method:///io/gravitee/gateway/api/Request/metrics()|",
+      "|java+method:///io/gravitee/gateway/api/Request/headers()|",
+      "|java+method:///io/gravitee/gateway/api/Response/headers()|",
+      "|java+method:///io/gravitee/reporter/api/http/RequestMetrics/getApiResponseTimeMs()|",
+      "|java+method:///io/gravitee/reporter/api/http/RequestMetrics/setRequestContentType(java.lang.String)|",
+      "|java+method:///io/gravitee/gateway/api/handler/Handler/handle(java.lang.Object)|",
+      "|java+method:///io/gravitee/reporter/api/http/RequestMetrics/timestamp()|",
+      "|java+method:///io/gravitee/reporter/api/http/RequestMetrics/setProxyLatencyMs(long)|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///java/time/Instant/toEpochMilli()|",
+      "|java+method:///io/gravitee/reporter/api/http/RequestMetrics/setProxyResponseTimeMs(long)|",
+      "|java+method:///io/gravitee/reporter/api/http/RequestMetrics/setResponseHttpStatus(int)|"
+    ],
+    "affectedLib": "io.gravitee.common:gravitee-common:1.2.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.gravitee.gateway:gravitee-gateway-reactor:1.0.1",
+    "coordinatesV2": "io.gravitee.gateway:gravitee-gateway-reactor:1.4.0",
+    "caller": "|java+constructor:///io/gravitee/gateway/reactor/handler/impl/DefaultReactorHandlerRegistry/DefaultReactorHandlerRegistry()|",
+    "called": "|java+constructor:///io/gravitee/common/spring/factory/SpringFactoriesLoader/SpringFactoriesLoader()|",
+    "v1Body": [
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+constructor:///io/gravitee/common/spring/factory/SpringFactoriesLoader/SpringFactoriesLoader()|"
+    ],
+    "affectedLib": "io.gravitee.common:gravitee-common:1.2.0",
+    "change": "UPDATED"
+  }
+]

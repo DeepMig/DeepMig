@@ -1,0 +1,200 @@
+[
+  {
+    "coordinatesV1": "org.bidib.jbidib:jbidibc-serial:1.7.0",
+    "coordinatesV2": "org.bidib.jbidib:jbidibc-serial:1.8.0",
+    "caller": "|java+method:///org/bidib/jbidibc/serial/Bidib/clearInputStream(gnu.io.SerialPort)|",
+    "called": "|java+method:///org/bidib/jbidibc/core/utils/ByteUtils/bytesToHex(byte%5B%5D,int)|",
+    "v1Body": [
+      "|java+method:///gnu/io/SerialPort/getInputStream()|",
+      "|java+method:///java/io/InputStream/available()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/io/InputStream/skip(long)|"
+    ],
+    "v2Body": [
+      "|java+method:///gnu/io/SerialPort/getInputStream()|",
+      "|java+method:///java/io/InputStream/available()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/io/InputStream/read(byte%5B%5D)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/bidib/jbidibc/core/utils/ByteUtils/bytesToHex(byte%5B%5D,int)|"
+    ],
+    "affectedLib": "org.bidib.jbidib:jbidibc:1.8.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.bidib.jbidib:jbidibc-serial:1.7.0",
+    "coordinatesV2": "org.bidib.jbidib:jbidibc-serial:1.8.0",
+    "caller": "|java+method:///org/bidib/jbidibc/serial/Bidib/send(byte%5B%5D)|",
+    "called": "|java+method:///org/bidib/jbidibc/core/utils/ByteUtils/bytesToHex(byte%5B%5D)|",
+    "v1Body": [
+      "|java+method:///gnu/io/SerialPort/getOutputStream()|",
+      "|java+method:///java/io/OutputStream/flush()|",
+      "|java+method:///java/util/concurrent/Semaphore/acquire()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/isInfoEnabled()|",
+      "|java+method:///java/io/OutputStream/write(byte%5B%5D)|",
+      "|java+method:///java/util/concurrent/Semaphore/release()|",
+      "|java+method:///org/bidib/jbidibc/core/utils/ByteUtils/bytesToHex(byte%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/concurrent/BlockingQueue/offer(java.lang.Object)|",
+      "|java+method:///org/bidib/jbidibc/core/utils/ByteUtils/bytesToHex(byte%5B%5D)|"
+    ],
+    "affectedLib": "org.bidib.jbidib:jbidibc:1.8.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.bidib.jbidib:jbidibc-serial:1.7.0",
+    "coordinatesV2": "org.bidib.jbidib:jbidibc-serial:1.8.0",
+    "caller": "|java+constructor:///org/bidib/jbidibc/serial/Bidib/Bidib()|",
+    "called": "|java+constructor:///org/bidib/jbidibc/core/AbstractBidib/AbstractBidib()|",
+    "v1Body": [
+      "|java+constructor:///java/util/concurrent/Semaphore/Semaphore(int)|",
+      "|java+constructor:///org/bidib/jbidibc/core/AbstractBidib/AbstractBidib()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/concurrent/LinkedBlockingQueue/LinkedBlockingQueue()|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicBoolean/AtomicBoolean()|",
+      "|java+constructor:///java/util/concurrent/Semaphore/Semaphore(int)|",
+      "|java+constructor:///org/bidib/jbidibc/core/AbstractBidib/AbstractBidib()|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicLong/AtomicLong()|"
+    ],
+    "affectedLib": "org.bidib.jbidib:jbidibc:1.8.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.bidib.jbidib:jbidibc-serial:1.7.0",
+    "coordinatesV2": "org.bidib.jbidib:jbidibc-serial:1.8.0",
+    "caller": "|java+constructor:///org/bidib/jbidibc/serial/SerialMessageReceiver/SerialMessageReceiver(org.bidib.jbidibc.core.node.NodeFactory)|",
+    "called": "|java+constructor:///org/bidib/jbidibc/core/MessageReceiver/MessageReceiver(org.bidib.jbidibc.core.node.NodeFactory)|",
+    "v1Body": [
+      "|java+constructor:///org/bidib/jbidibc/core/MessageReceiver/MessageReceiver(org.bidib.jbidibc.core.node.NodeFactory)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/io/ByteArrayOutputStream/ByteArrayOutputStream(int)|",
+      "|java+constructor:///org/bidib/jbidibc/core/MessageReceiver/MessageReceiver(org.bidib.jbidibc.core.node.NodeFactory)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.bidib.jbidib:jbidibc:1.8.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.bidib.jbidib:jbidibc-serial:1.7.0",
+    "coordinatesV2": "org.bidib.jbidib:jbidibc-serial:1.8.0",
+    "caller": "|java+method:///org/bidib/jbidibc/serial/Bidib/close()|",
+    "called": "|java+method:///org/bidib/jbidibc/core/node/NodeFactory/reset()|",
+    "v1Body": [
+      "|java+method:///gnu/io/SerialPort/close()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/bidib/jbidibc/serial/Bidib/getNodeFactory()|",
+      "|java+method:///org/bidib/jbidibc/core/node/NodeFactory/reset()|",
+      "|java+method:///org/bidib/jbidibc/serial/SerialMessageReceiver/clearMessageListeners()|",
+      "|java+method:///org/bidib/jbidibc/serial/SerialMessageReceiver/disable()|",
+      "|java+method:///org/bidib/jbidibc/serial/SerialMessageReceiver/clearNodeListeners()|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/bidib/jbidibc/serial/Bidib/getSerialMessageReceiver()|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///gnu/io/SerialPort/enableReceiveTimeout(int)|",
+      "|java+method:///org/bidib/jbidibc/serial/Bidib/getConnectionListener()|",
+      "|java+method:///org/bidib/jbidibc/core/ConnectionListener/closed(java.lang.String)|",
+      "|java+method:///org/bidib/jbidibc/serial/Bidib/getMessageReceiver()|",
+      "|java+method:///gnu/io/SerialPort/removeEventListener()|"
+    ],
+    "v2Body": [
+      "|java+method:///gnu/io/SerialPort/close()|",
+      "|java+method:///org/bidib/jbidibc/serial/Bidib/getNodeFactory()|",
+      "|java+method:///org/bidib/jbidibc/core/node/NodeFactory/reset()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/bidib/jbidibc/serial/SerialMessageReceiver/disable()|",
+      "|java+method:///org/bidib/jbidibc/serial/SerialMessageReceiver/clearNodeListeners()|",
+      "|java+method:///gnu/io/CommPortIdentifier/removePortOwnershipListener(gnu.io.CommPortOwnershipListener)|",
+      "|java+method:///java/io/OutputStream/close()|",
+      "|java+method:///gnu/io/SerialPort/getInputStream()|",
+      "|java+method:///org/bidib/jbidibc/serial/Bidib/getSerialMessageReceiver()|",
+      "|java+method:///org/bidib/jbidibc/core/exception/InvalidConfigurationException/getReason()|",
+      "|java+method:///gnu/io/SerialPort/getOutputStream()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/bidib/jbidibc/serial/Bidib/stopSendQueueWorker()|",
+      "|java+method:///org/bidib/jbidibc/serial/Bidib/getConnectionListener()|",
+      "|java+method:///org/bidib/jbidibc/core/ConnectionListener/closed(java.lang.String)|",
+      "|java+method:///java/io/InputStream/close()|",
+      "|java+method:///org/bidib/jbidibc/serial/SerialMessageReceiver/clearMessageListeners()|",
+      "|java+method:///org/bidib/jbidibc/serial/Bidib/getMessageReceiver()|",
+      "|java+method:///gnu/io/SerialPort/removeEventListener()|",
+      "|java+method:///org/bidib/jbidibc/serial/SerialMessageReceiver/purgeOutputStream()|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "org.bidib.jbidib:jbidibc:1.8.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.bidib.jbidib:jbidibc-serial:1.7.0",
+    "coordinatesV2": "org.bidib.jbidib:jbidibc-serial:1.8.0",
+    "caller": "|java+method:///org/bidib/jbidibc/serial/Bidib/open(java.lang.String,org.bidib.jbidibc.core.ConnectionListener,java.util.Set,java.util.Set,java.util.Set,org.bidib.jbidibc.core.helpers.Context)|",
+    "called": "|java+method:///org/bidib/jbidibc/core/utils/ByteUtils/magicToHex(int)|",
+    "v1Body": [
+      "|java+method:///org/bidib/jbidibc/serial/Bidib/internalOpen(gnu.io.CommPortIdentifier,int,org.bidib.jbidibc.core.helpers.Context)|",
+      "|java+method:///gnu/io/CommPortIdentifier/getPortIdentifier(java.lang.String)|",
+      "|java+method:///org/bidib/jbidibc/serial/Bidib/sendMagic()|",
+      "|java+constructor:///org/bidib/jbidibc/core/exception/PortNotOpenedException/PortNotOpenedException(java.lang.String,java.lang.String)|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+method:///org/bidib/jbidibc/core/utils/ByteUtils/magicToHex(int)|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+method:///java/io/File/getCanonicalPath()|",
+      "|java+constructor:///org/bidib/jbidibc/core/exception/PortNotFoundException/PortNotFoundException(java.lang.String)|",
+      "|java+method:///org/bidib/jbidibc/core/exception/ProtocolNoAnswerException/getMessage()|",
+      "|java+constructor:///org/bidib/jbidibc/core/exception/NoAnswerException/NoAnswerException(java.lang.String)|",
+      "|java+method:///java/util/concurrent/Semaphore/release()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/bidib/jbidibc/serial/Bidib/setConnectionListener(org.bidib.jbidibc.core.ConnectionListener)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///java/util/concurrent/Semaphore/acquire()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///org/bidib/jbidibc/serial/Bidib/registerListeners(java.util.Set,java.util.Set,java.util.Set)|",
+      "|java+method:///org/bidib/jbidibc/serial/Bidib/close()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/bidib/jbidibc/serial/Bidib/internalOpen(gnu.io.CommPortIdentifier,int,org.bidib.jbidibc.core.helpers.Context)|",
+      "|java+method:///gnu/io/CommPortIdentifier/getPortIdentifier(java.lang.String)|",
+      "|java+constructor:///org/bidib/jbidibc/core/exception/PortNotOpenedException/PortNotOpenedException(java.lang.String,java.lang.String)|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+method:///org/bidib/jbidibc/core/utils/ByteUtils/magicToHex(int)|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+method:///java/io/File/getCanonicalPath()|",
+      "|java+constructor:///org/bidib/jbidibc/core/exception/PortNotFoundException/PortNotFoundException(java.lang.String)|",
+      "|java+method:///org/bidib/jbidibc/core/exception/ProtocolNoAnswerException/getMessage()|",
+      "|java+constructor:///org/bidib/jbidibc/core/exception/NoAnswerException/NoAnswerException(java.lang.String)|",
+      "|java+method:///java/util/concurrent/Semaphore/release()|",
+      "|java+method:///org/bidib/jbidibc/serial/Bidib/sendResetAndMagic()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/bidib/jbidibc/serial/Bidib/setConnectionListener(org.bidib.jbidibc.core.ConnectionListener)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///java/util/concurrent/Semaphore/acquire()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/bidib/jbidibc/serial/Bidib/registerListeners(java.util.Set,java.util.Set,java.util.Set)|",
+      "|java+method:///org/bidib/jbidibc/serial/Bidib/close()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "org.bidib.jbidib:jbidibc:1.8.0",
+    "change": "UPDATED"
+  }
+]

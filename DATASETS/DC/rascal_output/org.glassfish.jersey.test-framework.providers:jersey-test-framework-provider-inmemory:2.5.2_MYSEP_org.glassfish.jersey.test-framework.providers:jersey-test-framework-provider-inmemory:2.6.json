@@ -1,0 +1,51 @@
+[
+  {
+    "coordinatesV1": "org.glassfish.jersey.test-framework.providers:jersey-test-framework-provider-inmemory:2.5.2",
+    "coordinatesV2": "org.glassfish.jersey.test-framework.providers:jersey-test-framework-provider-inmemory:2.6",
+    "caller": "|java+method:///org/glassfish/jersey/test/inmemory/InMemoryConnector$InMemoryResponseWriter/writeResponseStatusAndHeaders(long,org.glassfish.jersey.server.ContainerResponse)|",
+    "called": "|java+method:///org/glassfish/jersey/server/ContainerResponse/getHeaders()|",
+    "v1Body": [
+      "|java+method:///org/glassfish/jersey/server/ContainerResponse/getHeaders()|",
+      "|java+method:///com/google/common/collect/Lists/newArrayList()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/glassfish/jersey/server/ContainerResponse/getStringHeaders()|",
+      "|java+method:///java/lang/String/valueOf(long)|",
+      "|java+method:///javax/ws/rs/core/MultivaluedMap/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/glassfish/jersey/server/ContainerResponse/getStatusInfo()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/glassfish/jersey/server/ContainerResponse/getHeaders()|",
+      "|java+method:///jersey/repackaged/com/google/common/collect/Lists/newArrayList()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/glassfish/jersey/server/ContainerResponse/getStringHeaders()|",
+      "|java+method:///java/lang/String/valueOf(long)|",
+      "|java+method:///javax/ws/rs/core/MultivaluedMap/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/glassfish/jersey/server/ContainerResponse/getStatusInfo()|"
+    ],
+    "affectedLib": "org.glassfish.jersey.core:jersey-server:2.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.glassfish.jersey.test-framework.providers:jersey-test-framework-provider-inmemory:2.5.2",
+    "coordinatesV2": "org.glassfish.jersey.test-framework.providers:jersey-test-framework-provider-inmemory:2.6",
+    "caller": "|java+method:///org/glassfish/jersey/test/inmemory/InMemoryConnector/tryFollowRedirects(boolean,org.glassfish.jersey.client.ClientResponse,org.glassfish.jersey.client.ClientRequest)|",
+    "called": "|java+method:///org/glassfish/jersey/client/ClientResponse/getStatus()|",
+    "v1Body": [
+      "|java+method:///org/glassfish/jersey/client/ClientRequest/setMethod(java.lang.String)|",
+      "|java+method:///org/glassfish/jersey/client/ClientResponse/getStatus()|",
+      "|java+method:///org/glassfish/jersey/client/ClientRequest/setUri(java.net.URI)|",
+      "|java+method:///org/glassfish/jersey/client/ClientResponse/getLocation()|",
+      "|java+method:///org/glassfish/jersey/test/inmemory/InMemoryConnector/apply(org.glassfish.jersey.client.ClientRequest)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/glassfish/jersey/client/ClientRequest/setMethod(java.lang.String)|",
+      "|java+constructor:///org/glassfish/jersey/client/ClientRequest/ClientRequest(org.glassfish.jersey.client.ClientRequest)|",
+      "|java+method:///org/glassfish/jersey/client/ClientResponse/getStatus()|",
+      "|java+method:///org/glassfish/jersey/client/ClientRequest/setUri(java.net.URI)|",
+      "|java+method:///org/glassfish/jersey/client/ClientResponse/getLocation()|",
+      "|java+method:///org/glassfish/jersey/test/inmemory/InMemoryConnector/apply(org.glassfish.jersey.client.ClientRequest)|"
+    ],
+    "affectedLib": "org.glassfish.jersey.core:jersey-client:2.6",
+    "change": "UPDATED"
+  }
+]

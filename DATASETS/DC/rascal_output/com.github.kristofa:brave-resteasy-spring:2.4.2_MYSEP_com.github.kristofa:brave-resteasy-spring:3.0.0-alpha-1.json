@@ -1,0 +1,88 @@
+[
+  {
+    "coordinatesV1": "com.github.kristofa:brave-resteasy-spring:3.0.0-alpha-1",
+    "coordinatesV2": "com.github.kristofa:brave-resteasy-spring:2.4.2",
+    "caller": "|java+method:///com/github/kristofa/brave/resteasy/BraveClientExecutionInterceptor/execute(org.jboss.resteasy.spi.interception.ClientExecutionContext)|",
+    "called": "|java+method:///com/github/kristofa/brave/client/ClientResponseInterceptor/handle(com.github.kristofa.brave.ClientResponseAdapter)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Optional/absent()|",
+      "|java+method:///org/jboss/resteasy/spi/interception/ClientExecutionContext/proceed()|",
+      "|java+constructor:///com/github/kristofa/brave/resteasy/RestEasyClientRequestAdapter/RestEasyClientRequestAdapter(org.jboss.resteasy.client.ClientRequest)|",
+      "|java+method:///com/github/kristofa/brave/client/ClientRequestInterceptor/handle(com.github.kristofa.brave.ClientRequestAdapter,com.google.common.base.Optional)|",
+      "|java+method:///org/jboss/resteasy/spi/interception/ClientExecutionContext/getRequest()|",
+      "|java+constructor:///com/github/kristofa/brave/resteasy/RestEasyClientResponseAdapter/RestEasyClientResponseAdapter(org.jboss.resteasy.client.ClientResponse)|",
+      "|java+method:///com/github/kristofa/brave/client/ClientResponseInterceptor/handle(com.github.kristofa.brave.ClientResponseAdapter)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/github/kristofa/brave/resteasy/RestEasyClientRequestAdapter/RestEasyClientRequestAdapter(org.jboss.resteasy.client.ClientRequest)|",
+      "|java+method:///com/github/kristofa/brave/client/ClientResponseInterceptor/handle(com.github.kristofa.brave.client.ClientResponseAdapter)|",
+      "|java+method:///org/jboss/resteasy/spi/interception/ClientExecutionContext/getRequest()|",
+      "|java+constructor:///com/github/kristofa/brave/resteasy/RestEasyClientResponseAdapter/RestEasyClientResponseAdapter(org.jboss.resteasy.client.ClientResponse)|",
+      "|java+method:///org/jboss/resteasy/spi/interception/ClientExecutionContext/proceed()|",
+      "|java+method:///com/github/kristofa/brave/client/ClientRequestInterceptor/handle(com.github.kristofa.brave.client.ClientRequestAdapter,java.lang.String)|"
+    ],
+    "affectedLib": "com.github.kristofa:brave-client:2.4.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.github.kristofa:brave-resteasy-spring:2.4.2",
+    "coordinatesV2": "com.github.kristofa:brave-resteasy-spring:3.0.0-alpha-1",
+    "caller": "|java+constructor:///com/github/kristofa/brave/resteasy/BraveClientExecutionInterceptor/BraveClientExecutionInterceptor(com.github.kristofa.brave.ClientTracer,com.github.kristofa.brave.client.spanfilter.SpanNameFilter)|",
+    "called": "|java+constructor:///com/github/kristofa/brave/client/ClientResponseInterceptor/ClientResponseInterceptor(com.github.kristofa.brave.ClientTracer)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Optional/of(java.lang.Object)|",
+      "|java+constructor:///com/github/kristofa/brave/resteasy/BraveClientExecutionInterceptor/BraveClientExecutionInterceptor(com.github.kristofa.brave.ClientTracer,com.google.common.base.Optional)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/github/kristofa/brave/client/ClientRequestInterceptor/ClientRequestInterceptor(com.github.kristofa.brave.ClientTracer,com.github.kristofa.brave.client.spanfilter.SpanNameFilter)|",
+      "|java+constructor:///com/github/kristofa/brave/client/ClientResponseInterceptor/ClientResponseInterceptor(com.github.kristofa.brave.ClientTracer)|",
+      "|java+method:///org/apache/commons/lang3/Validate/notNull(java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.github.kristofa:brave-http:3.0.0-alpha-1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.kristofa:brave-resteasy-spring:2.4.2",
+    "coordinatesV2": "com.github.kristofa:brave-resteasy-spring:3.0.0-alpha-1",
+    "caller": "|java+method:///com/github/kristofa/brave/resteasy/BraveClientExecutionInterceptor/execute(org.jboss.resteasy.spi.interception.ClientExecutionContext)|",
+    "called": "|java+method:///com/github/kristofa/brave/client/ClientRequestInterceptor/handle(com.github.kristofa.brave.client.ClientRequestAdapter,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Optional/absent()|",
+      "|java+method:///org/jboss/resteasy/spi/interception/ClientExecutionContext/proceed()|",
+      "|java+constructor:///com/github/kristofa/brave/resteasy/RestEasyClientRequestAdapter/RestEasyClientRequestAdapter(org.jboss.resteasy.client.ClientRequest)|",
+      "|java+method:///com/github/kristofa/brave/client/ClientRequestInterceptor/handle(com.github.kristofa.brave.ClientRequestAdapter,com.google.common.base.Optional)|",
+      "|java+method:///org/jboss/resteasy/spi/interception/ClientExecutionContext/getRequest()|",
+      "|java+constructor:///com/github/kristofa/brave/resteasy/RestEasyClientResponseAdapter/RestEasyClientResponseAdapter(org.jboss.resteasy.client.ClientResponse)|",
+      "|java+method:///com/github/kristofa/brave/client/ClientResponseInterceptor/handle(com.github.kristofa.brave.ClientResponseAdapter)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/github/kristofa/brave/resteasy/RestEasyClientRequestAdapter/RestEasyClientRequestAdapter(org.jboss.resteasy.client.ClientRequest)|",
+      "|java+method:///com/github/kristofa/brave/client/ClientResponseInterceptor/handle(com.github.kristofa.brave.client.ClientResponseAdapter)|",
+      "|java+method:///org/jboss/resteasy/spi/interception/ClientExecutionContext/getRequest()|",
+      "|java+constructor:///com/github/kristofa/brave/resteasy/RestEasyClientResponseAdapter/RestEasyClientResponseAdapter(org.jboss.resteasy.client.ClientResponse)|",
+      "|java+method:///org/jboss/resteasy/spi/interception/ClientExecutionContext/proceed()|",
+      "|java+method:///com/github/kristofa/brave/client/ClientRequestInterceptor/handle(com.github.kristofa.brave.client.ClientRequestAdapter,java.lang.String)|"
+    ],
+    "affectedLib": "com.github.kristofa:brave-http:3.0.0-alpha-1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.kristofa:brave-resteasy-spring:2.4.2",
+    "coordinatesV2": "com.github.kristofa:brave-resteasy-spring:3.0.0-alpha-1",
+    "caller": "|java+constructor:///com/github/kristofa/brave/resteasy/BraveClientExecutionInterceptor/BraveClientExecutionInterceptor(com.github.kristofa.brave.ClientTracer,com.github.kristofa.brave.client.spanfilter.SpanNameFilter)|",
+    "called": "|java+method:///org/apache/commons/lang3/Validate/notNull(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Optional/of(java.lang.Object)|",
+      "|java+constructor:///com/github/kristofa/brave/resteasy/BraveClientExecutionInterceptor/BraveClientExecutionInterceptor(com.github.kristofa.brave.ClientTracer,com.google.common.base.Optional)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/github/kristofa/brave/client/ClientRequestInterceptor/ClientRequestInterceptor(com.github.kristofa.brave.ClientTracer,com.github.kristofa.brave.client.spanfilter.SpanNameFilter)|",
+      "|java+constructor:///com/github/kristofa/brave/client/ClientResponseInterceptor/ClientResponseInterceptor(com.github.kristofa.brave.ClientTracer)|",
+      "|java+method:///org/apache/commons/lang3/Validate/notNull(java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.4",
+    "change": "UPDATED"
+  }
+]

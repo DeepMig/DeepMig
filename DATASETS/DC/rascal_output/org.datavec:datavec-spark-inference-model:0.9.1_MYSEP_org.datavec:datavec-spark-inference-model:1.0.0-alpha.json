@@ -1,0 +1,215 @@
+[
+  {
+    "coordinatesV1": "org.datavec:datavec-spark-inference-model:0.9.1",
+    "coordinatesV2": "org.datavec:datavec-spark-inference-model:1.0.0-alpha",
+    "caller": "|java+method:///org/datavec/spark/transform/CSVSparkTransform/toArray(org.datavec.spark.transform.model.BatchCSVRecord)|",
+    "called": "|java+method:///org/datavec/local/transforms/LocalTransformExecutor/execute(java.util.List,org.datavec.api.transform.TransformProcess)|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/datavec/spark/transform/model/SingleCSVRecord/getValues()|",
+      "|java+method:///org/datavec/api/transform/TransformProcess/execute(java.util.List)|",
+      "|java+method:///org/datavec/api/util/ndarray/RecordConverter/toMatrix(java.util.List)|",
+      "|java+method:///org/datavec/spark/transform/model/BatchCSVRecord/getRecords()|",
+      "|java+method:///org/nd4j/serde/base64/Nd4jBase64/base64String(org.nd4j.linalg.api.ndarray.INDArray)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/datavec/api/transform/TransformProcess/transformRawStringsToInput(java.lang.String%5B%5D)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///org/datavec/spark/transform/model/Base64NDArrayBody/Base64NDArrayBody(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/datavec/arrow/ArrowConverter/toArray(org.datavec.arrow.recordreader.ArrowWritableRecordBatch)|",
+      "|java+method:///org/datavec/arrow/ArrowConverter/toArrowColumnsString(org.apache.arrow.memory.BufferAllocator,org.datavec.api.transform.schema.Schema,java.util.List)|",
+      "|java+method:///org/datavec/api/transform/TransformProcess/getInitialSchema()|",
+      "|java+constructor:///org/datavec/spark/transform/model/Base64NDArrayBody/Base64NDArrayBody(java.lang.String)|",
+      "|java+method:///org/datavec/local/transforms/LocalTransformExecutor/execute(java.util.List,org.datavec.api.transform.TransformProcess)|",
+      "|java+method:///org/datavec/arrow/ArrowConverter/toArrowWritables(java.util.List,org.datavec.api.transform.schema.Schema)|",
+      "|java+method:///org/datavec/spark/transform/model/BatchCSVRecord/getRecordsAsString()|",
+      "|java+method:///org/nd4j/serde/base64/Nd4jBase64/base64String(org.nd4j.linalg.api.ndarray.INDArray)|"
+    ],
+    "affectedLib": "org.datavec:datavec-local:1.0.0-alpha",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.datavec:datavec-spark-inference-model:0.9.1",
+    "coordinatesV2": "org.datavec:datavec-spark-inference-model:1.0.0-alpha",
+    "caller": "|java+method:///org/datavec/spark/transform/CSVSparkTransform/toArray(org.datavec.spark.transform.model.SingleCSVRecord)|",
+    "called": "|java+method:///org/datavec/local/transforms/LocalTransformExecutor/execute(java.util.List,org.datavec.api.transform.TransformProcess)|",
+    "v1Body": [
+      "|java+method:///org/datavec/api/transform/TransformProcess/transformRawStringsToInput(java.lang.String%5B%5D)|",
+      "|java+method:///org/datavec/api/util/ndarray/RecordConverter/toArray(java.util.Collection)|",
+      "|java+method:///org/datavec/spark/transform/model/SingleCSVRecord/getValues()|",
+      "|java+method:///org/datavec/api/transform/TransformProcess/execute(java.util.List)|",
+      "|java+constructor:///org/datavec/spark/transform/model/Base64NDArrayBody/Base64NDArrayBody(java.lang.String)|",
+      "|java+method:///org/nd4j/serde/base64/Nd4jBase64/base64String(org.nd4j.linalg.api.ndarray.INDArray)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/datavec/api/util/ndarray/RecordConverter/toArray(java.util.Collection)|",
+      "|java+method:///org/datavec/local/transforms/LocalTransformExecutor/execute(java.util.List,org.datavec.api.transform.TransformProcess)|",
+      "|java+method:///org/datavec/spark/transform/model/SingleCSVRecord/getValues()|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/datavec/spark/transform/model/Base64NDArrayBody/Base64NDArrayBody(java.lang.String)|",
+      "|java+method:///org/nd4j/serde/base64/Nd4jBase64/base64String(org.nd4j.linalg.api.ndarray.INDArray)|",
+      "|java+method:///org/datavec/arrow/ArrowConverter/toArrowColumnsStringSingle(org.apache.arrow.memory.BufferAllocator,org.datavec.api.transform.schema.Schema,java.util.List)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///org/datavec/arrow/ArrowConverter/toArrowWritablesSingle(java.util.List,org.datavec.api.transform.schema.Schema)|",
+      "|java+method:///org/datavec/api/transform/TransformProcess/getInitialSchema()|"
+    ],
+    "affectedLib": "org.datavec:datavec-local:1.0.0-alpha",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.datavec:datavec-spark-inference-model:0.9.1",
+    "coordinatesV2": "org.datavec:datavec-spark-inference-model:1.0.0-alpha",
+    "caller": "|java+method:///org/datavec/spark/transform/CSVSparkTransform/transform(org.datavec.spark.transform.model.SingleCSVRecord)|",
+    "called": "|java+method:///org/datavec/local/transforms/LocalTransformExecutor/execute(java.util.List,org.datavec.api.transform.TransformProcess)|",
+    "v1Body": [
+      "|java+constructor:///org/datavec/spark/transform/model/SingleCSVRecord/SingleCSVRecord(java.lang.String%5B%5D)|",
+      "|java+method:///org/datavec/api/transform/TransformProcess/transformRawStringsToInput(java.lang.String%5B%5D)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///org/datavec/spark/transform/model/SingleCSVRecord/getValues()|",
+      "|java+method:///org/datavec/api/transform/TransformProcess/execute(java.util.List)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/List/get(int)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/datavec/spark/transform/model/SingleCSVRecord/SingleCSVRecord(java.lang.String%5B%5D)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///org/datavec/local/transforms/LocalTransformExecutor/execute(java.util.List,org.datavec.api.transform.TransformProcess)|",
+      "|java+method:///org/datavec/spark/transform/model/SingleCSVRecord/getValues()|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/datavec/arrow/ArrowConverter/toArrowColumnsStringSingle(org.apache.arrow.memory.BufferAllocator,org.datavec.api.transform.schema.Schema,java.util.List)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///org/datavec/arrow/ArrowConverter/toArrowWritablesSingle(java.util.List,org.datavec.api.transform.schema.Schema)|",
+      "|java+method:///org/datavec/api/transform/TransformProcess/getInitialSchema()|"
+    ],
+    "affectedLib": "org.datavec:datavec-local:1.0.0-alpha",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.datavec:datavec-spark-inference-model:0.9.1",
+    "coordinatesV2": "org.datavec:datavec-spark-inference-model:1.0.0-alpha",
+    "caller": "|java+method:///org/datavec/spark/transform/CSVSparkTransform/transform(org.datavec.spark.transform.model.BatchCSVRecord)|",
+    "called": "|java+method:///org/datavec/local/transforms/LocalTransformExecutor/execute(java.util.List,org.datavec.api.transform.TransformProcess)|",
+    "v1Body": [
+      "|java+constructor:///org/datavec/spark/transform/model/SingleCSVRecord/SingleCSVRecord(java.lang.String%5B%5D)|",
+      "|java+method:///org/datavec/api/transform/TransformProcess/transformRawStringsToInput(java.lang.String%5B%5D)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///org/datavec/spark/transform/model/BatchCSVRecord/BatchCSVRecord()|",
+      "|java+method:///org/datavec/api/transform/TransformProcess/execute(java.util.List)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/datavec/spark/transform/model/BatchCSVRecord/getRecords()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/datavec/spark/transform/model/BatchCSVRecord/add(org.datavec.spark.transform.model.SingleCSVRecord)|",
+      "|java+method:///org/datavec/spark/transform/model/SingleCSVRecord/getValues()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/datavec/spark/transform/model/SingleCSVRecord/SingleCSVRecord(java.lang.String%5B%5D)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///org/datavec/spark/transform/model/BatchCSVRecord/add(org.datavec.spark.transform.model.SingleCSVRecord)|",
+      "|java+method:///org/datavec/arrow/ArrowConverter/toArrowColumnsString(org.apache.arrow.memory.BufferAllocator,org.datavec.api.transform.schema.Schema,java.util.List)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/datavec/api/transform/TransformProcess/getInitialSchema()|",
+      "|java+method:///org/datavec/spark/transform/model/BatchCSVRecord/getRecordsAsString()|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+constructor:///org/datavec/spark/transform/model/BatchCSVRecord/BatchCSVRecord()|",
+      "|java+method:///org/datavec/local/transforms/LocalTransformExecutor/execute(java.util.List,org.datavec.api.transform.TransformProcess)|",
+      "|java+method:///org/datavec/arrow/ArrowConverter/toArrowWritables(java.util.List,org.datavec.api.transform.schema.Schema)|"
+    ],
+    "affectedLib": "org.datavec:datavec-local:1.0.0-alpha",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.datavec:datavec-spark-inference-model:0.9.1",
+    "coordinatesV2": "org.datavec:datavec-spark-inference-model:1.0.0-alpha",
+    "caller": "|java+method:///org/datavec/spark/transform/CSVSparkTransform/toArray(org.datavec.spark.transform.model.SingleCSVRecord)|",
+    "called": "|java+method:///org/datavec/api/util/ndarray/RecordConverter/toArray(java.util.Collection)|",
+    "v1Body": [
+      "|java+method:///org/datavec/api/transform/TransformProcess/transformRawStringsToInput(java.lang.String%5B%5D)|",
+      "|java+method:///org/datavec/api/util/ndarray/RecordConverter/toArray(java.util.Collection)|",
+      "|java+method:///org/datavec/spark/transform/model/SingleCSVRecord/getValues()|",
+      "|java+method:///org/datavec/api/transform/TransformProcess/execute(java.util.List)|",
+      "|java+constructor:///org/datavec/spark/transform/model/Base64NDArrayBody/Base64NDArrayBody(java.lang.String)|",
+      "|java+method:///org/nd4j/serde/base64/Nd4jBase64/base64String(org.nd4j.linalg.api.ndarray.INDArray)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/datavec/api/util/ndarray/RecordConverter/toArray(java.util.Collection)|",
+      "|java+method:///org/datavec/local/transforms/LocalTransformExecutor/execute(java.util.List,org.datavec.api.transform.TransformProcess)|",
+      "|java+method:///org/datavec/spark/transform/model/SingleCSVRecord/getValues()|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/datavec/spark/transform/model/Base64NDArrayBody/Base64NDArrayBody(java.lang.String)|",
+      "|java+method:///org/nd4j/serde/base64/Nd4jBase64/base64String(org.nd4j.linalg.api.ndarray.INDArray)|",
+      "|java+method:///org/datavec/arrow/ArrowConverter/toArrowColumnsStringSingle(org.apache.arrow.memory.BufferAllocator,org.datavec.api.transform.schema.Schema,java.util.List)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///org/datavec/arrow/ArrowConverter/toArrowWritablesSingle(java.util.List,org.datavec.api.transform.schema.Schema)|",
+      "|java+method:///org/datavec/api/transform/TransformProcess/getInitialSchema()|"
+    ],
+    "affectedLib": "org.datavec:datavec-api:1.0.0-alpha",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.datavec:datavec-spark-inference-model:0.9.1",
+    "coordinatesV2": "org.datavec:datavec-spark-inference-model:1.0.0-alpha",
+    "caller": "|java+method:///org/datavec/spark/transform/CSVSparkTransform/toArray(org.datavec.spark.transform.model.BatchCSVRecord)|",
+    "called": "|java+method:///org/nd4j/serde/base64/Nd4jBase64/base64String(org.nd4j.linalg.api.ndarray.INDArray)|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/datavec/spark/transform/model/SingleCSVRecord/getValues()|",
+      "|java+method:///org/datavec/api/transform/TransformProcess/execute(java.util.List)|",
+      "|java+method:///org/datavec/api/util/ndarray/RecordConverter/toMatrix(java.util.List)|",
+      "|java+method:///org/datavec/spark/transform/model/BatchCSVRecord/getRecords()|",
+      "|java+method:///org/nd4j/serde/base64/Nd4jBase64/base64String(org.nd4j.linalg.api.ndarray.INDArray)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/datavec/api/transform/TransformProcess/transformRawStringsToInput(java.lang.String%5B%5D)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///org/datavec/spark/transform/model/Base64NDArrayBody/Base64NDArrayBody(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/datavec/arrow/ArrowConverter/toArray(org.datavec.arrow.recordreader.ArrowWritableRecordBatch)|",
+      "|java+method:///org/datavec/arrow/ArrowConverter/toArrowColumnsString(org.apache.arrow.memory.BufferAllocator,org.datavec.api.transform.schema.Schema,java.util.List)|",
+      "|java+method:///org/datavec/api/transform/TransformProcess/getInitialSchema()|",
+      "|java+constructor:///org/datavec/spark/transform/model/Base64NDArrayBody/Base64NDArrayBody(java.lang.String)|",
+      "|java+method:///org/datavec/local/transforms/LocalTransformExecutor/execute(java.util.List,org.datavec.api.transform.TransformProcess)|",
+      "|java+method:///org/datavec/arrow/ArrowConverter/toArrowWritables(java.util.List,org.datavec.api.transform.schema.Schema)|",
+      "|java+method:///org/datavec/spark/transform/model/BatchCSVRecord/getRecordsAsString()|",
+      "|java+method:///org/nd4j/serde/base64/Nd4jBase64/base64String(org.nd4j.linalg.api.ndarray.INDArray)|"
+    ],
+    "affectedLib": "org.nd4j:nd4j-base64:1.0.0-alpha",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.datavec:datavec-spark-inference-model:0.9.1",
+    "coordinatesV2": "org.datavec:datavec-spark-inference-model:1.0.0-alpha",
+    "caller": "|java+method:///org/datavec/spark/transform/CSVSparkTransform/toArray(org.datavec.spark.transform.model.SingleCSVRecord)|",
+    "called": "|java+method:///org/nd4j/serde/base64/Nd4jBase64/base64String(org.nd4j.linalg.api.ndarray.INDArray)|",
+    "v1Body": [
+      "|java+method:///org/datavec/api/transform/TransformProcess/transformRawStringsToInput(java.lang.String%5B%5D)|",
+      "|java+method:///org/datavec/api/util/ndarray/RecordConverter/toArray(java.util.Collection)|",
+      "|java+method:///org/datavec/spark/transform/model/SingleCSVRecord/getValues()|",
+      "|java+method:///org/datavec/api/transform/TransformProcess/execute(java.util.List)|",
+      "|java+constructor:///org/datavec/spark/transform/model/Base64NDArrayBody/Base64NDArrayBody(java.lang.String)|",
+      "|java+method:///org/nd4j/serde/base64/Nd4jBase64/base64String(org.nd4j.linalg.api.ndarray.INDArray)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/datavec/api/util/ndarray/RecordConverter/toArray(java.util.Collection)|",
+      "|java+method:///org/datavec/local/transforms/LocalTransformExecutor/execute(java.util.List,org.datavec.api.transform.TransformProcess)|",
+      "|java+method:///org/datavec/spark/transform/model/SingleCSVRecord/getValues()|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/datavec/spark/transform/model/Base64NDArrayBody/Base64NDArrayBody(java.lang.String)|",
+      "|java+method:///org/nd4j/serde/base64/Nd4jBase64/base64String(org.nd4j.linalg.api.ndarray.INDArray)|",
+      "|java+method:///org/datavec/arrow/ArrowConverter/toArrowColumnsStringSingle(org.apache.arrow.memory.BufferAllocator,org.datavec.api.transform.schema.Schema,java.util.List)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///org/datavec/arrow/ArrowConverter/toArrowWritablesSingle(java.util.List,org.datavec.api.transform.schema.Schema)|",
+      "|java+method:///org/datavec/api/transform/TransformProcess/getInitialSchema()|"
+    ],
+    "affectedLib": "org.nd4j:nd4j-base64:1.0.0-alpha",
+    "change": "UPDATED"
+  }
+]

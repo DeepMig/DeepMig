@@ -1,0 +1,117 @@
+[
+  {
+    "coordinatesV1": "org.mortbay.jetty:jetty-client:6.1.0pre3",
+    "coordinatesV2": "org.mortbay.jetty:jetty-client:6.1.4rc1",
+    "caller": "|java+constructor:///org/mortbay/jetty/client/HttpExchange/HttpExchange()|",
+    "called": "|java+constructor:///org/mortbay/jetty/HttpFields/HttpFields()|",
+    "v1Body": [
+      "|java+constructor:///org/mortbay/jetty/HttpFields/HttpFields()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/concurrent/atomic/AtomicInteger/AtomicInteger(int)|",
+      "|java+constructor:///org/mortbay/jetty/HttpFields/HttpFields()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.mortbay.jetty:jetty:6.1.4rc1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.mortbay.jetty:jetty-client:6.1.0pre3",
+    "coordinatesV2": "org.mortbay.jetty:jetty-client:6.1.4rc1",
+    "caller": "|java+method:///org/mortbay/jetty/client/HttpConnection/handle()|",
+    "called": "|java+method:///org/mortbay/jetty/HttpParser/isComplete()|",
+    "v1Body": [
+      "|java+method:///org/mortbay/io/EndPoint/isBufferingOutput()|",
+      "|java+method:///org/mortbay/io/EndPoint/isOpen()|",
+      "|java+method:///org/mortbay/jetty/HttpParser/parseAvailable()|",
+      "|java+method:///org/mortbay/jetty/client/HttpConnection/nextExchange()|",
+      "|java+method:///org/mortbay/io/EndPoint/flush()|",
+      "|java+method:///org/mortbay/jetty/client/HttpConnection/reset(boolean)|",
+      "|java+method:///org/mortbay/jetty/Generator/isComplete()|",
+      "|java+method:///org/mortbay/jetty/Generator/flush()|",
+      "|java+method:///org/mortbay/jetty/HttpParser/isComplete()|",
+      "|java+method:///org/mortbay/jetty/Generator/isCommitted()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/mortbay/jetty/client/HttpExchange/getRequestContentSource()|",
+      "|java+method:///org/mortbay/io/EndPoint/isOpen()|",
+      "|java+method:///org/mortbay/jetty/HttpGenerator/flush()|",
+      "|java+method:///org/mortbay/jetty/client/HttpExchange/getStatus()|",
+      "|java+method:///org/mortbay/jetty/HttpParser/isComplete()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/mortbay/jetty/HttpGenerator/isComplete()|",
+      "|java+method:///org/mortbay/jetty/HttpGenerator/addContent(org.mortbay.io.Buffer,boolean)|",
+      "|java+method:///org/mortbay/jetty/client/HttpExchange/getRequestContentChunk()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/mortbay/io/Buffer/length()|",
+      "|java+method:///org/mortbay/jetty/HttpGenerator/complete()|",
+      "|java+method:///java/lang/Thread/currentThread()|",
+      "|java+method:///org/mortbay/jetty/HttpParser/parseNext()|",
+      "|java+method:///org/mortbay/jetty/client/HttpConnection/reset(boolean)|",
+      "|java+method:///java/util/LinkedList/removeFirst()|",
+      "|java+method:///org/mortbay/io/EndPoint/isBlocking()|",
+      "|java+method:///org/mortbay/jetty/HttpGenerator/isCommitted()|",
+      "|java+method:///java/util/LinkedList/size()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/mortbay/jetty/client/HttpConnection/commitRequest()|"
+    ],
+    "affectedLib": "org.mortbay.jetty:jetty:6.1.4rc1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.mortbay.jetty:jetty-client:6.1.0pre3",
+    "coordinatesV2": "org.mortbay.jetty:jetty-client:6.1.4rc1",
+    "caller": "|java+method:///org/mortbay/jetty/client/HttpConnection/reset(boolean)|",
+    "called": "|java+method:///org/mortbay/jetty/HttpParser/reset(boolean)|",
+    "v1Body": [
+      "|java+method:///org/mortbay/jetty/Generator/reset(boolean)|",
+      "|java+method:///org/mortbay/jetty/HttpParser/reset(boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/mortbay/jetty/client/HttpConnection/shouldClose()|",
+      "|java+method:///org/mortbay/jetty/HttpParser/reset(boolean)|",
+      "|java+method:///org/mortbay/jetty/HttpGenerator/reset(boolean)|",
+      "|java+method:///org/mortbay/jetty/client/HttpDestination/returnConnection(org.mortbay.jetty.client.HttpConnection,boolean)|",
+      "|java+method:///java/util/LinkedList/size()|"
+    ],
+    "affectedLib": "org.mortbay.jetty:jetty:6.1.4rc1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.mortbay.jetty:jetty-client:6.1.0pre3",
+    "coordinatesV2": "org.mortbay.jetty:jetty-client:6.1.4rc1",
+    "caller": "|java+method:///org/mortbay/jetty/client/HttpExchange/setURL(java.lang.String)|",
+    "called": "|java+method:///org/mortbay/jetty/HttpURI/getScheme()|",
+    "v1Body": [
+      "|java+constructor:///java/net/InetSocketAddress/InetSocketAddress(java.lang.String,int)|",
+      "|java+method:///org/mortbay/jetty/client/HttpExchange/setScheme(java.lang.String)|",
+      "|java+method:///org/mortbay/jetty/HttpURI/getCompletePath()|",
+      "|java+method:///org/mortbay/jetty/client/HttpExchange/setAddress(java.net.InetSocketAddress)|",
+      "|java+method:///org/mortbay/jetty/HttpURI/getPort()|",
+      "|java+method:///org/mortbay/jetty/client/HttpExchange/setURI(java.lang.String)|",
+      "|java+method:///org/mortbay/jetty/HttpURI/getScheme()|",
+      "|java+method:///org/mortbay/jetty/HttpURI/getHost()|",
+      "|java+method:///java/lang/String/equalsIgnoreCase(java.lang.String)|",
+      "|java+constructor:///org/mortbay/jetty/HttpURI/HttpURI(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/net/InetSocketAddress/InetSocketAddress(java.lang.String,int)|",
+      "|java+constructor:///org/mortbay/io/ByteArrayBuffer/ByteArrayBuffer(java.lang.String)|",
+      "|java+method:///org/mortbay/jetty/HttpURI/getCompletePath()|",
+      "|java+method:///org/mortbay/jetty/client/HttpExchange/setAddress(java.net.InetSocketAddress)|",
+      "|java+method:///org/mortbay/jetty/client/HttpExchange/setScheme(org.mortbay.io.Buffer)|",
+      "|java+method:///org/mortbay/jetty/HttpURI/getPort()|",
+      "|java+method:///org/mortbay/jetty/client/HttpExchange/setURI(java.lang.String)|",
+      "|java+method:///org/mortbay/jetty/HttpURI/getScheme()|",
+      "|java+method:///org/mortbay/jetty/HttpURI/getHost()|",
+      "|java+method:///java/lang/String/equalsIgnoreCase(java.lang.String)|",
+      "|java+constructor:///org/mortbay/jetty/HttpURI/HttpURI(java.lang.String)|"
+    ],
+    "affectedLib": "org.mortbay.jetty:jetty:6.1.4rc1",
+    "change": "UPDATED"
+  }
+]

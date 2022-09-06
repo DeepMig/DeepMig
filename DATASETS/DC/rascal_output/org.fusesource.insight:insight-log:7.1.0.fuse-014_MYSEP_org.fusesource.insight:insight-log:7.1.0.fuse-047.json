@@ -1,0 +1,124 @@
+[
+  {
+    "coordinatesV1": "org.fusesource.insight:insight-log:7.1.0.fuse-014",
+    "coordinatesV2": "org.fusesource.insight:insight-log:7.1.0.fuse-047",
+    "caller": "|java+method:///org/fusesource/insight/log/service/Logs$4/matches(org.ops4j.pax.logging.spi.PaxLoggingEvent)|",
+    "called": "|java+method:///org/fusesource/insight/log/support/Strings/contains(java.lang.String,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/fusesource/insight/log/service/Logs/contains(java.lang.String,java.lang.String%5B%5D)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///org/ops4j/pax/logging/spi/PaxLoggingEvent/getMessage()|",
+      "|java+method:///org/ops4j/pax/logging/spi/PaxLoggingEvent/getFQNOfLoggerClass()|",
+      "|java+method:///org/ops4j/pax/logging/spi/PaxLoggingEvent/getThrowableStrRep()|",
+      "|java+method:///org/ops4j/pax/logging/spi/PaxLoggingEvent/getProperties()|",
+      "|java+method:///org/ops4j/pax/logging/spi/PaxLoggingEvent/getThreadName()|",
+      "|java+method:///org/ops4j/pax/logging/spi/PaxLoggingEvent/getLoggerName()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///org/ops4j/pax/logging/spi/PaxLoggingEvent/getMessage()|",
+      "|java+method:///org/ops4j/pax/logging/spi/PaxLoggingEvent/getThrowableStrRep()|",
+      "|java+method:///org/ops4j/pax/logging/spi/PaxLoggingEvent/getProperties()|",
+      "|java+method:///org/ops4j/pax/logging/spi/PaxLoggingEvent/getThreadName()|",
+      "|java+method:///org/ops4j/pax/logging/spi/PaxLoggingEvent/getLoggerName()|",
+      "|java+method:///org/ops4j/pax/logging/spi/PaxLoggingEvent/getFQNOfLoggerClass()|",
+      "|java+method:///org/fusesource/insight/log/support/Strings/contains(java.lang.String,java.lang.String%5B%5D)|"
+    ],
+    "affectedLib": "org.fusesource.insight:insight-log-core:7.1.0.fuse-047",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.fusesource.insight:insight-log:7.1.0.fuse-014",
+    "coordinatesV2": "org.fusesource.insight:insight-log:7.1.0.fuse-047",
+    "caller": "|java+constructor:///org/fusesource/insight/log/service/LogQuery/LogQuery()|",
+    "called": "|java+constructor:///org/fusesource/insight/log/support/LogQuerySupport/LogQuerySupport()|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///org/codehaus/jackson/map/SerializationConfig/withSerializationInclusion(org.codehaus.jackson.map.annotate.JsonSerialize$Inclusion)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/getSerializationConfig()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///org/codehaus/jackson/map/SerializationConfig/withSerializationInclusion(org.codehaus.jackson.map.annotate.JsonSerialize$Inclusion)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/getSerializationConfig()|",
+      "|java+constructor:///org/fusesource/insight/log/support/LogQuerySupport/LogQuerySupport()|"
+    ],
+    "affectedLib": "org.fusesource.insight:insight-log-core:7.1.0.fuse-047",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.fusesource.insight:insight-log:7.1.0.fuse-014",
+    "coordinatesV2": "org.fusesource.insight:insight-log:7.1.0.fuse-047",
+    "caller": "|java+method:///org/fusesource/insight/log/service/LogQuery/getLogEventList(int,org.fusesource.insight.log.support.Predicate)|",
+    "called": "|java+method:///org/fusesource/insight/log/LogResults/addEvent(org.fusesource.insight.log.LogEvent)|",
+    "v1Body": [
+      "|java+method:///org/apache/karaf/shell/log/VmLogAppender/getEvents()|",
+      "|java+method:///org/fusesource/insight/log/LogResults/addEvent(org.fusesource.insight.log.LogEvent)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/fusesource/insight/log/LogResults/setHost(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/fusesource/insight/log/service/LogQuery/getAppender()|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+method:///java/net/InetAddress/getHostName()|",
+      "|java+method:///org/fusesource/insight/log/LogResults/setToTimestamp(java.lang.Long)|",
+      "|java+method:///org/fusesource/insight/log/support/Predicate/matches(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///org/fusesource/insight/log/LogResults/LogResults()|",
+      "|java+method:///org/fusesource/insight/log/LogResults/setFromTimestamp(java.lang.Long)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/net/InetAddress/getLocalHost()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/ops4j/pax/logging/spi/PaxLoggingEvent/getTimeStamp()|",
+      "|java+method:///org/fusesource/insight/log/service/Logs/newInstance(org.ops4j.pax.logging.spi.PaxLoggingEvent)|",
+      "|java+method:///org/apache/karaf/shell/log/LruList/getElements()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/karaf/shell/log/VmLogAppender/getEvents()|",
+      "|java+method:///org/fusesource/insight/log/LogResults/addEvent(org.fusesource.insight.log.LogEvent)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///org/fusesource/insight/log/LogResults/setHost(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/fusesource/insight/log/service/LogQuery/getAppender()|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+method:///org/ops4j/pax/logging/spi/PaxLoggingEvent/getTimeStamp()|",
+      "|java+method:///org/fusesource/insight/log/LogResults/setToTimestamp(java.lang.Long)|",
+      "|java+method:///org/fusesource/insight/log/support/Predicate/matches(java.lang.Object)|",
+      "|java+method:///org/fusesource/insight/log/service/LogQuery/getHostName()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///org/fusesource/insight/log/LogResults/LogResults()|",
+      "|java+method:///org/fusesource/insight/log/LogResults/setFromTimestamp(java.lang.Long)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/fusesource/insight/log/service/Logs/newInstance(org.ops4j.pax.logging.spi.PaxLoggingEvent)|",
+      "|java+method:///org/apache/karaf/shell/log/LruList/getElements()|"
+    ],
+    "affectedLib": "org.fusesource.insight:insight-log-core:7.1.0.fuse-047",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.fusesource.insight:insight-log:7.1.0.fuse-014",
+    "coordinatesV2": "org.fusesource.insight:insight-log:7.1.0.fuse-047",
+    "caller": "|java+constructor:///org/fusesource/insight/log/service/LogQuery/LogQuery()|",
+    "called": "|java+method:///org/codehaus/jackson/map/SerializationConfig/withSerializationInclusion(org.codehaus.jackson.map.annotate.JsonSerialize$Inclusion)|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///org/codehaus/jackson/map/SerializationConfig/withSerializationInclusion(org.codehaus.jackson.map.annotate.JsonSerialize$Inclusion)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/getSerializationConfig()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///org/codehaus/jackson/map/SerializationConfig/withSerializationInclusion(org.codehaus.jackson.map.annotate.JsonSerialize$Inclusion)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/getSerializationConfig()|",
+      "|java+constructor:///org/fusesource/insight/log/support/LogQuerySupport/LogQuerySupport()|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.10",
+    "change": "UPDATED"
+  }
+]

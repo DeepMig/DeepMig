@@ -1,0 +1,92 @@
+[
+  {
+    "coordinatesV1": "com.netflix.eureka:eureka-examples:1.1.159",
+    "coordinatesV2": "com.netflix.eureka:eureka-examples:1.2.0-rc.1",
+    "caller": "|java+method:///com/netflix/eureka/ExampleEurekaGovernatedService/init()|",
+    "called": "|java+method:///com/netflix/governator/Governator/createInjector(com.google.inject.Module%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/google/inject/Injector/getInstance(java.lang.Class)|",
+      "|java+constructor:///com/netflix/eureka/ExampleEurekaGovernatedService$ExampleServiceModule/ExampleEurekaGovernatedService$ExampleServiceModule()|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///com/netflix/governator/guice/LifecycleInjector/createInjector()|",
+      "|java+method:///com/netflix/governator/lifecycle/LifecycleManager/start()|",
+      "|java+method:///com/netflix/governator/guice/LifecycleInjectorBuilder/withMode(com.netflix.governator.guice.LifecycleInjectorMode)|",
+      "|java+method:///com/netflix/governator/guice/LifecycleInjectorBuilder/withModules(com.google.inject.Module%5B%5D)|",
+      "|java+constructor:///com/netflix/discovery/guice/EurekaModule/EurekaModule()|",
+      "|java+method:///com/netflix/governator/guice/LifecycleInjector/builder()|",
+      "|java+constructor:///com/netflix/eureka/ExampleEurekaGovernatedService$1/ExampleEurekaGovernatedService$1()|",
+      "|java+method:///com/netflix/governator/guice/LifecycleInjectorBuilder/build()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/netflix/eureka/ExampleEurekaGovernatedService$ExampleServiceModule/ExampleEurekaGovernatedService$ExampleServiceModule()|",
+      "|java+method:///com/google/inject/util/Modules/override(com.google.inject.Module%5B%5D)|",
+      "|java+constructor:///com/netflix/eureka/ExampleEurekaGovernatedService$1/ExampleEurekaGovernatedService$1()|",
+      "|java+method:///com/google/inject/util/Modules$OverriddenModuleBuilder/with(com.google.inject.Module%5B%5D)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///com/netflix/governator/Governator/createInjector(com.google.inject.Module%5B%5D)|",
+      "|java+constructor:///com/netflix/discovery/guice/EurekaModule/EurekaModule()|"
+    ],
+    "affectedLib": "com.netflix.governator:governator:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.netflix.eureka:eureka-examples:1.1.159",
+    "coordinatesV2": "com.netflix.eureka:eureka-examples:1.2.0-rc.1",
+    "caller": "|java+method:///com/netflix/eureka/ExampleEurekaGovernatedService/main(java.lang.String%5B%5D)|",
+    "called": "|java+method:///com/netflix/governator/LifecycleInjector/shutdown()|",
+    "v1Body": [
+      "|java+method:///com/netflix/eureka/ExampleEurekaGovernatedService/init()|",
+      "|java+method:///com/netflix/eureka/ExampleServiceBase/stop()|",
+      "|java+method:///java/lang/Exception/printStackTrace()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/netflix/eureka/ExampleServiceBase/start()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/netflix/eureka/ExampleEurekaGovernatedService/init()|",
+      "|java+method:///java/lang/Exception/printStackTrace()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/netflix/governator/LifecycleInjector/awaitTermination()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///com/netflix/governator/LifecycleInjector/shutdown()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|"
+    ],
+    "affectedLib": "com.netflix.governator:governator:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.netflix.eureka:eureka-examples:1.1.159",
+    "coordinatesV2": "com.netflix.eureka:eureka-examples:1.2.0-rc.1",
+    "caller": "|java+method:///com/netflix/eureka/ExampleEurekaGovernatedService/init()|",
+    "called": "|java+constructor:///com/netflix/discovery/guice/EurekaModule/EurekaModule()|",
+    "v1Body": [
+      "|java+method:///com/google/inject/Injector/getInstance(java.lang.Class)|",
+      "|java+constructor:///com/netflix/eureka/ExampleEurekaGovernatedService$ExampleServiceModule/ExampleEurekaGovernatedService$ExampleServiceModule()|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///com/netflix/governator/guice/LifecycleInjector/createInjector()|",
+      "|java+method:///com/netflix/governator/lifecycle/LifecycleManager/start()|",
+      "|java+method:///com/netflix/governator/guice/LifecycleInjectorBuilder/withMode(com.netflix.governator.guice.LifecycleInjectorMode)|",
+      "|java+method:///com/netflix/governator/guice/LifecycleInjectorBuilder/withModules(com.google.inject.Module%5B%5D)|",
+      "|java+constructor:///com/netflix/discovery/guice/EurekaModule/EurekaModule()|",
+      "|java+method:///com/netflix/governator/guice/LifecycleInjector/builder()|",
+      "|java+constructor:///com/netflix/eureka/ExampleEurekaGovernatedService$1/ExampleEurekaGovernatedService$1()|",
+      "|java+method:///com/netflix/governator/guice/LifecycleInjectorBuilder/build()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/netflix/eureka/ExampleEurekaGovernatedService$ExampleServiceModule/ExampleEurekaGovernatedService$ExampleServiceModule()|",
+      "|java+method:///com/google/inject/util/Modules/override(com.google.inject.Module%5B%5D)|",
+      "|java+constructor:///com/netflix/eureka/ExampleEurekaGovernatedService$1/ExampleEurekaGovernatedService$1()|",
+      "|java+method:///com/google/inject/util/Modules$OverriddenModuleBuilder/with(com.google.inject.Module%5B%5D)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///com/netflix/governator/Governator/createInjector(com.google.inject.Module%5B%5D)|",
+      "|java+constructor:///com/netflix/discovery/guice/EurekaModule/EurekaModule()|"
+    ],
+    "affectedLib": "com.netflix.eureka:eureka-client:1.2.0-rc.1",
+    "change": "UPDATED"
+  }
+]

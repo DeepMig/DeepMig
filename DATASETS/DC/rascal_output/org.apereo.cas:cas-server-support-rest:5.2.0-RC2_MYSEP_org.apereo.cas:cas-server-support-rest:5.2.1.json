@@ -1,0 +1,117 @@
+[
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-rest:5.2.0-RC2",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-rest:5.2.1",
+    "caller": "|java+constructor:///org/apereo/cas/config/CasRestConfiguration/CasRestConfiguration()|",
+    "called": "|java+constructor:///org/springframework/web/servlet/config/annotation/WebMvcConfigurerAdapter/WebMvcConfigurerAdapter()|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/web/servlet/config/annotation/WebMvcConfigurerAdapter/WebMvcConfigurerAdapter()|",
+      "|java+constructor:///org/apereo/cas/support/rest/DefaultCredentialFactory/DefaultCredentialFactory()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apereo/cas/support/rest/factory/DefaultCredentialFactory/DefaultCredentialFactory()|",
+      "|java+constructor:///org/springframework/web/servlet/config/annotation/WebMvcConfigurerAdapter/WebMvcConfigurerAdapter()|"
+    ],
+    "affectedLib": "org.springframework:spring-webmvc:4.3.12.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-rest:5.2.0-RC2",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-rest:5.2.1",
+    "caller": "|java+method:///org/apereo/cas/support/rest/resources/ServiceTicketResource/createServiceTicket(org.springframework.util.MultiValueMap,java.lang.String)|",
+    "called": "|java+constructor:///org/springframework/http/ResponseEntity/ResponseEntity(java.lang.Object,org.springframework.http.HttpStatus)|",
+    "v1Body": [
+      "|java+method:///org/apereo/cas/support/rest/ServiceTicketResourceEntityResponseFactory/build(java.lang.String,org.apereo.cas.authentication.principal.Service,org.apereo.cas.authentication.AuthenticationResult)|",
+      "|java+method:///org/apereo/cas/authentication/AuthenticationSystemSupport/getPrincipalElectionStrategy()|",
+      "|java+constructor:///org/apereo/cas/authentication/DefaultAuthenticationResultBuilder/DefaultAuthenticationResultBuilder(org.apereo.cas.authentication.PrincipalElectionStrategy)|",
+      "|java+method:///org/apereo/cas/authentication/AuthenticationResultBuilder/collect(org.apereo.cas.authentication.Authentication)|",
+      "|java+method:///org/apereo/cas/authentication/AuthenticationResultBuilder/build(org.apereo.cas.authentication.principal.Service)|",
+      "|java+method:///org/apereo/cas/authentication/principal/ServiceFactory/createService(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apereo/cas/ticket/registry/TicketRegistrySupport/getAuthenticationFrom(java.lang.String)|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+constructor:///org/springframework/http/ResponseEntity/ResponseEntity(java.lang.Object,org.springframework.http.HttpStatus)|",
+      "|java+method:///org/springframework/util/MultiValueMap/getFirst(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apereo/cas/ticket/InvalidTicketException/InvalidTicketException(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isBlank(java.lang.CharSequence)|",
+      "|java+method:///org/apereo/cas/authentication/AuthenticationSystemSupport/getPrincipalElectionStrategy()|",
+      "|java+method:///org/apereo/cas/ticket/InvalidTicketException/getMessage()|",
+      "|java+constructor:///org/apereo/cas/authentication/DefaultAuthenticationResultBuilder/DefaultAuthenticationResultBuilder(org.apereo.cas.authentication.PrincipalElectionStrategy)|",
+      "|java+method:///org/apereo/cas/authentication/AuthenticationResultBuilder/collect(org.apereo.cas.authentication.Authentication)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apereo/cas/authentication/AuthenticationResultBuilder/build(org.apereo.cas.authentication.principal.Service)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///org/springframework/http/ResponseEntity/ResponseEntity(java.lang.Object,org.springframework.http.HttpStatus)|",
+      "|java+method:///org/springframework/util/MultiValueMap/getFirst(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apereo/cas/authentication/principal/ServiceFactory/createService(java.lang.String)|",
+      "|java+method:///org/apereo/cas/support/rest/factory/ServiceTicketResourceEntityResponseFactory/build(java.lang.String,org.apereo.cas.authentication.principal.Service,org.apereo.cas.authentication.AuthenticationResult)|",
+      "|java+method:///org/apereo/cas/ticket/registry/TicketRegistrySupport/getAuthenticationFrom(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "affectedLib": "org.springframework:spring-web:4.3.12.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-rest:5.2.0-RC2",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-rest:5.2.1",
+    "caller": "|java+method:///org/apereo/cas/support/rest/resources/TicketStatusResource/getTicketStatus(java.lang.String)|",
+    "called": "|java+constructor:///org/springframework/http/ResponseEntity/ResponseEntity(java.lang.Object,org.springframework.http.HttpStatus)|",
+    "v1Body": [
+      "|java+method:///org/apereo/cas/CentralAuthenticationService/getTicket(java.lang.String)|",
+      "|java+constructor:///org/springframework/http/ResponseEntity/ResponseEntity(java.lang.Object,org.springframework.http.HttpStatus)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apereo/cas/CentralAuthenticationService/getTicket(java.lang.String)|",
+      "|java+constructor:///org/springframework/http/ResponseEntity/ResponseEntity(java.lang.Object,org.springframework.http.HttpStatus)|",
+      "|java+method:///org/apereo/cas/ticket/Ticket/getId()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "affectedLib": "org.springframework:spring-web:4.3.12.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-rest:5.2.0-RC2",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-rest:5.2.1",
+    "caller": "|java+method:///org/apereo/cas/support/rest/resources/TicketGrantingTicketResource/createResponseEntityForAuthnFailure(org.apereo.cas.authentication.AuthenticationException)|",
+    "called": "|java+constructor:///org/springframework/http/ResponseEntity/ResponseEntity(java.lang.Object,org.springframework.http.HttpStatus)|",
+    "v1Body": [
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|",
+      "|java+method:///java/util/Map/values()|",
+      "|java+constructor:///org/springframework/http/ResponseEntity/ResponseEntity(java.lang.Object,org.springframework.http.HttpStatus)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectWriter/writeValueAsString(java.lang.Object)|",
+      "|java+method:///org/apereo/cas/authentication/AuthenticationException/getMessage()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Collection/stream()|",
+      "|java+method:///java/util/stream/Collectors/toList()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/apereo/cas/authentication/AuthenticationException/getHandlerErrors()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|",
+      "|java+method:///java/util/Map/values()|",
+      "|java+constructor:///org/springframework/http/ResponseEntity/ResponseEntity(java.lang.Object,org.springframework.http.HttpStatus)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectWriter/writeValueAsString(java.lang.Object)|",
+      "|java+method:///org/apereo/cas/authentication/AuthenticationException/getMessage()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Collection/stream()|",
+      "|java+method:///java/util/stream/Collectors/toList()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/apereo/cas/authentication/AuthenticationException/getHandlerErrors()|"
+    ],
+    "affectedLib": "org.springframework:spring-web:4.3.12.RELEASE",
+    "change": "UPDATED"
+  }
+]

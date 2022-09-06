@@ -1,0 +1,106 @@
+[
+  {
+    "coordinatesV1": "org.xwiki.rendering:xwiki-rendering-transformation-linkchecker:6.2",
+    "coordinatesV2": "org.xwiki.rendering:xwiki-rendering-transformation-linkchecker:6.0",
+    "caller": "|java+method:///org/xwiki/rendering/internal/transformation/linkchecker/DefaultHTTPChecker/check(java.lang.String)|",
+    "called": "|java+constructor:///org/apache/commons/httpclient/methods/GetMethod/GetMethod(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/apache/commons/httpclient/methods/GetMethod/GetMethod(java.lang.String)|",
+      "|java+method:///org/apache/commons/httpclient/HttpClient/executeMethod(org.apache.commons.httpclient.HttpMethod)|",
+      "|java+method:///org/apache/commons/httpclient/methods/GetMethod/releaseConnection()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/http/impl/client/CloseableHttpClient/execute(org.apache.http.client.methods.HttpUriRequest)|",
+      "|java+method:///org/apache/http/client/methods/CloseableHttpResponse/close()|",
+      "|java+method:///org/apache/http/client/methods/CloseableHttpResponse/getStatusLine()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/http/StatusLine/getStatusCode()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+constructor:///org/apache/http/client/methods/HttpGet/HttpGet(java.lang.String)|"
+    ],
+    "affectedLib": "commons-httpclient:commons-httpclient:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.xwiki.rendering:xwiki-rendering-transformation-linkchecker:6.2",
+    "coordinatesV2": "org.xwiki.rendering:xwiki-rendering-transformation-linkchecker:6.0",
+    "caller": "|java+method:///org/xwiki/rendering/internal/transformation/linkchecker/DefaultHTTPChecker/initialize()|",
+    "called": "|java+constructor:///org/apache/commons/httpclient/HttpClient/HttpClient(org.apache.commons.httpclient.HttpConnectionManager)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/httpclient/params/HttpClientParams/setCookiePolicy(java.lang.String)|",
+      "|java+constructor:///org/apache/commons/httpclient/MultiThreadedHttpConnectionManager/MultiThreadedHttpConnectionManager()|",
+      "|java+method:///org/apache/commons/httpclient/params/HttpClientParams/setParameter(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///org/apache/commons/httpclient/HttpClient/HttpClient(org.apache.commons.httpclient.HttpConnectionManager)|",
+      "|java+method:///org/apache/commons/httpclient/HttpClient/getParams()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/http/client/config/RequestConfig$Builder/build()|",
+      "|java+method:///org/apache/http/impl/client/HttpClientBuilder/setConnectionManager(org.apache.http.conn.HttpClientConnectionManager)|",
+      "|java+method:///org/apache/http/client/config/RequestConfig$Builder/setCookieSpec(java.lang.String)|",
+      "|java+method:///org/apache/http/impl/client/HttpClientBuilder/useSystemProperties()|",
+      "|java+method:///org/apache/http/impl/client/HttpClientBuilder/setUserAgent(java.lang.String)|",
+      "|java+method:///org/apache/http/impl/client/HttpClientBuilder/build()|",
+      "|java+method:///org/apache/http/client/config/RequestConfig/custom()|",
+      "|java+method:///org/apache/http/impl/client/HttpClientBuilder/create()|",
+      "|java+method:///org/apache/http/impl/client/HttpClientBuilder/setDefaultRequestConfig(org.apache.http.client.config.RequestConfig)|",
+      "|java+constructor:///org/apache/http/impl/conn/PoolingHttpClientConnectionManager/PoolingHttpClientConnectionManager()|"
+    ],
+    "affectedLib": "commons-httpclient:commons-httpclient:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.xwiki.rendering:xwiki-rendering-transformation-linkchecker:6.0",
+    "coordinatesV2": "org.xwiki.rendering:xwiki-rendering-transformation-linkchecker:6.2",
+    "caller": "|java+method:///org/xwiki/rendering/internal/transformation/linkchecker/DefaultHTTPChecker/check(java.lang.String)|",
+    "called": "|java+constructor:///org/apache/http/client/methods/HttpGet/HttpGet(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/apache/commons/httpclient/methods/GetMethod/GetMethod(java.lang.String)|",
+      "|java+method:///org/apache/commons/httpclient/HttpClient/executeMethod(org.apache.commons.httpclient.HttpMethod)|",
+      "|java+method:///org/apache/commons/httpclient/methods/GetMethod/releaseConnection()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/http/impl/client/CloseableHttpClient/execute(org.apache.http.client.methods.HttpUriRequest)|",
+      "|java+method:///org/apache/http/client/methods/CloseableHttpResponse/close()|",
+      "|java+method:///org/apache/http/client/methods/CloseableHttpResponse/getStatusLine()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/http/StatusLine/getStatusCode()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+constructor:///org/apache/http/client/methods/HttpGet/HttpGet(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.3.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.xwiki.rendering:xwiki-rendering-transformation-linkchecker:6.0",
+    "coordinatesV2": "org.xwiki.rendering:xwiki-rendering-transformation-linkchecker:6.2",
+    "caller": "|java+method:///org/xwiki/rendering/internal/transformation/linkchecker/DefaultHTTPChecker/initialize()|",
+    "called": "|java+constructor:///org/apache/http/impl/conn/PoolingHttpClientConnectionManager/PoolingHttpClientConnectionManager()|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/httpclient/params/HttpClientParams/setCookiePolicy(java.lang.String)|",
+      "|java+constructor:///org/apache/commons/httpclient/MultiThreadedHttpConnectionManager/MultiThreadedHttpConnectionManager()|",
+      "|java+method:///org/apache/commons/httpclient/params/HttpClientParams/setParameter(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///org/apache/commons/httpclient/HttpClient/HttpClient(org.apache.commons.httpclient.HttpConnectionManager)|",
+      "|java+method:///org/apache/commons/httpclient/HttpClient/getParams()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/http/client/config/RequestConfig$Builder/build()|",
+      "|java+method:///org/apache/http/impl/client/HttpClientBuilder/setConnectionManager(org.apache.http.conn.HttpClientConnectionManager)|",
+      "|java+method:///org/apache/http/client/config/RequestConfig$Builder/setCookieSpec(java.lang.String)|",
+      "|java+method:///org/apache/http/impl/client/HttpClientBuilder/useSystemProperties()|",
+      "|java+method:///org/apache/http/impl/client/HttpClientBuilder/setUserAgent(java.lang.String)|",
+      "|java+method:///org/apache/http/impl/client/HttpClientBuilder/build()|",
+      "|java+method:///org/apache/http/client/config/RequestConfig/custom()|",
+      "|java+method:///org/apache/http/impl/client/HttpClientBuilder/create()|",
+      "|java+method:///org/apache/http/impl/client/HttpClientBuilder/setDefaultRequestConfig(org.apache.http.client.config.RequestConfig)|",
+      "|java+constructor:///org/apache/http/impl/conn/PoolingHttpClientConnectionManager/PoolingHttpClientConnectionManager()|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.3.5",
+    "change": "ADDED"
+  }
+]

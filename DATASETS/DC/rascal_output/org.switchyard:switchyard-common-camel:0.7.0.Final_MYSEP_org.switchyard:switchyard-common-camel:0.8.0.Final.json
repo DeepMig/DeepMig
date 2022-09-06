@@ -1,0 +1,32 @@
+[
+  {
+    "coordinatesV1": "org.switchyard:switchyard-common-camel:0.8.0.Final",
+    "coordinatesV2": "org.switchyard:switchyard-common-camel:0.7.0.Final",
+    "caller": "|java+method:///org/switchyard/common/camel/SwitchYardCamelContext/isEnableCdiIntegration()|",
+    "called": "|java+method:///org/apache/deltaspike/core/api/provider/BeanManagerProvider/getInstance()|",
+    "v1Body": [
+      "|java+method:///org/apache/deltaspike/core/api/provider/BeanManagerProvider/getInstance()|",
+      "|java+method:///java/lang/IllegalStateException/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/switchyard/common/cdi/CDIUtil/lookupBeanManager()|"
+    ],
+    "affectedLib": "org.apache.deltaspike.core:deltaspike-core-api:0.2-incubating",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.switchyard:switchyard-common-camel:0.7.0.Final",
+    "coordinatesV2": "org.switchyard:switchyard-common-camel:0.8.0.Final",
+    "caller": "|java+method:///org/switchyard/common/camel/SwitchYardCamelContext/isEnableCdiIntegration()|",
+    "called": "|java+method:///org/switchyard/common/cdi/CDIUtil/lookupBeanManager()|",
+    "v1Body": [
+      "|java+method:///org/apache/deltaspike/core/api/provider/BeanManagerProvider/getInstance()|",
+      "|java+method:///java/lang/IllegalStateException/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/switchyard/common/cdi/CDIUtil/lookupBeanManager()|"
+    ],
+    "affectedLib": "org.switchyard:switchyard-common-cdi:0.8.0.Final",
+    "change": "ADDED"
+  }
+]

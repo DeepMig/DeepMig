@@ -1,0 +1,211 @@
+[
+  {
+    "coordinatesV1": "org.eclipse.hono:hono-client:0.7-M1",
+    "coordinatesV2": "org.eclipse.hono:hono-client:0.7-M2",
+    "caller": "|java+method:///org/eclipse/hono/client/impl/AbstractHonoClient/createSender(io.vertx.core.Context,org.eclipse.hono.config.ClientConfigProperties,io.vertx.proton.ProtonConnection,java.lang.String,io.vertx.proton.ProtonQoS,io.vertx.core.Handler)|",
+    "called": "|java+method:///org/eclipse/hono/util/HonoProtonHelper/executeOrRunOnContext(io.vertx.core.Context,io.vertx.core.Handler)|",
+    "v1Body": [
+      "|java+method:///io/vertx/core/Future/future()|",
+      "|java+method:///java/util/Objects/requireNonNull(java.lang.Object)|",
+      "|java+method:///io/vertx/core/Context/runOnContext(io.vertx.core.Handler)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Objects/requireNonNull(java.lang.Object)|",
+      "|java+method:///org/eclipse/hono/util/HonoProtonHelper/executeOrRunOnContext(io.vertx.core.Context,io.vertx.core.Handler)|"
+    ],
+    "affectedLib": "org.eclipse.hono:hono-core:0.7-M2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.hono:hono-client:0.7-M1",
+    "coordinatesV2": "org.eclipse.hono:hono-client:0.7-M2",
+    "caller": "|java+constructor:///org/eclipse/hono/client/impl/HonoClientImpl/HonoClientImpl(io.vertx.core.Vertx,org.eclipse.hono.connection.ConnectionFactory,org.eclipse.hono.config.ClientConfigProperties)|",
+    "called": "|java+method:///org/eclipse/hono/connection/ConnectionFactory/newConnectionFactory(io.vertx.core.Vertx,org.eclipse.hono.config.ClientConfigProperties)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/Collections/emptyList()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/util/Objects/requireNonNull(java.lang.Object)|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicInteger/AtomicInteger(int)|",
+      "|java+method:///io/vertx/core/Vertx/getOrCreateContext()|",
+      "|java+method:///io/vertx/core/Vertx/vertx()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicBoolean/AtomicBoolean(boolean)|",
+      "|java+method:///org/eclipse/hono/connection/ConnectionFactory/newConnectionFactory(io.vertx.core.Vertx,org.eclipse.hono.config.ClientConfigProperties)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/Collections/emptyList()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/util/Objects/requireNonNull(java.lang.Object)|",
+      "|java+method:///io/vertx/core/Vertx/vertx()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicBoolean/AtomicBoolean(boolean)|",
+      "|java+method:///org/eclipse/hono/connection/ConnectionFactory/newConnectionFactory(io.vertx.core.Vertx,org.eclipse.hono.config.ClientConfigProperties)|",
+      "|java+method:///io/opentracing/noop/NoopTracerFactory/create()|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicInteger/AtomicInteger(int)|"
+    ],
+    "affectedLib": "org.eclipse.hono:hono-core:0.7-M2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.hono:hono-client:0.7-M1",
+    "coordinatesV2": "org.eclipse.hono:hono-client:0.7-M2",
+    "caller": "|java+method:///org/eclipse/hono/client/impl/AbstractRequestResponseClient/handleResponse(io.vertx.proton.ProtonDelivery,org.apache.qpid.proton.message.Message)|",
+    "called": "|java+method:///org/eclipse/hono/tracing/TracingHelper/logError(io.opentracing.Span,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/eclipse/hono/util/TriTuple/one()|",
+      "|java+method:///org/eclipse/hono/util/RequestResponseResult/getStatus()|",
+      "|java+method:///org/apache/qpid/proton/message/Message/getSubject()|",
+      "|java+method:///org/eclipse/hono/client/impl/AbstractRequestResponseClient/getRequestResponseResult(org.apache.qpid.proton.message.Message)|",
+      "|java+method:///io/vertx/core/Handler/handle(java.lang.Object)|",
+      "|java+method:///io/vertx/proton/ProtonHelper/accepted(io.vertx.proton.ProtonDelivery,boolean)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/eclipse/hono/client/impl/AbstractRequestResponseClient/addToCache(java.lang.Object,org.eclipse.hono.util.RequestResponseResult)|",
+      "|java+method:///org/apache/qpid/proton/message/Message/getCorrelationId()|",
+      "|java+method:///io/vertx/proton/ProtonHelper/released(io.vertx.proton.ProtonDelivery,boolean)|",
+      "|java+method:///org/eclipse/hono/util/TriTuple/two()|",
+      "|java+method:///io/vertx/core/Future/succeededFuture(java.lang.Object)|",
+      "|java+method:///java/util/Map/remove(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/eclipse/hono/util/TriTuple/one()|",
+      "|java+method:///org/eclipse/hono/util/RequestResponseResult/getStatus()|",
+      "|java+method:///org/apache/qpid/proton/message/Message/getSubject()|",
+      "|java+method:///io/vertx/proton/ProtonHelper/rejected(io.vertx.proton.ProtonDelivery,boolean)|",
+      "|java+method:///io/opentracing/tag/IntTag/set(io.opentracing.Span,java.lang.Integer)|",
+      "|java+method:///org/eclipse/hono/client/impl/AbstractRequestResponseClient/getRequestResponseResult(org.apache.qpid.proton.message.Message)|",
+      "|java+method:///io/vertx/core/Handler/handle(java.lang.Object)|",
+      "|java+method:///io/opentracing/Span/log(java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/eclipse/hono/client/impl/AbstractRequestResponseClient/addToCache(java.lang.Object,org.eclipse.hono.util.RequestResponseResult)|",
+      "|java+method:///org/apache/qpid/proton/message/Message/getCorrelationId()|",
+      "|java+method:///org/eclipse/hono/util/TriTuple/three()|",
+      "|java+method:///io/vertx/proton/ProtonHelper/released(io.vertx.proton.ProtonDelivery,boolean)|",
+      "|java+method:///org/eclipse/hono/util/TriTuple/two()|",
+      "|java+method:///org/eclipse/hono/tracing/TracingHelper/logError(io.opentracing.Span,java.lang.String)|",
+      "|java+method:///io/vertx/proton/ProtonHelper/accepted(io.vertx.proton.ProtonDelivery,boolean)|",
+      "|java+method:///io/vertx/core/Future/succeededFuture(java.lang.Object)|",
+      "|java+method:///java/util/Map/remove(java.lang.Object)|"
+    ],
+    "affectedLib": "org.eclipse.hono:hono-core:0.7-M2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.hono:hono-client:0.7-M1",
+    "coordinatesV2": "org.eclipse.hono:hono-client:0.7-M2",
+    "caller": "|java+method:///org/eclipse/hono/client/impl/AbstractHonoClient/createReceiver(io.vertx.core.Context,org.eclipse.hono.config.ClientConfigProperties,io.vertx.proton.ProtonConnection,java.lang.String,io.vertx.proton.ProtonQoS,io.vertx.proton.ProtonMessageHandler,io.vertx.core.Handler)|",
+    "called": "|java+method:///org/eclipse/hono/util/HonoProtonHelper/executeOrRunOnContext(io.vertx.core.Context,io.vertx.core.Handler)|",
+    "v1Body": [
+      "|java+method:///io/vertx/core/Future/future()|",
+      "|java+method:///java/util/Objects/requireNonNull(java.lang.Object)|",
+      "|java+method:///io/vertx/core/Context/runOnContext(io.vertx.core.Handler)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Objects/requireNonNull(java.lang.Object)|",
+      "|java+method:///org/eclipse/hono/util/HonoProtonHelper/executeOrRunOnContext(io.vertx.core.Context,io.vertx.core.Handler)|"
+    ],
+    "affectedLib": "org.eclipse.hono:hono-core:0.7-M2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.hono:hono-client:0.7-M1",
+    "coordinatesV2": "org.eclipse.hono:hono-client:0.7-M2",
+    "caller": "|java+initializer:///org/eclipse/hono/client/impl/TenantClientImpl/TenantClientImpl$initializer|",
+    "called": "|java+constructor:///io/opentracing/tag/StringTag/StringTag(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/opentracing/tag/StringTag/StringTag(java.lang.String)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|"
+    ],
+    "affectedLib": "org.eclipse.hono:hono-core:0.7-M2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.hono:hono-client:0.7-M1",
+    "coordinatesV2": "org.eclipse.hono:hono-client:0.7-M2",
+    "caller": "|java+method:///org/eclipse/hono/client/impl/AbstractRequestResponseClient/cancelRequest(java.lang.Object,io.vertx.core.AsyncResult)|",
+    "called": "|java+method:///org/eclipse/hono/tracing/TracingHelper/logError(io.opentracing.Span,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/eclipse/hono/util/TriTuple/one()|",
+      "|java+method:///io/vertx/core/AsyncResult/failed()|",
+      "|java+method:///java/lang/Throwable/getMessage()|",
+      "|java+method:///io/vertx/core/AsyncResult/cause()|",
+      "|java+method:///java/util/Objects/requireNonNull(java.lang.Object)|",
+      "|java+method:///io/vertx/core/Handler/handle(java.lang.Object)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/util/Map/remove(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/eclipse/hono/util/TriTuple/one()|",
+      "|java+method:///io/vertx/core/AsyncResult/succeeded()|",
+      "|java+method:///java/lang/Throwable/getMessage()|",
+      "|java+method:///io/vertx/core/AsyncResult/cause()|",
+      "|java+method:///java/util/Objects/requireNonNull(java.lang.Object)|",
+      "|java+method:///io/vertx/core/Handler/handle(java.lang.Object)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///org/eclipse/hono/util/TriTuple/three()|",
+      "|java+method:///org/eclipse/hono/tracing/TracingHelper/logError(io.opentracing.Span,java.lang.Throwable)|",
+      "|java+method:///java/util/Map/remove(java.lang.Object)|"
+    ],
+    "affectedLib": "org.eclipse.hono:hono-core:0.7-M2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.hono:hono-client:0.7-M1",
+    "coordinatesV2": "org.eclipse.hono:hono-client:0.7-M2",
+    "caller": "|java+method:///org/eclipse/hono/client/impl/AbstractRequestResponseClient/handleResponse(io.vertx.proton.ProtonDelivery,org.apache.qpid.proton.message.Message)|",
+    "called": "|java+method:///io/vertx/proton/ProtonHelper/released(io.vertx.proton.ProtonDelivery,boolean)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/eclipse/hono/util/TriTuple/one()|",
+      "|java+method:///org/eclipse/hono/util/RequestResponseResult/getStatus()|",
+      "|java+method:///org/apache/qpid/proton/message/Message/getSubject()|",
+      "|java+method:///org/eclipse/hono/client/impl/AbstractRequestResponseClient/getRequestResponseResult(org.apache.qpid.proton.message.Message)|",
+      "|java+method:///io/vertx/core/Handler/handle(java.lang.Object)|",
+      "|java+method:///io/vertx/proton/ProtonHelper/accepted(io.vertx.proton.ProtonDelivery,boolean)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/eclipse/hono/client/impl/AbstractRequestResponseClient/addToCache(java.lang.Object,org.eclipse.hono.util.RequestResponseResult)|",
+      "|java+method:///org/apache/qpid/proton/message/Message/getCorrelationId()|",
+      "|java+method:///io/vertx/proton/ProtonHelper/released(io.vertx.proton.ProtonDelivery,boolean)|",
+      "|java+method:///org/eclipse/hono/util/TriTuple/two()|",
+      "|java+method:///io/vertx/core/Future/succeededFuture(java.lang.Object)|",
+      "|java+method:///java/util/Map/remove(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/eclipse/hono/util/TriTuple/one()|",
+      "|java+method:///org/eclipse/hono/util/RequestResponseResult/getStatus()|",
+      "|java+method:///org/apache/qpid/proton/message/Message/getSubject()|",
+      "|java+method:///io/vertx/proton/ProtonHelper/rejected(io.vertx.proton.ProtonDelivery,boolean)|",
+      "|java+method:///io/opentracing/tag/IntTag/set(io.opentracing.Span,java.lang.Integer)|",
+      "|java+method:///org/eclipse/hono/client/impl/AbstractRequestResponseClient/getRequestResponseResult(org.apache.qpid.proton.message.Message)|",
+      "|java+method:///io/vertx/core/Handler/handle(java.lang.Object)|",
+      "|java+method:///io/opentracing/Span/log(java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/eclipse/hono/client/impl/AbstractRequestResponseClient/addToCache(java.lang.Object,org.eclipse.hono.util.RequestResponseResult)|",
+      "|java+method:///org/apache/qpid/proton/message/Message/getCorrelationId()|",
+      "|java+method:///org/eclipse/hono/util/TriTuple/three()|",
+      "|java+method:///io/vertx/proton/ProtonHelper/released(io.vertx.proton.ProtonDelivery,boolean)|",
+      "|java+method:///org/eclipse/hono/util/TriTuple/two()|",
+      "|java+method:///org/eclipse/hono/tracing/TracingHelper/logError(io.opentracing.Span,java.lang.String)|",
+      "|java+method:///io/vertx/proton/ProtonHelper/accepted(io.vertx.proton.ProtonDelivery,boolean)|",
+      "|java+method:///io/vertx/core/Future/succeededFuture(java.lang.Object)|",
+      "|java+method:///java/util/Map/remove(java.lang.Object)|"
+    ],
+    "affectedLib": "io.vertx:vertx-proton:3.5.2",
+    "change": "UPDATED"
+  }
+]

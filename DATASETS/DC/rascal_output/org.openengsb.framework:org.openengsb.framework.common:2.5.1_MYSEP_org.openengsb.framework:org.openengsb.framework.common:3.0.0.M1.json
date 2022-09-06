@@ -1,0 +1,217 @@
+[
+  {
+    "coordinatesV1": "org.openengsb.framework:org.openengsb.framework.common:3.0.0.M1",
+    "coordinatesV2": "org.openengsb.framework:org.openengsb.framework.common:2.5.1",
+    "caller": "|java+method:///org/openengsb/core/common/remote/JsonMethodCallMarshalFilter/doFilter(java.lang.String,java.util.Map)|",
+    "called": "|java+method:///org/codehaus/jackson/map/ObjectMapper/writeValueAsString(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/openengsb/core/common/util/JsonUtils/createObjectMapperWithIntroSpectors()|",
+      "|java+method:///org/openengsb/core/api/remote/FilterAction/filter(java.lang.Object,java.util.Map)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/writeValueAsString(java.lang.Object)|",
+      "|java+constructor:///org/openengsb/core/api/remote/FilterException/FilterException(java.lang.Throwable)|",
+      "|java+method:///org/openengsb/core/common/util/JsonUtils/convertAllArgs(org.openengsb.core.api.remote.MethodCallRequest)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/openengsb/core/util/JsonUtils/createObjectMapperWithIntroSpectors()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValueAsString(java.lang.Object)|",
+      "|java+method:///org/openengsb/core/api/remote/MethodCallMessage/getMethodCall()|",
+      "|java+method:///java/lang/ClassLoader/loadClass(java.lang.String)|",
+      "|java+method:///org/openengsb/core/api/remote/FilterAction/filter(java.lang.Object,java.util.Map)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/convertValue(java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/openengsb/core/api/remote/MethodCall/getClasses()|",
+      "|java+constructor:///org/openengsb/core/api/remote/FilterException/FilterException(java.lang.Throwable)|",
+      "|java+method:///org/openengsb/core/api/remote/MethodCall/getArgs()|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/Class/getClassLoader()|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.framework:org.openengsb.framework.common:2.5.1",
+    "coordinatesV2": "org.openengsb.framework:org.openengsb.framework.common:3.0.0.M1",
+    "caller": "|java+method:///org/openengsb/core/common/remote/JsonMethodCallMarshalFilter/doFilter(java.lang.String,java.util.Map)|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/convertValue(java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/openengsb/core/common/util/JsonUtils/createObjectMapperWithIntroSpectors()|",
+      "|java+method:///org/openengsb/core/api/remote/FilterAction/filter(java.lang.Object,java.util.Map)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/writeValueAsString(java.lang.Object)|",
+      "|java+constructor:///org/openengsb/core/api/remote/FilterException/FilterException(java.lang.Throwable)|",
+      "|java+method:///org/openengsb/core/common/util/JsonUtils/convertAllArgs(org.openengsb.core.api.remote.MethodCallRequest)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/openengsb/core/util/JsonUtils/createObjectMapperWithIntroSpectors()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValueAsString(java.lang.Object)|",
+      "|java+method:///org/openengsb/core/api/remote/MethodCallMessage/getMethodCall()|",
+      "|java+method:///java/lang/ClassLoader/loadClass(java.lang.String)|",
+      "|java+method:///org/openengsb/core/api/remote/FilterAction/filter(java.lang.Object,java.util.Map)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/convertValue(java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/openengsb/core/api/remote/MethodCall/getClasses()|",
+      "|java+constructor:///org/openengsb/core/api/remote/FilterException/FilterException(java.lang.Throwable)|",
+      "|java+method:///org/openengsb/core/api/remote/MethodCall/getArgs()|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/Class/getClassLoader()|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.2.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.framework:org.openengsb.framework.common:2.5.1",
+    "coordinatesV2": "org.openengsb.framework:org.openengsb.framework.common:3.0.0.M1",
+    "caller": "|java+method:///org/openengsb/core/common/VirtualConnectorFactory/applyAttributes(org.openengsb.core.api.Connector,java.util.Map)|",
+    "called": "|java+method:///com/google/common/collect/Maps/filterKeys(java.util.Map,com.google.common.base.Predicate)|",
+    "v1Body": [
+      "|java+method:///org/openengsb/core/common/VirtualConnectorFactory/updateHandlerAttributes(org.openengsb.core.common.VirtualConnector,java.util.Map)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/openengsb/core/common/VirtualConnectorFactory$2/VirtualConnectorFactory$2(org.openengsb.core.common.VirtualConnectorFactory)|",
+      "|java+constructor:///org/openengsb/core/common/VirtualConnectorFactory$1/VirtualConnectorFactory$1(org.openengsb.core.common.VirtualConnectorFactory)|",
+      "|java+method:///org/openengsb/core/common/VirtualConnectorFactory/updateHandlerAttributes(org.openengsb.core.common.VirtualConnector,java.util.Map)|",
+      "|java+method:///com/google/common/collect/Collections2/transform(java.util.Collection,com.google.common.base.Function)|",
+      "|java+method:///org/openengsb/core/common/VirtualConnectorFactory/createProxy(org.openengsb.core.common.VirtualConnector,java.util.Collection)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/util/Map/values()|",
+      "|java+method:///com/google/common/collect/Maps/filterKeys(java.util.Map,com.google.common.base.Predicate)|"
+    ],
+    "affectedLib": "com.google.guava:guava:14.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.framework:org.openengsb.framework.common:2.5.1",
+    "coordinatesV2": "org.openengsb.framework:org.openengsb.framework.common:3.0.0.M1",
+    "caller": "|java+method:///org/openengsb/core/common/ReferenceCounter/removeFile(java.io.File)|",
+    "called": "|java+method:///com/google/common/collect/Sets/newHashSet(java.lang.Iterable)|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/remove()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/google/common/collect/Sets/newHashSet(java.lang.Iterable)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/isEmpty()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/util/Set/remove(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/remove()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/google/common/collect/Sets/newHashSet(java.lang.Iterable)|",
+      "|java+method:///java/util/Collections/emptySet()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/isEmpty()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/util/Set/remove(java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:14.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.framework:org.openengsb.framework.common:2.5.1",
+    "coordinatesV2": "org.openengsb.framework:org.openengsb.framework.common:3.0.0.M1",
+    "caller": "|java+method:///org/openengsb/core/common/remote/JsonMethodCallMarshalFilter/doFilter(java.lang.String,java.util.Map)|",
+    "called": "|java+method:///org/openengsb/core/util/JsonUtils/createObjectMapperWithIntroSpectors()|",
+    "v1Body": [
+      "|java+method:///org/openengsb/core/common/util/JsonUtils/createObjectMapperWithIntroSpectors()|",
+      "|java+method:///org/openengsb/core/api/remote/FilterAction/filter(java.lang.Object,java.util.Map)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/writeValueAsString(java.lang.Object)|",
+      "|java+constructor:///org/openengsb/core/api/remote/FilterException/FilterException(java.lang.Throwable)|",
+      "|java+method:///org/openengsb/core/common/util/JsonUtils/convertAllArgs(org.openengsb.core.api.remote.MethodCallRequest)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/openengsb/core/util/JsonUtils/createObjectMapperWithIntroSpectors()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValueAsString(java.lang.Object)|",
+      "|java+method:///org/openengsb/core/api/remote/MethodCallMessage/getMethodCall()|",
+      "|java+method:///java/lang/ClassLoader/loadClass(java.lang.String)|",
+      "|java+method:///org/openengsb/core/api/remote/FilterAction/filter(java.lang.Object,java.util.Map)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/convertValue(java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/openengsb/core/api/remote/MethodCall/getClasses()|",
+      "|java+constructor:///org/openengsb/core/api/remote/FilterException/FilterException(java.lang.Throwable)|",
+      "|java+method:///org/openengsb/core/api/remote/MethodCall/getArgs()|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/Class/getClassLoader()|"
+    ],
+    "affectedLib": "org.openengsb.framework:org.openengsb.framework.util:3.0.0.M1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.framework:org.openengsb.framework.common:2.5.1",
+    "coordinatesV2": "org.openengsb.framework:org.openengsb.framework.common:3.0.0.M1",
+    "caller": "|java+method:///org/openengsb/core/common/internal/VirtualConnectorManager/init()|",
+    "called": "|java+method:///org/openengsb/core/util/FilterUtils/makeFilterForClass(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///org/openengsb/core/common/internal/VirtualConnectorManager$1/VirtualConnectorManager$1(org.openengsb.core.common.internal.VirtualConnectorManager)|",
+      "|java+constructor:///org/openengsb/core/common/internal/VirtualConnectorManager$2/VirtualConnectorManager$2(org.openengsb.core.common.internal.VirtualConnectorManager)|",
+      "|java+method:///org/openengsb/core/api/OsgiUtilsService/makeFilterForClass(java.lang.Class)|",
+      "|java+constructor:///org/osgi/util/tracker/ServiceTracker/ServiceTracker(org.osgi.framework.BundleContext,org.osgi.framework.Filter,org.osgi.util.tracker.ServiceTrackerCustomizer)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/openengsb/core/util/FilterUtils/makeFilterForClass(java.lang.Class)|",
+      "|java+constructor:///org/openengsb/core/common/internal/VirtualConnectorManager$1/VirtualConnectorManager$1(org.openengsb.core.common.internal.VirtualConnectorManager)|",
+      "|java+constructor:///org/openengsb/core/common/internal/VirtualConnectorManager$2/VirtualConnectorManager$2(org.openengsb.core.common.internal.VirtualConnectorManager)|",
+      "|java+constructor:///org/osgi/util/tracker/ServiceTracker/ServiceTracker(org.osgi.framework.BundleContext,org.osgi.framework.Filter,org.osgi.util.tracker.ServiceTrackerCustomizer)|"
+    ],
+    "affectedLib": "org.openengsb.framework:org.openengsb.framework.util:3.0.0.M1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.framework:org.openengsb.framework.common:2.5.1",
+    "coordinatesV2": "org.openengsb.framework:org.openengsb.framework.common:3.0.0.M1",
+    "caller": "|java+method:///org/openengsb/core/common/internal/VirtualConnectorManager/init()|",
+    "called": "|java+constructor:///org/osgi/util/tracker/ServiceTracker/ServiceTracker(org.osgi.framework.BundleContext,org.osgi.framework.Filter,org.osgi.util.tracker.ServiceTrackerCustomizer)|",
+    "v1Body": [
+      "|java+constructor:///org/openengsb/core/common/internal/VirtualConnectorManager$1/VirtualConnectorManager$1(org.openengsb.core.common.internal.VirtualConnectorManager)|",
+      "|java+constructor:///org/openengsb/core/common/internal/VirtualConnectorManager$2/VirtualConnectorManager$2(org.openengsb.core.common.internal.VirtualConnectorManager)|",
+      "|java+method:///org/openengsb/core/api/OsgiUtilsService/makeFilterForClass(java.lang.Class)|",
+      "|java+constructor:///org/osgi/util/tracker/ServiceTracker/ServiceTracker(org.osgi.framework.BundleContext,org.osgi.framework.Filter,org.osgi.util.tracker.ServiceTrackerCustomizer)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/openengsb/core/util/FilterUtils/makeFilterForClass(java.lang.Class)|",
+      "|java+constructor:///org/openengsb/core/common/internal/VirtualConnectorManager$1/VirtualConnectorManager$1(org.openengsb.core.common.internal.VirtualConnectorManager)|",
+      "|java+constructor:///org/openengsb/core/common/internal/VirtualConnectorManager$2/VirtualConnectorManager$2(org.openengsb.core.common.internal.VirtualConnectorManager)|",
+      "|java+constructor:///org/osgi/util/tracker/ServiceTracker/ServiceTracker(org.osgi.framework.BundleContext,org.osgi.framework.Filter,org.osgi.util.tracker.ServiceTrackerCustomizer)|"
+    ],
+    "affectedLib": "org.osgi:org.osgi.compendium:4.3.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.framework:org.openengsb.framework.common:2.5.1",
+    "coordinatesV2": "org.openengsb.framework:org.openengsb.framework.common:3.0.0.M1",
+    "caller": "|java+method:///org/openengsb/core/common/remote/JsonMethodCallMarshalFilter/doFilter(java.lang.String,java.util.Map)|",
+    "called": "|java+constructor:///org/openengsb/core/api/remote/FilterException/FilterException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/openengsb/core/common/util/JsonUtils/createObjectMapperWithIntroSpectors()|",
+      "|java+method:///org/openengsb/core/api/remote/FilterAction/filter(java.lang.Object,java.util.Map)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/writeValueAsString(java.lang.Object)|",
+      "|java+constructor:///org/openengsb/core/api/remote/FilterException/FilterException(java.lang.Throwable)|",
+      "|java+method:///org/openengsb/core/common/util/JsonUtils/convertAllArgs(org.openengsb.core.api.remote.MethodCallRequest)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/openengsb/core/util/JsonUtils/createObjectMapperWithIntroSpectors()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValueAsString(java.lang.Object)|",
+      "|java+method:///org/openengsb/core/api/remote/MethodCallMessage/getMethodCall()|",
+      "|java+method:///java/lang/ClassLoader/loadClass(java.lang.String)|",
+      "|java+method:///org/openengsb/core/api/remote/FilterAction/filter(java.lang.Object,java.util.Map)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/convertValue(java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/openengsb/core/api/remote/MethodCall/getClasses()|",
+      "|java+constructor:///org/openengsb/core/api/remote/FilterException/FilterException(java.lang.Throwable)|",
+      "|java+method:///org/openengsb/core/api/remote/MethodCall/getArgs()|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/Class/getClassLoader()|"
+    ],
+    "affectedLib": "org.openengsb.framework:org.openengsb.framework.api:3.0.0.M1",
+    "change": "UPDATED"
+  }
+]

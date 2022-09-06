@@ -1,0 +1,50 @@
+[
+  {
+    "coordinatesV1": "org.ops4j.pax.cdi:pax-cdi-jetty-openwebbeans:1.0.0.RC2",
+    "coordinatesV2": "org.ops4j.pax.cdi:pax-cdi-jetty-openwebbeans:0.9.0",
+    "caller": "|java+method:///org/ops4j/pax/cdi/jetty/openwebbeans/impl/OpenWebBeansListener/requestDestroyed(javax.servlet.ServletRequestEvent)|",
+    "called": "|java+method:///org/apache/webbeans/web/context/WebContextsService/removeThreadLocals()|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/apache/webbeans/el/ELContextStore/getInstance(boolean)|",
+      "|java+method:///org/apache/webbeans/el/ELContextStore/destroyELContextStore()|",
+      "|java+method:///org/apache/webbeans/spi/ContainerLifecycle/getContextService()|",
+      "|java+method:///org/apache/webbeans/spi/ContextsService/endContext(java.lang.Class,java.lang.Object)|",
+      "|java+method:///org/apache/webbeans/web/context/WebContextsService/removeThreadLocals()|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/servlet/ServletRequest/getRemoteAddr()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apache/webbeans/el/ELContextStore/getInstance(boolean)|",
+      "|java+method:///org/ops4j/pax/cdi/jetty/openwebbeans/impl/OpenWebBeansListener/cleanupRequestThreadLocals()|",
+      "|java+method:///org/apache/webbeans/el/ELContextStore/destroyELContextStore()|",
+      "|java+method:///javax/servlet/ServletRequestEvent/getServletRequest()|",
+      "|java+method:///org/apache/webbeans/spi/ContainerLifecycle/getContextService()|",
+      "|java+method:///org/apache/webbeans/spi/ContextsService/endContext(java.lang.Class,java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.openwebbeans:openwebbeans-web:1.2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.ops4j.pax.cdi:pax-cdi-jetty-openwebbeans:1.0.0.RC2",
+    "coordinatesV2": "org.ops4j.pax.cdi:pax-cdi-jetty-openwebbeans:0.9.0",
+    "caller": "|java+method:///org/ops4j/pax/cdi/jetty/openwebbeans/impl/JettyDecorator/register(javax.servlet.ServletContext)|",
+    "called": "|java+method:///org/eclipse/jetty/servlet/ServletContextHandler/addDecorator(org.eclipse.jetty.servlet.ServletContextHandler$Decorator)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/jetty/servlet/ServletContextHandler/addDecorator(org.eclipse.jetty.servlet.ServletContextHandler$Decorator)|",
+      "|java+method:///org/ops4j/pax/cdi/jetty/openwebbeans/impl/JettyDecorator/adaptContextClassLoader(javax.servlet.ServletContext,org.eclipse.jetty.server.handler.ContextHandler)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///org/eclipse/jetty/server/handler/ContextHandler$Context/getContextHandler()|",
+      "|java+constructor:///org/ops4j/pax/cdi/jetty/openwebbeans/impl/JettyDecorator/JettyDecorator(javax.servlet.ServletContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/jetty/servlet/ServletContextHandler/getObjectFactory()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///org/eclipse/jetty/server/handler/ContextHandler$Context/getContextHandler()|",
+      "|java+method:///org/eclipse/jetty/util/DecoratedObjectFactory/addDecorator(org.eclipse.jetty.util.Decorator)|",
+      "|java+constructor:///org/ops4j/pax/cdi/jetty/openwebbeans/impl/JettyDecorator/JettyDecorator(javax.servlet.ServletContext)|"
+    ],
+    "affectedLib": "org.eclipse.jetty:jetty-servlet:9.1.5.v20140505",
+    "change": "REMOVED"
+  }
+]

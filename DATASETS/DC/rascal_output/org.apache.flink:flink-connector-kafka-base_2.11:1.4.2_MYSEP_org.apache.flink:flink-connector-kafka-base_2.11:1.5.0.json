@@ -1,0 +1,68 @@
+[
+  {
+    "coordinatesV1": "org.apache.flink:flink-connector-kafka-base_2.11:1.4.2",
+    "coordinatesV2": "org.apache.flink:flink-connector-kafka-base_2.11:1.5.0",
+    "caller": "|java+constructor:///org/apache/flink/streaming/util/serialization/JsonRowDeserializationSchema/JsonRowDeserializationSchema(org.apache.flink.api.common.typeinfo.TypeInformation)|",
+    "called": "|java+constructor:///org/apache/flink/formats/json/JsonRowDeserializationSchema/JsonRowDeserializationSchema(org.apache.flink.api.common.typeinfo.TypeInformation)|",
+    "v1Body": [
+      "|java+method:///org/apache/flink/util/Preconditions/checkNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/apache/flink/api/java/typeutils/RowTypeInfo/getFieldNames()|",
+      "|java+constructor:///org/apache/flink/shaded/jackson2/com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+      "|java+method:///org/apache/flink/api/java/typeutils/RowTypeInfo/getFieldTypes()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/flink/formats/json/JsonRowDeserializationSchema/JsonRowDeserializationSchema(org.apache.flink.api.common.typeinfo.TypeInformation)|"
+    ],
+    "affectedLib": "org.apache.flink:flink-json:1.5.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.flink:flink-connector-kafka-base_2.11:1.4.2",
+    "coordinatesV2": "org.apache.flink:flink-connector-kafka-base_2.11:1.5.0",
+    "caller": "|java+method:///org/apache/flink/streaming/connectors/kafka/KafkaJsonTableSource/getDeserializationSchema()|",
+    "called": "|java+constructor:///org/apache/flink/formats/json/JsonRowDeserializationSchema/JsonRowDeserializationSchema(org.apache.flink.api.common.typeinfo.TypeInformation)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/flink/streaming/util/serialization/JsonRowDeserializationSchema/JsonRowDeserializationSchema(org.apache.flink.api.common.typeinfo.TypeInformation)|",
+      "|java+method:///org/apache/flink/streaming/connectors/kafka/KafkaJsonTableSource/jsonSchemaToReturnType(org.apache.flink.table.api.TableSchema)|",
+      "|java+method:///org/apache/flink/streaming/util/serialization/JsonRowDeserializationSchema/setFailOnMissingField(boolean)|",
+      "|java+method:///org/apache/flink/streaming/connectors/kafka/KafkaJsonTableSource/getDeserializationSchema()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/flink/streaming/connectors/kafka/KafkaJsonTableSource/jsonSchemaToReturnType(org.apache.flink.table.api.TableSchema)|",
+      "|java+method:///org/apache/flink/streaming/connectors/kafka/KafkaJsonTableSource/getDeserializationSchema()|",
+      "|java+constructor:///org/apache/flink/formats/json/JsonRowDeserializationSchema/JsonRowDeserializationSchema(org.apache.flink.api.common.typeinfo.TypeInformation)|",
+      "|java+method:///org/apache/flink/formats/json/JsonRowDeserializationSchema/setFailOnMissingField(boolean)|"
+    ],
+    "affectedLib": "org.apache.flink:flink-json:1.5.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.flink:flink-connector-kafka-base_2.11:1.4.2",
+    "coordinatesV2": "org.apache.flink:flink-connector-kafka-base_2.11:1.5.0",
+    "caller": "|java+method:///org/apache/flink/streaming/connectors/kafka/KafkaJsonTableSink/createSerializationSchema(org.apache.flink.api.java.typeutils.RowTypeInfo)|",
+    "called": "|java+constructor:///org/apache/flink/formats/json/JsonRowSerializationSchema/JsonRowSerializationSchema(org.apache.flink.api.common.typeinfo.TypeInformation)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/flink/streaming/util/serialization/JsonRowSerializationSchema/JsonRowSerializationSchema(org.apache.flink.api.java.typeutils.RowTypeInfo)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/flink/formats/json/JsonRowSerializationSchema/JsonRowSerializationSchema(org.apache.flink.api.common.typeinfo.TypeInformation)|"
+    ],
+    "affectedLib": "org.apache.flink:flink-json:1.5.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.flink:flink-connector-kafka-base_2.11:1.4.2",
+    "coordinatesV2": "org.apache.flink:flink-connector-kafka-base_2.11:1.5.0",
+    "caller": "|java+constructor:///org/apache/flink/streaming/util/serialization/JSONDeserializationSchema/JSONDeserializationSchema()|",
+    "called": "|java+constructor:///org/apache/flink/formats/json/JsonNodeDeserializationSchema/JsonNodeDeserializationSchema()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/flink/api/common/serialization/AbstractDeserializationSchema/AbstractDeserializationSchema()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/flink/formats/json/JsonNodeDeserializationSchema/JsonNodeDeserializationSchema()|"
+    ],
+    "affectedLib": "org.apache.flink:flink-json:1.5.0",
+    "change": "ADDED"
+  }
+]

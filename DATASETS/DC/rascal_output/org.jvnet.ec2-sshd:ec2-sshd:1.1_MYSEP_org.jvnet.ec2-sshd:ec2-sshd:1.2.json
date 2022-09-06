@@ -1,0 +1,42 @@
+[
+  {
+    "coordinatesV1": "org.jvnet.ec2-sshd:ec2-sshd:1.1",
+    "coordinatesV2": "org.jvnet.ec2-sshd:ec2-sshd:1.2",
+    "caller": "|java+method:///org/jvnet/ec2sshd/Main/main(java.lang.String%5B%5D)|",
+    "called": "|java+method:///org/kohsuke/args4j/CmdLineParser/parseArgument(java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/sshd/SshServer/setUpDefaultServer()|",
+      "|java+method:///org/apache/sshd/SshServer/setShellFactory(org.apache.sshd.server.ShellFactory)|",
+      "|java+constructor:///org/apache/sshd/server/command/ScpCommandFactory/ScpCommandFactory(org.apache.sshd.server.CommandFactory)|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/sshd/common/util/SecurityUtils/setRegisterBouncyCastle(boolean)|",
+      "|java+constructor:///org/apache/sshd/server/auth/UserAuthPublicKey$Factory/UserAuthPublicKey$Factory()|",
+      "|java+constructor:///org/apache/sshd/server/shell/ProcessShellFactory/ProcessShellFactory(java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/sshd/SshServer/setUserAuthFactories(java.util.List)|",
+      "|java+constructor:///org/apache/sshd/common/cipher/TripleDESCBC$Factory/TripleDESCBC$Factory()|",
+      "|java+constructor:///org/apache/sshd/common/cipher/BlowfishCBC$Factory/BlowfishCBC$Factory()|",
+      "|java+method:///org/apache/sshd/SshServer/setCipherFactories(java.util.List)|",
+      "|java+method:///org/apache/sshd/SshServer/setPort(int)|",
+      "|java+constructor:///org/apache/sshd/common/cipher/AES128CBC$Factory/AES128CBC$Factory()|",
+      "|java+method:///org/apache/sshd/SshServer/setCommandFactory(org.apache.sshd.server.CommandFactory)|",
+      "|java+method:///org/apache/sshd/SshServer/start()|",
+      "|java+constructor:///org/jvnet/ec2sshd/KeyPairProviderImpl/KeyPairProviderImpl()|",
+      "|java+method:///org/apache/sshd/SshServer/setPublickeyAuthenticator(org.apache.sshd.server.PublickeyAuthenticator)|",
+      "|java+method:///org/apache/sshd/SshServer/setKeyPairProvider(org.apache.sshd.common.KeyPairProvider)|",
+      "|java+constructor:///org/jvnet/ec2sshd/CommandFactoryImpl/CommandFactoryImpl()|",
+      "|java+constructor:///org/jvnet/ec2sshd/Main$1/Main$1()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+constructor:///org/jvnet/ec2sshd/Main/Main()|",
+      "|java+method:///java/lang/System/exit(int)|",
+      "|java+method:///org/kohsuke/args4j/CmdLineParser/parseArgument(java.lang.String%5B%5D)|",
+      "|java+constructor:///org/kohsuke/args4j/CmdLineParser/CmdLineParser(java.lang.Object)|",
+      "|java+method:///org/kohsuke/args4j/CmdLineParser/printUsage(java.io.OutputStream)|",
+      "|java+method:///org/jvnet/ec2sshd/Main/run()|",
+      "|java+method:///org/kohsuke/args4j/CmdLineException/getMessage()|"
+    ],
+    "affectedLib": "args4j:args4j:2.0.13",
+    "change": "ADDED"
+  }
+]

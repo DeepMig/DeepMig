@@ -1,0 +1,121 @@
+[
+  {
+    "coordinatesV1": "io.eels:eel-hive_2.11:0.16.1",
+    "coordinatesV2": "io.eels:eel-hive_2.11:0.17.0",
+    "caller": "|java+method:///io/eels/component/hive/ParquetHiveDialect$$anon$2/iter$lzycompute()|",
+    "called": "|java+method:///io/eels/component/parquet/ParquetIterator$/apply(org.apache.hadoop.fs.Path)|",
+    "v1Body": [
+      "|java+method:///io/eels/component/hive/ParquetHiveDialect$$anon$2/ps()|",
+      "|java+method:///io/eels/component/parquet/ParquetSource/reader()|",
+      "|java+method:///io/eels/Reader/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/eels/component/parquet/ParquetIterator$/apply(org.apache.hadoop.fs.Path)|"
+    ],
+    "affectedLib": "io.eels:eel-parquet_2.11:0.17.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.eels:eel-hive_2.11:0.16.1",
+    "coordinatesV2": "io.eels:eel-hive_2.11:0.17.0",
+    "caller": "|java+method:///io/eels/component/hive/ParquetHiveDialect$$anon$2/next()|",
+    "called": "|java+constructor:///io/eels/Row/Row(scala.collection.immutable.List,scala.collection.immutable.List)|",
+    "v1Body": [
+      "|java+method:///scala/collection/Iterator/next()|",
+      "|java+method:///io/eels/Row/fields()|",
+      "|java+method:///io/eels/component/hive/ParquetHiveDialect$$anon$2/next()|",
+      "|java+method:///io/eels/component/hive/ParquetHiveDialect$$anon$2/iter()|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/collection/immutable/List$/canBuildFrom()|",
+      "|java+constructor:///io/eels/component/hive/ParquetHiveDialect$$anon$2$$anonfun$2/ParquetHiveDialect$$anon$2$$anonfun$2(io.eels.component.hive.ParquetHiveDialect$$anon$2,scala.collection.immutable.Map)|",
+      "|java+method:///scala/collection/Iterator/next()|",
+      "|java+method:///io/eels/Row/toMap()|",
+      "|java+method:///io/eels/component/hive/ParquetHiveDialect$$anon$2/next()|",
+      "|java+constructor:///io/eels/Row/Row(scala.collection.immutable.List,scala.collection.immutable.List)|",
+      "|java+method:///io/eels/component/hive/ParquetHiveDialect$$anon$2/iter()|",
+      "|java+method:///io/eels/FrameSchema/columns()|",
+      "|java+method:///scala/collection/immutable/List/map(scala.Function1,scala.collection.generic.CanBuildFrom)|"
+    ],
+    "affectedLib": "io.eels:eel-core_2.11:0.17.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.eels:eel-hive_2.11:0.16.1",
+    "coordinatesV2": "io.eels:eel-hive_2.11:0.17.0",
+    "caller": "|java+method:///io/eels/component/hive/TextHiveDialect$$anon$1/next()|",
+    "called": "|java+constructor:///io/eels/Row/Row(scala.collection.immutable.List,scala.collection.immutable.List)|",
+    "v1Body": [
+      "|java+method:///scala/Predef$/augmentString(java.lang.String)|",
+      "|java+method:///scala/Array$/canBuildFrom(scala.reflect.ClassTag)|",
+      "|java+method:///scala/collection/Iterator/next()|",
+      "|java+method:///scala/collection/mutable/ArrayOps/map(scala.Function1,scala.collection.generic.CanBuildFrom)|",
+      "|java+method:///io/eels/component/hive/TextHiveDialect$$anon$1/next()|",
+      "|java+constructor:///io/eels/component/hive/TextHiveDialect$$anon$1$$anonfun$1/TextHiveDialect$$anon$1$$anonfun$1(io.eels.component.hive.TextHiveDialect$$anon$1)|",
+      "|java+method:///io/eels/component/hive/TextHiveDialect$$anon$1/iter()|",
+      "|java+constructor:///scala/collection/mutable/StringBuilder/StringBuilder()|",
+      "|java+method:///scala/collection/mutable/ArrayOps/toList()|",
+      "|java+method:///scala/collection/mutable/StringBuilder/append(java.lang.Object)|",
+      "|java+constructor:///scala/collection/immutable/StringOps/StringOps(java.lang.String)|",
+      "|java+method:///scala/collection/immutable/StringOps/split(char)|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///scala/collection/mutable/StringBuilder/toString()|",
+      "|java+method:///scala/reflect/ClassTag$/apply(java.lang.Class)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///com/typesafe/scalalogging/slf4j/Logger/underlying()|",
+      "|java+method:///io/eels/component/hive/TextHiveDialect$/logger()|",
+      "|java+method:///io/eels/component/hive/TextHiveDialect$/delimiter()|",
+      "|java+method:///scala/Predef$/refArrayOps(java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/collection/immutable/List$/canBuildFrom()|",
+      "|java+method:///scala/Array$/canBuildFrom(scala.reflect.ClassTag)|",
+      "|java+method:///scala/collection/Iterator/next()|",
+      "|java+method:///scala/collection/mutable/ArrayOps/map(scala.Function1,scala.collection.generic.CanBuildFrom)|",
+      "|java+method:///io/eels/component/hive/TextHiveDialect$$anon$1/next()|",
+      "|java+constructor:///io/eels/component/hive/TextHiveDialect$$anon$1$$anonfun$1/TextHiveDialect$$anon$1$$anonfun$1(io.eels.component.hive.TextHiveDialect$$anon$1)|",
+      "|java+method:///io/eels/component/hive/TextHiveDialect$$anon$1/iter()|",
+      "|java+constructor:///io/eels/Row/Row(scala.collection.immutable.List,scala.collection.immutable.List)|",
+      "|java+constructor:///scala/collection/mutable/StringBuilder/StringBuilder()|",
+      "|java+method:///scala/collection/immutable/List/size()|",
+      "|java+method:///scala/collection/mutable/ArrayOps/toList()|",
+      "|java+constructor:///scala/collection/immutable/StringOps/StringOps(java.lang.String)|",
+      "|java+method:///scala/collection/immutable/StringOps/split(char)|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///scala/collection/mutable/StringBuilder/toString()|",
+      "|java+method:///scala/reflect/ClassTag$/apply(java.lang.Class)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///scala/collection/immutable/List/padTo(int,java.lang.Object,scala.collection.generic.CanBuildFrom)|",
+      "|java+method:///scala/Predef$/augmentString(java.lang.String)|",
+      "|java+method:///com/typesafe/scalalogging/slf4j/Logger/underlying()|",
+      "|java+method:///io/eels/component/hive/TextHiveDialect$/logger()|",
+      "|java+method:///scala/collection/mutable/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///io/eels/FrameSchema/columns()|",
+      "|java+method:///io/eels/component/hive/TextHiveDialect$/delimiter()|",
+      "|java+method:///scala/Predef$/refArrayOps(java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "io.eels:eel-core_2.11:0.17.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.eels:eel-hive_2.11:0.16.1",
+    "coordinatesV2": "io.eels:eel-hive_2.11:0.17.0",
+    "caller": "|java+method:///io/eels/component/hive/FrameSchemaBuilder$/apply(scala.collection.mutable.Buffer)|",
+    "called": "|java+constructor:///io/eels/FrameSchema/FrameSchema(scala.collection.immutable.List)|",
+    "v1Body": [
+      "|java+constructor:///io/eels/component/hive/FrameSchemaBuilder$$anonfun$1/FrameSchemaBuilder$$anonfun$1()|",
+      "|java+constructor:///io/eels/FrameSchema/FrameSchema(scala.collection.Seq)|",
+      "|java+method:///scala/collection/mutable/Buffer/map(scala.Function1,scala.collection.generic.CanBuildFrom)|",
+      "|java+method:///scala/collection/mutable/Buffer$/canBuildFrom()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/eels/component/hive/FrameSchemaBuilder$$anonfun$1/FrameSchemaBuilder$$anonfun$1()|",
+      "|java+method:///scala/collection/mutable/Buffer/map(scala.Function1,scala.collection.generic.CanBuildFrom)|",
+      "|java+method:///scala/collection/mutable/Buffer$/canBuildFrom()|",
+      "|java+method:///scala/collection/mutable/Buffer/toList()|",
+      "|java+constructor:///io/eels/FrameSchema/FrameSchema(scala.collection.immutable.List)|"
+    ],
+    "affectedLib": "io.eels:eel-core_2.11:0.17.0",
+    "change": "UPDATED"
+  }
+]

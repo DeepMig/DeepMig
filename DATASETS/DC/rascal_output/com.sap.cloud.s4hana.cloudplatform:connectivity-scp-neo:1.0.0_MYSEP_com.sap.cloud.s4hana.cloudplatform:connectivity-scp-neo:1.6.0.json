@@ -1,0 +1,108 @@
+[
+  {
+    "coordinatesV1": "com.sap.cloud.s4hana.cloudplatform:connectivity-scp-neo:1.0.0",
+    "coordinatesV2": "com.sap.cloud.s4hana.cloudplatform:connectivity-scp-neo:1.6.0",
+    "caller": "|java+method:///com/sap/cloud/sdk/cloudplatform/connectivity/GetAuthHeadersCommand$CommandSetterBuilder/getCommandKey(java.lang.String,java.net.URI)|",
+    "called": "|java+method:///com/sap/cloud/sdk/frameworks/hystrix/HystrixUtil/getBestEffortIsolatedKey(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/sap/cloud/sdk/frameworks/hystrix/HystrixUtil/getTenantIsolatedKey(java.lang.Class)|",
+      "|java+method:///com/sap/cloud/sdk/frameworks/hystrix/HystrixUtil/getUserIsolatedKey(java.lang.Class)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/sap/cloud/sdk/cloudplatform/connectivity/GetAuthHeadersCommand/access$000()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/sap/cloud/sdk/frameworks/hystrix/HystrixUtil/getBestEffortIsolatedKey(java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/sap/cloud/sdk/cloudplatform/connectivity/GetAuthHeadersCommand/access$000()|"
+    ],
+    "affectedLib": "com.sap.cloud.s4hana.frameworks:hystrix:1.6.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.sap.cloud.s4hana.cloudplatform:connectivity-scp-neo:1.0.0",
+    "coordinatesV2": "com.sap.cloud.s4hana.cloudplatform:connectivity-scp-neo:1.6.0",
+    "caller": "|java+constructor:///com/sap/cloud/sdk/cloudplatform/connectivity/ScpNeoDestinationFacade/ScpNeoDestinationFacade()|",
+    "called": "|java+constructor:///com/sap/cloud/sdk/cloudplatform/connectivity/AbstractDestinationFacade/AbstractDestinationFacade()|",
+    "v1Body": [
+      "|java+method:///com/google/common/collect/Sets/newConcurrentHashSet()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/sap/cloud/sdk/cloudplatform/connectivity/ScpNeoDestinationFactory/ScpNeoDestinationFactory()|",
+      "|java+constructor:///com/sap/cloud/sdk/cloudplatform/connectivity/ScpNeoDestinationParser/ScpNeoDestinationParser()|",
+      "|java+method:///com/google/common/collect/Sets/newConcurrentHashSet()|",
+      "|java+constructor:///com/sap/cloud/sdk/cloudplatform/connectivity/AbstractDestinationFacade/AbstractDestinationFacade()|"
+    ],
+    "affectedLib": "com.sap.cloud.s4hana.cloudplatform:connectivity:1.6.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.sap.cloud.s4hana.cloudplatform:connectivity-scp-neo:1.0.0",
+    "coordinatesV2": "com.sap.cloud.s4hana.cloudplatform:connectivity-scp-neo:1.6.0",
+    "caller": "|java+method:///com/sap/cloud/sdk/cloudplatform/connectivity/GetAuthHeadersCommand/run()|",
+    "called": "|java+constructor:///com/sap/cloud/sdk/cloudplatform/connectivity/exception/DestinationOAuthTokenException/DestinationOAuthTokenException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///com/sap/cloud/sdk/cloudplatform/connectivity/GetAuthHeadersCommand/transformHeader(com.sap.core.connectivity.api.authentication.AuthenticationHeader)|",
+      "|java+method:///java/lang/String/hashCode()|",
+      "|java+method:///com/sap/cloud/sdk/cloudplatform/connectivity/exception/DestinationAccessException/raiseOAuthTokenFetchFailed(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/net/URI/toString()|",
+      "|java+method:///com/google/common/collect/Lists/newArrayList()|",
+      "|java+method:///java/util/List/addAll(java.util.Collection)|",
+      "|java+method:///java/lang/RuntimeException/getMessage()|",
+      "|java+method:///com/sap/cloud/sdk/cloudplatform/connectivity/GetAuthHeadersCommand/getAuthenticationHeaderProvider()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///com/sap/cloud/sdk/cloudplatform/connectivity/ScpNeoDestination/getDestinationConfiguration()|",
+      "|java+method:///java/lang/String/contains(java.lang.CharSequence)|",
+      "|java+method:///com/sap/cloud/sdk/cloudplatform/connectivity/ScpNeoDestination/getName()|",
+      "|java+constructor:///com/sap/cloud/sdk/cloudplatform/connectivity/exception/DestinationAccessException/DestinationAccessException(java.lang.Throwable)|",
+      "|java+method:///com/sap/cloud/sdk/cloudplatform/connectivity/GetAuthHeadersCommand/transformHeaders(java.lang.Iterable)|",
+      "|java+method:///com/sap/core/connectivity/api/authentication/AuthenticationHeaderProvider/getPrincipalPropagationHeader()|",
+      "|java+method:///com/sap/core/connectivity/api/authentication/AuthenticationHeaderProvider/getSAPAssertionHeader(com.sap.core.connectivity.api.configuration.DestinationConfiguration)|",
+      "|java+method:///com/sap/core/connectivity/api/authentication/AuthenticationHeaderProvider/getOAuth2SAMLBearerAssertionHeaders(com.sap.core.connectivity.api.configuration.DestinationConfiguration)|",
+      "|java+method:///com/sap/cloud/sdk/cloudplatform/connectivity/ScpNeoDestination/getUri()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///com/sap/cloud/sdk/cloudplatform/connectivity/GetAuthHeadersCommand/run()|",
+      "|java+method:///com/sap/cloud/sdk/cloudplatform/connectivity/GetAuthHeadersCommand/newBasicHeader(com.sap.core.connectivity.api.configuration.DestinationConfiguration)|",
+      "|java+method:///com/sap/cloud/sdk/cloudplatform/connectivity/GetAuthHeadersCommand/getAuthenticationProperty(com.sap.core.connectivity.api.configuration.DestinationConfiguration)|",
+      "|java+method:///com/sap/core/connectivity/api/authentication/AuthenticationHeaderProvider/getApptoAppSSOHeader(java.lang.String,com.sap.core.connectivity.api.configuration.DestinationConfiguration)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/sap/cloud/sdk/cloudplatform/connectivity/GetAuthHeadersCommand/transformHeader(com.sap.core.connectivity.api.authentication.AuthenticationHeader)|",
+      "|java+method:///java/lang/String/hashCode()|",
+      "|java+constructor:///com/sap/cloud/sdk/cloudplatform/connectivity/exception/DestinationOAuthTokenException/DestinationOAuthTokenException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/net/URI/toString()|",
+      "|java+method:///com/google/common/collect/Lists/newArrayList()|",
+      "|java+method:///java/util/List/addAll(java.util.Collection)|",
+      "|java+method:///java/lang/RuntimeException/getMessage()|",
+      "|java+method:///com/sap/cloud/sdk/cloudplatform/connectivity/GetAuthHeadersCommand/getAuthenticationHeaderProvider()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///com/sap/cloud/sdk/cloudplatform/connectivity/ScpNeoDestination/getDestinationConfiguration()|",
+      "|java+method:///java/lang/String/contains(java.lang.CharSequence)|",
+      "|java+method:///com/sap/cloud/sdk/cloudplatform/connectivity/ScpNeoDestination/getName()|",
+      "|java+constructor:///com/sap/cloud/sdk/cloudplatform/connectivity/exception/DestinationAccessException/DestinationAccessException(java.lang.Throwable)|",
+      "|java+method:///com/sap/cloud/sdk/cloudplatform/connectivity/GetAuthHeadersCommand/transformHeaders(java.lang.Iterable)|",
+      "|java+method:///com/sap/core/connectivity/api/authentication/AuthenticationHeaderProvider/getPrincipalPropagationHeader()|",
+      "|java+method:///com/sap/core/connectivity/api/authentication/AuthenticationHeaderProvider/getSAPAssertionHeader(com.sap.core.connectivity.api.configuration.DestinationConfiguration)|",
+      "|java+method:///com/sap/core/connectivity/api/authentication/AuthenticationHeaderProvider/getOAuth2SAMLBearerAssertionHeaders(com.sap.core.connectivity.api.configuration.DestinationConfiguration)|",
+      "|java+method:///com/sap/cloud/sdk/cloudplatform/connectivity/ScpNeoDestination/getUri()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///com/sap/cloud/sdk/cloudplatform/connectivity/GetAuthHeadersCommand/run()|",
+      "|java+method:///com/sap/cloud/sdk/cloudplatform/connectivity/GetAuthHeadersCommand/newBasicHeader(com.sap.core.connectivity.api.configuration.DestinationConfiguration)|",
+      "|java+method:///com/sap/cloud/sdk/cloudplatform/connectivity/GetAuthHeadersCommand/getAuthenticationProperty(com.sap.core.connectivity.api.configuration.DestinationConfiguration)|",
+      "|java+method:///com/sap/core/connectivity/api/authentication/AuthenticationHeaderProvider/getApptoAppSSOHeader(java.lang.String,com.sap.core.connectivity.api.configuration.DestinationConfiguration)|"
+    ],
+    "affectedLib": "com.sap.cloud.s4hana.cloudplatform:connectivity:1.6.0",
+    "change": "UPDATED"
+  }
+]

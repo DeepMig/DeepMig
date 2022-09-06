@@ -1,0 +1,914 @@
+[
+  {
+    "coordinatesV1": "org.apache.hyracks:algebricks-runtime:0.2.17-incubating",
+    "coordinatesV2": "org.apache.hyracks:algebricks-runtime:0.3.0",
+    "caller": "|java+method:///org/apache/hyracks/algebricks/runtime/operators/aggreg/AggregateRuntimeFactory$1/computeAggregate()|",
+    "called": "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/addField(byte%5B%5D,int,int)|",
+    "v1Body": [
+      "|java+method:///org/apache/hyracks/algebricks/runtime/base/IAggregateEvaluator/finish(org.apache.hyracks.data.std.api.IPointable)|",
+      "|java+constructor:///org/apache/hyracks/api/exceptions/HyracksDataException/HyracksDataException(java.lang.Throwable)|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/getLength()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/addField(byte%5B%5D,int,int)|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/getStartOffset()|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/getByteArray()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/reset()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hyracks/algebricks/runtime/base/IAggregateEvaluator/finish(org.apache.hyracks.data.std.api.IPointable)|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/getLength()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/addField(byte%5B%5D,int,int)|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/getStartOffset()|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/getByteArray()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/reset()|"
+    ],
+    "affectedLib": "org.apache.hyracks:hyracks-dataflow-common:0.3.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.hyracks:algebricks-runtime:0.2.17-incubating",
+    "coordinatesV2": "org.apache.hyracks:algebricks-runtime:0.3.0",
+    "caller": "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/EmptyTupleSourceRuntimeFactory$1/open()|",
+    "called": "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAppender/append(int%5B%5D,byte%5B%5D,int,int)|",
+    "v1Body": [
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/getSize()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/getByteArray()|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAppender/append(int%5B%5D,byte%5B%5D,int,int)|",
+      "|java+method:///org/apache/hyracks/api/comm/IFrameWriter/open()|",
+      "|java+method:///org/apache/hyracks/api/comm/IFrameWriter/close()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/getFieldEndOffsets()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAppender/flush(org.apache.hyracks.api.comm.IFrameWriter,boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/getSize()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/getByteArray()|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAppender/append(int%5B%5D,byte%5B%5D,int,int)|",
+      "|java+method:///org/apache/hyracks/api/comm/IFrameWriter/open()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAppender/write(org.apache.hyracks.api.comm.IFrameWriter,boolean)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/getFieldEndOffsets()|"
+    ],
+    "affectedLib": "org.apache.hyracks:hyracks-dataflow-common:0.3.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.hyracks:algebricks-runtime:0.2.17-incubating",
+    "coordinatesV2": "org.apache.hyracks:algebricks-runtime:0.3.0",
+    "caller": "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamSelectRuntimeFactory$1/nextFrame(java.nio.ByteBuffer)|",
+    "called": "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/reset(java.nio.ByteBuffer)|",
+    "v1Body": [
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamSelectRuntimeFactory$1/appendTupleToFrame(int)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/getSize()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/data/accessors/FrameTupleReference/reset(org.apache.hyracks.api.comm.IFrameTupleAccessor,int)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamSelectRuntimeFactory$1/appendProjectionToFrame(int,int%5B%5D)|",
+      "|java+method:///org/apache/hyracks/algebricks/data/IBinaryBooleanInspector/getBooleanValue(byte%5B%5D,int,int)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamSelectRuntimeFactory/access$100(org.apache.hyracks.algebricks.runtime.operators.std.StreamSelectRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamSelectRuntimeFactory/access$300(org.apache.hyracks.algebricks.runtime.operators.std.StreamSelectRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamSelectRuntimeFactory/access$400(org.apache.hyracks.algebricks.runtime.operators.std.StreamSelectRuntimeFactory)|",
+      "|java+constructor:///org/apache/hyracks/api/exceptions/HyracksDataException/HyracksDataException(java.lang.Throwable)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamSelectRuntimeFactory$1/appendField(byte%5B%5D,int,int)|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/getLength()|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/base/IScalarEvaluator/evaluate(org.apache.hyracks.dataflow.common.data.accessors.IFrameTupleReference,org.apache.hyracks.data.std.api.IPointable)|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/getStartOffset()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/data/accessors/FrameTupleReference/getFieldCount()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/getByteArray()|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamSelectRuntimeFactory$1/appendField(org.apache.hyracks.api.comm.IFrameTupleAccessor,int,int)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamSelectRuntimeFactory/access$500(org.apache.hyracks.algebricks.runtime.operators.std.StreamSelectRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/reset(java.nio.ByteBuffer)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/getTupleCount()|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/getByteArray()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamSelectRuntimeFactory$1/appendTupleToFrame(int)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/getSize()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/data/accessors/FrameTupleReference/reset(org.apache.hyracks.api.comm.IFrameTupleAccessor,int)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamSelectRuntimeFactory$1/appendProjectionToFrame(int,int%5B%5D)|",
+      "|java+method:///org/apache/hyracks/algebricks/data/IBinaryBooleanInspector/getBooleanValue(byte%5B%5D,int,int)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamSelectRuntimeFactory/access$100(org.apache.hyracks.algebricks.runtime.operators.std.StreamSelectRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamSelectRuntimeFactory/access$300(org.apache.hyracks.algebricks.runtime.operators.std.StreamSelectRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamSelectRuntimeFactory/access$400(org.apache.hyracks.algebricks.runtime.operators.std.StreamSelectRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamSelectRuntimeFactory$1/appendField(byte%5B%5D,int,int)|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/getLength()|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/base/IScalarEvaluator/evaluate(org.apache.hyracks.dataflow.common.data.accessors.IFrameTupleReference,org.apache.hyracks.data.std.api.IPointable)|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/getStartOffset()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/data/accessors/FrameTupleReference/getFieldCount()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/getByteArray()|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamSelectRuntimeFactory$1/appendField(org.apache.hyracks.api.comm.IFrameTupleAccessor,int,int)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamSelectRuntimeFactory/access$500(org.apache.hyracks.algebricks.runtime.operators.std.StreamSelectRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/reset(java.nio.ByteBuffer)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/getTupleCount()|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/getByteArray()|"
+    ],
+    "affectedLib": "org.apache.hyracks:hyracks-dataflow-common:0.3.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.hyracks:algebricks-runtime:0.2.17-incubating",
+    "coordinatesV2": "org.apache.hyracks:algebricks-runtime:0.3.0",
+    "caller": "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/SinkWriterRuntime/nextFrame(java.nio.ByteBuffer)|",
+    "called": "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/reset(java.nio.ByteBuffer)|",
+    "v1Body": [
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/reset(java.nio.ByteBuffer)|",
+      "|java+constructor:///org/apache/hyracks/api/exceptions/HyracksDataException/HyracksDataException(java.lang.Throwable)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/getTupleCount()|",
+      "|java+method:///org/apache/hyracks/algebricks/data/IAWriter/printTuple(org.apache.hyracks.api.comm.IFrameTupleAccessor,int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/reset(java.nio.ByteBuffer)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/getTupleCount()|",
+      "|java+method:///org/apache/hyracks/algebricks/data/IAWriter/printTuple(org.apache.hyracks.api.comm.IFrameTupleAccessor,int)|"
+    ],
+    "affectedLib": "org.apache.hyracks:hyracks-dataflow-common:0.3.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.hyracks:algebricks-runtime:0.2.17-incubating",
+    "coordinatesV2": "org.apache.hyracks:algebricks-runtime:0.3.0",
+    "caller": "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StringStreamingRuntimeFactory$1/nextFrame(java.nio.ByteBuffer)|",
+    "called": "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/reset(java.nio.ByteBuffer)|",
+    "v1Body": [
+      "|java+method:///org/apache/hyracks/algebricks/data/IPrinter/print(byte%5B%5D,int,int,java.io.PrintStream)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/data/accessors/FrameTupleReference/reset(org.apache.hyracks.api.comm.IFrameTupleAccessor,int)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StringStreamingRuntimeFactory/access$300(org.apache.hyracks.algebricks.runtime.operators.std.StringStreamingRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/reset(java.nio.ByteBuffer)|",
+      "|java+constructor:///org/apache/hyracks/api/exceptions/HyracksDataException/HyracksDataException(java.lang.Throwable)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/data/accessors/FrameTupleReference/getFieldLength(int)|",
+      "|java+method:///java/io/PrintStream/print(char)|",
+      "|java+method:///java/nio/ByteBuffer/array()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/getTupleCount()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/data/accessors/FrameTupleReference/getFieldStart(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hyracks/algebricks/data/IPrinter/print(byte%5B%5D,int,int,java.io.PrintStream)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/data/accessors/FrameTupleReference/reset(org.apache.hyracks.api.comm.IFrameTupleAccessor,int)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StringStreamingRuntimeFactory/access$300(org.apache.hyracks.algebricks.runtime.operators.std.StringStreamingRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/reset(java.nio.ByteBuffer)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/data/accessors/FrameTupleReference/getFieldLength(int)|",
+      "|java+method:///java/io/PrintStream/print(char)|",
+      "|java+method:///java/nio/ByteBuffer/array()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/getTupleCount()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/data/accessors/FrameTupleReference/getFieldStart(int)|"
+    ],
+    "affectedLib": "org.apache.hyracks:hyracks-dataflow-common:0.3.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.hyracks:algebricks-runtime:0.2.17-incubating",
+    "coordinatesV2": "org.apache.hyracks:algebricks-runtime:0.3.0",
+    "caller": "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamSelectRuntimeFactory$1/open()|",
+    "called": "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/getDataOutput()|",
+    "v1Body": [
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/getDataOutput()|",
+      "|java+constructor:///org/apache/hyracks/api/exceptions/HyracksDataException/HyracksDataException(java.lang.Throwable)|",
+      "|java+method:///org/apache/hyracks/api/dataflow/value/INullWriterFactory/createNullWriter()|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/base/IScalarEvaluatorFactory/createScalarEvaluator(org.apache.hyracks.api.context.IHyracksTaskContext)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamSelectRuntimeFactory$1/initAccessAppendFieldRef(org.apache.hyracks.api.context.IHyracksTaskContext)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/addFieldEndOffset()|",
+      "|java+constructor:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/ArrayTupleBuilder(int)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamSelectRuntimeFactory/access$000(org.apache.hyracks.algebricks.runtime.operators.std.StreamSelectRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamSelectRuntimeFactory/access$100(org.apache.hyracks.algebricks.runtime.operators.std.StreamSelectRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/api/dataflow/value/INullWriter/writeNull(java.io.DataOutput)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamSelectRuntimeFactory/access$200(org.apache.hyracks.algebricks.runtime.operators.std.StreamSelectRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/api/comm/IFrameWriter/open()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamSelectRuntimeFactory/access$100(org.apache.hyracks.algebricks.runtime.operators.std.StreamSelectRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/getDataOutput()|",
+      "|java+method:///org/apache/hyracks/api/dataflow/value/IMissingWriter/writeMissing(java.io.DataOutput)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/base/IScalarEvaluatorFactory/createScalarEvaluator(org.apache.hyracks.api.context.IHyracksTaskContext)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/addFieldEndOffset()|",
+      "|java+constructor:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/ArrayTupleBuilder(int)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamSelectRuntimeFactory/access$000(org.apache.hyracks.algebricks.runtime.operators.std.StreamSelectRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamSelectRuntimeFactory/access$200(org.apache.hyracks.algebricks.runtime.operators.std.StreamSelectRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/api/comm/IFrameWriter/open()|",
+      "|java+method:///org/apache/hyracks/api/dataflow/value/IMissingWriterFactory/createMissingWriter()|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamSelectRuntimeFactory$1/initAccessAppendFieldRef(org.apache.hyracks.api.context.IHyracksTaskContext)|"
+    ],
+    "affectedLib": "org.apache.hyracks:hyracks-dataflow-common:0.3.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.hyracks:algebricks-runtime:0.2.17-incubating",
+    "coordinatesV2": "org.apache.hyracks:algebricks-runtime:0.3.0",
+    "caller": "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/UnnestRuntimeFactory$1/nextFrame(java.nio.ByteBuffer)|",
+    "called": "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/reset(java.nio.ByteBuffer)|",
+    "v1Body": [
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/UnnestRuntimeFactory/access$300(org.apache.hyracks.algebricks.runtime.operators.std.UnnestRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/UnnestRuntimeFactory/access$500(org.apache.hyracks.algebricks.runtime.operators.std.UnnestRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/UnnestRuntimeFactory/access$600(org.apache.hyracks.algebricks.runtime.operators.std.UnnestRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/UnnestRuntimeFactory/access$800(org.apache.hyracks.algebricks.runtime.operators.std.UnnestRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/base/IUnnestingPositionWriter/write(java.io.DataOutput,long)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/getDataOutput()|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/UnnestRuntimeFactory$1/appendProjectionToFrame(int,int%5B%5D)|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/getLength()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/addField(byte%5B%5D,int,int)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/base/IUnnestingEvaluator/init(org.apache.hyracks.dataflow.common.data.accessors.IFrameTupleReference)|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/getStartOffset()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/addFieldEndOffset()|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/UnnestRuntimeFactory/access$400(org.apache.hyracks.algebricks.runtime.operators.std.UnnestRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/data/accessors/FrameTupleReference/reset(org.apache.hyracks.api.comm.IFrameTupleAccessor,int)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/addField(org.apache.hyracks.api.comm.IFrameTupleAccessor,int,int)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/UnnestRuntimeFactory/access$700(org.apache.hyracks.algebricks.runtime.operators.std.UnnestRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/reset(java.nio.ByteBuffer)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/UnnestRuntimeFactory$1/appendToFrameFromTupleBuilder(org.apache.hyracks.dataflow.common.comm.io.ArrayTupleBuilder)|",
+      "|java+constructor:///org/apache/hyracks/api/exceptions/HyracksDataException/HyracksDataException(java.lang.Throwable)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/base/IUnnestingEvaluator/step(org.apache.hyracks.data.std.api.IPointable)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/getTupleCount()|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/getByteArray()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/reset()|",
+      "|java+method:///org/apache/hyracks/data/std/primitive/IntegerPointable/getInteger(byte%5B%5D,int)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/base/IScalarEvaluator/evaluate(org.apache.hyracks.dataflow.common.data.accessors.IFrameTupleReference,org.apache.hyracks.data.std.api.IPointable)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hyracks/dataflow/common/data/accessors/FrameTupleReference/reset(org.apache.hyracks.api.comm.IFrameTupleAccessor,int)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/reset(java.nio.ByteBuffer)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/UnnestRuntimeFactory$1/unnesting(int)|",
+      "|java+constructor:///org/apache/hyracks/api/exceptions/HyracksDataException/HyracksDataException(java.lang.Throwable)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/getTupleCount()|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/base/IUnnestingEvaluator/init(org.apache.hyracks.dataflow.common.data.accessors.IFrameTupleReference)|"
+    ],
+    "affectedLib": "org.apache.hyracks:hyracks-dataflow-common:0.3.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.hyracks:algebricks-runtime:0.2.17-incubating",
+    "coordinatesV2": "org.apache.hyracks:algebricks-runtime:0.3.0",
+    "caller": "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamProjectRuntimeFactory$1/nextFrame(java.nio.ByteBuffer)|",
+    "called": "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/reset(java.nio.ByteBuffer)|",
+    "v1Body": [
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamProjectRuntimeFactory$1/appendProjectionToFrame(int,int%5B%5D)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamProjectRuntimeFactory$1/appendProjectionToFrame(int,int%5B%5D,boolean)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamProjectRuntimeFactory/access$300(org.apache.hyracks.algebricks.runtime.operators.std.StreamProjectRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamProjectRuntimeFactory/access$200(org.apache.hyracks.algebricks.runtime.operators.std.StreamProjectRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamProjectRuntimeFactory/access$100(org.apache.hyracks.algebricks.runtime.operators.std.StreamProjectRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamProjectRuntimeFactory/access$000(org.apache.hyracks.algebricks.runtime.operators.std.StreamProjectRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/reset(java.nio.ByteBuffer)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/getTupleCount()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamProjectRuntimeFactory$1/appendProjectionToFrame(int,int%5B%5D)|",
+      "|java+method:///org/apache/hyracks/api/comm/IFrameAppender/flush(org.apache.hyracks.api.comm.IFrameWriter)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamProjectRuntimeFactory$1/appendProjectionToFrame(int,int%5B%5D,boolean)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamProjectRuntimeFactory/access$300(org.apache.hyracks.algebricks.runtime.operators.std.StreamProjectRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamProjectRuntimeFactory/access$200(org.apache.hyracks.algebricks.runtime.operators.std.StreamProjectRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamProjectRuntimeFactory/access$100(org.apache.hyracks.algebricks.runtime.operators.std.StreamProjectRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamProjectRuntimeFactory/access$000(org.apache.hyracks.algebricks.runtime.operators.std.StreamProjectRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/reset(java.nio.ByteBuffer)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/getTupleCount()|"
+    ],
+    "affectedLib": "org.apache.hyracks:hyracks-dataflow-common:0.3.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.hyracks:algebricks-runtime:0.2.17-incubating",
+    "coordinatesV2": "org.apache.hyracks:algebricks-runtime:0.3.0",
+    "caller": "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/SinkWriterRuntime/open()|",
+    "called": "|java+constructor:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/FrameTupleAccessor(org.apache.hyracks.api.dataflow.value.RecordDescriptor)|",
+    "v1Body": [
+      "|java+method:///org/apache/hyracks/algebricks/data/IAWriter/init()|",
+      "|java+constructor:///org/apache/hyracks/api/exceptions/HyracksDataException/HyracksDataException(java.lang.Throwable)|",
+      "|java+constructor:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/FrameTupleAccessor(org.apache.hyracks.api.dataflow.value.RecordDescriptor)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hyracks/algebricks/data/IAWriter/init()|",
+      "|java+constructor:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/FrameTupleAccessor(org.apache.hyracks.api.dataflow.value.RecordDescriptor)|"
+    ],
+    "affectedLib": "org.apache.hyracks:hyracks-dataflow-common:0.3.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.hyracks:algebricks-runtime:0.2.17-incubating",
+    "coordinatesV2": "org.apache.hyracks:algebricks-runtime:0.3.0",
+    "caller": "|java+method:///org/apache/hyracks/algebricks/runtime/operators/aggreg/SerializableAggregatorDescriptorFactory$1/outputPartialResult(org.apache.hyracks.dataflow.common.comm.io.ArrayTupleBuilder,org.apache.hyracks.api.comm.IFrameTupleAccessor,int,org.apache.hyracks.dataflow.std.group.AggregateState)|",
+    "called": "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/getDataOutput()|",
+    "v1Body": [
+      "|java+method:///org/apache/hyracks/algebricks/runtime/base/ICopySerializableAggregateFunction/finishPartial(byte%5B%5D,int,int,java.io.DataOutput)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/getDataOutput()|",
+      "|java+method:///org/apache/hyracks/api/comm/IFrameTupleAccessor/getTupleStartOffset(int)|",
+      "|java+constructor:///org/apache/hyracks/api/exceptions/HyracksDataException/HyracksDataException(java.lang.Throwable)|",
+      "|java+method:///java/nio/ByteBuffer/array()|",
+      "|java+method:///org/apache/hyracks/api/comm/IFrameTupleAccessor/getBuffer()|",
+      "|java+method:///org/apache/hyracks/api/comm/IFrameTupleAccessor/getFieldSlotsLength()|",
+      "|java+method:///org/apache/hyracks/api/comm/IFrameTupleAccessor/getFieldStartOffset(int,int)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/addFieldEndOffset()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/getDataOutput()|",
+      "|java+method:///org/apache/hyracks/api/comm/IFrameTupleAccessor/getTupleStartOffset(int)|",
+      "|java+method:///java/nio/ByteBuffer/array()|",
+      "|java+method:///org/apache/hyracks/api/comm/IFrameTupleAccessor/getFieldSlotsLength()|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/base/ISerializedAggregateEvaluator/finishPartial(byte%5B%5D,int,int,java.io.DataOutput)|",
+      "|java+method:///org/apache/hyracks/api/comm/IFrameTupleAccessor/getBuffer()|",
+      "|java+method:///org/apache/hyracks/api/comm/IFrameTupleAccessor/getFieldStartOffset(int,int)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/addFieldEndOffset()|"
+    ],
+    "affectedLib": "org.apache.hyracks:hyracks-dataflow-common:0.3.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.hyracks:algebricks-runtime:0.2.17-incubating",
+    "coordinatesV2": "org.apache.hyracks:algebricks-runtime:0.3.0",
+    "caller": "|java+method:///org/apache/hyracks/algebricks/runtime/operators/aggreg/SerializableAggregatorDescriptorFactory$1/outputFinalResult(org.apache.hyracks.dataflow.common.comm.io.ArrayTupleBuilder,org.apache.hyracks.api.comm.IFrameTupleAccessor,int,org.apache.hyracks.dataflow.std.group.AggregateState)|",
+    "called": "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/getDataOutput()|",
+    "v1Body": [
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/getDataOutput()|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/base/ICopySerializableAggregateFunction/finish(byte%5B%5D,int,int,java.io.DataOutput)|",
+      "|java+method:///org/apache/hyracks/api/comm/IFrameTupleAccessor/getTupleStartOffset(int)|",
+      "|java+constructor:///org/apache/hyracks/api/exceptions/HyracksDataException/HyracksDataException(java.lang.Throwable)|",
+      "|java+method:///java/nio/ByteBuffer/array()|",
+      "|java+method:///org/apache/hyracks/api/comm/IFrameTupleAccessor/getBuffer()|",
+      "|java+method:///org/apache/hyracks/api/comm/IFrameTupleAccessor/getFieldSlotsLength()|",
+      "|java+method:///org/apache/hyracks/api/comm/IFrameTupleAccessor/getFieldStartOffset(int,int)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/addFieldEndOffset()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/getDataOutput()|",
+      "|java+method:///org/apache/hyracks/api/comm/IFrameTupleAccessor/getTupleStartOffset(int)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/base/ISerializedAggregateEvaluator/finish(byte%5B%5D,int,int,java.io.DataOutput)|",
+      "|java+method:///java/nio/ByteBuffer/array()|",
+      "|java+method:///org/apache/hyracks/api/comm/IFrameTupleAccessor/getBuffer()|",
+      "|java+method:///org/apache/hyracks/api/comm/IFrameTupleAccessor/getFieldSlotsLength()|",
+      "|java+method:///org/apache/hyracks/api/comm/IFrameTupleAccessor/getFieldStartOffset(int,int)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/addFieldEndOffset()|"
+    ],
+    "affectedLib": "org.apache.hyracks:hyracks-dataflow-common:0.3.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.hyracks:algebricks-runtime:0.2.17-incubating",
+    "coordinatesV2": "org.apache.hyracks:algebricks-runtime:0.3.0",
+    "caller": "|java+method:///org/apache/hyracks/algebricks/runtime/operators/meta/SubplanRuntimeFactory$1$TupleOuterProduct/appendNullsToTuple()|",
+    "called": "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/getDataOutput()|",
+    "v1Body": [
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/meta/SubplanRuntimeFactory$1/access$600(org.apache.hyracks.algebricks.runtime.operators.meta.SubplanRuntimeFactory$1)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/meta/SubplanRuntimeFactory$1/access$800(org.apache.hyracks.algebricks.runtime.operators.meta.SubplanRuntimeFactory$1)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/data/accessors/FrameTupleReference/getFieldCount()|",
+      "|java+method:///org/apache/hyracks/api/dataflow/value/INullWriter/writeNull(java.io.DataOutput)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/getDataOutput()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/data/accessors/FrameTupleReference/getFrameTupleAccessor()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/reset()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/data/accessors/FrameTupleReference/getTupleIndex()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/addFieldEndOffset()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/addField(org.apache.hyracks.api.comm.IFrameTupleAccessor,int,int)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/meta/SubplanRuntimeFactory$1/access$700(org.apache.hyracks.algebricks.runtime.operators.meta.SubplanRuntimeFactory$1)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/meta/SubplanRuntimeFactory$1/access$600(org.apache.hyracks.algebricks.runtime.operators.meta.SubplanRuntimeFactory$1)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/meta/SubplanRuntimeFactory$1/access$800(org.apache.hyracks.algebricks.runtime.operators.meta.SubplanRuntimeFactory$1)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/data/accessors/FrameTupleReference/getFieldCount()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/getDataOutput()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/data/accessors/FrameTupleReference/getFrameTupleAccessor()|",
+      "|java+method:///org/apache/hyracks/api/dataflow/value/IMissingWriter/writeMissing(java.io.DataOutput)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/reset()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/data/accessors/FrameTupleReference/getTupleIndex()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/addFieldEndOffset()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/addField(org.apache.hyracks.api.comm.IFrameTupleAccessor,int,int)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/meta/SubplanRuntimeFactory$1/access$700(org.apache.hyracks.algebricks.runtime.operators.meta.SubplanRuntimeFactory$1)|"
+    ],
+    "affectedLib": "org.apache.hyracks:hyracks-dataflow-common:0.3.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.hyracks:algebricks-runtime:0.2.17-incubating",
+    "coordinatesV2": "org.apache.hyracks:algebricks-runtime:0.3.0",
+    "caller": "|java+method:///org/apache/hyracks/algebricks/runtime/operators/meta/SubplanRuntimeFactory$1/nextFrame(java.nio.ByteBuffer)|",
+    "called": "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/reset(java.nio.ByteBuffer)|",
+    "v1Body": [
+      "|java+method:///org/apache/hyracks/dataflow/common/data/accessors/FrameTupleReference/reset(org.apache.hyracks.api.comm.IFrameTupleAccessor,int)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/NestedTupleSourceRuntimeFactory$NestedTupleSourceRuntime/open()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/reset(java.nio.ByteBuffer)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/NestedTupleSourceRuntimeFactory$NestedTupleSourceRuntime/writeTuple(java.nio.ByteBuffer,int)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/NestedTupleSourceRuntimeFactory$NestedTupleSourceRuntime/close()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/getTupleCount()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hyracks/dataflow/common/data/accessors/FrameTupleReference/reset(org.apache.hyracks.api.comm.IFrameTupleAccessor,int)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/NestedTupleSourceRuntimeFactory$NestedTupleSourceRuntime/open()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/reset(java.nio.ByteBuffer)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/NestedTupleSourceRuntimeFactory$NestedTupleSourceRuntime/writeTuple(java.nio.ByteBuffer,int)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/NestedTupleSourceRuntimeFactory$NestedTupleSourceRuntime/close()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/getTupleCount()|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/NestedTupleSourceRuntimeFactory$NestedTupleSourceRuntime/fail()|"
+    ],
+    "affectedLib": "org.apache.hyracks:hyracks-dataflow-common:0.3.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.hyracks:algebricks-runtime:0.2.17-incubating",
+    "coordinatesV2": "org.apache.hyracks:algebricks-runtime:0.3.0",
+    "caller": "|java+method:///org/apache/hyracks/algebricks/runtime/operators/aggreg/SerializableAggregatorDescriptorFactory$1/init(org.apache.hyracks.dataflow.common.comm.io.ArrayTupleBuilder,org.apache.hyracks.api.comm.IFrameTupleAccessor,int,org.apache.hyracks.dataflow.std.group.AggregateState)|",
+    "called": "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/getDataOutput()|",
+    "v1Body": [
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/getSize()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/data/accessors/FrameTupleReference/reset(org.apache.hyracks.api.comm.IFrameTupleAccessor,int)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/base/ICopySerializableAggregateFunction/step(org.apache.hyracks.dataflow.common.data.accessors.IFrameTupleReference,byte%5B%5D,int,int)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/getByteArray()|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/base/ICopySerializableAggregateFunctionFactory/createAggregateFunction()|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/aggreg/SerializableAggregatorDescriptorFactory/access$000(org.apache.hyracks.algebricks.runtime.operators.aggreg.SerializableAggregatorDescriptorFactory)|",
+      "|java+constructor:///org/apache/hyracks/api/exceptions/HyracksDataException/HyracksDataException(java.lang.Throwable)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/getFieldEndOffsets()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/addFieldEndOffset()|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/base/ICopySerializableAggregateFunction/init(java.io.DataOutput)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/getDataOutput()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/getSize()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/data/accessors/FrameTupleReference/reset(org.apache.hyracks.api.comm.IFrameTupleAccessor,int)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/base/ISerializedAggregateEvaluator/init(java.io.DataOutput)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/getByteArray()|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/base/ISerializedAggregateEvaluator/step(org.apache.hyracks.dataflow.common.data.accessors.IFrameTupleReference,byte%5B%5D,int,int)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/getDataOutput()|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/aggreg/SerializableAggregatorDescriptorFactory/access$000(org.apache.hyracks.algebricks.runtime.operators.aggreg.SerializableAggregatorDescriptorFactory)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/getFieldEndOffsets()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/addFieldEndOffset()|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/base/ISerializedAggregateEvaluatorFactory/createAggregateEvaluator(org.apache.hyracks.api.context.IHyracksTaskContext)|"
+    ],
+    "affectedLib": "org.apache.hyracks:hyracks-dataflow-common:0.3.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.hyracks:algebricks-runtime:0.2.17-incubating",
+    "coordinatesV2": "org.apache.hyracks:algebricks-runtime:0.3.0",
+    "caller": "|java+method:///org/apache/hyracks/algebricks/runtime/operators/aggreg/SimpleAlgebricksAccumulatingAggregatorFactory$1/outputFinalResult(org.apache.hyracks.dataflow.common.comm.io.ArrayTupleBuilder,org.apache.hyracks.api.comm.IFrameTupleAccessor,int,org.apache.hyracks.dataflow.std.group.AggregateState)|",
+    "called": "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/addField(byte%5B%5D,int,int)|",
+    "v1Body": [
+      "|java+method:///org/apache/hyracks/algebricks/runtime/base/IAggregateEvaluator/finish(org.apache.hyracks.data.std.api.IPointable)|",
+      "|java+constructor:///org/apache/hyracks/api/exceptions/HyracksDataException/HyracksDataException(java.lang.Throwable)|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/getLength()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/addField(byte%5B%5D,int,int)|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/getByteArray()|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/getStartOffset()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hyracks/algebricks/runtime/base/IAggregateEvaluator/finish(org.apache.hyracks.data.std.api.IPointable)|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/getLength()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/addField(byte%5B%5D,int,int)|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/getByteArray()|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/getStartOffset()|"
+    ],
+    "affectedLib": "org.apache.hyracks:hyracks-dataflow-common:0.3.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.hyracks:algebricks-runtime:0.2.17-incubating",
+    "coordinatesV2": "org.apache.hyracks:algebricks-runtime:0.3.0",
+    "caller": "|java+method:///org/apache/hyracks/algebricks/runtime/operators/aggreg/SimpleAlgebricksAccumulatingAggregatorFactory$1/outputPartialResult(org.apache.hyracks.dataflow.common.comm.io.ArrayTupleBuilder,org.apache.hyracks.api.comm.IFrameTupleAccessor,int,org.apache.hyracks.dataflow.std.group.AggregateState)|",
+    "called": "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/addField(byte%5B%5D,int,int)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/hyracks/api/exceptions/HyracksDataException/HyracksDataException(java.lang.Throwable)|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/getLength()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/addField(byte%5B%5D,int,int)|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/getByteArray()|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/base/IAggregateEvaluator/finishPartial(org.apache.hyracks.data.std.api.IPointable)|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/getStartOffset()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/getLength()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/addField(byte%5B%5D,int,int)|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/getByteArray()|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/base/IAggregateEvaluator/finishPartial(org.apache.hyracks.data.std.api.IPointable)|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/getStartOffset()|"
+    ],
+    "affectedLib": "org.apache.hyracks:hyracks-dataflow-common:0.3.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.hyracks:algebricks-runtime:0.2.17-incubating",
+    "coordinatesV2": "org.apache.hyracks:algebricks-runtime:0.3.0",
+    "caller": "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/AssignRuntimeFactory$1/nextFrame(java.nio.ByteBuffer)|",
+    "called": "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/reset(java.nio.ByteBuffer)|",
+    "v1Body": [
+      "|java+method:///org/apache/hyracks/dataflow/common/data/accessors/FrameTupleReference/reset(org.apache.hyracks.api.comm.IFrameTupleAccessor,int)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/AssignRuntimeFactory/access$200(org.apache.hyracks.algebricks.runtime.operators.std.AssignRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/AssignRuntimeFactory$1/appendToFrameFromTupleBuilder(org.apache.hyracks.dataflow.common.comm.io.ArrayTupleBuilder)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/reset(java.nio.ByteBuffer)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/AssignRuntimeFactory$1/appendToFrameFromTupleBuilder(org.apache.hyracks.dataflow.common.comm.io.ArrayTupleBuilder,boolean)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/AssignRuntimeFactory$1/produceTuple(org.apache.hyracks.dataflow.common.comm.io.ArrayTupleBuilder,org.apache.hyracks.api.comm.IFrameTupleAccessor,int,org.apache.hyracks.dataflow.common.data.accessors.FrameTupleReference)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/getTupleCount()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/AssignRuntimeFactory/access$200(org.apache.hyracks.algebricks.runtime.operators.std.AssignRuntimeFactory)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/AssignRuntimeFactory$1/appendToFrameFromTupleBuilder(org.apache.hyracks.dataflow.common.comm.io.ArrayTupleBuilder)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/reset(java.nio.ByteBuffer)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/AssignRuntimeFactory$1/appendToFrameFromTupleBuilder(org.apache.hyracks.dataflow.common.comm.io.ArrayTupleBuilder,boolean)|",
+      "|java+constructor:///org/apache/hyracks/api/exceptions/HyracksDataException/HyracksDataException(java.lang.String)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/AssignRuntimeFactory$1/flushAndReset()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/AssignRuntimeFactory$1/produceTuple(org.apache.hyracks.dataflow.common.comm.io.ArrayTupleBuilder,org.apache.hyracks.api.comm.IFrameTupleAccessor,int,org.apache.hyracks.dataflow.common.data.accessors.FrameTupleReference)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/getTupleCount()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/data/accessors/FrameTupleReference/reset(org.apache.hyracks.api.comm.IFrameTupleAccessor,int)|",
+      "|java+method:///org/apache/hyracks/api/comm/IFrameAppender/flush(org.apache.hyracks.api.comm.IFrameWriter)|"
+    ],
+    "affectedLib": "org.apache.hyracks:hyracks-dataflow-common:0.3.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.hyracks:algebricks-runtime:0.2.17-incubating",
+    "coordinatesV2": "org.apache.hyracks:algebricks-runtime:0.3.0",
+    "caller": "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/RunningAggregateRuntimeFactory$1/produceTuple(org.apache.hyracks.dataflow.common.comm.io.ArrayTupleBuilder,org.apache.hyracks.api.comm.IFrameTupleAccessor,int,org.apache.hyracks.dataflow.common.data.accessors.FrameTupleReference)|",
+    "called": "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/addField(org.apache.hyracks.api.comm.IFrameTupleAccessor,int,int)|",
+    "v1Body": [
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/RunningAggregateRuntimeFactory/access$200(org.apache.hyracks.algebricks.runtime.operators.std.RunningAggregateRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/RunningAggregateRuntimeFactory/access$300(org.apache.hyracks.algebricks.runtime.operators.std.RunningAggregateRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/addField(org.apache.hyracks.api.comm.IFrameTupleAccessor,int,int)|",
+      "|java+constructor:///org/apache/hyracks/api/exceptions/HyracksDataException/HyracksDataException(java.lang.Throwable)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/addField(byte%5B%5D,int,int)|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/getStartOffset()|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/getLength()|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/base/IRunningAggregateEvaluator/step(org.apache.hyracks.dataflow.common.data.accessors.IFrameTupleReference,org.apache.hyracks.data.std.api.IPointable)|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/getByteArray()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/reset()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/RunningAggregateRuntimeFactory/access$200(org.apache.hyracks.algebricks.runtime.operators.std.RunningAggregateRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/RunningAggregateRuntimeFactory/access$300(org.apache.hyracks.algebricks.runtime.operators.std.RunningAggregateRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/addField(org.apache.hyracks.api.comm.IFrameTupleAccessor,int,int)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/addField(byte%5B%5D,int,int)|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/getStartOffset()|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/getLength()|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/base/IRunningAggregateEvaluator/step(org.apache.hyracks.dataflow.common.data.accessors.IFrameTupleReference,org.apache.hyracks.data.std.api.IPointable)|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/getByteArray()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/reset()|"
+    ],
+    "affectedLib": "org.apache.hyracks:hyracks-dataflow-common:0.3.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.hyracks:algebricks-runtime:0.2.17-incubating",
+    "coordinatesV2": "org.apache.hyracks:algebricks-runtime:0.3.0",
+    "caller": "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/AssignRuntimeFactory$1/produceTuple(org.apache.hyracks.dataflow.common.comm.io.ArrayTupleBuilder,org.apache.hyracks.api.comm.IFrameTupleAccessor,int,org.apache.hyracks.dataflow.common.data.accessors.FrameTupleReference)|",
+    "called": "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/addField(org.apache.hyracks.api.comm.IFrameTupleAccessor,int,int)|",
+    "v1Body": [
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/AssignRuntimeFactory/access$400(org.apache.hyracks.algebricks.runtime.operators.std.AssignRuntimeFactory)|",
+      "|java+constructor:///org/apache/hyracks/api/exceptions/HyracksDataException/HyracksDataException(java.lang.Throwable)|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/getLength()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/addField(byte%5B%5D,int,int)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/base/IScalarEvaluator/evaluate(org.apache.hyracks.dataflow.common.data.accessors.IFrameTupleReference,org.apache.hyracks.data.std.api.IPointable)|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/getStartOffset()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/addField(org.apache.hyracks.api.comm.IFrameTupleAccessor,int,int)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/AssignRuntimeFactory/access$300(org.apache.hyracks.algebricks.runtime.operators.std.AssignRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/getByteArray()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/reset()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/AssignRuntimeFactory/access$400(org.apache.hyracks.algebricks.runtime.operators.std.AssignRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/getLength()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/addField(byte%5B%5D,int,int)|",
+      "|java+method:///org/apache/hyracks/api/exceptions/HyracksDataException/create(int,java.lang.Throwable,java.io.Serializable%5B%5D)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/base/IScalarEvaluator/evaluate(org.apache.hyracks.dataflow.common.data.accessors.IFrameTupleReference,org.apache.hyracks.data.std.api.IPointable)|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/getStartOffset()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/addField(org.apache.hyracks.api.comm.IFrameTupleAccessor,int,int)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/AssignRuntimeFactory/access$300(org.apache.hyracks.algebricks.runtime.operators.std.AssignRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/getByteArray()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/reset()|"
+    ],
+    "affectedLib": "org.apache.hyracks:hyracks-dataflow-common:0.3.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.hyracks:algebricks-runtime:0.2.17-incubating",
+    "coordinatesV2": "org.apache.hyracks:algebricks-runtime:0.3.0",
+    "caller": "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/SinkWriterRuntimeFactory/createPushRuntime(org.apache.hyracks.api.context.IHyracksTaskContext)|",
+    "called": "|java+constructor:///org/apache/hyracks/api/exceptions/HyracksDataException/HyracksDataException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/hyracks/algebricks/runtime/operators/std/SinkWriterRuntime/SinkWriterRuntime(org.apache.hyracks.algebricks.data.IAWriter,org.apache.hyracks.api.context.IHyracksTaskContext,java.io.PrintStream,org.apache.hyracks.api.dataflow.value.RecordDescriptor,boolean)|",
+      "|java+constructor:///org/apache/hyracks/algebricks/common/exceptions/AlgebricksException/AlgebricksException(java.lang.Throwable)|",
+      "|java+constructor:///java/io/BufferedOutputStream/BufferedOutputStream(java.io.OutputStream)|",
+      "|java+constructor:///java/io/FileOutputStream/FileOutputStream(java.io.File)|",
+      "|java+constructor:///java/io/PrintStream/PrintStream(java.io.OutputStream)|",
+      "|java+method:///org/apache/hyracks/algebricks/data/IAWriterFactory/createWriter(int%5B%5D,java.io.PrintStream,org.apache.hyracks.algebricks.data.IPrinterFactory%5B%5D,org.apache.hyracks.api.dataflow.value.RecordDescriptor)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/hyracks/algebricks/runtime/operators/std/SinkWriterRuntime/SinkWriterRuntime(org.apache.hyracks.algebricks.data.IAWriter,java.io.PrintStream,org.apache.hyracks.api.dataflow.value.RecordDescriptor,boolean)|",
+      "|java+constructor:///org/apache/hyracks/api/exceptions/HyracksDataException/HyracksDataException(java.lang.Throwable)|",
+      "|java+constructor:///java/io/BufferedOutputStream/BufferedOutputStream(java.io.OutputStream)|",
+      "|java+constructor:///java/io/FileOutputStream/FileOutputStream(java.io.File)|",
+      "|java+constructor:///java/io/PrintStream/PrintStream(java.io.OutputStream)|",
+      "|java+method:///org/apache/hyracks/algebricks/data/IAWriterFactory/createWriter(int%5B%5D,java.io.PrintStream,org.apache.hyracks.algebricks.data.IPrinterFactory%5B%5D,org.apache.hyracks.api.dataflow.value.RecordDescriptor)|"
+    ],
+    "affectedLib": "org.apache.hyracks:hyracks-api:0.3.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.hyracks:algebricks-runtime:0.2.17-incubating",
+    "coordinatesV2": "org.apache.hyracks:algebricks-runtime:0.3.0",
+    "caller": "|java+method:///org/apache/hyracks/algebricks/runtime/writers/SerializedDataWriterFactory$1/init()|",
+    "called": "|java+constructor:///org/apache/hyracks/api/exceptions/HyracksDataException/HyracksDataException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///java/io/ByteArrayOutputStream/writeTo(java.io.OutputStream)|",
+      "|java+constructor:///org/apache/hyracks/algebricks/common/exceptions/AlgebricksException/AlgebricksException(java.lang.Throwable)|",
+      "|java+method:///java/io/ObjectOutputStream/writeObject(java.lang.Object)|",
+      "|java+constructor:///java/io/ObjectOutputStream/ObjectOutputStream(java.io.OutputStream)|",
+      "|java+constructor:///java/io/ByteArrayOutputStream/ByteArrayOutputStream()|",
+      "|java+method:///java/io/ObjectOutputStream/close()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/ByteArrayOutputStream/writeTo(java.io.OutputStream)|",
+      "|java+constructor:///java/io/ObjectOutputStream/ObjectOutputStream(java.io.OutputStream)|",
+      "|java+constructor:///java/io/ByteArrayOutputStream/ByteArrayOutputStream()|",
+      "|java+method:///java/io/ObjectOutputStream/close()|",
+      "|java+constructor:///org/apache/hyracks/api/exceptions/HyracksDataException/HyracksDataException(java.lang.Throwable)|",
+      "|java+method:///java/io/ObjectOutputStream/writeObject(java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.hyracks:hyracks-api:0.3.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.hyracks:algebricks-runtime:0.2.17-incubating",
+    "coordinatesV2": "org.apache.hyracks:algebricks-runtime:0.3.0",
+    "caller": "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/AssignRuntimeFactory$1/nextFrame(java.nio.ByteBuffer)|",
+    "called": "|java+method:///org/apache/hyracks/api/comm/IFrameAppender/flush(org.apache.hyracks.api.comm.IFrameWriter)|",
+    "v1Body": [
+      "|java+method:///org/apache/hyracks/dataflow/common/data/accessors/FrameTupleReference/reset(org.apache.hyracks.api.comm.IFrameTupleAccessor,int)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/AssignRuntimeFactory/access$200(org.apache.hyracks.algebricks.runtime.operators.std.AssignRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/AssignRuntimeFactory$1/appendToFrameFromTupleBuilder(org.apache.hyracks.dataflow.common.comm.io.ArrayTupleBuilder)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/reset(java.nio.ByteBuffer)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/AssignRuntimeFactory$1/appendToFrameFromTupleBuilder(org.apache.hyracks.dataflow.common.comm.io.ArrayTupleBuilder,boolean)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/AssignRuntimeFactory$1/produceTuple(org.apache.hyracks.dataflow.common.comm.io.ArrayTupleBuilder,org.apache.hyracks.api.comm.IFrameTupleAccessor,int,org.apache.hyracks.dataflow.common.data.accessors.FrameTupleReference)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/getTupleCount()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/AssignRuntimeFactory/access$200(org.apache.hyracks.algebricks.runtime.operators.std.AssignRuntimeFactory)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/AssignRuntimeFactory$1/appendToFrameFromTupleBuilder(org.apache.hyracks.dataflow.common.comm.io.ArrayTupleBuilder)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/reset(java.nio.ByteBuffer)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/AssignRuntimeFactory$1/appendToFrameFromTupleBuilder(org.apache.hyracks.dataflow.common.comm.io.ArrayTupleBuilder,boolean)|",
+      "|java+constructor:///org/apache/hyracks/api/exceptions/HyracksDataException/HyracksDataException(java.lang.String)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/AssignRuntimeFactory$1/flushAndReset()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/AssignRuntimeFactory$1/produceTuple(org.apache.hyracks.dataflow.common.comm.io.ArrayTupleBuilder,org.apache.hyracks.api.comm.IFrameTupleAccessor,int,org.apache.hyracks.dataflow.common.data.accessors.FrameTupleReference)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/getTupleCount()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/data/accessors/FrameTupleReference/reset(org.apache.hyracks.api.comm.IFrameTupleAccessor,int)|",
+      "|java+method:///org/apache/hyracks/api/comm/IFrameAppender/flush(org.apache.hyracks.api.comm.IFrameWriter)|"
+    ],
+    "affectedLib": "org.apache.hyracks:hyracks-api:0.3.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.hyracks:algebricks-runtime:0.2.17-incubating",
+    "coordinatesV2": "org.apache.hyracks:algebricks-runtime:0.3.0",
+    "caller": "|java+method:///org/apache/hyracks/algebricks/runtime/aggregators/TupleCountRunningAggregateFunctionFactory$1/step(org.apache.hyracks.dataflow.common.data.accessors.IFrameTupleReference,org.apache.hyracks.data.std.api.IPointable)|",
+    "called": "|java+constructor:///org/apache/hyracks/api/exceptions/HyracksDataException/HyracksDataException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///java/io/DataOutput/writeInt(int)|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/set(org.apache.hyracks.data.std.api.IValueReference)|",
+      "|java+method:///org/apache/hyracks/data/std/util/ArrayBackedValueStorage/getDataOutput()|",
+      "|java+constructor:///org/apache/hyracks/algebricks/common/exceptions/AlgebricksException/AlgebricksException(java.lang.Throwable)|",
+      "|java+method:///org/apache/hyracks/data/std/util/ArrayBackedValueStorage/reset()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/DataOutput/writeInt(int)|",
+      "|java+method:///org/apache/hyracks/data/std/util/ArrayBackedValueStorage/reset()|",
+      "|java+constructor:///org/apache/hyracks/api/exceptions/HyracksDataException/HyracksDataException(java.lang.Throwable)|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/set(org.apache.hyracks.data.std.api.IValueReference)|",
+      "|java+method:///org/apache/hyracks/data/std/util/ArrayBackedValueStorage/getDataOutput()|"
+    ],
+    "affectedLib": "org.apache.hyracks:hyracks-api:0.3.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.hyracks:algebricks-runtime:0.2.17-incubating",
+    "coordinatesV2": "org.apache.hyracks:algebricks-runtime:0.3.0",
+    "caller": "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/UnnestRuntimeFactory$1/nextFrame(java.nio.ByteBuffer)|",
+    "called": "|java+constructor:///org/apache/hyracks/api/exceptions/HyracksDataException/HyracksDataException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/UnnestRuntimeFactory/access$300(org.apache.hyracks.algebricks.runtime.operators.std.UnnestRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/UnnestRuntimeFactory/access$500(org.apache.hyracks.algebricks.runtime.operators.std.UnnestRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/UnnestRuntimeFactory/access$600(org.apache.hyracks.algebricks.runtime.operators.std.UnnestRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/UnnestRuntimeFactory/access$800(org.apache.hyracks.algebricks.runtime.operators.std.UnnestRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/base/IUnnestingPositionWriter/write(java.io.DataOutput,long)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/getDataOutput()|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/UnnestRuntimeFactory$1/appendProjectionToFrame(int,int%5B%5D)|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/getLength()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/addField(byte%5B%5D,int,int)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/base/IUnnestingEvaluator/init(org.apache.hyracks.dataflow.common.data.accessors.IFrameTupleReference)|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/getStartOffset()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/addFieldEndOffset()|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/UnnestRuntimeFactory/access$400(org.apache.hyracks.algebricks.runtime.operators.std.UnnestRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/data/accessors/FrameTupleReference/reset(org.apache.hyracks.api.comm.IFrameTupleAccessor,int)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/addField(org.apache.hyracks.api.comm.IFrameTupleAccessor,int,int)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/UnnestRuntimeFactory/access$700(org.apache.hyracks.algebricks.runtime.operators.std.UnnestRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/reset(java.nio.ByteBuffer)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/UnnestRuntimeFactory$1/appendToFrameFromTupleBuilder(org.apache.hyracks.dataflow.common.comm.io.ArrayTupleBuilder)|",
+      "|java+constructor:///org/apache/hyracks/api/exceptions/HyracksDataException/HyracksDataException(java.lang.Throwable)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/base/IUnnestingEvaluator/step(org.apache.hyracks.data.std.api.IPointable)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/getTupleCount()|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/getByteArray()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/reset()|",
+      "|java+method:///org/apache/hyracks/data/std/primitive/IntegerPointable/getInteger(byte%5B%5D,int)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/base/IScalarEvaluator/evaluate(org.apache.hyracks.dataflow.common.data.accessors.IFrameTupleReference,org.apache.hyracks.data.std.api.IPointable)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hyracks/dataflow/common/data/accessors/FrameTupleReference/reset(org.apache.hyracks.api.comm.IFrameTupleAccessor,int)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/reset(java.nio.ByteBuffer)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/UnnestRuntimeFactory$1/unnesting(int)|",
+      "|java+constructor:///org/apache/hyracks/api/exceptions/HyracksDataException/HyracksDataException(java.lang.Throwable)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/getTupleCount()|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/base/IUnnestingEvaluator/init(org.apache.hyracks.dataflow.common.data.accessors.IFrameTupleReference)|"
+    ],
+    "affectedLib": "org.apache.hyracks:hyracks-api:0.3.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.hyracks:algebricks-runtime:0.2.17-incubating",
+    "coordinatesV2": "org.apache.hyracks:algebricks-runtime:0.3.0",
+    "caller": "|java+method:///org/apache/hyracks/algebricks/runtime/aggregators/TupleCountAggregateFunctionFactory$1/finish(org.apache.hyracks.data.std.api.IPointable)|",
+    "called": "|java+constructor:///org/apache/hyracks/api/exceptions/HyracksDataException/HyracksDataException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///java/io/DataOutput/writeInt(int)|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/set(org.apache.hyracks.data.std.api.IValueReference)|",
+      "|java+method:///org/apache/hyracks/data/std/util/ArrayBackedValueStorage/getDataOutput()|",
+      "|java+constructor:///org/apache/hyracks/algebricks/common/exceptions/AlgebricksException/AlgebricksException(java.lang.Throwable)|",
+      "|java+method:///org/apache/hyracks/data/std/util/ArrayBackedValueStorage/reset()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/DataOutput/writeInt(int)|",
+      "|java+method:///org/apache/hyracks/data/std/util/ArrayBackedValueStorage/reset()|",
+      "|java+constructor:///org/apache/hyracks/api/exceptions/HyracksDataException/HyracksDataException(java.lang.Throwable)|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/set(org.apache.hyracks.data.std.api.IValueReference)|",
+      "|java+method:///org/apache/hyracks/data/std/util/ArrayBackedValueStorage/getDataOutput()|"
+    ],
+    "affectedLib": "org.apache.hyracks:hyracks-api:0.3.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.hyracks:algebricks-runtime:0.2.17-incubating",
+    "coordinatesV2": "org.apache.hyracks:algebricks-runtime:0.3.0",
+    "caller": "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamProjectRuntimeFactory$1/nextFrame(java.nio.ByteBuffer)|",
+    "called": "|java+method:///org/apache/hyracks/api/comm/IFrameAppender/flush(org.apache.hyracks.api.comm.IFrameWriter)|",
+    "v1Body": [
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamProjectRuntimeFactory$1/appendProjectionToFrame(int,int%5B%5D)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamProjectRuntimeFactory$1/appendProjectionToFrame(int,int%5B%5D,boolean)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamProjectRuntimeFactory/access$300(org.apache.hyracks.algebricks.runtime.operators.std.StreamProjectRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamProjectRuntimeFactory/access$200(org.apache.hyracks.algebricks.runtime.operators.std.StreamProjectRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamProjectRuntimeFactory/access$100(org.apache.hyracks.algebricks.runtime.operators.std.StreamProjectRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamProjectRuntimeFactory/access$000(org.apache.hyracks.algebricks.runtime.operators.std.StreamProjectRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/reset(java.nio.ByteBuffer)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/getTupleCount()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamProjectRuntimeFactory$1/appendProjectionToFrame(int,int%5B%5D)|",
+      "|java+method:///org/apache/hyracks/api/comm/IFrameAppender/flush(org.apache.hyracks.api.comm.IFrameWriter)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamProjectRuntimeFactory$1/appendProjectionToFrame(int,int%5B%5D,boolean)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamProjectRuntimeFactory/access$300(org.apache.hyracks.algebricks.runtime.operators.std.StreamProjectRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamProjectRuntimeFactory/access$200(org.apache.hyracks.algebricks.runtime.operators.std.StreamProjectRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamProjectRuntimeFactory/access$100(org.apache.hyracks.algebricks.runtime.operators.std.StreamProjectRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/StreamProjectRuntimeFactory/access$000(org.apache.hyracks.algebricks.runtime.operators.std.StreamProjectRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/reset(java.nio.ByteBuffer)|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/FrameTupleAccessor/getTupleCount()|"
+    ],
+    "affectedLib": "org.apache.hyracks:hyracks-api:0.3.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.hyracks:algebricks-runtime:0.2.17-incubating",
+    "coordinatesV2": "org.apache.hyracks:algebricks-runtime:0.3.0",
+    "caller": "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/AssignRuntimeFactory$1/produceTuple(org.apache.hyracks.dataflow.common.comm.io.ArrayTupleBuilder,org.apache.hyracks.api.comm.IFrameTupleAccessor,int,org.apache.hyracks.dataflow.common.data.accessors.FrameTupleReference)|",
+    "called": "|java+method:///org/apache/hyracks/api/exceptions/HyracksDataException/create(int,java.lang.Throwable,java.io.Serializable%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/AssignRuntimeFactory/access$400(org.apache.hyracks.algebricks.runtime.operators.std.AssignRuntimeFactory)|",
+      "|java+constructor:///org/apache/hyracks/api/exceptions/HyracksDataException/HyracksDataException(java.lang.Throwable)|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/getLength()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/addField(byte%5B%5D,int,int)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/base/IScalarEvaluator/evaluate(org.apache.hyracks.dataflow.common.data.accessors.IFrameTupleReference,org.apache.hyracks.data.std.api.IPointable)|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/getStartOffset()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/addField(org.apache.hyracks.api.comm.IFrameTupleAccessor,int,int)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/AssignRuntimeFactory/access$300(org.apache.hyracks.algebricks.runtime.operators.std.AssignRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/getByteArray()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/reset()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/AssignRuntimeFactory/access$400(org.apache.hyracks.algebricks.runtime.operators.std.AssignRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/getLength()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/addField(byte%5B%5D,int,int)|",
+      "|java+method:///org/apache/hyracks/api/exceptions/HyracksDataException/create(int,java.lang.Throwable,java.io.Serializable%5B%5D)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/base/IScalarEvaluator/evaluate(org.apache.hyracks.dataflow.common.data.accessors.IFrameTupleReference,org.apache.hyracks.data.std.api.IPointable)|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/getStartOffset()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/addField(org.apache.hyracks.api.comm.IFrameTupleAccessor,int,int)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/std/AssignRuntimeFactory/access$300(org.apache.hyracks.algebricks.runtime.operators.std.AssignRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/getByteArray()|",
+      "|java+method:///org/apache/hyracks/dataflow/common/comm/io/ArrayTupleBuilder/reset()|"
+    ],
+    "affectedLib": "org.apache.hyracks:hyracks-api:0.3.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.hyracks:algebricks-runtime:0.2.17-incubating",
+    "coordinatesV2": "org.apache.hyracks:algebricks-runtime:0.3.0",
+    "caller": "|java+method:///org/apache/hyracks/algebricks/runtime/operators/meta/AlgebricksMetaOperatorDescriptor/toJSON()|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/node/ObjectNode/put(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/hyracks/dataflow/std/base/AbstractSingleActivityOperatorDescriptor/toJSON()|",
+      "|java+method:///org/json/JSONObject/put(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/base/AlgebricksPipeline/getRuntimeFactories()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Arrays/toString(java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/hyracks/dataflow/std/base/AbstractSingleActivityOperatorDescriptor/toJSON()|",
+      "|java+method:///com/fasterxml/jackson/databind/node/ObjectNode/put(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/base/AlgebricksPipeline/getRuntimeFactories()|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.8.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.hyracks:algebricks-runtime:0.2.17-incubating",
+    "coordinatesV2": "org.apache.hyracks:algebricks-runtime:0.3.0",
+    "caller": "|java+method:///org/apache/hyracks/algebricks/runtime/aggregators/TupleCountRunningAggregateFunctionFactory$1/step(org.apache.hyracks.dataflow.common.data.accessors.IFrameTupleReference,org.apache.hyracks.data.std.api.IPointable)|",
+    "called": "|java+method:///org/apache/hyracks/data/std/util/ArrayBackedValueStorage/getDataOutput()|",
+    "v1Body": [
+      "|java+method:///java/io/DataOutput/writeInt(int)|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/set(org.apache.hyracks.data.std.api.IValueReference)|",
+      "|java+method:///org/apache/hyracks/data/std/util/ArrayBackedValueStorage/getDataOutput()|",
+      "|java+constructor:///org/apache/hyracks/algebricks/common/exceptions/AlgebricksException/AlgebricksException(java.lang.Throwable)|",
+      "|java+method:///org/apache/hyracks/data/std/util/ArrayBackedValueStorage/reset()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/DataOutput/writeInt(int)|",
+      "|java+method:///org/apache/hyracks/data/std/util/ArrayBackedValueStorage/reset()|",
+      "|java+constructor:///org/apache/hyracks/api/exceptions/HyracksDataException/HyracksDataException(java.lang.Throwable)|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/set(org.apache.hyracks.data.std.api.IValueReference)|",
+      "|java+method:///org/apache/hyracks/data/std/util/ArrayBackedValueStorage/getDataOutput()|"
+    ],
+    "affectedLib": "org.apache.hyracks:hyracks-data-std:0.3.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.hyracks:algebricks-runtime:0.2.17-incubating",
+    "coordinatesV2": "org.apache.hyracks:algebricks-runtime:0.3.0",
+    "caller": "|java+method:///org/apache/hyracks/algebricks/runtime/aggregators/TupleCountAggregateFunctionFactory$1/finish(org.apache.hyracks.data.std.api.IPointable)|",
+    "called": "|java+method:///org/apache/hyracks/data/std/util/ArrayBackedValueStorage/getDataOutput()|",
+    "v1Body": [
+      "|java+method:///java/io/DataOutput/writeInt(int)|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/set(org.apache.hyracks.data.std.api.IValueReference)|",
+      "|java+method:///org/apache/hyracks/data/std/util/ArrayBackedValueStorage/getDataOutput()|",
+      "|java+constructor:///org/apache/hyracks/algebricks/common/exceptions/AlgebricksException/AlgebricksException(java.lang.Throwable)|",
+      "|java+method:///org/apache/hyracks/data/std/util/ArrayBackedValueStorage/reset()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/DataOutput/writeInt(int)|",
+      "|java+method:///org/apache/hyracks/data/std/util/ArrayBackedValueStorage/reset()|",
+      "|java+constructor:///org/apache/hyracks/api/exceptions/HyracksDataException/HyracksDataException(java.lang.Throwable)|",
+      "|java+method:///org/apache/hyracks/data/std/api/IPointable/set(org.apache.hyracks.data.std.api.IValueReference)|",
+      "|java+method:///org/apache/hyracks/data/std/util/ArrayBackedValueStorage/getDataOutput()|"
+    ],
+    "affectedLib": "org.apache.hyracks:hyracks-data-std:0.3.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.hyracks:algebricks-runtime:0.2.17-incubating",
+    "coordinatesV2": "org.apache.hyracks:algebricks-runtime:0.3.0",
+    "caller": "|java+method:///org/apache/hyracks/algebricks/runtime/operators/aggreg/SimpleAlgebricksAccumulatingAggregatorFactory$1/createAggregateStates()|",
+    "called": "|java+constructor:///org/apache/hyracks/dataflow/std/group/AggregateState/AggregateState(java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.Throwable)|",
+      "|java+constructor:///org/apache/hyracks/dataflow/std/group/AggregateState/AggregateState(java.lang.Object)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/aggreg/SimpleAlgebricksAccumulatingAggregatorFactory/access$000(org.apache.hyracks.algebricks.runtime.operators.aggreg.SimpleAlgebricksAccumulatingAggregatorFactory)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/base/IAggregateEvaluatorFactory/createAggregateEvaluator(org.apache.hyracks.api.context.IHyracksTaskContext)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/hyracks/dataflow/std/group/AggregateState/AggregateState(java.lang.Object)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/aggreg/SimpleAlgebricksAccumulatingAggregatorFactory/access$000(org.apache.hyracks.algebricks.runtime.operators.aggreg.SimpleAlgebricksAccumulatingAggregatorFactory)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/base/IAggregateEvaluatorFactory/createAggregateEvaluator(org.apache.hyracks.api.context.IHyracksTaskContext)|"
+    ],
+    "affectedLib": "org.apache.hyracks:hyracks-dataflow-std:0.3.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.hyracks:algebricks-runtime:0.2.17-incubating",
+    "coordinatesV2": "org.apache.hyracks:algebricks-runtime:0.3.0",
+    "caller": "|java+method:///org/apache/hyracks/algebricks/runtime/operators/sort/InMemorySortRuntimeFactory$1/open()|",
+    "called": "|java+constructor:///org/apache/hyracks/dataflow/std/sort/FrameSorterMergeSort/FrameSorterMergeSort(org.apache.hyracks.api.context.IHyracksTaskContext,org.apache.hyracks.dataflow.std.buffermanager.IFrameBufferManager,int%5B%5D,org.apache.hyracks.api.dataflow.value.INormalizedKeyComputerFactory,org.apache.hyracks.api.dataflow.value.IBinaryComparatorFactory%5B%5D,org.apache.hyracks.api.dataflow.value.RecordDescriptor)|",
+    "v1Body": [
+      "|java+method:///org/apache/hyracks/dataflow/std/sort/FrameSorterMergeSort/reset()|",
+      "|java+constructor:///org/apache/hyracks/dataflow/std/sort/FrameSorterMergeSort/FrameSorterMergeSort(org.apache.hyracks.api.context.IHyracksTaskContext,org.apache.hyracks.dataflow.std.sort.buffermanager.IFrameBufferManager,int%5B%5D,org.apache.hyracks.api.dataflow.value.INormalizedKeyComputerFactory,org.apache.hyracks.api.dataflow.value.IBinaryComparatorFactory%5B%5D,org.apache.hyracks.api.dataflow.value.RecordDescriptor)|",
+      "|java+constructor:///org/apache/hyracks/dataflow/std/sort/buffermanager/FrameFreeSlotLastFit/FrameFreeSlotLastFit()|",
+      "|java+constructor:///org/apache/hyracks/dataflow/std/sort/buffermanager/VariableFrameMemoryManager/VariableFrameMemoryManager(org.apache.hyracks.dataflow.std.sort.buffermanager.IFramePool,org.apache.hyracks.dataflow.std.sort.buffermanager.IFrameFreeSlotPolicy)|",
+      "|java+constructor:///org/apache/hyracks/dataflow/std/sort/buffermanager/VariableFramePool/VariableFramePool(org.apache.hyracks.api.context.IHyracksFrameMgrContext,int)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/sort/InMemorySortRuntimeFactory/access$100(org.apache.hyracks.algebricks.runtime.operators.sort.InMemorySortRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/sort/InMemorySortRuntimeFactory/access$000(org.apache.hyracks.algebricks.runtime.operators.sort.InMemorySortRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/sort/InMemorySortRuntimeFactory/access$200(org.apache.hyracks.algebricks.runtime.operators.sort.InMemorySortRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/api/comm/IFrameWriter/open()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hyracks/dataflow/std/sort/FrameSorterMergeSort/reset()|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/sort/InMemorySortRuntimeFactory/access$100(org.apache.hyracks.algebricks.runtime.operators.sort.InMemorySortRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/sort/InMemorySortRuntimeFactory/access$000(org.apache.hyracks.algebricks.runtime.operators.sort.InMemorySortRuntimeFactory)|",
+      "|java+method:///org/apache/hyracks/dataflow/std/buffermanager/FrameFreeSlotPolicyFactory/createFreeSlotPolicy(org.apache.hyracks.dataflow.std.buffermanager.EnumFreeSlotPolicy)|",
+      "|java+constructor:///org/apache/hyracks/dataflow/std/sort/FrameSorterMergeSort/FrameSorterMergeSort(org.apache.hyracks.api.context.IHyracksTaskContext,org.apache.hyracks.dataflow.std.buffermanager.IFrameBufferManager,int%5B%5D,org.apache.hyracks.api.dataflow.value.INormalizedKeyComputerFactory,org.apache.hyracks.api.dataflow.value.IBinaryComparatorFactory%5B%5D,org.apache.hyracks.api.dataflow.value.RecordDescriptor)|",
+      "|java+constructor:///org/apache/hyracks/dataflow/std/buffermanager/VariableFrameMemoryManager/VariableFrameMemoryManager(org.apache.hyracks.dataflow.std.buffermanager.IFramePool,org.apache.hyracks.dataflow.std.buffermanager.IFrameFreeSlotPolicy)|",
+      "|java+method:///org/apache/hyracks/algebricks/runtime/operators/sort/InMemorySortRuntimeFactory/access$200(org.apache.hyracks.algebricks.runtime.operators.sort.InMemorySortRuntimeFactory)|",
+      "|java+constructor:///org/apache/hyracks/dataflow/std/buffermanager/VariableFramePool/VariableFramePool(org.apache.hyracks.api.context.IHyracksFrameMgrContext,int)|",
+      "|java+method:///org/apache/hyracks/api/comm/IFrameWriter/open()|"
+    ],
+    "affectedLib": "org.apache.hyracks:hyracks-dataflow-std:0.3.0",
+    "change": "UPDATED"
+  }
+]

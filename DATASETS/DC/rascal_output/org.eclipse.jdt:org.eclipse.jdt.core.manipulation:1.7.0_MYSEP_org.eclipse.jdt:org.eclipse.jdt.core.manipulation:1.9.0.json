@@ -1,0 +1,79 @@
+[
+  {
+    "coordinatesV1": "org.eclipse.jdt:org.eclipse.jdt.core.manipulation:1.9.0",
+    "coordinatesV2": "org.eclipse.jdt:org.eclipse.jdt.core.manipulation:1.7.0",
+    "caller": "|java+method:///org/eclipse/jdt/core/refactoring/UndoCompilationUnitChange/perform(org.eclipse.core.runtime.IProgressMonitor)|",
+    "called": "|java+method:///org/eclipse/ltk/core/refactoring/UndoTextFileChange/perform(org.eclipse.core.runtime.IProgressMonitor)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/ltk/core/refactoring/UndoTextFileChange/perform(org.eclipse.core.runtime.IProgressMonitor)|",
+      "|java+method:///org/eclipse/jdt/core/ICompilationUnit/becomeWorkingCopy(org.eclipse.core.runtime.IProgressMonitor)|",
+      "|java+constructor:///org/eclipse/core/runtime/SubProgressMonitor/SubProgressMonitor(org.eclipse.core.runtime.IProgressMonitor,int)|",
+      "|java+method:///org/eclipse/core/runtime/IProgressMonitor/beginTask(java.lang.String,int)|",
+      "|java+method:///org/eclipse/jdt/core/ICompilationUnit/discardWorkingCopy()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/core/runtime/SubMonitor/split(int)|",
+      "|java+method:///org/eclipse/ltk/core/refactoring/UndoTextFileChange/perform(org.eclipse.core.runtime.IProgressMonitor)|",
+      "|java+method:///org/eclipse/jdt/core/ICompilationUnit/discardWorkingCopy()|",
+      "|java+method:///org/eclipse/jdt/core/ICompilationUnit/becomeWorkingCopy(org.eclipse.core.runtime.IProgressMonitor)|",
+      "|java+method:///org/eclipse/core/runtime/SubMonitor/convert(org.eclipse.core.runtime.IProgressMonitor,int)|"
+    ],
+    "affectedLib": "org.eclipse.platform:org.eclipse.ltk.core.refactoring:3.9.100",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.jdt:org.eclipse.jdt.core.manipulation:1.9.0",
+    "coordinatesV2": "org.eclipse.jdt:org.eclipse.jdt.core.manipulation:1.7.0",
+    "caller": "|java+method:///org/eclipse/jdt/core/refactoring/CompilationUnitChange/acquireDocument(org.eclipse.core.runtime.IProgressMonitor)|",
+    "called": "|java+method:///org/eclipse/ltk/core/refactoring/TextFileChange/acquireDocument(org.eclipse.core.runtime.IProgressMonitor)|",
+    "v1Body": [
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///org/eclipse/core/runtime/IProgressMonitor/beginTask(java.lang.String,int)|",
+      "|java+method:///org/eclipse/jdt/core/ICompilationUnit/isWorkingCopy()|",
+      "|java+method:///org/eclipse/ltk/core/refactoring/TextFileChange/acquireDocument(org.eclipse.core.runtime.IProgressMonitor)|",
+      "|java+method:///org/eclipse/jdt/core/ICompilationUnit/becomeWorkingCopy(org.eclipse.core.runtime.IProgressMonitor)|",
+      "|java+constructor:///org/eclipse/core/runtime/SubProgressMonitor/SubProgressMonitor(org.eclipse.core.runtime.IProgressMonitor,int)|",
+      "|java+method:///org/eclipse/core/runtime/Assert/isTrue(boolean,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/core/runtime/SubMonitor/split(int)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///org/eclipse/jdt/core/ICompilationUnit/isWorkingCopy()|",
+      "|java+method:///org/eclipse/ltk/core/refactoring/TextFileChange/acquireDocument(org.eclipse.core.runtime.IProgressMonitor)|",
+      "|java+method:///org/eclipse/jdt/core/ICompilationUnit/becomeWorkingCopy(org.eclipse.core.runtime.IProgressMonitor)|",
+      "|java+method:///org/eclipse/core/runtime/SubMonitor/convert(org.eclipse.core.runtime.IProgressMonitor,int)|",
+      "|java+method:///org/eclipse/core/runtime/Assert/isTrue(boolean,java.lang.String)|"
+    ],
+    "affectedLib": "org.eclipse.platform:org.eclipse.ltk.core.refactoring:3.9.100",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.jdt:org.eclipse.jdt.core.manipulation:1.9.0",
+    "coordinatesV2": "org.eclipse.jdt:org.eclipse.jdt.core.manipulation:1.7.0",
+    "caller": "|java+method:///org/eclipse/jdt/core/refactoring/CompilationUnitChange/releaseDocument(org.eclipse.jface.text.IDocument,org.eclipse.core.runtime.IProgressMonitor)|",
+    "called": "|java+method:///org/eclipse/ltk/core/refactoring/TextFileChange/releaseDocument(org.eclipse.jface.text.IDocument,org.eclipse.core.runtime.IProgressMonitor)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/ltk/core/refactoring/TextFileChange/releaseDocument(org.eclipse.jface.text.IDocument,org.eclipse.core.runtime.IProgressMonitor)|",
+      "|java+method:///org/eclipse/jdt/core/ICompilationUnit/reconcile(int,boolean,org.eclipse.jdt.core.WorkingCopyOwner,org.eclipse.core.runtime.IProgressMonitor)|",
+      "|java+method:///org/eclipse/jdt/core/ICompilationUnit/isWorkingCopy()|",
+      "|java+method:///org/eclipse/jdt/core/refactoring/CompilationUnitChange/isDocumentModified()|",
+      "|java+method:///org/eclipse/jdt/core/refactoring/CompilationUnitChange/isDocumentAcquired()|",
+      "|java+method:///org/eclipse/jdt/core/ICompilationUnit/discardWorkingCopy()|",
+      "|java+method:///org/eclipse/jdt/core/ICompilationUnit/makeConsistent(org.eclipse.core.runtime.IProgressMonitor)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/ltk/core/refactoring/TextFileChange/releaseDocument(org.eclipse.jface.text.IDocument,org.eclipse.core.runtime.IProgressMonitor)|",
+      "|java+method:///org/eclipse/core/runtime/SubMonitor/split(int)|",
+      "|java+method:///org/eclipse/jdt/core/ICompilationUnit/reconcile(int,boolean,org.eclipse.jdt.core.WorkingCopyOwner,org.eclipse.core.runtime.IProgressMonitor)|",
+      "|java+method:///org/eclipse/jdt/core/ICompilationUnit/isWorkingCopy()|",
+      "|java+method:///org/eclipse/jdt/core/refactoring/CompilationUnitChange/isDocumentModified()|",
+      "|java+method:///org/eclipse/core/runtime/SubMonitor/convert(org.eclipse.core.runtime.IProgressMonitor,int)|",
+      "|java+method:///org/eclipse/jdt/core/refactoring/CompilationUnitChange/isDocumentAcquired()|",
+      "|java+method:///org/eclipse/core/runtime/SubMonitor/split(int,int)|",
+      "|java+method:///org/eclipse/jdt/core/ICompilationUnit/discardWorkingCopy()|",
+      "|java+method:///org/eclipse/jdt/core/ICompilationUnit/makeConsistent(org.eclipse.core.runtime.IProgressMonitor)|"
+    ],
+    "affectedLib": "org.eclipse.platform:org.eclipse.ltk.core.refactoring:3.9.100",
+    "change": "REMOVED"
+  }
+]

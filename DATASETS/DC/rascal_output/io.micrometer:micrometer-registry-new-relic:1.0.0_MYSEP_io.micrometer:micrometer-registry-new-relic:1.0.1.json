@@ -1,0 +1,69 @@
+[
+  {
+    "coordinatesV1": "io.micrometer:micrometer-registry-new-relic:1.0.0",
+    "coordinatesV2": "io.micrometer:micrometer-registry-new-relic:1.0.1",
+    "caller": "|java+method:///io/micrometer/newrelic/NewRelicMeterRegistry/writeTimer(io.micrometer.core.instrument.Timer)|",
+    "called": "|java+method:///io/micrometer/core/instrument/distribution/HistogramSnapshot/mean(java.util.concurrent.TimeUnit)|",
+    "v1Body": [
+      "|java+method:///io/micrometer/core/instrument/distribution/HistogramSnapshot/mean(java.util.concurrent.TimeUnit)|",
+      "|java+method:///io/micrometer/core/instrument/Timer/getId()|",
+      "|java+method:///io/micrometer/core/instrument/distribution/HistogramSnapshot/count()|",
+      "|java+method:///io/micrometer/core/instrument/Timer/takeSnapshot(boolean)|",
+      "|java+method:///java/util/stream/Stream/builder()|",
+      "|java+method:///io/micrometer/newrelic/NewRelicMeterRegistry/getBaseTimeUnit()|",
+      "|java+method:///io/micrometer/newrelic/NewRelicMeterRegistry/event(io.micrometer.core.instrument.Meter$Id,java.lang.String,java.lang.Number,java.lang.String%5B%5D)|",
+      "|java+method:///java/util/stream/Stream$Builder/add(java.lang.Object)|",
+      "|java+method:///java/util/stream/Stream$Builder/build()|",
+      "|java+method:///java/lang/Double/valueOf(double)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///io/micrometer/core/instrument/distribution/HistogramSnapshot/max(java.util.concurrent.TimeUnit)|",
+      "|java+method:///io/micrometer/core/instrument/distribution/HistogramSnapshot/total(java.util.concurrent.TimeUnit)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/micrometer/core/instrument/distribution/HistogramSnapshot/mean(java.util.concurrent.TimeUnit)|",
+      "|java+constructor:///io/micrometer/newrelic/NewRelicMeterRegistry$Attribute/NewRelicMeterRegistry$Attribute(io.micrometer.newrelic.NewRelicMeterRegistry,java.lang.String,java.lang.Number,io.micrometer.newrelic.NewRelicMeterRegistry$1)|",
+      "|java+method:///io/micrometer/core/instrument/Timer/getId()|",
+      "|java+method:///io/micrometer/core/instrument/distribution/HistogramSnapshot/count()|",
+      "|java+method:///io/micrometer/core/instrument/Timer/takeSnapshot(boolean)|",
+      "|java+method:///io/micrometer/newrelic/NewRelicMeterRegistry/getBaseTimeUnit()|",
+      "|java+method:///java/util/stream/Stream/of(java.lang.Object)|",
+      "|java+method:///java/lang/Double/valueOf(double)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///io/micrometer/core/instrument/distribution/HistogramSnapshot/max(java.util.concurrent.TimeUnit)|",
+      "|java+method:///io/micrometer/newrelic/NewRelicMeterRegistry/event(io.micrometer.core.instrument.Meter$Id,io.micrometer.newrelic.NewRelicMeterRegistry$Attribute%5B%5D)|",
+      "|java+method:///io/micrometer/core/instrument/distribution/HistogramSnapshot/total(java.util.concurrent.TimeUnit)|"
+    ],
+    "affectedLib": "io.micrometer:micrometer-core:1.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.micrometer:micrometer-registry-new-relic:1.0.0",
+    "coordinatesV2": "io.micrometer:micrometer-registry-new-relic:1.0.1",
+    "caller": "|java+method:///io/micrometer/newrelic/NewRelicMeterRegistry/writeTimer(io.micrometer.core.instrument.FunctionTimer)|",
+    "called": "|java+method:///io/micrometer/core/instrument/FunctionTimer/mean(java.util.concurrent.TimeUnit)|",
+    "v1Body": [
+      "|java+method:///io/micrometer/core/instrument/FunctionTimer/mean(java.util.concurrent.TimeUnit)|",
+      "|java+method:///java/lang/Double/valueOf(double)|",
+      "|java+method:///io/micrometer/core/instrument/FunctionTimer/count()|",
+      "|java+method:///io/micrometer/core/instrument/FunctionTimer/getId()|",
+      "|java+method:///java/util/stream/Stream/builder()|",
+      "|java+method:///io/micrometer/newrelic/NewRelicMeterRegistry/getBaseTimeUnit()|",
+      "|java+method:///io/micrometer/newrelic/NewRelicMeterRegistry/event(io.micrometer.core.instrument.Meter$Id,java.lang.String,java.lang.Number,java.lang.String%5B%5D)|",
+      "|java+method:///java/util/stream/Stream$Builder/add(java.lang.Object)|",
+      "|java+method:///java/util/stream/Stream$Builder/build()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/micrometer/core/instrument/FunctionTimer/mean(java.util.concurrent.TimeUnit)|",
+      "|java+constructor:///io/micrometer/newrelic/NewRelicMeterRegistry$Attribute/NewRelicMeterRegistry$Attribute(io.micrometer.newrelic.NewRelicMeterRegistry,java.lang.String,java.lang.Number,io.micrometer.newrelic.NewRelicMeterRegistry$1)|",
+      "|java+method:///java/lang/Double/valueOf(double)|",
+      "|java+method:///io/micrometer/core/instrument/FunctionTimer/totalTime(java.util.concurrent.TimeUnit)|",
+      "|java+method:///io/micrometer/core/instrument/FunctionTimer/count()|",
+      "|java+method:///io/micrometer/core/instrument/FunctionTimer/getId()|",
+      "|java+method:///io/micrometer/newrelic/NewRelicMeterRegistry/event(io.micrometer.core.instrument.Meter$Id,io.micrometer.newrelic.NewRelicMeterRegistry$Attribute%5B%5D)|",
+      "|java+method:///io/micrometer/newrelic/NewRelicMeterRegistry/getBaseTimeUnit()|",
+      "|java+method:///java/util/stream/Stream/of(java.lang.Object)|"
+    ],
+    "affectedLib": "io.micrometer:micrometer-core:1.0.1",
+    "change": "UPDATED"
+  }
+]

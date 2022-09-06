@@ -1,0 +1,67 @@
+[
+  {
+    "coordinatesV1": "org.apache.geronimo.components:geronimo-transaction:2.0.2",
+    "coordinatesV2": "org.apache.geronimo.components:geronimo-transaction:2.1",
+    "caller": "|java+method:///org/apache/geronimo/transaction/manager/TransactionManagerImpl/rollback(javax.transaction.Transaction)|",
+    "called": "|java+constructor:///javax/transaction/xa/XAException/XAException()|",
+    "v1Body": [
+      "|java+constructor:///javax/transaction/xa/XAException/XAException()|",
+      "|java+method:///javax/transaction/xa/XAException/initCause(java.lang.Throwable)|",
+      "|java+method:///javax/transaction/Transaction/rollback()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///javax/transaction/xa/XAException/XAException()|",
+      "|java+method:///javax/transaction/Transaction/rollback()|",
+      "|java+method:///javax/transaction/xa/XAException/initCause(java.lang.Throwable)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicLong/getAndIncrement()|"
+    ],
+    "affectedLib": "org.apache.geronimo.specs:geronimo-jta_1.1_spec:1.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.geronimo.components:geronimo-transaction:2.0.2",
+    "coordinatesV2": "org.apache.geronimo.components:geronimo-transaction:2.1",
+    "caller": "|java+method:///org/apache/geronimo/transaction/manager/TransactionManagerImpl/commit(javax.transaction.Transaction,boolean)|",
+    "called": "|java+constructor:///javax/transaction/xa/XAException/XAException()|",
+    "v1Body": [
+      "|java+constructor:///javax/transaction/xa/XAException/XAException()|",
+      "|java+method:///org/apache/geronimo/transaction/manager/TransactionImpl/preparedCommit()|",
+      "|java+method:///javax/transaction/Transaction/commit()|",
+      "|java+method:///javax/transaction/xa/XAException/initCause(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///javax/transaction/xa/XAException/XAException()|",
+      "|java+method:///org/apache/geronimo/transaction/manager/TransactionImpl/preparedCommit()|",
+      "|java+method:///javax/transaction/Transaction/commit()|",
+      "|java+method:///javax/transaction/xa/XAException/initCause(java.lang.Throwable)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicLong/getAndIncrement()|"
+    ],
+    "affectedLib": "org.apache.geronimo.specs:geronimo-jta_1.1_spec:1.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.geronimo.components:geronimo-transaction:2.0.2",
+    "coordinatesV2": "org.apache.geronimo.components:geronimo-transaction:2.1",
+    "caller": "|java+method:///org/apache/geronimo/transaction/manager/TransactionManagerImpl/associate(org.apache.geronimo.transaction.manager.TransactionImpl)|",
+    "called": "|java+constructor:///javax/transaction/InvalidTransactionException/InvalidTransactionException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/geronimo/transaction/manager/TransactionManagerImpl/fireThreadAssociated(javax.transaction.Transaction)|",
+      "|java+method:///java/lang/ThreadLocal/set(java.lang.Object)|",
+      "|java+method:///java/util/concurrent/ConcurrentHashMap/putIfAbsent(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/Thread/currentThread()|",
+      "|java+constructor:///javax/transaction/InvalidTransactionException/InvalidTransactionException(java.lang.String)|",
+      "|java+constructor:///java/lang/NullPointerException/NullPointerException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/geronimo/transaction/manager/TransactionManagerImpl/fireThreadAssociated(javax.transaction.Transaction)|",
+      "|java+method:///java/lang/ThreadLocal/set(java.lang.Object)|",
+      "|java+method:///java/util/concurrent/ConcurrentHashMap/putIfAbsent(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///javax/transaction/InvalidTransactionException/InvalidTransactionException(java.lang.String)|",
+      "|java+constructor:///java/lang/NullPointerException/NullPointerException(java.lang.String)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicLong/getAndIncrement()|",
+      "|java+method:///java/lang/Thread/currentThread()|"
+    ],
+    "affectedLib": "org.apache.geronimo.specs:geronimo-jta_1.1_spec:1.1",
+    "change": "ADDED"
+  }
+]

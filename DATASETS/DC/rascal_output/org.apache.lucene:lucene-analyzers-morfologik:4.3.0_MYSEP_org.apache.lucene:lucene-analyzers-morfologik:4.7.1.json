@@ -1,0 +1,137 @@
+[
+  {
+    "coordinatesV1": "org.apache.lucene:lucene-analyzers-morfologik:4.3.0",
+    "coordinatesV2": "org.apache.lucene:lucene-analyzers-morfologik:4.7.1",
+    "caller": "|java+method:///org/apache/lucene/analysis/morfologik/MorfologikFilter/popNextLemma()|",
+    "called": "|java+method:///morfologik/stemming/WordData/getStem()|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.CharSequence)|",
+      "|java+method:///morfologik/stemming/WordData/getStem()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/ArrayList/size()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/lucene/analysis/tokenattributes/CharTermAttribute/setEmpty()|",
+      "|java+method:///org/apache/lucene/analysis/tokenattributes/CharTermAttribute/append(java.lang.CharSequence)|",
+      "|java+method:///java/util/ArrayList/get(int)|",
+      "|java+method:///java/lang/StringBuilder/setLength(int)|",
+      "|java+method:///morfologik/stemming/WordData/getTag()|",
+      "|java+method:///java/util/ArrayList/subList(int,int)|",
+      "|java+method:///java/util/ArrayList/add(java.lang.Object)|",
+      "|java+method:///org/apache/lucene/analysis/morfologik/MorfologikFilter/equalCharSequences(java.lang.CharSequence,java.lang.CharSequence)|",
+      "|java+method:///org/apache/lucene/analysis/morfologik/MorphosyntacticTagsAttribute/setTags(java.util.List)|",
+      "|java+method:///java/util/List/get(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/ArrayList/size()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/lucene/analysis/tokenattributes/CharTermAttribute/setEmpty()|",
+      "|java+method:///org/apache/lucene/analysis/tokenattributes/CharTermAttribute/append(java.lang.CharSequence)|",
+      "|java+method:///java/util/ArrayList/get(int)|",
+      "|java+method:///java/util/regex/Pattern/split(java.lang.CharSequence)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///java/lang/StringBuilder/setLength(int)|",
+      "|java+method:///morfologik/stemming/WordData/getTag()|",
+      "|java+method:///java/util/Collections/emptyList()|",
+      "|java+method:///morfologik/stemming/WordData/getStem()|",
+      "|java+method:///java/util/ArrayList/subList(int,int)|",
+      "|java+method:///java/util/ArrayList/add(java.lang.Object)|",
+      "|java+method:///org/apache/lucene/analysis/morfologik/MorphosyntacticTagsAttribute/setTags(java.util.List)|",
+      "|java+method:///java/util/List/get(int)|"
+    ],
+    "affectedLib": "org.carrot2:morfologik-stemming:1.7.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.lucene:lucene-analyzers-morfologik:4.3.0",
+    "coordinatesV2": "org.apache.lucene:lucene-analyzers-morfologik:4.7.1",
+    "caller": "|java+constructor:///org/apache/lucene/analysis/morfologik/MorfologikAnalyzer/MorfologikAnalyzer(org.apache.lucene.util.Version)|",
+    "called": "|java+constructor:///org/apache/lucene/analysis/Analyzer/Analyzer()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/lucene/analysis/morfologik/MorfologikAnalyzer/MorfologikAnalyzer(org.apache.lucene.util.Version,morfologik.stemming.PolishStemmer$DICTIONARY)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/lucene/analysis/Analyzer/Analyzer()|"
+    ],
+    "affectedLib": "org.apache.lucene:lucene-core:4.7.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.lucene:lucene-analyzers-morfologik:4.3.0",
+    "coordinatesV2": "org.apache.lucene:lucene-analyzers-morfologik:4.7.1",
+    "caller": "|java+method:///org/apache/lucene/analysis/morfologik/MorfologikAnalyzer/createComponents(java.lang.String,java.io.Reader)|",
+    "called": "|java+constructor:///org/apache/lucene/analysis/Analyzer$TokenStreamComponents/Analyzer$TokenStreamComponents(org.apache.lucene.analysis.Tokenizer,org.apache.lucene.analysis.TokenStream)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/lucene/analysis/standard/StandardFilter/StandardFilter(org.apache.lucene.util.Version,org.apache.lucene.analysis.TokenStream)|",
+      "|java+constructor:///org/apache/lucene/analysis/Analyzer$TokenStreamComponents/Analyzer$TokenStreamComponents(org.apache.lucene.analysis.Tokenizer,org.apache.lucene.analysis.TokenStream)|",
+      "|java+constructor:///org/apache/lucene/analysis/morfologik/MorfologikFilter/MorfologikFilter(org.apache.lucene.analysis.TokenStream,morfologik.stemming.PolishStemmer$DICTIONARY,org.apache.lucene.util.Version)|",
+      "|java+constructor:///org/apache/lucene/analysis/standard/StandardTokenizer/StandardTokenizer(org.apache.lucene.util.Version,java.io.Reader)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/lucene/analysis/standard/StandardFilter/StandardFilter(org.apache.lucene.util.Version,org.apache.lucene.analysis.TokenStream)|",
+      "|java+constructor:///org/apache/lucene/analysis/Analyzer$TokenStreamComponents/Analyzer$TokenStreamComponents(org.apache.lucene.analysis.Tokenizer,org.apache.lucene.analysis.TokenStream)|",
+      "|java+constructor:///org/apache/lucene/analysis/morfologik/MorfologikFilter/MorfologikFilter(org.apache.lucene.analysis.TokenStream,org.apache.lucene.util.Version)|",
+      "|java+constructor:///org/apache/lucene/analysis/standard/StandardTokenizer/StandardTokenizer(org.apache.lucene.util.Version,java.io.Reader)|"
+    ],
+    "affectedLib": "org.apache.lucene:lucene-core:4.7.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.lucene:lucene-analyzers-morfologik:4.3.0",
+    "coordinatesV2": "org.apache.lucene:lucene-analyzers-morfologik:4.7.1",
+    "caller": "|java+constructor:///org/apache/lucene/analysis/morfologik/MorfologikFilterFactory/MorfologikFilterFactory(java.util.Map)|",
+    "called": "|java+constructor:///org/apache/lucene/analysis/util/TokenFilterFactory/TokenFilterFactory(java.util.Map)|",
+    "v1Body": [
+      "|java+method:///morfologik/stemming/PolishStemmer$DICTIONARY/values()|",
+      "|java+method:///java/util/Map/isEmpty()|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/Arrays/toString(java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/lucene/analysis/morfologik/MorfologikFilterFactory/get(java.util.Map,java.lang.String)|",
+      "|java+method:///java/lang/String/toUpperCase(java.util.Locale)|",
+      "|java+method:///morfologik/stemming/PolishStemmer$DICTIONARY/valueOf(java.lang.String)|",
+      "|java+constructor:///org/apache/lucene/analysis/util/TokenFilterFactory/TokenFilterFactory(java.util.Map)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/logging/Logger/warning(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/lucene/analysis/morfologik/MorfologikFilterFactory/get(java.util.Map,java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/apache/lucene/analysis/util/TokenFilterFactory/TokenFilterFactory(java.util.Map)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/logging/Logger/getLogger(java.lang.String)|",
+      "|java+method:///java/util/Map/isEmpty()|"
+    ],
+    "affectedLib": "org.apache.lucene:lucene-analyzers-common:4.7.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.lucene:lucene-analyzers-morfologik:4.3.0",
+    "coordinatesV2": "org.apache.lucene:lucene-analyzers-morfologik:4.7.1",
+    "caller": "|java+method:///org/apache/lucene/analysis/morfologik/MorfologikAnalyzer/createComponents(java.lang.String,java.io.Reader)|",
+    "called": "|java+constructor:///org/apache/lucene/analysis/standard/StandardTokenizer/StandardTokenizer(org.apache.lucene.util.Version,java.io.Reader)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/lucene/analysis/standard/StandardFilter/StandardFilter(org.apache.lucene.util.Version,org.apache.lucene.analysis.TokenStream)|",
+      "|java+constructor:///org/apache/lucene/analysis/Analyzer$TokenStreamComponents/Analyzer$TokenStreamComponents(org.apache.lucene.analysis.Tokenizer,org.apache.lucene.analysis.TokenStream)|",
+      "|java+constructor:///org/apache/lucene/analysis/morfologik/MorfologikFilter/MorfologikFilter(org.apache.lucene.analysis.TokenStream,morfologik.stemming.PolishStemmer$DICTIONARY,org.apache.lucene.util.Version)|",
+      "|java+constructor:///org/apache/lucene/analysis/standard/StandardTokenizer/StandardTokenizer(org.apache.lucene.util.Version,java.io.Reader)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/lucene/analysis/standard/StandardFilter/StandardFilter(org.apache.lucene.util.Version,org.apache.lucene.analysis.TokenStream)|",
+      "|java+constructor:///org/apache/lucene/analysis/Analyzer$TokenStreamComponents/Analyzer$TokenStreamComponents(org.apache.lucene.analysis.Tokenizer,org.apache.lucene.analysis.TokenStream)|",
+      "|java+constructor:///org/apache/lucene/analysis/morfologik/MorfologikFilter/MorfologikFilter(org.apache.lucene.analysis.TokenStream,org.apache.lucene.util.Version)|",
+      "|java+constructor:///org/apache/lucene/analysis/standard/StandardTokenizer/StandardTokenizer(org.apache.lucene.util.Version,java.io.Reader)|"
+    ],
+    "affectedLib": "org.apache.lucene:lucene-analyzers-common:4.7.1",
+    "change": "UPDATED"
+  }
+]

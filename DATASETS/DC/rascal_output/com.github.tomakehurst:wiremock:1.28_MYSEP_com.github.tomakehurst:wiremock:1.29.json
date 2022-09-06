@@ -1,0 +1,238 @@
+[
+  {
+    "coordinatesV1": "com.github.tomakehurst:wiremock:1.29",
+    "coordinatesV2": "com.github.tomakehurst:wiremock:1.28",
+    "caller": "|java+method:///com/github/tomakehurst/wiremock/common/Json/write(java.lang.Object)|",
+    "called": "|java+method:///org/codehaus/jackson/map/ObjectWriter/writeValueAsString(java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectWriter/writeValueAsString(java.lang.Object)|",
+      "|java+method:///java/io/IOException/getMessage()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/defaultPrettyPrintingWriter()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/IOException/getMessage()|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectWriter/writeValueAsString(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writerWithDefaultPrettyPrinter()|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.8.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.github.tomakehurst:wiremock:1.29",
+    "coordinatesV2": "com.github.tomakehurst:wiremock:1.28",
+    "caller": "|java+method:///com/github/tomakehurst/wiremock/common/Json/read(java.lang.String,java.lang.Class)|",
+    "called": "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/IOException/getMessage()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/configure(org.codehaus.jackson.JsonParser$Feature,boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/IOException/getMessage()|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/configure(com.fasterxml.jackson.core.JsonParser$Feature,boolean)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.8.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.github.tomakehurst:wiremock:1.29",
+    "coordinatesV2": "com.github.tomakehurst:wiremock:1.28",
+    "caller": "|java+constructor:///com/github/tomakehurst/wiremock/http/HttpHeadersJsonSerializer/HttpHeadersJsonSerializer()|",
+    "called": "|java+constructor:///org/codehaus/jackson/map/JsonSerializer/JsonSerializer()|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/jackson/map/JsonSerializer/JsonSerializer()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/fasterxml/jackson/databind/JsonSerializer/JsonSerializer()|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.8.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.github.tomakehurst:wiremock:1.29",
+    "coordinatesV2": "com.github.tomakehurst:wiremock:1.28",
+    "caller": "|java+constructor:///com/github/tomakehurst/wiremock/http/HttpHeadersJsonDeserializer/HttpHeadersJsonDeserializer()|",
+    "called": "|java+constructor:///org/codehaus/jackson/map/JsonDeserializer/JsonDeserializer()|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/jackson/map/JsonDeserializer/JsonDeserializer()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/fasterxml/jackson/databind/JsonDeserializer/JsonDeserializer()|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.8.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.github.tomakehurst:wiremock:1.29",
+    "coordinatesV2": "com.github.tomakehurst:wiremock:1.28",
+    "caller": "|java+method:///com/github/tomakehurst/wiremock/http/HttpHeadersJsonDeserializer$1/apply(java.util.Map$Entry)|",
+    "called": "|java+method:///org/codehaus/jackson/JsonNode/getElements()|",
+    "v1Body": [
+      "|java+method:///org/codehaus/jackson/JsonNode/isArray()|",
+      "|java+method:///com/google/common/collect/Iterables/transform(java.lang.Iterable,com.google.common.base.Function)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+constructor:///com/github/tomakehurst/wiremock/http/HttpHeader/HttpHeader(java.lang.String,java.lang.String%5B%5D)|",
+      "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.lang.Iterable)|",
+      "|java+method:///org/codehaus/jackson/JsonNode/getTextValue()|",
+      "|java+constructor:///com/github/tomakehurst/wiremock/http/HttpHeader/HttpHeader(java.lang.String,java.util.Collection)|",
+      "|java+method:///com/github/tomakehurst/wiremock/http/HttpHeadersJsonDeserializer/access$000()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///com/github/tomakehurst/wiremock/http/HttpHeadersJsonDeserializer/all(java.util.Iterator)|",
+      "|java+method:///org/codehaus/jackson/JsonNode/getElements()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/tomakehurst/wiremock/http/HttpHeadersJsonDeserializer/all(java.util.Iterator)|",
+      "|java+method:///com/fasterxml/jackson/databind/JsonNode/isArray()|",
+      "|java+method:///com/google/common/collect/Iterables/transform(java.lang.Iterable,com.google.common.base.Function)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+constructor:///com/github/tomakehurst/wiremock/http/HttpHeader/HttpHeader(java.lang.String,java.lang.String%5B%5D)|",
+      "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.lang.Iterable)|",
+      "|java+constructor:///com/github/tomakehurst/wiremock/http/HttpHeader/HttpHeader(java.lang.String,java.util.Collection)|",
+      "|java+method:///com/fasterxml/jackson/databind/JsonNode/textValue()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///com/fasterxml/jackson/databind/JsonNode/elements()|",
+      "|java+method:///com/github/tomakehurst/wiremock/http/HttpHeadersJsonDeserializer/access$000()|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-core-asl:1.8.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.github.tomakehurst:wiremock:1.28",
+    "coordinatesV2": "com.github.tomakehurst:wiremock:1.29",
+    "caller": "|java+method:///com/github/tomakehurst/wiremock/common/Json/write(java.lang.Object)|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/ObjectWriter/writeValueAsString(java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectWriter/writeValueAsString(java.lang.Object)|",
+      "|java+method:///java/io/IOException/getMessage()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/defaultPrettyPrintingWriter()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/IOException/getMessage()|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectWriter/writeValueAsString(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writerWithDefaultPrettyPrinter()|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.1.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.tomakehurst:wiremock:1.28",
+    "coordinatesV2": "com.github.tomakehurst:wiremock:1.29",
+    "caller": "|java+method:///com/github/tomakehurst/wiremock/common/Json/read(java.lang.String,java.lang.Class)|",
+    "called": "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/IOException/getMessage()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/configure(org.codehaus.jackson.JsonParser$Feature,boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/IOException/getMessage()|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/configure(com.fasterxml.jackson.core.JsonParser$Feature,boolean)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.1.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.tomakehurst:wiremock:1.28",
+    "coordinatesV2": "com.github.tomakehurst:wiremock:1.29",
+    "caller": "|java+constructor:///com/github/tomakehurst/wiremock/http/HttpHeadersJsonSerializer/HttpHeadersJsonSerializer()|",
+    "called": "|java+constructor:///com/fasterxml/jackson/databind/JsonSerializer/JsonSerializer()|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/jackson/map/JsonSerializer/JsonSerializer()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/fasterxml/jackson/databind/JsonSerializer/JsonSerializer()|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.1.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.tomakehurst:wiremock:1.28",
+    "coordinatesV2": "com.github.tomakehurst:wiremock:1.29",
+    "caller": "|java+constructor:///com/github/tomakehurst/wiremock/http/HttpHeadersJsonDeserializer/HttpHeadersJsonDeserializer()|",
+    "called": "|java+constructor:///com/fasterxml/jackson/databind/JsonDeserializer/JsonDeserializer()|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/jackson/map/JsonDeserializer/JsonDeserializer()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/fasterxml/jackson/databind/JsonDeserializer/JsonDeserializer()|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.1.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.tomakehurst:wiremock:1.28",
+    "coordinatesV2": "com.github.tomakehurst:wiremock:1.29",
+    "caller": "|java+method:///com/github/tomakehurst/wiremock/http/HttpHeadersJsonDeserializer$1/apply(java.util.Map$Entry)|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/JsonNode/elements()|",
+    "v1Body": [
+      "|java+method:///org/codehaus/jackson/JsonNode/isArray()|",
+      "|java+method:///com/google/common/collect/Iterables/transform(java.lang.Iterable,com.google.common.base.Function)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+constructor:///com/github/tomakehurst/wiremock/http/HttpHeader/HttpHeader(java.lang.String,java.lang.String%5B%5D)|",
+      "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.lang.Iterable)|",
+      "|java+method:///org/codehaus/jackson/JsonNode/getTextValue()|",
+      "|java+constructor:///com/github/tomakehurst/wiremock/http/HttpHeader/HttpHeader(java.lang.String,java.util.Collection)|",
+      "|java+method:///com/github/tomakehurst/wiremock/http/HttpHeadersJsonDeserializer/access$000()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///com/github/tomakehurst/wiremock/http/HttpHeadersJsonDeserializer/all(java.util.Iterator)|",
+      "|java+method:///org/codehaus/jackson/JsonNode/getElements()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/tomakehurst/wiremock/http/HttpHeadersJsonDeserializer/all(java.util.Iterator)|",
+      "|java+method:///com/fasterxml/jackson/databind/JsonNode/isArray()|",
+      "|java+method:///com/google/common/collect/Iterables/transform(java.lang.Iterable,com.google.common.base.Function)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+constructor:///com/github/tomakehurst/wiremock/http/HttpHeader/HttpHeader(java.lang.String,java.lang.String%5B%5D)|",
+      "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.lang.Iterable)|",
+      "|java+constructor:///com/github/tomakehurst/wiremock/http/HttpHeader/HttpHeader(java.lang.String,java.util.Collection)|",
+      "|java+method:///com/fasterxml/jackson/databind/JsonNode/textValue()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///com/fasterxml/jackson/databind/JsonNode/elements()|",
+      "|java+method:///com/github/tomakehurst/wiremock/http/HttpHeadersJsonDeserializer/access$000()|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.1.2",
+    "change": "ADDED"
+  }
+]

@@ -1,0 +1,63 @@
+[
+  {
+    "coordinatesV1": "org.apache.tapestry:tapestry-hibernate-core:5.1.0.5",
+    "coordinatesV2": "org.apache.tapestry:tapestry-hibernate-core:5.2.0",
+    "caller": "|java+method:///org/apache/tapestry5/internal/hibernate/HibernateTransactionDecoratorImpl/build(java.lang.Class,java.lang.Object,java.lang.String)|",
+    "called": "|java+method:///org/apache/tapestry5/ioc/internal/util/InternalUtils/isNonBlank(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/tapestry5/ioc/services/AspectDecorator/createBuilder(java.lang.Class,java.lang.Object,java.lang.String)|",
+      "|java+method:///org/apache/tapestry5/ioc/internal/util/Defense/notBlank(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/tapestry5/ioc/internal/util/Defense/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/apache/tapestry5/ioc/services/AspectInterceptorBuilder/build()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/apache/tapestry5/hibernate/HibernateTransactionAdvisor/addTransactionCommitAdvice(org.apache.tapestry5.ioc.MethodAdviceReceiver)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/tapestry5/ioc/services/AspectDecorator/createBuilder(java.lang.Class,java.lang.Object,java.lang.String)|",
+      "|java+method:///org/apache/tapestry5/ioc/internal/util/InternalUtils/isNonBlank(java.lang.String)|",
+      "|java+method:///org/apache/tapestry5/ioc/services/AspectInterceptorBuilder/build()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/apache/tapestry5/hibernate/HibernateTransactionAdvisor/addTransactionCommitAdvice(org.apache.tapestry5.ioc.MethodAdviceReceiver)|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|"
+    ],
+    "affectedLib": "org.apache.tapestry:tapestry-ioc:5.2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.tapestry:tapestry-hibernate-core:5.1.0.5",
+    "coordinatesV2": "org.apache.tapestry:tapestry-hibernate-core:5.2.0",
+    "caller": "|java+method:///org/apache/tapestry5/internal/hibernate/PackageNameHibernateConfigurer/configure(org.hibernate.cfg.Configuration)|",
+    "called": "|java+method:///org/hibernate/cfg/AnnotationConfiguration/addAnnotatedClass(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/hibernate/cfg/AnnotationConfiguration/addAnnotatedClass(java.lang.Class)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/tapestry5/hibernate/HibernateEntityPackageManager/getPackageNames()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///java/lang/Thread/currentThread()|",
+      "|java+method:///org/apache/tapestry5/ioc/internal/util/Defense/cast(java.lang.Object,java.lang.Class,java.lang.String)|",
+      "|java+method:///java/lang/ClassLoader/loadClass(java.lang.String)|",
+      "|java+method:///org/hibernate/cfg/AnnotationConfiguration/addPackage(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/tapestry5/ioc/services/ClassNameLocator/locateClassNames(java.lang.String)|",
+      "|java+method:///java/lang/Thread/getContextClassLoader()|",
+      "|java+method:///java/util/Collection/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/hibernate/cfg/AnnotationConfiguration/addAnnotatedClass(java.lang.Class)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/tapestry5/hibernate/HibernateEntityPackageManager/getPackageNames()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///java/lang/Thread/currentThread()|",
+      "|java+method:///java/lang/ClassLoader/loadClass(java.lang.String)|",
+      "|java+method:///org/hibernate/cfg/AnnotationConfiguration/addPackage(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/tapestry5/ioc/services/ClassNameLocator/locateClassNames(java.lang.String)|",
+      "|java+method:///java/lang/Thread/getContextClassLoader()|",
+      "|java+method:///java/util/Collection/iterator()|"
+    ],
+    "affectedLib": "org.hibernate:hibernate-annotations:3.5.2-Final",
+    "change": "UPDATED"
+  }
+]

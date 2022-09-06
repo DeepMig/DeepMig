@@ -1,0 +1,53 @@
+[
+  {
+    "coordinatesV1": "com.github.angry1980:audio-app:0.0.1",
+    "coordinatesV2": "com.github.angry1980:audio-app:0.0.2",
+    "caller": "|java+method:///angry1980/audio/config/AppConfig/trackDAO()|",
+    "called": "|java+constructor:///angry1980/audio/dao/TrackDAONetflixImpl/TrackDAONetflixImpl(angry1980.audio.dao.NetflixData)|",
+    "v1Body": [
+      "|java+constructor:///angry1980/audio/dao/TrackDAOInMemoryImpl/TrackDAOInMemoryImpl()|",
+      "|java+method:///angry1980/audio/config/AppConfig/netflixTrackDSL()|",
+      "|java+constructor:///angry1980/audio/dao/TrackDAODslImpl/TrackDAODslImpl(angry1980.audio.dsl.TrackDSL,angry1980.audio.dao.TrackDAO)|"
+    ],
+    "v2Body": [
+      "|java+method:///angry1980/audio/config/AppConfig/netflixData()|",
+      "|java+constructor:///angry1980/audio/dao/TrackDAONetflixImpl/TrackDAONetflixImpl(angry1980.audio.dao.NetflixData)|"
+    ],
+    "affectedLib": "com.github.angry1980:audio-netflix:0.0.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.github.angry1980:audio-app:0.0.1",
+    "coordinatesV2": "com.github.angry1980:audio-app:0.0.2",
+    "caller": "|java+method:///angry1980/audio/config/AppConfig/trackSimilarityDAO()|",
+    "called": "|java+constructor:///angry1980/audio/dao/TrackSimilarityDAONetflixImpl/TrackSimilarityDAONetflixImpl(angry1980.audio.dao.NetflixData)|",
+    "v1Body": [
+      "|java+method:///angry1980/audio/config/AppConfig/netflixTrackDSL()|",
+      "|java+constructor:///angry1980/audio/dao/TrackSimilarityDAODslImpl/TrackSimilarityDAODslImpl(angry1980.audio.dsl.TrackDSL)|"
+    ],
+    "v2Body": [
+      "|java+method:///angry1980/audio/config/AppConfig/netflixData()|",
+      "|java+constructor:///angry1980/audio/dao/TrackSimilarityDAONetflixImpl/TrackSimilarityDAONetflixImpl(angry1980.audio.dao.NetflixData)|"
+    ],
+    "affectedLib": "com.github.angry1980:audio-netflix:0.0.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.github.angry1980:audio-app:0.0.1",
+    "coordinatesV2": "com.github.angry1980:audio-app:0.0.2",
+    "caller": "|java+method:///angry1980/audio/config/AppConfig/netflixDataProvider()|",
+    "called": "|java+constructor:///angry1980/audio/dao/NetflixDataProvider/NetflixDataProvider(java.io.File,angry1980.audio.dao.NetflixData)|",
+    "v1Body": [
+      "|java+method:///angry1980/audio/config/AppConfig/netflixTrackDSL()|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+constructor:///angry1980/audio/dsl/NetflixDataProvider/NetflixDataProvider(java.io.File,angry1980.audio.dsl.NetflixTrackDSL)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///angry1980/audio/dao/NetflixDataProvider/NetflixDataProvider(java.io.File,angry1980.audio.dao.NetflixData)|",
+      "|java+method:///angry1980/audio/config/AppConfig/netflixData()|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|"
+    ],
+    "affectedLib": "com.github.angry1980:audio-netflix:0.0.2",
+    "change": "UPDATED"
+  }
+]

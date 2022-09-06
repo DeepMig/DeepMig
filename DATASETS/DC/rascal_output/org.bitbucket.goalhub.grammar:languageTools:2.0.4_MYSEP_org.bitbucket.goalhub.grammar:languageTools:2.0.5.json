@@ -1,0 +1,187 @@
+[
+  {
+    "coordinatesV1": "org.bitbucket.goalhub.grammar:languageTools:2.0.4",
+    "coordinatesV2": "org.bitbucket.goalhub.grammar:languageTools:2.0.5",
+    "caller": "|java+method:///languageTools/analyzer/Validator/removeTabsAndNewLines(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang3/StringUtils/deleteWhitespace(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/replace(java.lang.CharSequence,java.lang.CharSequence)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/StringUtils/deleteWhitespace(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.bitbucket.goalhub.grammar:languageTools:2.0.4",
+    "coordinatesV2": "org.bitbucket.goalhub.grammar:languageTools:2.0.5",
+    "caller": "|java+method:///languageTools/analyzer/mas/MASValidator/visitUseCase(languageTools.parser.MAS2GParser$UseCaseContext)|",
+    "called": "|java+method:///org/apache/commons/lang3/StringUtils/remove(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///languageTools/analyzer/mas/MASValidator/visitUseCase(languageTools.parser.MAS2GParser$UseCaseContext)|",
+      "|java+method:///java/lang/String/replaceFirst(java.lang.String,java.lang.String)|",
+      "|java+method:///languageTools/parser/MAS2GParser$UseCaseContext/getText()|"
+    ],
+    "v2Body": [
+      "|java+method:///languageTools/parser/MAS2GParser$UseCaseContext/getText()|",
+      "|java+method:///languageTools/analyzer/mas/MASValidator/visitUseCase(languageTools.parser.MAS2GParser$UseCaseContext)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/remove(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.bitbucket.goalhub.grammar:languageTools:2.0.4",
+    "coordinatesV2": "org.bitbucket.goalhub.grammar:languageTools:2.0.5",
+    "caller": "|java+method:///languageTools/analyzer/module/ModuleValidator/getTokenName(int)|",
+    "called": "|java+method:///org/apache/commons/lang3/StringUtils/remove(java.lang.String,char)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/replaceAll(java.lang.String,java.lang.String)|",
+      "|java+method:///org/antlr/v4/runtime/Vocabulary/getDisplayName(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/StringUtils/remove(java.lang.String,char)|",
+      "|java+method:///org/antlr/v4/runtime/Vocabulary/getDisplayName(int)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.bitbucket.goalhub.grammar:languageTools:2.0.4",
+    "coordinatesV2": "org.bitbucket.goalhub.grammar:languageTools:2.0.5",
+    "caller": "|java+method:///languageTools/analyzer/module/ModuleValidator/visitGeneralaction(languageTools.parser.MOD2GParser$GeneralactionContext)|",
+    "called": "|java+method:///cognitiveKr/CognitiveKR/visitArguments(java.lang.String,krTools.parser.SourceInfo)|",
+    "v1Body": [
+      "|java+method:///org/antlr/v4/runtime/tree/TerminalNode/getText()|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///languageTools/analyzer/module/ModuleValidator/visitGeneralaction(languageTools.parser.MOD2GParser$GeneralactionContext)|",
+      "|java+method:///languageTools/analyzer/module/ModuleValidator/reportEmbeddedLanguageErrors(cognitiveKr.CognitiveKR)|",
+      "|java+method:///cognitiveKr/CognitiveKR/visitArguments(java.lang.String,krTools.parser.SourceInfo)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///languageTools/parser/MOD2GParser$GeneralactionContext/PARLIST()|",
+      "|java+constructor:///languageTools/program/agent/actions/SubscribeAction/SubscribeAction(java.util.List,krTools.parser.SourceInfo)|",
+      "|java+method:///languageTools/analyzer/module/ModuleValidator/getCognitiveKR()|",
+      "|java+constructor:///languageTools/program/agent/actions/ExitModuleAction/ExitModuleAction(krTools.parser.SourceInfo)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///languageTools/analyzer/module/ModuleValidator/reportParsingException(krTools.exceptions.ParserException)|",
+      "|java+method:///java/lang/Long/parseLong(java.lang.String)|",
+      "|java+constructor:///languageTools/program/agent/actions/LogAction/LogAction(krTools.language.Term,krTools.parser.SourceInfo)|",
+      "|java+method:///languageTools/analyzer/module/ModuleValidator/getSourceInfo(org.antlr.v4.runtime.ParserRuleContext)|",
+      "|java+constructor:///languageTools/program/agent/actions/PrintAction/PrintAction(krTools.language.Term,krTools.parser.SourceInfo)|",
+      "|java+method:///languageTools/analyzer/module/ModuleValidator/getSourceInfo(org.antlr.v4.runtime.tree.TerminalNode)|",
+      "|java+method:///org/antlr/v4/runtime/Token/getType()|",
+      "|java+constructor:///languageTools/program/agent/actions/UnsubscribeAction/UnsubscribeAction(java.util.List,krTools.parser.SourceInfo)|",
+      "|java+constructor:///languageTools/program/agent/actions/SleepAction/SleepAction(krTools.language.Term,krTools.parser.SourceInfo)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/antlr/v4/runtime/tree/TerminalNode/getText()|",
+      "|java+constructor:///languageTools/program/agent/actions/LogAction/LogAction(krTools.language.Term,krTools.parser.SourceInfo)|",
+      "|java+method:///languageTools/analyzer/module/ModuleValidator/visitGeneralaction(languageTools.parser.MOD2GParser$GeneralactionContext)|",
+      "|java+method:///languageTools/analyzer/module/ModuleValidator/reportEmbeddedLanguageErrors(cognitiveKr.CognitiveKR)|",
+      "|java+method:///cognitiveKr/CognitiveKR/visitArguments(java.lang.String,krTools.parser.SourceInfo)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+constructor:///languageTools/program/agent/actions/SubscribeAction/SubscribeAction(java.util.List,krTools.parser.SourceInfo)|",
+      "|java+method:///languageTools/analyzer/module/ModuleValidator/getCognitiveKR()|",
+      "|java+constructor:///languageTools/program/agent/actions/ExitModuleAction/ExitModuleAction(krTools.parser.SourceInfo)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///languageTools/analyzer/module/ModuleValidator/reportParsingException(krTools.exceptions.ParserException)|",
+      "|java+method:///languageTools/parser/MOD2GParser$GeneralactionContext/PARLIST()|",
+      "|java+constructor:///languageTools/program/agent/actions/StartTimerAction/StartTimerAction(java.util.List,krTools.parser.SourceInfo)|",
+      "|java+method:///languageTools/analyzer/module/ModuleValidator/getSourceInfo(org.antlr.v4.runtime.ParserRuleContext)|",
+      "|java+constructor:///languageTools/program/agent/actions/CancelTimerAction/CancelTimerAction(java.util.List,krTools.parser.SourceInfo)|",
+      "|java+constructor:///languageTools/program/agent/actions/PrintAction/PrintAction(krTools.language.Term,krTools.parser.SourceInfo)|",
+      "|java+method:///languageTools/analyzer/module/ModuleValidator/getSourceInfo(org.antlr.v4.runtime.tree.TerminalNode)|",
+      "|java+method:///org/antlr/v4/runtime/Token/getType()|",
+      "|java+constructor:///languageTools/program/agent/actions/UnsubscribeAction/UnsubscribeAction(java.util.List,krTools.parser.SourceInfo)|",
+      "|java+constructor:///languageTools/program/agent/actions/SleepAction/SleepAction(krTools.language.Term,krTools.parser.SourceInfo)|"
+    ],
+    "affectedLib": "org.bitbucket.goalhub.grammar:cognitiveKrInterface:2.0.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.bitbucket.goalhub.grammar:languageTools:2.0.4",
+    "coordinatesV2": "org.bitbucket.goalhub.grammar:languageTools:2.0.5",
+    "caller": "|java+method:///languageTools/analyzer/ValidatorSecondPass/preProcess()|",
+    "called": "|java+constructor:///krTools/exceptions/ParserException/ParserException(java.lang.String,java.io.File)|",
+    "v1Body": [
+      "|java+method:///languageTools/analyzer/Validator/getProgram()|",
+      "|java+constructor:///java/io/File/File(java.net.URI)|",
+      "|java+method:///languageTools/program/Program/getUseClauses()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///languageTools/analyzer/Validator/getRegistry()|",
+      "|java+method:///languageTools/program/mas/UseClause/getResolvedReference()|",
+      "|java+method:///languageTools/analyzer/ValidatorSecondPass/parseKRfile(java.io.File,languageTools.program.mas.UseClause$UseCase,krTools.parser.SourceInfo)|",
+      "|java+method:///languageTools/program/mas/UseClause/isFile()|",
+      "|java+method:///languageTools/program/mas/UseClause$UseCase/ordinal()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///languageTools/Analyzer/processFile(java.io.File,languageTools.analyzer.FileRegistry)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///languageTools/program/mas/UseClause/getUseCase()|",
+      "|java+method:///languageTools/analyzer/FileRegistry/needsProcessing(java.io.File)|",
+      "|java+method:///languageTools/program/mas/UseClause/getSourceInfo()|"
+    ],
+    "v2Body": [
+      "|java+method:///languageTools/program/mas/UseClause$UseCase/ordinal()|",
+      "|java+method:///languageTools/analyzer/Validator/getProgram()|",
+      "|java+method:///languageTools/analyzer/Validator/reportParsingException(krTools.exceptions.ParserException)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///languageTools/program/mas/UseClause/getResolvedReference()|",
+      "|java+method:///languageTools/analyzer/ValidatorSecondPass/parseKRfile(java.io.File,languageTools.program.mas.UseClause$UseCase,krTools.parser.SourceInfo)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///languageTools/Analyzer/processFile(java.io.File,languageTools.analyzer.FileRegistry)|",
+      "|java+method:///languageTools/program/Program/getUseClauses()|",
+      "|java+method:///java/io/IOException/getMessage()|",
+      "|java+constructor:///krTools/exceptions/ParserException/ParserException(java.lang.String,java.io.File)|",
+      "|java+method:///languageTools/analyzer/Validator/getRegistry()|",
+      "|java+method:///languageTools/program/mas/UseClause/getUseCase()|",
+      "|java+method:///languageTools/analyzer/FileRegistry/needsProcessing(java.io.File)|",
+      "|java+method:///languageTools/program/mas/UseClause/getSourceInfo()|"
+    ],
+    "affectedLib": "org.bitbucket.goalhub.krTools:krInterface:1.2.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.bitbucket.goalhub.grammar:languageTools:2.0.4",
+    "coordinatesV2": "org.bitbucket.goalhub.grammar:languageTools:2.0.5",
+    "caller": "|java+method:///languageTools/analyzer/ValidatorSecondPass/checkKRIuse()|",
+    "called": "|java+method:///krFactory/KRFactory/getName(krTools.KRInterface)|",
+    "v1Body": [
+      "|java+method:///languageTools/program/mas/UseClause/isFile()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///java/io/File/File(java.net.URI)|",
+      "|java+method:///java/net/URI/toString()|",
+      "|java+method:///languageTools/program/Program/getUseClauses()|",
+      "|java+method:///languageTools/analyzer/Validator/getRegistry()|",
+      "|java+method:///languageTools/program/Program/getKRInterface()|",
+      "|java+method:///krFactory/KRFactory/getName(krTools.KRInterface)|",
+      "|java+method:///languageTools/analyzer/FileRegistry/getProgram(java.io.File)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///languageTools/program/mas/UseClause/hasKRUseCase()|",
+      "|java+method:///languageTools/program/mas/UseClause/getResolvedReference()|",
+      "|java+method:///languageTools/analyzer/Validator/reportError(languageTools.errors.ValidatorError$ValidatorErrorType,krTools.parser.SourceInfo,java.lang.String%5B%5D)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///languageTools/program/mas/UseClause/getSourceInfo()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///languageTools/program/Program/getUseClauses()|",
+      "|java+method:///languageTools/analyzer/Validator/getRegistry()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///languageTools/program/Program/getKRInterface()|",
+      "|java+method:///languageTools/program/mas/UseClause/getSourceInfo()|",
+      "|java+method:///java/io/File/toString()|",
+      "|java+method:///krFactory/KRFactory/getName(krTools.KRInterface)|",
+      "|java+method:///languageTools/analyzer/FileRegistry/getProgram(java.io.File)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///languageTools/program/mas/UseClause/hasKRUseCase()|",
+      "|java+method:///languageTools/program/mas/UseClause/getResolvedReference()|",
+      "|java+method:///languageTools/analyzer/Validator/reportError(languageTools.errors.ValidatorError$ValidatorErrorType,krTools.parser.SourceInfo,java.lang.String%5B%5D)|"
+    ],
+    "affectedLib": "org.bitbucket.goalhub.krTools:krFactory:1.2.5",
+    "change": "UPDATED"
+  }
+]

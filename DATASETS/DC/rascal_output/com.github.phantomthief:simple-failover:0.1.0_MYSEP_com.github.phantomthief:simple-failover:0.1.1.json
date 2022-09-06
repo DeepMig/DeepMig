@@ -1,0 +1,105 @@
+[
+  {
+    "coordinatesV1": "com.github.phantomthief:simple-failover:0.1.0",
+    "coordinatesV2": "com.github.phantomthief:simple-failover:0.1.1",
+    "caller": "|java+method:///com/github/phantomthief/failover/impl/RecoverableCheckFailover/fail(java.lang.Object)|",
+    "called": "|java+method:///com/github/phantomthief/util/MoreSuppliers$CloseableSupplier/get()|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///com/google/common/collect/EvictingQueue/add(java.lang.Object)|",
+      "|java+method:///com/google/common/collect/EvictingQueue/remainingCapacity()|",
+      "|java+method:///java/util/List/contains(java.lang.Object)|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///com/github/phantomthief/failover/impl/RecoverableCheckFailover/getAll()|",
+      "|java+method:///com/google/common/collect/EvictingQueue/element()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///com/google/common/cache/LoadingCache/get(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/cache/LoadingCache/getUnchecked(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///com/github/phantomthief/util/MoreSuppliers$CloseableSupplier/get()|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///com/google/common/collect/EvictingQueue/add(java.lang.Object)|",
+      "|java+method:///com/google/common/collect/EvictingQueue/remainingCapacity()|",
+      "|java+method:///java/util/List/contains(java.lang.Object)|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///com/github/phantomthief/failover/impl/RecoverableCheckFailover/getAll()|",
+      "|java+method:///com/google/common/collect/EvictingQueue/element()|"
+    ],
+    "affectedLib": "com.github.phantomthief:more-lambdas:0.1.8",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.phantomthief:simple-failover:0.1.0",
+    "coordinatesV2": "com.github.phantomthief:simple-failover:0.1.1",
+    "caller": "|java+method:///com/github/phantomthief/failover/impl/RecoverableCheckFailover/close()|",
+    "called": "|java+method:///com/github/phantomthief/util/MoreSuppliers$CloseableSupplier/ifPresent(com.github.phantomthief.util.ThrowableConsumer)|",
+    "v1Body": [
+      "|java+method:///com/google/common/util/concurrent/MoreExecutors/shutdownAndAwaitTermination(java.util.concurrent.ExecutorService,long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///java/util/concurrent/ScheduledExecutorService/isShutdown()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/phantomthief/util/MoreSuppliers$CloseableSupplier/ifPresent(com.github.phantomthief.util.ThrowableConsumer)|"
+    ],
+    "affectedLib": "com.github.phantomthief:more-lambdas:0.1.8",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.phantomthief:simple-failover:0.1.0",
+    "coordinatesV2": "com.github.phantomthief:simple-failover:0.1.1",
+    "caller": "|java+initializer:///com/github/phantomthief/failover/impl/RecoverableCheckFailover/RecoverableCheckFailover$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/util/concurrent/TimeUnit/toMillis(long)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.14",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.github.phantomthief:simple-failover:0.1.0",
+    "coordinatesV2": "com.github.phantomthief:simple-failover:0.1.1",
+    "caller": "|java+method:///com/github/phantomthief/failover/impl/RecoverableCheckFailover/fail(java.lang.Object)|",
+    "called": "|java+method:///com/google/common/collect/EvictingQueue/add(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///com/google/common/collect/EvictingQueue/add(java.lang.Object)|",
+      "|java+method:///com/google/common/collect/EvictingQueue/remainingCapacity()|",
+      "|java+method:///java/util/List/contains(java.lang.Object)|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///com/github/phantomthief/failover/impl/RecoverableCheckFailover/getAll()|",
+      "|java+method:///com/google/common/collect/EvictingQueue/element()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///com/google/common/cache/LoadingCache/get(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/cache/LoadingCache/getUnchecked(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///com/github/phantomthief/util/MoreSuppliers$CloseableSupplier/get()|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///com/google/common/collect/EvictingQueue/add(java.lang.Object)|",
+      "|java+method:///com/google/common/collect/EvictingQueue/remainingCapacity()|",
+      "|java+method:///java/util/List/contains(java.lang.Object)|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///com/github/phantomthief/failover/impl/RecoverableCheckFailover/getAll()|",
+      "|java+method:///com/google/common/collect/EvictingQueue/element()|"
+    ],
+    "affectedLib": "com.google.guava:guava:21.0",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "coordinatesV1": "com.uber.jaeger:jaeger-core:0.20.5",
+    "coordinatesV2": "com.uber.jaeger:jaeger-core:0.20.6",
+    "caller": "|java+constructor:///com/uber/jaeger/senders/HttpSender/HttpSender(java.lang.String,int)|",
+    "called": "|java+constructor:///okhttp3/OkHttpClient/OkHttpClient()|",
+    "v1Body": [
+      "|java+method:///com/uber/jaeger/senders/HttpSender/constructCollectorUri(java.lang.String)|",
+      "|java+constructor:///org/apache/http/impl/client/DefaultHttpClient/DefaultHttpClient()|",
+      "|java+constructor:///com/uber/jaeger/senders/ThriftSender/ThriftSender(org.apache.thrift.protocol.TProtocolFactory,int)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/uber/jaeger/senders/HttpSender/HttpSender(java.lang.String,int,okhttp3.OkHttpClient)|",
+      "|java+constructor:///okhttp3/OkHttpClient/OkHttpClient()|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.8.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.uber.jaeger:jaeger-core:0.20.5",
+    "coordinatesV2": "com.uber.jaeger:jaeger-core:0.20.6",
+    "caller": "|java+method:///com/uber/jaeger/senders/HttpSender/send(com.uber.jaeger.thriftjava.Process,java.util.List)|",
+    "called": "|java+method:///okhttp3/Request$Builder/build()|",
+    "v1Body": [
+      "|java+method:///org/apache/http/HttpResponse/getStatusLine()|",
+      "|java+method:///org/apache/http/client/HttpClient/execute(org.apache.http.client.methods.HttpUriRequest)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/apache/http/client/methods/HttpPost/setEntity(org.apache.http.HttpEntity)|",
+      "|java+constructor:///org/apache/http/client/methods/HttpPost/HttpPost(java.net.URI)|",
+      "|java+constructor:///com/uber/jaeger/thriftjava/Batch/Batch(com.uber.jaeger.thriftjava.Process,java.util.List)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/apache/http/entity/ByteArrayEntity/ByteArrayEntity(byte%5B%5D)|",
+      "|java+method:///org/apache/http/StatusLine/getStatusCode()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/apache/thrift/TException/TException(java.lang.String)|",
+      "|java+method:///org/apache/thrift/TSerializer/serialize(org.apache.thrift.TBase)|",
+      "|java+constructor:///org/apache/thrift/TException/TException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/Request$Builder/build()|",
+      "|java+method:///okhttp3/Response/body()|",
+      "|java+method:///okhttp3/Request$Builder/post(okhttp3.RequestBody)|",
+      "|java+constructor:///com/uber/jaeger/thriftjava/Batch/Batch(com.uber.jaeger.thriftjava.Process,java.util.List)|",
+      "|java+method:///okhttp3/Response/code()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///okhttp3/ResponseBody/string()|",
+      "|java+method:///okhttp3/RequestBody/create(okhttp3.MediaType,byte%5B%5D)|",
+      "|java+constructor:///org/apache/thrift/TException/TException(java.lang.String)|",
+      "|java+method:///org/apache/thrift/TSerializer/serialize(org.apache.thrift.TBase)|",
+      "|java+constructor:///org/apache/thrift/TException/TException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///okhttp3/Response/isSuccessful()|",
+      "|java+method:///okhttp3/OkHttpClient/newCall(okhttp3.Request)|",
+      "|java+method:///okhttp3/Call/execute()|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.8.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.uber.jaeger:jaeger-core:0.20.5",
+    "coordinatesV2": "com.uber.jaeger:jaeger-core:0.20.6",
+    "caller": "|java+initializer:///com/uber/jaeger/senders/HttpSender/HttpSender$initializer|",
+    "called": "|java+method:///okhttp3/MediaType/parse(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/thrift/protocol/TBinaryProtocol$Factory/TBinaryProtocol$Factory()|",
+      "|java+constructor:///org/apache/thrift/TSerializer/TSerializer(org.apache.thrift.protocol.TProtocolFactory)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/thrift/protocol/TBinaryProtocol$Factory/TBinaryProtocol$Factory()|",
+      "|java+method:///okhttp3/MediaType/parse(java.lang.String)|",
+      "|java+constructor:///org/apache/thrift/TSerializer/TSerializer(org.apache.thrift.protocol.TProtocolFactory)|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.8.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.uber.jaeger:jaeger-core:0.20.5",
+    "coordinatesV2": "com.uber.jaeger:jaeger-core:0.20.6",
+    "caller": "|java+method:///com/uber/jaeger/senders/HttpSender/send(com.uber.jaeger.thriftjava.Process,java.util.List)|",
+    "called": "|java+constructor:///com/uber/jaeger/thriftjava/Batch/Batch(com.uber.jaeger.thriftjava.Process,java.util.List)|",
+    "v1Body": [
+      "|java+method:///org/apache/http/HttpResponse/getStatusLine()|",
+      "|java+method:///org/apache/http/client/HttpClient/execute(org.apache.http.client.methods.HttpUriRequest)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/apache/http/client/methods/HttpPost/setEntity(org.apache.http.HttpEntity)|",
+      "|java+constructor:///org/apache/http/client/methods/HttpPost/HttpPost(java.net.URI)|",
+      "|java+constructor:///com/uber/jaeger/thriftjava/Batch/Batch(com.uber.jaeger.thriftjava.Process,java.util.List)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/apache/http/entity/ByteArrayEntity/ByteArrayEntity(byte%5B%5D)|",
+      "|java+method:///org/apache/http/StatusLine/getStatusCode()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/apache/thrift/TException/TException(java.lang.String)|",
+      "|java+method:///org/apache/thrift/TSerializer/serialize(org.apache.thrift.TBase)|",
+      "|java+constructor:///org/apache/thrift/TException/TException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/Request$Builder/build()|",
+      "|java+method:///okhttp3/Response/body()|",
+      "|java+method:///okhttp3/Request$Builder/post(okhttp3.RequestBody)|",
+      "|java+constructor:///com/uber/jaeger/thriftjava/Batch/Batch(com.uber.jaeger.thriftjava.Process,java.util.List)|",
+      "|java+method:///okhttp3/Response/code()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///okhttp3/ResponseBody/string()|",
+      "|java+method:///okhttp3/RequestBody/create(okhttp3.MediaType,byte%5B%5D)|",
+      "|java+constructor:///org/apache/thrift/TException/TException(java.lang.String)|",
+      "|java+method:///org/apache/thrift/TSerializer/serialize(org.apache.thrift.TBase)|",
+      "|java+constructor:///org/apache/thrift/TException/TException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///okhttp3/Response/isSuccessful()|",
+      "|java+method:///okhttp3/OkHttpClient/newCall(okhttp3.Request)|",
+      "|java+method:///okhttp3/Call/execute()|"
+    ],
+    "affectedLib": "com.uber.jaeger:jaeger-thrift:0.20.6",
+    "change": "UPDATED"
+  }
+]

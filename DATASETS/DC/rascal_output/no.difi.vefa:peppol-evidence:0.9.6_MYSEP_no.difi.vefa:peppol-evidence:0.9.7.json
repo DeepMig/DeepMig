@@ -1,0 +1,87 @@
+[
+  {
+    "coordinatesV1": "no.difi.vefa:peppol-evidence:0.9.6",
+    "coordinatesV2": "no.difi.vefa:peppol-evidence:0.9.7",
+    "caller": "|java+method:///no/difi/vefa/peppol/evidence/rem/SignedRemEvidence/getEvidenceIssuerDetails()|",
+    "called": "|java+method:///no/difi/vefa/peppol/common/util/ExceptionUtil/perform(java.lang.Class,java.lang.String,no.difi.vefa.peppol.common.api.PerformResult)|",
+    "v1Body": [
+      "|java+method:///org/etsi/uri/_02640/v2_/NamePostalAddressType/getEntityName()|",
+      "|java+method:///org/etsi/uri/_02640/v2_/REMEvidenceType/getEvidenceIssuerDetails()|",
+      "|java+method:///no/difi/vefa/peppol/evidence/rem/SignedRemEvidence/e()|",
+      "|java+method:///org/etsi/uri/_02640/v2_/NamesPostalAddressListType/getNamePostalAddress()|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///org/etsi/uri/_02640/v2_/EntityNameType/getName()|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///org/etsi/uri/_02640/v2_/EntityDetailsType/getNamesPostalAddresses()|"
+    ],
+    "v2Body": [
+      "|java+method:///no/difi/vefa/peppol/common/util/ExceptionUtil/perform(java.lang.Class,java.lang.String,no.difi.vefa.peppol.common.api.PerformResult)|",
+      "|java+constructor:///no/difi/vefa/peppol/evidence/rem/SignedRemEvidence$1/SignedRemEvidence$1(no.difi.vefa.peppol.evidence.rem.SignedRemEvidence)|"
+    ],
+    "affectedLib": "no.difi.vefa:peppol-common:0.9.7",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "no.difi.vefa:peppol-evidence:0.9.6",
+    "coordinatesV2": "no.difi.vefa:peppol-evidence:0.9.7",
+    "caller": "|java+constructor:///no/difi/vefa/peppol/evidence/rem/RemEvidenceBuilder/RemEvidenceBuilder(no.difi.vefa.peppol.evidence.rem.EvidenceTypeInstance)|",
+    "called": "|java+method:///no/difi/vefa/peppol/common/model/InstanceIdentifier/generateUUID()|",
+    "v1Body": [
+      "|java+method:///java/util/UUID/randomUUID()|",
+      "|java+constructor:///java/util/Date/Date()|",
+      "|java+method:///java/util/UUID/toString()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///no/difi/vefa/peppol/common/model/InstanceIdentifier/generateUUID()|",
+      "|java+method:///no/difi/vefa/peppol/evidence/rem/Evidence/timestamp(java.util.Date)|",
+      "|java+constructor:///java/util/Date/Date()|",
+      "|java+method:///no/difi/vefa/peppol/evidence/rem/Evidence/newInstance()|",
+      "|java+method:///no/difi/vefa/peppol/evidence/rem/Evidence/type(no.difi.vefa.peppol.evidence.rem.EvidenceTypeInstance)|",
+      "|java+method:///no/difi/vefa/peppol/evidence/rem/Evidence/evidenceIdentifier(no.difi.vefa.peppol.common.api.SingleIdentifier)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "no.difi.vefa:peppol-common:0.9.7",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "no.difi.vefa:peppol-evidence:0.9.6",
+    "coordinatesV2": "no.difi.vefa:peppol-evidence:0.9.7",
+    "caller": "|java+method:///no/difi/vefa/peppol/evidence/rem/SignedRemEvidence/getInstanceIdentifier()|",
+    "called": "|java+method:///no/difi/vefa/peppol/common/model/InstanceIdentifier/of(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/etsi/uri/_02640/v2_/MessageDetailsType/getMessageIdentifierByREMMD()|",
+      "|java+method:///no/difi/vefa/peppol/evidence/rem/SignedRemEvidence/e()|",
+      "|java+constructor:///no/difi/vefa/peppol/common/model/InstanceIdentifier/InstanceIdentifier(java.lang.String)|",
+      "|java+method:///org/etsi/uri/_02640/v2_/REMEvidenceType/getSenderMessageDetails()|"
+    ],
+    "v2Body": [
+      "|java+method:///no/difi/vefa/peppol/evidence/jaxb/rem/REMEvidenceType/getSenderMessageDetails()|",
+      "|java+method:///no/difi/vefa/peppol/common/model/InstanceIdentifier/of(java.lang.String)|",
+      "|java+method:///no/difi/vefa/peppol/evidence/rem/SignedRemEvidence/e()|",
+      "|java+method:///no/difi/vefa/peppol/evidence/jaxb/rem/MessageDetailsType/getMessageIdentifierByREMMD()|"
+    ],
+    "affectedLib": "no.difi.vefa:peppol-common:0.9.7",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "no.difi.vefa:peppol-evidence:0.9.6",
+    "coordinatesV2": "no.difi.vefa:peppol-evidence:0.9.7",
+    "caller": "|java+method:///no/difi/vefa/peppol/evidence/rem/SignedRemEvidence/getDocumentTypeIdentifier()|",
+    "called": "|java+method:///no/difi/vefa/peppol/common/model/DocumentTypeIdentifier/of(java.lang.String,no.difi.vefa.peppol.common.model.Scheme)|",
+    "v1Body": [
+      "|java+method:///org/etsi/uri/_02640/v2_/MessageDetailsType/getMessageSubject()|",
+      "|java+method:///no/difi/vefa/peppol/evidence/rem/SignedRemEvidence/e()|",
+      "|java+constructor:///no/difi/vefa/peppol/common/model/DocumentTypeIdentifier/DocumentTypeIdentifier(java.lang.String)|",
+      "|java+method:///org/etsi/uri/_02640/v2_/REMEvidenceType/getSenderMessageDetails()|"
+    ],
+    "v2Body": [
+      "|java+method:///no/difi/vefa/peppol/evidence/jaxb/rem/REMEvidenceType/getSenderMessageDetails()|",
+      "|java+method:///no/difi/vefa/peppol/evidence/rem/SignedRemEvidence/e()|",
+      "|java+method:///no/difi/vefa/peppol/common/model/DocumentTypeIdentifier/of(java.lang.String,no.difi.vefa.peppol.common.model.Scheme)|",
+      "|java+method:///no/difi/vefa/peppol/evidence/jaxb/rem/MessageDetailsType/getMessageSubject()|"
+    ],
+    "affectedLib": "no.difi.vefa:peppol-common:0.9.7",
+    "change": "ADDED"
+  }
+]

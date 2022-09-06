@@ -1,0 +1,51 @@
+[
+  {
+    "coordinatesV1": "org.ow2.cmi:cmi-core-server:2.2.2",
+    "coordinatesV2": "org.ow2.cmi:cmi-core-server:2.2.3",
+    "caller": "|java+method:///org/ow2/cmi/controller/server/manager/DefaultPolicyStrategyManager/addLoadBalancingArchive(byte%5B%5D,java.lang.String,java.lang.Class%5B%5D,java.lang.Class%5B%5D)|",
+    "called": "|java+method:///org/ow2/cmi/lb/loader/ArchiveId/toString()|",
+    "v1Body": [
+      "|java+method:///org/ow2/cmi/controller/server/AbsServerClusterViewManager/broadCastArchive(java.lang.Object,byte%5B%5D)|",
+      "|java+method:///org/ow2/cmi/controller/server/ServerClusterViewManager/getUUID()|",
+      "|java+method:///org/ow2/cmi/controller/server/manager/PolicyStrategyManagerUtil/buildArchiveId(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/ow2/cmi/lb/loader/ArchiveId/toString()|",
+      "|java+method:///java/util/UUID/toString()|",
+      "|java+method:///org/ow2/util/log/Log/debug(java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/concurrent/ConcurrentHashMap/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/ow2/cmi/controller/server/AbsServerClusterViewManager/isAlreadyDistributed(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/ConcurrentHashMap/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/ow2/cmi/controller/server/ServerClusterViewManager/getUUID()|",
+      "|java+method:///org/ow2/cmi/controller/server/manager/PolicyStrategyManagerUtil/buildArchiveId(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/ow2/cmi/lb/loader/ArchiveId/toString()|",
+      "|java+method:///java/util/UUID/toString()|",
+      "|java+method:///org/ow2/util/log/Log/debug(java.lang.Object,java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "org.ow2.cmi:cmi-lb:2.2.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.ow2.cmi:cmi-core-server:2.2.2",
+    "coordinatesV2": "org.ow2.cmi:cmi-core-server:2.2.3",
+    "caller": "|java+method:///org/ow2/cmi/controller/server/AbsServerClusterViewManager/setPolicyClassName(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/ow2/cmi/lb/data/PolicyData/setProperties(java.util.Map)|",
+    "v1Body": [
+      "|java+method:///org/ow2/cmi/controller/server/AbsServerClusterViewManager/getDistributedObjectInfo(java.lang.String)|",
+      "|java+method:///org/ow2/cmi/controller/server/DistributedObjectInfo/getPolicyData()|",
+      "|java+method:///org/ow2/cmi/controller/server/AbsServerClusterViewManager/setDistributedObjectInfo(java.lang.String,org.ow2.cmi.controller.server.DistributedObjectInfo)|",
+      "|java+method:///org/ow2/cmi/lb/data/PolicyData/setPolicyType(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/ow2/cmi/lb/data/PolicyData/setProperties(java.util.Map)|",
+      "|java+method:///org/ow2/cmi/controller/server/AbsServerClusterViewManager/getDistributedObjectInfo(java.lang.String)|",
+      "|java+method:///org/ow2/cmi/controller/server/DistributedObjectInfo/getPolicyData()|",
+      "|java+method:///org/ow2/cmi/controller/server/AbsServerClusterViewManager/setDistributedObjectInfo(java.lang.String,org.ow2.cmi.controller.server.DistributedObjectInfo)|",
+      "|java+method:///org/ow2/cmi/lb/data/PolicyData/setPolicyType(java.lang.String)|"
+    ],
+    "affectedLib": "org.ow2.cmi:cmi-lb:2.2.3",
+    "change": "UPDATED"
+  }
+]

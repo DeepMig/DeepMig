@@ -1,0 +1,306 @@
+[
+  {
+    "coordinatesV1": "org.apache.archiva.redback:redback-rbac-model:2.0",
+    "coordinatesV2": "org.apache.archiva.redback:redback-rbac-model:2.1",
+    "caller": "|java+method:///org/apache/archiva/redback/rbac/AbstractRBACManager/getEffectivelyUnassignedRoles(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/collections/CollectionUtils/subtract(java.util.Collection,java.util.Collection)|",
+    "v1Body": [
+      "|java+method:///org/codehaus/plexus/util/CollectionUtils/subtract(java.util.Collection,java.util.Collection)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apache/archiva/redback/rbac/AbstractRBACManager/getAllAssignableRoles()|",
+      "|java+method:///org/apache/archiva/redback/rbac/AbstractRBACManager/getEffectivelyAssignedRoles(java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Collection/size()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apache/archiva/redback/rbac/AbstractRBACManager/getAllAssignableRoles()|",
+      "|java+method:///org/apache/archiva/redback/rbac/AbstractRBACManager/getEffectivelyAssignedRoles(java.lang.String)|",
+      "|java+method:///org/apache/commons/collections/CollectionUtils/subtract(java.util.Collection,java.util.Collection)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Collection/size()|"
+    ],
+    "affectedLib": "commons-collections:commons-collections:3.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.archiva.redback:redback-rbac-model:2.0",
+    "coordinatesV2": "org.apache.archiva.redback:redback-rbac-model:2.1",
+    "caller": "|java+method:///org/apache/archiva/redback/rbac/AbstractRBACManager/getUnassignedRoles(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/collections/CollectionUtils/subtract(java.util.Collection,java.util.Collection)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apache/archiva/redback/rbac/AbstractRBACManager/getAllAssignableRoles()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/codehaus/plexus/util/CollectionUtils/subtract(java.util.Collection,java.util.Collection)|",
+      "|java+method:///org/apache/archiva/redback/rbac/AbstractRBACManager/getAssignedRoles(java.lang.String)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Collection/size()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/archiva/redback/rbac/AbstractRBACManager/getAssignedRoles(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apache/archiva/redback/rbac/AbstractRBACManager/getAllAssignableRoles()|",
+      "|java+method:///org/apache/commons/collections/CollectionUtils/subtract(java.util.Collection,java.util.Collection)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Collection/size()|"
+    ],
+    "affectedLib": "commons-collections:commons-collections:3.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.archiva.redback:redback-rbac-model:2.0",
+    "coordinatesV2": "org.apache.archiva.redback:redback-rbac-model:2.1",
+    "caller": "|java+method:///org/apache/archiva/redback/rbac/RBACObjectAssertions/assertValid(java.lang.String,org.apache.archiva.redback.rbac.Resource)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/archiva/redback/rbac/RbacObjectInvalidException/RbacObjectInvalidException(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/archiva/redback/rbac/Resource/getIdentifier()|",
+      "|java+method:///org/codehaus/plexus/util/StringUtils/isEmpty(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+      "|java+constructor:///org/apache/archiva/redback/rbac/RbacObjectInvalidException/RbacObjectInvalidException(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/archiva/redback/rbac/Resource/getIdentifier()|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.archiva.redback:redback-rbac-model:2.0",
+    "coordinatesV2": "org.apache.archiva.redback:redback-rbac-model:2.1",
+    "caller": "|java+method:///org/apache/archiva/redback/rbac/RBACObjectAssertions/assertValid(java.lang.String,org.apache.archiva.redback.rbac.Role)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/archiva/redback/rbac/Role/getName()|",
+      "|java+method:///org/apache/archiva/redback/rbac/Role/getPermissions()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/apache/archiva/redback/rbac/RBACObjectAssertions/assertValid(java.lang.String,org.apache.archiva.redback.rbac.Permission)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/apache/archiva/redback/rbac/RbacObjectInvalidException/RbacObjectInvalidException(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/codehaus/plexus/util/StringUtils/isEmpty(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/archiva/redback/rbac/Role/getName()|",
+      "|java+method:///org/apache/archiva/redback/rbac/Role/getPermissions()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/apache/archiva/redback/rbac/RBACObjectAssertions/assertValid(java.lang.String,org.apache.archiva.redback.rbac.Permission)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/apache/archiva/redback/rbac/RbacObjectInvalidException/RbacObjectInvalidException(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.archiva.redback:redback-rbac-model:2.0",
+    "coordinatesV2": "org.apache.archiva.redback:redback-rbac-model:2.1",
+    "caller": "|java+method:///org/apache/archiva/redback/rbac/RBACObjectAssertions/assertValid(java.lang.String,org.apache.archiva.redback.rbac.UserAssignment)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/apache/archiva/redback/rbac/UserAssignment/getPrincipal()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/apache/archiva/redback/rbac/RbacObjectInvalidException/RbacObjectInvalidException(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/codehaus/plexus/util/StringUtils/isEmpty(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/archiva/redback/rbac/UserAssignment/getRoleNames()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/apache/archiva/redback/rbac/UserAssignment/getPrincipal()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/apache/archiva/redback/rbac/RbacObjectInvalidException/RbacObjectInvalidException(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/archiva/redback/rbac/UserAssignment/getRoleNames()|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.archiva.redback:redback-rbac-model:2.0",
+    "coordinatesV2": "org.apache.archiva.redback:redback-rbac-model:2.1",
+    "caller": "|java+method:///org/apache/archiva/redback/rbac/AbstractRBACManager/userAssignmentExists(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/equals(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/codehaus/plexus/util/StringUtils/equals(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/archiva/redback/rbac/UserAssignment/getPrincipal()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/archiva/redback/rbac/AbstractRBACManager/getAllUserAssignments()|",
+      "|java+method:///java/util/List/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/archiva/redback/rbac/UserAssignment/getPrincipal()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/equals(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/archiva/redback/rbac/AbstractRBACManager/getAllUserAssignments()|",
+      "|java+method:///java/util/List/iterator()|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.archiva.redback:redback-rbac-model:2.0",
+    "coordinatesV2": "org.apache.archiva.redback:redback-rbac-model:2.1",
+    "caller": "|java+method:///org/apache/archiva/redback/rbac/RBACObjectAssertions/assertValid(java.lang.String,org.apache.archiva.redback.rbac.Permission)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/archiva/redback/rbac/RBACObjectAssertions/assertValid(java.lang.String,org.apache.archiva.redback.rbac.Operation)|",
+      "|java+method:///org/apache/archiva/redback/rbac/Permission/getOperation()|",
+      "|java+method:///org/apache/archiva/redback/rbac/RBACObjectAssertions/assertValid(java.lang.String,org.apache.archiva.redback.rbac.Resource)|",
+      "|java+constructor:///org/apache/archiva/redback/rbac/RbacObjectInvalidException/RbacObjectInvalidException(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/archiva/redback/rbac/Permission/getName()|",
+      "|java+method:///org/apache/archiva/redback/rbac/Permission/getResource()|",
+      "|java+method:///org/codehaus/plexus/util/StringUtils/isEmpty(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/archiva/redback/rbac/RBACObjectAssertions/assertValid(java.lang.String,org.apache.archiva.redback.rbac.Operation)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+      "|java+method:///org/apache/archiva/redback/rbac/Permission/getOperation()|",
+      "|java+method:///org/apache/archiva/redback/rbac/RBACObjectAssertions/assertValid(java.lang.String,org.apache.archiva.redback.rbac.Resource)|",
+      "|java+constructor:///org/apache/archiva/redback/rbac/RbacObjectInvalidException/RbacObjectInvalidException(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/archiva/redback/rbac/Permission/getName()|",
+      "|java+method:///org/apache/archiva/redback/rbac/Permission/getResource()|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.archiva.redback:redback-rbac-model:2.0",
+    "coordinatesV2": "org.apache.archiva.redback:redback-rbac-model:2.1",
+    "caller": "|java+method:///org/apache/archiva/redback/rbac/AbstractRBACManager/operationExists(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/equals(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/codehaus/plexus/util/StringUtils/equals(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/archiva/redback/rbac/Operation/getName()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/archiva/redback/rbac/AbstractRBACManager/getAllOperations()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang/StringUtils/equals(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/archiva/redback/rbac/Operation/getName()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/archiva/redback/rbac/AbstractRBACManager/getAllOperations()|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.archiva.redback:redback-rbac-model:2.0",
+    "coordinatesV2": "org.apache.archiva.redback:redback-rbac-model:2.1",
+    "caller": "|java+method:///org/apache/archiva/redback/rbac/AbstractRBACManager/permissionExists(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/equals(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/archiva/redback/rbac/AbstractRBACManager/getAllPermissions()|",
+      "|java+method:///org/codehaus/plexus/util/StringUtils/equals(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/archiva/redback/rbac/Permission/getName()|",
+      "|java+method:///java/util/List/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/archiva/redback/rbac/AbstractRBACManager/getAllPermissions()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/equals(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/archiva/redback/rbac/Permission/getName()|",
+      "|java+method:///java/util/List/iterator()|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.archiva.redback:redback-rbac-model:2.0",
+    "coordinatesV2": "org.apache.archiva.redback:redback-rbac-model:2.1",
+    "caller": "|java+method:///org/apache/archiva/redback/rbac/RBACObjectAssertions/assertValid(java.lang.String,org.apache.archiva.redback.rbac.Operation)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/archiva/redback/rbac/RbacObjectInvalidException/RbacObjectInvalidException(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/archiva/redback/rbac/Operation/getName()|",
+      "|java+method:///org/codehaus/plexus/util/StringUtils/isEmpty(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+      "|java+constructor:///org/apache/archiva/redback/rbac/RbacObjectInvalidException/RbacObjectInvalidException(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/archiva/redback/rbac/Operation/getName()|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.archiva.redback:redback-rbac-model:2.0",
+    "coordinatesV2": "org.apache.archiva.redback:redback-rbac-model:2.1",
+    "caller": "|java+method:///org/apache/archiva/redback/rbac/AbstractRBACManager/resourceExists(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/equals(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/archiva/redback/rbac/AbstractRBACManager/getAllResources()|",
+      "|java+method:///org/codehaus/plexus/util/StringUtils/equals(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/archiva/redback/rbac/Resource/getIdentifier()|",
+      "|java+method:///java/util/List/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/archiva/redback/rbac/AbstractRBACManager/getAllResources()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/equals(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/archiva/redback/rbac/Resource/getIdentifier()|",
+      "|java+method:///java/util/List/iterator()|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.archiva.redback:redback-rbac-model:2.0",
+    "coordinatesV2": "org.apache.archiva.redback:redback-rbac-model:2.1",
+    "caller": "|java+method:///org/apache/archiva/redback/rbac/AbstractRBACManager/roleExists(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/equals(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/archiva/redback/rbac/Role/getName()|",
+      "|java+method:///org/codehaus/plexus/util/StringUtils/equals(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/archiva/redback/rbac/AbstractRBACManager/getAllRoles()|",
+      "|java+method:///java/util/List/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/archiva/redback/rbac/Role/getName()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/equals(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/archiva/redback/rbac/AbstractRBACManager/getAllRoles()|",
+      "|java+method:///java/util/List/iterator()|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "ADDED"
+  }
+]

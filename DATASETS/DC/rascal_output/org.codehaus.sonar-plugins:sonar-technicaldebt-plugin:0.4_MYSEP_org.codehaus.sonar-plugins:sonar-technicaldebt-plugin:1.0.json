@@ -1,0 +1,50 @@
+[
+  {
+    "coordinatesV1": "org.codehaus.sonar-plugins:sonar-technicaldebt-plugin:0.4",
+    "coordinatesV2": "org.codehaus.sonar-plugins:sonar-technicaldebt-plugin:1.0",
+    "caller": "|java+initializer:///org/sonar/plugins/technicaldebt/TechnicalDebtMetrics/TechnicalDebtMetrics$initializer|",
+    "called": "|java+constructor:///org/sonar/api/measures/Metric/Metric(java.lang.String,java.lang.String,java.lang.String,org.sonar.api.measures.Metric$ValueType,java.lang.Integer,java.lang.Boolean,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/sonar/api/measures/Metric/Metric(java.lang.String,java.lang.String,java.lang.String,org.sonar.api.measures.Metric$ValueType,java.lang.Integer,java.lang.Boolean,java.lang.String)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/sonar/api/measures/Metric/Metric(java.lang.String,java.lang.String,java.lang.String,org.sonar.api.measures.Metric$ValueType,java.lang.Integer,java.lang.Boolean,java.lang.String)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/sonar/api/measures/Metric/setHidden(java.lang.Boolean)|"
+    ],
+    "affectedLib": "org.codehaus.sonar:sonar-plugin-api:2.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.codehaus.sonar-plugins:sonar-technicaldebt-plugin:0.4",
+    "coordinatesV2": "org.codehaus.sonar-plugins:sonar-technicaldebt-plugin:1.0",
+    "caller": "|java+method:///org/sonar/plugins/technicaldebt/axis/ComplexityDebtCalculator/calculateAbsoluteDebt(org.sonar.api.batch.DecoratorContext)|",
+    "called": "|java+constructor:///org/sonar/api/utils/KeyValueFormat$StringNumberPairTransformer/KeyValueFormat$StringNumberPairTransformer()|",
+    "v1Body": [
+      "|java+method:///org/sonar/api/resources/ResourceUtils/isFile(org.sonar.api.resources.Resource)|",
+      "|java+method:///org/sonar/api/batch/DecoratorContext/getResource()|",
+      "|java+method:///org/sonar/api/batch/DecoratorContext/getMeasure(org.sonar.api.measures.Metric)|",
+      "|java+method:///java/lang/Double/doubleValue()|",
+      "|java+method:///org/sonar/api/measures/MeasureUtils/hasValue(org.sonar.api.measures.Measure)|",
+      "|java+method:///org/sonar/api/measures/Measure/getValue()|",
+      "|java+method:///org/sonar/plugins/technicaldebt/axis/ComplexityDebtCalculator/getMethodsAboveMaxComplexity(org.sonar.api.batch.DecoratorContext)|",
+      "|java+method:///org/sonar/plugins/technicaldebt/axis/ComplexityDebtCalculator/getWeight(java.lang.String,java.lang.String)|",
+      "|java+method:///org/sonar/plugins/technicaldebt/axis/ComplexityDebtCalculator/getClassAboveMaxComplexity(org.sonar.api.batch.DecoratorContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonar/plugins/technicaldebt/axis/ComplexityDebtCalculator/getWeight(java.lang.String,java.lang.String)|",
+      "|java+method:///org/sonar/api/measures/MeasureUtils/hasData(org.sonar.api.measures.Measure)|",
+      "|java+method:///org/sonar/api/utils/KeyValueFormat/parse(java.lang.String,org.sonar.api.utils.KeyValueFormat$Transformer)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/sonar/api/measures/Measure/getData()|",
+      "|java+constructor:///org/sonar/api/utils/KeyValueFormat$StringNumberPairTransformer/KeyValueFormat$StringNumberPairTransformer()|",
+      "|java+method:///org/sonar/api/batch/DecoratorContext/getMeasure(org.sonar.api.measures.Metric)|",
+      "|java+method:///java/lang/Double/intValue()|"
+    ],
+    "affectedLib": "org.codehaus.sonar:sonar-plugin-api:2.0.1",
+    "change": "UPDATED"
+  }
+]

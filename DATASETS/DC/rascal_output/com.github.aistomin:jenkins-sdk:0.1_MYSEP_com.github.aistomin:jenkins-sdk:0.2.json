@@ -1,0 +1,38 @@
+[
+  {
+    "coordinatesV1": "com.github.aistomin:jenkins-sdk:0.1",
+    "coordinatesV2": "com.github.aistomin:jenkins-sdk:0.2",
+    "caller": "|java+method:///com/github/aistomin/jenkins/fake/FakeJob/parameters()|",
+    "called": "|java+constructor:///org/apache/commons/lang3/NotImplementedException/NotImplementedException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/util/List/iterator()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/commons/lang3/NotImplementedException/NotImplementedException(java.lang.String)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.aistomin:jenkins-sdk:0.1",
+    "coordinatesV2": "com.github.aistomin:jenkins-sdk:0.2",
+    "caller": "|java+method:///com/github/aistomin/xml/XmlResource/content()|",
+    "called": "|java+method:///org/apache/commons/io/IOUtils/toString(java.io.InputStream,java.nio.charset.Charset)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/io/IOUtils/toString(java.io.InputStream)|",
+      "|java+method:///java/lang/Thread/currentThread()|",
+      "|java+method:///java/lang/ClassLoader/getResourceAsStream(java.lang.String)|",
+      "|java+method:///java/lang/Thread/getContextClassLoader()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Thread/currentThread()|",
+      "|java+method:///org/apache/commons/io/IOUtils/toString(java.io.InputStream,java.nio.charset.Charset)|",
+      "|java+method:///java/lang/ClassLoader/getResourceAsStream(java.lang.String)|",
+      "|java+method:///java/lang/Thread/getContextClassLoader()|"
+    ],
+    "affectedLib": "commons-io:commons-io:2.5",
+    "change": "UPDATED"
+  }
+]

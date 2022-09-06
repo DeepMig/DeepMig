@@ -1,0 +1,116 @@
+[
+  {
+    "coordinatesV1": "com.github.jnr:jnr-ffi:0.6.1",
+    "coordinatesV2": "com.github.jnr:jnr-ffi:0.6.0",
+    "caller": "|java+method:///jnr/ffi/provider/jffi/AsmUtil/newTraceClassVisitor(java.io.PrintWriter)|",
+    "called": "|java+constructor:///org/objectweb/asm/commons/EmptyVisitor/EmptyVisitor()|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+method:///java/lang/reflect/Constructor/newInstance(java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Class/getDeclaredConstructor(java.lang.Class%5B%5D)|",
+      "|java+constructor:///org/objectweb/asm/commons/EmptyVisitor/EmptyVisitor()|",
+      "|java+method:///java/lang/Class/asSubclass(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+method:///java/lang/reflect/Constructor/newInstance(java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///java/lang/Class/getDeclaredConstructor(java.lang.Class%5B%5D)|",
+      "|java+method:///java/lang/Class/asSubclass(java.lang.Class)|"
+    ],
+    "affectedLib": "asm:asm-commons:3.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.github.jnr:jnr-ffi:0.6.0",
+    "coordinatesV2": "com.github.jnr:jnr-ffi:0.6.1",
+    "caller": "|java+constructor:///jnr/ffi/provider/jffi/SkinnyMethodAdapter/SkinnyMethodAdapter(org.objectweb.asm.MethodVisitor)|",
+    "called": "|java+constructor:///org/objectweb/asm/MethodVisitor/MethodVisitor(int,org.objectweb.asm.MethodVisitor)|",
+    "v1Body": [
+      "|java+method:///jnr/ffi/provider/jffi/SkinnyMethodAdapter/setMethodVisitor(org.objectweb.asm.MethodVisitor)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/objectweb/asm/MethodVisitor/MethodVisitor(int,org.objectweb.asm.MethodVisitor)|"
+    ],
+    "affectedLib": "org.ow2.asm:asm:4.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.jnr:jnr-ffi:0.6.0",
+    "coordinatesV2": "com.github.jnr:jnr-ffi:0.6.1",
+    "caller": "|java+method:///jnr/ffi/provider/jffi/AsmLibraryLoader/generateConversionMethod(jnr.ffi.provider.jffi.AsmBuilder,java.lang.String,java.lang.String,int,java.lang.Class,java.lang.Class%5B%5D,java.lang.Class,java.lang.Class%5B%5D,jnr.ffi.mapper.FromNativeConverter,jnr.ffi.mapper.ToNativeConverter%5B%5D)|",
+    "called": "|java+method:///org/objectweb/asm/ClassVisitor/visitMethod(int,java.lang.String,java.lang.String,java.lang.String,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///jnr/ffi/provider/jffi/AsmLibraryLoader/loadParameter(jnr.ffi.provider.jffi.SkinnyMethodAdapter,java.lang.Class,int)|",
+      "|java+method:///jnr/ffi/provider/jffi/CodegenUtils/sig(java.lang.Class,java.lang.Class%5B%5D)|",
+      "|java+method:///jnr/ffi/provider/jffi/SkinnyMethodAdapter/invokevirtual(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///jnr/ffi/provider/jffi/SkinnyMethodAdapter/visitEnd()|",
+      "|java+method:///java/lang/Class/isPrimitive()|",
+      "|java+method:///jnr/ffi/provider/jffi/AsmBuilder/getClassVisitor()|",
+      "|java+method:///jnr/ffi/provider/jffi/AsmBuilder/getResultConverterName(jnr.ffi.mapper.FromNativeConverter)|",
+      "|java+method:///jnr/ffi/provider/jffi/CodegenUtils/ci(java.lang.Class)|",
+      "|java+method:///jnr/ffi/provider/jffi/SkinnyMethodAdapter/getfield(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///jnr/ffi/provider/jffi/SkinnyMethodAdapter/l2i()|",
+      "|java+method:///jnr/ffi/provider/jffi/SkinnyMethodAdapter/aconst_null()|",
+      "|java+method:///jnr/ffi/provider/jffi/SkinnyMethodAdapter/visitMaxs(int,int)|",
+      "|java+method:///jnr/ffi/provider/jffi/CodegenUtils/p(java.lang.Class)|",
+      "|java+method:///jnr/ffi/provider/jffi/AsmBuilder/getClassNamePath()|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///org/objectweb/asm/ClassVisitor/visitMethod(int,java.lang.String,java.lang.String,java.lang.String,java.lang.String%5B%5D)|",
+      "|java+method:///jnr/ffi/provider/jffi/NumberUtil/getBoxedClass(java.lang.Class)|",
+      "|java+method:///jnr/ffi/provider/jffi/AsmUtil/emitReturnOp(jnr.ffi.provider.jffi.SkinnyMethodAdapter,java.lang.Class)|",
+      "|java+constructor:///jnr/ffi/provider/jffi/SkinnyMethodAdapter/SkinnyMethodAdapter(org.objectweb.asm.MethodVisitor)|",
+      "|java+method:///jnr/ffi/provider/jffi/AsmBuilder/getParameterConverterName(jnr.ffi.mapper.ToNativeConverter)|",
+      "|java+method:///jnr/ffi/provider/jffi/SkinnyMethodAdapter/aload(int)|",
+      "|java+method:///jnr/ffi/provider/jffi/SkinnyMethodAdapter/start()|",
+      "|java+method:///jnr/ffi/provider/jffi/SkinnyMethodAdapter/checkcast(java.lang.String)|",
+      "|java+method:///jnr/ffi/provider/jffi/AsmUtil/boxValue(jnr.ffi.provider.jffi.SkinnyMethodAdapter,java.lang.Class,java.lang.Class)|",
+      "|java+method:///jnr/ffi/provider/jffi/SkinnyMethodAdapter/invokeinterface(java.lang.Class,java.lang.String,java.lang.Class,java.lang.Class%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///jnr/ffi/provider/jffi/AsmLibraryLoader/loadParameter(jnr.ffi.provider.jffi.SkinnyMethodAdapter,java.lang.Class,int)|",
+      "|java+method:///jnr/ffi/provider/jffi/CodegenUtils/sig(java.lang.Class,java.lang.Class%5B%5D)|",
+      "|java+method:///jnr/ffi/provider/jffi/SkinnyMethodAdapter/invokevirtual(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///jnr/ffi/provider/jffi/SkinnyMethodAdapter/visitEnd()|",
+      "|java+method:///java/lang/Class/isPrimitive()|",
+      "|java+method:///jnr/ffi/provider/jffi/AsmBuilder/getClassVisitor()|",
+      "|java+method:///jnr/ffi/provider/jffi/AsmBuilder/getResultConverterName(jnr.ffi.mapper.FromNativeConverter)|",
+      "|java+method:///jnr/ffi/provider/jffi/CodegenUtils/ci(java.lang.Class)|",
+      "|java+method:///jnr/ffi/provider/jffi/SkinnyMethodAdapter/getfield(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///jnr/ffi/provider/jffi/SkinnyMethodAdapter/aconst_null()|",
+      "|java+method:///jnr/ffi/provider/jffi/SkinnyMethodAdapter/visitMaxs(int,int)|",
+      "|java+method:///jnr/ffi/provider/jffi/CodegenUtils/p(java.lang.Class)|",
+      "|java+method:///jnr/ffi/provider/jffi/AsmBuilder/getClassNamePath()|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///org/objectweb/asm/ClassVisitor/visitMethod(int,java.lang.String,java.lang.String,java.lang.String,java.lang.String%5B%5D)|",
+      "|java+method:///jnr/ffi/provider/jffi/NumberUtil/getBoxedClass(java.lang.Class)|",
+      "|java+method:///jnr/ffi/provider/jffi/AsmUtil/emitReturnOp(jnr.ffi.provider.jffi.SkinnyMethodAdapter,java.lang.Class)|",
+      "|java+constructor:///jnr/ffi/provider/jffi/SkinnyMethodAdapter/SkinnyMethodAdapter(org.objectweb.asm.MethodVisitor)|",
+      "|java+method:///jnr/ffi/provider/jffi/AsmBuilder/getParameterConverterName(jnr.ffi.mapper.ToNativeConverter)|",
+      "|java+method:///jnr/ffi/provider/jffi/SkinnyMethodAdapter/aload(int)|",
+      "|java+method:///jnr/ffi/provider/jffi/SkinnyMethodAdapter/start()|",
+      "|java+method:///jnr/ffi/provider/jffi/SkinnyMethodAdapter/checkcast(java.lang.String)|",
+      "|java+method:///jnr/ffi/provider/jffi/AsmUtil/boxValue(jnr.ffi.provider.jffi.SkinnyMethodAdapter,java.lang.Class,java.lang.Class)|",
+      "|java+method:///jnr/ffi/provider/jffi/SkinnyMethodAdapter/invokeinterface(java.lang.Class,java.lang.String,java.lang.Class,java.lang.Class%5B%5D)|",
+      "|java+method:///jnr/ffi/provider/jffi/SkinnyMethodAdapter/l2i()|",
+      "|java+method:///jnr/ffi/provider/jffi/SkinnyMethodAdapter/i2l()|"
+    ],
+    "affectedLib": "org.ow2.asm:asm:4.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.jnr:jnr-ffi:0.6.0",
+    "coordinatesV2": "com.github.jnr:jnr-ffi:0.6.1",
+    "caller": "|java+constructor:///jnr/ffi/provider/jffi/SkinnyMethodAdapter/SkinnyMethodAdapter()|",
+    "called": "|java+constructor:///org/objectweb/asm/MethodVisitor/MethodVisitor(int)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/objectweb/asm/MethodVisitor/MethodVisitor(int)|"
+    ],
+    "affectedLib": "org.ow2.asm:asm:4.0",
+    "change": "ADDED"
+  }
+]

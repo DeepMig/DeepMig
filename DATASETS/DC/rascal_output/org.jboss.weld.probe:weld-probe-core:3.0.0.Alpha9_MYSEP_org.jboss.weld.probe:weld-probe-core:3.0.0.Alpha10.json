@@ -1,0 +1,233 @@
+[
+  {
+    "coordinatesV1": "org.jboss.weld.probe:weld-probe-core:3.0.0.Alpha9",
+    "coordinatesV2": "org.jboss.weld.probe:weld-probe-core:3.0.0.Alpha10",
+    "caller": "|java+constructor:///org/jboss/weld/probe/Probe/Probe()|",
+    "called": "|java+method:///org/jboss/weld/util/collections/SetMultimap/newSetMultimap()|",
+    "v1Body": [
+      "|java+constructor:///org/jboss/weld/probe/Probe$3/Probe$3(org.jboss.weld.probe.Probe)|",
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+constructor:///org/jboss/weld/probe/Probe$1/Probe$1(org.jboss.weld.probe.Probe)|",
+      "|java+constructor:///org/jboss/weld/probe/Probe$2/Probe$2(org.jboss.weld.probe.Probe)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/jboss/weld/probe/Probe$3/Probe$3(org.jboss.weld.probe.Probe)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///org/jboss/weld/probe/Probe$1/Probe$1(org.jboss.weld.probe.Probe)|",
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+method:///java/util/Collections/synchronizedList(java.util.List)|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicLong/AtomicLong(long)|",
+      "|java+method:///org/jboss/weld/util/collections/SetMultimap/newSetMultimap()|",
+      "|java+constructor:///org/jboss/weld/probe/Probe$2/Probe$2(org.jboss.weld.probe.Probe)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.jboss.weld:weld-core-impl:3.0.0.Alpha10",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jboss.weld.probe:weld-probe-core:3.0.0.Alpha9",
+    "coordinatesV2": "org.jboss.weld.probe:weld-probe-core:3.0.0.Alpha10",
+    "caller": "|java+method:///org/jboss/weld/probe/InvocationMonitor/initProbe()|",
+    "called": "|java+method:///org/jboss/weld/manager/BeanManagerImpl/getExtension(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/jboss/weld/bootstrap/api/ServiceRegistry/get(java.lang.Class)|",
+      "|java+method:///org/jboss/weld/manager/BeanManagerImpl/getServices()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jboss/weld/probe/Probe/isInitialized()|",
+      "|java+method:///org/jboss/weld/manager/BeanManagerImpl/getExtension(java.lang.Class)|",
+      "|java+method:///org/jboss/weld/probe/ProbeExtension/getProbe()|",
+      "|java+method:///org/jboss/weld/probe/ProbeLogger/probeNotInitialized()|"
+    ],
+    "affectedLib": "org.jboss.weld:weld-core-impl:3.0.0.Alpha10",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jboss.weld.probe:weld-probe-core:3.0.0.Alpha9",
+    "coordinatesV2": "org.jboss.weld.probe:weld-probe-core:3.0.0.Alpha10",
+    "caller": "|java+method:///org/jboss/weld/probe/ProbeFilter/init(javax.servlet.FilterConfig)|",
+    "called": "|java+method:///org/jboss/weld/manager/BeanManagerImpl/getExtension(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/util/regex/Pattern/compile(java.lang.String)|",
+      "|java+method:///org/jboss/weld/bootstrap/api/ServiceRegistry/get(java.lang.Class)|",
+      "|java+method:///org/jboss/weld/bean/builtin/BeanManagerProxy/tryUnwrap(java.lang.Object)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+method:///java/lang/Class/getPackage()|",
+      "|java+method:///org/jboss/weld/util/reflection/Formats/version(java.lang.String,java.lang.String)|",
+      "|java+method:///org/jboss/weld/config/WeldConfiguration/getBooleanProperty(org.jboss.weld.config.ConfigurationKey)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+method:///org/jboss/weld/config/WeldConfiguration/getStringProperty(org.jboss.weld.config.ConfigurationKey)|",
+      "|java+method:///org/jboss/weld/probe/ProbeLogger/probeFilterUnableToOperate(java.lang.Class)|",
+      "|java+method:///javax/servlet/FilterConfig/getServletContext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/regex/Matcher/matches()|",
+      "|java+method:///java/lang/Package/getSpecificationVersion()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/jboss/weld/manager/BeanManagerImpl/getServices()|",
+      "|java+method:///javax/servlet/ServletContext/getContextPath()|",
+      "|java+method:///java/util/regex/Pattern/matcher(java.lang.CharSequence)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///javax/servlet/ServletContext/getAttribute(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jboss/weld/probe/Probe/isInitialized()|",
+      "|java+method:///org/jboss/weld/probe/ProbeFilter/initSnippetBase(javax.servlet.ServletContext)|",
+      "|java+method:///javax/servlet/FilterConfig/getServletContext()|",
+      "|java+method:///java/util/regex/Matcher/matches()|",
+      "|java+method:///org/jboss/weld/bootstrap/api/ServiceRegistry/get(java.lang.Class)|",
+      "|java+method:///org/jboss/weld/bean/builtin/BeanManagerProxy/tryUnwrap(java.lang.Object)|",
+      "|java+method:///org/jboss/weld/probe/ProbeExtension/getProbe()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+method:///org/jboss/weld/manager/BeanManagerImpl/getServices()|",
+      "|java+method:///org/jboss/weld/probe/ProbeLogger/probeNotInitialized()|",
+      "|java+method:///org/jboss/weld/config/WeldConfiguration/getBooleanProperty(org.jboss.weld.config.ConfigurationKey)|",
+      "|java+method:///java/util/regex/Pattern/matcher(java.lang.CharSequence)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+method:///javax/servlet/ServletContext/getAttribute(java.lang.String)|",
+      "|java+method:///org/jboss/weld/manager/BeanManagerImpl/getExtension(java.lang.Class)|",
+      "|java+method:///java/util/regex/Pattern/compile(java.lang.String)|",
+      "|java+method:///org/jboss/weld/config/WeldConfiguration/getStringProperty(org.jboss.weld.config.ConfigurationKey)|",
+      "|java+method:///org/jboss/weld/probe/ProbeLogger/probeFilterUnableToOperate(java.lang.Class)|"
+    ],
+    "affectedLib": "org.jboss.weld:weld-core-impl:3.0.0.Alpha10",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jboss.weld.probe:weld-probe-core:3.0.0.Alpha9",
+    "coordinatesV2": "org.jboss.weld.probe:weld-probe-core:3.0.0.Alpha10",
+    "caller": "|java+method:///org/jboss/weld/probe/ProbeObserver/notify(java.lang.Object)|",
+    "called": "|java+method:///org/jboss/weld/util/reflection/Formats/formatType(java.lang.reflect.Type,boolean)|",
+    "v1Body": [
+      "|java+constructor:///org/jboss/weld/probe/ProbeObserver$EventInfo/ProbeObserver$EventInfo(java.lang.reflect.Type,java.util.Set,java.lang.Object,javax.enterprise.inject.spi.InjectionPoint,java.util.List,boolean,long,org.jboss.weld.probe.ProbeObserver$1)|",
+      "|java+method:///org/jboss/weld/util/reflection/Formats/formatType(java.lang.reflect.Type,boolean)|",
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///javax/enterprise/inject/spi/EventMetadata/getQualifiers()|",
+      "|java+method:///java/util/regex/Matcher/matches()|",
+      "|java+method:///java/util/List/subList(int,int)|",
+      "|java+method:///org/jboss/weld/probe/ProbeObserver/resolveObservers(javax.enterprise.inject.spi.EventMetadata,boolean)|",
+      "|java+method:///java/util/List/clear()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/util/regex/Pattern/matcher(java.lang.CharSequence)|",
+      "|java+method:///org/jboss/weld/probe/ProbeLogger/monitoringLimitExceeded(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/jboss/weld/probe/ProbeObserver/isContainerEvent(java.util.Set)|",
+      "|java+method:///org/jboss/weld/probe/ProbeLogger/eventExcluded(java.lang.Object)|",
+      "|java+method:///org/jboss/weld/event/CurrentEventMetadata/peek()|",
+      "|java+method:///javax/enterprise/inject/spi/EventMetadata/getInjectionPoint()|",
+      "|java+method:///javax/enterprise/inject/spi/EventMetadata/getType()|",
+      "|java+method:///java/util/List/add(int,java.lang.Object)|",
+      "|java+method:///java/lang/System/currentTimeMillis()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jboss/weld/util/reflection/Formats/formatType(java.lang.reflect.Type,boolean)|",
+      "|java+method:///javax/enterprise/inject/spi/EventMetadata/getQualifiers()|",
+      "|java+method:///java/util/regex/Matcher/matches()|",
+      "|java+method:///org/jboss/weld/probe/ProbeObserver/resolveObservers(javax.enterprise.inject.spi.EventMetadata,boolean)|",
+      "|java+method:///java/util/regex/Pattern/matcher(java.lang.CharSequence)|",
+      "|java+method:///org/jboss/weld/probe/Probe/addEvent(org.jboss.weld.probe.EventInfo)|",
+      "|java+constructor:///org/jboss/weld/probe/EventInfo/EventInfo(java.lang.reflect.Type,java.util.Set,java.lang.Object,javax.enterprise.inject.spi.InjectionPoint,java.util.List,boolean,long)|",
+      "|java+method:///org/jboss/weld/probe/ProbeObserver/isContainerEvent(java.util.Set)|",
+      "|java+method:///org/jboss/weld/probe/ProbeLogger/eventExcluded(java.lang.Object)|",
+      "|java+method:///org/jboss/weld/event/CurrentEventMetadata/peek()|",
+      "|java+method:///javax/enterprise/inject/spi/EventMetadata/getInjectionPoint()|",
+      "|java+method:///javax/enterprise/inject/spi/EventMetadata/getType()|",
+      "|java+method:///java/lang/System/currentTimeMillis()|"
+    ],
+    "affectedLib": "org.jboss.weld:weld-core-impl:3.0.0.Alpha10",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jboss.weld.probe:weld-probe-core:3.0.0.Alpha9",
+    "coordinatesV2": "org.jboss.weld.probe:weld-probe-core:3.0.0.Alpha10",
+    "caller": "|java+method:///org/jboss/weld/probe/Probe/getDeclaredProducers(javax.enterprise.inject.spi.Bean)|",
+    "called": "|java+method:///org/jboss/weld/util/collections/SetMultimap/containsKey(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/util/Collections/emptySet()|",
+      "|java+method:///org/jboss/weld/probe/Probe$Mappings/getBeanToDeclaredProducers()|",
+      "|java+method:///org/jboss/weld/util/collections/SetMultimap/get(java.lang.Object)|",
+      "|java+method:///org/jboss/weld/util/collections/SetMultimap/containsKey(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Collections/emptySet()|",
+      "|java+method:///org/jboss/weld/util/collections/SetMultimap/get(java.lang.Object)|",
+      "|java+method:///org/jboss/weld/util/collections/SetMultimap/containsKey(java.lang.Object)|"
+    ],
+    "affectedLib": "org.jboss.weld:weld-core-impl:3.0.0.Alpha10",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jboss.weld.probe:weld-probe-core:3.0.0.Alpha9",
+    "coordinatesV2": "org.jboss.weld.probe:weld-probe-core:3.0.0.Alpha10",
+    "caller": "|java+method:///org/jboss/weld/probe/ProbeExtension/afterBeanDiscovery(javax.enterprise.inject.spi.AfterBeanDiscovery,javax.enterprise.inject.spi.BeanManager)|",
+    "called": "|java+method:///org/jboss/weld/bean/builtin/BeanManagerProxy/unwrap(javax.enterprise.inject.spi.BeanManager)|",
+    "v1Body": [
+      "|java+method:///java/util/regex/Pattern/compile(java.lang.String)|",
+      "|java+method:///org/jboss/weld/config/WeldConfiguration/getStringProperty(org.jboss.weld.config.ConfigurationKey)|",
+      "|java+constructor:///org/jboss/weld/probe/ProbeObserver/ProbeObserver(org.jboss.weld.manager.BeanManagerImpl,java.util.regex.Pattern)|",
+      "|java+method:///org/jboss/weld/manager/api/WeldManager/getServices()|",
+      "|java+method:///org/jboss/weld/bootstrap/api/ServiceRegistry/get(java.lang.Class)|",
+      "|java+method:///javax/enterprise/inject/spi/AfterBeanDiscovery/addObserverMethod(javax.enterprise.inject.spi.ObserverMethod)|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+method:///org/jboss/weld/bean/builtin/BeanManagerProxy/unwrap(javax.enterprise.inject.spi.BeanManager)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/regex/Pattern/compile(java.lang.String)|",
+      "|java+method:///org/jboss/weld/config/WeldConfiguration/getStringProperty(org.jboss.weld.config.ConfigurationKey)|",
+      "|java+method:///org/jboss/weld/bootstrap/api/ServiceRegistry/get(java.lang.Class)|",
+      "|java+method:///javax/enterprise/inject/spi/AfterBeanDiscovery/addObserverMethod(javax.enterprise.inject.spi.ObserverMethod)|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+method:///org/jboss/weld/manager/BeanManagerImpl/getServices()|",
+      "|java+constructor:///org/jboss/weld/probe/ProbeObserver/ProbeObserver(org.jboss.weld.manager.BeanManagerImpl,java.util.regex.Pattern,org.jboss.weld.probe.Probe)|",
+      "|java+method:///org/jboss/weld/bean/builtin/BeanManagerProxy/unwrap(javax.enterprise.inject.spi.BeanManager)|"
+    ],
+    "affectedLib": "org.jboss.weld:weld-core-impl:3.0.0.Alpha10",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jboss.weld.probe:weld-probe-core:3.0.0.Alpha9",
+    "coordinatesV2": "org.jboss.weld.probe:weld-probe-core:3.0.0.Alpha10",
+    "caller": "|java+method:///org/jboss/weld/probe/Probe/addInvocation(org.jboss.weld.probe.Invocation)|",
+    "called": "|java+constructor:///org/jboss/weld/exceptions/IllegalStateException/IllegalStateException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/util/Collections/reverseOrder()|",
+      "|java+method:///java/util/concurrent/ConcurrentMap/keySet()|",
+      "|java+method:///org/jboss/weld/probe/Probe/checkInitialized()|",
+      "|java+method:///java/util/List/subList(int,int)|",
+      "|java+method:///java/util/Collections/sort(java.util.List,java.util.Comparator)|",
+      "|java+constructor:///org/jboss/weld/exceptions/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///java/util/concurrent/ConcurrentMap/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/jboss/weld/probe/Invocation/isEntryPoint()|",
+      "|java+method:///org/jboss/weld/probe/Invocation/getEntryPointIdx()|",
+      "|java+method:///java/util/concurrent/ConcurrentMap/size()|",
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(java.util.Collection)|",
+      "|java+method:///org/jboss/weld/probe/ProbeLogger/monitoringLimitExceeded(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Set/removeAll(java.util.Collection)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Collections/reverseOrder()|",
+      "|java+method:///java/util/concurrent/ConcurrentMap/keySet()|",
+      "|java+method:///java/util/List/subList(int,int)|",
+      "|java+method:///java/util/Collections/sort(java.util.List,java.util.Comparator)|",
+      "|java+constructor:///org/jboss/weld/exceptions/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///java/util/concurrent/ConcurrentMap/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/jboss/weld/probe/Invocation/isEntryPoint()|",
+      "|java+method:///org/jboss/weld/probe/Invocation/getEntryPointIdx()|",
+      "|java+method:///java/util/concurrent/ConcurrentMap/size()|",
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(java.util.Collection)|",
+      "|java+method:///org/jboss/weld/probe/ProbeLogger/monitoringLimitExceeded(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Set/removeAll(java.util.Collection)|"
+    ],
+    "affectedLib": "org.jboss.weld:weld-core-impl:3.0.0.Alpha10",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-actions-aup-ldap:5.2.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-actions-aup-ldap:5.2.0-RC2",
+    "caller": "|java+method:///org/apereo/cas/web/flow/LdapAcceptableUsagePolicyRepository/searchForId(java.lang.String)|",
+    "called": "|java+method:///org/apereo/cas/util/LdapUtils/newLdaptiveSearchFilter(java.lang.String,java.lang.String,java.util.List)|",
+    "v1Body": [
+      "|java+method:///org/apereo/cas/configuration/support/Beans/newLdaptiveSearchFilter(java.lang.String,java.lang.String,java.util.List)|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///org/apereo/cas/util/LdapUtils/executeSearchOperation(org.ldaptive.ConnectionFactory,java.lang.String,org.ldaptive.SearchFilter)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///org/apereo/cas/util/LdapUtils/newLdaptiveSearchFilter(java.lang.String,java.lang.String,java.util.List)|",
+      "|java+method:///org/apereo/cas/util/LdapUtils/executeSearchOperation(org.ldaptive.ConnectionFactory,java.lang.String,org.ldaptive.SearchFilter)|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-support-ldap-core:5.2.0-RC2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-actions-aup-ldap:5.2.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-actions-aup-ldap:5.2.0-RC2",
+    "caller": "|java+method:///org/apereo/cas/web/config/CasSupportActionsAcceptableUsagePolicyLdapConfiguration/acceptableUsagePolicyRepository()|",
+    "called": "|java+method:///org/apereo/cas/util/LdapUtils/newLdaptivePooledConnectionFactory(org.apereo.cas.configuration.model.support.ldap.AbstractLdapProperties)|",
+    "v1Body": [
+      "|java+method:///org/apereo/cas/configuration/model/support/aup/AcceptableUsagePolicyProperties/getLdap()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/aup/AcceptableUsagePolicyProperties/getAupAttributeName()|",
+      "|java+constructor:///org/apereo/cas/web/flow/LdapAcceptableUsagePolicyRepository/LdapAcceptableUsagePolicyRepository(org.apereo.cas.ticket.registry.TicketRegistrySupport,org.ldaptive.ConnectionFactory,java.lang.String,java.lang.String)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/aup/AcceptableUsagePolicyProperties$Ldap/getUserFilter()|",
+      "|java+method:///org/apereo/cas/web/flow/LdapAcceptableUsagePolicyRepository/setAupAttributeName(java.lang.String)|",
+      "|java+method:///org/apereo/cas/configuration/CasConfigurationProperties/getAcceptableUsagePolicy()|",
+      "|java+method:///org/apereo/cas/configuration/support/Beans/newLdaptivePooledConnectionFactory(org.apereo.cas.configuration.model.support.ldap.AbstractLdapProperties)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/aup/AcceptableUsagePolicyProperties$Ldap/getBaseDn()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apereo/cas/configuration/model/support/aup/AcceptableUsagePolicyProperties/getLdap()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/aup/AcceptableUsagePolicyProperties/getAupAttributeName()|",
+      "|java+constructor:///org/apereo/cas/web/flow/LdapAcceptableUsagePolicyRepository/LdapAcceptableUsagePolicyRepository(org.apereo.cas.ticket.registry.TicketRegistrySupport,org.ldaptive.ConnectionFactory,java.lang.String,java.lang.String)|",
+      "|java+method:///org/apereo/cas/util/LdapUtils/newLdaptivePooledConnectionFactory(org.apereo.cas.configuration.model.support.ldap.AbstractLdapProperties)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/aup/AcceptableUsagePolicyProperties$Ldap/getBaseDn()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/aup/AcceptableUsagePolicyProperties$Ldap/getUserFilter()|",
+      "|java+method:///org/apereo/cas/web/flow/LdapAcceptableUsagePolicyRepository/setAupAttributeName(java.lang.String)|",
+      "|java+method:///org/apereo/cas/configuration/CasConfigurationProperties/getAcceptableUsagePolicy()|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-support-ldap-core:5.2.0-RC2",
+    "change": "UPDATED"
+  }
+]

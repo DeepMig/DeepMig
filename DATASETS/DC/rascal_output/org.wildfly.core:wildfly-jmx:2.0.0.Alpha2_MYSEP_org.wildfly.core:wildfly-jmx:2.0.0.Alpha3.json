@@ -1,0 +1,50 @@
+[
+  {
+    "coordinatesV1": "org.wildfly.core:wildfly-jmx:2.0.0.Alpha2",
+    "coordinatesV2": "org.wildfly.core:wildfly-jmx:2.0.0.Alpha3",
+    "caller": "|java+initializer:///org/jboss/as/jmx/MBeanServerService/MBeanServerService$initializer|",
+    "called": "|java+method:///org/jboss/msc/service/ServiceName/append(java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/jboss/msc/service/ServiceName/append(java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jboss/msc/service/ServiceName/append(java.lang.String%5B%5D)|",
+      "|java+method:///org/jboss/as/controller/capability/RuntimeCapability/getCapabilityServiceName(java.lang.Class)|"
+    ],
+    "affectedLib": "org.jboss.msc:jboss-msc:1.2.6.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.wildfly.core:wildfly-jmx:2.0.0.Alpha2",
+    "coordinatesV2": "org.wildfly.core:wildfly-jmx:2.0.0.Alpha3",
+    "caller": "|java+method:///org/jboss/as/jmx/MBeanServerService/start(org.jboss.msc.service.StartContext)|",
+    "called": "|java+method:///org/jboss/msc/value/InjectedValue/getValue()|",
+    "v1Body": [
+      "|java+method:///org/jboss/as/controller/access/management/JmxAuthorizer/setNonFacadeMBeansSensitive(boolean)|",
+      "|java+method:///java/lang/management/ManagementFactory/getPlatformMBeanServer()|",
+      "|java+method:///org/jboss/msc/value/InjectedValue/getValue()|",
+      "|java+method:///org/jboss/as/jmx/PluggableMBeanServerImpl/getMBeanServerDelegate()|",
+      "|java+method:///org/jboss/as/jmx/PluggableMBeanServerImpl/addPlugin(org.jboss.as.server.jmx.MBeanServerPlugin)|",
+      "|java+method:///org/jboss/as/jmx/PluggableMBeanServerImpl/setAuditLogger(org.jboss.as.controller.audit.ManagedAuditLogger)|",
+      "|java+constructor:///org/jboss/as/jmx/PluggableMBeanServerImpl/PluggableMBeanServerImpl(javax.management.MBeanServer,javax.management.MBeanServerDelegate)|",
+      "|java+method:///org/jboss/as/jmx/PluggableMBeanServerImpl/setAuthorizer(org.jboss.as.controller.access.management.JmxAuthorizer)|",
+      "|java+constructor:///org/jboss/as/jmx/model/ModelControllerMBeanServerPlugin/ModelControllerMBeanServerPlugin(org.jboss.as.jmx.model.ConfiguredDomains,org.jboss.as.controller.ModelController,javax.management.MBeanServerDelegate,boolean,org.jboss.as.controller.ProcessType,org.jboss.as.jmx.model.ManagementModelIntegration$ManagementModelProvider,boolean)|",
+      "|java+constructor:///org/jboss/as/jmx/model/ConfiguredDomains/ConfiguredDomains(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jboss/as/controller/access/management/JmxAuthorizer/setNonFacadeMBeansSensitive(boolean)|",
+      "|java+method:///java/lang/management/ManagementFactory/getPlatformMBeanServer()|",
+      "|java+method:///org/jboss/msc/value/InjectedValue/getValue()|",
+      "|java+method:///org/jboss/as/jmx/PluggableMBeanServerImpl/getMBeanServerDelegate()|",
+      "|java+method:///org/jboss/as/jmx/PluggableMBeanServerImpl/setAuditLogger(org.jboss.as.controller.audit.ManagedAuditLogger)|",
+      "|java+constructor:///org/jboss/as/jmx/PluggableMBeanServerImpl/PluggableMBeanServerImpl(javax.management.MBeanServer,javax.management.MBeanServerDelegate)|",
+      "|java+method:///org/jboss/as/jmx/PluggableMBeanServerImpl/setAuthorizer(org.jboss.as.controller.access.management.JmxAuthorizer)|",
+      "|java+constructor:///org/jboss/as/jmx/model/ModelControllerMBeanServerPlugin/ModelControllerMBeanServerPlugin(org.jboss.as.jmx.model.ConfiguredDomains,org.jboss.as.controller.ModelController,javax.management.MBeanServerDelegate,boolean,org.jboss.as.controller.ProcessType,org.jboss.as.jmx.model.ManagementModelIntegration$ManagementModelProvider,boolean)|",
+      "|java+constructor:///org/jboss/as/jmx/model/ConfiguredDomains/ConfiguredDomains(java.lang.String,java.lang.String)|",
+      "|java+method:///org/jboss/as/jmx/PluggableMBeanServerImpl/addPlugin(org.jboss.as.server.jmx.MBeanServerPlugin)|",
+      "|java+method:///org/jboss/as/jmx/PluggableMBeanServerImpl/setJmxEffect(org.jboss.as.jmx.JmxEffect)|"
+    ],
+    "affectedLib": "org.jboss.msc:jboss-msc:1.2.6.Final",
+    "change": "UPDATED"
+  }
+]

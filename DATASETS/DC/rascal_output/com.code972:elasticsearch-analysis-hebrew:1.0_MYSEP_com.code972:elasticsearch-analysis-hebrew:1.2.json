@@ -1,0 +1,289 @@
+[
+  {
+    "coordinatesV1": "com.code972:elasticsearch-analysis-hebrew:1.0",
+    "coordinatesV2": "com.code972:elasticsearch-analysis-hebrew:1.2",
+    "caller": "|java+constructor:///com/code972/elasticsearch/analysis/HebrewAnalyzer/HebrewAnalyzer()|",
+    "called": "|java+constructor:///org/apache/lucene/analysis/Analyzer/Analyzer()|",
+    "v1Body": [
+      "|java+method:///com/code972/hebmorph/StreamLemmatizer/setCustomWords(com.code972.hebmorph.datastructures.DictRadix)|",
+      "|java+constructor:///com/code972/hebmorph/lemmafilters/BasicLemmaFilter/BasicLemmaFilter()|",
+      "|java+constructor:///org/apache/lucene/analysis/Analyzer/Analyzer()|",
+      "|java+constructor:///com/code972/hebmorph/StreamLemmatizer/StreamLemmatizer(java.io.Reader,com.code972.hebmorph.datastructures.DictRadix,com.code972.hebmorph.datastructures.DictRadix,com.code972.hebmorph.datastructures.DictRadix)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/code972/hebmorph/lemmafilters/BasicLemmaFilter/BasicLemmaFilter()|",
+      "|java+constructor:///org/apache/lucene/analysis/Analyzer/Analyzer()|"
+    ],
+    "affectedLib": "org.apache.lucene:lucene-core:4.6.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.code972:elasticsearch-analysis-hebrew:1.0",
+    "coordinatesV2": "com.code972:elasticsearch-analysis-hebrew:1.2",
+    "caller": "|java+method:///com/code972/elasticsearch/analysis/HebrewQueryLightAnalyzer/createComponents(java.lang.String,java.io.Reader)|",
+    "called": "|java+constructor:///org/apache/lucene/analysis/Analyzer$TokenStreamComponents/Analyzer$TokenStreamComponents(org.apache.lucene.analysis.Tokenizer,org.apache.lucene.analysis.TokenStream)|",
+    "v1Body": [
+      "|java+method:///org/apache/lucene/analysis/hebrew/StreamLemmasFilter/setSuffixForExactMatch(java.lang.Character)|",
+      "|java+constructor:///org/apache/lucene/analysis/Analyzer$TokenStreamComponents/Analyzer$TokenStreamComponents(org.apache.lucene.analysis.Tokenizer,org.apache.lucene.analysis.TokenStream)|",
+      "|java+method:///java/lang/Character/valueOf(char)|",
+      "|java+constructor:///org/apache/lucene/analysis/miscellaneous/ASCIIFoldingFilter/ASCIIFoldingFilter(org.apache.lucene.analysis.TokenStream)|",
+      "|java+constructor:///com/code972/elasticsearch/analysis/HebrewQueryLightAnalyzer$1/HebrewQueryLightAnalyzer$1(com.code972.elasticsearch.analysis.HebrewQueryLightAnalyzer,org.apache.lucene.analysis.TokenStream,java.lang.Character,boolean)|",
+      "|java+constructor:///org/apache/lucene/analysis/hebrew/StreamLemmasFilter/StreamLemmasFilter(java.io.Reader,com.code972.hebmorph.datastructures.DictRadix,com.code972.hebmorph.datastructures.DictRadix,com.code972.hebmorph.datastructures.DictRadix,org.apache.lucene.analysis.util.CharArraySet,com.code972.hebmorph.lemmafilters.LemmaFilterBase)|",
+      "|java+method:///org/apache/lucene/analysis/hebrew/StreamLemmasFilter/setKeepOriginalWord(boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/lucene/analysis/hebrew/StreamLemmasFilter/setSuffixForExactMatch(java.lang.Character)|",
+      "|java+constructor:///org/apache/lucene/analysis/Analyzer$TokenStreamComponents/Analyzer$TokenStreamComponents(org.apache.lucene.analysis.Tokenizer,org.apache.lucene.analysis.TokenStream)|",
+      "|java+constructor:///com/code972/elasticsearch/analysis/HebrewQueryLightAnalyzer$1/HebrewQueryLightAnalyzer$1(com.code972.elasticsearch.analysis.HebrewQueryLightAnalyzer,org.apache.lucene.analysis.TokenStream,java.lang.Character)|",
+      "|java+method:///java/lang/Character/valueOf(char)|",
+      "|java+constructor:///org/apache/lucene/analysis/miscellaneous/ASCIIFoldingFilter/ASCIIFoldingFilter(org.apache.lucene.analysis.TokenStream)|",
+      "|java+constructor:///org/apache/lucene/analysis/hebrew/StreamLemmasFilter/StreamLemmasFilter(java.io.Reader,com.code972.hebmorph.datastructures.DictRadix,com.code972.hebmorph.datastructures.DictRadix,com.code972.hebmorph.datastructures.DictRadix,org.apache.lucene.analysis.util.CharArraySet,com.code972.hebmorph.lemmafilters.LemmaFilterBase)|",
+      "|java+method:///org/apache/lucene/analysis/hebrew/StreamLemmasFilter/setKeepOriginalWord(boolean)|",
+      "|java+method:///org/apache/lucene/analysis/hebrew/StreamLemmasFilter/setCustomWords(com.code972.hebmorph.datastructures.DictRadix)|"
+    ],
+    "affectedLib": "org.apache.lucene:lucene-core:4.6.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.code972:elasticsearch-analysis-hebrew:1.0",
+    "coordinatesV2": "com.code972:elasticsearch-analysis-hebrew:1.2",
+    "caller": "|java+method:///com/code972/elasticsearch/analysis/HebrewQueryAnalyzer/createComponents(java.lang.String,java.io.Reader)|",
+    "called": "|java+constructor:///org/apache/lucene/analysis/Analyzer$TokenStreamComponents/Analyzer$TokenStreamComponents(org.apache.lucene.analysis.Tokenizer,org.apache.lucene.analysis.TokenStream)|",
+    "v1Body": [
+      "|java+method:///org/apache/lucene/analysis/hebrew/StreamLemmasFilter/setSuffixForExactMatch(java.lang.Character)|",
+      "|java+constructor:///com/code972/elasticsearch/analysis/HebrewQueryAnalyzer$1/HebrewQueryAnalyzer$1(com.code972.elasticsearch.analysis.HebrewQueryAnalyzer,org.apache.lucene.analysis.TokenStream,java.lang.Character,boolean)|",
+      "|java+constructor:///org/apache/lucene/analysis/Analyzer$TokenStreamComponents/Analyzer$TokenStreamComponents(org.apache.lucene.analysis.Tokenizer,org.apache.lucene.analysis.TokenStream)|",
+      "|java+method:///java/lang/Character/valueOf(char)|",
+      "|java+constructor:///org/apache/lucene/analysis/miscellaneous/ASCIIFoldingFilter/ASCIIFoldingFilter(org.apache.lucene.analysis.TokenStream)|",
+      "|java+constructor:///org/apache/lucene/analysis/hebrew/StreamLemmasFilter/StreamLemmasFilter(java.io.Reader,com.code972.hebmorph.datastructures.DictRadix,com.code972.hebmorph.datastructures.DictRadix,com.code972.hebmorph.datastructures.DictRadix,org.apache.lucene.analysis.util.CharArraySet,com.code972.hebmorph.lemmafilters.LemmaFilterBase)|",
+      "|java+method:///org/apache/lucene/analysis/hebrew/StreamLemmasFilter/setKeepOriginalWord(boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/lucene/analysis/hebrew/StreamLemmasFilter/setSuffixForExactMatch(java.lang.Character)|",
+      "|java+constructor:///com/code972/elasticsearch/analysis/HebrewQueryAnalyzer$1/HebrewQueryAnalyzer$1(com.code972.elasticsearch.analysis.HebrewQueryAnalyzer,org.apache.lucene.analysis.TokenStream,java.lang.Character)|",
+      "|java+constructor:///org/apache/lucene/analysis/Analyzer$TokenStreamComponents/Analyzer$TokenStreamComponents(org.apache.lucene.analysis.Tokenizer,org.apache.lucene.analysis.TokenStream)|",
+      "|java+method:///java/lang/Character/valueOf(char)|",
+      "|java+constructor:///org/apache/lucene/analysis/miscellaneous/ASCIIFoldingFilter/ASCIIFoldingFilter(org.apache.lucene.analysis.TokenStream)|",
+      "|java+constructor:///org/apache/lucene/analysis/hebrew/StreamLemmasFilter/StreamLemmasFilter(java.io.Reader,com.code972.hebmorph.datastructures.DictRadix,com.code972.hebmorph.datastructures.DictRadix,com.code972.hebmorph.datastructures.DictRadix,org.apache.lucene.analysis.util.CharArraySet,com.code972.hebmorph.lemmafilters.LemmaFilterBase)|",
+      "|java+method:///org/apache/lucene/analysis/hebrew/StreamLemmasFilter/setKeepOriginalWord(boolean)|",
+      "|java+method:///org/apache/lucene/analysis/hebrew/StreamLemmasFilter/setCustomWords(com.code972.hebmorph.datastructures.DictRadix)|"
+    ],
+    "affectedLib": "org.apache.lucene:lucene-core:4.6.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.code972:elasticsearch-analysis-hebrew:1.0",
+    "coordinatesV2": "com.code972:elasticsearch-analysis-hebrew:1.2",
+    "caller": "|java+initializer:///com/code972/elasticsearch/analysis/HebrewAnalyzer/HebrewAnalyzer$initializer|",
+    "called": "|java+method:///org/apache/lucene/util/IOUtils/getDecodingReader(java.io.InputStream,java.nio.charset.Charset)|",
+    "v1Body": [
+      "|java+method:///org/apache/lucene/util/IOUtils/getDecodingReader(java.io.InputStream,java.nio.charset.Charset)|",
+      "|java+constructor:///com/code972/hebmorph/hspell/Loader/Loader(java.lang.ClassLoader,java.lang.String,boolean)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/Byte/valueOf(byte)|",
+      "|java+method:///org/apache/lucene/analysis/util/CharArraySet/iterator()|",
+      "|java+constructor:///com/code972/hebmorph/datastructures/DictRadix/DictRadix(boolean)|",
+      "|java+method:///java/lang/Thread/currentThread()|",
+      "|java+method:///com/code972/hebmorph/hspell/Loader/loadDictionaryFromHSpellData()|",
+      "|java+method:///java/lang/ClassLoader/getResourceAsStream(java.lang.String)|",
+      "|java+method:///com/code972/hebmorph/hspell/Loader/loadCustomWords(java.io.InputStream,com.code972.hebmorph.datastructures.DictRadix)|",
+      "|java+method:///java/lang/Thread/getContextClassLoader()|",
+      "|java+method:///com/code972/hebmorph/datastructures/DictRadix/addNode(char%5B%5D,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/code972/hebmorph/hspell/LingInfo/buildPrefixTree(boolean)|",
+      "|java+method:///org/apache/lucene/analysis/util/WordlistLoader/getSnowballWordSet(java.io.Reader,org.apache.lucene.util.Version)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/lucene/util/IOUtils/getDecodingReader(java.io.InputStream,java.nio.charset.Charset)|",
+      "|java+constructor:///com/code972/hebmorph/hspell/Loader/Loader(java.lang.ClassLoader,java.lang.String,boolean)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/Byte/valueOf(byte)|",
+      "|java+constructor:///com/code972/hebmorph/datastructures/DictRadix/DictRadix(boolean)|",
+      "|java+method:///java/lang/Thread/currentThread()|",
+      "|java+method:///com/code972/hebmorph/hspell/Loader/loadDictionaryFromHSpellData()|",
+      "|java+method:///java/lang/ClassLoader/getResourceAsStream(java.lang.String)|",
+      "|java+method:///java/lang/Thread/getContextClassLoader()|",
+      "|java+method:///org/apache/lucene/analysis/util/CharArraySet/iterator()|",
+      "|java+method:///com/code972/elasticsearch/analysis/HebrewAnalyzer/setCustomWords(java.io.InputStream)|",
+      "|java+method:///com/code972/hebmorph/datastructures/DictRadix/addNode(char%5B%5D,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/code972/hebmorph/hspell/LingInfo/buildPrefixTree(boolean)|",
+      "|java+method:///org/apache/lucene/analysis/util/WordlistLoader/getSnowballWordSet(java.io.Reader,org.apache.lucene.util.Version)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "affectedLib": "org.apache.lucene:lucene-core:4.6.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.code972:elasticsearch-analysis-hebrew:1.0",
+    "coordinatesV2": "com.code972:elasticsearch-analysis-hebrew:1.2",
+    "caller": "|java+method:///com/code972/elasticsearch/analysis/HebrewIndexingAnalyzer/createComponents(java.lang.String,java.io.Reader)|",
+    "called": "|java+constructor:///org/apache/lucene/analysis/Analyzer$TokenStreamComponents/Analyzer$TokenStreamComponents(org.apache.lucene.analysis.Tokenizer,org.apache.lucene.analysis.TokenStream)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/lucene/analysis/Analyzer$TokenStreamComponents/Analyzer$TokenStreamComponents(org.apache.lucene.analysis.Tokenizer,org.apache.lucene.analysis.TokenStream)|",
+      "|java+method:///java/lang/Character/valueOf(char)|",
+      "|java+constructor:///org/apache/lucene/analysis/miscellaneous/ASCIIFoldingFilter/ASCIIFoldingFilter(org.apache.lucene.analysis.TokenStream)|",
+      "|java+constructor:///org/apache/lucene/analysis/hebrew/StreamLemmasFilter/StreamLemmasFilter(java.io.Reader,com.code972.hebmorph.datastructures.DictRadix,com.code972.hebmorph.datastructures.DictRadix,com.code972.hebmorph.datastructures.DictRadix,org.apache.lucene.analysis.util.CharArraySet,com.code972.hebmorph.lemmafilters.LemmaFilterBase)|",
+      "|java+constructor:///com/code972/elasticsearch/analysis/HebrewIndexingAnalyzer$1/HebrewIndexingAnalyzer$1(com.code972.elasticsearch.analysis.HebrewIndexingAnalyzer,org.apache.lucene.analysis.TokenStream,java.lang.Character,boolean)|",
+      "|java+method:///org/apache/lucene/analysis/hebrew/StreamLemmasFilter/setKeepOriginalWord(boolean)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/lucene/analysis/Analyzer$TokenStreamComponents/Analyzer$TokenStreamComponents(org.apache.lucene.analysis.Tokenizer,org.apache.lucene.analysis.TokenStream)|",
+      "|java+method:///java/lang/Character/valueOf(char)|",
+      "|java+constructor:///com/code972/elasticsearch/analysis/HebrewIndexingAnalyzer$1/HebrewIndexingAnalyzer$1(com.code972.elasticsearch.analysis.HebrewIndexingAnalyzer,org.apache.lucene.analysis.TokenStream,java.lang.Character)|",
+      "|java+constructor:///org/apache/lucene/analysis/miscellaneous/ASCIIFoldingFilter/ASCIIFoldingFilter(org.apache.lucene.analysis.TokenStream)|",
+      "|java+constructor:///org/apache/lucene/analysis/hebrew/StreamLemmasFilter/StreamLemmasFilter(java.io.Reader,com.code972.hebmorph.datastructures.DictRadix,com.code972.hebmorph.datastructures.DictRadix,com.code972.hebmorph.datastructures.DictRadix,org.apache.lucene.analysis.util.CharArraySet,com.code972.hebmorph.lemmafilters.LemmaFilterBase)|",
+      "|java+method:///org/apache/lucene/analysis/hebrew/StreamLemmasFilter/setKeepOriginalWord(boolean)|",
+      "|java+method:///org/apache/lucene/analysis/hebrew/StreamLemmasFilter/setCustomWords(com.code972.hebmorph.datastructures.DictRadix)|"
+    ],
+    "affectedLib": "org.apache.lucene:lucene-core:4.6.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.code972:elasticsearch-analysis-hebrew:1.0",
+    "coordinatesV2": "com.code972:elasticsearch-analysis-hebrew:1.2",
+    "caller": "|java+method:///com/code972/elasticsearch/analysis/HebrewExactAnalyzer/createComponents(java.lang.String,java.io.Reader)|",
+    "called": "|java+constructor:///org/apache/lucene/analysis/Analyzer$TokenStreamComponents/Analyzer$TokenStreamComponents(org.apache.lucene.analysis.Tokenizer,org.apache.lucene.analysis.TokenStream)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/lucene/analysis/hebrew/NiqqudFilter/NiqqudFilter(org.apache.lucene.analysis.TokenStream)|",
+      "|java+constructor:///org/apache/lucene/analysis/hebrew/HebrewTokenizer/HebrewTokenizer(java.io.Reader,com.code972.hebmorph.datastructures.DictRadix,com.code972.hebmorph.datastructures.DictRadix)|",
+      "|java+method:///java/lang/Character/valueOf(char)|",
+      "|java+constructor:///org/apache/lucene/analysis/core/LowerCaseFilter/LowerCaseFilter(org.apache.lucene.util.Version,org.apache.lucene.analysis.TokenStream)|",
+      "|java+constructor:///org/apache/lucene/analysis/Analyzer$TokenStreamComponents/Analyzer$TokenStreamComponents(org.apache.lucene.analysis.Tokenizer,org.apache.lucene.analysis.TokenStream)|",
+      "|java+constructor:///com/code972/elasticsearch/analysis/HebrewExactAnalyzer$1/HebrewExactAnalyzer$1(com.code972.elasticsearch.analysis.HebrewExactAnalyzer,org.apache.lucene.analysis.TokenStream,java.lang.Character,boolean)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/lucene/analysis/hebrew/NiqqudFilter/NiqqudFilter(org.apache.lucene.analysis.TokenStream)|",
+      "|java+constructor:///org/apache/lucene/analysis/hebrew/HebrewTokenizer/HebrewTokenizer(java.io.Reader,com.code972.hebmorph.datastructures.DictRadix,com.code972.hebmorph.datastructures.DictRadix)|",
+      "|java+constructor:///com/code972/elasticsearch/analysis/HebrewExactAnalyzer$1/HebrewExactAnalyzer$1(com.code972.elasticsearch.analysis.HebrewExactAnalyzer,org.apache.lucene.analysis.TokenStream,java.lang.Character)|",
+      "|java+constructor:///org/apache/lucene/analysis/Analyzer$TokenStreamComponents/Analyzer$TokenStreamComponents(org.apache.lucene.analysis.Tokenizer,org.apache.lucene.analysis.TokenStream)|",
+      "|java+method:///java/lang/Character/valueOf(char)|",
+      "|java+constructor:///org/apache/lucene/analysis/miscellaneous/ASCIIFoldingFilter/ASCIIFoldingFilter(org.apache.lucene.analysis.TokenStream)|",
+      "|java+constructor:///org/apache/lucene/analysis/core/LowerCaseFilter/LowerCaseFilter(org.apache.lucene.util.Version,org.apache.lucene.analysis.TokenStream)|"
+    ],
+    "affectedLib": "org.apache.lucene:lucene-core:4.6.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.code972:elasticsearch-analysis-hebrew:1.0",
+    "coordinatesV2": "com.code972:elasticsearch-analysis-hebrew:1.2",
+    "caller": "|java+method:///com/code972/elasticsearch/plugins/AnalysisPlugin/processModule(org.elasticsearch.common.inject.Module)|",
+    "called": "|java+method:///org/elasticsearch/index/analysis/AnalysisModule/addProcessor(org.elasticsearch.index.analysis.AnalysisModule$AnalysisBinderProcessor)|",
+    "v1Body": [
+      "|java+method:///org/elasticsearch/index/analysis/AnalysisModule/addProcessor(org.elasticsearch.index.analysis.AnalysisModule$AnalysisBinderProcessor)|",
+      "|java+constructor:///com/code972/elasticsearch/plugins/HebrewAnalysisBinderProcessor/HebrewAnalysisBinderProcessor()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/elasticsearch/index/analysis/AnalysisModule/addProcessor(org.elasticsearch.index.analysis.AnalysisModule$AnalysisBinderProcessor)|",
+      "|java+method:///org/elasticsearch/rest/RestModule/addRestAction(java.lang.Class)|",
+      "|java+constructor:///com/code972/elasticsearch/plugins/HebrewAnalysisBinderProcessor/HebrewAnalysisBinderProcessor()|"
+    ],
+    "affectedLib": "org.elasticsearch:elasticsearch:1.0.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.code972:elasticsearch-analysis-hebrew:1.0",
+    "coordinatesV2": "com.code972:elasticsearch-analysis-hebrew:1.2",
+    "caller": "|java+method:///com/code972/elasticsearch/analysis/HebrewQueryLightAnalyzer/createComponents(java.lang.String,java.io.Reader)|",
+    "called": "|java+method:///org/apache/lucene/analysis/hebrew/StreamLemmasFilter/setSuffixForExactMatch(java.lang.Character)|",
+    "v1Body": [
+      "|java+method:///org/apache/lucene/analysis/hebrew/StreamLemmasFilter/setSuffixForExactMatch(java.lang.Character)|",
+      "|java+constructor:///org/apache/lucene/analysis/Analyzer$TokenStreamComponents/Analyzer$TokenStreamComponents(org.apache.lucene.analysis.Tokenizer,org.apache.lucene.analysis.TokenStream)|",
+      "|java+method:///java/lang/Character/valueOf(char)|",
+      "|java+constructor:///org/apache/lucene/analysis/miscellaneous/ASCIIFoldingFilter/ASCIIFoldingFilter(org.apache.lucene.analysis.TokenStream)|",
+      "|java+constructor:///com/code972/elasticsearch/analysis/HebrewQueryLightAnalyzer$1/HebrewQueryLightAnalyzer$1(com.code972.elasticsearch.analysis.HebrewQueryLightAnalyzer,org.apache.lucene.analysis.TokenStream,java.lang.Character,boolean)|",
+      "|java+constructor:///org/apache/lucene/analysis/hebrew/StreamLemmasFilter/StreamLemmasFilter(java.io.Reader,com.code972.hebmorph.datastructures.DictRadix,com.code972.hebmorph.datastructures.DictRadix,com.code972.hebmorph.datastructures.DictRadix,org.apache.lucene.analysis.util.CharArraySet,com.code972.hebmorph.lemmafilters.LemmaFilterBase)|",
+      "|java+method:///org/apache/lucene/analysis/hebrew/StreamLemmasFilter/setKeepOriginalWord(boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/lucene/analysis/hebrew/StreamLemmasFilter/setSuffixForExactMatch(java.lang.Character)|",
+      "|java+constructor:///org/apache/lucene/analysis/Analyzer$TokenStreamComponents/Analyzer$TokenStreamComponents(org.apache.lucene.analysis.Tokenizer,org.apache.lucene.analysis.TokenStream)|",
+      "|java+constructor:///com/code972/elasticsearch/analysis/HebrewQueryLightAnalyzer$1/HebrewQueryLightAnalyzer$1(com.code972.elasticsearch.analysis.HebrewQueryLightAnalyzer,org.apache.lucene.analysis.TokenStream,java.lang.Character)|",
+      "|java+method:///java/lang/Character/valueOf(char)|",
+      "|java+constructor:///org/apache/lucene/analysis/miscellaneous/ASCIIFoldingFilter/ASCIIFoldingFilter(org.apache.lucene.analysis.TokenStream)|",
+      "|java+constructor:///org/apache/lucene/analysis/hebrew/StreamLemmasFilter/StreamLemmasFilter(java.io.Reader,com.code972.hebmorph.datastructures.DictRadix,com.code972.hebmorph.datastructures.DictRadix,com.code972.hebmorph.datastructures.DictRadix,org.apache.lucene.analysis.util.CharArraySet,com.code972.hebmorph.lemmafilters.LemmaFilterBase)|",
+      "|java+method:///org/apache/lucene/analysis/hebrew/StreamLemmasFilter/setKeepOriginalWord(boolean)|",
+      "|java+method:///org/apache/lucene/analysis/hebrew/StreamLemmasFilter/setCustomWords(com.code972.hebmorph.datastructures.DictRadix)|"
+    ],
+    "affectedLib": "com.code972.hebmorph:hebmorph-lucene:1.3.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.code972:elasticsearch-analysis-hebrew:1.0",
+    "coordinatesV2": "com.code972:elasticsearch-analysis-hebrew:1.2",
+    "caller": "|java+method:///com/code972/elasticsearch/analysis/HebrewQueryAnalyzer/createComponents(java.lang.String,java.io.Reader)|",
+    "called": "|java+method:///org/apache/lucene/analysis/hebrew/StreamLemmasFilter/setSuffixForExactMatch(java.lang.Character)|",
+    "v1Body": [
+      "|java+method:///org/apache/lucene/analysis/hebrew/StreamLemmasFilter/setSuffixForExactMatch(java.lang.Character)|",
+      "|java+constructor:///com/code972/elasticsearch/analysis/HebrewQueryAnalyzer$1/HebrewQueryAnalyzer$1(com.code972.elasticsearch.analysis.HebrewQueryAnalyzer,org.apache.lucene.analysis.TokenStream,java.lang.Character,boolean)|",
+      "|java+constructor:///org/apache/lucene/analysis/Analyzer$TokenStreamComponents/Analyzer$TokenStreamComponents(org.apache.lucene.analysis.Tokenizer,org.apache.lucene.analysis.TokenStream)|",
+      "|java+method:///java/lang/Character/valueOf(char)|",
+      "|java+constructor:///org/apache/lucene/analysis/miscellaneous/ASCIIFoldingFilter/ASCIIFoldingFilter(org.apache.lucene.analysis.TokenStream)|",
+      "|java+constructor:///org/apache/lucene/analysis/hebrew/StreamLemmasFilter/StreamLemmasFilter(java.io.Reader,com.code972.hebmorph.datastructures.DictRadix,com.code972.hebmorph.datastructures.DictRadix,com.code972.hebmorph.datastructures.DictRadix,org.apache.lucene.analysis.util.CharArraySet,com.code972.hebmorph.lemmafilters.LemmaFilterBase)|",
+      "|java+method:///org/apache/lucene/analysis/hebrew/StreamLemmasFilter/setKeepOriginalWord(boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/lucene/analysis/hebrew/StreamLemmasFilter/setSuffixForExactMatch(java.lang.Character)|",
+      "|java+constructor:///com/code972/elasticsearch/analysis/HebrewQueryAnalyzer$1/HebrewQueryAnalyzer$1(com.code972.elasticsearch.analysis.HebrewQueryAnalyzer,org.apache.lucene.analysis.TokenStream,java.lang.Character)|",
+      "|java+constructor:///org/apache/lucene/analysis/Analyzer$TokenStreamComponents/Analyzer$TokenStreamComponents(org.apache.lucene.analysis.Tokenizer,org.apache.lucene.analysis.TokenStream)|",
+      "|java+method:///java/lang/Character/valueOf(char)|",
+      "|java+constructor:///org/apache/lucene/analysis/miscellaneous/ASCIIFoldingFilter/ASCIIFoldingFilter(org.apache.lucene.analysis.TokenStream)|",
+      "|java+constructor:///org/apache/lucene/analysis/hebrew/StreamLemmasFilter/StreamLemmasFilter(java.io.Reader,com.code972.hebmorph.datastructures.DictRadix,com.code972.hebmorph.datastructures.DictRadix,com.code972.hebmorph.datastructures.DictRadix,org.apache.lucene.analysis.util.CharArraySet,com.code972.hebmorph.lemmafilters.LemmaFilterBase)|",
+      "|java+method:///org/apache/lucene/analysis/hebrew/StreamLemmasFilter/setKeepOriginalWord(boolean)|",
+      "|java+method:///org/apache/lucene/analysis/hebrew/StreamLemmasFilter/setCustomWords(com.code972.hebmorph.datastructures.DictRadix)|"
+    ],
+    "affectedLib": "com.code972.hebmorph:hebmorph-lucene:1.3.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.code972:elasticsearch-analysis-hebrew:1.0",
+    "coordinatesV2": "com.code972:elasticsearch-analysis-hebrew:1.2",
+    "caller": "|java+method:///com/code972/elasticsearch/analysis/HebrewExactAnalyzer/createComponents(java.lang.String,java.io.Reader)|",
+    "called": "|java+constructor:///org/apache/lucene/analysis/hebrew/NiqqudFilter/NiqqudFilter(org.apache.lucene.analysis.TokenStream)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/lucene/analysis/hebrew/NiqqudFilter/NiqqudFilter(org.apache.lucene.analysis.TokenStream)|",
+      "|java+constructor:///org/apache/lucene/analysis/hebrew/HebrewTokenizer/HebrewTokenizer(java.io.Reader,com.code972.hebmorph.datastructures.DictRadix,com.code972.hebmorph.datastructures.DictRadix)|",
+      "|java+method:///java/lang/Character/valueOf(char)|",
+      "|java+constructor:///org/apache/lucene/analysis/core/LowerCaseFilter/LowerCaseFilter(org.apache.lucene.util.Version,org.apache.lucene.analysis.TokenStream)|",
+      "|java+constructor:///org/apache/lucene/analysis/Analyzer$TokenStreamComponents/Analyzer$TokenStreamComponents(org.apache.lucene.analysis.Tokenizer,org.apache.lucene.analysis.TokenStream)|",
+      "|java+constructor:///com/code972/elasticsearch/analysis/HebrewExactAnalyzer$1/HebrewExactAnalyzer$1(com.code972.elasticsearch.analysis.HebrewExactAnalyzer,org.apache.lucene.analysis.TokenStream,java.lang.Character,boolean)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/lucene/analysis/hebrew/NiqqudFilter/NiqqudFilter(org.apache.lucene.analysis.TokenStream)|",
+      "|java+constructor:///org/apache/lucene/analysis/hebrew/HebrewTokenizer/HebrewTokenizer(java.io.Reader,com.code972.hebmorph.datastructures.DictRadix,com.code972.hebmorph.datastructures.DictRadix)|",
+      "|java+constructor:///com/code972/elasticsearch/analysis/HebrewExactAnalyzer$1/HebrewExactAnalyzer$1(com.code972.elasticsearch.analysis.HebrewExactAnalyzer,org.apache.lucene.analysis.TokenStream,java.lang.Character)|",
+      "|java+constructor:///org/apache/lucene/analysis/Analyzer$TokenStreamComponents/Analyzer$TokenStreamComponents(org.apache.lucene.analysis.Tokenizer,org.apache.lucene.analysis.TokenStream)|",
+      "|java+method:///java/lang/Character/valueOf(char)|",
+      "|java+constructor:///org/apache/lucene/analysis/miscellaneous/ASCIIFoldingFilter/ASCIIFoldingFilter(org.apache.lucene.analysis.TokenStream)|",
+      "|java+constructor:///org/apache/lucene/analysis/core/LowerCaseFilter/LowerCaseFilter(org.apache.lucene.util.Version,org.apache.lucene.analysis.TokenStream)|"
+    ],
+    "affectedLib": "com.code972.hebmorph:hebmorph-lucene:1.3.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.code972:elasticsearch-analysis-hebrew:1.0",
+    "coordinatesV2": "com.code972:elasticsearch-analysis-hebrew:1.2",
+    "caller": "|java+method:///com/code972/elasticsearch/analysis/HebrewIndexingAnalyzer/createComponents(java.lang.String,java.io.Reader)|",
+    "called": "|java+constructor:///org/apache/lucene/analysis/hebrew/StreamLemmasFilter/StreamLemmasFilter(java.io.Reader,com.code972.hebmorph.datastructures.DictRadix,com.code972.hebmorph.datastructures.DictRadix,com.code972.hebmorph.datastructures.DictRadix,org.apache.lucene.analysis.util.CharArraySet,com.code972.hebmorph.lemmafilters.LemmaFilterBase)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/lucene/analysis/Analyzer$TokenStreamComponents/Analyzer$TokenStreamComponents(org.apache.lucene.analysis.Tokenizer,org.apache.lucene.analysis.TokenStream)|",
+      "|java+method:///java/lang/Character/valueOf(char)|",
+      "|java+constructor:///org/apache/lucene/analysis/miscellaneous/ASCIIFoldingFilter/ASCIIFoldingFilter(org.apache.lucene.analysis.TokenStream)|",
+      "|java+constructor:///org/apache/lucene/analysis/hebrew/StreamLemmasFilter/StreamLemmasFilter(java.io.Reader,com.code972.hebmorph.datastructures.DictRadix,com.code972.hebmorph.datastructures.DictRadix,com.code972.hebmorph.datastructures.DictRadix,org.apache.lucene.analysis.util.CharArraySet,com.code972.hebmorph.lemmafilters.LemmaFilterBase)|",
+      "|java+constructor:///com/code972/elasticsearch/analysis/HebrewIndexingAnalyzer$1/HebrewIndexingAnalyzer$1(com.code972.elasticsearch.analysis.HebrewIndexingAnalyzer,org.apache.lucene.analysis.TokenStream,java.lang.Character,boolean)|",
+      "|java+method:///org/apache/lucene/analysis/hebrew/StreamLemmasFilter/setKeepOriginalWord(boolean)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/lucene/analysis/Analyzer$TokenStreamComponents/Analyzer$TokenStreamComponents(org.apache.lucene.analysis.Tokenizer,org.apache.lucene.analysis.TokenStream)|",
+      "|java+method:///java/lang/Character/valueOf(char)|",
+      "|java+constructor:///com/code972/elasticsearch/analysis/HebrewIndexingAnalyzer$1/HebrewIndexingAnalyzer$1(com.code972.elasticsearch.analysis.HebrewIndexingAnalyzer,org.apache.lucene.analysis.TokenStream,java.lang.Character)|",
+      "|java+constructor:///org/apache/lucene/analysis/miscellaneous/ASCIIFoldingFilter/ASCIIFoldingFilter(org.apache.lucene.analysis.TokenStream)|",
+      "|java+constructor:///org/apache/lucene/analysis/hebrew/StreamLemmasFilter/StreamLemmasFilter(java.io.Reader,com.code972.hebmorph.datastructures.DictRadix,com.code972.hebmorph.datastructures.DictRadix,com.code972.hebmorph.datastructures.DictRadix,org.apache.lucene.analysis.util.CharArraySet,com.code972.hebmorph.lemmafilters.LemmaFilterBase)|",
+      "|java+method:///org/apache/lucene/analysis/hebrew/StreamLemmasFilter/setKeepOriginalWord(boolean)|",
+      "|java+method:///org/apache/lucene/analysis/hebrew/StreamLemmasFilter/setCustomWords(com.code972.hebmorph.datastructures.DictRadix)|"
+    ],
+    "affectedLib": "com.code972.hebmorph:hebmorph-lucene:1.3.4",
+    "change": "UPDATED"
+  }
+]

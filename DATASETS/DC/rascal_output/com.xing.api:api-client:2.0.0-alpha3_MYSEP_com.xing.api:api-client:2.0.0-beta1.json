@@ -1,0 +1,518 @@
+[
+  {
+    "coordinatesV1": "com.xing.api:api-client:2.0.0-beta1",
+    "coordinatesV2": "com.xing.api:api-client:2.0.0-alpha3",
+    "caller": "|java+method:///com/xing/api/CallSpec$Builder/formField(java.lang.String,java.lang.Object)|",
+    "called": "|java+method:///com/squareup/okhttp/FormEncodingBuilder/add(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/valueOf(java.lang.Object)|",
+      "|java+method:///com/squareup/okhttp/FormEncodingBuilder/add(java.lang.String,java.lang.String)|",
+      "|java+method:///com/xing/api/Utils/stateNotNull(java.lang.Object,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/valueOf(java.lang.Object)|",
+      "|java+method:///okhttp3/FormBody$Builder/add(java.lang.String,java.lang.String)|",
+      "|java+method:///com/xing/api/Utils/stateNotNull(java.lang.Object,java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.7.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.xing.api:api-client:2.0.0-beta1",
+    "coordinatesV2": "com.xing.api:api-client:2.0.0-alpha3",
+    "caller": "|java+method:///com/xing/api/XingApi$Builder/build()|",
+    "called": "|java+constructor:///com/squareup/okhttp/OkHttpClient/OkHttpClient()|",
+    "v1Body": [
+      "|java+method:///com/xing/api/Platform/get()|",
+      "|java+method:///com/xing/api/Platform/callbackAdapter(java.util.concurrent.Executor)|",
+      "|java+method:///com/squareup/moshi/Moshi$Builder/add(com.squareup.moshi.JsonAdapter$Factory)|",
+      "|java+method:///com/squareup/okhttp/OkHttpClient/interceptors()|",
+      "|java+constructor:///com/xing/api/XingApi/XingApi(com.squareup.okhttp.OkHttpClient,com.squareup.okhttp.HttpUrl,com.squareup.moshi.Moshi,com.xing.api.CallbackAdapter,java.util.concurrent.Executor)|",
+      "|java+constructor:///com/squareup/okhttp/OkHttpClient/OkHttpClient()|",
+      "|java+method:///com/xing/api/OAuth1SigningInterceptor$Builder/build()|",
+      "|java+method:///java/util/List/add(int,java.lang.Object)|",
+      "|java+method:///com/squareup/moshi/Moshi$Builder/build()|",
+      "|java+constructor:///com/squareup/moshi/Moshi$Builder/Moshi$Builder()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/xing/api/Platform/get()|",
+      "|java+method:///com/xing/api/Platform/callbackAdapter(java.util.concurrent.Executor)|",
+      "|java+method:///com/squareup/moshi/Moshi$Builder/add(com.squareup.moshi.JsonAdapter$Factory)|",
+      "|java+constructor:///com/xing/api/XingApi/XingApi(okhttp3.OkHttpClient,okhttp3.HttpUrl,com.squareup.moshi.Moshi,com.xing.api.CallbackAdapter,java.util.concurrent.Executor)|",
+      "|java+method:///okhttp3/OkHttpClient$Builder/addInterceptor(okhttp3.Interceptor)|",
+      "|java+method:///com/xing/api/OAuth1SigningInterceptor$Builder/build()|",
+      "|java+method:///com/squareup/moshi/Moshi$Builder/build()|",
+      "|java+constructor:///com/squareup/moshi/Moshi$Builder/Moshi$Builder()|",
+      "|java+method:///okhttp3/OkHttpClient$Builder/build()|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.7.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.xing.api:api-client:2.0.0-beta1",
+    "coordinatesV2": "com.xing.api:api-client:2.0.0-alpha3",
+    "caller": "|java+method:///com/xing/api/CallSpec$Builder/buildUrlBuilder()|",
+    "called": "|java+method:///com/squareup/okhttp/HttpUrl/newBuilder()|",
+    "v1Body": [
+      "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|",
+      "|java+method:///com/squareup/okhttp/HttpUrl/newBuilder()|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|",
+      "|java+method:///okhttp3/HttpUrl/newBuilder()|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.7.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.xing.api:api-client:2.0.0-beta1",
+    "coordinatesV2": "com.xing.api:api-client:2.0.0-alpha3",
+    "caller": "|java+initializer:///com/xing/api/CallSpec$Builder/CallSpec$Builder$initializer|",
+    "called": "|java+method:///com/squareup/okhttp/MediaType/parse(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/util/regex/Pattern/compile(java.lang.String)|",
+      "|java+method:///com/squareup/okhttp/MediaType/parse(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/regex/Pattern/compile(java.lang.String)|",
+      "|java+method:///okhttp3/MediaType/parse(java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.7.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.xing.api:api-client:2.0.0-beta1",
+    "coordinatesV2": "com.xing.api:api-client:2.0.0-alpha3",
+    "caller": "|java+constructor:///com/xing/api/CallSpec$Builder/CallSpec$Builder(com.xing.api.XingApi,com.xing.api.HttpMethod,java.lang.String,boolean)|",
+    "called": "|java+method:///com/squareup/okhttp/Request$Builder/header(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/squareup/okhttp/Request$Builder/header(java.lang.String,java.lang.String)|",
+      "|java+constructor:///com/squareup/okhttp/FormEncodingBuilder/FormEncodingBuilder()|",
+      "|java+method:///com/xing/api/Utils/checkNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///com/xing/api/CallSpec$Builder/parseResourcePathParams(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///com/squareup/okhttp/Request$Builder/Request$Builder()|",
+      "|java+method:///com/xing/api/XingApi/apiEndpoint()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///okhttp3/Request$Builder/Request$Builder()|",
+      "|java+method:///okhttp3/Request$Builder/header(java.lang.String,java.lang.String)|",
+      "|java+constructor:///okhttp3/FormBody$Builder/FormBody$Builder()|",
+      "|java+method:///com/xing/api/Utils/checkNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///com/xing/api/CallSpec$Builder/parseResourcePathParams(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///com/xing/api/XingApi/apiEndpoint()|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.7.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.xing.api:api-client:2.0.0-beta1",
+    "coordinatesV2": "com.xing.api:api-client:2.0.0-alpha3",
+    "caller": "|java+method:///com/xing/api/XingApi$Builder/apiEndpoint(java.lang.String)|",
+    "called": "|java+method:///com/squareup/okhttp/HttpUrl/parse(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/squareup/okhttp/HttpUrl/parse(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/xing/api/XingApi$Builder/apiEndpoint(com.squareup.okhttp.HttpUrl)|",
+      "|java+method:///com/xing/api/Utils/checkNotNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/HttpUrl/parse(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/xing/api/XingApi$Builder/apiEndpoint(okhttp3.HttpUrl)|",
+      "|java+method:///com/xing/api/Utils/checkNotNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.7.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.xing.api:api-client:2.0.0-beta1",
+    "coordinatesV2": "com.xing.api:api-client:2.0.0-alpha3",
+    "caller": "|java+method:///com/xing/api/CallSpec$Builder/queryParam(java.lang.String,java.lang.Object)|",
+    "called": "|java+method:///com/squareup/okhttp/HttpUrl$Builder/addEncodedQueryParameter(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/xing/api/CallSpec$Builder/buildUrlBuilder()|",
+      "|java+method:///java/lang/String/valueOf(java.lang.Object)|",
+      "|java+method:///com/xing/api/UrlEscapeUtils/escape(java.lang.String)|",
+      "|java+method:///com/squareup/okhttp/HttpUrl$Builder/addEncodedQueryParameter(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/HttpUrl$Builder/addEncodedQueryParameter(java.lang.String,java.lang.String)|",
+      "|java+method:///com/xing/api/CallSpec$Builder/buildUrlBuilder()|",
+      "|java+method:///java/lang/String/valueOf(java.lang.Object)|",
+      "|java+method:///com/xing/api/UrlEscapeUtils/escape(java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.7.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.xing.api:api-client:2.0.0-beta1",
+    "coordinatesV2": "com.xing.api:api-client:2.0.0-alpha3",
+    "caller": "|java+method:///com/xing/api/CallSpec$Builder/body(java.lang.reflect.Type,java.lang.Object)|",
+    "called": "|java+method:///com/squareup/okhttp/RequestBody/create(com.squareup.okhttp.MediaType,byte%5B%5D)|",
+    "v1Body": [
+      "|java+constructor:///okio/Buffer/Buffer()|",
+      "|java+method:///com/squareup/moshi/JsonAdapter/toJson(okio.BufferedSink,java.lang.Object)|",
+      "|java+method:///com/xing/api/XingApi/converter()|",
+      "|java+method:///okio/Buffer/readByteArray()|",
+      "|java+method:///com/squareup/okhttp/RequestBody/create(com.squareup.okhttp.MediaType,byte%5B%5D)|",
+      "|java+method:///com/xing/api/CallSpec$Builder/body(com.squareup.okhttp.RequestBody)|",
+      "|java+method:///com/squareup/moshi/Moshi/adapter(java.lang.reflect.Type)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///okio/Buffer/Buffer()|",
+      "|java+method:///com/xing/api/CallSpec$Builder/body(okhttp3.RequestBody)|",
+      "|java+method:///com/squareup/moshi/Moshi/adapter(java.lang.reflect.Type)|",
+      "|java+method:///com/squareup/moshi/JsonAdapter/toJson(okio.BufferedSink,java.lang.Object)|",
+      "|java+method:///com/xing/api/XingApi/converter()|",
+      "|java+method:///okio/Buffer/readByteArray()|",
+      "|java+method:///okhttp3/RequestBody/create(okhttp3.MediaType,byte%5B%5D)|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.7.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.xing.api:api-client:2.0.0-beta1",
+    "coordinatesV2": "com.xing.api:api-client:2.0.0-alpha3",
+    "caller": "|java+initializer:///com/xing/api/OAuth1SigningInterceptor/OAuth1SigningInterceptor$initializer|",
+    "called": "|java+method:///com/squareup/okhttp/MediaType/parse(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/util/regex/Pattern/compile(java.lang.String)|",
+      "|java+method:///com/squareup/okhttp/MediaType/parse(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/regex/Pattern/compile(java.lang.String)|",
+      "|java+method:///okhttp3/MediaType/parse(java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.7.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.xing.api:api-client:2.0.0-beta1",
+    "coordinatesV2": "com.xing.api:api-client:2.0.0-alpha3",
+    "caller": "|java+method:///com/xing/api/CallSpec$Builder/request()|",
+    "called": "|java+method:///com/squareup/okhttp/HttpUrl$Builder/build()|",
+    "v1Body": [
+      "|java+method:///com/squareup/okhttp/Request$Builder/url(com.squareup.okhttp.HttpUrl)|",
+      "|java+method:///com/xing/api/Utils/stateError(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/xing/api/HttpMethod/method()|",
+      "|java+method:///com/squareup/okhttp/HttpUrl$Builder/build()|",
+      "|java+method:///com/xing/api/HttpMethod/hasBody()|",
+      "|java+method:///com/squareup/okhttp/Request$Builder/build()|",
+      "|java+method:///com/squareup/okhttp/FormEncodingBuilder/build()|",
+      "|java+method:///com/squareup/okhttp/Request$Builder/method(java.lang.String,com.squareup.okhttp.RequestBody)|",
+      "|java+method:///com/squareup/okhttp/RequestBody/create(com.squareup.okhttp.MediaType,byte%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/Request$Builder/build()|",
+      "|java+method:///com/xing/api/Utils/stateError(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/xing/api/HttpMethod/method()|",
+      "|java+method:///okhttp3/FormBody$Builder/build()|",
+      "|java+method:///okhttp3/Request$Builder/url(okhttp3.HttpUrl)|",
+      "|java+method:///okhttp3/RequestBody/create(okhttp3.MediaType,byte%5B%5D)|",
+      "|java+method:///com/xing/api/HttpMethod/hasBody()|",
+      "|java+method:///okhttp3/Request$Builder/method(java.lang.String,okhttp3.RequestBody)|",
+      "|java+method:///okhttp3/HttpUrl$Builder/build()|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.7.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.xing.api:api-client:2.0.0-beta1",
+    "coordinatesV2": "com.xing.api:api-client:2.0.0-alpha3",
+    "caller": "|java+constructor:///com/xing/api/XingApi$Builder/XingApi$Builder()|",
+    "called": "|java+method:///com/squareup/okhttp/HttpUrl/parse(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/squareup/okhttp/HttpUrl/parse(java.lang.String)|",
+      "|java+constructor:///com/xing/api/OAuth1SigningInterceptor$Builder/OAuth1SigningInterceptor$Builder()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/HttpUrl/parse(java.lang.String)|",
+      "|java+constructor:///com/xing/api/OAuth1SigningInterceptor$Builder/OAuth1SigningInterceptor$Builder()|",
+      "|java+constructor:///okhttp3/OkHttpClient$Builder/OkHttpClient$Builder()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.7.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.xing.api:api-client:2.0.0-beta1",
+    "coordinatesV2": "com.xing.api:api-client:2.0.0-alpha3",
+    "caller": "|java+method:///com/xing/api/CallSpec$Builder/header(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///com/squareup/okhttp/Request$Builder/header(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/squareup/okhttp/Request$Builder/header(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/Request$Builder/header(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.7.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.xing.api:api-client:2.0.0-alpha3",
+    "coordinatesV2": "com.xing.api:api-client:2.0.0-beta1",
+    "caller": "|java+method:///com/xing/api/CallSpec$Builder/formField(java.lang.String,java.lang.Object)|",
+    "called": "|java+method:///okhttp3/FormBody$Builder/add(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/valueOf(java.lang.Object)|",
+      "|java+method:///com/squareup/okhttp/FormEncodingBuilder/add(java.lang.String,java.lang.String)|",
+      "|java+method:///com/xing/api/Utils/stateNotNull(java.lang.Object,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/valueOf(java.lang.Object)|",
+      "|java+method:///okhttp3/FormBody$Builder/add(java.lang.String,java.lang.String)|",
+      "|java+method:///com/xing/api/Utils/stateNotNull(java.lang.Object,java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.xing.api:api-client:2.0.0-alpha3",
+    "coordinatesV2": "com.xing.api:api-client:2.0.0-beta1",
+    "caller": "|java+method:///com/xing/api/XingApi$Builder/build()|",
+    "called": "|java+method:///okhttp3/OkHttpClient$Builder/addInterceptor(okhttp3.Interceptor)|",
+    "v1Body": [
+      "|java+method:///com/xing/api/Platform/get()|",
+      "|java+method:///com/xing/api/Platform/callbackAdapter(java.util.concurrent.Executor)|",
+      "|java+method:///com/squareup/moshi/Moshi$Builder/add(com.squareup.moshi.JsonAdapter$Factory)|",
+      "|java+method:///com/squareup/okhttp/OkHttpClient/interceptors()|",
+      "|java+constructor:///com/xing/api/XingApi/XingApi(com.squareup.okhttp.OkHttpClient,com.squareup.okhttp.HttpUrl,com.squareup.moshi.Moshi,com.xing.api.CallbackAdapter,java.util.concurrent.Executor)|",
+      "|java+constructor:///com/squareup/okhttp/OkHttpClient/OkHttpClient()|",
+      "|java+method:///com/xing/api/OAuth1SigningInterceptor$Builder/build()|",
+      "|java+method:///java/util/List/add(int,java.lang.Object)|",
+      "|java+method:///com/squareup/moshi/Moshi$Builder/build()|",
+      "|java+constructor:///com/squareup/moshi/Moshi$Builder/Moshi$Builder()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/xing/api/Platform/get()|",
+      "|java+method:///com/xing/api/Platform/callbackAdapter(java.util.concurrent.Executor)|",
+      "|java+method:///com/squareup/moshi/Moshi$Builder/add(com.squareup.moshi.JsonAdapter$Factory)|",
+      "|java+constructor:///com/xing/api/XingApi/XingApi(okhttp3.OkHttpClient,okhttp3.HttpUrl,com.squareup.moshi.Moshi,com.xing.api.CallbackAdapter,java.util.concurrent.Executor)|",
+      "|java+method:///okhttp3/OkHttpClient$Builder/addInterceptor(okhttp3.Interceptor)|",
+      "|java+method:///com/xing/api/OAuth1SigningInterceptor$Builder/build()|",
+      "|java+method:///com/squareup/moshi/Moshi$Builder/build()|",
+      "|java+constructor:///com/squareup/moshi/Moshi$Builder/Moshi$Builder()|",
+      "|java+method:///okhttp3/OkHttpClient$Builder/build()|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.xing.api:api-client:2.0.0-alpha3",
+    "coordinatesV2": "com.xing.api:api-client:2.0.0-beta1",
+    "caller": "|java+constructor:///com/xing/api/CallSpec$Builder/CallSpec$Builder(com.xing.api.XingApi,com.xing.api.HttpMethod,java.lang.String,boolean)|",
+    "called": "|java+constructor:///okhttp3/FormBody$Builder/FormBody$Builder()|",
+    "v1Body": [
+      "|java+method:///com/squareup/okhttp/Request$Builder/header(java.lang.String,java.lang.String)|",
+      "|java+constructor:///com/squareup/okhttp/FormEncodingBuilder/FormEncodingBuilder()|",
+      "|java+method:///com/xing/api/Utils/checkNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///com/xing/api/CallSpec$Builder/parseResourcePathParams(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///com/squareup/okhttp/Request$Builder/Request$Builder()|",
+      "|java+method:///com/xing/api/XingApi/apiEndpoint()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///okhttp3/Request$Builder/Request$Builder()|",
+      "|java+method:///okhttp3/Request$Builder/header(java.lang.String,java.lang.String)|",
+      "|java+constructor:///okhttp3/FormBody$Builder/FormBody$Builder()|",
+      "|java+method:///com/xing/api/Utils/checkNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///com/xing/api/CallSpec$Builder/parseResourcePathParams(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///com/xing/api/XingApi/apiEndpoint()|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.xing.api:api-client:2.0.0-alpha3",
+    "coordinatesV2": "com.xing.api:api-client:2.0.0-beta1",
+    "caller": "|java+initializer:///com/xing/api/CallSpec$Builder/CallSpec$Builder$initializer|",
+    "called": "|java+method:///okhttp3/MediaType/parse(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/util/regex/Pattern/compile(java.lang.String)|",
+      "|java+method:///com/squareup/okhttp/MediaType/parse(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/regex/Pattern/compile(java.lang.String)|",
+      "|java+method:///okhttp3/MediaType/parse(java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.xing.api:api-client:2.0.0-alpha3",
+    "coordinatesV2": "com.xing.api:api-client:2.0.0-beta1",
+    "caller": "|java+method:///com/xing/api/CallSpec$Builder/buildUrlBuilder()|",
+    "called": "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|",
+      "|java+method:///com/squareup/okhttp/HttpUrl/newBuilder()|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|",
+      "|java+method:///okhttp3/HttpUrl/newBuilder()|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.xing.api:api-client:2.0.0-alpha3",
+    "coordinatesV2": "com.xing.api:api-client:2.0.0-beta1",
+    "caller": "|java+method:///com/xing/api/XingApi$Builder/apiEndpoint(java.lang.String)|",
+    "called": "|java+method:///okhttp3/HttpUrl/parse(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/squareup/okhttp/HttpUrl/parse(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/xing/api/XingApi$Builder/apiEndpoint(com.squareup.okhttp.HttpUrl)|",
+      "|java+method:///com/xing/api/Utils/checkNotNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/HttpUrl/parse(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/xing/api/XingApi$Builder/apiEndpoint(okhttp3.HttpUrl)|",
+      "|java+method:///com/xing/api/Utils/checkNotNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.xing.api:api-client:2.0.0-alpha3",
+    "coordinatesV2": "com.xing.api:api-client:2.0.0-beta1",
+    "caller": "|java+method:///com/xing/api/CallSpec$Builder/queryParam(java.lang.String,java.lang.Object)|",
+    "called": "|java+method:///okhttp3/HttpUrl$Builder/addEncodedQueryParameter(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/xing/api/CallSpec$Builder/buildUrlBuilder()|",
+      "|java+method:///java/lang/String/valueOf(java.lang.Object)|",
+      "|java+method:///com/xing/api/UrlEscapeUtils/escape(java.lang.String)|",
+      "|java+method:///com/squareup/okhttp/HttpUrl$Builder/addEncodedQueryParameter(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/HttpUrl$Builder/addEncodedQueryParameter(java.lang.String,java.lang.String)|",
+      "|java+method:///com/xing/api/CallSpec$Builder/buildUrlBuilder()|",
+      "|java+method:///java/lang/String/valueOf(java.lang.Object)|",
+      "|java+method:///com/xing/api/UrlEscapeUtils/escape(java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.xing.api:api-client:2.0.0-alpha3",
+    "coordinatesV2": "com.xing.api:api-client:2.0.0-beta1",
+    "caller": "|java+method:///com/xing/api/CallSpec$Builder/body(java.lang.reflect.Type,java.lang.Object)|",
+    "called": "|java+method:///okhttp3/RequestBody/create(okhttp3.MediaType,byte%5B%5D)|",
+    "v1Body": [
+      "|java+constructor:///okio/Buffer/Buffer()|",
+      "|java+method:///com/squareup/moshi/JsonAdapter/toJson(okio.BufferedSink,java.lang.Object)|",
+      "|java+method:///com/xing/api/XingApi/converter()|",
+      "|java+method:///okio/Buffer/readByteArray()|",
+      "|java+method:///com/squareup/okhttp/RequestBody/create(com.squareup.okhttp.MediaType,byte%5B%5D)|",
+      "|java+method:///com/xing/api/CallSpec$Builder/body(com.squareup.okhttp.RequestBody)|",
+      "|java+method:///com/squareup/moshi/Moshi/adapter(java.lang.reflect.Type)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///okio/Buffer/Buffer()|",
+      "|java+method:///com/xing/api/CallSpec$Builder/body(okhttp3.RequestBody)|",
+      "|java+method:///com/squareup/moshi/Moshi/adapter(java.lang.reflect.Type)|",
+      "|java+method:///com/squareup/moshi/JsonAdapter/toJson(okio.BufferedSink,java.lang.Object)|",
+      "|java+method:///com/xing/api/XingApi/converter()|",
+      "|java+method:///okio/Buffer/readByteArray()|",
+      "|java+method:///okhttp3/RequestBody/create(okhttp3.MediaType,byte%5B%5D)|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.xing.api:api-client:2.0.0-alpha3",
+    "coordinatesV2": "com.xing.api:api-client:2.0.0-beta1",
+    "caller": "|java+initializer:///com/xing/api/OAuth1SigningInterceptor/OAuth1SigningInterceptor$initializer|",
+    "called": "|java+method:///okhttp3/MediaType/parse(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/util/regex/Pattern/compile(java.lang.String)|",
+      "|java+method:///com/squareup/okhttp/MediaType/parse(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/regex/Pattern/compile(java.lang.String)|",
+      "|java+method:///okhttp3/MediaType/parse(java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.xing.api:api-client:2.0.0-alpha3",
+    "coordinatesV2": "com.xing.api:api-client:2.0.0-beta1",
+    "caller": "|java+method:///com/xing/api/CallSpec$Builder/request()|",
+    "called": "|java+method:///okhttp3/RequestBody/create(okhttp3.MediaType,byte%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/squareup/okhttp/Request$Builder/url(com.squareup.okhttp.HttpUrl)|",
+      "|java+method:///com/xing/api/Utils/stateError(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/xing/api/HttpMethod/method()|",
+      "|java+method:///com/squareup/okhttp/HttpUrl$Builder/build()|",
+      "|java+method:///com/xing/api/HttpMethod/hasBody()|",
+      "|java+method:///com/squareup/okhttp/Request$Builder/build()|",
+      "|java+method:///com/squareup/okhttp/FormEncodingBuilder/build()|",
+      "|java+method:///com/squareup/okhttp/Request$Builder/method(java.lang.String,com.squareup.okhttp.RequestBody)|",
+      "|java+method:///com/squareup/okhttp/RequestBody/create(com.squareup.okhttp.MediaType,byte%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/Request$Builder/build()|",
+      "|java+method:///com/xing/api/Utils/stateError(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/xing/api/HttpMethod/method()|",
+      "|java+method:///okhttp3/FormBody$Builder/build()|",
+      "|java+method:///okhttp3/Request$Builder/url(okhttp3.HttpUrl)|",
+      "|java+method:///okhttp3/RequestBody/create(okhttp3.MediaType,byte%5B%5D)|",
+      "|java+method:///com/xing/api/HttpMethod/hasBody()|",
+      "|java+method:///okhttp3/Request$Builder/method(java.lang.String,okhttp3.RequestBody)|",
+      "|java+method:///okhttp3/HttpUrl$Builder/build()|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.xing.api:api-client:2.0.0-alpha3",
+    "coordinatesV2": "com.xing.api:api-client:2.0.0-beta1",
+    "caller": "|java+method:///com/xing/api/CallSpec$Builder/header(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///okhttp3/Request$Builder/header(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/squareup/okhttp/Request$Builder/header(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/Request$Builder/header(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.xing.api:api-client:2.0.0-alpha3",
+    "coordinatesV2": "com.xing.api:api-client:2.0.0-beta1",
+    "caller": "|java+constructor:///com/xing/api/XingApi$Builder/XingApi$Builder()|",
+    "called": "|java+constructor:///okhttp3/OkHttpClient$Builder/OkHttpClient$Builder()|",
+    "v1Body": [
+      "|java+method:///com/squareup/okhttp/HttpUrl/parse(java.lang.String)|",
+      "|java+constructor:///com/xing/api/OAuth1SigningInterceptor$Builder/OAuth1SigningInterceptor$Builder()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/HttpUrl/parse(java.lang.String)|",
+      "|java+constructor:///com/xing/api/OAuth1SigningInterceptor$Builder/OAuth1SigningInterceptor$Builder()|",
+      "|java+constructor:///okhttp3/OkHttpClient$Builder/OkHttpClient$Builder()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.2.0",
+    "change": "ADDED"
+  }
+]

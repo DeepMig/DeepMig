@@ -1,0 +1,106 @@
+[
+  {
+    "coordinatesV1": "org.apache.hbase:hbase-server:0.98.19-hadoop2",
+    "coordinatesV2": "org.apache.hbase:hbase-server:0.98.19-hadoop1",
+    "caller": "|java+method:///org/apache/hadoop/hbase/util/FSUtils/isInSafeMode(org.apache.hadoop.hdfs.DistributedFileSystem)|",
+    "called": "|java+method:///org/apache/hadoop/hdfs/DistributedFileSystem/setSafeMode(org.apache.hadoop.hdfs.protocol.FSConstants$SafeModeAction)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/getMethod(java.lang.String,java.lang.Class%5B%5D)|",
+      "|java+method:///org/apache/hadoop/hdfs/DistributedFileSystem/setSafeMode(org.apache.hadoop.hdfs.protocol.FSConstants$SafeModeAction)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///java/lang/reflect/Method/invoke(java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/getMethod(java.lang.String,java.lang.Class%5B%5D)|",
+      "|java+method:///org/apache/hadoop/hdfs/DistributedFileSystem/setSafeMode(org.apache.hadoop.hdfs.protocol.HdfsConstants$SafeModeAction)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///java/lang/reflect/Method/invoke(java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-core:1.2.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.hbase:hbase-server:0.98.19-hadoop2",
+    "coordinatesV2": "org.apache.hbase:hbase-server:0.98.19-hadoop1",
+    "caller": "|java+method:///org/apache/hadoop/hbase/fs/HFileSystem$1/invoke(java.lang.Object,java.lang.reflect.Method,java.lang.Object%5B%5D)|",
+    "called": "|java+method:///org/apache/hadoop/ipc/RPC/stopProxy(org.apache.hadoop.ipc.VersionedProtocol)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/ipc/RPC/stopProxy(org.apache.hadoop.ipc.VersionedProtocol)|",
+      "|java+method:///java/lang/Throwable/getCause()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/reflect/Method/getName()|",
+      "|java+method:///java/lang/reflect/InvocationTargetException/getCause()|",
+      "|java+method:///org/apache/hadoop/hbase/fs/HFileSystem$ReorderBlocks/reorderBlocks(org.apache.hadoop.conf.Configuration,org.apache.hadoop.hdfs.protocol.LocatedBlocks,java.lang.String)|",
+      "|java+method:///java/lang/reflect/Method/invoke(java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/ipc/RPC/stopProxy(java.lang.Object)|",
+      "|java+method:///java/lang/Throwable/getCause()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/reflect/Method/getName()|",
+      "|java+method:///java/lang/reflect/InvocationTargetException/getCause()|",
+      "|java+method:///org/apache/hadoop/hbase/fs/HFileSystem$ReorderBlocks/reorderBlocks(org.apache.hadoop.conf.Configuration,org.apache.hadoop.hdfs.protocol.LocatedBlocks,java.lang.String)|",
+      "|java+method:///java/lang/reflect/Method/invoke(java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-core:1.2.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.hbase:hbase-server:0.98.19-hadoop1",
+    "coordinatesV2": "org.apache.hbase:hbase-server:0.98.19-hadoop2",
+    "caller": "|java+method:///org/apache/hadoop/hbase/fs/HFileSystem$1/invoke(java.lang.Object,java.lang.reflect.Method,java.lang.Object%5B%5D)|",
+    "called": "|java+method:///org/apache/hadoop/ipc/RPC/stopProxy(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/ipc/RPC/stopProxy(org.apache.hadoop.ipc.VersionedProtocol)|",
+      "|java+method:///java/lang/Throwable/getCause()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/reflect/Method/getName()|",
+      "|java+method:///java/lang/reflect/InvocationTargetException/getCause()|",
+      "|java+method:///org/apache/hadoop/hbase/fs/HFileSystem$ReorderBlocks/reorderBlocks(org.apache.hadoop.conf.Configuration,org.apache.hadoop.hdfs.protocol.LocatedBlocks,java.lang.String)|",
+      "|java+method:///java/lang/reflect/Method/invoke(java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/ipc/RPC/stopProxy(java.lang.Object)|",
+      "|java+method:///java/lang/Throwable/getCause()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/reflect/Method/getName()|",
+      "|java+method:///java/lang/reflect/InvocationTargetException/getCause()|",
+      "|java+method:///org/apache/hadoop/hbase/fs/HFileSystem$ReorderBlocks/reorderBlocks(org.apache.hadoop.conf.Configuration,org.apache.hadoop.hdfs.protocol.LocatedBlocks,java.lang.String)|",
+      "|java+method:///java/lang/reflect/Method/invoke(java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-common:2.2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.hbase:hbase-server:0.98.19-hadoop1",
+    "coordinatesV2": "org.apache.hbase:hbase-server:0.98.19-hadoop2",
+    "caller": "|java+method:///org/apache/hadoop/hbase/util/FSUtils/isInSafeMode(org.apache.hadoop.hdfs.DistributedFileSystem)|",
+    "called": "|java+method:///org/apache/hadoop/hdfs/DistributedFileSystem/setSafeMode(org.apache.hadoop.hdfs.protocol.HdfsConstants$SafeModeAction)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/getMethod(java.lang.String,java.lang.Class%5B%5D)|",
+      "|java+method:///org/apache/hadoop/hdfs/DistributedFileSystem/setSafeMode(org.apache.hadoop.hdfs.protocol.FSConstants$SafeModeAction)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///java/lang/reflect/Method/invoke(java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/getMethod(java.lang.String,java.lang.Class%5B%5D)|",
+      "|java+method:///org/apache/hadoop/hdfs/DistributedFileSystem/setSafeMode(org.apache.hadoop.hdfs.protocol.HdfsConstants$SafeModeAction)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///java/lang/reflect/Method/invoke(java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-hdfs:2.2.0",
+    "change": "ADDED"
+  }
+]

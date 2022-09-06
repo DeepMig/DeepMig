@@ -1,0 +1,82 @@
+[
+  {
+    "coordinatesV1": "de.schlichtherle.truezip:truezip-path:7.4.2",
+    "coordinatesV2": "de.schlichtherle.truezip:truezip-path:7.5",
+    "caller": "|java+method:///de/schlichtherle/truezip/nio/file/TFileSystemProvider/push(java.util.Map)|",
+    "called": "|java+method:///de/schlichtherle/truezip/file/TConfig/push()|",
+    "v1Body": [
+      "|java+method:///de/schlichtherle/truezip/file/TConfig/setArchiveDetector(de.schlichtherle.truezip.file.TArchiveDetector)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///de/schlichtherle/truezip/file/TConfig/getArchiveDetector()|",
+      "|java+method:///de/schlichtherle/truezip/file/TConfig/push()|"
+    ],
+    "v2Body": [
+      "|java+method:///de/schlichtherle/truezip/file/TConfig/setArchiveDetector(de.schlichtherle.truezip.file.TArchiveDetector)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///de/schlichtherle/truezip/file/TConfig/push()|"
+    ],
+    "affectedLib": "de.schlichtherle.truezip:truezip-file:7.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "de.schlichtherle.truezip:truezip-path:7.4.2",
+    "coordinatesV2": "de.schlichtherle.truezip:truezip-path:7.5",
+    "caller": "|java+method:///de/schlichtherle/truezip/nio/file/TFileSystemProvider/umount()|",
+    "called": "|java+method:///de/schlichtherle/truezip/file/TVFS/umount()|",
+    "v1Body": [
+      "|java+method:///de/schlichtherle/truezip/fs/FsManager/sync(de.schlichtherle.truezip.util.BitField)|"
+    ],
+    "v2Body": [
+      "|java+method:///de/schlichtherle/truezip/file/TVFS/umount()|"
+    ],
+    "affectedLib": "de.schlichtherle.truezip:truezip-file:7.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "de.schlichtherle.truezip:truezip-path:7.4.2",
+    "coordinatesV2": "de.schlichtherle.truezip:truezip-path:7.5",
+    "caller": "|java+method:///de/schlichtherle/truezip/nio/file/TFileSystem/sync(de.schlichtherle.truezip.util.BitField)|",
+    "called": "|java+method:///de/schlichtherle/truezip/file/TVFS/sync(de.schlichtherle.truezip.fs.FsMountPoint,de.schlichtherle.truezip.util.BitField)|",
+    "v1Body": [
+      "|java+method:///de/schlichtherle/truezip/fs/FsFilteringManager/sync(de.schlichtherle.truezip.util.BitField)|",
+      "|java+method:///de/schlichtherle/truezip/nio/file/TFileSystem/getMountPoint()|",
+      "|java+constructor:///de/schlichtherle/truezip/fs/FsFilteringManager/FsFilteringManager(de.schlichtherle.truezip.fs.FsManager,de.schlichtherle.truezip.fs.FsMountPoint)|"
+    ],
+    "v2Body": [
+      "|java+method:///de/schlichtherle/truezip/nio/file/TFileSystem/getMountPoint()|",
+      "|java+method:///de/schlichtherle/truezip/file/TVFS/sync(de.schlichtherle.truezip.fs.FsMountPoint,de.schlichtherle.truezip.util.BitField)|"
+    ],
+    "affectedLib": "de.schlichtherle.truezip:truezip-file:7.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "de.schlichtherle.truezip:truezip-path:7.4.2",
+    "coordinatesV2": "de.schlichtherle.truezip:truezip-path:7.5",
+    "caller": "|java+constructor:///de/schlichtherle/truezip/nio/file/TFileSystem/TFileSystem(de.schlichtherle.truezip.nio.file.TPath)|",
+    "called": "|java+method:///de/schlichtherle/truezip/file/TConfig/get()|",
+    "v1Body": [
+      "|java+method:///de/schlichtherle/truezip/nio/file/TPath/getMountPoint()|",
+      "|java+constructor:///java/nio/file/FileSystem/FileSystem()|",
+      "|java+method:///de/schlichtherle/truezip/fs/FsManager/getController(de.schlichtherle.truezip.fs.FsMountPoint,de.schlichtherle.truezip.fs.FsCompositeDriver)|",
+      "|java+method:///de/schlichtherle/truezip/nio/file/TFileSystem/invariants()|",
+      "|java+method:///de/schlichtherle/truezip/nio/file/TFileSystemProvider/get(java.net.URI)|",
+      "|java+method:///de/schlichtherle/truezip/nio/file/TPath/getName()|",
+      "|java+method:///de/schlichtherle/truezip/nio/file/TPath/getArchiveDetector()|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|"
+    ],
+    "v2Body": [
+      "|java+method:///de/schlichtherle/truezip/nio/file/TPath/getMountPoint()|",
+      "|java+constructor:///java/nio/file/FileSystem/FileSystem()|",
+      "|java+method:///de/schlichtherle/truezip/fs/FsManager/getController(de.schlichtherle.truezip.fs.FsMountPoint,de.schlichtherle.truezip.fs.FsCompositeDriver)|",
+      "|java+method:///de/schlichtherle/truezip/nio/file/TFileSystem/invariants()|",
+      "|java+method:///de/schlichtherle/truezip/nio/file/TFileSystemProvider/get(java.net.URI)|",
+      "|java+method:///de/schlichtherle/truezip/nio/file/TPath/getName()|",
+      "|java+method:///de/schlichtherle/truezip/nio/file/TPath/getArchiveDetector()|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|",
+      "|java+method:///de/schlichtherle/truezip/file/TConfig/getFsManager()|",
+      "|java+method:///de/schlichtherle/truezip/file/TConfig/get()|"
+    ],
+    "affectedLib": "de.schlichtherle.truezip:truezip-file:7.5",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "coordinatesV1": "org.smallmind:smallmind-persistence:3.1.3",
+    "coordinatesV2": "org.smallmind:smallmind-persistence:3.1.1",
+    "caller": "|java+method:///org/smallmind/persistence/orm/spring/jdo/EntitySeekingPersistenceManagerFactoryBean/afterPropertiesSet()|",
+    "called": "|java+method:///javax/jdo/JDOHelper/getPersistenceManagerFactory(java.util.Map)|",
+    "v1Body": [
+      "|java+method:///javax/jdo/JDOHelper/getPersistenceManagerFactory(java.util.Map)|",
+      "|java+method:///javax/jdo/PersistenceManagerFactory/setConnectionFactory(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/jdo/PersistenceManagerFactory/newMetadata()|",
+      "|java+method:///javax/jdo/metadata/JDOMetadata/newPackageMetadata(java.lang.Package)|",
+      "|java+method:///org/smallmind/persistence/orm/spring/jdo/EntitySeekingPersistenceManagerFactoryBean/getObject()|",
+      "|java+method:///javax/jdo/metadata/PackageMetadata/newClassMetadata(java.lang.Class)|",
+      "|java+method:///javax/jdo/PersistenceManagerFactory/registerMetadata(javax.jdo.metadata.JDOMetadata)|",
+      "|java+method:///java/util/HashMap/get(java.lang.Object)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/util/HashMap/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/Class/getPackage()|",
+      "|java+method:///org/springframework/orm/jdo/LocalPersistenceManagerFactoryBean/afterPropertiesSet()|",
+      "|java+method:///javax/jdo/PersistenceManagerFactory/setConnectionFactory(java.lang.Object)|",
+      "|java+method:///org/smallmind/persistence/orm/spring/jdo/AnnotationSeekingBeanFactoryPostProcessor/getAnnotatedClasses(java.lang.String)|"
+    ],
+    "affectedLib": "javax.jdo:jdo2-api:2.2",
+    "change": "REMOVED"
+  }
+]

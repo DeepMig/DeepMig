@@ -1,0 +1,106 @@
+[
+  {
+    "coordinatesV1": "org.analogweb:analogweb-scala_2.11:0.9.7",
+    "coordinatesV2": "org.analogweb:analogweb-scala_2.11:0.9.10",
+    "caller": "|java+method:///org/analogweb/scala/ScalaJacksonJsonValueResolver/resolveValue(org.analogweb.RequestContext,org.analogweb.InvocationMetadata,java.lang.String,java.lang.Class,java.lang.annotation.Annotation%5B%5D)|",
+    "called": "|java+method:///org/json4s/jackson/JsonMethods$/parse(org.json4s.JsonInput,boolean)|",
+    "v1Body": [
+      "|java+method:///org/analogweb/scala/ScalaJacksonJsonValueResolver/objectMapper()|",
+      "|java+method:///org/analogweb/RequestContext/getRequestBody()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.io.InputStream,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/reflect/ManifestFactory$/classType(java.lang.Class)|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///org/json4s/ExtractableJsonAstNode/extract(org.json4s.Formats,scala.reflect.Manifest)|",
+      "|java+method:///org/analogweb/scala/ScalaJacksonJsonValueResolver/formats()|",
+      "|java+method:///org/analogweb/RequestContext/getRequestBody()|",
+      "|java+method:///org/json4s/jackson/JsonMethods$/parse(org.json4s.JsonInput,boolean)|",
+      "|java+method:///org/json4s/jackson/JsonMethods$/parse$default$2()|",
+      "|java+method:///scala/Predef$/Manifest()|",
+      "|java+method:///org/json4s/package$/jvalue2extractable(org.json4s.JsonAST$JValue)|",
+      "|java+method:///org/json4s/package$/stream2JsonInput(java.io.InputStream)|"
+    ],
+    "affectedLib": "org.json4s:json4s-jackson_2.11:3.2.11",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.analogweb:analogweb-scala_2.11:0.9.7",
+    "coordinatesV2": "org.analogweb:analogweb-scala_2.11:0.9.10",
+    "caller": "|java+constructor:///org/analogweb/scala/ScalaJsonFormatter/ScalaJsonFormatter()|",
+    "called": "|java+method:///org/json4s/jackson/Serialization$/formats(org.json4s.TypeHints)|",
+    "v1Body": [
+      "|java+method:///org/analogweb/scala/ScalaJsonFormatter/initObjectMapper()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/json4s/jackson/Serialization$/formats(org.json4s.TypeHints)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.json4s:json4s-jackson_2.11:3.2.11",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.analogweb:analogweb-scala_2.11:0.9.7",
+    "coordinatesV2": "org.analogweb:analogweb-scala_2.11:0.9.10",
+    "caller": "|java+method:///org/analogweb/scala/ScalaJsonFormatter$$anon$1/writeInto(java.io.OutputStream)|",
+    "called": "|java+method:///org/json4s/jackson/JsonMethods$/render$default$2(org.json4s.JsonAST$JValue)|",
+    "v1Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValue(java.io.OutputStream,java.lang.Object)|",
+      "|java+method:///org/analogweb/scala/ScalaJsonFormatter/objectMapper()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/json4s/jackson/JsonMethods$/render$default$2(org.json4s.JsonAST$JValue)|",
+      "|java+method:///scala/Tuple2/_1()|",
+      "|java+method:///java/io/OutputStream/flush()|",
+      "|java+method:///org/json4s/jackson/JsonMethods$/render(org.json4s.JsonAST$JValue,org.json4s.Formats)|",
+      "|java+method:///java/lang/String/getBytes(java.lang.String)|",
+      "|java+method:///java/io/OutputStream/write(byte%5B%5D)|",
+      "|java+method:///org/analogweb/scala/ScalaJsonFormatter/defaultFormats()|",
+      "|java+method:///scala/Tuple2/_2()|",
+      "|java+method:///org/json4s/jackson/Serialization$/write(java.lang.Object,org.json4s.Formats)|",
+      "|java+method:///org/json4s/jackson/JsonMethods$/compact(org.json4s.JsonAST$JValue)|"
+    ],
+    "affectedLib": "org.json4s:json4s-jackson_2.11:3.2.11",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.analogweb:analogweb-scala_2.11:0.9.7",
+    "coordinatesV2": "org.analogweb:analogweb-scala_2.11:0.9.10",
+    "caller": "|java+constructor:///org/analogweb/scala/ScalaInvocationMetadataFactory$$anonfun$1/ScalaInvocationMetadataFactory$$anonfun$1(org.analogweb.scala.ScalaInvocationMetadataFactory,java.lang.Class)|",
+    "called": "|java+constructor:///scala/runtime/AbstractPartialFunction/AbstractPartialFunction()|",
+    "v1Body": [
+      "|java+constructor:///scala/runtime/AbstractFunction1/AbstractFunction1()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///scala/runtime/AbstractPartialFunction/AbstractPartialFunction()|"
+    ],
+    "affectedLib": "org.scala-lang:scala-library:2.11.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.analogweb:analogweb-scala_2.11:0.9.7",
+    "coordinatesV2": "org.analogweb:analogweb-scala_2.11:0.9.10",
+    "caller": "|java+method:///org/analogweb/scala/ScalaJacksonJsonValueResolver/resolveValue(org.analogweb.RequestContext,org.analogweb.InvocationMetadata,java.lang.String,java.lang.Class,java.lang.annotation.Annotation%5B%5D)|",
+    "called": "|java+method:///scala/reflect/ManifestFactory$/classType(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/analogweb/scala/ScalaJacksonJsonValueResolver/objectMapper()|",
+      "|java+method:///org/analogweb/RequestContext/getRequestBody()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.io.InputStream,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/reflect/ManifestFactory$/classType(java.lang.Class)|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///org/json4s/ExtractableJsonAstNode/extract(org.json4s.Formats,scala.reflect.Manifest)|",
+      "|java+method:///org/analogweb/scala/ScalaJacksonJsonValueResolver/formats()|",
+      "|java+method:///org/analogweb/RequestContext/getRequestBody()|",
+      "|java+method:///org/json4s/jackson/JsonMethods$/parse(org.json4s.JsonInput,boolean)|",
+      "|java+method:///org/json4s/jackson/JsonMethods$/parse$default$2()|",
+      "|java+method:///scala/Predef$/Manifest()|",
+      "|java+method:///org/json4s/package$/jvalue2extractable(org.json4s.JsonAST$JValue)|",
+      "|java+method:///org/json4s/package$/stream2JsonInput(java.io.InputStream)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-library:2.11.6",
+    "change": "UPDATED"
+  }
+]

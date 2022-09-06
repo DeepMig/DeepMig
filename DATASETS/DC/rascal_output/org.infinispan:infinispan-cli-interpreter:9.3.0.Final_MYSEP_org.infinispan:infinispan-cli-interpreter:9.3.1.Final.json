@@ -1,0 +1,246 @@
+[
+  {
+    "coordinatesV1": "org.infinispan:infinispan-cli-interpreter:9.3.1.Final",
+    "coordinatesV2": "org.infinispan:infinispan-cli-interpreter:9.3.0.Final",
+    "caller": "|java+method:///org/infinispan/cli/interpreter/result/JsonResult/getResult()|",
+    "called": "|java+method:///org/codehaus/jackson/map/ObjectMapper/writeValueAsString(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/writeValueAsString(java.lang.Object)|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValueAsString(java.lang.Object)|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.13",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.infinispan:infinispan-cli-interpreter:9.3.1.Final",
+    "coordinatesV2": "org.infinispan:infinispan-cli-interpreter:9.3.0.Final",
+    "caller": "|java+method:///org/infinispan/cli/interpreter/IspnCliQLParser/literal()|",
+    "called": "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/infinispan/cli/interpreter/utils/ParserSupport/unquote(java.lang.String)|",
+      "|java+method:///org/antlr/runtime/TokenStream/toString(org.antlr.runtime.Token,org.antlr.runtime.Token)|",
+      "|java+method:///java/lang/Boolean/valueOf(java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///org/antlr/runtime/tree/TreeAdaptor/rulePostProcessing(java.lang.Object)|",
+      "|java+constructor:///org/infinispan/cli/interpreter/IspnCliQLParser$literal_return/IspnCliQLParser$literal_return()|",
+      "|java+method:///org/antlr/runtime/TokenStream/LT(int)|",
+      "|java+constructor:///org/antlr/runtime/NoViableAltException/NoViableAltException(java.lang.String,int,int,org.antlr.runtime.IntStream)|",
+      "|java+method:///org/antlr/runtime/tree/TreeAdaptor/create(org.antlr.runtime.Token)|",
+      "|java+method:///org/antlr/runtime/Token/getText()|",
+      "|java+method:///org/antlr/runtime/tree/TreeAdaptor/setTokenBoundaries(java.lang.Object,org.antlr.runtime.Token,org.antlr.runtime.Token)|",
+      "|java+method:///org/antlr/runtime/ParserRuleReturnScope/getTree()|",
+      "|java+method:///java/util/UUID/fromString(java.lang.String)|",
+      "|java+method:///org/infinispan/cli/interpreter/IspnCliQLParser/pushFollow(org.antlr.runtime.BitSet)|",
+      "|java+method:///org/infinispan/cli/interpreter/IspnCliQLParser/jsonLiteral()|",
+      "|java+method:///org/antlr/runtime/tree/TreeAdaptor/addChild(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/antlr/runtime/TokenStream/LA(int)|",
+      "|java+method:///java/lang/Double/valueOf(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+method:///org/infinispan/cli/interpreter/IspnCliQLParser/match(org.antlr.runtime.IntStream,int,org.antlr.runtime.BitSet)|",
+      "|java+constructor:///org/antlr/runtime/MismatchedSetException/MismatchedSetException(org.antlr.runtime.BitSet,org.antlr.runtime.IntStream)|",
+      "|java+constructor:///org/antlr/runtime/RecognitionException/RecognitionException(org.antlr.runtime.IntStream)|",
+      "|java+method:///java/lang/Float/valueOf(java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(java.lang.String)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///org/antlr/runtime/TokenStream/consume()|",
+      "|java+method:///java/lang/Long/valueOf(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/infinispan/cli/interpreter/utils/ParserSupport/unquote(java.lang.String)|",
+      "|java+method:///org/antlr/runtime/TokenStream/toString(org.antlr.runtime.Token,org.antlr.runtime.Token)|",
+      "|java+method:///java/lang/Boolean/valueOf(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///org/antlr/runtime/tree/TreeAdaptor/rulePostProcessing(java.lang.Object)|",
+      "|java+constructor:///org/infinispan/cli/interpreter/IspnCliQLParser$literal_return/IspnCliQLParser$literal_return()|",
+      "|java+method:///java/lang/Integer/valueOf(java.lang.String)|",
+      "|java+method:///org/antlr/runtime/TokenStream/LT(int)|",
+      "|java+constructor:///org/antlr/runtime/NoViableAltException/NoViableAltException(java.lang.String,int,int,org.antlr.runtime.IntStream)|",
+      "|java+method:///org/antlr/runtime/tree/TreeAdaptor/create(org.antlr.runtime.Token)|",
+      "|java+method:///org/antlr/runtime/Token/getText()|",
+      "|java+method:///org/antlr/runtime/tree/TreeAdaptor/setTokenBoundaries(java.lang.Object,org.antlr.runtime.Token,org.antlr.runtime.Token)|",
+      "|java+method:///org/antlr/runtime/ParserRuleReturnScope/getTree()|",
+      "|java+method:///java/util/UUID/fromString(java.lang.String)|",
+      "|java+method:///org/infinispan/cli/interpreter/IspnCliQLParser/pushFollow(org.antlr.runtime.BitSet)|",
+      "|java+method:///org/infinispan/cli/interpreter/IspnCliQLParser/jsonLiteral()|",
+      "|java+method:///org/antlr/runtime/tree/TreeAdaptor/addChild(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/antlr/runtime/TokenStream/LA(int)|",
+      "|java+method:///java/lang/Double/valueOf(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+method:///org/infinispan/cli/interpreter/IspnCliQLParser/match(org.antlr.runtime.IntStream,int,org.antlr.runtime.BitSet)|",
+      "|java+constructor:///org/antlr/runtime/MismatchedSetException/MismatchedSetException(org.antlr.runtime.BitSet,org.antlr.runtime.IntStream)|",
+      "|java+constructor:///org/antlr/runtime/RecognitionException/RecognitionException(org.antlr.runtime.IntStream)|",
+      "|java+method:///java/lang/Float/valueOf(java.lang.String)|",
+      "|java+method:///org/antlr/runtime/TokenStream/consume()|",
+      "|java+method:///java/lang/Long/valueOf(java.lang.String)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.13",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.infinispan:infinispan-cli-interpreter:9.3.1.Final",
+    "coordinatesV2": "org.infinispan:infinispan-cli-interpreter:9.3.0.Final",
+    "caller": "|java+constructor:///org/infinispan/cli/interpreter/IspnCliQLParser/IspnCliQLParser(org.antlr.runtime.TokenStream,org.antlr.runtime.RecognizerSharedState)|",
+    "called": "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///org/antlr/runtime/Parser/Parser(org.antlr.runtime.TokenStream,org.antlr.runtime.RecognizerSharedState)|",
+      "|java+constructor:///org/antlr/runtime/tree/CommonTreeAdaptor/CommonTreeAdaptor()|",
+      "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/enableDefaultTyping(org.codehaus.jackson.map.ObjectMapper$DefaultTyping,org.codehaus.jackson.annotate.JsonTypeInfo$As)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/enableDefaultTyping(com.fasterxml.jackson.databind.ObjectMapper$DefaultTyping,com.fasterxml.jackson.annotation.JsonTypeInfo$As)|",
+      "|java+constructor:///org/antlr/runtime/tree/CommonTreeAdaptor/CommonTreeAdaptor()|",
+      "|java+constructor:///org/antlr/runtime/Parser/Parser(org.antlr.runtime.TokenStream,org.antlr.runtime.RecognizerSharedState)|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.13",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.infinispan:infinispan-cli-interpreter:9.3.1.Final",
+    "coordinatesV2": "org.infinispan:infinispan-cli-interpreter:9.3.0.Final",
+    "caller": "|java+constructor:///org/infinispan/cli/interpreter/result/JsonResult/JsonResult(java.lang.Object)|",
+    "called": "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/enableDefaultTyping(org.codehaus.jackson.map.ObjectMapper$DefaultTyping,org.codehaus.jackson.annotate.JsonTypeInfo$As)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/enableDefaultTyping(com.fasterxml.jackson.databind.ObjectMapper$DefaultTyping,com.fasterxml.jackson.annotation.JsonTypeInfo$As)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.13",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.infinispan:infinispan-cli-interpreter:9.3.0.Final",
+    "coordinatesV2": "org.infinispan:infinispan-cli-interpreter:9.3.1.Final",
+    "caller": "|java+method:///org/infinispan/cli/interpreter/result/JsonResult/getResult()|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValueAsString(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/writeValueAsString(java.lang.Object)|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValueAsString(java.lang.Object)|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.9.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.infinispan:infinispan-cli-interpreter:9.3.0.Final",
+    "coordinatesV2": "org.infinispan:infinispan-cli-interpreter:9.3.1.Final",
+    "caller": "|java+method:///org/infinispan/cli/interpreter/IspnCliQLParser/literal()|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/infinispan/cli/interpreter/utils/ParserSupport/unquote(java.lang.String)|",
+      "|java+method:///org/antlr/runtime/TokenStream/toString(org.antlr.runtime.Token,org.antlr.runtime.Token)|",
+      "|java+method:///java/lang/Boolean/valueOf(java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///org/antlr/runtime/tree/TreeAdaptor/rulePostProcessing(java.lang.Object)|",
+      "|java+constructor:///org/infinispan/cli/interpreter/IspnCliQLParser$literal_return/IspnCliQLParser$literal_return()|",
+      "|java+method:///org/antlr/runtime/TokenStream/LT(int)|",
+      "|java+constructor:///org/antlr/runtime/NoViableAltException/NoViableAltException(java.lang.String,int,int,org.antlr.runtime.IntStream)|",
+      "|java+method:///org/antlr/runtime/tree/TreeAdaptor/create(org.antlr.runtime.Token)|",
+      "|java+method:///org/antlr/runtime/Token/getText()|",
+      "|java+method:///org/antlr/runtime/tree/TreeAdaptor/setTokenBoundaries(java.lang.Object,org.antlr.runtime.Token,org.antlr.runtime.Token)|",
+      "|java+method:///org/antlr/runtime/ParserRuleReturnScope/getTree()|",
+      "|java+method:///java/util/UUID/fromString(java.lang.String)|",
+      "|java+method:///org/infinispan/cli/interpreter/IspnCliQLParser/pushFollow(org.antlr.runtime.BitSet)|",
+      "|java+method:///org/infinispan/cli/interpreter/IspnCliQLParser/jsonLiteral()|",
+      "|java+method:///org/antlr/runtime/tree/TreeAdaptor/addChild(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/antlr/runtime/TokenStream/LA(int)|",
+      "|java+method:///java/lang/Double/valueOf(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+method:///org/infinispan/cli/interpreter/IspnCliQLParser/match(org.antlr.runtime.IntStream,int,org.antlr.runtime.BitSet)|",
+      "|java+constructor:///org/antlr/runtime/MismatchedSetException/MismatchedSetException(org.antlr.runtime.BitSet,org.antlr.runtime.IntStream)|",
+      "|java+constructor:///org/antlr/runtime/RecognitionException/RecognitionException(org.antlr.runtime.IntStream)|",
+      "|java+method:///java/lang/Float/valueOf(java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(java.lang.String)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///org/antlr/runtime/TokenStream/consume()|",
+      "|java+method:///java/lang/Long/valueOf(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/infinispan/cli/interpreter/utils/ParserSupport/unquote(java.lang.String)|",
+      "|java+method:///org/antlr/runtime/TokenStream/toString(org.antlr.runtime.Token,org.antlr.runtime.Token)|",
+      "|java+method:///java/lang/Boolean/valueOf(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///org/antlr/runtime/tree/TreeAdaptor/rulePostProcessing(java.lang.Object)|",
+      "|java+constructor:///org/infinispan/cli/interpreter/IspnCliQLParser$literal_return/IspnCliQLParser$literal_return()|",
+      "|java+method:///java/lang/Integer/valueOf(java.lang.String)|",
+      "|java+method:///org/antlr/runtime/TokenStream/LT(int)|",
+      "|java+constructor:///org/antlr/runtime/NoViableAltException/NoViableAltException(java.lang.String,int,int,org.antlr.runtime.IntStream)|",
+      "|java+method:///org/antlr/runtime/tree/TreeAdaptor/create(org.antlr.runtime.Token)|",
+      "|java+method:///org/antlr/runtime/Token/getText()|",
+      "|java+method:///org/antlr/runtime/tree/TreeAdaptor/setTokenBoundaries(java.lang.Object,org.antlr.runtime.Token,org.antlr.runtime.Token)|",
+      "|java+method:///org/antlr/runtime/ParserRuleReturnScope/getTree()|",
+      "|java+method:///java/util/UUID/fromString(java.lang.String)|",
+      "|java+method:///org/infinispan/cli/interpreter/IspnCliQLParser/pushFollow(org.antlr.runtime.BitSet)|",
+      "|java+method:///org/infinispan/cli/interpreter/IspnCliQLParser/jsonLiteral()|",
+      "|java+method:///org/antlr/runtime/tree/TreeAdaptor/addChild(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/antlr/runtime/TokenStream/LA(int)|",
+      "|java+method:///java/lang/Double/valueOf(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+method:///org/infinispan/cli/interpreter/IspnCliQLParser/match(org.antlr.runtime.IntStream,int,org.antlr.runtime.BitSet)|",
+      "|java+constructor:///org/antlr/runtime/MismatchedSetException/MismatchedSetException(org.antlr.runtime.BitSet,org.antlr.runtime.IntStream)|",
+      "|java+constructor:///org/antlr/runtime/RecognitionException/RecognitionException(org.antlr.runtime.IntStream)|",
+      "|java+method:///java/lang/Float/valueOf(java.lang.String)|",
+      "|java+method:///org/antlr/runtime/TokenStream/consume()|",
+      "|java+method:///java/lang/Long/valueOf(java.lang.String)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.9.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.infinispan:infinispan-cli-interpreter:9.3.0.Final",
+    "coordinatesV2": "org.infinispan:infinispan-cli-interpreter:9.3.1.Final",
+    "caller": "|java+constructor:///org/infinispan/cli/interpreter/IspnCliQLParser/IspnCliQLParser(org.antlr.runtime.TokenStream,org.antlr.runtime.RecognizerSharedState)|",
+    "called": "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///org/antlr/runtime/Parser/Parser(org.antlr.runtime.TokenStream,org.antlr.runtime.RecognizerSharedState)|",
+      "|java+constructor:///org/antlr/runtime/tree/CommonTreeAdaptor/CommonTreeAdaptor()|",
+      "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/enableDefaultTyping(org.codehaus.jackson.map.ObjectMapper$DefaultTyping,org.codehaus.jackson.annotate.JsonTypeInfo$As)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/enableDefaultTyping(com.fasterxml.jackson.databind.ObjectMapper$DefaultTyping,com.fasterxml.jackson.annotation.JsonTypeInfo$As)|",
+      "|java+constructor:///org/antlr/runtime/tree/CommonTreeAdaptor/CommonTreeAdaptor()|",
+      "|java+constructor:///org/antlr/runtime/Parser/Parser(org.antlr.runtime.TokenStream,org.antlr.runtime.RecognizerSharedState)|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.9.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.infinispan:infinispan-cli-interpreter:9.3.0.Final",
+    "coordinatesV2": "org.infinispan:infinispan-cli-interpreter:9.3.1.Final",
+    "caller": "|java+constructor:///org/infinispan/cli/interpreter/result/JsonResult/JsonResult(java.lang.Object)|",
+    "called": "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/enableDefaultTyping(org.codehaus.jackson.map.ObjectMapper$DefaultTyping,org.codehaus.jackson.annotate.JsonTypeInfo$As)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/enableDefaultTyping(com.fasterxml.jackson.databind.ObjectMapper$DefaultTyping,com.fasterxml.jackson.annotation.JsonTypeInfo$As)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.9.5",
+    "change": "ADDED"
+  }
+]

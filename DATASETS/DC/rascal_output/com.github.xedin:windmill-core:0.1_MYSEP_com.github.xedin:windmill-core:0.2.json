@@ -1,0 +1,33 @@
+[
+  {
+    "coordinatesV1": "com.github.xedin:windmill-core:0.2",
+    "coordinatesV2": "com.github.xedin:windmill-core:0.1",
+    "caller": "|java+method:///io/windmill/core/CPU/run()|",
+    "called": "|java+method:///com/lmax/disruptor/RingBuffer/newPoller(com.lmax.disruptor.Sequence%5B%5D)|",
+    "v1Body": [
+      "|java+method:///io/windmill/core/CPU/processTimers()|",
+      "|java+method:///io/windmill/net/Network/poll()|",
+      "|java+method:///io/windmill/core/CPU/setAffinity()|",
+      "|java+method:///io/windmill/utils/IOUtils/closeQuietly(java.lang.AutoCloseable)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/lmax/disruptor/EventPoller/poll(com.lmax.disruptor.EventPoller$Handler)|",
+      "|java+method:///com/lmax/disruptor/RingBuffer/newPoller(com.lmax.disruptor.Sequence%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/windmill/core/config/CPUConfig/supportsNetwork()|",
+      "|java+method:///uk/co/real_logic/agrona/concurrent/IdleStrategy/idle(int)|",
+      "|java+method:///java/lang/ThreadLocal/set(java.lang.Object)|",
+      "|java+method:///io/windmill/net/Network/poll()|",
+      "|java+method:///io/windmill/core/CPU/setAffinity()|",
+      "|java+method:///io/windmill/core/CPU/processQueue()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///io/windmill/core/CPU/getId()|",
+      "|java+constructor:///io/windmill/core/CPUIdleStrategy/CPUIdleStrategy(java.util.Set)|",
+      "|java+method:///io/windmill/utils/IOUtils/closeQuietly(java.lang.AutoCloseable)|",
+      "|java+method:///io/windmill/core/CPU/getFeatures()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "affectedLib": "com.lmax:disruptor:3.3.2",
+    "change": "REMOVED"
+  }
+]

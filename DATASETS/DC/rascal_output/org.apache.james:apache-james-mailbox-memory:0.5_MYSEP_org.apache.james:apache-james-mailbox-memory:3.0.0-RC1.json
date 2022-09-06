@@ -1,0 +1,149 @@
+[
+  {
+    "coordinatesV1": "org.apache.james:apache-james-mailbox-memory:0.5",
+    "coordinatesV2": "org.apache.james:apache-james-mailbox-memory:3.0.0-RC1",
+    "caller": "|java+method:///org/apache/james/mailbox/inmemory/mail/InMemoryMailboxMapper/save(org.apache.james.mailbox.store.mail.model.Mailbox)|",
+    "called": "|java+constructor:///org/apache/james/mailbox/exception/MailboxExistsException/MailboxExistsException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicLong/incrementAndGet()|",
+      "|java+method:///org/apache/james/mailbox/store/mail/model/impl/SimpleMailbox/setMailboxId(java.lang.Object)|",
+      "|java+method:///org/apache/james/mailbox/store/mail/model/Mailbox/getMailboxId()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/james/mailbox/store/mail/model/impl/SimpleMailbox/setMailboxId(org.apache.james.mailbox.model.MailboxId)|",
+      "|java+method:///org/apache/james/mailbox/inmemory/mail/InMemoryMailboxMapper/isPathAlreadyUsedByAnotherMailbox(org.apache.james.mailbox.store.mail.model.Mailbox)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicLong/incrementAndGet()|",
+      "|java+method:///org/apache/james/mailbox/store/mail/model/Mailbox/getName()|",
+      "|java+constructor:///org/apache/james/mailbox/exception/MailboxExistsException/MailboxExistsException(java.lang.String)|",
+      "|java+method:///org/apache/james/mailbox/inmemory/InMemoryId/of(long)|",
+      "|java+method:///org/apache/james/mailbox/store/mail/model/Mailbox/getMailboxId()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.james:apache-james-mailbox-api:3.0.0-RC1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.james:apache-james-mailbox-memory:0.5",
+    "coordinatesV2": "org.apache.james:apache-james-mailbox-memory:3.0.0-RC1",
+    "caller": "|java+method:///org/apache/james/mailbox/inmemory/mail/InMemoryUidProvider/lastUid(org.apache.james.mailbox.MailboxSession,org.apache.james.mailbox.store.mail.model.Mailbox)|",
+    "called": "|java+method:///org/apache/james/mailbox/MessageUid/of(long)|",
+    "v1Body": [
+      "|java+method:///org/apache/james/mailbox/store/mail/model/Mailbox/getMailboxId()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicLong/get()|",
+      "|java+method:///org/apache/james/mailbox/inmemory/mail/InMemoryUidProvider/getLast(java.lang.Long)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Optional/absent()|",
+      "|java+method:///org/apache/james/mailbox/store/mail/model/Mailbox/getMailboxId()|",
+      "|java+method:///com/google/common/base/Optional/of(java.lang.Object)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicLong/get()|",
+      "|java+method:///org/apache/james/mailbox/inmemory/mail/InMemoryUidProvider/getLast(org.apache.james.mailbox.inmemory.InMemoryId)|",
+      "|java+method:///org/apache/james/mailbox/MessageUid/of(long)|"
+    ],
+    "affectedLib": "org.apache.james:apache-james-mailbox-api:3.0.0-RC1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.james:apache-james-mailbox-memory:0.5",
+    "coordinatesV2": "org.apache.james:apache-james-mailbox-memory:3.0.0-RC1",
+    "caller": "|java+method:///org/apache/james/mailbox/inmemory/mail/InMemoryMessageMapper/findInMailbox(org.apache.james.mailbox.store.mail.model.Mailbox,org.apache.james.mailbox.model.MessageRange,org.apache.james.mailbox.store.mail.MessageMapper$FetchType,int)|",
+    "called": "|java+method:///org/apache/james/mailbox/model/MessageRange/includes(org.apache.james.mailbox.MessageUid)|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/remove()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(int)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(java.util.Collection)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/util/List/subList(int,int)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Map/values()|",
+      "|java+method:///java/util/Collections/sort(java.util.List)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/apache/james/mailbox/model/MessageRange$Type/ordinal()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/james/mailbox/model/MessageRange/getUidTo()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/james/mailbox/store/mail/model/Message/getUid()|",
+      "|java+method:///org/apache/james/mailbox/model/MessageRange/getUidFrom()|",
+      "|java+method:///org/apache/james/mailbox/model/MessageRange/getType()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/apache/james/mailbox/inmemory/mail/InMemoryMessageMapper/getMembershipByUidForMailbox(org.apache.james.mailbox.store.mail.model.Mailbox)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/remove()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(java.util.Collection)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/james/mailbox/model/MessageRange/includes(org.apache.james.mailbox.MessageUid)|",
+      "|java+method:///java/util/List/subList(int,int)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Map/values()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Collections/sort(java.util.List)|",
+      "|java+method:///org/apache/james/mailbox/store/mail/model/MailboxMessage/getUid()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/apache/james/mailbox/inmemory/mail/InMemoryMessageMapper/getMembershipByUidForMailbox(org.apache.james.mailbox.store.mail.model.Mailbox)|"
+    ],
+    "affectedLib": "org.apache.james:apache-james-mailbox-api:3.0.0-RC1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.james:apache-james-mailbox-memory:0.5",
+    "coordinatesV2": "org.apache.james:apache-james-mailbox-memory:3.0.0-RC1",
+    "caller": "|java+method:///org/apache/james/mailbox/inmemory/mail/InMemoryMessageMapper/expungeMarkedForDeletionInMailbox(org.apache.james.mailbox.store.mail.model.Mailbox,org.apache.james.mailbox.model.MessageRange)|",
+    "called": "|java+constructor:///org/apache/james/mailbox/store/SimpleMessageMetaData/SimpleMessageMetaData(org.apache.james.mailbox.store.mail.model.MailboxMessage)|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/james/mailbox/store/mail/model/Message/isDeleted()|",
+      "|java+constructor:///org/apache/james/mailbox/store/SimpleMessageMetaData/SimpleMessageMetaData(org.apache.james.mailbox.store.mail.model.Message)|",
+      "|java+method:///org/apache/james/mailbox/inmemory/mail/InMemoryMessageMapper/delete(org.apache.james.mailbox.store.mail.model.Mailbox,org.apache.james.mailbox.store.mail.model.Message)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/apache/james/mailbox/inmemory/mail/InMemoryMessageMapper/findInMailbox(org.apache.james.mailbox.store.mail.model.Mailbox,org.apache.james.mailbox.model.MessageRange,org.apache.james.mailbox.store.mail.MessageMapper$FetchType,int)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/james/mailbox/store/mail/model/Message/getUid()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/james/mailbox/store/mail/model/MailboxMessage/isDeleted()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/james/mailbox/inmemory/mail/InMemoryMessageMapper/findInMailbox(org.apache.james.mailbox.store.mail.model.Mailbox,org.apache.james.mailbox.model.MessageRange,org.apache.james.mailbox.store.mail.MessageMapper$FetchType,int)|",
+      "|java+constructor:///org/apache/james/mailbox/store/SimpleMessageMetaData/SimpleMessageMetaData(org.apache.james.mailbox.store.mail.model.MailboxMessage)|",
+      "|java+method:///org/apache/james/mailbox/inmemory/mail/InMemoryMessageMapper/delete(org.apache.james.mailbox.store.mail.model.Mailbox,org.apache.james.mailbox.store.mail.model.MailboxMessage)|",
+      "|java+method:///org/apache/james/mailbox/store/mail/model/MailboxMessage/getUid()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|"
+    ],
+    "affectedLib": "org.apache.james:apache-james-mailbox-store:3.0.0-RC1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.james:apache-james-mailbox-memory:0.5",
+    "coordinatesV2": "org.apache.james:apache-james-mailbox-memory:3.0.0-RC1",
+    "caller": "|java+constructor:///org/apache/james/mailbox/inmemory/InMemoryMailboxSessionMapperFactory/InMemoryMailboxSessionMapperFactory()|",
+    "called": "|java+constructor:///org/apache/james/mailbox/store/MailboxSessionMapperFactory/MailboxSessionMapperFactory()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/james/mailbox/inmemory/mail/InMemoryMessageMapper/InMemoryMessageMapper(org.apache.james.mailbox.MailboxSession,org.apache.james.mailbox.store.mail.UidProvider,org.apache.james.mailbox.store.mail.ModSeqProvider)|",
+      "|java+constructor:///org/apache/james/mailbox/store/MailboxSessionMapperFactory/MailboxSessionMapperFactory()|",
+      "|java+constructor:///org/apache/james/mailbox/inmemory/user/InMemorySubscriptionMapper/InMemorySubscriptionMapper()|",
+      "|java+constructor:///org/apache/james/mailbox/inmemory/mail/InMemoryUidProvider/InMemoryUidProvider()|",
+      "|java+constructor:///org/apache/james/mailbox/inmemory/mail/InMemoryMailboxMapper/InMemoryMailboxMapper()|",
+      "|java+constructor:///org/apache/james/mailbox/inmemory/mail/InMemoryModSeqProvider/InMemoryModSeqProvider()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/james/mailbox/inmemory/mail/InMemoryMessageMapper/InMemoryMessageMapper(org.apache.james.mailbox.MailboxSession,org.apache.james.mailbox.store.mail.UidProvider,org.apache.james.mailbox.store.mail.ModSeqProvider)|",
+      "|java+constructor:///org/apache/james/mailbox/store/MailboxSessionMapperFactory/MailboxSessionMapperFactory()|",
+      "|java+constructor:///org/apache/james/mailbox/inmemory/user/InMemorySubscriptionMapper/InMemorySubscriptionMapper()|",
+      "|java+constructor:///org/apache/james/mailbox/inmemory/mail/InMemoryUidProvider/InMemoryUidProvider()|",
+      "|java+constructor:///org/apache/james/mailbox/inmemory/mail/InMemoryMailboxMapper/InMemoryMailboxMapper()|",
+      "|java+constructor:///org/apache/james/mailbox/inmemory/mail/InMemoryAnnotationMapper/InMemoryAnnotationMapper()|",
+      "|java+constructor:///org/apache/james/mailbox/inmemory/mail/InMemoryModSeqProvider/InMemoryModSeqProvider()|",
+      "|java+constructor:///org/apache/james/mailbox/inmemory/mail/InMemoryAttachmentMapper/InMemoryAttachmentMapper()|"
+    ],
+    "affectedLib": "org.apache.james:apache-james-mailbox-store:3.0.0-RC1",
+    "change": "UPDATED"
+  }
+]

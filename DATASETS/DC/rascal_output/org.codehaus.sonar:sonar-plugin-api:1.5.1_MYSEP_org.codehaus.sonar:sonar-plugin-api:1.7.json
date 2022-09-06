@@ -1,0 +1,134 @@
+[
+  {
+    "coordinatesV1": "org.codehaus.sonar:sonar-plugin-api:1.5.1",
+    "coordinatesV2": "org.codehaus.sonar:sonar-plugin-api:1.7",
+    "caller": "|java+initializer:///org/sonar/plugins/api/metrics/CoreMetrics/CoreMetrics$initializer|",
+    "called": "|java+constructor:///org/sonar/commons/Metric/Metric(java.lang.String,java.lang.String,java.lang.String,org.sonar.commons.Metric$ValueType,java.lang.Integer,java.lang.Boolean,java.lang.String,boolean)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///ch/hortis/sonar/model/Metric/Metric(java.lang.String,java.lang.String,java.lang.String,ch.hortis.sonar.model.Metric$ValueType,java.lang.Integer,java.lang.Boolean,java.lang.Boolean,java.lang.String,boolean)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+constructor:///java/util/HashSet/HashSet()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///org/sonar/commons/Metric/Metric(java.lang.String,java.lang.String,java.lang.String,org.sonar.commons.Metric$ValueType,java.lang.Integer,java.lang.Boolean,java.lang.String,boolean)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+constructor:///java/util/HashSet/HashSet()|"
+    ],
+    "affectedLib": "org.codehaus.sonar:sonar-commons:1.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.codehaus.sonar:sonar-plugin-api:1.5.1",
+    "coordinatesV2": "org.codehaus.sonar:sonar-plugin-api:1.7",
+    "caller": "|java+method:///org/sonar/plugins/api/rules/StandardProfileXmlParser/importConfiguration(java.lang.String)|",
+    "called": "|java+constructor:///org/sonar/commons/rules/RulesProfile/RulesProfile()|",
+    "v1Body": [
+      "|java+method:///org/sonar/plugins/api/maven/xml/Profile/getName()|",
+      "|java+method:///ch/hortis/sonar/model/RulesProfile/setActiveRules(java.util.List)|",
+      "|java+method:///ch/hortis/sonar/model/RulesProfile/setName(java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///org/sonar/plugins/api/maven/xml/Profile/getLanguage()|",
+      "|java+constructor:///ch/hortis/sonar/model/RulesProfile/RulesProfile()|",
+      "|java+method:///org/sonar/plugins/api/rules/StandardProfileXmlParser/buildActiveRulesFromProfile(org.sonar.plugins.api.maven.xml.Profile,java.util.List)|",
+      "|java+method:///org/sonar/plugins/api/rules/StandardProfileXmlParser/buildProfileFromXml(java.lang.String)|",
+      "|java+method:///ch/hortis/sonar/model/RulesProfile/setLanguage(java.lang.String)|",
+      "|java+constructor:///org/sonar/plugins/api/rules/ProfileNameNullException/ProfileNameNullException(java.lang.String)|",
+      "|java+method:///ch/hortis/sonar/model/RulesProfile/getName()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonar/plugins/api/maven/xml/Profile/getName()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/sonar/commons/rules/RulesProfile/setLanguage(java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///org/sonar/plugins/api/maven/xml/Profile/getLanguage()|",
+      "|java+method:///org/sonar/plugins/api/rules/StandardProfileXmlParser/buildActiveRulesFromProfile(org.sonar.plugins.api.maven.xml.Profile,java.util.List)|",
+      "|java+method:///org/sonar/plugins/api/rules/StandardProfileXmlParser/buildProfileFromXml(java.lang.String)|",
+      "|java+constructor:///org/sonar/plugins/api/rules/ProfileNameNullException/ProfileNameNullException(java.lang.String)|",
+      "|java+method:///org/sonar/commons/rules/RulesProfile/setName(java.lang.String)|",
+      "|java+constructor:///org/sonar/commons/rules/RulesProfile/RulesProfile()|",
+      "|java+method:///org/sonar/commons/rules/RulesProfile/setActiveRules(java.util.List)|",
+      "|java+method:///org/sonar/commons/rules/RulesProfile/getName()|"
+    ],
+    "affectedLib": "org.codehaus.sonar:sonar-commons:1.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.codehaus.sonar:sonar-plugin-api:1.5.1",
+    "coordinatesV2": "org.codehaus.sonar:sonar-plugin-api:1.7",
+    "caller": "|java+method:///org/sonar/plugins/api/maven/AbstractViolationsXmlParser/createRuleFailureParam(java.lang.String)|",
+    "called": "|java+constructor:///org/sonar/commons/rules/RuleFailureParam/RuleFailureParam(java.lang.String,java.lang.Double,java.lang.Double)|",
+    "v1Body": [
+      "|java+method:///java/lang/Double/valueOf(double)|",
+      "|java+constructor:///ch/hortis/sonar/model/RuleFailureParam/RuleFailureParam(java.lang.String,java.lang.Double,java.lang.Double)|",
+      "|java+method:///org/sonar/plugins/api/maven/MavenCollectorUtils/parseNumber(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Double/valueOf(double)|",
+      "|java+method:///org/sonar/plugins/api/maven/MavenCollectorUtils/parseNumber(java.lang.String)|",
+      "|java+constructor:///org/sonar/commons/rules/RuleFailureParam/RuleFailureParam(java.lang.String,java.lang.Double,java.lang.Double)|"
+    ],
+    "affectedLib": "org.codehaus.sonar:sonar-commons:1.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.codehaus.sonar:sonar-plugin-api:1.5.1",
+    "coordinatesV2": "org.codehaus.sonar:sonar-plugin-api:1.7",
+    "caller": "|java+method:///org/sonar/plugins/api/rules/StandardProfileXmlParser/buildActiveRulesFromProfile(org.sonar.plugins.api.maven.xml.Profile,java.util.List)|",
+    "called": "|java+constructor:///org/sonar/commons/rules/ActiveRule/ActiveRule(org.sonar.commons.rules.RulesProfile,org.sonar.commons.rules.Rule,org.sonar.commons.rules.RuleFailureLevel)|",
+    "v1Body": [
+      "|java+constructor:///ch/hortis/sonar/model/ActiveRule/ActiveRule(ch.hortis.sonar.model.RulesProfile,ch.hortis.sonar.model.Rule,ch.hortis.sonar.model.RuleFailureLevel)|",
+      "|java+method:///org/sonar/plugins/api/maven/xml/Rule/getKey()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/sonar/plugins/api/rules/StandardProfileXmlParser/getRuleFailureLevel(org.sonar.plugins.api.maven.xml.Rule)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/sonar/plugins/api/rules/StandardProfileXmlParser/getActiveRuleParams(org.sonar.plugins.api.maven.xml.Rule,ch.hortis.sonar.model.Rule,ch.hortis.sonar.model.ActiveRule)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/sonar/plugins/api/maven/xml/Profile/getRules()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///ch/hortis/sonar/model/ActiveRule/setActiveRuleParams(java.util.List)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///ch/hortis/sonar/model/Rule/getConfigKey()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonar/commons/rules/Rule/getConfigKey()|",
+      "|java+method:///org/sonar/plugins/api/maven/xml/Rule/getKey()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/sonar/plugins/api/rules/StandardProfileXmlParser/getRuleFailureLevel(org.sonar.plugins.api.maven.xml.Rule)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///org/sonar/commons/rules/ActiveRule/setActiveRuleParams(java.util.List)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/sonar/plugins/api/rules/StandardProfileXmlParser/getActiveRuleParams(org.sonar.plugins.api.maven.xml.Rule,org.sonar.commons.rules.Rule,org.sonar.commons.rules.ActiveRule)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/sonar/plugins/api/maven/xml/Profile/getRules()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///org/sonar/commons/rules/ActiveRule/ActiveRule(org.sonar.commons.rules.RulesProfile,org.sonar.commons.rules.Rule,org.sonar.commons.rules.RuleFailureLevel)|"
+    ],
+    "affectedLib": "org.codehaus.sonar:sonar-commons:1.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.codehaus.sonar:sonar-plugin-api:1.5.1",
+    "coordinatesV2": "org.codehaus.sonar:sonar-plugin-api:1.7",
+    "caller": "|java+initializer:///org/sonar/plugins/api/rules/Iso9126RulesCategories/Iso9126RulesCategories$initializer|",
+    "called": "|java+constructor:///org/sonar/commons/rules/RulesCategory/RulesCategory(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+constructor:///ch/hortis/sonar/model/RulesCategory/RulesCategory(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Collections/unmodifiableList(java.util.List)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/sonar/commons/rules/RulesCategory/RulesCategory(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Collections/unmodifiableList(java.util.List)|"
+    ],
+    "affectedLib": "org.codehaus.sonar:sonar-commons:1.7",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "coordinatesV1": "org.rapidoid:rapidoid-commons:0.9.0",
+    "coordinatesV2": "org.rapidoid:rapidoid-commons:5.0.0",
+    "caller": "|java+method:///org/rapidoid/pool/ArrayPool/release(java.lang.Object)|",
+    "called": "|java+method:///org/rapidoid/log/Log/info(java.lang.String,java.lang.String,java.lang.Object,java.lang.String,java.lang.Object,java.lang.String,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/rapidoid/util/U/expand(java.lang.Object%5B%5D,int)|",
+      "|java+method:///org/rapidoid/util/U/warn(java.lang.String,java.lang.String,java.lang.Object,java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/rapidoid/pool/ArrayPool/getName()|",
+      "|java+method:///org/rapidoid/log/Log/info(java.lang.String,java.lang.String,java.lang.Object,java.lang.String,java.lang.Object,java.lang.String,java.lang.Object)|",
+      "|java+method:///org/rapidoid/arr/Arr/expand(java.lang.Object%5B%5D,int)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|"
+    ],
+    "affectedLib": "org.rapidoid:rapidoid-log:5.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.rapidoid:rapidoid-commons:0.9.0",
+    "coordinatesV2": "org.rapidoid:rapidoid-commons:5.0.0",
+    "caller": "|java+method:///org/rapidoid/pool/ArrayPool/get()|",
+    "called": "|java+method:///org/rapidoid/u/U/rte(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/rapidoid/util/U/rte(java.lang.Throwable)|",
+      "|java+method:///java/util/concurrent/Callable/call()|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/rapidoid/u/U/rte(java.lang.Throwable)|",
+      "|java+method:///java/util/concurrent/Callable/call()|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|"
+    ],
+    "affectedLib": "org.rapidoid:rapidoid-u:5.0.0",
+    "change": "UPDATED"
+  }
+]

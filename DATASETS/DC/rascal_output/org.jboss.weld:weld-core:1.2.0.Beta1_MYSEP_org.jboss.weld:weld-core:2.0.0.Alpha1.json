@@ -1,0 +1,816 @@
+[
+  {
+    "coordinatesV1": "org.jboss.weld:weld-core:1.2.0.Beta1",
+    "coordinatesV2": "org.jboss.weld:weld-core:2.0.0.Alpha1",
+    "caller": "|java+method:///org/jboss/weld/bean/ManagedBean/applyInterceptors(java.lang.Object,javax.enterprise.context.spi.CreationalContext)|",
+    "called": "|java+constructor:///org/jboss/interceptor/proxy/DefaultInvocationContextFactory/DefaultInvocationContextFactory()|",
+    "v1Body": [
+      "|java+constructor:///org/jboss/weld/bean/interceptor/WeldInterceptorInstantiator/WeldInterceptorInstantiator(org.jboss.weld.manager.BeanManagerImpl,javax.enterprise.context.spi.CreationalContext)|",
+      "|java+constructor:///org/jboss/weld/exceptions/DeploymentException/DeploymentException(java.lang.Throwable)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/jboss/weld/bean/ManagedBean/getWeldAnnotated()|",
+      "|java+method:///org/jboss/weld/bean/interceptor/WeldInterceptorClassMetadata/of(org.jboss.weld.introspector.WeldClass)|",
+      "|java+method:///org/jboss/weld/manager/BeanManagerImpl/getInterceptorModelRegistry()|",
+      "|java+method:///org/jboss/weld/interceptor/proxy/InterceptorProxyCreatorImpl/createSubclassingMethodHandler(java.lang.Object,org.jboss.weld.interceptor.spi.metadata.ClassMetadata)|",
+      "|java+method:///org/jboss/weld/bean/ManagedBean/getType()|",
+      "|java+constructor:///org/jboss/weld/interceptor/proxy/DefaultInvocationContextFactory/DefaultInvocationContextFactory()|",
+      "|java+method:///javassist/util/proxy/ProxyObject/getHandler()|",
+      "|java+method:///org/jboss/weld/bean/proxy/CombinedInterceptorAndDecoratorStackMethodHandler/setInterceptorMethodHandler(javassist.util.proxy.MethodHandler)|",
+      "|java+constructor:///org/jboss/weld/interceptor/proxy/InterceptorProxyCreatorImpl/InterceptorProxyCreatorImpl(org.jboss.weld.interceptor.spi.instance.InterceptorInstantiator,org.jboss.weld.interceptor.spi.context.InvocationContextFactory,org.jboss.weld.interceptor.spi.model.InterceptionModel)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/jboss/weld/bean/interceptor/WeldInterceptorInstantiator/WeldInterceptorInstantiator(org.jboss.weld.manager.BeanManagerImpl,javax.enterprise.context.spi.CreationalContext)|",
+      "|java+constructor:///org/jboss/weld/exceptions/DeploymentException/DeploymentException(java.lang.Throwable)|",
+      "|java+method:///org/jboss/interceptor/proxy/InterceptorProxyCreatorImpl/createSubclassingMethodHandler(java.lang.Object,org.jboss.interceptor.spi.metadata.ClassMetadata)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/jboss/weld/bean/ManagedBean/getWeldAnnotated()|",
+      "|java+method:///org/jboss/weld/bean/ManagedBean/getType()|",
+      "|java+method:///org/jboss/weld/bean/interceptor/WeldInterceptorClassMetadata/of(org.jboss.weld.introspector.WeldClass)|",
+      "|java+constructor:///org/jboss/interceptor/proxy/InterceptorProxyCreatorImpl/InterceptorProxyCreatorImpl(org.jboss.interceptor.spi.instance.InterceptorInstantiator,org.jboss.interceptor.spi.context.InvocationContextFactory,org.jboss.interceptor.spi.model.InterceptionModel)|",
+      "|java+method:///org/jboss/weld/manager/BeanManagerImpl/getInterceptorModelRegistry()|",
+      "|java+method:///javassist/util/proxy/ProxyObject/getHandler()|",
+      "|java+method:///org/jboss/weld/bean/proxy/CombinedInterceptorAndDecoratorStackMethodHandler/setInterceptorMethodHandler(javassist.util.proxy.MethodHandler)|",
+      "|java+constructor:///org/jboss/interceptor/proxy/DefaultInvocationContextFactory/DefaultInvocationContextFactory()|"
+    ],
+    "affectedLib": "org.jboss.interceptor:jboss-interceptor-core:2.0.0.CR1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jboss.weld:weld-core:1.2.0.Beta1",
+    "coordinatesV2": "org.jboss.weld:weld-core:2.0.0.Alpha1",
+    "caller": "|java+method:///org/jboss/weld/bean/InterceptorImpl/intercept(javax.enterprise.inject.spi.InterceptionType,java.lang.Object,javax.interceptor.InvocationContext)|",
+    "called": "|java+constructor:///org/jboss/interceptor/proxy/InterceptorInvocation/InterceptorInvocation(java.lang.Object,org.jboss.interceptor.spi.metadata.InterceptorMetadata,org.jboss.interceptor.spi.model.InterceptionType)|",
+    "v1Body": [
+      "|java+method:///javax/interceptor/InvocationContext/getMethod()|",
+      "|java+constructor:///org/jboss/weld/exceptions/WeldException/WeldException(java.lang.Throwable)|",
+      "|java+method:///org/jboss/weld/interceptor/spi/metadata/InterceptorMetadata/getInterceptorInvocation(java.lang.Object,org.jboss.weld.interceptor.spi.metadata.InterceptorMetadata,org.jboss.weld.interceptor.spi.model.InterceptionType)|",
+      "|java+method:///org/jboss/weld/interceptor/spi/model/InterceptionType/valueOf(java.lang.String)|",
+      "|java+method:///javax/enterprise/inject/spi/InterceptionType/name()|",
+      "|java+method:///org/jboss/weld/interceptor/proxy/SimpleInterceptionChain/invokeNextInterceptor(javax.interceptor.InvocationContext)|",
+      "|java+method:///java/util/Collection/add(java.lang.Object)|",
+      "|java+constructor:///org/jboss/weld/interceptor/proxy/SimpleInterceptionChain/SimpleInterceptionChain(java.util.Collection,java.lang.Object,java.lang.reflect.Method)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/interceptor/InvocationContext/getMethod()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/jboss/interceptor/spi/model/InterceptionType/valueOf(java.lang.String)|",
+      "|java+method:///org/jboss/interceptor/proxy/SimpleInterceptionChain/invokeNextInterceptor(javax.interceptor.InvocationContext)|",
+      "|java+constructor:///org/jboss/weld/exceptions/WeldException/WeldException(java.lang.Throwable)|",
+      "|java+constructor:///org/jboss/interceptor/proxy/InterceptorInvocation/InterceptorInvocation(java.lang.Object,org.jboss.interceptor.spi.metadata.InterceptorMetadata,org.jboss.interceptor.spi.model.InterceptionType)|",
+      "|java+method:///java/util/Collection/add(java.lang.Object)|",
+      "|java+constructor:///org/jboss/interceptor/proxy/SimpleInterceptionChain/SimpleInterceptionChain(java.util.Collection,org.jboss.interceptor.spi.model.InterceptionType,java.lang.Object,java.lang.reflect.Method)|",
+      "|java+method:///javax/enterprise/inject/spi/InterceptionType/name()|"
+    ],
+    "affectedLib": "org.jboss.interceptor:jboss-interceptor-core:2.0.0.CR1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jboss.weld:weld-core:1.2.0.Beta1",
+    "coordinatesV2": "org.jboss.weld:weld-core:2.0.0.Alpha1",
+    "caller": "|java+method:///org/jboss/weld/util/Beans/getInterceptableMethods(org.jboss.weld.introspector.WeldClass)|",
+    "called": "|java+method:///org/jboss/interceptor/util/InterceptionTypeRegistry/getAnnotationClass(org.jboss.interceptor.spi.model.InterceptionType)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/jboss/weld/introspector/WeldMethod/isStatic()|",
+      "|java+method:///org/jboss/weld/util/Beans/isInterceptorMethod(org.jboss.weld.introspector.WeldMethod)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/jboss/weld/introspector/WeldMethod/isAnnotationPresent(java.lang.Class)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///org/jboss/weld/introspector/WeldMethod/getJavaMember()|",
+      "|java+method:///org/jboss/weld/introspector/WeldClass/getWeldMethods()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/lang/reflect/Method/isBridge()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/jboss/weld/introspector/WeldMethod/isStatic()|",
+      "|java+method:///org/jboss/interceptor/util/InterceptionTypeRegistry/getSupportedInterceptionTypes()|",
+      "|java+method:///org/jboss/interceptor/util/InterceptionTypeRegistry/getAnnotationClass(org.jboss.interceptor.spi.model.InterceptionType)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/jboss/weld/introspector/WeldMethod/isAnnotationPresent(java.lang.Class)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///org/jboss/weld/introspector/WeldMethod/getJavaMember()|",
+      "|java+method:///org/jboss/weld/introspector/WeldClass/getWeldMethods()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/lang/reflect/Method/isBridge()|"
+    ],
+    "affectedLib": "org.jboss.interceptor:jboss-interceptor-core:2.0.0.CR1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jboss.weld:weld-core:1.2.0.Beta1",
+    "coordinatesV2": "org.jboss.weld:weld-core:2.0.0.Alpha1",
+    "caller": "|java+constructor:///org/jboss/weld/bean/interceptor/WeldInterceptorClassMetadata/WeldInterceptorClassMetadata(org.jboss.weld.introspector.WeldClass)|",
+    "called": "|java+method:///org/jboss/interceptor/reader/DefaultMethodMetadata/of(java.lang.Object,org.jboss.interceptor.reader.AnnotatedMethodReader)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Set/size()|",
+      "|java+method:///org/jboss/weld/bean/interceptor/WeldAnnotatedMethodReader/getInstance()|",
+      "|java+method:///org/jboss/weld/introspector/WeldClass/getDeclaredWeldMethods()|",
+      "|java+method:///org/jboss/weld/bean/interceptor/WeldInterceptorClassMetadata/of(org.jboss.weld.introspector.WeldClass)|",
+      "|java+method:///java/util/Collection/add(java.lang.Object)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/jboss/weld/introspector/WeldClass/getWeldSuperclass()|",
+      "|java+method:///org/jboss/weld/interceptor/reader/DefaultMethodMetadata/of(java.lang.Object,org.jboss.weld.interceptor.reader.AnnotatedMethodReader)|",
+      "|java+method:///org/jboss/weld/interceptor/spi/metadata/MethodMetadata/getSupportedInterceptionTypes()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/jboss/weld/introspector/WeldClass/getJavaClass()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/jboss/weld/bean/interceptor/WeldAnnotatedMethodReader/getInstance()|",
+      "|java+method:///org/jboss/weld/introspector/WeldClass/getDeclaredWeldMethods()|",
+      "|java+method:///org/jboss/weld/bean/interceptor/WeldInterceptorClassMetadata/of(org.jboss.weld.introspector.WeldClass)|",
+      "|java+method:///java/util/Collection/add(java.lang.Object)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/jboss/weld/introspector/WeldClass/getWeldSuperclass()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/jboss/interceptor/reader/DefaultMethodMetadata/of(java.lang.Object,org.jboss.interceptor.reader.AnnotatedMethodReader)|",
+      "|java+method:///org/jboss/interceptor/spi/metadata/MethodMetadata/getSupportedInterceptionTypes()|",
+      "|java+method:///java/util/Set/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/jboss/weld/introspector/WeldClass/getJavaClass()|"
+    ],
+    "affectedLib": "org.jboss.interceptor:jboss-interceptor-core:2.0.0.CR1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jboss.weld:weld-core:1.2.0.Beta1",
+    "coordinatesV2": "org.jboss.weld:weld-core:2.0.0.Alpha1",
+    "caller": "|java+constructor:///org/jboss/weld/bean/proxy/DecoratorProxyMethodHandler/DecoratorProxyMethodHandler(org.jboss.weld.serialization.spi.helpers.SerializableContextualInstance,java.lang.Object)|",
+    "called": "|java+constructor:///org/jboss/interceptor/util/proxy/TargetInstanceProxyMethodHandler/TargetInstanceProxyMethodHandler(java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///org/jboss/weld/interceptor/util/proxy/TargetInstanceProxyMethodHandler/TargetInstanceProxyMethodHandler(java.lang.Object,java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/jboss/interceptor/util/proxy/TargetInstanceProxyMethodHandler/TargetInstanceProxyMethodHandler(java.lang.Object,java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "org.jboss.interceptor:jboss-interceptor-core:2.0.0.CR1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jboss.weld:weld-core:1.2.0.Beta1",
+    "coordinatesV2": "org.jboss.weld:weld-core:2.0.0.Alpha1",
+    "caller": "|java+method:///org/jboss/weld/bean/ManagedBean$ManagedBeanInjectionTarget/postConstruct(java.lang.Object)|",
+    "called": "|java+method:///org/jboss/interceptor/util/InterceptionUtils/executePostConstruct(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/jboss/weld/interceptor/util/InterceptionUtils/executePostConstruct(java.lang.Object)|",
+      "|java+method:///org/jboss/weld/bean/ManagedBean/hasInterceptors()|",
+      "|java+method:///org/jboss/weld/bean/ManagedBean/defaultPostConstruct(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jboss/weld/bean/ManagedBean/hasInterceptors()|",
+      "|java+method:///org/jboss/interceptor/util/InterceptionUtils/executePostConstruct(java.lang.Object)|",
+      "|java+method:///org/jboss/weld/bean/ManagedBean/defaultPostConstruct(java.lang.Object)|"
+    ],
+    "affectedLib": "org.jboss.interceptor:jboss-interceptor-core:2.0.0.CR1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jboss.weld:weld-core:1.2.0.Beta1",
+    "coordinatesV2": "org.jboss.weld:weld-core:2.0.0.Alpha1",
+    "caller": "|java+method:///org/jboss/weld/bean/ManagedBean$ManagedBeanInjectionTarget/preDestroy(java.lang.Object)|",
+    "called": "|java+method:///org/jboss/interceptor/util/InterceptionUtils/executePredestroy(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/jboss/weld/bean/ManagedBean/defaultPreDestroy(java.lang.Object)|",
+      "|java+method:///org/jboss/weld/bean/ManagedBean/hasInterceptors()|",
+      "|java+method:///org/jboss/weld/interceptor/util/InterceptionUtils/executePredestroy(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jboss/weld/bean/ManagedBean/defaultPreDestroy(java.lang.Object)|",
+      "|java+method:///org/jboss/weld/bean/ManagedBean/hasInterceptors()|",
+      "|java+method:///org/jboss/interceptor/util/InterceptionUtils/executePredestroy(java.lang.Object)|"
+    ],
+    "affectedLib": "org.jboss.interceptor:jboss-interceptor-core:2.0.0.CR1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jboss.weld:weld-core:1.2.0.Beta1",
+    "coordinatesV2": "org.jboss.weld:weld-core:2.0.0.Alpha1",
+    "caller": "|java+constructor:///org/jboss/weld/resources/SharedObjectCache/SharedObjectCache()|",
+    "called": "|java+constructor:///com/google/common/collect/MapMaker/MapMaker()|",
+    "v1Body": [
+      "|java+constructor:///org/jboss/weld/resources/SharedObjectCache$1/SharedObjectCache$1(org.jboss.weld.resources.SharedObjectCache)|",
+      "|java+constructor:///org/jboss/weld/resources/SharedObjectCache$2/SharedObjectCache$2(org.jboss.weld.resources.SharedObjectCache)|",
+      "|java+constructor:///org/jboss/weld/resources/SharedObjectCache$3/SharedObjectCache$3(org.jboss.weld.resources.SharedObjectCache)|",
+      "|java+constructor:///org/jboss/weld/resources/SharedObjectCache$4/SharedObjectCache$4(org.jboss.weld.resources.SharedObjectCache)|",
+      "|java+constructor:///com/google/common/collect/MapMaker/MapMaker()|",
+      "|java+constructor:///org/jboss/weld/resources/SharedObjectCache$5/SharedObjectCache$5(org.jboss.weld.resources.SharedObjectCache)|",
+      "|java+method:///com/google/common/collect/MapMaker/makeComputingMap(com.google.common.base.Function)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/jboss/weld/resources/SharedObjectCache$1/SharedObjectCache$1(org.jboss.weld.resources.SharedObjectCache)|",
+      "|java+constructor:///org/jboss/weld/resources/SharedObjectCache$2/SharedObjectCache$2(org.jboss.weld.resources.SharedObjectCache)|",
+      "|java+constructor:///org/jboss/weld/resources/SharedObjectCache$3/SharedObjectCache$3(org.jboss.weld.resources.SharedObjectCache)|",
+      "|java+constructor:///org/jboss/weld/resources/SharedObjectCache$4/SharedObjectCache$4(org.jboss.weld.resources.SharedObjectCache)|",
+      "|java+constructor:///com/google/common/collect/MapMaker/MapMaker()|",
+      "|java+method:///com/google/common/collect/MapMaker/makeComputingMap(com.google.common.base.Function)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.guava:guava:r06",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jboss.weld:weld-core:1.2.0.Beta1",
+    "coordinatesV2": "org.jboss.weld:weld-core:2.0.0.Alpha1",
+    "caller": "|java+constructor:///org/jboss/weld/resolution/TypeSafeBeanResolver/TypeSafeBeanResolver(org.jboss.weld.manager.BeanManagerImpl,java.lang.Iterable)|",
+    "called": "|java+constructor:///com/google/common/collect/MapMaker/MapMaker()|",
+    "v1Body": [
+      "|java+constructor:///org/jboss/weld/resolution/TypeSafeResolver/TypeSafeResolver(java.lang.Iterable,org.jboss.weld.manager.BeanManagerImpl)|",
+      "|java+constructor:///org/jboss/weld/resolution/TypeSafeBeanResolver$1/TypeSafeBeanResolver$1(org.jboss.weld.resolution.TypeSafeBeanResolver,java.lang.Iterable)|",
+      "|java+constructor:///org/jboss/weld/resolution/TypeSafeBeanResolver$BeanDisambiguation/TypeSafeBeanResolver$BeanDisambiguation(org.jboss.weld.resolution.TypeSafeBeanResolver$1)|",
+      "|java+constructor:///com/google/common/collect/MapMaker/MapMaker()|",
+      "|java+method:///com/google/common/collect/MapMaker/makeComputingMap(com.google.common.base.Function)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/jboss/weld/resolution/TypeSafeBeanResolver$1/TypeSafeBeanResolver$1(org.jboss.weld.resolution.TypeSafeBeanResolver,java.lang.Iterable)|",
+      "|java+constructor:///org/jboss/weld/resolution/TypeSafeBeanResolver$BeanDisambiguation/TypeSafeBeanResolver$BeanDisambiguation(org.jboss.weld.resolution.TypeSafeBeanResolver$1)|",
+      "|java+constructor:///org/jboss/weld/resolution/TypeSafeResolver/TypeSafeResolver(java.lang.Iterable)|",
+      "|java+constructor:///com/google/common/collect/MapMaker/MapMaker()|",
+      "|java+method:///com/google/common/collect/MapMaker/makeComputingMap(com.google.common.base.Function)|"
+    ],
+    "affectedLib": "com.google.guava:guava:r06",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jboss.weld:weld-core:1.2.0.Beta1",
+    "coordinatesV2": "org.jboss.weld:weld-core:2.0.0.Alpha1",
+    "caller": "|java+method:///org/jboss/weld/resolution/TypeSafeBeanResolver/getAllBeans(org.jboss.weld.resolution.Resolvable)|",
+    "called": "|java+method:///com/google/common/primitives/Primitives/wrap(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/google/common/primitives/Primitives/wrap(java.lang.Class)|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/reflect/ParameterizedType/getRawType()|",
+      "|java+method:///java/util/Set/addAll(java.util.Collection)|",
+      "|java+method:///org/jboss/weld/util/reflection/Reflections/getRawType(java.lang.reflect.Type)|",
+      "|java+method:///java/lang/Class/isPrimitive()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/contains(java.lang.Object)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///org/jboss/weld/resolution/Resolvable/getJavaClass()|",
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+method:///org/jboss/weld/resolution/Resolvable/getTypes()|",
+      "|java+method:///org/jboss/weld/resolution/TypeSafeBeanResolver/getBeans(java.lang.reflect.Type)|",
+      "|java+method:///org/jboss/weld/resolution/TypeSafeResolver/getAllBeans(org.jboss.weld.resolution.Resolvable)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/primitives/Primitives/wrap(java.lang.Class)|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///org/jboss/weld/util/LazyValueHolder/get()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/reflect/ParameterizedType/getRawType()|",
+      "|java+method:///java/util/Set/addAll(java.util.Collection)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/lang/Class/isPrimitive()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/contains(java.lang.Object)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///org/jboss/weld/resolution/Resolvable/getJavaClass()|",
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+method:///org/jboss/weld/resolution/Resolvable/getTypes()|",
+      "|java+method:///org/jboss/weld/resolution/TypeSafeResolver/getAllBeans(org.jboss.weld.resolution.Resolvable)|"
+    ],
+    "affectedLib": "com.google.guava:guava:r06",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jboss.weld:weld-core:1.2.0.Beta1",
+    "coordinatesV2": "org.jboss.weld:weld-core:2.0.0.Alpha1",
+    "caller": "|java+method:///org/jboss/weld/bootstrap/Validator/validateEnabledAlternatives(org.jboss.weld.manager.BeanManagerImpl)|",
+    "called": "|java+method:///com/google/common/collect/HashMultimap/create()|",
+    "v1Body": [
+      "|java+method:///org/jboss/weld/manager/BeanManagerImpl/getEnabled()|",
+      "|java+method:///org/jboss/weld/bootstrap/Validator/isAlternative(javax.enterprise.inject.spi.BeanManager,java.lang.Class)|",
+      "|java+constructor:///org/jboss/weld/exceptions/DeploymentException/DeploymentException(java.lang.Enum,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/jboss/weld/manager/BeanManagerImpl/getContextId()|",
+      "|java+method:///org/jboss/weld/resources/ClassTransformer/loadClass(java.lang.Class)|",
+      "|java+method:///org/jboss/weld/manager/Enabled/getAlternativeClasses()|",
+      "|java+method:///org/jboss/weld/introspector/WeldClass/isAnnotationPresent(java.lang.Class)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///java/lang/Class/isAnnotation()|",
+      "|java+method:///org/jboss/weld/Container/instance(java.lang.String)|",
+      "|java+method:///java/lang/Class/isInterface()|",
+      "|java+method:///org/jboss/weld/bootstrap/api/ServiceRegistry/get(java.lang.Class)|",
+      "|java+method:///org/jboss/weld/bootstrap/spi/Metadata/getValue()|",
+      "|java+method:///org/jboss/weld/Container/services()|",
+      "|java+method:///org/jboss/weld/manager/Enabled/getAlternativeStereotypes()|",
+      "|java+method:///org/jboss/weld/manager/BeanManagerImpl/isStereotype(java.lang.Class)|",
+      "|java+method:///java/util/Iterator/next()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/isInterface()|",
+      "|java+method:///org/jboss/weld/bootstrap/Validator/isAlternative(javax.enterprise.inject.spi.BeanManager,java.lang.Class)|",
+      "|java+method:///org/jboss/weld/manager/BeanManagerImpl/getBeans()|",
+      "|java+constructor:///org/jboss/weld/exceptions/DeploymentException/DeploymentException(java.lang.Enum,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///javax/enterprise/inject/spi/Bean/isAlternative()|",
+      "|java+method:///org/jboss/weld/bootstrap/spi/Metadata/getValue()|",
+      "|java+method:///com/google/common/collect/Multimap/get(java.lang.Object)|",
+      "|java+method:///org/jboss/weld/manager/Enabled/getAlternativeClasses()|",
+      "|java+method:///com/google/common/collect/HashMultimap/create()|",
+      "|java+method:///com/google/common/collect/Multimap/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/Class/isAnnotation()|",
+      "|java+method:///org/jboss/weld/manager/BeanManagerImpl/getEnabled()|",
+      "|java+method:///javax/enterprise/inject/spi/Bean/getBeanClass()|",
+      "|java+method:///java/util/Collection/size()|",
+      "|java+method:///org/jboss/weld/manager/Enabled/getAlternativeStereotypes()|",
+      "|java+method:///org/jboss/weld/manager/BeanManagerImpl/isStereotype(java.lang.Class)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/util/Collection/iterator()|"
+    ],
+    "affectedLib": "com.google.guava:guava:r06",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jboss.weld:weld-core:1.2.0.Beta1",
+    "coordinatesV2": "org.jboss.weld:weld-core:2.0.0.Alpha1",
+    "caller": "|java+method:///org/jboss/weld/resolution/TypeSafeBeanResolver$1/computeValue()|",
+    "called": "|java+method:///com/google/common/primitives/Primitives/wrap(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Collections/unmodifiableMap(java.util.Map)|",
+      "|java+method:///org/jboss/weld/resolution/TypeSafeBeanResolver$1/trimArrayListsToSize(java.util.Map)|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+method:///org/jboss/weld/resolution/TypeSafeBeanResolver$1/mapBean(java.util.Map,javax.enterprise.inject.spi.Bean)|",
+      "|java+method:///org/jboss/weld/resolution/TypeSafeBeanResolver$1/computeValue()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/reflect/ParameterizedType/getRawType()|",
+      "|java+method:///java/util/Collections/unmodifiableMap(java.util.Map)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/lang/Class/isPrimitive()|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/util/Map/containsKey(java.lang.Object)|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///org/jboss/weld/resolution/TypeSafeBeanResolver$1/computeValue()|",
+      "|java+method:///com/google/common/primitives/Primitives/wrap(java.lang.Class)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/ArrayList/trimToSize()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/util/ArrayList/add(java.lang.Object)|",
+      "|java+method:///javax/enterprise/inject/spi/Bean/getTypes()|"
+    ],
+    "affectedLib": "com.google.guava:guava:r06",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jboss.weld:weld-core:1.2.0.Beta1",
+    "coordinatesV2": "org.jboss.weld:weld-core:2.0.0.Alpha1",
+    "caller": "|java+method:///org/jboss/weld/bootstrap/WeldBootstrap/startContainer(org.jboss.weld.bootstrap.api.Environment,org.jboss.weld.bootstrap.spi.Deployment)|",
+    "called": "|java+method:///org/jboss/weld/bootstrap/api/helpers/ServiceRegistries/unmodifiableServiceRegistry(org.jboss.weld.bootstrap.api.ServiceRegistry)|",
+    "v1Body": [
+      "|java+method:///org/jboss/weld/bootstrap/WeldBootstrap/startContainer(java.lang.String,org.jboss.weld.bootstrap.api.Environment,org.jboss.weld.bootstrap.spi.Deployment)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jboss/weld/bootstrap/api/ServiceRegistry/add(java.lang.Class,org.jboss.weld.bootstrap.api.Service)|",
+      "|java+constructor:///org/jboss/weld/resources/SingleThreadScheduledExecutorServiceFactory/SingleThreadScheduledExecutorServiceFactory()|",
+      "|java+method:///org/jboss/weld/bootstrap/api/ServiceRegistry/get(java.lang.Class)|",
+      "|java+method:///org/jboss/weld/bootstrap/api/ServiceRegistry/contains(java.lang.Class)|",
+      "|java+method:///org/jboss/weld/bootstrap/WeldBootstrap/getImplementationServices()|",
+      "|java+method:///org/jboss/weld/bootstrap/WeldBootstrap/verifyServices(org.jboss.weld.bootstrap.api.ServiceRegistry,java.util.Set)|",
+      "|java+method:///org/jboss/weld/bootstrap/api/ServiceRegistry/addAll(java.util.Collection)|",
+      "|java+method:///org/jboss/weld/Container/initialize(org.jboss.weld.manager.BeanManagerImpl,org.jboss.weld.bootstrap.api.ServiceRegistry)|",
+      "|java+constructor:///org/jboss/weld/exceptions/IllegalArgumentException/IllegalArgumentException(java.lang.Enum,java.lang.Object%5B%5D)|",
+      "|java+method:///org/jboss/weld/bootstrap/WeldBootstrap$DeploymentVisitor/visit()|",
+      "|java+method:///org/jboss/weld/Container/instance()|",
+      "|java+method:///org/jboss/weld/bootstrap/api/ServiceRegistry/entrySet()|",
+      "|java+constructor:///org/jboss/weld/bootstrap/api/helpers/SimpleServiceRegistry/SimpleServiceRegistry()|",
+      "|java+constructor:///org/jboss/weld/bootstrap/WeldBootstrap$DeploymentVisitor/WeldBootstrap$DeploymentVisitor(org.jboss.weld.manager.BeanManagerImpl,org.jboss.weld.bootstrap.api.Environment,org.jboss.weld.bootstrap.spi.Deployment,java.util.Collection)|",
+      "|java+method:///org/jboss/weld/Container/setState(org.jboss.weld.ContainerState)|",
+      "|java+method:///org/jboss/weld/bootstrap/spi/Deployment/getServices()|",
+      "|java+method:///org/jboss/weld/bootstrap/api/helpers/ServiceRegistries/unmodifiableServiceRegistry(org.jboss.weld.bootstrap.api.ServiceRegistry)|",
+      "|java+constructor:///org/jboss/weld/bean/proxy/util/SimpleProxyServices/SimpleProxyServices()|",
+      "|java+method:///org/jboss/weld/bootstrap/WeldBootstrap/createContexts(org.jboss.weld.bootstrap.api.ServiceRegistry)|",
+      "|java+method:///org/jboss/weld/manager/BeanManagerImpl/newRootManager(java.lang.String,org.jboss.weld.bootstrap.api.ServiceRegistry,org.jboss.weld.manager.Enabled)|",
+      "|java+method:///org/jboss/weld/bootstrap/api/Environment/getRequiredDeploymentServices()|",
+      "|java+method:///org/slf4j/cal10n/LocLogger/info(java.lang.Enum,java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "org.jboss.weld:weld-spi:2.0.Alpha1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jboss.weld:weld-core:1.2.0.Beta1",
+    "coordinatesV2": "org.jboss.weld:weld-core:2.0.0.Alpha1",
+    "caller": "|java+method:///org/jboss/weld/resources/ClassTransformer/loadClass(java.lang.Class,java.lang.reflect.Type)|",
+    "called": "|java+constructor:///org/jboss/weld/resources/spi/ResourceLoadingException/ResourceLoadingException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/isTraceEnabled()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/google/common/collect/ComputationException/getCause()|",
+      "|java+constructor:///org/jboss/weld/resources/spi/ResourceLoadingException/ResourceLoadingException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String)|",
+      "|java+constructor:///org/jboss/weld/resources/ClassTransformer$TypeHolder/ClassTransformer$TypeHolder(java.lang.Class,java.lang.reflect.Type,org.jboss.weld.resources.ClassTransformer$1)|",
+      "|java+method:///java/util/concurrent/ConcurrentMap/get(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/google/common/collect/ComputationException/getCause()|",
+      "|java+constructor:///org/jboss/weld/resources/spi/ResourceLoadingException/ResourceLoadingException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/jboss/weld/resources/ClassTransformer$TypeHolder/ClassTransformer$TypeHolder(java.lang.Class,java.lang.reflect.Type,org.jboss.weld.resources.ClassTransformer$1)|",
+      "|java+method:///java/util/concurrent/ConcurrentMap/get(java.lang.Object)|"
+    ],
+    "affectedLib": "org.jboss.weld:weld-spi:2.0.Alpha1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jboss.weld:weld-core:1.2.0.Beta1",
+    "coordinatesV2": "org.jboss.weld:weld-core:2.0.0.Alpha1",
+    "caller": "|java+method:///org/jboss/weld/bootstrap/WeldBootstrap/getImplementationServices()|",
+    "called": "|java+constructor:///org/jboss/weld/bootstrap/api/helpers/SimpleServiceRegistry/SimpleServiceRegistry()|",
+    "v1Body": [
+      "|java+method:///org/jboss/weld/bootstrap/api/ServiceRegistry/add(java.lang.Class,org.jboss.weld.bootstrap.api.Service)|",
+      "|java+constructor:///org/jboss/weld/bootstrap/api/helpers/SimpleServiceRegistry/SimpleServiceRegistry()|",
+      "|java+constructor:///org/jboss/weld/bootstrap/Validator/Validator()|",
+      "|java+constructor:///org/jboss/weld/metadata/cache/MetaAnnotationStore/MetaAnnotationStore(org.jboss.weld.resources.ClassTransformer)|",
+      "|java+constructor:///org/jboss/weld/resources/SharedObjectCache/SharedObjectCache()|",
+      "|java+constructor:///org/jboss/weld/serialization/ContextualStoreImpl/ContextualStoreImpl(java.lang.String)|",
+      "|java+constructor:///org/jboss/weld/metadata/TypeStore/TypeStore()|",
+      "|java+constructor:///org/jboss/weld/resources/ClassTransformer/ClassTransformer(java.lang.String,org.jboss.weld.metadata.TypeStore)|",
+      "|java+constructor:///org/jboss/weld/injection/CurrentInjectionPoint/CurrentInjectionPoint()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jboss/weld/bootstrap/api/ServiceRegistry/add(java.lang.Class,org.jboss.weld.bootstrap.api.Service)|",
+      "|java+constructor:///org/jboss/weld/resources/MemberTransformer/MemberTransformer(org.jboss.weld.resources.ClassTransformer)|",
+      "|java+constructor:///org/jboss/weld/resources/ClassTransformer/ClassTransformer(org.jboss.weld.metadata.TypeStore)|",
+      "|java+constructor:///org/jboss/weld/metadata/TypeStore/TypeStore()|",
+      "|java+constructor:///org/jboss/weld/bootstrap/api/helpers/SimpleServiceRegistry/SimpleServiceRegistry()|",
+      "|java+constructor:///org/jboss/weld/serialization/ContextualStoreImpl/ContextualStoreImpl()|",
+      "|java+constructor:///org/jboss/weld/bootstrap/Validator/Validator()|",
+      "|java+constructor:///org/jboss/weld/injection/CurrentInjectionPoint/CurrentInjectionPoint()|",
+      "|java+constructor:///org/jboss/weld/metadata/cache/MetaAnnotationStore/MetaAnnotationStore(org.jboss.weld.resources.ClassTransformer)|",
+      "|java+constructor:///org/jboss/weld/resources/SharedObjectCache/SharedObjectCache()|"
+    ],
+    "affectedLib": "org.jboss.weld:weld-spi:2.0.Alpha1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jboss.weld:weld-core:1.2.0.Beta1",
+    "coordinatesV2": "org.jboss.weld:weld-core:2.0.0.Alpha1",
+    "caller": "|java+initializer:///org/jboss/weld/Container/Container$initializer|",
+    "called": "|java+method:///org/jboss/weld/bootstrap/api/SingletonProvider/instance()|",
+    "v1Body": [
+      "|java+method:///org/jboss/weld/bootstrap/api/SingletonProvider/instance()|",
+      "|java+constructor:///java/lang/ThreadLocal/ThreadLocal()|",
+      "|java+method:///org/jboss/weld/bootstrap/api/SingletonProvider/create(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jboss/weld/bootstrap/api/SingletonProvider/instance()|",
+      "|java+method:///org/jboss/weld/bootstrap/api/SingletonProvider/create(java.lang.Class)|"
+    ],
+    "affectedLib": "org.jboss.weld:weld-spi:2.0.Alpha1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jboss.weld:weld-core:1.2.0.Beta1",
+    "coordinatesV2": "org.jboss.weld:weld-core:2.0.0.Alpha1",
+    "caller": "|java+constructor:///org/jboss/weld/bootstrap/BeanDeployment/BeanDeployment(org.jboss.weld.bootstrap.spi.BeanDeploymentArchive,org.jboss.weld.manager.BeanManagerImpl,org.jboss.weld.bootstrap.api.ServiceRegistry,java.util.Collection)|",
+    "called": "|java+constructor:///org/jboss/weld/bootstrap/api/helpers/SimpleServiceRegistry/SimpleServiceRegistry()|",
+    "v1Body": [
+      "|java+method:///org/jboss/weld/bootstrap/api/ServiceRegistry/add(java.lang.Class,org.jboss.weld.bootstrap.api.Service)|",
+      "|java+method:///org/jboss/weld/manager/BeanManagerImpl/getEnabled()|",
+      "|java+method:///org/jboss/weld/bootstrap/spi/BeanDeploymentArchive/getServices()|",
+      "|java+method:///org/slf4j/cal10n/LocLogger/debug(java.lang.Enum,java.lang.Object%5B%5D)|",
+      "|java+method:///org/jboss/weld/ejb/EjbDescriptors/addAll(java.lang.Iterable)|",
+      "|java+method:///org/jboss/weld/manager/Enabled/getInterceptors()|",
+      "|java+method:///org/jboss/weld/manager/BeanManagerImpl/getContextId()|",
+      "|java+method:///org/jboss/weld/bootstrap/api/ServiceRegistry/get(java.lang.Class)|",
+      "|java+constructor:///org/jboss/weld/persistence/PersistenceApiAbstraction/PersistenceApiAbstraction(org.jboss.weld.resources.spi.ResourceLoader)|",
+      "|java+constructor:///org/jboss/weld/bootstrap/BeanDeployer/BeanDeployer(org.jboss.weld.manager.BeanManagerImpl,org.jboss.weld.ejb.EjbDescriptors,org.jboss.weld.bootstrap.api.ServiceRegistry)|",
+      "|java+method:///org/jboss/weld/manager/Enabled/getDecorators()|",
+      "|java+method:///org/jboss/weld/manager/Enabled/of(org.jboss.weld.bootstrap.spi.BeansXml,org.jboss.weld.resources.spi.ResourceLoader)|",
+      "|java+method:///org/jboss/weld/bootstrap/spi/BeanDeploymentArchive/getEjbs()|",
+      "|java+constructor:///org/jboss/weld/ws/WSApiAbstraction/WSApiAbstraction(org.jboss.weld.resources.spi.ResourceLoader)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/jboss/weld/bootstrap/spi/BeanDeploymentArchive/getId()|",
+      "|java+method:///org/jboss/weld/manager/BeanManagerImpl/newManager(org.jboss.weld.manager.BeanManagerImpl,java.lang.String,org.jboss.weld.bootstrap.api.ServiceRegistry,org.jboss.weld.manager.Enabled)|",
+      "|java+method:///org/jboss/weld/bootstrap/api/ServiceRegistry/entrySet()|",
+      "|java+constructor:///org/jboss/weld/util/reflection/instantiation/DefaultInstantiatorFactory/DefaultInstantiatorFactory(java.lang.String)|",
+      "|java+constructor:///org/jboss/weld/bootstrap/api/helpers/SimpleServiceRegistry/SimpleServiceRegistry()|",
+      "|java+method:///org/jboss/weld/bootstrap/api/ServiceRegistry/contains(java.lang.Class)|",
+      "|java+method:///org/jboss/weld/manager/Enabled/getAlternativeStereotypes()|",
+      "|java+constructor:///org/jboss/weld/manager/InjectionTargetValidator/InjectionTargetValidator(org.jboss.weld.manager.BeanManagerImpl)|",
+      "|java+method:///org/jboss/weld/manager/Enabled/getAlternativeClasses()|",
+      "|java+method:///org/jboss/weld/manager/BeanManagerImpl/getServices()|",
+      "|java+constructor:///org/jboss/weld/bean/builtin/BeanManagerBean/BeanManagerBean(org.jboss.weld.manager.BeanManagerImpl)|",
+      "|java+constructor:///org/jboss/weld/ejb/EJBApiAbstraction/EJBApiAbstraction(org.jboss.weld.resources.spi.ResourceLoader)|",
+      "|java+constructor:///org/jboss/weld/jsf/JsfApiAbstraction/JsfApiAbstraction(org.jboss.weld.resources.spi.ResourceLoader)|",
+      "|java+method:///org/jboss/weld/manager/BeanManagerImpl/addBean(javax.enterprise.inject.spi.Bean)|",
+      "|java+method:///org/jboss/weld/bootstrap/api/ServiceRegistry/addAll(java.util.Collection)|",
+      "|java+constructor:///org/jboss/weld/ejb/EjbDescriptors/EjbDescriptors()|",
+      "|java+method:///org/jboss/weld/bootstrap/spi/BeanDeploymentArchive/getBeansXml()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jboss/weld/bootstrap/api/ServiceRegistry/add(java.lang.Class,org.jboss.weld.bootstrap.api.Service)|",
+      "|java+method:///org/jboss/weld/bootstrap/EnabledBuilder/of(org.jboss.weld.bootstrap.spi.BeansXml,org.jboss.weld.resources.spi.ResourceLoader)|",
+      "|java+method:///org/jboss/weld/ejb/EjbDescriptors/addAll(java.lang.Iterable)|",
+      "|java+method:///org/jboss/weld/bootstrap/api/ServiceRegistry/entrySet()|",
+      "|java+method:///org/jboss/weld/bootstrap/api/ServiceRegistry/get(java.lang.Class)|",
+      "|java+constructor:///org/jboss/weld/bootstrap/api/helpers/SimpleServiceRegistry/SimpleServiceRegistry()|",
+      "|java+method:///org/jboss/weld/bootstrap/api/ServiceRegistry/contains(java.lang.Class)|",
+      "|java+constructor:///org/jboss/weld/persistence/PersistenceApiAbstraction/PersistenceApiAbstraction(org.jboss.weld.resources.spi.ResourceLoader)|",
+      "|java+constructor:///org/jboss/weld/bootstrap/BeanDeployer/BeanDeployer(org.jboss.weld.manager.BeanManagerImpl,org.jboss.weld.ejb.EjbDescriptors,org.jboss.weld.bootstrap.api.ServiceRegistry)|",
+      "|java+constructor:///org/jboss/weld/manager/InjectionTargetValidator/InjectionTargetValidator(org.jboss.weld.manager.BeanManagerImpl)|",
+      "|java+method:///org/jboss/weld/bootstrap/spi/BeanDeploymentArchive/getEjbs()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/jboss/weld/bootstrap/spi/BeanDeploymentArchive/getId()|",
+      "|java+constructor:///org/jboss/weld/enums/EnumService/EnumService(org.jboss.weld.manager.BeanManagerImpl)|",
+      "|java+method:///org/jboss/weld/bootstrap/spi/BeanDeploymentArchive/getServices()|",
+      "|java+method:///org/jboss/weld/manager/BeanManagerImpl/getServices()|",
+      "|java+constructor:///org/jboss/weld/bean/builtin/BeanManagerBean/BeanManagerBean(org.jboss.weld.manager.BeanManagerImpl)|",
+      "|java+constructor:///org/jboss/weld/ejb/EJBApiAbstraction/EJBApiAbstraction(org.jboss.weld.resources.spi.ResourceLoader)|",
+      "|java+constructor:///org/jboss/weld/jsf/JsfApiAbstraction/JsfApiAbstraction(org.jboss.weld.resources.spi.ResourceLoader)|",
+      "|java+method:///org/jboss/weld/manager/BeanManagerImpl/addBean(javax.enterprise.inject.spi.Bean)|",
+      "|java+method:///org/jboss/weld/bootstrap/api/ServiceRegistry/addAll(java.util.Collection)|",
+      "|java+constructor:///org/jboss/weld/ejb/EjbDescriptors/EjbDescriptors()|",
+      "|java+method:///org/jboss/weld/bootstrap/spi/BeanDeploymentArchive/getBeansXml()|",
+      "|java+method:///org/jboss/weld/manager/BeanManagerImpl/newManager(org.jboss.weld.manager.BeanManagerImpl,java.lang.String,org.jboss.weld.bootstrap.api.ServiceRegistry)|",
+      "|java+constructor:///org/jboss/weld/ws/WSApiAbstraction/WSApiAbstraction(org.jboss.weld.resources.spi.ResourceLoader)|"
+    ],
+    "affectedLib": "org.jboss.weld:weld-spi:2.0.Alpha1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jboss.weld:weld-core:1.2.0.Beta1",
+    "coordinatesV2": "org.jboss.weld:weld-core:2.0.0.Alpha1",
+    "caller": "|java+method:///org/jboss/weld/resources/ClassTransformer/loadClass(java.lang.Class)|",
+    "called": "|java+constructor:///org/jboss/weld/resources/spi/ResourceLoadingException/ResourceLoadingException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/isTraceEnabled()|",
+      "|java+method:///org/jboss/weld/util/reflection/Reflections/cast(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/google/common/collect/ComputationException/getCause()|",
+      "|java+constructor:///org/jboss/weld/resources/spi/ResourceLoadingException/ResourceLoadingException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String)|",
+      "|java+constructor:///org/jboss/weld/resources/ClassTransformer$TypeHolder/ClassTransformer$TypeHolder(java.lang.Class,java.lang.reflect.Type,org.jboss.weld.resources.ClassTransformer$1)|",
+      "|java+method:///java/util/concurrent/ConcurrentMap/get(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/jboss/weld/util/reflection/Reflections/cast(java.lang.Object)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/google/common/collect/ComputationException/getCause()|",
+      "|java+constructor:///org/jboss/weld/resources/spi/ResourceLoadingException/ResourceLoadingException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/jboss/weld/resources/ClassTransformer$TypeHolder/ClassTransformer$TypeHolder(java.lang.Class,java.lang.reflect.Type,org.jboss.weld.resources.ClassTransformer$1)|",
+      "|java+method:///java/util/concurrent/ConcurrentMap/get(java.lang.Object)|"
+    ],
+    "affectedLib": "org.jboss.weld:weld-spi:2.0.Alpha1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jboss.weld:weld-core:1.2.0.Beta1",
+    "coordinatesV2": "org.jboss.weld:weld-core:2.0.0.Alpha1",
+    "caller": "|java+method:///org/jboss/weld/bootstrap/WeldBootstrap/shutdown()|",
+    "called": "|java+method:///javax/enterprise/inject/spi/CDI/current()|",
+    "v1Body": [
+      "|java+method:///org/jboss/weld/Container/instance(java.lang.String)|",
+      "|java+method:///javax/enterprise/inject/Instance/select(java.lang.Class,java.lang.annotation.Annotation%5B%5D)|",
+      "|java+method:///org/jboss/weld/Container/cleanup()|",
+      "|java+method:///org/jboss/weld/manager/BeanManagerImpl/instance()|",
+      "|java+method:///org/jboss/weld/Container/setState(org.jboss.weld.ContainerState)|",
+      "|java+method:///org/jboss/weld/bootstrap/events/BeforeShutdownImpl/fire(org.jboss.weld.manager.BeanManagerImpl,java.util.Map)|",
+      "|java+method:///org/jboss/weld/context/ApplicationContext/invalidate()|",
+      "|java+method:///javax/enterprise/inject/Instance/get()|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/enterprise/inject/spi/CDI/current()|",
+      "|java+method:///org/jboss/weld/Container/instance()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///javax/enterprise/inject/Instance/select(java.lang.Class,java.lang.annotation.Annotation%5B%5D)|",
+      "|java+method:///org/jboss/weld/Container/cleanup()|",
+      "|java+method:///java/util/Map/values()|",
+      "|java+method:///org/jboss/weld/bootstrap/events/BeforeShutdownImpl/fire(org.jboss.weld.manager.BeanManagerImpl,java.util.Map)|",
+      "|java+method:///org/jboss/weld/Weld/cleanup()|",
+      "|java+method:///org/jboss/weld/bootstrap/api/ServiceRegistry/get(java.lang.Class)|",
+      "|java+method:///org/jboss/weld/manager/BeanManagerImpl/instance()|",
+      "|java+method:///org/jboss/weld/Container/setState(org.jboss.weld.ContainerState)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/jboss/weld/manager/BeanManagerImpl/getServices()|",
+      "|java+method:///org/jboss/weld/bootstrap/BeanDeployment/getBeanManager()|",
+      "|java+method:///org/jboss/weld/enums/EnumService/disinject()|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///org/jboss/weld/context/ApplicationContext/invalidate()|",
+      "|java+method:///javax/enterprise/inject/Instance/get()|"
+    ],
+    "affectedLib": "javax.enterprise:cdi-api:1.1.EDR1.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jboss.weld:weld-core:1.2.0.Beta1",
+    "coordinatesV2": "org.jboss.weld:weld-core:2.0.0.Alpha1",
+    "caller": "|java+constructor:///org/jboss/weld/exceptions/DefinitionException/DefinitionException(java.util.List)|",
+    "called": "|java+constructor:///javax/enterprise/inject/spi/DefinitionException/DefinitionException(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/jboss/weld/exceptions/WeldException/WeldException(java.util.List)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/jboss/weld/exceptions/WeldExceptionListMessage/WeldExceptionListMessage(java.util.List)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///javax/enterprise/inject/spi/DefinitionException/DefinitionException(java.lang.String)|"
+    ],
+    "affectedLib": "javax.enterprise:cdi-api:1.1.EDR1.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jboss.weld:weld-core:1.2.0.Beta1",
+    "coordinatesV2": "org.jboss.weld:weld-core:2.0.0.Alpha1",
+    "caller": "|java+constructor:///org/jboss/weld/exceptions/DefinitionException/DefinitionException(java.lang.Enum,java.lang.Throwable,java.lang.Object%5B%5D)|",
+    "called": "|java+constructor:///javax/enterprise/inject/spi/DefinitionException/DefinitionException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///org/jboss/weld/exceptions/WeldException/WeldException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Throwable/getLocalizedMessage()|",
+      "|java+constructor:///javax/enterprise/inject/spi/DefinitionException/DefinitionException(java.lang.Throwable)|",
+      "|java+constructor:///org/jboss/weld/exceptions/WeldExceptionStringMessage/WeldExceptionStringMessage(java.lang.String)|"
+    ],
+    "affectedLib": "javax.enterprise:cdi-api:1.1.EDR1.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jboss.weld:weld-core:1.2.0.Beta1",
+    "coordinatesV2": "org.jboss.weld:weld-core:2.0.0.Alpha1",
+    "caller": "|java+constructor:///org/jboss/weld/exceptions/DefinitionException/DefinitionException(java.lang.Throwable)|",
+    "called": "|java+constructor:///javax/enterprise/inject/spi/DefinitionException/DefinitionException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///org/jboss/weld/exceptions/WeldException/WeldException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Throwable/getLocalizedMessage()|",
+      "|java+constructor:///javax/enterprise/inject/spi/DefinitionException/DefinitionException(java.lang.Throwable)|",
+      "|java+constructor:///org/jboss/weld/exceptions/WeldExceptionStringMessage/WeldExceptionStringMessage(java.lang.String)|"
+    ],
+    "affectedLib": "javax.enterprise:cdi-api:1.1.EDR1.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jboss.weld:weld-core:1.2.0.Beta1",
+    "coordinatesV2": "org.jboss.weld:weld-core:2.0.0.Alpha1",
+    "caller": "|java+constructor:///org/jboss/weld/exceptions/DeploymentException/DeploymentException(java.lang.Enum,java.lang.Object%5B%5D)|",
+    "called": "|java+constructor:///javax/enterprise/inject/spi/DeploymentException/DeploymentException(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/jboss/weld/exceptions/WeldException/WeldException(java.lang.Enum,java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///org/jboss/weld/exceptions/WeldExceptionKeyMessage/WeldExceptionKeyMessage(java.lang.Enum,java.lang.Object%5B%5D)|",
+      "|java+constructor:///javax/enterprise/inject/spi/DeploymentException/DeploymentException(java.lang.String)|"
+    ],
+    "affectedLib": "javax.enterprise:cdi-api:1.1.EDR1.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jboss.weld:weld-core:1.2.0.Beta1",
+    "coordinatesV2": "org.jboss.weld:weld-core:2.0.0.Alpha1",
+    "caller": "|java+constructor:///org/jboss/weld/exceptions/DeploymentException/DeploymentException(java.util.List)|",
+    "called": "|java+constructor:///javax/enterprise/inject/spi/DeploymentException/DeploymentException(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/jboss/weld/exceptions/WeldException/WeldException(java.util.List)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/jboss/weld/exceptions/WeldExceptionListMessage/WeldExceptionListMessage(java.util.List)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///javax/enterprise/inject/spi/DeploymentException/DeploymentException(java.lang.String)|"
+    ],
+    "affectedLib": "javax.enterprise:cdi-api:1.1.EDR1.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jboss.weld:weld-core:1.2.0.Beta1",
+    "coordinatesV2": "org.jboss.weld:weld-core:2.0.0.Alpha1",
+    "caller": "|java+method:///org/jboss/weld/context/AbstractContext/get(javax.enterprise.context.spi.Contextual,javax.enterprise.context.spi.CreationalContext)|",
+    "called": "|java+constructor:///javax/enterprise/context/ContextNotActiveException/ContextNotActiveException()|",
+    "v1Body": [
+      "|java+method:///org/jboss/weld/context/beanstore/BeanStore/lock(java.lang.String)|",
+      "|java+constructor:///javax/enterprise/context/ContextNotActiveException/ContextNotActiveException()|",
+      "|java+method:///org/jboss/weld/context/beanstore/BeanStore/get(java.lang.String)|",
+      "|java+method:///org/jboss/weld/bootstrap/api/ServiceRegistry/get(java.lang.Class)|",
+      "|java+method:///javax/enterprise/context/spi/Contextual/create(javax.enterprise.context.spi.CreationalContext)|",
+      "|java+method:///org/jboss/weld/context/beanstore/BeanStore/put(java.lang.String,org.jboss.weld.context.api.ContextualInstance)|",
+      "|java+method:///org/jboss/weld/context/beanstore/LockedBean/unlock()|",
+      "|java+constructor:///org/jboss/weld/context/SerializableContextualInstanceImpl/SerializableContextualInstanceImpl(java.lang.String,javax.enterprise.context.spi.Contextual,java.lang.Object,javax.enterprise.context.spi.CreationalContext,org.jboss.weld.serialization.spi.ContextualStore)|",
+      "|java+method:///org/jboss/weld/context/AbstractContext/isActive()|",
+      "|java+method:///org/jboss/weld/context/api/ContextualInstance/getInstance()|",
+      "|java+constructor:///org/jboss/weld/exceptions/IllegalArgumentException/IllegalArgumentException(java.lang.Enum,java.lang.Object%5B%5D)|",
+      "|java+method:///org/jboss/weld/context/AbstractContext/getId(javax.enterprise.context.spi.Contextual)|",
+      "|java+method:///org/jboss/weld/context/AbstractContext/getBeanStore()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/locks/Lock/unlock()|",
+      "|java+constructor:///javax/enterprise/context/ContextNotActiveException/ContextNotActiveException()|",
+      "|java+method:///org/jboss/weld/context/beanstore/BeanStore/get(java.lang.String)|",
+      "|java+method:///java/util/concurrent/locks/Lock/lock()|",
+      "|java+method:///org/jboss/weld/bootstrap/api/ServiceRegistry/get(java.lang.Class)|",
+      "|java+method:///javax/enterprise/context/spi/Contextual/create(javax.enterprise.context.spi.CreationalContext)|",
+      "|java+method:///org/jboss/weld/context/beanstore/BeanStore/put(java.lang.String,org.jboss.weld.context.api.ContextualInstance)|",
+      "|java+method:///org/jboss/weld/context/AbstractContext/isActive()|",
+      "|java+constructor:///org/jboss/weld/context/SerializableContextualInstanceImpl/SerializableContextualInstanceImpl(javax.enterprise.context.spi.Contextual,java.lang.Object,javax.enterprise.context.spi.CreationalContext,org.jboss.weld.serialization.spi.ContextualStore)|",
+      "|java+method:///org/jboss/weld/context/api/ContextualInstance/getInstance()|",
+      "|java+constructor:///org/jboss/weld/exceptions/IllegalArgumentException/IllegalArgumentException(java.lang.Enum,java.lang.Object%5B%5D)|",
+      "|java+method:///org/jboss/weld/context/AbstractContext/getId(javax.enterprise.context.spi.Contextual)|",
+      "|java+method:///org/jboss/weld/context/AbstractContext/getBeanStore()|"
+    ],
+    "affectedLib": "javax.enterprise:cdi-api:1.1.EDR1.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jboss.weld:weld-core:1.2.0.Beta1",
+    "coordinatesV2": "org.jboss.weld:weld-core:2.0.0.Alpha1",
+    "caller": "|java+constructor:///org/jboss/weld/exceptions/DeploymentException/DeploymentException(java.lang.Throwable)|",
+    "called": "|java+constructor:///javax/enterprise/inject/spi/DeploymentException/DeploymentException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///org/jboss/weld/exceptions/WeldException/WeldException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/jboss/weld/exceptions/WeldExceptionStringMessage/WeldExceptionStringMessage(java.lang.String)|",
+      "|java+constructor:///javax/enterprise/inject/spi/DeploymentException/DeploymentException(java.lang.Throwable)|",
+      "|java+method:///java/lang/Throwable/getLocalizedMessage()|"
+    ],
+    "affectedLib": "javax.enterprise:cdi-api:1.1.EDR1.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jboss.weld:weld-core:1.2.0.Beta1",
+    "coordinatesV2": "org.jboss.weld:weld-core:2.0.0.Alpha1",
+    "caller": "|java+method:///org/jboss/weld/context/unbound/DependentContextImpl/get(javax.enterprise.context.spi.Contextual,javax.enterprise.context.spi.CreationalContext)|",
+    "called": "|java+constructor:///javax/enterprise/context/ContextNotActiveException/ContextNotActiveException()|",
+    "v1Body": [
+      "|java+constructor:///javax/enterprise/context/ContextNotActiveException/ContextNotActiveException()|",
+      "|java+method:///javax/enterprise/context/spi/Contextual/create(javax.enterprise.context.spi.CreationalContext)|",
+      "|java+method:///org/jboss/weld/context/unbound/DependentContextImpl/addDependentInstance(java.lang.Object,javax.enterprise.context.spi.Contextual,org.jboss.weld.context.WeldCreationalContext)|",
+      "|java+method:///org/jboss/weld/context/unbound/DependentContextImpl/isActive()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jboss/weld/context/WeldCreationalContext/addDependentInstance(org.jboss.weld.context.api.ContextualInstance)|",
+      "|java+constructor:///javax/enterprise/context/ContextNotActiveException/ContextNotActiveException()|",
+      "|java+method:///javax/enterprise/context/spi/Contextual/create(javax.enterprise.context.spi.CreationalContext)|",
+      "|java+constructor:///org/jboss/weld/context/SerializableContextualInstanceImpl/SerializableContextualInstanceImpl(javax.enterprise.context.spi.Contextual,java.lang.Object,javax.enterprise.context.spi.CreationalContext,org.jboss.weld.serialization.spi.ContextualStore)|",
+      "|java+method:///org/jboss/weld/context/unbound/DependentContextImpl/isActive()|"
+    ],
+    "affectedLib": "javax.enterprise:cdi-api:1.1.EDR1.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jboss.weld:weld-core:1.2.0.Beta1",
+    "coordinatesV2": "org.jboss.weld:weld-core:2.0.0.Alpha1",
+    "caller": "|java+constructor:///org/jboss/weld/exceptions/DeploymentException/DeploymentException(java.lang.Enum,java.lang.Throwable,java.lang.Object%5B%5D)|",
+    "called": "|java+constructor:///javax/enterprise/inject/spi/DeploymentException/DeploymentException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///org/jboss/weld/exceptions/WeldException/WeldException(java.lang.Enum,java.lang.Throwable,java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/jboss/weld/exceptions/WeldExceptionStringMessage/WeldExceptionStringMessage(java.lang.String)|",
+      "|java+constructor:///javax/enterprise/inject/spi/DeploymentException/DeploymentException(java.lang.Throwable)|",
+      "|java+method:///java/lang/Throwable/getLocalizedMessage()|"
+    ],
+    "affectedLib": "javax.enterprise:cdi-api:1.1.EDR1.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jboss.weld:weld-core:1.2.0.Beta1",
+    "coordinatesV2": "org.jboss.weld:weld-core:2.0.0.Alpha1",
+    "caller": "|java+constructor:///org/jboss/weld/exceptions/DefinitionException/DefinitionException(java.lang.Enum,java.lang.Object%5B%5D)|",
+    "called": "|java+constructor:///javax/enterprise/inject/spi/DefinitionException/DefinitionException(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/jboss/weld/exceptions/WeldException/WeldException(java.lang.Enum,java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///org/jboss/weld/exceptions/WeldExceptionKeyMessage/WeldExceptionKeyMessage(java.lang.Enum,java.lang.Object%5B%5D)|",
+      "|java+constructor:///javax/enterprise/inject/spi/DefinitionException/DefinitionException(java.lang.String)|"
+    ],
+    "affectedLib": "javax.enterprise:cdi-api:1.1.EDR1.2",
+    "change": "UPDATED"
+  }
+]

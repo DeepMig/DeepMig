@@ -1,0 +1,42 @@
+[
+  {
+    "coordinatesV1": "org.mycore:mycore-base:2018.05",
+    "coordinatesV2": "org.mycore:mycore-base:2018.06.0",
+    "caller": "|java+method:///org/mycore/common/inject/MCRDefaultModule/configure()|",
+    "called": "|java+constructor:///com/google/inject/servlet/ServletModule/ServletModule()|",
+    "v1Body": [
+      "|java+method:///org/mycore/common/inject/MCRDefaultModule/bind(java.lang.Class)|",
+      "|java+method:///com/google/inject/binder/AnnotatedBindingBuilder/to(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/mycore/common/inject/MCRDefaultModule/bind(java.lang.Class)|",
+      "|java+method:///org/mycore/common/events/MCRStartupHandler/isWebApp()|",
+      "|java+method:///org/mycore/common/inject/MCRDefaultModule/install(com.google.inject.Module)|",
+      "|java+constructor:///com/google/inject/servlet/ServletModule/ServletModule()|",
+      "|java+method:///com/google/inject/binder/AnnotatedBindingBuilder/to(java.lang.Class)|"
+    ],
+    "affectedLib": "com.google.inject.extensions:guice-servlet:4.2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.mycore:mycore-base:2018.05",
+    "coordinatesV2": "org.mycore:mycore-base:2018.06.0",
+    "caller": "|java+constructor:///org/mycore/datamodel/ifs2/MCRMetadataVersion/MCRMetadataVersion(org.mycore.datamodel.ifs2.MCRVersionedMetadata,org.tmatesoft.svn.core.SVNLogEntry,char)|",
+    "called": "|java+method:///org/tmatesoft/svn/core/SVNLogEntry/getAuthor()|",
+    "v1Body": [
+      "|java+method:///org/tmatesoft/svn/core/SVNLogEntry/getRevision()|",
+      "|java+method:///org/tmatesoft/svn/core/SVNLogEntry/getAuthor()|",
+      "|java+method:///org/tmatesoft/svn/core/SVNLogEntry/getDate()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/tmatesoft/svn/core/SVNLogEntry/getRevision()|",
+      "|java+method:///org/mycore/datamodel/ifs2/MCRMetadataVersion$Type/fromValue(char)|",
+      "|java+method:///org/tmatesoft/svn/core/SVNLogEntry/getAuthor()|",
+      "|java+method:///org/tmatesoft/svn/core/SVNLogEntry/getDate()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.tmatesoft.svnkit:svnkit:1.9.3",
+    "change": "UPDATED"
+  }
+]

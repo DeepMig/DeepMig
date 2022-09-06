@@ -1,0 +1,72 @@
+[
+  {
+    "coordinatesV1": "org.apache.directory.studio:apacheds-launcher:1.2.1",
+    "coordinatesV2": "org.apache.directory.studio:apacheds-launcher:1.5.0",
+    "caller": "|java+method:///org/apache/directory/studio/apacheds/Service/start()|",
+    "called": "|java+method:///org/apache/directory/server/ldap/LdapServer/start()|",
+    "v1Body": [
+      "|java+method:///java/lang/Thread/start()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/directory/server/ldap/LdapServer/start()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "affectedLib": "org.apache.directory.server:apacheds-protocol-ldap:1.5.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.studio:apacheds-launcher:1.2.1",
+    "coordinatesV2": "org.apache.directory.studio:apacheds-launcher:1.5.0",
+    "caller": "|java+method:///org/apache/directory/studio/apacheds/Service/stop(java.lang.String%5B%5D)|",
+    "called": "|java+method:///org/apache/directory/server/ldap/LdapServer/stop()|",
+    "v1Body": [
+      "|java+method:///java/lang/Object/notify()|",
+      "|java+method:///org/apache/xbean/spring/context/FileSystemXmlApplicationContext/close()|",
+      "|java+method:///java/lang/Thread/isAlive()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///org/apache/directory/server/configuration/ApacheDS/shutdown()|",
+      "|java+method:///java/lang/Thread/join(long)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/server/ldap/LdapServer/getDirectoryService()|",
+      "|java+method:///org/apache/xbean/spring/context/FileSystemXmlApplicationContext/close()|",
+      "|java+method:///org/apache/directory/server/ldap/LdapServer/stop()|",
+      "|java+method:///org/apache/directory/server/core/DirectoryService/shutdown()|"
+    ],
+    "affectedLib": "org.apache.directory.server:apacheds-protocol-ldap:1.5.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.studio:apacheds-launcher:1.2.1",
+    "coordinatesV2": "org.apache.directory.studio:apacheds-launcher:1.5.0",
+    "caller": "|java+method:///org/apache/directory/studio/apacheds/Launcher/main(java.lang.String%5B%5D)|",
+    "called": "|java+method:///org/apache/directory/daemon/InstallationLayout/getConfigurationFile()|",
+    "v1Body": [
+      "|java+method:///java/io/File/isDirectory()|",
+      "|java+constructor:///org/apache/directory/studio/apacheds/Service/Service()|",
+      "|java+method:///org/apache/directory/daemon/InstallationLayout/getConfigurationFile()|",
+      "|java+method:///org/apache/directory/studio/apacheds/Service/init(org.apache.directory.daemon.InstallationLayout,java.lang.String%5B%5D)|",
+      "|java+method:///java/io/File/getAbsolutePath()|",
+      "|java+method:///java/io/File/isFile()|",
+      "|java+constructor:///org/apache/directory/daemon/InstallationLayout/InstallationLayout(java.lang.String)|",
+      "|java+method:///org/apache/directory/studio/apacheds/Service/start()|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/File/isDirectory()|",
+      "|java+constructor:///org/apache/directory/studio/apacheds/Service/Service()|",
+      "|java+method:///org/apache/directory/daemon/InstallationLayout/getConfigurationFile()|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///org/apache/directory/studio/apacheds/Service/init(org.apache.directory.daemon.InstallationLayout,java.lang.String%5B%5D)|",
+      "|java+method:///java/io/File/getAbsolutePath()|",
+      "|java+method:///java/io/File/isFile()|",
+      "|java+constructor:///org/apache/directory/daemon/InstallationLayout/InstallationLayout(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.directory.daemon:daemon-bootstrappers:1.1.6",
+    "change": "UPDATED"
+  }
+]

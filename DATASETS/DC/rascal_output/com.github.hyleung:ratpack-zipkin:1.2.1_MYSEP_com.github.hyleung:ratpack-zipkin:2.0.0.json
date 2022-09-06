@@ -1,0 +1,118 @@
+[
+  {
+    "coordinatesV1": "com.github.hyleung:ratpack-zipkin:2.0.0",
+    "coordinatesV2": "com.github.hyleung:ratpack-zipkin:1.2.1",
+    "caller": "|java+constructor:///ratpack/zipkin/ServerTracingModule$Config/ServerTracingModule$Config()|",
+    "called": "|java+constructor:///com/github/kristofa/brave/http/DefaultSpanNameProvider/DefaultSpanNameProvider()|",
+    "v1Body": [
+      "|java+constructor:///com/github/kristofa/brave/http/DefaultSpanNameProvider/DefaultSpanNameProvider()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///brave/http/HttpClientParser/HttpClientParser()|",
+      "|java+constructor:///brave/http/HttpServerParser/HttpServerParser()|"
+    ],
+    "affectedLib": "io.zipkin.brave:brave-http:4.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.github.hyleung:ratpack-zipkin:1.2.1",
+    "coordinatesV2": "com.github.hyleung:ratpack-zipkin:2.0.0",
+    "caller": "|java+method:///ratpack/zipkin/ServerTracingModule/buildLocalEndpoint(java.lang.String,int,java.net.InetAddress)|",
+    "called": "|java+method:///brave/internal/Platform/localEndpoint()|",
+    "v1Body": [
+      "|java+method:///com/twitter/zipkin/gen/Endpoint$Builder/ipv6(byte%5B%5D)|",
+      "|java+method:///java/net/InetAddress/getAddress()|",
+      "|java+method:///com/twitter/zipkin/gen/Endpoint$Builder/serviceName(java.lang.String)|",
+      "|java+method:///com/twitter/zipkin/gen/Endpoint$Builder/ipv4(int)|",
+      "|java+method:///ratpack/zipkin/ServerTracingModule/getSiteLocalAddress()|",
+      "|java+method:///com/twitter/zipkin/gen/Endpoint$Builder/port(int)|",
+      "|java+method:///java/nio/ByteBuffer/wrap(byte%5B%5D)|",
+      "|java+method:///com/twitter/zipkin/gen/Endpoint$Builder/build()|",
+      "|java+method:///java/nio/ByteBuffer/getInt()|",
+      "|java+method:///com/twitter/zipkin/gen/Endpoint/builder()|"
+    ],
+    "v2Body": [
+      "|java+method:///zipkin/Endpoint/toBuilder()|",
+      "|java+method:///brave/internal/Platform/localEndpoint()|",
+      "|java+method:///zipkin/Endpoint$Builder/build()|",
+      "|java+method:///zipkin/Endpoint$Builder/parseIp(java.net.InetAddress)|",
+      "|java+method:///zipkin/Endpoint$Builder/serviceName(java.lang.String)|",
+      "|java+method:///zipkin/Endpoint/builder()|",
+      "|java+method:///brave/internal/Platform/get()|",
+      "|java+method:///zipkin/Endpoint$Builder/port(int)|"
+    ],
+    "affectedLib": "io.zipkin.brave:brave:4.3.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.hyleung:ratpack-zipkin:1.2.1",
+    "coordinatesV2": "com.github.hyleung:ratpack-zipkin:2.0.0",
+    "caller": "|java+method:///ratpack/zipkin/internal/DefaultServerTracingHandler/handle(ratpack.handling.Context)|",
+    "called": "|java+method:///brave/Tracer/withSpanInScope(brave.Span)|",
+    "v1Body": [
+      "|java+method:///com/github/kristofa/brave/ServerRequestInterceptor/handle(com.github.kristofa.brave.ServerRequestAdapter)|",
+      "|java+method:///ratpack/handling/Context/next()|",
+      "|java+method:///ratpack/zipkin/internal/ServerRequestAdapterFactory/createAdapter(ratpack.http.Request)|",
+      "|java+method:///ratpack/handling/Context/getRequest()|",
+      "|java+method:///ratpack/handling/Context/getResponse()|",
+      "|java+method:///ratpack/http/Response/beforeSend(ratpack.func.Action)|"
+    ],
+    "v2Body": [
+      "|java+method:///brave/Tracing/tracer()|",
+      "|java+method:///brave/Span/start()|",
+      "|java+method:///ratpack/handling/Context/next()|",
+      "|java+method:///brave/http/HttpServerHandler/handleReceive(brave.propagation.TraceContext$Extractor,java.lang.Object)|",
+      "|java+method:///ratpack/handling/Context/getResponse()|",
+      "|java+method:///ratpack/http/Response/beforeSend(ratpack.func.Action)|",
+      "|java+method:///brave/Tracer/withSpanInScope(brave.Span)|",
+      "|java+method:///ratpack/handling/Context/getRequest()|"
+    ],
+    "affectedLib": "io.zipkin.brave:brave:4.3.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.hyleung:ratpack-zipkin:1.2.1",
+    "coordinatesV2": "com.github.hyleung:ratpack-zipkin:2.0.0",
+    "caller": "|java+method:///ratpack/zipkin/internal/DefaultServerTracingHandler/handle(ratpack.handling.Context)|",
+    "called": "|java+method:///brave/http/HttpServerHandler/handleReceive(brave.propagation.TraceContext$Extractor,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/github/kristofa/brave/ServerRequestInterceptor/handle(com.github.kristofa.brave.ServerRequestAdapter)|",
+      "|java+method:///ratpack/handling/Context/next()|",
+      "|java+method:///ratpack/zipkin/internal/ServerRequestAdapterFactory/createAdapter(ratpack.http.Request)|",
+      "|java+method:///ratpack/handling/Context/getRequest()|",
+      "|java+method:///ratpack/handling/Context/getResponse()|",
+      "|java+method:///ratpack/http/Response/beforeSend(ratpack.func.Action)|"
+    ],
+    "v2Body": [
+      "|java+method:///brave/Tracing/tracer()|",
+      "|java+method:///brave/Span/start()|",
+      "|java+method:///ratpack/handling/Context/next()|",
+      "|java+method:///brave/http/HttpServerHandler/handleReceive(brave.propagation.TraceContext$Extractor,java.lang.Object)|",
+      "|java+method:///ratpack/handling/Context/getResponse()|",
+      "|java+method:///ratpack/http/Response/beforeSend(ratpack.func.Action)|",
+      "|java+method:///brave/Tracer/withSpanInScope(brave.Span)|",
+      "|java+method:///ratpack/handling/Context/getRequest()|"
+    ],
+    "affectedLib": "io.zipkin.brave:brave-instrumentation-http:4.3.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.hyleung:ratpack-zipkin:1.2.1",
+    "coordinatesV2": "com.github.hyleung:ratpack-zipkin:2.0.0",
+    "caller": "|java+constructor:///ratpack/zipkin/ServerTracingModule$Config/ServerTracingModule$Config()|",
+    "called": "|java+constructor:///brave/http/HttpServerParser/HttpServerParser()|",
+    "v1Body": [
+      "|java+constructor:///com/github/kristofa/brave/http/DefaultSpanNameProvider/DefaultSpanNameProvider()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///brave/http/HttpClientParser/HttpClientParser()|",
+      "|java+constructor:///brave/http/HttpServerParser/HttpServerParser()|"
+    ],
+    "affectedLib": "io.zipkin.brave:brave-instrumentation-http:4.3.3",
+    "change": "ADDED"
+  }
+]

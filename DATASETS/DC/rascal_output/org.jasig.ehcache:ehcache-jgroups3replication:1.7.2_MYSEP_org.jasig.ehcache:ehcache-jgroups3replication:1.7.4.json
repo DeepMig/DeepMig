@@ -1,0 +1,140 @@
+[
+  {
+    "coordinatesV1": "org.jasig.ehcache:ehcache-jgroups3replication:1.7.2",
+    "coordinatesV2": "org.jasig.ehcache:ehcache-jgroups3replication:1.7.4",
+    "caller": "|java+constructor:///net/sf/ehcache/distribution/jgroups/jmx/JGroupsCacheReceiverStats/JGroupsCacheReceiverStats()|",
+    "called": "|java+method:///com/yammer/metrics/Metrics/newMeter(java.lang.Class,java.lang.String,java.lang.String,java.util.concurrent.TimeUnit)|",
+    "v1Body": [
+      "|java+constructor:///java/util/concurrent/atomic/AtomicLong/AtomicLong()|",
+      "|java+constructor:///net/sf/ehcache/distribution/jgroups/jmx/AtomicRate/AtomicRate(int,java.util.concurrent.TimeUnit)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/concurrent/atomic/AtomicLong/AtomicLong()|",
+      "|java+method:///com/yammer/metrics/Metrics/newMeter(java.lang.Class,java.lang.String,java.lang.String,java.util.concurrent.TimeUnit)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.yammer.metrics:metrics-core:2.1.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.ehcache:ehcache-jgroups3replication:1.7.2",
+    "coordinatesV2": "org.jasig.ehcache:ehcache-jgroups3replication:1.7.4",
+    "caller": "|java+method:///net/sf/ehcache/distribution/jgroups/jmx/JGroupsCacheReceiverStats/countPut()|",
+    "called": "|java+method:///com/yammer/metrics/core/Meter/mark()|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/distribution/jgroups/jmx/AtomicRate/count()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicLong/incrementAndGet()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/yammer/metrics/core/Meter/mark()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicLong/incrementAndGet()|"
+    ],
+    "affectedLib": "com.yammer.metrics:metrics-core:2.1.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.ehcache:ehcache-jgroups3replication:1.7.2",
+    "coordinatesV2": "org.jasig.ehcache:ehcache-jgroups3replication:1.7.4",
+    "caller": "|java+method:///net/sf/ehcache/distribution/jgroups/jmx/JGroupsCacheReceiverStats/countRemoveNotExisting()|",
+    "called": "|java+method:///com/yammer/metrics/core/Meter/mark()|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/distribution/jgroups/jmx/AtomicRate/count()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicLong/incrementAndGet()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/yammer/metrics/core/Meter/mark()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicLong/incrementAndGet()|"
+    ],
+    "affectedLib": "com.yammer.metrics:metrics-core:2.1.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.ehcache:ehcache-jgroups3replication:1.7.2",
+    "coordinatesV2": "org.jasig.ehcache:ehcache-jgroups3replication:1.7.4",
+    "caller": "|java+method:///net/sf/ehcache/distribution/jgroups/jmx/JGroupsCacheReceiverStats/getPutRate()|",
+    "called": "|java+method:///com/yammer/metrics/core/Meter/oneMinuteRate()|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/distribution/jgroups/jmx/AtomicRate/getRate()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/yammer/metrics/core/Meter/oneMinuteRate()|"
+    ],
+    "affectedLib": "com.yammer.metrics:metrics-core:2.1.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.ehcache:ehcache-jgroups3replication:1.7.2",
+    "coordinatesV2": "org.jasig.ehcache:ehcache-jgroups3replication:1.7.4",
+    "caller": "|java+method:///net/sf/ehcache/distribution/jgroups/jmx/JGroupsCacheReceiverStats/getRemoveAllRate()|",
+    "called": "|java+method:///com/yammer/metrics/core/Meter/oneMinuteRate()|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/distribution/jgroups/jmx/AtomicRate/getRate()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/yammer/metrics/core/Meter/oneMinuteRate()|"
+    ],
+    "affectedLib": "com.yammer.metrics:metrics-core:2.1.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.ehcache:ehcache-jgroups3replication:1.7.2",
+    "coordinatesV2": "org.jasig.ehcache:ehcache-jgroups3replication:1.7.4",
+    "caller": "|java+method:///net/sf/ehcache/distribution/jgroups/jmx/JGroupsCacheReceiverStats/getRemoveNotExistingRate()|",
+    "called": "|java+method:///com/yammer/metrics/core/Meter/oneMinuteRate()|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/distribution/jgroups/jmx/AtomicRate/getRate()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/yammer/metrics/core/Meter/oneMinuteRate()|"
+    ],
+    "affectedLib": "com.yammer.metrics:metrics-core:2.1.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.ehcache:ehcache-jgroups3replication:1.7.2",
+    "coordinatesV2": "org.jasig.ehcache:ehcache-jgroups3replication:1.7.4",
+    "caller": "|java+method:///net/sf/ehcache/distribution/jgroups/jmx/JGroupsCacheReceiverStats/countRemoveAll()|",
+    "called": "|java+method:///com/yammer/metrics/core/Meter/mark()|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/distribution/jgroups/jmx/AtomicRate/count()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicLong/incrementAndGet()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/yammer/metrics/core/Meter/mark()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicLong/incrementAndGet()|"
+    ],
+    "affectedLib": "com.yammer.metrics:metrics-core:2.1.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.ehcache:ehcache-jgroups3replication:1.7.2",
+    "coordinatesV2": "org.jasig.ehcache:ehcache-jgroups3replication:1.7.4",
+    "caller": "|java+method:///net/sf/ehcache/distribution/jgroups/jmx/JGroupsCacheReceiverStats/getRemoveExistingRate()|",
+    "called": "|java+method:///com/yammer/metrics/core/Meter/oneMinuteRate()|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/distribution/jgroups/jmx/AtomicRate/getRate()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/yammer/metrics/core/Meter/oneMinuteRate()|"
+    ],
+    "affectedLib": "com.yammer.metrics:metrics-core:2.1.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.ehcache:ehcache-jgroups3replication:1.7.2",
+    "coordinatesV2": "org.jasig.ehcache:ehcache-jgroups3replication:1.7.4",
+    "caller": "|java+method:///net/sf/ehcache/distribution/jgroups/jmx/JGroupsCacheReceiverStats/countRemoveExisting()|",
+    "called": "|java+method:///com/yammer/metrics/core/Meter/mark()|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/distribution/jgroups/jmx/AtomicRate/count()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicLong/incrementAndGet()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/yammer/metrics/core/Meter/mark()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicLong/incrementAndGet()|"
+    ],
+    "affectedLib": "com.yammer.metrics:metrics-core:2.1.2",
+    "change": "ADDED"
+  }
+]

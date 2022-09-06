@@ -1,0 +1,21 @@
+[
+  {
+    "coordinatesV1": "org.http4s:http4s-async-http-client_2.12:0.16.6a",
+    "coordinatesV2": "org.http4s:http4s-async-http-client_2.12:0.17.0-M2",
+    "caller": "|java+method:///org/http4s/client/asynchttpclient/AsyncHttpClient$/org$http4s$client$asynchttpclient$AsyncHttpClient$$getStatus(org.asynchttpclient.HttpResponseStatus)|",
+    "called": "|java+method:///org/http4s/Status$/fromInt(int)|",
+    "v1Body": [
+      "|java+method:///scalaz/$bslash$div/valueOr(scala.Function1)|",
+      "|java+method:///org/asynchttpclient/HttpResponseStatus/getStatusCode()|",
+      "|java+method:///org/http4s/Status$/fromInt(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/asynchttpclient/HttpResponseStatus/getStatusCode()|",
+      "|java+method:///cats/syntax/EitherOps$/valueOr$extension(scala.util.Either,scala.Function1)|",
+      "|java+method:///org/http4s/Status$/fromInt(int)|",
+      "|java+method:///cats/implicits$/catsSyntaxEither(scala.util.Either)|"
+    ],
+    "affectedLib": "org.http4s:http4s-core_2.12:0.17.0-M2",
+    "change": "UPDATED"
+  }
+]

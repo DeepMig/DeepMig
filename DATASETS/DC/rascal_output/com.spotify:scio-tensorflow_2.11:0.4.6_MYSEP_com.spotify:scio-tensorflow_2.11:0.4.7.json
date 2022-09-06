@@ -1,0 +1,43 @@
+[
+  {
+    "coordinatesV1": "com.spotify:scio-tensorflow_2.11:0.4.6",
+    "coordinatesV2": "com.spotify:scio-tensorflow_2.11:0.4.7",
+    "caller": "|java+method:///com/spotify/scio/tensorflow/TFExampleSCollectionFunctions$$anonfun$saveAsTfExampleFile$3/apply(java.lang.Object)|",
+    "called": "|java+method:///scala/runtime/BoxesRunTime/boxToInteger(int)|",
+    "v1Body": [
+      "|java+method:///com/spotify/scio/tensorflow/TFExampleSCollectionFunctions$$anonfun$saveAsTfExampleFile$3/apply(scala.collection.Seq)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/spotify/scio/tensorflow/TFExampleSCollectionFunctions$$anonfun$saveAsTfExampleFile$3/apply(java.lang.String)|",
+      "|java+method:///scala/runtime/BoxesRunTime/boxToInteger(int)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-library:2.11.12",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.spotify:scio-tensorflow_2.11:0.4.6",
+    "coordinatesV2": "com.spotify:scio-tensorflow_2.11:0.4.7",
+    "caller": "|java+method:///com/spotify/scio/tensorflow/TensorFlowSCollectionFunctions/predict(java.lang.String,scala.collection.Seq,byte%5B%5D,scala.Function1,scala.Function2,scala.reflect.ClassTag)|",
+    "called": "|java+method:///com/spotify/scio/DistCacheScioContext/distCache(java.lang.String,scala.Function1)|",
+    "v1Body": [
+      "|java+constructor:///com/spotify/scio/tensorflow/TensorFlowSCollectionFunctions$$anonfun$2/TensorFlowSCollectionFunctions$$anonfun$2(com.spotify.scio.tensorflow.TensorFlowSCollectionFunctions)|",
+      "|java+method:///com/spotify/scio/values/SCollection/parDo(org.apache.beam.sdk.transforms.DoFn,scala.reflect.ClassTag)|",
+      "|java+method:///com/spotify/scio/ScioContext$/makeDistCacheScioContext(com.spotify.scio.ScioContext)|",
+      "|java+method:///com/spotify/scio/DistCacheScioContext/distCache(java.lang.String,scala.Function1)|",
+      "|java+method:///com/spotify/scio/tensorflow/TensorFlowSCollectionFunctions/self()|",
+      "|java+constructor:///com/spotify/scio/tensorflow/PredictDoFn/PredictDoFn(com.spotify.scio.values.DistCache,scala.collection.Seq,byte%5B%5D,scala.Function1,scala.Function2)|",
+      "|java+method:///com/spotify/scio/values/SCollection/context()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/spotify/scio/values/SCollection/parDo(org.apache.beam.sdk.transforms.DoFn,scala.reflect.ClassTag)|",
+      "|java+method:///com/spotify/scio/ScioContext$/makeDistCacheScioContext(com.spotify.scio.ScioContext)|",
+      "|java+method:///com/spotify/scio/DistCacheScioContext/distCache(java.lang.String,scala.Function1)|",
+      "|java+method:///com/spotify/scio/tensorflow/TensorFlowSCollectionFunctions/self()|",
+      "|java+constructor:///com/spotify/scio/tensorflow/PredictDoFn/PredictDoFn(com.spotify.scio.values.DistCache,scala.collection.Seq,byte%5B%5D,scala.Function1,scala.Function2)|",
+      "|java+method:///com/spotify/scio/values/SCollection/context()|",
+      "|java+constructor:///com/spotify/scio/tensorflow/TensorFlowSCollectionFunctions$$anonfun$1/TensorFlowSCollectionFunctions$$anonfun$1(com.spotify.scio.tensorflow.TensorFlowSCollectionFunctions)|"
+    ],
+    "affectedLib": "com.spotify:scio-core_2.11:0.4.7",
+    "change": "UPDATED"
+  }
+]

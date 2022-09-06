@@ -1,0 +1,30 @@
+[
+  {
+    "coordinatesV1": "org.gedcomx:gedcomx-model:1.0.198.M1",
+    "coordinatesV2": "org.gedcomx:gedcomx-model:2.0.0",
+    "caller": "|java+constructor:///org/gedcomx/util/JsonRecordSetWriter/JsonRecordSetWriter(java.io.OutputStream,org.gedcomx.Gedcomx)|",
+    "called": "|java+method:///org/gedcomx/rt/json/GedcomJacksonModule/createObjectMapper(java.lang.Class%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/configure(org.codehaus.jackson.JsonGenerator$Feature,boolean)|",
+      "|java+method:///org/gedcomx/rt/json/GedcomJacksonModule/createObjectMapper(java.lang.Class%5B%5D)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/writeValue(java.io.OutputStream,java.lang.Object)|",
+      "|java+method:///java/lang/String/getBytes()|",
+      "|java+method:///java/io/OutputStream/write(byte%5B%5D)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/gedcomx/util/JsonRecordSetWriter/writeLabel(java.io.OutputStream,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValue(java.io.OutputStream,java.lang.Object)|",
+      "|java+method:///org/gedcomx/rt/json/GedcomJacksonModule/createObjectMapper(java.lang.Class%5B%5D)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///java/lang/String/getBytes()|",
+      "|java+method:///java/io/OutputStream/write(byte%5B%5D)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/configure(com.fasterxml.jackson.core.JsonGenerator$Feature,boolean)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/gedcomx/util/JsonRecordSetWriter/writeLabel(java.io.OutputStream,java.lang.String)|"
+    ],
+    "affectedLib": "org.gedcomx:gedcomx-rt-support:2.0.0",
+    "change": "UPDATED"
+  }
+]

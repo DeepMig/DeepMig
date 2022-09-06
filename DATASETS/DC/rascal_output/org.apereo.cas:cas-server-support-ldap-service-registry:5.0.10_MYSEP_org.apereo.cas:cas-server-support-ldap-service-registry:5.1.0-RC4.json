@@ -1,0 +1,275 @@
+[
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-ldap-service-registry:5.0.10",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-ldap-service-registry:5.1.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/adaptors/ldap/services/DefaultLdapRegisteredServiceMapper/mapToRegisteredService(org.ldaptive.LdapEntry)|",
+    "called": "|java+method:///org/springframework/util/StringUtils/hasText(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apereo/cas/configuration/CasConfigurationProperties/getServiceRegistry()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/serviceregistry/LdapServiceRegistryProperties/getServiceDefinitionAttribute()|",
+      "|java+method:///org/springframework/util/StringUtils/hasText(java.lang.String)|",
+      "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+      "|java+method:///org/apereo/cas/configuration/model/core/services/ServiceRegistryProperties/getLdap()|",
+      "|java+method:///org/apereo/cas/util/serialization/StringSerializer/from(java.lang.String)|",
+      "|java+method:///org/apereo/cas/util/LdapUtils/getString(org.ldaptive.LdapEntry,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/serviceregistry/LdapServiceRegistryProperties/getServiceDefinitionAttribute()|",
+      "|java+method:///org/springframework/util/StringUtils/hasText(java.lang.String)|",
+      "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+      "|java+method:///org/apereo/cas/util/serialization/StringSerializer/from(java.lang.String)|",
+      "|java+method:///org/apereo/cas/util/LdapUtils/getString(org.ldaptive.LdapEntry,java.lang.String)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:4.3.8.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-ldap-service-registry:5.0.10",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-ldap-service-registry:5.1.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/adaptors/ldap/services/DefaultLdapRegisteredServiceMapper/mapFromRegisteredService(java.lang.String,org.apereo.cas.services.RegisteredService)|",
+    "called": "|java+constructor:///org/ldaptive/LdapEntry/LdapEntry(java.lang.String,java.util.Collection)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///org/ldaptive/LdapAttribute/LdapAttribute(java.lang.String,java.lang.String%5B%5D)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/serviceregistry/LdapServiceRegistryProperties/getIdAttribute()|",
+      "|java+method:///org/apereo/cas/services/AbstractRegisteredService/setId(long)|",
+      "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+      "|java+method:///org/apereo/cas/configuration/model/core/services/ServiceRegistryProperties/getLdap()|",
+      "|java+constructor:///java/io/StringWriter/StringWriter()|",
+      "|java+method:///org/apereo/cas/services/RegisteredService/getId()|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+constructor:///org/ldaptive/LdapEntry/LdapEntry(java.lang.String,java.util.Collection)|",
+      "|java+method:///org/apereo/cas/configuration/CasConfigurationProperties/getServiceRegistry()|",
+      "|java+method:///org/apereo/cas/adaptors/ldap/services/DefaultLdapRegisteredServiceMapper/getDnForRegisteredService(java.lang.String,org.apereo.cas.services.RegisteredService)|",
+      "|java+method:///org/apereo/cas/util/serialization/StringSerializer/to(java.io.Writer,java.lang.Object)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/serviceregistry/LdapServiceRegistryProperties/getServiceDefinitionAttribute()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/Collection/add(java.lang.Object)|",
+      "|java+method:///java/io/StringWriter/toString()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/serviceregistry/LdapServiceRegistryProperties/getObjectClass()|",
+      "|java+method:///java/lang/String/valueOf(long)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///org/ldaptive/LdapAttribute/LdapAttribute(java.lang.String,java.lang.String%5B%5D)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/serviceregistry/LdapServiceRegistryProperties/getIdAttribute()|",
+      "|java+method:///org/apereo/cas/services/AbstractRegisteredService/setId(long)|",
+      "|java+method:///java/lang/System/nanoTime()|",
+      "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+      "|java+constructor:///java/io/StringWriter/StringWriter()|",
+      "|java+method:///org/apereo/cas/services/RegisteredService/getId()|",
+      "|java+constructor:///org/ldaptive/LdapEntry/LdapEntry(java.lang.String,java.util.Collection)|",
+      "|java+method:///org/apereo/cas/adaptors/ldap/services/DefaultLdapRegisteredServiceMapper/getDnForRegisteredService(java.lang.String,org.apereo.cas.services.RegisteredService)|",
+      "|java+method:///org/apereo/cas/util/serialization/StringSerializer/to(java.io.Writer,java.lang.Object)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/serviceregistry/LdapServiceRegistryProperties/getServiceDefinitionAttribute()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/Collection/add(java.lang.Object)|",
+      "|java+method:///java/io/StringWriter/toString()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/serviceregistry/LdapServiceRegistryProperties/getObjectClass()|",
+      "|java+method:///java/lang/String/valueOf(long)|"
+    ],
+    "affectedLib": "org.ldaptive:ldaptive:1.2.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-ldap-service-registry:5.0.10",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-ldap-service-registry:5.1.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/adaptors/ldap/services/LdapServiceRegistryDao/load()|",
+    "called": "|java+method:///org/ldaptive/SearchResult/getEntries()|",
+    "v1Body": [
+      "|java+method:///org/apereo/cas/adaptors/ldap/services/LdapServiceRegistryDao/getSearchResultResponse()|",
+      "|java+method:///org/ldaptive/SearchResult/getEntries()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/ldaptive/LdapException/getMessage()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/LinkedList/LinkedList()|",
+      "|java+method:///org/apereo/cas/util/LdapUtils/containsResultEntry(org.ldaptive.Response)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/apereo/cas/adaptors/ldap/services/LdapRegisteredServiceMapper/mapToRegisteredService(org.ldaptive.LdapEntry)|",
+      "|java+method:///org/ldaptive/Response/getResult()|",
+      "|java+method:///java/util/Collection/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/ldaptive/SearchResult/getEntries()|",
+      "|java+constructor:///java/util/LinkedList/LinkedList()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+method:///org/apereo/cas/adaptors/ldap/services/LdapServiceRegistryDao/getSearchResultResponse()|",
+      "|java+method:///java/util/Collection/stream()|",
+      "|java+method:///org/ldaptive/LdapException/getMessage()|",
+      "|java+method:///org/apereo/cas/util/LdapUtils/containsResultEntry(org.ldaptive.Response)|",
+      "|java+method:///java/util/stream/Stream/forEach(java.util.function.Consumer)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/ldaptive/Response/getResult()|"
+    ],
+    "affectedLib": "org.ldaptive:ldaptive:1.2.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-ldap-service-registry:5.0.10",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-ldap-service-registry:5.1.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/adaptors/ldap/services/LdapServiceRegistryDao/load()|",
+    "called": "|java+method:///org/apereo/cas/util/LdapUtils/containsResultEntry(org.ldaptive.Response)|",
+    "v1Body": [
+      "|java+method:///org/apereo/cas/adaptors/ldap/services/LdapServiceRegistryDao/getSearchResultResponse()|",
+      "|java+method:///org/ldaptive/SearchResult/getEntries()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/ldaptive/LdapException/getMessage()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/LinkedList/LinkedList()|",
+      "|java+method:///org/apereo/cas/util/LdapUtils/containsResultEntry(org.ldaptive.Response)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/apereo/cas/adaptors/ldap/services/LdapRegisteredServiceMapper/mapToRegisteredService(org.ldaptive.LdapEntry)|",
+      "|java+method:///org/ldaptive/Response/getResult()|",
+      "|java+method:///java/util/Collection/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/ldaptive/SearchResult/getEntries()|",
+      "|java+constructor:///java/util/LinkedList/LinkedList()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+method:///org/apereo/cas/adaptors/ldap/services/LdapServiceRegistryDao/getSearchResultResponse()|",
+      "|java+method:///java/util/Collection/stream()|",
+      "|java+method:///org/ldaptive/LdapException/getMessage()|",
+      "|java+method:///org/apereo/cas/util/LdapUtils/containsResultEntry(org.ldaptive.Response)|",
+      "|java+method:///java/util/stream/Stream/forEach(java.util.function.Consumer)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/ldaptive/Response/getResult()|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-support-ldap-core:5.1.0-RC4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-ldap-service-registry:5.0.10",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-ldap-service-registry:5.1.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/adaptors/ldap/services/LdapServiceRegistryDao/searchForServiceById(java.lang.Long)|",
+    "called": "|java+method:///org/apereo/cas/util/LdapUtils/executeSearchOperation(org.ldaptive.ConnectionFactory,java.lang.String,org.ldaptive.SearchFilter)|",
+    "v1Body": [
+      "|java+method:///java/lang/Long/toString()|",
+      "|java+method:///org/apereo/cas/configuration/support/Beans/newSearchFilter(java.lang.String,java.lang.String%5B%5D)|",
+      "|java+method:///org/apereo/cas/util/LdapUtils/executeSearchOperation(org.ldaptive.ConnectionFactory,java.lang.String,org.ldaptive.SearchFilter)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Long/toString()|",
+      "|java+method:///org/apereo/cas/configuration/support/Beans/newLdaptiveSearchFilter(java.lang.String,java.lang.String,java.util.List)|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///org/apereo/cas/util/LdapUtils/executeSearchOperation(org.ldaptive.ConnectionFactory,java.lang.String,org.ldaptive.SearchFilter)|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-support-ldap-core:5.1.0-RC4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-ldap-service-registry:5.0.10",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-ldap-service-registry:5.1.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/adaptors/ldap/services/DefaultLdapRegisteredServiceMapper/mapToRegisteredService(org.ldaptive.LdapEntry)|",
+    "called": "|java+method:///org/apereo/cas/util/LdapUtils/getString(org.ldaptive.LdapEntry,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apereo/cas/configuration/CasConfigurationProperties/getServiceRegistry()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/serviceregistry/LdapServiceRegistryProperties/getServiceDefinitionAttribute()|",
+      "|java+method:///org/springframework/util/StringUtils/hasText(java.lang.String)|",
+      "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+      "|java+method:///org/apereo/cas/configuration/model/core/services/ServiceRegistryProperties/getLdap()|",
+      "|java+method:///org/apereo/cas/util/serialization/StringSerializer/from(java.lang.String)|",
+      "|java+method:///org/apereo/cas/util/LdapUtils/getString(org.ldaptive.LdapEntry,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/serviceregistry/LdapServiceRegistryProperties/getServiceDefinitionAttribute()|",
+      "|java+method:///org/springframework/util/StringUtils/hasText(java.lang.String)|",
+      "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+      "|java+method:///org/apereo/cas/util/serialization/StringSerializer/from(java.lang.String)|",
+      "|java+method:///org/apereo/cas/util/LdapUtils/getString(org.ldaptive.LdapEntry,java.lang.String)|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-support-ldap-core:5.1.0-RC4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-ldap-service-registry:5.0.10",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-ldap-service-registry:5.1.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/adaptors/ldap/services/LdapServiceRegistryDao/getSearchResultResponse()|",
+    "called": "|java+method:///org/apereo/cas/util/LdapUtils/executeSearchOperation(org.ldaptive.ConnectionFactory,java.lang.String,org.ldaptive.SearchFilter)|",
+    "v1Body": [
+      "|java+method:///org/apereo/cas/configuration/support/Beans/newSearchFilter(java.lang.String,java.lang.String%5B%5D)|",
+      "|java+method:///org/apereo/cas/util/LdapUtils/executeSearchOperation(org.ldaptive.ConnectionFactory,java.lang.String,org.ldaptive.SearchFilter)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apereo/cas/configuration/support/Beans/newLdaptiveSearchFilter(java.lang.String)|",
+      "|java+method:///org/apereo/cas/util/LdapUtils/executeSearchOperation(org.ldaptive.ConnectionFactory,java.lang.String,org.ldaptive.SearchFilter)|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-support-ldap-core:5.1.0-RC4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-ldap-service-registry:5.0.10",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-ldap-service-registry:5.1.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/adaptors/ldap/services/DefaultLdapRegisteredServiceMapper/mapFromRegisteredService(java.lang.String,org.apereo.cas.services.RegisteredService)|",
+    "called": "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///org/ldaptive/LdapAttribute/LdapAttribute(java.lang.String,java.lang.String%5B%5D)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/serviceregistry/LdapServiceRegistryProperties/getIdAttribute()|",
+      "|java+method:///org/apereo/cas/services/AbstractRegisteredService/setId(long)|",
+      "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+      "|java+method:///org/apereo/cas/configuration/model/core/services/ServiceRegistryProperties/getLdap()|",
+      "|java+constructor:///java/io/StringWriter/StringWriter()|",
+      "|java+method:///org/apereo/cas/services/RegisteredService/getId()|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+constructor:///org/ldaptive/LdapEntry/LdapEntry(java.lang.String,java.util.Collection)|",
+      "|java+method:///org/apereo/cas/configuration/CasConfigurationProperties/getServiceRegistry()|",
+      "|java+method:///org/apereo/cas/adaptors/ldap/services/DefaultLdapRegisteredServiceMapper/getDnForRegisteredService(java.lang.String,org.apereo.cas.services.RegisteredService)|",
+      "|java+method:///org/apereo/cas/util/serialization/StringSerializer/to(java.io.Writer,java.lang.Object)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/serviceregistry/LdapServiceRegistryProperties/getServiceDefinitionAttribute()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/Collection/add(java.lang.Object)|",
+      "|java+method:///java/io/StringWriter/toString()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/serviceregistry/LdapServiceRegistryProperties/getObjectClass()|",
+      "|java+method:///java/lang/String/valueOf(long)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///org/ldaptive/LdapAttribute/LdapAttribute(java.lang.String,java.lang.String%5B%5D)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/serviceregistry/LdapServiceRegistryProperties/getIdAttribute()|",
+      "|java+method:///org/apereo/cas/services/AbstractRegisteredService/setId(long)|",
+      "|java+method:///java/lang/System/nanoTime()|",
+      "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+      "|java+constructor:///java/io/StringWriter/StringWriter()|",
+      "|java+method:///org/apereo/cas/services/RegisteredService/getId()|",
+      "|java+constructor:///org/ldaptive/LdapEntry/LdapEntry(java.lang.String,java.util.Collection)|",
+      "|java+method:///org/apereo/cas/adaptors/ldap/services/DefaultLdapRegisteredServiceMapper/getDnForRegisteredService(java.lang.String,org.apereo.cas.services.RegisteredService)|",
+      "|java+method:///org/apereo/cas/util/serialization/StringSerializer/to(java.io.Writer,java.lang.Object)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/serviceregistry/LdapServiceRegistryProperties/getServiceDefinitionAttribute()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/Collection/add(java.lang.Object)|",
+      "|java+method:///java/io/StringWriter/toString()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/serviceregistry/LdapServiceRegistryProperties/getObjectClass()|",
+      "|java+method:///java/lang/String/valueOf(long)|"
+    ],
+    "affectedLib": "com.google.guava:guava:21.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-ldap-service-registry:5.0.10",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-ldap-service-registry:5.1.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/adaptors/ldap/services/DefaultLdapRegisteredServiceMapper/mapToRegisteredService(org.ldaptive.LdapEntry)|",
+    "called": "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/apereo/cas/configuration/CasConfigurationProperties/getServiceRegistry()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/serviceregistry/LdapServiceRegistryProperties/getServiceDefinitionAttribute()|",
+      "|java+method:///org/springframework/util/StringUtils/hasText(java.lang.String)|",
+      "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+      "|java+method:///org/apereo/cas/configuration/model/core/services/ServiceRegistryProperties/getLdap()|",
+      "|java+method:///org/apereo/cas/util/serialization/StringSerializer/from(java.lang.String)|",
+      "|java+method:///org/apereo/cas/util/LdapUtils/getString(org.ldaptive.LdapEntry,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/serviceregistry/LdapServiceRegistryProperties/getServiceDefinitionAttribute()|",
+      "|java+method:///org/springframework/util/StringUtils/hasText(java.lang.String)|",
+      "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+      "|java+method:///org/apereo/cas/util/serialization/StringSerializer/from(java.lang.String)|",
+      "|java+method:///org/apereo/cas/util/LdapUtils/getString(org.ldaptive.LdapEntry,java.lang.String)|"
+    ],
+    "affectedLib": "com.google.guava:guava:21.0",
+    "change": "UPDATED"
+  }
+]

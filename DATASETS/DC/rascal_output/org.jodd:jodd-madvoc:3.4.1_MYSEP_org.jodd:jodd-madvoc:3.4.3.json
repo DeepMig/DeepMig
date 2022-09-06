@@ -1,0 +1,555 @@
+[
+  {
+    "coordinatesV1": "org.jodd:jodd-madvoc:3.4.1",
+    "coordinatesV2": "org.jodd:jodd-madvoc:3.4.3",
+    "caller": "|java+method:///jodd/madvoc/MadvocServletFilter/doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)|",
+    "called": "|java+method:///jodd/servlet/DispatcherUtil/getServletPath(javax.servlet.http.HttpServletRequest)|",
+    "v1Body": [
+      "|java+method:///jodd/madvoc/component/MadvocController/invoke(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///javax/servlet/FilterChain/doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///jodd/servlet/DispatcherUtil/getServletPath(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///jodd/madvoc/MadvocServletFilter/processUnhandledPath(java.lang.String,javax.servlet.ServletRequest,javax.servlet.ServletResponse)|",
+      "|java+method:///java/lang/Exception/printStackTrace()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///javax/servlet/ServletException/ServletException(java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///jodd/madvoc/MadvocResponseWrapper/MadvocResponseWrapper(javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///jodd/madvoc/component/MadvocController/invoke(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///javax/servlet/FilterChain/doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///jodd/servlet/DispatcherUtil/getServletPath(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///jodd/madvoc/MadvocServletFilter/processUnhandledPath(java.lang.String,javax.servlet.ServletRequest,javax.servlet.ServletResponse)|",
+      "|java+method:///java/lang/Exception/printStackTrace()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///javax/servlet/ServletException/ServletException(java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.jodd:jodd-servlet:3.4.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jodd:jodd-madvoc:3.4.1",
+    "coordinatesV2": "org.jodd:jodd-madvoc:3.4.3",
+    "caller": "|java+method:///jodd/madvoc/result/RawResult/render(jodd.madvoc.ActionRequest,java.lang.Object,java.lang.String,java.lang.String)|",
+    "called": "|java+method:///jodd/servlet/ServletUtil/prepareResponse(javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String,int)|",
+    "v1Body": [
+      "|java+method:///jodd/madvoc/ActionRequest/getHttpServletResponse()|",
+      "|java+method:///jodd/io/StreamUtil/copy(java.io.InputStream,java.io.OutputStream)|",
+      "|java+constructor:///jodd/madvoc/result/RawData/RawData(byte%5B%5D)|",
+      "|java+method:///jodd/madvoc/component/MadvocConfig/getEncoding()|",
+      "|java+method:///jodd/servlet/ServletUtil/prepareDownload(javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String,int)|",
+      "|java+method:///jodd/io/StreamUtil/close(java.io.InputStream)|",
+      "|java+method:///java/lang/String/getBytes(java.lang.String)|",
+      "|java+method:///jodd/madvoc/result/RawResultData/getMimeType()|",
+      "|java+method:///jodd/madvoc/result/RawResultData/getDownloadFileName()|",
+      "|java+method:///jodd/madvoc/result/RawResultData/getContentInputStream()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/getOutputStream()|",
+      "|java+method:///jodd/madvoc/result/RawResultData/getContentLength()|",
+      "|java+method:///java/io/OutputStream/flush()|"
+    ],
+    "v2Body": [
+      "|java+method:///jodd/madvoc/ActionRequest/getHttpServletResponse()|",
+      "|java+method:///jodd/io/StreamUtil/copy(java.io.InputStream,java.io.OutputStream)|",
+      "|java+constructor:///jodd/madvoc/result/RawData/RawData(byte%5B%5D)|",
+      "|java+method:///jodd/servlet/ServletUtil/prepareResponse(javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String,int)|",
+      "|java+method:///jodd/madvoc/component/MadvocConfig/getEncoding()|",
+      "|java+method:///jodd/io/StreamUtil/close(java.io.InputStream)|",
+      "|java+method:///java/lang/String/getBytes(java.lang.String)|",
+      "|java+method:///jodd/madvoc/result/RawResultData/getMimeType()|",
+      "|java+method:///jodd/madvoc/result/RawResultData/getDownloadFileName()|",
+      "|java+method:///jodd/madvoc/result/RawResultData/getContentInputStream()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/getOutputStream()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/setContentType(java.lang.String)|",
+      "|java+method:///jodd/madvoc/result/RawResultData/getContentLength()|",
+      "|java+method:///java/io/OutputStream/flush()|"
+    ],
+    "affectedLib": "org.jodd:jodd-servlet:3.4.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jodd:jodd-madvoc:3.4.1",
+    "coordinatesV2": "org.jodd:jodd-madvoc:3.4.3",
+    "caller": "|java+method:///jodd/madvoc/component/ActionsManager/register(java.lang.Class,java.lang.String,java.lang.String)|",
+    "called": "|java+method:///jodd/introspector/ClassIntrospector/lookup(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///jodd/madvoc/component/ActionsManager/registerAction(java.lang.Class,java.lang.reflect.Method,java.lang.String)|",
+      "|java+constructor:///jodd/madvoc/MadvocException/MadvocException(java.lang.String)|",
+      "|java+method:///jodd/introspector/ClassDescriptor/getMethod(java.lang.String)|",
+      "|java+method:///jodd/introspector/ClassIntrospector/lookup(java.lang.Class)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///jodd/madvoc/component/ActionsManager/registerAction(java.lang.Class,java.lang.reflect.Method,java.lang.String)|",
+      "|java+constructor:///jodd/madvoc/MadvocException/MadvocException(java.lang.String)|",
+      "|java+method:///jodd/introspector/ClassIntrospector/lookup(java.lang.Class)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///jodd/introspector/ClassDescriptor/getMethod(java.lang.String,boolean)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.jodd:jodd-bean:3.4.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jodd:jodd-madvoc:3.4.1",
+    "coordinatesV2": "org.jodd:jodd-madvoc:3.4.3",
+    "caller": "|java+method:///jodd/madvoc/injector/ActionPathMacroInjector/inject(java.lang.Object,jodd.madvoc.ActionRequest)|",
+    "called": "|java+method:///jodd/bean/BeanUtil/setDeclaredPropertyForcedSilent(java.lang.Object,java.lang.String,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///jodd/madvoc/ActionRequest/getActionConfig()|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///jodd/bean/BeanUtil/setDeclaredPropertyForcedSilent(java.lang.Object,java.lang.String,java.lang.Object)|",
+      "|java+method:///jodd/madvoc/ActionRequest/getActionPathChunks()|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+method:///jodd/madvoc/ActionConfig/getActionConfigSet()|"
+    ],
+    "v2Body": [
+      "|java+method:///jodd/madvoc/macro/PathMacros/extract(java.lang.String)|",
+      "|java+method:///jodd/madvoc/macro/PathMacros/getNames()|",
+      "|java+method:///jodd/madvoc/ActionRequest/getActionConfig()|",
+      "|java+method:///jodd/madvoc/ActionRequest/getActionPath()|",
+      "|java+method:///jodd/bean/BeanUtil/setDeclaredPropertyForcedSilent(java.lang.Object,java.lang.String,java.lang.Object)|",
+      "|java+method:///jodd/madvoc/ActionConfig/getActionConfigSet()|",
+      "|java+method:///jodd/util/StringUtil/isEmpty(java.lang.String)|"
+    ],
+    "affectedLib": "org.jodd:jodd-bean:3.4.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jodd:jodd-madvoc:3.4.1",
+    "coordinatesV2": "org.jodd:jodd-madvoc:3.4.3",
+    "caller": "|java+method:///jodd/madvoc/injector/MadvocParamsInjector/inject(java.lang.Object)|",
+    "called": "|java+method:///jodd/bean/BeanUtil/setDeclaredPropertySilent(java.lang.Object,java.lang.String,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///jodd/petite/resolver/ParamResolver/resolve(java.lang.String,boolean)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///jodd/petite/resolver/ParamResolver/get(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///jodd/bean/BeanUtil/setDeclaredPropertySilent(java.lang.Object,java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "v2Body": [
+      "|java+method:///jodd/petite/ParamManager/resolve(java.lang.String,boolean)|",
+      "|java+method:///jodd/petite/ParamManager/get(java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///jodd/bean/BeanUtil/setDeclaredPropertySilent(java.lang.Object,java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "org.jodd:jodd-bean:3.4.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jodd:jodd-madvoc:3.4.1",
+    "coordinatesV2": "org.jodd:jodd-madvoc:3.4.3",
+    "caller": "|java+method:///jodd/madvoc/config/AutomagicMadvocConfigurator/onActionClass(java.lang.String)|",
+    "called": "|java+method:///jodd/introspector/ClassIntrospector/lookup(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///jodd/madvoc/meta/ActionAnnotation/hasAnnotation(java.lang.reflect.AccessibleObject)|",
+      "|java+method:///jodd/introspector/ClassDescriptor/getAllMethods()|",
+      "|java+method:///java/lang/Class/getAnnotation(java.lang.Class)|",
+      "|java+method:///jodd/madvoc/component/ActionsManager/register(java.lang.Class,java.lang.reflect.Method)|",
+      "|java+method:///jodd/madvoc/component/MadvocConfig/getActionAnnotationInstances()|",
+      "|java+method:///java/lang/Class/getSuperclass()|",
+      "|java+method:///jodd/util/ClassLoaderUtil/loadClass(java.lang.String)|",
+      "|java+method:///jodd/madvoc/config/AutomagicMadvocConfigurator/checkClass(java.lang.Class)|",
+      "|java+method:///jodd/introspector/ClassIntrospector/lookup(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///jodd/madvoc/meta/ActionAnnotation/hasAnnotation(java.lang.reflect.AccessibleObject)|",
+      "|java+method:///java/lang/Class/getAnnotation(java.lang.Class)|",
+      "|java+method:///jodd/madvoc/component/ActionsManager/register(java.lang.Class,java.lang.reflect.Method)|",
+      "|java+method:///jodd/madvoc/component/MadvocConfig/getActionAnnotationInstances()|",
+      "|java+method:///jodd/introspector/ClassDescriptor/getAllMethods(boolean)|",
+      "|java+method:///java/lang/Class/getSuperclass()|",
+      "|java+method:///jodd/util/ClassLoaderUtil/loadClass(java.lang.String)|",
+      "|java+method:///jodd/madvoc/config/AutomagicMadvocConfigurator/checkClass(java.lang.Class)|",
+      "|java+method:///jodd/introspector/ClassIntrospector/lookup(java.lang.Class)|"
+    ],
+    "affectedLib": "org.jodd:jodd-bean:3.4.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jodd:jodd-madvoc:3.4.1",
+    "coordinatesV2": "org.jodd:jodd-madvoc:3.4.3",
+    "caller": "|java+constructor:///jodd/madvoc/component/MadvocConfig/MadvocConfig()|",
+    "called": "|java+constructor:///jodd/upload/impl/AdaptiveFileUploadFactory/AdaptiveFileUploadFactory()|",
+    "v1Body": [
+      "|java+method:///jodd/madvoc/component/MadvocConfig/setActionAnnotations(java.lang.Class%5B%5D)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///jodd/upload/impl/AdaptiveFileUploadFactory/AdaptiveFileUploadFactory()|",
+      "|java+constructor:///jodd/madvoc/injector/RequestScopeInjector$Config/RequestScopeInjector$Config()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///jodd/madvoc/component/MadvocConfig/setActionAnnotations(java.lang.Class%5B%5D)|",
+      "|java+constructor:///jodd/upload/impl/AdaptiveFileUploadFactory/AdaptiveFileUploadFactory()|",
+      "|java+constructor:///jodd/madvoc/injector/RequestScopeInjector$Config/RequestScopeInjector$Config()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.jodd:jodd-upload:3.4.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jodd:jodd-madvoc:3.4.1",
+    "coordinatesV2": "org.jodd:jodd-madvoc:3.4.3",
+    "caller": "|java+method:///jodd/madvoc/component/ActionsManager/registerAction(java.lang.Class,java.lang.reflect.Method,java.lang.String)|",
+    "called": "|java+method:///jodd/util/collection/SortedArrayList/add(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+constructor:///jodd/madvoc/MadvocException/MadvocException(java.lang.String)|",
+      "|java+method:///java/util/HashMap/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/reflect/Method/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///jodd/madvoc/component/MadvocConfig/isDetectDuplicatePathsEnabled()|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+constructor:///jodd/madvoc/ActionConfigSet/ActionConfigSet(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///java/util/HashMap/get(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///jodd/util/collection/SortedArrayList/add(java.lang.Object)|",
+      "|java+method:///jodd/util/BinarySearch/find(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/HashMap/containsKey(java.lang.Object)|",
+      "|java+method:///jodd/util/collection/SortedArrayList/get(int)|",
+      "|java+method:///jodd/madvoc/ActionConfigSet/add(jodd.madvoc.ActionConfig)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///jodd/madvoc/component/ActionMethodParser/parse(java.lang.Class,java.lang.reflect.Method,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///jodd/madvoc/component/ActionsManager/createActionConfigSet(java.lang.String)|",
+      "|java+method:///jodd/util/collection/SortedArrayList/add(java.lang.Object)|",
+      "|java+constructor:///jodd/madvoc/MadvocException/MadvocException(java.lang.String)|",
+      "|java+method:///java/util/HashMap/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/reflect/Method/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///jodd/madvoc/component/MadvocConfig/isDetectDuplicatePathsEnabled()|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///java/util/HashMap/get(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///jodd/util/collection/SortedArrayList/size()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/HashMap/containsKey(java.lang.Object)|",
+      "|java+method:///jodd/util/collection/SortedArrayList/get(int)|",
+      "|java+method:///jodd/madvoc/ActionConfigSet/add(jodd.madvoc.ActionConfig)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///jodd/madvoc/component/ActionMethodParser/parse(java.lang.Class,java.lang.reflect.Method,java.lang.String)|"
+    ],
+    "affectedLib": "org.jodd:jodd-core:3.4.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jodd:jodd-madvoc:3.4.1",
+    "coordinatesV2": "org.jodd:jodd-madvoc:3.4.3",
+    "caller": "|java+constructor:///jodd/madvoc/component/ActionsManager/ActionsManager()|",
+    "called": "|java+constructor:///jodd/util/collection/SortedArrayList/SortedArrayList(java.util.Comparator)|",
+    "v1Body": [
+      "|java+method:///jodd/util/BinarySearch/forList(java.util.List)|",
+      "|java+constructor:///jodd/madvoc/component/ActionsManager$ActionPathChunksBinarySearch/ActionsManager$ActionPathChunksBinarySearch(jodd.madvoc.component.ActionsManager)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///jodd/util/collection/SortedArrayList/SortedArrayList()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///jodd/util/collection/SortedArrayList/SortedArrayList(java.util.Comparator)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///jodd/madvoc/component/ActionsManager$ActionConfigSetComparator/ActionsManager$ActionConfigSetComparator()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.jodd:jodd-core:3.4.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jodd:jodd-madvoc:3.4.1",
+    "coordinatesV2": "org.jodd:jodd-madvoc:3.4.3",
+    "caller": "|java+constructor:///jodd/madvoc/meta/ActionAnnotation/ActionAnnotation(java.lang.Class)|",
+    "called": "|java+constructor:///jodd/util/AnnotationDataReader/AnnotationDataReader(java.lang.Class,java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///jodd/util/AnnotationDataReader/AnnotationDataReader(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///jodd/util/AnnotationDataReader/AnnotationDataReader(java.lang.Class,java.lang.Class)|"
+    ],
+    "affectedLib": "org.jodd:jodd-core:3.4.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jodd:jodd-madvoc:3.4.1",
+    "coordinatesV2": "org.jodd:jodd-madvoc:3.4.3",
+    "caller": "|java+method:///jodd/madvoc/Madvoc/createWebApplication()|",
+    "called": "|java+method:///jodd/util/ClassLoaderUtil/loadClass(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///jodd/util/ClassLoaderUtil/loadClass(java.lang.String)|",
+      "|java+method:///java/lang/Class/newInstance()|",
+      "|java+constructor:///jodd/madvoc/WebApplication/WebApplication()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/Exception/toString()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///jodd/madvoc/MadvocException/MadvocException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///jodd/madvoc/MadvocException/MadvocException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///jodd/util/ClassLoaderUtil/loadClass(java.lang.String)|",
+      "|java+method:///java/lang/Class/newInstance()|",
+      "|java+constructor:///jodd/madvoc/WebApplication/WebApplication()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///jodd/madvoc/MadvocException/MadvocException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///jodd/madvoc/MadvocException/MadvocException(java.lang.String)|"
+    ],
+    "affectedLib": "org.jodd:jodd-core:3.4.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jodd:jodd-madvoc:3.4.1",
+    "coordinatesV2": "org.jodd:jodd-madvoc:3.4.3",
+    "caller": "|java+method:///jodd/madvoc/component/ActionMethodParser/parse(java.lang.Class,java.lang.reflect.Method,java.lang.String)|",
+    "called": "|java+method:///jodd/util/StringUtil/replace(java.lang.String,java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///jodd/madvoc/component/ActionMethodParser/readMethodHttpMethod(jodd.madvoc.meta.ActionAnnotationData)|",
+      "|java+method:///jodd/madvoc/component/ActionMethodParser/readClassActionPath(java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///jodd/madvoc/component/MadvocConfig/getDefaultActionMethodNames()|",
+      "|java+method:///java/lang/Class/getAnnotation(java.lang.Class)|",
+      "|java+method:///jodd/madvoc/component/MadvocConfig/registerPathAlias(java.lang.String,java.lang.String)|",
+      "|java+method:///jodd/util/StringUtil/replace(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///jodd/madvoc/meta/ActionAnnotation/readAnnotationData(java.lang.reflect.AccessibleObject)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///jodd/madvoc/component/ActionMethodParser/buildActionPath(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///jodd/madvoc/component/ActionMethodParser/readMethodAlias(jodd.madvoc.meta.ActionAnnotationData)|",
+      "|java+method:///jodd/madvoc/component/ActionMethodParser/readMethodActionPath(java.lang.String,jodd.madvoc.meta.ActionAnnotationData)|",
+      "|java+method:///java/lang/Class/getSuperclass()|",
+      "|java+method:///jodd/madvoc/component/ActionMethodParser/createActionConfig(java.lang.Class,java.lang.reflect.Method,java.lang.Class%5B%5D,java.lang.String,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///jodd/madvoc/component/ActionMethodParser/readMethodExtension(jodd.madvoc.meta.ActionAnnotationData)|",
+      "|java+method:///java/lang/reflect/Method/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///jodd/madvoc/component/ActionMethodParser/readClassInterceptors(java.lang.Class)|",
+      "|java+method:///jodd/madvoc/component/ActionMethodParser/readResultType(jodd.madvoc.meta.ActionAnnotationData)|",
+      "|java+method:///jodd/madvoc/component/MadvocConfig/isCreateDefaultAliases()|",
+      "|java+method:///jodd/madvoc/component/MadvocConfig/getActionAnnotationInstances()|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+method:///jodd/madvoc/component/ActionMethodParser/readMethodInterceptors(java.lang.reflect.Method)|",
+      "|java+method:///jodd/util/StringUtil/cutToIndexOf(java.lang.String,java.lang.String)|",
+      "|java+method:///jodd/madvoc/component/ActionMethodParser/readPackageActionPath(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///jodd/madvoc/component/ActionMethodParser/readMethodHttpMethod(jodd.madvoc.meta.ActionAnnotationData)|",
+      "|java+method:///jodd/madvoc/component/ActionMethodParser/readClassActionPath(java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///jodd/madvoc/component/MadvocConfig/getDefaultActionMethodNames()|",
+      "|java+method:///java/lang/Class/getAnnotation(java.lang.Class)|",
+      "|java+method:///jodd/util/StringUtil/replace(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///jodd/madvoc/component/ActionMethodParser/buildActionPath(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///jodd/madvoc/component/ActionMethodParser/readMethodAlias(jodd.madvoc.meta.ActionAnnotationData)|",
+      "|java+method:///jodd/madvoc/component/ActionMethodParser/readMethodActionPath(java.lang.String,jodd.madvoc.meta.ActionAnnotationData)|",
+      "|java+method:///java/lang/Class/getSuperclass()|",
+      "|java+method:///jodd/madvoc/component/ActionMethodParser/createActionConfig(java.lang.Class,java.lang.reflect.Method,java.lang.Class%5B%5D,java.lang.String,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///jodd/madvoc/component/ActionMethodParser/readMethodExtension(jodd.madvoc.meta.ActionAnnotationData)|",
+      "|java+method:///java/lang/reflect/Method/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///jodd/madvoc/component/ActionMethodParser/readClassInterceptors(java.lang.Class)|",
+      "|java+method:///jodd/madvoc/component/ActionMethodParser/readResultType(jodd.madvoc.meta.ActionAnnotationData)|",
+      "|java+method:///jodd/madvoc/component/MadvocConfig/isCreateDefaultAliases()|",
+      "|java+method:///jodd/madvoc/component/MadvocConfig/getActionAnnotationInstances()|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+method:///jodd/madvoc/component/ActionMethodParser/readMethodInterceptors(java.lang.reflect.Method)|",
+      "|java+method:///jodd/util/StringUtil/cutToIndexOf(java.lang.String,java.lang.String)|",
+      "|java+method:///jodd/madvoc/component/ActionMethodParser/readPackageActionPath(java.lang.Class)|",
+      "|java+method:///jodd/madvoc/meta/ActionAnnotation/readAnnotationData(java.lang.reflect.AccessibleObject)|",
+      "|java+method:///jodd/madvoc/component/ActionsManager/registerPathAlias(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.jodd:jodd-core:3.4.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jodd:jodd-madvoc:3.4.1",
+    "coordinatesV2": "org.jodd:jodd-madvoc:3.4.3",
+    "caller": "|java+method:///jodd/madvoc/injector/ActionPathMacroInjector/inject(java.lang.Object,jodd.madvoc.ActionRequest)|",
+    "called": "|java+method:///jodd/util/StringUtil/isEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///jodd/madvoc/ActionRequest/getActionConfig()|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///jodd/bean/BeanUtil/setDeclaredPropertyForcedSilent(java.lang.Object,java.lang.String,java.lang.Object)|",
+      "|java+method:///jodd/madvoc/ActionRequest/getActionPathChunks()|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+method:///jodd/madvoc/ActionConfig/getActionConfigSet()|"
+    ],
+    "v2Body": [
+      "|java+method:///jodd/madvoc/macro/PathMacros/extract(java.lang.String)|",
+      "|java+method:///jodd/madvoc/macro/PathMacros/getNames()|",
+      "|java+method:///jodd/madvoc/ActionRequest/getActionConfig()|",
+      "|java+method:///jodd/madvoc/ActionRequest/getActionPath()|",
+      "|java+method:///jodd/bean/BeanUtil/setDeclaredPropertyForcedSilent(java.lang.Object,java.lang.String,java.lang.Object)|",
+      "|java+method:///jodd/madvoc/ActionConfig/getActionConfigSet()|",
+      "|java+method:///jodd/util/StringUtil/isEmpty(java.lang.String)|"
+    ],
+    "affectedLib": "org.jodd:jodd-core:3.4.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jodd:jodd-madvoc:3.4.1",
+    "coordinatesV2": "org.jodd:jodd-madvoc:3.4.3",
+    "caller": "|java+method:///jodd/madvoc/config/AutomagicMadvocConfigurator/onActionClass(java.lang.String)|",
+    "called": "|java+method:///jodd/util/ClassLoaderUtil/loadClass(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///jodd/madvoc/meta/ActionAnnotation/hasAnnotation(java.lang.reflect.AccessibleObject)|",
+      "|java+method:///jodd/introspector/ClassDescriptor/getAllMethods()|",
+      "|java+method:///java/lang/Class/getAnnotation(java.lang.Class)|",
+      "|java+method:///jodd/madvoc/component/ActionsManager/register(java.lang.Class,java.lang.reflect.Method)|",
+      "|java+method:///jodd/madvoc/component/MadvocConfig/getActionAnnotationInstances()|",
+      "|java+method:///java/lang/Class/getSuperclass()|",
+      "|java+method:///jodd/util/ClassLoaderUtil/loadClass(java.lang.String)|",
+      "|java+method:///jodd/madvoc/config/AutomagicMadvocConfigurator/checkClass(java.lang.Class)|",
+      "|java+method:///jodd/introspector/ClassIntrospector/lookup(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///jodd/madvoc/meta/ActionAnnotation/hasAnnotation(java.lang.reflect.AccessibleObject)|",
+      "|java+method:///java/lang/Class/getAnnotation(java.lang.Class)|",
+      "|java+method:///jodd/madvoc/component/ActionsManager/register(java.lang.Class,java.lang.reflect.Method)|",
+      "|java+method:///jodd/madvoc/component/MadvocConfig/getActionAnnotationInstances()|",
+      "|java+method:///jodd/introspector/ClassDescriptor/getAllMethods(boolean)|",
+      "|java+method:///java/lang/Class/getSuperclass()|",
+      "|java+method:///jodd/util/ClassLoaderUtil/loadClass(java.lang.String)|",
+      "|java+method:///jodd/madvoc/config/AutomagicMadvocConfigurator/checkClass(java.lang.Class)|",
+      "|java+method:///jodd/introspector/ClassIntrospector/lookup(java.lang.Class)|"
+    ],
+    "affectedLib": "org.jodd:jodd-core:3.4.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jodd:jodd-madvoc:3.4.1",
+    "coordinatesV2": "org.jodd:jodd-madvoc:3.4.3",
+    "caller": "|java+constructor:///jodd/madvoc/meta/ActionAnnotation/ActionAnnotation()|",
+    "called": "|java+constructor:///jodd/util/AnnotationDataReader/AnnotationDataReader(java.lang.Class,java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///jodd/util/AnnotationDataReader/AnnotationDataReader()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///jodd/util/AnnotationDataReader/AnnotationDataReader(java.lang.Class,java.lang.Class)|"
+    ],
+    "affectedLib": "org.jodd:jodd-core:3.4.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jodd:jodd-madvoc:3.4.1",
+    "coordinatesV2": "org.jodd:jodd-madvoc:3.4.3",
+    "caller": "|java+method:///jodd/madvoc/Madvoc/loadMadvocConfig()|",
+    "called": "|java+method:///jodd/util/ClassLoaderUtil/loadClass(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///jodd/util/ClassLoaderUtil/loadClass(java.lang.String)|",
+      "|java+method:///java/lang/Class/newInstance()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///jodd/madvoc/config/AutomagicMadvocConfigurator/AutomagicMadvocConfigurator()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/Exception/toString()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///jodd/madvoc/MadvocException/MadvocException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///jodd/madvoc/MadvocException/MadvocException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///jodd/util/ClassLoaderUtil/loadClass(java.lang.String)|",
+      "|java+method:///java/lang/Class/newInstance()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///jodd/madvoc/config/AutomagicMadvocConfigurator/AutomagicMadvocConfigurator()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///jodd/madvoc/MadvocException/MadvocException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///jodd/madvoc/MadvocException/MadvocException(java.lang.String)|"
+    ],
+    "affectedLib": "org.jodd:jodd-core:3.4.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jodd:jodd-madvoc:3.4.1",
+    "coordinatesV2": "org.jodd:jodd-madvoc:3.4.3",
+    "caller": "|java+method:///jodd/madvoc/result/RawResult/render(jodd.madvoc.ActionRequest,java.lang.Object,java.lang.String,java.lang.String)|",
+    "called": "|java+method:///jodd/io/StreamUtil/copy(java.io.InputStream,java.io.OutputStream)|",
+    "v1Body": [
+      "|java+method:///jodd/madvoc/ActionRequest/getHttpServletResponse()|",
+      "|java+method:///jodd/io/StreamUtil/copy(java.io.InputStream,java.io.OutputStream)|",
+      "|java+constructor:///jodd/madvoc/result/RawData/RawData(byte%5B%5D)|",
+      "|java+method:///jodd/madvoc/component/MadvocConfig/getEncoding()|",
+      "|java+method:///jodd/servlet/ServletUtil/prepareDownload(javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String,int)|",
+      "|java+method:///jodd/io/StreamUtil/close(java.io.InputStream)|",
+      "|java+method:///java/lang/String/getBytes(java.lang.String)|",
+      "|java+method:///jodd/madvoc/result/RawResultData/getMimeType()|",
+      "|java+method:///jodd/madvoc/result/RawResultData/getDownloadFileName()|",
+      "|java+method:///jodd/madvoc/result/RawResultData/getContentInputStream()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/getOutputStream()|",
+      "|java+method:///jodd/madvoc/result/RawResultData/getContentLength()|",
+      "|java+method:///java/io/OutputStream/flush()|"
+    ],
+    "v2Body": [
+      "|java+method:///jodd/madvoc/ActionRequest/getHttpServletResponse()|",
+      "|java+method:///jodd/io/StreamUtil/copy(java.io.InputStream,java.io.OutputStream)|",
+      "|java+constructor:///jodd/madvoc/result/RawData/RawData(byte%5B%5D)|",
+      "|java+method:///jodd/servlet/ServletUtil/prepareResponse(javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String,int)|",
+      "|java+method:///jodd/madvoc/component/MadvocConfig/getEncoding()|",
+      "|java+method:///jodd/io/StreamUtil/close(java.io.InputStream)|",
+      "|java+method:///java/lang/String/getBytes(java.lang.String)|",
+      "|java+method:///jodd/madvoc/result/RawResultData/getMimeType()|",
+      "|java+method:///jodd/madvoc/result/RawResultData/getDownloadFileName()|",
+      "|java+method:///jodd/madvoc/result/RawResultData/getContentInputStream()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/getOutputStream()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/setContentType(java.lang.String)|",
+      "|java+method:///jodd/madvoc/result/RawResultData/getContentLength()|",
+      "|java+method:///java/io/OutputStream/flush()|"
+    ],
+    "affectedLib": "org.jodd:jodd-core:3.4.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jodd:jodd-madvoc:3.4.1",
+    "coordinatesV2": "org.jodd:jodd-madvoc:3.4.3",
+    "caller": "|java+method:///jodd/madvoc/injector/MadvocParamsInjector/inject(java.lang.Object)|",
+    "called": "|java+method:///jodd/petite/ParamManager/get(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///jodd/petite/resolver/ParamResolver/resolve(java.lang.String,boolean)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///jodd/petite/resolver/ParamResolver/get(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///jodd/bean/BeanUtil/setDeclaredPropertySilent(java.lang.Object,java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "v2Body": [
+      "|java+method:///jodd/petite/ParamManager/resolve(java.lang.String,boolean)|",
+      "|java+method:///jodd/petite/ParamManager/get(java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///jodd/bean/BeanUtil/setDeclaredPropertySilent(java.lang.Object,java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "org.jodd:jodd-petite:3.4.3",
+    "change": "UPDATED"
+  }
+]

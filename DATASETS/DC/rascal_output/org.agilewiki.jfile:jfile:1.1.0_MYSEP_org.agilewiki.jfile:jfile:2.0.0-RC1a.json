@@ -1,0 +1,119 @@
+[
+  {
+    "coordinatesV1": "org.agilewiki.jfile:jfile:1.1.0",
+    "coordinatesV2": "org.agilewiki.jfile:jfile:2.0.0-RC1a",
+    "caller": "|java+method:///org/agilewiki/jfile/transactions/db/DB/getTransactionAggregator()|",
+    "called": "|java+constructor:///org/joda/time/DateTime/DateTime()|",
+    "v1Body": [
+      "|java+method:///org/agilewiki/jfile/transactions/transactionAggregator/TransactionAggregator/setNext(org.agilewiki.jfile.transactions.BlockProcessor)|",
+      "|java+method:///org/agilewiki/jfile/transactions/DurableTransactionLogger/setNext(org.agilewiki.jfile.transactions.BlockProcessor)|",
+      "|java+method:///org/agilewiki/jfile/transactions/Serializer/setNext(org.agilewiki.jfile.transactions.BlockProcessor)|",
+      "|java+method:///org/agilewiki/jfile/transactions/db/DB/newTransactionAggregator(org.agilewiki.jactor.Mailbox)|",
+      "|java+method:///org/agilewiki/jfile/transactions/TransactionProcessor/setParent(org.agilewiki.jactor.Actor)|",
+      "|java+method:///org/agilewiki/jfile/transactions/transactionAggregator/TransactionAggregator/setParent(org.agilewiki.jactor.Actor)|",
+      "|java+method:///org/agilewiki/jfile/transactions/db/DB/getParent()|",
+      "|java+method:///org/agilewiki/jfile/transactions/db/DB/getMailbox()|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///org/agilewiki/jfile/transactions/db/DB/getMailboxFactory()|",
+      "|java+constructor:///org/agilewiki/jfile/transactions/DurableTransactionLogger/DurableTransactionLogger(org.agilewiki.jactor.Mailbox)|",
+      "|java+constructor:///org/agilewiki/jfile/transactions/TransactionProcessor/TransactionProcessor(org.agilewiki.jactor.Mailbox)|",
+      "|java+constructor:///org/agilewiki/jfile/transactions/Serializer/Serializer(org.agilewiki.jactor.Mailbox)|",
+      "|java+method:///org/agilewiki/jfile/transactions/Serializer/setParent(org.agilewiki.jactor.Actor)|",
+      "|java+method:///org/agilewiki/jactor/MailboxFactory/createAsyncMailbox()|",
+      "|java+method:///org/agilewiki/jfile/transactions/DurableTransactionLogger/setParent(org.agilewiki.jactor.Actor)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/agilewiki/jfile/transactions/transactionAggregator/TransactionAggregator/setNext(org.agilewiki.jfile.transactions.BlockProcessor)|",
+      "|java+method:///org/agilewiki/jfile/transactions/DurableTransactionLogger/open(java.nio.file.Path,java.nio.file.OpenOption%5B%5D)|",
+      "|java+method:///java/nio/file/Path/resolve(java.lang.String)|",
+      "|java+method:///org/agilewiki/jfile/transactions/DurableTransactionLogger/setNext(org.agilewiki.jfile.transactions.BlockProcessor)|",
+      "|java+method:///org/agilewiki/jfile/transactions/Serializer/setNext(org.agilewiki.jfile.transactions.BlockProcessor)|",
+      "|java+method:///org/agilewiki/jfile/transactions/db/DB/newTransactionAggregator()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/agilewiki/jactor/MailboxFactory/createAsyncMailbox()|",
+      "|java+constructor:///org/joda/time/DateTime/DateTime()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/agilewiki/jfile/transactions/Serializer/initialize(org.agilewiki.jactor.Mailbox,org.agilewiki.jactor.Actor)|",
+      "|java+method:///org/agilewiki/jfile/transactions/DurableTransactionLogger/initialize(org.agilewiki.jactor.Mailbox,org.agilewiki.jactor.Actor)|",
+      "|java+method:///org/agilewiki/jfile/transactions/transactionAggregator/TransactionAggregator/initialize(org.agilewiki.jactor.Mailbox,org.agilewiki.jactor.Actor)|",
+      "|java+method:///org/agilewiki/jfile/transactions/db/DB/getMailbox()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///org/agilewiki/jfile/transactions/db/DB/getMailboxFactory()|",
+      "|java+constructor:///org/agilewiki/jfile/transactions/DurableTransactionLogger/DurableTransactionLogger()|",
+      "|java+constructor:///org/agilewiki/jfile/transactions/TransactionProcessor/TransactionProcessor()|",
+      "|java+constructor:///org/agilewiki/jfile/transactions/Serializer/Serializer()|",
+      "|java+method:///org/agilewiki/jfile/transactions/db/DB/getParent()|",
+      "|java+method:///org/agilewiki/jfile/transactions/TransactionProcessor/initialize(org.agilewiki.jactor.Mailbox,org.agilewiki.jactor.Actor)|",
+      "|java+method:///org/joda/time/DateTime/toString(java.lang.String)|"
+    ],
+    "affectedLib": "joda-time:joda-time:2.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.agilewiki.jfile:jfile:1.1.0",
+    "coordinatesV2": "org.agilewiki.jfile:jfile:2.0.0-RC1a",
+    "caller": "|java+method:///org/agilewiki/jfile/transactions/transactionAggregator/TransactionAggregator/makeRootJid()|",
+    "called": "|java+constructor:///org/agilewiki/jid/scalar/vlens/actor/RootJid/RootJid()|",
+    "v1Body": [
+      "|java+method:///org/agilewiki/jid/scalar/vlens/actor/RootJid/getValue()|",
+      "|java+method:///org/agilewiki/jfile/transactions/transactionAggregator/TransactionAggregator/getParent()|",
+      "|java+method:///org/agilewiki/jactor/MailboxFactory/createMailbox()|",
+      "|java+method:///org/agilewiki/jid/scalar/vlens/actor/RootJid/setValue(java.lang.String)|",
+      "|java+method:///org/agilewiki/jfile/transactions/transactionAggregator/TransactionAggregator/getMailboxFactory()|",
+      "|java+constructor:///org/agilewiki/jid/scalar/vlens/actor/RootJid/RootJid(org.agilewiki.jactor.Mailbox)|",
+      "|java+method:///org/agilewiki/jid/scalar/vlens/actor/RootJid/setParent(org.agilewiki.jactor.Actor)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/agilewiki/jid/scalar/vlens/actor/RootJid/initialize(org.agilewiki.jactor.Mailbox,org.agilewiki.jactor.Actor)|",
+      "|java+method:///org/agilewiki/jid/scalar/vlens/actor/RootJid/getValue()|",
+      "|java+method:///org/agilewiki/jfile/transactions/transactionAggregator/TransactionAggregator/getParent()|",
+      "|java+method:///org/agilewiki/jactor/MailboxFactory/createMailbox()|",
+      "|java+method:///org/agilewiki/jid/scalar/vlens/actor/RootJid/setValue(java.lang.String)|",
+      "|java+method:///org/agilewiki/jfile/transactions/transactionAggregator/TransactionAggregator/getMailboxFactory()|",
+      "|java+constructor:///org/agilewiki/jid/scalar/vlens/actor/RootJid/RootJid()|"
+    ],
+    "affectedLib": "org.agilewiki.jid:jid:1.2.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.agilewiki.jfile:jfile:1.1.0",
+    "coordinatesV2": "org.agilewiki.jfile:jfile:2.0.0-RC1a",
+    "caller": "|java+method:///org/agilewiki/jfile/block/LBlock/getRootJid(org.agilewiki.jactor.Mailbox,org.agilewiki.jactor.Actor)|",
+    "called": "|java+constructor:///org/agilewiki/jid/ReadableBytes/ReadableBytes(byte%5B%5D,int)|",
+    "v1Body": [
+      "|java+constructor:///org/agilewiki/jid/ReadableBytes/ReadableBytes(byte%5B%5D,int)|",
+      "|java+method:///org/agilewiki/jid/scalar/vlens/actor/RootJid/load(org.agilewiki.jid.ReadableBytes)|",
+      "|java+constructor:///org/agilewiki/jid/scalar/vlens/actor/RootJid/RootJid(org.agilewiki.jactor.Mailbox)|",
+      "|java+method:///org/agilewiki/jid/scalar/vlens/actor/RootJid/setParent(org.agilewiki.jactor.Actor)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/agilewiki/jactor/factory/JAFactory/newActor(java.lang.String,org.agilewiki.jactor.Mailbox,org.agilewiki.jactor.Actor)|",
+      "|java+constructor:///org/agilewiki/jid/ReadableBytes/ReadableBytes(byte%5B%5D,int)|",
+      "|java+method:///org/agilewiki/jactor/Actor/getAncestor(java.lang.Class)|",
+      "|java+method:///org/agilewiki/jid/scalar/vlens/actor/RootJid/load(org.agilewiki.jid.ReadableBytes)|"
+    ],
+    "affectedLib": "org.agilewiki.jid:jid:1.2.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.agilewiki.jfile:jfile:1.1.0",
+    "coordinatesV2": "org.agilewiki.jfile:jfile:2.0.0-RC1a",
+    "caller": "|java+method:///org/agilewiki/jfile/block/LBlock/getRootJid(org.agilewiki.jactor.Mailbox,org.agilewiki.jactor.Actor)|",
+    "called": "|java+method:///org/agilewiki/jactor/factory/JAFactory/newActor(java.lang.String,org.agilewiki.jactor.Mailbox,org.agilewiki.jactor.Actor)|",
+    "v1Body": [
+      "|java+constructor:///org/agilewiki/jid/ReadableBytes/ReadableBytes(byte%5B%5D,int)|",
+      "|java+method:///org/agilewiki/jid/scalar/vlens/actor/RootJid/load(org.agilewiki.jid.ReadableBytes)|",
+      "|java+constructor:///org/agilewiki/jid/scalar/vlens/actor/RootJid/RootJid(org.agilewiki.jactor.Mailbox)|",
+      "|java+method:///org/agilewiki/jid/scalar/vlens/actor/RootJid/setParent(org.agilewiki.jactor.Actor)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/agilewiki/jactor/factory/JAFactory/newActor(java.lang.String,org.agilewiki.jactor.Mailbox,org.agilewiki.jactor.Actor)|",
+      "|java+constructor:///org/agilewiki/jid/ReadableBytes/ReadableBytes(byte%5B%5D,int)|",
+      "|java+method:///org/agilewiki/jactor/Actor/getAncestor(java.lang.Class)|",
+      "|java+method:///org/agilewiki/jid/scalar/vlens/actor/RootJid/load(org.agilewiki.jid.ReadableBytes)|"
+    ],
+    "affectedLib": "org.agilewiki.jactor:jactor:3.2.0",
+    "change": "UPDATED"
+  }
+]

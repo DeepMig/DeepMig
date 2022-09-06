@@ -1,0 +1,814 @@
+[
+  {
+    "coordinatesV1": "org.tentackle:tentackle-persistence:2.1.0",
+    "coordinatesV2": "org.tentackle:tentackle-persistence:2.0.7",
+    "caller": "|java+method:///org/tentackle/persist/ResultSetCursor/scroll(int)|",
+    "called": "|java+constructor:///org/tentackle/pdo/PersistenceException/PersistenceException(org.tentackle.pdo.Session,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/tentackle/pdo/Session/isRemote()|",
+      "|java+method:///org/tentackle/persist/ResultSetCursor/setRow(int)|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/scroll(int)|",
+      "|java+constructor:///org/tentackle/pdo/PersistenceException/PersistenceException(org.tentackle.pdo.Session,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/tentackle/persist/ResultSetCursor/setRow(int)|",
+      "|java+constructor:///org/tentackle/session/PersistenceException/PersistenceException(org.tentackle.session.Session,java.lang.Throwable)|",
+      "|java+method:///org/tentackle/session/Session/isRemote()|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/scroll(int)|"
+    ],
+    "affectedLib": "org.tentackle:tentackle-core:2.0.7",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.tentackle:tentackle-persistence:2.1.0",
+    "coordinatesV2": "org.tentackle:tentackle-persistence:2.0.7",
+    "caller": "|java+method:///org/tentackle/persist/ResultSetCursor/getFetchSize()|",
+    "called": "|java+method:///org/tentackle/pdo/PersistenceException/createFromRemoteException(java.lang.Object,java.rmi.RemoteException)|",
+    "v1Body": [
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/getFetchSize()|",
+      "|java+method:///org/tentackle/pdo/Session/isRemote()|",
+      "|java+method:///org/tentackle/pdo/PersistenceException/createFromRemoteException(java.lang.Object,java.rmi.RemoteException)|",
+      "|java+method:///org/tentackle/persist/ResultSetWrapper/getFetchSize()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/tentackle/session/PersistenceException/createFromRemoteException(java.lang.Object,java.rmi.RemoteException)|",
+      "|java+method:///org/tentackle/session/Session/isRemote()|",
+      "|java+method:///org/tentackle/dbms/ResultSetWrapper/getFetchSize()|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/getFetchSize()|"
+    ],
+    "affectedLib": "org.tentackle:tentackle-core:2.0.7",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.tentackle:tentackle-persistence:2.1.0",
+    "coordinatesV2": "org.tentackle:tentackle-persistence:2.0.7",
+    "caller": "|java+method:///org/tentackle/persist/ResultSetCursor/previous()|",
+    "called": "|java+constructor:///org/tentackle/pdo/PersistenceException/PersistenceException(org.tentackle.pdo.Session,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/tentackle/persist/ResultSetCursor/assertNoJoins()|",
+      "|java+method:///org/tentackle/pdo/Session/isRemote()|",
+      "|java+method:///org/tentackle/persist/ResultSetWrapper/previous()|",
+      "|java+constructor:///org/tentackle/pdo/PersistenceException/PersistenceException(org.tentackle.pdo.Session,java.lang.Throwable)|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/previous()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/tentackle/persist/ResultSetCursor/assertNoJoins()|",
+      "|java+method:///org/tentackle/session/Session/isRemote()|",
+      "|java+constructor:///org/tentackle/session/PersistenceException/PersistenceException(org.tentackle.session.Session,java.lang.Throwable)|",
+      "|java+method:///org/tentackle/dbms/ResultSetWrapper/previous()|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/previous()|"
+    ],
+    "affectedLib": "org.tentackle:tentackle-core:2.0.7",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.tentackle:tentackle-persistence:2.1.0",
+    "coordinatesV2": "org.tentackle:tentackle-persistence:2.0.7",
+    "caller": "|java+method:///org/tentackle/persist/ResultSetCursor/toList()|",
+    "called": "|java+method:///org/tentackle/pdo/PersistenceException/createFromRemoteException(java.lang.Object,java.rmi.RemoteException)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/tentackle/persist/ResultSetCursor/toList(java.util.List)|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/toList()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/tentackle/pdo/Session/isRemote()|",
+      "|java+method:///org/tentackle/persist/ResultSetCursor/configureRemoteObject(org.tentackle.pdo.PersistentDomainObject)|",
+      "|java+method:///org/tentackle/pdo/PersistenceException/createFromRemoteException(java.lang.Object,java.rmi.RemoteException)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/tentackle/session/PersistenceException/createFromRemoteException(java.lang.Object,java.rmi.RemoteException)|",
+      "|java+method:///org/tentackle/session/Session/isRemote()|",
+      "|java+method:///org/tentackle/persist/ResultSetCursor/configureRemoteObject(org.tentackle.pdo.PersistentDomainObject)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/tentackle/persist/ResultSetCursor/toList(java.util.List)|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/toList()|",
+      "|java+method:///java/util/List/iterator()|"
+    ],
+    "affectedLib": "org.tentackle:tentackle-core:2.0.7",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.tentackle:tentackle-persistence:2.1.0",
+    "coordinatesV2": "org.tentackle:tentackle-persistence:2.0.7",
+    "caller": "|java+method:///org/tentackle/persist/ResultSetCursor/isAfterLast()|",
+    "called": "|java+constructor:///org/tentackle/pdo/PersistenceException/PersistenceException(org.tentackle.pdo.Session,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/tentackle/pdo/Session/isRemote()|",
+      "|java+method:///org/tentackle/persist/ResultSetWrapper/isAfterLast()|",
+      "|java+constructor:///org/tentackle/pdo/PersistenceException/PersistenceException(org.tentackle.pdo.Session,java.lang.Throwable)|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/isAfterLast()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/tentackle/session/Session/isRemote()|",
+      "|java+constructor:///org/tentackle/session/PersistenceException/PersistenceException(org.tentackle.session.Session,java.lang.Throwable)|",
+      "|java+method:///org/tentackle/dbms/ResultSetWrapper/isAfterLast()|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/isAfterLast()|"
+    ],
+    "affectedLib": "org.tentackle:tentackle-core:2.0.7",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.tentackle:tentackle-persistence:2.1.0",
+    "coordinatesV2": "org.tentackle:tentackle-persistence:2.0.7",
+    "caller": "|java+method:///org/tentackle/persist/ResultSetCursor/close()|",
+    "called": "|java+constructor:///org/tentackle/pdo/PersistenceException/PersistenceException(org.tentackle.pdo.Session,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/tentackle/pdo/Session/isRemote()|",
+      "|java+method:///org/tentackle/persist/ResultSetWrapper/close()|",
+      "|java+constructor:///org/tentackle/pdo/PersistenceException/PersistenceException(org.tentackle.pdo.Session,java.lang.Throwable)|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/close()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/tentackle/session/Session/isRemote()|",
+      "|java+constructor:///org/tentackle/session/PersistenceException/PersistenceException(org.tentackle.session.Session,java.lang.Throwable)|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/close()|",
+      "|java+method:///org/tentackle/dbms/ResultSetWrapper/close()|"
+    ],
+    "affectedLib": "org.tentackle:tentackle-core:2.0.7",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.tentackle:tentackle-persistence:2.1.0",
+    "coordinatesV2": "org.tentackle:tentackle-persistence:2.0.7",
+    "caller": "|java+method:///org/tentackle/persist/ResultSetCursor/first()|",
+    "called": "|java+constructor:///org/tentackle/pdo/PersistenceException/PersistenceException(org.tentackle.pdo.Session,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/tentackle/pdo/Session/isRemote()|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/first()|",
+      "|java+method:///org/tentackle/persist/ResultSetCursor/next()|",
+      "|java+constructor:///org/tentackle/pdo/PersistenceException/PersistenceException(org.tentackle.pdo.Session,java.lang.Throwable)|",
+      "|java+method:///org/tentackle/persist/ResultSetWrapper/first()|",
+      "|java+method:///org/tentackle/pdo/JoinedSelect/initialize(java.util.List)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/tentackle/persist/JoinedSelect/initialize(java.util.List)|",
+      "|java+constructor:///org/tentackle/session/PersistenceException/PersistenceException(org.tentackle.session.Session,java.lang.Throwable)|",
+      "|java+method:///org/tentackle/dbms/ResultSetWrapper/first()|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/first()|",
+      "|java+method:///org/tentackle/session/Session/isRemote()|",
+      "|java+method:///org/tentackle/persist/ResultSetCursor/next()|"
+    ],
+    "affectedLib": "org.tentackle:tentackle-core:2.0.7",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.tentackle:tentackle-persistence:2.1.0",
+    "coordinatesV2": "org.tentackle:tentackle-persistence:2.0.7",
+    "caller": "|java+method:///org/tentackle/persist/ResultSetCursor/setRow(int)|",
+    "called": "|java+constructor:///org/tentackle/pdo/PersistenceException/PersistenceException(org.tentackle.pdo.Session,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/tentackle/pdo/Session/isRemote()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/tentackle/persist/ResultSetWrapper/absolute(int)|",
+      "|java+constructor:///org/tentackle/pdo/PersistenceException/PersistenceException(org.tentackle.pdo.Session,java.lang.Throwable)|",
+      "|java+method:///org/tentackle/persist/ResultSetWrapper/getRow()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/setRow(int)|",
+      "|java+method:///org/tentackle/persist/ResultSetCursor/assertNoJoins()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/tentackle/pdo/PersistenceException/PersistenceException(org.tentackle.pdo.Session,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/tentackle/dbms/ResultSetWrapper/absolute(int)|",
+      "|java+method:///org/tentackle/dbms/ResultSetWrapper/getRow()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/tentackle/session/Session/isRemote()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/tentackle/session/PersistenceException/PersistenceException(org.tentackle.session.Session,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/setRow(int)|",
+      "|java+method:///org/tentackle/persist/ResultSetCursor/assertNoJoins()|",
+      "|java+constructor:///org/tentackle/session/PersistenceException/PersistenceException(org.tentackle.session.Session,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|"
+    ],
+    "affectedLib": "org.tentackle:tentackle-core:2.0.7",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.tentackle:tentackle-persistence:2.1.0",
+    "coordinatesV2": "org.tentackle:tentackle-persistence:2.0.7",
+    "caller": "|java+method:///org/tentackle/persist/ResultSetCursor/get()|",
+    "called": "|java+method:///org/tentackle/pdo/PersistentDomainObject/getPersistenceDelegate()|",
+    "v1Body": [
+      "|java+method:///org/tentackle/pdo/JoinedSelect/currentPdo()|",
+      "|java+method:///org/tentackle/pdo/Session/isRemote()|",
+      "|java+method:///org/tentackle/persist/ResultSetCursor/next()|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/get()|",
+      "|java+method:///org/tentackle/pdo/Pdo/create(org.tentackle.pdo.PersistentDomainObject)|",
+      "|java+method:///org/tentackle/persist/ResultSetCursor/get()|",
+      "|java+method:///org/tentackle/pdo/AbstractPersistentObject/derivePdoFromPo(org.tentackle.pdo.PersistentDomainObject,org.tentackle.pdo.AbstractPersistentObject)|",
+      "|java+method:///org/tentackle/pdo/PersistentDomainObject/getPersistenceDelegate()|",
+      "|java+method:///org/tentackle/pdo/AbstractPersistentObject/readFromResultSetWrapper(org.tentackle.persist.ResultSetWrapper)|",
+      "|java+method:///org/tentackle/pdo/AbstractPersistentObject/readJoinedRow(org.tentackle.persist.ResultSetWrapper,org.tentackle.pdo.JoinedSelect)|",
+      "|java+constructor:///org/tentackle/pdo/PersistenceException/PersistenceException(org.tentackle.pdo.Session,java.lang.Throwable)|",
+      "|java+method:///org/tentackle/persist/ResultSetCursor/configureRemoteObject(org.tentackle.pdo.PersistentDomainObject)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/tentackle/persist/AbstractPersistentObject/readFromResultSetWrapper(org.tentackle.dbms.ResultSetWrapper)|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/get()|",
+      "|java+method:///org/tentackle/persist/ResultSetCursor/configureRemoteObject(org.tentackle.pdo.PersistentDomainObject)|",
+      "|java+method:///org/tentackle/pdo/Pdo/create(org.tentackle.pdo.PersistentDomainObject)|",
+      "|java+method:///org/tentackle/persist/ResultSetCursor/get()|",
+      "|java+constructor:///org/tentackle/session/PersistenceException/PersistenceException(org.tentackle.session.Session,java.lang.Throwable)|",
+      "|java+method:///org/tentackle/persist/AbstractPersistentObject/readJoinedRow(org.tentackle.dbms.ResultSetWrapper,org.tentackle.persist.JoinedSelect)|",
+      "|java+method:///org/tentackle/pdo/PersistentDomainObject/getPersistenceDelegate()|",
+      "|java+method:///org/tentackle/persist/JoinedSelect/currentPdo()|",
+      "|java+method:///org/tentackle/persist/AbstractPersistentObject/derivePdoFromPo(org.tentackle.pdo.PersistentDomainObject,org.tentackle.persist.AbstractPersistentObject)|",
+      "|java+method:///org/tentackle/session/Session/isRemote()|",
+      "|java+method:///org/tentackle/persist/ResultSetCursor/next()|"
+    ],
+    "affectedLib": "org.tentackle:tentackle-core:2.0.7",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.tentackle:tentackle-persistence:2.1.0",
+    "coordinatesV2": "org.tentackle:tentackle-persistence:2.0.7",
+    "caller": "|java+method:///org/tentackle/persist/ResultSetCursor/fetch()|",
+    "called": "|java+method:///org/tentackle/pdo/PersistenceException/createFromRemoteException(java.lang.Object,java.rmi.RemoteException)|",
+    "v1Body": [
+      "|java+method:///org/tentackle/persist/ResultSetCursor$FetchList/add(java.lang.Object)|",
+      "|java+method:///org/tentackle/persist/ResultSetCursor$FetchList/size()|",
+      "|java+constructor:///org/tentackle/persist/ResultSetCursor$FetchList/ResultSetCursor$FetchList()|",
+      "|java+method:///org/tentackle/persist/ResultSetCursor/next()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/fetch()|",
+      "|java+method:///org/tentackle/persist/ResultSetCursor$FetchList/iterator()|",
+      "|java+method:///org/tentackle/persist/ResultSetCursor/toList(java.util.List)|",
+      "|java+method:///org/tentackle/persist/ResultSetCursor/get()|",
+      "|java+method:///org/tentackle/persist/ResultSetCursor$FetchList/isEmpty()|",
+      "|java+method:///org/tentackle/persist/ResultSetCursor/close()|",
+      "|java+method:///org/tentackle/persist/ResultSetCursor/fetch()|",
+      "|java+method:///org/tentackle/persist/ResultSetCursor/getFetchSize()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/tentackle/pdo/Session/isRemote()|",
+      "|java+method:///org/tentackle/persist/ResultSetCursor/configureRemoteObject(org.tentackle.pdo.PersistentDomainObject)|",
+      "|java+method:///org/tentackle/pdo/PersistenceException/createFromRemoteException(java.lang.Object,java.rmi.RemoteException)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/tentackle/persist/ResultSetCursor$FetchList/add(java.lang.Object)|",
+      "|java+method:///org/tentackle/persist/ResultSetCursor$FetchList/size()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///org/tentackle/persist/ResultSetCursor$FetchList/ResultSetCursor$FetchList()|",
+      "|java+method:///org/tentackle/session/PersistenceException/createFromRemoteException(java.lang.Object,java.rmi.RemoteException)|",
+      "|java+method:///org/tentackle/persist/ResultSetCursor/configureRemoteObject(org.tentackle.pdo.PersistentDomainObject)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/fetch()|",
+      "|java+method:///org/tentackle/persist/ResultSetCursor$FetchList/iterator()|",
+      "|java+method:///org/tentackle/persist/ResultSetCursor/toList(java.util.List)|",
+      "|java+method:///org/tentackle/persist/ResultSetCursor/get()|",
+      "|java+method:///org/tentackle/persist/ResultSetCursor$FetchList/isEmpty()|",
+      "|java+method:///org/tentackle/persist/ResultSetCursor/close()|",
+      "|java+method:///org/tentackle/persist/ResultSetCursor/fetch()|",
+      "|java+method:///org/tentackle/persist/ResultSetCursor/getFetchSize()|",
+      "|java+method:///org/tentackle/session/Session/isRemote()|",
+      "|java+method:///org/tentackle/persist/ResultSetCursor/next()|"
+    ],
+    "affectedLib": "org.tentackle:tentackle-core:2.0.7",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.tentackle:tentackle-persistence:2.1.0",
+    "coordinatesV2": "org.tentackle:tentackle-persistence:2.0.7",
+    "caller": "|java+method:///org/tentackle/persist/ResultSetCursor/afterLast()|",
+    "called": "|java+constructor:///org/tentackle/pdo/PersistenceException/PersistenceException(org.tentackle.pdo.Session,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/tentackle/persist/ResultSetCursor/assertNoJoins()|",
+      "|java+method:///org/tentackle/pdo/Session/isRemote()|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/afterLast()|",
+      "|java+constructor:///org/tentackle/pdo/PersistenceException/PersistenceException(org.tentackle.pdo.Session,java.lang.Throwable)|",
+      "|java+method:///org/tentackle/persist/ResultSetWrapper/afterLast()|",
+      "|java+method:///org/tentackle/persist/ResultSetWrapper/getRow()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/tentackle/persist/ResultSetCursor/assertNoJoins()|",
+      "|java+method:///org/tentackle/dbms/ResultSetWrapper/getRow()|",
+      "|java+method:///org/tentackle/session/Session/isRemote()|",
+      "|java+constructor:///org/tentackle/session/PersistenceException/PersistenceException(org.tentackle.session.Session,java.lang.Throwable)|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/afterLast()|",
+      "|java+method:///org/tentackle/dbms/ResultSetWrapper/afterLast()|"
+    ],
+    "affectedLib": "org.tentackle:tentackle-core:2.0.7",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.tentackle:tentackle-persistence:2.1.0",
+    "coordinatesV2": "org.tentackle:tentackle-persistence:2.0.7",
+    "caller": "|java+method:///org/tentackle/persist/ResultSetCursor/configureRemoteObject(org.tentackle.pdo.PersistentDomainObject)|",
+    "called": "|java+method:///org/tentackle/pdo/PersistentDomainObject/getPersistenceDelegate()|",
+    "v1Body": [
+      "|java+method:///org/tentackle/pdo/Session/applyTo(org.tentackle.pdo.SessionDependable)|",
+      "|java+method:///org/tentackle/pdo/AbstractPersistentObject/configureRemoteObject(org.tentackle.pdo.DomainContext,org.tentackle.pdo.PersistentDomainObject)|",
+      "|java+method:///org/tentackle/pdo/PersistentDomainObject/getPersistenceDelegate()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/tentackle/session/Session/applyTo(org.tentackle.session.SessionDependable)|",
+      "|java+method:///org/tentackle/pdo/PersistentDomainObject/getPersistenceDelegate()|",
+      "|java+method:///org/tentackle/persist/AbstractPersistentObject/configureRemoteObject(org.tentackle.pdo.DomainContext,org.tentackle.pdo.PersistentDomainObject)|"
+    ],
+    "affectedLib": "org.tentackle:tentackle-core:2.0.7",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.tentackle:tentackle-persistence:2.1.0",
+    "coordinatesV2": "org.tentackle:tentackle-persistence:2.0.7",
+    "caller": "|java+method:///org/tentackle/persist/ResultSetCursor/beforeFirst()|",
+    "called": "|java+constructor:///org/tentackle/pdo/PersistenceException/PersistenceException(org.tentackle.pdo.Session,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/tentackle/pdo/Session/isRemote()|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/beforeFirst()|",
+      "|java+constructor:///org/tentackle/pdo/PersistenceException/PersistenceException(org.tentackle.pdo.Session,java.lang.Throwable)|",
+      "|java+method:///org/tentackle/persist/ResultSetWrapper/beforeFirst()|",
+      "|java+method:///org/tentackle/pdo/JoinedSelect/initialize(java.util.List)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/tentackle/session/Session/isRemote()|",
+      "|java+method:///org/tentackle/persist/JoinedSelect/initialize(java.util.List)|",
+      "|java+constructor:///org/tentackle/session/PersistenceException/PersistenceException(org.tentackle.session.Session,java.lang.Throwable)|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/beforeFirst()|",
+      "|java+method:///org/tentackle/dbms/ResultSetWrapper/beforeFirst()|"
+    ],
+    "affectedLib": "org.tentackle:tentackle-core:2.0.7",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.tentackle:tentackle-persistence:2.1.0",
+    "coordinatesV2": "org.tentackle:tentackle-persistence:2.0.7",
+    "caller": "|java+method:///org/tentackle/persist/ResultSetCursor/assertNoJoins()|",
+    "called": "|java+constructor:///org/tentackle/pdo/PersistenceException/PersistenceException(org.tentackle.pdo.Session,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/tentackle/pdo/PersistenceException/PersistenceException(org.tentackle.pdo.Session,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/tentackle/session/PersistenceException/PersistenceException(org.tentackle.session.Session,java.lang.String)|"
+    ],
+    "affectedLib": "org.tentackle:tentackle-core:2.0.7",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.tentackle:tentackle-persistence:2.1.0",
+    "coordinatesV2": "org.tentackle:tentackle-persistence:2.0.7",
+    "caller": "|java+method:///org/tentackle/persist/ResultSetCursor/next()|",
+    "called": "|java+constructor:///org/tentackle/pdo/PersistenceException/PersistenceException(org.tentackle.pdo.Session,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///org/tentackle/pdo/PersistenceException/PersistenceException(org.tentackle.pdo.Session,java.lang.Throwable)|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/next()|",
+      "|java+method:///org/tentackle/pdo/Session/isRemote()|",
+      "|java+method:///org/tentackle/persist/ResultSetWrapper/next()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/tentackle/session/Session/isRemote()|",
+      "|java+constructor:///org/tentackle/session/PersistenceException/PersistenceException(org.tentackle.session.Session,java.lang.Throwable)|",
+      "|java+method:///org/tentackle/dbms/ResultSetWrapper/next()|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/next()|"
+    ],
+    "affectedLib": "org.tentackle:tentackle-core:2.0.7",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.tentackle:tentackle-persistence:2.1.0",
+    "coordinatesV2": "org.tentackle:tentackle-persistence:2.0.7",
+    "caller": "|java+method:///org/tentackle/persist/ResultSetCursor/assertSessionIsLocal()|",
+    "called": "|java+constructor:///org/tentackle/pdo/PersistenceException/PersistenceException(org.tentackle.pdo.Session,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/tentackle/pdo/Session/isRemote()|",
+      "|java+constructor:///org/tentackle/pdo/PersistenceException/PersistenceException(org.tentackle.pdo.Session,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/tentackle/session/PersistenceException/PersistenceException(org.tentackle.session.Session,java.lang.String)|",
+      "|java+method:///org/tentackle/session/Session/isRemote()|"
+    ],
+    "affectedLib": "org.tentackle:tentackle-core:2.0.7",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.tentackle:tentackle-persistence:2.1.0",
+    "coordinatesV2": "org.tentackle:tentackle-persistence:2.0.7",
+    "caller": "|java+method:///org/tentackle/persist/ResultSetCursor/assertSessionIsRemote()|",
+    "called": "|java+constructor:///org/tentackle/pdo/PersistenceException/PersistenceException(org.tentackle.pdo.Session,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/tentackle/pdo/Session/isRemote()|",
+      "|java+constructor:///org/tentackle/pdo/PersistenceException/PersistenceException(org.tentackle.pdo.Session,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/tentackle/session/PersistenceException/PersistenceException(org.tentackle.session.Session,java.lang.String)|",
+      "|java+method:///org/tentackle/session/Session/isRemote()|"
+    ],
+    "affectedLib": "org.tentackle:tentackle-core:2.0.7",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.tentackle:tentackle-persistence:2.1.0",
+    "coordinatesV2": "org.tentackle:tentackle-persistence:2.0.7",
+    "caller": "|java+method:///org/tentackle/persist/ResultSetCursor/last()|",
+    "called": "|java+constructor:///org/tentackle/pdo/PersistenceException/PersistenceException(org.tentackle.pdo.Session,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/tentackle/persist/ResultSetCursor/assertNoJoins()|",
+      "|java+method:///org/tentackle/pdo/Session/isRemote()|",
+      "|java+method:///org/tentackle/persist/ResultSetWrapper/last()|",
+      "|java+constructor:///org/tentackle/pdo/PersistenceException/PersistenceException(org.tentackle.pdo.Session,java.lang.Throwable)|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/last()|",
+      "|java+method:///org/tentackle/persist/ResultSetWrapper/getRow()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/tentackle/persist/ResultSetCursor/assertNoJoins()|",
+      "|java+method:///org/tentackle/dbms/ResultSetWrapper/getRow()|",
+      "|java+method:///org/tentackle/session/Session/isRemote()|",
+      "|java+constructor:///org/tentackle/session/PersistenceException/PersistenceException(org.tentackle.session.Session,java.lang.Throwable)|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/last()|",
+      "|java+method:///org/tentackle/dbms/ResultSetWrapper/last()|"
+    ],
+    "affectedLib": "org.tentackle:tentackle-core:2.0.7",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.tentackle:tentackle-persistence:2.1.0",
+    "coordinatesV2": "org.tentackle:tentackle-persistence:2.0.7",
+    "caller": "|java+method:///org/tentackle/persist/ResultSetCursor/setFetchSize(int)|",
+    "called": "|java+method:///org/tentackle/pdo/PersistenceException/createFromRemoteException(java.lang.Object,java.rmi.RemoteException)|",
+    "v1Body": [
+      "|java+method:///org/tentackle/pdo/Session/isRemote()|",
+      "|java+method:///org/tentackle/persist/ResultSetWrapper/setFetchSize(int)|",
+      "|java+method:///org/tentackle/pdo/PersistenceException/createFromRemoteException(java.lang.Object,java.rmi.RemoteException)|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/setFetchSize(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/tentackle/session/PersistenceException/createFromRemoteException(java.lang.Object,java.rmi.RemoteException)|",
+      "|java+method:///org/tentackle/session/Session/isRemote()|",
+      "|java+method:///org/tentackle/dbms/ResultSetWrapper/setFetchSize(int)|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/setFetchSize(int)|"
+    ],
+    "affectedLib": "org.tentackle:tentackle-core:2.0.7",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.tentackle:tentackle-persistence:2.0.7",
+    "coordinatesV2": "org.tentackle:tentackle-persistence:2.1.0",
+    "caller": "|java+method:///org/tentackle/persist/ResultSetCursor/getFetchDirection()|",
+    "called": "|java+method:///org/tentackle/dbms/ResultSetWrapper/getFetchDirection()|",
+    "v1Body": [
+      "|java+method:///org/tentackle/persist/ResultSetWrapper/getFetchDirection()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/tentackle/dbms/ResultSetWrapper/getFetchDirection()|"
+    ],
+    "affectedLib": "org.tentackle:tentackle-database:2.1.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.tentackle:tentackle-persistence:2.0.7",
+    "coordinatesV2": "org.tentackle:tentackle-persistence:2.1.0",
+    "caller": "|java+method:///org/tentackle/persist/ResultSetCursor/close()|",
+    "called": "|java+method:///org/tentackle/dbms/ResultSetWrapper/close()|",
+    "v1Body": [
+      "|java+method:///org/tentackle/pdo/Session/isRemote()|",
+      "|java+method:///org/tentackle/persist/ResultSetWrapper/close()|",
+      "|java+constructor:///org/tentackle/pdo/PersistenceException/PersistenceException(org.tentackle.pdo.Session,java.lang.Throwable)|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/close()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/tentackle/session/Session/isRemote()|",
+      "|java+constructor:///org/tentackle/session/PersistenceException/PersistenceException(org.tentackle.session.Session,java.lang.Throwable)|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/close()|",
+      "|java+method:///org/tentackle/dbms/ResultSetWrapper/close()|"
+    ],
+    "affectedLib": "org.tentackle:tentackle-database:2.1.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.tentackle:tentackle-persistence:2.0.7",
+    "coordinatesV2": "org.tentackle:tentackle-persistence:2.1.0",
+    "caller": "|java+method:///org/tentackle/persist/ResultSetCursor/first()|",
+    "called": "|java+method:///org/tentackle/dbms/ResultSetWrapper/first()|",
+    "v1Body": [
+      "|java+method:///org/tentackle/pdo/Session/isRemote()|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/first()|",
+      "|java+method:///org/tentackle/persist/ResultSetCursor/next()|",
+      "|java+constructor:///org/tentackle/pdo/PersistenceException/PersistenceException(org.tentackle.pdo.Session,java.lang.Throwable)|",
+      "|java+method:///org/tentackle/persist/ResultSetWrapper/first()|",
+      "|java+method:///org/tentackle/pdo/JoinedSelect/initialize(java.util.List)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/tentackle/persist/JoinedSelect/initialize(java.util.List)|",
+      "|java+constructor:///org/tentackle/session/PersistenceException/PersistenceException(org.tentackle.session.Session,java.lang.Throwable)|",
+      "|java+method:///org/tentackle/dbms/ResultSetWrapper/first()|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/first()|",
+      "|java+method:///org/tentackle/session/Session/isRemote()|",
+      "|java+method:///org/tentackle/persist/ResultSetCursor/next()|"
+    ],
+    "affectedLib": "org.tentackle:tentackle-database:2.1.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.tentackle:tentackle-persistence:2.0.7",
+    "coordinatesV2": "org.tentackle:tentackle-persistence:2.1.0",
+    "caller": "|java+method:///org/tentackle/persist/ResultSetCursor/afterLast()|",
+    "called": "|java+method:///org/tentackle/dbms/ResultSetWrapper/getRow()|",
+    "v1Body": [
+      "|java+method:///org/tentackle/persist/ResultSetCursor/assertNoJoins()|",
+      "|java+method:///org/tentackle/pdo/Session/isRemote()|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/afterLast()|",
+      "|java+constructor:///org/tentackle/pdo/PersistenceException/PersistenceException(org.tentackle.pdo.Session,java.lang.Throwable)|",
+      "|java+method:///org/tentackle/persist/ResultSetWrapper/afterLast()|",
+      "|java+method:///org/tentackle/persist/ResultSetWrapper/getRow()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/tentackle/persist/ResultSetCursor/assertNoJoins()|",
+      "|java+method:///org/tentackle/dbms/ResultSetWrapper/getRow()|",
+      "|java+method:///org/tentackle/session/Session/isRemote()|",
+      "|java+constructor:///org/tentackle/session/PersistenceException/PersistenceException(org.tentackle.session.Session,java.lang.Throwable)|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/afterLast()|",
+      "|java+method:///org/tentackle/dbms/ResultSetWrapper/afterLast()|"
+    ],
+    "affectedLib": "org.tentackle:tentackle-database:2.1.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.tentackle:tentackle-persistence:2.0.7",
+    "coordinatesV2": "org.tentackle:tentackle-persistence:2.1.0",
+    "caller": "|java+method:///org/tentackle/persist/ResultSetCursor/getFetchSize()|",
+    "called": "|java+method:///org/tentackle/dbms/ResultSetWrapper/getFetchSize()|",
+    "v1Body": [
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/getFetchSize()|",
+      "|java+method:///org/tentackle/pdo/Session/isRemote()|",
+      "|java+method:///org/tentackle/pdo/PersistenceException/createFromRemoteException(java.lang.Object,java.rmi.RemoteException)|",
+      "|java+method:///org/tentackle/persist/ResultSetWrapper/getFetchSize()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/tentackle/session/PersistenceException/createFromRemoteException(java.lang.Object,java.rmi.RemoteException)|",
+      "|java+method:///org/tentackle/session/Session/isRemote()|",
+      "|java+method:///org/tentackle/dbms/ResultSetWrapper/getFetchSize()|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/getFetchSize()|"
+    ],
+    "affectedLib": "org.tentackle:tentackle-database:2.1.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.tentackle:tentackle-persistence:2.0.7",
+    "coordinatesV2": "org.tentackle:tentackle-persistence:2.1.0",
+    "caller": "|java+method:///org/tentackle/persist/ResultSetCursor/setRow(int)|",
+    "called": "|java+method:///org/tentackle/dbms/ResultSetWrapper/getRow()|",
+    "v1Body": [
+      "|java+method:///org/tentackle/pdo/Session/isRemote()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/tentackle/persist/ResultSetWrapper/absolute(int)|",
+      "|java+constructor:///org/tentackle/pdo/PersistenceException/PersistenceException(org.tentackle.pdo.Session,java.lang.Throwable)|",
+      "|java+method:///org/tentackle/persist/ResultSetWrapper/getRow()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/setRow(int)|",
+      "|java+method:///org/tentackle/persist/ResultSetCursor/assertNoJoins()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/tentackle/pdo/PersistenceException/PersistenceException(org.tentackle.pdo.Session,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/tentackle/dbms/ResultSetWrapper/absolute(int)|",
+      "|java+method:///org/tentackle/dbms/ResultSetWrapper/getRow()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/tentackle/session/Session/isRemote()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/tentackle/session/PersistenceException/PersistenceException(org.tentackle.session.Session,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/setRow(int)|",
+      "|java+method:///org/tentackle/persist/ResultSetCursor/assertNoJoins()|",
+      "|java+constructor:///org/tentackle/session/PersistenceException/PersistenceException(org.tentackle.session.Session,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|"
+    ],
+    "affectedLib": "org.tentackle:tentackle-database:2.1.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.tentackle:tentackle-persistence:2.0.7",
+    "coordinatesV2": "org.tentackle:tentackle-persistence:2.1.0",
+    "caller": "|java+method:///org/tentackle/persist/ResultSetCursor/previous()|",
+    "called": "|java+method:///org/tentackle/dbms/ResultSetWrapper/previous()|",
+    "v1Body": [
+      "|java+method:///org/tentackle/persist/ResultSetCursor/assertNoJoins()|",
+      "|java+method:///org/tentackle/pdo/Session/isRemote()|",
+      "|java+method:///org/tentackle/persist/ResultSetWrapper/previous()|",
+      "|java+constructor:///org/tentackle/pdo/PersistenceException/PersistenceException(org.tentackle.pdo.Session,java.lang.Throwable)|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/previous()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/tentackle/persist/ResultSetCursor/assertNoJoins()|",
+      "|java+method:///org/tentackle/session/Session/isRemote()|",
+      "|java+constructor:///org/tentackle/session/PersistenceException/PersistenceException(org.tentackle.session.Session,java.lang.Throwable)|",
+      "|java+method:///org/tentackle/dbms/ResultSetWrapper/previous()|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/previous()|"
+    ],
+    "affectedLib": "org.tentackle:tentackle-database:2.1.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.tentackle:tentackle-persistence:2.0.7",
+    "coordinatesV2": "org.tentackle:tentackle-persistence:2.1.0",
+    "caller": "|java+method:///org/tentackle/persist/ResultSetCursor/next()|",
+    "called": "|java+method:///org/tentackle/dbms/ResultSetWrapper/next()|",
+    "v1Body": [
+      "|java+constructor:///org/tentackle/pdo/PersistenceException/PersistenceException(org.tentackle.pdo.Session,java.lang.Throwable)|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/next()|",
+      "|java+method:///org/tentackle/pdo/Session/isRemote()|",
+      "|java+method:///org/tentackle/persist/ResultSetWrapper/next()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/tentackle/session/Session/isRemote()|",
+      "|java+constructor:///org/tentackle/session/PersistenceException/PersistenceException(org.tentackle.session.Session,java.lang.Throwable)|",
+      "|java+method:///org/tentackle/dbms/ResultSetWrapper/next()|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/next()|"
+    ],
+    "affectedLib": "org.tentackle:tentackle-database:2.1.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.tentackle:tentackle-persistence:2.0.7",
+    "coordinatesV2": "org.tentackle:tentackle-persistence:2.1.0",
+    "caller": "|java+method:///org/tentackle/persist/ResultSetCursor/setFetchDirection(int)|",
+    "called": "|java+method:///org/tentackle/dbms/ResultSetWrapper/setFetchDirection(int)|",
+    "v1Body": [
+      "|java+method:///org/tentackle/persist/ResultSetWrapper/setFetchDirection(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/tentackle/dbms/ResultSetWrapper/setFetchDirection(int)|"
+    ],
+    "affectedLib": "org.tentackle:tentackle-database:2.1.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.tentackle:tentackle-persistence:2.0.7",
+    "coordinatesV2": "org.tentackle:tentackle-persistence:2.1.0",
+    "caller": "|java+method:///org/tentackle/persist/ResultSetCursor/beforeFirst()|",
+    "called": "|java+method:///org/tentackle/dbms/ResultSetWrapper/beforeFirst()|",
+    "v1Body": [
+      "|java+method:///org/tentackle/pdo/Session/isRemote()|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/beforeFirst()|",
+      "|java+constructor:///org/tentackle/pdo/PersistenceException/PersistenceException(org.tentackle.pdo.Session,java.lang.Throwable)|",
+      "|java+method:///org/tentackle/persist/ResultSetWrapper/beforeFirst()|",
+      "|java+method:///org/tentackle/pdo/JoinedSelect/initialize(java.util.List)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/tentackle/session/Session/isRemote()|",
+      "|java+method:///org/tentackle/persist/JoinedSelect/initialize(java.util.List)|",
+      "|java+constructor:///org/tentackle/session/PersistenceException/PersistenceException(org.tentackle.session.Session,java.lang.Throwable)|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/beforeFirst()|",
+      "|java+method:///org/tentackle/dbms/ResultSetWrapper/beforeFirst()|"
+    ],
+    "affectedLib": "org.tentackle:tentackle-database:2.1.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.tentackle:tentackle-persistence:2.0.7",
+    "coordinatesV2": "org.tentackle:tentackle-persistence:2.1.0",
+    "caller": "|java+method:///org/tentackle/persist/ResultSetCursor/last()|",
+    "called": "|java+method:///org/tentackle/dbms/ResultSetWrapper/getRow()|",
+    "v1Body": [
+      "|java+method:///org/tentackle/persist/ResultSetCursor/assertNoJoins()|",
+      "|java+method:///org/tentackle/pdo/Session/isRemote()|",
+      "|java+method:///org/tentackle/persist/ResultSetWrapper/last()|",
+      "|java+constructor:///org/tentackle/pdo/PersistenceException/PersistenceException(org.tentackle.pdo.Session,java.lang.Throwable)|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/last()|",
+      "|java+method:///org/tentackle/persist/ResultSetWrapper/getRow()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/tentackle/persist/ResultSetCursor/assertNoJoins()|",
+      "|java+method:///org/tentackle/dbms/ResultSetWrapper/getRow()|",
+      "|java+method:///org/tentackle/session/Session/isRemote()|",
+      "|java+constructor:///org/tentackle/session/PersistenceException/PersistenceException(org.tentackle.session.Session,java.lang.Throwable)|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/last()|",
+      "|java+method:///org/tentackle/dbms/ResultSetWrapper/last()|"
+    ],
+    "affectedLib": "org.tentackle:tentackle-database:2.1.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.tentackle:tentackle-persistence:2.0.7",
+    "coordinatesV2": "org.tentackle:tentackle-persistence:2.1.0",
+    "caller": "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursorImpl/createException(java.lang.Throwable)|",
+    "called": "|java+method:///org/tentackle/dbms/rmi/RemoteDelegateImpl/createException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/tentackle/persist/rmi/RemoteDelegateImpl/createException(java.lang.Throwable)|",
+      "|java+method:///org/tentackle/log/Logger/severe(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/tentackle/persist/ResultSetCursor/close()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/tentackle/log/Logger/severe(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/tentackle/dbms/rmi/RemoteDelegateImpl/createException(java.lang.Throwable)|",
+      "|java+method:///org/tentackle/persist/ResultSetCursor/close()|"
+    ],
+    "affectedLib": "org.tentackle:tentackle-database:2.1.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.tentackle:tentackle-persistence:2.0.7",
+    "coordinatesV2": "org.tentackle:tentackle-persistence:2.1.0",
+    "caller": "|java+method:///org/tentackle/persist/ResultSetCursor/setFetchSize(int)|",
+    "called": "|java+method:///org/tentackle/dbms/ResultSetWrapper/setFetchSize(int)|",
+    "v1Body": [
+      "|java+method:///org/tentackle/pdo/Session/isRemote()|",
+      "|java+method:///org/tentackle/persist/ResultSetWrapper/setFetchSize(int)|",
+      "|java+method:///org/tentackle/pdo/PersistenceException/createFromRemoteException(java.lang.Object,java.rmi.RemoteException)|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/setFetchSize(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/tentackle/session/PersistenceException/createFromRemoteException(java.lang.Object,java.rmi.RemoteException)|",
+      "|java+method:///org/tentackle/session/Session/isRemote()|",
+      "|java+method:///org/tentackle/dbms/ResultSetWrapper/setFetchSize(int)|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/setFetchSize(int)|"
+    ],
+    "affectedLib": "org.tentackle:tentackle-database:2.1.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.tentackle:tentackle-persistence:2.0.7",
+    "coordinatesV2": "org.tentackle:tentackle-persistence:2.1.0",
+    "caller": "|java+method:///org/tentackle/persist/ResultSetCursor/isBeforeFirst()|",
+    "called": "|java+method:///org/tentackle/dbms/ResultSetWrapper/isBeforeFirst()|",
+    "v1Body": [
+      "|java+method:///org/tentackle/pdo/Session/isRemote()|",
+      "|java+method:///org/tentackle/persist/ResultSetWrapper/isBeforeFirst()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/tentackle/session/Session/isRemote()|",
+      "|java+method:///org/tentackle/dbms/ResultSetWrapper/isBeforeFirst()|"
+    ],
+    "affectedLib": "org.tentackle:tentackle-database:2.1.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.tentackle:tentackle-persistence:2.0.7",
+    "coordinatesV2": "org.tentackle:tentackle-persistence:2.1.0",
+    "caller": "|java+method:///org/tentackle/persist/ResultSetCursor/isAfterLast()|",
+    "called": "|java+method:///org/tentackle/dbms/ResultSetWrapper/isAfterLast()|",
+    "v1Body": [
+      "|java+method:///org/tentackle/pdo/Session/isRemote()|",
+      "|java+method:///org/tentackle/persist/ResultSetWrapper/isAfterLast()|",
+      "|java+constructor:///org/tentackle/pdo/PersistenceException/PersistenceException(org.tentackle.pdo.Session,java.lang.Throwable)|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/isAfterLast()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/tentackle/session/Session/isRemote()|",
+      "|java+constructor:///org/tentackle/session/PersistenceException/PersistenceException(org.tentackle.session.Session,java.lang.Throwable)|",
+      "|java+method:///org/tentackle/dbms/ResultSetWrapper/isAfterLast()|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/isAfterLast()|"
+    ],
+    "affectedLib": "org.tentackle:tentackle-database:2.1.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.tentackle:tentackle-persistence:2.0.7",
+    "coordinatesV2": "org.tentackle:tentackle-persistence:2.1.0",
+    "caller": "|java+method:///org/tentackle/persist/ResultSetCursor/get()|",
+    "called": "|java+method:///org/tentackle/pdo/PersistentDomainObject/getPersistenceDelegate()|",
+    "v1Body": [
+      "|java+method:///org/tentackle/pdo/JoinedSelect/currentPdo()|",
+      "|java+method:///org/tentackle/pdo/Session/isRemote()|",
+      "|java+method:///org/tentackle/persist/ResultSetCursor/next()|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/get()|",
+      "|java+method:///org/tentackle/pdo/Pdo/create(org.tentackle.pdo.PersistentDomainObject)|",
+      "|java+method:///org/tentackle/persist/ResultSetCursor/get()|",
+      "|java+method:///org/tentackle/pdo/AbstractPersistentObject/derivePdoFromPo(org.tentackle.pdo.PersistentDomainObject,org.tentackle.pdo.AbstractPersistentObject)|",
+      "|java+method:///org/tentackle/pdo/PersistentDomainObject/getPersistenceDelegate()|",
+      "|java+method:///org/tentackle/pdo/AbstractPersistentObject/readFromResultSetWrapper(org.tentackle.persist.ResultSetWrapper)|",
+      "|java+method:///org/tentackle/pdo/AbstractPersistentObject/readJoinedRow(org.tentackle.persist.ResultSetWrapper,org.tentackle.pdo.JoinedSelect)|",
+      "|java+constructor:///org/tentackle/pdo/PersistenceException/PersistenceException(org.tentackle.pdo.Session,java.lang.Throwable)|",
+      "|java+method:///org/tentackle/persist/ResultSetCursor/configureRemoteObject(org.tentackle.pdo.PersistentDomainObject)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/tentackle/persist/AbstractPersistentObject/readFromResultSetWrapper(org.tentackle.dbms.ResultSetWrapper)|",
+      "|java+method:///org/tentackle/persist/rmi/RemoteResultSetCursor/get()|",
+      "|java+method:///org/tentackle/persist/ResultSetCursor/configureRemoteObject(org.tentackle.pdo.PersistentDomainObject)|",
+      "|java+method:///org/tentackle/pdo/Pdo/create(org.tentackle.pdo.PersistentDomainObject)|",
+      "|java+method:///org/tentackle/persist/ResultSetCursor/get()|",
+      "|java+constructor:///org/tentackle/session/PersistenceException/PersistenceException(org.tentackle.session.Session,java.lang.Throwable)|",
+      "|java+method:///org/tentackle/persist/AbstractPersistentObject/readJoinedRow(org.tentackle.dbms.ResultSetWrapper,org.tentackle.persist.JoinedSelect)|",
+      "|java+method:///org/tentackle/pdo/PersistentDomainObject/getPersistenceDelegate()|",
+      "|java+method:///org/tentackle/persist/JoinedSelect/currentPdo()|",
+      "|java+method:///org/tentackle/persist/AbstractPersistentObject/derivePdoFromPo(org.tentackle.pdo.PersistentDomainObject,org.tentackle.persist.AbstractPersistentObject)|",
+      "|java+method:///org/tentackle/session/Session/isRemote()|",
+      "|java+method:///org/tentackle/persist/ResultSetCursor/next()|"
+    ],
+    "affectedLib": "org.tentackle:tentackle-pdo:2.1.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.tentackle:tentackle-persistence:2.0.7",
+    "coordinatesV2": "org.tentackle:tentackle-persistence:2.1.0",
+    "caller": "|java+method:///org/tentackle/persist/ResultSetCursor/configureRemoteObject(org.tentackle.pdo.PersistentDomainObject)|",
+    "called": "|java+method:///org/tentackle/pdo/PersistentDomainObject/getPersistenceDelegate()|",
+    "v1Body": [
+      "|java+method:///org/tentackle/pdo/Session/applyTo(org.tentackle.pdo.SessionDependable)|",
+      "|java+method:///org/tentackle/pdo/AbstractPersistentObject/configureRemoteObject(org.tentackle.pdo.DomainContext,org.tentackle.pdo.PersistentDomainObject)|",
+      "|java+method:///org/tentackle/pdo/PersistentDomainObject/getPersistenceDelegate()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/tentackle/session/Session/applyTo(org.tentackle.session.SessionDependable)|",
+      "|java+method:///org/tentackle/pdo/PersistentDomainObject/getPersistenceDelegate()|",
+      "|java+method:///org/tentackle/persist/AbstractPersistentObject/configureRemoteObject(org.tentackle.pdo.DomainContext,org.tentackle.pdo.PersistentDomainObject)|"
+    ],
+    "affectedLib": "org.tentackle:tentackle-pdo:2.1.0",
+    "change": "ADDED"
+  }
+]

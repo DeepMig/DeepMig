@@ -1,0 +1,48 @@
+[
+  {
+    "coordinatesV1": "org.springframework.boot:spring-boot-test:1.4.0.RELEASE",
+    "coordinatesV2": "org.springframework.boot:spring-boot-test:1.4.1.RELEASE",
+    "caller": "|java+method:///org/springframework/boot/test/web/client/LocalHostUriTemplateHandler/getRootUri()|",
+    "called": "|java+method:///org/springframework/boot/bind/RelaxedPropertyResolver/getProperty(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/springframework/core/env/Environment/getProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/springframework/boot/bind/RelaxedPropertyResolver/getProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///org/springframework/core/env/Environment/getProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.springframework.boot:spring-boot:1.4.1.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.boot:spring-boot-test:1.4.0.RELEASE",
+    "coordinatesV2": "org.springframework.boot:spring-boot-test:1.4.1.RELEASE",
+    "caller": "|java+method:///org/springframework/boot/test/context/SpringBootTestContextCustomizer$TestRestTemplateFactory/setApplicationContext(org.springframework.context.ApplicationContext)|",
+    "called": "|java+method:///org/springframework/boot/web/client/RestTemplateBuilder/build()|",
+    "v1Body": [
+      "|java+method:///org/springframework/context/ApplicationContext/getEnvironment()|",
+      "|java+method:///org/springframework/boot/test/web/client/TestRestTemplate/setUriTemplateHandler(org.springframework.web.util.UriTemplateHandler)|",
+      "|java+method:///org/springframework/boot/test/context/SpringBootTestContextCustomizer$TestRestTemplateFactory/getRestTemplateBuilder(org.springframework.context.ApplicationContext)|",
+      "|java+method:///org/springframework/boot/web/client/RestTemplateBuilder/build()|",
+      "|java+constructor:///org/springframework/boot/test/web/client/TestRestTemplate/TestRestTemplate(org.springframework.web.client.RestTemplate)|",
+      "|java+constructor:///org/springframework/boot/test/web/client/LocalHostUriTemplateHandler/LocalHostUriTemplateHandler(org.springframework.core.env.Environment)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/context/ApplicationContext/getEnvironment()|",
+      "|java+method:///org/springframework/boot/test/web/client/TestRestTemplate/setUriTemplateHandler(org.springframework.web.util.UriTemplateHandler)|",
+      "|java+constructor:///org/springframework/boot/test/web/client/TestRestTemplate/TestRestTemplate(org.springframework.web.client.RestTemplate,java.lang.String,java.lang.String,org.springframework.boot.test.web.client.TestRestTemplate$HttpClientOption%5B%5D)|",
+      "|java+constructor:///org/springframework/boot/test/web/client/LocalHostUriTemplateHandler/LocalHostUriTemplateHandler(org.springframework.core.env.Environment,java.lang.String)|",
+      "|java+method:///org/springframework/boot/test/context/SpringBootTestContextCustomizer$TestRestTemplateFactory/getRestTemplateBuilder(org.springframework.context.ApplicationContext)|",
+      "|java+method:///org/springframework/boot/web/client/RestTemplateBuilder/build()|",
+      "|java+method:///org/springframework/boot/test/context/SpringBootTestContextCustomizer$TestRestTemplateFactory/isSslEnabled(org.springframework.context.ApplicationContext)|"
+    ],
+    "affectedLib": "org.springframework.boot:spring-boot:1.4.1.RELEASE",
+    "change": "UPDATED"
+  }
+]

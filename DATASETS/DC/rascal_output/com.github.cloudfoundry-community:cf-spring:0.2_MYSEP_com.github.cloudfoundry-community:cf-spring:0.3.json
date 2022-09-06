@@ -1,0 +1,23 @@
+[
+  {
+    "coordinatesV1": "com.github.cloudfoundry-community:cf-spring:0.2",
+    "coordinatesV2": "com.github.cloudfoundry-community:cf-spring:0.3",
+    "caller": "|java+method:///cf/spring/ClientTokenProviderFactoryBean/fetchToken()|",
+    "called": "|java+method:///cf/client/Token/getExpiration()|",
+    "v1Body": [
+      "|java+method:///cf/client/CloudController/getUaa()|",
+      "|java+method:///cf/client/Token/hasExpired()|",
+      "|java+method:///cf/client/Uaa/getClientToken(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/TimeUnit/toMillis(long)|",
+      "|java+method:///cf/client/CloudController/getUaa()|",
+      "|java+method:///cf/client/Token/getExpiration()|",
+      "|java+method:///cf/client/Uaa/getClientToken(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///java/util/Date/getTime()|"
+    ],
+    "affectedLib": "com.github.cloudfoundry-community:cf-client:0.3",
+    "change": "UPDATED"
+  }
+]

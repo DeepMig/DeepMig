@@ -1,0 +1,63 @@
+[
+  {
+    "coordinatesV1": "org.tiogasolutions.lib:tioga-lib-jaxrs:5.1.9",
+    "coordinatesV2": "org.tiogasolutions.lib:tioga-lib-jaxrs:5.1.8",
+    "caller": "|java+method:///org/tiogasolutions/lib/jaxrs/providers/TiogaJaxRsExceptionMapper/throwableToResponse(int,java.lang.Throwable)|",
+    "called": "|java+method:///org/tiogasolutions/pub/PubItem/toStatus(int)|",
+    "v1Body": [
+      "|java+method:///org/tiogasolutions/lib/jaxrs/providers/TiogaJaxRsExceptionMapper/logException(java.lang.Throwable,int)|",
+      "|java+method:///org/tiogasolutions/lib/jaxrs/providers/TiogaJaxRsExceptionMapper/exceptionInfoToResponse(org.tiogasolutions.lib.jaxrs.domain.TiogaExceptionInfo)|",
+      "|java+method:///org/tiogasolutions/pub/PubLinks/empty()|",
+      "|java+constructor:///org/tiogasolutions/lib/jaxrs/domain/TiogaExceptionInfo/TiogaExceptionInfo(org.tiogasolutions.pub.PubResponse,org.tiogasolutions.pub.PubLinks)|",
+      "|java+method:///org/tiogasolutions/pub/PubItem/toStatus(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/tiogasolutions/lib/jaxrs/providers/TiogaJaxRsExceptionMapper/logException(java.lang.Throwable,int)|",
+      "|java+method:///org/tiogasolutions/lib/jaxrs/providers/TiogaJaxRsExceptionMapper/exceptionInfoToResponse(int,org.tiogasolutions.lib.jaxrs.domain.TiogaExceptionInfo)|",
+      "|java+method:///org/tiogasolutions/dev/common/net/HttpStatusCode/getReason()|",
+      "|java+method:///org/tiogasolutions/dev/common/net/HttpStatusCode/getCode()|",
+      "|java+method:///org/tiogasolutions/dev/common/net/HttpStatusCode/findByCode(int)|",
+      "|java+constructor:///org/tiogasolutions/lib/jaxrs/domain/TiogaExceptionInfo/TiogaExceptionInfo(int,java.lang.String)|"
+    ],
+    "affectedLib": "org.tiogasolutions.lib:tioga-lib-pub:1.0.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.tiogasolutions.lib:tioga-lib-jaxrs:5.1.9",
+    "coordinatesV2": "org.tiogasolutions.lib:tioga-lib-jaxrs:5.1.8",
+    "caller": "|java+constructor:///org/tiogasolutions/lib/jaxrs/domain/TiogaExceptionInfo/TiogaExceptionInfo(org.tiogasolutions.dev.common.exceptions.ApiException)|",
+    "called": "|java+constructor:///org/tiogasolutions/pub/PubItem/PubItem(org.tiogasolutions.pub.PubResponse)|",
+    "v1Body": [
+      "|java+constructor:///org/tiogasolutions/pub/PubItem/PubItem(org.tiogasolutions.pub.PubResponse)|",
+      "|java+method:///org/tiogasolutions/dev/common/exceptions/ApiException/getStatusCode()|",
+      "|java+method:///org/tiogasolutions/lib/jaxrs/domain/TiogaExceptionInfo/toStatus(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/tiogasolutions/dev/common/exceptions/ApiException/getMessage()|",
+      "|java+method:///org/tiogasolutions/dev/common/exceptions/ApiException/getStatusCode()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.tiogasolutions.lib:tioga-lib-pub:1.0.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.tiogasolutions.lib:tioga-lib-jaxrs:5.1.9",
+    "coordinatesV2": "org.tiogasolutions.lib:tioga-lib-jaxrs:5.1.8",
+    "caller": "|java+constructor:///org/tiogasolutions/lib/jaxrs/domain/TiogaExceptionInfo/TiogaExceptionInfo(javax.ws.rs.WebApplicationException)|",
+    "called": "|java+constructor:///org/tiogasolutions/pub/PubItem/PubItem(org.tiogasolutions.pub.PubResponse)|",
+    "v1Body": [
+      "|java+method:///javax/ws/rs/WebApplicationException/getResponse()|",
+      "|java+method:///javax/ws/rs/core/Response/getStatus()|",
+      "|java+constructor:///org/tiogasolutions/pub/PubItem/PubItem(org.tiogasolutions.pub.PubResponse)|",
+      "|java+method:///org/tiogasolutions/lib/jaxrs/domain/TiogaExceptionInfo/toStatus(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/ws/rs/WebApplicationException/getResponse()|",
+      "|java+method:///javax/ws/rs/core/Response/getStatus()|",
+      "|java+method:///javax/ws/rs/WebApplicationException/getMessage()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.tiogasolutions.lib:tioga-lib-pub:1.0.1",
+    "change": "REMOVED"
+  }
+]

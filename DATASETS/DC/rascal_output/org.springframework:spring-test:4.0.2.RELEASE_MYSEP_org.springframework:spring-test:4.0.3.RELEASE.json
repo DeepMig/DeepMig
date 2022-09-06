@@ -1,0 +1,244 @@
+[
+  {
+    "coordinatesV1": "org.springframework:spring-test:4.0.2.RELEASE",
+    "coordinatesV2": "org.springframework:spring-test:4.0.3.RELEASE",
+    "caller": "|java+constructor:///org/springframework/mock/web/MockHttpServletResponse/MockHttpServletResponse()|",
+    "called": "|java+constructor:///org/springframework/util/LinkedCaseInsensitiveMap/LinkedCaseInsensitiveMap()|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///org/springframework/mock/web/MockHttpServletResponse$ResponseServletOutputStream/MockHttpServletResponse$ResponseServletOutputStream(org.springframework.mock.web.MockHttpServletResponse,java.io.OutputStream)|",
+      "|java+constructor:///org/springframework/util/LinkedCaseInsensitiveMap/LinkedCaseInsensitiveMap()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/util/Locale/getDefault()|",
+      "|java+constructor:///java/io/ByteArrayOutputStream/ByteArrayOutputStream()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///org/springframework/mock/web/MockHttpServletResponse$ResponseServletOutputStream/MockHttpServletResponse$ResponseServletOutputStream(org.springframework.mock.web.MockHttpServletResponse,java.io.OutputStream)|",
+      "|java+constructor:///java/io/ByteArrayOutputStream/ByteArrayOutputStream(int)|",
+      "|java+constructor:///org/springframework/util/LinkedCaseInsensitiveMap/LinkedCaseInsensitiveMap()|",
+      "|java+method:///java/util/Locale/getDefault()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.springframework:spring-core:4.0.3.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework:spring-test:4.0.2.RELEASE",
+    "coordinatesV2": "org.springframework:spring-test:4.0.3.RELEASE",
+    "caller": "|java+method:///org/springframework/test/context/ContextLoaderUtils/resolveContextConfigurationAttributes(java.lang.Class)|",
+    "called": "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/getSuperclass()|",
+      "|java+method:///org/springframework/test/context/MetaAnnotationUtils$AnnotationDescriptor/getRootDeclaringClass()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/springframework/test/context/MetaAnnotationUtils$AnnotationDescriptor/getAnnotationAttributes()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/springframework/test/context/MetaAnnotationUtils$AnnotationDescriptor/getDeclaringClass()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/springframework/test/context/MetaAnnotationUtils/findAnnotationDescriptor(java.lang.Class,java.lang.Class)|",
+      "|java+method:///org/springframework/test/context/ContextLoaderUtils/convertAnnotationAttributesToConfigAttributesAndAddToList(org.springframework.core.annotation.AnnotationAttributes,java.lang.Class,java.util.List)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/getSuperclass()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/springframework/test/context/MetaAnnotationUtils$AnnotationDescriptor/getRootDeclaringClass()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/springframework/test/context/MetaAnnotationUtils$AnnotationDescriptor/getAnnotationAttributes()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/springframework/test/context/MetaAnnotationUtils/findAnnotationDescriptor(java.lang.Class,java.lang.Class)|",
+      "|java+method:///org/springframework/test/context/ContextLoaderUtils/convertAnnotationAttributesToConfigAttributesAndAddToList(org.springframework.core.annotation.AnnotationAttributes,java.lang.Class,java.util.List)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:4.0.3.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework:spring-test:4.0.2.RELEASE",
+    "coordinatesV2": "org.springframework:spring-test:4.0.3.RELEASE",
+    "caller": "|java+method:///org/springframework/test/web/servlet/DefaultMvcResult/getAsyncResult(long)|",
+    "called": "|java+method:///org/springframework/util/Assert/state(boolean,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/AsyncContext/getTimeout()|",
+      "|java+method:///org/springframework/test/web/servlet/DefaultMvcResult/awaitAsyncResult(long)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/isAsyncStarted()|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getAsyncContext()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/servlet/AsyncContext/getTimeout()|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/Thread/sleep(long)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/mock/web/MockHttpServletRequest/getAsyncContext()|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicReference/get()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/springframework/util/Assert/state(boolean,java.lang.String)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:4.0.3.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework:spring-test:4.0.2.RELEASE",
+    "coordinatesV2": "org.springframework:spring-test:4.0.3.RELEASE",
+    "caller": "|java+method:///org/springframework/test/jdbc/JdbcTestUtils/executeSqlScript(org.springframework.jdbc.core.JdbcTemplate,org.springframework.core.io.support.EncodedResource,boolean)|",
+    "called": "|java+constructor:///org/springframework/jdbc/datasource/init/ResourceDatabasePopulator/ResourceDatabasePopulator(boolean,boolean,java.lang.String,org.springframework.core.io.Resource%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/springframework/core/io/support/EncodedResource/getReader()|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/Log/isInfoEnabled()|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/commons/logging/Log/info(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/commons/logging/Log/isWarnEnabled()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/springframework/jdbc/core/JdbcTemplate/update(java.lang.String)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///org/springframework/dao/DataAccessResourceFailureException/DataAccessResourceFailureException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/apache/commons/logging/Log/warn(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/springframework/test/jdbc/JdbcTestUtils/readScript(java.io.LineNumberReader)|",
+      "|java+method:///org/springframework/test/jdbc/JdbcTestUtils/containsSqlScriptDelimiters(java.lang.String,char)|",
+      "|java+constructor:///java/util/LinkedList/LinkedList()|",
+      "|java+method:///org/springframework/test/jdbc/JdbcTestUtils/splitSqlScript(java.lang.String,char,java.util.List)|",
+      "|java+constructor:///java/io/LineNumberReader/LineNumberReader(java.io.Reader)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/io/LineNumberReader/close()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/jdbc/core/JdbcTemplate/getDataSource()|",
+      "|java+constructor:///org/springframework/jdbc/datasource/init/ResourceDatabasePopulator/ResourceDatabasePopulator(boolean,boolean,java.lang.String,org.springframework.core.io.Resource%5B%5D)|",
+      "|java+method:///org/springframework/core/io/support/EncodedResource/getResource()|",
+      "|java+method:///org/springframework/jdbc/datasource/init/DatabasePopulatorUtils/execute(org.springframework.jdbc.datasource.init.DatabasePopulator,javax.sql.DataSource)|",
+      "|java+method:///org/springframework/core/io/support/EncodedResource/getEncoding()|"
+    ],
+    "affectedLib": "org.springframework:spring-jdbc:4.0.3.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework:spring-test:4.0.2.RELEASE",
+    "coordinatesV2": "org.springframework:spring-test:4.0.3.RELEASE",
+    "caller": "|java+method:///org/springframework/test/jdbc/JdbcTestUtils/splitSqlScript(java.lang.String,char,java.util.List)|",
+    "called": "|java+method:///org/springframework/jdbc/datasource/init/ScriptUtils/splitSqlScript(java.lang.String,char,java.util.List)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+method:///org/springframework/test/jdbc/JdbcTestUtils/splitSqlScript(java.lang.String,java.lang.String,java.lang.String,java.util.List)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/jdbc/datasource/init/ScriptUtils/splitSqlScript(java.lang.String,char,java.util.List)|"
+    ],
+    "affectedLib": "org.springframework:spring-jdbc:4.0.3.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework:spring-test:4.0.2.RELEASE",
+    "coordinatesV2": "org.springframework:spring-test:4.0.3.RELEASE",
+    "caller": "|java+method:///org/springframework/test/context/junit4/AbstractTransactionalJUnit4SpringContextTests/executeSqlScript(java.lang.String,boolean)|",
+    "called": "|java+constructor:///org/springframework/jdbc/datasource/init/ResourceDatabasePopulator/ResourceDatabasePopulator(boolean,boolean,java.lang.String,org.springframework.core.io.Resource%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/springframework/test/jdbc/JdbcTestUtils/executeSqlScript(org.springframework.jdbc.core.JdbcTemplate,org.springframework.core.io.support.EncodedResource,boolean)|",
+      "|java+constructor:///org/springframework/core/io/support/EncodedResource/EncodedResource(org.springframework.core.io.Resource,java.lang.String)|",
+      "|java+method:///org/springframework/context/ApplicationContext/getResource(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/jdbc/core/JdbcTemplate/getDataSource()|",
+      "|java+constructor:///org/springframework/jdbc/datasource/init/ResourceDatabasePopulator/ResourceDatabasePopulator(boolean,boolean,java.lang.String,org.springframework.core.io.Resource%5B%5D)|",
+      "|java+method:///org/springframework/jdbc/datasource/init/DatabasePopulatorUtils/execute(org.springframework.jdbc.datasource.init.DatabasePopulator,javax.sql.DataSource)|",
+      "|java+method:///org/springframework/context/ApplicationContext/getResource(java.lang.String)|"
+    ],
+    "affectedLib": "org.springframework:spring-jdbc:4.0.3.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework:spring-test:4.0.2.RELEASE",
+    "coordinatesV2": "org.springframework:spring-test:4.0.3.RELEASE",
+    "caller": "|java+method:///org/springframework/test/jdbc/JdbcTestUtils/containsSqlScriptDelimiters(java.lang.String,char)|",
+    "called": "|java+method:///org/springframework/jdbc/datasource/init/ScriptUtils/containsSqlScriptDelimiters(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///java/lang/String/toCharArray()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/valueOf(char)|",
+      "|java+method:///org/springframework/jdbc/datasource/init/ScriptUtils/containsSqlScriptDelimiters(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.springframework:spring-jdbc:4.0.3.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework:spring-test:4.0.2.RELEASE",
+    "coordinatesV2": "org.springframework:spring-test:4.0.3.RELEASE",
+    "caller": "|java+method:///org/springframework/test/jdbc/JdbcTestUtils/readScript(java.io.LineNumberReader,java.lang.String)|",
+    "called": "|java+method:///org/springframework/jdbc/datasource/init/ScriptUtils/readScript(java.io.LineNumberReader,java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/util/StringUtils/hasText(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/length()|",
+      "|java+method:///java/io/LineNumberReader/readLine()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/jdbc/datasource/init/ScriptUtils/readScript(java.io.LineNumberReader,java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.springframework:spring-jdbc:4.0.3.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework:spring-test:4.0.2.RELEASE",
+    "coordinatesV2": "org.springframework:spring-test:4.0.3.RELEASE",
+    "caller": "|java+method:///org/springframework/test/context/testng/AbstractTransactionalTestNGSpringContextTests/executeSqlScript(java.lang.String,boolean)|",
+    "called": "|java+constructor:///org/springframework/jdbc/datasource/init/ResourceDatabasePopulator/ResourceDatabasePopulator(boolean,boolean,java.lang.String,org.springframework.core.io.Resource%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/springframework/test/jdbc/JdbcTestUtils/executeSqlScript(org.springframework.jdbc.core.JdbcTemplate,org.springframework.core.io.support.EncodedResource,boolean)|",
+      "|java+constructor:///org/springframework/core/io/support/EncodedResource/EncodedResource(org.springframework.core.io.Resource,java.lang.String)|",
+      "|java+method:///org/springframework/context/ApplicationContext/getResource(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/jdbc/core/JdbcTemplate/getDataSource()|",
+      "|java+constructor:///org/springframework/jdbc/datasource/init/ResourceDatabasePopulator/ResourceDatabasePopulator(boolean,boolean,java.lang.String,org.springframework.core.io.Resource%5B%5D)|",
+      "|java+method:///org/springframework/jdbc/datasource/init/DatabasePopulatorUtils/execute(org.springframework.jdbc.datasource.init.DatabasePopulator,javax.sql.DataSource)|",
+      "|java+method:///org/springframework/context/ApplicationContext/getResource(java.lang.String)|"
+    ],
+    "affectedLib": "org.springframework:spring-jdbc:4.0.3.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework:spring-test:4.0.2.RELEASE",
+    "coordinatesV2": "org.springframework:spring-test:4.0.3.RELEASE",
+    "caller": "|java+constructor:///org/springframework/mock/http/MockHttpOutputMessage/MockHttpOutputMessage()|",
+    "called": "|java+constructor:///org/springframework/http/HttpHeaders/HttpHeaders()|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/http/HttpHeaders/HttpHeaders()|",
+      "|java+constructor:///java/io/ByteArrayOutputStream/ByteArrayOutputStream()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/io/ByteArrayOutputStream/ByteArrayOutputStream(int)|",
+      "|java+constructor:///org/springframework/http/HttpHeaders/HttpHeaders()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.springframework:spring-web:4.0.3.RELEASE",
+    "change": "UPDATED"
+  }
+]

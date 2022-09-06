@@ -1,0 +1,180 @@
+[
+  {
+    "coordinatesV1": "org.glassfish.jersey.core:jersey-common:2.0-rc1",
+    "coordinatesV2": "org.glassfish.jersey.core:jersey-common:2.0",
+    "caller": "|java+method:///org/glassfish/jersey/message/internal/HeadersFactory/asStringList(java.util.List,javax.ws.rs.ext.RuntimeDelegate)|",
+    "called": "|java+method:///javax/ws/rs/ext/RuntimeDelegate/getInstance()|",
+    "v1Body": [
+      "|java+method:///com/google/common/collect/Lists/transform(java.util.List,com.google.common.base.Function)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/util/Collections/emptyList()|",
+      "|java+constructor:///org/glassfish/jersey/message/internal/HeadersFactory$1/HeadersFactory$1(javax.ws.rs.ext.RuntimeDelegate)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/collect/Lists/transform(java.util.List,com.google.common.base.Function)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/util/Collections/emptyList()|",
+      "|java+method:///javax/ws/rs/ext/RuntimeDelegate/getInstance()|",
+      "|java+constructor:///org/glassfish/jersey/message/internal/HeadersFactory$1/HeadersFactory$1(javax.ws.rs.ext.RuntimeDelegate)|"
+    ],
+    "affectedLib": "javax.ws.rs:javax.ws.rs-api:2.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.glassfish.jersey.core:jersey-common:2.0-rc1",
+    "coordinatesV2": "org.glassfish.jersey.core:jersey-common:2.0",
+    "caller": "|java+method:///org/glassfish/jersey/message/internal/MessageBodyFactory/getMessageBodyWriterMediaType(java.lang.Class,java.lang.reflect.Type,java.lang.annotation.Annotation%5B%5D,java.util.List)|",
+    "called": "|java+method:///javax/ws/rs/core/MediaType/isCompatible(javax.ws.rs.core.MediaType)|",
+    "v1Body": [
+      "|java+method:///org/glassfish/jersey/message/internal/MediaTypes/mostSpecific(javax.ws.rs.core.MediaType,javax.ws.rs.core.MediaType)|",
+      "|java+method:///javax/ws/rs/core/MediaType/isCompatible(javax.ws.rs.core.MediaType)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///javax/ws/rs/ext/MessageBodyWriter/isWriteable(java.lang.Class,java.lang.reflect.Type,java.lang.annotation.Annotation%5B%5D,javax.ws.rs.core.MediaType)|",
+      "|java+method:///java/util/List/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/glassfish/jersey/message/internal/MediaTypes/mostSpecific(javax.ws.rs.core.MediaType,javax.ws.rs.core.MediaType)|",
+      "|java+method:///org/glassfish/jersey/message/internal/MessageBodyFactory$MessageBodyWorkerPair/access$300(org.glassfish.jersey.message.internal.MessageBodyFactory$MessageBodyWorkerPair)|",
+      "|java+method:///javax/ws/rs/core/MediaType/isCompatible(javax.ws.rs.core.MediaType)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///javax/ws/rs/ext/MessageBodyWriter/isWriteable(java.lang.Class,java.lang.reflect.Type,java.lang.annotation.Annotation%5B%5D,javax.ws.rs.core.MediaType)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/glassfish/jersey/message/internal/MessageBodyFactory$MessageBodyWorkerPair/access$100(org.glassfish.jersey.message.internal.MessageBodyFactory$MessageBodyWorkerPair)|"
+    ],
+    "affectedLib": "javax.ws.rs:javax.ws.rs-api:2.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.glassfish.jersey.core:jersey-common:2.0-rc1",
+    "coordinatesV2": "org.glassfish.jersey.core:jersey-common:2.0",
+    "caller": "|java+method:///org/glassfish/jersey/message/internal/MessageBodyFactory/getMessageBodyReaderMediaTypes(java.lang.Class,java.lang.reflect.Type,java.lang.annotation.Annotation%5B%5D)|",
+    "called": "|java+method:///com/google/common/collect/Lists/newArrayList(java.lang.Iterable)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/List/addAll(java.util.Collection)|",
+      "|java+method:///javax/ws/rs/ext/MessageBodyReader/isReadable(java.lang.Class,java.lang.reflect.Type,java.lang.annotation.Annotation%5B%5D,javax.ws.rs.core.MediaType)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Collections/sort(java.util.List,java.util.Comparator)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/glassfish/jersey/message/internal/MessageBodyFactory$MessageBodyWorkerPair/access$300(org.glassfish.jersey.message.internal.MessageBodyFactory$MessageBodyWorkerPair)|",
+      "|java+method:///java/util/Set/contains(java.lang.Object)|",
+      "|java+method:///com/google/common/collect/Sets/newLinkedHashSet()|",
+      "|java+method:///javax/ws/rs/ext/MessageBodyReader/isReadable(java.lang.Class,java.lang.reflect.Type,java.lang.annotation.Annotation%5B%5D,javax.ws.rs.core.MediaType)|",
+      "|java+method:///java/util/List/contains(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///org/glassfish/jersey/message/internal/MessageBodyFactory$MessageBodyWorkerPair/access$100(org.glassfish.jersey.message.internal.MessageBodyFactory$MessageBodyWorkerPair)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/google/common/collect/Lists/newArrayList(java.lang.Iterable)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Collections/sort(java.util.List,java.util.Comparator)|"
+    ],
+    "affectedLib": "com.google.guava:guava:14.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.glassfish.jersey.core:jersey-common:2.0-rc1",
+    "coordinatesV2": "org.glassfish.jersey.core:jersey-common:2.0",
+    "caller": "|java+method:///org/glassfish/jersey/message/internal/MessageBodyFactory/getMessageBodyWriterMediaTypes(java.lang.Class,java.lang.reflect.Type,java.lang.annotation.Annotation%5B%5D)|",
+    "called": "|java+method:///com/google/common/collect/Lists/newArrayList(java.lang.Iterable)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/List/addAll(java.util.Collection)|",
+      "|java+method:///javax/ws/rs/ext/MessageBodyWriter/isWriteable(java.lang.Class,java.lang.reflect.Type,java.lang.annotation.Annotation%5B%5D,javax.ws.rs.core.MediaType)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Collections/sort(java.util.List,java.util.Comparator)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/glassfish/jersey/message/internal/MessageBodyFactory$MessageBodyWorkerPair/access$300(org.glassfish.jersey.message.internal.MessageBodyFactory$MessageBodyWorkerPair)|",
+      "|java+method:///java/util/Set/contains(java.lang.Object)|",
+      "|java+method:///com/google/common/collect/Sets/newLinkedHashSet()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///org/glassfish/jersey/message/internal/MessageBodyFactory$MessageBodyWorkerPair/access$100(org.glassfish.jersey.message.internal.MessageBodyFactory$MessageBodyWorkerPair)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/google/common/collect/Lists/newArrayList(java.lang.Iterable)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Collections/sort(java.util.List,java.util.Comparator)|",
+      "|java+method:///java/util/List/contains(java.lang.Object)|",
+      "|java+method:///javax/ws/rs/ext/MessageBodyWriter/isWriteable(java.lang.Class,java.lang.reflect.Type,java.lang.annotation.Annotation%5B%5D,javax.ws.rs.core.MediaType)|"
+    ],
+    "affectedLib": "com.google.guava:guava:14.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.glassfish.jersey.core:jersey-common:2.0-rc1",
+    "coordinatesV2": "org.glassfish.jersey.core:jersey-common:2.0",
+    "caller": "|java+method:///org/glassfish/jersey/internal/util/ReflectionHelper/getTypeArgumentAndClass(java.lang.reflect.Type)|",
+    "called": "|java+method:///com/google/common/collect/Lists/newArrayList(java.lang.Iterable)|",
+    "v1Body": [
+      "|java+method:///org/glassfish/jersey/internal/util/ReflectionHelper/getTypeArguments(java.lang.reflect.Type)|",
+      "|java+method:///com/google/common/collect/Lists/newArrayList(java.lang.Iterable)|",
+      "|java+method:///com/google/common/collect/Collections2/transform(java.util.Collection,com.google.common.base.Function)|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Collections/emptyList()|",
+      "|java+constructor:///org/glassfish/jersey/internal/util/ReflectionHelper$4/ReflectionHelper$4()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/glassfish/jersey/internal/util/ReflectionHelper/getTypeArguments(java.lang.reflect.Type)|",
+      "|java+method:///com/google/common/collect/Lists/newArrayList(java.lang.Iterable)|",
+      "|java+method:///com/google/common/collect/Collections2/transform(java.util.Collection,com.google.common.base.Function)|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Collections/emptyList()|",
+      "|java+constructor:///org/glassfish/jersey/internal/util/ReflectionHelper$5/ReflectionHelper$5()|"
+    ],
+    "affectedLib": "com.google.guava:guava:14.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.glassfish.jersey.core:jersey-common:2.0-rc1",
+    "coordinatesV2": "org.glassfish.jersey.core:jersey-common:2.0",
+    "caller": "|java+method:///org/glassfish/jersey/message/internal/HeadersFactory/asStringList(java.util.List,javax.ws.rs.ext.RuntimeDelegate)|",
+    "called": "|java+method:///com/google/common/collect/Lists/transform(java.util.List,com.google.common.base.Function)|",
+    "v1Body": [
+      "|java+method:///com/google/common/collect/Lists/transform(java.util.List,com.google.common.base.Function)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/util/Collections/emptyList()|",
+      "|java+constructor:///org/glassfish/jersey/message/internal/HeadersFactory$1/HeadersFactory$1(javax.ws.rs.ext.RuntimeDelegate)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/collect/Lists/transform(java.util.List,com.google.common.base.Function)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/util/Collections/emptyList()|",
+      "|java+method:///javax/ws/rs/ext/RuntimeDelegate/getInstance()|",
+      "|java+constructor:///org/glassfish/jersey/message/internal/HeadersFactory$1/HeadersFactory$1(javax.ws.rs.ext.RuntimeDelegate)|"
+    ],
+    "affectedLib": "com.google.guava:guava:14.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.glassfish.jersey.core:jersey-common:2.0-rc1",
+    "coordinatesV2": "org.glassfish.jersey.core:jersey-common:2.0",
+    "caller": "|java+method:///org/glassfish/jersey/internal/util/ReflectionHelper/getGenericTypeArgumentClasses(java.lang.reflect.Type)|",
+    "called": "|java+method:///com/google/common/collect/Lists/newArrayList(java.lang.Iterable)|",
+    "v1Body": [
+      "|java+method:///org/glassfish/jersey/internal/util/ReflectionHelper/getTypeArguments(java.lang.reflect.Type)|",
+      "|java+method:///com/google/common/collect/Lists/newArrayList(java.lang.Iterable)|",
+      "|java+method:///com/google/common/collect/Collections2/transform(java.util.Collection,com.google.common.base.Function)|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Collections/emptyList()|",
+      "|java+constructor:///org/glassfish/jersey/internal/util/ReflectionHelper$3/ReflectionHelper$3()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/glassfish/jersey/internal/util/ReflectionHelper/getTypeArguments(java.lang.reflect.Type)|",
+      "|java+method:///com/google/common/collect/Lists/newArrayList(java.lang.Iterable)|",
+      "|java+method:///com/google/common/collect/Collections2/transform(java.util.Collection,com.google.common.base.Function)|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Collections/emptyList()|",
+      "|java+constructor:///org/glassfish/jersey/internal/util/ReflectionHelper$4/ReflectionHelper$4()|"
+    ],
+    "affectedLib": "com.google.guava:guava:14.0.1",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,140 @@
+[
+  {
+    "coordinatesV1": "com.github.spapageo:jannel:0.1.1.BETA",
+    "coordinatesV2": "com.github.spapageo:jannel:0.1.BETA",
+    "caller": "|java+method:///com/github/spapageo/jannel/client/ClientSession/handleSmsAckResponse(com.github.spapageo.jannel.msg.Ack,java.util.UUID)|",
+    "called": "|java+method:///com/cloudhopper/commons/util/windowing/Window/complete(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/github/spapageo/jannel/client/SessionHandler/fireUnexpectedAckReceived(com.github.spapageo.jannel.msg.Ack)|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String,java.lang.Object)|",
+      "|java+method:///com/cloudhopper/commons/util/windowing/Window/complete(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/github/spapageo/jannel/msg/Ack/getId()|",
+      "|java+method:///com/cloudhopper/commons/util/windowing/WindowFuture/getCallerStateHint()|",
+      "|java+method:///com/cloudhopper/commons/util/windowing/WindowFuture/getRequest()|",
+      "|java+method:///com/github/spapageo/jannel/client/SessionHandler/fireExpectedAckReceived(com.cloudhopper.commons.util.windowing.WindowFuture)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/spapageo/jannel/windowing/Window/complete(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/github/spapageo/jannel/client/SessionHandler/fireUnexpectedAckReceived(com.github.spapageo.jannel.msg.Ack)|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String,java.lang.Object)|",
+      "|java+method:///com/github/spapageo/jannel/msg/Ack/getId()|"
+    ],
+    "affectedLib": "com.cloudhopper:ch-commons-util:6.0.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.github.spapageo:jannel:0.1.1.BETA",
+    "coordinatesV2": "com.github.spapageo:jannel:0.1.BETA",
+    "caller": "|java+method:///com/github/spapageo/jannel/client/ClientSession/getWindowSize()|",
+    "called": "|java+method:///com/cloudhopper/commons/util/windowing/Window/getSize()|",
+    "v1Body": [
+      "|java+method:///com/cloudhopper/commons/util/windowing/Window/getSize()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/spapageo/jannel/windowing/Window/getSize()|"
+    ],
+    "affectedLib": "com.cloudhopper:ch-commons-util:6.0.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.github.spapageo:jannel:0.1.1.BETA",
+    "coordinatesV2": "com.github.spapageo:jannel:0.1.BETA",
+    "caller": "|java+method:///com/github/spapageo/jannel/client/ClientSession/fireConnectionClosed()|",
+    "called": "|java+method:///com/cloudhopper/commons/util/windowing/Window/createSortedSnapshot()|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///com/cloudhopper/commons/util/windowing/Window/createSortedSnapshot()|",
+      "|java+method:///java/util/Collection/stream()|",
+      "|java+method:///java/util/Map/values()|",
+      "|java+method:///java/util/stream/Stream/filter(java.util.function.Predicate)|",
+      "|java+method:///java/util/stream/Stream/forEach(java.util.function.Consumer)|",
+      "|java+constructor:///java/nio/channels/ClosedChannelException/ClosedChannelException()|",
+      "|java+method:///com/github/spapageo/jannel/client/ClientSession/isClosed()|",
+      "|java+method:///com/github/spapageo/jannel/client/SessionHandler/fireChannelUnexpectedlyClosed()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///com/github/spapageo/jannel/windowing/Window/failAll(java.lang.Throwable)|",
+      "|java+constructor:///java/nio/channels/ClosedChannelException/ClosedChannelException()|",
+      "|java+method:///com/github/spapageo/jannel/client/ClientSession/isClosed()|",
+      "|java+method:///com/github/spapageo/jannel/client/SessionHandler/fireChannelUnexpectedlyClosed()|"
+    ],
+    "affectedLib": "com.cloudhopper:ch-commons-util:6.0.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.github.spapageo:jannel:0.1.1.BETA",
+    "coordinatesV2": "com.github.spapageo:jannel:0.1.BETA",
+    "caller": "|java+method:///com/github/spapageo/jannel/client/ClientSession/destroy()|",
+    "called": "|java+method:///com/cloudhopper/commons/util/windowing/Window/destroy()|",
+    "v1Body": [
+      "|java+method:///com/cloudhopper/commons/util/windowing/Window/destroy()|",
+      "|java+method:///com/github/spapageo/jannel/client/ClientSession/close()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/spapageo/jannel/client/ClientSession/close()|",
+      "|java+method:///com/github/spapageo/jannel/windowing/Window/destroy()|"
+    ],
+    "affectedLib": "com.cloudhopper:ch-commons-util:6.0.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.github.spapageo:jannel:0.1.BETA",
+    "coordinatesV2": "com.github.spapageo:jannel:0.1.1.BETA",
+    "caller": "|java+method:///com/github/spapageo/jannel/client/ClientSession/getLocalAddress()|",
+    "called": "|java+method:///com/google/common/base/Optional/fromNullable(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/util/Optional/ofNullable(java.lang.Object)|",
+      "|java+method:///io/netty/channel/Channel/localAddress()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/Channel/localAddress()|",
+      "|java+method:///com/google/common/base/Optional/fromNullable(java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.spapageo:jannel:0.1.BETA",
+    "coordinatesV2": "com.github.spapageo:jannel:0.1.1.BETA",
+    "caller": "|java+method:///com/github/spapageo/jannel/client/ClientSession/getRemoteAddress()|",
+    "called": "|java+method:///com/google/common/base/Optional/fromNullable(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/util/Optional/ofNullable(java.lang.Object)|",
+      "|java+method:///io/netty/channel/Channel/remoteAddress()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/Channel/remoteAddress()|",
+      "|java+method:///com/google/common/base/Optional/fromNullable(java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.spapageo:jannel:0.1.BETA",
+    "coordinatesV2": "com.github.spapageo:jannel:0.1.1.BETA",
+    "caller": "|java+method:///com/github/spapageo/jannel/client/ClientSession/identify(com.github.spapageo.jannel.msg.Admin)|",
+    "called": "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///com/github/spapageo/jannel/msg/Admin/getAdminCommand()|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///io/netty/channel/ChannelFuture/syncUninterruptibly()|",
+      "|java+method:///com/github/spapageo/jannel/client/ClientSession/close()|",
+      "|java+method:///com/github/spapageo/jannel/client/ClientSession/sendMessage(com.github.spapageo.jannel.msg.Message)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/github/spapageo/jannel/client/SessionHandler/fireSessionInitialized(com.github.spapageo.jannel.client.ClientSession)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/spapageo/jannel/msg/Admin/getAdminCommand()|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///io/netty/channel/ChannelFuture/syncUninterruptibly()|",
+      "|java+method:///com/github/spapageo/jannel/client/ClientSession/close()|",
+      "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+      "|java+method:///com/github/spapageo/jannel/client/ClientSession/sendMessage(com.github.spapageo.jannel.msg.Message)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/github/spapageo/jannel/client/SessionHandler/fireSessionInitialized(com.github.spapageo.jannel.client.ClientSession)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "ADDED"
+  }
+]

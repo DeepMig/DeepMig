@@ -1,0 +1,60 @@
+[
+  {
+    "coordinatesV1": "org.neo4j.app:neo4j-server-enterprise:3.2.0-alpha04",
+    "coordinatesV2": "org.neo4j.app:neo4j-server-enterprise:3.2.0-rc3",
+    "caller": "|java+method:///org/neo4j/server/enterprise/EnterpriseNeoServer/createServerModules()|",
+    "called": "|java+method:///org/neo4j/server/CommunityNeoServer/createServerModules()|",
+    "v1Body": [
+      "|java+method:///org/neo4j/helpers/collection/Iterables/mix(java.lang.Iterable%5B%5D)|",
+      "|java+method:///org/neo4j/server/CommunityNeoServer/createServerModules()|",
+      "|java+method:///org/neo4j/server/enterprise/EnterpriseNeoServer/getConfig()|",
+      "|java+constructor:///org/neo4j/server/rest/DatabaseRoleInfoServerModule/DatabaseRoleInfoServerModule(org.neo4j.server.web.WebServer,org.neo4j.kernel.configuration.Config,org.neo4j.logging.LogProvider)|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/neo4j/server/enterprise/modules/JMXManagementModule/JMXManagementModule(org.neo4j.server.NeoServer)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/neo4j/server/CommunityNeoServer/createServerModules()|",
+      "|java+constructor:///org/neo4j/server/enterprise/modules/JMXManagementModule/JMXManagementModule(org.neo4j.server.NeoServer)|",
+      "|java+method:///org/neo4j/server/enterprise/EnterpriseNeoServer/getConfig()|",
+      "|java+method:///org/neo4j/kernel/configuration/Config/get(org.neo4j.graphdb.config.Setting)|",
+      "|java+constructor:///org/neo4j/server/rest/DatabaseRoleInfoServerModule/DatabaseRoleInfoServerModule(org.neo4j.server.web.WebServer,org.neo4j.kernel.configuration.Config,org.neo4j.logging.LogProvider)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+method:///java/lang/Iterable/forEach(java.util.function.Consumer)|"
+    ],
+    "affectedLib": "org.neo4j.app:neo4j-server:3.2.0-rc3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.neo4j.app:neo4j-server-enterprise:3.2.0-alpha04",
+    "coordinatesV2": "org.neo4j.app:neo4j-server-enterprise:3.2.0-rc3",
+    "caller": "|java+method:///org/neo4j/server/enterprise/ArbiterEntryPoint/main(java.lang.String%5B%5D)|",
+    "called": "|java+method:///org/neo4j/server/ServerCommandLineArgs/configFile()|",
+    "v1Body": [
+      "|java+method:///org/neo4j/server/enterprise/ArbiterBootstrapper/start(java.io.File,java.util.Optional,org.neo4j.helpers.collection.Pair%5B%5D)|",
+      "|java+method:///java/lang/System/exit(int)|",
+      "|java+method:///org/neo4j/server/ServerCommandLineArgs/homeDir()|",
+      "|java+constructor:///org/neo4j/server/enterprise/ArbiterBootstrapper/ArbiterBootstrapper()|",
+      "|java+method:///org/neo4j/server/ServerCommandLineArgs/configFile()|",
+      "|java+method:///org/neo4j/server/ServerCommandLineArgs/parse(java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/neo4j/server/enterprise/ArbiterBootstrapper/start(java.io.File,java.util.Optional,org.neo4j.helpers.collection.Pair%5B%5D)|",
+      "|java+method:///java/lang/System/exit(int)|",
+      "|java+method:///org/neo4j/server/ServerCommandLineArgs/homeDir()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/neo4j/server/enterprise/ArbiterBootstrapper/ArbiterBootstrapper()|",
+      "|java+method:///org/neo4j/commandline/Util/neo4jVersion()|",
+      "|java+method:///org/neo4j/server/ServerCommandLineArgs/version()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///org/neo4j/server/ServerCommandLineArgs/configFile()|",
+      "|java+method:///org/neo4j/server/ServerCommandLineArgs/parse(java.lang.String%5B%5D)|"
+    ],
+    "affectedLib": "org.neo4j.app:neo4j-server:3.2.0-rc3",
+    "change": "UPDATED"
+  }
+]

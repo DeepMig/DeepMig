@@ -1,0 +1,80 @@
+[
+  {
+    "coordinatesV1": "org.ikasan:ikasan-error-reporting-service:1.5.1",
+    "coordinatesV2": "org.ikasan:ikasan-error-reporting-service:2.0.0-rc1",
+    "caller": "|java+initializer:///org/ikasan/error/reporting/service/ErrorReportingManagementServiceImpl/ErrorReportingManagementServiceImpl$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.25",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.ikasan:ikasan-error-reporting-service:1.5.1",
+    "coordinatesV2": "org.ikasan:ikasan-error-reporting-service:2.0.0-rc1",
+    "caller": "|java+initializer:///org/ikasan/error/reporting/dao/HibernateErrorManagementDao/HibernateErrorManagementDao$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.25",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.ikasan:ikasan-error-reporting-service:1.5.1",
+    "coordinatesV2": "org.ikasan:ikasan-error-reporting-service:2.0.0-rc1",
+    "caller": "|java+initializer:///org/ikasan/error/reporting/dao/MapErrorReportingServiceDao/MapErrorReportingServiceDao$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.25",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.ikasan:ikasan-error-reporting-service:1.5.1",
+    "coordinatesV2": "org.ikasan:ikasan-error-reporting-service:2.0.0-rc1",
+    "caller": "|java+method:///org/ikasan/error/reporting/dao/HibernateErrorReportingServiceDao/find(java.util.List)|",
+    "called": "|java+method:///com/google/common/collect/Lists/partition(java.util.List,int)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/hibernate/criterion/DetachedCriteria/add(org.hibernate.criterion.Criterion)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/springframework/orm/hibernate4/HibernateTemplate/findByCriteria(org.hibernate.criterion.DetachedCriteria)|",
+      "|java+method:///com/google/common/collect/Lists/partition(java.util.List,int)|",
+      "|java+method:///org/hibernate/criterion/Restrictions/in(java.lang.String,java.util.Collection)|",
+      "|java+method:///org/hibernate/criterion/DetachedCriteria/forClass(java.lang.Class)|",
+      "|java+method:///org/ikasan/error/reporting/dao/HibernateErrorReportingServiceDao/getHibernateTemplate()|",
+      "|java+method:///org/ikasan/error/reporting/model/ErrorOccurrence/getUri()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/hibernate/criterion/DetachedCriteria/add(org.hibernate.criterion.Criterion)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/springframework/orm/hibernate4/HibernateTemplate/findByCriteria(org.hibernate.criterion.DetachedCriteria)|",
+      "|java+method:///com/google/common/collect/Lists/partition(java.util.List,int)|",
+      "|java+method:///org/hibernate/criterion/Restrictions/in(java.lang.String,java.util.Collection)|",
+      "|java+method:///org/hibernate/criterion/DetachedCriteria/forClass(java.lang.Class)|",
+      "|java+method:///org/ikasan/error/reporting/dao/HibernateErrorReportingServiceDao/getHibernateTemplate()|",
+      "|java+method:///org/ikasan/error/reporting/model/ErrorOccurrenceImpl/getUri()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|"
+    ],
+    "affectedLib": "com.google.guava:guava:23.0",
+    "change": "UPDATED"
+  }
+]

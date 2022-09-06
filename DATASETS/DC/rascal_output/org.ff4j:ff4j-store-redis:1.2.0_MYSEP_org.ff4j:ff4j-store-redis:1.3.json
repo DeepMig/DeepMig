@@ -1,0 +1,44 @@
+[
+  {
+    "coordinatesV1": "org.ff4j:ff4j-store-redis:1.2.0",
+    "coordinatesV2": "org.ff4j:ff4j-store-redis:1.3",
+    "caller": "|java+method:///org/ff4j/cache/FeatureCacheProviderRedis/get(java.lang.String)|",
+    "called": "|java+method:///org/ff4j/utils/json/FeatureJsonParser/parseFeature(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/ff4j/utils/FeatureJsonMarshaller/unMarshallFeature(java.lang.String)|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///redis/clients/jedis/Jedis/get(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/ff4j/utils/json/FeatureJsonParser/parseFeature(java.lang.String)|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///redis/clients/jedis/Jedis/get(java.lang.String)|"
+    ],
+    "affectedLib": "org.ff4j:ff4j-utils-json:1.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.ff4j:ff4j-store-redis:1.2.0",
+    "coordinatesV2": "org.ff4j:ff4j-store-redis:1.3",
+    "caller": "|java+method:///org/ff4j/cache/FeatureCacheProviderRedis/put(org.ff4j.core.Feature)|",
+    "called": "|java+method:///org/ff4j/core/Feature/toJson()|",
+    "v1Body": [
+      "|java+method:///org/ff4j/core/Feature/toString()|",
+      "|java+method:///redis/clients/jedis/Jedis/expire(java.lang.String,int)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///redis/clients/jedis/Jedis/set(java.lang.String,java.lang.String)|",
+      "|java+method:///org/ff4j/core/Feature/getUid()|"
+    ],
+    "v2Body": [
+      "|java+method:///redis/clients/jedis/Jedis/expire(java.lang.String,int)|",
+      "|java+method:///org/ff4j/core/Feature/toJson()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///redis/clients/jedis/Jedis/set(java.lang.String,java.lang.String)|",
+      "|java+method:///org/ff4j/core/Feature/getUid()|"
+    ],
+    "affectedLib": "org.ff4j:ff4j-core:1.3",
+    "change": "UPDATED"
+  }
+]

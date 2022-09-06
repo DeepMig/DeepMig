@@ -1,0 +1,64 @@
+[
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-scim:5.3.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-scim:5.3.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/config/CasScimConfiguration/scimProvisioner()|",
+    "called": "|java+constructor:///org/springframework/beans/factory/BeanCreationException/BeanCreationException(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/apereo/cas/scim/v1/Scim1Provisioner/Scim1Provisioner(java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.apereo.cas.scim.v1.Scim1PrincipalAttributeMapper)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/scim/ScimProperties/getPassword()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/scim/ScimProperties/getOauthToken()|",
+      "|java+method:///org/apereo/cas/config/CasScimConfiguration/scim1PrincipalAttributeMapper()|",
+      "|java+method:///org/apereo/cas/config/CasScimConfiguration/scim2PrincipalAttributeMapper()|",
+      "|java+method:///org/apereo/cas/configuration/CasConfigurationProperties/getScim()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/scim/ScimProperties/getTarget()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/scim/ScimProperties/getUsername()|",
+      "|java+constructor:///org/apereo/cas/scim/v2/Scim2Provisioner/Scim2Provisioner(java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.apereo.cas.scim.v2.Scim2PrincipalAttributeMapper)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/scim/ScimProperties/getVersion()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/StringUtils/isBlank(java.lang.CharSequence)|",
+      "|java+constructor:///org/apereo/cas/scim/v2/ScimV2PrincipalProvisioner/ScimV2PrincipalProvisioner(java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.apereo.cas.scim.v2.ScimV2PrincipalAttributeMapper)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/scim/ScimProperties/getOauthToken()|",
+      "|java+constructor:///org/springframework/beans/factory/BeanCreationException/BeanCreationException(java.lang.String)|",
+      "|java+method:///org/apereo/cas/config/CasScimConfiguration/scim1PrincipalAttributeMapper()|",
+      "|java+method:///org/apereo/cas/config/CasScimConfiguration/scim2PrincipalAttributeMapper()|",
+      "|java+method:///org/apereo/cas/configuration/CasConfigurationProperties/getScim()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/scim/ScimProperties/getTarget()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/scim/ScimProperties/getVersion()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/scim/ScimProperties/getUsername()|",
+      "|java+constructor:///org/apereo/cas/scim/v1/ScimV1PrincipalProvisioner/ScimV1PrincipalProvisioner(java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.apereo.cas.scim.v1.ScimV1PrincipalAttributeMapper)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/scim/ScimProperties/getPassword()|"
+    ],
+    "affectedLib": "org.springframework:spring-beans:4.3.17.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-scim:5.3.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-scim:5.3.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/web/flow/PrincipalScimProvisionerAction/doExecute(org.springframework.webflow.execution.RequestContext)|",
+    "called": "|java+method:///org/apereo/cas/web/support/WebUtils/getCredential(org.springframework.webflow.execution.RequestContext)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/apereo/cas/web/support/WebUtils/getCredential(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apereo/cas/scim/api/ScimProvisioner/create(org.apereo.cas.authentication.principal.Principal,org.apereo.cas.authentication.UsernamePasswordCredential)|",
+      "|java+method:///org/apereo/cas/authentication/Authentication/getPrincipal()|",
+      "|java+method:///org/apereo/cas/web/flow/PrincipalScimProvisionerAction/success()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apereo/cas/web/support/WebUtils/getAuthentication(org.springframework.webflow.execution.RequestContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apereo/cas/web/support/WebUtils/getCredential(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apereo/cas/authentication/Authentication/getPrincipal()|",
+      "|java+method:///org/apereo/cas/web/flow/PrincipalScimProvisionerAction/success()|",
+      "|java+method:///org/apereo/cas/api/PrincipalProvisioner/create(org.apereo.cas.authentication.Authentication,org.apereo.cas.authentication.principal.Principal,org.apereo.cas.authentication.Credential)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apereo/cas/web/support/WebUtils/getAuthentication(org.springframework.webflow.execution.RequestContext)|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-core-web-api:5.3.0-RC4",
+    "change": "UPDATED"
+  }
+]

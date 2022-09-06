@@ -1,0 +1,224 @@
+[
+  {
+    "coordinatesV1": "com.barrybecker4:bb4-puzzle:1.3",
+    "coordinatesV2": "com.barrybecker4:bb4-puzzle:1.4",
+    "caller": "|java+constructor:///com/barrybecker4/puzzle/common/ui/PuzzleApplet/PuzzleApplet()|",
+    "called": "|java+method:///scala/Array$/apply(scala.collection.Seq,scala.reflect.ClassTag)|",
+    "v1Body": [
+      "|java+constructor:///com/barrybecker4/ui/application/ApplicationApplet/ApplicationApplet(java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/reflect/ClassTag$/apply(java.lang.Class)|",
+      "|java+constructor:///com/barrybecker4/puzzle/common/ui/PuzzleApplet/PuzzleApplet(java.lang.String%5B%5D)|",
+      "|java+method:///scala/Array$/apply(scala.collection.Seq,scala.reflect.ClassTag)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-library:2.12.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.barrybecker4:bb4-puzzle:1.3",
+    "coordinatesV2": "com.barrybecker4:bb4-puzzle:1.4",
+    "caller": "|java+method:///com/barrybecker4/puzzle/common/model/PuzzleNode/asMoveList()|",
+    "called": "|java+method:///scala/Option/isDefined()|",
+    "v1Body": [
+      "|java+constructor:///java/util/LinkedList/LinkedList()|",
+      "|java+method:///java/util/List/add(int,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/collection/immutable/List/$plus$colon(java.lang.Object,scala.collection.generic.CanBuildFrom)|",
+      "|java+method:///scala/Option/get()|",
+      "|java+method:///scala/collection/immutable/List$/canBuildFrom()|",
+      "|java+method:///com/barrybecker4/puzzle/common/model/PuzzleNode/move()|",
+      "|java+method:///scala/Option/isDefined()|",
+      "|java+method:///com/barrybecker4/puzzle/common/model/PuzzleNode/previous()|"
+    ],
+    "affectedLib": "org.scala-lang:scala-library:2.12.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.barrybecker4:bb4-puzzle:1.3",
+    "coordinatesV2": "com.barrybecker4:bb4-puzzle:1.4",
+    "caller": "|java+method:///com/barrybecker4/puzzle/common/ui/PuzzleViewer/drawStatus(java.awt.Graphics,java.lang.String,int,int)|",
+    "called": "|java+method:///scala/runtime/IntRef/create(int)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+method:///java/awt/Graphics/drawString(java.lang.String,int,int)|",
+      "|java+method:///java/awt/Graphics/setColor(java.awt.Color)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+constructor:///scala/collection/mutable/ArrayOps$ofRef/ArrayOps$ofRef(java.lang.Object%5B%5D)|",
+      "|java+method:///scala/runtime/IntRef/create(int)|",
+      "|java+method:///java/awt/Graphics/setColor(java.awt.Color)|",
+      "|java+method:///scala/collection/mutable/ArrayOps$ofRef/foreach(scala.Function1)|",
+      "|java+method:///scala/Predef$/refArrayOps(java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-library:2.12.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.barrybecker4:bb4-puzzle:1.3",
+    "coordinatesV2": "com.barrybecker4:bb4-puzzle:1.4",
+    "caller": "|java+method:///com/barrybecker4/puzzle/common/solver/SequentialPuzzleSolver/solve()|",
+    "called": "|java+method:///scala/Option$/apply(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/barrybecker4/puzzle/common/PuzzleController/finalRefresh(java.util.List,java.lang.Object,long,long)|",
+      "|java+method:///com/barrybecker4/puzzle/common/model/PuzzleNode/getPosition()|",
+      "|java+constructor:///com/barrybecker4/puzzle/common/model/PuzzleNode/PuzzleNode(java.lang.Object)|",
+      "|java+method:///com/barrybecker4/puzzle/common/PuzzleController/initialState()|",
+      "|java+method:///com/barrybecker4/puzzle/common/model/PuzzleNode/asMoveList()|",
+      "|java+method:///com/barrybecker4/puzzle/common/solver/SequentialPuzzleSolver/search(com.barrybecker4.puzzle.common.model.PuzzleNode)|",
+      "|java+method:///java/lang/System/currentTimeMillis()|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/Option$/empty()|",
+      "|java+constructor:///com/barrybecker4/puzzle/common/model/PuzzleNode/PuzzleNode(java.lang.Object,scala.Option,scala.Option,int)|",
+      "|java+method:///com/barrybecker4/puzzle/common/model/PuzzleNode$/$lessinit$greater$default$2()|",
+      "|java+method:///com/barrybecker4/puzzle/common/model/PuzzleNode$/$lessinit$greater$default$3()|",
+      "|java+method:///com/barrybecker4/puzzle/common/model/PuzzleNode$/$lessinit$greater$default$4()|",
+      "|java+method:///com/barrybecker4/puzzle/common/PuzzleController/initialState()|",
+      "|java+method:///scala/Option$/apply(java.lang.Object)|",
+      "|java+method:///com/barrybecker4/puzzle/common/solver/SequentialPuzzleSolver/puzzle()|",
+      "|java+method:///com/barrybecker4/puzzle/common/model/PuzzleNode/asMoveList()|",
+      "|java+method:///com/barrybecker4/puzzle/common/solver/SequentialPuzzleSolver/search(com.barrybecker4.puzzle.common.model.PuzzleNode)|",
+      "|java+method:///com/barrybecker4/puzzle/common/PuzzleController/finalRefresh(scala.Option,scala.Option,long,long)|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///com/barrybecker4/puzzle/common/model/PuzzleNode/getPosition()|",
+      "|java+method:///com/barrybecker4/puzzle/common/solver/SequentialPuzzleSolver/numTries()|"
+    ],
+    "affectedLib": "org.scala-lang:scala-library:2.12.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.barrybecker4:bb4-puzzle:1.3",
+    "coordinatesV2": "com.barrybecker4:bb4-puzzle:1.4",
+    "caller": "|java+constructor:///com/barrybecker4/puzzle/common/solver/SequentialPuzzleSolver/SequentialPuzzleSolver(com.barrybecker4.puzzle.common.PuzzleController)|",
+    "called": "|java+constructor:///scala/collection/mutable/HashSet/HashSet()|",
+    "v1Body": [
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///scala/collection/mutable/HashSet/HashSet()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.scala-lang:scala-library:2.12.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.barrybecker4:bb4-puzzle:1.3",
+    "coordinatesV2": "com.barrybecker4:bb4-puzzle:1.4",
+    "caller": "|java+method:///com/barrybecker4/puzzle/common/ui/TopControlPanel/createAlgorithmDropdown()|",
+    "called": "|java+constructor:///scala/collection/mutable/ArrayOps$ofRef/ArrayOps$ofRef(java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+constructor:///javax/swing/JComboBox/JComboBox()|",
+      "|java+method:///com/barrybecker4/puzzle/common/AlgorithmEnum/ordinal()|",
+      "|java+method:///javax/swing/JComboBox/addItemListener(java.awt.event.ItemListener)|",
+      "|java+method:///com/barrybecker4/puzzle/common/AlgorithmEnum/getLabel()|",
+      "|java+method:///javax/swing/JComboBox/addItem(java.lang.Object)|",
+      "|java+method:///com/barrybecker4/puzzle/common/PuzzleController/getAlgorithm()|",
+      "|java+method:///javax/swing/JComboBox/setSelectedIndex(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/barrybecker4/puzzle/common/ui/TopControlPanel/algorithmChoice_$eq(javax.swing.JComboBox)|",
+      "|java+method:///com/barrybecker4/puzzle/common/PuzzleController/algorithm()|",
+      "|java+constructor:///scala/collection/mutable/ArrayOps$ofRef/ArrayOps$ofRef(java.lang.Object%5B%5D)|",
+      "|java+method:///com/barrybecker4/puzzle/common/ui/TopControlPanel/algorithmChoice()|",
+      "|java+method:///com/barrybecker4/puzzle/common/ui/TopControlPanel/algorithmValues()|",
+      "|java+method:///com/barrybecker4/puzzle/common/ui/TopControlPanel/controller()|",
+      "|java+method:///javax/swing/JComboBox/setSelectedIndex(int)|",
+      "|java+constructor:///javax/swing/JComboBox/JComboBox()|",
+      "|java+method:///com/barrybecker4/puzzle/common/AlgorithmEnum/ordinal()|",
+      "|java+method:///scala/collection/mutable/ArrayOps$ofRef/foreach(scala.Function1)|",
+      "|java+method:///javax/swing/JComboBox/addItemListener(java.awt.event.ItemListener)|",
+      "|java+method:///scala/Predef$/refArrayOps(java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-library:2.12.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.barrybecker4:bb4-puzzle:1.3",
+    "coordinatesV2": "com.barrybecker4:bb4-puzzle:1.4",
+    "caller": "|java+method:///com/barrybecker4/puzzle/common/solver/BaseConcurrentPuzzleSolver/doSolve()|",
+    "called": "|java+method:///scala/Option$/apply(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/barrybecker4/puzzle/common/PuzzleController/finalRefresh(java.util.List,java.lang.Object,long,long)|",
+      "|java+method:///com/barrybecker4/puzzle/common/model/PuzzleNode/getPosition()|",
+      "|java+method:///com/barrybecker4/puzzle/common/solver/ValueLatch/getValue()|",
+      "|java+method:///com/barrybecker4/puzzle/common/PuzzleController/initialState()|",
+      "|java+method:///com/barrybecker4/puzzle/common/model/PuzzleNode/asMoveList()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/concurrent/ExecutorService/execute(java.lang.Runnable)|",
+      "|java+method:///com/barrybecker4/puzzle/common/solver/BaseConcurrentPuzzleSolver/newTask(java.lang.Object,java.lang.Object,com.barrybecker4.puzzle.common.model.PuzzleNode)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/System/currentTimeMillis()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/barrybecker4/puzzle/common/solver/BaseConcurrentPuzzleSolver/newTask(java.lang.Object,scala.Option,scala.Option)|",
+      "|java+method:///com/barrybecker4/puzzle/common/solver/BaseConcurrentPuzzleSolver/solution()|",
+      "|java+method:///com/barrybecker4/puzzle/common/model/PuzzleNode/getPosition()|",
+      "|java+method:///com/barrybecker4/puzzle/common/solver/BaseConcurrentPuzzleSolver/puzzle()|",
+      "|java+method:///com/barrybecker4/puzzle/common/solver/ValueLatch/getValue()|",
+      "|java+method:///com/barrybecker4/puzzle/common/PuzzleController/initialState()|",
+      "|java+method:///scala/Option$/apply(java.lang.Object)|",
+      "|java+method:///com/barrybecker4/puzzle/common/solver/BaseConcurrentPuzzleSolver/com$barrybecker4$puzzle$common$solver$BaseConcurrentPuzzleSolver$$exec()|",
+      "|java+method:///com/barrybecker4/puzzle/common/model/PuzzleNode/asMoveList()|",
+      "|java+method:///com/barrybecker4/puzzle/common/solver/BaseConcurrentPuzzleSolver/com$barrybecker4$puzzle$common$solver$BaseConcurrentPuzzleSolver$$numTries()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///scala/Some/Some(java.lang.Object)|",
+      "|java+method:///com/barrybecker4/puzzle/common/PuzzleController/finalRefresh(scala.Option,scala.Option,long,long)|",
+      "|java+method:///java/util/concurrent/ExecutorService/execute(java.lang.Runnable)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/System/currentTimeMillis()|"
+    ],
+    "affectedLib": "org.scala-lang:scala-library:2.12.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.barrybecker4:bb4-puzzle:1.3",
+    "coordinatesV2": "com.barrybecker4:bb4-puzzle:1.4",
+    "caller": "|java+constructor:///com/barrybecker4/puzzle/common/solver/BaseConcurrentPuzzleSolver/BaseConcurrentPuzzleSolver(com.barrybecker4.puzzle.common.PuzzleController)|",
+    "called": "|java+constructor:///scala/collection/mutable/HashSet/HashSet()|",
+    "v1Body": [
+      "|java+constructor:///com/barrybecker4/puzzle/common/solver/ValueLatch/ValueLatch()|",
+      "|java+method:///java/util/concurrent/ThreadPoolExecutor/setRejectedExecutionHandler(java.util.concurrent.RejectedExecutionHandler)|",
+      "|java+constructor:///java/util/concurrent/ThreadPoolExecutor$DiscardPolicy/ThreadPoolExecutor$DiscardPolicy()|",
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+method:///com/barrybecker4/puzzle/common/solver/BaseConcurrentPuzzleSolver/initThreadPool()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/barrybecker4/puzzle/common/solver/ValueLatch/ValueLatch()|",
+      "|java+constructor:///scala/collection/mutable/HashSet/HashSet()|",
+      "|java+method:///java/util/concurrent/ThreadPoolExecutor/setRejectedExecutionHandler(java.util.concurrent.RejectedExecutionHandler)|",
+      "|java+method:///com/barrybecker4/puzzle/common/solver/BaseConcurrentPuzzleSolver/com$barrybecker4$puzzle$common$solver$BaseConcurrentPuzzleSolver$$exec()|",
+      "|java+constructor:///java/util/concurrent/ThreadPoolExecutor$DiscardPolicy/ThreadPoolExecutor$DiscardPolicy()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///com/barrybecker4/puzzle/common/solver/BaseConcurrentPuzzleSolver/initThreadPool()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.scala-lang:scala-library:2.12.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.barrybecker4:bb4-puzzle:1.3",
+    "coordinatesV2": "com.barrybecker4:bb4-puzzle:1.4",
+    "caller": "|java+method:///com/barrybecker4/puzzle/common/ui/PuzzleViewer/makeSound()|",
+    "called": "|java+method:///com/barrybecker4/sound/MusicMaker/playNote(int,int,int)|",
+    "v1Body": [
+      "|java+method:///com/barrybecker4/sound/MusicMaker/playNote(int,int,int)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/barrybecker4/sound/MusicMaker/playNote(int,int,int)|",
+      "|java+method:///com/barrybecker4/puzzle/common/ui/PuzzleViewer/musicMaker()|"
+    ],
+    "affectedLib": "com.barrybecker4:bb4-sound:1.4",
+    "change": "UPDATED"
+  }
+]

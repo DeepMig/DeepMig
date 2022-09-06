@@ -1,0 +1,194 @@
+[
+  {
+    "coordinatesV1": "com.offbytwo.jenkins:jenkins-client:0.3.0",
+    "coordinatesV2": "com.offbytwo.jenkins:jenkins-client:0.3.1",
+    "caller": "|java+method:///com/offbytwo/jenkins/client/JenkinsHttpClient/post_xml(java.lang.String,java.lang.String,boolean)|",
+    "called": "|java+method:///org/apache/commons/io/IOUtils/toString(java.io.InputStream)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/http/entity/StringEntity/StringEntity(java.lang.String,org.apache.http.entity.ContentType)|",
+      "|java+method:///com/offbytwo/jenkins/client/util/HttpResponseContentExtractor/contentAsString(org.apache.http.HttpResponse)|",
+      "|java+method:///com/offbytwo/jenkins/client/JenkinsHttpClient/releaseConnection(org.apache.http.client.methods.HttpRequestBase)|",
+      "|java+constructor:///org/apache/http/client/methods/HttpPost/HttpPost(java.net.URI)|",
+      "|java+method:///org/apache/http/client/methods/HttpPost/addHeader(org.apache.http.Header)|",
+      "|java+constructor:///org/apache/http/message/BasicHeader/BasicHeader(java.lang.String,java.lang.String)|",
+      "|java+method:///com/offbytwo/jenkins/model/Crumb/getCrumbRequestField()|",
+      "|java+method:///com/offbytwo/jenkins/client/JenkinsHttpClient/api(java.lang.String)|",
+      "|java+method:///org/apache/http/impl/client/DefaultHttpClient/execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.protocol.HttpContext)|",
+      "|java+method:///com/offbytwo/jenkins/client/JenkinsHttpClient/get(java.lang.String,java.lang.Class)|",
+      "|java+method:///org/apache/http/entity/ContentType/create(java.lang.String,java.lang.String)|",
+      "|java+method:///com/offbytwo/jenkins/client/validator/HttpResponseValidator/validateResponse(org.apache.http.HttpResponse)|",
+      "|java+method:///org/apache/http/client/methods/HttpPost/setEntity(org.apache.http.HttpEntity)|",
+      "|java+method:///com/offbytwo/jenkins/model/Crumb/getCrumb()|",
+      "|java+method:///org/apache/http/util/EntityUtils/consume(org.apache.http.HttpEntity)|",
+      "|java+method:///org/apache/http/HttpResponse/getEntity()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/http/entity/StringEntity/StringEntity(java.lang.String,org.apache.http.entity.ContentType)|",
+      "|java+constructor:///org/apache/http/client/methods/HttpPost/HttpPost(java.net.URI)|",
+      "|java+method:///org/apache/http/HttpEntity/getContent()|",
+      "|java+method:///org/apache/http/client/methods/HttpPost/addHeader(org.apache.http.Header)|",
+      "|java+constructor:///org/apache/http/message/BasicHeader/BasicHeader(java.lang.String,java.lang.String)|",
+      "|java+method:///com/offbytwo/jenkins/model/Crumb/getCrumbRequestField()|",
+      "|java+method:///com/offbytwo/jenkins/client/JenkinsHttpClient/api(java.lang.String)|",
+      "|java+method:///org/apache/http/impl/client/DefaultHttpClient/execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.protocol.HttpContext)|",
+      "|java+method:///com/offbytwo/jenkins/client/JenkinsHttpClient/get(java.lang.String,java.lang.Class)|",
+      "|java+method:///com/offbytwo/jenkins/client/JenkinsHttpClient/releaseConnection(org.apache.http.client.methods.HttpRequestBase)|",
+      "|java+method:///org/apache/commons/io/IOUtils/toString(java.io.InputStream)|",
+      "|java+method:///org/apache/http/entity/ContentType/create(java.lang.String,java.lang.String)|",
+      "|java+method:///com/offbytwo/jenkins/client/validator/HttpResponseValidator/validateResponse(org.apache.http.HttpResponse)|",
+      "|java+method:///org/apache/http/client/methods/HttpPost/setEntity(org.apache.http.HttpEntity)|",
+      "|java+method:///com/offbytwo/jenkins/model/Crumb/getCrumb()|",
+      "|java+method:///org/apache/http/util/EntityUtils/consume(org.apache.http.HttpEntity)|",
+      "|java+method:///org/apache/http/HttpResponse/getEntity()|"
+    ],
+    "affectedLib": "commons-io:commons-io:2.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.offbytwo.jenkins:jenkins-client:0.3.0",
+    "coordinatesV2": "com.offbytwo.jenkins:jenkins-client:0.3.1",
+    "caller": "|java+method:///com/offbytwo/jenkins/client/JenkinsHttpClient/get(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/io/IOUtils/toString(java.io.InputStream)|",
+    "v1Body": [
+      "|java+method:///com/offbytwo/jenkins/client/util/HttpResponseContentExtractor/contentAsString(org.apache.http.HttpResponse)|",
+      "|java+method:///com/offbytwo/jenkins/client/JenkinsHttpClient/releaseConnection(org.apache.http.client.methods.HttpRequestBase)|",
+      "|java+method:///com/offbytwo/jenkins/client/validator/HttpResponseValidator/validateResponse(org.apache.http.HttpResponse)|",
+      "|java+constructor:///org/apache/http/client/methods/HttpGet/HttpGet(java.net.URI)|",
+      "|java+method:///com/offbytwo/jenkins/client/JenkinsHttpClient/api(java.lang.String)|",
+      "|java+method:///org/apache/http/impl/client/DefaultHttpClient/execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.protocol.HttpContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/offbytwo/jenkins/client/validator/HttpResponseValidator/validateResponse(org.apache.http.HttpResponse)|",
+      "|java+constructor:///org/apache/http/client/methods/HttpGet/HttpGet(java.net.URI)|",
+      "|java+method:///org/apache/http/HttpEntity/getContent()|",
+      "|java+method:///com/offbytwo/jenkins/client/JenkinsHttpClient/api(java.lang.String)|",
+      "|java+method:///org/apache/http/impl/client/DefaultHttpClient/execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.protocol.HttpContext)|",
+      "|java+method:///com/offbytwo/jenkins/client/JenkinsHttpClient/releaseConnection(org.apache.http.client.methods.HttpRequestBase)|",
+      "|java+method:///org/apache/commons/io/IOUtils/toString(java.io.InputStream)|",
+      "|java+method:///org/apache/http/util/EntityUtils/consume(org.apache.http.HttpEntity)|",
+      "|java+method:///org/apache/http/HttpResponse/getEntity()|"
+    ],
+    "affectedLib": "commons-io:commons-io:2.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.offbytwo.jenkins:jenkins-client:0.3.0",
+    "coordinatesV2": "com.offbytwo.jenkins:jenkins-client:0.3.1",
+    "caller": "|java+constructor:///com/offbytwo/jenkins/client/JenkinsHttpClient/JenkinsHttpClient(java.net.URI)|",
+    "called": "|java+constructor:///org/apache/http/impl/client/DefaultHttpClient/DefaultHttpClient(org.apache.http.params.HttpParams)|",
+    "v1Body": [
+      "|java+constructor:///com/offbytwo/jenkins/client/JenkinsHttpClient/JenkinsHttpClient(java.net.URI,org.apache.http.impl.client.DefaultHttpClient)|",
+      "|java+constructor:///org/apache/http/impl/client/DefaultHttpClient/DefaultHttpClient()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/http/params/HttpParams/setIntParameter(java.lang.String,int)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/apache/http/params/BasicHttpParams/BasicHttpParams()|",
+      "|java+method:///java/net/URI/getPath()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/apache/http/impl/client/DefaultHttpClient/DefaultHttpClient(org.apache.http.params.HttpParams)|",
+      "|java+constructor:///com/offbytwo/jenkins/client/validator/HttpResponseValidator/HttpResponseValidator()|",
+      "|java+method:///com/offbytwo/jenkins/client/JenkinsHttpClient/getDefaultMapper()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/String/endsWith(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.3.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.offbytwo.jenkins:jenkins-client:0.3.0",
+    "coordinatesV2": "com.offbytwo.jenkins:jenkins-client:0.3.1",
+    "caller": "|java+method:///com/offbytwo/jenkins/client/JenkinsHttpClient/post_xml(java.lang.String,java.lang.String,boolean)|",
+    "called": "|java+constructor:///org/apache/http/client/methods/HttpPost/HttpPost(java.net.URI)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/http/entity/StringEntity/StringEntity(java.lang.String,org.apache.http.entity.ContentType)|",
+      "|java+method:///com/offbytwo/jenkins/client/util/HttpResponseContentExtractor/contentAsString(org.apache.http.HttpResponse)|",
+      "|java+method:///com/offbytwo/jenkins/client/JenkinsHttpClient/releaseConnection(org.apache.http.client.methods.HttpRequestBase)|",
+      "|java+constructor:///org/apache/http/client/methods/HttpPost/HttpPost(java.net.URI)|",
+      "|java+method:///org/apache/http/client/methods/HttpPost/addHeader(org.apache.http.Header)|",
+      "|java+constructor:///org/apache/http/message/BasicHeader/BasicHeader(java.lang.String,java.lang.String)|",
+      "|java+method:///com/offbytwo/jenkins/model/Crumb/getCrumbRequestField()|",
+      "|java+method:///com/offbytwo/jenkins/client/JenkinsHttpClient/api(java.lang.String)|",
+      "|java+method:///org/apache/http/impl/client/DefaultHttpClient/execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.protocol.HttpContext)|",
+      "|java+method:///com/offbytwo/jenkins/client/JenkinsHttpClient/get(java.lang.String,java.lang.Class)|",
+      "|java+method:///org/apache/http/entity/ContentType/create(java.lang.String,java.lang.String)|",
+      "|java+method:///com/offbytwo/jenkins/client/validator/HttpResponseValidator/validateResponse(org.apache.http.HttpResponse)|",
+      "|java+method:///org/apache/http/client/methods/HttpPost/setEntity(org.apache.http.HttpEntity)|",
+      "|java+method:///com/offbytwo/jenkins/model/Crumb/getCrumb()|",
+      "|java+method:///org/apache/http/util/EntityUtils/consume(org.apache.http.HttpEntity)|",
+      "|java+method:///org/apache/http/HttpResponse/getEntity()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/http/entity/StringEntity/StringEntity(java.lang.String,org.apache.http.entity.ContentType)|",
+      "|java+constructor:///org/apache/http/client/methods/HttpPost/HttpPost(java.net.URI)|",
+      "|java+method:///org/apache/http/HttpEntity/getContent()|",
+      "|java+method:///org/apache/http/client/methods/HttpPost/addHeader(org.apache.http.Header)|",
+      "|java+constructor:///org/apache/http/message/BasicHeader/BasicHeader(java.lang.String,java.lang.String)|",
+      "|java+method:///com/offbytwo/jenkins/model/Crumb/getCrumbRequestField()|",
+      "|java+method:///com/offbytwo/jenkins/client/JenkinsHttpClient/api(java.lang.String)|",
+      "|java+method:///org/apache/http/impl/client/DefaultHttpClient/execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.protocol.HttpContext)|",
+      "|java+method:///com/offbytwo/jenkins/client/JenkinsHttpClient/get(java.lang.String,java.lang.Class)|",
+      "|java+method:///com/offbytwo/jenkins/client/JenkinsHttpClient/releaseConnection(org.apache.http.client.methods.HttpRequestBase)|",
+      "|java+method:///org/apache/commons/io/IOUtils/toString(java.io.InputStream)|",
+      "|java+method:///org/apache/http/entity/ContentType/create(java.lang.String,java.lang.String)|",
+      "|java+method:///com/offbytwo/jenkins/client/validator/HttpResponseValidator/validateResponse(org.apache.http.HttpResponse)|",
+      "|java+method:///org/apache/http/client/methods/HttpPost/setEntity(org.apache.http.HttpEntity)|",
+      "|java+method:///com/offbytwo/jenkins/model/Crumb/getCrumb()|",
+      "|java+method:///org/apache/http/util/EntityUtils/consume(org.apache.http.HttpEntity)|",
+      "|java+method:///org/apache/http/HttpResponse/getEntity()|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.3.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.offbytwo.jenkins:jenkins-client:0.3.0",
+    "coordinatesV2": "com.offbytwo.jenkins:jenkins-client:0.3.1",
+    "caller": "|java+method:///com/offbytwo/jenkins/client/JenkinsHttpClient/getFile(java.net.URI)|",
+    "called": "|java+constructor:///org/apache/http/client/methods/HttpGet/HttpGet(java.net.URI)|",
+    "v1Body": [
+      "|java+method:///com/offbytwo/jenkins/client/JenkinsHttpClient/releaseConnection(org.apache.http.client.methods.HttpRequestBase)|",
+      "|java+method:///com/offbytwo/jenkins/client/validator/HttpResponseValidator/validateResponse(org.apache.http.HttpResponse)|",
+      "|java+constructor:///org/apache/http/client/methods/HttpGet/HttpGet(java.net.URI)|",
+      "|java+method:///org/apache/http/impl/client/DefaultHttpClient/execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.protocol.HttpContext)|",
+      "|java+method:///com/offbytwo/jenkins/client/util/HttpResponseContentExtractor/contentAsInputStream(org.apache.http.HttpResponse)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/offbytwo/jenkins/client/validator/HttpResponseValidator/validateResponse(org.apache.http.HttpResponse)|",
+      "|java+constructor:///org/apache/http/client/methods/HttpGet/HttpGet(java.net.URI)|",
+      "|java+method:///org/apache/http/HttpEntity/getContent()|",
+      "|java+constructor:///com/offbytwo/jenkins/client/util/RequestReleasingInputStream/RequestReleasingInputStream(java.io.InputStream,org.apache.http.client.methods.HttpRequestBase)|",
+      "|java+method:///org/apache/http/impl/client/DefaultHttpClient/execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.protocol.HttpContext)|",
+      "|java+method:///org/apache/http/HttpResponse/getEntity()|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.3.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.offbytwo.jenkins:jenkins-client:0.3.0",
+    "coordinatesV2": "com.offbytwo.jenkins:jenkins-client:0.3.1",
+    "caller": "|java+method:///com/offbytwo/jenkins/client/JenkinsHttpClient/get(java.lang.String)|",
+    "called": "|java+constructor:///org/apache/http/client/methods/HttpGet/HttpGet(java.net.URI)|",
+    "v1Body": [
+      "|java+method:///com/offbytwo/jenkins/client/util/HttpResponseContentExtractor/contentAsString(org.apache.http.HttpResponse)|",
+      "|java+method:///com/offbytwo/jenkins/client/JenkinsHttpClient/releaseConnection(org.apache.http.client.methods.HttpRequestBase)|",
+      "|java+method:///com/offbytwo/jenkins/client/validator/HttpResponseValidator/validateResponse(org.apache.http.HttpResponse)|",
+      "|java+constructor:///org/apache/http/client/methods/HttpGet/HttpGet(java.net.URI)|",
+      "|java+method:///com/offbytwo/jenkins/client/JenkinsHttpClient/api(java.lang.String)|",
+      "|java+method:///org/apache/http/impl/client/DefaultHttpClient/execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.protocol.HttpContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/offbytwo/jenkins/client/validator/HttpResponseValidator/validateResponse(org.apache.http.HttpResponse)|",
+      "|java+constructor:///org/apache/http/client/methods/HttpGet/HttpGet(java.net.URI)|",
+      "|java+method:///org/apache/http/HttpEntity/getContent()|",
+      "|java+method:///com/offbytwo/jenkins/client/JenkinsHttpClient/api(java.lang.String)|",
+      "|java+method:///org/apache/http/impl/client/DefaultHttpClient/execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.protocol.HttpContext)|",
+      "|java+method:///com/offbytwo/jenkins/client/JenkinsHttpClient/releaseConnection(org.apache.http.client.methods.HttpRequestBase)|",
+      "|java+method:///org/apache/commons/io/IOUtils/toString(java.io.InputStream)|",
+      "|java+method:///org/apache/http/util/EntityUtils/consume(org.apache.http.HttpEntity)|",
+      "|java+method:///org/apache/http/HttpResponse/getEntity()|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.3.6",
+    "change": "UPDATED"
+  }
+]

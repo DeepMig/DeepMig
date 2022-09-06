@@ -1,0 +1,617 @@
+[
+  {
+    "coordinatesV1": "org.mock-server:mockserver-core:3.5",
+    "coordinatesV2": "org.mock-server:mockserver-core:3.4",
+    "caller": "|java+method:///org/mockserver/client/serialization/ObjectMapperFactory/createObjectMapper()|",
+    "called": "|java+constructor:///org/codehaus/jackson/Version/Version(int,int,int,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/registerModule(org.codehaus.jackson.map.Module)|",
+      "|java+constructor:///org/codehaus/jackson/Version/Version(int,int,int,java.lang.String)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/configure(org.codehaus.jackson.map.SerializationConfig$Feature,boolean)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/configure(org.codehaus.jackson.map.DeserializationConfig$Feature,boolean)|",
+      "|java+constructor:///org/codehaus/jackson/map/module/SimpleModule/SimpleModule(java.lang.String,org.codehaus.jackson.Version)|",
+      "|java+method:///org/codehaus/jackson/map/module/SimpleModule/addDeserializer(java.lang.Class,org.codehaus.jackson.map.JsonDeserializer)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/setSerializationInclusion(org.codehaus.jackson.map.annotate.JsonSerialize$Inclusion)|",
+      "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+      "|java+constructor:///org/mockserver/client/serialization/ObjectMapperFactory$BodyDTODeserializer/ObjectMapperFactory$BodyDTODeserializer()|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/configure(org.codehaus.jackson.JsonParser$Feature,boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/registerModule(com.fasterxml.jackson.databind.Module)|",
+      "|java+constructor:///org/mockserver/client/serialization/ObjectMapperFactory$Module/ObjectMapperFactory$Module()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/setSerializationInclusion(com.fasterxml.jackson.annotation.JsonInclude$Include)|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/configure(com.fasterxml.jackson.databind.DeserializationFeature,boolean)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/configure(com.fasterxml.jackson.databind.SerializationFeature,boolean)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/configure(com.fasterxml.jackson.core.JsonParser$Feature,boolean)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-core-asl:1.9.13",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.mock-server:mockserver-core:3.5",
+    "coordinatesV2": "org.mock-server:mockserver-core:3.4",
+    "caller": "|java+method:///org/mockserver/client/serialization/ExpectationSerializer/deserialize(java.lang.String)|",
+    "called": "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/mockserver/client/serialization/model/ExpectationDTO/buildObject()|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/mockserver/client/serialization/model/ExpectationDTO/buildObject()|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.13",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.mock-server:mockserver-core:3.5",
+    "coordinatesV2": "org.mock-server:mockserver-core:3.4",
+    "caller": "|java+constructor:///org/mockserver/client/serialization/ObjectMapperFactory$BodyDTODeserializer/ObjectMapperFactory$BodyDTODeserializer()|",
+    "called": "|java+constructor:///org/codehaus/jackson/map/deser/std/StdDeserializer/StdDeserializer(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/jackson/map/deser/std/StdDeserializer/StdDeserializer(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/fasterxml/jackson/databind/deser/std/StdDeserializer/StdDeserializer(java.lang.Class)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.13",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.mock-server:mockserver-core:3.5",
+    "coordinatesV2": "org.mock-server:mockserver-core:3.4",
+    "caller": "|java+method:///org/mockserver/model/HttpForward/toString()|",
+    "called": "|java+method:///org/codehaus/jackson/map/ObjectWriter/writeValueAsString(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/mockserver/model/Action/toString()|",
+      "|java+method:///org/mockserver/client/serialization/ObjectMapperFactory/createObjectMapper()|",
+      "|java+method:///org/codehaus/jackson/map/ObjectWriter/writeValueAsString(java.lang.Object)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/writerWithDefaultPrettyPrinter()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/mockserver/model/Action/toString()|",
+      "|java+method:///org/mockserver/client/serialization/ObjectMapperFactory/createObjectMapper()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writerWithDefaultPrettyPrinter()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectWriter/writeValueAsString(java.lang.Object)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.13",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.mock-server:mockserver-core:3.5",
+    "coordinatesV2": "org.mock-server:mockserver-core:3.4",
+    "caller": "|java+method:///org/mockserver/client/serialization/HttpRequestSerializer/serialize(org.mockserver.model.HttpRequest)|",
+    "called": "|java+method:///org/codehaus/jackson/map/ObjectWriter/writeValueAsString(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/codehaus/jackson/map/ObjectWriter/writeValueAsString(java.lang.Object)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/writerWithDefaultPrettyPrinter()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///org/mockserver/client/serialization/model/HttpRequestDTO/HttpRequestDTO(org.mockserver.model.HttpRequest)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writerWithDefaultPrettyPrinter()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectWriter/writeValueAsString(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///org/mockserver/client/serialization/model/HttpRequestDTO/HttpRequestDTO(org.mockserver.model.HttpRequest)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.13",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.mock-server:mockserver-core:3.5",
+    "coordinatesV2": "org.mock-server:mockserver-core:3.4",
+    "caller": "|java+method:///org/mockserver/model/HttpRequest/toString()|",
+    "called": "|java+method:///org/codehaus/jackson/map/ObjectWriter/writeValueAsString(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/mockserver/client/serialization/ObjectMapperFactory/createObjectMapper()|",
+      "|java+method:///org/codehaus/jackson/map/ObjectWriter/writeValueAsString(java.lang.Object)|",
+      "|java+method:///org/mockserver/model/EqualsHashCodeToString/toString()|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/writerWithDefaultPrettyPrinter()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/mockserver/client/serialization/ObjectMapperFactory/createObjectMapper()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writerWithDefaultPrettyPrinter()|",
+      "|java+method:///org/mockserver/model/EqualsHashCodeToString/toString()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectWriter/writeValueAsString(java.lang.Object)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.13",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.mock-server:mockserver-core:3.5",
+    "coordinatesV2": "org.mock-server:mockserver-core:3.4",
+    "caller": "|java+method:///org/mockserver/client/serialization/ObjectMapperFactory/createObjectMapper()|",
+    "called": "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+    "v1Body": [
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/registerModule(org.codehaus.jackson.map.Module)|",
+      "|java+constructor:///org/codehaus/jackson/Version/Version(int,int,int,java.lang.String)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/configure(org.codehaus.jackson.map.SerializationConfig$Feature,boolean)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/configure(org.codehaus.jackson.map.DeserializationConfig$Feature,boolean)|",
+      "|java+constructor:///org/codehaus/jackson/map/module/SimpleModule/SimpleModule(java.lang.String,org.codehaus.jackson.Version)|",
+      "|java+method:///org/codehaus/jackson/map/module/SimpleModule/addDeserializer(java.lang.Class,org.codehaus.jackson.map.JsonDeserializer)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/setSerializationInclusion(org.codehaus.jackson.map.annotate.JsonSerialize$Inclusion)|",
+      "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+      "|java+constructor:///org/mockserver/client/serialization/ObjectMapperFactory$BodyDTODeserializer/ObjectMapperFactory$BodyDTODeserializer()|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/configure(org.codehaus.jackson.JsonParser$Feature,boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/registerModule(com.fasterxml.jackson.databind.Module)|",
+      "|java+constructor:///org/mockserver/client/serialization/ObjectMapperFactory$Module/ObjectMapperFactory$Module()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/setSerializationInclusion(com.fasterxml.jackson.annotation.JsonInclude$Include)|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/configure(com.fasterxml.jackson.databind.DeserializationFeature,boolean)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/configure(com.fasterxml.jackson.databind.SerializationFeature,boolean)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/configure(com.fasterxml.jackson.core.JsonParser$Feature,boolean)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.13",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.mock-server:mockserver-core:3.5",
+    "coordinatesV2": "org.mock-server:mockserver-core:3.4",
+    "caller": "|java+method:///org/mockserver/client/serialization/ExpectationSerializer/deserializeArray(java.lang.String)|",
+    "called": "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/mockserver/client/serialization/model/ExpectationDTO/buildObject()|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/mockserver/client/serialization/model/ExpectationDTO/buildObject()|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.13",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.mock-server:mockserver-core:3.5",
+    "coordinatesV2": "org.mock-server:mockserver-core:3.4",
+    "caller": "|java+method:///org/mockserver/model/HttpResponse/toString()|",
+    "called": "|java+method:///org/codehaus/jackson/map/ObjectWriter/writeValueAsString(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/mockserver/model/Action/toString()|",
+      "|java+method:///org/mockserver/client/serialization/ObjectMapperFactory/createObjectMapper()|",
+      "|java+method:///org/codehaus/jackson/map/ObjectWriter/writeValueAsString(java.lang.Object)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/writerWithDefaultPrettyPrinter()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/mockserver/model/Action/toString()|",
+      "|java+method:///org/mockserver/client/serialization/ObjectMapperFactory/createObjectMapper()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writerWithDefaultPrettyPrinter()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectWriter/writeValueAsString(java.lang.Object)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.13",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.mock-server:mockserver-core:3.5",
+    "coordinatesV2": "org.mock-server:mockserver-core:3.4",
+    "caller": "|java+method:///org/mockserver/client/serialization/ExpectationSerializer/serialize(org.mockserver.mock.Expectation%5B%5D)|",
+    "called": "|java+method:///org/codehaus/jackson/map/ObjectWriter/writeValueAsString(java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///org/mockserver/client/serialization/model/ExpectationDTO/ExpectationDTO(org.mockserver.mock.Expectation)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectWriter/writeValueAsString(java.lang.Object)|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/writerWithDefaultPrettyPrinter()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/mockserver/client/serialization/model/ExpectationDTO/ExpectationDTO(org.mockserver.mock.Expectation)|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectWriter/writeValueAsString(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writerWithDefaultPrettyPrinter()|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.13",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.mock-server:mockserver-core:3.5",
+    "coordinatesV2": "org.mock-server:mockserver-core:3.4",
+    "caller": "|java+method:///org/mockserver/matchers/HttpRequestMatcher/toString()|",
+    "called": "|java+method:///org/codehaus/jackson/map/ObjectWriter/writeValueAsString(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/mockserver/client/serialization/ObjectMapperFactory/createObjectMapper()|",
+      "|java+method:///org/codehaus/jackson/map/ObjectWriter/writeValueAsString(java.lang.Object)|",
+      "|java+method:///org/mockserver/model/EqualsHashCodeToString/toString()|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/writerWithDefaultPrettyPrinter()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/mockserver/client/serialization/ObjectMapperFactory/createObjectMapper()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writerWithDefaultPrettyPrinter()|",
+      "|java+method:///org/mockserver/model/EqualsHashCodeToString/toString()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectWriter/writeValueAsString(java.lang.Object)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.13",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.mock-server:mockserver-core:3.5",
+    "coordinatesV2": "org.mock-server:mockserver-core:3.4",
+    "caller": "|java+method:///org/mockserver/client/serialization/HttpRequestSerializer/deserialize(java.lang.String)|",
+    "called": "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/mockserver/client/serialization/model/HttpRequestDTO/buildObject()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/mockserver/mock/Expectation/getHttpRequest()|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/mockserver/client/serialization/model/ExpectationDTO/buildObject()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/String/contains(java.lang.CharSequence)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/mockserver/client/serialization/model/HttpRequestDTO/buildObject()|",
+      "|java+method:///org/mockserver/mock/Expectation/getHttpRequest()|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/String/contains(java.lang.CharSequence)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///org/mockserver/client/serialization/model/ExpectationDTO/buildObject()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.13",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.mock-server:mockserver-core:3.5",
+    "coordinatesV2": "org.mock-server:mockserver-core:3.4",
+    "caller": "|java+method:///org/mockserver/client/serialization/ExpectationSerializer/serialize(org.mockserver.mock.Expectation)|",
+    "called": "|java+method:///org/codehaus/jackson/map/ObjectWriter/writeValueAsString(java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///org/mockserver/client/serialization/model/ExpectationDTO/ExpectationDTO(org.mockserver.mock.Expectation)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectWriter/writeValueAsString(java.lang.Object)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/writerWithDefaultPrettyPrinter()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/mockserver/client/serialization/model/ExpectationDTO/ExpectationDTO(org.mockserver.mock.Expectation)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writerWithDefaultPrettyPrinter()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectWriter/writeValueAsString(java.lang.Object)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.13",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.mock-server:mockserver-core:3.4",
+    "coordinatesV2": "org.mock-server:mockserver-core:3.5",
+    "caller": "|java+method:///org/mockserver/client/serialization/ExpectationSerializer/deserialize(java.lang.String)|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/mockserver/client/serialization/model/ExpectationDTO/buildObject()|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/mockserver/client/serialization/model/ExpectationDTO/buildObject()|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.2.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.mock-server:mockserver-core:3.4",
+    "coordinatesV2": "org.mock-server:mockserver-core:3.5",
+    "caller": "|java+constructor:///org/mockserver/client/serialization/ObjectMapperFactory$BodyDTODeserializer/ObjectMapperFactory$BodyDTODeserializer()|",
+    "called": "|java+constructor:///com/fasterxml/jackson/databind/deser/std/StdDeserializer/StdDeserializer(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/jackson/map/deser/std/StdDeserializer/StdDeserializer(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/fasterxml/jackson/databind/deser/std/StdDeserializer/StdDeserializer(java.lang.Class)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.2.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.mock-server:mockserver-core:3.4",
+    "coordinatesV2": "org.mock-server:mockserver-core:3.5",
+    "caller": "|java+method:///org/mockserver/model/HttpForward/toString()|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/ObjectWriter/writeValueAsString(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/mockserver/model/Action/toString()|",
+      "|java+method:///org/mockserver/client/serialization/ObjectMapperFactory/createObjectMapper()|",
+      "|java+method:///org/codehaus/jackson/map/ObjectWriter/writeValueAsString(java.lang.Object)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/writerWithDefaultPrettyPrinter()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/mockserver/model/Action/toString()|",
+      "|java+method:///org/mockserver/client/serialization/ObjectMapperFactory/createObjectMapper()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writerWithDefaultPrettyPrinter()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectWriter/writeValueAsString(java.lang.Object)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.2.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.mock-server:mockserver-core:3.4",
+    "coordinatesV2": "org.mock-server:mockserver-core:3.5",
+    "caller": "|java+method:///org/mockserver/client/serialization/ObjectMapperFactory/createObjectMapper()|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/configure(com.fasterxml.jackson.databind.DeserializationFeature,boolean)|",
+    "v1Body": [
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/registerModule(org.codehaus.jackson.map.Module)|",
+      "|java+constructor:///org/codehaus/jackson/Version/Version(int,int,int,java.lang.String)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/configure(org.codehaus.jackson.map.SerializationConfig$Feature,boolean)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/configure(org.codehaus.jackson.map.DeserializationConfig$Feature,boolean)|",
+      "|java+constructor:///org/codehaus/jackson/map/module/SimpleModule/SimpleModule(java.lang.String,org.codehaus.jackson.Version)|",
+      "|java+method:///org/codehaus/jackson/map/module/SimpleModule/addDeserializer(java.lang.Class,org.codehaus.jackson.map.JsonDeserializer)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/setSerializationInclusion(org.codehaus.jackson.map.annotate.JsonSerialize$Inclusion)|",
+      "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+      "|java+constructor:///org/mockserver/client/serialization/ObjectMapperFactory$BodyDTODeserializer/ObjectMapperFactory$BodyDTODeserializer()|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/configure(org.codehaus.jackson.JsonParser$Feature,boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/registerModule(com.fasterxml.jackson.databind.Module)|",
+      "|java+constructor:///org/mockserver/client/serialization/ObjectMapperFactory$Module/ObjectMapperFactory$Module()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/setSerializationInclusion(com.fasterxml.jackson.annotation.JsonInclude$Include)|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/configure(com.fasterxml.jackson.databind.DeserializationFeature,boolean)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/configure(com.fasterxml.jackson.databind.SerializationFeature,boolean)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/configure(com.fasterxml.jackson.core.JsonParser$Feature,boolean)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.2.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.mock-server:mockserver-core:3.4",
+    "coordinatesV2": "org.mock-server:mockserver-core:3.5",
+    "caller": "|java+method:///org/mockserver/client/serialization/ExpectationSerializer/deserializeArray(java.lang.String)|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/mockserver/client/serialization/model/ExpectationDTO/buildObject()|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/mockserver/client/serialization/model/ExpectationDTO/buildObject()|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.2.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.mock-server:mockserver-core:3.4",
+    "coordinatesV2": "org.mock-server:mockserver-core:3.5",
+    "caller": "|java+method:///org/mockserver/client/serialization/ExpectationSerializer/serialize(org.mockserver.mock.Expectation%5B%5D)|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/ObjectWriter/writeValueAsString(java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///org/mockserver/client/serialization/model/ExpectationDTO/ExpectationDTO(org.mockserver.mock.Expectation)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectWriter/writeValueAsString(java.lang.Object)|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/writerWithDefaultPrettyPrinter()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/mockserver/client/serialization/model/ExpectationDTO/ExpectationDTO(org.mockserver.mock.Expectation)|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectWriter/writeValueAsString(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writerWithDefaultPrettyPrinter()|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.2.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.mock-server:mockserver-core:3.4",
+    "coordinatesV2": "org.mock-server:mockserver-core:3.5",
+    "caller": "|java+method:///org/mockserver/client/serialization/HttpRequestSerializer/deserialize(java.lang.String)|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/mockserver/client/serialization/model/HttpRequestDTO/buildObject()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/mockserver/mock/Expectation/getHttpRequest()|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/mockserver/client/serialization/model/ExpectationDTO/buildObject()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/String/contains(java.lang.CharSequence)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/mockserver/client/serialization/model/HttpRequestDTO/buildObject()|",
+      "|java+method:///org/mockserver/mock/Expectation/getHttpRequest()|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/String/contains(java.lang.CharSequence)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///org/mockserver/client/serialization/model/ExpectationDTO/buildObject()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.2.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.mock-server:mockserver-core:3.4",
+    "coordinatesV2": "org.mock-server:mockserver-core:3.5",
+    "caller": "|java+method:///org/mockserver/client/serialization/HttpRequestSerializer/serialize(org.mockserver.model.HttpRequest)|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/ObjectWriter/writeValueAsString(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/codehaus/jackson/map/ObjectWriter/writeValueAsString(java.lang.Object)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/writerWithDefaultPrettyPrinter()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///org/mockserver/client/serialization/model/HttpRequestDTO/HttpRequestDTO(org.mockserver.model.HttpRequest)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writerWithDefaultPrettyPrinter()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectWriter/writeValueAsString(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///org/mockserver/client/serialization/model/HttpRequestDTO/HttpRequestDTO(org.mockserver.model.HttpRequest)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.2.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.mock-server:mockserver-core:3.4",
+    "coordinatesV2": "org.mock-server:mockserver-core:3.5",
+    "caller": "|java+method:///org/mockserver/model/HttpRequest/toString()|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/ObjectWriter/writeValueAsString(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/mockserver/client/serialization/ObjectMapperFactory/createObjectMapper()|",
+      "|java+method:///org/codehaus/jackson/map/ObjectWriter/writeValueAsString(java.lang.Object)|",
+      "|java+method:///org/mockserver/model/EqualsHashCodeToString/toString()|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/writerWithDefaultPrettyPrinter()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/mockserver/client/serialization/ObjectMapperFactory/createObjectMapper()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writerWithDefaultPrettyPrinter()|",
+      "|java+method:///org/mockserver/model/EqualsHashCodeToString/toString()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectWriter/writeValueAsString(java.lang.Object)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.2.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.mock-server:mockserver-core:3.4",
+    "coordinatesV2": "org.mock-server:mockserver-core:3.5",
+    "caller": "|java+method:///org/mockserver/model/HttpResponse/toString()|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/ObjectWriter/writeValueAsString(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/mockserver/model/Action/toString()|",
+      "|java+method:///org/mockserver/client/serialization/ObjectMapperFactory/createObjectMapper()|",
+      "|java+method:///org/codehaus/jackson/map/ObjectWriter/writeValueAsString(java.lang.Object)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/writerWithDefaultPrettyPrinter()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/mockserver/model/Action/toString()|",
+      "|java+method:///org/mockserver/client/serialization/ObjectMapperFactory/createObjectMapper()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writerWithDefaultPrettyPrinter()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectWriter/writeValueAsString(java.lang.Object)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.2.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.mock-server:mockserver-core:3.4",
+    "coordinatesV2": "org.mock-server:mockserver-core:3.5",
+    "caller": "|java+method:///org/mockserver/matchers/HttpRequestMatcher/toString()|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/ObjectWriter/writeValueAsString(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/mockserver/client/serialization/ObjectMapperFactory/createObjectMapper()|",
+      "|java+method:///org/codehaus/jackson/map/ObjectWriter/writeValueAsString(java.lang.Object)|",
+      "|java+method:///org/mockserver/model/EqualsHashCodeToString/toString()|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/writerWithDefaultPrettyPrinter()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/mockserver/client/serialization/ObjectMapperFactory/createObjectMapper()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writerWithDefaultPrettyPrinter()|",
+      "|java+method:///org/mockserver/model/EqualsHashCodeToString/toString()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectWriter/writeValueAsString(java.lang.Object)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.2.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.mock-server:mockserver-core:3.4",
+    "coordinatesV2": "org.mock-server:mockserver-core:3.5",
+    "caller": "|java+method:///org/mockserver/client/serialization/ExpectationSerializer/serialize(org.mockserver.mock.Expectation)|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/ObjectWriter/writeValueAsString(java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///org/mockserver/client/serialization/model/ExpectationDTO/ExpectationDTO(org.mockserver.mock.Expectation)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectWriter/writeValueAsString(java.lang.Object)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/writerWithDefaultPrettyPrinter()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/mockserver/client/serialization/model/ExpectationDTO/ExpectationDTO(org.mockserver.mock.Expectation)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writerWithDefaultPrettyPrinter()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectWriter/writeValueAsString(java.lang.Object)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.2.2",
+    "change": "ADDED"
+  }
+]

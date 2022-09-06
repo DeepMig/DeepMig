@@ -1,0 +1,50 @@
+[
+  {
+    "coordinatesV1": "io.zipkin.java:zipkin-autoconfigure-storage-mysql:2.9.1",
+    "coordinatesV2": "io.zipkin.java:zipkin-autoconfigure-storage-mysql:2.8.3",
+    "caller": "|java+method:///zipkin/autoconfigure/storage/mysql/ZipkinMySQLStorageAutoConfiguration/storage(java.util.concurrent.Executor,javax.sql.DataSource,boolean)|",
+    "called": "|java+method:///zipkin/storage/mysql/MySQLStorage$Builder/executor(java.util.concurrent.Executor)|",
+    "v1Body": [
+      "|java+method:///zipkin/storage/mysql/MySQLStorage/builder()|",
+      "|java+method:///zipkin/storage/mysql/MySQLStorage$Builder/strictTraceId(boolean)|",
+      "|java+method:///zipkin/storage/mysql/MySQLStorage$Builder/build()|",
+      "|java+method:///zipkin/storage/mysql/MySQLStorage$Builder/executor(java.util.concurrent.Executor)|",
+      "|java+method:///zipkin/storage/mysql/MySQLStorage$Builder/datasource(javax.sql.DataSource)|",
+      "|java+method:///zipkin/storage/mysql/MySQLStorage$Builder/listenerProvider(org.jooq.ExecuteListenerProvider)|"
+    ],
+    "v2Body": [
+      "|java+method:///zipkin2/storage/mysql/v1/MySQLStorage$Builder/strictTraceId(boolean)|",
+      "|java+method:///zipkin2/storage/mysql/v1/MySQLStorage/newBuilder()|",
+      "|java+method:///zipkin2/storage/mysql/v1/MySQLStorage$Builder/build()|",
+      "|java+method:///zipkin2/storage/mysql/v1/MySQLStorage$Builder/executor(java.util.concurrent.Executor)|",
+      "|java+method:///zipkin2/storage/mysql/v1/MySQLStorage$Builder/listenerProvider(org.jooq.ExecuteListenerProvider)|",
+      "|java+method:///zipkin2/storage/mysql/v1/MySQLStorage$Builder/datasource(javax.sql.DataSource)|"
+    ],
+    "affectedLib": "io.zipkin.java:zipkin-storage-mysql:2.8.3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "io.zipkin.java:zipkin-autoconfigure-storage-mysql:2.8.3",
+    "coordinatesV2": "io.zipkin.java:zipkin-autoconfigure-storage-mysql:2.9.1",
+    "caller": "|java+method:///zipkin/autoconfigure/storage/mysql/ZipkinMySQLStorageAutoConfiguration/storage(java.util.concurrent.Executor,javax.sql.DataSource,boolean)|",
+    "called": "|java+method:///zipkin2/storage/mysql/v1/MySQLStorage$Builder/strictTraceId(boolean)|",
+    "v1Body": [
+      "|java+method:///zipkin/storage/mysql/MySQLStorage/builder()|",
+      "|java+method:///zipkin/storage/mysql/MySQLStorage$Builder/strictTraceId(boolean)|",
+      "|java+method:///zipkin/storage/mysql/MySQLStorage$Builder/build()|",
+      "|java+method:///zipkin/storage/mysql/MySQLStorage$Builder/executor(java.util.concurrent.Executor)|",
+      "|java+method:///zipkin/storage/mysql/MySQLStorage$Builder/datasource(javax.sql.DataSource)|",
+      "|java+method:///zipkin/storage/mysql/MySQLStorage$Builder/listenerProvider(org.jooq.ExecuteListenerProvider)|"
+    ],
+    "v2Body": [
+      "|java+method:///zipkin2/storage/mysql/v1/MySQLStorage$Builder/strictTraceId(boolean)|",
+      "|java+method:///zipkin2/storage/mysql/v1/MySQLStorage/newBuilder()|",
+      "|java+method:///zipkin2/storage/mysql/v1/MySQLStorage$Builder/build()|",
+      "|java+method:///zipkin2/storage/mysql/v1/MySQLStorage$Builder/executor(java.util.concurrent.Executor)|",
+      "|java+method:///zipkin2/storage/mysql/v1/MySQLStorage$Builder/listenerProvider(org.jooq.ExecuteListenerProvider)|",
+      "|java+method:///zipkin2/storage/mysql/v1/MySQLStorage$Builder/datasource(javax.sql.DataSource)|"
+    ],
+    "affectedLib": "io.zipkin.zipkin2:zipkin-storage-mysql-v1:2.9.1",
+    "change": "ADDED"
+  }
+]

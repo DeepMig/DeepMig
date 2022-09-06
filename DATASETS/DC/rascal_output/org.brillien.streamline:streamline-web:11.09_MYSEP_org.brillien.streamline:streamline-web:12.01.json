@@ -1,0 +1,61 @@
+[
+  {
+    "coordinatesV1": "org.brillien.streamline:streamline-web:12.01",
+    "coordinatesV2": "org.brillien.streamline:streamline-web:11.09",
+    "caller": "|java+constructor:///com/vii/streamline/rest/RestDispatcherServlet/RestDispatcherServlet()|",
+    "called": "|java+constructor:///javax/servlet/http/HttpServlet/HttpServlet()|",
+    "v1Body": [
+      "|java+constructor:///javax/servlet/http/HttpServlet/HttpServlet()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/vii/streamline/CommServlet/CommServlet()|"
+    ],
+    "affectedLib": "javax.servlet:servlet-api:2.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.brillien.streamline:streamline-web:11.09",
+    "coordinatesV2": "org.brillien.streamline:streamline-web:12.01",
+    "caller": "|java+method:///com/vii/streamline/web/HttpServices/initWebClient(long,int)|",
+    "called": "|java+method:///org/apache/http/conn/scheme/SchemeRegistry/register(org.apache.http.conn.scheme.Scheme)|",
+    "v1Body": [
+      "|java+method:///java/util/concurrent/ScheduledThreadPoolExecutor/submit(java.lang.Runnable)|",
+      "|java+constructor:///com/vii/streamline/web/HttpServices$1/HttpServices$1(long)|",
+      "|java+constructor:///org/apache/http/impl/client/DefaultHttpClient/DefaultHttpClient(org.apache.http.conn.ClientConnectionManager,org.apache.http.params.HttpParams)|",
+      "|java+method:///org/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager/setMaxTotal(int)|",
+      "|java+method:///com/vii/streamline/services/ThreadServices/getStpe()|",
+      "|java+method:///org/apache/http/impl/client/DefaultHttpClient/setHttpRequestRetryHandler(org.apache.http.client.HttpRequestRetryHandler)|",
+      "|java+constructor:///org/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager/ThreadSafeClientConnManager()|",
+      "|java+constructor:///org/apache/http/params/BasicHttpParams/BasicHttpParams()|",
+      "|java+constructor:///com/vii/streamline/web/IdleConnectionMonitorThread/IdleConnectionMonitorThread(org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/http/params/HttpParams/setParameter(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///org/apache/http/conn/scheme/Scheme/Scheme(java.lang.String,int,org.apache.http.conn.scheme.SchemeSocketFactory)|",
+      "|java+method:///java/util/concurrent/ScheduledThreadPoolExecutor/submit(java.lang.Runnable)|",
+      "|java+method:///org/apache/http/conn/scheme/PlainSocketFactory/getSocketFactory()|",
+      "|java+method:///java/net/ProxySelector/getDefault()|",
+      "|java+constructor:///org/apache/http/impl/client/DefaultHttpClient/DefaultHttpClient(org.apache.http.conn.ClientConnectionManager,org.apache.http.params.HttpParams)|",
+      "|java+method:///org/apache/http/impl/client/DefaultHttpClient/setHttpRequestRetryHandler(org.apache.http.client.HttpRequestRetryHandler)|",
+      "|java+method:///org/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager/setMaxTotal(int)|",
+      "|java+constructor:///org/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager/ThreadSafeClientConnManager(org.apache.http.conn.scheme.SchemeRegistry)|",
+      "|java+method:///org/apache/http/impl/client/DefaultHttpClient/getConnectionManager()|",
+      "|java+method:///org/apache/http/conn/scheme/SchemeRegistry/register(org.apache.http.conn.scheme.Scheme)|",
+      "|java+constructor:///org/apache/http/conn/scheme/SchemeRegistry/SchemeRegistry()|",
+      "|java+method:///com/vii/streamline/services/ThreadServices/getStpe()|",
+      "|java+method:///java/security/NoSuchAlgorithmException/printStackTrace()|",
+      "|java+method:///javax/net/ssl/SSLContext/getDefault()|",
+      "|java+constructor:///com/vii/streamline/web/HttpServices$1/HttpServices$1(long)|",
+      "|java+constructor:///org/apache/http/params/BasicHttpParams/BasicHttpParams()|",
+      "|java+constructor:///com/vii/streamline/web/IdleConnectionMonitorThread/IdleConnectionMonitorThread(org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager)|",
+      "|java+method:///org/apache/http/impl/client/DefaultHttpClient/setRoutePlanner(org.apache.http.conn.routing.HttpRoutePlanner)|",
+      "|java+method:///org/apache/http/conn/ClientConnectionManager/getSchemeRegistry()|",
+      "|java+constructor:///org/apache/http/impl/conn/ProxySelectorRoutePlanner/ProxySelectorRoutePlanner(org.apache.http.conn.scheme.SchemeRegistry,java.net.ProxySelector)|",
+      "|java+constructor:///org/apache/http/conn/ssl/SSLSocketFactory/SSLSocketFactory(javax.net.ssl.SSLContext,org.apache.http.conn.ssl.X509HostnameVerifier)|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.1.2",
+    "change": "UPDATED"
+  }
+]

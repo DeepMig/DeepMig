@@ -1,0 +1,68 @@
+[
+  {
+    "coordinatesV1": "org.keycloak:keycloak-proxy-server:1.9.0.CR1",
+    "coordinatesV2": "org.keycloak:keycloak-proxy-server:1.8.1.Final",
+    "caller": "|java+method:///org/keycloak/proxy/ProxyServerBuilder/loadConfig(java.io.InputStream)|",
+    "called": "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper(org.codehaus.jackson.JsonFactory)|",
+    "v1Body": [
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/setSerializationInclusion(org.codehaus.jackson.map.annotate.JsonSerialize$Inclusion)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(java.io.InputStream,java.lang.Class)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper(org.codehaus.jackson.JsonFactory)|",
+      "|java+constructor:///org/keycloak/util/SystemPropertiesJsonParserFactory/SystemPropertiesJsonParserFactory()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/setSerializationInclusion(com.fasterxml.jackson.annotation.JsonInclude$Include)|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper(com.fasterxml.jackson.core.JsonFactory)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.io.InputStream,java.lang.Class)|",
+      "|java+constructor:///org/keycloak/util/SystemPropertiesJsonParserFactory/SystemPropertiesJsonParserFactory()|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.9",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.keycloak:keycloak-proxy-server:1.8.1.Final",
+    "coordinatesV2": "org.keycloak:keycloak-proxy-server:1.9.0.CR1",
+    "caller": "|java+method:///org/keycloak/proxy/ProxyServerBuilder/loadConfig(java.io.InputStream)|",
+    "called": "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper(com.fasterxml.jackson.core.JsonFactory)|",
+    "v1Body": [
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/setSerializationInclusion(org.codehaus.jackson.map.annotate.JsonSerialize$Inclusion)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(java.io.InputStream,java.lang.Class)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper(org.codehaus.jackson.JsonFactory)|",
+      "|java+constructor:///org/keycloak/util/SystemPropertiesJsonParserFactory/SystemPropertiesJsonParserFactory()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/setSerializationInclusion(com.fasterxml.jackson.annotation.JsonInclude$Include)|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper(com.fasterxml.jackson.core.JsonFactory)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.io.InputStream,java.lang.Class)|",
+      "|java+constructor:///org/keycloak/util/SystemPropertiesJsonParserFactory/SystemPropertiesJsonParserFactory()|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.5.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.keycloak:keycloak-proxy-server:1.8.1.Final",
+    "coordinatesV2": "org.keycloak:keycloak-proxy-server:1.9.0.CR1",
+    "caller": "|java+method:///org/keycloak/proxy/ProxyServerBuilder/loadConfig(java.io.InputStream)|",
+    "called": "|java+constructor:///org/keycloak/util/SystemPropertiesJsonParserFactory/SystemPropertiesJsonParserFactory()|",
+    "v1Body": [
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/setSerializationInclusion(org.codehaus.jackson.map.annotate.JsonSerialize$Inclusion)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(java.io.InputStream,java.lang.Class)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper(org.codehaus.jackson.JsonFactory)|",
+      "|java+constructor:///org/keycloak/util/SystemPropertiesJsonParserFactory/SystemPropertiesJsonParserFactory()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/setSerializationInclusion(com.fasterxml.jackson.annotation.JsonInclude$Include)|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper(com.fasterxml.jackson.core.JsonFactory)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.io.InputStream,java.lang.Class)|",
+      "|java+constructor:///org/keycloak/util/SystemPropertiesJsonParserFactory/SystemPropertiesJsonParserFactory()|"
+    ],
+    "affectedLib": "org.keycloak:keycloak-core:1.9.0.CR1",
+    "change": "UPDATED"
+  }
+]

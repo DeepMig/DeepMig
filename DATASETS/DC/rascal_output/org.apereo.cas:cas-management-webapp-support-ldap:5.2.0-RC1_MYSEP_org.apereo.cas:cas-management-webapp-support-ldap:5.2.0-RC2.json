@@ -1,0 +1,104 @@
+[
+  {
+    "coordinatesV1": "org.apereo.cas:cas-management-webapp-support-ldap:5.2.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-management-webapp-support-ldap:5.2.0-RC2",
+    "caller": "|java+method:///org/apereo/cas/mgmt/config/CasManagementLdapAuthorizationConfiguration/authorizationGenerator()|",
+    "called": "|java+constructor:///org/apereo/cas/authorization/LdapUserAttributesToRolesAuthorizationGenerator/LdapUserAttributesToRolesAuthorizationGenerator(org.ldaptive.ConnectionFactory,org.ldaptive.SearchExecutor,boolean,java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/LdapAuthorizationProperties/getRoleAttribute()|",
+      "|java+method:///org/apereo/cas/mgmt/config/CasManagementLdapAuthorizationConfiguration/ldapAuthorizationGeneratorUserSearchExecutor()|",
+      "|java+method:///org/apereo/cas/configuration/support/Beans/newLdaptivePooledConnectionFactory(org.apereo.cas.configuration.model.support.ldap.AbstractLdapProperties)|",
+      "|java+constructor:///org/apereo/cas/authorization/LdapUserGroupsToRolesAuthorizationGenerator/LdapUserGroupsToRolesAuthorizationGenerator(org.ldaptive.ConnectionFactory,org.ldaptive.SearchExecutor,boolean,java.lang.String,java.lang.String,org.ldaptive.SearchExecutor)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+constructor:///org/apereo/cas/authorization/LdapUserAttributesToRolesAuthorizationGenerator/LdapUserAttributesToRolesAuthorizationGenerator(org.ldaptive.ConnectionFactory,org.ldaptive.SearchExecutor,boolean,java.lang.String,java.lang.String)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/LdapAuthorizationProperties/getGroupAttribute()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/LdapAuthorizationProperties/getGroupFilter()|",
+      "|java+method:///org/apereo/cas/configuration/model/webapp/mgmt/ManagementWebappProperties$Ldap/getLdapAuthz()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/LdapAuthorizationProperties/isAllowMultipleResults()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/LdapAuthorizationProperties/getRolePrefix()|",
+      "|java+method:///org/apereo/cas/mgmt/config/CasManagementLdapAuthorizationConfiguration/ldapAuthorizationGeneratorGroupSearchExecutor()|",
+      "|java+method:///org/apereo/cas/configuration/CasConfigurationProperties/getMgmt()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/LdapAuthorizationProperties/getGroupPrefix()|",
+      "|java+method:///org/apereo/cas/configuration/model/webapp/mgmt/ManagementWebappProperties/getLdap()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/LdapAuthorizationProperties/getRoleAttribute()|",
+      "|java+method:///org/apereo/cas/util/LdapUtils/newLdaptivePooledConnectionFactory(org.apereo.cas.configuration.model.support.ldap.AbstractLdapProperties)|",
+      "|java+method:///org/apereo/cas/mgmt/config/CasManagementLdapAuthorizationConfiguration/ldapAuthorizationGeneratorUserSearchExecutor()|",
+      "|java+constructor:///org/apereo/cas/authorization/LdapUserGroupsToRolesAuthorizationGenerator/LdapUserGroupsToRolesAuthorizationGenerator(org.ldaptive.ConnectionFactory,org.ldaptive.SearchExecutor,boolean,java.lang.String,java.lang.String,org.ldaptive.SearchExecutor)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+constructor:///org/apereo/cas/authorization/LdapUserAttributesToRolesAuthorizationGenerator/LdapUserAttributesToRolesAuthorizationGenerator(org.ldaptive.ConnectionFactory,org.ldaptive.SearchExecutor,boolean,java.lang.String,java.lang.String)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/LdapAuthorizationProperties/getGroupAttribute()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/LdapAuthorizationProperties/getGroupFilter()|",
+      "|java+method:///org/apereo/cas/configuration/model/webapp/mgmt/ManagementWebappProperties$Ldap/getLdapAuthz()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/LdapAuthorizationProperties/isAllowMultipleResults()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/LdapAuthorizationProperties/getRolePrefix()|",
+      "|java+method:///org/apereo/cas/mgmt/config/CasManagementLdapAuthorizationConfiguration/ldapAuthorizationGeneratorGroupSearchExecutor()|",
+      "|java+method:///org/apereo/cas/configuration/CasConfigurationProperties/getMgmt()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/LdapAuthorizationProperties/getGroupPrefix()|",
+      "|java+method:///org/apereo/cas/configuration/model/webapp/mgmt/ManagementWebappProperties/getLdap()|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-support-ldap-core:5.2.0-RC2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-management-webapp-support-ldap:5.2.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-management-webapp-support-ldap:5.2.0-RC2",
+    "caller": "|java+method:///org/apereo/cas/mgmt/config/CasManagementLdapAuthorizationConfiguration/ldapAuthorizationGeneratorGroupSearchExecutor()|",
+    "called": "|java+method:///org/apereo/cas/util/LdapUtils/newLdaptiveSearchExecutor(java.lang.String,java.lang.String,java.util.List,java.util.List)|",
+    "v1Body": [
+      "|java+method:///org/apereo/cas/configuration/CasConfigurationProperties/getMgmt()|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Collections/emptyList()|",
+      "|java+method:///org/apereo/cas/configuration/model/webapp/mgmt/ManagementWebappProperties/getLdap()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/LdapAuthorizationProperties/getGroupAttribute()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/LdapAuthorizationProperties/getGroupFilter()|",
+      "|java+method:///org/apereo/cas/configuration/support/Beans/newLdaptiveSearchExecutor(java.lang.String,java.lang.String,java.util.List,java.util.List)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/LdapAuthorizationProperties/getGroupBaseDn()|",
+      "|java+method:///org/apereo/cas/configuration/model/webapp/mgmt/ManagementWebappProperties$Ldap/getLdapAuthz()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList(int)|",
+      "|java+method:///org/apereo/cas/configuration/CasConfigurationProperties/getMgmt()|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///org/apereo/cas/configuration/model/webapp/mgmt/ManagementWebappProperties/getLdap()|",
+      "|java+method:///org/apereo/cas/util/LdapUtils/newLdaptiveSearchExecutor(java.lang.String,java.lang.String,java.util.List,java.util.List)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/LdapAuthorizationProperties/getGroupAttribute()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/LdapAuthorizationProperties/getGroupFilter()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/LdapAuthorizationProperties/getGroupBaseDn()|",
+      "|java+method:///org/apereo/cas/configuration/model/webapp/mgmt/ManagementWebappProperties$Ldap/getLdapAuthz()|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-support-ldap-core:5.2.0-RC2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-management-webapp-support-ldap:5.2.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-management-webapp-support-ldap:5.2.0-RC2",
+    "caller": "|java+method:///org/apereo/cas/mgmt/config/CasManagementLdapAuthorizationConfiguration/ldapAuthorizationGeneratorUserSearchExecutor()|",
+    "called": "|java+method:///org/apereo/cas/util/LdapUtils/newLdaptiveSearchExecutor(java.lang.String,java.lang.String,java.util.List,java.util.List)|",
+    "v1Body": [
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/LdapAuthorizationProperties/getRoleAttribute()|",
+      "|java+method:///org/apereo/cas/configuration/CasConfigurationProperties/getMgmt()|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Collections/emptyList()|",
+      "|java+method:///org/apereo/cas/configuration/model/webapp/mgmt/ManagementWebappProperties/getLdap()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/LdapAuthorizationProperties/getBaseDn()|",
+      "|java+method:///org/apereo/cas/configuration/model/webapp/mgmt/ManagementWebappProperties$Ldap/getLdapAuthz()|",
+      "|java+method:///org/apereo/cas/configuration/support/Beans/newLdaptiveSearchExecutor(java.lang.String,java.lang.String,java.util.List,java.util.List)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/LdapAuthorizationProperties/getSearchFilter()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList(int)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/LdapAuthorizationProperties/getRoleAttribute()|",
+      "|java+method:///org/apereo/cas/configuration/CasConfigurationProperties/getMgmt()|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///org/apereo/cas/configuration/model/webapp/mgmt/ManagementWebappProperties/getLdap()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/LdapAuthorizationProperties/getSearchFilter()|",
+      "|java+method:///org/apereo/cas/configuration/model/webapp/mgmt/ManagementWebappProperties$Ldap/getLdapAuthz()|",
+      "|java+method:///org/apereo/cas/util/LdapUtils/newLdaptiveSearchExecutor(java.lang.String,java.lang.String,java.util.List,java.util.List)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/LdapAuthorizationProperties/getBaseDn()|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-support-ldap-core:5.2.0-RC2",
+    "change": "UPDATED"
+  }
+]

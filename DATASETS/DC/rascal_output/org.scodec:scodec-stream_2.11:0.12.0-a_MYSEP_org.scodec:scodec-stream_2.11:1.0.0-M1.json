@@ -1,0 +1,617 @@
+[
+  {
+    "coordinatesV1": "org.scodec:scodec-stream_2.11:1.0.0-M1",
+    "coordinatesV2": "org.scodec:scodec-stream_2.11:0.12.0-a",
+    "caller": "|java+method:///scodec/stream/decode/package$/modify(scala.Function1)|",
+    "called": "|java+method:///scalaz/stream/Process$/eval(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///scodec/stream/decode/Cursor$/modify(scala.Function1)|",
+      "|java+method:///scodec/stream/decode/StreamDecoder$/instance(scalaz.stream.Process)|",
+      "|java+method:///scalaz/stream/Process$/eval(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///scodec/stream/decode/Cursor$/modify(scala.Function1)|",
+      "|java+method:///scodec/stream/decode/StreamDecoder$/instance(fs2.Stream)|",
+      "|java+method:///fs2/Stream$/eval(java.lang.Object)|"
+    ],
+    "affectedLib": "org.scalaz.stream:scalaz-stream_2.11:0.8a",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.scodec:scodec-stream_2.11:1.0.0-M1",
+    "coordinatesV2": "org.scodec:scodec-stream_2.11:0.12.0-a",
+    "caller": "|java+method:///scodec/stream/encode/package$/tryOnce(shapeless.Lazy)|",
+    "called": "|java+method:///scalaz/stream/Process$/await1()|",
+    "v1Body": [
+      "|java+method:///scalaz/stream/Process/flatMap(scala.Function1)|",
+      "|java+method:///scodec/stream/encode/StreamEncoder$/instance(scalaz.stream.Process)|",
+      "|java+constructor:///scodec/stream/encode/package$$anonfun$tryOnce$1/package$$anonfun$tryOnce$1(shapeless.Lazy)|",
+      "|java+method:///scalaz/stream/Process$/await1()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///scodec/stream/encode/package$$anonfun$tryOnce$1/package$$anonfun$tryOnce$1(shapeless.Lazy)|",
+      "|java+method:///scodec/stream/encode/StreamEncoder$/instance(scala.Function1)|"
+    ],
+    "affectedLib": "org.scalaz.stream:scalaz-stream_2.11:0.8a",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.scodec:scodec-stream_2.11:1.0.0-M1",
+    "coordinatesV2": "org.scodec:scodec-stream_2.11:0.12.0-a",
+    "caller": "|java+method:///scodec/stream/decode/StreamDecoder$class/nonEmpty(scodec.stream.decode.StreamDecoder,scodec.Err)|",
+    "called": "|java+method:///scalaz/stream/Process$/receive1Or(scala.Function0,scala.Function1)|",
+    "v1Body": [
+      "|java+method:///scalaz/stream/Process/flatMap(scala.Function1)|",
+      "|java+constructor:///scodec/stream/decode/StreamDecoder$$anonfun$nonEmpty$2/StreamDecoder$$anonfun$nonEmpty$2(scodec.stream.decode.StreamDecoder)|",
+      "|java+constructor:///scodec/stream/decode/StreamDecoder$$anonfun$nonEmpty$3/StreamDecoder$$anonfun$nonEmpty$3(scodec.stream.decode.StreamDecoder)|",
+      "|java+method:///scodec/stream/decode/StreamDecoder/pipe(scalaz.stream.Process)|",
+      "|java+constructor:///scodec/stream/decode/StreamDecoder$$anonfun$nonEmpty$1/StreamDecoder$$anonfun$nonEmpty$1(scodec.stream.decode.StreamDecoder,scodec.Err)|",
+      "|java+method:///scalaz/stream/Process$/receive1Or(scala.Function0,scala.Function1)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///scodec/stream/decode/StreamDecoder$$anonfun$nonEmpty$1/StreamDecoder$$anonfun$nonEmpty$1(scodec.stream.decode.StreamDecoder,scodec.Err)|",
+      "|java+method:///scodec/stream/decode/StreamDecoder/through(scala.Function1)|"
+    ],
+    "affectedLib": "org.scalaz.stream:scalaz-stream_2.11:0.8a",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.scodec:scodec-stream_2.11:1.0.0-M1",
+    "coordinatesV2": "org.scodec:scodec-stream_2.11:0.12.0-a",
+    "caller": "|java+method:///scodec/stream/decode/package$/take(long)|",
+    "called": "|java+method:///scalaz/stream/Process$/eval(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///scodec/stream/decode/Cursor$/modify(scala.Function1)|",
+      "|java+constructor:///scodec/stream/decode/package$$anonfun$take$1/package$$anonfun$take$1(long)|",
+      "|java+method:///scodec/stream/decode/StreamDecoder$/instance(scalaz.stream.Process)|",
+      "|java+method:///scalaz/stream/Process$/eval(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///scodec/stream/decode/Cursor$/modify(scala.Function1)|",
+      "|java+constructor:///scodec/stream/decode/package$$anonfun$take$1/package$$anonfun$take$1(long)|",
+      "|java+method:///scodec/stream/decode/StreamDecoder$/instance(fs2.Stream)|",
+      "|java+method:///fs2/Stream$/eval(java.lang.Object)|"
+    ],
+    "affectedLib": "org.scalaz.stream:scalaz-stream_2.11:0.8a",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.scodec:scodec-stream_2.11:1.0.0-M1",
+    "coordinatesV2": "org.scodec:scodec-stream_2.11:0.12.0-a",
+    "caller": "|java+method:///scodec/stream/encode/StreamEncoder$class/encodeAllValid(scodec.stream.encode.StreamEncoder,scala.collection.Seq)|",
+    "called": "|java+method:///scalaz/stream/Process$/emitAll(scala.collection.Seq)|",
+    "v1Body": [
+      "|java+method:///scalaz/concurrent/Task$/taskInstance()|",
+      "|java+method:///scalaz/stream/Process/runLastOr(scala.Function0,scalaz.Monad,scalaz.Catchable)|",
+      "|java+method:///scalaz/stream/Process$/Process0Syntax(scalaz.stream.Process)|",
+      "|java+method:///scalaz/stream/Process$Process0Syntax$/toSource$extension(scalaz.stream.Process)|",
+      "|java+method:///scodec/bits/BitVector$/empty()|",
+      "|java+method:///scalaz/stream/Process/pipe(scalaz.stream.Process)|",
+      "|java+method:///scalaz/stream/Process/fold(java.lang.Object,scala.Function2)|",
+      "|java+method:///scalaz/concurrent/Task/run()|",
+      "|java+method:///scalaz/stream/Process$/emitAll(scala.collection.Seq)|",
+      "|java+constructor:///scodec/stream/encode/StreamEncoder$$anonfun$encodeAllValid$1/StreamEncoder$$anonfun$encodeAllValid$1(scodec.stream.encode.StreamEncoder)|",
+      "|java+constructor:///scodec/stream/encode/StreamEncoder$$anonfun$encodeAllValid$2/StreamEncoder$$anonfun$encodeAllValid$2(scodec.stream.encode.StreamEncoder)|",
+      "|java+method:///scodec/stream/encode/StreamEncoder/encoder()|"
+    ],
+    "v2Body": [
+      "|java+method:///fs2/Stream/runFold(java.lang.Object,scala.Function2)|",
+      "|java+method:///scodec/bits/BitVector$/empty()|",
+      "|java+constructor:///scodec/stream/encode/StreamEncoder$$anonfun$encodeAllValid$1/StreamEncoder$$anonfun$encodeAllValid$1(scodec.stream.encode.StreamEncoder)|",
+      "|java+method:///fs2/util/Sub1$/sub1()|",
+      "|java+method:///fs2/Stream$/emits(scala.collection.Seq)|",
+      "|java+method:///scodec/stream/encode/StreamEncoder/encode(fs2.Stream)|",
+      "|java+method:///fs2/Stream/covary(fs2.util.Sub1)|",
+      "|java+method:///fs2/util/Free/run(fs2.util.Catchable)|",
+      "|java+method:///fs2/util/Task$/monad()|",
+      "|java+method:///fs2/util/Task/unsafeRun()|"
+    ],
+    "affectedLib": "org.scalaz.stream:scalaz-stream_2.11:0.8a",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.scodec:scodec-stream_2.11:1.0.0-M1",
+    "coordinatesV2": "org.scodec:scodec-stream_2.11:0.12.0-a",
+    "caller": "|java+method:///scodec/stream/decode/package$/fail(java.lang.Throwable)|",
+    "called": "|java+method:///scalaz/stream/Process$/fail(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///scodec/stream/decode/StreamDecoder$/instance(scalaz.stream.Process)|",
+      "|java+method:///scalaz/stream/Process$/fail(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///fs2/Stream$/fail(java.lang.Throwable)|",
+      "|java+method:///scodec/stream/decode/StreamDecoder$/instance(fs2.Stream)|"
+    ],
+    "affectedLib": "org.scalaz.stream:scalaz-stream_2.11:0.8a",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.scodec:scodec-stream_2.11:1.0.0-M1",
+    "coordinatesV2": "org.scodec:scodec-stream_2.11:0.12.0-a",
+    "caller": "|java+method:///scodec/stream/decode/package$/fail(scodec.Err)|",
+    "called": "|java+method:///scalaz/stream/Process$/fail(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///scodec/stream/decode/StreamDecoder$/instance(scalaz.stream.Process)|",
+      "|java+constructor:///scodec/stream/decode/DecodingError/DecodingError(scodec.Err)|",
+      "|java+method:///scalaz/stream/Process$/fail(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///fs2/Stream$/fail(java.lang.Throwable)|",
+      "|java+constructor:///scodec/stream/decode/DecodingError/DecodingError(scodec.Err)|",
+      "|java+method:///scodec/stream/decode/StreamDecoder$/instance(fs2.Stream)|"
+    ],
+    "affectedLib": "org.scalaz.stream:scalaz-stream_2.11:0.8a",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.scodec:scodec-stream_2.11:1.0.0-M1",
+    "coordinatesV2": "org.scodec:scodec-stream_2.11:0.12.0-a",
+    "caller": "|java+method:///scodec/stream/decode/StreamDecoder$class/decode(scodec.stream.decode.StreamDecoder,scala.Function0)|",
+    "called": "|java+method:///scalaz/stream/Process$/suspend(scala.Function0)|",
+    "v1Body": [
+      "|java+method:///scalaz/stream/Process$/suspend(scala.Function0)|",
+      "|java+constructor:///scodec/stream/decode/StreamDecoder$$anonfun$decode$1/StreamDecoder$$anonfun$decode$1(scodec.stream.decode.StreamDecoder,scala.Function0)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///scodec/stream/decode/StreamDecoder$$anonfun$decode$1/StreamDecoder$$anonfun$decode$1(scodec.stream.decode.StreamDecoder,scala.Function0)|",
+      "|java+method:///fs2/Stream$/suspend(scala.Function0)|"
+    ],
+    "affectedLib": "org.scalaz.stream:scalaz-stream_2.11:0.8a",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.scodec:scodec-stream_2.11:1.0.0-M1",
+    "coordinatesV2": "org.scodec:scodec-stream_2.11:0.12.0-a",
+    "caller": "|java+method:///scodec/stream/decode/package$/emit(java.lang.Object)|",
+    "called": "|java+method:///scalaz/stream/Process$/emit(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///scalaz/stream/Process$/emit(java.lang.Object)|",
+      "|java+method:///scodec/stream/decode/StreamDecoder$/instance(scalaz.stream.Process)|"
+    ],
+    "v2Body": [
+      "|java+method:///fs2/Stream$/emit(java.lang.Object)|",
+      "|java+method:///scodec/stream/decode/StreamDecoder$/instance(fs2.Stream)|"
+    ],
+    "affectedLib": "org.scalaz.stream:scalaz-stream_2.11:0.8a",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.scodec:scodec-stream_2.11:1.0.0-M1",
+    "coordinatesV2": "org.scodec:scodec-stream_2.11:0.12.0-a",
+    "caller": "|java+method:///scodec/stream/encode/package$/fail(java.lang.Throwable)|",
+    "called": "|java+method:///scalaz/stream/Process$/fail(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///scodec/stream/encode/StreamEncoder$/instance(scalaz.stream.Process)|",
+      "|java+method:///scalaz/stream/Process$/fail(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///scodec/stream/encode/package$$anonfun$fail$1/package$$anonfun$fail$1(java.lang.Throwable)|",
+      "|java+method:///scodec/stream/encode/StreamEncoder$/instance(scala.Function1)|"
+    ],
+    "affectedLib": "org.scalaz.stream:scalaz-stream_2.11:0.8a",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.scodec:scodec-stream_2.11:1.0.0-M1",
+    "coordinatesV2": "org.scodec:scodec-stream_2.11:0.12.0-a",
+    "caller": "|java+method:///scodec/stream/encode/package$/emit(scodec.bits.BitVector)|",
+    "called": "|java+method:///scalaz/stream/Process$/emit(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///scalaz/stream/Process$/emit(java.lang.Object)|",
+      "|java+method:///scodec/stream/encode/StreamEncoder$/instance(scalaz.stream.Process)|"
+    ],
+    "v2Body": [
+      "|java+method:///scodec/stream/encode/StreamEncoder$/instance(scala.Function1)|",
+      "|java+constructor:///scodec/stream/encode/package$$anonfun$emit$1/package$$anonfun$emit$1(scodec.bits.BitVector)|"
+    ],
+    "affectedLib": "org.scalaz.stream:scalaz-stream_2.11:0.8a",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.scodec:scodec-stream_2.11:1.0.0-M1",
+    "coordinatesV2": "org.scodec:scodec-stream_2.11:0.12.0-a",
+    "caller": "|java+method:///scodec/stream/decode/package$/ask()|",
+    "called": "|java+method:///scalaz/stream/Process$/eval(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///scodec/stream/decode/Cursor$/ask()|",
+      "|java+method:///scodec/stream/decode/StreamDecoder$/instance(scalaz.stream.Process)|",
+      "|java+method:///scalaz/stream/Process$/eval(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///scodec/stream/decode/Cursor$/ask()|",
+      "|java+method:///scodec/stream/decode/StreamDecoder$/instance(fs2.Stream)|",
+      "|java+method:///fs2/Stream$/eval(java.lang.Object)|"
+    ],
+    "affectedLib": "org.scalaz.stream:scalaz-stream_2.11:0.8a",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.scodec:scodec-stream_2.11:1.0.0-M1",
+    "coordinatesV2": "org.scodec:scodec-stream_2.11:0.12.0-a",
+    "caller": "|java+method:///scodec/stream/decode/package$/drop(long)|",
+    "called": "|java+method:///scalaz/stream/Process$/eval(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///scodec/stream/decode/Cursor$/modify(scala.Function1)|",
+      "|java+constructor:///scodec/stream/decode/package$$anonfun$drop$1/package$$anonfun$drop$1(long)|",
+      "|java+method:///scodec/stream/decode/StreamDecoder$/instance(scalaz.stream.Process)|",
+      "|java+method:///scalaz/stream/Process$/eval(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///scodec/stream/decode/Cursor$/modify(scala.Function1)|",
+      "|java+method:///scodec/stream/decode/StreamDecoder$/instance(fs2.Stream)|",
+      "|java+method:///fs2/Stream$/eval(java.lang.Object)|",
+      "|java+constructor:///scodec/stream/decode/package$$anonfun$drop$1/package$$anonfun$drop$1(long)|"
+    ],
+    "affectedLib": "org.scalaz.stream:scalaz-stream_2.11:0.8a",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.scodec:scodec-stream_2.11:1.0.0-M1",
+    "coordinatesV2": "org.scodec:scodec-stream_2.11:0.12.0-a",
+    "caller": "|java+method:///scodec/stream/encode/package$/once(shapeless.Lazy)|",
+    "called": "|java+method:///scalaz/stream/Process$/await1()|",
+    "v1Body": [
+      "|java+method:///scalaz/stream/Process/flatMap(scala.Function1)|",
+      "|java+method:///scodec/stream/encode/StreamEncoder$/instance(scalaz.stream.Process)|",
+      "|java+method:///scalaz/stream/Process$/await1()|",
+      "|java+constructor:///scodec/stream/encode/package$$anonfun$once$1/package$$anonfun$once$1(shapeless.Lazy)|"
+    ],
+    "v2Body": [
+      "|java+method:///scodec/stream/encode/StreamEncoder$/instance(scala.Function1)|",
+      "|java+constructor:///scodec/stream/encode/package$$anonfun$once$1/package$$anonfun$once$1(shapeless.Lazy)|"
+    ],
+    "affectedLib": "org.scalaz.stream:scalaz-stream_2.11:0.8a",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.scodec:scodec-stream_2.11:1.0.0-M1",
+    "coordinatesV2": "org.scodec:scodec-stream_2.11:0.12.0-a",
+    "caller": "|java+method:///scodec/stream/encode/package$/fail(scodec.Err)|",
+    "called": "|java+method:///scalaz/stream/Process$/fail(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///scodec/stream/encode/StreamEncoder$/instance(scalaz.stream.Process)|",
+      "|java+constructor:///scodec/stream/encode/EncodingError/EncodingError(scodec.Err)|",
+      "|java+method:///scalaz/stream/Process$/fail(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///scodec/stream/encode/package$$anonfun$fail$2/package$$anonfun$fail$2(scodec.Err)|",
+      "|java+method:///scodec/stream/encode/StreamEncoder$/instance(scala.Function1)|"
+    ],
+    "affectedLib": "org.scalaz.stream:scalaz-stream_2.11:0.8a",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.scodec:scodec-stream_2.11:1.0.0-M1",
+    "coordinatesV2": "org.scodec:scodec-stream_2.11:0.12.0-a",
+    "caller": "|java+method:///scodec/stream/decode/package$/set(scodec.bits.BitVector)|",
+    "called": "|java+method:///scalaz/stream/Process$/eval_(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///scalaz/stream/Process$/eval_(java.lang.Object)|",
+      "|java+method:///scodec/stream/decode/StreamDecoder$/instance(scalaz.stream.Process)|",
+      "|java+method:///scodec/stream/decode/Cursor$/set(scodec.bits.BitVector)|"
+    ],
+    "v2Body": [
+      "|java+method:///scodec/stream/decode/Cursor$/set(scodec.bits.BitVector)|",
+      "|java+method:///scodec/stream/decode/StreamDecoder$/instance(fs2.Stream)|",
+      "|java+method:///fs2/Stream$/eval_(java.lang.Object)|"
+    ],
+    "affectedLib": "org.scalaz.stream:scalaz-stream_2.11:0.8a",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.scodec:scodec-stream_2.11:1.0.0-M1",
+    "coordinatesV2": "org.scodec:scodec-stream_2.11:0.12.0-a",
+    "caller": "|java+method:///scodec/stream/decode/StreamDecoder$class/sepBy(scodec.stream.decode.StreamDecoder,shapeless.Lazy)|",
+    "called": "|java+method:///scalaz/stream/Process$/awaitL()|",
+    "v1Body": [
+      "|java+method:///scodec/stream/decode/package$/many(shapeless.Lazy)|",
+      "|java+method:///scalaz/stream/Process/repeat()|",
+      "|java+constructor:///scodec/stream/decode/StreamDecoder$$anonfun$sepBy$1/StreamDecoder$$anonfun$sepBy$1(scodec.stream.decode.StreamDecoder)|",
+      "|java+method:///scodec/stream/decode/StreamDecoder/tee(scodec.stream.decode.StreamDecoder,scalaz.stream.Process)|",
+      "|java+method:///scalaz/stream/Process/fby(scala.Function0)|",
+      "|java+method:///scalaz/stream/Process$/awaitL()|"
+    ],
+    "v2Body": [
+      "|java+method:///scodec/stream/decode/package$/many(shapeless.Lazy)|",
+      "|java+method:///scodec/stream/decode/StreamDecoder/through2(scodec.stream.decode.StreamDecoder,scala.Function2)|",
+      "|java+constructor:///scodec/stream/decode/StreamDecoder$$anonfun$sepBy$1/StreamDecoder$$anonfun$sepBy$1(scodec.stream.decode.StreamDecoder)|"
+    ],
+    "affectedLib": "org.scalaz.stream:scalaz-stream_2.11:0.8a",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.scodec:scodec-stream_2.11:0.12.0-a",
+    "coordinatesV2": "org.scodec:scodec-stream_2.11:1.0.0-M1",
+    "caller": "|java+method:///scodec/stream/decode/StreamDecoder$class/decodeAllValid(scodec.stream.decode.StreamDecoder,scala.Function0)|",
+    "called": "|java+method:///fs2/Stream/runLog()|",
+    "v1Body": [
+      "|java+method:///scalaz/concurrent/Task$/taskInstance()|",
+      "|java+method:///scalaz/stream/Process/chunkAll()|",
+      "|java+method:///scalaz/stream/Process/runLastOr(scala.Function0,scalaz.Monad,scalaz.Catchable)|",
+      "|java+method:///scalaz/concurrent/Task/run()|",
+      "|java+method:///scodec/stream/decode/StreamDecoder/decode(scala.Function0)|",
+      "|java+constructor:///scodec/stream/decode/StreamDecoder$$anonfun$decodeAllValid$1/StreamDecoder$$anonfun$decodeAllValid$1(scodec.stream.decode.StreamDecoder)|"
+    ],
+    "v2Body": [
+      "|java+method:///scodec/stream/decode/StreamDecoder/decode(scala.Function0)|",
+      "|java+method:///fs2/util/Free/run(fs2.util.Catchable)|",
+      "|java+method:///fs2/util/Task$/monad()|",
+      "|java+method:///fs2/util/Task/unsafeRun()|",
+      "|java+method:///fs2/Stream/runLog()|"
+    ],
+    "affectedLib": "co.fs2:fs2-core_2.11:0.9.0-M1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.scodec:scodec-stream_2.11:0.12.0-a",
+    "coordinatesV2": "org.scodec:scodec-stream_2.11:1.0.0-M1",
+    "caller": "|java+method:///scodec/stream/encode/StreamEncoder$class/encodeAllValid(scodec.stream.encode.StreamEncoder,scala.collection.Seq)|",
+    "called": "|java+method:///fs2/Stream/runFold(java.lang.Object,scala.Function2)|",
+    "v1Body": [
+      "|java+method:///scalaz/concurrent/Task$/taskInstance()|",
+      "|java+method:///scalaz/stream/Process/runLastOr(scala.Function0,scalaz.Monad,scalaz.Catchable)|",
+      "|java+method:///scalaz/stream/Process$/Process0Syntax(scalaz.stream.Process)|",
+      "|java+method:///scalaz/stream/Process$Process0Syntax$/toSource$extension(scalaz.stream.Process)|",
+      "|java+method:///scodec/bits/BitVector$/empty()|",
+      "|java+method:///scalaz/stream/Process/pipe(scalaz.stream.Process)|",
+      "|java+method:///scalaz/stream/Process/fold(java.lang.Object,scala.Function2)|",
+      "|java+method:///scalaz/concurrent/Task/run()|",
+      "|java+method:///scalaz/stream/Process$/emitAll(scala.collection.Seq)|",
+      "|java+constructor:///scodec/stream/encode/StreamEncoder$$anonfun$encodeAllValid$1/StreamEncoder$$anonfun$encodeAllValid$1(scodec.stream.encode.StreamEncoder)|",
+      "|java+constructor:///scodec/stream/encode/StreamEncoder$$anonfun$encodeAllValid$2/StreamEncoder$$anonfun$encodeAllValid$2(scodec.stream.encode.StreamEncoder)|",
+      "|java+method:///scodec/stream/encode/StreamEncoder/encoder()|"
+    ],
+    "v2Body": [
+      "|java+method:///fs2/Stream/runFold(java.lang.Object,scala.Function2)|",
+      "|java+method:///scodec/bits/BitVector$/empty()|",
+      "|java+constructor:///scodec/stream/encode/StreamEncoder$$anonfun$encodeAllValid$1/StreamEncoder$$anonfun$encodeAllValid$1(scodec.stream.encode.StreamEncoder)|",
+      "|java+method:///fs2/util/Sub1$/sub1()|",
+      "|java+method:///fs2/Stream$/emits(scala.collection.Seq)|",
+      "|java+method:///scodec/stream/encode/StreamEncoder/encode(fs2.Stream)|",
+      "|java+method:///fs2/Stream/covary(fs2.util.Sub1)|",
+      "|java+method:///fs2/util/Free/run(fs2.util.Catchable)|",
+      "|java+method:///fs2/util/Task$/monad()|",
+      "|java+method:///fs2/util/Task/unsafeRun()|"
+    ],
+    "affectedLib": "co.fs2:fs2-core_2.11:0.9.0-M1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.scodec:scodec-stream_2.11:0.12.0-a",
+    "coordinatesV2": "org.scodec:scodec-stream_2.11:1.0.0-M1",
+    "caller": "|java+method:///scodec/stream/decode/package$/fail(java.lang.Throwable)|",
+    "called": "|java+method:///fs2/Stream$/fail(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///scodec/stream/decode/StreamDecoder$/instance(scalaz.stream.Process)|",
+      "|java+method:///scalaz/stream/Process$/fail(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///fs2/Stream$/fail(java.lang.Throwable)|",
+      "|java+method:///scodec/stream/decode/StreamDecoder$/instance(fs2.Stream)|"
+    ],
+    "affectedLib": "co.fs2:fs2-core_2.11:0.9.0-M1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.scodec:scodec-stream_2.11:0.12.0-a",
+    "coordinatesV2": "org.scodec:scodec-stream_2.11:1.0.0-M1",
+    "caller": "|java+constructor:///scodec/stream/decode/package$/package$()|",
+    "called": "|java+method:///fs2/Stream$/empty()|",
+    "v1Body": [
+      "|java+method:///scalaz/stream/Process$/halt()|",
+      "|java+method:///scodec/stream/decode/StreamDecoder$/instance(scalaz.stream.Process)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///fs2/Stream$/empty()|",
+      "|java+method:///scodec/stream/decode/StreamDecoder$/instance(fs2.Stream)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "co.fs2:fs2-core_2.11:0.9.0-M1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.scodec:scodec-stream_2.11:0.12.0-a",
+    "coordinatesV2": "org.scodec:scodec-stream_2.11:1.0.0-M1",
+    "caller": "|java+method:///scodec/stream/decode/package$/fail(scodec.Err)|",
+    "called": "|java+method:///fs2/Stream$/fail(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///scodec/stream/decode/StreamDecoder$/instance(scalaz.stream.Process)|",
+      "|java+constructor:///scodec/stream/decode/DecodingError/DecodingError(scodec.Err)|",
+      "|java+method:///scalaz/stream/Process$/fail(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///fs2/Stream$/fail(java.lang.Throwable)|",
+      "|java+constructor:///scodec/stream/decode/DecodingError/DecodingError(scodec.Err)|",
+      "|java+method:///scodec/stream/decode/StreamDecoder$/instance(fs2.Stream)|"
+    ],
+    "affectedLib": "co.fs2:fs2-core_2.11:0.9.0-M1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.scodec:scodec-stream_2.11:0.12.0-a",
+    "coordinatesV2": "org.scodec:scodec-stream_2.11:1.0.0-M1",
+    "caller": "|java+method:///scodec/stream/decode/StreamDecoder$class/decode(scodec.stream.decode.StreamDecoder,scala.Function0)|",
+    "called": "|java+method:///fs2/Stream$/suspend(scala.Function0)|",
+    "v1Body": [
+      "|java+method:///scalaz/stream/Process$/suspend(scala.Function0)|",
+      "|java+constructor:///scodec/stream/decode/StreamDecoder$$anonfun$decode$1/StreamDecoder$$anonfun$decode$1(scodec.stream.decode.StreamDecoder,scala.Function0)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///scodec/stream/decode/StreamDecoder$$anonfun$decode$1/StreamDecoder$$anonfun$decode$1(scodec.stream.decode.StreamDecoder,scala.Function0)|",
+      "|java+method:///fs2/Stream$/suspend(scala.Function0)|"
+    ],
+    "affectedLib": "co.fs2:fs2-core_2.11:0.9.0-M1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.scodec:scodec-stream_2.11:0.12.0-a",
+    "coordinatesV2": "org.scodec:scodec-stream_2.11:1.0.0-M1",
+    "caller": "|java+method:///scodec/stream/decode/StreamDecoder$$anonfun$decodeResource$1/apply(java.lang.Object)|",
+    "called": "|java+method:///fs2/util/Task$/delay(scala.Function0)|",
+    "v1Body": [
+      "|java+method:///scodec/stream/decode/StreamDecoder$$anonfun$decodeResource$1/apply(java.lang.Object)|",
+      "|java+method:///scalaz/concurrent/Task$/delay(scala.Function0)|",
+      "|java+constructor:///scodec/stream/decode/StreamDecoder$$anonfun$decodeResource$1$$anonfun$apply$1/StreamDecoder$$anonfun$decodeResource$1$$anonfun$apply$1(scodec.stream.decode.StreamDecoder$$anonfun$decodeResource$1,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///scodec/stream/decode/StreamDecoder$$anonfun$decodeResource$1$$anonfun$apply$1/StreamDecoder$$anonfun$decodeResource$1$$anonfun$apply$1(scodec.stream.decode.StreamDecoder$$anonfun$decodeResource$1,java.lang.Object)|",
+      "|java+method:///scodec/stream/decode/StreamDecoder$$anonfun$decodeResource$1/apply(java.lang.Object)|",
+      "|java+method:///fs2/util/Task$/delay(scala.Function0)|"
+    ],
+    "affectedLib": "co.fs2:fs2-core_2.11:0.9.0-M1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.scodec:scodec-stream_2.11:0.12.0-a",
+    "coordinatesV2": "org.scodec:scodec-stream_2.11:1.0.0-M1",
+    "caller": "|java+method:///scodec/stream/decode/package$/drop(long)|",
+    "called": "|java+method:///fs2/Stream$/eval(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///scodec/stream/decode/Cursor$/modify(scala.Function1)|",
+      "|java+constructor:///scodec/stream/decode/package$$anonfun$drop$1/package$$anonfun$drop$1(long)|",
+      "|java+method:///scodec/stream/decode/StreamDecoder$/instance(scalaz.stream.Process)|",
+      "|java+method:///scalaz/stream/Process$/eval(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///scodec/stream/decode/Cursor$/modify(scala.Function1)|",
+      "|java+method:///scodec/stream/decode/StreamDecoder$/instance(fs2.Stream)|",
+      "|java+method:///fs2/Stream$/eval(java.lang.Object)|",
+      "|java+constructor:///scodec/stream/decode/package$$anonfun$drop$1/package$$anonfun$drop$1(long)|"
+    ],
+    "affectedLib": "co.fs2:fs2-core_2.11:0.9.0-M1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.scodec:scodec-stream_2.11:0.12.0-a",
+    "coordinatesV2": "org.scodec:scodec-stream_2.11:1.0.0-M1",
+    "caller": "|java+method:///scodec/stream/decode/StreamDecoder$$anonfun$decode$1/apply()|",
+    "called": "|java+method:///fs2/Stream/translate(fs2.util.UF1)|",
+    "v1Body": [
+      "|java+constructor:///scodec/stream/decode/StreamDecoder$$anonfun$decode$1$$anon$2/StreamDecoder$$anonfun$decode$1$$anon$2(scodec.stream.decode.StreamDecoder$$anonfun$decode$1,scala.runtime.VolatileObjectRef)|",
+      "|java+method:///scala/Function0/apply()|",
+      "|java+method:///scodec/stream/decode/StreamDecoder$$anonfun$decode$1/apply()|",
+      "|java+method:///scodec/stream/decode/StreamDecoder/decoder()|",
+      "|java+method:///scala/runtime/VolatileObjectRef/create(java.lang.Object)|",
+      "|java+method:///scalaz/stream/Process/translate(scalaz.NaturalTransformation)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///scodec/stream/decode/StreamDecoder$$anonfun$decode$1$$anon$1/StreamDecoder$$anonfun$decode$1$$anon$1(scodec.stream.decode.StreamDecoder$$anonfun$decode$1,scala.runtime.VolatileObjectRef)|",
+      "|java+method:///fs2/Stream/translate(fs2.util.UF1)|",
+      "|java+method:///scala/Function0/apply()|",
+      "|java+method:///scodec/stream/decode/StreamDecoder$$anonfun$decode$1/apply()|",
+      "|java+method:///scodec/stream/decode/StreamDecoder/decoder()|",
+      "|java+method:///scala/runtime/VolatileObjectRef/create(java.lang.Object)|"
+    ],
+    "affectedLib": "co.fs2:fs2-core_2.11:0.9.0-M1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.scodec:scodec-stream_2.11:0.12.0-a",
+    "coordinatesV2": "org.scodec:scodec-stream_2.11:1.0.0-M1",
+    "caller": "|java+method:///scodec/stream/decode/package$/modify(scala.Function1)|",
+    "called": "|java+method:///fs2/Stream$/eval(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///scodec/stream/decode/Cursor$/modify(scala.Function1)|",
+      "|java+method:///scodec/stream/decode/StreamDecoder$/instance(scalaz.stream.Process)|",
+      "|java+method:///scalaz/stream/Process$/eval(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///scodec/stream/decode/Cursor$/modify(scala.Function1)|",
+      "|java+method:///scodec/stream/decode/StreamDecoder$/instance(fs2.Stream)|",
+      "|java+method:///fs2/Stream$/eval(java.lang.Object)|"
+    ],
+    "affectedLib": "co.fs2:fs2-core_2.11:0.9.0-M1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.scodec:scodec-stream_2.11:0.12.0-a",
+    "coordinatesV2": "org.scodec:scodec-stream_2.11:1.0.0-M1",
+    "caller": "|java+method:///scodec/stream/decode/package$/take(long)|",
+    "called": "|java+method:///fs2/Stream$/eval(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///scodec/stream/decode/Cursor$/modify(scala.Function1)|",
+      "|java+constructor:///scodec/stream/decode/package$$anonfun$take$1/package$$anonfun$take$1(long)|",
+      "|java+method:///scodec/stream/decode/StreamDecoder$/instance(scalaz.stream.Process)|",
+      "|java+method:///scalaz/stream/Process$/eval(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///scodec/stream/decode/Cursor$/modify(scala.Function1)|",
+      "|java+constructor:///scodec/stream/decode/package$$anonfun$take$1/package$$anonfun$take$1(long)|",
+      "|java+method:///scodec/stream/decode/StreamDecoder$/instance(fs2.Stream)|",
+      "|java+method:///fs2/Stream$/eval(java.lang.Object)|"
+    ],
+    "affectedLib": "co.fs2:fs2-core_2.11:0.9.0-M1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.scodec:scodec-stream_2.11:0.12.0-a",
+    "coordinatesV2": "org.scodec:scodec-stream_2.11:1.0.0-M1",
+    "caller": "|java+method:///scodec/stream/decode/StreamDecoder$class/decodeResource(scodec.stream.decode.StreamDecoder,scala.Function0,scala.Function1,scala.Function1)|",
+    "called": "|java+method:///fs2/util/Task$/delay(scala.Function0)|",
+    "v1Body": [
+      "|java+method:///scodec/stream/decode/StreamDecoder/decodeAsyncResource(scalaz.concurrent.Task,scala.Function1,scala.Function1)|",
+      "|java+method:///scalaz/concurrent/Task$/delay(scala.Function0)|",
+      "|java+constructor:///scodec/stream/decode/StreamDecoder$$anonfun$decodeResource$1/StreamDecoder$$anonfun$decodeResource$1(scodec.stream.decode.StreamDecoder,scala.Function1)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///scodec/stream/decode/StreamDecoder$$anonfun$decodeResource$1/StreamDecoder$$anonfun$decodeResource$1(scodec.stream.decode.StreamDecoder,scala.Function1)|",
+      "|java+method:///scodec/stream/decode/StreamDecoder/decodeAsyncResource(fs2.util.Task,scala.Function1,scala.Function1)|",
+      "|java+method:///fs2/util/Task$/delay(scala.Function0)|"
+    ],
+    "affectedLib": "co.fs2:fs2-core_2.11:0.9.0-M1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.scodec:scodec-stream_2.11:0.12.0-a",
+    "coordinatesV2": "org.scodec:scodec-stream_2.11:1.0.0-M1",
+    "caller": "|java+method:///scodec/stream/decode/package$/emit(java.lang.Object)|",
+    "called": "|java+method:///fs2/Stream$/emit(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///scalaz/stream/Process$/emit(java.lang.Object)|",
+      "|java+method:///scodec/stream/decode/StreamDecoder$/instance(scalaz.stream.Process)|"
+    ],
+    "v2Body": [
+      "|java+method:///fs2/Stream$/emit(java.lang.Object)|",
+      "|java+method:///scodec/stream/decode/StreamDecoder$/instance(fs2.Stream)|"
+    ],
+    "affectedLib": "co.fs2:fs2-core_2.11:0.9.0-M1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.scodec:scodec-stream_2.11:0.12.0-a",
+    "coordinatesV2": "org.scodec:scodec-stream_2.11:1.0.0-M1",
+    "caller": "|java+method:///scodec/stream/decode/package$/ask()|",
+    "called": "|java+method:///fs2/Stream$/eval(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///scodec/stream/decode/Cursor$/ask()|",
+      "|java+method:///scodec/stream/decode/StreamDecoder$/instance(scalaz.stream.Process)|",
+      "|java+method:///scalaz/stream/Process$/eval(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///scodec/stream/decode/Cursor$/ask()|",
+      "|java+method:///scodec/stream/decode/StreamDecoder$/instance(fs2.Stream)|",
+      "|java+method:///fs2/Stream$/eval(java.lang.Object)|"
+    ],
+    "affectedLib": "co.fs2:fs2-core_2.11:0.9.0-M1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.scodec:scodec-stream_2.11:0.12.0-a",
+    "coordinatesV2": "org.scodec:scodec-stream_2.11:1.0.0-M1",
+    "caller": "|java+method:///scodec/stream/decode/package$/set(scodec.bits.BitVector)|",
+    "called": "|java+method:///fs2/Stream$/eval_(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///scalaz/stream/Process$/eval_(java.lang.Object)|",
+      "|java+method:///scodec/stream/decode/StreamDecoder$/instance(scalaz.stream.Process)|",
+      "|java+method:///scodec/stream/decode/Cursor$/set(scodec.bits.BitVector)|"
+    ],
+    "v2Body": [
+      "|java+method:///scodec/stream/decode/Cursor$/set(scodec.bits.BitVector)|",
+      "|java+method:///scodec/stream/decode/StreamDecoder$/instance(fs2.Stream)|",
+      "|java+method:///fs2/Stream$/eval_(java.lang.Object)|"
+    ],
+    "affectedLib": "co.fs2:fs2-core_2.11:0.9.0-M1",
+    "change": "ADDED"
+  }
+]

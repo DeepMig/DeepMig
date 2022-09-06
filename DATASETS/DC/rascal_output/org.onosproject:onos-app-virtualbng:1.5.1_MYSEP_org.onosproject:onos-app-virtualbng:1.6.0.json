@@ -1,0 +1,99 @@
+[
+  {
+    "coordinatesV1": "org.onosproject:onos-app-virtualbng:1.6.0",
+    "coordinatesV2": "org.onosproject:onos-app-virtualbng:1.5.1",
+    "caller": "|java+method:///org/onosproject/virtualbng/RestClient/getClientBuilder(java.lang.String)|",
+    "called": "|java+method:///com/sun/jersey/api/client/WebResource/accept(java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/sun/jersey/api/client/WebResource$Builder/type(java.lang.String)|",
+      "|java+method:///com/sun/jersey/api/client/Client/resource(java.lang.String)|",
+      "|java+method:///com/sun/jersey/api/client/WebResource/accept(java.lang.String%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+method:///com/sun/jersey/api/client/Client/create()|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/ws/rs/client/WebTarget/request(java.lang.String%5B%5D)|",
+      "|java+method:///javax/ws/rs/client/ClientBuilder/newClient()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+method:///javax/ws/rs/client/Client/target(java.lang.String)|"
+    ],
+    "affectedLib": "com.sun.jersey:jersey-client:1.19",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.onosproject:onos-app-virtualbng:1.6.0",
+    "coordinatesV2": "org.onosproject:onos-app-virtualbng:1.5.1",
+    "caller": "|java+method:///org/onosproject/virtualbng/RestClient/getRest()|",
+    "called": "|java+method:///com/sun/jersey/api/client/WebResource$Builder/get(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/sun/jersey/api/client/ClientResponse/getStatus()|",
+      "|java+method:///org/onosproject/virtualbng/RestClient/getClientBuilder(java.lang.String)|",
+      "|java+method:///com/sun/jersey/api/client/WebResource$Builder/get(java.lang.Class)|",
+      "|java+method:///com/sun/jersey/api/client/ClientResponse/getEntity(java.lang.Class)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readTree(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/onosproject/virtualbng/RestClient/getClientBuilder(java.lang.String)|",
+      "|java+method:///javax/ws/rs/client/Invocation$Builder/get(java.lang.Class)|",
+      "|java+method:///javax/ws/rs/core/Response/getStatus()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readTree(java.lang.String)|",
+      "|java+method:///javax/ws/rs/client/Invocation$Builder/get()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "com.sun.jersey:jersey-client:1.19",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.onosproject:onos-app-virtualbng:1.5.1",
+    "coordinatesV2": "org.onosproject:onos-app-virtualbng:1.6.0",
+    "caller": "|java+method:///org/onosproject/virtualbng/RestClient/getClientBuilder(java.lang.String)|",
+    "called": "|java+method:///javax/ws/rs/client/ClientBuilder/newClient()|",
+    "v1Body": [
+      "|java+method:///com/sun/jersey/api/client/WebResource$Builder/type(java.lang.String)|",
+      "|java+method:///com/sun/jersey/api/client/Client/resource(java.lang.String)|",
+      "|java+method:///com/sun/jersey/api/client/WebResource/accept(java.lang.String%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+method:///com/sun/jersey/api/client/Client/create()|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/ws/rs/client/WebTarget/request(java.lang.String%5B%5D)|",
+      "|java+method:///javax/ws/rs/client/ClientBuilder/newClient()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+method:///javax/ws/rs/client/Client/target(java.lang.String)|"
+    ],
+    "affectedLib": "javax.ws.rs:javax.ws.rs-api:2.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.onosproject:onos-app-virtualbng:1.5.1",
+    "coordinatesV2": "org.onosproject:onos-app-virtualbng:1.6.0",
+    "caller": "|java+method:///org/onosproject/virtualbng/VbngResource/privateIpDeleteNotification(java.lang.String)|",
+    "called": "|java+method:///javax/ws/rs/core/Response/ok()|",
+    "v1Body": [
+      "|java+method:///org/onlab/packet/IpAddress/valueOf(java.lang.String)|",
+      "|java+method:///org/onlab/packet/IpAddress/toString()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///org/onosproject/virtualbng/VbngResource/get(java.lang.Class)|",
+      "|java+method:///org/onosproject/virtualbng/VbngService/deleteVbng(org.onlab.packet.IpAddress)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/onlab/packet/IpAddress/valueOf(java.lang.String)|",
+      "|java+method:///org/onlab/packet/IpAddress/toString()|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/entity(java.lang.Object)|",
+      "|java+method:///javax/ws/rs/core/Response/ok()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///org/onosproject/virtualbng/VbngResource/get(java.lang.Class)|",
+      "|java+method:///org/onosproject/virtualbng/VbngService/deleteVbng(org.onlab.packet.IpAddress)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "javax.ws.rs:javax.ws.rs-api:2.0.1",
+    "change": "ADDED"
+  }
+]

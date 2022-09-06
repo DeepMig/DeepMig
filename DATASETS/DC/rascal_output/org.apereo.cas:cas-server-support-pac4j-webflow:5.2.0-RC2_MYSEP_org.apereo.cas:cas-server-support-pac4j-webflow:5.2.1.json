@@ -1,0 +1,94 @@
+[
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-pac4j-webflow:5.2.0-RC2",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-pac4j-webflow:5.2.1",
+    "caller": "|java+method:///org/apereo/cas/web/flow/Pac4jWebflowConfigurer$1/doExecute(org.springframework.webflow.execution.RequestContext)|",
+    "called": "|java+method:///org/apereo/cas/support/pac4j/web/flow/DelegatedClientAuthenticationAction/hasDelegationRequestFailed(javax.servlet.http.HttpServletRequest,int)|",
+    "v1Body": [
+      "|java+method:///org/apereo/cas/support/pac4j/web/flow/DelegatedClientAuthenticationAction/hasDelegationRequestFailed(javax.servlet.http.HttpServletRequest,int)|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/getStatus()|",
+      "|java+method:///java/util/Optional/ifPresent(java.util.function.Consumer)|",
+      "|java+method:///org/apereo/cas/web/support/WebUtils/getHttpServletResponse(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///org/apereo/cas/web/support/WebUtils/getHttpServletRequest(org.springframework.webflow.execution.RequestContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apereo/cas/support/pac4j/web/flow/DelegatedClientAuthenticationAction/hasDelegationRequestFailed(javax.servlet.http.HttpServletRequest,int)|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/getStatus()|",
+      "|java+method:///java/util/Optional/ifPresent(java.util.function.Consumer)|",
+      "|java+method:///org/apereo/cas/web/support/WebUtils/getHttpServletResponseFromExternalWebflowContext(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///org/apereo/cas/web/support/WebUtils/getHttpServletRequestFromExternalWebflowContext(org.springframework.webflow.execution.RequestContext)|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-support-pac4j-core-clients:5.2.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-pac4j-webflow:5.2.0-RC2",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-pac4j-webflow:5.2.1",
+    "caller": "|java+method:///org/apereo/cas/web/flow/Pac4jWebflowConfigurer$1/doExecute(org.springframework.webflow.execution.RequestContext)|",
+    "called": "|java+method:///org/apereo/cas/web/support/WebUtils/getHttpServletResponseFromExternalWebflowContext(org.springframework.webflow.execution.RequestContext)|",
+    "v1Body": [
+      "|java+method:///org/apereo/cas/support/pac4j/web/flow/DelegatedClientAuthenticationAction/hasDelegationRequestFailed(javax.servlet.http.HttpServletRequest,int)|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/getStatus()|",
+      "|java+method:///java/util/Optional/ifPresent(java.util.function.Consumer)|",
+      "|java+method:///org/apereo/cas/web/support/WebUtils/getHttpServletResponse(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///org/apereo/cas/web/support/WebUtils/getHttpServletRequest(org.springframework.webflow.execution.RequestContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apereo/cas/support/pac4j/web/flow/DelegatedClientAuthenticationAction/hasDelegationRequestFailed(javax.servlet.http.HttpServletRequest,int)|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/getStatus()|",
+      "|java+method:///java/util/Optional/ifPresent(java.util.function.Consumer)|",
+      "|java+method:///org/apereo/cas/web/support/WebUtils/getHttpServletResponseFromExternalWebflowContext(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///org/apereo/cas/web/support/WebUtils/getHttpServletRequestFromExternalWebflowContext(org.springframework.webflow.execution.RequestContext)|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-core-web:5.2.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-pac4j-webflow:5.2.0-RC2",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-pac4j-webflow:5.2.1",
+    "caller": "|java+method:///org/apereo/cas/web/flow/Pac4jWebflowConfigurer/createSaml2ClientLogoutAction()|",
+    "called": "|java+method:///org/springframework/webflow/engine/ActionList/add(org.springframework.webflow.execution.Action)|",
+    "v1Body": [
+      "|java+method:///org/apereo/cas/web/flow/Pac4jWebflowConfigurer/getLogoutFlow()|",
+      "|java+method:///org/springframework/webflow/engine/DecisionState/getEntryActionList()|",
+      "|java+method:///org/springframework/webflow/engine/ActionList/add(org.springframework.webflow.execution.Action)|",
+      "|java+method:///org/springframework/webflow/engine/Flow/getState(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apereo/cas/web/flow/Pac4jWebflowConfigurer/getLogoutFlow()|",
+      "|java+method:///org/apereo/cas/web/flow/Pac4jWebflowConfigurer/getState(org.springframework.webflow.engine.Flow,java.lang.String,java.lang.Class)|",
+      "|java+method:///org/springframework/webflow/engine/ActionList/add(org.springframework.webflow.execution.Action)|",
+      "|java+method:///org/springframework/webflow/engine/DecisionState/getEntryActionList()|"
+    ],
+    "affectedLib": "org.springframework.webflow:spring-webflow:2.4.6.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-pac4j-webflow:5.2.0-RC2",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-pac4j-webflow:5.2.1",
+    "caller": "|java+method:///org/apereo/cas/web/flow/Pac4jWebflowConfigurer/createClientActionActionState(org.springframework.webflow.engine.Flow)|",
+    "called": "|java+method:///org/springframework/webflow/engine/TransitionSet/add(org.springframework.webflow.engine.Transition)|",
+    "v1Body": [
+      "|java+method:///org/apereo/cas/web/flow/Pac4jWebflowConfigurer/setStartState(org.springframework.webflow.engine.Flow,org.springframework.webflow.engine.TransitionableState)|",
+      "|java+method:///org/apereo/cas/web/flow/Pac4jWebflowConfigurer/createActionState(org.springframework.webflow.engine.Flow,java.lang.String,org.springframework.webflow.execution.Action%5B%5D)|",
+      "|java+method:///org/springframework/webflow/engine/TransitionableState/getId()|",
+      "|java+method:///org/apereo/cas/web/flow/Pac4jWebflowConfigurer/createTransition(java.lang.String,java.lang.String)|",
+      "|java+method:///org/springframework/webflow/engine/TransitionSet/add(org.springframework.webflow.engine.Transition)|",
+      "|java+method:///org/apereo/cas/web/flow/Pac4jWebflowConfigurer/getStartState(org.springframework.webflow.engine.Flow)|",
+      "|java+method:///org/apereo/cas/web/flow/Pac4jWebflowConfigurer/createEvaluateAction(java.lang.String)|",
+      "|java+method:///org/springframework/webflow/engine/ActionState/getTransitionSet()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apereo/cas/web/flow/Pac4jWebflowConfigurer/setStartState(org.springframework.webflow.engine.Flow,org.springframework.webflow.engine.TransitionableState)|",
+      "|java+method:///org/apereo/cas/web/flow/Pac4jWebflowConfigurer/createTransition(java.lang.String,java.lang.String)|",
+      "|java+method:///org/springframework/webflow/engine/TransitionSet/add(org.springframework.webflow.engine.Transition)|",
+      "|java+method:///org/apereo/cas/web/flow/Pac4jWebflowConfigurer/getStartState(org.springframework.webflow.engine.Flow)|",
+      "|java+method:///org/apereo/cas/web/flow/Pac4jWebflowConfigurer/createEvaluateAction(java.lang.String)|",
+      "|java+method:///org/springframework/webflow/engine/ActionState/getTransitionSet()|",
+      "|java+method:///org/apereo/cas/web/flow/Pac4jWebflowConfigurer/createActionState(org.springframework.webflow.engine.Flow,java.lang.String,org.springframework.webflow.execution.Action)|",
+      "|java+method:///org/springframework/webflow/engine/TransitionableState/getId()|"
+    ],
+    "affectedLib": "org.springframework.webflow:spring-webflow:2.4.6.RELEASE",
+    "change": "UPDATED"
+  }
+]

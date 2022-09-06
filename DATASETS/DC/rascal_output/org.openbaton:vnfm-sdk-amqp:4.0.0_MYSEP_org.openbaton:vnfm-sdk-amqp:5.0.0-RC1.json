@@ -1,0 +1,72 @@
+[
+  {
+    "coordinatesV1": "org.openbaton:vnfm-sdk-amqp:4.0.0",
+    "coordinatesV2": "org.openbaton:vnfm-sdk-amqp:5.0.0-RC1",
+    "caller": "|java+method:///org/openbaton/common/vnfm_sdk/amqp/AbstractVnfmSpringAmqp/register()|",
+    "called": "|java+method:///org/openbaton/registration/Registration/registerVnfmToNfvo(org.springframework.amqp.rabbit.core.RabbitTemplate,org.openbaton.catalogue.nfvo.VnfmManagerEndpoint)|",
+    "v1Body": [
+      "|java+method:///org/openbaton/common/vnfm_sdk/amqp/VnfmSpringHelperRabbit/sendMessageToQueue(java.lang.String,java.io.Serializable)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///java/lang/Runtime/getRuntime()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/openbaton/common/vnfm_sdk/amqp/VnfmSpringHelperRabbit/getRabbitTemplate()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/openbaton/common/vnfm_sdk/amqp/AbstractVnfmSpringAmqp/listenOnQueues()|",
+      "|java+method:///java/lang/InterruptedException/printStackTrace()|",
+      "|java+method:///java/util/concurrent/TimeoutException/printStackTrace()|",
+      "|java+method:///org/openbaton/registration/Registration/registerVnfmToNfvo(org.springframework.amqp.rabbit.core.RabbitTemplate,org.openbaton.catalogue.nfvo.VnfmManagerEndpoint)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Thread/sleep(long)|",
+      "|java+method:///org/openbaton/common/vnfm_sdk/amqp/VnfmSpringHelperRabbit/createQueue(java.lang.String,int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///org/springframework/context/ConfigurableApplicationContext/close()|",
+      "|java+method:///java/lang/Runtime/removeShutdownHook(java.lang.Thread)|",
+      "|java+method:///java/io/IOException/printStackTrace()|",
+      "|java+method:///java/util/Properties/getProperty(java.lang.String)|",
+      "|java+method:///java/lang/IllegalArgumentException/getMessage()|",
+      "|java+constructor:///org/openbaton/common/vnfm_sdk/amqp/AbstractVnfmSpringAmqp$1/AbstractVnfmSpringAmqp$1(org.openbaton.common.vnfm_sdk.amqp.AbstractVnfmSpringAmqp,boolean%5B%5D)|",
+      "|java+method:///java/lang/Runtime/addShutdownHook(java.lang.Thread)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|"
+    ],
+    "affectedLib": "org.openbaton:registration:5.0.0-RC1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.openbaton:vnfm-sdk-amqp:4.0.0",
+    "coordinatesV2": "org.openbaton:vnfm-sdk-amqp:5.0.0-RC1",
+    "caller": "|java+method:///org/openbaton/common/vnfm_sdk/amqp/AbstractVnfmSpringAmqp/unregister()|",
+    "called": "|java+method:///org/openbaton/registration/Registration/deregisterVnfmFromNfvo(org.springframework.amqp.rabbit.core.RabbitTemplate,org.openbaton.catalogue.nfvo.VnfmManagerEndpoint)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///com/rabbitmq/client/Connection/close()|",
+      "|java+method:///java/io/IOException/printStackTrace()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///com/rabbitmq/client/Channel/close()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/rabbitmq/client/Connection/createChannel()|",
+      "|java+method:///org/openbaton/common/vnfm_sdk/amqp/VnfmSpringHelperRabbit/sendMessageToQueue(java.lang.String,java.io.Serializable)|",
+      "|java+method:///com/rabbitmq/client/ConnectionFactory/setHost(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///com/rabbitmq/client/ConnectionFactory/ConnectionFactory()|",
+      "|java+method:///com/rabbitmq/client/ConnectionFactory/setUsername(java.lang.String)|",
+      "|java+method:///com/rabbitmq/client/ConnectionFactory/setPassword(java.lang.String)|",
+      "|java+method:///com/rabbitmq/client/Channel/basicPublish(java.lang.String,java.lang.String,com.rabbitmq.client.AMQP$BasicProperties,byte%5B%5D)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/google/gson/Gson/toJson(java.lang.Object)|",
+      "|java+method:///java/lang/String/getBytes(java.lang.String)|",
+      "|java+method:///com/rabbitmq/client/ConnectionFactory/newConnection()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Properties/getProperty(java.lang.String)|",
+      "|java+method:///org/openbaton/common/vnfm_sdk/amqp/VnfmSpringHelperRabbit/deleteQueue(java.lang.String,java.lang.String,int,java.lang.String,java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+method:///org/openbaton/registration/Registration/hasUsername()|",
+      "|java+method:///org/openbaton/registration/Registration/deregisterVnfmFromNfvo(org.springframework.amqp.rabbit.core.RabbitTemplate,org.openbaton.catalogue.nfvo.VnfmManagerEndpoint)|",
+      "|java+method:///org/openbaton/common/vnfm_sdk/amqp/VnfmSpringHelperRabbit/getRabbitTemplate()|"
+    ],
+    "affectedLib": "org.openbaton:registration:5.0.0-RC1",
+    "change": "ADDED"
+  }
+]

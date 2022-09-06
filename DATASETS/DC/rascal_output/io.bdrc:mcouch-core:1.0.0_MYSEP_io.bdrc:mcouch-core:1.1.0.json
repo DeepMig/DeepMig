@@ -1,0 +1,142 @@
+[
+  {
+    "coordinatesV1": "io.bdrc:mcouch-core:1.1.0",
+    "coordinatesV2": "io.bdrc:mcouch-core:1.0.0",
+    "caller": "|java+initializer:///mcouch/core/jackson/JSONSerializer/JSONSerializer$initializer|",
+    "called": "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.13",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "io.bdrc:mcouch-core:1.1.0",
+    "coordinatesV2": "io.bdrc:mcouch-core:1.0.0",
+    "caller": "|java+method:///mcouch/core/jackson/JSONSerializer/fromJson(java.lang.String,java.lang.Class)|",
+    "called": "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+constructor:///mcouch/core/http/MCouchException/MCouchException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/Class/getSimpleName()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///mcouch/core/http/MCouchException/MCouchException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/Class/getSimpleName()|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.13",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "io.bdrc:mcouch-core:1.1.0",
+    "coordinatesV2": "io.bdrc:mcouch-core:1.0.0",
+    "caller": "|java+constructor:///mcouch/core/jackson/BulkRequestDocSerializer/BulkRequestDocSerializer()|",
+    "called": "|java+constructor:///org/codehaus/jackson/map/JsonDeserializer/JsonDeserializer()|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/jackson/map/JsonDeserializer/JsonDeserializer()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/fasterxml/jackson/databind/JsonDeserializer/JsonDeserializer()|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.13",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "io.bdrc:mcouch-core:1.1.0",
+    "coordinatesV2": "io.bdrc:mcouch-core:1.0.0",
+    "caller": "|java+method:///mcouch/core/jackson/JSONSerializer/toJson(java.lang.Object)|",
+    "called": "|java+method:///org/codehaus/jackson/map/ObjectMapper/writeValue(java.io.Writer,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/io/StringWriter/close()|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/writeValue(java.io.Writer,java.lang.Object)|",
+      "|java+constructor:///java/io/StringWriter/StringWriter()|",
+      "|java+method:///java/io/StringWriter/toString()|",
+      "|java+constructor:///mcouch/core/http/MCouchException/MCouchException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/StringWriter/close()|",
+      "|java+constructor:///java/io/StringWriter/StringWriter()|",
+      "|java+method:///java/io/StringWriter/toString()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValue(java.io.Writer,java.lang.Object)|",
+      "|java+constructor:///mcouch/core/http/MCouchException/MCouchException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.13",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "io.bdrc:mcouch-core:1.0.0",
+    "coordinatesV2": "io.bdrc:mcouch-core:1.1.0",
+    "caller": "|java+initializer:///mcouch/core/jackson/JSONSerializer/JSONSerializer$initializer|",
+    "called": "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.8.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.bdrc:mcouch-core:1.0.0",
+    "coordinatesV2": "io.bdrc:mcouch-core:1.1.0",
+    "caller": "|java+method:///mcouch/core/jackson/JSONSerializer/fromJson(java.lang.String,java.lang.Class)|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+constructor:///mcouch/core/http/MCouchException/MCouchException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/Class/getSimpleName()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///mcouch/core/http/MCouchException/MCouchException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/Class/getSimpleName()|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.8.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.bdrc:mcouch-core:1.0.0",
+    "coordinatesV2": "io.bdrc:mcouch-core:1.1.0",
+    "caller": "|java+constructor:///mcouch/core/jackson/BulkRequestDocSerializer/BulkRequestDocSerializer()|",
+    "called": "|java+constructor:///com/fasterxml/jackson/databind/JsonDeserializer/JsonDeserializer()|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/jackson/map/JsonDeserializer/JsonDeserializer()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/fasterxml/jackson/databind/JsonDeserializer/JsonDeserializer()|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.8.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.bdrc:mcouch-core:1.0.0",
+    "coordinatesV2": "io.bdrc:mcouch-core:1.1.0",
+    "caller": "|java+method:///mcouch/core/jackson/JSONSerializer/toJson(java.lang.Object)|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValue(java.io.Writer,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/io/StringWriter/close()|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/writeValue(java.io.Writer,java.lang.Object)|",
+      "|java+constructor:///java/io/StringWriter/StringWriter()|",
+      "|java+method:///java/io/StringWriter/toString()|",
+      "|java+constructor:///mcouch/core/http/MCouchException/MCouchException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/StringWriter/close()|",
+      "|java+constructor:///java/io/StringWriter/StringWriter()|",
+      "|java+method:///java/io/StringWriter/toString()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValue(java.io.Writer,java.lang.Object)|",
+      "|java+constructor:///mcouch/core/http/MCouchException/MCouchException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.8.0",
+    "change": "ADDED"
+  }
+]

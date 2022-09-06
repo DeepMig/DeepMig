@@ -1,0 +1,160 @@
+[
+  {
+    "coordinatesV1": "org.jboss.pnc.build-agent:server:0.3",
+    "coordinatesV2": "org.jboss.pnc.build-agent:server:0.4.0",
+    "caller": "|java+method:///org/jboss/pnc/buildagent/server/Main/main(java.lang.String%5B%5D)|",
+    "called": "|java+method:///org/apache/commons/cli/Options/addOption(java.lang.String,boolean,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/commons/cli/Options/Options()|",
+      "|java+method:///org/apache/commons/cli/Options/addOption(java.lang.String,boolean,java.lang.String)|",
+      "|java+constructor:///org/apache/commons/cli/DefaultParser/DefaultParser()|",
+      "|java+method:///org/jboss/pnc/buildagent/server/BuildAgent/start(java.lang.String,int,java.lang.String,java.util.Optional,java.lang.Runnable)|",
+      "|java+method:///org/apache/commons/cli/CommandLine/hasOption(java.lang.String)|",
+      "|java+method:///java/util/Optional/of(java.lang.Object)|",
+      "|java+constructor:///org/jboss/pnc/buildagent/server/BuildAgent/BuildAgent()|",
+      "|java+method:///java/nio/file/Paths/get(java.lang.String,java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/commons/cli/HelpFormatter/printHelp(java.lang.String,org.apache.commons.cli.Options)|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+method:///org/apache/commons/cli/CommandLineParser/parse(org.apache.commons.cli.Options,java.lang.String%5B%5D)|",
+      "|java+method:///org/jboss/pnc/buildagent/server/Main/getOption(org.apache.commons.cli.CommandLine,java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/apache/commons/cli/HelpFormatter/HelpFormatter()|",
+      "|java+method:///java/util/Optional/empty()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+constructor:///org/apache/commons/cli/Options/Options()|",
+      "|java+method:///org/apache/commons/cli/Options/addOption(java.lang.String,boolean,java.lang.String)|",
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+constructor:///org/apache/commons/cli/DefaultParser/DefaultParser()|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|",
+      "|java+method:///org/apache/commons/cli/CommandLine/hasOption(java.lang.String)|",
+      "|java+constructor:///org/jboss/pnc/buildagent/server/BuildAgentServer/BuildAgentServer(java.lang.String,int,java.lang.String,java.util.Optional,java.util.Optional,org.jboss.pnc.buildagent.server.IoLoggerName%5B%5D,java.lang.Runnable)|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Optional/of(java.lang.Object)|",
+      "|java+method:///org/apache/commons/cli/HelpFormatter/printHelp(java.lang.String,org.apache.commons.cli.Options)|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+method:///org/apache/commons/cli/CommandLineParser/parse(org.apache.commons.cli.Options,java.lang.String%5B%5D)|",
+      "|java+method:///org/jboss/pnc/buildagent/server/Main/getOption(org.apache.commons.cli.CommandLine,java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/stream/Collectors/toList()|",
+      "|java+method:///java/util/List/stream()|",
+      "|java+method:///java/nio/file/Paths/get(java.lang.String,java.lang.String%5B%5D)|",
+      "|java+method:///java/util/List/toArray(java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/apache/commons/cli/HelpFormatter/HelpFormatter()|",
+      "|java+method:///java/util/Optional/empty()|"
+    ],
+    "affectedLib": "commons-cli:commons-cli:1.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jboss.pnc.build-agent:server:0.3",
+    "coordinatesV2": "org.jboss.pnc.build-agent:server:0.4.0",
+    "caller": "|java+method:///org/jboss/pnc/buildagent/server/termserver/Term/notifyStatusUpdated(org.jboss.pnc.buildagent.api.TaskStatusUpdateEvent)|",
+    "called": "|java+constructor:///org/jboss/pnc/buildagent/api/TaskStatusUpdateEvent/TaskStatusUpdateEvent(java.lang.String,org.jboss.pnc.buildagent.api.Status,org.jboss.pnc.buildagent.api.Status,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/jboss/pnc/buildagent/api/Status/isFinal()|",
+      "|java+method:///org/jboss/pnc/buildagent/api/TaskStatusUpdateEvent/getNewStatus()|",
+      "|java+method:///org/jboss/pnc/buildagent/server/termserver/Term/destroyIfInactiveAndDisconnected()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/function/Consumer/accept(java.lang.Object)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///org/jboss/pnc/buildagent/server/termserver/Term/writeCompletedToReadonlyChannel(io.termd.core.pty.Status)|",
+      "|java+method:///org/jboss/pnc/buildagent/api/TaskStatusUpdateEvent/getTaskId()|",
+      "|java+method:///org/jboss/pnc/buildagent/api/TaskStatusUpdateEvent/getContext()|",
+      "|java+method:///org/jboss/pnc/buildagent/server/termserver/StatusConverter/toTermdStatus(org.jboss.pnc.buildagent.api.Status)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Set/stream()|",
+      "|java+method:///org/jboss/pnc/buildagent/server/termserver/Term$CompleteHandler/setCompletionEventAndRun(org.jboss.pnc.buildagent.api.TaskStatusUpdateEvent)|",
+      "|java+method:///org/jboss/pnc/buildagent/api/Status/isFinal()|",
+      "|java+method:///org/jboss/pnc/buildagent/api/TaskStatusUpdateEvent/getNewStatus()|",
+      "|java+constructor:///org/jboss/pnc/buildagent/api/TaskStatusUpdateEvent/TaskStatusUpdateEvent(java.lang.String,org.jboss.pnc.buildagent.api.Status,org.jboss.pnc.buildagent.api.Status,java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/jboss/pnc/buildagent/server/termserver/Term/writeCompletedToReadonlyChannel(io.termd.core.pty.Status)|",
+      "|java+method:///org/jboss/pnc/buildagent/server/termserver/Term/notifyStatusUpdateListeners(org.jboss.pnc.buildagent.api.TaskStatusUpdateEvent)|",
+      "|java+method:///org/jboss/pnc/buildagent/api/TaskStatusUpdateEvent/getTaskId()|",
+      "|java+method:///org/jboss/pnc/buildagent/api/TaskStatusUpdateEvent/getContext()|",
+      "|java+method:///org/jboss/pnc/buildagent/server/termserver/StatusConverter/toTermdStatus(org.jboss.pnc.buildagent.api.Status)|",
+      "|java+method:///java/util/stream/Stream/filter(java.util.function.Predicate)|",
+      "|java+method:///org/jboss/pnc/buildagent/common/function/ThrowingConsumer/wrap(org.jboss.pnc.buildagent.common.function.ThrowingConsumer)|",
+      "|java+method:///org/jboss/pnc/buildagent/server/termserver/Term$CompleteHandler/reset()|",
+      "|java+method:///org/jboss/pnc/buildagent/api/TaskStatusUpdateEvent/getOldStatus()|",
+      "|java+method:///java/util/stream/Stream/forEach(java.util.function.Consumer)|"
+    ],
+    "affectedLib": "org.jboss.pnc.build-agent:api:0.4.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jboss.pnc.build-agent:server:0.3",
+    "coordinatesV2": "org.jboss.pnc.build-agent:server:0.4.0",
+    "caller": "|java+method:///org/jboss/pnc/buildagent/server/termserver/Term/initializeTtyBridge()|",
+    "called": "|java+constructor:///io/termd/core/pty/TtyBridge/TtyBridge(io.termd.core.tty.TtyConnection)|",
+    "v1Body": [
+      "|java+method:///io/termd/core/pty/TtyBridge/setProcessStdinListener(java.util.function.Consumer)|",
+      "|java+method:///io/termd/core/pty/TtyBridge/setProcessListener(java.util.function.Consumer)|",
+      "|java+method:///io/termd/core/pty/TtyBridge/readline()|",
+      "|java+method:///org/jboss/pnc/buildagent/server/termserver/Term/onTaskCreated()|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+constructor:///io/termd/core/pty/TtyBridge/TtyBridge(io.termd.core.tty.TtyConnection)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/termd/core/pty/TtyBridge/setProcessStdinListener(java.util.function.Consumer)|",
+      "|java+method:///io/termd/core/pty/TtyBridge/setProcessListener(java.util.function.Consumer)|",
+      "|java+method:///io/termd/core/pty/TtyBridge/readline()|",
+      "|java+method:///org/jboss/pnc/buildagent/server/termserver/Term/onTaskCreated()|",
+      "|java+method:///io/termd/core/pty/TtyBridge/setProcessStdoutListener(java.util.function.Consumer)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+constructor:///io/termd/core/pty/TtyBridge/TtyBridge(io.termd.core.tty.TtyConnection)|"
+    ],
+    "affectedLib": "io.termd:termd-core:1.1.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jboss.pnc.build-agent:server:0.3",
+    "coordinatesV2": "org.jboss.pnc.build-agent:server:0.4.0",
+    "caller": "|java+constructor:///org/jboss/pnc/buildagent/server/termserver/ReadOnlyWebSocketTextChannel/ReadOnlyWebSocketTextChannel(io.undertow.websockets.core.WebSocketChannel)|",
+    "called": "|java+constructor:///org/jboss/pnc/buildagent/common/StringLiner/StringLiner()|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/jboss/pnc/buildagent/common/StringLiner/StringLiner()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.jboss.pnc.build-agent:common:0.4.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jboss.pnc.build-agent:server:0.3",
+    "coordinatesV2": "org.jboss.pnc.build-agent:server:0.4.0",
+    "caller": "|java+method:///org/jboss/pnc/buildagent/server/termserver/ReadOnlyWebSocketTextChannel/writeOutput(byte%5B%5D)|",
+    "called": "|java+method:///org/jboss/pnc/buildagent/common/StringLiner/nextLine()|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D,java.nio.charset.Charset)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///io/undertow/websockets/core/WebSockets/sendText(java.lang.String,io.undertow.websockets.core.WebSocketChannel,io.undertow.websockets.core.WebSocketCallback)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String,java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/jboss/pnc/buildagent/server/termserver/ReadOnlyWebSocketTextChannel$WebSocketCallbackHandler/ReadOnlyWebSocketTextChannel$WebSocketCallbackHandler(org.jboss.pnc.buildagent.server.termserver.ReadOnlyWebSocketTextChannel$1)|",
+      "|java+method:///org/jboss/pnc/buildagent/common/StringLiner/append(java.lang.String)|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D,java.nio.charset.Charset)|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/jboss/pnc/buildagent/common/StringLiner/nextLine()|",
+      "|java+method:///io/undertow/websockets/core/WebSockets/sendText(java.lang.String,io.undertow.websockets.core.WebSocketChannel,io.undertow.websockets.core.WebSocketCallback)|"
+    ],
+    "affectedLib": "org.jboss.pnc.build-agent:common:0.4.0",
+    "change": "UPDATED"
+  }
+]

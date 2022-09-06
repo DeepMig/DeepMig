@@ -1,0 +1,202 @@
+[
+  {
+    "coordinatesV1": "org.minijax:minijax-db:0.0.33",
+    "coordinatesV2": "org.minijax:minijax-db:0.0.32",
+    "caller": "|java+method:///org/minijax/db/DefaultBaseDao/read(java.lang.Class,java.util.UUID)|",
+    "called": "|java+method:///org/apache/commons/lang3/Validate/notNull(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///javax/persistence/EntityManager/find(java.lang.Class,java.lang.Object)|",
+      "|java+method:///org/apache/commons/lang3/Validate/notNull(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/persistence/EntityManager/find(java.lang.Class,java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.7",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.minijax:minijax-db:0.0.33",
+    "coordinatesV2": "org.minijax:minijax-db:0.0.32",
+    "caller": "|java+method:///org/minijax/db/DefaultBaseDao/purge(org.minijax.db.BaseEntity)|",
+    "called": "|java+method:///org/apache/commons/lang3/Validate/notNull(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///javax/persistence/EntityManager/find(java.lang.Class,java.lang.Object)|",
+      "|java+method:///javax/persistence/EntityTransaction/begin()|",
+      "|java+method:///javax/persistence/EntityTransaction/commit()|",
+      "|java+method:///javax/persistence/EntityManager/getTransaction()|",
+      "|java+method:///org/apache/commons/lang3/Validate/notNull(java.lang.Object)|",
+      "|java+method:///org/minijax/db/BaseEntity/getId()|",
+      "|java+method:///javax/persistence/EntityManager/remove(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/persistence/EntityManager/find(java.lang.Class,java.lang.Object)|",
+      "|java+method:///javax/persistence/EntityTransaction/begin()|",
+      "|java+method:///javax/persistence/EntityTransaction/commit()|",
+      "|java+method:///javax/persistence/EntityManager/getTransaction()|",
+      "|java+method:///org/minijax/db/BaseEntity/getId()|",
+      "|java+method:///javax/persistence/EntityManager/remove(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.7",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.minijax:minijax-db:0.0.33",
+    "coordinatesV2": "org.minijax:minijax-db:0.0.32",
+    "caller": "|java+method:///org/minijax/db/DefaultNamedEntity/generateHandle()|",
+    "called": "|java+method:///org/apache/commons/lang3/RandomStringUtils/randomAlphanumeric(int)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/toLowerCase()|",
+      "|java+method:///java/lang/String/replaceAll(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang3/RandomStringUtils/randomAlphanumeric(int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/toLowerCase()|",
+      "|java+method:///java/lang/String/replaceAll(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/UUID/randomUUID()|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/UUID/toString()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.7",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.minijax:minijax-db:0.0.33",
+    "coordinatesV2": "org.minijax:minijax-db:0.0.32",
+    "caller": "|java+method:///org/minijax/db/DefaultBaseDao/delete(org.minijax.db.BaseEntity)|",
+    "called": "|java+method:///org/apache/commons/lang3/Validate/notNull(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang3/Validate/notNull(java.lang.Object)|",
+      "|java+method:///org/minijax/db/DefaultBaseDao/update(org.minijax.db.BaseEntity)|",
+      "|java+method:///org/minijax/db/BaseEntity/setDeleted(boolean)|",
+      "|java+method:///org/minijax/db/BaseEntity/getId()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/minijax/db/BaseEntity/setDeleted(boolean)|",
+      "|java+method:///org/minijax/db/DefaultBaseDao/update(org.minijax.db.BaseEntity)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.7",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.minijax:minijax-db:0.0.33",
+    "coordinatesV2": "org.minijax:minijax-db:0.0.32",
+    "caller": "|java+method:///org/minijax/db/DefaultBaseDao/create(org.minijax.db.BaseEntity)|",
+    "called": "|java+method:///org/apache/commons/lang3/Validate/notNull(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///javax/persistence/EntityTransaction/begin()|",
+      "|java+method:///org/minijax/db/BaseEntity/validate()|",
+      "|java+method:///javax/persistence/EntityTransaction/commit()|",
+      "|java+method:///javax/persistence/EntityManager/persist(java.lang.Object)|",
+      "|java+method:///javax/persistence/EntityManager/getTransaction()|",
+      "|java+method:///org/apache/commons/lang3/Validate/notNull(java.lang.Object)|",
+      "|java+method:///org/minijax/db/DefaultBaseDao/convertRollbackToConflict(javax.persistence.PersistenceException)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/persistence/EntityTransaction/begin()|",
+      "|java+method:///javax/persistence/EntityTransaction/commit()|",
+      "|java+method:///javax/persistence/EntityManager/persist(java.lang.Object)|",
+      "|java+method:///javax/persistence/EntityManager/getTransaction()|",
+      "|java+method:///org/minijax/db/DefaultBaseDao/convertRollbackToConflict(javax.persistence.PersistenceException)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.7",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.minijax:minijax-db:0.0.33",
+    "coordinatesV2": "org.minijax:minijax-db:0.0.32",
+    "caller": "|java+method:///org/minijax/db/DefaultBaseDao/readPage(java.lang.Class,int,int)|",
+    "called": "|java+method:///org/apache/commons/lang3/Validate/inclusiveBetween(long,long,long)|",
+    "v1Body": [
+      "|java+method:///javax/persistence/criteria/CriteriaQuery/select(javax.persistence.criteria.Selection)|",
+      "|java+method:///javax/persistence/TypedQuery/getResultList()|",
+      "|java+method:///javax/persistence/criteria/Root/get(java.lang.String)|",
+      "|java+method:///javax/persistence/TypedQuery/setFirstResult(int)|",
+      "|java+method:///javax/persistence/criteria/CriteriaQuery/orderBy(javax.persistence.criteria.Order%5B%5D)|",
+      "|java+method:///org/apache/commons/lang3/Validate/inclusiveBetween(long,long,long)|",
+      "|java+method:///javax/persistence/EntityManager/getCriteriaBuilder()|",
+      "|java+method:///javax/persistence/criteria/CriteriaQuery/from(java.lang.Class)|",
+      "|java+method:///javax/persistence/criteria/CriteriaBuilder/createQuery(java.lang.Class)|",
+      "|java+method:///javax/persistence/EntityManager/createQuery(javax.persistence.criteria.CriteriaQuery)|",
+      "|java+method:///javax/persistence/criteria/CriteriaBuilder/desc(javax.persistence.criteria.Expression)|",
+      "|java+method:///javax/persistence/TypedQuery/setMaxResults(int)|",
+      "|java+method:///org/apache/commons/lang3/Validate/notNull(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/persistence/criteria/CriteriaQuery/select(javax.persistence.criteria.Selection)|",
+      "|java+method:///javax/persistence/TypedQuery/getResultList()|",
+      "|java+method:///javax/persistence/criteria/Root/get(java.lang.String)|",
+      "|java+method:///javax/persistence/TypedQuery/setFirstResult(int)|",
+      "|java+method:///javax/persistence/criteria/CriteriaQuery/orderBy(javax.persistence.criteria.Order%5B%5D)|",
+      "|java+method:///javax/persistence/EntityManager/getCriteriaBuilder()|",
+      "|java+method:///javax/persistence/criteria/CriteriaQuery/from(java.lang.Class)|",
+      "|java+method:///javax/persistence/TypedQuery/setMaxResults(int)|",
+      "|java+method:///javax/persistence/criteria/CriteriaBuilder/createQuery(java.lang.Class)|",
+      "|java+method:///javax/persistence/EntityManager/createQuery(javax.persistence.criteria.CriteriaQuery)|",
+      "|java+method:///javax/persistence/criteria/CriteriaBuilder/desc(javax.persistence.criteria.Expression)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.7",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.minijax:minijax-db:0.0.33",
+    "coordinatesV2": "org.minijax:minijax-db:0.0.32",
+    "caller": "|java+method:///org/minijax/db/DefaultBaseDao/countAll(java.lang.Class)|",
+    "called": "|java+method:///org/apache/commons/lang3/Validate/notNull(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///javax/persistence/criteria/CriteriaQuery/select(javax.persistence.criteria.Selection)|",
+      "|java+method:///javax/persistence/TypedQuery/getSingleResult()|",
+      "|java+method:///javax/persistence/EntityManager/getCriteriaBuilder()|",
+      "|java+method:///javax/persistence/criteria/CriteriaQuery/from(java.lang.Class)|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///org/apache/commons/lang3/Validate/notNull(java.lang.Object)|",
+      "|java+method:///javax/persistence/criteria/CriteriaBuilder/createQuery(java.lang.Class)|",
+      "|java+method:///javax/persistence/criteria/CriteriaBuilder/count(javax.persistence.criteria.Expression)|",
+      "|java+method:///javax/persistence/EntityManager/createQuery(javax.persistence.criteria.CriteriaQuery)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/persistence/criteria/CriteriaQuery/select(javax.persistence.criteria.Selection)|",
+      "|java+method:///javax/persistence/TypedQuery/getSingleResult()|",
+      "|java+method:///javax/persistence/EntityManager/getCriteriaBuilder()|",
+      "|java+method:///javax/persistence/criteria/CriteriaQuery/from(java.lang.Class)|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///javax/persistence/criteria/CriteriaBuilder/createQuery(java.lang.Class)|",
+      "|java+method:///javax/persistence/criteria/CriteriaBuilder/count(javax.persistence.criteria.Expression)|",
+      "|java+method:///javax/persistence/EntityManager/createQuery(javax.persistence.criteria.CriteriaQuery)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.7",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.minijax:minijax-db:0.0.33",
+    "coordinatesV2": "org.minijax:minijax-db:0.0.32",
+    "caller": "|java+method:///org/minijax/db/DefaultBaseDao/update(org.minijax.db.BaseEntity)|",
+    "called": "|java+method:///org/apache/commons/lang3/Validate/notNull(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///javax/persistence/EntityTransaction/begin()|",
+      "|java+method:///org/minijax/db/BaseEntity/validate()|",
+      "|java+method:///javax/persistence/EntityTransaction/commit()|",
+      "|java+method:///javax/persistence/EntityManager/getTransaction()|",
+      "|java+method:///org/apache/commons/lang3/Validate/notNull(java.lang.Object)|",
+      "|java+method:///org/minijax/db/DefaultBaseDao/convertRollbackToConflict(javax.persistence.PersistenceException)|",
+      "|java+method:///org/minijax/db/BaseEntity/getId()|",
+      "|java+method:///javax/persistence/EntityManager/merge(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/persistence/EntityTransaction/begin()|",
+      "|java+method:///javax/persistence/EntityTransaction/commit()|",
+      "|java+method:///javax/persistence/EntityManager/getTransaction()|",
+      "|java+method:///javax/persistence/EntityManager/merge(java.lang.Object)|",
+      "|java+method:///org/minijax/db/DefaultBaseDao/convertRollbackToConflict(javax.persistence.PersistenceException)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.7",
+    "change": "REMOVED"
+  }
+]

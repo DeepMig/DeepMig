@@ -1,0 +1,19 @@
+[
+  {
+    "coordinatesV1": "org.apache.cxf:cxf-rt-transports-jms:2.2.12",
+    "coordinatesV2": "org.apache.cxf:cxf-rt-transports-jms:2.2.11",
+    "caller": "|java+method:///org/apache/cxf/transport/jms/JMSDestination/deactivate()|",
+    "called": "|java+method:///org/springframework/jms/connection/SingleConnectionFactory/destroy()|",
+    "v1Body": [
+      "|java+method:///org/springframework/jms/connection/SingleConnectionFactory/destroy()|",
+      "|java+method:///org/springframework/jms/listener/AbstractMessageListenerContainer/shutdown()|",
+      "|java+method:///org/springframework/jms/listener/AbstractMessageListenerContainer/getConnectionFactory()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/jms/listener/AbstractMessageListenerContainer/shutdown()|",
+      "|java+method:///org/apache/cxf/transport/jms/JMSConfiguration/destroyWrappedConnectionFactory()|"
+    ],
+    "affectedLib": "org.springframework:spring-jms:3.0.4.RELEASE",
+    "change": "REMOVED"
+  }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "coordinatesV1": "com.github.cb372:scalacache-caffeine_2.11:0.9.0",
+    "coordinatesV2": "com.github.cb372:scalacache-caffeine_2.11:0.8.1",
+    "caller": "|java+constructor:///scalacache/caffeine/CaffeineCache/CaffeineCache(com.github.benmanes.caffeine.cache.Cache)|",
+    "called": "|java+method:///com/typesafe/scalalogging/StrictLogging$class/$init$(com.typesafe.scalalogging.StrictLogging)|",
+    "v1Body": [
+      "|java+method:///com/typesafe/scalalogging/StrictLogging$class/$init$(com.typesafe.scalalogging.StrictLogging)|",
+      "|java+method:///scalacache/LoggingSupport$class/$init$(scalacache.LoggingSupport)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///scalacache/LoggingSupport$class/$init$(scalacache.LoggingSupport)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.typesafe.scala-logging:scala-logging_2.11:3.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.github.cb372:scalacache-caffeine_2.11:0.8.1",
+    "coordinatesV2": "com.github.cb372:scalacache-caffeine_2.11:0.9.0",
+    "caller": "|java+constructor:///scalacache/caffeine/CaffeineCache/CaffeineCache(com.github.benmanes.caffeine.cache.Cache)|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/typesafe/scalalogging/StrictLogging$class/$init$(com.typesafe.scalalogging.StrictLogging)|",
+      "|java+method:///scalacache/LoggingSupport$class/$init$(scalacache.LoggingSupport)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///scalacache/LoggingSupport$class/$init$(scalacache.LoggingSupport)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.9",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.cb372:scalacache-caffeine_2.11:0.8.1",
+    "coordinatesV2": "com.github.cb372:scalacache-caffeine_2.11:0.9.0",
+    "caller": "|java+method:///scalacache/caffeine/CaffeineCache/get(java.lang.String,scalacache.serialization.Codec)|",
+    "called": "|java+method:///scalacache/Entry/isExpired()|",
+    "v1Body": [
+      "|java+method:///scala/concurrent/Future$/successful(java.lang.Object)|",
+      "|java+method:///scala/Option/flatMap(scala.Function1)|",
+      "|java+method:///com/github/benmanes/caffeine/cache/Cache/getIfPresent(java.lang.Object)|",
+      "|java+method:///scala/Option$/apply(java.lang.Object)|",
+      "|java+method:///scalacache/caffeine/CaffeineCache/logCacheHitOrMiss(java.lang.String,scala.Option)|",
+      "|java+constructor:///scalacache/caffeine/CaffeineCache$$anonfun$1/CaffeineCache$$anonfun$1(scalacache.caffeine.CaffeineCache)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/concurrent/Future$/successful(java.lang.Object)|",
+      "|java+method:///scalacache/Entry/isExpired()|",
+      "|java+method:///com/github/benmanes/caffeine/cache/Cache/getIfPresent(java.lang.Object)|",
+      "|java+constructor:///scala/Some/Some(java.lang.Object)|",
+      "|java+method:///scalacache/caffeine/CaffeineCache/logCacheHitOrMiss(java.lang.String,scala.Option)|",
+      "|java+method:///scalacache/Entry/value()|"
+    ],
+    "affectedLib": "com.github.cb372:scalacache-core_2.11:0.9.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.github.cb372:scalacache-caffeine_2.11:0.8.1",
+    "coordinatesV2": "com.github.cb372:scalacache-caffeine_2.11:0.9.0",
+    "caller": "|java+method:///scalacache/caffeine/CaffeineCache/put(java.lang.String,java.lang.Object,scala.Option,scalacache.serialization.Codec)|",
+    "called": "|java+constructor:///scalacache/Entry/Entry(java.lang.Object,scala.Option)|",
+    "v1Body": [
+      "|java+method:///scala/concurrent/Future$/successful(java.lang.Object)|",
+      "|java+method:///com/github/benmanes/caffeine/cache/Cache/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///scala/Option/map(scala.Function1)|",
+      "|java+constructor:///scalacache/Entry/Entry(java.lang.Object,scala.Option)|",
+      "|java+method:///scalacache/caffeine/CaffeineCache/logCachePut(java.lang.String,scala.Option)|",
+      "|java+constructor:///scalacache/caffeine/CaffeineCache$$anonfun$2/CaffeineCache$$anonfun$2(scalacache.caffeine.CaffeineCache)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/concurrent/Future$/successful(java.lang.Object)|",
+      "|java+method:///com/github/benmanes/caffeine/cache/Cache/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///scala/Option/map(scala.Function1)|",
+      "|java+constructor:///scalacache/Entry/Entry(java.lang.Object,scala.Option)|",
+      "|java+method:///scalacache/caffeine/CaffeineCache/logCachePut(java.lang.String,scala.Option)|",
+      "|java+constructor:///scalacache/caffeine/CaffeineCache$$anonfun$1/CaffeineCache$$anonfun$1(scalacache.caffeine.CaffeineCache)|"
+    ],
+    "affectedLib": "com.github.cb372:scalacache-core_2.11:0.9.0",
+    "change": "UPDATED"
+  }
+]

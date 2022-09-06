@@ -1,0 +1,423 @@
+[
+  {
+    "coordinatesV1": "org.apache.flink:flink-runtime-web_2.11:1.4.0",
+    "coordinatesV2": "org.apache.flink:flink-runtime-web_2.11:1.3.3",
+    "caller": "|java+method:///org/apache/flink/runtime/webmonitor/history/HistoryServer/start()|",
+    "called": "|java+constructor:///io/netty/handler/codec/http/router/Router/Router()|",
+    "v1Body": [
+      "|java+method:///org/apache/flink/runtime/webmonitor/history/HistoryServerArchiveFetcher/start()|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.String)|",
+      "|java+constructor:///org/apache/flink/runtime/webmonitor/utils/WebFrontendBootstrap/WebFrontendBootstrap(io.netty.handler.codec.http.router.Router,org.slf4j.Logger,java.io.File,javax.net.ssl.SSLContext,java.lang.String,int,org.apache.flink.configuration.Configuration)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/File/getAbsoluteFile()|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+method:///java/io/File/toPath()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/io/File/mkdirs()|",
+      "|java+constructor:///io/netty/handler/codec/http/router/Router/Router()|",
+      "|java+method:///io/netty/handler/codec/http/router/Router/GET(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///org/apache/flink/runtime/webmonitor/history/HistoryServer/createDashboardConfigFile()|",
+      "|java+constructor:///org/apache/flink/runtime/webmonitor/history/HistoryServerStaticFileServerHandler/HistoryServerStaticFileServerHandler(java.io.File)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/nio/file/Files/createDirectories(java.nio.file.Path,java.nio.file.attribute.FileAttribute%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/io/IOException/IOException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/apache/flink/shaded/netty4/io/netty/handler/codec/http/router/Router/Router()|",
+      "|java+method:///java/io/File/getAbsoluteFile()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+method:///java/io/File/toPath()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/io/File/mkdirs()|",
+      "|java+method:///org/apache/flink/shaded/netty4/io/netty/handler/codec/http/router/Router/GET(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///org/apache/flink/runtime/webmonitor/utils/WebFrontendBootstrap/WebFrontendBootstrap(org.apache.flink.shaded.netty4.io.netty.handler.codec.http.router.Router,org.slf4j.Logger,java.io.File,javax.net.ssl.SSLContext,java.lang.String,int,org.apache.flink.configuration.Configuration)|",
+      "|java+method:///org/apache/flink/runtime/webmonitor/history/HistoryServerArchiveFetcher/start()|",
+      "|java+method:///org/apache/flink/runtime/webmonitor/history/HistoryServer/createDashboardConfigFile()|",
+      "|java+constructor:///org/apache/flink/runtime/webmonitor/history/HistoryServerStaticFileServerHandler/HistoryServerStaticFileServerHandler(java.io.File)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/nio/file/Files/createDirectories(java.nio.file.Path,java.nio.file.attribute.FileAttribute%5B%5D)|"
+    ],
+    "affectedLib": "tv.cntt:netty-router:1.10",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.flink:flink-runtime-web_2.11:1.3.3",
+    "coordinatesV2": "org.apache.flink:flink-runtime-web_2.11:1.4.0",
+    "caller": "|java+constructor:///org/apache/flink/runtime/webmonitor/HttpRequestHandler/HttpRequestHandler(java.io.File)|",
+    "called": "|java+constructor:///org/apache/flink/shaded/netty4/io/netty/channel/SimpleChannelInboundHandler/SimpleChannelInboundHandler()|",
+    "v1Body": [
+      "|java+constructor:///io/netty/channel/SimpleChannelInboundHandler/SimpleChannelInboundHandler()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/flink/shaded/netty4/io/netty/channel/SimpleChannelInboundHandler/SimpleChannelInboundHandler()|"
+    ],
+    "affectedLib": "org.apache.flink:flink-shaded-netty:4.0.27.Final-2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.flink:flink-runtime-web_2.11:1.3.3",
+    "coordinatesV2": "org.apache.flink:flink-runtime-web_2.11:1.4.0",
+    "caller": "|java+initializer:///org/apache/flink/runtime/webmonitor/HttpRequestHandler/HttpRequestHandler$initializer|",
+    "called": "|java+constructor:///org/apache/flink/shaded/netty4/io/netty/handler/codec/http/multipart/DefaultHttpDataFactory/DefaultHttpDataFactory(boolean)|",
+    "v1Body": [
+      "|java+constructor:///io/netty/handler/codec/http/multipart/DefaultHttpDataFactory/DefaultHttpDataFactory(boolean)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/flink/shaded/netty4/io/netty/handler/codec/http/multipart/DefaultHttpDataFactory/DefaultHttpDataFactory(boolean)|"
+    ],
+    "affectedLib": "org.apache.flink:flink-shaded-netty:4.0.27.Final-2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.flink:flink-runtime-web_2.11:1.3.3",
+    "coordinatesV2": "org.apache.flink:flink-runtime-web_2.11:1.4.0",
+    "caller": "|java+constructor:///org/apache/flink/runtime/webmonitor/PipelineErrorHandler/PipelineErrorHandler(org.slf4j.Logger)|",
+    "called": "|java+constructor:///org/apache/flink/shaded/netty4/io/netty/channel/SimpleChannelInboundHandler/SimpleChannelInboundHandler()|",
+    "v1Body": [
+      "|java+constructor:///io/netty/channel/SimpleChannelInboundHandler/SimpleChannelInboundHandler()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/flink/shaded/netty4/io/netty/channel/SimpleChannelInboundHandler/SimpleChannelInboundHandler()|"
+    ],
+    "affectedLib": "org.apache.flink:flink-shaded-netty:4.0.27.Final-2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.flink:flink-runtime-web_2.11:1.3.3",
+    "coordinatesV2": "org.apache.flink:flink-runtime-web_2.11:1.4.0",
+    "caller": "|java+constructor:///org/apache/flink/runtime/webmonitor/utils/WebFrontendBootstrap$1/WebFrontendBootstrap$1(org.apache.flink.runtime.webmonitor.utils.WebFrontendBootstrap,org.apache.flink.configuration.Configuration)|",
+    "called": "|java+constructor:///org/apache/flink/shaded/netty4/io/netty/channel/ChannelInitializer/ChannelInitializer()|",
+    "v1Body": [
+      "|java+constructor:///io/netty/channel/ChannelInitializer/ChannelInitializer()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/flink/shaded/netty4/io/netty/channel/ChannelInitializer/ChannelInitializer()|"
+    ],
+    "affectedLib": "org.apache.flink:flink-shaded-netty:4.0.27.Final-2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.flink:flink-runtime-web_2.11:1.3.3",
+    "coordinatesV2": "org.apache.flink:flink-runtime-web_2.11:1.4.0",
+    "caller": "|java+constructor:///org/apache/flink/runtime/webmonitor/history/HistoryServerStaticFileServerHandler/HistoryServerStaticFileServerHandler(java.io.File)|",
+    "called": "|java+constructor:///org/apache/flink/shaded/netty4/io/netty/channel/SimpleChannelInboundHandler/SimpleChannelInboundHandler()|",
+    "v1Body": [
+      "|java+method:///java/io/File/getCanonicalFile()|",
+      "|java+constructor:///io/netty/channel/SimpleChannelInboundHandler/SimpleChannelInboundHandler()|",
+      "|java+method:///org/apache/flink/util/Preconditions/checkNotNull(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/flink/shaded/netty4/io/netty/channel/SimpleChannelInboundHandler/SimpleChannelInboundHandler()|",
+      "|java+method:///java/io/File/getCanonicalFile()|",
+      "|java+method:///org/apache/flink/util/Preconditions/checkNotNull(java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.flink:flink-shaded-netty:4.0.27.Final-2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.flink:flink-runtime-web_2.11:1.3.3",
+    "coordinatesV2": "org.apache.flink:flink-runtime-web_2.11:1.4.0",
+    "caller": "|java+method:///org/apache/flink/runtime/webmonitor/history/HistoryServer/start()|",
+    "called": "|java+constructor:///org/apache/flink/shaded/netty4/io/netty/handler/codec/http/router/Router/Router()|",
+    "v1Body": [
+      "|java+method:///org/apache/flink/runtime/webmonitor/history/HistoryServerArchiveFetcher/start()|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.String)|",
+      "|java+constructor:///org/apache/flink/runtime/webmonitor/utils/WebFrontendBootstrap/WebFrontendBootstrap(io.netty.handler.codec.http.router.Router,org.slf4j.Logger,java.io.File,javax.net.ssl.SSLContext,java.lang.String,int,org.apache.flink.configuration.Configuration)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/File/getAbsoluteFile()|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+method:///java/io/File/toPath()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/io/File/mkdirs()|",
+      "|java+constructor:///io/netty/handler/codec/http/router/Router/Router()|",
+      "|java+method:///io/netty/handler/codec/http/router/Router/GET(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///org/apache/flink/runtime/webmonitor/history/HistoryServer/createDashboardConfigFile()|",
+      "|java+constructor:///org/apache/flink/runtime/webmonitor/history/HistoryServerStaticFileServerHandler/HistoryServerStaticFileServerHandler(java.io.File)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/nio/file/Files/createDirectories(java.nio.file.Path,java.nio.file.attribute.FileAttribute%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/io/IOException/IOException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/apache/flink/shaded/netty4/io/netty/handler/codec/http/router/Router/Router()|",
+      "|java+method:///java/io/File/getAbsoluteFile()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+method:///java/io/File/toPath()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/io/File/mkdirs()|",
+      "|java+method:///org/apache/flink/shaded/netty4/io/netty/handler/codec/http/router/Router/GET(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///org/apache/flink/runtime/webmonitor/utils/WebFrontendBootstrap/WebFrontendBootstrap(org.apache.flink.shaded.netty4.io.netty.handler.codec.http.router.Router,org.slf4j.Logger,java.io.File,javax.net.ssl.SSLContext,java.lang.String,int,org.apache.flink.configuration.Configuration)|",
+      "|java+method:///org/apache/flink/runtime/webmonitor/history/HistoryServerArchiveFetcher/start()|",
+      "|java+method:///org/apache/flink/runtime/webmonitor/history/HistoryServer/createDashboardConfigFile()|",
+      "|java+constructor:///org/apache/flink/runtime/webmonitor/history/HistoryServerStaticFileServerHandler/HistoryServerStaticFileServerHandler(java.io.File)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/nio/file/Files/createDirectories(java.nio.file.Path,java.nio.file.attribute.FileAttribute%5B%5D)|"
+    ],
+    "affectedLib": "org.apache.flink:flink-shaded-netty:4.0.27.Final-2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.flink:flink-runtime-web_2.11:1.3.3",
+    "coordinatesV2": "org.apache.flink:flink-runtime-web_2.11:1.4.0",
+    "caller": "|java+initializer:///org/apache/flink/runtime/webmonitor/history/HistoryServerArchiveFetcher/HistoryServerArchiveFetcher$initializer|",
+    "called": "|java+constructor:///org/apache/flink/shaded/jackson2/com/fasterxml/jackson/core/JsonFactory/JsonFactory()|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///com/fasterxml/jackson/core/JsonFactory/JsonFactory()|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///org/apache/flink/shaded/jackson2/com/fasterxml/jackson/core/JsonFactory/JsonFactory()|",
+      "|java+constructor:///org/apache/flink/shaded/jackson2/com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|"
+    ],
+    "affectedLib": "org.apache.flink:flink-shaded-jackson:2.7.9-2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.flink:flink-runtime-web_2.11:1.3.3",
+    "coordinatesV2": "org.apache.flink:flink-runtime-web_2.11:1.4.0",
+    "caller": "|java+method:///org/apache/flink/runtime/webmonitor/handlers/JarActionHandler/sendError(java.lang.Exception)|",
+    "called": "|java+method:///org/apache/flink/shaded/jackson2/com/fasterxml/jackson/core/JsonFactory/createGenerator(java.io.Writer)|",
+    "v1Body": [
+      "|java+method:///com/fasterxml/jackson/core/JsonGenerator/writeEndObject()|",
+      "|java+method:///com/fasterxml/jackson/core/JsonGenerator/writeStartObject()|",
+      "|java+method:///com/fasterxml/jackson/core/JsonGenerator/close()|",
+      "|java+method:///com/fasterxml/jackson/core/JsonGenerator/writeStringField(java.lang.String,java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/core/JsonFactory/createGenerator(java.io.Writer)|",
+      "|java+method:///org/apache/flink/util/ExceptionUtils/stringifyException(java.lang.Throwable)|",
+      "|java+constructor:///java/io/StringWriter/StringWriter()|",
+      "|java+method:///java/io/StringWriter/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/flink/shaded/jackson2/com/fasterxml/jackson/core/JsonGenerator/writeEndObject()|",
+      "|java+method:///org/apache/flink/shaded/jackson2/com/fasterxml/jackson/core/JsonGenerator/writeStringField(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/flink/shaded/jackson2/com/fasterxml/jackson/core/JsonFactory/createGenerator(java.io.Writer)|",
+      "|java+method:///org/apache/flink/util/ExceptionUtils/stringifyException(java.lang.Throwable)|",
+      "|java+constructor:///java/io/StringWriter/StringWriter()|",
+      "|java+method:///java/io/StringWriter/toString()|",
+      "|java+method:///org/apache/flink/shaded/jackson2/com/fasterxml/jackson/core/JsonGenerator/close()|",
+      "|java+method:///org/apache/flink/shaded/jackson2/com/fasterxml/jackson/core/JsonGenerator/writeStartObject()|"
+    ],
+    "affectedLib": "org.apache.flink:flink-shaded-jackson:2.7.9-2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.flink:flink-runtime-web_2.11:1.3.3",
+    "coordinatesV2": "org.apache.flink:flink-runtime-web_2.11:1.4.0",
+    "caller": "|java+method:///org/apache/flink/runtime/webmonitor/history/HistoryServerArchiveFetcher/updateJobOverview(java.io.File)|",
+    "called": "|java+method:///org/apache/flink/shaded/jackson2/com/fasterxml/jackson/databind/JsonNode/get(int)|",
+    "v1Body": [
+      "|java+method:///com/fasterxml/jackson/core/JsonGenerator/writeEndObject()|",
+      "|java+method:///com/fasterxml/jackson/core/JsonGenerator/writeArrayFieldStart(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeTree(com.fasterxml.jackson.core.JsonGenerator,com.fasterxml.jackson.databind.JsonNode)|",
+      "|java+method:///com/fasterxml/jackson/core/JsonGenerator/writeStartObject()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readTree(java.io.File)|",
+      "|java+method:///com/fasterxml/jackson/core/JsonGenerator/close()|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+method:///com/fasterxml/jackson/databind/JsonNode/get(int)|",
+      "|java+method:///com/fasterxml/jackson/core/JsonGenerator/writeEndArray()|",
+      "|java+method:///com/fasterxml/jackson/core/JsonFactory/createGenerator(java.io.Writer)|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/io/File/listFiles()|",
+      "|java+constructor:///java/io/File/File(java.io.File,java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/JsonNode/get(java.lang.String)|",
+      "|java+method:///java/io/File/getPath()|",
+      "|java+method:///org/apache/flink/runtime/webmonitor/history/HistoryServer/createOrGetFile(java.io.File,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/flink/shaded/jackson2/com/fasterxml/jackson/core/JsonGenerator/writeEndObject()|",
+      "|java+method:///org/apache/flink/shaded/jackson2/com/fasterxml/jackson/core/JsonGenerator/writeArrayFieldStart(java.lang.String)|",
+      "|java+constructor:///java/io/File/File(java.io.File,java.lang.String)|",
+      "|java+method:///org/apache/flink/shaded/jackson2/com/fasterxml/jackson/databind/JsonNode/get(java.lang.String)|",
+      "|java+method:///org/apache/flink/shaded/jackson2/com/fasterxml/jackson/databind/ObjectMapper/readTree(java.io.File)|",
+      "|java+method:///org/apache/flink/shaded/jackson2/com/fasterxml/jackson/core/JsonGenerator/writeEndArray()|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/io/File/listFiles()|",
+      "|java+method:///org/apache/flink/shaded/jackson2/com/fasterxml/jackson/core/JsonGenerator/close()|",
+      "|java+method:///org/apache/flink/shaded/jackson2/com/fasterxml/jackson/core/JsonGenerator/writeStartObject()|",
+      "|java+method:///org/apache/flink/shaded/jackson2/com/fasterxml/jackson/databind/JsonNode/get(int)|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+method:///org/apache/flink/shaded/jackson2/com/fasterxml/jackson/databind/ObjectMapper/writeTree(org.apache.flink.shaded.jackson2.com.fasterxml.jackson.core.JsonGenerator,org.apache.flink.shaded.jackson2.com.fasterxml.jackson.databind.JsonNode)|",
+      "|java+method:///org/apache/flink/shaded/jackson2/com/fasterxml/jackson/core/JsonFactory/createGenerator(java.io.Writer)|",
+      "|java+method:///java/io/File/getPath()|",
+      "|java+method:///org/apache/flink/runtime/webmonitor/history/HistoryServer/createOrGetFile(java.io.File,java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.flink:flink-shaded-jackson:2.7.9-2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.flink:flink-runtime-web_2.11:1.3.3",
+    "coordinatesV2": "org.apache.flink:flink-runtime-web_2.11:1.4.0",
+    "caller": "|java+method:///org/apache/flink/runtime/webmonitor/WebRuntimeMonitor$2/run()|",
+    "called": "|java+method:///org/apache/flink/runtime/rest/handler/legacy/backpressure/BackPressureStatsTracker/cleanUpOperatorStatsCache()|",
+    "v1Body": [
+      "|java+method:///org/apache/flink/runtime/webmonitor/BackPressureStatsTracker/cleanUpOperatorStatsCache()|",
+      "|java+method:///org/apache/flink/runtime/webmonitor/WebRuntimeMonitor/access$100(org.apache.flink.runtime.webmonitor.WebRuntimeMonitor)|",
+      "|java+method:///org/apache/flink/runtime/webmonitor/WebRuntimeMonitor/access$200()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/flink/runtime/webmonitor/WebRuntimeMonitor/access$100(org.apache.flink.runtime.webmonitor.WebRuntimeMonitor)|",
+      "|java+method:///org/apache/flink/runtime/webmonitor/WebRuntimeMonitor/access$200()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/flink/runtime/rest/handler/legacy/backpressure/BackPressureStatsTracker/cleanUpOperatorStatsCache()|"
+    ],
+    "affectedLib": "org.apache.flink:flink-runtime_2.11:1.4.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.flink:flink-runtime-web_2.11:1.3.3",
+    "coordinatesV2": "org.apache.flink:flink-runtime-web_2.11:1.4.0",
+    "caller": "|java+method:///org/apache/flink/runtime/webmonitor/WebRuntimeMonitor/getJsonArchivists()|",
+    "called": "|java+constructor:///org/apache/flink/runtime/rest/handler/legacy/SubtaskExecutionAttemptDetailsHandler$SubtaskExecutionAttemptDetailsJsonArchivist/SubtaskExecutionAttemptDetailsHandler$SubtaskExecutionAttemptDetailsJsonArchivist()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/flink/runtime/webmonitor/handlers/SubtaskExecutionAttemptDetailsHandler$SubtaskExecutionAttemptDetailsJsonArchivist/SubtaskExecutionAttemptDetailsHandler$SubtaskExecutionAttemptDetailsJsonArchivist()|",
+      "|java+constructor:///org/apache/flink/runtime/webmonitor/handlers/checkpoints/CheckpointStatsHandler$CheckpointStatsJsonArchivist/CheckpointStatsHandler$CheckpointStatsJsonArchivist()|",
+      "|java+constructor:///org/apache/flink/runtime/webmonitor/handlers/JobDetailsHandler$JobDetailsJsonArchivist/JobDetailsHandler$JobDetailsJsonArchivist()|",
+      "|java+constructor:///org/apache/flink/runtime/webmonitor/handlers/checkpoints/CheckpointStatsDetailsHandler$CheckpointStatsDetailsJsonArchivist/CheckpointStatsDetailsHandler$CheckpointStatsDetailsJsonArchivist()|",
+      "|java+constructor:///org/apache/flink/runtime/webmonitor/handlers/checkpoints/CheckpointConfigHandler$CheckpointConfigJsonArchivist/CheckpointConfigHandler$CheckpointConfigJsonArchivist()|",
+      "|java+constructor:///org/apache/flink/runtime/webmonitor/handlers/checkpoints/CheckpointStatsDetailsSubtasksHandler$CheckpointStatsDetailsSubtasksJsonArchivist/CheckpointStatsDetailsSubtasksHandler$CheckpointStatsDetailsSubtasksJsonArchivist()|",
+      "|java+constructor:///org/apache/flink/runtime/webmonitor/handlers/JobVertexDetailsHandler$JobVertexDetailsJsonArchivist/JobVertexDetailsHandler$JobVertexDetailsJsonArchivist()|",
+      "|java+constructor:///org/apache/flink/runtime/webmonitor/handlers/SubtasksAllAccumulatorsHandler$SubtasksAllAccumulatorsJsonArchivist/SubtasksAllAccumulatorsHandler$SubtasksAllAccumulatorsJsonArchivist()|",
+      "|java+constructor:///org/apache/flink/runtime/webmonitor/handlers/JobConfigHandler$JobConfigJsonArchivist/JobConfigHandler$JobConfigJsonArchivist()|",
+      "|java+constructor:///org/apache/flink/runtime/webmonitor/handlers/SubtaskExecutionAttemptAccumulatorsHandler$SubtaskExecutionAttemptAccumulatorsJsonArchivist/SubtaskExecutionAttemptAccumulatorsHandler$SubtaskExecutionAttemptAccumulatorsJsonArchivist()|",
+      "|java+constructor:///org/apache/flink/runtime/webmonitor/handlers/JobVertexTaskManagersHandler$JobVertexTaskManagersJsonArchivist/JobVertexTaskManagersHandler$JobVertexTaskManagersJsonArchivist()|",
+      "|java+constructor:///org/apache/flink/runtime/webmonitor/handlers/JobPlanHandler$JobPlanJsonArchivist/JobPlanHandler$JobPlanJsonArchivist()|",
+      "|java+constructor:///org/apache/flink/runtime/webmonitor/handlers/JobExceptionsHandler$JobExceptionsJsonArchivist/JobExceptionsHandler$JobExceptionsJsonArchivist()|",
+      "|java+constructor:///org/apache/flink/runtime/webmonitor/handlers/SubtasksTimesHandler$SubtasksTimesJsonArchivist/SubtasksTimesHandler$SubtasksTimesJsonArchivist()|",
+      "|java+constructor:///org/apache/flink/runtime/webmonitor/handlers/CurrentJobsOverviewHandler$CurrentJobsOverviewJsonArchivist/CurrentJobsOverviewHandler$CurrentJobsOverviewJsonArchivist()|",
+      "|java+constructor:///org/apache/flink/runtime/webmonitor/handlers/JobVertexAccumulatorsHandler$JobVertexAccumulatorsJsonArchivist/JobVertexAccumulatorsHandler$JobVertexAccumulatorsJsonArchivist()|",
+      "|java+constructor:///org/apache/flink/runtime/webmonitor/handlers/JobAccumulatorsHandler$JobAccumulatorsJsonArchivist/JobAccumulatorsHandler$JobAccumulatorsJsonArchivist()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/flink/runtime/rest/handler/legacy/JobDetailsHandler$JobDetailsJsonArchivist/JobDetailsHandler$JobDetailsJsonArchivist()|",
+      "|java+constructor:///org/apache/flink/runtime/rest/handler/legacy/checkpoints/CheckpointStatsDetailsHandler$CheckpointStatsDetailsJsonArchivist/CheckpointStatsDetailsHandler$CheckpointStatsDetailsJsonArchivist()|",
+      "|java+constructor:///org/apache/flink/runtime/rest/handler/legacy/checkpoints/CheckpointConfigHandler$CheckpointConfigJsonArchivist/CheckpointConfigHandler$CheckpointConfigJsonArchivist()|",
+      "|java+constructor:///org/apache/flink/runtime/rest/handler/legacy/checkpoints/CheckpointStatsDetailsSubtasksHandler$CheckpointStatsDetailsSubtasksJsonArchivist/CheckpointStatsDetailsSubtasksHandler$CheckpointStatsDetailsSubtasksJsonArchivist()|",
+      "|java+constructor:///org/apache/flink/runtime/rest/handler/legacy/JobVertexDetailsHandler$JobVertexDetailsJsonArchivist/JobVertexDetailsHandler$JobVertexDetailsJsonArchivist()|",
+      "|java+constructor:///org/apache/flink/runtime/rest/handler/legacy/SubtaskExecutionAttemptDetailsHandler$SubtaskExecutionAttemptDetailsJsonArchivist/SubtaskExecutionAttemptDetailsHandler$SubtaskExecutionAttemptDetailsJsonArchivist()|",
+      "|java+constructor:///org/apache/flink/runtime/rest/handler/legacy/checkpoints/CheckpointStatsHandler$CheckpointStatsJsonArchivist/CheckpointStatsHandler$CheckpointStatsJsonArchivist()|",
+      "|java+constructor:///org/apache/flink/runtime/rest/handler/legacy/SubtasksTimesHandler$SubtasksTimesJsonArchivist/SubtasksTimesHandler$SubtasksTimesJsonArchivist()|",
+      "|java+constructor:///org/apache/flink/runtime/rest/handler/legacy/JobConfigHandler$JobConfigJsonArchivist/JobConfigHandler$JobConfigJsonArchivist()|",
+      "|java+constructor:///org/apache/flink/runtime/rest/handler/legacy/JobExceptionsHandler$JobExceptionsJsonArchivist/JobExceptionsHandler$JobExceptionsJsonArchivist()|",
+      "|java+constructor:///org/apache/flink/runtime/rest/handler/legacy/JobAccumulatorsHandler$JobAccumulatorsJsonArchivist/JobAccumulatorsHandler$JobAccumulatorsJsonArchivist()|",
+      "|java+constructor:///org/apache/flink/runtime/rest/handler/legacy/SubtaskExecutionAttemptAccumulatorsHandler$SubtaskExecutionAttemptAccumulatorsJsonArchivist/SubtaskExecutionAttemptAccumulatorsHandler$SubtaskExecutionAttemptAccumulatorsJsonArchivist()|",
+      "|java+constructor:///org/apache/flink/runtime/rest/handler/legacy/JobPlanHandler$JobPlanJsonArchivist/JobPlanHandler$JobPlanJsonArchivist()|",
+      "|java+constructor:///org/apache/flink/runtime/rest/handler/legacy/JobVertexAccumulatorsHandler$JobVertexAccumulatorsJsonArchivist/JobVertexAccumulatorsHandler$JobVertexAccumulatorsJsonArchivist()|",
+      "|java+constructor:///org/apache/flink/runtime/rest/handler/legacy/CurrentJobsOverviewHandler$CurrentJobsOverviewJsonArchivist/CurrentJobsOverviewHandler$CurrentJobsOverviewJsonArchivist()|",
+      "|java+constructor:///org/apache/flink/runtime/rest/handler/legacy/JobVertexTaskManagersHandler$JobVertexTaskManagersJsonArchivist/JobVertexTaskManagersHandler$JobVertexTaskManagersJsonArchivist()|",
+      "|java+constructor:///org/apache/flink/runtime/rest/handler/legacy/SubtasksAllAccumulatorsHandler$SubtasksAllAccumulatorsJsonArchivist/SubtasksAllAccumulatorsHandler$SubtasksAllAccumulatorsJsonArchivist()|"
+    ],
+    "affectedLib": "org.apache.flink:flink-runtime_2.11:1.4.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.flink:flink-runtime-web_2.11:1.3.3",
+    "coordinatesV2": "org.apache.flink:flink-runtime-web_2.11:1.4.0",
+    "caller": "|java+method:///org/apache/flink/runtime/webmonitor/WebRuntimeMonitor/stop()|",
+    "called": "|java+method:///org/apache/flink/runtime/rest/handler/legacy/ExecutionGraphCache/close()|",
+    "v1Body": [
+      "|java+method:///org/apache/flink/runtime/leaderretrieval/LeaderRetrievalService/stop()|",
+      "|java+method:///org/apache/flink/runtime/webmonitor/StackTraceSampleCoordinator/shutDown()|",
+      "|java+method:///org/apache/flink/runtime/webmonitor/utils/WebFrontendBootstrap/shutdown()|",
+      "|java+method:///org/apache/flink/runtime/webmonitor/BackPressureStatsTracker/shutDown()|",
+      "|java+method:///java/util/concurrent/ExecutorService/shutdownNow()|",
+      "|java+method:///org/apache/flink/runtime/webmonitor/WebRuntimeMonitor/cleanup()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/flink/runtime/leaderretrieval/LeaderRetrievalService/stop()|",
+      "|java+method:///org/apache/flink/runtime/rest/handler/legacy/ExecutionGraphCache/close()|",
+      "|java+method:///org/apache/flink/runtime/webmonitor/utils/WebFrontendBootstrap/shutdown()|",
+      "|java+method:///java/util/concurrent/ScheduledFuture/cancel(boolean)|",
+      "|java+method:///org/apache/flink/runtime/rest/handler/legacy/backpressure/StackTraceSampleCoordinator/shutDown()|",
+      "|java+method:///org/apache/flink/runtime/webmonitor/WebRuntimeMonitor/cleanup()|",
+      "|java+method:///org/apache/flink/runtime/rest/handler/legacy/backpressure/BackPressureStatsTracker/shutDown()|"
+    ],
+    "affectedLib": "org.apache.flink:flink-runtime_2.11:1.4.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.flink:flink-runtime-web_2.11:1.3.3",
+    "coordinatesV2": "org.apache.flink:flink-runtime-web_2.11:1.4.0",
+    "caller": "|java+method:///org/apache/flink/runtime/webmonitor/history/HistoryServer/main(java.lang.String%5B%5D)|",
+    "called": "|java+constructor:///org/apache/flink/runtime/security/SecurityConfiguration/SecurityConfiguration(org.apache.flink.configuration.Configuration)|",
+    "v1Body": [
+      "|java+method:///java/lang/Throwable/printStackTrace()|",
+      "|java+method:///org/apache/flink/runtime/security/SecurityContext/runSecured(java.util.concurrent.Callable)|",
+      "|java+method:///org/apache/flink/configuration/GlobalConfiguration/loadConfiguration(java.lang.String)|",
+      "|java+method:///java/lang/Exception/printStackTrace()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/flink/runtime/security/SecurityUtils/getInstalledContext()|",
+      "|java+method:///org/apache/flink/api/java/utils/ParameterTool/fromArgs(java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/flink/api/java/utils/ParameterTool/getRequired(java.lang.String)|",
+      "|java+constructor:///org/apache/flink/runtime/security/SecurityUtils$SecurityConfiguration/SecurityUtils$SecurityConfiguration(org.apache.flink.configuration.Configuration)|",
+      "|java+method:///java/lang/System/exit(int)|",
+      "|java+method:///org/apache/flink/runtime/security/SecurityUtils/install(org.apache.flink.runtime.security.SecurityUtils$SecurityConfiguration)|",
+      "|java+constructor:///org/apache/flink/runtime/webmonitor/history/HistoryServer$1/HistoryServer$1(org.apache.flink.configuration.Configuration)|",
+      "|java+method:///java/lang/reflect/UndeclaredThrowableException/getUndeclaredThrowable()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Throwable/printStackTrace()|",
+      "|java+method:///org/apache/flink/runtime/security/SecurityContext/runSecured(java.util.concurrent.Callable)|",
+      "|java+method:///org/apache/flink/configuration/GlobalConfiguration/loadConfiguration(java.lang.String)|",
+      "|java+method:///org/apache/flink/api/java/utils/ParameterTool/getRequired(java.lang.String)|",
+      "|java+method:///java/lang/System/exit(int)|",
+      "|java+method:///java/lang/Exception/printStackTrace()|",
+      "|java+constructor:///org/apache/flink/runtime/security/SecurityConfiguration/SecurityConfiguration(org.apache.flink.configuration.Configuration)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/flink/runtime/security/SecurityUtils/getInstalledContext()|",
+      "|java+method:///org/apache/flink/api/java/utils/ParameterTool/fromArgs(java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/flink/runtime/security/SecurityUtils/install(org.apache.flink.runtime.security.SecurityConfiguration)|",
+      "|java+constructor:///org/apache/flink/runtime/webmonitor/history/HistoryServer$1/HistoryServer$1(org.apache.flink.configuration.Configuration)|",
+      "|java+method:///java/lang/reflect/UndeclaredThrowableException/getUndeclaredThrowable()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.flink:flink-runtime_2.11:1.4.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.flink:flink-runtime-web_2.11:1.3.3",
+    "coordinatesV2": "org.apache.flink:flink-runtime-web_2.11:1.4.0",
+    "caller": "|java+method:///org/apache/flink/runtime/webmonitor/history/HistoryServer/createDashboardConfigFile()|",
+    "called": "|java+method:///org/apache/flink/runtime/rest/handler/legacy/DashboardConfigHandler/createConfigJson(org.apache.flink.runtime.rest.messages.DashboardConfiguration)|",
+    "v1Body": [
+      "|java+method:///org/apache/flink/runtime/webmonitor/handlers/DashboardConfigHandler/createConfigJson(long)|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+method:///java/io/FileWriter/close()|",
+      "|java+method:///java/io/FileWriter/write(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+method:///java/io/FileWriter/flush()|",
+      "|java+method:///org/apache/flink/runtime/webmonitor/history/HistoryServer/createOrGetFile(java.io.File,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/time/ZonedDateTime/now()|",
+      "|java+method:///org/apache/flink/runtime/rest/handler/legacy/DashboardConfigHandler/createConfigJson(org.apache.flink.runtime.rest.messages.DashboardConfiguration)|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+method:///java/io/FileWriter/close()|",
+      "|java+method:///java/io/FileWriter/write(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+method:///java/io/FileWriter/flush()|",
+      "|java+method:///org/apache/flink/runtime/webmonitor/history/HistoryServer/createOrGetFile(java.io.File,java.lang.String)|",
+      "|java+method:///org/apache/flink/runtime/rest/messages/DashboardConfiguration/from(long,java.time.ZonedDateTime)|"
+    ],
+    "affectedLib": "org.apache.flink:flink-runtime_2.11:1.4.0",
+    "change": "UPDATED"
+  }
+]

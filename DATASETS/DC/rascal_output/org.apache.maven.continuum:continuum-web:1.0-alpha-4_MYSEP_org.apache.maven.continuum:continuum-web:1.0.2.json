@@ -1,0 +1,110 @@
+[
+  {
+    "coordinatesV1": "org.apache.maven.continuum:continuum-web:1.0.2",
+    "coordinatesV2": "org.apache.maven.continuum:continuum-web:1.0-alpha-4",
+    "caller": "|java+constructor:///org/apache/maven/continuum/web/pipeline/valve/LoginValve/LoginValve()|",
+    "called": "|java+constructor:///org/codehaus/plexus/summit/pipeline/valve/AbstractValve/AbstractValve()|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/plexus/summit/pipeline/valve/AbstractValve/AbstractValve()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/codehaus/plexus/security/summit/AbstractSessionValidatorValve/AbstractSessionValidatorValve()|"
+    ],
+    "affectedLib": "plexus:plexus-summit:1.0-beta-7",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.maven.continuum:continuum-web:1.0-alpha-4",
+    "coordinatesV2": "org.apache.maven.continuum:continuum-web:1.0.2",
+    "caller": "|java+method:///org/apache/maven/continuum/web/action/Login/execute(java.util.Map)|",
+    "called": "|java+method:///org/codehaus/plexus/security/summit/SecureRunData/setUser(org.codehaus.plexus.security.summit.User)|",
+    "v1Body": [
+      "|java+method:///org/codehaus/plexus/logging/AbstractLogEnabled/getLogger()|",
+      "|java+method:///org/codehaus/plexus/summit/rundata/RunData/getRequest()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///javax/servlet/http/HttpSession/setAttribute(java.lang.String,java.lang.Object)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getSession()|",
+      "|java+method:///org/codehaus/plexus/summit/rundata/RunData/setTarget(java.lang.String)|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|",
+      "|java+method:///org/codehaus/plexus/logging/Logger/info(java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuffer/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/maven/continuum/model/system/ContinuumUser/getAccountId()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/apache/maven/continuum/web/model/SessionUser/setFullName(java.lang.String)|",
+      "|java+method:///org/apache/maven/continuum/model/system/ContinuumUser/getUsername()|",
+      "|java+method:///org/apache/maven/continuum/model/system/ContinuumUser/getFullName()|",
+      "|java+constructor:///java/lang/Exception/Exception(java.lang.String)|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+method:///org/apache/maven/continuum/web/model/SessionUser/setLoggedIn(boolean)|",
+      "|java+method:///org/codehaus/plexus/logging/AbstractLogEnabled/getLogger()|",
+      "|java+method:///org/apache/maven/continuum/store/ContinuumStore/getUserByUsername(java.lang.String)|",
+      "|java+method:///org/apache/maven/continuum/model/system/ContinuumUser/equalsPassword(java.lang.String)|",
+      "|java+method:///org/codehaus/plexus/security/summit/SecureRunData/setUser(org.codehaus.plexus.security.summit.User)|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+method:///org/codehaus/plexus/summit/rundata/AbstractRunData/setTarget(java.lang.String)|",
+      "|java+method:///org/codehaus/plexus/logging/Logger/info(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|",
+      "|java+constructor:///org/apache/maven/continuum/web/model/SessionUser/SessionUser(int,java.lang.String)|"
+    ],
+    "affectedLib": "org.codehaus.plexus:plexus-security:1.0-alpha-2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.maven.continuum:continuum-web:1.0-alpha-4",
+    "coordinatesV2": "org.apache.maven.continuum:continuum-web:1.0.2",
+    "caller": "|java+constructor:///org/apache/maven/continuum/web/pipeline/valve/LoginValve/LoginValve()|",
+    "called": "|java+constructor:///org/codehaus/plexus/security/summit/AbstractSessionValidatorValve/AbstractSessionValidatorValve()|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/plexus/summit/pipeline/valve/AbstractValve/AbstractValve()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/codehaus/plexus/security/summit/AbstractSessionValidatorValve/AbstractSessionValidatorValve()|"
+    ],
+    "affectedLib": "org.codehaus.plexus:plexus-security:1.0-alpha-2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.maven.continuum:continuum-web:1.0-alpha-4",
+    "coordinatesV2": "org.apache.maven.continuum:continuum-web:1.0.2",
+    "caller": "|java+method:///org/apache/maven/continuum/web/action/Login/execute(java.util.Map)|",
+    "called": "|java+method:///org/apache/maven/continuum/model/system/ContinuumUser/equalsPassword(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/codehaus/plexus/logging/AbstractLogEnabled/getLogger()|",
+      "|java+method:///org/codehaus/plexus/summit/rundata/RunData/getRequest()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///javax/servlet/http/HttpSession/setAttribute(java.lang.String,java.lang.Object)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getSession()|",
+      "|java+method:///org/codehaus/plexus/summit/rundata/RunData/setTarget(java.lang.String)|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|",
+      "|java+method:///org/codehaus/plexus/logging/Logger/info(java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuffer/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/maven/continuum/model/system/ContinuumUser/getAccountId()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/apache/maven/continuum/web/model/SessionUser/setFullName(java.lang.String)|",
+      "|java+method:///org/apache/maven/continuum/model/system/ContinuumUser/getUsername()|",
+      "|java+method:///org/apache/maven/continuum/model/system/ContinuumUser/getFullName()|",
+      "|java+constructor:///java/lang/Exception/Exception(java.lang.String)|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+method:///org/apache/maven/continuum/web/model/SessionUser/setLoggedIn(boolean)|",
+      "|java+method:///org/codehaus/plexus/logging/AbstractLogEnabled/getLogger()|",
+      "|java+method:///org/apache/maven/continuum/store/ContinuumStore/getUserByUsername(java.lang.String)|",
+      "|java+method:///org/apache/maven/continuum/model/system/ContinuumUser/equalsPassword(java.lang.String)|",
+      "|java+method:///org/codehaus/plexus/security/summit/SecureRunData/setUser(org.codehaus.plexus.security.summit.User)|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+method:///org/codehaus/plexus/summit/rundata/AbstractRunData/setTarget(java.lang.String)|",
+      "|java+method:///org/codehaus/plexus/logging/Logger/info(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|",
+      "|java+constructor:///org/apache/maven/continuum/web/model/SessionUser/SessionUser(int,java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.maven.continuum:continuum-model:1.0.2",
+    "change": "UPDATED"
+  }
+]

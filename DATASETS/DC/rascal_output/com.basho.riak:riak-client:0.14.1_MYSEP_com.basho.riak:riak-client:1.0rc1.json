@@ -1,0 +1,676 @@
+[
+  {
+    "coordinatesV1": "com.basho.riak:riak-client:1.0rc1",
+    "coordinatesV2": "com.basho.riak:riak-client:0.14.1",
+    "caller": "|java+method:///com/basho/riak/client/util/ClientHelper/fetch(java.lang.String,java.lang.String,com.basho.riak.client.request.RequestMeta,boolean)|",
+    "called": "|java+constructor:///org/apache/commons/httpclient/methods/GetMethod/GetMethod(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///com/basho/riak/client/request/RequestMeta/RequestMeta()|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/setQueryParam(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/Integer/toString()|",
+      "|java+method:///com/basho/riak/client/util/ClientHelper/executeMethod(java.lang.String,java.lang.String,org.apache.commons.httpclient.HttpMethod,com.basho.riak.client.request.RequestMeta,boolean)|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/getQueryParam(java.lang.String)|",
+      "|java+constructor:///org/apache/commons/httpclient/methods/GetMethod/GetMethod(java.lang.String)|",
+      "|java+method:///com/basho/riak/client/util/ClientUtils/makeURI(com.basho.riak.client.RiakConfig,java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/basho/riak/client/util/ClientUtils/makeURI(com.basho.riak.client.RiakConfig,java.lang.String,java.lang.String)|",
+      "|java+constructor:///com/basho/riak/client/request/RequestMeta/RequestMeta()|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/setQueryParam(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/Integer/toString()|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/getQueryParam(java.lang.String)|",
+      "|java+method:///com/basho/riak/client/util/ClientHelper/executeMethod(java.lang.String,java.lang.String,org.apache.http.client.methods.HttpRequestBase,com.basho.riak.client.request.RequestMeta,boolean)|",
+      "|java+constructor:///org/apache/http/client/methods/HttpGet/HttpGet(java.lang.String)|"
+    ],
+    "affectedLib": "commons-httpclient:commons-httpclient:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.basho.riak:riak-client:1.0rc1",
+    "coordinatesV2": "com.basho.riak:riak-client:0.14.1",
+    "caller": "|java+method:///com/basho/riak/client/util/ClientHelper/walk(java.lang.String,java.lang.String,java.lang.String,com.basho.riak.client.request.RequestMeta)|",
+    "called": "|java+constructor:///org/apache/commons/httpclient/methods/GetMethod/GetMethod(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/commons/httpclient/methods/GetMethod/GetMethod(java.lang.String)|",
+      "|java+method:///com/basho/riak/client/util/ClientUtils/makeURI(com.basho.riak.client.RiakConfig,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///com/basho/riak/client/util/ClientHelper/executeMethod(java.lang.String,java.lang.String,org.apache.commons.httpclient.HttpMethod,com.basho.riak.client.request.RequestMeta)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/basho/riak/client/util/ClientUtils/makeURI(com.basho.riak.client.RiakConfig,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///com/basho/riak/client/util/ClientHelper/executeMethod(java.lang.String,java.lang.String,org.apache.http.client.methods.HttpRequestBase,com.basho.riak.client.request.RequestMeta)|",
+      "|java+constructor:///org/apache/http/client/methods/HttpGet/HttpGet(java.lang.String)|"
+    ],
+    "affectedLib": "commons-httpclient:commons-httpclient:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.basho.riak:riak-client:1.0rc1",
+    "coordinatesV2": "com.basho.riak:riak-client:0.14.1",
+    "caller": "|java+method:///com/basho/riak/client/RiakObject/getLastmodAsDate()|",
+    "called": "|java+method:///org/apache/commons/httpclient/util/DateUtil/parseDate(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/httpclient/util/DateUtil/parseDate(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/http/impl/cookie/DateUtils/parseDate(java.lang.String)|"
+    ],
+    "affectedLib": "commons-httpclient:commons-httpclient:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.basho.riak:riak-client:1.0rc1",
+    "coordinatesV2": "com.basho.riak:riak-client:0.14.1",
+    "caller": "|java+method:///com/basho/riak/client/util/ClientUtils/newHttpClient(com.basho.riak.client.RiakConfig)|",
+    "called": "|java+constructor:///org/apache/commons/httpclient/HttpClient/HttpClient(org.apache.commons.httpclient.HttpConnectionManager)|",
+    "v1Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///org/apache/commons/httpclient/params/HttpClientParams/setConnectionManagerTimeout(long)|",
+      "|java+method:///org/apache/commons/httpclient/HttpClient/getHttpConnectionManager()|",
+      "|java+method:///com/basho/riak/client/RiakConfig/getMaxConnections()|",
+      "|java+method:///com/basho/riak/client/RiakConfig/getHttpClient()|",
+      "|java+method:///org/apache/commons/httpclient/HttpConnectionManager/getParams()|",
+      "|java+constructor:///org/apache/commons/httpclient/MultiThreadedHttpConnectionManager/MultiThreadedHttpConnectionManager()|",
+      "|java+method:///org/apache/commons/httpclient/params/HttpConnectionManagerParams/setMaxConnectionsPerHost(org.apache.commons.httpclient.HostConfiguration,int)|",
+      "|java+method:///com/basho/riak/client/RiakConfig/getTimeout()|",
+      "|java+method:///org/apache/commons/httpclient/params/HttpConnectionManagerParams/setMaxTotalConnections(int)|",
+      "|java+method:///com/basho/riak/client/RiakConfig/getRetryHandler()|",
+      "|java+method:///org/apache/commons/httpclient/params/HttpClientParams/setParameter(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apache/commons/httpclient/params/HttpClientParams/setSoTimeout(int)|",
+      "|java+method:///org/apache/commons/httpclient/params/HttpConnectionManagerParams/setConnectionTimeout(int)|",
+      "|java+constructor:///org/apache/commons/httpclient/HttpClient/HttpClient(org.apache.commons.httpclient.HttpConnectionManager)|",
+      "|java+method:///org/apache/commons/httpclient/HttpClient/getParams()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager/setDefaultMaxPerRoute(int)|",
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+constructor:///org/apache/http/impl/client/DefaultHttpClient/DefaultHttpClient(org.apache.http.conn.ClientConnectionManager)|",
+      "|java+method:///org/apache/http/params/HttpParams/setIntParameter(java.lang.String,int)|",
+      "|java+method:///com/basho/riak/client/RiakConfig/getMaxConnections()|",
+      "|java+method:///com/basho/riak/client/RiakConfig/getTimeout()|",
+      "|java+method:///org/apache/http/client/HttpClient/getConnectionManager()|",
+      "|java+method:///com/basho/riak/client/RiakConfig/getRetryHandler()|",
+      "|java+method:///org/apache/http/impl/client/DefaultHttpClient/setHttpRequestRetryHandler(org.apache.http.client.HttpRequestRetryHandler)|",
+      "|java+constructor:///org/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager/ThreadSafeClientConnManager()|",
+      "|java+method:///org/apache/http/client/HttpClient/getParams()|",
+      "|java+method:///com/basho/riak/client/RiakConfig/getHttpClient()|",
+      "|java+method:///org/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager/setMaxTotal(int)|"
+    ],
+    "affectedLib": "commons-httpclient:commons-httpclient:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.basho.riak:riak-client:1.0rc1",
+    "coordinatesV2": "com.basho.riak:riak-client:0.14.1",
+    "caller": "|java+method:///com/basho/riak/client/util/ClientHelper/store(com.basho.riak.client.RiakObject,com.basho.riak.client.request.RequestMeta)|",
+    "called": "|java+constructor:///org/apache/commons/httpclient/methods/PutMethod/PutMethod(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/basho/riak/client/util/ClientUtils/makeURI(com.basho.riak.client.RiakConfig,java.lang.String,java.lang.String)|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/setHeader(java.lang.String,java.lang.String)|",
+      "|java+method:///com/basho/riak/client/RiakObject/getBucket()|",
+      "|java+constructor:///com/basho/riak/client/request/RequestMeta/RequestMeta()|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/getClientId()|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/getHeader(java.lang.String)|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/setClientId(java.lang.String)|",
+      "|java+constructor:///org/apache/commons/httpclient/methods/PutMethod/PutMethod(java.lang.String)|",
+      "|java+method:///com/basho/riak/client/util/ClientHelper/executeMethod(java.lang.String,java.lang.String,org.apache.commons.httpclient.HttpMethod,com.basho.riak.client.request.RequestMeta)|",
+      "|java+method:///com/basho/riak/client/RiakObject/getKey()|",
+      "|java+method:///com/basho/riak/client/RiakObject/writeToHttpMethod(org.apache.commons.httpclient.HttpMethod)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/basho/riak/client/util/ClientUtils/makeURI(com.basho.riak.client.RiakConfig,java.lang.String,java.lang.String)|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/setHeader(java.lang.String,java.lang.String)|",
+      "|java+method:///com/basho/riak/client/RiakObject/getBucket()|",
+      "|java+constructor:///com/basho/riak/client/request/RequestMeta/RequestMeta()|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/getClientId()|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/getHeader(java.lang.String)|",
+      "|java+constructor:///org/apache/http/client/methods/HttpPut/HttpPut(java.lang.String)|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/setClientId(java.lang.String)|",
+      "|java+method:///com/basho/riak/client/util/ClientHelper/executeMethod(java.lang.String,java.lang.String,org.apache.http.client.methods.HttpRequestBase,com.basho.riak.client.request.RequestMeta)|",
+      "|java+method:///com/basho/riak/client/RiakObject/getKey()|",
+      "|java+method:///com/basho/riak/client/RiakObject/writeToHttpMethod(org.apache.http.client.methods.HttpRequestBase)|"
+    ],
+    "affectedLib": "commons-httpclient:commons-httpclient:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.basho.riak:riak-client:1.0rc1",
+    "coordinatesV2": "com.basho.riak:riak-client:0.14.1",
+    "caller": "|java+method:///com/basho/riak/client/request/RequestMeta/setIfModifiedSince(java.util.Date)|",
+    "called": "|java+method:///org/apache/commons/httpclient/util/DateUtil/formatDate(java.util.Date)|",
+    "v1Body": [
+      "|java+method:///com/basho/riak/client/request/RequestMeta/setHeader(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/commons/httpclient/util/DateUtil/formatDate(java.util.Date)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/basho/riak/client/request/RequestMeta/setHeader(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/http/impl/cookie/DateUtils/formatDate(java.util.Date)|"
+    ],
+    "affectedLib": "commons-httpclient:commons-httpclient:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.basho.riak:riak-client:1.0rc1",
+    "coordinatesV2": "com.basho.riak:riak-client:0.14.1",
+    "caller": "|java+method:///com/basho/riak/client/util/ClientHelper/fetchMeta(java.lang.String,java.lang.String,com.basho.riak.client.request.RequestMeta)|",
+    "called": "|java+constructor:///org/apache/commons/httpclient/methods/HeadMethod/HeadMethod(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/basho/riak/client/util/ClientUtils/makeURI(com.basho.riak.client.RiakConfig,java.lang.String,java.lang.String)|",
+      "|java+constructor:///com/basho/riak/client/request/RequestMeta/RequestMeta()|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/setQueryParam(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/Integer/toString()|",
+      "|java+constructor:///org/apache/commons/httpclient/methods/HeadMethod/HeadMethod(java.lang.String)|",
+      "|java+method:///com/basho/riak/client/util/ClientHelper/executeMethod(java.lang.String,java.lang.String,org.apache.commons.httpclient.HttpMethod,com.basho.riak.client.request.RequestMeta)|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/getQueryParam(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/basho/riak/client/util/ClientUtils/makeURI(com.basho.riak.client.RiakConfig,java.lang.String,java.lang.String)|",
+      "|java+constructor:///com/basho/riak/client/request/RequestMeta/RequestMeta()|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/setQueryParam(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/Integer/toString()|",
+      "|java+method:///com/basho/riak/client/util/ClientHelper/executeMethod(java.lang.String,java.lang.String,org.apache.http.client.methods.HttpRequestBase,com.basho.riak.client.request.RequestMeta)|",
+      "|java+constructor:///org/apache/http/client/methods/HttpHead/HttpHead(java.lang.String)|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/getQueryParam(java.lang.String)|"
+    ],
+    "affectedLib": "commons-httpclient:commons-httpclient:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.basho.riak:riak-client:1.0rc1",
+    "coordinatesV2": "com.basho.riak:riak-client:0.14.1",
+    "caller": "|java+method:///com/basho/riak/client/request/RequestMeta/setIfUnmodifiedSince(java.util.Date)|",
+    "called": "|java+method:///org/apache/commons/httpclient/util/DateUtil/formatDate(java.util.Date)|",
+    "v1Body": [
+      "|java+method:///com/basho/riak/client/request/RequestMeta/setHeader(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/commons/httpclient/util/DateUtil/formatDate(java.util.Date)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/basho/riak/client/request/RequestMeta/setHeader(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/http/impl/cookie/DateUtils/formatDate(java.util.Date)|"
+    ],
+    "affectedLib": "commons-httpclient:commons-httpclient:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.basho.riak:riak-client:1.0rc1",
+    "coordinatesV2": "com.basho.riak:riak-client:0.14.1",
+    "caller": "|java+method:///com/basho/riak/client/util/ClientHelper/mapReduce(java.lang.String,com.basho.riak.client.request.RequestMeta)|",
+    "called": "|java+constructor:///org/apache/commons/httpclient/methods/StringRequestEntity/StringRequestEntity(java.lang.String,java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/basho/riak/client/RiakConfig/getMapReduceUrl()|",
+      "|java+constructor:///org/apache/commons/httpclient/methods/StringRequestEntity/StringRequestEntity(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///com/basho/riak/client/util/ClientHelper/executeMethod(java.lang.String,java.lang.String,org.apache.commons.httpclient.HttpMethod,com.basho.riak.client.request.RequestMeta)|",
+      "|java+method:///org/apache/commons/httpclient/methods/PostMethod/setRequestEntity(org.apache.commons.httpclient.methods.RequestEntity)|",
+      "|java+constructor:///org/apache/commons/httpclient/methods/PostMethod/PostMethod(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/basho/riak/client/RiakConfig/getMapReduceUrl()|",
+      "|java+method:///org/apache/http/client/methods/HttpPost/setEntity(org.apache.http.HttpEntity)|",
+      "|java+constructor:///org/apache/http/entity/StringEntity/StringEntity(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/apache/http/client/methods/HttpPost/HttpPost(java.lang.String)|",
+      "|java+method:///com/basho/riak/client/util/ClientHelper/executeMethod(java.lang.String,java.lang.String,org.apache.http.client.methods.HttpRequestBase,com.basho.riak.client.request.RequestMeta)|",
+      "|java+method:///java/nio/charset/Charset/name()|"
+    ],
+    "affectedLib": "commons-httpclient:commons-httpclient:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.basho.riak:riak-client:1.0rc1",
+    "coordinatesV2": "com.basho.riak:riak-client:0.14.1",
+    "caller": "|java+method:///com/basho/riak/client/util/ClientHelper/listBucket(java.lang.String,com.basho.riak.client.request.RequestMeta,boolean)|",
+    "called": "|java+constructor:///org/apache/commons/httpclient/methods/GetMethod/GetMethod(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/commons/httpclient/methods/GetMethod/GetMethod(java.lang.String)|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/setHeader(java.lang.String,java.lang.String)|",
+      "|java+constructor:///com/basho/riak/client/request/RequestMeta/RequestMeta()|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/getHeader(java.lang.String)|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/setQueryParam(java.lang.String,java.lang.String)|",
+      "|java+method:///com/basho/riak/client/util/ClientUtils/makeURI(com.basho.riak.client.RiakConfig,java.lang.String)|",
+      "|java+method:///com/basho/riak/client/util/ClientHelper/executeMethod(java.lang.String,java.lang.String,org.apache.commons.httpclient.HttpMethod,com.basho.riak.client.request.RequestMeta,boolean)|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/getQueryParam(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/basho/riak/client/request/RequestMeta/setHeader(java.lang.String,java.lang.String)|",
+      "|java+constructor:///com/basho/riak/client/request/RequestMeta/RequestMeta()|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/getHeader(java.lang.String)|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/setQueryParam(java.lang.String,java.lang.String)|",
+      "|java+method:///com/basho/riak/client/util/ClientUtils/makeURI(com.basho.riak.client.RiakConfig,java.lang.String)|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/getQueryParam(java.lang.String)|",
+      "|java+method:///com/basho/riak/client/util/ClientHelper/executeMethod(java.lang.String,java.lang.String,org.apache.http.client.methods.HttpRequestBase,com.basho.riak.client.request.RequestMeta,boolean)|",
+      "|java+constructor:///org/apache/http/client/methods/HttpGet/HttpGet(java.lang.String)|"
+    ],
+    "affectedLib": "commons-httpclient:commons-httpclient:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.basho.riak:riak-client:1.0rc1",
+    "coordinatesV2": "com.basho.riak:riak-client:0.14.1",
+    "caller": "|java+method:///com/basho/riak/client/util/ClientHelper/stream(java.lang.String,java.lang.String,com.basho.riak.client.response.StreamHandler,com.basho.riak.client.request.RequestMeta)|",
+    "called": "|java+method:///org/apache/commons/httpclient/HttpClient/executeMethod(org.apache.commons.httpclient.HttpMethod)|",
+    "v1Body": [
+      "|java+constructor:///com/basho/riak/client/request/RequestMeta/RequestMeta()|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/setQueryParam(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/commons/httpclient/methods/GetMethod/releaseConnection()|",
+      "|java+method:///org/apache/commons/httpclient/methods/GetMethod/getResponseBodyAsStream()|",
+      "|java+method:///com/basho/riak/client/response/StreamHandler/process(java.lang.String,java.lang.String,int,java.util.Map,java.io.InputStream,org.apache.commons.httpclient.HttpMethod)|",
+      "|java+method:///org/apache/commons/httpclient/methods/GetMethod/getResponseHeaders()|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/getQueryParam(java.lang.String)|",
+      "|java+constructor:///org/apache/commons/httpclient/methods/GetMethod/GetMethod(java.lang.String)|",
+      "|java+method:///com/basho/riak/client/util/ClientUtils/makeURI(com.basho.riak.client.RiakConfig,java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/commons/httpclient/HttpClient/executeMethod(org.apache.commons.httpclient.HttpMethod)|",
+      "|java+method:///com/basho/riak/client/util/ClientUtils/asHeaderMap(org.apache.commons.httpclient.Header%5B%5D)|",
+      "|java+method:///java/lang/Integer/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/http/HttpResponse/getAllHeaders()|",
+      "|java+method:///java/lang/Integer/toString()|",
+      "|java+method:///org/apache/http/HttpEntity/getContent()|",
+      "|java+method:///org/apache/http/StatusLine/getStatusCode()|",
+      "|java+method:///com/basho/riak/client/util/ClientUtils/asHeaderMap(org.apache.http.Header%5B%5D)|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/getQueryParam(java.lang.String)|",
+      "|java+method:///org/apache/http/HttpResponse/getStatusLine()|",
+      "|java+method:///com/basho/riak/client/util/ClientUtils/makeURI(com.basho.riak.client.RiakConfig,java.lang.String,java.lang.String)|",
+      "|java+constructor:///com/basho/riak/client/request/RequestMeta/RequestMeta()|",
+      "|java+method:///org/apache/http/client/HttpClient/execute(org.apache.http.client.methods.HttpUriRequest)|",
+      "|java+method:///com/basho/riak/client/response/StreamHandler/process(java.lang.String,java.lang.String,int,java.util.Map,java.io.InputStream,org.apache.http.HttpResponse)|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/setQueryParam(java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/apache/http/client/methods/HttpGet/HttpGet(java.lang.String)|",
+      "|java+method:///org/apache/http/client/methods/HttpGet/abort()|",
+      "|java+method:///org/apache/http/util/EntityUtils/consume(org.apache.http.HttpEntity)|",
+      "|java+method:///org/apache/http/HttpResponse/getEntity()|"
+    ],
+    "affectedLib": "commons-httpclient:commons-httpclient:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.basho.riak:riak-client:1.0rc1",
+    "coordinatesV2": "com.basho.riak:riak-client:0.14.1",
+    "caller": "|java+method:///com/basho/riak/client/util/ClientHelper/delete(java.lang.String,java.lang.String,com.basho.riak.client.request.RequestMeta)|",
+    "called": "|java+constructor:///org/apache/commons/httpclient/methods/DeleteMethod/DeleteMethod(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/basho/riak/client/util/ClientUtils/makeURI(com.basho.riak.client.RiakConfig,java.lang.String,java.lang.String)|",
+      "|java+constructor:///com/basho/riak/client/request/RequestMeta/RequestMeta()|",
+      "|java+constructor:///org/apache/commons/httpclient/methods/DeleteMethod/DeleteMethod(java.lang.String)|",
+      "|java+method:///com/basho/riak/client/util/ClientHelper/executeMethod(java.lang.String,java.lang.String,org.apache.commons.httpclient.HttpMethod,com.basho.riak.client.request.RequestMeta)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/basho/riak/client/util/ClientUtils/makeURI(com.basho.riak.client.RiakConfig,java.lang.String,java.lang.String)|",
+      "|java+constructor:///com/basho/riak/client/request/RequestMeta/RequestMeta()|",
+      "|java+method:///com/basho/riak/client/util/ClientHelper/executeMethod(java.lang.String,java.lang.String,org.apache.http.client.methods.HttpRequestBase,com.basho.riak.client.request.RequestMeta)|",
+      "|java+constructor:///org/apache/http/client/methods/HttpDelete/HttpDelete(java.lang.String)|"
+    ],
+    "affectedLib": "commons-httpclient:commons-httpclient:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.basho.riak:riak-client:1.0rc1",
+    "coordinatesV2": "com.basho.riak:riak-client:0.14.1",
+    "caller": "|java+method:///com/basho/riak/client/util/ClientHelper/setBucketSchema(java.lang.String,org.json.JSONObject,com.basho.riak.client.request.RequestMeta)|",
+    "called": "|java+constructor:///org/apache/commons/httpclient/methods/ByteArrayRequestEntity/ByteArrayRequestEntity(byte%5B%5D,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/basho/riak/client/request/RequestMeta/setHeader(java.lang.String,java.lang.String)|",
+      "|java+constructor:///com/basho/riak/client/request/RequestMeta/RequestMeta()|",
+      "|java+method:///org/apache/commons/httpclient/methods/PutMethod/setRequestEntity(org.apache.commons.httpclient.methods.RequestEntity)|",
+      "|java+method:///org/json/JSONObject/toString()|",
+      "|java+constructor:///org/apache/commons/httpclient/methods/PutMethod/PutMethod(java.lang.String)|",
+      "|java+method:///com/basho/riak/client/util/ClientHelper/executeMethod(java.lang.String,java.lang.String,org.apache.commons.httpclient.HttpMethod,com.basho.riak.client.request.RequestMeta)|",
+      "|java+constructor:///org/apache/commons/httpclient/methods/ByteArrayRequestEntity/ByteArrayRequestEntity(byte%5B%5D,java.lang.String)|",
+      "|java+method:///java/lang/String/getBytes()|",
+      "|java+method:///com/basho/riak/client/util/ClientUtils/makeURI(com.basho.riak.client.RiakConfig,java.lang.String)|",
+      "|java+constructor:///org/json/JSONObject/JSONObject()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/basho/riak/client/request/RequestMeta/setHeader(java.lang.String,java.lang.String)|",
+      "|java+constructor:///com/basho/riak/client/request/RequestMeta/RequestMeta()|",
+      "|java+constructor:///org/apache/http/client/methods/HttpPut/HttpPut(java.lang.String)|",
+      "|java+method:///org/apache/http/client/methods/HttpPut/setEntity(org.apache.http.HttpEntity)|",
+      "|java+method:///com/basho/riak/client/util/CharsetUtils/utf8StringToBytes(java.lang.String)|",
+      "|java+method:///org/json/JSONObject/toString()|",
+      "|java+method:///org/apache/http/entity/ByteArrayEntity/setContentType(java.lang.String)|",
+      "|java+method:///com/basho/riak/client/util/ClientUtils/makeURI(com.basho.riak.client.RiakConfig,java.lang.String)|",
+      "|java+constructor:///org/json/JSONObject/JSONObject()|",
+      "|java+method:///com/basho/riak/client/util/ClientHelper/executeMethod(java.lang.String,java.lang.String,org.apache.http.client.methods.HttpRequestBase,com.basho.riak.client.request.RequestMeta)|",
+      "|java+constructor:///org/apache/http/entity/ByteArrayEntity/ByteArrayEntity(byte%5B%5D)|"
+    ],
+    "affectedLib": "commons-httpclient:commons-httpclient:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.basho.riak:riak-client:0.14.1",
+    "coordinatesV2": "com.basho.riak:riak-client:1.0rc1",
+    "caller": "|java+method:///com/basho/riak/client/util/ClientHelper/walk(java.lang.String,java.lang.String,java.lang.String,com.basho.riak.client.request.RequestMeta)|",
+    "called": "|java+constructor:///org/apache/http/client/methods/HttpGet/HttpGet(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/commons/httpclient/methods/GetMethod/GetMethod(java.lang.String)|",
+      "|java+method:///com/basho/riak/client/util/ClientUtils/makeURI(com.basho.riak.client.RiakConfig,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///com/basho/riak/client/util/ClientHelper/executeMethod(java.lang.String,java.lang.String,org.apache.commons.httpclient.HttpMethod,com.basho.riak.client.request.RequestMeta)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/basho/riak/client/util/ClientUtils/makeURI(com.basho.riak.client.RiakConfig,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///com/basho/riak/client/util/ClientHelper/executeMethod(java.lang.String,java.lang.String,org.apache.http.client.methods.HttpRequestBase,com.basho.riak.client.request.RequestMeta)|",
+      "|java+constructor:///org/apache/http/client/methods/HttpGet/HttpGet(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.1.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.basho.riak:riak-client:0.14.1",
+    "coordinatesV2": "com.basho.riak:riak-client:1.0rc1",
+    "caller": "|java+method:///com/basho/riak/client/RiakObject/getLastmodAsDate()|",
+    "called": "|java+method:///org/apache/http/impl/cookie/DateUtils/parseDate(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/httpclient/util/DateUtil/parseDate(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/http/impl/cookie/DateUtils/parseDate(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.1.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.basho.riak:riak-client:0.14.1",
+    "coordinatesV2": "com.basho.riak:riak-client:1.0rc1",
+    "caller": "|java+method:///com/basho/riak/client/request/RequestMeta/setIfModifiedSince(java.util.Date)|",
+    "called": "|java+method:///org/apache/http/impl/cookie/DateUtils/formatDate(java.util.Date)|",
+    "v1Body": [
+      "|java+method:///com/basho/riak/client/request/RequestMeta/setHeader(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/commons/httpclient/util/DateUtil/formatDate(java.util.Date)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/basho/riak/client/request/RequestMeta/setHeader(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/http/impl/cookie/DateUtils/formatDate(java.util.Date)|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.1.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.basho.riak:riak-client:0.14.1",
+    "coordinatesV2": "com.basho.riak:riak-client:1.0rc1",
+    "caller": "|java+method:///com/basho/riak/client/util/ClientHelper/fetch(java.lang.String,java.lang.String,com.basho.riak.client.request.RequestMeta,boolean)|",
+    "called": "|java+constructor:///org/apache/http/client/methods/HttpGet/HttpGet(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///com/basho/riak/client/request/RequestMeta/RequestMeta()|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/setQueryParam(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/Integer/toString()|",
+      "|java+method:///com/basho/riak/client/util/ClientHelper/executeMethod(java.lang.String,java.lang.String,org.apache.commons.httpclient.HttpMethod,com.basho.riak.client.request.RequestMeta,boolean)|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/getQueryParam(java.lang.String)|",
+      "|java+constructor:///org/apache/commons/httpclient/methods/GetMethod/GetMethod(java.lang.String)|",
+      "|java+method:///com/basho/riak/client/util/ClientUtils/makeURI(com.basho.riak.client.RiakConfig,java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/basho/riak/client/util/ClientUtils/makeURI(com.basho.riak.client.RiakConfig,java.lang.String,java.lang.String)|",
+      "|java+constructor:///com/basho/riak/client/request/RequestMeta/RequestMeta()|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/setQueryParam(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/Integer/toString()|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/getQueryParam(java.lang.String)|",
+      "|java+method:///com/basho/riak/client/util/ClientHelper/executeMethod(java.lang.String,java.lang.String,org.apache.http.client.methods.HttpRequestBase,com.basho.riak.client.request.RequestMeta,boolean)|",
+      "|java+constructor:///org/apache/http/client/methods/HttpGet/HttpGet(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.1.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.basho.riak:riak-client:0.14.1",
+    "coordinatesV2": "com.basho.riak:riak-client:1.0rc1",
+    "caller": "|java+method:///com/basho/riak/client/util/ClientUtils/newHttpClient(com.basho.riak.client.RiakConfig)|",
+    "called": "|java+constructor:///org/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager/ThreadSafeClientConnManager()|",
+    "v1Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///org/apache/commons/httpclient/params/HttpClientParams/setConnectionManagerTimeout(long)|",
+      "|java+method:///org/apache/commons/httpclient/HttpClient/getHttpConnectionManager()|",
+      "|java+method:///com/basho/riak/client/RiakConfig/getMaxConnections()|",
+      "|java+method:///com/basho/riak/client/RiakConfig/getHttpClient()|",
+      "|java+method:///org/apache/commons/httpclient/HttpConnectionManager/getParams()|",
+      "|java+constructor:///org/apache/commons/httpclient/MultiThreadedHttpConnectionManager/MultiThreadedHttpConnectionManager()|",
+      "|java+method:///org/apache/commons/httpclient/params/HttpConnectionManagerParams/setMaxConnectionsPerHost(org.apache.commons.httpclient.HostConfiguration,int)|",
+      "|java+method:///com/basho/riak/client/RiakConfig/getTimeout()|",
+      "|java+method:///org/apache/commons/httpclient/params/HttpConnectionManagerParams/setMaxTotalConnections(int)|",
+      "|java+method:///com/basho/riak/client/RiakConfig/getRetryHandler()|",
+      "|java+method:///org/apache/commons/httpclient/params/HttpClientParams/setParameter(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apache/commons/httpclient/params/HttpClientParams/setSoTimeout(int)|",
+      "|java+method:///org/apache/commons/httpclient/params/HttpConnectionManagerParams/setConnectionTimeout(int)|",
+      "|java+constructor:///org/apache/commons/httpclient/HttpClient/HttpClient(org.apache.commons.httpclient.HttpConnectionManager)|",
+      "|java+method:///org/apache/commons/httpclient/HttpClient/getParams()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager/setDefaultMaxPerRoute(int)|",
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+constructor:///org/apache/http/impl/client/DefaultHttpClient/DefaultHttpClient(org.apache.http.conn.ClientConnectionManager)|",
+      "|java+method:///org/apache/http/params/HttpParams/setIntParameter(java.lang.String,int)|",
+      "|java+method:///com/basho/riak/client/RiakConfig/getMaxConnections()|",
+      "|java+method:///com/basho/riak/client/RiakConfig/getTimeout()|",
+      "|java+method:///org/apache/http/client/HttpClient/getConnectionManager()|",
+      "|java+method:///com/basho/riak/client/RiakConfig/getRetryHandler()|",
+      "|java+method:///org/apache/http/impl/client/DefaultHttpClient/setHttpRequestRetryHandler(org.apache.http.client.HttpRequestRetryHandler)|",
+      "|java+constructor:///org/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager/ThreadSafeClientConnManager()|",
+      "|java+method:///org/apache/http/client/HttpClient/getParams()|",
+      "|java+method:///com/basho/riak/client/RiakConfig/getHttpClient()|",
+      "|java+method:///org/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager/setMaxTotal(int)|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.1.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.basho.riak:riak-client:0.14.1",
+    "coordinatesV2": "com.basho.riak:riak-client:1.0rc1",
+    "caller": "|java+method:///com/basho/riak/client/util/ClientHelper/store(com.basho.riak.client.RiakObject,com.basho.riak.client.request.RequestMeta)|",
+    "called": "|java+constructor:///org/apache/http/client/methods/HttpPut/HttpPut(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/basho/riak/client/util/ClientUtils/makeURI(com.basho.riak.client.RiakConfig,java.lang.String,java.lang.String)|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/setHeader(java.lang.String,java.lang.String)|",
+      "|java+method:///com/basho/riak/client/RiakObject/getBucket()|",
+      "|java+constructor:///com/basho/riak/client/request/RequestMeta/RequestMeta()|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/getClientId()|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/getHeader(java.lang.String)|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/setClientId(java.lang.String)|",
+      "|java+constructor:///org/apache/commons/httpclient/methods/PutMethod/PutMethod(java.lang.String)|",
+      "|java+method:///com/basho/riak/client/util/ClientHelper/executeMethod(java.lang.String,java.lang.String,org.apache.commons.httpclient.HttpMethod,com.basho.riak.client.request.RequestMeta)|",
+      "|java+method:///com/basho/riak/client/RiakObject/getKey()|",
+      "|java+method:///com/basho/riak/client/RiakObject/writeToHttpMethod(org.apache.commons.httpclient.HttpMethod)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/basho/riak/client/util/ClientUtils/makeURI(com.basho.riak.client.RiakConfig,java.lang.String,java.lang.String)|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/setHeader(java.lang.String,java.lang.String)|",
+      "|java+method:///com/basho/riak/client/RiakObject/getBucket()|",
+      "|java+constructor:///com/basho/riak/client/request/RequestMeta/RequestMeta()|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/getClientId()|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/getHeader(java.lang.String)|",
+      "|java+constructor:///org/apache/http/client/methods/HttpPut/HttpPut(java.lang.String)|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/setClientId(java.lang.String)|",
+      "|java+method:///com/basho/riak/client/util/ClientHelper/executeMethod(java.lang.String,java.lang.String,org.apache.http.client.methods.HttpRequestBase,com.basho.riak.client.request.RequestMeta)|",
+      "|java+method:///com/basho/riak/client/RiakObject/getKey()|",
+      "|java+method:///com/basho/riak/client/RiakObject/writeToHttpMethod(org.apache.http.client.methods.HttpRequestBase)|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.1.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.basho.riak:riak-client:0.14.1",
+    "coordinatesV2": "com.basho.riak:riak-client:1.0rc1",
+    "caller": "|java+method:///com/basho/riak/client/util/ClientHelper/fetchMeta(java.lang.String,java.lang.String,com.basho.riak.client.request.RequestMeta)|",
+    "called": "|java+constructor:///org/apache/http/client/methods/HttpHead/HttpHead(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/basho/riak/client/util/ClientUtils/makeURI(com.basho.riak.client.RiakConfig,java.lang.String,java.lang.String)|",
+      "|java+constructor:///com/basho/riak/client/request/RequestMeta/RequestMeta()|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/setQueryParam(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/Integer/toString()|",
+      "|java+constructor:///org/apache/commons/httpclient/methods/HeadMethod/HeadMethod(java.lang.String)|",
+      "|java+method:///com/basho/riak/client/util/ClientHelper/executeMethod(java.lang.String,java.lang.String,org.apache.commons.httpclient.HttpMethod,com.basho.riak.client.request.RequestMeta)|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/getQueryParam(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/basho/riak/client/util/ClientUtils/makeURI(com.basho.riak.client.RiakConfig,java.lang.String,java.lang.String)|",
+      "|java+constructor:///com/basho/riak/client/request/RequestMeta/RequestMeta()|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/setQueryParam(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/Integer/toString()|",
+      "|java+method:///com/basho/riak/client/util/ClientHelper/executeMethod(java.lang.String,java.lang.String,org.apache.http.client.methods.HttpRequestBase,com.basho.riak.client.request.RequestMeta)|",
+      "|java+constructor:///org/apache/http/client/methods/HttpHead/HttpHead(java.lang.String)|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/getQueryParam(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.1.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.basho.riak:riak-client:0.14.1",
+    "coordinatesV2": "com.basho.riak:riak-client:1.0rc1",
+    "caller": "|java+method:///com/basho/riak/client/request/RequestMeta/setIfUnmodifiedSince(java.util.Date)|",
+    "called": "|java+method:///org/apache/http/impl/cookie/DateUtils/formatDate(java.util.Date)|",
+    "v1Body": [
+      "|java+method:///com/basho/riak/client/request/RequestMeta/setHeader(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/commons/httpclient/util/DateUtil/formatDate(java.util.Date)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/basho/riak/client/request/RequestMeta/setHeader(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/http/impl/cookie/DateUtils/formatDate(java.util.Date)|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.1.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.basho.riak:riak-client:0.14.1",
+    "coordinatesV2": "com.basho.riak:riak-client:1.0rc1",
+    "caller": "|java+method:///com/basho/riak/client/util/ClientHelper/mapReduce(java.lang.String,com.basho.riak.client.request.RequestMeta)|",
+    "called": "|java+constructor:///org/apache/http/client/methods/HttpPost/HttpPost(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/basho/riak/client/RiakConfig/getMapReduceUrl()|",
+      "|java+constructor:///org/apache/commons/httpclient/methods/StringRequestEntity/StringRequestEntity(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///com/basho/riak/client/util/ClientHelper/executeMethod(java.lang.String,java.lang.String,org.apache.commons.httpclient.HttpMethod,com.basho.riak.client.request.RequestMeta)|",
+      "|java+method:///org/apache/commons/httpclient/methods/PostMethod/setRequestEntity(org.apache.commons.httpclient.methods.RequestEntity)|",
+      "|java+constructor:///org/apache/commons/httpclient/methods/PostMethod/PostMethod(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/basho/riak/client/RiakConfig/getMapReduceUrl()|",
+      "|java+method:///org/apache/http/client/methods/HttpPost/setEntity(org.apache.http.HttpEntity)|",
+      "|java+constructor:///org/apache/http/entity/StringEntity/StringEntity(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/apache/http/client/methods/HttpPost/HttpPost(java.lang.String)|",
+      "|java+method:///com/basho/riak/client/util/ClientHelper/executeMethod(java.lang.String,java.lang.String,org.apache.http.client.methods.HttpRequestBase,com.basho.riak.client.request.RequestMeta)|",
+      "|java+method:///java/nio/charset/Charset/name()|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.1.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.basho.riak:riak-client:0.14.1",
+    "coordinatesV2": "com.basho.riak:riak-client:1.0rc1",
+    "caller": "|java+method:///com/basho/riak/client/util/ClientHelper/listBucket(java.lang.String,com.basho.riak.client.request.RequestMeta,boolean)|",
+    "called": "|java+constructor:///org/apache/http/client/methods/HttpGet/HttpGet(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/commons/httpclient/methods/GetMethod/GetMethod(java.lang.String)|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/setHeader(java.lang.String,java.lang.String)|",
+      "|java+constructor:///com/basho/riak/client/request/RequestMeta/RequestMeta()|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/getHeader(java.lang.String)|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/setQueryParam(java.lang.String,java.lang.String)|",
+      "|java+method:///com/basho/riak/client/util/ClientUtils/makeURI(com.basho.riak.client.RiakConfig,java.lang.String)|",
+      "|java+method:///com/basho/riak/client/util/ClientHelper/executeMethod(java.lang.String,java.lang.String,org.apache.commons.httpclient.HttpMethod,com.basho.riak.client.request.RequestMeta,boolean)|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/getQueryParam(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/basho/riak/client/request/RequestMeta/setHeader(java.lang.String,java.lang.String)|",
+      "|java+constructor:///com/basho/riak/client/request/RequestMeta/RequestMeta()|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/getHeader(java.lang.String)|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/setQueryParam(java.lang.String,java.lang.String)|",
+      "|java+method:///com/basho/riak/client/util/ClientUtils/makeURI(com.basho.riak.client.RiakConfig,java.lang.String)|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/getQueryParam(java.lang.String)|",
+      "|java+method:///com/basho/riak/client/util/ClientHelper/executeMethod(java.lang.String,java.lang.String,org.apache.http.client.methods.HttpRequestBase,com.basho.riak.client.request.RequestMeta,boolean)|",
+      "|java+constructor:///org/apache/http/client/methods/HttpGet/HttpGet(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.1.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.basho.riak:riak-client:0.14.1",
+    "coordinatesV2": "com.basho.riak:riak-client:1.0rc1",
+    "caller": "|java+method:///com/basho/riak/client/util/ClientHelper/stream(java.lang.String,java.lang.String,com.basho.riak.client.response.StreamHandler,com.basho.riak.client.request.RequestMeta)|",
+    "called": "|java+constructor:///org/apache/http/client/methods/HttpGet/HttpGet(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///com/basho/riak/client/request/RequestMeta/RequestMeta()|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/setQueryParam(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/commons/httpclient/methods/GetMethod/releaseConnection()|",
+      "|java+method:///org/apache/commons/httpclient/methods/GetMethod/getResponseBodyAsStream()|",
+      "|java+method:///com/basho/riak/client/response/StreamHandler/process(java.lang.String,java.lang.String,int,java.util.Map,java.io.InputStream,org.apache.commons.httpclient.HttpMethod)|",
+      "|java+method:///org/apache/commons/httpclient/methods/GetMethod/getResponseHeaders()|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/getQueryParam(java.lang.String)|",
+      "|java+constructor:///org/apache/commons/httpclient/methods/GetMethod/GetMethod(java.lang.String)|",
+      "|java+method:///com/basho/riak/client/util/ClientUtils/makeURI(com.basho.riak.client.RiakConfig,java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/commons/httpclient/HttpClient/executeMethod(org.apache.commons.httpclient.HttpMethod)|",
+      "|java+method:///com/basho/riak/client/util/ClientUtils/asHeaderMap(org.apache.commons.httpclient.Header%5B%5D)|",
+      "|java+method:///java/lang/Integer/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/http/HttpResponse/getAllHeaders()|",
+      "|java+method:///java/lang/Integer/toString()|",
+      "|java+method:///org/apache/http/HttpEntity/getContent()|",
+      "|java+method:///org/apache/http/StatusLine/getStatusCode()|",
+      "|java+method:///com/basho/riak/client/util/ClientUtils/asHeaderMap(org.apache.http.Header%5B%5D)|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/getQueryParam(java.lang.String)|",
+      "|java+method:///org/apache/http/HttpResponse/getStatusLine()|",
+      "|java+method:///com/basho/riak/client/util/ClientUtils/makeURI(com.basho.riak.client.RiakConfig,java.lang.String,java.lang.String)|",
+      "|java+constructor:///com/basho/riak/client/request/RequestMeta/RequestMeta()|",
+      "|java+method:///org/apache/http/client/HttpClient/execute(org.apache.http.client.methods.HttpUriRequest)|",
+      "|java+method:///com/basho/riak/client/response/StreamHandler/process(java.lang.String,java.lang.String,int,java.util.Map,java.io.InputStream,org.apache.http.HttpResponse)|",
+      "|java+method:///com/basho/riak/client/request/RequestMeta/setQueryParam(java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/apache/http/client/methods/HttpGet/HttpGet(java.lang.String)|",
+      "|java+method:///org/apache/http/client/methods/HttpGet/abort()|",
+      "|java+method:///org/apache/http/util/EntityUtils/consume(org.apache.http.HttpEntity)|",
+      "|java+method:///org/apache/http/HttpResponse/getEntity()|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.1.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.basho.riak:riak-client:0.14.1",
+    "coordinatesV2": "com.basho.riak:riak-client:1.0rc1",
+    "caller": "|java+method:///com/basho/riak/client/util/ClientHelper/delete(java.lang.String,java.lang.String,com.basho.riak.client.request.RequestMeta)|",
+    "called": "|java+constructor:///org/apache/http/client/methods/HttpDelete/HttpDelete(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/basho/riak/client/util/ClientUtils/makeURI(com.basho.riak.client.RiakConfig,java.lang.String,java.lang.String)|",
+      "|java+constructor:///com/basho/riak/client/request/RequestMeta/RequestMeta()|",
+      "|java+constructor:///org/apache/commons/httpclient/methods/DeleteMethod/DeleteMethod(java.lang.String)|",
+      "|java+method:///com/basho/riak/client/util/ClientHelper/executeMethod(java.lang.String,java.lang.String,org.apache.commons.httpclient.HttpMethod,com.basho.riak.client.request.RequestMeta)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/basho/riak/client/util/ClientUtils/makeURI(com.basho.riak.client.RiakConfig,java.lang.String,java.lang.String)|",
+      "|java+constructor:///com/basho/riak/client/request/RequestMeta/RequestMeta()|",
+      "|java+method:///com/basho/riak/client/util/ClientHelper/executeMethod(java.lang.String,java.lang.String,org.apache.http.client.methods.HttpRequestBase,com.basho.riak.client.request.RequestMeta)|",
+      "|java+constructor:///org/apache/http/client/methods/HttpDelete/HttpDelete(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.1.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.basho.riak:riak-client:0.14.1",
+    "coordinatesV2": "com.basho.riak:riak-client:1.0rc1",
+    "caller": "|java+method:///com/basho/riak/client/util/ClientHelper/setBucketSchema(java.lang.String,org.json.JSONObject,com.basho.riak.client.request.RequestMeta)|",
+    "called": "|java+constructor:///org/apache/http/client/methods/HttpPut/HttpPut(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/basho/riak/client/request/RequestMeta/setHeader(java.lang.String,java.lang.String)|",
+      "|java+constructor:///com/basho/riak/client/request/RequestMeta/RequestMeta()|",
+      "|java+method:///org/apache/commons/httpclient/methods/PutMethod/setRequestEntity(org.apache.commons.httpclient.methods.RequestEntity)|",
+      "|java+method:///org/json/JSONObject/toString()|",
+      "|java+constructor:///org/apache/commons/httpclient/methods/PutMethod/PutMethod(java.lang.String)|",
+      "|java+method:///com/basho/riak/client/util/ClientHelper/executeMethod(java.lang.String,java.lang.String,org.apache.commons.httpclient.HttpMethod,com.basho.riak.client.request.RequestMeta)|",
+      "|java+constructor:///org/apache/commons/httpclient/methods/ByteArrayRequestEntity/ByteArrayRequestEntity(byte%5B%5D,java.lang.String)|",
+      "|java+method:///java/lang/String/getBytes()|",
+      "|java+method:///com/basho/riak/client/util/ClientUtils/makeURI(com.basho.riak.client.RiakConfig,java.lang.String)|",
+      "|java+constructor:///org/json/JSONObject/JSONObject()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/basho/riak/client/request/RequestMeta/setHeader(java.lang.String,java.lang.String)|",
+      "|java+constructor:///com/basho/riak/client/request/RequestMeta/RequestMeta()|",
+      "|java+constructor:///org/apache/http/client/methods/HttpPut/HttpPut(java.lang.String)|",
+      "|java+method:///org/apache/http/client/methods/HttpPut/setEntity(org.apache.http.HttpEntity)|",
+      "|java+method:///com/basho/riak/client/util/CharsetUtils/utf8StringToBytes(java.lang.String)|",
+      "|java+method:///org/json/JSONObject/toString()|",
+      "|java+method:///org/apache/http/entity/ByteArrayEntity/setContentType(java.lang.String)|",
+      "|java+method:///com/basho/riak/client/util/ClientUtils/makeURI(com.basho.riak.client.RiakConfig,java.lang.String)|",
+      "|java+constructor:///org/json/JSONObject/JSONObject()|",
+      "|java+method:///com/basho/riak/client/util/ClientHelper/executeMethod(java.lang.String,java.lang.String,org.apache.http.client.methods.HttpRequestBase,com.basho.riak.client.request.RequestMeta)|",
+      "|java+constructor:///org/apache/http/entity/ByteArrayEntity/ByteArrayEntity(byte%5B%5D)|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.1.1",
+    "change": "ADDED"
+  }
+]

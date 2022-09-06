@@ -1,0 +1,34 @@
+[
+  {
+    "coordinatesV1": "org.sonatype.p2.bridge:eclipse-bridge:1.1.8",
+    "coordinatesV2": "org.sonatype.p2.bridge:eclipse-bridge:1.1.9",
+    "caller": "|java+method:///org/sonatype/eclipse/bridge/internal/PackedEclipseLocation/get()|",
+    "called": "|java+method:///org/zeroturnaround/zip/ZipUtil/unpack(java.io.File,java.io.File)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+method:///java/io/File/getAbsolutePath()|",
+      "|java+method:///java/io/File/mkdirs()|",
+      "|java+method:///org/codehaus/plexus/archiver/UnArchiver/setSourceFile(java.io.File)|",
+      "|java+method:///org/codehaus/plexus/archiver/UnArchiver/setDestDirectory(java.io.File)|",
+      "|java+method:///org/codehaus/plexus/archiver/UnArchiver/extract()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+method:///org/codehaus/plexus/util/FileUtils/deleteDirectory(java.io.File)|",
+      "|java+method:///java/io/File/getParentFile()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+method:///java/io/File/getAbsolutePath()|",
+      "|java+method:///java/io/File/mkdirs()|",
+      "|java+method:///java/io/File/getParentFile()|",
+      "|java+method:///org/apache/commons/io/FileUtils/deleteDirectory(java.io.File)|",
+      "|java+method:///org/zeroturnaround/zip/ZipUtil/unpack(java.io.File,java.io.File)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|"
+    ],
+    "affectedLib": "org.zeroturnaround:zt-zip:1.7",
+    "change": "ADDED"
+  }
+]

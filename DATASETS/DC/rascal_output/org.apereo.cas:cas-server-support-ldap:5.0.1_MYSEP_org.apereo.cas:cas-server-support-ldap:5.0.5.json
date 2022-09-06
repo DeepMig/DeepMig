@@ -1,0 +1,103 @@
+[
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-ldap:5.0.1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-ldap:5.0.5",
+    "caller": "|java+method:///org/apereo/cas/config/LdapAuthenticationConfiguration/getDirectBindAuthenticator(org.apereo.cas.configuration.model.support.ldap.LdapAuthenticationProperties)|",
+    "called": "|java+method:///org/apereo/cas/configuration/support/Beans/newSearchEntryResolver(org.apereo.cas.configuration.model.support.ldap.LdapAuthenticationProperties)|",
+    "v1Body": [
+      "|java+method:///org/apereo/cas/config/LdapAuthenticationConfiguration/getPooledBindAuthenticationHandler(org.apereo.cas.configuration.model.support.ldap.LdapAuthenticationProperties)|",
+      "|java+constructor:///org/ldaptive/auth/Authenticator/Authenticator(org.ldaptive.auth.DnResolver,org.ldaptive.auth.AuthenticationHandler)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/LdapAuthenticationProperties/getBaseDn()|",
+      "|java+constructor:///org/ldaptive/auth/FormatDnResolver/FormatDnResolver(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/ldaptive/auth/Authenticator/setEntryResolver(org.ldaptive.auth.EntryResolver)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+constructor:///org/ldaptive/auth/FormatDnResolver/FormatDnResolver(java.lang.String)|",
+      "|java+method:///org/apereo/cas/configuration/support/Beans/newSearchEntryResolver(org.apereo.cas.configuration.model.support.ldap.LdapAuthenticationProperties)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isBlank(java.lang.CharSequence)|",
+      "|java+method:///org/apereo/cas/config/LdapAuthenticationConfiguration/getPooledBindAuthenticationHandler(org.apereo.cas.configuration.model.support.ldap.LdapAuthenticationProperties)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/LdapAuthenticationProperties/getDnFormat()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/LdapAuthenticationProperties/isEnhanceWithEntryResolver()|",
+      "|java+constructor:///org/ldaptive/auth/Authenticator/Authenticator(org.ldaptive.auth.DnResolver,org.ldaptive.auth.AuthenticationHandler)|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-core-configuration:5.0.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-ldap:5.0.1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-ldap:5.0.5",
+    "caller": "|java+method:///org/apereo/cas/config/LdapAuthenticationConfiguration/getAuthenticatedOrAnonSearchAuthenticator(org.apereo.cas.configuration.model.support.ldap.LdapAuthenticationProperties)|",
+    "called": "|java+method:///org/apereo/cas/configuration/support/Beans/newSearchEntryResolver(org.apereo.cas.configuration.model.support.ldap.LdapAuthenticationProperties)|",
+    "v1Body": [
+      "|java+method:///org/ldaptive/auth/PooledSearchDnResolver/setAllowMultipleDns(boolean)|",
+      "|java+method:///org/ldaptive/auth/Authenticator/setEntryResolver(org.ldaptive.auth.EntryResolver)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/LdapAuthenticationProperties/isAllowMultipleDns()|",
+      "|java+method:///org/apereo/cas/config/LdapAuthenticationConfiguration/getPooledBindAuthenticationHandler(org.apereo.cas.configuration.model.support.ldap.LdapAuthenticationProperties)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/LdapAuthenticationProperties/isSubtreeSearch()|",
+      "|java+method:///org/ldaptive/auth/PooledSearchDnResolver/setUserFilter(java.lang.String)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/LdapAuthenticationProperties/getPrincipalAttributePassword()|",
+      "|java+method:///org/ldaptive/auth/PooledSearchDnResolver/setSubtreeSearch(boolean)|",
+      "|java+constructor:///org/ldaptive/auth/Authenticator/Authenticator(org.ldaptive.auth.DnResolver,org.ldaptive.auth.AuthenticationHandler)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/LdapAuthenticationProperties/getBaseDn()|",
+      "|java+method:///org/apereo/cas/configuration/support/Beans/newSearchEntryResolver(org.apereo.cas.configuration.model.support.ldap.LdapAuthenticationProperties)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isBlank(java.lang.CharSequence)|",
+      "|java+constructor:///org/ldaptive/auth/PooledSearchDnResolver/PooledSearchDnResolver()|",
+      "|java+method:///org/ldaptive/auth/PooledSearchDnResolver/setBaseDn(java.lang.String)|",
+      "|java+method:///org/apereo/cas/config/LdapAuthenticationConfiguration/getPooledCompareAuthenticationHandler(org.apereo.cas.configuration.model.support.ldap.LdapAuthenticationProperties)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/LdapAuthenticationProperties/getUserFilter()|",
+      "|java+method:///org/apereo/cas/configuration/support/Beans/newPooledConnectionFactory(org.apereo.cas.configuration.model.support.ldap.AbstractLdapProperties)|",
+      "|java+method:///org/ldaptive/auth/PooledSearchDnResolver/setConnectionFactory(org.ldaptive.pool.PooledConnectionFactory)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/ldaptive/auth/PooledSearchDnResolver/setAllowMultipleDns(boolean)|",
+      "|java+method:///org/ldaptive/auth/Authenticator/setEntryResolver(org.ldaptive.auth.EntryResolver)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/LdapAuthenticationProperties/isAllowMultipleDns()|",
+      "|java+method:///org/apereo/cas/config/LdapAuthenticationConfiguration/getPooledBindAuthenticationHandler(org.apereo.cas.configuration.model.support.ldap.LdapAuthenticationProperties)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/LdapAuthenticationProperties/isSubtreeSearch()|",
+      "|java+method:///org/ldaptive/auth/PooledSearchDnResolver/setUserFilter(java.lang.String)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/LdapAuthenticationProperties/getPrincipalAttributePassword()|",
+      "|java+method:///org/ldaptive/auth/PooledSearchDnResolver/setSubtreeSearch(boolean)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/LdapAuthenticationProperties/getBaseDn()|",
+      "|java+method:///org/apereo/cas/configuration/support/Beans/newSearchEntryResolver(org.apereo.cas.configuration.model.support.ldap.LdapAuthenticationProperties)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isBlank(java.lang.CharSequence)|",
+      "|java+constructor:///org/ldaptive/auth/PooledSearchDnResolver/PooledSearchDnResolver()|",
+      "|java+method:///org/ldaptive/auth/PooledSearchDnResolver/setBaseDn(java.lang.String)|",
+      "|java+method:///org/apereo/cas/config/LdapAuthenticationConfiguration/getPooledCompareAuthenticationHandler(org.apereo.cas.configuration.model.support.ldap.LdapAuthenticationProperties)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/LdapAuthenticationProperties/getUserFilter()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/LdapAuthenticationProperties/isEnhanceWithEntryResolver()|",
+      "|java+constructor:///org/ldaptive/auth/Authenticator/Authenticator(org.ldaptive.auth.DnResolver,org.ldaptive.auth.AuthenticationHandler)|",
+      "|java+method:///org/apereo/cas/configuration/support/Beans/newPooledConnectionFactory(org.apereo.cas.configuration.model.support.ldap.AbstractLdapProperties)|",
+      "|java+method:///org/ldaptive/auth/PooledSearchDnResolver/setConnectionFactory(org.ldaptive.pool.PooledConnectionFactory)|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-core-configuration:5.0.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-ldap:5.0.1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-ldap:5.0.5",
+    "caller": "|java+method:///org/apereo/cas/config/LdapAuthenticationConfiguration/getActiveDirectoryAuthenticator(org.apereo.cas.configuration.model.support.ldap.LdapAuthenticationProperties)|",
+    "called": "|java+method:///org/apereo/cas/configuration/support/Beans/newSearchEntryResolver(org.apereo.cas.configuration.model.support.ldap.LdapAuthenticationProperties)|",
+    "v1Body": [
+      "|java+method:///org/ldaptive/auth/Authenticator/setEntryResolver(org.ldaptive.auth.EntryResolver)|",
+      "|java+method:///org/apereo/cas/configuration/support/Beans/newSearchEntryResolver(org.apereo.cas.configuration.model.support.ldap.LdapAuthenticationProperties)|",
+      "|java+constructor:///org/ldaptive/auth/Authenticator/Authenticator(org.ldaptive.auth.DnResolver,org.ldaptive.auth.AuthenticationHandler)|",
+      "|java+constructor:///org/ldaptive/auth/FormatDnResolver/FormatDnResolver(java.lang.String)|",
+      "|java+method:///org/apereo/cas/config/LdapAuthenticationConfiguration/getPooledBindAuthenticationHandler(org.apereo.cas.configuration.model.support.ldap.LdapAuthenticationProperties)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/LdapAuthenticationProperties/getDnFormat()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/ldaptive/auth/Authenticator/setEntryResolver(org.ldaptive.auth.EntryResolver)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+constructor:///org/ldaptive/auth/FormatDnResolver/FormatDnResolver(java.lang.String)|",
+      "|java+method:///org/apereo/cas/configuration/support/Beans/newSearchEntryResolver(org.apereo.cas.configuration.model.support.ldap.LdapAuthenticationProperties)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isBlank(java.lang.CharSequence)|",
+      "|java+method:///org/apereo/cas/config/LdapAuthenticationConfiguration/getPooledBindAuthenticationHandler(org.apereo.cas.configuration.model.support.ldap.LdapAuthenticationProperties)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/LdapAuthenticationProperties/getDnFormat()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/ldap/LdapAuthenticationProperties/isEnhanceWithEntryResolver()|",
+      "|java+constructor:///org/ldaptive/auth/Authenticator/Authenticator(org.ldaptive.auth.DnResolver,org.ldaptive.auth.AuthenticationHandler)|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-core-configuration:5.0.5",
+    "change": "UPDATED"
+  }
+]

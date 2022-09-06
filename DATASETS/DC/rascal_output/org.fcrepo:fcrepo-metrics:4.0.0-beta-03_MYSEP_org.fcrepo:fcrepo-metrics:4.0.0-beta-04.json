@@ -1,0 +1,62 @@
+[
+  {
+    "coordinatesV1": "org.fcrepo:fcrepo-metrics:4.0.0-beta-04",
+    "coordinatesV2": "org.fcrepo:fcrepo-metrics:4.0.0-beta-03",
+    "caller": "|java+method:///org/fcrepo/metrics/ReporterFactory/getGraphiteReporter(java.lang.String,com.codahale.metrics.graphite.Graphite)|",
+    "called": "|java+method:///com/codahale/metrics/graphite/GraphiteReporter$Builder/build(com.codahale.metrics.graphite.Graphite)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///com/codahale/metrics/graphite/GraphiteReporter$Builder/prefixedWith(java.lang.String)|",
+      "|java+method:///com/codahale/metrics/graphite/GraphiteReporter$Builder/convertRatesTo(java.util.concurrent.TimeUnit)|",
+      "|java+method:///com/codahale/metrics/graphite/GraphiteReporter$Builder/build(com.codahale.metrics.graphite.Graphite)|",
+      "|java+method:///com/codahale/metrics/graphite/GraphiteReporter/start(long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///com/codahale/metrics/graphite/GraphiteReporter/forRegistry(com.codahale.metrics.MetricRegistry)|",
+      "|java+method:///com/codahale/metrics/graphite/GraphiteReporter$Builder/filter(com.codahale.metrics.MetricFilter)|",
+      "|java+method:///com/codahale/metrics/graphite/GraphiteReporter$Builder/convertDurationsTo(java.util.concurrent.TimeUnit)|",
+      "|java+method:///org/fcrepo/metrics/RegistryService/getMetrics()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///com/codahale/metrics/graphite/GraphiteReporter$Builder/prefixedWith(java.lang.String)|",
+      "|java+method:///com/codahale/metrics/graphite/GraphiteReporter$Builder/convertRatesTo(java.util.concurrent.TimeUnit)|",
+      "|java+method:///com/codahale/metrics/graphite/GraphiteReporter/start(long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///com/codahale/metrics/graphite/GraphiteReporter/forRegistry(com.codahale.metrics.MetricRegistry)|",
+      "|java+method:///com/codahale/metrics/graphite/GraphiteReporter$Builder/build(com.codahale.metrics.graphite.GraphiteSender)|",
+      "|java+method:///com/codahale/metrics/graphite/GraphiteReporter$Builder/filter(com.codahale.metrics.MetricFilter)|",
+      "|java+method:///com/codahale/metrics/graphite/GraphiteReporter$Builder/convertDurationsTo(java.util.concurrent.TimeUnit)|",
+      "|java+method:///org/fcrepo/metrics/RegistryService/getMetrics()|"
+    ],
+    "affectedLib": "com.codahale.metrics:metrics-graphite:3.0.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.fcrepo:fcrepo-metrics:4.0.0-beta-03",
+    "coordinatesV2": "org.fcrepo:fcrepo-metrics:4.0.0-beta-04",
+    "caller": "|java+method:///org/fcrepo/metrics/ReporterFactory/getGraphiteReporter(java.lang.String,com.codahale.metrics.graphite.Graphite)|",
+    "called": "|java+method:///com/codahale/metrics/graphite/GraphiteReporter/forRegistry(com.codahale.metrics.MetricRegistry)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///com/codahale/metrics/graphite/GraphiteReporter$Builder/prefixedWith(java.lang.String)|",
+      "|java+method:///com/codahale/metrics/graphite/GraphiteReporter$Builder/convertRatesTo(java.util.concurrent.TimeUnit)|",
+      "|java+method:///com/codahale/metrics/graphite/GraphiteReporter$Builder/build(com.codahale.metrics.graphite.Graphite)|",
+      "|java+method:///com/codahale/metrics/graphite/GraphiteReporter/start(long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///com/codahale/metrics/graphite/GraphiteReporter/forRegistry(com.codahale.metrics.MetricRegistry)|",
+      "|java+method:///com/codahale/metrics/graphite/GraphiteReporter$Builder/filter(com.codahale.metrics.MetricFilter)|",
+      "|java+method:///com/codahale/metrics/graphite/GraphiteReporter$Builder/convertDurationsTo(java.util.concurrent.TimeUnit)|",
+      "|java+method:///org/fcrepo/metrics/RegistryService/getMetrics()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///com/codahale/metrics/graphite/GraphiteReporter$Builder/prefixedWith(java.lang.String)|",
+      "|java+method:///com/codahale/metrics/graphite/GraphiteReporter$Builder/convertRatesTo(java.util.concurrent.TimeUnit)|",
+      "|java+method:///com/codahale/metrics/graphite/GraphiteReporter/start(long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///com/codahale/metrics/graphite/GraphiteReporter/forRegistry(com.codahale.metrics.MetricRegistry)|",
+      "|java+method:///com/codahale/metrics/graphite/GraphiteReporter$Builder/build(com.codahale.metrics.graphite.GraphiteSender)|",
+      "|java+method:///com/codahale/metrics/graphite/GraphiteReporter$Builder/filter(com.codahale.metrics.MetricFilter)|",
+      "|java+method:///com/codahale/metrics/graphite/GraphiteReporter$Builder/convertDurationsTo(java.util.concurrent.TimeUnit)|",
+      "|java+method:///org/fcrepo/metrics/RegistryService/getMetrics()|"
+    ],
+    "affectedLib": "io.dropwizard.metrics:metrics-graphite:3.1.0",
+    "change": "ADDED"
+  }
+]

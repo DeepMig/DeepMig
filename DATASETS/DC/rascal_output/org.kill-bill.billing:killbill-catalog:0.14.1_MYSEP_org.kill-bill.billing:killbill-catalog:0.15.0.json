@@ -1,0 +1,31 @@
+[
+  {
+    "coordinatesV1": "org.kill-bill.billing:killbill-catalog:0.14.1",
+    "coordinatesV2": "org.kill-bill.billing:killbill-catalog:0.15.0",
+    "caller": "|java+method:///org/killbill/billing/catalog/caching/EhCacheCatalogCache/getCatalog(org.killbill.billing.callcontext.InternalTenantContext)|",
+    "called": "|java+constructor:///org/killbill/billing/catalog/api/CatalogApiException/CatalogApiException(org.killbill.billing.ErrorCode,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+constructor:///org/killbill/billing/catalog/api/CatalogApiException/CatalogApiException(org.killbill.billing.ErrorCode,java.lang.Object%5B%5D)|",
+      "|java+method:///org/killbill/billing/util/cache/CacheController/get(java.lang.Object,org.killbill.billing.util.cache.CacheLoaderArgument)|",
+      "|java+constructor:///org/killbill/billing/catalog/VersionedCatalog/VersionedCatalog(org.killbill.billing.catalog.VersionedCatalog,org.killbill.billing.callcontext.InternalTenantContext)|",
+      "|java+method:///org/killbill/billing/callcontext/InternalTenantContext/getTenantRecordId()|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///org/killbill/billing/util/cache/CacheController/add(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/killbill/billing/catalog/api/CatalogApiException/CatalogApiException(org.killbill.billing.ErrorCode,java.lang.Object%5B%5D)|",
+      "|java+method:///org/killbill/billing/util/cache/CacheController/get(java.lang.Object,org.killbill.billing.util.cache.CacheLoaderArgument)|",
+      "|java+method:///org/killbill/billing/catalog/VersionedCatalog/getVersions()|",
+      "|java+method:///org/killbill/billing/catalog/VersionedCatalog/getCatalogName()|",
+      "|java+method:///org/killbill/billing/callcontext/InternalTenantContext/getTenantRecordId()|",
+      "|java+method:///org/killbill/billing/catalog/VersionedCatalog/getRecurringBillingMode()|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///org/killbill/billing/catalog/caching/EhCacheCatalogCache/getCatalogFromPlugins(org.killbill.billing.callcontext.InternalTenantContext)|",
+      "|java+method:///org/killbill/billing/util/cache/CacheController/add(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/killbill/billing/catalog/VersionedCatalog/getClock()|",
+      "|java+constructor:///org/killbill/billing/catalog/VersionedCatalog/VersionedCatalog(org.killbill.clock.Clock,java.lang.String,org.killbill.billing.catalog.api.BillingMode,java.util.List,org.killbill.billing.callcontext.InternalTenantContext)|"
+    ],
+    "affectedLib": "org.kill-bill.billing:killbill-api:0.18",
+    "change": "UPDATED"
+  }
+]

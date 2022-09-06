@@ -1,0 +1,112 @@
+[
+  {
+    "coordinatesV1": "io.airlift.airship:airship-config-bundler:0.11",
+    "coordinatesV2": "io.airlift.airship:airship-config-bundler:0.9",
+    "caller": "|java+method:///io/airlift/airship/configbundler/ConfigBundler/initializeLogging(boolean)|",
+    "called": "|java+constructor:///io/airlift/log/Logging/Logging()|",
+    "v1Body": [
+      "|java+method:///java/lang/System/setOut(java.io.PrintStream)|",
+      "|java+constructor:///com/google/common/io/NullOutputStream/NullOutputStream()|",
+      "|java+method:///io/airlift/log/Logging/disableConsole()|",
+      "|java+method:///java/lang/System/setErr(java.io.PrintStream)|",
+      "|java+constructor:///java/io/PrintStream/PrintStream(java.io.OutputStream)|",
+      "|java+method:///io/airlift/log/Logging/initialize(io.airlift.log.LoggingConfiguration)|",
+      "|java+constructor:///io/airlift/log/LoggingConfiguration/LoggingConfiguration()|",
+      "|java+constructor:///io/airlift/log/Logging/Logging()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/System/setOut(java.io.PrintStream)|",
+      "|java+method:///io/airlift/log/Logging/disableConsole()|",
+      "|java+constructor:///io/airlift/log/LoggingConfiguration/LoggingConfiguration()|",
+      "|java+method:///io/airlift/log/Logging/configure(io.airlift.log.LoggingConfiguration)|",
+      "|java+method:///io/airlift/log/Logging/initialize()|",
+      "|java+method:///java/lang/System/setErr(java.io.PrintStream)|",
+      "|java+constructor:///java/io/PrintStream/PrintStream(java.io.OutputStream)|",
+      "|java+method:///com/google/common/io/ByteStreams/nullOutputStream()|"
+    ],
+    "affectedLib": "io.airlift:log:0.66",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "io.airlift.airship:airship-config-bundler:0.11",
+    "coordinatesV2": "io.airlift.airship:airship-config-bundler:0.9",
+    "caller": "|java+method:///io/airlift/airship/configbundler/ConfigBundler/main(java.lang.String%5B%5D)|",
+    "called": "|java+method:///org/iq80/cli/Cli/parse(java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/iq80/cli/Cli/parse(java.lang.String%5B%5D)|",
+      "|java+method:///org/iq80/cli/Cli$CliBuilder/build()|",
+      "|java+method:///org/iq80/cli/Cli/buildCli(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/util/concurrent/Callable/call()|",
+      "|java+method:///org/iq80/cli/Cli$CliBuilder/withDefaultCommand(java.lang.Class)|",
+      "|java+method:///org/iq80/cli/Cli$CliBuilder/withCommand(java.lang.Class)|",
+      "|java+method:///io/airlift/airship/configbundler/ConfigBundler/initializeLogging(boolean)|",
+      "|java+method:///org/iq80/cli/Cli$CliBuilder/withCommands(java.lang.Class,java.lang.Class%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/airlift/command/Cli$CliBuilder/build()|",
+      "|java+method:///io/airlift/airship/configbundler/ConfigBundler/initializeLogging(boolean)|",
+      "|java+method:///io/airlift/command/Cli$CliBuilder/withCommand(java.lang.Class)|",
+      "|java+method:///io/airlift/command/Cli$CliBuilder/withDefaultCommand(java.lang.Class)|",
+      "|java+method:///io/airlift/command/Cli/parse(java.lang.String%5B%5D)|",
+      "|java+method:///java/util/concurrent/Callable/call()|",
+      "|java+method:///io/airlift/command/Cli/builder(java.lang.String)|"
+    ],
+    "affectedLib": "org.iq80.cli:git-like-cli:0.3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "io.airlift.airship:airship-config-bundler:0.9",
+    "coordinatesV2": "io.airlift.airship:airship-config-bundler:0.11",
+    "caller": "|java+method:///io/airlift/airship/configbundler/ConfigBundler/main(java.lang.String%5B%5D)|",
+    "called": "|java+method:///io/airlift/command/Cli$CliBuilder/build()|",
+    "v1Body": [
+      "|java+method:///org/iq80/cli/Cli/parse(java.lang.String%5B%5D)|",
+      "|java+method:///org/iq80/cli/Cli$CliBuilder/build()|",
+      "|java+method:///org/iq80/cli/Cli/buildCli(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/util/concurrent/Callable/call()|",
+      "|java+method:///org/iq80/cli/Cli$CliBuilder/withDefaultCommand(java.lang.Class)|",
+      "|java+method:///org/iq80/cli/Cli$CliBuilder/withCommand(java.lang.Class)|",
+      "|java+method:///io/airlift/airship/configbundler/ConfigBundler/initializeLogging(boolean)|",
+      "|java+method:///org/iq80/cli/Cli$CliBuilder/withCommands(java.lang.Class,java.lang.Class%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/airlift/command/Cli$CliBuilder/build()|",
+      "|java+method:///io/airlift/airship/configbundler/ConfigBundler/initializeLogging(boolean)|",
+      "|java+method:///io/airlift/command/Cli$CliBuilder/withCommand(java.lang.Class)|",
+      "|java+method:///io/airlift/command/Cli$CliBuilder/withDefaultCommand(java.lang.Class)|",
+      "|java+method:///io/airlift/command/Cli/parse(java.lang.String%5B%5D)|",
+      "|java+method:///java/util/concurrent/Callable/call()|",
+      "|java+method:///io/airlift/command/Cli/builder(java.lang.String)|"
+    ],
+    "affectedLib": "io.airlift:airline:0.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.airlift.airship:airship-config-bundler:0.9",
+    "coordinatesV2": "io.airlift.airship:airship-config-bundler:0.11",
+    "caller": "|java+method:///io/airlift/airship/configbundler/ConfigBundler/initializeLogging(boolean)|",
+    "called": "|java+method:///io/airlift/log/Logging/configure(io.airlift.log.LoggingConfiguration)|",
+    "v1Body": [
+      "|java+method:///java/lang/System/setOut(java.io.PrintStream)|",
+      "|java+constructor:///com/google/common/io/NullOutputStream/NullOutputStream()|",
+      "|java+method:///io/airlift/log/Logging/disableConsole()|",
+      "|java+method:///java/lang/System/setErr(java.io.PrintStream)|",
+      "|java+constructor:///java/io/PrintStream/PrintStream(java.io.OutputStream)|",
+      "|java+method:///io/airlift/log/Logging/initialize(io.airlift.log.LoggingConfiguration)|",
+      "|java+constructor:///io/airlift/log/LoggingConfiguration/LoggingConfiguration()|",
+      "|java+constructor:///io/airlift/log/Logging/Logging()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/System/setOut(java.io.PrintStream)|",
+      "|java+method:///io/airlift/log/Logging/disableConsole()|",
+      "|java+constructor:///io/airlift/log/LoggingConfiguration/LoggingConfiguration()|",
+      "|java+method:///io/airlift/log/Logging/configure(io.airlift.log.LoggingConfiguration)|",
+      "|java+method:///io/airlift/log/Logging/initialize()|",
+      "|java+method:///java/lang/System/setErr(java.io.PrintStream)|",
+      "|java+constructor:///java/io/PrintStream/PrintStream(java.io.OutputStream)|",
+      "|java+method:///com/google/common/io/ByteStreams/nullOutputStream()|"
+    ],
+    "affectedLib": "io.airlift:log-manager:0.73",
+    "change": "ADDED"
+  }
+]

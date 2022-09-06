@@ -1,0 +1,46 @@
+[
+  {
+    "coordinatesV1": "com.twitter:chill-hadoop:0.7.5",
+    "coordinatesV2": "com.twitter:chill-hadoop:0.8.4",
+    "caller": "|java+method:///com/twitter/chill/hadoop/KryoDeserializer/deserialize(java.lang.Object)|",
+    "called": "|java+method:///com/twitter/chill/KryoPool/fromBytes(byte%5B%5D,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/io/DataInputStream/readInt()|",
+      "|java+method:///com/twitter/chill/KryoPool/fromBytes(byte%5B%5D,java.lang.Class)|",
+      "|java+method:///java/io/DataInputStream/readFully(byte%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/twitter/chill/hadoop/Varint/readUnsignedVarInt(java.io.DataInputStream)|",
+      "|java+method:///com/twitter/chill/KryoPool/fromBytes(byte%5B%5D,java.lang.Class)|",
+      "|java+method:///java/io/DataInputStream/readFully(byte%5B%5D)|"
+    ],
+    "affectedLib": "com.twitter:chill-java:0.8.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.twitter:chill-hadoop:0.7.5",
+    "coordinatesV2": "com.twitter:chill-hadoop:0.8.4",
+    "caller": "|java+method:///com/twitter/chill/hadoop/KryoSerializer/serialize(java.lang.Object)|",
+    "called": "|java+method:///com/twitter/chill/SerDeState/writeObject(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/twitter/chill/SerDeState/numOfWrittenBytes()|",
+      "|java+method:///java/io/DataOutputStream/writeInt(int)|",
+      "|java+method:///com/twitter/chill/SerDeState/writeOutputTo(java.io.OutputStream)|",
+      "|java+method:///com/twitter/chill/KryoPool/borrow()|",
+      "|java+method:///java/io/DataOutputStream/flush()|",
+      "|java+method:///com/twitter/chill/SerDeState/writeObject(java.lang.Object)|",
+      "|java+method:///com/twitter/chill/KryoPool/release(com.twitter.chill.SerDeState)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/twitter/chill/SerDeState/numOfWrittenBytes()|",
+      "|java+method:///com/twitter/chill/hadoop/Varint/writeUnsignedVarInt(int,java.io.DataOutputStream)|",
+      "|java+method:///com/twitter/chill/SerDeState/writeOutputTo(java.io.OutputStream)|",
+      "|java+method:///com/twitter/chill/KryoPool/borrow()|",
+      "|java+method:///java/io/DataOutputStream/flush()|",
+      "|java+method:///com/twitter/chill/SerDeState/writeObject(java.lang.Object)|",
+      "|java+method:///com/twitter/chill/KryoPool/release(com.twitter.chill.SerDeState)|"
+    ],
+    "affectedLib": "com.twitter:chill-java:0.8.4",
+    "change": "UPDATED"
+  }
+]

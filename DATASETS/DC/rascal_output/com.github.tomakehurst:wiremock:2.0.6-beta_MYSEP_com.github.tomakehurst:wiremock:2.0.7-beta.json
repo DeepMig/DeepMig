@@ -1,0 +1,141 @@
+[
+  {
+    "coordinatesV1": "com.github.tomakehurst:wiremock:2.0.6-beta",
+    "coordinatesV2": "com.github.tomakehurst:wiremock:2.0.7-beta",
+    "caller": "|java+method:///com/github/tomakehurst/wiremock/jetty9/JettyHttpServer/createServerConnector(com.github.tomakehurst.wiremock.common.JettySettings,int,org.eclipse.jetty.server.ConnectionFactory%5B%5D)|",
+    "called": "|java+constructor:///org/eclipse/jetty/server/ServerConnector/ServerConnector(org.eclipse.jetty.server.Server,java.util.concurrent.Executor,org.eclipse.jetty.util.thread.Scheduler,org.eclipse.jetty.io.ByteBufferPool,int,int,org.eclipse.jetty.server.ConnectionFactory%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///com/github/tomakehurst/wiremock/jetty9/JettyHttpServer/setJettySettings(com.github.tomakehurst.wiremock.common.JettySettings,org.eclipse.jetty.server.ServerConnector)|",
+      "|java+method:///org/eclipse/jetty/server/ServerConnector/setPort(int)|",
+      "|java+method:///com/github/tomakehurst/wiremock/common/JettySettings/getAcceptors()|",
+      "|java+constructor:///org/eclipse/jetty/server/ServerConnector/ServerConnector(org.eclipse.jetty.server.Server,java.util.concurrent.Executor,org.eclipse.jetty.util.thread.Scheduler,org.eclipse.jetty.io.ByteBufferPool,int,int,org.eclipse.jetty.server.ConnectionFactory%5B%5D)|",
+      "|java+method:///com/google/common/base/Optional/or(java.lang.Object)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/jetty/server/ServerConnector/setPort(int)|",
+      "|java+method:///org/eclipse/jetty/server/ServerConnector/setStopTimeout(long)|",
+      "|java+method:///com/github/tomakehurst/wiremock/common/JettySettings/getAcceptors()|",
+      "|java+constructor:///org/eclipse/jetty/server/ServerConnector/ServerConnector(org.eclipse.jetty.server.Server,java.util.concurrent.Executor,org.eclipse.jetty.util.thread.Scheduler,org.eclipse.jetty.io.ByteBufferPool,int,int,org.eclipse.jetty.server.ConnectionFactory%5B%5D)|",
+      "|java+method:///com/google/common/base/Optional/or(java.lang.Object)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///org/eclipse/jetty/server/ServerConnector/getSelectorManager()|",
+      "|java+method:///com/github/tomakehurst/wiremock/jetty9/JettyHttpServer/setJettySettings(com.github.tomakehurst.wiremock.common.JettySettings,org.eclipse.jetty.server.ServerConnector)|",
+      "|java+method:///org/eclipse/jetty/io/SelectorManager/setStopTimeout(long)|"
+    ],
+    "affectedLib": "org.eclipse.jetty:jetty-server:9.2.13.v20150730",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.github.tomakehurst:wiremock:2.0.6-beta",
+    "coordinatesV2": "com.github.tomakehurst:wiremock:2.0.7-beta",
+    "caller": "|java+method:///com/github/tomakehurst/wiremock/jetty9/JettyHttpServer/stop()|",
+    "called": "|java+method:///org/eclipse/jetty/server/Server/join()|",
+    "v1Body": [
+      "|java+method:///org/eclipse/jetty/server/Server/stop()|",
+      "|java+method:///org/eclipse/jetty/server/Server/join()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/jetty/server/Server/stop()|",
+      "|java+method:///com/github/tomakehurst/wiremock/common/Exceptions/throwUnchecked(java.lang.Throwable)|",
+      "|java+method:///org/eclipse/jetty/server/Server/join()|"
+    ],
+    "affectedLib": "org.eclipse.jetty:jetty-server:9.2.13.v20150730",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.github.tomakehurst:wiremock:2.0.6-beta",
+    "coordinatesV2": "com.github.tomakehurst:wiremock:2.0.7-beta",
+    "caller": "|java+constructor:///com/github/tomakehurst/wiremock/jetty9/JettyHttpServer/JettyHttpServer(com.github.tomakehurst.wiremock.core.Options,com.github.tomakehurst.wiremock.http.AdminRequestHandler,com.github.tomakehurst.wiremock.http.StubRequestHandler,com.github.tomakehurst.wiremock.global.RequestDelayControl)|",
+    "called": "|java+method:///org/eclipse/jetty/server/Server/addConnector(org.eclipse.jetty.server.Connector)|",
+    "v1Body": [
+      "|java+method:///com/github/tomakehurst/wiremock/core/Options/bindAddress()|",
+      "|java+method:///com/github/tomakehurst/wiremock/core/Options/filesRoot()|",
+      "|java+method:///com/github/tomakehurst/wiremock/jetty9/JettyHttpServer/createHttpsConnector(com.github.tomakehurst.wiremock.global.RequestDelayControl,com.github.tomakehurst.wiremock.common.HttpsSettings,com.github.tomakehurst.wiremock.common.JettySettings)|",
+      "|java+method:///com/github/tomakehurst/wiremock/jetty9/JettyHttpServer/createHttpConnector(com.github.tomakehurst.wiremock.global.RequestDelayControl,java.lang.String,int,com.github.tomakehurst.wiremock.common.JettySettings)|",
+      "|java+constructor:///org/eclipse/jetty/server/Server/Server(org.eclipse.jetty.util.thread.ThreadPool)|",
+      "|java+method:///com/github/tomakehurst/wiremock/core/Options/jettySettings()|",
+      "|java+method:///com/github/tomakehurst/wiremock/jetty9/JettyHttpServer/addAdminContext(com.github.tomakehurst.wiremock.http.AdminRequestHandler,com.github.tomakehurst.wiremock.common.Notifier)|",
+      "|java+method:///com/github/tomakehurst/wiremock/core/Options/notifier()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///com/github/tomakehurst/wiremock/common/HttpsSettings/enabled()|",
+      "|java+method:///org/eclipse/jetty/server/Server/setHandler(org.eclipse.jetty.server.Handler)|",
+      "|java+method:///org/eclipse/jetty/server/Server/addConnector(org.eclipse.jetty.server.Connector)|",
+      "|java+method:///com/github/tomakehurst/wiremock/jetty9/JettyHttpServer/addMockServiceContext(com.github.tomakehurst.wiremock.http.StubRequestHandler,com.github.tomakehurst.wiremock.common.FileSource,com.github.tomakehurst.wiremock.common.Notifier)|",
+      "|java+constructor:///org/eclipse/jetty/util/thread/QueuedThreadPool/QueuedThreadPool(int)|",
+      "|java+method:///org/eclipse/jetty/server/handler/HandlerCollection/setHandlers(org.eclipse.jetty.server.Handler%5B%5D)|",
+      "|java+constructor:///org/eclipse/jetty/server/handler/HandlerCollection/HandlerCollection()|",
+      "|java+method:///com/github/tomakehurst/wiremock/core/Options/containerThreads()|",
+      "|java+method:///com/github/tomakehurst/wiremock/core/Options/httpsSettings()|",
+      "|java+method:///com/github/tomakehurst/wiremock/core/Options/portNumber()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/tomakehurst/wiremock/core/Options/bindAddress()|",
+      "|java+method:///com/github/tomakehurst/wiremock/core/Options/filesRoot()|",
+      "|java+method:///com/github/tomakehurst/wiremock/jetty9/JettyHttpServer/createHttpsConnector(com.github.tomakehurst.wiremock.global.RequestDelayControl,com.github.tomakehurst.wiremock.common.HttpsSettings,com.github.tomakehurst.wiremock.common.JettySettings)|",
+      "|java+method:///com/github/tomakehurst/wiremock/jetty9/JettyHttpServer/createHttpConnector(com.github.tomakehurst.wiremock.global.RequestDelayControl,java.lang.String,int,com.github.tomakehurst.wiremock.common.JettySettings)|",
+      "|java+constructor:///org/eclipse/jetty/server/Server/Server(org.eclipse.jetty.util.thread.ThreadPool)|",
+      "|java+method:///com/github/tomakehurst/wiremock/core/Options/jettySettings()|",
+      "|java+method:///com/github/tomakehurst/wiremock/jetty9/JettyHttpServer/addAdminContext(com.github.tomakehurst.wiremock.http.AdminRequestHandler,com.github.tomakehurst.wiremock.common.Notifier)|",
+      "|java+method:///com/github/tomakehurst/wiremock/core/Options/notifier()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/eclipse/jetty/server/Server/setStopTimeout(long)|",
+      "|java+method:///com/github/tomakehurst/wiremock/common/HttpsSettings/enabled()|",
+      "|java+method:///org/eclipse/jetty/server/Server/setHandler(org.eclipse.jetty.server.Handler)|",
+      "|java+method:///org/eclipse/jetty/server/Server/addConnector(org.eclipse.jetty.server.Connector)|",
+      "|java+method:///com/github/tomakehurst/wiremock/jetty9/JettyHttpServer/addMockServiceContext(com.github.tomakehurst.wiremock.http.StubRequestHandler,com.github.tomakehurst.wiremock.common.FileSource,com.github.tomakehurst.wiremock.common.Notifier)|",
+      "|java+constructor:///org/eclipse/jetty/util/thread/QueuedThreadPool/QueuedThreadPool(int)|",
+      "|java+method:///org/eclipse/jetty/server/handler/HandlerCollection/setHandlers(org.eclipse.jetty.server.Handler%5B%5D)|",
+      "|java+constructor:///org/eclipse/jetty/server/handler/HandlerCollection/HandlerCollection()|",
+      "|java+method:///com/github/tomakehurst/wiremock/core/Options/containerThreads()|",
+      "|java+method:///com/github/tomakehurst/wiremock/core/Options/httpsSettings()|",
+      "|java+method:///com/github/tomakehurst/wiremock/core/Options/portNumber()|"
+    ],
+    "affectedLib": "org.eclipse.jetty:jetty-server:9.2.13.v20150730",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.github.tomakehurst:wiremock:2.0.6-beta",
+    "coordinatesV2": "com.github.tomakehurst:wiremock:2.0.7-beta",
+    "caller": "|java+method:///com/github/tomakehurst/wiremock/jetty9/JettyHttpServer/addMockServiceContext(com.github.tomakehurst.wiremock.http.StubRequestHandler,com.github.tomakehurst.wiremock.common.FileSource,com.github.tomakehurst.wiremock.common.Notifier)|",
+    "called": "|java+method:///org/eclipse/jetty/servlet/ServletContextHandler/addFilter(java.lang.Class,java.lang.String,java.util.EnumSet)|",
+    "v1Body": [
+      "|java+method:///java/util/EnumSet/of(java.lang.Enum)|",
+      "|java+method:///org/eclipse/jetty/servlet/ServletContextHandler/setInitParameter(java.lang.String,java.lang.String)|",
+      "|java+method:///org/eclipse/jetty/servlet/ServletContextHandler/addServlet(java.lang.Class,java.lang.String)|",
+      "|java+method:///org/eclipse/jetty/servlet/ServletContextHandler/setWelcomeFiles(java.lang.String%5B%5D)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///com/github/tomakehurst/wiremock/common/FileSource/getPath()|",
+      "|java+method:///org/eclipse/jetty/http/MimeTypes/addMimeMapping(java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/eclipse/jetty/http/MimeTypes/MimeTypes()|",
+      "|java+method:///org/eclipse/jetty/servlet/ServletContextHandler/setMimeTypes(org.eclipse.jetty.http.MimeTypes)|",
+      "|java+method:///org/eclipse/jetty/servlet/ServletContextHandler/setAttribute(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/EnumSet/allOf(java.lang.Class)|",
+      "|java+method:///org/eclipse/jetty/servlet/ServletHolder/setInitParameter(java.lang.String,java.lang.String)|",
+      "|java+method:///org/eclipse/jetty/servlet/ServletContextHandler/addFilter(java.lang.Class,java.lang.String,java.util.EnumSet)|",
+      "|java+constructor:///org/eclipse/jetty/servlet/ServletContextHandler/ServletContextHandler(org.eclipse.jetty.server.HandlerContainer,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/EnumSet/of(java.lang.Enum)|",
+      "|java+method:///org/eclipse/jetty/servlet/ServletContextHandler/setInitParameter(java.lang.String,java.lang.String)|",
+      "|java+method:///org/eclipse/jetty/servlet/ServletContextHandler/addServlet(java.lang.Class,java.lang.String)|",
+      "|java+method:///org/eclipse/jetty/servlet/ServletContextHandler/setWelcomeFiles(java.lang.String%5B%5D)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///com/github/tomakehurst/wiremock/common/FileSource/getPath()|",
+      "|java+method:///org/eclipse/jetty/http/MimeTypes/addMimeMapping(java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/eclipse/jetty/http/MimeTypes/MimeTypes()|",
+      "|java+method:///org/eclipse/jetty/servlet/ServletContextHandler/setMimeTypes(org.eclipse.jetty.http.MimeTypes)|",
+      "|java+method:///java/util/EnumSet/allOf(java.lang.Class)|",
+      "|java+method:///org/eclipse/jetty/servlet/ServletHolder/setInitParameter(java.lang.String,java.lang.String)|",
+      "|java+method:///org/eclipse/jetty/servlet/ServletContextHandler/addFilter(java.lang.Class,java.lang.String,java.util.EnumSet)|",
+      "|java+constructor:///org/eclipse/jetty/servlet/ServletContextHandler/ServletContextHandler(org.eclipse.jetty.server.HandlerContainer,java.lang.String)|",
+      "|java+method:///org/eclipse/jetty/servlet/ServletContextHandler/setAttribute(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/EnumSet/of(java.lang.Enum,java.lang.Enum)|"
+    ],
+    "affectedLib": "org.eclipse.jetty:jetty-servlet:9.2.13.v20150730",
+    "change": "UPDATED"
+  }
+]

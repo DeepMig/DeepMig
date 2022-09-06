@@ -1,0 +1,151 @@
+[
+  {
+    "coordinatesV1": "org.apache.cxf:cxf-rt-rs-security-sso-oidc:3.1.4",
+    "coordinatesV2": "org.apache.cxf:cxf-rt-rs-security-sso-oidc:3.1.8",
+    "caller": "|java+method:///org/apache/cxf/rs/security/oidc/rp/UserInfoClient/getUserInfo(org.apache.cxf.rs.security.oauth2.common.ClientAccessToken,org.apache.cxf.rs.security.oidc.common.IdToken,org.apache.cxf.rs.security.oauth2.client.Consumer)|",
+    "called": "|java+method:///org/apache/cxf/rs/security/oauth2/client/OAuthClientUtils/setAuthorizationHeader(org.apache.cxf.jaxrs.client.WebClient,org.apache.cxf.rs.security.oauth2.common.ClientAccessToken)|",
+    "v1Body": [
+      "|java+method:///javax/ws/rs/core/Form/param(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/cxf/rs/security/oauth2/client/OAuthClientUtils/setAuthorizationHeader(org.apache.cxf.jaxrs.client.WebClient,org.apache.cxf.rs.security.oauth2.common.ClientAccessToken)|",
+      "|java+method:///org/apache/cxf/jaxrs/client/WebClient/get(java.lang.Class)|",
+      "|java+method:///org/apache/cxf/rs/security/oauth2/common/ClientAccessToken/getTokenKey()|",
+      "|java+method:///org/apache/cxf/rs/security/oidc/rp/UserInfoClient/getUserInfoFromJwt(java.lang.String,org.apache.cxf.rs.security.oidc.common.IdToken,org.apache.cxf.rs.security.oauth2.client.Consumer)|",
+      "|java+constructor:///javax/ws/rs/core/Form/Form()|",
+      "|java+method:///org/apache/cxf/jaxrs/client/WebClient/form(javax.ws.rs.core.Form)|",
+      "|java+method:///org/apache/cxf/rs/security/oidc/rp/UserInfoClient/validateUserInfo(org.apache.cxf.rs.security.oidc.common.UserInfo,org.apache.cxf.rs.security.oidc.common.IdToken)|",
+      "|java+method:///javax/ws/rs/core/Response/readEntity(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/ws/rs/core/Form/param(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/cxf/rs/security/oauth2/client/OAuthClientUtils/setAuthorizationHeader(org.apache.cxf.jaxrs.client.WebClient,org.apache.cxf.rs.security.oauth2.common.ClientAccessToken)|",
+      "|java+method:///org/apache/cxf/jaxrs/client/WebClient/get(java.lang.Class)|",
+      "|java+method:///org/apache/cxf/rs/security/oidc/rp/UserInfoClient/validateUserInfo(org.apache.cxf.rs.security.oidc.common.UserInfo,org.apache.cxf.rs.security.oidc.common.IdToken,org.apache.cxf.rs.security.oauth2.client.Consumer)|",
+      "|java+method:///org/apache/cxf/rs/security/oauth2/common/ClientAccessToken/getTokenKey()|",
+      "|java+method:///org/apache/cxf/rs/security/oidc/rp/UserInfoClient/getUserInfoFromJwt(java.lang.String,org.apache.cxf.rs.security.oidc.common.IdToken,org.apache.cxf.rs.security.oauth2.client.Consumer)|",
+      "|java+constructor:///javax/ws/rs/core/Form/Form()|",
+      "|java+method:///org/apache/cxf/jaxrs/client/WebClient/form(javax.ws.rs.core.Form)|",
+      "|java+method:///javax/ws/rs/core/Response/readEntity(java.lang.Class)|"
+    ],
+    "affectedLib": "org.apache.cxf:cxf-rt-rs-security-oauth2:3.1.8",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.cxf:cxf-rt-rs-security-sso-oidc:3.1.4",
+    "coordinatesV2": "org.apache.cxf:cxf-rt-rs-security-sso-oidc:3.1.8",
+    "caller": "|java+constructor:///org/apache/cxf/rs/security/oidc/idp/UserInfoService/UserInfoService()|",
+    "called": "|java+constructor:///org/apache/cxf/rs/security/oauth2/provider/OAuthServerJoseJwtProducer/OAuthServerJoseJwtProducer()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/cxf/rs/security/oauth2/provider/AbstractOAuthServerJoseJwtProducer/AbstractOAuthServerJoseJwtProducer()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Collections/emptyList()|",
+      "|java+constructor:///org/apache/cxf/rs/security/oauth2/provider/OAuthServerJoseJwtProducer/OAuthServerJoseJwtProducer()|"
+    ],
+    "affectedLib": "org.apache.cxf:cxf-rt-rs-security-oauth2:3.1.8",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.cxf:cxf-rt-rs-security-sso-oidc:3.1.4",
+    "coordinatesV2": "org.apache.cxf:cxf-rt-rs-security-sso-oidc:3.1.8",
+    "caller": "|java+constructor:///org/apache/cxf/rs/security/oidc/rp/OidcClientCodeRequestFilter/OidcClientCodeRequestFilter()|",
+    "called": "|java+constructor:///org/apache/cxf/rs/security/oauth2/client/ClientCodeRequestFilter/ClientCodeRequestFilter()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/cxf/rs/security/oauth2/client/ClientCodeRequestFilter/ClientCodeRequestFilter()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/cxf/rs/security/oauth2/client/ClientCodeRequestFilter/ClientCodeRequestFilter()|",
+      "|java+method:///org/apache/cxf/rs/security/oidc/rp/OidcClientCodeRequestFilter/setScopes(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.cxf:cxf-rt-rs-security-oauth2:3.1.8",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.cxf:cxf-rt-rs-security-sso-oidc:3.1.4",
+    "coordinatesV2": "org.apache.cxf:cxf-rt-rs-security-sso-oidc:3.1.8",
+    "caller": "|java+constructor:///org/apache/cxf/rs/security/oidc/idp/IdTokenResponseFilter/IdTokenResponseFilter()|",
+    "called": "|java+constructor:///org/apache/cxf/rs/security/oauth2/provider/OAuthServerJoseJwtProducer/OAuthServerJoseJwtProducer()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/cxf/rs/security/oauth2/provider/AbstractOAuthServerJoseJwtProducer/AbstractOAuthServerJoseJwtProducer()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/cxf/rs/security/oauth2/provider/OAuthServerJoseJwtProducer/OAuthServerJoseJwtProducer()|"
+    ],
+    "affectedLib": "org.apache.cxf:cxf-rt-rs-security-oauth2:3.1.8",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.cxf:cxf-rt-rs-security-sso-oidc:3.1.4",
+    "coordinatesV2": "org.apache.cxf:cxf-rt-rs-security-sso-oidc:3.1.8",
+    "caller": "|java+method:///org/apache/cxf/rs/security/oidc/idp/UserInfoService/getUserInfo()|",
+    "called": "|java+method:///org/apache/cxf/rs/security/oauth2/utils/OAuthContextUtils/getContext(org.apache.cxf.jaxrs.ext.MessageContext)|",
+    "v1Body": [
+      "|java+method:///org/apache/cxf/rs/security/oauth2/common/OAuthContext/getSubject()|",
+      "|java+method:///org/apache/cxf/rs/security/oauth2/provider/AbstractOAuthServerJoseJwtProducer/isJweRequired()|",
+      "|java+method:///org/apache/cxf/rs/security/oauth2/common/OAuthContext/getClientId()|",
+      "|java+method:///org/apache/cxf/rs/security/oidc/common/UserInfo/setAudience(java.lang.String)|",
+      "|java+method:///org/apache/cxf/rs/security/oauth2/utils/OAuthContextUtils/getContext(org.apache.cxf.jaxrs.ext.MessageContext)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///org/apache/cxf/rs/security/oauth2/provider/AbstractOAuthServerJoseJwtProducer/isJwsRequired()|",
+      "|java+method:///javax/ws/rs/core/Response/ok(java.lang.Object)|",
+      "|java+method:///org/apache/cxf/rs/security/oidc/common/UserInfo/setIssuer(java.lang.String)|",
+      "|java+method:///org/apache/cxf/rs/security/oauth2/provider/AbstractOAuthServerJoseJwtProducer/processJwt(org.apache.cxf.rs.security.jose.jwt.JwtToken,org.apache.cxf.rs.security.oauth2.common.Client)|",
+      "|java+constructor:///org/apache/cxf/rs/security/jose/jwt/JwtToken/JwtToken(org.apache.cxf.rs.security.jose.jwt.JwtClaims)|",
+      "|java+method:///org/apache/cxf/rs/security/oidc/idp/UserInfoProvider/getUserInfo(java.lang.String,org.apache.cxf.rs.security.oauth2.common.UserSubject,java.util.List)|",
+      "|java+method:///org/apache/cxf/rs/security/oauth2/provider/OAuthDataProvider/getClient(java.lang.String)|",
+      "|java+method:///org/apache/cxf/rs/security/oauth2/common/OAuthContext/getPermissions()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/cxf/rs/security/oauth2/provider/OAuthServerJoseJwtProducer/isJweRequired()|",
+      "|java+method:///org/apache/cxf/rs/security/oauth2/common/OAuthContext/getSubject()|",
+      "|java+method:///org/apache/cxf/rs/security/oidc/idp/OidcUserSubject/getIdToken()|",
+      "|java+method:///org/apache/cxf/rs/security/oauth2/common/OAuthContext/getClientId()|",
+      "|java+method:///org/apache/cxf/rs/security/oidc/idp/OidcUserSubject/getUserInfo()|",
+      "|java+method:///org/apache/cxf/rs/security/oauth2/utils/OAuthContextUtils/getContext(org.apache.cxf.jaxrs.ext.MessageContext)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///javax/ws/rs/core/Response/ok(java.lang.Object)|",
+      "|java+method:///org/apache/cxf/rs/security/oauth2/provider/OAuthServerJoseJwtProducer/processJwt(org.apache.cxf.rs.security.jose.jwt.JwtToken,org.apache.cxf.rs.security.oauth2.common.Client)|",
+      "|java+method:///org/apache/cxf/rs/security/oauth2/utils/OAuthUtils/convertPermissionsToScopeList(java.util.List)|",
+      "|java+method:///org/apache/cxf/rs/security/oidc/idp/UserInfoService/createFromIdToken(org.apache.cxf.rs.security.oidc.common.IdToken)|",
+      "|java+method:///org/apache/cxf/rs/security/oauth2/provider/OAuthServerJoseJwtProducer/isJwsRequired()|",
+      "|java+method:///javax/ws/rs/core/Response/serverError()|",
+      "|java+constructor:///org/apache/cxf/rs/security/jose/jwt/JwtToken/JwtToken(org.apache.cxf.rs.security.jose.jwt.JwtClaims)|",
+      "|java+method:///org/apache/cxf/rs/security/oidc/idp/UserInfoProvider/getUserInfo(java.lang.String,org.apache.cxf.rs.security.oauth2.common.UserSubject,java.util.List)|",
+      "|java+method:///org/apache/cxf/rs/security/oauth2/provider/OAuthDataProvider/getClient(java.lang.String)|",
+      "|java+method:///org/apache/cxf/rs/security/oauth2/common/OAuthContext/getPermissions()|"
+    ],
+    "affectedLib": "org.apache.cxf:cxf-rt-rs-security-oauth2:3.1.8",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.cxf:cxf-rt-rs-security-sso-oidc:3.1.4",
+    "coordinatesV2": "org.apache.cxf:cxf-rt-rs-security-sso-oidc:3.1.8",
+    "caller": "|java+method:///org/apache/cxf/rs/security/oidc/rp/OidcClientCodeRequestFilter/validateIdToken(org.apache.cxf.rs.security.oidc.common.IdToken,javax.ws.rs.core.MultivaluedMap)|",
+    "called": "|java+constructor:///org/apache/cxf/rs/security/oauth2/provider/OAuthServiceException/OAuthServiceException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/cxf/rs/security/oidc/common/IdToken/getAuthenticationTime()|",
+      "|java+method:///javax/ws/rs/core/MultivaluedMap/getFirst(java.lang.Object)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/apache/cxf/rs/security/oidc/common/IdToken/getNonce()|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/apache/cxf/rs/security/oidc/common/IdToken/getAuthenticationContextRef()|",
+      "|java+method:///java/util/List/contains(java.lang.Object)|",
+      "|java+method:///java/lang/Long/parseLong(java.lang.String)|",
+      "|java+method:///org/apache/cxf/jaxrs/utils/ExceptionUtils/toNotAuthorizedException(java.lang.Throwable,javax.ws.rs.core.Response)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/cxf/rs/security/oidc/common/IdToken/getAuthenticationTime()|",
+      "|java+method:///javax/ws/rs/core/MultivaluedMap/getFirst(java.lang.Object)|",
+      "|java+method:///java/lang/Long/parseLong(java.lang.String)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/apache/cxf/rs/security/oidc/common/IdToken/getNonce()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/apache/cxf/rs/security/oidc/common/IdToken/getAuthenticationContextRef()|",
+      "|java+method:///java/util/List/contains(java.lang.Object)|",
+      "|java+constructor:///org/apache/cxf/rs/security/oauth2/provider/OAuthServiceException/OAuthServiceException(java.lang.String)|",
+      "|java+method:///java/lang/Long/longValue()|"
+    ],
+    "affectedLib": "org.apache.cxf:cxf-rt-rs-security-oauth2:3.1.8",
+    "change": "UPDATED"
+  }
+]

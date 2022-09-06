@@ -1,0 +1,19 @@
+[
+  {
+    "coordinatesV1": "com.smoketurner.dropwizard:zipkin-client:1.1.0-2",
+    "coordinatesV2": "com.smoketurner.dropwizard:zipkin-client:1.2.2-4",
+    "caller": "|java+method:///com/smoketurner/dropwizard/zipkin/client/ZipkinClientBuilder/build(javax.ws.rs.client.Client)|",
+    "called": "|java+method:///brave/jaxrs2/TracingFeature/create(brave.http.HttpTracing)|",
+    "v1Body": [
+      "|java+method:///com/github/kristofa/brave/jaxrs2/BraveClientResponseFilter/create(com.github.kristofa.brave.Brave)|",
+      "|java+method:///com/github/kristofa/brave/jaxrs2/BraveClientRequestFilter/create(com.github.kristofa.brave.Brave)|",
+      "|java+method:///javax/ws/rs/client/Client/register(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/ws/rs/client/Client/register(java.lang.Object)|",
+      "|java+method:///brave/jaxrs2/TracingFeature/create(brave.http.HttpTracing)|"
+    ],
+    "affectedLib": "io.zipkin.brave:brave-instrumentation-jaxrs2:4.13.2",
+    "change": "ADDED"
+  }
+]

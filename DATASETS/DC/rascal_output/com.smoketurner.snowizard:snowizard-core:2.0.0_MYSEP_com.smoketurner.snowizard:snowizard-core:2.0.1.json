@@ -1,0 +1,32 @@
+[
+  {
+    "coordinatesV1": "com.smoketurner.snowizard:snowizard-core:2.0.0",
+    "coordinatesV2": "com.smoketurner.snowizard:snowizard-core:2.0.1",
+    "caller": "|java+method:///com/smoketurner/snowizard/core/IdWorker/nextId()|",
+    "called": "|java+method:///com/codahale/metrics/Counter/inc()|",
+    "v1Body": [
+      "|java+method:///java/util/concurrent/atomic/AtomicLong/set(long)|",
+      "|java+method:///com/smoketurner/snowizard/core/IdWorker/timeGen()|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicLong/incrementAndGet()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object)|",
+      "|java+method:///com/smoketurner/snowizard/core/IdWorker/tilNextMillis(long)|",
+      "|java+method:///com/codahale/metrics/Counter/inc()|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///com/smoketurner/snowizard/exceptions/InvalidSystemClock/InvalidSystemClock(java.lang.String)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicLong/get()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/smoketurner/snowizard/core/IdWorker/timeGen()|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object)|",
+      "|java+method:///com/codahale/metrics/Counter/inc()|",
+      "|java+constructor:///com/smoketurner/snowizard/exceptions/InvalidSystemClock/InvalidSystemClock(java.lang.String)|",
+      "|java+method:///com/smoketurner/snowizard/core/IdWorker/tilNextMillis(long)|"
+    ],
+    "affectedLib": "io.dropwizard.metrics:metrics-core:4.0.2",
+    "change": "UPDATED"
+  }
+]

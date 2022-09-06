@@ -1,0 +1,27 @@
+[
+  {
+    "coordinatesV1": "com.iyzipay:iyzipay-java:1.0.7",
+    "coordinatesV2": "com.iyzipay:iyzipay-java:1.0.0-rc1",
+    "caller": "|java+method:///com/iyzipay/HttpClient/get(java.lang.String,java.lang.Class)|",
+    "called": "|java+constructor:///org/apache/http/client/methods/HttpGet/HttpGet(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/http/impl/client/HttpClients/createDefault()|",
+      "|java+method:///java/io/IOException/getMessage()|",
+      "|java+method:///org/apache/http/client/methods/CloseableHttpResponse/close()|",
+      "|java+method:///org/apache/http/client/methods/CloseableHttpResponse/getEntity()|",
+      "|java+constructor:///com/iyzipay/exception/HttpClientException/HttpClientException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///com/google/gson/Gson/Gson()|",
+      "|java+method:///org/apache/http/util/EntityUtils/consume(org.apache.http.HttpEntity)|",
+      "|java+method:///org/apache/http/impl/client/CloseableHttpClient/execute(org.apache.http.client.methods.HttpUriRequest)|",
+      "|java+method:///org/apache/http/util/EntityUtils/toString(org.apache.http.HttpEntity,java.lang.String)|",
+      "|java+constructor:///org/apache/http/client/methods/HttpGet/HttpGet(java.lang.String)|",
+      "|java+method:///com/google/gson/Gson/fromJson(java.lang.String,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/iyzipay/HttpClient/exchange(java.lang.String,com.iyzipay.HttpMethod,java.util.Map,java.lang.Object,java.lang.Class)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.5.1",
+    "change": "REMOVED"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "coordinatesV1": "org.apache.cocoon.sitemap:cocoon-sitemap:3.0.0-alpha-1",
+    "coordinatesV2": "org.apache.cocoon.sitemap:cocoon-sitemap:3.0.0-alpha-2",
+    "caller": "|java+constructor:///org/apache/cocoon/sitemap/component/ExceptionGenerator/ExceptionGenerator()|",
+    "called": "|java+constructor:///org/apache/cocoon/sax/AbstractSAXProducer/AbstractSAXProducer()|",
+    "v1Body": [
+      "|java+constructor:///java/text/SimpleDateFormat/SimpleDateFormat(java.lang.String,java.util.Locale)|",
+      "|java+constructor:///org/apache/cocoon/pipeline/component/sax/AbstractXMLProducer/AbstractXMLProducer()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/cocoon/sax/AbstractSAXProducer/AbstractSAXProducer()|",
+      "|java+constructor:///java/text/SimpleDateFormat/SimpleDateFormat(java.lang.String,java.util.Locale)|"
+    ],
+    "affectedLib": "org.apache.cocoon.sax:cocoon-sax:3.0.0-alpha-2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.cocoon.sitemap:cocoon-sitemap:3.0.0-alpha-1",
+    "coordinatesV2": "org.apache.cocoon.sitemap:cocoon-sitemap:3.0.0-alpha-2",
+    "caller": "|java+method:///org/apache/cocoon/sitemap/component/ExceptionGenerator/execute()|",
+    "called": "|java+constructor:///org/apache/cocoon/pipeline/ProcessingException/ProcessingException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/apache/cocoon/pipeline/component/sax/XMLConsumer/endDocument()|",
+      "|java+method:///org/apache/cocoon/sitemap/component/ExceptionGenerator/getXMLConsumer()|",
+      "|java+method:///org/apache/cocoon/pipeline/component/sax/XMLConsumer/startDocument()|",
+      "|java+method:///org/apache/cocoon/sitemap/component/ExceptionGenerator/toSAX(java.lang.Throwable,org.xml.sax.ContentHandler)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/cocoon/sitemap/util/ParameterHelper/getThrowable(java.util.Map)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/cocoon/sitemap/component/ExceptionGenerator/toSAX(java.lang.Throwable,org.xml.sax.ContentHandler)|",
+      "|java+constructor:///org/apache/cocoon/pipeline/ProcessingException/ProcessingException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/cocoon/sitemap/util/ParameterHelper/getThrowable(java.util.Map)|",
+      "|java+method:///org/apache/cocoon/sax/SAXConsumer/endDocument()|",
+      "|java+method:///org/apache/cocoon/sitemap/component/ExceptionGenerator/getSAXConsumer()|",
+      "|java+method:///org/apache/cocoon/sax/SAXConsumer/startDocument()|"
+    ],
+    "affectedLib": "org.apache.cocoon.pipeline:cocoon-pipeline:3.0.0-alpha-2",
+    "change": "UPDATED"
+  }
+]

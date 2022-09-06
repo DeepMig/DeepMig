@@ -1,0 +1,2063 @@
+[
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl/getTokenForSeries(java.lang.String)|",
+    "called": "|java+method:///org/springframework/jdbc/core/JdbcTemplate/queryForObject(java.lang.String,org.springframework.jdbc.core.RowMapper,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/springframework/jdbc/object/MappingSqlQuery/findObject(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/commons/logging/Log/error(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///org/apache/commons/logging/Log/error(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/jdbc/core/JdbcTemplate/queryForObject(java.lang.String,org.springframework.jdbc.core.RowMapper,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl/getJdbcTemplate()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl$1/JdbcTokenRepositoryImpl$1(org.springframework.security.web.authentication.rememberme.JdbcTokenRepositoryImpl)|",
+      "|java+method:///org/apache/commons/logging/Log/error(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///org/apache/commons/logging/Log/error(java.lang.Object)|"
+    ],
+    "affectedLib": "org.springframework:spring-jdbc:3.0.7.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl/createNewToken(org.springframework.security.web.authentication.rememberme.PersistentRememberMeToken)|",
+    "called": "|java+method:///org/springframework/jdbc/core/JdbcTemplate/update(java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/springframework/security/web/authentication/rememberme/PersistentRememberMeToken/getUsername()|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/PersistentRememberMeToken/getSeries()|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/PersistentRememberMeToken/getTokenValue()|",
+      "|java+method:///org/springframework/jdbc/object/SqlUpdate/update(java.lang.Object%5B%5D)|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/PersistentRememberMeToken/getDate()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/security/web/authentication/rememberme/PersistentRememberMeToken/getUsername()|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/PersistentRememberMeToken/getSeries()|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/PersistentRememberMeToken/getTokenValue()|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl/getJdbcTemplate()|",
+      "|java+method:///org/springframework/jdbc/core/JdbcTemplate/update(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/PersistentRememberMeToken/getDate()|"
+    ],
+    "affectedLib": "org.springframework:spring-jdbc:3.0.7.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl/updateToken(java.lang.String,java.lang.String,java.util.Date)|",
+    "called": "|java+method:///org/springframework/jdbc/core/JdbcTemplate/update(java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/springframework/jdbc/object/SqlUpdate/update(java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/util/Date/Date()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl/getJdbcTemplate()|",
+      "|java+method:///org/springframework/jdbc/core/JdbcTemplate/update(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/util/Date/Date()|"
+    ],
+    "affectedLib": "org.springframework:spring-jdbc:3.0.7.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl/removeUserTokens(java.lang.String)|",
+    "called": "|java+method:///org/springframework/jdbc/core/JdbcTemplate/update(java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/springframework/jdbc/object/SqlUpdate/update(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl/getJdbcTemplate()|",
+      "|java+method:///org/springframework/jdbc/core/JdbcTemplate/update(java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "org.springframework:spring-jdbc:3.0.7.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl/initDao()|",
+    "called": "|java+method:///org/springframework/jdbc/core/JdbcTemplate/execute(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl$RemoveUserTokens/JdbcTokenRepositoryImpl$RemoveUserTokens(org.springframework.security.web.authentication.rememberme.JdbcTokenRepositoryImpl,javax.sql.DataSource)|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl/getJdbcTemplate()|",
+      "|java+constructor:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl$TokensBySeriesMapping/JdbcTokenRepositoryImpl$TokensBySeriesMapping(org.springframework.security.web.authentication.rememberme.JdbcTokenRepositoryImpl,javax.sql.DataSource)|",
+      "|java+method:///org/springframework/jdbc/core/JdbcTemplate/execute(java.lang.String)|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl/getDataSource()|",
+      "|java+constructor:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl$InsertToken/JdbcTokenRepositoryImpl$InsertToken(org.springframework.security.web.authentication.rememberme.JdbcTokenRepositoryImpl,javax.sql.DataSource)|",
+      "|java+constructor:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl$UpdateToken/JdbcTokenRepositoryImpl$UpdateToken(org.springframework.security.web.authentication.rememberme.JdbcTokenRepositoryImpl,javax.sql.DataSource)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl/getJdbcTemplate()|",
+      "|java+method:///org/springframework/jdbc/core/JdbcTemplate/execute(java.lang.String)|"
+    ],
+    "affectedLib": "org.springframework:spring-jdbc:3.0.7.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/logout/SecurityContextLogoutHandler/logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.security.core.Authentication)|",
+    "called": "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getSession(boolean)|",
+      "|java+method:///org/springframework/security/core/context/SecurityContext/setAuthentication(org.springframework.security.core.Authentication)|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/getContext()|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/clearContext()|",
+      "|java+method:///javax/servlet/http/HttpSession/invalidate()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///javax/servlet/http/HttpSession/getId()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getSession(boolean)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/clearContext()|",
+      "|java+method:///javax/servlet/http/HttpSession/invalidate()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.0.6.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/preauth/AbstractPreAuthenticatedProcessingFilter/afterPropertiesSet()|",
+    "called": "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///org/springframework/web/filter/GenericFilterBean/afterPropertiesSet()|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.0.6.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/rememberme/AbstractRememberMeServices/decodeCookie(java.lang.String)|",
+    "called": "|java+method:///org/springframework/util/StringUtils/delimitedListToStringArray(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/equalsIgnoreCase(java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///org/springframework/util/StringUtils/delimitedListToStringArray(java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/springframework/security/web/authentication/rememberme/InvalidCookieException/InvalidCookieException(java.lang.String)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///org/springframework/security/core/codec/Base64/decode(byte%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/security/core/codec/Base64/isBase64(byte%5B%5D)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D)|",
+      "|java+method:///java/lang/String/getBytes()|",
+      "|java+method:///java/lang/System/arraycopy(java.lang.Object,int,java.lang.Object,int,int)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/equalsIgnoreCase(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/security/crypto/codec/Base64/isBase64(byte%5B%5D)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///org/springframework/util/StringUtils/delimitedListToStringArray(java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/springframework/security/web/authentication/rememberme/InvalidCookieException/InvalidCookieException(java.lang.String)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D)|",
+      "|java+method:///java/lang/String/getBytes()|",
+      "|java+method:///java/lang/System/arraycopy(java.lang.Object,int,java.lang.Object,int,int)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/springframework/security/crypto/codec/Base64/decode(byte%5B%5D)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.0.6.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/AnonymousAuthenticationFilter/afterPropertiesSet()|",
+    "called": "|java+method:///org/springframework/util/Assert/hasLength(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/springframework/util/Assert/hasLength(java.lang.String)|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/util/Assert/hasLength(java.lang.String)|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.0.6.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/rememberme/TokenBasedRememberMeServices/onLoginSuccess(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.security.core.Authentication)|",
+    "called": "|java+method:///org/springframework/util/StringUtils/hasLength(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/TokenBasedRememberMeServices/makeTokenSignature(long,java.lang.String,java.lang.String)|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/TokenBasedRememberMeServices/retrieveUserName(org.springframework.security.core.Authentication)|",
+      "|java+method:///java/lang/Long/toString(long)|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/TokenBasedRememberMeServices/setCookie(java.lang.String%5B%5D,int,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/util/Date/Date(long)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/springframework/util/StringUtils/hasLength(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/TokenBasedRememberMeServices/calculateLoginLifetime(javax.servlet.http.HttpServletRequest,org.springframework.security.core.Authentication)|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/TokenBasedRememberMeServices/retrievePassword(org.springframework.security.core.Authentication)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/System/currentTimeMillis()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/security/core/userdetails/UserDetailsService/loadUserByUsername(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/TokenBasedRememberMeServices/makeTokenSignature(long,java.lang.String,java.lang.String)|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/TokenBasedRememberMeServices/retrieveUserName(org.springframework.security.core.Authentication)|",
+      "|java+method:///java/lang/Long/toString(long)|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+method:///org/springframework/security/core/userdetails/UserDetails/getPassword()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/util/Date/Date(long)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/springframework/util/StringUtils/hasLength(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/TokenBasedRememberMeServices/calculateLoginLifetime(javax.servlet.http.HttpServletRequest,org.springframework.security.core.Authentication)|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/TokenBasedRememberMeServices/retrievePassword(org.springframework.security.core.Authentication)|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/TokenBasedRememberMeServices/getUserDetailsService()|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/TokenBasedRememberMeServices/setCookie(java.lang.String%5B%5D,int,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/System/currentTimeMillis()|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.0.6.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/access/DefaultWebInvocationPrivilegeEvaluator/isAllowed(java.lang.String,java.lang.String,java.lang.String,org.springframework.security.core.Authentication)|",
+    "called": "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///org/springframework/security/access/intercept/AbstractSecurityInterceptor/obtainSecurityMetadataSource()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/springframework/security/access/AccessDecisionManager/decide(org.springframework.security.core.Authentication,java.lang.Object,java.util.Collection)|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+method:///org/springframework/security/web/FilterInvocation/toString()|",
+      "|java+method:///org/springframework/security/access/intercept/AbstractSecurityInterceptor/isRejectPublicInvocations()|",
+      "|java+method:///org/springframework/security/access/intercept/AbstractSecurityInterceptor/getAccessDecisionManager()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/springframework/security/access/SecurityMetadataSource/getAttributes(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/springframework/security/web/access/DefaultWebInvocationPrivilegeEvaluator/createFilterInvocation(java.lang.String,java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///org/springframework/security/access/intercept/AbstractSecurityInterceptor/obtainSecurityMetadataSource()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/springframework/security/web/FilterInvocation/FilterInvocation(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/springframework/security/access/AccessDecisionManager/decide(org.springframework.security.core.Authentication,java.lang.Object,java.util.Collection)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+method:///org/springframework/security/web/FilterInvocation/toString()|",
+      "|java+method:///org/springframework/security/access/intercept/AbstractSecurityInterceptor/isRejectPublicInvocations()|",
+      "|java+method:///org/springframework/security/access/intercept/AbstractSecurityInterceptor/getAccessDecisionManager()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/springframework/security/access/SecurityMetadataSource/getAttributes(java.lang.Object)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.0.6.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/AbstractAuthenticationTargetUrlRequestHandler/setTargetUrlParameter(java.lang.String)|",
+    "called": "|java+method:///org/springframework/util/Assert/hasText(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/springframework/util/StringUtils/hasText(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/util/Assert/hasText(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.0.6.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/PortMapperImpl/setPortMappings(java.util.Map)|",
+    "called": "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Map/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/util/Map/clear()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///java/lang/Integer/Integer(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/Map$Entry/getValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Map/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/util/Map/clear()|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/Integer/valueOf(java.lang.String)|",
+      "|java+method:///java/util/Map$Entry/getValue()|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.0.6.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+constructor:///org/springframework/security/web/authentication/rememberme/AbstractRememberMeServices/AbstractRememberMeServices()|",
+    "called": "|java+method:///org/springframework/util/ReflectionUtils/findMethod(java.lang.Class,java.lang.String,java.lang.Class%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/springframework/security/core/SpringSecurityMessageSource/getAccessor()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///org/springframework/security/web/authentication/WebAuthenticationDetailsSource/WebAuthenticationDetailsSource()|",
+      "|java+constructor:///org/springframework/security/authentication/AccountStatusUserDetailsChecker/AccountStatusUserDetailsChecker()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/springframework/security/core/authority/mapping/NullAuthoritiesMapper/NullAuthoritiesMapper()|",
+      "|java+method:///org/springframework/security/core/SpringSecurityMessageSource/getAccessor()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///org/springframework/security/authentication/AccountStatusUserDetailsChecker/AccountStatusUserDetailsChecker()|",
+      "|java+method:///org/springframework/util/ReflectionUtils/findMethod(java.lang.Class,java.lang.String,java.lang.Class%5B%5D)|",
+      "|java+constructor:///org/springframework/security/web/authentication/WebAuthenticationDetailsSource/WebAuthenticationDetailsSource()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.0.6.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/rememberme/AbstractRememberMeServices/setCookie(java.lang.String%5B%5D,int,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+    "called": "|java+method:///org/springframework/util/ReflectionUtils/invokeMethod(java.lang.reflect.Method,java.lang.Object,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/springframework/security/web/authentication/rememberme/AbstractRememberMeServices/encodeCookie(java.lang.String%5B%5D)|",
+      "|java+method:///javax/servlet/http/Cookie/setMaxAge(int)|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/AbstractRememberMeServices/getCookiePath(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///javax/servlet/http/Cookie/setSecure(boolean)|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/addCookie(javax.servlet.http.Cookie)|",
+      "|java+method:///javax/servlet/http/Cookie/setPath(java.lang.String)|",
+      "|java+constructor:///javax/servlet/http/Cookie/Cookie(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/AbstractRememberMeServices/encodeCookie(java.lang.String%5B%5D)|",
+      "|java+method:///javax/servlet/http/Cookie/setMaxAge(int)|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/AbstractRememberMeServices/getCookiePath(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+method:///javax/servlet/http/Cookie/setSecure(boolean)|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/addCookie(javax.servlet.http.Cookie)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/isSecure()|",
+      "|java+method:///javax/servlet/http/Cookie/setPath(java.lang.String)|",
+      "|java+method:///org/springframework/util/ReflectionUtils/invokeMethod(java.lang.reflect.Method,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+constructor:///javax/servlet/http/Cookie/Cookie(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.0.6.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/AbstractAuthenticationTargetUrlRequestHandler/determineTargetUrl(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+    "called": "|java+method:///org/springframework/util/StringUtils/hasLength(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/util/StringUtils/hasText(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/net/URLDecoder/decode(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getHeader(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getParameter(java.lang.String)|",
+      "|java+method:///org/springframework/security/web/authentication/AbstractAuthenticationTargetUrlRequestHandler/isAlwaysUseDefaultTargetUrl()|",
+      "|java+method:///org/springframework/util/StringUtils/hasLength(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/util/StringUtils/hasText(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getHeader(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getParameter(java.lang.String)|",
+      "|java+method:///org/springframework/security/web/authentication/AbstractAuthenticationTargetUrlRequestHandler/isAlwaysUseDefaultTargetUrl()|",
+      "|java+method:///org/springframework/util/StringUtils/hasLength(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.0.6.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/LoginUrlAuthenticationEntryPoint/afterPropertiesSet()|",
+    "called": "|java+method:///org/springframework/util/StringUtils/hasText(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/springframework/util/StringUtils/hasText(java.lang.String)|",
+      "|java+method:///org/springframework/util/Assert/isTrue(boolean,java.lang.String)|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/springframework/security/web/util/UrlUtils/isValidRedirectUrl(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/security/web/util/UrlUtils/isAbsoluteUrl(java.lang.String)|",
+      "|java+method:///org/springframework/util/StringUtils/hasText(java.lang.String)|",
+      "|java+method:///org/springframework/util/Assert/isTrue(boolean,java.lang.String)|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///org/springframework/security/web/util/UrlUtils/isValidRedirectUrl(java.lang.String)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.0.6.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/preauth/PreAuthenticatedGrantedAuthoritiesAuthenticationDetails/getGrantedAuthorities()|",
+    "called": "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/security/web/authentication/preauth/PreAuthenticatedGrantedAuthoritiesAuthenticationDetails/getGrantedAuthorities()|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.0.6.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl/getTokenForSeries(java.lang.String)|",
+    "called": "|java+method:///org/springframework/jdbc/core/JdbcTemplate/queryForObject(java.lang.String,org.springframework.jdbc.core.RowMapper,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/springframework/jdbc/object/MappingSqlQuery/findObject(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/commons/logging/Log/error(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///org/apache/commons/logging/Log/error(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/jdbc/core/JdbcTemplate/queryForObject(java.lang.String,org.springframework.jdbc.core.RowMapper,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl/getJdbcTemplate()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl$1/JdbcTokenRepositoryImpl$1(org.springframework.security.web.authentication.rememberme.JdbcTokenRepositoryImpl)|",
+      "|java+method:///org/apache/commons/logging/Log/error(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///org/apache/commons/logging/Log/error(java.lang.Object)|"
+    ],
+    "affectedLib": "org.springframework:spring-jdbc:3.1.1.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl/createNewToken(org.springframework.security.web.authentication.rememberme.PersistentRememberMeToken)|",
+    "called": "|java+method:///org/springframework/jdbc/core/JdbcTemplate/update(java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/springframework/security/web/authentication/rememberme/PersistentRememberMeToken/getUsername()|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/PersistentRememberMeToken/getSeries()|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/PersistentRememberMeToken/getTokenValue()|",
+      "|java+method:///org/springframework/jdbc/object/SqlUpdate/update(java.lang.Object%5B%5D)|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/PersistentRememberMeToken/getDate()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/security/web/authentication/rememberme/PersistentRememberMeToken/getUsername()|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/PersistentRememberMeToken/getSeries()|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/PersistentRememberMeToken/getTokenValue()|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl/getJdbcTemplate()|",
+      "|java+method:///org/springframework/jdbc/core/JdbcTemplate/update(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/PersistentRememberMeToken/getDate()|"
+    ],
+    "affectedLib": "org.springframework:spring-jdbc:3.1.1.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl/updateToken(java.lang.String,java.lang.String,java.util.Date)|",
+    "called": "|java+method:///org/springframework/jdbc/core/JdbcTemplate/update(java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/springframework/jdbc/object/SqlUpdate/update(java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/util/Date/Date()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl/getJdbcTemplate()|",
+      "|java+method:///org/springframework/jdbc/core/JdbcTemplate/update(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/util/Date/Date()|"
+    ],
+    "affectedLib": "org.springframework:spring-jdbc:3.1.1.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl/removeUserTokens(java.lang.String)|",
+    "called": "|java+method:///org/springframework/jdbc/core/JdbcTemplate/update(java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/springframework/jdbc/object/SqlUpdate/update(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl/getJdbcTemplate()|",
+      "|java+method:///org/springframework/jdbc/core/JdbcTemplate/update(java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "org.springframework:spring-jdbc:3.1.1.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl/initDao()|",
+    "called": "|java+method:///org/springframework/jdbc/core/JdbcTemplate/execute(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl$RemoveUserTokens/JdbcTokenRepositoryImpl$RemoveUserTokens(org.springframework.security.web.authentication.rememberme.JdbcTokenRepositoryImpl,javax.sql.DataSource)|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl/getJdbcTemplate()|",
+      "|java+constructor:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl$TokensBySeriesMapping/JdbcTokenRepositoryImpl$TokensBySeriesMapping(org.springframework.security.web.authentication.rememberme.JdbcTokenRepositoryImpl,javax.sql.DataSource)|",
+      "|java+method:///org/springframework/jdbc/core/JdbcTemplate/execute(java.lang.String)|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl/getDataSource()|",
+      "|java+constructor:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl$InsertToken/JdbcTokenRepositoryImpl$InsertToken(org.springframework.security.web.authentication.rememberme.JdbcTokenRepositoryImpl,javax.sql.DataSource)|",
+      "|java+constructor:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl$UpdateToken/JdbcTokenRepositoryImpl$UpdateToken(org.springframework.security.web.authentication.rememberme.JdbcTokenRepositoryImpl,javax.sql.DataSource)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl/getJdbcTemplate()|",
+      "|java+method:///org/springframework/jdbc/core/JdbcTemplate/execute(java.lang.String)|"
+    ],
+    "affectedLib": "org.springframework:spring-jdbc:3.1.1.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+constructor:///org/springframework/security/web/authentication/preauth/j2ee/J2eeBasedPreAuthenticatedWebAuthenticationDetailsSource/J2eeBasedPreAuthenticatedWebAuthenticationDetailsSource()|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/springframework/security/web/authentication/preauth/j2ee/AbstractPreAuthenticatedAuthenticationDetailsSource/setClazz(java.lang.Class)|",
+      "|java+constructor:///org/springframework/security/web/authentication/preauth/j2ee/AbstractPreAuthenticatedAuthenticationDetailsSource/AbstractPreAuthenticatedAuthenticationDetailsSource()|",
+      "|java+constructor:///org/springframework/security/core/authority/mapping/SimpleAttributes2GrantedAuthoritiesMapper/SimpleAttributes2GrantedAuthoritiesMapper()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///org/springframework/security/core/authority/mapping/SimpleAttributes2GrantedAuthoritiesMapper/SimpleAttributes2GrantedAuthoritiesMapper()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+initializer:///org/springframework/security/web/access/DefaultWebInvocationPrivilegeEvaluator/DefaultWebInvocationPrivilegeEvaluator$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/security/web/access/DefaultWebInvocationPrivilegeEvaluator$1/DefaultWebInvocationPrivilegeEvaluator$1()|",
+      "|java+constructor:///org/springframework/security/web/access/DummyResponse/DummyResponse()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+constructor:///org/springframework/security/web/savedrequest/HttpSessionRequestCache/HttpSessionRequestCache()|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/security/web/PortResolverImpl/PortResolverImpl()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/springframework/security/web/util/AnyRequestMatcher/AnyRequestMatcher()|",
+      "|java+constructor:///org/springframework/security/web/PortResolverImpl/PortResolverImpl()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+constructor:///org/springframework/security/web/authentication/session/SessionFixationProtectionStrategy/SessionFixationProtectionStrategy()|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+constructor:///org/springframework/security/web/authentication/logout/SecurityContextLogoutHandler/SecurityContextLogoutHandler()|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+constructor:///org/springframework/security/web/access/channel/AbstractRetryEntryPoint/AbstractRetryEntryPoint(java.lang.String,int)|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///org/springframework/security/web/PortMapperImpl/PortMapperImpl()|",
+      "|java+constructor:///org/springframework/security/web/PortResolverImpl/PortResolverImpl()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/springframework/security/web/DefaultRedirectStrategy/DefaultRedirectStrategy()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///org/springframework/security/web/PortMapperImpl/PortMapperImpl()|",
+      "|java+constructor:///org/springframework/security/web/PortResolverImpl/PortResolverImpl()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+constructor:///org/springframework/security/web/authentication/rememberme/AbstractRememberMeServices/AbstractRememberMeServices()|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/springframework/security/core/SpringSecurityMessageSource/getAccessor()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///org/springframework/security/web/authentication/WebAuthenticationDetailsSource/WebAuthenticationDetailsSource()|",
+      "|java+constructor:///org/springframework/security/authentication/AccountStatusUserDetailsChecker/AccountStatusUserDetailsChecker()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/springframework/security/core/authority/mapping/NullAuthoritiesMapper/NullAuthoritiesMapper()|",
+      "|java+method:///org/springframework/security/core/SpringSecurityMessageSource/getAccessor()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///org/springframework/security/authentication/AccountStatusUserDetailsChecker/AccountStatusUserDetailsChecker()|",
+      "|java+method:///org/springframework/util/ReflectionUtils/findMethod(java.lang.Class,java.lang.String,java.lang.Class%5B%5D)|",
+      "|java+constructor:///org/springframework/security/web/authentication/WebAuthenticationDetailsSource/WebAuthenticationDetailsSource()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/logout/SecurityContextLogoutHandler/logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.security.core.Authentication)|",
+    "called": "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getSession(boolean)|",
+      "|java+method:///org/springframework/security/core/context/SecurityContext/setAuthentication(org.springframework.security.core.Authentication)|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/getContext()|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/clearContext()|",
+      "|java+method:///javax/servlet/http/HttpSession/invalidate()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///javax/servlet/http/HttpSession/getId()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getSession(boolean)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/clearContext()|",
+      "|java+method:///javax/servlet/http/HttpSession/invalidate()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.0.7.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/preauth/AbstractPreAuthenticatedProcessingFilter/afterPropertiesSet()|",
+    "called": "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///org/springframework/web/filter/GenericFilterBean/afterPropertiesSet()|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.0.7.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/rememberme/AbstractRememberMeServices/decodeCookie(java.lang.String)|",
+    "called": "|java+method:///org/springframework/util/StringUtils/delimitedListToStringArray(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/equalsIgnoreCase(java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///org/springframework/util/StringUtils/delimitedListToStringArray(java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/springframework/security/web/authentication/rememberme/InvalidCookieException/InvalidCookieException(java.lang.String)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///org/springframework/security/core/codec/Base64/decode(byte%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/security/core/codec/Base64/isBase64(byte%5B%5D)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D)|",
+      "|java+method:///java/lang/String/getBytes()|",
+      "|java+method:///java/lang/System/arraycopy(java.lang.Object,int,java.lang.Object,int,int)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/equalsIgnoreCase(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/security/crypto/codec/Base64/isBase64(byte%5B%5D)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///org/springframework/util/StringUtils/delimitedListToStringArray(java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/springframework/security/web/authentication/rememberme/InvalidCookieException/InvalidCookieException(java.lang.String)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D)|",
+      "|java+method:///java/lang/String/getBytes()|",
+      "|java+method:///java/lang/System/arraycopy(java.lang.Object,int,java.lang.Object,int,int)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/springframework/security/crypto/codec/Base64/decode(byte%5B%5D)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.0.7.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/AnonymousAuthenticationFilter/afterPropertiesSet()|",
+    "called": "|java+method:///org/springframework/util/Assert/hasLength(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/springframework/util/Assert/hasLength(java.lang.String)|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/util/Assert/hasLength(java.lang.String)|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.0.7.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/rememberme/TokenBasedRememberMeServices/onLoginSuccess(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.security.core.Authentication)|",
+    "called": "|java+method:///org/springframework/util/StringUtils/hasLength(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/TokenBasedRememberMeServices/makeTokenSignature(long,java.lang.String,java.lang.String)|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/TokenBasedRememberMeServices/retrieveUserName(org.springframework.security.core.Authentication)|",
+      "|java+method:///java/lang/Long/toString(long)|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/TokenBasedRememberMeServices/setCookie(java.lang.String%5B%5D,int,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/util/Date/Date(long)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/springframework/util/StringUtils/hasLength(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/TokenBasedRememberMeServices/calculateLoginLifetime(javax.servlet.http.HttpServletRequest,org.springframework.security.core.Authentication)|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/TokenBasedRememberMeServices/retrievePassword(org.springframework.security.core.Authentication)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/System/currentTimeMillis()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/security/core/userdetails/UserDetailsService/loadUserByUsername(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/TokenBasedRememberMeServices/makeTokenSignature(long,java.lang.String,java.lang.String)|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/TokenBasedRememberMeServices/retrieveUserName(org.springframework.security.core.Authentication)|",
+      "|java+method:///java/lang/Long/toString(long)|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+method:///org/springframework/security/core/userdetails/UserDetails/getPassword()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/util/Date/Date(long)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/springframework/util/StringUtils/hasLength(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/TokenBasedRememberMeServices/calculateLoginLifetime(javax.servlet.http.HttpServletRequest,org.springframework.security.core.Authentication)|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/TokenBasedRememberMeServices/retrievePassword(org.springframework.security.core.Authentication)|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/TokenBasedRememberMeServices/getUserDetailsService()|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/TokenBasedRememberMeServices/setCookie(java.lang.String%5B%5D,int,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/System/currentTimeMillis()|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.0.7.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/access/DefaultWebInvocationPrivilegeEvaluator/isAllowed(java.lang.String,java.lang.String,java.lang.String,org.springframework.security.core.Authentication)|",
+    "called": "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///org/springframework/security/access/intercept/AbstractSecurityInterceptor/obtainSecurityMetadataSource()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/springframework/security/access/AccessDecisionManager/decide(org.springframework.security.core.Authentication,java.lang.Object,java.util.Collection)|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+method:///org/springframework/security/web/FilterInvocation/toString()|",
+      "|java+method:///org/springframework/security/access/intercept/AbstractSecurityInterceptor/isRejectPublicInvocations()|",
+      "|java+method:///org/springframework/security/access/intercept/AbstractSecurityInterceptor/getAccessDecisionManager()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/springframework/security/access/SecurityMetadataSource/getAttributes(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/springframework/security/web/access/DefaultWebInvocationPrivilegeEvaluator/createFilterInvocation(java.lang.String,java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///org/springframework/security/access/intercept/AbstractSecurityInterceptor/obtainSecurityMetadataSource()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/springframework/security/web/FilterInvocation/FilterInvocation(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/springframework/security/access/AccessDecisionManager/decide(org.springframework.security.core.Authentication,java.lang.Object,java.util.Collection)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+method:///org/springframework/security/web/FilterInvocation/toString()|",
+      "|java+method:///org/springframework/security/access/intercept/AbstractSecurityInterceptor/isRejectPublicInvocations()|",
+      "|java+method:///org/springframework/security/access/intercept/AbstractSecurityInterceptor/getAccessDecisionManager()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/springframework/security/access/SecurityMetadataSource/getAttributes(java.lang.Object)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.0.7.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/AbstractAuthenticationTargetUrlRequestHandler/setTargetUrlParameter(java.lang.String)|",
+    "called": "|java+method:///org/springframework/util/Assert/hasText(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/springframework/util/StringUtils/hasText(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/util/Assert/hasText(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.0.7.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/PortMapperImpl/setPortMappings(java.util.Map)|",
+    "called": "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Map/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/util/Map/clear()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///java/lang/Integer/Integer(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/Map$Entry/getValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Map/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/util/Map/clear()|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/Integer/valueOf(java.lang.String)|",
+      "|java+method:///java/util/Map$Entry/getValue()|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.0.7.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+constructor:///org/springframework/security/web/authentication/rememberme/AbstractRememberMeServices/AbstractRememberMeServices()|",
+    "called": "|java+method:///org/springframework/util/ReflectionUtils/findMethod(java.lang.Class,java.lang.String,java.lang.Class%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/springframework/security/core/SpringSecurityMessageSource/getAccessor()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///org/springframework/security/web/authentication/WebAuthenticationDetailsSource/WebAuthenticationDetailsSource()|",
+      "|java+constructor:///org/springframework/security/authentication/AccountStatusUserDetailsChecker/AccountStatusUserDetailsChecker()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/springframework/security/core/authority/mapping/NullAuthoritiesMapper/NullAuthoritiesMapper()|",
+      "|java+method:///org/springframework/security/core/SpringSecurityMessageSource/getAccessor()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///org/springframework/security/authentication/AccountStatusUserDetailsChecker/AccountStatusUserDetailsChecker()|",
+      "|java+method:///org/springframework/util/ReflectionUtils/findMethod(java.lang.Class,java.lang.String,java.lang.Class%5B%5D)|",
+      "|java+constructor:///org/springframework/security/web/authentication/WebAuthenticationDetailsSource/WebAuthenticationDetailsSource()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.0.7.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/rememberme/AbstractRememberMeServices/setCookie(java.lang.String%5B%5D,int,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+    "called": "|java+method:///org/springframework/util/ReflectionUtils/invokeMethod(java.lang.reflect.Method,java.lang.Object,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/springframework/security/web/authentication/rememberme/AbstractRememberMeServices/encodeCookie(java.lang.String%5B%5D)|",
+      "|java+method:///javax/servlet/http/Cookie/setMaxAge(int)|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/AbstractRememberMeServices/getCookiePath(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///javax/servlet/http/Cookie/setSecure(boolean)|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/addCookie(javax.servlet.http.Cookie)|",
+      "|java+method:///javax/servlet/http/Cookie/setPath(java.lang.String)|",
+      "|java+constructor:///javax/servlet/http/Cookie/Cookie(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/AbstractRememberMeServices/encodeCookie(java.lang.String%5B%5D)|",
+      "|java+method:///javax/servlet/http/Cookie/setMaxAge(int)|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/AbstractRememberMeServices/getCookiePath(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+method:///javax/servlet/http/Cookie/setSecure(boolean)|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/addCookie(javax.servlet.http.Cookie)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/isSecure()|",
+      "|java+method:///javax/servlet/http/Cookie/setPath(java.lang.String)|",
+      "|java+method:///org/springframework/util/ReflectionUtils/invokeMethod(java.lang.reflect.Method,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+constructor:///javax/servlet/http/Cookie/Cookie(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.0.7.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/AbstractAuthenticationTargetUrlRequestHandler/determineTargetUrl(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+    "called": "|java+method:///org/springframework/util/StringUtils/hasLength(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/util/StringUtils/hasText(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/net/URLDecoder/decode(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getHeader(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getParameter(java.lang.String)|",
+      "|java+method:///org/springframework/security/web/authentication/AbstractAuthenticationTargetUrlRequestHandler/isAlwaysUseDefaultTargetUrl()|",
+      "|java+method:///org/springframework/util/StringUtils/hasLength(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/util/StringUtils/hasText(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getHeader(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getParameter(java.lang.String)|",
+      "|java+method:///org/springframework/security/web/authentication/AbstractAuthenticationTargetUrlRequestHandler/isAlwaysUseDefaultTargetUrl()|",
+      "|java+method:///org/springframework/util/StringUtils/hasLength(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.0.7.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/LoginUrlAuthenticationEntryPoint/afterPropertiesSet()|",
+    "called": "|java+method:///org/springframework/util/StringUtils/hasText(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/springframework/util/StringUtils/hasText(java.lang.String)|",
+      "|java+method:///org/springframework/util/Assert/isTrue(boolean,java.lang.String)|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/springframework/security/web/util/UrlUtils/isValidRedirectUrl(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/security/web/util/UrlUtils/isAbsoluteUrl(java.lang.String)|",
+      "|java+method:///org/springframework/util/StringUtils/hasText(java.lang.String)|",
+      "|java+method:///org/springframework/util/Assert/isTrue(boolean,java.lang.String)|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///org/springframework/security/web/util/UrlUtils/isValidRedirectUrl(java.lang.String)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.0.7.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/preauth/PreAuthenticatedGrantedAuthoritiesAuthenticationDetails/getGrantedAuthorities()|",
+    "called": "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/security/web/authentication/preauth/PreAuthenticatedGrantedAuthoritiesAuthenticationDetails/getGrantedAuthorities()|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.0.7.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl/getTokenForSeries(java.lang.String)|",
+    "called": "|java+method:///org/springframework/jdbc/core/JdbcTemplate/queryForObject(java.lang.String,org.springframework.jdbc.core.RowMapper,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/springframework/jdbc/object/MappingSqlQuery/findObject(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/commons/logging/Log/error(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///org/apache/commons/logging/Log/error(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/jdbc/core/JdbcTemplate/queryForObject(java.lang.String,org.springframework.jdbc.core.RowMapper,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl/getJdbcTemplate()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl$1/JdbcTokenRepositoryImpl$1(org.springframework.security.web.authentication.rememberme.JdbcTokenRepositoryImpl)|",
+      "|java+method:///org/apache/commons/logging/Log/error(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///org/apache/commons/logging/Log/error(java.lang.Object)|"
+    ],
+    "affectedLib": "org.springframework:spring-jdbc:3.1.0.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl/createNewToken(org.springframework.security.web.authentication.rememberme.PersistentRememberMeToken)|",
+    "called": "|java+method:///org/springframework/jdbc/core/JdbcTemplate/update(java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/springframework/security/web/authentication/rememberme/PersistentRememberMeToken/getUsername()|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/PersistentRememberMeToken/getSeries()|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/PersistentRememberMeToken/getTokenValue()|",
+      "|java+method:///org/springframework/jdbc/object/SqlUpdate/update(java.lang.Object%5B%5D)|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/PersistentRememberMeToken/getDate()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/security/web/authentication/rememberme/PersistentRememberMeToken/getUsername()|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/PersistentRememberMeToken/getSeries()|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/PersistentRememberMeToken/getTokenValue()|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl/getJdbcTemplate()|",
+      "|java+method:///org/springframework/jdbc/core/JdbcTemplate/update(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/PersistentRememberMeToken/getDate()|"
+    ],
+    "affectedLib": "org.springframework:spring-jdbc:3.1.0.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl/updateToken(java.lang.String,java.lang.String,java.util.Date)|",
+    "called": "|java+method:///org/springframework/jdbc/core/JdbcTemplate/update(java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/springframework/jdbc/object/SqlUpdate/update(java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/util/Date/Date()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl/getJdbcTemplate()|",
+      "|java+method:///org/springframework/jdbc/core/JdbcTemplate/update(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/util/Date/Date()|"
+    ],
+    "affectedLib": "org.springframework:spring-jdbc:3.1.0.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl/removeUserTokens(java.lang.String)|",
+    "called": "|java+method:///org/springframework/jdbc/core/JdbcTemplate/update(java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/springframework/jdbc/object/SqlUpdate/update(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl/getJdbcTemplate()|",
+      "|java+method:///org/springframework/jdbc/core/JdbcTemplate/update(java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "org.springframework:spring-jdbc:3.1.0.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl/initDao()|",
+    "called": "|java+method:///org/springframework/jdbc/core/JdbcTemplate/execute(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl$RemoveUserTokens/JdbcTokenRepositoryImpl$RemoveUserTokens(org.springframework.security.web.authentication.rememberme.JdbcTokenRepositoryImpl,javax.sql.DataSource)|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl/getJdbcTemplate()|",
+      "|java+constructor:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl$TokensBySeriesMapping/JdbcTokenRepositoryImpl$TokensBySeriesMapping(org.springframework.security.web.authentication.rememberme.JdbcTokenRepositoryImpl,javax.sql.DataSource)|",
+      "|java+method:///org/springframework/jdbc/core/JdbcTemplate/execute(java.lang.String)|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl/getDataSource()|",
+      "|java+constructor:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl$InsertToken/JdbcTokenRepositoryImpl$InsertToken(org.springframework.security.web.authentication.rememberme.JdbcTokenRepositoryImpl,javax.sql.DataSource)|",
+      "|java+constructor:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl$UpdateToken/JdbcTokenRepositoryImpl$UpdateToken(org.springframework.security.web.authentication.rememberme.JdbcTokenRepositoryImpl,javax.sql.DataSource)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl/getJdbcTemplate()|",
+      "|java+method:///org/springframework/jdbc/core/JdbcTemplate/execute(java.lang.String)|"
+    ],
+    "affectedLib": "org.springframework:spring-jdbc:3.1.0.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/www/DigestAuthenticationFilter/doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)|",
+    "called": "|java+method:///org/springframework/context/support/MessageSourceAccessor/getMessage(java.lang.String,java.lang.Object%5B%5D,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/springframework/context/support/MessageSourceAccessor/getMessage(java.lang.String,java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getHeader(java.lang.String)|",
+      "|java+method:///org/springframework/security/core/userdetails/UserCache/getUserFromCache(java.lang.String)|",
+      "|java+method:///org/springframework/security/web/authentication/www/DigestAuthenticationEntryPoint/getRealmName()|",
+      "|java+method:///org/springframework/security/web/authentication/www/DigestAuthUtils/md5Hex(java.lang.String)|",
+      "|java+constructor:///org/springframework/security/authentication/BadCredentialsException/BadCredentialsException(java.lang.String)|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/springframework/util/StringUtils/delimitedListToStringArray(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///java/lang/String/getBytes()|",
+      "|java+constructor:///org/springframework/security/authentication/AuthenticationServiceException/AuthenticationServiceException(java.lang.String)|",
+      "|java+method:///org/springframework/security/core/codec/Base64/decode(byte%5B%5D)|",
+      "|java+method:///javax/servlet/FilterChain/doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse)|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///org/springframework/security/web/authentication/www/DigestAuthUtils/generateDigest(boolean,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///org/springframework/security/web/authentication/www/DigestAuthUtils/splitEachArrayElementAndCreateMap(java.lang.String%5B%5D,java.lang.String,java.lang.String)|",
+      "|java+method:///org/springframework/security/core/userdetails/UserDetailsService/loadUserByUsername(java.lang.String)|",
+      "|java+constructor:///org/springframework/security/authentication/UsernamePasswordAuthenticationToken/UsernamePasswordAuthenticationToken(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/springframework/context/support/MessageSourceAccessor/getMessage(java.lang.String,java.lang.Object%5B%5D,java.lang.String)|",
+      "|java+constructor:///org/springframework/security/authentication/UsernamePasswordAuthenticationToken/UsernamePasswordAuthenticationToken(java.lang.Object,java.lang.Object,java.util.Collection)|",
+      "|java+method:///org/springframework/security/web/authentication/www/DigestAuthUtils/splitIgnoringQuotes(java.lang.String,char)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/security/core/codec/Base64/isBase64(byte%5B%5D)|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/springframework/security/core/context/SecurityContext/setAuthentication(org.springframework.security.core.Authentication)|",
+      "|java+method:///org/springframework/security/web/authentication/www/DigestAuthenticationEntryPoint/getKey()|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/getContext()|",
+      "|java+constructor:///org/springframework/security/web/authentication/www/NonceExpiredException/NonceExpiredException(java.lang.String)|",
+      "|java+method:///org/springframework/security/core/userdetails/UserDetails/getPassword()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///org/springframework/security/authentication/AuthenticationDetailsSource/buildDetails(java.lang.Object)|",
+      "|java+method:///org/springframework/security/web/authentication/www/DigestAuthenticationFilter/fail(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.security.core.AuthenticationException)|",
+      "|java+method:///org/springframework/security/authentication/UsernamePasswordAuthenticationToken/setDetails(java.lang.Object)|",
+      "|java+method:///org/springframework/security/core/userdetails/UserCache/putUserInCache(org.springframework.security.core.userdetails.UserDetails)|",
+      "|java+constructor:///java/lang/Long/Long(java.lang.String)|",
+      "|java+method:///org/springframework/security/web/authentication/www/DigestAuthenticationFilter/getAuthenticationEntryPoint()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getMethod()|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/springframework/security/core/userdetails/UserDetails/getAuthorities()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/context/support/MessageSourceAccessor/getMessage(java.lang.String,java.lang.String)|",
+      "|java+method:///org/springframework/security/core/userdetails/UserDetailsService/loadUserByUsername(java.lang.String)|",
+      "|java+method:///org/springframework/context/support/MessageSourceAccessor/getMessage(java.lang.String,java.lang.Object%5B%5D,java.lang.String)|",
+      "|java+method:///org/springframework/security/core/userdetails/UserCache/getUserFromCache(java.lang.String)|",
+      "|java+method:///org/springframework/security/web/authentication/www/DigestAuthenticationEntryPoint/getRealmName()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/security/web/authentication/www/DigestAuthenticationFilter$DigestData/getUsername()|",
+      "|java+method:///org/springframework/security/web/authentication/www/DigestAuthenticationFilter$DigestData/calculateServerDigest(java.lang.String,java.lang.String)|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/getContext()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/springframework/security/web/authentication/www/DigestAuthenticationFilter/fail(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.security.core.AuthenticationException)|",
+      "|java+method:///org/springframework/security/core/userdetails/UserCache/putUserInCache(org.springframework.security.core.userdetails.UserDetails)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///org/springframework/security/web/authentication/www/DigestAuthenticationFilter$DigestData/isNonceExpired()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getMethod()|",
+      "|java+constructor:///org/springframework/security/authentication/AuthenticationServiceException/AuthenticationServiceException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/springframework/security/web/authentication/www/DigestAuthenticationFilter$DigestData/DigestAuthenticationFilter$DigestData(org.springframework.security.web.authentication.www.DigestAuthenticationFilter,java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getHeader(java.lang.String)|",
+      "|java+method:///javax/servlet/FilterChain/doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse)|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+method:///org/springframework/security/web/authentication/www/DigestAuthenticationFilter/createSuccessfulAuthentication(javax.servlet.http.HttpServletRequest,org.springframework.security.core.userdetails.UserDetails)|",
+      "|java+method:///org/springframework/security/core/context/SecurityContext/setAuthentication(org.springframework.security.core.Authentication)|",
+      "|java+method:///org/springframework/security/web/authentication/www/DigestAuthenticationEntryPoint/getKey()|",
+      "|java+constructor:///org/springframework/security/authentication/BadCredentialsException/BadCredentialsException(java.lang.String)|",
+      "|java+method:///org/springframework/security/web/authentication/www/DigestAuthenticationFilter$DigestData/validateAndDecode(java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/springframework/security/web/authentication/www/NonceExpiredException/NonceExpiredException(java.lang.String)|",
+      "|java+method:///org/springframework/security/core/userdetails/UserDetails/getPassword()|",
+      "|java+method:///org/springframework/security/web/authentication/www/DigestAuthenticationFilter$DigestData/getResponse()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|"
+    ],
+    "affectedLib": "org.springframework:spring-context:3.0.6.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/session/ConcurrentSessionControlStrategy/allowableSessionsExceeded(java.util.List,int,org.springframework.security.core.session.SessionRegistry)|",
+    "called": "|java+method:///org/springframework/context/support/MessageSourceAccessor/getMessage(java.lang.String,java.lang.Object%5B%5D,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/springframework/context/support/MessageSourceAccessor/getMessage(java.lang.String,java.lang.Object%5B%5D,java.lang.String)|",
+      "|java+constructor:///java/lang/Integer/Integer(int)|",
+      "|java+method:///org/springframework/security/core/session/SessionInformation/getLastRequest()|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///org/springframework/security/core/session/SessionInformation/expireNow()|",
+      "|java+constructor:///org/springframework/security/web/authentication/session/SessionAuthenticationException/SessionAuthenticationException(java.lang.String)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Date/before(java.util.Date)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/context/support/MessageSourceAccessor/getMessage(java.lang.String,java.lang.Object%5B%5D,java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Date/before(java.util.Date)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/springframework/security/core/session/SessionInformation/getLastRequest()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+constructor:///org/springframework/security/web/authentication/session/SessionAuthenticationException/SessionAuthenticationException(java.lang.String)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/springframework/security/core/session/SessionInformation/expireNow()|"
+    ],
+    "affectedLib": "org.springframework:spring-context:3.0.6.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/switchuser/SwitchUserFilter/createSwitchUserToken(javax.servlet.http.HttpServletRequest,org.springframework.security.core.userdetails.UserDetails)|",
+    "called": "|java+method:///org/springframework/security/core/context/SecurityContextHolder/getContext()|",
+    "v1Body": [
+      "|java+method:///org/springframework/security/core/context/SecurityContext/getAuthentication()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(java.util.Collection)|",
+      "|java+constructor:///org/springframework/security/authentication/UsernamePasswordAuthenticationToken/UsernamePasswordAuthenticationToken(java.lang.Object,java.lang.Object,java.util.Collection)|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/getContext()|",
+      "|java+method:///org/springframework/security/core/userdetails/UserDetails/getPassword()|",
+      "|java+method:///org/springframework/security/authentication/AuthenticationDetailsSource/buildDetails(java.lang.Object)|",
+      "|java+method:///org/springframework/security/authentication/UsernamePasswordAuthenticationToken/setDetails(java.lang.Object)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///org/springframework/security/web/authentication/switchuser/SwitchUserGrantedAuthority/SwitchUserGrantedAuthority(java.lang.String,org.springframework.security.core.Authentication)|",
+      "|java+method:///org/springframework/security/web/authentication/switchuser/SwitchUserAuthorityChanger/modifyGrantedAuthorities(org.springframework.security.core.userdetails.UserDetails,org.springframework.security.core.Authentication,java.util.Collection)|",
+      "|java+method:///org/springframework/security/core/userdetails/UserDetails/getAuthorities()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/security/core/context/SecurityContext/getAuthentication()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(java.util.Collection)|",
+      "|java+constructor:///org/springframework/security/authentication/UsernamePasswordAuthenticationToken/UsernamePasswordAuthenticationToken(java.lang.Object,java.lang.Object,java.util.Collection)|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/getContext()|",
+      "|java+method:///org/springframework/security/core/userdetails/UserDetails/getPassword()|",
+      "|java+method:///org/springframework/security/authentication/AuthenticationDetailsSource/buildDetails(java.lang.Object)|",
+      "|java+method:///org/springframework/security/web/authentication/switchuser/SwitchUserFilter/attemptExitUser(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///org/springframework/security/authentication/UsernamePasswordAuthenticationToken/setDetails(java.lang.Object)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///org/springframework/security/web/authentication/switchuser/SwitchUserGrantedAuthority/SwitchUserGrantedAuthority(java.lang.String,org.springframework.security.core.Authentication)|",
+      "|java+method:///org/springframework/security/web/authentication/switchuser/SwitchUserAuthorityChanger/modifyGrantedAuthorities(org.springframework.security.core.userdetails.UserDetails,org.springframework.security.core.Authentication,java.util.Collection)|",
+      "|java+method:///org/springframework/security/core/userdetails/UserDetails/getAuthorities()|"
+    ],
+    "affectedLib": "org.springframework.security:spring-security-core:3.1.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/logout/SecurityContextLogoutHandler/logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.security.core.Authentication)|",
+    "called": "|java+method:///org/springframework/security/core/context/SecurityContextHolder/clearContext()|",
+    "v1Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getSession(boolean)|",
+      "|java+method:///org/springframework/security/core/context/SecurityContext/setAuthentication(org.springframework.security.core.Authentication)|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/getContext()|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/clearContext()|",
+      "|java+method:///javax/servlet/http/HttpSession/invalidate()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///javax/servlet/http/HttpSession/getId()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getSession(boolean)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/clearContext()|",
+      "|java+method:///javax/servlet/http/HttpSession/invalidate()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.springframework.security:spring-security-core:3.1.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/UsernamePasswordAuthenticationFilter/attemptAuthentication(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+    "called": "|java+constructor:///org/springframework/security/authentication/AuthenticationServiceException/AuthenticationServiceException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/springframework/security/web/authentication/UsernamePasswordAuthenticationFilter/obtainUsername(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///org/springframework/security/web/authentication/UsernamePasswordAuthenticationFilter/getAllowSessionCreation()|",
+      "|java+constructor:///org/springframework/security/authentication/UsernamePasswordAuthenticationToken/UsernamePasswordAuthenticationToken(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/springframework/security/web/authentication/UsernamePasswordAuthenticationFilter/setDetails(javax.servlet.http.HttpServletRequest,org.springframework.security.authentication.UsernamePasswordAuthenticationToken)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getSession(boolean)|",
+      "|java+method:///org/springframework/security/web/util/TextEscapeUtils/escapeEntities(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpSession/setAttribute(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/springframework/security/web/authentication/UsernamePasswordAuthenticationFilter/obtainPassword(javax.servlet.http.HttpServletRequest)|",
+      "|java+constructor:///org/springframework/security/authentication/AuthenticationServiceException/AuthenticationServiceException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getSession()|",
+      "|java+method:///org/springframework/security/web/authentication/UsernamePasswordAuthenticationFilter/getAuthenticationManager()|",
+      "|java+method:///org/springframework/security/authentication/AuthenticationManager/authenticate(org.springframework.security.core.Authentication)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getMethod()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/security/web/authentication/UsernamePasswordAuthenticationFilter/obtainUsername(javax.servlet.http.HttpServletRequest)|",
+      "|java+constructor:///org/springframework/security/authentication/UsernamePasswordAuthenticationToken/UsernamePasswordAuthenticationToken(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/springframework/security/web/authentication/UsernamePasswordAuthenticationFilter/setDetails(javax.servlet.http.HttpServletRequest,org.springframework.security.authentication.UsernamePasswordAuthenticationToken)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/springframework/security/web/authentication/UsernamePasswordAuthenticationFilter/getAuthenticationManager()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/springframework/security/web/authentication/UsernamePasswordAuthenticationFilter/obtainPassword(javax.servlet.http.HttpServletRequest)|",
+      "|java+constructor:///org/springframework/security/authentication/AuthenticationServiceException/AuthenticationServiceException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///org/springframework/security/authentication/AuthenticationManager/authenticate(org.springframework.security.core.Authentication)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getMethod()|"
+    ],
+    "affectedLib": "org.springframework.security:spring-security-core:3.1.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/rememberme/TokenBasedRememberMeServices/bytesUtf8(java.lang.String)|",
+    "called": "|java+method:///org/springframework/security/crypto/codec/Utf8/encode(java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/String/getBytes(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/security/crypto/codec/Utf8/encode(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "org.springframework.security:spring-security-core:3.1.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/session/SessionManagementFilter/doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)|",
+    "called": "|java+method:///org/springframework/security/core/context/SecurityContextHolder/clearContext()|",
+    "v1Body": [
+      "|java+method:///org/springframework/security/core/context/SecurityContext/getAuthentication()|",
+      "|java+method:///org/springframework/security/web/context/SecurityContextRepository/saveContext(org.springframework.security.core.context.SecurityContext,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///org/springframework/security/authentication/AuthenticationTrustResolver/isAnonymous(org.springframework.security.core.Authentication)|",
+      "|java+method:///org/springframework/security/web/RedirectStrategy/sendRedirect(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/getContext()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/isRequestedSessionIdValid()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getSession()|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/clearContext()|",
+      "|java+method:///org/springframework/security/web/authentication/AuthenticationFailureHandler/onAuthenticationFailure(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.security.core.AuthenticationException)|",
+      "|java+method:///org/springframework/security/web/authentication/session/SessionAuthenticationStrategy/onAuthentication(org.springframework.security.core.Authentication,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///javax/servlet/FilterChain/doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse)|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getAttribute(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRequestedSessionId()|",
+      "|java+method:///org/springframework/security/web/context/SecurityContextRepository/containsContext(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/setAttribute(java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/security/core/context/SecurityContext/getAuthentication()|",
+      "|java+method:///org/springframework/security/web/context/SecurityContextRepository/saveContext(org.springframework.security.core.context.SecurityContext,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///org/springframework/security/authentication/AuthenticationTrustResolver/isAnonymous(org.springframework.security.core.Authentication)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/security/web/session/InvalidSessionStrategy/onInvalidSessionDetected(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/getContext()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/isRequestedSessionIdValid()|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/clearContext()|",
+      "|java+method:///org/springframework/security/web/authentication/AuthenticationFailureHandler/onAuthenticationFailure(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.security.core.AuthenticationException)|",
+      "|java+method:///org/springframework/security/web/authentication/session/SessionAuthenticationStrategy/onAuthentication(org.springframework.security.core.Authentication,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///javax/servlet/FilterChain/doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse)|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getAttribute(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRequestedSessionId()|",
+      "|java+method:///org/springframework/security/web/context/SecurityContextRepository/containsContext(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/setAttribute(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "org.springframework.security:spring-security-core:3.1.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+constructor:///org/springframework/security/web/authentication/AbstractAuthenticationProcessingFilter/AbstractAuthenticationProcessingFilter(java.lang.String)|",
+    "called": "|java+method:///org/springframework/security/core/SpringSecurityMessageSource/getAccessor()|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/security/web/authentication/session/NullAuthenticatedSessionStrategy/NullAuthenticatedSessionStrategy()|",
+      "|java+method:///org/springframework/security/core/SpringSecurityMessageSource/getAccessor()|",
+      "|java+constructor:///org/springframework/security/web/authentication/WebAuthenticationDetailsSource/WebAuthenticationDetailsSource()|",
+      "|java+constructor:///org/springframework/web/filter/GenericFilterBean/GenericFilterBean()|",
+      "|java+constructor:///org/springframework/security/web/authentication/SimpleUrlAuthenticationFailureHandler/SimpleUrlAuthenticationFailureHandler()|",
+      "|java+constructor:///org/springframework/security/web/authentication/SavedRequestAwareAuthenticationSuccessHandler/SavedRequestAwareAuthenticationSuccessHandler()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/springframework/security/web/authentication/session/NullAuthenticatedSessionStrategy/NullAuthenticatedSessionStrategy()|",
+      "|java+method:///org/springframework/security/core/SpringSecurityMessageSource/getAccessor()|",
+      "|java+constructor:///org/springframework/web/filter/GenericFilterBean/GenericFilterBean()|",
+      "|java+constructor:///org/springframework/security/web/authentication/SimpleUrlAuthenticationFailureHandler/SimpleUrlAuthenticationFailureHandler()|",
+      "|java+constructor:///org/springframework/security/web/authentication/SavedRequestAwareAuthenticationSuccessHandler/SavedRequestAwareAuthenticationSuccessHandler()|",
+      "|java+constructor:///org/springframework/security/web/authentication/NullRememberMeServices/NullRememberMeServices()|",
+      "|java+constructor:///org/springframework/security/web/authentication/WebAuthenticationDetailsSource/WebAuthenticationDetailsSource()|"
+    ],
+    "affectedLib": "org.springframework.security:spring-security-core:3.1.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/rememberme/AbstractRememberMeServices/decodeCookie(java.lang.String)|",
+    "called": "|java+method:///org/springframework/security/crypto/codec/Base64/isBase64(byte%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/equalsIgnoreCase(java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///org/springframework/util/StringUtils/delimitedListToStringArray(java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/springframework/security/web/authentication/rememberme/InvalidCookieException/InvalidCookieException(java.lang.String)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///org/springframework/security/core/codec/Base64/decode(byte%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/security/core/codec/Base64/isBase64(byte%5B%5D)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D)|",
+      "|java+method:///java/lang/String/getBytes()|",
+      "|java+method:///java/lang/System/arraycopy(java.lang.Object,int,java.lang.Object,int,int)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/equalsIgnoreCase(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/security/crypto/codec/Base64/isBase64(byte%5B%5D)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///org/springframework/util/StringUtils/delimitedListToStringArray(java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/springframework/security/web/authentication/rememberme/InvalidCookieException/InvalidCookieException(java.lang.String)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D)|",
+      "|java+method:///java/lang/String/getBytes()|",
+      "|java+method:///java/lang/System/arraycopy(java.lang.Object,int,java.lang.Object,int,int)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/springframework/security/crypto/codec/Base64/decode(byte%5B%5D)|"
+    ],
+    "affectedLib": "org.springframework.security:spring-security-core:3.1.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+constructor:///org/springframework/security/web/access/expression/DefaultWebSecurityExpressionHandler/DefaultWebSecurityExpressionHandler()|",
+    "called": "|java+constructor:///org/springframework/security/access/expression/AbstractSecurityExpressionHandler/AbstractSecurityExpressionHandler()|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/security/authentication/AuthenticationTrustResolverImpl/AuthenticationTrustResolverImpl()|",
+      "|java+constructor:///org/springframework/expression/spel/standard/SpelExpressionParser/SpelExpressionParser()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/springframework/security/access/expression/AbstractSecurityExpressionHandler/AbstractSecurityExpressionHandler()|"
+    ],
+    "affectedLib": "org.springframework.security:spring-security-core:3.1.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/preauth/AbstractPreAuthenticatedProcessingFilter/unsuccessfulAuthentication(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.security.core.AuthenticationException)|",
+    "called": "|java+method:///org/springframework/security/core/context/SecurityContextHolder/clearContext()|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+method:///javax/servlet/http/HttpSession/setAttribute(java.lang.String,java.lang.Object)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getSession()|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/clearContext()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/clearContext()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/setAttribute(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "org.springframework.security:spring-security-core:3.1.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/context/HttpSessionSecurityContextRepository/generateNewContext()|",
+    "called": "|java+method:///org/springframework/security/core/context/SecurityContextHolder/createEmptyContext()|",
+    "v1Body": [
+      "|java+method:///org/springframework/util/ReflectionUtils/handleReflectionException(java.lang.Exception)|",
+      "|java+method:///java/lang/Class/newInstance()|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/createEmptyContext()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/createEmptyContext()|"
+    ],
+    "affectedLib": "org.springframework.security:spring-security-core:3.1.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/preauth/websphere/WebSpherePreAuthenticatedAuthenticationDetailsSource/buildDetails(java.lang.Object)|",
+    "called": "|java+method:///org/springframework/security/authentication/AuthenticationDetailsSourceImpl/buildDetails(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/springframework/security/core/authority/MutableGrantedAuthoritiesContainer/setGrantedAuthorities(java.util.List)|",
+      "|java+method:///org/springframework/security/web/authentication/preauth/websphere/WebSpherePreAuthenticatedAuthenticationDetailsSource/getWebSphereGroupsBasedGrantedAuthorities()|",
+      "|java+method:///org/springframework/security/authentication/AuthenticationDetailsSourceImpl/buildDetails(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/security/core/authority/MutableGrantedAuthoritiesContainer/setGrantedAuthorities(java.util.Collection)|",
+      "|java+method:///org/springframework/security/web/authentication/preauth/websphere/WebSpherePreAuthenticatedAuthenticationDetailsSource/getWebSphereGroupsBasedGrantedAuthorities()|",
+      "|java+method:///org/springframework/security/authentication/AuthenticationDetailsSourceImpl/buildDetails(java.lang.Object)|"
+    ],
+    "affectedLib": "org.springframework.security:spring-security-core:3.1.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/rememberme/RememberMeAuthenticationFilter/doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)|",
+    "called": "|java+method:///org/springframework/security/core/context/SecurityContextHolder/getContext()|",
+    "v1Body": [
+      "|java+method:///org/springframework/security/core/context/SecurityContext/getAuthentication()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/security/web/authentication/RememberMeServices/autoLogin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/getContext()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/RememberMeAuthenticationFilter/onSuccessfulAuthentication(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.security.core.Authentication)|",
+      "|java+constructor:///org/springframework/security/authentication/event/InteractiveAuthenticationSuccessEvent/InteractiveAuthenticationSuccessEvent(org.springframework.security.core.Authentication,java.lang.Class)|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/RememberMeAuthenticationFilter/onUnsuccessfulAuthentication(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.security.core.AuthenticationException)|",
+      "|java+method:///org/springframework/context/ApplicationEventPublisher/publishEvent(org.springframework.context.ApplicationEvent)|",
+      "|java+method:///org/springframework/security/web/authentication/RememberMeServices/loginFail(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///javax/servlet/FilterChain/doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse)|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+method:///org/springframework/security/core/context/SecurityContext/setAuthentication(org.springframework.security.core.Authentication)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/springframework/security/authentication/AuthenticationManager/authenticate(org.springframework.security.core.Authentication)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/security/core/context/SecurityContext/getAuthentication()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/security/web/authentication/RememberMeServices/autoLogin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/getContext()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/RememberMeAuthenticationFilter/onSuccessfulAuthentication(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.security.core.Authentication)|",
+      "|java+constructor:///org/springframework/security/authentication/event/InteractiveAuthenticationSuccessEvent/InteractiveAuthenticationSuccessEvent(org.springframework.security.core.Authentication,java.lang.Class)|",
+      "|java+method:///org/springframework/security/web/authentication/rememberme/RememberMeAuthenticationFilter/onUnsuccessfulAuthentication(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.security.core.AuthenticationException)|",
+      "|java+method:///org/springframework/context/ApplicationEventPublisher/publishEvent(org.springframework.context.ApplicationEvent)|",
+      "|java+method:///org/springframework/security/web/authentication/AuthenticationSuccessHandler/onAuthenticationSuccess(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.security.core.Authentication)|",
+      "|java+method:///org/springframework/security/web/authentication/RememberMeServices/loginFail(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///javax/servlet/FilterChain/doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse)|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+method:///org/springframework/security/core/context/SecurityContext/setAuthentication(org.springframework.security.core.Authentication)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/springframework/security/authentication/AuthenticationManager/authenticate(org.springframework.security.core.Authentication)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "org.springframework.security:spring-security-core:3.1.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/www/DigestAuthenticationEntryPoint/commence(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.security.core.AuthenticationException)|",
+    "called": "|java+method:///org/springframework/security/crypto/codec/Base64/encode(byte%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/sendError(int,java.lang.String)|",
+      "|java+method:///org/springframework/security/core/codec/Base64/encode(byte%5B%5D)|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/addHeader(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/security/web/authentication/www/DigestAuthUtils/md5Hex(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+method:///org/springframework/security/core/AuthenticationException/getMessage()|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+constructor:///java/lang/String/String(java.lang.String)|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///java/lang/String/getBytes()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/sendError(int,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/security/web/authentication/www/DigestAuthUtils/md5Hex(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+method:///org/springframework/security/core/AuthenticationException/getMessage()|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///java/lang/String/getBytes()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/springframework/security/crypto/codec/Base64/encode(byte%5B%5D)|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/addHeader(java.lang.String,java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D)|"
+    ],
+    "affectedLib": "org.springframework.security:spring-security-core:3.1.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/rememberme/AbstractRememberMeServices/encodeCookie(java.lang.String%5B%5D)|",
+    "called": "|java+method:///org/springframework/security/crypto/codec/Base64/encode(byte%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/springframework/security/core/codec/Base64/encode(byte%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/deleteCharAt(int)|",
+      "|java+method:///java/lang/StringBuilder/length()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D)|",
+      "|java+method:///java/lang/String/getBytes()|",
+      "|java+method:///java/lang/StringBuilder/charAt(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/security/crypto/codec/Base64/encode(byte%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/deleteCharAt(int)|",
+      "|java+method:///java/lang/StringBuilder/length()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D)|",
+      "|java+method:///java/lang/String/getBytes()|",
+      "|java+method:///java/lang/StringBuilder/charAt(int)|"
+    ],
+    "affectedLib": "org.springframework.security:spring-security-core:3.1.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/rememberme/AbstractRememberMeServices/createSuccessfulAuthentication(javax.servlet.http.HttpServletRequest,org.springframework.security.core.userdetails.UserDetails)|",
+    "called": "|java+constructor:///org/springframework/security/authentication/RememberMeAuthenticationToken/RememberMeAuthenticationToken(java.lang.String,java.lang.Object,java.util.Collection)|",
+    "v1Body": [
+      "|java+method:///org/springframework/security/authentication/AuthenticationDetailsSource/buildDetails(java.lang.Object)|",
+      "|java+method:///org/springframework/security/core/userdetails/UserDetails/getAuthorities()|",
+      "|java+method:///org/springframework/security/authentication/RememberMeAuthenticationToken/setDetails(java.lang.Object)|",
+      "|java+constructor:///org/springframework/security/authentication/RememberMeAuthenticationToken/RememberMeAuthenticationToken(java.lang.String,java.lang.Object,java.util.Collection)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/security/core/authority/mapping/GrantedAuthoritiesMapper/mapAuthorities(java.util.Collection)|",
+      "|java+method:///org/springframework/security/authentication/AuthenticationDetailsSource/buildDetails(java.lang.Object)|",
+      "|java+method:///org/springframework/security/core/userdetails/UserDetails/getAuthorities()|",
+      "|java+method:///org/springframework/security/authentication/RememberMeAuthenticationToken/setDetails(java.lang.Object)|",
+      "|java+constructor:///org/springframework/security/authentication/RememberMeAuthenticationToken/RememberMeAuthenticationToken(java.lang.String,java.lang.Object,java.util.Collection)|"
+    ],
+    "affectedLib": "org.springframework.security:spring-security-core:3.1.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+constructor:///org/springframework/security/web/authentication/preauth/j2ee/J2eeBasedPreAuthenticatedWebAuthenticationDetailsSource/J2eeBasedPreAuthenticatedWebAuthenticationDetailsSource()|",
+    "called": "|java+constructor:///org/springframework/security/core/authority/mapping/SimpleAttributes2GrantedAuthoritiesMapper/SimpleAttributes2GrantedAuthoritiesMapper()|",
+    "v1Body": [
+      "|java+method:///org/springframework/security/web/authentication/preauth/j2ee/AbstractPreAuthenticatedAuthenticationDetailsSource/setClazz(java.lang.Class)|",
+      "|java+constructor:///org/springframework/security/web/authentication/preauth/j2ee/AbstractPreAuthenticatedAuthenticationDetailsSource/AbstractPreAuthenticatedAuthenticationDetailsSource()|",
+      "|java+constructor:///org/springframework/security/core/authority/mapping/SimpleAttributes2GrantedAuthoritiesMapper/SimpleAttributes2GrantedAuthoritiesMapper()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///org/springframework/security/core/authority/mapping/SimpleAttributes2GrantedAuthoritiesMapper/SimpleAttributes2GrantedAuthoritiesMapper()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "affectedLib": "org.springframework.security:spring-security-core:3.1.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/www/DigestAuthenticationFilter/doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)|",
+    "called": "|java+constructor:///org/springframework/security/authentication/BadCredentialsException/BadCredentialsException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/springframework/context/support/MessageSourceAccessor/getMessage(java.lang.String,java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getHeader(java.lang.String)|",
+      "|java+method:///org/springframework/security/core/userdetails/UserCache/getUserFromCache(java.lang.String)|",
+      "|java+method:///org/springframework/security/web/authentication/www/DigestAuthenticationEntryPoint/getRealmName()|",
+      "|java+method:///org/springframework/security/web/authentication/www/DigestAuthUtils/md5Hex(java.lang.String)|",
+      "|java+constructor:///org/springframework/security/authentication/BadCredentialsException/BadCredentialsException(java.lang.String)|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/springframework/util/StringUtils/delimitedListToStringArray(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///java/lang/String/getBytes()|",
+      "|java+constructor:///org/springframework/security/authentication/AuthenticationServiceException/AuthenticationServiceException(java.lang.String)|",
+      "|java+method:///org/springframework/security/core/codec/Base64/decode(byte%5B%5D)|",
+      "|java+method:///javax/servlet/FilterChain/doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse)|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///org/springframework/security/web/authentication/www/DigestAuthUtils/generateDigest(boolean,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///org/springframework/security/web/authentication/www/DigestAuthUtils/splitEachArrayElementAndCreateMap(java.lang.String%5B%5D,java.lang.String,java.lang.String)|",
+      "|java+method:///org/springframework/security/core/userdetails/UserDetailsService/loadUserByUsername(java.lang.String)|",
+      "|java+constructor:///org/springframework/security/authentication/UsernamePasswordAuthenticationToken/UsernamePasswordAuthenticationToken(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/springframework/context/support/MessageSourceAccessor/getMessage(java.lang.String,java.lang.Object%5B%5D,java.lang.String)|",
+      "|java+constructor:///org/springframework/security/authentication/UsernamePasswordAuthenticationToken/UsernamePasswordAuthenticationToken(java.lang.Object,java.lang.Object,java.util.Collection)|",
+      "|java+method:///org/springframework/security/web/authentication/www/DigestAuthUtils/splitIgnoringQuotes(java.lang.String,char)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/security/core/codec/Base64/isBase64(byte%5B%5D)|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/springframework/security/core/context/SecurityContext/setAuthentication(org.springframework.security.core.Authentication)|",
+      "|java+method:///org/springframework/security/web/authentication/www/DigestAuthenticationEntryPoint/getKey()|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/getContext()|",
+      "|java+constructor:///org/springframework/security/web/authentication/www/NonceExpiredException/NonceExpiredException(java.lang.String)|",
+      "|java+method:///org/springframework/security/core/userdetails/UserDetails/getPassword()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///org/springframework/security/authentication/AuthenticationDetailsSource/buildDetails(java.lang.Object)|",
+      "|java+method:///org/springframework/security/web/authentication/www/DigestAuthenticationFilter/fail(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.security.core.AuthenticationException)|",
+      "|java+method:///org/springframework/security/authentication/UsernamePasswordAuthenticationToken/setDetails(java.lang.Object)|",
+      "|java+method:///org/springframework/security/core/userdetails/UserCache/putUserInCache(org.springframework.security.core.userdetails.UserDetails)|",
+      "|java+constructor:///java/lang/Long/Long(java.lang.String)|",
+      "|java+method:///org/springframework/security/web/authentication/www/DigestAuthenticationFilter/getAuthenticationEntryPoint()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getMethod()|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/springframework/security/core/userdetails/UserDetails/getAuthorities()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/context/support/MessageSourceAccessor/getMessage(java.lang.String,java.lang.String)|",
+      "|java+method:///org/springframework/security/core/userdetails/UserDetailsService/loadUserByUsername(java.lang.String)|",
+      "|java+method:///org/springframework/context/support/MessageSourceAccessor/getMessage(java.lang.String,java.lang.Object%5B%5D,java.lang.String)|",
+      "|java+method:///org/springframework/security/core/userdetails/UserCache/getUserFromCache(java.lang.String)|",
+      "|java+method:///org/springframework/security/web/authentication/www/DigestAuthenticationEntryPoint/getRealmName()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/security/web/authentication/www/DigestAuthenticationFilter$DigestData/getUsername()|",
+      "|java+method:///org/springframework/security/web/authentication/www/DigestAuthenticationFilter$DigestData/calculateServerDigest(java.lang.String,java.lang.String)|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/getContext()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/springframework/security/web/authentication/www/DigestAuthenticationFilter/fail(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.security.core.AuthenticationException)|",
+      "|java+method:///org/springframework/security/core/userdetails/UserCache/putUserInCache(org.springframework.security.core.userdetails.UserDetails)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///org/springframework/security/web/authentication/www/DigestAuthenticationFilter$DigestData/isNonceExpired()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getMethod()|",
+      "|java+constructor:///org/springframework/security/authentication/AuthenticationServiceException/AuthenticationServiceException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/springframework/security/web/authentication/www/DigestAuthenticationFilter$DigestData/DigestAuthenticationFilter$DigestData(org.springframework.security.web.authentication.www.DigestAuthenticationFilter,java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getHeader(java.lang.String)|",
+      "|java+method:///javax/servlet/FilterChain/doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse)|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+method:///org/springframework/security/web/authentication/www/DigestAuthenticationFilter/createSuccessfulAuthentication(javax.servlet.http.HttpServletRequest,org.springframework.security.core.userdetails.UserDetails)|",
+      "|java+method:///org/springframework/security/core/context/SecurityContext/setAuthentication(org.springframework.security.core.Authentication)|",
+      "|java+method:///org/springframework/security/web/authentication/www/DigestAuthenticationEntryPoint/getKey()|",
+      "|java+constructor:///org/springframework/security/authentication/BadCredentialsException/BadCredentialsException(java.lang.String)|",
+      "|java+method:///org/springframework/security/web/authentication/www/DigestAuthenticationFilter$DigestData/validateAndDecode(java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/springframework/security/web/authentication/www/NonceExpiredException/NonceExpiredException(java.lang.String)|",
+      "|java+method:///org/springframework/security/core/userdetails/UserDetails/getPassword()|",
+      "|java+method:///org/springframework/security/web/authentication/www/DigestAuthenticationFilter$DigestData/getResponse()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|"
+    ],
+    "affectedLib": "org.springframework.security:spring-security-core:3.1.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/preauth/AbstractPreAuthenticatedProcessingFilter/requiresAuthentication(javax.servlet.http.HttpServletRequest)|",
+    "called": "|java+method:///org/springframework/security/core/context/SecurityContextHolder/getContext()|",
+    "v1Body": [
+      "|java+method:///org/springframework/security/core/context/SecurityContext/getAuthentication()|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/security/core/Authentication/getName()|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/getContext()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///javax/servlet/http/HttpSession/invalidate()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getSession(boolean)|",
+      "|java+method:///org/springframework/security/web/authentication/preauth/AbstractPreAuthenticatedProcessingFilter/getPreAuthenticatedPrincipal(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/clearContext()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/security/core/context/SecurityContext/getAuthentication()|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/security/core/Authentication/getName()|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/getContext()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getSession()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///javax/servlet/http/HttpSession/invalidate()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getSession(boolean)|",
+      "|java+method:///org/springframework/security/web/authentication/preauth/AbstractPreAuthenticatedProcessingFilter/getPreAuthenticatedPrincipal(javax.servlet.http.HttpServletRequest)|"
+    ],
+    "affectedLib": "org.springframework.security:spring-security-core:3.1.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/AnonymousAuthenticationFilter/createAuthentication(javax.servlet.http.HttpServletRequest)|",
+    "called": "|java+constructor:///org/springframework/security/authentication/AnonymousAuthenticationToken/AnonymousAuthenticationToken(java.lang.String,java.lang.Object,java.util.Collection)|",
+    "v1Body": [
+      "|java+method:///org/springframework/security/core/userdetails/memory/UserAttribute/getPassword()|",
+      "|java+method:///org/springframework/security/authentication/AnonymousAuthenticationToken/setDetails(java.lang.Object)|",
+      "|java+method:///org/springframework/security/authentication/AuthenticationDetailsSource/buildDetails(java.lang.Object)|",
+      "|java+constructor:///org/springframework/security/authentication/AnonymousAuthenticationToken/AnonymousAuthenticationToken(java.lang.String,java.lang.Object,java.util.List)|",
+      "|java+method:///org/springframework/security/core/userdetails/memory/UserAttribute/getAuthorities()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/springframework/security/authentication/AnonymousAuthenticationToken/AnonymousAuthenticationToken(java.lang.String,java.lang.Object,java.util.Collection)|",
+      "|java+method:///org/springframework/security/authentication/AnonymousAuthenticationToken/setDetails(java.lang.Object)|",
+      "|java+method:///org/springframework/security/authentication/AuthenticationDetailsSource/buildDetails(java.lang.Object)|"
+    ],
+    "affectedLib": "org.springframework.security:spring-security-core:3.1.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/rememberme/PersistentTokenBasedRememberMeServices/generateSeriesData()|",
+    "called": "|java+method:///org/springframework/security/crypto/codec/Base64/encode(byte%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/springframework/security/core/codec/Base64/encode(byte%5B%5D)|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D)|",
+      "|java+method:///java/security/SecureRandom/nextBytes(byte%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/security/crypto/codec/Base64/encode(byte%5B%5D)|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D)|",
+      "|java+method:///java/security/SecureRandom/nextBytes(byte%5B%5D)|"
+    ],
+    "affectedLib": "org.springframework.security:spring-security-core:3.1.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/www/BasicAuthenticationFilter/doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)|",
+    "called": "|java+method:///org/springframework/security/core/context/SecurityContextHolder/clearContext()|",
+    "v1Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getHeader(java.lang.String)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+constructor:///org/springframework/security/authentication/UsernamePasswordAuthenticationToken/UsernamePasswordAuthenticationToken(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D,java.lang.String)|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/getContext()|",
+      "|java+method:///org/springframework/security/web/authentication/www/BasicAuthenticationFilter/onUnsuccessfulAuthentication(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.security.core.AuthenticationException)|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+method:///org/springframework/security/web/authentication/www/BasicAuthenticationFilter/authenticationIsRequired(java.lang.String)|",
+      "|java+method:///org/springframework/security/authentication/UsernamePasswordAuthenticationToken/setDetails(java.lang.Object)|",
+      "|java+method:///org/springframework/security/authentication/AuthenticationManager/authenticate(org.springframework.security.core.Authentication)|",
+      "|java+method:///org/springframework/security/web/authentication/RememberMeServices/loginSuccess(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.security.core.Authentication)|",
+      "|java+method:///org/springframework/security/web/authentication/www/BasicAuthenticationFilter/onSuccessfulAuthentication(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.security.core.Authentication)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///javax/servlet/FilterChain/doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse)|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///org/springframework/security/core/AuthenticationException/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+method:///org/springframework/security/web/authentication/www/BasicAuthenticationFilter/getCredentialsCharset(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///org/springframework/security/core/context/SecurityContext/setAuthentication(org.springframework.security.core.Authentication)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/String/indexOf(java.lang.String)|",
+      "|java+method:///java/lang/String/getBytes(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///org/springframework/security/authentication/AuthenticationDetailsSource/buildDetails(java.lang.Object)|",
+      "|java+method:///org/springframework/security/web/AuthenticationEntryPoint/commence(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.security.core.AuthenticationException)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///org/springframework/security/web/authentication/RememberMeServices/loginFail(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///org/springframework/security/core/codec/Base64/decode(byte%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getHeader(java.lang.String)|",
+      "|java+constructor:///org/springframework/security/authentication/UsernamePasswordAuthenticationToken/UsernamePasswordAuthenticationToken(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/getContext()|",
+      "|java+method:///org/springframework/security/web/authentication/www/BasicAuthenticationFilter/onUnsuccessfulAuthentication(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.security.core.AuthenticationException)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/springframework/security/web/authentication/www/BasicAuthenticationFilter/authenticationIsRequired(java.lang.String)|",
+      "|java+method:///org/springframework/security/authentication/AuthenticationDetailsSource/buildDetails(java.lang.Object)|",
+      "|java+method:///org/springframework/security/authentication/UsernamePasswordAuthenticationToken/setDetails(java.lang.Object)|",
+      "|java+method:///org/springframework/security/web/authentication/RememberMeServices/loginSuccess(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.security.core.Authentication)|",
+      "|java+method:///org/springframework/security/web/authentication/RememberMeServices/loginFail(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///javax/servlet/FilterChain/doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse)|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+method:///org/springframework/security/core/context/SecurityContext/setAuthentication(org.springframework.security.core.Authentication)|",
+      "|java+method:///org/springframework/security/web/AuthenticationEntryPoint/commence(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.security.core.AuthenticationException)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/springframework/security/authentication/AuthenticationManager/authenticate(org.springframework.security.core.Authentication)|",
+      "|java+method:///org/springframework/security/web/authentication/www/BasicAuthenticationFilter/extractAndDecodeHeader(java.lang.String,javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/clearContext()|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|",
+      "|java+method:///org/springframework/security/web/authentication/www/BasicAuthenticationFilter/onSuccessfulAuthentication(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.security.core.Authentication)|"
+    ],
+    "affectedLib": "org.springframework.security:spring-security-core:3.1.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/rememberme/PersistentTokenBasedRememberMeServices/generateTokenData()|",
+    "called": "|java+method:///org/springframework/security/crypto/codec/Base64/encode(byte%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/springframework/security/core/codec/Base64/encode(byte%5B%5D)|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D)|",
+      "|java+method:///java/security/SecureRandom/nextBytes(byte%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/security/crypto/codec/Base64/encode(byte%5B%5D)|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D)|",
+      "|java+method:///java/security/SecureRandom/nextBytes(byte%5B%5D)|"
+    ],
+    "affectedLib": "org.springframework.security:spring-security-core:3.1.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+constructor:///org/springframework/security/web/authentication/rememberme/AbstractRememberMeServices/AbstractRememberMeServices()|",
+    "called": "|java+constructor:///org/springframework/security/core/authority/mapping/NullAuthoritiesMapper/NullAuthoritiesMapper()|",
+    "v1Body": [
+      "|java+method:///org/springframework/security/core/SpringSecurityMessageSource/getAccessor()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///org/springframework/security/web/authentication/WebAuthenticationDetailsSource/WebAuthenticationDetailsSource()|",
+      "|java+constructor:///org/springframework/security/authentication/AccountStatusUserDetailsChecker/AccountStatusUserDetailsChecker()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/springframework/security/core/authority/mapping/NullAuthoritiesMapper/NullAuthoritiesMapper()|",
+      "|java+method:///org/springframework/security/core/SpringSecurityMessageSource/getAccessor()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///org/springframework/security/authentication/AccountStatusUserDetailsChecker/AccountStatusUserDetailsChecker()|",
+      "|java+method:///org/springframework/util/ReflectionUtils/findMethod(java.lang.Class,java.lang.String,java.lang.Class%5B%5D)|",
+      "|java+constructor:///org/springframework/security/web/authentication/WebAuthenticationDetailsSource/WebAuthenticationDetailsSource()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "affectedLib": "org.springframework.security:spring-security-core:3.1.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.security:spring-security-web:3.0.8.RELEASE",
+    "coordinatesV2": "org.springframework.security:spring-security-web:3.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/security/web/authentication/preauth/websphere/WebSphere2SpringSecurityPropagationInterceptor/invoke(org.aopalliance.intercept.MethodInvocation)|",
+    "called": "|java+method:///org/springframework/security/core/context/SecurityContextHolder/clearContext()|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///org/springframework/security/web/authentication/preauth/websphere/WebSphere2SpringSecurityPropagationInterceptor/authenticateSpringSecurityWithWASCredentials(java.lang.Object)|",
+      "|java+method:///org/aopalliance/intercept/MethodInvocation/proceed()|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/clearContext()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///org/springframework/security/web/authentication/preauth/websphere/WebSphere2SpringSecurityPropagationInterceptor/authenticateSpringSecurityWithWASCredentials()|",
+      "|java+method:///org/aopalliance/intercept/MethodInvocation/proceed()|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/clearContext()|"
+    ],
+    "affectedLib": "org.springframework.security:spring-security-core:3.1.0.RELEASE",
+    "change": "UPDATED"
+  }
+]

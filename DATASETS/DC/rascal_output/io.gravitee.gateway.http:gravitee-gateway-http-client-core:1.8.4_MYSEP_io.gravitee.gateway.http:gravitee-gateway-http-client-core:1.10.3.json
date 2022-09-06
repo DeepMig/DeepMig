@@ -1,0 +1,80 @@
+[
+  {
+    "coordinatesV1": "io.gravitee.gateway.http:gravitee-gateway-http-client-core:1.10.3",
+    "coordinatesV2": "io.gravitee.gateway.http:gravitee-gateway-http-client-core:1.8.4",
+    "caller": "|java+initializer:///io/gravitee/gateway/http/core/invoker/DefaultHttpInvoker/DefaultHttpInvoker$initializer|",
+    "called": "|java+constructor:///org/apache/commons/codec/net/URLCodec/URLCodec(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/nio/charset/Charset/name()|",
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+method:///java/util/regex/Pattern/compile(java.lang.String)|",
+      "|java+constructor:///org/apache/commons/codec/net/URLCodec/URLCodec(java.lang.String)|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///java/util/Collections/unmodifiableSet(java.util.Set)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/regex/Pattern/compile(java.lang.String)|",
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///java/util/Collections/unmodifiableSet(java.util.Set)|"
+    ],
+    "affectedLib": "commons-codec:commons-codec:1.10",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "io.gravitee.gateway.http:gravitee-gateway-http-client-core:1.10.3",
+    "coordinatesV2": "io.gravitee.gateway.http:gravitee-gateway-http-client-core:1.8.4",
+    "caller": "|java+method:///io/gravitee/gateway/http/core/invoker/DefaultHttpInvoker/encodeQueryParameters(io.gravitee.gateway.api.Request,java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/codec/net/URLCodec/encode(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/commons/codec/net/URLCodec/encode(java.lang.String)|",
+      "|java+method:///java/util/Map/isEmpty()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+method:///java/lang/StringBuilder/length()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/StringBuilder/deleteCharAt(int)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/net/URI/create(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///io/gravitee/gateway/api/Request/parameters()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/net/URI/URI(java.lang.String,java.lang.String,java.lang.String,int,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/net/URL/getProtocol()|",
+      "|java+method:///java/net/URL/getUserInfo()|",
+      "|java+constructor:///java/net/URL/URL(java.lang.String)|",
+      "|java+method:///java/net/URL/getQuery()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///java/net/URL/getPort()|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/net/URL/getPath()|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+method:///java/net/URL/getRef()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/StringBuilder/deleteCharAt(int)|",
+      "|java+method:///io/gravitee/common/util/MultiValueMap/isEmpty()|",
+      "|java+method:///java/lang/StringBuilder/length()|",
+      "|java+method:///java/net/URL/getHost()|",
+      "|java+method:///io/gravitee/common/util/MultiValueMap/entrySet()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///io/gravitee/gateway/api/Request/parameters()|"
+    ],
+    "affectedLib": "commons-codec:commons-codec:1.10",
+    "change": "REMOVED"
+  }
+]

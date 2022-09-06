@@ -1,0 +1,46 @@
+[
+  {
+    "coordinatesV1": "net.databinder:unfiltered-scalatest_2.10:0.6.7",
+    "coordinatesV2": "net.databinder:unfiltered-scalatest_2.10:0.8.2",
+    "caller": "|java+method:///unfiltered/scalatest/jetty/Served$class/withFixture(unfiltered.scalatest.jetty.Served,org.scalatest.Suite$NoArgTest)|",
+    "called": "|java+method:///unfiltered/jetty/Server/start()|",
+    "v1Body": [
+      "|java+method:///unfiltered/jetty/Server/start()|",
+      "|java+method:///unfiltered/scalatest/jetty/Served/server()|",
+      "|java+method:///org/scalatest/Suite$NoArgTest/apply()|",
+      "|java+method:///unfiltered/jetty/Server/stop()|",
+      "|java+method:///unfiltered/jetty/Server/destroy()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/scalatest/Suite$NoArgTest/apply()|",
+      "|java+method:///unfiltered/jetty/Server/stop()|",
+      "|java+method:///unfiltered/jetty/Server/destroy()|",
+      "|java+method:///unfiltered/jetty/Server/start()|",
+      "|java+method:///unfiltered/scalatest/jetty/Served/getServer()|"
+    ],
+    "affectedLib": "net.databinder:unfiltered-jetty_2.10:0.8.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.databinder:unfiltered-scalatest_2.10:0.6.7",
+    "coordinatesV2": "net.databinder:unfiltered-scalatest_2.10:0.8.2",
+    "caller": "|java+method:///unfiltered/scalatest/netty/Served$class/withFixture(unfiltered.scalatest.netty.Served,org.scalatest.Suite$NoArgTest)|",
+    "called": "|java+method:///unfiltered/netty/Server/start()|",
+    "v1Body": [
+      "|java+method:///unfiltered/netty/Server/destroy()|",
+      "|java+method:///unfiltered/netty/Server/stop()|",
+      "|java+method:///unfiltered/netty/Server/start()|",
+      "|java+method:///unfiltered/scalatest/netty/Served/server()|",
+      "|java+method:///org/scalatest/Suite$NoArgTest/apply()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/scalatest/Suite$NoArgTest/apply()|",
+      "|java+method:///unfiltered/netty/Server/destroy()|",
+      "|java+method:///unfiltered/netty/Server/stop()|",
+      "|java+method:///unfiltered/scalatest/netty/Served/getServer()|",
+      "|java+method:///unfiltered/netty/Server/start()|"
+    ],
+    "affectedLib": "net.databinder:unfiltered-netty-server_2.10:0.8.2",
+    "change": "UPDATED"
+  }
+]

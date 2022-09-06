@@ -1,0 +1,185 @@
+[
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-pac4j-authentication:5.0.0",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-pac4j-authentication:5.0.0.M1",
+    "caller": "|java+method:///org/apereo/cas/integration/pac4j/authentication/handler/support/AbstractWrapperAuthenticationHandler/supports(org.apereo.cas.authentication.Credential)|",
+    "called": "|java+method:///org/apereo/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|",
+    "v1Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/apereo/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/booleanValue(java.lang.Object)|",
+      "|java+constructor:///org/apereo/cas/integration/pac4j/authentication/handler/support/AbstractWrapperAuthenticationHandler$AjcClosure1/AbstractWrapperAuthenticationHandler$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apereo/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/isAssignableFrom(java.lang.Class)|",
+      "|java+method:///org/apereo/cas/integration/pac4j/authentication/handler/support/AbstractWrapperAuthenticationHandler/getCasCredentialsType()|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "org.apereo.inspektr:inspektr-aspects:1.5.GA",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-pac4j-authentication:5.0.0.M1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-pac4j-authentication:5.0.0",
+    "caller": "|java+constructor:///org/apereo/cas/integration/pac4j/authentication/handler/support/UsernamePasswordWrapperAuthenticationHandler/UsernamePasswordWrapperAuthenticationHandler()|",
+    "called": "|java+constructor:///org/pac4j/http/credentials/authenticator/test/SimpleTestUsernamePasswordAuthenticator/SimpleTestUsernamePasswordAuthenticator()|",
+    "v1Body": [
+      "|java+method:///org/apereo/cas/integration/pac4j/authentication/handler/support/UsernamePasswordWrapperAuthenticationHandler/setTypedIdUsed(boolean)|",
+      "|java+constructor:///org/apereo/cas/integration/pac4j/authentication/handler/support/AbstractWrapperAuthenticationHandler/AbstractWrapperAuthenticationHandler()|",
+      "|java+constructor:///org/pac4j/http/credentials/authenticator/test/SimpleTestUsernamePasswordAuthenticator/SimpleTestUsernamePasswordAuthenticator()|",
+      "|java+constructor:///org/apereo/cas/authentication/handler/NoOpPrincipalNameTransformer/NoOpPrincipalNameTransformer()|",
+      "|java+constructor:///org/apereo/cas/authentication/handler/PlainTextPasswordEncoder/PlainTextPasswordEncoder()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/security/crypto/password/NoOpPasswordEncoder/getInstance()|",
+      "|java+constructor:///org/apereo/cas/integration/pac4j/authentication/handler/support/AbstractWrapperAuthenticationHandler/AbstractWrapperAuthenticationHandler()|",
+      "|java+constructor:///org/pac4j/http/credentials/authenticator/test/SimpleTestUsernamePasswordAuthenticator/SimpleTestUsernamePasswordAuthenticator()|"
+    ],
+    "affectedLib": "org.pac4j:pac4j-http:1.9.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-pac4j-authentication:5.0.0.M1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-pac4j-authentication:5.0.0",
+    "caller": "|java+method:///org/apereo/cas/integration/pac4j/authentication/handler/support/AbstractWrapperAuthenticationHandler/doAuthentication(org.apereo.cas.authentication.Credential)|",
+    "called": "|java+constructor:///org/apereo/cas/authentication/principal/ClientCredential/ClientCredential(org.pac4j.core.credentials.Credentials)|",
+    "v1Body": [
+      "|java+method:///org/apereo/cas/integration/pac4j/authentication/handler/support/AbstractWrapperAuthenticationHandler/createResult(org.apereo.cas.authentication.principal.ClientCredential,org.pac4j.core.profile.UserProfile)|",
+      "|java+method:///org/pac4j/core/util/CommonHelper/assertNotNull(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/pac4j/core/exception/CredentialsException/getMessage()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///javax/security/auth/login/FailedLoginException/FailedLoginException(java.lang.String)|",
+      "|java+method:///org/pac4j/http/profile/creator/ProfileCreator/create(org.pac4j.core.credentials.Credentials)|",
+      "|java+method:///org/apereo/cas/integration/pac4j/authentication/handler/support/AbstractWrapperAuthenticationHandler/convertToPac4jCredentials(org.apereo.cas.authentication.Credential)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/apereo/cas/authentication/principal/ClientCredential/ClientCredential(org.pac4j.core.credentials.Credentials)|",
+      "|java+method:///org/pac4j/http/credentials/authenticator/Authenticator/validate(org.pac4j.core.credentials.Credentials)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apereo/cas/integration/pac4j/authentication/handler/support/AbstractWrapperAuthenticationHandler/getAuthenticator(org.apereo.cas.authentication.Credential)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apereo/cas/integration/pac4j/authentication/handler/support/AbstractWrapperAuthenticationHandler/createResult(org.apereo.cas.authentication.principal.ClientCredential,org.pac4j.core.profile.UserProfile)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apereo/cas/integration/pac4j/authentication/handler/support/AbstractWrapperAuthenticationHandler/getAuthenticator(org.apereo.cas.authentication.Credential)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///javax/security/auth/login/FailedLoginException/FailedLoginException(java.lang.String)|",
+      "|java+method:///org/pac4j/core/credentials/authenticator/Authenticator/validate(org.pac4j.core.credentials.Credentials,org.pac4j.core.context.WebContext)|",
+      "|java+method:///org/pac4j/core/profile/creator/ProfileCreator/create(org.pac4j.core.credentials.Credentials,org.pac4j.core.context.WebContext)|",
+      "|java+method:///org/pac4j/core/util/InitializableWebObject/init(org.pac4j.core.context.WebContext)|",
+      "|java+method:///org/pac4j/core/util/CommonHelper/assertNotNull(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///org/apereo/cas/authentication/principal/ClientCredential/ClientCredential(org.pac4j.core.credentials.Credentials)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apereo/cas/integration/pac4j/authentication/handler/support/AbstractWrapperAuthenticationHandler/convertToPac4jCredentials(org.apereo.cas.authentication.Credential)|",
+      "|java+method:///org/pac4j/core/util/InitializableObject/init()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apereo/cas/integration/pac4j/authentication/handler/support/AbstractWrapperAuthenticationHandler/getWebContext()|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-support-pac4j-core:5.0.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-pac4j-authentication:5.0.0.M1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-pac4j-authentication:5.0.0",
+    "caller": "|java+method:///org/apereo/cas/integration/pac4j/authentication/handler/support/AbstractTokenWrapperAuthenticationHandler/convertToPac4jCredentials(org.apereo.cas.authentication.BasicIdentifiableCredential)|",
+    "called": "|java+constructor:///org/pac4j/core/credentials/TokenCredentials/TokenCredentials(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/pac4j/http/credentials/TokenCredentials/TokenCredentials(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apereo/cas/authentication/handler/PrincipalNameTransformer/transform(java.lang.String)|",
+      "|java+constructor:///javax/security/auth/login/AccountNotFoundException/AccountNotFoundException(java.lang.String)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/apereo/cas/authentication/BasicIdentifiableCredential/getId()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///org/pac4j/core/credentials/TokenCredentials/TokenCredentials(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apereo/cas/authentication/handler/PrincipalNameTransformer/transform(java.lang.String)|",
+      "|java+constructor:///javax/security/auth/login/AccountNotFoundException/AccountNotFoundException(java.lang.String)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/apereo/cas/authentication/BasicIdentifiableCredential/getId()|"
+    ],
+    "affectedLib": "org.pac4j:pac4j-core:1.9.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-pac4j-authentication:5.0.0.M1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-pac4j-authentication:5.0.0",
+    "caller": "|java+method:///org/apereo/cas/integration/pac4j/authentication/handler/support/AbstractWrapperAuthenticationHandler/doAuthentication(org.apereo.cas.authentication.Credential)|",
+    "called": "|java+method:///org/pac4j/core/util/InitializableWebObject/init(org.pac4j.core.context.WebContext)|",
+    "v1Body": [
+      "|java+method:///org/apereo/cas/integration/pac4j/authentication/handler/support/AbstractWrapperAuthenticationHandler/createResult(org.apereo.cas.authentication.principal.ClientCredential,org.pac4j.core.profile.UserProfile)|",
+      "|java+method:///org/pac4j/core/util/CommonHelper/assertNotNull(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/pac4j/core/exception/CredentialsException/getMessage()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///javax/security/auth/login/FailedLoginException/FailedLoginException(java.lang.String)|",
+      "|java+method:///org/pac4j/http/profile/creator/ProfileCreator/create(org.pac4j.core.credentials.Credentials)|",
+      "|java+method:///org/apereo/cas/integration/pac4j/authentication/handler/support/AbstractWrapperAuthenticationHandler/convertToPac4jCredentials(org.apereo.cas.authentication.Credential)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/apereo/cas/authentication/principal/ClientCredential/ClientCredential(org.pac4j.core.credentials.Credentials)|",
+      "|java+method:///org/pac4j/http/credentials/authenticator/Authenticator/validate(org.pac4j.core.credentials.Credentials)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apereo/cas/integration/pac4j/authentication/handler/support/AbstractWrapperAuthenticationHandler/getAuthenticator(org.apereo.cas.authentication.Credential)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apereo/cas/integration/pac4j/authentication/handler/support/AbstractWrapperAuthenticationHandler/createResult(org.apereo.cas.authentication.principal.ClientCredential,org.pac4j.core.profile.UserProfile)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apereo/cas/integration/pac4j/authentication/handler/support/AbstractWrapperAuthenticationHandler/getAuthenticator(org.apereo.cas.authentication.Credential)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///javax/security/auth/login/FailedLoginException/FailedLoginException(java.lang.String)|",
+      "|java+method:///org/pac4j/core/credentials/authenticator/Authenticator/validate(org.pac4j.core.credentials.Credentials,org.pac4j.core.context.WebContext)|",
+      "|java+method:///org/pac4j/core/profile/creator/ProfileCreator/create(org.pac4j.core.credentials.Credentials,org.pac4j.core.context.WebContext)|",
+      "|java+method:///org/pac4j/core/util/InitializableWebObject/init(org.pac4j.core.context.WebContext)|",
+      "|java+method:///org/pac4j/core/util/CommonHelper/assertNotNull(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///org/apereo/cas/authentication/principal/ClientCredential/ClientCredential(org.pac4j.core.credentials.Credentials)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apereo/cas/integration/pac4j/authentication/handler/support/AbstractWrapperAuthenticationHandler/convertToPac4jCredentials(org.apereo.cas.authentication.Credential)|",
+      "|java+method:///org/pac4j/core/util/InitializableObject/init()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apereo/cas/integration/pac4j/authentication/handler/support/AbstractWrapperAuthenticationHandler/getWebContext()|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "affectedLib": "org.pac4j:pac4j-core:1.9.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-pac4j-authentication:5.0.0.M1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-pac4j-authentication:5.0.0",
+    "caller": "|java+method:///org/apereo/cas/integration/pac4j/authentication/handler/support/UsernamePasswordWrapperAuthenticationHandler/convertToPac4jCredentials(org.apereo.cas.authentication.UsernamePasswordCredential)|",
+    "called": "|java+constructor:///org/pac4j/core/credentials/UsernamePasswordCredentials/UsernamePasswordCredentials(java.lang.String,java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apereo/cas/authentication/UsernamePasswordCredential/getPassword()|",
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///org/pac4j/http/credentials/UsernamePasswordCredentials/UsernamePasswordCredentials(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///org/apereo/cas/authentication/handler/PasswordEncoder/encode(java.lang.String)|",
+      "|java+method:///org/apereo/cas/authentication/UsernamePasswordCredential/getUsername()|",
+      "|java+method:///org/apereo/cas/authentication/handler/PrincipalNameTransformer/transform(java.lang.String)|",
+      "|java+constructor:///javax/security/auth/login/AccountNotFoundException/AccountNotFoundException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/security/crypto/password/PasswordEncoder/encode(java.lang.CharSequence)|",
+      "|java+method:///org/apereo/cas/authentication/UsernamePasswordCredential/getPassword()|",
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///org/pac4j/core/credentials/UsernamePasswordCredentials/UsernamePasswordCredentials(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/apereo/cas/authentication/UsernamePasswordCredential/getUsername()|",
+      "|java+method:///org/apereo/cas/authentication/handler/PrincipalNameTransformer/transform(java.lang.String)|",
+      "|java+constructor:///javax/security/auth/login/AccountNotFoundException/AccountNotFoundException(java.lang.String)|"
+    ],
+    "affectedLib": "org.pac4j:pac4j-core:1.9.4",
+    "change": "UPDATED"
+  }
+]

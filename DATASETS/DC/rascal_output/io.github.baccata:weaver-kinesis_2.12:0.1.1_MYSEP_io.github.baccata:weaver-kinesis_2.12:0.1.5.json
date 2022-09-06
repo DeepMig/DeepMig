@@ -1,0 +1,500 @@
+[
+  {
+    "coordinatesV1": "io.github.baccata:weaver-kinesis_2.12:0.1.5",
+    "coordinatesV2": "io.github.baccata:weaver-kinesis_2.12:0.1.1",
+    "caller": "|java+method:///weaver/aws/kinesis/KinesisDSL/$anonfun$kinesisStream$4(weaver.aws.kinesis.KinesisDSL,cats.effect.ConcurrentEffect,cats.mtl.ApplicativeAsk,weaver.Log,scala.collection.immutable.Vector,scala.runtime.BoxedUnit)|",
+    "called": "|java+method:///fs2/Stream$/flatMap$extension(fs2.internal.FreeC,scala.Function1)|",
+    "v1Body": [
+      "|java+method:///scala/collection/immutable/Vector$/canBuildFrom()|",
+      "|java+method:///weaver/aws/kinesis/KinesisDSL/mergeAll(java.lang.Object,scala.Function1,cats.effect.Concurrent,cats.Foldable)|",
+      "|java+method:///weaver/aws/kinesis/KinesisDSL/next(cats.effect.Concurrent,cats.mtl.ApplicativeAsk,weaver.Log)|",
+      "|java+method:///fs2/Stream$/flatMap$extension(fs2.internal.FreeC,scala.Function1)|",
+      "|java+method:///scala/collection/immutable/Vector/map(scala.Function1,scala.collection.generic.CanBuildFrom)|",
+      "|java+method:///weaver/package$/catsStdInstancesForVector()|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/collection/immutable/Vector$/canBuildFrom()|",
+      "|java+method:///fs2/Stream$/flatMap$extension(fs2.internal.FreeC,scala.Function1)|",
+      "|java+method:///scala/collection/immutable/Vector/map(scala.Function1,scala.collection.generic.CanBuildFrom)|",
+      "|java+method:///weaver/aws/kinesis/KinesisDSL/foldMerge(java.lang.Object,scala.Function1,cats.effect.Concurrent,cats.Foldable)|",
+      "|java+method:///weaver/package$/catsStdInstancesForVector()|"
+    ],
+    "affectedLib": "co.fs2:fs2-core_2.12:1.0.0-M4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "io.github.baccata:weaver-kinesis_2.12:0.1.1",
+    "coordinatesV2": "io.github.baccata:weaver-kinesis_2.12:0.1.5",
+    "caller": "|java+method:///weaver/aws/kinesis/KinesisDSL/$anonfun$getIterator$2(cats.effect.Concurrent,com.amazonaws.services.kinesis.model.Shard,weaver.aws.kinesis.KinesisConfig)|",
+    "called": "|java+method:///weaver/aws/LiftF$PartiallyAppliedLiftF/apply(scala.Function2,cats.effect.Concurrent)|",
+    "v1Body": [
+      "|java+method:///weaver/package$/toFunctorOps(java.lang.Object,cats.Functor)|",
+      "|java+method:///weaver/aws/package$/toOps(com.amazonaws.AmazonWebServiceRequest)|",
+      "|java+method:///weaver/aws/LiftF$PartiallyAppliedLiftF/apply(scala.Function2,cats.effect.Concurrent)|",
+      "|java+method:///weaver/aws/AwsReqOps$/liftF$extension(com.amazonaws.AmazonWebServiceRequest)|",
+      "|java+method:///weaver/aws/kinesis/KinesisConfig/stream()|",
+      "|java+method:///com/amazonaws/services/kinesis/model/GetShardIteratorRequest/withShardIteratorType(com.amazonaws.services.kinesis.model.ShardIteratorType)|",
+      "|java+method:///cats/Functor$Ops/map(scala.Function1)|",
+      "|java+method:///com/amazonaws/services/kinesis/model/Shard/getShardId()|",
+      "|java+constructor:///com/amazonaws/services/kinesis/model/GetShardIteratorRequest/GetShardIteratorRequest()|",
+      "|java+method:///com/amazonaws/services/kinesis/model/GetShardIteratorRequest/withStreamName(java.lang.String)|",
+      "|java+method:///com/amazonaws/services/kinesis/model/GetShardIteratorRequest/withShardId(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///weaver/package$/toFunctorOps(java.lang.Object,cats.Functor)|",
+      "|java+method:///weaver/aws/package$/toAwsReqOps(com.amazonaws.AmazonWebServiceRequest)|",
+      "|java+method:///weaver/aws/LiftF$PartiallyAppliedLiftF/apply(scala.Function2,cats.effect.Concurrent)|",
+      "|java+method:///weaver/aws/AwsReqOps$/liftF$extension(com.amazonaws.AmazonWebServiceRequest)|",
+      "|java+method:///weaver/aws/kinesis/KinesisConfig/stream()|",
+      "|java+method:///com/amazonaws/services/kinesis/model/GetShardIteratorRequest/withShardIteratorType(com.amazonaws.services.kinesis.model.ShardIteratorType)|",
+      "|java+method:///cats/Functor$Ops/map(scala.Function1)|",
+      "|java+method:///com/amazonaws/services/kinesis/model/Shard/getShardId()|",
+      "|java+constructor:///com/amazonaws/services/kinesis/model/GetShardIteratorRequest/GetShardIteratorRequest()|",
+      "|java+method:///com/amazonaws/services/kinesis/model/GetShardIteratorRequest/withStreamName(java.lang.String)|",
+      "|java+method:///com/amazonaws/services/kinesis/model/GetShardIteratorRequest/withShardId(java.lang.String)|"
+    ],
+    "affectedLib": "io.github.baccata:weaver-aws_2.12:0.1.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.github.baccata:weaver-kinesis_2.12:0.1.1",
+    "coordinatesV2": "io.github.baccata:weaver-kinesis_2.12:0.1.5",
+    "caller": "|java+method:///weaver/aws/kinesis/KinesisDSL/$anonfun$next$2(weaver.aws.kinesis.KinesisDSL,cats.effect.Concurrent,weaver.Log,java.lang.String,weaver.aws.kinesis.KinesisConfig)|",
+    "called": "|java+method:///weaver/aws/LiftF$PartiallyAppliedLiftF/apply(scala.Function2,cats.effect.Concurrent)|",
+    "v1Body": [
+      "|java+method:///weaver/package$/toFlatMapOps(java.lang.Object,cats.FlatMap)|",
+      "|java+method:///cats/FlatMap$Ops/flatMap(scala.Function1)|",
+      "|java+method:///weaver/aws/package$/toOps(com.amazonaws.AmazonWebServiceRequest)|",
+      "|java+method:///weaver/aws/LiftF$PartiallyAppliedLiftF/apply(scala.Function2,cats.effect.Concurrent)|",
+      "|java+method:///com/amazonaws/services/kinesis/model/GetRecordsRequest/withShardIterator(java.lang.String)|",
+      "|java+method:///weaver/aws/AwsReqOps$/liftF$extension(com.amazonaws.AmazonWebServiceRequest)|",
+      "|java+constructor:///com/amazonaws/services/kinesis/model/GetRecordsRequest/GetRecordsRequest()|"
+    ],
+    "v2Body": [
+      "|java+method:///weaver/package$/toFlatMapOps(java.lang.Object,cats.FlatMap)|",
+      "|java+method:///cats/FlatMap$Ops/flatMap(scala.Function1)|",
+      "|java+method:///weaver/aws/package$/toAwsReqOps(com.amazonaws.AmazonWebServiceRequest)|",
+      "|java+method:///weaver/aws/LiftF$PartiallyAppliedLiftF/apply(scala.Function2,cats.effect.Concurrent)|",
+      "|java+method:///com/amazonaws/services/kinesis/model/GetRecordsRequest/withShardIterator(java.lang.String)|",
+      "|java+method:///weaver/aws/AwsReqOps$/liftF$extension(com.amazonaws.AmazonWebServiceRequest)|",
+      "|java+constructor:///com/amazonaws/services/kinesis/model/GetRecordsRequest/GetRecordsRequest()|"
+    ],
+    "affectedLib": "io.github.baccata:weaver-aws_2.12:0.1.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.github.baccata:weaver-kinesis_2.12:0.1.1",
+    "coordinatesV2": "io.github.baccata:weaver-kinesis_2.12:0.1.5",
+    "caller": "|java+method:///weaver/aws/kinesis/KinesisDSL/$anonfun$listShards$1(cats.effect.Concurrent,weaver.Log,weaver.aws.kinesis.KinesisConfig)|",
+    "called": "|java+method:///weaver/aws/LiftF$PartiallyAppliedLiftF/apply(scala.Function2,cats.effect.Concurrent)|",
+    "v1Body": [
+      "|java+method:///weaver/package$/toFlatMapOps(java.lang.Object,cats.FlatMap)|",
+      "|java+method:///cats/FlatMap$Ops/flatMap(scala.Function1)|",
+      "|java+method:///weaver/aws/package$/toOps(com.amazonaws.AmazonWebServiceRequest)|",
+      "|java+method:///weaver/aws/LiftF$PartiallyAppliedLiftF/apply(scala.Function2,cats.effect.Concurrent)|",
+      "|java+constructor:///com/amazonaws/services/kinesis/model/ListShardsRequest/ListShardsRequest()|",
+      "|java+method:///com/amazonaws/services/kinesis/model/ListShardsRequest/withStreamName(java.lang.String)|",
+      "|java+method:///weaver/aws/AwsReqOps$/liftF$extension(com.amazonaws.AmazonWebServiceRequest)|",
+      "|java+method:///weaver/aws/kinesis/KinesisConfig/stream()|"
+    ],
+    "v2Body": [
+      "|java+method:///weaver/package$/toFlatMapOps(java.lang.Object,cats.FlatMap)|",
+      "|java+method:///cats/FlatMap$Ops/flatMap(scala.Function1)|",
+      "|java+method:///weaver/aws/package$/toAwsReqOps(com.amazonaws.AmazonWebServiceRequest)|",
+      "|java+method:///weaver/aws/LiftF$PartiallyAppliedLiftF/apply(scala.Function2,cats.effect.Concurrent)|",
+      "|java+constructor:///com/amazonaws/services/kinesis/model/ListShardsRequest/ListShardsRequest()|",
+      "|java+method:///com/amazonaws/services/kinesis/model/ListShardsRequest/withStreamName(java.lang.String)|",
+      "|java+method:///weaver/aws/AwsReqOps$/liftF$extension(com.amazonaws.AmazonWebServiceRequest)|",
+      "|java+method:///weaver/aws/kinesis/KinesisConfig/stream()|"
+    ],
+    "affectedLib": "io.github.baccata:weaver-aws_2.12:0.1.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.github.baccata:weaver-kinesis_2.12:0.1.1",
+    "coordinatesV2": "io.github.baccata:weaver-kinesis_2.12:0.1.5",
+    "caller": "|java+method:///weaver/aws/kinesis/KinesisDSL/$anonfun$getIterator$2(cats.effect.Concurrent,com.amazonaws.services.kinesis.model.Shard,weaver.aws.kinesis.KinesisConfig)|",
+    "called": "|java+method:///weaver/package$/toFunctorOps(java.lang.Object,cats.Functor)|",
+    "v1Body": [
+      "|java+method:///weaver/package$/toFunctorOps(java.lang.Object,cats.Functor)|",
+      "|java+method:///weaver/aws/package$/toOps(com.amazonaws.AmazonWebServiceRequest)|",
+      "|java+method:///weaver/aws/LiftF$PartiallyAppliedLiftF/apply(scala.Function2,cats.effect.Concurrent)|",
+      "|java+method:///weaver/aws/AwsReqOps$/liftF$extension(com.amazonaws.AmazonWebServiceRequest)|",
+      "|java+method:///weaver/aws/kinesis/KinesisConfig/stream()|",
+      "|java+method:///com/amazonaws/services/kinesis/model/GetShardIteratorRequest/withShardIteratorType(com.amazonaws.services.kinesis.model.ShardIteratorType)|",
+      "|java+method:///cats/Functor$Ops/map(scala.Function1)|",
+      "|java+method:///com/amazonaws/services/kinesis/model/Shard/getShardId()|",
+      "|java+constructor:///com/amazonaws/services/kinesis/model/GetShardIteratorRequest/GetShardIteratorRequest()|",
+      "|java+method:///com/amazonaws/services/kinesis/model/GetShardIteratorRequest/withStreamName(java.lang.String)|",
+      "|java+method:///com/amazonaws/services/kinesis/model/GetShardIteratorRequest/withShardId(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///weaver/package$/toFunctorOps(java.lang.Object,cats.Functor)|",
+      "|java+method:///weaver/aws/package$/toAwsReqOps(com.amazonaws.AmazonWebServiceRequest)|",
+      "|java+method:///weaver/aws/LiftF$PartiallyAppliedLiftF/apply(scala.Function2,cats.effect.Concurrent)|",
+      "|java+method:///weaver/aws/AwsReqOps$/liftF$extension(com.amazonaws.AmazonWebServiceRequest)|",
+      "|java+method:///weaver/aws/kinesis/KinesisConfig/stream()|",
+      "|java+method:///com/amazonaws/services/kinesis/model/GetShardIteratorRequest/withShardIteratorType(com.amazonaws.services.kinesis.model.ShardIteratorType)|",
+      "|java+method:///cats/Functor$Ops/map(scala.Function1)|",
+      "|java+method:///com/amazonaws/services/kinesis/model/Shard/getShardId()|",
+      "|java+constructor:///com/amazonaws/services/kinesis/model/GetShardIteratorRequest/GetShardIteratorRequest()|",
+      "|java+method:///com/amazonaws/services/kinesis/model/GetShardIteratorRequest/withStreamName(java.lang.String)|",
+      "|java+method:///com/amazonaws/services/kinesis/model/GetShardIteratorRequest/withShardId(java.lang.String)|"
+    ],
+    "affectedLib": "io.github.baccata:weaver-core_2.12:0.1.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.github.baccata:weaver-kinesis_2.12:0.1.1",
+    "coordinatesV2": "io.github.baccata:weaver-kinesis_2.12:0.1.5",
+    "caller": "|java+method:///weaver/aws/kinesis/KinesisDSL/$anonfun$listShards$3(cats.effect.Concurrent,weaver.Log,com.amazonaws.services.kinesis.model.ListShardsResult)|",
+    "called": "|java+constructor:///weaver/SourceLocation/SourceLocation(scala.Option,scala.Option,int)|",
+    "v1Body": [
+      "|java+method:///weaver/package$/toFunctorOps(java.lang.Object,cats.Functor)|",
+      "|java+method:///weaver/Log$debug$/apply(scala.Function0,weaver.Log)|",
+      "|java+method:///cats/Functor$Ops/map(scala.Function1)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/Option$/apply(java.lang.Object)|",
+      "|java+constructor:///weaver/SourceLocation/SourceLocation(scala.Option,scala.Option,int)|",
+      "|java+method:///weaver/Log$/PartiallyAppliedLevel(weaver.Log$Level,weaver.Log)|",
+      "|java+method:///cats/Functor$Ops/map(scala.Function1)|",
+      "|java+method:///weaver/Log$PartiallyAppliedLevel/apply(scala.Function0,weaver.SourceLocation)|",
+      "|java+method:///weaver/package$/toFunctorOps(java.lang.Object,cats.Functor)|"
+    ],
+    "affectedLib": "io.github.baccata:weaver-core_2.12:0.1.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.github.baccata:weaver-kinesis_2.12:0.1.1",
+    "coordinatesV2": "io.github.baccata:weaver-kinesis_2.12:0.1.5",
+    "caller": "|java+method:///weaver/aws/kinesis/KinesisDSL/$anonfun$kinesisStream$1(weaver.aws.kinesis.KinesisDSL,cats.effect.ConcurrentEffect,cats.mtl.ApplicativeAsk,weaver.Log,scala.collection.immutable.Vector)|",
+    "called": "|java+method:///weaver/package$/toTraverseOps(java.lang.Object,cats.Traverse)|",
+    "v1Body": [
+      "|java+method:///cats/FlatMap$Ops/flatMap(scala.Function1)|",
+      "|java+method:///cats/data/Kleisli/run()|",
+      "|java+method:///weaver/aws/kinesis/KinesisDSL/getIterator(cats.effect.Concurrent,cats.mtl.ApplicativeAsk)|",
+      "|java+method:///weaver/package$/catsStdInstancesForVector()|",
+      "|java+method:///cats/Traverse$Ops/traverse(scala.Function1,cats.Applicative)|",
+      "|java+method:///weaver/package$/toFlatMapOps(java.lang.Object,cats.FlatMap)|",
+      "|java+method:///weaver/package$/toTraverseOps(java.lang.Object,cats.Traverse)|"
+    ],
+    "v2Body": [
+      "|java+method:///cats/FlatMap$Ops/flatMap(scala.Function1)|",
+      "|java+method:///weaver/aws/kinesis/KinesisDSL/getIterator(cats.effect.Concurrent,cats.mtl.ApplicativeAsk)|",
+      "|java+method:///weaver/package$/catsStdInstancesForVector()|",
+      "|java+method:///cats/Traverse$Ops/traverse(scala.Function1,cats.Applicative)|",
+      "|java+method:///weaver/package$/toFlatMapOps(java.lang.Object,cats.FlatMap)|",
+      "|java+method:///weaver/package$/toTraverseOps(java.lang.Object,cats.Traverse)|"
+    ],
+    "affectedLib": "io.github.baccata:weaver-core_2.12:0.1.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.github.baccata:weaver-kinesis_2.12:0.1.1",
+    "coordinatesV2": "io.github.baccata:weaver-kinesis_2.12:0.1.5",
+    "caller": "|java+method:///weaver/aws/kinesis/KinesisDSL/$anonfun$next$2(weaver.aws.kinesis.KinesisDSL,cats.effect.Concurrent,weaver.Log,java.lang.String,weaver.aws.kinesis.KinesisConfig)|",
+    "called": "|java+method:///weaver/package$/toFlatMapOps(java.lang.Object,cats.FlatMap)|",
+    "v1Body": [
+      "|java+method:///weaver/package$/toFlatMapOps(java.lang.Object,cats.FlatMap)|",
+      "|java+method:///cats/FlatMap$Ops/flatMap(scala.Function1)|",
+      "|java+method:///weaver/aws/package$/toOps(com.amazonaws.AmazonWebServiceRequest)|",
+      "|java+method:///weaver/aws/LiftF$PartiallyAppliedLiftF/apply(scala.Function2,cats.effect.Concurrent)|",
+      "|java+method:///com/amazonaws/services/kinesis/model/GetRecordsRequest/withShardIterator(java.lang.String)|",
+      "|java+method:///weaver/aws/AwsReqOps$/liftF$extension(com.amazonaws.AmazonWebServiceRequest)|",
+      "|java+constructor:///com/amazonaws/services/kinesis/model/GetRecordsRequest/GetRecordsRequest()|"
+    ],
+    "v2Body": [
+      "|java+method:///weaver/package$/toFlatMapOps(java.lang.Object,cats.FlatMap)|",
+      "|java+method:///cats/FlatMap$Ops/flatMap(scala.Function1)|",
+      "|java+method:///weaver/aws/package$/toAwsReqOps(com.amazonaws.AmazonWebServiceRequest)|",
+      "|java+method:///weaver/aws/LiftF$PartiallyAppliedLiftF/apply(scala.Function2,cats.effect.Concurrent)|",
+      "|java+method:///com/amazonaws/services/kinesis/model/GetRecordsRequest/withShardIterator(java.lang.String)|",
+      "|java+method:///weaver/aws/AwsReqOps$/liftF$extension(com.amazonaws.AmazonWebServiceRequest)|",
+      "|java+constructor:///com/amazonaws/services/kinesis/model/GetRecordsRequest/GetRecordsRequest()|"
+    ],
+    "affectedLib": "io.github.baccata:weaver-core_2.12:0.1.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.github.baccata:weaver-kinesis_2.12:0.1.1",
+    "coordinatesV2": "io.github.baccata:weaver-kinesis_2.12:0.1.5",
+    "caller": "|java+method:///weaver/aws/kinesis/KinesisDSL/$anonfun$next$4(weaver.aws.kinesis.KinesisDSL,cats.effect.Concurrent,weaver.Log,java.lang.String,com.amazonaws.services.kinesis.model.GetRecordsResult)|",
+    "called": "|java+constructor:///weaver/SourceLocation/SourceLocation(scala.Option,scala.Option,int)|",
+    "v1Body": [
+      "|java+method:///weaver/package$/toFunctorOps(java.lang.Object,cats.Functor)|",
+      "|java+method:///weaver/Log$debug$/apply(scala.Function0,weaver.Log)|",
+      "|java+method:///cats/effect/Concurrent/unit()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///com/amazonaws/services/kinesis/model/GetRecordsResult/getRecords()|",
+      "|java+method:///cats/Functor$Ops/map(scala.Function1)|"
+    ],
+    "v2Body": [
+      "|java+method:///cats/effect/Concurrent/unit()|",
+      "|java+method:///com/amazonaws/services/kinesis/model/GetRecordsResult/getRecords()|",
+      "|java+constructor:///weaver/SourceLocation/SourceLocation(scala.Option,scala.Option,int)|",
+      "|java+method:///weaver/Log$/PartiallyAppliedLevel(weaver.Log$Level,weaver.Log)|",
+      "|java+method:///cats/Functor$Ops/map(scala.Function1)|",
+      "|java+method:///weaver/Log$PartiallyAppliedLevel/apply(scala.Function0,weaver.SourceLocation)|",
+      "|java+method:///weaver/package$/toFunctorOps(java.lang.Object,cats.Functor)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///scala/Option$/apply(java.lang.Object)|"
+    ],
+    "affectedLib": "io.github.baccata:weaver-core_2.12:0.1.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.github.baccata:weaver-kinesis_2.12:0.1.1",
+    "coordinatesV2": "io.github.baccata:weaver-kinesis_2.12:0.1.5",
+    "caller": "|java+method:///weaver/aws/kinesis/KinesisDSL/$anonfun$listShards$1(cats.effect.Concurrent,weaver.Log,weaver.aws.kinesis.KinesisConfig)|",
+    "called": "|java+method:///weaver/package$/toFlatMapOps(java.lang.Object,cats.FlatMap)|",
+    "v1Body": [
+      "|java+method:///weaver/package$/toFlatMapOps(java.lang.Object,cats.FlatMap)|",
+      "|java+method:///cats/FlatMap$Ops/flatMap(scala.Function1)|",
+      "|java+method:///weaver/aws/package$/toOps(com.amazonaws.AmazonWebServiceRequest)|",
+      "|java+method:///weaver/aws/LiftF$PartiallyAppliedLiftF/apply(scala.Function2,cats.effect.Concurrent)|",
+      "|java+constructor:///com/amazonaws/services/kinesis/model/ListShardsRequest/ListShardsRequest()|",
+      "|java+method:///com/amazonaws/services/kinesis/model/ListShardsRequest/withStreamName(java.lang.String)|",
+      "|java+method:///weaver/aws/AwsReqOps$/liftF$extension(com.amazonaws.AmazonWebServiceRequest)|",
+      "|java+method:///weaver/aws/kinesis/KinesisConfig/stream()|"
+    ],
+    "v2Body": [
+      "|java+method:///weaver/package$/toFlatMapOps(java.lang.Object,cats.FlatMap)|",
+      "|java+method:///cats/FlatMap$Ops/flatMap(scala.Function1)|",
+      "|java+method:///weaver/aws/package$/toAwsReqOps(com.amazonaws.AmazonWebServiceRequest)|",
+      "|java+method:///weaver/aws/LiftF$PartiallyAppliedLiftF/apply(scala.Function2,cats.effect.Concurrent)|",
+      "|java+constructor:///com/amazonaws/services/kinesis/model/ListShardsRequest/ListShardsRequest()|",
+      "|java+method:///com/amazonaws/services/kinesis/model/ListShardsRequest/withStreamName(java.lang.String)|",
+      "|java+method:///weaver/aws/AwsReqOps$/liftF$extension(com.amazonaws.AmazonWebServiceRequest)|",
+      "|java+method:///weaver/aws/kinesis/KinesisConfig/stream()|"
+    ],
+    "affectedLib": "io.github.baccata:weaver-core_2.12:0.1.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.github.baccata:weaver-kinesis_2.12:0.1.1",
+    "coordinatesV2": "io.github.baccata:weaver-kinesis_2.12:0.1.5",
+    "caller": "|java+method:///weaver/aws/kinesis/KinesisDSL/$anonfun$kinesisStream$2(weaver.aws.kinesis.KinesisDSL,cats.effect.ConcurrentEffect,cats.mtl.ApplicativeAsk,weaver.Log,scala.collection.immutable.Vector)|",
+    "called": "|java+constructor:///weaver/SourceLocation/SourceLocation(scala.Option,scala.Option,int)|",
+    "v1Body": [
+      "|java+method:///weaver/package$/toFunctorOps(java.lang.Object,cats.Functor)|",
+      "|java+method:///weaver/Log$debug$/apply(scala.Function0,weaver.Log)|",
+      "|java+method:///cats/Functor$Ops/map(scala.Function1)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/Option$/apply(java.lang.Object)|",
+      "|java+constructor:///weaver/SourceLocation/SourceLocation(scala.Option,scala.Option,int)|",
+      "|java+method:///weaver/Log$/PartiallyAppliedLevel(weaver.Log$Level,weaver.Log)|",
+      "|java+method:///cats/Functor$Ops/map(scala.Function1)|",
+      "|java+method:///weaver/Log$PartiallyAppliedLevel/apply(scala.Function0,weaver.SourceLocation)|",
+      "|java+method:///weaver/package$/toFunctorOps(java.lang.Object,cats.Functor)|"
+    ],
+    "affectedLib": "io.github.baccata:weaver-core_2.12:0.1.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.github.baccata:weaver-kinesis_2.12:0.1.1",
+    "coordinatesV2": "io.github.baccata:weaver-kinesis_2.12:0.1.5",
+    "caller": "|java+method:///weaver/aws/kinesis/KinesisDSL/$anonfun$kinesisStream$4(weaver.aws.kinesis.KinesisDSL,cats.effect.ConcurrentEffect,cats.mtl.ApplicativeAsk,weaver.Log,scala.collection.immutable.Vector,scala.runtime.BoxedUnit)|",
+    "called": "|java+method:///weaver/package$/catsStdInstancesForVector()|",
+    "v1Body": [
+      "|java+method:///scala/collection/immutable/Vector$/canBuildFrom()|",
+      "|java+method:///weaver/aws/kinesis/KinesisDSL/mergeAll(java.lang.Object,scala.Function1,cats.effect.Concurrent,cats.Foldable)|",
+      "|java+method:///weaver/aws/kinesis/KinesisDSL/next(cats.effect.Concurrent,cats.mtl.ApplicativeAsk,weaver.Log)|",
+      "|java+method:///fs2/Stream$/flatMap$extension(fs2.internal.FreeC,scala.Function1)|",
+      "|java+method:///scala/collection/immutable/Vector/map(scala.Function1,scala.collection.generic.CanBuildFrom)|",
+      "|java+method:///weaver/package$/catsStdInstancesForVector()|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/collection/immutable/Vector$/canBuildFrom()|",
+      "|java+method:///fs2/Stream$/flatMap$extension(fs2.internal.FreeC,scala.Function1)|",
+      "|java+method:///scala/collection/immutable/Vector/map(scala.Function1,scala.collection.generic.CanBuildFrom)|",
+      "|java+method:///weaver/aws/kinesis/KinesisDSL/foldMerge(java.lang.Object,scala.Function1,cats.effect.Concurrent,cats.Foldable)|",
+      "|java+method:///weaver/package$/catsStdInstancesForVector()|"
+    ],
+    "affectedLib": "io.github.baccata:weaver-core_2.12:0.1.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.github.baccata:weaver-kinesis_2.12:0.1.1",
+    "coordinatesV2": "io.github.baccata:weaver-kinesis_2.12:0.1.5",
+    "caller": "|java+method:///weaver/aws/kinesis/KinesisDSL/$anonfun$getIterator$2(cats.effect.Concurrent,com.amazonaws.services.kinesis.model.Shard,weaver.aws.kinesis.KinesisConfig)|",
+    "called": "|java+method:///cats/Functor$Ops/map(scala.Function1)|",
+    "v1Body": [
+      "|java+method:///weaver/package$/toFunctorOps(java.lang.Object,cats.Functor)|",
+      "|java+method:///weaver/aws/package$/toOps(com.amazonaws.AmazonWebServiceRequest)|",
+      "|java+method:///weaver/aws/LiftF$PartiallyAppliedLiftF/apply(scala.Function2,cats.effect.Concurrent)|",
+      "|java+method:///weaver/aws/AwsReqOps$/liftF$extension(com.amazonaws.AmazonWebServiceRequest)|",
+      "|java+method:///weaver/aws/kinesis/KinesisConfig/stream()|",
+      "|java+method:///com/amazonaws/services/kinesis/model/GetShardIteratorRequest/withShardIteratorType(com.amazonaws.services.kinesis.model.ShardIteratorType)|",
+      "|java+method:///cats/Functor$Ops/map(scala.Function1)|",
+      "|java+method:///com/amazonaws/services/kinesis/model/Shard/getShardId()|",
+      "|java+constructor:///com/amazonaws/services/kinesis/model/GetShardIteratorRequest/GetShardIteratorRequest()|",
+      "|java+method:///com/amazonaws/services/kinesis/model/GetShardIteratorRequest/withStreamName(java.lang.String)|",
+      "|java+method:///com/amazonaws/services/kinesis/model/GetShardIteratorRequest/withShardId(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///weaver/package$/toFunctorOps(java.lang.Object,cats.Functor)|",
+      "|java+method:///weaver/aws/package$/toAwsReqOps(com.amazonaws.AmazonWebServiceRequest)|",
+      "|java+method:///weaver/aws/LiftF$PartiallyAppliedLiftF/apply(scala.Function2,cats.effect.Concurrent)|",
+      "|java+method:///weaver/aws/AwsReqOps$/liftF$extension(com.amazonaws.AmazonWebServiceRequest)|",
+      "|java+method:///weaver/aws/kinesis/KinesisConfig/stream()|",
+      "|java+method:///com/amazonaws/services/kinesis/model/GetShardIteratorRequest/withShardIteratorType(com.amazonaws.services.kinesis.model.ShardIteratorType)|",
+      "|java+method:///cats/Functor$Ops/map(scala.Function1)|",
+      "|java+method:///com/amazonaws/services/kinesis/model/Shard/getShardId()|",
+      "|java+constructor:///com/amazonaws/services/kinesis/model/GetShardIteratorRequest/GetShardIteratorRequest()|",
+      "|java+method:///com/amazonaws/services/kinesis/model/GetShardIteratorRequest/withStreamName(java.lang.String)|",
+      "|java+method:///com/amazonaws/services/kinesis/model/GetShardIteratorRequest/withShardId(java.lang.String)|"
+    ],
+    "affectedLib": "org.typelevel:cats-core_2.12:1.3.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.github.baccata:weaver-kinesis_2.12:0.1.1",
+    "coordinatesV2": "io.github.baccata:weaver-kinesis_2.12:0.1.5",
+    "caller": "|java+method:///weaver/aws/kinesis/KinesisDSL/$anonfun$listShards$3(cats.effect.Concurrent,weaver.Log,com.amazonaws.services.kinesis.model.ListShardsResult)|",
+    "called": "|java+method:///cats/Functor$Ops/map(scala.Function1)|",
+    "v1Body": [
+      "|java+method:///weaver/package$/toFunctorOps(java.lang.Object,cats.Functor)|",
+      "|java+method:///weaver/Log$debug$/apply(scala.Function0,weaver.Log)|",
+      "|java+method:///cats/Functor$Ops/map(scala.Function1)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/Option$/apply(java.lang.Object)|",
+      "|java+constructor:///weaver/SourceLocation/SourceLocation(scala.Option,scala.Option,int)|",
+      "|java+method:///weaver/Log$/PartiallyAppliedLevel(weaver.Log$Level,weaver.Log)|",
+      "|java+method:///cats/Functor$Ops/map(scala.Function1)|",
+      "|java+method:///weaver/Log$PartiallyAppliedLevel/apply(scala.Function0,weaver.SourceLocation)|",
+      "|java+method:///weaver/package$/toFunctorOps(java.lang.Object,cats.Functor)|"
+    ],
+    "affectedLib": "org.typelevel:cats-core_2.12:1.3.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.github.baccata:weaver-kinesis_2.12:0.1.1",
+    "coordinatesV2": "io.github.baccata:weaver-kinesis_2.12:0.1.5",
+    "caller": "|java+method:///weaver/aws/kinesis/KinesisDSL/$anonfun$kinesisStream$1(weaver.aws.kinesis.KinesisDSL,cats.effect.ConcurrentEffect,cats.mtl.ApplicativeAsk,weaver.Log,scala.collection.immutable.Vector)|",
+    "called": "|java+method:///cats/Traverse$Ops/traverse(scala.Function1,cats.Applicative)|",
+    "v1Body": [
+      "|java+method:///cats/FlatMap$Ops/flatMap(scala.Function1)|",
+      "|java+method:///cats/data/Kleisli/run()|",
+      "|java+method:///weaver/aws/kinesis/KinesisDSL/getIterator(cats.effect.Concurrent,cats.mtl.ApplicativeAsk)|",
+      "|java+method:///weaver/package$/catsStdInstancesForVector()|",
+      "|java+method:///cats/Traverse$Ops/traverse(scala.Function1,cats.Applicative)|",
+      "|java+method:///weaver/package$/toFlatMapOps(java.lang.Object,cats.FlatMap)|",
+      "|java+method:///weaver/package$/toTraverseOps(java.lang.Object,cats.Traverse)|"
+    ],
+    "v2Body": [
+      "|java+method:///cats/FlatMap$Ops/flatMap(scala.Function1)|",
+      "|java+method:///weaver/aws/kinesis/KinesisDSL/getIterator(cats.effect.Concurrent,cats.mtl.ApplicativeAsk)|",
+      "|java+method:///weaver/package$/catsStdInstancesForVector()|",
+      "|java+method:///cats/Traverse$Ops/traverse(scala.Function1,cats.Applicative)|",
+      "|java+method:///weaver/package$/toFlatMapOps(java.lang.Object,cats.FlatMap)|",
+      "|java+method:///weaver/package$/toTraverseOps(java.lang.Object,cats.Traverse)|"
+    ],
+    "affectedLib": "org.typelevel:cats-core_2.12:1.3.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.github.baccata:weaver-kinesis_2.12:0.1.1",
+    "coordinatesV2": "io.github.baccata:weaver-kinesis_2.12:0.1.5",
+    "caller": "|java+method:///weaver/aws/kinesis/KinesisDSL/$anonfun$next$4(weaver.aws.kinesis.KinesisDSL,cats.effect.Concurrent,weaver.Log,java.lang.String,com.amazonaws.services.kinesis.model.GetRecordsResult)|",
+    "called": "|java+method:///cats/Functor$Ops/map(scala.Function1)|",
+    "v1Body": [
+      "|java+method:///weaver/package$/toFunctorOps(java.lang.Object,cats.Functor)|",
+      "|java+method:///weaver/Log$debug$/apply(scala.Function0,weaver.Log)|",
+      "|java+method:///cats/effect/Concurrent/unit()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///com/amazonaws/services/kinesis/model/GetRecordsResult/getRecords()|",
+      "|java+method:///cats/Functor$Ops/map(scala.Function1)|"
+    ],
+    "v2Body": [
+      "|java+method:///cats/effect/Concurrent/unit()|",
+      "|java+method:///com/amazonaws/services/kinesis/model/GetRecordsResult/getRecords()|",
+      "|java+constructor:///weaver/SourceLocation/SourceLocation(scala.Option,scala.Option,int)|",
+      "|java+method:///weaver/Log$/PartiallyAppliedLevel(weaver.Log$Level,weaver.Log)|",
+      "|java+method:///cats/Functor$Ops/map(scala.Function1)|",
+      "|java+method:///weaver/Log$PartiallyAppliedLevel/apply(scala.Function0,weaver.SourceLocation)|",
+      "|java+method:///weaver/package$/toFunctorOps(java.lang.Object,cats.Functor)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///scala/Option$/apply(java.lang.Object)|"
+    ],
+    "affectedLib": "org.typelevel:cats-core_2.12:1.3.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.github.baccata:weaver-kinesis_2.12:0.1.1",
+    "coordinatesV2": "io.github.baccata:weaver-kinesis_2.12:0.1.5",
+    "caller": "|java+method:///weaver/aws/kinesis/KinesisDSL/$anonfun$next$2(weaver.aws.kinesis.KinesisDSL,cats.effect.Concurrent,weaver.Log,java.lang.String,weaver.aws.kinesis.KinesisConfig)|",
+    "called": "|java+method:///cats/FlatMap$Ops/flatMap(scala.Function1)|",
+    "v1Body": [
+      "|java+method:///weaver/package$/toFlatMapOps(java.lang.Object,cats.FlatMap)|",
+      "|java+method:///cats/FlatMap$Ops/flatMap(scala.Function1)|",
+      "|java+method:///weaver/aws/package$/toOps(com.amazonaws.AmazonWebServiceRequest)|",
+      "|java+method:///weaver/aws/LiftF$PartiallyAppliedLiftF/apply(scala.Function2,cats.effect.Concurrent)|",
+      "|java+method:///com/amazonaws/services/kinesis/model/GetRecordsRequest/withShardIterator(java.lang.String)|",
+      "|java+method:///weaver/aws/AwsReqOps$/liftF$extension(com.amazonaws.AmazonWebServiceRequest)|",
+      "|java+constructor:///com/amazonaws/services/kinesis/model/GetRecordsRequest/GetRecordsRequest()|"
+    ],
+    "v2Body": [
+      "|java+method:///weaver/package$/toFlatMapOps(java.lang.Object,cats.FlatMap)|",
+      "|java+method:///cats/FlatMap$Ops/flatMap(scala.Function1)|",
+      "|java+method:///weaver/aws/package$/toAwsReqOps(com.amazonaws.AmazonWebServiceRequest)|",
+      "|java+method:///weaver/aws/LiftF$PartiallyAppliedLiftF/apply(scala.Function2,cats.effect.Concurrent)|",
+      "|java+method:///com/amazonaws/services/kinesis/model/GetRecordsRequest/withShardIterator(java.lang.String)|",
+      "|java+method:///weaver/aws/AwsReqOps$/liftF$extension(com.amazonaws.AmazonWebServiceRequest)|",
+      "|java+constructor:///com/amazonaws/services/kinesis/model/GetRecordsRequest/GetRecordsRequest()|"
+    ],
+    "affectedLib": "org.typelevel:cats-core_2.12:1.3.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.github.baccata:weaver-kinesis_2.12:0.1.1",
+    "coordinatesV2": "io.github.baccata:weaver-kinesis_2.12:0.1.5",
+    "caller": "|java+method:///weaver/aws/kinesis/KinesisDSL/$anonfun$listShards$1(cats.effect.Concurrent,weaver.Log,weaver.aws.kinesis.KinesisConfig)|",
+    "called": "|java+method:///cats/FlatMap$Ops/flatMap(scala.Function1)|",
+    "v1Body": [
+      "|java+method:///weaver/package$/toFlatMapOps(java.lang.Object,cats.FlatMap)|",
+      "|java+method:///cats/FlatMap$Ops/flatMap(scala.Function1)|",
+      "|java+method:///weaver/aws/package$/toOps(com.amazonaws.AmazonWebServiceRequest)|",
+      "|java+method:///weaver/aws/LiftF$PartiallyAppliedLiftF/apply(scala.Function2,cats.effect.Concurrent)|",
+      "|java+constructor:///com/amazonaws/services/kinesis/model/ListShardsRequest/ListShardsRequest()|",
+      "|java+method:///com/amazonaws/services/kinesis/model/ListShardsRequest/withStreamName(java.lang.String)|",
+      "|java+method:///weaver/aws/AwsReqOps$/liftF$extension(com.amazonaws.AmazonWebServiceRequest)|",
+      "|java+method:///weaver/aws/kinesis/KinesisConfig/stream()|"
+    ],
+    "v2Body": [
+      "|java+method:///weaver/package$/toFlatMapOps(java.lang.Object,cats.FlatMap)|",
+      "|java+method:///cats/FlatMap$Ops/flatMap(scala.Function1)|",
+      "|java+method:///weaver/aws/package$/toAwsReqOps(com.amazonaws.AmazonWebServiceRequest)|",
+      "|java+method:///weaver/aws/LiftF$PartiallyAppliedLiftF/apply(scala.Function2,cats.effect.Concurrent)|",
+      "|java+constructor:///com/amazonaws/services/kinesis/model/ListShardsRequest/ListShardsRequest()|",
+      "|java+method:///com/amazonaws/services/kinesis/model/ListShardsRequest/withStreamName(java.lang.String)|",
+      "|java+method:///weaver/aws/AwsReqOps$/liftF$extension(com.amazonaws.AmazonWebServiceRequest)|",
+      "|java+method:///weaver/aws/kinesis/KinesisConfig/stream()|"
+    ],
+    "affectedLib": "org.typelevel:cats-core_2.12:1.3.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.github.baccata:weaver-kinesis_2.12:0.1.1",
+    "coordinatesV2": "io.github.baccata:weaver-kinesis_2.12:0.1.5",
+    "caller": "|java+method:///weaver/aws/kinesis/KinesisDSL/$anonfun$kinesisStream$2(weaver.aws.kinesis.KinesisDSL,cats.effect.ConcurrentEffect,cats.mtl.ApplicativeAsk,weaver.Log,scala.collection.immutable.Vector)|",
+    "called": "|java+method:///cats/Functor$Ops/map(scala.Function1)|",
+    "v1Body": [
+      "|java+method:///weaver/package$/toFunctorOps(java.lang.Object,cats.Functor)|",
+      "|java+method:///weaver/Log$debug$/apply(scala.Function0,weaver.Log)|",
+      "|java+method:///cats/Functor$Ops/map(scala.Function1)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/Option$/apply(java.lang.Object)|",
+      "|java+constructor:///weaver/SourceLocation/SourceLocation(scala.Option,scala.Option,int)|",
+      "|java+method:///weaver/Log$/PartiallyAppliedLevel(weaver.Log$Level,weaver.Log)|",
+      "|java+method:///cats/Functor$Ops/map(scala.Function1)|",
+      "|java+method:///weaver/Log$PartiallyAppliedLevel/apply(scala.Function0,weaver.SourceLocation)|",
+      "|java+method:///weaver/package$/toFunctorOps(java.lang.Object,cats.Functor)|"
+    ],
+    "affectedLib": "org.typelevel:cats-core_2.12:1.3.1",
+    "change": "UPDATED"
+  }
+]

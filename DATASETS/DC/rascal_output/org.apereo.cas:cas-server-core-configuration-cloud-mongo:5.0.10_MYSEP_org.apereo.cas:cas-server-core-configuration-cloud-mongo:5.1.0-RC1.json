@@ -1,0 +1,41 @@
+[
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-core-configuration-cloud-mongo:5.0.10",
+    "coordinatesV2": "org.apereo.cas:cas-server-core-configuration-cloud-mongo:5.1.0-RC1",
+    "caller": "|java+constructor:///org/apereo/cas/MongoDbPropertySource/MongoDbPropertySource(java.lang.String,org.springframework.data.mongodb.core.MongoOperations)|",
+    "called": "|java+constructor:///org/springframework/core/env/EnumerablePropertySource/EnumerablePropertySource(java.lang.String,java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///org/springframework/core/env/EnumerablePropertySource/EnumerablePropertySource(java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///org/apereo/cas/MongoDbPropertySource/getSource()|",
+      "|java+method:///org/springframework/data/mongodb/core/MongoOperations/findAll(java.lang.Class,java.lang.String)|",
+      "|java+constructor:///org/springframework/core/env/EnumerablePropertySource/EnumerablePropertySource(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:4.3.5.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-core-configuration-cloud-mongo:5.0.10",
+    "coordinatesV2": "org.apereo.cas:cas-server-core-configuration-cloud-mongo:5.1.0-RC1",
+    "caller": "|java+method:///org/apereo/cas/MongoDbPropertySourceLocator/locate(org.springframework.core.env.Environment)|",
+    "called": "|java+constructor:///org/springframework/core/env/CompositePropertySource/CompositePropertySource(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+constructor:///org/springframework/core/env/CompositePropertySource/CompositePropertySource(java.lang.String)|",
+      "|java+constructor:///org/apereo/cas/MongoDbPropertySource/MongoDbPropertySource(java.lang.String,org.springframework.data.mongodb.core.MongoOperations)|",
+      "|java+method:///org/apereo/cas/MongoDbPropertySource/init()|",
+      "|java+method:///org/springframework/core/env/CompositePropertySource/addFirstPropertySource(org.springframework.core.env.PropertySource)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///org/springframework/core/env/CompositePropertySource/addFirstPropertySource(org.springframework.core.env.PropertySource)|",
+      "|java+constructor:///org/springframework/core/env/CompositePropertySource/CompositePropertySource(java.lang.String)|",
+      "|java+constructor:///org/apereo/cas/MongoDbPropertySource/MongoDbPropertySource(java.lang.String,org.springframework.data.mongodb.core.MongoOperations)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:4.3.5.RELEASE",
+    "change": "UPDATED"
+  }
+]

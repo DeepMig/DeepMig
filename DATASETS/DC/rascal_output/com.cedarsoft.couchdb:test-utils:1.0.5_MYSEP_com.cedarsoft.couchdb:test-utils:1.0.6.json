@@ -1,0 +1,135 @@
+[
+  {
+    "coordinatesV1": "com.cedarsoft.couchdb:test-utils:1.0.5",
+    "coordinatesV2": "com.cedarsoft.couchdb:test-utils:1.0.6",
+    "caller": "|java+method:///com/cedarsoft/couchdb/test/utils/CouchDbRule/createServer()|",
+    "called": "|java+method:///org/fest/assertions/Assertions/assertThat(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/cedarsoft/couchdb/test/utils/CouchDbRule/getServerUri()|",
+      "|java+method:///com/cedarsoft/couchdb/test/utils/CouchDbRule/getAuthFilter()|",
+      "|java+constructor:///com/cedarsoft/couchdb/CouchServer/CouchServer(java.net.URI,com.sun.jersey.api.client.filter.ClientFilter%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/cedarsoft/couchdb/CouchServer/get(java.lang.String)|",
+      "|java+method:///com/sun/jersey/api/client/ClientResponse/close()|",
+      "|java+method:///com/sun/jersey/api/client/ClientResponse/getEntity(java.lang.Class)|",
+      "|java+constructor:///com/cedarsoft/couchdb/CouchServer/CouchServer(com.sun.jersey.api.client.WebResource)|",
+      "|java+method:///org/fest/assertions/Assertions/assertThat(java.lang.String)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///org/fest/assertions/StringAssert/isEqualTo(java.lang.Object)|",
+      "|java+method:///com/cedarsoft/couchdb/test/utils/CouchDbRule/getServerUri()|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|",
+      "|java+method:///com/sun/jersey/api/client/Client/resource(java.net.URI)|"
+    ],
+    "affectedLib": "org.easytesting:fest-assert:1.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.cedarsoft.couchdb:test-utils:1.0.5",
+    "coordinatesV2": "com.cedarsoft.couchdb:test-utils:1.0.6",
+    "caller": "|java+method:///com/cedarsoft/couchdb/test/utils/DeleteCouchUnitDbs/main(java.lang.String%5B%5D)|",
+    "called": "|java+method:///com/cedarsoft/couchdb/CouchServer/listDatabases()|",
+    "v1Body": [
+      "|java+method:///com/cedarsoft/couchdb/test/utils/CouchDbRule/getCurrentServer()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/io/InputStream/read()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/cedarsoft/couchdb/CouchServer/listDatabases()|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///com/cedarsoft/couchdb/CouchServer/deleteDatabase(java.lang.String)|",
+      "|java+method:///com/cedarsoft/couchdb/test/utils/CouchDbRule/getTestDbBaseName()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+constructor:///com/cedarsoft/couchdb/test/utils/CouchDbRule/CouchDbRule()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///com/cedarsoft/couchdb/test/utils/CouchDbRule/getServerUri()|",
+      "|java+method:///com/cedarsoft/couchdb/test/utils/CouchDbRule/after()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///com/cedarsoft/couchdb/test/utils/CouchDbRule/createServer()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/cedarsoft/couchdb/test/utils/CouchDbRule/getCurrentServer()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/io/InputStream/read()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/cedarsoft/couchdb/CouchServer/listDatabases()|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///com/cedarsoft/couchdb/CouchServer/deleteDatabase(java.lang.String)|",
+      "|java+method:///com/cedarsoft/couchdb/test/utils/CouchDbRule/getTestDbBaseName()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+constructor:///com/cedarsoft/couchdb/test/utils/CouchDbRule/CouchDbRule()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///com/cedarsoft/couchdb/test/utils/CouchDbRule/getServerUri()|",
+      "|java+method:///com/cedarsoft/couchdb/test/utils/CouchDbRule/after()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///com/cedarsoft/couchdb/test/utils/CouchDbRule/createServer()|",
+      "|java+method:///com/cedarsoft/couchdb/test/utils/CouchDbRule/before()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/util/Collection/iterator()|"
+    ],
+    "affectedLib": "com.cedarsoft:couchdb:1.0.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.cedarsoft.couchdb:test-utils:1.0.5",
+    "coordinatesV2": "com.cedarsoft.couchdb:test-utils:1.0.6",
+    "caller": "|java+method:///com/cedarsoft/couchdb/test/utils/CouchDbRule/getCouchDatabaseObject(java.lang.String)|",
+    "called": "|java+method:///com/cedarsoft/couchdb/CouchDatabase/create(com.sun.jersey.api.client.Client,java.net.URI,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/cedarsoft/couchdb/test/utils/CouchDbRule/getUsername()|",
+      "|java+method:///com/cedarsoft/couchdb/test/utils/CouchDbRule/getPassword()|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|",
+      "|java+constructor:///com/cedarsoft/couchdb/CouchDatabase/CouchDatabase(java.net.URI,java.lang.String,com.sun.jersey.api.client.filter.ClientFilter%5B%5D)|",
+      "|java+constructor:///com/sun/jersey/api/client/filter/HTTPBasicAuthFilter/HTTPBasicAuthFilter(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/sun/jersey/api/client/filter/HTTPBasicAuthFilter/HTTPBasicAuthFilter(java.lang.String,java.lang.String)|",
+      "|java+method:///com/cedarsoft/couchdb/test/utils/CouchDbRule/getUsername()|",
+      "|java+method:///com/cedarsoft/couchdb/test/utils/CouchDbRule/getPassword()|",
+      "|java+method:///com/sun/jersey/api/client/Client/addFilter(com.sun.jersey.api.client.filter.ClientFilter)|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|",
+      "|java+method:///com/cedarsoft/couchdb/CouchDatabase/create(com.sun.jersey.api.client.Client,java.net.URI,java.lang.String)|"
+    ],
+    "affectedLib": "com.cedarsoft:couchdb:1.0.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.cedarsoft.couchdb:test-utils:1.0.5",
+    "coordinatesV2": "com.cedarsoft.couchdb:test-utils:1.0.6",
+    "caller": "|java+method:///com/cedarsoft/couchdb/test/utils/CouchDbRule/createServer()|",
+    "called": "|java+constructor:///com/cedarsoft/couchdb/CouchServer/CouchServer(com.sun.jersey.api.client.WebResource)|",
+    "v1Body": [
+      "|java+method:///com/cedarsoft/couchdb/test/utils/CouchDbRule/getServerUri()|",
+      "|java+method:///com/cedarsoft/couchdb/test/utils/CouchDbRule/getAuthFilter()|",
+      "|java+constructor:///com/cedarsoft/couchdb/CouchServer/CouchServer(java.net.URI,com.sun.jersey.api.client.filter.ClientFilter%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/cedarsoft/couchdb/CouchServer/get(java.lang.String)|",
+      "|java+method:///com/sun/jersey/api/client/ClientResponse/close()|",
+      "|java+method:///com/sun/jersey/api/client/ClientResponse/getEntity(java.lang.Class)|",
+      "|java+constructor:///com/cedarsoft/couchdb/CouchServer/CouchServer(com.sun.jersey.api.client.WebResource)|",
+      "|java+method:///org/fest/assertions/Assertions/assertThat(java.lang.String)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///org/fest/assertions/StringAssert/isEqualTo(java.lang.Object)|",
+      "|java+method:///com/cedarsoft/couchdb/test/utils/CouchDbRule/getServerUri()|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|",
+      "|java+method:///com/sun/jersey/api/client/Client/resource(java.net.URI)|"
+    ],
+    "affectedLib": "com.cedarsoft:couchdb:1.0.6",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,114 @@
+[
+  {
+    "coordinatesV1": "org.apache.camel:camel-saxon:2.9.0-RC1",
+    "coordinatesV2": "org.apache.camel:camel-saxon:2.8.6",
+    "caller": "|java+constructor:///org/apache/camel/component/xquery/XQueryComponent/XQueryComponent()|",
+    "called": "|java+constructor:///org/apache/camel/component/ResourceBasedComponent/ResourceBasedComponent()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/camel/component/xquery/XQueryModuleURIResolver/XQueryModuleURIResolver(org.apache.camel.component.xquery.XQueryComponent)|",
+      "|java+constructor:///org/apache/camel/component/ResourceBasedComponent/ResourceBasedComponent()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/camel/component/xquery/XQueryModuleURIResolver/XQueryModuleURIResolver(org.apache.camel.component.xquery.XQueryComponent)|",
+      "|java+constructor:///org/apache/camel/impl/DefaultComponent/DefaultComponent()|"
+    ],
+    "affectedLib": "org.apache.camel:camel-spring:2.8.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.camel:camel-saxon:2.8.6",
+    "coordinatesV2": "org.apache.camel:camel-saxon:2.9.0-RC1",
+    "caller": "|java+method:///org/apache/camel/component/xquery/XQueryBuilder/evaluateAsStringSource(org.apache.camel.Exchange)|",
+    "called": "|java+constructor:///org/apache/camel/StringSource/StringSource(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/camel/component/xquery/XQueryBuilder/initialize(org.apache.camel.Exchange)|",
+      "|java+constructor:///org/apache/camel/converter/jaxp/StringSource/StringSource(java.lang.String)|",
+      "|java+method:///org/apache/camel/component/xquery/XQueryBuilder/evaluateAsString(org.apache.camel.Exchange)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/camel/component/xquery/XQueryBuilder/initialize(org.apache.camel.Exchange)|",
+      "|java+constructor:///org/apache/camel/StringSource/StringSource(java.lang.String)|",
+      "|java+method:///org/apache/camel/component/xquery/XQueryBuilder/evaluateAsString(org.apache.camel.Exchange)|"
+    ],
+    "affectedLib": "org.apache.camel:camel-core:2.9.0-RC1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.camel:camel-saxon:2.8.6",
+    "coordinatesV2": "org.apache.camel:camel-saxon:2.9.0-RC1",
+    "caller": "|java+method:///org/apache/camel/component/xquery/XQueryComponent/createEndpoint(java.lang.String,java.lang.String,java.util.Map)|",
+    "called": "|java+constructor:///org/apache/camel/impl/ProcessorEndpoint/ProcessorEndpoint(java.lang.String,org.apache.camel.Component,org.apache.camel.Processor)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/camel/component/xquery/XQueryComponent/configureXslt(org.apache.camel.component.xquery.XQueryBuilder,java.lang.String,java.lang.String,java.util.Map)|",
+      "|java+constructor:///org/apache/camel/impl/ProcessorEndpoint/ProcessorEndpoint(java.lang.String,org.apache.camel.Component,org.apache.camel.Processor)|",
+      "|java+method:///org/apache/camel/component/xquery/XQueryComponent/getModuleURIResolver()|",
+      "|java+method:///org/apache/camel/component/xquery/XQueryBuilder/setModuleURIResolver(net.sf.saxon.query.ModuleURIResolver)|",
+      "|java+method:///org/apache/camel/component/xquery/XQueryComponent/resolveMandatoryResource(java.lang.String)|",
+      "|java+method:///org/springframework/core/io/Resource/getURL()|",
+      "|java+method:///org/apache/camel/component/xquery/XQueryBuilder/xquery(java.net.URL)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/camel/component/xquery/XQueryComponent/configureXslt(org.apache.camel.component.xquery.XQueryBuilder,java.lang.String,java.lang.String,java.util.Map)|",
+      "|java+constructor:///org/apache/camel/impl/ProcessorEndpoint/ProcessorEndpoint(java.lang.String,org.apache.camel.Component,org.apache.camel.Processor)|",
+      "|java+method:///org/apache/camel/component/xquery/XQueryComponent/getModuleURIResolver()|",
+      "|java+method:///org/apache/camel/component/xquery/XQueryBuilder/setModuleURIResolver(net.sf.saxon.query.ModuleURIResolver)|",
+      "|java+method:///org/apache/camel/component/xquery/XQueryBuilder/xquery(java.net.URL)|",
+      "|java+method:///org/apache/camel/component/xquery/XQueryComponent/resolveModuleResource(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.camel:camel-core:2.9.0-RC1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.camel:camel-saxon:2.8.6",
+    "coordinatesV2": "org.apache.camel:camel-saxon:2.9.0-RC1",
+    "caller": "|java+method:///org/apache/camel/component/xquery/XQueryComponent/resolveModuleResource(java.lang.String)|",
+    "called": "|java+method:///org/apache/camel/util/ResourceHelper/resolveMandatoryResourceAsUrl(org.apache.camel.spi.ClassResolver,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/camel/component/xquery/XQueryComponent/resolveMandatoryResource(java.lang.String)|",
+      "|java+method:///org/springframework/core/io/Resource/getURL()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/camel/CamelContext/getClassResolver()|",
+      "|java+method:///org/apache/camel/component/xquery/XQueryComponent/getCamelContext()|",
+      "|java+method:///org/apache/camel/util/ResourceHelper/resolveMandatoryResourceAsUrl(org.apache.camel.spi.ClassResolver,java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.camel:camel-core:2.9.0-RC1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.camel:camel-saxon:2.8.6",
+    "coordinatesV2": "org.apache.camel:camel-saxon:2.9.0-RC1",
+    "caller": "|java+constructor:///org/apache/camel/component/xquery/XQueryComponent/XQueryComponent()|",
+    "called": "|java+constructor:///org/apache/camel/impl/DefaultComponent/DefaultComponent()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/camel/component/xquery/XQueryModuleURIResolver/XQueryModuleURIResolver(org.apache.camel.component.xquery.XQueryComponent)|",
+      "|java+constructor:///org/apache/camel/component/ResourceBasedComponent/ResourceBasedComponent()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/camel/component/xquery/XQueryModuleURIResolver/XQueryModuleURIResolver(org.apache.camel.component.xquery.XQueryComponent)|",
+      "|java+constructor:///org/apache/camel/impl/DefaultComponent/DefaultComponent()|"
+    ],
+    "affectedLib": "org.apache.camel:camel-core:2.9.0-RC1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.camel:camel-saxon:2.8.6",
+    "coordinatesV2": "org.apache.camel:camel-saxon:2.9.0-RC1",
+    "caller": "|java+method:///org/apache/camel/component/xquery/XQueryBuilder/evaluateAsBytesSource(org.apache.camel.Exchange)|",
+    "called": "|java+constructor:///org/apache/camel/BytesSource/BytesSource(byte%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/camel/component/xquery/XQueryBuilder/initialize(org.apache.camel.Exchange)|",
+      "|java+constructor:///org/apache/camel/converter/jaxp/BytesSource/BytesSource(byte%5B%5D)|",
+      "|java+method:///org/apache/camel/component/xquery/XQueryBuilder/evaluateAsBytes(org.apache.camel.Exchange)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/camel/BytesSource/BytesSource(byte%5B%5D)|",
+      "|java+method:///org/apache/camel/component/xquery/XQueryBuilder/initialize(org.apache.camel.Exchange)|",
+      "|java+method:///org/apache/camel/component/xquery/XQueryBuilder/evaluateAsBytes(org.apache.camel.Exchange)|"
+    ],
+    "affectedLib": "org.apache.camel:camel-core:2.9.0-RC1",
+    "change": "ADDED"
+  }
+]

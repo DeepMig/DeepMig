@@ -1,0 +1,65 @@
+[
+  {
+    "coordinatesV1": "net.sf.ehcache:ehcache-jgroupsreplication:1.2",
+    "coordinatesV2": "net.sf.ehcache:ehcache-jgroupsreplication:1.3",
+    "caller": "|java+method:///net/sf/ehcache/distribution/jgroups/JGroupManager/handleJGroupNotification(net.sf.ehcache.distribution.jgroups.JGroupSerializable)|",
+    "called": "|java+method:///net/sf/ehcache/Cache/removeAll(boolean)|",
+    "v1Body": [
+      "|java+method:///java/util/logging/Logger/fine(java.lang.String)|",
+      "|java+method:///net/sf/ehcache/Cache/put(net.sf.ehcache.Element,boolean)|",
+      "|java+method:///net/sf/ehcache/Cache/getQuiet(java.io.Serializable)|",
+      "|java+method:///net/sf/ehcache/CacheManager/getCache(java.lang.String)|",
+      "|java+method:///net/sf/ehcache/distribution/jgroups/JGroupSerializable/getCacheName()|",
+      "|java+method:///net/sf/ehcache/Cache/removeAll(boolean)|",
+      "|java+constructor:///net/sf/ehcache/Element/Element(java.lang.Object,java.lang.Object)|",
+      "|java+method:///net/sf/ehcache/distribution/jgroups/JGroupSerializable/getEvent()|",
+      "|java+method:///net/sf/ehcache/distribution/jgroups/JGroupSerializable/getKey()|",
+      "|java+method:///net/sf/ehcache/Cache/remove(java.io.Serializable,boolean)|",
+      "|java+method:///net/sf/ehcache/distribution/jgroups/JGroupSerializable/getValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/logging/Logger/fine(java.lang.String)|",
+      "|java+method:///net/sf/ehcache/Cache/put(net.sf.ehcache.Element,boolean)|",
+      "|java+method:///net/sf/ehcache/Cache/getQuiet(java.io.Serializable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///net/sf/ehcache/CacheManager/getCache(java.lang.String)|",
+      "|java+method:///net/sf/ehcache/distribution/jgroups/JGroupSerializable/getCacheName()|",
+      "|java+method:///net/sf/ehcache/Cache/removeAll(boolean)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///net/sf/ehcache/Element/Element(java.io.Serializable,java.io.Serializable)|",
+      "|java+method:///net/sf/ehcache/distribution/jgroups/JGroupSerializable/getEvent()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///net/sf/ehcache/distribution/jgroups/JGroupManager/sendBootstrapResponse(net.sf.ehcache.distribution.jgroups.JGroupSerializable,net.sf.ehcache.Cache)|",
+      "|java+method:///net/sf/ehcache/distribution/jgroups/JGroupSerializable/getKey()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///net/sf/ehcache/Cache/remove(java.io.Serializable,boolean)|",
+      "|java+method:///net/sf/ehcache/distribution/jgroups/JGroupSerializable/getValue()|"
+    ],
+    "affectedLib": "net.sf.ehcache:ehcache:2.10.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.sf.ehcache:ehcache-jgroupsreplication:1.2",
+    "coordinatesV2": "net.sf.ehcache:ehcache-jgroupsreplication:1.3",
+    "caller": "|java+method:///net/sf/ehcache/distribution/jgroups/JGroupManager/wrapMessage(net.sf.ehcache.distribution.jgroups.JGroupEventMessage)|",
+    "called": "|java+method:///net/sf/ehcache/Element/getValue()|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/Element/getValue()|",
+      "|java+constructor:///net/sf/ehcache/distribution/jgroups/JGroupSerializable/JGroupSerializable(int,java.io.Serializable,java.lang.Object,java.lang.String)|",
+      "|java+method:///net/sf/ehcache/distribution/jgroups/JGroupEventMessage/getEvent()|",
+      "|java+method:///net/sf/ehcache/distribution/jgroups/JGroupEventMessage/getElement()|",
+      "|java+method:///net/sf/ehcache/distribution/jgroups/JGroupEventMessage/getSerializableKey()|",
+      "|java+method:///net/sf/ehcache/distribution/jgroups/JGroupEventMessage/getCacheName()|"
+    ],
+    "v2Body": [
+      "|java+method:///net/sf/ehcache/Element/getValue()|",
+      "|java+method:///net/sf/ehcache/distribution/jgroups/JGroupEventMessage/getEvent()|",
+      "|java+method:///net/sf/ehcache/distribution/jgroups/JGroupEventMessage/getElement()|",
+      "|java+constructor:///net/sf/ehcache/distribution/jgroups/JGroupSerializable/JGroupSerializable(int,java.io.Serializable,java.io.Serializable,java.lang.String)|",
+      "|java+method:///net/sf/ehcache/distribution/jgroups/JGroupEventMessage/getSerializableKey()|",
+      "|java+method:///net/sf/ehcache/distribution/jgroups/JGroupEventMessage/getCacheName()|"
+    ],
+    "affectedLib": "net.sf.ehcache:ehcache:2.10.5",
+    "change": "UPDATED"
+  }
+]

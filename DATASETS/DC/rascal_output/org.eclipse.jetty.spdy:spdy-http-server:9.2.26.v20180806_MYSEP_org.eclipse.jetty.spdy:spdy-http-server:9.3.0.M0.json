@@ -1,0 +1,46 @@
+[
+  {
+    "coordinatesV1": "org.eclipse.jetty.spdy:spdy-http-server:9.2.26.v20180806",
+    "coordinatesV2": "org.eclipse.jetty.spdy:spdy-http-server:9.3.0.M0",
+    "caller": "|java+constructor:///org/eclipse/jetty/spdy/server/http/HTTPSPDYServerConnector/HTTPSPDYServerConnector(org.eclipse.jetty.server.Server,org.eclipse.jetty.server.HttpConfiguration,org.eclipse.jetty.util.ssl.SslContextFactory,java.util.Map)|",
+    "called": "|java+constructor:///org/eclipse/jetty/npn/server/NPNServerConnectionFactory/NPNServerConnectionFactory(java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+constructor:///org/eclipse/jetty/spdy/server/http/HTTPSPDYServerConnectionFactory/HTTPSPDYServerConnectionFactory(int,org.eclipse.jetty.server.HttpConfiguration,org.eclipse.jetty.spdy.server.http.PushStrategy)|",
+      "|java+method:///org/eclipse/jetty/spdy/server/NPNServerConnectionFactory/setDefaultProtocol(java.lang.String)|",
+      "|java+constructor:///org/eclipse/jetty/server/HttpConnectionFactory/HttpConnectionFactory(org.eclipse.jetty.server.HttpConfiguration)|",
+      "|java+method:///org/eclipse/jetty/spdy/server/http/HTTPSPDYServerConnector/getPushStrategy(short,java.util.Map)|",
+      "|java+method:///org/eclipse/jetty/server/AbstractConnectionFactory/getFactories(org.eclipse.jetty.util.ssl.SslContextFactory,org.eclipse.jetty.server.ConnectionFactory%5B%5D)|",
+      "|java+constructor:///org/eclipse/jetty/spdy/server/NPNServerConnectionFactory/NPNServerConnectionFactory(java.lang.String%5B%5D)|",
+      "|java+constructor:///org/eclipse/jetty/server/ServerConnector/ServerConnector(org.eclipse.jetty.server.Server,org.eclipse.jetty.server.ConnectionFactory%5B%5D)|",
+      "|java+method:///org/eclipse/jetty/spdy/server/http/HTTPSPDYServerConnector/getConnectionFactory(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/eclipse/jetty/server/HttpConnectionFactory/HttpConnectionFactory(org.eclipse.jetty.server.HttpConfiguration)|",
+      "|java+method:///org/eclipse/jetty/spdy/server/http/HTTPSPDYServerConnector/getPushStrategy(short,java.util.Map)|",
+      "|java+method:///org/eclipse/jetty/server/AbstractConnectionFactory/getFactories(org.eclipse.jetty.util.ssl.SslContextFactory,org.eclipse.jetty.server.ConnectionFactory%5B%5D)|",
+      "|java+method:///org/eclipse/jetty/npn/server/NPNServerConnectionFactory/setDefaultProtocol(java.lang.String)|",
+      "|java+constructor:///org/eclipse/jetty/server/ServerConnector/ServerConnector(org.eclipse.jetty.server.Server,org.eclipse.jetty.server.ConnectionFactory%5B%5D)|",
+      "|java+method:///org/eclipse/jetty/spdy/server/http/HTTPSPDYServerConnector/getConnectionFactory(java.lang.Class)|",
+      "|java+constructor:///org/eclipse/jetty/npn/server/NPNServerConnectionFactory/NPNServerConnectionFactory(java.lang.String%5B%5D)|",
+      "|java+constructor:///org/eclipse/jetty/spdy/server/http/HTTPSPDYServerConnectionFactory/HTTPSPDYServerConnectionFactory(int,org.eclipse.jetty.server.HttpConfiguration,org.eclipse.jetty.spdy.server.http.PushStrategy)|"
+    ],
+    "affectedLib": "org.eclipse.jetty:jetty-npn-server:9.3.0.M0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.jetty.spdy:spdy-http-server:9.2.26.v20180806",
+    "coordinatesV2": "org.eclipse.jetty.spdy:spdy-http-server:9.3.0.M0",
+    "caller": "|java+constructor:///org/eclipse/jetty/spdy/server/proxy/HTTPSPDYProxyServerConnector/HTTPSPDYProxyServerConnector(org.eclipse.jetty.server.Server,org.eclipse.jetty.util.ssl.SslContextFactory,org.eclipse.jetty.server.HttpConfiguration,org.eclipse.jetty.spdy.server.proxy.ProxyEngineSelector)|",
+    "called": "|java+constructor:///org/eclipse/jetty/npn/server/NPNServerConnectionFactory/NPNServerConnectionFactory(java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+constructor:///org/eclipse/jetty/spdy/server/proxy/HTTPSPDYProxyServerConnector/HTTPSPDYProxyServerConnector(org.eclipse.jetty.server.Server,org.eclipse.jetty.util.ssl.SslContextFactory,org.eclipse.jetty.server.HttpConfiguration,org.eclipse.jetty.spdy.server.proxy.ProxyEngineSelector,org.eclipse.jetty.server.NegotiatingServerConnectionFactory)|",
+      "|java+constructor:///org/eclipse/jetty/spdy/server/NPNServerConnectionFactory/NPNServerConnectionFactory(java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/eclipse/jetty/spdy/server/proxy/HTTPSPDYProxyServerConnector/HTTPSPDYProxyServerConnector(org.eclipse.jetty.server.Server,org.eclipse.jetty.util.ssl.SslContextFactory,org.eclipse.jetty.server.HttpConfiguration,org.eclipse.jetty.spdy.server.proxy.ProxyEngineSelector,org.eclipse.jetty.server.NegotiatingServerConnectionFactory)|",
+      "|java+constructor:///org/eclipse/jetty/npn/server/NPNServerConnectionFactory/NPNServerConnectionFactory(java.lang.String%5B%5D)|"
+    ],
+    "affectedLib": "org.eclipse.jetty:jetty-npn-server:9.3.0.M0",
+    "change": "ADDED"
+  }
+]

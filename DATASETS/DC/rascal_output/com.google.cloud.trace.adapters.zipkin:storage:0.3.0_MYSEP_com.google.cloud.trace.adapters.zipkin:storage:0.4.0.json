@@ -1,0 +1,66 @@
+[
+  {
+    "coordinatesV1": "com.google.cloud.trace.adapters.zipkin:storage:0.3.0",
+    "coordinatesV2": "com.google.cloud.trace.adapters.zipkin:storage:0.4.0",
+    "caller": "|java+constructor:///com/google/cloud/trace/zipkin/StackdriverStorageComponent/StackdriverStorageComponent(java.lang.String,com.google.cloud.trace.v1.consumer.TraceConsumer,org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor)|",
+    "called": "|java+constructor:///com/google/cloud/trace/zipkin/translation/TraceTranslator/TraceTranslator(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///java/util/concurrent/atomic/LongAdder/LongAdder()|",
+      "|java+method:///zipkin/storage/StorageAdapters/blockingToAsync(zipkin.storage.StorageAdapters$SpanConsumer,java.util.concurrent.Executor)|",
+      "|java+constructor:///com/google/cloud/trace/zipkin/StackdriverSpanConsumer/StackdriverSpanConsumer(com.google.cloud.trace.zipkin.translation.TraceTranslator,com.google.cloud.trace.v1.consumer.TraceConsumer)|",
+      "|java+constructor:///com/google/cloud/trace/zipkin/translation/TraceTranslator/TraceTranslator(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/concurrent/atomic/LongAdder/LongAdder()|",
+      "|java+constructor:///com/google/cloud/trace/zipkin/StackdriverSpanConsumer/StackdriverSpanConsumer(com.google.cloud.trace.zipkin.translation.TraceTranslator,com.google.cloud.trace.v1.consumer.TraceConsumer,org.springframework.core.task.AsyncListenableTaskExecutor)|",
+      "|java+constructor:///zipkin2/storage/StorageComponent/StorageComponent()|",
+      "|java+constructor:///com/google/cloud/trace/zipkin/translation/TraceTranslator/TraceTranslator(java.lang.String)|"
+    ],
+    "affectedLib": "com.google.cloud.trace.adapters.zipkin:translation:0.4.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.google.cloud.trace.adapters.zipkin:storage:0.3.0",
+    "coordinatesV2": "com.google.cloud.trace.adapters.zipkin:storage:0.4.0",
+    "caller": "|java+method:///com/google/cloud/trace/zipkin/StackdriverSpanConsumer/accept(java.util.List)|",
+    "called": "|java+method:///com/google/cloud/trace/zipkin/translation/TraceTranslator/translateSpans(java.util.Collection)|",
+    "v1Body": [
+      "|java+method:///com/google/devtools/cloudtrace/v1/Traces/newBuilder()|",
+      "|java+method:///com/google/devtools/cloudtrace/v1/Traces$Builder/build()|",
+      "|java+method:///com/google/cloud/trace/v1/consumer/TraceConsumer/receive(com.google.devtools.cloudtrace.v1.Traces)|",
+      "|java+method:///com/google/devtools/cloudtrace/v1/Traces$Builder/addAllTraces(java.lang.Iterable)|",
+      "|java+method:///com/google/cloud/trace/zipkin/translation/TraceTranslator/translateSpans(java.util.Collection)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/devtools/cloudtrace/v1/Traces/newBuilder()|",
+      "|java+constructor:///com/google/cloud/trace/zipkin/StackdriverSpanConsumer$TracesCall/StackdriverSpanConsumer$TracesCall(com.google.cloud.trace.zipkin.StackdriverSpanConsumer,com.google.devtools.cloudtrace.v1.Traces,com.google.cloud.trace.zipkin.StackdriverSpanConsumer$1)|",
+      "|java+method:///com/google/devtools/cloudtrace/v1/Traces$Builder/build()|",
+      "|java+method:///com/google/devtools/cloudtrace/v1/Traces$Builder/addAllTraces(java.lang.Iterable)|",
+      "|java+method:///com/google/cloud/trace/zipkin/translation/TraceTranslator/translateSpans(java.util.Collection)|"
+    ],
+    "affectedLib": "com.google.cloud.trace.adapters.zipkin:translation:0.4.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.google.cloud.trace.adapters.zipkin:storage:0.3.0",
+    "coordinatesV2": "com.google.cloud.trace.adapters.zipkin:storage:0.4.0",
+    "caller": "|java+constructor:///com/google/cloud/trace/zipkin/StackdriverStorageComponent/StackdriverStorageComponent(java.lang.String,com.google.cloud.trace.v1.consumer.TraceConsumer,org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor)|",
+    "called": "|java+constructor:///zipkin2/storage/StorageComponent/StorageComponent()|",
+    "v1Body": [
+      "|java+constructor:///java/util/concurrent/atomic/LongAdder/LongAdder()|",
+      "|java+method:///zipkin/storage/StorageAdapters/blockingToAsync(zipkin.storage.StorageAdapters$SpanConsumer,java.util.concurrent.Executor)|",
+      "|java+constructor:///com/google/cloud/trace/zipkin/StackdriverSpanConsumer/StackdriverSpanConsumer(com.google.cloud.trace.zipkin.translation.TraceTranslator,com.google.cloud.trace.v1.consumer.TraceConsumer)|",
+      "|java+constructor:///com/google/cloud/trace/zipkin/translation/TraceTranslator/TraceTranslator(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/concurrent/atomic/LongAdder/LongAdder()|",
+      "|java+constructor:///com/google/cloud/trace/zipkin/StackdriverSpanConsumer/StackdriverSpanConsumer(com.google.cloud.trace.zipkin.translation.TraceTranslator,com.google.cloud.trace.v1.consumer.TraceConsumer,org.springframework.core.task.AsyncListenableTaskExecutor)|",
+      "|java+constructor:///zipkin2/storage/StorageComponent/StorageComponent()|",
+      "|java+constructor:///com/google/cloud/trace/zipkin/translation/TraceTranslator/TraceTranslator(java.lang.String)|"
+    ],
+    "affectedLib": "io.zipkin.java:zipkin:2.2.0",
+    "change": "UPDATED"
+  }
+]

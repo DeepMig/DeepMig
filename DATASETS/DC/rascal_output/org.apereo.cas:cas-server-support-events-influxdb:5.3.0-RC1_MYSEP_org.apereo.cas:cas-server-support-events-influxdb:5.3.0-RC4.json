@@ -1,0 +1,143 @@
+[
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-events-influxdb:5.3.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-events-influxdb:5.3.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/support/events/dao/InfluxDbCasEventRepository/destroy()|",
+    "called": "|java+method:///org/apereo/cas/influxdb/InfluxDbConnectionFactory/close()|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apereo/cas/influxdb/InfluxDbConnectionFactory/close()|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apereo/cas/influxdb/InfluxDbConnectionFactory/close()|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-support-influxdb-core:5.3.0-RC4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-events-influxdb:5.3.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-events-influxdb:5.3.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/support/events/dao/InfluxDbCasEventRepository/save(org.apereo.cas.support.events.dao.CasEvent)|",
+    "called": "|java+method:///org/apereo/cas/influxdb/InfluxDbConnectionFactory/writeBatch(org.influxdb.dto.Point%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/influxdb/dto/Point$Builder/time(long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///org/influxdb/dto/Point/measurement(java.lang.String)|",
+      "|java+method:///org/springframework/util/ReflectionUtils/doWithFields(java.lang.Class,org.springframework.util.ReflectionUtils$FieldCallback)|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///org/apereo/cas/influxdb/InfluxDbConnectionFactory/write(org.influxdb.dto.Point)|",
+      "|java+method:///org/influxdb/dto/Point$Builder/build()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/influxdb/dto/Point$Builder/time(long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///org/apereo/cas/influxdb/InfluxDbConnectionFactory/writeBatch(org.influxdb.dto.Point%5B%5D)|",
+      "|java+method:///org/influxdb/dto/Point/measurement(java.lang.String)|",
+      "|java+method:///org/springframework/util/ReflectionUtils/doWithFields(java.lang.Class,org.springframework.util.ReflectionUtils$FieldCallback)|",
+      "|java+method:///org/influxdb/dto/Point$Builder/build()|",
+      "|java+method:///java/lang/System/currentTimeMillis()|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-support-influxdb-core:5.3.0-RC4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-events-influxdb:5.3.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-events-influxdb:5.3.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/support/events/dao/InfluxDbCasEventRepository/load()|",
+    "called": "|java+method:///org/apereo/cas/influxdb/InfluxDbConnectionFactory/query(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/apereo/cas/influxdb/InfluxDbConnectionFactory/query(java.lang.String)|",
+      "|java+method:///java/util/List/stream()|",
+      "|java+method:///org/influxdb/dto/QueryResult/getResults()|",
+      "|java+method:///java/util/stream/Stream/forEach(java.util.function.Consumer)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/apereo/cas/influxdb/InfluxDbConnectionFactory/query(java.lang.String)|",
+      "|java+method:///java/util/List/stream()|",
+      "|java+method:///org/influxdb/dto/QueryResult/getResults()|",
+      "|java+method:///java/util/stream/Stream/filter(java.util.function.Predicate)|",
+      "|java+method:///java/util/stream/Stream/forEach(java.util.function.Consumer)|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-support-influxdb-core:5.3.0-RC4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-events-influxdb:5.3.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-events-influxdb:5.3.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/support/events/dao/InfluxDbCasEventRepository/save(org.apereo.cas.support.events.dao.CasEvent)|",
+    "called": "|java+method:///org/influxdb/dto/Point/measurement(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/influxdb/dto/Point$Builder/time(long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///org/influxdb/dto/Point/measurement(java.lang.String)|",
+      "|java+method:///org/springframework/util/ReflectionUtils/doWithFields(java.lang.Class,org.springframework.util.ReflectionUtils$FieldCallback)|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///org/apereo/cas/influxdb/InfluxDbConnectionFactory/write(org.influxdb.dto.Point)|",
+      "|java+method:///org/influxdb/dto/Point$Builder/build()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/influxdb/dto/Point$Builder/time(long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///org/apereo/cas/influxdb/InfluxDbConnectionFactory/writeBatch(org.influxdb.dto.Point%5B%5D)|",
+      "|java+method:///org/influxdb/dto/Point/measurement(java.lang.String)|",
+      "|java+method:///org/springframework/util/ReflectionUtils/doWithFields(java.lang.Class,org.springframework.util.ReflectionUtils$FieldCallback)|",
+      "|java+method:///org/influxdb/dto/Point$Builder/build()|",
+      "|java+method:///java/lang/System/currentTimeMillis()|"
+    ],
+    "affectedLib": "org.influxdb:influxdb-java:2.10",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-events-influxdb:5.3.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-events-influxdb:5.3.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/support/events/dao/InfluxDbCasEventRepository/lambda$save$0(org.influxdb.dto.Point$Builder,org.apereo.cas.support.events.dao.CasEvent,java.lang.reflect.Field)|",
+    "called": "|java+method:///org/influxdb/dto/Point$Builder/field(java.lang.String,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/lang/reflect/Field/getName()|",
+      "|java+method:///org/influxdb/dto/Point$Builder/field(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/reflect/Field/getType()|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///java/lang/reflect/Field/get(java.lang.Object)|",
+      "|java+method:///java/lang/reflect/Field/setAccessible(boolean)|",
+      "|java+method:///org/influxdb/dto/Point$Builder/fields(java.util.Map)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/reflect/Field/getName()|",
+      "|java+method:///org/influxdb/dto/Point$Builder/field(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/reflect/Field/getModifiers()|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///java/lang/reflect/Field/get(java.lang.Object)|",
+      "|java+method:///java/lang/reflect/Field/setAccessible(boolean)|",
+      "|java+method:///org/influxdb/dto/Point$Builder/fields(java.util.Map)|",
+      "|java+method:///java/lang/reflect/Field/getType()|",
+      "|java+method:///java/lang/reflect/Modifier/isStatic(int)|"
+    ],
+    "affectedLib": "org.influxdb:influxdb-java:2.10",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-events-influxdb:5.3.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-events-influxdb:5.3.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/support/events/dao/InfluxDbCasEventRepository/save(org.apereo.cas.support.events.dao.CasEvent)|",
+    "called": "|java+method:///org/springframework/util/ReflectionUtils/doWithFields(java.lang.Class,org.springframework.util.ReflectionUtils$FieldCallback)|",
+    "v1Body": [
+      "|java+method:///org/influxdb/dto/Point$Builder/time(long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///org/influxdb/dto/Point/measurement(java.lang.String)|",
+      "|java+method:///org/springframework/util/ReflectionUtils/doWithFields(java.lang.Class,org.springframework.util.ReflectionUtils$FieldCallback)|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///org/apereo/cas/influxdb/InfluxDbConnectionFactory/write(org.influxdb.dto.Point)|",
+      "|java+method:///org/influxdb/dto/Point$Builder/build()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/influxdb/dto/Point$Builder/time(long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///org/apereo/cas/influxdb/InfluxDbConnectionFactory/writeBatch(org.influxdb.dto.Point%5B%5D)|",
+      "|java+method:///org/influxdb/dto/Point/measurement(java.lang.String)|",
+      "|java+method:///org/springframework/util/ReflectionUtils/doWithFields(java.lang.Class,org.springframework.util.ReflectionUtils$FieldCallback)|",
+      "|java+method:///org/influxdb/dto/Point$Builder/build()|",
+      "|java+method:///java/lang/System/currentTimeMillis()|"
+    ],
+    "affectedLib": "org.springframework:spring-core:4.3.17.RELEASE",
+    "change": "UPDATED"
+  }
+]

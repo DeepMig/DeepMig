@@ -1,0 +1,545 @@
+[
+  {
+    "coordinatesV1": "com.tinify:tinify:1.5.1",
+    "coordinatesV2": "com.tinify:tinify:1.4.0",
+    "caller": "|java+method:///com/tinify/Client/request(com.tinify.Client$Method,java.lang.String,byte%5B%5D)|",
+    "called": "|java+method:///com/squareup/okhttp/RequestBody/create(com.squareup.okhttp.MediaType,byte%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/tinify/Client/request(com.tinify.Client$Method,java.lang.String,com.squareup.okhttp.RequestBody)|",
+      "|java+method:///com/squareup/okhttp/RequestBody/create(com.squareup.okhttp.MediaType,byte%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/tinify/Client/request(com.tinify.Client$Method,java.lang.String,okhttp3.RequestBody)|",
+      "|java+method:///okhttp3/RequestBody/create(okhttp3.MediaType,byte%5B%5D)|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.5.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.tinify:tinify:1.5.1",
+    "coordinatesV2": "com.tinify:tinify:1.4.0",
+    "caller": "|java+method:///com/tinify/ResultMeta/location()|",
+    "called": "|java+method:///com/squareup/okhttp/Headers/get(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/squareup/okhttp/Headers/get(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/Headers/get(java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.5.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.tinify:tinify:1.5.1",
+    "coordinatesV2": "com.tinify:tinify:1.4.0",
+    "caller": "|java+method:///com/tinify/Result/size()|",
+    "called": "|java+method:///com/squareup/okhttp/Headers/get(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/squareup/okhttp/Headers/get(java.lang.String)|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/Headers/get(java.lang.String)|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.5.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.tinify:tinify:1.5.1",
+    "coordinatesV2": "com.tinify:tinify:1.4.0",
+    "caller": "|java+method:///com/tinify/Client/request(com.tinify.Client$Method,java.lang.String,com.tinify.Options)|",
+    "called": "|java+method:///com/squareup/okhttp/RequestBody/create(com.squareup.okhttp.MediaType,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/squareup/okhttp/RequestBody/create(com.squareup.okhttp.MediaType,java.lang.String)|",
+      "|java+method:///com/tinify/Client/request(com.tinify.Client$Method,java.lang.String,com.squareup.okhttp.RequestBody)|",
+      "|java+method:///com/tinify/Client$Method/equals(java.lang.Object)|",
+      "|java+method:///com/tinify/Options/isEmpty()|",
+      "|java+method:///com/tinify/Options/toJson()|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/RequestBody/create(okhttp3.MediaType,java.lang.String)|",
+      "|java+method:///com/tinify/Client/request(com.tinify.Client$Method,java.lang.String,okhttp3.RequestBody)|",
+      "|java+method:///com/tinify/Client$Method/equals(java.lang.Object)|",
+      "|java+method:///com/tinify/Options/isEmpty()|",
+      "|java+method:///com/tinify/Options/toJson()|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.5.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.tinify:tinify:1.5.1",
+    "coordinatesV2": "com.tinify:tinify:1.4.0",
+    "caller": "|java+method:///com/tinify/Result/mediaType()|",
+    "called": "|java+method:///com/squareup/okhttp/Headers/get(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/squareup/okhttp/Headers/get(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/Headers/get(java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.5.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.tinify:tinify:1.5.1",
+    "coordinatesV2": "com.tinify:tinify:1.4.0",
+    "caller": "|java+method:///com/tinify/Source/fromUrl(java.lang.String)|",
+    "called": "|java+method:///com/squareup/okhttp/Response/header(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/tinify/Tinify/client()|",
+      "|java+method:///com/tinify/Client/request(com.tinify.Client$Method,java.lang.String,com.tinify.Options)|",
+      "|java+method:///com/tinify/Options/with(java.lang.String,com.tinify.Options)|",
+      "|java+constructor:///com/tinify/Options/Options()|",
+      "|java+method:///com/squareup/okhttp/Response/header(java.lang.String)|",
+      "|java+method:///com/tinify/Options/with(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///com/tinify/Source/Source(java.lang.String,com.tinify.Options)|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/Headers/get(java.lang.String)|",
+      "|java+constructor:///com/tinify/Options/Options()|",
+      "|java+method:///com/tinify/Tinify/client()|",
+      "|java+method:///com/tinify/Client/request(com.tinify.Client$Method,java.lang.String,com.tinify.Options)|",
+      "|java+method:///com/tinify/Options/with(java.lang.String,com.tinify.Options)|",
+      "|java+method:///com/tinify/Options/with(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///com/tinify/Source/Source(java.lang.String,com.tinify.Options)|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.5.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.tinify:tinify:1.5.1",
+    "coordinatesV2": "com.tinify:tinify:1.4.0",
+    "caller": "|java+method:///com/tinify/ResultMeta/height()|",
+    "called": "|java+method:///com/squareup/okhttp/Headers/get(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/squareup/okhttp/Headers/get(java.lang.String)|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/Headers/get(java.lang.String)|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.5.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.tinify:tinify:1.5.1",
+    "coordinatesV2": "com.tinify:tinify:1.4.0",
+    "caller": "|java+method:///com/tinify/Client/request(com.tinify.Client$Method,java.lang.String)|",
+    "called": "|java+method:///com/squareup/okhttp/RequestBody/create(com.squareup.okhttp.MediaType,byte%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/tinify/Client/request(com.tinify.Client$Method,java.lang.String,com.squareup.okhttp.RequestBody)|",
+      "|java+method:///com/tinify/Client$Method/equals(java.lang.Object)|",
+      "|java+method:///com/squareup/okhttp/RequestBody/create(com.squareup.okhttp.MediaType,byte%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/tinify/Client/request(com.tinify.Client$Method,java.lang.String,okhttp3.RequestBody)|",
+      "|java+method:///com/tinify/Client$Method/equals(java.lang.Object)|",
+      "|java+method:///okhttp3/RequestBody/create(okhttp3.MediaType,byte%5B%5D)|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.5.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.tinify:tinify:1.5.1",
+    "coordinatesV2": "com.tinify:tinify:1.4.0",
+    "caller": "|java+method:///com/tinify/Source/result()|",
+    "called": "|java+method:///com/squareup/okhttp/ResponseBody/bytes()|",
+    "v1Body": [
+      "|java+constructor:///com/tinify/Result/Result(com.squareup.okhttp.Headers,byte%5B%5D)|",
+      "|java+method:///com/squareup/okhttp/Response/body()|",
+      "|java+method:///com/tinify/Client/request(com.tinify.Client$Method,java.lang.String)|",
+      "|java+method:///com/tinify/Client/request(com.tinify.Client$Method,java.lang.String,com.tinify.Options)|",
+      "|java+method:///com/tinify/Tinify/client()|",
+      "|java+method:///com/squareup/okhttp/Response/headers()|",
+      "|java+method:///com/squareup/okhttp/ResponseBody/bytes()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/tinify/Result/Result(okhttp3.Headers,byte%5B%5D)|",
+      "|java+method:///com/tinify/Client/request(com.tinify.Client$Method,java.lang.String)|",
+      "|java+method:///com/tinify/Client/request(com.tinify.Client$Method,java.lang.String,com.tinify.Options)|",
+      "|java+method:///com/tinify/Tinify/client()|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.5.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.tinify:tinify:1.5.1",
+    "coordinatesV2": "com.tinify:tinify:1.4.0",
+    "caller": "|java+constructor:///com/tinify/Client/Client(java.lang.String,java.lang.String,java.lang.String)|",
+    "called": "|java+method:///com/squareup/okhttp/OkHttpClient/setConnectTimeout(long,java.util.concurrent.TimeUnit)|",
+    "v1Body": [
+      "|java+method:///com/squareup/okhttp/Credentials/basic(java.lang.String,java.lang.String)|",
+      "|java+method:///com/squareup/okhttp/OkHttpClient/setReadTimeout(long,java.util.concurrent.TimeUnit)|",
+      "|java+constructor:///java/net/URL/URL(java.lang.String)|",
+      "|java+method:///com/tinify/Client/createProxyAuthenticator(java.net.URL)|",
+      "|java+constructor:///com/tinify/ConnectionException/ConnectionException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/squareup/okhttp/OkHttpClient/setSslSocketFactory(javax.net.ssl.SSLSocketFactory)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/squareup/okhttp/OkHttpClient/setProxy(java.net.Proxy)|",
+      "|java+method:///com/squareup/okhttp/OkHttpClient/setConnectTimeout(long,java.util.concurrent.TimeUnit)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///com/squareup/okhttp/OkHttpClient/setWriteTimeout(long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/squareup/okhttp/OkHttpClient/setAuthenticator(com.squareup.okhttp.Authenticator)|",
+      "|java+method:///com/tinify/SSLContext/getSocketFactory()|",
+      "|java+method:///com/tinify/Client/createProxyAddress(java.net.URL)|",
+      "|java+constructor:///com/squareup/okhttp/OkHttpClient/OkHttpClient()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/Credentials/basic(java.lang.String,java.lang.String)|",
+      "|java+constructor:///java/net/URL/URL(java.lang.String)|",
+      "|java+method:///okhttp3/OkHttpClient$Builder/proxy(java.net.Proxy)|",
+      "|java+method:///com/tinify/Client/createProxyAddress(java.net.URL)|",
+      "|java+constructor:///com/tinify/ConnectionException/ConnectionException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///okhttp3/OkHttpClient$Builder/OkHttpClient$Builder()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///okhttp3/OkHttpClient$Builder/sslSocketFactory(javax.net.ssl.SSLSocketFactory,javax.net.ssl.X509TrustManager)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///okhttp3/OkHttpClient$Builder/readTimeout(long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///okhttp3/OkHttpClient$Builder/connectTimeout(long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///okhttp3/OkHttpClient$Builder/proxyAuthenticator(okhttp3.Authenticator)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/tinify/Client/createProxyAuthenticator(java.net.URL)|",
+      "|java+method:///okhttp3/OkHttpClient$Builder/writeTimeout(long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+method:///okhttp3/OkHttpClient$Builder/build()|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.5.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.tinify:tinify:1.5.1",
+    "coordinatesV2": "com.tinify:tinify:1.4.0",
+    "caller": "|java+method:///com/tinify/ResultMeta/width()|",
+    "called": "|java+method:///com/squareup/okhttp/Headers/get(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/squareup/okhttp/Headers/get(java.lang.String)|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/Headers/get(java.lang.String)|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.5.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.tinify:tinify:1.5.1",
+    "coordinatesV2": "com.tinify:tinify:1.4.0",
+    "caller": "|java+method:///com/tinify/Source/fromBuffer(byte%5B%5D)|",
+    "called": "|java+method:///com/squareup/okhttp/Response/header(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/tinify/Client/request(com.tinify.Client$Method,java.lang.String,byte%5B%5D)|",
+      "|java+method:///com/tinify/Tinify/client()|",
+      "|java+constructor:///com/tinify/Source/Source(java.lang.String,com.tinify.Options)|",
+      "|java+constructor:///com/tinify/Options/Options()|",
+      "|java+method:///com/squareup/okhttp/Response/header(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/tinify/Options/Options()|",
+      "|java+method:///com/tinify/Tinify/client()|",
+      "|java+constructor:///com/tinify/Source/Source(java.lang.String,com.tinify.Options)|",
+      "|java+method:///com/tinify/Client/request(com.tinify.Client$Method,java.lang.String,byte%5B%5D)|",
+      "|java+method:///okhttp3/Headers/get(java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.5.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.tinify:tinify:1.5.1",
+    "coordinatesV2": "com.tinify:tinify:1.4.0",
+    "caller": "|java+initializer:///com/tinify/Client/Client$initializer|",
+    "called": "|java+method:///com/squareup/okhttp/MediaType/parse(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Package/getImplementationVersion()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/Class/getPackage()|",
+      "|java+method:///com/squareup/okhttp/MediaType/parse(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/System/getProperty(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Package/getImplementationVersion()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/Class/getPackage()|",
+      "|java+method:///okhttp3/MediaType/parse(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/System/getProperty(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.5.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.tinify:tinify:1.4.0",
+    "coordinatesV2": "com.tinify:tinify:1.5.1",
+    "caller": "|java+method:///com/tinify/Client/request(com.tinify.Client$Method,java.lang.String,byte%5B%5D)|",
+    "called": "|java+method:///okhttp3/RequestBody/create(okhttp3.MediaType,byte%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/tinify/Client/request(com.tinify.Client$Method,java.lang.String,com.squareup.okhttp.RequestBody)|",
+      "|java+method:///com/squareup/okhttp/RequestBody/create(com.squareup.okhttp.MediaType,byte%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/tinify/Client/request(com.tinify.Client$Method,java.lang.String,okhttp3.RequestBody)|",
+      "|java+method:///okhttp3/RequestBody/create(okhttp3.MediaType,byte%5B%5D)|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.8.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.tinify:tinify:1.4.0",
+    "coordinatesV2": "com.tinify:tinify:1.5.1",
+    "caller": "|java+method:///com/tinify/ResultMeta/location()|",
+    "called": "|java+method:///okhttp3/Headers/get(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/squareup/okhttp/Headers/get(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/Headers/get(java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.8.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.tinify:tinify:1.4.0",
+    "coordinatesV2": "com.tinify:tinify:1.5.1",
+    "caller": "|java+method:///com/tinify/Result/size()|",
+    "called": "|java+method:///okhttp3/Headers/get(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/squareup/okhttp/Headers/get(java.lang.String)|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/Headers/get(java.lang.String)|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.8.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.tinify:tinify:1.4.0",
+    "coordinatesV2": "com.tinify:tinify:1.5.1",
+    "caller": "|java+method:///com/tinify/Client/request(com.tinify.Client$Method,java.lang.String,com.tinify.Options)|",
+    "called": "|java+method:///okhttp3/RequestBody/create(okhttp3.MediaType,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/squareup/okhttp/RequestBody/create(com.squareup.okhttp.MediaType,java.lang.String)|",
+      "|java+method:///com/tinify/Client/request(com.tinify.Client$Method,java.lang.String,com.squareup.okhttp.RequestBody)|",
+      "|java+method:///com/tinify/Client$Method/equals(java.lang.Object)|",
+      "|java+method:///com/tinify/Options/isEmpty()|",
+      "|java+method:///com/tinify/Options/toJson()|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/RequestBody/create(okhttp3.MediaType,java.lang.String)|",
+      "|java+method:///com/tinify/Client/request(com.tinify.Client$Method,java.lang.String,okhttp3.RequestBody)|",
+      "|java+method:///com/tinify/Client$Method/equals(java.lang.Object)|",
+      "|java+method:///com/tinify/Options/isEmpty()|",
+      "|java+method:///com/tinify/Options/toJson()|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.8.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.tinify:tinify:1.4.0",
+    "coordinatesV2": "com.tinify:tinify:1.5.1",
+    "caller": "|java+method:///com/tinify/Result/mediaType()|",
+    "called": "|java+method:///okhttp3/Headers/get(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/squareup/okhttp/Headers/get(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/Headers/get(java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.8.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.tinify:tinify:1.4.0",
+    "coordinatesV2": "com.tinify:tinify:1.5.1",
+    "caller": "|java+method:///com/tinify/Source/fromUrl(java.lang.String)|",
+    "called": "|java+method:///okhttp3/Headers/get(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/tinify/Tinify/client()|",
+      "|java+method:///com/tinify/Client/request(com.tinify.Client$Method,java.lang.String,com.tinify.Options)|",
+      "|java+method:///com/tinify/Options/with(java.lang.String,com.tinify.Options)|",
+      "|java+constructor:///com/tinify/Options/Options()|",
+      "|java+method:///com/squareup/okhttp/Response/header(java.lang.String)|",
+      "|java+method:///com/tinify/Options/with(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///com/tinify/Source/Source(java.lang.String,com.tinify.Options)|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/Headers/get(java.lang.String)|",
+      "|java+constructor:///com/tinify/Options/Options()|",
+      "|java+method:///com/tinify/Tinify/client()|",
+      "|java+method:///com/tinify/Client/request(com.tinify.Client$Method,java.lang.String,com.tinify.Options)|",
+      "|java+method:///com/tinify/Options/with(java.lang.String,com.tinify.Options)|",
+      "|java+method:///com/tinify/Options/with(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///com/tinify/Source/Source(java.lang.String,com.tinify.Options)|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.8.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.tinify:tinify:1.4.0",
+    "coordinatesV2": "com.tinify:tinify:1.5.1",
+    "caller": "|java+method:///com/tinify/ResultMeta/height()|",
+    "called": "|java+method:///okhttp3/Headers/get(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/squareup/okhttp/Headers/get(java.lang.String)|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/Headers/get(java.lang.String)|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.8.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.tinify:tinify:1.4.0",
+    "coordinatesV2": "com.tinify:tinify:1.5.1",
+    "caller": "|java+method:///com/tinify/Client/request(com.tinify.Client$Method,java.lang.String)|",
+    "called": "|java+method:///okhttp3/RequestBody/create(okhttp3.MediaType,byte%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/tinify/Client/request(com.tinify.Client$Method,java.lang.String,com.squareup.okhttp.RequestBody)|",
+      "|java+method:///com/tinify/Client$Method/equals(java.lang.Object)|",
+      "|java+method:///com/squareup/okhttp/RequestBody/create(com.squareup.okhttp.MediaType,byte%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/tinify/Client/request(com.tinify.Client$Method,java.lang.String,okhttp3.RequestBody)|",
+      "|java+method:///com/tinify/Client$Method/equals(java.lang.Object)|",
+      "|java+method:///okhttp3/RequestBody/create(okhttp3.MediaType,byte%5B%5D)|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.8.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.tinify:tinify:1.4.0",
+    "coordinatesV2": "com.tinify:tinify:1.5.1",
+    "caller": "|java+constructor:///com/tinify/Client/Client(java.lang.String,java.lang.String,java.lang.String)|",
+    "called": "|java+method:///okhttp3/OkHttpClient$Builder/writeTimeout(long,java.util.concurrent.TimeUnit)|",
+    "v1Body": [
+      "|java+method:///com/squareup/okhttp/Credentials/basic(java.lang.String,java.lang.String)|",
+      "|java+method:///com/squareup/okhttp/OkHttpClient/setReadTimeout(long,java.util.concurrent.TimeUnit)|",
+      "|java+constructor:///java/net/URL/URL(java.lang.String)|",
+      "|java+method:///com/tinify/Client/createProxyAuthenticator(java.net.URL)|",
+      "|java+constructor:///com/tinify/ConnectionException/ConnectionException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/squareup/okhttp/OkHttpClient/setSslSocketFactory(javax.net.ssl.SSLSocketFactory)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/squareup/okhttp/OkHttpClient/setProxy(java.net.Proxy)|",
+      "|java+method:///com/squareup/okhttp/OkHttpClient/setConnectTimeout(long,java.util.concurrent.TimeUnit)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///com/squareup/okhttp/OkHttpClient/setWriteTimeout(long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/squareup/okhttp/OkHttpClient/setAuthenticator(com.squareup.okhttp.Authenticator)|",
+      "|java+method:///com/tinify/SSLContext/getSocketFactory()|",
+      "|java+method:///com/tinify/Client/createProxyAddress(java.net.URL)|",
+      "|java+constructor:///com/squareup/okhttp/OkHttpClient/OkHttpClient()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/Credentials/basic(java.lang.String,java.lang.String)|",
+      "|java+constructor:///java/net/URL/URL(java.lang.String)|",
+      "|java+method:///okhttp3/OkHttpClient$Builder/proxy(java.net.Proxy)|",
+      "|java+method:///com/tinify/Client/createProxyAddress(java.net.URL)|",
+      "|java+constructor:///com/tinify/ConnectionException/ConnectionException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///okhttp3/OkHttpClient$Builder/OkHttpClient$Builder()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///okhttp3/OkHttpClient$Builder/sslSocketFactory(javax.net.ssl.SSLSocketFactory,javax.net.ssl.X509TrustManager)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///okhttp3/OkHttpClient$Builder/readTimeout(long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///okhttp3/OkHttpClient$Builder/connectTimeout(long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///okhttp3/OkHttpClient$Builder/proxyAuthenticator(okhttp3.Authenticator)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/tinify/Client/createProxyAuthenticator(java.net.URL)|",
+      "|java+method:///okhttp3/OkHttpClient$Builder/writeTimeout(long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+method:///okhttp3/OkHttpClient$Builder/build()|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.8.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.tinify:tinify:1.4.0",
+    "coordinatesV2": "com.tinify:tinify:1.5.1",
+    "caller": "|java+method:///com/tinify/ResultMeta/width()|",
+    "called": "|java+method:///okhttp3/Headers/get(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/squareup/okhttp/Headers/get(java.lang.String)|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/Headers/get(java.lang.String)|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.8.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.tinify:tinify:1.4.0",
+    "coordinatesV2": "com.tinify:tinify:1.5.1",
+    "caller": "|java+method:///com/tinify/Source/fromBuffer(byte%5B%5D)|",
+    "called": "|java+method:///okhttp3/Headers/get(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/tinify/Client/request(com.tinify.Client$Method,java.lang.String,byte%5B%5D)|",
+      "|java+method:///com/tinify/Tinify/client()|",
+      "|java+constructor:///com/tinify/Source/Source(java.lang.String,com.tinify.Options)|",
+      "|java+constructor:///com/tinify/Options/Options()|",
+      "|java+method:///com/squareup/okhttp/Response/header(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/tinify/Options/Options()|",
+      "|java+method:///com/tinify/Tinify/client()|",
+      "|java+constructor:///com/tinify/Source/Source(java.lang.String,com.tinify.Options)|",
+      "|java+method:///com/tinify/Client/request(com.tinify.Client$Method,java.lang.String,byte%5B%5D)|",
+      "|java+method:///okhttp3/Headers/get(java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.8.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.tinify:tinify:1.4.0",
+    "coordinatesV2": "com.tinify:tinify:1.5.1",
+    "caller": "|java+initializer:///com/tinify/Client/Client$initializer|",
+    "called": "|java+method:///okhttp3/MediaType/parse(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Package/getImplementationVersion()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/Class/getPackage()|",
+      "|java+method:///com/squareup/okhttp/MediaType/parse(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/System/getProperty(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Package/getImplementationVersion()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/Class/getPackage()|",
+      "|java+method:///okhttp3/MediaType/parse(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/System/getProperty(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.8.1",
+    "change": "ADDED"
+  }
+]

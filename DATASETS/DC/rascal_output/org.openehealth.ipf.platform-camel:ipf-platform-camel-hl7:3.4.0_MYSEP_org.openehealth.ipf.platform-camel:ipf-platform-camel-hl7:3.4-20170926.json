@@ -1,0 +1,105 @@
+[
+  {
+    "coordinatesV1": "org.openehealth.ipf.platform-camel:ipf-platform-camel-hl7:3.4.0",
+    "coordinatesV2": "org.openehealth.ipf.platform-camel:ipf-platform-camel-hl7:3.4-20170926",
+    "caller": "|java+method:///org/openehealth/ipf/platform/camel/hl7/validation/ConformanceProfileValidators/bodyMessage(org.apache.camel.Exchange)|",
+    "called": "|java+method:///org/openehealth/ipf/modules/hl7dsl/MessageAdapter/getHapiMessage()|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang3/Validate/notNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///ca/uhn/hl7v2/parser/GenericParser/parse(java.lang.String)|",
+      "|java+method:///org/apache/camel/Message/getBody(java.lang.Class)|",
+      "|java+method:///org/apache/camel/Message/getHeader(java.lang.String,java.lang.Class)|",
+      "|java+method:///org/apache/camel/Message/getBody()|",
+      "|java+constructor:///ca/uhn/hl7v2/parser/GenericParser/GenericParser(ca.uhn.hl7v2.HapiContext)|",
+      "|java+method:///org/apache/camel/Exchange/getIn()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/Validate/notNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///ca/uhn/hl7v2/parser/GenericParser/parse(java.lang.String)|",
+      "|java+method:///org/apache/camel/Message/getBody(java.lang.Class)|",
+      "|java+method:///org/apache/camel/Message/getHeader(java.lang.String,java.lang.Class)|",
+      "|java+method:///org/openehealth/ipf/modules/hl7dsl/MessageAdapter/getHapiMessage()|",
+      "|java+method:///org/apache/camel/Message/getBody()|",
+      "|java+constructor:///ca/uhn/hl7v2/parser/GenericParser/GenericParser(ca.uhn.hl7v2.HapiContext)|",
+      "|java+method:///org/apache/camel/Exchange/getIn()|"
+    ],
+    "affectedLib": "org.openehealth.ipf.modules:ipf-modules-hl7dsl:3.4-20170926",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.openehealth.ipf.platform-camel:ipf-platform-camel-hl7:3.4.0",
+    "coordinatesV2": "org.openehealth.ipf.platform-camel:ipf-platform-camel-hl7:3.4-20170926",
+    "caller": "|java+method:///org/openehealth/ipf/platform/camel/hl7/adapter/HapiAdapter/toMessage(java.lang.Object,org.apache.camel.Exchange)|",
+    "called": "|java+method:///org/openehealth/ipf/modules/hl7dsl/MessageAdapter/getHapiMessage()|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang3/Validate/notNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///ca/uhn/hl7v2/parser/Parser/parse(java.lang.String)|",
+      "|java+method:///org/apache/camel/Message/getBody(java.lang.Class)|",
+      "|java+method:///org/apache/camel/Message/getHeader(java.lang.String,java.lang.Class)|",
+      "|java+method:///ca/uhn/hl7v2/HapiContext/getGenericParser()|",
+      "|java+method:///org/apache/camel/Exchange/getIn()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/Validate/notNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///ca/uhn/hl7v2/parser/Parser/parse(java.lang.String)|",
+      "|java+method:///org/apache/camel/Message/getBody(java.lang.Class)|",
+      "|java+method:///org/apache/camel/Message/getHeader(java.lang.String,java.lang.Class)|",
+      "|java+method:///ca/uhn/hl7v2/HapiContext/getGenericParser()|",
+      "|java+method:///org/openehealth/ipf/modules/hl7dsl/MessageAdapter/getHapiMessage()|",
+      "|java+method:///org/apache/camel/Exchange/getIn()|"
+    ],
+    "affectedLib": "org.openehealth.ipf.modules:ipf-modules-hl7dsl:3.4-20170926",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.openehealth.ipf.platform-camel:ipf-platform-camel-hl7:3.4.0",
+    "coordinatesV2": "org.openehealth.ipf.platform-camel:ipf-platform-camel-hl7:3.4-20170926",
+    "caller": "|java+method:///org/openehealth/ipf/platform/camel/hl7/HL7v2/bodyMessage(org.apache.camel.Exchange)|",
+    "called": "|java+method:///org/openehealth/ipf/modules/hl7dsl/MessageAdapter/getHapiMessage()|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang3/Validate/notNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///ca/uhn/hl7v2/parser/Parser/parse(java.lang.String)|",
+      "|java+method:///org/apache/camel/Message/getBody(java.lang.Class)|",
+      "|java+method:///org/apache/camel/Message/getHeader(java.lang.String,java.lang.Class)|",
+      "|java+method:///ca/uhn/hl7v2/HapiContext/getGenericParser()|",
+      "|java+method:///org/apache/camel/Exchange/getIn()|",
+      "|java+method:///org/apache/camel/Message/getBody()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/Validate/notNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///ca/uhn/hl7v2/parser/Parser/parse(java.lang.String)|",
+      "|java+method:///org/apache/camel/Message/getBody(java.lang.Class)|",
+      "|java+method:///org/apache/camel/Message/getHeader(java.lang.String,java.lang.Class)|",
+      "|java+method:///ca/uhn/hl7v2/HapiContext/getGenericParser()|",
+      "|java+method:///org/openehealth/ipf/modules/hl7dsl/MessageAdapter/getHapiMessage()|",
+      "|java+method:///org/apache/camel/Exchange/getIn()|",
+      "|java+method:///org/apache/camel/Message/getBody()|"
+    ],
+    "affectedLib": "org.openehealth.ipf.modules:ipf-modules-hl7dsl:3.4-20170926",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.openehealth.ipf.platform-camel:ipf-platform-camel-hl7:3.4.0",
+    "coordinatesV2": "org.openehealth.ipf.platform-camel:ipf-platform-camel-hl7:3.4-20170926",
+    "caller": "|java+initializer:///org/openehealth/ipf/platform/camel/hl7/validation/ConformanceProfileValidators/ConformanceProfileValidators$initializer|",
+    "called": "|java+constructor:///org/openehealth/ipf/gazelle/validation/profile/store/GazelleProfileStore/GazelleProfileStore()|",
+    "v1Body": [
+      "|java+constructor:///ca/uhn/hl7v2/DefaultHapiContext/DefaultHapiContext()|",
+      "|java+method:///ca/uhn/hl7v2/parser/ParserConfiguration/setEscaping(ca.uhn.hl7v2.parser.Escaping)|",
+      "|java+method:///ca/uhn/hl7v2/HapiContext/setProfileStore(ca.uhn.hl7v2.conf.store.ProfileStore)|",
+      "|java+method:///ca/uhn/hl7v2/validation/impl/ValidationContextFactory/noValidation()|",
+      "|java+method:///ca/uhn/hl7v2/HapiContext/getParserConfiguration()|",
+      "|java+constructor:///org/openehealth/ipf/gazelle/validation/profile/store/GazelleProfileStore/GazelleProfileStore()|",
+      "|java+method:///ca/uhn/hl7v2/HapiContext/setValidationContext(ca.uhn.hl7v2.validation.ValidationContext)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///ca/uhn/hl7v2/DefaultHapiContext/DefaultHapiContext()|",
+      "|java+method:///ca/uhn/hl7v2/HapiContext/setProfileStore(ca.uhn.hl7v2.conf.store.ProfileStore)|",
+      "|java+method:///ca/uhn/hl7v2/validation/impl/ValidationContextFactory/noValidation()|",
+      "|java+constructor:///org/openehealth/ipf/gazelle/validation/profile/store/GazelleProfileStore/GazelleProfileStore()|",
+      "|java+method:///ca/uhn/hl7v2/HapiContext/setValidationContext(ca.uhn.hl7v2.validation.ValidationContext)|"
+    ],
+    "affectedLib": "org.openehealth.ipf.gazelle:ipf-gazelle-validation-profiles-core:1.2.0",
+    "change": "UPDATED"
+  }
+]

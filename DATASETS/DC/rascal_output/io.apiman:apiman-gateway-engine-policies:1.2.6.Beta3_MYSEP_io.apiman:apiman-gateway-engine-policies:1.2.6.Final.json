@@ -1,0 +1,77 @@
+[
+  {
+    "coordinatesV1": "io.apiman:apiman-gateway-engine-policies:1.2.6.Final",
+    "coordinatesV2": "io.apiman:apiman-gateway-engine-policies:1.2.6.Beta3",
+    "caller": "|java+method:///io/apiman/gateway/engine/policies/auth/LDAPIdentityValidator/formatDn(java.lang.String,java.lang.String,io.apiman.gateway.engine.beans.ApiRequest)|",
+    "called": "|java+method:///org/apache/commons/lang/text/StrSubstitutor/replace(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/apache/commons/lang/text/StrSubstitutor/StrSubstitutor(java.util.Map)|",
+      "|java+method:///org/apache/commons/lang/text/StrSubstitutor/replace(java.lang.String)|",
+      "|java+method:///io/apiman/gateway/engine/beans/util/HeaderMap/toMap()|",
+      "|java+method:///io/apiman/gateway/engine/beans/ApiRequest/getHeaders()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/commons/lang3/text/StrSubstitutor/StrSubstitutor(java.util.Map)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/commons/lang3/text/StrSubstitutor/replace(java.lang.String)|",
+      "|java+method:///io/apiman/gateway/engine/beans/util/HeaderMap/toMap()|",
+      "|java+method:///io/apiman/gateway/engine/beans/ApiRequest/getHeaders()|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "io.apiman:apiman-gateway-engine-policies:1.2.6.Beta3",
+    "coordinatesV2": "io.apiman:apiman-gateway-engine-policies:1.2.6.Final",
+    "caller": "|java+method:///io/apiman/gateway/engine/policies/RateLimitingPolicy/responseHeaders(io.apiman.gateway.engine.policies.config.RateLimitingConfig,io.apiman.gateway.engine.components.rate.RateLimitResponse,java.lang.String,java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang3/StringUtils/isEmpty(java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+method:///io/apiman/gateway/engine/components/rate/RateLimitResponse/getRemaining()|",
+      "|java+method:///io/apiman/gateway/engine/policies/config/RateLimitingConfig/getHeaderRemaining()|",
+      "|java+method:///io/apiman/gateway/engine/policies/config/RateLimitingConfig/getHeaderLimit()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///io/apiman/gateway/engine/components/rate/RateLimitResponse/getReset()|",
+      "|java+method:///io/apiman/gateway/engine/policies/config/RateLimitingConfig/getLimit()|",
+      "|java+method:///java/lang/String/valueOf(long)|",
+      "|java+method:///io/apiman/gateway/engine/policies/config/RateLimitingConfig/getHeaderReset()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/apiman/gateway/engine/components/rate/RateLimitResponse/getRemaining()|",
+      "|java+method:///io/apiman/gateway/engine/policies/config/RateLimitingConfig/getHeaderRemaining()|",
+      "|java+method:///io/apiman/gateway/engine/policies/config/RateLimitingConfig/getHeaderLimit()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///io/apiman/gateway/engine/components/rate/RateLimitResponse/getReset()|",
+      "|java+method:///io/apiman/gateway/engine/policies/config/RateLimitingConfig/getLimit()|",
+      "|java+method:///io/apiman/gateway/engine/policies/config/RateLimitingConfig/getHeaderReset()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isEmpty(java.lang.CharSequence)|",
+      "|java+method:///java/lang/String/valueOf(long)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.3.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.apiman:apiman-gateway-engine-policies:1.2.6.Beta3",
+    "coordinatesV2": "io.apiman:apiman-gateway-engine-policies:1.2.6.Final",
+    "caller": "|java+method:///io/apiman/gateway/engine/policies/auth/LDAPIdentityValidator/formatDn(java.lang.String,java.lang.String,io.apiman.gateway.engine.beans.ApiRequest)|",
+    "called": "|java+constructor:///org/apache/commons/lang3/text/StrSubstitutor/StrSubstitutor(java.util.Map)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/apache/commons/lang/text/StrSubstitutor/StrSubstitutor(java.util.Map)|",
+      "|java+method:///org/apache/commons/lang/text/StrSubstitutor/replace(java.lang.String)|",
+      "|java+method:///io/apiman/gateway/engine/beans/util/HeaderMap/toMap()|",
+      "|java+method:///io/apiman/gateway/engine/beans/ApiRequest/getHeaders()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/commons/lang3/text/StrSubstitutor/StrSubstitutor(java.util.Map)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/commons/lang3/text/StrSubstitutor/replace(java.lang.String)|",
+      "|java+method:///io/apiman/gateway/engine/beans/util/HeaderMap/toMap()|",
+      "|java+method:///io/apiman/gateway/engine/beans/ApiRequest/getHeaders()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.3.2",
+    "change": "ADDED"
+  }
+]

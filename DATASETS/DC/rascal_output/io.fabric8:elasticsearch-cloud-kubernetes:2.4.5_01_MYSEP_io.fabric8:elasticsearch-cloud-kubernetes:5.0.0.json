@@ -1,0 +1,123 @@
+[
+  {
+    "coordinatesV1": "io.fabric8:elasticsearch-cloud-kubernetes:2.4.5_01",
+    "coordinatesV2": "io.fabric8:elasticsearch-cloud-kubernetes:5.0.0",
+    "caller": "|java+method:///io/fabric8/elasticsearch/discovery/kubernetes/KubernetesUnicastHostsProvider/readNodes()|",
+    "called": "|java+method:///org/elasticsearch/common/network/NetworkAddress/format(java.net.InetAddress)|",
+    "v1Body": [
+      "|java+method:///io/fabric8/elasticsearch/cloud/kubernetes/KubernetesAPIService/pods()|",
+      "|java+method:///org/elasticsearch/common/logging/ESLogger/trace(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///io/fabric8/kubernetes/api/model/Endpoints/getSubsets()|",
+      "|java+method:///io/fabric8/elasticsearch/discovery/kubernetes/KubernetesUnicastHostsProvider/mapToDiscoveryNodes(java.util.List,java.lang.String)|",
+      "|java+method:///org/elasticsearch/common/logging/ESLogger/debug(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///io/fabric8/elasticsearch/cloud/kubernetes/KubernetesAPIService/endpoints()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///org/elasticsearch/common/network/NetworkService/resolvePublishHostAddresses(java.lang.String%5B%5D)|",
+      "|java+method:///java/lang/Throwable/getMessage()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/elasticsearch/common/network/NetworkAddress/format(java.net.InetAddress)|",
+      "|java+method:///org/elasticsearch/common/unit/TimeValue/millis()|",
+      "|java+method:///java/util/List/addAll(java.util.Collection)|",
+      "|java+method:///org/elasticsearch/common/logging/ESLogger/warn(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///org/elasticsearch/common/logging/ESLogger/warn(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///io/fabric8/elasticsearch/discovery/kubernetes/KubernetesUnicastHostsProvider/mapToDiscoveryNodes(io.fabric8.kubernetes.api.model.Endpoints,java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/elasticsearch/common/logging/ESLogger/isTraceEnabled()|",
+      "|java+method:///java/lang/System/currentTimeMillis()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/logging/log4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///io/fabric8/kubernetes/api/model/Endpoints/getSubsets()|",
+      "|java+method:///org/apache/logging/log4j/Logger/debug(java.lang.String)|",
+      "|java+method:///java/util/List/stream()|",
+      "|java+method:///java/util/stream/Stream/forEach(java.util.function.Consumer)|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///org/apache/logging/log4j/Logger/warn(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///io/fabric8/elasticsearch/cloud/kubernetes/KubernetesAPIService/endpoints()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///org/elasticsearch/common/network/NetworkService/resolvePublishHostAddresses(java.lang.String%5B%5D)|",
+      "|java+method:///java/lang/Throwable/getMessage()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/elasticsearch/common/network/NetworkAddress/format(java.net.InetAddress)|",
+      "|java+method:///org/elasticsearch/common/unit/TimeValue/millis()|",
+      "|java+method:///org/apache/logging/log4j/Logger/trace(java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "affectedLib": "org.elasticsearch:elasticsearch:5.0.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.fabric8:elasticsearch-cloud-kubernetes:2.4.5_01",
+    "coordinatesV2": "io.fabric8:elasticsearch-cloud-kubernetes:5.0.0",
+    "caller": "|java+constructor:///io/fabric8/elasticsearch/cloud/kubernetes/KubernetesAPIServiceImpl/KubernetesAPIServiceImpl(org.elasticsearch.common.settings.Settings)|",
+    "called": "|java+method:///org/elasticsearch/common/settings/Setting/get(org.elasticsearch.common.settings.Settings)|",
+    "v1Body": [
+      "|java+method:///org/elasticsearch/common/settings/Settings/get(java.lang.String)|",
+      "|java+constructor:///org/elasticsearch/common/component/AbstractLifecycleComponent/AbstractLifecycleComponent(org.elasticsearch.common.settings.Settings)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/elasticsearch/common/settings/Setting/get(org.elasticsearch.common.settings.Settings)|",
+      "|java+constructor:///org/elasticsearch/common/component/AbstractLifecycleComponent/AbstractLifecycleComponent(org.elasticsearch.common.settings.Settings)|"
+    ],
+    "affectedLib": "org.elasticsearch:elasticsearch:5.0.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.fabric8:elasticsearch-cloud-kubernetes:2.4.5_01",
+    "coordinatesV2": "io.fabric8:elasticsearch-cloud-kubernetes:5.0.0",
+    "caller": "|java+method:///io/fabric8/elasticsearch/discovery/kubernetes/KubernetesUnicastHostsProvider/buildDynamicNodes()|",
+    "called": "|java+constructor:///org/elasticsearch/SpecialPermission/SpecialPermission()|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/security/AccessController/doPrivileged(java.security.PrivilegedAction)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///org/elasticsearch/SpecialPermission/SpecialPermission()|",
+      "|java+method:///java/lang/SecurityManager/checkPermission(java.security.Permission)|",
+      "|java+constructor:///io/fabric8/elasticsearch/discovery/kubernetes/KubernetesUnicastHostsProvider$1/KubernetesUnicastHostsProvider$1(io.fabric8.elasticsearch.discovery.kubernetes.KubernetesUnicastHostsProvider,java.util.List)|",
+      "|java+method:///java/security/AccessController/doPrivileged(java.security.PrivilegedAction)|",
+      "|java+method:///java/lang/System/getSecurityManager()|"
+    ],
+    "affectedLib": "org.elasticsearch:elasticsearch:5.0.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.fabric8:elasticsearch-cloud-kubernetes:2.4.5_01",
+    "coordinatesV2": "io.fabric8:elasticsearch-cloud-kubernetes:5.0.0",
+    "caller": "|java+constructor:///io/fabric8/elasticsearch/plugin/discovery/kubernetes/KubernetesDiscoveryPlugin/KubernetesDiscoveryPlugin(org.elasticsearch.common.settings.Settings)|",
+    "called": "|java+constructor:///org/elasticsearch/plugins/Plugin/Plugin()|",
+    "v1Body": [
+      "|java+method:///org/elasticsearch/common/logging/Loggers/getLogger(java.lang.Class)|",
+      "|java+constructor:///org/elasticsearch/plugins/Plugin/Plugin()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/lucene/util/SetOnce/SetOnce()|",
+      "|java+constructor:///org/elasticsearch/plugins/Plugin/Plugin()|",
+      "|java+method:///org/apache/logging/log4j/Logger/trace(java.lang.String)|"
+    ],
+    "affectedLib": "org.elasticsearch:elasticsearch:5.0.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.fabric8:elasticsearch-cloud-kubernetes:2.4.5_01",
+    "coordinatesV2": "io.fabric8:elasticsearch-cloud-kubernetes:5.0.0",
+    "caller": "|java+method:///io/fabric8/elasticsearch/plugin/discovery/kubernetes/KubernetesDiscoveryPlugin/onModule(org.elasticsearch.discovery.DiscoveryModule)|",
+    "called": "|java+method:///org/elasticsearch/discovery/DiscoveryModule/addDiscoveryType(java.lang.String,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///io/fabric8/elasticsearch/plugin/discovery/kubernetes/KubernetesDiscoveryPlugin/isDiscoveryAlive(org.elasticsearch.common.settings.Settings,org.elasticsearch.common.logging.ESLogger)|",
+      "|java+method:///org/elasticsearch/discovery/DiscoveryModule/addUnicastHostProvider(java.lang.Class)|",
+      "|java+method:///org/elasticsearch/discovery/DiscoveryModule/addDiscoveryType(java.lang.String,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/logging/log4j/Logger/trace(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/elasticsearch/discovery/DiscoveryModule/addUnicastHostProvider(java.lang.String,java.lang.Class)|",
+      "|java+method:///org/elasticsearch/discovery/DiscoveryModule/addDiscoveryType(java.lang.String,java.lang.Class)|",
+      "|java+method:///io/fabric8/elasticsearch/plugin/discovery/kubernetes/KubernetesDiscoveryPlugin/isDiscoveryAlive(org.elasticsearch.common.settings.Settings,org.apache.logging.log4j.Logger)|"
+    ],
+    "affectedLib": "org.elasticsearch:elasticsearch:5.0.0",
+    "change": "UPDATED"
+  }
+]

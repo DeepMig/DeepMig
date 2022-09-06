@@ -1,0 +1,151 @@
+[
+  {
+    "coordinatesV1": "org.nuiton.jaxx:jaxx-validator:2.2.5",
+    "coordinatesV2": "org.nuiton.jaxx:jaxx-validator:2.3",
+    "caller": "|java+constructor:///jaxx/runtime/validator/swing/SwingValidatorUtil/SwingValidatorUtil()|",
+    "called": "|java+constructor:///org/nuiton/validator/bean/BeanValidatorUtil/BeanValidatorUtil()|",
+    "v1Body": [
+      "|java+constructor:///jaxx/runtime/validator/BeanValidatorUtil/BeanValidatorUtil()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/nuiton/validator/bean/BeanValidatorUtil/BeanValidatorUtil()|"
+    ],
+    "affectedLib": "org.nuiton:nuiton-validator:2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.nuiton.jaxx:jaxx-validator:2.2.5",
+    "coordinatesV2": "org.nuiton.jaxx:jaxx-validator:2.3",
+    "caller": "|java+method:///jaxx/runtime/validator/swing/SwingValidatorUtil/installUI(javax.swing.JTable,jaxx.runtime.validator.swing.SwingValidatorMessageTableRenderer)|",
+    "called": "|java+method:///jaxx/runtime/SwingUtil/setI18nTableHeaderRenderer(javax.swing.JTable,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///jaxx/runtime/SwingUtil/fixTableColumnWidth(javax.swing.JTable,int,int)|",
+      "|java+method:///jaxx/runtime/SwingUtil/setI18nTableHeaderRenderer(javax.swing.JTable,java.lang.String%5B%5D)|",
+      "|java+method:///javax/swing/RowSorter/setSortKeys(java.util.List)|",
+      "|java+method:///javax/swing/JTable/setDefaultRenderer(java.lang.Class,javax.swing.table.TableCellRenderer)|",
+      "|java+method:///jaxx/runtime/validator/swing/SwingValidatorUtil/registerErrorTableMouseListener(javax.swing.JTable)|",
+      "|java+method:///javax/swing/JTable/getRowSorter()|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+constructor:///javax/swing/RowSorter$SortKey/RowSorter$SortKey(int,javax.swing.SortOrder)|",
+      "|java+method:///org/nuiton/i18n/I18n/n_(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///jaxx/runtime/SwingUtil/fixTableColumnWidth(javax.swing.JTable,int,int)|",
+      "|java+method:///jaxx/runtime/SwingUtil/setI18nTableHeaderRenderer(javax.swing.JTable,java.lang.String%5B%5D)|",
+      "|java+method:///org/nuiton/i18n/I18n/n_(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///javax/swing/RowSorter$SortKey/RowSorter$SortKey(int,javax.swing.SortOrder)|",
+      "|java+method:///javax/swing/RowSorter/setSortKeys(java.util.List)|",
+      "|java+method:///javax/swing/JTable/setDefaultRenderer(java.lang.Class,javax.swing.table.TableCellRenderer)|",
+      "|java+method:///jaxx/runtime/validator/swing/SwingValidatorUtil/registerErrorTableMouseListener(javax.swing.JTable)|",
+      "|java+method:///javax/swing/JTable/getRowSorter()|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "org.nuiton.jaxx:jaxx-runtime:2.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.nuiton.jaxx:jaxx-validator:2.2.5",
+    "coordinatesV2": "org.nuiton.jaxx:jaxx-validator:2.3",
+    "caller": "|java+method:///jaxx/runtime/validator/swing/SwingValidatorMessageTableRenderer/getTableCellRendererComponent(javax.swing.JTable,java.lang.Object,boolean,boolean,int,int)|",
+    "called": "|java+method:///org/nuiton/i18n/I18n/_(java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///javax/swing/JLabel/setToolTipText(java.lang.String)|",
+      "|java+method:///org/nuiton/i18n/I18n/_(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/swing/RowSorter/convertRowIndexToModel(int)|",
+      "|java+method:///javax/swing/JTable/getRowSorter()|",
+      "|java+method:///javax/swing/table/DefaultTableCellRenderer/getTableCellRendererComponent(javax.swing.JTable,java.lang.Object,boolean,boolean,int,int)|",
+      "|java+method:///jaxx/runtime/validator/swing/SwingValidatorUtil/getIcon(jaxx.runtime.validator.BeanValidatorScope)|",
+      "|java+method:///jaxx/runtime/validator/swing/SwingValidatorMessageTableRenderer/getMessage(javax.swing.JTable,java.lang.String,int)|",
+      "|java+method:///org/nuiton/i18n/I18n/_(java.lang.String)|",
+      "|java+method:///jaxx/runtime/validator/swing/SwingValidatorMessageTableRenderer/getFieldName(javax.swing.JTable,java.lang.String,int)|",
+      "|java+method:///jaxx/runtime/validator/BeanValidatorScope/getLabel()|",
+      "|java+method:///javax/swing/JLabel/setText(java.lang.String)|",
+      "|java+method:///javax/swing/JLabel/setIcon(javax.swing.Icon)|",
+      "|java+method:///javax/swing/JTable/convertColumnIndexToModel(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/swing/JLabel/setToolTipText(java.lang.String)|",
+      "|java+method:///jaxx/runtime/validator/swing/SwingValidatorMessageTableRenderer/getFieldName(javax.swing.JTable,java.lang.String,int)|",
+      "|java+method:///javax/swing/RowSorter/convertRowIndexToModel(int)|",
+      "|java+method:///javax/swing/JLabel/setText(java.lang.String)|",
+      "|java+method:///javax/swing/JTable/getRowSorter()|",
+      "|java+method:///javax/swing/table/DefaultTableCellRenderer/getTableCellRendererComponent(javax.swing.JTable,java.lang.Object,boolean,boolean,int,int)|",
+      "|java+method:///jaxx/runtime/validator/swing/SwingValidatorUtil/getIcon(org.nuiton.validator.NuitonValidatorScope)|",
+      "|java+method:///jaxx/runtime/validator/swing/SwingValidatorMessageTableRenderer/getMessage(javax.swing.JTable,java.lang.String,int)|",
+      "|java+method:///org/nuiton/validator/NuitonValidatorScope/getLabel()|",
+      "|java+method:///org/nuiton/i18n/I18n/_(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/swing/JLabel/setIcon(javax.swing.Icon)|",
+      "|java+method:///javax/swing/JTable/convertColumnIndexToModel(int)|"
+    ],
+    "affectedLib": "org.nuiton.i18n:nuiton-i18n:2.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.nuiton.jaxx:jaxx-validator:2.2.5",
+    "coordinatesV2": "org.nuiton.jaxx:jaxx-validator:2.3",
+    "caller": "|java+method:///jaxx/runtime/validator/swing/SwingValidatorUtil/installUI(javax.swing.JTable,jaxx.runtime.validator.swing.SwingValidatorMessageTableRenderer)|",
+    "called": "|java+method:///org/nuiton/i18n/I18n/n_(java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///jaxx/runtime/SwingUtil/fixTableColumnWidth(javax.swing.JTable,int,int)|",
+      "|java+method:///jaxx/runtime/SwingUtil/setI18nTableHeaderRenderer(javax.swing.JTable,java.lang.String%5B%5D)|",
+      "|java+method:///javax/swing/RowSorter/setSortKeys(java.util.List)|",
+      "|java+method:///javax/swing/JTable/setDefaultRenderer(java.lang.Class,javax.swing.table.TableCellRenderer)|",
+      "|java+method:///jaxx/runtime/validator/swing/SwingValidatorUtil/registerErrorTableMouseListener(javax.swing.JTable)|",
+      "|java+method:///javax/swing/JTable/getRowSorter()|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+constructor:///javax/swing/RowSorter$SortKey/RowSorter$SortKey(int,javax.swing.SortOrder)|",
+      "|java+method:///org/nuiton/i18n/I18n/n_(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///jaxx/runtime/SwingUtil/fixTableColumnWidth(javax.swing.JTable,int,int)|",
+      "|java+method:///jaxx/runtime/SwingUtil/setI18nTableHeaderRenderer(javax.swing.JTable,java.lang.String%5B%5D)|",
+      "|java+method:///org/nuiton/i18n/I18n/n_(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///javax/swing/RowSorter$SortKey/RowSorter$SortKey(int,javax.swing.SortOrder)|",
+      "|java+method:///javax/swing/RowSorter/setSortKeys(java.util.List)|",
+      "|java+method:///javax/swing/JTable/setDefaultRenderer(java.lang.Class,javax.swing.table.TableCellRenderer)|",
+      "|java+method:///jaxx/runtime/validator/swing/SwingValidatorUtil/registerErrorTableMouseListener(javax.swing.JTable)|",
+      "|java+method:///javax/swing/JTable/getRowSorter()|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "org.nuiton.i18n:nuiton-i18n:2.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.nuiton.jaxx:jaxx-validator:2.2.5",
+    "coordinatesV2": "org.nuiton.jaxx:jaxx-validator:2.3",
+    "caller": "|java+method:///jaxx/runtime/validator/swing/SwingValidatorMessageListRenderer/getListCellRendererComponent(javax.swing.JList,java.lang.Object,int,boolean,boolean)|",
+    "called": "|java+method:///org/nuiton/i18n/I18n/_(java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///javax/swing/JLabel/setToolTipText(java.lang.String)|",
+      "|java+method:///org/nuiton/i18n/I18n/_(java.lang.String)|",
+      "|java+method:///org/nuiton/i18n/I18n/_(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///jaxx/runtime/validator/swing/SwingValidatorMessageListRenderer/getMessage(jaxx.runtime.validator.swing.SwingValidatorMessage)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///jaxx/runtime/validator/swing/SwingValidatorMessageListRenderer/getFieldName(javax.swing.JList,java.lang.String,int)|",
+      "|java+method:///jaxx/runtime/validator/BeanValidatorField/getName()|",
+      "|java+method:///jaxx/runtime/validator/swing/SwingValidatorMessage/getScope()|",
+      "|java+method:///jaxx/runtime/validator/swing/SwingValidatorUtil/getIcon(jaxx.runtime.validator.BeanValidatorScope)|",
+      "|java+method:///jaxx/runtime/validator/BeanValidatorScope/getLabel()|",
+      "|java+method:///javax/swing/JLabel/setText(java.lang.String)|",
+      "|java+method:///javax/swing/JLabel/setIcon(javax.swing.Icon)|",
+      "|java+method:///javax/swing/DefaultListCellRenderer/getListCellRendererComponent(javax.swing.JList,java.lang.Object,int,boolean,boolean)|",
+      "|java+method:///jaxx/runtime/validator/swing/SwingValidatorMessage/getField()|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/swing/JLabel/setToolTipText(java.lang.String)|",
+      "|java+method:///javax/swing/JLabel/setText(java.lang.String)|",
+      "|java+method:///jaxx/runtime/validator/swing/SwingValidatorMessageListRenderer/getMessage(jaxx.runtime.validator.swing.SwingValidatorMessage)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///jaxx/runtime/validator/swing/SwingValidatorMessageListRenderer/getFieldName(javax.swing.JList,java.lang.String,int)|",
+      "|java+method:///jaxx/runtime/validator/swing/SwingValidatorMessage/getScope()|",
+      "|java+method:///jaxx/runtime/validator/swing/SwingValidatorUtil/getIcon(org.nuiton.validator.NuitonValidatorScope)|",
+      "|java+method:///org/nuiton/validator/NuitonValidatorScope/getLabel()|",
+      "|java+method:///org/nuiton/i18n/I18n/_(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/swing/JLabel/setIcon(javax.swing.Icon)|",
+      "|java+method:///javax/swing/DefaultListCellRenderer/getListCellRendererComponent(javax.swing.JList,java.lang.Object,int,boolean,boolean)|",
+      "|java+method:///jaxx/runtime/validator/swing/SwingValidatorMessage/getField()|"
+    ],
+    "affectedLib": "org.nuiton.i18n:nuiton-i18n:2.2",
+    "change": "UPDATED"
+  }
+]

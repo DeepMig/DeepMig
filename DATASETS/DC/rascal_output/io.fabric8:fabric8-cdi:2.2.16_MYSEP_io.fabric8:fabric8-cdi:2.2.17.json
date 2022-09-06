@@ -1,0 +1,177 @@
+[
+  {
+    "coordinatesV1": "io.fabric8:fabric8-cdi:2.2.16",
+    "coordinatesV2": "io.fabric8:fabric8-cdi:2.2.17",
+    "caller": "|java+method:///io/fabric8/cdi/Services/toServiceEndpointUrl(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///io/fabric8/utils/Systems/getEnvVarOrSystemProperty(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///io/fabric8/kubernetes/api/model/EndpointSubset/getAddresses()|",
+      "|java+method:///io/fabric8/kubernetes/api/KubernetesClient/getEndpoints(java.lang.String)|",
+      "|java+method:///io/fabric8/kubernetes/api/model/Endpoints/getSubsets()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///io/fabric8/kubernetes/api/model/EndpointAddress/getIp()|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///io/fabric8/kubernetes/api/model/ObjectMeta/getNamespace()|",
+      "|java+method:///io/fabric8/kubernetes/api/model/ObjectMeta/getName()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///io/fabric8/kubernetes/api/model/Endpoints/getMetadata()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///io/fabric8/kubernetes/api/model/EndpointsList/getItems()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///io/fabric8/kubernetes/api/KubernetesHelper/lookupServiceInDns(java.lang.String)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///io/fabric8/utils/Systems/getEnvVarOrSystemProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/fabric8/kubernetes/api/model/EndpointSubset/getAddresses()|",
+      "|java+method:///io/fabric8/kubernetes/api/model/Endpoints/getSubsets()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///io/fabric8/kubernetes/api/model/EndpointAddress/getIp()|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///io/fabric8/kubernetes/api/model/ObjectMeta/getNamespace()|",
+      "|java+method:///io/fabric8/kubernetes/api/model/ObjectMeta/getName()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///io/fabric8/kubernetes/api/model/EndpointsList/getItems()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///io/fabric8/kubernetes/client/KubernetesClient/endpoints()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///io/fabric8/kubernetes/client/dsl/NonNamespaceOperation/list()|",
+      "|java+method:///io/fabric8/kubernetes/api/KubernetesHelper/lookupServiceInDns(java.lang.String)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///io/fabric8/kubernetes/client/dsl/Operation/inNamespace(java.lang.String)|",
+      "|java+method:///io/fabric8/kubernetes/api/model/Endpoints/getMetadata()|",
+      "|java+method:///io/fabric8/utils/Systems/getEnvVarOrSystemProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|"
+    ],
+    "affectedLib": "io.fabric8:fabric8-utils:2.2.17",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.fabric8:fabric8-cdi:2.2.16",
+    "coordinatesV2": "io.fabric8:fabric8-cdi:2.2.17",
+    "caller": "|java+method:///io/fabric8/cdi/Services/toServiceUrl(java.lang.String,java.lang.String,boolean)|",
+    "called": "|java+method:///io/fabric8/utils/Systems/getEnvVarOrSystemProperty(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///io/fabric8/kubernetes/api/KubernetesClient/getServiceURL(java.lang.String,java.lang.String,java.lang.String,boolean)|",
+      "|java+method:///io/fabric8/utils/Systems/getEnvVarOrSystemProperty(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/fabric8/kubernetes/api/KubernetesHelper/getServiceURL(io.fabric8.kubernetes.client.KubernetesClient,java.lang.String,java.lang.String,java.lang.String,boolean)|",
+      "|java+method:///io/fabric8/utils/Systems/getEnvVarOrSystemProperty(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "io.fabric8:fabric8-utils:2.2.17",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.fabric8:fabric8-cdi:2.2.16",
+    "coordinatesV2": "io.fabric8:fabric8-cdi:2.2.17",
+    "caller": "|java+initializer:///io/fabric8/cdi/KubernetesHolder/KubernetesHolder$initializer|",
+    "called": "|java+constructor:///io/fabric8/kubernetes/client/DefaultKubernetesClient/DefaultKubernetesClient()|",
+    "v1Body": [
+      "|java+constructor:///io/fabric8/kubernetes/api/KubernetesClient/KubernetesClient()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/fabric8/kubernetes/client/DefaultKubernetesClient/DefaultKubernetesClient()|"
+    ],
+    "affectedLib": "io.fabric8:kubernetes-client:1.2.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.fabric8:fabric8-cdi:2.2.16",
+    "coordinatesV2": "io.fabric8:fabric8-cdi:2.2.17",
+    "caller": "|java+method:///io/fabric8/cdi/bean/KubernetesClientBean/create(javax.enterprise.context.spi.CreationalContext)|",
+    "called": "|java+constructor:///io/fabric8/kubernetes/client/DefaultKubernetesClient/DefaultKubernetesClient()|",
+    "v1Body": [
+      "|java+constructor:///io/fabric8/kubernetes/api/KubernetesFactory/KubernetesFactory()|",
+      "|java+method:///io/fabric8/cdi/bean/KubernetesClientBean/create(javax.enterprise.context.spi.CreationalContext)|",
+      "|java+constructor:///io/fabric8/kubernetes/api/KubernetesClient/KubernetesClient(io.fabric8.kubernetes.api.KubernetesFactory)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/fabric8/cdi/bean/KubernetesClientBean/create(javax.enterprise.context.spi.CreationalContext)|",
+      "|java+constructor:///io/fabric8/kubernetes/client/DefaultKubernetesClient/DefaultKubernetesClient()|"
+    ],
+    "affectedLib": "io.fabric8:kubernetes-client:1.2.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.fabric8:fabric8-cdi:2.2.16",
+    "coordinatesV2": "io.fabric8:fabric8-cdi:2.2.17",
+    "caller": "|java+method:///io/fabric8/cdi/Services/toServiceEndpointUrl(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///io/fabric8/kubernetes/api/KubernetesHelper/lookupServiceInDns(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///io/fabric8/kubernetes/api/model/EndpointSubset/getAddresses()|",
+      "|java+method:///io/fabric8/kubernetes/api/KubernetesClient/getEndpoints(java.lang.String)|",
+      "|java+method:///io/fabric8/kubernetes/api/model/Endpoints/getSubsets()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///io/fabric8/kubernetes/api/model/EndpointAddress/getIp()|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///io/fabric8/kubernetes/api/model/ObjectMeta/getNamespace()|",
+      "|java+method:///io/fabric8/kubernetes/api/model/ObjectMeta/getName()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///io/fabric8/kubernetes/api/model/Endpoints/getMetadata()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///io/fabric8/kubernetes/api/model/EndpointsList/getItems()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///io/fabric8/kubernetes/api/KubernetesHelper/lookupServiceInDns(java.lang.String)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///io/fabric8/utils/Systems/getEnvVarOrSystemProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/fabric8/kubernetes/api/model/EndpointSubset/getAddresses()|",
+      "|java+method:///io/fabric8/kubernetes/api/model/Endpoints/getSubsets()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///io/fabric8/kubernetes/api/model/EndpointAddress/getIp()|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///io/fabric8/kubernetes/api/model/ObjectMeta/getNamespace()|",
+      "|java+method:///io/fabric8/kubernetes/api/model/ObjectMeta/getName()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///io/fabric8/kubernetes/api/model/EndpointsList/getItems()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///io/fabric8/kubernetes/client/KubernetesClient/endpoints()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///io/fabric8/kubernetes/client/dsl/NonNamespaceOperation/list()|",
+      "|java+method:///io/fabric8/kubernetes/api/KubernetesHelper/lookupServiceInDns(java.lang.String)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///io/fabric8/kubernetes/client/dsl/Operation/inNamespace(java.lang.String)|",
+      "|java+method:///io/fabric8/kubernetes/api/model/Endpoints/getMetadata()|",
+      "|java+method:///io/fabric8/utils/Systems/getEnvVarOrSystemProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|"
+    ],
+    "affectedLib": "io.fabric8:kubernetes-api:2.2.17",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.fabric8:fabric8-cdi:2.2.16",
+    "coordinatesV2": "io.fabric8:fabric8-cdi:2.2.17",
+    "caller": "|java+method:///io/fabric8/cdi/Services/toServiceUrl(java.lang.String,java.lang.String,boolean)|",
+    "called": "|java+method:///io/fabric8/kubernetes/api/KubernetesHelper/getServiceURL(io.fabric8.kubernetes.client.KubernetesClient,java.lang.String,java.lang.String,java.lang.String,boolean)|",
+    "v1Body": [
+      "|java+method:///io/fabric8/kubernetes/api/KubernetesClient/getServiceURL(java.lang.String,java.lang.String,java.lang.String,boolean)|",
+      "|java+method:///io/fabric8/utils/Systems/getEnvVarOrSystemProperty(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/fabric8/kubernetes/api/KubernetesHelper/getServiceURL(io.fabric8.kubernetes.client.KubernetesClient,java.lang.String,java.lang.String,java.lang.String,boolean)|",
+      "|java+method:///io/fabric8/utils/Systems/getEnvVarOrSystemProperty(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "io.fabric8:kubernetes-api:2.2.17",
+    "change": "UPDATED"
+  }
+]

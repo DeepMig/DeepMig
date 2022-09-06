@@ -1,0 +1,50 @@
+[
+  {
+    "coordinatesV1": "de.alpharogroup:address-book-business:3.6.0",
+    "coordinatesV2": "de.alpharogroup:address-book-business:3.11.0",
+    "caller": "|java+method:///de/alpharogroup/address/book/service/AddressesBusinessService/findAll(de.alpharogroup.address.book.entities.Countries)|",
+    "called": "|java+method:///org/torpedoquery/jpa/Torpedo/select(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///javax/persistence/Query/getResultList()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///javax/persistence/Query/setParameter(java.lang.String,java.lang.Object)|",
+      "|java+method:///de/alpharogroup/address/book/service/AddressesBusinessService/getQuery(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/torpedoquery/jpa/Torpedo/select(java.lang.Object)|",
+      "|java+method:///de/alpharogroup/address/book/entities/Zipcodes/getCountry()|",
+      "|java+method:///de/alpharogroup/address/book/service/AddressesBusinessService/getDao()|",
+      "|java+method:///org/torpedoquery/jpa/ValueOnGoingCondition/eq(java.lang.Object)|",
+      "|java+method:///org/torpedoquery/jpa/Query/list(javax.persistence.EntityManager)|",
+      "|java+method:///org/torpedoquery/jpa/Torpedo/from(java.lang.Class)|",
+      "|java+method:///de/alpharogroup/address/book/entities/Addresses/getZipcode()|",
+      "|java+method:///org/torpedoquery/jpa/Torpedo/where(java.lang.Object)|",
+      "|java+method:///de/alpharogroup/address/book/daos/AddressesDao/getEntityManager()|"
+    ],
+    "affectedLib": "org.torpedoquery:org.torpedoquery:1.7.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "de.alpharogroup:address-book-business:3.6.0",
+    "coordinatesV2": "de.alpharogroup:address-book-business:3.11.0",
+    "caller": "|java+method:///de/alpharogroup/address/book/service/ZipcodesBusinessService/getZipcode(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///de/alpharogroup/address/book/factories/AddressBookFactory/newZipcodes(java.lang.Integer,de.alpharogroup.address.book.entities.Countries,java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///de/alpharogroup/address/book/factories/AddressBookFactory/getInstance()|",
+      "|java+method:///de/alpharogroup/address/book/service/ZipcodesBusinessService/findZipcodes(java.lang.String)|",
+      "|java+method:///de/alpharogroup/address/book/factories/AddressBookFactory/newZipcodes(java.lang.Integer,de.alpharogroup.address.book.entities.Countries,java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///de/alpharogroup/address/book/factories/AddressBookFactory/getInstance()|",
+      "|java+method:///de/alpharogroup/address/book/service/ZipcodesBusinessService/findZipcodes(java.lang.String)|",
+      "|java+method:///de/alpharogroup/collections/ListExtensions/getFirst(java.util.List)|",
+      "|java+method:///de/alpharogroup/address/book/factories/AddressBookFactory/newZipcodes(java.lang.Integer,de.alpharogroup.address.book.entities.Countries,java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "de.alpharogroup:address-book-entities:3.11.0",
+    "change": "UPDATED"
+  }
+]

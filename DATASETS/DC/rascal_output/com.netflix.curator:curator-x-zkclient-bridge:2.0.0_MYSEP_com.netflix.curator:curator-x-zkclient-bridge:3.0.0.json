@@ -1,0 +1,58 @@
+[
+  {
+    "coordinatesV1": "com.netflix.curator:curator-x-zkclient-bridge:3.0.0",
+    "coordinatesV2": "com.netflix.curator:curator-x-zkclient-bridge:2.0.0",
+    "caller": "|java+method:///com/netflix/curator/x/zkclientbridge/CuratorZKClientBridge/getZookeeperState()|",
+    "called": "|java+method:///org/apache/zookeeper/ZooKeeper/getState()|",
+    "v1Body": [
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///com/netflix/curator/framework/CuratorFramework/getZookeeperClient()|",
+      "|java+method:///org/apache/zookeeper/ZooKeeper/getState()|",
+      "|java+method:///com/netflix/curator/CuratorZookeeperClient/getZooKeeper()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/curator/framework/CuratorFramework/getZookeeperClient()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///org/apache/curator/CuratorZookeeperClient/getZooKeeper()|",
+      "|java+method:///org/apache/zookeeper/ZooKeeper/getState()|"
+    ],
+    "affectedLib": "org.apache.zookeeper:zookeeper:3.4.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.netflix.curator:curator-x-zkclient-bridge:3.0.0",
+    "coordinatesV2": "com.netflix.curator:curator-x-zkclient-bridge:2.0.0",
+    "caller": "|java+method:///com/netflix/curator/x/zkclientbridge/CuratorZKClientBridge/getServers()|",
+    "called": "|java+method:///com/netflix/curator/CuratorZookeeperClient/getCurrentConnectionString()|",
+    "v1Body": [
+      "|java+method:///com/netflix/curator/framework/CuratorFramework/getZookeeperClient()|",
+      "|java+method:///com/netflix/curator/CuratorZookeeperClient/getCurrentConnectionString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/curator/framework/CuratorFramework/getZookeeperClient()|",
+      "|java+method:///org/apache/curator/CuratorZookeeperClient/getCurrentConnectionString()|"
+    ],
+    "affectedLib": "com.netflix.curator:curator-client:1.3.3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.netflix.curator:curator-x-zkclient-bridge:3.0.0",
+    "coordinatesV2": "com.netflix.curator:curator-x-zkclient-bridge:2.0.0",
+    "caller": "|java+method:///com/netflix/curator/x/zkclientbridge/CuratorZKClientBridge/getZookeeperState()|",
+    "called": "|java+method:///com/netflix/curator/CuratorZookeeperClient/getZooKeeper()|",
+    "v1Body": [
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///com/netflix/curator/framework/CuratorFramework/getZookeeperClient()|",
+      "|java+method:///org/apache/zookeeper/ZooKeeper/getState()|",
+      "|java+method:///com/netflix/curator/CuratorZookeeperClient/getZooKeeper()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/curator/framework/CuratorFramework/getZookeeperClient()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///org/apache/curator/CuratorZookeeperClient/getZooKeeper()|",
+      "|java+method:///org/apache/zookeeper/ZooKeeper/getState()|"
+    ],
+    "affectedLib": "com.netflix.curator:curator-client:1.3.3",
+    "change": "REMOVED"
+  }
+]

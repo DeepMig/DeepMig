@@ -1,0 +1,352 @@
+[
+  {
+    "coordinatesV1": "com.google.code.simple-spring-memcached:simple-spring-memcached:3.6.0",
+    "coordinatesV2": "com.google.code.simple-spring-memcached:simple-spring-memcached:3.1.0",
+    "caller": "|java+method:///com/google/code/ssm/mapper/JsonObjectMapper/setSerializers(java.util.Map)|",
+    "called": "|java+method:///org/codehaus/jackson/map/module/SimpleModule/addSerializer(java.lang.Class,org.codehaus.jackson.map.JsonSerializer)|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///org/codehaus/jackson/map/module/SimpleModule/addSerializer(java.lang.Class,org.codehaus.jackson.map.JsonSerializer)|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///java/util/Map/entrySet()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/fasterxml/jackson/databind/module/SimpleModule/addSerializer(java.lang.Class,com.fasterxml.jackson.databind.JsonSerializer)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///com/google/code/ssm/mapper/JsonObjectMapper/registerModule(com.fasterxml.jackson.databind.Module)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.10",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.google.code.simple-spring-memcached:simple-spring-memcached:3.6.0",
+    "coordinatesV2": "com.google.code.simple-spring-memcached:simple-spring-memcached:3.1.0",
+    "caller": "|java+method:///com/google/code/ssm/transcoders/JsonTranscoder/decode(com.google.code.ssm.providers.CachedObject)|",
+    "called": "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(java.io.InputStream,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(java.io.InputStream,java.lang.Class)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+constructor:///java/io/ByteArrayInputStream/ByteArrayInputStream(byte%5B%5D)|",
+      "|java+method:///com/google/code/ssm/providers/CachedObject/getFlags()|",
+      "|java+method:///com/google/code/ssm/providers/CachedObject/getData()|",
+      "|java+method:///java/io/ByteArrayInputStream/close()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+method:///com/google/code/ssm/json/Holder/getValue()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+constructor:///java/io/ByteArrayInputStream/ByteArrayInputStream(byte%5B%5D)|",
+      "|java+method:///com/google/code/ssm/providers/CachedObject/getFlags()|",
+      "|java+method:///com/google/code/ssm/providers/CachedObject/getData()|",
+      "|java+method:///java/io/ByteArrayInputStream/close()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.io.InputStream,java.lang.Class)|",
+      "|java+method:///com/google/code/ssm/json/Holder/getValue()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.10",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.google.code.simple-spring-memcached:simple-spring-memcached:3.6.0",
+    "coordinatesV2": "com.google.code.simple-spring-memcached:simple-spring-memcached:3.1.0",
+    "caller": "|java+constructor:///com/google/code/ssm/mapper/JsonObjectMapper/JsonObjectMapper()|",
+    "called": "|java+method:///org/codehaus/jackson/map/SerializationConfig/with(org.codehaus.jackson.map.SerializationConfig$Feature%5B%5D)|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+      "|java+method:///com/google/code/ssm/mapper/JsonObjectMapper/setDefaultTyping(org.codehaus.jackson.map.jsontype.TypeResolverBuilder)|",
+      "|java+constructor:///com/google/code/ssm/json/ClassAliasTypeResolverBuilder/ClassAliasTypeResolverBuilder(org.codehaus.jackson.map.ObjectMapper$DefaultTyping)|",
+      "|java+method:///com/google/code/ssm/json/ClassAliasTypeResolverBuilder/inclusion(org.codehaus.jackson.annotate.JsonTypeInfo$As)|",
+      "|java+constructor:///org/codehaus/jackson/Version/Version(int,int,int,java.lang.String)|",
+      "|java+method:///com/google/code/ssm/mapper/JsonObjectMapper/getSerializationConfig()|",
+      "|java+method:///com/google/code/ssm/mapper/JsonObjectMapper/registerModule(org.codehaus.jackson.map.Module)|",
+      "|java+constructor:///org/codehaus/jackson/map/module/SimpleModule/SimpleModule(java.lang.String,org.codehaus.jackson.Version)|",
+      "|java+method:///org/codehaus/jackson/map/SerializationConfig/with(org.codehaus.jackson.map.SerializationConfig$Feature%5B%5D)|",
+      "|java+method:///com/google/code/ssm/mapper/JsonObjectMapper/enableDefaultTyping(org.codehaus.jackson.map.ObjectMapper$DefaultTyping,org.codehaus.jackson.annotate.JsonTypeInfo$As)|",
+      "|java+method:///com/google/code/ssm/mapper/JsonObjectMapper/setSerializationConfig(org.codehaus.jackson.map.SerializationConfig)|",
+      "|java+method:///org/codehaus/jackson/map/SerializationConfig/without(org.codehaus.jackson.map.SerializationConfig$Feature%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/fasterxml/jackson/core/Version/Version(int,int,int,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/code/ssm/mapper/JsonObjectMapper/configure(com.fasterxml.jackson.databind.SerializationFeature,boolean)|",
+      "|java+method:///com/google/code/ssm/mapper/JsonObjectMapper/configure(com.fasterxml.jackson.databind.MapperFeature,boolean)|",
+      "|java+method:///com/google/code/ssm/mapper/JsonObjectMapper/registerModule(com.fasterxml.jackson.databind.Module)|",
+      "|java+method:///com/google/code/ssm/json/ClassAliasTypeResolverBuilder/inclusion(com.fasterxml.jackson.annotation.JsonTypeInfo$As)|",
+      "|java+constructor:///com/fasterxml/jackson/databind/module/SimpleModule/SimpleModule(java.lang.String,com.fasterxml.jackson.core.Version)|",
+      "|java+method:///com/google/code/ssm/mapper/JsonObjectMapper/setDefaultTyping(com.fasterxml.jackson.databind.jsontype.TypeResolverBuilder)|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+      "|java+constructor:///com/google/code/ssm/json/ClassAliasTypeResolverBuilder/ClassAliasTypeResolverBuilder(com.fasterxml.jackson.databind.ObjectMapper$DefaultTyping)|",
+      "|java+method:///com/google/code/ssm/mapper/JsonObjectMapper/enableDefaultTyping(com.fasterxml.jackson.databind.ObjectMapper$DefaultTyping,com.fasterxml.jackson.annotation.JsonTypeInfo$As)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.10",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.google.code.simple-spring-memcached:simple-spring-memcached:3.6.0",
+    "coordinatesV2": "com.google.code.simple-spring-memcached:simple-spring-memcached:3.1.0",
+    "caller": "|java+method:///com/google/code/ssm/mapper/JsonObjectMapper/setSerializers(java.util.List)|",
+    "called": "|java+method:///org/codehaus/jackson/map/module/SimpleModule/addSerializer(org.codehaus.jackson.map.JsonSerializer)|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/codehaus/jackson/map/module/SimpleModule/addSerializer(org.codehaus.jackson.map.JsonSerializer)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/List/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/fasterxml/jackson/databind/module/SimpleModule/addSerializer(com.fasterxml.jackson.databind.JsonSerializer)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///com/google/code/ssm/mapper/JsonObjectMapper/registerModule(com.fasterxml.jackson.databind.Module)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.10",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.google.code.simple-spring-memcached:simple-spring-memcached:3.6.0",
+    "coordinatesV2": "com.google.code.simple-spring-memcached:simple-spring-memcached:3.1.0",
+    "caller": "|java+method:///com/google/code/ssm/transcoders/JsonTranscoder/encode(java.lang.Object)|",
+    "called": "|java+method:///org/codehaus/jackson/map/ObjectMapper/writeValue(java.io.OutputStream,java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///com/google/code/ssm/providers/CachedObjectImpl/CachedObjectImpl(int,byte%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///com/google/code/ssm/json/Holder/Holder(java.lang.Object)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/writeValue(java.io.OutputStream,java.lang.Object)|",
+      "|java+method:///java/io/ByteArrayOutputStream/toByteArray()|",
+      "|java+method:///java/io/ByteArrayOutputStream/close()|",
+      "|java+constructor:///java/io/ByteArrayOutputStream/ByteArrayOutputStream()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/google/code/ssm/providers/CachedObjectImpl/CachedObjectImpl(int,byte%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValue(java.io.OutputStream,java.lang.Object)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///com/google/code/ssm/json/Holder/Holder(java.lang.Object)|",
+      "|java+method:///java/io/ByteArrayOutputStream/toByteArray()|",
+      "|java+method:///java/io/ByteArrayOutputStream/close()|",
+      "|java+constructor:///java/io/ByteArrayOutputStream/ByteArrayOutputStream()|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.10",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.google.code.simple-spring-memcached:simple-spring-memcached:3.6.0",
+    "coordinatesV2": "com.google.code.simple-spring-memcached:simple-spring-memcached:3.1.0",
+    "caller": "|java+method:///com/google/code/ssm/mapper/JsonObjectMapper/setDeserializers(java.util.Map)|",
+    "called": "|java+method:///org/codehaus/jackson/map/module/SimpleModule/addDeserializer(java.lang.Class,org.codehaus.jackson.map.JsonDeserializer)|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///org/codehaus/jackson/map/module/SimpleModule/addDeserializer(java.lang.Class,org.codehaus.jackson.map.JsonDeserializer)|",
+      "|java+method:///java/util/Set/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/fasterxml/jackson/databind/module/SimpleModule/addDeserializer(java.lang.Class,com.fasterxml.jackson.databind.JsonDeserializer)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///com/google/code/ssm/mapper/JsonObjectMapper/registerModule(com.fasterxml.jackson.databind.Module)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.10",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.google.code.simple-spring-memcached:simple-spring-memcached:3.1.0",
+    "coordinatesV2": "com.google.code.simple-spring-memcached:simple-spring-memcached:3.6.0",
+    "caller": "|java+method:///com/google/code/ssm/mapper/JsonObjectMapper/setSerializers(java.util.Map)|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/module/SimpleModule/addSerializer(java.lang.Class,com.fasterxml.jackson.databind.JsonSerializer)|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///org/codehaus/jackson/map/module/SimpleModule/addSerializer(java.lang.Class,org.codehaus.jackson.map.JsonSerializer)|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///java/util/Map/entrySet()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/fasterxml/jackson/databind/module/SimpleModule/addSerializer(java.lang.Class,com.fasterxml.jackson.databind.JsonSerializer)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///com/google/code/ssm/mapper/JsonObjectMapper/registerModule(com.fasterxml.jackson.databind.Module)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.3.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.google.code.simple-spring-memcached:simple-spring-memcached:3.1.0",
+    "coordinatesV2": "com.google.code.simple-spring-memcached:simple-spring-memcached:3.6.0",
+    "caller": "|java+method:///com/google/code/ssm/transcoders/JsonTranscoder/decode(com.google.code.ssm.providers.CachedObject)|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.io.InputStream,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(java.io.InputStream,java.lang.Class)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+constructor:///java/io/ByteArrayInputStream/ByteArrayInputStream(byte%5B%5D)|",
+      "|java+method:///com/google/code/ssm/providers/CachedObject/getFlags()|",
+      "|java+method:///com/google/code/ssm/providers/CachedObject/getData()|",
+      "|java+method:///java/io/ByteArrayInputStream/close()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+method:///com/google/code/ssm/json/Holder/getValue()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+constructor:///java/io/ByteArrayInputStream/ByteArrayInputStream(byte%5B%5D)|",
+      "|java+method:///com/google/code/ssm/providers/CachedObject/getFlags()|",
+      "|java+method:///com/google/code/ssm/providers/CachedObject/getData()|",
+      "|java+method:///java/io/ByteArrayInputStream/close()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.io.InputStream,java.lang.Class)|",
+      "|java+method:///com/google/code/ssm/json/Holder/getValue()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.3.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.google.code.simple-spring-memcached:simple-spring-memcached:3.1.0",
+    "coordinatesV2": "com.google.code.simple-spring-memcached:simple-spring-memcached:3.6.0",
+    "caller": "|java+constructor:///com/google/code/ssm/mapper/JsonObjectMapper/JsonObjectMapper()|",
+    "called": "|java+constructor:///com/fasterxml/jackson/databind/module/SimpleModule/SimpleModule(java.lang.String,com.fasterxml.jackson.core.Version)|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+      "|java+method:///com/google/code/ssm/mapper/JsonObjectMapper/setDefaultTyping(org.codehaus.jackson.map.jsontype.TypeResolverBuilder)|",
+      "|java+constructor:///com/google/code/ssm/json/ClassAliasTypeResolverBuilder/ClassAliasTypeResolverBuilder(org.codehaus.jackson.map.ObjectMapper$DefaultTyping)|",
+      "|java+method:///com/google/code/ssm/json/ClassAliasTypeResolverBuilder/inclusion(org.codehaus.jackson.annotate.JsonTypeInfo$As)|",
+      "|java+constructor:///org/codehaus/jackson/Version/Version(int,int,int,java.lang.String)|",
+      "|java+method:///com/google/code/ssm/mapper/JsonObjectMapper/getSerializationConfig()|",
+      "|java+method:///com/google/code/ssm/mapper/JsonObjectMapper/registerModule(org.codehaus.jackson.map.Module)|",
+      "|java+constructor:///org/codehaus/jackson/map/module/SimpleModule/SimpleModule(java.lang.String,org.codehaus.jackson.Version)|",
+      "|java+method:///org/codehaus/jackson/map/SerializationConfig/with(org.codehaus.jackson.map.SerializationConfig$Feature%5B%5D)|",
+      "|java+method:///com/google/code/ssm/mapper/JsonObjectMapper/enableDefaultTyping(org.codehaus.jackson.map.ObjectMapper$DefaultTyping,org.codehaus.jackson.annotate.JsonTypeInfo$As)|",
+      "|java+method:///com/google/code/ssm/mapper/JsonObjectMapper/setSerializationConfig(org.codehaus.jackson.map.SerializationConfig)|",
+      "|java+method:///org/codehaus/jackson/map/SerializationConfig/without(org.codehaus.jackson.map.SerializationConfig$Feature%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/fasterxml/jackson/core/Version/Version(int,int,int,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/code/ssm/mapper/JsonObjectMapper/configure(com.fasterxml.jackson.databind.SerializationFeature,boolean)|",
+      "|java+method:///com/google/code/ssm/mapper/JsonObjectMapper/configure(com.fasterxml.jackson.databind.MapperFeature,boolean)|",
+      "|java+method:///com/google/code/ssm/mapper/JsonObjectMapper/registerModule(com.fasterxml.jackson.databind.Module)|",
+      "|java+method:///com/google/code/ssm/json/ClassAliasTypeResolverBuilder/inclusion(com.fasterxml.jackson.annotation.JsonTypeInfo$As)|",
+      "|java+constructor:///com/fasterxml/jackson/databind/module/SimpleModule/SimpleModule(java.lang.String,com.fasterxml.jackson.core.Version)|",
+      "|java+method:///com/google/code/ssm/mapper/JsonObjectMapper/setDefaultTyping(com.fasterxml.jackson.databind.jsontype.TypeResolverBuilder)|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+      "|java+constructor:///com/google/code/ssm/json/ClassAliasTypeResolverBuilder/ClassAliasTypeResolverBuilder(com.fasterxml.jackson.databind.ObjectMapper$DefaultTyping)|",
+      "|java+method:///com/google/code/ssm/mapper/JsonObjectMapper/enableDefaultTyping(com.fasterxml.jackson.databind.ObjectMapper$DefaultTyping,com.fasterxml.jackson.annotation.JsonTypeInfo$As)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.3.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.google.code.simple-spring-memcached:simple-spring-memcached:3.1.0",
+    "coordinatesV2": "com.google.code.simple-spring-memcached:simple-spring-memcached:3.6.0",
+    "caller": "|java+method:///com/google/code/ssm/mapper/JsonObjectMapper/setSerializers(java.util.List)|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/module/SimpleModule/addSerializer(com.fasterxml.jackson.databind.JsonSerializer)|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/codehaus/jackson/map/module/SimpleModule/addSerializer(org.codehaus.jackson.map.JsonSerializer)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/List/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/fasterxml/jackson/databind/module/SimpleModule/addSerializer(com.fasterxml.jackson.databind.JsonSerializer)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///com/google/code/ssm/mapper/JsonObjectMapper/registerModule(com.fasterxml.jackson.databind.Module)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.3.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.google.code.simple-spring-memcached:simple-spring-memcached:3.1.0",
+    "coordinatesV2": "com.google.code.simple-spring-memcached:simple-spring-memcached:3.6.0",
+    "caller": "|java+method:///com/google/code/ssm/transcoders/JsonTranscoder/encode(java.lang.Object)|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValue(java.io.OutputStream,java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///com/google/code/ssm/providers/CachedObjectImpl/CachedObjectImpl(int,byte%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///com/google/code/ssm/json/Holder/Holder(java.lang.Object)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/writeValue(java.io.OutputStream,java.lang.Object)|",
+      "|java+method:///java/io/ByteArrayOutputStream/toByteArray()|",
+      "|java+method:///java/io/ByteArrayOutputStream/close()|",
+      "|java+constructor:///java/io/ByteArrayOutputStream/ByteArrayOutputStream()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/google/code/ssm/providers/CachedObjectImpl/CachedObjectImpl(int,byte%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValue(java.io.OutputStream,java.lang.Object)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///com/google/code/ssm/json/Holder/Holder(java.lang.Object)|",
+      "|java+method:///java/io/ByteArrayOutputStream/toByteArray()|",
+      "|java+method:///java/io/ByteArrayOutputStream/close()|",
+      "|java+constructor:///java/io/ByteArrayOutputStream/ByteArrayOutputStream()|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.3.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.google.code.simple-spring-memcached:simple-spring-memcached:3.1.0",
+    "coordinatesV2": "com.google.code.simple-spring-memcached:simple-spring-memcached:3.6.0",
+    "caller": "|java+method:///com/google/code/ssm/mapper/JsonObjectMapper/setDeserializers(java.util.Map)|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/module/SimpleModule/addDeserializer(java.lang.Class,com.fasterxml.jackson.databind.JsonDeserializer)|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///org/codehaus/jackson/map/module/SimpleModule/addDeserializer(java.lang.Class,org.codehaus.jackson.map.JsonDeserializer)|",
+      "|java+method:///java/util/Set/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/fasterxml/jackson/databind/module/SimpleModule/addDeserializer(java.lang.Class,com.fasterxml.jackson.databind.JsonDeserializer)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///com/google/code/ssm/mapper/JsonObjectMapper/registerModule(com.fasterxml.jackson.databind.Module)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.3.4",
+    "change": "ADDED"
+  }
+]

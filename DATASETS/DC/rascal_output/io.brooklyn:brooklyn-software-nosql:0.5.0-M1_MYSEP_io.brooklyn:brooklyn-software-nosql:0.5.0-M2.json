@@ -1,0 +1,128 @@
+[
+  {
+    "coordinatesV1": "io.brooklyn:brooklyn-software-nosql:0.5.0-M1",
+    "coordinatesV2": "io.brooklyn:brooklyn-software-nosql:0.5.0-M2",
+    "caller": "|java+constructor:///brooklyn/entity/nosql/redis/RedisStore/RedisStore(java.util.Map,brooklyn.entity.Entity)|",
+    "called": "|java+constructor:///brooklyn/entity/basic/SoftwareProcessImpl/SoftwareProcessImpl(java.util.Map,brooklyn.entity.Entity)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+constructor:///brooklyn/entity/basic/SoftwareProcessEntity/SoftwareProcessEntity(java.util.Map,brooklyn.entity.Entity)|",
+      "|java+method:///brooklyn/entity/nosql/redis/RedisStore/setConfigIfValNonNull(brooklyn.config.ConfigKey$HasConfigKey,java.lang.Object)|",
+      "|java+method:///brooklyn/entity/nosql/redis/RedisStore/setConfigIfValNonNull(brooklyn.config.ConfigKey,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///brooklyn/entity/basic/SoftwareProcessImpl/SoftwareProcessImpl(java.util.Map,brooklyn.entity.Entity)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///brooklyn/entity/nosql/redis/RedisStore/setConfigIfValNonNull(brooklyn.config.ConfigKey$HasConfigKey,java.lang.Object)|",
+      "|java+method:///brooklyn/entity/nosql/redis/RedisStore/setConfigIfValNonNull(brooklyn.config.ConfigKey,java.lang.Object)|"
+    ],
+    "affectedLib": "io.brooklyn:brooklyn-software-base:0.5.0-M2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.brooklyn:brooklyn-software-nosql:0.5.0-M1",
+    "coordinatesV2": "io.brooklyn:brooklyn-software-nosql:0.5.0-M2",
+    "caller": "|java+method:///brooklyn/entity/nosql/redis/RedisStoreSshDriver/customize()|",
+    "called": "|java+method:///brooklyn/entity/basic/lifecycle/ScriptHelper/failOnNonZeroResultCode()|",
+    "v1Body": [
+      "|java+method:///brooklyn/entity/basic/lifecycle/ScriptHelper/execute()|",
+      "|java+method:///brooklyn/entity/nosql/redis/RedisStoreSshDriver/getInstallDir()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///brooklyn/entity/basic/lifecycle/ScriptPart/append(java.lang.CharSequence%5B%5D)|",
+      "|java+method:///brooklyn/util/MutableMap/of(java.lang.Object,java.lang.Object)|",
+      "|java+method:///brooklyn/entity/nosql/redis/RedisStoreSshDriver/newScript(java.util.Map,java.lang.String)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///brooklyn/entity/nosql/redis/RedisStoreSshDriver/getRunDir()|",
+      "|java+method:///brooklyn/entity/nosql/redis/RedisStoreSshDriver/getEntity()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///brooklyn/entity/basic/lifecycle/ScriptHelper/failOnNonZeroResultCode()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///brooklyn/entity/nosql/redis/RedisStore/doExtraConfigurationDuringStart()|",
+      "|java+method:///brooklyn/entity/nosql/redis/RedisStoreSshDriver/getVersion()|"
+    ],
+    "v2Body": [
+      "|java+method:///brooklyn/entity/basic/lifecycle/ScriptHelper/execute()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///brooklyn/entity/basic/lifecycle/ScriptPart/append(java.lang.CharSequence%5B%5D)|",
+      "|java+method:///brooklyn/util/MutableMap/of(java.lang.Object,java.lang.Object)|",
+      "|java+method:///brooklyn/entity/nosql/redis/RedisStoreSshDriver/newScript(java.util.Map,java.lang.String)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///brooklyn/entity/nosql/redis/RedisStoreSshDriver/getRunDir()|",
+      "|java+method:///brooklyn/entity/nosql/redis/RedisStoreSshDriver/getEntity()|",
+      "|java+method:///brooklyn/entity/nosql/redis/RedisStore/doExtraConfigurationDuringStart()|",
+      "|java+method:///brooklyn/entity/basic/lifecycle/ScriptHelper/failOnNonZeroResultCode()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///brooklyn/entity/nosql/redis/RedisStoreSshDriver/getExpandedInstallDir()|"
+    ],
+    "affectedLib": "io.brooklyn:brooklyn-software-base:0.5.0-M2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.brooklyn:brooklyn-software-nosql:0.5.0-M1",
+    "coordinatesV2": "io.brooklyn:brooklyn-software-nosql:0.5.0-M2",
+    "caller": "|java+method:///brooklyn/entity/nosql/redis/RedisStoreSshDriver/install()|",
+    "called": "|java+method:///brooklyn/entity/basic/lifecycle/CommonCommands/downloadUrlAs(java.util.List,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///brooklyn/entity/basic/lifecycle/ScriptPart/append(java.util.Collection)|",
+      "|java+method:///brooklyn/entity/basic/lifecycle/ScriptHelper/execute()|",
+      "|java+method:///brooklyn/entity/nosql/redis/RedisStoreSshDriver/newScript(java.lang.String)|",
+      "|java+method:///com/google/common/collect/ImmutableList/builder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///brooklyn/entity/nosql/redis/RedisStoreSshDriver/getEntityVersionLabel(java.lang.String)|",
+      "|java+method:///brooklyn/entity/nosql/redis/RedisStoreSshDriver/getVersion()|",
+      "|java+method:///brooklyn/entity/basic/lifecycle/CommonCommands/downloadUrlAs(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/google/common/collect/ImmutableList$Builder/addAll(java.lang.Iterable)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///brooklyn/entity/basic/lifecycle/ScriptHelper/failOnNonZeroResultCode()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///com/google/common/collect/ImmutableList$Builder/build()|",
+      "|java+method:///com/google/common/collect/ImmutableList$Builder/add(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///brooklyn/entity/basic/lifecycle/ScriptPart/append(java.util.Collection)|",
+      "|java+method:///brooklyn/entity/drivers/downloads/DownloadResolver/getFilename()|",
+      "|java+method:///brooklyn/entity/basic/lifecycle/ScriptHelper/execute()|",
+      "|java+method:///brooklyn/entity/nosql/redis/RedisStoreSshDriver/newScript(java.lang.String)|",
+      "|java+method:///java/lang/String/valueOf(java.lang.Object)|",
+      "|java+method:///brooklyn/entity/nosql/redis/RedisStoreSshDriver/getInstallDir()|",
+      "|java+method:///com/google/common/collect/ImmutableList/builder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///brooklyn/entity/basic/lifecycle/CommonCommands/downloadUrlAs(java.util.List,java.lang.String)|",
+      "|java+method:///brooklyn/entity/nosql/redis/RedisStoreSshDriver/getVersion()|",
+      "|java+method:///brooklyn/entity/basic/EntityLocal/getManagementContext()|",
+      "|java+method:///brooklyn/entity/drivers/downloads/DownloadResolverRegistry/resolve(brooklyn.entity.drivers.EntityDriver)|",
+      "|java+method:///brooklyn/entity/drivers/downloads/DownloadResolver/getUnpackedDirectorName(java.lang.String)|",
+      "|java+method:///brooklyn/entity/drivers/downloads/DownloadResolver/getTargets()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/google/common/collect/ImmutableList$Builder/addAll(java.lang.Iterable)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///brooklyn/entity/basic/lifecycle/ScriptHelper/failOnNonZeroResultCode()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///brooklyn/management/ManagementContext/getEntityDownloadsRegistry()|",
+      "|java+method:///com/google/common/collect/ImmutableList$Builder/build()|",
+      "|java+method:///com/google/common/collect/ImmutableList$Builder/add(java.lang.Object)|"
+    ],
+    "affectedLib": "io.brooklyn:brooklyn-software-base:0.5.0-M2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.brooklyn:brooklyn-software-nosql:0.5.0-M1",
+    "coordinatesV2": "io.brooklyn:brooklyn-software-nosql:0.5.0-M2",
+    "caller": "|java+method:///brooklyn/entity/nosql/redis/RedisStore/getMachineOrNull()|",
+    "called": "|java+method:///brooklyn/entity/basic/SoftwareProcessImpl/getMachineOrNull()|",
+    "v1Body": [
+      "|java+method:///brooklyn/entity/nosql/redis/RedisStore/getMachineOrNull()|",
+      "|java+method:///brooklyn/entity/basic/SoftwareProcessEntity/getMachineOrNull()|"
+    ],
+    "v2Body": [
+      "|java+method:///brooklyn/entity/basic/SoftwareProcessImpl/getMachineOrNull()|",
+      "|java+method:///brooklyn/entity/nosql/redis/RedisStore/getMachineOrNull()|"
+    ],
+    "affectedLib": "io.brooklyn:brooklyn-software-base:0.5.0-M2",
+    "change": "UPDATED"
+  }
+]

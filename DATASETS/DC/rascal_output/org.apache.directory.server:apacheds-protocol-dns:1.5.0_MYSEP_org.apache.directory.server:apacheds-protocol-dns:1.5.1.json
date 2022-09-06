@@ -1,0 +1,47 @@
+[
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-protocol-dns:1.5.0",
+    "coordinatesV2": "org.apache.directory.server:apacheds-protocol-dns:1.5.1",
+    "caller": "|java+constructor:///org/apache/directory/server/dns/DnsConfiguration/DnsConfiguration()|",
+    "called": "|java+method:///org/apache/directory/server/protocol/shared/ServiceConfiguration/setIpPort(int)|",
+    "v1Body": [
+      "|java+method:///org/apache/directory/server/dns/DnsConfiguration/getDefaultConfig()|",
+      "|java+constructor:///org/apache/directory/server/dns/DnsConfiguration/DnsConfiguration(java.util.Map,int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/server/protocol/shared/ServiceConfiguration/setServicePid(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/server/protocol/shared/ServiceConfiguration/ServiceConfiguration()|",
+      "|java+method:///org/apache/directory/server/protocol/shared/ServiceConfiguration/setIpPort(int)|",
+      "|java+method:///org/apache/directory/server/protocol/shared/ServiceConfiguration/setServiceName(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.directory.server:apacheds-protocol-shared:1.5.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-protocol-dns:1.5.0",
+    "coordinatesV2": "org.apache.directory.server:apacheds-protocol-dns:1.5.1",
+    "caller": "|java+method:///org/apache/directory/server/dns/protocol/DnsProtocolHandler/sessionCreated(org.apache.mina.common.IoSession)|",
+    "called": "|java+constructor:///org/apache/mina/filter/codec/ProtocolCodecFilter/ProtocolCodecFilter(org.apache.mina.filter.codec.ProtocolCodecFactory)|",
+    "v1Body": [
+      "|java+method:///org/apache/mina/common/IoFilterChain/addFirst(java.lang.String,org.apache.mina.common.IoFilter)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apache/mina/common/IoSession/getFilterChain()|",
+      "|java+constructor:///org/apache/mina/filter/codec/ProtocolCodecFilter/ProtocolCodecFilter(org.apache.mina.filter.codec.ProtocolCodecFactory)|",
+      "|java+method:///org/apache/mina/common/IoSession/getRemoteAddress()|",
+      "|java+method:///org/apache/directory/server/dns/protocol/DnsProtocolCodecFactory/getInstance()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/mina/common/IoSession/getTransportType()|",
+      "|java+method:///org/apache/mina/common/IoSession/getFilterChain()|",
+      "|java+constructor:///org/apache/mina/filter/codec/ProtocolCodecFilter/ProtocolCodecFilter(org.apache.mina.filter.codec.ProtocolCodecFactory)|",
+      "|java+method:///org/apache/mina/common/IoSession/getRemoteAddress()|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/mina/common/IoFilterChain/addFirst(java.lang.String,org.apache.mina.common.IoFilter)|",
+      "|java+method:///org/apache/directory/server/dns/protocol/DnsProtocolUdpCodecFactory/getInstance()|",
+      "|java+method:///org/apache/directory/server/dns/protocol/DnsProtocolTcpCodecFactory/getInstance()|"
+    ],
+    "affectedLib": "org.apache.mina:mina-core:1.1.2",
+    "change": "UPDATED"
+  }
+]

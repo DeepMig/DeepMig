@@ -1,0 +1,58 @@
+[
+  {
+    "coordinatesV1": "com.opentext.ia:infoarchive-yaml:10.1.0",
+    "coordinatesV2": "com.opentext.ia:infoarchive-yaml:11.0.0",
+    "caller": "|java+method:///com/opentext/ia/yaml/configuration/ConfigurationProperties/lookup(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang3/StringUtils/isBlank(java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+method:///java/util/Properties/getProperty(java.lang.String)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///com/opentext/ia/yaml/configuration/ConfigurationProperties/lookup(java.lang.String)|",
+      "|java+method:///java/lang/String/isEmpty()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/StringUtils/isBlank(java.lang.CharSequence)|",
+      "|java+method:///java/util/Properties/getProperty(java.lang.String)|",
+      "|java+method:///com/opentext/ia/yaml/configuration/ConfigurationProperties/lookup(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.7",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.opentext.ia:infoarchive-yaml:10.1.0",
+    "coordinatesV2": "com.opentext.ia:infoarchive-yaml:11.0.0",
+    "caller": "|java+method:///com/opentext/ia/yaml/core/YamlMap/from(java.io.InputStream,boolean)|",
+    "called": "|java+method:///org/yaml/snakeyaml/Yaml/loadAll(java.io.InputStream)|",
+    "v1Body": [
+      "|java+method:///com/opentext/ia/yaml/core/YamlMap/newLoader()|",
+      "|java+method:///org/yaml/snakeyaml/Yaml/loadAll(java.io.InputStream)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///com/opentext/ia/yaml/core/YamlMap/YamlMap()|",
+      "|java+method:///com/opentext/ia/yaml/core/YamlSyntaxErrorPrettifier/apply(org.yaml.snakeyaml.error.MarkedYAMLException,java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+method:///org/apache/commons/io/IOUtils/toString(java.io.InputStream,java.nio.charset.Charset)|",
+      "|java+constructor:///com/opentext/ia/yaml/core/YamlMap/YamlMap(java.lang.Object)|",
+      "|java+method:///com/opentext/ia/yaml/core/YamlMap/inMemoryCopyOf(java.io.InputStream)|",
+      "|java+method:///java/io/InputStream/reset()|",
+      "|java+method:///com/opentext/ia/yaml/core/YamlMap/putAll(com.opentext.ia.yaml.core.YamlMap)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/opentext/ia/yaml/core/YamlMap/newLoader()|",
+      "|java+method:///org/yaml/snakeyaml/Yaml/loadAll(java.io.InputStream)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///com/opentext/ia/yaml/core/YamlMap/YamlMap()|",
+      "|java+method:///com/opentext/ia/yaml/core/YamlSyntaxErrorPrettifier/apply(org.yaml.snakeyaml.error.MarkedYAMLException,java.lang.String)|",
+      "|java+method:///com/opentext/ia/yaml/core/YamlMap/assertNotNull(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+method:///org/apache/commons/io/IOUtils/toString(java.io.InputStream,java.nio.charset.Charset)|",
+      "|java+constructor:///com/opentext/ia/yaml/core/YamlMap/YamlMap(java.lang.Object)|",
+      "|java+method:///com/opentext/ia/yaml/core/YamlMap/inMemoryCopyOf(java.io.InputStream)|",
+      "|java+method:///java/io/InputStream/reset()|",
+      "|java+method:///com/opentext/ia/yaml/core/YamlMap/putAll(com.opentext.ia.yaml.core.YamlMap)|"
+    ],
+    "affectedLib": "org.yaml:snakeyaml:1.21",
+    "change": "UPDATED"
+  }
+]

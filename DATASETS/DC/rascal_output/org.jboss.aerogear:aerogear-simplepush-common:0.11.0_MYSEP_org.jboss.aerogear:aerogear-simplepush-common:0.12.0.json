@@ -1,0 +1,60 @@
+[
+  {
+    "coordinatesV1": "org.jboss.aerogear:aerogear-simplepush-common:0.11.0",
+    "coordinatesV2": "org.jboss.aerogear:aerogear-simplepush-common:0.12.0",
+    "caller": "|java+method:///org/jboss/aerogear/simplepush/util/CryptoUtil/decrypt(byte%5B%5D,java.lang.String)|",
+    "called": "|java+method:///org/jboss/aerogear/crypto/encoders/UrlBase64/decode(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/jboss/aerogear/crypto/CryptoBox/decrypt(byte%5B%5D,byte%5B%5D)|",
+      "|java+constructor:///org/jboss/aerogear/crypto/CryptoBox/CryptoBox(byte%5B%5D)|",
+      "|java+method:///org/jboss/aerogear/simplepush/util/CryptoUtil/extractContent(byte%5B%5D)|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D,java.nio.charset.Charset)|",
+      "|java+method:///java/net/URLDecoder/decode(java.lang.String,java.lang.String)|",
+      "|java+method:///java/nio/charset/Charset/displayName()|",
+      "|java+method:///org/jboss/aerogear/simplepush/util/CryptoUtil/extractIV(byte%5B%5D)|",
+      "|java+method:///org/jboss/aerogear/crypto/encoders/Base64/decode(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/jboss/aerogear/crypto/CryptoBox/CryptoBox(byte%5B%5D)|",
+      "|java+method:///org/jboss/aerogear/simplepush/util/CryptoUtil/extractContent(byte%5B%5D)|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D,java.nio.charset.Charset)|",
+      "|java+method:///java/net/URLDecoder/decode(java.lang.String,java.lang.String)|",
+      "|java+method:///java/nio/charset/Charset/displayName()|",
+      "|java+method:///org/jboss/aerogear/simplepush/util/CryptoUtil/extractIV(byte%5B%5D)|",
+      "|java+method:///org/jboss/aerogear/crypto/encoders/UrlBase64/decode(java.lang.String)|",
+      "|java+constructor:///org/jboss/aerogear/crypto/encoders/UrlBase64/UrlBase64()|",
+      "|java+method:///org/jboss/aerogear/crypto/CryptoBox/decrypt(byte%5B%5D,byte%5B%5D)|"
+    ],
+    "affectedLib": "org.jboss.aerogear:aerogear-crypto:0.1.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jboss.aerogear:aerogear-simplepush-common:0.11.0",
+    "coordinatesV2": "org.jboss.aerogear:aerogear-simplepush-common:0.12.0",
+    "caller": "|java+method:///org/jboss/aerogear/simplepush/util/CryptoUtil/encrypt(byte%5B%5D,java.lang.String)|",
+    "called": "|java+method:///org/jboss/aerogear/crypto/BlockCipher/getIV()|",
+    "v1Body": [
+      "|java+method:///org/jboss/aerogear/crypto/encoders/Base64/encode(byte%5B%5D)|",
+      "|java+method:///java/net/URLEncoder/encode(java.lang.String,java.lang.String)|",
+      "|java+method:///org/jboss/aerogear/simplepush/util/CryptoUtil/prependIV(byte%5B%5D,byte%5B%5D)|",
+      "|java+constructor:///org/jboss/aerogear/crypto/CryptoBox/CryptoBox(byte%5B%5D)|",
+      "|java+method:///org/jboss/aerogear/crypto/CryptoBox/encrypt(byte%5B%5D,byte%5B%5D)|",
+      "|java+method:///org/jboss/aerogear/crypto/BlockCipher/getIV()|",
+      "|java+method:///java/lang/String/getBytes(java.nio.charset.Charset)|",
+      "|java+method:///java/nio/charset/Charset/displayName()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/net/URLEncoder/encode(java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/jboss/aerogear/crypto/encoders/UrlBase64/UrlBase64()|",
+      "|java+method:///org/jboss/aerogear/simplepush/util/CryptoUtil/prependIV(byte%5B%5D,byte%5B%5D)|",
+      "|java+constructor:///org/jboss/aerogear/crypto/CryptoBox/CryptoBox(byte%5B%5D)|",
+      "|java+method:///org/jboss/aerogear/crypto/CryptoBox/encrypt(byte%5B%5D,byte%5B%5D)|",
+      "|java+method:///org/jboss/aerogear/crypto/BlockCipher/getIV()|",
+      "|java+method:///java/lang/String/getBytes(java.nio.charset.Charset)|",
+      "|java+method:///java/nio/charset/Charset/displayName()|",
+      "|java+method:///org/jboss/aerogear/crypto/encoders/UrlBase64/encode(byte%5B%5D)|"
+    ],
+    "affectedLib": "org.jboss.aerogear:aerogear-crypto:0.1.5",
+    "change": "UPDATED"
+  }
+]

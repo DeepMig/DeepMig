@@ -1,0 +1,44 @@
+[
+  {
+    "coordinatesV1": "org.apache.aries.jndi:org.apache.aries.jndi:0.2-incubating",
+    "coordinatesV2": "org.apache.aries.jndi:org.apache.aries.jndi:0.3",
+    "caller": "|java+method:///org/apache/aries/jndi/url/Activator/stop(org.osgi.framework.BundleContext)|",
+    "called": "|java+method:///org/apache/aries/util/SingleServiceTracker/close()|",
+    "v1Body": [
+      "|java+method:///org/osgi/framework/ServiceRegistration/unregister()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/osgi/framework/ServiceRegistration/unregister()|",
+      "|java+method:///org/apache/aries/util/SingleServiceTracker/close()|"
+    ],
+    "affectedLib": "org.apache.aries:org.apache.aries.util:0.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.aries.jndi:org.apache.aries.jndi:0.2-incubating",
+    "coordinatesV2": "org.apache.aries.jndi:org.apache.aries.jndi:0.3",
+    "caller": "|java+method:///org/apache/aries/jndi/url/Activator/start(org.osgi.framework.BundleContext)|",
+    "called": "|java+constructor:///org/apache/aries/util/SingleServiceTracker/SingleServiceTracker(org.osgi.framework.BundleContext,java.lang.Class,org.apache.aries.util.SingleServiceTracker$SingleServiceListener)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/aries/jndi/url/OsgiURLContextServiceFactory/OsgiURLContextServiceFactory()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/osgi/framework/BundleContext/registerService(java.lang.String,java.lang.Object,java.util.Dictionary)|",
+      "|java+constructor:///java/util/Hashtable/Hashtable()|",
+      "|java+method:///java/util/Hashtable/put(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/osgi/framework/BundleContext/getBundle()|",
+      "|java+constructor:///org/apache/aries/util/SingleServiceTracker/SingleServiceTracker(org.osgi.framework.BundleContext,java.lang.Class,org.apache.aries.util.SingleServiceTracker$SingleServiceListener)|",
+      "|java+method:///org/osgi/framework/Bundle/loadClass(java.lang.String)|",
+      "|java+method:///java/lang/ClassNotFoundException/printStackTrace()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/osgi/framework/BundleContext/registerService(java.lang.String,java.lang.Object,java.util.Dictionary)|",
+      "|java+constructor:///java/util/Hashtable/Hashtable()|",
+      "|java+method:///org/apache/aries/util/SingleServiceTracker/open()|",
+      "|java+constructor:///org/apache/aries/jndi/url/BlueprintURLContextServiceFactory/BlueprintURLContextServiceFactory()|",
+      "|java+method:///java/util/Hashtable/put(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.aries:org.apache.aries.util:0.3",
+    "change": "UPDATED"
+  }
+]

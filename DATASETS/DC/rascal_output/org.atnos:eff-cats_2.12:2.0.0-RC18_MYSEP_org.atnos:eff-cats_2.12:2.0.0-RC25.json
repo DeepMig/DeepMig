@@ -1,0 +1,676 @@
+[
+  {
+    "coordinatesV1": "org.atnos:eff-cats_2.12:2.0.0-RC25",
+    "coordinatesV2": "org.atnos:eff-cats_2.12:2.0.0-RC18",
+    "caller": "|java+method:///org/atnos/eff/Interpret$$anon$3/onPure(java.lang.Object,scala.runtime.BoxedUnit)|",
+    "called": "|java+method:///cats/implicits$/catsSyntaxEither(scala.util.Either)|",
+    "v1Body": [
+      "|java+method:///cats/syntax/EitherOps$/leftMap$extension(scala.util.Either,scala.Function1)|",
+      "|java+method:///cats/implicits$/catsSyntaxEither(scala.util.Either)|",
+      "|java+method:///org/atnos/eff/Interpret$StatelessLoop/onPure(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/atnos/eff/StatelessLoop/onPure(java.lang.Object)|",
+      "|java+method:///cats/syntax/EitherOps$/leftMap$extension(scala.util.Either,scala.Function1)|",
+      "|java+method:///cats/implicits$/catsSyntaxEither(scala.util.Either)|"
+    ],
+    "affectedLib": "org.typelevel:cats-core_2.12.0-RC2:0.8.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.atnos:eff-cats_2.12:2.0.0-RC25",
+    "coordinatesV2": "org.atnos:eff-cats_2.12:2.0.0-RC18",
+    "caller": "|java+method:///org/atnos/eff/ChooseInterpretation/runChoose(org.atnos.eff.Eff,cats.Alternative,org.atnos.eff.Member)|",
+    "called": "|java+method:///cats/syntax/package$cartesian$/catsSyntaxCartesian(java.lang.Object,cats.Cartesian)|",
+    "v1Body": [
+      "|java+method:///org/atnos/eff/Impure/continuation()|",
+      "|java+method:///cats/Alternative$/apply(cats.Alternative)|",
+      "|java+method:///cats/syntax/package$cartesian$/catsSyntaxCartesian(java.lang.Object,cats.Cartesian)|",
+      "|java+method:///org/atnos/eff/Eff$/EffMonad()|",
+      "|java+method:///org/atnos/eff/ChooseInterpretation/runChoose(org.atnos.eff.Eff,cats.Alternative,org.atnos.eff.Member)|",
+      "|java+method:///scala/util/Right/value()|",
+      "|java+method:///cats/Alternative/pure(java.lang.Object)|",
+      "|java+method:///org/atnos/eff/Pure/value()|",
+      "|java+constructor:///org/atnos/eff/Impure/Impure(org.atnos.eff.Union,org.atnos.eff.Arrs)|",
+      "|java+method:///org/atnos/eff/Impure/union()|",
+      "|java+method:///org/atnos/eff/Arrs/apply(java.lang.Object)|",
+      "|java+method:///scala/util/Left/value()|",
+      "|java+method:///org/atnos/eff/ImpureAp/toMonadic()|",
+      "|java+method:///org/atnos/eff/Arrs$/singleton(scala.Function1)|",
+      "|java+method:///scala/runtime/BoxesRunTime/boxToBoolean(boolean)|",
+      "|java+method:///cats/syntax/CartesianBuilder$CartesianBuilder2/map(scala.Function2,cats.Functor,cats.Cartesian)|",
+      "|java+method:///cats/Monad/pure(java.lang.Object)|",
+      "|java+method:///cats/Alternative/empty()|",
+      "|java+method:///cats/syntax/CartesianOps/$bar$at$bar(java.lang.Object)|",
+      "|java+constructor:///scala/MatchError/MatchError(java.lang.Object)|",
+      "|java+method:///org/atnos/eff/Member/project(org.atnos.eff.Union)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/atnos/eff/Impure/last()|",
+      "|java+method:///org/atnos/eff/Impure/continuation()|",
+      "|java+method:///org/atnos/eff/Pure/last()|",
+      "|java+method:///cats/Alternative$/apply(cats.Alternative)|",
+      "|java+method:///org/atnos/eff/Impure$/apply$default$3()|",
+      "|java+method:///org/atnos/eff/Impure/addLast(org.atnos.eff.Last)|",
+      "|java+method:///org/atnos/eff/Eff/addLast(org.atnos.eff.Last)|",
+      "|java+method:///cats/syntax/package$cartesian$/catsSyntaxCartesian(java.lang.Object,cats.Cartesian)|",
+      "|java+method:///org/atnos/eff/Eff$/EffMonad()|",
+      "|java+method:///org/atnos/eff/ChooseInterpretation/runChoose(org.atnos.eff.Eff,cats.Alternative,org.atnos.eff.Member)|",
+      "|java+method:///scala/util/Right/value()|",
+      "|java+method:///cats/Alternative/pure(java.lang.Object)|",
+      "|java+method:///org/atnos/eff/Impure/union()|",
+      "|java+method:///org/atnos/eff/Arrs/apply(java.lang.Object)|",
+      "|java+method:///scala/util/Left/value()|",
+      "|java+method:///org/atnos/eff/ImpureAp/toMonadic()|",
+      "|java+method:///org/atnos/eff/Arrs$/singleton(scala.Function1)|",
+      "|java+method:///scala/runtime/BoxesRunTime/boxToBoolean(boolean)|",
+      "|java+method:///cats/syntax/CartesianBuilder$CartesianBuilder2/map(scala.Function2,cats.Functor,cats.Cartesian)|",
+      "|java+method:///cats/Monad/pure(java.lang.Object)|",
+      "|java+method:///cats/Alternative/empty()|",
+      "|java+method:///cats/syntax/CartesianOps/$bar$at$bar(java.lang.Object)|",
+      "|java+constructor:///scala/MatchError/MatchError(java.lang.Object)|",
+      "|java+constructor:///org/atnos/eff/Impure/Impure(org.atnos.eff.Union,org.atnos.eff.Arrs,org.atnos.eff.Last)|",
+      "|java+method:///org/atnos/eff/Member/project(org.atnos.eff.Union)|",
+      "|java+method:///org/atnos/eff/ChooseInterpretation/lastRun$1(org.atnos.eff.Last,cats.Alternative,org.atnos.eff.Member)|",
+      "|java+method:///org/atnos/eff/Pure/value()|"
+    ],
+    "affectedLib": "org.typelevel:cats-core_2.12.0-RC2:0.8.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.atnos:eff-cats_2.12:2.0.0-RC25",
+    "coordinatesV2": "org.atnos:eff-cats_2.12:2.0.0-RC18",
+    "caller": "|java+method:///org/atnos/eff/Interpret$$anon$1/onEffect(java.lang.Object,org.atnos.eff.Arrs,scala.runtime.BoxedUnit)|",
+    "called": "|java+method:///cats/syntax/EitherOps$/bimap$extension(scala.util.Either,scala.Function1,scala.Function1)|",
+    "v1Body": [
+      "|java+method:///cats/syntax/EitherOps$/bimap$extension(scala.util.Either,scala.Function1,scala.Function1)|",
+      "|java+method:///org/atnos/eff/Interpret$Recurse/apply(java.lang.Object)|",
+      "|java+method:///cats/implicits$/catsSyntaxEither(scala.util.Either)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/atnos/eff/Recurse/apply(java.lang.Object)|",
+      "|java+method:///cats/syntax/EitherOps$/bimap$extension(scala.util.Either,scala.Function1,scala.Function1)|",
+      "|java+method:///cats/implicits$/catsSyntaxEither(scala.util.Either)|"
+    ],
+    "affectedLib": "org.typelevel:cats-core_2.12.0-RC2:0.8.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.atnos:eff-cats_2.12:2.0.0-RC25",
+    "coordinatesV2": "org.atnos:eff-cats_2.12:2.0.0-RC18",
+    "caller": "|java+method:///org/atnos/eff/Interpret$$anon$5/onPure(java.lang.Object,scala.runtime.BoxedUnit)|",
+    "called": "|java+method:///cats/implicits$/catsSyntaxEither(scala.util.Either)|",
+    "v1Body": [
+      "|java+method:///cats/syntax/EitherOps$/leftMap$extension(scala.util.Either,scala.Function1)|",
+      "|java+method:///cats/implicits$/catsSyntaxEither(scala.util.Either)|",
+      "|java+method:///org/atnos/eff/Interpret$StatelessLoop/onPure(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/atnos/eff/StatelessLoop/onPure(java.lang.Object)|",
+      "|java+method:///cats/syntax/EitherOps$/leftMap$extension(scala.util.Either,scala.Function1)|",
+      "|java+method:///cats/implicits$/catsSyntaxEither(scala.util.Either)|"
+    ],
+    "affectedLib": "org.typelevel:cats-core_2.12.0-RC2:0.8.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.atnos:eff-cats_2.12:2.0.0-RC25",
+    "coordinatesV2": "org.atnos:eff-cats_2.12:2.0.0-RC18",
+    "caller": "|java+method:///org/atnos/eff/Interpret$$anon$5/onApplicativeEffect(java.lang.Object,org.atnos.eff.Arrs,scala.runtime.BoxedUnit,cats.Traverse)|",
+    "called": "|java+method:///cats/implicits$/catsSyntaxEither(scala.util.Either)|",
+    "v1Body": [
+      "|java+method:///cats/syntax/EitherOps$/leftMap$extension(scala.util.Either,scala.Function1)|",
+      "|java+method:///org/atnos/eff/Interpret$StatelessLoop/onApplicativeEffect(java.lang.Object,org.atnos.eff.Arrs,cats.Traverse)|",
+      "|java+method:///cats/implicits$/catsSyntaxEither(scala.util.Either)|"
+    ],
+    "v2Body": [
+      "|java+method:///cats/syntax/EitherOps$/leftMap$extension(scala.util.Either,scala.Function1)|",
+      "|java+method:///cats/implicits$/catsSyntaxEither(scala.util.Either)|",
+      "|java+method:///org/atnos/eff/StatelessLoop/onApplicativeEffect(java.lang.Object,org.atnos.eff.Arrs,cats.Traverse)|"
+    ],
+    "affectedLib": "org.typelevel:cats-core_2.12.0-RC2:0.8.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.atnos:eff-cats_2.12:2.0.0-RC25",
+    "coordinatesV2": "org.atnos:eff-cats_2.12:2.0.0-RC18",
+    "caller": "|java+method:///org/atnos/eff/SafeInterpretation$$anon$2/onEffect(org.atnos.eff.Safe,org.atnos.eff.Arrs)|",
+    "called": "|java+method:///cats/syntax/EitherObjectOps$/catchNonFatal$extension(scala.util.Either$,scala.Function0)|",
+    "v1Body": [
+      "|java+method:///org/atnos/eff/EvaluateValue/a()|",
+      "|java+method:///cats/implicits$/catsSyntaxEitherObject(scala.util.Either$)|",
+      "|java+method:///org/atnos/eff/SafeInterpretation/attempt(org.atnos.eff.Eff,org.atnos.eff.Member)|",
+      "|java+method:///scala/package$/Right()|",
+      "|java+method:///org/atnos/eff/Eff$/EffMonad()|",
+      "|java+constructor:///scala/MatchError/MatchError(java.lang.Object)|",
+      "|java+method:///org/atnos/eff/Arrs/apply(java.lang.Object)|",
+      "|java+method:///scala/util/Left$/apply(java.lang.Object)|",
+      "|java+method:///cats/FlatMap$Ops/$greater$greater(java.lang.Object)|",
+      "|java+method:///org/atnos/eff/Eff/flatMap(scala.Function1)|",
+      "|java+method:///scala/util/Left/value()|",
+      "|java+method:///scala/package$/Either()|",
+      "|java+method:///cats/syntax/EitherObjectOps$/catchNonFatal$extension(scala.util.Either$,scala.Function0)|",
+      "|java+method:///org/atnos/eff/SafeInterpretation/finalizerException(java.lang.Throwable,org.atnos.eff.MemberIn)|",
+      "|java+method:///scala/package$/Left()|",
+      "|java+method:///cats/implicits$/toFlatMapOps(java.lang.Object,cats.FlatMap)|",
+      "|java+method:///org/atnos/eff/FailedValue/t()|",
+      "|java+method:///org/atnos/eff/FailedFinalizer/t()|",
+      "|java+method:///org/atnos/eff/SafeInterpretation/exception(java.lang.Throwable,org.atnos.eff.MemberIn)|",
+      "|java+method:///scala/util/Right/value()|",
+      "|java+method:///scala/util/Right$/apply(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/atnos/eff/EvaluateValue/a()|",
+      "|java+method:///cats/implicits$/catsSyntaxEitherObject(scala.util.Either$)|",
+      "|java+method:///scala/package$/Right()|",
+      "|java+method:///org/atnos/eff/Eff$/EffMonad()|",
+      "|java+constructor:///scala/MatchError/MatchError(java.lang.Object)|",
+      "|java+method:///org/atnos/eff/Arrs/apply(java.lang.Object)|",
+      "|java+method:///scala/util/Left$/apply(java.lang.Object)|",
+      "|java+method:///cats/FlatMap$Ops/$greater$greater(java.lang.Object)|",
+      "|java+method:///org/atnos/eff/Eff/flatMap(scala.Function1)|",
+      "|java+method:///scala/util/Left/value()|",
+      "|java+method:///scala/package$/Either()|",
+      "|java+method:///cats/syntax/EitherObjectOps$/catchNonFatal$extension(scala.util.Either$,scala.Function0)|",
+      "|java+method:///org/atnos/eff/SafeInterpretation/finalizerException(java.lang.Throwable,org.atnos.eff.MemberIn)|",
+      "|java+method:///scala/package$/Left()|",
+      "|java+method:///cats/implicits$/toFlatMapOps(java.lang.Object,cats.FlatMap)|",
+      "|java+method:///org/atnos/eff/SafeInterpretation/attempt(org.atnos.eff.Eff,org.atnos.eff.MemberInOut)|",
+      "|java+method:///org/atnos/eff/FailedValue/t()|",
+      "|java+method:///org/atnos/eff/FailedFinalizer/t()|",
+      "|java+method:///org/atnos/eff/SafeInterpretation/exception(java.lang.Throwable,org.atnos.eff.MemberIn)|",
+      "|java+method:///scala/util/Right/value()|",
+      "|java+method:///scala/util/Right$/apply(java.lang.Object)|"
+    ],
+    "affectedLib": "org.typelevel:cats-core_2.12.0-RC2:0.8.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.atnos:eff-cats_2.12:2.0.0-RC25",
+    "coordinatesV2": "org.atnos:eff-cats_2.12:2.0.0-RC18",
+    "caller": "|java+method:///org/atnos/eff/Interpret$$anon$4/onEffect(java.lang.Object,org.atnos.eff.Arrs,scala.runtime.BoxedUnit)|",
+    "called": "|java+method:///cats/syntax/EitherOps$/bimap$extension(scala.util.Either,scala.Function1,scala.Function1)|",
+    "v1Body": [
+      "|java+method:///cats/syntax/EitherOps$/bimap$extension(scala.util.Either,scala.Function1,scala.Function1)|",
+      "|java+method:///org/atnos/eff/Interpret$Recurse/apply(java.lang.Object)|",
+      "|java+method:///cats/implicits$/catsSyntaxEither(scala.util.Either)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/atnos/eff/Recurse/apply(java.lang.Object)|",
+      "|java+method:///cats/syntax/EitherOps$/bimap$extension(scala.util.Either,scala.Function1,scala.Function1)|",
+      "|java+method:///cats/implicits$/catsSyntaxEither(scala.util.Either)|"
+    ],
+    "affectedLib": "org.typelevel:cats-core_2.12.0-RC2:0.8.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.atnos:eff-cats_2.12:2.0.0-RC25",
+    "coordinatesV2": "org.atnos:eff-cats_2.12:2.0.0-RC18",
+    "caller": "|java+method:///org/atnos/eff/SafeInterpretation$$anon$2/onApplicativeEffect(java.lang.Object,org.atnos.eff.Arrs,cats.Traverse)|",
+    "called": "|java+method:///cats/data/StateT/run(java.lang.Object,cats.FlatMap)|",
+    "v1Body": [
+      "|java+method:///cats/data/StateT$/catsDataMonadStateForStateT(cats.Monad)|",
+      "|java+method:///org/atnos/eff/Eff/flatMap(scala.Function1)|",
+      "|java+method:///scala/package$/Vector()|",
+      "|java+method:///cats/Eval/value()|",
+      "|java+method:///org/atnos/eff/SafeInterpretation/attempt(org.atnos.eff.Eff,org.atnos.eff.Member)|",
+      "|java+method:///scala/package$/Right()|",
+      "|java+method:///scala/util/Right$/apply(java.lang.Object)|",
+      "|java+constructor:///scala/MatchError/MatchError(java.lang.Object)|",
+      "|java+method:///org/atnos/eff/Arrs/apply(java.lang.Object)|",
+      "|java+method:///scala/collection/immutable/$colon$colon/head()|",
+      "|java+method:///scala/collection/immutable/Vector$/empty()|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///scala/collection/immutable/Vector/toList()|",
+      "|java+method:///scala/Tuple2/_1()|",
+      "|java+method:///scala/Tuple2/_2()|",
+      "|java+method:///scala/package$/Left()|",
+      "|java+method:///cats/data/StateT/run(java.lang.Object,cats.FlatMap)|",
+      "|java+method:///cats/Eval$/catsBimonadForEval()|",
+      "|java+method:///cats/implicits$/toTraverseOps(java.lang.Object,cats.Traverse)|",
+      "|java+method:///org/atnos/eff/FailedValue/t()|",
+      "|java+method:///scala/util/Left$/apply(java.lang.Object)|",
+      "|java+constructor:///scala/Tuple2/Tuple2(java.lang.Object,java.lang.Object)|",
+      "|java+method:///cats/Traverse$Ops/traverse(scala.Function1,cats.Applicative)|"
+    ],
+    "v2Body": [
+      "|java+method:///cats/data/StateT$/catsDataMonadStateForStateT(cats.Monad)|",
+      "|java+method:///org/atnos/eff/Eff/flatMap(scala.Function1)|",
+      "|java+method:///scala/package$/Vector()|",
+      "|java+method:///cats/Eval/value()|",
+      "|java+method:///scala/package$/Right()|",
+      "|java+method:///scala/util/Right$/apply(java.lang.Object)|",
+      "|java+constructor:///scala/MatchError/MatchError(java.lang.Object)|",
+      "|java+method:///org/atnos/eff/Arrs/apply(java.lang.Object)|",
+      "|java+method:///scala/collection/immutable/$colon$colon/head()|",
+      "|java+method:///scala/collection/immutable/Vector$/empty()|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///scala/collection/immutable/Vector/toList()|",
+      "|java+method:///scala/Tuple2/_1()|",
+      "|java+method:///scala/Tuple2/_2()|",
+      "|java+method:///scala/package$/Left()|",
+      "|java+method:///cats/data/StateT/run(java.lang.Object,cats.FlatMap)|",
+      "|java+method:///cats/Eval$/catsBimonadForEval()|",
+      "|java+method:///org/atnos/eff/SafeInterpretation/attempt(org.atnos.eff.Eff,org.atnos.eff.MemberInOut)|",
+      "|java+method:///cats/implicits$/toTraverseOps(java.lang.Object,cats.Traverse)|",
+      "|java+method:///org/atnos/eff/FailedValue/t()|",
+      "|java+method:///scala/util/Left$/apply(java.lang.Object)|",
+      "|java+constructor:///scala/Tuple2/Tuple2(java.lang.Object,java.lang.Object)|",
+      "|java+method:///cats/Traverse$Ops/traverse(scala.Function1,cats.Applicative)|"
+    ],
+    "affectedLib": "org.typelevel:cats-core_2.12.0-RC2:0.8.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.atnos:eff-cats_2.12:2.0.0-RC25",
+    "coordinatesV2": "org.atnos:eff-cats_2.12:2.0.0-RC18",
+    "caller": "|java+method:///org/atnos/eff/Interpret$$anon$5/onEffect(java.lang.Object,org.atnos.eff.Arrs,scala.runtime.BoxedUnit)|",
+    "called": "|java+method:///cats/implicits$/catsSyntaxEither(scala.util.Either)|",
+    "v1Body": [
+      "|java+method:///cats/syntax/EitherOps$/leftMap$extension(scala.util.Either,scala.Function1)|",
+      "|java+method:///org/atnos/eff/Interpret$StatelessLoop/onEffect(java.lang.Object,org.atnos.eff.Arrs)|",
+      "|java+method:///cats/implicits$/catsSyntaxEither(scala.util.Either)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/atnos/eff/StatelessLoop/onEffect(java.lang.Object,org.atnos.eff.Arrs)|",
+      "|java+method:///cats/syntax/EitherOps$/leftMap$extension(scala.util.Either,scala.Function1)|",
+      "|java+method:///cats/implicits$/catsSyntaxEither(scala.util.Either)|"
+    ],
+    "affectedLib": "org.typelevel:cats-core_2.12.0-RC2:0.8.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.atnos:eff-cats_2.12:2.0.0-RC25",
+    "coordinatesV2": "org.atnos:eff-cats_2.12:2.0.0-RC18",
+    "caller": "|java+method:///org/atnos/eff/Interpret$$anon$3/onEffect(java.lang.Object,org.atnos.eff.Arrs,scala.runtime.BoxedUnit)|",
+    "called": "|java+method:///cats/implicits$/catsSyntaxEither(scala.util.Either)|",
+    "v1Body": [
+      "|java+method:///cats/syntax/EitherOps$/leftMap$extension(scala.util.Either,scala.Function1)|",
+      "|java+method:///org/atnos/eff/Interpret$StatelessLoop/onEffect(java.lang.Object,org.atnos.eff.Arrs)|",
+      "|java+method:///cats/implicits$/catsSyntaxEither(scala.util.Either)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/atnos/eff/StatelessLoop/onEffect(java.lang.Object,org.atnos.eff.Arrs)|",
+      "|java+method:///cats/syntax/EitherOps$/leftMap$extension(scala.util.Either,scala.Function1)|",
+      "|java+method:///cats/implicits$/catsSyntaxEither(scala.util.Either)|"
+    ],
+    "affectedLib": "org.typelevel:cats-core_2.12.0-RC2:0.8.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.atnos:eff-cats_2.12:2.0.0-RC25",
+    "coordinatesV2": "org.atnos:eff-cats_2.12:2.0.0-RC18",
+    "caller": "|java+method:///org/atnos/eff/Interpret$$anon$3/onApplicativeEffect(java.lang.Object,org.atnos.eff.Arrs,scala.runtime.BoxedUnit,cats.Traverse)|",
+    "called": "|java+method:///cats/implicits$/catsSyntaxEither(scala.util.Either)|",
+    "v1Body": [
+      "|java+method:///cats/syntax/EitherOps$/leftMap$extension(scala.util.Either,scala.Function1)|",
+      "|java+method:///org/atnos/eff/Interpret$StatelessLoop/onApplicativeEffect(java.lang.Object,org.atnos.eff.Arrs,cats.Traverse)|",
+      "|java+method:///cats/implicits$/catsSyntaxEither(scala.util.Either)|"
+    ],
+    "v2Body": [
+      "|java+method:///cats/syntax/EitherOps$/leftMap$extension(scala.util.Either,scala.Function1)|",
+      "|java+method:///cats/implicits$/catsSyntaxEither(scala.util.Either)|",
+      "|java+method:///org/atnos/eff/StatelessLoop/onApplicativeEffect(java.lang.Object,org.atnos.eff.Arrs,cats.Traverse)|"
+    ],
+    "affectedLib": "org.typelevel:cats-core_2.12.0-RC2:0.8.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.atnos:eff-cats_2.12:2.0.0-RC18",
+    "coordinatesV2": "org.atnos:eff-cats_2.12:2.0.0-RC25",
+    "caller": "|java+method:///org/atnos/eff/Interpret$$anon$3/onPure(java.lang.Object,scala.runtime.BoxedUnit)|",
+    "called": "|java+method:///cats/implicits$/catsSyntaxEither(scala.util.Either)|",
+    "v1Body": [
+      "|java+method:///cats/syntax/EitherOps$/leftMap$extension(scala.util.Either,scala.Function1)|",
+      "|java+method:///cats/implicits$/catsSyntaxEither(scala.util.Either)|",
+      "|java+method:///org/atnos/eff/Interpret$StatelessLoop/onPure(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/atnos/eff/StatelessLoop/onPure(java.lang.Object)|",
+      "|java+method:///cats/syntax/EitherOps$/leftMap$extension(scala.util.Either,scala.Function1)|",
+      "|java+method:///cats/implicits$/catsSyntaxEither(scala.util.Either)|"
+    ],
+    "affectedLib": "org.typelevel:cats-core_2.12:0.8.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.atnos:eff-cats_2.12:2.0.0-RC18",
+    "coordinatesV2": "org.atnos:eff-cats_2.12:2.0.0-RC25",
+    "caller": "|java+method:///org/atnos/eff/ChooseInterpretation/runChoose(org.atnos.eff.Eff,cats.Alternative,org.atnos.eff.Member)|",
+    "called": "|java+method:///cats/syntax/package$cartesian$/catsSyntaxCartesian(java.lang.Object,cats.Cartesian)|",
+    "v1Body": [
+      "|java+method:///org/atnos/eff/Impure/continuation()|",
+      "|java+method:///cats/Alternative$/apply(cats.Alternative)|",
+      "|java+method:///cats/syntax/package$cartesian$/catsSyntaxCartesian(java.lang.Object,cats.Cartesian)|",
+      "|java+method:///org/atnos/eff/Eff$/EffMonad()|",
+      "|java+method:///org/atnos/eff/ChooseInterpretation/runChoose(org.atnos.eff.Eff,cats.Alternative,org.atnos.eff.Member)|",
+      "|java+method:///scala/util/Right/value()|",
+      "|java+method:///cats/Alternative/pure(java.lang.Object)|",
+      "|java+method:///org/atnos/eff/Pure/value()|",
+      "|java+constructor:///org/atnos/eff/Impure/Impure(org.atnos.eff.Union,org.atnos.eff.Arrs)|",
+      "|java+method:///org/atnos/eff/Impure/union()|",
+      "|java+method:///org/atnos/eff/Arrs/apply(java.lang.Object)|",
+      "|java+method:///scala/util/Left/value()|",
+      "|java+method:///org/atnos/eff/ImpureAp/toMonadic()|",
+      "|java+method:///org/atnos/eff/Arrs$/singleton(scala.Function1)|",
+      "|java+method:///scala/runtime/BoxesRunTime/boxToBoolean(boolean)|",
+      "|java+method:///cats/syntax/CartesianBuilder$CartesianBuilder2/map(scala.Function2,cats.Functor,cats.Cartesian)|",
+      "|java+method:///cats/Monad/pure(java.lang.Object)|",
+      "|java+method:///cats/Alternative/empty()|",
+      "|java+method:///cats/syntax/CartesianOps/$bar$at$bar(java.lang.Object)|",
+      "|java+constructor:///scala/MatchError/MatchError(java.lang.Object)|",
+      "|java+method:///org/atnos/eff/Member/project(org.atnos.eff.Union)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/atnos/eff/Impure/last()|",
+      "|java+method:///org/atnos/eff/Impure/continuation()|",
+      "|java+method:///org/atnos/eff/Pure/last()|",
+      "|java+method:///cats/Alternative$/apply(cats.Alternative)|",
+      "|java+method:///org/atnos/eff/Impure$/apply$default$3()|",
+      "|java+method:///org/atnos/eff/Impure/addLast(org.atnos.eff.Last)|",
+      "|java+method:///org/atnos/eff/Eff/addLast(org.atnos.eff.Last)|",
+      "|java+method:///cats/syntax/package$cartesian$/catsSyntaxCartesian(java.lang.Object,cats.Cartesian)|",
+      "|java+method:///org/atnos/eff/Eff$/EffMonad()|",
+      "|java+method:///org/atnos/eff/ChooseInterpretation/runChoose(org.atnos.eff.Eff,cats.Alternative,org.atnos.eff.Member)|",
+      "|java+method:///scala/util/Right/value()|",
+      "|java+method:///cats/Alternative/pure(java.lang.Object)|",
+      "|java+method:///org/atnos/eff/Impure/union()|",
+      "|java+method:///org/atnos/eff/Arrs/apply(java.lang.Object)|",
+      "|java+method:///scala/util/Left/value()|",
+      "|java+method:///org/atnos/eff/ImpureAp/toMonadic()|",
+      "|java+method:///org/atnos/eff/Arrs$/singleton(scala.Function1)|",
+      "|java+method:///scala/runtime/BoxesRunTime/boxToBoolean(boolean)|",
+      "|java+method:///cats/syntax/CartesianBuilder$CartesianBuilder2/map(scala.Function2,cats.Functor,cats.Cartesian)|",
+      "|java+method:///cats/Monad/pure(java.lang.Object)|",
+      "|java+method:///cats/Alternative/empty()|",
+      "|java+method:///cats/syntax/CartesianOps/$bar$at$bar(java.lang.Object)|",
+      "|java+constructor:///scala/MatchError/MatchError(java.lang.Object)|",
+      "|java+constructor:///org/atnos/eff/Impure/Impure(org.atnos.eff.Union,org.atnos.eff.Arrs,org.atnos.eff.Last)|",
+      "|java+method:///org/atnos/eff/Member/project(org.atnos.eff.Union)|",
+      "|java+method:///org/atnos/eff/ChooseInterpretation/lastRun$1(org.atnos.eff.Last,cats.Alternative,org.atnos.eff.Member)|",
+      "|java+method:///org/atnos/eff/Pure/value()|"
+    ],
+    "affectedLib": "org.typelevel:cats-core_2.12:0.8.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.atnos:eff-cats_2.12:2.0.0-RC18",
+    "coordinatesV2": "org.atnos:eff-cats_2.12:2.0.0-RC25",
+    "caller": "|java+method:///org/atnos/eff/Interpret$$anon$1/onEffect(java.lang.Object,org.atnos.eff.Arrs,scala.runtime.BoxedUnit)|",
+    "called": "|java+method:///cats/syntax/EitherOps$/bimap$extension(scala.util.Either,scala.Function1,scala.Function1)|",
+    "v1Body": [
+      "|java+method:///cats/syntax/EitherOps$/bimap$extension(scala.util.Either,scala.Function1,scala.Function1)|",
+      "|java+method:///org/atnos/eff/Interpret$Recurse/apply(java.lang.Object)|",
+      "|java+method:///cats/implicits$/catsSyntaxEither(scala.util.Either)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/atnos/eff/Recurse/apply(java.lang.Object)|",
+      "|java+method:///cats/syntax/EitherOps$/bimap$extension(scala.util.Either,scala.Function1,scala.Function1)|",
+      "|java+method:///cats/implicits$/catsSyntaxEither(scala.util.Either)|"
+    ],
+    "affectedLib": "org.typelevel:cats-core_2.12:0.8.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.atnos:eff-cats_2.12:2.0.0-RC18",
+    "coordinatesV2": "org.atnos:eff-cats_2.12:2.0.0-RC25",
+    "caller": "|java+method:///org/atnos/eff/Interpret$$anon$5/onPure(java.lang.Object,scala.runtime.BoxedUnit)|",
+    "called": "|java+method:///cats/implicits$/catsSyntaxEither(scala.util.Either)|",
+    "v1Body": [
+      "|java+method:///cats/syntax/EitherOps$/leftMap$extension(scala.util.Either,scala.Function1)|",
+      "|java+method:///cats/implicits$/catsSyntaxEither(scala.util.Either)|",
+      "|java+method:///org/atnos/eff/Interpret$StatelessLoop/onPure(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/atnos/eff/StatelessLoop/onPure(java.lang.Object)|",
+      "|java+method:///cats/syntax/EitherOps$/leftMap$extension(scala.util.Either,scala.Function1)|",
+      "|java+method:///cats/implicits$/catsSyntaxEither(scala.util.Either)|"
+    ],
+    "affectedLib": "org.typelevel:cats-core_2.12:0.8.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.atnos:eff-cats_2.12:2.0.0-RC18",
+    "coordinatesV2": "org.atnos:eff-cats_2.12:2.0.0-RC25",
+    "caller": "|java+method:///org/atnos/eff/Interpret$$anon$5/onApplicativeEffect(java.lang.Object,org.atnos.eff.Arrs,scala.runtime.BoxedUnit,cats.Traverse)|",
+    "called": "|java+method:///cats/implicits$/catsSyntaxEither(scala.util.Either)|",
+    "v1Body": [
+      "|java+method:///cats/syntax/EitherOps$/leftMap$extension(scala.util.Either,scala.Function1)|",
+      "|java+method:///org/atnos/eff/Interpret$StatelessLoop/onApplicativeEffect(java.lang.Object,org.atnos.eff.Arrs,cats.Traverse)|",
+      "|java+method:///cats/implicits$/catsSyntaxEither(scala.util.Either)|"
+    ],
+    "v2Body": [
+      "|java+method:///cats/syntax/EitherOps$/leftMap$extension(scala.util.Either,scala.Function1)|",
+      "|java+method:///cats/implicits$/catsSyntaxEither(scala.util.Either)|",
+      "|java+method:///org/atnos/eff/StatelessLoop/onApplicativeEffect(java.lang.Object,org.atnos.eff.Arrs,cats.Traverse)|"
+    ],
+    "affectedLib": "org.typelevel:cats-core_2.12:0.8.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.atnos:eff-cats_2.12:2.0.0-RC18",
+    "coordinatesV2": "org.atnos:eff-cats_2.12:2.0.0-RC25",
+    "caller": "|java+method:///org/atnos/eff/SafeInterpretation$$anon$2/onEffect(org.atnos.eff.Safe,org.atnos.eff.Arrs)|",
+    "called": "|java+method:///cats/syntax/EitherObjectOps$/catchNonFatal$extension(scala.util.Either$,scala.Function0)|",
+    "v1Body": [
+      "|java+method:///org/atnos/eff/EvaluateValue/a()|",
+      "|java+method:///cats/implicits$/catsSyntaxEitherObject(scala.util.Either$)|",
+      "|java+method:///org/atnos/eff/SafeInterpretation/attempt(org.atnos.eff.Eff,org.atnos.eff.Member)|",
+      "|java+method:///scala/package$/Right()|",
+      "|java+method:///org/atnos/eff/Eff$/EffMonad()|",
+      "|java+constructor:///scala/MatchError/MatchError(java.lang.Object)|",
+      "|java+method:///org/atnos/eff/Arrs/apply(java.lang.Object)|",
+      "|java+method:///scala/util/Left$/apply(java.lang.Object)|",
+      "|java+method:///cats/FlatMap$Ops/$greater$greater(java.lang.Object)|",
+      "|java+method:///org/atnos/eff/Eff/flatMap(scala.Function1)|",
+      "|java+method:///scala/util/Left/value()|",
+      "|java+method:///scala/package$/Either()|",
+      "|java+method:///cats/syntax/EitherObjectOps$/catchNonFatal$extension(scala.util.Either$,scala.Function0)|",
+      "|java+method:///org/atnos/eff/SafeInterpretation/finalizerException(java.lang.Throwable,org.atnos.eff.MemberIn)|",
+      "|java+method:///scala/package$/Left()|",
+      "|java+method:///cats/implicits$/toFlatMapOps(java.lang.Object,cats.FlatMap)|",
+      "|java+method:///org/atnos/eff/FailedValue/t()|",
+      "|java+method:///org/atnos/eff/FailedFinalizer/t()|",
+      "|java+method:///org/atnos/eff/SafeInterpretation/exception(java.lang.Throwable,org.atnos.eff.MemberIn)|",
+      "|java+method:///scala/util/Right/value()|",
+      "|java+method:///scala/util/Right$/apply(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/atnos/eff/EvaluateValue/a()|",
+      "|java+method:///cats/implicits$/catsSyntaxEitherObject(scala.util.Either$)|",
+      "|java+method:///scala/package$/Right()|",
+      "|java+method:///org/atnos/eff/Eff$/EffMonad()|",
+      "|java+constructor:///scala/MatchError/MatchError(java.lang.Object)|",
+      "|java+method:///org/atnos/eff/Arrs/apply(java.lang.Object)|",
+      "|java+method:///scala/util/Left$/apply(java.lang.Object)|",
+      "|java+method:///cats/FlatMap$Ops/$greater$greater(java.lang.Object)|",
+      "|java+method:///org/atnos/eff/Eff/flatMap(scala.Function1)|",
+      "|java+method:///scala/util/Left/value()|",
+      "|java+method:///scala/package$/Either()|",
+      "|java+method:///cats/syntax/EitherObjectOps$/catchNonFatal$extension(scala.util.Either$,scala.Function0)|",
+      "|java+method:///org/atnos/eff/SafeInterpretation/finalizerException(java.lang.Throwable,org.atnos.eff.MemberIn)|",
+      "|java+method:///scala/package$/Left()|",
+      "|java+method:///cats/implicits$/toFlatMapOps(java.lang.Object,cats.FlatMap)|",
+      "|java+method:///org/atnos/eff/SafeInterpretation/attempt(org.atnos.eff.Eff,org.atnos.eff.MemberInOut)|",
+      "|java+method:///org/atnos/eff/FailedValue/t()|",
+      "|java+method:///org/atnos/eff/FailedFinalizer/t()|",
+      "|java+method:///org/atnos/eff/SafeInterpretation/exception(java.lang.Throwable,org.atnos.eff.MemberIn)|",
+      "|java+method:///scala/util/Right/value()|",
+      "|java+method:///scala/util/Right$/apply(java.lang.Object)|"
+    ],
+    "affectedLib": "org.typelevel:cats-core_2.12:0.8.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.atnos:eff-cats_2.12:2.0.0-RC18",
+    "coordinatesV2": "org.atnos:eff-cats_2.12:2.0.0-RC25",
+    "caller": "|java+method:///org/atnos/eff/Interpret$$anon$4/onEffect(java.lang.Object,org.atnos.eff.Arrs,scala.runtime.BoxedUnit)|",
+    "called": "|java+method:///cats/syntax/EitherOps$/bimap$extension(scala.util.Either,scala.Function1,scala.Function1)|",
+    "v1Body": [
+      "|java+method:///cats/syntax/EitherOps$/bimap$extension(scala.util.Either,scala.Function1,scala.Function1)|",
+      "|java+method:///org/atnos/eff/Interpret$Recurse/apply(java.lang.Object)|",
+      "|java+method:///cats/implicits$/catsSyntaxEither(scala.util.Either)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/atnos/eff/Recurse/apply(java.lang.Object)|",
+      "|java+method:///cats/syntax/EitherOps$/bimap$extension(scala.util.Either,scala.Function1,scala.Function1)|",
+      "|java+method:///cats/implicits$/catsSyntaxEither(scala.util.Either)|"
+    ],
+    "affectedLib": "org.typelevel:cats-core_2.12:0.8.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.atnos:eff-cats_2.12:2.0.0-RC18",
+    "coordinatesV2": "org.atnos:eff-cats_2.12:2.0.0-RC25",
+    "caller": "|java+method:///org/atnos/eff/SafeInterpretation$$anon$2/onApplicativeEffect(java.lang.Object,org.atnos.eff.Arrs,cats.Traverse)|",
+    "called": "|java+method:///cats/Traverse$Ops/traverse(scala.Function1,cats.Applicative)|",
+    "v1Body": [
+      "|java+method:///cats/data/StateT$/catsDataMonadStateForStateT(cats.Monad)|",
+      "|java+method:///org/atnos/eff/Eff/flatMap(scala.Function1)|",
+      "|java+method:///scala/package$/Vector()|",
+      "|java+method:///cats/Eval/value()|",
+      "|java+method:///org/atnos/eff/SafeInterpretation/attempt(org.atnos.eff.Eff,org.atnos.eff.Member)|",
+      "|java+method:///scala/package$/Right()|",
+      "|java+method:///scala/util/Right$/apply(java.lang.Object)|",
+      "|java+constructor:///scala/MatchError/MatchError(java.lang.Object)|",
+      "|java+method:///org/atnos/eff/Arrs/apply(java.lang.Object)|",
+      "|java+method:///scala/collection/immutable/$colon$colon/head()|",
+      "|java+method:///scala/collection/immutable/Vector$/empty()|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///scala/collection/immutable/Vector/toList()|",
+      "|java+method:///scala/Tuple2/_1()|",
+      "|java+method:///scala/Tuple2/_2()|",
+      "|java+method:///scala/package$/Left()|",
+      "|java+method:///cats/data/StateT/run(java.lang.Object,cats.FlatMap)|",
+      "|java+method:///cats/Eval$/catsBimonadForEval()|",
+      "|java+method:///cats/implicits$/toTraverseOps(java.lang.Object,cats.Traverse)|",
+      "|java+method:///org/atnos/eff/FailedValue/t()|",
+      "|java+method:///scala/util/Left$/apply(java.lang.Object)|",
+      "|java+constructor:///scala/Tuple2/Tuple2(java.lang.Object,java.lang.Object)|",
+      "|java+method:///cats/Traverse$Ops/traverse(scala.Function1,cats.Applicative)|"
+    ],
+    "v2Body": [
+      "|java+method:///cats/data/StateT$/catsDataMonadStateForStateT(cats.Monad)|",
+      "|java+method:///org/atnos/eff/Eff/flatMap(scala.Function1)|",
+      "|java+method:///scala/package$/Vector()|",
+      "|java+method:///cats/Eval/value()|",
+      "|java+method:///scala/package$/Right()|",
+      "|java+method:///scala/util/Right$/apply(java.lang.Object)|",
+      "|java+constructor:///scala/MatchError/MatchError(java.lang.Object)|",
+      "|java+method:///org/atnos/eff/Arrs/apply(java.lang.Object)|",
+      "|java+method:///scala/collection/immutable/$colon$colon/head()|",
+      "|java+method:///scala/collection/immutable/Vector$/empty()|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///scala/collection/immutable/Vector/toList()|",
+      "|java+method:///scala/Tuple2/_1()|",
+      "|java+method:///scala/Tuple2/_2()|",
+      "|java+method:///scala/package$/Left()|",
+      "|java+method:///cats/data/StateT/run(java.lang.Object,cats.FlatMap)|",
+      "|java+method:///cats/Eval$/catsBimonadForEval()|",
+      "|java+method:///org/atnos/eff/SafeInterpretation/attempt(org.atnos.eff.Eff,org.atnos.eff.MemberInOut)|",
+      "|java+method:///cats/implicits$/toTraverseOps(java.lang.Object,cats.Traverse)|",
+      "|java+method:///org/atnos/eff/FailedValue/t()|",
+      "|java+method:///scala/util/Left$/apply(java.lang.Object)|",
+      "|java+constructor:///scala/Tuple2/Tuple2(java.lang.Object,java.lang.Object)|",
+      "|java+method:///cats/Traverse$Ops/traverse(scala.Function1,cats.Applicative)|"
+    ],
+    "affectedLib": "org.typelevel:cats-core_2.12:0.8.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.atnos:eff-cats_2.12:2.0.0-RC18",
+    "coordinatesV2": "org.atnos:eff-cats_2.12:2.0.0-RC25",
+    "caller": "|java+method:///org/atnos/eff/Interpret$$anon$5/onEffect(java.lang.Object,org.atnos.eff.Arrs,scala.runtime.BoxedUnit)|",
+    "called": "|java+method:///cats/implicits$/catsSyntaxEither(scala.util.Either)|",
+    "v1Body": [
+      "|java+method:///cats/syntax/EitherOps$/leftMap$extension(scala.util.Either,scala.Function1)|",
+      "|java+method:///org/atnos/eff/Interpret$StatelessLoop/onEffect(java.lang.Object,org.atnos.eff.Arrs)|",
+      "|java+method:///cats/implicits$/catsSyntaxEither(scala.util.Either)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/atnos/eff/StatelessLoop/onEffect(java.lang.Object,org.atnos.eff.Arrs)|",
+      "|java+method:///cats/syntax/EitherOps$/leftMap$extension(scala.util.Either,scala.Function1)|",
+      "|java+method:///cats/implicits$/catsSyntaxEither(scala.util.Either)|"
+    ],
+    "affectedLib": "org.typelevel:cats-core_2.12:0.8.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.atnos:eff-cats_2.12:2.0.0-RC18",
+    "coordinatesV2": "org.atnos:eff-cats_2.12:2.0.0-RC25",
+    "caller": "|java+method:///org/atnos/eff/Interpret$$anon$3/onEffect(java.lang.Object,org.atnos.eff.Arrs,scala.runtime.BoxedUnit)|",
+    "called": "|java+method:///cats/implicits$/catsSyntaxEither(scala.util.Either)|",
+    "v1Body": [
+      "|java+method:///cats/syntax/EitherOps$/leftMap$extension(scala.util.Either,scala.Function1)|",
+      "|java+method:///org/atnos/eff/Interpret$StatelessLoop/onEffect(java.lang.Object,org.atnos.eff.Arrs)|",
+      "|java+method:///cats/implicits$/catsSyntaxEither(scala.util.Either)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/atnos/eff/StatelessLoop/onEffect(java.lang.Object,org.atnos.eff.Arrs)|",
+      "|java+method:///cats/syntax/EitherOps$/leftMap$extension(scala.util.Either,scala.Function1)|",
+      "|java+method:///cats/implicits$/catsSyntaxEither(scala.util.Either)|"
+    ],
+    "affectedLib": "org.typelevel:cats-core_2.12:0.8.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.atnos:eff-cats_2.12:2.0.0-RC18",
+    "coordinatesV2": "org.atnos:eff-cats_2.12:2.0.0-RC25",
+    "caller": "|java+method:///org/atnos/eff/EvalInterpretation$$anon$1/apply(cats.Eval)|",
+    "called": "|java+method:///cats/implicits$/catsSyntaxEitherObject(scala.util.Either$)|",
+    "v1Body": [
+      "|java+method:///scala/package$/Left()|",
+      "|java+method:///cats/Eval/value()|",
+      "|java+method:///scala/util/Left$/apply(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///cats/syntax/EitherObjectOps$/left$extension(scala.util.Either$,java.lang.Object)|",
+      "|java+method:///scala/package$/Either()|",
+      "|java+method:///cats/implicits$/catsSyntaxEitherObject(scala.util.Either$)|",
+      "|java+method:///cats/Eval/value()|"
+    ],
+    "affectedLib": "org.typelevel:cats-core_2.12:0.8.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.atnos:eff-cats_2.12:2.0.0-RC18",
+    "coordinatesV2": "org.atnos:eff-cats_2.12:2.0.0-RC25",
+    "caller": "|java+method:///org/atnos/eff/Interpret$$anon$7/apply(java.lang.Object)|",
+    "called": "|java+method:///cats/implicits$/toFlatMapOps(java.lang.Object,cats.FlatMap)|",
+    "v1Body": [
+      "|java+method:///org/atnos/eff/Interpret$SideEffect/apply(java.lang.Object)|",
+      "|java+method:///scala/package$/Left()|",
+      "|java+method:///scala/util/Left$/apply(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///cats/implicits$/toFlatMapOps(java.lang.Object,cats.FlatMap)|",
+      "|java+method:///org/atnos/eff/Eff$/EffMonad()|",
+      "|java+method:///org/atnos/eff/Augment/apply(java.lang.Object)|",
+      "|java+method:///org/atnos/eff/Eff$/send(java.lang.Object,org.atnos.eff.MemberIn)|",
+      "|java+method:///cats/FlatMap$Ops/$greater$greater(java.lang.Object)|",
+      "|java+method:///org/atnos/eff/MemberIn$/MemberInAppendR(org.atnos.eff.MemberIn)|",
+      "|java+method:///org/atnos/eff/MemberIn$/MemberIn1()|",
+      "|java+method:///org/atnos/eff/MemberIn$/MemberInAppendL(org.atnos.eff.MemberIn)|"
+    ],
+    "affectedLib": "org.typelevel:cats-core_2.12:0.8.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.atnos:eff-cats_2.12:2.0.0-RC18",
+    "coordinatesV2": "org.atnos:eff-cats_2.12:2.0.0-RC25",
+    "caller": "|java+method:///org/atnos/eff/Interpret$$anon$3/onApplicativeEffect(java.lang.Object,org.atnos.eff.Arrs,scala.runtime.BoxedUnit,cats.Traverse)|",
+    "called": "|java+method:///cats/implicits$/catsSyntaxEither(scala.util.Either)|",
+    "v1Body": [
+      "|java+method:///cats/syntax/EitherOps$/leftMap$extension(scala.util.Either,scala.Function1)|",
+      "|java+method:///org/atnos/eff/Interpret$StatelessLoop/onApplicativeEffect(java.lang.Object,org.atnos.eff.Arrs,cats.Traverse)|",
+      "|java+method:///cats/implicits$/catsSyntaxEither(scala.util.Either)|"
+    ],
+    "v2Body": [
+      "|java+method:///cats/syntax/EitherOps$/leftMap$extension(scala.util.Either,scala.Function1)|",
+      "|java+method:///cats/implicits$/catsSyntaxEither(scala.util.Either)|",
+      "|java+method:///org/atnos/eff/StatelessLoop/onApplicativeEffect(java.lang.Object,org.atnos.eff.Arrs,cats.Traverse)|"
+    ],
+    "affectedLib": "org.typelevel:cats-core_2.12:0.8.1",
+    "change": "ADDED"
+  }
+]

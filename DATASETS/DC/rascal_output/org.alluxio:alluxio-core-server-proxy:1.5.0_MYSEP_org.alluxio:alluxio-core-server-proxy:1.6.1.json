@@ -1,0 +1,78 @@
+[
+  {
+    "coordinatesV1": "org.alluxio:alluxio-core-server-proxy:1.5.0",
+    "coordinatesV2": "org.alluxio:alluxio-core-server-proxy:1.6.1",
+    "caller": "|java+method:///alluxio/proxy/AlluxioProxyProcess/waitForReady()|",
+    "called": "|java+method:///alluxio/util/WaitForOptions/defaults()|",
+    "v1Body": [
+      "|java+method:///alluxio/util/WaitForOptions/setTimeout(int)|",
+      "|java+method:///alluxio/util/CommonUtils/waitFor(java.lang.String,com.google.common.base.Function,alluxio.util.WaitForOptions)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///alluxio/util/WaitForOptions/defaults()|",
+      "|java+constructor:///alluxio/proxy/AlluxioProxyProcess$1/AlluxioProxyProcess$1(alluxio.proxy.AlluxioProxyProcess)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///alluxio/util/CommonUtils/waitFor(java.lang.String,com.google.common.base.Function,alluxio.util.WaitForOptions)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///alluxio/util/WaitForOptions/defaults()|",
+      "|java+constructor:///alluxio/proxy/AlluxioProxyProcess$1/AlluxioProxyProcess$1(alluxio.proxy.AlluxioProxyProcess)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///alluxio/util/WaitForOptions/setTimeoutMs(int)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.alluxio:alluxio-core-common:1.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.alluxio:alluxio-core-server-proxy:1.5.0",
+    "coordinatesV2": "org.alluxio:alluxio-core-server-proxy:1.6.1",
+    "caller": "|java+method:///alluxio/web/ProxyWebServer$1/init()|",
+    "called": "|java+method:///alluxio/Configuration/getMs(alluxio.PropertyKey)|",
+    "v1Body": [
+      "|java+method:///alluxio/web/ProxyWebServer$1/getServletContext()|",
+      "|java+method:///alluxio/client/file/FileSystem$Factory/get()|",
+      "|java+method:///alluxio/Configuration/getLong(alluxio.PropertyKey)|",
+      "|java+method:///javax/servlet/ServletContext/setAttribute(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///alluxio/StreamCache/StreamCache(long)|",
+      "|java+method:///org/glassfish/jersey/servlet/ServletContainer/init()|"
+    ],
+    "v2Body": [
+      "|java+method:///alluxio/web/ProxyWebServer$1/getServletContext()|",
+      "|java+method:///javax/servlet/ServletContext/setAttribute(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///alluxio/StreamCache/StreamCache(long)|",
+      "|java+method:///org/glassfish/jersey/servlet/ServletContainer/init()|",
+      "|java+method:///alluxio/client/file/FileSystem$Factory/get()|",
+      "|java+method:///alluxio/Configuration/getMs(alluxio.PropertyKey)|"
+    ],
+    "affectedLib": "org.alluxio:alluxio-core-common:1.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.alluxio:alluxio-core-server-proxy:1.5.0",
+    "coordinatesV2": "org.alluxio:alluxio-core-server-proxy:1.6.1",
+    "caller": "|java+method:///alluxio/web/ProxyWebServer$1/init()|",
+    "called": "|java+method:///alluxio/client/file/FileSystem$Factory/get()|",
+    "v1Body": [
+      "|java+method:///alluxio/web/ProxyWebServer$1/getServletContext()|",
+      "|java+method:///alluxio/client/file/FileSystem$Factory/get()|",
+      "|java+method:///alluxio/Configuration/getLong(alluxio.PropertyKey)|",
+      "|java+method:///javax/servlet/ServletContext/setAttribute(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///alluxio/StreamCache/StreamCache(long)|",
+      "|java+method:///org/glassfish/jersey/servlet/ServletContainer/init()|"
+    ],
+    "v2Body": [
+      "|java+method:///alluxio/web/ProxyWebServer$1/getServletContext()|",
+      "|java+method:///javax/servlet/ServletContext/setAttribute(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///alluxio/StreamCache/StreamCache(long)|",
+      "|java+method:///org/glassfish/jersey/servlet/ServletContainer/init()|",
+      "|java+method:///alluxio/client/file/FileSystem$Factory/get()|",
+      "|java+method:///alluxio/Configuration/getMs(alluxio.PropertyKey)|"
+    ],
+    "affectedLib": "org.alluxio:alluxio-core-client-fs:1.6.1",
+    "change": "UPDATED"
+  }
+]

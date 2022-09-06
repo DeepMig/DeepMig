@@ -1,0 +1,33 @@
+[
+  {
+    "coordinatesV1": "org.sonatype.nexus:nexus-api:1.9.2.4",
+    "coordinatesV2": "org.sonatype.nexus:nexus-api:2.0",
+    "caller": "|java+method:///org/sonatype/nexus/proxy/item/AbstractStorageItem/setPath(java.lang.String)|",
+    "called": "|java+method:///org/sonatype/nexus/util/ItemPathUtils/cleanUpTrailingSlash(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/sonatype/nexus/util/ItemPathUtils/cleanUpTrailingSlash(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonatype/nexus/util/ItemPathUtils/cleanUpTrailingSlash(java.lang.String)|",
+      "|java+method:///org/sonatype/nexus/proxy/attributes/Attributes/setPath(java.lang.String)|",
+      "|java+method:///org/sonatype/nexus/proxy/item/AbstractStorageItem/getRepositoryItemAttributes()|"
+    ],
+    "affectedLib": "org.sonatype.nexus:nexus-utils:2.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.nexus:nexus-api:1.9.2.4",
+    "coordinatesV2": "org.sonatype.nexus:nexus-api:2.0",
+    "caller": "|java+constructor:///org/sonatype/nexus/proxy/events/RepositoryEvent/RepositoryEvent(org.sonatype.nexus.proxy.repository.Repository)|",
+    "called": "|java+constructor:///org/sonatype/plexus/appevents/AbstractEvent/AbstractEvent(java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///org/sonatype/plexus/appevents/AbstractEvent/AbstractEvent(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+      "|java+constructor:///org/sonatype/plexus/appevents/AbstractEvent/AbstractEvent(java.lang.Object)|"
+    ],
+    "affectedLib": "org.sonatype.plexus.appevents:plexus-app-events-api:1.0.1",
+    "change": "UPDATED"
+  }
+]

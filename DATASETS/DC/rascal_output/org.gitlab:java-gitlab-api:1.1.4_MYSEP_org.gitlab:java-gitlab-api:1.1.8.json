@@ -1,0 +1,188 @@
+[
+  {
+    "coordinatesV1": "org.gitlab:java-gitlab-api:1.1.8",
+    "coordinatesV2": "org.gitlab:java-gitlab-api:1.1.4",
+    "caller": "|java+method:///org/gitlab/api/http/GitlabHTTPRequestor/parse(java.net.HttpURLConnection,java.lang.Class,java.lang.Object)|",
+    "called": "|java+method:///org/codehaus/jackson/map/ObjectMapper/readerForUpdating(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/gitlab/api/http/GitlabHTTPRequestor/wrapStream(java.net.HttpURLConnection,java.io.InputStream)|",
+      "|java+method:///javax/net/ssl/SSLHandshakeException/getMessage()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///javax/net/ssl/SSLHandshakeException/SSLHandshakeException(java.lang.String)|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream,java.lang.String)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/readerForUpdating(java.lang.Object)|",
+      "|java+method:///org/apache/commons/io/IOUtils/toString(java.io.Reader)|",
+      "|java+method:///java/net/HttpURLConnection/getInputStream()|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.Reader)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectReader/readValue(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectReader/readValue(java.lang.String)|",
+      "|java+method:///javax/net/ssl/SSLHandshakeException/getMessage()|",
+      "|java+constructor:///javax/net/ssl/SSLHandshakeException/SSLHandshakeException(java.lang.String)|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream,java.lang.String)|",
+      "|java+method:///org/apache/commons/io/IOUtils/toString(java.io.Reader)|",
+      "|java+method:///java/net/HttpURLConnection/getInputStream()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/gitlab/api/http/GitlabHTTPRequestor/wrapStream(java.net.HttpURLConnection,java.io.InputStream)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readerForUpdating(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.Reader)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.9",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.gitlab:java-gitlab-api:1.1.8",
+    "coordinatesV2": "org.gitlab:java-gitlab-api:1.1.4",
+    "caller": "|java+initializer:///org/gitlab/api/GitlabAPI/GitlabAPI$initializer|",
+    "called": "|java+method:///org/codehaus/jackson/map/ObjectMapper/configure(org.codehaus.jackson.map.DeserializationConfig$Feature,boolean)|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/configure(org.codehaus.jackson.map.DeserializationConfig$Feature,boolean)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/configure(com.fasterxml.jackson.databind.DeserializationFeature,boolean)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.9",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.gitlab:java-gitlab-api:1.1.8",
+    "coordinatesV2": "org.gitlab:java-gitlab-api:1.1.4",
+    "caller": "|java+method:///org/gitlab/api/http/GitlabHTTPRequestor/submitData(java.net.HttpURLConnection)|",
+    "called": "|java+method:///org/codehaus/jackson/map/ObjectMapper/writeValue(java.io.OutputStream,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/net/HttpURLConnection/getOutputStream()|",
+      "|java+method:///java/net/HttpURLConnection/setRequestProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/writeValue(java.io.OutputStream,java.lang.Object)|",
+      "|java+method:///java/net/HttpURLConnection/setDoOutput(boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValue(java.io.OutputStream,java.lang.Object)|",
+      "|java+method:///java/net/HttpURLConnection/getOutputStream()|",
+      "|java+method:///java/net/HttpURLConnection/setRequestProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///java/net/HttpURLConnection/setDoOutput(boolean)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.9",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.gitlab:java-gitlab-api:1.1.4",
+    "coordinatesV2": "org.gitlab:java-gitlab-api:1.1.8",
+    "caller": "|java+method:///org/gitlab/api/http/GitlabHTTPRequestor/parse(java.net.HttpURLConnection,java.lang.Class,java.lang.Object)|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readerForUpdating(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/gitlab/api/http/GitlabHTTPRequestor/wrapStream(java.net.HttpURLConnection,java.io.InputStream)|",
+      "|java+method:///javax/net/ssl/SSLHandshakeException/getMessage()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///javax/net/ssl/SSLHandshakeException/SSLHandshakeException(java.lang.String)|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream,java.lang.String)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/readerForUpdating(java.lang.Object)|",
+      "|java+method:///org/apache/commons/io/IOUtils/toString(java.io.Reader)|",
+      "|java+method:///java/net/HttpURLConnection/getInputStream()|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.Reader)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectReader/readValue(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectReader/readValue(java.lang.String)|",
+      "|java+method:///javax/net/ssl/SSLHandshakeException/getMessage()|",
+      "|java+constructor:///javax/net/ssl/SSLHandshakeException/SSLHandshakeException(java.lang.String)|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream,java.lang.String)|",
+      "|java+method:///org/apache/commons/io/IOUtils/toString(java.io.Reader)|",
+      "|java+method:///java/net/HttpURLConnection/getInputStream()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/gitlab/api/http/GitlabHTTPRequestor/wrapStream(java.net.HttpURLConnection,java.io.InputStream)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readerForUpdating(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.Reader)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.5.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.gitlab:java-gitlab-api:1.1.4",
+    "coordinatesV2": "org.gitlab:java-gitlab-api:1.1.8",
+    "caller": "|java+initializer:///org/gitlab/api/GitlabAPI/GitlabAPI$initializer|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/configure(com.fasterxml.jackson.databind.DeserializationFeature,boolean)|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/configure(org.codehaus.jackson.map.DeserializationConfig$Feature,boolean)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/configure(com.fasterxml.jackson.databind.DeserializationFeature,boolean)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.5.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.gitlab:java-gitlab-api:1.1.4",
+    "coordinatesV2": "org.gitlab:java-gitlab-api:1.1.8",
+    "caller": "|java+method:///org/gitlab/api/http/GitlabHTTPRequestor/submitData(java.net.HttpURLConnection)|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValue(java.io.OutputStream,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/net/HttpURLConnection/getOutputStream()|",
+      "|java+method:///java/net/HttpURLConnection/setRequestProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/writeValue(java.io.OutputStream,java.lang.Object)|",
+      "|java+method:///java/net/HttpURLConnection/setDoOutput(boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValue(java.io.OutputStream,java.lang.Object)|",
+      "|java+method:///java/net/HttpURLConnection/getOutputStream()|",
+      "|java+method:///java/net/HttpURLConnection/setRequestProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///java/net/HttpURLConnection/setDoOutput(boolean)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.5.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.gitlab:java-gitlab-api:1.1.4",
+    "coordinatesV2": "org.gitlab:java-gitlab-api:1.1.8",
+    "caller": "|java+method:///org/gitlab/api/http/GitlabHTTPRequestor/parse(java.net.HttpURLConnection,java.lang.Class,java.lang.Object)|",
+    "called": "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.Reader)|",
+    "v1Body": [
+      "|java+method:///org/gitlab/api/http/GitlabHTTPRequestor/wrapStream(java.net.HttpURLConnection,java.io.InputStream)|",
+      "|java+method:///javax/net/ssl/SSLHandshakeException/getMessage()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///javax/net/ssl/SSLHandshakeException/SSLHandshakeException(java.lang.String)|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream,java.lang.String)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/readerForUpdating(java.lang.Object)|",
+      "|java+method:///org/apache/commons/io/IOUtils/toString(java.io.Reader)|",
+      "|java+method:///java/net/HttpURLConnection/getInputStream()|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.Reader)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectReader/readValue(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectReader/readValue(java.lang.String)|",
+      "|java+method:///javax/net/ssl/SSLHandshakeException/getMessage()|",
+      "|java+constructor:///javax/net/ssl/SSLHandshakeException/SSLHandshakeException(java.lang.String)|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream,java.lang.String)|",
+      "|java+method:///org/apache/commons/io/IOUtils/toString(java.io.Reader)|",
+      "|java+method:///java/net/HttpURLConnection/getInputStream()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/gitlab/api/http/GitlabHTTPRequestor/wrapStream(java.net.HttpURLConnection,java.io.InputStream)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readerForUpdating(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.Reader)|"
+    ],
+    "affectedLib": "commons-io:commons-io:2.4",
+    "change": "UPDATED"
+  }
+]

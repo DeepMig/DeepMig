@@ -1,0 +1,76 @@
+[
+  {
+    "coordinatesV1": "org.solovyev:common-msg:1.0.3",
+    "coordinatesV2": "org.solovyev:common-msg:1.0.4",
+    "caller": "|java+method:///org/solovyev/common/msg/AbstractMessage/getLocalizedMessage(java.util.Locale)|",
+    "called": "|java+method:///org/solovyev/common/text/Strings/isEmpty(java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+method:///java/text/MessageFormat/format(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/solovyev/common/msg/MessageType/getStringValue()|",
+      "|java+method:///java/text/MessageFormat/setLocale(java.util.Locale)|",
+      "|java+method:///org/solovyev/common/collections/CollectionsUtils/isEmpty(java.util.Collection)|",
+      "|java+method:///org/solovyev/common/msg/AbstractMessage/prepareParameters(java.util.List,java.util.Locale)|",
+      "|java+method:///java/text/MessageFormat/applyPattern(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/solovyev/common/text/StringUtils/isEmpty(java.lang.CharSequence)|",
+      "|java+method:///org/solovyev/common/text/StringUtils/getNotEmpty(java.lang.CharSequence,java.lang.String)|",
+      "|java+method:///org/solovyev/common/msg/AbstractMessage/getMessagePattern(java.util.Locale)|",
+      "|java+constructor:///java/text/MessageFormat/MessageFormat(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/solovyev/common/msg/MessageLevel/getName()|",
+      "|java+method:///org/solovyev/common/msg/Messages/prepareMessage(java.util.Locale,java.lang.String,java.util.List)|",
+      "|java+method:///org/solovyev/common/text/Strings/getNotEmpty(java.lang.CharSequence,java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/solovyev/common/text/Strings/isEmpty(java.lang.CharSequence)|",
+      "|java+method:///org/solovyev/common/msg/AbstractMessage/getMessagePattern(java.util.Locale)|"
+    ],
+    "affectedLib": "org.solovyev:common-core:1.0.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.solovyev:common-msg:1.0.3",
+    "coordinatesV2": "org.solovyev:common-msg:1.0.4",
+    "caller": "|java+method:///org/solovyev/common/msg/AbstractMessage/equals(java.lang.Object)|",
+    "called": "|java+method:///org/solovyev/common/Objects/areEqual(java.lang.Object,java.lang.Object,org.solovyev.common.equals.Equalizer)|",
+    "v1Body": [
+      "|java+method:///org/solovyev/common/equals/EqualsTool/areEqual(java.lang.Object,java.lang.Object,org.solovyev.common.equals.Equalizer)|",
+      "|java+constructor:///org/solovyev/common/equals/ListEqualizer/ListEqualizer(boolean,org.solovyev.common.equals.Equalizer)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///org/solovyev/common/equals/ListEqualizer/newWithNaturalEquals(boolean)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/solovyev/common/Objects/areEqual(java.lang.Object,java.lang.Object,org.solovyev.common.equals.Equalizer)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "org.solovyev:common-core:1.0.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.solovyev:common-msg:1.0.3",
+    "coordinatesV2": "org.solovyev:common-msg:1.0.4",
+    "caller": "|java+method:///org/solovyev/common/msg/AbstractMessage/hashCode()|",
+    "called": "|java+method:///org/solovyev/common/HashCodeBuilder/newInstance()|",
+    "v1Body": [
+      "|java+constructor:///org/solovyev/common/HashCodeBuilder/HashCodeBuilder()|",
+      "|java+method:///org/solovyev/common/HashCodeBuilder/append(java.lang.Object)|",
+      "|java+method:///org/solovyev/common/HashCodeBuilder/toHashCode()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/solovyev/common/HashCodeBuilder/append(java.lang.Object)|",
+      "|java+method:///org/solovyev/common/HashCodeBuilder/newInstance()|",
+      "|java+method:///org/solovyev/common/HashCodeBuilder/toHashCode()|"
+    ],
+    "affectedLib": "org.solovyev:common-core:1.0.4",
+    "change": "UPDATED"
+  }
+]

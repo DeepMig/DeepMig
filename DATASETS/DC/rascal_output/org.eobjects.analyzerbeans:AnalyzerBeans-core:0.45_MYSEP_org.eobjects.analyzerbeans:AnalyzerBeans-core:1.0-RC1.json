@@ -1,0 +1,642 @@
+[
+  {
+    "coordinatesV1": "org.eobjects.analyzerbeans:AnalyzerBeans-core:1.0-RC1",
+    "coordinatesV2": "org.eobjects.analyzerbeans:AnalyzerBeans-core:0.45",
+    "caller": "|java+method:///org/eobjects/analyzer/connection/SasDatastore/createDatastoreConnection()|",
+    "called": "|java+constructor:///org/eobjects/sassy/metamodel/SasDataContext/SasDataContext(java.io.File)|",
+    "v1Body": [
+      "|java+constructor:///org/eobjects/analyzer/connection/DatastoreConnectionImpl/DatastoreConnectionImpl(org.eobjects.metamodel.DataContext,org.eobjects.analyzer.connection.Datastore,java.io.Closeable%5B%5D)|",
+      "|java+constructor:///org/eobjects/sassy/metamodel/SasDataContext/SasDataContext(java.io.File)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/eobjects/metamodel/sas/metamodel/SasDataContext/SasDataContext(java.io.File)|",
+      "|java+constructor:///org/eobjects/analyzer/connection/DatastoreConnectionImpl/DatastoreConnectionImpl(org.apache.metamodel.DataContext,org.eobjects.analyzer.connection.Datastore,java.io.Closeable%5B%5D)|"
+    ],
+    "affectedLib": "org.eobjects.sassyreader:SassyReader:0.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eobjects.analyzerbeans:AnalyzerBeans-core:1.0-RC1",
+    "coordinatesV2": "org.eobjects.analyzerbeans:AnalyzerBeans-core:0.45",
+    "caller": "|java+method:///org/eobjects/analyzer/connection/CompositeDatastore/createDatastoreConnection()|",
+    "called": "|java+method:///org/eobjects/metamodel/DataContextFactory/createCompositeDataContext(java.util.Collection)|",
+    "v1Body": [
+      "|java+method:///org/eobjects/metamodel/DataContextFactory/createCompositeDataContext(java.util.Collection)|",
+      "|java+method:///org/eobjects/analyzer/connection/DatastoreConnection/getDataContext()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(int)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///org/eobjects/analyzer/connection/DatastoreConnectionImpl/DatastoreConnectionImpl(org.eobjects.metamodel.DataContext,org.eobjects.analyzer.connection.Datastore,java.io.Closeable%5B%5D)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/List/toArray(java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/eobjects/analyzer/connection/Datastore/openConnection()|",
+      "|java+method:///java/util/List/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eobjects/analyzer/connection/DatastoreConnection/getDataContext()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(int)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///org/eobjects/analyzer/connection/DatastoreConnectionImpl/DatastoreConnectionImpl(org.apache.metamodel.DataContext,org.eobjects.analyzer.connection.Datastore,java.io.Closeable%5B%5D)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/List/toArray(java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/eobjects/analyzer/connection/Datastore/openConnection()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/apache/metamodel/DataContextFactory/createCompositeDataContext(java.util.Collection)|"
+    ],
+    "affectedLib": "org.eobjects.metamodel:MetaModel-full:3.4.11",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eobjects.analyzerbeans:AnalyzerBeans-core:1.0-RC1",
+    "coordinatesV2": "org.eobjects.analyzerbeans:AnalyzerBeans-core:0.45",
+    "caller": "|java+method:///org/eobjects/analyzer/connection/XmlDatastore/createDatastoreConnection()|",
+    "called": "|java+method:///org/eobjects/metamodel/DataContextFactory/createXmlDataContext(java.io.File,boolean)|",
+    "v1Body": [
+      "|java+constructor:///org/eobjects/analyzer/connection/DatastoreConnectionImpl/DatastoreConnectionImpl(org.eobjects.metamodel.DataContext,org.eobjects.analyzer.connection.Datastore,java.io.Closeable%5B%5D)|",
+      "|java+constructor:///org/eobjects/metamodel/xml/XmlSaxDataContext/XmlSaxDataContext(java.io.File,org.eobjects.metamodel.xml.XmlSaxTableDef%5B%5D)|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///org/eobjects/metamodel/DataContextFactory/createXmlDataContext(java.io.File,boolean)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/eobjects/analyzer/connection/DatastoreConnectionImpl/DatastoreConnectionImpl(org.apache.metamodel.DataContext,org.eobjects.analyzer.connection.Datastore,java.io.Closeable%5B%5D)|",
+      "|java+constructor:///org/apache/metamodel/xml/XmlSaxDataContext/XmlSaxDataContext(java.io.File,org.apache.metamodel.xml.XmlSaxTableDef%5B%5D)|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///org/apache/metamodel/DataContextFactory/createXmlDataContext(java.io.File,boolean)|"
+    ],
+    "affectedLib": "org.eobjects.metamodel:MetaModel-full:3.4.11",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eobjects.analyzerbeans:AnalyzerBeans-core:1.0-RC1",
+    "coordinatesV2": "org.eobjects.analyzerbeans:AnalyzerBeans-core:0.45",
+    "caller": "|java+method:///org/eobjects/analyzer/connection/DbaseDatastore/createDatastoreConnection()|",
+    "called": "|java+method:///org/eobjects/metamodel/DataContextFactory/createDbaseDataContext(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/eobjects/analyzer/connection/DatastoreConnectionImpl/DatastoreConnectionImpl(org.eobjects.metamodel.DataContext,org.eobjects.analyzer.connection.Datastore,java.io.Closeable%5B%5D)|",
+      "|java+method:///org/eobjects/metamodel/DataContextFactory/createDbaseDataContext(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/eobjects/analyzer/connection/DatastoreConnectionImpl/DatastoreConnectionImpl(org.apache.metamodel.DataContext,org.eobjects.analyzer.connection.Datastore,java.io.Closeable%5B%5D)|",
+      "|java+constructor:///org/eobjects/metamodel/deebase/DbaseDataContext/DbaseDataContext(java.lang.String)|"
+    ],
+    "affectedLib": "org.eobjects.metamodel:MetaModel-full:3.4.11",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eobjects.analyzerbeans:AnalyzerBeans-core:1.0-RC1",
+    "coordinatesV2": "org.eobjects.analyzerbeans:AnalyzerBeans-core:0.45",
+    "caller": "|java+method:///org/eobjects/analyzer/connection/FixedWidthDatastore/createDatastoreConnection()|",
+    "called": "|java+method:///org/eobjects/metamodel/DataContextFactory/createFixedWidthDataContext(java.io.File,org.eobjects.metamodel.fixedwidth.FixedWidthConfiguration)|",
+    "v1Body": [
+      "|java+constructor:///org/eobjects/analyzer/connection/DatastoreConnectionImpl/DatastoreConnectionImpl(org.eobjects.metamodel.DataContext,org.eobjects.analyzer.connection.Datastore,java.io.Closeable%5B%5D)|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///org/eobjects/metamodel/DataContextFactory/createFixedWidthDataContext(java.io.File,org.eobjects.metamodel.fixedwidth.FixedWidthConfiguration)|",
+      "|java+constructor:///org/eobjects/metamodel/fixedwidth/FixedWidthConfiguration/FixedWidthConfiguration(int,java.lang.String,int%5B%5D,boolean)|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|",
+      "|java+constructor:///org/eobjects/metamodel/fixedwidth/FixedWidthConfiguration/FixedWidthConfiguration(int,java.lang.String,int,boolean)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/eobjects/analyzer/connection/DatastoreConnectionImpl/DatastoreConnectionImpl(org.apache.metamodel.DataContext,org.eobjects.analyzer.connection.Datastore,java.io.Closeable%5B%5D)|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///org/apache/metamodel/DataContextFactory/createFixedWidthDataContext(java.io.File,org.apache.metamodel.fixedwidth.FixedWidthConfiguration)|",
+      "|java+constructor:///org/apache/metamodel/fixedwidth/FixedWidthConfiguration/FixedWidthConfiguration(int,java.lang.String,int%5B%5D,boolean)|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|",
+      "|java+constructor:///org/apache/metamodel/fixedwidth/FixedWidthConfiguration/FixedWidthConfiguration(int,java.lang.String,int,boolean)|"
+    ],
+    "affectedLib": "org.eobjects.metamodel:MetaModel-full:3.4.11",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eobjects.analyzerbeans:AnalyzerBeans-core:1.0-RC1",
+    "coordinatesV2": "org.eobjects.analyzerbeans:AnalyzerBeans-core:0.45",
+    "caller": "|java+method:///org/eobjects/analyzer/connection/OdbDatastore/createDatastoreConnection()|",
+    "called": "|java+method:///org/eobjects/metamodel/DataContextFactory/createOpenOfficeDataContext(java.io.File)|",
+    "v1Body": [
+      "|java+constructor:///org/eobjects/analyzer/connection/DatastoreConnectionImpl/DatastoreConnectionImpl(org.eobjects.metamodel.DataContext,org.eobjects.analyzer.connection.Datastore,java.io.Closeable%5B%5D)|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///org/eobjects/metamodel/DataContextFactory/createOpenOfficeDataContext(java.io.File)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/eobjects/analyzer/connection/DatastoreConnectionImpl/DatastoreConnectionImpl(org.apache.metamodel.DataContext,org.eobjects.analyzer.connection.Datastore,java.io.Closeable%5B%5D)|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///org/apache/metamodel/DataContextFactory/createOpenOfficeDataContext(java.io.File)|"
+    ],
+    "affectedLib": "org.eobjects.metamodel:MetaModel-full:3.4.11",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eobjects.analyzerbeans:AnalyzerBeans-core:0.45",
+    "coordinatesV2": "org.eobjects.analyzerbeans:AnalyzerBeans-core:1.0-RC1",
+    "caller": "|java+method:///org/eobjects/analyzer/connection/CompositeDatastore/createDatastoreConnection()|",
+    "called": "|java+method:///org/apache/metamodel/DataContextFactory/createCompositeDataContext(java.util.Collection)|",
+    "v1Body": [
+      "|java+method:///org/eobjects/metamodel/DataContextFactory/createCompositeDataContext(java.util.Collection)|",
+      "|java+method:///org/eobjects/analyzer/connection/DatastoreConnection/getDataContext()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(int)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///org/eobjects/analyzer/connection/DatastoreConnectionImpl/DatastoreConnectionImpl(org.eobjects.metamodel.DataContext,org.eobjects.analyzer.connection.Datastore,java.io.Closeable%5B%5D)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/List/toArray(java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/eobjects/analyzer/connection/Datastore/openConnection()|",
+      "|java+method:///java/util/List/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eobjects/analyzer/connection/DatastoreConnection/getDataContext()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(int)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///org/eobjects/analyzer/connection/DatastoreConnectionImpl/DatastoreConnectionImpl(org.apache.metamodel.DataContext,org.eobjects.analyzer.connection.Datastore,java.io.Closeable%5B%5D)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/List/toArray(java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/eobjects/analyzer/connection/Datastore/openConnection()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/apache/metamodel/DataContextFactory/createCompositeDataContext(java.util.Collection)|"
+    ],
+    "affectedLib": "org.apache.metamodel:MetaModel-full:4.2.0-incubating",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.eobjects.analyzerbeans:AnalyzerBeans-core:0.45",
+    "coordinatesV2": "org.eobjects.analyzerbeans:AnalyzerBeans-core:1.0-RC1",
+    "caller": "|java+method:///org/eobjects/analyzer/connection/XmlDatastore/createDatastoreConnection()|",
+    "called": "|java+method:///org/apache/metamodel/DataContextFactory/createXmlDataContext(java.io.File,boolean)|",
+    "v1Body": [
+      "|java+constructor:///org/eobjects/analyzer/connection/DatastoreConnectionImpl/DatastoreConnectionImpl(org.eobjects.metamodel.DataContext,org.eobjects.analyzer.connection.Datastore,java.io.Closeable%5B%5D)|",
+      "|java+constructor:///org/eobjects/metamodel/xml/XmlSaxDataContext/XmlSaxDataContext(java.io.File,org.eobjects.metamodel.xml.XmlSaxTableDef%5B%5D)|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///org/eobjects/metamodel/DataContextFactory/createXmlDataContext(java.io.File,boolean)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/eobjects/analyzer/connection/DatastoreConnectionImpl/DatastoreConnectionImpl(org.apache.metamodel.DataContext,org.eobjects.analyzer.connection.Datastore,java.io.Closeable%5B%5D)|",
+      "|java+constructor:///org/apache/metamodel/xml/XmlSaxDataContext/XmlSaxDataContext(java.io.File,org.apache.metamodel.xml.XmlSaxTableDef%5B%5D)|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///org/apache/metamodel/DataContextFactory/createXmlDataContext(java.io.File,boolean)|"
+    ],
+    "affectedLib": "org.apache.metamodel:MetaModel-full:4.2.0-incubating",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.eobjects.analyzerbeans:AnalyzerBeans-core:0.45",
+    "coordinatesV2": "org.eobjects.analyzerbeans:AnalyzerBeans-core:1.0-RC1",
+    "caller": "|java+method:///org/eobjects/analyzer/connection/FixedWidthDatastore/createDatastoreConnection()|",
+    "called": "|java+method:///org/apache/metamodel/DataContextFactory/createFixedWidthDataContext(java.io.File,org.apache.metamodel.fixedwidth.FixedWidthConfiguration)|",
+    "v1Body": [
+      "|java+constructor:///org/eobjects/analyzer/connection/DatastoreConnectionImpl/DatastoreConnectionImpl(org.eobjects.metamodel.DataContext,org.eobjects.analyzer.connection.Datastore,java.io.Closeable%5B%5D)|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///org/eobjects/metamodel/DataContextFactory/createFixedWidthDataContext(java.io.File,org.eobjects.metamodel.fixedwidth.FixedWidthConfiguration)|",
+      "|java+constructor:///org/eobjects/metamodel/fixedwidth/FixedWidthConfiguration/FixedWidthConfiguration(int,java.lang.String,int%5B%5D,boolean)|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|",
+      "|java+constructor:///org/eobjects/metamodel/fixedwidth/FixedWidthConfiguration/FixedWidthConfiguration(int,java.lang.String,int,boolean)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/eobjects/analyzer/connection/DatastoreConnectionImpl/DatastoreConnectionImpl(org.apache.metamodel.DataContext,org.eobjects.analyzer.connection.Datastore,java.io.Closeable%5B%5D)|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///org/apache/metamodel/DataContextFactory/createFixedWidthDataContext(java.io.File,org.apache.metamodel.fixedwidth.FixedWidthConfiguration)|",
+      "|java+constructor:///org/apache/metamodel/fixedwidth/FixedWidthConfiguration/FixedWidthConfiguration(int,java.lang.String,int%5B%5D,boolean)|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|",
+      "|java+constructor:///org/apache/metamodel/fixedwidth/FixedWidthConfiguration/FixedWidthConfiguration(int,java.lang.String,int,boolean)|"
+    ],
+    "affectedLib": "org.apache.metamodel:MetaModel-full:4.2.0-incubating",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.eobjects.analyzerbeans:AnalyzerBeans-core:0.45",
+    "coordinatesV2": "org.eobjects.analyzerbeans:AnalyzerBeans-core:1.0-RC1",
+    "caller": "|java+method:///org/eobjects/analyzer/connection/OdbDatastore/createDatastoreConnection()|",
+    "called": "|java+method:///org/apache/metamodel/DataContextFactory/createOpenOfficeDataContext(java.io.File)|",
+    "v1Body": [
+      "|java+constructor:///org/eobjects/analyzer/connection/DatastoreConnectionImpl/DatastoreConnectionImpl(org.eobjects.metamodel.DataContext,org.eobjects.analyzer.connection.Datastore,java.io.Closeable%5B%5D)|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///org/eobjects/metamodel/DataContextFactory/createOpenOfficeDataContext(java.io.File)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/eobjects/analyzer/connection/DatastoreConnectionImpl/DatastoreConnectionImpl(org.apache.metamodel.DataContext,org.eobjects.analyzer.connection.Datastore,java.io.Closeable%5B%5D)|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///org/apache/metamodel/DataContextFactory/createOpenOfficeDataContext(java.io.File)|"
+    ],
+    "affectedLib": "org.apache.metamodel:MetaModel-full:4.2.0-incubating",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.eobjects.analyzerbeans:AnalyzerBeans-core:0.45",
+    "coordinatesV2": "org.eobjects.analyzerbeans:AnalyzerBeans-core:1.0-RC1",
+    "caller": "|java+method:///org/eobjects/analyzer/connection/SasDatastore/createDatastoreConnection()|",
+    "called": "|java+constructor:///org/eobjects/metamodel/sas/metamodel/SasDataContext/SasDataContext(java.io.File)|",
+    "v1Body": [
+      "|java+constructor:///org/eobjects/analyzer/connection/DatastoreConnectionImpl/DatastoreConnectionImpl(org.eobjects.metamodel.DataContext,org.eobjects.analyzer.connection.Datastore,java.io.Closeable%5B%5D)|",
+      "|java+constructor:///org/eobjects/sassy/metamodel/SasDataContext/SasDataContext(java.io.File)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/eobjects/metamodel/sas/metamodel/SasDataContext/SasDataContext(java.io.File)|",
+      "|java+constructor:///org/eobjects/analyzer/connection/DatastoreConnectionImpl/DatastoreConnectionImpl(org.apache.metamodel.DataContext,org.eobjects.analyzer.connection.Datastore,java.io.Closeable%5B%5D)|"
+    ],
+    "affectedLib": "org.eobjects.metamodel-extras:MetaModel-extras-sas:4.2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.eobjects.analyzerbeans:AnalyzerBeans-core:0.45",
+    "coordinatesV2": "org.eobjects.analyzerbeans:AnalyzerBeans-core:1.0-RC1",
+    "caller": "|java+method:///org/eobjects/analyzer/connection/DbaseDatastore/createDatastoreConnection()|",
+    "called": "|java+constructor:///org/eobjects/metamodel/deebase/DbaseDataContext/DbaseDataContext(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/eobjects/analyzer/connection/DatastoreConnectionImpl/DatastoreConnectionImpl(org.eobjects.metamodel.DataContext,org.eobjects.analyzer.connection.Datastore,java.io.Closeable%5B%5D)|",
+      "|java+method:///org/eobjects/metamodel/DataContextFactory/createDbaseDataContext(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/eobjects/analyzer/connection/DatastoreConnectionImpl/DatastoreConnectionImpl(org.apache.metamodel.DataContext,org.eobjects.analyzer.connection.Datastore,java.io.Closeable%5B%5D)|",
+      "|java+constructor:///org/eobjects/metamodel/deebase/DbaseDataContext/DbaseDataContext(java.lang.String)|"
+    ],
+    "affectedLib": "org.eobjects.metamodel-extras:MetaModel-extras-dbase:4.2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.eobjects.analyzerbeans:AnalyzerBeans-core:0.45",
+    "coordinatesV2": "org.eobjects.analyzerbeans:AnalyzerBeans-core:1.0-RC1",
+    "caller": "|java+method:///org/eobjects/analyzer/connection/AccessDatastore/createDatastoreConnection()|",
+    "called": "|java+constructor:///org/eobjects/metamodel/access/AccessDataContext/AccessDataContext(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/eobjects/metamodel/access/AccessDataContext/AccessDataContext(java.lang.String)|",
+      "|java+constructor:///org/eobjects/analyzer/connection/DatastoreConnectionImpl/DatastoreConnectionImpl(org.eobjects.metamodel.DataContext,org.eobjects.analyzer.connection.Datastore,java.io.Closeable%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/eobjects/metamodel/access/AccessDataContext/AccessDataContext(java.lang.String)|",
+      "|java+constructor:///org/eobjects/analyzer/connection/DatastoreConnectionImpl/DatastoreConnectionImpl(org.apache.metamodel.DataContext,org.eobjects.analyzer.connection.Datastore,java.io.Closeable%5B%5D)|"
+    ],
+    "affectedLib": "org.eobjects.metamodel-extras:MetaModel-extras-access:4.2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.eobjects.analyzerbeans:AnalyzerBeans-core:0.45",
+    "coordinatesV2": "org.eobjects.analyzerbeans:AnalyzerBeans-core:1.0-RC1",
+    "caller": "|java+method:///org/eobjects/analyzer/reference/DatastoreSynonymCatalog/getMasterTerm(java.lang.String)|",
+    "called": "|java+method:///org/eobjects/analyzer/util/SchemaNavigator/convertToColumn(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/eobjects/metamodel/schema/ColumnType/isNumber()|",
+      "|java+method:///org/eobjects/metamodel/query/Query/where(org.eobjects.metamodel.query.FilterItem%5B%5D)|",
+      "|java+method:///org/eobjects/metamodel/query/builder/TableFromBuilder/select(org.eobjects.metamodel.schema.Column)|",
+      "|java+method:///org/eobjects/analyzer/util/SchemaNavigator/convertToColumn(java.lang.String)|",
+      "|java+method:///org/eobjects/metamodel/data/DataSet/next()|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///org/eobjects/analyzer/reference/DatastoreSynonymCatalog/getDatastore()|",
+      "|java+method:///org/eobjects/metamodel/schema/Table/getName()|",
+      "|java+constructor:///org/eobjects/metamodel/query/FilterItem/FilterItem(org.eobjects.metamodel.query.SelectItem,org.eobjects.metamodel.query.OperatorType,java.lang.Object)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/eobjects/metamodel/data/DataSet/getRow()|",
+      "|java+method:///org/eobjects/analyzer/connection/DatastoreConnection/close()|",
+      "|java+method:///org/eobjects/analyzer/connection/DatastoreConnection/getDataContext()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///com/google/common/cache/Cache/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/eobjects/metamodel/query/SelectItem/SelectItem(org.eobjects.metamodel.schema.Column)|",
+      "|java+method:///com/google/common/cache/Cache/getIfPresent(java.lang.Object)|",
+      "|java+method:///org/eobjects/metamodel/query/builder/ColumnSelectBuilder/toQuery()|",
+      "|java+method:///org/eobjects/analyzer/util/StringUtils/isNullOrEmpty(java.lang.String)|",
+      "|java+method:///org/eobjects/analyzer/reference/DatastoreSynonymCatalog/getMasterTermCache()|",
+      "|java+method:///org/eobjects/metamodel/query/builder/InitFromBuilder/from(java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/util/List/toArray(java.lang.Object%5B%5D)|",
+      "|java+method:///org/eobjects/analyzer/connection/DatastoreConnection/getSchemaNavigator()|",
+      "|java+method:///org/eobjects/analyzer/reference/DatastoreSynonymCatalog/getMasterTerm(org.eobjects.metamodel.data.Row,org.eobjects.metamodel.schema.Column)|",
+      "|java+method:///org/eobjects/analyzer/util/SchemaNavigator/convertToColumns(java.lang.String%5B%5D)|",
+      "|java+method:///org/eobjects/metamodel/DataContext/executeQuery(org.eobjects.metamodel.query.Query)|",
+      "|java+method:///org/eobjects/metamodel/data/DataSet/close()|",
+      "|java+method:///org/eobjects/metamodel/DataContext/query()|",
+      "|java+method:///org/eobjects/analyzer/connection/Datastore/openConnection()|",
+      "|java+constructor:///org/eobjects/metamodel/query/FilterItem/FilterItem(org.eobjects.metamodel.query.FilterItem%5B%5D)|",
+      "|java+method:///org/eobjects/metamodel/schema/Column/getType()|",
+      "|java+method:///org/eobjects/analyzer/beans/convert/ConvertToNumberTransformer/transformValue(java.lang.Object)|",
+      "|java+method:///org/eobjects/metamodel/schema/Column/getTable()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/metamodel/schema/Column/getTable()|",
+      "|java+method:///org/apache/metamodel/query/builder/TableFromBuilder/select(org.apache.metamodel.schema.Column)|",
+      "|java+method:///org/eobjects/analyzer/util/StringUtils/isNullOrEmpty(java.lang.String)|",
+      "|java+method:///org/eobjects/analyzer/util/SchemaNavigator/convertToColumn(java.lang.String)|",
+      "|java+method:///org/apache/metamodel/data/DataSet/next()|",
+      "|java+method:///org/eobjects/analyzer/reference/DatastoreSynonymCatalog/getMasterTermCache()|",
+      "|java+method:///org/apache/metamodel/query/builder/InitFromBuilder/from(java.lang.String)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///org/eobjects/analyzer/reference/DatastoreSynonymCatalog/getDatastore()|",
+      "|java+method:///org/apache/metamodel/schema/Table/getName()|",
+      "|java+method:///org/eobjects/analyzer/connection/DatastoreConnection/getSchemaNavigator()|",
+      "|java+method:///org/eobjects/analyzer/reference/DatastoreSynonymCatalog/getMasterTerm(org.apache.metamodel.data.Row,org.apache.metamodel.schema.Column)|",
+      "|java+method:///org/apache/metamodel/DataContext/executeQuery(org.apache.metamodel.query.Query)|",
+      "|java+method:///org/eobjects/analyzer/connection/DatastoreConnection/close()|",
+      "|java+method:///org/apache/metamodel/schema/Column/getType()|",
+      "|java+method:///org/eobjects/analyzer/beans/convert/ConvertToNumberTransformer/transformValue(java.lang.Object)|",
+      "|java+method:///org/apache/metamodel/query/Query/where(org.apache.metamodel.query.FilterItem%5B%5D)|",
+      "|java+method:///org/apache/metamodel/schema/ColumnType/isNumber()|",
+      "|java+method:///org/eobjects/analyzer/connection/DatastoreConnection/getDataContext()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///com/google/common/cache/Cache/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/google/common/cache/Cache/getIfPresent(java.lang.Object)|",
+      "|java+method:///org/apache/metamodel/query/builder/ColumnSelectBuilder/toQuery()|",
+      "|java+constructor:///org/apache/metamodel/query/SelectItem/SelectItem(org.apache.metamodel.schema.Column)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/util/List/toArray(java.lang.Object%5B%5D)|",
+      "|java+method:///org/eobjects/analyzer/util/SchemaNavigator/convertToColumns(java.lang.String%5B%5D)|",
+      "|java+constructor:///org/apache/metamodel/query/FilterItem/FilterItem(org.apache.metamodel.query.SelectItem,org.apache.metamodel.query.OperatorType,java.lang.Object)|",
+      "|java+method:///org/apache/metamodel/DataContext/query()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/eobjects/analyzer/connection/Datastore/openConnection()|",
+      "|java+method:///org/apache/metamodel/data/DataSet/getRow()|",
+      "|java+method:///org/apache/metamodel/data/DataSet/close()|",
+      "|java+constructor:///org/apache/metamodel/query/FilterItem/FilterItem(org.apache.metamodel.query.FilterItem%5B%5D)|"
+    ],
+    "affectedLib": "org.eobjects.analyzerbeans:AnalyzerBeans-api:1.0-RC1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.eobjects.analyzerbeans:AnalyzerBeans-core:0.45",
+    "coordinatesV2": "org.eobjects.analyzerbeans:AnalyzerBeans-core:1.0-RC1",
+    "caller": "|java+method:///org/eobjects/analyzer/job/builder/AnalysisJobBuilder/addSourceColumns(java.lang.String%5B%5D)|",
+    "called": "|java+method:///org/eobjects/analyzer/util/SchemaNavigator/convertToColumn(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///org/eobjects/analyzer/util/SchemaNavigator/convertToColumn(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/eobjects/analyzer/job/builder/AnalysisJobBuilder/addSourceColumns(org.eobjects.metamodel.schema.Column%5B%5D)|",
+      "|java+method:///org/eobjects/analyzer/connection/DatastoreConnection/getSchemaNavigator()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///org/eobjects/analyzer/util/SchemaNavigator/convertToColumn(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/eobjects/analyzer/job/builder/AnalysisJobBuilder/addSourceColumns(org.apache.metamodel.schema.Column%5B%5D)|",
+      "|java+method:///org/eobjects/analyzer/connection/DatastoreConnection/getSchemaNavigator()|"
+    ],
+    "affectedLib": "org.eobjects.analyzerbeans:AnalyzerBeans-api:1.0-RC1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.eobjects.analyzerbeans:AnalyzerBeans-core:0.45",
+    "coordinatesV2": "org.eobjects.analyzerbeans:AnalyzerBeans-core:1.0-RC1",
+    "caller": "|java+method:///org/eobjects/analyzer/beans/transform/TableLookupTransformer/getOutputColumns()|",
+    "called": "|java+constructor:///org/eobjects/analyzer/beans/api/OutputColumns/OutputColumns(java.lang.String%5B%5D,java.lang.Class%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/eobjects/metamodel/schema/ColumnType/getJavaEquivalentClass()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/eobjects/metamodel/schema/Column/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/eobjects/analyzer/beans/transform/TableLookupTransformer/getQueryOutputColumns(boolean)|",
+      "|java+constructor:///org/eobjects/analyzer/beans/api/OutputColumns/OutputColumns(java.lang.String%5B%5D,java.lang.Class%5B%5D)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/eobjects/metamodel/schema/Column/getType()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/metamodel/schema/ColumnType/getJavaEquivalentClass()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/metamodel/schema/Column/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/eobjects/analyzer/beans/transform/TableLookupTransformer/getQueryOutputColumns(boolean)|",
+      "|java+constructor:///org/eobjects/analyzer/beans/api/OutputColumns/OutputColumns(java.lang.String%5B%5D,java.lang.Class%5B%5D)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///org/apache/metamodel/schema/Column/getType()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.eobjects.analyzerbeans:AnalyzerBeans-api:1.0-RC1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.eobjects.analyzerbeans:AnalyzerBeans-core:0.45",
+    "coordinatesV2": "org.eobjects.analyzerbeans:AnalyzerBeans-core:1.0-RC1",
+    "caller": "|java+method:///org/eobjects/analyzer/configuration/SourceColumnMapping/autoMap(org.eobjects.analyzer.connection.Datastore)|",
+    "called": "|java+method:///org/eobjects/analyzer/util/SchemaNavigator/convertToColumn(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/eobjects/analyzer/util/SchemaNavigator/convertToColumn(java.lang.String)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/eobjects/analyzer/connection/DatastoreConnection/getSchemaNavigator()|",
+      "|java+method:///org/eobjects/analyzer/configuration/SourceColumnMapping/setDatastore(org.eobjects.analyzer.connection.Datastore)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///org/eobjects/analyzer/connection/Datastore/openConnection()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///org/eobjects/analyzer/connection/DatastoreConnection/close()|",
+      "|java+method:///java/util/Map$Entry/setValue(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/eobjects/analyzer/util/SchemaNavigator/convertToColumn(java.lang.String)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/eobjects/analyzer/connection/DatastoreConnection/getSchemaNavigator()|",
+      "|java+method:///org/eobjects/analyzer/configuration/SourceColumnMapping/setDatastore(org.eobjects.analyzer.connection.Datastore)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///org/eobjects/analyzer/connection/Datastore/openConnection()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///org/eobjects/analyzer/connection/DatastoreConnection/close()|",
+      "|java+method:///java/util/Map$Entry/setValue(java.lang.Object)|"
+    ],
+    "affectedLib": "org.eobjects.analyzerbeans:AnalyzerBeans-api:1.0-RC1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.eobjects.analyzerbeans:AnalyzerBeans-core:0.45",
+    "coordinatesV2": "org.eobjects.analyzerbeans:AnalyzerBeans-core:1.0-RC1",
+    "caller": "|java+method:///org/eobjects/analyzer/util/convert/ConfigurationItemConverter/fromString(java.lang.Class,java.lang.String)|",
+    "called": "|java+method:///org/eobjects/analyzer/util/SchemaNavigator/convertToSchema(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/eobjects/analyzer/util/ReflectionUtils/isColumn(java.lang.Class)|",
+      "|java+method:///org/eobjects/analyzer/util/SchemaNavigator/convertToColumn(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/eobjects/analyzer/util/SchemaNavigator/convertToTable(java.lang.String)|",
+      "|java+method:///org/eobjects/analyzer/reference/ReferenceDataCatalog/getDictionary(java.lang.String)|",
+      "|java+method:///org/eobjects/analyzer/util/ReflectionUtils/is(java.lang.reflect.Type,java.lang.Class)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/eobjects/analyzer/reference/ReferenceDataCatalog/getSynonymCatalog(java.lang.String)|",
+      "|java+method:///org/eobjects/analyzer/connection/DatastoreConnection/close()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/eobjects/analyzer/util/ReflectionUtils/isTable(java.lang.Class)|",
+      "|java+method:///org/eobjects/analyzer/connection/DatastoreCatalog/getDatastore(java.lang.String)|",
+      "|java+method:///org/eobjects/analyzer/util/SchemaNavigator/convertToSchema(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/eobjects/analyzer/connection/DatastoreConnection/getSchemaNavigator()|",
+      "|java+method:///org/eobjects/analyzer/reference/ReferenceDataCatalog/getStringPattern(java.lang.String)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///org/eobjects/analyzer/connection/Datastore/openConnection()|",
+      "|java+method:///org/eobjects/analyzer/util/ReflectionUtils/isSchema(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eobjects/analyzer/util/ReflectionUtils/isColumn(java.lang.Class)|",
+      "|java+method:///org/eobjects/analyzer/util/SchemaNavigator/convertToColumn(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/eobjects/analyzer/util/SchemaNavigator/convertToTable(java.lang.String)|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+method:///org/eobjects/analyzer/reference/ReferenceDataCatalog/getDictionary(java.lang.String)|",
+      "|java+method:///org/eobjects/analyzer/util/ReflectionUtils/is(java.lang.reflect.Type,java.lang.Class)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/eobjects/analyzer/reference/ReferenceDataCatalog/getSynonymCatalog(java.lang.String)|",
+      "|java+method:///org/eobjects/analyzer/connection/DatastoreConnection/close()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/eobjects/analyzer/util/ReflectionUtils/isTable(java.lang.Class)|",
+      "|java+method:///org/eobjects/analyzer/connection/DatastoreCatalog/getDatastore(java.lang.String)|",
+      "|java+method:///org/eobjects/analyzer/util/SchemaNavigator/convertToSchema(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/eobjects/analyzer/connection/DatastoreConnection/getSchemaNavigator()|",
+      "|java+method:///org/eobjects/analyzer/reference/ReferenceDataCatalog/getStringPattern(java.lang.String)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///org/eobjects/analyzer/connection/Datastore/openConnection()|",
+      "|java+method:///org/eobjects/analyzer/util/ReflectionUtils/isSchema(java.lang.Class)|"
+    ],
+    "affectedLib": "org.eobjects.analyzerbeans:AnalyzerBeans-api:1.0-RC1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.eobjects.analyzerbeans:AnalyzerBeans-core:0.45",
+    "coordinatesV2": "org.eobjects.analyzerbeans:AnalyzerBeans-core:1.0-RC1",
+    "caller": "|java+method:///org/eobjects/analyzer/reference/DatastoreDictionary/getValues()|",
+    "called": "|java+method:///org/eobjects/analyzer/util/SchemaNavigator/convertToColumns(java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+constructor:///org/eobjects/analyzer/reference/DatastoreReferenceValues/DatastoreReferenceValues(org.eobjects.analyzer.connection.Datastore,org.eobjects.metamodel.schema.Column)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/eobjects/analyzer/connection/DatastoreConnection/getSchemaNavigator()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/eobjects/analyzer/reference/DatastoreDictionary/getDatastore()|",
+      "|java+method:///org/eobjects/analyzer/util/SchemaNavigator/convertToColumns(java.lang.String%5B%5D)|",
+      "|java+method:///org/eobjects/analyzer/connection/Datastore/openConnection()|",
+      "|java+method:///org/eobjects/analyzer/connection/DatastoreConnection/close()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+constructor:///org/eobjects/analyzer/reference/DatastoreReferenceValues/DatastoreReferenceValues(org.eobjects.analyzer.connection.Datastore,org.apache.metamodel.schema.Column)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/eobjects/analyzer/connection/DatastoreConnection/getSchemaNavigator()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/eobjects/analyzer/reference/DatastoreDictionary/getDatastore()|",
+      "|java+method:///org/eobjects/analyzer/util/SchemaNavigator/convertToColumns(java.lang.String%5B%5D)|",
+      "|java+method:///org/eobjects/analyzer/connection/Datastore/openConnection()|",
+      "|java+method:///org/eobjects/analyzer/connection/DatastoreConnection/close()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.eobjects.analyzerbeans:AnalyzerBeans-api:1.0-RC1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.eobjects.analyzerbeans:AnalyzerBeans-core:0.45",
+    "coordinatesV2": "org.eobjects.analyzerbeans:AnalyzerBeans-core:1.0-RC1",
+    "caller": "|java+method:///org/eobjects/analyzer/reference/DatastoreSynonymCatalog/getSynonyms()|",
+    "called": "|java+method:///org/eobjects/analyzer/util/SchemaNavigator/convertToColumn(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/eobjects/metamodel/query/builder/TableFromBuilder/select(org.eobjects.metamodel.schema.Column)|",
+      "|java+method:///org/eobjects/analyzer/util/SchemaNavigator/convertToColumn(java.lang.String)|",
+      "|java+method:///org/eobjects/metamodel/data/DataSet/next()|",
+      "|java+method:///org/eobjects/metamodel/query/builder/InitFromBuilder/from(java.lang.String)|",
+      "|java+method:///org/eobjects/analyzer/reference/DatastoreSynonymCatalog/getDatastore()|",
+      "|java+method:///org/eobjects/metamodel/schema/Table/getName()|",
+      "|java+method:///org/eobjects/metamodel/schema/Table/getColumns()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/eobjects/analyzer/connection/Datastore/openConnection()|",
+      "|java+method:///org/eobjects/metamodel/data/DataSet/getRow()|",
+      "|java+method:///org/eobjects/metamodel/schema/Column/getTable()|",
+      "|java+method:///org/eobjects/metamodel/query/builder/SatisfiedSelectBuilder/toQuery()|",
+      "|java+method:///org/eobjects/analyzer/connection/DatastoreConnection/getDataContext()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/eobjects/analyzer/connection/DatastoreConnection/getSchemaNavigator()|",
+      "|java+method:///org/eobjects/metamodel/query/builder/ColumnSelectBuilder/select(org.eobjects.metamodel.schema.Column%5B%5D)|",
+      "|java+method:///org/eobjects/analyzer/reference/DatastoreSynonymCatalog/getMasterTerm(org.eobjects.metamodel.data.Row,org.eobjects.metamodel.schema.Column)|",
+      "|java+method:///org/eobjects/analyzer/util/SchemaNavigator/convertToColumns(java.lang.String%5B%5D)|",
+      "|java+method:///org/eobjects/metamodel/DataContext/executeQuery(org.eobjects.metamodel.query.Query)|",
+      "|java+constructor:///org/eobjects/analyzer/reference/SimpleSynonym/SimpleSynonym(java.lang.String,java.lang.String%5B%5D)|",
+      "|java+method:///org/eobjects/metamodel/DataContext/query()|",
+      "|java+method:///org/eobjects/analyzer/connection/DatastoreConnection/close()|",
+      "|java+method:///org/eobjects/analyzer/reference/DatastoreSynonymCatalog/getSynonyms(org.eobjects.metamodel.data.Row,org.eobjects.metamodel.schema.Column%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/metamodel/schema/Column/getTable()|",
+      "|java+method:///org/eobjects/analyzer/util/SchemaNavigator/convertToColumn(java.lang.String)|",
+      "|java+method:///org/apache/metamodel/data/DataSet/next()|",
+      "|java+method:///org/apache/metamodel/query/builder/InitFromBuilder/from(java.lang.String)|",
+      "|java+method:///org/eobjects/analyzer/reference/DatastoreSynonymCatalog/getDatastore()|",
+      "|java+method:///org/eobjects/analyzer/connection/DatastoreConnection/getSchemaNavigator()|",
+      "|java+method:///org/eobjects/analyzer/util/SchemaNavigator/convertToColumns(java.lang.String%5B%5D)|",
+      "|java+method:///org/eobjects/analyzer/connection/DatastoreConnection/close()|",
+      "|java+method:///org/eobjects/analyzer/reference/DatastoreSynonymCatalog/getSynonyms(org.apache.metamodel.data.Row,org.apache.metamodel.schema.Column%5B%5D)|",
+      "|java+method:///org/eobjects/analyzer/connection/DatastoreConnection/getDataContext()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/apache/metamodel/query/builder/SatisfiedSelectBuilder/toQuery()|",
+      "|java+method:///org/apache/metamodel/query/builder/TableFromBuilder/select(org.apache.metamodel.schema.Column)|",
+      "|java+method:///org/apache/metamodel/schema/Table/getName()|",
+      "|java+method:///org/apache/metamodel/schema/Table/getColumns()|",
+      "|java+method:///org/apache/metamodel/query/builder/ColumnSelectBuilder/select(org.apache.metamodel.schema.Column%5B%5D)|",
+      "|java+method:///org/eobjects/analyzer/reference/DatastoreSynonymCatalog/getMasterTerm(org.apache.metamodel.data.Row,org.apache.metamodel.schema.Column)|",
+      "|java+method:///org/apache/metamodel/DataContext/query()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///org/eobjects/analyzer/reference/SimpleSynonym/SimpleSynonym(java.lang.String,java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/metamodel/DataContext/executeQuery(org.apache.metamodel.query.Query)|",
+      "|java+method:///org/eobjects/analyzer/connection/Datastore/openConnection()|",
+      "|java+method:///org/apache/metamodel/data/DataSet/getRow()|"
+    ],
+    "affectedLib": "org.eobjects.analyzerbeans:AnalyzerBeans-api:1.0-RC1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.eobjects.analyzerbeans:AnalyzerBeans-core:0.45",
+    "coordinatesV2": "org.eobjects.analyzerbeans:AnalyzerBeans-core:1.0-RC1",
+    "caller": "|java+method:///org/eobjects/analyzer/beans/transform/TableLookupTransformer/getQueryConditionColumns()|",
+    "called": "|java+method:///org/eobjects/analyzer/util/SchemaNavigator/convertToColumns(java.lang.String,java.lang.String,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/eobjects/analyzer/beans/transform/TableLookupTransformer/isCarthesianProductMode()|",
+      "|java+method:///org/eobjects/analyzer/connection/DatastoreConnection/getSchemaNavigator()|",
+      "|java+method:///org/eobjects/analyzer/util/SchemaNavigator/convertToColumns(java.lang.String,java.lang.String,java.lang.String%5B%5D)|",
+      "|java+method:///org/eobjects/analyzer/connection/Datastore/openConnection()|",
+      "|java+method:///org/eobjects/analyzer/connection/DatastoreConnection/close()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eobjects/analyzer/beans/transform/TableLookupTransformer/isCarthesianProductMode()|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+method:///org/eobjects/analyzer/connection/DatastoreConnection/getSchemaNavigator()|",
+      "|java+method:///org/eobjects/analyzer/util/SchemaNavigator/convertToColumns(java.lang.String,java.lang.String,java.lang.String%5B%5D)|",
+      "|java+method:///org/eobjects/analyzer/connection/Datastore/openConnection()|",
+      "|java+method:///org/eobjects/analyzer/connection/DatastoreConnection/close()|"
+    ],
+    "affectedLib": "org.eobjects.analyzerbeans:AnalyzerBeans-api:1.0-RC1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.eobjects.analyzerbeans:AnalyzerBeans-core:0.45",
+    "coordinatesV2": "org.eobjects.analyzerbeans:AnalyzerBeans-core:1.0-RC1",
+    "caller": "|java+method:///org/eobjects/analyzer/beans/transform/TableLookupTransformer/getQueryOutputColumns(boolean)|",
+    "called": "|java+method:///org/eobjects/analyzer/util/SchemaNavigator/convertToColumns(java.lang.String,java.lang.String,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/eobjects/analyzer/connection/DatastoreConnection/getSchemaNavigator()|",
+      "|java+method:///org/eobjects/analyzer/beans/transform/TableLookupTransformer/getQueryOutputColumns(boolean)|",
+      "|java+method:///org/eobjects/analyzer/util/SchemaNavigator/convertToColumns(java.lang.String,java.lang.String,java.lang.String%5B%5D)|",
+      "|java+method:///org/eobjects/analyzer/connection/Datastore/openConnection()|",
+      "|java+method:///org/eobjects/analyzer/connection/DatastoreConnection/close()|",
+      "|java+method:///org/eobjects/analyzer/beans/transform/TableLookupTransformer/isQueryOutputColumnsUpdated()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+method:///org/eobjects/analyzer/connection/DatastoreConnection/getSchemaNavigator()|",
+      "|java+method:///org/eobjects/analyzer/beans/transform/TableLookupTransformer/getQueryOutputColumns(boolean)|",
+      "|java+method:///org/eobjects/analyzer/util/SchemaNavigator/convertToColumns(java.lang.String,java.lang.String,java.lang.String%5B%5D)|",
+      "|java+method:///org/eobjects/analyzer/connection/Datastore/openConnection()|",
+      "|java+method:///org/eobjects/analyzer/connection/DatastoreConnection/close()|",
+      "|java+method:///org/eobjects/analyzer/beans/transform/TableLookupTransformer/isQueryOutputColumnsUpdated()|"
+    ],
+    "affectedLib": "org.eobjects.analyzerbeans:AnalyzerBeans-api:1.0-RC1",
+    "change": "UPDATED"
+  }
+]

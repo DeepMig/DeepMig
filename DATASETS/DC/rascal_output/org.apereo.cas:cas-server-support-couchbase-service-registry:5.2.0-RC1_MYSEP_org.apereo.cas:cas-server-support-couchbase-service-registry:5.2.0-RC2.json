@@ -1,0 +1,19 @@
+[
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-couchbase-service-registry:5.2.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-couchbase-service-registry:5.2.0-RC2",
+    "caller": "|java+method:///org/apereo/cas/services/CouchbaseServiceRegistryDao/destroy()|",
+    "called": "|java+method:///org/apereo/cas/couchbase/core/CouchbaseClientFactory/shutdown()|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+      "|java+method:///org/apereo/cas/couchbase/core/CouchbaseClientFactory/shutdown()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+method:///org/apereo/cas/couchbase/core/CouchbaseClientFactory/shutdown()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-support-couchbase-core:5.2.0-RC2",
+    "change": "UPDATED"
+  }
+]

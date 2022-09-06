@@ -1,0 +1,1038 @@
+[
+  {
+    "coordinatesV1": "com.google.cloud:google-cloud-pubsub:0.7.0",
+    "coordinatesV2": "com.google.cloud:google-cloud-pubsub:0.6.0",
+    "caller": "|java+method:///com/google/cloud/pubsub/TopicInfo/fromPb(com.google.pubsub.v1.Topic)|",
+    "called": "|java+method:///com/google/pubsub/v1/Topic/getName()|",
+    "v1Body": [
+      "|java+method:///com/google/cloud/pubsub/spi/v1/PublisherApi/parseTopicFromTopicName(java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/TopicInfo$Builder/build()|",
+      "|java+method:///com/google/pubsub/v1/Topic/getName()|",
+      "|java+method:///com/google/cloud/pubsub/TopicInfo/newBuilder(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/cloud/pubsub/TopicInfo$Builder/build()|",
+      "|java+method:///com/google/pubsub/v1/Topic/getName()|",
+      "|java+method:///com/google/cloud/pubsub/TopicInfo/newBuilder(java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/PublisherClient/parseTopicFromTopicName(java.lang.String)|"
+    ],
+    "affectedLib": "com.google.api.grpc:grpc-google-pubsub-v1:0.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.google.cloud:google-cloud-pubsub:0.7.0",
+    "coordinatesV2": "com.google.cloud:google-cloud-pubsub:0.6.0",
+    "caller": "|java+method:///com/google/cloud/pubsub/PubSubImpl/deleteTopicAsync(java.lang.String)|",
+    "called": "|java+method:///com/google/pubsub/v1/DeleteTopicRequest$Builder/setTopic(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/google/cloud/pubsub/spi/v1/PublisherApi/formatTopicName(java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/getOptions()|",
+      "|java+method:///com/google/pubsub/v1/DeleteTopicRequest/newBuilder()|",
+      "|java+method:///com/google/cloud/pubsub/spi/PubSubRpc/delete(com.google.pubsub.v1.DeleteTopicRequest)|",
+      "|java+method:///com/google/pubsub/v1/DeleteTopicRequest$Builder/build()|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/transform(java.util.concurrent.Future,com.google.common.base.Function)|",
+      "|java+method:///com/google/pubsub/v1/DeleteTopicRequest$Builder/setTopic(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/getOptions()|",
+      "|java+method:///com/google/pubsub/v1/DeleteTopicRequest/newBuilder()|",
+      "|java+method:///com/google/pubsub/v1/DeleteTopicRequest$Builder/build()|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/transform(java.util.concurrent.Future,com.google.common.base.Function)|",
+      "|java+method:///com/google/pubsub/v1/DeleteTopicRequest$Builder/setTopic(java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/PublisherClient/formatTopicName(java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/spi/PubSubRpc/delete(com.google.pubsub.v1.DeleteTopicRequest)|"
+    ],
+    "affectedLib": "com.google.api.grpc:grpc-google-pubsub-v1:0.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.google.cloud:google-cloud-pubsub:0.7.0",
+    "coordinatesV2": "com.google.cloud:google-cloud-pubsub:0.6.0",
+    "caller": "|java+method:///com/google/cloud/pubsub/PubSubImpl/listSubscriptionsRequest(com.google.cloud.pubsub.PubSubOptions,java.util.Map)|",
+    "called": "|java+method:///com/google/pubsub/v1/ListSubscriptionsRequest$Builder/setPageToken(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/google/cloud/pubsub/PubSub$ListOption$OptionType/getInteger(java.util.Map)|",
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///com/google/pubsub/v1/ListSubscriptionsRequest$Builder/setPageToken(java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/PubSub$ListOption$OptionType/getString(java.util.Map)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/pubsub/v1/ListSubscriptionsRequest$Builder/build()|",
+      "|java+method:///com/google/pubsub/v1/ListSubscriptionsRequest$Builder/setPageSize(int)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/SubscriberApi/formatProjectName(java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/ListSubscriptionsRequest/newBuilder()|",
+      "|java+method:///com/google/pubsub/v1/ListSubscriptionsRequest$Builder/setProject(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/cloud/pubsub/PubSub$ListOption$OptionType/getInteger(java.util.Map)|",
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///com/google/pubsub/v1/ListSubscriptionsRequest$Builder/setPageToken(java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/pubsub/v1/ListSubscriptionsRequest$Builder/build()|",
+      "|java+method:///com/google/pubsub/v1/ListSubscriptionsRequest$Builder/setPageSize(int)|",
+      "|java+method:///com/google/cloud/pubsub/PubSub$ListOption$OptionType/getString(java.util.Map)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/SubscriberClient/formatProjectName(java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/ListSubscriptionsRequest/newBuilder()|",
+      "|java+method:///com/google/pubsub/v1/ListSubscriptionsRequest$Builder/setProject(java.lang.String)|"
+    ],
+    "affectedLib": "com.google.api.grpc:grpc-google-pubsub-v1:0.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.google.cloud:google-cloud-pubsub:0.7.0",
+    "coordinatesV2": "com.google.cloud:google-cloud-pubsub:0.6.0",
+    "caller": "|java+method:///com/google/cloud/pubsub/PubSubImpl/listSubscriptionsRequest(java.lang.String,com.google.cloud.pubsub.PubSubOptions,java.util.Map)|",
+    "called": "|java+method:///com/google/pubsub/v1/ListTopicSubscriptionsRequest$Builder/setPageToken(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/google/cloud/pubsub/PubSub$ListOption$OptionType/getInteger(java.util.Map)|",
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///com/google/pubsub/v1/ListTopicSubscriptionsRequest$Builder/setTopic(java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/PublisherApi/formatTopicName(java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/ListTopicSubscriptionsRequest$Builder/setPageSize(int)|",
+      "|java+method:///com/google/pubsub/v1/ListTopicSubscriptionsRequest$Builder/build()|",
+      "|java+method:///com/google/pubsub/v1/ListTopicSubscriptionsRequest/newBuilder()|",
+      "|java+method:///com/google/cloud/pubsub/PubSub$ListOption$OptionType/getString(java.util.Map)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/pubsub/v1/ListTopicSubscriptionsRequest$Builder/setPageToken(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/cloud/pubsub/PubSub$ListOption$OptionType/getInteger(java.util.Map)|",
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///com/google/pubsub/v1/ListTopicSubscriptionsRequest$Builder/setTopic(java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/ListTopicSubscriptionsRequest$Builder/setPageSize(int)|",
+      "|java+method:///com/google/pubsub/v1/ListTopicSubscriptionsRequest$Builder/build()|",
+      "|java+method:///com/google/cloud/pubsub/PubSub$ListOption$OptionType/getString(java.util.Map)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/pubsub/v1/ListTopicSubscriptionsRequest$Builder/setPageToken(java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/ListTopicSubscriptionsRequest/newBuilder()|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/PublisherClient/formatTopicName(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "com.google.api.grpc:grpc-google-pubsub-v1:0.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.google.cloud:google-cloud-pubsub:0.7.0",
+    "coordinatesV2": "com.google.cloud:google-cloud-pubsub:0.6.0",
+    "caller": "|java+method:///com/google/cloud/pubsub/PubSubImpl/listTopicsRequest(com.google.cloud.pubsub.PubSubOptions,java.util.Map)|",
+    "called": "|java+method:///com/google/pubsub/v1/ListTopicsRequest/newBuilder()|",
+    "v1Body": [
+      "|java+method:///com/google/cloud/pubsub/PubSub$ListOption$OptionType/get(java.util.Map)|",
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///com/google/pubsub/v1/ListTopicsRequest$Builder/setPageSize(int)|",
+      "|java+method:///com/google/pubsub/v1/ListTopicsRequest$Builder/build()|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/pubsub/v1/ListTopicsRequest$Builder/setPageToken(java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/SubscriberApi/formatProjectName(java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/ListTopicsRequest$Builder/setProject(java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/ListTopicsRequest/newBuilder()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/cloud/pubsub/PubSub$ListOption$OptionType/get(java.util.Map)|",
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///com/google/pubsub/v1/ListTopicsRequest$Builder/setPageSize(int)|",
+      "|java+method:///com/google/pubsub/v1/ListTopicsRequest$Builder/build()|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/SubscriberClient/formatProjectName(java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/pubsub/v1/ListTopicsRequest$Builder/setPageToken(java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/ListTopicsRequest$Builder/setProject(java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/ListTopicsRequest/newBuilder()|"
+    ],
+    "affectedLib": "com.google.api.grpc:grpc-google-pubsub-v1:0.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.google.cloud:google-cloud-pubsub:0.7.0",
+    "coordinatesV2": "com.google.cloud:google-cloud-pubsub:0.6.0",
+    "caller": "|java+method:///com/google/cloud/pubsub/MessageConsumerImpl$ConsumerRunnable/createPullRequest()|",
+    "called": "|java+method:///com/google/pubsub/v1/PullRequest/newBuilder()|",
+    "v1Body": [
+      "|java+method:///com/google/cloud/pubsub/MessageConsumerImpl/access$400(com.google.cloud.pubsub.MessageConsumerImpl)|",
+      "|java+method:///com/google/pubsub/v1/PullRequest/newBuilder()|",
+      "|java+method:///com/google/pubsub/v1/PullRequest$Builder/setMaxMessages(int)|",
+      "|java+method:///com/google/cloud/pubsub/MessageConsumerImpl/access$1100(com.google.cloud.pubsub.MessageConsumerImpl)|",
+      "|java+method:///com/google/cloud/pubsub/MessageConsumerImpl/access$1000(com.google.cloud.pubsub.MessageConsumerImpl)|",
+      "|java+method:///com/google/pubsub/v1/PullRequest$Builder/setReturnImmediately(boolean)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/SubscriberApi/formatSubscriptionName(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicInteger/get()|",
+      "|java+method:///com/google/pubsub/v1/PullRequest$Builder/build()|",
+      "|java+method:///com/google/cloud/pubsub/MessageConsumerImpl/access$300(com.google.cloud.pubsub.MessageConsumerImpl)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/pubsub/v1/PullRequest$Builder/setSubscription(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/cloud/pubsub/MessageConsumerImpl/access$400(com.google.cloud.pubsub.MessageConsumerImpl)|",
+      "|java+method:///com/google/pubsub/v1/PullRequest$Builder/setMaxMessages(int)|",
+      "|java+method:///com/google/cloud/pubsub/MessageConsumerImpl/access$1100(com.google.cloud.pubsub.MessageConsumerImpl)|",
+      "|java+method:///com/google/cloud/pubsub/MessageConsumerImpl/access$1000(com.google.cloud.pubsub.MessageConsumerImpl)|",
+      "|java+method:///com/google/pubsub/v1/PullRequest$Builder/setReturnImmediately(boolean)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicInteger/get()|",
+      "|java+method:///com/google/pubsub/v1/PullRequest$Builder/build()|",
+      "|java+method:///com/google/cloud/pubsub/MessageConsumerImpl/access$300(com.google.cloud.pubsub.MessageConsumerImpl)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/SubscriberClient/formatSubscriptionName(java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/PullRequest/newBuilder()|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/pubsub/v1/PullRequest$Builder/setSubscription(java.lang.String)|"
+    ],
+    "affectedLib": "com.google.api.grpc:grpc-google-pubsub-v1:0.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.google.cloud:google-cloud-pubsub:0.7.0",
+    "coordinatesV2": "com.google.cloud:google-cloud-pubsub:0.6.0",
+    "caller": "|java+method:///com/google/cloud/pubsub/PubSubImpl/modifyAckDeadlineAsync(java.lang.String,int,java.util.concurrent.TimeUnit,java.lang.Iterable)|",
+    "called": "|java+method:///com/google/pubsub/v1/ModifyAckDeadlineRequest$Builder/addAllAckIds(java.lang.Iterable)|",
+    "v1Body": [
+      "|java+method:///com/google/cloud/pubsub/spi/PubSubRpc/modify(com.google.pubsub.v1.ModifyAckDeadlineRequest)|",
+      "|java+method:///com/google/pubsub/v1/ModifyAckDeadlineRequest$Builder/addAllAckIds(java.lang.Iterable)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/getOptions()|",
+      "|java+method:///com/google/pubsub/v1/ModifyAckDeadlineRequest$Builder/build()|",
+      "|java+method:///com/google/pubsub/v1/ModifyAckDeadlineRequest/newBuilder()|",
+      "|java+method:///java/util/concurrent/TimeUnit/convert(long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/transform(java.util.concurrent.Future,com.google.common.base.Function)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/pubsub/v1/ModifyAckDeadlineRequest$Builder/setSubscription(java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/SubscriberApi/formatSubscriptionName(java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/ModifyAckDeadlineRequest$Builder/setAckDeadlineSeconds(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/cloud/pubsub/spi/PubSubRpc/modify(com.google.pubsub.v1.ModifyAckDeadlineRequest)|",
+      "|java+method:///com/google/pubsub/v1/ModifyAckDeadlineRequest$Builder/addAllAckIds(java.lang.Iterable)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/getOptions()|",
+      "|java+method:///com/google/pubsub/v1/ModifyAckDeadlineRequest$Builder/build()|",
+      "|java+method:///java/util/concurrent/TimeUnit/convert(long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/transform(java.util.concurrent.Future,com.google.common.base.Function)|",
+      "|java+method:///com/google/pubsub/v1/ModifyAckDeadlineRequest$Builder/setAckDeadlineSeconds(int)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/SubscriberClient/formatSubscriptionName(java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/ModifyAckDeadlineRequest/newBuilder()|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/pubsub/v1/ModifyAckDeadlineRequest$Builder/setSubscription(java.lang.String)|"
+    ],
+    "affectedLib": "com.google.api.grpc:grpc-google-pubsub-v1:0.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.google.cloud:google-cloud-pubsub:0.7.0",
+    "coordinatesV2": "com.google.cloud:google-cloud-pubsub:0.6.0",
+    "caller": "|java+method:///com/google/cloud/pubsub/PubSubImpl/ackAsync(java.lang.String,java.lang.Iterable)|",
+    "called": "|java+method:///com/google/pubsub/v1/AcknowledgeRequest$Builder/setSubscription(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/google/cloud/pubsub/spi/PubSubRpc/acknowledge(com.google.pubsub.v1.AcknowledgeRequest)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/getOptions()|",
+      "|java+method:///com/google/pubsub/v1/AcknowledgeRequest$Builder/build()|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/pubsub/v1/AcknowledgeRequest$Builder/addAllAckIds(java.lang.Iterable)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/transform(java.util.concurrent.Future,com.google.common.base.Function)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/SubscriberApi/formatSubscriptionName(java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/AcknowledgeRequest/newBuilder()|",
+      "|java+method:///com/google/pubsub/v1/AcknowledgeRequest$Builder/setSubscription(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/cloud/pubsub/spi/PubSubRpc/acknowledge(com.google.pubsub.v1.AcknowledgeRequest)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/getOptions()|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/SubscriberClient/formatSubscriptionName(java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/AcknowledgeRequest$Builder/build()|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/pubsub/v1/AcknowledgeRequest$Builder/addAllAckIds(java.lang.Iterable)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/transform(java.util.concurrent.Future,com.google.common.base.Function)|",
+      "|java+method:///com/google/pubsub/v1/AcknowledgeRequest/newBuilder()|",
+      "|java+method:///com/google/pubsub/v1/AcknowledgeRequest$Builder/setSubscription(java.lang.String)|"
+    ],
+    "affectedLib": "com.google.api.grpc:grpc-google-pubsub-v1:0.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.google.cloud:google-cloud-pubsub:0.7.0",
+    "coordinatesV2": "com.google.cloud:google-cloud-pubsub:0.6.0",
+    "caller": "|java+method:///com/google/cloud/pubsub/PubSubImpl/pullAsync(java.lang.String,int,boolean)|",
+    "called": "|java+method:///com/google/pubsub/v1/PullRequest/newBuilder()|",
+    "v1Body": [
+      "|java+constructor:///com/google/cloud/pubsub/PubSubImpl$11/PubSubImpl$11(com.google.cloud.pubsub.PubSubImpl,java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/PullRequest$Builder/build()|",
+      "|java+method:///com/google/pubsub/v1/PullRequest/newBuilder()|",
+      "|java+method:///com/google/pubsub/v1/PullRequest$Builder/setMaxMessages(int)|",
+      "|java+method:///com/google/cloud/pubsub/spi/PubSubRpc$PullFuture/addCallback(com.google.cloud.pubsub.spi.PubSubRpc$PullCallback)|",
+      "|java+method:///com/google/pubsub/v1/PullRequest$Builder/setReturnImmediately(boolean)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/transform(java.util.concurrent.Future,com.google.common.base.Function)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/SubscriberApi/formatSubscriptionName(java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/spi/PubSubRpc/pull(com.google.pubsub.v1.PullRequest)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/getOptions()|",
+      "|java+constructor:///com/google/cloud/pubsub/PubSubImpl$10/PubSubImpl$10(com.google.cloud.pubsub.PubSubImpl,java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/pubsub/v1/PullRequest$Builder/setSubscription(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/google/cloud/pubsub/PubSubImpl$11/PubSubImpl$11(com.google.cloud.pubsub.PubSubImpl,java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/PullRequest$Builder/build()|",
+      "|java+method:///com/google/pubsub/v1/PullRequest$Builder/setMaxMessages(int)|",
+      "|java+method:///com/google/cloud/pubsub/spi/PubSubRpc$PullFuture/addCallback(com.google.cloud.pubsub.spi.PubSubRpc$PullCallback)|",
+      "|java+method:///com/google/pubsub/v1/PullRequest$Builder/setReturnImmediately(boolean)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/transform(java.util.concurrent.Future,com.google.common.base.Function)|",
+      "|java+method:///com/google/cloud/pubsub/spi/PubSubRpc/pull(com.google.pubsub.v1.PullRequest)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/getOptions()|",
+      "|java+constructor:///com/google/cloud/pubsub/PubSubImpl$10/PubSubImpl$10(com.google.cloud.pubsub.PubSubImpl,java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/SubscriberClient/formatSubscriptionName(java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/PullRequest/newBuilder()|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/pubsub/v1/PullRequest$Builder/setSubscription(java.lang.String)|"
+    ],
+    "affectedLib": "com.google.api.grpc:grpc-google-pubsub-v1:0.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.google.cloud:google-cloud-pubsub:0.7.0",
+    "coordinatesV2": "com.google.cloud:google-cloud-pubsub:0.6.0",
+    "caller": "|java+method:///com/google/cloud/pubsub/PubSubImpl/getTopicAsync(java.lang.String)|",
+    "called": "|java+method:///com/google/pubsub/v1/GetTopicRequest/newBuilder()|",
+    "v1Body": [
+      "|java+method:///com/google/pubsub/v1/GetTopicRequest/newBuilder()|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/PublisherApi/formatTopicName(java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/getOptions()|",
+      "|java+method:///com/google/cloud/pubsub/Topic/fromPbFunction(com.google.cloud.pubsub.PubSub)|",
+      "|java+method:///com/google/cloud/pubsub/spi/PubSubRpc/get(com.google.pubsub.v1.GetTopicRequest)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/transform(java.util.concurrent.Future,com.google.common.base.Function)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/pubsub/v1/GetTopicRequest$Builder/setTopic(java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/GetTopicRequest$Builder/build()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/pubsub/v1/GetTopicRequest/newBuilder()|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/getOptions()|",
+      "|java+method:///com/google/cloud/pubsub/Topic/fromPbFunction(com.google.cloud.pubsub.PubSub)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/PublisherClient/formatTopicName(java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/spi/PubSubRpc/get(com.google.pubsub.v1.GetTopicRequest)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/transform(java.util.concurrent.Future,com.google.common.base.Function)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/pubsub/v1/GetTopicRequest$Builder/setTopic(java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/GetTopicRequest$Builder/build()|"
+    ],
+    "affectedLib": "com.google.api.grpc:grpc-google-pubsub-v1:0.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.google.cloud:google-cloud-pubsub:0.7.0",
+    "coordinatesV2": "com.google.cloud:google-cloud-pubsub:0.6.0",
+    "caller": "|java+method:///com/google/cloud/pubsub/SubscriptionInfo/toPb(java.lang.String)|",
+    "called": "|java+method:///com/google/pubsub/v1/Subscription/newBuilder()|",
+    "v1Body": [
+      "|java+method:///com/google/pubsub/v1/Subscription$Builder/setAckDeadlineSeconds(int)|",
+      "|java+method:///com/google/pubsub/v1/Subscription$Builder/setPushConfig(com.google.pubsub.v1.PushConfig)|",
+      "|java+method:///com/google/pubsub/v1/Subscription$Builder/setTopic(java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/TopicId/toPb(java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/PushConfig/toPb()|",
+      "|java+method:///com/google/pubsub/v1/Subscription/newBuilder()|",
+      "|java+method:///com/google/pubsub/v1/Subscription$Builder/setName(java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/SubscriberApi/formatSubscriptionName(java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/Subscription$Builder/build()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/pubsub/v1/Subscription$Builder/setAckDeadlineSeconds(int)|",
+      "|java+method:///com/google/pubsub/v1/Subscription$Builder/setPushConfig(com.google.pubsub.v1.PushConfig)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/SubscriberClient/formatSubscriptionName(java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/Subscription$Builder/setTopic(java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/TopicId/toPb(java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/PushConfig/toPb()|",
+      "|java+method:///com/google/pubsub/v1/Subscription/newBuilder()|",
+      "|java+method:///com/google/pubsub/v1/Subscription$Builder/setName(java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/Subscription$Builder/build()|"
+    ],
+    "affectedLib": "com.google.api.grpc:grpc-google-pubsub-v1:0.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.google.cloud:google-cloud-pubsub:0.7.0",
+    "coordinatesV2": "com.google.cloud:google-cloud-pubsub:0.6.0",
+    "caller": "|java+method:///com/google/cloud/pubsub/PubSubImpl/publishRequest(com.google.cloud.pubsub.PubSubOptions,java.lang.String,java.lang.Iterable)|",
+    "called": "|java+method:///com/google/pubsub/v1/PublishRequest$Builder/addAllMessages(java.lang.Iterable)|",
+    "v1Body": [
+      "|java+method:///com/google/pubsub/v1/PublishRequest$Builder/build()|",
+      "|java+method:///com/google/pubsub/v1/PublishRequest$Builder/addAllMessages(java.lang.Iterable)|",
+      "|java+method:///com/google/pubsub/v1/PublishRequest$Builder/setTopic(java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/PublishRequest/newBuilder()|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/common/collect/Iterables/transform(java.lang.Iterable,com.google.common.base.Function)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/PublisherApi/formatTopicName(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/pubsub/v1/PublishRequest$Builder/build()|",
+      "|java+method:///com/google/common/collect/Iterables/transform(java.lang.Iterable,com.google.common.base.Function)|",
+      "|java+method:///com/google/pubsub/v1/PublishRequest$Builder/addAllMessages(java.lang.Iterable)|",
+      "|java+method:///com/google/pubsub/v1/PublishRequest$Builder/setTopic(java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/PublisherClient/formatTopicName(java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/PublishRequest/newBuilder()|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|"
+    ],
+    "affectedLib": "com.google.api.grpc:grpc-google-pubsub-v1:0.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.google.cloud:google-cloud-pubsub:0.7.0",
+    "coordinatesV2": "com.google.cloud:google-cloud-pubsub:0.6.0",
+    "caller": "|java+method:///com/google/cloud/pubsub/PubSubImpl/deleteSubscriptionAsync(java.lang.String)|",
+    "called": "|java+method:///com/google/pubsub/v1/DeleteSubscriptionRequest$Builder/setSubscription(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/getOptions()|",
+      "|java+method:///com/google/pubsub/v1/DeleteSubscriptionRequest$Builder/build()|",
+      "|java+method:///com/google/cloud/pubsub/spi/PubSubRpc/delete(com.google.pubsub.v1.DeleteSubscriptionRequest)|",
+      "|java+method:///com/google/pubsub/v1/DeleteSubscriptionRequest/newBuilder()|",
+      "|java+method:///com/google/pubsub/v1/DeleteSubscriptionRequest$Builder/setSubscription(java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/transform(java.util.concurrent.Future,com.google.common.base.Function)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/SubscriberApi/formatSubscriptionName(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/getOptions()|",
+      "|java+method:///com/google/pubsub/v1/DeleteSubscriptionRequest$Builder/build()|",
+      "|java+method:///com/google/cloud/pubsub/spi/PubSubRpc/delete(com.google.pubsub.v1.DeleteSubscriptionRequest)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/SubscriberClient/formatSubscriptionName(java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/DeleteSubscriptionRequest/newBuilder()|",
+      "|java+method:///com/google/pubsub/v1/DeleteSubscriptionRequest$Builder/setSubscription(java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/transform(java.util.concurrent.Future,com.google.common.base.Function)|"
+    ],
+    "affectedLib": "com.google.api.grpc:grpc-google-pubsub-v1:0.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.google.cloud:google-cloud-pubsub:0.7.0",
+    "coordinatesV2": "com.google.cloud:google-cloud-pubsub:0.6.0",
+    "caller": "|java+method:///com/google/cloud/pubsub/PubSubImpl/getSubscriptionAsync(java.lang.String)|",
+    "called": "|java+method:///com/google/pubsub/v1/GetSubscriptionRequest$Builder/setSubscription(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/google/cloud/pubsub/spi/PubSubRpc/get(com.google.pubsub.v1.GetSubscriptionRequest)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/getOptions()|",
+      "|java+method:///com/google/pubsub/v1/GetSubscriptionRequest$Builder/setSubscription(java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/Subscription/fromPbFunction(com.google.cloud.pubsub.PubSub)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/pubsub/v1/GetSubscriptionRequest/newBuilder()|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/transform(java.util.concurrent.Future,com.google.common.base.Function)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/SubscriberApi/formatSubscriptionName(java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/GetSubscriptionRequest$Builder/build()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/cloud/pubsub/spi/PubSubRpc/get(com.google.pubsub.v1.GetSubscriptionRequest)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/getOptions()|",
+      "|java+method:///com/google/pubsub/v1/GetSubscriptionRequest$Builder/setSubscription(java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/Subscription/fromPbFunction(com.google.cloud.pubsub.PubSub)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/SubscriberClient/formatSubscriptionName(java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/pubsub/v1/GetSubscriptionRequest/newBuilder()|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/transform(java.util.concurrent.Future,com.google.common.base.Function)|",
+      "|java+method:///com/google/pubsub/v1/GetSubscriptionRequest$Builder/build()|"
+    ],
+    "affectedLib": "com.google.api.grpc:grpc-google-pubsub-v1:0.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.google.cloud:google-cloud-pubsub:0.7.0",
+    "coordinatesV2": "com.google.cloud:google-cloud-pubsub:0.6.0",
+    "caller": "|java+method:///com/google/cloud/pubsub/TopicInfo/toPb(java.lang.String)|",
+    "called": "|java+method:///com/google/pubsub/v1/Topic/newBuilder()|",
+    "v1Body": [
+      "|java+method:///com/google/cloud/pubsub/spi/v1/PublisherApi/formatTopicName(java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/Topic/newBuilder()|",
+      "|java+method:///com/google/pubsub/v1/Topic$Builder/setName(java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/Topic$Builder/build()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/pubsub/v1/Topic/newBuilder()|",
+      "|java+method:///com/google/pubsub/v1/Topic$Builder/setName(java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/PublisherClient/formatTopicName(java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/Topic$Builder/build()|"
+    ],
+    "affectedLib": "com.google.api.grpc:grpc-google-pubsub-v1:0.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.google.cloud:google-cloud-pubsub:0.7.0",
+    "coordinatesV2": "com.google.cloud:google-cloud-pubsub:0.6.0",
+    "caller": "|java+method:///com/google/cloud/pubsub/SubscriptionInfo/fromPb(com.google.pubsub.v1.Subscription)|",
+    "called": "|java+method:///com/google/pubsub/v1/Subscription/getTopic()|",
+    "v1Body": [
+      "|java+method:///com/google/cloud/pubsub/SubscriptionInfo$Builder/build()|",
+      "|java+method:///com/google/pubsub/v1/Subscription/getPushConfig()|",
+      "|java+method:///com/google/pubsub/v1/Subscription/getAckDeadlineSeconds()|",
+      "|java+method:///com/google/cloud/pubsub/SubscriptionInfo$Builder/setPushConfig(com.google.cloud.pubsub.PushConfig)|",
+      "|java+method:///com/google/pubsub/v1/Subscription/hasPushConfig()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/SubscriberApi/parseSubscriptionFromSubscriptionName(java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/Subscription/getTopic()|",
+      "|java+method:///com/google/cloud/pubsub/PushConfig/fromPb(com.google.pubsub.v1.PushConfig)|",
+      "|java+method:///com/google/pubsub/v1/Subscription/getName()|",
+      "|java+method:///com/google/pubsub/v1/PushConfig/getPushEndpoint()|",
+      "|java+method:///com/google/cloud/pubsub/SubscriptionInfo/newBuilder(com.google.cloud.pubsub.TopicId,java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/SubscriptionInfo$Builder/setAckDeadLineSeconds(int)|",
+      "|java+method:///com/google/cloud/pubsub/TopicId/fromPb(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/cloud/pubsub/spi/v1/SubscriberClient/parseSubscriptionFromSubscriptionName(java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/SubscriptionInfo$Builder/build()|",
+      "|java+method:///com/google/pubsub/v1/Subscription/getPushConfig()|",
+      "|java+method:///com/google/pubsub/v1/Subscription/getAckDeadlineSeconds()|",
+      "|java+method:///com/google/cloud/pubsub/SubscriptionInfo$Builder/setPushConfig(com.google.cloud.pubsub.PushConfig)|",
+      "|java+method:///com/google/pubsub/v1/Subscription/hasPushConfig()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///com/google/pubsub/v1/Subscription/getTopic()|",
+      "|java+method:///com/google/cloud/pubsub/PushConfig/fromPb(com.google.pubsub.v1.PushConfig)|",
+      "|java+method:///com/google/pubsub/v1/Subscription/getName()|",
+      "|java+method:///com/google/pubsub/v1/PushConfig/getPushEndpoint()|",
+      "|java+method:///com/google/cloud/pubsub/SubscriptionInfo/newBuilder(com.google.cloud.pubsub.TopicId,java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/SubscriptionInfo$Builder/setAckDeadLineSeconds(int)|",
+      "|java+method:///com/google/cloud/pubsub/TopicId/fromPb(java.lang.String)|"
+    ],
+    "affectedLib": "com.google.api.grpc:grpc-google-pubsub-v1:0.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.google.cloud:google-cloud-pubsub:0.7.0",
+    "coordinatesV2": "com.google.cloud:google-cloud-pubsub:0.6.0",
+    "caller": "|java+method:///com/google/cloud/pubsub/PubSubImpl/replacePushConfigAsync(java.lang.String,com.google.cloud.pubsub.PushConfig)|",
+    "called": "|java+method:///com/google/pubsub/v1/ModifyPushConfigRequest$Builder/setSubscription(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/getOptions()|",
+      "|java+method:///com/google/pubsub/v1/ModifyPushConfigRequest$Builder/setPushConfig(com.google.pubsub.v1.PushConfig)|",
+      "|java+method:///com/google/cloud/pubsub/PushConfig/toPb()|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/pubsub/v1/ModifyPushConfigRequest$Builder/build()|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/transform(java.util.concurrent.Future,com.google.common.base.Function)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/SubscriberApi/formatSubscriptionName(java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/ModifyPushConfigRequest$Builder/setSubscription(java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/spi/PubSubRpc/modify(com.google.pubsub.v1.ModifyPushConfigRequest)|",
+      "|java+method:///com/google/pubsub/v1/ModifyPushConfigRequest/newBuilder()|",
+      "|java+method:///com/google/pubsub/v1/PushConfig/getDefaultInstance()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/getOptions()|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/SubscriberClient/formatSubscriptionName(java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/ModifyPushConfigRequest$Builder/setPushConfig(com.google.pubsub.v1.PushConfig)|",
+      "|java+method:///com/google/cloud/pubsub/PushConfig/toPb()|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/pubsub/v1/ModifyPushConfigRequest$Builder/build()|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/transform(java.util.concurrent.Future,com.google.common.base.Function)|",
+      "|java+method:///com/google/pubsub/v1/ModifyPushConfigRequest$Builder/setSubscription(java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/spi/PubSubRpc/modify(com.google.pubsub.v1.ModifyPushConfigRequest)|",
+      "|java+method:///com/google/pubsub/v1/ModifyPushConfigRequest/newBuilder()|",
+      "|java+method:///com/google/pubsub/v1/PushConfig/getDefaultInstance()|"
+    ],
+    "affectedLib": "com.google.api.grpc:grpc-google-pubsub-v1:0.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.google.cloud:google-cloud-pubsub:0.6.0",
+    "coordinatesV2": "com.google.cloud:google-cloud-pubsub:0.7.0",
+    "caller": "|java+method:///com/google/cloud/pubsub/TopicInfo/fromPb(com.google.pubsub.v1.Topic)|",
+    "called": "|java+method:///com/google/pubsub/v1/Topic/getName()|",
+    "v1Body": [
+      "|java+method:///com/google/cloud/pubsub/spi/v1/PublisherApi/parseTopicFromTopicName(java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/TopicInfo$Builder/build()|",
+      "|java+method:///com/google/pubsub/v1/Topic/getName()|",
+      "|java+method:///com/google/cloud/pubsub/TopicInfo/newBuilder(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/cloud/pubsub/TopicInfo$Builder/build()|",
+      "|java+method:///com/google/pubsub/v1/Topic/getName()|",
+      "|java+method:///com/google/cloud/pubsub/TopicInfo/newBuilder(java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/PublisherClient/parseTopicFromTopicName(java.lang.String)|"
+    ],
+    "affectedLib": "com.google.api.grpc:grpc-google-cloud-pubsub-v1:0.1.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.google.cloud:google-cloud-pubsub:0.6.0",
+    "coordinatesV2": "com.google.cloud:google-cloud-pubsub:0.7.0",
+    "caller": "|java+method:///com/google/cloud/pubsub/PubSubImpl/deleteTopicAsync(java.lang.String)|",
+    "called": "|java+method:///com/google/pubsub/v1/DeleteTopicRequest$Builder/setTopic(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/google/cloud/pubsub/spi/v1/PublisherApi/formatTopicName(java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/getOptions()|",
+      "|java+method:///com/google/pubsub/v1/DeleteTopicRequest/newBuilder()|",
+      "|java+method:///com/google/cloud/pubsub/spi/PubSubRpc/delete(com.google.pubsub.v1.DeleteTopicRequest)|",
+      "|java+method:///com/google/pubsub/v1/DeleteTopicRequest$Builder/build()|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/transform(java.util.concurrent.Future,com.google.common.base.Function)|",
+      "|java+method:///com/google/pubsub/v1/DeleteTopicRequest$Builder/setTopic(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/getOptions()|",
+      "|java+method:///com/google/pubsub/v1/DeleteTopicRequest/newBuilder()|",
+      "|java+method:///com/google/pubsub/v1/DeleteTopicRequest$Builder/build()|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/transform(java.util.concurrent.Future,com.google.common.base.Function)|",
+      "|java+method:///com/google/pubsub/v1/DeleteTopicRequest$Builder/setTopic(java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/PublisherClient/formatTopicName(java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/spi/PubSubRpc/delete(com.google.pubsub.v1.DeleteTopicRequest)|"
+    ],
+    "affectedLib": "com.google.api.grpc:grpc-google-cloud-pubsub-v1:0.1.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.google.cloud:google-cloud-pubsub:0.6.0",
+    "coordinatesV2": "com.google.cloud:google-cloud-pubsub:0.7.0",
+    "caller": "|java+method:///com/google/cloud/pubsub/PubSubImpl/listSubscriptionsRequest(com.google.cloud.pubsub.PubSubOptions,java.util.Map)|",
+    "called": "|java+method:///com/google/pubsub/v1/ListSubscriptionsRequest$Builder/setPageToken(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/google/cloud/pubsub/PubSub$ListOption$OptionType/getInteger(java.util.Map)|",
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///com/google/pubsub/v1/ListSubscriptionsRequest$Builder/setPageToken(java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/PubSub$ListOption$OptionType/getString(java.util.Map)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/pubsub/v1/ListSubscriptionsRequest$Builder/build()|",
+      "|java+method:///com/google/pubsub/v1/ListSubscriptionsRequest$Builder/setPageSize(int)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/SubscriberApi/formatProjectName(java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/ListSubscriptionsRequest/newBuilder()|",
+      "|java+method:///com/google/pubsub/v1/ListSubscriptionsRequest$Builder/setProject(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/cloud/pubsub/PubSub$ListOption$OptionType/getInteger(java.util.Map)|",
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///com/google/pubsub/v1/ListSubscriptionsRequest$Builder/setPageToken(java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/pubsub/v1/ListSubscriptionsRequest$Builder/build()|",
+      "|java+method:///com/google/pubsub/v1/ListSubscriptionsRequest$Builder/setPageSize(int)|",
+      "|java+method:///com/google/cloud/pubsub/PubSub$ListOption$OptionType/getString(java.util.Map)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/SubscriberClient/formatProjectName(java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/ListSubscriptionsRequest/newBuilder()|",
+      "|java+method:///com/google/pubsub/v1/ListSubscriptionsRequest$Builder/setProject(java.lang.String)|"
+    ],
+    "affectedLib": "com.google.api.grpc:grpc-google-cloud-pubsub-v1:0.1.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.google.cloud:google-cloud-pubsub:0.6.0",
+    "coordinatesV2": "com.google.cloud:google-cloud-pubsub:0.7.0",
+    "caller": "|java+method:///com/google/cloud/pubsub/PubSubImpl/listSubscriptionsRequest(java.lang.String,com.google.cloud.pubsub.PubSubOptions,java.util.Map)|",
+    "called": "|java+method:///com/google/pubsub/v1/ListTopicSubscriptionsRequest$Builder/setPageToken(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/google/cloud/pubsub/PubSub$ListOption$OptionType/getInteger(java.util.Map)|",
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///com/google/pubsub/v1/ListTopicSubscriptionsRequest$Builder/setTopic(java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/PublisherApi/formatTopicName(java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/ListTopicSubscriptionsRequest$Builder/setPageSize(int)|",
+      "|java+method:///com/google/pubsub/v1/ListTopicSubscriptionsRequest$Builder/build()|",
+      "|java+method:///com/google/pubsub/v1/ListTopicSubscriptionsRequest/newBuilder()|",
+      "|java+method:///com/google/cloud/pubsub/PubSub$ListOption$OptionType/getString(java.util.Map)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/pubsub/v1/ListTopicSubscriptionsRequest$Builder/setPageToken(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/cloud/pubsub/PubSub$ListOption$OptionType/getInteger(java.util.Map)|",
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///com/google/pubsub/v1/ListTopicSubscriptionsRequest$Builder/setTopic(java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/ListTopicSubscriptionsRequest$Builder/setPageSize(int)|",
+      "|java+method:///com/google/pubsub/v1/ListTopicSubscriptionsRequest$Builder/build()|",
+      "|java+method:///com/google/cloud/pubsub/PubSub$ListOption$OptionType/getString(java.util.Map)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/pubsub/v1/ListTopicSubscriptionsRequest$Builder/setPageToken(java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/ListTopicSubscriptionsRequest/newBuilder()|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/PublisherClient/formatTopicName(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "com.google.api.grpc:grpc-google-cloud-pubsub-v1:0.1.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.google.cloud:google-cloud-pubsub:0.6.0",
+    "coordinatesV2": "com.google.cloud:google-cloud-pubsub:0.7.0",
+    "caller": "|java+method:///com/google/cloud/pubsub/PubSubImpl/listTopicsRequest(com.google.cloud.pubsub.PubSubOptions,java.util.Map)|",
+    "called": "|java+method:///com/google/pubsub/v1/ListTopicsRequest/newBuilder()|",
+    "v1Body": [
+      "|java+method:///com/google/cloud/pubsub/PubSub$ListOption$OptionType/get(java.util.Map)|",
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///com/google/pubsub/v1/ListTopicsRequest$Builder/setPageSize(int)|",
+      "|java+method:///com/google/pubsub/v1/ListTopicsRequest$Builder/build()|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/pubsub/v1/ListTopicsRequest$Builder/setPageToken(java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/SubscriberApi/formatProjectName(java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/ListTopicsRequest$Builder/setProject(java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/ListTopicsRequest/newBuilder()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/cloud/pubsub/PubSub$ListOption$OptionType/get(java.util.Map)|",
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///com/google/pubsub/v1/ListTopicsRequest$Builder/setPageSize(int)|",
+      "|java+method:///com/google/pubsub/v1/ListTopicsRequest$Builder/build()|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/SubscriberClient/formatProjectName(java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/pubsub/v1/ListTopicsRequest$Builder/setPageToken(java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/ListTopicsRequest$Builder/setProject(java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/ListTopicsRequest/newBuilder()|"
+    ],
+    "affectedLib": "com.google.api.grpc:grpc-google-cloud-pubsub-v1:0.1.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.google.cloud:google-cloud-pubsub:0.6.0",
+    "coordinatesV2": "com.google.cloud:google-cloud-pubsub:0.7.0",
+    "caller": "|java+method:///com/google/cloud/pubsub/MessageConsumerImpl$ConsumerRunnable/createPullRequest()|",
+    "called": "|java+method:///com/google/pubsub/v1/PullRequest/newBuilder()|",
+    "v1Body": [
+      "|java+method:///com/google/cloud/pubsub/MessageConsumerImpl/access$400(com.google.cloud.pubsub.MessageConsumerImpl)|",
+      "|java+method:///com/google/pubsub/v1/PullRequest/newBuilder()|",
+      "|java+method:///com/google/pubsub/v1/PullRequest$Builder/setMaxMessages(int)|",
+      "|java+method:///com/google/cloud/pubsub/MessageConsumerImpl/access$1100(com.google.cloud.pubsub.MessageConsumerImpl)|",
+      "|java+method:///com/google/cloud/pubsub/MessageConsumerImpl/access$1000(com.google.cloud.pubsub.MessageConsumerImpl)|",
+      "|java+method:///com/google/pubsub/v1/PullRequest$Builder/setReturnImmediately(boolean)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/SubscriberApi/formatSubscriptionName(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicInteger/get()|",
+      "|java+method:///com/google/pubsub/v1/PullRequest$Builder/build()|",
+      "|java+method:///com/google/cloud/pubsub/MessageConsumerImpl/access$300(com.google.cloud.pubsub.MessageConsumerImpl)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/pubsub/v1/PullRequest$Builder/setSubscription(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/cloud/pubsub/MessageConsumerImpl/access$400(com.google.cloud.pubsub.MessageConsumerImpl)|",
+      "|java+method:///com/google/pubsub/v1/PullRequest$Builder/setMaxMessages(int)|",
+      "|java+method:///com/google/cloud/pubsub/MessageConsumerImpl/access$1100(com.google.cloud.pubsub.MessageConsumerImpl)|",
+      "|java+method:///com/google/cloud/pubsub/MessageConsumerImpl/access$1000(com.google.cloud.pubsub.MessageConsumerImpl)|",
+      "|java+method:///com/google/pubsub/v1/PullRequest$Builder/setReturnImmediately(boolean)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicInteger/get()|",
+      "|java+method:///com/google/pubsub/v1/PullRequest$Builder/build()|",
+      "|java+method:///com/google/cloud/pubsub/MessageConsumerImpl/access$300(com.google.cloud.pubsub.MessageConsumerImpl)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/SubscriberClient/formatSubscriptionName(java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/PullRequest/newBuilder()|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/pubsub/v1/PullRequest$Builder/setSubscription(java.lang.String)|"
+    ],
+    "affectedLib": "com.google.api.grpc:grpc-google-cloud-pubsub-v1:0.1.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.google.cloud:google-cloud-pubsub:0.6.0",
+    "coordinatesV2": "com.google.cloud:google-cloud-pubsub:0.7.0",
+    "caller": "|java+method:///com/google/cloud/pubsub/PubSubImpl/modifyAckDeadlineAsync(java.lang.String,int,java.util.concurrent.TimeUnit,java.lang.Iterable)|",
+    "called": "|java+method:///com/google/pubsub/v1/ModifyAckDeadlineRequest$Builder/addAllAckIds(java.lang.Iterable)|",
+    "v1Body": [
+      "|java+method:///com/google/cloud/pubsub/spi/PubSubRpc/modify(com.google.pubsub.v1.ModifyAckDeadlineRequest)|",
+      "|java+method:///com/google/pubsub/v1/ModifyAckDeadlineRequest$Builder/addAllAckIds(java.lang.Iterable)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/getOptions()|",
+      "|java+method:///com/google/pubsub/v1/ModifyAckDeadlineRequest$Builder/build()|",
+      "|java+method:///com/google/pubsub/v1/ModifyAckDeadlineRequest/newBuilder()|",
+      "|java+method:///java/util/concurrent/TimeUnit/convert(long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/transform(java.util.concurrent.Future,com.google.common.base.Function)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/pubsub/v1/ModifyAckDeadlineRequest$Builder/setSubscription(java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/SubscriberApi/formatSubscriptionName(java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/ModifyAckDeadlineRequest$Builder/setAckDeadlineSeconds(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/cloud/pubsub/spi/PubSubRpc/modify(com.google.pubsub.v1.ModifyAckDeadlineRequest)|",
+      "|java+method:///com/google/pubsub/v1/ModifyAckDeadlineRequest$Builder/addAllAckIds(java.lang.Iterable)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/getOptions()|",
+      "|java+method:///com/google/pubsub/v1/ModifyAckDeadlineRequest$Builder/build()|",
+      "|java+method:///java/util/concurrent/TimeUnit/convert(long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/transform(java.util.concurrent.Future,com.google.common.base.Function)|",
+      "|java+method:///com/google/pubsub/v1/ModifyAckDeadlineRequest$Builder/setAckDeadlineSeconds(int)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/SubscriberClient/formatSubscriptionName(java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/ModifyAckDeadlineRequest/newBuilder()|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/pubsub/v1/ModifyAckDeadlineRequest$Builder/setSubscription(java.lang.String)|"
+    ],
+    "affectedLib": "com.google.api.grpc:grpc-google-cloud-pubsub-v1:0.1.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.google.cloud:google-cloud-pubsub:0.6.0",
+    "coordinatesV2": "com.google.cloud:google-cloud-pubsub:0.7.0",
+    "caller": "|java+method:///com/google/cloud/pubsub/PubSubImpl/ackAsync(java.lang.String,java.lang.Iterable)|",
+    "called": "|java+method:///com/google/pubsub/v1/AcknowledgeRequest$Builder/setSubscription(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/google/cloud/pubsub/spi/PubSubRpc/acknowledge(com.google.pubsub.v1.AcknowledgeRequest)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/getOptions()|",
+      "|java+method:///com/google/pubsub/v1/AcknowledgeRequest$Builder/build()|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/pubsub/v1/AcknowledgeRequest$Builder/addAllAckIds(java.lang.Iterable)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/transform(java.util.concurrent.Future,com.google.common.base.Function)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/SubscriberApi/formatSubscriptionName(java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/AcknowledgeRequest/newBuilder()|",
+      "|java+method:///com/google/pubsub/v1/AcknowledgeRequest$Builder/setSubscription(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/cloud/pubsub/spi/PubSubRpc/acknowledge(com.google.pubsub.v1.AcknowledgeRequest)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/getOptions()|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/SubscriberClient/formatSubscriptionName(java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/AcknowledgeRequest$Builder/build()|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/pubsub/v1/AcknowledgeRequest$Builder/addAllAckIds(java.lang.Iterable)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/transform(java.util.concurrent.Future,com.google.common.base.Function)|",
+      "|java+method:///com/google/pubsub/v1/AcknowledgeRequest/newBuilder()|",
+      "|java+method:///com/google/pubsub/v1/AcknowledgeRequest$Builder/setSubscription(java.lang.String)|"
+    ],
+    "affectedLib": "com.google.api.grpc:grpc-google-cloud-pubsub-v1:0.1.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.google.cloud:google-cloud-pubsub:0.6.0",
+    "coordinatesV2": "com.google.cloud:google-cloud-pubsub:0.7.0",
+    "caller": "|java+method:///com/google/cloud/pubsub/PubSubImpl/pullAsync(java.lang.String,int,boolean)|",
+    "called": "|java+method:///com/google/pubsub/v1/PullRequest/newBuilder()|",
+    "v1Body": [
+      "|java+constructor:///com/google/cloud/pubsub/PubSubImpl$11/PubSubImpl$11(com.google.cloud.pubsub.PubSubImpl,java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/PullRequest$Builder/build()|",
+      "|java+method:///com/google/pubsub/v1/PullRequest/newBuilder()|",
+      "|java+method:///com/google/pubsub/v1/PullRequest$Builder/setMaxMessages(int)|",
+      "|java+method:///com/google/cloud/pubsub/spi/PubSubRpc$PullFuture/addCallback(com.google.cloud.pubsub.spi.PubSubRpc$PullCallback)|",
+      "|java+method:///com/google/pubsub/v1/PullRequest$Builder/setReturnImmediately(boolean)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/transform(java.util.concurrent.Future,com.google.common.base.Function)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/SubscriberApi/formatSubscriptionName(java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/spi/PubSubRpc/pull(com.google.pubsub.v1.PullRequest)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/getOptions()|",
+      "|java+constructor:///com/google/cloud/pubsub/PubSubImpl$10/PubSubImpl$10(com.google.cloud.pubsub.PubSubImpl,java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/pubsub/v1/PullRequest$Builder/setSubscription(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/google/cloud/pubsub/PubSubImpl$11/PubSubImpl$11(com.google.cloud.pubsub.PubSubImpl,java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/PullRequest$Builder/build()|",
+      "|java+method:///com/google/pubsub/v1/PullRequest$Builder/setMaxMessages(int)|",
+      "|java+method:///com/google/cloud/pubsub/spi/PubSubRpc$PullFuture/addCallback(com.google.cloud.pubsub.spi.PubSubRpc$PullCallback)|",
+      "|java+method:///com/google/pubsub/v1/PullRequest$Builder/setReturnImmediately(boolean)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/transform(java.util.concurrent.Future,com.google.common.base.Function)|",
+      "|java+method:///com/google/cloud/pubsub/spi/PubSubRpc/pull(com.google.pubsub.v1.PullRequest)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/getOptions()|",
+      "|java+constructor:///com/google/cloud/pubsub/PubSubImpl$10/PubSubImpl$10(com.google.cloud.pubsub.PubSubImpl,java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/SubscriberClient/formatSubscriptionName(java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/PullRequest/newBuilder()|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/pubsub/v1/PullRequest$Builder/setSubscription(java.lang.String)|"
+    ],
+    "affectedLib": "com.google.api.grpc:grpc-google-cloud-pubsub-v1:0.1.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.google.cloud:google-cloud-pubsub:0.6.0",
+    "coordinatesV2": "com.google.cloud:google-cloud-pubsub:0.7.0",
+    "caller": "|java+method:///com/google/cloud/pubsub/PubSubImpl/getTopicAsync(java.lang.String)|",
+    "called": "|java+method:///com/google/pubsub/v1/GetTopicRequest/newBuilder()|",
+    "v1Body": [
+      "|java+method:///com/google/pubsub/v1/GetTopicRequest/newBuilder()|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/PublisherApi/formatTopicName(java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/getOptions()|",
+      "|java+method:///com/google/cloud/pubsub/Topic/fromPbFunction(com.google.cloud.pubsub.PubSub)|",
+      "|java+method:///com/google/cloud/pubsub/spi/PubSubRpc/get(com.google.pubsub.v1.GetTopicRequest)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/transform(java.util.concurrent.Future,com.google.common.base.Function)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/pubsub/v1/GetTopicRequest$Builder/setTopic(java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/GetTopicRequest$Builder/build()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/pubsub/v1/GetTopicRequest/newBuilder()|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/getOptions()|",
+      "|java+method:///com/google/cloud/pubsub/Topic/fromPbFunction(com.google.cloud.pubsub.PubSub)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/PublisherClient/formatTopicName(java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/spi/PubSubRpc/get(com.google.pubsub.v1.GetTopicRequest)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/transform(java.util.concurrent.Future,com.google.common.base.Function)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/pubsub/v1/GetTopicRequest$Builder/setTopic(java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/GetTopicRequest$Builder/build()|"
+    ],
+    "affectedLib": "com.google.api.grpc:grpc-google-cloud-pubsub-v1:0.1.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.google.cloud:google-cloud-pubsub:0.6.0",
+    "coordinatesV2": "com.google.cloud:google-cloud-pubsub:0.7.0",
+    "caller": "|java+method:///com/google/cloud/pubsub/SubscriptionInfo/toPb(java.lang.String)|",
+    "called": "|java+method:///com/google/pubsub/v1/Subscription/newBuilder()|",
+    "v1Body": [
+      "|java+method:///com/google/pubsub/v1/Subscription$Builder/setAckDeadlineSeconds(int)|",
+      "|java+method:///com/google/pubsub/v1/Subscription$Builder/setPushConfig(com.google.pubsub.v1.PushConfig)|",
+      "|java+method:///com/google/pubsub/v1/Subscription$Builder/setTopic(java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/TopicId/toPb(java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/PushConfig/toPb()|",
+      "|java+method:///com/google/pubsub/v1/Subscription/newBuilder()|",
+      "|java+method:///com/google/pubsub/v1/Subscription$Builder/setName(java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/SubscriberApi/formatSubscriptionName(java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/Subscription$Builder/build()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/pubsub/v1/Subscription$Builder/setAckDeadlineSeconds(int)|",
+      "|java+method:///com/google/pubsub/v1/Subscription$Builder/setPushConfig(com.google.pubsub.v1.PushConfig)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/SubscriberClient/formatSubscriptionName(java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/Subscription$Builder/setTopic(java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/TopicId/toPb(java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/PushConfig/toPb()|",
+      "|java+method:///com/google/pubsub/v1/Subscription/newBuilder()|",
+      "|java+method:///com/google/pubsub/v1/Subscription$Builder/setName(java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/Subscription$Builder/build()|"
+    ],
+    "affectedLib": "com.google.api.grpc:grpc-google-cloud-pubsub-v1:0.1.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.google.cloud:google-cloud-pubsub:0.6.0",
+    "coordinatesV2": "com.google.cloud:google-cloud-pubsub:0.7.0",
+    "caller": "|java+method:///com/google/cloud/pubsub/PubSubImpl/publishRequest(com.google.cloud.pubsub.PubSubOptions,java.lang.String,java.lang.Iterable)|",
+    "called": "|java+method:///com/google/pubsub/v1/PublishRequest$Builder/addAllMessages(java.lang.Iterable)|",
+    "v1Body": [
+      "|java+method:///com/google/pubsub/v1/PublishRequest$Builder/build()|",
+      "|java+method:///com/google/pubsub/v1/PublishRequest$Builder/addAllMessages(java.lang.Iterable)|",
+      "|java+method:///com/google/pubsub/v1/PublishRequest$Builder/setTopic(java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/PublishRequest/newBuilder()|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/common/collect/Iterables/transform(java.lang.Iterable,com.google.common.base.Function)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/PublisherApi/formatTopicName(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/pubsub/v1/PublishRequest$Builder/build()|",
+      "|java+method:///com/google/common/collect/Iterables/transform(java.lang.Iterable,com.google.common.base.Function)|",
+      "|java+method:///com/google/pubsub/v1/PublishRequest$Builder/addAllMessages(java.lang.Iterable)|",
+      "|java+method:///com/google/pubsub/v1/PublishRequest$Builder/setTopic(java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/PublisherClient/formatTopicName(java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/PublishRequest/newBuilder()|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|"
+    ],
+    "affectedLib": "com.google.api.grpc:grpc-google-cloud-pubsub-v1:0.1.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.google.cloud:google-cloud-pubsub:0.6.0",
+    "coordinatesV2": "com.google.cloud:google-cloud-pubsub:0.7.0",
+    "caller": "|java+method:///com/google/cloud/pubsub/PubSubImpl/deleteSubscriptionAsync(java.lang.String)|",
+    "called": "|java+method:///com/google/pubsub/v1/DeleteSubscriptionRequest$Builder/setSubscription(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/getOptions()|",
+      "|java+method:///com/google/pubsub/v1/DeleteSubscriptionRequest$Builder/build()|",
+      "|java+method:///com/google/cloud/pubsub/spi/PubSubRpc/delete(com.google.pubsub.v1.DeleteSubscriptionRequest)|",
+      "|java+method:///com/google/pubsub/v1/DeleteSubscriptionRequest/newBuilder()|",
+      "|java+method:///com/google/pubsub/v1/DeleteSubscriptionRequest$Builder/setSubscription(java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/transform(java.util.concurrent.Future,com.google.common.base.Function)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/SubscriberApi/formatSubscriptionName(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/getOptions()|",
+      "|java+method:///com/google/pubsub/v1/DeleteSubscriptionRequest$Builder/build()|",
+      "|java+method:///com/google/cloud/pubsub/spi/PubSubRpc/delete(com.google.pubsub.v1.DeleteSubscriptionRequest)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/SubscriberClient/formatSubscriptionName(java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/DeleteSubscriptionRequest/newBuilder()|",
+      "|java+method:///com/google/pubsub/v1/DeleteSubscriptionRequest$Builder/setSubscription(java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/transform(java.util.concurrent.Future,com.google.common.base.Function)|"
+    ],
+    "affectedLib": "com.google.api.grpc:grpc-google-cloud-pubsub-v1:0.1.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.google.cloud:google-cloud-pubsub:0.6.0",
+    "coordinatesV2": "com.google.cloud:google-cloud-pubsub:0.7.0",
+    "caller": "|java+method:///com/google/cloud/pubsub/PubSubImpl/getSubscriptionAsync(java.lang.String)|",
+    "called": "|java+method:///com/google/pubsub/v1/GetSubscriptionRequest$Builder/setSubscription(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/google/cloud/pubsub/spi/PubSubRpc/get(com.google.pubsub.v1.GetSubscriptionRequest)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/getOptions()|",
+      "|java+method:///com/google/pubsub/v1/GetSubscriptionRequest$Builder/setSubscription(java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/Subscription/fromPbFunction(com.google.cloud.pubsub.PubSub)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/pubsub/v1/GetSubscriptionRequest/newBuilder()|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/transform(java.util.concurrent.Future,com.google.common.base.Function)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/SubscriberApi/formatSubscriptionName(java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/GetSubscriptionRequest$Builder/build()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/cloud/pubsub/spi/PubSubRpc/get(com.google.pubsub.v1.GetSubscriptionRequest)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/getOptions()|",
+      "|java+method:///com/google/pubsub/v1/GetSubscriptionRequest$Builder/setSubscription(java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/Subscription/fromPbFunction(com.google.cloud.pubsub.PubSub)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/SubscriberClient/formatSubscriptionName(java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/pubsub/v1/GetSubscriptionRequest/newBuilder()|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/transform(java.util.concurrent.Future,com.google.common.base.Function)|",
+      "|java+method:///com/google/pubsub/v1/GetSubscriptionRequest$Builder/build()|"
+    ],
+    "affectedLib": "com.google.api.grpc:grpc-google-cloud-pubsub-v1:0.1.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.google.cloud:google-cloud-pubsub:0.6.0",
+    "coordinatesV2": "com.google.cloud:google-cloud-pubsub:0.7.0",
+    "caller": "|java+method:///com/google/cloud/pubsub/TopicInfo/toPb(java.lang.String)|",
+    "called": "|java+method:///com/google/pubsub/v1/Topic/newBuilder()|",
+    "v1Body": [
+      "|java+method:///com/google/cloud/pubsub/spi/v1/PublisherApi/formatTopicName(java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/Topic/newBuilder()|",
+      "|java+method:///com/google/pubsub/v1/Topic$Builder/setName(java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/Topic$Builder/build()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/pubsub/v1/Topic/newBuilder()|",
+      "|java+method:///com/google/pubsub/v1/Topic$Builder/setName(java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/PublisherClient/formatTopicName(java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/Topic$Builder/build()|"
+    ],
+    "affectedLib": "com.google.api.grpc:grpc-google-cloud-pubsub-v1:0.1.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.google.cloud:google-cloud-pubsub:0.6.0",
+    "coordinatesV2": "com.google.cloud:google-cloud-pubsub:0.7.0",
+    "caller": "|java+method:///com/google/cloud/pubsub/SubscriptionInfo/fromPb(com.google.pubsub.v1.Subscription)|",
+    "called": "|java+method:///com/google/pubsub/v1/Subscription/getTopic()|",
+    "v1Body": [
+      "|java+method:///com/google/cloud/pubsub/SubscriptionInfo$Builder/build()|",
+      "|java+method:///com/google/pubsub/v1/Subscription/getPushConfig()|",
+      "|java+method:///com/google/pubsub/v1/Subscription/getAckDeadlineSeconds()|",
+      "|java+method:///com/google/cloud/pubsub/SubscriptionInfo$Builder/setPushConfig(com.google.cloud.pubsub.PushConfig)|",
+      "|java+method:///com/google/pubsub/v1/Subscription/hasPushConfig()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/SubscriberApi/parseSubscriptionFromSubscriptionName(java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/Subscription/getTopic()|",
+      "|java+method:///com/google/cloud/pubsub/PushConfig/fromPb(com.google.pubsub.v1.PushConfig)|",
+      "|java+method:///com/google/pubsub/v1/Subscription/getName()|",
+      "|java+method:///com/google/pubsub/v1/PushConfig/getPushEndpoint()|",
+      "|java+method:///com/google/cloud/pubsub/SubscriptionInfo/newBuilder(com.google.cloud.pubsub.TopicId,java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/SubscriptionInfo$Builder/setAckDeadLineSeconds(int)|",
+      "|java+method:///com/google/cloud/pubsub/TopicId/fromPb(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/cloud/pubsub/spi/v1/SubscriberClient/parseSubscriptionFromSubscriptionName(java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/SubscriptionInfo$Builder/build()|",
+      "|java+method:///com/google/pubsub/v1/Subscription/getPushConfig()|",
+      "|java+method:///com/google/pubsub/v1/Subscription/getAckDeadlineSeconds()|",
+      "|java+method:///com/google/cloud/pubsub/SubscriptionInfo$Builder/setPushConfig(com.google.cloud.pubsub.PushConfig)|",
+      "|java+method:///com/google/pubsub/v1/Subscription/hasPushConfig()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///com/google/pubsub/v1/Subscription/getTopic()|",
+      "|java+method:///com/google/cloud/pubsub/PushConfig/fromPb(com.google.pubsub.v1.PushConfig)|",
+      "|java+method:///com/google/pubsub/v1/Subscription/getName()|",
+      "|java+method:///com/google/pubsub/v1/PushConfig/getPushEndpoint()|",
+      "|java+method:///com/google/cloud/pubsub/SubscriptionInfo/newBuilder(com.google.cloud.pubsub.TopicId,java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/SubscriptionInfo$Builder/setAckDeadLineSeconds(int)|",
+      "|java+method:///com/google/cloud/pubsub/TopicId/fromPb(java.lang.String)|"
+    ],
+    "affectedLib": "com.google.api.grpc:grpc-google-cloud-pubsub-v1:0.1.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.google.cloud:google-cloud-pubsub:0.6.0",
+    "coordinatesV2": "com.google.cloud:google-cloud-pubsub:0.7.0",
+    "caller": "|java+method:///com/google/cloud/pubsub/PubSubImpl/replacePushConfigAsync(java.lang.String,com.google.cloud.pubsub.PushConfig)|",
+    "called": "|java+method:///com/google/pubsub/v1/ModifyPushConfigRequest$Builder/setSubscription(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/getOptions()|",
+      "|java+method:///com/google/pubsub/v1/ModifyPushConfigRequest$Builder/setPushConfig(com.google.pubsub.v1.PushConfig)|",
+      "|java+method:///com/google/cloud/pubsub/PushConfig/toPb()|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/pubsub/v1/ModifyPushConfigRequest$Builder/build()|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/transform(java.util.concurrent.Future,com.google.common.base.Function)|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/SubscriberApi/formatSubscriptionName(java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/ModifyPushConfigRequest$Builder/setSubscription(java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/spi/PubSubRpc/modify(com.google.pubsub.v1.ModifyPushConfigRequest)|",
+      "|java+method:///com/google/pubsub/v1/ModifyPushConfigRequest/newBuilder()|",
+      "|java+method:///com/google/pubsub/v1/PushConfig/getDefaultInstance()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/getOptions()|",
+      "|java+method:///com/google/cloud/pubsub/spi/v1/SubscriberClient/formatSubscriptionName(java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/pubsub/v1/ModifyPushConfigRequest$Builder/setPushConfig(com.google.pubsub.v1.PushConfig)|",
+      "|java+method:///com/google/cloud/pubsub/PushConfig/toPb()|",
+      "|java+method:///com/google/cloud/pubsub/PubSubOptions/getProjectId()|",
+      "|java+method:///com/google/pubsub/v1/ModifyPushConfigRequest$Builder/build()|",
+      "|java+method:///com/google/cloud/pubsub/PubSubImpl/transform(java.util.concurrent.Future,com.google.common.base.Function)|",
+      "|java+method:///com/google/pubsub/v1/ModifyPushConfigRequest$Builder/setSubscription(java.lang.String)|",
+      "|java+method:///com/google/cloud/pubsub/spi/PubSubRpc/modify(com.google.pubsub.v1.ModifyPushConfigRequest)|",
+      "|java+method:///com/google/pubsub/v1/ModifyPushConfigRequest/newBuilder()|",
+      "|java+method:///com/google/pubsub/v1/PushConfig/getDefaultInstance()|"
+    ],
+    "affectedLib": "com.google.api.grpc:grpc-google-cloud-pubsub-v1:0.1.3",
+    "change": "ADDED"
+  }
+]

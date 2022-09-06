@@ -1,0 +1,848 @@
+[
+  {
+    "coordinatesV1": "com.squareup.keywhiz:keywhiz-client:0.8.0",
+    "coordinatesV2": "com.squareup.keywhiz:keywhiz-client:0.7.10-mysql",
+    "caller": "|java+method:///keywhiz/client/KeywhizClient/groupDetailsForId(long)|",
+    "called": "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpGet(com.squareup.okhttp.HttpUrl)|",
+      "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpGet(okhttp3.HttpUrl)|",
+      "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.4.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.squareup.keywhiz:keywhiz-client:0.8.0",
+    "coordinatesV2": "com.squareup.keywhiz:keywhiz-client:0.7.10-mysql",
+    "caller": "|java+method:///keywhiz/client/KeywhizClient/enrollClientInGroupByIds(long,long)|",
+    "called": "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpPut(com.squareup.okhttp.HttpUrl)|",
+      "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpPut(okhttp3.HttpUrl)|",
+      "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.4.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.squareup.keywhiz:keywhiz-client:0.8.0",
+    "coordinatesV2": "com.squareup.keywhiz:keywhiz-client:0.7.10-mysql",
+    "caller": "|java+method:///keywhiz/client/KeywhizClient/login(java.lang.String,char%5B%5D)|",
+    "called": "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///keywhiz/client/KeywhizClient/httpPost(com.squareup.okhttp.HttpUrl,java.lang.Object)|",
+      "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|",
+      "|java+method:///keywhiz/api/LoginRequest/from(java.lang.String,char%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///keywhiz/client/KeywhizClient/httpPost(okhttp3.HttpUrl,java.lang.Object)|",
+      "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|",
+      "|java+method:///keywhiz/api/LoginRequest/from(java.lang.String,char%5B%5D)|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.4.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.squareup.keywhiz:keywhiz-client:0.8.0",
+    "coordinatesV2": "com.squareup.keywhiz:keywhiz-client:0.7.10-mysql",
+    "caller": "|java+method:///keywhiz/client/KeywhizClient/getGroupByName(java.lang.String)|",
+    "called": "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpGet(com.squareup.okhttp.HttpUrl)|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean)|",
+      "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///okhttp3/HttpUrl$Builder/addQueryParameter(java.lang.String,java.lang.String)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpGet(okhttp3.HttpUrl)|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean)|",
+      "|java+method:///okhttp3/HttpUrl$Builder/build()|",
+      "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|",
+      "|java+method:///okhttp3/HttpUrl/newBuilder()|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.4.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.squareup.keywhiz:keywhiz-client:0.8.0",
+    "coordinatesV2": "com.squareup.keywhiz:keywhiz-client:0.7.10-mysql",
+    "caller": "|java+method:///keywhiz/client/KeywhizClient/deleteSecretWithId(long)|",
+    "called": "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpDelete(com.squareup.okhttp.HttpUrl)|",
+      "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpDelete(okhttp3.HttpUrl)|",
+      "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.4.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.squareup.keywhiz:keywhiz-client:0.8.0",
+    "coordinatesV2": "com.squareup.keywhiz:keywhiz-client:0.7.10-mysql",
+    "caller": "|java+method:///keywhiz/client/KeywhizClient/secretDetailsForId(long)|",
+    "called": "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpGet(com.squareup.okhttp.HttpUrl)|",
+      "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpGet(okhttp3.HttpUrl)|",
+      "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.4.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.squareup.keywhiz:keywhiz-client:0.8.0",
+    "coordinatesV2": "com.squareup.keywhiz:keywhiz-client:0.7.10-mysql",
+    "caller": "|java+method:///keywhiz/client/KeywhizClient/allGroups()|",
+    "called": "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,com.fasterxml.jackson.core.type.TypeReference)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpGet(com.squareup.okhttp.HttpUrl)|",
+      "|java+constructor:///keywhiz/client/KeywhizClient$1/KeywhizClient$1(keywhiz.client.KeywhizClient)|",
+      "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,com.fasterxml.jackson.core.type.TypeReference)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpGet(okhttp3.HttpUrl)|",
+      "|java+constructor:///keywhiz/client/KeywhizClient$1/KeywhizClient$1(keywhiz.client.KeywhizClient)|",
+      "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.4.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.squareup.keywhiz:keywhiz-client:0.8.0",
+    "coordinatesV2": "com.squareup.keywhiz:keywhiz-client:0.7.10-mysql",
+    "caller": "|java+method:///keywhiz/client/KeywhizClient/revokeSecretFromGroupByIds(long,long)|",
+    "called": "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpDelete(com.squareup.okhttp.HttpUrl)|",
+      "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpDelete(okhttp3.HttpUrl)|",
+      "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.4.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.squareup.keywhiz:keywhiz-client:0.8.0",
+    "coordinatesV2": "com.squareup.keywhiz:keywhiz-client:0.7.10-mysql",
+    "caller": "|java+method:///keywhiz/client/KeywhizClient/isLoggedIn()|",
+    "called": "|java+method:///com/squareup/okhttp/Request$Builder/build()|",
+    "v1Body": [
+      "|java+method:///com/squareup/okhttp/Request$Builder/get()|",
+      "|java+method:///com/squareup/okhttp/Response/code()|",
+      "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|",
+      "|java+method:///com/squareup/okhttp/Request$Builder/build()|",
+      "|java+method:///com/squareup/okhttp/Call/execute()|",
+      "|java+method:///com/squareup/okhttp/Request$Builder/url(com.squareup.okhttp.HttpUrl)|",
+      "|java+method:///com/squareup/okhttp/OkHttpClient/newCall(com.squareup.okhttp.Request)|",
+      "|java+constructor:///com/squareup/okhttp/Request$Builder/Request$Builder()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///okhttp3/Request$Builder/Request$Builder()|",
+      "|java+method:///okhttp3/Request$Builder/build()|",
+      "|java+method:///okhttp3/Request$Builder/get()|",
+      "|java+method:///okhttp3/Response/code()|",
+      "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|",
+      "|java+method:///okhttp3/Request$Builder/url(okhttp3.HttpUrl)|",
+      "|java+method:///okhttp3/OkHttpClient/newCall(okhttp3.Request)|",
+      "|java+method:///okhttp3/Call/execute()|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.4.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.squareup.keywhiz:keywhiz-client:0.8.0",
+    "coordinatesV2": "com.squareup.keywhiz:keywhiz-client:0.7.10-mysql",
+    "caller": "|java+method:///keywhiz/client/KeywhizClient/deleteClientWithId(long)|",
+    "called": "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpDelete(com.squareup.okhttp.HttpUrl)|",
+      "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpDelete(okhttp3.HttpUrl)|",
+      "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.4.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.squareup.keywhiz:keywhiz-client:0.8.0",
+    "coordinatesV2": "com.squareup.keywhiz:keywhiz-client:0.7.10-mysql",
+    "caller": "|java+method:///keywhiz/client/KeywhizClient/evictClientFromGroupByIds(long,long)|",
+    "called": "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpDelete(com.squareup.okhttp.HttpUrl)|",
+      "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpDelete(okhttp3.HttpUrl)|",
+      "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.4.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.squareup.keywhiz:keywhiz-client:0.8.0",
+    "coordinatesV2": "com.squareup.keywhiz:keywhiz-client:0.7.10-mysql",
+    "caller": "|java+method:///keywhiz/client/KeywhizClient/createClient(java.lang.String)|",
+    "called": "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///keywhiz/client/KeywhizClient/httpPost(com.squareup.okhttp.HttpUrl,java.lang.Object)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean)|",
+      "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|",
+      "|java+constructor:///keywhiz/api/CreateClientRequest/CreateClientRequest(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///keywhiz/client/KeywhizClient/httpPost(okhttp3.HttpUrl,java.lang.Object)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean)|",
+      "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|",
+      "|java+constructor:///keywhiz/api/CreateClientRequest/CreateClientRequest(java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.4.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.squareup.keywhiz:keywhiz-client:0.8.0",
+    "coordinatesV2": "com.squareup.keywhiz:keywhiz-client:0.7.10-mysql",
+    "caller": "|java+method:///keywhiz/client/KeywhizClient/deleteGroupWithId(long)|",
+    "called": "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpDelete(com.squareup.okhttp.HttpUrl)|",
+      "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpDelete(okhttp3.HttpUrl)|",
+      "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.4.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.squareup.keywhiz:keywhiz-client:0.8.0",
+    "coordinatesV2": "com.squareup.keywhiz:keywhiz-client:0.7.10-mysql",
+    "caller": "|java+method:///keywhiz/client/KeywhizClient/allClients()|",
+    "called": "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///keywhiz/client/KeywhizClient$5/KeywhizClient$5(keywhiz.client.KeywhizClient)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,com.fasterxml.jackson.core.type.TypeReference)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpGet(com.squareup.okhttp.HttpUrl)|",
+      "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///keywhiz/client/KeywhizClient$5/KeywhizClient$5(keywhiz.client.KeywhizClient)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,com.fasterxml.jackson.core.type.TypeReference)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpGet(okhttp3.HttpUrl)|",
+      "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.4.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.squareup.keywhiz:keywhiz-client:0.8.0",
+    "coordinatesV2": "com.squareup.keywhiz:keywhiz-client:0.7.10-mysql",
+    "caller": "|java+initializer:///keywhiz/client/KeywhizClient/KeywhizClient$initializer|",
+    "called": "|java+method:///com/squareup/okhttp/MediaType/parse(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/squareup/okhttp/MediaType/parse(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/MediaType/parse(java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.4.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.squareup.keywhiz:keywhiz-client:0.8.0",
+    "coordinatesV2": "com.squareup.keywhiz:keywhiz-client:0.7.10-mysql",
+    "caller": "|java+method:///keywhiz/client/KeywhizClient/getClientByName(java.lang.String)|",
+    "called": "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpGet(com.squareup.okhttp.HttpUrl)|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean)|",
+      "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///okhttp3/HttpUrl$Builder/addQueryParameter(java.lang.String,java.lang.String)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpGet(okhttp3.HttpUrl)|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean)|",
+      "|java+method:///okhttp3/HttpUrl$Builder/build()|",
+      "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|",
+      "|java+method:///okhttp3/HttpUrl/newBuilder()|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.4.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.squareup.keywhiz:keywhiz-client:0.8.0",
+    "coordinatesV2": "com.squareup.keywhiz:keywhiz-client:0.7.10-mysql",
+    "caller": "|java+method:///keywhiz/client/KeywhizClient/clientDetailsForId(long)|",
+    "called": "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpGet(com.squareup.okhttp.HttpUrl)|",
+      "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpGet(okhttp3.HttpUrl)|",
+      "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.4.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.squareup.keywhiz:keywhiz-client:0.8.0",
+    "coordinatesV2": "com.squareup.keywhiz:keywhiz-client:0.7.10-mysql",
+    "caller": "|java+method:///keywhiz/client/KeywhizClient/grantSecretToGroupByIds(long,long)|",
+    "called": "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpPut(com.squareup.okhttp.HttpUrl)|",
+      "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpPut(okhttp3.HttpUrl)|",
+      "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.4.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.squareup.keywhiz:keywhiz-client:0.8.0",
+    "coordinatesV2": "com.squareup.keywhiz:keywhiz-client:0.7.10-mysql",
+    "caller": "|java+method:///keywhiz/client/KeywhizClient/allSecrets()|",
+    "called": "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,com.fasterxml.jackson.core.type.TypeReference)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpGet(com.squareup.okhttp.HttpUrl)|",
+      "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|",
+      "|java+constructor:///keywhiz/client/KeywhizClient$2/KeywhizClient$2(keywhiz.client.KeywhizClient)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,com.fasterxml.jackson.core.type.TypeReference)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpGet(okhttp3.HttpUrl)|",
+      "|java+constructor:///keywhiz/client/KeywhizClient$2/KeywhizClient$2(keywhiz.client.KeywhizClient)|",
+      "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.4.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.squareup.keywhiz:keywhiz-client:0.7.10-mysql",
+    "coordinatesV2": "com.squareup.keywhiz:keywhiz-client:0.8.0",
+    "caller": "|java+method:///keywhiz/client/KeywhizClient/groupDetailsForId(long)|",
+    "called": "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpGet(com.squareup.okhttp.HttpUrl)|",
+      "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpGet(okhttp3.HttpUrl)|",
+      "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.squareup.keywhiz:keywhiz-client:0.7.10-mysql",
+    "coordinatesV2": "com.squareup.keywhiz:keywhiz-client:0.8.0",
+    "caller": "|java+method:///keywhiz/client/KeywhizClient/enrollClientInGroupByIds(long,long)|",
+    "called": "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpPut(com.squareup.okhttp.HttpUrl)|",
+      "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpPut(okhttp3.HttpUrl)|",
+      "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.squareup.keywhiz:keywhiz-client:0.7.10-mysql",
+    "coordinatesV2": "com.squareup.keywhiz:keywhiz-client:0.8.0",
+    "caller": "|java+method:///keywhiz/client/KeywhizClient/login(java.lang.String,char%5B%5D)|",
+    "called": "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///keywhiz/client/KeywhizClient/httpPost(com.squareup.okhttp.HttpUrl,java.lang.Object)|",
+      "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|",
+      "|java+method:///keywhiz/api/LoginRequest/from(java.lang.String,char%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///keywhiz/client/KeywhizClient/httpPost(okhttp3.HttpUrl,java.lang.Object)|",
+      "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|",
+      "|java+method:///keywhiz/api/LoginRequest/from(java.lang.String,char%5B%5D)|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.squareup.keywhiz:keywhiz-client:0.7.10-mysql",
+    "coordinatesV2": "com.squareup.keywhiz:keywhiz-client:0.8.0",
+    "caller": "|java+method:///keywhiz/client/KeywhizClient/getGroupByName(java.lang.String)|",
+    "called": "|java+method:///okhttp3/HttpUrl$Builder/addQueryParameter(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpGet(com.squareup.okhttp.HttpUrl)|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean)|",
+      "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///okhttp3/HttpUrl$Builder/addQueryParameter(java.lang.String,java.lang.String)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpGet(okhttp3.HttpUrl)|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean)|",
+      "|java+method:///okhttp3/HttpUrl$Builder/build()|",
+      "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|",
+      "|java+method:///okhttp3/HttpUrl/newBuilder()|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.squareup.keywhiz:keywhiz-client:0.7.10-mysql",
+    "coordinatesV2": "com.squareup.keywhiz:keywhiz-client:0.8.0",
+    "caller": "|java+method:///keywhiz/client/KeywhizClient/deleteSecretWithId(long)|",
+    "called": "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpDelete(com.squareup.okhttp.HttpUrl)|",
+      "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpDelete(okhttp3.HttpUrl)|",
+      "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.squareup.keywhiz:keywhiz-client:0.7.10-mysql",
+    "coordinatesV2": "com.squareup.keywhiz:keywhiz-client:0.8.0",
+    "caller": "|java+method:///keywhiz/client/KeywhizClient/secretDetailsForId(long)|",
+    "called": "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpGet(com.squareup.okhttp.HttpUrl)|",
+      "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpGet(okhttp3.HttpUrl)|",
+      "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.squareup.keywhiz:keywhiz-client:0.7.10-mysql",
+    "coordinatesV2": "com.squareup.keywhiz:keywhiz-client:0.8.0",
+    "caller": "|java+method:///keywhiz/client/KeywhizClient/allGroups()|",
+    "called": "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,com.fasterxml.jackson.core.type.TypeReference)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpGet(com.squareup.okhttp.HttpUrl)|",
+      "|java+constructor:///keywhiz/client/KeywhizClient$1/KeywhizClient$1(keywhiz.client.KeywhizClient)|",
+      "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,com.fasterxml.jackson.core.type.TypeReference)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpGet(okhttp3.HttpUrl)|",
+      "|java+constructor:///keywhiz/client/KeywhizClient$1/KeywhizClient$1(keywhiz.client.KeywhizClient)|",
+      "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.squareup.keywhiz:keywhiz-client:0.7.10-mysql",
+    "coordinatesV2": "com.squareup.keywhiz:keywhiz-client:0.8.0",
+    "caller": "|java+method:///keywhiz/client/KeywhizClient/revokeSecretFromGroupByIds(long,long)|",
+    "called": "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpDelete(com.squareup.okhttp.HttpUrl)|",
+      "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpDelete(okhttp3.HttpUrl)|",
+      "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.squareup.keywhiz:keywhiz-client:0.7.10-mysql",
+    "coordinatesV2": "com.squareup.keywhiz:keywhiz-client:0.8.0",
+    "caller": "|java+method:///keywhiz/client/KeywhizClient/isLoggedIn()|",
+    "called": "|java+method:///okhttp3/Request$Builder/build()|",
+    "v1Body": [
+      "|java+method:///com/squareup/okhttp/Request$Builder/get()|",
+      "|java+method:///com/squareup/okhttp/Response/code()|",
+      "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|",
+      "|java+method:///com/squareup/okhttp/Request$Builder/build()|",
+      "|java+method:///com/squareup/okhttp/Call/execute()|",
+      "|java+method:///com/squareup/okhttp/Request$Builder/url(com.squareup.okhttp.HttpUrl)|",
+      "|java+method:///com/squareup/okhttp/OkHttpClient/newCall(com.squareup.okhttp.Request)|",
+      "|java+constructor:///com/squareup/okhttp/Request$Builder/Request$Builder()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///okhttp3/Request$Builder/Request$Builder()|",
+      "|java+method:///okhttp3/Request$Builder/build()|",
+      "|java+method:///okhttp3/Request$Builder/get()|",
+      "|java+method:///okhttp3/Response/code()|",
+      "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|",
+      "|java+method:///okhttp3/Request$Builder/url(okhttp3.HttpUrl)|",
+      "|java+method:///okhttp3/OkHttpClient/newCall(okhttp3.Request)|",
+      "|java+method:///okhttp3/Call/execute()|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.squareup.keywhiz:keywhiz-client:0.7.10-mysql",
+    "coordinatesV2": "com.squareup.keywhiz:keywhiz-client:0.8.0",
+    "caller": "|java+method:///keywhiz/client/KeywhizClient/deleteClientWithId(long)|",
+    "called": "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpDelete(com.squareup.okhttp.HttpUrl)|",
+      "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpDelete(okhttp3.HttpUrl)|",
+      "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.squareup.keywhiz:keywhiz-client:0.7.10-mysql",
+    "coordinatesV2": "com.squareup.keywhiz:keywhiz-client:0.8.0",
+    "caller": "|java+method:///keywhiz/client/KeywhizClient/evictClientFromGroupByIds(long,long)|",
+    "called": "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpDelete(com.squareup.okhttp.HttpUrl)|",
+      "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpDelete(okhttp3.HttpUrl)|",
+      "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.squareup.keywhiz:keywhiz-client:0.7.10-mysql",
+    "coordinatesV2": "com.squareup.keywhiz:keywhiz-client:0.8.0",
+    "caller": "|java+method:///keywhiz/client/KeywhizClient/createClient(java.lang.String)|",
+    "called": "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///keywhiz/client/KeywhizClient/httpPost(com.squareup.okhttp.HttpUrl,java.lang.Object)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean)|",
+      "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|",
+      "|java+constructor:///keywhiz/api/CreateClientRequest/CreateClientRequest(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///keywhiz/client/KeywhizClient/httpPost(okhttp3.HttpUrl,java.lang.Object)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean)|",
+      "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|",
+      "|java+constructor:///keywhiz/api/CreateClientRequest/CreateClientRequest(java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.squareup.keywhiz:keywhiz-client:0.7.10-mysql",
+    "coordinatesV2": "com.squareup.keywhiz:keywhiz-client:0.8.0",
+    "caller": "|java+method:///keywhiz/client/KeywhizClient/deleteGroupWithId(long)|",
+    "called": "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpDelete(com.squareup.okhttp.HttpUrl)|",
+      "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpDelete(okhttp3.HttpUrl)|",
+      "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.squareup.keywhiz:keywhiz-client:0.7.10-mysql",
+    "coordinatesV2": "com.squareup.keywhiz:keywhiz-client:0.8.0",
+    "caller": "|java+method:///keywhiz/client/KeywhizClient/allClients()|",
+    "called": "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///keywhiz/client/KeywhizClient$5/KeywhizClient$5(keywhiz.client.KeywhizClient)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,com.fasterxml.jackson.core.type.TypeReference)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpGet(com.squareup.okhttp.HttpUrl)|",
+      "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///keywhiz/client/KeywhizClient$5/KeywhizClient$5(keywhiz.client.KeywhizClient)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,com.fasterxml.jackson.core.type.TypeReference)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpGet(okhttp3.HttpUrl)|",
+      "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.squareup.keywhiz:keywhiz-client:0.7.10-mysql",
+    "coordinatesV2": "com.squareup.keywhiz:keywhiz-client:0.8.0",
+    "caller": "|java+initializer:///keywhiz/client/KeywhizClient/KeywhizClient$initializer|",
+    "called": "|java+method:///okhttp3/MediaType/parse(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/squareup/okhttp/MediaType/parse(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/MediaType/parse(java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.squareup.keywhiz:keywhiz-client:0.7.10-mysql",
+    "coordinatesV2": "com.squareup.keywhiz:keywhiz-client:0.8.0",
+    "caller": "|java+method:///keywhiz/client/KeywhizClient/getClientByName(java.lang.String)|",
+    "called": "|java+method:///okhttp3/HttpUrl$Builder/addQueryParameter(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpGet(com.squareup.okhttp.HttpUrl)|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean)|",
+      "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///okhttp3/HttpUrl$Builder/addQueryParameter(java.lang.String,java.lang.String)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpGet(okhttp3.HttpUrl)|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean)|",
+      "|java+method:///okhttp3/HttpUrl$Builder/build()|",
+      "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|",
+      "|java+method:///okhttp3/HttpUrl/newBuilder()|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.squareup.keywhiz:keywhiz-client:0.7.10-mysql",
+    "coordinatesV2": "com.squareup.keywhiz:keywhiz-client:0.8.0",
+    "caller": "|java+method:///keywhiz/client/KeywhizClient/clientDetailsForId(long)|",
+    "called": "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpGet(com.squareup.okhttp.HttpUrl)|",
+      "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpGet(okhttp3.HttpUrl)|",
+      "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.squareup.keywhiz:keywhiz-client:0.7.10-mysql",
+    "coordinatesV2": "com.squareup.keywhiz:keywhiz-client:0.8.0",
+    "caller": "|java+method:///keywhiz/client/KeywhizClient/grantSecretToGroupByIds(long,long)|",
+    "called": "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpPut(com.squareup.okhttp.HttpUrl)|",
+      "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpPut(okhttp3.HttpUrl)|",
+      "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.squareup.keywhiz:keywhiz-client:0.7.10-mysql",
+    "coordinatesV2": "com.squareup.keywhiz:keywhiz-client:0.8.0",
+    "caller": "|java+method:///keywhiz/client/KeywhizClient/allSecrets()|",
+    "called": "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,com.fasterxml.jackson.core.type.TypeReference)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpGet(com.squareup.okhttp.HttpUrl)|",
+      "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|",
+      "|java+constructor:///keywhiz/client/KeywhizClient$2/KeywhizClient$2(keywhiz.client.KeywhizClient)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,com.fasterxml.jackson.core.type.TypeReference)|",
+      "|java+method:///keywhiz/client/KeywhizClient/httpGet(okhttp3.HttpUrl)|",
+      "|java+constructor:///keywhiz/client/KeywhizClient$2/KeywhizClient$2(keywhiz.client.KeywhizClient)|",
+      "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.squareup.keywhiz:keywhiz-client:0.7.10-mysql",
+    "coordinatesV2": "com.squareup.keywhiz:keywhiz-client:0.8.0",
+    "caller": "|java+method:///keywhiz/client/KeywhizClient/createClient(java.lang.String)|",
+    "called": "|java+constructor:///keywhiz/api/CreateClientRequest/CreateClientRequest(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///keywhiz/client/KeywhizClient/httpPost(com.squareup.okhttp.HttpUrl,java.lang.Object)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean)|",
+      "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|",
+      "|java+constructor:///keywhiz/api/CreateClientRequest/CreateClientRequest(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///keywhiz/client/KeywhizClient/httpPost(okhttp3.HttpUrl,java.lang.Object)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean)|",
+      "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|",
+      "|java+constructor:///keywhiz/api/CreateClientRequest/CreateClientRequest(java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.keywhiz:keywhiz-api:0.8.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.squareup.keywhiz:keywhiz-client:0.7.10-mysql",
+    "coordinatesV2": "com.squareup.keywhiz:keywhiz-client:0.8.0",
+    "caller": "|java+method:///keywhiz/client/KeywhizClient/login(java.lang.String,char%5B%5D)|",
+    "called": "|java+method:///keywhiz/api/LoginRequest/from(java.lang.String,char%5B%5D)|",
+    "v1Body": [
+      "|java+method:///keywhiz/client/KeywhizClient/httpPost(com.squareup.okhttp.HttpUrl,java.lang.Object)|",
+      "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|",
+      "|java+method:///keywhiz/api/LoginRequest/from(java.lang.String,char%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///keywhiz/client/KeywhizClient/httpPost(okhttp3.HttpUrl,java.lang.Object)|",
+      "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|",
+      "|java+method:///keywhiz/api/LoginRequest/from(java.lang.String,char%5B%5D)|"
+    ],
+    "affectedLib": "com.squareup.keywhiz:keywhiz-api:0.8.0",
+    "change": "UPDATED"
+  }
+]

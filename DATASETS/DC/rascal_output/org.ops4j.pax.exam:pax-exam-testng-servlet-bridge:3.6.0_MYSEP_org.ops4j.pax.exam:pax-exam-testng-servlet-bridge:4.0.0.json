@@ -1,0 +1,67 @@
+[
+  {
+    "coordinatesV1": "org.ops4j.pax.exam:pax-exam-testng-servlet-bridge:4.0.0",
+    "coordinatesV2": "org.ops4j.pax.exam:pax-exam-testng-servlet-bridge:3.6.0",
+    "caller": "|java+method:///org/ops4j/pax/exam/testng/servlet/invoker/ServletBridgeProbeInvoker/getTestRunner(java.net.URI)|",
+    "called": "|java+method:///com/sun/jersey/api/client/Client/create()|",
+    "v1Body": [
+      "|java+method:///com/sun/jersey/api/client/Client/create()|",
+      "|java+method:///com/sun/jersey/api/client/Client/resource(java.net.URI)|",
+      "|java+method:///java/net/URI/resolve(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/ws/rs/client/Client/target(java.net.URI)|",
+      "|java+method:///javax/ws/rs/client/ClientBuilder/newClient()|",
+      "|java+method:///java/net/URI/resolve(java.lang.String)|"
+    ],
+    "affectedLib": "com.sun.jersey:jersey-client:1.16",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.ops4j.pax.exam:pax-exam-testng-servlet-bridge:4.0.0",
+    "coordinatesV2": "org.ops4j.pax.exam:pax-exam-testng-servlet-bridge:3.6.0",
+    "caller": "|java+method:///org/ops4j/pax/exam/testng/servlet/invoker/ServletBridgeProbeInvoker/invokeViaJUnit(java.lang.Class,java.lang.reflect.Method)|",
+    "called": "|java+method:///com/sun/jersey/api/client/WebResource/get(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException()|",
+      "|java+method:///com/sun/jersey/api/client/WebResource/queryParam(java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/ops4j/pax/exam/TestContainerException/TestContainerException(java.lang.Throwable)|",
+      "|java+method:///java/io/ObjectInputStream/readObject()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///java/lang/reflect/Method/getName()|",
+      "|java+constructor:///java/io/ObjectInputStream/ObjectInputStream(java.io.InputStream)|",
+      "|java+method:///com/sun/jersey/api/client/WebResource/get(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/ops4j/pax/exam/TestContainerException/TestContainerException(java.lang.Throwable)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///java/lang/reflect/Method/getName()|",
+      "|java+constructor:///java/io/ObjectInputStream/ObjectInputStream(java.io.InputStream)|",
+      "|java+method:///javax/ws/rs/client/Invocation$Builder/get(java.lang.Class)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException()|",
+      "|java+method:///javax/ws/rs/client/WebTarget/queryParam(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/client/WebTarget/request()|",
+      "|java+method:///java/io/ObjectInputStream/readObject()|"
+    ],
+    "affectedLib": "com.sun.jersey:jersey-client:1.16",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.ops4j.pax.exam:pax-exam-testng-servlet-bridge:3.6.0",
+    "coordinatesV2": "org.ops4j.pax.exam:pax-exam-testng-servlet-bridge:4.0.0",
+    "caller": "|java+method:///org/ops4j/pax/exam/testng/servlet/invoker/ServletBridgeProbeInvoker/getTestRunner(java.net.URI)|",
+    "called": "|java+method:///javax/ws/rs/client/ClientBuilder/newClient()|",
+    "v1Body": [
+      "|java+method:///com/sun/jersey/api/client/Client/create()|",
+      "|java+method:///com/sun/jersey/api/client/Client/resource(java.net.URI)|",
+      "|java+method:///java/net/URI/resolve(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/ws/rs/client/Client/target(java.net.URI)|",
+      "|java+method:///javax/ws/rs/client/ClientBuilder/newClient()|",
+      "|java+method:///java/net/URI/resolve(java.lang.String)|"
+    ],
+    "affectedLib": "javax.ws.rs:javax.ws.rs-api:2.0",
+    "change": "ADDED"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "coordinatesV1": "com.google.oauth-client:google-oauth-client:1.12.0-beta",
+    "coordinatesV2": "com.google.oauth-client:google-oauth-client:1.11.0-beta",
+    "caller": "|java+method:///com/google/api/client/auth/oauth2/BearerToken$FormEncodedBodyAccessMethod/intercept(com.google.api.client.http.HttpRequest,java.lang.String)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/google/api/client/http/HttpRequest/getMethod()|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+method:///com/google/api/client/auth/oauth2/BearerToken$FormEncodedBodyAccessMethod/getData(com.google.api.client.http.HttpRequest)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/google/api/client/auth/oauth2/BearerToken$FormEncodedBodyAccessMethod/getData(com.google.api.client.http.HttpRequest)|",
+      "|java+method:///com/google/api/client/http/HttpRequest/getRequestMethod()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:11.0.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.google.oauth-client:google-oauth-client:1.11.0-beta",
+    "coordinatesV2": "com.google.oauth-client:google-oauth-client:1.12.0-beta",
+    "caller": "|java+method:///com/google/api/client/auth/oauth2/BearerToken$FormEncodedBodyAccessMethod/intercept(com.google.api.client.http.HttpRequest,java.lang.String)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/google/api/client/http/HttpRequest/getMethod()|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+method:///com/google/api/client/auth/oauth2/BearerToken$FormEncodedBodyAccessMethod/getData(com.google.api.client.http.HttpRequest)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/google/api/client/auth/oauth2/BearerToken$FormEncodedBodyAccessMethod/getData(com.google.api.client.http.HttpRequest)|",
+      "|java+method:///com/google/api/client/http/HttpRequest/getRequestMethod()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava-jdk5:13.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.google.oauth-client:google-oauth-client:1.11.0-beta",
+    "coordinatesV2": "com.google.oauth-client:google-oauth-client:1.12.0-beta",
+    "caller": "|java+method:///com/google/api/client/auth/oauth/AbstractOAuthGetToken/execute()|",
+    "called": "|java+method:///com/google/api/client/http/UrlEncodedParser/parse(java.lang.String,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/google/api/client/http/HttpTransport/createRequestFactory()|",
+      "|java+method:///com/google/api/client/http/HttpResponse/setContentLoggingLimit(int)|",
+      "|java+method:///com/google/api/client/http/HttpRequest/execute()|",
+      "|java+method:///com/google/api/client/http/HttpResponse/parseAsString()|",
+      "|java+method:///com/google/api/client/auth/oauth/AbstractOAuthGetToken/createParameters()|",
+      "|java+constructor:///com/google/api/client/auth/oauth/OAuthCredentialsResponse/OAuthCredentialsResponse()|",
+      "|java+method:///com/google/api/client/http/HttpRequestFactory/buildRequest(com.google.api.client.http.HttpMethod,com.google.api.client.http.GenericUrl,com.google.api.client.http.HttpContent)|",
+      "|java+method:///com/google/api/client/auth/oauth/OAuthParameters/intercept(com.google.api.client.http.HttpRequest)|",
+      "|java+method:///com/google/api/client/http/UrlEncodedParser/parse(java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/api/client/http/HttpTransport/createRequestFactory()|",
+      "|java+method:///com/google/api/client/http/HttpResponse/setContentLoggingLimit(int)|",
+      "|java+method:///com/google/api/client/http/HttpRequest/execute()|",
+      "|java+method:///com/google/api/client/http/HttpResponse/parseAsString()|",
+      "|java+constructor:///com/google/api/client/auth/oauth/OAuthCredentialsResponse/OAuthCredentialsResponse()|",
+      "|java+method:///com/google/api/client/auth/oauth/OAuthParameters/intercept(com.google.api.client.http.HttpRequest)|",
+      "|java+method:///com/google/api/client/http/UrlEncodedParser/parse(java.lang.String,java.lang.Object)|",
+      "|java+method:///com/google/api/client/auth/oauth/AbstractOAuthGetToken/createParameters()|",
+      "|java+method:///com/google/api/client/http/HttpRequestFactory/buildRequest(java.lang.String,com.google.api.client.http.GenericUrl,com.google.api.client.http.HttpContent)|"
+    ],
+    "affectedLib": "com.google.http-client:google-http-client:1.12.0-beta",
+    "change": "UPDATED"
+  }
+]

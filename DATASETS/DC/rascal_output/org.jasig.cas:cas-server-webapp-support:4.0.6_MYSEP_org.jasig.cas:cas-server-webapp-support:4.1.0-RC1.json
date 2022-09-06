@@ -1,0 +1,1623 @@
+[
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/support/CookieRetrievingCookieGenerator/addCookie(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+    "v1Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getParameter(java.lang.String)|",
+      "|java+method:///javax/servlet/http/Cookie/setMaxAge(int)|",
+      "|java+method:///org/jasig/cas/web/support/CookieRetrievingCookieGenerator/createCookie(java.lang.String)|",
+      "|java+method:///org/springframework/util/StringUtils/hasText(java.lang.String)|",
+      "|java+method:///javax/servlet/http/Cookie/setSecure(boolean)|",
+      "|java+method:///org/jasig/cas/web/support/CookieRetrievingCookieGenerator/isCookieSecure()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/addCookie(javax.servlet.http.Cookie)|",
+      "|java+method:///org/springframework/web/util/CookieGenerator/addCookie(javax.servlet.http.HttpServletResponse,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/web/support/CookieRetrievingCookieGenerator$AjcClosure1/CookieRetrievingCookieGenerator$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/flow/TerminateSessionAction/terminate(org.springframework.webflow.execution.RequestContext)|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+    "v1Body": [
+      "|java+method:///org/jasig/cas/CentralAuthenticationService/destroyTicketGrantingTicket(java.lang.String)|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/getTicketGrantingTicketId(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/putLogoutRequests(org.springframework.webflow.execution.RequestContext,java.util.List)|",
+      "|java+method:///org/jasig/cas/web/support/CookieRetrievingCookieGenerator/retrieveCookieValue(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///org/springframework/webflow/action/EventFactorySupport/success(java.lang.Object)|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/getHttpServletResponse(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///org/jasig/cas/web/support/CookieRetrievingCookieGenerator/removeCookie(javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/getHttpServletRequest(org.springframework.webflow.execution.RequestContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/web/flow/TerminateSessionAction$AjcClosure1/TerminateSessionAction$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/flow/CompositeFlowExecutionKeyConverter/convertSourceToTargetClass(java.lang.Object,java.lang.Class)|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+    "v1Body": [
+      "|java+method:///java/lang/Object/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/web/flow/CompositeFlowExecutionKeyConverter$AjcClosure5/CompositeFlowExecutionKeyConverter$AjcClosure5(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/util/AutowiringSchedulerFactoryBean/afterPropertiesSet()|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+    "v1Body": [
+      "|java+method:///org/springframework/context/ApplicationContext/getBeansOfType(java.lang.Class)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/Map/size()|",
+      "|java+method:///java/util/Map/values()|",
+      "|java+method:///java/util/Map/keySet()|",
+      "|java+method:///java/util/Collection/toArray(java.lang.Object%5B%5D)|",
+      "|java+method:///org/springframework/scheduling/quartz/SchedulerFactoryBean/setTriggers(org.quartz.Trigger%5B%5D)|",
+      "|java+method:///org/springframework/scheduling/quartz/SchedulerFactoryBean/afterPropertiesSet()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/util/AutowiringSchedulerFactoryBean$AjcClosure1/AutowiringSchedulerFactoryBean$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/flow/CasDefaultFlowUrlHandler/createFlowDefinitionUrl(java.lang.String,org.springframework.webflow.core.collection.AttributeMap,javax.servlet.http.HttpServletRequest)|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+    "v1Body": [
+      "|java+method:///java/lang/String/valueOf(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRequestURI()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getQueryString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/web/flow/CasDefaultFlowUrlHandler$AjcClosure5/CasDefaultFlowUrlHandler$AjcClosure5(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/support/AbstractInMemoryThrottledSubmissionHandlerInterceptorAdapter/decrementCounts()|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/Set/size()|",
+      "|java+method:///org/jasig/cas/web/support/AbstractInMemoryThrottledSubmissionHandlerInterceptorAdapter/submissionRate(java.util.Date,java.util.Date)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/Date/Date()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/util/concurrent/ConcurrentMap/get(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/remove()|",
+      "|java+method:///java/util/concurrent/ConcurrentMap/keySet()|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/jasig/cas/web/support/AbstractInMemoryThrottledSubmissionHandlerInterceptorAdapter/getThresholdRate()|",
+      "|java+method:///java/util/Set/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/web/support/AbstractInMemoryThrottledSubmissionHandlerInterceptorAdapter$AjcClosure1/AbstractInMemoryThrottledSubmissionHandlerInterceptorAdapter$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/flow/SelectiveFlowHandlerAdapter/supports(java.lang.Object)|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+    "v1Body": [
+      "|java+method:///org/springframework/webflow/mvc/servlet/FlowHandler/getFlowId()|",
+      "|java+method:///java/util/List/contains(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/web/flow/SelectiveFlowHandlerAdapter$AjcClosure3/SelectiveFlowHandlerAdapter$AjcClosure3(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/booleanValue(java.lang.Object)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/flow/CasDefaultFlowUrlHandler/getFlowExecutionKey(javax.servlet.http.HttpServletRequest)|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+    "v1Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getParameter(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/web/flow/CasDefaultFlowUrlHandler$AjcClosure1/CasDefaultFlowUrlHandler$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/flow/GenerateLoginTicketAction/generate(org.springframework.webflow.execution.RequestContext)|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/jasig/cas/util/UniqueTicketIdGenerator/getNewTicketId(java.lang.String)|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/putLoginTicket(org.springframework.webflow.execution.RequestContext,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/web/flow/GenerateLoginTicketAction$AjcClosure1/GenerateLoginTicketAction$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/services/web/ServiceThemeResolver/resolveThemeName(javax.servlet.http.HttpServletRequest)|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+    "v1Body": [
+      "|java+method:///org/jasig/cas/services/ServicesManager/findServiceBy(org.jasig.cas.authentication.principal.Service)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getHeader(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///org/springframework/util/StringUtils/hasText(java.lang.String)|",
+      "|java+method:///java/util/regex/Matcher/matches()|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/getService(java.util.List,javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///java/util/regex/Pattern/matcher(java.lang.CharSequence)|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/setAttribute(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/jasig/cas/services/web/ServiceThemeResolver/getDefaultThemeName()|",
+      "|java+method:///org/jasig/cas/services/RegisteredService/getTheme()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/services/web/ServiceThemeResolver$AjcClosure1/ServiceThemeResolver$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/flow/CasDefaultFlowUrlHandler/createFlowExecutionUrl(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/cas/web/flow/CasDefaultFlowUrlHandler/appendQueryParameters(java.lang.StringBuffer,java.util.Map,java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getParameterMap()|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+method:///org/jasig/cas/web/flow/CasDefaultFlowUrlHandler/getEncodingScheme(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRequestURI()|",
+      "|java+constructor:///java/util/LinkedHashMap/LinkedHashMap(java.util.Map)|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/web/flow/CasDefaultFlowUrlHandler$AjcClosure3/CasDefaultFlowUrlHandler$AjcClosure3(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/support/CookieRetrievingCookieGenerator/retrieveCookieValue(javax.servlet.http.HttpServletRequest)|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+    "v1Body": [
+      "|java+method:///org/jasig/cas/web/support/CookieRetrievingCookieGenerator/getCookieName()|",
+      "|java+method:///org/springframework/web/util/WebUtils/getCookie(javax.servlet.http.HttpServletRequest,java.lang.String)|",
+      "|java+method:///javax/servlet/http/Cookie/getValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/web/support/CookieRetrievingCookieGenerator$AjcClosure3/CookieRetrievingCookieGenerator$AjcClosure3(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/FlowExecutionExceptionResolver/resolveException(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Object,java.lang.Exception)|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/apache/commons/lang/StringEscapeUtils/escapeHtml(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/springframework/web/servlet/ModelAndView/ModelAndView(org.springframework.web.servlet.View,java.util.Map)|",
+      "|java+method:///java/lang/String/valueOf(java.lang.Object)|",
+      "|java+constructor:///org/springframework/web/servlet/view/RedirectView/RedirectView(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRequestURI()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getQueryString()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/web/FlowExecutionExceptionResolver$AjcClosure1/FlowExecutionExceptionResolver$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/support/InspektrThrottledSubmissionByIpAddressAndUsernameHandlerInterceptorAdapter$2/asString()|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+    "v1Body": [
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/web/support/InspektrThrottledSubmissionByIpAddressAndUsernameHandlerInterceptorAdapter$2$AjcClosure1/InspektrThrottledSubmissionByIpAddressAndUsernameHandlerInterceptorAdapter$2$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/support/AbstractThrottledSubmissionHandlerInterceptorAdapter/postHandle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Object,org.springframework.web.servlet.ModelAndView)|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+    "v1Body": [
+      "|java+method:///org/springframework/webflow/execution/Event/getId()|",
+      "|java+method:///org/springframework/webflow/execution/RequestContext/getCurrentEvent()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getAttribute(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getMethod()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/jasig/cas/web/support/AbstractThrottledSubmissionHandlerInterceptorAdapter/recordSubmissionFailure(javax.servlet.http.HttpServletRequest)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/web/support/AbstractThrottledSubmissionHandlerInterceptorAdapter$AjcClosure5/AbstractThrottledSubmissionHandlerInterceptorAdapter$AjcClosure5(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/support/AbstractThrottledSubmissionHandlerInterceptorAdapter/preHandle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Object)|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+    "v1Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getParameter(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/sendError(int,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/jasig/cas/web/support/AbstractThrottledSubmissionHandlerInterceptorAdapter/recordThrottle(javax.servlet.http.HttpServletRequest)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRemoteAddr()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getMethod()|",
+      "|java+method:///org/jasig/cas/web/support/AbstractThrottledSubmissionHandlerInterceptorAdapter/exceedsThreshold(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/web/support/AbstractThrottledSubmissionHandlerInterceptorAdapter$AjcClosure3/AbstractThrottledSubmissionHandlerInterceptorAdapter$AjcClosure3(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/booleanValue(java.lang.Object)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/flow/SelectiveFlowHandlerAdapter/afterPropertiesSet()|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+    "v1Body": [
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///org/springframework/util/Assert/isTrue(boolean,java.lang.String)|",
+      "|java+method:///org/springframework/webflow/mvc/servlet/FlowHandlerAdapter/afterPropertiesSet()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/web/flow/SelectiveFlowHandlerAdapter$AjcClosure1/SelectiveFlowHandlerAdapter$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/support/InspektrThrottledSubmissionByIpAddressAndUsernameHandlerInterceptorAdapter$1/mapRow(java.sql.ResultSet,int)|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+    "v1Body": [
+      "|java+method:///java/sql/ResultSet/getTimestamp(int)|",
+      "|java+method:///org/jasig/cas/web/support/InspektrThrottledSubmissionByIpAddressAndUsernameHandlerInterceptorAdapter$1/mapRow(java.sql.ResultSet,int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/web/support/InspektrThrottledSubmissionByIpAddressAndUsernameHandlerInterceptorAdapter$1$AjcClosure1/InspektrThrottledSubmissionByIpAddressAndUsernameHandlerInterceptorAdapter$1$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/cas/web/support/InspektrThrottledSubmissionByIpAddressAndUsernameHandlerInterceptorAdapter$1/mapRow(java.sql.ResultSet,int)|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/intObject(int)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/support/CookieRetrievingCookieGenerator/addCookie(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)|",
+    "called": "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getParameter(java.lang.String)|",
+      "|java+method:///javax/servlet/http/Cookie/setMaxAge(int)|",
+      "|java+method:///org/jasig/cas/web/support/CookieRetrievingCookieGenerator/createCookie(java.lang.String)|",
+      "|java+method:///org/springframework/util/StringUtils/hasText(java.lang.String)|",
+      "|java+method:///javax/servlet/http/Cookie/setSecure(boolean)|",
+      "|java+method:///org/jasig/cas/web/support/CookieRetrievingCookieGenerator/isCookieSecure()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/addCookie(javax.servlet.http.Cookie)|",
+      "|java+method:///org/springframework/web/util/CookieGenerator/addCookie(javax.servlet.http.HttpServletResponse,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/web/support/CookieRetrievingCookieGenerator$AjcClosure1/CookieRetrievingCookieGenerator$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/flow/TerminateSessionAction/terminate(org.springframework.webflow.execution.RequestContext)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/jasig/cas/CentralAuthenticationService/destroyTicketGrantingTicket(java.lang.String)|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/getTicketGrantingTicketId(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/putLogoutRequests(org.springframework.webflow.execution.RequestContext,java.util.List)|",
+      "|java+method:///org/jasig/cas/web/support/CookieRetrievingCookieGenerator/retrieveCookieValue(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///org/springframework/webflow/action/EventFactorySupport/success(java.lang.Object)|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/getHttpServletResponse(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///org/jasig/cas/web/support/CookieRetrievingCookieGenerator/removeCookie(javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/getHttpServletRequest(org.springframework.webflow.execution.RequestContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/web/flow/TerminateSessionAction$AjcClosure1/TerminateSessionAction$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/flow/CasDefaultFlowUrlHandler/createFlowDefinitionUrl(java.lang.String,org.springframework.webflow.core.collection.AttributeMap,javax.servlet.http.HttpServletRequest)|",
+    "called": "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/valueOf(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRequestURI()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getQueryString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/web/flow/CasDefaultFlowUrlHandler$AjcClosure5/CasDefaultFlowUrlHandler$AjcClosure5(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/flow/GenerateLoginTicketAction/generate(org.springframework.webflow.execution.RequestContext)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/jasig/cas/util/UniqueTicketIdGenerator/getNewTicketId(java.lang.String)|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/putLoginTicket(org.springframework.webflow.execution.RequestContext,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/web/flow/GenerateLoginTicketAction$AjcClosure1/GenerateLoginTicketAction$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/flow/CasDefaultFlowUrlHandler/createFlowExecutionUrl(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)|",
+    "called": "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/cas/web/flow/CasDefaultFlowUrlHandler/appendQueryParameters(java.lang.StringBuffer,java.util.Map,java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getParameterMap()|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+method:///org/jasig/cas/web/flow/CasDefaultFlowUrlHandler/getEncodingScheme(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRequestURI()|",
+      "|java+constructor:///java/util/LinkedHashMap/LinkedHashMap(java.util.Map)|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/web/flow/CasDefaultFlowUrlHandler$AjcClosure3/CasDefaultFlowUrlHandler$AjcClosure3(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/FlowExecutionExceptionResolver/resolveException(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Object,java.lang.Exception)|",
+    "called": "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/apache/commons/lang/StringEscapeUtils/escapeHtml(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/springframework/web/servlet/ModelAndView/ModelAndView(org.springframework.web.servlet.View,java.util.Map)|",
+      "|java+method:///java/lang/String/valueOf(java.lang.Object)|",
+      "|java+constructor:///org/springframework/web/servlet/view/RedirectView/RedirectView(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRequestURI()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getQueryString()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/web/FlowExecutionExceptionResolver$AjcClosure1/FlowExecutionExceptionResolver$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/support/InspektrThrottledSubmissionByIpAddressAndUsernameHandlerInterceptorAdapter$2/asString()|",
+    "called": "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/web/support/InspektrThrottledSubmissionByIpAddressAndUsernameHandlerInterceptorAdapter$2$AjcClosure1/InspektrThrottledSubmissionByIpAddressAndUsernameHandlerInterceptorAdapter$2$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/support/AbstractThrottledSubmissionHandlerInterceptorAdapter/postHandle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Object,org.springframework.web.servlet.ModelAndView)|",
+    "called": "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+    "v1Body": [
+      "|java+method:///org/springframework/webflow/execution/Event/getId()|",
+      "|java+method:///org/springframework/webflow/execution/RequestContext/getCurrentEvent()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getAttribute(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getMethod()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/jasig/cas/web/support/AbstractThrottledSubmissionHandlerInterceptorAdapter/recordSubmissionFailure(javax.servlet.http.HttpServletRequest)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/web/support/AbstractThrottledSubmissionHandlerInterceptorAdapter$AjcClosure5/AbstractThrottledSubmissionHandlerInterceptorAdapter$AjcClosure5(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/flow/SelectiveFlowHandlerAdapter/afterPropertiesSet()|",
+    "called": "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+    "v1Body": [
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///org/springframework/util/Assert/isTrue(boolean,java.lang.String)|",
+      "|java+method:///org/springframework/webflow/mvc/servlet/FlowHandlerAdapter/afterPropertiesSet()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/web/flow/SelectiveFlowHandlerAdapter$AjcClosure1/SelectiveFlowHandlerAdapter$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/support/InspektrThrottledSubmissionByIpAddressAndUsernameHandlerInterceptorAdapter$1/mapRow(java.sql.ResultSet,int)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/sql/ResultSet/getTimestamp(int)|",
+      "|java+method:///org/jasig/cas/web/support/InspektrThrottledSubmissionByIpAddressAndUsernameHandlerInterceptorAdapter$1/mapRow(java.sql.ResultSet,int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/web/support/InspektrThrottledSubmissionByIpAddressAndUsernameHandlerInterceptorAdapter$1$AjcClosure1/InspektrThrottledSubmissionByIpAddressAndUsernameHandlerInterceptorAdapter$1$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/cas/web/support/InspektrThrottledSubmissionByIpAddressAndUsernameHandlerInterceptorAdapter$1/mapRow(java.sql.ResultSet,int)|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/intObject(int)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/flow/CompositeFlowExecutionKeyConverter/convertSourceToTargetClass(java.lang.Object,java.lang.Class)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/lang/Object/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/web/flow/CompositeFlowExecutionKeyConverter$AjcClosure5/CompositeFlowExecutionKeyConverter$AjcClosure5(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/util/AutowiringSchedulerFactoryBean/afterPropertiesSet()|",
+    "called": "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+    "v1Body": [
+      "|java+method:///org/springframework/context/ApplicationContext/getBeansOfType(java.lang.Class)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/Map/size()|",
+      "|java+method:///java/util/Map/values()|",
+      "|java+method:///java/util/Map/keySet()|",
+      "|java+method:///java/util/Collection/toArray(java.lang.Object%5B%5D)|",
+      "|java+method:///org/springframework/scheduling/quartz/SchedulerFactoryBean/setTriggers(org.quartz.Trigger%5B%5D)|",
+      "|java+method:///org/springframework/scheduling/quartz/SchedulerFactoryBean/afterPropertiesSet()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/util/AutowiringSchedulerFactoryBean$AjcClosure1/AutowiringSchedulerFactoryBean$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/support/AbstractInMemoryThrottledSubmissionHandlerInterceptorAdapter/decrementCounts()|",
+    "called": "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/Set/size()|",
+      "|java+method:///org/jasig/cas/web/support/AbstractInMemoryThrottledSubmissionHandlerInterceptorAdapter/submissionRate(java.util.Date,java.util.Date)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/Date/Date()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/util/concurrent/ConcurrentMap/get(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/remove()|",
+      "|java+method:///java/util/concurrent/ConcurrentMap/keySet()|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/jasig/cas/web/support/AbstractInMemoryThrottledSubmissionHandlerInterceptorAdapter/getThresholdRate()|",
+      "|java+method:///java/util/Set/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/web/support/AbstractInMemoryThrottledSubmissionHandlerInterceptorAdapter$AjcClosure1/AbstractInMemoryThrottledSubmissionHandlerInterceptorAdapter$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/flow/SelectiveFlowHandlerAdapter/supports(java.lang.Object)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/springframework/webflow/mvc/servlet/FlowHandler/getFlowId()|",
+      "|java+method:///java/util/List/contains(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/web/flow/SelectiveFlowHandlerAdapter$AjcClosure3/SelectiveFlowHandlerAdapter$AjcClosure3(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/booleanValue(java.lang.Object)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/flow/CasDefaultFlowUrlHandler/getFlowExecutionKey(javax.servlet.http.HttpServletRequest)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getParameter(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/web/flow/CasDefaultFlowUrlHandler$AjcClosure1/CasDefaultFlowUrlHandler$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/services/web/ServiceThemeResolver/resolveThemeName(javax.servlet.http.HttpServletRequest)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/jasig/cas/services/ServicesManager/findServiceBy(org.jasig.cas.authentication.principal.Service)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getHeader(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///org/springframework/util/StringUtils/hasText(java.lang.String)|",
+      "|java+method:///java/util/regex/Matcher/matches()|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/getService(java.util.List,javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///java/util/regex/Pattern/matcher(java.lang.CharSequence)|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/setAttribute(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/jasig/cas/services/web/ServiceThemeResolver/getDefaultThemeName()|",
+      "|java+method:///org/jasig/cas/services/RegisteredService/getTheme()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/services/web/ServiceThemeResolver$AjcClosure1/ServiceThemeResolver$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/support/CookieRetrievingCookieGenerator/retrieveCookieValue(javax.servlet.http.HttpServletRequest)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/jasig/cas/web/support/CookieRetrievingCookieGenerator/getCookieName()|",
+      "|java+method:///org/springframework/web/util/WebUtils/getCookie(javax.servlet.http.HttpServletRequest,java.lang.String)|",
+      "|java+method:///javax/servlet/http/Cookie/getValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/web/support/CookieRetrievingCookieGenerator$AjcClosure3/CookieRetrievingCookieGenerator$AjcClosure3(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/support/AbstractThrottledSubmissionHandlerInterceptorAdapter/preHandle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Object)|",
+    "called": "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getParameter(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/sendError(int,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/jasig/cas/web/support/AbstractThrottledSubmissionHandlerInterceptorAdapter/recordThrottle(javax.servlet.http.HttpServletRequest)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRemoteAddr()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getMethod()|",
+      "|java+method:///org/jasig/cas/web/support/AbstractThrottledSubmissionHandlerInterceptorAdapter/exceedsThreshold(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/web/support/AbstractThrottledSubmissionHandlerInterceptorAdapter$AjcClosure3/AbstractThrottledSubmissionHandlerInterceptorAdapter$AjcClosure3(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/booleanValue(java.lang.Object)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+constructor:///org/jasig/cas/web/flow/InitialFlowSetupAction/InitialFlowSetupAction()|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/webflow/action/AbstractAction/AbstractAction()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///org/springframework/webflow/action/AbstractAction/AbstractAction()|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.12",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/support/CookieRetrievingCookieGenerator/addCookie(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)|",
+    "called": "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getParameter(java.lang.String)|",
+      "|java+method:///javax/servlet/http/Cookie/setMaxAge(int)|",
+      "|java+method:///org/jasig/cas/web/support/CookieRetrievingCookieGenerator/createCookie(java.lang.String)|",
+      "|java+method:///org/springframework/util/StringUtils/hasText(java.lang.String)|",
+      "|java+method:///javax/servlet/http/Cookie/setSecure(boolean)|",
+      "|java+method:///org/jasig/cas/web/support/CookieRetrievingCookieGenerator/isCookieSecure()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/addCookie(javax.servlet.http.Cookie)|",
+      "|java+method:///org/springframework/web/util/CookieGenerator/addCookie(javax.servlet.http.HttpServletResponse,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/web/support/CookieRetrievingCookieGenerator$AjcClosure1/CookieRetrievingCookieGenerator$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/flow/TerminateSessionAction/terminate(org.springframework.webflow.execution.RequestContext)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/jasig/cas/CentralAuthenticationService/destroyTicketGrantingTicket(java.lang.String)|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/getTicketGrantingTicketId(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/putLogoutRequests(org.springframework.webflow.execution.RequestContext,java.util.List)|",
+      "|java+method:///org/jasig/cas/web/support/CookieRetrievingCookieGenerator/retrieveCookieValue(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///org/springframework/webflow/action/EventFactorySupport/success(java.lang.Object)|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/getHttpServletResponse(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///org/jasig/cas/web/support/CookieRetrievingCookieGenerator/removeCookie(javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/getHttpServletRequest(org.springframework.webflow.execution.RequestContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/web/flow/TerminateSessionAction$AjcClosure1/TerminateSessionAction$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/flow/CasDefaultFlowUrlHandler/createFlowDefinitionUrl(java.lang.String,org.springframework.webflow.core.collection.AttributeMap,javax.servlet.http.HttpServletRequest)|",
+    "called": "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/valueOf(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRequestURI()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getQueryString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/web/flow/CasDefaultFlowUrlHandler$AjcClosure5/CasDefaultFlowUrlHandler$AjcClosure5(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/flow/GenerateLoginTicketAction/generate(org.springframework.webflow.execution.RequestContext)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/jasig/cas/util/UniqueTicketIdGenerator/getNewTicketId(java.lang.String)|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/putLoginTicket(org.springframework.webflow.execution.RequestContext,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/web/flow/GenerateLoginTicketAction$AjcClosure1/GenerateLoginTicketAction$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/flow/CasDefaultFlowUrlHandler/createFlowExecutionUrl(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)|",
+    "called": "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/cas/web/flow/CasDefaultFlowUrlHandler/appendQueryParameters(java.lang.StringBuffer,java.util.Map,java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getParameterMap()|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+method:///org/jasig/cas/web/flow/CasDefaultFlowUrlHandler/getEncodingScheme(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRequestURI()|",
+      "|java+constructor:///java/util/LinkedHashMap/LinkedHashMap(java.util.Map)|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/web/flow/CasDefaultFlowUrlHandler$AjcClosure3/CasDefaultFlowUrlHandler$AjcClosure3(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/FlowExecutionExceptionResolver/resolveException(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Object,java.lang.Exception)|",
+    "called": "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/apache/commons/lang/StringEscapeUtils/escapeHtml(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/springframework/web/servlet/ModelAndView/ModelAndView(org.springframework.web.servlet.View,java.util.Map)|",
+      "|java+method:///java/lang/String/valueOf(java.lang.Object)|",
+      "|java+constructor:///org/springframework/web/servlet/view/RedirectView/RedirectView(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRequestURI()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getQueryString()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/web/FlowExecutionExceptionResolver$AjcClosure1/FlowExecutionExceptionResolver$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/support/InspektrThrottledSubmissionByIpAddressAndUsernameHandlerInterceptorAdapter$2/asString()|",
+    "called": "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/web/support/InspektrThrottledSubmissionByIpAddressAndUsernameHandlerInterceptorAdapter$2$AjcClosure1/InspektrThrottledSubmissionByIpAddressAndUsernameHandlerInterceptorAdapter$2$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/support/AbstractThrottledSubmissionHandlerInterceptorAdapter/postHandle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Object,org.springframework.web.servlet.ModelAndView)|",
+    "called": "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+    "v1Body": [
+      "|java+method:///org/springframework/webflow/execution/Event/getId()|",
+      "|java+method:///org/springframework/webflow/execution/RequestContext/getCurrentEvent()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getAttribute(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getMethod()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/jasig/cas/web/support/AbstractThrottledSubmissionHandlerInterceptorAdapter/recordSubmissionFailure(javax.servlet.http.HttpServletRequest)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/web/support/AbstractThrottledSubmissionHandlerInterceptorAdapter$AjcClosure5/AbstractThrottledSubmissionHandlerInterceptorAdapter$AjcClosure5(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/flow/SelectiveFlowHandlerAdapter/afterPropertiesSet()|",
+    "called": "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+    "v1Body": [
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///org/springframework/util/Assert/isTrue(boolean,java.lang.String)|",
+      "|java+method:///org/springframework/webflow/mvc/servlet/FlowHandlerAdapter/afterPropertiesSet()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/web/flow/SelectiveFlowHandlerAdapter$AjcClosure1/SelectiveFlowHandlerAdapter$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/support/InspektrThrottledSubmissionByIpAddressAndUsernameHandlerInterceptorAdapter$1/mapRow(java.sql.ResultSet,int)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/sql/ResultSet/getTimestamp(int)|",
+      "|java+method:///org/jasig/cas/web/support/InspektrThrottledSubmissionByIpAddressAndUsernameHandlerInterceptorAdapter$1/mapRow(java.sql.ResultSet,int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/web/support/InspektrThrottledSubmissionByIpAddressAndUsernameHandlerInterceptorAdapter$1$AjcClosure1/InspektrThrottledSubmissionByIpAddressAndUsernameHandlerInterceptorAdapter$1$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/cas/web/support/InspektrThrottledSubmissionByIpAddressAndUsernameHandlerInterceptorAdapter$1/mapRow(java.sql.ResultSet,int)|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/intObject(int)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/flow/CompositeFlowExecutionKeyConverter/convertSourceToTargetClass(java.lang.Object,java.lang.Class)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/lang/Object/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/web/flow/CompositeFlowExecutionKeyConverter$AjcClosure5/CompositeFlowExecutionKeyConverter$AjcClosure5(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/util/AutowiringSchedulerFactoryBean/afterPropertiesSet()|",
+    "called": "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+    "v1Body": [
+      "|java+method:///org/springframework/context/ApplicationContext/getBeansOfType(java.lang.Class)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/Map/size()|",
+      "|java+method:///java/util/Map/values()|",
+      "|java+method:///java/util/Map/keySet()|",
+      "|java+method:///java/util/Collection/toArray(java.lang.Object%5B%5D)|",
+      "|java+method:///org/springframework/scheduling/quartz/SchedulerFactoryBean/setTriggers(org.quartz.Trigger%5B%5D)|",
+      "|java+method:///org/springframework/scheduling/quartz/SchedulerFactoryBean/afterPropertiesSet()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/util/AutowiringSchedulerFactoryBean$AjcClosure1/AutowiringSchedulerFactoryBean$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/support/AbstractInMemoryThrottledSubmissionHandlerInterceptorAdapter/decrementCounts()|",
+    "called": "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/Set/size()|",
+      "|java+method:///org/jasig/cas/web/support/AbstractInMemoryThrottledSubmissionHandlerInterceptorAdapter/submissionRate(java.util.Date,java.util.Date)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/Date/Date()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/util/concurrent/ConcurrentMap/get(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/remove()|",
+      "|java+method:///java/util/concurrent/ConcurrentMap/keySet()|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/jasig/cas/web/support/AbstractInMemoryThrottledSubmissionHandlerInterceptorAdapter/getThresholdRate()|",
+      "|java+method:///java/util/Set/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/web/support/AbstractInMemoryThrottledSubmissionHandlerInterceptorAdapter$AjcClosure1/AbstractInMemoryThrottledSubmissionHandlerInterceptorAdapter$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/flow/SelectiveFlowHandlerAdapter/supports(java.lang.Object)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/springframework/webflow/mvc/servlet/FlowHandler/getFlowId()|",
+      "|java+method:///java/util/List/contains(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/web/flow/SelectiveFlowHandlerAdapter$AjcClosure3/SelectiveFlowHandlerAdapter$AjcClosure3(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/booleanValue(java.lang.Object)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/flow/CasDefaultFlowUrlHandler/getFlowExecutionKey(javax.servlet.http.HttpServletRequest)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getParameter(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/web/flow/CasDefaultFlowUrlHandler$AjcClosure1/CasDefaultFlowUrlHandler$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/services/web/ServiceThemeResolver/resolveThemeName(javax.servlet.http.HttpServletRequest)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/jasig/cas/services/ServicesManager/findServiceBy(org.jasig.cas.authentication.principal.Service)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getHeader(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///org/springframework/util/StringUtils/hasText(java.lang.String)|",
+      "|java+method:///java/util/regex/Matcher/matches()|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/getService(java.util.List,javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///java/util/regex/Pattern/matcher(java.lang.CharSequence)|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/setAttribute(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/jasig/cas/services/web/ServiceThemeResolver/getDefaultThemeName()|",
+      "|java+method:///org/jasig/cas/services/RegisteredService/getTheme()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/services/web/ServiceThemeResolver$AjcClosure1/ServiceThemeResolver$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/support/CookieRetrievingCookieGenerator/retrieveCookieValue(javax.servlet.http.HttpServletRequest)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/jasig/cas/web/support/CookieRetrievingCookieGenerator/getCookieName()|",
+      "|java+method:///org/springframework/web/util/WebUtils/getCookie(javax.servlet.http.HttpServletRequest,java.lang.String)|",
+      "|java+method:///javax/servlet/http/Cookie/getValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/web/support/CookieRetrievingCookieGenerator$AjcClosure3/CookieRetrievingCookieGenerator$AjcClosure3(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/support/AbstractThrottledSubmissionHandlerInterceptorAdapter/preHandle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Object)|",
+    "called": "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getParameter(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/sendError(int,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/jasig/cas/web/support/AbstractThrottledSubmissionHandlerInterceptorAdapter/recordThrottle(javax.servlet.http.HttpServletRequest)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRemoteAddr()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getMethod()|",
+      "|java+method:///org/jasig/cas/web/support/AbstractThrottledSubmissionHandlerInterceptorAdapter/exceedsThreshold(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/web/support/AbstractThrottledSubmissionHandlerInterceptorAdapter$AjcClosure3/AbstractThrottledSubmissionHandlerInterceptorAdapter$AjcClosure3(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/booleanValue(java.lang.Object)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/ServiceValidateController/handleRequestInternal(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+    "called": "|java+method:///org/jasig/cas/ticket/TicketValidationException/getOriginalService()|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/cas/web/support/ArgumentExtractor/extractService(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///org/jasig/cas/ticket/proxy/ProxyHandler/canHandle(org.jasig.cas.authentication.Credential)|",
+      "|java+method:///org/jasig/cas/ticket/TicketException/getCode()|",
+      "|java+method:///org/jasig/cas/authentication/principal/WebApplicationService/getArtifactId()|",
+      "|java+method:///org/jasig/cas/services/UnauthorizedProxyingException/getMessage()|",
+      "|java+method:///org/jasig/cas/CentralAuthenticationService/validateServiceTicket(java.lang.String,org.jasig.cas.authentication.principal.Service)|",
+      "|java+method:///org/jasig/cas/authentication/principal/Service/getId()|",
+      "|java+method:///org/jasig/cas/ticket/TicketValidationException/getOriginalService()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/jasig/cas/CentralAuthenticationService/delegateTicketGrantingTicket(java.lang.String,org.jasig.cas.authentication.Credential%5B%5D)|",
+      "|java+method:///org/jasig/cas/web/ServiceValidateController/initBinder(javax.servlet.http.HttpServletRequest,org.springframework.web.bind.ServletRequestDataBinder)|",
+      "|java+method:///org/jasig/cas/web/ServiceValidateController/generateErrorView(java.lang.String,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/cas/web/ServiceValidateController/getCommandClass()|",
+      "|java+method:///org/jasig/cas/web/ServiceValidateController/generateSuccessView(org.jasig.cas.validation.Assertion,java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/springframework/web/bind/ServletRequestDataBinder/bind(javax.servlet.ServletRequest)|",
+      "|java+method:///org/jasig/cas/ticket/TicketValidationException/getCode()|",
+      "|java+method:///org/jasig/cas/web/ServiceValidateController/getServiceCredentialsFromRequest(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///org/jasig/cas/ticket/proxy/ProxyHandler/handle(org.jasig.cas.authentication.Credential,java.lang.String)|",
+      "|java+method:///org/jasig/cas/web/ServiceValidateController/onSuccessfulValidation(java.lang.String,org.jasig.cas.validation.Assertion)|",
+      "|java+method:///org/jasig/cas/authentication/Credential/getId()|",
+      "|java+method:///org/jasig/cas/validation/ValidationSpecification/isSatisfiedBy(org.jasig.cas.validation.Assertion)|",
+      "|java+constructor:///org/springframework/web/bind/ServletRequestDataBinder/ServletRequestDataBinder(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/jasig/cas/services/UnauthorizedServiceException/getMessage()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/springframework/util/StringUtils/isEmpty(java.lang.Object)|",
+      "|java+method:///org/jasig/cas/authentication/principal/WebApplicationService/getId()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/cas/web/support/ArgumentExtractor/extractService(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/jasig/cas/authentication/principal/WebApplicationService/getArtifactId()|",
+      "|java+method:///org/jasig/cas/services/UnauthorizedProxyingException/getMessage()|",
+      "|java+method:///org/jasig/cas/CentralAuthenticationService/validateServiceTicket(java.lang.String,org.jasig.cas.authentication.principal.Service)|",
+      "|java+method:///org/jasig/cas/authentication/principal/Service/getId()|",
+      "|java+method:///org/jasig/cas/ticket/TicketValidationException/getOriginalService()|",
+      "|java+method:///org/jasig/cas/CentralAuthenticationService/delegateTicketGrantingTicket(java.lang.String,org.jasig.cas.authentication.Credential%5B%5D)|",
+      "|java+method:///org/jasig/cas/web/ServiceValidateController/generateErrorView(java.lang.String,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/cas/web/ServiceValidateController/getCommandClass()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/cas/ticket/TicketGrantingTicket/getId()|",
+      "|java+method:///org/jasig/cas/ticket/proxy/ProxyHandler/canHandle(org.jasig.cas.authentication.Credential)|",
+      "|java+method:///org/jasig/cas/ticket/proxy/ProxyHandler/handle(org.jasig.cas.authentication.Credential,org.jasig.cas.ticket.TicketGrantingTicket)|",
+      "|java+method:///org/jasig/cas/ticket/TicketException/getCode()|",
+      "|java+method:///org/springframework/web/bind/ServletRequestDataBinder/bind(javax.servlet.ServletRequest)|",
+      "|java+method:///org/jasig/cas/ticket/TicketValidationException/getCode()|",
+      "|java+method:///org/jasig/cas/web/ServiceValidateController/onSuccessfulValidation(java.lang.String,org.jasig.cas.validation.Assertion)|",
+      "|java+method:///org/jasig/cas/authentication/Credential/getId()|",
+      "|java+method:///org/jasig/cas/validation/ValidationSpecification/isSatisfiedBy(org.jasig.cas.validation.Assertion)|",
+      "|java+constructor:///org/springframework/web/bind/ServletRequestDataBinder/ServletRequestDataBinder(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/jasig/cas/services/UnauthorizedServiceException/getMessage()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/springframework/util/StringUtils/isEmpty(java.lang.Object)|",
+      "|java+method:///org/jasig/cas/authentication/principal/WebApplicationService/getId()|",
+      "|java+method:///org/jasig/cas/web/ServiceValidateController/getServiceCredentialsFromRequest(org.jasig.cas.authentication.principal.WebApplicationService,javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/jasig/cas/web/ServiceValidateController/generateSuccessView(org.jasig.cas.validation.Assertion,java.lang.String,org.jasig.cas.authentication.principal.WebApplicationService,org.jasig.cas.ticket.TicketGrantingTicket)|",
+      "|java+method:///org/jasig/cas/web/ServiceValidateController/initBinder(javax.servlet.http.HttpServletRequest,org.springframework.web.bind.ServletRequestDataBinder)|"
+    ],
+    "affectedLib": "org.jasig.cas:cas-server-core:4.1.0-RC1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/flow/FrontChannelLogoutAction/doInternalExecute(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.webflow.execution.RequestContext)|",
+    "called": "|java+method:///org/jasig/cas/web/support/WebUtils/getLogoutRequests(org.springframework.webflow.execution.RequestContext)|",
+    "v1Body": [
+      "|java+method:///org/springframework/web/util/UriComponents/toUriString()|",
+      "|java+method:///org/jasig/cas/web/flow/FrontChannelLogoutAction/getLogoutIndex(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/jasig/cas/logout/LogoutRequest/setStatus(org.jasig.cas.logout.LogoutRequestStatus)|",
+      "|java+method:///org/jasig/cas/logout/LogoutManager/createFrontChannelLogoutMessage(org.jasig.cas.logout.LogoutRequest)|",
+      "|java+constructor:///org/springframework/webflow/execution/Event/Event(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/build()|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/queryParam(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///org/jasig/cas/authentication/principal/SingleLogoutService/getId()|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/fromHttpUrl(java.lang.String)|",
+      "|java+method:///java/net/URLEncoder/encode(java.lang.String,java.lang.String)|",
+      "|java+method:///org/jasig/cas/web/flow/FrontChannelLogoutAction/result(java.lang.String,java.lang.String,java.lang.Object)|",
+      "|java+method:///org/jasig/cas/logout/LogoutRequest/getStatus()|",
+      "|java+method:///org/jasig/cas/web/flow/FrontChannelLogoutAction/putLogoutIndex(org.springframework.webflow.execution.RequestContext,int)|",
+      "|java+method:///org/jasig/cas/logout/LogoutRequest/getService()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/getLogoutRequests(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///java/util/List/get(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///java/net/URL/toExternalForm()|",
+      "|java+method:///org/springframework/web/util/UriComponents/toUriString()|",
+      "|java+method:///org/jasig/cas/web/flow/FrontChannelLogoutAction/getLogoutIndex(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/jasig/cas/logout/LogoutRequest/setStatus(org.jasig.cas.logout.LogoutRequestStatus)|",
+      "|java+method:///org/jasig/cas/web/flow/FrontChannelLogoutAction/putLogoutIndex(org.springframework.webflow.execution.RequestContext,int)|",
+      "|java+method:///org/jasig/cas/logout/LogoutManager/createFrontChannelLogoutMessage(org.jasig.cas.logout.LogoutRequest)|",
+      "|java+constructor:///org/springframework/webflow/execution/Event/Event(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/build()|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/queryParam(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/cas/logout/LogoutRequest/getLogoutUrl()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/fromHttpUrl(java.lang.String)|",
+      "|java+method:///java/net/URLEncoder/encode(java.lang.String,java.lang.String)|",
+      "|java+method:///org/jasig/cas/web/flow/FrontChannelLogoutAction/result(java.lang.String,java.lang.String,java.lang.Object)|",
+      "|java+method:///org/jasig/cas/logout/LogoutRequest/getStatus()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/getLogoutRequests(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///java/util/List/get(int)|"
+    ],
+    "affectedLib": "org.jasig.cas:cas-server-core:4.1.0-RC1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/flow/LogoutAction/doInternalExecute(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.webflow.execution.RequestContext)|",
+    "called": "|java+method:///org/jasig/cas/web/support/WebUtils/getLogoutRequests(org.springframework.webflow.execution.RequestContext)|",
+    "v1Body": [
+      "|java+method:///org/jasig/cas/services/ServicesManager/findServiceBy(org.jasig.cas.authentication.principal.Service)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/jasig/cas/web/flow/LogoutAction/putLogoutIndex(org.springframework.webflow.execution.RequestContext,int)|",
+      "|java+method:///org/jasig/cas/logout/LogoutRequest/getStatus()|",
+      "|java+method:///org/springframework/webflow/execution/RequestContext/getFlowScope()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/getLogoutRequests(org.springframework.webflow.execution.RequestContext)|",
+      "|java+constructor:///org/jasig/cas/authentication/principal/SimpleWebApplicationServiceImpl/SimpleWebApplicationServiceImpl(java.lang.String)|",
+      "|java+method:///org/jasig/cas/services/RegisteredService/isEnabled()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getParameter(java.lang.String)|",
+      "|java+method:///org/springframework/webflow/core/collection/MutableAttributeMap/put(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///org/springframework/webflow/execution/Event/Event(java.lang.Object,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jasig/cas/services/ServicesManager/findServiceBy(org.jasig.cas.authentication.principal.Service)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/jasig/cas/web/flow/LogoutAction/putLogoutIndex(org.springframework.webflow.execution.RequestContext,int)|",
+      "|java+method:///org/jasig/cas/logout/LogoutRequest/getStatus()|",
+      "|java+method:///org/springframework/webflow/execution/RequestContext/getFlowScope()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/jasig/cas/services/RegisteredServiceAccessStrategy/isServiceAccessAllowed()|",
+      "|java+method:///org/jasig/cas/services/RegisteredService/getAccessStrategy()|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/getLogoutRequests(org.springframework.webflow.execution.RequestContext)|",
+      "|java+constructor:///org/jasig/cas/authentication/principal/SimpleWebApplicationServiceImpl/SimpleWebApplicationServiceImpl(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getParameter(java.lang.String)|",
+      "|java+method:///org/springframework/webflow/core/collection/MutableAttributeMap/put(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///org/springframework/webflow/execution/Event/Event(java.lang.Object,java.lang.String)|"
+    ],
+    "affectedLib": "org.jasig.cas:cas-server-core:4.1.0-RC1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/flow/SendTicketGrantingTicketAction/doExecute(org.springframework.webflow.execution.RequestContext)|",
+    "called": "|java+method:///org/jasig/cas/web/support/WebUtils/getHttpServletResponse(org.springframework.webflow.execution.RequestContext)|",
+    "v1Body": [
+      "|java+method:///org/jasig/cas/CentralAuthenticationService/destroyTicketGrantingTicket(java.lang.String)|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/getTicketGrantingTicketId(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///org/springframework/webflow/core/collection/MutableAttributeMap/get(java.lang.String)|",
+      "|java+method:///org/springframework/webflow/execution/RequestContext/getFlowScope()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/jasig/cas/web/support/CookieRetrievingCookieGenerator/addCookie(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/getHttpServletRequest(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/getHttpServletResponse(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///org/jasig/cas/web/flow/SendTicketGrantingTicketAction/success()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jasig/cas/CentralAuthenticationService/destroyTicketGrantingTicket(java.lang.String)|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/getTicketGrantingTicketId(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///org/springframework/webflow/execution/RequestContext/getFlowScope()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/jasig/cas/web/support/CookieRetrievingCookieGenerator/addCookie(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)|",
+      "|java+method:///org/jasig/cas/web/flow/SendTicketGrantingTicketAction/isAuthenticationRenewed(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///org/jasig/cas/web/flow/SendTicketGrantingTicketAction/isAuthenticatingAtPublicWorkstation(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/getHttpServletRequest(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///org/springframework/webflow/core/collection/MutableAttributeMap/get(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/getHttpServletResponse(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///org/jasig/cas/web/flow/SendTicketGrantingTicketAction/success()|"
+    ],
+    "affectedLib": "org.jasig.cas:cas-server-core:4.1.0-RC1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/flow/GenerateServiceTicketAction/doExecute(org.springframework.webflow.execution.RequestContext)|",
+    "called": "|java+method:///org/jasig/cas/web/support/WebUtils/getService(org.springframework.webflow.execution.RequestContext)|",
+    "v1Body": [
+      "|java+method:///org/jasig/cas/web/support/WebUtils/getTicketGrantingTicketId(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///org/jasig/cas/web/flow/GenerateServiceTicketAction/success()|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/getService(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///org/jasig/cas/CentralAuthenticationService/grantServiceTicket(java.lang.String,org.jasig.cas.authentication.principal.Service)|",
+      "|java+method:///org/jasig/cas/web/flow/GenerateServiceTicketAction/error()|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/putServiceTicketInRequestScope(org.springframework.webflow.execution.RequestContext,java.lang.String)|",
+      "|java+method:///org/jasig/cas/web/flow/GenerateServiceTicketAction/result(java.lang.String)|",
+      "|java+method:///org/jasig/cas/web/flow/GenerateServiceTicketAction/isGatewayPresent(org.springframework.webflow.execution.RequestContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jasig/cas/CentralAuthenticationService/destroyTicketGrantingTicket(java.lang.String)|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/getCredential(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/getTicketGrantingTicketId(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///org/jasig/cas/web/flow/GenerateServiceTicketAction/success()|",
+      "|java+method:///org/jasig/cas/web/flow/GenerateServiceTicketAction/error()|",
+      "|java+method:///org/apache/commons/logging/Log/error(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/putServiceTicketInRequestScope(org.springframework.webflow.execution.RequestContext,org.jasig.cas.ticket.ServiceTicket)|",
+      "|java+method:///org/jasig/cas/web/flow/GenerateServiceTicketAction/result(java.lang.String)|",
+      "|java+method:///org/jasig/cas/web/flow/GenerateServiceTicketAction/isGatewayPresent(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/getService(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///org/jasig/cas/CentralAuthenticationService/grantServiceTicket(java.lang.String,org.jasig.cas.authentication.principal.Service,org.jasig.cas.authentication.Credential%5B%5D)|"
+    ],
+    "affectedLib": "org.jasig.cas:cas-server-core:4.1.0-RC1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/flow/InitialFlowSetupAction/doExecute(org.springframework.webflow.execution.RequestContext)|",
+    "called": "|java+method:///org/jasig/cas/web/support/WebUtils/putTicketGrantingTicketInScopes(org.springframework.webflow.execution.RequestContext,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/springframework/webflow/core/collection/MutableAttributeMap/put(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///java/lang/Boolean/valueOf(java.lang.String)|",
+      "|java+method:///java/lang/String/valueOf(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/util/StringUtils/hasText(java.lang.String)|",
+      "|java+method:///org/springframework/webflow/execution/RequestContext/getFlowScope()|",
+      "|java+method:///org/jasig/cas/web/support/CookieRetrievingCookieGenerator/setCookiePath(java.lang.String)|",
+      "|java+method:///org/jasig/cas/authentication/principal/Service/getId()|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/getService(java.util.List,org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///org/springframework/webflow/context/ExternalContext/getContextPath()|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/getHttpServletRequest(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+method:///org/springframework/webflow/execution/RequestContext/getExternalContext()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/Log/info(java.lang.Object)|",
+      "|java+method:///org/jasig/cas/web/support/CookieRetrievingCookieGenerator/retrieveCookieValue(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///org/jasig/cas/web/flow/InitialFlowSetupAction/result(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Boolean/valueOf(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/springframework/webflow/execution/repository/NoSuchFlowExecutionException/NoSuchFlowExecutionException(org.springframework.webflow.execution.FlowExecutionKey,java.lang.Exception)|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/putService(org.springframework.webflow.execution.RequestContext,org.jasig.cas.authentication.principal.Service)|",
+      "|java+constructor:///org/jasig/cas/services/UnauthorizedServiceException/UnauthorizedServiceException(java.lang.String,java.lang.String)|",
+      "|java+method:///org/jasig/cas/services/RegisteredServiceAccessStrategy/isServiceAccessAllowed()|",
+      "|java+method:///org/jasig/cas/services/RegisteredService/getId()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/getHttpServletRequest(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/jasig/cas/services/ServicesManager/findServiceBy(org.jasig.cas.authentication.principal.Service)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/springframework/webflow/execution/FlowExecutionContext/getKey()|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/springframework/util/StringUtils/hasText(java.lang.String)|",
+      "|java+method:///org/jasig/cas/services/RegisteredService/getServiceId()|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/putRegisteredService(org.springframework.webflow.execution.RequestContext,org.jasig.cas.services.RegisteredService)|",
+      "|java+method:///org/springframework/webflow/execution/RequestContext/getExternalContext()|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/putTicketGrantingTicketInScopes(org.springframework.webflow.execution.RequestContext,java.lang.String)|",
+      "|java+method:///org/jasig/cas/web/support/CookieRetrievingCookieGenerator/setCookiePath(java.lang.String)|",
+      "|java+method:///org/springframework/webflow/execution/RequestContext/getFlowExecutionContext()|",
+      "|java+method:///org/jasig/cas/authentication/principal/Service/getId()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/jasig/cas/web/support/CookieRetrievingCookieGenerator/retrieveCookieValue(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///org/jasig/cas/services/RegisteredService/getAccessStrategy()|",
+      "|java+method:///org/jasig/cas/web/flow/InitialFlowSetupAction/result(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/getService(java.util.List,org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/putWarningCookie(org.springframework.webflow.execution.RequestContext,java.lang.Boolean)|",
+      "|java+method:///org/springframework/webflow/context/ExternalContext/getContextPath()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRequestURL()|"
+    ],
+    "affectedLib": "org.jasig.cas:cas-server-core:4.1.0-RC1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-webapp-support:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-webapp-support:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/web/flow/ServiceAuthorizationCheck/doExecute(org.springframework.webflow.execution.RequestContext)|",
+    "called": "|java+method:///org/jasig/cas/web/support/WebUtils/getService(org.springframework.webflow.execution.RequestContext)|",
+    "v1Body": [
+      "|java+method:///org/jasig/cas/services/ServicesManager/findServiceBy(org.jasig.cas.authentication.principal.Service)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///org/jasig/cas/web/flow/ServiceAuthorizationCheck/success()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Collection/size()|",
+      "|java+method:///org/jasig/cas/authentication/principal/Service/getId()|",
+      "|java+constructor:///org/jasig/cas/services/UnauthorizedServiceException/UnauthorizedServiceException(java.lang.String)|",
+      "|java+method:///org/jasig/cas/services/ServicesManager/getAllServices()|",
+      "|java+method:///org/jasig/cas/services/RegisteredService/isEnabled()|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/getService(org.springframework.webflow.execution.RequestContext)|",
+      "|java+constructor:///org/jasig/cas/services/UnauthorizedServiceException/UnauthorizedServiceException(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jasig/cas/services/ServicesManager/findServiceBy(org.jasig.cas.authentication.principal.Service)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///org/jasig/cas/web/flow/ServiceAuthorizationCheck/success()|",
+      "|java+method:///java/util/Collection/isEmpty()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/cas/services/RegisteredServiceAccessStrategy/isServiceAccessAllowed()|",
+      "|java+method:///org/jasig/cas/authentication/principal/Service/getId()|",
+      "|java+method:///org/jasig/cas/services/ServicesManager/getAllServices()|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/getService(org.springframework.webflow.execution.RequestContext)|",
+      "|java+constructor:///org/jasig/cas/services/UnauthorizedServiceException/UnauthorizedServiceException(java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/jasig/cas/services/UnauthorizedServiceException/UnauthorizedServiceException(java.lang.String)|",
+      "|java+method:///org/jasig/cas/services/RegisteredService/getAccessStrategy()|"
+    ],
+    "affectedLib": "org.jasig.cas:cas-server-core:4.1.0-RC1",
+    "change": "UPDATED"
+  }
+]

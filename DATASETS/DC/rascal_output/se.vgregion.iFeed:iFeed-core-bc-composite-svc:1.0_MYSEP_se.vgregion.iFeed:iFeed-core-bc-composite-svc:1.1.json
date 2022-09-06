@@ -1,0 +1,60 @@
+[
+  {
+    "coordinatesV1": "se.vgregion.iFeed:iFeed-core-bc-composite-svc:1.0",
+    "coordinatesV2": "se.vgregion.iFeed:iFeed-core-bc-composite-svc:1.1",
+    "caller": "|java+method:///se/vgregion/ifeed/service/ifeed/IFeedServiceImpl/updateIFeed(se.vgregion.ifeed.types.IFeed)|",
+    "called": "|java+method:///se/vgregion/ifeed/types/IFeed/getId()|",
+    "v1Body": [
+      "|java+method:///se/vgregion/dao/domain/patterns/repository/db/jpa/JpaRepository/merge(se.vgregion.dao.domain.patterns.entity.Entity)|",
+      "|java+method:///se/vgregion/ifeed/service/ifeed/IFeedServiceImpl/filterChanged(se.vgregion.ifeed.types.IFeed,se.vgregion.ifeed.types.IFeed)|",
+      "|java+method:///se/vgregion/dao/domain/patterns/repository/db/jpa/JpaRepository/find(java.lang.Object)|",
+      "|java+method:///se/vgregion/ifeed/types/IFeed/clearTimestamp()|",
+      "|java+method:///se/vgregion/ifeed/types/IFeed/getId()|"
+    ],
+    "v2Body": [
+      "|java+method:///se/vgregion/ifeed/types/IFeed/setTimestamp()|",
+      "|java+method:///se/vgregion/dao/domain/patterns/repository/db/jpa/JpaRepository/merge(se.vgregion.dao.domain.patterns.entity.Entity)|",
+      "|java+method:///se/vgregion/ifeed/types/IFeed/setSortDirection(java.lang.String)|",
+      "|java+method:///se/vgregion/ifeed/types/IFeed/setFilters(java.util.List)|",
+      "|java+method:///se/vgregion/ifeed/types/IFeed/setName(java.lang.String)|",
+      "|java+method:///se/vgregion/ifeed/types/IFeed/getFilters()|",
+      "|java+method:///se/vgregion/ifeed/service/push/IFeedPublisher/addIFeed(se.vgregion.ifeed.types.IFeed)|",
+      "|java+method:///se/vgregion/dao/domain/patterns/repository/db/jpa/JpaRepository/find(java.lang.Object)|",
+      "|java+method:///se/vgregion/ifeed/types/IFeed/clearTimestamp()|",
+      "|java+method:///se/vgregion/ifeed/service/push/IFeedPublisher/publish()|",
+      "|java+method:///se/vgregion/ifeed/types/IFeed/getSortDirection()|",
+      "|java+method:///se/vgregion/ifeed/types/IFeed/getId()|",
+      "|java+method:///se/vgregion/ifeed/types/IFeed/setSortField(java.lang.String)|",
+      "|java+method:///se/vgregion/ifeed/types/IFeed/setDescription(java.lang.String)|",
+      "|java+method:///se/vgregion/ifeed/service/ifeed/IFeedServiceImpl/filterChanged(se.vgregion.ifeed.types.IFeed,se.vgregion.ifeed.types.IFeed)|",
+      "|java+method:///se/vgregion/ifeed/types/IFeed/getName()|",
+      "|java+method:///se/vgregion/ifeed/types/IFeed/getSortField()|",
+      "|java+method:///se/vgregion/ifeed/types/IFeed/getDescription()|"
+    ],
+    "affectedLib": "se.vgregion.iFeed:iFeed-core-bc-composite-types:1.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "se.vgregion.iFeed:iFeed-core-bc-composite-svc:1.0",
+    "coordinatesV2": "se.vgregion.iFeed:iFeed-core-bc-composite-svc:1.1",
+    "caller": "|java+method:///se/vgregion/ifeed/service/push/IFeedPublisher/addIFeed(se.vgregion.ifeed.types.IFeed)|",
+    "called": "|java+method:///se/vgregion/ifeed/types/IFeed/getId()|",
+    "v1Body": [
+      "|java+method:///java/net/URLEncoder/encode(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///se/vgregion/ifeed/types/IFeed/getId()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/net/URI/toString()|",
+      "|java+method:///se/vgregion/ifeed/types/IFeed/getSortDirection()|",
+      "|java+method:///se/vgregion/ifeed/types/IFeed/getId()|",
+      "|java+method:///se/vgregion/ifeed/types/IFeed/getSortField()|",
+      "|java+method:///org/springframework/web/util/UriTemplate/expand(java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "se.vgregion.iFeed:iFeed-core-bc-composite-types:1.1",
+    "change": "UPDATED"
+  }
+]

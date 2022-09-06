@@ -1,0 +1,66 @@
+[
+  {
+    "coordinatesV1": "biz.paluch.redis:lettuce:4.4.1.Final",
+    "coordinatesV2": "biz.paluch.redis:lettuce:4.4.2.Final",
+    "caller": "|java+initializer:///com/lambdaworks/redis/protocol/CommandHandler/CommandHandler$initializer|",
+    "called": "|java+method:///io/netty/util/internal/logging/InternalLoggerFactory/getInstance(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///java/util/concurrent/atomic/AtomicLong/AtomicLong()|",
+      "|java+method:///com/lambdaworks/redis/internal/LettuceSets/unmodifiableSet(java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicIntegerFieldUpdater/newUpdater(java.lang.Class,java.lang.String)|",
+      "|java+method:///io/netty/util/internal/logging/InternalLoggerFactory/getInstance(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/concurrent/atomic/AtomicLong/AtomicLong()|",
+      "|java+method:///com/lambdaworks/redis/internal/LettuceSets/unmodifiableSet(java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicIntegerFieldUpdater/newUpdater(java.lang.Class,java.lang.String)|",
+      "|java+method:///com/lambdaworks/redis/internal/LettuceClassUtils/forName(java.lang.String)|",
+      "|java+method:///io/netty/util/internal/logging/InternalLoggerFactory/getInstance(java.lang.Class)|"
+    ],
+    "affectedLib": "io.netty:netty-common:4.1.17.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "biz.paluch.redis:lettuce:4.4.1.Final",
+    "coordinatesV2": "biz.paluch.redis:lettuce:4.4.2.Final",
+    "caller": "|java+method:///com/lambdaworks/redis/AbstractRedisClient/initializeChannelAsync(com.lambdaworks.redis.ConnectionBuilder)|",
+    "called": "|java+method:///io/netty/bootstrap/Bootstrap/connect(java.net.SocketAddress)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///io/netty/util/concurrent/EventExecutorGroup/isShuttingDown()|",
+      "|java+method:///io/netty/bootstrap/Bootstrap/connect(java.net.SocketAddress)|",
+      "|java+constructor:///java/util/concurrent/CompletableFuture/CompletableFuture()|",
+      "|java+method:///com/lambdaworks/redis/resource/ClientResources/eventExecutorGroup()|",
+      "|java+constructor:///com/lambdaworks/redis/DefaultConnectionFuture/DefaultConnectionFuture(java.net.SocketAddress,java.util.concurrent.CompletableFuture)|",
+      "|java+method:///com/lambdaworks/redis/resource/NettyCustomizer/afterBootstrapInitialized(io.netty.bootstrap.Bootstrap)|",
+      "|java+method:///com/lambdaworks/redis/ConnectionBuilder/bootstrap()|",
+      "|java+method:///com/lambdaworks/redis/ConnectionBuilder/build()|",
+      "|java+method:///com/lambdaworks/redis/resource/ClientResources/nettyCustomizer()|",
+      "|java+method:///java/util/concurrent/CompletableFuture/thenApply(java.util.function.Function)|",
+      "|java+method:///io/netty/bootstrap/Bootstrap/handler(io.netty.channel.ChannelHandler)|",
+      "|java+method:///io/netty/util/internal/logging/InternalLogger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///io/netty/channel/ChannelFuture/addListener(io.netty.util.concurrent.GenericFutureListener)|",
+      "|java+method:///com/lambdaworks/redis/ConnectionBuilder/socketAddress()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///io/netty/util/concurrent/EventExecutorGroup/isShuttingDown()|",
+      "|java+method:///io/netty/bootstrap/Bootstrap/connect(java.net.SocketAddress)|",
+      "|java+constructor:///java/util/concurrent/CompletableFuture/CompletableFuture()|",
+      "|java+method:///com/lambdaworks/redis/resource/ClientResources/eventExecutorGroup()|",
+      "|java+method:///com/lambdaworks/redis/RedisChannelInitializer/channelInitialized()|",
+      "|java+constructor:///com/lambdaworks/redis/DefaultConnectionFuture/DefaultConnectionFuture(java.net.SocketAddress,java.util.concurrent.CompletableFuture)|",
+      "|java+method:///com/lambdaworks/redis/resource/NettyCustomizer/afterBootstrapInitialized(io.netty.bootstrap.Bootstrap)|",
+      "|java+method:///com/lambdaworks/redis/ConnectionBuilder/bootstrap()|",
+      "|java+method:///com/lambdaworks/redis/ConnectionBuilder/build()|",
+      "|java+method:///com/lambdaworks/redis/resource/ClientResources/nettyCustomizer()|",
+      "|java+method:///java/util/concurrent/CompletableFuture/thenApply(java.util.function.Function)|",
+      "|java+method:///io/netty/bootstrap/Bootstrap/handler(io.netty.channel.ChannelHandler)|",
+      "|java+method:///io/netty/util/internal/logging/InternalLogger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///io/netty/channel/ChannelFuture/addListener(io.netty.util.concurrent.GenericFutureListener)|",
+      "|java+method:///com/lambdaworks/redis/ConnectionBuilder/socketAddress()|"
+    ],
+    "affectedLib": "io.netty:netty-transport:4.1.17.Final",
+    "change": "UPDATED"
+  }
+]

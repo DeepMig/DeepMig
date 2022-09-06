@@ -1,0 +1,393 @@
+[
+  {
+    "coordinatesV1": "com.github.triceo.robozonky:robozonky-app:3.0.0-cr-1",
+    "coordinatesV2": "com.github.triceo.robozonky:robozonky-app:4.0.0-alpha-1",
+    "caller": "|java+initializer:///com/github/triceo/robozonky/app/investing/DaemonInvestmentMode/DaemonInvestmentMode$initializer|",
+    "called": "|java+constructor:///com/github/triceo/robozonky/util/RoboZonkyThreadFactory/RoboZonkyThreadFactory(java.lang.ThreadGroup)|",
+    "v1Body": [
+      "|java+constructor:///java/util/concurrent/Semaphore/Semaphore(int)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/concurrent/Semaphore/Semaphore(int)|",
+      "|java+constructor:///java/lang/ThreadGroup/ThreadGroup(java.lang.String)|",
+      "|java+constructor:///com/github/triceo/robozonky/util/RoboZonkyThreadFactory/RoboZonkyThreadFactory(java.lang.ThreadGroup)|"
+    ],
+    "affectedLib": "com.github.triceo.robozonky:robozonky-common:4.0.0-alpha-1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.triceo.robozonky:robozonky-app:3.0.0-cr-1",
+    "coordinatesV2": "com.github.triceo.robozonky:robozonky-app:4.0.0-alpha-1",
+    "caller": "|java+method:///com/github/triceo/robozonky/app/configuration/SecretProviderFactory/existingSecretProvider(char%5B%5D,java.io.File)|",
+    "called": "|java+method:///com/github/triceo/robozonky/common/secrets/SecretProvider/keyStoreBased(com.github.triceo.robozonky.common.secrets.KeyStoreHandler)|",
+    "v1Body": [
+      "|java+method:///com/github/triceo/robozonky/app/util/KeyStoreHandler/open(java.io.File,char%5B%5D)|",
+      "|java+method:///com/github/triceo/robozonky/app/authentication/SecretProvider/keyStoreBased(com.github.triceo.robozonky.app.util.KeyStoreHandler)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/triceo/robozonky/common/secrets/SecretProvider/keyStoreBased(com.github.triceo.robozonky.common.secrets.KeyStoreHandler)|",
+      "|java+method:///com/github/triceo/robozonky/common/secrets/KeyStoreHandler/open(java.io.File,char%5B%5D)|"
+    ],
+    "affectedLib": "com.github.triceo.robozonky:robozonky-common:4.0.0-alpha-1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.triceo.robozonky:robozonky-app:3.0.0-cr-1",
+    "coordinatesV2": "com.github.triceo.robozonky:robozonky-app:4.0.0-alpha-1",
+    "caller": "|java+method:///com/github/triceo/robozonky/app/configuration/SecretProviderFactory/newSecretProvider(java.lang.String,char%5B%5D,java.io.File)|",
+    "called": "|java+method:///com/github/triceo/robozonky/common/secrets/KeyStoreHandler/create(java.io.File,char%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/github/triceo/robozonky/app/authentication/SecretProvider/keyStoreBased(com.github.triceo.robozonky.app.util.KeyStoreHandler,java.lang.String,char%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+method:///com/github/triceo/robozonky/app/util/KeyStoreHandler/create(java.io.File,char%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/triceo/robozonky/common/secrets/SecretProvider/keyStoreBased(com.github.triceo.robozonky.common.secrets.KeyStoreHandler,java.lang.String,char%5B%5D)|",
+      "|java+method:///com/github/triceo/robozonky/common/secrets/KeyStoreHandler/create(java.io.File,char%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "com.github.triceo.robozonky:robozonky-common:4.0.0-alpha-1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.triceo.robozonky:robozonky-app:3.0.0-cr-1",
+    "coordinatesV2": "com.github.triceo.robozonky:robozonky-app:4.0.0-alpha-1",
+    "caller": "|java+method:///com/github/triceo/robozonky/app/App/main(java.lang.String%5B%5D)|",
+    "called": "|java+method:///com/github/triceo/robozonky/util/Scheduler/submit(java.lang.Runnable,java.time.temporal.TemporalAmount)|",
+    "v1Body": [
+      "|java+method:///com/github/triceo/robozonky/app/App/execute(java.lang.String%5B%5D,java.util.concurrent.atomic.AtomicBoolean)|",
+      "|java+constructor:///com/github/triceo/robozonky/app/AppRuntimeExceptionHandler/AppRuntimeExceptionHandler(boolean)|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicBoolean/AtomicBoolean(boolean)|",
+      "|java+constructor:///com/github/triceo/robozonky/api/notifications/RoboZonkyStartingEvent/RoboZonkyStartingEvent(java.lang.String)|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///com/github/triceo/robozonky/app/notifications/Events/fire(com.github.triceo.robozonky.api.notifications.Event)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/github/triceo/robozonky/app/App/exit(com.github.triceo.robozonky.api.ReturnCode)|",
+      "|java+method:///java/lang/Runtime/getRuntime()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/System/getProperty(java.lang.String)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicBoolean/get()|",
+      "|java+method:///java/io/File/getAbsolutePath()|",
+      "|java+method:///java/nio/charset/Charset/defaultCharset()|",
+      "|java+method:///com/github/triceo/robozonky/app/ShutdownHook/register(com.github.triceo.robozonky.app.ShutdownHook$Handler)|",
+      "|java+method:///java/lang/Runtime/availableProcessors()|",
+      "|java+constructor:///com/github/triceo/robozonky/app/Exclusivity/Exclusivity(java.io.File)|",
+      "|java+method:///com/github/triceo/robozonky/app/util/RuntimeExceptionHandler/handle(java.lang.Throwable)|",
+      "|java+method:///java/util/Locale/getDefault()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/github/triceo/robozonky/app/AppRuntimeExceptionHandler/AppRuntimeExceptionHandler(boolean)|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicBoolean/AtomicBoolean(boolean)|",
+      "|java+method:///com/github/triceo/robozonky/app/Events/fire(com.github.triceo.robozonky.api.notifications.Event)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/util/Locale/getDefault()|",
+      "|java+method:///com/github/triceo/robozonky/util/Scheduler/submit(java.lang.Runnable,java.time.temporal.TemporalAmount)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/github/triceo/robozonky/app/App/exit(com.github.triceo.robozonky.api.ReturnCode)|",
+      "|java+method:///java/lang/Runtime/getRuntime()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///com/github/triceo/robozonky/app/App/execute(java.lang.String%5B%5D,java.util.concurrent.atomic.AtomicBoolean)|",
+      "|java+method:///com/github/triceo/robozonky/app/AppRuntimeExceptionHandler/handle(java.lang.Throwable)|",
+      "|java+method:///java/time/Duration/ofHours(long)|",
+      "|java+constructor:///com/github/triceo/robozonky/app/version/UpdateMonitor/UpdateMonitor()|",
+      "|java+method:///java/lang/System/getProperty(java.lang.String)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicBoolean/get()|",
+      "|java+method:///java/nio/charset/Charset/defaultCharset()|",
+      "|java+constructor:///com/github/triceo/robozonky/api/notifications/RoboZonkyStartingEvent/RoboZonkyStartingEvent()|",
+      "|java+method:///java/lang/Runtime/availableProcessors()|",
+      "|java+method:///com/github/triceo/robozonky/app/ShutdownHook/register(com.github.triceo.robozonky.app.ShutdownHook$Handler)|"
+    ],
+    "affectedLib": "com.github.triceo.robozonky:robozonky-common:4.0.0-alpha-1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.triceo.robozonky:robozonky-app:3.0.0-cr-1",
+    "coordinatesV2": "com.github.triceo.robozonky:robozonky-app:4.0.0-alpha-1",
+    "caller": "|java+method:///com/github/triceo/robozonky/app/configuration/RefreshableInvestmentStrategy/transform(java.lang.String)|",
+    "called": "|java+method:///com/github/triceo/robozonky/common/extensions/InvestmentStrategyLoader/load(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/github/triceo/robozonky/app/configuration/InvestmentStrategyLoader/load(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/triceo/robozonky/common/extensions/InvestmentStrategyLoader/load(java.lang.String)|"
+    ],
+    "affectedLib": "com.github.triceo.robozonky:robozonky-common:4.0.0-alpha-1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.triceo.robozonky:robozonky-app:3.0.0-cr-1",
+    "coordinatesV2": "com.github.triceo.robozonky:robozonky-app:4.0.0-alpha-1",
+    "caller": "|java+method:///com/github/triceo/robozonky/app/configuration/RefreshableInvestmentStrategy/create(java.lang.String)|",
+    "called": "|java+method:///com/github/triceo/robozonky/util/Scheduler/submit(java.lang.Runnable)|",
+    "v1Body": [
+      "|java+constructor:///com/github/triceo/robozonky/app/configuration/RefreshableInvestmentStrategy/RefreshableInvestmentStrategy(java.net.URL)|",
+      "|java+method:///com/github/triceo/robozonky/app/configuration/RefreshableInvestmentStrategy/convertToUrl(java.lang.String)|",
+      "|java+method:///com/github/triceo/robozonky/app/util/Scheduler/submit(com.github.triceo.robozonky.api.Refreshable)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/triceo/robozonky/util/Scheduler/submit(java.lang.Runnable)|",
+      "|java+constructor:///com/github/triceo/robozonky/app/configuration/RefreshableInvestmentStrategy/RefreshableInvestmentStrategy(java.net.URL)|",
+      "|java+method:///com/github/triceo/robozonky/app/configuration/RefreshableInvestmentStrategy/convertToUrl(java.lang.String)|"
+    ],
+    "affectedLib": "com.github.triceo.robozonky:robozonky-common:4.0.0-alpha-1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.triceo.robozonky:robozonky-app:3.0.0-cr-1",
+    "coordinatesV2": "com.github.triceo.robozonky:robozonky-app:4.0.0-alpha-1",
+    "caller": "|java+initializer:///com/github/triceo/robozonky/app/App/App$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/lang/management/RuntimeMXBean/getName()|",
+      "|java+method:///org/slf4j/MDC/put(java.lang.String,java.lang.String)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/io/File/File(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/System/getProperty(java.lang.String)|",
+      "|java+method:///java/lang/management/ManagementFactory/getRuntimeMXBean()|",
+      "|java+constructor:///com/github/triceo/robozonky/app/ShutdownHook/ShutdownHook()|",
+      "|java+constructor:///java/util/concurrent/Semaphore/Semaphore(int)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/github/triceo/robozonky/app/ShutdownHook/ShutdownHook()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.25",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.github.triceo.robozonky:robozonky-app:3.0.0-cr-1",
+    "coordinatesV2": "com.github.triceo.robozonky:robozonky-app:4.0.0-alpha-1",
+    "caller": "|java+initializer:///com/github/triceo/robozonky/app/investing/ResultTracker/ResultTracker$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/time/Duration/ofSeconds(long)|",
+      "|java+method:///com/github/triceo/robozonky/internal/api/Defaults/getCaptchaDelayInSeconds()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/time/Duration/ofSeconds(long)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///com/github/triceo/robozonky/internal/api/Settings/getCaptchaDelayInSeconds()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.25",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.github.triceo.robozonky:robozonky-app:3.0.0-cr-1",
+    "coordinatesV2": "com.github.triceo.robozonky:robozonky-app:4.0.0-alpha-1",
+    "caller": "|java+method:///com/github/triceo/robozonky/app/RoboZonkyStartupNotifier/get()|",
+    "called": "|java+constructor:///com/github/triceo/robozonky/api/notifications/SessionInfo/SessionInfo(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/util/Optional/of(java.lang.Object)|",
+      "|java+method:///com/github/triceo/robozonky/app/notifications/Events/fire(com.github.triceo.robozonky.api.notifications.Event)|",
+      "|java+constructor:///com/github/triceo/robozonky/api/notifications/RoboZonkyInitializedEvent/RoboZonkyInitializedEvent(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/triceo/robozonky/app/Events/fire(com.github.triceo.robozonky.api.notifications.Event,com.github.triceo.robozonky.api.notifications.SessionInfo)|",
+      "|java+method:///java/util/Optional/of(java.lang.Object)|",
+      "|java+constructor:///com/github/triceo/robozonky/api/notifications/RoboZonkyInitializedEvent/RoboZonkyInitializedEvent()|",
+      "|java+constructor:///com/github/triceo/robozonky/api/notifications/SessionInfo/SessionInfo(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "com.github.triceo.robozonky:robozonky-api:4.0.0-alpha-1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.github.triceo.robozonky:robozonky-app:3.0.0-cr-1",
+    "coordinatesV2": "com.github.triceo.robozonky:robozonky-app:4.0.0-alpha-1",
+    "caller": "|java+method:///com/github/triceo/robozonky/app/authentication/Authenticator/withAccessToken(java.lang.String,com.github.triceo.robozonky.api.remote.entities.ZonkyApiToken,java.time.temporal.TemporalAmount)|",
+    "called": "|java+method:///com/github/triceo/robozonky/api/remote/entities/ZonkyApiToken/willExpireIn(java.time.temporal.TemporalAmount)|",
+    "v1Body": [
+      "|java+constructor:///com/github/triceo/robozonky/app/authentication/Authenticator/Authenticator(java.util.function.Function)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/triceo/robozonky/api/remote/entities/ZonkyApiToken/willExpireIn(java.time.temporal.TemporalAmount)|",
+      "|java+constructor:///com/github/triceo/robozonky/app/authentication/Authenticator$2/Authenticator$2(java.lang.String,com.github.triceo.robozonky.api.remote.entities.ZonkyApiToken)|"
+    ],
+    "affectedLib": "com.github.triceo.robozonky:robozonky-api:4.0.0-alpha-1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.github.triceo.robozonky:robozonky-app:3.0.0-cr-1",
+    "coordinatesV2": "com.github.triceo.robozonky:robozonky-app:4.0.0-alpha-1",
+    "caller": "|java+method:///com/github/triceo/robozonky/app/App/main(java.lang.String%5B%5D)|",
+    "called": "|java+constructor:///com/github/triceo/robozonky/api/notifications/RoboZonkyStartingEvent/RoboZonkyStartingEvent()|",
+    "v1Body": [
+      "|java+method:///com/github/triceo/robozonky/app/App/execute(java.lang.String%5B%5D,java.util.concurrent.atomic.AtomicBoolean)|",
+      "|java+constructor:///com/github/triceo/robozonky/app/AppRuntimeExceptionHandler/AppRuntimeExceptionHandler(boolean)|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicBoolean/AtomicBoolean(boolean)|",
+      "|java+constructor:///com/github/triceo/robozonky/api/notifications/RoboZonkyStartingEvent/RoboZonkyStartingEvent(java.lang.String)|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///com/github/triceo/robozonky/app/notifications/Events/fire(com.github.triceo.robozonky.api.notifications.Event)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/github/triceo/robozonky/app/App/exit(com.github.triceo.robozonky.api.ReturnCode)|",
+      "|java+method:///java/lang/Runtime/getRuntime()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/System/getProperty(java.lang.String)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicBoolean/get()|",
+      "|java+method:///java/io/File/getAbsolutePath()|",
+      "|java+method:///java/nio/charset/Charset/defaultCharset()|",
+      "|java+method:///com/github/triceo/robozonky/app/ShutdownHook/register(com.github.triceo.robozonky.app.ShutdownHook$Handler)|",
+      "|java+method:///java/lang/Runtime/availableProcessors()|",
+      "|java+constructor:///com/github/triceo/robozonky/app/Exclusivity/Exclusivity(java.io.File)|",
+      "|java+method:///com/github/triceo/robozonky/app/util/RuntimeExceptionHandler/handle(java.lang.Throwable)|",
+      "|java+method:///java/util/Locale/getDefault()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/github/triceo/robozonky/app/AppRuntimeExceptionHandler/AppRuntimeExceptionHandler(boolean)|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicBoolean/AtomicBoolean(boolean)|",
+      "|java+method:///com/github/triceo/robozonky/app/Events/fire(com.github.triceo.robozonky.api.notifications.Event)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/util/Locale/getDefault()|",
+      "|java+method:///com/github/triceo/robozonky/util/Scheduler/submit(java.lang.Runnable,java.time.temporal.TemporalAmount)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/github/triceo/robozonky/app/App/exit(com.github.triceo.robozonky.api.ReturnCode)|",
+      "|java+method:///java/lang/Runtime/getRuntime()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///com/github/triceo/robozonky/app/App/execute(java.lang.String%5B%5D,java.util.concurrent.atomic.AtomicBoolean)|",
+      "|java+method:///com/github/triceo/robozonky/app/AppRuntimeExceptionHandler/handle(java.lang.Throwable)|",
+      "|java+method:///java/time/Duration/ofHours(long)|",
+      "|java+constructor:///com/github/triceo/robozonky/app/version/UpdateMonitor/UpdateMonitor()|",
+      "|java+method:///java/lang/System/getProperty(java.lang.String)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicBoolean/get()|",
+      "|java+method:///java/nio/charset/Charset/defaultCharset()|",
+      "|java+constructor:///com/github/triceo/robozonky/api/notifications/RoboZonkyStartingEvent/RoboZonkyStartingEvent()|",
+      "|java+method:///java/lang/Runtime/availableProcessors()|",
+      "|java+method:///com/github/triceo/robozonky/app/ShutdownHook/register(com.github.triceo.robozonky.app.ShutdownHook$Handler)|"
+    ],
+    "affectedLib": "com.github.triceo.robozonky:robozonky-api:4.0.0-alpha-1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.github.triceo.robozonky:robozonky-app:3.0.0-cr-1",
+    "coordinatesV2": "com.github.triceo.robozonky:robozonky-app:4.0.0-alpha-1",
+    "caller": "|java+method:///com/github/triceo/robozonky/app/RoboZonkyStartupNotifier/lambda$get$0(com.github.triceo.robozonky.app.ShutdownHook$Result)|",
+    "called": "|java+constructor:///com/github/triceo/robozonky/api/notifications/RoboZonkyEndingEvent/RoboZonkyEndingEvent()|",
+    "v1Body": [
+      "|java+method:///com/github/triceo/robozonky/app/ShutdownHook$Result/getCause()|",
+      "|java+constructor:///com/github/triceo/robozonky/api/notifications/RoboZonkyCrashedEvent/RoboZonkyCrashedEvent(com.github.triceo.robozonky.api.ReturnCode,java.lang.Throwable)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+constructor:///com/github/triceo/robozonky/api/notifications/RoboZonkyEndingEvent/RoboZonkyEndingEvent(java.lang.String)|",
+      "|java+method:///com/github/triceo/robozonky/app/notifications/Events/fire(com.github.triceo.robozonky.api.notifications.Event)|",
+      "|java+method:///com/github/triceo/robozonky/app/ShutdownHook$Result/getReturnCode()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/triceo/robozonky/app/ShutdownHook$Result/getCause()|",
+      "|java+constructor:///com/github/triceo/robozonky/api/notifications/RoboZonkyCrashedEvent/RoboZonkyCrashedEvent(com.github.triceo.robozonky.api.ReturnCode,java.lang.Throwable)|",
+      "|java+method:///com/github/triceo/robozonky/app/Events/fire(com.github.triceo.robozonky.api.notifications.Event)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+constructor:///com/github/triceo/robozonky/api/notifications/RoboZonkyEndingEvent/RoboZonkyEndingEvent()|",
+      "|java+method:///com/github/triceo/robozonky/app/ShutdownHook$Result/getReturnCode()|"
+    ],
+    "affectedLib": "com.github.triceo.robozonky:robozonky-api:4.0.0-alpha-1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.github.triceo.robozonky:robozonky-app:3.0.0-cr-1",
+    "coordinatesV2": "com.github.triceo.robozonky:robozonky-app:4.0.0-alpha-1",
+    "caller": "|java+method:///com/github/triceo/robozonky/app/investing/DaemonRuntimeExceptionHandler/lambda$getRemoteFailureHandler$1(java.lang.Throwable)|",
+    "called": "|java+constructor:///com/github/triceo/robozonky/api/notifications/RoboZonkyDaemonFailedEvent/RoboZonkyDaemonFailedEvent(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///com/github/triceo/robozonky/api/notifications/RoboZonkyDaemonFailedEvent/RoboZonkyDaemonFailedEvent(java.lang.Throwable)|",
+      "|java+method:///com/github/triceo/robozonky/app/notifications/Events/fire(com.github.triceo.robozonky.api.notifications.Event)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/github/triceo/robozonky/app/Events/fire(com.github.triceo.robozonky.api.notifications.Event)|",
+      "|java+constructor:///com/github/triceo/robozonky/api/notifications/RoboZonkyDaemonFailedEvent/RoboZonkyDaemonFailedEvent(java.lang.Throwable)|"
+    ],
+    "affectedLib": "com.github.triceo.robozonky:robozonky-api:4.0.0-alpha-1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.github.triceo.robozonky:robozonky-app:3.0.0-cr-1",
+    "coordinatesV2": "com.github.triceo.robozonky:robozonky-app:4.0.0-alpha-1",
+    "caller": "|java+method:///com/github/triceo/robozonky/app/investing/DaemonRuntimeExceptionHandler/lambda$getOtherFailureHandler$2(java.lang.Throwable)|",
+    "called": "|java+constructor:///com/github/triceo/robozonky/api/notifications/RoboZonkyDaemonFailedEvent/RoboZonkyDaemonFailedEvent(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///com/github/triceo/robozonky/api/notifications/RoboZonkyDaemonFailedEvent/RoboZonkyDaemonFailedEvent(java.lang.Throwable)|",
+      "|java+method:///com/github/triceo/robozonky/app/notifications/Events/fire(com.github.triceo.robozonky.api.notifications.Event)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/github/triceo/robozonky/app/Events/fire(com.github.triceo.robozonky.api.notifications.Event)|",
+      "|java+constructor:///com/github/triceo/robozonky/api/notifications/RoboZonkyDaemonFailedEvent/RoboZonkyDaemonFailedEvent(java.lang.Throwable)|"
+    ],
+    "affectedLib": "com.github.triceo.robozonky:robozonky-api:4.0.0-alpha-1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.github.triceo.robozonky:robozonky-app:3.0.0-cr-1",
+    "coordinatesV2": "com.github.triceo.robozonky:robozonky-app:4.0.0-alpha-1",
+    "caller": "|java+method:///com/github/triceo/robozonky/app/authentication/AuthenticationHandler/storeToken(com.github.triceo.robozonky.api.remote.entities.ZonkyApiToken)|",
+    "called": "|java+method:///com/github/triceo/robozonky/api/remote/entities/ZonkyApiToken/marshal(com.github.triceo.robozonky.api.remote.entities.ZonkyApiToken)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///com/github/triceo/robozonky/api/remote/entities/ZonkyApiToken/marshal(com.github.triceo.robozonky.api.remote.entities.ZonkyApiToken)|",
+      "|java+constructor:///java/io/StringReader/StringReader(java.lang.String)|",
+      "|java+method:///com/github/triceo/robozonky/app/authentication/SecretProvider/setToken(java.io.Reader)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///com/github/triceo/robozonky/api/remote/entities/ZonkyApiToken/marshal(com.github.triceo.robozonky.api.remote.entities.ZonkyApiToken)|",
+      "|java+constructor:///java/io/StringReader/StringReader(java.lang.String)|",
+      "|java+method:///com/github/triceo/robozonky/common/secrets/SecretProvider/setToken(java.io.Reader)|"
+    ],
+    "affectedLib": "com.github.triceo.robozonky:robozonky-api:4.0.0-alpha-1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.github.triceo.robozonky:robozonky-app:3.0.0-cr-1",
+    "coordinatesV2": "com.github.triceo.robozonky:robozonky-app:4.0.0-alpha-1",
+    "caller": "|java+method:///com/github/triceo/robozonky/app/investing/DaemonRuntimeExceptionHandler/lambda$getCommunicationFailureHandler$0(java.lang.Throwable)|",
+    "called": "|java+constructor:///com/github/triceo/robozonky/api/notifications/RemoteOperationFailedEvent/RemoteOperationFailedEvent(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///com/github/triceo/robozonky/api/notifications/RemoteOperationFailedEvent/RemoteOperationFailedEvent(java.lang.Throwable)|",
+      "|java+method:///com/github/triceo/robozonky/app/notifications/Events/fire(com.github.triceo.robozonky.api.notifications.Event)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/github/triceo/robozonky/app/Events/fire(com.github.triceo.robozonky.api.notifications.Event)|",
+      "|java+constructor:///com/github/triceo/robozonky/api/notifications/RemoteOperationFailedEvent/RemoteOperationFailedEvent(java.lang.Throwable)|"
+    ],
+    "affectedLib": "com.github.triceo.robozonky:robozonky-api:4.0.0-alpha-1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.github.triceo.robozonky:robozonky-app:3.0.0-cr-1",
+    "coordinatesV2": "com.github.triceo.robozonky:robozonky-app:4.0.0-alpha-1",
+    "caller": "|java+method:///com/github/triceo/robozonky/app/investing/StrategyExecution/apply(java.util.Collection)|",
+    "called": "|java+method:///com/github/triceo/robozonky/api/Refreshable/getLatest()|",
+    "v1Body": [
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+method:///java/util/stream/Stream/peek(java.util.function.Consumer)|",
+      "|java+method:///java/util/Collection/isEmpty()|",
+      "|java+method:///com/github/triceo/robozonky/app/investing/StrategyExecution/invest(com.github.triceo.robozonky.api.strategies.InvestmentStrategy,java.util.Collection)|",
+      "|java+method:///com/github/triceo/robozonky/app/investing/Activity/settle()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|",
+      "|java+method:///java/util/Collections/emptyList()|",
+      "|java+method:///java/util/Collection/stream()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/util/stream/Collectors/joining(java.lang.CharSequence)|",
+      "|java+method:///com/github/triceo/robozonky/app/investing/Activity/shouldSleep()|",
+      "|java+method:///com/github/triceo/robozonky/api/Refreshable/getLatestBlocking()|",
+      "|java+constructor:///com/github/triceo/robozonky/app/investing/Activity/Activity(java.util.Collection,java.time.temporal.TemporalAmount)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/triceo/robozonky/api/Refreshable/getLatest()|",
+      "|java+method:///java/util/Collection/isEmpty()|",
+      "|java+method:///java/util/Collections/emptyList()|",
+      "|java+method:///java/util/Optional/map(java.util.function.Function)|",
+      "|java+method:///java/util/Optional/orElseGet(java.util.function.Supplier)|"
+    ],
+    "affectedLib": "com.github.triceo.robozonky:robozonky-api:4.0.0-alpha-1",
+    "change": "UPDATED"
+  }
+]

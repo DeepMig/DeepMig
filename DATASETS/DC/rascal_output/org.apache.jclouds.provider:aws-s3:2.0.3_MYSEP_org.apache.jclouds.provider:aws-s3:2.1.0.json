@@ -1,0 +1,28 @@
+[
+  {
+    "coordinatesV1": "org.apache.jclouds.provider:aws-s3:2.0.3",
+    "coordinatesV2": "org.apache.jclouds.provider:aws-s3:2.1.0",
+    "caller": "|java+method:///org/jclouds/aws/s3/blobstore/AWSS3BlobRequestSignerV4/signPutBlob(java.lang.String,org.jclouds.blobstore.domain.Blob,long)|",
+    "called": "|java+method:///org/jclouds/s3/blobstore/functions/BlobToObject/apply(org.jclouds.blobstore.domain.Blob)|",
+    "v1Body": [
+      "|java+method:///org/jclouds/blobstore/util/BlobStoreUtils/cleanRequest(org.jclouds.http.HttpRequest)|",
+      "|java+method:///org/jclouds/reflect/Invocation/create(com.google.common.reflect.Invokable,java.util.List)|",
+      "|java+method:///org/jclouds/s3/filters/RequestAuthorizeSignatureV4/signForTemporaryAccess(org.jclouds.http.HttpRequest,long)|",
+      "|java+method:///org/jclouds/s3/blobstore/functions/BlobToObject/apply(org.jclouds.blobstore.domain.Blob)|",
+      "|java+method:///org/jclouds/rest/internal/RestAnnotationProcessor/apply(org.jclouds.reflect.Invocation)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/google/common/collect/ImmutableList/of(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jclouds/blobstore/util/BlobStoreUtils/cleanRequest(org.jclouds.http.HttpRequest)|",
+      "|java+method:///org/jclouds/reflect/Invocation/create(com.google.common.reflect.Invokable,java.util.List)|",
+      "|java+method:///org/jclouds/s3/filters/RequestAuthorizeSignature/signForTemporaryAccess(org.jclouds.http.HttpRequest,long)|",
+      "|java+method:///org/jclouds/s3/blobstore/functions/BlobToObject/apply(org.jclouds.blobstore.domain.Blob)|",
+      "|java+method:///org/jclouds/rest/internal/RestAnnotationProcessor/apply(org.jclouds.reflect.Invocation)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/google/common/collect/ImmutableList/of(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.jclouds.api:s3:2.1.0",
+    "change": "UPDATED"
+  }
+]

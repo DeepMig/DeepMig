@@ -1,0 +1,169 @@
+[
+  {
+    "coordinatesV1": "org.zalando:fahrschein:0.8.0",
+    "coordinatesV2": "org.zalando:fahrschein:0.5.2",
+    "caller": "|java+method:///org/zalando/fahrschein/ManagedCursorManager/addStreamId(org.zalando.fahrschein.domain.Subscription,java.lang.String)|",
+    "called": "|java+method:///com/google/common/collect/Iterables/getOnlyElement(java.lang.Iterable)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/zalando/fahrschein/domain/Subscription/getId()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/zalando/fahrschein/domain/Subscription/getEventTypes()|",
+      "|java+method:///org/zalando/fahrschein/ManagedCursorManager$SubscriptionStream/setStreamId(java.lang.String)|",
+      "|java+method:///com/google/common/collect/Iterables/getOnlyElement(java.lang.Iterable)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Set/size()|",
+      "|java+method:///org/zalando/fahrschein/domain/Subscription/getId()|",
+      "|java+method:///org/zalando/fahrschein/Preconditions/checkState(boolean)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/zalando/fahrschein/domain/Subscription/getEventTypes()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/zalando/fahrschein/ManagedCursorManager$SubscriptionStream/setStreamId(java.lang.String)|",
+      "|java+method:///java/util/Set/iterator()|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.zalando:fahrschein:0.8.0",
+    "coordinatesV2": "org.zalando:fahrschein:0.5.2",
+    "caller": "|java+method:///org/zalando/fahrschein/ZignAccessTokenProvider/getAccessToken()|",
+    "called": "|java+method:///com/google/common/base/Throwables/propagateIfInstanceOf(java.lang.Throwable,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/util/concurrent/ExecutionException/getCause()|",
+      "|java+method:///com/google/common/base/Throwables/propagateIfInstanceOf(java.lang.Throwable,java.lang.Class)|",
+      "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+      "|java+method:///com/google/common/cache/LoadingCache/get(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/atomic/AtomicReference/updateAndGet(java.util.function.UnaryOperator)|",
+      "|java+method:///java/io/UncheckedIOException/getCause()|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.zalando:fahrschein:0.8.0",
+    "coordinatesV2": "org.zalando:fahrschein:0.5.2",
+    "caller": "|java+constructor:///org/zalando/fahrschein/ExponentialBackoffStrategy/ExponentialBackoffStrategy(int,double,long,int)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkState(boolean,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkState(boolean,java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/zalando/fahrschein/Preconditions/checkState(boolean,java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.zalando:fahrschein:0.8.0",
+    "coordinatesV2": "org.zalando:fahrschein:0.5.2",
+    "caller": "|java+method:///org/zalando/fahrschein/ZignAccessTokenProvider/zign()|",
+    "called": "|java+method:///com/google/common/io/CharStreams/toString(java.lang.Readable)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///java/lang/Process/getInputStream()|",
+      "|java+method:///com/google/common/io/CharStreams/toString(java.lang.Readable)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream,java.nio.charset.Charset)|",
+      "|java+method:///java/io/InputStream/close()|",
+      "|java+constructor:///java/lang/ProcessBuilder/ProcessBuilder(java.lang.String%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/lang/ProcessBuilder/start()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///java/lang/Process/getInputStream()|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+method:///java/io/InputStream/close()|",
+      "|java+constructor:///java/lang/ProcessBuilder/ProcessBuilder(java.lang.String%5B%5D)|",
+      "|java+method:///org/zalando/fahrschein/ZignAccessTokenProvider/readAll(java.io.InputStream)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/lang/ProcessBuilder/start()|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.zalando:fahrschein:0.8.0",
+    "coordinatesV2": "org.zalando:fahrschein:0.5.2",
+    "caller": "|java+constructor:///org/zalando/fahrschein/ZignAccessTokenProvider/ZignAccessTokenProvider()|",
+    "called": "|java+method:///com/google/common/cache/CacheBuilder/expireAfterWrite(long,java.util.concurrent.TimeUnit)|",
+    "v1Body": [
+      "|java+method:///com/google/common/cache/CacheBuilder/newBuilder()|",
+      "|java+method:///com/google/common/cache/CacheBuilder/expireAfterWrite(long,java.util.concurrent.TimeUnit)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///org/zalando/fahrschein/ZignAccessTokenProvider$1/ZignAccessTokenProvider$1(org.zalando.fahrschein.ZignAccessTokenProvider)|",
+      "|java+method:///com/google/common/cache/CacheBuilder/build(com.google.common.cache.CacheLoader)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/concurrent/atomic/AtomicReference/AtomicReference()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.zalando:fahrschein:0.8.0",
+    "coordinatesV2": "org.zalando:fahrschein:0.5.2",
+    "caller": "|java+method:///org/zalando/fahrschein/StreamParameters/toQueryString()|",
+    "called": "|java+method:///com/google/common/base/Joiner/join(java.lang.Iterable)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList(int)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/google/common/base/Joiner/on(java.lang.String)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/google/common/base/Joiner/join(java.lang.Iterable)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList(int)|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/List/stream()|",
+      "|java+method:///java/util/stream/Collectors/joining(java.lang.CharSequence)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.zalando:fahrschein:0.8.0",
+    "coordinatesV2": "org.zalando:fahrschein:0.5.2",
+    "caller": "|java+method:///org/zalando/fahrschein/ManagedCursorManager/addSubscription(org.zalando.fahrschein.domain.Subscription)|",
+    "called": "|java+method:///com/google/common/collect/Iterables/getOnlyElement(java.lang.Iterable)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/zalando/fahrschein/domain/Subscription/getId()|",
+      "|java+method:///org/zalando/fahrschein/domain/Subscription/getEventTypes()|",
+      "|java+method:///com/google/common/collect/Iterables/getOnlyElement(java.lang.Iterable)|",
+      "|java+constructor:///org/zalando/fahrschein/ManagedCursorManager$SubscriptionStream/ManagedCursorManager$SubscriptionStream(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Set/size()|",
+      "|java+method:///org/zalando/fahrschein/domain/Subscription/getId()|",
+      "|java+method:///org/zalando/fahrschein/Preconditions/checkState(boolean)|",
+      "|java+method:///org/zalando/fahrschein/domain/Subscription/getEventTypes()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+constructor:///org/zalando/fahrschein/ManagedCursorManager$SubscriptionStream/ManagedCursorManager$SubscriptionStream(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "REMOVED"
+  }
+]

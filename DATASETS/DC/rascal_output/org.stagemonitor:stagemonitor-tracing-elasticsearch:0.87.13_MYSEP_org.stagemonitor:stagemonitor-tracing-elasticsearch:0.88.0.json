@@ -1,0 +1,104 @@
+[
+  {
+    "coordinatesV1": "org.stagemonitor:stagemonitor-tracing-elasticsearch:0.88.0",
+    "coordinatesV2": "org.stagemonitor:stagemonitor-tracing-elasticsearch:0.87.13",
+    "caller": "|java+method:///org/stagemonitor/tracing/elasticsearch/impl/JaegerTracerFactory/getTracer(org.stagemonitor.core.StagemonitorPlugin$InitArguments)|",
+    "called": "|java+method:///io/jaegertracing/internal/JaegerTracer$Builder/registerExtractor(io.opentracing.propagation.Format,io.jaegertracing.spi.Extractor)|",
+    "v1Body": [
+      "|java+method:///io/jaegertracing/internal/JaegerTracer$Builder/registerInjector(io.opentracing.propagation.Format,io.jaegertracing.spi.Injector)|",
+      "|java+constructor:///io/jaegertracing/internal/samplers/ConstSampler/ConstSampler(boolean)|",
+      "|java+method:///org/stagemonitor/core/MeasurementSession/getApplicationName()|",
+      "|java+method:///io/jaegertracing/internal/JaegerTracer$Builder/registerExtractor(io.opentracing.propagation.Format,io.jaegertracing.spi.Extractor)|",
+      "|java+method:///org/stagemonitor/core/StagemonitorPlugin$InitArguments/getMeasurementSession()|",
+      "|java+constructor:///io/jaegertracing/internal/reporters/NoopReporter/NoopReporter()|",
+      "|java+method:///io/jaegertracing/internal/propagation/B3TextMapCodec$Builder/build()|",
+      "|java+method:///io/jaegertracing/internal/JaegerTracer$Builder/withSampler(io.jaegertracing.spi.Sampler)|",
+      "|java+constructor:///io/jaegertracing/internal/JaegerTracer$Builder/JaegerTracer$Builder(java.lang.String)|",
+      "|java+method:///io/jaegertracing/internal/JaegerTracer$Builder/withReporter(io.jaegertracing.spi.Reporter)|",
+      "|java+constructor:///io/jaegertracing/internal/propagation/B3TextMapCodec$Builder/B3TextMapCodec$Builder()|",
+      "|java+method:///io/jaegertracing/internal/JaegerTracer$Builder/build()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/uber/jaeger/Tracer$Builder/Tracer$Builder(java.lang.String,com.uber.jaeger.reporters.Reporter,com.uber.jaeger.samplers.Sampler)|",
+      "|java+method:///com/uber/jaeger/Tracer$Builder/registerExtractor(io.opentracing.propagation.Format,com.uber.jaeger.propagation.Extractor)|",
+      "|java+method:///org/stagemonitor/core/MeasurementSession/getApplicationName()|",
+      "|java+method:///com/uber/jaeger/Tracer$Builder/registerInjector(io.opentracing.propagation.Format,com.uber.jaeger.propagation.Injector)|",
+      "|java+constructor:///com/uber/jaeger/reporters/NoopReporter/NoopReporter()|",
+      "|java+method:///org/stagemonitor/core/StagemonitorPlugin$InitArguments/getMeasurementSession()|",
+      "|java+constructor:///com/uber/jaeger/propagation/b3/B3TextMapCodec/B3TextMapCodec()|",
+      "|java+constructor:///com/uber/jaeger/samplers/ConstSampler/ConstSampler(boolean)|",
+      "|java+method:///com/uber/jaeger/Tracer$Builder/build()|"
+    ],
+    "affectedLib": "io.jaegertracing:jaeger-core:0.31.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.stagemonitor:stagemonitor-tracing-elasticsearch:0.88.0",
+    "coordinatesV2": "org.stagemonitor:stagemonitor-tracing-elasticsearch:0.87.13",
+    "caller": "|java+method:///org/stagemonitor/tracing/elasticsearch/impl/JaegerTracerFactory/isRoot(io.opentracing.Span)|",
+    "called": "|java+method:///io/jaegertracing/internal/JaegerSpan/context()|",
+    "v1Body": [
+      "|java+method:///io/jaegertracing/internal/JaegerSpan/context()|",
+      "|java+method:///io/jaegertracing/internal/JaegerSpanContext/getParentId()|",
+      "|java+method:///org/stagemonitor/tracing/wrapper/SpanWrapper/getDelegate()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/uber/jaeger/Span/context()|",
+      "|java+method:///com/uber/jaeger/SpanContext/getParentId()|",
+      "|java+method:///org/stagemonitor/tracing/wrapper/SpanWrapper/getDelegate()|"
+    ],
+    "affectedLib": "io.jaegertracing:jaeger-core:0.31.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.stagemonitor:stagemonitor-tracing-elasticsearch:0.88.0",
+    "coordinatesV2": "org.stagemonitor:stagemonitor-tracing-elasticsearch:0.87.13",
+    "caller": "|java+method:///org/stagemonitor/tracing/elasticsearch/impl/JaegerTracerFactory/isSampled(io.opentracing.Span)|",
+    "called": "|java+method:///io/jaegertracing/internal/JaegerSpan/context()|",
+    "v1Body": [
+      "|java+method:///io/jaegertracing/internal/JaegerSpan/context()|",
+      "|java+method:///io/jaegertracing/internal/JaegerSpanContext/isSampled()|",
+      "|java+method:///org/stagemonitor/tracing/wrapper/SpanWrapper/unwrap(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/uber/jaeger/SpanContext/isSampled()|",
+      "|java+method:///com/uber/jaeger/Span/context()|",
+      "|java+method:///org/stagemonitor/tracing/wrapper/SpanWrapper/getDelegate()|"
+    ],
+    "affectedLib": "io.jaegertracing:jaeger-core:0.31.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.stagemonitor:stagemonitor-tracing-elasticsearch:0.87.13",
+    "coordinatesV2": "org.stagemonitor:stagemonitor-tracing-elasticsearch:0.88.0",
+    "caller": "|java+method:///org/stagemonitor/tracing/elasticsearch/impl/JaegerTracerFactory/getTracer(org.stagemonitor.core.StagemonitorPlugin$InitArguments)|",
+    "called": "|java+constructor:///com/uber/jaeger/propagation/b3/B3TextMapCodec/B3TextMapCodec()|",
+    "v1Body": [
+      "|java+method:///io/jaegertracing/internal/JaegerTracer$Builder/registerInjector(io.opentracing.propagation.Format,io.jaegertracing.spi.Injector)|",
+      "|java+constructor:///io/jaegertracing/internal/samplers/ConstSampler/ConstSampler(boolean)|",
+      "|java+method:///org/stagemonitor/core/MeasurementSession/getApplicationName()|",
+      "|java+method:///io/jaegertracing/internal/JaegerTracer$Builder/registerExtractor(io.opentracing.propagation.Format,io.jaegertracing.spi.Extractor)|",
+      "|java+method:///org/stagemonitor/core/StagemonitorPlugin$InitArguments/getMeasurementSession()|",
+      "|java+constructor:///io/jaegertracing/internal/reporters/NoopReporter/NoopReporter()|",
+      "|java+method:///io/jaegertracing/internal/propagation/B3TextMapCodec$Builder/build()|",
+      "|java+method:///io/jaegertracing/internal/JaegerTracer$Builder/withSampler(io.jaegertracing.spi.Sampler)|",
+      "|java+constructor:///io/jaegertracing/internal/JaegerTracer$Builder/JaegerTracer$Builder(java.lang.String)|",
+      "|java+method:///io/jaegertracing/internal/JaegerTracer$Builder/withReporter(io.jaegertracing.spi.Reporter)|",
+      "|java+constructor:///io/jaegertracing/internal/propagation/B3TextMapCodec$Builder/B3TextMapCodec$Builder()|",
+      "|java+method:///io/jaegertracing/internal/JaegerTracer$Builder/build()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/uber/jaeger/Tracer$Builder/Tracer$Builder(java.lang.String,com.uber.jaeger.reporters.Reporter,com.uber.jaeger.samplers.Sampler)|",
+      "|java+method:///com/uber/jaeger/Tracer$Builder/registerExtractor(io.opentracing.propagation.Format,com.uber.jaeger.propagation.Extractor)|",
+      "|java+method:///org/stagemonitor/core/MeasurementSession/getApplicationName()|",
+      "|java+method:///com/uber/jaeger/Tracer$Builder/registerInjector(io.opentracing.propagation.Format,com.uber.jaeger.propagation.Injector)|",
+      "|java+constructor:///com/uber/jaeger/reporters/NoopReporter/NoopReporter()|",
+      "|java+method:///org/stagemonitor/core/StagemonitorPlugin$InitArguments/getMeasurementSession()|",
+      "|java+constructor:///com/uber/jaeger/propagation/b3/B3TextMapCodec/B3TextMapCodec()|",
+      "|java+constructor:///com/uber/jaeger/samplers/ConstSampler/ConstSampler(boolean)|",
+      "|java+method:///com/uber/jaeger/Tracer$Builder/build()|"
+    ],
+    "affectedLib": "com.uber.jaeger:jaeger-b3:0.22.0-RC1",
+    "change": "ADDED"
+  }
+]

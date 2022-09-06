@@ -1,0 +1,205 @@
+[
+  {
+    "coordinatesV1": "com.facebook.presto:presto-hive:0.92",
+    "coordinatesV2": "com.facebook.presto:presto-hive:0.93",
+    "caller": "|java+method:///com/facebook/presto/hive/HiveMetastoreClientFactory$TTransportWrapper/peek()|",
+    "called": "|java+method:///org/apache/thrift/transport/TTransport/peek()|",
+    "v1Body": [
+      "|java+method:///com/facebook/presto/hive/shaded/org/apache/thrift/transport/TTransport/peek()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/thrift/transport/TTransport/peek()|"
+    ],
+    "affectedLib": "org.apache.thrift:libthrift:0.9.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.facebook.presto:presto-hive:0.92",
+    "coordinatesV2": "com.facebook.presto:presto-hive:0.93",
+    "caller": "|java+method:///com/facebook/presto/hive/HiveMetastoreClientFactory$TTransportWrapper/write(byte%5B%5D)|",
+    "called": "|java+method:///org/apache/thrift/transport/TTransport/write(byte%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/facebook/presto/hive/HiveMetastoreClientFactory/access$000(com.facebook.presto.hive.shaded.org.apache.thrift.transport.TTransportException,java.lang.String)|",
+      "|java+method:///com/facebook/presto/hive/shaded/org/apache/thrift/transport/TTransport/write(byte%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/facebook/presto/hive/HiveMetastoreClientFactory/access$000(org.apache.thrift.transport.TTransportException,java.lang.String)|",
+      "|java+method:///org/apache/thrift/transport/TTransport/write(byte%5B%5D)|"
+    ],
+    "affectedLib": "org.apache.thrift:libthrift:0.9.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.facebook.presto:presto-hive:0.92",
+    "coordinatesV2": "com.facebook.presto:presto-hive:0.93",
+    "caller": "|java+method:///com/facebook/presto/hive/HiveMetastoreClientFactory$TTransportWrapper/readAll(byte%5B%5D,int,int)|",
+    "called": "|java+method:///org/apache/thrift/transport/TTransport/readAll(byte%5B%5D,int,int)|",
+    "v1Body": [
+      "|java+method:///com/facebook/presto/hive/shaded/org/apache/thrift/transport/TTransport/readAll(byte%5B%5D,int,int)|",
+      "|java+method:///com/facebook/presto/hive/HiveMetastoreClientFactory/access$000(com.facebook.presto.hive.shaded.org.apache.thrift.transport.TTransportException,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/thrift/transport/TTransport/readAll(byte%5B%5D,int,int)|",
+      "|java+method:///com/facebook/presto/hive/HiveMetastoreClientFactory/access$000(org.apache.thrift.transport.TTransportException,java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.thrift:libthrift:0.9.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.facebook.presto:presto-hive:0.92",
+    "coordinatesV2": "com.facebook.presto:presto-hive:0.93",
+    "caller": "|java+method:///com/facebook/presto/hive/ColumnarTextHiveRecordCursor/parseStringColumn(int,byte%5B%5D,int,int)|",
+    "called": "|java+method:///org/apache/hadoop/hive/serde2/lazy/LazyFactory/createLazyObject(org.apache.hadoop.hive.serde2.objectinspector.ObjectInspector)|",
+    "v1Body": [
+      "|java+method:///com/facebook/presto/hive/HiveUtil/isStructuralType(com.facebook.presto.hive.HiveType)|",
+      "|java+method:///java/util/Arrays/copyOfRange(byte%5B%5D,int,int)|",
+      "|java+constructor:///org/apache/hadoop/hive/serde2/lazy/ByteArrayRef/ByteArrayRef()|",
+      "|java+method:///io/airlift/slice/Slices/wrappedBuffer(byte%5B%5D)|",
+      "|java+method:///org/apache/hadoop/hive/serde2/lazy/LazyFactory/createLazyObject(org.apache.hadoop.hive.serde2.objectinspector.ObjectInspector)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///io/airlift/slice/Slice/getBytes()|",
+      "|java+method:///org/apache/hadoop/hive/serde2/lazy/ByteArrayRef/setData(byte%5B%5D)|",
+      "|java+method:///org/apache/hadoop/hive/serde2/lazy/LazyObject/getObject()|",
+      "|java+method:///com/facebook/presto/hive/shaded/org/apache/commons/codec/binary/Base64/decodeBase64(byte%5B%5D)|",
+      "|java+method:///com/facebook/presto/hive/HiveType/equals(java.lang.Object)|",
+      "|java+method:///com/facebook/presto/hive/util/SerDeUtils/getJsonBytes(org.joda.time.DateTimeZone,java.lang.Object,org.apache.hadoop.hive.serde2.objectinspector.ObjectInspector)|",
+      "|java+method:///org/apache/hadoop/hive/serde2/lazy/LazyObject/init(org.apache.hadoop.hive.serde2.lazy.ByteArrayRef,int,int)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/facebook/presto/hive/HiveUtil/isStructuralType(com.facebook.presto.hive.HiveType)|",
+      "|java+method:///java/util/Arrays/copyOfRange(byte%5B%5D,int,int)|",
+      "|java+constructor:///org/apache/hadoop/hive/serde2/lazy/ByteArrayRef/ByteArrayRef()|",
+      "|java+method:///io/airlift/slice/Slices/wrappedBuffer(byte%5B%5D)|",
+      "|java+method:///org/apache/hadoop/hive/serde2/lazy/LazyFactory/createLazyObject(org.apache.hadoop.hive.serde2.objectinspector.ObjectInspector)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///io/airlift/slice/Slice/getBytes()|",
+      "|java+method:///com/facebook/presto/hive/HiveUtil/base64Decode(byte%5B%5D)|",
+      "|java+method:///com/facebook/presto/hive/HiveType/equals(java.lang.Object)|",
+      "|java+method:///org/apache/hadoop/hive/serde2/lazy/ByteArrayRef/setData(byte%5B%5D)|",
+      "|java+method:///org/apache/hadoop/hive/serde2/lazy/LazyObject/getObject()|",
+      "|java+method:///com/facebook/presto/hive/util/SerDeUtils/getJsonBytes(org.joda.time.DateTimeZone,java.lang.Object,org.apache.hadoop.hive.serde2.objectinspector.ObjectInspector)|",
+      "|java+method:///org/apache/hadoop/hive/serde2/lazy/LazyObject/init(org.apache.hadoop.hive.serde2.lazy.ByteArrayRef,int,int)|"
+    ],
+    "affectedLib": "com.facebook.presto.hive:hive-apache:0.10",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.facebook.presto:presto-hive:0.92",
+    "coordinatesV2": "com.facebook.presto:presto-hive:0.93",
+    "caller": "|java+method:///com/facebook/presto/hive/rcfile/RcTextBlockLoader$LazyBinaryBlockLoader/load(com.facebook.presto.spi.block.LazySliceArrayBlock)|",
+    "called": "|java+method:///org/apache/hadoop/hive/serde2/columnar/BytesRefWritable/getData()|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/hive/serde2/columnar/BytesRefArrayWritable/unCheckedGet(int)|",
+      "|java+method:///io/airlift/slice/Slices/wrappedBuffer(byte%5B%5D)|",
+      "|java+method:///org/apache/hadoop/hive/serde2/columnar/BytesRefWritable/getData()|",
+      "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+      "|java+method:///com/facebook/presto/hive/rcfile/RcFilePageSource$RcFileColumnsBatch/getColumn(int)|",
+      "|java+method:///com/facebook/presto/hive/rcfile/RcFilePageSource$RcFileColumnsBatch/getPositionInBatch()|",
+      "|java+method:///org/apache/hadoop/hive/serde2/columnar/BytesRefWritable/getStart()|",
+      "|java+method:///com/facebook/presto/hive/rcfile/RcTextBlockLoader/access$700(byte%5B%5D,int,int)|",
+      "|java+method:///com/facebook/presto/spi/block/LazySliceArrayBlock/setValues(io.airlift.slice.Slice%5B%5D)|",
+      "|java+method:///org/apache/hadoop/hive/serde2/columnar/BytesRefWritable/getLength()|",
+      "|java+method:///java/util/Arrays/copyOfRange(byte%5B%5D,int,int)|",
+      "|java+method:///com/facebook/presto/spi/block/LazySliceArrayBlock/getPositionCount()|",
+      "|java+method:///com/facebook/presto/hive/shaded/org/apache/commons/codec/binary/Base64/decodeBase64(byte%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/hive/serde2/columnar/BytesRefArrayWritable/unCheckedGet(int)|",
+      "|java+method:///org/apache/hadoop/hive/serde2/columnar/BytesRefWritable/getData()|",
+      "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+      "|java+method:///com/facebook/presto/hive/rcfile/RcFilePageSource$RcFileColumnsBatch/getColumn(int)|",
+      "|java+method:///com/facebook/presto/spi/block/LazySliceArrayBlock/getPositionCount()|",
+      "|java+method:///org/apache/hadoop/hive/serde2/columnar/BytesRefWritable/getStart()|",
+      "|java+method:///com/facebook/presto/hive/rcfile/RcTextBlockLoader/access$700(byte%5B%5D,int,int)|",
+      "|java+method:///com/facebook/presto/spi/block/LazySliceArrayBlock/setValues(io.airlift.slice.Slice%5B%5D)|",
+      "|java+method:///org/apache/hadoop/hive/serde2/columnar/BytesRefWritable/getLength()|",
+      "|java+method:///java/util/Arrays/copyOfRange(byte%5B%5D,int,int)|",
+      "|java+method:///com/facebook/presto/hive/rcfile/RcFilePageSource$RcFileColumnsBatch/getPositionInBatch()|",
+      "|java+method:///com/facebook/presto/hive/HiveUtil/base64Decode(byte%5B%5D)|"
+    ],
+    "affectedLib": "com.facebook.presto.hive:hive-apache:0.10",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.facebook.presto:presto-hive:0.92",
+    "coordinatesV2": "com.facebook.presto:presto-hive:0.93",
+    "caller": "|java+constructor:///com/facebook/presto/hive/ParquetHiveRecordCursor$ParquetMapEntryJsonConverter/ParquetHiveRecordCursor$ParquetMapEntryJsonConverter(java.lang.String,parquet.schema.GroupType)|",
+    "called": "|java+constructor:///parquet/io/api/GroupConverter/GroupConverter()|",
+    "v1Body": [
+      "|java+method:///parquet/schema/GroupType/getFields()|",
+      "|java+method:///parquet/schema/GroupType/getFieldName(int)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/facebook/presto/hive/ParquetHiveRecordCursor/access$700(java.lang.String,java.lang.String,parquet.schema.Type)|",
+      "|java+constructor:///parquet/io/api/GroupConverter/GroupConverter()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///parquet/schema/GroupType/getType(int)|",
+      "|java+method:///parquet/schema/Type/isPrimitive()|",
+      "|java+method:///parquet/schema/GroupType/getFieldCount()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///parquet/schema/GroupType/getOriginalType()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+constructor:///com/facebook/presto/hive/ParquetHiveRecordCursor$ParquetMapKeyJsonConverter/ParquetHiveRecordCursor$ParquetMapKeyJsonConverter(com.facebook.presto.hive.ParquetHiveRecordCursor$1)|",
+      "|java+method:///parquet/schema/GroupType/asGroupType()|",
+      "|java+method:///java/util/List/get(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///parquet/schema/GroupType/getFields()|",
+      "|java+method:///parquet/schema/GroupType/getFieldName(int)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/facebook/presto/hive/ParquetHiveRecordCursor/access$800(java.lang.String,java.lang.String,parquet.schema.Type)|",
+      "|java+constructor:///parquet/io/api/GroupConverter/GroupConverter()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///parquet/schema/GroupType/getType(int)|",
+      "|java+method:///parquet/schema/Type/isPrimitive()|",
+      "|java+method:///parquet/schema/GroupType/getFieldCount()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///parquet/schema/GroupType/getOriginalType()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+constructor:///com/facebook/presto/hive/ParquetHiveRecordCursor$ParquetMapKeyJsonConverter/ParquetHiveRecordCursor$ParquetMapKeyJsonConverter(com.facebook.presto.hive.ParquetHiveRecordCursor$1)|",
+      "|java+method:///parquet/schema/GroupType/asGroupType()|",
+      "|java+method:///java/util/List/get(int)|"
+    ],
+    "affectedLib": "com.facebook.presto.hive:hive-apache:0.10",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.facebook.presto:presto-hive:0.92",
+    "coordinatesV2": "com.facebook.presto:presto-hive:0.93",
+    "caller": "|java+constructor:///com/facebook/presto/hive/ParquetHiveRecordCursor$ParquetListEntryJsonConverter/ParquetHiveRecordCursor$ParquetListEntryJsonConverter(java.lang.String,parquet.schema.GroupType)|",
+    "called": "|java+constructor:///parquet/io/api/GroupConverter/GroupConverter()|",
+    "v1Body": [
+      "|java+method:///parquet/schema/GroupType/getFieldName(int)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/facebook/presto/hive/ParquetHiveRecordCursor/access$700(java.lang.String,java.lang.String,parquet.schema.Type)|",
+      "|java+constructor:///parquet/io/api/GroupConverter/GroupConverter()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///parquet/schema/GroupType/getType(int)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///parquet/schema/GroupType/getFieldCount()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///parquet/schema/GroupType/getOriginalType()|"
+    ],
+    "v2Body": [
+      "|java+method:///parquet/schema/GroupType/getFieldName(int)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/facebook/presto/hive/ParquetHiveRecordCursor/access$800(java.lang.String,java.lang.String,parquet.schema.Type)|",
+      "|java+constructor:///parquet/io/api/GroupConverter/GroupConverter()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///parquet/schema/GroupType/getType(int)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///parquet/schema/GroupType/getFieldCount()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///parquet/schema/GroupType/getOriginalType()|"
+    ],
+    "affectedLib": "com.facebook.presto.hive:hive-apache:0.10",
+    "change": "UPDATED"
+  }
+]

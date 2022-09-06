@@ -1,0 +1,32 @@
+[
+  {
+    "coordinatesV1": "de.alpharogroup:crypt-core:4.1.0",
+    "coordinatesV2": "de.alpharogroup:crypt-core:4.4.0",
+    "caller": "|java+method:///de/alpharogroup/crypto/sha/Hasher/getRandomSalt(int,java.nio.charset.Charset)|",
+    "called": "|java+method:///de/alpharogroup/random/RandomExtensions/getRandomString(java.lang.String,int)|",
+    "v1Body": [
+      "|java+method:///de/alpharogroup/random/RandomUtils/getRandomString(java.lang.String,int)|",
+      "|java+method:///java/lang/String/getBytes(java.nio.charset.Charset)|"
+    ],
+    "v2Body": [
+      "|java+method:///de/alpharogroup/random/RandomExtensions/getRandomString(java.lang.String,int)|",
+      "|java+method:///java/lang/String/getBytes(java.nio.charset.Charset)|"
+    ],
+    "affectedLib": "de.alpharogroup:randomizer:4.4.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "de.alpharogroup:crypt-core:4.1.0",
+    "coordinatesV2": "de.alpharogroup:crypt-core:4.4.0",
+    "caller": "|java+method:///de/alpharogroup/crypto/PasswordEncryptor/getRandomPassword(int)|",
+    "called": "|java+method:///de/alpharogroup/random/RandomObjectsExtensions/getRandomPassword(int)|",
+    "v1Body": [
+      "|java+method:///de/alpharogroup/random/RandomObjectsUtils/getRandomPassword(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///de/alpharogroup/random/RandomObjectsExtensions/getRandomPassword(int)|"
+    ],
+    "affectedLib": "de.alpharogroup:randomizer:4.4.0",
+    "change": "UPDATED"
+  }
+]

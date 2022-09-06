@@ -1,0 +1,147 @@
+[
+  {
+    "coordinatesV1": "org.pantsbuild:zinc-logging_2.10:20160412115411-zinc-canonicalize-1",
+    "coordinatesV2": "org.pantsbuild:zinc-logging_2.10:0.0.5",
+    "caller": "|java+constructor:///org/pantsbuild/zinc/logging/FileLogger/FileLogger(java.io.File,boolean)|",
+    "called": "|java+constructor:///sbt/util/Logger/Logger()|",
+    "v1Body": [
+      "|java+constructor:///java/io/FileOutputStream/FileOutputStream(java.io.File,boolean)|",
+      "|java+constructor:///sbt/util/Logger/Logger()|",
+      "|java+constructor:///java/io/BufferedOutputStream/BufferedOutputStream(java.io.OutputStream)|",
+      "|java+constructor:///java/io/PrintWriter/PrintWriter(java.io.OutputStream)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/io/FileOutputStream/FileOutputStream(java.io.File,boolean)|",
+      "|java+method:///sbt/Logger$class/$init$(sbt.Logger)|",
+      "|java+constructor:///java/io/BufferedOutputStream/BufferedOutputStream(java.io.OutputStream)|",
+      "|java+constructor:///java/io/PrintWriter/PrintWriter(java.io.OutputStream)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.scala-sbt:util-logging_2.10:0.1.0-M13",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.pantsbuild:zinc-logging_2.10:20160412115411-zinc-canonicalize-1",
+    "coordinatesV2": "org.pantsbuild:zinc-logging_2.10:0.0.5",
+    "caller": "|java+method:///org/pantsbuild/zinc/logging/Loggers$/create$default$3()|",
+    "called": "|java+method:///sbt/internal/util/ConsoleOut$/systemOut()|",
+    "v1Body": [
+      "|java+method:///sbt/internal/util/ConsoleOut$/systemOut()|"
+    ],
+    "v2Body": [
+      "|java+method:///sbt/ConsoleOut$/systemOut()|"
+    ],
+    "affectedLib": "org.scala-sbt:util-logging_2.10:0.1.0-M13",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.pantsbuild:zinc-logging_2.10:20160412115411-zinc-canonicalize-1",
+    "coordinatesV2": "org.pantsbuild:zinc-logging_2.10:0.0.5",
+    "caller": "|java+method:///org/pantsbuild/zinc/logging/Loggers$$anonfun$create$1/apply(java.io.File)|",
+    "called": "|java+constructor:///sbt/internal/util/MultiLogger/MultiLogger(scala.collection.immutable.List)|",
+    "v1Body": [
+      "|java+constructor:///sbt/internal/util/MultiLogger/MultiLogger(scala.collection.immutable.List)|",
+      "|java+method:///sbt/util/Level$/Debug()|",
+      "|java+method:///scala/Predef$/wrapRefArray(java.lang.Object%5B%5D)|",
+      "|java+method:///sbt/internal/util/FullLogger/setLevel(scala.Enumeration$Value)|",
+      "|java+method:///scala/collection/immutable/List$/apply(scala.collection.Seq)|",
+      "|java+constructor:///sbt/internal/util/FullLogger/FullLogger(sbt.util.Logger)|",
+      "|java+constructor:///org/pantsbuild/zinc/logging/FileLogger/FileLogger(java.io.File,boolean)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///sbt/MultiLogger/MultiLogger(scala.collection.immutable.List)|",
+      "|java+method:///sbt/Level$/Debug()|",
+      "|java+method:///scala/Predef$/wrapRefArray(java.lang.Object%5B%5D)|",
+      "|java+constructor:///sbt/FullLogger/FullLogger(sbt.Logger)|",
+      "|java+method:///scala/collection/immutable/List$/apply(scala.collection.Seq)|",
+      "|java+constructor:///org/pantsbuild/zinc/logging/FileLogger/FileLogger(java.io.File,boolean)|",
+      "|java+method:///sbt/FullLogger/setLevel(scala.Enumeration$Value)|"
+    ],
+    "affectedLib": "org.scala-sbt:util-logging_2.10:0.1.0-M13",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.pantsbuild:zinc-logging_2.10:0.0.5",
+    "coordinatesV2": "org.pantsbuild:zinc-logging_2.10:20160412115411-zinc-canonicalize-1",
+    "caller": "|java+method:///org/pantsbuild/zinc/logging/Loggers$$anonfun$create$1/apply(java.io.File)|",
+    "called": "|java+constructor:///sbt/FullLogger/FullLogger(sbt.Logger)|",
+    "v1Body": [
+      "|java+constructor:///sbt/internal/util/MultiLogger/MultiLogger(scala.collection.immutable.List)|",
+      "|java+method:///sbt/util/Level$/Debug()|",
+      "|java+method:///scala/Predef$/wrapRefArray(java.lang.Object%5B%5D)|",
+      "|java+method:///sbt/internal/util/FullLogger/setLevel(scala.Enumeration$Value)|",
+      "|java+method:///scala/collection/immutable/List$/apply(scala.collection.Seq)|",
+      "|java+constructor:///sbt/internal/util/FullLogger/FullLogger(sbt.util.Logger)|",
+      "|java+constructor:///org/pantsbuild/zinc/logging/FileLogger/FileLogger(java.io.File,boolean)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///sbt/MultiLogger/MultiLogger(scala.collection.immutable.List)|",
+      "|java+method:///sbt/Level$/Debug()|",
+      "|java+method:///scala/Predef$/wrapRefArray(java.lang.Object%5B%5D)|",
+      "|java+constructor:///sbt/FullLogger/FullLogger(sbt.Logger)|",
+      "|java+method:///scala/collection/immutable/List$/apply(scala.collection.Seq)|",
+      "|java+constructor:///org/pantsbuild/zinc/logging/FileLogger/FileLogger(java.io.File,boolean)|",
+      "|java+method:///sbt/FullLogger/setLevel(scala.Enumeration$Value)|"
+    ],
+    "affectedLib": "com.typesafe.sbt:incremental-compiler:0.13.9",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.pantsbuild:zinc-logging_2.10:0.0.5",
+    "coordinatesV2": "org.pantsbuild:zinc-logging_2.10:20160412115411-zinc-canonicalize-1",
+    "caller": "|java+method:///org/pantsbuild/zinc/logging/Loggers$/create$default$3()|",
+    "called": "|java+method:///sbt/ConsoleOut$/systemOut()|",
+    "v1Body": [
+      "|java+method:///sbt/internal/util/ConsoleOut$/systemOut()|"
+    ],
+    "v2Body": [
+      "|java+method:///sbt/ConsoleOut$/systemOut()|"
+    ],
+    "affectedLib": "com.typesafe.sbt:incremental-compiler:0.13.9",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.pantsbuild:zinc-logging_2.10:0.0.5",
+    "coordinatesV2": "org.pantsbuild:zinc-logging_2.10:20160412115411-zinc-canonicalize-1",
+    "caller": "|java+method:///org/pantsbuild/zinc/logging/RegexFilterReporter/display(xsbti.Position,java.lang.String,xsbti.Severity)|",
+    "called": "|java+method:///sbt/LoggerReporter/display(xsbti.Position,java.lang.String,xsbti.Severity)|",
+    "v1Body": [
+      "|java+method:///org/pantsbuild/zinc/logging/RegexFilterReporter/isFiltered(xsbti.Position,java.lang.String,xsbti.Severity)|",
+      "|java+method:///org/pantsbuild/zinc/logging/RegexFilterReporter/inc(xsbti.Severity)|",
+      "|java+method:///sbt/internal/inc/LoggerReporter/display(xsbti.Position,java.lang.String,xsbti.Severity)|"
+    ],
+    "v2Body": [
+      "|java+method:///sbt/LoggerReporter/display(xsbti.Position,java.lang.String,xsbti.Severity)|",
+      "|java+method:///org/pantsbuild/zinc/logging/RegexFilterReporter/isFiltered(xsbti.Position,java.lang.String,xsbti.Severity)|",
+      "|java+method:///org/pantsbuild/zinc/logging/RegexFilterReporter/inc(xsbti.Severity)|"
+    ],
+    "affectedLib": "com.typesafe.sbt:incremental-compiler:0.13.9",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.pantsbuild:zinc-logging_2.10:0.0.5",
+    "coordinatesV2": "org.pantsbuild:zinc-logging_2.10:20160412115411-zinc-canonicalize-1",
+    "caller": "|java+method:///org/pantsbuild/zinc/logging/Loggers$$anonfun$create$1/apply(java.io.File)|",
+    "called": "|java+method:///scala/collection/immutable/List$/apply(scala.collection.Seq)|",
+    "v1Body": [
+      "|java+constructor:///sbt/internal/util/MultiLogger/MultiLogger(scala.collection.immutable.List)|",
+      "|java+method:///sbt/util/Level$/Debug()|",
+      "|java+method:///scala/Predef$/wrapRefArray(java.lang.Object%5B%5D)|",
+      "|java+method:///sbt/internal/util/FullLogger/setLevel(scala.Enumeration$Value)|",
+      "|java+method:///scala/collection/immutable/List$/apply(scala.collection.Seq)|",
+      "|java+constructor:///sbt/internal/util/FullLogger/FullLogger(sbt.util.Logger)|",
+      "|java+constructor:///org/pantsbuild/zinc/logging/FileLogger/FileLogger(java.io.File,boolean)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///sbt/MultiLogger/MultiLogger(scala.collection.immutable.List)|",
+      "|java+method:///sbt/Level$/Debug()|",
+      "|java+method:///scala/Predef$/wrapRefArray(java.lang.Object%5B%5D)|",
+      "|java+constructor:///sbt/FullLogger/FullLogger(sbt.Logger)|",
+      "|java+method:///scala/collection/immutable/List$/apply(scala.collection.Seq)|",
+      "|java+constructor:///org/pantsbuild/zinc/logging/FileLogger/FileLogger(java.io.File,boolean)|",
+      "|java+method:///sbt/FullLogger/setLevel(scala.Enumeration$Value)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-library:2.10.4",
+    "change": "UPDATED"
+  }
+]

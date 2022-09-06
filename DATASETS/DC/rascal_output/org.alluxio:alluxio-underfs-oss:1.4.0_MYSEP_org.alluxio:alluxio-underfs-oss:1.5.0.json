@@ -1,0 +1,400 @@
+[
+  {
+    "coordinatesV1": "org.alluxio:alluxio-underfs-oss:1.5.0",
+    "coordinatesV2": "org.alluxio:alluxio-underfs-oss:1.4.0",
+    "caller": "|java+method:///alluxio/underfs/oss/OSSUnderFileSystem/copyObject(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///com/aliyun/oss/OSSClient/copyObject(java.lang.String,java.lang.String,java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/aliyun/oss/OSSClient/copyObject(java.lang.String,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///alluxio/underfs/oss/com/aliyun/oss/OSSClient/copyObject(java.lang.String,java.lang.String,java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "com.aliyun.oss:aliyun-sdk-oss:2.0.7",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.alluxio:alluxio-underfs-oss:1.5.0",
+    "coordinatesV2": "org.alluxio:alluxio-underfs-oss:1.4.0",
+    "caller": "|java+method:///alluxio/underfs/oss/OSSOutputStream/close()|",
+    "called": "|java+method:///com/aliyun/oss/model/ObjectMetadata/setContentLength(long)|",
+    "v1Body": [
+      "|java+method:///java/io/OutputStream/close()|",
+      "|java+method:///java/security/MessageDigest/digest()|",
+      "|java+method:///com/aliyun/oss/model/ObjectMetadata/setContentLength(long)|",
+      "|java+method:///com/aliyun/oss/model/ObjectMetadata/setContentMD5(java.lang.String)|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/io/BufferedInputStream/BufferedInputStream(java.io.InputStream)|",
+      "|java+method:///java/io/File/length()|",
+      "|java+constructor:///java/io/FileInputStream/FileInputStream(java.io.File)|",
+      "|java+constructor:///com/aliyun/oss/model/ObjectMetadata/ObjectMetadata()|",
+      "|java+method:///java/io/File/delete()|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.Throwable)|",
+      "|java+method:///java/io/File/getPath()|",
+      "|java+method:///com/aliyun/oss/OSSClient/putObject(java.lang.String,java.lang.String,java.io.InputStream,com.aliyun.oss.model.ObjectMetadata)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicBoolean/getAndSet(boolean)|",
+      "|java+method:///org/apache/commons/codec/binary/Base64/encodeBase64(byte%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/OutputStream/close()|",
+      "|java+method:///alluxio/underfs/oss/com/aliyun/oss/model/ObjectMetadata/setContentMD5(java.lang.String)|",
+      "|java+method:///java/security/MessageDigest/digest()|",
+      "|java+constructor:///alluxio/underfs/oss/com/aliyun/oss/model/ObjectMetadata/ObjectMetadata()|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/io/File/length()|",
+      "|java+constructor:///java/io/BufferedInputStream/BufferedInputStream(java.io.InputStream)|",
+      "|java+method:///alluxio/underfs/oss/com/aliyun/oss/model/ObjectMetadata/setContentLength(long)|",
+      "|java+method:///alluxio/underfs/oss/com/aliyun/oss/OSSClient/putObject(java.lang.String,java.lang.String,java.io.InputStream,alluxio.underfs.oss.com.aliyun.oss.model.ObjectMetadata)|",
+      "|java+constructor:///java/io/FileInputStream/FileInputStream(java.io.File)|",
+      "|java+method:///java/io/File/delete()|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.Throwable)|",
+      "|java+method:///java/io/File/getPath()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicBoolean/getAndSet(boolean)|",
+      "|java+method:///org/apache/commons/codec/binary/Base64/encodeBase64(byte%5B%5D)|"
+    ],
+    "affectedLib": "com.aliyun.oss:aliyun-sdk-oss:2.0.7",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.alluxio:alluxio-underfs-oss:1.5.0",
+    "coordinatesV2": "org.alluxio:alluxio-underfs-oss:1.4.0",
+    "caller": "|java+method:///alluxio/underfs/oss/OSSUnderFileSystem/createEmptyObject(java.lang.String)|",
+    "called": "|java+method:///com/aliyun/oss/model/ObjectMetadata/setContentLength(long)|",
+    "v1Body": [
+      "|java+method:///com/aliyun/oss/model/ObjectMetadata/setContentLength(long)|",
+      "|java+constructor:///java/io/ByteArrayInputStream/ByteArrayInputStream(byte%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///com/aliyun/oss/model/ObjectMetadata/ObjectMetadata()|",
+      "|java+method:///com/aliyun/oss/OSSClient/putObject(java.lang.String,java.lang.String,java.io.InputStream,com.aliyun.oss.model.ObjectMetadata)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///alluxio/underfs/oss/com/aliyun/oss/model/ObjectMetadata/setContentLength(long)|",
+      "|java+method:///alluxio/underfs/oss/com/aliyun/oss/OSSClient/putObject(java.lang.String,java.lang.String,java.io.InputStream,alluxio.underfs.oss.com.aliyun.oss.model.ObjectMetadata)|",
+      "|java+constructor:///java/io/ByteArrayInputStream/ByteArrayInputStream(byte%5B%5D)|",
+      "|java+constructor:///alluxio/underfs/oss/com/aliyun/oss/model/ObjectMetadata/ObjectMetadata()|"
+    ],
+    "affectedLib": "com.aliyun.oss:aliyun-sdk-oss:2.0.7",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.alluxio:alluxio-underfs-oss:1.5.0",
+    "coordinatesV2": "org.alluxio:alluxio-underfs-oss:1.4.0",
+    "caller": "|java+method:///alluxio/underfs/oss/OSSUnderFileSystem/getObjectStatus(java.lang.String)|",
+    "called": "|java+method:///com/aliyun/oss/OSSClient/getObjectMetadata(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/aliyun/oss/model/ObjectMetadata/getLastModified()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/aliyun/oss/model/ObjectMetadata/getContentLength()|",
+      "|java+constructor:///alluxio/underfs/ObjectUnderFileSystem$ObjectStatus/ObjectUnderFileSystem$ObjectStatus(alluxio.underfs.ObjectUnderFileSystem,long,long)|",
+      "|java+method:///java/util/Date/getTime()|",
+      "|java+method:///com/aliyun/oss/OSSClient/getObjectMetadata(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///alluxio/underfs/oss/com/aliyun/oss/model/ObjectMetadata/getContentLength()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///alluxio/underfs/ObjectUnderFileSystem$ObjectStatus/ObjectUnderFileSystem$ObjectStatus(alluxio.underfs.ObjectUnderFileSystem,java.lang.String,long,long)|",
+      "|java+method:///alluxio/underfs/oss/com/aliyun/oss/OSSClient/getObjectMetadata(java.lang.String,java.lang.String)|",
+      "|java+method:///alluxio/underfs/oss/com/aliyun/oss/model/ObjectMetadata/getLastModified()|",
+      "|java+method:///java/util/Date/getTime()|"
+    ],
+    "affectedLib": "com.aliyun.oss:aliyun-sdk-oss:2.0.7",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.alluxio:alluxio-underfs-oss:1.5.0",
+    "coordinatesV2": "org.alluxio:alluxio-underfs-oss:1.4.0",
+    "caller": "|java+method:///alluxio/underfs/oss/OSSUnderFileSystem/initializeOSSClientConfig()|",
+    "called": "|java+constructor:///com/aliyun/oss/ClientConfiguration/ClientConfiguration()|",
+    "v1Body": [
+      "|java+method:///com/aliyun/oss/ClientConfiguration/setConnectionTimeout(int)|",
+      "|java+method:///alluxio/Configuration/getInt(alluxio.PropertyKey)|",
+      "|java+method:///alluxio/Configuration/getLong(alluxio.PropertyKey)|",
+      "|java+method:///com/aliyun/oss/ClientConfiguration/setConnectionTTL(long)|",
+      "|java+method:///com/aliyun/oss/ClientConfiguration/setSocketTimeout(int)|",
+      "|java+method:///com/aliyun/oss/ClientConfiguration/setMaxConnections(int)|",
+      "|java+constructor:///com/aliyun/oss/ClientConfiguration/ClientConfiguration()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///alluxio/underfs/oss/com/aliyun/oss/ClientConfiguration/ClientConfiguration()|",
+      "|java+method:///alluxio/underfs/oss/com/aliyun/oss/ClientConfiguration/setMaxConnections(int)|",
+      "|java+method:///alluxio/underfs/oss/com/aliyun/oss/ClientConfiguration/setSocketTimeout(int)|",
+      "|java+method:///alluxio/underfs/oss/com/aliyun/oss/ClientConfiguration/setConnectionTTL(long)|",
+      "|java+method:///alluxio/Configuration/getInt(alluxio.PropertyKey)|",
+      "|java+method:///alluxio/Configuration/getLong(alluxio.PropertyKey)|",
+      "|java+method:///alluxio/underfs/oss/com/aliyun/oss/ClientConfiguration/setConnectionTimeout(int)|"
+    ],
+    "affectedLib": "com.aliyun.oss:aliyun-sdk-oss:2.0.7",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.alluxio:alluxio-underfs-oss:1.5.0",
+    "coordinatesV2": "org.alluxio:alluxio-underfs-oss:1.4.0",
+    "caller": "|java+method:///alluxio/underfs/oss/OSSUnderFileSystem/openObject(java.lang.String,alluxio.underfs.options.OpenOptions)|",
+    "called": "|java+method:///com/aliyun/oss/ServiceException/getMessage()|",
+    "v1Body": [
+      "|java+constructor:///java/io/IOException/IOException(java.lang.String)|",
+      "|java+method:///alluxio/underfs/options/OpenOptions/getOffset()|",
+      "|java+method:///com/aliyun/oss/ServiceException/getMessage()|",
+      "|java+constructor:///alluxio/underfs/oss/OSSInputStream/OSSInputStream(java.lang.String,java.lang.String,com.aliyun.oss.OSSClient,long)|"
+    ],
+    "v2Body": [
+      "|java+method:///alluxio/underfs/oss/com/aliyun/oss/ServiceException/getMessage()|",
+      "|java+constructor:///alluxio/underfs/oss/OSSInputStream/OSSInputStream(java.lang.String,java.lang.String,alluxio.underfs.oss.com.aliyun.oss.OSSClient,long)|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.String)|",
+      "|java+method:///alluxio/underfs/options/OpenOptions/getOffset()|"
+    ],
+    "affectedLib": "com.aliyun.oss:aliyun-sdk-oss:2.0.7",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.alluxio:alluxio-underfs-oss:1.5.0",
+    "coordinatesV2": "org.alluxio:alluxio-underfs-oss:1.4.0",
+    "caller": "|java+method:///alluxio/underfs/oss/OSSUnderFileSystem$OSSObjectListingChunk/getNextChunk()|",
+    "called": "|java+method:///com/aliyun/oss/OSSClient/listObjects(com.aliyun.oss.model.ListObjectsRequest)|",
+    "v1Body": [
+      "|java+method:///com/aliyun/oss/OSSClient/listObjects(com.aliyun.oss.model.ListObjectsRequest)|",
+      "|java+constructor:///alluxio/underfs/oss/OSSUnderFileSystem$OSSObjectListingChunk/OSSUnderFileSystem$OSSObjectListingChunk(alluxio.underfs.oss.OSSUnderFileSystem,com.aliyun.oss.model.ListObjectsRequest,com.aliyun.oss.model.ObjectListing)|",
+      "|java+method:///com/aliyun/oss/model/ObjectListing/isTruncated()|",
+      "|java+method:///alluxio/underfs/oss/OSSUnderFileSystem/access$000(alluxio.underfs.oss.OSSUnderFileSystem)|"
+    ],
+    "v2Body": [
+      "|java+method:///alluxio/underfs/oss/com/aliyun/oss/model/ObjectListing/isTruncated()|",
+      "|java+method:///alluxio/underfs/oss/com/aliyun/oss/OSSClient/listObjects(alluxio.underfs.oss.com.aliyun.oss.model.ListObjectsRequest)|",
+      "|java+constructor:///alluxio/underfs/oss/OSSUnderFileSystem$OSSObjectListingChunk/OSSUnderFileSystem$OSSObjectListingChunk(alluxio.underfs.oss.OSSUnderFileSystem,alluxio.underfs.oss.com.aliyun.oss.model.ListObjectsRequest,alluxio.underfs.oss.com.aliyun.oss.model.ObjectListing)|",
+      "|java+method:///alluxio/underfs/oss/OSSUnderFileSystem/access$000(alluxio.underfs.oss.OSSUnderFileSystem)|"
+    ],
+    "affectedLib": "com.aliyun.oss:aliyun-sdk-oss:2.0.7",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.alluxio:alluxio-underfs-oss:1.5.0",
+    "coordinatesV2": "org.alluxio:alluxio-underfs-oss:1.4.0",
+    "caller": "|java+method:///alluxio/underfs/oss/OSSUnderFileSystem/getObjectListingChunk(java.lang.String,boolean)|",
+    "called": "|java+method:///com/aliyun/oss/model/ListObjectsRequest/setMaxKeys(java.lang.Integer)|",
+    "v1Body": [
+      "|java+method:///com/aliyun/oss/model/ListObjectsRequest/setPrefix(java.lang.String)|",
+      "|java+method:///com/aliyun/oss/model/ListObjectsRequest/setMaxKeys(java.lang.Integer)|",
+      "|java+constructor:///alluxio/underfs/oss/OSSUnderFileSystem$OSSObjectListingChunk/OSSUnderFileSystem$OSSObjectListingChunk(alluxio.underfs.oss.OSSUnderFileSystem,com.aliyun.oss.model.ListObjectsRequest,com.aliyun.oss.model.ObjectListing)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///alluxio/underfs/oss/OSSUnderFileSystem/getListingChunkLength()|",
+      "|java+method:///com/aliyun/oss/model/ListObjectsRequest/setDelimiter(java.lang.String)|",
+      "|java+method:///alluxio/underfs/oss/OSSUnderFileSystem/getObjectListingChunk(com.aliyun.oss.model.ListObjectsRequest)|",
+      "|java+method:///alluxio/util/io/PathUtils/normalizePath(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+constructor:///com/aliyun/oss/model/ListObjectsRequest/ListObjectsRequest(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///alluxio/underfs/oss/com/aliyun/oss/model/ListObjectsRequest/ListObjectsRequest(java.lang.String)|",
+      "|java+method:///alluxio/underfs/oss/com/aliyun/oss/model/ListObjectsRequest/setDelimiter(java.lang.String)|",
+      "|java+method:///alluxio/util/io/PathUtils/normalizePath(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///alluxio/underfs/oss/OSSUnderFileSystem/getListingChunkLength()|",
+      "|java+constructor:///alluxio/underfs/oss/OSSUnderFileSystem$OSSObjectListingChunk/OSSUnderFileSystem$OSSObjectListingChunk(alluxio.underfs.oss.OSSUnderFileSystem,alluxio.underfs.oss.com.aliyun.oss.model.ListObjectsRequest,alluxio.underfs.oss.com.aliyun.oss.model.ObjectListing)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///alluxio/underfs/oss/com/aliyun/oss/model/ListObjectsRequest/setPrefix(java.lang.String)|",
+      "|java+method:///alluxio/underfs/oss/com/aliyun/oss/model/ListObjectsRequest/setMaxKeys(java.lang.Integer)|",
+      "|java+method:///alluxio/underfs/oss/OSSUnderFileSystem/getObjectListingChunk(alluxio.underfs.oss.com.aliyun.oss.model.ListObjectsRequest)|"
+    ],
+    "affectedLib": "com.aliyun.oss:aliyun-sdk-oss:2.0.7",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.alluxio:alluxio-underfs-oss:1.5.0",
+    "coordinatesV2": "org.alluxio:alluxio-underfs-oss:1.4.0",
+    "caller": "|java+method:///alluxio/underfs/oss/OSSUnderFileSystem/deleteObject(java.lang.String)|",
+    "called": "|java+method:///com/aliyun/oss/OSSClient/deleteObject(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/aliyun/oss/OSSClient/deleteObject(java.lang.String,java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///alluxio/underfs/oss/com/aliyun/oss/OSSClient/deleteObject(java.lang.String,java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "com.aliyun.oss:aliyun-sdk-oss:2.0.7",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.alluxio:alluxio-underfs-oss:1.5.0",
+    "coordinatesV2": "org.alluxio:alluxio-underfs-oss:1.4.0",
+    "caller": "|java+method:///alluxio/underfs/oss/OSSInputStream/createStream(long,long)|",
+    "called": "|java+method:///com/aliyun/oss/OSSClient/getObject(com.aliyun.oss.model.GetObjectRequest)|",
+    "v1Body": [
+      "|java+method:///com/aliyun/oss/model/GetObjectRequest/setRange(long,long)|",
+      "|java+constructor:///com/aliyun/oss/model/GetObjectRequest/GetObjectRequest(java.lang.String,java.lang.String)|",
+      "|java+method:///com/aliyun/oss/OSSClient/getObject(com.aliyun.oss.model.GetObjectRequest)|",
+      "|java+method:///com/aliyun/oss/model/OSSObject/getObjectContent()|",
+      "|java+constructor:///java/io/BufferedInputStream/BufferedInputStream(java.io.InputStream)|"
+    ],
+    "v2Body": [
+      "|java+method:///alluxio/underfs/oss/com/aliyun/oss/model/OSSObject/getObjectContent()|",
+      "|java+method:///alluxio/underfs/oss/com/aliyun/oss/OSSClient/getObject(alluxio.underfs.oss.com.aliyun.oss.model.GetObjectRequest)|",
+      "|java+method:///alluxio/underfs/oss/com/aliyun/oss/model/GetObjectRequest/setRange(long,long)|",
+      "|java+constructor:///java/io/BufferedInputStream/BufferedInputStream(java.io.InputStream)|",
+      "|java+constructor:///alluxio/underfs/oss/com/aliyun/oss/model/GetObjectRequest/GetObjectRequest(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "com.aliyun.oss:aliyun-sdk-oss:2.0.7",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.alluxio:alluxio-underfs-oss:1.4.0",
+    "coordinatesV2": "org.alluxio:alluxio-underfs-oss:1.5.0",
+    "caller": "|java+method:///alluxio/underfs/oss/OSSOutputStream/close()|",
+    "called": "|java+method:///org/apache/commons/codec/binary/Base64/encodeBase64(byte%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/io/OutputStream/close()|",
+      "|java+method:///java/security/MessageDigest/digest()|",
+      "|java+method:///com/aliyun/oss/model/ObjectMetadata/setContentLength(long)|",
+      "|java+method:///com/aliyun/oss/model/ObjectMetadata/setContentMD5(java.lang.String)|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/io/BufferedInputStream/BufferedInputStream(java.io.InputStream)|",
+      "|java+method:///java/io/File/length()|",
+      "|java+constructor:///java/io/FileInputStream/FileInputStream(java.io.File)|",
+      "|java+constructor:///com/aliyun/oss/model/ObjectMetadata/ObjectMetadata()|",
+      "|java+method:///java/io/File/delete()|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.Throwable)|",
+      "|java+method:///java/io/File/getPath()|",
+      "|java+method:///com/aliyun/oss/OSSClient/putObject(java.lang.String,java.lang.String,java.io.InputStream,com.aliyun.oss.model.ObjectMetadata)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicBoolean/getAndSet(boolean)|",
+      "|java+method:///org/apache/commons/codec/binary/Base64/encodeBase64(byte%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/OutputStream/close()|",
+      "|java+method:///alluxio/underfs/oss/com/aliyun/oss/model/ObjectMetadata/setContentMD5(java.lang.String)|",
+      "|java+method:///java/security/MessageDigest/digest()|",
+      "|java+constructor:///alluxio/underfs/oss/com/aliyun/oss/model/ObjectMetadata/ObjectMetadata()|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/io/File/length()|",
+      "|java+constructor:///java/io/BufferedInputStream/BufferedInputStream(java.io.InputStream)|",
+      "|java+method:///alluxio/underfs/oss/com/aliyun/oss/model/ObjectMetadata/setContentLength(long)|",
+      "|java+method:///alluxio/underfs/oss/com/aliyun/oss/OSSClient/putObject(java.lang.String,java.lang.String,java.io.InputStream,alluxio.underfs.oss.com.aliyun.oss.model.ObjectMetadata)|",
+      "|java+constructor:///java/io/FileInputStream/FileInputStream(java.io.File)|",
+      "|java+method:///java/io/File/delete()|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.Throwable)|",
+      "|java+method:///java/io/File/getPath()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicBoolean/getAndSet(boolean)|",
+      "|java+method:///org/apache/commons/codec/binary/Base64/encodeBase64(byte%5B%5D)|"
+    ],
+    "affectedLib": "commons-codec:commons-codec:1.10",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.alluxio:alluxio-underfs-oss:1.4.0",
+    "coordinatesV2": "org.alluxio:alluxio-underfs-oss:1.5.0",
+    "caller": "|java+initializer:///alluxio/underfs/oss/OSSOutputStream/OSSOutputStream$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.alluxio:alluxio-underfs-oss:1.4.0",
+    "coordinatesV2": "org.alluxio:alluxio-underfs-oss:1.5.0",
+    "caller": "|java+initializer:///alluxio/underfs/oss/OSSUnderFileSystem/OSSUnderFileSystem$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.alluxio:alluxio-underfs-oss:1.4.0",
+    "coordinatesV2": "org.alluxio:alluxio-underfs-oss:1.5.0",
+    "caller": "|java+method:///alluxio/underfs/oss/OSSUnderFileSystem/initializeOSSClientConfig()|",
+    "called": "|java+method:///alluxio/Configuration/getLong(alluxio.PropertyKey)|",
+    "v1Body": [
+      "|java+method:///com/aliyun/oss/ClientConfiguration/setConnectionTimeout(int)|",
+      "|java+method:///alluxio/Configuration/getInt(alluxio.PropertyKey)|",
+      "|java+method:///alluxio/Configuration/getLong(alluxio.PropertyKey)|",
+      "|java+method:///com/aliyun/oss/ClientConfiguration/setConnectionTTL(long)|",
+      "|java+method:///com/aliyun/oss/ClientConfiguration/setSocketTimeout(int)|",
+      "|java+method:///com/aliyun/oss/ClientConfiguration/setMaxConnections(int)|",
+      "|java+constructor:///com/aliyun/oss/ClientConfiguration/ClientConfiguration()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///alluxio/underfs/oss/com/aliyun/oss/ClientConfiguration/ClientConfiguration()|",
+      "|java+method:///alluxio/underfs/oss/com/aliyun/oss/ClientConfiguration/setMaxConnections(int)|",
+      "|java+method:///alluxio/underfs/oss/com/aliyun/oss/ClientConfiguration/setSocketTimeout(int)|",
+      "|java+method:///alluxio/underfs/oss/com/aliyun/oss/ClientConfiguration/setConnectionTTL(long)|",
+      "|java+method:///alluxio/Configuration/getInt(alluxio.PropertyKey)|",
+      "|java+method:///alluxio/Configuration/getLong(alluxio.PropertyKey)|",
+      "|java+method:///alluxio/underfs/oss/com/aliyun/oss/ClientConfiguration/setConnectionTimeout(int)|"
+    ],
+    "affectedLib": "org.alluxio:alluxio-core-common:1.5.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.alluxio:alluxio-underfs-oss:1.4.0",
+    "coordinatesV2": "org.alluxio:alluxio-underfs-oss:1.5.0",
+    "caller": "|java+method:///alluxio/underfs/oss/OSSUnderFileSystem/getObjectListingChunk(java.lang.String,boolean)|",
+    "called": "|java+method:///alluxio/util/io/PathUtils/normalizePath(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/aliyun/oss/model/ListObjectsRequest/setPrefix(java.lang.String)|",
+      "|java+method:///com/aliyun/oss/model/ListObjectsRequest/setMaxKeys(java.lang.Integer)|",
+      "|java+constructor:///alluxio/underfs/oss/OSSUnderFileSystem$OSSObjectListingChunk/OSSUnderFileSystem$OSSObjectListingChunk(alluxio.underfs.oss.OSSUnderFileSystem,com.aliyun.oss.model.ListObjectsRequest,com.aliyun.oss.model.ObjectListing)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///alluxio/underfs/oss/OSSUnderFileSystem/getListingChunkLength()|",
+      "|java+method:///com/aliyun/oss/model/ListObjectsRequest/setDelimiter(java.lang.String)|",
+      "|java+method:///alluxio/underfs/oss/OSSUnderFileSystem/getObjectListingChunk(com.aliyun.oss.model.ListObjectsRequest)|",
+      "|java+method:///alluxio/util/io/PathUtils/normalizePath(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+constructor:///com/aliyun/oss/model/ListObjectsRequest/ListObjectsRequest(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///alluxio/underfs/oss/com/aliyun/oss/model/ListObjectsRequest/ListObjectsRequest(java.lang.String)|",
+      "|java+method:///alluxio/underfs/oss/com/aliyun/oss/model/ListObjectsRequest/setDelimiter(java.lang.String)|",
+      "|java+method:///alluxio/util/io/PathUtils/normalizePath(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///alluxio/underfs/oss/OSSUnderFileSystem/getListingChunkLength()|",
+      "|java+constructor:///alluxio/underfs/oss/OSSUnderFileSystem$OSSObjectListingChunk/OSSUnderFileSystem$OSSObjectListingChunk(alluxio.underfs.oss.OSSUnderFileSystem,alluxio.underfs.oss.com.aliyun.oss.model.ListObjectsRequest,alluxio.underfs.oss.com.aliyun.oss.model.ObjectListing)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///alluxio/underfs/oss/com/aliyun/oss/model/ListObjectsRequest/setPrefix(java.lang.String)|",
+      "|java+method:///alluxio/underfs/oss/com/aliyun/oss/model/ListObjectsRequest/setMaxKeys(java.lang.Integer)|",
+      "|java+method:///alluxio/underfs/oss/OSSUnderFileSystem/getObjectListingChunk(alluxio.underfs.oss.com.aliyun.oss.model.ListObjectsRequest)|"
+    ],
+    "affectedLib": "org.alluxio:alluxio-core-common:1.5.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.alluxio:alluxio-underfs-oss:1.4.0",
+    "coordinatesV2": "org.alluxio:alluxio-underfs-oss:1.5.0",
+    "caller": "|java+method:///alluxio/underfs/oss/OSSUnderFileSystem/getObjectStatus(java.lang.String)|",
+    "called": "|java+constructor:///alluxio/underfs/ObjectUnderFileSystem$ObjectStatus/ObjectUnderFileSystem$ObjectStatus(alluxio.underfs.ObjectUnderFileSystem,java.lang.String,long,long)|",
+    "v1Body": [
+      "|java+method:///com/aliyun/oss/model/ObjectMetadata/getLastModified()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/aliyun/oss/model/ObjectMetadata/getContentLength()|",
+      "|java+constructor:///alluxio/underfs/ObjectUnderFileSystem$ObjectStatus/ObjectUnderFileSystem$ObjectStatus(alluxio.underfs.ObjectUnderFileSystem,long,long)|",
+      "|java+method:///java/util/Date/getTime()|",
+      "|java+method:///com/aliyun/oss/OSSClient/getObjectMetadata(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///alluxio/underfs/oss/com/aliyun/oss/model/ObjectMetadata/getContentLength()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///alluxio/underfs/ObjectUnderFileSystem$ObjectStatus/ObjectUnderFileSystem$ObjectStatus(alluxio.underfs.ObjectUnderFileSystem,java.lang.String,long,long)|",
+      "|java+method:///alluxio/underfs/oss/com/aliyun/oss/OSSClient/getObjectMetadata(java.lang.String,java.lang.String)|",
+      "|java+method:///alluxio/underfs/oss/com/aliyun/oss/model/ObjectMetadata/getLastModified()|",
+      "|java+method:///java/util/Date/getTime()|"
+    ],
+    "affectedLib": "org.alluxio:alluxio-core-common:1.5.0",
+    "change": "UPDATED"
+  }
+]

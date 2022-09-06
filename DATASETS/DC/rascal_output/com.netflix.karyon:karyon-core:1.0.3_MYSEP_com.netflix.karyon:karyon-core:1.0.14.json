@@ -1,0 +1,99 @@
+[
+  {
+    "coordinatesV1": "com.netflix.karyon:karyon-core:1.0.14",
+    "coordinatesV2": "com.netflix.karyon:karyon-core:1.0.3",
+    "caller": "|java+method:///com/netflix/karyon/server/KaryonServer/initialize()|",
+    "called": "|java+method:///com/netflix/config/ConfigurationManager/getConfigInstance()|",
+    "v1Body": [
+      "|java+method:///com/netflix/karyon/server/ServerBootstrap/bootstrap()|",
+      "|java+method:///com/netflix/config/ConfigurationManager/getDeploymentContext()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+constructor:///com/netflix/karyon/server/ServerBootstrap/ServerBootstrap()|",
+      "|java+method:///com/netflix/karyon/server/ServerBootstrap/beforeInjectorCreation(com.netflix.governator.guice.LifecycleInjectorBuilder)|",
+      "|java+method:///org/apache/commons/configuration/AbstractConfiguration/getString(java.lang.String)|",
+      "|java+method:///com/netflix/governator/guice/LifecycleInjectorBuilder/createInjector()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/netflix/config/DeploymentContext/getApplicationId()|",
+      "|java+method:///com/netflix/config/DeploymentContext/getDeploymentEnvironment()|",
+      "|java+method:///com/netflix/karyon/server/KaryonServer/instantiateBootstrapClass(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/netflix/config/ConfigurationManager/getConfigInstance()|",
+      "|java+method:///com/netflix/config/ConfigurationManager/loadCascadedPropertiesFromResources(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/netflix/karyon/server/ServerBootstrap/beforeInjectorCreation(com.netflix.governator.guice.LifecycleInjectorBuilder)|",
+      "|java+method:///com/netflix/governator/guice/LifecycleInjectorBuilder/createInjector()|",
+      "|java+method:///com/google/inject/Injector/getInstance(java.lang.Class)|",
+      "|java+method:///com/netflix/karyon/server/ServerBootstrap/bootstrap()|"
+    ],
+    "affectedLib": "com.netflix.archaius:archaius-core:0.5.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.netflix.karyon:karyon-core:1.0.14",
+    "coordinatesV2": "com.netflix.karyon:karyon-core:1.0.3",
+    "caller": "|java+method:///com/netflix/karyon/server/ServerBootstrap/bootstrap()|",
+    "called": "|java+method:///com/netflix/governator/guice/LifecycleInjector/createStandardClasspathScanner(java.util.Collection,java.util.List)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///com/netflix/governator/guice/LifecycleInjector/createStandardClasspathScanner(java.util.Collection,java.util.List)|",
+      "|java+constructor:///com/netflix/karyon/server/ServerBootstrap$KaryonBootstrapModule/ServerBootstrap$KaryonBootstrapModule(com.netflix.karyon.server.ServerBootstrap,com.netflix.karyon.server.ServerBootstrap$1)|",
+      "|java+method:///com/netflix/karyon/server/ServerBootstrap/getBasePackages()|",
+      "|java+method:///com/google/common/collect/Lists/newArrayList()|",
+      "|java+method:///java/util/List/addAll(java.util.Collection)|",
+      "|java+method:///com/netflix/governator/guice/LifecycleInjectorBuilder/withModules(com.google.inject.Module%5B%5D)|",
+      "|java+method:///com/netflix/governator/guice/LifecycleInjectorBuilder/usingBasePackages(java.util.Collection)|",
+      "|java+method:///com/netflix/governator/guice/LifecycleInjectorBuilder/withBootstrapModule(com.netflix.governator.guice.BootstrapModule)|",
+      "|java+constructor:///com/netflix/karyon/server/ServerBootstrap$KaryonGuiceModule/ServerBootstrap$KaryonGuiceModule(com.netflix.karyon.server.ServerBootstrap,com.netflix.karyon.server.ServerBootstrap$1)|",
+      "|java+method:///com/netflix/governator/guice/LifecycleInjectorBuilder/usingClasspathScanner(com.netflix.governator.lifecycle.ClasspathScanner)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///com/netflix/governator/guice/LifecycleInjector/builder()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/netflix/karyon/server/ServerBootstrap$KaryonBootstrapModule/ServerBootstrap$KaryonBootstrapModule(com.netflix.karyon.server.ServerBootstrap,com.netflix.karyon.server.ServerBootstrap$1)|",
+      "|java+method:///com/netflix/governator/guice/LifecycleInjectorBuilder/usingClasspathScanner(com.netflix.governator.lifecycle.ClasspathScanner)|",
+      "|java+method:///com/netflix/karyon/server/ServerBootstrap/newLifecycleInjectorBuilder()|",
+      "|java+constructor:///com/netflix/karyon/server/ServerBootstrap$KaryonGuiceModule/ServerBootstrap$KaryonGuiceModule(com.netflix.karyon.server.ServerBootstrap)|",
+      "|java+method:///com/netflix/governator/guice/LifecycleInjectorBuilder/withModules(com.google.inject.Module%5B%5D)|",
+      "|java+method:///com/netflix/governator/guice/LifecycleInjectorBuilder/usingBasePackages(java.util.Collection)|",
+      "|java+method:///com/netflix/governator/guice/LifecycleInjectorBuilder/withBootstrapModule(com.netflix.governator.guice.BootstrapModule)|"
+    ],
+    "affectedLib": "com.netflix.governator:governator:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.netflix.karyon:karyon-core:1.0.3",
+    "coordinatesV2": "com.netflix.karyon:karyon-core:1.0.14",
+    "caller": "|java+constructor:///com/netflix/karyon/server/ServerBootstrap$KaryonGuiceModule/ServerBootstrap$KaryonGuiceModule(com.netflix.karyon.server.ServerBootstrap)|",
+    "called": "|java+constructor:///com/netflix/karyon/server/HealthCheckModule/HealthCheckModule()|",
+    "v1Body": [
+      "|java+constructor:///com/google/inject/AbstractModule/AbstractModule()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/netflix/karyon/server/HealthCheckModule/HealthCheckModule()|"
+    ],
+    "affectedLib": "com.netflix.karyon:karyon-eureka:1.0.14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.netflix.karyon:karyon-core:1.0.3",
+    "coordinatesV2": "com.netflix.karyon:karyon-core:1.0.14",
+    "caller": "|java+method:///com/netflix/karyon/server/ServerBootstrap$KaryonGuiceModule/configure()|",
+    "called": "|java+method:///com/netflix/karyon/server/HealthCheckModule/configure()|",
+    "v1Body": [
+      "|java+method:///com/netflix/karyon/server/ServerBootstrap$KaryonGuiceModule/bindHealthCheckStrategy(com.google.inject.Binder)|",
+      "|java+method:///com/netflix/karyon/server/ServerBootstrap$KaryonGuiceModule/binder()|",
+      "|java+method:///com/netflix/karyon/server/ServerBootstrap/configureBinder(com.google.inject.Binder)|",
+      "|java+method:///com/netflix/karyon/server/ServerBootstrap$KaryonGuiceModule/bindHealthCheckHandler(com.google.inject.Binder)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/netflix/karyon/server/ServerBootstrap$KaryonGuiceModule/binder()|",
+      "|java+method:///com/netflix/karyon/server/ServerBootstrap/configureBinder(com.google.inject.Binder)|",
+      "|java+method:///com/netflix/karyon/server/HealthCheckModule/configure()|",
+      "|java+method:///com/netflix/karyon/server/ServerBootstrap$KaryonGuiceModule/bindServiceRegistryClient()|"
+    ],
+    "affectedLib": "com.netflix.karyon:karyon-eureka:1.0.14",
+    "change": "ADDED"
+  }
+]

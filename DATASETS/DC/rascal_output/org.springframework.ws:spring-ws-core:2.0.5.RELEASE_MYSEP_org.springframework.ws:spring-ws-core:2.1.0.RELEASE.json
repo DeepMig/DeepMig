@@ -1,0 +1,96 @@
+[
+  {
+    "coordinatesV1": "org.springframework.ws:spring-ws-core:2.0.5.RELEASE",
+    "coordinatesV2": "org.springframework.ws:spring-ws-core:2.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/ws/server/endpoint/AbstractJDomPayloadEndpoint/getDocumentElement(javax.xml.transform.Source)|",
+    "called": "|java+method:///org/jdom2/input/DOMBuilder/build(org.w3c.dom.Document)|",
+    "v1Body": [
+      "|java+method:///org/jdom/Document/getRootElement()|",
+      "|java+method:///org/jdom/input/DOMBuilder/build(org.w3c.dom.Document)|",
+      "|java+method:///org/springframework/ws/server/endpoint/AbstractJDomPayloadEndpoint/transform(javax.xml.transform.Source,javax.xml.transform.Result)|",
+      "|java+method:///javax/xml/transform/dom/DOMSource/getNode()|",
+      "|java+constructor:///org/jdom/transform/JDOMResult/JDOMResult()|",
+      "|java+method:///org/jdom/transform/JDOMResult/getDocument()|",
+      "|java+method:///org/jdom/input/DOMBuilder/build(org.w3c.dom.Element)|",
+      "|java+constructor:///org/jdom/input/DOMBuilder/DOMBuilder()|",
+      "|java+method:///org/w3c/dom/Node/getNodeType()|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/xml/transform/dom/DOMSource/getNode()|",
+      "|java+constructor:///org/jdom2/input/DOMBuilder/DOMBuilder()|",
+      "|java+constructor:///org/jdom2/transform/JDOMResult/JDOMResult()|",
+      "|java+method:///org/springframework/ws/server/endpoint/AbstractJDomPayloadEndpoint/transform(javax.xml.transform.Source,javax.xml.transform.Result)|",
+      "|java+method:///org/jdom2/input/DOMBuilder/build(org.w3c.dom.Element)|",
+      "|java+method:///org/jdom2/Document/getRootElement()|",
+      "|java+method:///org/jdom2/transform/JDOMResult/getDocument()|",
+      "|java+method:///org/jdom2/input/DOMBuilder/build(org.w3c.dom.Document)|",
+      "|java+method:///org/w3c/dom/Node/getNodeType()|"
+    ],
+    "affectedLib": "org.jdom:jdom:2.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.ws:spring-ws-core:2.0.5.RELEASE",
+    "coordinatesV2": "org.springframework.ws:spring-ws-core:2.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/ws/server/endpoint/adapter/method/dom/JDomPayloadMethodProcessor/createResponsePayload(org.springframework.core.MethodParameter,java.lang.Object)|",
+    "called": "|java+constructor:///org/jdom2/transform/JDOMSource/JDOMSource(org.jdom2.Element)|",
+    "v1Body": [
+      "|java+constructor:///org/jdom/transform/JDOMSource/JDOMSource(org.jdom.Element)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/jdom2/transform/JDOMSource/JDOMSource(org.jdom2.Element)|"
+    ],
+    "affectedLib": "org.jdom:jdom:2.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.ws:spring-ws-core:2.0.5.RELEASE",
+    "coordinatesV2": "org.springframework.ws:spring-ws-core:2.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/ws/server/endpoint/AbstractJDomPayloadEndpoint/invoke(javax.xml.transform.Source)|",
+    "called": "|java+constructor:///org/jdom2/transform/JDOMSource/JDOMSource(org.jdom2.Element)|",
+    "v1Body": [
+      "|java+constructor:///org/jdom/transform/JDOMSource/JDOMSource(org.jdom.Element)|",
+      "|java+method:///org/springframework/ws/server/endpoint/AbstractJDomPayloadEndpoint/getDocumentElement(javax.xml.transform.Source)|",
+      "|java+method:///org/springframework/ws/server/endpoint/AbstractJDomPayloadEndpoint/invokeInternal(org.jdom.Element)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/jdom2/transform/JDOMSource/JDOMSource(org.jdom2.Element)|",
+      "|java+method:///org/springframework/ws/server/endpoint/AbstractJDomPayloadEndpoint/invokeInternal(org.jdom2.Element)|",
+      "|java+method:///org/springframework/ws/server/endpoint/AbstractJDomPayloadEndpoint/getDocumentElement(javax.xml.transform.Source)|"
+    ],
+    "affectedLib": "org.jdom:jdom:2.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.ws:spring-ws-core:2.0.5.RELEASE",
+    "coordinatesV2": "org.springframework.ws:spring-ws-core:2.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/ws/server/endpoint/adapter/method/dom/JDomPayloadMethodProcessor/resolveRequestPayloadArgument(org.springframework.core.MethodParameter,javax.xml.transform.Source)|",
+    "called": "|java+method:///org/jdom2/input/DOMBuilder/build(org.w3c.dom.Document)|",
+    "v1Body": [
+      "|java+method:///org/springframework/ws/server/endpoint/adapter/method/dom/JDomPayloadMethodProcessor/transform(javax.xml.transform.Source,javax.xml.transform.Result)|",
+      "|java+method:///org/jdom/Document/getRootElement()|",
+      "|java+method:///org/jdom/input/DOMBuilder/build(org.w3c.dom.Document)|",
+      "|java+method:///org/springframework/ws/server/endpoint/adapter/method/dom/JDomPayloadMethodProcessor/resolveRequestPayloadArgument(org.springframework.core.MethodParameter,javax.xml.transform.Source)|",
+      "|java+method:///javax/xml/transform/dom/DOMSource/getNode()|",
+      "|java+constructor:///org/jdom/transform/JDOMResult/JDOMResult()|",
+      "|java+method:///org/jdom/transform/JDOMResult/getDocument()|",
+      "|java+method:///org/jdom/input/DOMBuilder/build(org.w3c.dom.Element)|",
+      "|java+constructor:///org/jdom/input/DOMBuilder/DOMBuilder()|",
+      "|java+method:///org/w3c/dom/Node/getNodeType()|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/xml/transform/dom/DOMSource/getNode()|",
+      "|java+method:///org/springframework/ws/server/endpoint/adapter/method/dom/JDomPayloadMethodProcessor/transform(javax.xml.transform.Source,javax.xml.transform.Result)|",
+      "|java+constructor:///org/jdom2/input/DOMBuilder/DOMBuilder()|",
+      "|java+constructor:///org/jdom2/transform/JDOMResult/JDOMResult()|",
+      "|java+method:///org/jdom2/input/DOMBuilder/build(org.w3c.dom.Element)|",
+      "|java+method:///org/springframework/ws/server/endpoint/adapter/method/dom/JDomPayloadMethodProcessor/resolveRequestPayloadArgument(org.springframework.core.MethodParameter,javax.xml.transform.Source)|",
+      "|java+method:///org/jdom2/Document/getRootElement()|",
+      "|java+method:///org/jdom2/transform/JDOMResult/getDocument()|",
+      "|java+method:///org/jdom2/input/DOMBuilder/build(org.w3c.dom.Document)|",
+      "|java+method:///org/w3c/dom/Node/getNodeType()|"
+    ],
+    "affectedLib": "org.jdom:jdom:2.0.1",
+    "change": "UPDATED"
+  }
+]

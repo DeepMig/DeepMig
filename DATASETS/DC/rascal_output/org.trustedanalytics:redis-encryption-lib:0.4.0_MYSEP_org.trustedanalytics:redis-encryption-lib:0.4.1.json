@@ -1,0 +1,114 @@
+[
+  {
+    "coordinatesV1": "org.trustedanalytics:redis-encryption-lib:0.4.1",
+    "coordinatesV2": "org.trustedanalytics:redis-encryption-lib:0.4.0",
+    "caller": "|java+constructor:///org/trustedanalytics/redis/encryption/serializer/SecureJacksonJsonRedisSerializer/SecureJacksonJsonRedisSerializer(java.lang.Class,org.trustedanalytics.redis.encryption.EncryptionService)|",
+    "called": "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+      "|java+constructor:///org/springframework/data/redis/serializer/JacksonJsonRedisSerializer/JacksonJsonRedisSerializer(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+      "|java+constructor:///org/springframework/data/redis/serializer/Jackson2JsonRedisSerializer/Jackson2JsonRedisSerializer(java.lang.Class)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.13",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.trustedanalytics:redis-encryption-lib:0.4.1",
+    "coordinatesV2": "org.trustedanalytics:redis-encryption-lib:0.4.0",
+    "caller": "|java+method:///org/trustedanalytics/redis/encryption/serializer/SecureJacksonJsonRedisSerializer/serialize(java.lang.Object)|",
+    "called": "|java+method:///org/codehaus/jackson/map/ObjectMapper/writeValueAsBytes(java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/data/redis/serializer/SerializationException/SerializationException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/writeValueAsBytes(java.lang.Object)|",
+      "|java+method:///org/springframework/data/redis/serializer/JacksonJsonRedisSerializer/serialize(java.lang.Object)|",
+      "|java+method:///org/trustedanalytics/redis/encryption/EncryptionService/encrypt(byte%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/springframework/data/redis/serializer/SerializationException/SerializationException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/springframework/data/redis/serializer/Jackson2JsonRedisSerializer/serialize(java.lang.Object)|",
+      "|java+method:///org/trustedanalytics/redis/encryption/EncryptionService/encrypt(byte%5B%5D)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValueAsBytes(java.lang.Object)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.13",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.trustedanalytics:redis-encryption-lib:0.4.1",
+    "coordinatesV2": "org.trustedanalytics:redis-encryption-lib:0.4.0",
+    "caller": "|java+method:///org/trustedanalytics/redis/encryption/serializer/SecureJacksonJsonRedisSerializer/deserialize(byte%5B%5D)|",
+    "called": "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(byte%5B%5D,int,int,java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/data/redis/serializer/SerializationException/SerializationException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/trustedanalytics/redis/encryption/EncryptionService/decrypt(org.trustedanalytics.redis.encryption.SecureJson)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(byte%5B%5D,int,int,java.lang.Class)|",
+      "|java+method:///org/springframework/data/redis/serializer/JacksonJsonRedisSerializer/deserialize(byte%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/springframework/data/redis/serializer/SerializationException/SerializationException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/trustedanalytics/redis/encryption/EncryptionService/decrypt(org.trustedanalytics.redis.encryption.SecureJson)|",
+      "|java+method:///org/springframework/data/redis/serializer/Jackson2JsonRedisSerializer/deserialize(byte%5B%5D)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(byte%5B%5D,int,int,java.lang.Class)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.13",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.trustedanalytics:redis-encryption-lib:0.4.0",
+    "coordinatesV2": "org.trustedanalytics:redis-encryption-lib:0.4.1",
+    "caller": "|java+constructor:///org/trustedanalytics/redis/encryption/serializer/SecureJacksonJsonRedisSerializer/SecureJacksonJsonRedisSerializer(java.lang.Class,org.trustedanalytics.redis.encryption.EncryptionService)|",
+    "called": "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+      "|java+constructor:///org/springframework/data/redis/serializer/JacksonJsonRedisSerializer/JacksonJsonRedisSerializer(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+      "|java+constructor:///org/springframework/data/redis/serializer/Jackson2JsonRedisSerializer/Jackson2JsonRedisSerializer(java.lang.Class)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.4.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.trustedanalytics:redis-encryption-lib:0.4.0",
+    "coordinatesV2": "org.trustedanalytics:redis-encryption-lib:0.4.1",
+    "caller": "|java+method:///org/trustedanalytics/redis/encryption/serializer/SecureJacksonJsonRedisSerializer/serialize(java.lang.Object)|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValueAsBytes(java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/data/redis/serializer/SerializationException/SerializationException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/writeValueAsBytes(java.lang.Object)|",
+      "|java+method:///org/springframework/data/redis/serializer/JacksonJsonRedisSerializer/serialize(java.lang.Object)|",
+      "|java+method:///org/trustedanalytics/redis/encryption/EncryptionService/encrypt(byte%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/springframework/data/redis/serializer/SerializationException/SerializationException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/springframework/data/redis/serializer/Jackson2JsonRedisSerializer/serialize(java.lang.Object)|",
+      "|java+method:///org/trustedanalytics/redis/encryption/EncryptionService/encrypt(byte%5B%5D)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValueAsBytes(java.lang.Object)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.4.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.trustedanalytics:redis-encryption-lib:0.4.0",
+    "coordinatesV2": "org.trustedanalytics:redis-encryption-lib:0.4.1",
+    "caller": "|java+method:///org/trustedanalytics/redis/encryption/serializer/SecureJacksonJsonRedisSerializer/deserialize(byte%5B%5D)|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(byte%5B%5D,int,int,java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/data/redis/serializer/SerializationException/SerializationException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/trustedanalytics/redis/encryption/EncryptionService/decrypt(org.trustedanalytics.redis.encryption.SecureJson)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(byte%5B%5D,int,int,java.lang.Class)|",
+      "|java+method:///org/springframework/data/redis/serializer/JacksonJsonRedisSerializer/deserialize(byte%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/springframework/data/redis/serializer/SerializationException/SerializationException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/trustedanalytics/redis/encryption/EncryptionService/decrypt(org.trustedanalytics.redis.encryption.SecureJson)|",
+      "|java+method:///org/springframework/data/redis/serializer/Jackson2JsonRedisSerializer/deserialize(byte%5B%5D)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(byte%5B%5D,int,int,java.lang.Class)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.4.3",
+    "change": "ADDED"
+  }
+]

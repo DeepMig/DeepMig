@@ -1,0 +1,1117 @@
+[
+  {
+    "coordinatesV1": "com.helger:ph-oton-exchange:6.2.0",
+    "coordinatesV2": "com.helger:ph-oton-exchange:7.0.0",
+    "caller": "|java+constructor:///com/helger/photon/exchange/bulkexport/format/ExporterXML/ExporterXML()|",
+    "called": "|java+constructor:///com/helger/xml/serialize/write/XMLWriterSettings/XMLWriterSettings()|",
+    "v1Body": [
+      "|java+constructor:///com/helger/commons/xml/serialize/write/XMLWriterSettings/XMLWriterSettings()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/helger/xml/serialize/write/XMLWriterSettings/XMLWriterSettings()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.helger:ph-xml:8.5.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.helger:ph-oton-exchange:6.2.0",
+    "coordinatesV2": "com.helger:ph-oton-exchange:7.0.0",
+    "caller": "|java+method:///com/helger/photon/exchange/bulkexport/format/ExporterXML/setCharset(java.nio.charset.Charset)|",
+    "called": "|java+method:///com/helger/xml/serialize/write/XMLWriterSettings/setCharset(java.nio.charset.Charset)|",
+    "v1Body": [
+      "|java+method:///com/helger/commons/xml/serialize/write/XMLWriterSettings/setCharset(java.nio.charset.Charset)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/helger/xml/serialize/write/XMLWriterSettings/setCharset(java.nio.charset.Charset)|"
+    ],
+    "affectedLib": "com.helger:ph-xml:8.5.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.helger:ph-oton-exchange:6.2.0",
+    "coordinatesV2": "com.helger:ph-oton-exchange:7.0.0",
+    "caller": "|java+method:///com/helger/photon/exchange/bulkexport/format/ExporterXML/exportRecords(com.helger.photon.exchange.bulkexport.IExportRecordProvider,java.io.OutputStream)|",
+    "called": "|java+method:///com/helger/xml/microdom/serialize/MicroWriter/writeToStream(com.helger.xml.microdom.IMicroNode,java.io.OutputStream,com.helger.xml.serialize.write.IXMLWriterSettings)|",
+    "v1Body": [
+      "|java+method:///com/helger/commons/ValueEnforcer/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/format/ExporterXML/convertRecords(com.helger.photon.exchange.bulkexport.IExportRecordProvider)|",
+      "|java+method:///com/helger/commons/io/stream/StreamHelper/close(java.io.Closeable)|",
+      "|java+method:///com/helger/commons/microdom/serialize/MicroWriter/writeToStream(com.helger.commons.microdom.IMicroNode,java.io.OutputStream,com.helger.commons.xml.serialize.write.IXMLWriterSettings)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/helger/commons/ValueEnforcer/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/format/ExporterXML/convertRecords(com.helger.photon.exchange.bulkexport.IExportRecordProvider)|",
+      "|java+method:///com/helger/commons/io/stream/StreamHelper/close(java.lang.AutoCloseable)|",
+      "|java+method:///com/helger/xml/microdom/serialize/MicroWriter/writeToStream(com.helger.xml.microdom.IMicroNode,java.io.OutputStream,com.helger.xml.serialize.write.IXMLWriterSettings)|"
+    ],
+    "affectedLib": "com.helger:ph-xml:8.5.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.helger:ph-oton-exchange:6.2.0",
+    "coordinatesV2": "com.helger:ph-oton-exchange:7.0.0",
+    "caller": "|java+method:///com/helger/photon/exchange/bulkexport/format/ExporterXML/convertRecords(com.helger.photon.exchange.bulkexport.IExportRecordProvider)|",
+    "called": "|java+constructor:///com/helger/xml/microdom/MicroDocument/MicroDocument()|",
+    "v1Body": [
+      "|java+method:///com/helger/commons/ValueEnforcer/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordProvider/getBodyRecords()|",
+      "|java+method:///com/helger/commons/microdom/IMicroElement/getChildCount()|",
+      "|java+method:///com/helger/commons/microdom/IMicroDocument/appendElement(java.lang.String)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordProvider/getFooterRecords()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+constructor:///com/helger/commons/microdom/MicroDocument/MicroDocument()|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/format/ExporterXML/_emitRecord(com.helger.commons.microdom.IMicroElement,com.helger.photon.exchange.bulkexport.IExportRecord)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordProvider/getHeaderRecords()|",
+      "|java+method:///com/helger/commons/microdom/IMicroElement/appendElement(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/helger/commons/ValueEnforcer/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordProvider/getBodyRecords()|",
+      "|java+method:///com/helger/xml/microdom/IMicroElement/appendElement(java.lang.String)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordProvider/getFooterRecords()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///com/helger/xml/microdom/MicroDocument/MicroDocument()|",
+      "|java+method:///com/helger/xml/microdom/IMicroElement/getChildCount()|",
+      "|java+method:///com/helger/xml/microdom/IMicroDocument/appendElement(java.lang.String)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordProvider/getHeaderRecords()|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/format/ExporterXML/_emitRecord(com.helger.xml.microdom.IMicroElement,com.helger.photon.exchange.bulkexport.IExportRecord)|",
+      "|java+method:///java/lang/Iterable/iterator()|"
+    ],
+    "affectedLib": "com.helger:ph-xml:8.5.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.helger:ph-oton-exchange:6.2.0",
+    "coordinatesV2": "com.helger:ph-oton-exchange:7.0.0",
+    "caller": "|java+method:///com/helger/photon/exchange/bulkexport/format/ExporterExcel/exportRecords(com.helger.photon.exchange.bulkexport.IExportRecordProvider,java.io.OutputStream)|",
+    "called": "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/autoSizeAllColumns()|",
+    "v1Body": [
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/createNewSheet()|",
+      "|java+method:///com/helger/commons/ValueEnforcer/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/autoSizeAllColumns()|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/getRowCount()|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordProvider/getHeaderRecords()|",
+      "|java+constructor:///com/helger/poi/excel/WorkbookCreationHelper/WorkbookCreationHelper(com.helger.poi.excel.EExcelVersion)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordProvider/getBodyRecords()|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordProvider/getFooterRecords()|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/write(java.io.OutputStream)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/format/ExporterExcel/_emitRecord(com.helger.poi.excel.WorkbookCreationHelper,com.helger.photon.exchange.bulkexport.EExportRecordType,com.helger.photon.exchange.bulkexport.IExportRecord)|",
+      "|java+method:///com/helger/commons/io/stream/StreamHelper/close(java.io.Closeable)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/createNewSheet()|",
+      "|java+method:///com/helger/commons/ValueEnforcer/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/format/ExporterExcel/_emitRecord(com.helger.poi.excel.WorkbookCreationHelper,com.helger.photon.exchange.bulkexport.EExportRecordType,com.helger.photon.exchange.bulkexport.IExportRecord)|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/autoSizeAllColumns()|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/getRowCount()|",
+      "|java+method:///com/helger/commons/io/stream/StreamHelper/close(java.lang.AutoCloseable)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordProvider/getHeaderRecords()|",
+      "|java+constructor:///com/helger/poi/excel/WorkbookCreationHelper/WorkbookCreationHelper(com.helger.poi.excel.EExcelVersion)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordProvider/getBodyRecords()|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordProvider/getFooterRecords()|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/write(java.io.OutputStream)|"
+    ],
+    "affectedLib": "com.helger:ph-poi:4.1.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.helger:ph-oton-exchange:6.2.0",
+    "coordinatesV2": "com.helger:ph-oton-exchange:7.0.0",
+    "caller": "|java+method:///com/helger/photon/exchange/bulkexport/format/ExporterExcel/_emitRecord(com.helger.poi.excel.WorkbookCreationHelper,com.helger.photon.exchange.bulkexport.EExportRecordType,com.helger.photon.exchange.bulkexport.IExportRecord)|",
+    "called": "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/addCell()|",
+    "v1Body": [
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/addCellStyle(com.helger.poi.excel.style.ExcelStyle)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/format/ExporterExcel/onAddRow(com.helger.poi.excel.WorkbookCreationHelper,com.helger.photon.exchange.bulkexport.EExportRecordType,org.apache.poi.ss.usermodel.Row,int)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/joda/time/LocalDate/toDateTime(org.joda.time.LocalTime)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordField/getFieldType()|",
+      "|java+method:///org/joda/time/LocalTime/toDateTime(org.joda.time.ReadableInstant)|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/addCell(boolean)|",
+      "|java+method:///org/joda/time/DateTime/toGregorianCalendar()|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/addCell(java.util.Calendar)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecord/getAllFields()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///com/helger/commons/type/EBaseType/ordinal()|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/format/ExporterExcel/onAddCell(com.helger.poi.excel.WorkbookCreationHelper,com.helger.photon.exchange.bulkexport.EExportRecordType,org.apache.poi.ss.usermodel.Cell,int,com.helger.commons.type.EBaseType)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/addRow()|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/addCell(java.util.Date)|",
+      "|java+method:///java/lang/Number/doubleValue()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/getCellCountInRow()|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/addCell(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/Number/intValue()|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/addCell()|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordField/getFieldValue()|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/getRowCount()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///org/joda/time/DateTime/toDate()|",
+      "|java+method:///org/joda/time/LocalDateTime/toDateTime()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/addCell(double)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/helger/commons/collection/ext/ICommonsList/iterator()|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/addCellStyle(com.helger.poi.excel.style.ExcelStyle)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/format/ExporterExcel/onAddRow(com.helger.poi.excel.WorkbookCreationHelper,com.helger.photon.exchange.bulkexport.EExportRecordType,org.apache.poi.ss.usermodel.Row,int)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/EExportDataType/ordinal()|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordField/getFieldType()|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/addCell(boolean)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/format/ExporterExcel/onAddCell(com.helger.poi.excel.WorkbookCreationHelper,com.helger.photon.exchange.bulkexport.EExportRecordType,org.apache.poi.ss.usermodel.Cell,int,com.helger.photon.exchange.bulkexport.EExportDataType)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecord/getAllFields()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/addRow()|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/addCell(java.util.Date)|",
+      "|java+method:///java/lang/Number/doubleValue()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/getCellCountInRow()|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/addCell(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/Number/intValue()|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/addCell()|",
+      "|java+method:///com/helger/commons/typeconvert/TypeConverter/convertIfNecessary(java.lang.Object,java.lang.Class)|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/addCell(java.util.Calendar)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordField/getFieldValue()|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/getRowCount()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/addCell(double)|"
+    ],
+    "affectedLib": "com.helger:ph-poi:4.1.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.helger:ph-oton-exchange:6.2.0",
+    "coordinatesV2": "com.helger:ph-oton-exchange:7.0.0",
+    "caller": "|java+method:///com/helger/photon/exchange/bulkimport/BulkImportResult/getFailedCount()|",
+    "called": "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/readLocked(java.util.function.IntSupplier)|",
+    "v1Body": [
+      "|java+method:///java/util/concurrent/locks/Lock/unlock()|",
+      "|java+method:///java/util/concurrent/locks/Lock/lock()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/readLock()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/readLocked(java.util.function.IntSupplier)|"
+    ],
+    "affectedLib": "com.helger:ph-commons:8.5.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.helger:ph-oton-exchange:6.2.0",
+    "coordinatesV2": "com.helger:ph-oton-exchange:7.0.0",
+    "caller": "|java+method:///com/helger/photon/exchange/bulkimport/BulkImportResult/addWarning(java.lang.String)|",
+    "called": "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/writeLocked(java.lang.Runnable)|",
+    "v1Body": [
+      "|java+method:///java/util/concurrent/locks/Lock/unlock()|",
+      "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/writeLock()|",
+      "|java+method:///java/util/concurrent/locks/Lock/lock()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/writeLocked(java.lang.Runnable)|"
+    ],
+    "affectedLib": "com.helger:ph-commons:8.5.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.helger:ph-oton-exchange:6.2.0",
+    "coordinatesV2": "com.helger:ph-oton-exchange:7.0.0",
+    "caller": "|java+constructor:///com/helger/photon/exchange/bulkexport/ExportRecord/ExportRecord(java.lang.Iterable)|",
+    "called": "|java+method:///com/helger/commons/ValueEnforcer/notNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///com/helger/commons/ValueEnforcer/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/ExportRecord/addField(com.helger.photon.exchange.bulkexport.IExportRecordField)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/helger/commons/ValueEnforcer/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/ExportRecord/addField(com.helger.photon.exchange.bulkexport.IExportRecordField)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+constructor:///com/helger/commons/collection/ext/CommonsArrayList/CommonsArrayList()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.helger:ph-commons:8.5.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.helger:ph-oton-exchange:6.2.0",
+    "coordinatesV2": "com.helger:ph-oton-exchange:7.0.0",
+    "caller": "|java+constructor:///com/helger/photon/exchange/bulkexport/ExportRecord/ExportRecord()|",
+    "called": "|java+constructor:///com/helger/commons/collection/ext/CommonsArrayList/CommonsArrayList()|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/helger/commons/collection/ext/CommonsArrayList/CommonsArrayList()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.helger:ph-commons:8.5.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.helger:ph-oton-exchange:6.2.0",
+    "coordinatesV2": "com.helger:ph-oton-exchange:7.0.0",
+    "caller": "|java+method:///com/helger/photon/exchange/bulkimport/BulkImportResult/getAllChanged()|",
+    "called": "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/readLocked(java.util.function.Supplier)|",
+    "v1Body": [
+      "|java+method:///java/util/concurrent/locks/Lock/unlock()|",
+      "|java+method:///com/helger/commons/collection/CollectionHelper/newList(java.util.Collection)|",
+      "|java+method:///java/util/concurrent/locks/Lock/lock()|",
+      "|java+method:///java/util/Map/values()|",
+      "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/readLock()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/readLocked(java.util.function.Supplier)|"
+    ],
+    "affectedLib": "com.helger:ph-commons:8.5.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.helger:ph-oton-exchange:6.2.0",
+    "coordinatesV2": "com.helger:ph-oton-exchange:7.0.0",
+    "caller": "|java+method:///com/helger/photon/exchange/bulkexport/format/ExporterXML/convertRecords(com.helger.photon.exchange.bulkexport.IExportRecordProvider)|",
+    "called": "|java+method:///com/helger/commons/ValueEnforcer/notNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/helger/commons/ValueEnforcer/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordProvider/getBodyRecords()|",
+      "|java+method:///com/helger/commons/microdom/IMicroElement/getChildCount()|",
+      "|java+method:///com/helger/commons/microdom/IMicroDocument/appendElement(java.lang.String)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordProvider/getFooterRecords()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+constructor:///com/helger/commons/microdom/MicroDocument/MicroDocument()|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/format/ExporterXML/_emitRecord(com.helger.commons.microdom.IMicroElement,com.helger.photon.exchange.bulkexport.IExportRecord)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordProvider/getHeaderRecords()|",
+      "|java+method:///com/helger/commons/microdom/IMicroElement/appendElement(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/helger/commons/ValueEnforcer/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordProvider/getBodyRecords()|",
+      "|java+method:///com/helger/xml/microdom/IMicroElement/appendElement(java.lang.String)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordProvider/getFooterRecords()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///com/helger/xml/microdom/MicroDocument/MicroDocument()|",
+      "|java+method:///com/helger/xml/microdom/IMicroElement/getChildCount()|",
+      "|java+method:///com/helger/xml/microdom/IMicroDocument/appendElement(java.lang.String)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordProvider/getHeaderRecords()|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/format/ExporterXML/_emitRecord(com.helger.xml.microdom.IMicroElement,com.helger.photon.exchange.bulkexport.IExportRecord)|",
+      "|java+method:///java/lang/Iterable/iterator()|"
+    ],
+    "affectedLib": "com.helger:ph-commons:8.5.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.helger:ph-oton-exchange:6.2.0",
+    "coordinatesV2": "com.helger:ph-oton-exchange:7.0.0",
+    "caller": "|java+constructor:///com/helger/photon/exchange/bulkexport/ExportRecord/ExportRecord(com.helger.photon.exchange.bulkexport.IExportRecordField%5B%5D)|",
+    "called": "|java+method:///com/helger/commons/ValueEnforcer/notNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///com/helger/commons/ValueEnforcer/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/ExportRecord/addField(com.helger.photon.exchange.bulkexport.IExportRecordField)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/helger/commons/ValueEnforcer/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/ExportRecord/addField(com.helger.photon.exchange.bulkexport.IExportRecordField)|",
+      "|java+constructor:///com/helger/commons/collection/ext/CommonsArrayList/CommonsArrayList()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.helger:ph-commons:8.5.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.helger:ph-oton-exchange:6.2.0",
+    "coordinatesV2": "com.helger:ph-oton-exchange:7.0.0",
+    "caller": "|java+method:///com/helger/photon/exchange/bulkimport/BulkImportResult/getAllFailed()|",
+    "called": "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/readLocked(java.util.function.Supplier)|",
+    "v1Body": [
+      "|java+method:///java/util/concurrent/locks/Lock/unlock()|",
+      "|java+method:///com/helger/commons/collection/CollectionHelper/newList(java.util.Collection)|",
+      "|java+method:///java/util/concurrent/locks/Lock/lock()|",
+      "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/readLock()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/readLocked(java.util.function.Supplier)|"
+    ],
+    "affectedLib": "com.helger:ph-commons:8.5.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.helger:ph-oton-exchange:6.2.0",
+    "coordinatesV2": "com.helger:ph-oton-exchange:7.0.0",
+    "caller": "|java+method:///com/helger/photon/exchange/bulkexport/ExportRecord/addField(com.helger.photon.exchange.bulkexport.IExportRecordField)|",
+    "called": "|java+method:///com/helger/commons/ValueEnforcer/notNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/helger/commons/ValueEnforcer/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/helger/commons/ValueEnforcer/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///com/helger/commons/collection/ext/ICommonsList/add(java.lang.Object)|"
+    ],
+    "affectedLib": "com.helger:ph-commons:8.5.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.helger:ph-oton-exchange:6.2.0",
+    "coordinatesV2": "com.helger:ph-oton-exchange:7.0.0",
+    "caller": "|java+method:///com/helger/photon/exchange/bulkimport/BulkImportResult/getAddedCount()|",
+    "called": "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/readLocked(java.util.function.IntSupplier)|",
+    "v1Body": [
+      "|java+method:///java/util/concurrent/locks/Lock/unlock()|",
+      "|java+method:///java/util/concurrent/locks/Lock/lock()|",
+      "|java+method:///java/util/Map/size()|",
+      "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/readLock()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/readLocked(java.util.function.IntSupplier)|"
+    ],
+    "affectedLib": "com.helger:ph-commons:8.5.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.helger:ph-oton-exchange:6.2.0",
+    "coordinatesV2": "com.helger:ph-oton-exchange:7.0.0",
+    "caller": "|java+method:///com/helger/photon/exchange/bulkimport/BulkImportResult/isSuccess()|",
+    "called": "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/readLocked(java.util.function.BooleanSupplier)|",
+    "v1Body": [
+      "|java+method:///java/util/concurrent/locks/Lock/unlock()|",
+      "|java+method:///java/util/concurrent/locks/Lock/lock()|",
+      "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/readLock()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/readLocked(java.util.function.BooleanSupplier)|"
+    ],
+    "affectedLib": "com.helger:ph-commons:8.5.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.helger:ph-oton-exchange:6.2.0",
+    "coordinatesV2": "com.helger:ph-oton-exchange:7.0.0",
+    "caller": "|java+method:///com/helger/photon/exchange/bulkimport/BulkImportResult/containsFailed(java.lang.String)|",
+    "called": "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/readLocked(java.util.function.BooleanSupplier)|",
+    "v1Body": [
+      "|java+method:///java/util/concurrent/locks/Lock/unlock()|",
+      "|java+method:///java/util/concurrent/locks/Lock/lock()|",
+      "|java+method:///java/util/List/contains(java.lang.Object)|",
+      "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/readLock()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/readLocked(java.util.function.BooleanSupplier)|"
+    ],
+    "affectedLib": "com.helger:ph-commons:8.5.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.helger:ph-oton-exchange:6.2.0",
+    "coordinatesV2": "com.helger:ph-oton-exchange:7.0.0",
+    "caller": "|java+method:///com/helger/photon/exchange/bulkimport/BulkImportResult/containsChanged(com.helger.commons.type.ITypedObject)|",
+    "called": "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/readLocked(java.util.function.BooleanSupplier)|",
+    "v1Body": [
+      "|java+method:///java/util/concurrent/locks/Lock/unlock()|",
+      "|java+method:///java/util/concurrent/locks/Lock/lock()|",
+      "|java+method:///com/helger/commons/type/ITypedObject/getID()|",
+      "|java+method:///java/util/Map/containsKey(java.lang.Object)|",
+      "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/readLock()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/readLocked(java.util.function.BooleanSupplier)|"
+    ],
+    "affectedLib": "com.helger:ph-commons:8.5.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.helger:ph-oton-exchange:6.2.0",
+    "coordinatesV2": "com.helger:ph-oton-exchange:7.0.0",
+    "caller": "|java+method:///com/helger/photon/exchange/bulkimport/BulkImportResult/registerAdded(com.helger.commons.type.ITypedObject)|",
+    "called": "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/writeLocked(java.util.function.Supplier)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/concurrent/locks/Lock/unlock()|",
+      "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/writeLock()|",
+      "|java+method:///java/util/concurrent/locks/Lock/lock()|",
+      "|java+method:///com/helger/commons/type/ITypedObject/getID()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/writeLocked(java.util.function.Supplier)|"
+    ],
+    "affectedLib": "com.helger:ph-commons:8.5.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.helger:ph-oton-exchange:6.2.0",
+    "coordinatesV2": "com.helger:ph-oton-exchange:7.0.0",
+    "caller": "|java+method:///com/helger/photon/exchange/bulkexport/ExportRecordField/equals(java.lang.Object)|",
+    "called": "|java+method:///com/helger/commons/equals/EqualsHelper/equals(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///com/helger/commons/equals/EqualsHelper/equals(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/helger/commons/type/EBaseType/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///com/helger/commons/equals/EqualsHelper/equals(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/EExportDataType/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "com.helger:ph-commons:8.5.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.helger:ph-oton-exchange:6.2.0",
+    "coordinatesV2": "com.helger:ph-oton-exchange:7.0.0",
+    "caller": "|java+method:///com/helger/photon/exchange/bulkimport/BulkImportResult/setSuccess(boolean)|",
+    "called": "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/writeLocked(java.util.function.BooleanSupplier)|",
+    "v1Body": [
+      "|java+method:///java/util/concurrent/locks/Lock/unlock()|",
+      "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/writeLock()|",
+      "|java+method:///java/util/concurrent/locks/Lock/lock()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/writeLocked(java.util.function.BooleanSupplier)|"
+    ],
+    "affectedLib": "com.helger:ph-commons:8.5.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.helger:ph-oton-exchange:6.2.0",
+    "coordinatesV2": "com.helger:ph-oton-exchange:7.0.0",
+    "caller": "|java+method:///com/helger/photon/exchange/bulkexport/format/ExporterXML/exportRecords(com.helger.photon.exchange.bulkexport.IExportRecordProvider,java.io.OutputStream)|",
+    "called": "|java+method:///com/helger/commons/ValueEnforcer/notNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/helger/commons/ValueEnforcer/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/format/ExporterXML/convertRecords(com.helger.photon.exchange.bulkexport.IExportRecordProvider)|",
+      "|java+method:///com/helger/commons/io/stream/StreamHelper/close(java.io.Closeable)|",
+      "|java+method:///com/helger/commons/microdom/serialize/MicroWriter/writeToStream(com.helger.commons.microdom.IMicroNode,java.io.OutputStream,com.helger.commons.xml.serialize.write.IXMLWriterSettings)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/helger/commons/ValueEnforcer/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/format/ExporterXML/convertRecords(com.helger.photon.exchange.bulkexport.IExportRecordProvider)|",
+      "|java+method:///com/helger/commons/io/stream/StreamHelper/close(java.lang.AutoCloseable)|",
+      "|java+method:///com/helger/xml/microdom/serialize/MicroWriter/writeToStream(com.helger.xml.microdom.IMicroNode,java.io.OutputStream,com.helger.xml.serialize.write.IXMLWriterSettings)|"
+    ],
+    "affectedLib": "com.helger:ph-commons:8.5.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.helger:ph-oton-exchange:6.2.0",
+    "coordinatesV2": "com.helger:ph-oton-exchange:7.0.0",
+    "caller": "|java+constructor:///com/helger/photon/exchange/bulkexport/ConstantExportRecordProvider/ConstantExportRecordProvider(com.helger.photon.exchange.bulkexport.IExportRecord,java.lang.Iterable,com.helger.photon.exchange.bulkexport.IExportRecord)|",
+    "called": "|java+method:///com/helger/commons/ValueEnforcer/notNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///com/helger/commons/ValueEnforcer/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///com/helger/commons/collection/CollectionHelper/newList(java.lang.Iterable)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/helger/commons/ValueEnforcer/notNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///com/helger/commons/collection/ext/CommonsArrayList/CommonsArrayList(java.lang.Iterable)|",
+      "|java+method:///com/helger/commons/collection/ext/ICommonsList/add(java.lang.Object)|",
+      "|java+constructor:///com/helger/commons/collection/ext/CommonsArrayList/CommonsArrayList()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.helger:ph-commons:8.5.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.helger:ph-oton-exchange:6.2.0",
+    "coordinatesV2": "com.helger:ph-oton-exchange:7.0.0",
+    "caller": "|java+method:///com/helger/photon/exchange/bulkimport/AbstractBulkImport/getColumnDescriptions(java.util.Locale)|",
+    "called": "|java+constructor:///com/helger/commons/collection/ext/CommonsArrayList/CommonsArrayList(int)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList(int)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/helger/photon/exchange/bulkimport/AbstractBulkImport/getColumnCount()|",
+      "|java+method:///com/helger/commons/text/display/IHasDisplayText/getDisplayText(java.util.Locale)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/helger/commons/collection/ext/ICommonsList/iterator()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///com/helger/commons/collection/ext/CommonsArrayList/CommonsArrayList(int)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/helger/commons/text/display/IHasDisplayText/getDisplayText(java.util.Locale)|",
+      "|java+method:///com/helger/commons/collection/ext/ICommonsList/add(java.lang.Object)|",
+      "|java+method:///com/helger/photon/exchange/bulkimport/AbstractBulkImport/getColumnCount()|"
+    ],
+    "affectedLib": "com.helger:ph-commons:8.5.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.helger:ph-oton-exchange:6.2.0",
+    "coordinatesV2": "com.helger:ph-oton-exchange:7.0.0",
+    "caller": "|java+method:///com/helger/photon/exchange/bulkimport/BulkImportResult/registerChanged(com.helger.commons.type.ITypedObject)|",
+    "called": "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/writeLocked(java.util.function.Supplier)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/concurrent/locks/Lock/unlock()|",
+      "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/writeLock()|",
+      "|java+method:///java/util/concurrent/locks/Lock/lock()|",
+      "|java+method:///com/helger/commons/type/ITypedObject/getID()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/writeLocked(java.util.function.Supplier)|"
+    ],
+    "affectedLib": "com.helger:ph-commons:8.5.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.helger:ph-oton-exchange:6.2.0",
+    "coordinatesV2": "com.helger:ph-oton-exchange:7.0.0",
+    "caller": "|java+method:///com/helger/photon/exchange/bulkimport/BulkImportResult/containsAdded(com.helger.commons.type.ITypedObject)|",
+    "called": "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/readLocked(java.util.function.BooleanSupplier)|",
+    "v1Body": [
+      "|java+method:///java/util/concurrent/locks/Lock/unlock()|",
+      "|java+method:///java/util/concurrent/locks/Lock/lock()|",
+      "|java+method:///com/helger/commons/type/ITypedObject/getID()|",
+      "|java+method:///java/util/Map/containsKey(java.lang.Object)|",
+      "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/readLock()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/readLocked(java.util.function.BooleanSupplier)|"
+    ],
+    "affectedLib": "com.helger:ph-commons:8.5.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.helger:ph-oton-exchange:6.2.0",
+    "coordinatesV2": "com.helger:ph-oton-exchange:7.0.0",
+    "caller": "|java+method:///com/helger/photon/exchange/bulkexport/format/ExporterCSV/exportRecords(com.helger.photon.exchange.bulkexport.IExportRecordProvider,java.io.OutputStream)|",
+    "called": "|java+method:///com/helger/commons/csv/CSVWriter/setSeparatorChar(char)|",
+    "v1Body": [
+      "|java+method:///com/helger/commons/csv/CSVWriter/setSeparatorChar(char)|",
+      "|java+method:///com/helger/commons/ValueEnforcer/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordProvider/getBodyRecords()|",
+      "|java+constructor:///com/helger/commons/csv/CSVWriter/CSVWriter(java.io.Writer)|",
+      "|java+constructor:///java/io/OutputStreamWriter/OutputStreamWriter(java.io.OutputStream,java.nio.charset.Charset)|",
+      "|java+method:///com/helger/commons/charset/EUnicodeBOM/getAllBytes()|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordProvider/getFooterRecords()|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+method:///com/helger/commons/io/stream/StreamHelper/close(java.io.Closeable)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/helger/commons/csv/CSVWriter/writeAll(java.util.List)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/format/ExporterCSV/_emitRecord(java.util.List,com.helger.photon.exchange.bulkexport.IExportRecord)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/helger/commons/csv/CSVWriter/close()|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordProvider/getHeaderRecords()|",
+      "|java+method:///java/io/OutputStream/write(byte%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/helger/commons/csv/CSVWriter/setSeparatorChar(char)|",
+      "|java+method:///com/helger/commons/csv/CSVWriter/writeAll(java.util.List)|",
+      "|java+method:///com/helger/commons/ValueEnforcer/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/helger/commons/collection/ext/ICommonsList/isEmpty()|",
+      "|java+constructor:///com/helger/commons/csv/CSVWriter/CSVWriter(java.io.Writer)|",
+      "|java+constructor:///java/io/OutputStreamWriter/OutputStreamWriter(java.io.OutputStream,java.nio.charset.Charset)|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+method:///com/helger/commons/charset/EUnicodeBOM/getAllBytes()|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordProvider/getFooterRecords()|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///com/helger/commons/collection/ext/CommonsArrayList/CommonsArrayList()|",
+      "|java+method:///com/helger/commons/csv/CSVWriter/setQuoteChar(char)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordProvider/getBodyRecords()|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/format/ExporterCSV/_emitRecord(com.helger.commons.collection.ext.ICommonsList,com.helger.photon.exchange.bulkexport.IExportRecord)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/helger/commons/csv/CSVWriter/close()|",
+      "|java+method:///com/helger/commons/csv/CSVWriter/setEscapeChar(char)|",
+      "|java+method:///com/helger/commons/io/stream/StreamHelper/close(java.lang.AutoCloseable)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordProvider/getHeaderRecords()|",
+      "|java+method:///java/io/OutputStream/write(byte%5B%5D)|"
+    ],
+    "affectedLib": "com.helger:ph-commons:8.5.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.helger:ph-oton-exchange:6.2.0",
+    "coordinatesV2": "com.helger:ph-oton-exchange:7.0.0",
+    "caller": "|java+constructor:///com/helger/photon/exchange/bulkimport/BulkImportResult/BulkImportResult(int)|",
+    "called": "|java+constructor:///com/helger/commons/concurrent/SimpleReadWriteLock/SimpleReadWriteLock()|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///com/helger/commons/concurrent/SimpleReadWriteLock/SimpleReadWriteLock()|",
+      "|java+constructor:///java/util/LinkedHashMap/LinkedHashMap()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/helger/commons/concurrent/SimpleReadWriteLock/SimpleReadWriteLock()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///com/helger/commons/collection/ext/CommonsArrayList/CommonsArrayList()|",
+      "|java+constructor:///com/helger/commons/collection/ext/CommonsLinkedHashMap/CommonsLinkedHashMap()|"
+    ],
+    "affectedLib": "com.helger:ph-commons:8.5.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.helger:ph-oton-exchange:6.2.0",
+    "coordinatesV2": "com.helger:ph-oton-exchange:7.0.0",
+    "caller": "|java+method:///com/helger/photon/exchange/bulkimport/BulkImportResult/getWarningsCount()|",
+    "called": "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/readLocked(java.util.function.IntSupplier)|",
+    "v1Body": [
+      "|java+method:///java/util/concurrent/locks/Lock/unlock()|",
+      "|java+method:///java/util/concurrent/locks/Lock/lock()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/readLock()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/readLocked(java.util.function.IntSupplier)|"
+    ],
+    "affectedLib": "com.helger:ph-commons:8.5.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.helger:ph-oton-exchange:6.2.0",
+    "coordinatesV2": "com.helger:ph-oton-exchange:7.0.0",
+    "caller": "|java+method:///com/helger/photon/exchange/bulkimport/BulkImportResult/registerFailed(java.lang.String)|",
+    "called": "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/writeLocked(java.util.function.BooleanSupplier)|",
+    "v1Body": [
+      "|java+method:///java/util/concurrent/locks/Lock/unlock()|",
+      "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/writeLock()|",
+      "|java+method:///java/util/concurrent/locks/Lock/lock()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/writeLocked(java.util.function.BooleanSupplier)|"
+    ],
+    "affectedLib": "com.helger:ph-commons:8.5.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.helger:ph-oton-exchange:6.2.0",
+    "coordinatesV2": "com.helger:ph-oton-exchange:7.0.0",
+    "caller": "|java+constructor:///com/helger/photon/exchange/bulkimport/AbstractBulkImport/AbstractBulkImport(int,java.util.List,com.helger.photon.exchange.EExchangeFileType%5B%5D)|",
+    "called": "|java+method:///com/helger/commons/ValueEnforcer/notEmptyNoNullValue(java.lang.Iterable,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/helger/commons/ValueEnforcer/notEmptyNoNullValue(java.lang.Iterable,java.lang.String)|",
+      "|java+method:///com/helger/commons/collection/CollectionHelper/newOrderedSet(java.lang.Object%5B%5D)|",
+      "|java+method:///com/helger/commons/ValueEnforcer/isGE0(int,java.lang.String)|",
+      "|java+method:///com/helger/commons/ValueEnforcer/notEmptyNoNullValue(java.lang.Object%5B%5D,java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/helger/commons/collection/ext/CommonsLinkedHashSet/CommonsLinkedHashSet(java.lang.Object%5B%5D)|",
+      "|java+method:///com/helger/commons/ValueEnforcer/notEmptyNoNullValue(java.lang.Iterable,java.lang.String)|",
+      "|java+method:///com/helger/commons/ValueEnforcer/isGE0(int,java.lang.String)|",
+      "|java+method:///com/helger/commons/ValueEnforcer/notEmptyNoNullValue(java.lang.Object%5B%5D,java.lang.String)|",
+      "|java+constructor:///com/helger/commons/collection/ext/CommonsArrayList/CommonsArrayList(java.util.Collection)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.helger:ph-commons:8.5.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.helger:ph-oton-exchange:6.2.0",
+    "coordinatesV2": "com.helger:ph-oton-exchange:7.0.0",
+    "caller": "|java+method:///com/helger/photon/exchange/bulkexport/format/ExporterExcel/_emitRecord(com.helger.poi.excel.WorkbookCreationHelper,com.helger.photon.exchange.bulkexport.EExportRecordType,com.helger.photon.exchange.bulkexport.IExportRecord)|",
+    "called": "|java+method:///com/helger/commons/typeconvert/TypeConverter/convertIfNecessary(java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/addCellStyle(com.helger.poi.excel.style.ExcelStyle)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/format/ExporterExcel/onAddRow(com.helger.poi.excel.WorkbookCreationHelper,com.helger.photon.exchange.bulkexport.EExportRecordType,org.apache.poi.ss.usermodel.Row,int)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/joda/time/LocalDate/toDateTime(org.joda.time.LocalTime)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordField/getFieldType()|",
+      "|java+method:///org/joda/time/LocalTime/toDateTime(org.joda.time.ReadableInstant)|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/addCell(boolean)|",
+      "|java+method:///org/joda/time/DateTime/toGregorianCalendar()|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/addCell(java.util.Calendar)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecord/getAllFields()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///com/helger/commons/type/EBaseType/ordinal()|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/format/ExporterExcel/onAddCell(com.helger.poi.excel.WorkbookCreationHelper,com.helger.photon.exchange.bulkexport.EExportRecordType,org.apache.poi.ss.usermodel.Cell,int,com.helger.commons.type.EBaseType)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/addRow()|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/addCell(java.util.Date)|",
+      "|java+method:///java/lang/Number/doubleValue()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/getCellCountInRow()|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/addCell(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/Number/intValue()|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/addCell()|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordField/getFieldValue()|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/getRowCount()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///org/joda/time/DateTime/toDate()|",
+      "|java+method:///org/joda/time/LocalDateTime/toDateTime()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/addCell(double)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/helger/commons/collection/ext/ICommonsList/iterator()|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/addCellStyle(com.helger.poi.excel.style.ExcelStyle)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/format/ExporterExcel/onAddRow(com.helger.poi.excel.WorkbookCreationHelper,com.helger.photon.exchange.bulkexport.EExportRecordType,org.apache.poi.ss.usermodel.Row,int)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/EExportDataType/ordinal()|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordField/getFieldType()|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/addCell(boolean)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/format/ExporterExcel/onAddCell(com.helger.poi.excel.WorkbookCreationHelper,com.helger.photon.exchange.bulkexport.EExportRecordType,org.apache.poi.ss.usermodel.Cell,int,com.helger.photon.exchange.bulkexport.EExportDataType)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecord/getAllFields()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/addRow()|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/addCell(java.util.Date)|",
+      "|java+method:///java/lang/Number/doubleValue()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/getCellCountInRow()|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/addCell(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/Number/intValue()|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/addCell()|",
+      "|java+method:///com/helger/commons/typeconvert/TypeConverter/convertIfNecessary(java.lang.Object,java.lang.Class)|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/addCell(java.util.Calendar)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordField/getFieldValue()|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/getRowCount()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/addCell(double)|"
+    ],
+    "affectedLib": "com.helger:ph-commons:8.5.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.helger:ph-oton-exchange:6.2.0",
+    "coordinatesV2": "com.helger:ph-oton-exchange:7.0.0",
+    "caller": "|java+method:///com/helger/photon/exchange/bulkimport/BulkImportResult/getAllWarnings()|",
+    "called": "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/readLocked(java.util.function.Supplier)|",
+    "v1Body": [
+      "|java+method:///java/util/concurrent/locks/Lock/unlock()|",
+      "|java+method:///com/helger/commons/collection/CollectionHelper/newList(java.util.Collection)|",
+      "|java+method:///java/util/concurrent/locks/Lock/lock()|",
+      "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/readLock()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/readLocked(java.util.function.Supplier)|"
+    ],
+    "affectedLib": "com.helger:ph-commons:8.5.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.helger:ph-oton-exchange:6.2.0",
+    "coordinatesV2": "com.helger:ph-oton-exchange:7.0.0",
+    "caller": "|java+method:///com/helger/photon/exchange/bulkimport/BulkImportResult/getChangedCount()|",
+    "called": "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/readLocked(java.util.function.IntSupplier)|",
+    "v1Body": [
+      "|java+method:///java/util/concurrent/locks/Lock/unlock()|",
+      "|java+method:///java/util/concurrent/locks/Lock/lock()|",
+      "|java+method:///java/util/Map/size()|",
+      "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/readLock()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/readLocked(java.util.function.IntSupplier)|"
+    ],
+    "affectedLib": "com.helger:ph-commons:8.5.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.helger:ph-oton-exchange:6.2.0",
+    "coordinatesV2": "com.helger:ph-oton-exchange:7.0.0",
+    "caller": "|java+method:///com/helger/photon/exchange/bulkimport/BulkImportResult/getAllAdded()|",
+    "called": "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/readLocked(java.util.function.Supplier)|",
+    "v1Body": [
+      "|java+method:///java/util/concurrent/locks/Lock/unlock()|",
+      "|java+method:///com/helger/commons/collection/CollectionHelper/newList(java.util.Collection)|",
+      "|java+method:///java/util/concurrent/locks/Lock/lock()|",
+      "|java+method:///java/util/Map/values()|",
+      "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/readLock()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/helger/commons/concurrent/SimpleReadWriteLock/readLocked(java.util.function.Supplier)|"
+    ],
+    "affectedLib": "com.helger:ph-commons:8.5.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.helger:ph-oton-exchange:6.2.0",
+    "coordinatesV2": "com.helger:ph-oton-exchange:7.0.0",
+    "caller": "|java+method:///com/helger/photon/exchange/bulkexport/format/ExporterJSON/convertRecords(com.helger.photon.exchange.bulkexport.IExportRecordProvider)|",
+    "called": "|java+method:///com/helger/commons/ValueEnforcer/notNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/helger/commons/ValueEnforcer/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///com/helger/json/JsonObject/JsonObject()|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordProvider/getBodyRecords()|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/format/ExporterJSON/_emitRecord(com.helger.photon.exchange.bulkexport.IExportRecord)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordProvider/getFooterRecords()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/helger/commons/collection/iterate/IIterableIterator/iterator()|",
+      "|java+method:///com/helger/json/JsonArray/isEmpty()|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordProvider/getHeaderRecords()|",
+      "|java+method:///com/helger/commons/collection/iterate/IterableIterator/create(java.lang.Iterable)|",
+      "|java+method:///com/helger/json/JsonArray/add(com.helger.json.IJson)|",
+      "|java+constructor:///com/helger/json/JsonArray/JsonArray()|",
+      "|java+method:///com/helger/json/IJsonObject/add(java.lang.String,com.helger.json.IJson)|",
+      "|java+method:///java/lang/Iterable/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/helger/commons/ValueEnforcer/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///com/helger/json/JsonObject/JsonObject()|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordProvider/getBodyRecords()|",
+      "|java+constructor:///com/helger/commons/collection/iterate/IterableIterator/IterableIterator(java.lang.Iterable)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/format/ExporterJSON/_emitRecord(com.helger.photon.exchange.bulkexport.IExportRecord)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordProvider/getFooterRecords()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordProvider/getHeaderRecords()|",
+      "|java+method:///com/helger/json/JsonArray/add(com.helger.json.IJson)|",
+      "|java+constructor:///com/helger/json/JsonArray/JsonArray()|",
+      "|java+method:///com/helger/json/IJsonObject/add(java.lang.String,com.helger.json.IJson)|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+method:///com/helger/json/JsonArray/isEmpty()|",
+      "|java+method:///com/helger/commons/collection/iterate/IterableIterator/iterator()|"
+    ],
+    "affectedLib": "com.helger:ph-commons:8.5.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.helger:ph-oton-exchange:6.2.0",
+    "coordinatesV2": "com.helger:ph-oton-exchange:7.0.0",
+    "caller": "|java+method:///com/helger/photon/exchange/bulkexport/format/ExporterJSON/exportRecords(com.helger.photon.exchange.bulkexport.IExportRecordProvider,java.io.OutputStream)|",
+    "called": "|java+method:///com/helger/commons/io/stream/StreamHelper/createWriter(java.io.OutputStream,java.nio.charset.Charset)|",
+    "v1Body": [
+      "|java+method:///com/helger/commons/ValueEnforcer/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/helger/commons/io/stream/StreamHelper/isKnownEOFException(java.lang.Throwable)|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+constructor:///com/helger/json/serialize/JsonWriter/JsonWriter(com.helger.json.serialize.IJsonWriterSettings)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/format/ExporterJSON/convertRecords(com.helger.photon.exchange.bulkexport.IExportRecordProvider)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/helger/json/serialize/JsonWriter/writeToWriter(com.helger.json.IJson,java.io.Writer)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/io/Writer/close()|",
+      "|java+method:///com/helger/commons/io/stream/StreamHelper/createWriter(java.io.OutputStream,java.nio.charset.Charset)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/helger/commons/io/stream/StreamHelper/close(java.io.Closeable)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/helger/commons/ValueEnforcer/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/helger/commons/io/stream/StreamHelper/isKnownEOFException(java.lang.Throwable)|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+constructor:///com/helger/json/serialize/JsonWriter/JsonWriter(com.helger.json.serialize.IJsonWriterSettings)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/format/ExporterJSON/convertRecords(com.helger.photon.exchange.bulkexport.IExportRecordProvider)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/helger/json/serialize/JsonWriter/writeToWriter(com.helger.json.IJson,java.io.Writer)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///com/helger/commons/io/stream/StreamHelper/close(java.lang.AutoCloseable)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/io/Writer/close()|",
+      "|java+method:///com/helger/commons/io/stream/StreamHelper/createWriter(java.io.OutputStream,java.nio.charset.Charset)|"
+    ],
+    "affectedLib": "com.helger:ph-commons:8.5.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.helger:ph-oton-exchange:6.2.0",
+    "coordinatesV2": "com.helger:ph-oton-exchange:7.0.0",
+    "caller": "|java+method:///com/helger/photon/exchange/bulkexport/format/ExporterExcel/exportRecords(com.helger.photon.exchange.bulkexport.IExportRecordProvider,java.io.OutputStream)|",
+    "called": "|java+method:///com/helger/commons/ValueEnforcer/notNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/createNewSheet()|",
+      "|java+method:///com/helger/commons/ValueEnforcer/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/autoSizeAllColumns()|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/getRowCount()|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordProvider/getHeaderRecords()|",
+      "|java+constructor:///com/helger/poi/excel/WorkbookCreationHelper/WorkbookCreationHelper(com.helger.poi.excel.EExcelVersion)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordProvider/getBodyRecords()|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordProvider/getFooterRecords()|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/write(java.io.OutputStream)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/format/ExporterExcel/_emitRecord(com.helger.poi.excel.WorkbookCreationHelper,com.helger.photon.exchange.bulkexport.EExportRecordType,com.helger.photon.exchange.bulkexport.IExportRecord)|",
+      "|java+method:///com/helger/commons/io/stream/StreamHelper/close(java.io.Closeable)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/createNewSheet()|",
+      "|java+method:///com/helger/commons/ValueEnforcer/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/format/ExporterExcel/_emitRecord(com.helger.poi.excel.WorkbookCreationHelper,com.helger.photon.exchange.bulkexport.EExportRecordType,com.helger.photon.exchange.bulkexport.IExportRecord)|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/autoSizeAllColumns()|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/getRowCount()|",
+      "|java+method:///com/helger/commons/io/stream/StreamHelper/close(java.lang.AutoCloseable)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordProvider/getHeaderRecords()|",
+      "|java+constructor:///com/helger/poi/excel/WorkbookCreationHelper/WorkbookCreationHelper(com.helger.poi.excel.EExcelVersion)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordProvider/getBodyRecords()|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordProvider/getFooterRecords()|",
+      "|java+method:///com/helger/poi/excel/WorkbookCreationHelper/write(java.io.OutputStream)|"
+    ],
+    "affectedLib": "com.helger:ph-commons:8.5.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.helger:ph-oton-exchange:6.2.0",
+    "coordinatesV2": "com.helger:ph-oton-exchange:7.0.0",
+    "caller": "|java+method:///com/helger/photon/exchange/bulkexport/ExportRecord/removeFieldAtIndex(int)|",
+    "called": "|java+method:///com/helger/commons/collection/ext/ICommonsList/removeAtIndex(int)|",
+    "v1Body": [
+      "|java+method:///com/helger/commons/collection/CollectionHelper/removeElementAtIndex(java.util.List,int)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/helger/commons/collection/ext/ICommonsList/removeAtIndex(int)|"
+    ],
+    "affectedLib": "com.helger:ph-commons:8.5.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.helger:ph-oton-exchange:6.2.0",
+    "coordinatesV2": "com.helger:ph-oton-exchange:7.0.0",
+    "caller": "|java+method:///com/helger/photon/exchange/bulkexport/format/ExporterJSON/exportRecords(com.helger.photon.exchange.bulkexport.IExportRecordProvider,java.io.OutputStream)|",
+    "called": "|java+method:///com/helger/json/serialize/JsonWriter/writeToWriter(com.helger.json.IJson,java.io.Writer)|",
+    "v1Body": [
+      "|java+method:///com/helger/commons/ValueEnforcer/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/helger/commons/io/stream/StreamHelper/isKnownEOFException(java.lang.Throwable)|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+constructor:///com/helger/json/serialize/JsonWriter/JsonWriter(com.helger.json.serialize.IJsonWriterSettings)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/format/ExporterJSON/convertRecords(com.helger.photon.exchange.bulkexport.IExportRecordProvider)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/helger/json/serialize/JsonWriter/writeToWriter(com.helger.json.IJson,java.io.Writer)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/io/Writer/close()|",
+      "|java+method:///com/helger/commons/io/stream/StreamHelper/createWriter(java.io.OutputStream,java.nio.charset.Charset)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/helger/commons/io/stream/StreamHelper/close(java.io.Closeable)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/helger/commons/ValueEnforcer/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/helger/commons/io/stream/StreamHelper/isKnownEOFException(java.lang.Throwable)|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+constructor:///com/helger/json/serialize/JsonWriter/JsonWriter(com.helger.json.serialize.IJsonWriterSettings)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/format/ExporterJSON/convertRecords(com.helger.photon.exchange.bulkexport.IExportRecordProvider)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/helger/json/serialize/JsonWriter/writeToWriter(com.helger.json.IJson,java.io.Writer)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///com/helger/commons/io/stream/StreamHelper/close(java.lang.AutoCloseable)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/io/Writer/close()|",
+      "|java+method:///com/helger/commons/io/stream/StreamHelper/createWriter(java.io.OutputStream,java.nio.charset.Charset)|"
+    ],
+    "affectedLib": "com.helger:ph-json:8.5.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.helger:ph-oton-exchange:6.2.0",
+    "coordinatesV2": "com.helger:ph-oton-exchange:7.0.0",
+    "caller": "|java+method:///com/helger/photon/exchange/bulkexport/format/ExporterJSON/_emitRecord(com.helger.photon.exchange.bulkexport.IExportRecord)|",
+    "called": "|java+constructor:///com/helger/json/JsonArray/JsonArray()|",
+    "v1Body": [
+      "|java+method:///com/helger/json/IJsonArray/add(com.helger.json.IJson)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///com/helger/json/JsonObject/JsonObject()|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordField/getFieldType()|",
+      "|java+constructor:///com/helger/json/JsonArray/JsonArray()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecord/getAllFields()|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordField/getFieldValue()|",
+      "|java+method:///com/helger/json/IJsonObject/add(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///com/helger/commons/type/EBaseType/getID()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordField/getFieldType()|",
+      "|java+constructor:///com/helger/json/JsonArray/JsonArray()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecord/getAllFields()|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordField/getFieldValue()|",
+      "|java+method:///com/helger/json/IJsonObject/add(java.lang.String,java.lang.Object)|",
+      "|java+method:///com/helger/json/IJsonArray/add(com.helger.json.IJson)|",
+      "|java+method:///com/helger/commons/collection/ext/ICommonsList/iterator()|",
+      "|java+constructor:///com/helger/json/JsonObject/JsonObject()|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/EExportDataType/getID()|"
+    ],
+    "affectedLib": "com.helger:ph-json:8.5.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.helger:ph-oton-exchange:6.2.0",
+    "coordinatesV2": "com.helger:ph-oton-exchange:7.0.0",
+    "caller": "|java+method:///com/helger/photon/exchange/bulkexport/format/ExporterJSON/convertRecords(com.helger.photon.exchange.bulkexport.IExportRecordProvider)|",
+    "called": "|java+method:///com/helger/json/JsonArray/isEmpty()|",
+    "v1Body": [
+      "|java+method:///com/helger/commons/ValueEnforcer/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///com/helger/json/JsonObject/JsonObject()|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordProvider/getBodyRecords()|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/format/ExporterJSON/_emitRecord(com.helger.photon.exchange.bulkexport.IExportRecord)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordProvider/getFooterRecords()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/helger/commons/collection/iterate/IIterableIterator/iterator()|",
+      "|java+method:///com/helger/json/JsonArray/isEmpty()|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordProvider/getHeaderRecords()|",
+      "|java+method:///com/helger/commons/collection/iterate/IterableIterator/create(java.lang.Iterable)|",
+      "|java+method:///com/helger/json/JsonArray/add(com.helger.json.IJson)|",
+      "|java+constructor:///com/helger/json/JsonArray/JsonArray()|",
+      "|java+method:///com/helger/json/IJsonObject/add(java.lang.String,com.helger.json.IJson)|",
+      "|java+method:///java/lang/Iterable/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/helger/commons/ValueEnforcer/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///com/helger/json/JsonObject/JsonObject()|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordProvider/getBodyRecords()|",
+      "|java+constructor:///com/helger/commons/collection/iterate/IterableIterator/IterableIterator(java.lang.Iterable)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/format/ExporterJSON/_emitRecord(com.helger.photon.exchange.bulkexport.IExportRecord)|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordProvider/getFooterRecords()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/helger/photon/exchange/bulkexport/IExportRecordProvider/getHeaderRecords()|",
+      "|java+method:///com/helger/json/JsonArray/add(com.helger.json.IJson)|",
+      "|java+constructor:///com/helger/json/JsonArray/JsonArray()|",
+      "|java+method:///com/helger/json/IJsonObject/add(java.lang.String,com.helger.json.IJson)|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+method:///com/helger/json/JsonArray/isEmpty()|",
+      "|java+method:///com/helger/commons/collection/iterate/IterableIterator/iterator()|"
+    ],
+    "affectedLib": "com.helger:ph-json:8.5.2",
+    "change": "UPDATED"
+  }
+]

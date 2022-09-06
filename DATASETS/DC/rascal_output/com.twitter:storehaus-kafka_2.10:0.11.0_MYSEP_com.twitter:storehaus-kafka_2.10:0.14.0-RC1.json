@@ -1,0 +1,54 @@
+[
+  {
+    "coordinatesV1": "com.twitter:storehaus-kafka_2.10:0.11.0",
+    "coordinatesV2": "com.twitter:storehaus-kafka_2.10:0.14.0-RC1",
+    "caller": "|java+method:///com/twitter/storehaus/kafka/KafkaStore/multiPut(scala.collection.immutable.Map)|",
+    "called": "|java+method:///com/twitter/storehaus/WritableStore$class/multiPut(com.twitter.storehaus.WritableStore,scala.collection.immutable.Map)|",
+    "v1Body": [
+      "|java+method:///scala/collection/immutable/Map/mapValues(scala.Function1)|",
+      "|java+constructor:///com/twitter/storehaus/kafka/KafkaStore$$anonfun$multiPut$1/KafkaStore$$anonfun$multiPut$1(com.twitter.storehaus.kafka.KafkaStore,com.twitter.util.Future)|",
+      "|java+constructor:///com/twitter/storehaus/kafka/KafkaStore$$anonfun$1/KafkaStore$$anonfun$1(com.twitter.storehaus.kafka.KafkaStore,scala.collection.immutable.Map)|",
+      "|java+method:///com/twitter/storehaus/kafka/KafkaStore/mutex()|",
+      "|java+method:///com/twitter/concurrent/AsyncMutex/acquire()|",
+      "|java+method:///com/twitter/util/Future/flatMap(scala.Function1)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/twitter/storehaus/WritableStore$class/multiPut(com.twitter.storehaus.WritableStore,scala.collection.immutable.Map)|"
+    ],
+    "affectedLib": "com.twitter:storehaus-core_2.10:0.14.0-RC1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.twitter:storehaus-kafka_2.10:0.11.0",
+    "coordinatesV2": "com.twitter:storehaus-kafka_2.10:0.14.0-RC1",
+    "caller": "|java+method:///com/twitter/storehaus/kafka/KafkaStore$$anonfun$close$1/apply$mcV$sp()|",
+    "called": "|java+method:///org/apache/kafka/clients/producer/KafkaProducer/close()|",
+    "v1Body": [
+      "|java+method:///kafka/producer/Producer/close()|",
+      "|java+method:///com/twitter/storehaus/kafka/KafkaStore/com$twitter$storehaus$kafka$KafkaStore$$producer()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/kafka/clients/producer/KafkaProducer/close()|",
+      "|java+method:///com/twitter/storehaus/kafka/KafkaStore/com$twitter$storehaus$kafka$KafkaStore$$jFutureToTFutureConverter()|",
+      "|java+method:///com/twitter/storehaus/kafka/KafkaStore/com$twitter$storehaus$kafka$KafkaStore$$producer()|",
+      "|java+method:///com/twitter/storehaus/kafka/JavaFutureToTwitterFutureConverter/stop()|"
+    ],
+    "affectedLib": "org.apache.kafka:kafka-clients:0.9.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.twitter:storehaus-kafka_2.10:0.11.0",
+    "coordinatesV2": "com.twitter:storehaus-kafka_2.10:0.14.0-RC1",
+    "caller": "|java+method:///com/twitter/storehaus/kafka/KafkaStore/com$twitter$storehaus$kafka$KafkaStore$$producer$lzycompute()|",
+    "called": "|java+constructor:///org/apache/kafka/clients/producer/KafkaProducer/KafkaProducer(java.util.Properties)|",
+    "v1Body": [
+      "|java+constructor:///kafka/producer/Producer/Producer(kafka.producer.ProducerConfig)|",
+      "|java+method:///com/twitter/storehaus/kafka/KafkaStore/producerConfig()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/kafka/clients/producer/KafkaProducer/KafkaProducer(java.util.Properties)|"
+    ],
+    "affectedLib": "org.apache.kafka:kafka-clients:0.9.0.1",
+    "change": "ADDED"
+  }
+]

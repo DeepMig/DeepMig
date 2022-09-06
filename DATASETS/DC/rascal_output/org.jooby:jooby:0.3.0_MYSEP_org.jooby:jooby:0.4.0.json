@@ -1,0 +1,44 @@
+[
+  {
+    "coordinatesV1": "org.jooby:jooby:0.3.0",
+    "coordinatesV2": "org.jooby:jooby:0.4.0",
+    "caller": "|java+method:///org/jooby/internal/WebSocketImpl/close(org.jooby.WebSocket$CloseStatus)|",
+    "called": "|java+method:///io/undertow/websockets/core/WebSockets/sendClose(int,java.lang.String,io.undertow.websockets.core.WebSocketChannel,io.undertow.websockets.core.WebSocketCallback)|",
+    "v1Body": [
+      "|java+method:///org/jooby/WebSocket$CloseStatus/code()|",
+      "|java+method:///org/eclipse/jetty/websocket/api/Session/close(int,java.lang.String)|",
+      "|java+method:///org/jooby/WebSocket$CloseStatus/reason()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jooby/WebSocket$CloseStatus/code()|",
+      "|java+method:///org/jooby/WebSocket$CloseStatus/reason()|",
+      "|java+constructor:///org/jooby/internal/WebSocketImpl$1/WebSocketImpl$1(org.jooby.internal.WebSocketImpl,org.jooby.WebSocket$CloseStatus)|",
+      "|java+method:///io/undertow/websockets/core/WebSockets/sendClose(int,java.lang.String,io.undertow.websockets.core.WebSocketChannel,io.undertow.websockets.core.WebSocketCallback)|"
+    ],
+    "affectedLib": "io.undertow:undertow-core:1.2.0.Beta8",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jooby:jooby:0.3.0",
+    "coordinatesV2": "org.jooby:jooby:0.4.0",
+    "caller": "|java+method:///org/jooby/internal/WebSocketImpl$3/close()|",
+    "called": "|java+method:///io/undertow/websockets/core/WebSockets/sendText(java.lang.String,io.undertow.websockets.core.WebSocketChannel,io.undertow.websockets.core.WebSocketCallback)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/jetty/websocket/api/RemoteEndpoint/sendString(java.lang.String,org.eclipse.jetty.websocket.api.WriteCallback)|",
+      "|java+method:///org/eclipse/jetty/websocket/api/RemoteEndpoint/sendBytes(java.nio.ByteBuffer,org.eclipse.jetty.websocket.api.WriteCallback)|",
+      "|java+method:///java/nio/ByteBuffer/wrap(byte%5B%5D)|",
+      "|java+method:///org/jooby/internal/WebSocketImpl$3/toString()|",
+      "|java+method:///org/jooby/internal/WebSocketImpl$3/toByteArray()|",
+      "|java+method:///org/eclipse/jetty/websocket/api/Session/getRemote()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/nio/ByteBuffer/wrap(byte%5B%5D)|",
+      "|java+method:///org/jooby/internal/WebSocketImpl$3/toString()|",
+      "|java+method:///io/undertow/websockets/core/WebSockets/sendBinary(java.nio.ByteBuffer,io.undertow.websockets.core.WebSocketChannel,io.undertow.websockets.core.WebSocketCallback)|",
+      "|java+method:///org/jooby/internal/WebSocketImpl$3/toByteArray()|",
+      "|java+method:///io/undertow/websockets/core/WebSockets/sendText(java.lang.String,io.undertow.websockets.core.WebSocketChannel,io.undertow.websockets.core.WebSocketCallback)|"
+    ],
+    "affectedLib": "io.undertow:undertow-core:1.2.0.Beta8",
+    "change": "ADDED"
+  }
+]

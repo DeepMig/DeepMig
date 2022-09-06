@@ -1,0 +1,86 @@
+[
+  {
+    "coordinatesV1": "org.glassfish.main.web:web-naming:4.0-b33",
+    "coordinatesV2": "org.glassfish.main.web:web-naming:3.1.2.2",
+    "caller": "|java+method:///org/apache/naming/Util/urlDecode(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///com/sun/grizzly/util/Charsets/lookupCharset(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/naming/Util/urlDecode(byte%5B%5D,java.lang.String)|",
+      "|java+method:///java/nio/charset/Charset/defaultCharset()|",
+      "|java+method:///java/lang/String/getBytes(java.nio.charset.Charset)|",
+      "|java+method:///com/sun/grizzly/util/Charsets/lookupCharset(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/naming/Util/urlDecode(byte%5B%5D,java.lang.String)|",
+      "|java+method:///org/glassfish/grizzly/utils/Charsets/lookupCharset(java.lang.String)|",
+      "|java+method:///java/nio/charset/Charset/defaultCharset()|",
+      "|java+method:///java/lang/String/getBytes(java.nio.charset.Charset)|"
+    ],
+    "affectedLib": "com.sun.grizzly:grizzly-utils:1.9.50",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.glassfish.main.web:web-naming:4.0-b33",
+    "coordinatesV2": "org.glassfish.main.web:web-naming:3.1.2.2",
+    "caller": "|java+method:///org/apache/naming/Util/urlDecode(byte%5B%5D,java.lang.String)|",
+    "called": "|java+method:///com/sun/grizzly/util/Charsets/lookupCharset(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Exception/printStackTrace()|",
+      "|java+method:///java/nio/charset/Charset/defaultCharset()|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D,int,int,java.nio.charset.Charset)|",
+      "|java+method:///com/sun/grizzly/util/Charsets/lookupCharset(java.lang.String)|",
+      "|java+method:///org/apache/naming/Util/convertHexDigit(byte)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/glassfish/grizzly/utils/Charsets/lookupCharset(java.lang.String)|",
+      "|java+method:///java/lang/Exception/printStackTrace()|",
+      "|java+method:///java/nio/charset/Charset/defaultCharset()|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D,int,int,java.nio.charset.Charset)|",
+      "|java+method:///org/apache/naming/Util/convertHexDigit(byte)|"
+    ],
+    "affectedLib": "com.sun.grizzly:grizzly-utils:1.9.50",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.glassfish.main.web:web-naming:3.1.2.2",
+    "coordinatesV2": "org.glassfish.main.web:web-naming:4.0-b33",
+    "caller": "|java+method:///org/apache/naming/Util/urlDecode(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/glassfish/grizzly/utils/Charsets/lookupCharset(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/naming/Util/urlDecode(byte%5B%5D,java.lang.String)|",
+      "|java+method:///java/nio/charset/Charset/defaultCharset()|",
+      "|java+method:///java/lang/String/getBytes(java.nio.charset.Charset)|",
+      "|java+method:///com/sun/grizzly/util/Charsets/lookupCharset(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/naming/Util/urlDecode(byte%5B%5D,java.lang.String)|",
+      "|java+method:///org/glassfish/grizzly/utils/Charsets/lookupCharset(java.lang.String)|",
+      "|java+method:///java/nio/charset/Charset/defaultCharset()|",
+      "|java+method:///java/lang/String/getBytes(java.nio.charset.Charset)|"
+    ],
+    "affectedLib": "org.glassfish.grizzly:grizzly-framework:2.2.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.glassfish.main.web:web-naming:3.1.2.2",
+    "coordinatesV2": "org.glassfish.main.web:web-naming:4.0-b33",
+    "caller": "|java+method:///org/apache/naming/Util/urlDecode(byte%5B%5D,java.lang.String)|",
+    "called": "|java+method:///org/glassfish/grizzly/utils/Charsets/lookupCharset(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Exception/printStackTrace()|",
+      "|java+method:///java/nio/charset/Charset/defaultCharset()|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D,int,int,java.nio.charset.Charset)|",
+      "|java+method:///com/sun/grizzly/util/Charsets/lookupCharset(java.lang.String)|",
+      "|java+method:///org/apache/naming/Util/convertHexDigit(byte)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/glassfish/grizzly/utils/Charsets/lookupCharset(java.lang.String)|",
+      "|java+method:///java/lang/Exception/printStackTrace()|",
+      "|java+method:///java/nio/charset/Charset/defaultCharset()|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D,int,int,java.nio.charset.Charset)|",
+      "|java+method:///org/apache/naming/Util/convertHexDigit(byte)|"
+    ],
+    "affectedLib": "org.glassfish.grizzly:grizzly-framework:2.2.4",
+    "change": "ADDED"
+  }
+]

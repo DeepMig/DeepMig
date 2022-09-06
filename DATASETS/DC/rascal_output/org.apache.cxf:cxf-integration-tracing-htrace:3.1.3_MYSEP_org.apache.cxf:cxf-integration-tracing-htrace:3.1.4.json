@@ -1,0 +1,431 @@
+[
+  {
+    "coordinatesV1": "org.apache.cxf:cxf-integration-tracing-htrace:3.1.4",
+    "coordinatesV2": "org.apache.cxf:cxf-integration-tracing-htrace:3.1.3",
+    "caller": "|java+method:///org/apache/cxf/tracing/htrace/HTraceTracerContext/startSpan(java.lang.String)|",
+    "called": "|java+method:///org/apache/htrace/Trace/startSpan(java.lang.String,org.apache.htrace.Sampler)|",
+    "v1Body": [
+      "|java+method:///org/apache/cxf/tracing/htrace/HTraceTracerContext/startSpan(java.lang.String)|",
+      "|java+method:///org/apache/htrace/Trace/startSpan(java.lang.String,org.apache.htrace.Sampler)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/cxf/tracing/htrace/HTraceTracerContext/startSpan(java.lang.String)|",
+      "|java+method:///org/apache/htrace/core/Tracer/newScope(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.htrace:htrace-core:3.2.0-incubating",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.cxf:cxf-integration-tracing-htrace:3.1.4",
+    "coordinatesV2": "org.apache.cxf:cxf-integration-tracing-htrace:3.1.3",
+    "caller": "|java+method:///org/apache/cxf/tracing/htrace/HTraceTracerContext/timeline(java.lang.String)|",
+    "called": "|java+method:///org/apache/htrace/Trace/addTimelineAnnotation(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/htrace/Trace/addTimelineAnnotation(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/htrace/core/Tracer/getCurrentSpan()|",
+      "|java+method:///org/apache/htrace/core/Span/addTimelineAnnotation(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.htrace:htrace-core:3.2.0-incubating",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.cxf:cxf-integration-tracing-htrace:3.1.4",
+    "coordinatesV2": "org.apache.cxf:cxf-integration-tracing-htrace:3.1.3",
+    "caller": "|java+method:///org/apache/cxf/tracing/htrace/jaxrs/HTraceClientProvider/filter(javax.ws.rs.client.ClientRequestContext,javax.ws.rs.client.ClientResponseContext)|",
+    "called": "|java+method:///org/apache/htrace/TraceScope/close()|",
+    "v1Body": [
+      "|java+method:///org/apache/htrace/TraceScope/close()|",
+      "|java+method:///javax/ws/rs/client/ClientRequestContext/getProperty(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/ws/rs/client/ClientRequestContext/getProperty(java.lang.String)|",
+      "|java+method:///org/apache/cxf/tracing/htrace/AbstractHTraceClientProvider/stopTraceSpan(org.apache.cxf.tracing.AbstractTracingProvider$TraceScopeHolder)|"
+    ],
+    "affectedLib": "org.apache.htrace:htrace-core:3.2.0-incubating",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.cxf:cxf-integration-tracing-htrace:3.1.4",
+    "coordinatesV2": "org.apache.cxf:cxf-integration-tracing-htrace:3.1.3",
+    "caller": "|java+method:///org/apache/cxf/tracing/htrace/jaxrs/HTraceClientProvider/filter(javax.ws.rs.client.ClientRequestContext)|",
+    "called": "|java+method:///org/apache/htrace/Trace/currentSpan()|",
+    "v1Body": [
+      "|java+method:///org/apache/cxf/tracing/htrace/jaxrs/HTraceClientProvider/buildSpanDescription(java.lang.String,java.lang.String)|",
+      "|java+method:///javax/ws/rs/client/ClientRequestContext/getUri()|",
+      "|java+method:///org/apache/htrace/Span/getSpanId()|",
+      "|java+method:///javax/ws/rs/client/ClientRequestContext/setProperty(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apache/htrace/Span/getTraceId()|",
+      "|java+method:///org/apache/htrace/TraceScope/getSpan()|",
+      "|java+method:///org/apache/htrace/Trace/currentSpan()|",
+      "|java+method:///org/apache/htrace/Trace/startSpan(java.lang.String,org.apache.htrace.Sampler)|",
+      "|java+method:///javax/ws/rs/client/ClientRequestContext/getHeaders()|",
+      "|java+method:///javax/ws/rs/client/ClientRequestContext/getMethod()|",
+      "|java+method:///java/net/URI/toString()|",
+      "|java+method:///org/apache/cxf/tracing/htrace/jaxrs/HTraceClientProvider/getSpanIdHeader()|",
+      "|java+method:///javax/ws/rs/core/MultivaluedMap/putSingle(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/cxf/tracing/htrace/jaxrs/HTraceClientProvider/getTraceIdHeader()|",
+      "|java+method:///java/lang/Long/toString(long)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/ws/rs/client/ClientRequestContext/getUri()|",
+      "|java+method:///java/net/URI/toString()|",
+      "|java+method:///org/apache/cxf/tracing/htrace/AbstractHTraceClientProvider/startTraceSpan(java.util.Map,java.lang.String,java.lang.String)|",
+      "|java+method:///javax/ws/rs/client/ClientRequestContext/getMethod()|",
+      "|java+method:///javax/ws/rs/client/ClientRequestContext/setProperty(java.lang.String,java.lang.Object)|",
+      "|java+method:///javax/ws/rs/client/ClientRequestContext/getStringHeaders()|"
+    ],
+    "affectedLib": "org.apache.htrace:htrace-core:3.2.0-incubating",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.cxf:cxf-integration-tracing-htrace:3.1.4",
+    "coordinatesV2": "org.apache.cxf:cxf-integration-tracing-htrace:3.1.3",
+    "caller": "|java+method:///org/apache/cxf/tracing/htrace/HTraceTracerContext/wrap(java.lang.String,org.apache.cxf.tracing.Traceable)|",
+    "called": "|java+method:///org/apache/htrace/Trace/isTracing()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/htrace/wrappers/TraceCallable/TraceCallable(org.apache.htrace.Span,java.util.concurrent.Callable,java.lang.String)|",
+      "|java+method:///org/apache/htrace/Trace/currentSpan()|",
+      "|java+method:///org/apache/htrace/Trace/isTracing()|",
+      "|java+constructor:///org/apache/cxf/tracing/htrace/HTraceTracerContext$1/HTraceTracerContext$1(org.apache.cxf.tracing.htrace.HTraceTracerContext,org.apache.cxf.tracing.Traceable)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/cxf/tracing/htrace/HTraceTracerContext$1/HTraceTracerContext$1(org.apache.cxf.tracing.htrace.HTraceTracerContext,org.apache.cxf.tracing.Traceable)|",
+      "|java+method:///org/apache/htrace/core/Tracer/wrap(java.util.concurrent.Callable,java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.htrace:htrace-core:3.2.0-incubating",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.cxf:cxf-integration-tracing-htrace:3.1.4",
+    "coordinatesV2": "org.apache.cxf:cxf-integration-tracing-htrace:3.1.3",
+    "caller": "|java+method:///org/apache/cxf/tracing/htrace/jaxrs/HTraceFeature/initialize(org.apache.cxf.endpoint.Server,org.apache.cxf.Bus)|",
+    "called": "|java+method:///org/apache/htrace/SamplerBuilder/build()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/htrace/SamplerBuilder/SamplerBuilder(org.apache.htrace.HTraceConfiguration)|",
+      "|java+method:///org/apache/htrace/SpanReceiverBuilder/build()|",
+      "|java+method:///org/apache/cxf/jaxrs/provider/ServerProviderFactory/setUserProviders(java.util.List)|",
+      "|java+method:///org/apache/htrace/SamplerBuilder/build()|",
+      "|java+method:///org/apache/cxf/endpoint/Endpoint/get(java.lang.Object)|",
+      "|java+constructor:///org/apache/cxf/tracing/htrace/jaxrs/HTraceContextProvider/HTraceContextProvider(org.apache.htrace.Sampler)|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/apache/cxf/tracing/htrace/jaxrs/HTraceProvider/HTraceProvider(org.apache.htrace.Sampler)|",
+      "|java+constructor:///org/apache/htrace/SpanReceiverBuilder/SpanReceiverBuilder(org.apache.htrace.HTraceConfiguration)|",
+      "|java+method:///org/apache/cxf/endpoint/Server/getEndpoint()|",
+      "|java+method:///org/apache/htrace/Trace/addReceiver(org.apache.htrace.SpanReceiver)|",
+      "|java+method:///java/lang/Class/getName()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/cxf/jaxrs/provider/ServerProviderFactory/setUserProviders(java.util.List)|",
+      "|java+method:///org/apache/cxf/endpoint/Endpoint/get(java.lang.Object)|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/htrace/core/Tracer$Builder/conf(org.apache.htrace.core.HTraceConfiguration)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/apache/htrace/core/Tracer$Builder/build()|",
+      "|java+constructor:///org/apache/cxf/tracing/htrace/jaxrs/HTraceContextProvider/HTraceContextProvider(org.apache.htrace.core.Tracer)|",
+      "|java+constructor:///org/apache/htrace/core/Tracer$Builder/Tracer$Builder(java.lang.String)|",
+      "|java+method:///org/apache/cxf/endpoint/Server/getEndpoint()|",
+      "|java+constructor:///org/apache/cxf/tracing/htrace/jaxrs/HTraceProvider/HTraceProvider(org.apache.htrace.core.Tracer)|"
+    ],
+    "affectedLib": "org.apache.htrace:htrace-core:3.2.0-incubating",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.cxf:cxf-integration-tracing-htrace:3.1.4",
+    "coordinatesV2": "org.apache.cxf:cxf-integration-tracing-htrace:3.1.3",
+    "caller": "|java+method:///org/apache/cxf/tracing/htrace/AbstractHTraceProvider/startTraceSpan(java.util.Map,java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/apache/htrace/Trace/startSpan(java.lang.String,org.apache.htrace.Span)|",
+    "v1Body": [
+      "|java+method:///org/apache/cxf/tracing/htrace/AbstractHTraceProvider/getTraceIdHeader()|",
+      "|java+method:///org/apache/cxf/tracing/htrace/AbstractHTraceProvider/getFirstValueOrDefault(java.util.Map,java.lang.String,long)|",
+      "|java+method:///org/apache/htrace/impl/MilliSpan$Builder/traceId(long)|",
+      "|java+method:///org/apache/cxf/tracing/htrace/AbstractHTraceProvider/buildSpanDescription(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///org/apache/cxf/tracing/htrace/AbstractHTraceProvider/propagateContinuationSpan(org.apache.htrace.Span)|",
+      "|java+method:///org/apache/htrace/TraceScope/detach()|",
+      "|java+method:///org/apache/htrace/Trace/startSpan(java.lang.String,org.apache.htrace.Span)|",
+      "|java+method:///org/apache/htrace/impl/MilliSpan$Builder/spanId(long)|",
+      "|java+constructor:///org/apache/htrace/impl/MilliSpan$Builder/MilliSpan$Builder()|",
+      "|java+method:///org/apache/htrace/Trace/startSpan(java.lang.String,org.apache.htrace.Sampler)|",
+      "|java+method:///org/apache/cxf/tracing/htrace/AbstractHTraceProvider/isAsyncResponse()|",
+      "|java+method:///org/apache/cxf/tracing/htrace/AbstractHTraceProvider/getSpanIdHeader()|",
+      "|java+method:///org/apache/htrace/impl/MilliSpan$Builder/build()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/cxf/tracing/AbstractTracingProvider$TraceScopeHolder/AbstractTracingProvider$TraceScopeHolder(java.lang.Object,boolean)|",
+      "|java+method:///org/apache/htrace/core/Tracer/newScope(java.lang.String,org.apache.htrace.core.SpanId)|",
+      "|java+method:///org/apache/cxf/tracing/htrace/AbstractHTraceProvider/buildSpanDescription(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/cxf/tracing/htrace/AbstractHTraceProvider/propagateContinuationSpan(org.apache.htrace.core.TraceScope)|",
+      "|java+method:///org/apache/cxf/tracing/htrace/AbstractHTraceProvider/getFirstValueOrDefault(java.util.Map,java.lang.String,org.apache.htrace.core.SpanId)|",
+      "|java+method:///org/apache/cxf/tracing/htrace/AbstractHTraceProvider/getSpanIdHeader()|",
+      "|java+method:///org/apache/htrace/core/Tracer/newScope(java.lang.String)|",
+      "|java+method:///org/apache/htrace/core/TraceScope/detach()|",
+      "|java+method:///org/apache/htrace/core/SpanId/equals(java.lang.Object)|",
+      "|java+method:///org/apache/cxf/tracing/htrace/AbstractHTraceProvider/isAsyncResponse()|"
+    ],
+    "affectedLib": "org.apache.htrace:htrace-core:3.2.0-incubating",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.cxf:cxf-integration-tracing-htrace:3.1.4",
+    "coordinatesV2": "org.apache.cxf:cxf-integration-tracing-htrace:3.1.3",
+    "caller": "|java+method:///org/apache/cxf/tracing/htrace/HTraceTracerContext/continueSpan(org.apache.cxf.tracing.Traceable)|",
+    "called": "|java+method:///org/apache/htrace/Trace/isTracing()|",
+    "v1Body": [
+      "|java+method:///org/apache/cxf/tracing/Traceable/call(org.apache.cxf.tracing.TracerContext)|",
+      "|java+method:///org/apache/htrace/Trace/continueSpan(org.apache.htrace.Span)|",
+      "|java+constructor:///org/apache/cxf/tracing/htrace/HTraceTracerContext/HTraceTracerContext(org.apache.htrace.Sampler)|",
+      "|java+method:///org/apache/htrace/TraceScope/close()|",
+      "|java+method:///org/apache/htrace/Trace/isTracing()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/cxf/tracing/htrace/HTraceTracerContext/HTraceTracerContext(org.apache.htrace.core.Tracer)|",
+      "|java+method:///org/apache/cxf/tracing/Traceable/call(org.apache.cxf.tracing.TracerContext)|",
+      "|java+method:///org/apache/htrace/core/TraceScope/reattach()|",
+      "|java+method:///org/apache/cxf/tracing/htrace/HTraceTracerContext/isTracing()|",
+      "|java+method:///org/apache/htrace/core/TraceScope/detach()|"
+    ],
+    "affectedLib": "org.apache.htrace:htrace-core:3.2.0-incubating",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.cxf:cxf-integration-tracing-htrace:3.1.4",
+    "coordinatesV2": "org.apache.cxf:cxf-integration-tracing-htrace:3.1.3",
+    "caller": "|java+method:///org/apache/cxf/tracing/htrace/HTraceTracerContext/annotate(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/apache/htrace/Trace/addKVAnnotation(byte%5B%5D,byte%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/htrace/Trace/addKVAnnotation(byte%5B%5D,byte%5B%5D)|",
+      "|java+method:///java/lang/String/getBytes(java.nio.charset.Charset)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/htrace/core/Span/addKVAnnotation(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/htrace/core/Tracer/getCurrentSpan()|"
+    ],
+    "affectedLib": "org.apache.htrace:htrace-core:3.2.0-incubating",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.cxf:cxf-integration-tracing-htrace:3.1.3",
+    "coordinatesV2": "org.apache.cxf:cxf-integration-tracing-htrace:3.1.4",
+    "caller": "|java+method:///org/apache/cxf/tracing/htrace/HTraceTracerContext/startSpan(java.lang.String)|",
+    "called": "|java+method:///org/apache/htrace/core/Tracer/newScope(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/cxf/tracing/htrace/HTraceTracerContext/startSpan(java.lang.String)|",
+      "|java+method:///org/apache/htrace/Trace/startSpan(java.lang.String,org.apache.htrace.Sampler)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/cxf/tracing/htrace/HTraceTracerContext/startSpan(java.lang.String)|",
+      "|java+method:///org/apache/htrace/core/Tracer/newScope(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.htrace:htrace-core4:4.0.1-incubating",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.cxf:cxf-integration-tracing-htrace:3.1.3",
+    "coordinatesV2": "org.apache.cxf:cxf-integration-tracing-htrace:3.1.4",
+    "caller": "|java+method:///org/apache/cxf/tracing/htrace/HTraceTracerContext/timeline(java.lang.String)|",
+    "called": "|java+method:///org/apache/htrace/core/Tracer/getCurrentSpan()|",
+    "v1Body": [
+      "|java+method:///org/apache/htrace/Trace/addTimelineAnnotation(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/htrace/core/Tracer/getCurrentSpan()|",
+      "|java+method:///org/apache/htrace/core/Span/addTimelineAnnotation(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.htrace:htrace-core4:4.0.1-incubating",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.cxf:cxf-integration-tracing-htrace:3.1.3",
+    "coordinatesV2": "org.apache.cxf:cxf-integration-tracing-htrace:3.1.4",
+    "caller": "|java+method:///org/apache/cxf/tracing/htrace/HTraceTracerContext/wrap(java.lang.String,org.apache.cxf.tracing.Traceable)|",
+    "called": "|java+method:///org/apache/htrace/core/Tracer/wrap(java.util.concurrent.Callable,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/htrace/wrappers/TraceCallable/TraceCallable(org.apache.htrace.Span,java.util.concurrent.Callable,java.lang.String)|",
+      "|java+method:///org/apache/htrace/Trace/currentSpan()|",
+      "|java+method:///org/apache/htrace/Trace/isTracing()|",
+      "|java+constructor:///org/apache/cxf/tracing/htrace/HTraceTracerContext$1/HTraceTracerContext$1(org.apache.cxf.tracing.htrace.HTraceTracerContext,org.apache.cxf.tracing.Traceable)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/cxf/tracing/htrace/HTraceTracerContext$1/HTraceTracerContext$1(org.apache.cxf.tracing.htrace.HTraceTracerContext,org.apache.cxf.tracing.Traceable)|",
+      "|java+method:///org/apache/htrace/core/Tracer/wrap(java.util.concurrent.Callable,java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.htrace:htrace-core4:4.0.1-incubating",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.cxf:cxf-integration-tracing-htrace:3.1.3",
+    "coordinatesV2": "org.apache.cxf:cxf-integration-tracing-htrace:3.1.4",
+    "caller": "|java+method:///org/apache/cxf/tracing/htrace/jaxrs/HTraceFeature/initialize(org.apache.cxf.endpoint.Server,org.apache.cxf.Bus)|",
+    "called": "|java+constructor:///org/apache/htrace/core/Tracer$Builder/Tracer$Builder(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/htrace/SamplerBuilder/SamplerBuilder(org.apache.htrace.HTraceConfiguration)|",
+      "|java+method:///org/apache/htrace/SpanReceiverBuilder/build()|",
+      "|java+method:///org/apache/cxf/jaxrs/provider/ServerProviderFactory/setUserProviders(java.util.List)|",
+      "|java+method:///org/apache/htrace/SamplerBuilder/build()|",
+      "|java+method:///org/apache/cxf/endpoint/Endpoint/get(java.lang.Object)|",
+      "|java+constructor:///org/apache/cxf/tracing/htrace/jaxrs/HTraceContextProvider/HTraceContextProvider(org.apache.htrace.Sampler)|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/apache/cxf/tracing/htrace/jaxrs/HTraceProvider/HTraceProvider(org.apache.htrace.Sampler)|",
+      "|java+constructor:///org/apache/htrace/SpanReceiverBuilder/SpanReceiverBuilder(org.apache.htrace.HTraceConfiguration)|",
+      "|java+method:///org/apache/cxf/endpoint/Server/getEndpoint()|",
+      "|java+method:///org/apache/htrace/Trace/addReceiver(org.apache.htrace.SpanReceiver)|",
+      "|java+method:///java/lang/Class/getName()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/cxf/jaxrs/provider/ServerProviderFactory/setUserProviders(java.util.List)|",
+      "|java+method:///org/apache/cxf/endpoint/Endpoint/get(java.lang.Object)|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/htrace/core/Tracer$Builder/conf(org.apache.htrace.core.HTraceConfiguration)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/apache/htrace/core/Tracer$Builder/build()|",
+      "|java+constructor:///org/apache/cxf/tracing/htrace/jaxrs/HTraceContextProvider/HTraceContextProvider(org.apache.htrace.core.Tracer)|",
+      "|java+constructor:///org/apache/htrace/core/Tracer$Builder/Tracer$Builder(java.lang.String)|",
+      "|java+method:///org/apache/cxf/endpoint/Server/getEndpoint()|",
+      "|java+constructor:///org/apache/cxf/tracing/htrace/jaxrs/HTraceProvider/HTraceProvider(org.apache.htrace.core.Tracer)|"
+    ],
+    "affectedLib": "org.apache.htrace:htrace-core4:4.0.1-incubating",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.cxf:cxf-integration-tracing-htrace:3.1.3",
+    "coordinatesV2": "org.apache.cxf:cxf-integration-tracing-htrace:3.1.4",
+    "caller": "|java+method:///org/apache/cxf/tracing/htrace/HTraceTracerContext/continueSpan(org.apache.cxf.tracing.Traceable)|",
+    "called": "|java+method:///org/apache/htrace/core/TraceScope/detach()|",
+    "v1Body": [
+      "|java+method:///org/apache/cxf/tracing/Traceable/call(org.apache.cxf.tracing.TracerContext)|",
+      "|java+method:///org/apache/htrace/Trace/continueSpan(org.apache.htrace.Span)|",
+      "|java+constructor:///org/apache/cxf/tracing/htrace/HTraceTracerContext/HTraceTracerContext(org.apache.htrace.Sampler)|",
+      "|java+method:///org/apache/htrace/TraceScope/close()|",
+      "|java+method:///org/apache/htrace/Trace/isTracing()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/cxf/tracing/htrace/HTraceTracerContext/HTraceTracerContext(org.apache.htrace.core.Tracer)|",
+      "|java+method:///org/apache/cxf/tracing/Traceable/call(org.apache.cxf.tracing.TracerContext)|",
+      "|java+method:///org/apache/htrace/core/TraceScope/reattach()|",
+      "|java+method:///org/apache/cxf/tracing/htrace/HTraceTracerContext/isTracing()|",
+      "|java+method:///org/apache/htrace/core/TraceScope/detach()|"
+    ],
+    "affectedLib": "org.apache.htrace:htrace-core4:4.0.1-incubating",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.cxf:cxf-integration-tracing-htrace:3.1.3",
+    "coordinatesV2": "org.apache.cxf:cxf-integration-tracing-htrace:3.1.4",
+    "caller": "|java+method:///org/apache/cxf/tracing/htrace/AbstractHTraceProvider/startTraceSpan(java.util.Map,java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/apache/htrace/core/TraceScope/detach()|",
+    "v1Body": [
+      "|java+method:///org/apache/cxf/tracing/htrace/AbstractHTraceProvider/getTraceIdHeader()|",
+      "|java+method:///org/apache/cxf/tracing/htrace/AbstractHTraceProvider/getFirstValueOrDefault(java.util.Map,java.lang.String,long)|",
+      "|java+method:///org/apache/htrace/impl/MilliSpan$Builder/traceId(long)|",
+      "|java+method:///org/apache/cxf/tracing/htrace/AbstractHTraceProvider/buildSpanDescription(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///org/apache/cxf/tracing/htrace/AbstractHTraceProvider/propagateContinuationSpan(org.apache.htrace.Span)|",
+      "|java+method:///org/apache/htrace/TraceScope/detach()|",
+      "|java+method:///org/apache/htrace/Trace/startSpan(java.lang.String,org.apache.htrace.Span)|",
+      "|java+method:///org/apache/htrace/impl/MilliSpan$Builder/spanId(long)|",
+      "|java+constructor:///org/apache/htrace/impl/MilliSpan$Builder/MilliSpan$Builder()|",
+      "|java+method:///org/apache/htrace/Trace/startSpan(java.lang.String,org.apache.htrace.Sampler)|",
+      "|java+method:///org/apache/cxf/tracing/htrace/AbstractHTraceProvider/isAsyncResponse()|",
+      "|java+method:///org/apache/cxf/tracing/htrace/AbstractHTraceProvider/getSpanIdHeader()|",
+      "|java+method:///org/apache/htrace/impl/MilliSpan$Builder/build()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/cxf/tracing/AbstractTracingProvider$TraceScopeHolder/AbstractTracingProvider$TraceScopeHolder(java.lang.Object,boolean)|",
+      "|java+method:///org/apache/htrace/core/Tracer/newScope(java.lang.String,org.apache.htrace.core.SpanId)|",
+      "|java+method:///org/apache/cxf/tracing/htrace/AbstractHTraceProvider/buildSpanDescription(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/cxf/tracing/htrace/AbstractHTraceProvider/propagateContinuationSpan(org.apache.htrace.core.TraceScope)|",
+      "|java+method:///org/apache/cxf/tracing/htrace/AbstractHTraceProvider/getFirstValueOrDefault(java.util.Map,java.lang.String,org.apache.htrace.core.SpanId)|",
+      "|java+method:///org/apache/cxf/tracing/htrace/AbstractHTraceProvider/getSpanIdHeader()|",
+      "|java+method:///org/apache/htrace/core/Tracer/newScope(java.lang.String)|",
+      "|java+method:///org/apache/htrace/core/TraceScope/detach()|",
+      "|java+method:///org/apache/htrace/core/SpanId/equals(java.lang.Object)|",
+      "|java+method:///org/apache/cxf/tracing/htrace/AbstractHTraceProvider/isAsyncResponse()|"
+    ],
+    "affectedLib": "org.apache.htrace:htrace-core4:4.0.1-incubating",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.cxf:cxf-integration-tracing-htrace:3.1.3",
+    "coordinatesV2": "org.apache.cxf:cxf-integration-tracing-htrace:3.1.4",
+    "caller": "|java+method:///org/apache/cxf/tracing/htrace/HTraceTracerContext/annotate(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/apache/htrace/core/Tracer/getCurrentSpan()|",
+    "v1Body": [
+      "|java+method:///org/apache/htrace/Trace/addKVAnnotation(byte%5B%5D,byte%5B%5D)|",
+      "|java+method:///java/lang/String/getBytes(java.nio.charset.Charset)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/htrace/core/Span/addKVAnnotation(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/htrace/core/Tracer/getCurrentSpan()|"
+    ],
+    "affectedLib": "org.apache.htrace:htrace-core4:4.0.1-incubating",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.cxf:cxf-integration-tracing-htrace:3.1.3",
+    "coordinatesV2": "org.apache.cxf:cxf-integration-tracing-htrace:3.1.4",
+    "caller": "|java+method:///org/apache/cxf/tracing/htrace/AbstractHTraceProvider/startTraceSpan(java.util.Map,java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///org/apache/cxf/tracing/AbstractTracingProvider$TraceScopeHolder/AbstractTracingProvider$TraceScopeHolder(java.lang.Object,boolean)|",
+    "v1Body": [
+      "|java+method:///org/apache/cxf/tracing/htrace/AbstractHTraceProvider/getTraceIdHeader()|",
+      "|java+method:///org/apache/cxf/tracing/htrace/AbstractHTraceProvider/getFirstValueOrDefault(java.util.Map,java.lang.String,long)|",
+      "|java+method:///org/apache/htrace/impl/MilliSpan$Builder/traceId(long)|",
+      "|java+method:///org/apache/cxf/tracing/htrace/AbstractHTraceProvider/buildSpanDescription(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///org/apache/cxf/tracing/htrace/AbstractHTraceProvider/propagateContinuationSpan(org.apache.htrace.Span)|",
+      "|java+method:///org/apache/htrace/TraceScope/detach()|",
+      "|java+method:///org/apache/htrace/Trace/startSpan(java.lang.String,org.apache.htrace.Span)|",
+      "|java+method:///org/apache/htrace/impl/MilliSpan$Builder/spanId(long)|",
+      "|java+constructor:///org/apache/htrace/impl/MilliSpan$Builder/MilliSpan$Builder()|",
+      "|java+method:///org/apache/htrace/Trace/startSpan(java.lang.String,org.apache.htrace.Sampler)|",
+      "|java+method:///org/apache/cxf/tracing/htrace/AbstractHTraceProvider/isAsyncResponse()|",
+      "|java+method:///org/apache/cxf/tracing/htrace/AbstractHTraceProvider/getSpanIdHeader()|",
+      "|java+method:///org/apache/htrace/impl/MilliSpan$Builder/build()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/cxf/tracing/AbstractTracingProvider$TraceScopeHolder/AbstractTracingProvider$TraceScopeHolder(java.lang.Object,boolean)|",
+      "|java+method:///org/apache/htrace/core/Tracer/newScope(java.lang.String,org.apache.htrace.core.SpanId)|",
+      "|java+method:///org/apache/cxf/tracing/htrace/AbstractHTraceProvider/buildSpanDescription(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/cxf/tracing/htrace/AbstractHTraceProvider/propagateContinuationSpan(org.apache.htrace.core.TraceScope)|",
+      "|java+method:///org/apache/cxf/tracing/htrace/AbstractHTraceProvider/getFirstValueOrDefault(java.util.Map,java.lang.String,org.apache.htrace.core.SpanId)|",
+      "|java+method:///org/apache/cxf/tracing/htrace/AbstractHTraceProvider/getSpanIdHeader()|",
+      "|java+method:///org/apache/htrace/core/Tracer/newScope(java.lang.String)|",
+      "|java+method:///org/apache/htrace/core/TraceScope/detach()|",
+      "|java+method:///org/apache/htrace/core/SpanId/equals(java.lang.Object)|",
+      "|java+method:///org/apache/cxf/tracing/htrace/AbstractHTraceProvider/isAsyncResponse()|"
+    ],
+    "affectedLib": "org.apache.cxf:cxf-rt-management:3.1.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.cxf:cxf-integration-tracing-htrace:3.1.3",
+    "coordinatesV2": "org.apache.cxf:cxf-integration-tracing-htrace:3.1.4",
+    "caller": "|java+method:///org/apache/cxf/tracing/htrace/HTraceStopInterceptor/handleMessage(org.apache.cxf.message.Message)|",
+    "called": "|java+method:///org/apache/cxf/message/MessageUtils/isRequestor(org.apache.cxf.message.Message)|",
+    "v1Body": [
+      "|java+method:///org/apache/cxf/tracing/htrace/AbstractHTraceInterceptor/stopTraceSpan(java.util.Map,java.util.Map,org.apache.htrace.TraceScope)|",
+      "|java+method:///org/apache/cxf/message/MessageUtils/isRequestor(org.apache.cxf.message.Message)|",
+      "|java+method:///org/apache/cxf/helpers/CastUtils/cast(java.util.Map)|",
+      "|java+method:///org/apache/cxf/message/Exchange/getInMessage()|",
+      "|java+method:///org/apache/cxf/message/Message/get(java.lang.Object)|",
+      "|java+method:///org/apache/cxf/message/Exchange/getOutMessage()|",
+      "|java+method:///org/apache/cxf/message/Exchange/get(java.lang.Object)|",
+      "|java+method:///org/apache/cxf/message/Message/getExchange()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/cxf/tracing/htrace/AbstractHTraceInterceptor/stopTraceSpan(java.util.Map,java.util.Map,org.apache.cxf.tracing.AbstractTracingProvider$TraceScopeHolder)|",
+      "|java+method:///org/apache/cxf/message/MessageUtils/isRequestor(org.apache.cxf.message.Message)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/apache/cxf/helpers/CastUtils/cast(java.util.Map)|",
+      "|java+method:///org/apache/cxf/message/Message/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/cxf/message/Exchange/getInMessage()|",
+      "|java+method:///org/apache/cxf/message/Message/get(java.lang.Object)|",
+      "|java+method:///org/apache/cxf/message/Exchange/getOutMessage()|",
+      "|java+method:///org/apache/cxf/message/Exchange/get(java.lang.Object)|",
+      "|java+method:///org/apache/cxf/message/Message/getExchange()|"
+    ],
+    "affectedLib": "org.apache.cxf:cxf-core:3.1.4",
+    "change": "UPDATED"
+  }
+]

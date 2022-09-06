@@ -1,0 +1,297 @@
+[
+  {
+    "coordinatesV1": "org.switchyard.components:switchyard-component-camel:0.4.0.OS1",
+    "coordinatesV2": "org.switchyard.components:switchyard-component-camel:0.5.0.Beta1",
+    "caller": "|java+constructor:///org/switchyard/component/camel/composer/CamelContextMapperFactory/CamelContextMapperFactory()|",
+    "called": "|java+constructor:///org/switchyard/component/common/composer/ContextMapperFactory/ContextMapperFactory()|",
+    "v1Body": [
+      "|java+constructor:///org/switchyard/composer/ContextMapperFactory/ContextMapperFactory()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/switchyard/component/common/composer/ContextMapperFactory/ContextMapperFactory()|"
+    ],
+    "affectedLib": "org.switchyard.components:switchyard-component-common-composer:0.5.0.Beta1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.switchyard.components:switchyard-component-camel:0.4.0.OS1",
+    "coordinatesV2": "org.switchyard.components:switchyard-component-camel:0.5.0.Beta1",
+    "caller": "|java+constructor:///org/switchyard/component/camel/composer/CamelContextMapper/CamelContextMapper()|",
+    "called": "|java+constructor:///org/switchyard/component/common/composer/BaseContextMapper/BaseContextMapper()|",
+    "v1Body": [
+      "|java+constructor:///org/switchyard/composer/BaseContextMapper/BaseContextMapper()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/switchyard/component/common/composer/BaseContextMapper/BaseContextMapper()|"
+    ],
+    "affectedLib": "org.switchyard.components:switchyard-component-common-composer:0.5.0.Beta1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.switchyard.components:switchyard-component-camel:0.4.0.OS1",
+    "coordinatesV2": "org.switchyard.components:switchyard-component-camel:0.5.0.Beta1",
+    "caller": "|java+constructor:///org/switchyard/component/camel/composer/CamelMessageComposer/CamelMessageComposer()|",
+    "called": "|java+constructor:///org/switchyard/component/common/composer/BaseMessageComposer/BaseMessageComposer()|",
+    "v1Body": [
+      "|java+constructor:///org/switchyard/composer/BaseMessageComposer/BaseMessageComposer()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/switchyard/component/common/composer/BaseMessageComposer/BaseMessageComposer()|"
+    ],
+    "affectedLib": "org.switchyard.components:switchyard-component-common-composer:0.5.0.Beta1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.switchyard.components:switchyard-component-camel:0.4.0.OS1",
+    "coordinatesV2": "org.switchyard.components:switchyard-component-camel:0.5.0.Beta1",
+    "caller": "|java+constructor:///org/switchyard/component/camel/composer/CamelMessageComposerFactory/CamelMessageComposerFactory()|",
+    "called": "|java+constructor:///org/switchyard/component/common/composer/MessageComposerFactory/MessageComposerFactory()|",
+    "v1Body": [
+      "|java+constructor:///org/switchyard/composer/MessageComposerFactory/MessageComposerFactory()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/switchyard/component/common/composer/MessageComposerFactory/MessageComposerFactory()|"
+    ],
+    "affectedLib": "org.switchyard.components:switchyard-component-common-composer:0.5.0.Beta1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.switchyard.components:switchyard-component-camel:0.4.0.OS1",
+    "coordinatesV2": "org.switchyard.components:switchyard-component-camel:0.5.0.Beta1",
+    "caller": "|java+method:///org/switchyard/component/camel/composer/CamelComposition/getMessageComposer()|",
+    "called": "|java+method:///org/switchyard/component/common/composer/Composition/getMessageComposer(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/switchyard/composer/Composition/getMessageComposer(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/switchyard/component/common/composer/Composition/getMessageComposer(java.lang.Class)|"
+    ],
+    "affectedLib": "org.switchyard.components:switchyard-component-common-composer:0.5.0.Beta1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.switchyard.components:switchyard-component-camel:0.4.0.OS1",
+    "coordinatesV2": "org.switchyard.components:switchyard-component-camel:0.5.0.Beta1",
+    "caller": "|java+method:///org/switchyard/component/camel/deploy/CamelActivator/getRegistry()|",
+    "called": "|java+constructor:///org/apache/camel/impl/CompositeRegistry/CompositeRegistry(java.util.List)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/ServiceLoader/iterator()|",
+      "|java+constructor:///org/apache/camel/impl/JndiRegistry/JndiRegistry()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///org/apache/camel/impl/CompositeRegistry/CompositeRegistry(java.util.List)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/ServiceLoader/load(java.lang.Class,java.lang.ClassLoader)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/Class/getClassLoader()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/switchyard/component/camel/deploy/CamelActivator/getServiceDomain()|",
+      "|java+method:///java/util/ServiceLoader/iterator()|",
+      "|java+method:///org/apache/camel/impl/SimpleRegistry/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///org/apache/camel/impl/CompositeRegistry/CompositeRegistry(java.util.List)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/ServiceLoader/load(java.lang.Class,java.lang.ClassLoader)|",
+      "|java+constructor:///org/apache/camel/impl/JndiRegistry/JndiRegistry()|",
+      "|java+constructor:///org/apache/camel/impl/SimpleRegistry/SimpleRegistry()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/Class/getClassLoader()|"
+    ],
+    "affectedLib": "org.apache.camel:camel-core:2.9.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.switchyard.components:switchyard-component-camel:0.4.0.OS1",
+    "coordinatesV2": "org.switchyard.components:switchyard-component-camel:0.5.0.Beta1",
+    "caller": "|java+constructor:///org/switchyard/component/camel/deploy/CamelComponent/CamelComponent()|",
+    "called": "|java+constructor:///org/switchyard/deploy/BaseComponent/BaseComponent()|",
+    "v1Body": [
+      "|java+method:///org/switchyard/component/camel/deploy/CamelComponent/setName(java.lang.String)|",
+      "|java+constructor:///org/switchyard/component/camel/deploy/CamelActivator/CamelActivator()|",
+      "|java+method:///org/switchyard/component/camel/deploy/CamelComponent/setActivator(org.switchyard.deploy.Activator)|",
+      "|java+constructor:///org/switchyard/deploy/BaseComponent/BaseComponent()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/switchyard/component/camel/deploy/CamelComponent/setName(java.lang.String)|",
+      "|java+constructor:///org/switchyard/deploy/BaseComponent/BaseComponent()|"
+    ],
+    "affectedLib": "org.switchyard:switchyard-deploy:0.5.0.Beta1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.switchyard.components:switchyard-component-camel:0.4.0.OS1",
+    "coordinatesV2": "org.switchyard.components:switchyard-component-camel:0.5.0.Beta1",
+    "caller": "|java+constructor:///org/switchyard/component/camel/deploy/CamelActivator/CamelActivator()|",
+    "called": "|java+constructor:///org/switchyard/deploy/BaseActivator/BaseActivator(java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+constructor:///org/switchyard/deploy/BaseActivator/BaseActivator(java.lang.String%5B%5D)|",
+      "|java+method:///org/switchyard/component/camel/deploy/CamelActivator/start()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/switchyard/deploy/BaseActivator/BaseActivator(java.lang.String%5B%5D)|"
+    ],
+    "affectedLib": "org.switchyard:switchyard-deploy:0.5.0.Beta1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.switchyard.components:switchyard-component-camel:0.4.0.OS1",
+    "coordinatesV2": "org.switchyard.components:switchyard-component-camel:0.5.0.Beta1",
+    "caller": "|java+method:///org/switchyard/component/camel/config/model/RouteScanner/scan(org.switchyard.config.model.ScannerInput)|",
+    "called": "|java+constructor:///org/switchyard/config/model/ScannerOutput/ScannerOutput()|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/switchyard/config/model/composite/ComponentModel/addService(org.switchyard.config.model.composite.ComponentServiceModel)|",
+      "|java+constructor:///org/switchyard/config/model/composite/v1/V1ComponentServiceModel/V1ComponentServiceModel()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/switchyard/config/model/composite/ComponentModel/setImplementation(org.switchyard.config.model.composite.ComponentImplementationModel)|",
+      "|java+method:///org/switchyard/config/model/composite/CompositeModel/getModelChildren()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///org/switchyard/config/model/composite/v1/V1ComponentModel/V1ComponentModel()|",
+      "|java+method:///org/switchyard/config/model/composite/ComponentServiceModel/setName(java.lang.String)|",
+      "|java+constructor:///org/switchyard/config/model/composite/v1/V1JavaComponentServiceInterfaceModel/V1JavaComponentServiceInterfaceModel()|",
+      "|java+constructor:///org/switchyard/config/model/composite/v1/V1CompositeModel/V1CompositeModel()|",
+      "|java+method:///org/switchyard/component/camel/Route/value()|",
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///org/switchyard/config/model/composite/ComponentModel/setName(java.lang.String)|",
+      "|java+constructor:///org/switchyard/config/model/switchyard/v1/V1SwitchYardModel/V1SwitchYardModel()|",
+      "|java+method:///org/switchyard/component/camel/config/model/RouteScanner/scanForRoutes(java.util.List)|",
+      "|java+method:///org/switchyard/config/model/composite/ComponentServiceModel/setInterface(org.switchyard.config.model.composite.ComponentServiceInterfaceModel)|",
+      "|java+method:///org/switchyard/config/model/ScannerOutput/setModel(org.switchyard.config.model.Model)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/lang/Class/getAnnotation(java.lang.Class)|",
+      "|java+method:///org/switchyard/config/model/ScannerInput/getURLs()|",
+      "|java+method:///org/switchyard/config/model/composite/JavaComponentServiceInterfaceModel/setInterface(java.lang.String)|",
+      "|java+constructor:///org/switchyard/component/camel/config/model/v1/V1CamelImplementationModel/V1CamelImplementationModel()|",
+      "|java+method:///org/switchyard/config/model/composite/CompositeModel/addComponent(org.switchyard.config.model.composite.ComponentModel)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/switchyard/config/model/switchyard/SwitchYardModel/setComposite(org.switchyard.config.model.composite.CompositeModel)|",
+      "|java+constructor:///org/switchyard/config/model/ScannerOutput/ScannerOutput()|",
+      "|java+method:///org/switchyard/config/model/ScannerInput/getName()|",
+      "|java+method:///org/switchyard/component/camel/config/model/CamelComponentImplementationModel/setJavaClass(java.lang.String)|",
+      "|java+method:///org/switchyard/config/model/composite/CompositeModel/setName(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/switchyard/config/model/composite/ComponentServiceModel/setInterface(org.switchyard.config.model.composite.InterfaceModel)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/switchyard/config/model/composite/InterfaceModel/setInterface(java.lang.String)|",
+      "|java+method:///org/switchyard/config/model/composite/ComponentModel/addService(org.switchyard.config.model.composite.ComponentServiceModel)|",
+      "|java+constructor:///org/switchyard/config/model/composite/v1/V1ComponentServiceModel/V1ComponentServiceModel()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/switchyard/config/model/composite/ComponentModel/setImplementation(org.switchyard.config.model.composite.ComponentImplementationModel)|",
+      "|java+method:///org/switchyard/config/model/composite/CompositeModel/getModelChildren()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///org/switchyard/config/model/composite/v1/V1InterfaceModel/V1InterfaceModel(java.lang.String)|",
+      "|java+constructor:///org/switchyard/config/model/composite/v1/V1CompositeModel/V1CompositeModel()|",
+      "|java+constructor:///org/switchyard/config/model/composite/v1/V1ComponentModel/V1ComponentModel()|",
+      "|java+method:///org/switchyard/config/model/composite/ComponentServiceModel/setName(java.lang.String)|",
+      "|java+method:///org/switchyard/component/camel/Route/value()|",
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///org/switchyard/config/model/composite/ComponentModel/setName(java.lang.String)|",
+      "|java+constructor:///org/switchyard/config/model/switchyard/v1/V1SwitchYardModel/V1SwitchYardModel()|",
+      "|java+method:///org/switchyard/component/camel/config/model/RouteScanner/scanForRoutes(java.util.List)|",
+      "|java+method:///org/switchyard/config/model/ScannerOutput/setModel(org.switchyard.config.model.Model)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/lang/Class/getAnnotation(java.lang.Class)|",
+      "|java+constructor:///org/switchyard/component/camel/config/model/v1/V1CamelImplementationModel/V1CamelImplementationModel()|",
+      "|java+method:///org/switchyard/config/model/ScannerInput/getURLs()|",
+      "|java+method:///org/switchyard/config/model/composite/CompositeModel/addComponent(org.switchyard.config.model.composite.ComponentModel)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/switchyard/config/model/switchyard/SwitchYardModel/setComposite(org.switchyard.config.model.composite.CompositeModel)|",
+      "|java+constructor:///org/switchyard/config/model/ScannerOutput/ScannerOutput()|",
+      "|java+method:///org/switchyard/config/model/ScannerInput/getName()|",
+      "|java+method:///org/switchyard/component/camel/config/model/CamelComponentImplementationModel/setJavaClass(java.lang.String)|",
+      "|java+method:///org/switchyard/config/model/composite/CompositeModel/setName(java.lang.String)|"
+    ],
+    "affectedLib": "org.switchyard:switchyard-config:0.5.0.Beta1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.switchyard.components:switchyard-component-camel:0.4.0.OS1",
+    "coordinatesV2": "org.switchyard.components:switchyard-component-camel:0.5.0.Beta1",
+    "caller": "|java+constructor:///org/switchyard/component/camel/config/model/v1/V1BaseCamelBindingModel/V1BaseCamelBindingModel(org.switchyard.config.Configuration,org.switchyard.config.model.Descriptor)|",
+    "called": "|java+constructor:///org/switchyard/config/model/composite/v1/V1BindingModel/V1BindingModel(org.switchyard.config.Configuration,org.switchyard.config.model.Descriptor)|",
+    "v1Body": [
+      "|java+constructor:///org/switchyard/config/model/composite/v1/V1BindingModel/V1BindingModel(org.switchyard.config.Configuration,org.switchyard.config.model.Descriptor)|",
+      "|java+method:///org/switchyard/component/camel/config/model/v1/V1BaseCamelBindingModel/setModelChildrenOrder(java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/switchyard/config/model/composite/v1/V1BindingModel/V1BindingModel(org.switchyard.config.Configuration,org.switchyard.config.model.Descriptor)|",
+      "|java+method:///org/switchyard/config/Configurations/emptyConfig()|",
+      "|java+method:///org/switchyard/component/camel/config/model/v1/V1BaseCamelBindingModel/setModelChildrenOrder(java.lang.String%5B%5D)|"
+    ],
+    "affectedLib": "org.switchyard:switchyard-config:0.5.0.Beta1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.switchyard.components:switchyard-component-camel:0.4.0.OS1",
+    "coordinatesV2": "org.switchyard.components:switchyard-component-camel:0.5.0.Beta1",
+    "caller": "|java+constructor:///org/switchyard/component/camel/config/model/v1/V1BaseCamelBindingModel/V1BaseCamelBindingModel(java.lang.String)|",
+    "called": "|java+method:///org/switchyard/config/Configurations/emptyConfig()|",
+    "v1Body": [
+      "|java+constructor:///org/switchyard/config/model/composite/v1/V1BindingModel/V1BindingModel(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/switchyard/config/model/composite/v1/V1BindingModel/V1BindingModel(java.lang.String,java.lang.String)|",
+      "|java+method:///org/switchyard/config/Configurations/emptyConfig()|"
+    ],
+    "affectedLib": "org.switchyard:switchyard-config:0.5.0.Beta1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.switchyard.components:switchyard-component-camel:0.4.0.OS1",
+    "coordinatesV2": "org.switchyard.components:switchyard-component-camel:0.5.0.Beta1",
+    "caller": "|java+method:///org/switchyard/component/camel/config/model/v1/V1CamelModelMarshaller/read(org.switchyard.config.Configuration)|",
+    "called": "|java+constructor:///org/switchyard/config/model/composer/v1/V1ContextMapperModel/V1ContextMapperModel(org.switchyard.config.Configuration,org.switchyard.config.model.Descriptor)|",
+    "v1Body": [
+      "|java+constructor:///org/switchyard/component/camel/config/model/file/v1/V1CamelFileBindingModel/V1CamelFileBindingModel(org.switchyard.config.Configuration,org.switchyard.config.model.Descriptor)|",
+      "|java+constructor:///org/switchyard/component/camel/config/model/timer/v1/V1CamelTimerBindingModel/V1CamelTimerBindingModel(org.switchyard.config.Configuration,org.switchyard.config.model.Descriptor)|",
+      "|java+constructor:///org/switchyard/component/camel/config/model/file/v1/V1CamelFileProducerBindingModel/V1CamelFileProducerBindingModel(org.switchyard.config.Configuration,org.switchyard.config.model.Descriptor)|",
+      "|java+constructor:///org/switchyard/component/camel/config/model/direct/v1/V1CamelDirectBindingModel/V1CamelDirectBindingModel(org.switchyard.config.Configuration,org.switchyard.config.model.Descriptor)|",
+      "|java+constructor:///org/switchyard/component/camel/config/model/mock/v1/V1CamelMockBindingModel/V1CamelMockBindingModel(org.switchyard.config.Configuration,org.switchyard.config.model.Descriptor)|",
+      "|java+constructor:///org/switchyard/component/camel/config/model/v1/V1OperationSelector/V1OperationSelector(org.switchyard.config.Configuration,org.switchyard.config.model.Descriptor)|",
+      "|java+method:///org/switchyard/component/camel/config/model/v1/V1CamelModelMarshaller/getDescriptor()|",
+      "|java+method:///java/lang/String/endsWith(java.lang.String)|",
+      "|java+constructor:///org/switchyard/component/camel/config/model/file/v1/V1CamelFileConsumerBindingModel/V1CamelFileConsumerBindingModel(org.switchyard.config.Configuration,org.switchyard.config.model.Descriptor)|",
+      "|java+method:///org/switchyard/config/Configuration/getName()|",
+      "|java+constructor:///org/switchyard/component/camel/config/model/atom/v1/V1AtomBindingModel/V1AtomBindingModel(org.switchyard.config.Configuration,org.switchyard.config.model.Descriptor)|",
+      "|java+constructor:///org/switchyard/component/camel/config/model/seda/v1/V1CamelSedaBindingModel/V1CamelSedaBindingModel(org.switchyard.config.Configuration,org.switchyard.config.model.Descriptor)|",
+      "|java+constructor:///org/switchyard/component/camel/config/model/v1/V1CamelBindingModel/V1CamelBindingModel(org.switchyard.config.Configuration,org.switchyard.config.model.Descriptor)|",
+      "|java+constructor:///org/switchyard/component/camel/config/model/v1/V1CamelImplementationModel/V1CamelImplementationModel(org.switchyard.config.Configuration,org.switchyard.config.model.Descriptor)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/switchyard/component/camel/config/model/quartz/v1/V1CamelQuartzBindingModel/V1CamelQuartzBindingModel(org.switchyard.config.Configuration,org.switchyard.config.model.Descriptor)|",
+      "|java+constructor:///org/switchyard/component/camel/config/model/file/v1/V1CamelFileBindingModel/V1CamelFileBindingModel(org.switchyard.config.Configuration,org.switchyard.config.model.Descriptor)|",
+      "|java+constructor:///org/switchyard/component/camel/config/model/timer/v1/V1CamelTimerBindingModel/V1CamelTimerBindingModel(org.switchyard.config.Configuration,org.switchyard.config.model.Descriptor)|",
+      "|java+constructor:///org/switchyard/component/camel/config/model/direct/v1/V1CamelDirectBindingModel/V1CamelDirectBindingModel(org.switchyard.config.Configuration,org.switchyard.config.model.Descriptor)|",
+      "|java+constructor:///org/switchyard/component/camel/config/model/mock/v1/V1CamelMockBindingModel/V1CamelMockBindingModel(org.switchyard.config.Configuration,org.switchyard.config.model.Descriptor)|",
+      "|java+constructor:///org/switchyard/component/camel/config/model/v1/V1OperationSelector/V1OperationSelector(org.switchyard.config.Configuration,org.switchyard.config.model.Descriptor)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///org/switchyard/component/camel/config/model/jms/v1/V1CamelJmsBindingModel/V1CamelJmsBindingModel(org.switchyard.config.Configuration,org.switchyard.config.model.Descriptor)|",
+      "|java+constructor:///org/switchyard/component/camel/config/model/sql/v1/V1CamelSqlBindingModel/V1CamelSqlBindingModel(org.switchyard.config.Configuration,org.switchyard.config.model.Descriptor)|",
+      "|java+method:///org/switchyard/component/camel/config/model/v1/V1CamelModelMarshaller/getDescriptor()|",
+      "|java+method:///java/lang/String/endsWith(java.lang.String)|",
+      "|java+constructor:///org/switchyard/component/camel/config/model/netty/v1/V1CamelNettyUdpBindingModel/V1CamelNettyUdpBindingModel(org.switchyard.config.Configuration,org.switchyard.config.model.Descriptor)|",
+      "|java+constructor:///org/switchyard/component/camel/config/model/netty/v1/V1CamelNettyTcpBindingModel/V1CamelNettyTcpBindingModel(org.switchyard.config.Configuration,org.switchyard.config.model.Descriptor)|",
+      "|java+constructor:///org/switchyard/component/camel/config/model/file/v1/V1CamelFileProducerBindingModel/V1CamelFileProducerBindingModel(org.switchyard.config.Configuration,org.switchyard.config.model.Descriptor)|",
+      "|java+constructor:///org/switchyard/component/camel/config/model/ftp/v1/V1CamelFtpBindingModel/V1CamelFtpBindingModel(org.switchyard.config.Configuration,org.switchyard.config.model.Descriptor)|",
+      "|java+constructor:///org/switchyard/component/camel/config/model/file/v1/V1CamelFileConsumerBindingModel/V1CamelFileConsumerBindingModel(org.switchyard.config.Configuration,org.switchyard.config.model.Descriptor)|",
+      "|java+method:///org/switchyard/config/Configuration/getName()|",
+      "|java+constructor:///org/switchyard/component/camel/config/model/sftp/v1/V1CamelSftpBindingModel/V1CamelSftpBindingModel(org.switchyard.config.Configuration,org.switchyard.config.model.Descriptor)|",
+      "|java+constructor:///org/switchyard/component/camel/config/model/seda/v1/V1CamelSedaBindingModel/V1CamelSedaBindingModel(org.switchyard.config.Configuration,org.switchyard.config.model.Descriptor)|",
+      "|java+constructor:///org/switchyard/component/camel/config/model/ftps/v1/V1CamelFtpsBindingModel/V1CamelFtpsBindingModel(org.switchyard.config.Configuration,org.switchyard.config.model.Descriptor)|",
+      "|java+constructor:///org/switchyard/component/camel/config/model/atom/v1/V1CamelAtomBindingModel/V1CamelAtomBindingModel(org.switchyard.config.Configuration,org.switchyard.config.model.Descriptor)|",
+      "|java+constructor:///org/switchyard/component/camel/config/model/v1/V1CamelBindingModel/V1CamelBindingModel(org.switchyard.config.Configuration,org.switchyard.config.model.Descriptor)|",
+      "|java+constructor:///org/switchyard/component/camel/config/model/v1/V1CamelImplementationModel/V1CamelImplementationModel(org.switchyard.config.Configuration,org.switchyard.config.model.Descriptor)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+constructor:///org/switchyard/config/model/composer/v1/V1MessageComposerModel/V1MessageComposerModel(org.switchyard.config.Configuration,org.switchyard.config.model.Descriptor)|",
+      "|java+constructor:///org/switchyard/config/model/composer/v1/V1ContextMapperModel/V1ContextMapperModel(org.switchyard.config.Configuration,org.switchyard.config.model.Descriptor)|"
+    ],
+    "affectedLib": "org.switchyard:switchyard-config:0.5.0.Beta1",
+    "change": "UPDATED"
+  }
+]

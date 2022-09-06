@@ -1,0 +1,139 @@
+[
+  {
+    "coordinatesV1": "org.sonarsource.auth.github:sonar-auth-github-plugin:1.3",
+    "coordinatesV2": "org.sonarsource.auth.github:sonar-auth-github-plugin:1.2",
+    "caller": "|java+method:///org/sonarsource/auth/github/GitHubIdentityProvider/callback(org.sonar.api.server.authentication.OAuth2IdentityProvider$CallbackContext)|",
+    "called": "|java+method:///com/google/common/base/Joiner/join(java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/github/scribejava/core/builder/ServiceBuilder/build()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getParameter(java.lang.String)|",
+      "|java+method:///org/sonarsource/auth/github/GitHubIdentityProvider/getTeams(com.github.scribejava.core.oauth.OAuthService,com.github.scribejava.core.model.Token)|",
+      "|java+method:///com/github/scribejava/core/oauth/OAuthService/getAccessToken(com.github.scribejava.core.model.Token,com.github.scribejava.core.model.Verifier)|",
+      "|java+method:///com/google/common/base/Joiner/join(java.lang.Object%5B%5D)|",
+      "|java+method:///org/sonarsource/auth/github/GsonUser/getLogin()|",
+      "|java+constructor:///com/github/scribejava/core/model/OAuthRequest/OAuthRequest(com.github.scribejava.core.model.Verb,java.lang.String,com.github.scribejava.core.oauth.OAuthService)|",
+      "|java+method:///org/sonarsource/auth/github/UserIdentityFactory/create(org.sonarsource.auth.github.GsonUser,java.util.List)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/sonar/api/server/authentication/UnauthorizedException/UnauthorizedException(java.lang.String)|",
+      "|java+method:///org/sonarsource/auth/github/GitHubSettings/organizations()|",
+      "|java+method:///org/sonarsource/auth/github/GitHubSettings/syncGroups()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/sonar/api/server/authentication/OAuth2IdentityProvider$CallbackContext/redirectToRequestedPage()|",
+      "|java+method:///org/sonarsource/auth/github/GitHubSettings/apiURL()|",
+      "|java+constructor:///com/github/scribejava/core/model/Verifier/Verifier(java.lang.String)|",
+      "|java+method:///org/sonarsource/auth/github/GitHubIdentityProvider/newScribeBuilder(org.sonar.api.server.authentication.OAuth2IdentityProvider$OAuth2Context)|",
+      "|java+method:///org/sonar/api/server/authentication/OAuth2IdentityProvider$CallbackContext/authenticate(org.sonar.api.server.authentication.UserIdentity)|",
+      "|java+method:///org/sonar/api/server/authentication/OAuth2IdentityProvider$CallbackContext/getRequest()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/sonar/api/server/authentication/OAuth2IdentityProvider$CallbackContext/verifyCsrfState()|",
+      "|java+method:///com/github/scribejava/core/oauth/OAuthService/signRequest(com.github.scribejava.core.model.Token,com.github.scribejava.core.model.AbstractRequest)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/sonarsource/auth/github/GitHubIdentityProvider/isUnauthorized(com.github.scribejava.core.model.Token,java.lang.String)|",
+      "|java+method:///org/sonarsource/auth/github/GitHubIdentityProvider/getUser(com.github.scribejava.core.oauth.OAuthService,com.github.scribejava.core.model.Token)|",
+      "|java+method:///com/google/common/base/Joiner/on(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.Throwable)|",
+      "|java+method:///org/sonarsource/auth/github/GitHubIdentityProvider/onCallback(org.sonar.api.server.authentication.OAuth2IdentityProvider$CallbackContext)|"
+    ],
+    "affectedLib": "com.google.guava:guava:17.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.sonarsource.auth.github:sonar-auth-github-plugin:1.3",
+    "coordinatesV2": "org.sonarsource.auth.github:sonar-auth-github-plugin:1.2",
+    "caller": "|java+method:///org/sonarsource/auth/github/GitHubSettings/isEnabled()|",
+    "called": "|java+method:///com/google/common/base/Strings/isNullOrEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/sonarsource/auth/github/GitHubSettings/clientId()|",
+      "|java+method:///org/sonar/api/config/Settings/getBoolean(java.lang.String)|",
+      "|java+method:///com/google/common/base/Strings/isNullOrEmpty(java.lang.String)|",
+      "|java+method:///org/sonarsource/auth/github/GitHubSettings/clientSecret()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonarsource/auth/github/GitHubSettings/clientId()|",
+      "|java+method:///org/sonar/api/config/Settings/getBoolean(java.lang.String)|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+method:///org/sonarsource/auth/github/GitHubSettings/clientSecret()|"
+    ],
+    "affectedLib": "com.google.guava:guava:17.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.sonarsource.auth.github:sonar-auth-github-plugin:1.3",
+    "coordinatesV2": "org.sonarsource.auth.github:sonar-auth-github-plugin:1.2",
+    "caller": "|java+method:///org/sonarsource/auth/github/UserIdentityFactory/generateName(org.sonarsource.auth.github.GsonUser)|",
+    "called": "|java+method:///com/google/common/base/Strings/isNullOrEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/sonarsource/auth/github/GsonUser/getName()|",
+      "|java+method:///org/sonarsource/auth/github/GsonUser/getLogin()|",
+      "|java+method:///com/google/common/base/Strings/isNullOrEmpty(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonarsource/auth/github/GsonUser/getName()|",
+      "|java+method:///org/sonarsource/auth/github/GsonUser/getLogin()|",
+      "|java+method:///java/lang/String/isEmpty()|"
+    ],
+    "affectedLib": "com.google.guava:guava:17.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.sonarsource.auth.github:sonar-auth-github-plugin:1.2",
+    "coordinatesV2": "org.sonarsource.auth.github:sonar-auth-github-plugin:1.3",
+    "caller": "|java+method:///org/sonarsource/auth/github/GitHubIdentityProvider/init(org.sonar.api.server.authentication.OAuth2IdentityProvider$InitContext)|",
+    "called": "|java+method:///com/github/scribejava/core/builder/ServiceBuilder/state(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/github/scribejava/core/builder/ServiceBuilder/build()|",
+      "|java+method:///com/github/scribejava/core/oauth/OAuthService/getAuthorizationUrl(com.github.scribejava.core.model.Token)|",
+      "|java+method:///org/sonarsource/auth/github/GitHubIdentityProvider/getScope()|",
+      "|java+method:///org/sonarsource/auth/github/GitHubIdentityProvider/newScribeBuilder(org.sonar.api.server.authentication.OAuth2IdentityProvider$OAuth2Context)|",
+      "|java+method:///com/github/scribejava/core/builder/ServiceBuilder/state(java.lang.String)|",
+      "|java+method:///org/sonar/api/server/authentication/OAuth2IdentityProvider$InitContext/generateCsrfState()|",
+      "|java+method:///org/sonar/api/server/authentication/OAuth2IdentityProvider$InitContext/redirectTo(java.lang.String)|",
+      "|java+method:///com/github/scribejava/core/builder/ServiceBuilder/scope(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/scribejava/core/builder/ServiceBuilder/build(com.github.scribejava.core.builder.api.BaseApi)|",
+      "|java+method:///com/github/scribejava/core/oauth/OAuth20Service/getAuthorizationUrl(java.util.Map)|",
+      "|java+method:///org/sonarsource/auth/github/GitHubIdentityProvider/getScope()|",
+      "|java+method:///org/sonarsource/auth/github/GitHubIdentityProvider/newScribeBuilder(org.sonar.api.server.authentication.OAuth2IdentityProvider$OAuth2Context)|",
+      "|java+method:///com/github/scribejava/core/builder/ServiceBuilder/state(java.lang.String)|",
+      "|java+method:///org/sonar/api/server/authentication/OAuth2IdentityProvider$InitContext/generateCsrfState()|",
+      "|java+method:///org/sonar/api/server/authentication/OAuth2IdentityProvider$InitContext/redirectTo(java.lang.String)|",
+      "|java+method:///com/github/scribejava/core/builder/ServiceBuilder/scope(java.lang.String)|"
+    ],
+    "affectedLib": "com.github.scribejava:scribejava-core:2.8.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sonarsource.auth.github:sonar-auth-github-plugin:1.2",
+    "coordinatesV2": "org.sonarsource.auth.github:sonar-auth-github-plugin:1.3",
+    "caller": "|java+method:///org/sonarsource/auth/github/GitHubIdentityProvider/newScribeBuilder(org.sonar.api.server.authentication.OAuth2IdentityProvider$OAuth2Context)|",
+    "called": "|java+method:///com/github/scribejava/core/builder/ServiceBuilder/apiSecret(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///org/sonarsource/auth/github/GitHubSettings/clientId()|",
+      "|java+method:///com/github/scribejava/core/builder/ServiceBuilder/provider(com.github.scribejava.core.builder.api.Api)|",
+      "|java+method:///org/sonar/api/server/authentication/OAuth2IdentityProvider$OAuth2Context/getCallbackUrl()|",
+      "|java+constructor:///com/github/scribejava/core/builder/ServiceBuilder/ServiceBuilder()|",
+      "|java+method:///org/sonarsource/auth/github/GitHubIdentityProvider/isEnabled()|",
+      "|java+method:///com/github/scribejava/core/builder/ServiceBuilder/apiSecret(java.lang.String)|",
+      "|java+method:///org/sonarsource/auth/github/GitHubSettings/clientSecret()|",
+      "|java+method:///com/github/scribejava/core/builder/ServiceBuilder/apiKey(java.lang.String)|",
+      "|java+method:///com/github/scribejava/core/builder/ServiceBuilder/callback(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///org/sonarsource/auth/github/GitHubSettings/clientId()|",
+      "|java+method:///org/sonar/api/server/authentication/OAuth2IdentityProvider$OAuth2Context/getCallbackUrl()|",
+      "|java+constructor:///com/github/scribejava/core/builder/ServiceBuilder/ServiceBuilder()|",
+      "|java+method:///org/sonarsource/auth/github/GitHubIdentityProvider/isEnabled()|",
+      "|java+method:///com/github/scribejava/core/builder/ServiceBuilder/apiSecret(java.lang.String)|",
+      "|java+method:///org/sonarsource/auth/github/GitHubSettings/clientSecret()|",
+      "|java+method:///com/github/scribejava/core/builder/ServiceBuilder/apiKey(java.lang.String)|",
+      "|java+method:///com/github/scribejava/core/builder/ServiceBuilder/callback(java.lang.String)|"
+    ],
+    "affectedLib": "com.github.scribejava:scribejava-core:2.8.1",
+    "change": "ADDED"
+  }
+]

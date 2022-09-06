@@ -1,0 +1,90 @@
+[
+  {
+    "coordinatesV1": "org.plumelib:bcel-util:1.0.0",
+    "coordinatesV2": "org.plumelib:bcel-util:1.1.1",
+    "caller": "|java+method:///org/plumelib/bcelutil/BcelUtil/typeToClassgetname(org.apache.bcel.generic.Type)|",
+    "called": "|java+method:///org/plumelib/signature/Signatures/fieldDescriptorToClassGetName(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/plumelib/bcelutil/JvmUtil/fieldDescriptorToClassGetName(java.lang.String)|",
+      "|java+method:///org/apache/bcel/generic/Type/getSignature()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/bcel/generic/Type/getSignature()|",
+      "|java+method:///org/plumelib/signature/Signatures/fieldDescriptorToClassGetName(java.lang.String)|"
+    ],
+    "affectedLib": "org.plumelib:signature-util:0.0.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.plumelib:bcel-util:1.0.0",
+    "coordinatesV2": "org.plumelib:bcel-util:1.1.1",
+    "caller": "|java+method:///org/plumelib/bcelutil/BcelUtil/checkMgen(org.apache.bcel.generic.MethodGen)|",
+    "called": "|java+method:///org/apache/bcel/generic/MethodGen/toString()|",
+    "v1Body": [
+      "|java+method:///java/lang/Throwable/printStackTrace()|",
+      "|java+method:///org/apache/bcel/generic/MethodGen/getExceptionHandlers()|",
+      "|java+method:///org/apache/bcel/generic/MethodGen/getConstantPool()|",
+      "|java+method:///org/apache/bcel/generic/MethodGen/getMethod()|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError(java.lang.Object)|",
+      "|java+method:///org/apache/bcel/generic/MethodGen/toString()|",
+      "|java+method:///org/apache/bcel/generic/MethodGen/getClassName()|",
+      "|java+method:///org/apache/bcel/generic/CodeExceptionGen/getStartPC()|",
+      "|java+constructor:///java/lang/Error/Error(java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/apache/bcel/generic/MethodGen/MethodGen(org.apache.bcel.classfile.Method,java.lang.String,org.apache.bcel.generic.ConstantPoolGen)|",
+      "|java+method:///org/apache/bcel/generic/InstructionList/getStart()|",
+      "|java+method:///org/apache/bcel/generic/InstructionList/contains(org.apache.bcel.generic.InstructionHandle)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/bcel/generic/MethodGen/getName()|",
+      "|java+method:///org/apache/bcel/generic/MethodGen/getInstructionList()|",
+      "|java+method:///java/io/PrintStream/printf(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/bcel/generic/MethodGen/getLineNumberTable(org.apache.bcel.generic.ConstantPoolGen)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/bcel/generic/MethodGen/getExceptionHandlers()|",
+      "|java+method:///org/apache/bcel/generic/MethodGen/getConstantPool()|",
+      "|java+method:///org/apache/bcel/generic/MethodGen/getMethod()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/bcel/generic/MethodGen/toString()|",
+      "|java+method:///org/apache/bcel/generic/MethodGen/getClassName()|",
+      "|java+method:///org/apache/bcel/generic/CodeExceptionGen/getStartPC()|",
+      "|java+method:///org/apache/bcel/generic/MethodGen/getInstructionList()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/apache/bcel/generic/MethodGen/MethodGen(org.apache.bcel.classfile.Method,java.lang.String,org.apache.bcel.generic.ConstantPoolGen)|",
+      "|java+constructor:///java/lang/Error/Error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError(java.lang.Object)|",
+      "|java+method:///java/lang/Error/printStackTrace()|",
+      "|java+method:///org/apache/bcel/generic/InstructionList/getStart()|",
+      "|java+method:///org/apache/bcel/generic/InstructionList/contains(org.apache.bcel.generic.InstructionHandle)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/bcel/generic/MethodGen/getName()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/bcel/generic/MethodGen/getLineNumberTable(org.apache.bcel.generic.ConstantPoolGen)|"
+    ],
+    "affectedLib": "org.checkerframework.annotatedlib:bcel:6.2.0.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.plumelib:bcel-util:1.0.0",
+    "coordinatesV2": "org.plumelib:bcel-util:1.1.1",
+    "caller": "|java+method:///org/plumelib/bcelutil/BcelUtil/classnameToType(java.lang.String)|",
+    "called": "|java+constructor:///org/apache/bcel/generic/ObjectType/ObjectType(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/bcel/generic/ObjectType/ObjectType(java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+constructor:///org/apache/bcel/generic/ArrayType/ArrayType(org.apache.bcel.generic.Type,int)|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+method:///java/lang/String/intern()|",
+      "|java+method:///java/lang/String/endsWith(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/bcel/generic/ObjectType/ObjectType(java.lang.String)|",
+      "|java+method:///java/lang/String/intern()|"
+    ],
+    "affectedLib": "org.checkerframework.annotatedlib:bcel:6.2.0.2",
+    "change": "UPDATED"
+  }
+]

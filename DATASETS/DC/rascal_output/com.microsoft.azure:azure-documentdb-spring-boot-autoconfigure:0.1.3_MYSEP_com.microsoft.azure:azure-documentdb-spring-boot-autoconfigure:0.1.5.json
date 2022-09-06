@@ -1,0 +1,54 @@
+[
+  {
+    "coordinatesV1": "com.microsoft.azure:azure-documentdb-spring-boot-autoconfigure:0.1.3",
+    "coordinatesV2": "com.microsoft.azure:azure-documentdb-spring-boot-autoconfigure:0.1.5",
+    "caller": "|java+method:///com/microsoft/azure/autoconfigure/documentdb/DocumentDBAutoConfiguration/createDocumentClient()|",
+    "called": "|java+method:///com/microsoft/azure/spring/common/GetHashMac/getHashMac()|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///com/microsoft/azure/autoconfigure/documentdb/DocumentDBProperties/getUri()|",
+      "|java+constructor:///com/microsoft/azure/documentdb/DocumentClient/DocumentClient(java.lang.String,java.lang.String,com.microsoft.azure.documentdb.ConnectionPolicy,com.microsoft.azure.documentdb.ConsistencyLevel)|",
+      "|java+method:///com/microsoft/azure/autoconfigure/documentdb/DocumentDBProperties/getConsistencyLevel()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+method:///com/microsoft/azure/autoconfigure/documentdb/DocumentDBProperties/getKey()|",
+      "|java+method:///com/microsoft/azure/documentdb/ConnectionPolicy/GetDefault()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///com/microsoft/azure/autoconfigure/documentdb/DocumentDBProperties/getUri()|",
+      "|java+method:///com/microsoft/azure/documentdb/ConnectionPolicy/getUserAgentSuffix()|",
+      "|java+constructor:///com/microsoft/azure/documentdb/DocumentClient/DocumentClient(java.lang.String,java.lang.String,com.microsoft.azure.documentdb.ConnectionPolicy,com.microsoft.azure.documentdb.ConsistencyLevel)|",
+      "|java+method:///com/microsoft/azure/autoconfigure/documentdb/DocumentDBProperties/getConsistencyLevel()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/microsoft/azure/documentdb/ConnectionPolicy/setUserAgentSuffix(java.lang.String)|",
+      "|java+method:///com/microsoft/azure/autoconfigure/documentdb/DocumentDBProperties/getKey()|",
+      "|java+method:///com/microsoft/azure/spring/common/GetHashMac/getHashMac()|",
+      "|java+method:///com/microsoft/azure/documentdb/ConnectionPolicy/GetDefault()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/microsoft/azure/autoconfigure/documentdb/DocumentDBProperties/isAllowTelemetry()|"
+    ],
+    "affectedLib": "com.microsoft.azure:azure-spring-common:0.1.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.microsoft.azure:azure-documentdb-spring-boot-autoconfigure:0.1.3",
+    "coordinatesV2": "com.microsoft.azure:azure-documentdb-spring-boot-autoconfigure:0.1.5",
+    "caller": "|java+method:///com/microsoft/azure/autoconfigure/documentdb/DocumentDBAutoConfiguration/documentDbTemplate()|",
+    "called": "|java+constructor:///com/microsoft/azure/spring/data/documentdb/core/DocumentDbTemplate/DocumentDbTemplate(com.microsoft.azure.spring.data.documentdb.DocumentDbFactory,com.microsoft.azure.spring.data.documentdb.core.convert.MappingDocumentDbConverter,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/microsoft/azure/autoconfigure/documentdb/DocumentDBProperties/getDatabase()|",
+      "|java+constructor:///com/microsoft/azure/spring/data/documentdb/core/convert/DocumentDbConverter/DocumentDbConverter()|",
+      "|java+method:///com/microsoft/azure/autoconfigure/documentdb/DocumentDBAutoConfiguration/documentDbFactory()|",
+      "|java+constructor:///com/microsoft/azure/spring/data/documentdb/core/DocumentDbTemplate/DocumentDbTemplate(com.microsoft.azure.spring.data.documentdb.DocumentDbFactory,com.microsoft.azure.spring.data.documentdb.core.convert.DocumentDbConverter,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/microsoft/azure/autoconfigure/documentdb/DocumentDBAutoConfiguration/mappingDocumentDbConverter()|",
+      "|java+constructor:///com/microsoft/azure/spring/data/documentdb/core/DocumentDbTemplate/DocumentDbTemplate(com.microsoft.azure.spring.data.documentdb.DocumentDbFactory,com.microsoft.azure.spring.data.documentdb.core.convert.MappingDocumentDbConverter,java.lang.String)|",
+      "|java+method:///com/microsoft/azure/autoconfigure/documentdb/DocumentDBProperties/getDatabase()|",
+      "|java+method:///com/microsoft/azure/autoconfigure/documentdb/DocumentDBAutoConfiguration/documentDbFactory()|"
+    ],
+    "affectedLib": "com.microsoft.azure:spring-data-azure-documentdb:0.1.5",
+    "change": "UPDATED"
+  }
+]

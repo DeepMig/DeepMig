@@ -1,0 +1,69 @@
+[
+  {
+    "coordinatesV1": "org.litote.kmongo:kmongo-id-jackson:3.5.1",
+    "coordinatesV2": "org.litote.kmongo:kmongo-id-jackson:3.6.0",
+    "caller": "|java+constructor:///org/litote/kmongo/id/jackson/IdJacksonModule/IdJacksonModule(org.litote.kmongo.id.IdGenerator)|",
+    "called": "|java+constructor:///com/fasterxml/jackson/databind/module/SimpleModule/SimpleModule()|",
+    "v1Body": [
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///com/fasterxml/jackson/databind/module/SimpleModule/SimpleModule()|",
+      "|java+method:///org/litote/kmongo/id/jackson/IdJacksonModule/addDeserializer(java.lang.Class,com.fasterxml.jackson.databind.JsonDeserializer)|",
+      "|java+method:///org/litote/kmongo/id/jackson/IdJacksonModule/addSerializer(java.lang.Class,com.fasterxml.jackson.databind.JsonSerializer)|",
+      "|java+constructor:///org/litote/kmongo/id/jackson/StringToIdDeserializer/StringToIdDeserializer(org.litote.kmongo.id.jackson.IdJacksonModule)|",
+      "|java+constructor:///org/litote/kmongo/id/jackson/IdToStringSerializer/IdToStringSerializer()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/litote/kmongo/id/jackson/IdJacksonModule/addKeyDeserializer(java.lang.Class,com.fasterxml.jackson.databind.KeyDeserializer)|",
+      "|java+constructor:///org/litote/kmongo/id/jackson/IdToStringSerializer/IdToStringSerializer()|",
+      "|java+method:///org/litote/kmongo/id/jackson/IdJacksonModule/addDeserializer(java.lang.Class,com.fasterxml.jackson.databind.JsonDeserializer)|",
+      "|java+method:///org/litote/kmongo/id/jackson/IdJacksonModule/addSerializer(java.lang.Class,com.fasterxml.jackson.databind.JsonSerializer)|",
+      "|java+constructor:///org/litote/kmongo/id/jackson/StringToIdDeserializer/StringToIdDeserializer(org.litote.kmongo.id.IdGenerator)|",
+      "|java+constructor:///com/fasterxml/jackson/databind/module/SimpleModule/SimpleModule()|",
+      "|java+constructor:///org/litote/kmongo/id/jackson/IdKeyDeserializer/IdKeyDeserializer(org.litote.kmongo.id.IdGenerator)|",
+      "|java+constructor:///org/litote/kmongo/id/jackson/IdKeySerializer/IdKeySerializer()|",
+      "|java+method:///org/litote/kmongo/id/jackson/IdJacksonModule/addKeySerializer(java.lang.Class,com.fasterxml.jackson.databind.JsonSerializer)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.9.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.litote.kmongo:kmongo-id-jackson:3.5.1",
+    "coordinatesV2": "org.litote.kmongo:kmongo-id-jackson:3.6.0",
+    "caller": "|java+method:///org/litote/kmongo/id/jackson/StringToIdDeserializer/deserialize(com.fasterxml.jackson.core.JsonParser,com.fasterxml.jackson.databind.DeserializationContext)|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///kotlin/reflect/KType/getClassifier()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///kotlin/reflect/KClass/getConstructors()|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///kotlin/reflect/KFunction/call(java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///kotlin/jvm/internal/Reflection/getOrCreateKotlinClass(java.lang.Class)|",
+      "|java+method:///com/fasterxml/jackson/core/JsonParser/getText()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///org/litote/kmongo/id/IdGenerator/getIdClass()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/litote/kmongo/id/jackson/IdJacksonModule/getIdGenerator()|",
+      "|java+method:///kotlin/collections/CollectionsKt/first(java.util.List)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/areEqual(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/litote/kmongo/id/jackson/StringToIdDeserializer/deserialize(com.fasterxml.jackson.core.JsonParser,com.fasterxml.jackson.databind.DeserializationContext)|",
+      "|java+method:///kotlin/reflect/full/KCallables/getValueParameters(kotlin.reflect.KCallable)|",
+      "|java+method:///kotlin/reflect/KParameter/getType()|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/core/JsonParser/getText()|",
+      "|java+method:///org/litote/kmongo/id/jackson/StringToIdDeserializer$Companion/deserialize(org.litote.kmongo.id.IdGenerator,java.lang.String,com.fasterxml.jackson.databind.DeserializationContext)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/litote/kmongo/id/jackson/StringToIdDeserializer/deserialize(com.fasterxml.jackson.core.JsonParser,com.fasterxml.jackson.databind.DeserializationContext)|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.10",
+    "change": "UPDATED"
+  }
+]

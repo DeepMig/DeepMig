@@ -1,0 +1,72 @@
+[
+  {
+    "coordinatesV1": "io.gravitee.management:gravitee-management-api-rest:0.3.0",
+    "coordinatesV2": "io.gravitee.management:gravitee-management-api-rest:0.4.0",
+    "caller": "|java+method:///io/gravitee/management/rest/resource/ApiKeyAnalyticsResource/hits(io.gravitee.management.rest.resource.param.AnalyticsParam)|",
+    "called": "|java+constructor:///io/gravitee/management/service/exceptions/NoValidApiKeyException/NoValidApiKeyException()|",
+    "v1Body": [
+      "|java+method:///io/gravitee/management/rest/resource/param/AnalyticsTypeParam$AnalyticsType/ordinal()|",
+      "|java+method:///java/util/Optional/get()|",
+      "|java+method:///io/gravitee/management/service/PermissionService/hasPermission(java.lang.String,java.lang.String,io.gravitee.management.service.PermissionType)|",
+      "|java+method:///io/gravitee/management/rest/resource/param/AnalyticsParam/getInterval()|",
+      "|java+method:///io/gravitee/management/rest/resource/param/AnalyticsParam/getFrom()|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///io/gravitee/management/service/AnalyticsService/apiKeyHits(java.lang.String,long,long,long)|",
+      "|java+method:///io/gravitee/management/service/ApiKeyService/getCurrent(java.lang.String,java.lang.String)|",
+      "|java+constructor:///io/gravitee/management/service/exceptions/NoValidApiKeyException/NoValidApiKeyException()|",
+      "|java+method:///io/gravitee/management/model/ApiKeyEntity/getKey()|",
+      "|java+method:///javax/ws/rs/core/Response/ok(java.lang.Object)|",
+      "|java+method:///io/gravitee/management/rest/resource/ApiKeyAnalyticsResource/getAuthenticatedUser()|",
+      "|java+method:///io/gravitee/management/service/AnalyticsService/apiKeyHitsByLatency(java.lang.String,long,long,long)|",
+      "|java+method:///java/util/Optional/isPresent()|",
+      "|java+method:///io/gravitee/management/rest/resource/param/AnalyticsParam/validate()|",
+      "|java+method:///io/gravitee/management/rest/resource/param/AnalyticsParam/getTypeParam()|",
+      "|java+method:///io/gravitee/management/service/AnalyticsService/apiKeyHitsByStatus(java.lang.String,long,long,long)|",
+      "|java+method:///io/gravitee/management/rest/resource/param/AnalyticsTypeParam/getValue()|",
+      "|java+method:///io/gravitee/management/rest/resource/param/AnalyticsParam/getTo()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/gravitee/management/rest/resource/param/AnalyticsTypeParam$AnalyticsType/ordinal()|",
+      "|java+method:///io/gravitee/management/service/PermissionService/hasPermission(java.security.Principal,java.lang.String,io.gravitee.management.service.PermissionType)|",
+      "|java+method:///io/gravitee/management/rest/resource/param/AnalyticsParam/getInterval()|",
+      "|java+method:///io/gravitee/management/rest/resource/param/AnalyticsParam/getFrom()|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///io/gravitee/management/service/AnalyticsService/apiKeyHits(java.lang.String,long,long,long)|",
+      "|java+method:///io/gravitee/management/service/ApiKeyService/getCurrent(java.lang.String,java.lang.String)|",
+      "|java+constructor:///io/gravitee/management/service/exceptions/NoValidApiKeyException/NoValidApiKeyException()|",
+      "|java+method:///javax/ws/rs/core/Response/ok(java.lang.Object)|",
+      "|java+method:///io/gravitee/management/rest/resource/ApiKeyAnalyticsResource/getAuthenticatedUser()|",
+      "|java+method:///io/gravitee/management/service/AnalyticsService/apiKeyHitsByLatency(java.lang.String,long,long,long)|",
+      "|java+method:///java/util/Optional/isPresent()|",
+      "|java+method:///io/gravitee/management/rest/resource/param/AnalyticsParam/validate()|",
+      "|java+method:///io/gravitee/management/rest/resource/param/AnalyticsParam/getTypeParam()|",
+      "|java+method:///io/gravitee/management/service/AnalyticsService/apiKeyHitsByStatus(java.lang.String,long,long,long)|",
+      "|java+method:///io/gravitee/management/rest/resource/param/AnalyticsTypeParam/getValue()|",
+      "|java+method:///io/gravitee/management/rest/resource/param/AnalyticsParam/getTo()|"
+    ],
+    "affectedLib": "io.gravitee.management:gravitee-management-api-service:0.4.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.gravitee.management:gravitee-management-api-rest:0.3.0",
+    "coordinatesV2": "io.gravitee.management:gravitee-management-api-rest:0.4.0",
+    "caller": "|java+constructor:///io/gravitee/management/rest/mapper/ObjectMapperResolver/ObjectMapperResolver()|",
+    "called": "|java+constructor:///io/gravitee/definition/jackson/datatype/GraviteeMapper/GraviteeMapper()|",
+    "v1Body": [
+      "|java+constructor:///io/gravitee/definition/jackson/datatype/GraviteeMapper/GraviteeMapper()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/registerModule(com.fasterxml.jackson.databind.Module)|",
+      "|java+method:///com/fasterxml/jackson/databind/module/SimpleModule/setDeserializerModifier(com.fasterxml.jackson.databind.deser.BeanDeserializerModifier)|",
+      "|java+constructor:///io/gravitee/definition/jackson/datatype/GraviteeMapper/GraviteeMapper()|",
+      "|java+constructor:///io/gravitee/management/rest/mapper/ObjectMapperResolver$2/ObjectMapperResolver$2(io.gravitee.management.rest.mapper.ObjectMapperResolver,java.lang.Class)|",
+      "|java+constructor:///com/fasterxml/jackson/databind/module/SimpleModule/SimpleModule()|",
+      "|java+method:///com/fasterxml/jackson/databind/module/SimpleModule/addSerializer(java.lang.Class,com.fasterxml.jackson.databind.JsonSerializer)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///io/gravitee/management/rest/mapper/ObjectMapperResolver$1/ObjectMapperResolver$1(io.gravitee.management.rest.mapper.ObjectMapperResolver)|"
+    ],
+    "affectedLib": "io.gravitee.definition:gravitee-definition-jackson:0.4.0",
+    "change": "UPDATED"
+  }
+]

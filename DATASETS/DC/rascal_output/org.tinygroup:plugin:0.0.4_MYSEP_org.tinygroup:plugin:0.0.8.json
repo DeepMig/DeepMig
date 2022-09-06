@@ -1,0 +1,123 @@
+[
+  {
+    "coordinatesV1": "org.tinygroup:plugin:0.0.4",
+    "coordinatesV2": "org.tinygroup:plugin:0.0.8",
+    "caller": "|java+constructor:///org/tinygroup/plugin/impl/PluginInfoCompareImpl/PluginInfoCompareImpl()|",
+    "called": "|java+method:///org/tinygroup/logger/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/tinygroup/i18n/I18nMessageFactory/geti18nMessages()|",
+      "|java+method:///org/tinygroup/logger/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/tinygroup/i18n/I18nMessageFactory/getI18nMessages()|",
+      "|java+method:///org/tinygroup/logger/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.tinygroup:logger:0.0.8",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.tinygroup:plugin:0.0.4",
+    "coordinatesV2": "org.tinygroup:plugin:0.0.8",
+    "caller": "|java+constructor:///org/tinygroup/plugin/impl/BasePlugin/BasePlugin()|",
+    "called": "|java+method:///org/tinygroup/logger/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/tinygroup/i18n/I18nMessageFactory/geti18nMessages()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/tinygroup/logger/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/tinygroup/i18n/I18nMessageFactory/getI18nMessages()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/tinygroup/logger/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.tinygroup:logger:0.0.8",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.tinygroup:plugin:0.0.4",
+    "coordinatesV2": "org.tinygroup:plugin:0.0.8",
+    "caller": "|java+constructor:///org/tinygroup/plugin/exception/PluginException/PluginException(java.lang.String)|",
+    "called": "|java+constructor:///org/tinygroup/exception/TinySysRuntimeException/TinySysRuntimeException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/tinygroup/logger/Logger/log(org.tinygroup.logger.LogLevel,java.lang.String)|",
+      "|java+method:///org/tinygroup/logger/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///org/tinygroup/exception/TinySysRuntimeException/TinySysRuntimeException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/tinygroup/exception/TinySysRuntimeException/TinySysRuntimeException(java.lang.String)|"
+    ],
+    "affectedLib": "org.tinygroup:exception:0.0.8",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.tinygroup:plugin:0.0.4",
+    "coordinatesV2": "org.tinygroup:plugin:0.0.8",
+    "caller": "|java+method:///org/tinygroup/plugin/fileresolve/PluginFileProcessor/process()|",
+    "called": "|java+method:///org/tinygroup/xstream/XStreamFactory/getXStream(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/tinygroup/plugin/fileresolve/PluginFileProcessor/process(java.lang.ClassLoader)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/Class/getClassLoader()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/tinygroup/xstream/XStreamFactory/getXStream(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/tinygroup/logger/Logger/errorMessage(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///com/thoughtworks/xstream/XStream/fromXML(java.io.InputStream)|",
+      "|java+method:///org/tinygroup/logger/Logger/logMessage(org.tinygroup.logger.LogLevel,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/tinygroup/plugin/PluginManager/add(org.tinygroup.plugin.config.PluginInfo)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/tinygroup/vfs/FileObject/getInputStream()|",
+      "|java+method:///org/tinygroup/vfs/FileObject/getAbsolutePath()|"
+    ],
+    "affectedLib": "org.tinygroup:xstream:0.0.8",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.tinygroup:plugin:0.0.4",
+    "coordinatesV2": "org.tinygroup:plugin:0.0.8",
+    "caller": "|java+method:///org/tinygroup/plugin/impl/BasePlugin/initServiceInstance(org.tinygroup.plugin.config.PluginService)|",
+    "called": "|java+method:///org/tinygroup/springutil/SpringUtil/getBean(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/tinygroup/plugin/config/PluginService/getClassName()|",
+      "|java+method:///org/tinygroup/plugin/config/PluginService/getInstanceGetMode()|",
+      "|java+constructor:///org/tinygroup/plugin/exception/PluginException/PluginException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/tinygroup/i18n/I18nMessages/getMessage(java.lang.String,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Class/newInstance()|",
+      "|java+method:///org/tinygroup/plugin/impl/BasePlugin/getThisClassLoader()|",
+      "|java+method:///java/lang/ClassLoader/loadClass(java.lang.String)|",
+      "|java+method:///org/tinygroup/plugin/config/PluginService/getId()|",
+      "|java+method:///org/tinygroup/plugin/config/PluginService/getVersion()|",
+      "|java+method:///org/tinygroup/logger/Logger/errorMessage(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///org/tinygroup/logger/Logger/logMessage(org.tinygroup.logger.LogLevel,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/tinygroup/springutil/SpringUtil/getBean(java.lang.Class)|",
+      "|java+method:///java/lang/String/equalsIgnoreCase(java.lang.String)|",
+      "|java+method:///org/tinygroup/springutil/SpringUtil/getBean(java.lang.String)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/tinygroup/plugin/config/PluginService/getClassName()|",
+      "|java+method:///org/tinygroup/plugin/config/PluginService/getInstanceGetMode()|",
+      "|java+method:///org/tinygroup/i18n/I18nMessages/getMessage(java.lang.String,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Class/newInstance()|",
+      "|java+constructor:///org/tinygroup/plugin/exception/PluginException/PluginException(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/tinygroup/plugin/impl/BasePlugin/getThisClassLoader()|",
+      "|java+method:///java/lang/ClassLoader/loadClass(java.lang.String)|",
+      "|java+method:///org/tinygroup/plugin/config/PluginService/getId()|",
+      "|java+method:///org/tinygroup/plugin/config/PluginService/getVersion()|",
+      "|java+method:///org/tinygroup/logger/Logger/errorMessage(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///org/tinygroup/logger/Logger/logMessage(org.tinygroup.logger.LogLevel,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/tinygroup/springutil/SpringUtil/getBean(java.lang.Class)|",
+      "|java+method:///java/lang/String/equalsIgnoreCase(java.lang.String)|",
+      "|java+method:///org/tinygroup/springutil/SpringUtil/getBean(java.lang.String)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "org.tinygroup:springutil:0.0.8",
+    "change": "UPDATED"
+  }
+]

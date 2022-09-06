@@ -1,0 +1,138 @@
+[
+  {
+    "coordinatesV1": "org.ow2.easybeans:easybeans-deployment:1.0.0.RC2-JONAS",
+    "coordinatesV2": "org.ow2.easybeans:easybeans-deployment:1.0.0.RC3",
+    "caller": "|java+method:///org/ow2/easybeans/deployment/annotations/JClassInterceptor/hashCode()|",
+    "called": "|java+method:///org/ow2/util/deployment/metadata/structures/JMethod/hashCode()|",
+    "v1Body": [
+      "|java+method:///java/lang/String/hashCode()|",
+      "|java+method:///org/ow2/easybeans/deployment/annotations/JMethod/hashCode()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/hashCode()|",
+      "|java+method:///org/ow2/util/deployment/metadata/structures/JMethod/hashCode()|"
+    ],
+    "affectedLib": "org.ow2.util:util-deployment:1.0.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.ow2.easybeans:easybeans-deployment:1.0.0.RC2-JONAS",
+    "coordinatesV2": "org.ow2.easybeans:easybeans-deployment:1.0.0.RC3",
+    "caller": "|java+constructor:///org/ow2/easybeans/deployment/annotations/analyzer/WarAnnotationDeploymentAnalyzer/WarAnnotationDeploymentAnalyzer(org.ow2.util.ee.deploy.api.archive.IArchive,java.lang.ClassLoader)|",
+    "called": "|java+constructor:///org/ow2/util/deployment/annotations/analyzer/ArchiveScanner/ArchiveScanner(org.ow2.util.ee.deploy.api.archive.IArchive)|",
+    "v1Body": [
+      "|java+constructor:///org/ow2/easybeans/deployment/annotations/metadata/EjbJarAnnotationMetadata/EjbJarAnnotationMetadata()|",
+      "|java+constructor:///org/ow2/easybeans/deployment/annotations/analyzer/ScanClassVisitor/ScanClassVisitor(org.ow2.easybeans.deployment.annotations.metadata.EjbJarAnnotationMetadata)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/ow2/util/deployment/annotations/analyzer/ArchiveScanner/addArchiveConfigurator(org.ow2.util.deployment.annotations.analyzer.configurator.ArchiveConfigurator)|",
+      "|java+constructor:///org/ow2/util/deployment/annotations/analyzer/ArchiveScanner/ArchiveScanner(org.ow2.util.ee.deploy.api.archive.IArchive)|",
+      "|java+constructor:///org/ow2/easybeans/deployment/annotations/analyzer/configurator/metadata/war/WarArchiveMetadataConfigurator/WarArchiveMetadataConfigurator()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.ow2.util:util-deployment:1.0.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.ow2.easybeans:easybeans-deployment:1.0.0.RC2-JONAS",
+    "coordinatesV2": "org.ow2.easybeans:easybeans-deployment:1.0.0.RC3",
+    "caller": "|java+method:///org/ow2/easybeans/deployment/annotations/analyzer/WarAnnotationDeploymentAnalyzer/analyze(java.util.List)|",
+    "called": "|java+method:///org/ow2/util/deployment/annotations/analyzer/ArchiveScanner/endScan()|",
+    "v1Body": [
+      "|java+method:///org/ow2/easybeans/asm/ClassReader/accept(org.ow2.easybeans.asm.ClassVisitor,int)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/ow2/util/log/Log/error(java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/ow2/easybeans/deployment/annotations/exceptions/AnalyzerException/AnalyzerException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///org/ow2/easybeans/asm/ClassReader/ClassReader(java.io.InputStream)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/io/InputStream/close()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/ClassLoader/getResourceAsStream(java.lang.String)|",
+      "|java+method:///java/lang/String/replace(char,char)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/ow2/util/log/Log/debug(java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/ow2/util/ee/deploy/api/archive/IArchive/getName()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/ow2/util/deployment/annotations/analyzer/ArchiveScanner/endScan()|",
+      "|java+method:///org/ow2/util/deployment/annotations/analyzer/ArchiveScanner/scanCollection(java.util.Collection)|"
+    ],
+    "affectedLib": "org.ow2.util:util-deployment:1.0.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.ow2.easybeans:easybeans-deployment:1.0.0.RC2-JONAS",
+    "coordinatesV2": "org.ow2.easybeans:easybeans-deployment:1.0.0.RC3",
+    "caller": "|java+method:///org/ow2/easybeans/deployment/annotations/JClassInterceptor/equals(java.lang.Object)|",
+    "called": "|java+method:///org/ow2/util/deployment/metadata/structures/JMethod/equals(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/ow2/easybeans/deployment/annotations/JMethod/equals(java.lang.Object)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/ow2/util/deployment/metadata/structures/JMethod/equals(java.lang.Object)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|"
+    ],
+    "affectedLib": "org.ow2.util:util-deployment:1.0.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.ow2.easybeans:easybeans-deployment:1.0.0.RC2-JONAS",
+    "coordinatesV2": "org.ow2.easybeans:easybeans-deployment:1.0.0.RC3",
+    "caller": "|java+method:///org/ow2/easybeans/deployment/xml/parsing/EJB3DeploymentDescLoader/parse()|",
+    "called": "|java+method:///org/ow2/easybeans/util/xml/DocumentParser/getDocument(java.net.URL,boolean,org.xml.sax.EntityResolver)|",
+    "v1Body": [
+      "|java+method:///org/ow2/easybeans/deployment/xml/parsing/EJB3DeploymentDescLoader/getURL()|",
+      "|java+constructor:///org/ow2/easybeans/deployment/xml/struct/EnterpriseBeans/EnterpriseBeans()|",
+      "|java+method:///org/ow2/easybeans/deployment/xml/parsing/EJB3DeploymentDescLoader/isValidating()|",
+      "|java+constructor:///org/ow2/easybeans/deployment/xml/parsing/ParsingException/ParsingException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/ow2/easybeans/deployment/xml/parsing/EJB3DeploymentDescLoader/defineXMLNS(org.w3c.dom.Element)|",
+      "|java+method:///org/ow2/easybeans/deployment/xml/struct/EJB3/setAssemblyDescriptor(org.ow2.easybeans.deployment.xml.struct.AssemblyDescriptor)|",
+      "|java+method:///org/ow2/easybeans/deployment/xml/struct/EJB3/setInterceptors(org.ow2.easybeans.deployment.xml.struct.Interceptors)|",
+      "|java+method:///org/w3c/dom/NodeList/getLength()|",
+      "|java+method:///org/ow2/easybeans/deployment/xml/parsing/EJB3DeploymentDescLoader/analyzeBeans(org.w3c.dom.Element,org.ow2.easybeans.deployment.xml.struct.EnterpriseBeans)|",
+      "|java+method:///org/w3c/dom/Element/getElementsByTagNameNS(java.lang.String,java.lang.String)|",
+      "|java+method:///org/ow2/easybeans/deployment/xml/parsing/EJB3DeploymentDescLoader/getXMLNS()|",
+      "|java+constructor:///org/ow2/easybeans/deployment/xml/parsing/EJB3EntityResolver/EJB3EntityResolver()|",
+      "|java+method:///org/ow2/easybeans/deployment/xml/struct/EJB3/setEnterpriseBeans(org.ow2.easybeans.deployment.xml.struct.EnterpriseBeans)|",
+      "|java+method:///org/w3c/dom/NodeList/item(int)|",
+      "|java+method:///org/ow2/easybeans/deployment/xml/parsing/EJB3DeploymentDescLoader/analyzeInterceptorsElement(org.w3c.dom.Element,org.ow2.easybeans.deployment.xml.struct.Interceptors)|",
+      "|java+method:///org/ow2/easybeans/deployment/xml/parsing/EJB3DeploymentDescLoader/analyzeAssemblyDescriptor(org.w3c.dom.Element,org.ow2.easybeans.deployment.xml.struct.AssemblyDescriptor)|",
+      "|java+method:///org/w3c/dom/Document/getDocumentElement()|",
+      "|java+method:///org/ow2/easybeans/util/xml/DocumentParser/getDocument(java.net.URL,boolean,org.xml.sax.EntityResolver)|",
+      "|java+constructor:///org/ow2/easybeans/deployment/xml/struct/AssemblyDescriptor/AssemblyDescriptor()|",
+      "|java+constructor:///org/ow2/easybeans/deployment/xml/struct/Interceptors/Interceptors()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/ow2/easybeans/deployment/xml/parsing/EJB3DeploymentDescLoader/getURL()|",
+      "|java+constructor:///org/ow2/easybeans/deployment/xml/struct/EnterpriseBeans/EnterpriseBeans()|",
+      "|java+method:///org/ow2/easybeans/deployment/xml/parsing/EJB3DeploymentDescLoader/isValidating()|",
+      "|java+constructor:///org/ow2/easybeans/deployment/xml/parsing/ParsingException/ParsingException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/w3c/dom/Element/getAttribute(java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/ow2/easybeans/deployment/xml/parsing/EJB3DeploymentDescLoader/defineXMLNS(org.w3c.dom.Element)|",
+      "|java+method:///org/ow2/easybeans/deployment/xml/struct/EJB3/setMetadataComplete(boolean)|",
+      "|java+method:///org/ow2/easybeans/deployment/xml/struct/EJB3/setAssemblyDescriptor(org.ow2.easybeans.deployment.xml.struct.AssemblyDescriptor)|",
+      "|java+method:///org/ow2/easybeans/deployment/xml/struct/EJB3/setInterceptors(org.ow2.easybeans.deployment.xml.struct.Interceptors)|",
+      "|java+method:///org/w3c/dom/NodeList/getLength()|",
+      "|java+method:///org/ow2/easybeans/deployment/xml/parsing/EJB3DeploymentDescLoader/analyzeBeans(org.w3c.dom.Element,org.ow2.easybeans.deployment.xml.struct.EnterpriseBeans)|",
+      "|java+method:///org/w3c/dom/Element/getElementsByTagNameNS(java.lang.String,java.lang.String)|",
+      "|java+method:///org/ow2/easybeans/deployment/xml/parsing/EJB3DeploymentDescLoader/getXMLNS()|",
+      "|java+constructor:///org/ow2/easybeans/deployment/xml/parsing/EJB3EntityResolver/EJB3EntityResolver()|",
+      "|java+method:///org/ow2/easybeans/deployment/xml/struct/EJB3/setEnterpriseBeans(org.ow2.easybeans.deployment.xml.struct.EnterpriseBeans)|",
+      "|java+method:///org/w3c/dom/NodeList/item(int)|",
+      "|java+method:///org/ow2/easybeans/deployment/xml/parsing/EJB3DeploymentDescLoader/analyzeInterceptorsElement(org.w3c.dom.Element,org.ow2.easybeans.deployment.xml.struct.Interceptors)|",
+      "|java+method:///org/ow2/easybeans/deployment/xml/parsing/EJB3DeploymentDescLoader/analyzeAssemblyDescriptor(org.w3c.dom.Element,org.ow2.easybeans.deployment.xml.struct.AssemblyDescriptor)|",
+      "|java+method:///org/w3c/dom/Document/getDocumentElement()|",
+      "|java+method:///org/ow2/easybeans/util/xml/DocumentParser/getDocument(java.net.URL,boolean,org.xml.sax.EntityResolver)|",
+      "|java+constructor:///org/ow2/easybeans/deployment/xml/struct/AssemblyDescriptor/AssemblyDescriptor()|",
+      "|java+constructor:///org/ow2/easybeans/deployment/xml/struct/Interceptors/Interceptors()|"
+    ],
+    "affectedLib": "org.ow2.easybeans:easybeans-util:1.0.0.RC3",
+    "change": "UPDATED"
+  }
+]

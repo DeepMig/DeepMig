@@ -1,0 +1,25 @@
+[
+  {
+    "coordinatesV1": "org.sonatype.security:security-system:2.5",
+    "coordinatesV2": "org.sonatype.security:security-system:2.6",
+    "caller": "|java+method:///org/sonatype/security/DefaultSecuritySystem/stop()|",
+    "called": "|java+method:///org/apache/shiro/mgt/RealmSecurityManager/destroy()|",
+    "v1Body": [
+      "|java+method:///org/sonatype/security/DefaultSecuritySystem/getSecurityManager()|",
+      "|java+method:///org/apache/shiro/mgt/RealmSecurityManager/destroy()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonatype/security/DefaultSecuritySystem/getSecurityManager()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/shiro/realm/AuthenticatingRealm/setAuthenticationCache(org.apache.shiro.cache.Cache)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/Class/isInstance(java.lang.Object)|",
+      "|java+method:///org/apache/shiro/realm/AuthorizingRealm/setAuthorizationCache(org.apache.shiro.cache.Cache)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///org/apache/shiro/mgt/RealmSecurityManager/destroy()|",
+      "|java+method:///org/apache/shiro/mgt/RealmSecurityManager/getRealms()|"
+    ],
+    "affectedLib": "org.apache.shiro:shiro-core:1.2.0",
+    "change": "UPDATED"
+  }
+]

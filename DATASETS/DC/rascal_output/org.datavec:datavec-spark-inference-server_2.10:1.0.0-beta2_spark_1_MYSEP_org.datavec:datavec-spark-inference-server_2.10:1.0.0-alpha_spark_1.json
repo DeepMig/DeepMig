@@ -1,0 +1,39 @@
+[
+  {
+    "coordinatesV1": "org.datavec:datavec-spark-inference-server_2.10:1.0.0-beta2_spark_1",
+    "coordinatesV2": "org.datavec:datavec-spark-inference-server_2.10:1.0.0-alpha_spark_1",
+    "caller": "|java+method:///org/datavec/spark/transform/ImageSparkTransformServer/lambda$runMain$3()|",
+    "called": "|java+method:///play/mvc/Results/internalServerError()|",
+    "v1Body": [
+      "|java+method:///play/mvc/Results$Status/as(java.lang.String)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///play/mvc/Results/badRequest()|",
+      "|java+method:///java/lang/Exception/printStackTrace()|",
+      "|java+method:///java/io/File/toURI()|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///play/mvc/Results/internalServerError()|",
+      "|java+method:///play/mvc/Http$RequestBody/asMultipartFormData()|",
+      "|java+method:///org/nd4j/shade/jackson/databind/ObjectMapper/writeValueAsString(java.lang.Object)|",
+      "|java+constructor:///org/datavec/spark/transform/model/SingleImageRecord/SingleImageRecord(java.net.URI)|",
+      "|java+method:///play/mvc/Http$MultipartFormData$FilePart/getFile()|",
+      "|java+method:///play/mvc/Controller/request()|",
+      "|java+method:///play/mvc/Http$Request/body()|",
+      "|java+method:///org/datavec/spark/transform/ImageSparkTransformServer/transformIncrementalArray(org.datavec.spark.transform.model.SingleImageRecord)|",
+      "|java+method:///play/mvc/Http$MultipartFormData/getFiles()|",
+      "|java+method:///play/mvc/Results/ok(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/datavec/spark/transform/ImageSparkTransformServer/getJsonText()|",
+      "|java+method:///play/mvc/Results$Status/as(java.lang.String)|",
+      "|java+method:///play/mvc/Results/badRequest()|",
+      "|java+method:///java/lang/Exception/printStackTrace()|",
+      "|java+method:///org/datavec/spark/transform/ImageSparkTransformServer/transformArray(org.datavec.spark.transform.model.BatchImageRecord)|",
+      "|java+method:///play/mvc/Results/internalServerError()|",
+      "|java+method:///play/mvc/Results/ok(java.lang.String)|",
+      "|java+method:///org/nd4j/shade/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///org/nd4j/shade/jackson/databind/ObjectMapper/writeValueAsString(java.lang.Object)|"
+    ],
+    "affectedLib": "com.typesafe.play:play_2.10:2.4.6",
+    "change": "UPDATED"
+  }
+]

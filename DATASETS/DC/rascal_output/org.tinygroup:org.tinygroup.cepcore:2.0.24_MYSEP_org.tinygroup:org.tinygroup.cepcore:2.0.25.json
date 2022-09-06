@@ -1,0 +1,77 @@
+[
+  {
+    "coordinatesV1": "org.tinygroup:org.tinygroup.cepcore:2.0.24",
+    "coordinatesV2": "org.tinygroup:org.tinygroup.cepcore:2.0.25",
+    "caller": "|java+method:///org/tinygroup/cepcore/util/CEPCoreUtil/getContext(org.tinygroup.event.Event,org.tinygroup.event.ServiceInfo,java.lang.ClassLoader)|",
+    "called": "|java+method:///org/tinygroup/context2object/util/Context2ObjectUtil/getObject(org.tinygroup.event.Parameter,org.tinygroup.context.Context,java.lang.ClassLoader)|",
+    "v1Body": [
+      "|java+method:///org/tinygroup/event/ServiceInfo/getParameters()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/tinygroup/context2object/util/Context2ObjectUtil/getObject(org.tinygroup.event.Parameter,org.tinygroup.context.Context,java.lang.ClassLoader)|",
+      "|java+method:///org/tinygroup/event/ServiceRequest/getContext()|",
+      "|java+constructor:///org/tinygroup/cepcore/exception/CEPRunException/CEPRunException(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/tinygroup/event/Event/getServiceRequest()|",
+      "|java+method:///org/tinygroup/event/Parameter/getName()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/tinygroup/event/ServiceRequest/getServiceId()|",
+      "|java+constructor:///org/tinygroup/context/impl/ContextImpl/ContextImpl()|",
+      "|java+method:///org/tinygroup/context/Context/put(java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/tinygroup/event/ServiceInfo/getParameters()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/tinygroup/context2object/util/Context2ObjectUtil/getObject(org.tinygroup.event.Parameter,org.tinygroup.context.Context,java.lang.ClassLoader)|",
+      "|java+method:///org/tinygroup/event/ServiceRequest/getContext()|",
+      "|java+constructor:///org/tinygroup/cepcore/exception/ParamNotSerializableException/ParamNotSerializableException(java.lang.String,java.lang.String)|",
+      "|java+method:///org/tinygroup/event/Event/getServiceRequest()|",
+      "|java+method:///org/tinygroup/event/Parameter/getName()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/tinygroup/event/ServiceRequest/getServiceId()|",
+      "|java+constructor:///org/tinygroup/context/impl/ContextImpl/ContextImpl()|",
+      "|java+method:///org/tinygroup/context/Context/put(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "org.tinygroup:org.tinygroup.context2object:2.0.25",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.tinygroup:org.tinygroup.cepcore:2.0.24",
+    "coordinatesV2": "org.tinygroup:org.tinygroup.cepcore:2.0.25",
+    "caller": "|java+method:///org/tinygroup/cepcore/aop/impl/ParameterValidator/validate(java.lang.Object%5B%5D,java.util.List,java.lang.ClassLoader)|",
+    "called": "|java+constructor:///org/tinygroup/validate/impl/ValidateResultImpl/ValidateResultImpl()|",
+    "v1Body": [
+      "|java+constructor:///org/tinygroup/validate/impl/ValidateResultImpl/ValidateResultImpl()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/tinygroup/beancontainer/BeanContainerFactory/getBeanContainer(java.lang.ClassLoader)|",
+      "|java+method:///org/tinygroup/cepcore/aop/impl/ParameterValidator/validateList(java.lang.String,java.util.List,org.tinygroup.validate.ValidateResult,org.tinygroup.validate.ValidatorManager)|",
+      "|java+method:///org/tinygroup/validate/ValidateResult/hasError()|",
+      "|java+method:///org/tinygroup/beancontainer/BeanContainer/getBean(java.lang.String)|",
+      "|java+method:///org/tinygroup/cepcore/aop/impl/ParameterValidator/validateObject(java.lang.String,java.lang.Object,org.tinygroup.validate.ValidateResult,org.tinygroup.validate.ValidatorManager)|",
+      "|java+method:///org/tinygroup/event/Parameter/getValidatorSence()|",
+      "|java+constructor:///org/tinygroup/cepcore/exception/RequestParamValidateException/RequestParamValidateException(org.tinygroup.validate.ValidateResult)|",
+      "|java+method:///org/tinygroup/event/Parameter/isArray()|",
+      "|java+method:///org/tinygroup/cepcore/aop/impl/ParameterValidator/validateArray(java.lang.String,java.lang.Object%5B%5D,org.tinygroup.validate.ValidateResult,org.tinygroup.validate.ValidatorManager)|",
+      "|java+method:///java/util/List/get(int)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/tinygroup/validate/impl/ValidateResultImpl/ValidateResultImpl()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/tinygroup/logger/Logger/errorMessage(java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/tinygroup/beancontainer/BeanContainerFactory/getBeanContainer(java.lang.ClassLoader)|",
+      "|java+method:///org/tinygroup/cepcore/aop/impl/ParameterValidator/validateList(java.lang.String,java.util.List,org.tinygroup.validate.ValidateResult,org.tinygroup.validate.ValidatorManager)|",
+      "|java+method:///org/tinygroup/validate/ValidateResult/hasError()|",
+      "|java+method:///org/tinygroup/beancontainer/BeanContainer/getBean(java.lang.String)|",
+      "|java+method:///org/tinygroup/cepcore/aop/impl/ParameterValidator/validateObject(java.lang.String,java.lang.Object,org.tinygroup.validate.ValidateResult,org.tinygroup.validate.ValidatorManager)|",
+      "|java+method:///org/tinygroup/event/Parameter/getValidatorSence()|",
+      "|java+constructor:///org/tinygroup/cepcore/exception/RequestParamValidateException/RequestParamValidateException(org.tinygroup.validate.ValidateResult)|",
+      "|java+method:///org/tinygroup/event/Parameter/isArray()|",
+      "|java+method:///org/tinygroup/cepcore/aop/impl/ParameterValidator/validateArray(java.lang.String,java.lang.Object%5B%5D,org.tinygroup.validate.ValidateResult,org.tinygroup.validate.ValidatorManager)|",
+      "|java+method:///java/util/List/get(int)|"
+    ],
+    "affectedLib": "org.tinygroup:org.tinygroup.validate:2.0.25",
+    "change": "UPDATED"
+  }
+]

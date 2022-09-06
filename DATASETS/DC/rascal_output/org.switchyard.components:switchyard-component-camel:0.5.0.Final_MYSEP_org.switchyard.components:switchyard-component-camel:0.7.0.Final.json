@@ -1,0 +1,159 @@
+[
+  {
+    "coordinatesV1": "org.switchyard.components:switchyard-component-camel:0.7.0.Final",
+    "coordinatesV2": "org.switchyard.components:switchyard-component-camel:0.5.0.Final",
+    "caller": "|java+constructor:///org/switchyard/component/camel/transformer/CamelConverter/CamelConverter()|",
+    "called": "|java+constructor:///org/apache/camel/impl/DefaultCamelContext/DefaultCamelContext()|",
+    "v1Body": [
+      "|java+method:///org/switchyard/component/camel/deploy/CamelActivator/getPackageScanClassResolver()|",
+      "|java+constructor:///org/apache/camel/impl/DefaultCamelContext/DefaultCamelContext()|",
+      "|java+method:///org/apache/camel/impl/DefaultCamelContext/setPackageScanClassResolver(org.apache.camel.spi.PackageScanClassResolver)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/camel/impl/DefaultCamelContext/getTypeConverter()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/camel/impl/DefaultCamelContext/DefaultCamelContext()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/camel/impl/DefaultCamelContext/getTypeConverter()|"
+    ],
+    "affectedLib": "org.apache.camel:camel-core:2.9.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.switchyard.components:switchyard-component-camel:0.5.0.Final",
+    "coordinatesV2": "org.switchyard.components:switchyard-component-camel:0.7.0.Final",
+    "caller": "|java+constructor:///org/switchyard/component/camel/deploy/CamelComponent/CamelComponent()|",
+    "called": "|java+constructor:///org/switchyard/component/camel/common/deploy/BaseBindingComponent/BaseBindingComponent(java.lang.String,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/switchyard/component/camel/deploy/CamelComponent/setName(java.lang.String)|",
+      "|java+constructor:///org/switchyard/deploy/BaseComponent/BaseComponent()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/switchyard/component/camel/common/deploy/BaseBindingComponent/BaseBindingComponent(java.lang.String,java.lang.String%5B%5D)|"
+    ],
+    "affectedLib": "org.switchyard.components:switchyard-component-common-camel:0.7.0.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.switchyard.components:switchyard-component-camel:0.5.0.Final",
+    "coordinatesV2": "org.switchyard.components:switchyard-component-camel:0.7.0.Final",
+    "caller": "|java+method:///org/switchyard/component/camel/deploy/CamelActivator/handleImplementation(org.switchyard.config.model.composite.ComponentServiceModel,javax.xml.namespace.QName)|",
+    "called": "|java+method:///org/switchyard/component/camel/common/composer/CamelComposition/getMessageComposer()|",
+    "v1Body": [
+      "|java+method:///org/switchyard/component/camel/deploy/CamelActivator/checkSwitchYardReferencedServiceExist(org.apache.camel.model.RouteDefinition,org.switchyard.component.camel.config.model.CamelComponentImplementationModel)|",
+      "|java+method:///org/apache/camel/CamelContext/addRouteDefinition(org.apache.camel.model.RouteDefinition)|",
+      "|java+method:///org/switchyard/component/camel/SwitchyardEndpoint/setMessageComposer(org.switchyard.component.common.composer.MessageComposer)|",
+      "|java+method:///org/switchyard/component/camel/deploy/CamelActivator/addFromEndpointToRouteDefinition(org.apache.camel.model.RouteDefinition,java.lang.String)|",
+      "|java+constructor:///org/switchyard/exception/SwitchYardException/SwitchYardException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/switchyard/component/camel/composer/CamelComposition/getMessageComposer()|",
+      "|java+method:///org/apache/camel/CamelContext/getEndpoint(java.lang.String)|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+method:///org/switchyard/config/model/composite/ComponentServiceModel/getComponent()|",
+      "|java+method:///org/switchyard/config/model/composite/ComponentModel/getImplementation()|",
+      "|java+method:///org/switchyard/component/camel/deploy/ComponentNameComposer/composeComponentUri(javax.xml.namespace.QName)|",
+      "|java+method:///org/switchyard/component/camel/deploy/CamelActivator/getRouteDefinition(org.switchyard.component.camel.config.model.CamelComponentImplementationModel)|",
+      "|java+method:///org/switchyard/component/camel/SwitchyardEndpoint/getConsumer()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/switchyard/component/camel/deploy/CamelActivator/getCamelContext()|",
+      "|java+method:///org/switchyard/common/camel/SwitchYardCamelContext/getEndpoint(java.lang.String,java.lang.Class)|",
+      "|java+method:///org/switchyard/common/camel/SwitchYardCamelContext/addRouteDefinition(org.apache.camel.model.RouteDefinition)|",
+      "|java+method:///org/switchyard/component/camel/deploy/CamelActivator/addFromEndpointToRouteDefinition(org.apache.camel.model.RouteDefinition,java.lang.String)|",
+      "|java+method:///org/switchyard/component/camel/common/composer/CamelComposition/getMessageComposer()|",
+      "|java+method:///org/switchyard/component/camel/SwitchYardEndpoint/getConsumer()|",
+      "|java+method:///org/switchyard/config/model/composite/ComponentServiceModel/getComponent()|",
+      "|java+method:///org/switchyard/config/model/composite/ComponentModel/getImplementation()|",
+      "|java+method:///org/switchyard/component/camel/deploy/CamelActivator/checkSwitchYardReferencedServiceExist(org.apache.camel.model.RouteDefinition,org.switchyard.component.camel.model.CamelComponentImplementationModel)|",
+      "|java+method:///org/switchyard/component/camel/SwitchYardEndpoint/setMessageComposer(org.switchyard.component.common.composer.MessageComposer)|",
+      "|java+method:///org/switchyard/component/camel/ComponentNameComposer/composeComponentUri(javax.xml.namespace.QName)|",
+      "|java+constructor:///org/switchyard/exception/SwitchYardException/SwitchYardException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/switchyard/component/camel/deploy/CamelActivator/getRouteDefinition(org.switchyard.component.camel.model.CamelComponentImplementationModel)|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "affectedLib": "org.switchyard.components:switchyard-component-common-camel:0.7.0.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.switchyard.components:switchyard-component-camel:0.5.0.Final",
+    "coordinatesV2": "org.switchyard.components:switchyard-component-camel:0.7.0.Final",
+    "caller": "|java+method:///org/switchyard/component/camel/RouteFactory/createRoute(java.lang.Class,java.lang.String)|",
+    "called": "|java+method:///org/switchyard/component/camel/common/SwitchYardRouteDefinition/addNamespaceParameter(org.apache.camel.model.RouteDefinition,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/isAssignableFrom(java.lang.Class)|",
+      "|java+method:///org/apache/camel/builder/RouteBuilder/getRouteCollection()|",
+      "|java+method:///java/lang/Class/newInstance()|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/apache/camel/model/RouteDefinition/getInputs()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/switchyard/component/camel/SwitchYardRouteDefinition/addNamespaceParameter(org.apache.camel.model.RouteDefinition,java.lang.String)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/camel/builder/RouteBuilder/configure()|",
+      "|java+constructor:///org/switchyard/exception/SwitchYardException/SwitchYardException(java.lang.String)|",
+      "|java+constructor:///org/switchyard/exception/SwitchYardException/SwitchYardException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/camel/model/RoutesDefinition/getRoutes()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/isAssignableFrom(java.lang.Class)|",
+      "|java+method:///org/apache/camel/builder/RouteBuilder/getRouteCollection()|",
+      "|java+method:///java/lang/Class/newInstance()|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/apache/camel/model/RouteDefinition/getInputs()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/switchyard/component/camel/common/SwitchYardRouteDefinition/addNamespaceParameter(org.apache.camel.model.RouteDefinition,java.lang.String)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/camel/builder/RouteBuilder/configure()|",
+      "|java+constructor:///org/switchyard/exception/SwitchYardException/SwitchYardException(java.lang.String)|",
+      "|java+constructor:///org/switchyard/exception/SwitchYardException/SwitchYardException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/camel/model/RoutesDefinition/getRoutes()|"
+    ],
+    "affectedLib": "org.switchyard.components:switchyard-component-common-camel:0.7.0.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.switchyard.components:switchyard-component-camel:0.5.0.Final",
+    "coordinatesV2": "org.switchyard.components:switchyard-component-camel:0.7.0.Final",
+    "caller": "|java+method:///org/switchyard/component/camel/deploy/CamelActivator/handleImplementation(org.switchyard.config.model.composite.ComponentServiceModel,javax.xml.namespace.QName)|",
+    "called": "|java+method:///org/switchyard/component/camel/ComponentNameComposer/composeComponentUri(javax.xml.namespace.QName)|",
+    "v1Body": [
+      "|java+method:///org/switchyard/component/camel/deploy/CamelActivator/checkSwitchYardReferencedServiceExist(org.apache.camel.model.RouteDefinition,org.switchyard.component.camel.config.model.CamelComponentImplementationModel)|",
+      "|java+method:///org/apache/camel/CamelContext/addRouteDefinition(org.apache.camel.model.RouteDefinition)|",
+      "|java+method:///org/switchyard/component/camel/SwitchyardEndpoint/setMessageComposer(org.switchyard.component.common.composer.MessageComposer)|",
+      "|java+method:///org/switchyard/component/camel/deploy/CamelActivator/addFromEndpointToRouteDefinition(org.apache.camel.model.RouteDefinition,java.lang.String)|",
+      "|java+constructor:///org/switchyard/exception/SwitchYardException/SwitchYardException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/switchyard/component/camel/composer/CamelComposition/getMessageComposer()|",
+      "|java+method:///org/apache/camel/CamelContext/getEndpoint(java.lang.String)|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+method:///org/switchyard/config/model/composite/ComponentServiceModel/getComponent()|",
+      "|java+method:///org/switchyard/config/model/composite/ComponentModel/getImplementation()|",
+      "|java+method:///org/switchyard/component/camel/deploy/ComponentNameComposer/composeComponentUri(javax.xml.namespace.QName)|",
+      "|java+method:///org/switchyard/component/camel/deploy/CamelActivator/getRouteDefinition(org.switchyard.component.camel.config.model.CamelComponentImplementationModel)|",
+      "|java+method:///org/switchyard/component/camel/SwitchyardEndpoint/getConsumer()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/switchyard/component/camel/deploy/CamelActivator/getCamelContext()|",
+      "|java+method:///org/switchyard/common/camel/SwitchYardCamelContext/getEndpoint(java.lang.String,java.lang.Class)|",
+      "|java+method:///org/switchyard/common/camel/SwitchYardCamelContext/addRouteDefinition(org.apache.camel.model.RouteDefinition)|",
+      "|java+method:///org/switchyard/component/camel/deploy/CamelActivator/addFromEndpointToRouteDefinition(org.apache.camel.model.RouteDefinition,java.lang.String)|",
+      "|java+method:///org/switchyard/component/camel/common/composer/CamelComposition/getMessageComposer()|",
+      "|java+method:///org/switchyard/component/camel/SwitchYardEndpoint/getConsumer()|",
+      "|java+method:///org/switchyard/config/model/composite/ComponentServiceModel/getComponent()|",
+      "|java+method:///org/switchyard/config/model/composite/ComponentModel/getImplementation()|",
+      "|java+method:///org/switchyard/component/camel/deploy/CamelActivator/checkSwitchYardReferencedServiceExist(org.apache.camel.model.RouteDefinition,org.switchyard.component.camel.model.CamelComponentImplementationModel)|",
+      "|java+method:///org/switchyard/component/camel/SwitchYardEndpoint/setMessageComposer(org.switchyard.component.common.composer.MessageComposer)|",
+      "|java+method:///org/switchyard/component/camel/ComponentNameComposer/composeComponentUri(javax.xml.namespace.QName)|",
+      "|java+constructor:///org/switchyard/exception/SwitchYardException/SwitchYardException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/switchyard/component/camel/deploy/CamelActivator/getRouteDefinition(org.switchyard.component.camel.model.CamelComponentImplementationModel)|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "affectedLib": "org.switchyard.components:switchyard-component-camel-switchyard:0.7.0.Final",
+    "change": "ADDED"
+  }
+]

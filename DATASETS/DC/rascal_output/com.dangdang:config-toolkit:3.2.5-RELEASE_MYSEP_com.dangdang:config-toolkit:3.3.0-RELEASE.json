@@ -1,0 +1,834 @@
+[
+  {
+    "coordinatesV1": "com.dangdang:config-toolkit:3.3.0-RELEASE",
+    "coordinatesV2": "com.dangdang:config-toolkit:3.2.5-RELEASE",
+    "caller": "|java+method:///com/dangdang/config/service/file/protocol/HttpProtocol/read(com.dangdang.config.service.file.FileLocation)|",
+    "called": "|java+method:///org/apache/commons/io/IOUtils/toByteArray(java.io.InputStream)|",
+    "v1Body": [
+      "|java+method:///java/net/URL/openStream()|",
+      "|java+method:///com/dangdang/config/service/file/FileLocation/getProtocol()|",
+      "|java+method:///com/dangdang/config/service/file/FileLocation/getFile()|",
+      "|java+method:///java/io/InputStream/close()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/commons/io/IOUtils/toByteArray(java.io.InputStream)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///com/dangdang/config/service/exception/InvalidPathException/InvalidPathException(java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+constructor:///java/net/URL/URL(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/InputStream/read(byte%5B%5D,int,int)|",
+      "|java+method:///java/net/URL/openStream()|",
+      "|java+method:///java/io/ByteArrayOutputStream/flush()|",
+      "|java+method:///com/dangdang/config/service/file/FileLocation/getProtocol()|",
+      "|java+method:///com/dangdang/config/service/file/FileLocation/getFile()|",
+      "|java+method:///java/io/ByteArrayOutputStream/write(byte%5B%5D,int,int)|",
+      "|java+method:///java/io/InputStream/close()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/io/ByteArrayOutputStream/toByteArray()|",
+      "|java+method:///java/io/ByteArrayOutputStream/close()|",
+      "|java+constructor:///java/io/ByteArrayOutputStream/ByteArrayOutputStream()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///com/dangdang/config/service/exception/InvalidPathException/InvalidPathException(java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+constructor:///java/net/URL/URL(java.lang.String)|"
+    ],
+    "affectedLib": "commons-io:commons-io:2.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.dangdang:config-toolkit:3.3.0-RELEASE",
+    "coordinatesV2": "com.dangdang:config-toolkit:3.2.5-RELEASE",
+    "caller": "|java+constructor:///com/dangdang/config/service/zookeeper/ZookeeperConfigGroup/ZookeeperConfigGroup(com.dangdang.config.service.ConfigGroup,com.dangdang.config.service.zookeeper.ZookeeperConfigProfile,java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/io/FileUtils/getUserDirectoryPath()|",
+    "v1Body": [
+      "|java+method:///com/dangdang/config/service/zookeeper/ZookeeperConfigProfile/isOpenLocalCache()|",
+      "|java+constructor:///com/dangdang/config/service/GeneralConfigGroup/GeneralConfigGroup(com.dangdang.config.service.ConfigGroup)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///com/dangdang/config/service/zookeeper/ConfigLocalCache/ConfigLocalCache(java.lang.String,java.lang.String)|",
+      "|java+constructor:///com/dangdang/config/service/zookeeper/ConfigNodeEventListener/ConfigNodeEventListener(com.dangdang.config.service.zookeeper.ZookeeperConfigGroup)|",
+      "|java+method:///org/apache/commons/io/FileUtils/getUserDirectoryPath()|",
+      "|java+method:///com/dangdang/config/service/zookeeper/ZookeeperConfigGroup/initConfigs()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/dangdang/config/service/zookeeper/ZookeeperConfigProfile/getRootNode()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/dangdang/config/service/zookeeper/ZookeeperConfigProfile/isOpenLocalCache()|",
+      "|java+constructor:///com/dangdang/config/service/GeneralConfigGroup/GeneralConfigGroup(com.dangdang.config.service.ConfigGroup)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///com/dangdang/config/service/zookeeper/ConfigLocalCache/ConfigLocalCache(java.lang.String,java.lang.String)|",
+      "|java+constructor:///com/dangdang/config/service/zookeeper/ConfigNodeEventListener/ConfigNodeEventListener(com.dangdang.config.service.zookeeper.ZookeeperConfigGroup)|",
+      "|java+method:///com/dangdang/config/service/zookeeper/ZookeeperConfigGroup/initConfigs()|",
+      "|java+method:///com/dangdang/config/service/zookeeper/ZookeeperConfigProfile/getRootNode()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/System/getProperty(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|"
+    ],
+    "affectedLib": "commons-io:commons-io:2.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.dangdang:config-toolkit:3.3.0-RELEASE",
+    "coordinatesV2": "com.dangdang:config-toolkit:3.2.5-RELEASE",
+    "caller": "|java+method:///com/dangdang/config/service/zookeeper/ZookeeperConfigGroup/loadNode()|",
+    "called": "|java+method:///org/apache/commons/lang3/tuple/Pair/getValue()|",
+    "v1Body": [
+      "|java+method:///com/dangdang/config/service/zookeeper/ZookeeperConfigProfile/getVersionedRootNode()|",
+      "|java+method:///com/google/common/collect/Maps/newHashMap()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/curator/utils/ZKPaths/makePath(java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/curator/framework/api/GetChildrenBuilder/watched()|",
+      "|java+method:///org/apache/curator/framework/api/BackgroundPathable/forPath(java.lang.String)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/apache/commons/lang3/tuple/Pair/getValue()|",
+      "|java+method:///com/dangdang/config/service/zookeeper/ZookeeperConfigGroup/loadKey(java.lang.String)|",
+      "|java+method:///com/dangdang/config/service/zookeeper/ZookeeperConfigGroup/cleanAndPutAll(java.util.Map)|",
+      "|java+method:///org/apache/curator/framework/CuratorFramework/getChildren()|",
+      "|java+method:///org/apache/commons/lang3/tuple/Pair/getKey()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/dangdang/config/service/zookeeper/ZookeeperConfigProfile/getVersionedRootNode()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/curator/utils/ZKPaths/makePath(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/curator/framework/api/GetChildrenBuilder/watched()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///com/dangdang/config/service/util/Tuple/getSecond()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/dangdang/config/service/zookeeper/ZookeeperConfigGroup/loadKey(java.lang.String)|",
+      "|java+method:///com/dangdang/config/service/zookeeper/ZookeeperConfigGroup/cleanAndPutAll(java.util.Map)|",
+      "|java+method:///org/apache/curator/framework/CuratorFramework/getChildren()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///com/dangdang/config/service/util/Tuple/getFirst()|",
+      "|java+method:///org/apache/curator/framework/api/BackgroundPathable/forPath(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.3.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.dangdang:config-toolkit:3.3.0-RELEASE",
+    "coordinatesV2": "com.dangdang:config-toolkit:3.2.5-RELEASE",
+    "caller": "|java+method:///com/dangdang/config/service/zookeeper/ZookeeperConfigGroup/reloadKey(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang3/tuple/Pair/getValue()|",
+    "v1Body": [
+      "|java+method:///com/dangdang/config/service/zookeeper/ZookeeperConfigGroup/loadKey(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang3/tuple/Pair/getKey()|",
+      "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+      "|java+method:///com/dangdang/config/service/GeneralConfigGroup/put(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/commons/lang3/tuple/Pair/getValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/dangdang/config/service/util/Tuple/getSecond()|",
+      "|java+method:///com/dangdang/config/service/zookeeper/ZookeeperConfigGroup/loadKey(java.lang.String)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///com/dangdang/config/service/util/Tuple/getFirst()|",
+      "|java+method:///com/dangdang/config/service/GeneralConfigGroup/put(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.3.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.dangdang:config-toolkit:3.3.0-RELEASE",
+    "coordinatesV2": "com.dangdang:config-toolkit:3.2.5-RELEASE",
+    "caller": "|java+method:///com/dangdang/config/service/zookeeper/ZookeeperConfigGroup/loadKey(java.lang.String)|",
+    "called": "|java+constructor:///org/apache/commons/lang3/tuple/ImmutablePair/ImmutablePair(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/dangdang/config/service/zookeeper/ZookeeperConfigProfile/getKeysSpecified()|",
+      "|java+constructor:///org/apache/commons/lang3/tuple/ImmutablePair/ImmutablePair(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D,java.nio.charset.Charset)|",
+      "|java+method:///com/dangdang/config/service/zookeeper/ZookeeperConfigProfile/getKeyLoadingMode()|",
+      "|java+method:///java/util/Set/contains(java.lang.Object)|",
+      "|java+method:///org/apache/curator/framework/CuratorFramework/getData()|",
+      "|java+method:///org/apache/curator/framework/api/BackgroundPathable/forPath(java.lang.String)|",
+      "|java+method:///org/apache/curator/utils/ZKPaths/getNodeFromPath(java.lang.String)|",
+      "|java+method:///org/apache/curator/framework/api/GetDataBuilder/watched()|",
+      "|java+method:///com/dangdang/config/service/ConfigProfile$KeyLoadingMode/ordinal()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/String/String(byte%5B%5D,java.lang.String)|",
+      "|java+method:///com/dangdang/config/service/zookeeper/ZookeeperConfigProfile/getKeyLoadingMode()|",
+      "|java+method:///java/util/Set/contains(java.lang.Object)|",
+      "|java+method:///org/apache/curator/framework/CuratorFramework/getData()|",
+      "|java+method:///org/apache/curator/framework/api/BackgroundPathable/forPath(java.lang.String)|",
+      "|java+method:///org/apache/curator/utils/ZKPaths/getNodeFromPath(java.lang.String)|",
+      "|java+method:///com/dangdang/config/service/zookeeper/ZookeeperConfigProfile/getKeysSpecified()|",
+      "|java+constructor:///com/dangdang/config/service/util/Tuple/Tuple(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/curator/framework/api/GetDataBuilder/watched()|",
+      "|java+method:///com/dangdang/config/service/ConfigProfile$KeyLoadingMode/ordinal()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.3.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.dangdang:config-toolkit:3.3.0-RELEASE",
+    "coordinatesV2": "com.dangdang:config-toolkit:3.2.5-RELEASE",
+    "caller": "|java+method:///com/dangdang/config/service/zookeeper/ConfigLocalCache/toString()|",
+    "called": "|java+method:///com/google/common/base/Objects/toStringHelper(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Objects/toStringHelper(java.lang.Object)|",
+      "|java+method:///com/google/common/base/Objects$ToStringHelper/toString()|",
+      "|java+method:///com/google/common/base/Objects$ToStringHelper/add(java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "com.google.guava:guava:17.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.dangdang:config-toolkit:3.3.0-RELEASE",
+    "coordinatesV2": "com.dangdang:config-toolkit:3.2.5-RELEASE",
+    "caller": "|java+method:///com/dangdang/config/service/file/protocol/Protocols/get(java.lang.String)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "com.google.guava:guava:17.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.dangdang:config-toolkit:3.3.0-RELEASE",
+    "coordinatesV2": "com.dangdang:config-toolkit:3.2.5-RELEASE",
+    "caller": "|java+method:///com/dangdang/config/service/support/spring/ConfigGroupSourceFactory/create(com.dangdang.config.service.ConfigGroup%5B%5D)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/springframework/core/env/MutablePropertySources/addLast(org.springframework.core.env.PropertySource)|",
+      "|java+constructor:///org/springframework/core/env/MutablePropertySources/MutablePropertySources()|",
+      "|java+constructor:///com/dangdang/config/service/support/spring/ConfigGroupResource/ConfigGroupResource(com.dangdang.config.service.ConfigGroup)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/core/env/MutablePropertySources/addLast(org.springframework.core.env.PropertySource)|",
+      "|java+constructor:///org/springframework/core/env/MutablePropertySources/MutablePropertySources()|",
+      "|java+constructor:///com/dangdang/config/service/support/spring/ConfigGroupResource/ConfigGroupResource(com.dangdang.config.service.ConfigGroup)|",
+      "|java+method:///com/dangdang/config/service/ConfigGroup/isEnumerable()|",
+      "|java+constructor:///com/dangdang/config/service/support/spring/ConfigGroupEnumerableResource/ConfigGroupEnumerableResource(com.dangdang.config.service.ConfigGroup)|"
+    ],
+    "affectedLib": "com.google.guava:guava:17.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.dangdang:config-toolkit:3.3.0-RELEASE",
+    "coordinatesV2": "com.dangdang:config-toolkit:3.2.5-RELEASE",
+    "caller": "|java+constructor:///com/dangdang/config/service/zookeeper/ZookeeperConfigProfile/ZookeeperConfigProfile(java.lang.String,java.lang.String,java.lang.String,boolean,org.apache.curator.RetryPolicy)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///com/dangdang/config/service/ConfigProfile/ConfigProfile(java.lang.String)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/dangdang/config/service/ConfigProfile/ConfigProfile(java.lang.String)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException()|"
+    ],
+    "affectedLib": "com.google.guava:guava:17.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.dangdang:config-toolkit:3.3.0-RELEASE",
+    "coordinatesV2": "com.dangdang:config-toolkit:3.2.5-RELEASE",
+    "caller": "|java+method:///com/dangdang/config/service/zookeeper/ZookeeperConfigProfile/getVersionedRootNode()|",
+    "called": "|java+method:///com/google/common/base/Strings/isNullOrEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/curator/utils/ZKPaths/makePath(java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/common/base/Strings/isNullOrEmpty(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/curator/utils/ZKPaths/makePath(java.lang.String,java.lang.String)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|"
+    ],
+    "affectedLib": "com.google.guava:guava:17.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.dangdang:config-toolkit:3.3.0-RELEASE",
+    "coordinatesV2": "com.dangdang:config-toolkit:3.2.5-RELEASE",
+    "caller": "|java+method:///com/dangdang/config/service/file/FileConfigGroup/initConfigs()|",
+    "called": "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///com/dangdang/config/service/file/protocol/Protocol/read(com.dangdang.config.service.file.FileLocation)|",
+      "|java+method:///com/dangdang/config/service/file/protocol/Protocols/get(java.lang.String)|",
+      "|java+method:///java/lang/Class/newInstance()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///com/dangdang/config/service/file/FileLocation/getProtocol()|",
+      "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+      "|java+method:///com/dangdang/config/service/file/contenttype/ContentType/resolve(byte%5B%5D,java.lang.String)|",
+      "|java+method:///com/dangdang/config/service/file/contenttype/ContentTypes/getInstance()|",
+      "|java+method:///com/dangdang/config/service/file/FileConfigProfile/getFileEncoding()|",
+      "|java+method:///com/dangdang/config/service/file/contenttype/ContentTypes/get(java.lang.String)|",
+      "|java+method:///com/dangdang/config/service/file/protocol/Protocols/getInstance()|",
+      "|java+method:///com/dangdang/config/service/file/FileConfigProfile/getContentType()|",
+      "|java+method:///com/dangdang/config/service/file/FileConfigGroup/cleanAndPutAll(java.util.Map)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/dangdang/config/service/file/protocol/Protocol/read(com.dangdang.config.service.file.FileLocation)|",
+      "|java+method:///com/dangdang/config/service/file/protocol/Protocols/get(java.lang.String)|",
+      "|java+method:///java/lang/Class/newInstance()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///com/dangdang/config/service/file/FileLocation/getProtocol()|",
+      "|java+method:///com/dangdang/config/service/file/contenttype/ContentType/resolve(byte%5B%5D,java.lang.String)|",
+      "|java+method:///com/dangdang/config/service/file/contenttype/ContentTypes/getInstance()|",
+      "|java+method:///com/dangdang/config/service/file/FileConfigProfile/getFileEncoding()|",
+      "|java+method:///com/dangdang/config/service/file/contenttype/ContentTypes/get(java.lang.String)|",
+      "|java+method:///com/dangdang/config/service/file/protocol/Protocols/getInstance()|",
+      "|java+method:///com/dangdang/config/service/file/FileConfigProfile/getContentType()|",
+      "|java+method:///com/dangdang/config/service/file/FileConfigGroup/cleanAndPutAll(java.util.Map)|"
+    ],
+    "affectedLib": "com.google.guava:guava:17.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.dangdang:config-toolkit:3.3.0-RELEASE",
+    "coordinatesV2": "com.dangdang:config-toolkit:3.2.5-RELEASE",
+    "caller": "|java+method:///com/dangdang/config/service/file/contenttype/PropertiesContentType/resolve(byte%5B%5D,java.lang.String)|",
+    "called": "|java+method:///com/google/common/collect/Maps/fromProperties(java.util.Properties)|",
+    "v1Body": [
+      "|java+method:///java/io/Reader/close()|",
+      "|java+constructor:///com/dangdang/config/service/exception/InvalidPathException/InvalidPathException(java.lang.Throwable)|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream,java.lang.String)|",
+      "|java+constructor:///java/util/Properties/Properties()|",
+      "|java+method:///com/google/common/collect/Maps/fromProperties(java.util.Properties)|",
+      "|java+method:///java/util/Properties/load(java.io.Reader)|",
+      "|java+constructor:///java/io/ByteArrayInputStream/ByteArrayInputStream(byte%5B%5D)|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Properties/stringPropertyNames()|",
+      "|java+method:///java/io/Reader/close()|",
+      "|java+method:///java/util/Properties/getProperty(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///com/dangdang/config/service/exception/InvalidPathException/InvalidPathException(java.lang.Throwable)|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream,java.lang.String)|",
+      "|java+constructor:///java/util/Properties/Properties()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/util/Properties/load(java.io.Reader)|",
+      "|java+constructor:///java/io/ByteArrayInputStream/ByteArrayInputStream(byte%5B%5D)|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/util/HashMap/put(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:17.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.dangdang:config-toolkit:3.3.0-RELEASE",
+    "coordinatesV2": "com.dangdang:config-toolkit:3.2.5-RELEASE",
+    "caller": "|java+method:///com/dangdang/config/service/GeneralConfigGroup/register(com.dangdang.config.service.observer.IObserver)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|"
+    ],
+    "affectedLib": "com.google.guava:guava:17.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.dangdang:config-toolkit:3.3.0-RELEASE",
+    "coordinatesV2": "com.dangdang:config-toolkit:3.2.5-RELEASE",
+    "caller": "|java+method:///com/dangdang/config/service/file/contenttype/XmlContentType/resolve(byte%5B%5D,java.lang.String)|",
+    "called": "|java+method:///com/google/common/collect/Maps/fromProperties(java.util.Properties)|",
+    "v1Body": [
+      "|java+constructor:///com/dangdang/config/service/exception/InvalidPathException/InvalidPathException(java.lang.Throwable)|",
+      "|java+constructor:///java/util/Properties/Properties()|",
+      "|java+method:///com/google/common/collect/Maps/fromProperties(java.util.Properties)|",
+      "|java+constructor:///java/io/ByteArrayInputStream/ByteArrayInputStream(byte%5B%5D)|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+method:///java/util/Properties/loadFromXML(java.io.InputStream)|",
+      "|java+method:///java/io/InputStream/close()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Properties/stringPropertyNames()|",
+      "|java+method:///java/util/Properties/getProperty(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///com/dangdang/config/service/exception/InvalidPathException/InvalidPathException(java.lang.Throwable)|",
+      "|java+constructor:///java/util/Properties/Properties()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+constructor:///java/io/ByteArrayInputStream/ByteArrayInputStream(byte%5B%5D)|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/util/HashMap/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Properties/loadFromXML(java.io.InputStream)|",
+      "|java+method:///java/io/InputStream/close()|"
+    ],
+    "affectedLib": "com.google.guava:guava:17.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.dangdang:config-toolkit:3.3.0-RELEASE",
+    "coordinatesV2": "com.dangdang:config-toolkit:3.2.5-RELEASE",
+    "caller": "|java+constructor:///com/dangdang/config/service/file/protocol/Protocols/Protocols()|",
+    "called": "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+method:///com/google/common/collect/Maps/newHashMap()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/net/URL/openStream()|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/Properties/Properties()|",
+      "|java+method:///java/io/InputStream/close()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/lang/ClassLoader/getResources(java.lang.String)|",
+      "|java+method:///java/util/Enumeration/nextElement()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/String/toLowerCase()|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///java/util/Properties/entrySet()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///java/lang/Class/getClassLoader()|",
+      "|java+method:///java/util/Properties/load(java.io.InputStream)|",
+      "|java+method:///java/util/Enumeration/hasMoreElements()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/net/URL/openStream()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+constructor:///java/util/Properties/Properties()|",
+      "|java+method:///java/io/InputStream/close()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/lang/ClassLoader/getResources(java.lang.String)|",
+      "|java+method:///java/util/Enumeration/nextElement()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/String/toLowerCase()|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///java/util/Properties/entrySet()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///java/lang/Class/getClassLoader()|",
+      "|java+method:///java/util/Properties/load(java.io.InputStream)|",
+      "|java+method:///java/util/Enumeration/hasMoreElements()|"
+    ],
+    "affectedLib": "com.google.guava:guava:17.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.dangdang:config-toolkit:3.3.0-RELEASE",
+    "coordinatesV2": "com.dangdang:config-toolkit:3.2.5-RELEASE",
+    "caller": "|java+constructor:///com/dangdang/config/service/file/contenttype/ContentTypes/ContentTypes()|",
+    "called": "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+method:///com/google/common/collect/Maps/newHashMap()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/net/URL/openStream()|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/Properties/Properties()|",
+      "|java+method:///java/io/InputStream/close()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/lang/ClassLoader/getResources(java.lang.String)|",
+      "|java+method:///java/util/Enumeration/nextElement()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/String/toLowerCase()|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///java/util/Properties/entrySet()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///java/lang/Class/getClassLoader()|",
+      "|java+method:///java/util/Properties/load(java.io.InputStream)|",
+      "|java+method:///java/util/Enumeration/hasMoreElements()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/net/URL/openStream()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+constructor:///java/util/Properties/Properties()|",
+      "|java+method:///java/io/InputStream/close()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/lang/ClassLoader/getResources(java.lang.String)|",
+      "|java+method:///java/util/Enumeration/nextElement()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/String/toLowerCase()|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///java/util/Properties/entrySet()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///java/lang/Class/getClassLoader()|",
+      "|java+method:///java/util/Properties/load(java.io.InputStream)|",
+      "|java+method:///java/util/Enumeration/hasMoreElements()|"
+    ],
+    "affectedLib": "com.google.guava:guava:17.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.dangdang:config-toolkit:3.3.0-RELEASE",
+    "coordinatesV2": "com.dangdang:config-toolkit:3.2.5-RELEASE",
+    "caller": "|java+method:///com/dangdang/config/service/file/FileLocation/fromLocation(java.lang.String)|",
+    "called": "|java+method:///com/google/common/collect/Iterables/size(java.lang.Iterable)|",
+    "v1Body": [
+      "|java+method:///com/google/common/collect/Iterables/size(java.lang.Iterable)|",
+      "|java+method:///com/google/common/base/Splitter/split(java.lang.CharSequence)|",
+      "|java+method:///java/lang/String/toLowerCase()|",
+      "|java+method:///com/google/common/collect/Iterables/getFirst(java.lang.Iterable,java.lang.Object)|",
+      "|java+method:///com/google/common/collect/Iterables/getLast(java.lang.Iterable)|",
+      "|java+constructor:///com/dangdang/config/service/file/FileLocation/FileLocation(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/toLowerCase()|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+method:///java/lang/String/indexOf(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+constructor:///com/dangdang/config/service/file/FileLocation/FileLocation(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/String/contains(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "com.google.guava:guava:17.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.dangdang:config-toolkit:3.3.0-RELEASE",
+    "coordinatesV2": "com.dangdang:config-toolkit:3.2.5-RELEASE",
+    "caller": "|java+constructor:///com/dangdang/config/service/file/FileConfigGroup/FileConfigGroup(com.dangdang.config.service.ConfigGroup,com.dangdang.config.service.file.FileConfigProfile,java.lang.String)|",
+    "called": "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///com/dangdang/config/service/GeneralConfigGroup/GeneralConfigGroup(com.dangdang.config.service.ConfigGroup)|",
+      "|java+method:///com/dangdang/config/service/file/FileConfigGroup/initConfigs()|",
+      "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+      "|java+method:///com/dangdang/config/service/file/protocol/Protocol/watch(com.dangdang.config.service.file.FileLocation,com.dangdang.config.service.file.FileConfigGroup)|",
+      "|java+method:///com/dangdang/config/service/file/FileLocation/fromLocation(java.lang.String)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/dangdang/config/service/GeneralConfigGroup/GeneralConfigGroup(com.dangdang.config.service.ConfigGroup)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///com/dangdang/config/service/file/FileConfigGroup/initConfigs()|",
+      "|java+method:///com/dangdang/config/service/file/protocol/Protocol/watch(com.dangdang.config.service.file.FileLocation,com.dangdang.config.service.file.FileConfigGroup)|",
+      "|java+method:///com/dangdang/config/service/file/FileLocation/fromLocation(java.lang.String)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|"
+    ],
+    "affectedLib": "com.google.guava:guava:17.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.dangdang:config-toolkit:3.3.0-RELEASE",
+    "coordinatesV2": "com.dangdang:config-toolkit:3.2.5-RELEASE",
+    "caller": "|java+constructor:///com/dangdang/config/service/GeneralConfigGroup/GeneralConfigGroup(com.dangdang.config.service.ConfigGroup)|",
+    "called": "|java+method:///com/google/common/collect/Lists/newArrayList()|",
+    "v1Body": [
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+method:///com/google/common/collect/Lists/newArrayList()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|"
+    ],
+    "affectedLib": "com.google.guava:guava:17.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.dangdang:config-toolkit:3.3.0-RELEASE",
+    "coordinatesV2": "com.dangdang:config-toolkit:3.2.5-RELEASE",
+    "caller": "|java+method:///com/dangdang/config/service/file/protocol/ClasspathProtocol/getPath(com.dangdang.config.service.file.FileLocation)|",
+    "called": "|java+method:///com/google/common/io/Resources/getResource(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/google/common/io/Resources/getResource(java.lang.String)|",
+      "|java+constructor:///com/dangdang/config/service/exception/InvalidPathException/InvalidPathException(java.lang.Throwable)|",
+      "|java+method:///java/net/URL/toURI()|",
+      "|java+method:///com/dangdang/config/service/file/FileLocation/getFile()|",
+      "|java+method:///java/nio/file/Paths/get(java.net.URI)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/ClassLoader/getResource(java.lang.String)|",
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+constructor:///com/dangdang/config/service/exception/InvalidPathException/InvalidPathException(java.lang.Throwable)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///com/dangdang/config/service/file/FileLocation/getFile()|",
+      "|java+method:///java/net/URI/create(java.lang.String)|",
+      "|java+method:///java/nio/file/Paths/get(java.net.URI)|",
+      "|java+method:///java/nio/file/FileSystem/getPath(java.lang.String,java.lang.String%5B%5D)|",
+      "|java+method:///java/net/URI/toString()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///java/net/URL/toURI()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/nio/file/FileSystems/newFileSystem(java.net.URI,java.util.Map)|",
+      "|java+method:///java/net/URL/getPath()|",
+      "|java+method:///java/util/Map/containsKey(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/Class/getClassLoader()|",
+      "|java+method:///java/lang/String/contains(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "com.google.guava:guava:17.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.dangdang:config-toolkit:3.3.0-RELEASE",
+    "coordinatesV2": "com.dangdang:config-toolkit:3.2.5-RELEASE",
+    "caller": "|java+method:///com/dangdang/config/service/file/contenttype/ContentTypes/get(java.lang.String)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "com.google.guava:guava:17.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.dangdang:config-toolkit:3.3.0-RELEASE",
+    "coordinatesV2": "com.dangdang:config-toolkit:3.2.5-RELEASE",
+    "caller": "|java+constructor:///com/dangdang/config/service/zookeeper/ConfigNodeEventListener/ConfigNodeEventListener(com.dangdang.config.service.zookeeper.ZookeeperConfigGroup)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.guava:guava:17.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.dangdang:config-toolkit:3.3.0-RELEASE",
+    "coordinatesV2": "com.dangdang:config-toolkit:3.2.5-RELEASE",
+    "caller": "|java+method:///com/dangdang/config/service/GeneralConfigGroup/put(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///com/google/common/base/Objects/equal(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/util/concurrent/ConcurrentHashMap/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///com/google/common/base/Objects/equal(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/concurrent/ConcurrentHashMap/get(java.lang.Object)|",
+      "|java+method:///com/dangdang/config/service/GeneralConfigGroup/notify(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/concurrent/ConcurrentHashMap/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///java/util/concurrent/ConcurrentHashMap/get(java.lang.Object)|",
+      "|java+method:///com/dangdang/config/service/GeneralConfigGroup/notify(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "com.google.guava:guava:17.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.dangdang:config-toolkit:3.3.0-RELEASE",
+    "coordinatesV2": "com.dangdang:config-toolkit:3.2.5-RELEASE",
+    "caller": "|java+method:///com/dangdang/config/service/zookeeper/ZookeeperConfigGroup/loadNode()|",
+    "called": "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///com/dangdang/config/service/zookeeper/ZookeeperConfigProfile/getVersionedRootNode()|",
+      "|java+method:///com/google/common/collect/Maps/newHashMap()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/curator/utils/ZKPaths/makePath(java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/curator/framework/api/GetChildrenBuilder/watched()|",
+      "|java+method:///org/apache/curator/framework/api/BackgroundPathable/forPath(java.lang.String)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/apache/commons/lang3/tuple/Pair/getValue()|",
+      "|java+method:///com/dangdang/config/service/zookeeper/ZookeeperConfigGroup/loadKey(java.lang.String)|",
+      "|java+method:///com/dangdang/config/service/zookeeper/ZookeeperConfigGroup/cleanAndPutAll(java.util.Map)|",
+      "|java+method:///org/apache/curator/framework/CuratorFramework/getChildren()|",
+      "|java+method:///org/apache/commons/lang3/tuple/Pair/getKey()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/dangdang/config/service/zookeeper/ZookeeperConfigProfile/getVersionedRootNode()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/curator/utils/ZKPaths/makePath(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/curator/framework/api/GetChildrenBuilder/watched()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///com/dangdang/config/service/util/Tuple/getSecond()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/dangdang/config/service/zookeeper/ZookeeperConfigGroup/loadKey(java.lang.String)|",
+      "|java+method:///com/dangdang/config/service/zookeeper/ZookeeperConfigGroup/cleanAndPutAll(java.util.Map)|",
+      "|java+method:///org/apache/curator/framework/CuratorFramework/getChildren()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///com/dangdang/config/service/util/Tuple/getFirst()|",
+      "|java+method:///org/apache/curator/framework/api/BackgroundPathable/forPath(java.lang.String)|"
+    ],
+    "affectedLib": "com.google.guava:guava:17.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.dangdang:config-toolkit:3.3.0-RELEASE",
+    "coordinatesV2": "com.dangdang:config-toolkit:3.2.5-RELEASE",
+    "caller": "|java+constructor:///com/dangdang/config/service/sugar/RefreshableBox/RefreshableBox(com.dangdang.config.service.GeneralConfigGroup,java.util.List)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/dangdang/config/service/GeneralConfigGroup/register(com.dangdang.config.service.observer.IObserver)|",
+      "|java+method:///com/dangdang/config/service/sugar/RefreshableBox/init()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///java/util/concurrent/locks/ReentrantReadWriteLock/ReentrantReadWriteLock()|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/dangdang/config/service/GeneralConfigGroup/register(com.dangdang.config.service.observer.IObserver)|",
+      "|java+constructor:///java/util/concurrent/locks/ReentrantReadWriteLock/ReentrantReadWriteLock()|",
+      "|java+method:///com/dangdang/config/service/sugar/RefreshableBox/init()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.guava:guava:17.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.dangdang:config-toolkit:3.3.0-RELEASE",
+    "coordinatesV2": "com.dangdang:config-toolkit:3.2.5-RELEASE",
+    "caller": "|java+method:///com/dangdang/config/service/zookeeper/ZookeeperConfigGroup/reloadKey(java.lang.String)|",
+    "called": "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///com/dangdang/config/service/zookeeper/ZookeeperConfigGroup/loadKey(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang3/tuple/Pair/getKey()|",
+      "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+      "|java+method:///com/dangdang/config/service/GeneralConfigGroup/put(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/commons/lang3/tuple/Pair/getValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/dangdang/config/service/util/Tuple/getSecond()|",
+      "|java+method:///com/dangdang/config/service/zookeeper/ZookeeperConfigGroup/loadKey(java.lang.String)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///com/dangdang/config/service/util/Tuple/getFirst()|",
+      "|java+method:///com/dangdang/config/service/GeneralConfigGroup/put(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "com.google.guava:guava:17.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.dangdang:config-toolkit:3.3.0-RELEASE",
+    "coordinatesV2": "com.dangdang:config-toolkit:3.2.5-RELEASE",
+    "caller": "|java+method:///com/dangdang/config/service/GeneralConfigGroup/cleanAndPutAll(java.util.Map)|",
+    "called": "|java+method:///com/google/common/collect/Iterables/filter(java.lang.Iterable,com.google.common.base.Predicate)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///java/util/Set/addAll(java.util.Collection)|",
+      "|java+method:///com/google/common/collect/Iterables/filter(java.lang.Iterable,com.google.common.base.Predicate)|",
+      "|java+method:///com/google/common/collect/Sets/newHashSet()|",
+      "|java+method:///java/util/Map/size()|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/util/concurrent/ConcurrentHashMap/clear()|",
+      "|java+method:///com/dangdang/config/service/GeneralConfigGroup/put(java.lang.String,java.lang.String)|",
+      "|java+method:///com/dangdang/config/service/GeneralConfigGroup/size()|",
+      "|java+constructor:///com/dangdang/config/service/GeneralConfigGroup$1/GeneralConfigGroup$1(com.dangdang.config.service.GeneralConfigGroup,java.util.Set)|",
+      "|java+method:///com/dangdang/config/service/GeneralConfigGroup/keySet()|",
+      "|java+method:///com/google/common/collect/Sets/newHashSet(java.lang.Iterable)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Map/keySet()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///java/util/concurrent/ConcurrentHashMap/remove(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///java/util/HashSet/iterator()|",
+      "|java+method:///com/dangdang/config/service/GeneralConfigGroup/size()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/dangdang/config/service/GeneralConfigGroup/keySet()|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///java/util/Map/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/util/Map/containsKey(java.lang.Object)|",
+      "|java+method:///java/util/concurrent/ConcurrentHashMap/clear()|",
+      "|java+method:///com/dangdang/config/service/GeneralConfigGroup/put(java.lang.String,java.lang.String)|",
+      "|java+constructor:///java/util/HashSet/HashSet(java.util.Collection)|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///java/util/concurrent/ConcurrentHashMap/remove(java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:17.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.dangdang:config-toolkit:3.3.0-RELEASE",
+    "coordinatesV2": "com.dangdang:config-toolkit:3.2.5-RELEASE",
+    "caller": "|java+method:///com/dangdang/config/service/zookeeper/ZookeeperConfigGroup/exportProperties()|",
+    "called": "|java+method:///com/google/common/collect/Maps/newHashMap(java.util.Map)|",
+    "v1Body": [
+      "|java+method:///com/google/common/collect/Maps/newHashMap(java.util.Map)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/HashMap/HashMap(java.util.Map)|"
+    ],
+    "affectedLib": "com.google.guava:guava:17.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.dangdang:config-toolkit:3.2.5-RELEASE",
+    "coordinatesV2": "com.dangdang:config-toolkit:3.3.0-RELEASE",
+    "caller": "|java+method:///com/dangdang/config/service/zookeeper/ZookeeperConfigGroup/initConfigs()|",
+    "called": "|java+method:///org/apache/curator/framework/CuratorFrameworkFactory/newClient(java.lang.String,org.apache.curator.RetryPolicy)|",
+    "v1Body": [
+      "|java+method:///com/dangdang/config/service/zookeeper/ZookeeperConfigProfile/getKeysSpecified()|",
+      "|java+method:///org/apache/curator/framework/CuratorFramework/getCuratorListenable()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/dangdang/config/service/zookeeper/ConfigLocalCache/saveLocalCache(com.dangdang.config.service.zookeeper.ZookeeperConfigGroup,java.lang.String)|",
+      "|java+method:///com/dangdang/config/service/zookeeper/ZookeeperConfigGroup/loadNode()|",
+      "|java+method:///com/dangdang/config/service/zookeeper/ZookeeperConfigProfile/getKeyLoadingMode()|",
+      "|java+method:///org/apache/curator/framework/listen/Listenable/addListener(java.lang.Object)|",
+      "|java+method:///org/apache/curator/framework/CuratorFramework/start()|",
+      "|java+method:///com/dangdang/config/service/zookeeper/ZookeeperConfigProfile/getConnectStr()|",
+      "|java+method:///org/apache/curator/framework/CuratorFrameworkFactory/newClient(java.lang.String,org.apache.curator.RetryPolicy)|",
+      "|java+method:///com/dangdang/config/service/zookeeper/ZookeeperConfigProfile/getRetryPolicy()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/curator/framework/CuratorFramework/getCuratorListenable()|",
+      "|java+method:///com/dangdang/config/service/zookeeper/ZookeeperConfigGroup/loadNode()|",
+      "|java+method:///org/apache/curator/framework/listen/Listenable/addListener(java.lang.Object)|",
+      "|java+method:///org/apache/curator/framework/CuratorFramework/start()|",
+      "|java+method:///com/dangdang/config/service/zookeeper/ZookeeperConfigProfile/getConnectStr()|",
+      "|java+method:///org/apache/curator/framework/CuratorFrameworkFactory/newClient(java.lang.String,org.apache.curator.RetryPolicy)|",
+      "|java+method:///com/dangdang/config/service/zookeeper/ZookeeperConfigProfile/getRetryPolicy()|",
+      "|java+method:///com/dangdang/config/service/zookeeper/ConfigLocalCache/saveLocalCache(com.dangdang.config.service.zookeeper.ZookeeperConfigGroup,java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.curator:curator-framework:4.0.1",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,105 @@
+[
+  {
+    "coordinatesV1": "org.openrdf.sesame:sesame-rio-ntriples:2.7.0-beta2",
+    "coordinatesV2": "org.openrdf.sesame:sesame-rio-ntriples:2.7.0",
+    "caller": "|java+method:///org/openrdf/rio/ntriples/NTriplesParser/createLiteral(java.lang.String,java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/openrdf/rio/helpers/RDFParserBase/createLiteral(java.lang.String,java.lang.String,org.openrdf.model.URI)|",
+    "v1Body": [
+      "|java+method:///org/openrdf/rio/ntriples/NTriplesParser/reportError(java.lang.String)|",
+      "|java+method:///org/openrdf/rio/ntriples/NTriplesUtil/unescapeString(java.lang.String)|",
+      "|java+method:///org/openrdf/rio/helpers/RDFParserBase/createLiteral(java.lang.String,java.lang.String,org.openrdf.model.URI)|",
+      "|java+method:///org/openrdf/rio/ntriples/NTriplesParser/createURI(java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///java/lang/IllegalArgumentException/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/openrdf/rio/ntriples/NTriplesUtil/unescapeString(java.lang.String)|",
+      "|java+method:///org/openrdf/rio/helpers/RDFParserBase/createLiteral(java.lang.String,java.lang.String,org.openrdf.model.URI)|",
+      "|java+method:///org/openrdf/rio/ntriples/NTriplesParser/reportError(java.lang.String,org.openrdf.rio.RioSetting)|",
+      "|java+method:///org/openrdf/rio/ntriples/NTriplesParser/createURI(java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///java/lang/IllegalArgumentException/getMessage()|"
+    ],
+    "affectedLib": "org.openrdf.sesame:sesame-rio-api:2.7.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openrdf.sesame:sesame-rio-ntriples:2.7.0-beta2",
+    "coordinatesV2": "org.openrdf.sesame:sesame-rio-ntriples:2.7.0",
+    "caller": "|java+method:///org/openrdf/rio/ntriples/NTriplesParser/parseTriple(int)|",
+    "called": "|java+method:///org/openrdf/rio/ParserConfig/isNonFatalError(org.openrdf.rio.RioSetting)|",
+    "v1Body": [
+      "|java+method:///org/openrdf/rio/ntriples/NTriplesParser/skipLine(int)|",
+      "|java+method:///org/openrdf/rio/ntriples/NTriplesParser/reportError(java.lang.String)|",
+      "|java+method:///org/openrdf/rio/ntriples/NTriplesParser/createStatement(org.openrdf.model.Resource,org.openrdf.model.URI,org.openrdf.model.Value)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/openrdf/rio/ntriples/NTriplesParser/assertLineTerminates(int)|",
+      "|java+method:///org/openrdf/rio/ntriples/NTriplesParser/throwEOFException()|",
+      "|java+method:///org/openrdf/rio/ntriples/NTriplesParser/stopAtFirstError()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+method:///org/openrdf/rio/ntriples/NTriplesParser/skipWhitespace(int)|",
+      "|java+method:///org/openrdf/rio/RDFHandler/handleStatement(org.openrdf.model.Statement)|",
+      "|java+method:///org/openrdf/rio/ntriples/NTriplesParser/parseSubject(int)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/openrdf/rio/ntriples/NTriplesParser/parseObject(int)|",
+      "|java+method:///org/openrdf/rio/ntriples/NTriplesParser/parsePredicate(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/openrdf/rio/ntriples/NTriplesParser/skipLine(int)|",
+      "|java+method:///org/openrdf/rio/ntriples/NTriplesParser/createStatement(org.openrdf.model.Resource,org.openrdf.model.URI,org.openrdf.model.Value)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/openrdf/rio/ntriples/NTriplesParser/assertLineTerminates(int)|",
+      "|java+method:///org/openrdf/rio/ntriples/NTriplesParser/getParserConfig()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+method:///org/openrdf/rio/ntriples/NTriplesParser/skipWhitespace(int)|",
+      "|java+method:///org/openrdf/rio/ntriples/NTriplesParser/parseSubject(int)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/openrdf/rio/ParserConfig/get(org.openrdf.rio.RioSetting)|",
+      "|java+method:///org/openrdf/rio/ntriples/NTriplesParser/throwEOFException()|",
+      "|java+method:///org/openrdf/rio/ntriples/NTriplesParser/parseObject(int)|",
+      "|java+method:///org/openrdf/rio/ntriples/NTriplesParser/parsePredicate(int)|",
+      "|java+method:///org/openrdf/rio/ntriples/NTriplesParser/reportError(java.lang.String,org.openrdf.rio.RioSetting)|",
+      "|java+method:///org/openrdf/rio/RDFHandler/handleStatement(org.openrdf.model.Statement)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+method:///org/openrdf/rio/ParserConfig/isNonFatalError(org.openrdf.rio.RioSetting)|"
+    ],
+    "affectedLib": "org.openrdf.sesame:sesame-rio-api:2.7.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openrdf.sesame:sesame-rio-ntriples:2.7.0-beta2",
+    "coordinatesV2": "org.openrdf.sesame:sesame-rio-ntriples:2.7.0",
+    "caller": "|java+method:///org/openrdf/rio/ntriples/NTriplesParser/createURI(java.lang.String)|",
+    "called": "|java+method:///org/openrdf/rio/helpers/RDFParserBase/createURI(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/openrdf/rio/ntriples/NTriplesParser/reportError(java.lang.String)|",
+      "|java+method:///org/openrdf/rio/ntriples/NTriplesUtil/unescapeString(java.lang.String)|",
+      "|java+method:///org/openrdf/rio/helpers/RDFParserBase/createURI(java.lang.String)|",
+      "|java+method:///java/lang/IllegalArgumentException/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/openrdf/rio/ntriples/NTriplesUtil/unescapeString(java.lang.String)|",
+      "|java+method:///org/openrdf/rio/helpers/RDFParserBase/createURI(java.lang.String)|",
+      "|java+method:///java/lang/IllegalArgumentException/getMessage()|",
+      "|java+method:///org/openrdf/rio/ntriples/NTriplesParser/reportError(java.lang.String,org.openrdf.rio.RioSetting)|"
+    ],
+    "affectedLib": "org.openrdf.sesame:sesame-rio-api:2.7.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openrdf.sesame:sesame-rio-ntriples:2.7.0-beta2",
+    "coordinatesV2": "org.openrdf.sesame:sesame-rio-ntriples:2.7.0",
+    "caller": "|java+constructor:///org/openrdf/rio/ntriples/NTriplesWriter/NTriplesWriter(java.io.Writer)|",
+    "called": "|java+constructor:///org/openrdf/rio/helpers/RDFWriterBase/RDFWriterBase()|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/openrdf/rio/helpers/RDFWriterBase/RDFWriterBase()|"
+    ],
+    "affectedLib": "org.openrdf.sesame:sesame-rio-api:2.7.0",
+    "change": "UPDATED"
+  }
+]

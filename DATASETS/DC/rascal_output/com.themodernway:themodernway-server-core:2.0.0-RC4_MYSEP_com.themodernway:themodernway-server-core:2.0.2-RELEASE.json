@@ -1,0 +1,86 @@
+[
+  {
+    "coordinatesV1": "com.themodernway:themodernway-server-core:2.0.0-RC4",
+    "coordinatesV2": "com.themodernway:themodernway-server-core:2.0.2-RELEASE",
+    "caller": "|java+method:///com/themodernway/server/core/json/binder/AbstractDataBinder/toJSONObject(java.lang.Object)|",
+    "called": "|java+method:///com/themodernway/common/api/java/util/CommonOps/requireNonNull(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/themodernway/server/core/json/binder/JSONBinder$CoreObjectMapper/writeValueAsString(java.lang.Object)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+constructor:///com/themodernway/server/core/json/ParserException/ParserException(java.lang.Exception)|",
+      "|java+method:///com/themodernway/server/core/json/binder/AbstractDataBinder/getMapperForJSON()|",
+      "|java+method:///com/themodernway/server/core/json/binder/AbstractDataBinder/MAKE(java.util.Map)|",
+      "|java+method:///com/themodernway/server/core/json/binder/AbstractDataBinder/bindJSON(java.lang.String)|",
+      "|java+method:///com/themodernway/common/api/java/util/CommonOps/requireNonNull(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/themodernway/server/core/json/binder/JSONBinder$CoreObjectMapper/writeValueAsString(java.lang.Object)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+constructor:///com/themodernway/server/core/json/ParserException/ParserException(java.lang.Exception)|",
+      "|java+method:///com/themodernway/server/core/json/binder/AbstractDataBinder/MAKE(java.util.Map)|",
+      "|java+method:///com/themodernway/common/api/java/util/CommonOps/requireNonNull(java.lang.Object)|",
+      "|java+method:///com/themodernway/server/core/json/binder/AbstractDataBinder/getMapperForJSON()|",
+      "|java+method:///com/themodernway/server/core/json/binder/AbstractDataBinder/bindJSON(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "com.themodernway:themodernway-common:2.0.2-RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.themodernway:themodernway-server-core:2.0.0-RC4",
+    "coordinatesV2": "com.themodernway:themodernway-server-core:2.0.2-RELEASE",
+    "caller": "|java+method:///com/themodernway/server/core/security/SimpleHexEncoder/encode(byte%5B%5D)|",
+    "called": "|java+method:///com/themodernway/common/api/java/util/CommonOps/requireNonNull(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/codec/binary/Hex/encodeHexString(byte%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/themodernway/common/api/java/util/CommonOps/requireNonNull(java.lang.Object)|",
+      "|java+method:///org/apache/commons/codec/binary/Hex/encodeHexString(byte%5B%5D)|"
+    ],
+    "affectedLib": "com.themodernway:themodernway-common:2.0.2-RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.themodernway:themodernway-server-core:2.0.0-RC4",
+    "coordinatesV2": "com.themodernway:themodernway-server-core:2.0.2-RELEASE",
+    "caller": "|java+constructor:///com/themodernway/server/core/security/AESStringCryptoProvider/AESStringCryptoProvider(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///com/themodernway/common/api/java/util/CommonOps/requireNonNull(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/springframework/security/crypto/encrypt/Encryptors/delux(java.lang.CharSequence,java.lang.CharSequence)|",
+      "|java+method:///com/themodernway/common/api/java/util/CommonOps/requireNonNull(java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/security/crypto/encrypt/Encryptors/delux(java.lang.CharSequence,java.lang.CharSequence)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/themodernway/server/core/security/SimpleCryptoKeysGenerator/isPassValid(java.lang.String)|",
+      "|java+method:///com/themodernway/server/core/security/SimpleCryptoKeysGenerator/getCryptoKeysGenerator()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/themodernway/common/api/java/util/CommonOps/requireNonNull(java.lang.Object)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "com.themodernway:themodernway-common:2.0.2-RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.themodernway:themodernway-server-core:2.0.0-RC4",
+    "coordinatesV2": "com.themodernway:themodernway-server-core:2.0.2-RELEASE",
+    "caller": "|java+constructor:///com/themodernway/server/core/security/CryptoProvider/CryptoProvider(java.lang.String,java.lang.String,int)|",
+    "called": "|java+method:///com/themodernway/common/api/java/util/CommonOps/requireNonNull(java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///com/themodernway/server/core/security/CryptoProvider/CryptoProvider(java.lang.String,java.lang.String,java.lang.String,int)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/themodernway/server/core/security/SimpleSHA512HashProvider/SimpleSHA512HashProvider()|",
+      "|java+method:///com/themodernway/server/core/security/SimpleCryptoKeysGenerator/getCryptoKeysGenerator()|",
+      "|java+method:///com/themodernway/common/api/java/util/CommonOps/requireNonNull(java.lang.Object)|",
+      "|java+constructor:///com/themodernway/server/core/security/AESStringCryptoProvider/AESStringCryptoProvider(java.lang.String,java.lang.String)|",
+      "|java+constructor:///com/themodernway/server/core/security/SimpleBCryptHashProvider/SimpleBCryptHashProvider(int)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.themodernway:themodernway-common:2.0.2-RELEASE",
+    "change": "UPDATED"
+  }
+]

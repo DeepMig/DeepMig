@@ -1,0 +1,160 @@
+[
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-basic:5.3.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-basic:5.3.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/web/config/CasBasicAuthenticationConfiguration/basicPrincipalFactory()|",
+    "called": "|java+method:///org/apereo/cas/authentication/principal/PrincipalFactoryUtils/newPrincipalFactory()|",
+    "v1Body": [
+      "|java+constructor:///org/apereo/cas/authentication/principal/DefaultPrincipalFactory/DefaultPrincipalFactory()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apereo/cas/authentication/principal/PrincipalFactoryUtils/newPrincipalFactory()|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-core-authentication-api:5.3.0-RC4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-basic:5.3.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-basic:5.3.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/web/flow/BasicAuthenticationAction/constructCredentialsFromRequest(org.springframework.webflow.execution.RequestContext)|",
+    "called": "|java+constructor:///org/apereo/cas/authentication/UsernamePasswordCredential/UsernamePasswordCredential(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apereo/cas/util/Pac4jUtils/getPac4jJ2EContext(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///org/pac4j/core/credentials/extractor/BasicAuthExtractor/BasicAuthExtractor(java.lang.String)|",
+      "|java+method:///org/pac4j/core/credentials/UsernamePasswordCredentials/getUsername()|",
+      "|java+method:///org/pac4j/core/credentials/UsernamePasswordCredentials/getPassword()|",
+      "|java+method:///org/apereo/cas/web/support/WebUtils/getHttpServletRequestFromExternalWebflowContext(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+method:///org/pac4j/core/credentials/extractor/BasicAuthExtractor/extract(org.pac4j.core.context.WebContext)|",
+      "|java+constructor:///org/apereo/cas/authentication/UsernamePasswordCredential/UsernamePasswordCredential(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/apereo/cas/web/support/WebUtils/getHttpServletResponseFromExternalWebflowContext(org.springframework.webflow.execution.RequestContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apereo/cas/util/Pac4jUtils/getPac4jJ2EContext(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/pac4j/core/credentials/UsernamePasswordCredentials/getUsername()|",
+      "|java+constructor:///org/pac4j/core/credentials/extractor/BasicAuthExtractor/BasicAuthExtractor()|",
+      "|java+method:///org/pac4j/core/credentials/UsernamePasswordCredentials/getPassword()|",
+      "|java+method:///org/apereo/cas/web/support/WebUtils/getHttpServletResponseFromExternalWebflowContext(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///org/apereo/cas/web/support/WebUtils/getHttpServletRequestFromExternalWebflowContext(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+method:///org/pac4j/core/credentials/extractor/BasicAuthExtractor/extract(org.pac4j.core.context.WebContext)|",
+      "|java+constructor:///org/apereo/cas/authentication/UsernamePasswordCredential/UsernamePasswordCredential(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-core-authentication-api:5.3.0-RC4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-basic:5.3.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-basic:5.3.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/web/flow/BasicAuthenticationAction/constructCredentialsFromRequest(org.springframework.webflow.execution.RequestContext)|",
+    "called": "|java+method:///org/pac4j/core/credentials/extractor/BasicAuthExtractor/extract(org.pac4j.core.context.WebContext)|",
+    "v1Body": [
+      "|java+method:///org/apereo/cas/util/Pac4jUtils/getPac4jJ2EContext(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///org/pac4j/core/credentials/extractor/BasicAuthExtractor/BasicAuthExtractor(java.lang.String)|",
+      "|java+method:///org/pac4j/core/credentials/UsernamePasswordCredentials/getUsername()|",
+      "|java+method:///org/pac4j/core/credentials/UsernamePasswordCredentials/getPassword()|",
+      "|java+method:///org/apereo/cas/web/support/WebUtils/getHttpServletRequestFromExternalWebflowContext(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+method:///org/pac4j/core/credentials/extractor/BasicAuthExtractor/extract(org.pac4j.core.context.WebContext)|",
+      "|java+constructor:///org/apereo/cas/authentication/UsernamePasswordCredential/UsernamePasswordCredential(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/apereo/cas/web/support/WebUtils/getHttpServletResponseFromExternalWebflowContext(org.springframework.webflow.execution.RequestContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apereo/cas/util/Pac4jUtils/getPac4jJ2EContext(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/pac4j/core/credentials/UsernamePasswordCredentials/getUsername()|",
+      "|java+constructor:///org/pac4j/core/credentials/extractor/BasicAuthExtractor/BasicAuthExtractor()|",
+      "|java+method:///org/pac4j/core/credentials/UsernamePasswordCredentials/getPassword()|",
+      "|java+method:///org/apereo/cas/web/support/WebUtils/getHttpServletResponseFromExternalWebflowContext(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///org/apereo/cas/web/support/WebUtils/getHttpServletRequestFromExternalWebflowContext(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+method:///org/pac4j/core/credentials/extractor/BasicAuthExtractor/extract(org.pac4j.core.context.WebContext)|",
+      "|java+constructor:///org/apereo/cas/authentication/UsernamePasswordCredential/UsernamePasswordCredential(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.pac4j:pac4j-core:3.0.0-RC2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-basic:5.3.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-basic:5.3.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/web/flow/BasicAuthenticationAction/constructCredentialsFromRequest(org.springframework.webflow.execution.RequestContext)|",
+    "called": "|java+method:///org/apereo/cas/web/support/WebUtils/getHttpServletResponseFromExternalWebflowContext(org.springframework.webflow.execution.RequestContext)|",
+    "v1Body": [
+      "|java+method:///org/apereo/cas/util/Pac4jUtils/getPac4jJ2EContext(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///org/pac4j/core/credentials/extractor/BasicAuthExtractor/BasicAuthExtractor(java.lang.String)|",
+      "|java+method:///org/pac4j/core/credentials/UsernamePasswordCredentials/getUsername()|",
+      "|java+method:///org/pac4j/core/credentials/UsernamePasswordCredentials/getPassword()|",
+      "|java+method:///org/apereo/cas/web/support/WebUtils/getHttpServletRequestFromExternalWebflowContext(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+method:///org/pac4j/core/credentials/extractor/BasicAuthExtractor/extract(org.pac4j.core.context.WebContext)|",
+      "|java+constructor:///org/apereo/cas/authentication/UsernamePasswordCredential/UsernamePasswordCredential(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/apereo/cas/web/support/WebUtils/getHttpServletResponseFromExternalWebflowContext(org.springframework.webflow.execution.RequestContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apereo/cas/util/Pac4jUtils/getPac4jJ2EContext(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/pac4j/core/credentials/UsernamePasswordCredentials/getUsername()|",
+      "|java+constructor:///org/pac4j/core/credentials/extractor/BasicAuthExtractor/BasicAuthExtractor()|",
+      "|java+method:///org/pac4j/core/credentials/UsernamePasswordCredentials/getPassword()|",
+      "|java+method:///org/apereo/cas/web/support/WebUtils/getHttpServletResponseFromExternalWebflowContext(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///org/apereo/cas/web/support/WebUtils/getHttpServletRequestFromExternalWebflowContext(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+method:///org/pac4j/core/credentials/extractor/BasicAuthExtractor/extract(org.pac4j.core.context.WebContext)|",
+      "|java+constructor:///org/apereo/cas/authentication/UsernamePasswordCredential/UsernamePasswordCredential(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-core-web-api:5.3.0-RC4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-basic:5.3.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-basic:5.3.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/web/flow/BasicAuthenticationAction/constructCredentialsFromRequest(org.springframework.webflow.execution.RequestContext)|",
+    "called": "|java+method:///org/apereo/cas/util/Pac4jUtils/getPac4jJ2EContext(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+    "v1Body": [
+      "|java+method:///org/apereo/cas/util/Pac4jUtils/getPac4jJ2EContext(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///org/pac4j/core/credentials/extractor/BasicAuthExtractor/BasicAuthExtractor(java.lang.String)|",
+      "|java+method:///org/pac4j/core/credentials/UsernamePasswordCredentials/getUsername()|",
+      "|java+method:///org/pac4j/core/credentials/UsernamePasswordCredentials/getPassword()|",
+      "|java+method:///org/apereo/cas/web/support/WebUtils/getHttpServletRequestFromExternalWebflowContext(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+method:///org/pac4j/core/credentials/extractor/BasicAuthExtractor/extract(org.pac4j.core.context.WebContext)|",
+      "|java+constructor:///org/apereo/cas/authentication/UsernamePasswordCredential/UsernamePasswordCredential(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/apereo/cas/web/support/WebUtils/getHttpServletResponseFromExternalWebflowContext(org.springframework.webflow.execution.RequestContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apereo/cas/util/Pac4jUtils/getPac4jJ2EContext(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/pac4j/core/credentials/UsernamePasswordCredentials/getUsername()|",
+      "|java+constructor:///org/pac4j/core/credentials/extractor/BasicAuthExtractor/BasicAuthExtractor()|",
+      "|java+method:///org/pac4j/core/credentials/UsernamePasswordCredentials/getPassword()|",
+      "|java+method:///org/apereo/cas/web/support/WebUtils/getHttpServletResponseFromExternalWebflowContext(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///org/apereo/cas/web/support/WebUtils/getHttpServletRequestFromExternalWebflowContext(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+method:///org/pac4j/core/credentials/extractor/BasicAuthExtractor/extract(org.pac4j.core.context.WebContext)|",
+      "|java+constructor:///org/apereo/cas/authentication/UsernamePasswordCredential/UsernamePasswordCredential(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-core-util-api:5.3.0-RC4",
+    "change": "UPDATED"
+  }
+]

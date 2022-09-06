@@ -1,0 +1,60 @@
+[
+  {
+    "coordinatesV1": "com.sun.jersey.samples:jsonp:1.6",
+    "coordinatesV2": "com.sun.jersey.samples:jsonp:1.5-ea09",
+    "caller": "|java+method:///com/sun/jersey/samples/jsonp/Main/startServer()|",
+    "called": "|java+method:///com/sun/jersey/api/container/grizzly/GrizzlyWebContainerFactory/create(java.net.URI,java.util.Map)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///com/sun/jersey/api/container/grizzly/GrizzlyWebContainerFactory/create(java.net.URI,java.util.Map)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///com/sun/jersey/api/container/grizzly2/GrizzlyWebContainerFactory/create(java.net.URI,java.util.Map)|"
+    ],
+    "affectedLib": "com.sun.jersey:jersey-server:1.5-ea09",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.sun.jersey.samples:jsonp:1.6",
+    "coordinatesV2": "com.sun.jersey.samples:jsonp:1.5-ea09",
+    "caller": "|java+method:///com/sun/jersey/samples/jsonp/Main/main(java.lang.String%5B%5D)|",
+    "called": "|java+method:///com/sun/grizzly/http/SelectorThread/stopEndpoint()|",
+    "v1Body": [
+      "|java+method:///com/sun/grizzly/http/SelectorThread/stopEndpoint()|",
+      "|java+method:///com/sun/jersey/samples/jsonp/Main/startServer()|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/io/InputStream/read()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/sun/jersey/samples/jsonp/Main/startServer()|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/io/InputStream/read()|",
+      "|java+method:///org/glassfish/grizzly/http/server/HttpServer/stop()|"
+    ],
+    "affectedLib": "com.sun.grizzly:grizzly-servlet-webserver:1.9.18-i",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.sun.jersey.samples:jsonp:1.5-ea09",
+    "coordinatesV2": "com.sun.jersey.samples:jsonp:1.6",
+    "caller": "|java+method:///com/sun/jersey/samples/jsonp/Main/startServer()|",
+    "called": "|java+method:///com/sun/jersey/api/container/grizzly2/GrizzlyWebContainerFactory/create(java.net.URI,java.util.Map)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///com/sun/jersey/api/container/grizzly/GrizzlyWebContainerFactory/create(java.net.URI,java.util.Map)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///com/sun/jersey/api/container/grizzly2/GrizzlyWebContainerFactory/create(java.net.URI,java.util.Map)|"
+    ],
+    "affectedLib": "com.sun.jersey:jersey-grizzly2:1.6",
+    "change": "ADDED"
+  }
+]

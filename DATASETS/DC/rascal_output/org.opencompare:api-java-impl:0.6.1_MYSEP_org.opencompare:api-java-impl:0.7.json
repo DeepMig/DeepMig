@@ -1,0 +1,236 @@
+[
+  {
+    "coordinatesV1": "org.opencompare:api-java-impl:0.6.1",
+    "coordinatesV2": "org.opencompare:api-java-impl:0.7",
+    "caller": "|java+method:///org/opencompare/api/java/impl/io/KMFJSONLoader/load(java.io.File)|",
+    "called": "|java+method:///play/api/libs/json/Reads$/JsObjectReads()|",
+    "v1Body": [
+      "|java+method:///org/opencompare/api/java/impl/io/KMFJSONLoader/load(java.lang.String)|",
+      "|java+method:///java/nio/file/Files/readAllBytes(java.nio.file.Path)|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D,java.nio.charset.Charset)|",
+      "|java+method:///java/io/File/toPath()|"
+    ],
+    "v2Body": [
+      "|java+method:///play/api/libs/json/JsValue/as(play.api.libs.json.Reads)|",
+      "|java+method:///org/opencompare/api/java/impl/io/KMFJSONLoader/load(play.api.libs.json.JsObject)|",
+      "|java+method:///play/api/libs/json/Json$/parse(java.io.InputStream)|",
+      "|java+method:///java/io/FileInputStream/close()|",
+      "|java+method:///scala/collection/JavaConversions$/seqAsJavaList(scala.collection.Seq)|",
+      "|java+constructor:///java/io/FileInputStream/FileInputStream(java.io.File)|",
+      "|java+method:///play/api/libs/json/Reads$/JsObjectReads()|"
+    ],
+    "affectedLib": "com.typesafe.play:play-json_2.11:2.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.opencompare:api-java-impl:0.6.1",
+    "coordinatesV2": "org.opencompare:api-java-impl:0.7",
+    "caller": "|java+method:///org/opencompare/api/java/impl/io/KMFJSONLoader/load(java.lang.String)|",
+    "called": "|java+method:///play/api/libs/json/Reads$/JsObjectReads()|",
+    "v1Body": [
+      "|java+method:///org/kevoree/modeling/api/json/JSONModelLoader/loadModelFromString(java.lang.String)|",
+      "|java+method:///org/opencompare/api/java/impl/io/KMFJSONLoader/load(java.util.List)|"
+    ],
+    "v2Body": [
+      "|java+method:///play/api/libs/json/JsValue/as(play.api.libs.json.Reads)|",
+      "|java+method:///org/opencompare/api/java/impl/io/KMFJSONLoader/load(play.api.libs.json.JsObject)|",
+      "|java+method:///scala/collection/JavaConversions$/seqAsJavaList(scala.collection.Seq)|",
+      "|java+method:///play/api/libs/json/Reads$/JsObjectReads()|",
+      "|java+method:///play/api/libs/json/Json$/parse(java.lang.String)|"
+    ],
+    "affectedLib": "com.typesafe.play:play-json_2.11:2.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.opencompare:api-java-impl:0.6.1",
+    "coordinatesV2": "org.opencompare:api-java-impl:0.7",
+    "caller": "|java+method:///org/opencompare/api/java/impl/io/KMFJSONExporter/export(org.opencompare.api.java.PCMContainer)|",
+    "called": "|java+constructor:///play/api/libs/json/JsArray/JsArray(scala.collection.Seq)|",
+    "v1Body": [
+      "|java+method:///org/opencompare/api/java/PCMContainer/getPcm()|",
+      "|java+method:///org/opencompare/api/java/impl/io/KMFJSONExporter/toJson(org.opencompare.api.java.PCM)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/opencompare/api/java/impl/io/KMFJSONExporter/encoder()|",
+      "|java+method:///org/opencompare/api/java/impl/io/KMFJSONExporter/serializer()|",
+      "|java+constructor:///play/api/libs/json/JsArray/JsArray(scala.collection.Seq)|",
+      "|java+method:///org/opencompare/api/java/PCMMetadata/getLicense()|",
+      "|java+method:///play/api/libs/json/JsObject$/apply(scala.collection.Seq)|",
+      "|java+method:///org/opencompare/api/java/PCMMetadata/getSource()|",
+      "|java+method:///org/opencompare/api/java/PCMContainer/getPcm()|",
+      "|java+method:///org/kevoree/modeling/api/json/JSONModelSerializer/serialize(org.kevoree.modeling.api.KMFContainer)|",
+      "|java+method:///org/opencompare/api/java/impl/PCMImpl/getKpcm()|",
+      "|java+method:///scala/collection/mutable/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/opencompare/api/java/impl/io/PCMBase64Encoder/encode(org.opencompare.api.java.PCM)|",
+      "|java+method:///scala/collection/mutable/StringBuilder/toString()|",
+      "|java+method:///scala/collection/mutable/Buffer/map(scala.Function1,scala.collection.generic.CanBuildFrom)|",
+      "|java+method:///scala/collection/immutable/List/mkString(java.lang.String)|",
+      "|java+method:///scala/collection/mutable/Buffer$/canBuildFrom()|",
+      "|java+method:///org/opencompare/api/java/impl/PCMImpl/getConcreteFeatures()|",
+      "|java+method:///scala/Predef$/ArrowAssoc(java.lang.Object)|",
+      "|java+method:///scala/Predef$/wrapRefArray(java.lang.Object%5B%5D)|",
+      "|java+method:///org/opencompare/api/java/impl/PCMImpl/getProducts()|",
+      "|java+method:///scala/collection/Seq$/apply(scala.collection.Seq)|",
+      "|java+method:///org/opencompare/api/java/PCMMetadata/getCreator()|",
+      "|java+method:///scala/Predef$ArrowAssoc$/$minus$greater$extension(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/opencompare/api/java/impl/io/PCMBase64Encoder/decode(org.opencompare.api.java.PCM)|",
+      "|java+method:///org/opencompare/api/java/PCMContainer/getMetadata()|",
+      "|java+method:///org/opencompare/api/java/impl/io/KMFJSONExporter/base64Encoding()|",
+      "|java+method:///scala/collection/immutable/List$/apply(scala.collection.Seq)|",
+      "|java+method:///play/api/libs/json/Json$/prettyPrint(play.api.libs.json.JsValue)|",
+      "|java+method:///scala/collection/JavaConversions$/asScalaBuffer(java.util.List)|",
+      "|java+constructor:///play/api/libs/json/JsString/JsString(java.lang.String)|",
+      "|java+constructor:///scala/collection/mutable/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/opencompare/api/java/impl/io/KMFJSONExporter$$anonfun$1/KMFJSONExporter$$anonfun$1(org.opencompare.api.java.impl.io.KMFJSONExporter,org.opencompare.api.java.PCMMetadata)|",
+      "|java+constructor:///org/opencompare/api/java/impl/io/KMFJSONExporter$$anonfun$2/KMFJSONExporter$$anonfun$2(org.opencompare.api.java.impl.io.KMFJSONExporter,org.opencompare.api.java.PCMMetadata)|"
+    ],
+    "affectedLib": "com.typesafe.play:play-json_2.11:2.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.opencompare:api-java-impl:0.6.1",
+    "coordinatesV2": "org.opencompare:api-java-impl:0.7",
+    "caller": "|java+method:///org/opencompare/api/java/impl/io/KMFJSONLoader/load(java.io.File)|",
+    "called": "|java+method:///scala/collection/JavaConversions$/seqAsJavaList(scala.collection.Seq)|",
+    "v1Body": [
+      "|java+method:///org/opencompare/api/java/impl/io/KMFJSONLoader/load(java.lang.String)|",
+      "|java+method:///java/nio/file/Files/readAllBytes(java.nio.file.Path)|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D,java.nio.charset.Charset)|",
+      "|java+method:///java/io/File/toPath()|"
+    ],
+    "v2Body": [
+      "|java+method:///play/api/libs/json/JsValue/as(play.api.libs.json.Reads)|",
+      "|java+method:///org/opencompare/api/java/impl/io/KMFJSONLoader/load(play.api.libs.json.JsObject)|",
+      "|java+method:///play/api/libs/json/Json$/parse(java.io.InputStream)|",
+      "|java+method:///java/io/FileInputStream/close()|",
+      "|java+method:///scala/collection/JavaConversions$/seqAsJavaList(scala.collection.Seq)|",
+      "|java+constructor:///java/io/FileInputStream/FileInputStream(java.io.File)|",
+      "|java+method:///play/api/libs/json/Reads$/JsObjectReads()|"
+    ],
+    "affectedLib": "org.scala-lang:scala-library:2.11.7",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.opencompare:api-java-impl:0.6.1",
+    "coordinatesV2": "org.opencompare:api-java-impl:0.7",
+    "caller": "|java+method:///org/opencompare/api/java/impl/io/KMFJSONLoader/load(java.lang.String)|",
+    "called": "|java+method:///scala/collection/JavaConversions$/seqAsJavaList(scala.collection.Seq)|",
+    "v1Body": [
+      "|java+method:///org/kevoree/modeling/api/json/JSONModelLoader/loadModelFromString(java.lang.String)|",
+      "|java+method:///org/opencompare/api/java/impl/io/KMFJSONLoader/load(java.util.List)|"
+    ],
+    "v2Body": [
+      "|java+method:///play/api/libs/json/JsValue/as(play.api.libs.json.Reads)|",
+      "|java+method:///org/opencompare/api/java/impl/io/KMFJSONLoader/load(play.api.libs.json.JsObject)|",
+      "|java+method:///scala/collection/JavaConversions$/seqAsJavaList(scala.collection.Seq)|",
+      "|java+method:///play/api/libs/json/Reads$/JsObjectReads()|",
+      "|java+method:///play/api/libs/json/Json$/parse(java.lang.String)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-library:2.11.7",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.opencompare:api-java-impl:0.6.1",
+    "coordinatesV2": "org.opencompare:api-java-impl:0.7",
+    "caller": "|java+method:///org/opencompare/api/java/impl/io/KMFJSONExporter/export(org.opencompare.api.java.PCMContainer)|",
+    "called": "|java+method:///scala/collection/JavaConversions$/asScalaBuffer(java.util.List)|",
+    "v1Body": [
+      "|java+method:///org/opencompare/api/java/PCMContainer/getPcm()|",
+      "|java+method:///org/opencompare/api/java/impl/io/KMFJSONExporter/toJson(org.opencompare.api.java.PCM)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/opencompare/api/java/impl/io/KMFJSONExporter/encoder()|",
+      "|java+method:///org/opencompare/api/java/impl/io/KMFJSONExporter/serializer()|",
+      "|java+constructor:///play/api/libs/json/JsArray/JsArray(scala.collection.Seq)|",
+      "|java+method:///org/opencompare/api/java/PCMMetadata/getLicense()|",
+      "|java+method:///play/api/libs/json/JsObject$/apply(scala.collection.Seq)|",
+      "|java+method:///org/opencompare/api/java/PCMMetadata/getSource()|",
+      "|java+method:///org/opencompare/api/java/PCMContainer/getPcm()|",
+      "|java+method:///org/kevoree/modeling/api/json/JSONModelSerializer/serialize(org.kevoree.modeling.api.KMFContainer)|",
+      "|java+method:///org/opencompare/api/java/impl/PCMImpl/getKpcm()|",
+      "|java+method:///scala/collection/mutable/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/opencompare/api/java/impl/io/PCMBase64Encoder/encode(org.opencompare.api.java.PCM)|",
+      "|java+method:///scala/collection/mutable/StringBuilder/toString()|",
+      "|java+method:///scala/collection/mutable/Buffer/map(scala.Function1,scala.collection.generic.CanBuildFrom)|",
+      "|java+method:///scala/collection/immutable/List/mkString(java.lang.String)|",
+      "|java+method:///scala/collection/mutable/Buffer$/canBuildFrom()|",
+      "|java+method:///org/opencompare/api/java/impl/PCMImpl/getConcreteFeatures()|",
+      "|java+method:///scala/Predef$/ArrowAssoc(java.lang.Object)|",
+      "|java+method:///scala/Predef$/wrapRefArray(java.lang.Object%5B%5D)|",
+      "|java+method:///org/opencompare/api/java/impl/PCMImpl/getProducts()|",
+      "|java+method:///scala/collection/Seq$/apply(scala.collection.Seq)|",
+      "|java+method:///org/opencompare/api/java/PCMMetadata/getCreator()|",
+      "|java+method:///scala/Predef$ArrowAssoc$/$minus$greater$extension(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/opencompare/api/java/impl/io/PCMBase64Encoder/decode(org.opencompare.api.java.PCM)|",
+      "|java+method:///org/opencompare/api/java/PCMContainer/getMetadata()|",
+      "|java+method:///org/opencompare/api/java/impl/io/KMFJSONExporter/base64Encoding()|",
+      "|java+method:///scala/collection/immutable/List$/apply(scala.collection.Seq)|",
+      "|java+method:///play/api/libs/json/Json$/prettyPrint(play.api.libs.json.JsValue)|",
+      "|java+method:///scala/collection/JavaConversions$/asScalaBuffer(java.util.List)|",
+      "|java+constructor:///play/api/libs/json/JsString/JsString(java.lang.String)|",
+      "|java+constructor:///scala/collection/mutable/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/opencompare/api/java/impl/io/KMFJSONExporter$$anonfun$1/KMFJSONExporter$$anonfun$1(org.opencompare.api.java.impl.io.KMFJSONExporter,org.opencompare.api.java.PCMMetadata)|",
+      "|java+constructor:///org/opencompare/api/java/impl/io/KMFJSONExporter$$anonfun$2/KMFJSONExporter$$anonfun$2(org.opencompare.api.java.impl.io.KMFJSONExporter,org.opencompare.api.java.PCMMetadata)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-library:2.11.7",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.opencompare:api-java-impl:0.6.1",
+    "coordinatesV2": "org.opencompare:api-java-impl:0.7",
+    "caller": "|java+constructor:///org/opencompare/api/java/impl/PCMFactoryImpl/PCMFactoryImpl()|",
+    "called": "|java+constructor:///org/opencompare/model/pcm/factory/DefaultPcmFactory/DefaultPcmFactory()|",
+    "v1Body": [
+      "|java+constructor:///pcm/factory/DefaultPcmFactory/DefaultPcmFactory()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/opencompare/model/pcm/factory/DefaultPcmFactory/DefaultPcmFactory()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.opencompare:model:0.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.opencompare:api-java-impl:0.6.1",
+    "coordinatesV2": "org.opencompare:api-java-impl:0.7",
+    "caller": "|java+constructor:///org/opencompare/api/java/impl/io/KMFJSONLoader/KMFJSONLoader(boolean)|",
+    "called": "|java+method:///org/opencompare/model/pcm/factory/DefaultPcmFactory/createJSONLoader()|",
+    "v1Body": [
+      "|java+method:///pcm/factory/DefaultPcmFactory/createJSONLoader()|",
+      "|java+constructor:///pcm/factory/DefaultPcmFactory/DefaultPcmFactory()|",
+      "|java+constructor:///org/opencompare/api/java/impl/io/PCMBase64Encoder/PCMBase64Encoder()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/opencompare/model/pcm/factory/DefaultPcmFactory/createJSONLoader()|",
+      "|java+method:///org/opencompare/api/java/impl/io/KMFJSONLoader/kpcmFactory()|",
+      "|java+constructor:///org/opencompare/model/pcm/factory/DefaultPcmFactory/DefaultPcmFactory()|",
+      "|java+constructor:///org/opencompare/api/java/impl/io/PCMBase64Encoder/PCMBase64Encoder()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.opencompare:model:0.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.opencompare:api-java-impl:0.6.1",
+    "coordinatesV2": "org.opencompare:api-java-impl:0.7",
+    "caller": "|java+constructor:///org/opencompare/api/java/impl/io/KMFJSONExporter/KMFJSONExporter(boolean)|",
+    "called": "|java+method:///org/opencompare/model/pcm/factory/DefaultPcmFactory/createJSONSerializer()|",
+    "v1Body": [
+      "|java+method:///pcm/factory/DefaultPcmFactory/createJSONSerializer()|",
+      "|java+constructor:///pcm/factory/DefaultPcmFactory/DefaultPcmFactory()|",
+      "|java+constructor:///org/opencompare/api/java/impl/io/PCMBase64Encoder/PCMBase64Encoder()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/opencompare/model/pcm/factory/DefaultPcmFactory/createJSONSerializer()|",
+      "|java+method:///org/opencompare/api/java/impl/io/KMFJSONExporter/factory()|",
+      "|java+constructor:///org/opencompare/model/pcm/factory/DefaultPcmFactory/DefaultPcmFactory()|",
+      "|java+constructor:///org/opencompare/api/java/impl/io/PCMBase64Encoder/PCMBase64Encoder()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.opencompare:model:0.7",
+    "change": "UPDATED"
+  }
+]

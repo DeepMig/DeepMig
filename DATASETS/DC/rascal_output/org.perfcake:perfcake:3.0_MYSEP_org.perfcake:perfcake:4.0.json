@@ -1,0 +1,982 @@
+[
+  {
+    "coordinatesV1": "org.perfcake:perfcake:4.0",
+    "coordinatesV2": "org.perfcake:perfcake:3.0",
+    "caller": "|java+initializer:///org/perfcake/ScenarioExecution/ScenarioExecution$initializer|",
+    "called": "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.perfcake:perfcake:4.0",
+    "coordinatesV2": "org.perfcake:perfcake:3.0",
+    "caller": "|java+initializer:///org/perfcake/validation/RulesValidator/RulesValidator$initializer|",
+    "called": "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.perfcake:perfcake:4.0",
+    "coordinatesV2": "org.perfcake:perfcake:3.0",
+    "caller": "|java+method:///org/perfcake/message/generator/DefaultMessageGenerator/prepareTask()|",
+    "called": "|java+method:///org/apache/log4j/Logger/isTraceEnabled()|",
+    "v1Body": [
+      "|java+method:///java/util/concurrent/Semaphore/tryAcquire(long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///org/apache/log4j/Logger/isTraceEnabled()|",
+      "|java+method:///org/apache/log4j/Logger/trace(java.lang.Object)|",
+      "|java+method:///org/perfcake/message/generator/DefaultMessageGenerator/newSenderTask(java.util.concurrent.Semaphore)|",
+      "|java+method:///java/util/concurrent/ThreadPoolExecutor/submit(java.lang.Runnable)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/Semaphore/tryAcquire(long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///org/apache/logging/log4j/Logger/isTraceEnabled()|",
+      "|java+method:///org/apache/logging/log4j/Logger/trace(java.lang.String)|",
+      "|java+method:///org/perfcake/message/generator/DefaultMessageGenerator/newSenderTask(java.util.concurrent.Semaphore)|",
+      "|java+method:///java/util/concurrent/ThreadPoolExecutor/submit(java.lang.Runnable)|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.perfcake:perfcake:4.0",
+    "coordinatesV2": "org.perfcake:perfcake:3.0",
+    "caller": "|java+method:///org/perfcake/reporting/destinations/Log4jDestination/report(org.perfcake.reporting.Measurement)|",
+    "called": "|java+method:///org/apache/log4j/Logger/isTraceEnabled()|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/warn(java.lang.Object)|",
+      "|java+method:///org/apache/log4j/Logger/isDebugEnabled()|",
+      "|java+method:///org/apache/log4j/Logger/debug(java.lang.Object)|",
+      "|java+method:///org/apache/log4j/Logger/info(java.lang.Object)|",
+      "|java+method:///org/apache/log4j/Logger/isInfoEnabled()|",
+      "|java+method:///org/apache/log4j/Logger/isTraceEnabled()|",
+      "|java+method:///org/perfcake/reporting/destinations/Log4jDestination$Level/ordinal()|",
+      "|java+method:///org/apache/log4j/Logger/fatal(java.lang.Object)|",
+      "|java+method:///org/apache/log4j/Logger/trace(java.lang.Object)|",
+      "|java+method:///org/apache/log4j/Logger/error(java.lang.Object)|",
+      "|java+method:///org/perfcake/reporting/Measurement/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/logging/log4j/Logger/isInfoEnabled()|",
+      "|java+method:///org/apache/logging/log4j/Logger/isTraceEnabled()|",
+      "|java+method:///org/apache/logging/log4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/apache/logging/log4j/Logger/info(java.lang.String)|",
+      "|java+method:///org/apache/logging/log4j/Logger/fatal(java.lang.String)|",
+      "|java+method:///org/apache/logging/log4j/Logger/trace(java.lang.String)|",
+      "|java+method:///org/apache/logging/log4j/Logger/error(java.lang.String)|",
+      "|java+method:///org/apache/logging/log4j/Logger/isDebugEnabled()|",
+      "|java+method:///org/perfcake/reporting/destinations/Log4jDestination$Level/ordinal()|",
+      "|java+method:///org/perfcake/reporting/Measurement/toString()|",
+      "|java+method:///org/apache/logging/log4j/Logger/warn(java.lang.String)|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.perfcake:perfcake:4.0",
+    "coordinatesV2": "org.perfcake:perfcake:3.0",
+    "caller": "|java+method:///org/perfcake/scenario/ScenarioLoader/load(java.lang.String)|",
+    "called": "|java+method:///org/apache/log4j/Logger/isTraceEnabled()|",
+    "v1Body": [
+      "|java+method:///org/perfcake/util/Utils/determineDefaultLocation(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/perfcake/scenario/ScenarioFactory/getScenario()|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///org/apache/log4j/Logger/trace(java.lang.Object)|",
+      "|java+method:///org/perfcake/scenario/ScenarioLoader/getFactory(java.lang.String)|",
+      "|java+method:///java/lang/String/lastIndexOf(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/perfcake/PerfCakeException/PerfCakeException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///org/perfcake/PerfCakeException/PerfCakeException(java.lang.String)|",
+      "|java+method:///java/lang/String/toLowerCase()|",
+      "|java+method:///java/net/URL/toString()|",
+      "|java+method:///org/perfcake/util/Utils/locationToUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/log4j/Logger/info(java.lang.Object)|",
+      "|java+method:///org/perfcake/scenario/ScenarioFactory/init(java.net.URL)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/log4j/Logger/isTraceEnabled()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/perfcake/util/Utils/determineDefaultLocation(java.lang.String)|",
+      "|java+method:///org/apache/logging/log4j/Logger/isTraceEnabled()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/perfcake/scenario/ScenarioFactory/init(java.net.URL)|",
+      "|java+method:///org/perfcake/scenario/ScenarioFactory/getScenario()|",
+      "|java+method:///org/perfcake/util/Utils/locationToUrlWithCheck(java.lang.String,java.lang.String,java.lang.String,java.lang.String%5B%5D)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///org/apache/logging/log4j/Logger/trace(java.lang.String)|",
+      "|java+method:///org/perfcake/scenario/ScenarioLoader/getFactory(java.lang.String)|",
+      "|java+method:///java/lang/String/lastIndexOf(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/perfcake/PerfCakeException/PerfCakeException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///org/perfcake/PerfCakeException/PerfCakeException(java.lang.String)|",
+      "|java+method:///java/lang/String/toLowerCase()|",
+      "|java+method:///java/net/URL/toString()|",
+      "|java+method:///org/apache/logging/log4j/Logger/info(java.lang.String)|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.perfcake:perfcake:4.0",
+    "coordinatesV2": "org.perfcake:perfcake:3.0",
+    "caller": "|java+initializer:///org/perfcake/validation/RulesValidatorHelper/RulesValidatorHelper$initializer|",
+    "called": "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.perfcake:perfcake:4.0",
+    "coordinatesV2": "org.perfcake:perfcake:3.0",
+    "caller": "|java+method:///org/perfcake/scenario/Scenario/close()|",
+    "called": "|java+method:///org/apache/log4j/Logger/isTraceEnabled()|",
+    "v1Body": [
+      "|java+constructor:///org/perfcake/PerfCakeException/PerfCakeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/log4j/Logger/isTraceEnabled()|",
+      "|java+method:///org/perfcake/validation/ValidationManager/waitForValidation()|",
+      "|java+method:///org/apache/log4j/Logger/trace(java.lang.Object)|",
+      "|java+method:///org/perfcake/message/generator/AbstractMessageGenerator/close()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/logging/log4j/Logger/isTraceEnabled()|",
+      "|java+constructor:///org/perfcake/PerfCakeException/PerfCakeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/logging/log4j/Logger/trace(java.lang.String)|",
+      "|java+method:///org/perfcake/message/generator/AbstractMessageGenerator/close()|",
+      "|java+method:///org/perfcake/validation/ValidationManager/waitForValidation()|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.perfcake:perfcake:4.0",
+    "coordinatesV2": "org.perfcake:perfcake:3.0",
+    "caller": "|java+method:///org/perfcake/validation/ValidationManager$ValidationThread/run()|",
+    "called": "|java+method:///org/apache/log4j/Logger/isTraceEnabled()|",
+    "v1Body": [
+      "|java+method:///org/perfcake/message/ReceivedMessage/getSentMessageTemplate()|",
+      "|java+method:///org/perfcake/validation/ValidationManager/access$700(org.perfcake.validation.ValidationManager)|",
+      "|java+method:///org/perfcake/validation/ValidationManager/access$200(org.perfcake.validation.ValidationManager)|",
+      "|java+method:///org/perfcake/validation/ValidationManager/access$302(org.perfcake.validation.ValidationManager,boolean)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/log4j/Logger/isInfoEnabled()|",
+      "|java+method:///java/util/Queue/poll()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/apache/log4j/Logger/warn(java.lang.Object)|",
+      "|java+method:///java/lang/Thread/isInterrupted()|",
+      "|java+method:///java/lang/Thread/sleep(long)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/perfcake/validation/ValidationManager/access$600(org.perfcake.validation.ValidationManager)|",
+      "|java+method:///java/lang/String/valueOf(boolean)|",
+      "|java+method:///org/perfcake/validation/ValidationManager/getValidators(java.util.List)|",
+      "|java+method:///org/perfcake/validation/ValidationManager/access$500(org.perfcake.validation.ValidationManager)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/perfcake/validation/ValidationManager/access$400(org.perfcake.validation.ValidationManager)|",
+      "|java+method:///org/perfcake/validation/ValidationManager/access$300(org.perfcake.validation.ValidationManager)|",
+      "|java+method:///org/apache/log4j/Logger/info(java.lang.Object)|",
+      "|java+method:///org/perfcake/message/ReceivedMessage/getSentMessage()|",
+      "|java+method:///org/perfcake/validation/ValidationManager/access$272(org.perfcake.validation.ValidationManager,int)|",
+      "|java+method:///org/perfcake/validation/ValidationManager/access$202(org.perfcake.validation.ValidationManager,boolean)|",
+      "|java+method:///java/util/Map/isEmpty()|",
+      "|java+method:///org/perfcake/validation/ValidationManager/access$102(org.perfcake.validation.ValidationManager,boolean)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/log4j/Logger/isTraceEnabled()|",
+      "|java+method:///org/apache/log4j/Logger/trace(java.lang.Object)|",
+      "|java+constructor:///org/perfcake/message/Message/Message(java.io.Serializable)|",
+      "|java+method:///org/perfcake/message/MessageTemplate/getValidatorIds()|",
+      "|java+method:///org/perfcake/message/ReceivedMessage/getResponse()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/perfcake/validation/MessageValidator/isValid(org.perfcake.message.Message,org.perfcake.message.Message)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/logging/log4j/Logger/trace(java.lang.String)|",
+      "|java+constructor:///org/perfcake/message/Message/Message(java.io.Serializable)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/apache/logging/log4j/Logger/isInfoEnabled()|",
+      "|java+method:///java/lang/Thread/isInterrupted()|",
+      "|java+method:///java/util/Queue/isEmpty()|",
+      "|java+method:///org/perfcake/validation/ValidationManager/access$900(org.perfcake.validation.ValidationManager)|",
+      "|java+method:///org/perfcake/message/ReceivedMessage/getSentMessageTemplate()|",
+      "|java+method:///java/lang/Thread/sleep(long)|",
+      "|java+method:///org/apache/logging/log4j/Logger/isTraceEnabled()|",
+      "|java+method:///org/perfcake/validation/ValidationManager/access$800(org.perfcake.validation.ValidationManager)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+constructor:///org/perfcake/validation/ValidationManager$Score/ValidationManager$Score()|",
+      "|java+method:///org/perfcake/validation/ValidationManager/access$700(org.perfcake.validation.ValidationManager)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/perfcake/validation/ValidationManager/access$600(org.perfcake.validation.ValidationManager)|",
+      "|java+method:///java/lang/String/valueOf(boolean)|",
+      "|java+method:///org/perfcake/validation/ValidationTask/getThreadName()|",
+      "|java+method:///org/perfcake/validation/ValidationManager/getValidators(java.util.List)|",
+      "|java+method:///org/apache/logging/log4j/Logger/info(java.lang.String)|",
+      "|java+method:///org/perfcake/validation/ValidationManager/access$500(org.perfcake.validation.ValidationManager)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/perfcake/validation/ValidationManager/access$400(org.perfcake.validation.ValidationManager)|",
+      "|java+method:///org/perfcake/validation/ValidationManager/access$300(org.perfcake.validation.ValidationManager)|",
+      "|java+method:///org/perfcake/message/ReceivedMessage/getSentMessage()|",
+      "|java+method:///org/perfcake/validation/ValidationManager$Score/incPassed()|",
+      "|java+method:///org/perfcake/validation/ValidationTask/getReceivedMessage()|",
+      "|java+method:///org/perfcake/validation/ValidationManager/access$200(org.perfcake.validation.ValidationManager)|",
+      "|java+method:///org/perfcake/validation/ValidationManager/access$202(org.perfcake.validation.ValidationManager,boolean)|",
+      "|java+method:///java/util/Map/isEmpty()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/perfcake/validation/ValidationManager/access$102(org.perfcake.validation.ValidationManager,boolean)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/perfcake/validation/ValidationManager$Score/incFailed()|",
+      "|java+method:///java/util/Queue/poll()|",
+      "|java+method:///org/perfcake/validation/ValidationManager/access$1000(org.perfcake.validation.ValidationManager)|",
+      "|java+method:///org/perfcake/message/MessageTemplate/getValidatorIds()|",
+      "|java+method:///org/perfcake/message/ReceivedMessage/getResponse()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/perfcake/validation/MessageValidator/isValid(org.perfcake.message.Message,org.perfcake.message.Message)|",
+      "|java+method:///org/apache/logging/log4j/Logger/warn(java.lang.String)|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.perfcake:perfcake:4.0",
+    "coordinatesV2": "org.perfcake:perfcake:3.0",
+    "caller": "|java+initializer:///org/perfcake/message/sender/LdapSender/LdapSender$initializer|",
+    "called": "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.perfcake:perfcake:4.0",
+    "coordinatesV2": "org.perfcake:perfcake:3.0",
+    "caller": "|java+initializer:///org/perfcake/reporting/reporters/WarmUpReporter/WarmUpReporter$initializer|",
+    "called": "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.perfcake:perfcake:4.0",
+    "coordinatesV2": "org.perfcake:perfcake:3.0",
+    "caller": "|java+constructor:///org/perfcake/message/generator/SenderTask/SenderTask(java.util.concurrent.Semaphore)|",
+    "called": "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.perfcake:perfcake:4.0",
+    "coordinatesV2": "org.perfcake:perfcake:3.0",
+    "caller": "|java+method:///org/perfcake/reporting/reporters/WarmUpReporter/doReport(org.perfcake.reporting.MeasurementUnit)|",
+    "called": "|java+method:///org/apache/log4j/Logger/isTraceEnabled()|",
+    "v1Body": [
+      "|java+method:///org/perfcake/reporting/reporters/accumulators/LastValueAccumulator/add(java.lang.Object)|",
+      "|java+method:///java/lang/Double/valueOf(double)|",
+      "|java+method:///org/apache/log4j/Logger/info(java.lang.Object)|",
+      "|java+method:///org/perfcake/reporting/reporters/accumulators/LastValueAccumulator/getResult()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicLong/incrementAndGet()|",
+      "|java+method:///org/perfcake/reporting/ReportManager/reset()|",
+      "|java+method:///org/apache/log4j/Logger/isInfoEnabled()|",
+      "|java+method:///org/perfcake/RunInfo/removeTag(java.lang.String)|",
+      "|java+method:///org/perfcake/RunInfo/getRunTime()|",
+      "|java+method:///java/lang/StringBuilder/append(double)|",
+      "|java+method:///org/perfcake/reporting/reporters/WarmUpReporter/getMaxIteration()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Math/abs(double)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///java/lang/Double/doubleValue()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/log4j/Logger/isTraceEnabled()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicLong/get()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/apache/log4j/Logger/trace(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/logging/log4j/Logger/isInfoEnabled()|",
+      "|java+method:///org/apache/logging/log4j/Logger/isTraceEnabled()|",
+      "|java+method:///org/perfcake/reporting/reporters/accumulators/LastValueAccumulator/add(java.lang.Object)|",
+      "|java+method:///org/perfcake/reporting/reporters/accumulators/LastValueAccumulator/getResult()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicLong/incrementAndGet()|",
+      "|java+method:///org/perfcake/reporting/ReportManager/reset()|",
+      "|java+method:///org/perfcake/RunInfo/removeTag(java.lang.String)|",
+      "|java+method:///org/perfcake/RunInfo/getRunTime()|",
+      "|java+method:///org/apache/logging/log4j/Logger/trace(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(double)|",
+      "|java+method:///org/perfcake/reporting/reporters/WarmUpReporter/getMaxIteration()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Double/valueOf(double)|",
+      "|java+method:///org/apache/logging/log4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/lang/Math/abs(double)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///java/lang/Double/doubleValue()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicLong/get()|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.perfcake:perfcake:4.0",
+    "coordinatesV2": "org.perfcake:perfcake:3.0",
+    "caller": "|java+initializer:///org/perfcake/message/sender/WebSocketSender/WebSocketSender$initializer|",
+    "called": "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.perfcake:perfcake:4.0",
+    "coordinatesV2": "org.perfcake:perfcake:3.0",
+    "caller": "|java+constructor:///org/perfcake/validation/DictionaryValidator/DictionaryValidator()|",
+    "called": "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.perfcake:perfcake:4.0",
+    "coordinatesV2": "org.perfcake:perfcake:3.0",
+    "caller": "|java+initializer:///org/perfcake/validation/RegExpValidator/RegExpValidator$initializer|",
+    "called": "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.perfcake:perfcake:4.0",
+    "coordinatesV2": "org.perfcake:perfcake:3.0",
+    "caller": "|java+initializer:///org/perfcake/message/sender/JdbcSender/JdbcSender$initializer|",
+    "called": "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.perfcake:perfcake:4.0",
+    "coordinatesV2": "org.perfcake:perfcake:3.0",
+    "caller": "|java+initializer:///org/perfcake/util/Utils/Utils$initializer|",
+    "called": "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.perfcake:perfcake:4.0",
+    "coordinatesV2": "org.perfcake:perfcake:3.0",
+    "caller": "|java+method:///org/perfcake/reporting/ReportManager/newMeasurementUnit()|",
+    "called": "|java+method:///org/apache/log4j/Logger/isTraceEnabled()|",
+    "v1Body": [
+      "|java+method:///org/perfcake/RunInfo/getNextIteration()|",
+      "|java+constructor:///org/perfcake/reporting/MeasurementUnit/MeasurementUnit(long)|",
+      "|java+method:///org/apache/log4j/Logger/isTraceEnabled()|",
+      "|java+method:///org/perfcake/RunInfo/isRunning()|",
+      "|java+method:///org/apache/log4j/Logger/trace(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/logging/log4j/Logger/isTraceEnabled()|",
+      "|java+method:///org/perfcake/RunInfo/getNextIteration()|",
+      "|java+constructor:///org/perfcake/reporting/MeasurementUnit/MeasurementUnit(long)|",
+      "|java+method:///org/perfcake/RunInfo/isRunning()|",
+      "|java+method:///org/apache/logging/log4j/Logger/trace(java.lang.String)|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.perfcake:perfcake:4.0",
+    "coordinatesV2": "org.perfcake:perfcake:3.0",
+    "caller": "|java+method:///org/perfcake/reporting/ReportManager/report(org.perfcake.reporting.MeasurementUnit)|",
+    "called": "|java+method:///org/apache/log4j/Logger/isTraceEnabled()|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/warn(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/perfcake/reporting/ReportManager/getReporters()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///org/perfcake/RunInfo/isStarted()|",
+      "|java+method:///org/perfcake/reporting/reporters/Reporter/report(org.perfcake.reporting.MeasurementUnit)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/log4j/Logger/debug(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/log4j/Logger/isTraceEnabled()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/apache/log4j/Logger/trace(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/logging/log4j/Logger/isTraceEnabled()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/perfcake/reporting/ReportManager/getReporters()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/perfcake/reporting/reporters/Reporter/report(org.perfcake.reporting.MeasurementUnit)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/logging/log4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/apache/logging/log4j/Logger/trace(java.lang.String)|",
+      "|java+method:///org/perfcake/RunInfo/isStarted()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/logging/log4j/Logger/warn(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.perfcake:perfcake:4.0",
+    "coordinatesV2": "org.perfcake:perfcake:3.0",
+    "caller": "|java+initializer:///org/perfcake/reporting/reporters/MemoryUsageReporter/MemoryUsageReporter$initializer|",
+    "called": "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.perfcake:perfcake:4.0",
+    "coordinatesV2": "org.perfcake:perfcake:3.0",
+    "caller": "|java+initializer:///org/perfcake/scenario/ScenarioLoader/ScenarioLoader$initializer|",
+    "called": "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.perfcake:perfcake:4.0",
+    "coordinatesV2": "org.perfcake:perfcake:3.0",
+    "caller": "|java+constructor:///org/perfcake/validation/ValidationManager/ValidationManager()|",
+    "called": "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///org/perfcake/PerfCakeException/PerfCakeException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/util/TreeMap/TreeMap()|",
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/io/File/createTempFile(java.lang.String,java.lang.String)|",
+      "|java+method:///org/perfcake/validation/ValidationManager/setQueueFile(java.io.File)|",
+      "|java+method:///java/io/File/deleteOnExit()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/perfcake/validation/ValidationManager$Score/ValidationManager$Score()|",
+      "|java+constructor:///org/perfcake/PerfCakeException/PerfCakeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///java/util/TreeMap/TreeMap()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/io/File/createTempFile(java.lang.String,java.lang.String)|",
+      "|java+method:///org/perfcake/validation/ValidationManager/setQueueFile(java.io.File)|",
+      "|java+method:///java/io/File/deleteOnExit()|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.perfcake:perfcake:4.0",
+    "coordinatesV2": "org.perfcake:perfcake:3.0",
+    "caller": "|java+initializer:///org/perfcake/reporting/reporters/AbstractReporter/AbstractReporter$initializer|",
+    "called": "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Class/desiredAssertionStatus()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Class/desiredAssertionStatus()|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.perfcake:perfcake:4.0",
+    "coordinatesV2": "org.perfcake:perfcake:3.0",
+    "caller": "|java+method:///org/perfcake/util/ObjectFactory/setPropertiesOnObject(java.lang.Object,java.util.Properties)|",
+    "called": "|java+method:///org/apache/log4j/Logger/isTraceEnabled()|",
+    "v1Body": [
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+constructor:///org/apache/commons/beanutils/FluentPropertyBeanIntrospector/FluentPropertyBeanIntrospector()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/commons/beanutils/BeanUtilsBean/setProperty(java.lang.Object,java.lang.String,java.lang.Object)|",
+      "|java+constructor:///org/apache/commons/beanutils/BeanUtilsBean/BeanUtilsBean(org.apache.commons.beanutils.ConvertUtilsBean,org.apache.commons.beanutils.PropertyUtilsBean)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+constructor:///org/perfcake/util/ObjectFactory$EnumConvertUtilsBean/ObjectFactory$EnumConvertUtilsBean(org.perfcake.util.ObjectFactory$1)|",
+      "|java+method:///org/perfcake/util/ObjectFactory/setElementProperty(java.lang.Object,java.lang.String,org.w3c.dom.Element)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///java/util/Properties/entrySet()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/commons/beanutils/PropertyUtilsBean/addBeanIntrospector(org.apache.commons.beanutils.BeanIntrospector)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/log4j/Logger/isTraceEnabled()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///org/apache/log4j/Logger/trace(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/apache/commons/beanutils/PropertyUtilsBean/PropertyUtilsBean()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/commons/beanutils/FluentPropertyBeanIntrospector/FluentPropertyBeanIntrospector()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/commons/beanutils/BeanUtilsBean/setProperty(java.lang.Object,java.lang.String,java.lang.Object)|",
+      "|java+constructor:///org/apache/commons/beanutils/BeanUtilsBean/BeanUtilsBean(org.apache.commons.beanutils.ConvertUtilsBean,org.apache.commons.beanutils.PropertyUtilsBean)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///org/apache/logging/log4j/Logger/trace(java.lang.String)|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+constructor:///org/perfcake/util/ObjectFactory$EnumConvertUtilsBean/ObjectFactory$EnumConvertUtilsBean(org.perfcake.util.ObjectFactory$1)|",
+      "|java+method:///org/perfcake/util/ObjectFactory/setElementProperty(java.lang.Object,java.lang.String,org.w3c.dom.Element)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///org/apache/logging/log4j/Logger/isTraceEnabled()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///java/util/Properties/entrySet()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/commons/beanutils/PropertyUtilsBean/addBeanIntrospector(org.apache.commons.beanutils.BeanIntrospector)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/apache/commons/beanutils/PropertyUtilsBean/PropertyUtilsBean()|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.perfcake:perfcake:4.0",
+    "coordinatesV2": "org.perfcake:perfcake:3.0",
+    "caller": "|java+method:///org/perfcake/ScenarioExecution/printTraceInformation()|",
+    "called": "|java+method:///org/apache/log4j/Logger/trace(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/net/URLClassLoader/getURLs()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/LinkedList/LinkedList()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///java/util/Properties/entrySet()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/Collections/sort(java.util.List)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/lang/System/getProperties()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///java/lang/Class/getClassLoader()|",
+      "|java+method:///org/apache/log4j/Logger/trace(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/net/URLClassLoader/getURLs()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/LinkedList/LinkedList()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///org/apache/logging/log4j/Logger/trace(java.lang.String)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///java/util/Properties/entrySet()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/Collections/sort(java.util.List)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/lang/System/getProperties()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///java/lang/Class/getClassLoader()|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.perfcake:perfcake:4.0",
+    "coordinatesV2": "org.perfcake:perfcake:3.0",
+    "caller": "|java+initializer:///org/perfcake/reporting/MeasurementUnit/MeasurementUnit$initializer|",
+    "called": "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.perfcake:perfcake:4.0",
+    "coordinatesV2": "org.perfcake:perfcake:3.0",
+    "caller": "|java+constructor:///org/perfcake/message/MessageTemplate/MessageTemplate(org.perfcake.message.Message,long,java.util.List)|",
+    "called": "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/perfcake/message/MessageTemplate/preparePattern()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/perfcake/message/MessageTemplate/prepareTemplate()|",
+      "|java+method:///org/perfcake/message/Message/getPayload()|",
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.perfcake:perfcake:4.0",
+    "coordinatesV2": "org.perfcake:perfcake:3.0",
+    "caller": "|java+initializer:///org/perfcake/util/ObjectFactory/ObjectFactory$initializer|",
+    "called": "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.perfcake:perfcake:4.0",
+    "coordinatesV2": "org.perfcake:perfcake:3.0",
+    "caller": "|java+initializer:///org/perfcake/message/sender/RequestResponseJmsSender/RequestResponseJmsSender$initializer|",
+    "called": "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.perfcake:perfcake:4.0",
+    "coordinatesV2": "org.perfcake:perfcake:3.0",
+    "caller": "|java+initializer:///org/perfcake/validation/ScriptValidator/ScriptValidator$initializer|",
+    "called": "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.perfcake:perfcake:4.0",
+    "coordinatesV2": "org.perfcake:perfcake:3.0",
+    "caller": "|java+initializer:///org/perfcake/message/sender/HttpSender/HttpSender$initializer|",
+    "called": "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.perfcake:perfcake:4.0",
+    "coordinatesV2": "org.perfcake:perfcake:3.0",
+    "caller": "|java+initializer:///org/perfcake/message/generator/DefaultMessageGenerator/DefaultMessageGenerator$initializer|",
+    "called": "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.perfcake:perfcake:4.0",
+    "coordinatesV2": "org.perfcake:perfcake:3.0",
+    "caller": "|java+initializer:///org/perfcake/message/generator/RampUpDownGenerator/RampUpDownGenerator$initializer|",
+    "called": "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.perfcake:perfcake:4.0",
+    "coordinatesV2": "org.perfcake:perfcake:3.0",
+    "caller": "|java+method:///org/perfcake/scenario/Scenario/run()|",
+    "called": "|java+method:///org/apache/log4j/Logger/isTraceEnabled()|",
+    "v1Body": [
+      "|java+method:///org/perfcake/validation/ValidationManager/isEnabled()|",
+      "|java+constructor:///org/perfcake/PerfCakeException/PerfCakeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/log4j/Logger/isTraceEnabled()|",
+      "|java+method:///org/apache/log4j/Logger/trace(java.lang.Object)|",
+      "|java+method:///org/perfcake/message/generator/AbstractMessageGenerator/generate()|",
+      "|java+method:///org/perfcake/validation/ValidationManager/startValidation()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/logging/log4j/Logger/isTraceEnabled()|",
+      "|java+method:///org/perfcake/validation/ValidationManager/isEnabled()|",
+      "|java+constructor:///org/perfcake/PerfCakeException/PerfCakeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/logging/log4j/Logger/trace(java.lang.String)|",
+      "|java+method:///org/perfcake/message/generator/AbstractMessageGenerator/generate()|",
+      "|java+method:///org/perfcake/validation/ValidationManager/startValidation()|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.perfcake:perfcake:4.0",
+    "coordinatesV2": "org.perfcake:perfcake:3.0",
+    "caller": "|java+initializer:///org/perfcake/reporting/ReportManager/ReportManager$initializer|",
+    "called": "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.perfcake:perfcake:4.0",
+    "coordinatesV2": "org.perfcake:perfcake:3.0",
+    "caller": "|java+initializer:///org/perfcake/message/sender/JmsSender/JmsSender$initializer|",
+    "called": "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.perfcake:perfcake:4.0",
+    "coordinatesV2": "org.perfcake:perfcake:3.0",
+    "caller": "|java+method:///org/perfcake/scenario/Scenario/init()|",
+    "called": "|java+method:///org/apache/log4j/Logger/isTraceEnabled()|",
+    "v1Body": [
+      "|java+constructor:///org/perfcake/PerfCakeException/PerfCakeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/log4j/Logger/isTraceEnabled()|",
+      "|java+method:///org/perfcake/message/generator/AbstractMessageGenerator/setReportManager(org.perfcake.reporting.ReportManager)|",
+      "|java+method:///org/perfcake/message/generator/AbstractMessageGenerator/init(org.perfcake.message.sender.MessageSenderManager,java.util.List)|",
+      "|java+method:///org/apache/log4j/Logger/trace(java.lang.Object)|",
+      "|java+method:///org/perfcake/message/generator/AbstractMessageGenerator/setValidationManager(org.perfcake.validation.ValidationManager)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/logging/log4j/Logger/isTraceEnabled()|",
+      "|java+constructor:///org/perfcake/PerfCakeException/PerfCakeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/perfcake/message/generator/AbstractMessageGenerator/setReportManager(org.perfcake.reporting.ReportManager)|",
+      "|java+method:///org/perfcake/message/generator/AbstractMessageGenerator/setValidationManager(org.perfcake.validation.ValidationManager)|",
+      "|java+method:///org/perfcake/message/generator/AbstractMessageGenerator/init(org.perfcake.message.sender.MessageSenderManager,java.util.List)|",
+      "|java+method:///org/apache/logging/log4j/Logger/trace(java.lang.String)|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.perfcake:perfcake:4.0",
+    "coordinatesV2": "org.perfcake:perfcake:3.0",
+    "caller": "|java+initializer:///org/perfcake/message/sender/DummySender/DummySender$initializer|",
+    "called": "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/concurrent/atomic/AtomicLong/AtomicLong(long)|",
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.perfcake:perfcake:4.0",
+    "coordinatesV2": "org.perfcake:perfcake:3.0",
+    "caller": "|java+initializer:///org/perfcake/scenario/Scenario/Scenario$initializer|",
+    "called": "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.perfcake:perfcake:4.0",
+    "coordinatesV2": "org.perfcake:perfcake:3.0",
+    "caller": "|java+initializer:///org/perfcake/reporting/destinations/Log4jDestination/Log4jDestination$initializer|",
+    "called": "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.perfcake:perfcake:4.0",
+    "coordinatesV2": "org.perfcake:perfcake:3.0",
+    "caller": "|java+method:///org/perfcake/message/sender/AbstractSender/preSend(org.perfcake.message.Message,java.util.Map)|",
+    "called": "|java+method:///org/apache/log4j/Logger/isTraceEnabled()|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/isDebugEnabled()|",
+      "|java+method:///org/apache/log4j/Logger/debug(java.lang.Object)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/log4j/Logger/isTraceEnabled()|",
+      "|java+method:///org/apache/log4j/Logger/trace(java.lang.Object)|",
+      "|java+method:///org/perfcake/message/Message/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/logging/log4j/Logger/isTraceEnabled()|",
+      "|java+method:///org/apache/logging/log4j/Logger/debug(java.lang.String)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/logging/log4j/Logger/isDebugEnabled()|",
+      "|java+method:///org/apache/logging/log4j/Logger/trace(java.lang.String)|",
+      "|java+method:///org/perfcake/message/Message/toString()|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.perfcake:perfcake:4.0",
+    "coordinatesV2": "org.perfcake:perfcake:3.0",
+    "caller": "|java+constructor:///org/perfcake/message/sender/AbstractSocketSender/AbstractSocketSender()|",
+    "called": "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///org/perfcake/message/sender/AbstractSender/AbstractSender()|",
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/perfcake/message/sender/AbstractSender/AbstractSender()|",
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.perfcake:perfcake:4.0",
+    "coordinatesV2": "org.perfcake:perfcake:3.0",
+    "caller": "|java+initializer:///org/perfcake/reporting/destinations/CsvDestination/CsvDestination$initializer|",
+    "called": "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.perfcake:perfcake:4.0",
+    "coordinatesV2": "org.perfcake:perfcake:3.0",
+    "caller": "|java+initializer:///org/perfcake/validation/ValidatorUtil/ValidatorUtil$initializer|",
+    "called": "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.perfcake:perfcake:4.0",
+    "coordinatesV2": "org.perfcake:perfcake:3.0",
+    "caller": "|java+initializer:///org/perfcake/message/sender/AbstractSender/AbstractSender$initializer|",
+    "called": "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "coordinatesV1": "com.github.emc-mongoose:mongoose-storage-driver-net:3.6.0",
+    "coordinatesV2": "com.github.emc-mongoose:mongoose-storage-driver-net:3.6.2",
+    "caller": "|java+method:///com/emc/mongoose/storage/driver/net/base/NetStorageDriverBase/appendHandlers(io.netty.channel.ChannelPipeline)|",
+    "called": "|java+constructor:///io/netty/handler/timeout/IdleStateHandler/IdleStateHandler(long,long,long,java.util.concurrent.TimeUnit)|",
+    "v1Body": [
+      "|java+method:///org/apache/logging/log4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///javax/net/ssl/SSLEngine/setEnabledCipherSuites(java.lang.String%5B%5D)|",
+      "|java+method:///javax/net/ssl/SSLContext/createSSLEngine()|",
+      "|java+constructor:///io/netty/handler/timeout/IdleStateHandler/IdleStateHandler(long,long,long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///javax/net/ssl/SSLServerSocketFactory/getSupportedCipherSuites()|",
+      "|java+method:///javax/net/ssl/SSLContext/getServerSocketFactory()|",
+      "|java+method:///io/netty/channel/ChannelPipeline/addLast(io.netty.channel.ChannelHandler%5B%5D)|",
+      "|java+constructor:///io/netty/handler/ssl/SslHandler/SslHandler(javax.net.ssl.SSLEngine)|",
+      "|java+method:///javax/net/ssl/SSLEngine/setUseClientMode(boolean)|",
+      "|java+method:///javax/net/ssl/SSLEngine/setEnabledProtocols(java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/netty/handler/timeout/IdleStateHandler/IdleStateHandler(long,long,long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///io/netty/channel/ChannelPipeline/channel()|",
+      "|java+method:///io/netty/handler/ssl/SslContext/newHandler(io.netty.buffer.ByteBufAllocator)|",
+      "|java+method:///io/netty/channel/ChannelPipeline/addLast(io.netty.channel.ChannelHandler%5B%5D)|",
+      "|java+method:///io/netty/channel/Channel/alloc()|",
+      "|java+method:///org/apache/logging/log4j/Logger/debug(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "io.netty:netty-handler:4.1.25.Final",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,97 @@
+[
+  {
+    "coordinatesV1": "org.apache.sling:org.apache.sling.testing.sling-mock:1.9.6",
+    "coordinatesV2": "org.apache.sling:org.apache.sling.testing.sling-mock:1.9.4",
+    "caller": "|java+method:///org/apache/sling/testing/mock/sling/loader/ContentLoader/json(java.io.InputStream,java.lang.String)|",
+    "called": "|java+constructor:///org/apache/sling/commons/json/JSONObject/JSONObject(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/sling/api/resource/ResourceUtil/getName(java.lang.String)|",
+      "|java+constructor:///org/apache/sling/commons/json/JSONObject/JSONObject(java.lang.String)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///org/apache/sling/testing/mock/sling/loader/ContentLoader/createResource(org.apache.sling.api.resource.Resource,java.lang.String,org.apache.sling.commons.json.JSONObject)|",
+      "|java+method:///org/apache/sling/testing/mock/sling/loader/ContentLoader/createResourceHierarchy(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///org/apache/sling/api/resource/ResourceResolver/commit()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/sling/testing/mock/sling/loader/ContentLoader/convertToJsonString(java.io.InputStream)|",
+      "|java+method:///org/apache/sling/api/resource/ResourceUtil/getParent(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///org/apache/sling/api/resource/Resource/getChild(java.lang.String)|",
+      "|java+method:///org/apache/sling/api/resource/ResourceResolver/getResource(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/sling/jcr/contentparser/ContentParser/parse(org.apache.sling.jcr.contentparser.ContentHandler,java.io.InputStream)|",
+      "|java+constructor:///org/apache/sling/testing/mock/sling/loader/LoaderContentHandler/LoaderContentHandler(java.lang.String,org.apache.sling.api.resource.ResourceResolver)|",
+      "|java+method:///org/apache/sling/api/resource/ResourceUtil/getParent(java.lang.String)|",
+      "|java+method:///org/apache/sling/api/resource/ResourceUtil/getName(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///org/apache/sling/testing/mock/sling/loader/ContentLoader/createResourceHierarchy(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///org/apache/sling/api/resource/ResourceResolver/commit()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/sling/api/resource/Resource/getChild(java.lang.String)|",
+      "|java+method:///org/apache/sling/api/resource/ResourceResolver/getResource(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.sling:org.apache.sling.commons.json:2.0.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.sling:org.apache.sling.testing.sling-mock:1.9.4",
+    "coordinatesV2": "org.apache.sling:org.apache.sling.testing.sling-mock:1.9.6",
+    "caller": "|java+initializer:///org/apache/sling/testing/mock/sling/loader/ContentLoader/ContentLoader$initializer|",
+    "called": "|java+constructor:///org/apache/sling/jcr/contentparser/ParserOptions/ParserOptions()|",
+    "v1Body": [
+      "|java+method:///com/google/common/collect/ImmutableSet/of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/sling/jcr/contentparser/ParserOptions/ignorePropertyNames(java.util.Set)|",
+      "|java+method:///org/apache/sling/jcr/contentparser/ContentParserFactory/create(org.apache.sling.jcr.contentparser.ContentType,org.apache.sling.jcr.contentparser.ParserOptions)|",
+      "|java+method:///org/apache/sling/jcr/contentparser/ParserOptions/detectCalendarValues(boolean)|",
+      "|java+constructor:///org/apache/sling/jcr/contentparser/ParserOptions/ParserOptions()|",
+      "|java+method:///com/google/common/collect/ImmutableSet/of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/sling/jcr/contentparser/ParserOptions/ignoreResourceNames(java.util.Set)|"
+    ],
+    "affectedLib": "org.apache.sling:org.apache.sling.jcr.contentparser:1.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.sling:org.apache.sling.testing.sling-mock:1.9.4",
+    "coordinatesV2": "org.apache.sling:org.apache.sling.testing.sling-mock:1.9.6",
+    "caller": "|java+method:///org/apache/sling/testing/mock/sling/context/SlingContextImpl/setUp()|",
+    "called": "|java+method:///org/apache/sling/testing/mock/osgi/context/OsgiContextImpl/setUp()|",
+    "v1Body": [
+      "|java+method:///org/osgi/service/cm/ConfigurationAdmin/getConfiguration(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/sling/testing/mock/sling/context/SlingContextImpl/newResourceResolverFactory()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/sling/testing/mock/osgi/context/OsgiContextImpl/setUp()|",
+      "|java+method:///org/osgi/service/cm/Configuration/update(java.util.Dictionary)|",
+      "|java+constructor:///java/util/Hashtable/Hashtable()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///org/apache/sling/testing/mock/sling/MockSling/setAdapterManagerBundleContext(org.osgi.framework.BundleContext)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///java/util/Dictionary/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/sling/testing/mock/sling/context/SlingContextImpl/getService(java.lang.Class)|",
+      "|java+method:///org/apache/sling/testing/mock/sling/context/SlingContextImpl/bundleContext()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///org/apache/sling/testing/mock/sling/context/SlingContextImpl/registerDefaultServices()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/sling/testing/mock/osgi/MockOsgi/setConfigForPid(org.osgi.framework.BundleContext,java.lang.String,java.util.Map)|",
+      "|java+method:///org/apache/sling/testing/mock/sling/MockSling/setAdapterManagerBundleContext(org.osgi.framework.BundleContext)|",
+      "|java+method:///org/apache/sling/testing/mock/sling/context/SlingContextImpl/newResourceResolverFactory()|",
+      "|java+method:///org/apache/sling/testing/mock/sling/context/SlingContextImpl/bundleContext()|",
+      "|java+method:///org/apache/sling/testing/mock/osgi/context/OsgiContextImpl/setUp()|",
+      "|java+method:///org/apache/sling/testing/mock/sling/context/SlingContextImpl/registerDefaultServices()|"
+    ],
+    "affectedLib": "org.apache.sling:org.apache.sling.testing.osgi-mock:1.9.4",
+    "change": "UPDATED"
+  }
+]

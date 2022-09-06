@@ -1,0 +1,79 @@
+[
+  {
+    "coordinatesV1": "org.apache.lucene:lucene-spatial-extras:7.2.1",
+    "coordinatesV2": "org.apache.lucene:lucene-spatial-extras:7.3.0",
+    "caller": "|java+method:///org/apache/lucene/spatial/spatial4j/Geo3dDistanceCalculator/pointOnBearing(org.locationtech.spatial4j.shape.Point,double,double,org.locationtech.spatial4j.context.SpatialContext,org.locationtech.spatial4j.shape.Point)|",
+    "called": "|java+method:///org/apache/lucene/spatial3d/geom/PlanetModel/surfacePointOnBearing(org.apache.lucene.spatial3d.geom.GeoPoint,double,double)|",
+    "v1Body": [
+      "|java+method:///org/locationtech/spatial4j/context/SpatialContext/getShapeFactory()|",
+      "|java+method:///java/lang/Math/abs(double)|",
+      "|java+method:///java/lang/Math/sin(double)|",
+      "|java+method:///org/apache/lucene/spatial3d/geom/GeoPoint/getLatitude()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+method:///java/lang/Math/cos(double)|",
+      "|java+method:///java/lang/Math/sqrt(double)|",
+      "|java+method:///java/lang/Math/atan2(double,double)|",
+      "|java+method:///org/apache/lucene/spatial3d/geom/GeoPoint/getLongitude()|",
+      "|java+method:///java/lang/Math/tan(double)|",
+      "|java+method:///org/locationtech/spatial4j/shape/ShapeFactory/pointXY(double,double)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/lucene/spatial3d/geom/GeoPoint/getLongitude()|",
+      "|java+method:///org/locationtech/spatial4j/context/SpatialContext/getShapeFactory()|",
+      "|java+method:///org/locationtech/spatial4j/shape/Point/reset(double,double)|",
+      "|java+method:///org/apache/lucene/spatial3d/geom/GeoPoint/getLatitude()|",
+      "|java+method:///org/locationtech/spatial4j/shape/ShapeFactory/pointXY(double,double)|",
+      "|java+method:///org/apache/lucene/spatial3d/geom/PlanetModel/surfacePointOnBearing(org.apache.lucene.spatial3d.geom.GeoPoint,double,double)|"
+    ],
+    "affectedLib": "org.apache.lucene:lucene-spatial3d:7.3.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.lucene:lucene-spatial-extras:7.2.1",
+    "coordinatesV2": "org.apache.lucene:lucene-spatial-extras:7.3.0",
+    "caller": "|java+method:///org/apache/lucene/spatial/spatial4j/Geo3dShapeFactory/circle(double,double,double)|",
+    "called": "|java+method:///org/apache/lucene/spatial3d/geom/GeoCircleFactory/makeGeoCircle(org.apache.lucene.spatial3d.geom.PlanetModel,double,double,double)|",
+    "v1Body": [
+      "|java+method:///org/apache/lucene/spatial3d/geom/GeoCircleFactory/makeGeoCircle(org.apache.lucene.spatial3d.geom.PlanetModel,double,double,double)|",
+      "|java+constructor:///org/apache/lucene/spatial/spatial4j/Geo3dCircleShape/Geo3dCircleShape(org.apache.lucene.spatial3d.geom.GeoCircle,org.locationtech.spatial4j.context.SpatialContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/lucene/spatial3d/geom/GeoCircleFactory/makeExactGeoCircle(org.apache.lucene.spatial3d.geom.PlanetModel,double,double,double,double)|",
+      "|java+method:///org/apache/lucene/spatial3d/geom/GeoCircleFactory/makeGeoCircle(org.apache.lucene.spatial3d.geom.PlanetModel,double,double,double)|",
+      "|java+constructor:///org/apache/lucene/spatial/spatial4j/Geo3dCircleShape/Geo3dCircleShape(org.apache.lucene.spatial3d.geom.GeoCircle,org.locationtech.spatial4j.context.SpatialContext)|",
+      "|java+method:///org/apache/lucene/spatial3d/geom/PlanetModel/isSphere()|"
+    ],
+    "affectedLib": "org.apache.lucene:lucene-spatial3d:7.3.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.lucene:lucene-spatial-extras:7.2.1",
+    "coordinatesV2": "org.apache.lucene:lucene-spatial-extras:7.3.0",
+    "caller": "|java+method:///org/apache/lucene/spatial/spatial4j/Geo3dShape/getBoundingBox()|",
+    "called": "|java+method:///org/apache/lucene/spatial3d/geom/GeoBBoxFactory/makeGeoBBox(org.apache.lucene.spatial3d.geom.PlanetModel,org.apache.lucene.spatial3d.geom.LatLonBounds)|",
+    "v1Body": [
+      "|java+method:///org/apache/lucene/spatial3d/geom/LatLonBounds/getMaxLatitude()|",
+      "|java+constructor:///org/apache/lucene/spatial/spatial4j/Geo3dRectangleShape/Geo3dRectangleShape(org.apache.lucene.spatial3d.geom.GeoBBox,org.locationtech.spatial4j.context.SpatialContext)|",
+      "|java+method:///org/apache/lucene/spatial3d/geom/LatLonBounds/checkNoBottomLatitudeBound()|",
+      "|java+method:///org/apache/lucene/spatial3d/geom/LatLonBounds/checkNoLongitudeBound()|",
+      "|java+method:///java/lang/Double/doubleValue()|",
+      "|java+method:///org/apache/lucene/spatial3d/geom/GeoAreaShape/getBounds(org.apache.lucene.spatial3d.geom.Bounds)|",
+      "|java+method:///org/apache/lucene/spatial3d/geom/LatLonBounds/checkNoTopLatitudeBound()|",
+      "|java+method:///org/apache/lucene/spatial3d/geom/LatLonBounds/getLeftLongitude()|",
+      "|java+method:///org/apache/lucene/spatial3d/geom/LatLonBounds/getRightLongitude()|",
+      "|java+method:///org/apache/lucene/spatial3d/geom/GeoBBoxFactory/makeGeoBBox(org.apache.lucene.spatial3d.geom.PlanetModel,double,double,double,double)|",
+      "|java+method:///org/apache/lucene/spatial3d/geom/GeoAreaShape/getPlanetModel()|",
+      "|java+method:///org/apache/lucene/spatial3d/geom/LatLonBounds/getMinLatitude()|",
+      "|java+constructor:///org/apache/lucene/spatial3d/geom/LatLonBounds/LatLonBounds()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/lucene/spatial/spatial4j/Geo3dRectangleShape/Geo3dRectangleShape(org.apache.lucene.spatial3d.geom.GeoBBox,org.locationtech.spatial4j.context.SpatialContext)|",
+      "|java+method:///org/apache/lucene/spatial3d/geom/GeoBBoxFactory/makeGeoBBox(org.apache.lucene.spatial3d.geom.PlanetModel,org.apache.lucene.spatial3d.geom.LatLonBounds)|",
+      "|java+constructor:///org/apache/lucene/spatial3d/geom/LatLonBounds/LatLonBounds()|",
+      "|java+method:///org/apache/lucene/spatial3d/geom/GeoAreaShape/getBounds(org.apache.lucene.spatial3d.geom.Bounds)|",
+      "|java+method:///org/apache/lucene/spatial3d/geom/GeoAreaShape/getPlanetModel()|"
+    ],
+    "affectedLib": "org.apache.lucene:lucene-spatial3d:7.3.0",
+    "change": "UPDATED"
+  }
+]

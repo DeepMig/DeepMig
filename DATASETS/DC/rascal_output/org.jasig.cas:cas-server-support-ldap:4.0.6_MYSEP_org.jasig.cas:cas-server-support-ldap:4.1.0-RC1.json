@@ -1,0 +1,1843 @@
+[
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/save(org.jasig.cas.services.RegisteredService)|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|",
+    "v1Body": [
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/update(org.jasig.cas.services.RegisteredService)|",
+      "|java+constructor:///org/ldaptive/AddOperation/AddOperation(org.ldaptive.Connection)|",
+      "|java+method:///org/ldaptive/AddOperation/execute(org.ldaptive.Request)|",
+      "|java+method:///org/ldaptive/LdapException/getMessage()|",
+      "|java+method:///org/ldaptive/ConnectionFactory/getConnection()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/jasig/cas/util/LdapUtils/closeConnection(org.ldaptive.Connection)|",
+      "|java+method:///org/ldaptive/LdapEntry/getDn()|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapRegisteredServiceMapper/mapFromRegisteredService(java.lang.String,org.jasig.cas.services.RegisteredService)|",
+      "|java+method:///org/ldaptive/LdapEntry/getAttributes()|",
+      "|java+method:///org/ldaptive/SearchRequest/getBaseDn()|",
+      "|java+method:///org/jasig/cas/services/RegisteredService/getId()|",
+      "|java+constructor:///org/ldaptive/AddRequest/AddRequest(java.lang.String,java.util.Collection)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao$AjcClosure3/LdapServiceRegistryDao$AjcClosure3(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/util/LdapUtils/getLong(org.ldaptive.LdapEntry,java.lang.String,java.lang.Long)|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|",
+    "v1Body": [
+      "|java+method:///java/lang/Long/toString()|",
+      "|java+method:///org/apache/commons/lang/math/NumberUtils/isNumber(java.lang.String)|",
+      "|java+method:///org/jasig/cas/util/LdapUtils/getString(org.ldaptive.LdapEntry,java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/Long/valueOf(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/util/LdapUtils$AjcClosure9/LdapUtils$AjcClosure9(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/authentication/LdapAuthenticationHandler/initialize()|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/List/addAll(java.util.Collection)|",
+      "|java+method:///java/util/Map/keySet()|",
+      "|java+method:///java/util/List/toArray(java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+constructor:///org/jasig/cas/authentication/LdapAuthenticationHandler$AjcClosure5/LdapAuthenticationHandler$AjcClosure5(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/util/LdapUtils/closeConnection(org.ldaptive.Connection)|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/ldaptive/Connection/isOpen()|",
+      "|java+method:///org/ldaptive/Connection/close()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+constructor:///org/jasig/cas/util/LdapUtils$AjcClosure1/LdapUtils$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/util/LdapUtils/getBoolean(org.ldaptive.LdapEntry,java.lang.String)|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|",
+    "v1Body": [
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///org/jasig/cas/util/LdapUtils/getBoolean(org.ldaptive.LdapEntry,java.lang.String,java.lang.Boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+constructor:///org/jasig/cas/util/LdapUtils$AjcClosure3/LdapUtils$AjcClosure3(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/monitor/ConnectionFactoryMonitor/observe()|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/ldaptive/Connection/isOpen()|",
+      "|java+method:///org/ldaptive/ConnectionFactory/getConnection()|",
+      "|java+method:///org/ldaptive/pool/Validator/validate(java.lang.Object)|",
+      "|java+method:///org/jasig/cas/util/LdapUtils/closeConnection(org.ldaptive.Connection)|",
+      "|java+method:///org/ldaptive/Connection/open()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/monitor/ConnectionFactoryMonitor$AjcClosure1/ConnectionFactoryMonitor$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/util/LdapUtils/getString(org.ldaptive.LdapEntry,java.lang.String)|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|",
+    "v1Body": [
+      "|java+method:///org/jasig/cas/util/LdapUtils/getString(org.ldaptive.LdapEntry,java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/util/LdapUtils$AjcClosure11/LdapUtils$AjcClosure11(java.lang.Object%5B%5D)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/util/LdapUtils/getLong(org.ldaptive.LdapEntry,java.lang.String)|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|",
+    "v1Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/jasig/cas/util/LdapUtils/getLong(org.ldaptive.LdapEntry,java.lang.String,java.lang.Long)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/util/LdapUtils$AjcClosure7/LdapUtils$AjcClosure7(java.lang.Object%5B%5D)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/delete(org.jasig.cas.services.RegisteredService)|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|",
+    "v1Body": [
+      "|java+constructor:///org/ldaptive/DeleteOperation/DeleteOperation(org.ldaptive.Connection)|",
+      "|java+method:///org/ldaptive/ConnectionFactory/getConnection()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/jasig/cas/util/LdapUtils/closeConnection(org.ldaptive.Connection)|",
+      "|java+method:///org/jasig/cas/services/RegisteredService/getId()|",
+      "|java+method:///org/ldaptive/Response/getResult()|",
+      "|java+constructor:///org/ldaptive/DeleteRequest/DeleteRequest(java.lang.String)|",
+      "|java+method:///org/ldaptive/LdapEntry/getDn()|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/hasResults(org.ldaptive.Response)|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/searchForServiceById(org.ldaptive.Connection,long)|",
+      "|java+method:///org/ldaptive/Response/getResultCode()|",
+      "|java+method:///org/ldaptive/SearchResult/getEntry()|",
+      "|java+method:///org/ldaptive/DeleteOperation/execute(org.ldaptive.Request)|",
+      "|java+method:///org/ldaptive/LdapException/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao$AjcClosure5/LdapServiceRegistryDao$AjcClosure5(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/booleanValue(java.lang.Object)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/authentication/support/DefaultAccountStateHandler/handle(org.ldaptive.auth.AuthenticationResponse,org.jasig.cas.authentication.support.LdapPasswordPolicyConfiguration)|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/ldaptive/auth/AccountState/getError()|",
+      "|java+method:///org/ldaptive/auth/AuthenticationResponse/getAccountState()|",
+      "|java+method:///org/ldaptive/auth/AccountState/getWarning()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/jasig/cas/authentication/support/DefaultAccountStateHandler/handleError(org.ldaptive.auth.AccountState$Error,org.ldaptive.auth.AuthenticationResponse,org.jasig.cas.authentication.support.LdapPasswordPolicyConfiguration,java.util.List)|",
+      "|java+method:///org/jasig/cas/authentication/support/DefaultAccountStateHandler/handleWarning(org.ldaptive.auth.AccountState$Warning,org.ldaptive.auth.AuthenticationResponse,org.jasig.cas.authentication.support.LdapPasswordPolicyConfiguration,java.util.List)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|",
+      "|java+constructor:///org/jasig/cas/authentication/support/DefaultAccountStateHandler$AjcClosure1/DefaultAccountStateHandler$AjcClosure1(java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/load()|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|",
+    "v1Body": [
+      "|java+method:///org/ldaptive/SearchResult/getEntries()|",
+      "|java+method:///org/ldaptive/LdapException/getMessage()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapRegisteredServiceMapper/mapToRegisteredService(org.ldaptive.LdapEntry)|",
+      "|java+method:///org/ldaptive/Response/getResult()|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/hasResults(org.ldaptive.Response)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/executeSearchOperation(org.ldaptive.Connection,org.ldaptive.SearchFilter)|",
+      "|java+method:///org/ldaptive/ConnectionFactory/getConnection()|",
+      "|java+constructor:///org/ldaptive/SearchFilter/SearchFilter(java.lang.String)|",
+      "|java+constructor:///java/util/LinkedList/LinkedList()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/jasig/cas/util/LdapUtils/closeConnection(org.ldaptive.Connection)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao$AjcClosure7/LdapServiceRegistryDao$AjcClosure7(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/userdetails/LdapUserDetailsService/loadUserByUsername(java.lang.String)|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/security/core/userdetails/UsernameNotFoundException/UsernameNotFoundException(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/ldaptive/SearchResult/size()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///org/springframework/security/core/userdetails/User/User(java.lang.String,java.lang.String,java.util.Collection)|",
+      "|java+method:///org/jasig/cas/userdetails/LdapUserDetailsService/createSearchFilter(org.ldaptive.SearchExecutor,java.lang.String)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(int)|",
+      "|java+method:///org/ldaptive/SearchResult/getEntries()|",
+      "|java+method:///java/lang/String/valueOf(java.lang.Object)|",
+      "|java+method:///java/lang/String/toUpperCase()|",
+      "|java+method:///org/ldaptive/SearchResult/getEntry()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///org/springframework/security/core/authority/SimpleGrantedAuthority/SimpleGrantedAuthority(java.lang.String)|",
+      "|java+method:///java/util/Collection/add(java.lang.Object)|",
+      "|java+method:///org/ldaptive/LdapAttribute/getStringValue()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/ldaptive/LdapEntry/getAttribute(java.lang.String)|",
+      "|java+method:///org/ldaptive/Response/getResult()|",
+      "|java+method:///org/ldaptive/SearchExecutor/search(org.ldaptive.ConnectionFactory,org.ldaptive.SearchFilter)|",
+      "|java+method:///org/ldaptive/LdapEntry/getDn()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/userdetails/LdapUserDetailsService$AjcClosure1/LdapUserDetailsService$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/util/LdapUtils/getString(org.ldaptive.LdapEntry,java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|",
+    "v1Body": [
+      "|java+method:///org/ldaptive/LdapAttribute/getStringValue()|",
+      "|java+method:///org/ldaptive/LdapEntry/getAttribute(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/util/LdapUtils$AjcClosure13/LdapUtils$AjcClosure13(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/findServiceById(long)|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|",
+    "v1Body": [
+      "|java+method:///org/ldaptive/LdapException/getMessage()|",
+      "|java+method:///org/ldaptive/ConnectionFactory/getConnection()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/jasig/cas/util/LdapUtils/closeConnection(org.ldaptive.Connection)|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapRegisteredServiceMapper/mapToRegisteredService(org.ldaptive.LdapEntry)|",
+      "|java+method:///org/ldaptive/Response/getResult()|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/hasResults(org.ldaptive.Response)|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/searchForServiceById(org.ldaptive.Connection,long)|",
+      "|java+method:///org/ldaptive/SearchResult/getEntry()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/Conversions/longObject(long)|",
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao$AjcClosure9/LdapServiceRegistryDao$AjcClosure9(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/persondir/LdapPersonAttributeDao/initialize()|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/size()|",
+      "|java+method:///org/ldaptive/SearchScope/ordinal()|",
+      "|java+method:///java/util/Map/keySet()|",
+      "|java+method:///javax/naming/directory/SearchControls/getSearchScope()|",
+      "|java+method:///org/jasig/cas/persondir/LdapPersonAttributeDao/getResultAttributeMapping()|",
+      "|java+method:///java/util/Set/toArray(java.lang.Object%5B%5D)|",
+      "|java+method:///org/ldaptive/SearchScope/values()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/persondir/LdapPersonAttributeDao$AjcClosure1/LdapPersonAttributeDao$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/init()|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/valueOf(char)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapRegisteredServiceMapper/getObjectClass()|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapRegisteredServiceMapper/getIdAttribute()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao$AjcClosure1/LdapServiceRegistryDao$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/util/LdapUtils/getBoolean(org.ldaptive.LdapEntry,java.lang.String,java.lang.Boolean)|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|",
+    "v1Body": [
+      "|java+method:///java/lang/Boolean/toString()|",
+      "|java+method:///java/lang/String/equalsIgnoreCase(java.lang.String)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///org/jasig/cas/util/LdapUtils/getString(org.ldaptive.LdapEntry,java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/jasig/cas/util/LdapUtils$AjcClosure5/LdapUtils$AjcClosure5(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/util/LdapUtils/getBoolean(org.ldaptive.LdapEntry,java.lang.String)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///org/jasig/cas/util/LdapUtils/getBoolean(org.ldaptive.LdapEntry,java.lang.String,java.lang.Boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+constructor:///org/jasig/cas/util/LdapUtils$AjcClosure3/LdapUtils$AjcClosure3(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/util/LdapUtils/getString(org.ldaptive.LdapEntry,java.lang.String)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/jasig/cas/util/LdapUtils/getString(org.ldaptive.LdapEntry,java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/util/LdapUtils$AjcClosure11/LdapUtils$AjcClosure11(java.lang.Object%5B%5D)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/authentication/support/DefaultAccountStateHandler/handle(org.ldaptive.auth.AuthenticationResponse,org.jasig.cas.authentication.support.LdapPasswordPolicyConfiguration)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/ldaptive/auth/AccountState/getError()|",
+      "|java+method:///org/ldaptive/auth/AuthenticationResponse/getAccountState()|",
+      "|java+method:///org/ldaptive/auth/AccountState/getWarning()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/jasig/cas/authentication/support/DefaultAccountStateHandler/handleError(org.ldaptive.auth.AccountState$Error,org.ldaptive.auth.AuthenticationResponse,org.jasig.cas.authentication.support.LdapPasswordPolicyConfiguration,java.util.List)|",
+      "|java+method:///org/jasig/cas/authentication/support/DefaultAccountStateHandler/handleWarning(org.ldaptive.auth.AccountState$Warning,org.ldaptive.auth.AuthenticationResponse,org.jasig.cas.authentication.support.LdapPasswordPolicyConfiguration,java.util.List)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|",
+      "|java+constructor:///org/jasig/cas/authentication/support/DefaultAccountStateHandler$AjcClosure1/DefaultAccountStateHandler$AjcClosure1(java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/userdetails/LdapUserDetailsService/loadUserByUsername(java.lang.String)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/security/core/userdetails/UsernameNotFoundException/UsernameNotFoundException(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/ldaptive/SearchResult/size()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///org/springframework/security/core/userdetails/User/User(java.lang.String,java.lang.String,java.util.Collection)|",
+      "|java+method:///org/jasig/cas/userdetails/LdapUserDetailsService/createSearchFilter(org.ldaptive.SearchExecutor,java.lang.String)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(int)|",
+      "|java+method:///org/ldaptive/SearchResult/getEntries()|",
+      "|java+method:///java/lang/String/valueOf(java.lang.Object)|",
+      "|java+method:///java/lang/String/toUpperCase()|",
+      "|java+method:///org/ldaptive/SearchResult/getEntry()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///org/springframework/security/core/authority/SimpleGrantedAuthority/SimpleGrantedAuthority(java.lang.String)|",
+      "|java+method:///java/util/Collection/add(java.lang.Object)|",
+      "|java+method:///org/ldaptive/LdapAttribute/getStringValue()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/ldaptive/LdapEntry/getAttribute(java.lang.String)|",
+      "|java+method:///org/ldaptive/Response/getResult()|",
+      "|java+method:///org/ldaptive/SearchExecutor/search(org.ldaptive.ConnectionFactory,org.ldaptive.SearchFilter)|",
+      "|java+method:///org/ldaptive/LdapEntry/getDn()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/userdetails/LdapUserDetailsService$AjcClosure1/LdapUserDetailsService$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/util/LdapUtils/getString(org.ldaptive.LdapEntry,java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/ldaptive/LdapAttribute/getStringValue()|",
+      "|java+method:///org/ldaptive/LdapEntry/getAttribute(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/util/LdapUtils$AjcClosure13/LdapUtils$AjcClosure13(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/persondir/LdapPersonAttributeDao/initialize()|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/size()|",
+      "|java+method:///org/ldaptive/SearchScope/ordinal()|",
+      "|java+method:///java/util/Map/keySet()|",
+      "|java+method:///javax/naming/directory/SearchControls/getSearchScope()|",
+      "|java+method:///org/jasig/cas/persondir/LdapPersonAttributeDao/getResultAttributeMapping()|",
+      "|java+method:///java/util/Set/toArray(java.lang.Object%5B%5D)|",
+      "|java+method:///org/ldaptive/SearchScope/values()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/persondir/LdapPersonAttributeDao$AjcClosure1/LdapPersonAttributeDao$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/authentication/LdapAuthenticationHandler/initialize()|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/List/addAll(java.util.Collection)|",
+      "|java+method:///java/util/Map/keySet()|",
+      "|java+method:///java/util/List/toArray(java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+constructor:///org/jasig/cas/authentication/LdapAuthenticationHandler$AjcClosure5/LdapAuthenticationHandler$AjcClosure5(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/delete(org.jasig.cas.services.RegisteredService)|",
+    "called": "|java+method:///org/aspectj/runtime/internal/Conversions/booleanValue(java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///org/ldaptive/DeleteOperation/DeleteOperation(org.ldaptive.Connection)|",
+      "|java+method:///org/ldaptive/ConnectionFactory/getConnection()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/jasig/cas/util/LdapUtils/closeConnection(org.ldaptive.Connection)|",
+      "|java+method:///org/jasig/cas/services/RegisteredService/getId()|",
+      "|java+method:///org/ldaptive/Response/getResult()|",
+      "|java+constructor:///org/ldaptive/DeleteRequest/DeleteRequest(java.lang.String)|",
+      "|java+method:///org/ldaptive/LdapEntry/getDn()|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/hasResults(org.ldaptive.Response)|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/searchForServiceById(org.ldaptive.Connection,long)|",
+      "|java+method:///org/ldaptive/Response/getResultCode()|",
+      "|java+method:///org/ldaptive/SearchResult/getEntry()|",
+      "|java+method:///org/ldaptive/DeleteOperation/execute(org.ldaptive.Request)|",
+      "|java+method:///org/ldaptive/LdapException/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao$AjcClosure5/LdapServiceRegistryDao$AjcClosure5(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/booleanValue(java.lang.Object)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/findServiceById(long)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/ldaptive/LdapException/getMessage()|",
+      "|java+method:///org/ldaptive/ConnectionFactory/getConnection()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/jasig/cas/util/LdapUtils/closeConnection(org.ldaptive.Connection)|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapRegisteredServiceMapper/mapToRegisteredService(org.ldaptive.LdapEntry)|",
+      "|java+method:///org/ldaptive/Response/getResult()|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/hasResults(org.ldaptive.Response)|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/searchForServiceById(org.ldaptive.Connection,long)|",
+      "|java+method:///org/ldaptive/SearchResult/getEntry()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/Conversions/longObject(long)|",
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao$AjcClosure9/LdapServiceRegistryDao$AjcClosure9(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/save(org.jasig.cas.services.RegisteredService)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/update(org.jasig.cas.services.RegisteredService)|",
+      "|java+constructor:///org/ldaptive/AddOperation/AddOperation(org.ldaptive.Connection)|",
+      "|java+method:///org/ldaptive/AddOperation/execute(org.ldaptive.Request)|",
+      "|java+method:///org/ldaptive/LdapException/getMessage()|",
+      "|java+method:///org/ldaptive/ConnectionFactory/getConnection()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/jasig/cas/util/LdapUtils/closeConnection(org.ldaptive.Connection)|",
+      "|java+method:///org/ldaptive/LdapEntry/getDn()|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapRegisteredServiceMapper/mapFromRegisteredService(java.lang.String,org.jasig.cas.services.RegisteredService)|",
+      "|java+method:///org/ldaptive/LdapEntry/getAttributes()|",
+      "|java+method:///org/ldaptive/SearchRequest/getBaseDn()|",
+      "|java+method:///org/jasig/cas/services/RegisteredService/getId()|",
+      "|java+constructor:///org/ldaptive/AddRequest/AddRequest(java.lang.String,java.util.Collection)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao$AjcClosure3/LdapServiceRegistryDao$AjcClosure3(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/monitor/ConnectionFactoryMonitor/observe()|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/ldaptive/Connection/isOpen()|",
+      "|java+method:///org/ldaptive/ConnectionFactory/getConnection()|",
+      "|java+method:///org/ldaptive/pool/Validator/validate(java.lang.Object)|",
+      "|java+method:///org/jasig/cas/util/LdapUtils/closeConnection(org.ldaptive.Connection)|",
+      "|java+method:///org/ldaptive/Connection/open()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/monitor/ConnectionFactoryMonitor$AjcClosure1/ConnectionFactoryMonitor$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/load()|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/ldaptive/SearchResult/getEntries()|",
+      "|java+method:///org/ldaptive/LdapException/getMessage()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapRegisteredServiceMapper/mapToRegisteredService(org.ldaptive.LdapEntry)|",
+      "|java+method:///org/ldaptive/Response/getResult()|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/hasResults(org.ldaptive.Response)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/executeSearchOperation(org.ldaptive.Connection,org.ldaptive.SearchFilter)|",
+      "|java+method:///org/ldaptive/ConnectionFactory/getConnection()|",
+      "|java+constructor:///org/ldaptive/SearchFilter/SearchFilter(java.lang.String)|",
+      "|java+constructor:///java/util/LinkedList/LinkedList()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/jasig/cas/util/LdapUtils/closeConnection(org.ldaptive.Connection)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao$AjcClosure7/LdapServiceRegistryDao$AjcClosure7(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/util/LdapUtils/getLong(org.ldaptive.LdapEntry,java.lang.String,java.lang.Long)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/lang/Long/toString()|",
+      "|java+method:///org/apache/commons/lang/math/NumberUtils/isNumber(java.lang.String)|",
+      "|java+method:///org/jasig/cas/util/LdapUtils/getString(org.ldaptive.LdapEntry,java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/Long/valueOf(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/util/LdapUtils$AjcClosure9/LdapUtils$AjcClosure9(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/util/LdapUtils/closeConnection(org.ldaptive.Connection)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/ldaptive/Connection/isOpen()|",
+      "|java+method:///org/ldaptive/Connection/close()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+constructor:///org/jasig/cas/util/LdapUtils$AjcClosure1/LdapUtils$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/util/LdapUtils/getLong(org.ldaptive.LdapEntry,java.lang.String)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/jasig/cas/util/LdapUtils/getLong(org.ldaptive.LdapEntry,java.lang.String,java.lang.Long)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/util/LdapUtils$AjcClosure7/LdapUtils$AjcClosure7(java.lang.Object%5B%5D)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/init()|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/valueOf(char)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapRegisteredServiceMapper/getObjectClass()|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapRegisteredServiceMapper/getIdAttribute()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao$AjcClosure1/LdapServiceRegistryDao$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/util/LdapUtils/getBoolean(org.ldaptive.LdapEntry,java.lang.String,java.lang.Boolean)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/lang/Boolean/toString()|",
+      "|java+method:///java/lang/String/equalsIgnoreCase(java.lang.String)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///org/jasig/cas/util/LdapUtils/getString(org.ldaptive.LdapEntry,java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/jasig/cas/util/LdapUtils$AjcClosure5/LdapUtils$AjcClosure5(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+constructor:///org/jasig/cas/authentication/LdapAuthenticationHandler/LdapAuthenticationHandler(org.ldaptive.auth.Authenticator)|",
+    "called": "|java+constructor:///org/jasig/cas/authentication/handler/support/AbstractUsernamePasswordAuthenticationHandler/AbstractUsernamePasswordAuthenticationHandler()|",
+    "v1Body": [
+      "|java+method:///java/util/Collections/emptyMap()|",
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///java/util/Collections/emptyList()|",
+      "|java+constructor:///org/jasig/cas/authentication/handler/support/AbstractUsernamePasswordAuthenticationHandler/AbstractUsernamePasswordAuthenticationHandler()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Collections/emptyMap()|",
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///java/util/Collections/emptyList()|",
+      "|java+constructor:///org/jasig/cas/authentication/handler/support/AbstractUsernamePasswordAuthenticationHandler/AbstractUsernamePasswordAuthenticationHandler()|",
+      "|java+method:///org/ldaptive/ReturnAttributes/value()|"
+    ],
+    "affectedLib": "org.jasig.cas:cas-server-core:4.1.0-RC1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/authentication/LdapAuthenticationHandler/authenticateUsernamePasswordInternal(org.jasig.cas.authentication.UsernamePasswordCredential)|",
+    "called": "|java+method:///org/jasig/cas/authentication/UsernamePasswordCredential/getPassword()|",
+    "v1Body": [
+      "|java+method:///org/jasig/cas/authentication/handler/support/AbstractUsernamePasswordAuthenticationHandler/getPasswordPolicyConfiguration()|",
+      "|java+method:///org/jasig/cas/authentication/LdapAuthenticationHandler/createPrincipal(java.lang.String,org.ldaptive.LdapEntry)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/ldaptive/auth/AuthenticationResponse/getAuthenticationResultCode()|",
+      "|java+method:///java/util/Collections/emptyList()|",
+      "|java+constructor:///org/jasig/cas/authentication/PreventedException/PreventedException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/ldaptive/auth/AuthenticationResponse/getLdapEntry()|",
+      "|java+method:///org/jasig/cas/authentication/LdapAuthenticationHandler/createHandlerResult(org.jasig.cas.authentication.Credential,org.jasig.cas.authentication.principal.Principal,java.util.List)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/ldaptive/auth/Authenticator/authenticate(org.ldaptive.auth.AuthenticationRequest)|",
+      "|java+method:///org/jasig/cas/authentication/UsernamePasswordCredential/getPassword()|",
+      "|java+method:///java/lang/String/valueOf(java.lang.Object)|",
+      "|java+method:///org/ldaptive/auth/AuthenticationResponse/getResult()|",
+      "|java+method:///org/jasig/cas/authentication/support/AccountStateHandler/handle(org.ldaptive.auth.AuthenticationResponse,org.jasig.cas.authentication.support.LdapPasswordPolicyConfiguration)|",
+      "|java+constructor:///org/ldaptive/Credential/Credential(java.lang.String)|",
+      "|java+method:///org/jasig/cas/authentication/support/LdapPasswordPolicyConfiguration/getAccountStateHandler()|",
+      "|java+constructor:///javax/security/auth/login/FailedLoginException/FailedLoginException(java.lang.String)|",
+      "|java+constructor:///org/ldaptive/auth/AuthenticationRequest/AuthenticationRequest(java.lang.String,org.ldaptive.Credential,java.lang.String%5B%5D)|",
+      "|java+constructor:///javax/security/auth/login/AccountNotFoundException/AccountNotFoundException(java.lang.String)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+method:///org/jasig/cas/authentication/UsernamePasswordCredential/getUsername()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jasig/cas/authentication/handler/support/AbstractUsernamePasswordAuthenticationHandler/getPasswordPolicyConfiguration()|",
+      "|java+method:///org/jasig/cas/authentication/LdapAuthenticationHandler/createPrincipal(java.lang.String,org.ldaptive.LdapEntry)|",
+      "|java+method:///org/ldaptive/auth/AuthenticationResponse/getResult()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/ldaptive/auth/AuthenticationResponse/getAuthenticationResultCode()|",
+      "|java+method:///java/util/Collections/emptyList()|",
+      "|java+constructor:///org/jasig/cas/authentication/PreventedException/PreventedException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/ldaptive/auth/AuthenticationResponse/getLdapEntry()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/ldaptive/auth/Authenticator/authenticate(org.ldaptive.auth.AuthenticationRequest)|",
+      "|java+method:///org/jasig/cas/authentication/UsernamePasswordCredential/getPassword()|",
+      "|java+method:///org/jasig/cas/authentication/LdapAuthenticationHandler/getPasswordEncoder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/jasig/cas/authentication/support/AccountStateHandler/handle(org.ldaptive.auth.AuthenticationResponse,org.jasig.cas.authentication.support.LdapPasswordPolicyConfiguration)|",
+      "|java+constructor:///org/ldaptive/Credential/Credential(java.lang.String)|",
+      "|java+method:///org/jasig/cas/authentication/support/LdapPasswordPolicyConfiguration/getAccountStateHandler()|",
+      "|java+constructor:///javax/security/auth/login/FailedLoginException/FailedLoginException(java.lang.String)|",
+      "|java+constructor:///org/ldaptive/auth/AuthenticationRequest/AuthenticationRequest(java.lang.String,org.ldaptive.Credential,java.lang.String%5B%5D)|",
+      "|java+constructor:///javax/security/auth/login/AccountNotFoundException/AccountNotFoundException(java.lang.String)|",
+      "|java+method:///org/jasig/cas/authentication/handler/PasswordEncoder/encode(java.lang.String)|",
+      "|java+method:///org/jasig/cas/authentication/LdapAuthenticationHandler/createHandlerResult(org.jasig.cas.authentication.Credential,org.jasig.cas.authentication.principal.Principal,java.util.List)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+method:///org/jasig/cas/authentication/UsernamePasswordCredential/getUsername()|"
+    ],
+    "affectedLib": "org.jasig.cas:cas-server-core:4.1.0-RC1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+constructor:///org/jasig/cas/authentication/support/DefaultAccountStateHandler/DefaultAccountStateHandler()|",
+    "called": "|java+constructor:///org/jasig/cas/authentication/InvalidLoginTimeException/InvalidLoginTimeException()|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/authentication/InvalidLoginLocationException/InvalidLoginLocationException()|",
+      "|java+constructor:///javax/security/auth/login/AccountExpiredException/AccountExpiredException()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///org/jasig/cas/authentication/InvalidLoginTimeException/InvalidLoginTimeException()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///org/jasig/cas/authentication/AccountPasswordMustChangeException/AccountPasswordMustChangeException()|",
+      "|java+constructor:///org/jasig/cas/authentication/AccountDisabledException/AccountDisabledException()|",
+      "|java+constructor:///javax/security/auth/login/AccountLockedException/AccountLockedException()|",
+      "|java+constructor:///javax/security/auth/login/CredentialExpiredException/CredentialExpiredException()|"
+    ],
+    "affectedLib": "org.jasig.cas:cas-server-core:4.1.0-RC1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/authentication/support/DefaultAccountStateHandler/handleWarning(org.ldaptive.auth.AccountState$Warning,org.ldaptive.auth.AuthenticationResponse,org.jasig.cas.authentication.support.LdapPasswordPolicyConfiguration,java.util.List)|",
+    "called": "|java+constructor:///org/jasig/cas/authentication/support/PasswordExpiringWarningMessageDescriptor/PasswordExpiringWarningMessageDescriptor(java.lang.String,long,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/joda/time/Instant/Instant(java.lang.Object)|",
+      "|java+method:///org/joda/time/Instant/now()|",
+      "|java+constructor:///org/jasig/cas/authentication/support/PasswordExpiringWarningMessage/PasswordExpiringWarningMessage(java.lang.String,long,java.lang.String)|",
+      "|java+method:///org/jasig/cas/authentication/support/LdapPasswordPolicyConfiguration/getPasswordWarningNumberOfDays()|",
+      "|java+constructor:///org/jasig/cas/Message/Message(java.lang.String,java.lang.String,java.io.Serializable%5B%5D)|",
+      "|java+method:///org/jasig/cas/authentication/support/LdapPasswordPolicyConfiguration/getPasswordPolicyUrl()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/ldaptive/auth/AccountState$Warning/getExpiration()|",
+      "|java+method:///org/joda/time/Days/daysBetween(org.joda.time.ReadableInstant,org.joda.time.ReadableInstant)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/cas/authentication/support/LdapPasswordPolicyConfiguration/isAlwaysDisplayPasswordExpirationWarning()|",
+      "|java+method:///org/joda/time/Days/getDays()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/ldaptive/auth/AccountState$Warning/getLoginsRemaining()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/joda/time/Instant/Instant(java.lang.Object)|",
+      "|java+method:///org/joda/time/Instant/now()|",
+      "|java+constructor:///org/jasig/cas/authentication/support/PasswordExpiringWarningMessageDescriptor/PasswordExpiringWarningMessageDescriptor(java.lang.String,long,java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/jasig/cas/authentication/support/LdapPasswordPolicyConfiguration/getPasswordWarningNumberOfDays()|",
+      "|java+method:///org/jasig/cas/authentication/support/LdapPasswordPolicyConfiguration/getPasswordPolicyUrl()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/ldaptive/auth/AccountState$Warning/getExpiration()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/cas/authentication/support/LdapPasswordPolicyConfiguration/isAlwaysDisplayPasswordExpirationWarning()|",
+      "|java+method:///org/joda/time/Days/getDays()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/ldaptive/auth/AccountState$Warning/getLoginsRemaining()|",
+      "|java+constructor:///org/jasig/cas/DefaultMessageDescriptor/DefaultMessageDescriptor(java.lang.String,java.lang.String,java.io.Serializable%5B%5D)|",
+      "|java+method:///org/joda/time/Days/daysBetween(org.joda.time.ReadableInstant,org.joda.time.ReadableInstant)|"
+    ],
+    "affectedLib": "org.jasig.cas:cas-server-core:4.1.0-RC1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+constructor:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/LdapServiceRegistryDao()|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///org/jasig/cas/adaptors/ldap/services/DefaultLdapServiceMapper/DefaultLdapServiceMapper()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/jasig/cas/adaptors/ldap/services/DefaultLdapRegisteredServiceMapper/DefaultLdapRegisteredServiceMapper()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.12",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+constructor:///org/jasig/cas/authentication/support/DefaultAccountStateHandler/DefaultAccountStateHandler()|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/authentication/InvalidLoginLocationException/InvalidLoginLocationException()|",
+      "|java+constructor:///javax/security/auth/login/AccountExpiredException/AccountExpiredException()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///org/jasig/cas/authentication/InvalidLoginTimeException/InvalidLoginTimeException()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///org/jasig/cas/authentication/AccountPasswordMustChangeException/AccountPasswordMustChangeException()|",
+      "|java+constructor:///org/jasig/cas/authentication/AccountDisabledException/AccountDisabledException()|",
+      "|java+constructor:///javax/security/auth/login/AccountLockedException/AccountLockedException()|",
+      "|java+constructor:///javax/security/auth/login/CredentialExpiredException/CredentialExpiredException()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.12",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+initializer:///org/jasig/cas/util/LdapUtils/LdapUtils$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///org/jasig/cas/util/LdapUtils/ajc$preClinit()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.12",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/authentication/support/DefaultAccountStateHandler/handleWarning(org.ldaptive.auth.AccountState$Warning,org.ldaptive.auth.AuthenticationResponse,org.jasig.cas.authentication.support.LdapPasswordPolicyConfiguration,java.util.List)|",
+    "called": "|java+method:///org/joda/time/Days/getDays()|",
+    "v1Body": [
+      "|java+constructor:///org/joda/time/Instant/Instant(java.lang.Object)|",
+      "|java+method:///org/joda/time/Instant/now()|",
+      "|java+constructor:///org/jasig/cas/authentication/support/PasswordExpiringWarningMessage/PasswordExpiringWarningMessage(java.lang.String,long,java.lang.String)|",
+      "|java+method:///org/jasig/cas/authentication/support/LdapPasswordPolicyConfiguration/getPasswordWarningNumberOfDays()|",
+      "|java+constructor:///org/jasig/cas/Message/Message(java.lang.String,java.lang.String,java.io.Serializable%5B%5D)|",
+      "|java+method:///org/jasig/cas/authentication/support/LdapPasswordPolicyConfiguration/getPasswordPolicyUrl()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/ldaptive/auth/AccountState$Warning/getExpiration()|",
+      "|java+method:///org/joda/time/Days/daysBetween(org.joda.time.ReadableInstant,org.joda.time.ReadableInstant)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/cas/authentication/support/LdapPasswordPolicyConfiguration/isAlwaysDisplayPasswordExpirationWarning()|",
+      "|java+method:///org/joda/time/Days/getDays()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/ldaptive/auth/AccountState$Warning/getLoginsRemaining()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/joda/time/Instant/Instant(java.lang.Object)|",
+      "|java+method:///org/joda/time/Instant/now()|",
+      "|java+constructor:///org/jasig/cas/authentication/support/PasswordExpiringWarningMessageDescriptor/PasswordExpiringWarningMessageDescriptor(java.lang.String,long,java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/jasig/cas/authentication/support/LdapPasswordPolicyConfiguration/getPasswordWarningNumberOfDays()|",
+      "|java+method:///org/jasig/cas/authentication/support/LdapPasswordPolicyConfiguration/getPasswordPolicyUrl()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/ldaptive/auth/AccountState$Warning/getExpiration()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/cas/authentication/support/LdapPasswordPolicyConfiguration/isAlwaysDisplayPasswordExpirationWarning()|",
+      "|java+method:///org/joda/time/Days/getDays()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/ldaptive/auth/AccountState$Warning/getLoginsRemaining()|",
+      "|java+constructor:///org/jasig/cas/DefaultMessageDescriptor/DefaultMessageDescriptor(java.lang.String,java.lang.String,java.io.Serializable%5B%5D)|",
+      "|java+method:///org/joda/time/Days/daysBetween(org.joda.time.ReadableInstant,org.joda.time.ReadableInstant)|"
+    ],
+    "affectedLib": "joda-time:joda-time:2.8.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/update(org.jasig.cas.services.RegisteredService)|",
+    "called": "|java+constructor:///org/ldaptive/AttributeModification/AttributeModification(org.ldaptive.AttributeModificationType,org.ldaptive.LdapAttribute)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///org/ldaptive/ModifyRequest/ModifyRequest(java.lang.String,org.ldaptive.AttributeModification%5B%5D)|",
+      "|java+method:///org/ldaptive/LdapException/getMessage()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/jasig/cas/services/RegisteredService/getId()|",
+      "|java+method:///org/ldaptive/Response/getResult()|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+constructor:///org/ldaptive/AttributeModification/AttributeModification(org.ldaptive.AttributeModificationType,org.ldaptive.LdapAttribute)|",
+      "|java+method:///org/ldaptive/LdapEntry/getDn()|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/searchForServiceById(org.ldaptive.Connection,long)|",
+      "|java+method:///org/ldaptive/SearchResult/getEntry()|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapRegisteredServiceMapper/mapFromRegisteredService(java.lang.String,org.jasig.cas.services.RegisteredService)|",
+      "|java+method:///org/ldaptive/LdapEntry/getAttributes()|",
+      "|java+constructor:///org/ldaptive/ModifyOperation/ModifyOperation(org.ldaptive.Connection)|",
+      "|java+method:///org/ldaptive/SearchRequest/getBaseDn()|",
+      "|java+method:///org/ldaptive/ConnectionFactory/getConnection()|",
+      "|java+method:///java/util/List/toArray(java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/jasig/cas/util/LdapUtils/closeConnection(org.ldaptive.Connection)|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/hasResults(org.ldaptive.Response)|",
+      "|java+method:///org/ldaptive/ModifyOperation/execute(org.ldaptive.Request)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/ldaptive/LdapAttribute/getName()|",
+      "|java+constructor:///org/ldaptive/ModifyRequest/ModifyRequest(java.lang.String,org.ldaptive.AttributeModification%5B%5D)|",
+      "|java+method:///org/ldaptive/LdapException/getMessage()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapRegisteredServiceMapper/getIdAttribute()|",
+      "|java+method:///org/ldaptive/Response/getResult()|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+constructor:///org/ldaptive/AttributeModification/AttributeModification(org.ldaptive.AttributeModificationType,org.ldaptive.LdapAttribute)|",
+      "|java+method:///org/ldaptive/LdapEntry/getDn()|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/searchForServiceById(org.ldaptive.Connection,long)|",
+      "|java+method:///org/ldaptive/SearchResult/getEntry()|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapRegisteredServiceMapper/mapFromRegisteredService(java.lang.String,org.jasig.cas.services.RegisteredService)|",
+      "|java+method:///org/ldaptive/LdapEntry/getAttributes()|",
+      "|java+constructor:///org/ldaptive/ModifyOperation/ModifyOperation(org.ldaptive.Connection)|",
+      "|java+method:///org/ldaptive/SearchRequest/getBaseDn()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/util/List/toArray(java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/jasig/cas/util/LdapUtils/closeConnection(org.ldaptive.Connection)|",
+      "|java+method:///org/jasig/cas/services/RegisteredService/getId()|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/getConnection()|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/hasResults(org.ldaptive.Response)|",
+      "|java+method:///org/ldaptive/ModifyOperation/execute(org.ldaptive.Request)|"
+    ],
+    "affectedLib": "org.ldaptive:ldaptive:1.0.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/newRequest(org.ldaptive.SearchFilter)|",
+    "called": "|java+method:///org/ldaptive/SearchRequest/setSearchReferenceHandlers(org.ldaptive.handler.SearchReferenceHandler%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/ldaptive/SearchRequest/getSizeLimit()|",
+      "|java+method:///org/ldaptive/SearchRequest/getControls()|",
+      "|java+method:///org/ldaptive/SearchRequest/getBinaryAttributes()|",
+      "|java+method:///org/ldaptive/SearchRequest/getBaseDn()|",
+      "|java+method:///org/ldaptive/SearchRequest/setTimeLimit(long)|",
+      "|java+method:///org/ldaptive/SearchRequest/setSortBehavior(org.ldaptive.SortBehavior)|",
+      "|java+method:///org/ldaptive/SearchRequest/setSearchScope(org.ldaptive.SearchScope)|",
+      "|java+method:///org/ldaptive/SearchRequest/getReturnAttributes()|",
+      "|java+method:///org/ldaptive/SearchRequest/getSortBehavior()|",
+      "|java+method:///org/ldaptive/SearchRequest/getFollowReferrals()|",
+      "|java+method:///org/ldaptive/SearchRequest/setBinaryAttributes(java.lang.String%5B%5D)|",
+      "|java+method:///org/ldaptive/SearchRequest/getTypesOnly()|",
+      "|java+method:///org/ldaptive/SearchRequest/getSearchScope()|",
+      "|java+method:///org/ldaptive/SearchRequest/getSearchReferenceHandlers()|",
+      "|java+constructor:///org/ldaptive/SearchRequest/SearchRequest(java.lang.String,org.ldaptive.SearchFilter)|",
+      "|java+method:///org/ldaptive/SearchRequest/getTimeLimit()|",
+      "|java+method:///org/ldaptive/SearchRequest/setSearchEntryHandlers(org.ldaptive.handler.SearchEntryHandler%5B%5D)|",
+      "|java+method:///org/ldaptive/SearchRequest/setSearchReferenceHandlers(org.ldaptive.handler.SearchReferenceHandler%5B%5D)|",
+      "|java+method:///org/ldaptive/SearchRequest/setSizeLimit(long)|",
+      "|java+method:///org/ldaptive/SearchRequest/setDerefAliases(org.ldaptive.DerefAliases)|",
+      "|java+method:///org/ldaptive/SearchRequest/getSearchEntryHandlers()|",
+      "|java+method:///org/ldaptive/SearchRequest/setControls(org.ldaptive.control.RequestControl%5B%5D)|",
+      "|java+method:///org/ldaptive/SearchRequest/getDerefAliases()|",
+      "|java+method:///org/ldaptive/SearchRequest/setReturnAttributes(java.lang.String%5B%5D)|",
+      "|java+method:///org/ldaptive/SearchRequest/setTypesOnly(boolean)|",
+      "|java+method:///org/ldaptive/SearchRequest/setFollowReferrals(boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/ldaptive/SearchRequest/getSizeLimit()|",
+      "|java+method:///org/ldaptive/SearchRequest/getControls()|",
+      "|java+method:///org/ldaptive/SearchRequest/getBaseDn()|",
+      "|java+method:///org/ldaptive/SearchRequest/setTimeLimit(long)|",
+      "|java+method:///org/ldaptive/SearchRequest/setSortBehavior(org.ldaptive.SortBehavior)|",
+      "|java+method:///org/ldaptive/SearchRequest/setSearchScope(org.ldaptive.SearchScope)|",
+      "|java+method:///org/ldaptive/SearchRequest/getSortBehavior()|",
+      "|java+method:///org/ldaptive/SearchRequest/getFollowReferrals()|",
+      "|java+method:///org/ldaptive/SearchRequest/setBinaryAttributes(java.lang.String%5B%5D)|",
+      "|java+method:///org/ldaptive/SearchRequest/getTypesOnly()|",
+      "|java+method:///org/ldaptive/SearchRequest/getSearchScope()|",
+      "|java+method:///org/ldaptive/SearchRequest/getSearchReferenceHandlers()|",
+      "|java+constructor:///org/ldaptive/SearchRequest/SearchRequest(java.lang.String,org.ldaptive.SearchFilter)|",
+      "|java+method:///org/ldaptive/SearchRequest/getTimeLimit()|",
+      "|java+method:///org/ldaptive/SearchRequest/setSearchEntryHandlers(org.ldaptive.handler.SearchEntryHandler%5B%5D)|",
+      "|java+method:///org/ldaptive/SearchRequest/setSearchReferenceHandlers(org.ldaptive.handler.SearchReferenceHandler%5B%5D)|",
+      "|java+method:///org/ldaptive/SearchRequest/setSizeLimit(long)|",
+      "|java+method:///org/ldaptive/SearchRequest/setDerefAliases(org.ldaptive.DerefAliases)|",
+      "|java+method:///org/ldaptive/SearchRequest/getSearchEntryHandlers()|",
+      "|java+method:///org/ldaptive/SearchRequest/setControls(org.ldaptive.control.RequestControl%5B%5D)|",
+      "|java+method:///org/ldaptive/SearchRequest/getDerefAliases()|",
+      "|java+method:///org/ldaptive/SearchRequest/setReturnAttributes(java.lang.String%5B%5D)|",
+      "|java+method:///org/ldaptive/ReturnAttributes/value()|",
+      "|java+method:///org/ldaptive/SearchRequest/setTypesOnly(boolean)|",
+      "|java+method:///org/ldaptive/SearchRequest/setFollowReferrals(boolean)|"
+    ],
+    "affectedLib": "org.ldaptive:ldaptive:1.0.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+constructor:///org/jasig/cas/authentication/support/UpnSearchEntryResolver/UpnSearchEntryResolver()|",
+    "called": "|java+constructor:///org/ldaptive/auth/SearchEntryResolver/SearchEntryResolver()|",
+    "v1Body": [
+      "|java+constructor:///org/ldaptive/auth/SearchEntryResolver/SearchEntryResolver()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+constructor:///org/ldaptive/auth/SearchEntryResolver/SearchEntryResolver()|"
+    ],
+    "affectedLib": "org.ldaptive:ldaptive:1.0.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/authentication/LdapAuthenticationHandler/createPrincipal(java.lang.String,org.ldaptive.LdapEntry)|",
+    "called": "|java+method:///org/ldaptive/LdapEntry/getAttribute(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/util/Map/size()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+constructor:///javax/security/auth/login/LoginException/LoginException(java.lang.String)|",
+      "|java+constructor:///org/jasig/cas/authentication/principal/SimplePrincipal/SimplePrincipal(java.lang.String,java.util.Map)|",
+      "|java+method:///org/ldaptive/LdapAttribute/getStringValue()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/String/valueOf(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///java/util/LinkedHashMap/LinkedHashMap(int)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/ldaptive/LdapAttribute/size()|",
+      "|java+method:///java/util/Map/keySet()|",
+      "|java+method:///org/ldaptive/LdapAttribute/getStringValues()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/ldaptive/LdapEntry/getAttribute(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/cas/authentication/principal/PrincipalFactory/createPrincipal(java.lang.String,java.util.Map)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Map/size()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+constructor:///javax/security/auth/login/LoginException/LoginException(java.lang.String)|",
+      "|java+method:///org/ldaptive/LdapAttribute/getStringValue()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///java/util/LinkedHashMap/LinkedHashMap(int)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/ldaptive/LdapAttribute/size()|",
+      "|java+method:///org/ldaptive/LdapAttribute/getStringValues()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///org/ldaptive/LdapEntry/getAttribute(java.lang.String)|"
+    ],
+    "affectedLib": "org.ldaptive:ldaptive:1.0.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/hasResults(org.ldaptive.Response)|",
+    "called": "|java+method:///org/ldaptive/SearchResult/getEntry()|",
+    "v1Body": [
+      "|java+method:///org/ldaptive/SearchResult/getEntry()|",
+      "|java+method:///org/ldaptive/Response/getResult()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/ldaptive/Response/getMessage()|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/ldaptive/Response/getResult()|",
+      "|java+method:///org/ldaptive/Response/getResultCode()|",
+      "|java+method:///org/ldaptive/SearchResult/getEntry()|"
+    ],
+    "affectedLib": "org.ldaptive:ldaptive:1.0.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/authentication/LdapAuthenticationHandler/authenticateUsernamePasswordInternal(org.jasig.cas.authentication.UsernamePasswordCredential)|",
+    "called": "|java+constructor:///org/ldaptive/Credential/Credential(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/jasig/cas/authentication/handler/support/AbstractUsernamePasswordAuthenticationHandler/getPasswordPolicyConfiguration()|",
+      "|java+method:///org/jasig/cas/authentication/LdapAuthenticationHandler/createPrincipal(java.lang.String,org.ldaptive.LdapEntry)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/ldaptive/auth/AuthenticationResponse/getAuthenticationResultCode()|",
+      "|java+method:///java/util/Collections/emptyList()|",
+      "|java+constructor:///org/jasig/cas/authentication/PreventedException/PreventedException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/ldaptive/auth/AuthenticationResponse/getLdapEntry()|",
+      "|java+method:///org/jasig/cas/authentication/LdapAuthenticationHandler/createHandlerResult(org.jasig.cas.authentication.Credential,org.jasig.cas.authentication.principal.Principal,java.util.List)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/ldaptive/auth/Authenticator/authenticate(org.ldaptive.auth.AuthenticationRequest)|",
+      "|java+method:///org/jasig/cas/authentication/UsernamePasswordCredential/getPassword()|",
+      "|java+method:///java/lang/String/valueOf(java.lang.Object)|",
+      "|java+method:///org/ldaptive/auth/AuthenticationResponse/getResult()|",
+      "|java+method:///org/jasig/cas/authentication/support/AccountStateHandler/handle(org.ldaptive.auth.AuthenticationResponse,org.jasig.cas.authentication.support.LdapPasswordPolicyConfiguration)|",
+      "|java+constructor:///org/ldaptive/Credential/Credential(java.lang.String)|",
+      "|java+method:///org/jasig/cas/authentication/support/LdapPasswordPolicyConfiguration/getAccountStateHandler()|",
+      "|java+constructor:///javax/security/auth/login/FailedLoginException/FailedLoginException(java.lang.String)|",
+      "|java+constructor:///org/ldaptive/auth/AuthenticationRequest/AuthenticationRequest(java.lang.String,org.ldaptive.Credential,java.lang.String%5B%5D)|",
+      "|java+constructor:///javax/security/auth/login/AccountNotFoundException/AccountNotFoundException(java.lang.String)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+method:///org/jasig/cas/authentication/UsernamePasswordCredential/getUsername()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jasig/cas/authentication/handler/support/AbstractUsernamePasswordAuthenticationHandler/getPasswordPolicyConfiguration()|",
+      "|java+method:///org/jasig/cas/authentication/LdapAuthenticationHandler/createPrincipal(java.lang.String,org.ldaptive.LdapEntry)|",
+      "|java+method:///org/ldaptive/auth/AuthenticationResponse/getResult()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/ldaptive/auth/AuthenticationResponse/getAuthenticationResultCode()|",
+      "|java+method:///java/util/Collections/emptyList()|",
+      "|java+constructor:///org/jasig/cas/authentication/PreventedException/PreventedException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/ldaptive/auth/AuthenticationResponse/getLdapEntry()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/ldaptive/auth/Authenticator/authenticate(org.ldaptive.auth.AuthenticationRequest)|",
+      "|java+method:///org/jasig/cas/authentication/UsernamePasswordCredential/getPassword()|",
+      "|java+method:///org/jasig/cas/authentication/LdapAuthenticationHandler/getPasswordEncoder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/jasig/cas/authentication/support/AccountStateHandler/handle(org.ldaptive.auth.AuthenticationResponse,org.jasig.cas.authentication.support.LdapPasswordPolicyConfiguration)|",
+      "|java+constructor:///org/ldaptive/Credential/Credential(java.lang.String)|",
+      "|java+method:///org/jasig/cas/authentication/support/LdapPasswordPolicyConfiguration/getAccountStateHandler()|",
+      "|java+constructor:///javax/security/auth/login/FailedLoginException/FailedLoginException(java.lang.String)|",
+      "|java+constructor:///org/ldaptive/auth/AuthenticationRequest/AuthenticationRequest(java.lang.String,org.ldaptive.Credential,java.lang.String%5B%5D)|",
+      "|java+constructor:///javax/security/auth/login/AccountNotFoundException/AccountNotFoundException(java.lang.String)|",
+      "|java+method:///org/jasig/cas/authentication/handler/PasswordEncoder/encode(java.lang.String)|",
+      "|java+method:///org/jasig/cas/authentication/LdapAuthenticationHandler/createHandlerResult(org.jasig.cas.authentication.Credential,org.jasig.cas.authentication.principal.Principal,java.util.List)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+method:///org/jasig/cas/authentication/UsernamePasswordCredential/getUsername()|"
+    ],
+    "affectedLib": "org.ldaptive:ldaptive:1.0.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/persondir/LdapPersonAttributeDao/getPeopleForQuery(org.ldaptive.SearchFilter,java.lang.String)|",
+    "called": "|java+constructor:///org/ldaptive/SearchOperation/SearchOperation(org.ldaptive.Connection)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList(int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/ldaptive/ConnectionFactory/getConnection()|",
+      "|java+constructor:///org/jasig/services/persondir/support/CaseInsensitiveNamedPersonImpl/CaseInsensitiveNamedPersonImpl(java.lang.String,java.util.Map)|",
+      "|java+method:///java/util/Map/containsKey(java.lang.Object)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/ldaptive/SearchResult/getEntries()|",
+      "|java+method:///org/jasig/cas/persondir/LdapPersonAttributeDao/convertLdapEntryToMap(org.ldaptive.LdapEntry)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///org/ldaptive/SearchOperation/SearchOperation(org.ldaptive.Connection)|",
+      "|java+method:///org/jasig/cas/persondir/LdapPersonAttributeDao/createRequest(org.ldaptive.SearchFilter)|",
+      "|java+method:///org/ldaptive/SearchResult/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/ldaptive/SearchOperation/execute(org.ldaptive.Request)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/jasig/cas/util/LdapUtils/closeConnection(org.ldaptive.Connection)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/jasig/cas/persondir/LdapPersonAttributeDao/getConfiguredUserNameAttribute()|",
+      "|java+method:///org/ldaptive/Response/getResult()|",
+      "|java+constructor:///org/jasig/services/persondir/support/CaseInsensitiveAttributeNamedPersonImpl/CaseInsensitiveAttributeNamedPersonImpl(java.lang.String,java.util.Map)|",
+      "|java+method:///java/util/Collection/iterator()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList(int)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/ldaptive/ConnectionFactory/getConnection()|",
+      "|java+constructor:///org/jasig/services/persondir/support/CaseInsensitiveNamedPersonImpl/CaseInsensitiveNamedPersonImpl(java.lang.String,java.util.Map)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/Map/containsKey(java.lang.Object)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/ldaptive/Connection/open()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/ldaptive/SearchResult/getEntries()|",
+      "|java+method:///org/jasig/cas/persondir/LdapPersonAttributeDao/convertLdapEntryToMap(org.ldaptive.LdapEntry)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///org/ldaptive/SearchOperation/SearchOperation(org.ldaptive.Connection)|",
+      "|java+method:///org/jasig/cas/persondir/LdapPersonAttributeDao/createRequest(org.ldaptive.SearchFilter)|",
+      "|java+method:///org/ldaptive/SearchResult/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/ldaptive/SearchOperation/execute(org.ldaptive.Request)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/jasig/cas/util/LdapUtils/closeConnection(org.ldaptive.Connection)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/jasig/cas/persondir/LdapPersonAttributeDao/getConfiguredUserNameAttribute()|",
+      "|java+method:///org/ldaptive/Response/getResult()|",
+      "|java+constructor:///org/jasig/services/persondir/support/CaseInsensitiveAttributeNamedPersonImpl/CaseInsensitiveAttributeNamedPersonImpl(java.lang.String,java.util.Map)|",
+      "|java+method:///java/util/Collection/iterator()|"
+    ],
+    "affectedLib": "org.ldaptive:ldaptive:1.0.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/util/LdapUtils/getBoolean(org.ldaptive.LdapEntry,java.lang.String)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///org/jasig/cas/util/LdapUtils/getBoolean(org.ldaptive.LdapEntry,java.lang.String,java.lang.Boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+constructor:///org/jasig/cas/util/LdapUtils$AjcClosure3/LdapUtils$AjcClosure3(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/util/LdapUtils/getString(org.ldaptive.LdapEntry,java.lang.String)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/jasig/cas/util/LdapUtils/getString(org.ldaptive.LdapEntry,java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/util/LdapUtils$AjcClosure11/LdapUtils$AjcClosure11(java.lang.Object%5B%5D)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/authentication/support/DefaultAccountStateHandler/handle(org.ldaptive.auth.AuthenticationResponse,org.jasig.cas.authentication.support.LdapPasswordPolicyConfiguration)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/ldaptive/auth/AccountState/getError()|",
+      "|java+method:///org/ldaptive/auth/AuthenticationResponse/getAccountState()|",
+      "|java+method:///org/ldaptive/auth/AccountState/getWarning()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/jasig/cas/authentication/support/DefaultAccountStateHandler/handleError(org.ldaptive.auth.AccountState$Error,org.ldaptive.auth.AuthenticationResponse,org.jasig.cas.authentication.support.LdapPasswordPolicyConfiguration,java.util.List)|",
+      "|java+method:///org/jasig/cas/authentication/support/DefaultAccountStateHandler/handleWarning(org.ldaptive.auth.AccountState$Warning,org.ldaptive.auth.AuthenticationResponse,org.jasig.cas.authentication.support.LdapPasswordPolicyConfiguration,java.util.List)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|",
+      "|java+constructor:///org/jasig/cas/authentication/support/DefaultAccountStateHandler$AjcClosure1/DefaultAccountStateHandler$AjcClosure1(java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/userdetails/LdapUserDetailsService/loadUserByUsername(java.lang.String)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/security/core/userdetails/UsernameNotFoundException/UsernameNotFoundException(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/ldaptive/SearchResult/size()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///org/springframework/security/core/userdetails/User/User(java.lang.String,java.lang.String,java.util.Collection)|",
+      "|java+method:///org/jasig/cas/userdetails/LdapUserDetailsService/createSearchFilter(org.ldaptive.SearchExecutor,java.lang.String)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(int)|",
+      "|java+method:///org/ldaptive/SearchResult/getEntries()|",
+      "|java+method:///java/lang/String/valueOf(java.lang.Object)|",
+      "|java+method:///java/lang/String/toUpperCase()|",
+      "|java+method:///org/ldaptive/SearchResult/getEntry()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///org/springframework/security/core/authority/SimpleGrantedAuthority/SimpleGrantedAuthority(java.lang.String)|",
+      "|java+method:///java/util/Collection/add(java.lang.Object)|",
+      "|java+method:///org/ldaptive/LdapAttribute/getStringValue()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/ldaptive/LdapEntry/getAttribute(java.lang.String)|",
+      "|java+method:///org/ldaptive/Response/getResult()|",
+      "|java+method:///org/ldaptive/SearchExecutor/search(org.ldaptive.ConnectionFactory,org.ldaptive.SearchFilter)|",
+      "|java+method:///org/ldaptive/LdapEntry/getDn()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/userdetails/LdapUserDetailsService$AjcClosure1/LdapUserDetailsService$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/util/LdapUtils/getString(org.ldaptive.LdapEntry,java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/ldaptive/LdapAttribute/getStringValue()|",
+      "|java+method:///org/ldaptive/LdapEntry/getAttribute(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/util/LdapUtils$AjcClosure13/LdapUtils$AjcClosure13(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/persondir/LdapPersonAttributeDao/initialize()|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/size()|",
+      "|java+method:///org/ldaptive/SearchScope/ordinal()|",
+      "|java+method:///java/util/Map/keySet()|",
+      "|java+method:///javax/naming/directory/SearchControls/getSearchScope()|",
+      "|java+method:///org/jasig/cas/persondir/LdapPersonAttributeDao/getResultAttributeMapping()|",
+      "|java+method:///java/util/Set/toArray(java.lang.Object%5B%5D)|",
+      "|java+method:///org/ldaptive/SearchScope/values()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/persondir/LdapPersonAttributeDao$AjcClosure1/LdapPersonAttributeDao$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/authentication/LdapAuthenticationHandler/initialize()|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/List/addAll(java.util.Collection)|",
+      "|java+method:///java/util/Map/keySet()|",
+      "|java+method:///java/util/List/toArray(java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+constructor:///org/jasig/cas/authentication/LdapAuthenticationHandler$AjcClosure5/LdapAuthenticationHandler$AjcClosure5(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/delete(org.jasig.cas.services.RegisteredService)|",
+    "called": "|java+method:///org/aspectj/runtime/internal/Conversions/booleanValue(java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///org/ldaptive/DeleteOperation/DeleteOperation(org.ldaptive.Connection)|",
+      "|java+method:///org/ldaptive/ConnectionFactory/getConnection()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/jasig/cas/util/LdapUtils/closeConnection(org.ldaptive.Connection)|",
+      "|java+method:///org/jasig/cas/services/RegisteredService/getId()|",
+      "|java+method:///org/ldaptive/Response/getResult()|",
+      "|java+constructor:///org/ldaptive/DeleteRequest/DeleteRequest(java.lang.String)|",
+      "|java+method:///org/ldaptive/LdapEntry/getDn()|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/hasResults(org.ldaptive.Response)|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/searchForServiceById(org.ldaptive.Connection,long)|",
+      "|java+method:///org/ldaptive/Response/getResultCode()|",
+      "|java+method:///org/ldaptive/SearchResult/getEntry()|",
+      "|java+method:///org/ldaptive/DeleteOperation/execute(org.ldaptive.Request)|",
+      "|java+method:///org/ldaptive/LdapException/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao$AjcClosure5/LdapServiceRegistryDao$AjcClosure5(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/booleanValue(java.lang.Object)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/findServiceById(long)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/ldaptive/LdapException/getMessage()|",
+      "|java+method:///org/ldaptive/ConnectionFactory/getConnection()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/jasig/cas/util/LdapUtils/closeConnection(org.ldaptive.Connection)|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapRegisteredServiceMapper/mapToRegisteredService(org.ldaptive.LdapEntry)|",
+      "|java+method:///org/ldaptive/Response/getResult()|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/hasResults(org.ldaptive.Response)|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/searchForServiceById(org.ldaptive.Connection,long)|",
+      "|java+method:///org/ldaptive/SearchResult/getEntry()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/Conversions/longObject(long)|",
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao$AjcClosure9/LdapServiceRegistryDao$AjcClosure9(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/save(org.jasig.cas.services.RegisteredService)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/update(org.jasig.cas.services.RegisteredService)|",
+      "|java+constructor:///org/ldaptive/AddOperation/AddOperation(org.ldaptive.Connection)|",
+      "|java+method:///org/ldaptive/AddOperation/execute(org.ldaptive.Request)|",
+      "|java+method:///org/ldaptive/LdapException/getMessage()|",
+      "|java+method:///org/ldaptive/ConnectionFactory/getConnection()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/jasig/cas/util/LdapUtils/closeConnection(org.ldaptive.Connection)|",
+      "|java+method:///org/ldaptive/LdapEntry/getDn()|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapRegisteredServiceMapper/mapFromRegisteredService(java.lang.String,org.jasig.cas.services.RegisteredService)|",
+      "|java+method:///org/ldaptive/LdapEntry/getAttributes()|",
+      "|java+method:///org/ldaptive/SearchRequest/getBaseDn()|",
+      "|java+method:///org/jasig/cas/services/RegisteredService/getId()|",
+      "|java+constructor:///org/ldaptive/AddRequest/AddRequest(java.lang.String,java.util.Collection)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao$AjcClosure3/LdapServiceRegistryDao$AjcClosure3(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/monitor/ConnectionFactoryMonitor/observe()|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/ldaptive/Connection/isOpen()|",
+      "|java+method:///org/ldaptive/ConnectionFactory/getConnection()|",
+      "|java+method:///org/ldaptive/pool/Validator/validate(java.lang.Object)|",
+      "|java+method:///org/jasig/cas/util/LdapUtils/closeConnection(org.ldaptive.Connection)|",
+      "|java+method:///org/ldaptive/Connection/open()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/monitor/ConnectionFactoryMonitor$AjcClosure1/ConnectionFactoryMonitor$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/load()|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/ldaptive/SearchResult/getEntries()|",
+      "|java+method:///org/ldaptive/LdapException/getMessage()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapRegisteredServiceMapper/mapToRegisteredService(org.ldaptive.LdapEntry)|",
+      "|java+method:///org/ldaptive/Response/getResult()|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/hasResults(org.ldaptive.Response)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/executeSearchOperation(org.ldaptive.Connection,org.ldaptive.SearchFilter)|",
+      "|java+method:///org/ldaptive/ConnectionFactory/getConnection()|",
+      "|java+constructor:///org/ldaptive/SearchFilter/SearchFilter(java.lang.String)|",
+      "|java+constructor:///java/util/LinkedList/LinkedList()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/jasig/cas/util/LdapUtils/closeConnection(org.ldaptive.Connection)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao$AjcClosure7/LdapServiceRegistryDao$AjcClosure7(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/util/LdapUtils/getLong(org.ldaptive.LdapEntry,java.lang.String,java.lang.Long)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/lang/Long/toString()|",
+      "|java+method:///org/apache/commons/lang/math/NumberUtils/isNumber(java.lang.String)|",
+      "|java+method:///org/jasig/cas/util/LdapUtils/getString(org.ldaptive.LdapEntry,java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/Long/valueOf(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/util/LdapUtils$AjcClosure9/LdapUtils$AjcClosure9(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/util/LdapUtils/closeConnection(org.ldaptive.Connection)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/ldaptive/Connection/isOpen()|",
+      "|java+method:///org/ldaptive/Connection/close()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+constructor:///org/jasig/cas/util/LdapUtils$AjcClosure1/LdapUtils$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/util/LdapUtils/getLong(org.ldaptive.LdapEntry,java.lang.String)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/jasig/cas/util/LdapUtils/getLong(org.ldaptive.LdapEntry,java.lang.String,java.lang.Long)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/util/LdapUtils$AjcClosure7/LdapUtils$AjcClosure7(java.lang.Object%5B%5D)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/init()|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/valueOf(char)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapRegisteredServiceMapper/getObjectClass()|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapRegisteredServiceMapper/getIdAttribute()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao$AjcClosure1/LdapServiceRegistryDao$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/util/LdapUtils/getBoolean(org.ldaptive.LdapEntry,java.lang.String,java.lang.Boolean)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/lang/Boolean/toString()|",
+      "|java+method:///java/lang/String/equalsIgnoreCase(java.lang.String)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///org/jasig/cas/util/LdapUtils/getString(org.ldaptive.LdapEntry,java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/jasig/cas/util/LdapUtils$AjcClosure5/LdapUtils$AjcClosure5(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  }
+]

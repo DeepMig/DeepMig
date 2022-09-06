@@ -1,0 +1,190 @@
+[
+  {
+    "coordinatesV1": "com.opentable.components:otj-logging-kafka:2.0.2",
+    "coordinatesV2": "com.opentable.components:otj-logging-kafka:1.9.0",
+    "caller": "|java+method:///com/opentable/logging/KafkaAppender/start()|",
+    "called": "|java+method:///com/opentable/logging/OptionalServerInfo/getDefaultClientName(com.opentable.logging.OptionalServerInfo$WarningReporter)|",
+    "v1Body": [
+      "|java+method:///com/opentable/logging/OptionalServerInfo/getDefaultClientName(com.opentable.logging.OptionalServerInfo$WarningReporter)|",
+      "|java+constructor:///kafka/producer/ProducerConfig/ProducerConfig(java.util.Properties)|",
+      "|java+method:///java/util/Properties/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/util/Properties/Properties()|",
+      "|java+constructor:///kafka/javaapi/producer/Producer/Producer(kafka.producer.ProducerConfig)|",
+      "|java+method:///ch/qos/logback/core/UnsynchronizedAppenderBase/start()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/opentable/logging/OptionalServerInfo/getDefaultClientName(com.opentable.logging.OptionalServerInfo$WarningReporter)|",
+      "|java+method:///java/util/Properties/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/util/Properties/Properties()|",
+      "|java+constructor:///org/apache/kafka/common/serialization/ByteArraySerializer/ByteArraySerializer()|",
+      "|java+constructor:///org/apache/kafka/clients/producer/KafkaProducer/KafkaProducer(java.util.Properties,org.apache.kafka.common.serialization.Serializer,org.apache.kafka.common.serialization.Serializer)|",
+      "|java+method:///ch/qos/logback/core/UnsynchronizedAppenderBase/start()|"
+    ],
+    "affectedLib": "com.opentable.components:otj-logging-core:1.9.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.opentable.components:otj-logging-kafka:2.0.2",
+    "coordinatesV2": "com.opentable.components:otj-logging-kafka:1.9.0",
+    "caller": "|java+method:///com/opentable/logging/KafkaAppender/start()|",
+    "called": "|java+constructor:///kafka/javaapi/producer/Producer/Producer(kafka.producer.ProducerConfig)|",
+    "v1Body": [
+      "|java+method:///com/opentable/logging/OptionalServerInfo/getDefaultClientName(com.opentable.logging.OptionalServerInfo$WarningReporter)|",
+      "|java+constructor:///kafka/producer/ProducerConfig/ProducerConfig(java.util.Properties)|",
+      "|java+method:///java/util/Properties/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/util/Properties/Properties()|",
+      "|java+constructor:///kafka/javaapi/producer/Producer/Producer(kafka.producer.ProducerConfig)|",
+      "|java+method:///ch/qos/logback/core/UnsynchronizedAppenderBase/start()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/opentable/logging/OptionalServerInfo/getDefaultClientName(com.opentable.logging.OptionalServerInfo$WarningReporter)|",
+      "|java+method:///java/util/Properties/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/util/Properties/Properties()|",
+      "|java+constructor:///org/apache/kafka/common/serialization/ByteArraySerializer/ByteArraySerializer()|",
+      "|java+constructor:///org/apache/kafka/clients/producer/KafkaProducer/KafkaProducer(java.util.Properties,org.apache.kafka.common.serialization.Serializer,org.apache.kafka.common.serialization.Serializer)|",
+      "|java+method:///ch/qos/logback/core/UnsynchronizedAppenderBase/start()|"
+    ],
+    "affectedLib": "org.apache.kafka:kafka_2.10:0.9.0.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.opentable.components:otj-logging-kafka:2.0.2",
+    "coordinatesV2": "com.opentable.components:otj-logging-kafka:1.9.0",
+    "caller": "|java+method:///com/opentable/logging/KafkaAppender/stop()|",
+    "called": "|java+method:///kafka/javaapi/producer/Producer/close()|",
+    "v1Body": [
+      "|java+method:///ch/qos/logback/core/UnsynchronizedAppenderBase/stop()|",
+      "|java+method:///com/opentable/logging/KafkaAppender/getStatusManager()|",
+      "|java+method:///ch/qos/logback/core/status/StatusManager/add(ch.qos.logback.core.status.Status)|",
+      "|java+method:///kafka/javaapi/producer/Producer/close()|",
+      "|java+constructor:///ch/qos/logback/core/status/InfoStatus/InfoStatus(java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///ch/qos/logback/core/UnsynchronizedAppenderBase/stop()|",
+      "|java+method:///org/apache/kafka/clients/producer/KafkaProducer/close()|",
+      "|java+method:///com/opentable/logging/KafkaAppender/getStatusManager()|",
+      "|java+method:///ch/qos/logback/core/status/StatusManager/add(ch.qos.logback.core.status.Status)|",
+      "|java+constructor:///ch/qos/logback/core/status/InfoStatus/InfoStatus(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.kafka:kafka_2.10:0.9.0.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.opentable.components:otj-logging-kafka:2.0.2",
+    "coordinatesV2": "com.opentable.components:otj-logging-kafka:1.9.0",
+    "caller": "|java+method:///com/opentable/logging/KafkaAppender/append(ch.qos.logback.classic.spi.ILoggingEvent)|",
+    "called": "|java+method:///kafka/javaapi/producer/Producer/send(kafka.producer.KeyedMessage)|",
+    "v1Body": [
+      "|java+method:///kafka/javaapi/producer/Producer/send(kafka.producer.KeyedMessage)|",
+      "|java+constructor:///java/io/ByteArrayOutputStream/ByteArrayOutputStream(int)|",
+      "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+      "|java+method:///java/lang/ThreadLocal/get()|",
+      "|java+method:///ch/qos/logback/core/encoder/Encoder/doEncode(java.lang.Object)|",
+      "|java+constructor:///kafka/producer/KeyedMessage/KeyedMessage(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/io/ByteArrayOutputStream/toByteArray()|",
+      "|java+method:///ch/qos/logback/core/encoder/Encoder/init(java.io.OutputStream)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/opentable/logging/PartitionKeyGenerator/next()|",
+      "|java+constructor:///java/io/ByteArrayOutputStream/ByteArrayOutputStream(int)|",
+      "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+      "|java+method:///org/apache/kafka/clients/producer/KafkaProducer/send(org.apache.kafka.clients.producer.ProducerRecord)|",
+      "|java+method:///java/io/ByteArrayOutputStream/toByteArray()|",
+      "|java+method:///ch/qos/logback/core/encoder/Encoder/init(java.io.OutputStream)|",
+      "|java+method:///ch/qos/logback/core/encoder/Encoder/doEncode(java.lang.Object)|",
+      "|java+constructor:///org/apache/kafka/clients/producer/ProducerRecord/ProducerRecord(java.lang.String,java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.kafka:kafka_2.10:0.9.0.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.opentable.components:otj-logging-kafka:1.9.0",
+    "coordinatesV2": "com.opentable.components:otj-logging-kafka:2.0.2",
+    "caller": "|java+method:///com/opentable/logging/KafkaAppender/start()|",
+    "called": "|java+method:///com/opentable/logging/OptionalServerInfo/getDefaultClientName(com.opentable.logging.OptionalServerInfo$WarningReporter)|",
+    "v1Body": [
+      "|java+method:///com/opentable/logging/OptionalServerInfo/getDefaultClientName(com.opentable.logging.OptionalServerInfo$WarningReporter)|",
+      "|java+constructor:///kafka/producer/ProducerConfig/ProducerConfig(java.util.Properties)|",
+      "|java+method:///java/util/Properties/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/util/Properties/Properties()|",
+      "|java+constructor:///kafka/javaapi/producer/Producer/Producer(kafka.producer.ProducerConfig)|",
+      "|java+method:///ch/qos/logback/core/UnsynchronizedAppenderBase/start()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/opentable/logging/OptionalServerInfo/getDefaultClientName(com.opentable.logging.OptionalServerInfo$WarningReporter)|",
+      "|java+method:///java/util/Properties/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/util/Properties/Properties()|",
+      "|java+constructor:///org/apache/kafka/common/serialization/ByteArraySerializer/ByteArraySerializer()|",
+      "|java+constructor:///org/apache/kafka/clients/producer/KafkaProducer/KafkaProducer(java.util.Properties,org.apache.kafka.common.serialization.Serializer,org.apache.kafka.common.serialization.Serializer)|",
+      "|java+method:///ch/qos/logback/core/UnsynchronizedAppenderBase/start()|"
+    ],
+    "affectedLib": "com.opentable.components:otj-logging:2.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.opentable.components:otj-logging-kafka:1.9.0",
+    "coordinatesV2": "com.opentable.components:otj-logging-kafka:2.0.2",
+    "caller": "|java+method:///com/opentable/logging/KafkaAppender/append(ch.qos.logback.classic.spi.ILoggingEvent)|",
+    "called": "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///kafka/javaapi/producer/Producer/send(kafka.producer.KeyedMessage)|",
+      "|java+constructor:///java/io/ByteArrayOutputStream/ByteArrayOutputStream(int)|",
+      "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+      "|java+method:///java/lang/ThreadLocal/get()|",
+      "|java+method:///ch/qos/logback/core/encoder/Encoder/doEncode(java.lang.Object)|",
+      "|java+constructor:///kafka/producer/KeyedMessage/KeyedMessage(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/io/ByteArrayOutputStream/toByteArray()|",
+      "|java+method:///ch/qos/logback/core/encoder/Encoder/init(java.io.OutputStream)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/opentable/logging/PartitionKeyGenerator/next()|",
+      "|java+constructor:///java/io/ByteArrayOutputStream/ByteArrayOutputStream(int)|",
+      "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+      "|java+method:///org/apache/kafka/clients/producer/KafkaProducer/send(org.apache.kafka.clients.producer.ProducerRecord)|",
+      "|java+method:///java/io/ByteArrayOutputStream/toByteArray()|",
+      "|java+method:///ch/qos/logback/core/encoder/Encoder/init(java.io.OutputStream)|",
+      "|java+method:///ch/qos/logback/core/encoder/Encoder/doEncode(java.lang.Object)|",
+      "|java+constructor:///org/apache/kafka/clients/producer/ProducerRecord/ProducerRecord(java.lang.String,java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.opentable.components:otj-logging-kafka:1.9.0",
+    "coordinatesV2": "com.opentable.components:otj-logging-kafka:2.0.2",
+    "caller": "|java+constructor:///com/opentable/logging/KafkaAppender/KafkaAppender()|",
+    "called": "|java+constructor:///ch/qos/logback/core/UnsynchronizedAppenderBase/UnsynchronizedAppenderBase()|",
+    "v1Body": [
+      "|java+constructor:///ch/qos/logback/core/UnsynchronizedAppenderBase/UnsynchronizedAppenderBase()|",
+      "|java+method:///java/lang/ThreadLocal/withInitial(java.util.function.Supplier)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/opentable/logging/PartitionKeyGenerator/PartitionKeyGenerator()|",
+      "|java+constructor:///ch/qos/logback/core/UnsynchronizedAppenderBase/UnsynchronizedAppenderBase()|"
+    ],
+    "affectedLib": "ch.qos.logback:logback-core:1.1.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.opentable.components:otj-logging-kafka:1.9.0",
+    "coordinatesV2": "com.opentable.components:otj-logging-kafka:2.0.2",
+    "caller": "|java+method:///com/opentable/logging/KafkaAppender/stop()|",
+    "called": "|java+constructor:///ch/qos/logback/core/status/InfoStatus/InfoStatus(java.lang.String,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///ch/qos/logback/core/UnsynchronizedAppenderBase/stop()|",
+      "|java+method:///com/opentable/logging/KafkaAppender/getStatusManager()|",
+      "|java+method:///ch/qos/logback/core/status/StatusManager/add(ch.qos.logback.core.status.Status)|",
+      "|java+method:///kafka/javaapi/producer/Producer/close()|",
+      "|java+constructor:///ch/qos/logback/core/status/InfoStatus/InfoStatus(java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///ch/qos/logback/core/UnsynchronizedAppenderBase/stop()|",
+      "|java+method:///org/apache/kafka/clients/producer/KafkaProducer/close()|",
+      "|java+method:///com/opentable/logging/KafkaAppender/getStatusManager()|",
+      "|java+method:///ch/qos/logback/core/status/StatusManager/add(ch.qos.logback.core.status.Status)|",
+      "|java+constructor:///ch/qos/logback/core/status/InfoStatus/InfoStatus(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "ch.qos.logback:logback-core:1.1.7",
+    "change": "UPDATED"
+  }
+]

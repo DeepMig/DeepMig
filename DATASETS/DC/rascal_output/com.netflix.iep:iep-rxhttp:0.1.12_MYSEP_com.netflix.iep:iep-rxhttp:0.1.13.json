@@ -1,0 +1,502 @@
+[
+  {
+    "coordinatesV1": "com.netflix.iep:iep-rxhttp:0.1.13",
+    "coordinatesV2": "com.netflix.iep:iep-rxhttp:0.1.12",
+    "caller": "|java+method:///com/netflix/iep/http/RxHttp/execute(com.netflix.iep.http.RequestContext)|",
+    "called": "|java+method:///iep/rx/Observable/doOnTerminate(iep.rx.functions.Action0)|",
+    "v1Body": [
+      "|java+method:///com/netflix/iep/http/RequestContext/entry()|",
+      "|java+method:///iep/rx/Observable/doOnError(iep.rx.functions.Action1)|",
+      "|java+method:///com/netflix/iep/http/RxHttp/getClient(com.netflix.iep.http.RequestContext)|",
+      "|java+method:///com/netflix/spectator/sandbox/HttpLogEntry/mark(java.lang.String)|",
+      "|java+method:///iep/io/reactivex/netty/protocol/http/client/HttpClient/submit(iep.io.reactivex.netty.protocol.http.client.HttpClientRequest)|",
+      "|java+method:///iep/rx/functions/Actions/empty()|",
+      "|java+method:///iep/rx/Observable/doOnNext(iep.rx.functions.Action1)|",
+      "|java+method:///iep/rx/Observable/doOnTerminate(iep.rx.functions.Action0)|",
+      "|java+method:///com/netflix/iep/http/RequestContext/request()|",
+      "|java+constructor:///com/netflix/iep/http/RxHttp$4/RxHttp$4(com.netflix.iep.http.RxHttp,com.netflix.spectator.sandbox.HttpLogEntry)|",
+      "|java+constructor:///com/netflix/iep/http/RxHttp$3/RxHttp$3(com.netflix.iep.http.RxHttp,com.netflix.spectator.sandbox.HttpLogEntry)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/netflix/iep/http/RequestContext/entry()|",
+      "|java+method:///com/netflix/iep/http/RxHttp/getClient(com.netflix.iep.http.RequestContext)|",
+      "|java+method:///com/netflix/spectator/sandbox/HttpLogEntry/mark(java.lang.String)|",
+      "|java+method:///rx/Observable/doOnTerminate(rx.functions.Action0)|",
+      "|java+method:///rx/Observable/doOnError(rx.functions.Action1)|",
+      "|java+method:///rx/Observable/doOnNext(rx.functions.Action1)|",
+      "|java+method:///com/netflix/iep/http/RequestContext/request()|",
+      "|java+constructor:///com/netflix/iep/http/RxHttp$4/RxHttp$4(com.netflix.iep.http.RxHttp,com.netflix.spectator.sandbox.HttpLogEntry)|",
+      "|java+constructor:///com/netflix/iep/http/RxHttp$3/RxHttp$3(com.netflix.iep.http.RxHttp,com.netflix.spectator.sandbox.HttpLogEntry)|",
+      "|java+method:///io/reactivex/netty/protocol/http/client/HttpClient/submit(io.reactivex.netty.protocol.http.client.HttpClientRequest)|",
+      "|java+method:///rx/functions/Actions/empty()|"
+    ],
+    "affectedLib": "com.netflix.iep-shadow:iep-rxjava:1.0.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.netflix.iep:iep-rxhttp:0.1.13",
+    "coordinatesV2": "com.netflix.iep:iep-rxhttp:0.1.12",
+    "caller": "|java+method:///com/netflix/iep/http/ErrorRetryHandler/call(java.lang.Throwable)|",
+    "called": "|java+method:///iep/rx/Observable/error(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///com/netflix/iep/http/RequestContext/entry()|",
+      "|java+method:///com/netflix/iep/http/RxHttp/execute(com.netflix.iep.http.RequestContext)|",
+      "|java+method:///iep/rx/Observable/error(java.lang.Throwable)|",
+      "|java+method:///com/netflix/iep/http/RequestContext/rxHttp()|",
+      "|java+method:///com/netflix/spectator/sandbox/HttpLogEntry/withAttempt(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/netflix/iep/http/RequestContext/entry()|",
+      "|java+method:///com/netflix/iep/http/RxHttp/execute(com.netflix.iep.http.RequestContext)|",
+      "|java+method:///com/netflix/iep/http/RequestContext/rxHttp()|",
+      "|java+method:///rx/Observable/error(java.lang.Throwable)|",
+      "|java+method:///com/netflix/spectator/sandbox/HttpLogEntry/withAttempt(int)|"
+    ],
+    "affectedLib": "com.netflix.iep-shadow:iep-rxjava:1.0.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.netflix.iep:iep-rxhttp:0.1.13",
+    "coordinatesV2": "com.netflix.iep:iep-rxhttp:0.1.12",
+    "caller": "|java+method:///com/netflix/iep/http/RxHttp/post(java.net.URI,java.lang.String,byte%5B%5D)|",
+    "called": "|java+method:///iep/io/reactivex/netty/protocol/http/client/HttpClientRequest/withHeader(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/netflix/iep/http/RxHttp/getServers(com.netflix.iep.http.ClientConfig)|",
+      "|java+method:///iep/io/reactivex/netty/protocol/http/client/HttpClientRequest/createPost(java.lang.String)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/fromUri(java.net.URI)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/relativeUri()|",
+      "|java+method:///com/netflix/iep/http/RxHttp/compress(com.netflix.iep.http.ClientConfig,iep.io.reactivex.netty.protocol.http.client.HttpClientRequest,byte%5B%5D)|",
+      "|java+method:///com/netflix/iep/http/RxHttp/execute(com.netflix.iep.http.ClientConfig,java.util.List,iep.io.reactivex.netty.protocol.http.client.HttpClientRequest)|",
+      "|java+method:///iep/io/reactivex/netty/protocol/http/client/HttpClientRequest/withHeader(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/netflix/iep/http/RxHttp/getServers(com.netflix.iep.http.ClientConfig)|",
+      "|java+method:///io/reactivex/netty/protocol/http/client/HttpClientRequest/withHeader(java.lang.String,java.lang.String)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/fromUri(java.net.URI)|",
+      "|java+method:///io/reactivex/netty/protocol/http/client/HttpClientRequest/createPost(java.lang.String)|",
+      "|java+method:///com/netflix/iep/http/RxHttp/compress(com.netflix.iep.http.ClientConfig,io.reactivex.netty.protocol.http.client.HttpClientRequest,byte%5B%5D)|",
+      "|java+method:///com/netflix/iep/http/RxHttp/execute(com.netflix.iep.http.ClientConfig,java.util.List,io.reactivex.netty.protocol.http.client.HttpClientRequest)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/relativeUri()|"
+    ],
+    "affectedLib": "com.netflix.iep-shadow:iep-rxnetty:0.4.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.netflix.iep:iep-rxhttp:0.1.13",
+    "coordinatesV2": "com.netflix.iep:iep-rxhttp:0.1.12",
+    "caller": "|java+method:///com/netflix/iep/http/RxHttp/newClient(com.netflix.iep.http.RequestContext)|",
+    "called": "|java+constructor:///iep/io/reactivex/netty/protocol/http/client/HttpClient$HttpClientConfig$Builder/HttpClient$HttpClientConfig$Builder()|",
+    "v1Body": [
+      "|java+method:///com/netflix/iep/http/RxHttp/getPoolLimitStrategy(com.netflix.iep.http.ClientConfig)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/idleConnectionsTimeoutMillis()|",
+      "|java+constructor:///iep/io/reactivex/netty/protocol/http/client/HttpClient$HttpClientConfig$Builder/HttpClient$HttpClientConfig$Builder()|",
+      "|java+method:///iep/io/reactivex/netty/pipeline/ssl/DefaultFactories/trustAll()|",
+      "|java+method:///com/netflix/iep/http/RequestContext/config()|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/connectTimeout()|",
+      "|java+method:///iep/io/reactivex/netty/protocol/http/client/HttpClientBuilder/config(iep.io.reactivex.netty.client.RxClient$ClientConfig)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/userAgent()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///iep/io/reactivex/netty/protocol/http/client/HttpClientBuilder/channelOption(io.netty.channel.ChannelOption,java.lang.Object)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/readTimeout()|",
+      "|java+method:///com/netflix/iep/http/Server/isSecure()|",
+      "|java+method:///com/netflix/iep/http/Server/port()|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/name()|",
+      "|java+method:///iep/io/reactivex/netty/protocol/http/client/HttpClientBuilder/pipelineConfigurator(iep.io.reactivex.netty.pipeline.PipelineConfigurator)|",
+      "|java+constructor:///com/netflix/iep/http/RxHttp$HttpDecompressionConfigurator/RxHttp$HttpDecompressionConfigurator(com.netflix.iep.http.RxHttp$1)|",
+      "|java+constructor:///iep/io/reactivex/netty/protocol/http/client/HttpClientPipelineConfigurator/HttpClientPipelineConfigurator()|",
+      "|java+method:///iep/io/reactivex/netty/protocol/http/client/HttpClientBuilder/withConnectionPoolLimitStrategy(iep.io.reactivex.netty.client.PoolLimitDeterminationStrategy)|",
+      "|java+method:///com/netflix/iep/http/RequestContext/server()|",
+      "|java+method:///iep/io/reactivex/netty/protocol/http/client/HttpClientBuilder/withSslEngineFactory(iep.io.reactivex.netty.pipeline.ssl.SSLEngineFactory)|",
+      "|java+method:///iep/io/reactivex/netty/protocol/http/client/HttpClientBuilder/withNoConnectionPooling()|",
+      "|java+method:///com/netflix/iep/http/Server/host()|",
+      "|java+method:///iep/io/reactivex/netty/protocol/http/client/HttpClient$HttpClientConfig$Builder/build()|",
+      "|java+method:///iep/io/reactivex/netty/protocol/http/client/HttpClient$HttpClientConfig$Builder/readTimeout(int,java.util.concurrent.TimeUnit)|",
+      "|java+method:///iep/io/reactivex/netty/protocol/http/client/HttpClient$HttpClientConfig$Builder/userAgent(java.lang.String)|",
+      "|java+method:///iep/io/reactivex/netty/protocol/http/client/HttpClientBuilder/withName(java.lang.String)|",
+      "|java+constructor:///iep/io/reactivex/netty/pipeline/PipelineConfiguratorComposite/PipelineConfiguratorComposite(iep.io.reactivex.netty.pipeline.PipelineConfigurator%5B%5D)|",
+      "|java+method:///iep/io/reactivex/netty/protocol/http/client/HttpClientBuilder/withIdleConnectionsTimeoutMillis(long)|",
+      "|java+method:///iep/io/reactivex/netty/protocol/http/client/HttpClientBuilder/build()|",
+      "|java+method:///iep/io/reactivex/netty/RxNetty/newHttpClientBuilder(java.lang.String,int)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/reactivex/netty/pipeline/ssl/DefaultFactories/trustAll()|",
+      "|java+constructor:///io/reactivex/netty/protocol/http/client/HttpClientPipelineConfigurator/HttpClientPipelineConfigurator()|",
+      "|java+constructor:///com/netflix/iep/http/RxHttp$HttpDecompressionConfigurator/RxHttp$HttpDecompressionConfigurator(com.netflix.iep.http.RxHttp$1)|",
+      "|java+method:///io/reactivex/netty/protocol/http/client/HttpClientBuilder/withNoConnectionPooling()|",
+      "|java+method:///com/netflix/iep/http/Server/host()|",
+      "|java+method:///io/reactivex/netty/protocol/http/client/HttpClient$HttpClientConfig$Builder/userAgent(java.lang.String)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/connectTimeout()|",
+      "|java+method:///io/reactivex/netty/protocol/http/client/HttpClient$HttpClientConfig$Builder/readTimeout(int,java.util.concurrent.TimeUnit)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///io/reactivex/netty/protocol/http/client/HttpClientBuilder/withName(java.lang.String)|",
+      "|java+method:///io/reactivex/netty/protocol/http/client/HttpClientBuilder/withConnectionPoolLimitStrategy(io.reactivex.netty.client.PoolLimitDeterminationStrategy)|",
+      "|java+method:///io/reactivex/netty/protocol/http/client/HttpClientBuilder/withIdleConnectionsTimeoutMillis(long)|",
+      "|java+method:///com/netflix/iep/http/RxHttp/getPoolLimitStrategy(com.netflix.iep.http.ClientConfig)|",
+      "|java+constructor:///io/reactivex/netty/protocol/http/client/HttpClient$HttpClientConfig$Builder/HttpClient$HttpClientConfig$Builder()|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/idleConnectionsTimeoutMillis()|",
+      "|java+method:///io/reactivex/netty/protocol/http/client/HttpClientBuilder/channelOption(io.netty.channel.ChannelOption,java.lang.Object)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/readTimeout()|",
+      "|java+method:///com/netflix/iep/http/Server/isSecure()|",
+      "|java+method:///com/netflix/iep/http/Server/port()|",
+      "|java+method:///io/reactivex/netty/protocol/http/client/HttpClientBuilder/pipelineConfigurator(io.reactivex.netty.pipeline.PipelineConfigurator)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/name()|",
+      "|java+method:///io/reactivex/netty/protocol/http/client/HttpClientBuilder/withSslEngineFactory(io.reactivex.netty.pipeline.ssl.SSLEngineFactory)|",
+      "|java+method:///io/reactivex/netty/protocol/http/client/HttpClient$HttpClientConfig$Builder/build()|",
+      "|java+method:///com/netflix/iep/http/RequestContext/config()|",
+      "|java+method:///com/netflix/iep/http/RequestContext/server()|",
+      "|java+constructor:///io/reactivex/netty/pipeline/PipelineConfiguratorComposite/PipelineConfiguratorComposite(io.reactivex.netty.pipeline.PipelineConfigurator%5B%5D)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/userAgent()|",
+      "|java+method:///io/reactivex/netty/RxNetty/newHttpClientBuilder(java.lang.String,int)|",
+      "|java+method:///io/reactivex/netty/protocol/http/client/HttpClientBuilder/config(io.reactivex.netty.client.RxClient$ClientConfig)|",
+      "|java+method:///io/reactivex/netty/protocol/http/client/HttpClientBuilder/build()|"
+    ],
+    "affectedLib": "com.netflix.iep-shadow:iep-rxnetty:0.4.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.netflix.iep:iep-rxhttp:0.1.13",
+    "coordinatesV2": "com.netflix.iep:iep-rxhttp:0.1.12",
+    "caller": "|java+method:///com/netflix/iep/http/RxHttp/getPoolLimitStrategy(com.netflix.iep.http.ClientConfig)|",
+    "called": "|java+constructor:///iep/io/reactivex/netty/client/CompositePoolLimitDeterminationStrategy/CompositePoolLimitDeterminationStrategy(iep.io.reactivex.netty.client.PoolLimitDeterminationStrategy%5B%5D)|",
+    "v1Body": [
+      "|java+constructor:///iep/io/reactivex/netty/client/MaxConnectionsBasedStrategy/MaxConnectionsBasedStrategy(int)|",
+      "|java+constructor:///iep/io/reactivex/netty/client/CompositePoolLimitDeterminationStrategy/CompositePoolLimitDeterminationStrategy(iep.io.reactivex.netty.client.PoolLimitDeterminationStrategy%5B%5D)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/name()|",
+      "|java+method:///java/util/concurrent/ConcurrentHashMap/putIfAbsent(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/concurrent/ConcurrentHashMap/get(java.lang.Object)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/maxConnectionsTotal()|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/maxConnectionsPerHost()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/reactivex/netty/client/MaxConnectionsBasedStrategy/MaxConnectionsBasedStrategy(int)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/name()|",
+      "|java+method:///java/util/concurrent/ConcurrentHashMap/putIfAbsent(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/concurrent/ConcurrentHashMap/get(java.lang.Object)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/maxConnectionsTotal()|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/maxConnectionsPerHost()|",
+      "|java+constructor:///io/reactivex/netty/client/CompositePoolLimitDeterminationStrategy/CompositePoolLimitDeterminationStrategy(io.reactivex.netty.client.PoolLimitDeterminationStrategy%5B%5D)|"
+    ],
+    "affectedLib": "com.netflix.iep-shadow:iep-rxnetty:0.4.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.netflix.iep:iep-rxhttp:0.1.13",
+    "coordinatesV2": "com.netflix.iep:iep-rxhttp:0.1.12",
+    "caller": "|java+method:///com/netflix/iep/http/RxHttp/put(java.net.URI,java.lang.String,byte%5B%5D)|",
+    "called": "|java+method:///iep/io/reactivex/netty/protocol/http/client/HttpClientRequest/withHeader(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/netflix/iep/http/RxHttp/getServers(com.netflix.iep.http.ClientConfig)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/relativeUri()|",
+      "|java+method:///com/netflix/iep/http/RxHttp/compress(com.netflix.iep.http.ClientConfig,iep.io.reactivex.netty.protocol.http.client.HttpClientRequest,byte%5B%5D)|",
+      "|java+method:///iep/io/reactivex/netty/protocol/http/client/HttpClientRequest/createPut(java.lang.String)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/fromUri(java.net.URI)|",
+      "|java+method:///com/netflix/iep/http/RxHttp/execute(com.netflix.iep.http.ClientConfig,java.util.List,iep.io.reactivex.netty.protocol.http.client.HttpClientRequest)|",
+      "|java+method:///iep/io/reactivex/netty/protocol/http/client/HttpClientRequest/withHeader(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/netflix/iep/http/RxHttp/getServers(com.netflix.iep.http.ClientConfig)|",
+      "|java+method:///io/reactivex/netty/protocol/http/client/HttpClientRequest/createPut(java.lang.String)|",
+      "|java+method:///io/reactivex/netty/protocol/http/client/HttpClientRequest/withHeader(java.lang.String,java.lang.String)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/fromUri(java.net.URI)|",
+      "|java+method:///com/netflix/iep/http/RxHttp/compress(com.netflix.iep.http.ClientConfig,io.reactivex.netty.protocol.http.client.HttpClientRequest,byte%5B%5D)|",
+      "|java+method:///com/netflix/iep/http/RxHttp/execute(com.netflix.iep.http.ClientConfig,java.util.List,io.reactivex.netty.protocol.http.client.HttpClientRequest)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/relativeUri()|"
+    ],
+    "affectedLib": "com.netflix.iep-shadow:iep-rxnetty:0.4.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.netflix.iep:iep-rxhttp:0.1.13",
+    "coordinatesV2": "com.netflix.iep:iep-rxhttp:0.1.12",
+    "caller": "|java+method:///com/netflix/iep/http/RxHttp/get(java.net.URI)|",
+    "called": "|java+method:///iep/io/reactivex/netty/protocol/http/client/HttpClientRequest/createGet(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/netflix/iep/http/RxHttp/getServers(com.netflix.iep.http.ClientConfig)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/fromUri(java.net.URI)|",
+      "|java+method:///com/netflix/iep/http/RxHttp/execute(com.netflix.iep.http.ClientConfig,java.util.List,iep.io.reactivex.netty.protocol.http.client.HttpClientRequest)|",
+      "|java+method:///iep/io/reactivex/netty/protocol/http/client/HttpClientRequest/createGet(java.lang.String)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/relativeUri()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/netflix/iep/http/RxHttp/getServers(com.netflix.iep.http.ClientConfig)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/fromUri(java.net.URI)|",
+      "|java+method:///io/reactivex/netty/protocol/http/client/HttpClientRequest/createGet(java.lang.String)|",
+      "|java+method:///com/netflix/iep/http/RxHttp/execute(com.netflix.iep.http.ClientConfig,java.util.List,io.reactivex.netty.protocol.http.client.HttpClientRequest)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/relativeUri()|"
+    ],
+    "affectedLib": "com.netflix.iep-shadow:iep-rxnetty:0.4.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.netflix.iep:iep-rxhttp:0.1.13",
+    "coordinatesV2": "com.netflix.iep:iep-rxhttp:0.1.12",
+    "caller": "|java+method:///com/netflix/iep/http/RxHttp/delete(java.net.URI)|",
+    "called": "|java+method:///iep/io/reactivex/netty/protocol/http/client/HttpClientRequest/createDelete(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/netflix/iep/http/RxHttp/getServers(com.netflix.iep.http.ClientConfig)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/fromUri(java.net.URI)|",
+      "|java+method:///com/netflix/iep/http/RxHttp/execute(com.netflix.iep.http.ClientConfig,java.util.List,iep.io.reactivex.netty.protocol.http.client.HttpClientRequest)|",
+      "|java+method:///iep/io/reactivex/netty/protocol/http/client/HttpClientRequest/createDelete(java.lang.String)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/relativeUri()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/netflix/iep/http/RxHttp/getServers(com.netflix.iep.http.ClientConfig)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/fromUri(java.net.URI)|",
+      "|java+method:///com/netflix/iep/http/RxHttp/execute(com.netflix.iep.http.ClientConfig,java.util.List,io.reactivex.netty.protocol.http.client.HttpClientRequest)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/relativeUri()|",
+      "|java+method:///io/reactivex/netty/protocol/http/client/HttpClientRequest/createDelete(java.lang.String)|"
+    ],
+    "affectedLib": "com.netflix.iep-shadow:iep-rxnetty:0.4.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.netflix.iep:iep-rxhttp:0.1.12",
+    "coordinatesV2": "com.netflix.iep:iep-rxhttp:0.1.13",
+    "caller": "|java+method:///com/netflix/iep/http/RxHttp/execute(com.netflix.iep.http.RequestContext)|",
+    "called": "|java+method:///rx/Observable/doOnNext(rx.functions.Action1)|",
+    "v1Body": [
+      "|java+method:///com/netflix/iep/http/RequestContext/entry()|",
+      "|java+method:///iep/rx/Observable/doOnError(iep.rx.functions.Action1)|",
+      "|java+method:///com/netflix/iep/http/RxHttp/getClient(com.netflix.iep.http.RequestContext)|",
+      "|java+method:///com/netflix/spectator/sandbox/HttpLogEntry/mark(java.lang.String)|",
+      "|java+method:///iep/io/reactivex/netty/protocol/http/client/HttpClient/submit(iep.io.reactivex.netty.protocol.http.client.HttpClientRequest)|",
+      "|java+method:///iep/rx/functions/Actions/empty()|",
+      "|java+method:///iep/rx/Observable/doOnNext(iep.rx.functions.Action1)|",
+      "|java+method:///iep/rx/Observable/doOnTerminate(iep.rx.functions.Action0)|",
+      "|java+method:///com/netflix/iep/http/RequestContext/request()|",
+      "|java+constructor:///com/netflix/iep/http/RxHttp$4/RxHttp$4(com.netflix.iep.http.RxHttp,com.netflix.spectator.sandbox.HttpLogEntry)|",
+      "|java+constructor:///com/netflix/iep/http/RxHttp$3/RxHttp$3(com.netflix.iep.http.RxHttp,com.netflix.spectator.sandbox.HttpLogEntry)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/netflix/iep/http/RequestContext/entry()|",
+      "|java+method:///com/netflix/iep/http/RxHttp/getClient(com.netflix.iep.http.RequestContext)|",
+      "|java+method:///com/netflix/spectator/sandbox/HttpLogEntry/mark(java.lang.String)|",
+      "|java+method:///rx/Observable/doOnTerminate(rx.functions.Action0)|",
+      "|java+method:///rx/Observable/doOnError(rx.functions.Action1)|",
+      "|java+method:///rx/Observable/doOnNext(rx.functions.Action1)|",
+      "|java+method:///com/netflix/iep/http/RequestContext/request()|",
+      "|java+constructor:///com/netflix/iep/http/RxHttp$4/RxHttp$4(com.netflix.iep.http.RxHttp,com.netflix.spectator.sandbox.HttpLogEntry)|",
+      "|java+constructor:///com/netflix/iep/http/RxHttp$3/RxHttp$3(com.netflix.iep.http.RxHttp,com.netflix.spectator.sandbox.HttpLogEntry)|",
+      "|java+method:///io/reactivex/netty/protocol/http/client/HttpClient/submit(io.reactivex.netty.protocol.http.client.HttpClientRequest)|",
+      "|java+method:///rx/functions/Actions/empty()|"
+    ],
+    "affectedLib": "io.reactivex:rxjava:1.0.8",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.netflix.iep:iep-rxhttp:0.1.12",
+    "coordinatesV2": "com.netflix.iep:iep-rxhttp:0.1.13",
+    "caller": "|java+method:///com/netflix/iep/http/ErrorRetryHandler/call(java.lang.Throwable)|",
+    "called": "|java+method:///rx/Observable/error(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///com/netflix/iep/http/RequestContext/entry()|",
+      "|java+method:///com/netflix/iep/http/RxHttp/execute(com.netflix.iep.http.RequestContext)|",
+      "|java+method:///iep/rx/Observable/error(java.lang.Throwable)|",
+      "|java+method:///com/netflix/iep/http/RequestContext/rxHttp()|",
+      "|java+method:///com/netflix/spectator/sandbox/HttpLogEntry/withAttempt(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/netflix/iep/http/RequestContext/entry()|",
+      "|java+method:///com/netflix/iep/http/RxHttp/execute(com.netflix.iep.http.RequestContext)|",
+      "|java+method:///com/netflix/iep/http/RequestContext/rxHttp()|",
+      "|java+method:///rx/Observable/error(java.lang.Throwable)|",
+      "|java+method:///com/netflix/spectator/sandbox/HttpLogEntry/withAttempt(int)|"
+    ],
+    "affectedLib": "io.reactivex:rxjava:1.0.8",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.netflix.iep:iep-rxhttp:0.1.12",
+    "coordinatesV2": "com.netflix.iep:iep-rxhttp:0.1.13",
+    "caller": "|java+method:///com/netflix/iep/http/RxHttp/post(java.net.URI,java.lang.String,byte%5B%5D)|",
+    "called": "|java+method:///io/reactivex/netty/protocol/http/client/HttpClientRequest/createPost(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/netflix/iep/http/RxHttp/getServers(com.netflix.iep.http.ClientConfig)|",
+      "|java+method:///iep/io/reactivex/netty/protocol/http/client/HttpClientRequest/createPost(java.lang.String)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/fromUri(java.net.URI)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/relativeUri()|",
+      "|java+method:///com/netflix/iep/http/RxHttp/compress(com.netflix.iep.http.ClientConfig,iep.io.reactivex.netty.protocol.http.client.HttpClientRequest,byte%5B%5D)|",
+      "|java+method:///com/netflix/iep/http/RxHttp/execute(com.netflix.iep.http.ClientConfig,java.util.List,iep.io.reactivex.netty.protocol.http.client.HttpClientRequest)|",
+      "|java+method:///iep/io/reactivex/netty/protocol/http/client/HttpClientRequest/withHeader(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/netflix/iep/http/RxHttp/getServers(com.netflix.iep.http.ClientConfig)|",
+      "|java+method:///io/reactivex/netty/protocol/http/client/HttpClientRequest/withHeader(java.lang.String,java.lang.String)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/fromUri(java.net.URI)|",
+      "|java+method:///io/reactivex/netty/protocol/http/client/HttpClientRequest/createPost(java.lang.String)|",
+      "|java+method:///com/netflix/iep/http/RxHttp/compress(com.netflix.iep.http.ClientConfig,io.reactivex.netty.protocol.http.client.HttpClientRequest,byte%5B%5D)|",
+      "|java+method:///com/netflix/iep/http/RxHttp/execute(com.netflix.iep.http.ClientConfig,java.util.List,io.reactivex.netty.protocol.http.client.HttpClientRequest)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/relativeUri()|"
+    ],
+    "affectedLib": "io.reactivex:rxnetty:0.4.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.netflix.iep:iep-rxhttp:0.1.12",
+    "coordinatesV2": "com.netflix.iep:iep-rxhttp:0.1.13",
+    "caller": "|java+method:///com/netflix/iep/http/RxHttp/newClient(com.netflix.iep.http.RequestContext)|",
+    "called": "|java+method:///io/reactivex/netty/RxNetty/newHttpClientBuilder(java.lang.String,int)|",
+    "v1Body": [
+      "|java+method:///com/netflix/iep/http/RxHttp/getPoolLimitStrategy(com.netflix.iep.http.ClientConfig)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/idleConnectionsTimeoutMillis()|",
+      "|java+constructor:///iep/io/reactivex/netty/protocol/http/client/HttpClient$HttpClientConfig$Builder/HttpClient$HttpClientConfig$Builder()|",
+      "|java+method:///iep/io/reactivex/netty/pipeline/ssl/DefaultFactories/trustAll()|",
+      "|java+method:///com/netflix/iep/http/RequestContext/config()|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/connectTimeout()|",
+      "|java+method:///iep/io/reactivex/netty/protocol/http/client/HttpClientBuilder/config(iep.io.reactivex.netty.client.RxClient$ClientConfig)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/userAgent()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///iep/io/reactivex/netty/protocol/http/client/HttpClientBuilder/channelOption(io.netty.channel.ChannelOption,java.lang.Object)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/readTimeout()|",
+      "|java+method:///com/netflix/iep/http/Server/isSecure()|",
+      "|java+method:///com/netflix/iep/http/Server/port()|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/name()|",
+      "|java+method:///iep/io/reactivex/netty/protocol/http/client/HttpClientBuilder/pipelineConfigurator(iep.io.reactivex.netty.pipeline.PipelineConfigurator)|",
+      "|java+constructor:///com/netflix/iep/http/RxHttp$HttpDecompressionConfigurator/RxHttp$HttpDecompressionConfigurator(com.netflix.iep.http.RxHttp$1)|",
+      "|java+constructor:///iep/io/reactivex/netty/protocol/http/client/HttpClientPipelineConfigurator/HttpClientPipelineConfigurator()|",
+      "|java+method:///iep/io/reactivex/netty/protocol/http/client/HttpClientBuilder/withConnectionPoolLimitStrategy(iep.io.reactivex.netty.client.PoolLimitDeterminationStrategy)|",
+      "|java+method:///com/netflix/iep/http/RequestContext/server()|",
+      "|java+method:///iep/io/reactivex/netty/protocol/http/client/HttpClientBuilder/withSslEngineFactory(iep.io.reactivex.netty.pipeline.ssl.SSLEngineFactory)|",
+      "|java+method:///iep/io/reactivex/netty/protocol/http/client/HttpClientBuilder/withNoConnectionPooling()|",
+      "|java+method:///com/netflix/iep/http/Server/host()|",
+      "|java+method:///iep/io/reactivex/netty/protocol/http/client/HttpClient$HttpClientConfig$Builder/build()|",
+      "|java+method:///iep/io/reactivex/netty/protocol/http/client/HttpClient$HttpClientConfig$Builder/readTimeout(int,java.util.concurrent.TimeUnit)|",
+      "|java+method:///iep/io/reactivex/netty/protocol/http/client/HttpClient$HttpClientConfig$Builder/userAgent(java.lang.String)|",
+      "|java+method:///iep/io/reactivex/netty/protocol/http/client/HttpClientBuilder/withName(java.lang.String)|",
+      "|java+constructor:///iep/io/reactivex/netty/pipeline/PipelineConfiguratorComposite/PipelineConfiguratorComposite(iep.io.reactivex.netty.pipeline.PipelineConfigurator%5B%5D)|",
+      "|java+method:///iep/io/reactivex/netty/protocol/http/client/HttpClientBuilder/withIdleConnectionsTimeoutMillis(long)|",
+      "|java+method:///iep/io/reactivex/netty/protocol/http/client/HttpClientBuilder/build()|",
+      "|java+method:///iep/io/reactivex/netty/RxNetty/newHttpClientBuilder(java.lang.String,int)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/reactivex/netty/pipeline/ssl/DefaultFactories/trustAll()|",
+      "|java+constructor:///io/reactivex/netty/protocol/http/client/HttpClientPipelineConfigurator/HttpClientPipelineConfigurator()|",
+      "|java+constructor:///com/netflix/iep/http/RxHttp$HttpDecompressionConfigurator/RxHttp$HttpDecompressionConfigurator(com.netflix.iep.http.RxHttp$1)|",
+      "|java+method:///io/reactivex/netty/protocol/http/client/HttpClientBuilder/withNoConnectionPooling()|",
+      "|java+method:///com/netflix/iep/http/Server/host()|",
+      "|java+method:///io/reactivex/netty/protocol/http/client/HttpClient$HttpClientConfig$Builder/userAgent(java.lang.String)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/connectTimeout()|",
+      "|java+method:///io/reactivex/netty/protocol/http/client/HttpClient$HttpClientConfig$Builder/readTimeout(int,java.util.concurrent.TimeUnit)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///io/reactivex/netty/protocol/http/client/HttpClientBuilder/withName(java.lang.String)|",
+      "|java+method:///io/reactivex/netty/protocol/http/client/HttpClientBuilder/withConnectionPoolLimitStrategy(io.reactivex.netty.client.PoolLimitDeterminationStrategy)|",
+      "|java+method:///io/reactivex/netty/protocol/http/client/HttpClientBuilder/withIdleConnectionsTimeoutMillis(long)|",
+      "|java+method:///com/netflix/iep/http/RxHttp/getPoolLimitStrategy(com.netflix.iep.http.ClientConfig)|",
+      "|java+constructor:///io/reactivex/netty/protocol/http/client/HttpClient$HttpClientConfig$Builder/HttpClient$HttpClientConfig$Builder()|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/idleConnectionsTimeoutMillis()|",
+      "|java+method:///io/reactivex/netty/protocol/http/client/HttpClientBuilder/channelOption(io.netty.channel.ChannelOption,java.lang.Object)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/readTimeout()|",
+      "|java+method:///com/netflix/iep/http/Server/isSecure()|",
+      "|java+method:///com/netflix/iep/http/Server/port()|",
+      "|java+method:///io/reactivex/netty/protocol/http/client/HttpClientBuilder/pipelineConfigurator(io.reactivex.netty.pipeline.PipelineConfigurator)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/name()|",
+      "|java+method:///io/reactivex/netty/protocol/http/client/HttpClientBuilder/withSslEngineFactory(io.reactivex.netty.pipeline.ssl.SSLEngineFactory)|",
+      "|java+method:///io/reactivex/netty/protocol/http/client/HttpClient$HttpClientConfig$Builder/build()|",
+      "|java+method:///com/netflix/iep/http/RequestContext/config()|",
+      "|java+method:///com/netflix/iep/http/RequestContext/server()|",
+      "|java+constructor:///io/reactivex/netty/pipeline/PipelineConfiguratorComposite/PipelineConfiguratorComposite(io.reactivex.netty.pipeline.PipelineConfigurator%5B%5D)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/userAgent()|",
+      "|java+method:///io/reactivex/netty/RxNetty/newHttpClientBuilder(java.lang.String,int)|",
+      "|java+method:///io/reactivex/netty/protocol/http/client/HttpClientBuilder/config(io.reactivex.netty.client.RxClient$ClientConfig)|",
+      "|java+method:///io/reactivex/netty/protocol/http/client/HttpClientBuilder/build()|"
+    ],
+    "affectedLib": "io.reactivex:rxnetty:0.4.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.netflix.iep:iep-rxhttp:0.1.12",
+    "coordinatesV2": "com.netflix.iep:iep-rxhttp:0.1.13",
+    "caller": "|java+method:///com/netflix/iep/http/RxHttp/getPoolLimitStrategy(com.netflix.iep.http.ClientConfig)|",
+    "called": "|java+constructor:///io/reactivex/netty/client/MaxConnectionsBasedStrategy/MaxConnectionsBasedStrategy(int)|",
+    "v1Body": [
+      "|java+constructor:///iep/io/reactivex/netty/client/MaxConnectionsBasedStrategy/MaxConnectionsBasedStrategy(int)|",
+      "|java+constructor:///iep/io/reactivex/netty/client/CompositePoolLimitDeterminationStrategy/CompositePoolLimitDeterminationStrategy(iep.io.reactivex.netty.client.PoolLimitDeterminationStrategy%5B%5D)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/name()|",
+      "|java+method:///java/util/concurrent/ConcurrentHashMap/putIfAbsent(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/concurrent/ConcurrentHashMap/get(java.lang.Object)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/maxConnectionsTotal()|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/maxConnectionsPerHost()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/reactivex/netty/client/MaxConnectionsBasedStrategy/MaxConnectionsBasedStrategy(int)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/name()|",
+      "|java+method:///java/util/concurrent/ConcurrentHashMap/putIfAbsent(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/concurrent/ConcurrentHashMap/get(java.lang.Object)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/maxConnectionsTotal()|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/maxConnectionsPerHost()|",
+      "|java+constructor:///io/reactivex/netty/client/CompositePoolLimitDeterminationStrategy/CompositePoolLimitDeterminationStrategy(io.reactivex.netty.client.PoolLimitDeterminationStrategy%5B%5D)|"
+    ],
+    "affectedLib": "io.reactivex:rxnetty:0.4.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.netflix.iep:iep-rxhttp:0.1.12",
+    "coordinatesV2": "com.netflix.iep:iep-rxhttp:0.1.13",
+    "caller": "|java+method:///com/netflix/iep/http/RxHttp/put(java.net.URI,java.lang.String,byte%5B%5D)|",
+    "called": "|java+method:///io/reactivex/netty/protocol/http/client/HttpClientRequest/withHeader(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/netflix/iep/http/RxHttp/getServers(com.netflix.iep.http.ClientConfig)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/relativeUri()|",
+      "|java+method:///com/netflix/iep/http/RxHttp/compress(com.netflix.iep.http.ClientConfig,iep.io.reactivex.netty.protocol.http.client.HttpClientRequest,byte%5B%5D)|",
+      "|java+method:///iep/io/reactivex/netty/protocol/http/client/HttpClientRequest/createPut(java.lang.String)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/fromUri(java.net.URI)|",
+      "|java+method:///com/netflix/iep/http/RxHttp/execute(com.netflix.iep.http.ClientConfig,java.util.List,iep.io.reactivex.netty.protocol.http.client.HttpClientRequest)|",
+      "|java+method:///iep/io/reactivex/netty/protocol/http/client/HttpClientRequest/withHeader(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/netflix/iep/http/RxHttp/getServers(com.netflix.iep.http.ClientConfig)|",
+      "|java+method:///io/reactivex/netty/protocol/http/client/HttpClientRequest/createPut(java.lang.String)|",
+      "|java+method:///io/reactivex/netty/protocol/http/client/HttpClientRequest/withHeader(java.lang.String,java.lang.String)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/fromUri(java.net.URI)|",
+      "|java+method:///com/netflix/iep/http/RxHttp/compress(com.netflix.iep.http.ClientConfig,io.reactivex.netty.protocol.http.client.HttpClientRequest,byte%5B%5D)|",
+      "|java+method:///com/netflix/iep/http/RxHttp/execute(com.netflix.iep.http.ClientConfig,java.util.List,io.reactivex.netty.protocol.http.client.HttpClientRequest)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/relativeUri()|"
+    ],
+    "affectedLib": "io.reactivex:rxnetty:0.4.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.netflix.iep:iep-rxhttp:0.1.12",
+    "coordinatesV2": "com.netflix.iep:iep-rxhttp:0.1.13",
+    "caller": "|java+method:///com/netflix/iep/http/RxHttp/get(java.net.URI)|",
+    "called": "|java+method:///io/reactivex/netty/protocol/http/client/HttpClientRequest/createGet(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/netflix/iep/http/RxHttp/getServers(com.netflix.iep.http.ClientConfig)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/fromUri(java.net.URI)|",
+      "|java+method:///com/netflix/iep/http/RxHttp/execute(com.netflix.iep.http.ClientConfig,java.util.List,iep.io.reactivex.netty.protocol.http.client.HttpClientRequest)|",
+      "|java+method:///iep/io/reactivex/netty/protocol/http/client/HttpClientRequest/createGet(java.lang.String)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/relativeUri()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/netflix/iep/http/RxHttp/getServers(com.netflix.iep.http.ClientConfig)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/fromUri(java.net.URI)|",
+      "|java+method:///io/reactivex/netty/protocol/http/client/HttpClientRequest/createGet(java.lang.String)|",
+      "|java+method:///com/netflix/iep/http/RxHttp/execute(com.netflix.iep.http.ClientConfig,java.util.List,io.reactivex.netty.protocol.http.client.HttpClientRequest)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/relativeUri()|"
+    ],
+    "affectedLib": "io.reactivex:rxnetty:0.4.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.netflix.iep:iep-rxhttp:0.1.12",
+    "coordinatesV2": "com.netflix.iep:iep-rxhttp:0.1.13",
+    "caller": "|java+method:///com/netflix/iep/http/RxHttp/delete(java.net.URI)|",
+    "called": "|java+method:///io/reactivex/netty/protocol/http/client/HttpClientRequest/createDelete(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/netflix/iep/http/RxHttp/getServers(com.netflix.iep.http.ClientConfig)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/fromUri(java.net.URI)|",
+      "|java+method:///com/netflix/iep/http/RxHttp/execute(com.netflix.iep.http.ClientConfig,java.util.List,iep.io.reactivex.netty.protocol.http.client.HttpClientRequest)|",
+      "|java+method:///iep/io/reactivex/netty/protocol/http/client/HttpClientRequest/createDelete(java.lang.String)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/relativeUri()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/netflix/iep/http/RxHttp/getServers(com.netflix.iep.http.ClientConfig)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/fromUri(java.net.URI)|",
+      "|java+method:///com/netflix/iep/http/RxHttp/execute(com.netflix.iep.http.ClientConfig,java.util.List,io.reactivex.netty.protocol.http.client.HttpClientRequest)|",
+      "|java+method:///com/netflix/iep/http/ClientConfig/relativeUri()|",
+      "|java+method:///io/reactivex/netty/protocol/http/client/HttpClientRequest/createDelete(java.lang.String)|"
+    ],
+    "affectedLib": "io.reactivex:rxnetty:0.4.6",
+    "change": "ADDED"
+  }
+]

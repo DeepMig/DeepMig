@@ -1,0 +1,156 @@
+[
+  {
+    "coordinatesV1": "org.ensime:util_2.11:2.0.0-M1",
+    "coordinatesV2": "org.ensime:util_2.11:1.0.1",
+    "caller": "|java+method:///org/ensime/util/io/package$RichOutputStream$/drain$extension(java.io.OutputStream,java.io.InputStream)|",
+    "called": "|java+method:///com/google/common/io/ByteStreams/copy(java.io.InputStream,java.io.OutputStream)|",
+    "v1Body": [
+      "|java+method:///java/io/OutputStream/close()|",
+      "|java+method:///com/google/common/io/ByteStreams/copy(java.io.InputStream,java.io.OutputStream)|",
+      "|java+method:///java/io/InputStream/close()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/OutputStream/close()|",
+      "|java+method:///scala/reflect/ClassTag$/Byte()|",
+      "|java+method:///org/ensime/util/io/package$RichOutputStream$/read$2(byte%5B%5D,scala.runtime.IntRef,java.io.InputStream)|",
+      "|java+method:///java/io/InputStream/close()|",
+      "|java+method:///scala/runtime/IntRef/create(int)|",
+      "|java+method:///java/io/OutputStream/write(byte%5B%5D,int,int)|",
+      "|java+method:///scala/Array$/ofDim(int,scala.reflect.ClassTag)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.ensime:util_2.11:2.0.0-M1",
+    "coordinatesV2": "org.ensime:util_2.11:1.0.1",
+    "caller": "|java+method:///org/ensime/util/file/package$RichFile$/writeString$extension(java.io.File,java.lang.String,java.nio.charset.Charset)|",
+    "called": "|java+method:///com/google/common/io/Files/write(java.lang.CharSequence,java.io.File,java.nio.charset.Charset)|",
+    "v1Body": [
+      "|java+method:///com/google/common/io/Files/write(java.lang.CharSequence,java.io.File,java.nio.charset.Charset)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/nio/file/Files/write(java.nio.file.Path,byte%5B%5D,java.nio.file.OpenOption%5B%5D)|",
+      "|java+method:///java/io/File/toPath()|",
+      "|java+method:///java/lang/String/getBytes(java.nio.charset.Charset)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.ensime:util_2.11:2.0.0-M1",
+    "coordinatesV2": "org.ensime:util_2.11:1.0.1",
+    "caller": "|java+method:///org/ensime/util/file/package$RichFile$/readLines$extension(java.io.File,java.nio.charset.Charset)|",
+    "called": "|java+method:///com/google/common/io/Files/readLines(java.io.File,java.nio.charset.Charset)|",
+    "v1Body": [
+      "|java+method:///com/google/common/io/Files/readLines(java.io.File,java.nio.charset.Charset)|",
+      "|java+method:///scala/collection/mutable/Buffer/toList()|",
+      "|java+method:///scala/collection/JavaConversions$/asScalaBuffer(java.util.List)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/ensime/util/path/package$/RichPath(java.nio.file.Path)|",
+      "|java+method:///java/io/File/toPath()|",
+      "|java+method:///org/ensime/util/path/package$RichPath$/readLines$extension(java.nio.file.Path)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.ensime:util_2.11:2.0.0-M1",
+    "coordinatesV2": "org.ensime:util_2.11:1.0.1",
+    "caller": "|java+method:///org/ensime/util/file/package$RichFile$/readString$extension(java.io.File,java.nio.charset.Charset)|",
+    "called": "|java+method:///com/google/common/io/Files/toString(java.io.File,java.nio.charset.Charset)|",
+    "v1Body": [
+      "|java+method:///com/google/common/io/Files/toString(java.io.File,java.nio.charset.Charset)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/ensime/util/path/package$/RichPath(java.nio.file.Path)|",
+      "|java+method:///java/io/File/toPath()|",
+      "|java+method:///org/ensime/util/path/package$RichPath$/readString$extension(java.nio.file.Path,java.nio.charset.Charset)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.ensime:util_2.11:2.0.0-M1",
+    "coordinatesV2": "org.ensime:util_2.11:1.0.1",
+    "caller": "|java+method:///org/ensime/util/file/package$RichFile$/writeLines$extension(java.io.File,scala.collection.immutable.List,java.nio.charset.Charset)|",
+    "called": "|java+method:///com/google/common/io/Files/write(java.lang.CharSequence,java.io.File,java.nio.charset.Charset)|",
+    "v1Body": [
+      "|java+method:///scala/collection/immutable/List/mkString(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/common/io/Files/write(java.lang.CharSequence,java.io.File,java.nio.charset.Charset)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/collection/immutable/List/mkString(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///java/nio/file/Files/write(java.nio.file.Path,byte%5B%5D,java.nio.file.OpenOption%5B%5D)|",
+      "|java+method:///java/io/File/toPath()|",
+      "|java+method:///java/lang/String/getBytes(java.nio.charset.Charset)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.ensime:util_2.11:2.0.0-M1",
+    "coordinatesV2": "org.ensime:util_2.11:1.0.1",
+    "caller": "|java+method:///org/ensime/util/file/package$RichFile$/createWithParents$extension(java.io.File)|",
+    "called": "|java+method:///com/google/common/io/Files/createParentDirs(java.io.File)|",
+    "v1Body": [
+      "|java+method:///java/io/File/createNewFile()|",
+      "|java+method:///com/google/common/io/Files/createParentDirs(java.io.File)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/File/createNewFile()|",
+      "|java+method:///java/io/File/mkdirs()|",
+      "|java+method:///java/io/File/getParentFile()|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.ensime:util_2.11:2.0.0-M1",
+    "coordinatesV2": "org.ensime:util_2.11:1.0.1",
+    "caller": "|java+method:///org/ensime/util/file/package$/withTempDir(scala.Function1)|",
+    "called": "|java+method:///com/google/common/io/Files/createTempDir()|",
+    "v1Body": [
+      "|java+method:///scala/collection/immutable/Stream/reverse()|",
+      "|java+method:///scala/collection/immutable/Stream/foreach(scala.Function1)|",
+      "|java+method:///org/ensime/util/file/package$RichFile$/tree$extension(java.io.File)|",
+      "|java+method:///com/google/common/io/Files/createTempDir()|",
+      "|java+constructor:///org/ensime/util/file/package$$anonfun$withTempDir$1/package$$anonfun$withTempDir$1()|",
+      "|java+method:///org/ensime/util/file/package$/RichFile(java.io.File)|",
+      "|java+method:///org/ensime/util/file/package$RichFile$/canon$extension(java.io.File)|",
+      "|java+method:///scala/Function1/apply(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/ensime/util/file/package$$anonfun$withTempDir$1/package$$anonfun$withTempDir$1(java.io.File)|",
+      "|java+method:///scala/util/Try$/apply(scala.Function0)|",
+      "|java+method:///java/nio/file/Path/toFile()|",
+      "|java+method:///java/nio/file/Files/createTempDirectory(java.lang.String,java.nio.file.attribute.FileAttribute%5B%5D)|",
+      "|java+method:///org/ensime/util/file/package$/RichFile(java.io.File)|",
+      "|java+method:///org/ensime/util/file/package$RichFile$/canon$extension(java.io.File)|",
+      "|java+method:///scala/Function1/apply(java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.ensime:util_2.11:2.0.0-M1",
+    "coordinatesV2": "org.ensime:util_2.11:1.0.1",
+    "caller": "|java+method:///org/ensime/util/io/package$RichInputStream$/toByteArray$extension(java.io.InputStream)|",
+    "called": "|java+method:///com/google/common/io/ByteStreams/toByteArray(java.io.InputStream)|",
+    "v1Body": [
+      "|java+method:///com/google/common/io/ByteStreams/toByteArray(java.io.InputStream)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/reflect/ClassTag$/Byte()|",
+      "|java+method:///org/ensime/util/io/package$RichInputStream$/read$1(byte%5B%5D,scala.runtime.IntRef,java.io.InputStream)|",
+      "|java+method:///java/io/ByteArrayOutputStream/write(byte%5B%5D,int,int)|",
+      "|java+method:///scala/runtime/IntRef/create(int)|",
+      "|java+method:///scala/Array$/ofDim(int,scala.reflect.ClassTag)|",
+      "|java+method:///java/io/ByteArrayOutputStream/toByteArray()|",
+      "|java+constructor:///java/io/ByteArrayOutputStream/ByteArrayOutputStream()|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "REMOVED"
+  }
+]

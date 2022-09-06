@@ -1,0 +1,1448 @@
+[
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplicationSchema/setJMXSupport(boolean)|",
+    "called": "|java+method:///com/oracle/tools/runtime/PropertiesBuilder/removeProperty(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/oracle/tools/runtime/PropertiesBuilder/removeProperty(java.lang.String)|",
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplicationSchema/setDefaultSystemProperty(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/oracle/tools/runtime/LocalPlatform/getHostName()|",
+      "|java+method:///com/oracle/tools/runtime/PropertiesBuilder/removeProperty(java.lang.String)|",
+      "|java+method:///com/oracle/tools/runtime/LocalPlatform/getInstance()|",
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplicationSchema/setSystemProperty(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplicationSchema/setSystemPropertyIfAbsent(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-runtime:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+initializer:///com/oracle/tools/runtime/java/container/Container/Container$initializer|",
+    "called": "|java+constructor:///com/oracle/tools/runtime/java/container/PlatformScope/PlatformScope(com.oracle.tools.runtime.network.AvailablePortIterator)|",
+    "v1Body": [
+      "|java+constructor:///com/oracle/tools/runtime/network/AvailablePortIterator/AvailablePortIterator(int)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///com/oracle/tools/runtime/java/container/PlatformScope/PlatformScope(com.oracle.tools.runtime.network.AvailablePortIterator)|",
+      "|java+constructor:///java/lang/InheritableThreadLocal/InheritableThreadLocal()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/oracle/tools/runtime/java/container/Container/getAvailablePorts()|",
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+constructor:///com/oracle/tools/runtime/java/container/PlatformScope/PlatformScope(com.oracle.tools.runtime.network.AvailablePortIterator)|",
+      "|java+constructor:///java/lang/InheritableThreadLocal/InheritableThreadLocal()|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-runtime:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/getMBeanProxy(javax.management.ObjectName,java.lang.Class)|",
+    "called": "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/getDeferredMBeanProxy(javax.management.ObjectName,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/oracle/tools/deferred/DeferredHelper/ensured(com.oracle.tools.deferred.Deferred,long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/getDefaultTimeout()|",
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/getDeferredMBeanProxy(javax.management.ObjectName,java.lang.Class)|",
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/getDefaultTimeoutUnits()|",
+      "|java+method:///com/oracle/tools/deferred/Deferred/get()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/oracle/tools/deferred/DeferredHelper/ensured(com.oracle.tools.deferred.Deferred,com.oracle.tools.deferred.TimeoutConstraint)|",
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/getDefaultTimeout()|",
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/getDeferredMBeanProxy(javax.management.ObjectName,java.lang.Class)|",
+      "|java+method:///com/oracle/tools/deferred/DeferredHelper/within(com.oracle.tools.options.Timeout)|",
+      "|java+method:///com/oracle/tools/deferred/Deferred/get()|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-runtime:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/runtime/java/container/Container/start()|",
+    "called": "|java+constructor:///com/oracle/tools/runtime/java/container/DelegatingStdErrOutputStream/DelegatingStdErrOutputStream(java.io.OutputStream)|",
+    "v1Body": [
+      "|java+method:///java/lang/System/setOut(java.io.PrintStream)|",
+      "|java+method:///java/util/Properties/setProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/Class/getCanonicalName()|",
+      "|java+method:///java/lang/System/setProperties(java.util.Properties)|",
+      "|java+constructor:///com/oracle/tools/runtime/java/container/DelegatingProperties/DelegatingProperties(java.util.Properties)|",
+      "|java+method:///com/oracle/tools/runtime/java/container/DefaultScope/getProperties()|",
+      "|java+method:///com/oracle/tools/runtime/java/container/PlatformScope/getStandardOutput()|",
+      "|java+method:///java/lang/System/getProperties()|",
+      "|java+constructor:///java/io/PrintStream/PrintStream(java.io.OutputStream,boolean)|",
+      "|java+constructor:///com/oracle/tools/runtime/java/container/DefaultScope/DefaultScope(com.oracle.tools.runtime.java.container.PlatformScope)|",
+      "|java+constructor:///com/oracle/tools/runtime/java/container/DelegatingStdErrOutputStream/DelegatingStdErrOutputStream(java.io.OutputStream)|",
+      "|java+constructor:///com/oracle/tools/runtime/java/container/DelegatingStdOutOutputStream/DelegatingStdOutOutputStream(java.io.OutputStream)|",
+      "|java+method:///com/oracle/tools/runtime/java/container/PlatformScope/getStandardError()|",
+      "|java+method:///java/lang/System/setErr(java.io.PrintStream)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/System/setIn(java.io.InputStream)|",
+      "|java+method:///java/util/Properties/setProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///com/oracle/tools/runtime/java/container/PlatformScope/getStandardInput()|",
+      "|java+method:///java/lang/Class/getCanonicalName()|",
+      "|java+method:///java/lang/System/setProperties(java.util.Properties)|",
+      "|java+constructor:///com/oracle/tools/runtime/java/container/DelegatingProperties/DelegatingProperties(java.util.Properties)|",
+      "|java+method:///com/oracle/tools/runtime/java/container/DefaultScope/getProperties()|",
+      "|java+method:///com/oracle/tools/runtime/java/container/PlatformScope/getStandardOutput()|",
+      "|java+method:///java/lang/System/getProperties()|",
+      "|java+constructor:///java/io/PrintStream/PrintStream(java.io.OutputStream,boolean)|",
+      "|java+constructor:///com/oracle/tools/runtime/java/container/DefaultScope/DefaultScope(com.oracle.tools.runtime.java.container.PlatformScope)|",
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+method:///java/lang/System/setOut(java.io.PrintStream)|",
+      "|java+constructor:///com/oracle/tools/runtime/java/container/DelegatingStdInInputStream/DelegatingStdInInputStream(java.io.InputStream)|",
+      "|java+constructor:///com/oracle/tools/runtime/java/container/DelegatingStdErrOutputStream/DelegatingStdErrOutputStream(java.io.OutputStream)|",
+      "|java+constructor:///com/oracle/tools/runtime/java/container/DelegatingStdOutOutputStream/DelegatingStdOutOutputStream(java.io.OutputStream)|",
+      "|java+method:///com/oracle/tools/runtime/java/container/PlatformScope/getStandardError()|",
+      "|java+method:///java/lang/System/setErr(java.io.PrintStream)|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-runtime:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/runtime/java/JavaApplicationLauncher/main(java.lang.String%5B%5D)|",
+    "called": "|java+constructor:///com/oracle/tools/runtime/java/JavaApplicationLauncher$1/JavaApplicationLauncher$1(boolean)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/getMethod(java.lang.String,java.lang.Class%5B%5D)|",
+      "|java+method:///java/lang/NoSuchMethodException/printStackTrace(java.io.PrintStream)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/reflect/InvocationTargetException/printStackTrace(java.io.PrintStream)|",
+      "|java+method:///java/lang/IllegalAccessException/printStackTrace(java.io.PrintStream)|",
+      "|java+constructor:///com/oracle/tools/runtime/concurrent/socket/RemoteExecutorClient/RemoteExecutorClient(java.net.InetAddress,int)|",
+      "|java+method:///java/lang/reflect/Method/invoke(java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///com/oracle/tools/runtime/concurrent/socket/RemoteExecutorClient/open()|",
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+method:///com/oracle/tools/runtime/concurrent/socket/RemoteExecutorClient/addListener(com.oracle.tools.runtime.concurrent.RemoteExecutorListener)|",
+      "|java+constructor:///com/oracle/tools/runtime/java/JavaApplicationLauncher$1/JavaApplicationLauncher$1(boolean)|",
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///java/lang/System/getProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///java/net/UnknownHostException/printStackTrace(java.io.PrintStream)|",
+      "|java+method:///java/lang/Boolean/getBoolean(java.lang.String)|",
+      "|java+method:///java/lang/ClassNotFoundException/printStackTrace(java.io.PrintStream)|",
+      "|java+method:///java/lang/Integer/getInteger(java.lang.String,java.lang.Integer)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///java/io/IOException/printStackTrace(java.io.PrintStream)|",
+      "|java+method:///java/lang/System/exit(int)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/net/InetAddress/getByName(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/getMethod(java.lang.String,java.lang.Class%5B%5D)|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicBoolean/AtomicBoolean(boolean)|",
+      "|java+method:///java/lang/NoSuchMethodException/printStackTrace(java.io.PrintStream)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/reflect/InvocationTargetException/printStackTrace(java.io.PrintStream)|",
+      "|java+method:///java/lang/IllegalAccessException/printStackTrace(java.io.PrintStream)|",
+      "|java+constructor:///com/oracle/tools/runtime/concurrent/socket/RemoteExecutorClient/RemoteExecutorClient(java.net.InetAddress,int)|",
+      "|java+method:///com/oracle/tools/runtime/concurrent/socket/RemoteExecutorClient/close()|",
+      "|java+method:///com/oracle/tools/runtime/concurrent/socket/RemoteExecutorClient/open()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicBoolean/set(boolean)|",
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+method:///com/oracle/tools/runtime/concurrent/socket/RemoteExecutorClient/addListener(com.oracle.tools.runtime.concurrent.RemoteExecutorListener)|",
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///java/lang/System/getProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///java/net/UnknownHostException/printStackTrace(java.io.PrintStream)|",
+      "|java+method:///java/lang/Boolean/getBoolean(java.lang.String)|",
+      "|java+method:///java/lang/ClassNotFoundException/printStackTrace(java.io.PrintStream)|",
+      "|java+method:///java/lang/Integer/getInteger(java.lang.String,java.lang.Integer)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///java/io/IOException/printStackTrace(java.io.PrintStream)|",
+      "|java+method:///java/lang/System/exit(int)|",
+      "|java+method:///java/lang/reflect/Method/invoke(java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+constructor:///com/oracle/tools/runtime/java/JavaApplicationLauncher$1/JavaApplicationLauncher$1(java.util.concurrent.atomic.AtomicBoolean,boolean)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/net/InetAddress/getByName(java.lang.String)|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-runtime:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/runtime/java/container/ContainerClassLoader/newInstance(java.lang.String,com.oracle.tools.runtime.java.ClassPath,java.util.Properties)|",
+    "called": "|java+method:///com/oracle/tools/runtime/java/container/ContainerClassLoader/newInstance(java.lang.String,com.oracle.tools.runtime.java.ClassPath,java.util.Properties,java.util.Properties,com.oracle.tools.runtime.network.AvailablePortIterator,boolean,int)|",
+    "v1Body": [
+      "|java+method:///com/oracle/tools/runtime/java/container/Container/getAvailablePorts()|",
+      "|java+method:///com/oracle/tools/runtime/java/container/ContainerClassLoader/newInstance(java.lang.String,com.oracle.tools.runtime.java.ClassPath,java.util.Properties,java.util.Properties,com.oracle.tools.runtime.network.AvailablePortIterator,boolean,int)|",
+      "|java+method:///java/lang/System/getProperties()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/oracle/tools/runtime/LocalPlatform/getInstance()|",
+      "|java+method:///com/oracle/tools/runtime/java/container/ContainerClassLoader/newInstance(java.lang.String,com.oracle.tools.runtime.java.ClassPath,java.util.Properties,java.util.Properties,com.oracle.tools.runtime.network.AvailablePortIterator,boolean,int)|",
+      "|java+method:///java/lang/System/getProperties()|",
+      "|java+method:///com/oracle/tools/runtime/LocalPlatform/getAvailablePorts()|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-runtime:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/runtime/java/container/ContainerClassLoader/newInstance(java.lang.String)|",
+    "called": "|java+method:///com/oracle/tools/runtime/PropertiesBuilder/fromCurrentNonStandardSystemProperties()|",
+    "v1Body": [
+      "|java+method:///com/oracle/tools/runtime/java/container/Container/getAvailablePorts()|",
+      "|java+method:///com/oracle/tools/runtime/java/ClassPath/ofSystem()|",
+      "|java+method:///java/lang/System/getProperties()|",
+      "|java+method:///com/oracle/tools/runtime/PropertiesBuilder/realize()|",
+      "|java+method:///com/oracle/tools/runtime/PropertiesBuilder/fromCurrentNonStandardSystemProperties()|",
+      "|java+method:///com/oracle/tools/runtime/java/container/ContainerClassLoader/newInstance(java.lang.String,com.oracle.tools.runtime.java.ClassPath,java.util.Properties,java.util.Properties,com.oracle.tools.runtime.network.AvailablePortIterator,boolean,int)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/oracle/tools/runtime/LocalPlatform/getInstance()|",
+      "|java+method:///com/oracle/tools/runtime/java/ClassPath/ofSystem()|",
+      "|java+method:///java/lang/System/getProperties()|",
+      "|java+method:///com/oracle/tools/runtime/LocalPlatform/getAvailablePorts()|",
+      "|java+method:///com/oracle/tools/runtime/PropertiesBuilder/realize()|",
+      "|java+method:///com/oracle/tools/runtime/PropertiesBuilder/fromCurrentNonStandardSystemProperties()|",
+      "|java+method:///com/oracle/tools/runtime/java/container/ContainerClassLoader/newInstance(java.lang.String,com.oracle.tools.runtime.java.ClassPath,java.util.Properties,java.util.Properties,com.oracle.tools.runtime.network.AvailablePortIterator,boolean,int)|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-runtime:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+constructor:///com/oracle/tools/runtime/console/FileWriterApplicationConsole/FileWriterApplicationConsole(java.lang.String)|",
+    "called": "|java+constructor:///com/oracle/tools/runtime/console/FileWriterApplicationConsole/FileWriterApplicationConsole(java.io.FileWriter)|",
+    "v1Body": [
+      "|java+constructor:///java/io/FileWriter/FileWriter(java.lang.String,boolean)|",
+      "|java+constructor:///com/oracle/tools/runtime/console/FileWriterApplicationConsole/FileWriterApplicationConsole(java.io.FileWriter)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/oracle/tools/runtime/console/FileWriterApplicationConsole/FileWriterApplicationConsole(java.io.FileWriter,boolean)|",
+      "|java+constructor:///java/io/FileWriter/FileWriter(java.lang.String,boolean)|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-runtime:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+constructor:///com/oracle/tools/runtime/java/container/ContainerScope/ContainerScope(java.lang.String)|",
+    "called": "|java+constructor:///com/oracle/tools/runtime/java/container/ContainerScope/ContainerScope(java.lang.String,java.util.Properties,com.oracle.tools.runtime.network.AvailablePortIterator,com.oracle.tools.runtime.java.container.ContainerMBeanServerBuilder,boolean,int)|",
+    "v1Body": [
+      "|java+method:///com/oracle/tools/runtime/java/container/Container/getAvailablePorts()|",
+      "|java+constructor:///com/oracle/tools/runtime/java/container/ContainerScope/ContainerScope(java.lang.String,java.util.Properties,com.oracle.tools.runtime.network.AvailablePortIterator,com.oracle.tools.runtime.java.container.ContainerMBeanServerBuilder,boolean,int)|",
+      "|java+constructor:///java/util/Properties/Properties()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/oracle/tools/runtime/java/container/ContainerScope/ContainerScope(java.lang.String,java.util.Properties,com.oracle.tools.runtime.network.AvailablePortIterator,com.oracle.tools.runtime.java.container.ContainerMBeanServerBuilder,boolean,int)|",
+      "|java+method:///com/oracle/tools/runtime/LocalPlatform/getInstance()|",
+      "|java+constructor:///java/util/Properties/Properties()|",
+      "|java+method:///com/oracle/tools/runtime/LocalPlatform/getAvailablePorts()|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-runtime:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/getRMIServerHostName()|",
+    "called": "|java+method:///com/oracle/tools/runtime/network/Constants/getLocalHost()|",
+    "v1Body": [
+      "|java+method:///java/util/Properties/getProperty(java.lang.String)|",
+      "|java+method:///com/oracle/tools/runtime/network/Constants/getLocalHost()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Properties/getProperty(java.lang.String)|",
+      "|java+method:///com/oracle/tools/runtime/network/Constants/getLocalHost()|",
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/getSystemProperties()|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-runtime:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/runtime/concurrent/socket/SocketBasedRemoteExecutor/open()|",
+    "called": "|java+constructor:///com/oracle/tools/runtime/concurrent/socket/SocketBasedRemoteExecutor$1/SocketBasedRemoteExecutor$1(com.oracle.tools.runtime.concurrent.socket.SocketBasedRemoteExecutor)|",
+    "v1Body": [
+      "|java+method:///com/oracle/tools/runtime/concurrent/socket/SocketBasedRemoteExecutor/setOpen(boolean)|",
+      "|java+constructor:///com/oracle/tools/runtime/concurrent/socket/SocketBasedRemoteExecutor$1/SocketBasedRemoteExecutor$1(com.oracle.tools.runtime.concurrent.socket.SocketBasedRemoteExecutor)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/Thread/start()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+constructor:///java/lang/Thread/Thread(java.lang.Runnable)|",
+      "|java+method:///com/oracle/tools/runtime/concurrent/socket/SocketBasedRemoteExecutor/getListeners()|",
+      "|java+method:///com/oracle/tools/runtime/concurrent/RemoteExecutorListener/onOpened(com.oracle.tools.runtime.concurrent.RemoteExecutor)|",
+      "|java+method:///com/oracle/tools/runtime/concurrent/socket/SocketBasedRemoteExecutor/isOpen()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/oracle/tools/runtime/concurrent/socket/SocketBasedRemoteExecutor/setOpen(boolean)|",
+      "|java+constructor:///com/oracle/tools/runtime/concurrent/socket/SocketBasedRemoteExecutor$1/SocketBasedRemoteExecutor$1(com.oracle.tools.runtime.concurrent.socket.SocketBasedRemoteExecutor)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/Thread/start()|",
+      "|java+method:///java/lang/Thread/setDaemon(boolean)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/Thread/setName(java.lang.String)|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+constructor:///java/lang/Thread/Thread(java.lang.Runnable)|",
+      "|java+method:///com/oracle/tools/runtime/concurrent/socket/SocketBasedRemoteExecutor/getListeners()|",
+      "|java+method:///com/oracle/tools/runtime/concurrent/RemoteExecutorListener/onOpened(com.oracle.tools.runtime.concurrent.RemoteExecutor)|",
+      "|java+method:///com/oracle/tools/runtime/concurrent/socket/SocketBasedRemoteExecutor/isOpen()|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-runtime:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/getRemoteJMXPort()|",
+    "called": "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/isJMXEnabled()|",
+    "v1Body": [
+      "|java+method:///java/util/Properties/getProperty(java.lang.String)|",
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/isJMXEnabled()|",
+      "|java+constructor:///java/lang/UnsupportedOperationException/UnsupportedOperationException(java.lang.String)|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Properties/getProperty(java.lang.String)|",
+      "|java+constructor:///java/lang/UnsupportedOperationException/UnsupportedOperationException(java.lang.String)|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/getSystemProperties()|",
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/isJMXEnabled()|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-runtime:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+constructor:///com/oracle/tools/runtime/java/container/ContainerScope/ContainerScope(java.lang.String,java.util.Properties)|",
+    "called": "|java+constructor:///com/oracle/tools/runtime/java/container/ContainerScope/ContainerScope(java.lang.String,java.util.Properties,com.oracle.tools.runtime.network.AvailablePortIterator,com.oracle.tools.runtime.java.container.ContainerMBeanServerBuilder,boolean,int)|",
+    "v1Body": [
+      "|java+method:///com/oracle/tools/runtime/java/container/Container/getAvailablePorts()|",
+      "|java+constructor:///com/oracle/tools/runtime/java/container/ContainerScope/ContainerScope(java.lang.String,java.util.Properties,com.oracle.tools.runtime.network.AvailablePortIterator,com.oracle.tools.runtime.java.container.ContainerMBeanServerBuilder,boolean,int)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/oracle/tools/runtime/java/container/ContainerScope/ContainerScope(java.lang.String,java.util.Properties,com.oracle.tools.runtime.network.AvailablePortIterator,com.oracle.tools.runtime.java.container.ContainerMBeanServerBuilder,boolean,int)|",
+      "|java+method:///com/oracle/tools/runtime/LocalPlatform/getInstance()|",
+      "|java+method:///com/oracle/tools/runtime/LocalPlatform/getAvailablePorts()|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-runtime:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/junit/AbstractCoherenceTest/onBeforeEachTest()|",
+    "called": "|java+method:///com/oracle/tools/runtime/network/AvailablePortIterator/next()|",
+    "v1Body": [
+      "|java+method:///com/oracle/tools/runtime/java/container/Container/getAvailablePorts()|",
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///com/oracle/tools/runtime/network/Constants/getLocalHost()|",
+      "|java+method:///java/lang/Integer/toString(int)|",
+      "|java+method:///com/oracle/tools/junit/AbstractTest/onBeforeEachTest()|",
+      "|java+method:///java/lang/System/setProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///com/oracle/tools/runtime/network/AvailablePortIterator/next()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///com/oracle/tools/runtime/LocalPlatform/getInstance()|",
+      "|java+method:///com/oracle/tools/runtime/network/Constants/getLocalHost()|",
+      "|java+method:///java/lang/Integer/toString(int)|",
+      "|java+method:///com/oracle/tools/junit/AbstractTest/onBeforeEachTest()|",
+      "|java+method:///com/oracle/tools/runtime/LocalPlatform/getAvailablePorts()|",
+      "|java+method:///java/lang/System/setProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///com/oracle/tools/runtime/network/AvailablePortIterator/next()|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-runtime:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplicationSchema/setRMIServerHostName(java.lang.String)|",
+    "called": "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplicationSchema/setDefaultSystemProperty(java.lang.String,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplicationSchema/setDefaultSystemProperty(java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplicationSchema/setSystemProperty(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-runtime:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/getMBeanInfo(javax.management.ObjectName)|",
+    "called": "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/getDeferredMBeanInfo(javax.management.ObjectName)|",
+    "v1Body": [
+      "|java+method:///com/oracle/tools/deferred/DeferredHelper/ensured(com.oracle.tools.deferred.Deferred,long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/getDefaultTimeout()|",
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/getDefaultTimeoutUnits()|",
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/getDeferredMBeanInfo(javax.management.ObjectName)|",
+      "|java+method:///com/oracle/tools/deferred/Deferred/get()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/oracle/tools/deferred/DeferredHelper/ensured(com.oracle.tools.deferred.Deferred,com.oracle.tools.deferred.TimeoutConstraint)|",
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/getDefaultTimeout()|",
+      "|java+method:///com/oracle/tools/deferred/DeferredHelper/within(com.oracle.tools.options.Timeout)|",
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/getDeferredMBeanInfo(javax.management.ObjectName)|",
+      "|java+method:///com/oracle/tools/deferred/Deferred/get()|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-runtime:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/runtime/AbstractApplicationBuilder/raiseApplicationLifecycleEvent(com.oracle.tools.runtime.Application,com.oracle.tools.runtime.Application$EventKind)|",
+    "called": "|java+constructor:///com/oracle/tools/runtime/AbstractApplicationBuilder$1/AbstractApplicationBuilder$1(com.oracle.tools.runtime.AbstractApplicationBuilder,com.oracle.tools.runtime.Application$EventKind,com.oracle.tools.runtime.Application)|",
+    "v1Body": [
+      "|java+constructor:///com/oracle/tools/runtime/AbstractApplicationBuilder$1/AbstractApplicationBuilder$1(com.oracle.tools.runtime.AbstractApplicationBuilder,com.oracle.tools.runtime.Application$EventKind,com.oracle.tools.runtime.Application)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/oracle/tools/runtime/Application/getLifecycleInterceptors()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+method:///com/oracle/tools/runtime/LifecycleEventInterceptor/onEvent(com.oracle.tools.runtime.LifecycleEvent)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/oracle/tools/runtime/AbstractApplicationBuilder$1/AbstractApplicationBuilder$1(com.oracle.tools.runtime.AbstractApplicationBuilder,com.oracle.tools.runtime.Application$EventKind,com.oracle.tools.runtime.Application)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/oracle/tools/runtime/FluentApplication/getLifecycleInterceptors()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+method:///com/oracle/tools/runtime/LifecycleEventInterceptor/onEvent(com.oracle.tools.runtime.LifecycleEvent)|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-runtime:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/runtime/PropertiesBuilder/realize(com.oracle.tools.runtime.PropertiesBuilder)|",
+    "called": "|java+method:///com/oracle/tools/runtime/PropertiesBuilder/getPropertyNames()|",
+    "v1Body": [
+      "|java+method:///java/util/Properties/putAll(java.util.Map)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///java/lang/IndexOutOfBoundsException/IndexOutOfBoundsException(java.lang.String)|",
+      "|java+method:///com/oracle/tools/runtime/PropertiesBuilder/getPropertyNames()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/Properties/Properties()|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+method:///com/oracle/tools/runtime/PropertiesBuilder/realize()|",
+      "|java+method:///com/oracle/tools/runtime/PropertiesBuilder/getProperty(java.lang.String)|",
+      "|java+method:///java/util/Properties/containsKey(java.lang.Object)|",
+      "|java+method:///java/util/Properties/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/oracle/tools/runtime/PropertiesBuilder/realize(com.oracle.tools.runtime.PropertiesBuilder,com.oracle.tools.runtime.Platform)|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-runtime:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+constructor:///com/oracle/tools/runtime/AbstractApplicationSchema/AbstractApplicationSchema(java.lang.String)|",
+    "called": "|java+constructor:///com/oracle/tools/runtime/PropertiesBuilder/PropertiesBuilder()|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///java/util/LinkedList/LinkedList()|",
+      "|java+constructor:///com/oracle/tools/runtime/PropertiesBuilder/PropertiesBuilder()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///com/oracle/tools/options/Timeout/autoDetect()|",
+      "|java+method:///com/oracle/tools/Options/add(com.oracle.tools.Option)|",
+      "|java+constructor:///com/oracle/tools/Options/Options(com.oracle.tools.Option%5B%5D)|",
+      "|java+constructor:///java/util/LinkedList/LinkedList()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-runtime:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/getMBeanAttribute(javax.management.ObjectName,java.lang.String,java.lang.Class)|",
+    "called": "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/getDeferredMBeanAttribute(javax.management.ObjectName,java.lang.String,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/getDeferredMBeanAttribute(javax.management.ObjectName,java.lang.String,java.lang.Class)|",
+      "|java+method:///com/oracle/tools/deferred/DeferredHelper/ensured(com.oracle.tools.deferred.Deferred,long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/getDefaultTimeout()|",
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/getDefaultTimeoutUnits()|",
+      "|java+method:///com/oracle/tools/deferred/Deferred/get()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/getDeferredMBeanAttribute(javax.management.ObjectName,java.lang.String,java.lang.Class)|",
+      "|java+method:///com/oracle/tools/deferred/DeferredHelper/ensured(com.oracle.tools.deferred.Deferred,com.oracle.tools.deferred.TimeoutConstraint)|",
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/getDefaultTimeout()|",
+      "|java+method:///com/oracle/tools/deferred/DeferredHelper/within(com.oracle.tools.options.Timeout)|",
+      "|java+method:///com/oracle/tools/deferred/Deferred/get()|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-runtime:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/runtime/concurrent/socket/RemoteExecutorServer/open()|",
+    "called": "|java+constructor:///com/oracle/tools/runtime/concurrent/socket/RemoteExecutorServer$1/RemoteExecutorServer$1(com.oracle.tools.runtime.concurrent.socket.RemoteExecutorServer)|",
+    "v1Body": [
+      "|java+constructor:///com/oracle/tools/runtime/concurrent/socket/RemoteExecutorServer$1/RemoteExecutorServer$1(com.oracle.tools.runtime.concurrent.socket.RemoteExecutorServer)|",
+      "|java+method:///java/lang/Thread/start()|",
+      "|java+method:///com/oracle/tools/runtime/concurrent/socket/RemoteExecutorServer/isOpen()|",
+      "|java+constructor:///java/net/ServerSocket/ServerSocket()|",
+      "|java+method:///com/oracle/tools/runtime/concurrent/socket/RemoteExecutorServer/setOpen(boolean)|",
+      "|java+constructor:///java/net/InetSocketAddress/InetSocketAddress(int)|",
+      "|java+method:///java/net/ServerSocket/setReuseAddress(boolean)|",
+      "|java+method:///java/net/ServerSocket/getInetAddress()|",
+      "|java+constructor:///java/lang/Thread/Thread(java.lang.Runnable)|",
+      "|java+method:///java/net/ServerSocket/bind(java.net.SocketAddress)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/oracle/tools/predicate/Predicates/allOf(com.oracle.tools.predicate.Predicate%5B%5D)|",
+      "|java+constructor:///com/oracle/tools/runtime/concurrent/socket/RemoteExecutorServer$1/RemoteExecutorServer$1(com.oracle.tools.runtime.concurrent.socket.RemoteExecutorServer)|",
+      "|java+method:///java/lang/Thread/start()|",
+      "|java+constructor:///java/lang/Thread/Thread(java.lang.Runnable)|",
+      "|java+method:///com/oracle/tools/runtime/concurrent/socket/RemoteExecutorServer/isOpen()|",
+      "|java+constructor:///java/net/ServerSocket/ServerSocket(int)|",
+      "|java+method:///com/oracle/tools/runtime/concurrent/socket/RemoteExecutorServer/setOpen(boolean)|",
+      "|java+method:///java/net/ServerSocket/setReuseAddress(boolean)|",
+      "|java+method:///com/oracle/tools/runtime/concurrent/socket/RemoteExecutorServer/getInetAddress(com.oracle.tools.predicate.Predicate)|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-runtime:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/runtime/java/container/ContainerClassLoader/newInstance(java.lang.String,com.oracle.tools.runtime.java.ClassPath,java.util.Properties,java.util.Properties,com.oracle.tools.runtime.network.AvailablePortIterator,boolean,int)|",
+    "called": "|java+constructor:///com/oracle/tools/runtime/java/container/ContainerClassLoader/ContainerClassLoader(com.oracle.tools.runtime.java.ClassPath,java.lang.ClassLoader,com.oracle.tools.runtime.java.container.ContainerScope)|",
+    "v1Body": [
+      "|java+constructor:///com/oracle/tools/runtime/java/container/ContainerClassLoader/ContainerClassLoader(com.oracle.tools.runtime.java.ClassPath,java.lang.ClassLoader,com.oracle.tools.runtime.java.container.ContainerScope)|",
+      "|java+method:///java/util/Properties/getProperty(java.lang.String)|",
+      "|java+method:///com/oracle/tools/runtime/java/container/ContainerClassLoader/addPackageToLoadFromParent(java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///java/util/Properties/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///com/oracle/tools/runtime/java/container/ContainerMBeanServerBuilder/ContainerMBeanServerBuilder(com.oracle.tools.runtime.network.AvailablePortIterator)|",
+      "|java+method:///com/oracle/tools/runtime/java/container/ContainerScope/getProperties()|",
+      "|java+method:///java/lang/Class/getClassLoader()|",
+      "|java+method:///com/oracle/tools/runtime/java/container/Scope/getProperties()|",
+      "|java+method:///java/util/Properties/putAll(java.util.Map)|",
+      "|java+method:///com/oracle/tools/runtime/java/container/Container/getPlatformScope()|",
+      "|java+method:///com/oracle/tools/runtime/java/container/Container/getAvailablePorts()|",
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+constructor:///com/oracle/tools/runtime/java/container/ContainerScope/ContainerScope(java.lang.String,java.util.Properties,com.oracle.tools.runtime.network.AvailablePortIterator,com.oracle.tools.runtime.java.container.ContainerMBeanServerBuilder,boolean,int)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+constructor:///com/oracle/tools/runtime/java/ClassPath/ClassPath(java.lang.String%5B%5D)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///java/lang/Class/getCanonicalName()|",
+      "|java+method:///com/oracle/tools/runtime/java/ClassPath/isEmpty()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/oracle/tools/runtime/java/container/ContainerClassLoader/ContainerClassLoader(com.oracle.tools.runtime.java.ClassPath,java.lang.ClassLoader,com.oracle.tools.runtime.java.container.ContainerScope)|",
+      "|java+method:///java/util/Properties/getProperty(java.lang.String)|",
+      "|java+method:///com/oracle/tools/runtime/LocalPlatform/getInstance()|",
+      "|java+method:///com/oracle/tools/runtime/java/container/ContainerClassLoader/addPackageToLoadFromParent(java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///java/util/Properties/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/oracle/tools/runtime/java/container/ContainerScope/getProperties()|",
+      "|java+method:///com/oracle/tools/runtime/java/container/Scope/getProperties()|",
+      "|java+method:///java/util/Properties/putAll(java.util.Map)|",
+      "|java+method:///com/oracle/tools/runtime/java/container/Container/getPlatformScope()|",
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+constructor:///com/oracle/tools/runtime/java/container/ContainerScope/ContainerScope(java.lang.String,java.util.Properties,com.oracle.tools.runtime.network.AvailablePortIterator,com.oracle.tools.runtime.java.container.ContainerMBeanServerBuilder,boolean,int)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+constructor:///com/oracle/tools/runtime/java/ClassPath/ClassPath(java.lang.String%5B%5D)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///java/lang/Class/getCanonicalName()|",
+      "|java+method:///com/oracle/tools/runtime/java/ClassPath/isEmpty()|",
+      "|java+method:///com/oracle/tools/runtime/java/container/ContainerClassLoader/addPackageToLoadInContainer(java.lang.String)|",
+      "|java+constructor:///com/oracle/tools/runtime/java/container/ContainerMBeanServerBuilder/ContainerMBeanServerBuilder(com.oracle.tools.runtime.network.AvailablePortIterator)|",
+      "|java+method:///com/oracle/tools/runtime/LocalPlatform/getAvailablePorts()|",
+      "|java+method:///java/lang/Class/getClassLoader()|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-runtime:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/runtime/concurrent/socket/SocketBasedRemoteExecutor$1/run()|",
+    "called": "|java+constructor:///com/oracle/tools/runtime/concurrent/socket/SocketBasedRemoteExecutor$Sender/SocketBasedRemoteExecutor$Sender(com.oracle.tools.runtime.concurrent.socket.SocketBasedRemoteExecutor,long,com.oracle.tools.runtime.concurrent.socket.SocketBasedRemoteExecutor$Operation)|",
+    "v1Body": [
+      "|java+method:///com/oracle/tools/runtime/concurrent/socket/SocketBasedRemoteExecutor$Operation/read(java.io.ObjectInputStream)|",
+      "|java+method:///java/lang/reflect/Constructor/newInstance(java.lang.Object%5B%5D)|",
+      "|java+method:///java/io/ObjectInputStream/read(byte%5B%5D)|",
+      "|java+method:///com/oracle/tools/runtime/concurrent/socket/SocketBasedRemoteExecutor/close()|",
+      "|java+method:///com/oracle/tools/runtime/concurrent/socket/SocketBasedRemoteExecutor/access$000(com.oracle.tools.runtime.concurrent.socket.SocketBasedRemoteExecutor)|",
+      "|java+method:///com/oracle/tools/runtime/concurrent/socket/SocketBasedRemoteExecutor/access$300(com.oracle.tools.runtime.concurrent.socket.SocketBasedRemoteExecutor)|",
+      "|java+method:///com/oracle/tools/runtime/concurrent/socket/SocketBasedRemoteExecutor/access$400(com.oracle.tools.runtime.concurrent.socket.SocketBasedRemoteExecutor)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicBoolean/get()|",
+      "|java+method:///java/io/ObjectInputStream/readInt()|",
+      "|java+method:///java/lang/Class/getConstructor(java.lang.Class%5B%5D)|",
+      "|java+constructor:///java/io/ObjectInputStream/ObjectInputStream(java.io.InputStream)|",
+      "|java+constructor:///com/oracle/tools/runtime/concurrent/socket/SocketBasedRemoteExecutor$Sender/SocketBasedRemoteExecutor$Sender(com.oracle.tools.runtime.concurrent.socket.SocketBasedRemoteExecutor,long,com.oracle.tools.runtime.concurrent.socket.SocketBasedRemoteExecutor$Operation)|",
+      "|java+constructor:///com/oracle/tools/runtime/concurrent/socket/SocketBasedRemoteExecutor$Executor/SocketBasedRemoteExecutor$Executor(com.oracle.tools.runtime.concurrent.socket.SocketBasedRemoteExecutor,long,com.oracle.tools.runtime.concurrent.socket.SocketBasedRemoteExecutor$Operation)|",
+      "|java+method:///java/util/concurrent/ExecutorService/submit(java.lang.Runnable)|",
+      "|java+constructor:///com/oracle/tools/runtime/concurrent/socket/SocketBasedRemoteExecutor$ResponseOperation/SocketBasedRemoteExecutor$ResponseOperation(com.oracle.tools.runtime.concurrent.socket.SocketBasedRemoteExecutor,java.lang.Object)|",
+      "|java+method:///java/io/ObjectInputStream/readLong()|",
+      "|java+constructor:///java/io/ByteArrayInputStream/ByteArrayInputStream(byte%5B%5D)|",
+      "|java+method:///com/oracle/tools/runtime/concurrent/socket/SocketBasedRemoteExecutor/access$100(com.oracle.tools.runtime.concurrent.socket.SocketBasedRemoteExecutor)|",
+      "|java+method:///com/oracle/tools/runtime/concurrent/socket/SocketBasedRemoteExecutor/access$200(com.oracle.tools.runtime.concurrent.socket.SocketBasedRemoteExecutor)|",
+      "|java+method:///java/io/ObjectInputStream/readUTF()|",
+      "|java+method:///java/util/HashMap/get(java.lang.Object)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicBoolean/set(boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/reflect/Constructor/newInstance(java.lang.Object%5B%5D)|",
+      "|java+method:///com/oracle/tools/runtime/concurrent/socket/SocketBasedRemoteExecutor/close()|",
+      "|java+method:///com/oracle/tools/runtime/concurrent/socket/SocketBasedRemoteExecutor/access$000(com.oracle.tools.runtime.concurrent.socket.SocketBasedRemoteExecutor)|",
+      "|java+method:///com/oracle/tools/runtime/concurrent/socket/SocketBasedRemoteExecutor/access$300(com.oracle.tools.runtime.concurrent.socket.SocketBasedRemoteExecutor)|",
+      "|java+method:///com/oracle/tools/runtime/concurrent/socket/SocketBasedRemoteExecutor/access$400(com.oracle.tools.runtime.concurrent.socket.SocketBasedRemoteExecutor)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicBoolean/get()|",
+      "|java+method:///java/io/ObjectInputStream/readInt()|",
+      "|java+method:///java/lang/Class/getConstructor(java.lang.Class%5B%5D)|",
+      "|java+constructor:///java/io/ObjectInputStream/ObjectInputStream(java.io.InputStream)|",
+      "|java+method:///com/oracle/tools/runtime/concurrent/socket/SocketBasedRemoteExecutor$Operation/read(java.io.ObjectInputStream)|",
+      "|java+method:///java/io/ObjectInputStream/readFully(byte%5B%5D,int,int)|",
+      "|java+constructor:///com/oracle/tools/runtime/concurrent/socket/SocketBasedRemoteExecutor$Sender/SocketBasedRemoteExecutor$Sender(com.oracle.tools.runtime.concurrent.socket.SocketBasedRemoteExecutor,long,com.oracle.tools.runtime.concurrent.socket.SocketBasedRemoteExecutor$Operation)|",
+      "|java+constructor:///com/oracle/tools/runtime/concurrent/socket/SocketBasedRemoteExecutor$Executor/SocketBasedRemoteExecutor$Executor(com.oracle.tools.runtime.concurrent.socket.SocketBasedRemoteExecutor,long,com.oracle.tools.runtime.concurrent.socket.SocketBasedRemoteExecutor$Operation)|",
+      "|java+method:///java/util/concurrent/ExecutorService/submit(java.lang.Runnable)|",
+      "|java+constructor:///com/oracle/tools/runtime/concurrent/socket/SocketBasedRemoteExecutor$ResponseOperation/SocketBasedRemoteExecutor$ResponseOperation(com.oracle.tools.runtime.concurrent.socket.SocketBasedRemoteExecutor,java.lang.Object)|",
+      "|java+method:///java/io/ObjectInputStream/readLong()|",
+      "|java+constructor:///java/io/ByteArrayInputStream/ByteArrayInputStream(byte%5B%5D)|",
+      "|java+method:///com/oracle/tools/runtime/concurrent/socket/SocketBasedRemoteExecutor/access$100(com.oracle.tools.runtime.concurrent.socket.SocketBasedRemoteExecutor)|",
+      "|java+method:///com/oracle/tools/runtime/concurrent/socket/SocketBasedRemoteExecutor/access$200(com.oracle.tools.runtime.concurrent.socket.SocketBasedRemoteExecutor)|",
+      "|java+method:///java/io/ObjectInputStream/readUTF()|",
+      "|java+method:///java/util/HashMap/get(java.lang.Object)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicBoolean/set(boolean)|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-runtime:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/runtime/java/ContainerBasedJavaApplicationBuilder$StandardController/start(com.oracle.tools.runtime.java.ContainerBasedJavaApplicationBuilder$ControllableApplication,com.oracle.tools.util.CompletionListener)|",
+    "called": "|java+constructor:///com/oracle/tools/runtime/java/util/CallableStaticMethod/CallableStaticMethod(java.lang.String,java.lang.String,java.lang.Iterable)|",
+    "v1Body": [
+      "|java+constructor:///com/oracle/tools/runtime/java/util/CallableStaticMethod/CallableStaticMethod(java.lang.String,java.lang.String,java.lang.Iterable)|",
+      "|java+method:///com/oracle/tools/runtime/java/ContainerBasedJavaApplicationBuilder$ControllableApplication/submit(java.util.concurrent.Callable,com.oracle.tools.util.CompletionListener)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/oracle/tools/runtime/java/ContainerBasedJavaApplicationBuilder$ControllableApplication/submit(com.oracle.tools.runtime.concurrent.RemoteCallable,com.oracle.tools.util.CompletionListener)|",
+      "|java+constructor:///com/oracle/tools/runtime/concurrent/callable/RemoteCallableStaticMethod/RemoteCallableStaticMethod(java.lang.String,java.lang.String,java.lang.Iterable)|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-runtime:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplicationSchema/setJMXAuthentication(boolean)|",
+    "called": "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplicationSchema/setDefaultSystemProperty(java.lang.String,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplicationSchema/setDefaultSystemProperty(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplicationSchema/setSystemProperty(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-runtime:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplicationSchema/setPreferIPv4(boolean)|",
+    "called": "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplicationSchema/setDefaultSystemProperty(java.lang.String,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplicationSchema/setDefaultSystemProperty(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplicationSchema/setSystemProperty(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-runtime:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+constructor:///com/oracle/tools/runtime/java/AbstractJavaApplicationSchema/AbstractJavaApplicationSchema(java.lang.String,java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///com/oracle/tools/runtime/AbstractApplicationSchema/AbstractApplicationSchema(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///com/oracle/tools/runtime/java/ClassPath/ClassPath(java.lang.String%5B%5D)|",
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplicationSchema/configureDefaults()|",
+      "|java+constructor:///com/oracle/tools/runtime/PropertiesBuilder/PropertiesBuilder()|",
+      "|java+constructor:///com/oracle/tools/runtime/AbstractApplicationSchema/AbstractApplicationSchema(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/oracle/tools/runtime/java/ClassPath/ClassPath(java.lang.String%5B%5D)|",
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplicationSchema/configureDefaults()|",
+      "|java+constructor:///com/oracle/tools/runtime/PropertiesBuilder/PropertiesBuilder()|",
+      "|java+constructor:///com/oracle/tools/runtime/AbstractApplicationSchema/AbstractApplicationSchema(java.lang.String)|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-runtime:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/util/ReflectionHelper/getCompatibleMethod(java.lang.Class,java.lang.String,java.lang.Object%5B%5D)|",
+    "called": "|java+method:///com/oracle/tools/util/ReflectionHelper/getCompatibleMethod(java.lang.Class,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/getDeclaredMethod(java.lang.String,java.lang.Class%5B%5D)|",
+      "|java+method:///java/lang/Class/getSuperclass()|",
+      "|java+method:///com/oracle/tools/util/ReflectionHelper/getCompatibleMethod(java.lang.Class,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/isAssignableFrom(java.lang.Class)|",
+      "|java+method:///java/lang/Class/getMethods()|",
+      "|java+method:///java/lang/Class/getMethod(java.lang.String,java.lang.Class%5B%5D)|",
+      "|java+method:///java/lang/Class/isPrimitive()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/reflect/Method/getName()|",
+      "|java+method:///java/lang/reflect/Method/getParameterTypes()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///com/oracle/tools/util/ReflectionHelper/isAssignablePrimitive(java.lang.Class,java.lang.Class)|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-core:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/deferred/Ensured/get()|",
+    "called": "|java+constructor:///com/oracle/tools/deferred/UnresolvableInstanceException/UnresolvableInstanceException(com.oracle.tools.deferred.Deferred,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///com/oracle/tools/deferred/InstanceUnavailableException/InstanceUnavailableException(com.oracle.tools.deferred.Deferred)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/concurrent/TimeUnit/sleep(long)|",
+      "|java+method:///com/oracle/tools/deferred/Deferred/get()|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+constructor:///com/oracle/tools/deferred/UnresolvableInstanceException/UnresolvableInstanceException(com.oracle.tools.deferred.Deferred,java.lang.Throwable)|",
+      "|java+constructor:///com/oracle/tools/deferred/UnresolvableInstanceException/UnresolvableInstanceException(com.oracle.tools.deferred.Deferred)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Thread/sleep(long)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/concurrent/TimeUnit/sleep(long)|",
+      "|java+method:///com/oracle/tools/deferred/Deferred/get()|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+constructor:///com/oracle/tools/deferred/TemporarilyUnavailableException/TemporarilyUnavailableException(com.oracle.tools.deferred.Deferred)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+constructor:///com/oracle/tools/deferred/PermanentlyUnavailableException/PermanentlyUnavailableException(com.oracle.tools.deferred.Deferred)|",
+      "|java+constructor:///com/oracle/tools/deferred/PermanentlyUnavailableException/PermanentlyUnavailableException(com.oracle.tools.deferred.Deferred,java.lang.Throwable)|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-core:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/deferred/jmx/DeferredJMXConnector/get()|",
+    "called": "|java+constructor:///com/oracle/tools/deferred/InstanceUnavailableException/InstanceUnavailableException(com.oracle.tools.deferred.Deferred,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///com/oracle/tools/deferred/InstanceUnavailableException/InstanceUnavailableException(com.oracle.tools.deferred.Deferred,java.lang.Throwable)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///javax/management/remote/JMXConnector/connect()|",
+      "|java+method:///com/oracle/tools/deferred/jmx/DeferredJMXConnector/get()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///com/oracle/tools/deferred/jmx/DeferredJMXConnector$JMXConnectorBuilder/realize(javax.management.remote.JMXServiceURL,java.util.Map)|",
+      "|java+constructor:///javax/management/remote/JMXServiceURL/JMXServiceURL(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///javax/management/remote/JMXConnector/connect()|",
+      "|java+method:///com/oracle/tools/deferred/jmx/DeferredJMXConnector/get()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///com/oracle/tools/deferred/jmx/DeferredJMXConnector$JMXConnectorBuilder/realize(javax.management.remote.JMXServiceURL,java.util.Map)|",
+      "|java+constructor:///com/oracle/tools/deferred/TemporarilyUnavailableException/TemporarilyUnavailableException(com.oracle.tools.deferred.Deferred,java.lang.Throwable)|",
+      "|java+constructor:///com/oracle/tools/deferred/PermanentlyUnavailableException/PermanentlyUnavailableException(com.oracle.tools.deferred.Deferred,java.lang.Throwable)|",
+      "|java+constructor:///javax/management/remote/JMXServiceURL/JMXServiceURL(java.lang.String)|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-core:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/deferred/Eventually/assertThat(java.lang.String,com.oracle.tools.deferred.Deferred,org.hamcrest.Matcher,long,java.util.concurrent.TimeUnit)|",
+    "called": "|java+method:///com/oracle/tools/deferred/DeferredHelper/ensure(com.oracle.tools.deferred.Deferred,long,java.util.concurrent.TimeUnit)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/AssertionError/AssertionError(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/oracle/tools/deferred/DeferredHelper/ensure(com.oracle.tools.deferred.Deferred,long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///com/oracle/tools/deferred/DeferredMatch/getMatcher()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/AssertionError/initCause(java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///com/oracle/tools/deferred/DeferredMatch/DeferredMatch(com.oracle.tools.deferred.Deferred,org.hamcrest.Matcher)|",
+      "|java+method:///com/oracle/tools/deferred/DeferredMatch/getDeferred()|",
+      "|java+method:///com/oracle/tools/deferred/DeferredMatch/getLastUsedMatchValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/TimeUnit/toMillis(long)|",
+      "|java+constructor:///com/oracle/tools/deferred/SimpleTimeoutConstraint/SimpleTimeoutConstraint(long,long,java.lang.Iterable)|",
+      "|java+method:///com/oracle/tools/deferred/Eventually/assertThat(java.lang.String,com.oracle.tools.deferred.Deferred,org.hamcrest.Matcher,com.oracle.tools.deferred.TimeoutConstraint)|",
+      "|java+method:///com/oracle/tools/deferred/DeferredHelper/getDefaultEnsuredRetryDurationsMSIterable()|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-core:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/deferred/DeferredHelper/ensured(com.oracle.tools.deferred.Deferred,long)|",
+    "called": "|java+method:///com/oracle/tools/deferred/DeferredHelper/getDefaultEnsuredRetryDurationsMS()|",
+    "v1Body": [
+      "|java+constructor:///com/oracle/tools/deferred/Ensured/Ensured(com.oracle.tools.deferred.Deferred,java.util.Iterator,long)|",
+      "|java+method:///com/oracle/tools/deferred/DeferredHelper/getDefaultEnsuredRetryDurationsMS()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/oracle/tools/deferred/SimpleTimeoutConstraint/SimpleTimeoutConstraint(long,long,java.lang.Iterable)|",
+      "|java+constructor:///com/oracle/tools/deferred/Ensured/Ensured(com.oracle.tools.deferred.Deferred,com.oracle.tools.deferred.TimeoutConstraint)|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-core:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/deferred/DeferredHelper/ensure(com.oracle.tools.deferred.Deferred,long)|",
+    "called": "|java+method:///com/oracle/tools/deferred/DeferredHelper/ensured(com.oracle.tools.deferred.Deferred,long)|",
+    "v1Body": [
+      "|java+method:///com/oracle/tools/deferred/Deferred/get()|",
+      "|java+method:///com/oracle/tools/deferred/DeferredHelper/ensured(com.oracle.tools.deferred.Deferred,long)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/oracle/tools/deferred/DeferredHelper/ensured(com.oracle.tools.deferred.Deferred,com.oracle.tools.deferred.TimeoutConstraint)|",
+      "|java+constructor:///com/oracle/tools/deferred/SimpleTimeoutConstraint/SimpleTimeoutConstraint(long,long,java.lang.Iterable)|",
+      "|java+method:///com/oracle/tools/deferred/Deferred/get()|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-core:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/deferred/jmx/DeferredMBeanInfo/get()|",
+    "called": "|java+constructor:///com/oracle/tools/deferred/UnresolvableInstanceException/UnresolvableInstanceException(com.oracle.tools.deferred.Deferred,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///javax/management/remote/JMXConnector/getMBeanServerConnection()|",
+      "|java+method:///javax/management/MBeanServerConnection/getMBeanInfo(javax.management.ObjectName)|",
+      "|java+method:///com/oracle/tools/deferred/Deferred/get()|",
+      "|java+method:///com/oracle/tools/deferred/jmx/DeferredMBeanInfo/get()|",
+      "|java+constructor:///com/oracle/tools/deferred/UnresolvableInstanceException/UnresolvableInstanceException(com.oracle.tools.deferred.Deferred,java.lang.Throwable)|",
+      "|java+constructor:///com/oracle/tools/deferred/InstanceUnavailableException/InstanceUnavailableException(com.oracle.tools.deferred.Deferred,java.lang.Throwable)|",
+      "|java+constructor:///com/oracle/tools/deferred/InstanceUnavailableException/InstanceUnavailableException(com.oracle.tools.deferred.Deferred)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/management/remote/JMXConnector/getMBeanServerConnection()|",
+      "|java+method:///javax/management/MBeanServerConnection/getMBeanInfo(javax.management.ObjectName)|",
+      "|java+constructor:///com/oracle/tools/deferred/PermanentlyUnavailableException/PermanentlyUnavailableException(com.oracle.tools.deferred.Deferred,java.lang.Throwable)|",
+      "|java+method:///com/oracle/tools/deferred/Deferred/get()|",
+      "|java+method:///com/oracle/tools/deferred/jmx/DeferredMBeanInfo/get()|",
+      "|java+constructor:///com/oracle/tools/deferred/TemporarilyUnavailableException/TemporarilyUnavailableException(com.oracle.tools.deferred.Deferred)|",
+      "|java+constructor:///com/oracle/tools/deferred/TemporarilyUnavailableException/TemporarilyUnavailableException(com.oracle.tools.deferred.Deferred,java.lang.Throwable)|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-core:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/util/ReflectionHelper/getCompatibleConstructor(java.lang.Class,java.lang.Class%5B%5D)|",
+    "called": "|java+method:///com/oracle/tools/util/ReflectionHelper/isAssignablePrimitive(java.lang.Class,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/lang/reflect/Constructor/getParameterTypes()|",
+      "|java+method:///java/lang/Class/isPrimitive()|",
+      "|java+method:///com/oracle/tools/util/ReflectionHelper/isAssignablePrimitive(java.lang.Class,java.lang.Class)|",
+      "|java+method:///java/lang/Class/getConstructors()|",
+      "|java+method:///java/lang/Class/isAssignableFrom(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/reflect/Constructor/getParameterTypes()|",
+      "|java+method:///java/lang/Class/isPrimitive()|",
+      "|java+method:///java/lang/Class/getConstructor(java.lang.Class%5B%5D)|",
+      "|java+method:///com/oracle/tools/util/ReflectionHelper/isAssignablePrimitive(java.lang.Class,java.lang.Class)|",
+      "|java+method:///java/lang/Class/getConstructors()|",
+      "|java+method:///java/lang/Class/isAssignableFrom(java.lang.Class)|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-core:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/getMBeanInfo(javax.management.ObjectName)|",
+    "called": "|java+method:///com/oracle/tools/deferred/DeferredHelper/ensured(com.oracle.tools.deferred.Deferred,long,java.util.concurrent.TimeUnit)|",
+    "v1Body": [
+      "|java+method:///com/oracle/tools/deferred/DeferredHelper/ensured(com.oracle.tools.deferred.Deferred,long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/getDefaultTimeout()|",
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/getDefaultTimeoutUnits()|",
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/getDeferredMBeanInfo(javax.management.ObjectName)|",
+      "|java+method:///com/oracle/tools/deferred/Deferred/get()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/oracle/tools/deferred/DeferredHelper/ensured(com.oracle.tools.deferred.Deferred,com.oracle.tools.deferred.TimeoutConstraint)|",
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/getDefaultTimeout()|",
+      "|java+method:///com/oracle/tools/deferred/DeferredHelper/within(com.oracle.tools.options.Timeout)|",
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/getDeferredMBeanInfo(javax.management.ObjectName)|",
+      "|java+method:///com/oracle/tools/deferred/Deferred/get()|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-core:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/queryMBeans(javax.management.ObjectName,javax.management.QueryExp)|",
+    "called": "|java+constructor:///com/oracle/tools/deferred/UnresolvableInstanceException/UnresolvableInstanceException(com.oracle.tools.deferred.Deferred,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///com/oracle/tools/deferred/DeferredHelper/ensured(com.oracle.tools.deferred.Deferred,long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///javax/management/remote/JMXConnector/getMBeanServerConnection()|",
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/getDeferredJMXConnector()|",
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/getDefaultTimeout()|",
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/getDefaultTimeoutUnits()|",
+      "|java+constructor:///com/oracle/tools/deferred/UnresolvableInstanceException/UnresolvableInstanceException(com.oracle.tools.deferred.Deferred,java.lang.Throwable)|",
+      "|java+method:///javax/management/MBeanServerConnection/queryMBeans(javax.management.ObjectName,javax.management.QueryExp)|",
+      "|java+method:///com/oracle/tools/deferred/Deferred/get()|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/management/remote/JMXConnector/getMBeanServerConnection()|",
+      "|java+method:///com/oracle/tools/deferred/DeferredHelper/ensured(com.oracle.tools.deferred.Deferred,com.oracle.tools.deferred.TimeoutConstraint)|",
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/getDeferredJMXConnector()|",
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/getDefaultTimeout()|",
+      "|java+method:///com/oracle/tools/deferred/DeferredHelper/within(com.oracle.tools.options.Timeout)|",
+      "|java+constructor:///com/oracle/tools/deferred/PermanentlyUnavailableException/PermanentlyUnavailableException(com.oracle.tools.deferred.Deferred,java.lang.Throwable)|",
+      "|java+method:///javax/management/MBeanServerConnection/queryMBeans(javax.management.ObjectName,javax.management.QueryExp)|",
+      "|java+method:///com/oracle/tools/deferred/Deferred/get()|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-core:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/getMBeanProxy(javax.management.ObjectName,java.lang.Class)|",
+    "called": "|java+method:///com/oracle/tools/deferred/DeferredHelper/ensured(com.oracle.tools.deferred.Deferred,long,java.util.concurrent.TimeUnit)|",
+    "v1Body": [
+      "|java+method:///com/oracle/tools/deferred/DeferredHelper/ensured(com.oracle.tools.deferred.Deferred,long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/getDefaultTimeout()|",
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/getDeferredMBeanProxy(javax.management.ObjectName,java.lang.Class)|",
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/getDefaultTimeoutUnits()|",
+      "|java+method:///com/oracle/tools/deferred/Deferred/get()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/oracle/tools/deferred/DeferredHelper/ensured(com.oracle.tools.deferred.Deferred,com.oracle.tools.deferred.TimeoutConstraint)|",
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/getDefaultTimeout()|",
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/getDeferredMBeanProxy(javax.management.ObjectName,java.lang.Class)|",
+      "|java+method:///com/oracle/tools/deferred/DeferredHelper/within(com.oracle.tools.options.Timeout)|",
+      "|java+method:///com/oracle/tools/deferred/Deferred/get()|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-core:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/deferred/DeferredInvoke/get()|",
+    "called": "|java+constructor:///com/oracle/tools/deferred/UnresolvableInstanceException/UnresolvableInstanceException(com.oracle.tools.deferred.Deferred,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///com/oracle/tools/deferred/InstanceUnavailableException/InstanceUnavailableException(com.oracle.tools.deferred.Deferred,java.lang.Throwable)|",
+      "|java+method:///java/lang/reflect/InvocationTargetException/getTargetException()|",
+      "|java+method:///com/oracle/tools/deferred/DeferredInvoke/invoke(java.lang.reflect.Method,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+constructor:///com/oracle/tools/deferred/UnresolvableInstanceException/UnresolvableInstanceException(com.oracle.tools.deferred.Deferred,java.lang.Throwable)|",
+      "|java+method:///com/oracle/tools/deferred/Deferred/get()|",
+      "|java+constructor:///java/lang/NullPointerException/NullPointerException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/reflect/InvocationTargetException/getTargetException()|",
+      "|java+method:///com/oracle/tools/deferred/DeferredInvoke/invoke(java.lang.reflect.Method,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+constructor:///com/oracle/tools/deferred/PermanentlyUnavailableException/PermanentlyUnavailableException(com.oracle.tools.deferred.Deferred,java.lang.Throwable)|",
+      "|java+constructor:///com/oracle/tools/deferred/TemporarilyUnavailableException/TemporarilyUnavailableException(com.oracle.tools.deferred.Deferred,java.lang.Throwable)|",
+      "|java+method:///com/oracle/tools/deferred/Deferred/get()|",
+      "|java+constructor:///java/lang/NullPointerException/NullPointerException(java.lang.String)|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-core:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/deferred/DeferredHelper/eventually(com.oracle.tools.deferred.Deferred,long,java.util.concurrent.TimeUnit)|",
+    "called": "|java+method:///com/oracle/tools/deferred/DeferredHelper/ensured(com.oracle.tools.deferred.Deferred,long,java.util.concurrent.TimeUnit)|",
+    "v1Body": [
+      "|java+method:///com/oracle/tools/deferred/DeferredHelper/ensured(com.oracle.tools.deferred.Deferred,long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///java/lang/ThreadLocal/set(java.lang.Object)|",
+      "|java+method:///java/lang/ThreadLocal/get()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/TimeUnit/toMillis(long)|",
+      "|java+method:///com/oracle/tools/deferred/DeferredHelper/eventually(com.oracle.tools.deferred.Deferred,com.oracle.tools.deferred.TimeoutConstraint)|",
+      "|java+constructor:///com/oracle/tools/deferred/SimpleTimeoutConstraint/SimpleTimeoutConstraint(long,long,java.lang.Iterable)|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-core:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+constructor:///com/oracle/tools/util/RandomIterator/RandomIterator(long)|",
+    "called": "|java+constructor:///com/oracle/tools/util/RandomIterator/RandomIterator(java.util.Iterator)|",
+    "v1Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+constructor:///com/oracle/tools/util/ConstantIterator/ConstantIterator(java.lang.Object)|",
+      "|java+constructor:///com/oracle/tools/util/RandomIterator/RandomIterator(java.util.Iterator)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/oracle/tools/util/PerpetualIterator/PerpetualIterator(java.lang.Object)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+constructor:///com/oracle/tools/util/RandomIterator/RandomIterator(java.util.Iterator)|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-core:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/deferred/DeferredMatch/get()|",
+    "called": "|java+constructor:///com/oracle/tools/deferred/UnresolvableInstanceException/UnresolvableInstanceException(com.oracle.tools.deferred.Deferred,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///com/oracle/tools/deferred/InstanceUnavailableException/InstanceUnavailableException(com.oracle.tools.deferred.Deferred)|",
+      "|java+method:///com/oracle/tools/deferred/DeferredMatch/get()|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///com/oracle/tools/deferred/Deferred/get()|",
+      "|java+method:///org/hamcrest/Matcher/matches(java.lang.Object)|",
+      "|java+constructor:///com/oracle/tools/deferred/UnresolvableInstanceException/UnresolvableInstanceException(com.oracle.tools.deferred.Deferred,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/oracle/tools/deferred/DeferredMatch/get()|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+constructor:///com/oracle/tools/deferred/PermanentlyUnavailableException/PermanentlyUnavailableException(com.oracle.tools.deferred.Deferred,java.lang.Throwable)|",
+      "|java+method:///com/oracle/tools/deferred/Deferred/get()|",
+      "|java+method:///org/hamcrest/Matcher/matches(java.lang.Object)|",
+      "|java+constructor:///com/oracle/tools/deferred/TemporarilyUnavailableException/TemporarilyUnavailableException(com.oracle.tools.deferred.Deferred)|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-core:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/deferred/DeferredHelper/ensured(com.oracle.tools.deferred.Deferred,long,java.util.concurrent.TimeUnit)|",
+    "called": "|java+method:///com/oracle/tools/deferred/DeferredHelper/getDefaultEnsuredRetryDurationsMS()|",
+    "v1Body": [
+      "|java+constructor:///com/oracle/tools/deferred/Ensured/Ensured(com.oracle.tools.deferred.Deferred,java.util.Iterator,long)|",
+      "|java+method:///java/util/concurrent/TimeUnit/toMillis(long)|",
+      "|java+method:///com/oracle/tools/deferred/DeferredHelper/getDefaultEnsuredRetryDurationsMS()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/TimeUnit/toMillis(long)|",
+      "|java+constructor:///com/oracle/tools/deferred/SimpleTimeoutConstraint/SimpleTimeoutConstraint(long,long,java.lang.Iterable)|",
+      "|java+constructor:///com/oracle/tools/deferred/Ensured/Ensured(com.oracle.tools.deferred.Deferred,com.oracle.tools.deferred.TimeoutConstraint)|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-core:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/deferred/Cached/get()|",
+    "called": "|java+constructor:///com/oracle/tools/deferred/InstanceUnavailableException/InstanceUnavailableException(com.oracle.tools.deferred.Deferred,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///com/oracle/tools/deferred/InstanceUnavailableException/InstanceUnavailableException(com.oracle.tools.deferred.Deferred,java.lang.Throwable)|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicReference/AtomicReference(java.lang.Object)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicReference/get()|",
+      "|java+method:///com/oracle/tools/deferred/Deferred/get()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/concurrent/atomic/AtomicReference/AtomicReference(java.lang.Object)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicReference/get()|",
+      "|java+method:///com/oracle/tools/deferred/Deferred/get()|",
+      "|java+constructor:///com/oracle/tools/deferred/TemporarilyUnavailableException/TemporarilyUnavailableException(com.oracle.tools.deferred.Deferred,java.lang.Throwable)|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-core:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/deferred/jmx/DeferredMBeanProxy/get()|",
+    "called": "|java+constructor:///com/oracle/tools/deferred/UnresolvableInstanceException/UnresolvableInstanceException(com.oracle.tools.deferred.Deferred,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///javax/management/remote/JMXConnector/getMBeanServerConnection()|",
+      "|java+method:///javax/management/JMX/newMBeanProxy(javax.management.MBeanServerConnection,javax.management.ObjectName,java.lang.Class)|",
+      "|java+method:///com/oracle/tools/deferred/Deferred/get()|",
+      "|java+constructor:///com/oracle/tools/deferred/UnresolvableInstanceException/UnresolvableInstanceException(com.oracle.tools.deferred.Deferred,java.lang.Throwable)|",
+      "|java+constructor:///com/oracle/tools/deferred/InstanceUnavailableException/InstanceUnavailableException(com.oracle.tools.deferred.Deferred,java.lang.Throwable)|",
+      "|java+constructor:///com/oracle/tools/deferred/InstanceUnavailableException/InstanceUnavailableException(com.oracle.tools.deferred.Deferred)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/management/remote/JMXConnector/getMBeanServerConnection()|",
+      "|java+method:///javax/management/JMX/newMBeanProxy(javax.management.MBeanServerConnection,javax.management.ObjectName,java.lang.Class)|",
+      "|java+constructor:///com/oracle/tools/deferred/PermanentlyUnavailableException/PermanentlyUnavailableException(com.oracle.tools.deferred.Deferred,java.lang.Throwable)|",
+      "|java+method:///com/oracle/tools/deferred/Deferred/get()|",
+      "|java+constructor:///com/oracle/tools/deferred/TemporarilyUnavailableException/TemporarilyUnavailableException(com.oracle.tools.deferred.Deferred)|",
+      "|java+constructor:///com/oracle/tools/deferred/TemporarilyUnavailableException/TemporarilyUnavailableException(com.oracle.tools.deferred.Deferred,java.lang.Throwable)|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-core:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/deferred/listener/DeferredCompletionListener/get()|",
+    "called": "|java+constructor:///com/oracle/tools/deferred/UnresolvableInstanceException/UnresolvableInstanceException(com.oracle.tools.deferred.Deferred,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///com/oracle/tools/deferred/InstanceUnavailableException/InstanceUnavailableException(com.oracle.tools.deferred.Deferred)|",
+      "|java+constructor:///com/oracle/tools/deferred/UnresolvableInstanceException/UnresolvableInstanceException(com.oracle.tools.deferred.Deferred,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/oracle/tools/deferred/PermanentlyUnavailableException/PermanentlyUnavailableException(com.oracle.tools.deferred.Deferred,java.lang.Throwable)|",
+      "|java+constructor:///com/oracle/tools/deferred/TemporarilyUnavailableException/TemporarilyUnavailableException(com.oracle.tools.deferred.Deferred)|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-core:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/deferred/NotAvailable/get()|",
+    "called": "|java+constructor:///com/oracle/tools/deferred/InstanceUnavailableException/InstanceUnavailableException(com.oracle.tools.deferred.Deferred)|",
+    "v1Body": [
+      "|java+constructor:///com/oracle/tools/deferred/InstanceUnavailableException/InstanceUnavailableException(com.oracle.tools.deferred.Deferred)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/oracle/tools/deferred/TemporarilyUnavailableException/TemporarilyUnavailableException(com.oracle.tools.deferred.Deferred)|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-core:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/deferred/Future/get()|",
+    "called": "|java+constructor:///com/oracle/tools/deferred/UnresolvableInstanceException/UnresolvableInstanceException(com.oracle.tools.deferred.Deferred,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///java/util/concurrent/Future/get(long,java.util.concurrent.TimeUnit)|",
+      "|java+constructor:///com/oracle/tools/deferred/UnresolvableInstanceException/UnresolvableInstanceException(com.oracle.tools.deferred.Deferred,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/Future/get(long,java.util.concurrent.TimeUnit)|",
+      "|java+constructor:///com/oracle/tools/deferred/PermanentlyUnavailableException/PermanentlyUnavailableException(com.oracle.tools.deferred.Deferred,java.lang.Throwable)|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-core:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/deferred/jmx/DeferredMBeanAttribute/get()|",
+    "called": "|java+constructor:///com/oracle/tools/deferred/UnresolvableInstanceException/UnresolvableInstanceException(com.oracle.tools.deferred.Deferred,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///javax/management/remote/JMXConnector/getMBeanServerConnection()|",
+      "|java+method:///java/lang/Class/cast(java.lang.Object)|",
+      "|java+method:///javax/management/MBeanServerConnection/getAttribute(javax.management.ObjectName,java.lang.String)|",
+      "|java+method:///com/oracle/tools/deferred/Deferred/get()|",
+      "|java+constructor:///com/oracle/tools/deferred/UnresolvableInstanceException/UnresolvableInstanceException(com.oracle.tools.deferred.Deferred,java.lang.Throwable)|",
+      "|java+constructor:///com/oracle/tools/deferred/InstanceUnavailableException/InstanceUnavailableException(com.oracle.tools.deferred.Deferred,java.lang.Throwable)|",
+      "|java+constructor:///com/oracle/tools/deferred/InstanceUnavailableException/InstanceUnavailableException(com.oracle.tools.deferred.Deferred)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/management/remote/JMXConnector/getMBeanServerConnection()|",
+      "|java+method:///java/lang/Class/cast(java.lang.Object)|",
+      "|java+method:///javax/management/MBeanServerConnection/getAttribute(javax.management.ObjectName,java.lang.String)|",
+      "|java+constructor:///com/oracle/tools/deferred/PermanentlyUnavailableException/PermanentlyUnavailableException(com.oracle.tools.deferred.Deferred,java.lang.Throwable)|",
+      "|java+method:///com/oracle/tools/deferred/Deferred/get()|",
+      "|java+constructor:///com/oracle/tools/deferred/TemporarilyUnavailableException/TemporarilyUnavailableException(com.oracle.tools.deferred.Deferred)|",
+      "|java+constructor:///com/oracle/tools/deferred/TemporarilyUnavailableException/TemporarilyUnavailableException(com.oracle.tools.deferred.Deferred,java.lang.Throwable)|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-core:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/deferred/DeferredHelper/eventually(java.lang.Object,long,java.util.concurrent.TimeUnit)|",
+    "called": "|java+constructor:///com/oracle/tools/deferred/Existing/Existing(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/oracle/tools/deferred/DeferredHelper/ensured(com.oracle.tools.deferred.Deferred,long,java.util.concurrent.TimeUnit)|",
+      "|java+constructor:///com/oracle/tools/deferred/Existing/Existing(java.lang.Object)|",
+      "|java+method:///java/lang/ThreadLocal/set(java.lang.Object)|",
+      "|java+method:///java/lang/ThreadLocal/get()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/TimeUnit/toMillis(long)|",
+      "|java+method:///com/oracle/tools/deferred/DeferredHelper/eventually(java.lang.Object,com.oracle.tools.deferred.TimeoutConstraint)|",
+      "|java+constructor:///com/oracle/tools/deferred/SimpleTimeoutConstraint/SimpleTimeoutConstraint(long,long,java.lang.Iterable)|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-core:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/getMBeanAttribute(javax.management.ObjectName,java.lang.String,java.lang.Class)|",
+    "called": "|java+method:///com/oracle/tools/deferred/DeferredHelper/ensured(com.oracle.tools.deferred.Deferred,long,java.util.concurrent.TimeUnit)|",
+    "v1Body": [
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/getDeferredMBeanAttribute(javax.management.ObjectName,java.lang.String,java.lang.Class)|",
+      "|java+method:///com/oracle/tools/deferred/DeferredHelper/ensured(com.oracle.tools.deferred.Deferred,long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/getDefaultTimeout()|",
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/getDefaultTimeoutUnits()|",
+      "|java+method:///com/oracle/tools/deferred/Deferred/get()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/getDeferredMBeanAttribute(javax.management.ObjectName,java.lang.String,java.lang.Class)|",
+      "|java+method:///com/oracle/tools/deferred/DeferredHelper/ensured(com.oracle.tools.deferred.Deferred,com.oracle.tools.deferred.TimeoutConstraint)|",
+      "|java+method:///com/oracle/tools/runtime/java/AbstractJavaApplication/getDefaultTimeout()|",
+      "|java+method:///com/oracle/tools/deferred/DeferredHelper/within(com.oracle.tools.options.Timeout)|",
+      "|java+method:///com/oracle/tools/deferred/Deferred/get()|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-core:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/deferred/DeferredHelper/getDefaultEnsuredRetryDurationsMS()|",
+    "called": "|java+constructor:///com/oracle/tools/util/RandomIterator/RandomIterator(java.util.Iterator)|",
+    "v1Body": [
+      "|java+constructor:///com/oracle/tools/util/ExponentialIterator/ExponentialIterator(double,double)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+constructor:///com/oracle/tools/util/ConstantIterator/ConstantIterator(java.lang.Object)|",
+      "|java+constructor:///com/oracle/tools/util/RandomIterator/RandomIterator(java.util.Iterator)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/System/getProperty(java.lang.String)|",
+      "|java+constructor:///com/oracle/tools/util/FibonacciIterator/FibonacciIterator()|",
+      "|java+method:///java/lang/String/toLowerCase()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Iterable/iterator()|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-core:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/deferred/DeferredHelper/ensured(com.oracle.tools.deferred.Deferred,long,java.util.concurrent.TimeUnit,long,java.util.concurrent.TimeUnit)|",
+    "called": "|java+constructor:///com/oracle/tools/util/ConstantIterator/ConstantIterator(java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///com/oracle/tools/deferred/Ensured/Ensured(com.oracle.tools.deferred.Deferred,java.util.Iterator,long)|",
+      "|java+method:///java/util/concurrent/TimeUnit/toMillis(long)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+constructor:///com/oracle/tools/util/ConstantIterator/ConstantIterator(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/oracle/tools/deferred/Ensured/Ensured(com.oracle.tools.deferred.Deferred,java.util.Iterator,long)|",
+      "|java+constructor:///com/oracle/tools/util/PerpetualIterator/PerpetualIterator(java.lang.Object)|",
+      "|java+method:///java/util/concurrent/TimeUnit/toMillis(long)|",
+      "|java+method:///java/lang/Long/valueOf(long)|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-core:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/deferred/DeferredRemoteExecution/get()|",
+    "called": "|java+constructor:///com/oracle/tools/deferred/UnresolvableInstanceException/UnresolvableInstanceException(com.oracle.tools.deferred.Deferred,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///com/oracle/tools/runtime/concurrent/RemoteExecutor/submit(java.util.concurrent.Callable,com.oracle.tools.util.CompletionListener)|",
+      "|java+constructor:///com/oracle/tools/deferred/UnresolvableInstanceException/UnresolvableInstanceException(com.oracle.tools.deferred.Deferred,java.lang.Throwable)|",
+      "|java+constructor:///com/oracle/tools/deferred/InstanceUnavailableException/InstanceUnavailableException(com.oracle.tools.deferred.Deferred,java.lang.Throwable)|",
+      "|java+constructor:///com/oracle/tools/deferred/InstanceUnavailableException/InstanceUnavailableException(com.oracle.tools.deferred.Deferred)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/oracle/tools/deferred/PermanentlyUnavailableException/PermanentlyUnavailableException(com.oracle.tools.deferred.Deferred,java.lang.Throwable)|",
+      "|java+constructor:///com/oracle/tools/deferred/TemporarilyUnavailableException/TemporarilyUnavailableException(com.oracle.tools.deferred.Deferred)|",
+      "|java+constructor:///com/oracle/tools/deferred/TemporarilyUnavailableException/TemporarilyUnavailableException(com.oracle.tools.deferred.Deferred,java.lang.Throwable)|",
+      "|java+method:///com/oracle/tools/runtime/concurrent/RemoteExecutor/submit(com.oracle.tools.runtime.concurrent.RemoteCallable,com.oracle.tools.util.CompletionListener)|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-core:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/deferred/DeferredHelper/ensure(com.oracle.tools.deferred.Deferred,long,java.util.concurrent.TimeUnit)|",
+    "called": "|java+method:///com/oracle/tools/deferred/DeferredHelper/ensured(com.oracle.tools.deferred.Deferred,long,java.util.concurrent.TimeUnit)|",
+    "v1Body": [
+      "|java+method:///com/oracle/tools/deferred/DeferredHelper/ensured(com.oracle.tools.deferred.Deferred,long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///com/oracle/tools/deferred/Deferred/get()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/TimeUnit/toMillis(long)|",
+      "|java+method:///com/oracle/tools/deferred/DeferredHelper/ensured(com.oracle.tools.deferred.Deferred,com.oracle.tools.deferred.TimeoutConstraint)|",
+      "|java+constructor:///com/oracle/tools/deferred/SimpleTimeoutConstraint/SimpleTimeoutConstraint(long,long,java.lang.Iterable)|",
+      "|java+method:///com/oracle/tools/deferred/Deferred/get()|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-core:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/deferred/NeverAvailable/get()|",
+    "called": "|java+constructor:///com/oracle/tools/deferred/UnresolvableInstanceException/UnresolvableInstanceException(com.oracle.tools.deferred.Deferred)|",
+    "v1Body": [
+      "|java+constructor:///com/oracle/tools/deferred/UnresolvableInstanceException/UnresolvableInstanceException(com.oracle.tools.deferred.Deferred)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/oracle/tools/deferred/PermanentlyUnavailableException/PermanentlyUnavailableException(com.oracle.tools.deferred.Deferred)|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-core:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/deferred/DeferredHelper/ensured(com.oracle.tools.deferred.Deferred)|",
+    "called": "|java+method:///com/oracle/tools/deferred/DeferredHelper/getDefaultEnsuredRetryDurationsMS()|",
+    "v1Body": [
+      "|java+constructor:///com/oracle/tools/deferred/Ensured/Ensured(com.oracle.tools.deferred.Deferred,java.util.Iterator,long)|",
+      "|java+method:///com/oracle/tools/deferred/DeferredHelper/getDefaultEnsuredRetryDurationsMS()|",
+      "|java+method:///com/oracle/tools/deferred/DeferredHelper/getDefaultEnsuredTimeoutMS()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/oracle/tools/deferred/Ensured/Ensured(com.oracle.tools.deferred.Deferred)|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-core:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/deferred/Eventually/assertThat(com.oracle.tools.deferred.Deferred,org.hamcrest.Matcher,long,java.util.concurrent.TimeUnit)|",
+    "called": "|java+method:///com/oracle/tools/deferred/Eventually/assertThat(java.lang.String,com.oracle.tools.deferred.Deferred,org.hamcrest.Matcher,long,java.util.concurrent.TimeUnit)|",
+    "v1Body": [
+      "|java+method:///com/oracle/tools/deferred/Eventually/assertThat(java.lang.String,com.oracle.tools.deferred.Deferred,org.hamcrest.Matcher,long,java.util.concurrent.TimeUnit)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/TimeUnit/toMillis(long)|",
+      "|java+constructor:///com/oracle/tools/deferred/SimpleTimeoutConstraint/SimpleTimeoutConstraint(long,long,java.lang.Iterable)|",
+      "|java+method:///com/oracle/tools/deferred/Eventually/assertThat(java.lang.String,com.oracle.tools.deferred.Deferred,org.hamcrest.Matcher,com.oracle.tools.deferred.TimeoutConstraint)|",
+      "|java+method:///com/oracle/tools/deferred/DeferredHelper/getDefaultEnsuredRetryDurationsMSIterable()|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-testing-support:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/deferred/DeferredMatch/get()|",
+    "called": "|java+method:///com/oracle/tools/deferred/DeferredMatch/get()|",
+    "v1Body": [
+      "|java+constructor:///com/oracle/tools/deferred/InstanceUnavailableException/InstanceUnavailableException(com.oracle.tools.deferred.Deferred)|",
+      "|java+method:///com/oracle/tools/deferred/DeferredMatch/get()|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///com/oracle/tools/deferred/Deferred/get()|",
+      "|java+method:///org/hamcrest/Matcher/matches(java.lang.Object)|",
+      "|java+constructor:///com/oracle/tools/deferred/UnresolvableInstanceException/UnresolvableInstanceException(com.oracle.tools.deferred.Deferred,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/oracle/tools/deferred/DeferredMatch/get()|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+constructor:///com/oracle/tools/deferred/PermanentlyUnavailableException/PermanentlyUnavailableException(com.oracle.tools.deferred.Deferred,java.lang.Throwable)|",
+      "|java+method:///com/oracle/tools/deferred/Deferred/get()|",
+      "|java+method:///org/hamcrest/Matcher/matches(java.lang.Object)|",
+      "|java+constructor:///com/oracle/tools/deferred/TemporarilyUnavailableException/TemporarilyUnavailableException(com.oracle.tools.deferred.Deferred)|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-testing-support:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/deferred/Eventually/assertThat(java.lang.String,com.oracle.tools.deferred.Deferred,org.hamcrest.Matcher)|",
+    "called": "|java+method:///com/oracle/tools/deferred/Eventually/assertThat(java.lang.String,com.oracle.tools.deferred.Deferred,org.hamcrest.Matcher,long,java.util.concurrent.TimeUnit)|",
+    "v1Body": [
+      "|java+method:///com/oracle/tools/deferred/Eventually/assertThat(java.lang.String,com.oracle.tools.deferred.Deferred,org.hamcrest.Matcher,long,java.util.concurrent.TimeUnit)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/oracle/tools/deferred/SimpleTimeoutConstraint/SimpleTimeoutConstraint()|",
+      "|java+method:///com/oracle/tools/deferred/Eventually/assertThat(java.lang.String,com.oracle.tools.deferred.Deferred,org.hamcrest.Matcher,com.oracle.tools.deferred.TimeoutConstraint)|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-testing-support:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/deferred/Eventually/assertThat(java.lang.String,com.oracle.tools.deferred.Deferred,org.hamcrest.Matcher,long,java.util.concurrent.TimeUnit)|",
+    "called": "|java+constructor:///com/oracle/tools/deferred/DeferredMatch/DeferredMatch(com.oracle.tools.deferred.Deferred,org.hamcrest.Matcher)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/AssertionError/AssertionError(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/oracle/tools/deferred/DeferredHelper/ensure(com.oracle.tools.deferred.Deferred,long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///com/oracle/tools/deferred/DeferredMatch/getMatcher()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/AssertionError/initCause(java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///com/oracle/tools/deferred/DeferredMatch/DeferredMatch(com.oracle.tools.deferred.Deferred,org.hamcrest.Matcher)|",
+      "|java+method:///com/oracle/tools/deferred/DeferredMatch/getDeferred()|",
+      "|java+method:///com/oracle/tools/deferred/DeferredMatch/getLastUsedMatchValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/TimeUnit/toMillis(long)|",
+      "|java+constructor:///com/oracle/tools/deferred/SimpleTimeoutConstraint/SimpleTimeoutConstraint(long,long,java.lang.Iterable)|",
+      "|java+method:///com/oracle/tools/deferred/Eventually/assertThat(java.lang.String,com.oracle.tools.deferred.Deferred,org.hamcrest.Matcher,com.oracle.tools.deferred.TimeoutConstraint)|",
+      "|java+method:///com/oracle/tools/deferred/DeferredHelper/getDefaultEnsuredRetryDurationsMSIterable()|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-testing-support:1.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.oracle.tools:oracle-tools-all:2.0.0-RC1",
+    "coordinatesV2": "com.oracle.tools:oracle-tools-all:1.1.0",
+    "caller": "|java+method:///com/oracle/tools/junit/AbstractCoherenceTest/onBeforeEachTest()|",
+    "called": "|java+method:///com/oracle/tools/junit/AbstractTest/onBeforeEachTest()|",
+    "v1Body": [
+      "|java+method:///com/oracle/tools/runtime/java/container/Container/getAvailablePorts()|",
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///com/oracle/tools/runtime/network/Constants/getLocalHost()|",
+      "|java+method:///java/lang/Integer/toString(int)|",
+      "|java+method:///com/oracle/tools/junit/AbstractTest/onBeforeEachTest()|",
+      "|java+method:///java/lang/System/setProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///com/oracle/tools/runtime/network/AvailablePortIterator/next()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///com/oracle/tools/runtime/LocalPlatform/getInstance()|",
+      "|java+method:///com/oracle/tools/runtime/network/Constants/getLocalHost()|",
+      "|java+method:///java/lang/Integer/toString(int)|",
+      "|java+method:///com/oracle/tools/junit/AbstractTest/onBeforeEachTest()|",
+      "|java+method:///com/oracle/tools/runtime/LocalPlatform/getAvailablePorts()|",
+      "|java+method:///java/lang/System/setProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///com/oracle/tools/runtime/network/AvailablePortIterator/next()|"
+    ],
+    "affectedLib": "com.oracle.tools:oracle-tools-testing-support:1.1.0",
+    "change": "REMOVED"
+  }
+]

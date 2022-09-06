@@ -1,0 +1,964 @@
+[
+  {
+    "coordinatesV1": "io.monix:monix-reactive_sjs0.6_2.10:2.0-RC3",
+    "coordinatesV2": "io.monix:monix-reactive_sjs0.6_2.10:2.0.5",
+    "caller": "|java+method:///monix/reactive/Observable$class/runAsyncGetFirst(monix.reactive.Observable,monix.execution.Scheduler)|",
+    "called": "|java+method:///monix/eval/Task/runAsync(monix.execution.Scheduler)|",
+    "v1Body": [
+      "|java+method:///monix/reactive/Observable/firstL()|",
+      "|java+method:///monix/eval/Task/runAsync(monix.execution.Scheduler)|"
+    ],
+    "v2Body": [
+      "|java+method:///monix/reactive/Observable/firstOptionL()|",
+      "|java+method:///monix/eval/Task/runAsync(monix.execution.Scheduler)|"
+    ],
+    "affectedLib": "io.monix:monix-eval_sjs0.6_2.10:2.0.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.monix:monix-reactive_sjs0.6_2.10:2.0-RC3",
+    "coordinatesV2": "io.monix:monix-reactive_sjs0.6_2.10:2.0.5",
+    "caller": "|java+method:///monix/reactive/Observable$class/runAsyncGetLast(monix.reactive.Observable,monix.execution.Scheduler)|",
+    "called": "|java+method:///monix/eval/Task/runAsync(monix.execution.Scheduler)|",
+    "v1Body": [
+      "|java+method:///monix/reactive/Observable/lastL()|",
+      "|java+method:///monix/eval/Task/runAsync(monix.execution.Scheduler)|"
+    ],
+    "v2Body": [
+      "|java+method:///monix/reactive/Observable/lastOptionL()|",
+      "|java+method:///monix/eval/Task/runAsync(monix.execution.Scheduler)|"
+    ],
+    "affectedLib": "io.monix:monix-eval_sjs0.6_2.10:2.0.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.monix:monix-reactive_sjs0.6_2.10:2.0-RC3",
+    "coordinatesV2": "io.monix:monix-reactive_sjs0.6_2.10:2.0.5",
+    "caller": "|java+method:///monix/reactive/Observable$class/completedL(monix.reactive.Observable)|",
+    "called": "|java+method:///monix/eval/Task$/create(scala.Function2)|",
+    "v1Body": [
+      "|java+constructor:///monix/reactive/Observable$$anonfun$completedL$1/Observable$$anonfun$completedL$1(monix.reactive.Observable)|",
+      "|java+method:///monix/eval/Task$/unsafeCreate(scala.Function3)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///monix/reactive/Observable$$anonfun$completedL$1/Observable$$anonfun$completedL$1(monix.reactive.Observable)|",
+      "|java+method:///monix/eval/Task$/create(scala.Function2)|"
+    ],
+    "affectedLib": "io.monix:monix-eval_sjs0.6_2.10:2.0.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.monix:monix-reactive_sjs0.6_2.10:2.0-RC3",
+    "coordinatesV2": "io.monix:monix-reactive_sjs0.6_2.10:2.0.5",
+    "caller": "|java+method:///monix/reactive/Observable$class/foreachL(monix.reactive.Observable,scala.Function1)|",
+    "called": "|java+method:///monix/eval/Task$/create(scala.Function2)|",
+    "v1Body": [
+      "|java+method:///monix/eval/Task$/unsafeCreate(scala.Function3)|",
+      "|java+constructor:///monix/reactive/Observable$$anonfun$foreachL$1/Observable$$anonfun$foreachL$1(monix.reactive.Observable,scala.Function1)|"
+    ],
+    "v2Body": [
+      "|java+method:///monix/eval/Task$/create(scala.Function2)|",
+      "|java+constructor:///monix/reactive/Observable$$anonfun$foreachL$1/Observable$$anonfun$foreachL$1(monix.reactive.Observable,scala.Function1)|"
+    ],
+    "affectedLib": "io.monix:monix-eval_sjs0.6_2.10:2.0.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.monix:monix-reactive_sjs0.6_2.10:2.0-RC3",
+    "coordinatesV2": "io.monix:monix-reactive_sjs0.6_2.10:2.0.5",
+    "caller": "|java+method:///monix/reactive/subjects/BehaviorSubject/unsafeSubscribeFn(monix.reactive.observers.Subscriber)|",
+    "called": "|java+method:///monix/execution/Cancelable$/apply(scala.Function0)|",
+    "v1Body": [
+      "|java+method:///monix/execution/Scheduler/reportFailure(java.lang.Throwable)|",
+      "|java+method:///monix/reactive/observers/Subscriber/onError(java.lang.Throwable)|",
+      "|java+method:///org/sincron/atomic/AtomicAny/compareAndSet(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/sincron/atomic/AtomicAny/get()|",
+      "|java+method:///monix/reactive/subjects/BehaviorSubject$State/isDone()|",
+      "|java+constructor:///monix/reactive/subjects/BehaviorSubject$$anonfun$unsafeSubscribeFn$1/BehaviorSubject$$anonfun$unsafeSubscribeFn$1(monix.reactive.subjects.BehaviorSubject,monix.execution.Cancelable)|",
+      "|java+method:///monix/execution/CancelableFuture/onComplete(scala.Function1,scala.concurrent.ExecutionContext)|",
+      "|java+constructor:///monix/reactive/subjects/BehaviorSubject$$anonfun$1/BehaviorSubject$$anonfun$1(monix.reactive.subjects.BehaviorSubject,monix.reactive.observers.ConnectableSubscriber)|",
+      "|java+method:///monix/reactive/subjects/BehaviorSubject$State/errorThrown()|",
+      "|java+method:///monix/execution/Cancelable$/empty()|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///monix/reactive/observers/ConnectableSubscriber$/apply(monix.reactive.observers.Subscriber)|",
+      "|java+method:///monix/reactive/observers/Subscriber/scheduler()|",
+      "|java+method:///monix/reactive/observers/ConnectableSubscriber/pushFirst(java.lang.Object)|",
+      "|java+method:///monix/execution/Cancelable/cancel()|",
+      "|java+method:///scala/util/control/NonFatal$/apply(java.lang.Throwable)|",
+      "|java+method:///monix/reactive/subjects/BehaviorSubject$State/cached()|",
+      "|java+method:///monix/reactive/Observable/unsafeSubscribeFn(monix.reactive.observers.Subscriber)|",
+      "|java+method:///monix/reactive/Observable$/now(java.lang.Object)|",
+      "|java+method:///monix/reactive/observers/ConnectableSubscriber/connect()|",
+      "|java+method:///monix/reactive/subjects/BehaviorSubject$State/addNewSubscriber(monix.reactive.observers.ConnectableSubscriber)|",
+      "|java+method:///monix/execution/Cancelable$/apply(scala.Function0)|"
+    ],
+    "v2Body": [
+      "|java+method:///monix/execution/Scheduler/reportFailure(java.lang.Throwable)|",
+      "|java+method:///monix/reactive/observers/Subscriber/onError(java.lang.Throwable)|",
+      "|java+method:///monix/execution/atomic/AtomicAny/get()|",
+      "|java+method:///monix/reactive/subjects/BehaviorSubject$State/isDone()|",
+      "|java+method:///monix/execution/atomic/AtomicAny/compareAndSet(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///monix/reactive/subjects/BehaviorSubject$$anonfun$unsafeSubscribeFn$1/BehaviorSubject$$anonfun$unsafeSubscribeFn$1(monix.reactive.subjects.BehaviorSubject,monix.execution.Cancelable)|",
+      "|java+method:///monix/execution/CancelableFuture/onComplete(scala.Function1,scala.concurrent.ExecutionContext)|",
+      "|java+constructor:///monix/reactive/subjects/BehaviorSubject$$anonfun$1/BehaviorSubject$$anonfun$1(monix.reactive.subjects.BehaviorSubject,monix.reactive.observers.ConnectableSubscriber)|",
+      "|java+method:///monix/reactive/subjects/BehaviorSubject$State/errorThrown()|",
+      "|java+method:///monix/execution/Cancelable$/empty()|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///monix/reactive/observers/ConnectableSubscriber$/apply(monix.reactive.observers.Subscriber)|",
+      "|java+method:///monix/reactive/observers/Subscriber/scheduler()|",
+      "|java+method:///monix/reactive/observers/ConnectableSubscriber/pushFirst(java.lang.Object)|",
+      "|java+method:///monix/execution/Cancelable/cancel()|",
+      "|java+method:///scala/util/control/NonFatal$/apply(java.lang.Throwable)|",
+      "|java+method:///monix/reactive/subjects/BehaviorSubject$State/cached()|",
+      "|java+method:///monix/reactive/Observable/unsafeSubscribeFn(monix.reactive.observers.Subscriber)|",
+      "|java+method:///monix/reactive/Observable$/now(java.lang.Object)|",
+      "|java+method:///monix/reactive/observers/ConnectableSubscriber/connect()|",
+      "|java+method:///monix/reactive/subjects/BehaviorSubject$State/addNewSubscriber(monix.reactive.observers.ConnectableSubscriber)|",
+      "|java+method:///monix/execution/Cancelable$/apply(scala.Function0)|"
+    ],
+    "affectedLib": "io.monix:monix-execution_sjs0.6_2.10:2.0.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.monix:monix-reactive_sjs0.6_2.10:2.0-RC3",
+    "coordinatesV2": "io.monix:monix-reactive_sjs0.6_2.10:2.0.5",
+    "caller": "|java+method:///monix/reactive/internal/operators/DebounceObservable/unsafeSubscribeFn(monix.reactive.observers.Subscriber)|",
+    "called": "|java+method:///monix/execution/cancelables/CompositeCancelable$/apply(scala.collection.Seq)|",
+    "v1Body": [
+      "|java+constructor:///monix/reactive/internal/operators/DebounceObservable$$anon$1/DebounceObservable$$anon$1(monix.reactive.internal.operators.DebounceObservable,monix.reactive.observers.Subscriber,monix.execution.cancelables.MultiAssignmentCancelable,monix.execution.cancelables.SingleAssignmentCancelable)|",
+      "|java+method:///monix/execution/cancelables/CompositeCancelable$/apply(scala.collection.Seq)|",
+      "|java+method:///monix/execution/cancelables/SingleAssignmentCancelable/$colon$eq(monix.execution.Cancelable)|",
+      "|java+method:///scala/Predef$/wrapRefArray(java.lang.Object%5B%5D)|",
+      "|java+method:///monix/reactive/Observable/unsafeSubscribeFn(monix.reactive.observers.Subscriber)|",
+      "|java+method:///monix/execution/cancelables/SingleAssignmentCancelable$/apply()|",
+      "|java+method:///monix/execution/cancelables/MultiAssignmentCancelable$/apply()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///monix/reactive/internal/operators/DebounceObservable$$anon$1/DebounceObservable$$anon$1(monix.reactive.internal.operators.DebounceObservable,monix.reactive.observers.Subscriber,monix.execution.cancelables.MultiAssignmentCancelable,monix.execution.cancelables.SingleAssignmentCancelable)|",
+      "|java+method:///monix/execution/cancelables/CompositeCancelable$/apply(scala.collection.Seq)|",
+      "|java+method:///monix/execution/cancelables/SingleAssignmentCancelable/$colon$eq(monix.execution.Cancelable)|",
+      "|java+method:///monix/reactive/Observable/unsafeSubscribeFn(monix.reactive.observers.Subscriber)|",
+      "|java+method:///scala/Predef$/genericWrapArray(java.lang.Object)|",
+      "|java+method:///monix/execution/cancelables/SingleAssignmentCancelable$/apply()|",
+      "|java+method:///monix/execution/cancelables/MultiAssignmentCancelable$/apply()|"
+    ],
+    "affectedLib": "io.monix:monix-execution_sjs0.6_2.10:2.0.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.monix:monix-reactive_sjs0.6_2.10:2.0-RC3",
+    "coordinatesV2": "io.monix:monix-reactive_sjs0.6_2.10:2.0.5",
+    "caller": "|java+method:///monix/reactive/internal/operators/DelayBySelectorObservable/unsafeSubscribeFn(monix.reactive.observers.Subscriber)|",
+    "called": "|java+method:///monix/execution/cancelables/CompositeCancelable/$plus$eq(monix.execution.Cancelable)|",
+    "v1Body": [
+      "|java+method:///monix/execution/cancelables/CompositeCancelable$/apply(scala.collection.Seq)|",
+      "|java+method:///scala/Predef$/wrapRefArray(java.lang.Object%5B%5D)|",
+      "|java+method:///monix/reactive/Observable/unsafeSubscribeFn(monix.reactive.observers.Subscriber)|",
+      "|java+constructor:///monix/reactive/internal/operators/DelayBySelectorObservable$$anon$2/DelayBySelectorObservable$$anon$2(monix.reactive.internal.operators.DelayBySelectorObservable,monix.reactive.observers.Subscriber,monix.execution.cancelables.MultiAssignmentCancelable)|",
+      "|java+method:///monix/execution/cancelables/CompositeCancelable/$plus$eq(monix.execution.Cancelable)|",
+      "|java+method:///monix/execution/cancelables/MultiAssignmentCancelable$/apply()|"
+    ],
+    "v2Body": [
+      "|java+method:///monix/execution/cancelables/CompositeCancelable$/apply(scala.collection.Seq)|",
+      "|java+method:///monix/reactive/Observable/unsafeSubscribeFn(monix.reactive.observers.Subscriber)|",
+      "|java+constructor:///monix/reactive/internal/operators/DelayBySelectorObservable$$anon$2/DelayBySelectorObservable$$anon$2(monix.reactive.internal.operators.DelayBySelectorObservable,monix.reactive.observers.Subscriber,monix.execution.cancelables.MultiAssignmentCancelable)|",
+      "|java+method:///scala/Predef$/genericWrapArray(java.lang.Object)|",
+      "|java+method:///monix/execution/cancelables/CompositeCancelable/$plus$eq(monix.execution.Cancelable)|",
+      "|java+method:///monix/execution/cancelables/MultiAssignmentCancelable$/apply()|"
+    ],
+    "affectedLib": "io.monix:monix-execution_sjs0.6_2.10:2.0.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.monix:monix-reactive_sjs0.6_2.10:2.0-RC3",
+    "coordinatesV2": "io.monix:monix-reactive_sjs0.6_2.10:2.0.5",
+    "caller": "|java+method:///monix/reactive/internal/operators/DelayByTimespanObservable$$anon$1/onError(java.lang.Throwable)|",
+    "called": "|java+method:///monix/execution/cancelables/MultiAssignmentCancelable/cancel()|",
+    "v1Body": [
+      "|java+method:///monix/execution/cancelables/MultiAssignmentCancelable/cancel()|",
+      "|java+method:///org/sincron/atomic/AtomicBoolean/getAndSet(boolean)|",
+      "|java+method:///monix/reactive/observers/Subscriber/onError(java.lang.Throwable)|",
+      "|java+method:///scala/runtime/BoxesRunTime/boxToBoolean(boolean)|",
+      "|java+method:///scala/concurrent/Promise/trySuccess(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///monix/execution/cancelables/MultiAssignmentCancelable/cancel()|",
+      "|java+method:///monix/reactive/observers/Subscriber/onError(java.lang.Throwable)|",
+      "|java+method:///monix/execution/atomic/AtomicBoolean/getAndSet(boolean)|",
+      "|java+method:///scala/runtime/BoxesRunTime/boxToBoolean(boolean)|",
+      "|java+method:///scala/concurrent/Promise/trySuccess(java.lang.Object)|"
+    ],
+    "affectedLib": "io.monix:monix-execution_sjs0.6_2.10:2.0.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.monix:monix-reactive_sjs0.6_2.10:2.0-RC3",
+    "coordinatesV2": "io.monix:monix-reactive_sjs0.6_2.10:2.0.5",
+    "caller": "|java+method:///monix/reactive/internal/builders/StateActionObservable/unsafeSubscribeFn(monix.reactive.observers.Subscriber)|",
+    "called": "|java+method:///monix/execution/cancelables/BooleanCancelable$/apply()|",
+    "v1Body": [
+      "|java+constructor:///monix/reactive/internal/builders/StateActionObservable$StateRunLoop/StateActionObservable$StateRunLoop(monix.reactive.internal.builders.StateActionObservable,monix.reactive.observers.Subscriber,monix.execution.cancelables.BooleanCancelable,java.lang.Object,scala.Function1)|",
+      "|java+method:///monix/reactive/internal/builders/StateActionObservable$StateRunLoop/run()|",
+      "|java+method:///monix/execution/cancelables/BooleanCancelable$/apply()|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/util/control/NonFatal$/unapply(java.lang.Throwable)|",
+      "|java+method:///monix/reactive/observers/Subscriber/scheduler()|",
+      "|java+method:///monix/execution/Scheduler/reportFailure(java.lang.Throwable)|",
+      "|java+method:///monix/reactive/observers/Subscriber/onError(java.lang.Throwable)|",
+      "|java+method:///scala/Function0/apply()|",
+      "|java+method:///scala/Option/isEmpty()|",
+      "|java+constructor:///monix/reactive/internal/builders/StateActionObservable$StateRunLoop/StateActionObservable$StateRunLoop(monix.reactive.internal.builders.StateActionObservable,monix.reactive.observers.Subscriber,monix.execution.cancelables.BooleanCancelable,java.lang.Object,scala.Function1)|",
+      "|java+method:///monix/reactive/internal/builders/StateActionObservable$StateRunLoop/run()|",
+      "|java+method:///monix/execution/cancelables/BooleanCancelable$/apply()|",
+      "|java+method:///scala/Option/get()|",
+      "|java+method:///monix/execution/Cancelable$/empty()|"
+    ],
+    "affectedLib": "io.monix:monix-execution_sjs0.6_2.10:2.0.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.monix:monix-reactive_sjs0.6_2.10:2.0-RC3",
+    "coordinatesV2": "io.monix:monix-reactive_sjs0.6_2.10:2.0.5",
+    "caller": "|java+method:///monix/reactive/Observer$/scheduleFeedLoop$1(scala.concurrent.Promise,scala.collection.Iterator,monix.reactive.Observer,monix.execution.cancelables.BooleanCancelable,monix.execution.Scheduler)|",
+    "called": "|java+method:///monix/execution/Ack$AckExtensions$/syncTryFlatten$extension(scala.concurrent.Future,monix.execution.UncaughtExceptionReporter)|",
+    "v1Body": [
+      "|java+method:///monix/execution/Scheduler/execute(java.lang.Runnable)|",
+      "|java+method:///monix/execution/Ack$/AckExtensions(scala.concurrent.Future)|",
+      "|java+method:///monix/execution/Ack$AckExtensions$/syncTryFlatten$extension(scala.concurrent.Future,monix.execution.UncaughtExceptionReporter)|",
+      "|java+constructor:///monix/reactive/Observer$$anon$1/Observer$$anon$1(monix.reactive.Observer,monix.execution.cancelables.BooleanCancelable,monix.execution.Scheduler,scala.concurrent.Promise,scala.collection.Iterator)|",
+      "|java+method:///scala/concurrent/Promise/future()|"
+    ],
+    "v2Body": [
+      "|java+method:///monix/execution/Scheduler/execute(java.lang.Runnable)|",
+      "|java+method:///monix/execution/Ack$/AckExtensions(scala.concurrent.Future)|",
+      "|java+method:///monix/execution/Ack$AckExtensions$/syncTryFlatten$extension(scala.concurrent.Future,monix.execution.UncaughtExceptionReporter)|",
+      "|java+constructor:///monix/reactive/Observer$$anon$2/Observer$$anon$2(monix.reactive.Observer,monix.execution.cancelables.BooleanCancelable,monix.execution.Scheduler,scala.concurrent.Promise,scala.collection.Iterator)|",
+      "|java+method:///scala/concurrent/Promise/future()|"
+    ],
+    "affectedLib": "io.monix:monix-execution_sjs0.6_2.10:2.0.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.monix:monix-reactive_sjs0.6_2.10:2.0-RC3",
+    "coordinatesV2": "io.monix:monix-reactive_sjs0.6_2.10:2.0.5",
+    "caller": "|java+method:///monix/reactive/observables/RefCountObservable/monix$reactive$observables$RefCountObservable$$countDownToConnectionCancel()|",
+    "called": "|java+method:///monix/execution/atomic/AtomicInt/get()|",
+    "v1Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///org/sincron/atomic/AtomicInt/compareAndSet(int,int)|",
+      "|java+method:///monix/execution/Cancelable/cancel()|",
+      "|java+method:///monix/reactive/observables/RefCountObservable/connection()|",
+      "|java+method:///scala/Predef$/wrapRefArray(java.lang.Object%5B%5D)|",
+      "|java+constructor:///scala/StringContext/StringContext(scala.collection.Seq)|",
+      "|java+method:///scala/runtime/BoxesRunTime/boxToInteger(int)|",
+      "|java+method:///scala/StringContext/s(scala.collection.Seq)|",
+      "|java+method:///org/sincron/atomic/AtomicInt/get()|",
+      "|java+method:///scala/Predef$/genericWrapArray(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///monix/execution/Cancelable/cancel()|",
+      "|java+method:///monix/reactive/observables/RefCountObservable/connection()|",
+      "|java+method:///scala/Predef$/wrapRefArray(java.lang.Object%5B%5D)|",
+      "|java+method:///monix/execution/atomic/AtomicInt/get()|",
+      "|java+method:///monix/execution/atomic/AtomicInt/compareAndSet(int,int)|",
+      "|java+constructor:///scala/StringContext/StringContext(scala.collection.Seq)|",
+      "|java+method:///scala/runtime/BoxesRunTime/boxToInteger(int)|",
+      "|java+method:///scala/Predef$/genericWrapArray(java.lang.Object)|",
+      "|java+method:///scala/StringContext/s(scala.collection.Seq)|"
+    ],
+    "affectedLib": "io.monix:monix-execution_sjs0.6_2.10:2.0.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.monix:monix-reactive_sjs0.6_2.10:2.0-RC3",
+    "coordinatesV2": "io.monix:monix-reactive_sjs0.6_2.10:2.0.5",
+    "caller": "|java+method:///monix/reactive/internal/operators/DownstreamTimeoutObservable/unsafeSubscribeFn(monix.reactive.observers.Subscriber)|",
+    "called": "|java+method:///monix/execution/cancelables/CompositeCancelable$/apply(scala.collection.Seq)|",
+    "v1Body": [
+      "|java+method:///monix/execution/cancelables/SingleAssignmentCancelable/$colon$eq(monix.execution.Cancelable)|",
+      "|java+method:///scala/Predef$/wrapRefArray(java.lang.Object%5B%5D)|",
+      "|java+method:///monix/reactive/Observable/unsafeSubscribeFn(monix.reactive.observers.Subscriber)|",
+      "|java+method:///monix/execution/cancelables/SingleAssignmentCancelable$/apply()|",
+      "|java+method:///monix/execution/cancelables/MultiAssignmentCancelable$/apply()|",
+      "|java+constructor:///monix/reactive/internal/operators/DownstreamTimeoutObservable$$anon$1/DownstreamTimeoutObservable$$anon$1(monix.reactive.internal.operators.DownstreamTimeoutObservable,monix.reactive.observers.Subscriber,monix.execution.cancelables.MultiAssignmentCancelable,monix.execution.cancelables.SingleAssignmentCancelable)|",
+      "|java+method:///monix/execution/cancelables/CompositeCancelable$/apply(scala.collection.Seq)|"
+    ],
+    "v2Body": [
+      "|java+method:///monix/execution/cancelables/SingleAssignmentCancelable/$colon$eq(monix.execution.Cancelable)|",
+      "|java+method:///monix/reactive/Observable/unsafeSubscribeFn(monix.reactive.observers.Subscriber)|",
+      "|java+method:///scala/Predef$/genericWrapArray(java.lang.Object)|",
+      "|java+method:///monix/execution/cancelables/SingleAssignmentCancelable$/apply()|",
+      "|java+method:///monix/execution/cancelables/MultiAssignmentCancelable$/apply()|",
+      "|java+constructor:///monix/reactive/internal/operators/DownstreamTimeoutObservable$$anon$1/DownstreamTimeoutObservable$$anon$1(monix.reactive.internal.operators.DownstreamTimeoutObservable,monix.reactive.observers.Subscriber,monix.execution.cancelables.MultiAssignmentCancelable,monix.execution.cancelables.SingleAssignmentCancelable)|",
+      "|java+method:///monix/execution/cancelables/CompositeCancelable$/apply(scala.collection.Seq)|"
+    ],
+    "affectedLib": "io.monix:monix-execution_sjs0.6_2.10:2.0.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.monix:monix-reactive_sjs0.6_2.10:2.0-RC3",
+    "coordinatesV2": "io.monix:monix-reactive_sjs0.6_2.10:2.0.5",
+    "caller": "|java+method:///monix/reactive/internal/operators/MergeMapObservable$$anon$1$$anon$2/onError(java.lang.Throwable)|",
+    "called": "|java+method:///monix/execution/cancelables/CompositeCancelable/cancel()|",
+    "v1Body": [
+      "|java+method:///scala/collection/mutable/ArrayBuffer/$plus$eq(java.lang.Object)|",
+      "|java+method:///monix/execution/cancelables/CompositeCancelable/cancel()|",
+      "|java+method:///org/sincron/atomic/AtomicBoolean/getAndSet(boolean)|",
+      "|java+method:///monix/execution/Cancelable/cancel()|",
+      "|java+method:///monix/reactive/observers/Subscriber/onError(java.lang.Throwable)|",
+      "|java+method:///monix/reactive/internal/operators/MergeMapObservable$$anon$1/monix$reactive$internal$operators$MergeMapObservable$$anon$$$outer()|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/collection/mutable/ArrayBuffer/$plus$eq(java.lang.Object)|",
+      "|java+method:///monix/execution/cancelables/CompositeCancelable/cancel()|",
+      "|java+method:///monix/execution/Cancelable/cancel()|",
+      "|java+method:///monix/reactive/observers/Subscriber/onError(java.lang.Throwable)|",
+      "|java+method:///monix/execution/atomic/AtomicBoolean/getAndSet(boolean)|",
+      "|java+method:///monix/reactive/internal/operators/MergeMapObservable$$anon$1/monix$reactive$internal$operators$MergeMapObservable$$anon$$$outer()|"
+    ],
+    "affectedLib": "io.monix:monix-execution_sjs0.6_2.10:2.0.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.monix:monix-reactive_sjs0.6_2.10:2.0-RC3",
+    "coordinatesV2": "io.monix:monix-reactive_sjs0.6_2.10:2.0.5",
+    "caller": "|java+method:///monix/reactive/internal/operators/DelayByTimespanObservable/unsafeSubscribeFn(monix.reactive.observers.Subscriber)|",
+    "called": "|java+method:///monix/execution/cancelables/CompositeCancelable/$plus$eq(monix.execution.Cancelable)|",
+    "v1Body": [
+      "|java+method:///monix/execution/cancelables/CompositeCancelable$/apply(scala.collection.Seq)|",
+      "|java+method:///monix/reactive/Observable/unsafeSubscribeFn(monix.reactive.observers.Subscriber)|",
+      "|java+method:///scala/Predef$/wrapRefArray(java.lang.Object%5B%5D)|",
+      "|java+constructor:///monix/reactive/internal/operators/DelayByTimespanObservable$$anon$1/DelayByTimespanObservable$$anon$1(monix.reactive.internal.operators.DelayByTimespanObservable,monix.reactive.observers.Subscriber,monix.execution.cancelables.MultiAssignmentCancelable)|",
+      "|java+method:///monix/execution/cancelables/CompositeCancelable/$plus$eq(monix.execution.Cancelable)|",
+      "|java+method:///monix/execution/cancelables/MultiAssignmentCancelable$/apply()|"
+    ],
+    "v2Body": [
+      "|java+method:///monix/execution/cancelables/CompositeCancelable$/apply(scala.collection.Seq)|",
+      "|java+constructor:///monix/reactive/internal/operators/DelayByTimespanObservable$$anon$1/DelayByTimespanObservable$$anon$1(monix.reactive.internal.operators.DelayByTimespanObservable,monix.reactive.observers.Subscriber,monix.execution.cancelables.MultiAssignmentCancelable)|",
+      "|java+method:///monix/reactive/Observable/unsafeSubscribeFn(monix.reactive.observers.Subscriber)|",
+      "|java+method:///scala/Predef$/genericWrapArray(java.lang.Object)|",
+      "|java+method:///monix/execution/cancelables/CompositeCancelable/$plus$eq(monix.execution.Cancelable)|",
+      "|java+method:///monix/execution/cancelables/MultiAssignmentCancelable$/apply()|"
+    ],
+    "affectedLib": "io.monix:monix-execution_sjs0.6_2.10:2.0.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.monix:monix-reactive_sjs0.6_2.10:2.0-RC3",
+    "coordinatesV2": "io.monix:monix-reactive_sjs0.6_2.10:2.0.5",
+    "caller": "|java+method:///monix/reactive/internal/operators/MergeMapObservable$$anon$1/monix$reactive$internal$operators$MergeMapObservable$$anon$$cancelUpstream()|",
+    "called": "|java+method:///monix/execution/cancelables/CompositeCancelable/cancel()|",
+    "v1Body": [
+      "|java+method:///monix/execution/cancelables/CompositeCancelable/cancel()|",
+      "|java+method:///org/sincron/atomic/AtomicBoolean/getAndSet(boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///monix/execution/cancelables/CompositeCancelable/cancel()|",
+      "|java+method:///monix/execution/atomic/AtomicBoolean/getAndSet(boolean)|"
+    ],
+    "affectedLib": "io.monix:monix-execution_sjs0.6_2.10:2.0.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.monix:monix-reactive_sjs0.6_2.10:2.0-RC3",
+    "coordinatesV2": "io.monix:monix-reactive_sjs0.6_2.10:2.0.5",
+    "caller": "|java+method:///monix/reactive/internal/operators/RepeatObservable/unsafeSubscribeFn(monix.reactive.observers.Subscriber)|",
+    "called": "|java+method:///monix/execution/cancelables/CompositeCancelable$/apply(scala.collection.Seq)|",
+    "v1Body": [
+      "|java+method:///monix/reactive/observers/Subscriber/scheduler()|",
+      "|java+method:///monix/reactive/internal/operators/RepeatObservable/loop(monix.reactive.subjects.Subject,monix.reactive.observers.Subscriber,monix.execution.cancelables.MultiAssignmentCancelable,long)|",
+      "|java+method:///monix/execution/cancelables/CompositeCancelable$/apply(scala.collection.Seq)|",
+      "|java+method:///scala/Predef$/wrapRefArray(java.lang.Object%5B%5D)|",
+      "|java+method:///monix/reactive/Observable/unsafeSubscribeFn(monix.reactive.observers.Subscriber)|",
+      "|java+method:///monix/execution/cancelables/MultiAssignmentCancelable$/apply()|",
+      "|java+method:///monix/reactive/observers/Subscriber$/apply(monix.reactive.Observer,monix.execution.Scheduler)|",
+      "|java+method:///monix/reactive/subjects/ReplaySubject$/apply(scala.collection.Seq)|"
+    ],
+    "v2Body": [
+      "|java+method:///monix/reactive/observers/Subscriber/scheduler()|",
+      "|java+method:///monix/reactive/internal/operators/RepeatObservable/loop(monix.reactive.subjects.Subject,monix.reactive.observers.Subscriber,monix.execution.cancelables.MultiAssignmentCancelable,long)|",
+      "|java+method:///monix/execution/cancelables/CompositeCancelable$/apply(scala.collection.Seq)|",
+      "|java+method:///monix/reactive/Observable/unsafeSubscribeFn(monix.reactive.observers.Subscriber)|",
+      "|java+method:///scala/Predef$/genericWrapArray(java.lang.Object)|",
+      "|java+method:///monix/execution/cancelables/MultiAssignmentCancelable$/apply()|",
+      "|java+method:///monix/reactive/observers/Subscriber$/apply(monix.reactive.Observer,monix.execution.Scheduler)|",
+      "|java+method:///monix/reactive/subjects/ReplaySubject$/apply(scala.collection.Seq)|"
+    ],
+    "affectedLib": "io.monix:monix-execution_sjs0.6_2.10:2.0.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.monix:monix-reactive_sjs0.6_2.10:2.0-RC3",
+    "coordinatesV2": "io.monix:monix-reactive_sjs0.6_2.10:2.0.5",
+    "caller": "|java+method:///monix/reactive/internal/operators/GroupByOperator$$anon$1/onNext(java.lang.Object)|",
+    "called": "|java+method:///monix/execution/Cancelable$/apply(scala.Function0)|",
+    "v1Body": [
+      "|java+method:///scala/concurrent/Future/map(scala.Function1,scala.concurrent.ExecutionContext)|",
+      "|java+method:///monix/reactive/internal/operators/GroupByOperator$$anon$1/monix$reactive$internal$operators$GroupByOperator$$anon$$completeAll()|",
+      "|java+method:///scala/util/control/NonFatal$/unapply(java.lang.Throwable)|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///monix/execution/Scheduler/reportFailure(java.lang.Throwable)|",
+      "|java+method:///org/sincron/atomic/AtomicAny/compareAndSet(java.lang.Object,java.lang.Object)|",
+      "|java+method:///scala/collection/Seq/nonEmpty()|",
+      "|java+method:///monix/reactive/internal/operators/GroupByOperator$$anon$1/monix$reactive$internal$operators$GroupByOperator$$anon$$retryOnNext(java.lang.Object)|",
+      "|java+method:///monix/reactive/internal/operators/GroupByOperator$$anon$1/onError(java.lang.Throwable)|",
+      "|java+constructor:///monix/reactive/internal/operators/GroupByOperator$$anon$1$$anonfun$1/GroupByOperator$$anon$1$$anonfun$1(monix.reactive.internal.operators.GroupByOperator$$anon$1,java.lang.Object)|",
+      "|java+constructor:///monix/reactive/internal/operators/GroupByOperator$$anon$1$$anonfun$2/GroupByOperator$$anon$1$$anonfun$2(monix.reactive.internal.operators.GroupByOperator$$anon$1,java.lang.Object)|",
+      "|java+method:///scala/util/control/NonFatal$/apply(java.lang.Throwable)|",
+      "|java+method:///scala/Tuple2/_1()|",
+      "|java+method:///scala/Tuple2/_2()|",
+      "|java+method:///monix/reactive/internal/operators/GroupByOperator$$anon$1/scheduler()|",
+      "|java+method:///monix/reactive/observers/Subscriber/onNext(java.lang.Object)|",
+      "|java+method:///scala/Option/isEmpty()|",
+      "|java+constructor:///monix/reactive/internal/operators/GroupByOperator$$anon$1$$anonfun$3/GroupByOperator$$anon$1$$anonfun$3(monix.reactive.internal.operators.GroupByOperator$$anon$1)|",
+      "|java+method:///scala/collection/immutable/Map/apply(java.lang.Object)|",
+      "|java+method:///scala/collection/immutable/Map/updated(java.lang.Object,java.lang.Object)|",
+      "|java+method:///monix/reactive/Observer/onNext(java.lang.Object)|",
+      "|java+method:///scala/collection/immutable/Map/contains(java.lang.Object)|",
+      "|java+constructor:///monix/reactive/exceptions/CompositeException/CompositeException(scala.collection.Seq)|",
+      "|java+method:///org/sincron/atomic/AtomicAny/get()|",
+      "|java+constructor:///scala/MatchError/MatchError(java.lang.Object)|",
+      "|java+method:///monix/execution/Cancelable$/apply(scala.Function0)|",
+      "|java+method:///monix/reactive/observables/GroupedObservable$/broadcast(java.lang.Object,monix.execution.Cancelable,monix.execution.Scheduler)|",
+      "|java+method:///scala/Function1/apply(java.lang.Object)|",
+      "|java+constructor:///monix/reactive/internal/operators/GroupByOperator$$anon$1$$anonfun$4/GroupByOperator$$anon$1$$anonfun$4(monix.reactive.internal.operators.GroupByOperator$$anon$1,java.lang.Object,monix.reactive.observers.Subscriber)|",
+      "|java+method:///scala/concurrent/Future/flatMap(scala.Function1,scala.concurrent.ExecutionContext)|",
+      "|java+constructor:///scala/Tuple2/Tuple2(java.lang.Object,java.lang.Object)|",
+      "|java+method:///scala/Option/get()|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/concurrent/Future/map(scala.Function1,scala.concurrent.ExecutionContext)|",
+      "|java+method:///monix/reactive/internal/operators/GroupByOperator$$anon$1/monix$reactive$internal$operators$GroupByOperator$$anon$$completeAll()|",
+      "|java+method:///scala/util/control/NonFatal$/unapply(java.lang.Throwable)|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///monix/execution/Scheduler/reportFailure(java.lang.Throwable)|",
+      "|java+method:///monix/execution/atomic/AtomicAny/get()|",
+      "|java+constructor:///monix/reactive/exceptions/CompositeException/CompositeException(scala.collection.Seq)|",
+      "|java+method:///scala/collection/Seq/nonEmpty()|",
+      "|java+method:///monix/execution/atomic/AtomicAny/compareAndSet(java.lang.Object,java.lang.Object)|",
+      "|java+method:///monix/reactive/internal/operators/GroupByOperator$$anon$1/monix$reactive$internal$operators$GroupByOperator$$anon$$retryOnNext(java.lang.Object)|",
+      "|java+method:///monix/reactive/internal/operators/GroupByOperator$$anon$1/onError(java.lang.Throwable)|",
+      "|java+constructor:///monix/reactive/internal/operators/GroupByOperator$$anon$1$$anonfun$1/GroupByOperator$$anon$1$$anonfun$1(monix.reactive.internal.operators.GroupByOperator$$anon$1,java.lang.Object)|",
+      "|java+constructor:///monix/reactive/internal/operators/GroupByOperator$$anon$1$$anonfun$2/GroupByOperator$$anon$1$$anonfun$2(monix.reactive.internal.operators.GroupByOperator$$anon$1,java.lang.Object)|",
+      "|java+method:///scala/util/control/NonFatal$/apply(java.lang.Throwable)|",
+      "|java+method:///scala/Tuple2/_1()|",
+      "|java+method:///scala/Tuple2/_2()|",
+      "|java+method:///monix/reactive/internal/operators/GroupByOperator$$anon$1/scheduler()|",
+      "|java+method:///monix/reactive/observers/Subscriber/onNext(java.lang.Object)|",
+      "|java+method:///scala/Option/isEmpty()|",
+      "|java+constructor:///monix/reactive/internal/operators/GroupByOperator$$anon$1$$anonfun$3/GroupByOperator$$anon$1$$anonfun$3(monix.reactive.internal.operators.GroupByOperator$$anon$1)|",
+      "|java+method:///scala/collection/immutable/Map/apply(java.lang.Object)|",
+      "|java+method:///scala/collection/immutable/Map/updated(java.lang.Object,java.lang.Object)|",
+      "|java+method:///monix/reactive/Observer/onNext(java.lang.Object)|",
+      "|java+method:///scala/collection/immutable/Map/contains(java.lang.Object)|",
+      "|java+constructor:///scala/MatchError/MatchError(java.lang.Object)|",
+      "|java+method:///monix/execution/Cancelable$/apply(scala.Function0)|",
+      "|java+method:///monix/reactive/observables/GroupedObservable$/broadcast(java.lang.Object,monix.execution.Cancelable,monix.execution.Scheduler)|",
+      "|java+method:///scala/Function1/apply(java.lang.Object)|",
+      "|java+constructor:///monix/reactive/internal/operators/GroupByOperator$$anon$1$$anonfun$4/GroupByOperator$$anon$1$$anonfun$4(monix.reactive.internal.operators.GroupByOperator$$anon$1,java.lang.Object,monix.reactive.observers.Subscriber)|",
+      "|java+method:///scala/concurrent/Future/flatMap(scala.Function1,scala.concurrent.ExecutionContext)|",
+      "|java+constructor:///scala/Tuple2/Tuple2(java.lang.Object,java.lang.Object)|",
+      "|java+method:///scala/Option/get()|"
+    ],
+    "affectedLib": "io.monix:monix-execution_sjs0.6_2.10:2.0.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.monix:monix-reactive_sjs0.6_2.10:2.0-RC3",
+    "coordinatesV2": "io.monix:monix-reactive_sjs0.6_2.10:2.0.5",
+    "caller": "|java+method:///monix/reactive/internal/operators/DelayByTimespanObservable$$anon$1/onComplete()|",
+    "called": "|java+method:///monix/execution/Ack$AckExtensions$/syncTryFlatten$extension(scala.concurrent.Future,monix.execution.UncaughtExceptionReporter)|",
+    "v1Body": [
+      "|java+method:///scala/concurrent/Promise/future()|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///monix/execution/Ack$/AckExtensions(scala.concurrent.Future)|",
+      "|java+method:///monix/execution/Scheduler/reportFailure(java.lang.Throwable)|",
+      "|java+method:///scala/util/control/NonFatal$/apply(java.lang.Throwable)|",
+      "|java+constructor:///monix/reactive/internal/operators/DelayByTimespanObservable$$anon$1$$anonfun$onComplete$1/DelayByTimespanObservable$$anon$1$$anonfun$onComplete$1(monix.reactive.internal.operators.DelayByTimespanObservable$$anon$1)|",
+      "|java+method:///scala/concurrent/Future/onComplete(scala.Function1,scala.concurrent.ExecutionContext)|",
+      "|java+method:///monix/execution/Ack$AckExtensions$/syncTryFlatten$extension(scala.concurrent.Future,monix.execution.UncaughtExceptionReporter)|",
+      "|java+method:///monix/reactive/observers/Subscriber/onComplete()|",
+      "|java+method:///org/sincron/atomic/AtomicBoolean/getAndSet(boolean)|",
+      "|java+method:///monix/reactive/internal/operators/DelayByTimespanObservable$$anon$1/scheduler()|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/concurrent/Promise/future()|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///monix/execution/Ack$/AckExtensions(scala.concurrent.Future)|",
+      "|java+method:///monix/execution/Scheduler/reportFailure(java.lang.Throwable)|",
+      "|java+method:///scala/util/control/NonFatal$/apply(java.lang.Throwable)|",
+      "|java+constructor:///monix/reactive/internal/operators/DelayByTimespanObservable$$anon$1$$anonfun$onComplete$1/DelayByTimespanObservable$$anon$1$$anonfun$onComplete$1(monix.reactive.internal.operators.DelayByTimespanObservable$$anon$1)|",
+      "|java+method:///scala/concurrent/Future/onComplete(scala.Function1,scala.concurrent.ExecutionContext)|",
+      "|java+method:///monix/execution/atomic/AtomicBoolean/getAndSet(boolean)|",
+      "|java+method:///monix/execution/Ack$AckExtensions$/syncTryFlatten$extension(scala.concurrent.Future,monix.execution.UncaughtExceptionReporter)|",
+      "|java+method:///monix/reactive/observers/Subscriber/onComplete()|",
+      "|java+method:///monix/reactive/internal/operators/DelayByTimespanObservable$$anon$1/scheduler()|"
+    ],
+    "affectedLib": "io.monix:monix-execution_sjs0.6_2.10:2.0.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.monix:monix-reactive_sjs0.6_2.10:2.0-RC3",
+    "coordinatesV2": "io.monix:monix-reactive_sjs0.6_2.10:2.0.5",
+    "caller": "|java+method:///monix/reactive/subjects/ReplaySubject/unsafeSubscribeFn(monix.reactive.observers.Subscriber)|",
+    "called": "|java+method:///monix/execution/Cancelable$/apply(scala.Function0)|",
+    "v1Body": [
+      "|java+constructor:///monix/reactive/subjects/ReplaySubject$$anonfun$unsafeSubscribeFn$1/ReplaySubject$$anonfun$unsafeSubscribeFn$1(monix.reactive.subjects.ReplaySubject,monix.reactive.observers.ConnectableSubscriber,monix.execution.CancelableFuture)|",
+      "|java+method:///monix/reactive/subjects/ReplaySubject/streamOnDone$1(scala.collection.Iterable,java.lang.Throwable,monix.reactive.observers.Subscriber)|",
+      "|java+method:///scala/util/control/NonFatal$/apply(java.lang.Throwable)|",
+      "|java+method:///monix/reactive/subjects/ReplaySubject$State/addNewSubscriber(monix.reactive.observers.ConnectableSubscriber)|",
+      "|java+method:///monix/reactive/observers/ConnectableSubscriber/connect()|",
+      "|java+method:///org/sincron/atomic/AtomicAny/compareAndSet(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/sincron/atomic/AtomicAny/get()|",
+      "|java+method:///monix/execution/Cancelable$/apply(scala.Function0)|",
+      "|java+method:///monix/reactive/observers/ConnectableSubscriber/pushFirstAll(scala.collection.TraversableOnce)|",
+      "|java+method:///monix/execution/CancelableFuture/onComplete(scala.Function1,scala.concurrent.ExecutionContext)|",
+      "|java+method:///monix/reactive/subjects/ReplaySubject$State/buffer()|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///monix/reactive/observers/ConnectableSubscriber$/apply(monix.reactive.observers.Subscriber)|",
+      "|java+method:///monix/reactive/observers/Subscriber/scheduler()|",
+      "|java+method:///monix/execution/Scheduler/reportFailure(java.lang.Throwable)|",
+      "|java+constructor:///monix/reactive/subjects/ReplaySubject$$anonfun$unsafeSubscribeFn$2/ReplaySubject$$anonfun$unsafeSubscribeFn$2(monix.reactive.subjects.ReplaySubject,monix.reactive.observers.ConnectableSubscriber)|",
+      "|java+method:///monix/reactive/subjects/ReplaySubject/monix$reactive$subjects$ReplaySubject$$removeSubscriber(monix.reactive.observers.ConnectableSubscriber)|",
+      "|java+method:///monix/reactive/subjects/ReplaySubject$State/errorThrown()|",
+      "|java+method:///monix/reactive/subjects/ReplaySubject$State/isDone()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///monix/reactive/subjects/ReplaySubject$$anonfun$unsafeSubscribeFn$1/ReplaySubject$$anonfun$unsafeSubscribeFn$1(monix.reactive.subjects.ReplaySubject,monix.reactive.observers.ConnectableSubscriber,monix.execution.CancelableFuture)|",
+      "|java+method:///monix/reactive/subjects/ReplaySubject/streamOnDone$1(scala.collection.Iterable,java.lang.Throwable,monix.reactive.observers.Subscriber)|",
+      "|java+method:///scala/util/control/NonFatal$/apply(java.lang.Throwable)|",
+      "|java+method:///monix/reactive/subjects/ReplaySubject$State/addNewSubscriber(monix.reactive.observers.ConnectableSubscriber)|",
+      "|java+method:///monix/reactive/observers/ConnectableSubscriber/connect()|",
+      "|java+method:///monix/execution/Cancelable$/apply(scala.Function0)|",
+      "|java+method:///monix/execution/atomic/AtomicAny/compareAndSet(java.lang.Object,java.lang.Object)|",
+      "|java+method:///monix/reactive/observers/ConnectableSubscriber/pushFirstAll(scala.collection.TraversableOnce)|",
+      "|java+method:///monix/execution/CancelableFuture/onComplete(scala.Function1,scala.concurrent.ExecutionContext)|",
+      "|java+method:///monix/reactive/subjects/ReplaySubject$State/buffer()|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///monix/reactive/observers/ConnectableSubscriber$/apply(monix.reactive.observers.Subscriber)|",
+      "|java+method:///monix/reactive/observers/Subscriber/scheduler()|",
+      "|java+method:///monix/execution/Scheduler/reportFailure(java.lang.Throwable)|",
+      "|java+constructor:///monix/reactive/subjects/ReplaySubject$$anonfun$unsafeSubscribeFn$2/ReplaySubject$$anonfun$unsafeSubscribeFn$2(monix.reactive.subjects.ReplaySubject,monix.reactive.observers.ConnectableSubscriber)|",
+      "|java+method:///monix/reactive/subjects/ReplaySubject/monix$reactive$subjects$ReplaySubject$$removeSubscriber(monix.reactive.observers.ConnectableSubscriber)|",
+      "|java+method:///monix/reactive/subjects/ReplaySubject$State/errorThrown()|",
+      "|java+method:///monix/reactive/subjects/ReplaySubject$State/isDone()|",
+      "|java+method:///monix/execution/atomic/AtomicAny/get()|"
+    ],
+    "affectedLib": "io.monix:monix-execution_sjs0.6_2.10:2.0.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.monix:monix-reactive_sjs0.6_2.10:2.0-RC3",
+    "coordinatesV2": "io.monix:monix-reactive_sjs0.6_2.10:2.0.5",
+    "caller": "|java+method:///monix/reactive/internal/operators/MergeMapObservable$$anon$1/onError(java.lang.Throwable)|",
+    "called": "|java+method:///monix/execution/cancelables/CompositeCancelable/cancel()|",
+    "v1Body": [
+      "|java+method:///scala/collection/mutable/ArrayBuffer/$plus$eq(java.lang.Object)|",
+      "|java+method:///monix/execution/cancelables/CompositeCancelable/cancel()|",
+      "|java+method:///org/sincron/atomic/AtomicBoolean/getAndSet(boolean)|",
+      "|java+method:///monix/reactive/observers/Subscriber/onError(java.lang.Throwable)|",
+      "|java+method:///monix/reactive/internal/operators/MergeMapObservable$$anon$1/onComplete()|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/collection/mutable/ArrayBuffer/$plus$eq(java.lang.Object)|",
+      "|java+method:///monix/execution/cancelables/CompositeCancelable/cancel()|",
+      "|java+method:///monix/reactive/observers/Subscriber/onError(java.lang.Throwable)|",
+      "|java+method:///monix/execution/atomic/AtomicBoolean/getAndSet(boolean)|",
+      "|java+method:///monix/reactive/internal/operators/MergeMapObservable$$anon$1/onComplete()|"
+    ],
+    "affectedLib": "io.monix:monix-execution_sjs0.6_2.10:2.0.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.monix:monix-reactive_sjs0.6_2.10:2.0-RC3",
+    "coordinatesV2": "io.monix:monix-reactive_sjs0.6_2.10:2.0.5",
+    "caller": "|java+method:///monix/reactive/internal/operators/DropUntilObservable/unsafeSubscribeFn(monix.reactive.observers.Subscriber)|",
+    "called": "|java+method:///monix/execution/cancelables/CompositeCancelable/$plus$eq(monix.execution.Cancelable)|",
+    "v1Body": [
+      "|java+constructor:///monix/reactive/internal/operators/DropUntilObservable$$anon$2/DropUntilObservable$$anon$2(monix.reactive.internal.operators.DropUntilObservable,monix.reactive.observers.Subscriber,monix.execution.cancelables.SingleAssignmentCancelable)|",
+      "|java+method:///monix/execution/cancelables/CompositeCancelable$/apply(scala.collection.Seq)|",
+      "|java+method:///scala/Predef$/wrapRefArray(java.lang.Object%5B%5D)|",
+      "|java+method:///monix/reactive/Observable/unsafeSubscribeFn(monix.reactive.observers.Subscriber)|",
+      "|java+method:///monix/execution/cancelables/SingleAssignmentCancelable$/apply()|",
+      "|java+method:///monix/execution/cancelables/CompositeCancelable/$plus$eq(monix.execution.Cancelable)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///monix/reactive/internal/operators/DropUntilObservable$$anon$2/DropUntilObservable$$anon$2(monix.reactive.internal.operators.DropUntilObservable,monix.reactive.observers.Subscriber,monix.execution.cancelables.SingleAssignmentCancelable)|",
+      "|java+method:///monix/execution/cancelables/CompositeCancelable$/apply(scala.collection.Seq)|",
+      "|java+method:///monix/reactive/Observable/unsafeSubscribeFn(monix.reactive.observers.Subscriber)|",
+      "|java+method:///scala/Predef$/genericWrapArray(java.lang.Object)|",
+      "|java+method:///monix/execution/cancelables/SingleAssignmentCancelable$/apply()|",
+      "|java+method:///monix/execution/cancelables/CompositeCancelable/$plus$eq(monix.execution.Cancelable)|"
+    ],
+    "affectedLib": "io.monix:monix-execution_sjs0.6_2.10:2.0.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.monix:monix-reactive_sjs0.6_2.10:2.0-RC3",
+    "coordinatesV2": "io.monix:monix-reactive_sjs0.6_2.10:2.0.5",
+    "caller": "|java+method:///monix/reactive/internal/operators/SwitchMapObservable/unsafeSubscribeFn(monix.reactive.observers.Subscriber)|",
+    "called": "|java+method:///monix/execution/cancelables/CompositeCancelable$/apply(scala.collection.Seq)|",
+    "v1Body": [
+      "|java+constructor:///monix/reactive/internal/operators/SwitchMapObservable$$anon$1/SwitchMapObservable$$anon$1(monix.reactive.internal.operators.SwitchMapObservable,monix.reactive.observers.Subscriber,monix.execution.cancelables.SerialCancelable,monix.execution.cancelables.SingleAssignmentCancelable,monix.execution.cancelables.CompositeCancelable)|",
+      "|java+method:///monix/execution/cancelables/CompositeCancelable$/apply(scala.collection.Seq)|",
+      "|java+method:///monix/execution/cancelables/SingleAssignmentCancelable/$colon$eq(monix.execution.Cancelable)|",
+      "|java+method:///scala/Predef$/wrapRefArray(java.lang.Object%5B%5D)|",
+      "|java+method:///monix/reactive/Observable/unsafeSubscribeFn(monix.reactive.observers.Subscriber)|",
+      "|java+method:///monix/execution/cancelables/SingleAssignmentCancelable$/apply()|",
+      "|java+method:///monix/execution/cancelables/SerialCancelable$/apply()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///monix/reactive/internal/operators/SwitchMapObservable$$anon$1/SwitchMapObservable$$anon$1(monix.reactive.internal.operators.SwitchMapObservable,monix.reactive.observers.Subscriber,monix.execution.cancelables.SerialCancelable,monix.execution.cancelables.SingleAssignmentCancelable,monix.execution.cancelables.CompositeCancelable)|",
+      "|java+method:///monix/execution/cancelables/CompositeCancelable$/apply(scala.collection.Seq)|",
+      "|java+method:///monix/execution/cancelables/SingleAssignmentCancelable/$colon$eq(monix.execution.Cancelable)|",
+      "|java+method:///monix/reactive/Observable/unsafeSubscribeFn(monix.reactive.observers.Subscriber)|",
+      "|java+method:///scala/Predef$/genericWrapArray(java.lang.Object)|",
+      "|java+method:///monix/execution/cancelables/SingleAssignmentCancelable$/apply()|",
+      "|java+method:///monix/execution/cancelables/SerialCancelable$/apply()|"
+    ],
+    "affectedLib": "io.monix:monix-execution_sjs0.6_2.10:2.0.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.monix:monix-reactive_sjs0.6_2.10:2.0-RC3",
+    "coordinatesV2": "io.monix:monix-reactive_sjs0.6_2.10:2.0.5",
+    "caller": "|java+constructor:///monix/reactive/internal/operators/MergeMapObservable$$anon$1/MergeMapObservable$$anon$1(monix.reactive.internal.operators.MergeMapObservable,monix.reactive.observers.Subscriber,monix.execution.cancelables.CompositeCancelable)|",
+    "called": "|java+method:///monix/execution/cancelables/RefCountCancelable$/apply(scala.Function0)|",
+    "v1Body": [
+      "|java+method:///monix/execution/cancelables/RefCountCancelable$/apply(scala.Function0)|",
+      "|java+method:///org/sincron/atomic/AtomicBuilder$/AtomicBooleanBuilder()|",
+      "|java+method:///monix/reactive/observers/Subscriber/scheduler()|",
+      "|java+method:///org/sincron/atomic/AtomicBuilder/buildInstance(java.lang.Object,org.sincron.atomic.PaddingStrategy)|",
+      "|java+method:///scala/runtime/BoxesRunTime/boxToBoolean(boolean)|",
+      "|java+method:///scala/collection/mutable/ArrayBuffer$/empty()|",
+      "|java+constructor:///monix/reactive/internal/operators/MergeMapObservable$$anon$1$$anonfun$1/MergeMapObservable$$anon$1$$anonfun$1(monix.reactive.internal.operators.MergeMapObservable$$anon$1)|",
+      "|java+constructor:///java/lang/NullPointerException/NullPointerException()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///monix/reactive/observers/BufferedSubscriber$/apply(monix.reactive.observers.Subscriber,monix.reactive.OverflowStrategy)|"
+    ],
+    "v2Body": [
+      "|java+method:///monix/execution/cancelables/RefCountCancelable$/apply(scala.Function0)|",
+      "|java+method:///monix/reactive/observers/Subscriber/scheduler()|",
+      "|java+method:///scala/runtime/BoxesRunTime/boxToBoolean(boolean)|",
+      "|java+method:///monix/execution/atomic/AtomicBuilder$/AtomicBooleanBuilder()|",
+      "|java+method:///scala/collection/mutable/ArrayBuffer$/empty()|",
+      "|java+constructor:///monix/reactive/internal/operators/MergeMapObservable$$anon$1$$anonfun$1/MergeMapObservable$$anon$1$$anonfun$1(monix.reactive.internal.operators.MergeMapObservable$$anon$1)|",
+      "|java+constructor:///java/lang/NullPointerException/NullPointerException()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///monix/execution/atomic/AtomicBuilder/buildInstance(java.lang.Object,monix.execution.atomic.PaddingStrategy)|",
+      "|java+method:///monix/reactive/observers/BufferedSubscriber$/apply(monix.reactive.observers.Subscriber,monix.reactive.OverflowStrategy)|"
+    ],
+    "affectedLib": "io.monix:monix-execution_sjs0.6_2.10:2.0.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.monix:monix-reactive_sjs0.6_2.10:2.0-RC3",
+    "coordinatesV2": "io.monix:monix-reactive_sjs0.6_2.10:2.0.5",
+    "caller": "|java+method:///monix/reactive/internal/operators/ThrottleLastObservable/unsafeSubscribeFn(monix.reactive.observers.Subscriber)|",
+    "called": "|java+method:///monix/execution/cancelables/CompositeCancelable$/apply(scala.collection.Seq)|",
+    "v1Body": [
+      "|java+constructor:///monix/reactive/internal/operators/ThrottleLastObservable$$anon$1/ThrottleLastObservable$$anon$1(monix.reactive.internal.operators.ThrottleLastObservable,monix.reactive.observers.Subscriber,monix.execution.cancelables.SingleAssignmentCancelable,monix.execution.cancelables.SingleAssignmentCancelable)|",
+      "|java+method:///monix/execution/cancelables/CompositeCancelable$/apply(scala.collection.Seq)|",
+      "|java+method:///monix/execution/cancelables/SingleAssignmentCancelable/$colon$eq(monix.execution.Cancelable)|",
+      "|java+method:///scala/Predef$/wrapRefArray(java.lang.Object%5B%5D)|",
+      "|java+method:///monix/reactive/Observable/unsafeSubscribeFn(monix.reactive.observers.Subscriber)|",
+      "|java+method:///monix/execution/cancelables/SingleAssignmentCancelable$/apply()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///monix/reactive/internal/operators/ThrottleLastObservable$$anon$1/ThrottleLastObservable$$anon$1(monix.reactive.internal.operators.ThrottleLastObservable,monix.reactive.observers.Subscriber,monix.execution.cancelables.SingleAssignmentCancelable,monix.execution.cancelables.SingleAssignmentCancelable)|",
+      "|java+method:///monix/execution/cancelables/CompositeCancelable$/apply(scala.collection.Seq)|",
+      "|java+method:///monix/execution/cancelables/SingleAssignmentCancelable/$colon$eq(monix.execution.Cancelable)|",
+      "|java+method:///monix/reactive/Observable/unsafeSubscribeFn(monix.reactive.observers.Subscriber)|",
+      "|java+method:///scala/Predef$/genericWrapArray(java.lang.Object)|",
+      "|java+method:///monix/execution/cancelables/SingleAssignmentCancelable$/apply()|"
+    ],
+    "affectedLib": "io.monix:monix-execution_sjs0.6_2.10:2.0.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.monix:monix-reactive_sjs0.6_2.10:2.0-RC3",
+    "coordinatesV2": "io.monix:monix-reactive_sjs0.6_2.10:2.0.5",
+    "caller": "|java+method:///monix/reactive/internal/operators/ConcatMapObservable/unsafeSubscribeFn(monix.reactive.observers.Subscriber)|",
+    "called": "|java+method:///monix/execution/cancelables/CompositeCancelable/$plus$eq(monix.execution.Cancelable)|",
+    "v1Body": [
+      "|java+method:///scala/Predef$/wrapRefArray(java.lang.Object%5B%5D)|",
+      "|java+method:///monix/reactive/Observable/unsafeSubscribeFn(monix.reactive.observers.Subscriber)|",
+      "|java+method:///monix/execution/cancelables/CompositeCancelable$/apply(scala.collection.Seq)|",
+      "|java+constructor:///monix/reactive/internal/operators/ConcatMapObservable$$anon$1/ConcatMapObservable$$anon$1(monix.reactive.internal.operators.ConcatMapObservable,monix.reactive.observers.Subscriber,monix.execution.cancelables.MultiAssignmentCancelable)|",
+      "|java+method:///monix/execution/cancelables/CompositeCancelable/$plus$eq(monix.execution.Cancelable)|",
+      "|java+method:///monix/execution/cancelables/MultiAssignmentCancelable$/apply()|"
+    ],
+    "v2Body": [
+      "|java+method:///monix/reactive/Observable/unsafeSubscribeFn(monix.reactive.observers.Subscriber)|",
+      "|java+method:///scala/Predef$/genericWrapArray(java.lang.Object)|",
+      "|java+method:///monix/execution/cancelables/CompositeCancelable$/apply(scala.collection.Seq)|",
+      "|java+constructor:///monix/reactive/internal/operators/ConcatMapObservable$$anon$1/ConcatMapObservable$$anon$1(monix.reactive.internal.operators.ConcatMapObservable,monix.reactive.observers.Subscriber,monix.execution.cancelables.MultiAssignmentCancelable)|",
+      "|java+method:///monix/execution/cancelables/CompositeCancelable/$plus$eq(monix.execution.Cancelable)|",
+      "|java+method:///monix/execution/cancelables/MultiAssignmentCancelable$/apply()|"
+    ],
+    "affectedLib": "io.monix:monix-execution_sjs0.6_2.10:2.0.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.monix:monix-reactive_sjs0.6_2.10:2.0-RC3",
+    "coordinatesV2": "io.monix:monix-reactive_sjs0.6_2.10:2.0.5",
+    "caller": "|java+method:///monix/reactive/internal/operators/EchoObservable/unsafeSubscribeFn(monix.reactive.observers.Subscriber)|",
+    "called": "|java+method:///monix/execution/cancelables/CompositeCancelable$/apply(scala.collection.Seq)|",
+    "v1Body": [
+      "|java+constructor:///monix/reactive/internal/operators/EchoObservable$$anon$1/EchoObservable$$anon$1(monix.reactive.internal.operators.EchoObservable,monix.reactive.observers.Subscriber,monix.execution.cancelables.MultiAssignmentCancelable,monix.execution.cancelables.SingleAssignmentCancelable)|",
+      "|java+method:///monix/execution/cancelables/CompositeCancelable$/apply(scala.collection.Seq)|",
+      "|java+method:///monix/execution/cancelables/SingleAssignmentCancelable/$colon$eq(monix.execution.Cancelable)|",
+      "|java+method:///scala/Predef$/wrapRefArray(java.lang.Object%5B%5D)|",
+      "|java+method:///monix/reactive/Observable/unsafeSubscribeFn(monix.reactive.observers.Subscriber)|",
+      "|java+method:///monix/execution/cancelables/SingleAssignmentCancelable$/apply()|",
+      "|java+method:///monix/execution/cancelables/MultiAssignmentCancelable$/apply()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///monix/reactive/internal/operators/EchoObservable$$anon$1/EchoObservable$$anon$1(monix.reactive.internal.operators.EchoObservable,monix.reactive.observers.Subscriber,monix.execution.cancelables.MultiAssignmentCancelable,monix.execution.cancelables.SingleAssignmentCancelable)|",
+      "|java+method:///monix/execution/cancelables/CompositeCancelable$/apply(scala.collection.Seq)|",
+      "|java+method:///monix/execution/cancelables/SingleAssignmentCancelable/$colon$eq(monix.execution.Cancelable)|",
+      "|java+method:///monix/reactive/Observable/unsafeSubscribeFn(monix.reactive.observers.Subscriber)|",
+      "|java+method:///scala/Predef$/genericWrapArray(java.lang.Object)|",
+      "|java+method:///monix/execution/cancelables/SingleAssignmentCancelable$/apply()|",
+      "|java+method:///monix/execution/cancelables/MultiAssignmentCancelable$/apply()|"
+    ],
+    "affectedLib": "io.monix:monix-execution_sjs0.6_2.10:2.0.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.monix:monix-reactive_sjs0.6_2.10:2.0-RC3",
+    "coordinatesV2": "io.monix:monix-reactive_sjs0.6_2.10:2.0.5",
+    "caller": "|java+method:///monix/reactive/internal/operators/UpstreamTimeoutObservable/unsafeSubscribeFn(monix.reactive.observers.Subscriber)|",
+    "called": "|java+method:///monix/execution/cancelables/CompositeCancelable$/apply(scala.collection.Seq)|",
+    "v1Body": [
+      "|java+method:///monix/execution/cancelables/CompositeCancelable$/apply(scala.collection.Seq)|",
+      "|java+method:///monix/execution/cancelables/SingleAssignmentCancelable/$colon$eq(monix.execution.Cancelable)|",
+      "|java+method:///scala/Predef$/wrapRefArray(java.lang.Object%5B%5D)|",
+      "|java+method:///monix/reactive/Observable/unsafeSubscribeFn(monix.reactive.observers.Subscriber)|",
+      "|java+method:///monix/execution/cancelables/MultiAssignmentCancelable$/apply()|",
+      "|java+method:///monix/execution/cancelables/SingleAssignmentCancelable$/apply()|",
+      "|java+constructor:///monix/reactive/internal/operators/UpstreamTimeoutObservable$$anon$1/UpstreamTimeoutObservable$$anon$1(monix.reactive.internal.operators.UpstreamTimeoutObservable,monix.reactive.observers.Subscriber,monix.execution.cancelables.MultiAssignmentCancelable,monix.execution.cancelables.SingleAssignmentCancelable)|"
+    ],
+    "v2Body": [
+      "|java+method:///monix/execution/cancelables/CompositeCancelable$/apply(scala.collection.Seq)|",
+      "|java+method:///monix/execution/cancelables/SingleAssignmentCancelable/$colon$eq(monix.execution.Cancelable)|",
+      "|java+method:///monix/reactive/Observable/unsafeSubscribeFn(monix.reactive.observers.Subscriber)|",
+      "|java+method:///scala/Predef$/genericWrapArray(java.lang.Object)|",
+      "|java+method:///monix/execution/cancelables/MultiAssignmentCancelable$/apply()|",
+      "|java+method:///monix/execution/cancelables/SingleAssignmentCancelable$/apply()|",
+      "|java+constructor:///monix/reactive/internal/operators/UpstreamTimeoutObservable$$anon$1/UpstreamTimeoutObservable$$anon$1(monix.reactive.internal.operators.UpstreamTimeoutObservable,monix.reactive.observers.Subscriber,monix.execution.cancelables.MultiAssignmentCancelable,monix.execution.cancelables.SingleAssignmentCancelable)|"
+    ],
+    "affectedLib": "io.monix:monix-execution_sjs0.6_2.10:2.0.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.monix:monix-reactive_sjs0.6_2.10:2.0-RC3",
+    "coordinatesV2": "io.monix:monix-reactive_sjs0.6_2.10:2.0.5",
+    "caller": "|java+method:///monix/reactive/observables/RefCountObservable/unsafeSubscribeFn(monix.reactive.observers.Subscriber)|",
+    "called": "|java+method:///monix/execution/atomic/AtomicInt/get()|",
+    "v1Body": [
+      "|java+constructor:///monix/reactive/observables/RefCountObservable$$anonfun$1/RefCountObservable$$anonfun$1(monix.reactive.observables.RefCountObservable)|",
+      "|java+method:///monix/reactive/observers/Subscriber/scheduler()|",
+      "|java+method:///monix/reactive/observables/RefCountObservable/connection()|",
+      "|java+method:///monix/reactive/observables/ConnectableObservable/unsafeSubscribeFn(monix.reactive.observers.Subscriber)|",
+      "|java+constructor:///monix/reactive/observables/RefCountObservable$$anonfun$unsafeSubscribeFn$1/RefCountObservable$$anonfun$unsafeSubscribeFn$1(monix.reactive.observables.RefCountObservable,monix.execution.Cancelable,monix.execution.Cancelable)|",
+      "|java+method:///org/sincron/atomic/AtomicInt/get()|",
+      "|java+method:///monix/execution/Cancelable$/apply(scala.Function0)|",
+      "|java+method:///org/sincron/atomic/AtomicInt/compareAndSet(int,int)|",
+      "|java+method:///monix/reactive/observables/RefCountObservable/wrap(monix.reactive.observers.Subscriber,monix.execution.Cancelable)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///monix/reactive/observables/RefCountObservable$$anonfun$1/RefCountObservable$$anonfun$1(monix.reactive.observables.RefCountObservable)|",
+      "|java+method:///monix/reactive/observers/Subscriber/scheduler()|",
+      "|java+method:///monix/reactive/observables/RefCountObservable/wrap(monix.reactive.observers.Subscriber,monix.execution.Cancelable)|",
+      "|java+method:///monix/reactive/observables/RefCountObservable/connection()|",
+      "|java+method:///monix/execution/atomic/AtomicInt/get()|",
+      "|java+constructor:///monix/reactive/observables/RefCountObservable$$anonfun$unsafeSubscribeFn$1/RefCountObservable$$anonfun$unsafeSubscribeFn$1(monix.reactive.observables.RefCountObservable,monix.execution.Cancelable,monix.execution.Cancelable)|",
+      "|java+method:///monix/execution/Cancelable$/apply(scala.Function0)|",
+      "|java+method:///monix/reactive/observables/ConnectableObservable/unsafeSubscribeFn(monix.reactive.observers.Subscriber)|",
+      "|java+method:///monix/execution/atomic/AtomicInt/compareAndSet(int,int)|"
+    ],
+    "affectedLib": "io.monix:monix-execution_sjs0.6_2.10:2.0.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.monix:monix-reactive_sjs0.6_2.10:2.0-RC3",
+    "coordinatesV2": "io.monix:monix-reactive_sjs0.6_2.10:2.0.5",
+    "caller": "|java+method:///monix/reactive/subjects/PublishSubject/unsafeSubscribeFn(monix.reactive.observers.Subscriber)|",
+    "called": "|java+method:///monix/execution/Cancelable$/apply(scala.Function0)|",
+    "v1Body": [
+      "|java+method:///monix/reactive/subjects/PublishSubject$State/subscribers()|",
+      "|java+method:///monix/reactive/subjects/PublishSubject$State/errorThrown()|",
+      "|java+method:///org/sincron/atomic/AtomicAny/compareAndSet(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/sincron/atomic/AtomicAny/get()|",
+      "|java+constructor:///monix/reactive/subjects/PublishSubject$$anonfun$unsafeSubscribeFn$1/PublishSubject$$anonfun$unsafeSubscribeFn$1(monix.reactive.subjects.PublishSubject,monix.reactive.observers.Subscriber)|",
+      "|java+method:///monix/execution/Cancelable$/apply(scala.Function0)|",
+      "|java+method:///monix/reactive/subjects/PublishSubject$State$/apply$default$2()|",
+      "|java+constructor:///monix/reactive/subjects/PublishSubject$State/PublishSubject$State(scala.collection.immutable.Set,java.lang.Throwable)|",
+      "|java+method:///monix/reactive/subjects/PublishSubject/onSubscribeCompleted(monix.reactive.observers.Subscriber,java.lang.Throwable)|",
+      "|java+method:///scala/collection/immutable/Set/$plus(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///monix/reactive/subjects/PublishSubject$State/subscribers()|",
+      "|java+method:///monix/execution/atomic/AtomicAny/get()|",
+      "|java+method:///monix/reactive/subjects/PublishSubject$State/errorThrown()|",
+      "|java+constructor:///monix/reactive/subjects/PublishSubject$$anonfun$unsafeSubscribeFn$1/PublishSubject$$anonfun$unsafeSubscribeFn$1(monix.reactive.subjects.PublishSubject,monix.reactive.observers.Subscriber)|",
+      "|java+method:///monix/execution/Cancelable$/apply(scala.Function0)|",
+      "|java+method:///monix/execution/atomic/AtomicAny/compareAndSet(java.lang.Object,java.lang.Object)|",
+      "|java+method:///monix/reactive/subjects/PublishSubject$State$/apply$default$2()|",
+      "|java+constructor:///monix/reactive/subjects/PublishSubject$State/PublishSubject$State(scala.collection.immutable.Set,java.lang.Throwable)|",
+      "|java+method:///monix/reactive/subjects/PublishSubject/onSubscribeCompleted(monix.reactive.observers.Subscriber,java.lang.Throwable)|",
+      "|java+method:///scala/collection/immutable/Set/$plus(java.lang.Object)|"
+    ],
+    "affectedLib": "io.monix:monix-execution_sjs0.6_2.10:2.0.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.monix:monix-reactive_sjs0.6_2.10:2.0-RC3",
+    "coordinatesV2": "io.monix:monix-reactive_sjs0.6_2.10:2.0.5",
+    "caller": "|java+method:///monix/reactive/internal/builders/FirstStartedObservable/unsafeSubscribeFn(monix.reactive.observers.Subscriber)|",
+    "called": "|java+method:///monix/execution/cancelables/CompositeCancelable$/apply(scala.collection.Seq)|",
+    "v1Body": [
+      "|java+method:///monix/execution/cancelables/MultiAssignmentCancelable$/apply(monix.execution.Cancelable)|",
+      "|java+method:///scala/concurrent/Promise/future()|",
+      "|java+method:///monix/reactive/observers/Subscriber/scheduler()|",
+      "|java+method:///monix/reactive/observers/Subscriber/onComplete()|",
+      "|java+method:///monix/execution/cancelables/CompositeCancelable$/apply(scala.collection.Seq)|",
+      "|java+method:///scala/collection/Seq/foreach(scala.Function1)|",
+      "|java+method:///scala/Predef$/wrapRefArray(java.lang.Object%5B%5D)|",
+      "|java+method:///org/sincron/atomic/AtomicBuilder/buildInstance(java.lang.Object,org.sincron.atomic.PaddingStrategy)|",
+      "|java+method:///scala/concurrent/Future/foreach(scala.Function1,scala.concurrent.ExecutionContext)|",
+      "|java+constructor:///monix/reactive/internal/builders/FirstStartedObservable$$anonfun$unsafeSubscribeFn$1/FirstStartedObservable$$anonfun$unsafeSubscribeFn$1(monix.reactive.internal.builders.FirstStartedObservable,monix.execution.Cancelable%5B%5D,monix.execution.cancelables.CompositeCancelable,monix.execution.cancelables.MultiAssignmentCancelable)|",
+      "|java+constructor:///monix/reactive/internal/builders/FirstStartedObservable$$anonfun$unsafeSubscribeFn$2/FirstStartedObservable$$anonfun$unsafeSubscribeFn$2(monix.reactive.internal.builders.FirstStartedObservable,monix.reactive.observers.Subscriber,org.sincron.atomic.AtomicInt,scala.runtime.IntRef,monix.execution.Cancelable%5B%5D,scala.concurrent.Promise)|",
+      "|java+method:///scala/collection/Seq/length()|",
+      "|java+method:///org/sincron/atomic/AtomicBuilder$/AtomicIntBuilder()|",
+      "|java+method:///monix/execution/Cancelable$/empty()|",
+      "|java+method:///scala/runtime/BoxesRunTime/boxToInteger(int)|",
+      "|java+method:///scala/concurrent/Promise$/apply()|",
+      "|java+constructor:///scala/runtime/IntRef/IntRef(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///monix/execution/cancelables/MultiAssignmentCancelable$/apply(monix.execution.Cancelable)|",
+      "|java+method:///scala/concurrent/Promise/future()|",
+      "|java+method:///monix/reactive/observers/Subscriber/scheduler()|",
+      "|java+method:///monix/reactive/observers/Subscriber/onComplete()|",
+      "|java+method:///monix/execution/cancelables/CompositeCancelable$/apply(scala.collection.Seq)|",
+      "|java+method:///scala/collection/Seq/foreach(scala.Function1)|",
+      "|java+constructor:///monix/reactive/internal/builders/FirstStartedObservable$$anonfun$unsafeSubscribeFn$2/FirstStartedObservable$$anonfun$unsafeSubscribeFn$2(monix.reactive.internal.builders.FirstStartedObservable,monix.reactive.observers.Subscriber,monix.execution.atomic.AtomicInt,scala.runtime.IntRef,monix.execution.Cancelable%5B%5D,scala.concurrent.Promise)|",
+      "|java+method:///scala/concurrent/Future/foreach(scala.Function1,scala.concurrent.ExecutionContext)|",
+      "|java+method:///scala/Predef$/genericWrapArray(java.lang.Object)|",
+      "|java+constructor:///monix/reactive/internal/builders/FirstStartedObservable$$anonfun$unsafeSubscribeFn$1/FirstStartedObservable$$anonfun$unsafeSubscribeFn$1(monix.reactive.internal.builders.FirstStartedObservable,monix.execution.Cancelable%5B%5D,monix.execution.cancelables.CompositeCancelable,monix.execution.cancelables.MultiAssignmentCancelable)|",
+      "|java+method:///scala/collection/Seq/length()|",
+      "|java+method:///monix/execution/atomic/AtomicBuilder/buildInstance(java.lang.Object,monix.execution.atomic.PaddingStrategy)|",
+      "|java+method:///monix/execution/Cancelable$/empty()|",
+      "|java+method:///scala/runtime/BoxesRunTime/boxToInteger(int)|",
+      "|java+method:///scala/concurrent/Promise$/apply()|",
+      "|java+method:///monix/execution/atomic/AtomicBuilder$/AtomicIntBuilder()|",
+      "|java+constructor:///scala/runtime/IntRef/IntRef(int)|"
+    ],
+    "affectedLib": "io.monix:monix-execution_sjs0.6_2.10:2.0.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.monix:monix-reactive_sjs0.6_2.10:2.0-RC3",
+    "coordinatesV2": "io.monix:monix-reactive_sjs0.6_2.10:2.0.5",
+    "caller": "|java+method:///monix/reactive/internal/builders/FirstStartedObservable$$anon$1/shouldStream()|",
+    "called": "|java+method:///monix/execution/atomic/AtomicInt/get()|",
+    "v1Body": [
+      "|java+method:///org/sincron/atomic/AtomicInt/compareAndSet(int,int)|",
+      "|java+method:///scala/concurrent/Promise/success(java.lang.Object)|",
+      "|java+method:///scala/runtime/BoxesRunTime/boxToInteger(int)|",
+      "|java+method:///org/sincron/atomic/AtomicInt/get()|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/concurrent/Promise/success(java.lang.Object)|",
+      "|java+method:///monix/execution/atomic/AtomicInt/get()|",
+      "|java+method:///monix/execution/atomic/AtomicInt/compareAndSet(int,int)|",
+      "|java+method:///scala/runtime/BoxesRunTime/boxToInteger(int)|"
+    ],
+    "affectedLib": "io.monix:monix-execution_sjs0.6_2.10:2.0.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.monix:monix-reactive_sjs0.6_2.10:2.0-RC3",
+    "coordinatesV2": "io.monix:monix-reactive_sjs0.6_2.10:2.0.5",
+    "caller": "|java+method:///monix/reactive/internal/operators/DropByTimespanObservable/unsafeSubscribeFn(monix.reactive.observers.Subscriber)|",
+    "called": "|java+method:///monix/execution/cancelables/CompositeCancelable/$plus$eq(monix.execution.Cancelable)|",
+    "v1Body": [
+      "|java+constructor:///monix/reactive/internal/operators/DropByTimespanObservable$$anon$1/DropByTimespanObservable$$anon$1(monix.reactive.internal.operators.DropByTimespanObservable,monix.reactive.observers.Subscriber,monix.execution.cancelables.SingleAssignmentCancelable)|",
+      "|java+method:///monix/execution/cancelables/CompositeCancelable$/apply(scala.collection.Seq)|",
+      "|java+method:///scala/Predef$/wrapRefArray(java.lang.Object%5B%5D)|",
+      "|java+method:///monix/reactive/Observable/unsafeSubscribeFn(monix.reactive.observers.Subscriber)|",
+      "|java+method:///monix/execution/cancelables/SingleAssignmentCancelable$/apply()|",
+      "|java+method:///monix/execution/cancelables/CompositeCancelable/$plus$eq(monix.execution.Cancelable)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///monix/reactive/internal/operators/DropByTimespanObservable$$anon$1/DropByTimespanObservable$$anon$1(monix.reactive.internal.operators.DropByTimespanObservable,monix.reactive.observers.Subscriber,monix.execution.cancelables.SingleAssignmentCancelable)|",
+      "|java+method:///monix/execution/cancelables/CompositeCancelable$/apply(scala.collection.Seq)|",
+      "|java+method:///monix/reactive/Observable/unsafeSubscribeFn(monix.reactive.observers.Subscriber)|",
+      "|java+method:///scala/Predef$/genericWrapArray(java.lang.Object)|",
+      "|java+method:///monix/execution/cancelables/SingleAssignmentCancelable$/apply()|",
+      "|java+method:///monix/execution/cancelables/CompositeCancelable/$plus$eq(monix.execution.Cancelable)|"
+    ],
+    "affectedLib": "io.monix:monix-execution_sjs0.6_2.10:2.0.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.monix:monix-reactive_sjs0.6_2.10:2.0-RC3",
+    "coordinatesV2": "io.monix:monix-reactive_sjs0.6_2.10:2.0.5",
+    "caller": "|java+method:///monix/reactive/subjects/AsyncSubject/unsafeSubscribeFn(monix.reactive.observers.Subscriber)|",
+    "called": "|java+method:///monix/execution/Cancelable$/apply(scala.Function0)|",
+    "v1Body": [
+      "|java+method:///scala/collection/immutable/Set/$plus(java.lang.Object)|",
+      "|java+method:///monix/reactive/observers/Subscriber/onComplete()|",
+      "|java+method:///monix/reactive/subjects/PublishSubject$State/subscribers()|",
+      "|java+method:///monix/reactive/observers/Subscriber/onError(java.lang.Throwable)|",
+      "|java+method:///monix/reactive/subjects/PublishSubject$State/errorThrown()|",
+      "|java+method:///monix/reactive/observers/Subscriber/onNext(java.lang.Object)|",
+      "|java+method:///org/sincron/atomic/AtomicAny/compareAndSet(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/sincron/atomic/AtomicAny/get()|",
+      "|java+method:///monix/execution/Cancelable$/apply(scala.Function0)|",
+      "|java+constructor:///monix/reactive/subjects/PublishSubject$State/PublishSubject$State(scala.collection.immutable.Set,java.lang.Throwable)|",
+      "|java+method:///monix/execution/Cancelable$/empty()|",
+      "|java+constructor:///monix/reactive/subjects/AsyncSubject$$anonfun$unsafeSubscribeFn$1/AsyncSubject$$anonfun$unsafeSubscribeFn$1(monix.reactive.subjects.AsyncSubject,monix.reactive.observers.Subscriber)|",
+      "|java+method:///monix/reactive/subjects/PublishSubject$State$/apply$default$2()|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/collection/immutable/Set/$plus(java.lang.Object)|",
+      "|java+method:///monix/reactive/observers/Subscriber/onComplete()|",
+      "|java+method:///monix/reactive/subjects/PublishSubject$State/subscribers()|",
+      "|java+method:///monix/reactive/observers/Subscriber/onError(java.lang.Throwable)|",
+      "|java+method:///monix/execution/atomic/AtomicAny/get()|",
+      "|java+method:///monix/reactive/subjects/PublishSubject$State/errorThrown()|",
+      "|java+method:///monix/reactive/observers/Subscriber/onNext(java.lang.Object)|",
+      "|java+method:///monix/execution/Cancelable$/apply(scala.Function0)|",
+      "|java+method:///monix/execution/atomic/AtomicAny/compareAndSet(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///monix/reactive/subjects/PublishSubject$State/PublishSubject$State(scala.collection.immutable.Set,java.lang.Throwable)|",
+      "|java+method:///monix/execution/Cancelable$/empty()|",
+      "|java+constructor:///monix/reactive/subjects/AsyncSubject$$anonfun$unsafeSubscribeFn$1/AsyncSubject$$anonfun$unsafeSubscribeFn$1(monix.reactive.subjects.AsyncSubject,monix.reactive.observers.Subscriber)|",
+      "|java+method:///monix/reactive/subjects/PublishSubject$State$/apply$default$2()|"
+    ],
+    "affectedLib": "io.monix:monix-execution_sjs0.6_2.10:2.0.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.monix:monix-reactive_sjs0.6_2.10:2.0-RC3",
+    "coordinatesV2": "io.monix:monix-reactive_sjs0.6_2.10:2.0.5",
+    "caller": "|java+method:///monix/reactive/internal/util/PromiseCounter/countdown()|",
+    "called": "|java+method:///monix/execution/atomic/AtomicInt/get()|",
+    "v1Body": [
+      "|java+method:///org/sincron/atomic/AtomicInt/compareAndSet(int,int)|",
+      "|java+method:///scala/concurrent/Promise/success(java.lang.Object)|",
+      "|java+method:///org/sincron/atomic/AtomicInt/get()|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/concurrent/Promise/success(java.lang.Object)|",
+      "|java+method:///monix/execution/atomic/AtomicInt/get()|",
+      "|java+method:///monix/execution/atomic/AtomicInt/compareAndSet(int,int)|"
+    ],
+    "affectedLib": "io.monix:monix-execution_sjs0.6_2.10:2.0.5",
+    "change": "UPDATED"
+  }
+]

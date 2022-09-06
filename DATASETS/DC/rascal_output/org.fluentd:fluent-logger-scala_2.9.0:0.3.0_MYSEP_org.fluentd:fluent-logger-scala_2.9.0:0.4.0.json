@@ -1,0 +1,79 @@
+[
+  {
+    "coordinatesV1": "org.fluentd:fluent-logger-scala_2.9.0:0.3.0",
+    "coordinatesV2": "org.fluentd:fluent-logger-scala_2.9.0:0.4.0",
+    "caller": "|java+method:///org/fluentd/logger/scala/sender/ScalaRawSocketSender/emit(org.fluentd.logger.scala.sender.Event)|",
+    "called": "|java+method:///net/liftweb/json/Serialization$/write(java.lang.Object,net.liftweb.json.Formats)|",
+    "v1Body": [
+      "|java+method:///org/fluentd/logger/scala/sender/Event/key()|",
+      "|java+method:///java/io/IOException/printStackTrace()|",
+      "|java+method:///scala/runtime/BoxesRunTime/boxToLong(long)|",
+      "|java+method:///org/msgpack/ScalaMessagePackWrapper/write(java.lang.Object)|",
+      "|java+method:///scala/collection/immutable/List$/apply(scala.collection.Seq)|",
+      "|java+method:///java/util/logging/Logger/severe(java.lang.String)|",
+      "|java+method:///org/fluentd/logger/scala/sender/ScalaRawSocketSender/send(byte%5B%5D)|",
+      "|java+method:///scala/collection/mutable/StringBuilder/toString()|",
+      "|java+constructor:///scala/collection/mutable/StringBuilder/StringBuilder()|",
+      "|java+method:///scala/Predef$/genericWrapArray(java.lang.Object)|",
+      "|java+method:///scala/collection/mutable/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/fluentd/logger/scala/sender/Event/timestamp()|",
+      "|java+method:///org/fluentd/logger/scala/sender/ScalaRawSocketSender/LOG()|",
+      "|java+method:///org/fluentd/logger/scala/sender/Event/data()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/IOException/printStackTrace()|",
+      "|java+method:///net/liftweb/json/Serialization$/write(java.lang.Object,net.liftweb.json.Formats)|",
+      "|java+method:///java/lang/String/getBytes(java.lang.String)|",
+      "|java+method:///scala/collection/mutable/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/logging/Logger/severe(java.lang.String)|",
+      "|java+method:///org/fluentd/logger/scala/sender/ScalaRawSocketSender/send(byte%5B%5D)|",
+      "|java+method:///org/fluentd/logger/scala/sender/ScalaRawSocketSender/LOG()|",
+      "|java+method:///scala/collection/mutable/StringBuilder/toString()|",
+      "|java+method:///org/fluentd/logger/scala/sender/ScalaRawSocketSender/formats()|",
+      "|java+constructor:///scala/collection/mutable/StringBuilder/StringBuilder()|"
+    ],
+    "affectedLib": "net.liftweb:lift-json_2.9.0:2.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.fluentd:fluent-logger-scala_2.9.0:0.3.0",
+    "coordinatesV2": "org.fluentd:fluent-logger-scala_2.9.0:0.4.0",
+    "caller": "|java+constructor:///org/fluentd/logger/scala/sender/ScalaRawSocketSender/ScalaRawSocketSender(java.lang.String,int,int,int)|",
+    "called": "|java+constructor:///org/fluentd/logger/sender/ExponentialDelayReconnector/ExponentialDelayReconnector()|",
+    "v1Body": [
+      "|java+method:///java/nio/ByteBuffer/allocate(int)|",
+      "|java+method:///scala/Predef$/augmentString(java.lang.String)|",
+      "|java+method:///org/fluentd/logger/scala/sender/ScalaRawSocketSender/open()|",
+      "|java+method:///scala/runtime/BoxesRunTime/boxToInteger(int)|",
+      "|java+method:///scala/Predef$/genericWrapArray(java.lang.Object)|",
+      "|java+method:///org/fluentd/logger/scala/sender/ScalaRawSocketSender/bufferCapacity()|",
+      "|java+method:///org/fluentd/logger/scala/sender/ScalaRawSocketSender/timeout()|",
+      "|java+constructor:///org/fluentd/logger/sender/ExponentialDelayReconnector/ExponentialDelayReconnector()|",
+      "|java+constructor:///java/net/InetSocketAddress/InetSocketAddress(java.lang.String,int)|",
+      "|java+method:///org/fluentd/logger/scala/sender/ScalaRawSocketSender/host()|",
+      "|java+method:///java/util/logging/Logger/getLogger(java.lang.String)|",
+      "|java+method:///scala/collection/immutable/StringLike/format(scala.collection.Seq)|",
+      "|java+method:///org/fluentd/logger/scala/sender/ScalaRawSocketSender/port()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/nio/ByteBuffer/allocate(int)|",
+      "|java+method:///scala/Predef$/augmentString(java.lang.String)|",
+      "|java+method:///org/fluentd/logger/scala/sender/ScalaRawSocketSender/open()|",
+      "|java+method:///net/liftweb/json/Formats/$plus(net.liftweb.json.Serializer)|",
+      "|java+method:///scala/runtime/BoxesRunTime/boxToInteger(int)|",
+      "|java+method:///scala/Predef$/genericWrapArray(java.lang.Object)|",
+      "|java+method:///org/fluentd/logger/scala/sender/ScalaRawSocketSender/bufferCapacity()|",
+      "|java+method:///org/fluentd/logger/scala/sender/ScalaRawSocketSender/timeout()|",
+      "|java+constructor:///org/fluentd/logger/sender/ExponentialDelayReconnector/ExponentialDelayReconnector()|",
+      "|java+constructor:///java/net/InetSocketAddress/InetSocketAddress(java.lang.String,int)|",
+      "|java+method:///org/fluentd/logger/scala/sender/ScalaRawSocketSender/host()|",
+      "|java+method:///java/util/logging/Logger/getLogger(java.lang.String)|",
+      "|java+method:///scala/collection/immutable/StringLike/format(scala.collection.Seq)|",
+      "|java+method:///org/fluentd/logger/scala/sender/ScalaRawSocketSender/port()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.fluentd:fluent-logger:0.2.8",
+    "change": "UPDATED"
+  }
+]

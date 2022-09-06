@@ -1,0 +1,1920 @@
+[
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "caller": "|java+method:///org/uberfire/security/server/auth/HttpBasicAuthenticationScheme/isAuthenticationRequest(org.uberfire.security.SecurityContext)|",
+    "called": "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getHeader(java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getHeader(java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|"
+    ],
+    "affectedLib": "org.kie.commons:kie-commons-validation:6.0.0.CR5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "caller": "|java+method:///org/uberfire/security/server/HttpSecurityManagerImpl/authenticate(org.uberfire.security.SecurityContext)|",
+    "called": "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///org/uberfire/security/auth/AuthenticationException/AuthenticationException(java.lang.String,java.lang.Exception)|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/uberfire/security/auth/AuthenticationManager/authenticate(org.uberfire.security.SecurityContext)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/setCurrentSubject(org.uberfire.security.Subject)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/uberfire/security/auth/AuthenticationException/AuthenticationException(java.lang.String,java.lang.Exception)|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/uberfire/security/auth/AuthenticationManager/authenticate(org.uberfire.security.SecurityContext)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/setCurrentSubject(org.uberfire.security.Subject)|"
+    ],
+    "affectedLib": "org.kie.commons:kie-commons-validation:6.0.0.CR5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "caller": "|java+method:///org/uberfire/security/server/URLResourceManager/requiresAuthentication(org.uberfire.security.Resource)|",
+    "called": "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/uberfire/security/server/util/AntPathMatcher/match(java.lang.String,java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/URLResourceManager$Resources/getExcludedResources()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/contains(java.lang.Object)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/uberfire/security/server/URLResource/getURL()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/uberfire/security/server/util/AntPathMatcher/match(java.lang.String,java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/URLResourceManager$Resources/getExcludedResources()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///org/uberfire/security/server/URLResource/getURL()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///java/util/Set/contains(java.lang.Object)|"
+    ],
+    "affectedLib": "org.kie.commons:kie-commons-validation:6.0.0.CR5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "caller": "|java+method:///org/uberfire/security/server/auth/HttpSessionStorage/store(org.uberfire.security.SecurityContext,org.uberfire.security.Subject)|",
+    "called": "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///javax/servlet/http/HttpSession/setAttribute(java.lang.String,java.lang.Object)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getSession()|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///javax/servlet/http/HttpSession/setAttribute(java.lang.String,java.lang.Object)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getSession()|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|"
+    ],
+    "affectedLib": "org.kie.commons:kie-commons-validation:6.0.0.CR5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "caller": "|java+method:///org/uberfire/security/server/HttpSecurityManagerImpl/newSecurityContext(java.lang.Object%5B%5D)|",
+    "called": "|java+method:///org/kie/commons/validation/PortablePreconditions/checkNotNull(java.lang.String,java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList(int)|",
+      "|java+method:///java/util/Collections/emptyList()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/kie/commons/validation/PortablePreconditions/checkNotNull(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/List/toArray(java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/uberfire/security/server/HttpSecurityContext/HttpSecurityContext(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Object%5B%5D)|",
+      "|java+method:///org/kie/commons/validation/PortablePreconditions/checkNotEmpty(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/kie/commons/validation/PortablePreconditions/checkCondition(java.lang.String,boolean)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList(int)|",
+      "|java+method:///java/util/Collections/emptyList()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/List/toArray(java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/uberfire/security/server/HttpSecurityContext/HttpSecurityContext(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Object%5B%5D)|",
+      "|java+method:///org/uberfire/commons/validation/PortablePreconditions/checkNotNull(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/uberfire/commons/validation/PortablePreconditions/checkNotEmpty(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/uberfire/commons/validation/PortablePreconditions/checkCondition(java.lang.String,boolean)|"
+    ],
+    "affectedLib": "org.kie.commons:kie-commons-validation:6.0.0.CR5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "caller": "|java+method:///org/uberfire/security/server/auth/CookieStorage/load(org.uberfire.security.SecurityContext)|",
+    "called": "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getCookies()|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///org/uberfire/security/crypt/CryptProvider/decrypt(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+constructor:///org/uberfire/security/impl/auth/PrincipalImpl/PrincipalImpl(java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/auth/CookieStorage/getCookieValue(java.lang.String,java.lang.String,javax.servlet.http.Cookie%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getCookies()|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///org/uberfire/security/crypt/CryptProvider/decrypt(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+constructor:///org/uberfire/security/impl/auth/PrincipalImpl/PrincipalImpl(java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/auth/CookieStorage/getCookieValue(java.lang.String,java.lang.String,javax.servlet.http.Cookie%5B%5D)|"
+    ],
+    "affectedLib": "org.kie.commons:kie-commons-validation:6.0.0.CR5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "caller": "|java+constructor:///org/uberfire/security/server/URLResourceManager$Resources/URLResourceManager$Resources(java.util.Map)|",
+    "called": "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/util/Collections/emptyList()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/HashMap/HashMap(int)|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(int)|",
+      "|java+method:///java/util/Collections/emptyMap()|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkNotNull(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///org/uberfire/security/impl/RoleImpl/RoleImpl(java.lang.String)|",
+      "|java+constructor:///java/util/HashSet/HashSet(java.util.Collection)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/util/Collections/emptyList()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkNotNull(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+constructor:///java/util/HashMap/HashMap(int)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(int)|",
+      "|java+method:///java/util/Collections/emptyMap()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///org/uberfire/security/impl/RoleImpl/RoleImpl(java.lang.String)|",
+      "|java+constructor:///java/util/HashSet/HashSet(java.util.Collection)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.kie.commons:kie-commons-validation:6.0.0.CR5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "caller": "|java+method:///org/uberfire/security/server/auth/HttpSessionStorage/load(org.uberfire.security.SecurityContext)|",
+    "called": "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/http/HttpSession/getAttribute(java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getSession()|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/servlet/http/HttpSession/getAttribute(java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getSession()|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|"
+    ],
+    "affectedLib": "org.kie.commons:kie-commons-validation:6.0.0.CR5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "caller": "|java+method:///org/uberfire/security/server/auth/source/HttpServletRequestAuthenticationSource/authenticate(org.uberfire.security.auth.Credential,org.uberfire.security.SecurityContext)|",
+    "called": "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///javax/security/jacc/PolicyContext/getContext(java.lang.String)|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/uberfire/security/server/auth/source/JACCAuthenticationSource/authenticate(org.uberfire.security.auth.Credential,org.uberfire.security.SecurityContext)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/login(java.lang.String,java.lang.String)|",
+      "|java+method:///org/uberfire/security/impl/auth/UserNameCredential/getUserName()|",
+      "|java+method:///org/uberfire/security/impl/auth/UsernamePasswordCredential/getPassword()|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/security/jacc/PolicyContext/getContext(java.lang.String)|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/uberfire/security/server/auth/source/JACCAuthenticationSource/authenticate(org.uberfire.security.auth.Credential,org.uberfire.security.SecurityContext)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/login(java.lang.String,java.lang.String)|",
+      "|java+method:///org/uberfire/security/impl/auth/UserNameCredential/getUserName()|",
+      "|java+method:///org/uberfire/security/impl/auth/UsernamePasswordCredential/getPassword()|"
+    ],
+    "affectedLib": "org.kie.commons:kie-commons-validation:6.0.0.CR5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "caller": "|java+method:///org/uberfire/security/server/auth/source/AbstractDatabaseAuthSource/authenticate(org.uberfire.security.auth.Credential,org.uberfire.security.SecurityContext)|",
+    "called": "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/sql/Connection/close()|",
+      "|java+method:///org/uberfire/security/impl/auth/UsernamePasswordCredential/getUserName()|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/uberfire/security/impl/auth/UsernamePasswordCredential/getPassword()|",
+      "|java+method:///org/uberfire/security/server/auth/source/AbstractDatabaseAuthSource/getConnection()|",
+      "|java+method:///java/sql/Connection/prepareStatement(java.lang.String)|",
+      "|java+method:///java/sql/PreparedStatement/setObject(int,java.lang.Object)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.Throwable)|",
+      "|java+method:///java/sql/PreparedStatement/setString(int,java.lang.String)|",
+      "|java+method:///java/sql/ResultSet/next()|",
+      "|java+method:///java/sql/PreparedStatement/close()|",
+      "|java+method:///java/sql/ResultSet/close()|",
+      "|java+method:///java/sql/PreparedStatement/executeQuery()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/sql/Connection/close()|",
+      "|java+method:///org/uberfire/security/impl/auth/UsernamePasswordCredential/getUserName()|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/uberfire/security/impl/auth/UsernamePasswordCredential/getPassword()|",
+      "|java+method:///org/uberfire/security/server/auth/source/AbstractDatabaseAuthSource/getConnection()|",
+      "|java+method:///java/sql/Connection/prepareStatement(java.lang.String)|",
+      "|java+method:///java/sql/PreparedStatement/setObject(int,java.lang.Object)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.Throwable)|",
+      "|java+method:///java/sql/PreparedStatement/setString(int,java.lang.String)|",
+      "|java+method:///java/sql/ResultSet/next()|",
+      "|java+method:///java/sql/PreparedStatement/close()|",
+      "|java+method:///java/sql/ResultSet/close()|",
+      "|java+method:///java/sql/PreparedStatement/executeQuery()|"
+    ],
+    "affectedLib": "org.kie.commons:kie-commons-validation:6.0.0.CR5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "caller": "|java+method:///org/uberfire/security/server/auth/source/PropertyUserSource/authenticate(org.uberfire.security.auth.Credential,org.uberfire.security.SecurityContext)|",
+    "called": "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/uberfire/security/impl/auth/UsernamePasswordCredential/getUserName()|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/uberfire/security/impl/auth/UsernamePasswordCredential/getPassword()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/uberfire/security/impl/auth/UsernamePasswordCredential/getUserName()|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/uberfire/security/impl/auth/UsernamePasswordCredential/getPassword()|"
+    ],
+    "affectedLib": "org.kie.commons:kie-commons-validation:6.0.0.CR5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "caller": "|java+method:///org/uberfire/security/server/auth/RememberMeCookieAuthScheme/buildCredential(org.uberfire.security.SecurityContext)|",
+    "called": "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/lang/Boolean/toString()|",
+      "|java+method:///org/uberfire/security/server/auth/CookieStorage/load(org.uberfire.security.SecurityContext)|",
+      "|java+method:///org/uberfire/security/auth/Principal/getName()|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+constructor:///org/uberfire/security/server/auth/RememberMeCookieAuthScheme$RememberMeCredential/RememberMeCookieAuthScheme$RememberMeCredential(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Boolean/toString()|",
+      "|java+method:///org/uberfire/security/server/auth/CookieStorage/load(org.uberfire.security.SecurityContext)|",
+      "|java+method:///org/uberfire/security/auth/Principal/getName()|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+constructor:///org/uberfire/security/server/auth/RememberMeCookieAuthScheme$RememberMeCredential/RememberMeCookieAuthScheme$RememberMeCredential(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.kie.commons:kie-commons-validation:6.0.0.CR5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "caller": "|java+method:///org/uberfire/security/server/auth/CookieStorage/store(org.uberfire.security.SecurityContext,org.uberfire.security.Subject)|",
+    "called": "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/http/Cookie/setMaxAge(int)|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/addCookie(javax.servlet.http.Cookie)|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getResponse()|",
+      "|java+constructor:///javax/servlet/http/Cookie/Cookie(java.lang.String,java.lang.String)|",
+      "|java+method:///org/uberfire/security/Subject/getName()|",
+      "|java+method:///org/uberfire/security/crypt/CryptProvider/encrypt(java.lang.String,java.lang.Object)|",
+      "|java+method:///javax/servlet/http/Cookie/setPath(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/servlet/http/Cookie/setMaxAge(int)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getResponse()|",
+      "|java+constructor:///javax/servlet/http/Cookie/Cookie(java.lang.String,java.lang.String)|",
+      "|java+method:///org/uberfire/security/Subject/getName()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/addCookie(javax.servlet.http.Cookie)|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/uberfire/security/crypt/CryptProvider/encrypt(java.lang.String,java.lang.Object)|",
+      "|java+method:///javax/servlet/http/Cookie/setPath(java.lang.String)|"
+    ],
+    "affectedLib": "org.kie.commons:kie-commons-validation:6.0.0.CR5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "caller": "|java+constructor:///org/uberfire/security/server/auth/DefaultAuthenticationProvider/DefaultAuthenticationProvider(org.uberfire.security.auth.AuthenticationSource)|",
+    "called": "|java+method:///org/kie/commons/validation/PortablePreconditions/checkNotNull(java.lang.String,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/kie/commons/validation/PortablePreconditions/checkNotNull(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/uberfire/commons/validation/PortablePreconditions/checkNotNull(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.kie.commons:kie-commons-validation:6.0.0.CR5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "caller": "|java+constructor:///org/uberfire/security/server/auth/HttpAuthenticationManager/HttpAuthenticationManager(java.util.List,java.lang.String,java.util.List,java.util.List,java.util.List,java.util.List,org.uberfire.security.ResourceManager)|",
+    "called": "|java+method:///org/kie/commons/validation/PortablePreconditions/checkNotNull(java.lang.String,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/kie/commons/validation/PortablePreconditions/checkNotNull(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/kie/commons/validation/PortablePreconditions/checkNotEmpty(java.lang.String,java.util.Collection)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/uberfire/commons/validation/PortablePreconditions/checkNotEmpty(java.lang.String,java.util.Collection)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/uberfire/commons/validation/PortablePreconditions/checkNotNull(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.kie.commons:kie-commons-validation:6.0.0.CR5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "caller": "|java+method:///org/uberfire/security/server/auth/source/JACCAuthenticationSource/authenticate(org.uberfire.security.auth.Credential,org.uberfire.security.SecurityContext)|",
+    "called": "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///javax/security/jacc/PolicyContext/getContext(java.lang.String)|",
+      "|java+method:///javax/security/auth/Subject/getPrincipals()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/uberfire/security/impl/auth/UserNameCredential/getUserName()|",
+      "|java+method:///java/security/Principal/getName()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Exception/printStackTrace()|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/security/jacc/PolicyContext/getContext(java.lang.String)|",
+      "|java+method:///javax/security/auth/Subject/getPrincipals()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///org/uberfire/security/impl/auth/UserNameCredential/getUserName()|",
+      "|java+method:///java/security/Principal/getName()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Exception/printStackTrace()|"
+    ],
+    "affectedLib": "org.kie.commons:kie-commons-validation:6.0.0.CR5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "caller": "|java+method:///org/uberfire/security/server/auth/HttpBasicAuthenticationScheme/buildCredential(org.uberfire.security.SecurityContext)|",
+    "called": "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getHeader(java.lang.String)|",
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D,java.nio.charset.Charset)|",
+      "|java+constructor:///org/uberfire/security/impl/auth/UsernamePasswordCredential/UsernamePasswordCredential(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apache/commons/codec/binary/Base64/decodeBase64(java.lang.String)|",
+      "|java+method:///java/lang/String/indexOf(int)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getHeader(java.lang.String)|",
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D,java.nio.charset.Charset)|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+constructor:///org/uberfire/security/impl/auth/UsernamePasswordCredential/UsernamePasswordCredential(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apache/commons/codec/binary/Base64/decodeBase64(java.lang.String)|",
+      "|java+method:///java/lang/String/indexOf(int)|"
+    ],
+    "affectedLib": "org.kie.commons:kie-commons-validation:6.0.0.CR5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "caller": "|java+method:///org/uberfire/security/server/auth/CookieStorage/cleanup(org.uberfire.security.SecurityContext)|",
+    "called": "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/http/Cookie/setMaxAge(int)|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/addCookie(javax.servlet.http.Cookie)|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///javax/servlet/http/Cookie/setPath(java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getResponse()|",
+      "|java+constructor:///javax/servlet/http/Cookie/Cookie(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/servlet/http/Cookie/setMaxAge(int)|",
+      "|java+method:///javax/servlet/http/Cookie/setPath(java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getResponse()|",
+      "|java+constructor:///javax/servlet/http/Cookie/Cookie(java.lang.String,java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/addCookie(javax.servlet.http.Cookie)|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|"
+    ],
+    "affectedLib": "org.kie.commons:kie-commons-validation:6.0.0.CR5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "caller": "|java+method:///org/uberfire/security/server/auth/RememberMeCookieAuthScheme/isAuthenticationRequest(org.uberfire.security.SecurityContext)|",
+    "called": "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/uberfire/security/server/auth/CookieStorage/load(org.uberfire.security.SecurityContext)|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/uberfire/security/server/auth/CookieStorage/load(org.uberfire.security.SecurityContext)|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|"
+    ],
+    "affectedLib": "org.kie.commons:kie-commons-validation:6.0.0.CR5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "caller": "|java+method:///org/uberfire/security/server/HttpSecurityManagerImpl/authorize(org.uberfire.security.SecurityContext)|",
+    "called": "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getResource()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getCurrentSubject()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/uberfire/security/authz/AuthorizationManager/authorize(org.uberfire.security.Resource,org.uberfire.security.Subject)|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/uberfire/security/authz/AuthorizationManager/supports(org.uberfire.security.Resource)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getResource()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getCurrentSubject()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/uberfire/security/authz/AuthorizationManager/authorize(org.uberfire.security.Resource,org.uberfire.security.Subject)|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/uberfire/security/authz/AuthorizationManager/supports(org.uberfire.security.Resource)|"
+    ],
+    "affectedLib": "org.kie.commons:kie-commons-validation:6.0.0.CR5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "caller": "|java+method:///org/uberfire/security/server/auth/FormAuthenticationScheme/challengeClient(org.uberfire.security.SecurityContext)|",
+    "called": "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/RequestDispatcher/forward(javax.servlet.ServletRequest,javax.servlet.ServletResponse)|",
+      "|java+constructor:///org/uberfire/security/auth/AuthenticationException/AuthenticationException(java.lang.Exception)|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getResponse()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/setStatus(int)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRequestDispatcher(java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/servlet/RequestDispatcher/forward(javax.servlet.ServletRequest,javax.servlet.ServletResponse)|",
+      "|java+constructor:///org/uberfire/security/auth/AuthenticationException/AuthenticationException(java.lang.Exception)|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getResponse()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/setStatus(int)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRequestDispatcher(java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|"
+    ],
+    "affectedLib": "org.kie.commons:kie-commons-validation:6.0.0.CR5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "caller": "|java+method:///org/uberfire/security/server/auth/HttpSessionStorage/cleanup(org.uberfire.security.SecurityContext)|",
+    "called": "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/http/HttpSession/removeAttribute(java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getSession()|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/servlet/http/HttpSession/removeAttribute(java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getSession()|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|"
+    ],
+    "affectedLib": "org.kie.commons:kie-commons-validation:6.0.0.CR5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "caller": "|java+method:///org/uberfire/security/server/auth/HttpAuthenticationManager/logout(org.uberfire.security.SecurityContext)|",
+    "called": "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getSession()|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/uberfire/security/auth/AuthenticatedStorageProvider/cleanup(org.uberfire.security.SecurityContext)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///javax/servlet/http/HttpSession/invalidate()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/uberfire/security/auth/AuthenticatedStorageProvider/cleanup(org.uberfire.security.SecurityContext)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///javax/servlet/http/HttpSession/invalidate()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getSession()|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|"
+    ],
+    "affectedLib": "org.kie.commons:kie-commons-validation:6.0.0.CR5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "caller": "|java+method:///org/uberfire/security/server/auth/HttpAuthenticationManager/authenticate(org.uberfire.security.SecurityContext)|",
+    "called": "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/uberfire/security/auth/AuthenticationResult/getPrincipal()|",
+      "|java+method:///javax/servlet/RequestDispatcher/forward(javax.servlet.ServletRequest,javax.servlet.ServletResponse)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getResource()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/uberfire/security/auth/AuthenticationScheme/challengeClient(org.uberfire.security.SecurityContext)|",
+      "|java+method:///org/uberfire/security/auth/RoleProvider/loadRoles(org.uberfire.security.auth.Principal)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/uberfire/security/server/auth/HttpAuthenticationManager/useRedirect(java.lang.String)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///org/uberfire/security/impl/IdentityImpl/IdentityImpl(java.lang.String,java.util.List,java.util.Map)|",
+      "|java+method:///org/uberfire/security/ResourceManager/requiresAuthentication(org.uberfire.security.Resource)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///javax/servlet/http/HttpSession/getId()|",
+      "|java+method:///org/uberfire/security/auth/AuthenticatedStorageProvider/load(org.uberfire.security.SecurityContext)|",
+      "|java+method:///java/util/Map/putAll(java.util.Map)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRequestDispatcher(java.lang.String)|",
+      "|java+method:///org/uberfire/security/auth/AuthenticationScheme/isAuthenticationRequest(org.uberfire.security.SecurityContext)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///org/uberfire/security/auth/Principal/getName()|",
+      "|java+constructor:///org/uberfire/security/auth/AuthenticationException/AuthenticationException(java.lang.String)|",
+      "|java+method:///java/util/List/addAll(java.util.Collection)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/sendRedirect(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getContextPath()|",
+      "|java+method:///org/uberfire/security/server/cdi/SecurityFactory/setSubject(org.uberfire.security.Subject)|",
+      "|java+method:///org/uberfire/security/auth/AuthenticationProvider/authenticate(org.uberfire.security.auth.Credential,org.uberfire.security.SecurityContext)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getSession()|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/uberfire/security/auth/AuthenticatedStorageProvider/store(org.uberfire.security.SecurityContext,org.uberfire.security.Subject)|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///java/util/Map/containsKey(java.lang.Object)|",
+      "|java+method:///org/uberfire/security/auth/AuthenticationScheme/buildCredential(org.uberfire.security.SecurityContext)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getQueryString()|",
+      "|java+method:///org/uberfire/security/auth/AuthenticationResult/getStatus()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRequestURI()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/isCommitted()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///org/uberfire/security/impl/RoleImpl/RoleImpl(java.lang.String)|",
+      "|java+method:///java/lang/String/replaceFirst(java.lang.String,java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getResponse()|",
+      "|java+method:///org/uberfire/security/auth/SubjectPropertiesProvider/loadProperties(org.uberfire.security.auth.Principal)|",
+      "|java+method:///java/util/Map/remove(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/uberfire/security/auth/AuthenticationStatus/equals(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/uberfire/security/auth/AuthenticationResult/getPrincipal()|",
+      "|java+method:///javax/servlet/RequestDispatcher/forward(javax.servlet.ServletRequest,javax.servlet.ServletResponse)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getResource()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/uberfire/security/auth/AuthenticationScheme/challengeClient(org.uberfire.security.SecurityContext)|",
+      "|java+method:///org/uberfire/security/auth/RoleProvider/loadRoles(org.uberfire.security.auth.Principal)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/uberfire/security/server/auth/HttpAuthenticationManager/useRedirect(java.lang.String)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///org/uberfire/security/impl/IdentityImpl/IdentityImpl(java.lang.String,java.util.List,java.util.Map)|",
+      "|java+method:///org/uberfire/security/ResourceManager/requiresAuthentication(org.uberfire.security.Resource)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///javax/servlet/http/HttpSession/getId()|",
+      "|java+method:///org/uberfire/security/auth/AuthenticatedStorageProvider/load(org.uberfire.security.SecurityContext)|",
+      "|java+method:///java/util/Map/putAll(java.util.Map)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRequestDispatcher(java.lang.String)|",
+      "|java+method:///org/uberfire/security/auth/AuthenticationScheme/isAuthenticationRequest(org.uberfire.security.SecurityContext)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///org/uberfire/security/auth/Principal/getName()|",
+      "|java+constructor:///org/uberfire/security/auth/AuthenticationException/AuthenticationException(java.lang.String)|",
+      "|java+method:///java/util/List/addAll(java.util.Collection)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/sendRedirect(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getContextPath()|",
+      "|java+method:///org/uberfire/security/server/cdi/SecurityFactory/setSubject(org.uberfire.security.Subject)|",
+      "|java+method:///org/uberfire/security/auth/AuthenticationProvider/authenticate(org.uberfire.security.auth.Credential,org.uberfire.security.SecurityContext)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getSession()|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/uberfire/security/auth/AuthenticatedStorageProvider/store(org.uberfire.security.SecurityContext,org.uberfire.security.Subject)|",
+      "|java+method:///java/util/Map/containsKey(java.lang.Object)|",
+      "|java+method:///org/uberfire/security/auth/AuthenticationScheme/buildCredential(org.uberfire.security.SecurityContext)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getQueryString()|",
+      "|java+method:///org/uberfire/security/auth/AuthenticationResult/getStatus()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRequestURI()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/isCommitted()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///org/uberfire/security/impl/RoleImpl/RoleImpl(java.lang.String)|",
+      "|java+method:///java/lang/String/replaceFirst(java.lang.String,java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getResponse()|",
+      "|java+method:///org/uberfire/security/auth/SubjectPropertiesProvider/loadProperties(org.uberfire.security.auth.Principal)|",
+      "|java+method:///java/util/Map/remove(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/uberfire/security/auth/AuthenticationStatus/equals(java.lang.Object)|"
+    ],
+    "affectedLib": "org.kie.commons:kie-commons-validation:6.0.0.CR5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "caller": "|java+method:///org/uberfire/security/server/auth/FormAuthenticationScheme/isAuthenticationRequest(org.uberfire.security.SecurityContext)|",
+    "called": "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///java/lang/String/contains(java.lang.CharSequence)|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRequestURI()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRequestURI()|",
+      "|java+method:///java/lang/String/contains(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "org.kie.commons:kie-commons-validation:6.0.0.CR5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "caller": "|java+constructor:///org/uberfire/security/server/authz/URLAccessDecisionManager/URLAccessDecisionManager(org.uberfire.security.ResourceManager)|",
+    "called": "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.kie.commons:kie-commons-validation:6.0.0.CR5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "caller": "|java+method:///org/uberfire/security/server/auth/FormAuthenticationScheme/buildCredential(org.uberfire.security.SecurityContext)|",
+    "called": "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getParameter(java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+constructor:///org/uberfire/security/impl/auth/UsernamePasswordCredential/UsernamePasswordCredential(java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getParameter(java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+constructor:///org/uberfire/security/impl/auth/UsernamePasswordCredential/UsernamePasswordCredential(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "org.kie.commons:kie-commons-validation:6.0.0.CR5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "caller": "|java+method:///org/uberfire/security/server/authz/URLAccessDecisionManager/decide(org.uberfire.security.Resource,org.uberfire.security.Subject,org.uberfire.security.authz.RoleDecisionManager)|",
+    "called": "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+constructor:///org/uberfire/security/impl/authz/RolesResourceImpl/RolesResourceImpl(java.util.List)|",
+      "|java+method:///org/uberfire/security/server/URLResourceManager/getMandatoryRoles(org.uberfire.security.server.URLResource)|",
+      "|java+method:///org/uberfire/security/authz/RoleDecisionManager/decide(org.uberfire.security.authz.RolesResource,org.uberfire.security.Subject)|",
+      "|java+method:///org/uberfire/security/authz/VotingStrategy/vote(java.lang.Iterable)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+constructor:///org/uberfire/security/impl/authz/RolesResourceImpl/RolesResourceImpl(java.util.List)|",
+      "|java+method:///org/uberfire/security/server/URLResourceManager/getMandatoryRoles(org.uberfire.security.server.URLResource)|",
+      "|java+method:///org/uberfire/security/authz/RoleDecisionManager/decide(org.uberfire.security.authz.RolesResource,org.uberfire.security.Subject)|",
+      "|java+method:///org/uberfire/security/authz/VotingStrategy/vote(java.lang.Iterable)|"
+    ],
+    "affectedLib": "org.kie.commons:kie-commons-validation:6.0.0.CR5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "caller": "|java+method:///org/uberfire/security/server/auth/JACCAuthenticationScheme/buildCredential(org.uberfire.security.SecurityContext)|",
+    "called": "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getUserPrincipal()|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///java/security/Principal/getName()|",
+      "|java+constructor:///org/uberfire/security/impl/auth/UserNameCredential/UserNameCredential(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getUserPrincipal()|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///java/security/Principal/getName()|",
+      "|java+constructor:///org/uberfire/security/impl/auth/UserNameCredential/UserNameCredential(java.lang.String)|"
+    ],
+    "affectedLib": "org.kie.commons:kie-commons-validation:6.0.0.CR5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "caller": "|java+method:///org/uberfire/security/server/auth/HttpBasicAuthenticationScheme/isAuthenticationRequest(org.uberfire.security.SecurityContext)|",
+    "called": "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getHeader(java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getHeader(java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|"
+    ],
+    "affectedLib": "org.uberfire:uberfire-commons:0.3.0.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "caller": "|java+method:///org/uberfire/security/server/HttpSecurityManagerImpl/authenticate(org.uberfire.security.SecurityContext)|",
+    "called": "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///org/uberfire/security/auth/AuthenticationException/AuthenticationException(java.lang.String,java.lang.Exception)|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/uberfire/security/auth/AuthenticationManager/authenticate(org.uberfire.security.SecurityContext)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/setCurrentSubject(org.uberfire.security.Subject)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/uberfire/security/auth/AuthenticationException/AuthenticationException(java.lang.String,java.lang.Exception)|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/uberfire/security/auth/AuthenticationManager/authenticate(org.uberfire.security.SecurityContext)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/setCurrentSubject(org.uberfire.security.Subject)|"
+    ],
+    "affectedLib": "org.uberfire:uberfire-commons:0.3.0.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "caller": "|java+method:///org/uberfire/security/server/HttpSecurityManagerImpl/newSecurityContext(java.lang.Object%5B%5D)|",
+    "called": "|java+method:///org/uberfire/commons/validation/PortablePreconditions/checkNotEmpty(java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList(int)|",
+      "|java+method:///java/util/Collections/emptyList()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/kie/commons/validation/PortablePreconditions/checkNotNull(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/List/toArray(java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/uberfire/security/server/HttpSecurityContext/HttpSecurityContext(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Object%5B%5D)|",
+      "|java+method:///org/kie/commons/validation/PortablePreconditions/checkNotEmpty(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/kie/commons/validation/PortablePreconditions/checkCondition(java.lang.String,boolean)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList(int)|",
+      "|java+method:///java/util/Collections/emptyList()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/List/toArray(java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/uberfire/security/server/HttpSecurityContext/HttpSecurityContext(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Object%5B%5D)|",
+      "|java+method:///org/uberfire/commons/validation/PortablePreconditions/checkNotNull(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/uberfire/commons/validation/PortablePreconditions/checkNotEmpty(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/uberfire/commons/validation/PortablePreconditions/checkCondition(java.lang.String,boolean)|"
+    ],
+    "affectedLib": "org.uberfire:uberfire-commons:0.3.0.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "caller": "|java+method:///org/uberfire/security/server/URLResourceManager/requiresAuthentication(org.uberfire.security.Resource)|",
+    "called": "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/uberfire/security/server/util/AntPathMatcher/match(java.lang.String,java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/URLResourceManager$Resources/getExcludedResources()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/contains(java.lang.Object)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/uberfire/security/server/URLResource/getURL()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/uberfire/security/server/util/AntPathMatcher/match(java.lang.String,java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/URLResourceManager$Resources/getExcludedResources()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///org/uberfire/security/server/URLResource/getURL()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///java/util/Set/contains(java.lang.Object)|"
+    ],
+    "affectedLib": "org.uberfire:uberfire-commons:0.3.0.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "caller": "|java+method:///org/uberfire/security/server/auth/HttpSessionStorage/store(org.uberfire.security.SecurityContext,org.uberfire.security.Subject)|",
+    "called": "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///javax/servlet/http/HttpSession/setAttribute(java.lang.String,java.lang.Object)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getSession()|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///javax/servlet/http/HttpSession/setAttribute(java.lang.String,java.lang.Object)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getSession()|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|"
+    ],
+    "affectedLib": "org.uberfire:uberfire-commons:0.3.0.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "caller": "|java+method:///org/uberfire/security/server/auth/CookieStorage/load(org.uberfire.security.SecurityContext)|",
+    "called": "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getCookies()|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///org/uberfire/security/crypt/CryptProvider/decrypt(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+constructor:///org/uberfire/security/impl/auth/PrincipalImpl/PrincipalImpl(java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/auth/CookieStorage/getCookieValue(java.lang.String,java.lang.String,javax.servlet.http.Cookie%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getCookies()|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///org/uberfire/security/crypt/CryptProvider/decrypt(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+constructor:///org/uberfire/security/impl/auth/PrincipalImpl/PrincipalImpl(java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/auth/CookieStorage/getCookieValue(java.lang.String,java.lang.String,javax.servlet.http.Cookie%5B%5D)|"
+    ],
+    "affectedLib": "org.uberfire:uberfire-commons:0.3.0.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "caller": "|java+constructor:///org/uberfire/security/server/URLResourceManager$Resources/URLResourceManager$Resources(java.util.Map)|",
+    "called": "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/util/Collections/emptyList()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/HashMap/HashMap(int)|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(int)|",
+      "|java+method:///java/util/Collections/emptyMap()|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkNotNull(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///org/uberfire/security/impl/RoleImpl/RoleImpl(java.lang.String)|",
+      "|java+constructor:///java/util/HashSet/HashSet(java.util.Collection)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/util/Collections/emptyList()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkNotNull(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+constructor:///java/util/HashMap/HashMap(int)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(int)|",
+      "|java+method:///java/util/Collections/emptyMap()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///org/uberfire/security/impl/RoleImpl/RoleImpl(java.lang.String)|",
+      "|java+constructor:///java/util/HashSet/HashSet(java.util.Collection)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.uberfire:uberfire-commons:0.3.0.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "caller": "|java+method:///org/uberfire/security/server/auth/HttpSessionStorage/load(org.uberfire.security.SecurityContext)|",
+    "called": "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/http/HttpSession/getAttribute(java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getSession()|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/servlet/http/HttpSession/getAttribute(java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getSession()|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|"
+    ],
+    "affectedLib": "org.uberfire:uberfire-commons:0.3.0.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "caller": "|java+method:///org/uberfire/security/server/auth/source/HttpServletRequestAuthenticationSource/authenticate(org.uberfire.security.auth.Credential,org.uberfire.security.SecurityContext)|",
+    "called": "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///javax/security/jacc/PolicyContext/getContext(java.lang.String)|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/uberfire/security/server/auth/source/JACCAuthenticationSource/authenticate(org.uberfire.security.auth.Credential,org.uberfire.security.SecurityContext)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/login(java.lang.String,java.lang.String)|",
+      "|java+method:///org/uberfire/security/impl/auth/UserNameCredential/getUserName()|",
+      "|java+method:///org/uberfire/security/impl/auth/UsernamePasswordCredential/getPassword()|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/security/jacc/PolicyContext/getContext(java.lang.String)|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/uberfire/security/server/auth/source/JACCAuthenticationSource/authenticate(org.uberfire.security.auth.Credential,org.uberfire.security.SecurityContext)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/login(java.lang.String,java.lang.String)|",
+      "|java+method:///org/uberfire/security/impl/auth/UserNameCredential/getUserName()|",
+      "|java+method:///org/uberfire/security/impl/auth/UsernamePasswordCredential/getPassword()|"
+    ],
+    "affectedLib": "org.uberfire:uberfire-commons:0.3.0.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "caller": "|java+method:///org/uberfire/security/server/auth/source/AbstractDatabaseAuthSource/authenticate(org.uberfire.security.auth.Credential,org.uberfire.security.SecurityContext)|",
+    "called": "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/sql/Connection/close()|",
+      "|java+method:///org/uberfire/security/impl/auth/UsernamePasswordCredential/getUserName()|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/uberfire/security/impl/auth/UsernamePasswordCredential/getPassword()|",
+      "|java+method:///org/uberfire/security/server/auth/source/AbstractDatabaseAuthSource/getConnection()|",
+      "|java+method:///java/sql/Connection/prepareStatement(java.lang.String)|",
+      "|java+method:///java/sql/PreparedStatement/setObject(int,java.lang.Object)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.Throwable)|",
+      "|java+method:///java/sql/PreparedStatement/setString(int,java.lang.String)|",
+      "|java+method:///java/sql/ResultSet/next()|",
+      "|java+method:///java/sql/PreparedStatement/close()|",
+      "|java+method:///java/sql/ResultSet/close()|",
+      "|java+method:///java/sql/PreparedStatement/executeQuery()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/sql/Connection/close()|",
+      "|java+method:///org/uberfire/security/impl/auth/UsernamePasswordCredential/getUserName()|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/uberfire/security/impl/auth/UsernamePasswordCredential/getPassword()|",
+      "|java+method:///org/uberfire/security/server/auth/source/AbstractDatabaseAuthSource/getConnection()|",
+      "|java+method:///java/sql/Connection/prepareStatement(java.lang.String)|",
+      "|java+method:///java/sql/PreparedStatement/setObject(int,java.lang.Object)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.Throwable)|",
+      "|java+method:///java/sql/PreparedStatement/setString(int,java.lang.String)|",
+      "|java+method:///java/sql/ResultSet/next()|",
+      "|java+method:///java/sql/PreparedStatement/close()|",
+      "|java+method:///java/sql/ResultSet/close()|",
+      "|java+method:///java/sql/PreparedStatement/executeQuery()|"
+    ],
+    "affectedLib": "org.uberfire:uberfire-commons:0.3.0.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "caller": "|java+method:///org/uberfire/security/server/auth/source/PropertyUserSource/authenticate(org.uberfire.security.auth.Credential,org.uberfire.security.SecurityContext)|",
+    "called": "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/uberfire/security/impl/auth/UsernamePasswordCredential/getUserName()|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/uberfire/security/impl/auth/UsernamePasswordCredential/getPassword()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/uberfire/security/impl/auth/UsernamePasswordCredential/getUserName()|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/uberfire/security/impl/auth/UsernamePasswordCredential/getPassword()|"
+    ],
+    "affectedLib": "org.uberfire:uberfire-commons:0.3.0.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "caller": "|java+constructor:///org/uberfire/security/server/auth/DefaultAuthenticationProvider/DefaultAuthenticationProvider(org.uberfire.security.auth.AuthenticationSource)|",
+    "called": "|java+method:///org/uberfire/commons/validation/PortablePreconditions/checkNotNull(java.lang.String,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/kie/commons/validation/PortablePreconditions/checkNotNull(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/uberfire/commons/validation/PortablePreconditions/checkNotNull(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.uberfire:uberfire-commons:0.3.0.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "caller": "|java+method:///org/uberfire/security/server/auth/RememberMeCookieAuthScheme/buildCredential(org.uberfire.security.SecurityContext)|",
+    "called": "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/lang/Boolean/toString()|",
+      "|java+method:///org/uberfire/security/server/auth/CookieStorage/load(org.uberfire.security.SecurityContext)|",
+      "|java+method:///org/uberfire/security/auth/Principal/getName()|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+constructor:///org/uberfire/security/server/auth/RememberMeCookieAuthScheme$RememberMeCredential/RememberMeCookieAuthScheme$RememberMeCredential(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Boolean/toString()|",
+      "|java+method:///org/uberfire/security/server/auth/CookieStorage/load(org.uberfire.security.SecurityContext)|",
+      "|java+method:///org/uberfire/security/auth/Principal/getName()|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+constructor:///org/uberfire/security/server/auth/RememberMeCookieAuthScheme$RememberMeCredential/RememberMeCookieAuthScheme$RememberMeCredential(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.uberfire:uberfire-commons:0.3.0.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "caller": "|java+method:///org/uberfire/security/server/auth/CookieStorage/store(org.uberfire.security.SecurityContext,org.uberfire.security.Subject)|",
+    "called": "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/http/Cookie/setMaxAge(int)|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/addCookie(javax.servlet.http.Cookie)|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getResponse()|",
+      "|java+constructor:///javax/servlet/http/Cookie/Cookie(java.lang.String,java.lang.String)|",
+      "|java+method:///org/uberfire/security/Subject/getName()|",
+      "|java+method:///org/uberfire/security/crypt/CryptProvider/encrypt(java.lang.String,java.lang.Object)|",
+      "|java+method:///javax/servlet/http/Cookie/setPath(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/servlet/http/Cookie/setMaxAge(int)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getResponse()|",
+      "|java+constructor:///javax/servlet/http/Cookie/Cookie(java.lang.String,java.lang.String)|",
+      "|java+method:///org/uberfire/security/Subject/getName()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/addCookie(javax.servlet.http.Cookie)|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/uberfire/security/crypt/CryptProvider/encrypt(java.lang.String,java.lang.Object)|",
+      "|java+method:///javax/servlet/http/Cookie/setPath(java.lang.String)|"
+    ],
+    "affectedLib": "org.uberfire:uberfire-commons:0.3.0.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "caller": "|java+constructor:///org/uberfire/security/server/auth/HttpAuthenticationManager/HttpAuthenticationManager(java.util.List,java.lang.String,java.util.List,java.util.List,java.util.List,java.util.List,org.uberfire.security.ResourceManager)|",
+    "called": "|java+method:///org/uberfire/commons/validation/PortablePreconditions/checkNotEmpty(java.lang.String,java.util.Collection)|",
+    "v1Body": [
+      "|java+method:///org/kie/commons/validation/PortablePreconditions/checkNotNull(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/kie/commons/validation/PortablePreconditions/checkNotEmpty(java.lang.String,java.util.Collection)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/uberfire/commons/validation/PortablePreconditions/checkNotEmpty(java.lang.String,java.util.Collection)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/uberfire/commons/validation/PortablePreconditions/checkNotNull(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.uberfire:uberfire-commons:0.3.0.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "caller": "|java+method:///org/uberfire/security/server/auth/source/JACCAuthenticationSource/authenticate(org.uberfire.security.auth.Credential,org.uberfire.security.SecurityContext)|",
+    "called": "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///javax/security/jacc/PolicyContext/getContext(java.lang.String)|",
+      "|java+method:///javax/security/auth/Subject/getPrincipals()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/uberfire/security/impl/auth/UserNameCredential/getUserName()|",
+      "|java+method:///java/security/Principal/getName()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Exception/printStackTrace()|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/security/jacc/PolicyContext/getContext(java.lang.String)|",
+      "|java+method:///javax/security/auth/Subject/getPrincipals()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///org/uberfire/security/impl/auth/UserNameCredential/getUserName()|",
+      "|java+method:///java/security/Principal/getName()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Exception/printStackTrace()|"
+    ],
+    "affectedLib": "org.uberfire:uberfire-commons:0.3.0.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "caller": "|java+method:///org/uberfire/security/server/auth/HttpBasicAuthenticationScheme/buildCredential(org.uberfire.security.SecurityContext)|",
+    "called": "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getHeader(java.lang.String)|",
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D,java.nio.charset.Charset)|",
+      "|java+constructor:///org/uberfire/security/impl/auth/UsernamePasswordCredential/UsernamePasswordCredential(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apache/commons/codec/binary/Base64/decodeBase64(java.lang.String)|",
+      "|java+method:///java/lang/String/indexOf(int)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getHeader(java.lang.String)|",
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D,java.nio.charset.Charset)|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+constructor:///org/uberfire/security/impl/auth/UsernamePasswordCredential/UsernamePasswordCredential(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apache/commons/codec/binary/Base64/decodeBase64(java.lang.String)|",
+      "|java+method:///java/lang/String/indexOf(int)|"
+    ],
+    "affectedLib": "org.uberfire:uberfire-commons:0.3.0.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "caller": "|java+method:///org/uberfire/security/server/auth/CookieStorage/cleanup(org.uberfire.security.SecurityContext)|",
+    "called": "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/http/Cookie/setMaxAge(int)|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/addCookie(javax.servlet.http.Cookie)|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///javax/servlet/http/Cookie/setPath(java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getResponse()|",
+      "|java+constructor:///javax/servlet/http/Cookie/Cookie(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/servlet/http/Cookie/setMaxAge(int)|",
+      "|java+method:///javax/servlet/http/Cookie/setPath(java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getResponse()|",
+      "|java+constructor:///javax/servlet/http/Cookie/Cookie(java.lang.String,java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/addCookie(javax.servlet.http.Cookie)|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|"
+    ],
+    "affectedLib": "org.uberfire:uberfire-commons:0.3.0.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "caller": "|java+method:///org/uberfire/security/server/auth/RememberMeCookieAuthScheme/isAuthenticationRequest(org.uberfire.security.SecurityContext)|",
+    "called": "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/uberfire/security/server/auth/CookieStorage/load(org.uberfire.security.SecurityContext)|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/uberfire/security/server/auth/CookieStorage/load(org.uberfire.security.SecurityContext)|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|"
+    ],
+    "affectedLib": "org.uberfire:uberfire-commons:0.3.0.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "caller": "|java+method:///org/uberfire/security/server/HttpSecurityManagerImpl/authorize(org.uberfire.security.SecurityContext)|",
+    "called": "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getResource()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getCurrentSubject()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/uberfire/security/authz/AuthorizationManager/authorize(org.uberfire.security.Resource,org.uberfire.security.Subject)|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/uberfire/security/authz/AuthorizationManager/supports(org.uberfire.security.Resource)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getResource()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getCurrentSubject()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/uberfire/security/authz/AuthorizationManager/authorize(org.uberfire.security.Resource,org.uberfire.security.Subject)|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/uberfire/security/authz/AuthorizationManager/supports(org.uberfire.security.Resource)|"
+    ],
+    "affectedLib": "org.uberfire:uberfire-commons:0.3.0.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "caller": "|java+method:///org/uberfire/security/server/auth/FormAuthenticationScheme/challengeClient(org.uberfire.security.SecurityContext)|",
+    "called": "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/RequestDispatcher/forward(javax.servlet.ServletRequest,javax.servlet.ServletResponse)|",
+      "|java+constructor:///org/uberfire/security/auth/AuthenticationException/AuthenticationException(java.lang.Exception)|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getResponse()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/setStatus(int)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRequestDispatcher(java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/servlet/RequestDispatcher/forward(javax.servlet.ServletRequest,javax.servlet.ServletResponse)|",
+      "|java+constructor:///org/uberfire/security/auth/AuthenticationException/AuthenticationException(java.lang.Exception)|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getResponse()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/setStatus(int)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRequestDispatcher(java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|"
+    ],
+    "affectedLib": "org.uberfire:uberfire-commons:0.3.0.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "caller": "|java+method:///org/uberfire/security/server/auth/HttpSessionStorage/cleanup(org.uberfire.security.SecurityContext)|",
+    "called": "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/http/HttpSession/removeAttribute(java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getSession()|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/servlet/http/HttpSession/removeAttribute(java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getSession()|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|"
+    ],
+    "affectedLib": "org.uberfire:uberfire-commons:0.3.0.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "caller": "|java+method:///org/uberfire/security/server/auth/HttpAuthenticationManager/logout(org.uberfire.security.SecurityContext)|",
+    "called": "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getSession()|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/uberfire/security/auth/AuthenticatedStorageProvider/cleanup(org.uberfire.security.SecurityContext)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///javax/servlet/http/HttpSession/invalidate()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/uberfire/security/auth/AuthenticatedStorageProvider/cleanup(org.uberfire.security.SecurityContext)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///javax/servlet/http/HttpSession/invalidate()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getSession()|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|"
+    ],
+    "affectedLib": "org.uberfire:uberfire-commons:0.3.0.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "caller": "|java+method:///org/uberfire/security/server/auth/HttpAuthenticationManager/authenticate(org.uberfire.security.SecurityContext)|",
+    "called": "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/uberfire/security/auth/AuthenticationResult/getPrincipal()|",
+      "|java+method:///javax/servlet/RequestDispatcher/forward(javax.servlet.ServletRequest,javax.servlet.ServletResponse)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getResource()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/uberfire/security/auth/AuthenticationScheme/challengeClient(org.uberfire.security.SecurityContext)|",
+      "|java+method:///org/uberfire/security/auth/RoleProvider/loadRoles(org.uberfire.security.auth.Principal)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/uberfire/security/server/auth/HttpAuthenticationManager/useRedirect(java.lang.String)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///org/uberfire/security/impl/IdentityImpl/IdentityImpl(java.lang.String,java.util.List,java.util.Map)|",
+      "|java+method:///org/uberfire/security/ResourceManager/requiresAuthentication(org.uberfire.security.Resource)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///javax/servlet/http/HttpSession/getId()|",
+      "|java+method:///org/uberfire/security/auth/AuthenticatedStorageProvider/load(org.uberfire.security.SecurityContext)|",
+      "|java+method:///java/util/Map/putAll(java.util.Map)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRequestDispatcher(java.lang.String)|",
+      "|java+method:///org/uberfire/security/auth/AuthenticationScheme/isAuthenticationRequest(org.uberfire.security.SecurityContext)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///org/uberfire/security/auth/Principal/getName()|",
+      "|java+constructor:///org/uberfire/security/auth/AuthenticationException/AuthenticationException(java.lang.String)|",
+      "|java+method:///java/util/List/addAll(java.util.Collection)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/sendRedirect(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getContextPath()|",
+      "|java+method:///org/uberfire/security/server/cdi/SecurityFactory/setSubject(org.uberfire.security.Subject)|",
+      "|java+method:///org/uberfire/security/auth/AuthenticationProvider/authenticate(org.uberfire.security.auth.Credential,org.uberfire.security.SecurityContext)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getSession()|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/uberfire/security/auth/AuthenticatedStorageProvider/store(org.uberfire.security.SecurityContext,org.uberfire.security.Subject)|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///java/util/Map/containsKey(java.lang.Object)|",
+      "|java+method:///org/uberfire/security/auth/AuthenticationScheme/buildCredential(org.uberfire.security.SecurityContext)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getQueryString()|",
+      "|java+method:///org/uberfire/security/auth/AuthenticationResult/getStatus()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRequestURI()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/isCommitted()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///org/uberfire/security/impl/RoleImpl/RoleImpl(java.lang.String)|",
+      "|java+method:///java/lang/String/replaceFirst(java.lang.String,java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getResponse()|",
+      "|java+method:///org/uberfire/security/auth/SubjectPropertiesProvider/loadProperties(org.uberfire.security.auth.Principal)|",
+      "|java+method:///java/util/Map/remove(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/uberfire/security/auth/AuthenticationStatus/equals(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/uberfire/security/auth/AuthenticationResult/getPrincipal()|",
+      "|java+method:///javax/servlet/RequestDispatcher/forward(javax.servlet.ServletRequest,javax.servlet.ServletResponse)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getResource()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/uberfire/security/auth/AuthenticationScheme/challengeClient(org.uberfire.security.SecurityContext)|",
+      "|java+method:///org/uberfire/security/auth/RoleProvider/loadRoles(org.uberfire.security.auth.Principal)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/uberfire/security/server/auth/HttpAuthenticationManager/useRedirect(java.lang.String)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///org/uberfire/security/impl/IdentityImpl/IdentityImpl(java.lang.String,java.util.List,java.util.Map)|",
+      "|java+method:///org/uberfire/security/ResourceManager/requiresAuthentication(org.uberfire.security.Resource)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///javax/servlet/http/HttpSession/getId()|",
+      "|java+method:///org/uberfire/security/auth/AuthenticatedStorageProvider/load(org.uberfire.security.SecurityContext)|",
+      "|java+method:///java/util/Map/putAll(java.util.Map)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRequestDispatcher(java.lang.String)|",
+      "|java+method:///org/uberfire/security/auth/AuthenticationScheme/isAuthenticationRequest(org.uberfire.security.SecurityContext)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///org/uberfire/security/auth/Principal/getName()|",
+      "|java+constructor:///org/uberfire/security/auth/AuthenticationException/AuthenticationException(java.lang.String)|",
+      "|java+method:///java/util/List/addAll(java.util.Collection)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/sendRedirect(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getContextPath()|",
+      "|java+method:///org/uberfire/security/server/cdi/SecurityFactory/setSubject(org.uberfire.security.Subject)|",
+      "|java+method:///org/uberfire/security/auth/AuthenticationProvider/authenticate(org.uberfire.security.auth.Credential,org.uberfire.security.SecurityContext)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getSession()|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/uberfire/security/auth/AuthenticatedStorageProvider/store(org.uberfire.security.SecurityContext,org.uberfire.security.Subject)|",
+      "|java+method:///java/util/Map/containsKey(java.lang.Object)|",
+      "|java+method:///org/uberfire/security/auth/AuthenticationScheme/buildCredential(org.uberfire.security.SecurityContext)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getQueryString()|",
+      "|java+method:///org/uberfire/security/auth/AuthenticationResult/getStatus()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRequestURI()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/isCommitted()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///org/uberfire/security/impl/RoleImpl/RoleImpl(java.lang.String)|",
+      "|java+method:///java/lang/String/replaceFirst(java.lang.String,java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getResponse()|",
+      "|java+method:///org/uberfire/security/auth/SubjectPropertiesProvider/loadProperties(org.uberfire.security.auth.Principal)|",
+      "|java+method:///java/util/Map/remove(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/uberfire/security/auth/AuthenticationStatus/equals(java.lang.Object)|"
+    ],
+    "affectedLib": "org.uberfire:uberfire-commons:0.3.0.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "caller": "|java+method:///org/uberfire/security/server/auth/FormAuthenticationScheme/isAuthenticationRequest(org.uberfire.security.SecurityContext)|",
+    "called": "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///java/lang/String/contains(java.lang.CharSequence)|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRequestURI()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRequestURI()|",
+      "|java+method:///java/lang/String/contains(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "org.uberfire:uberfire-commons:0.3.0.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "caller": "|java+constructor:///org/uberfire/security/server/authz/URLAccessDecisionManager/URLAccessDecisionManager(org.uberfire.security.ResourceManager)|",
+    "called": "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.uberfire:uberfire-commons:0.3.0.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "caller": "|java+method:///org/uberfire/security/server/auth/FormAuthenticationScheme/buildCredential(org.uberfire.security.SecurityContext)|",
+    "called": "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getParameter(java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+constructor:///org/uberfire/security/impl/auth/UsernamePasswordCredential/UsernamePasswordCredential(java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getParameter(java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+constructor:///org/uberfire/security/impl/auth/UsernamePasswordCredential/UsernamePasswordCredential(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "org.uberfire:uberfire-commons:0.3.0.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "caller": "|java+method:///org/uberfire/security/server/authz/URLAccessDecisionManager/decide(org.uberfire.security.Resource,org.uberfire.security.Subject,org.uberfire.security.authz.RoleDecisionManager)|",
+    "called": "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+constructor:///org/uberfire/security/impl/authz/RolesResourceImpl/RolesResourceImpl(java.util.List)|",
+      "|java+method:///org/uberfire/security/server/URLResourceManager/getMandatoryRoles(org.uberfire.security.server.URLResource)|",
+      "|java+method:///org/uberfire/security/authz/RoleDecisionManager/decide(org.uberfire.security.authz.RolesResource,org.uberfire.security.Subject)|",
+      "|java+method:///org/uberfire/security/authz/VotingStrategy/vote(java.lang.Iterable)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+constructor:///org/uberfire/security/impl/authz/RolesResourceImpl/RolesResourceImpl(java.util.List)|",
+      "|java+method:///org/uberfire/security/server/URLResourceManager/getMandatoryRoles(org.uberfire.security.server.URLResource)|",
+      "|java+method:///org/uberfire/security/authz/RoleDecisionManager/decide(org.uberfire.security.authz.RolesResource,org.uberfire.security.Subject)|",
+      "|java+method:///org/uberfire/security/authz/VotingStrategy/vote(java.lang.Iterable)|"
+    ],
+    "affectedLib": "org.uberfire:uberfire-commons:0.3.0.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "caller": "|java+method:///org/uberfire/security/server/auth/JACCAuthenticationScheme/buildCredential(org.uberfire.security.SecurityContext)|",
+    "called": "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getUserPrincipal()|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///java/security/Principal/getName()|",
+      "|java+constructor:///org/uberfire/security/impl/auth/UserNameCredential/UserNameCredential(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getUserPrincipal()|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///java/security/Principal/getName()|",
+      "|java+constructor:///org/uberfire/security/impl/auth/UserNameCredential/UserNameCredential(java.lang.String)|"
+    ],
+    "affectedLib": "org.uberfire:uberfire-commons:0.3.0.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "caller": "|java+method:///org/uberfire/security/server/HttpSecurityManagerImpl/authenticate(org.uberfire.security.SecurityContext)|",
+    "called": "|java+constructor:///org/uberfire/security/auth/AuthenticationException/AuthenticationException(java.lang.String,java.lang.Exception)|",
+    "v1Body": [
+      "|java+constructor:///org/uberfire/security/auth/AuthenticationException/AuthenticationException(java.lang.String,java.lang.Exception)|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/uberfire/security/auth/AuthenticationManager/authenticate(org.uberfire.security.SecurityContext)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/setCurrentSubject(org.uberfire.security.Subject)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/uberfire/security/auth/AuthenticationException/AuthenticationException(java.lang.String,java.lang.Exception)|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/uberfire/security/auth/AuthenticationManager/authenticate(org.uberfire.security.SecurityContext)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/setCurrentSubject(org.uberfire.security.Subject)|"
+    ],
+    "affectedLib": "org.uberfire:uberfire-security-api:0.3.0.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "caller": "|java+method:///org/uberfire/security/server/auth/FormAuthenticationScheme/challengeClient(org.uberfire.security.SecurityContext)|",
+    "called": "|java+constructor:///org/uberfire/security/auth/AuthenticationException/AuthenticationException(java.lang.Exception)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/RequestDispatcher/forward(javax.servlet.ServletRequest,javax.servlet.ServletResponse)|",
+      "|java+constructor:///org/uberfire/security/auth/AuthenticationException/AuthenticationException(java.lang.Exception)|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getResponse()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/setStatus(int)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRequestDispatcher(java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/servlet/RequestDispatcher/forward(javax.servlet.ServletRequest,javax.servlet.ServletResponse)|",
+      "|java+constructor:///org/uberfire/security/auth/AuthenticationException/AuthenticationException(java.lang.Exception)|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getResponse()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/setStatus(int)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRequestDispatcher(java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|"
+    ],
+    "affectedLib": "org.uberfire:uberfire-security-api:0.3.0.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "caller": "|java+constructor:///org/uberfire/security/server/URLResourceManager$Resources/URLResourceManager$Resources(java.util.Map)|",
+    "called": "|java+constructor:///org/uberfire/security/impl/RoleImpl/RoleImpl(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/util/Collections/emptyList()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/HashMap/HashMap(int)|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(int)|",
+      "|java+method:///java/util/Collections/emptyMap()|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkNotNull(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///org/uberfire/security/impl/RoleImpl/RoleImpl(java.lang.String)|",
+      "|java+constructor:///java/util/HashSet/HashSet(java.util.Collection)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/util/Collections/emptyList()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkNotNull(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+constructor:///java/util/HashMap/HashMap(int)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(int)|",
+      "|java+method:///java/util/Collections/emptyMap()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///org/uberfire/security/impl/RoleImpl/RoleImpl(java.lang.String)|",
+      "|java+constructor:///java/util/HashSet/HashSet(java.util.Collection)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.uberfire:uberfire-security-api:0.3.0.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "caller": "|java+method:///org/uberfire/security/server/auth/CookieStorage/load(org.uberfire.security.SecurityContext)|",
+    "called": "|java+constructor:///org/uberfire/security/impl/auth/PrincipalImpl/PrincipalImpl(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getCookies()|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///org/uberfire/security/crypt/CryptProvider/decrypt(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+constructor:///org/uberfire/security/impl/auth/PrincipalImpl/PrincipalImpl(java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/auth/CookieStorage/getCookieValue(java.lang.String,java.lang.String,javax.servlet.http.Cookie%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getCookies()|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///org/uberfire/security/crypt/CryptProvider/decrypt(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+constructor:///org/uberfire/security/impl/auth/PrincipalImpl/PrincipalImpl(java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/auth/CookieStorage/getCookieValue(java.lang.String,java.lang.String,javax.servlet.http.Cookie%5B%5D)|"
+    ],
+    "affectedLib": "org.uberfire:uberfire-security-api:0.3.0.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "caller": "|java+method:///org/uberfire/security/server/auth/HttpAuthenticationManager/authenticate(org.uberfire.security.SecurityContext)|",
+    "called": "|java+constructor:///org/uberfire/security/impl/IdentityImpl/IdentityImpl(java.lang.String,java.util.List,java.util.Map)|",
+    "v1Body": [
+      "|java+method:///org/uberfire/security/auth/AuthenticationResult/getPrincipal()|",
+      "|java+method:///javax/servlet/RequestDispatcher/forward(javax.servlet.ServletRequest,javax.servlet.ServletResponse)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getResource()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/uberfire/security/auth/AuthenticationScheme/challengeClient(org.uberfire.security.SecurityContext)|",
+      "|java+method:///org/uberfire/security/auth/RoleProvider/loadRoles(org.uberfire.security.auth.Principal)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/uberfire/security/server/auth/HttpAuthenticationManager/useRedirect(java.lang.String)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///org/uberfire/security/impl/IdentityImpl/IdentityImpl(java.lang.String,java.util.List,java.util.Map)|",
+      "|java+method:///org/uberfire/security/ResourceManager/requiresAuthentication(org.uberfire.security.Resource)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///javax/servlet/http/HttpSession/getId()|",
+      "|java+method:///org/uberfire/security/auth/AuthenticatedStorageProvider/load(org.uberfire.security.SecurityContext)|",
+      "|java+method:///java/util/Map/putAll(java.util.Map)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRequestDispatcher(java.lang.String)|",
+      "|java+method:///org/uberfire/security/auth/AuthenticationScheme/isAuthenticationRequest(org.uberfire.security.SecurityContext)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///org/uberfire/security/auth/Principal/getName()|",
+      "|java+constructor:///org/uberfire/security/auth/AuthenticationException/AuthenticationException(java.lang.String)|",
+      "|java+method:///java/util/List/addAll(java.util.Collection)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/sendRedirect(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getContextPath()|",
+      "|java+method:///org/uberfire/security/server/cdi/SecurityFactory/setSubject(org.uberfire.security.Subject)|",
+      "|java+method:///org/uberfire/security/auth/AuthenticationProvider/authenticate(org.uberfire.security.auth.Credential,org.uberfire.security.SecurityContext)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getSession()|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/uberfire/security/auth/AuthenticatedStorageProvider/store(org.uberfire.security.SecurityContext,org.uberfire.security.Subject)|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///java/util/Map/containsKey(java.lang.Object)|",
+      "|java+method:///org/uberfire/security/auth/AuthenticationScheme/buildCredential(org.uberfire.security.SecurityContext)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getQueryString()|",
+      "|java+method:///org/uberfire/security/auth/AuthenticationResult/getStatus()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRequestURI()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/isCommitted()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///org/uberfire/security/impl/RoleImpl/RoleImpl(java.lang.String)|",
+      "|java+method:///java/lang/String/replaceFirst(java.lang.String,java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getResponse()|",
+      "|java+method:///org/uberfire/security/auth/SubjectPropertiesProvider/loadProperties(org.uberfire.security.auth.Principal)|",
+      "|java+method:///java/util/Map/remove(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/uberfire/security/auth/AuthenticationStatus/equals(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/uberfire/security/auth/AuthenticationResult/getPrincipal()|",
+      "|java+method:///javax/servlet/RequestDispatcher/forward(javax.servlet.ServletRequest,javax.servlet.ServletResponse)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getResource()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/uberfire/security/auth/AuthenticationScheme/challengeClient(org.uberfire.security.SecurityContext)|",
+      "|java+method:///org/uberfire/security/auth/RoleProvider/loadRoles(org.uberfire.security.auth.Principal)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/uberfire/security/server/auth/HttpAuthenticationManager/useRedirect(java.lang.String)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///org/uberfire/security/impl/IdentityImpl/IdentityImpl(java.lang.String,java.util.List,java.util.Map)|",
+      "|java+method:///org/uberfire/security/ResourceManager/requiresAuthentication(org.uberfire.security.Resource)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///javax/servlet/http/HttpSession/getId()|",
+      "|java+method:///org/uberfire/security/auth/AuthenticatedStorageProvider/load(org.uberfire.security.SecurityContext)|",
+      "|java+method:///java/util/Map/putAll(java.util.Map)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRequestDispatcher(java.lang.String)|",
+      "|java+method:///org/uberfire/security/auth/AuthenticationScheme/isAuthenticationRequest(org.uberfire.security.SecurityContext)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///org/uberfire/security/auth/Principal/getName()|",
+      "|java+constructor:///org/uberfire/security/auth/AuthenticationException/AuthenticationException(java.lang.String)|",
+      "|java+method:///java/util/List/addAll(java.util.Collection)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/sendRedirect(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getContextPath()|",
+      "|java+method:///org/uberfire/security/server/cdi/SecurityFactory/setSubject(org.uberfire.security.Subject)|",
+      "|java+method:///org/uberfire/security/auth/AuthenticationProvider/authenticate(org.uberfire.security.auth.Credential,org.uberfire.security.SecurityContext)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getSession()|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/uberfire/security/auth/AuthenticatedStorageProvider/store(org.uberfire.security.SecurityContext,org.uberfire.security.Subject)|",
+      "|java+method:///java/util/Map/containsKey(java.lang.Object)|",
+      "|java+method:///org/uberfire/security/auth/AuthenticationScheme/buildCredential(org.uberfire.security.SecurityContext)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getQueryString()|",
+      "|java+method:///org/uberfire/security/auth/AuthenticationResult/getStatus()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRequestURI()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/isCommitted()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///org/uberfire/security/impl/RoleImpl/RoleImpl(java.lang.String)|",
+      "|java+method:///java/lang/String/replaceFirst(java.lang.String,java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getResponse()|",
+      "|java+method:///org/uberfire/security/auth/SubjectPropertiesProvider/loadProperties(org.uberfire.security.auth.Principal)|",
+      "|java+method:///java/util/Map/remove(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/uberfire/security/auth/AuthenticationStatus/equals(java.lang.Object)|"
+    ],
+    "affectedLib": "org.uberfire:uberfire-security-api:0.3.0.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "caller": "|java+method:///org/uberfire/security/server/auth/FormAuthenticationScheme/buildCredential(org.uberfire.security.SecurityContext)|",
+    "called": "|java+constructor:///org/uberfire/security/impl/auth/UsernamePasswordCredential/UsernamePasswordCredential(java.lang.String,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getParameter(java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+constructor:///org/uberfire/security/impl/auth/UsernamePasswordCredential/UsernamePasswordCredential(java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getParameter(java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+constructor:///org/uberfire/security/impl/auth/UsernamePasswordCredential/UsernamePasswordCredential(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "org.uberfire:uberfire-security-api:0.3.0.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "caller": "|java+method:///org/uberfire/security/server/authz/URLAccessDecisionManager/decide(org.uberfire.security.Resource,org.uberfire.security.Subject,org.uberfire.security.authz.RoleDecisionManager)|",
+    "called": "|java+constructor:///org/uberfire/security/impl/authz/RolesResourceImpl/RolesResourceImpl(java.util.List)|",
+    "v1Body": [
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+constructor:///org/uberfire/security/impl/authz/RolesResourceImpl/RolesResourceImpl(java.util.List)|",
+      "|java+method:///org/uberfire/security/server/URLResourceManager/getMandatoryRoles(org.uberfire.security.server.URLResource)|",
+      "|java+method:///org/uberfire/security/authz/RoleDecisionManager/decide(org.uberfire.security.authz.RolesResource,org.uberfire.security.Subject)|",
+      "|java+method:///org/uberfire/security/authz/VotingStrategy/vote(java.lang.Iterable)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+constructor:///org/uberfire/security/impl/authz/RolesResourceImpl/RolesResourceImpl(java.util.List)|",
+      "|java+method:///org/uberfire/security/server/URLResourceManager/getMandatoryRoles(org.uberfire.security.server.URLResource)|",
+      "|java+method:///org/uberfire/security/authz/RoleDecisionManager/decide(org.uberfire.security.authz.RolesResource,org.uberfire.security.Subject)|",
+      "|java+method:///org/uberfire/security/authz/VotingStrategy/vote(java.lang.Iterable)|"
+    ],
+    "affectedLib": "org.uberfire:uberfire-security-api:0.3.0.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "caller": "|java+method:///org/uberfire/security/server/auth/JACCAuthenticationScheme/buildCredential(org.uberfire.security.SecurityContext)|",
+    "called": "|java+constructor:///org/uberfire/security/impl/auth/UserNameCredential/UserNameCredential(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getUserPrincipal()|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///java/security/Principal/getName()|",
+      "|java+constructor:///org/uberfire/security/impl/auth/UserNameCredential/UserNameCredential(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getUserPrincipal()|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///java/security/Principal/getName()|",
+      "|java+constructor:///org/uberfire/security/impl/auth/UserNameCredential/UserNameCredential(java.lang.String)|"
+    ],
+    "affectedLib": "org.uberfire:uberfire-security-api:0.3.0.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-security-server:0.3.0.CR5",
+    "coordinatesV2": "org.uberfire:uberfire-security-server:0.3.0.Final",
+    "caller": "|java+method:///org/uberfire/security/server/auth/HttpBasicAuthenticationScheme/buildCredential(org.uberfire.security.SecurityContext)|",
+    "called": "|java+constructor:///org/uberfire/security/impl/auth/UsernamePasswordCredential/UsernamePasswordCredential(java.lang.String,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getHeader(java.lang.String)|",
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D,java.nio.charset.Charset)|",
+      "|java+constructor:///org/uberfire/security/impl/auth/UsernamePasswordCredential/UsernamePasswordCredential(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apache/commons/codec/binary/Base64/decodeBase64(java.lang.String)|",
+      "|java+method:///java/lang/String/indexOf(int)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///org/kie/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getHeader(java.lang.String)|",
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+method:///org/uberfire/security/server/HttpSecurityContext/getRequest()|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D,java.nio.charset.Charset)|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+constructor:///org/uberfire/security/impl/auth/UsernamePasswordCredential/UsernamePasswordCredential(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apache/commons/codec/binary/Base64/decodeBase64(java.lang.String)|",
+      "|java+method:///java/lang/String/indexOf(int)|"
+    ],
+    "affectedLib": "org.uberfire:uberfire-security-api:0.3.0.Final",
+    "change": "UPDATED"
+  }
+]

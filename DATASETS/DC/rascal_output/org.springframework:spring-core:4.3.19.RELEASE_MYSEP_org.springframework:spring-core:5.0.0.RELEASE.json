@@ -1,0 +1,67 @@
+[
+  {
+    "coordinatesV1": "org.springframework:spring-core:5.0.0.RELEASE",
+    "coordinatesV2": "org.springframework:spring-core:4.3.19.RELEASE",
+    "caller": "|java+initializer:///org/springframework/core/io/support/SpringFactoriesLoader/SpringFactoriesLoader$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/springframework/util/ConcurrentReferenceHashMap/ConcurrentReferenceHashMap()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.springframework:spring-core:4.3.19.RELEASE",
+    "coordinatesV2": "org.springframework:spring-core:5.0.0.RELEASE",
+    "caller": "|java+initializer:///org/springframework/core/io/support/SpringFactoriesLoader/SpringFactoriesLoader$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/springframework/util/ConcurrentReferenceHashMap/ConcurrentReferenceHashMap()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "affectedLib": "org.springframework:spring-jcl:5.0.0.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework:spring-core:4.3.19.RELEASE",
+    "coordinatesV2": "org.springframework:spring-core:5.0.0.RELEASE",
+    "caller": "|java+method:///org/springframework/core/env/JOptCommandLinePropertySource/getPropertyNames()|",
+    "called": "|java+method:///joptsimple/OptionSet/specs()|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///joptsimple/OptionSpec/options()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/springframework/util/StringUtils/toStringArray(java.util.Collection)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///joptsimple/OptionSet/specs()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(java.util.Collection)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///joptsimple/OptionSpec/options()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/List/toArray(java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///joptsimple/OptionSet/specs()|"
+    ],
+    "affectedLib": "net.sf.jopt-simple:jopt-simple:5.0.4",
+    "change": "UPDATED"
+  }
+]

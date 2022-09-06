@@ -1,0 +1,56 @@
+[
+  {
+    "coordinatesV1": "com.gu:content-api-client_2.11:11.23",
+    "coordinatesV2": "com.gu:content-api-client_2.11:11.30",
+    "caller": "|java+method:///com/gu/contentapi/client/ContentApiClientLogic$class/http(com.gu.contentapi.client.ContentApiClientLogic)|",
+    "called": "|java+method:///dispatch/Http$/withConfiguration(scala.Function1)|",
+    "v1Body": [
+      "|java+method:///com/ning/http/client/AsyncHttpClientConfig$Builder/setUserAgent(java.lang.String)|",
+      "|java+method:///com/ning/http/client/AsyncHttpClientConfig$Builder/setFollowRedirect(boolean)|",
+      "|java+method:///com/ning/http/client/AsyncHttpClientConfig$Builder/setCompressionEnforced(boolean)|",
+      "|java+method:///com/gu/contentapi/client/ContentApiClientLogic/userAgent()|",
+      "|java+method:///com/ning/http/client/AsyncHttpClientConfig$Builder/setConnectTimeout(int)|",
+      "|java+constructor:///dispatch/Http/Http(com.ning.http.client.AsyncHttpClient)|",
+      "|java+method:///com/ning/http/client/AsyncHttpClientConfig$Builder/build()|",
+      "|java+method:///com/ning/http/client/AsyncHttpClientConfig$Builder/setRequestTimeout(int)|",
+      "|java+method:///com/ning/http/client/AsyncHttpClientConfig$Builder/setConnectionTTL(int)|",
+      "|java+constructor:///com/ning/http/client/AsyncHttpClient/AsyncHttpClient(com.ning.http.client.AsyncHttpClientConfig)|",
+      "|java+constructor:///com/ning/http/client/AsyncHttpClientConfig$Builder/AsyncHttpClientConfig$Builder()|",
+      "|java+method:///com/ning/http/client/AsyncHttpClientConfig$Builder/setMaxConnectionsPerHost(int)|",
+      "|java+method:///com/ning/http/client/AsyncHttpClientConfig$Builder/setAllowPoolingConnections(boolean)|",
+      "|java+method:///com/ning/http/client/AsyncHttpClientConfig$Builder/setMaxConnections(int)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/gu/contentapi/client/ContentApiClientLogic$$anonfun$http$1/ContentApiClientLogic$$anonfun$http$1(com.gu.contentapi.client.ContentApiClientLogic)|",
+      "|java+method:///dispatch/Http$/withConfiguration(scala.Function1)|"
+    ],
+    "affectedLib": "net.databinder.dispatch:dispatch-core_2.11:0.13.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.gu:content-api-client_2.11:11.23",
+    "coordinatesV2": "com.gu:content-api-client_2.11:11.30",
+    "caller": "|java+method:///com/gu/contentapi/client/ContentApiClientLogic$class/get(com.gu.contentapi.client.ContentApiClientLogic,java.lang.String,scala.collection.immutable.Map,scala.concurrent.ExecutionContext)|",
+    "called": "|java+method:///dispatch/Req/toRequest()|",
+    "v1Body": [
+      "|java+method:///dispatch/url$/apply(java.lang.String)|",
+      "|java+method:///dispatch/Req/toRequest()|",
+      "|java+method:///com/gu/contentapi/client/ContentApiClientLogic/http()|",
+      "|java+method:///dispatch/Http/apply(com.ning.http.client.Request,com.ning.http.client.AsyncHandler,scala.concurrent.ExecutionContext)|",
+      "|java+method:///scala/collection/immutable/Map/foldLeft(java.lang.Object,scala.Function2)|",
+      "|java+method:///com/gu/contentapi/client/ContentApiClientLogic$class/handler$1(com.gu.contentapi.client.ContentApiClientLogic)|",
+      "|java+constructor:///com/gu/contentapi/client/ContentApiClientLogic$$anonfun$2/ContentApiClientLogic$$anonfun$2(com.gu.contentapi.client.ContentApiClientLogic)|"
+    ],
+    "v2Body": [
+      "|java+method:///dispatch/url$/apply(java.lang.String)|",
+      "|java+method:///dispatch/Http/apply(org.asynchttpclient.Request,org.asynchttpclient.AsyncHandler,scala.concurrent.ExecutionContext)|",
+      "|java+method:///dispatch/Req/toRequest()|",
+      "|java+method:///com/gu/contentapi/client/ContentApiClientLogic/http()|",
+      "|java+method:///scala/collection/immutable/Map/foldLeft(java.lang.Object,scala.Function2)|",
+      "|java+method:///com/gu/contentapi/client/ContentApiClientLogic$class/handler$1(com.gu.contentapi.client.ContentApiClientLogic)|",
+      "|java+constructor:///com/gu/contentapi/client/ContentApiClientLogic$$anonfun$2/ContentApiClientLogic$$anonfun$2(com.gu.contentapi.client.ContentApiClientLogic)|"
+    ],
+    "affectedLib": "net.databinder.dispatch:dispatch-core_2.11:0.13.1",
+    "change": "UPDATED"
+  }
+]

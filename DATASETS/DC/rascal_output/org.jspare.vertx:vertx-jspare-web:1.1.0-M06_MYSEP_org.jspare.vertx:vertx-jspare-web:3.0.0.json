@@ -1,0 +1,56 @@
+[
+  {
+    "coordinatesV1": "org.jspare.vertx:vertx-jspare-web:1.1.0-M06",
+    "coordinatesV2": "org.jspare.vertx:vertx-jspare-web:3.0.0",
+    "caller": "|java+method:///org/jspare/vertx/web/builder/RouterBuilder/lambda$collectRoutes$5(io.github.lukehutch.fastclasspathscanner.matchprocessor.MethodAnnotationMatchProcessor,java.lang.String)|",
+    "called": "|java+method:///org/jspare/vertx/utils/ClasspathScannerUtils/scanner(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/jspare/vertx/builder/ClasspathScannerUtils/scanner(java.lang.String)|",
+      "|java+method:///io/github/lukehutch/fastclasspathscanner/FastClasspathScanner/scan(int)|",
+      "|java+method:///io/github/lukehutch/fastclasspathscanner/FastClasspathScanner/matchClassesWithMethodAnnotation(java.lang.Class,io.github.lukehutch.fastclasspathscanner.matchprocessor.MethodAnnotationMatchProcessor)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/github/lukehutch/fastclasspathscanner/FastClasspathScanner/matchClassesWithMethodAnnotation(java.lang.Class,io.github.lukehutch.fastclasspathscanner.matchprocessor.MethodAnnotationMatchProcessor)|",
+      "|java+method:///io/github/lukehutch/fastclasspathscanner/FastClasspathScanner/scan(int)|",
+      "|java+method:///org/jspare/vertx/utils/ClasspathScannerUtils/scanner(java.lang.String)|"
+    ],
+    "affectedLib": "org.jspare.vertx:vertx-jspare:3.0.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jspare.vertx:vertx-jspare-web:1.1.0-M06",
+    "coordinatesV2": "org.jspare.vertx:vertx-jspare-web:3.0.0",
+    "caller": "|java+method:///org/jspare/vertx/web/handler/DefaultHandler/instantiateHandler()|",
+    "called": "|java+method:///org/jspare/core/Environment/inject(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/newInstance()|",
+      "|java+method:///org/jspare/core/container/ContainerUtils/processInjection(java.lang.Object)|",
+      "|java+method:///org/jspare/vertx/web/builder/HandlerData/clazz()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/newInstance()|",
+      "|java+method:///org/jspare/vertx/web/builder/HandlerData/clazz()|",
+      "|java+method:///org/jspare/core/Environment/inject(java.lang.Object)|"
+    ],
+    "affectedLib": "org.jspare:jspare-core:3.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jspare.vertx:vertx-jspare-web:1.1.0-M06",
+    "coordinatesV2": "org.jspare.vertx:vertx-jspare-web:3.0.0",
+    "caller": "|java+method:///org/jspare/vertx/web/builder/RouterBuilder/lambda$build$2(java.util.List,java.lang.Class)|",
+    "called": "|java+method:///org/jspare/core/Environment/my(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/jspare/vertx/web/builder/RouteCollector/collect(java.lang.Class,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/List/addAll(java.util.Collection)|",
+      "|java+method:///org/jspare/core/container/Environment/my(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jspare/core/Environment/my(java.lang.Class)|",
+      "|java+method:///org/jspare/vertx/web/builder/RouteCollector/collect(java.lang.Class,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/List/addAll(java.util.Collection)|"
+    ],
+    "affectedLib": "org.jspare:jspare-core:3.0.1",
+    "change": "UPDATED"
+  }
+]

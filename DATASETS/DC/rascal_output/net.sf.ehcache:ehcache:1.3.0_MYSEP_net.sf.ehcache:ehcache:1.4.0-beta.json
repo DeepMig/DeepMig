@@ -1,0 +1,61 @@
+[
+  {
+    "coordinatesV1": "net.sf.ehcache:ehcache:1.4.0-beta",
+    "coordinatesV2": "net.sf.ehcache:ehcache:1.3.0",
+    "caller": "|java+constructor:///net/sf/ehcache/jcache/JCache/JCache(net.sf.ehcache.Ehcache,net.sf.jsr107cache.CacheLoader)|",
+    "called": "|java+constructor:///edu/emory/mathcs/backport/java/util/concurrent/ThreadPoolExecutor/ThreadPoolExecutor(int,int,long,edu.emory.mathcs.backport.java.util.concurrent.TimeUnit,edu.emory.mathcs.backport.java.util.concurrent.BlockingQueue)|",
+    "v1Body": [
+      "|java+constructor:///edu/emory/mathcs/backport/java/util/concurrent/ThreadPoolExecutor/ThreadPoolExecutor(int,int,long,edu.emory.mathcs.backport.java.util.concurrent.TimeUnit,edu.emory.mathcs.backport.java.util.concurrent.BlockingQueue)|",
+      "|java+constructor:///edu/emory/mathcs/backport/java/util/concurrent/LinkedBlockingQueue/LinkedBlockingQueue()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///net/sf/ehcache/Ehcache/setCacheLoader(net.sf.ehcache.loader.CacheLoader)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "backport-util-concurrent:backport-util-concurrent:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "net.sf.ehcache:ehcache:1.4.0-beta",
+    "coordinatesV2": "net.sf.ehcache:ehcache:1.3.0",
+    "caller": "|java+method:///net/sf/ehcache/distribution/MulticastKeepaliveHeartbeatReceiver/init()|",
+    "called": "|java+method:///edu/emory/mathcs/backport/java/util/concurrent/Executors/newCachedThreadPool()|",
+    "v1Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///edu/emory/mathcs/backport/java/util/concurrent/Executors/newCachedThreadPool()|",
+      "|java+method:///net/sf/ehcache/distribution/MulticastKeepaliveHeartbeatReceiver$MulticastReceiverThread/start()|",
+      "|java+method:///java/net/MulticastSocket/joinGroup(java.net.InetAddress)|",
+      "|java+constructor:///net/sf/ehcache/distribution/MulticastKeepaliveHeartbeatReceiver$MulticastReceiverThread/MulticastKeepaliveHeartbeatReceiver$MulticastReceiverThread(net.sf.ehcache.distribution.MulticastKeepaliveHeartbeatReceiver)|",
+      "|java+constructor:///java/net/MulticastSocket/MulticastSocket(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///edu/emory/mathcs/backport/java/util/concurrent/Executors/newCachedThreadPool()|",
+      "|java+method:///java/net/MulticastSocket/joinGroup(java.net.InetAddress)|",
+      "|java+method:///java/lang/Thread/start()|",
+      "|java+constructor:///net/sf/ehcache/distribution/MulticastKeepaliveHeartbeatReceiver$MulticastReceiverThread/MulticastKeepaliveHeartbeatReceiver$MulticastReceiverThread(net.sf.ehcache.distribution.MulticastKeepaliveHeartbeatReceiver)|",
+      "|java+constructor:///java/net/MulticastSocket/MulticastSocket(int)|"
+    ],
+    "affectedLib": "backport-util-concurrent:backport-util-concurrent:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "net.sf.ehcache:ehcache:1.3.0",
+    "coordinatesV2": "net.sf.ehcache:ehcache:1.4.0-beta",
+    "caller": "|java+constructor:///net/sf/ehcache/store/LruMemoryStore$SpoolingLRUMap/LruMemoryStore$SpoolingLRUMap(net.sf.ehcache.store.LruMemoryStore)|",
+    "called": "|java+constructor:///org/apache/commons/collections/LRUMap/LRUMap()|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/Ehcache/getMaxElementsInMemory()|",
+      "|java+method:///net/sf/ehcache/store/LruMemoryStore$SpoolingLRUMap/setMaximumSize(int)|",
+      "|java+constructor:///org/apache/commons/collections/LRUMap/LRUMap()|"
+    ],
+    "v2Body": [
+      "|java+method:///net/sf/ehcache/Ehcache/getMaxElementsInMemory()|",
+      "|java+method:///org/apache/commons/collections/LRUMap/setMaximumSize(int)|",
+      "|java+constructor:///org/apache/commons/collections/LRUMap/LRUMap()|"
+    ],
+    "affectedLib": "commons-collections:commons-collections:3.2",
+    "change": "ADDED"
+  }
+]

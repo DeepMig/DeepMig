@@ -1,0 +1,122 @@
+[
+  {
+    "coordinatesV1": "org.apache.asterix:asterix-active:0.9.1",
+    "coordinatesV2": "org.apache.asterix:asterix-active:0.9.2",
+    "caller": "|java+method:///org/apache/asterix/active/ActiveRuntimeManager/registerRuntime(org.apache.asterix.active.ActiveRuntimeId,org.apache.asterix.active.ActiveSourceOperatorNodePushable)|",
+    "called": "|java+constructor:///org/apache/asterix/common/exceptions/RuntimeDataException/RuntimeDataException(int,java.io.Serializable%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/apache/asterix/common/exceptions/RuntimeDataException/RuntimeDataException(int,java.io.Serializable%5B%5D)|",
+      "|java+method:///java/util/Map/containsKey(java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.asterix:asterix-common:0.9.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.asterix:asterix-active:0.9.1",
+    "coordinatesV2": "org.apache.asterix:asterix-active:0.9.2",
+    "caller": "|java+method:///org/apache/asterix/active/ActiveRuntimeManager/deregisterRuntime(org.apache.asterix.active.ActiveRuntimeId)|",
+    "called": "|java+constructor:///org/apache/asterix/common/exceptions/RuntimeDataException/RuntimeDataException(int,java.io.Serializable%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/remove(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/asterix/common/exceptions/RuntimeDataException/RuntimeDataException(int,java.io.Serializable%5B%5D)|",
+      "|java+method:///java/util/Map/containsKey(java.lang.Object)|",
+      "|java+method:///java/util/Map/remove(java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.asterix:asterix-common:0.9.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.asterix:asterix-active:0.9.1",
+    "coordinatesV2": "org.apache.asterix:asterix-active:0.9.2",
+    "caller": "|java+method:///org/apache/asterix/active/ActiveSourceOperatorNodePushable/initialize()|",
+    "called": "|java+method:///org/apache/hyracks/api/exceptions/HyracksDataException/create(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/apache/asterix/active/ActiveSourceOperatorNodePushable/start()|",
+      "|java+constructor:///org/apache/hyracks/api/exceptions/HyracksDataException/HyracksDataException(java.lang.Throwable)|",
+      "|java+method:///java/lang/Object/notifyAll()|",
+      "|java+method:///org/apache/asterix/active/ActiveManager/registerRuntime(org.apache.asterix.active.IActiveRuntime)|",
+      "|java+method:///java/lang/Thread/currentThread()|",
+      "|java+method:///java/lang/Thread/interrupt()|",
+      "|java+method:///org/apache/hyracks/api/context/IHyracksJobletContext/getJobId()|",
+      "|java+method:///org/apache/hyracks/api/context/IHyracksTaskContext/sendApplicationMessageToCC(java.io.Serializable,org.apache.hyracks.api.deployment.DeploymentId)|",
+      "|java+method:///org/apache/hyracks/api/context/IHyracksTaskContext/getJobletContext()|",
+      "|java+method:///java/util/logging/Logger/log(java.util.logging.Level,java.lang.String)|",
+      "|java+method:///java/util/logging/Logger/log(java.util.logging.Level,java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///org/apache/asterix/active/message/ActivePartitionMessage/ActivePartitionMessage(org.apache.asterix.active.ActiveRuntimeId,org.apache.hyracks.api.job.JobId,byte)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hyracks/api/exceptions/HyracksDataException/create(java.lang.Throwable)|",
+      "|java+method:///org/apache/asterix/active/ActiveSourceOperatorNodePushable/start()|",
+      "|java+method:///java/lang/Object/notifyAll()|",
+      "|java+constructor:///org/apache/asterix/active/message/ActivePartitionMessage/ActivePartitionMessage(org.apache.asterix.active.ActiveRuntimeId,org.apache.hyracks.api.job.JobId,byte,java.io.Serializable)|",
+      "|java+method:///org/apache/asterix/active/ActiveManager/registerRuntime(org.apache.asterix.active.IActiveRuntime)|",
+      "|java+method:///java/lang/Thread/currentThread()|",
+      "|java+method:///java/lang/Thread/interrupt()|",
+      "|java+method:///org/apache/hyracks/api/context/IHyracksJobletContext/getJobId()|",
+      "|java+method:///org/apache/hyracks/api/context/IHyracksTaskContext/sendApplicationMessageToCC(java.io.Serializable,org.apache.hyracks.api.deployment.DeploymentId)|",
+      "|java+method:///org/apache/hyracks/api/context/IHyracksTaskContext/getJobletContext()|",
+      "|java+method:///java/util/logging/Logger/log(java.util.logging.Level,java.lang.String)|",
+      "|java+method:///java/util/logging/Logger/log(java.util.logging.Level,java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.apache.hyracks:hyracks-api:0.3.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.asterix:asterix-active:0.9.1",
+    "coordinatesV2": "org.apache.asterix:asterix-active:0.9.2",
+    "caller": "|java+method:///org/apache/asterix/active/ActiveSourceOperatorNodePushable/deinitialize()|",
+    "called": "|java+method:///org/apache/hyracks/api/exceptions/HyracksDataException/create(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/hyracks/api/exceptions/HyracksDataException/HyracksDataException(java.lang.Throwable)|",
+      "|java+method:///org/apache/asterix/active/ActiveManager/deregisterRuntime(org.apache.asterix.active.ActiveRuntimeId)|",
+      "|java+method:///org/apache/hyracks/api/context/IHyracksJobletContext/getJobId()|",
+      "|java+method:///org/apache/hyracks/api/context/IHyracksTaskContext/sendApplicationMessageToCC(java.io.Serializable,org.apache.hyracks.api.deployment.DeploymentId)|",
+      "|java+method:///org/apache/hyracks/api/context/IHyracksTaskContext/getJobletContext()|",
+      "|java+method:///java/util/logging/Logger/log(java.util.logging.Level,java.lang.String)|",
+      "|java+method:///java/util/logging/Logger/log(java.util.logging.Level,java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///org/apache/asterix/active/message/ActivePartitionMessage/ActivePartitionMessage(org.apache.asterix.active.ActiveRuntimeId,org.apache.hyracks.api.job.JobId,byte)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hyracks/api/exceptions/HyracksDataException/create(java.lang.Throwable)|",
+      "|java+method:///org/apache/asterix/active/ActiveManager/deregisterRuntime(org.apache.asterix.active.ActiveRuntimeId)|",
+      "|java+constructor:///org/apache/asterix/active/message/ActivePartitionMessage/ActivePartitionMessage(org.apache.asterix.active.ActiveRuntimeId,org.apache.hyracks.api.job.JobId,byte,java.io.Serializable)|",
+      "|java+method:///org/apache/hyracks/api/context/IHyracksJobletContext/getJobId()|",
+      "|java+method:///org/apache/hyracks/api/context/IHyracksTaskContext/sendApplicationMessageToCC(java.io.Serializable,org.apache.hyracks.api.deployment.DeploymentId)|",
+      "|java+method:///org/apache/hyracks/api/context/IHyracksTaskContext/getJobletContext()|",
+      "|java+method:///java/util/logging/Logger/log(java.util.logging.Level,java.lang.String)|",
+      "|java+method:///java/util/logging/Logger/log(java.util.logging.Level,java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.apache.hyracks:hyracks-api:0.3.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.asterix:asterix-active:0.9.1",
+    "coordinatesV2": "org.apache.asterix:asterix-active:0.9.2",
+    "caller": "|java+constructor:///org/apache/asterix/active/ActiveSourceOperatorNodePushable/ActiveSourceOperatorNodePushable(org.apache.hyracks.api.context.IHyracksTaskContext,org.apache.asterix.active.ActiveRuntimeId)|",
+    "called": "|java+constructor:///org/apache/hyracks/dataflow/std/base/AbstractUnaryOutputSourceOperatorNodePushable/AbstractUnaryOutputSourceOperatorNodePushable()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/hyracks/dataflow/std/base/AbstractUnaryOutputSourceOperatorNodePushable/AbstractUnaryOutputSourceOperatorNodePushable()|",
+      "|java+method:///org/apache/hyracks/api/application/INCServiceContext/getApplicationContext()|",
+      "|java+method:///java/util/logging/Logger/getLogger(java.lang.String)|",
+      "|java+method:///org/apache/hyracks/api/context/IHyracksTaskContext/getJobletContext()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/apache/hyracks/api/context/IHyracksJobletContext/getServiceContext()|",
+      "|java+method:///org/apache/asterix/common/api/IAppRuntimeContext/getActiveManager()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/hyracks/dataflow/std/base/AbstractUnaryOutputSourceOperatorNodePushable/AbstractUnaryOutputSourceOperatorNodePushable()|",
+      "|java+method:///org/apache/hyracks/api/application/INCServiceContext/getApplicationContext()|",
+      "|java+method:///org/apache/hyracks/api/context/IHyracksTaskContext/getJobletContext()|",
+      "|java+method:///org/apache/asterix/common/api/INcApplicationContext/getActiveManager()|",
+      "|java+method:///org/apache/hyracks/api/context/IHyracksJobletContext/getServiceContext()|"
+    ],
+    "affectedLib": "org.apache.hyracks:hyracks-dataflow-std:0.3.2",
+    "change": "UPDATED"
+  }
+]

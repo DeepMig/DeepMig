@@ -1,0 +1,60 @@
+[
+  {
+    "coordinatesV1": "org.talend.esb:sam-server:5.1.0",
+    "coordinatesV2": "org.talend.esb:sam-server:5.0.2",
+    "caller": "|java+method:///org/talend/esb/sam/server/persistence/DBInitializer/afterPropertiesSet()|",
+    "called": "|java+method:///org/springframework/test/jdbc/SimpleJdbcTestUtils/executeSqlScript(org.springframework.jdbc.core.simple.SimpleJdbcTemplate,org.springframework.core.io.Resource,boolean)|",
+    "v1Body": [
+      "|java+method:///java/util/logging/Logger/warning(java.lang.String)|",
+      "|java+constructor:///org/springframework/core/io/ClassPathResource/ClassPathResource(java.lang.String)|",
+      "|java+method:///org/springframework/test/jdbc/SimpleJdbcTestUtils/executeSqlScript(org.springframework.jdbc.core.simple.SimpleJdbcTemplate,org.springframework.core.io.Resource,boolean)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///org/springframework/jdbc/core/simple/SimpleJdbcTemplate/SimpleJdbcTemplate(javax.sql.DataSource)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///com/ibatis/common/jdbc/ScriptRunner/ScriptRunner(java.sql.Connection,boolean,boolean)|",
+      "|java+method:///javax/sql/DataSource/getConnection()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/logging/Logger/warning(java.lang.String)|",
+      "|java+method:///java/lang/Class/getResourceAsStream(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///com/ibatis/common/jdbc/ScriptRunner/setLogWriter(java.io.PrintWriter)|",
+      "|java+method:///com/ibatis/common/jdbc/ScriptRunner/runScript(java.io.Reader)|"
+    ],
+    "affectedLib": "org.springframework:spring-test:3.0.6.RELEASE",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.talend.esb:sam-server:5.0.2",
+    "coordinatesV2": "org.talend.esb:sam-server:5.1.0",
+    "caller": "|java+method:///org/talend/esb/sam/server/persistence/DBInitializer/afterPropertiesSet()|",
+    "called": "|java+constructor:///com/ibatis/common/jdbc/ScriptRunner/ScriptRunner(java.sql.Connection,boolean,boolean)|",
+    "v1Body": [
+      "|java+method:///java/util/logging/Logger/warning(java.lang.String)|",
+      "|java+constructor:///org/springframework/core/io/ClassPathResource/ClassPathResource(java.lang.String)|",
+      "|java+method:///org/springframework/test/jdbc/SimpleJdbcTestUtils/executeSqlScript(org.springframework.jdbc.core.simple.SimpleJdbcTemplate,org.springframework.core.io.Resource,boolean)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///org/springframework/jdbc/core/simple/SimpleJdbcTemplate/SimpleJdbcTemplate(javax.sql.DataSource)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///com/ibatis/common/jdbc/ScriptRunner/ScriptRunner(java.sql.Connection,boolean,boolean)|",
+      "|java+method:///javax/sql/DataSource/getConnection()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/logging/Logger/warning(java.lang.String)|",
+      "|java+method:///java/lang/Class/getResourceAsStream(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///com/ibatis/common/jdbc/ScriptRunner/setLogWriter(java.io.PrintWriter)|",
+      "|java+method:///com/ibatis/common/jdbc/ScriptRunner/runScript(java.io.Reader)|"
+    ],
+    "affectedLib": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.ibatis-sqlmap:2.3.4.726_4",
+    "change": "ADDED"
+  }
+]

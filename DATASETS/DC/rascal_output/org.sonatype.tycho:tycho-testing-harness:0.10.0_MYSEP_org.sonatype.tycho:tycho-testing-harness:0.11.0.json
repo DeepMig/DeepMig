@@ -1,0 +1,31 @@
+[
+  {
+    "coordinatesV1": "org.sonatype.tycho:tycho-testing-harness:0.10.0",
+    "coordinatesV2": "org.sonatype.tycho:tycho-testing-harness:0.11.0",
+    "caller": "|java+method:///org/codehaus/tycho/testing/AbstractTychoMojoTestCase/newMavenSession(org.apache.maven.project.MavenProject,java.util.List)|",
+    "called": "|java+method:///org/apache/maven/project/MavenProject/getBasedir()|",
+    "v1Body": [
+      "|java+constructor:///java/io/File/File(java.io.File,java.lang.String)|",
+      "|java+constructor:///org/apache/maven/execution/MavenSession/MavenSession(org.codehaus.plexus.PlexusContainer,org.apache.maven.execution.MavenExecutionRequest,org.apache.maven.execution.MavenExecutionResult)|",
+      "|java+method:///org/apache/maven/execution/MavenSession/setProjects(java.util.List)|",
+      "|java+method:///org/apache/maven/project/MavenProject/getBasedir()|",
+      "|java+method:///org/codehaus/tycho/testing/AbstractTychoMojoTestCase/newMavenExecutionRequest(java.io.File)|",
+      "|java+method:///org/codehaus/tycho/testing/AbstractTychoMojoTestCase/getContainer()|",
+      "|java+constructor:///org/apache/maven/execution/DefaultMavenExecutionResult/DefaultMavenExecutionResult()|",
+      "|java+method:///org/apache/maven/execution/MavenSession/setCurrentProject(org.apache.maven.project.MavenProject)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/io/File/File(java.io.File,java.lang.String)|",
+      "|java+method:///org/apache/maven/execution/MavenSession/setProjects(java.util.List)|",
+      "|java+constructor:///org/apache/maven/execution/MavenSession/MavenSession(org.codehaus.plexus.PlexusContainer,org.sonatype.aether.RepositorySystemSession,org.apache.maven.execution.MavenExecutionRequest,org.apache.maven.execution.MavenExecutionResult)|",
+      "|java+method:///org/apache/maven/project/MavenProject/getBasedir()|",
+      "|java+method:///org/codehaus/tycho/testing/AbstractTychoMojoTestCase/getContainer()|",
+      "|java+constructor:///org/apache/maven/execution/DefaultMavenExecutionResult/DefaultMavenExecutionResult()|",
+      "|java+method:///org/apache/maven/execution/MavenSession/setCurrentProject(org.apache.maven.project.MavenProject)|",
+      "|java+method:///org/codehaus/tycho/testing/AbstractTychoMojoTestCase/newMavenExecutionRequest(java.io.File)|",
+      "|java+constructor:///org/sonatype/aether/util/DefaultRepositorySystemSession/DefaultRepositorySystemSession()|"
+    ],
+    "affectedLib": "org.apache.maven:maven-core:3.0",
+    "change": "UPDATED"
+  }
+]

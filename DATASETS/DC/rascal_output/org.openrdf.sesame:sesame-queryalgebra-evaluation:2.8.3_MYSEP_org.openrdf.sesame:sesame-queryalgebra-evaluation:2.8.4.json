@@ -1,0 +1,315 @@
+[
+  {
+    "coordinatesV1": "org.openrdf.sesame:sesame-queryalgebra-evaluation:2.8.3",
+    "coordinatesV2": "org.openrdf.sesame:sesame-queryalgebra-evaluation:2.8.4",
+    "caller": "|java+method:///org/openrdf/query/algebra/evaluation/iterator/OrderIterator/handleClose()|",
+    "called": "|java+method:///org/mapdb/DB/close()|",
+    "v1Body": [
+      "|java+method:///info/aduna/iteration/CloseableIteration/close()|",
+      "|java+method:///info/aduna/iteration/DelayedIteration/handleClose()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/mapdb/DB/close()|",
+      "|java+method:///info/aduna/iteration/CloseableIteration/close()|",
+      "|java+method:///info/aduna/iteration/DelayedIteration/handleClose()|"
+    ],
+    "affectedLib": "org.mapdb:mapdb:1.0.7",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.openrdf.sesame:sesame-queryalgebra-evaluation:2.8.3",
+    "coordinatesV2": "org.openrdf.sesame:sesame-queryalgebra-evaluation:2.8.4",
+    "caller": "|java+method:///org/openrdf/query/algebra/evaluation/iterator/OrderIterator/createIteration()|",
+    "called": "|java+method:///org/mapdb/DB/commit()|",
+    "v1Body": [
+      "|java+method:///org/openrdf/query/algebra/evaluation/iterator/OrderIterator/makeOrderedMap(java.util.Comparator)|",
+      "|java+method:///info/aduna/iteration/CloseableIteration/hasNext()|",
+      "|java+method:///org/openrdf/query/algebra/evaluation/iterator/OrderIterator/makeList()|",
+      "|java+method:///org/openrdf/query/algebra/evaluation/iterator/OrderIterator/put(java.util.Map,org.openrdf.query.BindingSet,java.util.Collection)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///org/openrdf/query/algebra/evaluation/iterator/OrderIterator/makeOrderedSet()|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|",
+      "|java+method:///java/util/NavigableMap/values()|",
+      "|java+method:///java/util/Collection/isEmpty()|",
+      "|java+method:///org/openrdf/query/algebra/evaluation/iterator/OrderIterator/remove(java.util.NavigableMap,org.openrdf.query.BindingSet)|",
+      "|java+method:///info/aduna/iteration/CloseableIteration/close()|",
+      "|java+method:///java/util/NavigableMap/get(java.lang.Object)|",
+      "|java+method:///org/openrdf/query/algebra/evaluation/iterator/OrderIterator/add(org.openrdf.query.BindingSet,java.util.Collection)|",
+      "|java+constructor:///org/openrdf/query/algebra/evaluation/iterator/OrderIterator$1/OrderIterator$1(org.openrdf.query.algebra.evaluation.iterator.OrderIterator,java.util.Iterator)|",
+      "|java+method:///info/aduna/iteration/CloseableIteration/next()|",
+      "|java+method:///java/util/Comparator/compare(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/openrdf/query/algebra/evaluation/iterator/OrderIterator/removeLast(java.util.Collection)|",
+      "|java+method:///java/util/NavigableMap/lastKey()|"
+    ],
+    "v2Body": [
+      "|java+method:///info/aduna/iteration/CloseableIteration/hasNext()|",
+      "|java+method:///org/mapdb/DB/commit()|",
+      "|java+method:///java/util/NavigableMap/navigableKeySet()|",
+      "|java+method:///info/aduna/iteration/CloseableIteration/close()|",
+      "|java+method:///java/util/NavigableMap/get(java.lang.Object)|",
+      "|java+method:///org/openrdf/query/algebra/evaluation/iterator/OrderIterator/makeOrderedMap()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/openrdf/query/algebra/evaluation/iterator/OrderIterator/put(java.util.NavigableMap,org.openrdf.query.BindingSet,int)|",
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+constructor:///org/openrdf/query/algebra/evaluation/iterator/OrderIterator$1/OrderIterator$1(org.openrdf.query.algebra.evaluation.iterator.OrderIterator,java.util.NavigableMap)|",
+      "|java+method:///info/aduna/iteration/CloseableIteration/next()|",
+      "|java+method:///java/util/Comparator/compare(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/openrdf/query/algebra/evaluation/iterator/OrderIterator/removeLast(java.util.Collection)|",
+      "|java+method:///java/util/NavigableMap/lastKey()|"
+    ],
+    "affectedLib": "org.mapdb:mapdb:1.0.7",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.openrdf.sesame:sesame-queryalgebra-evaluation:2.8.3",
+    "coordinatesV2": "org.openrdf.sesame:sesame-queryalgebra-evaluation:2.8.4",
+    "caller": "|java+method:///org/openrdf/query/algebra/evaluation/iterator/GroupIterator$Aggregate/distinctValue(org.openrdf.model.Value)|",
+    "called": "|java+method:///org/mapdb/DB/commit()|",
+    "v1Body": [
+      "|java+method:///java/util/Set/add(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/mapdb/DB/commit()|",
+      "|java+method:///org/openrdf/query/algebra/evaluation/iterator/GroupIterator/access$300(org.openrdf.query.algebra.evaluation.iterator.GroupIterator)|",
+      "|java+method:///org/openrdf/query/algebra/evaluation/iterator/GroupIterator/access$200(org.openrdf.query.algebra.evaluation.iterator.GroupIterator)|",
+      "|java+method:///java/util/Set/size()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|"
+    ],
+    "affectedLib": "org.mapdb:mapdb:1.0.7",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.openrdf.sesame:sesame-queryalgebra-evaluation:2.8.3",
+    "coordinatesV2": "org.openrdf.sesame:sesame-queryalgebra-evaluation:2.8.4",
+    "caller": "|java+method:///org/openrdf/query/algebra/evaluation/iterator/GroupIterator$CountAggregate/distinctBindingSet(org.openrdf.query.BindingSet)|",
+    "called": "|java+method:///org/mapdb/DB/commit()|",
+    "v1Body": [
+      "|java+method:///java/util/Set/add(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/mapdb/DB/commit()|",
+      "|java+method:///org/openrdf/query/algebra/evaluation/iterator/GroupIterator/access$300(org.openrdf.query.algebra.evaluation.iterator.GroupIterator)|",
+      "|java+method:///org/openrdf/query/algebra/evaluation/iterator/GroupIterator/access$200(org.openrdf.query.algebra.evaluation.iterator.GroupIterator)|",
+      "|java+method:///java/util/Set/size()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|"
+    ],
+    "affectedLib": "org.mapdb:mapdb:1.0.7",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.openrdf.sesame:sesame-queryalgebra-evaluation:2.8.3",
+    "coordinatesV2": "org.openrdf.sesame:sesame-queryalgebra-evaluation:2.8.4",
+    "caller": "|java+method:///org/openrdf/query/algebra/evaluation/iterator/GroupIterator/createIterator()|",
+    "called": "|java+method:///org/openrdf/query/algebra/Group/getGroupBindingNames()|",
+    "v1Body": [
+      "|java+method:///org/openrdf/query/algebra/evaluation/iterator/GroupIterator$Entry/bindSolution(org.openrdf.query.algebra.evaluation.QueryBindingSet)|",
+      "|java+method:///org/openrdf/query/algebra/evaluation/QueryBindingSet/setBinding(java.lang.String,org.openrdf.model.Value)|",
+      "|java+method:///org/openrdf/query/algebra/evaluation/iterator/GroupIterator/buildEntries()|",
+      "|java+method:///org/openrdf/query/BindingSet/getValue(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/LinkedList/LinkedList()|",
+      "|java+method:///org/openrdf/query/algebra/Group/getGroupBindingNames()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+constructor:///org/openrdf/query/algebra/evaluation/QueryBindingSet/QueryBindingSet(org.openrdf.query.BindingSet)|",
+      "|java+method:///java/util/Collection/add(java.lang.Object)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/openrdf/query/algebra/evaluation/iterator/GroupIterator$Entry/getPrototype()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/openrdf/query/algebra/evaluation/iterator/GroupIterator$Entry/bindSolution(org.openrdf.query.algebra.evaluation.QueryBindingSet)|",
+      "|java+method:///org/openrdf/query/algebra/evaluation/QueryBindingSet/setBinding(java.lang.String,org.openrdf.model.Value)|",
+      "|java+method:///org/openrdf/query/algebra/evaluation/iterator/GroupIterator/buildEntries()|",
+      "|java+method:///org/openrdf/query/BindingSet/getValue(java.lang.String)|",
+      "|java+method:///org/openrdf/query/algebra/evaluation/iterator/GroupIterator/createSet(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/openrdf/query/algebra/Group/getGroupBindingNames()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+constructor:///org/openrdf/query/algebra/evaluation/QueryBindingSet/QueryBindingSet(org.openrdf.query.BindingSet)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/openrdf/query/algebra/evaluation/iterator/GroupIterator$Entry/getPrototype()|"
+    ],
+    "affectedLib": "org.openrdf.sesame:sesame-queryalgebra-model:2.8.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openrdf.sesame:sesame-queryalgebra-evaluation:2.8.3",
+    "coordinatesV2": "org.openrdf.sesame:sesame-queryalgebra-evaluation:2.8.4",
+    "caller": "|java+constructor:///org/openrdf/query/algebra/evaluation/iterator/GroupIterator$SumAggregate/GroupIterator$SumAggregate(org.openrdf.query.algebra.evaluation.iterator.GroupIterator,org.openrdf.query.algebra.Sum)|",
+    "called": "|java+method:///org/openrdf/model/impl/ValueFactoryImpl/createLiteral(java.lang.String,org.openrdf.model.URI)|",
+    "v1Body": [
+      "|java+method:///org/openrdf/model/impl/ValueFactoryImpl/createLiteral(java.lang.String,org.openrdf.model.URI)|",
+      "|java+method:///org/openrdf/query/algebra/evaluation/iterator/GroupIterator/access$200(org.openrdf.query.algebra.evaluation.iterator.GroupIterator)|",
+      "|java+constructor:///org/openrdf/query/algebra/evaluation/iterator/GroupIterator$Aggregate/GroupIterator$Aggregate(org.openrdf.query.algebra.evaluation.iterator.GroupIterator,org.openrdf.query.algebra.AggregateOperatorBase)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/openrdf/model/impl/ValueFactoryImpl/createLiteral(java.lang.String,org.openrdf.model.URI)|",
+      "|java+method:///org/openrdf/query/algebra/evaluation/iterator/GroupIterator/access$500(org.openrdf.query.algebra.evaluation.iterator.GroupIterator)|",
+      "|java+constructor:///org/openrdf/query/algebra/evaluation/iterator/GroupIterator$Aggregate/GroupIterator$Aggregate(org.openrdf.query.algebra.evaluation.iterator.GroupIterator,org.openrdf.query.algebra.AggregateOperatorBase)|"
+    ],
+    "affectedLib": "org.openrdf.sesame:sesame-model:2.8.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openrdf.sesame:sesame-queryalgebra-evaluation:2.8.3",
+    "coordinatesV2": "org.openrdf.sesame:sesame-queryalgebra-evaluation:2.8.4",
+    "caller": "|java+constructor:///org/openrdf/query/algebra/evaluation/iterator/GroupIterator$AvgAggregate/GroupIterator$AvgAggregate(org.openrdf.query.algebra.evaluation.iterator.GroupIterator,org.openrdf.query.algebra.Avg)|",
+    "called": "|java+method:///org/openrdf/model/impl/ValueFactoryImpl/createLiteral(java.lang.String,org.openrdf.model.URI)|",
+    "v1Body": [
+      "|java+method:///org/openrdf/model/impl/ValueFactoryImpl/createLiteral(java.lang.String,org.openrdf.model.URI)|",
+      "|java+method:///org/openrdf/query/algebra/evaluation/iterator/GroupIterator/access$200(org.openrdf.query.algebra.evaluation.iterator.GroupIterator)|",
+      "|java+constructor:///org/openrdf/query/algebra/evaluation/iterator/GroupIterator$Aggregate/GroupIterator$Aggregate(org.openrdf.query.algebra.evaluation.iterator.GroupIterator,org.openrdf.query.algebra.AggregateOperatorBase)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/openrdf/model/impl/ValueFactoryImpl/createLiteral(java.lang.String,org.openrdf.model.URI)|",
+      "|java+method:///org/openrdf/query/algebra/evaluation/iterator/GroupIterator/access$500(org.openrdf.query.algebra.evaluation.iterator.GroupIterator)|",
+      "|java+constructor:///org/openrdf/query/algebra/evaluation/iterator/GroupIterator$Aggregate/GroupIterator$Aggregate(org.openrdf.query.algebra.evaluation.iterator.GroupIterator,org.openrdf.query.algebra.AggregateOperatorBase)|"
+    ],
+    "affectedLib": "org.openrdf.sesame:sesame-model:2.8.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openrdf.sesame:sesame-queryalgebra-evaluation:2.8.3",
+    "coordinatesV2": "org.openrdf.sesame:sesame-queryalgebra-evaluation:2.8.4",
+    "caller": "|java+method:///org/openrdf/query/algebra/evaluation/iterator/GroupIterator$CountAggregate/getValue()|",
+    "called": "|java+method:///org/openrdf/model/impl/ValueFactoryImpl/createLiteral(java.lang.String,org.openrdf.model.URI)|",
+    "v1Body": [
+      "|java+method:///org/openrdf/model/impl/ValueFactoryImpl/createLiteral(java.lang.String,org.openrdf.model.URI)|",
+      "|java+method:///org/openrdf/query/algebra/evaluation/iterator/GroupIterator/access$200(org.openrdf.query.algebra.evaluation.iterator.GroupIterator)|",
+      "|java+method:///java/lang/Long/toString(long)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/openrdf/model/impl/ValueFactoryImpl/createLiteral(java.lang.String,org.openrdf.model.URI)|",
+      "|java+method:///org/openrdf/query/algebra/evaluation/iterator/GroupIterator/access$500(org.openrdf.query.algebra.evaluation.iterator.GroupIterator)|",
+      "|java+method:///java/lang/Long/toString(long)|"
+    ],
+    "affectedLib": "org.openrdf.sesame:sesame-model:2.8.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openrdf.sesame:sesame-queryalgebra-evaluation:2.8.3",
+    "coordinatesV2": "org.openrdf.sesame:sesame-queryalgebra-evaluation:2.8.4",
+    "caller": "|java+method:///org/openrdf/query/algebra/evaluation/iterator/GroupIterator$ConcatAggregate/getValue()|",
+    "called": "|java+method:///org/openrdf/model/impl/ValueFactoryImpl/createLiteral(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/substring(int,int)|",
+      "|java+method:///org/openrdf/query/algebra/evaluation/iterator/GroupIterator/access$200(org.openrdf.query.algebra.evaluation.iterator.GroupIterator)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///org/openrdf/model/impl/ValueFactoryImpl/createLiteral(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/length()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/substring(int,int)|",
+      "|java+method:///org/openrdf/query/algebra/evaluation/iterator/GroupIterator/access$500(org.openrdf.query.algebra.evaluation.iterator.GroupIterator)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///org/openrdf/model/impl/ValueFactoryImpl/createLiteral(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/length()|"
+    ],
+    "affectedLib": "org.openrdf.sesame:sesame-model:2.8.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openrdf.sesame:sesame-queryalgebra-evaluation:2.8.3",
+    "coordinatesV2": "org.openrdf.sesame:sesame-queryalgebra-evaluation:2.8.4",
+    "caller": "|java+method:///org/openrdf/query/algebra/evaluation/iterator/PathIteration/getNextElement()|",
+    "called": "|java+method:///info/aduna/iteration/Iterations/closeCloseable(info.aduna.iteration.Iteration)|",
+    "v1Body": [
+      "|java+method:///info/aduna/iteration/CloseableIteration/hasNext()|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/util/Queue/clear()|",
+      "|java+method:///org/openrdf/query/BindingSet/getValue(java.lang.String)|",
+      "|java+method:///org/openrdf/query/algebra/evaluation/iterator/PathIteration/getNextElement()|",
+      "|java+constructor:///org/openrdf/query/algebra/evaluation/QueryBindingSet/QueryBindingSet(org.openrdf.query.BindingSet)|",
+      "|java+method:///org/openrdf/query/algebra/Var/getName()|",
+      "|java+method:///org/openrdf/query/algebra/evaluation/iterator/PathIteration/addToQueue(java.util.Queue,org.openrdf.query.algebra.evaluation.iterator.PathIteration$ValuePair)|",
+      "|java+method:///org/openrdf/query/algebra/evaluation/iterator/PathIteration/createIteration()|",
+      "|java+method:///java/util/Set/clear()|",
+      "|java+method:///org/openrdf/query/BindingSet/hasBinding(java.lang.String)|",
+      "|java+constructor:///org/openrdf/query/algebra/evaluation/iterator/PathIteration$ValuePair/PathIteration$ValuePair(org.openrdf.model.Value,org.openrdf.model.Value)|",
+      "|java+method:///org/openrdf/query/algebra/evaluation/iterator/PathIteration/getVarValue(org.openrdf.query.algebra.Var,boolean,org.openrdf.query.BindingSet)|",
+      "|java+method:///org/openrdf/query/algebra/evaluation/iterator/PathIteration$ValuePair/getStartValue()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/openrdf/query/algebra/evaluation/QueryBindingSet/addBinding(java.lang.String,org.openrdf.model.Value)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///org/openrdf/query/algebra/evaluation/iterator/PathIteration/isCyclicPath(org.openrdf.model.Value,org.openrdf.model.Value)|",
+      "|java+method:///java/lang/Object/hashCode()|",
+      "|java+method:///java/util/Set/contains(java.lang.Object)|",
+      "|java+method:///info/aduna/iteration/CloseableIteration/next()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/openrdf/query/algebra/evaluation/iterator/PathIteration/add(java.util.Set,org.openrdf.query.algebra.evaluation.iterator.PathIteration$ValuePair)|"
+    ],
+    "v2Body": [
+      "|java+method:///info/aduna/iteration/CloseableIteration/hasNext()|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/util/Queue/clear()|",
+      "|java+method:///org/openrdf/query/algebra/evaluation/iterator/PathIteration/getNextElement()|",
+      "|java+constructor:///org/openrdf/query/algebra/evaluation/QueryBindingSet/QueryBindingSet(org.openrdf.query.BindingSet)|",
+      "|java+method:///org/openrdf/query/algebra/Var/getName()|",
+      "|java+method:///org/openrdf/query/algebra/evaluation/iterator/PathIteration/addToQueue(java.util.Queue,org.openrdf.query.algebra.evaluation.iterator.PathIteration$ValuePair)|",
+      "|java+method:///org/openrdf/query/algebra/evaluation/iterator/PathIteration/createIteration()|",
+      "|java+method:///java/util/Set/clear()|",
+      "|java+method:///org/openrdf/query/BindingSet/hasBinding(java.lang.String)|",
+      "|java+constructor:///org/openrdf/query/algebra/evaluation/iterator/PathIteration$ValuePair/PathIteration$ValuePair(org.openrdf.model.Value,org.openrdf.model.Value)|",
+      "|java+method:///org/openrdf/query/algebra/evaluation/iterator/PathIteration/getVarValue(org.openrdf.query.algebra.Var,boolean,org.openrdf.query.BindingSet)|",
+      "|java+method:///org/openrdf/query/algebra/evaluation/iterator/PathIteration$ValuePair/getStartValue()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/openrdf/query/algebra/evaluation/QueryBindingSet/addBinding(java.lang.String,org.openrdf.model.Value)|",
+      "|java+method:///info/aduna/iteration/Iterations/closeCloseable(info.aduna.iteration.Iteration)|",
+      "|java+method:///org/openrdf/query/BindingSet/getValue(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///org/openrdf/query/algebra/evaluation/iterator/PathIteration/isCyclicPath(org.openrdf.model.Value,org.openrdf.model.Value)|",
+      "|java+method:///java/lang/Object/hashCode()|",
+      "|java+method:///java/util/Set/contains(java.lang.Object)|",
+      "|java+method:///info/aduna/iteration/CloseableIteration/next()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/openrdf/query/algebra/evaluation/iterator/PathIteration/add(java.util.Set,org.openrdf.query.algebra.evaluation.iterator.PathIteration$ValuePair)|"
+    ],
+    "affectedLib": "org.openrdf.sesame:sesame-util:2.8.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openrdf.sesame:sesame-queryalgebra-evaluation:2.8.3",
+    "coordinatesV2": "org.openrdf.sesame:sesame-queryalgebra-evaluation:2.8.4",
+    "caller": "|java+method:///org/openrdf/query/algebra/evaluation/impl/EvaluationStrategyImpl/evaluate(org.openrdf.query.algebra.BindingSetAssignment,org.openrdf.query.BindingSet)|",
+    "called": "|java+constructor:///info/aduna/iteration/CloseableIteratorIteration/CloseableIteratorIteration(java.util.Iterator)|",
+    "v1Body": [
+      "|java+method:///org/openrdf/query/algebra/BindingSetAssignment/getBindingSets()|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+constructor:///org/openrdf/query/algebra/evaluation/impl/EvaluationStrategyImpl$4/EvaluationStrategyImpl$4(org.openrdf.query.algebra.evaluation.impl.EvaluationStrategyImpl,java.util.Iterator,org.openrdf.query.algebra.evaluation.QueryBindingSet)|",
+      "|java+constructor:///org/openrdf/query/algebra/evaluation/QueryBindingSet/QueryBindingSet(org.openrdf.query.BindingSet)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/openrdf/query/algebra/BindingSetAssignment/getBindingSets()|",
+      "|java+constructor:///info/aduna/iteration/CloseableIteratorIteration/CloseableIteratorIteration(java.util.Iterator)|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+constructor:///org/openrdf/query/algebra/evaluation/impl/EvaluationStrategyImpl$4/EvaluationStrategyImpl$4(org.openrdf.query.algebra.evaluation.impl.EvaluationStrategyImpl,java.util.Iterator,org.openrdf.query.algebra.evaluation.QueryBindingSet)|",
+      "|java+constructor:///org/openrdf/query/algebra/evaluation/QueryBindingSet/QueryBindingSet(org.openrdf.query.BindingSet)|",
+      "|java+method:///org/openrdf/query/BindingSet/size()|"
+    ],
+    "affectedLib": "org.openrdf.sesame:sesame-util:2.8.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openrdf.sesame:sesame-queryalgebra-evaluation:2.8.3",
+    "coordinatesV2": "org.openrdf.sesame:sesame-queryalgebra-evaluation:2.8.4",
+    "caller": "|java+method:///org/openrdf/query/algebra/evaluation/iterator/OrderIterator/handleClose()|",
+    "called": "|java+method:///info/aduna/iteration/DelayedIteration/handleClose()|",
+    "v1Body": [
+      "|java+method:///info/aduna/iteration/CloseableIteration/close()|",
+      "|java+method:///info/aduna/iteration/DelayedIteration/handleClose()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/mapdb/DB/close()|",
+      "|java+method:///info/aduna/iteration/CloseableIteration/close()|",
+      "|java+method:///info/aduna/iteration/DelayedIteration/handleClose()|"
+    ],
+    "affectedLib": "org.openrdf.sesame:sesame-util:2.8.4",
+    "change": "UPDATED"
+  }
+]

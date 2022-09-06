@@ -1,0 +1,55 @@
+[
+  {
+    "coordinatesV1": "org.jboss.resteasy:resteasy-yaml-provider:3.0.12.Final",
+    "coordinatesV2": "org.jboss.resteasy:resteasy-yaml-provider:3.0.13.Final",
+    "caller": "|java+method:///org/jboss/resteasy/plugins/providers/YamlProvider/writeTo(java.lang.Object,java.lang.Class,java.lang.reflect.Type,java.lang.annotation.Annotation%5B%5D,javax.ws.rs.core.MediaType,javax.ws.rs.core.MultivaluedMap,java.io.OutputStream)|",
+    "called": "|java+constructor:///org/jboss/resteasy/spi/WriterException/WriterException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+constructor:///org/yaml/snakeyaml/Yaml/Yaml()|",
+      "|java+method:///org/jboss/resteasy/logging/Logger/debug(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/jboss/resteasy/spi/WriterException/WriterException(java.lang.Throwable)|",
+      "|java+method:///java/lang/String/getBytes()|",
+      "|java+method:///java/io/OutputStream/write(byte%5B%5D)|",
+      "|java+method:///org/yaml/snakeyaml/Yaml/dump(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jboss/resteasy/plugins/providers/yaml/i18n/LogMessages/debug(java.lang.Object)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+constructor:///org/yaml/snakeyaml/Yaml/Yaml()|",
+      "|java+method:///org/jboss/resteasy/plugins/providers/yaml/i18n/Messages/failedToEncodeYaml(java.lang.String)|",
+      "|java+constructor:///org/jboss/resteasy/spi/WriterException/WriterException(java.lang.Throwable)|",
+      "|java+method:///java/lang/String/getBytes()|",
+      "|java+method:///java/io/OutputStream/write(byte%5B%5D)|",
+      "|java+method:///org/yaml/snakeyaml/Yaml/dump(java.lang.Object)|"
+    ],
+    "affectedLib": "org.jboss.resteasy:resteasy-jaxrs:3.0.13.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jboss.resteasy:resteasy-yaml-provider:3.0.12.Final",
+    "coordinatesV2": "org.jboss.resteasy:resteasy-yaml-provider:3.0.13.Final",
+    "caller": "|java+method:///org/jboss/resteasy/plugins/providers/YamlProvider/readFrom(java.lang.Class,java.lang.reflect.Type,java.lang.annotation.Annotation%5B%5D,javax.ws.rs.core.MediaType,javax.ws.rs.core.MultivaluedMap,java.io.InputStream)|",
+    "called": "|java+constructor:///org/jboss/resteasy/spi/ReaderException/ReaderException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/yaml/snakeyaml/error/YAMLException/getMessage()|",
+      "|java+constructor:///org/yaml/snakeyaml/Yaml/Yaml()|",
+      "|java+constructor:///org/jboss/resteasy/spi/ReaderException/ReaderException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/jboss/resteasy/logging/Logger/debug(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/yaml/snakeyaml/Yaml/load(java.io.InputStream)|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jboss/resteasy/plugins/providers/yaml/i18n/Messages/failedToDecodeYamlMessage(java.lang.String)|",
+      "|java+constructor:///org/yaml/snakeyaml/Yaml/Yaml()|",
+      "|java+constructor:///org/jboss/resteasy/spi/ReaderException/ReaderException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/jboss/resteasy/plugins/providers/yaml/i18n/Messages/failedToDecodeYaml()|",
+      "|java+method:///org/yaml/snakeyaml/Yaml/load(java.io.InputStream)|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+method:///org/jboss/resteasy/plugins/providers/yaml/i18n/LogMessages/debug(java.lang.Object)|",
+      "|java+method:///org/yaml/snakeyaml/error/YAMLException/getMessage()|"
+    ],
+    "affectedLib": "org.jboss.resteasy:resteasy-jaxrs:3.0.13.Final",
+    "change": "UPDATED"
+  }
+]

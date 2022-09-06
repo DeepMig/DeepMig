@@ -1,0 +1,55 @@
+[
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-u2f:5.2.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-u2f:5.2.0-RC2",
+    "caller": "|java+method:///org/apereo/cas/config/support/authentication/U2FAuthenticationEventExecutionPlanConfiguration/u2fBypassEvaluator()|",
+    "called": "|java+constructor:///org/apereo/cas/services/DefaultMultifactorAuthenticationProviderBypass/DefaultMultifactorAuthenticationProviderBypass(org.apereo.cas.configuration.model.support.mfa.BaseMultifactorProvider$Bypass)|",
+    "v1Body": [
+      "|java+method:///org/apereo/cas/configuration/model/support/mfa/MultifactorAuthenticationProperties$U2F/getBypass()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/mfa/MultifactorAuthenticationProperties/getU2f()|",
+      "|java+method:///org/apereo/cas/configuration/model/core/authentication/AuthenticationProperties/getMfa()|",
+      "|java+method:///org/apereo/cas/configuration/CasConfigurationProperties/getAuthn()|",
+      "|java+constructor:///org/apereo/cas/services/DefaultMultifactorAuthenticationProviderBypass/DefaultMultifactorAuthenticationProviderBypass(org.apereo.cas.configuration.model.support.mfa.MultifactorAuthenticationProperties$BaseProvider$Bypass)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apereo/cas/configuration/model/support/mfa/MultifactorAuthenticationProperties/getU2f()|",
+      "|java+method:///org/apereo/cas/configuration/model/core/authentication/AuthenticationProperties/getMfa()|",
+      "|java+method:///org/apereo/cas/configuration/CasConfigurationProperties/getAuthn()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/mfa/U2FMultifactorProperties/getBypass()|",
+      "|java+constructor:///org/apereo/cas/services/DefaultMultifactorAuthenticationProviderBypass/DefaultMultifactorAuthenticationProviderBypass(org.apereo.cas.configuration.model.support.mfa.BaseMultifactorProvider$Bypass)|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-core-authentication:5.2.0-RC2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-u2f:5.2.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-u2f:5.2.0-RC2",
+    "caller": "|java+constructor:///org/apereo/cas/adaptors/u2f/storage/U2FJsonResourceDeviceRepository/U2FJsonResourceDeviceRepository(com.google.common.cache.LoadingCache,org.springframework.core.io.Resource,long,java.util.concurrent.TimeUnit)|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/findAndRegisterModules()|",
+    "v1Body": [
+      "|java+method:///java/io/File/createNewFile()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/springframework/core/io/Resource/getFile()|",
+      "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/findAndRegisterModules()|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+      "|java+constructor:///org/apereo/cas/adaptors/u2f/storage/BaseU2FDeviceRepository/BaseU2FDeviceRepository(com.google.common.cache.LoadingCache)|",
+      "|java+method:///org/springframework/core/io/Resource/exists()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/enableDefaultTyping(com.fasterxml.jackson.databind.ObjectMapper$DefaultTyping,com.fasterxml.jackson.annotation.JsonTypeInfo$As)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/File/createNewFile()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/springframework/core/io/Resource/getFile()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/findAndRegisterModules()|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+      "|java+constructor:///org/apereo/cas/adaptors/u2f/storage/BaseU2FDeviceRepository/BaseU2FDeviceRepository(com.google.common.cache.LoadingCache)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+method:///org/springframework/core/io/Resource/exists()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/enableDefaultTyping(com.fasterxml.jackson.databind.ObjectMapper$DefaultTyping,com.fasterxml.jackson.annotation.JsonTypeInfo$As)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.9.0",
+    "change": "UPDATED"
+  }
+]

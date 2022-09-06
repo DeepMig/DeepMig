@@ -1,0 +1,70 @@
+[
+  {
+    "coordinatesV1": "org.actframework:act-aaa:1.2.4",
+    "coordinatesV2": "org.actframework:act-aaa:1.3.0-RC1",
+    "caller": "|java+method:///act/aaa/AAAService/ensureAuthenticity(org.osgl.aaa.Principal,act.app.ActionContext)|",
+    "called": "|java+method:///act/app/ActionContext/missingAuthenticationHandler()|",
+    "v1Body": [
+      "|java+method:///org/osgl/util/S/eq(java.lang.String,java.lang.String)|",
+      "|java+method:///act/util/MissingAuthenticationHandler/result(act.app.ActionContext)|",
+      "|java+method:///act/app/ActionContext/attribute(java.lang.String)|",
+      "|java+method:///act/aaa/AAAService/requireAuthenticate(act.handler.builtin.controller.RequestHandlerProxy)|",
+      "|java+method:///act/app/ActionContext/req()|",
+      "|java+method:///act/app/ActionContext/missingAuthenticationHandler()|",
+      "|java+method:///org/osgl/http/H$Request/path()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/osgl/util/S/eq(java.lang.String,java.lang.String)|",
+      "|java+method:///act/aaa/AAAService/requireAuthenticate(act.handler.RequestHandler)|",
+      "|java+method:///act/handler/RequestHandler/sessionFree()|",
+      "|java+method:///act/util/MissingAuthenticationHandler/result(act.app.ActionContext)|",
+      "|java+method:///act/app/ActionContext/attribute(java.lang.String)|",
+      "|java+method:///act/app/ActionContext/req()|",
+      "|java+method:///act/app/ActionContext/missingAuthenticationHandler()|",
+      "|java+method:///org/osgl/http/H$Request/path()|"
+    ],
+    "affectedLib": "org.actframework:act:1.6.0-RC2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.actframework:act-aaa:1.2.4",
+    "coordinatesV2": "org.actframework:act-aaa:1.3.0-RC1",
+    "caller": "|java+method:///act/aaa/AAAPlugin/initializeAAAService(act.app.App,act.aaa.ActAAAService)|",
+    "called": "|java+method:///act/event/EventBus/bind(act.app.event.AppEventId,act.app.event.AppEventListener)|",
+    "v1Body": [
+      "|java+constructor:///act/aaa/AAAService/AAAService(act.app.App,act.aaa.ActAAAService)|",
+      "|java+method:///act/event/EventBus/bind(act.app.event.AppEventId,act.app.event.AppEventListener)|",
+      "|java+constructor:///act/aaa/AAAService/AAAService(act.app.App)|",
+      "|java+method:///act/app/App/eventBus()|",
+      "|java+method:///java/util/concurrent/ConcurrentMap/get(java.lang.Object)|",
+      "|java+constructor:///act/aaa/AAAPlugin$1/AAAPlugin$1(act.aaa.AAAPlugin,java.lang.CharSequence,act.app.App)|",
+      "|java+method:///java/util/concurrent/ConcurrentMap/put(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///act/aaa/AAAService/AAAService(act.app.App,act.aaa.ActAAAService)|",
+      "|java+method:///act/event/EventBus/bind(act.app.event.AppEventId,act.app.event.AppEventListener)|",
+      "|java+method:///java/util/concurrent/ConcurrentMap/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///act/app/App/eventBus()|",
+      "|java+method:///java/util/concurrent/ConcurrentMap/get(java.lang.Object)|",
+      "|java+constructor:///act/aaa/AAAService/AAAService(act.app.App)|",
+      "|java+constructor:///act/aaa/AAAPlugin$2/AAAPlugin$2(act.aaa.AAAPlugin,java.lang.CharSequence,act.app.App)|"
+    ],
+    "affectedLib": "org.actframework:act:1.6.0-RC2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.actframework:act-aaa:1.2.4",
+    "coordinatesV2": "org.actframework:act-aaa:1.3.0-RC1",
+    "caller": "|java+method:///act/aaa/AAAServiceFinder/plugin()|",
+    "called": "|java+method:///act/Act/getInstance(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///act/Act/sessionManager()|",
+      "|java+method:///act/util/SessionManager/findListener(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///act/Act/getInstance(java.lang.Class)|"
+    ],
+    "affectedLib": "org.actframework:act:1.6.0-RC2",
+    "change": "ADDED"
+  }
+]

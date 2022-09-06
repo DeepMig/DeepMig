@@ -1,0 +1,156 @@
+[
+  {
+    "coordinatesV1": "com.twitter:finagle-zipkin_2.10:6.7.4",
+    "coordinatesV2": "com.twitter:finagle-zipkin_2.10:6.4.1",
+    "caller": "|java+method:///com/twitter/finagle/zipkin/thrift/LogEntry$/decode(org.apache.thrift.protocol.TProtocol)|",
+    "called": "|java+method:///com/twitter/scrooge/ThriftStructCodec$class/decode(com.twitter.scrooge.ThriftStructCodec,org.apache.thrift.protocol.TProtocol)|",
+    "v1Body": [
+      "|java+method:///com/twitter/scrooge/ThriftStructCodec$class/decode(com.twitter.scrooge.ThriftStructCodec,org.apache.thrift.protocol.TProtocol)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/twitter/finagle/zipkin/thrift/LogEntry$Immutable$/decode(org.apache.thrift.protocol.TProtocol)|",
+      "|java+method:///com/twitter/finagle/zipkin/thrift/LogEntry$/decode(org.apache.thrift.protocol.TProtocol)|"
+    ],
+    "affectedLib": "com.twitter:scrooge-runtime_2.10:3.1.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.twitter:finagle-zipkin_2.10:6.7.4",
+    "coordinatesV2": "com.twitter:finagle-zipkin_2.10:6.4.1",
+    "caller": "|java+method:///com/twitter/finagle/zipkin/thrift/LogEntry$/encode(com.twitter.scrooge.ThriftStruct,org.apache.thrift.protocol.TProtocol)|",
+    "called": "|java+method:///com/twitter/scrooge/ThriftStructCodec$class/encode(com.twitter.scrooge.ThriftStructCodec,com.twitter.scrooge.ThriftStruct,org.apache.thrift.protocol.TProtocol)|",
+    "v1Body": [
+      "|java+method:///com/twitter/scrooge/ThriftStructCodec$class/encode(com.twitter.scrooge.ThriftStructCodec,com.twitter.scrooge.ThriftStruct,org.apache.thrift.protocol.TProtocol)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/twitter/finagle/zipkin/thrift/LogEntry$/encode(com.twitter.finagle.zipkin.thrift.LogEntry,org.apache.thrift.protocol.TProtocol)|"
+    ],
+    "affectedLib": "com.twitter:scrooge-runtime_2.10:3.1.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.twitter:finagle-zipkin_2.10:6.4.1",
+    "coordinatesV2": "com.twitter:finagle-zipkin_2.10:6.7.4",
+    "caller": "|java+constructor:///com/twitter/finagle/zipkin/thrift/LogEntry$/LogEntry$()|",
+    "called": "|java+constructor:///com/twitter/scrooge/ThriftStructCodec3/ThriftStructCodec3()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/thrift/protocol/TStruct/TStruct(java.lang.String)|",
+      "|java+constructor:///com/twitter/finagle/zipkin/thrift/LogEntry$$anonfun$1/LogEntry$$anonfun$1()|",
+      "|java+constructor:///com/twitter/finagle/zipkin/thrift/LogEntry$$anonfun$2/LogEntry$$anonfun$2()|",
+      "|java+constructor:///org/apache/thrift/protocol/TField/TField(java.lang.String,byte,short)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///com/twitter/scrooge/ThriftStructCodec$class/$init$(com.twitter.scrooge.ThriftStructCodec)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/thrift/protocol/TStruct/TStruct(java.lang.String)|",
+      "|java+constructor:///com/twitter/scrooge/ThriftStructCodec3/ThriftStructCodec3()|",
+      "|java+constructor:///org/apache/thrift/protocol/TField/TField(java.lang.String,byte,short)|"
+    ],
+    "affectedLib": "com.twitter:scrooge-core_2.10:3.9.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.twitter:finagle-zipkin_2.10:6.4.1",
+    "coordinatesV2": "com.twitter:finagle-zipkin_2.10:6.7.4",
+    "caller": "|java+constructor:///com/twitter/finagle/zipkin/thrift/RawZipkinTracer/RawZipkinTracer(java.lang.String,int,com.twitter.finagle.stats.StatsReceiver)|",
+    "called": "|java+method:///com/twitter/finagle/builder/ClientBuilder/build(com.twitter.finagle.builder.ClientConfigEvidence)|",
+    "v1Body": [
+      "|java+method:///com/twitter/finagle/util/DefaultTimer$/twitter()|",
+      "|java+method:///com/twitter/finagle/zipkin/thrift/scribe$FinagledClient$/$lessinit$greater$default$3()|",
+      "|java+method:///com/twitter/finagle/builder/ClientBuilder/hostConnectionLimit(int)|",
+      "|java+constructor:///com/twitter/finagle/zipkin/thrift/DeadlineSpanMap/DeadlineSpanMap(com.twitter.finagle.zipkin.thrift.RawZipkinTracer,com.twitter.util.Duration,com.twitter.finagle.stats.StatsReceiver,com.twitter.util.Timer)|",
+      "|java+method:///com/twitter/finagle/thrift/ThriftClientFramedCodec$/apply(scala.Option)|",
+      "|java+constructor:///com/twitter/finagle/zipkin/thrift/scribe$FinagledClient/scribe$FinagledClient(com.twitter.finagle.Service,org.apache.thrift.protocol.TProtocolFactory,scala.Option,com.twitter.finagle.stats.StatsReceiver)|",
+      "|java+method:///com/twitter/finagle/builder/ClientBuilder$/apply()|",
+      "|java+method:///com/twitter/conversions/time$RichWholeNumber/seconds()|",
+      "|java+method:///com/twitter/finagle/Filter/andThen(com.twitter.finagle.Service)|",
+      "|java+constructor:///com/twitter/finagle/zipkin/thrift/TracelessFilter/TracelessFilter()|",
+      "|java+constructor:///org/apache/thrift/protocol/TBinaryProtocol$Factory/TBinaryProtocol$Factory()|",
+      "|java+method:///com/twitter/finagle/builder/ClientBuilder/hosts(java.net.SocketAddress)|",
+      "|java+constructor:///java/net/InetSocketAddress/InetSocketAddress(java.lang.String,int)|",
+      "|java+method:///com/twitter/finagle/zipkin/thrift/scribe$FinagledClient$/$lessinit$greater$default$4()|",
+      "|java+method:///com/twitter/finagle/builder/ClientBuilder/codec(scala.Function1)|",
+      "|java+method:///com/twitter/finagle/builder/ClientBuilder/build(com.twitter.finagle.builder.ClientConfigEvidence)|",
+      "|java+method:///com/twitter/finagle/thrift/ThriftClientFramedCodec$/apply$default$1()|",
+      "|java+method:///com/twitter/conversions/time$/intToTimeableNumber(int)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///com/twitter/finagle/builder/ClientBuilder/daemon(boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/twitter/finagle/util/DefaultTimer$/twitter()|",
+      "|java+method:///com/twitter/finagle/zipkin/thrift/Scribe$FinagledClient$/$lessinit$greater$default$3()|",
+      "|java+constructor:///com/twitter/finagle/zipkin/thrift/Scribe$FinagledClient/Scribe$FinagledClient(com.twitter.finagle.Service,org.apache.thrift.protocol.TProtocolFactory,java.lang.String,com.twitter.finagle.stats.StatsReceiver)|",
+      "|java+method:///com/twitter/finagle/builder/ClientBuilder/hostConnectionLimit(int)|",
+      "|java+constructor:///com/twitter/finagle/zipkin/thrift/DeadlineSpanMap/DeadlineSpanMap(com.twitter.finagle.zipkin.thrift.RawZipkinTracer,com.twitter.util.Duration,com.twitter.finagle.stats.StatsReceiver,com.twitter.util.Timer)|",
+      "|java+method:///com/twitter/finagle/thrift/ThriftClientFramedCodec$/apply(scala.Option)|",
+      "|java+method:///com/twitter/finagle/builder/ClientBuilder$/apply()|",
+      "|java+method:///com/twitter/conversions/time$RichWholeNumber/seconds()|",
+      "|java+method:///com/twitter/finagle/Filter/andThen(com.twitter.finagle.Service)|",
+      "|java+constructor:///com/twitter/finagle/zipkin/thrift/TracelessFilter/TracelessFilter()|",
+      "|java+constructor:///org/apache/thrift/protocol/TBinaryProtocol$Factory/TBinaryProtocol$Factory()|",
+      "|java+method:///com/twitter/finagle/builder/ClientBuilder/hosts(java.net.SocketAddress)|",
+      "|java+constructor:///java/net/InetSocketAddress/InetSocketAddress(java.lang.String,int)|",
+      "|java+method:///com/twitter/finagle/zipkin/thrift/Scribe$FinagledClient$/$lessinit$greater$default$4()|",
+      "|java+method:///com/twitter/finagle/builder/ClientBuilder/codec(scala.Function1)|",
+      "|java+method:///com/twitter/finagle/builder/ClientBuilder/build(com.twitter.finagle.builder.ClientConfigEvidence)|",
+      "|java+method:///com/twitter/finagle/thrift/ThriftClientFramedCodec$/apply$default$1()|",
+      "|java+method:///com/twitter/conversions/time$/intToTimeableNumber(int)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///com/twitter/finagle/builder/ClientBuilder/daemon(boolean)|"
+    ],
+    "affectedLib": "com.twitter:finagle-core_2.10:6.7.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.twitter:finagle-zipkin_2.10:6.4.1",
+    "coordinatesV2": "com.twitter:finagle-zipkin_2.10:6.7.4",
+    "caller": "|java+constructor:///com/twitter/finagle/zipkin/thrift/RawZipkinTracer/RawZipkinTracer(java.lang.String,int,com.twitter.finagle.stats.StatsReceiver)|",
+    "called": "|java+method:///com/twitter/finagle/thrift/ThriftClientFramedCodec$/apply(scala.Option)|",
+    "v1Body": [
+      "|java+method:///com/twitter/finagle/util/DefaultTimer$/twitter()|",
+      "|java+method:///com/twitter/finagle/zipkin/thrift/scribe$FinagledClient$/$lessinit$greater$default$3()|",
+      "|java+method:///com/twitter/finagle/builder/ClientBuilder/hostConnectionLimit(int)|",
+      "|java+constructor:///com/twitter/finagle/zipkin/thrift/DeadlineSpanMap/DeadlineSpanMap(com.twitter.finagle.zipkin.thrift.RawZipkinTracer,com.twitter.util.Duration,com.twitter.finagle.stats.StatsReceiver,com.twitter.util.Timer)|",
+      "|java+method:///com/twitter/finagle/thrift/ThriftClientFramedCodec$/apply(scala.Option)|",
+      "|java+constructor:///com/twitter/finagle/zipkin/thrift/scribe$FinagledClient/scribe$FinagledClient(com.twitter.finagle.Service,org.apache.thrift.protocol.TProtocolFactory,scala.Option,com.twitter.finagle.stats.StatsReceiver)|",
+      "|java+method:///com/twitter/finagle/builder/ClientBuilder$/apply()|",
+      "|java+method:///com/twitter/conversions/time$RichWholeNumber/seconds()|",
+      "|java+method:///com/twitter/finagle/Filter/andThen(com.twitter.finagle.Service)|",
+      "|java+constructor:///com/twitter/finagle/zipkin/thrift/TracelessFilter/TracelessFilter()|",
+      "|java+constructor:///org/apache/thrift/protocol/TBinaryProtocol$Factory/TBinaryProtocol$Factory()|",
+      "|java+method:///com/twitter/finagle/builder/ClientBuilder/hosts(java.net.SocketAddress)|",
+      "|java+constructor:///java/net/InetSocketAddress/InetSocketAddress(java.lang.String,int)|",
+      "|java+method:///com/twitter/finagle/zipkin/thrift/scribe$FinagledClient$/$lessinit$greater$default$4()|",
+      "|java+method:///com/twitter/finagle/builder/ClientBuilder/codec(scala.Function1)|",
+      "|java+method:///com/twitter/finagle/builder/ClientBuilder/build(com.twitter.finagle.builder.ClientConfigEvidence)|",
+      "|java+method:///com/twitter/finagle/thrift/ThriftClientFramedCodec$/apply$default$1()|",
+      "|java+method:///com/twitter/conversions/time$/intToTimeableNumber(int)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///com/twitter/finagle/builder/ClientBuilder/daemon(boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/twitter/finagle/util/DefaultTimer$/twitter()|",
+      "|java+method:///com/twitter/finagle/zipkin/thrift/Scribe$FinagledClient$/$lessinit$greater$default$3()|",
+      "|java+constructor:///com/twitter/finagle/zipkin/thrift/Scribe$FinagledClient/Scribe$FinagledClient(com.twitter.finagle.Service,org.apache.thrift.protocol.TProtocolFactory,java.lang.String,com.twitter.finagle.stats.StatsReceiver)|",
+      "|java+method:///com/twitter/finagle/builder/ClientBuilder/hostConnectionLimit(int)|",
+      "|java+constructor:///com/twitter/finagle/zipkin/thrift/DeadlineSpanMap/DeadlineSpanMap(com.twitter.finagle.zipkin.thrift.RawZipkinTracer,com.twitter.util.Duration,com.twitter.finagle.stats.StatsReceiver,com.twitter.util.Timer)|",
+      "|java+method:///com/twitter/finagle/thrift/ThriftClientFramedCodec$/apply(scala.Option)|",
+      "|java+method:///com/twitter/finagle/builder/ClientBuilder$/apply()|",
+      "|java+method:///com/twitter/conversions/time$RichWholeNumber/seconds()|",
+      "|java+method:///com/twitter/finagle/Filter/andThen(com.twitter.finagle.Service)|",
+      "|java+constructor:///com/twitter/finagle/zipkin/thrift/TracelessFilter/TracelessFilter()|",
+      "|java+constructor:///org/apache/thrift/protocol/TBinaryProtocol$Factory/TBinaryProtocol$Factory()|",
+      "|java+method:///com/twitter/finagle/builder/ClientBuilder/hosts(java.net.SocketAddress)|",
+      "|java+constructor:///java/net/InetSocketAddress/InetSocketAddress(java.lang.String,int)|",
+      "|java+method:///com/twitter/finagle/zipkin/thrift/Scribe$FinagledClient$/$lessinit$greater$default$4()|",
+      "|java+method:///com/twitter/finagle/builder/ClientBuilder/codec(scala.Function1)|",
+      "|java+method:///com/twitter/finagle/builder/ClientBuilder/build(com.twitter.finagle.builder.ClientConfigEvidence)|",
+      "|java+method:///com/twitter/finagle/thrift/ThriftClientFramedCodec$/apply$default$1()|",
+      "|java+method:///com/twitter/conversions/time$/intToTimeableNumber(int)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///com/twitter/finagle/builder/ClientBuilder/daemon(boolean)|"
+    ],
+    "affectedLib": "com.twitter:finagle-thrift_2.10:6.7.4",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,424 @@
+[
+  {
+    "coordinatesV1": "org.restcomm.smpp:ch-smpp:5.0.12",
+    "coordinatesV2": "org.restcomm.smpp:ch-smpp:5.0.9",
+    "caller": "|java+constructor:///com/cloudhopper/smpp/channel/SmppSessionWrapper/SmppSessionWrapper(com.cloudhopper.smpp.impl.SmppSessionChannelListener)|",
+    "called": "|java+constructor:///org/jboss/netty/channel/SimpleChannelHandler/SimpleChannelHandler()|",
+    "v1Body": [
+      "|java+constructor:///org/jboss/netty/channel/SimpleChannelHandler/SimpleChannelHandler()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/netty/channel/SimpleChannelInboundHandler/SimpleChannelInboundHandler()|"
+    ],
+    "affectedLib": "io.netty:netty:3.9.6.Final",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.restcomm.smpp:ch-smpp:5.0.12",
+    "coordinatesV2": "org.restcomm.smpp:ch-smpp:5.0.9",
+    "caller": "|java+method:///com/cloudhopper/smpp/impl/DefaultSmppClient/createConnectedChannel(java.lang.String,int,long)|",
+    "called": "|java+method:///org/jboss/netty/bootstrap/ClientBootstrap/connect(java.net.SocketAddress)|",
+    "v1Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/jboss/netty/channel/ChannelFuture/getChannel()|",
+      "|java+method:///java/lang/Throwable/getMessage()|",
+      "|java+method:///org/jboss/netty/channel/ChannelFuture/isSuccess()|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///org/jboss/netty/channel/ChannelFuture/getCause()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/jboss/netty/bootstrap/ClientBootstrap/setOption(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///com/cloudhopper/smpp/type/SmppChannelConnectException/SmppChannelConnectException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/jboss/netty/channel/ChannelFuture/isCancelled()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/jboss/netty/bootstrap/ClientBootstrap/connect(java.net.SocketAddress)|",
+      "|java+constructor:///java/net/InetSocketAddress/InetSocketAddress(java.lang.String,int)|",
+      "|java+method:///org/jboss/netty/channel/ChannelFuture/awaitUninterruptibly()|",
+      "|java+constructor:///java/lang/InterruptedException/InterruptedException(java.lang.String)|",
+      "|java+constructor:///com/cloudhopper/smpp/type/SmppChannelConnectTimeoutException/SmppChannelConnectTimeoutException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/ChannelFuture/awaitUninterruptibly()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/lang/Throwable/getMessage()|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///io/netty/channel/ChannelFuture/channel()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///io/netty/channel/ChannelFuture/isCancelled()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/net/InetSocketAddress/InetSocketAddress(java.lang.String,int)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///io/netty/channel/ChannelFuture/isSuccess()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///io/netty/bootstrap/Bootstrap/connect(java.net.SocketAddress)|",
+      "|java+constructor:///com/cloudhopper/smpp/type/SmppChannelConnectException/SmppChannelConnectException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///io/netty/bootstrap/Bootstrap/option(io.netty.channel.ChannelOption,java.lang.Object)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///io/netty/channel/ChannelFuture/cause()|",
+      "|java+constructor:///java/lang/InterruptedException/InterruptedException(java.lang.String)|",
+      "|java+constructor:///com/cloudhopper/smpp/type/SmppChannelConnectTimeoutException/SmppChannelConnectTimeoutException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "io.netty:netty:3.9.6.Final",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.restcomm.smpp:ch-smpp:5.0.12",
+    "coordinatesV2": "org.restcomm.smpp:ch-smpp:5.0.9",
+    "caller": "|java+method:///com/cloudhopper/smpp/impl/DefaultSmppServer/start()|",
+    "called": "|java+method:///org/jboss/netty/bootstrap/ServerBootstrap/bind(java.net.SocketAddress)|",
+    "v1Body": [
+      "|java+method:///com/cloudhopper/smpp/SmppServerConfiguration/getHost()|",
+      "|java+method:///com/cloudhopper/smpp/SmppServerConfiguration/getName()|",
+      "|java+constructor:///java/net/InetSocketAddress/InetSocketAddress(java.lang.String,int)|",
+      "|java+method:///org/jboss/netty/bootstrap/ServerBootstrap/bind(java.net.SocketAddress)|",
+      "|java+method:///com/cloudhopper/smpp/impl/DefaultSmppServer/isDestroyed()|",
+      "|java+method:///org/jboss/netty/channel/ChannelException/getMessage()|",
+      "|java+method:///com/cloudhopper/smpp/SmppServerConfiguration/getPort()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///com/cloudhopper/smpp/type/SmppChannelException/SmppChannelException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///com/cloudhopper/smpp/type/SmppChannelException/SmppChannelException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/cloudhopper/smpp/SmppServerConfiguration/getName()|",
+      "|java+constructor:///java/net/InetSocketAddress/InetSocketAddress(java.lang.String,int)|",
+      "|java+method:///io/netty/channel/ChannelFuture/await(long)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///io/netty/bootstrap/ServerBootstrap/bind(java.net.SocketAddress)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///io/netty/channel/ChannelFuture/channel()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/InterruptedException/getMessage()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/cloudhopper/smpp/SmppServerConfiguration/getHost()|",
+      "|java+method:///com/cloudhopper/smpp/SmppServerConfiguration/getBindTimeout()|",
+      "|java+method:///io/netty/channel/ChannelFuture/isSuccess()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/cloudhopper/smpp/impl/DefaultSmppServer/isDestroyed()|",
+      "|java+method:///io/netty/channel/ChannelException/getMessage()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///io/netty/channel/ChannelFuture/cause()|",
+      "|java+constructor:///com/cloudhopper/smpp/type/SmppChannelException/SmppChannelException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///com/cloudhopper/smpp/type/SmppChannelException/SmppChannelException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///com/cloudhopper/smpp/SmppServerConfiguration/getPort()|"
+    ],
+    "affectedLib": "io.netty:netty:3.9.6.Final",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.restcomm.smpp:ch-smpp:5.0.12",
+    "coordinatesV2": "org.restcomm.smpp:ch-smpp:5.0.9",
+    "caller": "|java+method:///com/cloudhopper/smpp/transcoder/DefaultPduTranscoder/encode(com.cloudhopper.smpp.pdu.Pdu)|",
+    "called": "|java+constructor:///org/jboss/netty/buffer/BigEndianHeapChannelBuffer/BigEndianHeapChannelBuffer(int)|",
+    "v1Body": [
+      "|java+method:///com/cloudhopper/smpp/pdu/Pdu/getCommandId()|",
+      "|java+method:///org/jboss/netty/buffer/ChannelBuffer/readableBytes()|",
+      "|java+method:///com/cloudhopper/smpp/pdu/PduResponse/getResultMessage()|",
+      "|java+method:///com/cloudhopper/smpp/pdu/Pdu/hasCommandLengthCalculated()|",
+      "|java+constructor:///com/cloudhopper/smpp/type/NotEnoughDataInBufferException/NotEnoughDataInBufferException(java.lang.String,int,int)|",
+      "|java+method:///com/cloudhopper/smpp/pdu/Pdu/writeOptionalParameters(org.jboss.netty.buffer.ChannelBuffer,com.cloudhopper.smpp.transcoder.PduTranscoderContext)|",
+      "|java+method:///com/cloudhopper/smpp/pdu/Pdu/calculateAndSetCommandLength()|",
+      "|java+method:///com/cloudhopper/smpp/transcoder/PduTranscoderContext/lookupResultMessage(int)|",
+      "|java+method:///com/cloudhopper/smpp/pdu/PduResponse/setResultMessage(java.lang.String)|",
+      "|java+method:///com/cloudhopper/smpp/pdu/Pdu/writeBody(org.jboss.netty.buffer.ChannelBuffer)|",
+      "|java+method:///com/cloudhopper/smpp/pdu/Pdu/getSequenceNumber()|",
+      "|java+method:///com/cloudhopper/smpp/pdu/Pdu/getCommandStatus()|",
+      "|java+method:///org/jboss/netty/buffer/ChannelBuffer/writeInt(int)|",
+      "|java+method:///com/cloudhopper/smpp/pdu/Pdu/getCommandLength()|",
+      "|java+constructor:///org/jboss/netty/buffer/BigEndianHeapChannelBuffer/BigEndianHeapChannelBuffer(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/cloudhopper/smpp/pdu/Pdu/getCommandStatus()|",
+      "|java+method:///com/cloudhopper/smpp/pdu/Pdu/getCommandId()|",
+      "|java+method:///com/cloudhopper/smpp/pdu/Pdu/writeOptionalParameters(io.netty.buffer.ByteBuf,com.cloudhopper.smpp.transcoder.PduTranscoderContext)|",
+      "|java+method:///com/cloudhopper/smpp/pdu/PduResponse/getResultMessage()|",
+      "|java+method:///com/cloudhopper/smpp/pdu/Pdu/hasCommandLengthCalculated()|",
+      "|java+method:///io/netty/buffer/ByteBuf/writeInt(int)|",
+      "|java+constructor:///com/cloudhopper/smpp/type/NotEnoughDataInBufferException/NotEnoughDataInBufferException(java.lang.String,int,int)|",
+      "|java+method:///com/cloudhopper/smpp/pdu/Pdu/getCommandLength()|",
+      "|java+method:///com/cloudhopper/smpp/pdu/Pdu/writeBody(io.netty.buffer.ByteBuf)|",
+      "|java+method:///com/cloudhopper/smpp/pdu/PduResponse/setResultMessage(java.lang.String)|",
+      "|java+method:///com/cloudhopper/smpp/pdu/Pdu/getSequenceNumber()|",
+      "|java+method:///com/cloudhopper/smpp/pdu/Pdu/calculateAndSetCommandLength()|",
+      "|java+method:///io/netty/buffer/Unpooled/buffer(int)|",
+      "|java+method:///com/cloudhopper/smpp/transcoder/PduTranscoderContext/lookupResultMessage(int)|",
+      "|java+method:///io/netty/buffer/ByteBuf/readableBytes()|"
+    ],
+    "affectedLib": "io.netty:netty:3.9.6.Final",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.restcomm.smpp:ch-smpp:5.0.12",
+    "coordinatesV2": "org.restcomm.smpp:ch-smpp:5.0.9",
+    "caller": "|java+constructor:///com/cloudhopper/smpp/channel/SmppSessionPduDecoder/SmppSessionPduDecoder(com.cloudhopper.smpp.transcoder.PduTranscoder)|",
+    "called": "|java+constructor:///org/jboss/netty/handler/codec/frame/FrameDecoder/FrameDecoder()|",
+    "v1Body": [
+      "|java+constructor:///org/jboss/netty/handler/codec/frame/FrameDecoder/FrameDecoder()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/netty/handler/codec/ByteToMessageDecoder/ByteToMessageDecoder()|"
+    ],
+    "affectedLib": "io.netty:netty:3.9.6.Final",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.restcomm.smpp:ch-smpp:5.0.12",
+    "coordinatesV2": "org.restcomm.smpp:ch-smpp:5.0.9",
+    "caller": "|java+method:///com/cloudhopper/smpp/simulator/SmppSimulatorServer/start(int)|",
+    "called": "|java+method:///org/jboss/netty/bootstrap/ServerBootstrap/bind(java.net.SocketAddress)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/net/InetSocketAddress/InetSocketAddress(int)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/jboss/netty/bootstrap/ServerBootstrap/bind(java.net.SocketAddress)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/ChannelFuture/syncUninterruptibly()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///io/netty/bootstrap/ServerBootstrap/bind(java.net.SocketAddress)|",
+      "|java+method:///io/netty/channel/ChannelFuture/channel()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/net/InetSocketAddress/InetSocketAddress(int)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "io.netty:netty:3.9.6.Final",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.restcomm.smpp:ch-smpp:5.0.9",
+    "coordinatesV2": "org.restcomm.smpp:ch-smpp:5.0.12",
+    "caller": "|java+constructor:///com/cloudhopper/smpp/impl/DefaultSmppServer/DefaultSmppServer(com.cloudhopper.smpp.SmppServerConfiguration,com.cloudhopper.smpp.SmppServerHandler)|",
+    "called": "|java+constructor:///io/netty/channel/nio/NioEventLoopGroup/NioEventLoopGroup()|",
+    "v1Body": [
+      "|java+method:///com/cloudhopper/smpp/util/DaemonExecutors/newCachedDaemonThreadPool()|",
+      "|java+constructor:///com/cloudhopper/smpp/impl/DefaultSmppServer/DefaultSmppServer(com.cloudhopper.smpp.SmppServerConfiguration,com.cloudhopper.smpp.SmppServerHandler,java.util.concurrent.ExecutorService)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/netty/channel/oio/OioEventLoopGroup/OioEventLoopGroup()|",
+      "|java+constructor:///com/cloudhopper/smpp/impl/DefaultSmppServer/DefaultSmppServer(com.cloudhopper.smpp.SmppServerConfiguration,com.cloudhopper.smpp.SmppServerHandler,java.util.concurrent.ScheduledExecutorService,io.netty.channel.EventLoopGroup,io.netty.channel.EventLoopGroup)|",
+      "|java+method:///com/cloudhopper/smpp/SmppServerConfiguration/isNonBlockingSocketsEnabled()|",
+      "|java+constructor:///io/netty/channel/nio/NioEventLoopGroup/NioEventLoopGroup()|"
+    ],
+    "affectedLib": "io.netty:netty-all:4.0.28.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.restcomm.smpp:ch-smpp:5.0.9",
+    "coordinatesV2": "org.restcomm.smpp:ch-smpp:5.0.12",
+    "caller": "|java+method:///com/cloudhopper/smpp/impl/DefaultSmppClient/createConnectedChannel(java.lang.String,int,long)|",
+    "called": "|java+method:///io/netty/bootstrap/Bootstrap/connect(java.net.SocketAddress)|",
+    "v1Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/jboss/netty/channel/ChannelFuture/getChannel()|",
+      "|java+method:///java/lang/Throwable/getMessage()|",
+      "|java+method:///org/jboss/netty/channel/ChannelFuture/isSuccess()|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///org/jboss/netty/channel/ChannelFuture/getCause()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/jboss/netty/bootstrap/ClientBootstrap/setOption(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///com/cloudhopper/smpp/type/SmppChannelConnectException/SmppChannelConnectException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/jboss/netty/channel/ChannelFuture/isCancelled()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/jboss/netty/bootstrap/ClientBootstrap/connect(java.net.SocketAddress)|",
+      "|java+constructor:///java/net/InetSocketAddress/InetSocketAddress(java.lang.String,int)|",
+      "|java+method:///org/jboss/netty/channel/ChannelFuture/awaitUninterruptibly()|",
+      "|java+constructor:///java/lang/InterruptedException/InterruptedException(java.lang.String)|",
+      "|java+constructor:///com/cloudhopper/smpp/type/SmppChannelConnectTimeoutException/SmppChannelConnectTimeoutException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/channel/ChannelFuture/awaitUninterruptibly()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/lang/Throwable/getMessage()|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///io/netty/channel/ChannelFuture/channel()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///io/netty/channel/ChannelFuture/isCancelled()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/net/InetSocketAddress/InetSocketAddress(java.lang.String,int)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///io/netty/channel/ChannelFuture/isSuccess()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///io/netty/bootstrap/Bootstrap/connect(java.net.SocketAddress)|",
+      "|java+constructor:///com/cloudhopper/smpp/type/SmppChannelConnectException/SmppChannelConnectException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///io/netty/bootstrap/Bootstrap/option(io.netty.channel.ChannelOption,java.lang.Object)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///io/netty/channel/ChannelFuture/cause()|",
+      "|java+constructor:///java/lang/InterruptedException/InterruptedException(java.lang.String)|",
+      "|java+constructor:///com/cloudhopper/smpp/type/SmppChannelConnectTimeoutException/SmppChannelConnectTimeoutException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "io.netty:netty-all:4.0.28.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.restcomm.smpp:ch-smpp:5.0.9",
+    "coordinatesV2": "org.restcomm.smpp:ch-smpp:5.0.12",
+    "caller": "|java+constructor:///com/cloudhopper/smpp/channel/SmppSessionWrapper/SmppSessionWrapper(com.cloudhopper.smpp.impl.SmppSessionChannelListener)|",
+    "called": "|java+constructor:///io/netty/channel/SimpleChannelInboundHandler/SimpleChannelInboundHandler()|",
+    "v1Body": [
+      "|java+constructor:///org/jboss/netty/channel/SimpleChannelHandler/SimpleChannelHandler()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/netty/channel/SimpleChannelInboundHandler/SimpleChannelInboundHandler()|"
+    ],
+    "affectedLib": "io.netty:netty-all:4.0.28.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.restcomm.smpp:ch-smpp:5.0.9",
+    "coordinatesV2": "org.restcomm.smpp:ch-smpp:5.0.12",
+    "caller": "|java+method:///com/cloudhopper/smpp/transcoder/DefaultPduTranscoder/encode(com.cloudhopper.smpp.pdu.Pdu)|",
+    "called": "|java+method:///io/netty/buffer/Unpooled/buffer(int)|",
+    "v1Body": [
+      "|java+method:///com/cloudhopper/smpp/pdu/Pdu/getCommandId()|",
+      "|java+method:///org/jboss/netty/buffer/ChannelBuffer/readableBytes()|",
+      "|java+method:///com/cloudhopper/smpp/pdu/PduResponse/getResultMessage()|",
+      "|java+method:///com/cloudhopper/smpp/pdu/Pdu/hasCommandLengthCalculated()|",
+      "|java+constructor:///com/cloudhopper/smpp/type/NotEnoughDataInBufferException/NotEnoughDataInBufferException(java.lang.String,int,int)|",
+      "|java+method:///com/cloudhopper/smpp/pdu/Pdu/writeOptionalParameters(org.jboss.netty.buffer.ChannelBuffer,com.cloudhopper.smpp.transcoder.PduTranscoderContext)|",
+      "|java+method:///com/cloudhopper/smpp/pdu/Pdu/calculateAndSetCommandLength()|",
+      "|java+method:///com/cloudhopper/smpp/transcoder/PduTranscoderContext/lookupResultMessage(int)|",
+      "|java+method:///com/cloudhopper/smpp/pdu/PduResponse/setResultMessage(java.lang.String)|",
+      "|java+method:///com/cloudhopper/smpp/pdu/Pdu/writeBody(org.jboss.netty.buffer.ChannelBuffer)|",
+      "|java+method:///com/cloudhopper/smpp/pdu/Pdu/getSequenceNumber()|",
+      "|java+method:///com/cloudhopper/smpp/pdu/Pdu/getCommandStatus()|",
+      "|java+method:///org/jboss/netty/buffer/ChannelBuffer/writeInt(int)|",
+      "|java+method:///com/cloudhopper/smpp/pdu/Pdu/getCommandLength()|",
+      "|java+constructor:///org/jboss/netty/buffer/BigEndianHeapChannelBuffer/BigEndianHeapChannelBuffer(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/cloudhopper/smpp/pdu/Pdu/getCommandStatus()|",
+      "|java+method:///com/cloudhopper/smpp/pdu/Pdu/getCommandId()|",
+      "|java+method:///com/cloudhopper/smpp/pdu/Pdu/writeOptionalParameters(io.netty.buffer.ByteBuf,com.cloudhopper.smpp.transcoder.PduTranscoderContext)|",
+      "|java+method:///com/cloudhopper/smpp/pdu/PduResponse/getResultMessage()|",
+      "|java+method:///com/cloudhopper/smpp/pdu/Pdu/hasCommandLengthCalculated()|",
+      "|java+method:///io/netty/buffer/ByteBuf/writeInt(int)|",
+      "|java+constructor:///com/cloudhopper/smpp/type/NotEnoughDataInBufferException/NotEnoughDataInBufferException(java.lang.String,int,int)|",
+      "|java+method:///com/cloudhopper/smpp/pdu/Pdu/getCommandLength()|",
+      "|java+method:///com/cloudhopper/smpp/pdu/Pdu/writeBody(io.netty.buffer.ByteBuf)|",
+      "|java+method:///com/cloudhopper/smpp/pdu/PduResponse/setResultMessage(java.lang.String)|",
+      "|java+method:///com/cloudhopper/smpp/pdu/Pdu/getSequenceNumber()|",
+      "|java+method:///com/cloudhopper/smpp/pdu/Pdu/calculateAndSetCommandLength()|",
+      "|java+method:///io/netty/buffer/Unpooled/buffer(int)|",
+      "|java+method:///com/cloudhopper/smpp/transcoder/PduTranscoderContext/lookupResultMessage(int)|",
+      "|java+method:///io/netty/buffer/ByteBuf/readableBytes()|"
+    ],
+    "affectedLib": "io.netty:netty-all:4.0.28.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.restcomm.smpp:ch-smpp:5.0.9",
+    "coordinatesV2": "org.restcomm.smpp:ch-smpp:5.0.12",
+    "caller": "|java+constructor:///com/cloudhopper/smpp/impl/DefaultSmppClient/DefaultSmppClient()|",
+    "called": "|java+constructor:///io/netty/channel/nio/NioEventLoopGroup/NioEventLoopGroup(int,java.util.concurrent.ThreadFactory)|",
+    "v1Body": [
+      "|java+constructor:///com/cloudhopper/smpp/impl/DefaultSmppClient/DefaultSmppClient(java.util.concurrent.ExecutorService)|",
+      "|java+method:///com/cloudhopper/smpp/util/DaemonExecutors/newCachedDaemonThreadPool()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/netty/util/concurrent/DefaultThreadFactory/DefaultThreadFactory(java.lang.Class,boolean)|",
+      "|java+constructor:///com/cloudhopper/smpp/impl/DefaultSmppClient/DefaultSmppClient(io.netty.channel.nio.NioEventLoopGroup)|",
+      "|java+constructor:///io/netty/channel/nio/NioEventLoopGroup/NioEventLoopGroup(int,java.util.concurrent.ThreadFactory)|"
+    ],
+    "affectedLib": "io.netty:netty-all:4.0.28.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.restcomm.smpp:ch-smpp:5.0.9",
+    "coordinatesV2": "org.restcomm.smpp:ch-smpp:5.0.12",
+    "caller": "|java+constructor:///com/cloudhopper/smpp/channel/SmppSessionLogger/SmppSessionLogger(java.lang.String,com.cloudhopper.smpp.type.LoggingOptions)|",
+    "called": "|java+constructor:///io/netty/channel/ChannelDuplexHandler/ChannelDuplexHandler()|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/netty/channel/ChannelDuplexHandler/ChannelDuplexHandler()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|"
+    ],
+    "affectedLib": "io.netty:netty-all:4.0.28.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.restcomm.smpp:ch-smpp:5.0.9",
+    "coordinatesV2": "org.restcomm.smpp:ch-smpp:5.0.12",
+    "caller": "|java+constructor:///com/cloudhopper/smpp/simulator/SmppSimulatorServer/SmppSimulatorServer()|",
+    "called": "|java+constructor:///io/netty/channel/group/DefaultChannelGroup/DefaultChannelGroup(java.lang.String,io.netty.util.concurrent.EventExecutor)|",
+    "v1Body": [
+      "|java+constructor:///com/cloudhopper/smpp/simulator/SmppSimulatorServer/SmppSimulatorServer(java.util.concurrent.ExecutorService)|",
+      "|java+method:///java/util/concurrent/Executors/newCachedThreadPool()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/bootstrap/ServerBootstrap/channel(java.lang.Class)|",
+      "|java+constructor:///io/netty/channel/group/DefaultChannelGroup/DefaultChannelGroup(java.lang.String,io.netty.util.concurrent.EventExecutor)|",
+      "|java+constructor:///com/cloudhopper/smpp/simulator/SmppSimulatorServerHandler/SmppSimulatorServerHandler(io.netty.channel.group.ChannelGroup)|",
+      "|java+constructor:///io/netty/bootstrap/ServerBootstrap/ServerBootstrap()|",
+      "|java+method:///io/netty/bootstrap/ServerBootstrap/group(io.netty.channel.EventLoopGroup,io.netty.channel.EventLoopGroup)|",
+      "|java+method:///io/netty/bootstrap/ServerBootstrap/handler(io.netty.channel.ChannelHandler)|",
+      "|java+constructor:///com/cloudhopper/smpp/simulator/SmppSimulatorServer$1/SmppSimulatorServer$1(com.cloudhopper.smpp.simulator.SmppSimulatorServer)|",
+      "|java+method:///io/netty/bootstrap/ServerBootstrap/childHandler(io.netty.channel.ChannelHandler)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///io/netty/channel/nio/NioEventLoopGroup/NioEventLoopGroup()|"
+    ],
+    "affectedLib": "io.netty:netty-all:4.0.28.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.restcomm.smpp:ch-smpp:5.0.9",
+    "coordinatesV2": "org.restcomm.smpp:ch-smpp:5.0.12",
+    "caller": "|java+constructor:///com/cloudhopper/smpp/channel/SmppSessionPduDecoder/SmppSessionPduDecoder(com.cloudhopper.smpp.transcoder.PduTranscoder)|",
+    "called": "|java+constructor:///io/netty/handler/codec/ByteToMessageDecoder/ByteToMessageDecoder()|",
+    "v1Body": [
+      "|java+constructor:///org/jboss/netty/handler/codec/frame/FrameDecoder/FrameDecoder()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/netty/handler/codec/ByteToMessageDecoder/ByteToMessageDecoder()|"
+    ],
+    "affectedLib": "io.netty:netty-all:4.0.28.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.restcomm.smpp:ch-smpp:5.0.9",
+    "coordinatesV2": "org.restcomm.smpp:ch-smpp:5.0.12",
+    "caller": "|java+constructor:///com/cloudhopper/smpp/channel/SmppSessionThreadRenamer/SmppSessionThreadRenamer(java.lang.String)|",
+    "called": "|java+constructor:///io/netty/channel/ChannelHandlerAdapter/ChannelHandlerAdapter()|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/netty/channel/ChannelHandlerAdapter/ChannelHandlerAdapter()|"
+    ],
+    "affectedLib": "io.netty:netty-all:4.0.28.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.restcomm.smpp:ch-smpp:5.0.9",
+    "coordinatesV2": "org.restcomm.smpp:ch-smpp:5.0.12",
+    "caller": "|java+constructor:///com/cloudhopper/smpp/channel/SmppSessionLogger/SmppSessionLogger(java.lang.String,com.cloudhopper.smpp.type.LoggingOptions)|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/netty/channel/ChannelDuplexHandler/ChannelDuplexHandler()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.25",
+    "change": "UPDATED"
+  }
+]

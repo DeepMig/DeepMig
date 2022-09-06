@@ -1,0 +1,317 @@
+[
+  {
+    "coordinatesV1": "org.springframework.batch:spring-batch-infrastructure:2.2.7.RELEASE",
+    "coordinatesV2": "org.springframework.batch:spring-batch-infrastructure:3.0.0.RELEASE",
+    "caller": "|java+method:///org/springframework/batch/item/xml/StaxEventItemReader/afterPropertiesSet()|",
+    "called": "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/springframework/util/Assert/hasLength(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/String/replaceAll(java.lang.String,java.lang.String)|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/lang/String/contains(java.lang.CharSequence)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///javax/xml/namespace/QName/getLocalPart()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/springframework/util/Assert/hasText(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:4.0.5.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.batch:spring-batch-infrastructure:2.2.7.RELEASE",
+    "coordinatesV2": "org.springframework.batch:spring-batch-infrastructure:3.0.0.RELEASE",
+    "caller": "|java+method:///org/springframework/batch/item/file/transform/DefaultFieldSet/readDate(int,java.util.Date)|",
+    "called": "|java+method:///org/springframework/util/StringUtils/hasText(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/springframework/batch/item/file/transform/DefaultFieldSet/readDate(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/batch/item/file/transform/DefaultFieldSet/parseDate(java.lang.String,java.text.DateFormat)|",
+      "|java+method:///org/springframework/util/StringUtils/hasText(java.lang.String)|",
+      "|java+method:///org/springframework/batch/item/file/transform/DefaultFieldSet/readAndTrim(int)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:4.0.5.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.batch:spring-batch-infrastructure:2.2.7.RELEASE",
+    "coordinatesV2": "org.springframework.batch:spring-batch-infrastructure:3.0.0.RELEASE",
+    "caller": "|java+method:///org/springframework/batch/item/database/IbatisPagingItemReader/afterPropertiesSet()|",
+    "called": "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/springframework/batch/item/database/AbstractPagingItemReader/afterPropertiesSet()|",
+      "|java+constructor:///org/springframework/orm/ibatis/SqlMapClientTemplate/SqlMapClientTemplate(com.ibatis.sqlmap.client.SqlMapClient)|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/batch/item/database/AbstractPagingItemReader/afterPropertiesSet()|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:4.0.5.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.batch:spring-batch-infrastructure:2.2.7.RELEASE",
+    "coordinatesV2": "org.springframework.batch:spring-batch-infrastructure:3.0.0.RELEASE",
+    "caller": "|java+method:///org/springframework/batch/item/xml/StaxEventItemWriter/open(org.springframework.batch.item.ExecutionContext)|",
+    "called": "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/springframework/batch/item/xml/StaxEventItemWriter/getExecutionContextKey(java.lang.String)|",
+      "|java+constructor:///org/springframework/batch/item/ItemStreamException/ItemStreamException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/springframework/batch/item/xml/StaxEventItemWriter/open(long,boolean)|",
+      "|java+method:///org/springframework/batch/item/ExecutionContext/getLong(java.lang.String)|",
+      "|java+method:///org/springframework/batch/item/support/AbstractItemStreamItemWriter/open(org.springframework.batch.item.ExecutionContext)|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/springframework/batch/item/ExecutionContext/containsKey(java.lang.String)|",
+      "|java+method:///org/springframework/batch/item/xml/StaxWriterCallback/write(javax.xml.stream.XMLEventWriter)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/batch/item/xml/StaxEventItemWriter/getExecutionContextKey(java.lang.String)|",
+      "|java+constructor:///org/springframework/batch/item/xml/stax/UnclosedElementCollectingEventWriter/UnclosedElementCollectingEventWriter(javax.xml.stream.XMLEventWriter)|",
+      "|java+method:///org/springframework/batch/item/ExecutionContext/getLong(java.lang.String)|",
+      "|java+method:///org/springframework/batch/item/ExecutionContext/get(java.lang.String)|",
+      "|java+method:///org/springframework/batch/item/support/AbstractItemStreamItemWriter/open(org.springframework.batch.item.ExecutionContext)|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/springframework/batch/item/xml/stax/UnclosedElementCollectingEventWriter/getUnclosedElements()|",
+      "|java+method:///org/springframework/batch/item/ExecutionContext/containsKey(java.lang.String)|",
+      "|java+method:///org/springframework/batch/item/xml/StaxWriterCallback/write(javax.xml.stream.XMLEventWriter)|",
+      "|java+method:///org/springframework/batch/item/xml/StaxEventItemWriter/open(long)|",
+      "|java+constructor:///org/springframework/batch/item/ItemStreamException/ItemStreamException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:4.0.5.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.batch:spring-batch-infrastructure:2.2.7.RELEASE",
+    "coordinatesV2": "org.springframework.batch:spring-batch-infrastructure:3.0.0.RELEASE",
+    "caller": "|java+method:///org/springframework/batch/item/database/support/SqlPagingQueryProviderFactoryBean/getObject()|",
+    "called": "|java+method:///org/springframework/util/Assert/state(boolean,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/springframework/batch/support/DatabaseType/valueOf(java.lang.String)|",
+      "|java+method:///org/springframework/batch/item/database/support/AbstractSqlPagingQueryProvider/setWhereClause(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/util/StringUtils/hasText(java.lang.String)|",
+      "|java+method:///org/springframework/batch/item/database/support/AbstractSqlPagingQueryProvider/setSelectClause(java.lang.String)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/springframework/batch/item/database/support/AbstractSqlPagingQueryProvider/setFromClause(java.lang.String)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/springframework/batch/item/database/support/AbstractSqlPagingQueryProvider/setGroupClause(java.lang.String)|",
+      "|java+method:///java/lang/String/toUpperCase()|",
+      "|java+method:///org/springframework/batch/item/database/support/AbstractSqlPagingQueryProvider/init(javax.sql.DataSource)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/springframework/batch/item/database/support/AbstractSqlPagingQueryProvider/setSortKeys(java.util.Map)|",
+      "|java+method:///org/springframework/batch/support/DatabaseType/fromMetaData(javax.sql.DataSource)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/springframework/util/Assert/state(boolean,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/batch/support/DatabaseType/valueOf(java.lang.String)|",
+      "|java+method:///org/springframework/batch/item/database/support/AbstractSqlPagingQueryProvider/setWhereClause(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/util/StringUtils/hasText(java.lang.String)|",
+      "|java+method:///org/springframework/batch/item/database/support/AbstractSqlPagingQueryProvider/setSelectClause(java.lang.String)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/springframework/batch/item/database/support/AbstractSqlPagingQueryProvider/setFromClause(java.lang.String)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/springframework/batch/item/database/support/AbstractSqlPagingQueryProvider/setGroupClause(java.lang.String)|",
+      "|java+method:///java/lang/String/toUpperCase()|",
+      "|java+method:///org/springframework/batch/item/database/support/SqlPagingQueryProviderFactoryBean/getObject()|",
+      "|java+method:///org/springframework/batch/item/database/support/AbstractSqlPagingQueryProvider/init(javax.sql.DataSource)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/springframework/batch/item/database/support/AbstractSqlPagingQueryProvider/setSortKeys(java.util.Map)|",
+      "|java+method:///org/springframework/batch/support/DatabaseType/fromMetaData(javax.sql.DataSource)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/springframework/util/Assert/state(boolean,java.lang.String)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:4.0.5.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.batch:spring-batch-infrastructure:2.2.7.RELEASE",
+    "coordinatesV2": "org.springframework.batch:spring-batch-infrastructure:3.0.0.RELEASE",
+    "caller": "|java+constructor:///org/springframework/batch/item/xml/StaxEventItemWriter/StaxEventItemWriter()|",
+    "called": "|java+method:///org/springframework/util/ClassUtils/getShortName(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/springframework/util/ClassUtils/getShortName(java.lang.Class)|",
+      "|java+constructor:///org/springframework/batch/item/support/AbstractItemStreamItemWriter/AbstractItemStreamItemWriter()|",
+      "|java+method:///org/springframework/batch/item/xml/StaxEventItemWriter/setExecutionContextName(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/util/ClassUtils/getShortName(java.lang.Class)|",
+      "|java+method:///java/util/Collections/emptyList()|",
+      "|java+constructor:///org/springframework/batch/item/support/AbstractItemStreamItemWriter/AbstractItemStreamItemWriter()|",
+      "|java+method:///org/springframework/batch/item/xml/StaxEventItemWriter/setExecutionContextName(java.lang.String)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:4.0.5.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.batch:spring-batch-infrastructure:2.2.7.RELEASE",
+    "coordinatesV2": "org.springframework.batch:spring-batch-infrastructure:3.0.0.RELEASE",
+    "caller": "|java+method:///org/springframework/batch/item/xml/StaxEventItemWriter/update(org.springframework.batch.item.ExecutionContext)|",
+    "called": "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/springframework/batch/item/xml/StaxEventItemWriter/getExecutionContextKey(java.lang.String)|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/springframework/batch/item/xml/StaxEventItemWriter/getPosition()|",
+      "|java+method:///org/springframework/batch/item/ExecutionContext/putLong(java.lang.String,long)|",
+      "|java+method:///org/springframework/batch/item/support/AbstractItemStreamItemWriter/update(org.springframework.batch.item.ExecutionContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/batch/item/xml/StaxEventItemWriter/getExecutionContextKey(java.lang.String)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/springframework/batch/item/ExecutionContext/put(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/springframework/batch/item/xml/StaxEventItemWriter/getPosition()|",
+      "|java+method:///org/springframework/batch/item/ExecutionContext/putLong(java.lang.String,long)|",
+      "|java+method:///org/springframework/batch/item/support/AbstractItemStreamItemWriter/update(org.springframework.batch.item.ExecutionContext)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:4.0.5.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.batch:spring-batch-infrastructure:2.2.7.RELEASE",
+    "coordinatesV2": "org.springframework.batch:spring-batch-infrastructure:3.0.0.RELEASE",
+    "caller": "|java+method:///org/springframework/batch/item/file/transform/DefaultFieldSet/readDate(int,java.lang.String,java.util.Date)|",
+    "called": "|java+method:///org/springframework/util/StringUtils/hasText(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/springframework/batch/item/file/transform/DefaultFieldSet/readDate(int,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/util/StringUtils/hasText(java.lang.String)|",
+      "|java+method:///org/springframework/batch/item/file/transform/DefaultFieldSet/readAndTrim(int)|",
+      "|java+method:///org/springframework/batch/item/file/transform/DefaultFieldSet/readDate(int,java.lang.String)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:4.0.5.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.batch:spring-batch-infrastructure:2.2.7.RELEASE",
+    "coordinatesV2": "org.springframework.batch:spring-batch-infrastructure:3.0.0.RELEASE",
+    "caller": "|java+method:///org/springframework/batch/item/database/support/DefaultDataFieldMaxValueIncrementerFactory/getIncrementer(java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///org/springframework/jdbc/support/incrementer/DB2SequenceMaxValueIncrementer/DB2SequenceMaxValueIncrementer(javax.sql.DataSource,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/springframework/batch/support/DatabaseType/valueOf(java.lang.String)|",
+      "|java+constructor:///org/springframework/jdbc/support/incrementer/H2SequenceMaxValueIncrementer/H2SequenceMaxValueIncrementer(javax.sql.DataSource,java.lang.String)|",
+      "|java+constructor:///org/springframework/jdbc/support/incrementer/HsqlMaxValueIncrementer/HsqlMaxValueIncrementer(javax.sql.DataSource,java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/springframework/jdbc/support/incrementer/OracleSequenceMaxValueIncrementer/OracleSequenceMaxValueIncrementer(javax.sql.DataSource,java.lang.String)|",
+      "|java+constructor:///org/springframework/jdbc/support/incrementer/DB2SequenceMaxValueIncrementer/DB2SequenceMaxValueIncrementer(javax.sql.DataSource,java.lang.String)|",
+      "|java+constructor:///org/springframework/jdbc/support/incrementer/DB2MainframeSequenceMaxValueIncrementer/DB2MainframeSequenceMaxValueIncrementer(javax.sql.DataSource,java.lang.String)|",
+      "|java+constructor:///org/springframework/jdbc/support/incrementer/PostgreSQLSequenceMaxValueIncrementer/PostgreSQLSequenceMaxValueIncrementer(javax.sql.DataSource,java.lang.String)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/lang/String/toUpperCase()|",
+      "|java+constructor:///org/springframework/jdbc/support/incrementer/SybaseMaxValueIncrementer/SybaseMaxValueIncrementer(javax.sql.DataSource,java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/springframework/jdbc/support/incrementer/DerbyMaxValueIncrementer/DerbyMaxValueIncrementer(javax.sql.DataSource,java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/springframework/jdbc/support/incrementer/SqlServerMaxValueIncrementer/SqlServerMaxValueIncrementer(javax.sql.DataSource,java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/springframework/jdbc/support/incrementer/MySQLMaxValueIncrementer/MySQLMaxValueIncrementer(javax.sql.DataSource,java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/batch/support/DatabaseType/valueOf(java.lang.String)|",
+      "|java+constructor:///org/springframework/jdbc/support/incrementer/H2SequenceMaxValueIncrementer/H2SequenceMaxValueIncrementer(javax.sql.DataSource,java.lang.String)|",
+      "|java+constructor:///org/springframework/jdbc/support/incrementer/HsqlMaxValueIncrementer/HsqlMaxValueIncrementer(javax.sql.DataSource,java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/springframework/jdbc/support/incrementer/OracleSequenceMaxValueIncrementer/OracleSequenceMaxValueIncrementer(javax.sql.DataSource,java.lang.String)|",
+      "|java+constructor:///org/springframework/jdbc/support/incrementer/DB2SequenceMaxValueIncrementer/DB2SequenceMaxValueIncrementer(javax.sql.DataSource,java.lang.String)|",
+      "|java+constructor:///org/springframework/jdbc/support/incrementer/DB2MainframeSequenceMaxValueIncrementer/DB2MainframeSequenceMaxValueIncrementer(javax.sql.DataSource,java.lang.String)|",
+      "|java+constructor:///org/springframework/jdbc/support/incrementer/PostgreSQLSequenceMaxValueIncrementer/PostgreSQLSequenceMaxValueIncrementer(javax.sql.DataSource,java.lang.String)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/lang/String/toUpperCase()|",
+      "|java+constructor:///org/springframework/jdbc/support/incrementer/SybaseMaxValueIncrementer/SybaseMaxValueIncrementer(javax.sql.DataSource,java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/springframework/batch/item/database/support/SqliteMaxValueIncrementer/SqliteMaxValueIncrementer(javax.sql.DataSource,java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/springframework/jdbc/support/incrementer/DerbyMaxValueIncrementer/DerbyMaxValueIncrementer(javax.sql.DataSource,java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/springframework/jdbc/support/incrementer/SqlServerMaxValueIncrementer/SqlServerMaxValueIncrementer(javax.sql.DataSource,java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/springframework/jdbc/support/incrementer/MySQLMaxValueIncrementer/MySQLMaxValueIncrementer(javax.sql.DataSource,java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.springframework:spring-jdbc:4.0.5.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.batch:spring-batch-infrastructure:2.2.7.RELEASE",
+    "coordinatesV2": "org.springframework.batch:spring-batch-infrastructure:3.0.0.RELEASE",
+    "caller": "|java+method:///org/springframework/batch/item/database/JdbcPagingItemReader/doJumpToPage(int)|",
+    "called": "|java+method:///org/springframework/jdbc/core/namedparam/NamedParameterJdbcTemplate/queryForMap(java.lang.String,java.util.Map)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///org/springframework/batch/item/database/JdbcPagingItemReader/getPage()|",
+      "|java+method:///org/springframework/batch/item/database/JdbcPagingItemReader/getPageSize()|",
+      "|java+method:///java/util/List/toArray()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/batch/item/database/JdbcPagingItemReader/getJdbcTemplate()|",
+      "|java+method:///org/springframework/batch/item/database/JdbcPagingItemReader/getParameterList(java.util.Map,java.util.Map)|",
+      "|java+method:///org/springframework/batch/item/database/JdbcPagingItemReader/getParameterMap(java.util.Map,java.util.Map)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/springframework/batch/item/database/PagingQueryProvider/generateJumpToItemQuery(int,int)|",
+      "|java+method:///org/springframework/batch/item/database/PagingQueryProvider/isUsingNamedParameters()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/springframework/batch/item/database/JdbcPagingItemReader$1/JdbcPagingItemReader$1(org.springframework.batch.item.database.JdbcPagingItemReader)|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+method:///org/springframework/jdbc/core/JdbcTemplate/queryForObject(java.lang.String,java.lang.Object%5B%5D,org.springframework.jdbc.core.RowMapper)|",
+      "|java+method:///org/springframework/jdbc/core/namedparam/NamedParameterJdbcTemplate/queryForObject(java.lang.String,java.util.Map,org.springframework.jdbc.core.RowMapper)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///org/springframework/batch/item/database/JdbcPagingItemReader/getPage()|",
+      "|java+method:///org/springframework/batch/item/database/JdbcPagingItemReader/getPageSize()|",
+      "|java+method:///java/util/List/toArray()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/batch/item/database/JdbcPagingItemReader/getJdbcTemplate()|",
+      "|java+method:///org/springframework/jdbc/core/JdbcTemplate/queryForMap(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+method:///org/springframework/jdbc/core/namedparam/NamedParameterJdbcTemplate/queryForMap(java.lang.String,java.util.Map)|",
+      "|java+method:///org/springframework/batch/item/database/JdbcPagingItemReader/getParameterList(java.util.Map,java.util.Map)|",
+      "|java+method:///org/springframework/batch/item/database/JdbcPagingItemReader/getParameterMap(java.util.Map,java.util.Map)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/springframework/batch/item/database/PagingQueryProvider/generateJumpToItemQuery(int,int)|",
+      "|java+method:///org/springframework/batch/item/database/PagingQueryProvider/isUsingNamedParameters()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.springframework:spring-jdbc:4.0.5.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.batch:spring-batch-infrastructure:2.2.7.RELEASE",
+    "coordinatesV2": "org.springframework.batch:spring-batch-infrastructure:3.0.0.RELEASE",
+    "caller": "|java+method:///org/springframework/batch/item/database/IbatisBatchItemWriter/write(java.util.List)|",
+    "called": "|java+constructor:///org/springframework/dao/EmptyResultDataAccessException/EmptyResultDataAccessException(java.lang.String,int)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+constructor:///org/springframework/dao/EmptyResultDataAccessException/EmptyResultDataAccessException(java.lang.String,int)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+constructor:///org/springframework/dao/InvalidDataAccessResourceUsageException/InvalidDataAccessResourceUsageException(java.lang.String)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/ibatis/sqlmap/engine/execution/BatchResult/getUpdateCounts()|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+constructor:///org/springframework/batch/item/database/IbatisBatchItemWriter$1/IbatisBatchItemWriter$1(org.springframework.batch.item.database.IbatisBatchItemWriter,java.util.List)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/springframework/orm/ibatis/SqlMapClientTemplate/execute(org.springframework.orm.ibatis.SqlMapClientCallback)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+constructor:///org/springframework/dao/EmptyResultDataAccessException/EmptyResultDataAccessException(java.lang.String,int)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+constructor:///org/springframework/dao/InvalidDataAccessResourceUsageException/InvalidDataAccessResourceUsageException(java.lang.String)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/ibatis/sqlmap/engine/execution/BatchResult/getUpdateCounts()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+method:///org/springframework/batch/item/database/IbatisBatchItemWriter/execute(java.util.List)|",
+      "|java+method:///java/util/List/get(int)|"
+    ],
+    "affectedLib": "org.springframework:spring-tx:4.0.5.RELEASE",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "coordinatesV1": "net.unit8.metrics:metrics-mackerel:0.1.1",
+    "coordinatesV2": "net.unit8.metrics:metrics-mackerel:0.2.0",
+    "caller": "|java+method:///net/unit8/metrics/mackerel/MackerelSender/flush()|",
+    "called": "|java+method:///net/jodah/failsafe/Failsafe/with(net.jodah.failsafe.CircuitBreaker)|",
+    "v1Body": [
+      "|java+constructor:///java/io/IOException/IOException(java.lang.String)|",
+      "|java+method:///retrofit2/Response/code()|",
+      "|java+method:///net/unit8/metrics/mackerel/MackerelApiService/postServiceMetrics(java.lang.String,java.lang.String,java.util.List)|",
+      "|java+method:///retrofit2/Call/execute()|"
+    ],
+    "v2Body": [
+      "|java+method:///net/jodah/failsafe/SyncFailsafe/run(net.jodah.failsafe.function.CheckedRunnable)|",
+      "|java+method:///java/util/List/clear()|",
+      "|java+constructor:///net/unit8/metrics/mackerel/MackerelSender$1/MackerelSender$1(net.unit8.metrics.mackerel.MackerelSender)|",
+      "|java+method:///net/jodah/failsafe/Failsafe/with(net.jodah.failsafe.CircuitBreaker)|"
+    ],
+    "affectedLib": "net.jodah:failsafe:1.1.0",
+    "change": "ADDED"
+  }
+]

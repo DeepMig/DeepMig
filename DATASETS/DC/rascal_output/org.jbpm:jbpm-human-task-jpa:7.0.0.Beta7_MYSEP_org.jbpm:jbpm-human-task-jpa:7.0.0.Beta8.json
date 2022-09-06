@@ -1,0 +1,64 @@
+[
+  {
+    "coordinatesV1": "org.jbpm:jbpm-human-task-jpa:7.0.0.Beta7",
+    "coordinatesV2": "org.jbpm:jbpm-human-task-jpa:7.0.0.Beta8",
+    "caller": "|java+constructor:///org/jbpm/services/task/persistence/TaskTransactionInterceptor$TaskSynchronizationImpl/TaskTransactionInterceptor$TaskSynchronizationImpl(org.jbpm.services.task.persistence.TaskTransactionInterceptor)|",
+    "called": "|java+constructor:///org/drools/persistence/api/OrderedTransactionSynchronization/OrderedTransactionSynchronization(java.lang.Integer,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/drools/persistence/OrderedTransactionSynchronization/OrderedTransactionSynchronization(java.lang.Integer,java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/drools/persistence/api/OrderedTransactionSynchronization/OrderedTransactionSynchronization(java.lang.Integer,java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.drools:drools-persistence-api:7.0.0.Beta8",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jbpm:jbpm-human-task-jpa:7.0.0.Beta7",
+    "coordinatesV2": "org.jbpm:jbpm-human-task-jpa:7.0.0.Beta8",
+    "caller": "|java+method:///org/jbpm/services/task/persistence/TaskTransactionInterceptor/execute(org.kie.api.runtime.Executable,org.kie.api.runtime.RequestContext)|",
+    "called": "|java+method:///org/drools/persistence/api/TransactionManagerHelper/registerTransactionSyncInContainer(org.drools.persistence.api.TransactionManager,org.drools.persistence.api.OrderedTransactionSynchronization)|",
+    "v1Body": [
+      "|java+method:///org/jbpm/services/task/persistence/TaskTransactionInterceptor/postInit(java.lang.Object)|",
+      "|java+method:///org/drools/persistence/TransactionManagerHelper/registerTransactionSyncInContainer(org.drools.persistence.TransactionManager,org.drools.persistence.OrderedTransactionSynchronization)|",
+      "|java+method:///org/kie/api/runtime/RequestContext/setResult(java.lang.Object)|",
+      "|java+method:///org/kie/internal/task/exception/TaskException/setRecoverable(boolean)|",
+      "|java+method:///org/drools/persistence/TransactionManager/begin()|",
+      "|java+method:///org/jbpm/services/task/persistence/TaskTransactionInterceptor/createContext()|",
+      "|java+method:///org/jbpm/services/task/persistence/TaskTransactionInterceptor/rollbackTransaction(java.lang.Exception,boolean)|",
+      "|java+method:///org/drools/persistence/TransactionManager/commit(boolean)|",
+      "|java+method:///org/jbpm/services/task/persistence/TaskTransactionInterceptor/executeNext(org.kie.api.runtime.Executable,org.kie.api.runtime.Context)|",
+      "|java+constructor:///org/jbpm/services/task/persistence/TaskTransactionInterceptor$TaskSynchronizationImpl/TaskTransactionInterceptor$TaskSynchronizationImpl(org.jbpm.services.task.persistence.TaskTransactionInterceptor)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/kie/internal/task/api/TaskPersistenceContextManager/beginCommandScopedEntityManager()|",
+      "|java+method:///org/kie/api/runtime/RequestContext/getResult()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/drools/persistence/api/TransactionManager/commit(boolean)|",
+      "|java+method:///org/jbpm/services/task/persistence/TaskTransactionInterceptor/postInit(java.lang.Object)|",
+      "|java+method:///org/jbpm/services/task/persistence/TaskTransactionInterceptor/executeNext(org.kie.api.runtime.Executable,org.kie.api.runtime.Context)|",
+      "|java+method:///org/kie/internal/task/exception/TaskException/setRecoverable(boolean)|",
+      "|java+method:///org/jbpm/services/task/persistence/TaskTransactionInterceptor/createContext()|",
+      "|java+method:///org/jbpm/services/task/persistence/TaskTransactionInterceptor/rollbackTransaction(java.lang.Exception,boolean)|",
+      "|java+method:///org/kie/api/runtime/RequestContext/setResult(java.lang.Object)|",
+      "|java+method:///org/drools/persistence/api/TransactionManagerHelper/registerTransactionSyncInContainer(org.drools.persistence.api.TransactionManager,org.drools.persistence.api.OrderedTransactionSynchronization)|",
+      "|java+method:///org/drools/persistence/api/TransactionManager/begin()|",
+      "|java+constructor:///org/jbpm/services/task/persistence/TaskTransactionInterceptor$TaskSynchronizationImpl/TaskTransactionInterceptor$TaskSynchronizationImpl(org.jbpm.services.task.persistence.TaskTransactionInterceptor)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/kie/internal/task/api/TaskPersistenceContextManager/beginCommandScopedEntityManager()|",
+      "|java+method:///org/kie/api/runtime/RequestContext/getResult()|"
+    ],
+    "affectedLib": "org.drools:drools-persistence-api:7.0.0.Beta8",
+    "change": "ADDED"
+  }
+]

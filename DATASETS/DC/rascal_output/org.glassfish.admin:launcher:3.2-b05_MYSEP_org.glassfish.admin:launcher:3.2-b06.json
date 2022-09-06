@@ -1,0 +1,41 @@
+[
+  {
+    "coordinatesV1": "org.glassfish.admin:launcher:3.2-b05",
+    "coordinatesV2": "org.glassfish.admin:launcher:3.2-b06",
+    "caller": "|java+method:///com/sun/enterprise/admin/launcher/GFLauncherLogger/addLogFileHandler(java.lang.String,com.sun.enterprise.admin.launcher.GFLauncherInfo)|",
+    "called": "|java+constructor:///com/sun/enterprise/server/logging/UniformLogFormatter/UniformLogFormatter()|",
+    "v1Body": [
+      "|java+constructor:///java/util/logging/SimpleFormatter/SimpleFormatter()|",
+      "|java+method:///java/util/logging/Logger/addHandler(java.util.logging.Handler)|",
+      "|java+method:///java/util/logging/FileHandler/setFormatter(java.util.logging.Formatter)|",
+      "|java+constructor:///java/util/logging/FileHandler/FileHandler(java.lang.String,boolean)|",
+      "|java+method:///java/util/logging/FileHandler/setLevel(java.util.logging.Level)|",
+      "|java+method:///java/io/IOException/printStackTrace()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/sun/enterprise/server/logging/UniformLogFormatter/UniformLogFormatter()|",
+      "|java+method:///java/util/logging/Logger/addHandler(java.util.logging.Handler)|",
+      "|java+method:///java/util/logging/FileHandler/setFormatter(java.util.logging.Formatter)|",
+      "|java+constructor:///java/util/logging/FileHandler/FileHandler(java.lang.String,boolean)|",
+      "|java+method:///java/util/logging/FileHandler/setLevel(java.util.logging.Level)|",
+      "|java+method:///java/io/IOException/printStackTrace()|"
+    ],
+    "affectedLib": "org.glassfish.core:logging:3.2-b06",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.glassfish.admin:launcher:3.2-b05",
+    "coordinatesV2": "org.glassfish.admin:launcher:3.2-b06",
+    "caller": "|java+initializer:///com/sun/enterprise/admin/launcher/GFLauncherConstants/GFLauncherConstants$initializer|",
+    "called": "|java+method:///com/sun/enterprise/util/OS/isAix()|",
+    "v1Body": [
+      "|java+method:///java/lang/System/getProperty(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/sun/enterprise/util/OS/isAix()|",
+      "|java+method:///java/lang/System/getProperty(java.lang.String)|"
+    ],
+    "affectedLib": "org.glassfish.common:common-util:3.2-b06",
+    "change": "UPDATED"
+  }
+]

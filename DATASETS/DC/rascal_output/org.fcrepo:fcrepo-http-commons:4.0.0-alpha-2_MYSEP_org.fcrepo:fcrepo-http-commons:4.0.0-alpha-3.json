@@ -1,0 +1,244 @@
+[
+  {
+    "coordinatesV1": "org.fcrepo:fcrepo-http-commons:4.0.0-alpha-2",
+    "coordinatesV2": "org.fcrepo:fcrepo-http-commons:4.0.0-alpha-3",
+    "caller": "|java+method:///org/fcrepo/http/commons/session/BypassSecurityServletAuthenticationProvider/authenticate(javax.jcr.Credentials,java.lang.String,java.lang.String,org.modeshape.jcr.ExecutionContext,java.util.Map)|",
+    "called": "|java+method:///org/modeshape/jcr/ExecutionContext/with(org.modeshape.jcr.security.SecurityContext)|",
+    "v1Body": [
+      "|java+constructor:///org/fcrepo/http/commons/session/BypassSecurityServletAuthenticationProvider$AnonymousAdminSecurityContext/BypassSecurityServletAuthenticationProvider$AnonymousAdminSecurityContext()|",
+      "|java+method:///org/modeshape/jcr/ExecutionContext/with(org.modeshape.jcr.security.SecurityContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/modeshape/jcr/ExecutionContext/with(org.modeshape.jcr.security.SecurityContext)|",
+      "|java+constructor:///org/fcrepo/http/commons/session/BypassSecurityServletAuthenticationProvider$AnonymousAdminSecurityContext/BypassSecurityServletAuthenticationProvider$AnonymousAdminSecurityContext(java.lang.String)|"
+    ],
+    "affectedLib": "org.modeshape:modeshape-jcr:3.6.0.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.fcrepo:fcrepo-http-commons:4.0.0-alpha-2",
+    "coordinatesV2": "org.fcrepo:fcrepo-http-commons:4.0.0-alpha-3",
+    "caller": "|java+method:///org/fcrepo/http/commons/session/SessionFactory/getSession(javax.ws.rs.core.SecurityContext,javax.servlet.http.HttpServletRequest)|",
+    "called": "|java+constructor:///org/modeshape/jcr/api/ServletCredentials/ServletCredentials(javax.servlet.http.HttpServletRequest)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/http/HttpSession/getAttribute(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/fcrepo/kernel/Transaction/getSession()|",
+      "|java+method:///org/fcrepo/http/commons/session/SessionFactory/getEmbeddedTransaction(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///org/fcrepo/http/commons/session/SessionFactory/getEmbeddedWorkspace(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///org/fcrepo/kernel/Transaction/getId()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.Throwable)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///javax/jcr/Repository/login(javax.jcr.Credentials)|",
+      "|java+method:///org/fcrepo/http/commons/session/SessionFactory/getSession(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///javax/jcr/Session/impersonate(javax.jcr.Credentials)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getSession(boolean)|",
+      "|java+method:///javax/jcr/Repository/login(javax.jcr.Credentials,java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///org/modeshape/jcr/api/ServletCredentials/ServletCredentials(javax.servlet.http.HttpServletRequest)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/servlet/http/HttpSession/getAttribute(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/fcrepo/kernel/Transaction/getSession()|",
+      "|java+method:///org/fcrepo/http/commons/session/SessionFactory/getEmbeddedTransaction(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+      "|java+method:///org/fcrepo/http/commons/session/SessionFactory/getEmbeddedWorkspace(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///org/fcrepo/kernel/Transaction/getId()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///javax/jcr/Repository/login(javax.jcr.Credentials)|",
+      "|java+method:///javax/jcr/Session/impersonate(javax.jcr.Credentials)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getSession(boolean)|",
+      "|java+method:///javax/jcr/Repository/login(javax.jcr.Credentials,java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///org/modeshape/jcr/api/ServletCredentials/ServletCredentials(javax.servlet.http.HttpServletRequest)|"
+    ],
+    "affectedLib": "org.modeshape:modeshape-jcr-api:3.6.0.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.fcrepo:fcrepo-http-commons:4.0.0-alpha-2",
+    "coordinatesV2": "org.fcrepo:fcrepo-http-commons:4.0.0-alpha-3",
+    "caller": "|java+method:///org/fcrepo/http/commons/api/rdf/HttpGraphSubjects/isValidJcrPath(java.lang.String)|",
+    "called": "|java+constructor:///org/fcrepo/kernel/exception/RepositoryRuntimeException/RepositoryRuntimeException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///javax/jcr/ValueFactory/createValue(java.lang.String,int)|",
+      "|java+method:///javax/jcr/Session/getValueFactory()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/jcr/ValueFactory/createValue(java.lang.String,int)|",
+      "|java+method:///javax/jcr/Session/getValueFactory()|",
+      "|java+constructor:///org/fcrepo/kernel/exception/RepositoryRuntimeException/RepositoryRuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.fcrepo:fcrepo-kernel:4.0.0-alpha-3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.fcrepo:fcrepo-http-commons:4.0.0-alpha-2",
+    "coordinatesV2": "org.fcrepo:fcrepo-http-commons:4.0.0-alpha-3",
+    "caller": "|java+method:///org/fcrepo/http/commons/session/SessionFactory/getSession(javax.ws.rs.core.SecurityContext,javax.servlet.http.HttpServletRequest)|",
+    "called": "|java+method:///org/fcrepo/kernel/Transaction/getSession()|",
+    "v1Body": [
+      "|java+method:///javax/servlet/http/HttpSession/getAttribute(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/fcrepo/kernel/Transaction/getSession()|",
+      "|java+method:///org/fcrepo/http/commons/session/SessionFactory/getEmbeddedTransaction(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///org/fcrepo/http/commons/session/SessionFactory/getEmbeddedWorkspace(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///org/fcrepo/kernel/Transaction/getId()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.Throwable)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///javax/jcr/Repository/login(javax.jcr.Credentials)|",
+      "|java+method:///org/fcrepo/http/commons/session/SessionFactory/getSession(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///javax/jcr/Session/impersonate(javax.jcr.Credentials)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getSession(boolean)|",
+      "|java+method:///javax/jcr/Repository/login(javax.jcr.Credentials,java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///org/modeshape/jcr/api/ServletCredentials/ServletCredentials(javax.servlet.http.HttpServletRequest)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/servlet/http/HttpSession/getAttribute(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/fcrepo/kernel/Transaction/getSession()|",
+      "|java+method:///org/fcrepo/http/commons/session/SessionFactory/getEmbeddedTransaction(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+      "|java+method:///org/fcrepo/http/commons/session/SessionFactory/getEmbeddedWorkspace(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///org/fcrepo/kernel/Transaction/getId()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///javax/jcr/Repository/login(javax.jcr.Credentials)|",
+      "|java+method:///javax/jcr/Session/impersonate(javax.jcr.Credentials)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getSession(boolean)|",
+      "|java+method:///javax/jcr/Repository/login(javax.jcr.Credentials,java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///org/modeshape/jcr/api/ServletCredentials/ServletCredentials(javax.servlet.http.HttpServletRequest)|"
+    ],
+    "affectedLib": "org.fcrepo:fcrepo-kernel:4.0.0-alpha-3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.fcrepo:fcrepo-http-commons:4.0.0-alpha-2",
+    "coordinatesV2": "org.fcrepo:fcrepo-http-commons:4.0.0-alpha-3",
+    "caller": "|java+constructor:///org/fcrepo/http/commons/api/rdf/HttpGraphSubjects/HttpGraphSubjects(javax.jcr.Session,java.lang.Class,javax.ws.rs.core.UriInfo)|",
+    "called": "|java+constructor:///org/fcrepo/kernel/services/functions/GetDefaultWorkspace/GetDefaultWorkspace()|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/net/URI/toString()|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///javax/ws/rs/core/UriBuilder/build(java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///javax/ws/rs/core/UriInfo/getRequestUri()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///javax/ws/rs/core/UriBuilder/path(java.lang.Class)|",
+      "|java+method:///java/lang/String/endsWith(java.lang.String)|",
+      "|java+method:///javax/ws/rs/core/UriInfo/getBaseUriBuilder()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Function/apply(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/net/URI/toString()|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///javax/ws/rs/core/UriBuilder/build(java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/UriInfo/getRequestUri()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///javax/jcr/Session/getRepository()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///org/fcrepo/kernel/services/functions/GetDefaultWorkspace/GetDefaultWorkspace()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///javax/ws/rs/core/UriBuilder/path(java.lang.Class)|",
+      "|java+method:///java/lang/String/endsWith(java.lang.String)|",
+      "|java+method:///javax/ws/rs/core/UriInfo/getBaseUriBuilder()|"
+    ],
+    "affectedLib": "org.fcrepo:fcrepo-kernel:4.0.0-alpha-3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.fcrepo:fcrepo-http-commons:4.0.0-alpha-2",
+    "coordinatesV2": "org.fcrepo:fcrepo-http-commons:4.0.0-alpha-3",
+    "caller": "|java+method:///org/fcrepo/http/commons/api/rdf/HttpGraphSubjects/getPathMap(java.lang.String)|",
+    "called": "|java+method:///org/fcrepo/kernel/services/TransactionService/getCurrentTransactionId(javax.jcr.Session)|",
+    "v1Body": [
+      "|java+method:///javax/jcr/Session/getWorkspace()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/google/common/collect/ImmutableBiMap/of(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/fcrepo/kernel/services/TransactionService/getCurrentTransactionId(javax.jcr.Session)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///javax/jcr/Workspace/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///java/lang/String/replace(java.lang.CharSequence,java.lang.CharSequence)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/String/endsWith(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/jcr/Session/getWorkspace()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/fcrepo/kernel/services/TransactionService/getCurrentTransactionId(javax.jcr.Session)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/util/Collections/singletonMap(java.lang.Object,java.lang.Object)|",
+      "|java+method:///javax/jcr/Workspace/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///java/lang/String/replace(java.lang.CharSequence,java.lang.CharSequence)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/String/endsWith(java.lang.String)|"
+    ],
+    "affectedLib": "org.fcrepo:fcrepo-kernel:4.0.0-alpha-3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.fcrepo:fcrepo-http-commons:4.0.0-alpha-2",
+    "coordinatesV2": "org.fcrepo:fcrepo-http-commons:4.0.0-alpha-3",
+    "caller": "|java+method:///org/fcrepo/http/commons/session/BypassSecurityServletAuthenticationProvider/authenticate(javax.jcr.Credentials,java.lang.String,java.lang.String,org.modeshape.jcr.ExecutionContext,java.util.Map)|",
+    "called": "|java+method:///org/modeshape/jcr/ExecutionContext/with(org.modeshape.jcr.security.SecurityContext)|",
+    "v1Body": [
+      "|java+constructor:///org/fcrepo/http/commons/session/BypassSecurityServletAuthenticationProvider$AnonymousAdminSecurityContext/BypassSecurityServletAuthenticationProvider$AnonymousAdminSecurityContext()|",
+      "|java+method:///org/modeshape/jcr/ExecutionContext/with(org.modeshape.jcr.security.SecurityContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/modeshape/jcr/ExecutionContext/with(org.modeshape.jcr.security.SecurityContext)|",
+      "|java+constructor:///org/fcrepo/http/commons/session/BypassSecurityServletAuthenticationProvider$AnonymousAdminSecurityContext/BypassSecurityServletAuthenticationProvider$AnonymousAdminSecurityContext(java.lang.String)|"
+    ],
+    "affectedLib": "org.fcrepo:fcrepo-kernel:4.0.0-alpha-3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.fcrepo:fcrepo-http-commons:4.0.0-alpha-2",
+    "coordinatesV2": "org.fcrepo:fcrepo-http-commons:4.0.0-alpha-3",
+    "caller": "|java+initializer:///org/fcrepo/http/commons/responses/RdfSerializationUtils/RdfSerializationUtils$initializer|",
+    "called": "|java+method:///org/fcrepo/kernel/rdf/JcrRdfTools/getRDFNamespaceForJcrNamespace(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/joda/time/format/DateTimeFormatter/withZone(org.joda.time.DateTimeZone)|",
+      "|java+method:///org/joda/time/format/DateTimeFormat/forPattern(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/graph/NodeFactory/createURI(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///org/fcrepo/kernel/utils/JcrRdfTools/getRDFNamespaceForJcrNamespace(java.lang.String)|",
+      "|java+method:///org/joda/time/DateTimeZone/forID(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/joda/time/format/DateTimeFormatter/withLocale(java.util.Locale)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/joda/time/format/DateTimeFormatter/withZone(org.joda.time.DateTimeZone)|",
+      "|java+method:///org/joda/time/format/DateTimeFormat/forPattern(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/graph/NodeFactory/createURI(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/fcrepo/kernel/rdf/JcrRdfTools/getRDFNamespaceForJcrNamespace(java.lang.String)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///org/joda/time/DateTimeZone/forID(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/joda/time/format/DateTimeFormatter/withLocale(java.util.Locale)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.fcrepo:fcrepo-kernel:4.0.0-alpha-3",
+    "change": "UPDATED"
+  }
+]

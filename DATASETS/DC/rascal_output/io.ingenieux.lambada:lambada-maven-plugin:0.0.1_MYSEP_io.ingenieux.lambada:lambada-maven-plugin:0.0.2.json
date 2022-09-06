@@ -1,0 +1,98 @@
+[
+  {
+    "coordinatesV1": "io.ingenieux.lambada:lambada-maven-plugin:0.0.1",
+    "coordinatesV2": "io.ingenieux.lambada:lambada-maven-plugin:0.0.2",
+    "caller": "|java+method:///io/ingenieux/lambada/maven/LambadaGenerateMojo/executeInternal()|",
+    "called": "|java+constructor:///com/github/mustachejava/DefaultMustacheFactory/DefaultMustacheFactory()|",
+    "v1Body": [
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(java.util.Collection)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValue(java.io.OutputStream,java.lang.Object)|",
+      "|java+constructor:///org/reflections/scanners/MethodAnnotationsScanner/MethodAnnotationsScanner()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/setSerializationInclusion(com.fasterxml.jackson.annotation.JsonInclude$Include)|",
+      "|java+method:///org/reflections/util/ConfigurationBuilder/setScanners(org.reflections.scanners.Scanner%5B%5D)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/enable(com.fasterxml.jackson.databind.SerializationFeature)|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+      "|java+constructor:///org/reflections/util/ConfigurationBuilder/ConfigurationBuilder()|",
+      "|java+constructor:///org/reflections/Reflections/Reflections(org.reflections.Configuration)|",
+      "|java+method:///org/reflections/Reflections/getMethodsAnnotatedWith(java.lang.Class)|",
+      "|java+method:///java/io/File/getParentFile()|",
+      "|java+method:///java/util/Set/stream()|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|",
+      "|java+method:///java/io/File/mkdirs()|",
+      "|java+method:///java/util/stream/Collectors/toCollection(java.util.function.Supplier)|",
+      "|java+method:///io/ingenieux/lambada/maven/LambadaGenerateMojo/setClasspathUrls(org.reflections.util.ConfigurationBuilder)|",
+      "|java+constructor:///java/io/FileOutputStream/FileOutputStream(java.io.File)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(java.util.Collection)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValue(java.io.OutputStream,java.lang.Object)|",
+      "|java+constructor:///com/github/mustachejava/DefaultMustacheFactory/DefaultMustacheFactory()|",
+      "|java+method:///io/ingenieux/lambada/maven/LambadaGenerateMojo/rewriteTemplates(java.util.TreeSet)|",
+      "|java+constructor:///java/io/StringReader/StringReader(java.lang.String)|",
+      "|java+method:///com/github/mustachejava/MustacheFactory/compile(java.io.Reader,java.lang.String)|",
+      "|java+constructor:///java/io/FileOutputStream/FileOutputStream(java.io.File)|",
+      "|java+method:///java/io/File/getParentFile()|",
+      "|java+method:///java/util/Set/stream()|",
+      "|java+method:///io/ingenieux/lambada/maven/LambadaGenerateMojo/extractRuntimeAnnotations(java.lang.Class)|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|",
+      "|java+method:///java/io/File/mkdirs()|",
+      "|java+method:///java/util/stream/Collectors/toCollection(java.util.function.Supplier)|"
+    ],
+    "affectedLib": "com.github.spullara.mustache.java:compiler:0.9.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.ingenieux.lambada:lambada-maven-plugin:0.0.1",
+    "coordinatesV2": "io.ingenieux.lambada:lambada-maven-plugin:0.0.2",
+    "caller": "|java+method:///io/ingenieux/lambada/maven/LambadaFunctionDefinition/hashCode()|",
+    "called": "|java+constructor:///org/apache/commons/lang3/builder/HashCodeBuilder/HashCodeBuilder(int,int)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/hashCode()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/commons/lang3/builder/HashCodeBuilder/HashCodeBuilder(int,int)|",
+      "|java+method:///org/apache/commons/lang3/builder/HashCodeBuilder/append(java.lang.Object)|",
+      "|java+method:///org/apache/commons/lang3/builder/HashCodeBuilder/append(int)|",
+      "|java+method:///org/apache/commons/lang3/builder/HashCodeBuilder/toHashCode()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.ingenieux.lambada:lambada-maven-plugin:0.0.1",
+    "coordinatesV2": "io.ingenieux.lambada:lambada-maven-plugin:0.0.2",
+    "caller": "|java+method:///io/ingenieux/lambada/maven/LambadaFunctionDefinition/compareTo(io.ingenieux.lambada.maven.LambadaFunctionDefinition)|",
+    "called": "|java+constructor:///org/apache/commons/lang3/builder/CompareToBuilder/CompareToBuilder()|",
+    "v1Body": [
+      "|java+method:///java/lang/String/compareTo(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/builder/CompareToBuilder/append(int,int)|",
+      "|java+method:///org/apache/commons/lang3/builder/CompareToBuilder/append(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/apache/commons/lang3/builder/CompareToBuilder/CompareToBuilder()|",
+      "|java+method:///org/apache/commons/lang3/builder/CompareToBuilder/toComparison()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.ingenieux.lambada:lambada-maven-plugin:0.0.1",
+    "coordinatesV2": "io.ingenieux.lambada:lambada-maven-plugin:0.0.2",
+    "caller": "|java+method:///io/ingenieux/lambada/maven/LambadaFunctionDefinition/equals(java.lang.Object)|",
+    "called": "|java+constructor:///org/apache/commons/lang3/builder/EqualsBuilder/EqualsBuilder()|",
+    "v1Body": [
+      "|java+method:///java/lang/String/equals(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/commons/lang3/builder/EqualsBuilder/EqualsBuilder()|",
+      "|java+method:///org/apache/commons/lang3/builder/EqualsBuilder/append(int,int)|",
+      "|java+method:///org/apache/commons/lang3/builder/EqualsBuilder/isEquals()|",
+      "|java+method:///org/apache/commons/lang3/builder/EqualsBuilder/append(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.4",
+    "change": "ADDED"
+  }
+]

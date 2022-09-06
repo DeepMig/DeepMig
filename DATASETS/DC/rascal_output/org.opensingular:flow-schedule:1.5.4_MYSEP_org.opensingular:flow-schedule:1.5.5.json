@@ -1,0 +1,70 @@
+[
+  {
+    "coordinatesV1": "org.opensingular:flow-schedule:1.5.4",
+    "coordinatesV2": "org.opensingular:flow-schedule:1.5.5",
+    "caller": "|java+method:///org/opensingular/flow/schedule/quartz/QuartzSchedulerFactory/initialize()|",
+    "called": "|java+method:///org/opensingular/lib/commons/base/SingularException/rethrow(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/quartz/Scheduler/setJobFactory(org.quartz.spi.JobFactory)|",
+      "|java+method:///java/lang/Class/newInstance()|",
+      "|java+method:///org/opensingular/flow/schedule/quartz/QuartzSchedulerFactory/registerListeners()|",
+      "|java+method:///org/opensingular/flow/schedule/quartz/QuartzSchedulerFactory/createScheduler(org.quartz.SchedulerFactory,java.lang.String)|",
+      "|java+constructor:///org/opensingular/flow/schedule/quartz/QuartzJobFactory/QuartzJobFactory()|",
+      "|java+method:///org/opensingular/flow/schedule/quartz/QuartzSchedulerFactory/registerJobsAndTriggers()|",
+      "|java+method:///org/opensingular/flow/schedule/quartz/QuartzSchedulerFactory/initSchedulerFactory(org.quartz.SchedulerFactory)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/quartz/Scheduler/setJobFactory(org.quartz.spi.JobFactory)|",
+      "|java+method:///java/lang/Class/newInstance()|",
+      "|java+method:///org/opensingular/lib/commons/base/SingularException/rethrow(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/opensingular/flow/schedule/quartz/QuartzSchedulerFactory/registerListeners()|",
+      "|java+method:///org/opensingular/flow/schedule/quartz/QuartzSchedulerFactory/createScheduler(org.quartz.SchedulerFactory,java.lang.String)|",
+      "|java+constructor:///org/opensingular/flow/schedule/quartz/QuartzJobFactory/QuartzJobFactory()|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+method:///org/opensingular/flow/schedule/quartz/QuartzSchedulerFactory/registerJobsAndTriggers()|",
+      "|java+method:///org/opensingular/flow/schedule/quartz/QuartzSchedulerFactory/initSchedulerFactory(org.quartz.SchedulerFactory)|"
+    ],
+    "affectedLib": "org.opensingular:singular-commons:1.5.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.opensingular:flow-schedule:1.5.4",
+    "coordinatesV2": "org.opensingular:flow-schedule:1.5.5",
+    "caller": "|java+method:///org/opensingular/flow/schedule/quartz/QuartzSchedulerFactory$1/run()|",
+    "called": "|java+method:///org/opensingular/lib/commons/base/SingularException/rethrow(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///java/lang/Thread/sleep(long)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/Log/isInfoEnabled()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/commons/logging/Log/error(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///java/lang/InterruptedException/getMessage()|",
+      "|java+method:///org/quartz/SchedulerException/getMessage()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/apache/commons/logging/Log/info(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///org/apache/commons/logging/Log/info(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/quartz/Scheduler/start()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Thread/sleep(long)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/opensingular/lib/commons/base/SingularException/rethrow(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/apache/commons/logging/Log/isInfoEnabled()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/commons/logging/Log/error(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///java/lang/InterruptedException/getMessage()|",
+      "|java+method:///org/quartz/SchedulerException/getMessage()|",
+      "|java+method:///java/lang/Thread/currentThread()|",
+      "|java+method:///java/lang/Thread/interrupt()|",
+      "|java+method:///org/apache/commons/logging/Log/info(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///org/apache/commons/logging/Log/info(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/quartz/Scheduler/start()|"
+    ],
+    "affectedLib": "org.opensingular:singular-commons:1.5.5",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "coordinatesV1": "org.apache.activemq:activemq-spring:5.7.0",
+    "coordinatesV2": "org.apache.activemq:activemq-spring:5.8.0",
+    "caller": "|java+method:///org/apache/activemq/xbean/XBeanBrokerService/ensureSystemUsageHasStore()|",
+    "called": "|java+method:///org/apache/activemq/usage/JobSchedulerUsage/setStore(org.apache.activemq.broker.scheduler.JobSchedulerStore)|",
+    "v1Body": [
+      "|java+method:///org/apache/activemq/usage/StoreUsage/setStore(org.apache.activemq.store.PersistenceAdapter)|",
+      "|java+method:///org/apache/activemq/usage/TempUsage/getStore()|",
+      "|java+method:///org/apache/activemq/usage/SystemUsage/getTempUsage()|",
+      "|java+method:///org/apache/activemq/xbean/XBeanBrokerService/getTempDataStore()|",
+      "|java+method:///org/apache/activemq/usage/TempUsage/setStore(org.apache.activemq.store.kahadb.plist.PListStore)|",
+      "|java+method:///org/apache/activemq/usage/SystemUsage/getStoreUsage()|",
+      "|java+method:///org/apache/activemq/usage/StoreUsage/getStore()|",
+      "|java+method:///org/apache/activemq/xbean/XBeanBrokerService/getPersistenceAdapter()|",
+      "|java+method:///org/apache/activemq/xbean/XBeanBrokerService/getSystemUsage()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/activemq/usage/SystemUsage/getJobSchedulerUsage()|",
+      "|java+method:///org/apache/activemq/usage/StoreUsage/setStore(org.apache.activemq.store.PersistenceAdapter)|",
+      "|java+method:///org/apache/activemq/usage/TempUsage/getStore()|",
+      "|java+method:///org/apache/activemq/usage/TempUsage/setStore(org.apache.activemq.store.PListStore)|",
+      "|java+method:///org/apache/activemq/usage/SystemUsage/getTempUsage()|",
+      "|java+method:///org/apache/activemq/usage/SystemUsage/getStoreUsage()|",
+      "|java+method:///org/apache/activemq/xbean/XBeanBrokerService/getPersistenceAdapter()|",
+      "|java+method:///org/apache/activemq/xbean/XBeanBrokerService/getSystemUsage()|",
+      "|java+method:///org/apache/activemq/usage/JobSchedulerUsage/getStore()|",
+      "|java+method:///org/apache/activemq/xbean/XBeanBrokerService/getTempDataStore()|",
+      "|java+method:///org/apache/activemq/xbean/XBeanBrokerService/getJobSchedulerStore()|",
+      "|java+method:///org/apache/activemq/usage/JobSchedulerUsage/setStore(org.apache.activemq.broker.scheduler.JobSchedulerStore)|",
+      "|java+method:///org/apache/activemq/usage/StoreUsage/getStore()|"
+    ],
+    "affectedLib": "org.apache.activemq:activemq-broker:5.8.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.activemq:activemq-spring:5.7.0",
+    "coordinatesV2": "org.apache.activemq:activemq-spring:5.8.0",
+    "caller": "|java+constructor:///org/apache/activemq/xbean/XBeanBrokerService/XBeanBrokerService()|",
+    "called": "|java+method:///org/apache/activemq/broker/BrokerFactory/getStartDefault()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/activemq/broker/BrokerService/BrokerService()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/activemq/broker/BrokerService/BrokerService()|",
+      "|java+method:///org/apache/activemq/broker/BrokerFactory/getStartDefault()|"
+    ],
+    "affectedLib": "org.apache.activemq:activemq-broker:5.8.0",
+    "change": "ADDED"
+  }
+]

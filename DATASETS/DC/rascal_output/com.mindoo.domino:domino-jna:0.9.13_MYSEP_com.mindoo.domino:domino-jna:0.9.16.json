@@ -1,0 +1,97 @@
+[
+  {
+    "coordinatesV1": "com.mindoo.domino:domino-jna:0.9.13",
+    "coordinatesV2": "com.mindoo.domino:domino-jna:0.9.16",
+    "caller": "|java+method:///com/mindoo/domino/jna/internal/SizeLimitedLRUCache/put(java.lang.Object,java.lang.Object)|",
+    "called": "|java+method:///com/googlecode/concurrentlinkedhashmap/ConcurrentLinkedHashMap/put(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///com/mindoo/domino/jna/internal/SizeLimitedLRUCache$CacheEntry/SizeLimitedLRUCache$CacheEntry(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///com/mindoo/domino/jna/internal/SizeLimitedLRUCache$CacheEntry/setValue(java.lang.Object)|",
+      "|java+method:///com/mindoo/domino/jna/internal/SizeLimitedLRUCache/addOrMoveToHead(com.mindoo.domino.jna.internal.SizeLimitedLRUCache$CacheEntry)|",
+      "|java+method:///com/mindoo/domino/jna/internal/SizeLimitedLRUCache/removeTail()|",
+      "|java+method:///java/util/Map/size()|",
+      "|java+method:///com/mindoo/domino/jna/internal/SizeLimitedLRUCache/computeSize(com.mindoo.domino.jna.internal.SizeLimitedLRUCache$CacheEntry)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/googlecode/concurrentlinkedhashmap/ConcurrentLinkedHashMap/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/mindoo/domino/jna/internal/SizeLimitedLRUCache/remove(java.lang.Object)|"
+    ],
+    "affectedLib": "com.googlecode.concurrentlinkedhashmap:concurrentlinkedhashmap-lru:1.4.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.mindoo.domino:domino-jna:0.9.13",
+    "coordinatesV2": "com.mindoo.domino:domino-jna:0.9.16",
+    "caller": "|java+method:///com/mindoo/domino/jna/internal/SizeLimitedLRUCache/get(java.lang.Object)|",
+    "called": "|java+method:///com/googlecode/concurrentlinkedhashmap/ConcurrentLinkedHashMap/get(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///com/mindoo/domino/jna/internal/SizeLimitedLRUCache$CacheEntry/getValue()|",
+      "|java+method:///com/mindoo/domino/jna/internal/SizeLimitedLRUCache/addOrMoveToHead(com.mindoo.domino.jna.internal.SizeLimitedLRUCache$CacheEntry)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/googlecode/concurrentlinkedhashmap/ConcurrentLinkedHashMap/get(java.lang.Object)|"
+    ],
+    "affectedLib": "com.googlecode.concurrentlinkedhashmap:concurrentlinkedhashmap-lru:1.4.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.mindoo.domino:domino-jna:0.9.13",
+    "coordinatesV2": "com.mindoo.domino:domino-jna:0.9.16",
+    "caller": "|java+method:///com/mindoo/domino/jna/internal/SizeLimitedLRUCache/remove(java.lang.Object)|",
+    "called": "|java+method:///com/googlecode/concurrentlinkedhashmap/ConcurrentLinkedHashMap/remove(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///com/mindoo/domino/jna/internal/SizeLimitedLRUCache/computeSize(com.mindoo.domino.jna.internal.SizeLimitedLRUCache$CacheEntry)|",
+      "|java+method:///java/util/Map/remove(java.lang.Object)|",
+      "|java+method:///com/mindoo/domino/jna/internal/SizeLimitedLRUCache$CacheEntry/setNext(com.mindoo.domino.jna.internal.SizeLimitedLRUCache$CacheEntry)|",
+      "|java+method:///com/mindoo/domino/jna/internal/SizeLimitedLRUCache$CacheEntry/setPrev(com.mindoo.domino.jna.internal.SizeLimitedLRUCache$CacheEntry)|",
+      "|java+method:///com/mindoo/domino/jna/internal/SizeLimitedLRUCache$CacheEntry/getPrev()|",
+      "|java+method:///com/mindoo/domino/jna/internal/SizeLimitedLRUCache$CacheEntry/getNext()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/googlecode/concurrentlinkedhashmap/ConcurrentLinkedHashMap/remove(java.lang.Object)|"
+    ],
+    "affectedLib": "com.googlecode.concurrentlinkedhashmap:concurrentlinkedhashmap-lru:1.4.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.mindoo.domino:domino-jna:0.9.13",
+    "coordinatesV2": "com.mindoo.domino:domino-jna:0.9.16",
+    "caller": "|java+constructor:///com/mindoo/domino/jna/internal/SizeLimitedLRUCache/SizeLimitedLRUCache(int)|",
+    "called": "|java+method:///com/googlecode/concurrentlinkedhashmap/ConcurrentLinkedHashMap$Builder/maximumWeightedCapacity(long)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/commons/collections4/map/HashedMap/HashedMap()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/googlecode/concurrentlinkedhashmap/ConcurrentLinkedHashMap$Builder/build()|",
+      "|java+method:///com/googlecode/concurrentlinkedhashmap/ConcurrentLinkedHashMap$Builder/weigher(com.googlecode.concurrentlinkedhashmap.EntryWeigher)|",
+      "|java+method:///com/googlecode/concurrentlinkedhashmap/ConcurrentLinkedHashMap$Builder/maximumWeightedCapacity(long)|",
+      "|java+constructor:///com/googlecode/concurrentlinkedhashmap/ConcurrentLinkedHashMap$Builder/ConcurrentLinkedHashMap$Builder()|",
+      "|java+constructor:///com/mindoo/domino/jna/internal/SizeLimitedLRUCache$1/SizeLimitedLRUCache$1(com.mindoo.domino.jna.internal.SizeLimitedLRUCache)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.googlecode.concurrentlinkedhashmap:concurrentlinkedhashmap-lru:1.4.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.mindoo.domino:domino-jna:0.9.13",
+    "coordinatesV2": "com.mindoo.domino:domino-jna:0.9.16",
+    "caller": "|java+initializer:///com/mindoo/domino/jna/utils/NotesStringUtils/NotesStringUtils$initializer|",
+    "called": "|java+method:///com/ibm/icu/charset/CharsetICU/forNameICU(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+constructor:///java/util/concurrent/ConcurrentLinkedQueue/ConcurrentLinkedQueue()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/mindoo/domino/jna/utils/NotesStringUtils$LRUStringLMBCSCache/NotesStringUtils$LRUStringLMBCSCache(int)|",
+      "|java+method:///com/ibm/icu/charset/CharsetICU/forNameICU(java.lang.String)|"
+    ],
+    "affectedLib": "com.ibm.icu:icu4j-charset:60.2",
+    "change": "ADDED"
+  }
+]

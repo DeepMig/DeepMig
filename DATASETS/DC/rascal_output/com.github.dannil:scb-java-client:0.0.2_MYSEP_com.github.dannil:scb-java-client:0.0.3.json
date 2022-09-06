@@ -1,0 +1,89 @@
+[
+  {
+    "coordinatesV1": "com.github.dannil:scb-java-client:0.0.2",
+    "coordinatesV2": "com.github.dannil:scb-java-client:0.0.3",
+    "caller": "|java+method:///com/github/dannil/scbjavaclient/utility/requester/AbstractRequester/getBody(org.apache.http.HttpResponse)|",
+    "called": "|java+constructor:///org/apache/commons/io/input/BOMInputStream/BOMInputStream(java.io.InputStream)|",
+    "v1Body": [
+      "|java+method:///java/io/BufferedReader/close()|",
+      "|java+method:///java/io/BufferedReader/read()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream,java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(int)|",
+      "|java+method:///org/apache/http/HttpEntity/getContent()|",
+      "|java+method:///java/nio/charset/Charset/name()|",
+      "|java+method:///java/io/BufferedReader/reset()|",
+      "|java+method:///java/io/BufferedReader/mark(int)|",
+      "|java+method:///org/apache/http/HttpResponse/getEntity()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/io/BufferedReader/BufferedReader(java.io.Reader)|",
+      "|java+constructor:///com/github/dannil/scbjavaclient/exception/SCBClientException/SCBClientException(java.lang.Throwable)|",
+      "|java+method:///java/io/BufferedReader/readLine()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/BufferedReader/close()|",
+      "|java+constructor:///org/apache/commons/io/input/BOMInputStream/BOMInputStream(java.io.InputStream)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream,java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(int)|",
+      "|java+method:///org/apache/http/HttpEntity/getContent()|",
+      "|java+method:///java/nio/charset/Charset/name()|",
+      "|java+method:///org/apache/commons/io/input/BOMInputStream/hasBOM()|",
+      "|java+method:///java/io/BufferedReader/reset()|",
+      "|java+method:///java/io/BufferedReader/mark(int)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/io/BufferedReader/BufferedReader(java.io.Reader)|",
+      "|java+constructor:///com/github/dannil/scbjavaclient/exception/SCBClientException/SCBClientException(java.lang.Throwable)|",
+      "|java+method:///java/io/BufferedReader/readLine()|",
+      "|java+method:///org/apache/commons/io/input/BOMInputStream/close()|",
+      "|java+method:///org/apache/http/HttpResponse/getEntity()|"
+    ],
+    "affectedLib": "commons-io:commons-io:2.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.dannil:scb-java-client:0.0.2",
+    "coordinatesV2": "com.github.dannil:scb-java-client:0.0.3",
+    "caller": "|java+method:///com/github/dannil/scbjavaclient/utility/JsonUtility/getNode(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/JsonNode/get(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/io/IOException/printStackTrace()|",
+      "|java+method:///com/fasterxml/jackson/databind/JsonNode/get(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/node/MissingNode/getInstance()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readTree(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/JsonNode/get(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readTree(java.lang.String)|",
+      "|java+constructor:///com/github/dannil/scbjavaclient/exception/SCBClientParsingException/SCBClientParsingException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.7.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.github.dannil:scb-java-client:0.0.2",
+    "coordinatesV2": "com.github.dannil:scb-java-client:0.0.3",
+    "caller": "|java+method:///com/github/dannil/scbjavaclient/utility/JsonUtility/jsonToListOf(java.lang.String,java.lang.Class)|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,com.fasterxml.jackson.databind.JavaType)|",
+    "v1Body": [
+      "|java+method:///com/github/dannil/scbjavaclient/utility/JsonUtility/toConventionalJson(java.lang.String)|",
+      "|java+method:///java/io/IOException/printStackTrace()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/getTypeFactory()|",
+      "|java+method:///com/fasterxml/jackson/databind/JsonNode/toString()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,com.fasterxml.jackson.databind.JavaType)|",
+      "|java+method:///com/fasterxml/jackson/databind/type/TypeFactory/constructCollectionType(java.lang.Class,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/dannil/scbjavaclient/utility/JsonUtility/toConventionalJson(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/getTypeFactory()|",
+      "|java+method:///com/fasterxml/jackson/databind/JsonNode/toString()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,com.fasterxml.jackson.databind.JavaType)|",
+      "|java+method:///com/fasterxml/jackson/databind/type/TypeFactory/constructCollectionType(java.lang.Class,java.lang.Class)|",
+      "|java+constructor:///com/github/dannil/scbjavaclient/exception/SCBClientParsingException/SCBClientParsingException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.7.4",
+    "change": "UPDATED"
+  }
+]

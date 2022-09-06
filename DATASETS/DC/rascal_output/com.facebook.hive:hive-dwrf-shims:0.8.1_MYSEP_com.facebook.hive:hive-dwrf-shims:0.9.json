@@ -1,0 +1,86 @@
+[
+  {
+    "coordinatesV1": "com.facebook.hive:hive-dwrf-shims:0.9",
+    "coordinatesV2": "com.facebook.hive:hive-dwrf-shims:0.8.1",
+    "caller": "|java+method:///org/apache/hadoop/hive/serde2/ReaderWriterProfiler/log(org.apache.hadoop.mapred.Reporter)|",
+    "called": "|java+method:///io/airlift/log/Logger/info(java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/hive/serde2/ReaderWriterProfiler$Counter/values()|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/apache/hadoop/hive/serde2/ReaderWriterProfiler$Counter/access$100(org.apache.hadoop.hive.serde2.ReaderWriterProfiler$Counter)|",
+      "|java+method:///io/airlift/log/Logger/info(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/hadoop/hive/serde2/ReaderWriterProfiler$Counter$Type/ordinal()|",
+      "|java+method:///org/apache/hadoop/mapred/Reporter/incrCounter(java.lang.Enum,long)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/hive/serde2/ReaderWriterProfiler$Counter/values()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/hive/serde2/ReaderWriterProfiler$Counter/access$100(org.apache.hadoop.hive.serde2.ReaderWriterProfiler$Counter)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/apache/commons/logging/Log/info(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///org/apache/hadoop/hive/serde2/ReaderWriterProfiler$Counter$Type/ordinal()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/hadoop/mapred/Reporter/incrCounter(java.lang.Enum,long)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "io.airlift:log:0.142",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.facebook.hive:hive-dwrf-shims:0.9",
+    "coordinatesV2": "com.facebook.hive:hive-dwrf-shims:0.8.1",
+    "caller": "|java+initializer:///org/apache/hadoop/hive/serde2/ReaderWriterProfiler/ReaderWriterProfiler$initializer|",
+    "called": "|java+method:///io/airlift/log/Logger/get(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///io/airlift/log/Logger/get(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.String)|"
+    ],
+    "affectedLib": "io.airlift:log:0.142",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.facebook.hive:hive-dwrf-shims:0.8.1",
+    "coordinatesV2": "com.facebook.hive:hive-dwrf-shims:0.9",
+    "caller": "|java+initializer:///org/apache/hadoop/hive/serde2/ReaderWriterProfiler/ReaderWriterProfiler$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///io/airlift/log/Logger/get(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.String)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.facebook.hive:hive-dwrf-shims:0.8.1",
+    "coordinatesV2": "com.facebook.hive:hive-dwrf-shims:0.9",
+    "caller": "|java+method:///org/apache/hadoop/hive/ql/io/slice/Slice/toUnsafeSlice(java.nio.ByteBuffer)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///java/nio/ByteBuffer/capacity()|",
+      "|java+constructor:///org/apache/hadoop/hive/ql/io/slice/Slice/Slice(byte%5B%5D,long,int,java.lang.Object)|",
+      "|java+method:///sun/nio/ch/DirectBuffer/address()|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///java/nio/ByteBuffer/capacity()|",
+      "|java+constructor:///org/apache/hadoop/hive/ql/io/slice/Slice/Slice(byte%5B%5D,long,int,java.lang.Object)|",
+      "|java+method:///sun/nio/ch/DirectBuffer/address()|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:14.0.1",
+    "change": "UPDATED"
+  }
+]

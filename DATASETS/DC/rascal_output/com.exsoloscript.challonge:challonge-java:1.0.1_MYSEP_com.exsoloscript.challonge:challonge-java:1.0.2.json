@@ -1,0 +1,634 @@
+[
+  {
+    "coordinatesV1": "com.exsoloscript.challonge:challonge-java:1.0.1",
+    "coordinatesV2": "com.exsoloscript.challonge:challonge-java:1.0.2",
+    "caller": "|java+constructor:///com/exsoloscript/challonge/guice/ChallongeModule/ChallongeModule(com.exsoloscript.challonge.ChallongeCredentials)|",
+    "called": "|java+constructor:///com/google/inject/AbstractModule/AbstractModule()|",
+    "v1Body": [
+      "|java+constructor:///com/exsoloscript/challonge/library/google/inject/AbstractModule/AbstractModule()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/google/inject/AbstractModule/AbstractModule()|"
+    ],
+    "affectedLib": "com.google.inject:guice:4.1.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.exsoloscript.challonge:challonge-java:1.0.1",
+    "coordinatesV2": "com.exsoloscript.challonge:challonge-java:1.0.2",
+    "caller": "|java+method:///com/exsoloscript/challonge/Challonge/getFor(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///com/google/inject/Guice/createInjector(com.google.inject.Module%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/exsoloscript/challonge/library/google/inject/Injector/getInstance(java.lang.Class)|",
+      "|java+constructor:///com/exsoloscript/challonge/guice/ChallongeModule/ChallongeModule(com.exsoloscript.challonge.ChallongeCredentials)|",
+      "|java+method:///com/exsoloscript/challonge/library/google/inject/Guice/createInjector(com.exsoloscript.challonge.library.google.inject.Module%5B%5D)|",
+      "|java+constructor:///com/exsoloscript/challonge/ChallongeCredentials/ChallongeCredentials(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/inject/Injector/getInstance(java.lang.Class)|",
+      "|java+constructor:///com/exsoloscript/challonge/guice/ChallongeModule/ChallongeModule(com.exsoloscript.challonge.ChallongeCredentials)|",
+      "|java+method:///com/google/inject/Guice/createInjector(com.google.inject.Module%5B%5D)|",
+      "|java+constructor:///com/exsoloscript/challonge/ChallongeCredentials/ChallongeCredentials(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "com.google.inject:guice:4.1.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.exsoloscript.challonge:challonge-java:1.0.1",
+    "coordinatesV2": "com.exsoloscript.challonge:challonge-java:1.0.2",
+    "caller": "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCall/sync()|",
+    "called": "|java+method:///retrofit2/Response/isSuccessful()|",
+    "v1Body": [
+      "|java+method:///com/exsoloscript/challonge/library/squareup/retrofit2/Response/body()|",
+      "|java+method:///com/exsoloscript/challonge/util/ErrorUtil/parseException(com.exsoloscript.challonge.library.squareup.retrofit2.Response)|",
+      "|java+method:///com/exsoloscript/challonge/library/squareup/retrofit2/Response/isSuccessful()|",
+      "|java+method:///com/exsoloscript/challonge/library/squareup/retrofit2/Call/execute()|"
+    ],
+    "v2Body": [
+      "|java+method:///retrofit2/Call/execute()|",
+      "|java+method:///retrofit2/Response/body()|",
+      "|java+method:///com/exsoloscript/challonge/util/ErrorUtil/parseException(retrofit2.Response)|",
+      "|java+method:///retrofit2/Response/isSuccessful()|"
+    ],
+    "affectedLib": "com.squareup.retrofit2:retrofit:2.1.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.exsoloscript.challonge:challonge-java:1.0.1",
+    "coordinatesV2": "com.exsoloscript.challonge:challonge-java:1.0.2",
+    "caller": "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitServiceProvider/createService(java.lang.Class)|",
+    "called": "|java+method:///retrofit2/Retrofit/create(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/exsoloscript/challonge/library/squareup/retrofit2/Retrofit/create(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///retrofit2/Retrofit/create(java.lang.Class)|"
+    ],
+    "affectedLib": "com.squareup.retrofit2:retrofit:2.1.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.exsoloscript.challonge:challonge-java:1.0.1",
+    "coordinatesV2": "com.exsoloscript.challonge:challonge-java:1.0.2",
+    "caller": "|java+method:///com/exsoloscript/challonge/ChallongeCredentials/toHttpAuthString()|",
+    "called": "|java+method:///org/apache/commons/codec/binary/Base64/encodeBase64String(byte%5B%5D)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/String/getBytes()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/exsoloscript/challonge/library/commons/codec/binary/Base64/encodeBase64String(byte%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/commons/codec/binary/Base64/encodeBase64String(byte%5B%5D)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/String/getBytes()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "commons-codec:commons-codec:1.10",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.exsoloscript.challonge:challonge-java:1.0.1",
+    "coordinatesV2": "com.exsoloscript.challonge:challonge-java:1.0.2",
+    "caller": "|java+method:///com/exsoloscript/challonge/handler/call/TournamentHandler/abortCheckIn(java.lang.String,boolean,boolean)|",
+    "called": "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(com.exsoloscript.challonge.library.squareup.retrofit2.Call)|",
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitTournamentHandler/abortCheckIn(java.lang.String,int,int)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(retrofit2.Call)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitTournamentHandler/abortCheckIn(java.lang.String,int,int)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.exsoloscript.challonge:challonge-java:1.0.1",
+    "coordinatesV2": "com.exsoloscript.challonge:challonge-java:1.0.2",
+    "caller": "|java+method:///com/exsoloscript/challonge/handler/call/AttachmentHandler/deleteAttachment(java.lang.String,int,int)|",
+    "called": "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitAttachmentHandler/deleteAttachment(java.lang.String,int,int)|",
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/Validate/notNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(com.exsoloscript.challonge.library.squareup.retrofit2.Call)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(retrofit2.Call)|",
+      "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitAttachmentHandler/deleteAttachment(java.lang.String,int,int)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.exsoloscript.challonge:challonge-java:1.0.1",
+    "coordinatesV2": "com.exsoloscript.challonge:challonge-java:1.0.2",
+    "caller": "|java+method:///com/exsoloscript/challonge/handler/call/TournamentHandler/finalizeTournament(java.lang.String,boolean,boolean)|",
+    "called": "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitTournamentHandler/finalizeTournament(java.lang.String,int,int)|",
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(com.exsoloscript.challonge.library.squareup.retrofit2.Call)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(retrofit2.Call)|",
+      "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitTournamentHandler/finalizeTournament(java.lang.String,int,int)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.exsoloscript.challonge:challonge-java:1.0.1",
+    "coordinatesV2": "com.exsoloscript.challonge:challonge-java:1.0.2",
+    "caller": "|java+method:///com/exsoloscript/challonge/handler/call/ParticipantHandler/undoParticipantCheckIn(java.lang.String,int)|",
+    "called": "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/Validate/notNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitParticipantHandler/undoParticipantCheckIn(java.lang.String,int)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(com.exsoloscript.challonge.library.squareup.retrofit2.Call)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(retrofit2.Call)|",
+      "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitParticipantHandler/undoParticipantCheckIn(java.lang.String,int)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.exsoloscript.challonge:challonge-java:1.0.1",
+    "coordinatesV2": "com.exsoloscript.challonge:challonge-java:1.0.2",
+    "caller": "|java+method:///com/exsoloscript/challonge/handler/call/MatchHandler/updateMatch(java.lang.String,int,com.exsoloscript.challonge.model.query.MatchQuery)|",
+    "called": "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(com.exsoloscript.challonge.library.squareup.retrofit2.Call)|",
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitMatchHandler/updateMatch(java.lang.String,int,com.exsoloscript.challonge.model.query.MatchQuery)|",
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/Validate/notNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(retrofit2.Call)|",
+      "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitMatchHandler/updateMatch(java.lang.String,int,com.exsoloscript.challonge.model.query.MatchQuery)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.exsoloscript.challonge:challonge-java:1.0.1",
+    "coordinatesV2": "com.exsoloscript.challonge:challonge-java:1.0.2",
+    "caller": "|java+method:///com/exsoloscript/challonge/handler/call/ParticipantHandler/checkInParticipant(java.lang.String,int)|",
+    "called": "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/Validate/notNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitParticipantHandler/checkInParticipant(java.lang.String,int)|",
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(com.exsoloscript.challonge.library.squareup.retrofit2.Call)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitParticipantHandler/checkInParticipant(java.lang.String,int)|",
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(retrofit2.Call)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.exsoloscript.challonge:challonge-java:1.0.1",
+    "coordinatesV2": "com.exsoloscript.challonge:challonge-java:1.0.2",
+    "caller": "|java+method:///com/exsoloscript/challonge/handler/call/ParticipantHandler/deleteParticipant(java.lang.String,int)|",
+    "called": "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitParticipantHandler/deleteParticipant(java.lang.String,int)|",
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/Validate/notNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(com.exsoloscript.challonge.library.squareup.retrofit2.Call)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(retrofit2.Call)|",
+      "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitParticipantHandler/deleteParticipant(java.lang.String,int)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.exsoloscript.challonge:challonge-java:1.0.1",
+    "coordinatesV2": "com.exsoloscript.challonge:challonge-java:1.0.2",
+    "caller": "|java+method:///com/exsoloscript/challonge/handler/call/MatchHandler/getMatches(java.lang.String,java.lang.Integer,com.exsoloscript.challonge.model.enumeration.MatchState)|",
+    "called": "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitMatchHandler/getMatches(java.lang.String,java.lang.Integer,com.exsoloscript.challonge.model.enumeration.MatchState)|",
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(com.exsoloscript.challonge.library.squareup.retrofit2.Call)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(retrofit2.Call)|",
+      "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitMatchHandler/getMatches(java.lang.String,java.lang.Integer,com.exsoloscript.challonge.model.enumeration.MatchState)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.exsoloscript.challonge:challonge-java:1.0.1",
+    "coordinatesV2": "com.exsoloscript.challonge:challonge-java:1.0.2",
+    "caller": "|java+method:///com/exsoloscript/challonge/handler/call/TournamentHandler/getTournament(java.lang.String,boolean,boolean)|",
+    "called": "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitTournamentHandler/getTournament(java.lang.String,int,int)|",
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(com.exsoloscript.challonge.library.squareup.retrofit2.Call)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(retrofit2.Call)|",
+      "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitTournamentHandler/getTournament(java.lang.String,int,int)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.exsoloscript.challonge:challonge-java:1.0.1",
+    "coordinatesV2": "com.exsoloscript.challonge:challonge-java:1.0.2",
+    "caller": "|java+method:///com/exsoloscript/challonge/handler/call/ParticipantHandler/getParticipant(java.lang.String,int,boolean)|",
+    "called": "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitParticipantHandler/getParticipant(java.lang.String,int,int)|",
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/Validate/notNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(com.exsoloscript.challonge.library.squareup.retrofit2.Call)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(retrofit2.Call)|",
+      "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitParticipantHandler/getParticipant(java.lang.String,int,int)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.exsoloscript.challonge:challonge-java:1.0.1",
+    "coordinatesV2": "com.exsoloscript.challonge:challonge-java:1.0.2",
+    "caller": "|java+method:///com/exsoloscript/challonge/handler/call/MatchHandler/getMatch(java.lang.String,int,boolean)|",
+    "called": "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/Validate/notNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitMatchHandler/getMatch(java.lang.String,int,int)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(com.exsoloscript.challonge.library.squareup.retrofit2.Call)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(retrofit2.Call)|",
+      "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitMatchHandler/getMatch(java.lang.String,int,int)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.exsoloscript.challonge:challonge-java:1.0.1",
+    "coordinatesV2": "com.exsoloscript.challonge:challonge-java:1.0.2",
+    "caller": "|java+method:///com/exsoloscript/challonge/handler/call/AttachmentHandler/getAttachment(java.lang.String,int,int)|",
+    "called": "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitAttachmentHandler/getAttachment(java.lang.String,int,int)|",
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/Validate/notNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(com.exsoloscript.challonge.library.squareup.retrofit2.Call)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(retrofit2.Call)|",
+      "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitAttachmentHandler/getAttachment(java.lang.String,int,int)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.exsoloscript.challonge:challonge-java:1.0.1",
+    "coordinatesV2": "com.exsoloscript.challonge:challonge-java:1.0.2",
+    "caller": "|java+method:///com/exsoloscript/challonge/handler/call/ParticipantHandler/bulkAddParticipants(java.lang.String,java.util.List)|",
+    "called": "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitParticipantHandler/bulkAddParticipants(java.lang.String,java.util.List)|",
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(com.exsoloscript.challonge.library.squareup.retrofit2.Call)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitParticipantHandler/bulkAddParticipants(java.lang.String,java.util.List)|",
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(retrofit2.Call)|",
+      "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.exsoloscript.challonge:challonge-java:1.0.1",
+    "coordinatesV2": "com.exsoloscript.challonge:challonge-java:1.0.2",
+    "caller": "|java+method:///com/exsoloscript/challonge/handler/call/AttachmentHandler/createAttachment(java.lang.String,int,com.exsoloscript.challonge.model.query.AttachmentQuery)|",
+    "called": "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitAttachmentHandler/createAttachment(java.lang.String,int,com.exsoloscript.challonge.model.query.AttachmentQuery)|",
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/Validate/notNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(com.exsoloscript.challonge.library.squareup.retrofit2.Call)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(retrofit2.Call)|",
+      "|java+method:///java/io/File/getName()|",
+      "|java+method:///com/exsoloscript/challonge/model/query/AttachmentQuery/description()|",
+      "|java+method:///okhttp3/MultipartBody$Part/createFormData(java.lang.String,java.lang.String,okhttp3.RequestBody)|",
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitAttachmentHandler/createAttachment(java.lang.String,int,okhttp3.MultipartBody$Part,okhttp3.MultipartBody$Part,okhttp3.MultipartBody$Part)|",
+      "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/exsoloscript/challonge/model/query/AttachmentQuery/getMimeType()|",
+      "|java+method:///okhttp3/MultipartBody$Part/createFormData(java.lang.String,java.lang.String)|",
+      "|java+method:///okhttp3/RequestBody/create(okhttp3.MediaType,java.io.File)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///com/exsoloscript/challonge/model/query/AttachmentQuery/url()|",
+      "|java+method:///okhttp3/MediaType/parse(java.lang.String)|",
+      "|java+method:///com/exsoloscript/challonge/model/query/AttachmentQuery/asset()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.exsoloscript.challonge:challonge-java:1.0.1",
+    "coordinatesV2": "com.exsoloscript.challonge:challonge-java:1.0.2",
+    "caller": "|java+method:///com/exsoloscript/challonge/handler/call/ParticipantHandler/addParticipant(java.lang.String,com.exsoloscript.challonge.model.query.ParticipantQuery)|",
+    "called": "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitParticipantHandler/addParticipant(java.lang.String,com.exsoloscript.challonge.model.query.ParticipantQuery)|",
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(com.exsoloscript.challonge.library.squareup.retrofit2.Call)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(retrofit2.Call)|",
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitParticipantHandler/addParticipant(java.lang.String,com.exsoloscript.challonge.model.query.ParticipantQuery)|",
+      "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.exsoloscript.challonge:challonge-java:1.0.1",
+    "coordinatesV2": "com.exsoloscript.challonge:challonge-java:1.0.2",
+    "caller": "|java+method:///com/exsoloscript/challonge/handler/call/TournamentHandler/startTournament(java.lang.String,boolean,boolean)|",
+    "called": "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(com.exsoloscript.challonge.library.squareup.retrofit2.Call)|",
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitTournamentHandler/startTournament(java.lang.String,int,int)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(retrofit2.Call)|",
+      "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitTournamentHandler/startTournament(java.lang.String,int,int)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.exsoloscript.challonge:challonge-java:1.0.1",
+    "coordinatesV2": "com.exsoloscript.challonge:challonge-java:1.0.2",
+    "caller": "|java+method:///com/exsoloscript/challonge/handler/call/AttachmentHandler/updateAttachment(java.lang.String,int,int,com.exsoloscript.challonge.model.query.AttachmentQuery)|",
+    "called": "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitAttachmentHandler/updateAttachment(java.lang.String,int,int,com.exsoloscript.challonge.model.query.AttachmentQuery)|",
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/Validate/notNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(com.exsoloscript.challonge.library.squareup.retrofit2.Call)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(retrofit2.Call)|",
+      "|java+method:///java/io/File/getName()|",
+      "|java+method:///com/exsoloscript/challonge/model/query/AttachmentQuery/description()|",
+      "|java+method:///okhttp3/MultipartBody$Part/createFormData(java.lang.String,java.lang.String,okhttp3.RequestBody)|",
+      "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/exsoloscript/challonge/model/query/AttachmentQuery/getMimeType()|",
+      "|java+method:///okhttp3/MultipartBody$Part/createFormData(java.lang.String,java.lang.String)|",
+      "|java+method:///okhttp3/RequestBody/create(okhttp3.MediaType,java.io.File)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///com/exsoloscript/challonge/model/query/AttachmentQuery/url()|",
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitAttachmentHandler/updateAttachment(java.lang.String,int,int,okhttp3.MultipartBody$Part,okhttp3.MultipartBody$Part,okhttp3.MultipartBody$Part)|",
+      "|java+method:///okhttp3/MediaType/parse(java.lang.String)|",
+      "|java+method:///com/exsoloscript/challonge/model/query/AttachmentQuery/asset()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.exsoloscript.challonge:challonge-java:1.0.1",
+    "coordinatesV2": "com.exsoloscript.challonge:challonge-java:1.0.2",
+    "caller": "|java+method:///com/exsoloscript/challonge/handler/call/AttachmentHandler/getAttachments(java.lang.String,int)|",
+    "called": "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitAttachmentHandler/getAttachments(java.lang.String,int)|",
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/Validate/notNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(com.exsoloscript.challonge.library.squareup.retrofit2.Call)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(retrofit2.Call)|",
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitAttachmentHandler/getAttachments(java.lang.String,int)|",
+      "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.exsoloscript.challonge:challonge-java:1.0.1",
+    "coordinatesV2": "com.exsoloscript.challonge:challonge-java:1.0.2",
+    "caller": "|java+method:///com/exsoloscript/challonge/handler/call/ParticipantHandler/getParticipants(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitParticipantHandler/getParticipants(java.lang.String)|",
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(com.exsoloscript.challonge.library.squareup.retrofit2.Call)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(retrofit2.Call)|",
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitParticipantHandler/getParticipants(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.exsoloscript.challonge:challonge-java:1.0.1",
+    "coordinatesV2": "com.exsoloscript.challonge:challonge-java:1.0.2",
+    "caller": "|java+method:///com/exsoloscript/challonge/handler/call/TournamentHandler/deleteTournament(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitTournamentHandler/deleteTournament(java.lang.String)|",
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(com.exsoloscript.challonge.library.squareup.retrofit2.Call)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(retrofit2.Call)|",
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitTournamentHandler/deleteTournament(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.exsoloscript.challonge:challonge-java:1.0.1",
+    "coordinatesV2": "com.exsoloscript.challonge:challonge-java:1.0.2",
+    "caller": "|java+method:///com/exsoloscript/challonge/handler/call/TournamentHandler/updateTournament(java.lang.String,com.exsoloscript.challonge.model.query.TournamentQuery)|",
+    "called": "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(com.exsoloscript.challonge.library.squareup.retrofit2.Call)|",
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitTournamentHandler/updateTournament(java.lang.String,com.exsoloscript.challonge.model.query.TournamentQuery)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(retrofit2.Call)|",
+      "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitTournamentHandler/updateTournament(java.lang.String,com.exsoloscript.challonge.model.query.TournamentQuery)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.exsoloscript.challonge:challonge-java:1.0.1",
+    "coordinatesV2": "com.exsoloscript.challonge:challonge-java:1.0.2",
+    "caller": "|java+method:///com/exsoloscript/challonge/handler/call/TournamentHandler/resetTournament(java.lang.String,boolean,boolean)|",
+    "called": "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitTournamentHandler/resetTournament(java.lang.String,int,int)|",
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(com.exsoloscript.challonge.library.squareup.retrofit2.Call)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(retrofit2.Call)|",
+      "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitTournamentHandler/resetTournament(java.lang.String,int,int)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.exsoloscript.challonge:challonge-java:1.0.1",
+    "coordinatesV2": "com.exsoloscript.challonge:challonge-java:1.0.2",
+    "caller": "|java+method:///com/exsoloscript/challonge/handler/call/TournamentHandler/processCheckIns(java.lang.String,boolean,boolean)|",
+    "called": "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitTournamentHandler/processCheckIns(java.lang.String,int,int)|",
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(com.exsoloscript.challonge.library.squareup.retrofit2.Call)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(retrofit2.Call)|",
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitTournamentHandler/processCheckIns(java.lang.String,int,int)|",
+      "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.exsoloscript.challonge:challonge-java:1.0.1",
+    "coordinatesV2": "com.exsoloscript.challonge:challonge-java:1.0.2",
+    "caller": "|java+method:///com/exsoloscript/challonge/handler/call/ParticipantHandler/randomizeParticipants(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(com.exsoloscript.challonge.library.squareup.retrofit2.Call)|",
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitParticipantHandler/randomizeParticipants(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(retrofit2.Call)|",
+      "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitParticipantHandler/randomizeParticipants(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.exsoloscript.challonge:challonge-java:1.0.1",
+    "coordinatesV2": "com.exsoloscript.challonge:challonge-java:1.0.2",
+    "caller": "|java+method:///com/exsoloscript/challonge/handler/call/ParticipantHandler/updateParticipant(java.lang.String,int,com.exsoloscript.challonge.model.query.ParticipantQuery)|",
+    "called": "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitParticipantHandler/updateParticipant(java.lang.String,int,com.exsoloscript.challonge.model.query.ParticipantQuery)|",
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///com/exsoloscript/challonge/library/commons/lang3/Validate/notNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(com.exsoloscript.challonge.library.squareup.retrofit2.Call)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/exsoloscript/challonge/handler/call/RetrofitChallongeApiCallFactory/createApiCall(retrofit2.Call)|",
+      "|java+method:///com/exsoloscript/challonge/handler/retrofit/RetrofitParticipantHandler/updateParticipant(java.lang.String,int,com.exsoloscript.challonge.model.query.ParticipantQuery)|",
+      "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.4",
+    "change": "ADDED"
+  }
+]

@@ -1,0 +1,160 @@
+[
+  {
+    "coordinatesV1": "au.com.dius:pact-jvm-model:3.5.8",
+    "coordinatesV2": "au.com.dius:pact-jvm-model:3.5.7-jre7.0",
+    "caller": "|java+method:///au/com/dius/pact/model/generators/DateGenerator/generate(java.lang.Object)|",
+    "called": "|java+method:///org/joda/time/format/DateTimeFormatterBuilder/appendPattern(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/joda/time/format/DateTimeFormatterBuilder/toFormatter()|",
+      "|java+method:///org/joda/time/format/DateTimeFormatterBuilder/appendPattern(java.lang.String)|",
+      "|java+method:///org/joda/time/DateTime/toString(org.joda.time.format.DateTimeFormatter)|",
+      "|java+constructor:///org/joda/time/format/DateTimeFormatterBuilder/DateTimeFormatterBuilder()|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/joda/time/DateTime/toString()|",
+      "|java+method:///org/joda/time/DateTime/now()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/time/OffsetDateTime/now()|",
+      "|java+method:///java/time/LocalDate/now()|",
+      "|java+method:///java/time/format/DateTimeFormatter/ofPattern(java.lang.String)|",
+      "|java+method:///java/time/LocalDate/toString()|",
+      "|java+method:///java/time/OffsetDateTime/format(java.time.format.DateTimeFormatter)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull(java.lang.Object,java.lang.String)|"
+    ],
+    "affectedLib": "joda-time:joda-time:2.9.9",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "au.com.dius:pact-jvm-model:3.5.8",
+    "coordinatesV2": "au.com.dius:pact-jvm-model:3.5.7-jre7.0",
+    "caller": "|java+method:///au/com/dius/pact/model/generators/TimeGenerator/generate(java.lang.Object)|",
+    "called": "|java+method:///org/joda/time/format/DateTimeFormatterBuilder/appendPattern(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/joda/time/format/DateTimeFormatterBuilder/toFormatter()|",
+      "|java+method:///org/joda/time/format/DateTimeFormatterBuilder/appendPattern(java.lang.String)|",
+      "|java+method:///org/joda/time/DateTime/toString(org.joda.time.format.DateTimeFormatter)|",
+      "|java+constructor:///org/joda/time/format/DateTimeFormatterBuilder/DateTimeFormatterBuilder()|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/joda/time/DateTime/toString()|",
+      "|java+method:///org/joda/time/DateTime/now()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/time/OffsetTime/format(java.time.format.DateTimeFormatter)|",
+      "|java+method:///java/time/LocalTime/now()|",
+      "|java+method:///java/time/format/DateTimeFormatter/ofPattern(java.lang.String)|",
+      "|java+method:///java/time/LocalTime/toString()|",
+      "|java+method:///java/time/OffsetTime/now()|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull(java.lang.Object,java.lang.String)|"
+    ],
+    "affectedLib": "joda-time:joda-time:2.9.9",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "au.com.dius:pact-jvm-model:3.5.8",
+    "coordinatesV2": "au.com.dius:pact-jvm-model:3.5.7-jre7.0",
+    "caller": "|java+method:///au/com/dius/pact/model/generators/DateTimeGenerator/generate(java.lang.Object)|",
+    "called": "|java+method:///org/joda/time/format/DateTimeFormatterBuilder/appendPattern(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/joda/time/format/DateTimeFormatterBuilder/toFormatter()|",
+      "|java+method:///org/joda/time/format/DateTimeFormatterBuilder/appendPattern(java.lang.String)|",
+      "|java+method:///org/joda/time/DateTime/toString(org.joda.time.format.DateTimeFormatter)|",
+      "|java+constructor:///org/joda/time/format/DateTimeFormatterBuilder/DateTimeFormatterBuilder()|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/joda/time/DateTime/toString()|",
+      "|java+method:///org/joda/time/DateTime/now()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/time/ZonedDateTime/now()|",
+      "|java+method:///java/time/LocalDateTime/toString()|",
+      "|java+method:///java/time/format/DateTimeFormatter/ofPattern(java.lang.String)|",
+      "|java+method:///java/time/LocalDateTime/now()|",
+      "|java+method:///java/time/ZonedDateTime/format(java.time.format.DateTimeFormatter)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull(java.lang.Object,java.lang.String)|"
+    ],
+    "affectedLib": "joda-time:joda-time:2.9.9",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "au.com.dius:pact-jvm-model:3.5.7-jre7.0",
+    "coordinatesV2": "au.com.dius:pact-jvm-model:3.5.8",
+    "caller": "|java+method:///au/com/dius/pact/model/generators/RandomStringGenerator/generate(java.lang.Object)|",
+    "called": "|java+method:///org/apache/commons/lang3/RandomStringUtils/randomAlphanumeric(int)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/RandomStringUtils/randomAlphanumeric(int)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull(java.lang.Object,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/RandomStringUtils/randomAlphanumeric(int)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull(java.lang.Object,java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "au.com.dius:pact-jvm-model:3.5.7-jre7.0",
+    "coordinatesV2": "au.com.dius:pact-jvm-model:3.5.8",
+    "caller": "|java+method:///au/com/dius/pact/model/generators/RandomHexadecimalGenerator/generate(java.lang.Object)|",
+    "called": "|java+method:///org/apache/commons/lang3/RandomStringUtils/random(int,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/RandomStringUtils/random(int,java.lang.String)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull(java.lang.Object,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/RandomStringUtils/random(int,java.lang.String)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull(java.lang.Object,java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "au.com.dius:pact-jvm-model:3.5.7-jre7.0",
+    "coordinatesV2": "au.com.dius:pact-jvm-model:3.5.8",
+    "caller": "|java+method:///au/com/dius/pact/model/generators/RandomIntGenerator/generate(java.lang.Object)|",
+    "called": "|java+method:///org/apache/commons/lang3/RandomUtils/nextInt(int,int)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/math/RandomUtils/nextInt(int)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/RandomUtils/nextInt(int,int)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "au.com.dius:pact-jvm-model:3.5.7-jre7.0",
+    "coordinatesV2": "au.com.dius:pact-jvm-model:3.5.8",
+    "caller": "|java+method:///au/com/dius/pact/model/generators/RandomDecimalGenerator/generate(java.lang.Object)|",
+    "called": "|java+method:///org/apache/commons/lang3/RandomStringUtils/randomNumeric(int)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/RandomStringUtils/randomNumeric(int)|",
+      "|java+constructor:///java/math/BigDecimal/BigDecimal(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/RandomStringUtils/randomNumeric(int)|",
+      "|java+constructor:///java/math/BigDecimal/BigDecimal(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "au.com.dius:pact-jvm-model:3.5.7-jre7.0",
+    "coordinatesV2": "au.com.dius:pact-jvm-model:3.5.8",
+    "caller": "|java+method:///au/com/dius/pact/model/PactReader/loadFile(java.lang.Object,java.util.Map)|",
+    "called": "|java+constructor:///org/codehaus/groovy/runtime/GStringImpl/GStringImpl(java.lang.Object%5B%5D,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/codehaus/groovy/runtime/ScriptBytecodeAdapter/matchRegex(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/codehaus/groovy/runtime/GStringImpl/GStringImpl(java.lang.Object%5B%5D,java.lang.String%5B%5D)|",
+      "|java+method:///org/codehaus/groovy/runtime/typehandling/DefaultTypeTransformation/booleanUnbox(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/codehaus/groovy/runtime/ScriptBytecodeAdapter/matchRegex(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/codehaus/groovy/runtime/GStringImpl/GStringImpl(java.lang.Object%5B%5D,java.lang.String%5B%5D)|",
+      "|java+method:///org/codehaus/groovy/runtime/ScriptBytecodeAdapter/createPojoWrapper(java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/codehaus/groovy/runtime/typehandling/DefaultTypeTransformation/booleanUnbox(java.lang.Object)|"
+    ],
+    "affectedLib": "org.codehaus.groovy:groovy-all:2.4.11",
+    "change": "UPDATED"
+  }
+]

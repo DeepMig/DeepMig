@@ -1,0 +1,74 @@
+[
+  {
+    "coordinatesV1": "org.apache.sling:org.apache.sling.fsresource:1.0.2",
+    "coordinatesV2": "org.apache.sling:org.apache.sling.fsresource:1.1.0",
+    "caller": "|java+method:///org/apache/sling/fsprovider/internal/FsResource/getResourceMetadata()|",
+    "called": "|java+method:///org/apache/sling/api/resource/ResourceMetadata/setModificationTime(long)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/sling/api/resource/ResourceMetadata/ResourceMetadata()|",
+      "|java+method:///org/apache/sling/api/resource/ResourceMetadata/setResolutionPath(java.lang.String)|",
+      "|java+method:///org/apache/sling/api/resource/ResourceMetadata/setModificationTime(long)|",
+      "|java+method:///java/io/File/lastModified()|",
+      "|java+method:///java/io/File/length()|",
+      "|java+method:///org/apache/sling/api/resource/ResourceMetadata/setContentLength(long)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/sling/api/resource/ResourceMetadata/ResourceMetadata()|",
+      "|java+method:///org/apache/sling/api/resource/ResourceMetadata/setModificationTime(long)|",
+      "|java+method:///java/io/File/lastModified()|",
+      "|java+method:///org/apache/sling/api/resource/ResourceMetadata/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/io/File/length()|",
+      "|java+method:///org/apache/sling/api/resource/ResourceMetadata/setContentLength(long)|",
+      "|java+method:///java/io/File/isDirectory()|",
+      "|java+method:///org/apache/sling/api/resource/ResourceMetadata/setResolutionPath(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.sling:org.apache.sling.api:2.3.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.sling:org.apache.sling.fsresource:1.0.2",
+    "coordinatesV2": "org.apache.sling:org.apache.sling.fsresource:1.1.0",
+    "caller": "|java+method:///org/apache/sling/fsprovider/internal/FsResource/adaptTo(java.lang.Class)|",
+    "called": "|java+constructor:///org/apache/sling/api/wrappers/ValueMapDecorator/ValueMapDecorator(java.util.Map)|",
+    "v1Body": [
+      "|java+method:///java/io/File/isDirectory()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/File/canRead()|",
+      "|java+method:///java/net/URI/toURL()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/io/FileInputStream/FileInputStream(java.io.File)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/io/File/toURI()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/apache/sling/api/resource/AbstractResource/adaptTo(java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/sling/fsprovider/internal/FsResource/getLog()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/sling/fsprovider/internal/FsResource/getResourceType()|",
+      "|java+method:///java/io/File/isDirectory()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/File/canRead()|",
+      "|java+method:///java/net/URI/toURL()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/io/File/lastModified()|",
+      "|java+constructor:///java/io/FileInputStream/FileInputStream(java.io.File)|",
+      "|java+constructor:///org/apache/sling/api/wrappers/ValueMapDecorator/ValueMapDecorator(java.util.Map)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Calendar/setTimeInMillis(long)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/Calendar/getInstance()|",
+      "|java+method:///java/io/File/toURI()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/apache/sling/api/resource/AbstractResource/adaptTo(java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/sling/fsprovider/internal/FsResource/getLog()|"
+    ],
+    "affectedLib": "org.apache.sling:org.apache.sling.api:2.3.0",
+    "change": "UPDATED"
+  }
+]

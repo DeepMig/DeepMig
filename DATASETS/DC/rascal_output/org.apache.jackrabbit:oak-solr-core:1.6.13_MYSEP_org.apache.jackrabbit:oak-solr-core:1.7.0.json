@@ -1,0 +1,62 @@
+[
+  {
+    "coordinatesV1": "org.apache.jackrabbit:oak-solr-core:1.6.13",
+    "coordinatesV2": "org.apache.jackrabbit:oak-solr-core:1.7.0",
+    "caller": "|java+method:///org/apache/jackrabbit/oak/plugins/index/solr/index/SolrIndexEditor/childNodeDeleted(java.lang.String,org.apache.jackrabbit.oak.spi.state.NodeState)|",
+    "called": "|java+constructor:///org/apache/jackrabbit/oak/api/CommitFailedException/CommitFailedException(java.lang.String,int,java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/apache/jackrabbit/oak/plugins/index/IndexUpdateCallback/indexUpdate()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apache/jackrabbit/oak/plugins/index/solr/configuration/OakSolrConfiguration/getPathField()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/solr/client/solrj/SolrClient/deleteByQuery(java.lang.String)|",
+      "|java+method:///org/apache/jackrabbit/oak/plugins/index/solr/util/SolrUtils/partialEscape(java.lang.CharSequence)|",
+      "|java+method:///org/apache/jackrabbit/oak/plugins/index/solr/index/SolrIndexEditor/getPath()|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///org/apache/jackrabbit/oak/commons/PathUtils/concat(java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/apache/jackrabbit/oak/api/CommitFailedException/CommitFailedException(java.lang.String,int,java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/CharSequence/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/jackrabbit/oak/plugins/index/IndexUpdateCallback/indexUpdate()|",
+      "|java+method:///org/apache/jackrabbit/oak/plugins/index/solr/configuration/OakSolrConfiguration/getPathField()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/jackrabbit/oak/plugins/index/solr/util/SolrUtils/partialEscape(java.lang.CharSequence)|",
+      "|java+method:///org/apache/jackrabbit/oak/plugins/index/solr/index/SolrIndexEditor/getPath()|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///org/apache/solr/client/solrj/SolrServer/deleteByQuery(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apache/jackrabbit/oak/commons/PathUtils/concat(java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/apache/jackrabbit/oak/api/CommitFailedException/CommitFailedException(java.lang.String,int,java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/CharSequence/toString()|"
+    ],
+    "affectedLib": "org.apache.jackrabbit:oak-api:1.7.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.jackrabbit:oak-solr-core:1.6.13",
+    "coordinatesV2": "org.apache.jackrabbit:oak-solr-core:1.7.0",
+    "caller": "|java+method:///org/apache/jackrabbit/oak/plugins/index/solr/index/SolrIndexEditor/leave(org.apache.jackrabbit.oak.spi.state.NodeState,org.apache.jackrabbit.oak.spi.state.NodeState)|",
+    "called": "|java+constructor:///org/apache/jackrabbit/oak/api/CommitFailedException/CommitFailedException(java.lang.String,int,java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/apache/jackrabbit/oak/plugins/index/solr/index/SolrIndexEditor/docFromState(org.apache.jackrabbit.oak.spi.state.NodeState)|",
+      "|java+method:///org/apache/jackrabbit/oak/plugins/index/IndexUpdateCallback/indexUpdate()|",
+      "|java+method:///org/apache/jackrabbit/oak/plugins/index/solr/configuration/OakSolrConfiguration/getCommitPolicy()|",
+      "|java+constructor:///org/apache/jackrabbit/oak/api/CommitFailedException/CommitFailedException(java.lang.String,int,java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/jackrabbit/oak/spi/state/NodeState/exists()|",
+      "|java+method:///org/apache/solr/client/solrj/SolrClient/add(org.apache.solr.common.SolrInputDocument)|",
+      "|java+method:///org/apache/jackrabbit/oak/plugins/index/solr/index/SolrIndexEditor/commitByPolicy(org.apache.solr.client.solrj.SolrClient,org.apache.jackrabbit.oak.plugins.index.solr.configuration.OakSolrConfiguration$CommitPolicy)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/jackrabbit/oak/plugins/index/solr/index/SolrIndexEditor/docFromState(org.apache.jackrabbit.oak.spi.state.NodeState)|",
+      "|java+method:///org/apache/jackrabbit/oak/plugins/index/IndexUpdateCallback/indexUpdate()|",
+      "|java+method:///org/apache/jackrabbit/oak/plugins/index/solr/configuration/OakSolrConfiguration/getCommitPolicy()|",
+      "|java+constructor:///org/apache/jackrabbit/oak/api/CommitFailedException/CommitFailedException(java.lang.String,int,java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/jackrabbit/oak/spi/state/NodeState/exists()|",
+      "|java+method:///org/apache/solr/client/solrj/SolrServer/add(org.apache.solr.common.SolrInputDocument)|",
+      "|java+method:///org/apache/jackrabbit/oak/plugins/index/solr/index/SolrIndexEditor/commitByPolicy(org.apache.solr.client.solrj.SolrServer,org.apache.jackrabbit.oak.plugins.index.solr.configuration.OakSolrConfiguration$CommitPolicy)|"
+    ],
+    "affectedLib": "org.apache.jackrabbit:oak-api:1.7.0",
+    "change": "ADDED"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "coordinatesV1": "org.openl.rules:org.openl.rules.security.standalone:5.19.9",
+    "coordinatesV2": "org.openl.rules:org.openl.rules.security.standalone:5.20.0",
+    "caller": "|java+method:///org/openl/rules/security/standalone/service/UserInfoUserDetailsServiceImpl/loadUserByUsername(java.lang.String)|",
+    "called": "|java+constructor:///org/openl/rules/security/SimpleUser/SimpleUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.util.Collection)|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/security/core/userdetails/UsernameNotFoundException/UsernameNotFoundException(java.lang.String)|",
+      "|java+method:///org/openl/rules/security/standalone/persistence/User/getLoginName()|",
+      "|java+method:///org/openl/rules/security/standalone/service/UserInfoUserDetailsServiceImpl/createPrivileges(org.openl.rules.security.standalone.persistence.User)|",
+      "|java+method:///org/openl/rules/security/standalone/persistence/User/getPasswordHash()|",
+      "|java+constructor:///org/openl/rules/security/SimpleUser/SimpleUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.util.Collection)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/openl/rules/security/standalone/service/UserInfoUserDetailsServiceImpl/loadUserByUsername(java.lang.String)|",
+      "|java+method:///org/openl/rules/security/standalone/dao/UserDao/getUserByName(java.lang.String)|",
+      "|java+method:///org/openl/rules/security/standalone/persistence/User/getFirstName()|",
+      "|java+method:///org/openl/rules/security/standalone/persistence/User/getSurname()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/springframework/security/core/userdetails/UsernameNotFoundException/UsernameNotFoundException(java.lang.String)|",
+      "|java+method:///org/openl/rules/security/standalone/persistence/User/getLoginName()|",
+      "|java+method:///org/openl/rules/security/standalone/persistence/User/getPasswordHash()|",
+      "|java+constructor:///org/openl/rules/security/SimpleUser/SimpleUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.util.Collection)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/openl/rules/security/standalone/service/PrivilegesEvaluator/createPrivileges(org.openl.rules.security.standalone.persistence.User)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/openl/rules/security/standalone/service/UserInfoUserDetailsServiceImpl/loadUserByUsername(java.lang.String)|",
+      "|java+method:///org/openl/rules/security/standalone/dao/UserDao/getUserByName(java.lang.String)|",
+      "|java+method:///org/openl/rules/security/standalone/persistence/User/getFirstName()|",
+      "|java+method:///org/openl/rules/security/standalone/persistence/User/getSurname()|"
+    ],
+    "affectedLib": "org.openl.rules:org.openl.rules.security:5.20.0",
+    "change": "UPDATED"
+  }
+]

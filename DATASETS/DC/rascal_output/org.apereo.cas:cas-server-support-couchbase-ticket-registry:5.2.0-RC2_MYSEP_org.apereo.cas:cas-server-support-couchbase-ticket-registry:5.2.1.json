@@ -1,0 +1,90 @@
+[
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-couchbase-ticket-registry:5.2.0-RC2",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-couchbase-ticket-registry:5.2.1",
+    "caller": "|java+method:///org/apereo/cas/config/CouchbaseTicketRegistryConfiguration/ticketRegistryCouchbaseClientFactory()|",
+    "called": "|java+constructor:///org/apereo/cas/couchbase/core/CouchbaseClientFactory/CouchbaseClientFactory(java.util.Set,java.lang.String,java.lang.String,long,java.lang.String,java.util.Collection)|",
+    "v1Body": [
+      "|java+method:///org/springframework/util/StringUtils/commaDelimitedListToSet(java.lang.String)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/couchbase/ticketregistry/CouchbaseTicketRegistryProperties/getBucket()|",
+      "|java+constructor:///org/apereo/cas/couchbase/core/CouchbaseClientFactory/CouchbaseClientFactory(java.util.Set,java.lang.String,java.lang.String,long,java.lang.String,java.util.List)|",
+      "|java+method:///org/apereo/cas/configuration/model/core/ticket/registry/TicketRegistryProperties/getCouchbase()|",
+      "|java+method:///org/apereo/cas/configuration/model/core/util/TicketProperties/getRegistry()|",
+      "|java+method:///org/apereo/cas/configuration/CasConfigurationProperties/getTicket()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/couchbase/ticketregistry/CouchbaseTicketRegistryProperties/getNodeSet()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/couchbase/ticketregistry/CouchbaseTicketRegistryProperties/getTimeout()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/util/StringUtils/commaDelimitedListToSet(java.lang.String)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/couchbase/ticketregistry/CouchbaseTicketRegistryProperties/getBucket()|",
+      "|java+constructor:///org/apereo/cas/couchbase/core/CouchbaseClientFactory/CouchbaseClientFactory(java.util.Set,java.lang.String,java.lang.String,long,java.lang.String,java.util.Collection)|",
+      "|java+method:///org/apereo/cas/configuration/model/core/ticket/registry/TicketRegistryProperties/getCouchbase()|",
+      "|java+method:///org/apereo/cas/configuration/model/core/util/TicketProperties/getRegistry()|",
+      "|java+method:///org/apereo/cas/configuration/CasConfigurationProperties/getTicket()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/couchbase/ticketregistry/CouchbaseTicketRegistryProperties/getNodeSet()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/couchbase/ticketregistry/CouchbaseTicketRegistryProperties/getTimeout()|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-support-couchbase-core:5.2.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-couchbase-ticket-registry:5.2.0-RC2",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-couchbase-ticket-registry:5.2.1",
+    "caller": "|java+method:///org/apereo/cas/config/CouchbaseTicketRegistryConfiguration/ticketRegistryCleaner()|",
+    "called": "|java+method:///org/apereo/cas/ticket/registry/NoOpTicketRegistryCleaner/getInstance()|",
+    "v1Body": [
+      "|java+constructor:///org/apereo/cas/ticket/registry/NoOpTicketRegistryCleaner/NoOpTicketRegistryCleaner()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apereo/cas/ticket/registry/NoOpTicketRegistryCleaner/getInstance()|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-core-tickets:5.2.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-couchbase-ticket-registry:5.2.0-RC2",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-couchbase-ticket-registry:5.2.1",
+    "caller": "|java+initializer:///org/apereo/cas/ticket/registry/CouchbaseTicketRegistry/CouchbaseTicketRegistry$initializer|",
+    "called": "|java+method:///org/apereo/cas/util/CollectionUtils/wrap(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/couchbase/client/java/view/DefaultView/create(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apereo/cas/util/CollectionUtils/wrap(java.lang.Object)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///com/couchbase/client/java/view/DefaultView/create(java.lang.String,java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-core-util:5.2.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-couchbase-ticket-registry:5.2.0-RC2",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-couchbase-ticket-registry:5.2.1",
+    "caller": "|java+method:///org/apereo/cas/config/CouchbaseTicketRegistryConfiguration/ticketRegistryCouchbaseClientFactory()|",
+    "called": "|java+method:///org/springframework/util/StringUtils/commaDelimitedListToSet(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/springframework/util/StringUtils/commaDelimitedListToSet(java.lang.String)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/couchbase/ticketregistry/CouchbaseTicketRegistryProperties/getBucket()|",
+      "|java+constructor:///org/apereo/cas/couchbase/core/CouchbaseClientFactory/CouchbaseClientFactory(java.util.Set,java.lang.String,java.lang.String,long,java.lang.String,java.util.List)|",
+      "|java+method:///org/apereo/cas/configuration/model/core/ticket/registry/TicketRegistryProperties/getCouchbase()|",
+      "|java+method:///org/apereo/cas/configuration/model/core/util/TicketProperties/getRegistry()|",
+      "|java+method:///org/apereo/cas/configuration/CasConfigurationProperties/getTicket()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/couchbase/ticketregistry/CouchbaseTicketRegistryProperties/getNodeSet()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/couchbase/ticketregistry/CouchbaseTicketRegistryProperties/getTimeout()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/util/StringUtils/commaDelimitedListToSet(java.lang.String)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/couchbase/ticketregistry/CouchbaseTicketRegistryProperties/getBucket()|",
+      "|java+constructor:///org/apereo/cas/couchbase/core/CouchbaseClientFactory/CouchbaseClientFactory(java.util.Set,java.lang.String,java.lang.String,long,java.lang.String,java.util.Collection)|",
+      "|java+method:///org/apereo/cas/configuration/model/core/ticket/registry/TicketRegistryProperties/getCouchbase()|",
+      "|java+method:///org/apereo/cas/configuration/model/core/util/TicketProperties/getRegistry()|",
+      "|java+method:///org/apereo/cas/configuration/CasConfigurationProperties/getTicket()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/couchbase/ticketregistry/CouchbaseTicketRegistryProperties/getNodeSet()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/couchbase/ticketregistry/CouchbaseTicketRegistryProperties/getTimeout()|"
+    ],
+    "affectedLib": "org.springframework:spring-core:4.3.12.RELEASE",
+    "change": "UPDATED"
+  }
+]

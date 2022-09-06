@@ -1,0 +1,166 @@
+[
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-consent-core:5.3.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-consent-core:5.3.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/consent/DefaultConsentEngine/resolveConsentableAttributesFrom(org.apereo.cas.authentication.Authentication,org.apereo.cas.authentication.principal.Service,org.apereo.cas.services.RegisteredService)|",
+    "called": "|java+method:///org/apereo/cas/services/RegisteredServiceAttributeReleasePolicy/getConsentableAttributes(org.apereo.cas.authentication.principal.Principal,org.apereo.cas.authentication.principal.Service,org.apereo.cas.services.RegisteredService)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apereo/cas/authentication/Authentication/getPrincipal()|",
+      "|java+method:///org/apereo/cas/services/RegisteredServiceAttributeReleasePolicy/getConsentableAttributes(org.apereo.cas.authentication.principal.Principal,org.apereo.cas.authentication.principal.Service,org.apereo.cas.services.RegisteredService)|",
+      "|java+method:///org/apereo/cas/services/RegisteredService/getAttributeReleasePolicy()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apereo/cas/authentication/Authentication/getPrincipal()|",
+      "|java+method:///org/apereo/cas/services/RegisteredServiceAttributeReleasePolicy/getConsentableAttributes(org.apereo.cas.authentication.principal.Principal,org.apereo.cas.authentication.principal.Service,org.apereo.cas.services.RegisteredService)|",
+      "|java+method:///org/apereo/cas/services/RegisteredService/getAttributeReleasePolicy()|",
+      "|java+constructor:///java/util/LinkedHashMap/LinkedHashMap()|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-core-api-services:5.3.0-RC4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-consent-core:5.3.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-consent-core:5.3.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/consent/JsonConsentRepository/writeAccountToJsonResource()|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writerWithDefaultPrettyPrinter()|",
+    "v1Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writerWithDefaultPrettyPrinter()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectWriter/writeValue(java.io.File,java.lang.Object)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apereo/cas/consent/JsonConsentRepository/readDecisionsFromJsonResource()|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+method:///org/apereo/cas/consent/JsonConsentRepository/getConsentDecisions()|",
+      "|java+method:///org/springframework/core/io/Resource/getFile()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writerWithDefaultPrettyPrinter()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectWriter/writeValue(java.io.File,java.lang.Object)|",
+      "|java+method:///org/apereo/cas/consent/JsonConsentRepository/readDecisionsFromJsonResource()|",
+      "|java+method:///org/apereo/cas/consent/JsonConsentRepository/getConsentDecisions()|",
+      "|java+method:///org/springframework/core/io/Resource/getFile()|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.9.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-consent-core:5.3.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-consent-core:5.3.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/consent/JsonConsentRepository/readDecisionsFromJsonResource()|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,com.fasterxml.jackson.core.type.TypeReference)|",
+    "v1Body": [
+      "|java+method:///java/io/Reader/close()|",
+      "|java+constructor:///org/apereo/cas/consent/JsonConsentRepository$1/JsonConsentRepository$1(org.apereo.cas.consent.JsonConsentRepository)|",
+      "|java+method:///org/hjson/JsonValue/readHjson(java.io.Reader)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,com.fasterxml.jackson.core.type.TypeReference)|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+method:///org/springframework/core/io/Resource/getInputStream()|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream,java.nio.charset.Charset)|",
+      "|java+method:///org/hjson/JsonValue/toString()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/util/LinkedHashSet/LinkedHashSet(int)|",
+      "|java+method:///org/apereo/cas/util/ResourceUtils/doesResourceExist(org.springframework.core.io.Resource)|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/Reader/close()|",
+      "|java+constructor:///org/apereo/cas/consent/JsonConsentRepository$1/JsonConsentRepository$1(org.apereo.cas.consent.JsonConsentRepository)|",
+      "|java+method:///org/hjson/JsonValue/readHjson(java.io.Reader)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,com.fasterxml.jackson.core.type.TypeReference)|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+method:///org/springframework/core/io/Resource/getInputStream()|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream,java.nio.charset.Charset)|",
+      "|java+method:///org/hjson/JsonValue/toString()|",
+      "|java+constructor:///java/util/LinkedHashSet/LinkedHashSet(int)|",
+      "|java+method:///org/apereo/cas/util/ResourceUtils/doesResourceExist(org.springframework.core.io.Resource)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.9.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-consent-core:5.3.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-consent-core:5.3.0-RC4",
+    "caller": "|java+initializer:///org/apereo/cas/consent/JsonConsentRepository/JsonConsentRepository$initializer|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/findAndRegisterModules()|",
+    "v1Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/findAndRegisterModules()|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/findAndRegisterModules()|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.9.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-consent-core:5.3.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-consent-core:5.3.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/consent/JsonConsentRepository/readDecisionsFromJsonResource()|",
+    "called": "|java+method:///org/apereo/cas/util/ResourceUtils/doesResourceExist(org.springframework.core.io.Resource)|",
+    "v1Body": [
+      "|java+method:///java/io/Reader/close()|",
+      "|java+constructor:///org/apereo/cas/consent/JsonConsentRepository$1/JsonConsentRepository$1(org.apereo.cas.consent.JsonConsentRepository)|",
+      "|java+method:///org/hjson/JsonValue/readHjson(java.io.Reader)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,com.fasterxml.jackson.core.type.TypeReference)|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+method:///org/springframework/core/io/Resource/getInputStream()|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream,java.nio.charset.Charset)|",
+      "|java+method:///org/hjson/JsonValue/toString()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/util/LinkedHashSet/LinkedHashSet(int)|",
+      "|java+method:///org/apereo/cas/util/ResourceUtils/doesResourceExist(org.springframework.core.io.Resource)|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/Reader/close()|",
+      "|java+constructor:///org/apereo/cas/consent/JsonConsentRepository$1/JsonConsentRepository$1(org.apereo.cas.consent.JsonConsentRepository)|",
+      "|java+method:///org/hjson/JsonValue/readHjson(java.io.Reader)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,com.fasterxml.jackson.core.type.TypeReference)|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+method:///org/springframework/core/io/Resource/getInputStream()|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream,java.nio.charset.Charset)|",
+      "|java+method:///org/hjson/JsonValue/toString()|",
+      "|java+constructor:///java/util/LinkedHashSet/LinkedHashSet(int)|",
+      "|java+method:///org/apereo/cas/util/ResourceUtils/doesResourceExist(org.springframework.core.io.Resource)|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-core-util-api:5.3.0-RC4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-consent-core:5.3.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-consent-core:5.3.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/consent/BaseConsentRepository/storeConsentDecision(org.apereo.cas.consent.ConsentDecision)|",
+    "called": "|java+method:///org/apereo/cas/util/RandomUtils/getNativeInstance()|",
+    "v1Body": [
+      "|java+method:///java/security/SecureRandom/nextInt()|",
+      "|java+method:///org/apereo/cas/consent/BaseConsentRepository/getConsentDecisions()|",
+      "|java+method:///java/util/Set/stream()|",
+      "|java+method:///org/apereo/cas/util/RandomUtils/getInstanceNative()|",
+      "|java+method:///java/util/stream/Stream/filter(java.util.function.Predicate)|",
+      "|java+method:///java/util/stream/Stream/findFirst()|",
+      "|java+method:///java/util/Optional/orElse(java.lang.Object)|",
+      "|java+method:///org/apereo/cas/consent/ConsentDecision/setId(long)|",
+      "|java+method:///java/util/Set/remove(java.lang.Object)|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///java/lang/Math/abs(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/security/SecureRandom/nextInt()|",
+      "|java+method:///org/apereo/cas/consent/BaseConsentRepository/getConsentDecisions()|",
+      "|java+method:///java/util/Set/stream()|",
+      "|java+method:///org/apereo/cas/util/RandomUtils/getNativeInstance()|",
+      "|java+method:///java/util/stream/Stream/filter(java.util.function.Predicate)|",
+      "|java+method:///java/util/stream/Stream/findFirst()|",
+      "|java+method:///java/util/Optional/orElse(java.lang.Object)|",
+      "|java+method:///org/apereo/cas/consent/ConsentDecision/setId(long)|",
+      "|java+method:///java/util/Set/remove(java.lang.Object)|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///java/lang/Math/abs(int)|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-core-util-api:5.3.0-RC4",
+    "change": "UPDATED"
+  }
+]

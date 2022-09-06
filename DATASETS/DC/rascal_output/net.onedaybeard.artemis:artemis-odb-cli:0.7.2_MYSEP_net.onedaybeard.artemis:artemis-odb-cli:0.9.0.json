@@ -1,0 +1,358 @@
+[
+  {
+    "coordinatesV1": "net.onedaybeard.artemis:artemis-odb-cli:0.9.0",
+    "coordinatesV2": "net.onedaybeard.artemis:artemis-odb-cli:0.7.2",
+    "caller": "|java+method:///com/artemis/cli/MatrixCommand/execute()|",
+    "called": "|java+method:///com/artemis/model/ComponentDependencyMatrix/process()|",
+    "v1Body": [
+      "|java+constructor:///com/artemis/model/ComponentDependencyMatrix/ComponentDependencyMatrix(java.lang.String,java.io.File,java.io.File)|",
+      "|java+method:///com/artemis/model/ComponentDependencyMatrix/process()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///net/onedaybeard/ecs/model/ComponentDependencyMatrix/ComponentDependencyMatrix(java.lang.String,java.io.File,java.io.File)|",
+      "|java+method:///net/onedaybeard/ecs/model/ComponentDependencyMatrix/process()|"
+    ],
+    "affectedLib": "net.onedaybeard.artemis:artemis-odb-matrix:0.7.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "net.onedaybeard.artemis:artemis-odb-cli:0.7.2",
+    "coordinatesV2": "net.onedaybeard.artemis:artemis-odb-cli:0.9.0",
+    "caller": "|java+method:///com/artemis/cli/OptimizationCommand/execute()|",
+    "called": "|java+method:///com/artemis/ClassUtil/find(java.io.File)|",
+    "v1Body": [
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///com/artemis/cli/OptimizationCommand/getVerbose(java.util.List)|",
+      "|java+method:///com/artemis/ClassUtil/find(java.io.File)|",
+      "|java+method:///com/artemis/cli/OptimizationCommand/getSummary(java.util.List,long)|",
+      "|java+method:///com/artemis/Weaver/rewriteEntitySystems(java.util.List)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.Object)|",
+      "|java+method:///java/lang/System/currentTimeMillis()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/artemis/cli/OptimizationCommand/getSummary(java.util.List,long)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+constructor:///com/artemis/WeaverLog/WeaverLog()|",
+      "|java+method:///com/artemis/WeaverLog/getFormattedLog()|",
+      "|java+method:///com/artemis/ClassUtil/find(java.io.File)|",
+      "|java+method:///com/artemis/Weaver/rewriteEntitySystems(java.util.List,com.artemis.WeaverLog)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.Object)|",
+      "|java+method:///java/lang/System/currentTimeMillis()|"
+    ],
+    "affectedLib": "net.onedaybeard.artemis:artemis-odb-weaver:0.9.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.onedaybeard.artemis:artemis-odb-cli:0.7.2",
+    "coordinatesV2": "net.onedaybeard.artemis:artemis-odb-cli:0.9.0",
+    "caller": "|java+method:///com/artemis/weaver/EsOptimizationTransmuter/process(java.lang.String)|",
+    "called": "|java+method:///com/artemis/weaver/optimizer/ProcessEntitiesInjector/transform()|",
+    "v1Body": [
+      "|java+method:///org/objectweb/asm/ClassReader/accept(org.objectweb.asm.ClassVisitor,int)|",
+      "|java+method:///com/artemis/weaver/optimizer/ProcessEntitiesInjector/transform()|",
+      "|java+constructor:///com/artemis/weaver/optimizer/OptimizingEntitySystemWeaver/OptimizingEntitySystemWeaver(org.objectweb.asm.ClassVisitor,com.artemis.meta.ClassMetadata)|",
+      "|java+method:///java/lang/Exception/printStackTrace()|",
+      "|java+constructor:///com/artemis/weaver/optimizer/ProcessEntitiesInjector/ProcessEntitiesInjector(org.objectweb.asm.ClassReader,com.artemis.meta.ClassMetadata)|",
+      "|java+constructor:///org/objectweb/asm/ClassWriter/ClassWriter(int)|",
+      "|java+method:///com/artemis/ClassUtil/writeClass(org.objectweb.asm.ClassWriter,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/objectweb/asm/ClassReader/accept(org.objectweb.asm.ClassVisitor,int)|",
+      "|java+method:///com/artemis/weaver/optimizer/ProcessEntitiesInjector/transform()|",
+      "|java+constructor:///com/artemis/weaver/optimizer/OptimizingEntitySystemWeaver/OptimizingEntitySystemWeaver(org.objectweb.asm.ClassVisitor,com.artemis.meta.ClassMetadata)|",
+      "|java+method:///java/lang/Exception/printStackTrace()|",
+      "|java+method:///com/artemis/weaver/EsOptimizationTransmuter/process(java.lang.String)|",
+      "|java+constructor:///com/artemis/weaver/optimizer/ProcessEntitiesInjector/ProcessEntitiesInjector(org.objectweb.asm.ClassReader,com.artemis.meta.ClassMetadata)|",
+      "|java+constructor:///org/objectweb/asm/ClassWriter/ClassWriter(int)|",
+      "|java+method:///com/artemis/ClassUtil/writeClass(org.objectweb.asm.ClassWriter,java.lang.String)|"
+    ],
+    "affectedLib": "net.onedaybeard.artemis:artemis-odb-weaver:0.9.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.onedaybeard.artemis:artemis-odb-cli:0.7.2",
+    "coordinatesV2": "net.onedaybeard.artemis:artemis-odb-cli:0.9.0",
+    "caller": "|java+method:///com/artemis/cli/WeaveCommand/execute()|",
+    "called": "|java+method:///com/artemis/Weaver/execute()|",
+    "v1Body": [
+      "|java+method:///com/artemis/cli/WeaveCommand/getSummary(java.util.List,long)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/concurrent/ExecutionException/getCause()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///com/artemis/Weaver/Weaver(java.io.File)|",
+      "|java+method:///com/artemis/Weaver/execute()|",
+      "|java+method:///java/util/concurrent/Future/get()|",
+      "|java+method:///java/lang/Throwable/getMessage()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///com/artemis/cli/WeaveCommand/getVerbose(java.util.List)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.Object)|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///com/artemis/Weaver/enablePooledWeaving(boolean)|",
+      "|java+method:///java/lang/InterruptedException/getMessage()|",
+      "|java+method:///java/util/List/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/artemis/cli/WeaveCommand/getSummary(java.util.List,long)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+constructor:///com/artemis/Weaver/Weaver(java.io.File)|",
+      "|java+method:///com/artemis/Weaver/execute()|",
+      "|java+method:///com/artemis/WeaverLog/getFormattedLog()|",
+      "|java+method:///com/artemis/Weaver/enablePackedWeaving(boolean)|",
+      "|java+method:///com/artemis/Weaver/optimizeEntitySystems(boolean)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.Object)|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///com/artemis/Weaver/enablePooledWeaving(boolean)|"
+    ],
+    "affectedLib": "net.onedaybeard.artemis:artemis-odb-weaver:0.9.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.onedaybeard.artemis:artemis-odb-cli:0.7.2",
+    "coordinatesV2": "net.onedaybeard.artemis:artemis-odb-cli:0.9.0",
+    "caller": "|java+method:///com/artemis/weaver/ComponentAccessTransmuter/process(java.lang.String)|",
+    "called": "|java+method:///com/artemis/weaver/ComponentAccessTransmuter/compileClass(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/artemis/weaver/ComponentAccessTransmuter/compileClass(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/artemis/Weaver/scan(org.objectweb.asm.ClassReader)|",
+      "|java+method:///com/artemis/weaver/ComponentAccessTransmuter/compileClass(java.lang.String)|",
+      "|java+method:///com/artemis/weaver/ComponentAccessTransmuter/process(java.lang.String)|"
+    ],
+    "affectedLib": "net.onedaybeard.artemis:artemis-odb-weaver:0.9.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.onedaybeard.artemis:artemis-odb-cli:0.7.2",
+    "coordinatesV2": "net.onedaybeard.artemis:artemis-odb-cli:0.9.0",
+    "caller": "|java+method:///com/artemis/weaver/ComponentTypeTransmuter/process(java.lang.String)|",
+    "called": "|java+constructor:///com/artemis/weaver/CommonClassWeaver/CommonClassWeaver(org.objectweb.asm.ClassVisitor,com.artemis.meta.ClassMetadata)|",
+    "v1Body": [
+      "|java+constructor:///com/artemis/weaver/packed/PackedStubs/PackedStubs(org.objectweb.asm.ClassReader,com.artemis.meta.ClassMetadata)|",
+      "|java+method:///com/artemis/weaver/packed/PackedStubs/transform()|",
+      "|java+method:///com/artemis/weaver/ComponentTypeTransmuter/validateOnlyPrimitives(java.util.List)|",
+      "|java+method:///com/artemis/weaver/AccessorGenerator/transform()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+constructor:///com/artemis/weaver/CommonClassWeaver/CommonClassWeaver(org.objectweb.asm.ClassVisitor,com.artemis.meta.ClassMetadata)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/artemis/weaver/ComponentTypeTransmuter/injectMethodStub(java.lang.String,java.lang.String)|",
+      "|java+method:///org/objectweb/asm/ClassReader/accept(org.objectweb.asm.ClassVisitor,int)|",
+      "|java+constructor:///org/objectweb/asm/ClassReader/ClassReader(byte%5B%5D)|",
+      "|java+method:///com/artemis/meta/ClassMetadata$WeaverType/ordinal()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///com/artemis/weaver/AccessorGenerator/AccessorGenerator(org.objectweb.asm.ClassReader,com.artemis.meta.ClassMetadata)|",
+      "|java+constructor:///com/artemis/weaver/packed/PackedComponentWeaver/PackedComponentWeaver(org.objectweb.asm.ClassVisitor,com.artemis.meta.ClassMetadata)|",
+      "|java+method:///java/lang/Exception/printStackTrace()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/objectweb/asm/ClassWriter/ClassWriter(int)|",
+      "|java+method:///com/artemis/ClassUtil/writeClass(org.objectweb.asm.ClassWriter,java.lang.String)|",
+      "|java+method:///org/objectweb/asm/ClassWriter/toByteArray()|",
+      "|java+constructor:///com/artemis/weaver/pooled/PooledComponentWeaver/PooledComponentWeaver(org.objectweb.asm.ClassVisitor,com.artemis.meta.ClassMetadata)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/artemis/weaver/packed/PackedStubs/PackedStubs(org.objectweb.asm.ClassReader,com.artemis.meta.ClassMetadata)|",
+      "|java+method:///com/artemis/weaver/ComponentTypeTransmuter/validateOnlyPrimitives(java.util.List)|",
+      "|java+method:///com/artemis/weaver/AccessorGenerator/transform()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+constructor:///com/artemis/weaver/CommonClassWeaver/CommonClassWeaver(org.objectweb.asm.ClassVisitor,com.artemis.meta.ClassMetadata)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/artemis/weaver/ComponentTypeTransmuter/injectMethodStub(java.lang.String,java.lang.String)|",
+      "|java+method:///org/objectweb/asm/ClassReader/accept(org.objectweb.asm.ClassVisitor,int)|",
+      "|java+method:///com/artemis/weaver/ComponentTypeTransmuter/process(java.lang.String)|",
+      "|java+method:///com/artemis/weaver/packed/PackedStubs/transform()|",
+      "|java+constructor:///org/objectweb/asm/ClassReader/ClassReader(byte%5B%5D)|",
+      "|java+method:///com/artemis/meta/ClassMetadata$WeaverType/ordinal()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///com/artemis/weaver/AccessorGenerator/AccessorGenerator(org.objectweb.asm.ClassReader,com.artemis.meta.ClassMetadata)|",
+      "|java+constructor:///com/artemis/weaver/packed/PackedComponentWeaver/PackedComponentWeaver(org.objectweb.asm.ClassVisitor,com.artemis.meta.ClassMetadata)|",
+      "|java+method:///java/lang/Exception/printStackTrace()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/objectweb/asm/ClassWriter/ClassWriter(int)|",
+      "|java+method:///com/artemis/ClassUtil/writeClass(org.objectweb.asm.ClassWriter,java.lang.String)|",
+      "|java+method:///org/objectweb/asm/ClassWriter/toByteArray()|",
+      "|java+constructor:///com/artemis/weaver/pooled/PooledComponentWeaver/PooledComponentWeaver(org.objectweb.asm.ClassVisitor,com.artemis.meta.ClassMetadata)|"
+    ],
+    "affectedLib": "net.onedaybeard.artemis:artemis-odb-weaver:0.9.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.onedaybeard.artemis:artemis-odb-cli:0.7.2",
+    "coordinatesV2": "net.onedaybeard.artemis:artemis-odb-cli:0.9.0",
+    "caller": "|java+method:///com/artemis/meta/ClassMetadataUtil/instanceFields(com.artemis.meta.ClassMetadata)|",
+    "called": "|java+constructor:///com/artemis/meta/ClassMetadataUtil$PrimitiveSizeComparator/ClassMetadataUtil$PrimitiveSizeComparator(com.artemis.meta.ClassMetadataUtil$1)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///com/artemis/meta/ClassMetadataUtil$PrimitiveSizeComparator/ClassMetadataUtil$PrimitiveSizeComparator(com.artemis.meta.ClassMetadataUtil$1)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/artemis/meta/FieldDescriptor/getAccess()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///com/artemis/meta/FieldDescriptor/getName()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Collections/sort(java.util.List,java.util.Comparator)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///com/artemis/meta/ClassMetadataUtil$PrimitiveSizeComparator/ClassMetadataUtil$PrimitiveSizeComparator(com.artemis.meta.ClassMetadataUtil$1)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Collections/sort(java.util.List,java.util.Comparator)|"
+    ],
+    "affectedLib": "net.onedaybeard.artemis:artemis-odb-weaver:0.9.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.onedaybeard.artemis:artemis-odb-cli:0.7.2",
+    "coordinatesV2": "net.onedaybeard.artemis:artemis-odb-cli:0.9.0",
+    "caller": "|java+method:///com/artemis/weaver/ProfilerTransmuter/process(java.lang.String)|",
+    "called": "|java+constructor:///com/artemis/weaver/profile/ProfileVisitor/ProfileVisitor(org.objectweb.asm.ClassVisitor,com.artemis.meta.ClassMetadata)|",
+    "v1Body": [
+      "|java+method:///org/objectweb/asm/ClassReader/accept(org.objectweb.asm.ClassVisitor,int)|",
+      "|java+method:///com/artemis/weaver/ProfilerTransmuter/injectProfilerStubs(com.artemis.meta.ClassMetadata)|",
+      "|java+constructor:///com/artemis/weaver/ProfileAnnotationRemoverWeaver/ProfileAnnotationRemoverWeaver(org.objectweb.asm.ClassVisitor)|",
+      "|java+method:///com/artemis/ClassUtil/writeClass(org.objectweb.asm.ClassWriter,java.lang.String)|",
+      "|java+constructor:///com/artemis/weaver/profile/ProfileVisitor/ProfileVisitor(org.objectweb.asm.ClassVisitor,com.artemis.meta.ClassMetadata)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/objectweb/asm/ClassReader/accept(org.objectweb.asm.ClassVisitor,int)|",
+      "|java+method:///com/artemis/weaver/ProfilerTransmuter/injectProfilerStubs(com.artemis.meta.ClassMetadata)|",
+      "|java+method:///com/artemis/weaver/ProfilerTransmuter/process(java.lang.String)|",
+      "|java+constructor:///com/artemis/weaver/ProfileAnnotationRemoverWeaver/ProfileAnnotationRemoverWeaver(org.objectweb.asm.ClassVisitor)|",
+      "|java+method:///com/artemis/ClassUtil/writeClass(org.objectweb.asm.ClassWriter,java.lang.String)|",
+      "|java+constructor:///com/artemis/weaver/profile/ProfileVisitor/ProfileVisitor(org.objectweb.asm.ClassVisitor,com.artemis.meta.ClassMetadata)|"
+    ],
+    "affectedLib": "net.onedaybeard.artemis:artemis-odb-weaver:0.9.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.onedaybeard.artemis:artemis-odb-cli:0.7.2",
+    "coordinatesV2": "net.onedaybeard.artemis:artemis-odb-cli:0.9.0",
+    "caller": "|java+method:///com/artemis/weaver/optimizer/ProcessEntitiesInjector/injectProcessEntities()|",
+    "called": "|java+method:///com/artemis/weaver/optimizer/ProcessEntitiesInjector/invocation(com.artemis.meta.ClassMetadata$OptimizationType)|",
+    "v1Body": [
+      "|java+method:///org/objectweb/asm/MethodVisitor/visitFrame(int,int,java.lang.Object%5B%5D,int,java.lang.Object%5B%5D)|",
+      "|java+method:///org/objectweb/asm/MethodVisitor/visitIincInsn(int,int)|",
+      "|java+method:///com/artemis/weaver/optimizer/ProcessEntitiesInjector/invocation(com.artemis.meta.ClassMetadata$OptimizationType)|",
+      "|java+method:///org/objectweb/asm/MethodVisitor/visitCode()|",
+      "|java+method:///org/objectweb/asm/Type/getInternalName()|",
+      "|java+constructor:///org/objectweb/asm/Label/Label()|",
+      "|java+method:///org/objectweb/asm/MethodVisitor/visitVarInsn(int,int)|",
+      "|java+method:///org/objectweb/asm/MethodVisitor/visitTypeInsn(int,java.lang.String)|",
+      "|java+method:///org/objectweb/asm/Type/toString()|",
+      "|java+method:///org/objectweb/asm/MethodVisitor/visitEnd()|",
+      "|java+method:///org/objectweb/asm/MethodVisitor/visitLocalVariable(java.lang.String,java.lang.String,java.lang.String,org.objectweb.asm.Label,org.objectweb.asm.Label,int)|",
+      "|java+method:///org/objectweb/asm/MethodVisitor/visitLabel(org.objectweb.asm.Label)|",
+      "|java+method:///org/objectweb/asm/ClassWriter/visitMethod(int,java.lang.String,java.lang.String,java.lang.String,java.lang.String%5B%5D)|",
+      "|java+method:///org/objectweb/asm/MethodVisitor/visitMethodInsn(int,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///org/objectweb/asm/MethodVisitor/visitInsn(int)|",
+      "|java+method:///org/objectweb/asm/MethodVisitor/visitJumpInsn(int,org.objectweb.asm.Label)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/objectweb/asm/MethodVisitor/visitFrame(int,int,java.lang.Object%5B%5D,int,java.lang.Object%5B%5D)|",
+      "|java+method:///org/objectweb/asm/MethodVisitor/visitFieldInsn(int,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///org/objectweb/asm/Type/toString()|",
+      "|java+method:///org/objectweb/asm/MethodVisitor/visitIincInsn(int,int)|",
+      "|java+method:///com/artemis/weaver/optimizer/ProcessEntitiesInjector/invocation(com.artemis.meta.ClassMetadata$OptimizationType)|",
+      "|java+method:///org/objectweb/asm/MethodVisitor/visitCode()|",
+      "|java+constructor:///org/objectweb/asm/Label/Label()|",
+      "|java+method:///org/objectweb/asm/MethodVisitor/visitVarInsn(int,int)|",
+      "|java+method:///org/objectweb/asm/MethodVisitor/visitEnd()|",
+      "|java+method:///org/objectweb/asm/MethodVisitor/visitLocalVariable(java.lang.String,java.lang.String,java.lang.String,org.objectweb.asm.Label,org.objectweb.asm.Label,int)|",
+      "|java+method:///org/objectweb/asm/MethodVisitor/visitLabel(org.objectweb.asm.Label)|",
+      "|java+method:///org/objectweb/asm/ClassWriter/visitMethod(int,java.lang.String,java.lang.String,java.lang.String,java.lang.String%5B%5D)|",
+      "|java+method:///org/objectweb/asm/MethodVisitor/visitMethodInsn(int,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///org/objectweb/asm/MethodVisitor/visitInsn(int)|",
+      "|java+method:///org/objectweb/asm/MethodVisitor/visitJumpInsn(int,org.objectweb.asm.Label)|",
+      "|java+method:///org/objectweb/asm/MethodVisitor/visitLineNumber(int,org.objectweb.asm.Label)|",
+      "|java+method:///org/objectweb/asm/Type/getInternalName()|"
+    ],
+    "affectedLib": "net.onedaybeard.artemis:artemis-odb-weaver:0.9.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.onedaybeard.artemis:artemis-odb-cli:0.7.2",
+    "coordinatesV2": "net.onedaybeard.artemis:artemis-odb-cli:0.9.0",
+    "caller": "|java+method:///com/artemis/Weaver/execute()|",
+    "called": "|java+method:///com/artemis/ClassUtil/find(java.io.File)|",
+    "v1Body": [
+      "|java+method:///com/artemis/Weaver/rewriteComponents(java.util.List,java.util.concurrent.ExecutorService)|",
+      "|java+method:///com/artemis/Weaver/newThreadPool()|",
+      "|java+method:///com/artemis/Weaver/rewriteEntitySystems(java.util.List)|",
+      "|java+method:///com/artemis/Weaver/rewriteProfilers(java.util.List)|",
+      "|java+method:///com/artemis/Weaver/rewriteFieldAccess(java.util.List,java.util.List)|",
+      "|java+method:///com/artemis/ClassUtil/find(java.io.File)|",
+      "|java+method:///com/artemis/meta/ClassMetadataUtil/packedFieldAccess(java.util.Collection)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/artemis/Weaver/rewriteComponents(java.util.List,com.artemis.WeaverLog)|",
+      "|java+method:///com/artemis/Weaver/sort(com.artemis.WeaverLog)|",
+      "|java+method:///com/artemis/Weaver/rewriteEntitySystems(java.util.List,com.artemis.WeaverLog)|",
+      "|java+constructor:///com/artemis/WeaverLog/WeaverLog()|",
+      "|java+method:///com/artemis/ClassUtil/find(java.io.File)|",
+      "|java+method:///com/artemis/meta/ClassMetadataUtil/packedFieldAccess(java.util.Collection)|",
+      "|java+method:///com/artemis/Weaver/rewriteProfilers(java.util.List)|",
+      "|java+method:///com/artemis/Weaver/rewriteFieldAccess(java.util.List,java.util.List,com.artemis.WeaverLog)|"
+    ],
+    "affectedLib": "net.onedaybeard.artemis:artemis-odb-weaver:0.9.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.onedaybeard.artemis:artemis-odb-cli:0.7.2",
+    "coordinatesV2": "net.onedaybeard.artemis:artemis-odb-cli:0.9.0",
+    "caller": "|java+method:///com/artemis/weaver/pooled/ResetMethodVisitor/resetField(com.artemis.meta.FieldDescriptor)|",
+    "called": "|java+method:///com/artemis/weaver/pooled/ResetMethodVisitor/constInstructionFor(com.artemis.meta.FieldDescriptor)|",
+    "v1Body": [
+      "|java+method:///org/objectweb/asm/MethodVisitor/visitFieldInsn(int,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///org/objectweb/asm/MethodVisitor/visitVarInsn(int,int)|",
+      "|java+method:///org/objectweb/asm/MethodVisitor/visitInsn(int)|",
+      "|java+method:///com/artemis/meta/FieldDescriptor/getName()|",
+      "|java+method:///com/artemis/meta/FieldDescriptor/getDesc()|",
+      "|java+method:///org/objectweb/asm/Type/getInternalName()|",
+      "|java+method:///com/artemis/weaver/pooled/ResetMethodVisitor/constInstructionFor(com.artemis.meta.FieldDescriptor)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/objectweb/asm/MethodVisitor/visitFieldInsn(int,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///org/objectweb/asm/MethodVisitor/visitVarInsn(int,int)|",
+      "|java+method:///org/objectweb/asm/MethodVisitor/visitInsn(int)|",
+      "|java+method:///org/objectweb/asm/Type/getInternalName()|",
+      "|java+method:///com/artemis/weaver/pooled/ResetMethodVisitor/constInstructionFor(com.artemis.meta.FieldDescriptor)|"
+    ],
+    "affectedLib": "net.onedaybeard.artemis:artemis-odb-weaver:0.9.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.onedaybeard.artemis:artemis-odb-cli:0.7.2",
+    "coordinatesV2": "net.onedaybeard.artemis:artemis-odb-cli:0.9.0",
+    "caller": "|java+method:///com/artemis/weaver/ComponentAccessTransmuter/compileClass(java.lang.String)|",
+    "called": "|java+constructor:///com/artemis/weaver/packed/ExternalFieldClassTransformer/ExternalFieldClassTransformer(org.objectweb.asm.ClassVisitor,java.util.List)|",
+    "v1Body": [
+      "|java+constructor:///com/artemis/weaver/packed/ExternalFieldClassTransformer/ExternalFieldClassTransformer(org.objectweb.asm.ClassVisitor,java.util.List)|",
+      "|java+method:///org/objectweb/asm/tree/ClassNode/accept(org.objectweb.asm.ClassVisitor)|",
+      "|java+method:///java/lang/Exception/printStackTrace()|",
+      "|java+method:///com/artemis/weaver/packed/ExternalFieldClassTransformer/transform(org.objectweb.asm.ClassReader)|",
+      "|java+method:///com/artemis/weaver/packed/ExternalFieldClassTransformer/isNeedsWriteToDisk()|",
+      "|java+constructor:///org/objectweb/asm/ClassWriter/ClassWriter(int)|",
+      "|java+method:///com/artemis/ClassUtil/writeClass(org.objectweb.asm.ClassWriter,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/artemis/weaver/packed/ExternalFieldClassTransformer/ExternalFieldClassTransformer(org.objectweb.asm.ClassVisitor,java.util.List)|",
+      "|java+method:///org/objectweb/asm/tree/ClassNode/accept(org.objectweb.asm.ClassVisitor)|",
+      "|java+method:///java/lang/Exception/printStackTrace()|",
+      "|java+method:///com/artemis/weaver/packed/ExternalFieldClassTransformer/isComponentAccessChanged()|",
+      "|java+method:///com/artemis/weaver/packed/ExternalFieldClassTransformer/transform(org.objectweb.asm.ClassReader)|",
+      "|java+constructor:///org/objectweb/asm/ClassWriter/ClassWriter(int)|",
+      "|java+method:///com/artemis/ClassUtil/writeClass(org.objectweb.asm.ClassWriter,java.lang.String)|"
+    ],
+    "affectedLib": "net.onedaybeard.artemis:artemis-odb-weaver:0.9.0",
+    "change": "UPDATED"
+  }
+]

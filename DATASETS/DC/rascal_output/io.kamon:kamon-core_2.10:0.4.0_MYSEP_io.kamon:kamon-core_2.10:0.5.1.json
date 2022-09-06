@@ -1,0 +1,126 @@
+[
+  {
+    "coordinatesV1": "io.kamon:kamon-core_2.10:0.4.0",
+    "coordinatesV2": "io.kamon:kamon-core_2.10:0.5.1",
+    "caller": "|java+method:///kamon/Kamon$/ifStarted(scala.Function1)|",
+    "called": "|java+method:///com/typesafe/config/ConfigFactory/load()|",
+    "v1Body": [
+      "|java+method:///kamon/Kamon$/_coreComponents()|",
+      "|java+method:///scala/Option/isEmpty()|",
+      "|java+constructor:///scala/Some/Some(java.lang.Object)|",
+      "|java+method:///scala/sys/package$/error(java.lang.String)|",
+      "|java+method:///scala/Function1/apply(java.lang.Object)|",
+      "|java+method:///scala/Option/get()|"
+    ],
+    "v2Body": [
+      "|java+method:///kamon/Kamon$/start(com.typesafe.config.Config)|",
+      "|java+method:///scala/Option/isEmpty()|",
+      "|java+method:///kamon/Kamon$/kamon$Kamon$$_coreComponents()|",
+      "|java+constructor:///scala/Some/Some(java.lang.Object)|",
+      "|java+method:///scala/sys/package$/error(java.lang.String)|",
+      "|java+method:///scala/Function1/apply(java.lang.Object)|",
+      "|java+method:///com/typesafe/config/ConfigFactory/load()|",
+      "|java+method:///kamon/Kamon$/kamon$Kamon$$shouldAutoStart()|",
+      "|java+method:///scala/Option/get()|"
+    ],
+    "affectedLib": "com.typesafe:config:1.2.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.kamon:kamon-core_2.10:0.4.0",
+    "coordinatesV2": "io.kamon:kamon-core_2.10:0.5.1",
+    "caller": "|java+method:///kamon/Kamon$/start(com.typesafe.config.Config)|",
+    "called": "|java+method:///akka/actor/ActorSystem$/apply(java.lang.String,com.typesafe.config.Config)|",
+    "v1Body": [
+      "|java+method:///kamon/Kamon$/_coreComponents()|",
+      "|java+method:///akka/actor/ActorSystem$/apply(java.lang.String,com.typesafe.config.Config)|",
+      "|java+method:///kamon/Kamon$/kamon$Kamon$$_system()|",
+      "|java+method:///akka/actor/ActorSystem/registerExtension(akka.actor.ExtensionId)|",
+      "|java+method:///scala/sys/package$/error(java.lang.String)|",
+      "|java+method:///kamon/metric/MetricsModuleImpl/start(akka.actor.ActorSystem)|",
+      "|java+method:///kamon/Kamon$/_coreComponents_$eq(scala.Option)|",
+      "|java+method:///kamon/Kamon$/kamon$Kamon$$_system_$eq(akka.actor.ActorSystem)|",
+      "|java+method:///kamon/metric/MetricsModuleImpl$/apply(com.typesafe.config.Config)|",
+      "|java+constructor:///kamon/Kamon$KamonCoreComponents/Kamon$KamonCoreComponents(kamon.metric.MetricsModule,kamon.trace.TracerModule)|",
+      "|java+method:///kamon/trace/TracerModuleImpl$/apply(kamon.metric.MetricsModule,com.typesafe.config.Config)|",
+      "|java+method:///kamon/trace/TracerModuleImpl/start(akka.actor.ActorSystem)|",
+      "|java+method:///scala/Option/isEmpty()|",
+      "|java+constructor:///scala/Some/Some(java.lang.Object)|",
+      "|java+method:///kamon/Kamon$/resolveInternalConfig$1(com.typesafe.config.Config)|"
+    ],
+    "v2Body": [
+      "|java+method:///kamon/Kamon$/kamon$Kamon$$_coreComponents_$eq(scala.Option)|",
+      "|java+method:///akka/actor/ActorSystem$/apply(java.lang.String,com.typesafe.config.Config)|",
+      "|java+method:///kamon/Kamon$/kamon$Kamon$$_system()|",
+      "|java+method:///akka/actor/ActorSystem/registerExtension(akka.actor.ExtensionId)|",
+      "|java+method:///kamon/Kamon$/kamon$Kamon$$_coreComponents()|",
+      "|java+method:///kamon/Kamon$/shouldWarnOnDuplicateStart()|",
+      "|java+method:///akka/event/LoggingAdapter/warning(java.lang.String)|",
+      "|java+method:///kamon/metric/MetricsModuleImpl/start(akka.actor.ActorSystem)|",
+      "|java+method:///akka/event/LogSource$/fromString()|",
+      "|java+method:///akka/event/Logging$/apply(akka.actor.ActorSystem,java.lang.Object,akka.event.LogSource)|",
+      "|java+method:///kamon/Kamon$/kamon$Kamon$$_system_$eq(akka.actor.ActorSystem)|",
+      "|java+method:///kamon/metric/MetricsModuleImpl$/apply(com.typesafe.config.Config)|",
+      "|java+constructor:///kamon/Kamon$KamonCoreComponents/Kamon$KamonCoreComponents(kamon.metric.MetricsModule,kamon.trace.TracerModule)|",
+      "|java+method:///kamon/trace/TracerModuleImpl$/apply(kamon.metric.MetricsModule,com.typesafe.config.Config)|",
+      "|java+method:///kamon/trace/TracerModuleImpl/start(akka.actor.ActorSystem)|",
+      "|java+method:///scala/Option/isEmpty()|",
+      "|java+constructor:///scala/Some/Some(java.lang.Object)|",
+      "|java+method:///kamon/Kamon$/resolveInternalConfig$1(com.typesafe.config.Config)|"
+    ],
+    "affectedLib": "com.typesafe.akka:akka-actor_2.10:2.3.10",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.kamon:kamon-core_2.10:0.4.0",
+    "coordinatesV2": "io.kamon:kamon-core_2.10:0.5.1",
+    "caller": "|java+constructor:///kamon/trace/TracerModuleImpl/TracerModuleImpl(kamon.metric.MetricsModule,com.typesafe.config.Config)|",
+    "called": "|java+method:///akka/actor/ReflectiveDynamicAccess/createInstanceFor(java.lang.String,scala.collection.immutable.Seq,scala.reflect.ClassTag)|",
+    "v1Body": [
+      "|java+method:///scala/util/Try/getOrElse(scala.Function0)|",
+      "|java+method:///kamon/trace/TraceSettings$/apply(com.typesafe.config.Config)|",
+      "|java+constructor:///kamon/trace/TracerModuleImpl$$anonfun$1/TracerModuleImpl$$anonfun$1(kamon.trace.TracerModuleImpl)|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicLong/AtomicLong()|",
+      "|java+constructor:///kamon/trace/TracerModuleImpl$$anonfun$2/TracerModuleImpl$$anonfun$2(kamon.trace.TracerModuleImpl)|",
+      "|java+method:///scala/util/Try$/apply(scala.Function0)|",
+      "|java+constructor:///kamon/util/LazyActorRef/LazyActorRef()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/reflect/ClassTag$/apply(java.lang.Class)|",
+      "|java+method:///kamon/trace/TracerModuleImpl/_settings()|",
+      "|java+method:///akka/actor/ReflectiveDynamicAccess/createInstanceFor(java.lang.String,scala.collection.immutable.Seq,scala.reflect.ClassTag)|",
+      "|java+method:///kamon/trace/TracerModuleImpl/_dynamic()|",
+      "|java+method:///scala/util/Try/get()|",
+      "|java+method:///kamon/trace/TraceSettings/tokenGeneratorFQN()|",
+      "|java+constructor:///kamon/util/LazyActorRef/LazyActorRef()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///kamon/trace/TraceSettings$/apply(com.typesafe.config.Config)|",
+      "|java+constructor:///akka/actor/ReflectiveDynamicAccess/ReflectiveDynamicAccess(java.lang.ClassLoader)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/Class/getClassLoader()|"
+    ],
+    "affectedLib": "com.typesafe.akka:akka-actor_2.10:2.3.10",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.kamon:kamon-core_2.10:0.4.0",
+    "coordinatesV2": "io.kamon:kamon-core_2.10:0.5.1",
+    "caller": "|java+method:///kamon/trace/TracerModuleImpl/start(akka.actor.ActorSystem)|",
+    "called": "|java+method:///akka/event/Logging$/apply(akka.actor.ActorSystem,java.lang.Object,akka.event.LogSource)|",
+    "v1Body": [
+      "|java+method:///kamon/trace/TracerModuleImpl/_system_$eq(akka.actor.ActorSystem)|",
+      "|java+method:///kamon/trace/TracerModuleImpl/_start()|"
+    ],
+    "v2Body": [
+      "|java+method:///kamon/trace/TracerModuleImpl/_system_$eq(akka.actor.ActorSystem)|",
+      "|java+method:///kamon/trace/TracerModuleImpl/_logger_$eq(akka.event.LoggingAdapter)|",
+      "|java+method:///kamon/trace/TracerModuleImpl/_start()|",
+      "|java+method:///kamon/trace/TracerModuleImpl/_system()|",
+      "|java+method:///akka/event/LogSource$/fromString()|",
+      "|java+method:///akka/event/Logging$/apply(akka.actor.ActorSystem,java.lang.Object,akka.event.LogSource)|"
+    ],
+    "affectedLib": "com.typesafe.akka:akka-actor_2.10:2.3.10",
+    "change": "UPDATED"
+  }
+]

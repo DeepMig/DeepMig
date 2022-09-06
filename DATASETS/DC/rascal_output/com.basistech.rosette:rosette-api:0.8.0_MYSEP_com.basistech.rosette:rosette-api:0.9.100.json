@@ -1,0 +1,534 @@
+[
+  {
+    "coordinatesV1": "com.basistech.rosette:rosette-api:0.8.0",
+    "coordinatesV2": "com.basistech.rosette:rosette-api:0.9.100",
+    "caller": "|java+method:///com/basistech/rosette/api/RosetteAPI/sendGetRequest(java.lang.String,java.lang.Class)|",
+    "called": "|java+constructor:///org/apache/http/client/methods/HttpGet/HttpGet(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/net/HttpURLConnection/setRequestMethod(java.lang.String)|",
+      "|java+method:///java/lang/Class/cast(java.lang.Object)|",
+      "|java+method:///com/basistech/rosette/api/RosetteAPI/openHttpURLConnection(java.lang.String)|",
+      "|java+method:///com/basistech/rosette/api/RosetteAPI/getResponse(java.net.HttpURLConnection,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/http/impl/client/CloseableHttpClient/execute(org.apache.http.client.methods.HttpUriRequest)|",
+      "|java+method:///com/basistech/rosette/api/RosetteAPI/getResponse(org.apache.http.HttpResponse,java.lang.Class)|",
+      "|java+constructor:///org/apache/http/client/methods/HttpGet/HttpGet(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.basistech.rosette:rosette-api:0.8.0",
+    "coordinatesV2": "com.basistech.rosette:rosette-api:0.9.100",
+    "caller": "|java+constructor:///com/basistech/rosette/api/RosetteAPI/RosetteAPI(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/apache/http/impl/client/HttpClients/createDefault()|",
+    "v1Body": [
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///com/basistech/rosette/apimodel/jackson/ApiModelMixinModule/setupObjectMapper(com.fasterxml.jackson.databind.ObjectMapper)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/lang/String/endsWith(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/basistech/rosette/api/RosetteAPI/checkVersionCompatibility()|",
+      "|java+method:///com/basistech/rosette/apimodel/jackson/ApiModelMixinModule/setupObjectMapper(com.fasterxml.jackson.databind.ObjectMapper)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/lang/String/endsWith(java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///org/apache/http/impl/client/HttpClients/createDefault()|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.basistech.rosette:rosette-api:0.8.0",
+    "coordinatesV2": "com.basistech.rosette:rosette-api:0.9.100",
+    "caller": "|java+method:///com/basistech/rosette/api/RosetteAPI/sendPostRequest(java.lang.Object,java.lang.String,java.lang.Class)|",
+    "called": "|java+method:///org/apache/http/impl/client/CloseableHttpClient/execute(org.apache.http.client.methods.HttpUriRequest)|",
+    "v1Body": [
+      "|java+method:///java/io/OutputStream/close()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValue(java.io.OutputStream,java.lang.Object)|",
+      "|java+method:///java/net/HttpURLConnection/getOutputStream()|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+method:///com/basistech/rosette/apimodel/Response/setRequestId(java.lang.String)|",
+      "|java+method:///java/net/HttpURLConnection/setRequestMethod(java.lang.String)|",
+      "|java+method:///java/lang/Class/cast(java.lang.Object)|",
+      "|java+method:///java/net/HttpURLConnection/getHeaderField(java.lang.String)|",
+      "|java+method:///com/basistech/rosette/api/RosetteAPI/openHttpURLConnection(java.lang.String)|",
+      "|java+method:///com/basistech/rosette/api/RosetteAPI/getResponse(java.net.HttpURLConnection,java.lang.Class)|",
+      "|java+method:///com/basistech/rosette/api/RosetteAPIException/getHttpStatusCode()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/apache/http/client/methods/CloseableHttpResponse/getFirstHeader(java.lang.String)|",
+      "|java+method:///com/basistech/rosette/apimodel/Request/getRawContent()|",
+      "|java+method:///com/basistech/rosette/api/RosetteAPI/setupPlainRequest(java.lang.Object,com.fasterxml.jackson.databind.ObjectWriter,org.apache.http.client.methods.HttpPost)|",
+      "|java+method:///org/apache/http/client/methods/HttpPost/setHeader(java.lang.String,java.lang.String)|",
+      "|java+method:///com/basistech/rosette/api/RosetteAPI/setupMultipartRequest(com.basistech.rosette.apimodel.Request,com.fasterxml.jackson.databind.ObjectWriter,org.apache.http.client.methods.HttpPost)|",
+      "|java+method:///org/apache/http/impl/client/CloseableHttpClient/execute(org.apache.http.client.methods.HttpUriRequest)|",
+      "|java+method:///com/basistech/rosette/api/RosetteAPI/getResponse(org.apache.http.HttpResponse,java.lang.Class)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/apache/http/client/methods/HttpPost/HttpPost(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectWriter/withView(java.lang.Class)|",
+      "|java+method:///com/basistech/rosette/api/RosetteAPIException/getHttpStatusCode()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/http/Header/getValue()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectWriter/without(com.fasterxml.jackson.core.JsonGenerator$Feature)|",
+      "|java+method:///org/apache/http/client/methods/CloseableHttpResponse/close()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writer()|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.basistech.rosette:rosette-api:0.8.0",
+    "coordinatesV2": "com.basistech.rosette:rosette-api:0.9.100",
+    "caller": "|java+method:///com/basistech/rosette/api/RosetteAPIException/toString()|",
+    "called": "|java+method:///com/google/common/base/Objects$ToStringHelper/toString()|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Objects/toStringHelper(java.lang.Object)|",
+      "|java+method:///com/google/common/base/Objects$ToStringHelper/toString()|",
+      "|java+method:///com/google/common/base/Objects$ToStringHelper/add(java.lang.String,int)|",
+      "|java+method:///com/google/common/base/Objects$ToStringHelper/add(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:16.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.basistech.rosette:rosette-api:0.8.0",
+    "coordinatesV2": "com.basistech.rosette:rosette-api:0.9.100",
+    "caller": "|java+constructor:///com/basistech/rosette/api/RosetteAPI/RosetteAPI(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///com/basistech/rosette/apimodel/jackson/ApiModelMixinModule/setupObjectMapper(com.fasterxml.jackson.databind.ObjectMapper)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///com/basistech/rosette/apimodel/jackson/ApiModelMixinModule/setupObjectMapper(com.fasterxml.jackson.databind.ObjectMapper)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/lang/String/endsWith(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/basistech/rosette/api/RosetteAPI/checkVersionCompatibility()|",
+      "|java+method:///com/basistech/rosette/apimodel/jackson/ApiModelMixinModule/setupObjectMapper(com.fasterxml.jackson.databind.ObjectMapper)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/lang/String/endsWith(java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///org/apache/http/impl/client/HttpClients/createDefault()|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|"
+    ],
+    "affectedLib": "com.basistech.rosette:rosette-api-json:0.9.100",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.basistech.rosette:rosette-api:0.8.0",
+    "coordinatesV2": "com.basistech.rosette:rosette-api:0.9.100",
+    "caller": "|java+method:///com/basistech/rosette/api/RosetteAPI/getSentences(java.net.URL,com.basistech.util.LanguageCode)|",
+    "called": "|java+method:///com/basistech/rosette/apimodel/SentencesRequest$Builder/build()|",
+    "v1Body": [
+      "|java+method:///com/basistech/rosette/api/RosetteAPI/sendPostRequest(java.lang.Object,java.lang.String,java.lang.Class)|",
+      "|java+method:///java/net/URL/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///com/basistech/rosette/apimodel/MorphologyRequest/MorphologyRequest(com.basistech.util.LanguageCode,java.lang.String,java.lang.String,java.lang.String,com.basistech.rosette.apimodel.InputUnit,com.basistech.rosette.apimodel.MorphologyOptions)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/net/URL/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///com/basistech/rosette/apimodel/SentencesRequest$Builder/SentencesRequest$Builder()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/basistech/rosette/api/RosetteAPI/sendPostRequest(java.lang.Object,java.lang.String,java.lang.Class)|",
+      "|java+method:///com/basistech/rosette/apimodel/SentencesRequest$Builder/contentUri(java.lang.String)|",
+      "|java+method:///com/basistech/rosette/apimodel/SentencesRequest$Builder/language(com.basistech.util.LanguageCode)|",
+      "|java+method:///com/basistech/rosette/apimodel/SentencesRequest$Builder/build()|"
+    ],
+    "affectedLib": "com.basistech.rosette:rosette-api-model:0.9.100",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.basistech.rosette:rosette-api:0.8.0",
+    "coordinatesV2": "com.basistech.rosette:rosette-api:0.9.100",
+    "caller": "|java+method:///com/basistech/rosette/api/RosetteAPI/getCategories(java.net.URL,com.basistech.util.LanguageCode,com.basistech.rosette.apimodel.CategoriesOptions)|",
+    "called": "|java+method:///com/basistech/rosette/apimodel/CategoriesRequest$Builder/build()|",
+    "v1Body": [
+      "|java+method:///com/basistech/rosette/api/RosetteAPI/sendPostRequest(java.lang.Object,java.lang.String,java.lang.Class)|",
+      "|java+method:///java/net/URL/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///com/basistech/rosette/apimodel/CategoriesRequest/CategoriesRequest(com.basistech.util.LanguageCode,java.lang.String,java.lang.String,java.lang.String,com.basistech.rosette.apimodel.InputUnit,com.basistech.rosette.apimodel.CategoriesOptions)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/basistech/rosette/apimodel/CategoriesRequest$Builder/options(java.lang.Object)|",
+      "|java+method:///com/basistech/rosette/api/RosetteAPI/sendPostRequest(java.lang.Object,java.lang.String,java.lang.Class)|",
+      "|java+method:///java/net/URL/toString()|",
+      "|java+method:///com/basistech/rosette/apimodel/CategoriesRequest$Builder/contentUri(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/basistech/rosette/apimodel/CategoriesRequest$Builder/build()|",
+      "|java+method:///com/basistech/rosette/apimodel/CategoriesRequest$Builder/language(com.basistech.util.LanguageCode)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///com/basistech/rosette/apimodel/CategoriesRequest$Builder/CategoriesRequest$Builder()|"
+    ],
+    "affectedLib": "com.basistech.rosette:rosette-api-model:0.9.100",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.basistech.rosette:rosette-api:0.8.0",
+    "coordinatesV2": "com.basistech.rosette:rosette-api:0.9.100",
+    "caller": "|java+method:///com/basistech/rosette/api/RosetteAPI/getSentiment(java.lang.String,com.basistech.util.LanguageCode,com.basistech.rosette.apimodel.SentimentOptions)|",
+    "called": "|java+method:///com/basistech/rosette/apimodel/SentimentRequest$Builder/build()|",
+    "v1Body": [
+      "|java+method:///com/basistech/rosette/api/RosetteAPI/sendPostRequest(java.lang.Object,java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///com/basistech/rosette/apimodel/SentimentRequest/SentimentRequest(com.basistech.util.LanguageCode,java.lang.String,java.lang.String,java.lang.String,com.basistech.rosette.apimodel.InputUnit,com.basistech.rosette.apimodel.SentimentOptions)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/basistech/rosette/api/RosetteAPI/sendPostRequest(java.lang.Object,java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/basistech/rosette/apimodel/SentimentRequest$Builder/options(java.lang.Object)|",
+      "|java+constructor:///com/basistech/rosette/apimodel/SentimentRequest$Builder/SentimentRequest$Builder()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/basistech/rosette/apimodel/SentimentRequest$Builder/content(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/basistech/rosette/apimodel/SentimentRequest$Builder/build()|",
+      "|java+method:///com/basistech/rosette/apimodel/SentimentRequest$Builder/language(com.basistech.util.LanguageCode)|"
+    ],
+    "affectedLib": "com.basistech.rosette:rosette-api-model:0.9.100",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.basistech.rosette:rosette-api:0.8.0",
+    "coordinatesV2": "com.basistech.rosette:rosette-api:0.9.100",
+    "caller": "|java+method:///com/basistech/rosette/api/RosetteAPI/getSentiment(java.net.URL,com.basistech.util.LanguageCode,com.basistech.rosette.apimodel.SentimentOptions)|",
+    "called": "|java+method:///com/basistech/rosette/apimodel/SentimentRequest$Builder/build()|",
+    "v1Body": [
+      "|java+method:///com/basistech/rosette/api/RosetteAPI/sendPostRequest(java.lang.Object,java.lang.String,java.lang.Class)|",
+      "|java+method:///java/net/URL/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///com/basistech/rosette/apimodel/SentimentRequest/SentimentRequest(com.basistech.util.LanguageCode,java.lang.String,java.lang.String,java.lang.String,com.basistech.rosette.apimodel.InputUnit,com.basistech.rosette.apimodel.SentimentOptions)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/basistech/rosette/apimodel/SentimentRequest$Builder/contentUri(java.lang.String)|",
+      "|java+method:///com/basistech/rosette/api/RosetteAPI/sendPostRequest(java.lang.Object,java.lang.String,java.lang.Class)|",
+      "|java+method:///java/net/URL/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/basistech/rosette/apimodel/SentimentRequest$Builder/options(java.lang.Object)|",
+      "|java+constructor:///com/basistech/rosette/apimodel/SentimentRequest$Builder/SentimentRequest$Builder()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/basistech/rosette/apimodel/SentimentRequest$Builder/build()|",
+      "|java+method:///com/basistech/rosette/apimodel/SentimentRequest$Builder/language(com.basistech.util.LanguageCode)|"
+    ],
+    "affectedLib": "com.basistech.rosette:rosette-api-model:0.9.100",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.basistech.rosette:rosette-api:0.8.0",
+    "coordinatesV2": "com.basistech.rosette:rosette-api:0.9.100",
+    "caller": "|java+method:///com/basistech/rosette/api/RosetteAPI/getLinkedEntities(java.lang.String,com.basistech.util.LanguageCode)|",
+    "called": "|java+constructor:///com/basistech/rosette/apimodel/LinkedEntitiesRequest$Builder/LinkedEntitiesRequest$Builder()|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///com/basistech/rosette/apimodel/LinkedEntitiesRequest/LinkedEntitiesRequest(com.basistech.util.LanguageCode,java.lang.String,java.lang.String,java.lang.String,com.basistech.rosette.apimodel.InputUnit)|",
+      "|java+method:///com/basistech/rosette/api/RosetteAPI/sendPostRequest(java.lang.Object,java.lang.String,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/basistech/rosette/api/RosetteAPI/sendPostRequest(java.lang.Object,java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///com/basistech/rosette/apimodel/LinkedEntitiesRequest$Builder/LinkedEntitiesRequest$Builder()|",
+      "|java+method:///com/basistech/rosette/apimodel/LinkedEntitiesRequest$Builder/content(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/basistech/rosette/apimodel/LinkedEntitiesRequest$Builder/build()|",
+      "|java+method:///com/basistech/rosette/apimodel/LinkedEntitiesRequest$Builder/language(com.basistech.util.LanguageCode)|"
+    ],
+    "affectedLib": "com.basistech.rosette:rosette-api-model:0.9.100",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.basistech.rosette:rosette-api:0.8.0",
+    "coordinatesV2": "com.basistech.rosette:rosette-api:0.9.100",
+    "caller": "|java+method:///com/basistech/rosette/api/RosetteAPI/getEntities(java.net.URL,com.basistech.util.LanguageCode,com.basistech.rosette.apimodel.EntitiesOptions)|",
+    "called": "|java+constructor:///com/basistech/rosette/apimodel/EntitiesRequest$Builder/EntitiesRequest$Builder()|",
+    "v1Body": [
+      "|java+method:///com/basistech/rosette/api/RosetteAPI/sendPostRequest(java.lang.Object,java.lang.String,java.lang.Class)|",
+      "|java+method:///java/net/URL/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///com/basistech/rosette/apimodel/EntitiesRequest/EntitiesRequest(com.basistech.util.LanguageCode,java.lang.String,java.lang.String,java.lang.String,com.basistech.rosette.apimodel.InputUnit,com.basistech.rosette.apimodel.EntitiesOptions)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/basistech/rosette/api/RosetteAPI/sendPostRequest(java.lang.Object,java.lang.String,java.lang.Class)|",
+      "|java+method:///java/net/URL/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/basistech/rosette/apimodel/EntitiesRequest$Builder/contentUri(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/basistech/rosette/apimodel/EntitiesRequest$Builder/options(java.lang.Object)|",
+      "|java+constructor:///com/basistech/rosette/apimodel/EntitiesRequest$Builder/EntitiesRequest$Builder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/basistech/rosette/apimodel/EntitiesRequest$Builder/build()|",
+      "|java+method:///com/basistech/rosette/apimodel/EntitiesRequest$Builder/language(com.basistech.util.LanguageCode)|"
+    ],
+    "affectedLib": "com.basistech.rosette:rosette-api-model:0.9.100",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.basistech.rosette:rosette-api:0.8.0",
+    "coordinatesV2": "com.basistech.rosette:rosette-api:0.9.100",
+    "caller": "|java+method:///com/basistech/rosette/api/RosetteAPI/getSentences(java.lang.String,com.basistech.util.LanguageCode)|",
+    "called": "|java+method:///com/basistech/rosette/apimodel/SentencesRequest$Builder/build()|",
+    "v1Body": [
+      "|java+method:///com/basistech/rosette/api/RosetteAPI/sendPostRequest(java.lang.Object,java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///com/basistech/rosette/apimodel/MorphologyRequest/MorphologyRequest(com.basistech.util.LanguageCode,java.lang.String,java.lang.String,java.lang.String,com.basistech.rosette.apimodel.InputUnit,com.basistech.rosette.apimodel.MorphologyOptions)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/basistech/rosette/api/RosetteAPI/sendPostRequest(java.lang.Object,java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///com/basistech/rosette/apimodel/SentencesRequest$Builder/SentencesRequest$Builder()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/basistech/rosette/apimodel/SentencesRequest$Builder/content(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/basistech/rosette/apimodel/SentencesRequest$Builder/language(com.basistech.util.LanguageCode)|",
+      "|java+method:///com/basistech/rosette/apimodel/SentencesRequest$Builder/build()|"
+    ],
+    "affectedLib": "com.basistech.rosette:rosette-api-model:0.9.100",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.basistech.rosette:rosette-api:0.8.0",
+    "coordinatesV2": "com.basistech.rosette:rosette-api:0.9.100",
+    "caller": "|java+method:///com/basistech/rosette/api/RosetteAPI/getTokens(java.lang.String,com.basistech.util.LanguageCode)|",
+    "called": "|java+constructor:///com/basistech/rosette/apimodel/MorphologyRequest$Builder/MorphologyRequest$Builder()|",
+    "v1Body": [
+      "|java+method:///com/basistech/rosette/api/RosetteAPI/sendPostRequest(java.lang.Object,java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///com/basistech/rosette/apimodel/MorphologyRequest/MorphologyRequest(com.basistech.util.LanguageCode,java.lang.String,java.lang.String,java.lang.String,com.basistech.rosette.apimodel.InputUnit,com.basistech.rosette.apimodel.MorphologyOptions)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/basistech/rosette/api/RosetteAPI/sendPostRequest(java.lang.Object,java.lang.String,java.lang.Class)|",
+      "|java+method:///com/basistech/rosette/apimodel/MorphologyRequest$Builder/content(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/basistech/rosette/apimodel/MorphologyRequest$Builder/build()|",
+      "|java+method:///com/basistech/rosette/apimodel/MorphologyRequest$Builder/language(com.basistech.util.LanguageCode)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///com/basistech/rosette/apimodel/MorphologyRequest$Builder/MorphologyRequest$Builder()|"
+    ],
+    "affectedLib": "com.basistech.rosette:rosette-api-model:0.9.100",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.basistech.rosette:rosette-api:0.8.0",
+    "coordinatesV2": "com.basistech.rosette:rosette-api:0.9.100",
+    "caller": "|java+method:///com/basistech/rosette/api/RosetteAPI/getTokens(java.net.URL,com.basistech.util.LanguageCode)|",
+    "called": "|java+constructor:///com/basistech/rosette/apimodel/MorphologyRequest$Builder/MorphologyRequest$Builder()|",
+    "v1Body": [
+      "|java+method:///com/basistech/rosette/api/RosetteAPI/sendPostRequest(java.lang.Object,java.lang.String,java.lang.Class)|",
+      "|java+method:///java/net/URL/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///com/basistech/rosette/apimodel/MorphologyRequest/MorphologyRequest(com.basistech.util.LanguageCode,java.lang.String,java.lang.String,java.lang.String,com.basistech.rosette.apimodel.InputUnit,com.basistech.rosette.apimodel.MorphologyOptions)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/basistech/rosette/api/RosetteAPI/sendPostRequest(java.lang.Object,java.lang.String,java.lang.Class)|",
+      "|java+method:///java/net/URL/toString()|",
+      "|java+method:///com/basistech/rosette/apimodel/MorphologyRequest$Builder/contentUri(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/basistech/rosette/apimodel/MorphologyRequest$Builder/build()|",
+      "|java+method:///com/basistech/rosette/apimodel/MorphologyRequest$Builder/language(com.basistech.util.LanguageCode)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///com/basistech/rosette/apimodel/MorphologyRequest$Builder/MorphologyRequest$Builder()|"
+    ],
+    "affectedLib": "com.basistech.rosette:rosette-api-model:0.9.100",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.basistech.rosette:rosette-api:0.8.0",
+    "coordinatesV2": "com.basistech.rosette:rosette-api:0.9.100",
+    "caller": "|java+method:///com/basistech/rosette/api/RosetteAPI/getLinkedEntities(java.net.URL,com.basistech.util.LanguageCode)|",
+    "called": "|java+constructor:///com/basistech/rosette/apimodel/LinkedEntitiesRequest$Builder/LinkedEntitiesRequest$Builder()|",
+    "v1Body": [
+      "|java+method:///java/net/URL/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///com/basistech/rosette/apimodel/LinkedEntitiesRequest/LinkedEntitiesRequest(com.basistech.util.LanguageCode,java.lang.String,java.lang.String,java.lang.String,com.basistech.rosette.apimodel.InputUnit)|",
+      "|java+method:///com/basistech/rosette/api/RosetteAPI/sendPostRequest(java.lang.Object,java.lang.String,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/basistech/rosette/api/RosetteAPI/sendPostRequest(java.lang.Object,java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/basistech/rosette/apimodel/LinkedEntitiesRequest$Builder/contentUri(java.lang.String)|",
+      "|java+constructor:///com/basistech/rosette/apimodel/LinkedEntitiesRequest$Builder/LinkedEntitiesRequest$Builder()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/net/URL/toString()|",
+      "|java+method:///com/basistech/rosette/apimodel/LinkedEntitiesRequest$Builder/build()|",
+      "|java+method:///com/basistech/rosette/apimodel/LinkedEntitiesRequest$Builder/language(com.basistech.util.LanguageCode)|"
+    ],
+    "affectedLib": "com.basistech.rosette:rosette-api-model:0.9.100",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.basistech.rosette:rosette-api:0.8.0",
+    "coordinatesV2": "com.basistech.rosette:rosette-api:0.9.100",
+    "caller": "|java+method:///com/basistech/rosette/api/RosetteAPI/getEntities(java.lang.String,com.basistech.util.LanguageCode,com.basistech.rosette.apimodel.EntitiesOptions)|",
+    "called": "|java+constructor:///com/basistech/rosette/apimodel/EntitiesRequest$Builder/EntitiesRequest$Builder()|",
+    "v1Body": [
+      "|java+method:///com/basistech/rosette/api/RosetteAPI/sendPostRequest(java.lang.Object,java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///com/basistech/rosette/apimodel/EntitiesRequest/EntitiesRequest(com.basistech.util.LanguageCode,java.lang.String,java.lang.String,java.lang.String,com.basistech.rosette.apimodel.InputUnit,com.basistech.rosette.apimodel.EntitiesOptions)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/basistech/rosette/api/RosetteAPI/sendPostRequest(java.lang.Object,java.lang.String,java.lang.Class)|",
+      "|java+method:///com/basistech/rosette/apimodel/EntitiesRequest$Builder/content(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/basistech/rosette/apimodel/EntitiesRequest$Builder/options(java.lang.Object)|",
+      "|java+constructor:///com/basistech/rosette/apimodel/EntitiesRequest$Builder/EntitiesRequest$Builder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/basistech/rosette/apimodel/EntitiesRequest$Builder/build()|",
+      "|java+method:///com/basistech/rosette/apimodel/EntitiesRequest$Builder/language(com.basistech.util.LanguageCode)|"
+    ],
+    "affectedLib": "com.basistech.rosette:rosette-api-model:0.9.100",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.basistech.rosette:rosette-api:0.8.0",
+    "coordinatesV2": "com.basistech.rosette:rosette-api:0.9.100",
+    "caller": "|java+method:///com/basistech/rosette/api/RosetteAPI/checkVersionCompatibility()|",
+    "called": "|java+constructor:///com/basistech/rosette/apimodel/ErrorResponse/ErrorResponse(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///com/basistech/rosette/apimodel/ErrorResponse/ErrorResponse(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///com/basistech/rosette/api/RosetteAPI/sendPostRequest(java.lang.Object,java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///com/basistech/rosette/api/RosetteAPIException/RosetteAPIException(int,com.basistech.rosette.apimodel.ErrorResponse)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/basistech/rosette/apimodel/InfoResponse/isVersionChecked()|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/basistech/rosette/apimodel/ErrorResponse/ErrorResponse(java.lang.String,java.lang.String)|",
+      "|java+method:///com/basistech/rosette/api/RosetteAPI/sendPostRequest(java.lang.Object,java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///com/basistech/rosette/api/RosetteAPIException/RosetteAPIException(int,com.basistech.rosette.apimodel.ErrorResponse)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/basistech/rosette/apimodel/InfoResponse/isVersionChecked()|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "com.basistech.rosette:rosette-api-model:0.9.100",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.basistech.rosette:rosette-api:0.8.0",
+    "coordinatesV2": "com.basistech.rosette:rosette-api:0.9.100",
+    "caller": "|java+method:///com/basistech/rosette/api/RosetteAPI/getLanguage(java.net.URL,com.basistech.rosette.apimodel.LanguageOptions)|",
+    "called": "|java+method:///com/basistech/rosette/apimodel/LanguageRequest$Builder/build()|",
+    "v1Body": [
+      "|java+method:///com/basistech/rosette/api/RosetteAPI/sendPostRequest(java.lang.Object,java.lang.String,java.lang.Class)|",
+      "|java+constructor:///com/basistech/rosette/apimodel/LanguageRequest/LanguageRequest(java.lang.String,java.lang.String,java.lang.String,com.basistech.rosette.apimodel.InputUnit,com.basistech.rosette.apimodel.LanguageOptions)|",
+      "|java+method:///java/net/URL/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/basistech/rosette/api/RosetteAPI/sendPostRequest(java.lang.Object,java.lang.String,java.lang.Class)|",
+      "|java+method:///com/basistech/rosette/apimodel/LanguageRequest$Builder/options(java.lang.Object)|",
+      "|java+method:///java/net/URL/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///com/basistech/rosette/apimodel/LanguageRequest$Builder/LanguageRequest$Builder()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/basistech/rosette/apimodel/LanguageRequest$Builder/build()|",
+      "|java+method:///com/basistech/rosette/apimodel/LanguageRequest$Builder/contentUri(java.lang.String)|"
+    ],
+    "affectedLib": "com.basistech.rosette:rosette-api-model:0.9.100",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.basistech.rosette:rosette-api:0.8.0",
+    "coordinatesV2": "com.basistech.rosette:rosette-api:0.9.100",
+    "caller": "|java+method:///com/basistech/rosette/api/RosetteAPI/getCategories(java.lang.String,com.basistech.util.LanguageCode,com.basistech.rosette.apimodel.CategoriesOptions)|",
+    "called": "|java+method:///com/basistech/rosette/apimodel/CategoriesRequest$Builder/build()|",
+    "v1Body": [
+      "|java+method:///com/basistech/rosette/api/RosetteAPI/sendPostRequest(java.lang.Object,java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///com/basistech/rosette/apimodel/CategoriesRequest/CategoriesRequest(com.basistech.util.LanguageCode,java.lang.String,java.lang.String,java.lang.String,com.basistech.rosette.apimodel.InputUnit,com.basistech.rosette.apimodel.CategoriesOptions)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/basistech/rosette/apimodel/CategoriesRequest$Builder/options(java.lang.Object)|",
+      "|java+method:///com/basistech/rosette/api/RosetteAPI/sendPostRequest(java.lang.Object,java.lang.String,java.lang.Class)|",
+      "|java+method:///com/basistech/rosette/apimodel/CategoriesRequest$Builder/content(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/basistech/rosette/apimodel/CategoriesRequest$Builder/build()|",
+      "|java+method:///com/basistech/rosette/apimodel/CategoriesRequest$Builder/language(com.basistech.util.LanguageCode)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///com/basistech/rosette/apimodel/CategoriesRequest$Builder/CategoriesRequest$Builder()|"
+    ],
+    "affectedLib": "com.basistech.rosette:rosette-api-model:0.9.100",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.basistech.rosette:rosette-api:0.8.0",
+    "coordinatesV2": "com.basistech.rosette:rosette-api:0.9.100",
+    "caller": "|java+method:///com/basistech/rosette/api/RosetteAPI/getLanguage(java.lang.String,com.basistech.rosette.apimodel.LanguageOptions)|",
+    "called": "|java+method:///com/basistech/rosette/apimodel/LanguageRequest$Builder/build()|",
+    "v1Body": [
+      "|java+method:///com/basistech/rosette/api/RosetteAPI/sendPostRequest(java.lang.Object,java.lang.String,java.lang.Class)|",
+      "|java+constructor:///com/basistech/rosette/apimodel/LanguageRequest/LanguageRequest(java.lang.String,java.lang.String,java.lang.String,com.basistech.rosette.apimodel.InputUnit,com.basistech.rosette.apimodel.LanguageOptions)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/basistech/rosette/api/RosetteAPI/sendPostRequest(java.lang.Object,java.lang.String,java.lang.Class)|",
+      "|java+method:///com/basistech/rosette/apimodel/LanguageRequest$Builder/options(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/basistech/rosette/apimodel/LanguageRequest$Builder/build()|",
+      "|java+method:///com/basistech/rosette/apimodel/LanguageRequest$Builder/content(java.lang.String)|",
+      "|java+constructor:///com/basistech/rosette/apimodel/LanguageRequest$Builder/LanguageRequest$Builder()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "com.basistech.rosette:rosette-api-model:0.9.100",
+    "change": "UPDATED"
+  }
+]

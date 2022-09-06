@@ -1,0 +1,26 @@
+[
+  {
+    "coordinatesV1": "com.datasift.dropwizard:dropwizard-extra-zookeeper:0.6.2-6",
+    "coordinatesV2": "com.datasift.dropwizard:dropwizard-extra-zookeeper:0.7.1-1",
+    "caller": "|java+method:///com/datasift/dropwizard/zookeeper/health/ZooKeeperHealthCheck/check()|",
+    "called": "|java+method:///org/apache/zookeeper/ZooKeeper/exists(java.lang.String,boolean)|",
+    "v1Body": [
+      "|java+method:///org/apache/zookeeper/ZooKeeper$States/isAlive()|",
+      "|java+method:///com/yammer/metrics/core/HealthCheck$Result/unhealthy(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/yammer/metrics/core/HealthCheck$Result/healthy()|",
+      "|java+method:///org/apache/zookeeper/ZooKeeper$States/isConnected()|",
+      "|java+method:///org/apache/zookeeper/ZooKeeper/getState()|",
+      "|java+method:///org/apache/zookeeper/ZooKeeper/exists(java.lang.String,boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/zookeeper/ZooKeeper$States/isAlive()|",
+      "|java+method:///com/codahale/metrics/health/HealthCheck$Result/unhealthy(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/codahale/metrics/health/HealthCheck$Result/healthy()|",
+      "|java+method:///org/apache/zookeeper/ZooKeeper$States/isConnected()|",
+      "|java+method:///org/apache/zookeeper/ZooKeeper/getState()|",
+      "|java+method:///org/apache/zookeeper/ZooKeeper/exists(java.lang.String,boolean)|"
+    ],
+    "affectedLib": "org.apache.zookeeper:zookeeper:3.4.6",
+    "change": "UPDATED"
+  }
+]

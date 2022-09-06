@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faqs xmlns="http://maven.apache.org/FML/1.0.1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/FML/1.0.1 http://maven.apache.org/xsd/fml-1.0.1.xsd"
+  title="Frequently Asked Questions"
+  toplink="false">
+
+  <part id="general">
+    <title>PODAM FAQs</title>
+
+    <faq id="change-behaviour-between-invocations">
+      <question>
+        What if I want to change PODAM behaviour between invocations and I have used a custom annotation? 
+      </question>
+      <answer>
+        <p>
+        Ok, so you have set a property <i>firstName</i> with the annotation @PodamStringValue(strValue = "Michael").
+        This means that PODAM will fill every instance of the annotated POJO attribute with the value "Michael". 
+        Unfortunately, there is no easy way around this: when you use a PODAM custom annotation, the values driven by the 
+        annotation are assigned to every instance of the annotated POJO. There is an acceptable solution though: 
+        you can have PODAM to fill the POJO for you and then manually change the attributes for which a particular
+        run needs particular values. This is obviously possible if the POJO allows for changes in state. For 
+        immutable-like POJOs there is no easy way to get around this issue and ultimately you might want to 
+        manufacture an immutable-like POJO by hand.
+        </p>
+
+        <source>
+          
+          ...In Client.java
+          
+          @PodamStringValue(strValue = "Michael")
+          private String firstName;
+          
+          [etc.]
+          
+          ...In your client
+          
+          Client client = PodamFactory.manufacturePojo(Client.class);
+          
+          //firstName is now set with the value "Michael" but you can change it
+          //with the value of your choice (provided the POJO is not immutable)
+          pojo.setFirstName("MyOtherValue");
+          
+        </source>
+        
+      </answer>
+    </faq>
+
+    <faq id="customising-data">
+
+        <question>
+          I've noticed that Podam assigned random values. What if I wanted to define my own values?
+        </question>
+        <answer>
+          <p>
+          You want to provide your own implementation of the DataProviderStrategy. Podam uses the
+          default implementation (RandomDataProviderStrategy) but you can define pretty much what
+          you want. We've provided AbstractRandomDataProviderStrategy to take away most of the
+          boilerplate code. So you could write your own extension to this class customising the
+          types you want to provide yourself.
+          </p>
+          <p>
+            Please refer to the home page documentation for examples on how to do this.
+          </p>
+        </answer>
+    </faq>
+    
+  </part>
+
+</faqs>

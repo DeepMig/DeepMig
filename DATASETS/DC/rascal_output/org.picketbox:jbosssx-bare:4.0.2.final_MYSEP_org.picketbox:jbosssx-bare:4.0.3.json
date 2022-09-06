@@ -1,0 +1,138 @@
+[
+  {
+    "coordinatesV1": "org.picketbox:jbosssx-bare:4.0.3",
+    "coordinatesV2": "org.picketbox:jbosssx-bare:4.0.2.final",
+    "caller": "|java+constructor:///org/jboss/security/auth/message/config/JBossAuthConfigFactory/JBossAuthConfigFactory()|",
+    "called": "|java+constructor:///javax/security/auth/message/config/AuthConfigFactory/AuthConfigFactory()|",
+    "v1Body": [
+      "|java+constructor:///org/jboss/security/auth/message/config/AuthProviderRegistrationDelegate/AuthProviderRegistrationDelegate()|",
+      "|java+constructor:///org/jboss/security/auth/message/config/JBossAuthConfigProvider/JBossAuthConfigProvider(java.util.Map)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/jboss/security/auth/message/config/AuthProviderRegistrationDelegate/registerConfigProvider(javax.security.auth.message.config.AuthConfigProvider,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+constructor:///javax/security/auth/message/config/AuthConfigFactory/AuthConfigFactory()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jboss/security/auth/message/config/JBossAuthConfigFactory/registerConfigProvider(javax.security.auth.message.config.AuthConfigProvider,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///org/jboss/security/auth/message/config/JBossAuthConfigProvider/JBossAuthConfigProvider(java.util.Map,javax.security.auth.message.config.AuthConfigFactory)|",
+      "|java+constructor:///javax/security/auth/message/config/AuthConfigFactory/AuthConfigFactory()|"
+    ],
+    "affectedLib": "org.jboss.javaee:jboss-jaspi-api:1.0.0.GA",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.picketbox:jbosssx-bare:4.0.2.final",
+    "coordinatesV2": "org.picketbox:jbosssx-bare:4.0.3",
+    "caller": "|java+method:///org/picketbox/plugins/vault/PicketBoxSecurityVault/store(java.lang.String,java.lang.String,char%5B%5D,byte%5B%5D)|",
+    "called": "|java+method:///org/picketbox/commons/cipher/Base64/decode(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/security/KeyStore/getCertificate(java.lang.String)|",
+      "|java+constructor:///javax/crypto/spec/SecretKeySpec/SecretKeySpec(byte%5B%5D,java.lang.String)|",
+      "|java+constructor:///java/lang/String/String(char%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/picketbox/util/EncryptionUtil/encrypt(byte%5B%5D,java.security.PublicKey,javax.crypto.SecretKey)|",
+      "|java+method:///org/picketbox/plugins/vault/PicketBoxSecurityVault/writeEncodedFile(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///org/jboss/util/Base64/decode(java.lang.String)|",
+      "|java+constructor:///org/picketbox/util/EncryptionUtil/EncryptionUtil(java.lang.String,int)|",
+      "|java+method:///java/security/cert/Certificate/getPublicKey()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/jboss/security/vault/SecurityVaultException/SecurityVaultException(java.lang.String)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/jboss/security/vault/SecurityVaultException/SecurityVaultException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/picketbox/util/StringUtil/isNullOrEmpty(java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/String/indexOf(java.lang.String)|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D)|",
+      "|java+method:///org/picketbox/plugins/vault/PicketBoxSecurityVault/writeSharedKeyFile(java.lang.String)|",
+      "|java+method:///java/lang/String/getBytes()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/security/KeyStore/getCertificate(java.lang.String)|",
+      "|java+constructor:///javax/crypto/spec/SecretKeySpec/SecretKeySpec(byte%5B%5D,java.lang.String)|",
+      "|java+method:///org/picketbox/commons/cipher/Base64/decode(java.lang.String)|",
+      "|java+constructor:///java/lang/String/String(char%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/picketbox/util/EncryptionUtil/encrypt(byte%5B%5D,java.security.PublicKey,javax.crypto.SecretKey)|",
+      "|java+method:///org/picketbox/plugins/vault/PicketBoxSecurityVault/writeEncodedFile(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+constructor:///org/picketbox/util/EncryptionUtil/EncryptionUtil(java.lang.String,int)|",
+      "|java+method:///java/security/cert/Certificate/getPublicKey()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/jboss/security/vault/SecurityVaultException/SecurityVaultException(java.lang.String)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/jboss/security/vault/SecurityVaultException/SecurityVaultException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/picketbox/util/StringUtil/isNullOrEmpty(java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/String/indexOf(java.lang.String)|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D)|",
+      "|java+method:///org/picketbox/plugins/vault/PicketBoxSecurityVault/writeSharedKeyFile(java.lang.String)|",
+      "|java+method:///java/lang/String/getBytes()|"
+    ],
+    "affectedLib": "org.picketbox:picketbox-commons:1.0.0.CR1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.picketbox:jbosssx-bare:4.0.2.final",
+    "coordinatesV2": "org.picketbox:jbosssx-bare:4.0.3",
+    "caller": "|java+method:///org/picketbox/plugins/vault/PicketBoxSecurityVault/handshake(java.util.Map)|",
+    "called": "|java+method:///org/picketbox/commons/cipher/Base64/encodeBytes(byte%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/picketbox/util/KeyStoreUtil/getPublicKey(java.security.KeyStore,java.lang.String,char%5B%5D)|",
+      "|java+constructor:///org/jboss/security/vault/SecurityVaultException/SecurityVaultException(java.lang.Throwable)|",
+      "|java+constructor:///org/jboss/security/vault/SecurityVaultException/SecurityVaultException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/UUID/randomUUID()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/jboss/util/Base64/encodeBytes(byte%5B%5D)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/String/getBytes()|",
+      "|java+method:///java/util/UUID/toString()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/Map/isEmpty()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/picketbox/util/KeyStoreUtil/getPublicKey(java.security.KeyStore,java.lang.String,char%5B%5D)|",
+      "|java+constructor:///org/jboss/security/vault/SecurityVaultException/SecurityVaultException(java.lang.Throwable)|",
+      "|java+constructor:///org/jboss/security/vault/SecurityVaultException/SecurityVaultException(java.lang.String)|",
+      "|java+method:///org/picketbox/commons/cipher/Base64/encodeBytes(byte%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/UUID/randomUUID()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/String/getBytes()|",
+      "|java+method:///java/util/UUID/toString()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/Map/isEmpty()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|"
+    ],
+    "affectedLib": "org.picketbox:picketbox-commons:1.0.0.CR1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.picketbox:jbosssx-bare:4.0.2.final",
+    "coordinatesV2": "org.picketbox:jbosssx-bare:4.0.3",
+    "caller": "|java+constructor:///org/jboss/security/auth/message/config/JBossAuthConfigFactory/JBossAuthConfigFactory()|",
+    "called": "|java+constructor:///javax/security/auth/message/config/AuthConfigFactory/AuthConfigFactory()|",
+    "v1Body": [
+      "|java+constructor:///org/jboss/security/auth/message/config/AuthProviderRegistrationDelegate/AuthProviderRegistrationDelegate()|",
+      "|java+constructor:///org/jboss/security/auth/message/config/JBossAuthConfigProvider/JBossAuthConfigProvider(java.util.Map)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/jboss/security/auth/message/config/AuthProviderRegistrationDelegate/registerConfigProvider(javax.security.auth.message.config.AuthConfigProvider,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+constructor:///javax/security/auth/message/config/AuthConfigFactory/AuthConfigFactory()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jboss/security/auth/message/config/JBossAuthConfigFactory/registerConfigProvider(javax.security.auth.message.config.AuthConfigProvider,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///org/jboss/security/auth/message/config/JBossAuthConfigProvider/JBossAuthConfigProvider(java.util.Map,javax.security.auth.message.config.AuthConfigFactory)|",
+      "|java+constructor:///javax/security/auth/message/config/AuthConfigFactory/AuthConfigFactory()|"
+    ],
+    "affectedLib": "org.jboss.spec.javax.security.auth.message:jboss-jaspi-api_1.0_spec:1.0.0.Final",
+    "change": "ADDED"
+  }
+]

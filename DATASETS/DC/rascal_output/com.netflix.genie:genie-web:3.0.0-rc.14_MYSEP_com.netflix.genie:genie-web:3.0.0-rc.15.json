@@ -1,0 +1,45 @@
+[
+  {
+    "coordinatesV1": "com.netflix.genie:genie-web:3.0.0-rc.14",
+    "coordinatesV2": "com.netflix.genie:genie-web:3.0.0-rc.15",
+    "caller": "|java+method:///com/netflix/genie/web/controllers/JobRestController/killJob(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+    "called": "|java+method:///com/netflix/genie/core/services/JobCoordinatorService/killJob(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/http/client/HttpClient/execute(org.apache.http.client.methods.HttpUriRequest)|",
+      "|java+method:///com/netflix/genie/web/controllers/JobRestController/copyRequestHeaders(javax.servlet.http.HttpServletRequest,org.apache.http.client.methods.HttpRequestBase)|",
+      "|java+method:///com/netflix/genie/web/controllers/JobRestController/copyResponseHeaders(javax.servlet.http.HttpServletResponse,org.apache.http.HttpResponse)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///com/netflix/genie/web/controllers/JobRestController/buildForwardURL(javax.servlet.http.HttpServletRequest,java.lang.String)|",
+      "|java+constructor:///org/apache/http/client/methods/HttpDelete/HttpDelete(java.lang.String)|",
+      "|java+method:///com/netflix/genie/web/properties/JobForwardingProperties/isEnabled()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/setStatus(int)|",
+      "|java+method:///com/netflix/genie/web/controllers/JobRestController/forwardResponseHasError(javax.servlet.http.HttpServletResponse,org.apache.http.HttpResponse)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/netflix/genie/core/services/JobSearchService/getJobHost(java.lang.String)|",
+      "|java+method:///org/springframework/http/HttpStatus/value()|",
+      "|java+method:///com/netflix/genie/core/services/JobCoordinatorService/killJob(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/servlet/http/HttpServletResponse/sendError(int,java.lang.String)|",
+      "|java+method:///org/springframework/web/client/RestTemplate/execute(java.lang.String,org.springframework.http.HttpMethod,org.springframework.web.client.RequestCallback,org.springframework.web.client.ResponseExtractor,java.lang.Object%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///com/netflix/genie/web/controllers/JobRestController$1/JobRestController$1(com.netflix.genie.web.controllers.JobRestController,javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///org/springframework/web/client/HttpStatusCodeException/getMessage()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/netflix/genie/web/controllers/JobRestController/buildForwardURL(javax.servlet.http.HttpServletRequest,java.lang.String)|",
+      "|java+method:///com/netflix/genie/web/properties/JobForwardingProperties/isEnabled()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/setStatus(int)|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+method:///org/springframework/web/client/HttpStatusCodeException/getStatusText()|",
+      "|java+method:///org/springframework/web/client/HttpStatusCodeException/getStatusCode()|",
+      "|java+method:///com/netflix/genie/core/services/JobSearchService/getJobHost(java.lang.String)|",
+      "|java+method:///org/springframework/http/HttpStatus/value()|",
+      "|java+method:///com/netflix/genie/core/services/JobCoordinatorService/killJob(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "com.netflix.genie:genie-core:3.0.0-rc.15",
+    "change": "UPDATED"
+  }
+]

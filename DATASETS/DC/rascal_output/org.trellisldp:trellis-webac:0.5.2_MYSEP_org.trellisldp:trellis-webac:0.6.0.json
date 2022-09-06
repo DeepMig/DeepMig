@@ -1,0 +1,80 @@
+[
+  {
+    "coordinatesV1": "org.trellisldp:trellis-webac:0.5.2",
+    "coordinatesV2": "org.trellisldp:trellis-webac:0.6.0",
+    "caller": "|java+method:///org/trellisldp/webac/WebACService/lambda$getAuthorizationFromGraph$12(org.apache.commons.rdf.api.Graph,org.apache.commons.rdf.api.BlankNodeOrIRI)|",
+    "called": "|java+constructor:///org/trellisldp/api/RuntimeTrellisException/RuntimeTrellisException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/trellisldp/webac/WebACService/$closeResource(java.lang.Throwable,java.lang.AutoCloseable)|",
+      "|java+method:///org/apache/commons/rdf/api/Graph/stream(org.apache.commons.rdf.api.BlankNodeOrIRI,org.apache.commons.rdf.api.IRI,org.apache.commons.rdf.api.RDFTerm)|",
+      "|java+method:///org/trellisldp/api/RDFUtils/toGraph()|",
+      "|java+method:///org/trellisldp/webac/Authorization/from(org.apache.commons.rdf.api.BlankNodeOrIRI,org.apache.commons.rdf.api.Graph)|",
+      "|java+constructor:///org/trellisldp/api/RuntimeTrellisException/RuntimeTrellisException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/rdf/api/Graph/close()|",
+      "|java+method:///org/apache/commons/rdf/api/Graph/stream(org.apache.commons.rdf.api.BlankNodeOrIRI,org.apache.commons.rdf.api.IRI,org.apache.commons.rdf.api.RDFTerm)|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+method:///org/trellisldp/api/RDFUtils/toGraph()|",
+      "|java+method:///org/trellisldp/webac/Authorization/from(org.apache.commons.rdf.api.BlankNodeOrIRI,org.apache.commons.rdf.api.Graph)|",
+      "|java+constructor:///org/trellisldp/api/RuntimeTrellisException/RuntimeTrellisException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|"
+    ],
+    "affectedLib": "org.trellisldp:trellis-api:0.6.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.trellisldp:trellis-webac:0.5.2",
+    "coordinatesV2": "org.trellisldp:trellis-webac:0.6.0",
+    "caller": "|java+method:///org/trellisldp/webac/WebACService/getAllAuthorizationsFor(org.trellisldp.api.Resource,java.lang.Boolean)|",
+    "called": "|java+method:///org/trellisldp/api/ResourceService/getContainer(org.apache.commons.rdf.api.IRI)|",
+    "v1Body": [
+      "|java+method:///org/trellisldp/webac/WebACService/$closeResource(java.lang.Throwable,java.lang.AutoCloseable)|",
+      "|java+method:///org/trellisldp/webac/WebACService/getAccessToAuth(org.apache.commons.rdf.api.IRI)|",
+      "|java+method:///org/trellisldp/api/ResourceService/getContainer(org.apache.commons.rdf.api.IRI)|",
+      "|java+method:///org/trellisldp/api/Resource/getIdentifier()|",
+      "|java+method:///java/util/List/stream()|",
+      "|java+method:///org/trellisldp/api/RDFUtils/toGraph()|",
+      "|java+method:///java/util/stream/Stream/anyMatch(java.util.function.Predicate)|",
+      "|java+method:///org/trellisldp/api/Resource/stream(org.apache.commons.rdf.api.IRI)|",
+      "|java+method:///org/trellisldp/api/Resource/hasAcl()|",
+      "|java+constructor:///org/trellisldp/api/RuntimeTrellisException/RuntimeTrellisException(java.lang.Throwable)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|",
+      "|java+method:///java/util/Optional/flatMap(java.util.function.Function)|",
+      "|java+method:///org/trellisldp/webac/WebACService/getInheritedAuth(org.apache.commons.rdf.api.IRI)|",
+      "|java+method:///java/util/Optional/map(java.util.function.Function)|",
+      "|java+method:///java/util/stream/Stream/filter(java.util.function.Predicate)|",
+      "|java+method:///java/util/Objects/requireNonNull(java.lang.Object)|",
+      "|java+method:///org/trellisldp/webac/WebACService/getAuthorizationFromGraph(org.apache.commons.rdf.api.Graph)|",
+      "|java+method:///java/util/Optional/orElseGet(java.util.function.Supplier)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/rdf/api/Graph/close()|",
+      "|java+method:///org/trellisldp/webac/WebACService/getAccessToAuth(org.apache.commons.rdf.api.IRI)|",
+      "|java+method:///org/trellisldp/api/ResourceService/getContainer(org.apache.commons.rdf.api.IRI)|",
+      "|java+method:///java/util/List/stream()|",
+      "|java+method:///org/trellisldp/api/RDFUtils/toGraph()|",
+      "|java+method:///java/util/stream/Stream/anyMatch(java.util.function.Predicate)|",
+      "|java+method:///org/trellisldp/api/Resource/stream(org.apache.commons.rdf.api.IRI)|",
+      "|java+method:///org/trellisldp/api/Resource/hasAcl()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///org/trellisldp/api/RuntimeTrellisException/RuntimeTrellisException(java.lang.Throwable)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|",
+      "|java+method:///java/util/Optional/flatMap(java.util.function.Function)|",
+      "|java+method:///org/trellisldp/webac/WebACService/getInheritedAuth(org.apache.commons.rdf.api.IRI)|",
+      "|java+method:///org/trellisldp/api/Resource/getIdentifier()|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+method:///java/util/Optional/map(java.util.function.Function)|",
+      "|java+method:///java/util/stream/Stream/filter(java.util.function.Predicate)|",
+      "|java+method:///org/trellisldp/webac/WebACService/getAuthorizationFromGraph(org.apache.commons.rdf.api.Graph)|",
+      "|java+method:///java/util/Optional/orElseGet(java.util.function.Supplier)|"
+    ],
+    "affectedLib": "org.trellisldp:trellis-api:0.6.0",
+    "change": "UPDATED"
+  }
+]

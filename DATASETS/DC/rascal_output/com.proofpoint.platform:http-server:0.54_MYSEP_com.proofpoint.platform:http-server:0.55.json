@@ -1,0 +1,85 @@
+[
+  {
+    "coordinatesV1": "com.proofpoint.platform:http-server:0.54",
+    "coordinatesV2": "com.proofpoint.platform:http-server:0.55",
+    "caller": "|java+constructor:///com/proofpoint/http/server/testing/TestingHttpServer/TestingHttpServer(com.proofpoint.http.server.HttpServerInfo,com.proofpoint.node.NodeInfo,com.proofpoint.http.server.HttpServerConfig,javax.servlet.Servlet,java.util.Map,java.util.Set)|",
+    "called": "|java+constructor:///com/proofpoint/event/client/NullEventClient/NullEventClient()|",
+    "v1Body": [
+      "|java+constructor:///com/proofpoint/tracetoken/TraceTokenManager/TraceTokenManager()|",
+      "|java+method:///com/google/common/collect/ImmutableSet/of()|",
+      "|java+constructor:///com/proofpoint/http/server/HttpServer/HttpServer(com.proofpoint.http.server.HttpServerInfo,com.proofpoint.node.NodeInfo,com.proofpoint.http.server.HttpServerConfig,javax.servlet.Servlet,java.util.Map,java.util.Set,javax.servlet.Servlet,java.util.Map,java.util.Set,javax.management.MBeanServer,org.eclipse.jetty.security.LoginService,com.proofpoint.tracetoken.TraceTokenManager,com.proofpoint.http.server.RequestStats)|",
+      "|java+constructor:///com/proofpoint/http/server/RequestStats/RequestStats()|",
+      "|java+method:///com/google/common/collect/ImmutableSet/copyOf(java.util.Collection)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/proofpoint/tracetoken/TraceTokenManager/TraceTokenManager()|",
+      "|java+method:///com/google/common/collect/ImmutableSet/of()|",
+      "|java+constructor:///com/proofpoint/http/server/HttpServer/HttpServer(com.proofpoint.http.server.HttpServerInfo,com.proofpoint.node.NodeInfo,com.proofpoint.http.server.HttpServerConfig,javax.servlet.Servlet,java.util.Map,java.util.Set,javax.servlet.Servlet,java.util.Map,java.util.Set,javax.management.MBeanServer,org.eclipse.jetty.security.LoginService,com.proofpoint.tracetoken.TraceTokenManager,com.proofpoint.http.server.RequestStats,com.proofpoint.event.client.EventClient)|",
+      "|java+method:///com/google/common/collect/ImmutableSet/copyOf(java.util.Collection)|",
+      "|java+constructor:///com/proofpoint/event/client/NullEventClient/NullEventClient()|",
+      "|java+constructor:///com/proofpoint/http/server/RequestStats/RequestStats()|"
+    ],
+    "affectedLib": "com.proofpoint.platform:event-experimental:0.55",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.proofpoint.platform:http-server:0.54",
+    "coordinatesV2": "com.proofpoint.platform:http-server:0.55",
+    "caller": "|java+method:///com/proofpoint/http/server/HttpServerModule/configure(com.google.inject.Binder)|",
+    "called": "|java+method:///com/proofpoint/configuration/ConfigurationModule/bindConfig(com.google.inject.Binder)|",
+    "v1Body": [
+      "|java+method:///com/google/inject/binder/AnnotatedBindingBuilder/toProvider(java.lang.Class)|",
+      "|java+method:///org/weakref/jmx/guice/MBeanModule/newExporter(com.google.inject.Binder)|",
+      "|java+method:///com/google/inject/binder/ScopedBindingBuilder/in(com.google.inject.Scope)|",
+      "|java+method:///com/google/inject/Binder/disableCircularProxies()|",
+      "|java+method:///com/google/inject/Binder/requireExplicitBindings()|",
+      "|java+method:///com/google/inject/binder/AnnotatedBindingBuilder/in(com.google.inject.Scope)|",
+      "|java+method:///com/proofpoint/configuration/ConfigurationModule/bindConfig(com.google.inject.Binder)|",
+      "|java+method:///org/weakref/jmx/guice/AnnotatedExportBuilder/withGeneratedName()|",
+      "|java+method:///com/google/inject/multibindings/Multibinder/newSetBinder(com.google.inject.Binder,java.lang.Class,java.lang.Class)|",
+      "|java+method:///org/weakref/jmx/guice/ExportBuilder/export(java.lang.Class)|",
+      "|java+method:///com/google/inject/Binder/bind(java.lang.Class)|",
+      "|java+method:///com/proofpoint/configuration/ConfigurationModule$AnnotatedBindingBuilder/to(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/inject/binder/AnnotatedBindingBuilder/toProvider(java.lang.Class)|",
+      "|java+method:///org/weakref/jmx/guice/MBeanModule/newExporter(com.google.inject.Binder)|",
+      "|java+method:///com/google/inject/binder/ScopedBindingBuilder/in(com.google.inject.Scope)|",
+      "|java+method:///com/google/inject/Binder/disableCircularProxies()|",
+      "|java+method:///com/google/inject/Binder/requireExplicitBindings()|",
+      "|java+method:///com/google/inject/binder/AnnotatedBindingBuilder/in(com.google.inject.Scope)|",
+      "|java+method:///com/proofpoint/configuration/ConfigurationModule/bindConfig(com.google.inject.Binder)|",
+      "|java+method:///org/weakref/jmx/guice/AnnotatedExportBuilder/withGeneratedName()|",
+      "|java+method:///com/google/inject/binder/AnnotatedBindingBuilder/to(java.lang.Class)|",
+      "|java+method:///com/google/inject/multibindings/Multibinder/newSetBinder(com.google.inject.Binder,java.lang.Class,java.lang.Class)|",
+      "|java+method:///org/weakref/jmx/guice/ExportBuilder/export(java.lang.Class)|",
+      "|java+method:///com/google/inject/Binder/bind(java.lang.Class)|",
+      "|java+method:///com/proofpoint/configuration/ConfigurationModule$AnnotatedBindingBuilder/to(java.lang.Class)|"
+    ],
+    "affectedLib": "com.proofpoint.platform:configuration:0.55",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.proofpoint.platform:http-server:0.54",
+    "coordinatesV2": "com.proofpoint.platform:http-server:0.55",
+    "caller": "|java+constructor:///com/proofpoint/http/server/testing/TestingHttpServer/TestingHttpServer(com.proofpoint.http.server.HttpServerInfo,com.proofpoint.node.NodeInfo,com.proofpoint.http.server.HttpServerConfig,javax.servlet.Servlet,java.util.Map,java.util.Set)|",
+    "called": "|java+constructor:///com/proofpoint/tracetoken/TraceTokenManager/TraceTokenManager()|",
+    "v1Body": [
+      "|java+constructor:///com/proofpoint/tracetoken/TraceTokenManager/TraceTokenManager()|",
+      "|java+method:///com/google/common/collect/ImmutableSet/of()|",
+      "|java+constructor:///com/proofpoint/http/server/HttpServer/HttpServer(com.proofpoint.http.server.HttpServerInfo,com.proofpoint.node.NodeInfo,com.proofpoint.http.server.HttpServerConfig,javax.servlet.Servlet,java.util.Map,java.util.Set,javax.servlet.Servlet,java.util.Map,java.util.Set,javax.management.MBeanServer,org.eclipse.jetty.security.LoginService,com.proofpoint.tracetoken.TraceTokenManager,com.proofpoint.http.server.RequestStats)|",
+      "|java+constructor:///com/proofpoint/http/server/RequestStats/RequestStats()|",
+      "|java+method:///com/google/common/collect/ImmutableSet/copyOf(java.util.Collection)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/proofpoint/tracetoken/TraceTokenManager/TraceTokenManager()|",
+      "|java+method:///com/google/common/collect/ImmutableSet/of()|",
+      "|java+constructor:///com/proofpoint/http/server/HttpServer/HttpServer(com.proofpoint.http.server.HttpServerInfo,com.proofpoint.node.NodeInfo,com.proofpoint.http.server.HttpServerConfig,javax.servlet.Servlet,java.util.Map,java.util.Set,javax.servlet.Servlet,java.util.Map,java.util.Set,javax.management.MBeanServer,org.eclipse.jetty.security.LoginService,com.proofpoint.tracetoken.TraceTokenManager,com.proofpoint.http.server.RequestStats,com.proofpoint.event.client.EventClient)|",
+      "|java+method:///com/google/common/collect/ImmutableSet/copyOf(java.util.Collection)|",
+      "|java+constructor:///com/proofpoint/event/client/NullEventClient/NullEventClient()|",
+      "|java+constructor:///com/proofpoint/http/server/RequestStats/RequestStats()|"
+    ],
+    "affectedLib": "com.proofpoint.platform:trace-token:0.55",
+    "change": "UPDATED"
+  }
+]

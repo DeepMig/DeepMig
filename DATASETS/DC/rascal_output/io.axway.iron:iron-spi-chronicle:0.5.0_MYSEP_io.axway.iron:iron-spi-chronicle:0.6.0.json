@@ -1,0 +1,62 @@
+[
+  {
+    "coordinatesV1": "io.axway.iron:iron-spi-chronicle:0.5.0",
+    "coordinatesV2": "io.axway.iron:iron-spi-chronicle:0.6.0",
+    "caller": "|java+constructor:///io/axway/iron/spi/chronicle/ChronicleTransactionStore/ChronicleTransactionStore(java.nio.file.Path)|",
+    "called": "|java+method:///io/reactivex/schedulers/Schedulers/computation()|",
+    "v1Body": [
+      "|java+method:///net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder/build()|",
+      "|java+method:///net/openhft/chronicle/queue/ChronicleQueue/createTailer()|",
+      "|java+method:///net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder/binary(java.nio.file.Path)|",
+      "|java+method:///net/openhft/chronicle/queue/ChronicleQueue/acquireAppender()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder/build()|",
+      "|java+method:///java/nio/file/Path/resolve(java.lang.String)|",
+      "|java+method:///io/reactivex/Flowable/observeOn(io.reactivex.Scheduler)|",
+      "|java+method:///io/reactivex/schedulers/Schedulers/computation()|",
+      "|java+method:///io/reactivex/Flowable/generate(io.reactivex.functions.Consumer)|",
+      "|java+constructor:///io/axway/iron/spi/StoreNamePrefixManagement/StoreNamePrefixManagement()|",
+      "|java+method:///io/reactivex/schedulers/Schedulers/io()|",
+      "|java+method:///net/openhft/chronicle/queue/ChronicleQueue/acquireAppender()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///net/openhft/chronicle/queue/ChronicleQueue/createTailer()|",
+      "|java+method:///io/axway/iron/spi/chronicle/ChronicleTransactionStore/ensureDirectoryExists(java.nio.file.Path)|",
+      "|java+method:///net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder/binary(java.nio.file.Path)|",
+      "|java+method:///io/reactivex/Flowable/subscribeOn(io.reactivex.Scheduler)|"
+    ],
+    "affectedLib": "io.reactivex.rxjava2:rxjava:2.1.13",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.axway.iron:iron-spi-chronicle:0.5.0",
+    "coordinatesV2": "io.axway.iron:iron-spi-chronicle:0.6.0",
+    "caller": "|java+constructor:///io/axway/iron/spi/chronicle/ChronicleTransactionStore/ChronicleTransactionStore(java.nio.file.Path)|",
+    "called": "|java+constructor:///io/axway/iron/spi/StoreNamePrefixManagement/StoreNamePrefixManagement()|",
+    "v1Body": [
+      "|java+method:///net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder/build()|",
+      "|java+method:///net/openhft/chronicle/queue/ChronicleQueue/createTailer()|",
+      "|java+method:///net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder/binary(java.nio.file.Path)|",
+      "|java+method:///net/openhft/chronicle/queue/ChronicleQueue/acquireAppender()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder/build()|",
+      "|java+method:///java/nio/file/Path/resolve(java.lang.String)|",
+      "|java+method:///io/reactivex/Flowable/observeOn(io.reactivex.Scheduler)|",
+      "|java+method:///io/reactivex/schedulers/Schedulers/computation()|",
+      "|java+method:///io/reactivex/Flowable/generate(io.reactivex.functions.Consumer)|",
+      "|java+constructor:///io/axway/iron/spi/StoreNamePrefixManagement/StoreNamePrefixManagement()|",
+      "|java+method:///io/reactivex/schedulers/Schedulers/io()|",
+      "|java+method:///net/openhft/chronicle/queue/ChronicleQueue/acquireAppender()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///net/openhft/chronicle/queue/ChronicleQueue/createTailer()|",
+      "|java+method:///io/axway/iron/spi/chronicle/ChronicleTransactionStore/ensureDirectoryExists(java.nio.file.Path)|",
+      "|java+method:///net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder/binary(java.nio.file.Path)|",
+      "|java+method:///io/reactivex/Flowable/subscribeOn(io.reactivex.Scheduler)|"
+    ],
+    "affectedLib": "io.axway.iron:iron-spi:0.6.0",
+    "change": "UPDATED"
+  }
+]

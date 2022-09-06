@@ -1,0 +1,118 @@
+[
+  {
+    "coordinatesV1": "org.neo4j:neo4j-security:3.1.0-M05",
+    "coordinatesV2": "org.neo4j:neo4j-security:3.1.0-M06",
+    "caller": "|java+method:///org/neo4j/server/security/auth/BasicAuthManager/login(java.util.Map)|",
+    "called": "|java+method:///org/neo4j/kernel/api/security/AuthToken/safeCast(java.lang.String,java.util.Map)|",
+    "v1Body": [
+      "|java+method:///org/neo4j/kernel/api/security/AuthToken/safeCast(java.lang.String,java.util.Map)|",
+      "|java+constructor:///org/neo4j/server/security/auth/BasicAuthSubject/BasicAuthSubject(org.neo4j.server.security.auth.BasicAuthManager,org.neo4j.server.security.auth.User,org.neo4j.kernel.api.security.AuthenticationResult)|",
+      "|java+method:///org/neo4j/server/security/auth/AuthenticationStrategy/authenticate(org.neo4j.server.security.auth.User,java.lang.String)|",
+      "|java+method:///org/neo4j/server/security/auth/BasicAuthManager/assertAuthEnabled()|",
+      "|java+method:///org/neo4j/server/security/auth/User/passwordChangeRequired()|",
+      "|java+method:///org/neo4j/server/security/auth/UserRepository/getUserByName(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/neo4j/kernel/api/security/AuthToken/safeCast(java.lang.String,java.util.Map)|",
+      "|java+constructor:///org/neo4j/server/security/auth/BasicAuthSubject/BasicAuthSubject(org.neo4j.server.security.auth.BasicAuthManager,org.neo4j.server.security.auth.User,org.neo4j.kernel.api.security.AuthenticationResult)|",
+      "|java+method:///org/neo4j/server/security/auth/AuthenticationStrategy/authenticate(org.neo4j.server.security.auth.User,java.lang.String)|",
+      "|java+method:///org/neo4j/server/security/auth/User/passwordChangeRequired()|",
+      "|java+method:///org/neo4j/server/security/auth/UserRepository/getUserByName(java.lang.String)|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-kernel:3.1.0-M06",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.neo4j:neo4j-security:3.1.0-M05",
+    "coordinatesV2": "org.neo4j:neo4j-security:3.1.0-M06",
+    "caller": "|java+method:///org/neo4j/server/security/auth/BasicAuthManager/getUser(java.lang.String)|",
+    "called": "|java+constructor:///org/neo4j/kernel/api/security/exception/InvalidArgumentsException/InvalidArgumentsException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/neo4j/server/security/auth/BasicAuthManager/assertAuthEnabled()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/neo4j/server/security/auth/UserRepository/getUserByName(java.lang.String)|",
+      "|java+constructor:///org/neo4j/kernel/api/security/exception/InvalidArgumentsException/InvalidArgumentsException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/neo4j/server/security/auth/UserRepository/getUserByName(java.lang.String)|",
+      "|java+constructor:///org/neo4j/kernel/api/security/exception/InvalidArgumentsException/InvalidArgumentsException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-kernel:3.1.0-M06",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.neo4j:neo4j-security:3.1.0-M05",
+    "coordinatesV2": "org.neo4j:neo4j-security:3.1.0-M06",
+    "caller": "|java+method:///org/neo4j/server/security/auth/BasicAuthManagerFactory/newInstance(org.neo4j.kernel.configuration.Config,org.neo4j.logging.LogProvider)|",
+    "called": "|java+method:///org/neo4j/kernel/configuration/Config/get(org.neo4j.graphdb.config.Setting)|",
+    "v1Body": [
+      "|java+constructor:///org/neo4j/server/security/auth/BasicAuthManager/BasicAuthManager(org.neo4j.server.security.auth.UserRepository,org.neo4j.server.security.auth.PasswordPolicy,java.time.Clock,boolean)|",
+      "|java+constructor:///org/neo4j/server/security/auth/BasicPasswordPolicy/BasicPasswordPolicy()|",
+      "|java+method:///java/io/File/toPath()|",
+      "|java+method:///org/neo4j/kernel/configuration/Config/get(org.neo4j.graphdb.config.Setting)|",
+      "|java+constructor:///org/neo4j/server/security/auth/FileUserRepository/FileUserRepository(java.nio.file.Path,org.neo4j.logging.LogProvider)|",
+      "|java+method:///java/time/Clock/systemUTC()|",
+      "|java+method:///java/lang/Boolean/booleanValue()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+constructor:///org/neo4j/server/security/auth/BasicAuthManager/BasicAuthManager(org.neo4j.server.security.auth.UserRepository,org.neo4j.server.security.auth.PasswordPolicy,java.time.Clock)|",
+      "|java+constructor:///org/neo4j/server/security/auth/BasicPasswordPolicy/BasicPasswordPolicy()|",
+      "|java+method:///java/io/File/toPath()|",
+      "|java+method:///org/neo4j/kernel/configuration/Config/get(org.neo4j.graphdb.config.Setting)|",
+      "|java+constructor:///org/neo4j/server/security/auth/FileUserRepository/FileUserRepository(java.nio.file.Path,org.neo4j.logging.LogProvider)|",
+      "|java+method:///java/time/Clock/systemUTC()|",
+      "|java+method:///java/lang/Boolean/booleanValue()|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-kernel:3.1.0-M06",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.neo4j:neo4j-security:3.1.0-M05",
+    "coordinatesV2": "org.neo4j:neo4j-security:3.1.0-M06",
+    "caller": "|java+method:///org/neo4j/server/security/auth/BasicAuthManager/setUserPassword(java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///org/neo4j/kernel/api/security/exception/InvalidArgumentsException/InvalidArgumentsException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/neo4j/server/security/auth/User/augment()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/neo4j/server/security/auth/User/credentials()|",
+      "|java+method:///org/neo4j/server/security/auth/BasicAuthManager/assertAuthEnabled()|",
+      "|java+method:///org/neo4j/server/security/auth/PasswordPolicy/validatePassword(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/neo4j/server/security/auth/User$Builder/build()|",
+      "|java+method:///org/neo4j/server/security/auth/BasicAuthManager/setUserPassword(java.lang.String,java.lang.String)|",
+      "|java+method:///org/neo4j/server/security/auth/UserRepository/getUserByName(java.lang.String)|",
+      "|java+method:///org/neo4j/server/security/auth/User$Builder/withCredentials(org.neo4j.server.security.auth.Credential)|",
+      "|java+method:///org/neo4j/server/security/auth/Credential/matchesPassword(java.lang.String)|",
+      "|java+method:///org/neo4j/server/security/auth/UserRepository/update(org.neo4j.server.security.auth.User,org.neo4j.server.security.auth.User)|",
+      "|java+method:///org/neo4j/server/security/auth/Credential/forPassword(java.lang.String)|",
+      "|java+constructor:///org/neo4j/kernel/api/security/exception/InvalidArgumentsException/InvalidArgumentsException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/neo4j/server/security/auth/User$Builder/withRequiredPasswordChange(boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/neo4j/server/security/auth/User/augment()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/neo4j/server/security/auth/User/credentials()|",
+      "|java+method:///org/neo4j/server/security/auth/PasswordPolicy/validatePassword(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/neo4j/server/security/auth/User$Builder/build()|",
+      "|java+method:///org/neo4j/server/security/auth/BasicAuthManager/setUserPassword(java.lang.String,java.lang.String)|",
+      "|java+method:///org/neo4j/server/security/auth/UserRepository/getUserByName(java.lang.String)|",
+      "|java+method:///org/neo4j/server/security/auth/User$Builder/withCredentials(org.neo4j.server.security.auth.Credential)|",
+      "|java+method:///org/neo4j/server/security/auth/Credential/matchesPassword(java.lang.String)|",
+      "|java+method:///org/neo4j/server/security/auth/UserRepository/update(org.neo4j.server.security.auth.User,org.neo4j.server.security.auth.User)|",
+      "|java+method:///org/neo4j/server/security/auth/Credential/forPassword(java.lang.String)|",
+      "|java+constructor:///org/neo4j/kernel/api/security/exception/InvalidArgumentsException/InvalidArgumentsException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/neo4j/server/security/auth/User$Builder/withRequiredPasswordChange(boolean)|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-kernel:3.1.0-M06",
+    "change": "UPDATED"
+  }
+]

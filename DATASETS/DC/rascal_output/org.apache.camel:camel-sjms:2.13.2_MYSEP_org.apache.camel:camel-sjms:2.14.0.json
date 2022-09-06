@@ -1,0 +1,486 @@
+[
+  {
+    "coordinatesV1": "org.apache.camel:camel-sjms:2.13.2",
+    "coordinatesV2": "org.apache.camel:camel-sjms:2.14.0",
+    "caller": "|java+method:///org/apache/camel/component/sjms/SjmsProducer/process(org.apache.camel.Exchange,org.apache.camel.AsyncCallback)|",
+    "called": "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/borrowObject()|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/camel/Exchange/getExchangeId()|",
+      "|java+method:///org/apache/camel/Exchange/setException(java.lang.Throwable)|",
+      "|java+method:///java/util/concurrent/ExecutorService/execute(java.lang.Runnable)|",
+      "|java+method:///org/apache/camel/Message/getBody()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsProducer/isSynchronous()|",
+      "|java+method:///java/lang/Exception/getLocalizedMessage()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsProducer/getExecutor()|",
+      "|java+constructor:///org/apache/camel/component/sjms/SjmsProducer$1/SjmsProducer$1(org.apache.camel.component.sjms.SjmsProducer,org.apache.camel.Exchange,org.apache.camel.AsyncCallback)|",
+      "|java+method:///org/apache/camel/Exchange/getIn()|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsProducer/sendMessage(org.apache.camel.Exchange,org.apache.camel.AsyncCallback)|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/camel/component/sjms/SjmsProducer/sendMessage(org.apache.camel.Exchange,org.apache.camel.AsyncCallback,org.apache.camel.component.sjms.MessageProducerResources)|",
+      "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/borrowObject()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/apache/camel/component/sjms/SjmsProducer$3/SjmsProducer$3(org.apache.camel.component.sjms.SjmsProducer,org.apache.camel.Exchange,org.apache.camel.AsyncCallback,org.apache.camel.component.sjms.MessageProducerResources)|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/camel/Exchange/getExchangeId()|",
+      "|java+method:///org/apache/camel/Exchange/getIn()|",
+      "|java+method:///org/apache/camel/Message/getBody()|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsProducer/isSynchronous()|",
+      "|java+method:///java/lang/Exception/getLocalizedMessage()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsProducer/getExecutor()|",
+      "|java+method:///org/apache/camel/Exchange/setException(java.lang.Throwable)|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsProducer/getProducers()|",
+      "|java+constructor:///java/lang/Exception/Exception(java.lang.String)|",
+      "|java+method:///java/util/concurrent/ExecutorService/execute(java.lang.Runnable)|"
+    ],
+    "affectedLib": "commons-pool:commons-pool:1.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.camel:camel-sjms:2.13.2",
+    "coordinatesV2": "org.apache.camel:camel-sjms:2.14.0",
+    "caller": "|java+method:///org/apache/camel/component/sjms/producer/InOutProducer/doStart()|",
+    "called": "|java+constructor:///org/apache/commons/pool/impl/GenericObjectPool/GenericObjectPool(org.apache.commons.pool.PoolableObjectFactory)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsProducer/doStart()|",
+      "|java+method:///org/apache/camel/component/sjms/producer/InOutProducer/getConsumers()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apache/camel/component/sjms/producer/InOutProducer/setConsumers(org.apache.camel.component.sjms.producer.InOutProducer$MessageConsumerPool)|",
+      "|java+constructor:///org/apache/camel/component/sjms/producer/InOutProducer$MessageConsumerPool/InOutProducer$MessageConsumerPool(org.apache.camel.component.sjms.producer.InOutProducer,int)|",
+      "|java+method:///org/apache/camel/component/sjms/producer/InOutProducer/getNamedReplyTo()|",
+      "|java+method:///org/apache/camel/component/sjms/producer/InOutProducer/getConsumerCount()|",
+      "|java+method:///org/apache/camel/component/sjms/producer/InOutProducer$MessageConsumerPool/fillPool()|",
+      "|java+method:///org/apache/camel/util/ObjectHelper/isEmpty(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsProducer/doStart()|",
+      "|java+method:///org/apache/camel/component/sjms/producer/InOutProducer/getConsumers()|",
+      "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/addObject()|",
+      "|java+method:///org/apache/camel/util/ObjectHelper/isEmpty(java.lang.Object)|",
+      "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/setMaxIdle(int)|",
+      "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/getMaxIdle()|",
+      "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/getNumIdle()|",
+      "|java+constructor:///org/apache/commons/pool/impl/GenericObjectPool/GenericObjectPool(org.apache.commons.pool.PoolableObjectFactory)|",
+      "|java+method:///org/apache/camel/component/sjms/producer/InOutProducer/getNamedReplyTo()|",
+      "|java+method:///org/apache/camel/component/sjms/producer/InOutProducer/getConsumerCount()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///org/apache/camel/component/sjms/producer/InOutProducer$MessageConsumerResourcesFactory/InOutProducer$MessageConsumerResourcesFactory(org.apache.camel.component.sjms.producer.InOutProducer)|",
+      "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/setMaxActive(int)|",
+      "|java+method:///org/apache/camel/component/sjms/producer/InOutProducer/setConsumers(org.apache.commons.pool.impl.GenericObjectPool)|"
+    ],
+    "affectedLib": "commons-pool:commons-pool:1.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.camel:camel-sjms:2.13.2",
+    "coordinatesV2": "org.apache.camel:camel-sjms:2.14.0",
+    "caller": "|java+method:///org/apache/camel/component/sjms/producer/InOutProducer/doStop()|",
+    "called": "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/close()|",
+    "v1Body": [
+      "|java+method:///org/apache/camel/component/sjms/producer/InOutProducer/setConsumers(org.apache.camel.component.sjms.producer.InOutProducer$MessageConsumerPool)|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsProducer/doStop()|",
+      "|java+method:///org/apache/camel/component/sjms/producer/InOutProducer$MessageConsumerPool/drainPool()|",
+      "|java+method:///org/apache/camel/component/sjms/producer/InOutProducer/getConsumers()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/camel/component/sjms/producer/InOutProducer/getConsumers()|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsProducer/doStop()|",
+      "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/close()|",
+      "|java+method:///org/apache/camel/component/sjms/producer/InOutProducer/setConsumers(org.apache.commons.pool.impl.GenericObjectPool)|"
+    ],
+    "affectedLib": "commons-pool:commons-pool:1.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.camel:camel-sjms:2.13.2",
+    "coordinatesV2": "org.apache.camel:camel-sjms:2.14.0",
+    "caller": "|java+method:///org/apache/camel/component/sjms/jms/ConnectionFactoryResource/borrowConnection()|",
+    "called": "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/borrowObject()|",
+    "v1Body": [
+      "|java+method:///org/apache/camel/component/sjms/jms/ConnectionFactoryResource/borrowObject()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/borrowObject()|"
+    ],
+    "affectedLib": "commons-pool:commons-pool:1.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.camel:camel-sjms:2.13.2",
+    "coordinatesV2": "org.apache.camel:camel-sjms:2.14.0",
+    "caller": "|java+method:///org/apache/camel/component/sjms/SjmsConsumer/doStart()|",
+    "called": "|java+constructor:///org/apache/commons/pool/impl/GenericObjectPool/GenericObjectPool(org.apache.commons.pool.PoolableObjectFactory)|",
+    "v1Body": [
+      "|java+method:///org/apache/camel/component/sjms/SjmsConsumer$MessageConsumerPool/fillPool()|",
+      "|java+method:///org/apache/camel/impl/DefaultConsumer/doStart()|",
+      "|java+constructor:///org/apache/camel/component/sjms/SjmsConsumer$MessageConsumerPool/SjmsConsumer$MessageConsumerPool(org.apache.camel.component.sjms.SjmsConsumer)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/camel/component/sjms/SjmsConsumer/fillConsumersPool()|",
+      "|java+method:///java/util/concurrent/ExecutorService/submit(java.lang.Runnable)|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsConsumer/getConsumerCount()|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsEndpoint/isAsyncStartListener()|",
+      "|java+method:///org/apache/camel/spi/ExecutorServiceManager/newDefaultThreadPool(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/apache/camel/CamelContext/getExecutorServiceManager()|",
+      "|java+constructor:///org/apache/commons/pool/impl/GenericObjectPool/GenericObjectPool(org.apache.commons.pool.PoolableObjectFactory)|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsConsumer/getEndpoint()|",
+      "|java+method:///org/apache/camel/impl/DefaultConsumer/doStart()|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsComponent/getAsyncStartStopExecutorService()|",
+      "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/setMaxIdle(int)|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsEndpoint/getComponent()|",
+      "|java+constructor:///org/apache/camel/component/sjms/SjmsConsumer$MessageConsumerResourcesFactory/SjmsConsumer$MessageConsumerResourcesFactory(org.apache.camel.component.sjms.SjmsConsumer)|",
+      "|java+constructor:///org/apache/camel/component/sjms/SjmsConsumer$1/SjmsConsumer$1(org.apache.camel.component.sjms.SjmsConsumer)|",
+      "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/setMaxActive(int)|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsEndpoint/getCamelContext()|"
+    ],
+    "affectedLib": "commons-pool:commons-pool:1.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.camel:camel-sjms:2.13.2",
+    "coordinatesV2": "org.apache.camel:camel-sjms:2.14.0",
+    "caller": "|java+method:///org/apache/camel/component/sjms/SjmsConsumer/doStop()|",
+    "called": "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/close()|",
+    "v1Body": [
+      "|java+method:///org/apache/camel/component/sjms/SjmsConsumer$MessageConsumerPool/drainPool()|",
+      "|java+method:///org/apache/camel/impl/DefaultConsumer/doStop()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/ExecutorService/submit(java.lang.Runnable)|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsEndpoint/getComponent()|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsEndpoint/getCamelContext()|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsComponent/getAsyncStartStopExecutorService()|",
+      "|java+method:///org/apache/camel/impl/DefaultConsumer/doStop()|",
+      "|java+method:///org/apache/camel/CamelContext/getExecutorServiceManager()|",
+      "|java+method:///java/util/concurrent/Future/cancel(boolean)|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsEndpoint/isAsyncStopListener()|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsConsumer/getEndpoint()|",
+      "|java+method:///java/util/concurrent/Future/isDone()|",
+      "|java+constructor:///org/apache/camel/component/sjms/SjmsConsumer$2/SjmsConsumer$2(org.apache.camel.component.sjms.SjmsConsumer)|",
+      "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/close()|",
+      "|java+method:///org/apache/camel/spi/ExecutorServiceManager/shutdownGraceful(java.util.concurrent.ExecutorService)|"
+    ],
+    "affectedLib": "commons-pool:commons-pool:1.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.camel:camel-sjms:2.13.2",
+    "coordinatesV2": "org.apache.camel:camel-sjms:2.14.0",
+    "caller": "|java+method:///org/apache/camel/component/sjms/SjmsProducer/doStop()|",
+    "called": "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/close()|",
+    "v1Body": [
+      "|java+method:///org/apache/camel/impl/DefaultAsyncProducer/doStop()|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsProducer$MessageProducerPool/drainPool()|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsProducer/getProducers()|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsProducer/setProducers(org.apache.camel.component.sjms.SjmsProducer$MessageProducerPool)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/camel/component/sjms/SjmsProducer$2/SjmsProducer$2(org.apache.camel.component.sjms.SjmsProducer)|",
+      "|java+method:///java/util/concurrent/ExecutorService/submit(java.lang.Runnable)|",
+      "|java+method:///org/apache/camel/impl/DefaultAsyncProducer/doStop()|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsEndpoint/getComponent()|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsProducer/setProducers(org.apache.commons.pool.impl.GenericObjectPool)|",
+      "|java+method:///java/util/concurrent/Future/isDone()|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsEndpoint/getCamelContext()|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsComponent/getAsyncStartStopExecutorService()|",
+      "|java+method:///org/apache/camel/CamelContext/getExecutorServiceManager()|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsProducer/getEndpoint()|",
+      "|java+method:///java/util/concurrent/Future/cancel(boolean)|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsEndpoint/isAsyncStopListener()|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsProducer/getProducers()|",
+      "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/close()|",
+      "|java+method:///org/apache/camel/spi/ExecutorServiceManager/shutdownGraceful(java.util.concurrent.ExecutorService)|"
+    ],
+    "affectedLib": "commons-pool:commons-pool:1.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.camel:camel-sjms:2.13.2",
+    "coordinatesV2": "org.apache.camel:camel-sjms:2.14.0",
+    "caller": "|java+method:///org/apache/camel/component/sjms/jms/ConnectionFactoryResource/returnConnection(javax.jms.Connection)|",
+    "called": "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/returnObject(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/camel/component/sjms/jms/ConnectionFactoryResource/returnObject(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/returnObject(java.lang.Object)|"
+    ],
+    "affectedLib": "commons-pool:commons-pool:1.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.camel:camel-sjms:2.13.2",
+    "coordinatesV2": "org.apache.camel:camel-sjms:2.14.0",
+    "caller": "|java+method:///org/apache/camel/component/sjms/SjmsProducer/doStart()|",
+    "called": "|java+constructor:///org/apache/commons/pool/impl/GenericObjectPool/GenericObjectPool(org.apache.commons.pool.PoolableObjectFactory)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/camel/component/sjms/SjmsProducer$MessageProducerPool/SjmsProducer$MessageProducerPool(org.apache.camel.component.sjms.SjmsProducer)|",
+      "|java+method:///org/apache/camel/impl/DefaultAsyncProducer/doStart()|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsProducer/getProducers()|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsProducer/setProducers(org.apache.camel.component.sjms.SjmsProducer$MessageProducerPool)|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsProducer$MessageProducerPool/fillPool()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/camel/component/sjms/SjmsProducer/fillProducersPool()|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsEndpoint/isPrefillPool()|",
+      "|java+method:///java/util/concurrent/ExecutorService/submit(java.lang.Runnable)|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsEndpoint/isAsyncStartListener()|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsProducer/setProducers(org.apache.commons.pool.impl.GenericObjectPool)|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsProducer/getProducerCount()|",
+      "|java+method:///org/apache/camel/spi/ExecutorServiceManager/newDefaultThreadPool(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///org/apache/commons/pool/impl/GenericObjectPool/GenericObjectPool(org.apache.commons.pool.PoolableObjectFactory)|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsComponent/getAsyncStartStopExecutorService()|",
+      "|java+constructor:///org/apache/camel/component/sjms/SjmsProducer$MessageProducerResourcesFactory/SjmsProducer$MessageProducerResourcesFactory(org.apache.camel.component.sjms.SjmsProducer)|",
+      "|java+constructor:///org/apache/camel/component/sjms/SjmsProducer$1/SjmsProducer$1(org.apache.camel.component.sjms.SjmsProducer)|",
+      "|java+method:///org/apache/camel/impl/DefaultAsyncProducer/doStart()|",
+      "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/setMaxIdle(int)|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsEndpoint/getComponent()|",
+      "|java+method:///org/apache/camel/CamelContext/getExecutorServiceManager()|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsProducer/getEndpoint()|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsProducer/getProducers()|",
+      "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/setMaxActive(int)|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsEndpoint/getCamelContext()|"
+    ],
+    "affectedLib": "commons-pool:commons-pool:1.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.camel:camel-sjms:2.13.2",
+    "coordinatesV2": "org.apache.camel:camel-sjms:2.14.0",
+    "caller": "|java+method:///org/apache/camel/component/sjms/producer/InOutProducer/doStart()|",
+    "called": "|java+method:///org/apache/camel/util/ObjectHelper/isEmpty(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsProducer/doStart()|",
+      "|java+method:///org/apache/camel/component/sjms/producer/InOutProducer/getConsumers()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apache/camel/component/sjms/producer/InOutProducer/setConsumers(org.apache.camel.component.sjms.producer.InOutProducer$MessageConsumerPool)|",
+      "|java+constructor:///org/apache/camel/component/sjms/producer/InOutProducer$MessageConsumerPool/InOutProducer$MessageConsumerPool(org.apache.camel.component.sjms.producer.InOutProducer,int)|",
+      "|java+method:///org/apache/camel/component/sjms/producer/InOutProducer/getNamedReplyTo()|",
+      "|java+method:///org/apache/camel/component/sjms/producer/InOutProducer/getConsumerCount()|",
+      "|java+method:///org/apache/camel/component/sjms/producer/InOutProducer$MessageConsumerPool/fillPool()|",
+      "|java+method:///org/apache/camel/util/ObjectHelper/isEmpty(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsProducer/doStart()|",
+      "|java+method:///org/apache/camel/component/sjms/producer/InOutProducer/getConsumers()|",
+      "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/addObject()|",
+      "|java+method:///org/apache/camel/util/ObjectHelper/isEmpty(java.lang.Object)|",
+      "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/setMaxIdle(int)|",
+      "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/getMaxIdle()|",
+      "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/getNumIdle()|",
+      "|java+constructor:///org/apache/commons/pool/impl/GenericObjectPool/GenericObjectPool(org.apache.commons.pool.PoolableObjectFactory)|",
+      "|java+method:///org/apache/camel/component/sjms/producer/InOutProducer/getNamedReplyTo()|",
+      "|java+method:///org/apache/camel/component/sjms/producer/InOutProducer/getConsumerCount()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///org/apache/camel/component/sjms/producer/InOutProducer$MessageConsumerResourcesFactory/InOutProducer$MessageConsumerResourcesFactory(org.apache.camel.component.sjms.producer.InOutProducer)|",
+      "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/setMaxActive(int)|",
+      "|java+method:///org/apache/camel/component/sjms/producer/InOutProducer/setConsumers(org.apache.commons.pool.impl.GenericObjectPool)|"
+    ],
+    "affectedLib": "org.apache.camel:camel-core:2.14.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.camel:camel-sjms:2.13.2",
+    "coordinatesV2": "org.apache.camel:camel-sjms:2.14.0",
+    "caller": "|java+constructor:///org/apache/camel/component/sjms/SjmsConsumer/SjmsConsumer(org.apache.camel.Endpoint,org.apache.camel.Processor)|",
+    "called": "|java+constructor:///org/apache/camel/impl/DefaultConsumer/DefaultConsumer(org.apache.camel.Endpoint,org.apache.camel.Processor)|",
+    "v1Body": [
+      "|java+method:///org/apache/camel/Endpoint/getCamelContext()|",
+      "|java+method:///org/apache/camel/CamelContext/getExecutorServiceManager()|",
+      "|java+method:///org/apache/camel/spi/ExecutorServiceManager/newDefaultThreadPool(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///org/apache/camel/impl/DefaultConsumer/DefaultConsumer(org.apache.camel.Endpoint,org.apache.camel.Processor)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/camel/impl/DefaultConsumer/DefaultConsumer(org.apache.camel.Endpoint,org.apache.camel.Processor)|"
+    ],
+    "affectedLib": "org.apache.camel:camel-core:2.14.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.camel:camel-sjms:2.13.2",
+    "coordinatesV2": "org.apache.camel:camel-sjms:2.14.0",
+    "caller": "|java+method:///org/apache/camel/component/sjms/SjmsConsumer/createConsumer()|",
+    "called": "|java+constructor:///org/apache/camel/CamelException/CamelException(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/camel/component/sjms/SjmsConsumer$MessageConsumerResources/SjmsConsumer$MessageConsumerResources(org.apache.camel.component.sjms.SjmsConsumer,javax.jms.Session,javax.jms.MessageConsumer)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/camel/component/sjms/jms/ConnectionResource/returnConnection(javax.jms.Connection)|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsConsumer/getConnectionResource()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsConsumer/getMessageSelector()|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsConsumer/isTransacted()|",
+      "|java+constructor:///org/apache/camel/CamelException/CamelException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///javax/jms/Connection/createSession(boolean,int)|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsConsumer/createMessageHandler(javax.jms.Session)|",
+      "|java+method:///org/apache/camel/component/sjms/jms/ConnectionResource/borrowConnection()|",
+      "|java+method:///org/apache/camel/component/sjms/jms/JmsObjectFactory/createMessageConsumer(javax.jms.Session,java.lang.String,java.lang.String,boolean,java.lang.String)|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsConsumer/getDurableSubscriptionId()|",
+      "|java+method:///javax/jms/MessageConsumer/setMessageListener(javax.jms.MessageListener)|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsConsumer/getDestinationName()|",
+      "|java+method:///java/lang/Exception/getLocalizedMessage()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsConsumer/isTopic()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/camel/component/sjms/jms/ConnectionResource/returnConnection(javax.jms.Connection)|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsConsumer/getConnectionResource()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsConsumer/getMessageSelector()|",
+      "|java+constructor:///org/apache/camel/component/sjms/MessageConsumerResources/MessageConsumerResources(javax.jms.Session,javax.jms.MessageConsumer)|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsConsumer/isTransacted()|",
+      "|java+constructor:///org/apache/camel/CamelException/CamelException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///javax/jms/Connection/createSession(boolean,int)|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsConsumer/createMessageHandler(javax.jms.Session)|",
+      "|java+method:///org/apache/camel/component/sjms/jms/ConnectionResource/borrowConnection()|",
+      "|java+method:///org/apache/camel/component/sjms/jms/JmsObjectFactory/createMessageConsumer(javax.jms.Session,java.lang.String,java.lang.String,boolean,java.lang.String)|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsConsumer/getDurableSubscriptionId()|",
+      "|java+method:///javax/jms/MessageConsumer/setMessageListener(javax.jms.MessageListener)|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsConsumer/getDestinationName()|",
+      "|java+method:///java/lang/Exception/getLocalizedMessage()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsConsumer/isTopic()|"
+    ],
+    "affectedLib": "org.apache.camel:camel-core:2.14.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.camel:camel-sjms:2.13.2",
+    "coordinatesV2": "org.apache.camel:camel-sjms:2.14.0",
+    "caller": "|java+method:///org/apache/camel/component/sjms/producer/InOutProducer/doCreateProducerModel()|",
+    "called": "|java+constructor:///org/apache/camel/CamelException/CamelException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///javax/jms/Connection/createSession(boolean,int)|",
+      "|java+method:///org/apache/camel/component/sjms/jms/ConnectionResource/borrowConnection()|",
+      "|java+method:///org/apache/camel/component/sjms/producer/InOutProducer/isEndpointTransacted()|",
+      "|java+method:///org/apache/camel/component/sjms/producer/InOutProducer/getAcknowledgeMode()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/camel/component/sjms/jms/ConnectionResource/returnConnection(javax.jms.Connection)|",
+      "|java+method:///java/lang/Exception/getLocalizedMessage()|",
+      "|java+method:///org/apache/camel/component/sjms/producer/InOutProducer/getTtl()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+constructor:///org/apache/camel/component/sjms/SjmsProducer$MessageProducerResources/SjmsProducer$MessageProducerResources(org.apache.camel.component.sjms.SjmsProducer,javax.jms.Session,javax.jms.MessageProducer)|",
+      "|java+method:///org/apache/camel/component/sjms/producer/InOutProducer/isPersistent()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/camel/component/sjms/jms/JmsObjectFactory/createMessageProducer(javax.jms.Session,java.lang.String,boolean,boolean,long)|",
+      "|java+constructor:///org/apache/camel/CamelException/CamelException(java.lang.String)|",
+      "|java+method:///org/apache/camel/component/sjms/producer/InOutProducer/getConnectionResource()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/camel/component/sjms/producer/InOutProducer/isTopic()|",
+      "|java+method:///org/apache/camel/component/sjms/producer/InOutProducer/getDestinationName()|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/jms/Connection/createSession(boolean,int)|",
+      "|java+method:///org/apache/camel/component/sjms/jms/ConnectionResource/borrowConnection()|",
+      "|java+method:///org/apache/camel/component/sjms/producer/InOutProducer/isEndpointTransacted()|",
+      "|java+method:///org/apache/camel/component/sjms/producer/InOutProducer/getAcknowledgeMode()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/camel/component/sjms/jms/ConnectionResource/returnConnection(javax.jms.Connection)|",
+      "|java+method:///java/lang/Exception/getLocalizedMessage()|",
+      "|java+method:///org/apache/camel/component/sjms/producer/InOutProducer/getTtl()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+method:///org/apache/camel/component/sjms/producer/InOutProducer/isPersistent()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/camel/component/sjms/jms/JmsObjectFactory/createMessageProducer(javax.jms.Session,java.lang.String,boolean,boolean,long)|",
+      "|java+constructor:///org/apache/camel/component/sjms/MessageProducerResources/MessageProducerResources(javax.jms.Session,javax.jms.MessageProducer)|",
+      "|java+constructor:///org/apache/camel/CamelException/CamelException(java.lang.String)|",
+      "|java+method:///org/apache/camel/component/sjms/producer/InOutProducer/getConnectionResource()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/camel/component/sjms/producer/InOutProducer/isTopic()|",
+      "|java+method:///org/apache/camel/component/sjms/producer/InOutProducer/getDestinationName()|"
+    ],
+    "affectedLib": "org.apache.camel:camel-core:2.14.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.camel:camel-sjms:2.13.2",
+    "coordinatesV2": "org.apache.camel:camel-sjms:2.14.0",
+    "caller": "|java+method:///org/apache/camel/component/sjms/SjmsConsumer/doStart()|",
+    "called": "|java+method:///org/apache/camel/impl/DefaultConsumer/doStart()|",
+    "v1Body": [
+      "|java+method:///org/apache/camel/component/sjms/SjmsConsumer$MessageConsumerPool/fillPool()|",
+      "|java+method:///org/apache/camel/impl/DefaultConsumer/doStart()|",
+      "|java+constructor:///org/apache/camel/component/sjms/SjmsConsumer$MessageConsumerPool/SjmsConsumer$MessageConsumerPool(org.apache.camel.component.sjms.SjmsConsumer)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/camel/component/sjms/SjmsConsumer/fillConsumersPool()|",
+      "|java+method:///java/util/concurrent/ExecutorService/submit(java.lang.Runnable)|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsConsumer/getConsumerCount()|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsEndpoint/isAsyncStartListener()|",
+      "|java+method:///org/apache/camel/spi/ExecutorServiceManager/newDefaultThreadPool(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/apache/camel/CamelContext/getExecutorServiceManager()|",
+      "|java+constructor:///org/apache/commons/pool/impl/GenericObjectPool/GenericObjectPool(org.apache.commons.pool.PoolableObjectFactory)|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsConsumer/getEndpoint()|",
+      "|java+method:///org/apache/camel/impl/DefaultConsumer/doStart()|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsComponent/getAsyncStartStopExecutorService()|",
+      "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/setMaxIdle(int)|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsEndpoint/getComponent()|",
+      "|java+constructor:///org/apache/camel/component/sjms/SjmsConsumer$MessageConsumerResourcesFactory/SjmsConsumer$MessageConsumerResourcesFactory(org.apache.camel.component.sjms.SjmsConsumer)|",
+      "|java+constructor:///org/apache/camel/component/sjms/SjmsConsumer$1/SjmsConsumer$1(org.apache.camel.component.sjms.SjmsConsumer)|",
+      "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/setMaxActive(int)|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsEndpoint/getCamelContext()|"
+    ],
+    "affectedLib": "org.apache.camel:camel-core:2.14.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.camel:camel-sjms:2.13.2",
+    "coordinatesV2": "org.apache.camel:camel-sjms:2.14.0",
+    "caller": "|java+method:///org/apache/camel/component/sjms/SjmsConsumer/doStop()|",
+    "called": "|java+method:///org/apache/camel/impl/DefaultConsumer/doStop()|",
+    "v1Body": [
+      "|java+method:///org/apache/camel/component/sjms/SjmsConsumer$MessageConsumerPool/drainPool()|",
+      "|java+method:///org/apache/camel/impl/DefaultConsumer/doStop()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/ExecutorService/submit(java.lang.Runnable)|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsEndpoint/getComponent()|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsEndpoint/getCamelContext()|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsComponent/getAsyncStartStopExecutorService()|",
+      "|java+method:///org/apache/camel/impl/DefaultConsumer/doStop()|",
+      "|java+method:///org/apache/camel/CamelContext/getExecutorServiceManager()|",
+      "|java+method:///java/util/concurrent/Future/cancel(boolean)|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsEndpoint/isAsyncStopListener()|",
+      "|java+method:///org/apache/camel/component/sjms/SjmsConsumer/getEndpoint()|",
+      "|java+method:///java/util/concurrent/Future/isDone()|",
+      "|java+constructor:///org/apache/camel/component/sjms/SjmsConsumer$2/SjmsConsumer$2(org.apache.camel.component.sjms.SjmsConsumer)|",
+      "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/close()|",
+      "|java+method:///org/apache/camel/spi/ExecutorServiceManager/shutdownGraceful(java.util.concurrent.ExecutorService)|"
+    ],
+    "affectedLib": "org.apache.camel:camel-core:2.14.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.camel:camel-sjms:2.13.2",
+    "coordinatesV2": "org.apache.camel:camel-sjms:2.14.0",
+    "caller": "|java+constructor:///org/apache/camel/component/sjms/SjmsProducer/SjmsProducer(org.apache.camel.Endpoint)|",
+    "called": "|java+constructor:///org/apache/camel/impl/DefaultAsyncProducer/DefaultAsyncProducer(org.apache.camel.Endpoint)|",
+    "v1Body": [
+      "|java+method:///org/apache/camel/Endpoint/getCamelContext()|",
+      "|java+method:///org/apache/camel/spi/ExecutorServiceManager/newDefaultThreadPool(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/apache/camel/CamelContext/getExecutorServiceManager()|",
+      "|java+constructor:///org/apache/camel/impl/DefaultAsyncProducer/DefaultAsyncProducer(org.apache.camel.Endpoint)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/camel/impl/DefaultAsyncProducer/DefaultAsyncProducer(org.apache.camel.Endpoint)|"
+    ],
+    "affectedLib": "org.apache.camel:camel-core:2.14.0",
+    "change": "UPDATED"
+  }
+]

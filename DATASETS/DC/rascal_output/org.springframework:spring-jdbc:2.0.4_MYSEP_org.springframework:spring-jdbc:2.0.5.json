@@ -1,0 +1,187 @@
+[
+  {
+    "coordinatesV1": "org.springframework:spring-jdbc:2.0.4",
+    "coordinatesV2": "org.springframework:spring-jdbc:2.0.5",
+    "caller": "|java+method:///org/springframework/jdbc/core/namedparam/NamedParameterJdbcTemplate/queryForObject(java.lang.String,org.springframework.jdbc.core.namedparam.SqlParameterSource,org.springframework.jdbc.core.RowMapper)|",
+    "called": "|java+method:///org/springframework/dao/support/DataAccessUtils/requiredSingleResult(java.util.Collection)|",
+    "v1Body": [
+      "|java+method:///org/springframework/jdbc/core/namedparam/NamedParameterUtils/buildSqlTypeArray(org.springframework.jdbc.core.namedparam.ParsedSql,org.springframework.jdbc.core.namedparam.SqlParameterSource)|",
+      "|java+constructor:///org/springframework/jdbc/core/RowMapperResultSetExtractor/RowMapperResultSetExtractor(org.springframework.jdbc.core.RowMapper,int)|",
+      "|java+method:///org/springframework/jdbc/core/namedparam/NamedParameterUtils/substituteNamedParameters(java.lang.String,org.springframework.jdbc.core.namedparam.SqlParameterSource)|",
+      "|java+method:///org/springframework/jdbc/core/namedparam/NamedParameterJdbcTemplate/getJdbcOperations()|",
+      "|java+method:///org/springframework/jdbc/core/namedparam/NamedParameterUtils/buildValueArray(org.springframework.jdbc.core.namedparam.ParsedSql,org.springframework.jdbc.core.namedparam.SqlParameterSource)|",
+      "|java+method:///org/springframework/jdbc/core/namedparam/NamedParameterUtils/parseSqlStatement(java.lang.String)|",
+      "|java+method:///org/springframework/dao/support/DataAccessUtils/requiredSingleResult(java.util.Collection)|",
+      "|java+method:///org/springframework/jdbc/core/JdbcOperations/query(java.lang.String,java.lang.Object%5B%5D,int%5B%5D,org.springframework.jdbc.core.ResultSetExtractor)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/jdbc/core/namedparam/NamedParameterJdbcTemplate/getJdbcOperations()|",
+      "|java+method:///org/springframework/jdbc/core/JdbcOperations/query(org.springframework.jdbc.core.PreparedStatementCreator,org.springframework.jdbc.core.RowMapper)|",
+      "|java+method:///org/springframework/dao/support/DataAccessUtils/requiredSingleResult(java.util.Collection)|",
+      "|java+method:///org/springframework/jdbc/core/namedparam/NamedParameterJdbcTemplate/getPreparedStatementCreator(java.lang.String,org.springframework.jdbc.core.namedparam.SqlParameterSource)|"
+    ],
+    "affectedLib": "org.springframework:spring-dao:2.0.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework:spring-jdbc:2.0.4",
+    "coordinatesV2": "org.springframework:spring-jdbc:2.0.5",
+    "caller": "|java+method:///org/springframework/jdbc/object/RdbmsOperation/validateParameters(java.lang.Object%5B%5D)|",
+    "called": "|java+constructor:///org/springframework/dao/InvalidDataAccessApiUsageException/InvalidDataAccessApiUsageException(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/dao/InvalidDataAccessApiUsageException/InvalidDataAccessApiUsageException(java.lang.String)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/StringBuffer/append(int)|",
+      "|java+method:///org/springframework/jdbc/core/SqlParameter/getSqlType()|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|",
+      "|java+method:///org/springframework/jdbc/object/RdbmsOperation/allowsUnusedParameters()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/springframework/jdbc/object/RdbmsOperation/supportsLobParameters()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/springframework/jdbc/object/RdbmsOperation/checkCompiled()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/jdbc/object/RdbmsOperation/validateParameterCount(int,int)|",
+      "|java+constructor:///org/springframework/dao/InvalidDataAccessApiUsageException/InvalidDataAccessApiUsageException(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/springframework/jdbc/object/RdbmsOperation/checkCompiled()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/springframework/jdbc/core/SqlParameter/getSqlType()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/springframework/jdbc/object/RdbmsOperation/supportsLobParameters()|"
+    ],
+    "affectedLib": "org.springframework:spring-dao:2.0.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework:spring-jdbc:2.0.4",
+    "coordinatesV2": "org.springframework:spring-jdbc:2.0.5",
+    "caller": "|java+method:///org/springframework/jdbc/object/RdbmsOperation/validateNamedParameters(java.util.Map)|",
+    "called": "|java+constructor:///org/springframework/dao/InvalidDataAccessApiUsageException/InvalidDataAccessApiUsageException(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/dao/InvalidDataAccessApiUsageException/InvalidDataAccessApiUsageException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.Object)|",
+      "|java+method:///java/util/Map/size()|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+method:///java/util/Map/containsKey(java.lang.Object)|",
+      "|java+method:///org/springframework/jdbc/object/RdbmsOperation/checkCompiled()|",
+      "|java+method:///org/springframework/jdbc/core/SqlParameter/getSqlType()|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/springframework/jdbc/object/RdbmsOperation/supportsLobParameters()|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///org/springframework/jdbc/core/SqlParameter/getName()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Map/keySet()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/jdbc/object/RdbmsOperation/validateParameterCount(int,int)|",
+      "|java+constructor:///org/springframework/dao/InvalidDataAccessApiUsageException/InvalidDataAccessApiUsageException(java.lang.String)|",
+      "|java+method:///org/springframework/jdbc/core/SqlParameter/getName()|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.Object)|",
+      "|java+method:///java/util/Map/size()|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+method:///java/util/Map/containsKey(java.lang.Object)|",
+      "|java+method:///org/springframework/jdbc/object/RdbmsOperation/checkCompiled()|",
+      "|java+method:///org/springframework/jdbc/core/SqlParameter/getSqlType()|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/springframework/jdbc/object/RdbmsOperation/supportsLobParameters()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Map/keySet()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|"
+    ],
+    "affectedLib": "org.springframework:spring-dao:2.0.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework:spring-jdbc:2.0.4",
+    "coordinatesV2": "org.springframework:spring-jdbc:2.0.5",
+    "caller": "|java+constructor:///org/springframework/jdbc/core/namedparam/NamedParameterJdbcTemplate/NamedParameterJdbcTemplate(org.springframework.jdbc.core.JdbcOperations)|",
+    "called": "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.springframework:spring-core:2.0.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework:spring-jdbc:2.0.4",
+    "coordinatesV2": "org.springframework:spring-jdbc:2.0.5",
+    "caller": "|java+method:///org/springframework/jdbc/core/namedparam/NamedParameterUtils/parseSqlStatement(java.lang.String)|",
+    "called": "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuffer/append(char)|",
+      "|java+method:///org/springframework/jdbc/core/namedparam/ParsedSql/setTotalParameterCount(int)|",
+      "|java+method:///org/springframework/jdbc/core/namedparam/ParsedSql/setParameterNames(java.lang.String%5B%5D)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/springframework/jdbc/core/namedparam/ParsedSql/setUnnamedParameterCount(int)|",
+      "|java+constructor:///org/springframework/jdbc/core/namedparam/ParsedSql/ParsedSql(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+method:///java/lang/String/toCharArray()|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+method:///org/springframework/jdbc/core/namedparam/ParsedSql/setNewSql(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/springframework/jdbc/core/namedparam/NamedParameterUtils/isParameterSeparator(char)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/util/List/toArray(java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+method:///java/util/Map/containsKey(java.lang.Object)|",
+      "|java+method:///org/springframework/jdbc/core/namedparam/ParsedSql/setNamedParameterCount(int)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/jdbc/core/namedparam/ParsedSql/setTotalParameterCount(int)|",
+      "|java+method:///org/springframework/jdbc/core/namedparam/ParsedSql/setUnnamedParameterCount(int)|",
+      "|java+method:///org/springframework/jdbc/core/namedparam/NamedParameterUtils/isParameterSeparator(char)|",
+      "|java+constructor:///org/springframework/jdbc/core/namedparam/ParsedSql/ParsedSql(java.lang.String)|",
+      "|java+method:///org/springframework/jdbc/core/namedparam/ParsedSql/setNamedParameterCount(int)|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+method:///java/util/Set/contains(java.lang.Object)|",
+      "|java+method:///org/springframework/jdbc/core/namedparam/ParsedSql/addNamedParameter(java.lang.String,int,int)|",
+      "|java+method:///java/lang/String/toCharArray()|"
+    ],
+    "affectedLib": "org.springframework:spring-core:2.0.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework:spring-jdbc:2.0.4",
+    "coordinatesV2": "org.springframework:spring-jdbc:2.0.5",
+    "caller": "|java+constructor:///org/springframework/jdbc/core/namedparam/NamedParameterJdbcTemplate/NamedParameterJdbcTemplate(javax.sql.DataSource)|",
+    "called": "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/jdbc/core/JdbcTemplate/JdbcTemplate(javax.sql.DataSource)|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///org/springframework/jdbc/core/JdbcTemplate/JdbcTemplate(javax.sql.DataSource)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:2.0.5",
+    "change": "UPDATED"
+  }
+]

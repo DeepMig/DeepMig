@@ -1,0 +1,68 @@
+[
+  {
+    "coordinatesV1": "org.glassfish.common:glassfish-mbeanserver:3.0-Preview",
+    "coordinatesV2": "org.glassfish.common:glassfish-mbeanserver:3.0.1-b01",
+    "caller": "|java+initializer:///org/glassfish/admin/mbeanserver/AMXStartupServiceMBean/AMXStartupServiceMBean$initializer|",
+    "called": "|java+method:///org/glassfish/external/amx/AMXUtil/newObjectName(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/glassfish/admin/mbeanserver/Util/newObjectName(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/glassfish/external/amx/AMXUtil/newObjectName(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.glassfish.external:management-api:3.0.0-b012",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.glassfish.common:glassfish-mbeanserver:3.0-Preview",
+    "coordinatesV2": "org.glassfish.common:glassfish-mbeanserver:3.0.1-b01",
+    "caller": "|java+method:///org/glassfish/admin/mbeanserver/JMXMPConnectorStarter/startJMXMPConnectorServer(int)|",
+    "called": "|java+constructor:///javax/management/remote/jmxmp/JMXMPConnectorServer/JMXMPConnectorServer(javax.management.remote.JMXServiceURL,java.util.Map,javax.management.MBeanServer)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/glassfish/admin/mbeanserver/JMXMPConnectorStarter/ignore(java.lang.Throwable)|",
+      "|java+method:///org/glassfish/admin/mbeanserver/Util/newObjectName(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///javax/management/MBeanServer/registerMBean(java.lang.Object,javax.management.ObjectName)|",
+      "|java+method:///javax/management/remote/JMXConnectorServerFactory/newJMXConnectorServer(javax.management.remote.JMXServiceURL,java.util.Map,javax.management.MBeanServer)|",
+      "|java+constructor:///javax/management/remote/JMXServiceURL/JMXServiceURL(java.lang.String)|",
+      "|java+method:///javax/management/remote/JMXConnectorServer/stop()|",
+      "|java+method:///javax/management/remote/JMXConnectorServer/start()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///javax/management/MBeanServer/unregisterMBean(javax.management.ObjectName)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///javax/management/ObjectInstance/getObjectName()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/Class/getClassLoader()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/glassfish/admin/mbeanserver/JMXMPConnectorStarter/ignore(java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/lang/Exception/printStackTrace()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///javax/management/remote/jmxmp/JMXMPConnectorServer/JMXMPConnectorServer(javax.management.remote.JMXServiceURL,java.util.Map,javax.management.MBeanServer)|",
+      "|java+method:///javax/management/remote/JMXConnectorServer/addNotificationListener(javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)|",
+      "|java+method:///javax/management/remote/JMXConnectorServer/start()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/glassfish/admin/mbeanserver/JMXMPConnectorStarter/getAccessController()|",
+      "|java+constructor:///javax/management/remote/JMXServiceURL/JMXServiceURL(java.lang.String)|",
+      "|java+method:///org/glassfish/admin/mbeanserver/JMXMPConnectorStarter/hostname()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/Class/getClassLoader()|",
+      "|java+method:///javax/management/remote/JMXConnectorServer/stop()|",
+      "|java+method:///javax/management/remote/JMXServiceURL/toString()|"
+    ],
+    "affectedLib": "org.glassfish.external:jmxremote_optional-repackaged:3.0.1-b01",
+    "change": "UPDATED"
+  }
+]

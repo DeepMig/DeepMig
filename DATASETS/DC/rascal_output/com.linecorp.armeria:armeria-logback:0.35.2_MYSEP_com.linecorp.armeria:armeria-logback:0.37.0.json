@@ -1,0 +1,56 @@
+[
+  {
+    "coordinatesV1": "com.linecorp.armeria:armeria-logback:0.35.2",
+    "coordinatesV2": "com.linecorp.armeria:armeria-logback:0.37.0",
+    "caller": "|java+method:///com/linecorp/armeria/common/logback/RequestContextExporterBuilder/getHttpRequestHeaders()|",
+    "called": "|java+method:///com/google/common/collect/ImmutableSet/toImmutableSet()|",
+    "v1Body": [
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+method:///com/linecorp/armeria/internal/guava/stream/GuavaCollectors/toImmutableSet()|",
+      "|java+method:///java/util/Set/stream()|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+method:///com/google/common/collect/ImmutableSet/toImmutableSet()|",
+      "|java+method:///java/util/Set/stream()|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|"
+    ],
+    "affectedLib": "com.google.guava:guava:21.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.linecorp.armeria:armeria-logback:0.35.2",
+    "coordinatesV2": "com.linecorp.armeria:armeria-logback:0.37.0",
+    "caller": "|java+method:///com/linecorp/armeria/common/logback/RequestContextExporterBuilder/getHttpResponseHeaders()|",
+    "called": "|java+method:///com/google/common/collect/ImmutableSet/toImmutableSet()|",
+    "v1Body": [
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+method:///com/linecorp/armeria/internal/guava/stream/GuavaCollectors/toImmutableSet()|",
+      "|java+method:///java/util/Set/stream()|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+method:///com/google/common/collect/ImmutableSet/toImmutableSet()|",
+      "|java+method:///java/util/Set/stream()|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|"
+    ],
+    "affectedLib": "com.google.guava:guava:21.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.linecorp.armeria:armeria-logback:0.35.2",
+    "coordinatesV2": "com.linecorp.armeria:armeria-logback:0.37.0",
+    "caller": "|java+constructor:///com/linecorp/armeria/common/logback/RequestContextExportingAppender$State/RequestContextExportingAppender$State()|",
+    "called": "|java+constructor:///it/unimi/dsi/fastutil/objects/Object2ObjectOpenHashMap/Object2ObjectOpenHashMap()|",
+    "v1Body": [
+      "|java+constructor:///com/linecorp/armeria/internal/fastutil/objects/Object2ObjectOpenHashMap/Object2ObjectOpenHashMap()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///it/unimi/dsi/fastutil/objects/Object2ObjectOpenHashMap/Object2ObjectOpenHashMap()|"
+    ],
+    "affectedLib": "it.unimi.dsi:fastutil:7.0.13",
+    "change": "ADDED"
+  }
+]

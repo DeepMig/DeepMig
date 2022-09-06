@@ -1,0 +1,42 @@
+[
+  {
+    "coordinatesV1": "com.reevoo.taglib:reevoo-taglib-core:1.22",
+    "coordinatesV2": "com.reevoo.taglib:reevoo-taglib-core:1.20",
+    "caller": "|java+initializer:///com/reevoo/client/Cache/Cache$initializer|",
+    "called": "|java+constructor:///com/google/common/collect/MapMaker/MapMaker()|",
+    "v1Body": [
+      "|java+method:///com/google/common/collect/MapMaker/makeMap()|",
+      "|java+method:///com/google/common/collect/MapMaker/softValues()|",
+      "|java+constructor:///com/google/common/collect/MapMaker/MapMaker()|",
+      "|java+method:///com/google/common/collect/MapMaker/expiration(long,java.util.concurrent.TimeUnit)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/cache/CacheBuilder/newBuilder()|",
+      "|java+method:///com/google/common/cache/CacheBuilder/maximumSize(long)|",
+      "|java+method:///com/google/common/cache/CacheBuilder/softValues()|",
+      "|java+method:///com/google/common/cache/CacheBuilder/build()|"
+    ],
+    "affectedLib": "com.google.collections:google-collections:0.9",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.reevoo.taglib:reevoo-taglib-core:1.20",
+    "coordinatesV2": "com.reevoo.taglib:reevoo-taglib-core:1.22",
+    "caller": "|java+initializer:///com/reevoo/client/Cache/Cache$initializer|",
+    "called": "|java+method:///com/google/common/cache/CacheBuilder/build()|",
+    "v1Body": [
+      "|java+method:///com/google/common/collect/MapMaker/makeMap()|",
+      "|java+method:///com/google/common/collect/MapMaker/softValues()|",
+      "|java+constructor:///com/google/common/collect/MapMaker/MapMaker()|",
+      "|java+method:///com/google/common/collect/MapMaker/expiration(long,java.util.concurrent.TimeUnit)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/cache/CacheBuilder/newBuilder()|",
+      "|java+method:///com/google/common/cache/CacheBuilder/maximumSize(long)|",
+      "|java+method:///com/google/common/cache/CacheBuilder/softValues()|",
+      "|java+method:///com/google/common/cache/CacheBuilder/build()|"
+    ],
+    "affectedLib": "com.google.guava:guava-jdk5:17.0",
+    "change": "ADDED"
+  }
+]

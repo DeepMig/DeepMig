@@ -1,0 +1,111 @@
+[
+  {
+    "coordinatesV1": "org.ehcache.modules:ehcache-107:3.0.0.m2",
+    "coordinatesV2": "org.ehcache.modules:ehcache-107:3.0.0.m3",
+    "caller": "|java+method:///org/ehcache/jsr107/ConfigurationMerger/handleStoreByValue(org.ehcache.jsr107.Eh107CompleteConfiguration,org.ehcache.config.CacheConfigurationBuilder)|",
+    "called": "|java+constructor:///org/ehcache/config/copy/DefaultCopierConfiguration/DefaultCopierConfiguration(java.lang.Class,org.ehcache.config.copy.CopierConfiguration$Type)|",
+    "v1Body": [
+      "|java+method:///org/ehcache/config/CacheConfigurationBuilder/getExistingServiceConfiguration(java.lang.Class)|",
+      "|java+constructor:///org/ehcache/internal/store/heap/service/OnHeapStoreServiceConfiguration/OnHeapStoreServiceConfiguration()|",
+      "|java+method:///org/ehcache/config/CacheConfigurationBuilder/add(org.ehcache.spi.service.ServiceConfiguration)|",
+      "|java+method:///org/ehcache/internal/store/heap/service/OnHeapStoreServiceConfiguration/storeByValue(boolean)|",
+      "|java+method:///org/ehcache/jsr107/Eh107CompleteConfiguration/isStoreByValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/ehcache/config/CacheConfigurationBuilder/getExistingServiceConfiguration(java.lang.Class)|",
+      "|java+constructor:///org/ehcache/config/copy/DefaultCopierConfiguration/DefaultCopierConfiguration(java.lang.Class,org.ehcache.config.copy.CopierConfiguration$Type)|",
+      "|java+method:///org/ehcache/config/CacheConfigurationBuilder/add(org.ehcache.spi.service.ServiceConfiguration)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///org/ehcache/jsr107/Eh107CompleteConfiguration/isStoreByValue()|"
+    ],
+    "affectedLib": "org.ehcache.modules:ehcache-impl:3.0.0.m3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.ehcache.modules:ehcache-107:3.0.0.m2",
+    "coordinatesV2": "org.ehcache.modules:ehcache-107:3.0.0.m3",
+    "caller": "|java+constructor:///org/ehcache/jsr107/DefaultJsr107SerializationProvider/DefaultJsr107SerializationProvider()|",
+    "called": "|java+constructor:///org/ehcache/spi/serialization/DefaultSerializationProvider/DefaultSerializationProvider(org.ehcache.config.serializer.DefaultSerializationProviderConfiguration)|",
+    "v1Body": [
+      "|java+constructor:///org/ehcache/spi/serialization/DefaultSerializationProvider/DefaultSerializationProvider(org.ehcache.config.serializer.DefaultSerializationProviderConfiguration)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/ehcache/spi/serialization/DefaultSerializationProvider/DefaultSerializationProvider(org.ehcache.config.serializer.DefaultSerializationProviderConfiguration)|",
+      "|java+constructor:///org/ehcache/config/serializer/DefaultSerializationProviderConfiguration/DefaultSerializationProviderConfiguration()|",
+      "|java+method:///org/ehcache/config/serializer/DefaultSerializationProviderConfiguration/addSerializerFor(java.lang.Class,java.lang.Class)|"
+    ],
+    "affectedLib": "org.ehcache.modules:ehcache-impl:3.0.0.m3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.ehcache.modules:ehcache-107:3.0.0.m2",
+    "coordinatesV2": "org.ehcache.modules:ehcache-107:3.0.0.m3",
+    "caller": "|java+method:///org/ehcache/jsr107/EhcacheCachingProvider/getCacheManager(java.net.URI,java.lang.ClassLoader,java.util.Properties)|",
+    "called": "|java+constructor:///org/ehcache/config/xml/XmlConfiguration/XmlConfiguration(java.net.URL,java.lang.ClassLoader)|",
+    "v1Body": [
+      "|java+method:///org/ehcache/jsr107/EhcacheCachingProvider/cloneProperties(java.util.Properties)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/ehcache/jsr107/EhcacheCachingProvider/getDefaultURI()|",
+      "|java+method:///org/ehcache/spi/ServiceLocator/addService(org.ehcache.spi.service.Service)|",
+      "|java+method:///org/ehcache/jsr107/Jsr107Service/jsr107CompliantAtomics()|",
+      "|java+method:///java/util/Collection/toArray()|",
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+constructor:///org/ehcache/config/xml/XmlConfiguration/XmlConfiguration(java.net.URL,java.lang.ClassLoader)|",
+      "|java+method:///java/net/URI/equals(java.lang.Object)|",
+      "|java+method:///java/util/concurrent/ConcurrentMap/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/ehcache/jsr107/DefaultConfigurationResolver/resolveConfigURI(java.util.Properties)|",
+      "|java+constructor:///org/ehcache/jsr107/DefaultJsr107Service/DefaultJsr107Service(org.ehcache.config.Jsr107Configuration)|",
+      "|java+method:///org/ehcache/spi/ServiceLocator/findSingletonAmongst(java.lang.Class,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/concurrent/ConcurrentMap/get(java.lang.Object)|",
+      "|java+constructor:///org/ehcache/spi/ServiceLocator/ServiceLocator(org.ehcache.spi.service.Service%5B%5D)|",
+      "|java+method:///org/ehcache/config/Configuration/getServiceConfigurations()|",
+      "|java+constructor:///org/ehcache/jsr107/EhcacheCachingProvider$ManagementRegistryCollectorService/EhcacheCachingProvider$ManagementRegistryCollectorService()|",
+      "|java+method:///org/ehcache/jsr107/EhcacheCachingProvider/getDefaultClassLoader()|",
+      "|java+constructor:///org/ehcache/jsr107/Eh107CacheLoaderWriterProvider/Eh107CacheLoaderWriterProvider()|",
+      "|java+constructor:///org/ehcache/jsr107/DefaultJsr107SerializationProvider/DefaultJsr107SerializationProvider()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/net/URI/toURL()|",
+      "|java+method:///org/ehcache/EhcacheManager/init()|",
+      "|java+constructor:///java/util/Properties/Properties()|",
+      "|java+constructor:///org/ehcache/EhcacheManager/EhcacheManager(org.ehcache.config.Configuration,org.ehcache.spi.ServiceLocator,boolean)|",
+      "|java+constructor:///javax/cache/CacheException/CacheException(java.lang.Throwable)|",
+      "|java+constructor:///org/ehcache/config/DefaultConfiguration/DefaultConfiguration(java.lang.ClassLoader)|",
+      "|java+constructor:///org/ehcache/jsr107/Eh107CacheManager/Eh107CacheManager(org.ehcache.jsr107.EhcacheCachingProvider,org.ehcache.EhcacheManager,java.util.Properties,java.lang.ClassLoader,java.net.URI,org.ehcache.jsr107.Eh107CacheLoaderWriterProvider,org.ehcache.config.Configuration,org.ehcache.jsr107.Jsr107Service,org.ehcache.management.ManagementRegistry)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Collection/toArray()|",
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+constructor:///org/ehcache/config/xml/XmlConfiguration/XmlConfiguration(java.net.URL,java.lang.ClassLoader)|",
+      "|java+method:///java/net/URI/equals(java.lang.Object)|",
+      "|java+method:///java/util/concurrent/ConcurrentMap/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/ehcache/jsr107/DefaultConfigurationResolver/resolveConfigURI(java.util.Properties)|",
+      "|java+method:///java/util/concurrent/ConcurrentMap/remove(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/concurrent/ConcurrentMap/get(java.lang.Object)|",
+      "|java+constructor:///javax/cache/CacheException/CacheException(java.lang.Throwable)|",
+      "|java+constructor:///org/ehcache/config/DefaultConfiguration/DefaultConfiguration(java.lang.ClassLoader)|",
+      "|java+method:///org/ehcache/jsr107/EhcacheCachingProvider/cloneProperties(java.util.Properties)|",
+      "|java+constructor:///org/ehcache/jsr107/ConfigurationMerger/ConfigurationMerger(org.ehcache.config.Configuration,org.ehcache.jsr107.Jsr107Service,org.ehcache.jsr107.Eh107CacheLoaderWriterProvider)|",
+      "|java+method:///org/ehcache/config/Configuration/getServiceCreationConfigurations()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///org/ehcache/jsr107/EhcacheCachingProvider$ManagementRegistryCollectorService/EhcacheCachingProvider$ManagementRegistryCollectorService()|",
+      "|java+method:///org/ehcache/jsr107/EhcacheCachingProvider/getDefaultClassLoader()|",
+      "|java+method:///org/ehcache/jsr107/EhcacheCachingProvider/getDefaultURI()|",
+      "|java+constructor:///org/ehcache/jsr107/Eh107CacheManager/Eh107CacheManager(org.ehcache.jsr107.EhcacheCachingProvider,org.ehcache.EhcacheManager,java.util.Properties,java.lang.ClassLoader,java.net.URI,org.ehcache.management.ManagementRegistry,org.ehcache.jsr107.ConfigurationMerger)|",
+      "|java+method:///org/ehcache/jsr107/Jsr107Service/jsr107CompliantAtomics()|",
+      "|java+method:///org/ehcache/jsr107/Eh107CacheManager/isClosed()|",
+      "|java+constructor:///org/ehcache/jsr107/Eh107CacheLoaderWriterProvider/Eh107CacheLoaderWriterProvider()|",
+      "|java+constructor:///org/ehcache/jsr107/DefaultJsr107SerializationProvider/DefaultJsr107SerializationProvider()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/net/URI/toURL()|",
+      "|java+method:///org/ehcache/EhcacheManager/init()|",
+      "|java+constructor:///java/util/Properties/Properties()|",
+      "|java+method:///java/util/Collection/add(java.lang.Object)|",
+      "|java+constructor:///org/ehcache/jsr107/DefaultJsr107Service/DefaultJsr107Service(org.ehcache.config.Jsr107Configuration)|",
+      "|java+constructor:///org/ehcache/EhcacheManager/EhcacheManager(org.ehcache.config.Configuration,java.util.Collection,boolean)|",
+      "|java+method:///org/ehcache/spi/ServiceLocator/findSingletonAmongst(java.lang.Class,java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "org.ehcache.modules:ehcache-xml:3.0.0.m3",
+    "change": "UPDATED"
+  }
+]

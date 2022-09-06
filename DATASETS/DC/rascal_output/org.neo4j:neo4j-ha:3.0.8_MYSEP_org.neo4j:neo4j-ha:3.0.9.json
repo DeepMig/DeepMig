@@ -1,0 +1,87 @@
+[
+  {
+    "coordinatesV1": "org.neo4j:neo4j-ha:3.0.8",
+    "coordinatesV2": "org.neo4j:neo4j-ha:3.0.9",
+    "caller": "|java+method:///org/neo4j/kernel/ha/factory/HighlyAvailableEditionModule/createCommitProcessFactory(org.neo4j.kernel.impl.util.Dependencies,org.neo4j.kernel.impl.logging.LogService,org.neo4j.kernel.monitoring.Monitors,org.neo4j.kernel.configuration.Config,org.neo4j.kernel.lifecycle.LifeSupport,org.neo4j.cluster.client.ClusterClient,org.neo4j.kernel.ha.cluster.member.ClusterMembers,org.neo4j.kernel.impl.util.JobScheduler,org.neo4j.kernel.ha.com.master.Master,org.neo4j.kernel.ha.com.RequestContextFactory,org.neo4j.kernel.ha.cluster.modeswitch.ComponentSwitcherContainer,java.util.function.Supplier)|",
+    "called": "|java+method:///org/neo4j/kernel/impl/util/Dependencies/satisfyDependency(java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///org/neo4j/kernel/ha/transaction/CommitPusher/CommitPusher(org.neo4j.kernel.impl.util.JobScheduler)|",
+      "|java+method:///org/neo4j/kernel/impl/logging/LogService/getInternalLogProvider()|",
+      "|java+constructor:///org/neo4j/kernel/ha/com/master/DefaultSlaveFactory/DefaultSlaveFactory(org.neo4j.logging.LogProvider,org.neo4j.kernel.monitoring.Monitors,int,java.util.function.Supplier)|",
+      "|java+method:///org/neo4j/kernel/ha/transaction/TransactionPropagator/from(org.neo4j.kernel.configuration.Config)|",
+      "|java+method:///org/neo4j/kernel/impl/logging/LogService/getInternalLog(java.lang.Class)|",
+      "|java+method:///org/neo4j/kernel/configuration/Config/get(org.neo4j.graphdb.config.Setting)|",
+      "|java+constructor:///org/neo4j/kernel/ha/cluster/modeswitch/CommitProcessSwitcher/CommitProcessSwitcher(org.neo4j.kernel.ha.transaction.TransactionPropagator,org.neo4j.kernel.ha.com.master.Master,org.neo4j.kernel.ha.DelegateInvocationHandler,org.neo4j.kernel.ha.com.RequestContextFactory,org.neo4j.kernel.monitoring.Monitors,org.neo4j.graphdb.DependencyResolver)|",
+      "|java+method:///org/neo4j/kernel/ha/cluster/modeswitch/ComponentSwitcherContainer/add(org.neo4j.kernel.ha.cluster.modeswitch.ComponentSwitcher)|",
+      "|java+method:///java/lang/Long/intValue()|",
+      "|java+constructor:///org/neo4j/kernel/ha/cluster/member/HighAvailabilitySlaves/HighAvailabilitySlaves(org.neo4j.kernel.ha.cluster.member.ClusterMembers,org.neo4j.cluster.protocol.cluster.Cluster,org.neo4j.kernel.ha.com.master.SlaveFactory,org.neo4j.helpers.HostnamePort)|",
+      "|java+constructor:///org/neo4j/kernel/ha/DelegateInvocationHandler/DelegateInvocationHandler(java.lang.Class)|",
+      "|java+method:///org/neo4j/kernel/impl/util/Dependencies/satisfyDependency(java.lang.Object)|",
+      "|java+method:///org/neo4j/kernel/lifecycle/LifeSupport/add(org.neo4j.kernel.lifecycle.Lifecycle)|",
+      "|java+constructor:///org/neo4j/kernel/ha/transaction/TransactionPropagator/TransactionPropagator(org.neo4j.kernel.ha.transaction.TransactionPropagator$Configuration,org.neo4j.logging.Log,org.neo4j.kernel.ha.com.master.Slaves,org.neo4j.kernel.ha.transaction.CommitPusher)|",
+      "|java+constructor:///org/neo4j/kernel/ha/factory/HighlyAvailableCommitProcessFactory/HighlyAvailableCommitProcessFactory(org.neo4j.kernel.ha.DelegateInvocationHandler)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/neo4j/kernel/impl/logging/LogService/getInternalLogProvider()|",
+      "|java+constructor:///org/neo4j/kernel/ha/com/master/DefaultSlaveFactory/DefaultSlaveFactory(org.neo4j.logging.LogProvider,org.neo4j.kernel.monitoring.Monitors,int,java.util.function.Supplier)|",
+      "|java+method:///org/neo4j/kernel/ha/transaction/TransactionPropagator/from(org.neo4j.kernel.configuration.Config)|",
+      "|java+method:///org/neo4j/kernel/impl/logging/LogService/getInternalLog(java.lang.Class)|",
+      "|java+method:///org/neo4j/kernel/configuration/Config/get(org.neo4j.graphdb.config.Setting)|",
+      "|java+method:///org/neo4j/kernel/ha/cluster/modeswitch/ComponentSwitcherContainer/add(org.neo4j.kernel.ha.cluster.modeswitch.ComponentSwitcher)|",
+      "|java+method:///java/lang/Long/intValue()|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+constructor:///org/neo4j/kernel/ha/cluster/modeswitch/CommitProcessSwitcher/CommitProcessSwitcher(org.neo4j.kernel.ha.transaction.TransactionPropagator,org.neo4j.kernel.ha.com.master.Master,org.neo4j.kernel.ha.DelegateInvocationHandler,org.neo4j.kernel.ha.com.RequestContextFactory,org.neo4j.kernel.impl.locking.Locks,org.neo4j.kernel.monitoring.Monitors,org.neo4j.graphdb.DependencyResolver,boolean)|",
+      "|java+constructor:///org/neo4j/kernel/ha/transaction/CommitPusher/CommitPusher(org.neo4j.kernel.impl.util.JobScheduler)|",
+      "|java+constructor:///org/neo4j/kernel/ha/cluster/member/HighAvailabilitySlaves/HighAvailabilitySlaves(org.neo4j.kernel.ha.cluster.member.ClusterMembers,org.neo4j.cluster.protocol.cluster.Cluster,org.neo4j.kernel.ha.com.master.SlaveFactory,org.neo4j.helpers.HostnamePort)|",
+      "|java+constructor:///org/neo4j/kernel/ha/DelegateInvocationHandler/DelegateInvocationHandler(java.lang.Class)|",
+      "|java+method:///org/neo4j/kernel/impl/util/Dependencies/satisfyDependency(java.lang.Object)|",
+      "|java+method:///org/neo4j/kernel/lifecycle/LifeSupport/add(org.neo4j.kernel.lifecycle.Lifecycle)|",
+      "|java+constructor:///org/neo4j/kernel/ha/transaction/TransactionPropagator/TransactionPropagator(org.neo4j.kernel.ha.transaction.TransactionPropagator$Configuration,org.neo4j.logging.Log,org.neo4j.kernel.ha.com.master.Slaves,org.neo4j.kernel.ha.transaction.CommitPusher)|",
+      "|java+constructor:///org/neo4j/kernel/ha/factory/HighlyAvailableCommitProcessFactory/HighlyAvailableCommitProcessFactory(org.neo4j.kernel.ha.DelegateInvocationHandler)|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-kernel:3.0.9",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.neo4j:neo4j-ha:3.0.8",
+    "coordinatesV2": "org.neo4j:neo4j-ha:3.0.9",
+    "caller": "|java+method:///org/neo4j/kernel/ha/cluster/modeswitch/CommitProcessSwitcher/getMasterImpl()|",
+    "called": "|java+constructor:///org/neo4j/kernel/impl/api/TransactionRepresentationCommitProcess/TransactionRepresentationCommitProcess(org.neo4j.kernel.impl.transaction.log.TransactionAppender,org.neo4j.storageengine.api.StorageEngine)|",
+    "v1Body": [
+      "|java+method:///org/neo4j/graphdb/DependencyResolver/resolveDependency(java.lang.Class)|",
+      "|java+method:///org/neo4j/kernel/ha/cluster/modeswitch/CommitProcessSwitcher/getMasterImpl()|",
+      "|java+constructor:///org/neo4j/kernel/ha/MasterTransactionCommitProcess/MasterTransactionCommitProcess(org.neo4j.kernel.impl.api.TransactionCommitProcess,org.neo4j.kernel.ha.transaction.TransactionPropagator,org.neo4j.kernel.impl.transaction.state.IntegrityValidator,org.neo4j.kernel.ha.MasterTransactionCommitProcess$Monitor)|",
+      "|java+constructor:///org/neo4j/kernel/impl/api/TransactionRepresentationCommitProcess/TransactionRepresentationCommitProcess(org.neo4j.kernel.impl.transaction.log.TransactionAppender,org.neo4j.storageengine.api.StorageEngine)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/neo4j/graphdb/DependencyResolver/resolveDependency(java.lang.Class)|",
+      "|java+method:///org/neo4j/kernel/ha/cluster/modeswitch/CommitProcessSwitcher/getMasterImpl()|",
+      "|java+constructor:///org/neo4j/kernel/ha/MasterTransactionCommitProcess/MasterTransactionCommitProcess(org.neo4j.kernel.impl.api.TransactionCommitProcess,org.neo4j.kernel.ha.transaction.TransactionPropagator,org.neo4j.kernel.impl.transaction.state.IntegrityValidator,org.neo4j.kernel.ha.MasterTransactionCommitProcess$Monitor,org.neo4j.kernel.impl.locking.Locks,boolean)|",
+      "|java+constructor:///org/neo4j/kernel/impl/api/TransactionRepresentationCommitProcess/TransactionRepresentationCommitProcess(org.neo4j.kernel.impl.transaction.log.TransactionAppender,org.neo4j.storageengine.api.StorageEngine)|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-kernel:3.0.9",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.neo4j:neo4j-ha:3.0.8",
+    "coordinatesV2": "org.neo4j:neo4j-ha:3.0.9",
+    "caller": "|java+method:///org/neo4j/kernel/ha/MasterTransactionCommitProcess/validate(org.neo4j.kernel.impl.api.TransactionToApply)|",
+    "called": "|java+method:///org/neo4j/kernel/impl/transaction/state/IntegrityValidator/validateTransactionStartKnowledge(long)|",
+    "v1Body": [
+      "|java+method:///org/neo4j/kernel/impl/transaction/TransactionRepresentation/getLatestCommittedTxWhenStarted()|",
+      "|java+method:///org/neo4j/kernel/impl/api/TransactionToApply/transactionRepresentation()|",
+      "|java+method:///org/neo4j/kernel/impl/api/TransactionToApply/next()|",
+      "|java+method:///org/neo4j/kernel/impl/transaction/state/IntegrityValidator/validateTransactionStartKnowledge(long)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/neo4j/kernel/impl/transaction/TransactionRepresentation/getLatestCommittedTxWhenStarted()|",
+      "|java+method:///org/neo4j/kernel/impl/api/TransactionToApply/transactionRepresentation()|",
+      "|java+method:///org/neo4j/kernel/impl/transaction/state/IntegrityValidator/validateTransactionStartKnowledge(long)|",
+      "|java+method:///org/neo4j/kernel/ha/MasterTransactionCommitProcess/acquireSharedSchemaLockIfTransactionResultsInIndexUpdates(org.neo4j.kernel.impl.api.TransactionToApply,org.neo4j.kernel.impl.locking.Locks$Client)|",
+      "|java+method:///org/neo4j/kernel/impl/api/TransactionToApply/next()|",
+      "|java+method:///org/neo4j/kernel/impl/locking/Locks$Client/close()|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-kernel:3.0.9",
+    "change": "ADDED"
+  }
+]

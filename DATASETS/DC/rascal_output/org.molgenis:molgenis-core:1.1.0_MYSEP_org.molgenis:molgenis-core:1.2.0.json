@@ -1,0 +1,191 @@
+[
+  {
+    "coordinatesV1": "org.molgenis:molgenis-core:1.1.0",
+    "coordinatesV2": "org.molgenis:molgenis-core:1.2.0",
+    "caller": "|java+method:///org/molgenis/util/AsyncJavaMailSender/send(org.springframework.mail.SimpleMailMessage)|",
+    "called": "|java+method:///org/springframework/mail/javamail/JavaMailSenderImpl/send(org.springframework.mail.SimpleMailMessage)|",
+    "v1Body": [
+      "|java+method:///org/springframework/mail/javamail/JavaMailSenderImpl/send(org.springframework.mail.SimpleMailMessage)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/mail/javamail/JavaMailSenderImpl/send(org.springframework.mail.SimpleMailMessage)|",
+      "|java+method:///org/apache/log4j/Logger/error(java.lang.Object,java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.springframework:spring-context-support:4.0.6.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.molgenis:molgenis-core:1.1.0",
+    "coordinatesV2": "org.molgenis:molgenis-core:1.2.0",
+    "caller": "|java+method:///org/molgenis/util/GsonHttpMessageConverter/writeInternal(java.lang.Object,org.springframework.http.HttpOutputMessage)|",
+    "called": "|java+method:///com/google/gson/Gson/toJson(java.lang.Object,java.lang.reflect.Type)|",
+    "v1Body": [
+      "|java+method:///org/molgenis/util/GsonHttpMessageConverter/getType()|",
+      "|java+method:///org/springframework/http/HttpOutputMessage/getBody()|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.Writer)|",
+      "|java+method:///com/google/gson/Gson/toJson(java.lang.Object,java.lang.reflect.Type)|",
+      "|java+method:///java/io/OutputStreamWriter/append(java.lang.CharSequence)|",
+      "|java+constructor:///org/springframework/http/converter/HttpMessageNotWritableException/HttpMessageNotWritableException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/springframework/http/HttpOutputMessage/getHeaders()|",
+      "|java+method:///org/molgenis/util/GsonHttpMessageConverter/getCharset(org.springframework.http.HttpHeaders)|",
+      "|java+method:///com/google/gson/Gson/toJson(java.lang.Object,java.lang.Appendable)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/log4j/Logger/debug(java.lang.Object)|",
+      "|java+constructor:///java/io/OutputStreamWriter/OutputStreamWriter(java.io.OutputStream,java.nio.charset.Charset)|",
+      "|java+method:///com/google/gson/Gson/toJson(java.lang.Object,java.lang.reflect.Type,java.lang.Appendable)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/google/gson/Gson/toJson(java.lang.Object)|",
+      "|java+method:///org/apache/log4j/Logger/isTraceEnabled()|",
+      "|java+method:///com/google/gson/JsonIOException/getMessage()|",
+      "|java+method:///java/io/OutputStreamWriter/write(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/http/HttpOutputMessage/getBody()|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.Writer)|",
+      "|java+method:///com/google/gson/Gson/toJson(java.lang.Object,java.lang.reflect.Type)|",
+      "|java+method:///java/io/OutputStreamWriter/append(java.lang.CharSequence)|",
+      "|java+constructor:///org/springframework/http/converter/HttpMessageNotWritableException/HttpMessageNotWritableException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/molgenis/util/GsonHttpMessageConverter/getCallbackParam()|",
+      "|java+method:///org/springframework/http/HttpOutputMessage/getHeaders()|",
+      "|java+method:///org/molgenis/util/GsonHttpMessageConverter/getCharset(org.springframework.http.HttpHeaders)|",
+      "|java+method:///com/google/gson/Gson/toJson(java.lang.Object,java.lang.Appendable)|",
+      "|java+method:///org/molgenis/util/GsonHttpMessageConverter/getType()|",
+      "|java+method:///java/io/Writer/append(char)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/log4j/Logger/debug(java.lang.Object)|",
+      "|java+constructor:///java/io/OutputStreamWriter/OutputStreamWriter(java.io.OutputStream,java.nio.charset.Charset)|",
+      "|java+method:///com/google/gson/Gson/toJson(java.lang.Object,java.lang.reflect.Type,java.lang.Appendable)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/google/gson/Gson/toJson(java.lang.Object)|",
+      "|java+method:///org/apache/log4j/Logger/isTraceEnabled()|",
+      "|java+method:///com/google/gson/JsonIOException/getMessage()|",
+      "|java+method:///java/io/OutputStreamWriter/write(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/io/OutputStreamWriter/append(char)|"
+    ],
+    "affectedLib": "com.google.code.gson:gson:2.2.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.molgenis:molgenis-core:1.1.0",
+    "coordinatesV2": "org.molgenis:molgenis-core:1.2.0",
+    "caller": "|java+constructor:///org/molgenis/util/GsonHttpMessageConverter/GsonHttpMessageConverter(boolean)|",
+    "called": "|java+method:///com/google/gson/GsonBuilder/create()|",
+    "v1Body": [
+      "|java+method:///com/google/gson/GsonBuilder/setDateFormat(java.lang.String)|",
+      "|java+constructor:///org/springframework/http/converter/AbstractHttpMessageConverter/AbstractHttpMessageConverter(org.springframework.http.MediaType)|",
+      "|java+constructor:///org/springframework/http/MediaType/MediaType(java.lang.String,java.lang.String,java.nio.charset.Charset)|",
+      "|java+method:///com/google/gson/GsonBuilder/setPrettyPrinting()|",
+      "|java+method:///com/google/gson/GsonBuilder/create()|",
+      "|java+method:///com/google/gson/GsonBuilder/disableHtmlEscaping()|",
+      "|java+constructor:///com/google/gson/GsonBuilder/GsonBuilder()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/gson/GsonBuilder/setDateFormat(java.lang.String)|",
+      "|java+constructor:///org/springframework/http/MediaType/MediaType(java.lang.String,java.lang.String,java.nio.charset.Charset)|",
+      "|java+method:///com/google/gson/GsonBuilder/setPrettyPrinting()|",
+      "|java+method:///com/google/gson/GsonBuilder/create()|",
+      "|java+method:///com/google/gson/GsonBuilder/disableHtmlEscaping()|",
+      "|java+constructor:///com/google/gson/GsonBuilder/GsonBuilder()|",
+      "|java+constructor:///org/molgenis/util/BaseHttpMessageConverter/BaseHttpMessageConverter(org.springframework.http.MediaType%5B%5D)|"
+    ],
+    "affectedLib": "com.google.code.gson:gson:2.2.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.molgenis:molgenis-core:1.1.0",
+    "coordinatesV2": "org.molgenis:molgenis-core:1.2.0",
+    "caller": "|java+method:///org/molgenis/util/GsonHttpMessageConverter/writeInternal(java.lang.Object,org.springframework.http.HttpOutputMessage)|",
+    "called": "|java+constructor:///org/springframework/http/converter/HttpMessageNotWritableException/HttpMessageNotWritableException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/molgenis/util/GsonHttpMessageConverter/getType()|",
+      "|java+method:///org/springframework/http/HttpOutputMessage/getBody()|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.Writer)|",
+      "|java+method:///com/google/gson/Gson/toJson(java.lang.Object,java.lang.reflect.Type)|",
+      "|java+method:///java/io/OutputStreamWriter/append(java.lang.CharSequence)|",
+      "|java+constructor:///org/springframework/http/converter/HttpMessageNotWritableException/HttpMessageNotWritableException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/springframework/http/HttpOutputMessage/getHeaders()|",
+      "|java+method:///org/molgenis/util/GsonHttpMessageConverter/getCharset(org.springframework.http.HttpHeaders)|",
+      "|java+method:///com/google/gson/Gson/toJson(java.lang.Object,java.lang.Appendable)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/log4j/Logger/debug(java.lang.Object)|",
+      "|java+constructor:///java/io/OutputStreamWriter/OutputStreamWriter(java.io.OutputStream,java.nio.charset.Charset)|",
+      "|java+method:///com/google/gson/Gson/toJson(java.lang.Object,java.lang.reflect.Type,java.lang.Appendable)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/google/gson/Gson/toJson(java.lang.Object)|",
+      "|java+method:///org/apache/log4j/Logger/isTraceEnabled()|",
+      "|java+method:///com/google/gson/JsonIOException/getMessage()|",
+      "|java+method:///java/io/OutputStreamWriter/write(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/http/HttpOutputMessage/getBody()|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.Writer)|",
+      "|java+method:///com/google/gson/Gson/toJson(java.lang.Object,java.lang.reflect.Type)|",
+      "|java+method:///java/io/OutputStreamWriter/append(java.lang.CharSequence)|",
+      "|java+constructor:///org/springframework/http/converter/HttpMessageNotWritableException/HttpMessageNotWritableException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/molgenis/util/GsonHttpMessageConverter/getCallbackParam()|",
+      "|java+method:///org/springframework/http/HttpOutputMessage/getHeaders()|",
+      "|java+method:///org/molgenis/util/GsonHttpMessageConverter/getCharset(org.springframework.http.HttpHeaders)|",
+      "|java+method:///com/google/gson/Gson/toJson(java.lang.Object,java.lang.Appendable)|",
+      "|java+method:///org/molgenis/util/GsonHttpMessageConverter/getType()|",
+      "|java+method:///java/io/Writer/append(char)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/log4j/Logger/debug(java.lang.Object)|",
+      "|java+constructor:///java/io/OutputStreamWriter/OutputStreamWriter(java.io.OutputStream,java.nio.charset.Charset)|",
+      "|java+method:///com/google/gson/Gson/toJson(java.lang.Object,java.lang.reflect.Type,java.lang.Appendable)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/google/gson/Gson/toJson(java.lang.Object)|",
+      "|java+method:///org/apache/log4j/Logger/isTraceEnabled()|",
+      "|java+method:///com/google/gson/JsonIOException/getMessage()|",
+      "|java+method:///java/io/OutputStreamWriter/write(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/io/OutputStreamWriter/append(char)|"
+    ],
+    "affectedLib": "org.springframework:spring-web:4.0.6.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.molgenis:molgenis-core:1.1.0",
+    "coordinatesV2": "org.molgenis:molgenis-core:1.2.0",
+    "caller": "|java+constructor:///org/molgenis/util/GsonHttpMessageConverter/GsonHttpMessageConverter(com.google.gson.Gson)|",
+    "called": "|java+constructor:///org/springframework/http/MediaType/MediaType(java.lang.String,java.lang.String,java.nio.charset.Charset)|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/http/converter/AbstractHttpMessageConverter/AbstractHttpMessageConverter(org.springframework.http.MediaType)|",
+      "|java+constructor:///org/springframework/http/MediaType/MediaType(java.lang.String,java.lang.String,java.nio.charset.Charset)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/springframework/http/MediaType/MediaType(java.lang.String,java.lang.String,java.nio.charset.Charset)|",
+      "|java+constructor:///org/molgenis/util/BaseHttpMessageConverter/BaseHttpMessageConverter(org.springframework.http.MediaType%5B%5D)|"
+    ],
+    "affectedLib": "org.springframework:spring-web:4.0.6.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.molgenis:molgenis-core:1.1.0",
+    "coordinatesV2": "org.molgenis:molgenis-core:1.2.0",
+    "caller": "|java+constructor:///org/molgenis/util/GsonHttpMessageConverter/GsonHttpMessageConverter(boolean)|",
+    "called": "|java+constructor:///org/springframework/http/MediaType/MediaType(java.lang.String,java.lang.String,java.nio.charset.Charset)|",
+    "v1Body": [
+      "|java+method:///com/google/gson/GsonBuilder/setDateFormat(java.lang.String)|",
+      "|java+constructor:///org/springframework/http/converter/AbstractHttpMessageConverter/AbstractHttpMessageConverter(org.springframework.http.MediaType)|",
+      "|java+constructor:///org/springframework/http/MediaType/MediaType(java.lang.String,java.lang.String,java.nio.charset.Charset)|",
+      "|java+method:///com/google/gson/GsonBuilder/setPrettyPrinting()|",
+      "|java+method:///com/google/gson/GsonBuilder/create()|",
+      "|java+method:///com/google/gson/GsonBuilder/disableHtmlEscaping()|",
+      "|java+constructor:///com/google/gson/GsonBuilder/GsonBuilder()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/gson/GsonBuilder/setDateFormat(java.lang.String)|",
+      "|java+constructor:///org/springframework/http/MediaType/MediaType(java.lang.String,java.lang.String,java.nio.charset.Charset)|",
+      "|java+method:///com/google/gson/GsonBuilder/setPrettyPrinting()|",
+      "|java+method:///com/google/gson/GsonBuilder/create()|",
+      "|java+method:///com/google/gson/GsonBuilder/disableHtmlEscaping()|",
+      "|java+constructor:///com/google/gson/GsonBuilder/GsonBuilder()|",
+      "|java+constructor:///org/molgenis/util/BaseHttpMessageConverter/BaseHttpMessageConverter(org.springframework.http.MediaType%5B%5D)|"
+    ],
+    "affectedLib": "org.springframework:spring-web:4.0.6.RELEASE",
+    "change": "UPDATED"
+  }
+]

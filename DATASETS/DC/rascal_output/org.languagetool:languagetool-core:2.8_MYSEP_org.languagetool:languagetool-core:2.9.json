@@ -1,0 +1,72 @@
+[
+  {
+    "coordinatesV1": "org.languagetool:languagetool-core:2.8",
+    "coordinatesV2": "org.languagetool:languagetool-core:2.9",
+    "caller": "|java+constructor:///org/languagetool/rules/spelling/morfologik/MorfologikSpeller/MorfologikSpeller(java.lang.String,int)|",
+    "called": "|java+method:///morfologik/stemming/Dictionary/read(java.net.URL)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/languagetool/databroker/ResourceDataBroker/getFromResourceDirAsUrl(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///morfologik/speller/Speller/Speller(morfologik.stemming.Dictionary,int)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///morfologik/stemming/Dictionary/read(java.net.URL)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/languagetool/JLanguageTool/getDataBroker()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/languagetool/rules/spelling/morfologik/MorfologikSpeller/MorfologikSpeller(morfologik.stemming.Dictionary,int)|",
+      "|java+method:///org/languagetool/databroker/ResourceDataBroker/getFromResourceDirAsUrl(java.lang.String)|",
+      "|java+method:///morfologik/stemming/Dictionary/read(java.net.URL)|",
+      "|java+method:///org/languagetool/JLanguageTool/getDataBroker()|"
+    ],
+    "affectedLib": "org.carrot2:morfologik-stemming:1.10.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.languagetool:languagetool-core:2.8",
+    "coordinatesV2": "org.languagetool:languagetool-core:2.9",
+    "caller": "|java+method:///org/languagetool/tagging/MorfologikTagger/tag(java.lang.String)|",
+    "called": "|java+constructor:///morfologik/stemming/DictionaryLookup/DictionaryLookup(morfologik.stemming.Dictionary)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///morfologik/stemming/IStemmer/lookup(java.lang.CharSequence)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///morfologik/stemming/WordData/getStem()|",
+      "|java+method:///org/languagetool/tagging/MorfologikTagger/getDictionary()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///morfologik/stemming/DictionaryLookup/DictionaryLookup(morfologik.stemming.Dictionary)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///org/languagetool/tagging/TaggedWord/TaggedWord(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/CharSequence/toString()|",
+      "|java+method:///morfologik/stemming/WordData/getTag()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///morfologik/stemming/IStemmer/lookup(java.lang.CharSequence)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/languagetool/tagging/MorfologikTagger/getDictionary()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///morfologik/stemming/DictionaryLookup/DictionaryLookup(morfologik.stemming.Dictionary)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///org/languagetool/tagging/TaggedWord/TaggedWord(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///java/lang/CharSequence/toString()|",
+      "|java+method:///morfologik/stemming/WordData/getTag()|",
+      "|java+method:///morfologik/stemming/DictionaryMetadata/isFrequencyIncluded()|",
+      "|java+method:///morfologik/stemming/WordData/getStem()|"
+    ],
+    "affectedLib": "org.carrot2:morfologik-stemming:1.10.0",
+    "change": "UPDATED"
+  }
+]

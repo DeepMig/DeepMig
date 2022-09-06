@@ -1,0 +1,72 @@
+[
+  {
+    "coordinatesV1": "org.kill-bill.commons:killbill-jdbi:0.21.4",
+    "coordinatesV2": "org.kill-bill.commons:killbill-jdbi:0.21.5",
+    "caller": "|java+constructor:///org/skife/jdbi/v2/DBI/DBI(org.skife.jdbi.v2.tweak.ConnectionFactory)|",
+    "called": "|java+constructor:///org/killbill/commons/profiling/Profiling/Profiling()|",
+    "v1Body": [
+      "|java+constructor:///org/skife/jdbi/v2/Foreman/Foreman()|",
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+constructor:///org/skife/jdbi/v2/ClasspathStatementLocator/ClasspathStatementLocator()|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicReference/AtomicReference(java.lang.Object)|",
+      "|java+constructor:///org/skife/jdbi/v2/tweak/transactions/LocalTransactionHandler/LocalTransactionHandler()|",
+      "|java+constructor:///org/skife/jdbi/v2/logging/NoOpLog/NoOpLog()|",
+      "|java+constructor:///org/skife/jdbi/v2/MappingRegistry/MappingRegistry()|",
+      "|java+constructor:///org/skife/jdbi/v2/DefaultStatementBuilderFactory/DefaultStatementBuilderFactory()|",
+      "|java+constructor:///org/skife/jdbi/v2/ContainerFactoryRegistry/ContainerFactoryRegistry()|",
+      "|java+constructor:///org/skife/jdbi/v2/ColonPrefixNamedParamStatementRewriter/ColonPrefixNamedParamStatementRewriter()|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/skife/jdbi/v2/Foreman/Foreman()|",
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+constructor:///org/skife/jdbi/v2/ClasspathStatementLocator/ClasspathStatementLocator()|",
+      "|java+constructor:///org/killbill/commons/profiling/Profiling/Profiling()|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicReference/AtomicReference(java.lang.Object)|",
+      "|java+constructor:///org/skife/jdbi/v2/tweak/transactions/LocalTransactionHandler/LocalTransactionHandler()|",
+      "|java+constructor:///org/skife/jdbi/v2/logging/NoOpLog/NoOpLog()|",
+      "|java+constructor:///org/skife/jdbi/v2/MappingRegistry/MappingRegistry()|",
+      "|java+constructor:///org/skife/jdbi/v2/DefaultStatementBuilderFactory/DefaultStatementBuilderFactory()|",
+      "|java+constructor:///org/skife/jdbi/v2/ContainerFactoryRegistry/ContainerFactoryRegistry()|",
+      "|java+constructor:///org/skife/jdbi/v2/ColonPrefixNamedParamStatementRewriter/ColonPrefixNamedParamStatementRewriter()|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.kill-bill.commons:killbill-concurrent:0.21.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.kill-bill.commons:killbill-jdbi:0.21.4",
+    "coordinatesV2": "org.kill-bill.commons:killbill-jdbi:0.21.5",
+    "caller": "|java+method:///org/skife/jdbi/v2/DBI/open()|",
+    "called": "|java+method:///org/killbill/commons/profiling/Profiling/executeWithProfiling(org.killbill.commons.profiling.ProfilingFeature$ProfilingFeatureType,java.lang.String,org.killbill.commons.profiling.Profiling$WithProfilingCallback)|",
+    "v1Body": [
+      "|java+method:///org/skife/jdbi/v2/ContainerFactoryRegistry/createChild()|",
+      "|java+constructor:///org/skife/jdbi/v2/exceptions/UnableToObtainConnectionException/UnableToObtainConnectionException(java.lang.Throwable)|",
+      "|java+method:///org/skife/jdbi/v2/tweak/SQLLog/logObtainHandle(long,org.skife.jdbi.v2.Handle)|",
+      "|java+method:///java/lang/System/nanoTime()|",
+      "|java+method:///org/skife/jdbi/v2/MappingRegistry/createChild()|",
+      "|java+method:///org/skife/jdbi/v2/tweak/ConnectionFactory/openConnection()|",
+      "|java+method:///org/skife/jdbi/v2/tweak/StatementBuilderFactory/createStatementBuilder(java.sql.Connection)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicReference/get()|",
+      "|java+method:///org/skife/jdbi/v2/Foreman/createChild()|",
+      "|java+constructor:///org/skife/jdbi/v2/BasicHandle/BasicHandle(org.skife.jdbi.v2.tweak.TransactionHandler,org.skife.jdbi.v2.tweak.StatementLocator,org.skife.jdbi.v2.tweak.StatementBuilder,org.skife.jdbi.v2.tweak.StatementRewriter,java.sql.Connection,java.util.Map,org.skife.jdbi.v2.tweak.SQLLog,org.skife.jdbi.v2.TimingCollector,org.skife.jdbi.v2.MappingRegistry,org.skife.jdbi.v2.Foreman,org.skife.jdbi.v2.ContainerFactoryRegistry)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/skife/jdbi/v2/ContainerFactoryRegistry/createChild()|",
+      "|java+constructor:///org/skife/jdbi/v2/exceptions/UnableToObtainConnectionException/UnableToObtainConnectionException(java.lang.Throwable)|",
+      "|java+method:///org/killbill/commons/profiling/Profiling/executeWithProfiling(org.killbill.commons.profiling.ProfilingFeature$ProfilingFeatureType,java.lang.String,org.killbill.commons.profiling.Profiling$WithProfilingCallback)|",
+      "|java+constructor:///org/skife/jdbi/v2/DBI$4/DBI$4(org.skife.jdbi.v2.DBI)|",
+      "|java+method:///org/skife/jdbi/v2/tweak/SQLLog/logObtainHandle(long,org.skife.jdbi.v2.Handle)|",
+      "|java+method:///java/lang/System/nanoTime()|",
+      "|java+method:///org/skife/jdbi/v2/MappingRegistry/createChild()|",
+      "|java+method:///org/skife/jdbi/v2/tweak/StatementBuilderFactory/createStatementBuilder(java.sql.Connection)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicReference/get()|",
+      "|java+method:///org/skife/jdbi/v2/Foreman/createChild()|",
+      "|java+constructor:///org/skife/jdbi/v2/BasicHandle/BasicHandle(org.skife.jdbi.v2.tweak.TransactionHandler,org.skife.jdbi.v2.tweak.StatementLocator,org.skife.jdbi.v2.tweak.StatementBuilder,org.skife.jdbi.v2.tweak.StatementRewriter,java.sql.Connection,java.util.Map,org.skife.jdbi.v2.tweak.SQLLog,org.skife.jdbi.v2.TimingCollector,org.skife.jdbi.v2.MappingRegistry,org.skife.jdbi.v2.Foreman,org.skife.jdbi.v2.ContainerFactoryRegistry)|"
+    ],
+    "affectedLib": "org.kill-bill.commons:killbill-concurrent:0.21.5",
+    "change": "ADDED"
+  }
+]

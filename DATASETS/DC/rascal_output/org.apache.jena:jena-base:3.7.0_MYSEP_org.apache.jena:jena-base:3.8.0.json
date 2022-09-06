@@ -1,0 +1,64 @@
+[
+  {
+    "coordinatesV1": "org.apache.jena:jena-base:3.7.0",
+    "coordinatesV2": "org.apache.jena:jena-base:3.8.0",
+    "caller": "|java+method:///org/apache/jena/atlas/io/IO/openOutputFileEx(java.lang.String)|",
+    "called": "|java+constructor:///org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream/BZip2CompressorOutputStream(java.io.OutputStream)|",
+    "v1Body": [
+      "|java+constructor:///java/util/zip/GZIPOutputStream/GZIPOutputStream(java.io.OutputStream)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+constructor:///java/io/FileOutputStream/FileOutputStream(java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///java/lang/String/endsWith(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///org/apache/jena/atlas/lib/IRILib/decode(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/hashCode()|",
+      "|java+constructor:///java/util/zip/GZIPOutputStream/GZIPOutputStream(java.io.OutputStream)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///org/apache/commons/io/FilenameUtils/getExtension(java.lang.String)|",
+      "|java+constructor:///java/io/FileOutputStream/FileOutputStream(java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///java/lang/UnsupportedOperationException/UnsupportedOperationException(java.lang.String)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+constructor:///org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream/BZip2CompressorOutputStream(java.io.OutputStream)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///org/apache/jena/atlas/lib/IRILib/decode(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-compress:1.17",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-base:3.7.0",
+    "coordinatesV2": "org.apache.jena:jena-base:3.8.0",
+    "caller": "|java+method:///org/apache/jena/atlas/io/IO/openFileEx(java.lang.String)|",
+    "called": "|java+constructor:///org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream/BZip2CompressorInputStream(java.io.InputStream)|",
+    "v1Body": [
+      "|java+constructor:///java/util/zip/GZIPInputStream/GZIPInputStream(java.io.InputStream)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+constructor:///java/io/FileInputStream/FileInputStream(java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///java/lang/String/endsWith(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///org/apache/jena/atlas/lib/IRILib/decode(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/zip/GZIPInputStream/GZIPInputStream(java.io.InputStream)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+constructor:///org/apache/commons/compress/compressors/snappy/SnappyCompressorInputStream/SnappyCompressorInputStream(java.io.InputStream)|",
+      "|java+method:///java/lang/String/hashCode()|",
+      "|java+constructor:///org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream/BZip2CompressorInputStream(java.io.InputStream)|",
+      "|java+constructor:///java/io/FileInputStream/FileInputStream(java.lang.String)|",
+      "|java+method:///org/apache/commons/io/FilenameUtils/getExtension(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///org/apache/jena/atlas/lib/IRILib/decode(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-compress:1.17",
+    "change": "ADDED"
+  }
+]

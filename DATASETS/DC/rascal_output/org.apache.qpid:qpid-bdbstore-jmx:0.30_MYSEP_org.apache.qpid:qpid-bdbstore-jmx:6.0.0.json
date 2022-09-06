@@ -1,0 +1,66 @@
+[
+  {
+    "coordinatesV1": "org.apache.qpid:qpid-bdbstore-jmx:6.0.0",
+    "coordinatesV2": "org.apache.qpid:qpid-bdbstore-jmx:0.30",
+    "caller": "|java+initializer:///org/apache/qpid/server/store/berkeleydb/jmx/BDBHAMessageStoreManagerMBean/BDBHAMessageStoreManagerMBean$initializer|",
+    "called": "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///javax/management/openmbean/TabularType/TabularType(java.lang.String,java.lang.String,javax.management.openmbean.CompositeType,java.lang.String%5B%5D)|",
+      "|java+constructor:///javax/management/openmbean/CompositeType/CompositeType(java.lang.String,java.lang.String,java.lang.String%5B%5D,java.lang.String%5B%5D,javax.management.openmbean.OpenType%5B%5D)|",
+      "|java+constructor:///java/lang/ExceptionInInitializerError/ExceptionInInitializerError(java.lang.Throwable)|",
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///javax/management/openmbean/TabularType/TabularType(java.lang.String,java.lang.String,javax.management.openmbean.CompositeType,java.lang.String%5B%5D)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/lang/ExceptionInInitializerError/ExceptionInInitializerError(java.lang.Throwable)|",
+      "|java+constructor:///javax/management/openmbean/CompositeType/CompositeType(java.lang.String,java.lang.String,java.lang.String%5B%5D,java.lang.String%5B%5D,javax.management.openmbean.OpenType%5B%5D)|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.16",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.qpid:qpid-bdbstore-jmx:6.0.0",
+    "coordinatesV2": "org.apache.qpid:qpid-bdbstore-jmx:0.30",
+    "caller": "|java+initializer:///org/apache/qpid/server/store/berkeleydb/jmx/BDBHAMessageStoreManagerMBeanProvider/BDBHAMessageStoreManagerMBeanProvider$initializer|",
+    "called": "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.16",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.qpid:qpid-bdbstore-jmx:0.30",
+    "coordinatesV2": "org.apache.qpid:qpid-bdbstore-jmx:6.0.0",
+    "caller": "|java+constructor:///org/apache/qpid/server/store/berkeleydb/jmx/BDBHAMessageStoreManagerMBean/BDBHAMessageStoreManagerMBean(org.apache.qpid.server.virtualhostnode.berkeleydb.BDBHAVirtualHostNode,org.apache.qpid.server.jmx.ManagedObjectRegistry)|",
+    "called": "|java+constructor:///org/apache/qpid/server/jmx/AMQManagedObject/AMQManagedObject(java.lang.Class,java.lang.String,org.apache.qpid.server.jmx.ManagedObjectRegistry)|",
+    "v1Body": [
+      "|java+method:///javax/management/ObjectName/quote(java.lang.String)|",
+      "|java+method:///org/apache/qpid/server/store/berkeleydb/jmx/BDBHAMessageStoreManagerMBean/register()|",
+      "|java+method:///org/apache/qpid/server/virtualhostnode/berkeleydb/BDBHAVirtualHostNode/getGroupName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/apache/qpid/server/jmx/AMQManagedObject/AMQManagedObject(java.lang.Class,java.lang.String,org.apache.qpid.server.jmx.ManagedObjectRegistry)|",
+      "|java+method:///org/apache/qpid/server/virtualhostnode/berkeleydb/BDBHAVirtualHostNode/getName()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/log4j/Logger/debug(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///javax/management/ObjectName/quote(java.lang.String)|",
+      "|java+method:///org/apache/qpid/server/store/berkeleydb/jmx/BDBHAMessageStoreManagerMBean/register()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/qpid/server/virtualhostnode/berkeleydb/BDBHAVirtualHostNode/getGroupName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/apache/qpid/server/jmx/AMQManagedObject/AMQManagedObject(java.lang.Class,java.lang.String,org.apache.qpid.server.jmx.ManagedObjectRegistry)|",
+      "|java+method:///org/apache/qpid/server/virtualhostnode/berkeleydb/BDBHAVirtualHostNode/getName()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.apache.qpid:qpid-broker-plugins-management-jmx:6.0.0",
+    "change": "UPDATED"
+  }
+]

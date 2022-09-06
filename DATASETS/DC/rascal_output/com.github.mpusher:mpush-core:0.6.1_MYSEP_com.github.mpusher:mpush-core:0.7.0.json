@@ -1,0 +1,375 @@
+[
+  {
+    "coordinatesV1": "com.github.mpusher:mpush-core:0.6.1",
+    "coordinatesV2": "com.github.mpusher:mpush-core:0.7.0",
+    "caller": "|java+method:///com/mpush/core/push/PushCenter/doStart(com.mpush.api.service.Listener)|",
+    "called": "|java+method:///com/mpush/monitor/jmx/MBeanRegistry/register(com.mpush.monitor.jmx.MBeanInfo,com.mpush.monitor.jmx.MBeanInfo)|",
+    "v1Body": [
+      "|java+constructor:///java/util/concurrent/ScheduledThreadPoolExecutor/ScheduledThreadPoolExecutor(int,java.util.concurrent.ThreadFactory,java.util.concurrent.RejectedExecutionHandler)|",
+      "|java+constructor:///com/mpush/tools/thread/NamedPoolThreadFactory/NamedPoolThreadFactory(java.lang.String)|",
+      "|java+method:///com/mpush/api/service/Listener/onSuccess(java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/mpush/core/push/PushCenter$CustomJDKExecutor/PushCenter$CustomJDKExecutor(java.util.concurrent.ScheduledExecutorService,com.mpush.core.push.PushCenter$1)|",
+      "|java+method:///com/mpush/monitor/jmx/MBeanRegistry/register(com.mpush.monitor.jmx.MBeanInfo,com.mpush.monitor.jmx.MBeanInfo)|",
+      "|java+method:///com/mpush/tools/thread/pool/ThreadPoolManager/getPushTaskTimer()|",
+      "|java+constructor:///com/mpush/core/push/PushCenter$NettyEventLoopExecutor/PushCenter$NettyEventLoopExecutor(com.mpush.core.push.PushCenter$1)|",
+      "|java+constructor:///com/mpush/monitor/jmx/mxbean/PushCenterBean/PushCenterBean(java.util.concurrent.atomic.AtomicLong)|",
+      "|java+method:///com/mpush/tools/config/CC$mp$net/udpGateway()|",
+      "|java+method:///com/mpush/core/ack/AckTaskQueue/start()|",
+      "|java+method:///com/mpush/api/service/Listener/onSuccess(java.lang.Object%5B%5D)|",
+      "|java+method:///com/mpush/monitor/jmx/MBeanRegistry/getInstance()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|"
+    ],
+    "affectedLib": "com.github.mpusher:mpush-monitor:0.7.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.mpusher:mpush-core:0.6.1",
+    "coordinatesV2": "com.github.mpusher:mpush-core:0.7.0",
+    "caller": "|java+method:///com/mpush/core/server/ConnectionServer/initOptions(io.netty.bootstrap.ServerBootstrap)|",
+    "called": "|java+method:///com/mpush/netty/server/NettyTCPServer/initOptions(io.netty.bootstrap.ServerBootstrap)|",
+    "v1Body": [
+      "|java+method:///com/mpush/netty/server/NettyTCPServer/initOptions(io.netty.bootstrap.ServerBootstrap)|",
+      "|java+method:///io/netty/bootstrap/ServerBootstrap/childOption(io.netty.channel.ChannelOption,java.lang.Object)|",
+      "|java+method:///io/netty/bootstrap/ServerBootstrap/option(io.netty.channel.ChannelOption,java.lang.Object)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/mpush/netty/server/NettyTCPServer/initOptions(io.netty.bootstrap.ServerBootstrap)|",
+      "|java+method:///io/netty/bootstrap/ServerBootstrap/childOption(io.netty.channel.ChannelOption,java.lang.Object)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+constructor:///io/netty/channel/WriteBufferWaterMark/WriteBufferWaterMark(int,int)|",
+      "|java+method:///io/netty/bootstrap/ServerBootstrap/option(io.netty.channel.ChannelOption,java.lang.Object)|"
+    ],
+    "affectedLib": "com.github.mpusher:mpush-netty:0.7.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.github.mpusher:mpush-core:0.6.1",
+    "coordinatesV2": "com.github.mpusher:mpush-core:0.7.0",
+    "caller": "|java+method:///com/mpush/core/server/ServerConnectionManager/removeAndClose(io.netty.channel.Channel)|",
+    "called": "|java+constructor:///com/mpush/netty/connection/NettyConnection/NettyConnection()|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/Channel/id()|",
+      "|java+method:///com/mpush/api/connection/Connection/close()|",
+      "|java+method:///java/util/concurrent/ConcurrentMap/remove(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/mpush/netty/connection/NettyConnection/NettyConnection()|",
+      "|java+method:///io/netty/channel/Channel/id()|",
+      "|java+method:///com/mpush/api/connection/Connection/close()|",
+      "|java+method:///java/util/concurrent/ConcurrentMap/remove(java.lang.Object)|",
+      "|java+method:///com/mpush/core/server/ServerConnectionManager$ConnectionHolder/close()|",
+      "|java+method:///com/mpush/core/server/ServerConnectionManager$ConnectionHolder/get()|",
+      "|java+method:///com/mpush/api/connection/Connection/init(io.netty.channel.Channel,boolean)|"
+    ],
+    "affectedLib": "com.github.mpusher:mpush-netty:0.7.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.github.mpusher:mpush-core:0.6.1",
+    "coordinatesV2": "com.github.mpusher:mpush-core:0.7.0",
+    "caller": "|java+method:///com/mpush/core/server/GatewayServer/initOptions(io.netty.bootstrap.ServerBootstrap)|",
+    "called": "|java+method:///com/mpush/netty/server/NettyTCPServer/initOptions(io.netty.bootstrap.ServerBootstrap)|",
+    "v1Body": [
+      "|java+method:///com/mpush/netty/server/NettyTCPServer/initOptions(io.netty.bootstrap.ServerBootstrap)|",
+      "|java+method:///io/netty/bootstrap/ServerBootstrap/childOption(io.netty.channel.ChannelOption,java.lang.Object)|",
+      "|java+constructor:///io/netty/channel/WriteBufferWaterMark/WriteBufferWaterMark(int,int)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/mpush/netty/server/NettyTCPServer/initOptions(io.netty.bootstrap.ServerBootstrap)|",
+      "|java+method:///io/netty/bootstrap/ServerBootstrap/childOption(io.netty.channel.ChannelOption,java.lang.Object)|",
+      "|java+constructor:///io/netty/channel/WriteBufferWaterMark/WriteBufferWaterMark(int,int)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "affectedLib": "com.github.mpusher:mpush-netty:0.7.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.github.mpusher:mpush-core:0.6.1",
+    "coordinatesV2": "com.github.mpusher:mpush-core:0.7.0",
+    "caller": "|java+constructor:///com/mpush/core/push/PushCenter/PushCenter()|",
+    "called": "|java+constructor:///com/mpush/common/qps/GlobalFlowControl/GlobalFlowControl(int,int,int)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///com/mpush/api/service/BaseService/BaseService()|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/concurrent/atomic/AtomicLong/AtomicLong()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///com/mpush/api/spi/push/PushListenerFactory/create()|",
+      "|java+constructor:///com/mpush/api/service/BaseService/BaseService()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///com/mpush/common/qps/GlobalFlowControl/GlobalFlowControl(int,int,int)|"
+    ],
+    "affectedLib": "com.github.mpusher:mpush-common:0.7.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.github.mpusher:mpush-core:0.6.1",
+    "coordinatesV2": "com.github.mpusher:mpush-core:0.7.0",
+    "caller": "|java+constructor:///com/mpush/core/handler/GatewayPushHandler/GatewayPushHandler()|",
+    "called": "|java+constructor:///com/mpush/common/handler/BaseMessageHandler/BaseMessageHandler()|",
+    "v1Body": [
+      "|java+constructor:///com/mpush/core/push/GlobalFlowControl/GlobalFlowControl(int,int,int)|",
+      "|java+constructor:///com/mpush/common/handler/BaseMessageHandler/BaseMessageHandler()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/mpush/common/handler/BaseMessageHandler/BaseMessageHandler()|"
+    ],
+    "affectedLib": "com.github.mpusher:mpush-common:0.7.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.github.mpusher:mpush-core:0.6.1",
+    "coordinatesV2": "com.github.mpusher:mpush-core:0.7.0",
+    "caller": "|java+method:///com/mpush/core/router/RouterChangeListener/kickLocal(java.lang.String,com.mpush.core.router.LocalRouter)|",
+    "called": "|java+method:///com/mpush/common/message/KickUserMessage/build(com.mpush.api.connection.Connection)|",
+    "v1Body": [
+      "|java+method:///com/mpush/api/connection/Connection/getSessionContext()|",
+      "|java+constructor:///com/mpush/common/message/KickUserMessage/KickUserMessage(com.mpush.api.connection.Connection)|",
+      "|java+method:///com/mpush/core/router/LocalRouter/getRouteValue()|",
+      "|java+method:///com/mpush/common/message/KickUserMessage/send(io.netty.channel.ChannelFutureListener)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/mpush/api/connection/Connection/getSessionContext()|",
+      "|java+method:///com/mpush/common/message/KickUserMessage/build(com.mpush.api.connection.Connection)|",
+      "|java+method:///com/mpush/core/router/LocalRouter/getRouteValue()|",
+      "|java+method:///com/mpush/common/message/KickUserMessage/send(io.netty.channel.ChannelFutureListener)|"
+    ],
+    "affectedLib": "com.github.mpusher:mpush-common:0.7.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.github.mpusher:mpush-core:0.6.1",
+    "coordinatesV2": "com.github.mpusher:mpush-core:0.7.0",
+    "caller": "|java+method:///com/mpush/core/router/RouterCenter/register(java.lang.String,com.mpush.api.connection.Connection)|",
+    "called": "|java+constructor:///com/mpush/common/router/RemoteRouter/RemoteRouter(com.mpush.api.router.ClientLocation)|",
+    "v1Body": [
+      "|java+method:///com/mpush/common/router/RemoteRouter/isOnline()|",
+      "|java+method:///com/mpush/tools/event/EventBus/post(com.mpush.api.event.Event)|",
+      "|java+method:///com/mpush/core/router/LocalRouterManager/register(java.lang.String,com.mpush.core.router.LocalRouter)|",
+      "|java+method:///com/mpush/api/router/ClientLocation/from(com.mpush.api.connection.Connection)|",
+      "|java+method:///com/mpush/api/router/ClientLocation/setPort(int)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/mpush/common/router/RemoteRouterManager/register(java.lang.String,com.mpush.common.router.RemoteRouter)|",
+      "|java+constructor:///com/mpush/api/event/RouterChangeEvent/RouterChangeEvent(java.lang.String,com.mpush.api.router.Router)|",
+      "|java+method:///com/mpush/api/router/ClientLocation/setHost(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///com/mpush/common/router/RemoteRouter/RemoteRouter(com.mpush.api.router.ClientLocation)|",
+      "|java+method:///com/mpush/zk/node/ZKServerNode/getPort()|",
+      "|java+method:///com/mpush/tools/Utils/getLocalIp()|",
+      "|java+constructor:///com/mpush/core/router/LocalRouter/LocalRouter(com.mpush.api.connection.Connection)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/mpush/common/router/RemoteRouter/isOnline()|",
+      "|java+method:///com/mpush/tools/event/EventBus/post(com.mpush.api.event.Event)|",
+      "|java+method:///com/mpush/api/router/ClientLocation/from(com.mpush.api.connection.Connection)|",
+      "|java+method:///com/mpush/api/router/ClientLocation/setPort(int)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/mpush/common/router/RemoteRouterManager/register(java.lang.String,com.mpush.common.router.RemoteRouter)|",
+      "|java+constructor:///com/mpush/api/event/RouterChangeEvent/RouterChangeEvent(java.lang.String,com.mpush.api.router.Router)|",
+      "|java+constructor:///com/mpush/common/router/RemoteRouter/RemoteRouter(com.mpush.api.router.ClientLocation)|",
+      "|java+method:///com/mpush/core/router/LocalRouterManager/register(java.lang.String,com.mpush.core.router.LocalRouter)|",
+      "|java+method:///com/mpush/api/srd/ServiceNode/getPort()|",
+      "|java+method:///com/mpush/api/router/ClientLocation/setHost(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/mpush/tools/Utils/getLocalIp()|",
+      "|java+constructor:///com/mpush/core/router/LocalRouter/LocalRouter(com.mpush.api.connection.Connection)|"
+    ],
+    "affectedLib": "com.github.mpusher:mpush-common:0.7.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.github.mpusher:mpush-core:0.6.1",
+    "coordinatesV2": "com.github.mpusher:mpush-core:0.7.0",
+    "caller": "|java+method:///com/mpush/core/router/UserEventConsumer/on(com.mpush.api.event.UserOnlineEvent)|",
+    "called": "|java+method:///com/mpush/common/user/UserManager/addToOnlineList(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/mpush/common/user/UserManager/addToOnlineList(java.lang.String)|",
+      "|java+method:///com/mpush/api/event/UserOnlineEvent/getUserId()|",
+      "|java+method:///com/mpush/cache/redis/manager/RedisManager/publish(java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/mpush/common/user/UserManager/addToOnlineList(java.lang.String)|",
+      "|java+method:///com/mpush/api/event/UserOnlineEvent/getUserId()|",
+      "|java+method:///com/mpush/api/spi/common/MQClient/publish(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "com.github.mpusher:mpush-common:0.7.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.github.mpusher:mpush-core:0.6.1",
+    "coordinatesV2": "com.github.mpusher:mpush-core:0.7.0",
+    "caller": "|java+method:///com/mpush/core/router/UserEventConsumer/on(com.mpush.api.event.UserOfflineEvent)|",
+    "called": "|java+method:///com/mpush/common/user/UserManager/remFormOnlineList(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/mpush/common/user/UserManager/remFormOnlineList(java.lang.String)|",
+      "|java+method:///com/mpush/cache/redis/manager/RedisManager/publish(java.lang.String,java.lang.Object)|",
+      "|java+method:///com/mpush/api/event/UserOfflineEvent/getUserId()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/mpush/common/user/UserManager/remFormOnlineList(java.lang.String)|",
+      "|java+method:///com/mpush/api/event/UserOfflineEvent/getUserId()|",
+      "|java+method:///com/mpush/api/spi/common/MQClient/publish(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "com.github.mpusher:mpush-common:0.7.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.github.mpusher:mpush-core:0.6.1",
+    "coordinatesV2": "com.github.mpusher:mpush-core:0.7.0",
+    "caller": "|java+method:///com/mpush/core/session/ReusableSessionManager/querySession(java.lang.String)|",
+    "called": "|java+method:///com/mpush/common/CacheKeys/getSessionKey(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/mpush/cache/redis/RedisKey/getSessionKey(java.lang.String)|",
+      "|java+method:///com/mpush/cache/redis/manager/RedisManager/get(java.lang.String,java.lang.Class)|",
+      "|java+method:///com/mpush/tools/common/Strings/isBlank(java.lang.CharSequence)|",
+      "|java+method:///com/mpush/core/session/ReusableSession/decode(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/mpush/api/spi/common/CacheManager/get(java.lang.String,java.lang.Class)|",
+      "|java+method:///com/mpush/common/CacheKeys/getSessionKey(java.lang.String)|",
+      "|java+method:///com/mpush/tools/common/Strings/isBlank(java.lang.CharSequence)|",
+      "|java+method:///com/mpush/core/session/ReusableSession/decode(java.lang.String)|"
+    ],
+    "affectedLib": "com.github.mpusher:mpush-common:0.7.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.github.mpusher:mpush-core:0.6.1",
+    "coordinatesV2": "com.github.mpusher:mpush-core:0.7.0",
+    "caller": "|java+method:///com/mpush/core/push/BroadcastPushTask/lambda$null$0(java.lang.String,java.lang.Integer,com.mpush.core.router.LocalRouter)|",
+    "called": "|java+method:///com/mpush/common/message/PushMessage/build(com.mpush.api.connection.Connection)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/mpush/api/connection/Connection/isConnected()|",
+      "|java+method:///com/mpush/core/router/LocalRouter/getRouteValue()|",
+      "|java+method:///io/netty/channel/Channel/isWritable()|",
+      "|java+constructor:///com/mpush/core/push/OverFlowException/OverFlowException(boolean)|",
+      "|java+method:///com/mpush/core/router/LocalRouterManager/unRegister(java.lang.String,int)|",
+      "|java+method:///com/mpush/common/message/PushMessage/send(io.netty.channel.ChannelFutureListener)|",
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///com/mpush/core/push/FlowControl/checkQps()|",
+      "|java+method:///com/mpush/core/router/RouterCenter/getLocalRouterManager()|",
+      "|java+method:///com/mpush/core/push/BroadcastPushTask/checkCondition(com.mpush.common.condition.Condition,com.mpush.api.connection.Connection)|",
+      "|java+method:///com/mpush/api/connection/Connection/getChannel()|",
+      "|java+constructor:///com/mpush/common/message/PushMessage/PushMessage(byte%5B%5D,com.mpush.api.connection.Connection)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/mpush/core/router/RouterCenter/getLocalRouterManager()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///com/mpush/common/qps/OverFlowException/OverFlowException(boolean)|",
+      "|java+method:///com/mpush/common/qps/FlowControl/checkQps()|",
+      "|java+method:///com/mpush/api/connection/Connection/getChannel()|",
+      "|java+method:///com/mpush/core/router/LocalRouter/getRouteValue()|",
+      "|java+method:///io/netty/channel/Channel/isWritable()|",
+      "|java+method:///com/mpush/core/router/LocalRouterManager/unRegister(java.lang.String,int)|",
+      "|java+method:///com/mpush/core/push/BroadcastPushTask/checkCondition(com.mpush.api.common.Condition,com.mpush.api.connection.Connection)|",
+      "|java+method:///com/mpush/common/message/PushMessage/setContent(byte%5B%5D)|",
+      "|java+method:///com/mpush/common/message/PushMessage/send(io.netty.channel.ChannelFutureListener)|",
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///com/mpush/api/spi/push/IPushMessage/getContent()|",
+      "|java+method:///com/mpush/common/message/PushMessage/build(com.mpush.api.connection.Connection)|",
+      "|java+method:///com/mpush/api/connection/Connection/isConnected()|"
+    ],
+    "affectedLib": "com.github.mpusher:mpush-common:0.7.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.github.mpusher:mpush-core:0.6.1",
+    "coordinatesV2": "com.github.mpusher:mpush-core:0.7.0",
+    "caller": "|java+method:///com/mpush/core/session/ReusableSessionManager/cacheSession(com.mpush.core.session.ReusableSession)|",
+    "called": "|java+method:///com/mpush/common/CacheKeys/getSessionKey(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/mpush/cache/redis/RedisKey/getSessionKey(java.lang.String)|",
+      "|java+method:///com/mpush/core/session/ReusableSession/encode(com.mpush.api.connection.SessionContext)|",
+      "|java+method:///com/mpush/cache/redis/manager/RedisManager/set(java.lang.String,java.lang.String,int)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/mpush/api/spi/common/CacheManager/set(java.lang.String,java.lang.String,int)|",
+      "|java+method:///com/mpush/common/CacheKeys/getSessionKey(java.lang.String)|",
+      "|java+method:///com/mpush/core/session/ReusableSession/encode(com.mpush.api.connection.SessionContext)|"
+    ],
+    "affectedLib": "com.github.mpusher:mpush-common:0.7.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.github.mpusher:mpush-core:0.6.1",
+    "coordinatesV2": "com.github.mpusher:mpush-core:0.7.0",
+    "caller": "|java+method:///com/mpush/core/router/RouterChangeListener/kickRemote(java.lang.String,com.mpush.common.router.RemoteRouter)|",
+    "called": "|java+method:///com/mpush/common/message/BaseMessage/sendRaw()|",
+    "v1Body": [
+      "|java+method:///com/mpush/api/router/ClientLocation/isThisPC(java.lang.String,int)|",
+      "|java+method:///com/mpush/common/message/gateway/GatewayKickUserMessage/setConnId(java.lang.String)|",
+      "|java+method:///com/mpush/common/message/BaseMessage/sendRaw()|",
+      "|java+method:///com/mpush/core/router/RedisKickRemoteMessage/setTargetPort(int)|",
+      "|java+method:///com/mpush/common/message/gateway/GatewayKickUserMessage/setDeviceId(java.lang.String)|",
+      "|java+method:///com/mpush/api/router/ClientLocation/getDeviceId()|",
+      "|java+method:///com/mpush/common/message/gateway/GatewayKickUserMessage/setTargetServer(java.lang.String)|",
+      "|java+method:///com/mpush/common/message/gateway/GatewayKickUserMessage/build(com.mpush.api.connection.Connection)|",
+      "|java+method:///com/mpush/core/router/RedisKickRemoteMessage/setClientType(int)|",
+      "|java+method:///com/mpush/core/router/RedisKickRemoteMessage/setUserId(java.lang.String)|",
+      "|java+method:///com/mpush/core/router/RedisKickRemoteMessage/setConnId(java.lang.String)|",
+      "|java+method:///com/mpush/api/router/ClientLocation/getClientType()|",
+      "|java+method:///com/mpush/common/message/gateway/GatewayKickUserMessage/setTargetPort(int)|",
+      "|java+method:///com/mpush/common/message/gateway/GatewayKickUserMessage/setUserId(java.lang.String)|",
+      "|java+method:///com/mpush/zk/node/ZKServerNode/getIp()|",
+      "|java+constructor:///java/net/InetSocketAddress/InetSocketAddress(java.lang.String,int)|",
+      "|java+method:///com/mpush/api/router/ClientLocation/getConnId()|",
+      "|java+method:///com/mpush/core/router/RedisKickRemoteMessage/setDeviceId(java.lang.String)|",
+      "|java+method:///com/mpush/api/router/ClientLocation/getHost()|",
+      "|java+constructor:///com/mpush/core/router/RedisKickRemoteMessage/RedisKickRemoteMessage()|",
+      "|java+method:///com/mpush/cache/redis/manager/RedisManager/publish(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///com/mpush/api/router/ClientLocation/getHostAndPort()|",
+      "|java+method:///com/mpush/core/router/RedisKickRemoteMessage/setTargetServer(java.lang.String)|",
+      "|java+method:///com/mpush/common/message/gateway/GatewayKickUserMessage/setClientType(int)|",
+      "|java+method:///com/mpush/common/router/RemoteRouter/getRouteValue()|",
+      "|java+method:///com/mpush/core/server/GatewayUDPConnector/I()|",
+      "|java+method:///com/mpush/core/router/RouterChangeListener/getKickChannel(java.lang.String)|",
+      "|java+method:///com/mpush/zk/node/ZKServerNode/getPort()|",
+      "|java+method:///com/mpush/common/message/gateway/GatewayKickUserMessage/setRecipient(java.net.InetSocketAddress)|",
+      "|java+method:///com/mpush/core/server/GatewayUDPConnector/getConnection()|",
+      "|java+method:///com/mpush/api/router/ClientLocation/getPort()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/mpush/api/router/ClientLocation/isThisPC(java.lang.String,int)|",
+      "|java+method:///com/mpush/common/message/gateway/GatewayKickUserMessage/setConnId(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///com/mpush/core/router/RedisKickRemoteMessage/setTargetPort(int)|",
+      "|java+method:///com/mpush/api/srd/ServiceNode/getHost()|",
+      "|java+method:///com/mpush/common/message/gateway/GatewayKickUserMessage/setDeviceId(java.lang.String)|",
+      "|java+method:///com/mpush/api/router/ClientLocation/getDeviceId()|",
+      "|java+method:///com/mpush/common/message/gateway/GatewayKickUserMessage/setTargetServer(java.lang.String)|",
+      "|java+method:///com/mpush/common/message/gateway/GatewayKickUserMessage/build(com.mpush.api.connection.Connection)|",
+      "|java+method:///com/mpush/core/router/RedisKickRemoteMessage/setClientType(int)|",
+      "|java+method:///com/mpush/core/router/RedisKickRemoteMessage/setUserId(java.lang.String)|",
+      "|java+method:///com/mpush/core/router/RedisKickRemoteMessage/setConnId(java.lang.String)|",
+      "|java+method:///com/mpush/common/message/gateway/GatewayKickUserMessage/setRecipient(java.net.InetSocketAddress)|",
+      "|java+method:///com/mpush/api/router/ClientLocation/getClientType()|",
+      "|java+method:///com/mpush/common/message/gateway/GatewayKickUserMessage/setTargetPort(int)|",
+      "|java+method:///com/mpush/common/message/gateway/GatewayKickUserMessage/setUserId(java.lang.String)|",
+      "|java+constructor:///java/net/InetSocketAddress/InetSocketAddress(java.lang.String,int)|",
+      "|java+method:///com/mpush/api/router/ClientLocation/getConnId()|",
+      "|java+method:///com/mpush/core/router/RedisKickRemoteMessage/setDeviceId(java.lang.String)|",
+      "|java+method:///com/mpush/api/router/ClientLocation/getHost()|",
+      "|java+method:///com/mpush/api/srd/ServiceNode/getPort()|",
+      "|java+constructor:///com/mpush/core/router/RedisKickRemoteMessage/RedisKickRemoteMessage()|",
+      "|java+method:///com/mpush/api/router/ClientLocation/getHostAndPort()|",
+      "|java+method:///com/mpush/core/router/RedisKickRemoteMessage/setTargetServer(java.lang.String)|",
+      "|java+method:///com/mpush/common/message/BaseMessage/sendRaw()|",
+      "|java+method:///com/mpush/api/spi/common/MQClient/publish(java.lang.String,java.lang.Object)|",
+      "|java+method:///com/mpush/common/message/gateway/GatewayKickUserMessage/setClientType(int)|",
+      "|java+method:///com/mpush/common/router/RemoteRouter/getRouteValue()|",
+      "|java+method:///com/mpush/core/server/GatewayUDPConnector/I()|",
+      "|java+method:///com/mpush/core/router/RouterChangeListener/getKickChannel(java.lang.String)|",
+      "|java+method:///com/mpush/core/server/GatewayUDPConnector/getConnection()|",
+      "|java+method:///com/mpush/api/router/ClientLocation/getPort()|"
+    ],
+    "affectedLib": "com.github.mpusher:mpush-common:0.7.0",
+    "change": "UPDATED"
+  }
+]

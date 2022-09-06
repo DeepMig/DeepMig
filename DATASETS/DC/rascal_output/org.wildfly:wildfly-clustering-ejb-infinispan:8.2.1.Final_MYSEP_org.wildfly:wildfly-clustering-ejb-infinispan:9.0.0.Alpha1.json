@@ -1,0 +1,95 @@
+[
+  {
+    "coordinatesV1": "org.wildfly:wildfly-clustering-ejb-infinispan:8.2.1.Final",
+    "coordinatesV2": "org.wildfly:wildfly-clustering-ejb-infinispan:9.0.0.Alpha1",
+    "caller": "|java+constructor:///org/wildfly/clustering/ejb/infinispan/bean/InfinispanBeanKeyExternalizer/InfinispanBeanKeyExternalizer(java.lang.Class)|",
+    "called": "|java+constructor:///org/jboss/as/clustering/infinispan/io/AbstractSimpleExternalizer/AbstractSimpleExternalizer(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///org/jboss/as/clustering/infinispan/io/AbstractSimpleExternalizer/AbstractSimpleExternalizer(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/wildfly/clustering/ejb/infinispan/SessionIDExternalizer/SessionIDExternalizer()|",
+      "|java+constructor:///org/jboss/as/clustering/infinispan/io/AbstractSimpleExternalizer/AbstractSimpleExternalizer(java.lang.Class)|"
+    ],
+    "affectedLib": "org.wildfly:wildfly-clustering-infinispan:9.0.0.Alpha1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.wildfly:wildfly-clustering-ejb-infinispan:8.2.1.Final",
+    "coordinatesV2": "org.wildfly:wildfly-clustering-ejb-infinispan:9.0.0.Alpha1",
+    "caller": "|java+method:///org/wildfly/clustering/ejb/infinispan/InfinispanBeanManager/start()|",
+    "called": "|java+constructor:///org/jboss/as/clustering/infinispan/distribution/ConsistentHashLocality/ConsistentHashLocality(org.infinispan.Cache)|",
+    "v1Body": [
+      "|java+method:///org/wildfly/clustering/ejb/infinispan/PassivationConfiguration/isEvictionAllowed()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/wildfly/clustering/ejb/infinispan/ExpirationConfiguration/getTimeout()|",
+      "|java+method:///org/infinispan/Cache/addListener(java.lang.Object,org.infinispan.notifications.KeyFilter)|",
+      "|java+method:///org/infinispan/affinity/KeyAffinityService/start()|",
+      "|java+method:///org/wildfly/clustering/ejb/Time/getValue()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///org/wildfly/clustering/ejb/infinispan/BeanExpirationScheduler/BeanExpirationScheduler(org.wildfly.clustering.ejb.Batcher,org.wildfly.clustering.ejb.infinispan.BeanRemover,org.wildfly.clustering.ejb.infinispan.ExpirationConfiguration)|",
+      "|java+constructor:///org/wildfly/clustering/ejb/infinispan/BeanEvictionScheduler/BeanEvictionScheduler(org.wildfly.clustering.ejb.Batcher,org.jboss.as.clustering.infinispan.invoker.Evictor,org.wildfly.clustering.ejb.infinispan.PassivationConfiguration)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///org/wildfly/clustering/ejb/infinispan/ExpiredBeanRemover/ExpiredBeanRemover(org.wildfly.clustering.ejb.infinispan.BeanFactory)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/wildfly/clustering/ejb/infinispan/ExpirationConfiguration/getTimeout()|",
+      "|java+constructor:///org/wildfly/clustering/ejb/infinispan/InfinispanBeanManager$5/InfinispanBeanManager$5(org.wildfly.clustering.ejb.infinispan.InfinispanBeanManager,java.util.List)|",
+      "|java+method:///org/infinispan/affinity/KeyAffinityService/start()|",
+      "|java+constructor:///org/wildfly/clustering/ejb/infinispan/BeanEvictionScheduler/BeanEvictionScheduler(java.lang.String,org.wildfly.clustering.ee.Batcher,org.wildfly.clustering.ee.infinispan.Evictor,org.wildfly.clustering.dispatcher.CommandDispatcherFactory,org.wildfly.clustering.ejb.infinispan.PassivationConfiguration)|",
+      "|java+constructor:///org/jboss/as/clustering/infinispan/distribution/ConsistentHashLocality/ConsistentHashLocality(org.infinispan.Cache)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/wildfly/clustering/ejb/infinispan/PassivationConfiguration/isEvictionAllowed()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(int)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/infinispan/Cache/addListener(java.lang.Object,org.infinispan.notifications.KeyFilter)|",
+      "|java+method:///org/wildfly/clustering/ejb/Time/getValue()|",
+      "|java+method:///org/wildfly/clustering/dispatcher/CommandDispatcherFactory/createCommandDispatcher(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///org/jboss/as/clustering/infinispan/distribution/SimpleLocality/SimpleLocality(boolean)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///org/wildfly/clustering/ejb/infinispan/BeanExpirationScheduler/BeanExpirationScheduler(org.wildfly.clustering.ee.Batcher,org.wildfly.clustering.ejb.infinispan.BeanRemover,org.wildfly.clustering.ejb.infinispan.ExpirationConfiguration)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///org/wildfly/clustering/ejb/infinispan/ExpiredBeanRemover/ExpiredBeanRemover(org.wildfly.clustering.ejb.infinispan.BeanFactory)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/wildfly/clustering/ejb/infinispan/InfinispanBeanManager/schedule(org.infinispan.Cache,org.jboss.as.clustering.infinispan.distribution.Locality,org.jboss.as.clustering.infinispan.distribution.Locality)|"
+    ],
+    "affectedLib": "org.wildfly:wildfly-clustering-infinispan:9.0.0.Alpha1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.wildfly:wildfly-clustering-ejb-infinispan:8.2.1.Final",
+    "coordinatesV2": "org.wildfly:wildfly-clustering-ejb-infinispan:9.0.0.Alpha1",
+    "caller": "|java+method:///org/wildfly/clustering/ejb/infinispan/InfinispanBeanManagerFactory/build(java.lang.String,org.jboss.msc.service.ServiceTarget,org.jboss.msc.service.ServiceName,org.wildfly.clustering.ejb.BeanManagerFactoryBuilderConfiguration,org.wildfly.clustering.ejb.BeanContext)|",
+    "called": "|java+method:///org/jboss/as/clustering/infinispan/subsystem/CacheService/getServiceName(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/jboss/as/clustering/infinispan/affinity/KeyAffinityServiceFactoryService/getServiceName(java.lang.String)|",
+      "|java+method:///org/wildfly/clustering/ejb/infinispan/BeanCacheConfigurationService/getCacheName(org.jboss.msc.service.ServiceName)|",
+      "|java+method:///org/jboss/msc/service/ServiceName/append(java.lang.String%5B%5D)|",
+      "|java+method:///org/jboss/msc/service/ServiceTarget/addService(org.jboss.msc.service.ServiceName,org.jboss.msc.service.Service)|",
+      "|java+method:///org/jboss/msc/service/ServiceBuilder/addDependency(org.jboss.msc.service.ServiceBuilder$DependencyType,org.jboss.msc.service.ServiceName,java.lang.Class,org.jboss.msc.inject.Injector)|",
+      "|java+method:///org/wildfly/clustering/ejb/BeanContext/getDeploymentUnitServiceName()|",
+      "|java+constructor:///org/wildfly/clustering/ejb/infinispan/InfinispanBeanManagerFactory/InfinispanBeanManagerFactory(org.wildfly.clustering.ejb.BeanContext,org.wildfly.clustering.ejb.BeanPassivationConfiguration)|",
+      "|java+method:///org/jboss/msc/service/ServiceBuilder/addDependency(org.jboss.msc.service.ServiceName,java.lang.Class,org.jboss.msc.inject.Injector)|",
+      "|java+method:///org/jboss/as/clustering/infinispan/subsystem/CacheService/getServiceName(java.lang.String,java.lang.String)|",
+      "|java+method:///org/wildfly/clustering/ejb/BeanManagerFactoryBuilderConfiguration/getContainerName()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jboss/as/clustering/infinispan/affinity/KeyAffinityServiceFactoryService/getServiceName(java.lang.String)|",
+      "|java+method:///org/wildfly/clustering/ejb/infinispan/BeanCacheConfigurationService/getCacheName(org.jboss.msc.service.ServiceName)|",
+      "|java+method:///org/jboss/msc/service/ServiceName/append(java.lang.String%5B%5D)|",
+      "|java+method:///org/jboss/msc/service/ServiceTarget/addService(org.jboss.msc.service.ServiceName,org.jboss.msc.service.Service)|",
+      "|java+method:///org/wildfly/clustering/spi/ChannelServiceNames/getServiceName(java.lang.String)|",
+      "|java+method:///org/wildfly/clustering/spi/CacheServiceNames/getServiceName(java.lang.String)|",
+      "|java+method:///org/wildfly/clustering/ejb/BeanContext/getDeploymentUnitServiceName()|",
+      "|java+constructor:///org/wildfly/clustering/ejb/infinispan/InfinispanBeanManagerFactory/InfinispanBeanManagerFactory(org.wildfly.clustering.ejb.BeanContext,org.wildfly.clustering.ejb.BeanPassivationConfiguration)|",
+      "|java+method:///org/jboss/msc/service/ServiceBuilder/addDependency(org.jboss.msc.service.ServiceName,java.lang.Class,org.jboss.msc.inject.Injector)|",
+      "|java+method:///org/jboss/as/clustering/infinispan/subsystem/CacheService/getServiceName(java.lang.String,java.lang.String)|",
+      "|java+method:///org/wildfly/clustering/ejb/BeanManagerFactoryBuilderConfiguration/getContainerName()|"
+    ],
+    "affectedLib": "org.wildfly:wildfly-clustering-infinispan:9.0.0.Alpha1",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,160 @@
+[
+  {
+    "coordinatesV1": "com.godmonth:godmonth-commons:0.8.2",
+    "coordinatesV2": "com.godmonth:godmonth-commons:1.0",
+    "caller": "|java+method:///com/godmonth/util/collections/List2MapFactoryBean/list2Map(java.util.List,java.lang.String)|",
+    "called": "|java+method:///com/google/common/collect/Maps/uniqueIndex(java.lang.Iterable,com.google.common.base.Function)|",
+    "v1Body": [
+      "|java+constructor:///com/godmonth/util/collections/List2MapFactoryBean$1/List2MapFactoryBean$1(java.lang.String)|",
+      "|java+method:///com/google/common/collect/Maps/uniqueIndex(java.lang.Iterable,com.google.common.base.Function)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/godmonth/util/collections/List2MapFactoryBean$1/List2MapFactoryBean$1(java.lang.String)|",
+      "|java+method:///org/apache/commons/collections4/CollectionUtils/isNotEmpty(java.util.Collection)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///com/google/common/collect/Maps/uniqueIndex(java.lang.Iterable,com.google.common.base.Function)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.godmonth:godmonth-commons:0.8.2",
+    "coordinatesV2": "com.godmonth:godmonth-commons:1.0",
+    "caller": "|java+method:///com/godmonth/util/thread/CallerRunThreadPoolFactory/create(int)|",
+    "called": "|java+method:///com/google/common/util/concurrent/MoreExecutors/newDirectExecutorService()|",
+    "v1Body": [
+      "|java+constructor:///java/util/concurrent/ThreadPoolExecutor/ThreadPoolExecutor(int,int,long,java.util.concurrent.TimeUnit,java.util.concurrent.BlockingQueue,java.util.concurrent.RejectedExecutionHandler)|",
+      "|java+method:///com/google/common/util/concurrent/MoreExecutors/sameThreadExecutor()|",
+      "|java+constructor:///java/util/concurrent/SynchronousQueue/SynchronousQueue()|",
+      "|java+constructor:///java/util/concurrent/ThreadPoolExecutor$CallerRunsPolicy/ThreadPoolExecutor$CallerRunsPolicy()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/concurrent/ThreadPoolExecutor/ThreadPoolExecutor(int,int,long,java.util.concurrent.TimeUnit,java.util.concurrent.BlockingQueue,java.util.concurrent.RejectedExecutionHandler)|",
+      "|java+constructor:///java/util/concurrent/SynchronousQueue/SynchronousQueue()|",
+      "|java+constructor:///java/util/concurrent/ThreadPoolExecutor$CallerRunsPolicy/ThreadPoolExecutor$CallerRunsPolicy()|",
+      "|java+method:///com/google/common/util/concurrent/MoreExecutors/newDirectExecutorService()|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.godmonth:godmonth-commons:0.8.2",
+    "coordinatesV2": "com.godmonth:godmonth-commons:1.0",
+    "caller": "|java+method:///com/godmonth/util/collections/List2MapFactoryBean/list2Map(java.util.List,java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/collections4/CollectionUtils/isNotEmpty(java.util.Collection)|",
+    "v1Body": [
+      "|java+constructor:///com/godmonth/util/collections/List2MapFactoryBean$1/List2MapFactoryBean$1(java.lang.String)|",
+      "|java+method:///com/google/common/collect/Maps/uniqueIndex(java.lang.Iterable,com.google.common.base.Function)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/godmonth/util/collections/List2MapFactoryBean$1/List2MapFactoryBean$1(java.lang.String)|",
+      "|java+method:///org/apache/commons/collections4/CollectionUtils/isNotEmpty(java.util.Collection)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///com/google/common/collect/Maps/uniqueIndex(java.lang.Iterable,com.google.common.base.Function)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-collections4:4.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.godmonth:godmonth-commons:0.8.2",
+    "coordinatesV2": "com.godmonth:godmonth-commons:1.0",
+    "caller": "|java+method:///com/godmonth/util/jackson/ObjectMapperFactoryBean/afterPropertiesSet()|",
+    "called": "|java+method:///org/apache/commons/collections4/CollectionUtils/isNotEmpty(java.util.Collection)|",
+    "v1Body": [
+      "|java+method:///com/godmonth/util/jackson/ObjectMapperFactoryBean$Mixin/getMixinSource()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/setSerializationInclusion(com.fasterxml.jackson.annotation.JsonInclude$Include)|",
+      "|java+method:///org/apache/commons/collections4/CollectionUtils/isNotEmpty(java.util.Collection)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/addMixInAnnotations(java.lang.Class,java.lang.Class)|",
+      "|java+method:///com/godmonth/util/jackson/ObjectMapperFactoryBean$Mixin/getTarget()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/godmonth/util/jackson/ObjectMapperFactoryBean/getObject()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/setPropertyNamingStrategy(com.fasterxml.jackson.databind.PropertyNamingStrategy)|",
+      "|java+method:///org/springframework/http/converter/json/Jackson2ObjectMapperFactoryBean/afterPropertiesSet()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/godmonth/util/jackson/ObjectMapperFactoryBean$Mixin/getMixinSource()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/setSerializationInclusion(com.fasterxml.jackson.annotation.JsonInclude$Include)|",
+      "|java+method:///org/apache/commons/collections4/CollectionUtils/isNotEmpty(java.util.Collection)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/addMixIn(java.lang.Class,java.lang.Class)|",
+      "|java+method:///com/godmonth/util/jackson/ObjectMapperFactoryBean$Mixin/getTarget()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/godmonth/util/jackson/ObjectMapperFactoryBean/getObject()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/setPropertyNamingStrategy(com.fasterxml.jackson.databind.PropertyNamingStrategy)|",
+      "|java+method:///org/springframework/http/converter/json/Jackson2ObjectMapperFactoryBean/afterPropertiesSet()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-collections4:4.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.godmonth:godmonth-commons:0.8.2",
+    "coordinatesV2": "com.godmonth:godmonth-commons:1.0",
+    "caller": "|java+method:///com/godmonth/util/jackson/ObjectMapperFactoryBean/afterPropertiesSet()|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/setPropertyNamingStrategy(com.fasterxml.jackson.databind.PropertyNamingStrategy)|",
+    "v1Body": [
+      "|java+method:///com/godmonth/util/jackson/ObjectMapperFactoryBean$Mixin/getMixinSource()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/setSerializationInclusion(com.fasterxml.jackson.annotation.JsonInclude$Include)|",
+      "|java+method:///org/apache/commons/collections4/CollectionUtils/isNotEmpty(java.util.Collection)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/addMixInAnnotations(java.lang.Class,java.lang.Class)|",
+      "|java+method:///com/godmonth/util/jackson/ObjectMapperFactoryBean$Mixin/getTarget()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/godmonth/util/jackson/ObjectMapperFactoryBean/getObject()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/setPropertyNamingStrategy(com.fasterxml.jackson.databind.PropertyNamingStrategy)|",
+      "|java+method:///org/springframework/http/converter/json/Jackson2ObjectMapperFactoryBean/afterPropertiesSet()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/godmonth/util/jackson/ObjectMapperFactoryBean$Mixin/getMixinSource()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/setSerializationInclusion(com.fasterxml.jackson.annotation.JsonInclude$Include)|",
+      "|java+method:///org/apache/commons/collections4/CollectionUtils/isNotEmpty(java.util.Collection)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/addMixIn(java.lang.Class,java.lang.Class)|",
+      "|java+method:///com/godmonth/util/jackson/ObjectMapperFactoryBean$Mixin/getTarget()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/godmonth/util/jackson/ObjectMapperFactoryBean/getObject()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/setPropertyNamingStrategy(com.fasterxml.jackson.databind.PropertyNamingStrategy)|",
+      "|java+method:///org/springframework/http/converter/json/Jackson2ObjectMapperFactoryBean/afterPropertiesSet()|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.7.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.godmonth:godmonth-commons:0.8.2",
+    "coordinatesV2": "com.godmonth:godmonth-commons:1.0",
+    "caller": "|java+method:///com/godmonth/util/jackson/ObjectMapperFactoryBean/afterPropertiesSet()|",
+    "called": "|java+method:///org/springframework/http/converter/json/Jackson2ObjectMapperFactoryBean/afterPropertiesSet()|",
+    "v1Body": [
+      "|java+method:///com/godmonth/util/jackson/ObjectMapperFactoryBean$Mixin/getMixinSource()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/setSerializationInclusion(com.fasterxml.jackson.annotation.JsonInclude$Include)|",
+      "|java+method:///org/apache/commons/collections4/CollectionUtils/isNotEmpty(java.util.Collection)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/addMixInAnnotations(java.lang.Class,java.lang.Class)|",
+      "|java+method:///com/godmonth/util/jackson/ObjectMapperFactoryBean$Mixin/getTarget()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/godmonth/util/jackson/ObjectMapperFactoryBean/getObject()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/setPropertyNamingStrategy(com.fasterxml.jackson.databind.PropertyNamingStrategy)|",
+      "|java+method:///org/springframework/http/converter/json/Jackson2ObjectMapperFactoryBean/afterPropertiesSet()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/godmonth/util/jackson/ObjectMapperFactoryBean$Mixin/getMixinSource()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/setSerializationInclusion(com.fasterxml.jackson.annotation.JsonInclude$Include)|",
+      "|java+method:///org/apache/commons/collections4/CollectionUtils/isNotEmpty(java.util.Collection)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/addMixIn(java.lang.Class,java.lang.Class)|",
+      "|java+method:///com/godmonth/util/jackson/ObjectMapperFactoryBean$Mixin/getTarget()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/godmonth/util/jackson/ObjectMapperFactoryBean/getObject()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/setPropertyNamingStrategy(com.fasterxml.jackson.databind.PropertyNamingStrategy)|",
+      "|java+method:///org/springframework/http/converter/json/Jackson2ObjectMapperFactoryBean/afterPropertiesSet()|"
+    ],
+    "affectedLib": "org.springframework:spring-web:4.3.0.RELEASE",
+    "change": "UPDATED"
+  }
+]

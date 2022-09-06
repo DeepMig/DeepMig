@@ -1,0 +1,44 @@
+[
+  {
+    "coordinatesV1": "com.github.wuic.extensions:wuic-spring:0.5.2.RC3",
+    "coordinatesV2": "com.github.wuic.extensions:wuic-spring:0.5.0",
+    "caller": "|java+method:///com/github/wuic/spring/WuicPathResourceResolver/resolveResource(javax.servlet.http.HttpServletRequest,java.lang.String,java.util.List,org.springframework.web.servlet.resource.ResourceResolverChain)|",
+    "called": "|java+method:///com/github/wuic/util/UrlUtils/urlMatcher(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.Throwable)|",
+      "|java+method:///com/github/wuic/util/UrlUtils/urlMatcher(java.lang.String)|",
+      "|java+method:///com/github/wuic/util/UrlMatcher/matches()|",
+      "|java+method:///com/github/wuic/spring/WuicPathResourceResolver/internalResolve(com.github.wuic.util.UrlMatcher)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/github/wuic/servlet/ServletProcessContext/ServletProcessContext(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///com/github/wuic/spring/WuicPathResourceResolver/internalResolve(com.github.wuic.util.UrlMatcher,com.github.wuic.ProcessContext)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.Throwable)|",
+      "|java+method:///com/github/wuic/util/UrlUtils/urlMatcher(java.lang.String)|",
+      "|java+method:///com/github/wuic/util/UrlMatcher/matches()|"
+    ],
+    "affectedLib": "com.github.wuic:wuic-core:0.5.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.github.wuic.extensions:wuic-spring:0.5.0",
+    "coordinatesV2": "com.github.wuic.extensions:wuic-spring:0.5.2.RC3",
+    "caller": "|java+method:///com/github/wuic/spring/WuicPathResourceResolver/resolveResource(javax.servlet.http.HttpServletRequest,java.lang.String,java.util.List,org.springframework.web.servlet.resource.ResourceResolverChain)|",
+    "called": "|java+constructor:///com/github/wuic/servlet/ServletProcessContext/ServletProcessContext(javax.servlet.http.HttpServletRequest)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.Throwable)|",
+      "|java+method:///com/github/wuic/util/UrlUtils/urlMatcher(java.lang.String)|",
+      "|java+method:///com/github/wuic/util/UrlMatcher/matches()|",
+      "|java+method:///com/github/wuic/spring/WuicPathResourceResolver/internalResolve(com.github.wuic.util.UrlMatcher)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/github/wuic/servlet/ServletProcessContext/ServletProcessContext(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///com/github/wuic/spring/WuicPathResourceResolver/internalResolve(com.github.wuic.util.UrlMatcher,com.github.wuic.ProcessContext)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.Throwable)|",
+      "|java+method:///com/github/wuic/util/UrlUtils/urlMatcher(java.lang.String)|",
+      "|java+method:///com/github/wuic/util/UrlMatcher/matches()|"
+    ],
+    "affectedLib": "com.github.wuic:wuic-servlet:0.5.2.RC3",
+    "change": "ADDED"
+  }
+]

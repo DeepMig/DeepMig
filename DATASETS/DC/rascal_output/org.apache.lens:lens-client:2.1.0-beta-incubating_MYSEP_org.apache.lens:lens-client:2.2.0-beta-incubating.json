@@ -1,0 +1,122 @@
+[
+  {
+    "coordinatesV1": "org.apache.lens:lens-client:2.1.0-beta-incubating",
+    "coordinatesV2": "org.apache.lens:lens-client:2.2.0-beta-incubating",
+    "caller": "|java+initializer:///org/apache/lens/client/jdbc/LensJdbcDriver/LensJdbcDriver$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/sql/SQLException/printStackTrace()|",
+      "|java+constructor:///org/apache/lens/client/jdbc/LensJdbcDriver/LensJdbcDriver()|",
+      "|java+method:///java/sql/DriverManager/registerDriver(java.sql.Driver)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/lens/client/jdbc/LensJdbcDriver/LensJdbcDriver()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/sql/DriverManager/registerDriver(java.sql.Driver)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.lens:lens-client:2.1.0-beta-incubating",
+    "coordinatesV2": "org.apache.lens:lens-client:2.2.0-beta-incubating",
+    "caller": "|java+method:///org/apache/lens/client/LensMetadataClient/getPartitionsOfFactTable(java.lang.String,java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/apache/lens/api/metastore/XPartitionList/getPartition()|",
+    "v1Body": [
+      "|java+method:///javax/ws/rs/client/Invocation$Builder/get(javax.ws.rs.core.GenericType)|",
+      "|java+method:///javax/ws/rs/client/WebTarget/request(java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/lens/client/LensMetadataClient/getMetastoreWebTarget()|",
+      "|java+method:///javax/ws/rs/client/WebTarget/queryParam(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/client/WebTarget/path(java.lang.String)|",
+      "|java+constructor:///org/apache/lens/client/LensMetadataClient$7/LensMetadataClient$7(org.apache.lens.client.LensMetadataClient)|",
+      "|java+method:///javax/xml/bind/JAXBElement/getValue()|",
+      "|java+method:///org/apache/lens/client/LensConnection/getSessionHandle()|",
+      "|java+method:///org/apache/lens/api/metastore/XPartitionList/getPartition()|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/ws/rs/client/Invocation$Builder/get(javax.ws.rs.core.GenericType)|",
+      "|java+method:///javax/ws/rs/client/WebTarget/request(java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/lens/client/LensMetadataClient/getMetastoreWebTarget()|",
+      "|java+method:///javax/ws/rs/client/WebTarget/queryParam(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/client/WebTarget/path(java.lang.String)|",
+      "|java+method:///javax/xml/bind/JAXBElement/getValue()|",
+      "|java+method:///org/apache/lens/client/LensConnection/getSessionHandle()|",
+      "|java+method:///org/apache/lens/api/metastore/XPartitionList/getPartition()|",
+      "|java+constructor:///org/apache/lens/client/LensMetadataClient$9/LensMetadataClient$9(org.apache.lens.client.LensMetadataClient)|"
+    ],
+    "affectedLib": "org.apache.lens:lens-api:2.2.0-beta-incubating",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.lens:lens-client:2.1.0-beta-incubating",
+    "coordinatesV2": "org.apache.lens:lens-client:2.2.0-beta-incubating",
+    "caller": "|java+method:///org/apache/lens/client/LensStatement/waitForQueryToComplete(org.apache.lens.api.query.QueryHandle)|",
+    "called": "|java+method:///org/apache/lens/api/query/QueryStatus/toString()|",
+    "v1Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.Throwable)|",
+      "|java+method:///java/lang/Thread/sleep(long)|",
+      "|java+method:///org/apache/lens/api/query/LensQuery/getStatus()|",
+      "|java+method:///org/apache/lens/client/LensConnection/getLensConnectionParams()|",
+      "|java+method:///org/apache/lens/client/LensConnectionParams/getQueryPollInterval()|",
+      "|java+method:///org/apache/lens/client/LensStatement/getQuery(org.apache.lens.api.query.QueryHandle)|",
+      "|java+method:///org/apache/lens/api/query/QueryStatus/finished()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///org/apache/lens/api/query/LensQuery/getDriverOpHandle()|",
+      "|java+method:///org/apache/lens/client/LensClient/getCliLooger()|",
+      "|java+method:///org/apache/lens/client/LensConnection/getLensConnectionParams()|",
+      "|java+method:///org/apache/commons/logging/Log/info(java.lang.Object)|",
+      "|java+method:///org/apache/lens/client/LensStatement/getQuery(org.apache.lens.api.query.QueryHandle)|",
+      "|java+method:///org/apache/lens/api/query/QueryStatus/finished()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/apache/lens/api/query/LensQuery/getUserQuery()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/lens/api/query/LensQuery/getSelectedDriverClassName()|",
+      "|java+method:///org/apache/lens/api/query/LensQuery/getDriverQuery()|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.Throwable)|",
+      "|java+method:///java/lang/Thread/sleep(long)|",
+      "|java+method:///org/apache/lens/api/query/QueryStatus$Status/toString()|",
+      "|java+method:///org/apache/lens/client/LensStatement/isQueryInQUEUEDSate()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/lens/api/query/LensQuery/getStatus()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/apache/lens/api/query/QueryStatus/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/lens/client/LensConnectionParams/getQueryPollInterval()|"
+    ],
+    "affectedLib": "org.apache.lens:lens-api:2.2.0-beta-incubating",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.lens:lens-client:2.1.0-beta-incubating",
+    "coordinatesV2": "org.apache.lens:lens-client:2.2.0-beta-incubating",
+    "caller": "|java+method:///org/apache/lens/client/LensMetadataClient/getAllPartitionsOfDimensionTable(java.lang.String,java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/apache/lens/api/metastore/XPartitionList/getPartition()|",
+    "v1Body": [
+      "|java+method:///javax/ws/rs/client/Invocation$Builder/get(javax.ws.rs.core.GenericType)|",
+      "|java+method:///javax/ws/rs/client/WebTarget/request(java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/lens/client/LensMetadataClient/getMetastoreWebTarget()|",
+      "|java+method:///javax/ws/rs/client/WebTarget/queryParam(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/apache/lens/client/LensMetadataClient$10/LensMetadataClient$10(org.apache.lens.client.LensMetadataClient)|",
+      "|java+method:///javax/ws/rs/client/WebTarget/path(java.lang.String)|",
+      "|java+method:///javax/xml/bind/JAXBElement/getValue()|",
+      "|java+method:///org/apache/lens/client/LensConnection/getSessionHandle()|",
+      "|java+method:///org/apache/lens/api/metastore/XPartitionList/getPartition()|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/ws/rs/client/Invocation$Builder/get(javax.ws.rs.core.GenericType)|",
+      "|java+method:///javax/ws/rs/client/WebTarget/request(java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/lens/client/LensMetadataClient/getMetastoreWebTarget()|",
+      "|java+method:///javax/ws/rs/client/WebTarget/queryParam(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/apache/lens/client/LensMetadataClient$12/LensMetadataClient$12(org.apache.lens.client.LensMetadataClient)|",
+      "|java+method:///javax/ws/rs/client/WebTarget/path(java.lang.String)|",
+      "|java+method:///javax/xml/bind/JAXBElement/getValue()|",
+      "|java+method:///org/apache/lens/client/LensConnection/getSessionHandle()|",
+      "|java+method:///org/apache/lens/api/metastore/XPartitionList/getPartition()|"
+    ],
+    "affectedLib": "org.apache.lens:lens-api:2.2.0-beta-incubating",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,287 @@
+[
+  {
+    "coordinatesV1": "com.qmetric:penfold-client:1.7",
+    "coordinatesV2": "com.qmetric:penfold-client:1.3",
+    "caller": "|java+method:///com/qmetric/penfold/client/app/TaskStoreServiceImpl/getTaskResource(com.qmetric.penfold.client.domain.model.TaskId)|",
+    "called": "|java+method:///com/sun/jersey/api/client/WebResource/accept(java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/qmetric/hal/reader/HalReader/read(java.io.Reader)|",
+      "|java+method:///com/sun/jersey/api/client/WebResource$Builder/get(java.lang.Class)|",
+      "|java+method:///com/sun/jersey/api/client/Client/resource(java.lang.String)|",
+      "|java+method:///com/sun/jersey/api/client/WebResource/accept(java.lang.String%5B%5D)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/sun/jersey/api/client/ClientResponse/getEntityInputStream()|",
+      "|java+method:///com/qmetric/penfold/client/app/TaskStoreServiceImpl/checkResponseStatus(com.sun.jersey.api.client.ClientResponse,int)|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/qmetric/hal/reader/HalReader/read(java.io.Reader)|",
+      "|java+method:///com/qmetric/penfold/client/app/TaskStoreServiceImpl/checkResponseStatus(javax.ws.rs.core.Response,int)|",
+      "|java+method:///javax/ws/rs/client/WebTarget/request(java.lang.String%5B%5D)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/io/StringReader/StringReader(java.lang.String)|",
+      "|java+method:///javax/ws/rs/core/Response/readEntity(java.lang.Class)|",
+      "|java+method:///javax/ws/rs/client/Invocation$Builder/get()|",
+      "|java+method:///javax/ws/rs/client/Client/target(java.lang.String)|"
+    ],
+    "affectedLib": "com.sun.jersey:jersey-client:1.19",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.qmetric:penfold-client:1.7",
+    "coordinatesV2": "com.qmetric:penfold-client:1.3",
+    "caller": "|java+method:///com/qmetric/penfold/client/app/TaskQueryServiceBuilder/build()|",
+    "called": "|java+method:///com/sun/jersey/api/client/Client/create()|",
+    "v1Body": [
+      "|java+constructor:///com/qmetric/penfold/client/app/TaskQueryServiceImpl/TaskQueryServiceImpl(java.lang.String,com.qmetric.penfold.client.app.support.Credentials,com.sun.jersey.api.client.Client,com.fasterxml.jackson.databind.ObjectMapper)|",
+      "|java+method:///com/qmetric/penfold/client/app/TaskQueryServiceBuilder/checkValid()|",
+      "|java+method:///com/sun/jersey/api/client/Client/create()|",
+      "|java+method:///com/qmetric/penfold/client/app/support/ObjectMapperFactory/create()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/qmetric/penfold/client/app/TaskQueryServiceImpl/TaskQueryServiceImpl(java.lang.String,com.qmetric.penfold.client.app.support.Credentials,javax.ws.rs.client.Client,com.fasterxml.jackson.databind.ObjectMapper)|",
+      "|java+method:///com/qmetric/penfold/client/app/support/ClientFactory/create()|",
+      "|java+method:///com/qmetric/penfold/client/app/TaskQueryServiceBuilder/checkValid()|",
+      "|java+method:///com/qmetric/penfold/client/app/support/ObjectMapperFactory/create()|"
+    ],
+    "affectedLib": "com.sun.jersey:jersey-client:1.19",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.qmetric:penfold-client:1.7",
+    "coordinatesV2": "com.qmetric:penfold-client:1.3",
+    "caller": "|java+method:///com/qmetric/penfold/client/app/TaskStoreServiceImpl/create(com.qmetric.penfold.client.domain.model.NewTask)|",
+    "called": "|java+method:///com/sun/jersey/api/client/WebResource/accept(java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/qmetric/penfold/client/app/TaskStoreServiceImpl/contentTypeHeaderFor(com.qmetric.penfold.client.domain.model.CommandType)|",
+      "|java+method:///com/sun/jersey/api/client/WebResource$Builder/type(java.lang.String)|",
+      "|java+constructor:///com/qmetric/penfold/client/app/commands/CreateTaskCommand/CreateTaskCommand(com.qmetric.penfold.client.domain.model.NewTask)|",
+      "|java+method:///com/sun/jersey/api/client/Client/resource(java.lang.String)|",
+      "|java+method:///com/sun/jersey/api/client/WebResource/accept(java.lang.String%5B%5D)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/sun/jersey/api/client/WebResource$Builder/post(java.lang.Class,java.lang.Object)|",
+      "|java+method:///java/util/Optional/isPresent()|",
+      "|java+method:///com/qmetric/penfold/client/app/TaskStoreServiceImpl/toJson(java.lang.Object)|",
+      "|java+method:///com/qmetric/penfold/client/app/TaskStoreServiceImpl/taskFromResponse(com.sun.jersey.api.client.ClientResponse)|",
+      "|java+method:///com/qmetric/penfold/client/app/TaskStoreServiceImpl/checkResponseStatus(com.sun.jersey.api.client.ClientResponse,int)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/ws/rs/client/Invocation$Builder/post(javax.ws.rs.client.Entity)|",
+      "|java+method:///com/qmetric/penfold/client/app/TaskStoreServiceImpl/contentTypeHeaderFor(com.qmetric.penfold.client.domain.model.CommandType)|",
+      "|java+method:///com/qmetric/penfold/client/app/TaskStoreServiceImpl/checkResponseStatus(javax.ws.rs.core.Response,int)|",
+      "|java+constructor:///com/qmetric/penfold/client/app/commands/CreateTaskCommand/CreateTaskCommand(com.qmetric.penfold.client.domain.model.NewTask)|",
+      "|java+method:///javax/ws/rs/client/WebTarget/request(java.lang.String%5B%5D)|",
+      "|java+method:///com/qmetric/penfold/client/app/TaskStoreServiceImpl/taskFromResponse(javax.ws.rs.core.Response)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/client/Entity/entity(java.lang.Object,java.lang.String)|",
+      "|java+method:///javax/ws/rs/client/Client/target(java.lang.String)|",
+      "|java+method:///java/util/Optional/isPresent()|",
+      "|java+method:///com/qmetric/penfold/client/app/TaskStoreServiceImpl/toJson(java.lang.Object)|"
+    ],
+    "affectedLib": "com.sun.jersey:jersey-client:1.19",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.qmetric:penfold-client:1.7",
+    "coordinatesV2": "com.qmetric:penfold-client:1.3",
+    "caller": "|java+method:///com/qmetric/penfold/client/app/TaskQueryServiceImpl/getTaskResource(com.qmetric.penfold.client.domain.model.TaskId)|",
+    "called": "|java+method:///com/sun/jersey/api/client/ClientResponse/getStatus()|",
+    "v1Body": [
+      "|java+method:///com/sun/jersey/api/client/WebResource$Builder/get(java.lang.Class)|",
+      "|java+method:///com/sun/jersey/api/client/Client/resource(java.lang.String)|",
+      "|java+method:///com/sun/jersey/api/client/WebResource/accept(java.lang.String%5B%5D)|",
+      "|java+method:///com/qmetric/penfold/client/app/TaskQueryServiceImpl/checkResponseStatus(com.sun.jersey.api.client.ClientResponse,int)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream)|",
+      "|java+method:///java/util/Optional/empty()|",
+      "|java+method:///com/sun/jersey/api/client/ClientResponse/getStatus()|",
+      "|java+method:///com/qmetric/hal/reader/HalReader/read(java.io.Reader)|",
+      "|java+method:///com/sun/jersey/api/client/ClientResponse/getEntityInputStream()|",
+      "|java+method:///java/util/Optional/of(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/qmetric/hal/reader/HalReader/read(java.io.Reader)|",
+      "|java+method:///javax/ws/rs/client/WebTarget/request(java.lang.String%5B%5D)|",
+      "|java+method:///com/qmetric/penfold/client/app/TaskQueryServiceImpl/checkResponseStatus(javax.ws.rs.core.Response,int)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Optional/of(java.lang.Object)|",
+      "|java+constructor:///java/io/StringReader/StringReader(java.lang.String)|",
+      "|java+method:///javax/ws/rs/core/Response/getStatus()|",
+      "|java+method:///java/util/Optional/empty()|",
+      "|java+method:///javax/ws/rs/core/Response/readEntity(java.lang.Class)|",
+      "|java+method:///javax/ws/rs/client/Invocation$Builder/get()|",
+      "|java+method:///javax/ws/rs/client/Client/target(java.lang.String)|"
+    ],
+    "affectedLib": "com.sun.jersey:jersey-client:1.19",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.qmetric:penfold-client:1.7",
+    "coordinatesV2": "com.qmetric:penfold-client:1.3",
+    "caller": "|java+method:///com/qmetric/penfold/client/app/support/PenfoldServerHealthCheck/check()|",
+    "called": "|java+method:///com/sun/jersey/api/client/ClientResponse/getStatus()|",
+    "v1Body": [
+      "|java+method:///com/sun/jersey/api/client/ClientResponse/getStatus()|",
+      "|java+method:///com/codahale/metrics/health/HealthCheck$Result/unhealthy(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/sun/jersey/api/client/WebResource$Builder/get(java.lang.Class)|",
+      "|java+method:///com/sun/jersey/api/client/Client/resource(java.lang.String)|",
+      "|java+method:///com/sun/jersey/api/client/WebResource/accept(java.lang.String%5B%5D)|",
+      "|java+method:///com/codahale/metrics/health/HealthCheck$Result/healthy(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/codahale/metrics/health/HealthCheck$Result/unhealthy(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/client/WebTarget/request(java.lang.String%5B%5D)|",
+      "|java+method:///com/codahale/metrics/health/HealthCheck$Result/healthy(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/Response/getStatus()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///javax/ws/rs/client/Invocation$Builder/get()|",
+      "|java+method:///javax/ws/rs/client/Client/target(java.lang.String)|"
+    ],
+    "affectedLib": "com.sun.jersey:jersey-client:1.19",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.qmetric:penfold-client:1.7",
+    "coordinatesV2": "com.qmetric:penfold-client:1.3",
+    "caller": "|java+method:///com/qmetric/penfold/client/app/TaskConsumerBuilder/build()|",
+    "called": "|java+method:///com/sun/jersey/api/client/Client/create()|",
+    "v1Body": [
+      "|java+method:///com/qmetric/penfold/client/app/TaskConsumerBuilder/checkValid()|",
+      "|java+constructor:///com/qmetric/penfold/client/app/support/LocalDateTimeSource/LocalDateTimeSource()|",
+      "|java+constructor:///com/qmetric/penfold/client/domain/services/Consumer/Consumer(com.qmetric.penfold.client.domain.model.QueueId,com.qmetric.penfold.client.domain.services.ConsumerFunction,java.util.Optional,com.qmetric.penfold.client.domain.services.TaskQueryService,com.qmetric.penfold.client.domain.services.TaskStoreService,com.qmetric.penfold.client.app.support.LocalDateTimeSource)|",
+      "|java+constructor:///com/qmetric/penfold/client/app/TaskConsumerImpl/TaskConsumerImpl(com.qmetric.penfold.client.domain.services.Consumer,com.qmetric.penfold.client.app.support.Interval)|",
+      "|java+method:///com/sun/jersey/api/client/Client/create()|",
+      "|java+method:///com/qmetric/penfold/client/app/support/ObjectMapperFactory/create()|",
+      "|java+constructor:///com/qmetric/penfold/client/app/TaskQueryServiceImpl/TaskQueryServiceImpl(java.lang.String,com.qmetric.penfold.client.app.support.Credentials,com.sun.jersey.api.client.Client,com.fasterxml.jackson.databind.ObjectMapper)|",
+      "|java+constructor:///com/qmetric/penfold/client/app/TaskStoreServiceImpl/TaskStoreServiceImpl(java.lang.String,com.qmetric.penfold.client.app.support.Credentials,com.sun.jersey.api.client.Client,com.fasterxml.jackson.databind.ObjectMapper)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/qmetric/penfold/client/app/TaskConsumerBuilder/checkValid()|",
+      "|java+method:///com/qmetric/penfold/client/app/support/ClientFactory/create()|",
+      "|java+constructor:///com/qmetric/penfold/client/app/support/LocalDateTimeSource/LocalDateTimeSource()|",
+      "|java+constructor:///com/qmetric/penfold/client/domain/services/Consumer/Consumer(com.qmetric.penfold.client.domain.model.QueueId,com.qmetric.penfold.client.domain.services.ConsumerFunction,java.util.Optional,com.qmetric.penfold.client.domain.services.TaskQueryService,com.qmetric.penfold.client.domain.services.TaskStoreService,com.qmetric.penfold.client.app.support.LocalDateTimeSource)|",
+      "|java+constructor:///com/qmetric/penfold/client/app/TaskConsumerImpl/TaskConsumerImpl(com.qmetric.penfold.client.domain.services.Consumer,com.qmetric.penfold.client.app.support.Interval)|",
+      "|java+method:///com/qmetric/penfold/client/app/support/ObjectMapperFactory/create()|",
+      "|java+constructor:///com/qmetric/penfold/client/app/TaskStoreServiceImpl/TaskStoreServiceImpl(java.lang.String,com.qmetric.penfold.client.app.support.Credentials,javax.ws.rs.client.Client,com.fasterxml.jackson.databind.ObjectMapper)|",
+      "|java+constructor:///com/qmetric/penfold/client/app/TaskQueryServiceImpl/TaskQueryServiceImpl(java.lang.String,com.qmetric.penfold.client.app.support.Credentials,javax.ws.rs.client.Client,com.fasterxml.jackson.databind.ObjectMapper)|"
+    ],
+    "affectedLib": "com.sun.jersey:jersey-client:1.19",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.qmetric:penfold-client:1.7",
+    "coordinatesV2": "com.qmetric:penfold-client:1.3",
+    "caller": "|java+method:///com/qmetric/penfold/client/app/TaskStoreServiceImpl/update(com.qmetric.penfold.client.domain.model.Task,java.lang.Object,com.qmetric.penfold.client.domain.model.CommandType)|",
+    "called": "|java+method:///com/sun/jersey/api/client/ClientResponse/getStatus()|",
+    "v1Body": [
+      "|java+method:///com/qmetric/penfold/client/app/TaskStoreServiceImpl/contentTypeHeaderFor(com.qmetric.penfold.client.domain.model.CommandType)|",
+      "|java+method:///com/google/common/base/Optional/get()|",
+      "|java+method:///com/sun/jersey/api/client/WebResource$Builder/type(java.lang.String)|",
+      "|java+method:///com/sun/jersey/api/client/Client/resource(java.lang.String)|",
+      "|java+method:///com/sun/jersey/api/client/WebResource/accept(java.lang.String%5B%5D)|",
+      "|java+method:///com/qmetric/hal/reader/HalResource/getLinkByRel(java.lang.String)|",
+      "|java+method:///com/qmetric/penfold/client/app/TaskStoreServiceImpl/getTaskResourceWithExpectedVersion(com.qmetric.penfold.client.domain.model.TaskId,java.lang.String)|",
+      "|java+constructor:///com/qmetric/penfold/client/domain/exceptions/ConflictException/ConflictException(java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///com/qmetric/penfold/client/app/TaskStoreServiceImpl/toJson(java.lang.Object)|",
+      "|java+method:///com/sun/jersey/api/client/ClientResponse/getStatus()|",
+      "|java+method:///com/google/common/base/Optional/isPresent()|",
+      "|java+method:///com/qmetric/penfold/client/domain/model/CommandType/name()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/google/common/base/Preconditions/checkState(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/qmetric/penfold/client/app/TaskStoreServiceImpl/taskFromResponse(com.sun.jersey.api.client.ClientResponse)|",
+      "|java+method:///com/sun/jersey/api/client/WebResource$Builder/post(java.lang.Class,java.lang.Object)|",
+      "|java+method:///com/theoryinpractise/halbuilder/api/Link/getHref()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Optional/isPresent()|",
+      "|java+method:///javax/ws/rs/client/Invocation$Builder/post(javax.ws.rs.client.Entity)|",
+      "|java+method:///com/qmetric/penfold/client/app/TaskStoreServiceImpl/contentTypeHeaderFor(com.qmetric.penfold.client.domain.model.CommandType)|",
+      "|java+method:///com/google/common/base/Optional/get()|",
+      "|java+method:///com/qmetric/penfold/client/app/TaskStoreServiceImpl/taskFromResponse(javax.ws.rs.core.Response)|",
+      "|java+method:///com/qmetric/hal/reader/HalResource/getLinkByRel(java.lang.String)|",
+      "|java+method:///javax/ws/rs/client/Entity/entity(java.lang.Object,java.lang.String)|",
+      "|java+method:///javax/ws/rs/core/Response/getStatus()|",
+      "|java+method:///com/google/common/base/Preconditions/checkState(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///com/qmetric/penfold/client/domain/exceptions/ConflictException/ConflictException(java.lang.String)|",
+      "|java+method:///com/theoryinpractise/halbuilder/api/Link/getHref()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///javax/ws/rs/client/Client/target(java.lang.String)|",
+      "|java+method:///com/qmetric/penfold/client/app/TaskStoreServiceImpl/toJson(java.lang.Object)|",
+      "|java+method:///com/qmetric/penfold/client/app/TaskStoreServiceImpl/getTaskResourceWithExpectedVersion(com.qmetric.penfold.client.domain.model.TaskId,java.lang.Integer)|",
+      "|java+method:///javax/ws/rs/client/WebTarget/request(java.lang.String%5B%5D)|",
+      "|java+method:///com/qmetric/penfold/client/domain/model/CommandType/name()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "com.sun.jersey:jersey-client:1.19",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.qmetric:penfold-client:1.7",
+    "coordinatesV2": "com.qmetric:penfold-client:1.3",
+    "caller": "|java+method:///com/qmetric/penfold/client/app/HealthCheckConfigurer/configure()|",
+    "called": "|java+method:///com/sun/jersey/api/client/Client/create()|",
+    "v1Body": [
+      "|java+method:///com/codahale/metrics/health/HealthCheckRegistry/register(java.lang.String,com.codahale.metrics.health.HealthCheck)|",
+      "|java+constructor:///com/qmetric/penfold/client/app/support/PenfoldServerHealthCheck/PenfoldServerHealthCheck(java.lang.String,com.sun.jersey.api.client.Client)|",
+      "|java+method:///com/sun/jersey/api/client/Client/create()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/codahale/metrics/health/HealthCheckRegistry/register(java.lang.String,com.codahale.metrics.health.HealthCheck)|",
+      "|java+method:///com/qmetric/penfold/client/app/support/ClientFactory/create()|",
+      "|java+constructor:///com/qmetric/penfold/client/app/support/PenfoldServerHealthCheck/PenfoldServerHealthCheck(java.lang.String,javax.ws.rs.client.Client)|"
+    ],
+    "affectedLib": "com.sun.jersey:jersey-client:1.19",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.qmetric:penfold-client:1.7",
+    "coordinatesV2": "com.qmetric:penfold-client:1.3",
+    "caller": "|java+method:///com/qmetric/penfold/client/app/TaskStoreServiceBuilder/build()|",
+    "called": "|java+method:///com/sun/jersey/api/client/Client/create()|",
+    "v1Body": [
+      "|java+constructor:///com/qmetric/penfold/client/app/TaskStoreServiceImpl/TaskStoreServiceImpl(java.lang.String,com.qmetric.penfold.client.app.support.Credentials,com.sun.jersey.api.client.Client,com.fasterxml.jackson.databind.ObjectMapper)|",
+      "|java+method:///com/sun/jersey/api/client/Client/create()|",
+      "|java+method:///com/qmetric/penfold/client/app/TaskStoreServiceBuilder/checkValid()|",
+      "|java+method:///com/qmetric/penfold/client/app/support/ObjectMapperFactory/create()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/qmetric/penfold/client/app/TaskStoreServiceImpl/TaskStoreServiceImpl(java.lang.String,com.qmetric.penfold.client.app.support.Credentials,javax.ws.rs.client.Client,com.fasterxml.jackson.databind.ObjectMapper)|",
+      "|java+method:///com/qmetric/penfold/client/app/support/ClientFactory/create()|",
+      "|java+method:///com/qmetric/penfold/client/app/TaskStoreServiceBuilder/checkValid()|",
+      "|java+method:///com/qmetric/penfold/client/app/support/ObjectMapperFactory/create()|"
+    ],
+    "affectedLib": "com.sun.jersey:jersey-client:1.19",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.qmetric:penfold-client:1.7",
+    "coordinatesV2": "com.qmetric:penfold-client:1.3",
+    "caller": "|java+method:///com/qmetric/penfold/client/app/TaskQueryServiceImpl/get(java.lang.String,javax.ws.rs.core.MultivaluedMap)|",
+    "called": "|java+method:///com/sun/jersey/api/client/WebResource/queryParams(javax.ws.rs.core.MultivaluedMap)|",
+    "v1Body": [
+      "|java+method:///com/qmetric/hal/reader/HalReader/read(java.io.Reader)|",
+      "|java+method:///com/sun/jersey/api/client/WebResource$Builder/get(java.lang.Class)|",
+      "|java+method:///com/sun/jersey/api/client/Client/resource(java.lang.String)|",
+      "|java+method:///com/sun/jersey/api/client/WebResource/accept(java.lang.String%5B%5D)|",
+      "|java+method:///com/qmetric/penfold/client/app/TaskQueryServiceImpl/checkResponseStatus(com.sun.jersey.api.client.ClientResponse,int)|",
+      "|java+method:///com/sun/jersey/api/client/ClientResponse/getEntityInputStream()|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream)|",
+      "|java+method:///com/sun/jersey/api/client/WebResource/queryParams(javax.ws.rs.core.MultivaluedMap)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/qmetric/hal/reader/HalReader/read(java.io.Reader)|",
+      "|java+method:///java/util/Set/forEach(java.util.function.Consumer)|",
+      "|java+method:///javax/ws/rs/client/WebTarget/request(java.lang.String%5B%5D)|",
+      "|java+method:///com/qmetric/penfold/client/app/TaskQueryServiceImpl/checkResponseStatus(javax.ws.rs.core.Response,int)|",
+      "|java+method:///javax/ws/rs/core/MultivaluedMap/entrySet()|",
+      "|java+constructor:///java/io/StringReader/StringReader(java.lang.String)|",
+      "|java+method:///javax/ws/rs/core/Response/readEntity(java.lang.Class)|",
+      "|java+method:///javax/ws/rs/client/Invocation$Builder/get()|",
+      "|java+method:///javax/ws/rs/client/Client/target(java.lang.String)|"
+    ],
+    "affectedLib": "com.sun.jersey:jersey-client:1.19",
+    "change": "REMOVED"
+  }
+]

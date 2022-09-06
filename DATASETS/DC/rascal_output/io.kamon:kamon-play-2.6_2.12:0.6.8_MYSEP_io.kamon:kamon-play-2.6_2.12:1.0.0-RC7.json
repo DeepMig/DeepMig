@@ -1,0 +1,88 @@
+[
+  {
+    "coordinatesV1": "io.kamon:kamon-play-2.6_2.12:0.6.8",
+    "coordinatesV2": "io.kamon:kamon-play-2.6_2.12:1.0.0-RC7",
+    "caller": "|java+method:///kamon/play/di/GuiceModule$KamonLoader/$anonfun$new$2()|",
+    "called": "|java+method:///scala/concurrent/Future$/successful(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///scala/concurrent/Future$/successful(java.lang.Object)|",
+      "|java+method:///kamon/Kamon$/shutdown()|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/concurrent/Future$/successful(java.lang.Object)|",
+      "|java+method:///kamon/Kamon$/stopAllReporters()|"
+    ],
+    "affectedLib": "org.scala-lang:scala-library:2.12.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.kamon:kamon-play-2.6_2.12:0.6.8",
+    "coordinatesV2": "io.kamon:kamon-play-2.6_2.12:1.0.0-RC7",
+    "caller": "|java+constructor:///kamon/play/di/GuiceModule$KamonLoader/GuiceModule$KamonLoader(play.api.inject.ApplicationLifecycle,play.api.Environment,play.api.Configuration)|",
+    "called": "|java+method:///play/api/Logger$/apply(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///kamon/Kamon$/start(com.typesafe.config.Config)|",
+      "|java+method:///play/api/Configuration/underlying()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///play/api/MarkerContext$/NoMarker()|",
+      "|java+method:///play/api/Logger$/apply(java.lang.Class)|",
+      "|java+method:///play/api/inject/ApplicationLifecycle/addStopHook(scala.Function0)|",
+      "|java+method:///play/api/Logger/debug(scala.Function0,play.api.MarkerContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///play/api/Configuration/underlying()|",
+      "|java+method:///kamon/Kamon$/loadReportersFromConfig()|",
+      "|java+method:///kamon/Kamon$/reconfigure(com.typesafe.config.Config)|",
+      "|java+method:///play/api/Logger/info(scala.Function0,play.api.MarkerContext)|",
+      "|java+method:///play/api/inject/ApplicationLifecycle/addStopHook(scala.Function0)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///play/api/MarkerContext$/NoMarker()|",
+      "|java+method:///play/api/Logger$/apply(java.lang.Class)|"
+    ],
+    "affectedLib": "com.typesafe.play:play_2.12:2.6.10",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.kamon:kamon-play-2.6_2.12:0.6.8",
+    "coordinatesV2": "io.kamon:kamon-play-2.6_2.12:1.0.0-RC7",
+    "caller": "|java+constructor:///kamon/play/di/GuiceModule$KamonLoader/GuiceModule$KamonLoader(play.api.inject.ApplicationLifecycle,play.api.Environment,play.api.Configuration)|",
+    "called": "|java+method:///kamon/Kamon$/loadReportersFromConfig()|",
+    "v1Body": [
+      "|java+method:///kamon/Kamon$/start(com.typesafe.config.Config)|",
+      "|java+method:///play/api/Configuration/underlying()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///play/api/MarkerContext$/NoMarker()|",
+      "|java+method:///play/api/Logger$/apply(java.lang.Class)|",
+      "|java+method:///play/api/inject/ApplicationLifecycle/addStopHook(scala.Function0)|",
+      "|java+method:///play/api/Logger/debug(scala.Function0,play.api.MarkerContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///play/api/Configuration/underlying()|",
+      "|java+method:///kamon/Kamon$/loadReportersFromConfig()|",
+      "|java+method:///kamon/Kamon$/reconfigure(com.typesafe.config.Config)|",
+      "|java+method:///play/api/Logger/info(scala.Function0,play.api.MarkerContext)|",
+      "|java+method:///play/api/inject/ApplicationLifecycle/addStopHook(scala.Function0)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///play/api/MarkerContext$/NoMarker()|",
+      "|java+method:///play/api/Logger$/apply(java.lang.Class)|"
+    ],
+    "affectedLib": "io.kamon:kamon-core_2.12:1.0.0-RC7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.kamon:kamon-play-2.6_2.12:0.6.8",
+    "coordinatesV2": "io.kamon:kamon-play-2.6_2.12:1.0.0-RC7",
+    "caller": "|java+method:///kamon/play/di/GuiceModule$KamonLoader/$anonfun$new$2()|",
+    "called": "|java+method:///kamon/Kamon$/stopAllReporters()|",
+    "v1Body": [
+      "|java+method:///scala/concurrent/Future$/successful(java.lang.Object)|",
+      "|java+method:///kamon/Kamon$/shutdown()|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/concurrent/Future$/successful(java.lang.Object)|",
+      "|java+method:///kamon/Kamon$/stopAllReporters()|"
+    ],
+    "affectedLib": "io.kamon:kamon-core_2.12:1.0.0-RC7",
+    "change": "UPDATED"
+  }
+]

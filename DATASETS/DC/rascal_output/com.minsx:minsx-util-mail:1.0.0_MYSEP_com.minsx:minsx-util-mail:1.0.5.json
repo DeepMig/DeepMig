@@ -1,0 +1,34 @@
+[
+  {
+    "coordinatesV1": "com.minsx:minsx-util-mail:1.0.0",
+    "coordinatesV2": "com.minsx:minsx-util-mail:1.0.5",
+    "caller": "|java+method:///com/minsx/util/mail/MailSenderDefaultImpl/sendHtmlMail(java.lang.String,java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/mail/HtmlEmail/setHtmlMsg(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/mail/javamail/MimeMessageHelper/MimeMessageHelper(javax.mail.internet.MimeMessage)|",
+      "|java+method:///javax/mail/MessagingException/printStackTrace()|",
+      "|java+method:///com/minsx/util/mail/MailSenderDefaultImpl/createMimeMessage()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///org/springframework/mail/javamail/MimeMessageHelper/setFrom(java.lang.String)|",
+      "|java+method:///org/springframework/mail/javamail/MimeMessageHelper/setText(java.lang.String,boolean)|",
+      "|java+method:///com/minsx/util/mail/MailSenderDefaultImpl/getUsername()|",
+      "|java+method:///org/springframework/mail/javamail/MimeMessageHelper/setTo(java.lang.String)|",
+      "|java+method:///org/springframework/mail/javamail/MimeMessageHelper/setSubject(java.lang.String)|",
+      "|java+method:///com/minsx/util/mail/MailSenderDefaultImpl/send(javax.mail.internet.MimeMessage)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/commons/mail/EmailException/getMessage()|",
+      "|java+constructor:///java/util/Date/Date()|",
+      "|java+method:///org/apache/commons/mail/HtmlEmail/setSubject(java.lang.String)|",
+      "|java+method:///org/apache/commons/mail/HtmlEmail/addTo(java.lang.String)|",
+      "|java+method:///org/apache/commons/mail/HtmlEmail/send()|",
+      "|java+method:///org/apache/commons/mail/HtmlEmail/setSentDate(java.util.Date)|",
+      "|java+constructor:///com/minsx/util/mail/MailSendException/MailSendException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/minsx/util/mail/MailSenderDefaultImpl/finishInitial()|",
+      "|java+method:///org/apache/commons/mail/HtmlEmail/setHtmlMsg(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-email:1.4",
+    "change": "ADDED"
+  }
+]

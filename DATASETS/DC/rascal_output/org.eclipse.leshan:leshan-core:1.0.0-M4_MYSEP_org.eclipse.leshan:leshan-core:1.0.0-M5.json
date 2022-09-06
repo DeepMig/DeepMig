@@ -1,0 +1,189 @@
+[
+  {
+    "coordinatesV1": "org.eclipse.leshan:leshan-core:1.0.0-M5",
+    "coordinatesV2": "org.eclipse.leshan:leshan-core:1.0.0-M4",
+    "caller": "|java+initializer:///org/eclipse/leshan/json/LwM2mJson/LwM2mJson$initializer|",
+    "called": "|java+constructor:///com/google/gson/GsonBuilder/GsonBuilder()|",
+    "v1Body": [
+      "|java+method:///com/google/gson/GsonBuilder/create()|",
+      "|java+constructor:///com/google/gson/GsonBuilder/GsonBuilder()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/eclipse/leshan/json/JsonRootObjectSerDes/JsonRootObjectSerDes()|"
+    ],
+    "affectedLib": "com.google.code.gson:gson:2.2.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.leshan:leshan-core:1.0.0-M5",
+    "coordinatesV2": "org.eclipse.leshan:leshan-core:1.0.0-M4",
+    "caller": "|java+method:///org/eclipse/leshan/json/LwM2mJson/toJsonLwM2m(org.eclipse.leshan.json.JsonRootObject)|",
+    "called": "|java+method:///com/google/gson/Gson/toJson(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/google/gson/Gson/toJson(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/leshan/json/JsonRootObjectSerDes/sSerialize(java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.code.gson:gson:2.2.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.leshan:leshan-core:1.0.0-M5",
+    "coordinatesV2": "org.eclipse.leshan:leshan-core:1.0.0-M4",
+    "caller": "|java+method:///org/eclipse/leshan/core/model/ObjectLoader/loadJsonStream(java.io.InputStream)|",
+    "called": "|java+method:///com/google/gson/Gson/fromJson(java.io.Reader,java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/Collections/addAll(java.util.Collection,java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream)|",
+      "|java+method:///com/google/gson/Gson/fromJson(java.io.Reader,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/eclipsesource/json/JsonValue/asArray()|",
+      "|java+method:///org/eclipse/leshan/core/model/json/ObjectModelSerDes/deserialize(com.eclipsesource.json.JsonArray)|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream)|",
+      "|java+constructor:///org/eclipse/leshan/core/model/json/ObjectModelSerDes/ObjectModelSerDes()|",
+      "|java+method:///com/eclipsesource/json/Json/parse(java.io.Reader)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|"
+    ],
+    "affectedLib": "com.google.code.gson:gson:2.2.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.leshan:leshan-core:1.0.0-M5",
+    "coordinatesV2": "org.eclipse.leshan:leshan-core:1.0.0-M4",
+    "caller": "|java+constructor:///org/eclipse/leshan/core/model/Ddf2JsonGenerator/Ddf2JsonGenerator()|",
+    "called": "|java+constructor:///com/google/gson/GsonBuilder/GsonBuilder()|",
+    "v1Body": [
+      "|java+method:///com/google/gson/GsonBuilder/setPrettyPrinting()|",
+      "|java+method:///com/google/gson/GsonBuilder/create()|",
+      "|java+method:///com/google/gson/GsonBuilder/registerTypeAdapter(java.lang.reflect.Type,java.lang.Object)|",
+      "|java+constructor:///org/eclipse/leshan/core/model/json/ResourceModelSerializer/ResourceModelSerializer()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///org/eclipse/leshan/core/model/json/ObjectModelSerializer/ObjectModelSerializer()|",
+      "|java+constructor:///com/google/gson/GsonBuilder/GsonBuilder()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.code.gson:gson:2.2.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.leshan:leshan-core:1.0.0-M5",
+    "coordinatesV2": "org.eclipse.leshan:leshan-core:1.0.0-M4",
+    "caller": "|java+initializer:///org/eclipse/leshan/core/model/ObjectLoader/ObjectLoader$initializer|",
+    "called": "|java+constructor:///com/google/gson/GsonBuilder/GsonBuilder()|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///com/google/gson/GsonBuilder/create()|",
+      "|java+method:///com/google/gson/GsonBuilder/registerTypeAdapter(java.lang.reflect.Type,java.lang.Object)|",
+      "|java+constructor:///com/google/gson/GsonBuilder/GsonBuilder()|",
+      "|java+constructor:///org/eclipse/leshan/core/model/json/ObjectModelDeserializer/ObjectModelDeserializer()|",
+      "|java+constructor:///org/eclipse/leshan/core/model/json/ResourceModelDeserializer/ResourceModelDeserializer()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "com.google.code.gson:gson:2.2.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.leshan:leshan-core:1.0.0-M5",
+    "coordinatesV2": "org.eclipse.leshan:leshan-core:1.0.0-M4",
+    "caller": "|java+method:///org/eclipse/leshan/json/LwM2mJson/fromJsonLwM2m(java.lang.String)|",
+    "called": "|java+method:///com/google/gson/Gson/fromJson(java.lang.String,java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///org/eclipse/leshan/json/LwM2mJsonException/LwM2mJsonException(java.lang.String,java.lang.Exception)|",
+      "|java+method:///com/google/gson/Gson/fromJson(java.lang.String,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/leshan/json/JsonRootObjectSerDes/deserialize(com.eclipsesource.json.JsonObject)|",
+      "|java+method:///com/eclipsesource/json/Json/parse(java.lang.String)|",
+      "|java+method:///com/eclipsesource/json/JsonValue/asObject()|"
+    ],
+    "affectedLib": "com.google.code.gson:gson:2.2.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.leshan:leshan-core:1.0.0-M5",
+    "coordinatesV2": "org.eclipse.leshan:leshan-core:1.0.0-M4",
+    "caller": "|java+method:///org/eclipse/leshan/core/model/Ddf2JsonGenerator/generate(java.util.Collection,java.io.OutputStream)|",
+    "called": "|java+method:///com/google/gson/Gson/toJson(java.lang.Object,java.lang.Appendable)|",
+    "v1Body": [
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+method:///java/io/OutputStreamWriter/close()|",
+      "|java+constructor:///java/io/OutputStreamWriter/OutputStreamWriter(java.io.OutputStream)|",
+      "|java+method:///com/google/gson/Gson/toJson(java.lang.Object,java.lang.Appendable)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+method:///org/eclipse/leshan/core/model/json/ObjectModelSerDes/sSerialize(java.util.Collection)|",
+      "|java+method:///java/io/OutputStreamWriter/close()|",
+      "|java+method:///java/io/OutputStreamWriter/write(java.lang.String)|",
+      "|java+constructor:///org/eclipse/leshan/core/model/json/ObjectModelSerDes/ObjectModelSerDes()|",
+      "|java+constructor:///java/io/OutputStreamWriter/OutputStreamWriter(java.io.OutputStream)|"
+    ],
+    "affectedLib": "com.google.code.gson:gson:2.2.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.leshan:leshan-core:1.0.0-M4",
+    "coordinatesV2": "org.eclipse.leshan:leshan-core:1.0.0-M5",
+    "caller": "|java+method:///org/eclipse/leshan/core/model/ObjectLoader/loadJsonStream(java.io.InputStream)|",
+    "called": "|java+method:///com/eclipsesource/json/Json/parse(java.io.Reader)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/Collections/addAll(java.util.Collection,java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream)|",
+      "|java+method:///com/google/gson/Gson/fromJson(java.io.Reader,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/eclipsesource/json/JsonValue/asArray()|",
+      "|java+method:///org/eclipse/leshan/core/model/json/ObjectModelSerDes/deserialize(com.eclipsesource.json.JsonArray)|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream)|",
+      "|java+constructor:///org/eclipse/leshan/core/model/json/ObjectModelSerDes/ObjectModelSerDes()|",
+      "|java+method:///com/eclipsesource/json/Json/parse(java.io.Reader)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|"
+    ],
+    "affectedLib": "com.eclipsesource.minimal-json:minimal-json:0.9.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.leshan:leshan-core:1.0.0-M4",
+    "coordinatesV2": "org.eclipse.leshan:leshan-core:1.0.0-M5",
+    "caller": "|java+method:///org/eclipse/leshan/json/LwM2mJson/fromJsonLwM2m(java.lang.String)|",
+    "called": "|java+method:///com/eclipsesource/json/Json/parse(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/eclipse/leshan/json/LwM2mJsonException/LwM2mJsonException(java.lang.String,java.lang.Exception)|",
+      "|java+method:///com/google/gson/Gson/fromJson(java.lang.String,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/leshan/json/JsonRootObjectSerDes/deserialize(com.eclipsesource.json.JsonObject)|",
+      "|java+method:///com/eclipsesource/json/Json/parse(java.lang.String)|",
+      "|java+method:///com/eclipsesource/json/JsonValue/asObject()|"
+    ],
+    "affectedLib": "com.eclipsesource.minimal-json:minimal-json:0.9.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.leshan:leshan-core:1.0.0-M4",
+    "coordinatesV2": "org.eclipse.leshan:leshan-core:1.0.0-M5",
+    "caller": "|java+initializer:///org/eclipse/leshan/core/model/ObjectLoader/ObjectLoader$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///com/google/gson/GsonBuilder/create()|",
+      "|java+method:///com/google/gson/GsonBuilder/registerTypeAdapter(java.lang.reflect.Type,java.lang.Object)|",
+      "|java+constructor:///com/google/gson/GsonBuilder/GsonBuilder()|",
+      "|java+constructor:///org/eclipse/leshan/core/model/json/ObjectModelDeserializer/ObjectModelDeserializer()|",
+      "|java+constructor:///org/eclipse/leshan/core/model/json/ResourceModelDeserializer/ResourceModelDeserializer()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.25",
+    "change": "UPDATED"
+  }
+]

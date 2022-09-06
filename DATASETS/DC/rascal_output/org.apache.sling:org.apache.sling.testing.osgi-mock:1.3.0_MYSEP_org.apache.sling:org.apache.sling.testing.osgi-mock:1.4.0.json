@@ -1,0 +1,94 @@
+[
+  {
+    "coordinatesV1": "org.apache.sling:org.apache.sling.testing.osgi-mock:1.3.0",
+    "coordinatesV2": "org.apache.sling:org.apache.sling.testing.osgi-mock:1.4.0",
+    "caller": "|java+method:///org/apache/sling/testing/mock/osgi/OsgiMetadataUtil/getComponentXPathQuery(java.lang.Class)|",
+    "called": "|java+method:///org/apache/commons/lang3/StringUtils/substringBefore(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/StringUtils/substringBefore(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.sling:org.apache.sling.testing.osgi-mock:1.3.0",
+    "coordinatesV2": "org.apache.sling:org.apache.sling.testing.osgi-mock:1.4.0",
+    "caller": "|java+method:///org/apache/sling/testing/mock/osgi/MockBundleContext/createFilter(java.lang.String)|",
+    "called": "|java+constructor:///org/apache/felix/framework/FilterImpl/FilterImpl(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/sling/testing/mock/osgi/MockFilter/MockFilter()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/felix/framework/FilterImpl/FilterImpl(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.felix:org.apache.felix.framework:5.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.sling:org.apache.sling.testing.osgi-mock:1.3.0",
+    "coordinatesV2": "org.apache.sling:org.apache.sling.testing.osgi-mock:1.4.0",
+    "caller": "|java+method:///org/apache/sling/testing/mock/osgi/MockServiceRegistration/matches(java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///org/apache/felix/framework/FilterImpl/FilterImpl(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/util/Set/contains(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/felix/framework/FilterImpl/match(java.util.Dictionary)|",
+      "|java+constructor:///org/apache/felix/framework/FilterImpl/FilterImpl(java.lang.String)|",
+      "|java+method:///java/util/Set/contains(java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.felix:org.apache.felix.framework:5.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.sling:org.apache.sling.testing.osgi-mock:1.3.0",
+    "coordinatesV2": "org.apache.sling:org.apache.sling.testing.osgi-mock:1.4.0",
+    "caller": "|java+method:///org/apache/sling/testing/mock/osgi/MockBundleContext/notifyServiceListeners(int,org.osgi.framework.ServiceReference)|",
+    "called": "|java+constructor:///org/osgi/framework/ServiceEvent/ServiceEvent(int,org.osgi.framework.ServiceReference)|",
+    "v1Body": [
+      "|java+method:///org/osgi/framework/ServiceListener/serviceChanged(org.osgi.framework.ServiceEvent)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///org/osgi/framework/ServiceEvent/ServiceEvent(int,org.osgi.framework.ServiceReference)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/List/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/osgi/framework/ServiceListener/serviceChanged(org.osgi.framework.ServiceEvent)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///org/osgi/framework/Filter/match(org.osgi.framework.ServiceReference)|",
+      "|java+constructor:///org/osgi/framework/ServiceEvent/ServiceEvent(int,org.osgi.framework.ServiceReference)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///java/util/Map/entrySet()|"
+    ],
+    "affectedLib": "org.apache.felix:org.apache.felix.framework:5.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.sling:org.apache.sling.testing.osgi-mock:1.3.0",
+    "coordinatesV2": "org.apache.sling:org.apache.sling.testing.osgi-mock:1.4.0",
+    "caller": "|java+constructor:///org/apache/sling/testing/mock/osgi/MockBundle/MockBundle(org.osgi.framework.BundleContext)|",
+    "called": "|java+method:///com/google/common/collect/ImmutableMap/of()|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/collect/ImmutableMap/of()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.guava:guava:15.0",
+    "change": "ADDED"
+  }
+]

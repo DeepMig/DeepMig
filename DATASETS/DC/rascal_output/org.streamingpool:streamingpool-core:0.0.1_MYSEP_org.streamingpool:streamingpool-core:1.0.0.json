@@ -1,0 +1,1056 @@
+[
+  {
+    "coordinatesV1": "org.streamingpool:streamingpool-core:1.0.0",
+    "coordinatesV2": "org.streamingpool:streamingpool-core:0.0.1",
+    "caller": "|java+method:///cern/streaming/pool/core/service/streamfactory/DerivedStreamFactory/createDerivedStream(cern.streaming.pool.core.service.streamid.DerivedStreamId,cern.streaming.pool.core.service.DiscoveryService)|",
+    "called": "|java+method:///rx/Observable/filter(rx.functions.Func1)|",
+    "v1Body": [
+      "|java+method:///cern/streaming/pool/core/service/DiscoveryService/discover(cern.streaming.pool.core.service.StreamId)|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/DerivedStreamId/sourceStreamId()|",
+      "|java+method:///rx/Observable/filter(rx.functions.Func1)|",
+      "|java+method:///rx/Observable/map(rx.functions.Func1)|",
+      "|java+method:///cern/streaming/pool/core/service/util/ReactiveStreams/fromRx(rx.Observable)|",
+      "|java+method:///cern/streaming/pool/core/service/util/ReactiveStreams/rxFrom(cern.streaming.pool.core.service.ReactiveStream)|"
+    ],
+    "v2Body": [
+      "|java+method:///cern/streaming/pool/core/service/DiscoveryService/discover(cern.streaming.pool.core.service.StreamId)|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/DerivedStreamId/sourceStreamId()|",
+      "|java+method:///io/reactivex/Flowable/fromPublisher(org.reactivestreams.Publisher)|",
+      "|java+method:///io/reactivex/Flowable/filter(io.reactivex.functions.Predicate)|",
+      "|java+method:///io/reactivex/Flowable/map(io.reactivex.functions.Function)|"
+    ],
+    "affectedLib": "io.reactivex:rxjava:1.2.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.streamingpool:streamingpool-core:1.0.0",
+    "coordinatesV2": "org.streamingpool:streamingpool-core:0.0.1",
+    "caller": "|java+constructor:///cern/streaming/pool/core/rx/process/ClearableBufferProcessor/ClearableBufferProcessor()|",
+    "called": "|java+method:///rx/subjects/BehaviorSubject/create()|",
+    "v1Body": [
+      "|java+constructor:///cern/streaming/pool/core/rx/process/ConcurrentCircularBuffer/ConcurrentCircularBuffer()|",
+      "|java+method:///rx/subjects/BehaviorSubject/create()|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicReference/AtomicReference(java.lang.Object)|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicInteger/AtomicInteger(int)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///cern/streaming/pool/core/rx/process/ConcurrentCircularBuffer/ConcurrentCircularBuffer()|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicReference/AtomicReference(java.lang.Object)|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicInteger/AtomicInteger(int)|",
+      "|java+method:///io/reactivex/processors/BehaviorProcessor/create()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "io.reactivex:rxjava:1.2.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.streamingpool:streamingpool-core:1.0.0",
+    "coordinatesV2": "org.streamingpool:streamingpool-core:0.0.1",
+    "caller": "|java+method:///cern/streaming/pool/core/rx/process/TriggerImpl/trigger()|",
+    "called": "|java+method:///rx/subjects/BehaviorSubject/onNext(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///rx/subjects/BehaviorSubject/onNext(java.lang.Object)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///io/reactivex/processors/BehaviorProcessor/onNext(java.lang.Object)|"
+    ],
+    "affectedLib": "io.reactivex:rxjava:1.2.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.streamingpool:streamingpool-core:1.0.0",
+    "coordinatesV2": "org.streamingpool:streamingpool-core:0.0.1",
+    "caller": "|java+method:///cern/streaming/pool/core/service/streamfactory/CombineWithLatestStreamFactory/combineWithLatestStream(cern.streaming.pool.core.service.streamid.CombineWithLatestStreamId,cern.streaming.pool.core.service.DiscoveryService)|",
+    "called": "|java+method:///rx/Observable/buffer(int)|",
+    "v1Body": [
+      "|java+method:///rx/Observable/withLatestFrom(rx.Observable,rx.functions.Func2)|",
+      "|java+method:///cern/streaming/pool/core/service/DiscoveryService/discover(cern.streaming.pool.core.service.StreamId)|",
+      "|java+method:///rx/Observable/flatMap(rx.functions.Func1)|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/CombineWithLatestStreamId/dataStream()|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/CombineWithLatestStreamId/triggerStream()|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/CombineWithLatestStreamId/combiner()|",
+      "|java+method:///cern/streaming/pool/core/service/util/ReactiveStreams/fromRx(rx.Observable)|",
+      "|java+method:///cern/streaming/pool/core/service/util/ReactiveStreams/rxFrom(cern.streaming.pool.core.service.ReactiveStream)|",
+      "|java+method:///rx/Observable/buffer(int)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "v2Body": [
+      "|java+method:///cern/streaming/pool/core/service/DiscoveryService/discover(cern.streaming.pool.core.service.StreamId)|",
+      "|java+method:///io/reactivex/Flowable/fromPublisher(org.reactivestreams.Publisher)|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/CombineWithLatestStreamId/dataStream()|",
+      "|java+method:///io/reactivex/Flowable/withLatestFrom(org.reactivestreams.Publisher,io.reactivex.functions.BiFunction)|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/CombineWithLatestStreamId/triggerStream()|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/CombineWithLatestStreamId/combiner()|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "io.reactivex:rxjava:1.2.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.streamingpool:streamingpool-core:1.0.0",
+    "coordinatesV2": "org.streamingpool:streamingpool-core:0.0.1",
+    "caller": "|java+method:///cern/streaming/pool/core/support/StreamCollectingSupport$OngoingBlockingCollecting/awaitNext()|",
+    "called": "|java+method:///rx/Observable/skip(int)|",
+    "v1Body": [
+      "|java+method:///rx/Observable/skip(int)|",
+      "|java+method:///cern/streaming/pool/core/support/RxStreamSupport/rxFrom(cern.streaming.pool.core.service.StreamId)|",
+      "|java+method:///cern/streaming/pool/core/service/rx/RxStreams/awaitNext(rx.Observable)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/reactivex/Flowable/skip(long)|",
+      "|java+method:///cern/streaming/pool/core/support/RxStreamSupport/rxFrom(cern.streaming.pool.core.service.StreamId)|",
+      "|java+method:///cern/streaming/pool/core/service/rx/RxStreams/awaitNext(io.reactivex.Flowable)|"
+    ],
+    "affectedLib": "io.reactivex:rxjava:1.2.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.streamingpool:streamingpool-core:1.0.0",
+    "coordinatesV2": "org.streamingpool:streamingpool-core:0.0.1",
+    "caller": "|java+method:///cern/streaming/pool/core/service/streamfactory/DelayedStreamFactory/create(cern.streaming.pool.core.service.StreamId,cern.streaming.pool.core.service.DiscoveryService)|",
+    "called": "|java+method:///rx/Observable/delay(long,java.util.concurrent.TimeUnit)|",
+    "v1Body": [
+      "|java+method:///cern/streaming/pool/core/service/DiscoveryService/discover(cern.streaming.pool.core.service.StreamId)|",
+      "|java+method:///java/time/Duration/toMillis()|",
+      "|java+method:///java/util/Optional/of(java.lang.Object)|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/DelayedStreamId/getTarget()|",
+      "|java+method:///rx/Observable/delay(long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///cern/streaming/pool/core/service/util/ReactiveStreams/fromRx(rx.Observable)|",
+      "|java+method:///cern/streaming/pool/core/service/util/ReactiveStreams/rxFrom(cern.streaming.pool.core.service.ReactiveStream)|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/DelayedStreamId/getDelay()|",
+      "|java+method:///java/util/Optional/empty()|"
+    ],
+    "v2Body": [
+      "|java+method:///cern/streaming/pool/core/service/DiscoveryService/discover(cern.streaming.pool.core.service.StreamId)|",
+      "|java+method:///java/time/Duration/toMillis()|",
+      "|java+method:///io/reactivex/Flowable/fromPublisher(org.reactivestreams.Publisher)|",
+      "|java+method:///java/util/Optional/of(java.lang.Object)|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/DelayedStreamId/getTarget()|",
+      "|java+method:///io/reactivex/Flowable/delay(long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/DelayedStreamId/getDelay()|",
+      "|java+method:///java/util/Optional/empty()|"
+    ],
+    "affectedLib": "io.reactivex:rxjava:1.2.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.streamingpool:streamingpool-core:1.0.0",
+    "coordinatesV2": "org.streamingpool:streamingpool-core:0.0.1",
+    "caller": "|java+constructor:///cern/streaming/pool/core/rx/process/ObservableChoosable/ObservableChoosable(java.lang.Iterable,java.lang.Object)|",
+    "called": "|java+method:///rx/subjects/BehaviorSubject/create(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/util/Objects/requireNonNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///rx/subjects/BehaviorSubject/create(java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Objects/requireNonNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///io/reactivex/processors/BehaviorProcessor/createDefault(java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "io.reactivex:rxjava:1.2.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.streamingpool:streamingpool-core:1.0.0",
+    "coordinatesV2": "org.streamingpool:streamingpool-core:0.0.1",
+    "caller": "|java+method:///cern/streaming/pool/core/rx/process/ObservableChoosable/choose(java.lang.Object)|",
+    "called": "|java+method:///rx/subjects/BehaviorSubject/onNext(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/util/Objects/requireNonNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///rx/subjects/BehaviorSubject/onNext(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Objects/requireNonNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///io/reactivex/processors/BehaviorProcessor/onNext(java.lang.Object)|"
+    ],
+    "affectedLib": "io.reactivex:rxjava:1.2.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.streamingpool:streamingpool-core:1.0.0",
+    "coordinatesV2": "org.streamingpool:streamingpool-core:0.0.1",
+    "caller": "|java+method:///cern/streaming/pool/core/rx/process/ClearableBufferProcessor/publish()|",
+    "called": "|java+method:///rx/subjects/BehaviorSubject/onNext(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///cern/streaming/pool/core/rx/process/ConcurrentCircularBuffer/toList()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicInteger/get()|",
+      "|java+method:///rx/subjects/BehaviorSubject/onNext(java.lang.Object)|",
+      "|java+method:///java/util/List/size()|"
+    ],
+    "v2Body": [
+      "|java+method:///cern/streaming/pool/core/rx/process/ConcurrentCircularBuffer/toList()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicInteger/get()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///io/reactivex/processors/BehaviorProcessor/onNext(java.lang.Object)|"
+    ],
+    "affectedLib": "io.reactivex:rxjava:1.2.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.streamingpool:streamingpool-core:1.0.0",
+    "coordinatesV2": "org.streamingpool:streamingpool-core:0.0.1",
+    "caller": "|java+method:///cern/streaming/pool/core/service/streamid/factory/function/DelayCompositionFunction/apply(java.util.List)|",
+    "called": "|java+method:///rx/Observable/delay(long,java.util.concurrent.TimeUnit)|",
+    "v1Body": [
+      "|java+method:///java/time/Duration/toMillis()|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///rx/Observable/delay(long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///cern/streaming/pool/core/service/util/ReactiveStreams/fromRx(rx.Observable)|",
+      "|java+method:///cern/streaming/pool/core/service/util/ReactiveStreams/rxFrom(cern.streaming.pool.core.service.ReactiveStream)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/time/Duration/toMillis()|",
+      "|java+method:///io/reactivex/Flowable/fromPublisher(org.reactivestreams.Publisher)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///io/reactivex/Flowable/delay(long,java.util.concurrent.TimeUnit)|"
+    ],
+    "affectedLib": "io.reactivex:rxjava:1.2.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.streamingpool:streamingpool-core:1.0.0",
+    "coordinatesV2": "org.streamingpool:streamingpool-core:0.0.1",
+    "caller": "|java+constructor:///cern/streaming/pool/core/service/impl/PoolContent/PoolContent()|",
+    "called": "|java+method:///rx/subjects/PublishSubject/create()|",
+    "v1Body": [
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+method:///rx/subjects/PublishSubject/create()|",
+      "|java+method:///cern/streaming/pool/core/service/impl/PoolContent/addStreamHooks()|",
+      "|java+method:///java/util/concurrent/Executors/newSingleThreadExecutor()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+method:///io/reactivex/processors/PublishProcessor/create()|",
+      "|java+method:///cern/streaming/pool/core/service/impl/PoolContent/addStreamHooks()|",
+      "|java+method:///java/util/concurrent/Executors/newSingleThreadExecutor()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "io.reactivex:rxjava:1.2.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.streamingpool:streamingpool-core:1.0.0",
+    "coordinatesV2": "org.streamingpool:streamingpool-core:0.0.1",
+    "caller": "|java+method:///cern/streaming/pool/core/service/streamfactory/OverlapBufferStreamFactory/timeoutStreamOf(java.time.Duration)|",
+    "called": "|java+method:///rx/Observable/never()|",
+    "v1Body": [
+      "|java+method:///java/time/Duration/isNegative()|",
+      "|java+method:///java/time/Duration/toMillis()|",
+      "|java+method:///rx/Observable/never()|",
+      "|java+method:///rx/Observable/timer(long,java.util.concurrent.TimeUnit)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/time/Duration/isNegative()|",
+      "|java+method:///java/time/Duration/toMillis()|",
+      "|java+method:///io/reactivex/Flowable/never()|",
+      "|java+method:///io/reactivex/Flowable/timer(long,java.util.concurrent.TimeUnit)|"
+    ],
+    "affectedLib": "io.reactivex:rxjava:1.2.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.streamingpool:streamingpool-core:1.0.0",
+    "coordinatesV2": "org.streamingpool:streamingpool-core:0.0.1",
+    "caller": "|java+method:///cern/streaming/pool/core/service/streamid/factory/function/FlatMapCompositionFunction/apply(java.util.List)|",
+    "called": "|java+method:///rx/Observable/flatMap(rx.functions.Func1)|",
+    "v1Body": [
+      "|java+method:///rx/Observable/flatMap(rx.functions.Func1)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///cern/streaming/pool/core/service/util/ReactiveStreams/fromRx(rx.Observable)|",
+      "|java+method:///cern/streaming/pool/core/service/util/ReactiveStreams/rxFrom(cern.streaming.pool.core.service.ReactiveStream)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/reactivex/Flowable/fromPublisher(org.reactivestreams.Publisher)|",
+      "|java+method:///io/reactivex/Flowable/flatMap(io.reactivex.functions.Function)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "io.reactivex:rxjava:1.2.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.streamingpool:streamingpool-core:1.0.0",
+    "coordinatesV2": "org.streamingpool:streamingpool-core:0.0.1",
+    "caller": "|java+method:///cern/streaming/pool/core/service/streamid/factory/function/ZipCompositionFunction/apply(java.util.List)|",
+    "called": "|java+method:///rx/Observable/filter(rx.functions.Func1)|",
+    "v1Body": [
+      "|java+method:///cern/streaming/pool/core/service/streamid/factory/function/ZipCompositionFunction/convertBiFunctionToRxFunc2(java.util.function.BiFunction)|",
+      "|java+method:///rx/Observable/zip(rx.Observable,rx.Observable,rx.functions.Func2)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///rx/Observable/filter(rx.functions.Func1)|",
+      "|java+method:///rx/Observable/map(rx.functions.Func1)|",
+      "|java+method:///cern/streaming/pool/core/service/util/ReactiveStreams/fromRx(rx.Observable)|",
+      "|java+method:///cern/streaming/pool/core/service/util/ReactiveStreams/rxFrom(cern.streaming.pool.core.service.ReactiveStream)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/reactivex/Flowable/fromPublisher(org.reactivestreams.Publisher)|",
+      "|java+method:///io/reactivex/Flowable/zip(org.reactivestreams.Publisher,org.reactivestreams.Publisher,io.reactivex.functions.BiFunction)|",
+      "|java+method:///io/reactivex/Flowable/filter(io.reactivex.functions.Predicate)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///io/reactivex/Flowable/map(io.reactivex.functions.Function)|"
+    ],
+    "affectedLib": "io.reactivex:rxjava:1.2.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.streamingpool:streamingpool-core:1.0.0",
+    "coordinatesV2": "org.streamingpool:streamingpool-core:0.0.1",
+    "caller": "|java+method:///cern/streaming/pool/core/service/streamid/factory/function/MapCompositionFunction/apply(java.util.List)|",
+    "called": "|java+method:///rx/Observable/filter(rx.functions.Func1)|",
+    "v1Body": [
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///rx/Observable/filter(rx.functions.Func1)|",
+      "|java+method:///rx/Observable/map(rx.functions.Func1)|",
+      "|java+method:///cern/streaming/pool/core/service/util/ReactiveStreams/fromRx(rx.Observable)|",
+      "|java+method:///cern/streaming/pool/core/service/util/ReactiveStreams/rxFrom(cern.streaming.pool.core.service.ReactiveStream)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/reactivex/Flowable/fromPublisher(org.reactivestreams.Publisher)|",
+      "|java+method:///io/reactivex/Flowable/filter(io.reactivex.functions.Predicate)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///io/reactivex/Flowable/map(io.reactivex.functions.Function)|"
+    ],
+    "affectedLib": "io.reactivex:rxjava:1.2.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.streamingpool:streamingpool-core:1.0.0",
+    "coordinatesV2": "org.streamingpool:streamingpool-core:0.0.1",
+    "caller": "|java+method:///cern/streaming/pool/core/service/streamid/factory/function/FilterCompositionFunction/apply(java.util.List)|",
+    "called": "|java+method:///rx/Observable/filter(rx.functions.Func1)|",
+    "v1Body": [
+      "|java+method:///rx/Observable/filter(rx.functions.Func1)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///cern/streaming/pool/core/service/util/ReactiveStreams/fromRx(rx.Observable)|",
+      "|java+method:///cern/streaming/pool/core/service/util/ReactiveStreams/rxFrom(cern.streaming.pool.core.service.ReactiveStream)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/reactivex/Flowable/fromPublisher(org.reactivestreams.Publisher)|",
+      "|java+method:///io/reactivex/Flowable/filter(io.reactivex.functions.Predicate)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "io.reactivex:rxjava:1.2.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.streamingpool:streamingpool-core:1.0.0",
+    "coordinatesV2": "org.streamingpool:streamingpool-core:0.0.1",
+    "caller": "|java+method:///cern/streaming/pool/core/service/streamfactory/OverlapBufferStreamFactory/create(cern.streaming.pool.core.service.StreamId,cern.streaming.pool.core.service.DiscoveryService)|",
+    "called": "|java+method:///rx/observables/ConnectableObservable/connect()|",
+    "v1Body": [
+      "|java+method:///cern/streaming/pool/core/service/DiscoveryService/discover(cern.streaming.pool.core.service.StreamId)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///rx/Observable/publish()|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/BufferSpecification/endStreamMatchers()|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/BufferSpecification/startId()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/BufferSpecification/timeout()|",
+      "|java+method:///rx/observables/ConnectableObservable/connect()|",
+      "|java+method:///java/util/Optional/empty()|",
+      "|java+method:///rx/observables/ConnectableObservable/buffer(rx.Observable,rx.functions.Func1)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/OverlapBufferStreamId/sourceId()|",
+      "|java+method:///cern/streaming/pool/core/service/util/ReactiveStreams/fromRx(rx.Observable)|",
+      "|java+method:///cern/streaming/pool/core/service/util/ReactiveStreams/rxFrom(cern.streaming.pool.core.service.ReactiveStream)|",
+      "|java+method:///java/util/Set/stream()|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|",
+      "|java+method:///java/util/Optional/of(java.lang.Object)|",
+      "|java+method:///java/util/Map/values()|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/OverlapBufferStreamId/bufferSpecification()|",
+      "|java+method:///java/util/stream/Collectors/toMap(java.util.function.Function,java.util.function.Function)|"
+    ],
+    "v2Body": [
+      "|java+method:///cern/streaming/pool/core/service/DiscoveryService/discover(cern.streaming.pool.core.service.StreamId)|",
+      "|java+method:///io/reactivex/flowables/ConnectableFlowable/connect()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///io/reactivex/Flowable/fromPublisher(org.reactivestreams.Publisher)|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/BufferSpecification/endStreamMatchers()|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/BufferSpecification/startId()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/BufferSpecification/timeout()|",
+      "|java+method:///io/reactivex/flowables/ConnectableFlowable/buffer(io.reactivex.Flowable,io.reactivex.functions.Function)|",
+      "|java+method:///java/util/Optional/empty()|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/OverlapBufferStreamId/sourceId()|",
+      "|java+method:///io/reactivex/Flowable/publish()|",
+      "|java+method:///java/util/Set/stream()|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|",
+      "|java+method:///java/util/Optional/of(java.lang.Object)|",
+      "|java+method:///java/util/Map/values()|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/OverlapBufferStreamId/bufferSpecification()|",
+      "|java+method:///java/util/stream/Collectors/toMap(java.util.function.Function,java.util.function.Function)|"
+    ],
+    "affectedLib": "io.reactivex:rxjava:1.2.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.streamingpool:streamingpool-core:1.0.0",
+    "coordinatesV2": "org.streamingpool:streamingpool-core:0.0.1",
+    "caller": "|java+constructor:///cern/streaming/pool/core/rx/process/TriggerImpl/TriggerImpl()|",
+    "called": "|java+method:///rx/subjects/BehaviorSubject/create(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///rx/subjects/BehaviorSubject/create(java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/reactivex/processors/BehaviorProcessor/createDefault(java.lang.Object)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "io.reactivex:rxjava:1.2.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.streamingpool:streamingpool-core:1.0.0",
+    "coordinatesV2": "org.streamingpool:streamingpool-core:0.0.1",
+    "caller": "|java+method:///cern/streaming/pool/core/service/streamfactory/FilteredStreamFactory/create(cern.streaming.pool.core.service.StreamId,cern.streaming.pool.core.service.DiscoveryService)|",
+    "called": "|java+method:///rx/Observable/filter(rx.functions.Func1)|",
+    "v1Body": [
+      "|java+method:///cern/streaming/pool/core/service/DiscoveryService/discover(cern.streaming.pool.core.service.StreamId)|",
+      "|java+method:///rx/Observable/filter(rx.functions.Func1)|",
+      "|java+method:///java/util/Optional/of(java.lang.Object)|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/FilteredStreamId/sourceStreamId()|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/FilteredStreamId/predicate()|",
+      "|java+method:///java/util/Optional/empty()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///cern/streaming/pool/core/service/util/ReactiveStreams/fromRx(rx.Observable)|",
+      "|java+method:///cern/streaming/pool/core/service/util/ReactiveStreams/rxFrom(cern.streaming.pool.core.service.ReactiveStream)|"
+    ],
+    "v2Body": [
+      "|java+method:///cern/streaming/pool/core/service/DiscoveryService/discover(cern.streaming.pool.core.service.StreamId)|",
+      "|java+method:///io/reactivex/Flowable/fromPublisher(org.reactivestreams.Publisher)|",
+      "|java+method:///java/util/Optional/of(java.lang.Object)|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/FilteredStreamId/sourceStreamId()|",
+      "|java+method:///java/util/Optional/empty()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/FilteredStreamId/predicate()|",
+      "|java+method:///io/reactivex/Flowable/filter(io.reactivex.functions.Predicate)|"
+    ],
+    "affectedLib": "io.reactivex:rxjava:1.2.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.streamingpool:streamingpool-core:1.0.0",
+    "coordinatesV2": "org.streamingpool:streamingpool-core:0.0.1",
+    "caller": "|java+constructor:///cern/streaming/pool/core/rx/process/RunStateServiceImpl/RunStateServiceImpl(cern.streaming.pool.core.rx.process.RunState)|",
+    "called": "|java+method:///rx/subjects/BehaviorSubject/create(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/util/Objects/requireNonNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///rx/subjects/BehaviorSubject/create(java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Objects/requireNonNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///io/reactivex/processors/BehaviorProcessor/createDefault(java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "io.reactivex:rxjava:1.2.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.streamingpool:streamingpool-core:1.0.0",
+    "coordinatesV2": "org.streamingpool:streamingpool-core:0.0.1",
+    "caller": "|java+method:///cern/streaming/pool/core/service/streamfactory/OverlapBufferStreamFactory/closingStreamFor(java.lang.Object,java.util.Map,java.time.Duration)|",
+    "called": "|java+method:///rx/Observable/take(int)|",
+    "v1Body": [
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+method:///java/util/stream/Collectors/toSet()|",
+      "|java+method:///rx/Observable/merge(java.lang.Iterable)|",
+      "|java+method:///rx/Observable/take(int)|",
+      "|java+method:///cern/streaming/pool/core/service/streamfactory/OverlapBufferStreamFactory/timeoutStreamOf(java.time.Duration)|",
+      "|java+method:///java/util/Set/stream()|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/stream/Collectors/toSet()|",
+      "|java+method:///io/reactivex/Flowable/take(long)|",
+      "|java+method:///cern/streaming/pool/core/service/streamfactory/OverlapBufferStreamFactory/timeoutStreamOf(java.time.Duration)|",
+      "|java+method:///io/reactivex/Flowable/merge(java.lang.Iterable)|",
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+method:///java/util/Set/stream()|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|"
+    ],
+    "affectedLib": "io.reactivex:rxjava:1.2.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.streamingpool:streamingpool-core:1.0.0",
+    "coordinatesV2": "org.streamingpool:streamingpool-core:0.0.1",
+    "caller": "|java+method:///cern/streaming/pool/core/rx/process/RunStateServiceImpl/switchTo(cern.streaming.pool.core.rx.process.RunState)|",
+    "called": "|java+method:///rx/subjects/BehaviorSubject/onNext(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/util/Objects/requireNonNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///rx/subjects/BehaviorSubject/onNext(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Objects/requireNonNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///io/reactivex/processors/BehaviorProcessor/onNext(java.lang.Object)|"
+    ],
+    "affectedLib": "io.reactivex:rxjava:1.2.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.streamingpool:streamingpool-core:1.0.0",
+    "coordinatesV2": "org.streamingpool:streamingpool-core:0.0.1",
+    "caller": "|java+method:///cern/streaming/pool/core/rx/process/RunStateServiceImpl/getRunState()|",
+    "called": "|java+method:///rx/subjects/BehaviorSubject/getValue()|",
+    "v1Body": [
+      "|java+method:///rx/subjects/BehaviorSubject/getValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/reactivex/processors/BehaviorProcessor/getValue()|"
+    ],
+    "affectedLib": "io.reactivex:rxjava:1.2.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.streamingpool:streamingpool-core:0.0.1",
+    "coordinatesV2": "org.streamingpool:streamingpool-core:1.0.0",
+    "caller": "|java+method:///cern/streaming/pool/core/service/streamfactory/DerivedStreamFactory/createDerivedStream(cern.streaming.pool.core.service.streamid.DerivedStreamId,cern.streaming.pool.core.service.DiscoveryService)|",
+    "called": "|java+method:///io/reactivex/Flowable/fromPublisher(org.reactivestreams.Publisher)|",
+    "v1Body": [
+      "|java+method:///cern/streaming/pool/core/service/DiscoveryService/discover(cern.streaming.pool.core.service.StreamId)|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/DerivedStreamId/sourceStreamId()|",
+      "|java+method:///rx/Observable/filter(rx.functions.Func1)|",
+      "|java+method:///rx/Observable/map(rx.functions.Func1)|",
+      "|java+method:///cern/streaming/pool/core/service/util/ReactiveStreams/fromRx(rx.Observable)|",
+      "|java+method:///cern/streaming/pool/core/service/util/ReactiveStreams/rxFrom(cern.streaming.pool.core.service.ReactiveStream)|"
+    ],
+    "v2Body": [
+      "|java+method:///cern/streaming/pool/core/service/DiscoveryService/discover(cern.streaming.pool.core.service.StreamId)|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/DerivedStreamId/sourceStreamId()|",
+      "|java+method:///io/reactivex/Flowable/fromPublisher(org.reactivestreams.Publisher)|",
+      "|java+method:///io/reactivex/Flowable/filter(io.reactivex.functions.Predicate)|",
+      "|java+method:///io/reactivex/Flowable/map(io.reactivex.functions.Function)|"
+    ],
+    "affectedLib": "io.reactivex.rxjava2:rxjava:2.0.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.streamingpool:streamingpool-core:0.0.1",
+    "coordinatesV2": "org.streamingpool:streamingpool-core:1.0.0",
+    "caller": "|java+constructor:///cern/streaming/pool/core/rx/process/ClearableBufferProcessor/ClearableBufferProcessor()|",
+    "called": "|java+method:///io/reactivex/processors/BehaviorProcessor/create()|",
+    "v1Body": [
+      "|java+constructor:///cern/streaming/pool/core/rx/process/ConcurrentCircularBuffer/ConcurrentCircularBuffer()|",
+      "|java+method:///rx/subjects/BehaviorSubject/create()|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicReference/AtomicReference(java.lang.Object)|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicInteger/AtomicInteger(int)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///cern/streaming/pool/core/rx/process/ConcurrentCircularBuffer/ConcurrentCircularBuffer()|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicReference/AtomicReference(java.lang.Object)|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicInteger/AtomicInteger(int)|",
+      "|java+method:///io/reactivex/processors/BehaviorProcessor/create()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "io.reactivex.rxjava2:rxjava:2.0.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.streamingpool:streamingpool-core:0.0.1",
+    "coordinatesV2": "org.streamingpool:streamingpool-core:1.0.0",
+    "caller": "|java+method:///cern/streaming/pool/core/rx/process/TriggerImpl/trigger()|",
+    "called": "|java+method:///io/reactivex/processors/BehaviorProcessor/onNext(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///rx/subjects/BehaviorSubject/onNext(java.lang.Object)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///io/reactivex/processors/BehaviorProcessor/onNext(java.lang.Object)|"
+    ],
+    "affectedLib": "io.reactivex.rxjava2:rxjava:2.0.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.streamingpool:streamingpool-core:0.0.1",
+    "coordinatesV2": "org.streamingpool:streamingpool-core:1.0.0",
+    "caller": "|java+method:///cern/streaming/pool/core/service/streamfactory/CombineWithLatestStreamFactory/combineWithLatestStream(cern.streaming.pool.core.service.streamid.CombineWithLatestStreamId,cern.streaming.pool.core.service.DiscoveryService)|",
+    "called": "|java+method:///io/reactivex/Flowable/fromPublisher(org.reactivestreams.Publisher)|",
+    "v1Body": [
+      "|java+method:///rx/Observable/withLatestFrom(rx.Observable,rx.functions.Func2)|",
+      "|java+method:///cern/streaming/pool/core/service/DiscoveryService/discover(cern.streaming.pool.core.service.StreamId)|",
+      "|java+method:///rx/Observable/flatMap(rx.functions.Func1)|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/CombineWithLatestStreamId/dataStream()|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/CombineWithLatestStreamId/triggerStream()|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/CombineWithLatestStreamId/combiner()|",
+      "|java+method:///cern/streaming/pool/core/service/util/ReactiveStreams/fromRx(rx.Observable)|",
+      "|java+method:///cern/streaming/pool/core/service/util/ReactiveStreams/rxFrom(cern.streaming.pool.core.service.ReactiveStream)|",
+      "|java+method:///rx/Observable/buffer(int)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "v2Body": [
+      "|java+method:///cern/streaming/pool/core/service/DiscoveryService/discover(cern.streaming.pool.core.service.StreamId)|",
+      "|java+method:///io/reactivex/Flowable/fromPublisher(org.reactivestreams.Publisher)|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/CombineWithLatestStreamId/dataStream()|",
+      "|java+method:///io/reactivex/Flowable/withLatestFrom(org.reactivestreams.Publisher,io.reactivex.functions.BiFunction)|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/CombineWithLatestStreamId/triggerStream()|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/CombineWithLatestStreamId/combiner()|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "io.reactivex.rxjava2:rxjava:2.0.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.streamingpool:streamingpool-core:0.0.1",
+    "coordinatesV2": "org.streamingpool:streamingpool-core:1.0.0",
+    "caller": "|java+method:///cern/streaming/pool/core/support/StreamCollectingSupport$OngoingBlockingCollecting/awaitNext()|",
+    "called": "|java+method:///io/reactivex/Flowable/skip(long)|",
+    "v1Body": [
+      "|java+method:///rx/Observable/skip(int)|",
+      "|java+method:///cern/streaming/pool/core/support/RxStreamSupport/rxFrom(cern.streaming.pool.core.service.StreamId)|",
+      "|java+method:///cern/streaming/pool/core/service/rx/RxStreams/awaitNext(rx.Observable)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/reactivex/Flowable/skip(long)|",
+      "|java+method:///cern/streaming/pool/core/support/RxStreamSupport/rxFrom(cern.streaming.pool.core.service.StreamId)|",
+      "|java+method:///cern/streaming/pool/core/service/rx/RxStreams/awaitNext(io.reactivex.Flowable)|"
+    ],
+    "affectedLib": "io.reactivex.rxjava2:rxjava:2.0.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.streamingpool:streamingpool-core:0.0.1",
+    "coordinatesV2": "org.streamingpool:streamingpool-core:1.0.0",
+    "caller": "|java+method:///cern/streaming/pool/core/service/streamfactory/DelayedStreamFactory/create(cern.streaming.pool.core.service.StreamId,cern.streaming.pool.core.service.DiscoveryService)|",
+    "called": "|java+method:///io/reactivex/Flowable/fromPublisher(org.reactivestreams.Publisher)|",
+    "v1Body": [
+      "|java+method:///cern/streaming/pool/core/service/DiscoveryService/discover(cern.streaming.pool.core.service.StreamId)|",
+      "|java+method:///java/time/Duration/toMillis()|",
+      "|java+method:///java/util/Optional/of(java.lang.Object)|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/DelayedStreamId/getTarget()|",
+      "|java+method:///rx/Observable/delay(long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///cern/streaming/pool/core/service/util/ReactiveStreams/fromRx(rx.Observable)|",
+      "|java+method:///cern/streaming/pool/core/service/util/ReactiveStreams/rxFrom(cern.streaming.pool.core.service.ReactiveStream)|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/DelayedStreamId/getDelay()|",
+      "|java+method:///java/util/Optional/empty()|"
+    ],
+    "v2Body": [
+      "|java+method:///cern/streaming/pool/core/service/DiscoveryService/discover(cern.streaming.pool.core.service.StreamId)|",
+      "|java+method:///java/time/Duration/toMillis()|",
+      "|java+method:///io/reactivex/Flowable/fromPublisher(org.reactivestreams.Publisher)|",
+      "|java+method:///java/util/Optional/of(java.lang.Object)|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/DelayedStreamId/getTarget()|",
+      "|java+method:///io/reactivex/Flowable/delay(long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/DelayedStreamId/getDelay()|",
+      "|java+method:///java/util/Optional/empty()|"
+    ],
+    "affectedLib": "io.reactivex.rxjava2:rxjava:2.0.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.streamingpool:streamingpool-core:0.0.1",
+    "coordinatesV2": "org.streamingpool:streamingpool-core:1.0.0",
+    "caller": "|java+constructor:///cern/streaming/pool/core/rx/process/ObservableChoosable/ObservableChoosable(java.lang.Iterable,java.lang.Object)|",
+    "called": "|java+method:///io/reactivex/processors/BehaviorProcessor/createDefault(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/util/Objects/requireNonNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///rx/subjects/BehaviorSubject/create(java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Objects/requireNonNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///io/reactivex/processors/BehaviorProcessor/createDefault(java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "io.reactivex.rxjava2:rxjava:2.0.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.streamingpool:streamingpool-core:0.0.1",
+    "coordinatesV2": "org.streamingpool:streamingpool-core:1.0.0",
+    "caller": "|java+method:///cern/streaming/pool/core/rx/process/ObservableChoosable/choose(java.lang.Object)|",
+    "called": "|java+method:///io/reactivex/processors/BehaviorProcessor/onNext(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/util/Objects/requireNonNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///rx/subjects/BehaviorSubject/onNext(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Objects/requireNonNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///io/reactivex/processors/BehaviorProcessor/onNext(java.lang.Object)|"
+    ],
+    "affectedLib": "io.reactivex.rxjava2:rxjava:2.0.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.streamingpool:streamingpool-core:0.0.1",
+    "coordinatesV2": "org.streamingpool:streamingpool-core:1.0.0",
+    "caller": "|java+method:///cern/streaming/pool/core/rx/process/ClearableBufferProcessor/publish()|",
+    "called": "|java+method:///io/reactivex/processors/BehaviorProcessor/onNext(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///cern/streaming/pool/core/rx/process/ConcurrentCircularBuffer/toList()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicInteger/get()|",
+      "|java+method:///rx/subjects/BehaviorSubject/onNext(java.lang.Object)|",
+      "|java+method:///java/util/List/size()|"
+    ],
+    "v2Body": [
+      "|java+method:///cern/streaming/pool/core/rx/process/ConcurrentCircularBuffer/toList()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicInteger/get()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///io/reactivex/processors/BehaviorProcessor/onNext(java.lang.Object)|"
+    ],
+    "affectedLib": "io.reactivex.rxjava2:rxjava:2.0.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.streamingpool:streamingpool-core:0.0.1",
+    "coordinatesV2": "org.streamingpool:streamingpool-core:1.0.0",
+    "caller": "|java+method:///cern/streaming/pool/core/service/streamid/factory/function/DelayCompositionFunction/apply(java.util.List)|",
+    "called": "|java+method:///io/reactivex/Flowable/fromPublisher(org.reactivestreams.Publisher)|",
+    "v1Body": [
+      "|java+method:///java/time/Duration/toMillis()|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///rx/Observable/delay(long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///cern/streaming/pool/core/service/util/ReactiveStreams/fromRx(rx.Observable)|",
+      "|java+method:///cern/streaming/pool/core/service/util/ReactiveStreams/rxFrom(cern.streaming.pool.core.service.ReactiveStream)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/time/Duration/toMillis()|",
+      "|java+method:///io/reactivex/Flowable/fromPublisher(org.reactivestreams.Publisher)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///io/reactivex/Flowable/delay(long,java.util.concurrent.TimeUnit)|"
+    ],
+    "affectedLib": "io.reactivex.rxjava2:rxjava:2.0.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.streamingpool:streamingpool-core:0.0.1",
+    "coordinatesV2": "org.streamingpool:streamingpool-core:1.0.0",
+    "caller": "|java+constructor:///cern/streaming/pool/core/service/impl/PoolContent/PoolContent()|",
+    "called": "|java+method:///io/reactivex/processors/PublishProcessor/create()|",
+    "v1Body": [
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+method:///rx/subjects/PublishSubject/create()|",
+      "|java+method:///cern/streaming/pool/core/service/impl/PoolContent/addStreamHooks()|",
+      "|java+method:///java/util/concurrent/Executors/newSingleThreadExecutor()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+method:///io/reactivex/processors/PublishProcessor/create()|",
+      "|java+method:///cern/streaming/pool/core/service/impl/PoolContent/addStreamHooks()|",
+      "|java+method:///java/util/concurrent/Executors/newSingleThreadExecutor()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "io.reactivex.rxjava2:rxjava:2.0.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.streamingpool:streamingpool-core:0.0.1",
+    "coordinatesV2": "org.streamingpool:streamingpool-core:1.0.0",
+    "caller": "|java+method:///cern/streaming/pool/core/support/RxStreamSupport/rxFrom(cern.streaming.pool.core.service.StreamId)|",
+    "called": "|java+method:///io/reactivex/Flowable/fromPublisher(org.reactivestreams.Publisher)|",
+    "v1Body": [
+      "|java+method:///cern/streaming/pool/core/service/util/ReactiveStreams/rxFrom(cern.streaming.pool.core.service.ReactiveStream)|",
+      "|java+method:///cern/streaming/pool/core/support/RxStreamSupport/discover(cern.streaming.pool.core.service.StreamId)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/reactivex/Flowable/fromPublisher(org.reactivestreams.Publisher)|",
+      "|java+method:///cern/streaming/pool/core/support/RxStreamSupport/discover(cern.streaming.pool.core.service.StreamId)|"
+    ],
+    "affectedLib": "io.reactivex.rxjava2:rxjava:2.0.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.streamingpool:streamingpool-core:0.0.1",
+    "coordinatesV2": "org.streamingpool:streamingpool-core:1.0.0",
+    "caller": "|java+method:///cern/streaming/pool/core/service/streamfactory/OverlapBufferStreamFactory/timeoutStreamOf(java.time.Duration)|",
+    "called": "|java+method:///io/reactivex/Flowable/timer(long,java.util.concurrent.TimeUnit)|",
+    "v1Body": [
+      "|java+method:///java/time/Duration/isNegative()|",
+      "|java+method:///java/time/Duration/toMillis()|",
+      "|java+method:///rx/Observable/never()|",
+      "|java+method:///rx/Observable/timer(long,java.util.concurrent.TimeUnit)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/time/Duration/isNegative()|",
+      "|java+method:///java/time/Duration/toMillis()|",
+      "|java+method:///io/reactivex/Flowable/never()|",
+      "|java+method:///io/reactivex/Flowable/timer(long,java.util.concurrent.TimeUnit)|"
+    ],
+    "affectedLib": "io.reactivex.rxjava2:rxjava:2.0.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.streamingpool:streamingpool-core:0.0.1",
+    "coordinatesV2": "org.streamingpool:streamingpool-core:1.0.0",
+    "caller": "|java+method:///cern/streaming/pool/core/service/streamid/factory/function/FlatMapCompositionFunction/apply(java.util.List)|",
+    "called": "|java+method:///io/reactivex/Flowable/fromPublisher(org.reactivestreams.Publisher)|",
+    "v1Body": [
+      "|java+method:///rx/Observable/flatMap(rx.functions.Func1)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///cern/streaming/pool/core/service/util/ReactiveStreams/fromRx(rx.Observable)|",
+      "|java+method:///cern/streaming/pool/core/service/util/ReactiveStreams/rxFrom(cern.streaming.pool.core.service.ReactiveStream)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/reactivex/Flowable/fromPublisher(org.reactivestreams.Publisher)|",
+      "|java+method:///io/reactivex/Flowable/flatMap(io.reactivex.functions.Function)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "io.reactivex.rxjava2:rxjava:2.0.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.streamingpool:streamingpool-core:0.0.1",
+    "coordinatesV2": "org.streamingpool:streamingpool-core:1.0.0",
+    "caller": "|java+method:///cern/streaming/pool/core/service/streamid/factory/function/ZipCompositionFunction/apply(java.util.List)|",
+    "called": "|java+method:///io/reactivex/Flowable/fromPublisher(org.reactivestreams.Publisher)|",
+    "v1Body": [
+      "|java+method:///cern/streaming/pool/core/service/streamid/factory/function/ZipCompositionFunction/convertBiFunctionToRxFunc2(java.util.function.BiFunction)|",
+      "|java+method:///rx/Observable/zip(rx.Observable,rx.Observable,rx.functions.Func2)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///rx/Observable/filter(rx.functions.Func1)|",
+      "|java+method:///rx/Observable/map(rx.functions.Func1)|",
+      "|java+method:///cern/streaming/pool/core/service/util/ReactiveStreams/fromRx(rx.Observable)|",
+      "|java+method:///cern/streaming/pool/core/service/util/ReactiveStreams/rxFrom(cern.streaming.pool.core.service.ReactiveStream)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/reactivex/Flowable/fromPublisher(org.reactivestreams.Publisher)|",
+      "|java+method:///io/reactivex/Flowable/zip(org.reactivestreams.Publisher,org.reactivestreams.Publisher,io.reactivex.functions.BiFunction)|",
+      "|java+method:///io/reactivex/Flowable/filter(io.reactivex.functions.Predicate)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///io/reactivex/Flowable/map(io.reactivex.functions.Function)|"
+    ],
+    "affectedLib": "io.reactivex.rxjava2:rxjava:2.0.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.streamingpool:streamingpool-core:0.0.1",
+    "coordinatesV2": "org.streamingpool:streamingpool-core:1.0.0",
+    "caller": "|java+method:///cern/streaming/pool/core/service/streamid/factory/function/MapCompositionFunction/apply(java.util.List)|",
+    "called": "|java+method:///io/reactivex/Flowable/fromPublisher(org.reactivestreams.Publisher)|",
+    "v1Body": [
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///rx/Observable/filter(rx.functions.Func1)|",
+      "|java+method:///rx/Observable/map(rx.functions.Func1)|",
+      "|java+method:///cern/streaming/pool/core/service/util/ReactiveStreams/fromRx(rx.Observable)|",
+      "|java+method:///cern/streaming/pool/core/service/util/ReactiveStreams/rxFrom(cern.streaming.pool.core.service.ReactiveStream)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/reactivex/Flowable/fromPublisher(org.reactivestreams.Publisher)|",
+      "|java+method:///io/reactivex/Flowable/filter(io.reactivex.functions.Predicate)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///io/reactivex/Flowable/map(io.reactivex.functions.Function)|"
+    ],
+    "affectedLib": "io.reactivex.rxjava2:rxjava:2.0.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.streamingpool:streamingpool-core:0.0.1",
+    "coordinatesV2": "org.streamingpool:streamingpool-core:1.0.0",
+    "caller": "|java+method:///cern/streaming/pool/core/service/streamid/factory/function/FilterCompositionFunction/apply(java.util.List)|",
+    "called": "|java+method:///io/reactivex/Flowable/fromPublisher(org.reactivestreams.Publisher)|",
+    "v1Body": [
+      "|java+method:///rx/Observable/filter(rx.functions.Func1)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///cern/streaming/pool/core/service/util/ReactiveStreams/fromRx(rx.Observable)|",
+      "|java+method:///cern/streaming/pool/core/service/util/ReactiveStreams/rxFrom(cern.streaming.pool.core.service.ReactiveStream)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/reactivex/Flowable/fromPublisher(org.reactivestreams.Publisher)|",
+      "|java+method:///io/reactivex/Flowable/filter(io.reactivex.functions.Predicate)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "io.reactivex.rxjava2:rxjava:2.0.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.streamingpool:streamingpool-core:0.0.1",
+    "coordinatesV2": "org.streamingpool:streamingpool-core:1.0.0",
+    "caller": "|java+method:///cern/streaming/pool/core/service/streamfactory/OverlapBufferStreamFactory/create(cern.streaming.pool.core.service.StreamId,cern.streaming.pool.core.service.DiscoveryService)|",
+    "called": "|java+method:///io/reactivex/Flowable/fromPublisher(org.reactivestreams.Publisher)|",
+    "v1Body": [
+      "|java+method:///cern/streaming/pool/core/service/DiscoveryService/discover(cern.streaming.pool.core.service.StreamId)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///rx/Observable/publish()|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/BufferSpecification/endStreamMatchers()|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/BufferSpecification/startId()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/BufferSpecification/timeout()|",
+      "|java+method:///rx/observables/ConnectableObservable/connect()|",
+      "|java+method:///java/util/Optional/empty()|",
+      "|java+method:///rx/observables/ConnectableObservable/buffer(rx.Observable,rx.functions.Func1)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/OverlapBufferStreamId/sourceId()|",
+      "|java+method:///cern/streaming/pool/core/service/util/ReactiveStreams/fromRx(rx.Observable)|",
+      "|java+method:///cern/streaming/pool/core/service/util/ReactiveStreams/rxFrom(cern.streaming.pool.core.service.ReactiveStream)|",
+      "|java+method:///java/util/Set/stream()|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|",
+      "|java+method:///java/util/Optional/of(java.lang.Object)|",
+      "|java+method:///java/util/Map/values()|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/OverlapBufferStreamId/bufferSpecification()|",
+      "|java+method:///java/util/stream/Collectors/toMap(java.util.function.Function,java.util.function.Function)|"
+    ],
+    "v2Body": [
+      "|java+method:///cern/streaming/pool/core/service/DiscoveryService/discover(cern.streaming.pool.core.service.StreamId)|",
+      "|java+method:///io/reactivex/flowables/ConnectableFlowable/connect()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///io/reactivex/Flowable/fromPublisher(org.reactivestreams.Publisher)|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/BufferSpecification/endStreamMatchers()|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/BufferSpecification/startId()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/BufferSpecification/timeout()|",
+      "|java+method:///io/reactivex/flowables/ConnectableFlowable/buffer(io.reactivex.Flowable,io.reactivex.functions.Function)|",
+      "|java+method:///java/util/Optional/empty()|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/OverlapBufferStreamId/sourceId()|",
+      "|java+method:///io/reactivex/Flowable/publish()|",
+      "|java+method:///java/util/Set/stream()|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|",
+      "|java+method:///java/util/Optional/of(java.lang.Object)|",
+      "|java+method:///java/util/Map/values()|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/OverlapBufferStreamId/bufferSpecification()|",
+      "|java+method:///java/util/stream/Collectors/toMap(java.util.function.Function,java.util.function.Function)|"
+    ],
+    "affectedLib": "io.reactivex.rxjava2:rxjava:2.0.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.streamingpool:streamingpool-core:0.0.1",
+    "coordinatesV2": "org.streamingpool:streamingpool-core:1.0.0",
+    "caller": "|java+constructor:///cern/streaming/pool/core/rx/process/TriggerImpl/TriggerImpl()|",
+    "called": "|java+method:///io/reactivex/processors/BehaviorProcessor/createDefault(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///rx/subjects/BehaviorSubject/create(java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/reactivex/processors/BehaviorProcessor/createDefault(java.lang.Object)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "io.reactivex.rxjava2:rxjava:2.0.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.streamingpool:streamingpool-core:0.0.1",
+    "coordinatesV2": "org.streamingpool:streamingpool-core:1.0.0",
+    "caller": "|java+method:///cern/streaming/pool/core/service/streamfactory/FilteredStreamFactory/create(cern.streaming.pool.core.service.StreamId,cern.streaming.pool.core.service.DiscoveryService)|",
+    "called": "|java+method:///io/reactivex/Flowable/fromPublisher(org.reactivestreams.Publisher)|",
+    "v1Body": [
+      "|java+method:///cern/streaming/pool/core/service/DiscoveryService/discover(cern.streaming.pool.core.service.StreamId)|",
+      "|java+method:///rx/Observable/filter(rx.functions.Func1)|",
+      "|java+method:///java/util/Optional/of(java.lang.Object)|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/FilteredStreamId/sourceStreamId()|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/FilteredStreamId/predicate()|",
+      "|java+method:///java/util/Optional/empty()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///cern/streaming/pool/core/service/util/ReactiveStreams/fromRx(rx.Observable)|",
+      "|java+method:///cern/streaming/pool/core/service/util/ReactiveStreams/rxFrom(cern.streaming.pool.core.service.ReactiveStream)|"
+    ],
+    "v2Body": [
+      "|java+method:///cern/streaming/pool/core/service/DiscoveryService/discover(cern.streaming.pool.core.service.StreamId)|",
+      "|java+method:///io/reactivex/Flowable/fromPublisher(org.reactivestreams.Publisher)|",
+      "|java+method:///java/util/Optional/of(java.lang.Object)|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/FilteredStreamId/sourceStreamId()|",
+      "|java+method:///java/util/Optional/empty()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///cern/streaming/pool/core/service/streamid/FilteredStreamId/predicate()|",
+      "|java+method:///io/reactivex/Flowable/filter(io.reactivex.functions.Predicate)|"
+    ],
+    "affectedLib": "io.reactivex.rxjava2:rxjava:2.0.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.streamingpool:streamingpool-core:0.0.1",
+    "coordinatesV2": "org.streamingpool:streamingpool-core:1.0.0",
+    "caller": "|java+method:///cern/streaming/pool/core/service/streamfactory/OverlapBufferStreamFactory/closingStreamFor(java.lang.Object,java.util.Map,java.time.Duration)|",
+    "called": "|java+method:///io/reactivex/Flowable/take(long)|",
+    "v1Body": [
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+method:///java/util/stream/Collectors/toSet()|",
+      "|java+method:///rx/Observable/merge(java.lang.Iterable)|",
+      "|java+method:///rx/Observable/take(int)|",
+      "|java+method:///cern/streaming/pool/core/service/streamfactory/OverlapBufferStreamFactory/timeoutStreamOf(java.time.Duration)|",
+      "|java+method:///java/util/Set/stream()|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/stream/Collectors/toSet()|",
+      "|java+method:///io/reactivex/Flowable/take(long)|",
+      "|java+method:///cern/streaming/pool/core/service/streamfactory/OverlapBufferStreamFactory/timeoutStreamOf(java.time.Duration)|",
+      "|java+method:///io/reactivex/Flowable/merge(java.lang.Iterable)|",
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+method:///java/util/Set/stream()|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|"
+    ],
+    "affectedLib": "io.reactivex.rxjava2:rxjava:2.0.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.streamingpool:streamingpool-core:0.0.1",
+    "coordinatesV2": "org.streamingpool:streamingpool-core:1.0.0",
+    "caller": "|java+constructor:///cern/streaming/pool/core/rx/process/RunStateServiceImpl/RunStateServiceImpl(cern.streaming.pool.core.rx.process.RunState)|",
+    "called": "|java+method:///io/reactivex/processors/BehaviorProcessor/createDefault(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/util/Objects/requireNonNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///rx/subjects/BehaviorSubject/create(java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Objects/requireNonNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///io/reactivex/processors/BehaviorProcessor/createDefault(java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "io.reactivex.rxjava2:rxjava:2.0.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.streamingpool:streamingpool-core:0.0.1",
+    "coordinatesV2": "org.streamingpool:streamingpool-core:1.0.0",
+    "caller": "|java+method:///cern/streaming/pool/core/rx/process/RunStateServiceImpl/switchTo(cern.streaming.pool.core.rx.process.RunState)|",
+    "called": "|java+method:///io/reactivex/processors/BehaviorProcessor/onNext(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/util/Objects/requireNonNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///rx/subjects/BehaviorSubject/onNext(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Objects/requireNonNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///io/reactivex/processors/BehaviorProcessor/onNext(java.lang.Object)|"
+    ],
+    "affectedLib": "io.reactivex.rxjava2:rxjava:2.0.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.streamingpool:streamingpool-core:0.0.1",
+    "coordinatesV2": "org.streamingpool:streamingpool-core:1.0.0",
+    "caller": "|java+method:///cern/streaming/pool/core/rx/process/RunStateServiceImpl/getRunState()|",
+    "called": "|java+method:///io/reactivex/processors/BehaviorProcessor/getValue()|",
+    "v1Body": [
+      "|java+method:///rx/subjects/BehaviorSubject/getValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/reactivex/processors/BehaviorProcessor/getValue()|"
+    ],
+    "affectedLib": "io.reactivex.rxjava2:rxjava:2.0.4",
+    "change": "ADDED"
+  }
+]

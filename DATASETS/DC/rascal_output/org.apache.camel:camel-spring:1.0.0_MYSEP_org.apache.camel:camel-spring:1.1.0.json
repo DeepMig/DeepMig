@@ -1,0 +1,152 @@
+[
+  {
+    "coordinatesV1": "org.apache.camel:camel-spring:1.0.0",
+    "coordinatesV2": "org.apache.camel:camel-spring:1.1.0",
+    "caller": "|java+method:///org/apache/camel/spring/CamelBeanPostProcessor/createConsumerProcessor(java.lang.Object,java.lang.reflect.Method,org.apache.camel.Endpoint)|",
+    "called": "|java+constructor:///org/apache/camel/component/bean/BeanProcessor/BeanProcessor(java.lang.Object,org.apache.camel.CamelContext)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/camel/spring/util/BeanInfo/BeanInfo(java.lang.Class,org.apache.camel.spring.util.MethodInvocationStrategy)|",
+      "|java+constructor:///org/apache/camel/spring/CamelBeanPostProcessor$4/CamelBeanPostProcessor$4(org.apache.camel.spring.CamelBeanPostProcessor,org.apache.camel.Endpoint,org.apache.camel.spring.util.BeanInfo,java.lang.reflect.Method,java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/camel/component/bean/BeanProcessor/BeanProcessor(java.lang.Object,org.apache.camel.CamelContext)|",
+      "|java+method:///org/apache/camel/component/bean/BeanProcessor/setMethod(java.lang.reflect.Method)|",
+      "|java+method:///org/apache/camel/spring/CamelBeanPostProcessor/getCamelContext()|"
+    ],
+    "affectedLib": "org.apache.camel:camel-core:1.1.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.camel:camel-spring:1.0.0",
+    "coordinatesV2": "org.apache.camel:camel-spring:1.1.0",
+    "caller": "|java+method:///org/apache/camel/spring/remoting/CamelServiceExporter/afterPropertiesSet()|",
+    "called": "|java+method:///org/apache/camel/util/CamelContextHelper/getMandatoryEndpoint(org.apache.camel.CamelContext,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/camel/CamelContext/getComponent(java.lang.String)|",
+      "|java+method:///org/apache/camel/spring/remoting/CamelServiceExporter/getProxyForService()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///org/apache/camel/component/pojo/PojoComponent/addService(java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/camel/component/bean/BeanProcessor/BeanProcessor(java.lang.Object,org.apache.camel.CamelContext)|",
+      "|java+method:///org/apache/camel/spring/remoting/CamelServiceExporter/getService()|",
+      "|java+method:///org/apache/camel/spring/remoting/CamelServiceExporter/setService(java.lang.Object)|",
+      "|java+method:///org/apache/camel/Endpoint/createConsumer(org.apache.camel.Processor)|",
+      "|java+method:///org/apache/camel/util/ObjectHelper/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/apache/camel/util/CamelContextHelper/getMandatoryEndpoint(org.apache.camel.CamelContext,java.lang.String)|",
+      "|java+method:///org/springframework/context/ApplicationContext/getBean(java.lang.String)|",
+      "|java+method:///org/apache/camel/Consumer/start()|",
+      "|java+method:///org/apache/camel/spring/remoting/CamelServiceExporter/getProxyForService()|"
+    ],
+    "affectedLib": "org.apache.camel:camel-core:1.1.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.camel:camel-spring:1.0.0",
+    "coordinatesV2": "org.apache.camel:camel-spring:1.1.0",
+    "caller": "|java+constructor:///org/apache/camel/spring/CamelContextFactoryBean/CamelContextFactoryBean()|",
+    "called": "|java+constructor:///org/apache/camel/model/IdentifiedType/IdentifiedType()|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///org/apache/camel/model/IdentifiedType/IdentifiedType()|"
+    ],
+    "affectedLib": "org.apache.camel:camel-core:1.1.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.camel:camel-spring:1.0.0",
+    "coordinatesV2": "org.apache.camel:camel-spring:1.1.0",
+    "caller": "|java+constructor:///org/apache/camel/spring/EndpointFactoryBean/EndpointFactoryBean()|",
+    "called": "|java+constructor:///org/apache/camel/model/IdentifiedType/IdentifiedType()|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/camel/model/IdentifiedType/IdentifiedType()|"
+    ],
+    "affectedLib": "org.apache.camel:camel-core:1.1.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.camel:camel-spring:1.0.0",
+    "coordinatesV2": "org.apache.camel:camel-spring:1.1.0",
+    "caller": "|java+method:///org/apache/camel/spring/remoting/CamelProxyFactoryBean/afterPropertiesSet()|",
+    "called": "|java+method:///org/apache/camel/component/bean/ProxyHelper/createProxy(org.apache.camel.Endpoint,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/camel/spring/remoting/CamelProxyFactoryBean/getServiceUrl()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.Throwable)|",
+      "|java+method:///org/apache/camel/spring/remoting/CamelProxyFactoryBean/getServiceInterface()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///org/apache/camel/CamelContext/getEndpoint(java.lang.String)|",
+      "|java+method:///org/apache/camel/component/pojo/PojoComponent/createProxy(org.apache.camel.Endpoint,java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/remoting/support/UrlBasedRemoteAccessor/afterPropertiesSet()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/camel/spring/remoting/CamelProxyFactoryBean/getServiceUrl()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.Throwable)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///org/apache/camel/CamelContext/getEndpoint(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/remoting/support/UrlBasedRemoteAccessor/afterPropertiesSet()|",
+      "|java+method:///org/apache/camel/spring/remoting/CamelProxyFactoryBean/getServiceInterface()|",
+      "|java+method:///org/apache/camel/component/bean/ProxyHelper/createProxy(org.apache.camel.Endpoint,java.lang.Class)|"
+    ],
+    "affectedLib": "org.apache.camel:camel-core:1.1.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.camel:camel-spring:1.0.0",
+    "coordinatesV2": "org.apache.camel:camel-spring:1.1.0",
+    "caller": "|java+method:///org/apache/camel/spring/CamelBeanPostProcessor/getEndpointInjection(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/apache/camel/util/ObjectHelper/isNotNullAndNonEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/Log/warn(java.lang.Object)|",
+      "|java+method:///org/springframework/context/ApplicationContext/getBean(java.lang.String)|",
+      "|java+method:///org/apache/camel/CamelContext/getEndpoint(java.lang.String)|",
+      "|java+method:///org/apache/camel/util/ObjectHelper/isNotNullOrBlank(java.lang.String)|",
+      "|java+constructor:///org/springframework/beans/factory/NoSuchBeanDefinitionException/NoSuchBeanDefinitionException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/camel/util/ObjectHelper/isNotNullAndNonEmpty(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/Log/warn(java.lang.Object)|",
+      "|java+method:///org/apache/camel/spring/SpringCamelContext/getEndpoint(java.lang.String)|",
+      "|java+method:///org/springframework/context/ApplicationContext/getBean(java.lang.String)|",
+      "|java+constructor:///org/springframework/beans/factory/NoSuchBeanDefinitionException/NoSuchBeanDefinitionException(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.camel:camel-core:1.1.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.camel:camel-spring:1.0.0",
+    "coordinatesV2": "org.apache.camel:camel-spring:1.1.0",
+    "caller": "|java+method:///org/apache/camel/spring/CamelContextFactoryBean/installRoutes()|",
+    "called": "|java+method:///org/apache/camel/model/RouteType/addRoutes(org.apache.camel.CamelContext)|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/camel/CamelContext/addRoutes(org.apache.camel.builder.RouteBuilder)|",
+      "|java+method:///org/apache/camel/spring/CamelContextFactoryBean/getContext()|",
+      "|java+method:///java/util/List/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/camel/spring/SpringCamelContext/addRoutes(org.apache.camel.builder.RouteBuilder)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/camel/spring/CamelContextFactoryBean/getContext()|",
+      "|java+method:///org/apache/camel/model/RouteType/addRoutes(org.apache.camel.CamelContext)|",
+      "|java+method:///java/util/List/iterator()|"
+    ],
+    "affectedLib": "org.apache.camel:camel-core:1.1.0",
+    "change": "UPDATED"
+  }
+]

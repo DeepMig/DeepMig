@@ -1,0 +1,39 @@
+[
+  {
+    "coordinatesV1": "org.kasource:ka-event-guice:0.5",
+    "coordinatesV2": "org.kasource:ka-event-guice:0.6",
+    "caller": "|java+method:///org/kasource/kaevent/config/KaEventModule/provideChannelRegister()|",
+    "called": "|java+constructor:///org/kasource/kaevent/channel/ChannelRegisterImpl/ChannelRegisterImpl()|",
+    "v1Body": [
+      "|java+method:///org/kasource/kaevent/config/KaEventConfiguration/getChannelRegister()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/kasource/kaevent/channel/ChannelRegisterImpl/ChannelRegisterImpl()|"
+    ],
+    "affectedLib": "org.kasource:ka-event-core:0.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.kasource:ka-event-guice:0.5",
+    "coordinatesV2": "org.kasource:ka-event-guice:0.6",
+    "caller": "|java+method:///org/kasource/kaevent/bean/GuiceBeanResolver/getBean(java.lang.String,java.lang.Class)|",
+    "called": "|java+constructor:///org/kasource/kaevent/bean/CouldNotResolveBeanException/CouldNotResolveBeanException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/google/inject/Key/get(java.lang.Class,java.lang.annotation.Annotation)|",
+      "|java+method:///com/google/inject/name/Names/named(java.lang.String)|",
+      "|java+method:///com/google/inject/Injector/getInstance(com.google.inject.Key)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/kasource/kaevent/bean/GuiceBeanResolver/getBeanKey(java.lang.String)|",
+      "|java+constructor:///org/kasource/kaevent/bean/CouldNotResolveBeanException/CouldNotResolveBeanException(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/google/inject/name/Names/named(java.lang.String)|",
+      "|java+method:///com/google/inject/Injector/getInstance(com.google.inject.Key)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/google/inject/Key/get(java.lang.Class,java.lang.annotation.Annotation)|"
+    ],
+    "affectedLib": "org.kasource:ka-event-core:0.6",
+    "change": "UPDATED"
+  }
+]

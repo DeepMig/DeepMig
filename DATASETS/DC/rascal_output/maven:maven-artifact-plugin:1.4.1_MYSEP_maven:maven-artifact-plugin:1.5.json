@@ -1,0 +1,142 @@
+[
+  {
+    "coordinatesV1": "maven:maven-artifact-plugin:1.5",
+    "coordinatesV2": "maven:maven-artifact-plugin:1.4.1",
+    "caller": "|java+method:///org/apache/maven/artifact/deployer/DefaultArtifactDeployer/doInstall(java.io.File,java.lang.String,org.apache.maven.project.Project,java.lang.String,org.apache.maven.repository.ArtifactTypeHandler)|",
+    "called": "|java+method:///org/apache/commons/io/FileUtils/copyFile(java.io.File,java.io.File)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/io/FileUtils/copyFile(java.io.File,java.io.File)|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.Object)|",
+      "|java+method:///java/lang/Throwable/getMessage()|",
+      "|java+method:///org/apache/maven/artifact/deployer/DefaultArtifactDeployer/getLocalRepository(org.apache.maven.project.Project)|",
+      "|java+constructor:///org/apache/maven/MavenException/MavenException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/maven/repository/ArtifactTypeHandler/constructRepositoryFullPath(java.lang.String,org.apache.maven.project.Project,java.lang.String)|",
+      "|java+method:///java/io/File/mkdirs()|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|",
+      "|java+method:///java/io/File/getParentFile()|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+method:///org/apache/commons/logging/Log/info(java.lang.Object)|",
+      "|java+constructor:///java/io/File/File(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuffer/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuffer/append(java.lang.Object)|",
+      "|java+constructor:///org/apache/maven/MavenException/MavenException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+method:///org/apache/maven/repository/ArtifactTypeHandler/constructRepositoryFullPath(java.lang.String,org.apache.maven.project.Project,java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|",
+      "|java+method:///org/apache/maven/artifact/deployer/DefaultArtifactDeployer/deployFile(org.apache.maven.wagon.repository.Repository,java.io.File,java.lang.String,org.apache.maven.project.Project)|",
+      "|java+method:///org/apache/maven/jelly/MavenJellyContext/getMavenRepoLocal()|",
+      "|java+method:///java/lang/Throwable/getMessage()|",
+      "|java+constructor:///org/apache/maven/wagon/repository/Repository/Repository(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/maven/project/Project/getContext()|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|"
+    ],
+    "affectedLib": "commons-io:commons-io:20030203.000550",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "maven:maven-artifact-plugin:1.5",
+    "coordinatesV2": "maven:maven-artifact-plugin:1.4.1",
+    "caller": "|java+method:///org/apache/maven/artifact/deployer/DefaultArtifactDeployer/createSnapshotVersionFile(java.io.File,java.lang.String,org.apache.maven.project.Project,java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/io/FileUtils/fileWrite(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/io/FileUtils/fileWrite(java.lang.String,java.lang.String)|",
+      "|java+method:///java/io/File/getParent()|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.Object)|",
+      "|java+constructor:///org/apache/maven/MavenException/MavenException(java.lang.String)|",
+      "|java+method:///java/io/File/getAbsolutePath()|",
+      "|java+method:///org/apache/maven/project/Project/getArtifactId()|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|",
+      "|java+constructor:///java/io/File/File(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuffer/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/codehaus/plexus/util/FileUtils/fileWrite(java.lang.String,java.lang.String)|",
+      "|java+method:///java/io/File/getParent()|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.Object)|",
+      "|java+constructor:///org/apache/maven/MavenException/MavenException(java.lang.String)|",
+      "|java+method:///java/io/File/getAbsolutePath()|",
+      "|java+method:///org/apache/maven/project/Project/getArtifactId()|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|",
+      "|java+constructor:///java/io/File/File(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+method:///java/io/File/deleteOnExit()|"
+    ],
+    "affectedLib": "commons-io:commons-io:20030203.000550",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "maven:maven-artifact-plugin:1.4.1",
+    "coordinatesV2": "maven:maven-artifact-plugin:1.5",
+    "caller": "|java+method:///org/apache/maven/artifact/deployer/DefaultArtifactDeployer/createSnapshotVersionFile(java.io.File,java.lang.String,org.apache.maven.project.Project,java.lang.String)|",
+    "called": "|java+method:///org/codehaus/plexus/util/FileUtils/fileWrite(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/io/FileUtils/fileWrite(java.lang.String,java.lang.String)|",
+      "|java+method:///java/io/File/getParent()|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.Object)|",
+      "|java+constructor:///org/apache/maven/MavenException/MavenException(java.lang.String)|",
+      "|java+method:///java/io/File/getAbsolutePath()|",
+      "|java+method:///org/apache/maven/project/Project/getArtifactId()|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|",
+      "|java+constructor:///java/io/File/File(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuffer/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/codehaus/plexus/util/FileUtils/fileWrite(java.lang.String,java.lang.String)|",
+      "|java+method:///java/io/File/getParent()|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.Object)|",
+      "|java+constructor:///org/apache/maven/MavenException/MavenException(java.lang.String)|",
+      "|java+method:///java/io/File/getAbsolutePath()|",
+      "|java+method:///org/apache/maven/project/Project/getArtifactId()|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|",
+      "|java+constructor:///java/io/File/File(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+method:///java/io/File/deleteOnExit()|"
+    ],
+    "affectedLib": "plexus:plexus-utils:1.0-alpha-3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "maven:maven-artifact-plugin:1.4.1",
+    "coordinatesV2": "maven:maven-artifact-plugin:1.5",
+    "caller": "|java+method:///org/apache/maven/artifact/deployer/DefaultArtifactDeployer/doInstall(java.io.File,java.lang.String,org.apache.maven.project.Project,java.lang.String,org.apache.maven.repository.ArtifactTypeHandler)|",
+    "called": "|java+constructor:///org/apache/maven/wagon/repository/Repository/Repository(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/io/FileUtils/copyFile(java.io.File,java.io.File)|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.Object)|",
+      "|java+method:///java/lang/Throwable/getMessage()|",
+      "|java+method:///org/apache/maven/artifact/deployer/DefaultArtifactDeployer/getLocalRepository(org.apache.maven.project.Project)|",
+      "|java+constructor:///org/apache/maven/MavenException/MavenException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/maven/repository/ArtifactTypeHandler/constructRepositoryFullPath(java.lang.String,org.apache.maven.project.Project,java.lang.String)|",
+      "|java+method:///java/io/File/mkdirs()|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|",
+      "|java+method:///java/io/File/getParentFile()|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+method:///org/apache/commons/logging/Log/info(java.lang.Object)|",
+      "|java+constructor:///java/io/File/File(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuffer/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuffer/append(java.lang.Object)|",
+      "|java+constructor:///org/apache/maven/MavenException/MavenException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+method:///org/apache/maven/repository/ArtifactTypeHandler/constructRepositoryFullPath(java.lang.String,org.apache.maven.project.Project,java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|",
+      "|java+method:///org/apache/maven/artifact/deployer/DefaultArtifactDeployer/deployFile(org.apache.maven.wagon.repository.Repository,java.io.File,java.lang.String,org.apache.maven.project.Project)|",
+      "|java+method:///org/apache/maven/jelly/MavenJellyContext/getMavenRepoLocal()|",
+      "|java+method:///java/lang/Throwable/getMessage()|",
+      "|java+constructor:///org/apache/maven/wagon/repository/Repository/Repository(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/maven/project/Project/getContext()|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.maven.wagon:wagon-provider-api:1.0-alpha-3",
+    "change": "ADDED"
+  }
+]

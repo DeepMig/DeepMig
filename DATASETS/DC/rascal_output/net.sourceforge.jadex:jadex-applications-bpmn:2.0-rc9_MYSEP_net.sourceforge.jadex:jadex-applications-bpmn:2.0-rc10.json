@@ -1,0 +1,126 @@
+[
+  {
+    "coordinatesV1": "net.sourceforge.jadex:jadex-applications-bpmn:2.0-rc9",
+    "coordinatesV2": "net.sourceforge.jadex:jadex-applications-bpmn:2.0-rc10",
+    "caller": "|java+method:///jadex/bpmn/testcases/AService/test()|",
+    "called": "|java+constructor:///jadex/commons/future/Future/Future(java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///jadex/commons/future/Future/Future(java.lang.Object)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///jadex/commons/future/Future/Future(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|"
+    ],
+    "affectedLib": "net.sourceforge.jadex:jadex-commons:2.0-rc10",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.sourceforge.jadex:jadex-applications-bpmn:2.0-rc9",
+    "coordinatesV2": "net.sourceforge.jadex:jadex-applications-bpmn:2.0-rc10",
+    "caller": "|java+method:///jadex/bpmn/tutorial/GetTimeTask$1$1/run()|",
+    "called": "|java+method:///jadex/commons/future/Future/setResult(java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Long/Long(long)|",
+      "|java+method:///jadex/bpmn/tutorial/GetTimeTask$1/access$100(jadex.bpmn.tutorial.GetTimeTask$1)|",
+      "|java+method:///jadex/commons/future/Future/setResult(java.lang.Object)|",
+      "|java+method:///jadex/bridge/service/clock/IClockService/getTime()|",
+      "|java+method:///jadex/bpmn/runtime/ITaskContext/setParameterValue(java.lang.String,java.lang.Object)|",
+      "|java+method:///jadex/bpmn/tutorial/GetTimeTask$1/access$000(jadex.bpmn.tutorial.GetTimeTask$1)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/Long/Long(long)|",
+      "|java+method:///jadex/commons/future/Future/setResult(java.lang.Object)|",
+      "|java+method:///jadex/bridge/service/clock/IClockService/getTime()|",
+      "|java+method:///jadex/bpmn/runtime/ITaskContext/setParameterValue(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "net.sourceforge.jadex:jadex-commons:2.0-rc10",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.sourceforge.jadex:jadex-applications-bpmn:2.0-rc9",
+    "coordinatesV2": "net.sourceforge.jadex:jadex-applications-bpmn:2.0-rc10",
+    "caller": "|java+method:///jadex/bpmn/tutorial/GetTimeTask/execute(jadex.bpmn.runtime.ITaskContext,jadex.bpmn.runtime.BpmnInterpreter)|",
+    "called": "|java+constructor:///jadex/commons/future/Future/Future()|",
+    "v1Body": [
+      "|java+method:///jadex/bpmn/tutorial/GetTimeTask/class$(java.lang.String)|",
+      "|java+constructor:///jadex/bpmn/tutorial/GetTimeTask$1/GetTimeTask$1(jadex.bpmn.tutorial.GetTimeTask,jadex.bpmn.runtime.BpmnInterpreter,jadex.bpmn.runtime.ITaskContext,jadex.commons.future.Future)|",
+      "|java+constructor:///jadex/commons/future/Future/Future()|",
+      "|java+method:///jadex/bridge/service/SServiceProvider/getService(jadex.bridge.service.IServiceProvider,java.lang.Class)|",
+      "|java+method:///jadex/bpmn/runtime/BpmnInterpreter/getServiceContainer()|",
+      "|java+method:///jadex/commons/future/IFuture/addResultListener(jadex.commons.future.IResultListener)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///jadex/bpmn/tutorial/GetTimeTask$1/GetTimeTask$1(jadex.bpmn.tutorial.GetTimeTask,jadex.bpmn.runtime.BpmnInterpreter,jadex.bpmn.runtime.ITaskContext,jadex.commons.future.Future)|",
+      "|java+method:///jadex/bridge/service/SServiceProvider/getServiceUpwards(jadex.bridge.service.IServiceProvider,java.lang.Class)|",
+      "|java+constructor:///jadex/commons/future/Future/Future()|",
+      "|java+method:///jadex/bpmn/runtime/BpmnInterpreter/getServiceContainer()|",
+      "|java+method:///jadex/commons/future/IFuture/addResultListener(jadex.commons.future.IResultListener)|"
+    ],
+    "affectedLib": "net.sourceforge.jadex:jadex-commons:2.0-rc10",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.sourceforge.jadex:jadex-applications-bpmn:2.0-rc9",
+    "coordinatesV2": "net.sourceforge.jadex:jadex-applications-bpmn:2.0-rc10",
+    "caller": "|java+method:///jadex/bpmn/tutorial/GetTimeTask/execute(jadex.bpmn.runtime.ITaskContext,jadex.bpmn.runtime.BpmnInterpreter)|",
+    "called": "|java+method:///jadex/bridge/service/SServiceProvider/getServiceUpwards(jadex.bridge.service.IServiceProvider,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///jadex/bpmn/tutorial/GetTimeTask/class$(java.lang.String)|",
+      "|java+constructor:///jadex/bpmn/tutorial/GetTimeTask$1/GetTimeTask$1(jadex.bpmn.tutorial.GetTimeTask,jadex.bpmn.runtime.BpmnInterpreter,jadex.bpmn.runtime.ITaskContext,jadex.commons.future.Future)|",
+      "|java+constructor:///jadex/commons/future/Future/Future()|",
+      "|java+method:///jadex/bridge/service/SServiceProvider/getService(jadex.bridge.service.IServiceProvider,java.lang.Class)|",
+      "|java+method:///jadex/bpmn/runtime/BpmnInterpreter/getServiceContainer()|",
+      "|java+method:///jadex/commons/future/IFuture/addResultListener(jadex.commons.future.IResultListener)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///jadex/bpmn/tutorial/GetTimeTask$1/GetTimeTask$1(jadex.bpmn.tutorial.GetTimeTask,jadex.bpmn.runtime.BpmnInterpreter,jadex.bpmn.runtime.ITaskContext,jadex.commons.future.Future)|",
+      "|java+method:///jadex/bridge/service/SServiceProvider/getServiceUpwards(jadex.bridge.service.IServiceProvider,java.lang.Class)|",
+      "|java+constructor:///jadex/commons/future/Future/Future()|",
+      "|java+method:///jadex/bpmn/runtime/BpmnInterpreter/getServiceContainer()|",
+      "|java+method:///jadex/commons/future/IFuture/addResultListener(jadex.commons.future.IResultListener)|"
+    ],
+    "affectedLib": "net.sourceforge.jadex:jadex-bridge:2.0-rc10",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.sourceforge.jadex:jadex-applications-bpmn:2.0-rc9",
+    "coordinatesV2": "net.sourceforge.jadex:jadex-applications-bpmn:2.0-rc10",
+    "caller": "|java+method:///jadex/bpmn/tutorial/OKTask/getMetaInfo()|",
+    "called": "|java+constructor:///jadex/bpmn/runtime/task/TaskMetaInfo/TaskMetaInfo(java.lang.String,jadex.bpmn.runtime.task.ParameterMetaInfo%5B%5D)|",
+    "v1Body": [
+      "|java+method:///jadex/bpmn/tutorial/OKTask/class$(java.lang.String)|",
+      "|java+constructor:///jadex/bpmn/runtime/task/ParameterMetaInfo/ParameterMetaInfo(java.lang.String,java.lang.Class,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+constructor:///jadex/bpmn/runtime/task/TaskMetaInfo/TaskMetaInfo(java.lang.String,jadex.bpmn.runtime.task.ParameterMetaInfo%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///jadex/bpmn/runtime/task/ParameterMetaInfo/ParameterMetaInfo(java.lang.String,java.lang.Class,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+constructor:///jadex/bpmn/runtime/task/TaskMetaInfo/TaskMetaInfo(java.lang.String,jadex.bpmn.runtime.task.ParameterMetaInfo%5B%5D)|"
+    ],
+    "affectedLib": "net.sourceforge.jadex:jadex-kernel-bpmn:2.0-rc10",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.sourceforge.jadex:jadex-applications-bpmn:2.0-rc9",
+    "coordinatesV2": "net.sourceforge.jadex:jadex-applications-bpmn:2.0-rc10",
+    "caller": "|java+method:///jadex/bpmn/examples/execute/NotifierFrame$1$1/actionPerformed(java.awt.event.ActionEvent)|",
+    "called": "|java+method:///jadex/bpmn/runtime/handler/Notifier/notify(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///jadex/bpmn/examples/execute/NotifierFrame/dispose()|",
+      "|java+method:///jadex/bpmn/examples/execute/NotifierFrame$1/access$000(jadex.bpmn.examples.execute.NotifierFrame$1)|",
+      "|java+method:///jadex/bpmn/runtime/handler/Notifier/notify(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///jadex/bpmn/examples/execute/NotifierFrame/dispose()|",
+      "|java+method:///jadex/bpmn/runtime/handler/Notifier/notify(java.lang.Object)|"
+    ],
+    "affectedLib": "net.sourceforge.jadex:jadex-kernel-bpmn:2.0-rc10",
+    "change": "UPDATED"
+  }
+]

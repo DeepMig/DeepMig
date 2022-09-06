@@ -1,0 +1,66 @@
+[
+  {
+    "coordinatesV1": "com.foreach.across.modules:spring-security-acl-module:2.0.1.RELEASE",
+    "coordinatesV2": "com.foreach.across.modules:spring-security-acl-module:3.0.1.RELEASE",
+    "caller": "|java+method:///com/foreach/across/modules/spring/security/acl/config/AclSecurityConfiguration/aclAuthorizationStrategy()|",
+    "called": "|java+constructor:///org/springframework/security/acls/domain/AclAuthorizationStrategyImpl/AclAuthorizationStrategyImpl(org.springframework.security.core.GrantedAuthority%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/foreach/across/modules/spring/security/acl/config/AclSecurityConfiguration/sidRetrievalStrategy()|",
+      "|java+constructor:///com/foreach/across/modules/spring/security/acl/services/DefaultAclAuthorizationStrategy/DefaultAclAuthorizationStrategy(org.springframework.security.core.GrantedAuthority%5B%5D)|",
+      "|java+method:///com/foreach/across/modules/spring/security/acl/services/DefaultAclAuthorizationStrategy/setSidRetrievalStrategy(org.springframework.security.acls.model.SidRetrievalStrategy)|",
+      "|java+constructor:///org/springframework/security/core/authority/SimpleGrantedAuthority/SimpleGrantedAuthority(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/foreach/across/modules/spring/security/acl/config/AclSecurityConfiguration/sidRetrievalStrategy()|",
+      "|java+constructor:///org/springframework/security/acls/domain/AclAuthorizationStrategyImpl/AclAuthorizationStrategyImpl(org.springframework.security.core.GrantedAuthority%5B%5D)|",
+      "|java+constructor:///org/springframework/security/core/authority/SimpleGrantedAuthority/SimpleGrantedAuthority(java.lang.String)|",
+      "|java+method:///org/springframework/security/acls/domain/AclAuthorizationStrategyImpl/setSidRetrievalStrategy(org.springframework.security.acls.model.SidRetrievalStrategy)|"
+    ],
+    "affectedLib": "org.springframework.security:spring-security-acl:4.2.4.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.foreach.across.modules:spring-security-acl-module:2.0.1.RELEASE",
+    "coordinatesV2": "com.foreach.across.modules:spring-security-acl-module:3.0.1.RELEASE",
+    "caller": "|java+method:///com/foreach/across/modules/spring/security/acl/config/AclSecurityConfiguration/aclPermissionEvaluator()|",
+    "called": "|java+constructor:///org/springframework/security/acls/AclPermissionEvaluator/AclPermissionEvaluator(org.springframework.security.acls.model.AclService)|",
+    "v1Body": [
+      "|java+method:///org/springframework/security/acls/AclPermissionEvaluator/setSidRetrievalStrategy(org.springframework.security.acls.model.SidRetrievalStrategy)|",
+      "|java+constructor:///org/springframework/security/acls/AclPermissionEvaluator/AclPermissionEvaluator(org.springframework.security.acls.model.AclService)|",
+      "|java+method:///com/foreach/across/modules/spring/security/acl/config/AclSecurityConfiguration/aclService()|",
+      "|java+constructor:///com/foreach/across/modules/spring/security/acl/strategy/SecurityPrincipalSidRetrievalStrategy/SecurityPrincipalSidRetrievalStrategy()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/security/acls/AclPermissionEvaluator/setSidRetrievalStrategy(org.springframework.security.acls.model.SidRetrievalStrategy)|",
+      "|java+constructor:///org/springframework/security/acls/AclPermissionEvaluator/AclPermissionEvaluator(org.springframework.security.acls.model.AclService)|",
+      "|java+method:///com/foreach/across/modules/spring/security/acl/config/AclSecurityConfiguration/aclService()|",
+      "|java+method:///com/foreach/across/modules/spring/security/acl/config/AclSecurityConfiguration/aclPermissionFactory()|",
+      "|java+constructor:///com/foreach/across/modules/spring/security/acl/strategy/SecurityPrincipalSidRetrievalStrategy/SecurityPrincipalSidRetrievalStrategy()|",
+      "|java+method:///org/springframework/security/acls/AclPermissionEvaluator/setPermissionFactory(org.springframework.security.acls.domain.PermissionFactory)|"
+    ],
+    "affectedLib": "org.springframework.security:spring-security-acl:4.2.4.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.foreach.across.modules:spring-security-acl-module:2.0.1.RELEASE",
+    "coordinatesV2": "com.foreach.across.modules:spring-security-acl-module:3.0.1.RELEASE",
+    "caller": "|java+method:///com/foreach/across/modules/spring/security/acl/config/AclSecurityConfiguration/lookupStrategy()|",
+    "called": "|java+constructor:///org/springframework/security/acls/jdbc/BasicLookupStrategy/BasicLookupStrategy(javax.sql.DataSource,org.springframework.security.acls.model.AclCache,org.springframework.security.acls.domain.AclAuthorizationStrategy,org.springframework.security.acls.model.PermissionGrantingStrategy)|",
+    "v1Body": [
+      "|java+method:///com/foreach/across/modules/spring/security/acl/config/AclSecurityConfiguration/aclCache()|",
+      "|java+constructor:///org/springframework/security/acls/jdbc/BasicLookupStrategy/BasicLookupStrategy(javax.sql.DataSource,org.springframework.security.acls.model.AclCache,org.springframework.security.acls.domain.AclAuthorizationStrategy,org.springframework.security.acls.model.PermissionGrantingStrategy)|",
+      "|java+method:///com/foreach/across/modules/spring/security/acl/config/AclSecurityConfiguration/aclAuthorizationStrategy()|",
+      "|java+method:///com/foreach/across/modules/spring/security/acl/config/AclSecurityConfiguration/permissionGrantingStrategy()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/foreach/across/modules/spring/security/acl/config/AclSecurityConfiguration/aclCache()|",
+      "|java+constructor:///org/springframework/security/acls/jdbc/BasicLookupStrategy/BasicLookupStrategy(javax.sql.DataSource,org.springframework.security.acls.model.AclCache,org.springframework.security.acls.domain.AclAuthorizationStrategy,org.springframework.security.acls.model.PermissionGrantingStrategy)|",
+      "|java+method:///com/foreach/across/modules/spring/security/acl/config/AclSecurityConfiguration/aclAuthorizationStrategy()|",
+      "|java+method:///org/springframework/security/acls/jdbc/BasicLookupStrategy/setPermissionFactory(org.springframework.security.acls.domain.PermissionFactory)|",
+      "|java+method:///com/foreach/across/modules/spring/security/acl/config/AclSecurityConfiguration/permissionGrantingStrategy()|",
+      "|java+method:///com/foreach/across/modules/spring/security/acl/config/AclSecurityConfiguration/aclPermissionFactory()|"
+    ],
+    "affectedLib": "org.springframework.security:spring-security-acl:4.2.4.RELEASE",
+    "change": "UPDATED"
+  }
+]

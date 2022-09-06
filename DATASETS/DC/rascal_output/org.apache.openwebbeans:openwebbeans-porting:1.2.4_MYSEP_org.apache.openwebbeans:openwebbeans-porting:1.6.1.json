@@ -1,0 +1,43 @@
+[
+  {
+    "coordinatesV1": "org.apache.openwebbeans:openwebbeans-porting:1.2.4",
+    "coordinatesV2": "org.apache.openwebbeans:openwebbeans-porting:1.6.1",
+    "caller": "|java+method:///org/apache/webbeans/test/tck/ContextsImpl/getDependentContext()|",
+    "called": "|java+method:///org/apache/webbeans/config/WebBeansContext/getInstance()|",
+    "v1Body": [
+      "|java+method:///org/apache/webbeans/context/ContextFactory/getStandardContext(java.lang.Class)|",
+      "|java+method:///org/apache/webbeans/config/WebBeansContext/getInstance()|",
+      "|java+method:///org/apache/webbeans/config/WebBeansContext/getContextFactory()|",
+      "|java+method:///org/apache/webbeans/test/tck/ContextsImpl/getDependentContext()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/webbeans/container/BeanManagerImpl/getContext(java.lang.Class)|",
+      "|java+method:///org/apache/webbeans/config/WebBeansContext/getInstance()|",
+      "|java+method:///org/apache/webbeans/config/WebBeansContext/getBeanManagerImpl()|",
+      "|java+method:///org/apache/webbeans/test/tck/ContextsImpl/getDependentContext()|"
+    ],
+    "affectedLib": "org.apache.openwebbeans:openwebbeans-impl:1.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.openwebbeans:openwebbeans-porting:1.2.4",
+    "coordinatesV2": "org.apache.openwebbeans:openwebbeans-porting:1.6.1",
+    "caller": "|java+method:///org/apache/webbeans/test/tck/ContextsImpl/getRequestContext()|",
+    "called": "|java+method:///org/apache/webbeans/config/WebBeansContext/getInstance()|",
+    "v1Body": [
+      "|java+method:///org/apache/webbeans/context/ContextFactory/getStandardContext(java.lang.Class)|",
+      "|java+method:///org/apache/webbeans/context/ContextFactory/initRequestContext(java.lang.Object)|",
+      "|java+method:///org/apache/webbeans/test/tck/ContextsImpl/getRequestContext()|",
+      "|java+method:///org/apache/webbeans/config/WebBeansContext/getInstance()|",
+      "|java+method:///org/apache/webbeans/config/WebBeansContext/getContextFactory()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/webbeans/spi/ContextsService/getCurrentContext(java.lang.Class)|",
+      "|java+method:///org/apache/webbeans/config/WebBeansContext/getContextsService()|",
+      "|java+method:///org/apache/webbeans/test/tck/ContextsImpl/getRequestContext()|",
+      "|java+method:///org/apache/webbeans/config/WebBeansContext/getInstance()|"
+    ],
+    "affectedLib": "org.apache.openwebbeans:openwebbeans-impl:1.6.1",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,174 @@
+[
+  {
+    "coordinatesV1": "net.liftweb:lift-mapper_2.11:3.2.0",
+    "coordinatesV2": "net.liftweb:lift-mapper_2.11:3.3.0-M2",
+    "caller": "|java+method:///net/liftweb/mapper/MappedPassword/match_$qmark(java.lang.String)|",
+    "called": "|java+method:///org/mindrot/jbcrypt/BCrypt/checkpw(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///net/liftweb/mapper/MappedPassword/net$liftweb$mapper$MappedPassword$$salt_i()|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+constructor:///scala/collection/mutable/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///net/liftweb/mapper/MappedPassword/net$liftweb$mapper$MappedPassword$$password()|",
+      "|java+method:///net/liftweb/util/BCrypt/checkpw(java.lang.String,java.lang.String)|",
+      "|java+method:///scala/collection/mutable/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///net/liftweb/util/FatLazy/get()|",
+      "|java+method:///net/liftweb/util/Helpers$/hash(java.lang.String)|",
+      "|java+method:///scala/collection/mutable/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///net/liftweb/mapper/MappedPassword/net$liftweb$mapper$MappedPassword$$salt_i()|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///org/mindrot/jbcrypt/BCrypt/checkpw(java.lang.String,java.lang.String)|",
+      "|java+constructor:///scala/collection/mutable/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///net/liftweb/mapper/MappedPassword/net$liftweb$mapper$MappedPassword$$password()|",
+      "|java+method:///scala/collection/mutable/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///net/liftweb/util/FatLazy/get()|",
+      "|java+method:///net/liftweb/util/Helpers$/hash(java.lang.String)|",
+      "|java+method:///scala/collection/mutable/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.mindrot:jbcrypt:0.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.liftweb:lift-mapper_2.11:3.2.0",
+    "coordinatesV2": "net.liftweb:lift-mapper_2.11:3.3.0-M2",
+    "caller": "|java+method:///net/liftweb/mapper/MappedPassword/real_convertToJDBCFriendly(java.lang.String)|",
+    "called": "|java+method:///org/mindrot/jbcrypt/BCrypt/hashpw(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///net/liftweb/common/Box/map(scala.Function1)|",
+      "|java+method:///net/liftweb/mapper/MappedPassword$/bcryptStrength()|",
+      "|java+constructor:///net/liftweb/mapper/MappedPassword$$anonfun$real_convertToJDBCFriendly$1/MappedPassword$$anonfun$real_convertToJDBCFriendly$1(net.liftweb.mapper.MappedPassword)|",
+      "|java+constructor:///net/liftweb/mapper/MappedPassword$$anonfun$real_convertToJDBCFriendly$2/MappedPassword$$anonfun$real_convertToJDBCFriendly$2(net.liftweb.mapper.MappedPassword)|",
+      "|java+method:///net/liftweb/common/Box/openOr(scala.Function0)|",
+      "|java+method:///net/liftweb/util/BCrypt/hashpw(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///net/liftweb/common/Box/map(scala.Function1)|",
+      "|java+method:///org/mindrot/jbcrypt/BCrypt/hashpw(java.lang.String,java.lang.String)|",
+      "|java+method:///net/liftweb/mapper/MappedPassword$/bcryptStrength()|",
+      "|java+method:///net/liftweb/common/Box/openOr(scala.Function0)|",
+      "|java+constructor:///net/liftweb/mapper/MappedPassword$$anonfun$real_convertToJDBCFriendly$1/MappedPassword$$anonfun$real_convertToJDBCFriendly$1(net.liftweb.mapper.MappedPassword)|",
+      "|java+constructor:///net/liftweb/mapper/MappedPassword$$anonfun$real_convertToJDBCFriendly$2/MappedPassword$$anonfun$real_convertToJDBCFriendly$2(net.liftweb.mapper.MappedPassword)|"
+    ],
+    "affectedLib": "org.mindrot:jbcrypt:0.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.liftweb:lift-mapper_2.11:3.2.0",
+    "coordinatesV2": "net.liftweb:lift-mapper_2.11:3.3.0-M2",
+    "caller": "|java+method:///net/liftweb/mapper/MappedPassword$$anonfun$4/apply()|",
+    "called": "|java+method:///org/mindrot/jbcrypt/BCrypt/gensalt()|",
+    "v1Body": [
+      "|java+method:///net/liftweb/util/BCrypt/gensalt()|",
+      "|java+method:///net/liftweb/mapper/MappedPassword$$anonfun$4/apply()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/mindrot/jbcrypt/BCrypt/gensalt()|",
+      "|java+method:///net/liftweb/mapper/MappedPassword$$anonfun$4/apply()|"
+    ],
+    "affectedLib": "org.mindrot:jbcrypt:0.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.liftweb:lift-mapper_2.11:3.2.0",
+    "coordinatesV2": "net.liftweb:lift-mapper_2.11:3.3.0-M2",
+    "caller": "|java+method:///net/liftweb/mapper/MappedPassword$$anonfun$3/apply(int)|",
+    "called": "|java+method:///org/mindrot/jbcrypt/BCrypt/gensalt(int)|",
+    "v1Body": [
+      "|java+method:///net/liftweb/util/BCrypt/gensalt(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/mindrot/jbcrypt/BCrypt/gensalt(int)|"
+    ],
+    "affectedLib": "org.mindrot:jbcrypt:0.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.liftweb:lift-mapper_2.11:3.2.0",
+    "coordinatesV2": "net.liftweb:lift-mapper_2.11:3.3.0-M2",
+    "caller": "|java+method:///net/liftweb/mapper/MappedPassword/real_i_set_$bang(java.lang.String)|",
+    "called": "|java+method:///org/mindrot/jbcrypt/BCrypt/hashpw(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///net/liftweb/mapper/MappedPassword/net$liftweb$mapper$MappedPassword$$salt_i()|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///net/liftweb/mapper/MappedPassword$/blankPw()|",
+      "|java+constructor:///net/liftweb/mapper/MappedPassword$$anonfun$4/MappedPassword$$anonfun$4(net.liftweb.mapper.MappedPassword)|",
+      "|java+constructor:///net/liftweb/mapper/MappedPassword$$anonfun$3/MappedPassword$$anonfun$3(net.liftweb.mapper.MappedPassword)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///net/liftweb/common/Box/map(scala.Function1)|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+constructor:///scala/collection/mutable/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///net/liftweb/mapper/MappedPassword$/bcryptStrength()|",
+      "|java+method:///scala/collection/mutable/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///net/liftweb/util/FatLazy/set(java.lang.Object)|",
+      "|java+method:///net/liftweb/mapper/MappedPassword/dirty_$qmark(boolean)|",
+      "|java+method:///net/liftweb/mapper/MappedPassword/net$liftweb$mapper$MappedPassword$$password()|",
+      "|java+method:///net/liftweb/mapper/MappedPassword/invalidMsg_$eq(java.lang.String)|",
+      "|java+method:///net/liftweb/common/Box/openOr(scala.Function0)|",
+      "|java+method:///net/liftweb/util/BCrypt/hashpw(java.lang.String,java.lang.String)|",
+      "|java+method:///net/liftweb/mapper/MappedPassword/invalidPw_$eq(boolean)|",
+      "|java+method:///net/liftweb/http/S$/$qmark(java.lang.String)|",
+      "|java+method:///scala/collection/mutable/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///net/liftweb/mapper/MappedPassword/net$liftweb$mapper$MappedPassword$$salt_i()|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///net/liftweb/mapper/MappedPassword$/blankPw()|",
+      "|java+constructor:///net/liftweb/mapper/MappedPassword$$anonfun$4/MappedPassword$$anonfun$4(net.liftweb.mapper.MappedPassword)|",
+      "|java+constructor:///net/liftweb/mapper/MappedPassword$$anonfun$3/MappedPassword$$anonfun$3(net.liftweb.mapper.MappedPassword)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///net/liftweb/common/Box/map(scala.Function1)|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+method:///org/mindrot/jbcrypt/BCrypt/hashpw(java.lang.String,java.lang.String)|",
+      "|java+constructor:///scala/collection/mutable/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///net/liftweb/mapper/MappedPassword$/bcryptStrength()|",
+      "|java+method:///scala/collection/mutable/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///net/liftweb/common/Box/openOr(scala.Function0)|",
+      "|java+method:///net/liftweb/util/FatLazy/set(java.lang.Object)|",
+      "|java+method:///net/liftweb/mapper/MappedPassword/dirty_$qmark(boolean)|",
+      "|java+method:///net/liftweb/mapper/MappedPassword/net$liftweb$mapper$MappedPassword$$password()|",
+      "|java+method:///net/liftweb/mapper/MappedPassword/invalidMsg_$eq(java.lang.String)|",
+      "|java+method:///net/liftweb/mapper/MappedPassword/invalidPw_$eq(boolean)|",
+      "|java+method:///net/liftweb/http/S$/$qmark(java.lang.String)|",
+      "|java+method:///scala/collection/mutable/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.mindrot:jbcrypt:0.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.liftweb:lift-mapper_2.11:3.2.0",
+    "coordinatesV2": "net.liftweb:lift-mapper_2.11:3.3.0-M2",
+    "caller": "|java+method:///net/liftweb/mapper/MappedPassword$$anonfun$real_convertToJDBCFriendly$2/apply()|",
+    "called": "|java+method:///org/mindrot/jbcrypt/BCrypt/gensalt()|",
+    "v1Body": [
+      "|java+method:///net/liftweb/mapper/MappedPassword$$anonfun$real_convertToJDBCFriendly$2/apply()|",
+      "|java+method:///net/liftweb/util/BCrypt/gensalt()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/mindrot/jbcrypt/BCrypt/gensalt()|",
+      "|java+method:///net/liftweb/mapper/MappedPassword$$anonfun$real_convertToJDBCFriendly$2/apply()|"
+    ],
+    "affectedLib": "org.mindrot:jbcrypt:0.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.liftweb:lift-mapper_2.11:3.2.0",
+    "coordinatesV2": "net.liftweb:lift-mapper_2.11:3.3.0-M2",
+    "caller": "|java+method:///net/liftweb/mapper/MappedPassword$$anonfun$real_convertToJDBCFriendly$1/apply(int)|",
+    "called": "|java+method:///org/mindrot/jbcrypt/BCrypt/gensalt(int)|",
+    "v1Body": [
+      "|java+method:///net/liftweb/util/BCrypt/gensalt(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/mindrot/jbcrypt/BCrypt/gensalt(int)|"
+    ],
+    "affectedLib": "org.mindrot:jbcrypt:0.4",
+    "change": "ADDED"
+  }
+]

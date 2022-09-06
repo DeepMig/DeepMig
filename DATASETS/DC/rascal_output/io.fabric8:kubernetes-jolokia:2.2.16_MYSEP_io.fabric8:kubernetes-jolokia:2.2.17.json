@@ -1,0 +1,94 @@
+[
+  {
+    "coordinatesV1": "io.fabric8:kubernetes-jolokia:2.2.16",
+    "coordinatesV2": "io.fabric8:kubernetes-jolokia:2.2.17",
+    "caller": "|java+constructor:///io/fabric8/kubernetes/jolokia/JolokiaClients/JolokiaClients()|",
+    "called": "|java+constructor:///io/fabric8/kubernetes/client/DefaultKubernetesClient/DefaultKubernetesClient()|",
+    "v1Body": [
+      "|java+constructor:///io/fabric8/kubernetes/jolokia/JolokiaClients/JolokiaClients(io.fabric8.kubernetes.api.KubernetesClient)|",
+      "|java+constructor:///io/fabric8/kubernetes/api/KubernetesClient/KubernetesClient()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/fabric8/kubernetes/jolokia/JolokiaClients/JolokiaClients(io.fabric8.kubernetes.client.KubernetesClient)|",
+      "|java+constructor:///io/fabric8/kubernetes/client/DefaultKubernetesClient/DefaultKubernetesClient()|"
+    ],
+    "affectedLib": "io.fabric8:kubernetes-client:1.2.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.fabric8:kubernetes-jolokia:2.2.16",
+    "coordinatesV2": "io.fabric8:kubernetes-jolokia:2.2.17",
+    "caller": "|java+method:///io/fabric8/kubernetes/jolokia/JolokiaClients/clientForService(io.fabric8.kubernetes.api.model.Service)|",
+    "called": "|java+method:///io/fabric8/kubernetes/api/KubernetesHelper/getPodsForService(io.fabric8.kubernetes.api.model.Service,java.lang.Iterable)|",
+    "v1Body": [
+      "|java+method:///io/fabric8/kubernetes/jolokia/JolokiaClients/clientForPod(java.lang.Iterable)|",
+      "|java+method:///io/fabric8/kubernetes/api/KubernetesClient/getPodsForService(io.fabric8.kubernetes.api.model.Service)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/fabric8/kubernetes/client/KubernetesClient/pods()|",
+      "|java+method:///io/fabric8/kubernetes/jolokia/JolokiaClients/clientForPod(java.lang.Iterable)|",
+      "|java+method:///io/fabric8/kubernetes/api/KubernetesHelper/getPodsForService(io.fabric8.kubernetes.api.model.Service,java.lang.Iterable)|",
+      "|java+method:///io/fabric8/kubernetes/api/model/PodList/getItems()|",
+      "|java+method:///io/fabric8/kubernetes/client/dsl/Operation/list()|"
+    ],
+    "affectedLib": "io.fabric8:kubernetes-api:2.2.17",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.fabric8:kubernetes-jolokia:2.2.16",
+    "coordinatesV2": "io.fabric8:kubernetes-jolokia:2.2.17",
+    "caller": "|java+method:///io/fabric8/kubernetes/jolokia/JolokiaClients/clientsForReplicationController(io.fabric8.kubernetes.api.model.ReplicationController)|",
+    "called": "|java+method:///io/fabric8/kubernetes/api/KubernetesHelper/getPodsForReplicationController(io.fabric8.kubernetes.api.model.ReplicationController,java.lang.Iterable)|",
+    "v1Body": [
+      "|java+method:///io/fabric8/kubernetes/api/KubernetesClient/getPodsForReplicationController(io.fabric8.kubernetes.api.model.ReplicationController)|",
+      "|java+method:///io/fabric8/kubernetes/jolokia/JolokiaClients/clientsForPod(java.lang.Iterable)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/fabric8/kubernetes/client/KubernetesClient/pods()|",
+      "|java+method:///io/fabric8/kubernetes/jolokia/JolokiaClients/clientsForPod(java.lang.Iterable)|",
+      "|java+method:///io/fabric8/kubernetes/api/model/PodList/getItems()|",
+      "|java+method:///io/fabric8/kubernetes/api/KubernetesHelper/getPodsForReplicationController(io.fabric8.kubernetes.api.model.ReplicationController,java.lang.Iterable)|",
+      "|java+method:///io/fabric8/kubernetes/client/dsl/Operation/list()|"
+    ],
+    "affectedLib": "io.fabric8:kubernetes-api:2.2.17",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.fabric8:kubernetes-jolokia:2.2.16",
+    "coordinatesV2": "io.fabric8:kubernetes-jolokia:2.2.17",
+    "caller": "|java+method:///io/fabric8/kubernetes/jolokia/JolokiaClients/clientForReplicationController(io.fabric8.kubernetes.api.model.ReplicationController)|",
+    "called": "|java+method:///io/fabric8/kubernetes/api/KubernetesHelper/getPodsForReplicationController(io.fabric8.kubernetes.api.model.ReplicationController,java.lang.Iterable)|",
+    "v1Body": [
+      "|java+method:///io/fabric8/kubernetes/api/KubernetesClient/getPodsForReplicationController(io.fabric8.kubernetes.api.model.ReplicationController)|",
+      "|java+method:///io/fabric8/kubernetes/jolokia/JolokiaClients/clientForPod(java.lang.Iterable)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/fabric8/kubernetes/client/KubernetesClient/pods()|",
+      "|java+method:///io/fabric8/kubernetes/jolokia/JolokiaClients/clientForPod(java.lang.Iterable)|",
+      "|java+method:///io/fabric8/kubernetes/api/model/PodList/getItems()|",
+      "|java+method:///io/fabric8/kubernetes/api/KubernetesHelper/getPodsForReplicationController(io.fabric8.kubernetes.api.model.ReplicationController,java.lang.Iterable)|",
+      "|java+method:///io/fabric8/kubernetes/client/dsl/Operation/list()|"
+    ],
+    "affectedLib": "io.fabric8:kubernetes-api:2.2.17",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.fabric8:kubernetes-jolokia:2.2.16",
+    "coordinatesV2": "io.fabric8:kubernetes-jolokia:2.2.17",
+    "caller": "|java+method:///io/fabric8/kubernetes/jolokia/JolokiaClients/clientsForService(io.fabric8.kubernetes.api.model.Service)|",
+    "called": "|java+method:///io/fabric8/kubernetes/api/KubernetesHelper/getPodsForService(io.fabric8.kubernetes.api.model.Service,java.lang.Iterable)|",
+    "v1Body": [
+      "|java+method:///io/fabric8/kubernetes/api/KubernetesClient/getPodsForService(io.fabric8.kubernetes.api.model.Service)|",
+      "|java+method:///io/fabric8/kubernetes/jolokia/JolokiaClients/clientsForPod(java.lang.Iterable)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/fabric8/kubernetes/client/KubernetesClient/pods()|",
+      "|java+method:///io/fabric8/kubernetes/api/KubernetesHelper/getPodsForService(io.fabric8.kubernetes.api.model.Service,java.lang.Iterable)|",
+      "|java+method:///io/fabric8/kubernetes/jolokia/JolokiaClients/clientsForPod(java.lang.Iterable)|",
+      "|java+method:///io/fabric8/kubernetes/api/model/PodList/getItems()|",
+      "|java+method:///io/fabric8/kubernetes/client/dsl/Operation/list()|"
+    ],
+    "affectedLib": "io.fabric8:kubernetes-api:2.2.17",
+    "change": "UPDATED"
+  }
+]

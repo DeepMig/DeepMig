@@ -1,0 +1,140 @@
+[
+  {
+    "coordinatesV1": "org.actframework:act-sql-common:1.2.1",
+    "coordinatesV2": "org.actframework:act-sql-common:1.3.0",
+    "caller": "|java+constructor:///act/db/sql/datasource/SharedDataSourceProvider/SharedDataSourceProvider(java.lang.String,act.app.DbServiceManager)|",
+    "called": "|java+method:///act/app/DbServiceManager/dbService(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///act/app/App/jobManager()|",
+      "|java+constructor:///act/db/sql/datasource/SharedDataSourceProvider$1/SharedDataSourceProvider$1(act.db.sql.datasource.SharedDataSourceProvider,act.db.sql.SqlDbService,java.lang.String)|",
+      "|java+method:///act/app/DbServiceManager/app()|",
+      "|java+method:///org/osgl/$/cast(java.lang.Object)|",
+      "|java+method:///act/job/AppJobManager/on(act.app.event.AppEventId,java.lang.Runnable,boolean)|",
+      "|java+constructor:///act/db/sql/DataSourceProvider/DataSourceProvider()|",
+      "|java+method:///org/osgl/util/E/invalidConfigurationIf(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///act/app/DbServiceManager/dbService(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///act/app/App/jobManager()|",
+      "|java+method:///act/app/DbServiceManager/app()|",
+      "|java+method:///org/osgl/$/cast(java.lang.Object)|",
+      "|java+constructor:///act/db/sql/DataSourceProvider/DataSourceProvider()|",
+      "|java+method:///org/osgl/util/E/invalidConfigurationIf(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///act/app/DbServiceManager/dbService(java.lang.String)|",
+      "|java+constructor:///act/db/sql/datasource/SharedDataSourceProvider$1/SharedDataSourceProvider$1(act.db.sql.datasource.SharedDataSourceProvider,act.db.sql.SqlDbService,java.lang.String)|",
+      "|java+method:///act/job/JobManager/on(act.app.event.SysEventId,java.lang.Runnable,boolean)|"
+    ],
+    "affectedLib": "org.actframework:act:1.7.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.actframework:act-sql-common:1.2.1",
+    "coordinatesV2": "org.actframework:act-sql-common:1.3.0",
+    "caller": "|java+constructor:///act/db/sql/SqlDbService$2/SqlDbService$2(act.db.sql.SqlDbService,java.lang.CharSequence,java.util.Map)|",
+    "called": "|java+constructor:///act/event/SysEventListenerBase/SysEventListenerBase(java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+constructor:///act/event/AppEventListenerBase/AppEventListenerBase(java.lang.CharSequence)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///act/event/SysEventListenerBase/SysEventListenerBase(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "org.actframework:act:1.7.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.actframework:act-sql-common:1.2.1",
+    "coordinatesV2": "org.actframework:act-sql-common:1.3.0",
+    "caller": "|java+constructor:///act/db/sql/SqlDbService$1/SqlDbService$1(act.db.sql.SqlDbService,java.lang.String,act.db.sql.SqlDbService,java.util.Map,act.app.App)|",
+    "called": "|java+constructor:///act/event/SysEventListenerBase/SysEventListenerBase()|",
+    "v1Body": [
+      "|java+constructor:///act/event/AppEventListenerBase/AppEventListenerBase()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///act/event/SysEventListenerBase/SysEventListenerBase()|"
+    ],
+    "affectedLib": "org.actframework:act:1.7.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.actframework:act-sql-common:1.2.1",
+    "coordinatesV2": "org.actframework:act-sql-common:1.3.0",
+    "caller": "|java+constructor:///act/db/sql/SqlDbService/SqlDbService(java.lang.String,act.app.App,java.util.Map)|",
+    "called": "|java+method:///act/event/EventBus/bindAsync(act.app.event.SysEventId,act.app.event.SysEventListener)|",
+    "v1Body": [
+      "|java+method:///org/osgl/util/S/builder(java.lang.String)|",
+      "|java+method:///act/Act/isDev()|",
+      "|java+method:///act/app/App/eventBus()|",
+      "|java+constructor:///act/db/sql/SqlDbService$1/SqlDbService$1(act.db.sql.SqlDbService,java.lang.String,act.db.sql.SqlDbService,java.util.Map,act.app.App)|",
+      "|java+constructor:///act/db/DbService/DbService(java.lang.String,act.app.App)|",
+      "|java+method:///act/event/EventBus/bindAsync(act.app.event.AppEventId,act.app.event.AppEventListener)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///act/db/sql/SqlDbService/supportDdl()|",
+      "|java+constructor:///act/db/sql/SqlDbService$2/SqlDbService$2(act.db.sql.SqlDbService,java.lang.CharSequence,java.util.Map)|",
+      "|java+method:///act/event/EventBus/bind(act.app.event.AppEventId,act.app.event.AppEventListener)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/osgl/util/S/builder(java.lang.String)|",
+      "|java+method:///act/Act/isDev()|",
+      "|java+method:///act/app/App/eventBus()|",
+      "|java+constructor:///act/db/sql/SqlDbService$1/SqlDbService$1(act.db.sql.SqlDbService,java.lang.String,act.db.sql.SqlDbService,java.util.Map,act.app.App)|",
+      "|java+constructor:///act/db/DbService/DbService(java.lang.String,act.app.App)|",
+      "|java+method:///act/event/EventBus/bindAsync(act.app.event.SysEventId,act.app.event.SysEventListener)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///act/db/sql/SqlDbService/supportDdl()|",
+      "|java+method:///act/event/EventBus/bind(act.app.event.SysEventId,act.app.event.SysEventListener)|",
+      "|java+constructor:///act/db/sql/SqlDbService$2/SqlDbService$2(act.db.sql.SqlDbService,java.lang.CharSequence,java.util.Map)|"
+    ],
+    "affectedLib": "org.actframework:act:1.7.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.actframework:act-sql-common:1.2.1",
+    "coordinatesV2": "org.actframework:act-sql-common:1.3.0",
+    "caller": "|java+method:///act/db/sql/SqlDbService$1/run()|",
+    "called": "|java+method:///act/job/JobManager/on(act.app.event.SysEventId,java.lang.Runnable)|",
+    "v1Body": [
+      "|java+method:///act/db/sql/SqlDbService/access$600()|",
+      "|java+method:///act/app/App/jobManager()|",
+      "|java+constructor:///act/db/sql/SqlDbServiceConfig/SqlDbServiceConfig(java.lang.String,java.util.Map)|",
+      "|java+method:///act/db/sql/SqlDbService/access$902(act.db.sql.SqlDbService,boolean)|",
+      "|java+method:///act/db/sql/SqlDbService/supportDdl()|",
+      "|java+method:///act/db/sql/SqlDbService/access$1000()|",
+      "|java+method:///act/db/sql/SqlDbService/access$1100()|",
+      "|java+method:///act/event/EventBus/emit(act.event.ActEvent)|",
+      "|java+constructor:///act/db/sql/SqlDbService$1$1/SqlDbService$1$1(act.db.sql.SqlDbService$1,boolean)|",
+      "|java+method:///org/osgl/util/E/invalidConfiguration(java.lang.Throwable,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///act/db/sql/SqlDbService/access$300()|",
+      "|java+method:///act/db/sql/SqlDbService/access$400()|",
+      "|java+method:///act/db/sql/SqlDbService/access$500(act.db.sql.SqlDbService)|",
+      "|java+method:///act/db/sql/SqlDbService/configured()|",
+      "|java+method:///act/job/AppJobManager/on(act.app.event.AppEventId,java.lang.Runnable)|",
+      "|java+method:///org/osgl/logging/Logger/isTraceEnabled()|",
+      "|java+constructor:///act/db/DbServiceInitialized/DbServiceInitialized(act.db.DbService)|",
+      "|java+method:///act/app/App/eventBus()|",
+      "|java+method:///act/db/sql/SqlDbService/access$200()|",
+      "|java+method:///act/db/sql/SqlDbServiceConfig/createDdl()|",
+      "|java+method:///org/osgl/logging/Logger/trace(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///act/db/sql/SqlDbServiceConfig/isSharedDatasource()|"
+    ],
+    "v2Body": [
+      "|java+method:///act/db/sql/SqlDbService$1/isTraceEnabled()|",
+      "|java+constructor:///act/db/sql/SqlDbServiceConfig/SqlDbServiceConfig(java.lang.String,java.util.Map)|",
+      "|java+method:///act/db/sql/SqlDbService/supportDdl()|",
+      "|java+method:///act/db/sql/SqlDbService/configured()|",
+      "|java+method:///act/db/sql/SqlDbService$1/trace(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///act/db/sql/SqlDbService$1$1/SqlDbService$1$1(act.db.sql.SqlDbService$1,boolean)|",
+      "|java+method:///org/osgl/util/E/invalidConfiguration(java.lang.Throwable,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///act/event/EventBus/emit(act.event.ActEvent,java.lang.Object%5B%5D)|",
+      "|java+method:///act/job/JobManager/on(act.app.event.SysEventId,java.lang.Runnable)|",
+      "|java+method:///act/app/App/jobManager()|",
+      "|java+method:///act/db/sql/SqlDbService/access$202(act.db.sql.SqlDbService,boolean)|",
+      "|java+method:///act/db/sql/SqlDbService/access$000(act.db.sql.SqlDbService)|",
+      "|java+constructor:///act/db/DbServiceInitialized/DbServiceInitialized(act.db.DbService)|",
+      "|java+method:///act/app/App/eventBus()|",
+      "|java+method:///act/db/sql/SqlDbServiceConfig/createDdl()|",
+      "|java+method:///act/db/sql/SqlDbServiceConfig/isSharedDatasource()|"
+    ],
+    "affectedLib": "org.actframework:act:1.7.0",
+    "change": "UPDATED"
+  }
+]

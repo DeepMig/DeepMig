@@ -1,0 +1,207 @@
+[
+  {
+    "coordinatesV1": "com.enigmastation:ci-bayes:2.0.0.RELEASE",
+    "coordinatesV2": "com.enigmastation:ci-bayes:1.0.8",
+    "caller": "|java+constructor:///com/enigmastation/classifier/impl/ClassifierImpl/ClassifierImpl()|",
+    "called": "|java+constructor:///javolution/util/FastSet/FastSet()|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+method:///java/lang/Class/newInstance()|",
+      "|java+method:///com/enigmastation/classifier/impl/ClassifierImpl/createFeatureMap()|",
+      "|java+method:///java/lang/InstantiationException/getCause()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///com/enigmastation/classifier/impl/ClassifierImpl/createClassifierMap()|",
+      "|java+constructor:///javolution/util/FastSet/FastSet()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///com/enigmastation/extractors/impl/StemmingWordLister/StemmingWordLister()|",
+      "|java+method:///com/enigmastation/classifier/impl/WordListerLocator/locate()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/enigmastation/classifier/impl/ClassifierImpl/init()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.javolution:javolution:5.2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.enigmastation:ci-bayes:2.0.0.RELEASE",
+    "coordinatesV2": "com.enigmastation:ci-bayes:1.0.8",
+    "caller": "|java+method:///com/enigmastation/extractors/impl/SimpleWordLister/getUniqueWords(java.lang.Object)|",
+    "called": "|java+constructor:///javolution/util/FastSet/FastSet()|",
+    "v1Body": [
+      "|java+constructor:///javolution/util/FastSet/FastSet()|",
+      "|java+method:///com/enigmastation/extractors/impl/SimpleWordLister/addWords(java.lang.Object,java.util.Collection)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/collect/Sets/newHashSet()|",
+      "|java+method:///com/enigmastation/extractors/impl/SimpleWordLister/addWords(java.lang.Object,java.util.Collection)|"
+    ],
+    "affectedLib": "org.javolution:javolution:5.2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.enigmastation:ci-bayes:2.0.0.RELEASE",
+    "coordinatesV2": "com.enigmastation:ci-bayes:1.0.8",
+    "caller": "|java+constructor:///com/enigmastation/classifier/impl/NaiveClassifierImpl/NaiveClassifierImpl()|",
+    "called": "|java+constructor:///javolution/util/FastSet/FastSet()|",
+    "v1Body": [
+      "|java+constructor:///javolution/util/FastMap/FastMap()|",
+      "|java+constructor:///com/enigmastation/classifier/impl/ClassifierImpl/ClassifierImpl()|",
+      "|java+constructor:///javolution/util/FastSet/FastSet()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/collect/MapMaker/makeMap()|",
+      "|java+constructor:///com/google/common/collect/MapMaker/MapMaker()|",
+      "|java+method:///com/google/common/collect/Sets/newHashSet()|",
+      "|java+constructor:///com/enigmastation/classifier/impl/ClassifierImpl/ClassifierImpl()|"
+    ],
+    "affectedLib": "org.javolution:javolution:5.2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.enigmastation:ci-bayes:2.0.0.RELEASE",
+    "coordinatesV2": "com.enigmastation:ci-bayes:1.0.8",
+    "caller": "|java+initializer:///com/enigmastation/extractors/impl/LuceneStemmingWordLister/LuceneStemmingWordLister$initializer|",
+    "called": "|java+constructor:///javolution/util/FastSet/FastSet()|",
+    "v1Body": [
+      "|java+constructor:///javolution/util/FastSet/FastSet()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/collect/Sets/newHashSet()|"
+    ],
+    "affectedLib": "org.javolution:javolution:5.2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.enigmastation:ci-bayes:2.0.0.RELEASE",
+    "coordinatesV2": "com.enigmastation:ci-bayes:1.0.8",
+    "caller": "|java+constructor:///com/enigmastation/classifier/impl/FisherClassifierImpl/FisherClassifierImpl()|",
+    "called": "|java+constructor:///javolution/util/FastMap/FastMap()|",
+    "v1Body": [
+      "|java+constructor:///javolution/util/FastMap/FastMap()|",
+      "|java+constructor:///com/enigmastation/classifier/impl/NaiveClassifierImpl/NaiveClassifierImpl()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/collect/MapMaker/makeMap()|",
+      "|java+constructor:///com/google/common/collect/MapMaker/MapMaker()|",
+      "|java+constructor:///com/enigmastation/classifier/impl/NaiveClassifierImpl/NaiveClassifierImpl()|"
+    ],
+    "affectedLib": "org.javolution:javolution:5.2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.enigmastation:ci-bayes:2.0.0.RELEASE",
+    "coordinatesV2": "com.enigmastation:ci-bayes:1.0.8",
+    "caller": "|java+constructor:///com/enigmastation/resolvers/impl/MemoryResolver/MemoryResolver()|",
+    "called": "|java+constructor:///javolution/util/FastMap/FastMap()|",
+    "v1Body": [
+      "|java+constructor:///javolution/util/FastMap/FastMap()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/collect/MapMaker/makeMap()|",
+      "|java+constructor:///com/google/common/collect/MapMaker/MapMaker()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.javolution:javolution:5.2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.enigmastation:ci-bayes:1.0.8",
+    "coordinatesV2": "com.enigmastation:ci-bayes:2.0.0.RELEASE",
+    "caller": "|java+method:///com/enigmastation/classifier/impl/ClassifierImpl/addListener(com.enigmastation.classifier.ClassifierListener)|",
+    "called": "|java+method:///com/google/common/collect/Sets/newHashSet()|",
+    "v1Body": [
+      "|java+method:///java/util/Set/add(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/collect/Sets/newHashSet()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:r06",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.enigmastation:ci-bayes:1.0.8",
+    "coordinatesV2": "com.enigmastation:ci-bayes:2.0.0.RELEASE",
+    "caller": "|java+method:///com/enigmastation/extractors/impl/SimpleWordLister/getUniqueWords(java.lang.Object)|",
+    "called": "|java+method:///com/google/common/collect/Sets/newHashSet()|",
+    "v1Body": [
+      "|java+constructor:///javolution/util/FastSet/FastSet()|",
+      "|java+method:///com/enigmastation/extractors/impl/SimpleWordLister/addWords(java.lang.Object,java.util.Collection)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/collect/Sets/newHashSet()|",
+      "|java+method:///com/enigmastation/extractors/impl/SimpleWordLister/addWords(java.lang.Object,java.util.Collection)|"
+    ],
+    "affectedLib": "com.google.guava:guava:r06",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.enigmastation:ci-bayes:1.0.8",
+    "coordinatesV2": "com.enigmastation:ci-bayes:2.0.0.RELEASE",
+    "caller": "|java+constructor:///com/enigmastation/classifier/impl/NaiveClassifierImpl/NaiveClassifierImpl()|",
+    "called": "|java+constructor:///com/google/common/collect/MapMaker/MapMaker()|",
+    "v1Body": [
+      "|java+constructor:///javolution/util/FastMap/FastMap()|",
+      "|java+constructor:///com/enigmastation/classifier/impl/ClassifierImpl/ClassifierImpl()|",
+      "|java+constructor:///javolution/util/FastSet/FastSet()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/collect/MapMaker/makeMap()|",
+      "|java+constructor:///com/google/common/collect/MapMaker/MapMaker()|",
+      "|java+method:///com/google/common/collect/Sets/newHashSet()|",
+      "|java+constructor:///com/enigmastation/classifier/impl/ClassifierImpl/ClassifierImpl()|"
+    ],
+    "affectedLib": "com.google.guava:guava:r06",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.enigmastation:ci-bayes:1.0.8",
+    "coordinatesV2": "com.enigmastation:ci-bayes:2.0.0.RELEASE",
+    "caller": "|java+constructor:///com/enigmastation/classifier/impl/FisherClassifierImpl/FisherClassifierImpl()|",
+    "called": "|java+constructor:///com/google/common/collect/MapMaker/MapMaker()|",
+    "v1Body": [
+      "|java+constructor:///javolution/util/FastMap/FastMap()|",
+      "|java+constructor:///com/enigmastation/classifier/impl/NaiveClassifierImpl/NaiveClassifierImpl()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/collect/MapMaker/makeMap()|",
+      "|java+constructor:///com/google/common/collect/MapMaker/MapMaker()|",
+      "|java+constructor:///com/enigmastation/classifier/impl/NaiveClassifierImpl/NaiveClassifierImpl()|"
+    ],
+    "affectedLib": "com.google.guava:guava:r06",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.enigmastation:ci-bayes:1.0.8",
+    "coordinatesV2": "com.enigmastation:ci-bayes:2.0.0.RELEASE",
+    "caller": "|java+constructor:///com/enigmastation/resolvers/impl/MemoryResolver/MemoryResolver()|",
+    "called": "|java+constructor:///com/google/common/collect/MapMaker/MapMaker()|",
+    "v1Body": [
+      "|java+constructor:///javolution/util/FastMap/FastMap()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/collect/MapMaker/makeMap()|",
+      "|java+constructor:///com/google/common/collect/MapMaker/MapMaker()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.guava:guava:r06",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.enigmastation:ci-bayes:1.0.8",
+    "coordinatesV2": "com.enigmastation:ci-bayes:2.0.0.RELEASE",
+    "caller": "|java+initializer:///com/enigmastation/extractors/impl/LuceneStemmingWordLister/LuceneStemmingWordLister$initializer|",
+    "called": "|java+method:///com/google/common/collect/Sets/newHashSet()|",
+    "v1Body": [
+      "|java+constructor:///javolution/util/FastSet/FastSet()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/collect/Sets/newHashSet()|"
+    ],
+    "affectedLib": "com.google.guava:guava:r06",
+    "change": "ADDED"
+  }
+]

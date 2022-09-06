@@ -1,0 +1,36 @@
+[
+  {
+    "coordinatesV1": "net.liftweb:lift-record_2.11:3.2.0",
+    "coordinatesV2": "net.liftweb:lift-record_2.11:3.3.0-M2",
+    "caller": "|java+method:///net/liftweb/record/field/PasswordTypedField$$anonfun$match_$qmark$3$$anonfun$apply$1/apply$mcZ$sp()|",
+    "called": "|java+method:///org/mindrot/jbcrypt/BCrypt/checkpw(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///net/liftweb/util/BCrypt/checkpw(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/mindrot/jbcrypt/BCrypt/checkpw(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.mindrot:jbcrypt:0.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.liftweb:lift-record_2.11:3.2.0",
+    "coordinatesV2": "net.liftweb:lift-record_2.11:3.3.0-M2",
+    "caller": "|java+method:///net/liftweb/record/field/PasswordField$$anonfun$hashpw$1/apply()|",
+    "called": "|java+method:///org/mindrot/jbcrypt/BCrypt/gensalt(int)|",
+    "v1Body": [
+      "|java+method:///net/liftweb/util/BCrypt/gensalt(int)|",
+      "|java+method:///net/liftweb/record/field/PasswordField$$anonfun$hashpw$1/apply()|",
+      "|java+method:///net/liftweb/record/field/PasswordField$/logRounds()|",
+      "|java+method:///net/liftweb/util/BCrypt/hashpw(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/mindrot/jbcrypt/BCrypt/gensalt(int)|",
+      "|java+method:///net/liftweb/record/field/PasswordField$$anonfun$hashpw$1/apply()|",
+      "|java+method:///org/mindrot/jbcrypt/BCrypt/hashpw(java.lang.String,java.lang.String)|",
+      "|java+method:///net/liftweb/record/field/PasswordField$/logRounds()|"
+    ],
+    "affectedLib": "org.mindrot:jbcrypt:0.4",
+    "change": "ADDED"
+  }
+]

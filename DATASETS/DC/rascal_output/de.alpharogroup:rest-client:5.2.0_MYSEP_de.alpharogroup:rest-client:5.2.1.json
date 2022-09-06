@@ -1,0 +1,96 @@
+[
+  {
+    "coordinatesV1": "de.alpharogroup:rest-client:5.2.0",
+    "coordinatesV2": "de.alpharogroup:rest-client:5.2.1",
+    "caller": "|java+method:///de/alpharogroup/cxf/rest/client/WebClientExtensions/newTLSServerParameters(java.io.File,java.lang.String,java.lang.String,java.lang.String,java.io.File,java.lang.String,java.lang.String,java.lang.String,org.apache.cxf.configuration.security.FiltersType,org.apache.cxf.configuration.security.ClientAuthentication)|",
+    "called": "|java+method:///de/alpharogroup/crypto/ssl/KeyTrustExtensions/resolveKeyManagers(java.lang.String,java.lang.String,java.io.File,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///de/alpharogroup/cxf/rest/client/WebClientExtensions/resolveTrustManagers(java.lang.String,java.lang.String,java.io.File,java.lang.String)|",
+      "|java+method:///org/apache/cxf/configuration/jsse/TLSServerParameters/setTrustManagers(javax.net.ssl.TrustManager%5B%5D)|",
+      "|java+method:///org/apache/cxf/configuration/jsse/TLSServerParameters/setCipherSuitesFilter(org.apache.cxf.configuration.security.FiltersType)|",
+      "|java+method:///org/apache/cxf/configuration/jsse/TLSServerParameters/setClientAuthentication(org.apache.cxf.configuration.security.ClientAuthentication)|",
+      "|java+method:///org/apache/cxf/configuration/jsse/TLSServerParameters/setKeyManagers(javax.net.ssl.KeyManager%5B%5D)|",
+      "|java+method:///de/alpharogroup/cxf/rest/client/WebClientExtensions/resolveKeyManagers(java.lang.String,java.lang.String,java.io.File,java.lang.String)|",
+      "|java+constructor:///org/apache/cxf/configuration/jsse/TLSServerParameters/TLSServerParameters()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/cxf/configuration/jsse/TLSServerParameters/setTrustManagers(javax.net.ssl.TrustManager%5B%5D)|",
+      "|java+method:///org/apache/cxf/configuration/jsse/TLSServerParameters/setCipherSuitesFilter(org.apache.cxf.configuration.security.FiltersType)|",
+      "|java+method:///de/alpharogroup/crypto/ssl/KeyTrustExtensions/resolveKeyManagers(java.lang.String,java.lang.String,java.io.File,java.lang.String)|",
+      "|java+method:///org/apache/cxf/configuration/jsse/TLSServerParameters/setClientAuthentication(org.apache.cxf.configuration.security.ClientAuthentication)|",
+      "|java+method:///org/apache/cxf/configuration/jsse/TLSServerParameters/setKeyManagers(javax.net.ssl.KeyManager%5B%5D)|",
+      "|java+method:///de/alpharogroup/crypto/ssl/KeyTrustExtensions/resolveTrustManagers(java.lang.String,java.lang.String,java.io.File,java.lang.String)|",
+      "|java+constructor:///org/apache/cxf/configuration/jsse/TLSServerParameters/TLSServerParameters()|"
+    ],
+    "affectedLib": "de.alpharogroup:crypt-core:5.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "de.alpharogroup:rest-client:5.2.0",
+    "coordinatesV2": "de.alpharogroup:rest-client:5.2.1",
+    "caller": "|java+method:///de/alpharogroup/cxf/rest/client/WebClientExtensions/newTLSClientParameters(java.io.File,java.lang.String,java.lang.String,java.lang.String,java.io.File,java.lang.String,java.lang.String,java.lang.String,org.apache.cxf.configuration.security.FiltersType,boolean)|",
+    "called": "|java+method:///de/alpharogroup/crypto/ssl/KeyTrustExtensions/resolveTrustManagers(java.lang.String,java.lang.String,java.io.File,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///de/alpharogroup/cxf/rest/client/WebClientExtensions/resolveTrustManagers(java.lang.String,java.lang.String,java.io.File,java.lang.String)|",
+      "|java+method:///org/apache/cxf/configuration/jsse/TLSClientParameters/setKeyManagers(javax.net.ssl.KeyManager%5B%5D)|",
+      "|java+constructor:///org/apache/cxf/configuration/jsse/TLSClientParameters/TLSClientParameters()|",
+      "|java+method:///org/apache/cxf/configuration/jsse/TLSClientParameters/setDisableCNCheck(boolean)|",
+      "|java+method:///org/apache/cxf/configuration/jsse/TLSClientParameters/setCipherSuitesFilter(org.apache.cxf.configuration.security.FiltersType)|",
+      "|java+method:///org/apache/cxf/configuration/jsse/TLSClientParameters/setTrustManagers(javax.net.ssl.TrustManager%5B%5D)|",
+      "|java+method:///de/alpharogroup/cxf/rest/client/WebClientExtensions/resolveKeyManagers(java.lang.String,java.lang.String,java.io.File,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/cxf/configuration/jsse/TLSClientParameters/setKeyManagers(javax.net.ssl.KeyManager%5B%5D)|",
+      "|java+constructor:///org/apache/cxf/configuration/jsse/TLSClientParameters/TLSClientParameters()|",
+      "|java+method:///org/apache/cxf/configuration/jsse/TLSClientParameters/setDisableCNCheck(boolean)|",
+      "|java+method:///de/alpharogroup/crypto/ssl/KeyTrustExtensions/resolveTrustManagers(java.lang.String,java.lang.String,java.io.File,java.lang.String)|",
+      "|java+method:///org/apache/cxf/configuration/jsse/TLSClientParameters/setCipherSuitesFilter(org.apache.cxf.configuration.security.FiltersType)|",
+      "|java+method:///org/apache/cxf/configuration/jsse/TLSClientParameters/setTrustManagers(javax.net.ssl.TrustManager%5B%5D)|",
+      "|java+method:///de/alpharogroup/cxf/rest/client/WebClientExtensions/resolveKeyManagers(java.lang.String,java.lang.String,java.io.File,java.lang.String)|"
+    ],
+    "affectedLib": "de.alpharogroup:crypt-core:5.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "de.alpharogroup:rest-client:5.2.0",
+    "coordinatesV2": "de.alpharogroup:rest-client:5.2.1",
+    "caller": "|java+method:///de/alpharogroup/cxf/rest/client/WebClientExtensions/resolveTrustManagers(java.lang.String,java.lang.String,java.io.File,java.lang.String)|",
+    "called": "|java+method:///de/alpharogroup/crypto/factories/KeyStoreFactory/newKeyStore(java.lang.String,java.lang.String,java.io.File)|",
+    "v1Body": [
+      "|java+method:///de/alpharogroup/cxf/rest/client/WebClientExtensions/newKeyStore(java.lang.String,java.lang.String,java.io.File)|",
+      "|java+method:///javax/net/ssl/TrustManagerFactory/getTrustManagers()|",
+      "|java+method:///javax/net/ssl/TrustManagerFactory/init(java.security.KeyStore)|",
+      "|java+method:///javax/net/ssl/TrustManagerFactory/getInstance(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///de/alpharogroup/crypto/factories/KeyStoreFactory/newKeyStore(java.lang.String,java.lang.String,java.io.File)|",
+      "|java+method:///javax/net/ssl/TrustManagerFactory/getTrustManagers()|",
+      "|java+method:///javax/net/ssl/TrustManagerFactory/init(java.security.KeyStore)|",
+      "|java+method:///javax/net/ssl/TrustManagerFactory/getInstance(java.lang.String)|"
+    ],
+    "affectedLib": "de.alpharogroup:crypt-data:5.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "de.alpharogroup:rest-client:5.2.0",
+    "coordinatesV2": "de.alpharogroup:rest-client:5.2.1",
+    "caller": "|java+method:///de/alpharogroup/cxf/rest/client/WebClientExtensions/resolveKeyManagers(java.lang.String,java.lang.String,java.io.File,java.lang.String)|",
+    "called": "|java+method:///de/alpharogroup/crypto/factories/KeyStoreFactory/newKeyStore(java.lang.String,java.lang.String,java.io.File)|",
+    "v1Body": [
+      "|java+method:///javax/net/ssl/KeyManagerFactory/getInstance(java.lang.String)|",
+      "|java+method:///de/alpharogroup/cxf/rest/client/WebClientExtensions/newKeyStore(java.lang.String,java.lang.String,java.io.File)|",
+      "|java+method:///javax/net/ssl/KeyManagerFactory/getKeyManagers()|",
+      "|java+method:///java/lang/String/toCharArray()|",
+      "|java+method:///javax/net/ssl/KeyManagerFactory/init(java.security.KeyStore,char%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/net/ssl/KeyManagerFactory/getInstance(java.lang.String)|",
+      "|java+method:///de/alpharogroup/crypto/factories/KeyStoreFactory/newKeyStore(java.lang.String,java.lang.String,java.io.File)|",
+      "|java+method:///javax/net/ssl/KeyManagerFactory/getKeyManagers()|",
+      "|java+method:///java/lang/String/toCharArray()|",
+      "|java+method:///javax/net/ssl/KeyManagerFactory/init(java.security.KeyStore,char%5B%5D)|"
+    ],
+    "affectedLib": "de.alpharogroup:crypt-data:5.0.0",
+    "change": "ADDED"
+  }
+]

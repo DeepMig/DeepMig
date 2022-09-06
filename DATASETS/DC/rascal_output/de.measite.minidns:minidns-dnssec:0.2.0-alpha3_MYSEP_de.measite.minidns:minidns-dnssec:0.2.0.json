@@ -1,0 +1,529 @@
+[
+  {
+    "coordinatesV1": "de.measite.minidns:minidns-dnssec:0.2.0",
+    "coordinatesV2": "de.measite.minidns:minidns-dnssec:0.2.0-alpha3",
+    "caller": "|java+constructor:///de/measite/minidns/dnssec/DNSSECClient/DNSSECClient(de.measite.minidns.DNSCache)|",
+    "called": "|java+constructor:///de/measite/minidns/recursive/ReliableDNSClient/ReliableDNSClient(de.measite.minidns.DNSCache)|",
+    "v1Body": [
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+method:///de/measite/minidns/dnssec/DNSSECClient/addSecureEntryPoint(de.measite.minidns.DNSName,byte%5B%5D)|",
+      "|java+method:///java/math/BigInteger/toByteArray()|",
+      "|java+constructor:///de/measite/minidns/recursive/ReliableDNSClient/ReliableDNSClient(de.measite.minidns.DNSCache)|",
+      "|java+constructor:///de/measite/minidns/dnssec/Verifier/Verifier()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+method:///de/measite/minidns/dnssec/DNSSECClient/addSecureEntryPoint(de.measite.minidns.DNSName,byte%5B%5D)|",
+      "|java+constructor:///de/measite/minidns/dnssec/Verifier/Verifier()|",
+      "|java+method:///java/math/BigInteger/toByteArray()|",
+      "|java+constructor:///de/measite/minidns/iterative/ReliableDNSClient/ReliableDNSClient(de.measite.minidns.DNSCache)|"
+    ],
+    "affectedLib": "de.measite.minidns:minidns-recursive-resolver:0.2.0-alpha3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "de.measite.minidns:minidns-dnssec:0.2.0",
+    "coordinatesV2": "de.measite.minidns:minidns-dnssec:0.2.0-alpha3",
+    "caller": "|java+method:///de/measite/minidns/dnssec/DNSSECClient/queryDnssec(de.measite.minidns.Question)|",
+    "called": "|java+method:///de/measite/minidns/recursive/ReliableDNSClient/query(de.measite.minidns.Question)|",
+    "v1Body": [
+      "|java+method:///de/measite/minidns/recursive/ReliableDNSClient/query(de.measite.minidns.Question)|",
+      "|java+method:///de/measite/minidns/dnssec/DNSSECClient/performVerification(de.measite.minidns.Question,de.measite.minidns.DNSMessage)|"
+    ],
+    "v2Body": [
+      "|java+method:///de/measite/minidns/iterative/ReliableDNSClient/query(de.measite.minidns.Question)|",
+      "|java+method:///de/measite/minidns/dnssec/DNSSECClient/performVerification(de.measite.minidns.Question,de.measite.minidns.DNSMessage)|"
+    ],
+    "affectedLib": "de.measite.minidns:minidns-recursive-resolver:0.2.0-alpha3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "de.measite.minidns:minidns-dnssec:0.2.0",
+    "coordinatesV2": "de.measite.minidns:minidns-dnssec:0.2.0-alpha3",
+    "caller": "|java+method:///de/measite/minidns/dnssec/DNSSECClient/queryDnssec(java.lang.CharSequence,de.measite.minidns.Record$TYPE)|",
+    "called": "|java+method:///de/measite/minidns/recursive/ReliableDNSClient/query(de.measite.minidns.Question)|",
+    "v1Body": [
+      "|java+method:///de/measite/minidns/recursive/ReliableDNSClient/query(de.measite.minidns.Question)|",
+      "|java+constructor:///de/measite/minidns/Question/Question(java.lang.CharSequence,de.measite.minidns.Record$TYPE,de.measite.minidns.Record$CLASS)|",
+      "|java+method:///de/measite/minidns/dnssec/DNSSECClient/performVerification(de.measite.minidns.Question,de.measite.minidns.DNSMessage)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///de/measite/minidns/Question/Question(java.lang.CharSequence,de.measite.minidns.Record$TYPE,de.measite.minidns.Record$CLASS)|",
+      "|java+method:///de/measite/minidns/iterative/ReliableDNSClient/query(de.measite.minidns.Question)|",
+      "|java+method:///de/measite/minidns/dnssec/DNSSECClient/performVerification(de.measite.minidns.Question,de.measite.minidns.DNSMessage)|"
+    ],
+    "affectedLib": "de.measite.minidns:minidns-recursive-resolver:0.2.0-alpha3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "de.measite.minidns:minidns-dnssec:0.2.0-alpha3",
+    "coordinatesV2": "de.measite.minidns:minidns-dnssec:0.2.0",
+    "caller": "|java+constructor:///de/measite/minidns/dnssec/DNSSECClient/DNSSECClient(de.measite.minidns.DNSCache)|",
+    "called": "|java+constructor:///de/measite/minidns/iterative/ReliableDNSClient/ReliableDNSClient(de.measite.minidns.DNSCache)|",
+    "v1Body": [
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+method:///de/measite/minidns/dnssec/DNSSECClient/addSecureEntryPoint(de.measite.minidns.DNSName,byte%5B%5D)|",
+      "|java+method:///java/math/BigInteger/toByteArray()|",
+      "|java+constructor:///de/measite/minidns/recursive/ReliableDNSClient/ReliableDNSClient(de.measite.minidns.DNSCache)|",
+      "|java+constructor:///de/measite/minidns/dnssec/Verifier/Verifier()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+method:///de/measite/minidns/dnssec/DNSSECClient/addSecureEntryPoint(de.measite.minidns.DNSName,byte%5B%5D)|",
+      "|java+constructor:///de/measite/minidns/dnssec/Verifier/Verifier()|",
+      "|java+method:///java/math/BigInteger/toByteArray()|",
+      "|java+constructor:///de/measite/minidns/iterative/ReliableDNSClient/ReliableDNSClient(de.measite.minidns.DNSCache)|"
+    ],
+    "affectedLib": "de.measite.minidns:minidns-iterative-resolver:0.2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "de.measite.minidns:minidns-dnssec:0.2.0-alpha3",
+    "coordinatesV2": "de.measite.minidns:minidns-dnssec:0.2.0",
+    "caller": "|java+method:///de/measite/minidns/dnssec/DNSSECClient/isResponseCacheable(de.measite.minidns.Question,de.measite.minidns.DNSMessage)|",
+    "called": "|java+method:///de/measite/minidns/iterative/ReliableDNSClient/isResponseCacheable(de.measite.minidns.Question,de.measite.minidns.DNSMessage)|",
+    "v1Body": [
+      "|java+method:///de/measite/minidns/recursive/ReliableDNSClient/isResponseCacheable(de.measite.minidns.Question,de.measite.minidns.DNSMessage)|"
+    ],
+    "v2Body": [
+      "|java+method:///de/measite/minidns/iterative/ReliableDNSClient/isResponseCacheable(de.measite.minidns.Question,de.measite.minidns.DNSMessage)|"
+    ],
+    "affectedLib": "de.measite.minidns:minidns-iterative-resolver:0.2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "de.measite.minidns:minidns-dnssec:0.2.0-alpha3",
+    "coordinatesV2": "de.measite.minidns:minidns-dnssec:0.2.0",
+    "caller": "|java+method:///de/measite/minidns/dane/DaneVerifier/verifyCertificateChain(java.security.cert.X509Certificate%5B%5D,java.lang.String,int)|",
+    "called": "|java+method:///de/measite/minidns/AbstractDNSClient/query(de.measite.minidns.DNSName,de.measite.minidns.Record$TYPE)|",
+    "v1Body": [
+      "|java+method:///de/measite/minidns/DNSMessage/getAnswers()|",
+      "|java+constructor:///de/measite/minidns/dane/DaneCertificateException$MultipleCertificateMismatchExceptions/DaneCertificateException$MultipleCertificateMismatchExceptions(java.util.List)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///de/measite/minidns/DNSName/equals(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///de/measite/minidns/dane/DaneVerifier/checkCertificateMatches(java.security.cert.X509Certificate,de.measite.minidns.record.TLSA,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///de/measite/minidns/DNSName/from(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///de/measite/minidns/AbstractDNSClient/query(de.measite.minidns.DNSName,de.measite.minidns.Record$TYPE)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///de/measite/minidns/DNSMessage/isAuthenticData()|",
+      "|java+constructor:///java/util/LinkedList/LinkedList()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/logging/Logger/info(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///de/measite/minidns/dnssec/DNSSECMessage/getUnverifiedReasons()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///de/measite/minidns/dane/DaneCertificateException$MultipleCertificateMismatchExceptions/DaneCertificateException$MultipleCertificateMismatchExceptions(java.util.List)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///de/measite/minidns/DNSName/equals(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/LinkedList/LinkedList()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///de/measite/minidns/dane/DaneVerifier/checkCertificateMatches(java.security.cert.X509Certificate,de.measite.minidns.record.TLSA,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///de/measite/minidns/DNSName/from(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///de/measite/minidns/AbstractDNSClient/query(de.measite.minidns.DNSName,de.measite.minidns.Record$TYPE)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/logging/Logger/info(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///de/measite/minidns/dnssec/DNSSECMessage/getUnverifiedReasons()|"
+    ],
+    "affectedLib": "de.measite.minidns:minidns-core:0.2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "de.measite.minidns:minidns-dnssec:0.2.0-alpha3",
+    "coordinatesV2": "de.measite.minidns:minidns-dnssec:0.2.0",
+    "caller": "|java+method:///de/measite/minidns/dane/DaneVerifier/checkCertificateMatches(java.security.cert.X509Certificate,de.measite.minidns.record.TLSA,java.lang.String)|",
+    "called": "|java+method:///de/measite/minidns/record/TLSA/certificateAssociationEquals(byte%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/security/cert/X509Certificate/getPublicKey()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/security/PublicKey/getEncoded()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///de/measite/minidns/dane/DaneCertificateException$CertificateMismatch/DaneCertificateException$CertificateMismatch(de.measite.minidns.record.TLSA,byte%5B%5D)|",
+      "|java+method:///java/security/MessageDigest/digest(byte%5B%5D)|",
+      "|java+method:///java/security/cert/X509Certificate/getEncoded()|",
+      "|java+method:///java/security/MessageDigest/getInstance(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/security/cert/CertificateException/CertificateException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/logging/Logger/warning(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/util/Arrays/equals(byte%5B%5D,byte%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/security/cert/X509Certificate/getPublicKey()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/security/PublicKey/getEncoded()|",
+      "|java+method:///de/measite/minidns/record/TLSA/certificateAssociationEquals(byte%5B%5D)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///de/measite/minidns/dane/DaneCertificateException$CertificateMismatch/DaneCertificateException$CertificateMismatch(de.measite.minidns.record.TLSA,byte%5B%5D)|",
+      "|java+method:///java/security/MessageDigest/digest(byte%5B%5D)|",
+      "|java+method:///java/security/cert/X509Certificate/getEncoded()|",
+      "|java+method:///java/security/MessageDigest/getInstance(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/security/cert/CertificateException/CertificateException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/logging/Logger/warning(java.lang.String)|"
+    ],
+    "affectedLib": "de.measite.minidns:minidns-core:0.2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "de.measite.minidns:minidns-dnssec:0.2.0-alpha3",
+    "coordinatesV2": "de.measite.minidns:minidns-dnssec:0.2.0",
+    "caller": "|java+method:///de/measite/minidns/dnssec/DNSSECClient/performVerification(de.measite.minidns.Question,de.measite.minidns.DNSMessage)|",
+    "called": "|java+method:///de/measite/minidns/DNSMessage$Builder/build()|",
+    "v1Body": [
+      "|java+method:///de/measite/minidns/DNSMessage/setAuthenticData(boolean)|",
+      "|java+method:///de/measite/minidns/dnssec/DNSSECClient/createDnssecMessage(de.measite.minidns.DNSMessage,java.util.Set)|",
+      "|java+method:///de/measite/minidns/dnssec/DNSSECClient/verify(de.measite.minidns.DNSMessage)|"
+    ],
+    "v2Body": [
+      "|java+method:///de/measite/minidns/DNSMessage$Builder/setAuthenticData(boolean)|",
+      "|java+method:///de/measite/minidns/DNSMessage$Builder/build()|",
+      "|java+method:///de/measite/minidns/DNSMessage/asBuilder()|",
+      "|java+method:///de/measite/minidns/dnssec/DNSSECClient/createDnssecMessage(de.measite.minidns.DNSMessage,java.util.Set)|",
+      "|java+method:///de/measite/minidns/dnssec/DNSSECClient/verify(de.measite.minidns.DNSMessage)|"
+    ],
+    "affectedLib": "de.measite.minidns:minidns-core:0.2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "de.measite.minidns:minidns-dnssec:0.2.0-alpha3",
+    "coordinatesV2": "de.measite.minidns:minidns-dnssec:0.2.0",
+    "caller": "|java+method:///de/measite/minidns/dnssec/DNSSECClient/verifyAnswer(de.measite.minidns.DNSMessage)|",
+    "called": "|java+method:///de/measite/minidns/DNSMessage/copyAnswers()|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/remove()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Set/addAll(java.util.Collection)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///de/measite/minidns/dnssec/DNSSECValidationFailedException/DNSSECValidationFailedException(de.measite.minidns.Question,java.lang.String)|",
+      "|java+method:///de/measite/minidns/DNSMessage/getQuestions()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///java/util/logging/Logger/finer(java.lang.String)|",
+      "|java+method:///de/measite/minidns/DNSMessage/getAnswers()|",
+      "|java+method:///de/measite/minidns/dnssec/DNSSECClient/verifySignatures(de.measite.minidns.Question,de.measite.minidns.Record%5B%5D,java.util.List)|",
+      "|java+method:///de/measite/minidns/dnssec/DNSSECClient/verifySecureEntryPoint(de.measite.minidns.Question,de.measite.minidns.Record)|",
+      "|java+constructor:///de/measite/minidns/dnssec/UnverifiedReason$NoSecureEntryPointReason/UnverifiedReason$NoSecureEntryPointReason(java.lang.String)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(java.util.Collection)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Set/isEmpty()|",
+      "|java+constructor:///de/measite/minidns/dnssec/UnverifiedReason$NoSignaturesReason/UnverifiedReason$NoSignaturesReason(de.measite.minidns.Question)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/remove()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Set/addAll(java.util.Collection)|",
+      "|java+method:///de/measite/minidns/dnssec/DNSSECClient/verifySignatures(de.measite.minidns.Question,java.util.Collection,java.util.List)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///de/measite/minidns/Record/ifPossibleAs(java.lang.Class)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///java/util/logging/Logger/finer(java.lang.String)|",
+      "|java+method:///de/measite/minidns/dnssec/DNSSECClient/verifySecureEntryPoint(de.measite.minidns.Question,de.measite.minidns.Record)|",
+      "|java+constructor:///de/measite/minidns/dnssec/UnverifiedReason$NoSecureEntryPointReason/UnverifiedReason$NoSecureEntryPointReason(java.lang.String)|",
+      "|java+method:///java/util/Set/isEmpty()|",
+      "|java+constructor:///de/measite/minidns/dnssec/UnverifiedReason$NoSignaturesReason/UnverifiedReason$NoSignaturesReason(de.measite.minidns.Question)|",
+      "|java+method:///de/measite/minidns/DNSMessage/copyAnswers()|",
+      "|java+constructor:///de/measite/minidns/dnssec/DNSSECValidationFailedException/DNSSECValidationFailedException(de.measite.minidns.Question,java.lang.String)|"
+    ],
+    "affectedLib": "de.measite.minidns:minidns-core:0.2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "de.measite.minidns:minidns-dnssec:0.2.0-alpha3",
+    "coordinatesV2": "de.measite.minidns:minidns-dnssec:0.2.0",
+    "caller": "|java+method:///de/measite/minidns/dnssec/Verifier/verify(de.measite.minidns.Record,de.measite.minidns.record.DS)|",
+    "called": "|java+method:///de/measite/minidns/DNSName/getBytes()|",
+    "v1Body": [
+      "|java+constructor:///de/measite/minidns/dnssec/DNSSECValidationFailedException/DNSSECValidationFailedException(de.measite.minidns.Record,java.lang.String)|",
+      "|java+method:///de/measite/minidns/Record/getPayload()|",
+      "|java+method:///de/measite/minidns/record/DNSKEY/toByteArray()|",
+      "|java+method:///de/measite/minidns/dnssec/algorithms/AlgorithmMap/getDsDigestCalculator(de.measite.minidns.DNSSECConstants$DigestAlgorithm)|",
+      "|java+method:///de/measite/minidns/DNSName/getBytes()|",
+      "|java+method:///java/lang/System/arraycopy(java.lang.Object,int,java.lang.Object,int,int)|",
+      "|java+method:///de/measite/minidns/dnssec/DigestCalculator/digest(byte%5B%5D)|",
+      "|java+constructor:///de/measite/minidns/dnssec/UnverifiedReason$AlgorithmExceptionThrownReason/UnverifiedReason$AlgorithmExceptionThrownReason(de.measite.minidns.DNSSECConstants$DigestAlgorithm,java.lang.String,de.measite.minidns.Record,java.lang.Exception)|",
+      "|java+method:///java/util/Arrays/equals(byte%5B%5D,byte%5B%5D)|",
+      "|java+constructor:///de/measite/minidns/dnssec/UnverifiedReason$AlgorithmNotSupportedReason/UnverifiedReason$AlgorithmNotSupportedReason(byte,java.lang.String,de.measite.minidns.Record)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///de/measite/minidns/dnssec/DNSSECValidationFailedException/DNSSECValidationFailedException(de.measite.minidns.Record,java.lang.String)|",
+      "|java+method:///de/measite/minidns/record/DS/digestEquals(byte%5B%5D)|",
+      "|java+constructor:///de/measite/minidns/dnssec/UnverifiedReason$AlgorithmNotSupportedReason/UnverifiedReason$AlgorithmNotSupportedReason(byte,java.lang.String,de.measite.minidns.Record)|",
+      "|java+method:///de/measite/minidns/record/DNSKEY/toByteArray()|",
+      "|java+method:///de/measite/minidns/dnssec/algorithms/AlgorithmMap/getDsDigestCalculator(de.measite.minidns.DNSSECConstants$DigestAlgorithm)|",
+      "|java+method:///de/measite/minidns/DNSName/getBytes()|",
+      "|java+method:///java/lang/System/arraycopy(java.lang.Object,int,java.lang.Object,int,int)|",
+      "|java+method:///de/measite/minidns/dnssec/DigestCalculator/digest(byte%5B%5D)|",
+      "|java+constructor:///de/measite/minidns/dnssec/UnverifiedReason$AlgorithmExceptionThrownReason/UnverifiedReason$AlgorithmExceptionThrownReason(de.measite.minidns.DNSSECConstants$DigestAlgorithm,java.lang.String,de.measite.minidns.Record,java.lang.Exception)|"
+    ],
+    "affectedLib": "de.measite.minidns:minidns-core:0.2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "de.measite.minidns:minidns-dnssec:0.2.0-alpha3",
+    "coordinatesV2": "de.measite.minidns:minidns-dnssec:0.2.0",
+    "caller": "|java+method:///de/measite/minidns/dnssec/DNSSECClient/verifySignedRecords(de.measite.minidns.Question,de.measite.minidns.record.RRSIG,java.util.List)|",
+    "called": "|java+method:///de/measite/minidns/record/DNSKEY/getKeyTag()|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Set/addAll(java.util.Collection)|",
+      "|java+method:///de/measite/minidns/DNSName/equals(java.lang.Object)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+constructor:///de/measite/minidns/dnssec/DNSSECValidationFailedException/DNSSECValidationFailedException(de.measite.minidns.Question,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///de/measite/minidns/record/DNSKEY/getKeyTag()|",
+      "|java+method:///de/measite/minidns/dnssec/DNSSECMessage/getAnswers()|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///de/measite/minidns/dnssec/Verifier/verify(java.util.List,de.measite.minidns.record.RRSIG,de.measite.minidns.record.DNSKEY)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///de/measite/minidns/dnssec/UnverifiedReason$NoTrustAnchorReason/UnverifiedReason$NoTrustAnchorReason(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///de/measite/minidns/dnssec/DNSSECClient/queryDnssec(java.lang.CharSequence,de.measite.minidns.Record$TYPE)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///de/measite/minidns/dnssec/DNSSECMessage/getUnverifiedReasons()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Set/addAll(java.util.Collection)|",
+      "|java+method:///de/measite/minidns/DNSName/equals(java.lang.Object)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+constructor:///de/measite/minidns/dnssec/DNSSECValidationFailedException/DNSSECValidationFailedException(de.measite.minidns.Question,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///de/measite/minidns/record/DNSKEY/getKeyTag()|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///de/measite/minidns/dnssec/Verifier/verify(java.util.List,de.measite.minidns.record.RRSIG,de.measite.minidns.record.DNSKEY)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///de/measite/minidns/dnssec/UnverifiedReason$NoTrustAnchorReason/UnverifiedReason$NoTrustAnchorReason(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///de/measite/minidns/dnssec/DNSSECClient/queryDnssec(java.lang.CharSequence,de.measite.minidns.Record$TYPE)|",
+      "|java+method:///de/measite/minidns/Record/ifPossibleAs(java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///de/measite/minidns/dnssec/DNSSECMessage/getUnverifiedReasons()|"
+    ],
+    "affectedLib": "de.measite.minidns:minidns-core:0.2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "de.measite.minidns:minidns-dnssec:0.2.0-alpha3",
+    "coordinatesV2": "de.measite.minidns:minidns-dnssec:0.2.0",
+    "caller": "|java+method:///de/measite/minidns/dnssec/DNSSECClient/verifyNsec(de.measite.minidns.DNSMessage)|",
+    "called": "|java+method:///de/measite/minidns/DNSMessage/copyAuthority()|",
+    "v1Body": [
+      "|java+method:///de/measite/minidns/dnssec/DNSSECClient/verifySignatures(de.measite.minidns.Question,de.measite.minidns.Record%5B%5D,java.util.List)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(java.util.Collection)|",
+      "|java+method:///java/util/Set/addAll(java.util.Collection)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Set/isEmpty()|",
+      "|java+constructor:///de/measite/minidns/dnssec/DNSSECValidationFailedException/DNSSECValidationFailedException(de.measite.minidns.Question,java.lang.String)|",
+      "|java+method:///de/measite/minidns/DNSMessage/getQuestions()|",
+      "|java+method:///de/measite/minidns/dnssec/Verifier/verifyNsec(de.measite.minidns.Record,de.measite.minidns.Question)|",
+      "|java+method:///de/measite/minidns/dnssec/Verifier/verifyNsec3(de.measite.minidns.DNSName,de.measite.minidns.Record,de.measite.minidns.Question)|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///de/measite/minidns/DNSMessage/getNameserverRecords()|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Set/clear()|",
+      "|java+constructor:///java/util/HashSet/HashSet()|"
+    ],
+    "v2Body": [
+      "|java+method:///de/measite/minidns/DNSMessage/copyAuthority()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Set/addAll(java.util.Collection)|",
+      "|java+method:///de/measite/minidns/dnssec/DNSSECClient/verifySignatures(de.measite.minidns.Question,java.util.Collection,java.util.List)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/isEmpty()|",
+      "|java+constructor:///de/measite/minidns/dnssec/DNSSECValidationFailedException/DNSSECValidationFailedException(de.measite.minidns.Question,java.lang.String)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///de/measite/minidns/dnssec/Verifier/verifyNsec(de.measite.minidns.Record,de.measite.minidns.Question)|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///de/measite/minidns/Record$TYPE/ordinal()|",
+      "|java+method:///de/measite/minidns/dnssec/Verifier/verifyNsec3(de.measite.minidns.DNSName,de.measite.minidns.Record,de.measite.minidns.Question)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/util/Set/clear()|",
+      "|java+constructor:///java/util/HashSet/HashSet()|"
+    ],
+    "affectedLib": "de.measite.minidns:minidns-core:0.2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "de.measite.minidns:minidns-dnssec:0.2.0-alpha3",
+    "coordinatesV2": "de.measite.minidns:minidns-dnssec:0.2.0",
+    "caller": "|java+method:///de/measite/minidns/dnssec/DNSSECClient/verifySecureEntryPoint(de.measite.minidns.Question,de.measite.minidns.Record)|",
+    "called": "|java+method:///de/measite/minidns/DNSName/isChildOf(de.measite.minidns.DNSName)|",
+    "v1Body": [
+      "|java+method:///java/util/logging/Logger/fine(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Set/addAll(java.util.Collection)|",
+      "|java+method:///java/util/Arrays/equals(byte%5B%5D,byte%5B%5D)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+constructor:///de/measite/minidns/dnssec/UnverifiedReason$NoRootSecureEntryPointReason/UnverifiedReason$NoRootSecureEntryPointReason()|",
+      "|java+method:///de/measite/minidns/DNSName/from(de.measite.minidns.DNSName,de.measite.minidns.DNSName)|",
+      "|java+constructor:///de/measite/minidns/dnssec/UnverifiedReason$NoTrustAnchorReason/UnverifiedReason$NoTrustAnchorReason(java.lang.String)|",
+      "|java+method:///de/measite/minidns/DNSName/isChildOf(de.measite.minidns.DNSName)|",
+      "|java+constructor:///de/measite/minidns/dnssec/DNSSECValidationFailedException/DNSSECValidationFailedException(de.measite.minidns.Question,java.lang.String)|",
+      "|java+method:///java/util/Map/containsKey(java.lang.Object)|",
+      "|java+method:///de/measite/minidns/dnssec/Verifier/verify(de.measite.minidns.Record,de.measite.minidns.record.DS)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+method:///de/measite/minidns/record/DNSKEY/getKeyTag()|",
+      "|java+method:///de/measite/minidns/dnssec/DNSSECMessage/getAnswers()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///de/measite/minidns/dnssec/DNSSECClient/queryDnssec(java.lang.CharSequence,de.measite.minidns.Record$TYPE)|",
+      "|java+method:///de/measite/minidns/DNSName/isRootLabel()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///de/measite/minidns/dnssec/DNSSECMessage/getUnverifiedReasons()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/logging/Logger/fine(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+constructor:///de/measite/minidns/dnssec/UnverifiedReason$NoRootSecureEntryPointReason/UnverifiedReason$NoRootSecureEntryPointReason()|",
+      "|java+method:///de/measite/minidns/DNSName/from(de.measite.minidns.DNSName,de.measite.minidns.DNSName)|",
+      "|java+method:///de/measite/minidns/DNSName/isChildOf(de.measite.minidns.DNSName)|",
+      "|java+method:///java/util/Set/isEmpty()|",
+      "|java+method:///java/util/Map/containsKey(java.lang.Object)|",
+      "|java+method:///de/measite/minidns/dnssec/Verifier/verify(de.measite.minidns.Record,de.measite.minidns.record.DS)|",
+      "|java+constructor:///de/measite/minidns/dnssec/UnverifiedReason$ConflictsWithSep/UnverifiedReason$ConflictsWithSep(de.measite.minidns.Record)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///de/measite/minidns/record/DNSKEY/getKeyTag()|",
+      "|java+method:///java/util/Set/addAll(java.util.Collection)|",
+      "|java+method:///de/measite/minidns/record/DNSKEY/keyEquals(byte%5B%5D)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///de/measite/minidns/dnssec/UnverifiedReason$NoTrustAnchorReason/UnverifiedReason$NoTrustAnchorReason(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///de/measite/minidns/dnssec/DNSSECClient/queryDnssec(java.lang.CharSequence,de.measite.minidns.Record$TYPE)|",
+      "|java+method:///de/measite/minidns/Record/ifPossibleAs(java.lang.Class)|",
+      "|java+method:///de/measite/minidns/DNSName/isRootLabel()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///de/measite/minidns/dnssec/DNSSECMessage/getUnverifiedReasons()|"
+    ],
+    "affectedLib": "de.measite.minidns:minidns-core:0.2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "de.measite.minidns:minidns-dnssec:0.2.0-alpha3",
+    "coordinatesV2": "de.measite.minidns:minidns-dnssec:0.2.0",
+    "caller": "|java+method:///de/measite/minidns/dnssec/DNSSECClient/queryDnssec(java.lang.CharSequence,de.measite.minidns.Record$TYPE)|",
+    "called": "|java+constructor:///de/measite/minidns/Question/Question(java.lang.CharSequence,de.measite.minidns.Record$TYPE,de.measite.minidns.Record$CLASS)|",
+    "v1Body": [
+      "|java+method:///de/measite/minidns/recursive/ReliableDNSClient/query(de.measite.minidns.Question)|",
+      "|java+constructor:///de/measite/minidns/Question/Question(java.lang.CharSequence,de.measite.minidns.Record$TYPE,de.measite.minidns.Record$CLASS)|",
+      "|java+method:///de/measite/minidns/dnssec/DNSSECClient/performVerification(de.measite.minidns.Question,de.measite.minidns.DNSMessage)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///de/measite/minidns/Question/Question(java.lang.CharSequence,de.measite.minidns.Record$TYPE,de.measite.minidns.Record$CLASS)|",
+      "|java+method:///de/measite/minidns/iterative/ReliableDNSClient/query(de.measite.minidns.Question)|",
+      "|java+method:///de/measite/minidns/dnssec/DNSSECClient/performVerification(de.measite.minidns.Question,de.measite.minidns.DNSMessage)|"
+    ],
+    "affectedLib": "de.measite.minidns:minidns-core:0.2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "de.measite.minidns:minidns-dnssec:0.2.0-alpha3",
+    "coordinatesV2": "de.measite.minidns:minidns-dnssec:0.2.0",
+    "caller": "|java+method:///de/measite/minidns/dnssec/DNSSECClient/createDnssecMessage(de.measite.minidns.DNSMessage,java.util.Set)|",
+    "called": "|java+method:///de/measite/minidns/DNSMessage$Builder/setAnswers(java.util.Collection)|",
+    "v1Body": [
+      "|java+method:///de/measite/minidns/DNSMessage/getAnswers()|",
+      "|java+constructor:///de/measite/minidns/dnssec/DNSSECMessage/DNSSECMessage(de.measite.minidns.DNSMessage,de.measite.minidns.Record%5B%5D,de.measite.minidns.Record%5B%5D,de.measite.minidns.Record%5B%5D,java.util.Set,java.util.Set)|",
+      "|java+method:///de/measite/minidns/dnssec/DNSSECClient/stripSignatureRecords(de.measite.minidns.Record%5B%5D)|",
+      "|java+method:///de/measite/minidns/dnssec/DNSSECClient/extractSignatureRecords(java.util.Set,de.measite.minidns.Record%5B%5D)|",
+      "|java+method:///de/measite/minidns/DNSMessage/getAdditionalResourceRecords()|",
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+method:///de/measite/minidns/DNSMessage/getNameserverRecords()|"
+    ],
+    "v2Body": [
+      "|java+method:///de/measite/minidns/Record/filter(java.util.Collection,java.lang.Class,java.util.Collection)|",
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+constructor:///de/measite/minidns/dnssec/DNSSECMessage/DNSSECMessage(de.measite.minidns.DNSMessage$Builder,java.util.Set,java.util.Set)|",
+      "|java+method:///de/measite/minidns/DNSMessage$Builder/setAdditionalResourceRecords(java.util.Collection)|",
+      "|java+method:///de/measite/minidns/DNSMessage/asBuilder()|",
+      "|java+method:///de/measite/minidns/DNSMessage$Builder/setNameserverRecords(java.util.Collection)|",
+      "|java+method:///de/measite/minidns/dnssec/DNSSECClient/stripSignatureRecords(java.util.List)|",
+      "|java+method:///de/measite/minidns/DNSMessage$Builder/setAnswers(java.util.Collection)|"
+    ],
+    "affectedLib": "de.measite.minidns:minidns-core:0.2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "de.measite.minidns:minidns-dnssec:0.2.0-alpha3",
+    "coordinatesV2": "de.measite.minidns:minidns-dnssec:0.2.0",
+    "caller": "|java+method:///de/measite/minidns/dnssec/Verifier/verify(java.util.List,de.measite.minidns.record.RRSIG,de.measite.minidns.record.DNSKEY)|",
+    "called": "|java+method:///de/measite/minidns/record/DNSKEY/getKey()|",
+    "v1Body": [
+      "|java+method:///de/measite/minidns/dnssec/algorithms/AlgorithmMap/getSignatureVerifier(de.measite.minidns.DNSSECConstants$SignatureAlgorithm)|",
+      "|java+method:///de/measite/minidns/dnssec/SignatureVerifier/verify(byte%5B%5D,byte%5B%5D,byte%5B%5D)|",
+      "|java+constructor:///de/measite/minidns/dnssec/DNSSECValidationFailedException/DNSSECValidationFailedException(java.util.List,java.lang.String)|",
+      "|java+constructor:///de/measite/minidns/dnssec/UnverifiedReason$AlgorithmNotSupportedReason/UnverifiedReason$AlgorithmNotSupportedReason(byte,java.lang.String,de.measite.minidns.Record)|",
+      "|java+method:///de/measite/minidns/dnssec/Verifier/combine(de.measite.minidns.record.RRSIG,java.util.List)|",
+      "|java+method:///java/util/List/get(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///de/measite/minidns/dnssec/algorithms/AlgorithmMap/getSignatureVerifier(de.measite.minidns.DNSSECConstants$SignatureAlgorithm)|",
+      "|java+method:///de/measite/minidns/dnssec/SignatureVerifier/verify(byte%5B%5D,byte%5B%5D,byte%5B%5D)|",
+      "|java+constructor:///de/measite/minidns/dnssec/DNSSECValidationFailedException/DNSSECValidationFailedException(java.util.List,java.lang.String)|",
+      "|java+method:///de/measite/minidns/dnssec/Verifier/combine(de.measite.minidns.record.RRSIG,java.util.List)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///de/measite/minidns/record/DNSKEY/getKey()|",
+      "|java+constructor:///de/measite/minidns/dnssec/UnverifiedReason$AlgorithmNotSupportedReason/UnverifiedReason$AlgorithmNotSupportedReason(byte,java.lang.String,de.measite.minidns.Record)|"
+    ],
+    "affectedLib": "de.measite.minidns:minidns-core:0.2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "de.measite.minidns:minidns-dnssec:0.2.0-alpha3",
+    "coordinatesV2": "de.measite.minidns:minidns-dnssec:0.2.0",
+    "caller": "|java+method:///de/measite/minidns/dnssec/DNSSECClient/isResponseAcceptable(de.measite.minidns.DNSMessage)|",
+    "called": "|java+method:///de/measite/minidns/DNSMessage/isDnssecOk()|",
+    "v1Body": [
+      "|java+method:///de/measite/minidns/recursive/ReliableDNSClient/isResponseAcceptable(de.measite.minidns.DNSMessage)|",
+      "|java+method:///de/measite/minidns/DNSMessage/isDnssecOk()|"
+    ],
+    "v2Body": [
+      "|java+method:///de/measite/minidns/iterative/ReliableDNSClient/isResponseAcceptable(de.measite.minidns.DNSMessage)|",
+      "|java+method:///de/measite/minidns/DNSMessage/isDnssecOk()|"
+    ],
+    "affectedLib": "de.measite.minidns:minidns-core:0.2.0",
+    "change": "ADDED"
+  }
+]

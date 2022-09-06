@@ -1,0 +1,207 @@
+[
+  {
+    "coordinatesV1": "org.appfuse:appfuse-hibernate:2.0.2",
+    "coordinatesV2": "org.appfuse:appfuse-hibernate:2.1.0-M1",
+    "caller": "|java+method:///org/appfuse/dao/hibernate/UserDaoHibernate/saveUser(org.appfuse.model.User)|",
+    "called": "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/saveOrUpdate(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///org/appfuse/dao/hibernate/UserDaoHibernate/getHibernateTemplate()|",
+      "|java+method:///org/appfuse/model/User/getId()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/saveOrUpdate(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/flush()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///org/appfuse/dao/hibernate/UserDaoHibernate/getHibernateTemplate()|",
+      "|java+method:///org/appfuse/model/User/getId()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/saveOrUpdate(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/flush()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.springframework:spring-orm:2.5.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.appfuse:appfuse-hibernate:2.0.2",
+    "coordinatesV2": "org.appfuse:appfuse-hibernate:2.1.0-M1",
+    "caller": "|java+method:///org/appfuse/dao/hibernate/LookupDaoHibernate/getRoles()|",
+    "called": "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/find(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/find(java.lang.String)|",
+      "|java+method:///org/appfuse/dao/hibernate/LookupDaoHibernate/getHibernateTemplate()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/find(java.lang.String)|"
+    ],
+    "affectedLib": "org.springframework:spring-orm:2.5.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.appfuse:appfuse-hibernate:2.0.2",
+    "coordinatesV2": "org.appfuse:appfuse-hibernate:2.1.0-M1",
+    "caller": "|java+method:///org/appfuse/dao/hibernate/GenericDaoHibernate/remove(java.io.Serializable)|",
+    "called": "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/delete(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/appfuse/dao/hibernate/GenericDaoHibernate/get(java.io.Serializable)|",
+      "|java+method:///org/springframework/orm/hibernate3/support/HibernateDaoSupport/getHibernateTemplate()|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/delete(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/appfuse/dao/hibernate/GenericDaoHibernate/get(java.io.Serializable)|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/delete(java.lang.Object)|"
+    ],
+    "affectedLib": "org.springframework:spring-orm:2.5.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.appfuse:appfuse-hibernate:2.0.2",
+    "coordinatesV2": "org.appfuse:appfuse-hibernate:2.1.0-M1",
+    "caller": "|java+method:///org/appfuse/dao/BaseDaoTestCase/flush()|",
+    "called": "|java+constructor:///org/springframework/orm/hibernate3/HibernateTemplate/HibernateTemplate(org.hibernate.SessionFactory)|",
+    "v1Body": [
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/clear()|",
+      "|java+method:///org/springframework/context/ConfigurableApplicationContext/getBean(java.lang.String)|",
+      "|java+constructor:///org/springframework/orm/hibernate3/HibernateTemplate/HibernateTemplate(org.hibernate.SessionFactory)|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/flush()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/clear()|",
+      "|java+constructor:///org/springframework/orm/hibernate3/HibernateTemplate/HibernateTemplate(org.hibernate.SessionFactory)|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/flush()|"
+    ],
+    "affectedLib": "org.springframework:spring-orm:2.5.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.appfuse:appfuse-hibernate:2.0.2",
+    "coordinatesV2": "org.appfuse:appfuse-hibernate:2.1.0-M1",
+    "caller": "|java+method:///org/appfuse/dao/hibernate/GenericDaoHibernate/getAll()|",
+    "called": "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/loadAll(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/loadAll(java.lang.Class)|",
+      "|java+method:///org/springframework/orm/hibernate3/support/HibernateDaoSupport/getHibernateTemplate()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/loadAll(java.lang.Class)|"
+    ],
+    "affectedLib": "org.springframework:spring-orm:2.5.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.appfuse:appfuse-hibernate:2.0.2",
+    "coordinatesV2": "org.appfuse:appfuse-hibernate:2.1.0-M1",
+    "caller": "|java+method:///org/appfuse/dao/hibernate/GenericDaoHibernate/get(java.io.Serializable)|",
+    "called": "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/get(java.lang.Class,java.io.Serializable)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/Log/warn(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/get(java.lang.Class,java.io.Serializable)|",
+      "|java+method:///org/springframework/orm/hibernate3/support/HibernateDaoSupport/getHibernateTemplate()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/springframework/orm/ObjectRetrievalFailureException/ObjectRetrievalFailureException(java.lang.Class,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/logging/Log/warn(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/get(java.lang.Class,java.io.Serializable)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/springframework/orm/ObjectRetrievalFailureException/ObjectRetrievalFailureException(java.lang.Class,java.lang.Object)|"
+    ],
+    "affectedLib": "org.springframework:spring-orm:2.5.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.appfuse:appfuse-hibernate:2.0.2",
+    "coordinatesV2": "org.appfuse:appfuse-hibernate:2.1.0-M1",
+    "caller": "|java+method:///org/appfuse/dao/hibernate/GenericDaoHibernate/save(java.lang.Object)|",
+    "called": "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/merge(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/springframework/orm/hibernate3/support/HibernateDaoSupport/getHibernateTemplate()|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/merge(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/merge(java.lang.Object)|"
+    ],
+    "affectedLib": "org.springframework:spring-orm:2.5.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.appfuse:appfuse-hibernate:2.0.2",
+    "coordinatesV2": "org.appfuse:appfuse-hibernate:2.1.0-M1",
+    "caller": "|java+method:///org/appfuse/dao/hibernate/GenericDaoHibernate/findByNamedQuery(java.lang.String,java.util.Map)|",
+    "called": "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/findByNamedQueryAndNamedParam(java.lang.String,java.lang.String%5B%5D,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/util/Map/size()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///org/appfuse/dao/hibernate/GenericDaoHibernate/getHibernateTemplate()|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/findByNamedQueryAndNamedParam(java.lang.String,java.lang.String%5B%5D,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Map/keySet()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/util/Map/size()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/findByNamedQueryAndNamedParam(java.lang.String,java.lang.String%5B%5D,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Map/keySet()|"
+    ],
+    "affectedLib": "org.springframework:spring-orm:2.5.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.appfuse:appfuse-hibernate:2.0.2",
+    "coordinatesV2": "org.appfuse:appfuse-hibernate:2.1.0-M1",
+    "caller": "|java+method:///org/appfuse/dao/hibernate/GenericDaoHibernate/exists(java.io.Serializable)|",
+    "called": "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/get(java.lang.Class,java.io.Serializable)|",
+    "v1Body": [
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/get(java.lang.Class,java.io.Serializable)|",
+      "|java+method:///org/springframework/orm/hibernate3/support/HibernateDaoSupport/getHibernateTemplate()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/get(java.lang.Class,java.io.Serializable)|"
+    ],
+    "affectedLib": "org.springframework:spring-orm:2.5.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.appfuse:appfuse-hibernate:2.0.2",
+    "coordinatesV2": "org.appfuse:appfuse-hibernate:2.1.0-M1",
+    "caller": "|java+constructor:///org/appfuse/dao/BaseDaoTestCase/BaseDaoTestCase()|",
+    "called": "|java+constructor:///org/springframework/test/context/junit4/AbstractTransactionalJUnit4SpringContextTests/AbstractTransactionalJUnit4SpringContextTests()|",
+    "v1Body": [
+      "|java+method:///java/util/ResourceBundle/getBundle(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///org/springframework/test/AbstractTransactionalDataSourceSpringContextTests/AbstractTransactionalDataSourceSpringContextTests()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/ResourceBundle/getBundle(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///org/springframework/test/context/junit4/AbstractTransactionalJUnit4SpringContextTests/AbstractTransactionalJUnit4SpringContextTests()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "affectedLib": "org.springframework:spring-test:2.5.6",
+    "change": "UPDATED"
+  }
+]

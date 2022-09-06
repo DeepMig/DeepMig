@@ -1,0 +1,58 @@
+[
+  {
+    "coordinatesV1": "com.bq.corbel.lib:token:0.10.0",
+    "coordinatesV2": "com.bq.corbel.lib:token:0.9.0",
+    "caller": "|java+method:///com/bq/corbel/lib/token/repository/TokenMongoIndexes/ensureIndexes(org.springframework.data.mongodb.core.MongoOperations)|",
+    "called": "|java+method:///io/corbel/lib/mongo/index/MongoIndex/background()|",
+    "v1Body": [
+      "|java+method:///org/springframework/data/mongodb/core/MongoOperations/indexOps(java.lang.Class)|",
+      "|java+method:///org/springframework/data/mongodb/core/IndexOperations/ensureIndex(org.springframework.data.mongodb.core.index.IndexDefinition)|",
+      "|java+method:///io/corbel/lib/mongo/index/MongoIndex/on(java.lang.String,org.springframework.data.domain.Sort$Direction)|",
+      "|java+method:///io/corbel/lib/mongo/index/MongoIndex/background()|",
+      "|java+method:///io/corbel/lib/mongo/index/MongoIndex/getIndexDefinition()|",
+      "|java+method:///io/corbel/lib/mongo/index/MongoIndex/expires(int,java.util.concurrent.TimeUnit)|",
+      "|java+constructor:///io/corbel/lib/mongo/index/MongoIndex/MongoIndex()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/bq/corbel/lib/mongo/index/MongoIndex/getIndexDefinition()|",
+      "|java+method:///com/bq/corbel/lib/mongo/index/MongoIndex/on(java.lang.String,org.springframework.data.domain.Sort$Direction)|",
+      "|java+method:///org/springframework/data/mongodb/core/IndexOperations/ensureIndex(org.springframework.data.mongodb.core.index.IndexDefinition)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+constructor:///com/bq/corbel/lib/mongo/index/MongoIndex/MongoIndex()|",
+      "|java+method:///com/bq/corbel/lib/mongo/index/MongoIndex/background()|",
+      "|java+method:///com/bq/corbel/lib/mongo/index/MongoIndex/expires(int,java.util.concurrent.TimeUnit)|",
+      "|java+method:///org/springframework/data/mongodb/core/MongoOperations/indexOps(java.lang.Class)|"
+    ],
+    "affectedLib": "io.corbel.lib:mongodb:0.6.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.bq.corbel.lib:token:0.9.0",
+    "coordinatesV2": "com.bq.corbel.lib:token:0.10.0",
+    "caller": "|java+method:///com/bq/corbel/lib/token/repository/TokenMongoIndexes/ensureIndexes(org.springframework.data.mongodb.core.MongoOperations)|",
+    "called": "|java+method:///com/bq/corbel/lib/mongo/index/MongoIndex/getIndexDefinition()|",
+    "v1Body": [
+      "|java+method:///org/springframework/data/mongodb/core/MongoOperations/indexOps(java.lang.Class)|",
+      "|java+method:///org/springframework/data/mongodb/core/IndexOperations/ensureIndex(org.springframework.data.mongodb.core.index.IndexDefinition)|",
+      "|java+method:///io/corbel/lib/mongo/index/MongoIndex/on(java.lang.String,org.springframework.data.domain.Sort$Direction)|",
+      "|java+method:///io/corbel/lib/mongo/index/MongoIndex/background()|",
+      "|java+method:///io/corbel/lib/mongo/index/MongoIndex/getIndexDefinition()|",
+      "|java+method:///io/corbel/lib/mongo/index/MongoIndex/expires(int,java.util.concurrent.TimeUnit)|",
+      "|java+constructor:///io/corbel/lib/mongo/index/MongoIndex/MongoIndex()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/bq/corbel/lib/mongo/index/MongoIndex/getIndexDefinition()|",
+      "|java+method:///com/bq/corbel/lib/mongo/index/MongoIndex/on(java.lang.String,org.springframework.data.domain.Sort$Direction)|",
+      "|java+method:///org/springframework/data/mongodb/core/IndexOperations/ensureIndex(org.springframework.data.mongodb.core.index.IndexDefinition)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+constructor:///com/bq/corbel/lib/mongo/index/MongoIndex/MongoIndex()|",
+      "|java+method:///com/bq/corbel/lib/mongo/index/MongoIndex/background()|",
+      "|java+method:///com/bq/corbel/lib/mongo/index/MongoIndex/expires(int,java.util.concurrent.TimeUnit)|",
+      "|java+method:///org/springframework/data/mongodb/core/MongoOperations/indexOps(java.lang.Class)|"
+    ],
+    "affectedLib": "com.bq.corbel.lib:mongodb:0.8.0",
+    "change": "ADDED"
+  }
+]

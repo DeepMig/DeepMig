@@ -1,0 +1,58 @@
+[
+  {
+    "coordinatesV1": "com.typesafe.akka:akka-mailboxes-common_2.10:2.2-M3",
+    "coordinatesV2": "com.typesafe.akka:akka-mailboxes-common_2.10:2.3-M1",
+    "caller": "|java+constructor:///akka/actor/mailbox/DurableExecutableMailboxConfig$/DurableExecutableMailboxConfig$()|",
+    "called": "|java+method:///scala/collection/immutable/StringOps/r()|",
+    "v1Body": [
+      "|java+method:///scala/Predef$/augmentString(java.lang.String)|",
+      "|java+constructor:///scala/collection/immutable/StringOps/StringOps(java.lang.String)|",
+      "|java+method:///scala/collection/immutable/StringLike/r()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/Predef$/augmentString(java.lang.String)|",
+      "|java+method:///scala/collection/immutable/StringOps/r()|",
+      "|java+constructor:///scala/collection/immutable/StringOps/StringOps(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.scala-lang:scala-library:2.10.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.typesafe.akka:akka-mailboxes-common_2.10:2.2-M3",
+    "coordinatesV2": "com.typesafe.akka:akka-mailboxes-common_2.10:2.3-M1",
+    "caller": "|java+method:///akka/actor/mailbox/DurableMessageSerialization$class/serialize(akka.actor.mailbox.DurableMessageQueue,akka.dispatch.Envelope)|",
+    "called": "|java+method:///akka/remote/WireFormats$RemoteEnvelope$Builder/build()|",
+    "v1Body": [
+      "|java+method:///akka/remote/WireFormats$RemoteEnvelope$Builder/setSender(akka.remote.WireFormats$ActorRefData)|",
+      "|java+method:///akka/dispatch/Envelope/message()|",
+      "|java+method:///akka/remote/WireFormats$RemoteEnvelope/newBuilder()|",
+      "|java+method:///akka/dispatch/Envelope/sender()|",
+      "|java+method:///akka/remote/WireFormats$RemoteEnvelope$Builder/setMessage(akka.remote.WireFormats$SerializedMessage)|",
+      "|java+method:///akka/actor/mailbox/DurableMessageQueue/system()|",
+      "|java+method:///com/google/protobuf/AbstractMessageLite/toByteArray()|",
+      "|java+method:///akka/remote/MessageSerializer$/serialize(akka.actor.ExtendedActorSystem,java.lang.Object)|",
+      "|java+method:///akka/remote/WireFormats$RemoteEnvelope$Builder/build()|",
+      "|java+method:///akka/actor/mailbox/DurableMessageSerialization$class/serializeActorRef$1(akka.actor.mailbox.DurableMessageQueue,akka.actor.ActorRef)|",
+      "|java+method:///akka/remote/WireFormats$RemoteEnvelope$Builder/setRecipient(akka.remote.WireFormats$ActorRefData)|",
+      "|java+method:///akka/actor/mailbox/DurableMessageQueue/owner()|"
+    ],
+    "v2Body": [
+      "|java+method:///akka/remote/WireFormats$RemoteEnvelope$Builder/setSender(akka.remote.WireFormats$ActorRefData)|",
+      "|java+method:///akka/dispatch/Envelope/message()|",
+      "|java+method:///akka/remote/WireFormats$RemoteEnvelope/newBuilder()|",
+      "|java+method:///akka/dispatch/Envelope/sender()|",
+      "|java+method:///akka/remote/WireFormats$RemoteEnvelope$Builder/setMessage(akka.remote.WireFormats$SerializedMessage)|",
+      "|java+method:///akka/actor/mailbox/DurableMessageQueue/system()|",
+      "|java+method:///akka/remote/MessageSerializer$/serialize(akka.actor.ExtendedActorSystem,java.lang.Object)|",
+      "|java+method:///akka/remote/WireFormats$RemoteEnvelope/toByteArray()|",
+      "|java+method:///akka/remote/WireFormats$RemoteEnvelope$Builder/build()|",
+      "|java+method:///akka/actor/mailbox/DurableMessageSerialization$class/serializeActorRef$1(akka.actor.mailbox.DurableMessageQueue,akka.actor.ActorRef)|",
+      "|java+method:///akka/remote/WireFormats$RemoteEnvelope$Builder/setRecipient(akka.remote.WireFormats$ActorRefData)|",
+      "|java+method:///akka/actor/mailbox/DurableMessageQueue/owner()|"
+    ],
+    "affectedLib": "com.typesafe.akka:akka-remote_2.10:2.3-M1",
+    "change": "ADDED"
+  }
+]

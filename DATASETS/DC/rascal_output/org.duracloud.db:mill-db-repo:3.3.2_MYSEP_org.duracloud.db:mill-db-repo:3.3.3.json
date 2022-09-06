@@ -1,0 +1,64 @@
+[
+  {
+    "coordinatesV1": "org.duracloud.db:mill-db-repo:3.3.3",
+    "coordinatesV2": "org.duracloud.db:mill-db-repo:3.3.2",
+    "caller": "|java+method:///org/duracloud/mill/db/repo/MillJpaRepoConfig/millRepoDataSource()|",
+    "called": "|java+constructor:///org/apache/commons/dbcp/BasicDataSource/BasicDataSource()|",
+    "v1Body": [
+      "|java+method:///java/lang/System/getProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/commons/dbcp/BasicDataSource/setUrl(java.lang.String)|",
+      "|java+method:///org/apache/commons/dbcp/BasicDataSource/setUsername(java.lang.String)|",
+      "|java+method:///org/apache/commons/dbcp/BasicDataSource/setPassword(java.lang.String)|",
+      "|java+method:///org/apache/commons/dbcp/BasicDataSource/setDriverClassName(java.lang.String)|",
+      "|java+constructor:///org/apache/commons/dbcp/BasicDataSource/BasicDataSource()|",
+      "|java+method:///java/text/MessageFormat/format(java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/System/getProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/commons/dbcp2/BasicDataSource/setMaxIdle(int)|",
+      "|java+method:///org/apache/commons/dbcp2/BasicDataSource/setUrl(java.lang.String)|",
+      "|java+method:///org/apache/commons/dbcp2/BasicDataSource/setTimeBetweenEvictionRunsMillis(long)|",
+      "|java+method:///org/apache/commons/dbcp2/BasicDataSource/setUsername(java.lang.String)|",
+      "|java+method:///org/apache/commons/dbcp2/BasicDataSource/setInitialSize(int)|",
+      "|java+method:///org/apache/commons/dbcp2/BasicDataSource/setMaxTotal(int)|",
+      "|java+method:///org/apache/commons/dbcp2/BasicDataSource/setMaxConnLifetimeMillis(long)|",
+      "|java+method:///org/apache/commons/dbcp2/BasicDataSource/setDriverClassName(java.lang.String)|",
+      "|java+method:///org/apache/commons/dbcp2/BasicDataSource/setPassword(java.lang.String)|",
+      "|java+method:///java/text/MessageFormat/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/apache/commons/dbcp2/BasicDataSource/BasicDataSource()|"
+    ],
+    "affectedLib": "commons-dbcp:commons-dbcp:1.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.duracloud.db:mill-db-repo:3.3.2",
+    "coordinatesV2": "org.duracloud.db:mill-db-repo:3.3.3",
+    "caller": "|java+method:///org/duracloud/mill/db/repo/MillJpaRepoConfig/millRepoDataSource()|",
+    "called": "|java+method:///org/apache/commons/dbcp2/BasicDataSource/setTimeBetweenEvictionRunsMillis(long)|",
+    "v1Body": [
+      "|java+method:///java/lang/System/getProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/commons/dbcp/BasicDataSource/setUrl(java.lang.String)|",
+      "|java+method:///org/apache/commons/dbcp/BasicDataSource/setUsername(java.lang.String)|",
+      "|java+method:///org/apache/commons/dbcp/BasicDataSource/setPassword(java.lang.String)|",
+      "|java+method:///org/apache/commons/dbcp/BasicDataSource/setDriverClassName(java.lang.String)|",
+      "|java+constructor:///org/apache/commons/dbcp/BasicDataSource/BasicDataSource()|",
+      "|java+method:///java/text/MessageFormat/format(java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/System/getProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/commons/dbcp2/BasicDataSource/setMaxIdle(int)|",
+      "|java+method:///org/apache/commons/dbcp2/BasicDataSource/setUrl(java.lang.String)|",
+      "|java+method:///org/apache/commons/dbcp2/BasicDataSource/setTimeBetweenEvictionRunsMillis(long)|",
+      "|java+method:///org/apache/commons/dbcp2/BasicDataSource/setUsername(java.lang.String)|",
+      "|java+method:///org/apache/commons/dbcp2/BasicDataSource/setInitialSize(int)|",
+      "|java+method:///org/apache/commons/dbcp2/BasicDataSource/setMaxTotal(int)|",
+      "|java+method:///org/apache/commons/dbcp2/BasicDataSource/setMaxConnLifetimeMillis(long)|",
+      "|java+method:///org/apache/commons/dbcp2/BasicDataSource/setDriverClassName(java.lang.String)|",
+      "|java+method:///org/apache/commons/dbcp2/BasicDataSource/setPassword(java.lang.String)|",
+      "|java+method:///java/text/MessageFormat/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/apache/commons/dbcp2/BasicDataSource/BasicDataSource()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-dbcp2:2.1",
+    "change": "ADDED"
+  }
+]

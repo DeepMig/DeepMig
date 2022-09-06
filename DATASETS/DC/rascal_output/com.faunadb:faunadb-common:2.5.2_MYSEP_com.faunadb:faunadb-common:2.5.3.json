@@ -1,0 +1,389 @@
+[
+  {
+    "coordinatesV1": "com.faunadb:faunadb-common:2.5.3",
+    "coordinatesV2": "com.faunadb:faunadb-common:2.5.2",
+    "caller": "|java+method:///com/faunadb/common/Connection/patch(java.lang.String,com.fasterxml.jackson.databind.JsonNode)|",
+    "called": "|java+method:///com/ning/http/client/RequestBuilder/build()|",
+    "v1Body": [
+      "|java+constructor:///com/ning/http/client/RequestBuilder/RequestBuilder(java.lang.String)|",
+      "|java+method:///com/ning/http/client/RequestBuilder/setHeader(java.lang.String,java.lang.String)|",
+      "|java+method:///com/faunadb/common/Connection/mkUrl(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValueAsString(java.lang.Object)|",
+      "|java+method:///com/ning/http/client/RequestBuilder/build()|",
+      "|java+method:///com/ning/http/client/RequestBuilder/setUrl(java.lang.String)|",
+      "|java+method:///com/faunadb/common/Connection/performRequest(com.ning.http.client.Request)|",
+      "|java+method:///com/ning/http/client/RequestBuilder/setBody(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/asynchttpclient/RequestBuilder/setBody(java.lang.String)|",
+      "|java+constructor:///org/asynchttpclient/RequestBuilder/RequestBuilder(java.lang.String)|",
+      "|java+method:///com/faunadb/common/Connection/mkUrl(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValueAsString(java.lang.Object)|",
+      "|java+method:///org/asynchttpclient/RequestBuilder/setHeader(java.lang.CharSequence,java.lang.String)|",
+      "|java+method:///org/asynchttpclient/RequestBuilder/build()|",
+      "|java+method:///com/faunadb/common/Connection/performRequest(org.asynchttpclient.Request)|",
+      "|java+method:///org/asynchttpclient/RequestBuilder/setUrl(java.lang.String)|"
+    ],
+    "affectedLib": "com.ning:async-http-client:1.9.39",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.faunadb:faunadb-common:2.5.3",
+    "coordinatesV2": "com.faunadb:faunadb-common:2.5.2",
+    "caller": "|java+method:///com/faunadb/common/Connection$Builder/build()|",
+    "called": "|java+method:///com/ning/http/client/AsyncHttpClientConfig$Builder/build()|",
+    "v1Body": [
+      "|java+method:///com/faunadb/common/Connection/access$100()|",
+      "|java+constructor:///com/faunadb/common/Connection/Connection(java.net.URL,java.lang.String,com.faunadb.common.RefAwareHttpClient,com.codahale.metrics.MetricRegistry,com.faunadb.common.Connection$1)|",
+      "|java+method:///com/ning/http/client/AsyncHttpClientConfig$Builder/setMaxRequestRetry(int)|",
+      "|java+method:///com/ning/http/client/AsyncHttpClientConfig$Builder/setConnectTimeout(int)|",
+      "|java+method:///com/ning/http/client/AsyncHttpClientConfig$Builder/build()|",
+      "|java+constructor:///com/faunadb/common/RefAwareHttpClient/RefAwareHttpClient(com.ning.http.client.AsyncHttpClient)|",
+      "|java+method:///com/ning/http/client/AsyncHttpClientConfig$Builder/setRequestTimeout(int)|",
+      "|java+constructor:///com/codahale/metrics/MetricRegistry/MetricRegistry()|",
+      "|java+constructor:///com/ning/http/client/AsyncHttpClient/AsyncHttpClient(com.ning.http.client.AsyncHttpClientConfig)|",
+      "|java+constructor:///com/ning/http/client/AsyncHttpClientConfig$Builder/AsyncHttpClientConfig$Builder()|",
+      "|java+method:///com/ning/http/client/AsyncHttpClientConfig$Builder/setPooledConnectionIdleTimeout(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/asynchttpclient/DefaultAsyncHttpClientConfig$Builder/setConnectTimeout(int)|",
+      "|java+method:///org/asynchttpclient/DefaultAsyncHttpClientConfig$Builder/setMaxRequestRetry(int)|",
+      "|java+constructor:///org/asynchttpclient/DefaultAsyncHttpClient/DefaultAsyncHttpClient(org.asynchttpclient.AsyncHttpClientConfig)|",
+      "|java+method:///org/asynchttpclient/DefaultAsyncHttpClientConfig$Builder/setRequestTimeout(int)|",
+      "|java+constructor:///org/asynchttpclient/DefaultAsyncHttpClientConfig$Builder/DefaultAsyncHttpClientConfig$Builder()|",
+      "|java+method:///com/faunadb/common/Connection/access$100()|",
+      "|java+method:///org/asynchttpclient/DefaultAsyncHttpClientConfig$Builder/build()|",
+      "|java+method:///org/asynchttpclient/DefaultAsyncHttpClientConfig$Builder/setPooledConnectionIdleTimeout(int)|",
+      "|java+constructor:///com/faunadb/common/Connection/Connection(java.net.URL,java.lang.String,com.faunadb.common.RefAwareHttpClient,com.codahale.metrics.MetricRegistry,com.faunadb.common.Connection$1)|",
+      "|java+constructor:///com/faunadb/common/RefAwareHttpClient/RefAwareHttpClient(org.asynchttpclient.AsyncHttpClient)|",
+      "|java+constructor:///com/codahale/metrics/MetricRegistry/MetricRegistry()|"
+    ],
+    "affectedLib": "com.ning:async-http-client:1.9.39",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.faunadb:faunadb-common:2.5.3",
+    "coordinatesV2": "com.faunadb:faunadb-common:2.5.2",
+    "caller": "|java+method:///com/faunadb/common/RefAwareHttpClient/retain()|",
+    "called": "|java+method:///com/ning/http/client/AsyncHttpClient/isClosed()|",
+    "v1Body": [
+      "|java+method:///java/util/concurrent/atomic/AtomicInteger/incrementAndGet()|",
+      "|java+method:///com/ning/http/client/AsyncHttpClient/isClosed()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/atomic/AtomicInteger/incrementAndGet()|",
+      "|java+method:///org/asynchttpclient/AsyncHttpClient/isClosed()|"
+    ],
+    "affectedLib": "com.ning:async-http-client:1.9.39",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.faunadb:faunadb-common:2.5.3",
+    "coordinatesV2": "com.faunadb:faunadb-common:2.5.2",
+    "caller": "|java+method:///com/faunadb/common/Connection/post(java.lang.String,com.fasterxml.jackson.databind.JsonNode)|",
+    "called": "|java+method:///com/ning/http/client/RequestBuilder/build()|",
+    "v1Body": [
+      "|java+constructor:///com/ning/http/client/RequestBuilder/RequestBuilder(java.lang.String)|",
+      "|java+method:///com/ning/http/client/RequestBuilder/setHeader(java.lang.String,java.lang.String)|",
+      "|java+method:///com/faunadb/common/Connection/mkUrl(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValueAsString(java.lang.Object)|",
+      "|java+method:///com/ning/http/client/RequestBuilder/build()|",
+      "|java+method:///com/ning/http/client/RequestBuilder/setUrl(java.lang.String)|",
+      "|java+method:///com/faunadb/common/Connection/performRequest(com.ning.http.client.Request)|",
+      "|java+method:///com/ning/http/client/RequestBuilder/setBody(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/asynchttpclient/RequestBuilder/setBody(java.lang.String)|",
+      "|java+constructor:///org/asynchttpclient/RequestBuilder/RequestBuilder(java.lang.String)|",
+      "|java+method:///com/faunadb/common/Connection/mkUrl(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValueAsString(java.lang.Object)|",
+      "|java+method:///org/asynchttpclient/RequestBuilder/setHeader(java.lang.CharSequence,java.lang.String)|",
+      "|java+method:///org/asynchttpclient/RequestBuilder/build()|",
+      "|java+method:///com/faunadb/common/Connection/performRequest(org.asynchttpclient.Request)|",
+      "|java+method:///org/asynchttpclient/RequestBuilder/setUrl(java.lang.String)|"
+    ],
+    "affectedLib": "com.ning:async-http-client:1.9.39",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.faunadb:faunadb-common:2.5.3",
+    "coordinatesV2": "com.faunadb:faunadb-common:2.5.2",
+    "caller": "|java+method:///com/faunadb/common/Connection/generateAuthHeader(java.lang.String)|",
+    "called": "|java+method:///com/ning/http/util/Base64/encode(byte%5B%5D)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/ning/http/util/Base64/encode(byte%5B%5D)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/String/getBytes(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///io/netty/handler/codec/base64/Base64/encode(io.netty.buffer.ByteBuf)|",
+      "|java+method:///io/netty/buffer/Unpooled/wrappedBuffer(byte%5B%5D)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/String/getBytes(java.nio.charset.Charset)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///io/netty/buffer/ByteBuf/toString(java.nio.charset.Charset)|"
+    ],
+    "affectedLib": "com.ning:async-http-client:1.9.39",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.faunadb:faunadb-common:2.5.3",
+    "coordinatesV2": "com.faunadb:faunadb-common:2.5.2",
+    "caller": "|java+method:///com/faunadb/common/Connection/put(java.lang.String,com.fasterxml.jackson.databind.JsonNode)|",
+    "called": "|java+method:///com/ning/http/client/RequestBuilder/build()|",
+    "v1Body": [
+      "|java+constructor:///com/ning/http/client/RequestBuilder/RequestBuilder(java.lang.String)|",
+      "|java+method:///com/ning/http/client/RequestBuilder/setHeader(java.lang.String,java.lang.String)|",
+      "|java+method:///com/faunadb/common/Connection/mkUrl(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValueAsString(java.lang.Object)|",
+      "|java+method:///com/ning/http/client/RequestBuilder/build()|",
+      "|java+method:///com/ning/http/client/RequestBuilder/setUrl(java.lang.String)|",
+      "|java+method:///com/faunadb/common/Connection/performRequest(com.ning.http.client.Request)|",
+      "|java+method:///com/ning/http/client/RequestBuilder/setBody(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/asynchttpclient/RequestBuilder/setBody(java.lang.String)|",
+      "|java+constructor:///org/asynchttpclient/RequestBuilder/RequestBuilder(java.lang.String)|",
+      "|java+method:///com/faunadb/common/Connection/mkUrl(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValueAsString(java.lang.Object)|",
+      "|java+method:///org/asynchttpclient/RequestBuilder/setHeader(java.lang.CharSequence,java.lang.String)|",
+      "|java+method:///org/asynchttpclient/RequestBuilder/build()|",
+      "|java+method:///com/faunadb/common/Connection/performRequest(org.asynchttpclient.Request)|",
+      "|java+method:///org/asynchttpclient/RequestBuilder/setUrl(java.lang.String)|"
+    ],
+    "affectedLib": "com.ning:async-http-client:1.9.39",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.faunadb:faunadb-common:2.5.3",
+    "coordinatesV2": "com.faunadb:faunadb-common:2.5.2",
+    "caller": "|java+method:///com/faunadb/common/RefAwareHttpClient/close()|",
+    "called": "|java+method:///com/ning/http/client/AsyncHttpClient/isClosed()|",
+    "v1Body": [
+      "|java+method:///java/util/concurrent/atomic/AtomicInteger/decrementAndGet()|",
+      "|java+method:///com/ning/http/client/AsyncHttpClient/close()|",
+      "|java+method:///com/ning/http/client/AsyncHttpClient/isClosed()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/atomic/AtomicInteger/decrementAndGet()|",
+      "|java+method:///org/asynchttpclient/AsyncHttpClient/close()|",
+      "|java+method:///org/asynchttpclient/AsyncHttpClient/isClosed()|"
+    ],
+    "affectedLib": "com.ning:async-http-client:1.9.39",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.faunadb:faunadb-common:2.5.3",
+    "coordinatesV2": "com.faunadb:faunadb-common:2.5.2",
+    "caller": "|java+method:///com/faunadb/common/Connection/get(java.lang.String,java.util.Map)|",
+    "called": "|java+method:///com/ning/http/client/RequestBuilder/build()|",
+    "v1Body": [
+      "|java+constructor:///com/ning/http/client/RequestBuilder/RequestBuilder(java.lang.String)|",
+      "|java+method:///com/faunadb/common/Connection/performRequest(com.ning.http.client.Request)|",
+      "|java+method:///com/faunadb/common/Connection/mkUrl(java.lang.String)|",
+      "|java+method:///com/ning/http/client/RequestBuilder/setQueryParams(java.util.Map)|",
+      "|java+method:///com/ning/http/client/RequestBuilder/build()|",
+      "|java+method:///com/ning/http/client/RequestBuilder/setUrl(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/asynchttpclient/RequestBuilder/RequestBuilder(java.lang.String)|",
+      "|java+method:///com/faunadb/common/Connection/mkUrl(java.lang.String)|",
+      "|java+method:///org/asynchttpclient/RequestBuilder/setQueryParams(java.util.Map)|",
+      "|java+method:///org/asynchttpclient/RequestBuilder/build()|",
+      "|java+method:///com/faunadb/common/Connection/performRequest(org.asynchttpclient.Request)|",
+      "|java+method:///org/asynchttpclient/RequestBuilder/setUrl(java.lang.String)|"
+    ],
+    "affectedLib": "com.ning:async-http-client:1.9.39",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.faunadb:faunadb-common:2.5.3",
+    "coordinatesV2": "com.faunadb:faunadb-common:2.5.2",
+    "caller": "|java+method:///com/faunadb/common/Connection/get(java.lang.String)|",
+    "called": "|java+method:///com/ning/http/client/RequestBuilder/build()|",
+    "v1Body": [
+      "|java+constructor:///com/ning/http/client/RequestBuilder/RequestBuilder(java.lang.String)|",
+      "|java+method:///com/faunadb/common/Connection/performRequest(com.ning.http.client.Request)|",
+      "|java+method:///com/faunadb/common/Connection/mkUrl(java.lang.String)|",
+      "|java+method:///com/ning/http/client/RequestBuilder/build()|",
+      "|java+method:///com/ning/http/client/RequestBuilder/setUrl(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/asynchttpclient/RequestBuilder/RequestBuilder(java.lang.String)|",
+      "|java+method:///com/faunadb/common/Connection/mkUrl(java.lang.String)|",
+      "|java+method:///org/asynchttpclient/RequestBuilder/build()|",
+      "|java+method:///com/faunadb/common/Connection/performRequest(org.asynchttpclient.Request)|",
+      "|java+method:///org/asynchttpclient/RequestBuilder/setUrl(java.lang.String)|"
+    ],
+    "affectedLib": "com.ning:async-http-client:1.9.39",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.faunadb:faunadb-common:2.5.2",
+    "coordinatesV2": "com.faunadb:faunadb-common:2.5.3",
+    "caller": "|java+method:///com/faunadb/common/Connection/patch(java.lang.String,com.fasterxml.jackson.databind.JsonNode)|",
+    "called": "|java+constructor:///org/asynchttpclient/RequestBuilder/RequestBuilder(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///com/ning/http/client/RequestBuilder/RequestBuilder(java.lang.String)|",
+      "|java+method:///com/ning/http/client/RequestBuilder/setHeader(java.lang.String,java.lang.String)|",
+      "|java+method:///com/faunadb/common/Connection/mkUrl(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValueAsString(java.lang.Object)|",
+      "|java+method:///com/ning/http/client/RequestBuilder/build()|",
+      "|java+method:///com/ning/http/client/RequestBuilder/setUrl(java.lang.String)|",
+      "|java+method:///com/faunadb/common/Connection/performRequest(com.ning.http.client.Request)|",
+      "|java+method:///com/ning/http/client/RequestBuilder/setBody(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/asynchttpclient/RequestBuilder/setBody(java.lang.String)|",
+      "|java+constructor:///org/asynchttpclient/RequestBuilder/RequestBuilder(java.lang.String)|",
+      "|java+method:///com/faunadb/common/Connection/mkUrl(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValueAsString(java.lang.Object)|",
+      "|java+method:///org/asynchttpclient/RequestBuilder/setHeader(java.lang.CharSequence,java.lang.String)|",
+      "|java+method:///org/asynchttpclient/RequestBuilder/build()|",
+      "|java+method:///com/faunadb/common/Connection/performRequest(org.asynchttpclient.Request)|",
+      "|java+method:///org/asynchttpclient/RequestBuilder/setUrl(java.lang.String)|"
+    ],
+    "affectedLib": "org.asynchttpclient:async-http-client:2.5.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.faunadb:faunadb-common:2.5.2",
+    "coordinatesV2": "com.faunadb:faunadb-common:2.5.3",
+    "caller": "|java+method:///com/faunadb/common/Connection$Builder/build()|",
+    "called": "|java+constructor:///org/asynchttpclient/DefaultAsyncHttpClientConfig$Builder/DefaultAsyncHttpClientConfig$Builder()|",
+    "v1Body": [
+      "|java+method:///com/faunadb/common/Connection/access$100()|",
+      "|java+constructor:///com/faunadb/common/Connection/Connection(java.net.URL,java.lang.String,com.faunadb.common.RefAwareHttpClient,com.codahale.metrics.MetricRegistry,com.faunadb.common.Connection$1)|",
+      "|java+method:///com/ning/http/client/AsyncHttpClientConfig$Builder/setMaxRequestRetry(int)|",
+      "|java+method:///com/ning/http/client/AsyncHttpClientConfig$Builder/setConnectTimeout(int)|",
+      "|java+method:///com/ning/http/client/AsyncHttpClientConfig$Builder/build()|",
+      "|java+constructor:///com/faunadb/common/RefAwareHttpClient/RefAwareHttpClient(com.ning.http.client.AsyncHttpClient)|",
+      "|java+method:///com/ning/http/client/AsyncHttpClientConfig$Builder/setRequestTimeout(int)|",
+      "|java+constructor:///com/codahale/metrics/MetricRegistry/MetricRegistry()|",
+      "|java+constructor:///com/ning/http/client/AsyncHttpClient/AsyncHttpClient(com.ning.http.client.AsyncHttpClientConfig)|",
+      "|java+constructor:///com/ning/http/client/AsyncHttpClientConfig$Builder/AsyncHttpClientConfig$Builder()|",
+      "|java+method:///com/ning/http/client/AsyncHttpClientConfig$Builder/setPooledConnectionIdleTimeout(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/asynchttpclient/DefaultAsyncHttpClientConfig$Builder/setConnectTimeout(int)|",
+      "|java+method:///org/asynchttpclient/DefaultAsyncHttpClientConfig$Builder/setMaxRequestRetry(int)|",
+      "|java+constructor:///org/asynchttpclient/DefaultAsyncHttpClient/DefaultAsyncHttpClient(org.asynchttpclient.AsyncHttpClientConfig)|",
+      "|java+method:///org/asynchttpclient/DefaultAsyncHttpClientConfig$Builder/setRequestTimeout(int)|",
+      "|java+constructor:///org/asynchttpclient/DefaultAsyncHttpClientConfig$Builder/DefaultAsyncHttpClientConfig$Builder()|",
+      "|java+method:///com/faunadb/common/Connection/access$100()|",
+      "|java+method:///org/asynchttpclient/DefaultAsyncHttpClientConfig$Builder/build()|",
+      "|java+method:///org/asynchttpclient/DefaultAsyncHttpClientConfig$Builder/setPooledConnectionIdleTimeout(int)|",
+      "|java+constructor:///com/faunadb/common/Connection/Connection(java.net.URL,java.lang.String,com.faunadb.common.RefAwareHttpClient,com.codahale.metrics.MetricRegistry,com.faunadb.common.Connection$1)|",
+      "|java+constructor:///com/faunadb/common/RefAwareHttpClient/RefAwareHttpClient(org.asynchttpclient.AsyncHttpClient)|",
+      "|java+constructor:///com/codahale/metrics/MetricRegistry/MetricRegistry()|"
+    ],
+    "affectedLib": "org.asynchttpclient:async-http-client:2.5.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.faunadb:faunadb-common:2.5.2",
+    "coordinatesV2": "com.faunadb:faunadb-common:2.5.3",
+    "caller": "|java+method:///com/faunadb/common/Connection/post(java.lang.String,com.fasterxml.jackson.databind.JsonNode)|",
+    "called": "|java+constructor:///org/asynchttpclient/RequestBuilder/RequestBuilder(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///com/ning/http/client/RequestBuilder/RequestBuilder(java.lang.String)|",
+      "|java+method:///com/ning/http/client/RequestBuilder/setHeader(java.lang.String,java.lang.String)|",
+      "|java+method:///com/faunadb/common/Connection/mkUrl(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValueAsString(java.lang.Object)|",
+      "|java+method:///com/ning/http/client/RequestBuilder/build()|",
+      "|java+method:///com/ning/http/client/RequestBuilder/setUrl(java.lang.String)|",
+      "|java+method:///com/faunadb/common/Connection/performRequest(com.ning.http.client.Request)|",
+      "|java+method:///com/ning/http/client/RequestBuilder/setBody(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/asynchttpclient/RequestBuilder/setBody(java.lang.String)|",
+      "|java+constructor:///org/asynchttpclient/RequestBuilder/RequestBuilder(java.lang.String)|",
+      "|java+method:///com/faunadb/common/Connection/mkUrl(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValueAsString(java.lang.Object)|",
+      "|java+method:///org/asynchttpclient/RequestBuilder/setHeader(java.lang.CharSequence,java.lang.String)|",
+      "|java+method:///org/asynchttpclient/RequestBuilder/build()|",
+      "|java+method:///com/faunadb/common/Connection/performRequest(org.asynchttpclient.Request)|",
+      "|java+method:///org/asynchttpclient/RequestBuilder/setUrl(java.lang.String)|"
+    ],
+    "affectedLib": "org.asynchttpclient:async-http-client:2.5.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.faunadb:faunadb-common:2.5.2",
+    "coordinatesV2": "com.faunadb:faunadb-common:2.5.3",
+    "caller": "|java+method:///com/faunadb/common/Connection/put(java.lang.String,com.fasterxml.jackson.databind.JsonNode)|",
+    "called": "|java+constructor:///org/asynchttpclient/RequestBuilder/RequestBuilder(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///com/ning/http/client/RequestBuilder/RequestBuilder(java.lang.String)|",
+      "|java+method:///com/ning/http/client/RequestBuilder/setHeader(java.lang.String,java.lang.String)|",
+      "|java+method:///com/faunadb/common/Connection/mkUrl(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValueAsString(java.lang.Object)|",
+      "|java+method:///com/ning/http/client/RequestBuilder/build()|",
+      "|java+method:///com/ning/http/client/RequestBuilder/setUrl(java.lang.String)|",
+      "|java+method:///com/faunadb/common/Connection/performRequest(com.ning.http.client.Request)|",
+      "|java+method:///com/ning/http/client/RequestBuilder/setBody(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/asynchttpclient/RequestBuilder/setBody(java.lang.String)|",
+      "|java+constructor:///org/asynchttpclient/RequestBuilder/RequestBuilder(java.lang.String)|",
+      "|java+method:///com/faunadb/common/Connection/mkUrl(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValueAsString(java.lang.Object)|",
+      "|java+method:///org/asynchttpclient/RequestBuilder/setHeader(java.lang.CharSequence,java.lang.String)|",
+      "|java+method:///org/asynchttpclient/RequestBuilder/build()|",
+      "|java+method:///com/faunadb/common/Connection/performRequest(org.asynchttpclient.Request)|",
+      "|java+method:///org/asynchttpclient/RequestBuilder/setUrl(java.lang.String)|"
+    ],
+    "affectedLib": "org.asynchttpclient:async-http-client:2.5.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.faunadb:faunadb-common:2.5.2",
+    "coordinatesV2": "com.faunadb:faunadb-common:2.5.3",
+    "caller": "|java+method:///com/faunadb/common/Connection/get(java.lang.String,java.util.Map)|",
+    "called": "|java+constructor:///org/asynchttpclient/RequestBuilder/RequestBuilder(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///com/ning/http/client/RequestBuilder/RequestBuilder(java.lang.String)|",
+      "|java+method:///com/faunadb/common/Connection/performRequest(com.ning.http.client.Request)|",
+      "|java+method:///com/faunadb/common/Connection/mkUrl(java.lang.String)|",
+      "|java+method:///com/ning/http/client/RequestBuilder/setQueryParams(java.util.Map)|",
+      "|java+method:///com/ning/http/client/RequestBuilder/build()|",
+      "|java+method:///com/ning/http/client/RequestBuilder/setUrl(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/asynchttpclient/RequestBuilder/RequestBuilder(java.lang.String)|",
+      "|java+method:///com/faunadb/common/Connection/mkUrl(java.lang.String)|",
+      "|java+method:///org/asynchttpclient/RequestBuilder/setQueryParams(java.util.Map)|",
+      "|java+method:///org/asynchttpclient/RequestBuilder/build()|",
+      "|java+method:///com/faunadb/common/Connection/performRequest(org.asynchttpclient.Request)|",
+      "|java+method:///org/asynchttpclient/RequestBuilder/setUrl(java.lang.String)|"
+    ],
+    "affectedLib": "org.asynchttpclient:async-http-client:2.5.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.faunadb:faunadb-common:2.5.2",
+    "coordinatesV2": "com.faunadb:faunadb-common:2.5.3",
+    "caller": "|java+method:///com/faunadb/common/Connection/get(java.lang.String)|",
+    "called": "|java+constructor:///org/asynchttpclient/RequestBuilder/RequestBuilder(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///com/ning/http/client/RequestBuilder/RequestBuilder(java.lang.String)|",
+      "|java+method:///com/faunadb/common/Connection/performRequest(com.ning.http.client.Request)|",
+      "|java+method:///com/faunadb/common/Connection/mkUrl(java.lang.String)|",
+      "|java+method:///com/ning/http/client/RequestBuilder/build()|",
+      "|java+method:///com/ning/http/client/RequestBuilder/setUrl(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/asynchttpclient/RequestBuilder/RequestBuilder(java.lang.String)|",
+      "|java+method:///com/faunadb/common/Connection/mkUrl(java.lang.String)|",
+      "|java+method:///org/asynchttpclient/RequestBuilder/build()|",
+      "|java+method:///com/faunadb/common/Connection/performRequest(org.asynchttpclient.Request)|",
+      "|java+method:///org/asynchttpclient/RequestBuilder/setUrl(java.lang.String)|"
+    ],
+    "affectedLib": "org.asynchttpclient:async-http-client:2.5.2",
+    "change": "ADDED"
+  }
+]

@@ -1,0 +1,88 @@
+[
+  {
+    "coordinatesV1": "com.microsoft.azure:spark-streaming-eventhubs_2.11:2.0.8",
+    "coordinatesV2": "com.microsoft.azure:spark-streaming-eventhubs_2.11:2.1.0",
+    "caller": "|java+method:///com/microsoft/azure/servicebus/MessagingFactory/getCBSChannel()|",
+    "called": "|java+constructor:///com/microsoft/azure/servicebus/CBSChannel/CBSChannel(com.microsoft.azure.servicebus.ISessionProvider,com.microsoft.azure.servicebus.amqp.IAmqpConnection,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///com/microsoft/azure/servicebus/CBSChannel/CBSChannel(com.microsoft.azure.servicebus.amqp.ISessionProvider,com.microsoft.azure.servicebus.amqp.IAmqpConnection,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/microsoft/azure/servicebus/CBSChannel/CBSChannel(com.microsoft.azure.servicebus.ISessionProvider,com.microsoft.azure.servicebus.amqp.IAmqpConnection,java.lang.String)|"
+    ],
+    "affectedLib": "com.microsoft.azure:azure-eventhubs:0.13.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.microsoft.azure:spark-streaming-eventhubs_2.11:2.0.8",
+    "coordinatesV2": "com.microsoft.azure:spark-streaming-eventhubs_2.11:2.1.0",
+    "caller": "|java+initializer:///com/microsoft/azure/servicebus/ClientConstants/ClientConstants$initializer|",
+    "called": "|java+method:///com/microsoft/azure/servicebus/ClientConstants/getPlatformInfo()|",
+    "v1Body": [
+      "|java+method:///org/apache/qpid/proton/amqp/Symbol/getSymbol(java.lang.String)|",
+      "|java+method:///com/microsoft/azure/servicebus/ClientConstants/getPlatformInfo()|",
+      "|java+method:///com/microsoft/azure/servicebus/ClientConstants/getFrameworkInfo()|",
+      "|java+method:///org/apache/qpid/proton/amqp/Symbol/valueOf(java.lang.String)|",
+      "|java+method:///java/time/Duration/ofSeconds(long)|",
+      "|java+method:///java/time/Duration/ofMinutes(long)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/qpid/proton/amqp/Symbol/getSymbol(java.lang.String)|",
+      "|java+method:///com/microsoft/azure/servicebus/ClientConstants/getPlatformInfo()|",
+      "|java+method:///org/apache/qpid/proton/amqp/Symbol/valueOf(java.lang.String)|",
+      "|java+method:///java/time/Duration/ofSeconds(long)|",
+      "|java+method:///java/time/Duration/ofMinutes(long)|"
+    ],
+    "affectedLib": "com.microsoft.azure:azure-eventhubs:0.13.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.microsoft.azure:spark-streaming-eventhubs_2.11:2.0.8",
+    "coordinatesV2": "com.microsoft.azure:spark-streaming-eventhubs_2.11:2.1.0",
+    "caller": "|java+method:///com/microsoft/azure/servicebus/MessagingFactory/onConnectionError(org.apache.qpid.proton.amqp.transport.ErrorCondition)|",
+    "called": "|java+method:///com/microsoft/azure/servicebus/MessagingFactory/onOpenComplete(java.lang.Exception)|",
+    "v1Body": [
+      "|java+method:///org/apache/qpid/proton/engine/Link/close()|",
+      "|java+method:///org/apache/qpid/proton/engine/Link/getRemoteState()|",
+      "|java+method:///org/apache/qpid/proton/engine/Connection/getLocalState()|",
+      "|java+method:///com/microsoft/azure/servicebus/ExceptionUtil/toException(org.apache.qpid.proton.amqp.transport.ErrorCondition)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/qpid/proton/engine/BaseHandler/getHandler(org.apache.qpid.proton.engine.Extendable)|",
+      "|java+constructor:///java/util/LinkedList/LinkedList(java.util.Collection)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///com/microsoft/azure/servicebus/MessagingFactory/getReactor()|",
+      "|java+method:///org/apache/qpid/proton/reactor/Reactor/stop()|",
+      "|java+method:///com/microsoft/azure/servicebus/amqp/BaseLinkHandler/processOnClose(org.apache.qpid.proton.engine.Link,org.apache.qpid.proton.amqp.transport.ErrorCondition)|",
+      "|java+method:///org/apache/qpid/proton/engine/Link/getLocalState()|",
+      "|java+method:///org/apache/qpid/proton/engine/Connection/close()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/concurrent/CompletableFuture/isDone()|",
+      "|java+method:///com/microsoft/azure/servicebus/MessagingFactory/getIsClosingOrClosed()|",
+      "|java+constructor:///java/util/LinkedList/LinkedList()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///com/microsoft/azure/servicebus/MessagingFactory/onOpenComplete(java.lang.Exception)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/qpid/proton/engine/Link/close()|",
+      "|java+method:///org/apache/qpid/proton/engine/Link/getRemoteState()|",
+      "|java+method:///org/apache/qpid/proton/engine/Connection/getLocalState()|",
+      "|java+method:///com/microsoft/azure/servicebus/ExceptionUtil/toException(org.apache.qpid.proton.amqp.transport.ErrorCondition)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/qpid/proton/engine/BaseHandler/getHandler(org.apache.qpid.proton.engine.Extendable)|",
+      "|java+method:///com/microsoft/azure/servicebus/MessagingFactory/getIsClosingOrClosed()|",
+      "|java+constructor:///java/util/LinkedList/LinkedList(java.util.Collection)|",
+      "|java+method:///com/microsoft/azure/servicebus/MessagingFactory/getReactor()|",
+      "|java+method:///org/apache/qpid/proton/engine/Connection/getRemoteState()|",
+      "|java+method:///org/apache/qpid/proton/reactor/Reactor/stop()|",
+      "|java+method:///com/microsoft/azure/servicebus/amqp/BaseLinkHandler/processOnClose(org.apache.qpid.proton.engine.Link,org.apache.qpid.proton.amqp.transport.ErrorCondition)|",
+      "|java+method:///org/apache/qpid/proton/engine/Link/getLocalState()|",
+      "|java+method:///org/apache/qpid/proton/engine/Connection/close()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/concurrent/CompletableFuture/isDone()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///com/microsoft/azure/servicebus/MessagingFactory/onOpenComplete(java.lang.Exception)|"
+    ],
+    "affectedLib": "com.microsoft.azure:azure-eventhubs:0.13.1",
+    "change": "UPDATED"
+  }
+]

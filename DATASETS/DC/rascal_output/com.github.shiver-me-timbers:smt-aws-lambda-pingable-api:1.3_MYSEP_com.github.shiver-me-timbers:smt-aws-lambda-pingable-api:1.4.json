@@ -1,0 +1,62 @@
+[
+  {
+    "coordinatesV1": "com.github.shiver-me-timbers:smt-aws-lambda-pingable-api:1.3",
+    "coordinatesV2": "com.github.shiver-me-timbers:smt-aws-lambda-pingable-api:1.4",
+    "caller": "|java+method:///shiver/me/timbers/aws/pingable/PingableRequestStreamHandler/handleRequest(java.io.InputStream,java.io.OutputStream,com.amazonaws.services.lambda.runtime.Context)|",
+    "called": "|java+method:///shiver/me/timbers/aws/common/IOStreams/buffer(java.io.InputStream)|",
+    "v1Body": [
+      "|java+method:///shiver/me/timbers/aws/pingable/PingableRequestStreamHandler/isPingRequest(java.io.BufferedInputStream)|",
+      "|java+method:///java/io/BufferedInputStream/reset()|",
+      "|java+method:///shiver/me/timbers/aws/common/IOStreams/buffer(java.io.InputStream)|",
+      "|java+method:///java/io/BufferedInputStream/mark(int)|",
+      "|java+method:///com/amazonaws/services/lambda/runtime/RequestStreamHandler/handleRequest(java.io.InputStream,java.io.OutputStream,com.amazonaws.services.lambda.runtime.Context)|"
+    ],
+    "v2Body": [
+      "|java+method:///shiver/me/timbers/aws/pingable/PingableRequestStreamHandler/isPingRequest(java.io.BufferedInputStream)|",
+      "|java+method:///java/io/BufferedInputStream/reset()|",
+      "|java+method:///shiver/me/timbers/aws/pingable/PingableRequestStreamHandler/ping()|",
+      "|java+method:///shiver/me/timbers/aws/common/IOStreams/buffer(java.io.InputStream)|",
+      "|java+method:///java/io/BufferedInputStream/mark(int)|",
+      "|java+method:///com/amazonaws/services/lambda/runtime/RequestStreamHandler/handleRequest(java.io.InputStream,java.io.OutputStream,com.amazonaws.services.lambda.runtime.Context)|"
+    ],
+    "affectedLib": "com.github.shiver-me-timbers:smt-aws-lambda-common:1.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.github.shiver-me-timbers:smt-aws-lambda-pingable-api:1.3",
+    "coordinatesV2": "com.github.shiver-me-timbers:smt-aws-lambda-pingable-api:1.4",
+    "caller": "|java+method:///shiver/me/timbers/aws/pingable/PingableRequestStreamHandler/isPingRequest(java.io.BufferedInputStream)|",
+    "called": "|java+method:///shiver/me/timbers/aws/common/IOStreams/readBytesToString(java.io.InputStream,int)|",
+    "v1Body": [
+      "|java+method:///shiver/me/timbers/aws/common/Env/get(java.lang.String)|",
+      "|java+method:///shiver/me/timbers/aws/common/IOStreams/readString(java.io.InputStream,int)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///shiver/me/timbers/aws/common/IOStreams/readBytesToString(java.io.InputStream,int)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|"
+    ],
+    "affectedLib": "com.github.shiver-me-timbers:smt-aws-lambda-common:1.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.github.shiver-me-timbers:smt-aws-lambda-pingable-api:1.3",
+    "coordinatesV2": "com.github.shiver-me-timbers:smt-aws-lambda-pingable-api:1.4",
+    "caller": "|java+constructor:///shiver/me/timbers/aws/pingable/PingableRequestStreamHandler/PingableRequestStreamHandler(shiver.me.timbers.aws.common.Env,shiver.me.timbers.aws.common.IOStreams,com.amazonaws.services.lambda.runtime.RequestStreamHandler)|",
+    "called": "|java+method:///shiver/me/timbers/aws/common/Env/get(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///shiver/me/timbers/aws/common/Env/get(java.lang.String)|",
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///org/apache/log4j/Logger/info(java.lang.Object)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.github.shiver-me-timbers:smt-aws-lambda-common:1.4",
+    "change": "UPDATED"
+  }
+]

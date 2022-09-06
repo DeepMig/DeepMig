@@ -1,0 +1,442 @@
+[
+  {
+    "coordinatesV1": "org.sonarsource.sonarqube:sonar-ws:6.0-RC1",
+    "coordinatesV2": "org.sonarsource.sonarqube:sonar-ws:5.6.7",
+    "caller": "|java+method:///org/sonarqube/ws/client/OkHttpResponse/contentType()|",
+    "called": "|java+method:///com/squareup/okhttp/Response/header(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/squareup/okhttp/Response/header(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/Response/header(java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.6.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.sonarsource.sonarqube:sonar-ws:6.0-RC1",
+    "coordinatesV2": "org.sonarsource.sonarqube:sonar-ws:5.6.7",
+    "caller": "|java+method:///org/sonarqube/ws/client/HttpConnector/get(org.sonarqube.ws.client.GetRequest)|",
+    "called": "|java+method:///com/squareup/okhttp/Request$Builder/build()|",
+    "v1Body": [
+      "|java+method:///org/sonarqube/ws/client/HttpConnector/prepareOkRequestBuilder(org.sonarqube.ws.client.WsRequest,com.squareup.okhttp.HttpUrl$Builder)|",
+      "|java+method:///com/squareup/okhttp/Request$Builder/get()|",
+      "|java+method:///org/sonarqube/ws/client/HttpConnector/doCall(com.squareup.okhttp.Request)|",
+      "|java+method:///org/sonarqube/ws/client/HttpConnector/prepareUrlBuilder(org.sonarqube.ws.client.WsRequest)|",
+      "|java+method:///com/squareup/okhttp/Request$Builder/build()|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/Request$Builder/build()|",
+      "|java+method:///org/sonarqube/ws/client/HttpConnector/doCall(okhttp3.Request)|",
+      "|java+method:///okhttp3/Request$Builder/get()|",
+      "|java+method:///org/sonarqube/ws/client/HttpConnector/prepareUrlBuilder(org.sonarqube.ws.client.WsRequest)|",
+      "|java+method:///org/sonarqube/ws/client/HttpConnector/prepareOkRequestBuilder(org.sonarqube.ws.client.WsRequest,okhttp3.HttpUrl$Builder)|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.6.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.sonarsource.sonarqube:sonar-ws:6.0-RC1",
+    "coordinatesV2": "org.sonarsource.sonarqube:sonar-ws:5.6.7",
+    "caller": "|java+method:///org/sonarqube/ws/client/OkHttpResponse/requestUrl()|",
+    "called": "|java+method:///com/squareup/okhttp/Request/urlString()|",
+    "v1Body": [
+      "|java+method:///com/squareup/okhttp/Request/urlString()|",
+      "|java+method:///com/squareup/okhttp/Response/request()|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/Request/url()|",
+      "|java+method:///okhttp3/HttpUrl/toString()|",
+      "|java+method:///okhttp3/Response/request()|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.6.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.sonarsource.sonarqube:sonar-ws:6.0-RC1",
+    "coordinatesV2": "org.sonarsource.sonarqube:sonar-ws:5.6.7",
+    "caller": "|java+method:///org/sonarqube/ws/client/OkHttpResponse/contentStream()|",
+    "called": "|java+method:///com/squareup/okhttp/ResponseBody/byteStream()|",
+    "v1Body": [
+      "|java+method:///org/sonarqube/ws/client/OkHttpResponse/fail(java.lang.Exception)|",
+      "|java+method:///com/squareup/okhttp/Response/body()|",
+      "|java+method:///com/squareup/okhttp/ResponseBody/byteStream()|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/Response/body()|",
+      "|java+method:///okhttp3/ResponseBody/byteStream()|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.6.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.sonarsource.sonarqube:sonar-ws:6.0-RC1",
+    "coordinatesV2": "org.sonarsource.sonarqube:sonar-ws:5.6.7",
+    "caller": "|java+method:///org/sonarqube/ws/client/OkHttpResponse/content()|",
+    "called": "|java+method:///com/squareup/okhttp/ResponseBody/string()|",
+    "v1Body": [
+      "|java+method:///org/sonarqube/ws/client/OkHttpResponse/fail(java.lang.Exception)|",
+      "|java+method:///com/squareup/okhttp/Response/body()|",
+      "|java+method:///com/squareup/okhttp/ResponseBody/string()|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/ResponseBody/close()|",
+      "|java+method:///org/sonarqube/ws/client/OkHttpResponse/fail(java.lang.Exception)|",
+      "|java+method:///okhttp3/Response/body()|",
+      "|java+method:///okhttp3/ResponseBody/string()|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.6.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.sonarsource.sonarqube:sonar-ws:6.0-RC1",
+    "coordinatesV2": "org.sonarsource.sonarqube:sonar-ws:5.6.7",
+    "caller": "|java+method:///org/sonarqube/ws/client/OkHttpResponse/contentReader()|",
+    "called": "|java+method:///com/squareup/okhttp/ResponseBody/charStream()|",
+    "v1Body": [
+      "|java+method:///org/sonarqube/ws/client/OkHttpResponse/fail(java.lang.Exception)|",
+      "|java+method:///com/squareup/okhttp/Response/body()|",
+      "|java+method:///com/squareup/okhttp/ResponseBody/charStream()|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/Response/body()|",
+      "|java+method:///okhttp3/ResponseBody/charStream()|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.6.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.sonarsource.sonarqube:sonar-ws:6.0-RC1",
+    "coordinatesV2": "org.sonarsource.sonarqube:sonar-ws:5.6.7",
+    "caller": "|java+method:///org/sonarqube/ws/client/HttpConnector/baseUrl()|",
+    "called": "|java+method:///com/squareup/okhttp/HttpUrl/url()|",
+    "v1Body": [
+      "|java+method:///com/squareup/okhttp/HttpUrl/url()|",
+      "|java+method:///java/net/URL/toExternalForm()|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/HttpUrl/url()|",
+      "|java+method:///java/net/URL/toExternalForm()|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.6.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.sonarsource.sonarqube:sonar-ws:6.0-RC1",
+    "coordinatesV2": "org.sonarsource.sonarqube:sonar-ws:5.6.7",
+    "caller": "|java+method:///org/sonarqube/ws/client/HttpConnector/post(org.sonarqube.ws.client.PostRequest)|",
+    "called": "|java+constructor:///com/squareup/okhttp/MultipartBuilder/MultipartBuilder()|",
+    "v1Body": [
+      "|java+method:///org/sonarqube/ws/client/HttpConnector/prepareOkRequestBuilder(org.sonarqube.ws.client.WsRequest,com.squareup.okhttp.HttpUrl$Builder)|",
+      "|java+method:///com/squareup/okhttp/RequestBody/create(com.squareup.okhttp.MediaType,java.lang.String)|",
+      "|java+method:///org/sonarqube/ws/client/PostRequest/getParts()|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///java/util/Map/isEmpty()|",
+      "|java+method:///org/sonarqube/ws/client/HttpConnector/prepareUrlBuilder(org.sonarqube.ws.client.WsRequest)|",
+      "|java+method:///com/squareup/okhttp/RequestBody/create(com.squareup.okhttp.MediaType,java.io.File)|",
+      "|java+method:///com/squareup/okhttp/Request$Builder/post(com.squareup.okhttp.RequestBody)|",
+      "|java+method:///com/squareup/okhttp/MediaType/parse(java.lang.String)|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///com/squareup/okhttp/Request$Builder/build()|",
+      "|java+method:///org/sonarqube/ws/client/PostRequest$Part/getFile()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/sonarqube/ws/client/HttpConnector/doCall(com.squareup.okhttp.Request)|",
+      "|java+method:///org/sonarqube/ws/client/PostRequest$Part/getMediaType()|",
+      "|java+method:///com/squareup/okhttp/MultipartBuilder/build()|",
+      "|java+method:///com/squareup/okhttp/MultipartBuilder/addPart(com.squareup.okhttp.Headers,com.squareup.okhttp.RequestBody)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///com/squareup/okhttp/MultipartBuilder/MultipartBuilder()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/squareup/okhttp/Headers/of(java.lang.String%5B%5D)|",
+      "|java+method:///com/squareup/okhttp/MultipartBuilder/type(com.squareup.okhttp.MediaType)|",
+      "|java+method:///java/util/Set/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/MultipartBody$Builder/build()|",
+      "|java+method:///okhttp3/Request$Builder/build()|",
+      "|java+method:///okhttp3/RequestBody/create(okhttp3.MediaType,java.lang.String)|",
+      "|java+method:///org/sonarqube/ws/client/PostRequest/getParts()|",
+      "|java+method:///org/sonarqube/ws/client/PostRequest$Part/getMediaType()|",
+      "|java+method:///java/util/Map/isEmpty()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/sonarqube/ws/client/HttpConnector/prepareUrlBuilder(org.sonarqube.ws.client.WsRequest)|",
+      "|java+method:///okhttp3/RequestBody/create(okhttp3.MediaType,java.io.File)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///okhttp3/Request$Builder/post(okhttp3.RequestBody)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+constructor:///okhttp3/MultipartBody$Builder/MultipartBody$Builder()|",
+      "|java+method:///org/sonarqube/ws/client/HttpConnector/prepareOkRequestBuilder(org.sonarqube.ws.client.WsRequest,okhttp3.HttpUrl$Builder)|",
+      "|java+method:///org/sonarqube/ws/client/PostRequest$Part/getFile()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///org/sonarqube/ws/client/HttpConnector/doCall(okhttp3.Request)|",
+      "|java+method:///okhttp3/MultipartBody$Builder/addPart(okhttp3.Headers,okhttp3.RequestBody)|",
+      "|java+method:///okhttp3/Headers/of(java.lang.String%5B%5D)|",
+      "|java+method:///okhttp3/MultipartBody$Builder/setType(okhttp3.MediaType)|",
+      "|java+method:///okhttp3/MediaType/parse(java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.6.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.sonarsource.sonarqube:sonar-ws:6.0-RC1",
+    "coordinatesV2": "org.sonarsource.sonarqube:sonar-ws:5.6.7",
+    "caller": "|java+method:///org/sonarqube/ws/client/HttpConnector/prepareUrlBuilder(org.sonarqube.ws.client.WsRequest)|",
+    "called": "|java+method:///com/squareup/okhttp/HttpUrl$Builder/addQueryParameter(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/String/replaceAll(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///com/squareup/okhttp/HttpUrl$Builder/addQueryParameter(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|",
+      "|java+method:///org/sonarqube/ws/client/WsRequest/getParams()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///com/squareup/okhttp/HttpUrl/newBuilder()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///org/sonarqube/ws/client/WsRequest/getPath()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/String/replaceAll(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///okhttp3/HttpUrl$Builder/addQueryParameter(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///org/sonarqube/ws/client/WsRequest/getPath()|",
+      "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|",
+      "|java+method:///org/sonarqube/ws/client/WsRequest/getParams()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///okhttp3/HttpUrl/newBuilder()|"
+    ],
+    "affectedLib": "com.squareup.okhttp:okhttp:2.6.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.sonarsource.sonarqube:sonar-ws:5.6.7",
+    "coordinatesV2": "org.sonarsource.sonarqube:sonar-ws:6.0-RC1",
+    "caller": "|java+method:///org/sonarqube/ws/client/OkHttpResponse/contentType()|",
+    "called": "|java+method:///okhttp3/Response/header(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/squareup/okhttp/Response/header(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/Response/header(java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.3.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sonarsource.sonarqube:sonar-ws:5.6.7",
+    "coordinatesV2": "org.sonarsource.sonarqube:sonar-ws:6.0-RC1",
+    "caller": "|java+method:///org/sonarqube/ws/client/HttpConnector/get(org.sonarqube.ws.client.GetRequest)|",
+    "called": "|java+method:///okhttp3/Request$Builder/build()|",
+    "v1Body": [
+      "|java+method:///org/sonarqube/ws/client/HttpConnector/prepareOkRequestBuilder(org.sonarqube.ws.client.WsRequest,com.squareup.okhttp.HttpUrl$Builder)|",
+      "|java+method:///com/squareup/okhttp/Request$Builder/get()|",
+      "|java+method:///org/sonarqube/ws/client/HttpConnector/doCall(com.squareup.okhttp.Request)|",
+      "|java+method:///org/sonarqube/ws/client/HttpConnector/prepareUrlBuilder(org.sonarqube.ws.client.WsRequest)|",
+      "|java+method:///com/squareup/okhttp/Request$Builder/build()|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/Request$Builder/build()|",
+      "|java+method:///org/sonarqube/ws/client/HttpConnector/doCall(okhttp3.Request)|",
+      "|java+method:///okhttp3/Request$Builder/get()|",
+      "|java+method:///org/sonarqube/ws/client/HttpConnector/prepareUrlBuilder(org.sonarqube.ws.client.WsRequest)|",
+      "|java+method:///org/sonarqube/ws/client/HttpConnector/prepareOkRequestBuilder(org.sonarqube.ws.client.WsRequest,okhttp3.HttpUrl$Builder)|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.3.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sonarsource.sonarqube:sonar-ws:5.6.7",
+    "coordinatesV2": "org.sonarsource.sonarqube:sonar-ws:6.0-RC1",
+    "caller": "|java+method:///org/sonarqube/ws/client/OkHttpResponse/content()|",
+    "called": "|java+method:///okhttp3/ResponseBody/string()|",
+    "v1Body": [
+      "|java+method:///org/sonarqube/ws/client/OkHttpResponse/fail(java.lang.Exception)|",
+      "|java+method:///com/squareup/okhttp/Response/body()|",
+      "|java+method:///com/squareup/okhttp/ResponseBody/string()|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/ResponseBody/close()|",
+      "|java+method:///org/sonarqube/ws/client/OkHttpResponse/fail(java.lang.Exception)|",
+      "|java+method:///okhttp3/Response/body()|",
+      "|java+method:///okhttp3/ResponseBody/string()|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.3.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sonarsource.sonarqube:sonar-ws:5.6.7",
+    "coordinatesV2": "org.sonarsource.sonarqube:sonar-ws:6.0-RC1",
+    "caller": "|java+method:///org/sonarqube/ws/client/OkHttpResponse/contentReader()|",
+    "called": "|java+method:///okhttp3/ResponseBody/charStream()|",
+    "v1Body": [
+      "|java+method:///org/sonarqube/ws/client/OkHttpResponse/fail(java.lang.Exception)|",
+      "|java+method:///com/squareup/okhttp/Response/body()|",
+      "|java+method:///com/squareup/okhttp/ResponseBody/charStream()|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/Response/body()|",
+      "|java+method:///okhttp3/ResponseBody/charStream()|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.3.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sonarsource.sonarqube:sonar-ws:5.6.7",
+    "coordinatesV2": "org.sonarsource.sonarqube:sonar-ws:6.0-RC1",
+    "caller": "|java+method:///org/sonarqube/ws/client/HttpConnector/post(org.sonarqube.ws.client.PostRequest)|",
+    "called": "|java+method:///okhttp3/Request$Builder/post(okhttp3.RequestBody)|",
+    "v1Body": [
+      "|java+method:///org/sonarqube/ws/client/HttpConnector/prepareOkRequestBuilder(org.sonarqube.ws.client.WsRequest,com.squareup.okhttp.HttpUrl$Builder)|",
+      "|java+method:///com/squareup/okhttp/RequestBody/create(com.squareup.okhttp.MediaType,java.lang.String)|",
+      "|java+method:///org/sonarqube/ws/client/PostRequest/getParts()|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///java/util/Map/isEmpty()|",
+      "|java+method:///org/sonarqube/ws/client/HttpConnector/prepareUrlBuilder(org.sonarqube.ws.client.WsRequest)|",
+      "|java+method:///com/squareup/okhttp/RequestBody/create(com.squareup.okhttp.MediaType,java.io.File)|",
+      "|java+method:///com/squareup/okhttp/Request$Builder/post(com.squareup.okhttp.RequestBody)|",
+      "|java+method:///com/squareup/okhttp/MediaType/parse(java.lang.String)|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///com/squareup/okhttp/Request$Builder/build()|",
+      "|java+method:///org/sonarqube/ws/client/PostRequest$Part/getFile()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/sonarqube/ws/client/HttpConnector/doCall(com.squareup.okhttp.Request)|",
+      "|java+method:///org/sonarqube/ws/client/PostRequest$Part/getMediaType()|",
+      "|java+method:///com/squareup/okhttp/MultipartBuilder/build()|",
+      "|java+method:///com/squareup/okhttp/MultipartBuilder/addPart(com.squareup.okhttp.Headers,com.squareup.okhttp.RequestBody)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///com/squareup/okhttp/MultipartBuilder/MultipartBuilder()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/squareup/okhttp/Headers/of(java.lang.String%5B%5D)|",
+      "|java+method:///com/squareup/okhttp/MultipartBuilder/type(com.squareup.okhttp.MediaType)|",
+      "|java+method:///java/util/Set/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/MultipartBody$Builder/build()|",
+      "|java+method:///okhttp3/Request$Builder/build()|",
+      "|java+method:///okhttp3/RequestBody/create(okhttp3.MediaType,java.lang.String)|",
+      "|java+method:///org/sonarqube/ws/client/PostRequest/getParts()|",
+      "|java+method:///org/sonarqube/ws/client/PostRequest$Part/getMediaType()|",
+      "|java+method:///java/util/Map/isEmpty()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/sonarqube/ws/client/HttpConnector/prepareUrlBuilder(org.sonarqube.ws.client.WsRequest)|",
+      "|java+method:///okhttp3/RequestBody/create(okhttp3.MediaType,java.io.File)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///okhttp3/Request$Builder/post(okhttp3.RequestBody)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+constructor:///okhttp3/MultipartBody$Builder/MultipartBody$Builder()|",
+      "|java+method:///org/sonarqube/ws/client/HttpConnector/prepareOkRequestBuilder(org.sonarqube.ws.client.WsRequest,okhttp3.HttpUrl$Builder)|",
+      "|java+method:///org/sonarqube/ws/client/PostRequest$Part/getFile()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///org/sonarqube/ws/client/HttpConnector/doCall(okhttp3.Request)|",
+      "|java+method:///okhttp3/MultipartBody$Builder/addPart(okhttp3.Headers,okhttp3.RequestBody)|",
+      "|java+method:///okhttp3/Headers/of(java.lang.String%5B%5D)|",
+      "|java+method:///okhttp3/MultipartBody$Builder/setType(okhttp3.MediaType)|",
+      "|java+method:///okhttp3/MediaType/parse(java.lang.String)|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.3.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sonarsource.sonarqube:sonar-ws:5.6.7",
+    "coordinatesV2": "org.sonarsource.sonarqube:sonar-ws:6.0-RC1",
+    "caller": "|java+method:///org/sonarqube/ws/client/HttpConnector/prepareUrlBuilder(org.sonarqube.ws.client.WsRequest)|",
+    "called": "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/String/replaceAll(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///com/squareup/okhttp/HttpUrl$Builder/addQueryParameter(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///com/squareup/okhttp/HttpUrl/resolve(java.lang.String)|",
+      "|java+method:///org/sonarqube/ws/client/WsRequest/getParams()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///com/squareup/okhttp/HttpUrl/newBuilder()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///org/sonarqube/ws/client/WsRequest/getPath()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/String/replaceAll(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///okhttp3/HttpUrl$Builder/addQueryParameter(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///org/sonarqube/ws/client/WsRequest/getPath()|",
+      "|java+method:///okhttp3/HttpUrl/resolve(java.lang.String)|",
+      "|java+method:///org/sonarqube/ws/client/WsRequest/getParams()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///okhttp3/HttpUrl/newBuilder()|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.3.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sonarsource.sonarqube:sonar-ws:5.6.7",
+    "coordinatesV2": "org.sonarsource.sonarqube:sonar-ws:6.0-RC1",
+    "caller": "|java+method:///org/sonarqube/ws/client/OkHttpResponse/contentStream()|",
+    "called": "|java+method:///okhttp3/ResponseBody/byteStream()|",
+    "v1Body": [
+      "|java+method:///org/sonarqube/ws/client/OkHttpResponse/fail(java.lang.Exception)|",
+      "|java+method:///com/squareup/okhttp/Response/body()|",
+      "|java+method:///com/squareup/okhttp/ResponseBody/byteStream()|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/Response/body()|",
+      "|java+method:///okhttp3/ResponseBody/byteStream()|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.3.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sonarsource.sonarqube:sonar-ws:5.6.7",
+    "coordinatesV2": "org.sonarsource.sonarqube:sonar-ws:6.0-RC1",
+    "caller": "|java+method:///org/sonarqube/ws/client/HttpConnector/baseUrl()|",
+    "called": "|java+method:///okhttp3/HttpUrl/url()|",
+    "v1Body": [
+      "|java+method:///com/squareup/okhttp/HttpUrl/url()|",
+      "|java+method:///java/net/URL/toExternalForm()|"
+    ],
+    "v2Body": [
+      "|java+method:///okhttp3/HttpUrl/url()|",
+      "|java+method:///java/net/URL/toExternalForm()|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.3.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sonarsource.sonarqube:sonar-ws:5.6.7",
+    "coordinatesV2": "org.sonarsource.sonarqube:sonar-ws:6.0-RC1",
+    "caller": "|java+method:///org/sonarqube/ws/client/HttpConnector$Builder/build()|",
+    "called": "|java+method:///com/google/common/base/Strings/isNullOrEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/sonarqube/ws/client/HttpConnector$JavaVersion/HttpConnector$JavaVersion()|",
+      "|java+method:///org/sonarqube/ws/client/HttpConnector$Builder/build(org.sonarqube.ws.client.HttpConnector$JavaVersion)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+constructor:///org/sonarqube/ws/client/HttpConnector/HttpConnector(org.sonarqube.ws.client.HttpConnector$Builder,org.sonarqube.ws.client.HttpConnector$1)|",
+      "|java+method:///com/google/common/base/Strings/isNullOrEmpty(java.lang.String)|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "UPDATED"
+  }
+]

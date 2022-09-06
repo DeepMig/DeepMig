@@ -1,0 +1,79 @@
+[
+  {
+    "coordinatesV1": "com.twitter:storehaus-mysql_2.9.3:0.9.0rc1",
+    "coordinatesV2": "com.twitter:storehaus-mysql_2.9.3:0.7.2",
+    "caller": "|java+method:///com/twitter/storehaus/mysql/MySqlStore/multiGet(scala.collection.immutable.Set)|",
+    "called": "|java+method:///com/twitter/storehaus/FutureOps$/liftValues(scala.collection.immutable.Set,com.twitter.util.Future,scala.Function1)|",
+    "v1Body": [
+      "|java+method:///scala/collection/SetLike/toSeq()|",
+      "|java+constructor:///com/twitter/storehaus/mysql/MySqlStore$$anonfun$3/MySqlStore$$anonfun$3(com.twitter.storehaus.mysql.MySqlStore)|",
+      "|java+method:///scala/package$/Stream()|",
+      "|java+method:///com/twitter/storehaus/FutureOps$/liftValues(scala.collection.immutable.Set,com.twitter.util.Future,scala.Function1)|",
+      "|java+constructor:///scala/collection/mutable/StringBuilder/StringBuilder()|",
+      "|java+method:///com/twitter/storehaus/mysql/MySqlStore/MULTI_SELECT_SQL_PREFIX()|",
+      "|java+method:///scala/collection/mutable/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///scala/collection/immutable/Set$/canBuildFrom()|",
+      "|java+method:///scala/collection/immutable/Stream/take(int)|",
+      "|java+method:///scala/collection/SetLike/isEmpty()|",
+      "|java+method:///scala/collection/immutable/Map$/apply(scala.collection.Seq)|",
+      "|java+constructor:///com/twitter/storehaus/mysql/MySqlStore$$anonfun$2/MySqlStore$$anonfun$2(com.twitter.storehaus.mysql.MySqlStore)|",
+      "|java+method:///scala/Predef$/Map()|",
+      "|java+method:///scala/collection/SetLike/map(scala.Function1,scala.collection.generic.CanBuildFrom)|",
+      "|java+method:///com/twitter/finagle/exp/mysql/Client/prepareAndSelect(java.lang.String,scala.collection.Seq,scala.Function1)|",
+      "|java+constructor:///com/twitter/storehaus/mysql/MySqlStore$$anonfun$4/MySqlStore$$anonfun$4(com.twitter.storehaus.mysql.MySqlStore)|",
+      "|java+method:///scala/collection/immutable/Stream$/continually(scala.Function0)|",
+      "|java+method:///scala/collection/TraversableOnce/size()|",
+      "|java+method:///com/twitter/util/Future/map(scala.Function1)|",
+      "|java+constructor:///com/twitter/storehaus/mysql/MySqlStore$$anonfun$multiGet$2/MySqlStore$$anonfun$multiGet$2(com.twitter.storehaus.mysql.MySqlStore)|",
+      "|java+constructor:///com/twitter/storehaus/mysql/MySqlStore$$anonfun$multiGet$1/MySqlStore$$anonfun$multiGet$1(com.twitter.storehaus.mysql.MySqlStore)|",
+      "|java+method:///scala/collection/immutable/Stream/mkString(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///scala/collection/mutable/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/collection/SetLike/toSeq()|",
+      "|java+method:///scala/collection/immutable/Map$/apply(scala.collection.Seq)|",
+      "|java+method:///scala/package$/Stream()|",
+      "|java+method:///com/twitter/finagle/exp/mysql/Client/prepareAndSelect(java.lang.String,scala.collection.Seq,scala.Function1)|",
+      "|java+method:///com/twitter/storehaus/mysql/MySqlStore/client()|",
+      "|java+constructor:///com/twitter/storehaus/mysql/MySqlStore$$anonfun$9/MySqlStore$$anonfun$9(com.twitter.storehaus.mysql.MySqlStore)|",
+      "|java+method:///com/twitter/storehaus/FutureOps$/liftValues(scala.collection.immutable.Set,com.twitter.util.Future,scala.Function1)|",
+      "|java+constructor:///scala/collection/mutable/StringBuilder/StringBuilder()|",
+      "|java+method:///com/twitter/storehaus/mysql/MySqlStore/MULTI_SELECT_SQL_PREFIX()|",
+      "|java+method:///scala/collection/mutable/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///scala/collection/immutable/Set$/canBuildFrom()|",
+      "|java+method:///scala/collection/immutable/Stream/take(int)|",
+      "|java+method:///scala/collection/SetLike/isEmpty()|",
+      "|java+method:///scala/Predef$/Map()|",
+      "|java+method:///scala/collection/SetLike/map(scala.Function1,scala.collection.generic.CanBuildFrom)|",
+      "|java+method:///scala/collection/immutable/Stream$/continually(scala.Function0)|",
+      "|java+method:///scala/collection/TraversableOnce/size()|",
+      "|java+method:///com/twitter/util/Future/map(scala.Function1)|",
+      "|java+constructor:///com/twitter/storehaus/mysql/MySqlStore$$anonfun$10/MySqlStore$$anonfun$10(com.twitter.storehaus.mysql.MySqlStore)|",
+      "|java+constructor:///com/twitter/storehaus/mysql/MySqlStore$$anonfun$multiGet$2/MySqlStore$$anonfun$multiGet$2(com.twitter.storehaus.mysql.MySqlStore)|",
+      "|java+constructor:///com/twitter/storehaus/mysql/MySqlStore$$anonfun$multiGet$1/MySqlStore$$anonfun$multiGet$1(com.twitter.storehaus.mysql.MySqlStore)|",
+      "|java+constructor:///com/twitter/storehaus/mysql/MySqlStore$$anonfun$11/MySqlStore$$anonfun$11(com.twitter.storehaus.mysql.MySqlStore)|",
+      "|java+method:///scala/collection/immutable/Stream/mkString(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///scala/collection/mutable/StringBuilder/toString()|"
+    ],
+    "affectedLib": "com.twitter:storehaus-core_2.9.3:0.7.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.twitter:storehaus-mysql_2.9.3:0.9.0rc1",
+    "coordinatesV2": "com.twitter:storehaus-mysql_2.9.3:0.7.2",
+    "caller": "|java+method:///com/twitter/storehaus/mysql/MySqlStore/multiPut(scala.collection.immutable.Map)|",
+    "called": "|java+method:///com/twitter/storehaus/Store$class/multiPut(com.twitter.storehaus.Store,scala.collection.immutable.Map)|",
+    "v1Body": [
+      "|java+method:///com/twitter/storehaus/Store$class/multiPut(com.twitter.storehaus.Store,scala.collection.immutable.Map)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/twitter/storehaus/mysql/MySqlStore$$anonfun$multiPut$1/MySqlStore$$anonfun$multiPut$1(com.twitter.storehaus.mysql.MySqlStore,com.twitter.util.Future)|",
+      "|java+constructor:///com/twitter/storehaus/mysql/MySqlStore$$anonfun$12/MySqlStore$$anonfun$12(com.twitter.storehaus.mysql.MySqlStore,scala.collection.immutable.Map)|",
+      "|java+method:///scala/collection/immutable/MapLike/mapValues(scala.Function1)|",
+      "|java+method:///com/twitter/storehaus/mysql/MySqlStore/startTransaction()|",
+      "|java+method:///com/twitter/util/Future/flatMap(scala.Function1)|"
+    ],
+    "affectedLib": "com.twitter:storehaus-core_2.9.3:0.7.2",
+    "change": "REMOVED"
+  }
+]

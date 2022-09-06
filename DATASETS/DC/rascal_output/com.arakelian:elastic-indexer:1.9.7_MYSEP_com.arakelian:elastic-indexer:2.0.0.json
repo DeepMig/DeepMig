@@ -1,0 +1,120 @@
+[
+  {
+    "coordinatesV1": "com.arakelian:elastic-indexer:1.9.7",
+    "coordinatesV2": "com.arakelian:elastic-indexer:2.0.0",
+    "caller": "|java+constructor:///com/arakelian/elastic/model/Index$WithoutNameSerializer/Index$WithoutNameSerializer(com.fasterxml.jackson.databind.JsonSerializer)|",
+    "called": "|java+constructor:///com/arakelian/jackson/databind/ExcludeSerializer/ExcludeSerializer(java.lang.Class,com.fasterxml.jackson.core.filter.TokenFilter,com.fasterxml.jackson.databind.JsonSerializer)|",
+    "v1Body": [
+      "|java+constructor:///com/arakelian/jackson/ExcludeSerializer/ExcludeSerializer(java.lang.Class,com.fasterxml.jackson.core.filter.TokenFilter,com.fasterxml.jackson.databind.JsonSerializer)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/arakelian/jackson/databind/ExcludeSerializer/ExcludeSerializer(java.lang.Class,com.fasterxml.jackson.core.filter.TokenFilter,com.fasterxml.jackson.databind.JsonSerializer)|"
+    ],
+    "affectedLib": "com.arakelian:jackson-utils:1.8.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.arakelian:elastic-indexer:1.9.7",
+    "coordinatesV2": "com.arakelian:elastic-indexer:2.0.0",
+    "caller": "|java+constructor:///com/arakelian/elastic/model/Mapping$FieldSerializer/Mapping$FieldSerializer()|",
+    "called": "|java+constructor:///com/arakelian/jackson/databind/ExcludeSerializer/ExcludeSerializer(java.lang.Class,com.fasterxml.jackson.core.filter.TokenFilter)|",
+    "v1Body": [
+      "|java+constructor:///com/arakelian/jackson/ExcludeSerializer/ExcludeSerializer(java.lang.Class,com.fasterxml.jackson.core.filter.TokenFilter)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/arakelian/jackson/databind/ExcludeSerializer/ExcludeSerializer(java.lang.Class,com.fasterxml.jackson.core.filter.TokenFilter)|"
+    ],
+    "affectedLib": "com.arakelian:jackson-utils:1.8.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.arakelian:elastic-indexer:1.9.7",
+    "coordinatesV2": "com.arakelian:elastic-indexer:2.0.0",
+    "caller": "|java+method:///com/arakelian/elastic/utils/ElasticClientUtils/configure(com.fasterxml.jackson.databind.ObjectMapper,com.arakelian.elastic.model.VersionComponents)|",
+    "called": "|java+method:///com/arakelian/jackson/utils/JacksonUtils/withView(com.fasterxml.jackson.databind.ObjectMapper,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/arakelian/jackson/utils/JacksonUtils/withView(com.fasterxml.jackson.databind.ObjectMapper,java.lang.Class)|",
+      "|java+method:///com/arakelian/elastic/utils/ElasticClientUtils/getJsonView(com.arakelian.elastic.model.VersionComponents)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/arakelian/elastic/model/VersionComponents/isEmpty()|",
+      "|java+method:///com/arakelian/jackson/utils/JacksonUtils/withView(com.fasterxml.jackson.databind.ObjectMapper,java.lang.Class)|",
+      "|java+method:///com/arakelian/elastic/utils/ElasticClientUtils/getJsonView(com.arakelian.elastic.model.VersionComponents)|"
+    ],
+    "affectedLib": "com.arakelian:jackson-utils:1.8.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.arakelian:elastic-indexer:1.9.7",
+    "coordinatesV2": "com.arakelian:elastic-indexer:2.0.0",
+    "caller": "|java+method:///com/arakelian/elastic/ElasticHttpException/message(retrofit2.Response)|",
+    "called": "|java+method:///com/arakelian/jackson/utils/JacksonUtils/getObjectMapper()|",
+    "v1Body": [
+      "|java+method:///com/arakelian/jackson/utils/JacksonUtils/getObjectMapper()|",
+      "|java+method:///retrofit2/Response/message()|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///okhttp3/ResponseBody/string()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///retrofit2/Response/errorBody()|",
+      "|java+method:///repackaged/com/arakelian/elastic/com/github/rholder/retry/AttemptTimeLimiter/isEmpty(java.lang.CharSequence)|",
+      "|java+method:///retrofit2/Response/code()|",
+      "|java+method:///java/util/Objects/toString(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/arakelian/jackson/utils/JacksonUtils/getObjectMapper()|",
+      "|java+method:///retrofit2/Response/message()|",
+      "|java+method:///retrofit2/Response/errorBody()|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///retrofit2/Response/code()|",
+      "|java+method:///java/util/Objects/toString(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///okhttp3/ResponseBody/string()|",
+      "|java+method:///repackaged/com/arakelian/elastic/org/apache/commons/lang3/CharSequenceUtils/isEmpty(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "com.arakelian:jackson-utils:1.8.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.arakelian:elastic-indexer:1.9.7",
+    "coordinatesV2": "com.arakelian:elastic-indexer:2.0.0",
+    "caller": "|java+method:///com/arakelian/elastic/OkHttpElasticClient/search(java.lang.String,com.arakelian.elastic.model.search.Search)|",
+    "called": "|java+method:///com/arakelian/jackson/utils/JacksonUtils/toString(com.arakelian.jackson.utils.JacksonUtils$JsonGeneratorCallback,com.fasterxml.jackson.databind.ObjectMapper,boolean)|",
+    "v1Body": [
+      "|java+method:///com/arakelian/elastic/model/search/SearchResponse/getHits()|",
+      "|java+method:///com/arakelian/elastic/model/search/SearchHits/setObjectMapper(com.fasterxml.jackson.databind.ObjectMapper)|",
+      "|java+method:///com/arakelian/elastic/OkHttpElasticClient/execute(java.util.concurrent.Callable)|",
+      "|java+method:///com/arakelian/jackson/utils/JacksonUtils/toString(com.arakelian.jackson.utils.JacksonUtils$JsonGeneratorCallback,com.fasterxml.jackson.databind.ObjectMapper,boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/arakelian/elastic/model/search/SearchResponse/getHits()|",
+      "|java+method:///com/arakelian/elastic/OkHttpElasticClient/getVersionedObjectMapper()|",
+      "|java+method:///com/arakelian/elastic/model/search/SearchHits/setObjectMapper(com.fasterxml.jackson.databind.ObjectMapper)|",
+      "|java+method:///com/arakelian/elastic/OkHttpElasticClient/execute(java.util.concurrent.Callable)|",
+      "|java+method:///com/arakelian/jackson/utils/JacksonUtils/toString(com.arakelian.jackson.utils.JacksonUtils$JsonGeneratorCallback,com.fasterxml.jackson.databind.ObjectMapper,boolean)|"
+    ],
+    "affectedLib": "com.arakelian:jackson-utils:1.8.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.arakelian:elastic-indexer:1.9.7",
+    "coordinatesV2": "com.arakelian:elastic-indexer:2.0.0",
+    "caller": "|java+constructor:///com/arakelian/elastic/model/Field$SubfieldSerializer/Field$SubfieldSerializer()|",
+    "called": "|java+constructor:///com/arakelian/jackson/databind/ExcludeSerializer/ExcludeSerializer(java.lang.Class,com.fasterxml.jackson.core.filter.TokenFilter)|",
+    "v1Body": [
+      "|java+constructor:///com/arakelian/jackson/ExcludeSerializer/ExcludeSerializer(java.lang.Class,com.fasterxml.jackson.core.filter.TokenFilter)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/arakelian/jackson/databind/ExcludeSerializer/ExcludeSerializer(java.lang.Class,com.fasterxml.jackson.core.filter.TokenFilter)|"
+    ],
+    "affectedLib": "com.arakelian:jackson-utils:1.8.2",
+    "change": "UPDATED"
+  }
+]

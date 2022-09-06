@@ -1,0 +1,112 @@
+[
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-swivel:5.3.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-swivel:5.3.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/config/SwivelAuthenticationEventExecutionPlanConfiguration/lambda$swivelAuthenticationEventExecutionPlanConfigurer$0(org.apereo.cas.authentication.AuthenticationEventExecutionPlan)|",
+    "called": "|java+constructor:///org/apereo/cas/authentication/ByCredentialTypeAuthenticationHandlerResolver/ByCredentialTypeAuthenticationHandlerResolver(java.lang.Class%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apereo/cas/config/SwivelAuthenticationEventExecutionPlanConfiguration/swivelAuthenticationHandler()|",
+      "|java+method:///org/apereo/cas/config/SwivelAuthenticationEventExecutionPlanConfiguration/swivelAuthenticationMetaDataPopulator()|",
+      "|java+method:///org/apereo/cas/authentication/AuthenticationEventExecutionPlan/registerMetadataPopulator(org.apereo.cas.authentication.AuthenticationMetaDataPopulator)|",
+      "|java+method:///org/apereo/cas/authentication/AuthenticationEventExecutionPlan/registerAuthenticationHandler(org.apereo.cas.authentication.AuthenticationHandler)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apereo/cas/authentication/AuthenticationEventExecutionPlan/registerAuthenticationHandlerResolver(org.apereo.cas.authentication.AuthenticationHandlerResolver)|",
+      "|java+method:///org/apereo/cas/config/SwivelAuthenticationEventExecutionPlanConfiguration/swivelAuthenticationHandler()|",
+      "|java+method:///org/apereo/cas/config/SwivelAuthenticationEventExecutionPlanConfiguration/swivelAuthenticationMetaDataPopulator()|",
+      "|java+method:///org/apereo/cas/authentication/AuthenticationEventExecutionPlan/registerAuthenticationHandler(org.apereo.cas.authentication.AuthenticationHandler)|",
+      "|java+constructor:///org/apereo/cas/authentication/ByCredentialTypeAuthenticationHandlerResolver/ByCredentialTypeAuthenticationHandlerResolver(java.lang.Class%5B%5D)|",
+      "|java+method:///org/apereo/cas/authentication/AuthenticationEventExecutionPlan/registerMetadataPopulator(org.apereo.cas.authentication.AuthenticationMetaDataPopulator)|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-core-authentication-api:5.3.0-RC4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-swivel:5.3.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-swivel:5.3.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/config/SwivelAuthenticationEventExecutionPlanConfiguration/swivelPrincipalFactory()|",
+    "called": "|java+method:///org/apereo/cas/authentication/principal/PrincipalFactoryUtils/newPrincipalFactory()|",
+    "v1Body": [
+      "|java+constructor:///org/apereo/cas/authentication/principal/DefaultPrincipalFactory/DefaultPrincipalFactory()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apereo/cas/authentication/principal/PrincipalFactoryUtils/newPrincipalFactory()|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-core-authentication-api:5.3.0-RC4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-swivel:5.3.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-swivel:5.3.0-RC4",
+    "caller": "|java+constructor:///org/apereo/cas/adaptors/swivel/web/flow/SwivelAuthenticationWebflowEventResolver/SwivelAuthenticationWebflowEventResolver(org.apereo.cas.authentication.AuthenticationSystemSupport,org.apereo.cas.CentralAuthenticationService,org.apereo.cas.services.ServicesManager,org.apereo.cas.ticket.registry.TicketRegistrySupport,org.springframework.web.util.CookieGenerator,org.apereo.cas.authentication.AuthenticationServiceSelectionPlan,org.apereo.cas.services.MultifactorAuthenticationProviderSelector)|",
+    "called": "|java+constructor:///org/apereo/cas/web/flow/authentication/BaseMultifactorAuthenticationProviderEventResolver/BaseMultifactorAuthenticationProviderEventResolver(org.apereo.cas.authentication.AuthenticationSystemSupport,org.apereo.cas.CentralAuthenticationService,org.apereo.cas.services.ServicesManager,org.apereo.cas.ticket.registry.TicketRegistrySupport,org.springframework.web.util.CookieGenerator,org.apereo.cas.authentication.AuthenticationServiceSelectionPlan,org.apereo.cas.services.MultifactorAuthenticationProviderSelector)|",
+    "v1Body": [
+      "|java+constructor:///org/apereo/cas/web/flow/resolver/impl/AbstractCasWebflowEventResolver/AbstractCasWebflowEventResolver(org.apereo.cas.authentication.AuthenticationSystemSupport,org.apereo.cas.CentralAuthenticationService,org.apereo.cas.services.ServicesManager,org.apereo.cas.ticket.registry.TicketRegistrySupport,org.springframework.web.util.CookieGenerator,org.apereo.cas.authentication.AuthenticationServiceSelectionPlan,org.apereo.cas.services.MultifactorAuthenticationProviderSelector)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apereo/cas/web/flow/authentication/BaseMultifactorAuthenticationProviderEventResolver/BaseMultifactorAuthenticationProviderEventResolver(org.apereo.cas.authentication.AuthenticationSystemSupport,org.apereo.cas.CentralAuthenticationService,org.apereo.cas.services.ServicesManager,org.apereo.cas.ticket.registry.TicketRegistrySupport,org.springframework.web.util.CookieGenerator,org.apereo.cas.authentication.AuthenticationServiceSelectionPlan,org.apereo.cas.services.MultifactorAuthenticationProviderSelector)|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-core-webflow-api:5.3.0-RC4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-swivel:5.3.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-swivel:5.3.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/adaptors/swivel/SwivelAuthenticationHandler/doAuthentication(org.apereo.cas.authentication.Credential)|",
+    "called": "|java+method:///org/springframework/webflow/execution/RequestContextHolder/getRequestContext()|",
+    "v1Body": [
+      "|java+method:///org/apereo/cas/web/support/WebUtils/getAuthentication(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isBlank(java.lang.CharSequence)|",
+      "|java+method:///org/apereo/cas/adaptors/swivel/SwivelAuthenticationHandler/sendAuthenticationRequestToSwivel(org.apereo.cas.adaptors.swivel.SwivelCredential,java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apereo/cas/adaptors/swivel/SwivelCredential/getToken()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///org/springframework/webflow/execution/RequestContextHolder/getRequestContext()|",
+      "|java+method:///org/apereo/cas/authentication/Authentication/getPrincipal()|",
+      "|java+method:///org/apereo/cas/authentication/principal/Principal/getId()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/StringUtils/isBlank(java.lang.CharSequence)|",
+      "|java+method:///org/apereo/cas/adaptors/swivel/SwivelTokenCredential/getToken()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///org/springframework/webflow/execution/RequestContextHolder/getRequestContext()|",
+      "|java+method:///org/apereo/cas/web/support/WebUtils/getInProgressAuthentication()|",
+      "|java+method:///org/apereo/cas/adaptors/swivel/SwivelAuthenticationHandler/sendAuthenticationRequestToSwivel(org.apereo.cas.adaptors.swivel.SwivelTokenCredential,java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apereo/cas/authentication/Authentication/getPrincipal()|",
+      "|java+method:///org/apereo/cas/authentication/principal/Principal/getId()|"
+    ],
+    "affectedLib": "org.springframework.webflow:spring-webflow:2.5.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-swivel:5.3.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-swivel:5.3.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/adaptors/swivel/SwivelAuthenticationHandler/doAuthentication(org.apereo.cas.authentication.Credential)|",
+    "called": "|java+method:///org/apereo/cas/web/support/WebUtils/getInProgressAuthentication()|",
+    "v1Body": [
+      "|java+method:///org/apereo/cas/web/support/WebUtils/getAuthentication(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isBlank(java.lang.CharSequence)|",
+      "|java+method:///org/apereo/cas/adaptors/swivel/SwivelAuthenticationHandler/sendAuthenticationRequestToSwivel(org.apereo.cas.adaptors.swivel.SwivelCredential,java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apereo/cas/adaptors/swivel/SwivelCredential/getToken()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///org/springframework/webflow/execution/RequestContextHolder/getRequestContext()|",
+      "|java+method:///org/apereo/cas/authentication/Authentication/getPrincipal()|",
+      "|java+method:///org/apereo/cas/authentication/principal/Principal/getId()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/StringUtils/isBlank(java.lang.CharSequence)|",
+      "|java+method:///org/apereo/cas/adaptors/swivel/SwivelTokenCredential/getToken()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///org/springframework/webflow/execution/RequestContextHolder/getRequestContext()|",
+      "|java+method:///org/apereo/cas/web/support/WebUtils/getInProgressAuthentication()|",
+      "|java+method:///org/apereo/cas/adaptors/swivel/SwivelAuthenticationHandler/sendAuthenticationRequestToSwivel(org.apereo.cas.adaptors.swivel.SwivelTokenCredential,java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apereo/cas/authentication/Authentication/getPrincipal()|",
+      "|java+method:///org/apereo/cas/authentication/principal/Principal/getId()|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-core-web-api:5.3.0-RC4",
+    "change": "UPDATED"
+  }
+]

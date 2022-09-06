@@ -1,0 +1,34 @@
+[
+  {
+    "coordinatesV1": "io.servicecomb:foundation-vertx:0.2.0",
+    "coordinatesV2": "io.servicecomb:foundation-vertx:0.5.0",
+    "caller": "|java+constructor:///io/servicecomb/foundation/vertx/stream/BufferInputStream/BufferInputStream(io.netty.buffer.ByteBuf)|",
+    "called": "|java+constructor:///javax/servlet/ServletInputStream/ServletInputStream()|",
+    "v1Body": [
+      "|java+constructor:///java/io/InputStream/InputStream()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///javax/servlet/ServletInputStream/ServletInputStream()|"
+    ],
+    "affectedLib": "javax.servlet:javax.servlet-api:3.1.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.servicecomb:foundation-vertx:0.2.0",
+    "coordinatesV2": "io.servicecomb:foundation-vertx:0.5.0",
+    "caller": "|java+method:///io/servicecomb/foundation/vertx/server/TcpParser/reset()|",
+    "called": "|java+method:///io/vertx/core/buffer/Buffer/buffer(int)|",
+    "v1Body": [
+      "|java+method:///io/vertx/core/parsetools/impl/RecordParserImpl/newFixed(int,io.vertx.core.Handler)|",
+      "|java+method:///io/vertx/core/buffer/Buffer/buffer(int)|",
+      "|java+method:///io/vertx/core/parsetools/RecordParser/handle(io.vertx.core.buffer.Buffer)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/vertx/core/parsetools/RecordParser/newFixed(int,io.vertx.core.Handler)|",
+      "|java+method:///io/vertx/core/buffer/Buffer/buffer(int)|",
+      "|java+method:///io/vertx/core/parsetools/RecordParser/handle(io.vertx.core.buffer.Buffer)|"
+    ],
+    "affectedLib": "io.vertx:vertx-core:3.5.0",
+    "change": "UPDATED"
+  }
+]

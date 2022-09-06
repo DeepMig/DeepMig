@@ -1,0 +1,98 @@
+[
+  {
+    "coordinatesV1": "org.duracloud:common:4.0.0",
+    "coordinatesV2": "org.duracloud:common:3.7.4",
+    "caller": "|java+constructor:///org/duracloud/common/web/RestHttpHelper/RestHttpHelper(org.duracloud.common.model.Credential)|",
+    "called": "|java+constructor:///org/apache/commons/httpclient/UsernamePasswordCredentials/UsernamePasswordCredentials(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///org/duracloud/common/model/Credential/getUsername()|",
+      "|java+method:///org/duracloud/common/model/Credential/getPassword()|",
+      "|java+constructor:///org/apache/commons/httpclient/UsernamePasswordCredentials/UsernamePasswordCredentials(java.lang.String,java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/apache/commons/httpclient/auth/BasicScheme/authenticate(org.apache.commons.httpclient.UsernamePasswordCredentials,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/duracloud/common/model/Credential/getUsername()|",
+      "|java+constructor:///org/apache/http/auth/UsernamePasswordCredentials/UsernamePasswordCredentials(java.lang.String,java.lang.String)|",
+      "|java+method:///org/duracloud/common/model/Credential/getPassword()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/http/client/CredentialsProvider/setCredentials(org.apache.http.auth.AuthScope,org.apache.http.auth.Credentials)|",
+      "|java+constructor:///org/apache/http/auth/AuthScope/AuthScope(java.lang.String,int)|",
+      "|java+constructor:///org/apache/http/impl/client/BasicCredentialsProvider/BasicCredentialsProvider()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-httpclient:commons-httpclient:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.duracloud:common:4.0.0",
+    "coordinatesV2": "org.duracloud:common:3.7.4",
+    "caller": "|java+method:///org/duracloud/common/web/RestHttpHelper/multipartFilePost(java.lang.String,java.io.File)|",
+    "called": "|java+constructor:///org/apache/commons/httpclient/methods/multipart/FilePart/FilePart(java.lang.String,java.io.File)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/commons/httpclient/methods/multipart/FilePart/FilePart(java.lang.String,java.io.File)|",
+      "|java+method:///java/io/File/getName()|",
+      "|java+method:///org/duracloud/common/web/RestHttpHelper/multipartPost(java.lang.String,org.apache.commons.httpclient.methods.multipart.Part%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/File/getName()|",
+      "|java+method:///org/apache/http/entity/mime/MultipartEntityBuilder/build()|",
+      "|java+method:///org/duracloud/common/web/RestHttpHelper/multipartPost(java.lang.String,org.apache.http.HttpEntity)|",
+      "|java+method:///org/apache/http/entity/mime/MultipartEntityBuilder/create()|",
+      "|java+method:///org/apache/http/entity/mime/MultipartEntityBuilder/addBinaryBody(java.lang.String,java.io.File,org.apache.http.entity.ContentType,java.lang.String)|"
+    ],
+    "affectedLib": "commons-httpclient:commons-httpclient:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.duracloud:common:3.7.4",
+    "coordinatesV2": "org.duracloud:common:4.0.0",
+    "caller": "|java+constructor:///org/duracloud/common/web/RestHttpHelper/RestHttpHelper(org.duracloud.common.model.Credential)|",
+    "called": "|java+constructor:///org/apache/http/impl/client/BasicCredentialsProvider/BasicCredentialsProvider()|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///org/duracloud/common/model/Credential/getUsername()|",
+      "|java+method:///org/duracloud/common/model/Credential/getPassword()|",
+      "|java+constructor:///org/apache/commons/httpclient/UsernamePasswordCredentials/UsernamePasswordCredentials(java.lang.String,java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/apache/commons/httpclient/auth/BasicScheme/authenticate(org.apache.commons.httpclient.UsernamePasswordCredentials,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/duracloud/common/model/Credential/getUsername()|",
+      "|java+constructor:///org/apache/http/auth/UsernamePasswordCredentials/UsernamePasswordCredentials(java.lang.String,java.lang.String)|",
+      "|java+method:///org/duracloud/common/model/Credential/getPassword()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/http/client/CredentialsProvider/setCredentials(org.apache.http.auth.AuthScope,org.apache.http.auth.Credentials)|",
+      "|java+constructor:///org/apache/http/auth/AuthScope/AuthScope(java.lang.String,int)|",
+      "|java+constructor:///org/apache/http/impl/client/BasicCredentialsProvider/BasicCredentialsProvider()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.5.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.duracloud:common:3.7.4",
+    "coordinatesV2": "org.duracloud:common:4.0.0",
+    "caller": "|java+method:///org/duracloud/common/web/RestHttpHelper/multipartFilePost(java.lang.String,java.io.File)|",
+    "called": "|java+method:///org/apache/http/entity/mime/MultipartEntityBuilder/addBinaryBody(java.lang.String,java.io.File,org.apache.http.entity.ContentType,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/commons/httpclient/methods/multipart/FilePart/FilePart(java.lang.String,java.io.File)|",
+      "|java+method:///java/io/File/getName()|",
+      "|java+method:///org/duracloud/common/web/RestHttpHelper/multipartPost(java.lang.String,org.apache.commons.httpclient.methods.multipart.Part%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/File/getName()|",
+      "|java+method:///org/apache/http/entity/mime/MultipartEntityBuilder/build()|",
+      "|java+method:///org/duracloud/common/web/RestHttpHelper/multipartPost(java.lang.String,org.apache.http.HttpEntity)|",
+      "|java+method:///org/apache/http/entity/mime/MultipartEntityBuilder/create()|",
+      "|java+method:///org/apache/http/entity/mime/MultipartEntityBuilder/addBinaryBody(java.lang.String,java.io.File,org.apache.http.entity.ContentType,java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpmime:4.5.2",
+    "change": "ADDED"
+  }
+]

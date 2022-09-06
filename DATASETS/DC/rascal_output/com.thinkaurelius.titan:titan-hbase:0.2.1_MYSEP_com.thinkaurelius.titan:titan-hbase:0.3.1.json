@@ -1,0 +1,87 @@
+[
+  {
+    "coordinatesV1": "com.thinkaurelius.titan:titan-hbase:0.2.1",
+    "coordinatesV2": "com.thinkaurelius.titan:titan-hbase:0.3.1",
+    "caller": "|java+method:///com/thinkaurelius/titan/diskstorage/hbase/HBaseKeyColumnValueStore$1$1/apply(org.apache.hadoop.hbase.client.Result)|",
+    "called": "|java+constructor:///com/thinkaurelius/titan/diskstorage/util/StaticArrayBuffer/StaticArrayBuffer(byte%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/nio/ByteBuffer/getLong()|",
+      "|java+method:///org/apache/hadoop/hbase/client/Result/getRow()|",
+      "|java+method:///java/nio/ByteBuffer/wrap(byte%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/thinkaurelius/titan/diskstorage/util/StaticArrayBuffer/StaticArrayBuffer(byte%5B%5D)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/StaticBuffer/getLong(int)|",
+      "|java+method:///org/apache/hadoop/hbase/client/Result/getRow()|"
+    ],
+    "affectedLib": "com.thinkaurelius.titan:titan-core:0.3.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.thinkaurelius.titan:titan-hbase:0.2.1",
+    "coordinatesV2": "com.thinkaurelius.titan:titan-hbase:0.3.1",
+    "caller": "|java+method:///com/thinkaurelius/titan/diskstorage/hbase/HBaseStoreManager/ensureColumnFamilyExists(java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///com/thinkaurelius/titan/diskstorage/PermanentStorageException/PermanentStorageException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/hadoop/hbase/client/HBaseAdmin/enableTable(java.lang.String)|",
+      "|java+method:///java/lang/Thread/sleep(long)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/hbase/HBaseStoreManager/ensureTableExists(java.lang.String)|",
+      "|java+constructor:///com/thinkaurelius/titan/diskstorage/PermanentStorageException/PermanentStorageException(java.lang.Throwable)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+      "|java+method:///org/apache/hadoop/hbase/HTableDescriptor/addFamily(org.apache.hadoop.hbase.HColumnDescriptor)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/hadoop/hbase/client/HBaseAdmin/modifyTable(byte%5B%5D,org.apache.hadoop.hbase.HTableDescriptor)|",
+      "|java+method:///java/lang/String/getBytes()|",
+      "|java+constructor:///com/thinkaurelius/titan/diskstorage/TemporaryStorageException/TemporaryStorageException(java.lang.Throwable)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apache/hadoop/hbase/HTableDescriptor/getFamily(byte%5B%5D)|",
+      "|java+method:///org/apache/hadoop/hbase/client/HBaseAdmin/disableTable(java.lang.String)|",
+      "|java+constructor:///org/apache/hadoop/hbase/HColumnDescriptor/HColumnDescriptor(java.lang.String)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/hbase/HBaseStoreManager/getAdminInterface()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/hadoop/hbase/client/HBaseAdmin/enableTable(java.lang.String)|",
+      "|java+method:///java/lang/Thread/sleep(long)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/hbase/HBaseStoreManager/ensureTableExists(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/hbase/client/HBaseAdmin/modifyColumn(java.lang.String,org.apache.hadoop.hbase.HColumnDescriptor)|",
+      "|java+constructor:///com/thinkaurelius/titan/diskstorage/PermanentStorageException/PermanentStorageException(java.lang.Throwable)|",
+      "|java+method:///org/apache/hadoop/hbase/HColumnDescriptor/getCompressionType()|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+      "|java+method:///org/apache/hadoop/hbase/HTableDescriptor/addFamily(org.apache.hadoop.hbase.HColumnDescriptor)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/hadoop/hbase/client/HBaseAdmin/modifyTable(byte%5B%5D,org.apache.hadoop.hbase.HTableDescriptor)|",
+      "|java+method:///java/lang/String/getBytes()|",
+      "|java+method:///org/apache/hadoop/hbase/HColumnDescriptor/setCompressionType(org.apache.hadoop.hbase.io.hfile.Compression$Algorithm)|",
+      "|java+constructor:///com/thinkaurelius/titan/diskstorage/TemporaryStorageException/TemporaryStorageException(java.lang.Throwable)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apache/hadoop/hbase/HTableDescriptor/getFamily(byte%5B%5D)|",
+      "|java+method:///org/apache/hadoop/hbase/client/HBaseAdmin/disableTable(java.lang.String)|",
+      "|java+constructor:///org/apache/hadoop/hbase/HColumnDescriptor/HColumnDescriptor(java.lang.String)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/hbase/HBaseStoreManager/getAdminInterface()|"
+    ],
+    "affectedLib": "com.thinkaurelius.titan:titan-core:0.3.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.thinkaurelius.titan:titan-hbase:0.2.1",
+    "coordinatesV2": "com.thinkaurelius.titan:titan-hbase:0.3.1",
+    "caller": "|java+method:///com/thinkaurelius/titan/diskstorage/hbase/HBaseKeyColumnValueStore$1/next()|",
+    "called": "|java+constructor:///com/thinkaurelius/titan/diskstorage/util/StaticArrayBuffer/StaticArrayBuffer(byte%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/hbase/HBaseKeyColumnValueStore$1/next()|",
+      "|java+method:///org/apache/hadoop/hbase/client/Result/getRow()|",
+      "|java+method:///java/nio/ByteBuffer/wrap(byte%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/thinkaurelius/titan/diskstorage/util/StaticArrayBuffer/StaticArrayBuffer(byte%5B%5D)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/hbase/HBaseKeyColumnValueStore$1/next()|",
+      "|java+method:///org/apache/hadoop/hbase/client/Result/getRow()|"
+    ],
+    "affectedLib": "com.thinkaurelius.titan:titan-core:0.3.1",
+    "change": "UPDATED"
+  }
+]

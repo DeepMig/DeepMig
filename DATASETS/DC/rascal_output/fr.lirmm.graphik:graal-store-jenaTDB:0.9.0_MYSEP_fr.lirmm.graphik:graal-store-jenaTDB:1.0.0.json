@@ -1,0 +1,130 @@
+[
+  {
+    "coordinatesV1": "fr.lirmm.graphik:graal-store-jenaTDB:1.0.0",
+    "coordinatesV2": "fr.lirmm.graphik:graal-store-jenaTDB:0.9.0",
+    "caller": "|java+constructor:///fr/lirmm/graphik/graal/store/triplestore/JenaStore/JenaStore(java.lang.String)|",
+    "called": "|java+constructor:///fr/lirmm/graphik/graal/store/AbstractTripleStore/AbstractTripleStore()|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/tdb/TDBFactory/createDataset(java.lang.String)|",
+      "|java+constructor:///fr/lirmm/graphik/graal/store/AbstractTripleStore/AbstractTripleStore()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///fr/lirmm/graphik/graal/api/store/AbstractTripleStore/AbstractTripleStore()|",
+      "|java+method:///com/hp/hpl/jena/tdb/TDBFactory/createDataset(java.lang.String)|"
+    ],
+    "affectedLib": "fr.lirmm.graphik:graal-store-api:0.9.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "fr.lirmm.graphik:graal-store-jenaTDB:0.9.0",
+    "coordinatesV2": "fr.lirmm.graphik:graal-store-jenaTDB:1.0.0",
+    "caller": "|java+method:///fr/lirmm/graphik/graal/store/triplestore/JenaStore$AtomIterator/next()|",
+    "called": "|java+constructor:///fr/lirmm/graphik/graal/api/core/Predicate/Predicate(java.lang.Object,int)|",
+    "v1Body": [
+      "|java+method:///fr/lirmm/graphik/graal/store/triplestore/JenaStore/access$000(com.hp.hpl.jena.rdf.model.RDFNode)|",
+      "|java+method:///fr/lirmm/graphik/graal/core/term/DefaultTermFactory/instance()|",
+      "|java+constructor:///fr/lirmm/graphik/graal/core/Predicate/Predicate(java.lang.Object,int)|",
+      "|java+method:///fr/lirmm/graphik/graal/store/triplestore/JenaStore$AtomIterator/next()|",
+      "|java+method:///fr/lirmm/graphik/graal/core/term/TermFactory/createConstant(java.lang.Object)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/RDFNode/toString()|",
+      "|java+constructor:///fr/lirmm/graphik/graal/core/impl/DefaultAtom/DefaultAtom(fr.lirmm.graphik.graal.core.Predicate,fr.lirmm.graphik.graal.core.term.Term%5B%5D)|",
+      "|java+method:///com/hp/hpl/jena/query/ResultSet/next()|",
+      "|java+method:///com/hp/hpl/jena/query/QuerySolution/get(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///fr/lirmm/graphik/graal/store/triplestore/JenaStore/access$000(com.hp.hpl.jena.rdf.model.RDFNode)|",
+      "|java+method:///fr/lirmm/graphik/graal/core/term/DefaultTermFactory/instance()|",
+      "|java+constructor:///fr/lirmm/graphik/graal/core/DefaultAtom/DefaultAtom(fr.lirmm.graphik.graal.api.core.Predicate,fr.lirmm.graphik.graal.api.core.Term%5B%5D)|",
+      "|java+method:///fr/lirmm/graphik/graal/store/triplestore/JenaStore$AtomIterator/next()|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/RDFNode/toString()|",
+      "|java+method:///fr/lirmm/graphik/graal/api/factory/TermFactory/createConstant(java.lang.Object)|",
+      "|java+constructor:///fr/lirmm/graphik/graal/api/core/Predicate/Predicate(java.lang.Object,int)|",
+      "|java+method:///com/hp/hpl/jena/query/ResultSet/next()|",
+      "|java+method:///com/hp/hpl/jena/query/QuerySolution/get(java.lang.String)|"
+    ],
+    "affectedLib": "fr.lirmm.graphik:graal-api:1.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "fr.lirmm.graphik:graal-store-jenaTDB:0.9.0",
+    "coordinatesV2": "fr.lirmm.graphik:graal-store-jenaTDB:1.0.0",
+    "caller": "|java+method:///fr/lirmm/graphik/graal/store/triplestore/JenaStore/getPredicates()|",
+    "called": "|java+constructor:///fr/lirmm/graphik/graal/api/core/Predicate/Predicate(java.lang.Object,int)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/query/QueryExecutionFactory/create(java.lang.String,com.hp.hpl.jena.query.Dataset)|",
+      "|java+method:///com/hp/hpl/jena/query/QueryExecution/execSelect()|",
+      "|java+constructor:///fr/lirmm/graphik/graal/core/Predicate/Predicate(java.lang.Object,int)|",
+      "|java+method:///com/hp/hpl/jena/query/Dataset/begin(com.hp.hpl.jena.query.ReadWrite)|",
+      "|java+method:///com/hp/hpl/jena/query/QueryExecution/close()|",
+      "|java+method:///com/hp/hpl/jena/query/ResultSet/hasNext()|",
+      "|java+method:///com/hp/hpl/jena/query/ResultSet/next()|",
+      "|java+method:///com/hp/hpl/jena/query/QuerySolution/get(java.lang.String)|",
+      "|java+constructor:///java/util/TreeSet/TreeSet()|",
+      "|java+method:///com/hp/hpl/jena/query/Dataset/end()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/RDFNode/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/query/QueryExecutionFactory/create(java.lang.String,com.hp.hpl.jena.query.Dataset)|",
+      "|java+method:///com/hp/hpl/jena/query/QueryExecution/execSelect()|",
+      "|java+method:///com/hp/hpl/jena/query/Dataset/begin(com.hp.hpl.jena.query.ReadWrite)|",
+      "|java+method:///com/hp/hpl/jena/query/QueryExecution/close()|",
+      "|java+constructor:///fr/lirmm/graphik/graal/api/core/Predicate/Predicate(java.lang.Object,int)|",
+      "|java+method:///com/hp/hpl/jena/query/ResultSet/hasNext()|",
+      "|java+method:///com/hp/hpl/jena/query/ResultSet/next()|",
+      "|java+method:///com/hp/hpl/jena/query/QuerySolution/get(java.lang.String)|",
+      "|java+constructor:///java/util/TreeSet/TreeSet()|",
+      "|java+method:///com/hp/hpl/jena/query/Dataset/end()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/RDFNode/toString()|"
+    ],
+    "affectedLib": "fr.lirmm.graphik:graal-api:1.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "fr.lirmm.graphik:graal-store-jenaTDB:0.9.0",
+    "coordinatesV2": "fr.lirmm.graphik:graal-store-jenaTDB:1.0.0",
+    "caller": "|java+constructor:///fr/lirmm/graphik/graal/store/triplestore/JenaStore/JenaStore(java.lang.String)|",
+    "called": "|java+constructor:///fr/lirmm/graphik/graal/api/store/AbstractTripleStore/AbstractTripleStore()|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/tdb/TDBFactory/createDataset(java.lang.String)|",
+      "|java+constructor:///fr/lirmm/graphik/graal/store/AbstractTripleStore/AbstractTripleStore()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///fr/lirmm/graphik/graal/api/store/AbstractTripleStore/AbstractTripleStore()|",
+      "|java+method:///com/hp/hpl/jena/tdb/TDBFactory/createDataset(java.lang.String)|"
+    ],
+    "affectedLib": "fr.lirmm.graphik:graal-api:1.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "fr.lirmm.graphik:graal-store-jenaTDB:0.9.0",
+    "coordinatesV2": "fr.lirmm.graphik:graal-store-jenaTDB:1.0.0",
+    "caller": "|java+method:///fr/lirmm/graphik/graal/store/triplestore/JenaStore$AtomIterator/next()|",
+    "called": "|java+constructor:///fr/lirmm/graphik/graal/core/DefaultAtom/DefaultAtom(fr.lirmm.graphik.graal.api.core.Predicate,fr.lirmm.graphik.graal.api.core.Term%5B%5D)|",
+    "v1Body": [
+      "|java+method:///fr/lirmm/graphik/graal/store/triplestore/JenaStore/access$000(com.hp.hpl.jena.rdf.model.RDFNode)|",
+      "|java+method:///fr/lirmm/graphik/graal/core/term/DefaultTermFactory/instance()|",
+      "|java+constructor:///fr/lirmm/graphik/graal/core/Predicate/Predicate(java.lang.Object,int)|",
+      "|java+method:///fr/lirmm/graphik/graal/store/triplestore/JenaStore$AtomIterator/next()|",
+      "|java+method:///fr/lirmm/graphik/graal/core/term/TermFactory/createConstant(java.lang.Object)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/RDFNode/toString()|",
+      "|java+constructor:///fr/lirmm/graphik/graal/core/impl/DefaultAtom/DefaultAtom(fr.lirmm.graphik.graal.core.Predicate,fr.lirmm.graphik.graal.core.term.Term%5B%5D)|",
+      "|java+method:///com/hp/hpl/jena/query/ResultSet/next()|",
+      "|java+method:///com/hp/hpl/jena/query/QuerySolution/get(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///fr/lirmm/graphik/graal/store/triplestore/JenaStore/access$000(com.hp.hpl.jena.rdf.model.RDFNode)|",
+      "|java+method:///fr/lirmm/graphik/graal/core/term/DefaultTermFactory/instance()|",
+      "|java+constructor:///fr/lirmm/graphik/graal/core/DefaultAtom/DefaultAtom(fr.lirmm.graphik.graal.api.core.Predicate,fr.lirmm.graphik.graal.api.core.Term%5B%5D)|",
+      "|java+method:///fr/lirmm/graphik/graal/store/triplestore/JenaStore$AtomIterator/next()|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/RDFNode/toString()|",
+      "|java+method:///fr/lirmm/graphik/graal/api/factory/TermFactory/createConstant(java.lang.Object)|",
+      "|java+constructor:///fr/lirmm/graphik/graal/api/core/Predicate/Predicate(java.lang.Object,int)|",
+      "|java+method:///com/hp/hpl/jena/query/ResultSet/next()|",
+      "|java+method:///com/hp/hpl/jena/query/QuerySolution/get(java.lang.String)|"
+    ],
+    "affectedLib": "fr.lirmm.graphik:graal-core:1.0.0",
+    "change": "UPDATED"
+  }
+]

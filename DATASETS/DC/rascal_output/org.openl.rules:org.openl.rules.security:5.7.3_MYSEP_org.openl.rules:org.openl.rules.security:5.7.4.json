@@ -1,0 +1,92 @@
+[
+  {
+    "coordinatesV1": "org.openl.rules:org.openl.rules.security:5.7.4",
+    "coordinatesV2": "org.openl.rules:org.openl.rules.security:5.7.3",
+    "caller": "|java+method:///org/openl/rules/security/LocalUserFilter/doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)|",
+    "called": "|java+constructor:///org/acegisecurity/providers/UsernamePasswordAuthenticationToken/UsernamePasswordAuthenticationToken(java.lang.Object,java.lang.Object,org.acegisecurity.GrantedAuthority%5B%5D)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/FilterChain/doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse)|",
+      "|java+method:///org/acegisecurity/userdetails/UserDetails/getAuthorities()|",
+      "|java+method:///org/acegisecurity/context/SecurityContext/setAuthentication(org.acegisecurity.Authentication)|",
+      "|java+method:///org/openl/rules/security/LocalUserFilter/isIgnoredRequest(javax.servlet.ServletRequest)|",
+      "|java+method:///org/acegisecurity/userdetails/UserDetailsService/loadUserByUsername(java.lang.String)|",
+      "|java+method:///org/acegisecurity/context/SecurityContextHolder/getContext()|",
+      "|java+constructor:///org/acegisecurity/providers/UsernamePasswordAuthenticationToken/UsernamePasswordAuthenticationToken(java.lang.Object,java.lang.Object,org.acegisecurity.GrantedAuthority%5B%5D)|",
+      "|java+method:///org/openl/commons/web/util/WebTool/isLocalRequest(javax.servlet.ServletRequest)|",
+      "|java+method:///org/acegisecurity/context/SecurityContext/getAuthentication()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/security/core/context/SecurityContext/getAuthentication()|",
+      "|java+method:///javax/servlet/FilterChain/doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse)|",
+      "|java+method:///org/springframework/security/core/userdetails/UserDetailsService/loadUserByUsername(java.lang.String)|",
+      "|java+constructor:///org/springframework/security/authentication/UsernamePasswordAuthenticationToken/UsernamePasswordAuthenticationToken(java.lang.Object,java.lang.Object,java.util.Collection)|",
+      "|java+method:///org/springframework/security/core/context/SecurityContext/setAuthentication(org.springframework.security.core.Authentication)|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/getContext()|",
+      "|java+method:///org/openl/commons/web/util/WebTool/isLocalRequest(javax.servlet.ServletRequest)|",
+      "|java+method:///org/openl/rules/security/LocalUserFilter/isIgnoredRequest(javax.servlet.ServletRequest)|",
+      "|java+method:///org/springframework/security/core/userdetails/UserDetails/getAuthorities()|"
+    ],
+    "affectedLib": "org.acegisecurity:acegi-security:1.0.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.openl.rules:org.openl.rules.security:5.7.3",
+    "coordinatesV2": "org.openl.rules:org.openl.rules.security:5.7.4",
+    "caller": "|java+method:///org/openl/rules/security/LocalUserFilter/doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)|",
+    "called": "|java+method:///org/springframework/security/core/context/SecurityContextHolder/getContext()|",
+    "v1Body": [
+      "|java+method:///javax/servlet/FilterChain/doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse)|",
+      "|java+method:///org/acegisecurity/userdetails/UserDetails/getAuthorities()|",
+      "|java+method:///org/acegisecurity/context/SecurityContext/setAuthentication(org.acegisecurity.Authentication)|",
+      "|java+method:///org/openl/rules/security/LocalUserFilter/isIgnoredRequest(javax.servlet.ServletRequest)|",
+      "|java+method:///org/acegisecurity/userdetails/UserDetailsService/loadUserByUsername(java.lang.String)|",
+      "|java+method:///org/acegisecurity/context/SecurityContextHolder/getContext()|",
+      "|java+constructor:///org/acegisecurity/providers/UsernamePasswordAuthenticationToken/UsernamePasswordAuthenticationToken(java.lang.Object,java.lang.Object,org.acegisecurity.GrantedAuthority%5B%5D)|",
+      "|java+method:///org/openl/commons/web/util/WebTool/isLocalRequest(javax.servlet.ServletRequest)|",
+      "|java+method:///org/acegisecurity/context/SecurityContext/getAuthentication()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/security/core/context/SecurityContext/getAuthentication()|",
+      "|java+method:///javax/servlet/FilterChain/doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse)|",
+      "|java+method:///org/springframework/security/core/userdetails/UserDetailsService/loadUserByUsername(java.lang.String)|",
+      "|java+constructor:///org/springframework/security/authentication/UsernamePasswordAuthenticationToken/UsernamePasswordAuthenticationToken(java.lang.Object,java.lang.Object,java.util.Collection)|",
+      "|java+method:///org/springframework/security/core/context/SecurityContext/setAuthentication(org.springframework.security.core.Authentication)|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/getContext()|",
+      "|java+method:///org/openl/commons/web/util/WebTool/isLocalRequest(javax.servlet.ServletRequest)|",
+      "|java+method:///org/openl/rules/security/LocalUserFilter/isIgnoredRequest(javax.servlet.ServletRequest)|",
+      "|java+method:///org/springframework/security/core/userdetails/UserDetails/getAuthorities()|"
+    ],
+    "affectedLib": "org.springframework.security:spring-security-core:3.0.5.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.openl.rules:org.openl.rules.security:5.7.3",
+    "coordinatesV2": "org.openl.rules:org.openl.rules.security:5.7.4",
+    "caller": "|java+method:///org/openl/rules/security/LocalUserFilter/doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)|",
+    "called": "|java+method:///org/openl/commons/web/util/WebTool/isLocalRequest(javax.servlet.ServletRequest)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/FilterChain/doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse)|",
+      "|java+method:///org/acegisecurity/userdetails/UserDetails/getAuthorities()|",
+      "|java+method:///org/acegisecurity/context/SecurityContext/setAuthentication(org.acegisecurity.Authentication)|",
+      "|java+method:///org/openl/rules/security/LocalUserFilter/isIgnoredRequest(javax.servlet.ServletRequest)|",
+      "|java+method:///org/acegisecurity/userdetails/UserDetailsService/loadUserByUsername(java.lang.String)|",
+      "|java+method:///org/acegisecurity/context/SecurityContextHolder/getContext()|",
+      "|java+constructor:///org/acegisecurity/providers/UsernamePasswordAuthenticationToken/UsernamePasswordAuthenticationToken(java.lang.Object,java.lang.Object,org.acegisecurity.GrantedAuthority%5B%5D)|",
+      "|java+method:///org/openl/commons/web/util/WebTool/isLocalRequest(javax.servlet.ServletRequest)|",
+      "|java+method:///org/acegisecurity/context/SecurityContext/getAuthentication()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/security/core/context/SecurityContext/getAuthentication()|",
+      "|java+method:///javax/servlet/FilterChain/doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse)|",
+      "|java+method:///org/springframework/security/core/userdetails/UserDetailsService/loadUserByUsername(java.lang.String)|",
+      "|java+constructor:///org/springframework/security/authentication/UsernamePasswordAuthenticationToken/UsernamePasswordAuthenticationToken(java.lang.Object,java.lang.Object,java.util.Collection)|",
+      "|java+method:///org/springframework/security/core/context/SecurityContext/setAuthentication(org.springframework.security.core.Authentication)|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/getContext()|",
+      "|java+method:///org/openl/commons/web/util/WebTool/isLocalRequest(javax.servlet.ServletRequest)|",
+      "|java+method:///org/openl/rules/security/LocalUserFilter/isIgnoredRequest(javax.servlet.ServletRequest)|",
+      "|java+method:///org/springframework/security/core/userdetails/UserDetails/getAuthorities()|"
+    ],
+    "affectedLib": "org.openl:org.openl.commons.web:5.7.4",
+    "change": "UPDATED"
+  }
+]

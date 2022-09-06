@@ -1,0 +1,1728 @@
+[
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/JobSupport/stateString()|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///kotlinx/coroutines/experimental/JobSupport/getState$kotlinx_coroutines_core()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///kotlinx/coroutines/experimental/JobSupport$Incomplete/isActive()|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlinx/coroutines/experimental/JobSupport/getState$kotlinx_coroutines_core()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/Incomplete/isActive()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/ScheduledKt/withTimeout(long,java.util.concurrent.TimeUnit,kotlin.jvm.functions.Function2,kotlin.coroutines.experimental.Continuation)|",
+    "called": "|java+method:///kotlin/coroutines/experimental/jvm/internal/CoroutineIntrinsics/normalizeContinuation(kotlin.coroutines.experimental.Continuation)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/util/concurrent/CancellationException/CancellationException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///kotlinx/coroutines/experimental/ScheduledKt/access$setupTimeout(kotlinx.coroutines.experimental.TimeoutCoroutine,kotlin.jvm.functions.Function2)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///kotlin/coroutines/experimental/jvm/internal/CoroutineIntrinsics/normalizeContinuation(kotlin.coroutines.experimental.Continuation)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+constructor:///kotlinx/coroutines/experimental/TimeoutCoroutine/TimeoutCoroutine(long,java.util.concurrent.TimeUnit,kotlin.coroutines.experimental.Continuation)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///kotlinx/coroutines/experimental/TimeoutCoroutine/TimeoutCoroutine(long,java.util.concurrent.TimeUnit,kotlin.coroutines.experimental.Continuation)|",
+      "|java+constructor:///java/util/concurrent/CancellationException/CancellationException(java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/ScheduledKt/access$setupTimeout(kotlinx.coroutines.experimental.TimeoutCoroutine,kotlin.jvm.functions.Function2)|",
+      "|java+method:///kotlin/coroutines/experimental/jvm/internal/CoroutineIntrinsics/normalizeContinuation(kotlin.coroutines.experimental.Continuation)|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/JobSupport/joinSuspend(kotlin.coroutines.experimental.Continuation)|",
+    "called": "|java+method:///kotlin/coroutines/experimental/jvm/internal/CoroutineIntrinsics/normalizeContinuation(kotlin.coroutines.experimental.Continuation)|",
+    "v1Body": [
+      "|java+constructor:///kotlinx/coroutines/experimental/CancellableContinuationImpl/CancellableContinuationImpl(kotlin.coroutines.experimental.Continuation,int)|",
+      "|java+constructor:///kotlinx/coroutines/experimental/ResumeOnCompletion/ResumeOnCompletion(kotlinx.coroutines.experimental.Job,kotlin.coroutines.experimental.Continuation)|",
+      "|java+method:///kotlinx/coroutines/experimental/JobSupport/invokeOnCompletion(kotlin.jvm.functions.Function1)|",
+      "|java+method:///kotlinx/coroutines/experimental/JobKt/disposeOnCompletion(kotlinx.coroutines.experimental.Job,kotlinx.coroutines.experimental.DisposableHandle)|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationImpl/getResult()|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationImpl/initCancellability()|",
+      "|java+method:///kotlin/coroutines/experimental/jvm/internal/CoroutineIntrinsics/normalizeContinuation(kotlin.coroutines.experimental.Continuation)|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationKt/disposeOnCancellation(kotlinx.coroutines.experimental.CancellableContinuation,kotlinx.coroutines.experimental.DisposableHandle)|",
+      "|java+constructor:///kotlinx/coroutines/experimental/CancellableContinuationImpl/CancellableContinuationImpl(kotlin.coroutines.experimental.Continuation,int)|",
+      "|java+constructor:///kotlinx/coroutines/experimental/ResumeOnCompletion/ResumeOnCompletion(kotlinx.coroutines.experimental.Job,kotlin.coroutines.experimental.Continuation)|",
+      "|java+method:///kotlinx/coroutines/experimental/JobSupport/invokeOnCompletion(kotlin.jvm.functions.Function1)|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationImpl/getResult()|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationImpl/initCancellability()|",
+      "|java+method:///kotlin/coroutines/experimental/jvm/internal/CoroutineIntrinsics/normalizeContinuation(kotlin.coroutines.experimental.Continuation)|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/JobSupport$children$1/doResume(java.lang.Object,java.lang.Throwable)|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/areEqual(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///kotlinx/coroutines/experimental/JobSupport/getState$kotlinx_coroutines_core()|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/JobSupport$Incomplete/getList()|",
+      "|java+method:///kotlinx/coroutines/experimental/internal/LockFreeLinkedListNode/getNext()|",
+      "|java+method:///kotlin/coroutines/experimental/intrinsics/IntrinsicsKt/getCOROUTINE_SUSPENDED()|",
+      "|java+method:///kotlinx/coroutines/experimental/internal/LockFreeLinkedListKt/unwrap(java.lang.Object)|",
+      "|java+constructor:///kotlin/TypeCastException/TypeCastException(java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/internal/LockFreeLinkedListHead/getNext()|",
+      "|java+method:///kotlin/coroutines/experimental/SequenceBuilder/yield(java.lang.Object,kotlin.coroutines.experimental.Continuation)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/areEqual(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlinx/coroutines/experimental/JobSupport/getState$kotlinx_coroutines_core()|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/Incomplete/getList()|",
+      "|java+method:///kotlinx/coroutines/experimental/internal/LockFreeLinkedListNode/getNextNode()|",
+      "|java+method:///kotlin/coroutines/experimental/intrinsics/IntrinsicsKt/getCOROUTINE_SUSPENDED()|",
+      "|java+constructor:///kotlin/TypeCastException/TypeCastException(java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/internal/LockFreeLinkedListHead/getNext()|",
+      "|java+method:///kotlin/coroutines/experimental/SequenceBuilder/yield(java.lang.Object,kotlin.coroutines.experimental.Continuation)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/areEqual(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/JobSupport/createCancelled(kotlinx.coroutines.experimental.Cancelled,java.lang.Object)|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/areEqual(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///kotlin/jvm/internal/Intrinsics/areEqual(java.lang.Object,java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/Cancelled/getException()|",
+      "|java+constructor:///kotlinx/coroutines/experimental/Cancelled/Cancelled(kotlinx.coroutines.experimental.Job,java.lang.Throwable)|",
+      "|java+method:///kotlinx/coroutines/experimental/Cancelled/getCause()|",
+      "|java+method:///kotlin/ExceptionsKt/addSuppressed(java.lang.Throwable,java.lang.Throwable)|",
+      "|java+method:///kotlinx/coroutines/experimental/CompletedExceptionally/getException()|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlin/jvm/internal/Intrinsics/areEqual(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///kotlinx/coroutines/experimental/Cancelled/Cancelled(kotlinx.coroutines.experimental.Job,java.lang.Throwable)|",
+      "|java+method:///kotlin/ExceptionsKt/addSuppressed(java.lang.Throwable,java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+constructor:///kotlinx/coroutines/experimental/CancellableContinuationImpl/CancellableContinuationImpl(kotlin.coroutines.experimental.Continuation,int)|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///kotlinx/coroutines/experimental/AbstractContinuation/AbstractContinuation(kotlin.coroutines.experimental.Continuation,int)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///kotlinx/coroutines/experimental/AbstractContinuation/AbstractContinuation(kotlin.coroutines.experimental.Continuation,int)|",
+      "|java+method:///kotlin/coroutines/experimental/Continuation/getContext()|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationImpl/completeResume(java.lang.Object)|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationImpl/getState$kotlinx_coroutines_core()|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationImpl/getResumeMode()|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationImpl/completeUpdateState$kotlinx_coroutines_core(kotlinx.coroutines.experimental.JobSupport$Incomplete,java.lang.Object,int)|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationImpl/completeStateUpdate(kotlinx.coroutines.experimental.NotCompleted,java.lang.Object,int)|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationImpl/getState$kotlinx_coroutines_core()|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationImpl/getResumeMode()|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/DispatchedTask$DefaultImpls/run(kotlinx.coroutines.experimental.DispatchedTask)|",
+    "called": "|java+constructor:///kotlin/TypeCastException/TypeCastException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///kotlinx/coroutines/experimental/ResumeModeKt/isCancellableMode(int)|",
+      "|java+method:///kotlinx/coroutines/experimental/Job/isActive()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///kotlin/coroutines/experimental/Continuation/getContext()|",
+      "|java+method:///kotlinx/coroutines/experimental/Job/getCancellationException()|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedTask/getDelegate()|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedTask/getExceptionalResult(java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineContextKt/restoreThreadContext(java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/getContinuation()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineContextKt/updateThreadContext(kotlin.coroutines.experimental.CoroutineContext)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedTask/takeState()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///kotlin/coroutines/experimental/Continuation/resume(java.lang.Object)|",
+      "|java+constructor:///kotlin/TypeCastException/TypeCastException(java.lang.String)|",
+      "|java+constructor:///kotlinx/coroutines/experimental/DispatchException/DispatchException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedTask/getSuccessfulResult(java.lang.Object)|",
+      "|java+method:///kotlin/coroutines/experimental/Continuation/resumeWithException(java.lang.Throwable)|",
+      "|java+method:///kotlin/coroutines/experimental/CoroutineContext/get(kotlin.coroutines.experimental.CoroutineContext$Key)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedTask/getResumeMode()|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlinx/coroutines/experimental/ResumeModeKt/isCancellableMode(int)|",
+      "|java+method:///kotlinx/coroutines/experimental/Job/isActive()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///kotlin/coroutines/experimental/Continuation/getContext()|",
+      "|java+method:///kotlinx/coroutines/experimental/Job/getCancellationException()|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedTask/getDelegate()|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedTask/getExceptionalResult(java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineContextKt/restoreThreadContext(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineContextKt/updateThreadContext(kotlin.coroutines.experimental.CoroutineContext)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedTask/takeState()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///kotlin/coroutines/experimental/Continuation/resume(java.lang.Object)|",
+      "|java+constructor:///kotlin/TypeCastException/TypeCastException(java.lang.String)|",
+      "|java+constructor:///kotlinx/coroutines/experimental/DispatchException/DispatchException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedTask/getSuccessfulResult(java.lang.Object)|",
+      "|java+method:///kotlin/coroutines/experimental/Continuation/resumeWithException(java.lang.Throwable)|",
+      "|java+method:///kotlin/coroutines/experimental/CoroutineContext/get(kotlin.coroutines.experimental.CoroutineContext$Key)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedTask/getResumeMode()|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/JobSupport/registerSelectClause1Internal$kotlinx_coroutines_core(kotlinx.coroutines.experimental.selects.SelectInstance,kotlin.jvm.functions.Function2)|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///kotlinx/coroutines/experimental/JobSupport/getState$kotlinx_coroutines_core()|",
+      "|java+method:///kotlinx/coroutines/experimental/selects/SelectInstance/trySelect(java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/selects/SelectInstance/disposeOnSelect(kotlinx.coroutines.experimental.DisposableHandle)|",
+      "|java+method:///kotlinx/coroutines/experimental/intrinsics/UndispatchedKt/startCoroutineUndispatched(kotlin.jvm.functions.Function2,java.lang.Object,kotlin.coroutines.experimental.Continuation)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/selects/SelectInstance/getCompletion()|",
+      "|java+method:///kotlinx/coroutines/experimental/JobSupport/startInternal(java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/JobSupport/invokeOnCompletion(kotlin.jvm.functions.Function1)|",
+      "|java+constructor:///kotlinx/coroutines/experimental/SelectAwaitOnCompletion/SelectAwaitOnCompletion(kotlinx.coroutines.experimental.JobSupport,kotlinx.coroutines.experimental.selects.SelectInstance,kotlin.jvm.functions.Function2)|",
+      "|java+method:///kotlinx/coroutines/experimental/selects/SelectInstance/isSelected()|",
+      "|java+method:///kotlinx/coroutines/experimental/selects/SelectInstance/resumeSelectCancellableWithException(java.lang.Throwable)|",
+      "|java+method:///kotlinx/coroutines/experimental/CompletedExceptionally/getException()|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlinx/coroutines/experimental/JobSupport/getState$kotlinx_coroutines_core()|",
+      "|java+method:///kotlinx/coroutines/experimental/selects/SelectInstance/trySelect(java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/selects/SelectInstance/disposeOnSelect(kotlinx.coroutines.experimental.DisposableHandle)|",
+      "|java+method:///kotlinx/coroutines/experimental/intrinsics/UndispatchedKt/startCoroutineUndispatched(kotlin.jvm.functions.Function2,java.lang.Object,kotlin.coroutines.experimental.Continuation)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/selects/SelectInstance/getCompletion()|",
+      "|java+method:///kotlinx/coroutines/experimental/JobSupport/startInternal(java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/JobSupport/invokeOnCompletion(kotlin.jvm.functions.Function1)|",
+      "|java+method:///kotlinx/coroutines/experimental/selects/SelectInstance/resumeSelectCancellableWithException(java.lang.Throwable)|",
+      "|java+constructor:///kotlinx/coroutines/experimental/SelectAwaitOnCompletion/SelectAwaitOnCompletion(kotlinx.coroutines.experimental.JobSupport,kotlinx.coroutines.experimental.selects.SelectInstance,kotlin.jvm.functions.Function2)|",
+      "|java+method:///kotlinx/coroutines/experimental/selects/SelectInstance/isSelected()|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/DispatchedKt/resumeCancellableWithException(kotlin.coroutines.experimental.Continuation,java.lang.Throwable)|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/getDispatcher()|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/access$set_state$p(kotlinx.coroutines.experimental.DispatchedContinuation,java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineContextKt/restoreThreadContext(java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/getContinuation()|",
+      "|java+method:///kotlin/coroutines/experimental/Continuation/resumeWithException(java.lang.Throwable)|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineContextKt/updateThreadContext(kotlin.coroutines.experimental.CoroutineContext)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/setResumeMode(int)|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineDispatcher/isDispatchNeeded(kotlin.coroutines.experimental.CoroutineContext)|",
+      "|java+constructor:///kotlinx/coroutines/experimental/CompletedExceptionally/CompletedExceptionally(java.lang.Throwable)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/getContext()|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineDispatcher/dispatch(kotlin.coroutines.experimental.CoroutineContext,java.lang.Runnable)|",
+      "|java+method:///kotlin/coroutines/experimental/Continuation/getContext()|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/access$set_state$p(kotlinx.coroutines.experimental.DispatchedContinuation,java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineContextKt/restoreThreadContext(java.lang.String)|",
+      "|java+method:///kotlin/coroutines/experimental/Continuation/resumeWithException(java.lang.Throwable)|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineContextKt/updateThreadContext(kotlin.coroutines.experimental.CoroutineContext)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/setResumeMode(int)|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineDispatcher/isDispatchNeeded(kotlin.coroutines.experimental.CoroutineContext)|",
+      "|java+constructor:///kotlinx/coroutines/experimental/CompletedExceptionally/CompletedExceptionally(java.lang.Throwable)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/getContext()|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineDispatcher/dispatch(kotlin.coroutines.experimental.CoroutineContext,java.lang.Runnable)|",
+      "|java+method:///kotlin/coroutines/experimental/Continuation/getContext()|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/CoroutineExceptionHandlerKt/handleCoroutineException(kotlin.coroutines.experimental.CoroutineContext,java.lang.Throwable)|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///kotlinx/coroutines/experimental/Job/cancel(java.lang.Throwable)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/lang/Thread/currentThread()|",
+      "|java+method:///java/lang/Thread/getUncaughtExceptionHandler()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/util/ServiceLoader/load(java.lang.Class)|",
+      "|java+method:///kotlin/ExceptionsKt/addSuppressed(java.lang.Throwable,java.lang.Throwable)|",
+      "|java+method:///java/lang/Thread$UncaughtExceptionHandler/uncaughtException(java.lang.Thread,java.lang.Throwable)|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineExceptionHandler/handleException(kotlin.coroutines.experimental.CoroutineContext,java.lang.Throwable)|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///kotlin/coroutines/experimental/CoroutineContext/get(kotlin.coroutines.experimental.CoroutineContext$Key)|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlinx/coroutines/experimental/Job/cancel(java.lang.Throwable)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineExceptionHandler/handleException(kotlin.coroutines.experimental.CoroutineContext,java.lang.Throwable)|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineExceptionHandlerImplKt/handleCoroutineExceptionImpl(kotlin.coroutines.experimental.CoroutineContext,java.lang.Throwable)|",
+      "|java+method:///kotlin/ExceptionsKt/addSuppressed(java.lang.Throwable,java.lang.Throwable)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///kotlin/coroutines/experimental/CoroutineContext/get(kotlin.coroutines.experimental.CoroutineContext$Key)|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/DelayKt/getDelay(kotlin.coroutines.experimental.CoroutineContext)|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///kotlin/coroutines/experimental/CoroutineContext/get(kotlin.coroutines.experimental.CoroutineContext$Key)|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/DefaultExecutorKt/getDefaultDelay()|",
+      "|java+method:///kotlin/coroutines/experimental/CoroutineContext/get(kotlin.coroutines.experimental.CoroutineContext$Key)|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/Delay$DefaultImpls/invokeOnTimeout(kotlinx.coroutines.experimental.Delay,long,java.util.concurrent.TimeUnit,java.lang.Runnable)|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///kotlinx/coroutines/experimental/DefaultExecutor/invokeOnTimeout(long,java.util.concurrent.TimeUnit,java.lang.Runnable)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/Delay/invokeOnTimeout(long,java.util.concurrent.TimeUnit,java.lang.Runnable)|",
+      "|java+method:///kotlinx/coroutines/experimental/DefaultExecutorKt/getDefaultDelay()|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/ScheduledKt/withTimeoutOrNull(long,java.util.concurrent.TimeUnit,kotlin.jvm.functions.Function2,kotlin.coroutines.experimental.Continuation)|",
+    "called": "|java+method:///kotlin/coroutines/experimental/jvm/internal/CoroutineIntrinsics/normalizeContinuation(kotlin.coroutines.experimental.Continuation)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///kotlinx/coroutines/experimental/ScheduledKt/access$setupTimeout(kotlinx.coroutines.experimental.TimeoutCoroutine,kotlin.jvm.functions.Function2)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///kotlin/coroutines/experimental/jvm/internal/CoroutineIntrinsics/normalizeContinuation(kotlin.coroutines.experimental.Continuation)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+constructor:///kotlinx/coroutines/experimental/TimeoutOrNullCoroutine/TimeoutOrNullCoroutine(long,java.util.concurrent.TimeUnit,kotlin.coroutines.experimental.Continuation)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///kotlinx/coroutines/experimental/TimeoutOrNullCoroutine/TimeoutOrNullCoroutine(long,java.util.concurrent.TimeUnit,kotlin.coroutines.experimental.Continuation)|",
+      "|java+method:///kotlinx/coroutines/experimental/ScheduledKt/access$setupTimeout(kotlinx.coroutines.experimental.TimeoutCoroutine,kotlin.jvm.functions.Function2)|",
+      "|java+method:///kotlin/coroutines/experimental/jvm/internal/CoroutineIntrinsics/normalizeContinuation(kotlin.coroutines.experimental.Continuation)|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+constructor:///kotlinx/coroutines/experimental/TimeoutCancellationException/TimeoutCancellationException(java.lang.String,kotlinx.coroutines.experimental.Job)|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///kotlinx/coroutines/experimental/TimeoutException/TimeoutException(java.lang.String)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///java/util/concurrent/CancellationException/CancellationException(java.lang.String)|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/CommonPool/createPlainPool()|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///kotlinx/coroutines/experimental/CommonPool$createPlainPool$1/CommonPool$createPlainPool$1(java.util.concurrent.atomic.AtomicInteger)|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicInteger/AtomicInteger()|",
+      "|java+method:///kotlinx/coroutines/experimental/CommonPool/defaultParallelism()|",
+      "|java+method:///java/util/concurrent/Executors/newFixedThreadPool(int,java.util.concurrent.ThreadFactory)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull(java.lang.Object,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///kotlinx/coroutines/experimental/CommonPool$createPlainPool$1/CommonPool$createPlainPool$1(java.util.concurrent.atomic.AtomicInteger)|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicInteger/AtomicInteger()|",
+      "|java+method:///java/util/concurrent/Executors/newFixedThreadPool(int,java.util.concurrent.ThreadFactory)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull(java.lang.Object,java.lang.String)|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/sync/MutexImpl/lockSuspend(java.lang.Object,kotlin.coroutines.experimental.Continuation)|",
+    "called": "|java+method:///kotlin/coroutines/experimental/jvm/internal/CoroutineIntrinsics/normalizeContinuation(kotlin.coroutines.experimental.Continuation)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+constructor:///kotlinx/coroutines/experimental/sync/MutexImpl$LockCont/MutexImpl$LockCont(java.lang.Object,kotlinx.coroutines.experimental.CancellableContinuation)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///kotlinx/coroutines/experimental/sync/Empty/Empty(java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/sync/MutexKt/access$getUNLOCKED$p()|",
+      "|java+method:///kotlinx/coroutines/experimental/internal/OpDescriptor/perform(java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationImpl/getResult()|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuation/initCancellability()|",
+      "|java+method:///kotlin/coroutines/experimental/jvm/internal/CoroutineIntrinsics/normalizeContinuation(kotlin.coroutines.experimental.Continuation)|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationKt/removeOnCancel(kotlinx.coroutines.experimental.CancellableContinuation,kotlinx.coroutines.experimental.internal.LockFreeLinkedListNode)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///kotlin/TypeCastException/TypeCastException(java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuation/resume(java.lang.Object)|",
+      "|java+constructor:///kotlinx/coroutines/experimental/CancellableContinuationImpl/CancellableContinuationImpl(kotlin.coroutines.experimental.Continuation,int)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicReferenceFieldUpdater/compareAndSet(java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/internal/LockFreeLinkedListNode/getPrev()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///kotlinx/coroutines/experimental/internal/LockFreeLinkedListNode/tryCondAddNext(kotlinx.coroutines.experimental.internal.LockFreeLinkedListNode,kotlinx.coroutines.experimental.internal.LockFreeLinkedListNode,kotlinx.coroutines.experimental.internal.LockFreeLinkedListNode$CondAddOp)|",
+      "|java+constructor:///kotlinx/coroutines/experimental/sync/MutexImpl$lockSuspend$$inlined$suspendAtomicCancellableCoroutine$lambda$1/MutexImpl$lockSuspend$$inlined$suspendAtomicCancellableCoroutine$lambda$1(kotlinx.coroutines.experimental.internal.LockFreeLinkedListNode,kotlinx.coroutines.experimental.internal.LockFreeLinkedListNode,java.lang.Object,kotlinx.coroutines.experimental.CancellableContinuation,kotlinx.coroutines.experimental.sync.MutexImpl$LockCont,kotlinx.coroutines.experimental.sync.MutexImpl,java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/sync/MutexKt/access$getEmptyLocked$p()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+constructor:///kotlinx/coroutines/experimental/sync/MutexImpl$LockedQueue/MutexImpl$LockedQueue(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+constructor:///kotlinx/coroutines/experimental/sync/MutexImpl$LockCont/MutexImpl$LockCont(java.lang.Object,kotlinx.coroutines.experimental.CancellableContinuation)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///kotlinx/coroutines/experimental/sync/Empty/Empty(java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/sync/MutexKt/access$getUNLOCKED$p()|",
+      "|java+method:///kotlinx/coroutines/experimental/internal/OpDescriptor/perform(java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationImpl/getResult()|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuation/initCancellability()|",
+      "|java+method:///kotlin/coroutines/experimental/jvm/internal/CoroutineIntrinsics/normalizeContinuation(kotlin.coroutines.experimental.Continuation)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///kotlin/TypeCastException/TypeCastException(java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuation/resume(java.lang.Object)|",
+      "|java+constructor:///kotlinx/coroutines/experimental/CancellableContinuationImpl/CancellableContinuationImpl(kotlin.coroutines.experimental.Continuation,int)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicReferenceFieldUpdater/compareAndSet(java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/internal/LockFreeLinkedListNode/getPrev()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationKt/removeOnCancellation(kotlinx.coroutines.experimental.CancellableContinuation,kotlinx.coroutines.experimental.internal.LockFreeLinkedListNode)|",
+      "|java+method:///kotlinx/coroutines/experimental/internal/LockFreeLinkedListNode/tryCondAddNext(kotlinx.coroutines.experimental.internal.LockFreeLinkedListNode,kotlinx.coroutines.experimental.internal.LockFreeLinkedListNode,kotlinx.coroutines.experimental.internal.LockFreeLinkedListNode$CondAddOp)|",
+      "|java+constructor:///kotlinx/coroutines/experimental/sync/MutexImpl$lockSuspend$$inlined$suspendAtomicCancellableCoroutine$lambda$1/MutexImpl$lockSuspend$$inlined$suspendAtomicCancellableCoroutine$lambda$1(kotlinx.coroutines.experimental.internal.LockFreeLinkedListNode,kotlinx.coroutines.experimental.internal.LockFreeLinkedListNode,java.lang.Object,kotlinx.coroutines.experimental.CancellableContinuation,kotlinx.coroutines.experimental.sync.MutexImpl$LockCont,kotlinx.coroutines.experimental.sync.MutexImpl,java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/sync/MutexKt/access$getEmptyLocked$p()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+constructor:///kotlinx/coroutines/experimental/sync/MutexImpl$LockedQueue/MutexImpl$LockedQueue(java.lang.Object)|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/Delay$DefaultImpls/delay(kotlinx.coroutines.experimental.Delay,long,java.util.concurrent.TimeUnit,kotlin.coroutines.experimental.Continuation)|",
+    "called": "|java+method:///kotlin/coroutines/experimental/jvm/internal/CoroutineIntrinsics/normalizeContinuation(kotlin.coroutines.experimental.Continuation)|",
+    "v1Body": [
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///kotlinx/coroutines/experimental/CancellableContinuationImpl/CancellableContinuationImpl(kotlin.coroutines.experimental.Continuation,int)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///kotlinx/coroutines/experimental/Delay/scheduleResumeAfterDelay(long,java.util.concurrent.TimeUnit,kotlinx.coroutines.experimental.CancellableContinuation)|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationImpl/getResult()|",
+      "|java+method:///kotlin/coroutines/experimental/jvm/internal/CoroutineIntrinsics/normalizeContinuation(kotlin.coroutines.experimental.Continuation)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationImpl/initCancellability()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///kotlinx/coroutines/experimental/CancellableContinuationImpl/CancellableContinuationImpl(kotlin.coroutines.experimental.Continuation,int)|",
+      "|java+method:///kotlinx/coroutines/experimental/Delay/scheduleResumeAfterDelay(long,java.util.concurrent.TimeUnit,kotlinx.coroutines.experimental.CancellableContinuation)|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationImpl/getResult()|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationImpl/initCancellability()|",
+      "|java+method:///kotlin/coroutines/experimental/jvm/internal/CoroutineIntrinsics/normalizeContinuation(kotlin.coroutines.experimental.Continuation)|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/ResumeModeKt/resumeWithExceptionMode(kotlin.coroutines.experimental.Continuation,java.lang.Throwable,int)|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedKt/resumeCancellableWithException(kotlin.coroutines.experimental.Continuation,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/getContext()|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineContextKt/restoreThreadContext(java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/getContinuation()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///kotlin/coroutines/experimental/Continuation/resumeWithException(java.lang.Throwable)|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineContextKt/updateThreadContext(kotlin.coroutines.experimental.CoroutineContext)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedKt/resumeDirectWithException(kotlin.coroutines.experimental.Continuation,java.lang.Throwable)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedKt/resumeCancellableWithException(kotlin.coroutines.experimental.Continuation,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/getContext()|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineContextKt/restoreThreadContext(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///kotlin/coroutines/experimental/Continuation/resumeWithException(java.lang.Throwable)|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineContextKt/updateThreadContext(kotlin.coroutines.experimental.CoroutineContext)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedKt/resumeDirectWithException(kotlin.coroutines.experimental.Continuation,java.lang.Throwable)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/channels/ProduceKt/produce(kotlin.coroutines.experimental.CoroutineContext,int,kotlin.jvm.functions.Function2)|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///kotlinx/coroutines/experimental/channels/ProduceKt/produce$default(kotlin.coroutines.experimental.CoroutineContext,int,kotlinx.coroutines.experimental.Job,kotlin.jvm.functions.Function2,int,java.lang.Object)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///kotlin/TypeCastException/TypeCastException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlinx/coroutines/experimental/channels/ProduceKt/produce$default(kotlin.coroutines.experimental.CoroutineContext,int,kotlinx.coroutines.experimental.Job,kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function2,int,java.lang.Object)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///kotlin/TypeCastException/TypeCastException(java.lang.String)|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/DelayKt/delay(long,java.util.concurrent.TimeUnit,kotlin.coroutines.experimental.Continuation)|",
+    "called": "|java+method:///kotlin/coroutines/experimental/jvm/internal/CoroutineIntrinsics/normalizeContinuation(kotlin.coroutines.experimental.Continuation)|",
+    "v1Body": [
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuation/getContext()|",
+      "|java+constructor:///kotlinx/coroutines/experimental/CancellableContinuationImpl/CancellableContinuationImpl(kotlin.coroutines.experimental.Continuation,int)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///kotlinx/coroutines/experimental/Delay/scheduleResumeAfterDelay(long,java.util.concurrent.TimeUnit,kotlinx.coroutines.experimental.CancellableContinuation)|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationImpl/getResult()|",
+      "|java+method:///kotlinx/coroutines/experimental/DelayKt/getDelay(kotlin.coroutines.experimental.CoroutineContext)|",
+      "|java+method:///kotlin/coroutines/experimental/jvm/internal/CoroutineIntrinsics/normalizeContinuation(kotlin.coroutines.experimental.Continuation)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationImpl/initCancellability()|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuation/getContext()|",
+      "|java+constructor:///kotlinx/coroutines/experimental/CancellableContinuationImpl/CancellableContinuationImpl(kotlin.coroutines.experimental.Continuation,int)|",
+      "|java+method:///kotlinx/coroutines/experimental/Delay/scheduleResumeAfterDelay(long,java.util.concurrent.TimeUnit,kotlinx.coroutines.experimental.CancellableContinuation)|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationImpl/getResult()|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationImpl/initCancellability()|",
+      "|java+method:///kotlinx/coroutines/experimental/DelayKt/getDelay(kotlin.coroutines.experimental.CoroutineContext)|",
+      "|java+method:///kotlin/coroutines/experimental/jvm/internal/CoroutineIntrinsics/normalizeContinuation(kotlin.coroutines.experimental.Continuation)|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+constructor:///kotlinx/coroutines/experimental/Cancelled/Cancelled(kotlinx.coroutines.experimental.Job,java.lang.Throwable)|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///kotlinx/coroutines/experimental/CompletedExceptionally/CompletedExceptionally(java.lang.Throwable,boolean)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///kotlinx/coroutines/experimental/CompletedExceptionally/CompletedExceptionally(java.lang.Throwable)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///kotlinx/coroutines/experimental/JobCancellationException/JobCancellationException(java.lang.String,java.lang.Throwable,kotlinx.coroutines.experimental.Job)|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/resumeWithException(java.lang.Throwable)|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineContextKt/restoreThreadContext(java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/getContinuation()|",
+      "|java+method:///kotlin/coroutines/experimental/Continuation/resumeWithException(java.lang.Throwable)|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineContextKt/updateThreadContext(kotlin.coroutines.experimental.CoroutineContext)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/setResumeMode(int)|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineDispatcher/isDispatchNeeded(kotlin.coroutines.experimental.CoroutineContext)|",
+      "|java+constructor:///kotlinx/coroutines/experimental/CompletedExceptionally/CompletedExceptionally(java.lang.Throwable)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/getContext()|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineDispatcher/dispatch(kotlin.coroutines.experimental.CoroutineContext,java.lang.Runnable)|",
+      "|java+method:///kotlin/coroutines/experimental/Continuation/getContext()|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineContextKt/restoreThreadContext(java.lang.String)|",
+      "|java+method:///kotlin/coroutines/experimental/Continuation/resumeWithException(java.lang.Throwable)|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineContextKt/updateThreadContext(kotlin.coroutines.experimental.CoroutineContext)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/setResumeMode(int)|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineDispatcher/isDispatchNeeded(kotlin.coroutines.experimental.CoroutineContext)|",
+      "|java+constructor:///kotlinx/coroutines/experimental/CompletedExceptionally/CompletedExceptionally(java.lang.Throwable)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/getContext()|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineDispatcher/dispatch(kotlin.coroutines.experimental.CoroutineContext,java.lang.Runnable)|",
+      "|java+method:///kotlin/coroutines/experimental/Continuation/getContext()|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/DeferredKt/defer(kotlin.coroutines.experimental.CoroutineContext,kotlin.jvm.functions.Function2)|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///kotlinx/coroutines/experimental/DeferredKt/async$default(kotlin.coroutines.experimental.CoroutineContext,kotlinx.coroutines.experimental.CoroutineStart,kotlinx.coroutines.experimental.Job,kotlin.jvm.functions.Function2,int,java.lang.Object)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlinx/coroutines/experimental/DeferredKt/async$default(kotlin.coroutines.experimental.CoroutineContext,kotlinx.coroutines.experimental.CoroutineStart,kotlinx.coroutines.experimental.Job,kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function2,int,java.lang.Object)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+constructor:///kotlinx/coroutines/experimental/CompletedExceptionally/CompletedExceptionally(java.lang.Throwable)|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///kotlinx/coroutines/experimental/CompletedExceptionally/CompletedExceptionally(java.lang.Throwable,boolean)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/channels/AbstractSendChannel/sendSuspend(java.lang.Object,kotlin.coroutines.experimental.Continuation)|",
+    "called": "|java+method:///kotlin/coroutines/experimental/jvm/internal/CoroutineIntrinsics/normalizeContinuation(kotlin.coroutines.experimental.Continuation)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+constructor:///kotlinx/coroutines/experimental/channels/SendElement/SendElement(java.lang.Object,kotlinx.coroutines.experimental.CancellableContinuation)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/channels/AbstractSendChannel/access$enqueueSend(kotlinx.coroutines.experimental.channels.AbstractSendChannel,kotlinx.coroutines.experimental.channels.SendElement)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///kotlinx/coroutines/experimental/channels/AbstractSendChannel/offerInternal(java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationImpl/getResult()|",
+      "|java+method:///kotlin/coroutines/experimental/jvm/internal/CoroutineIntrinsics/normalizeContinuation(kotlin.coroutines.experimental.Continuation)|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationKt/removeOnCancel(kotlinx.coroutines.experimental.CancellableContinuation,kotlinx.coroutines.experimental.internal.LockFreeLinkedListNode)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuation/resume(java.lang.Object)|",
+      "|java+constructor:///kotlinx/coroutines/experimental/CancellableContinuationImpl/CancellableContinuationImpl(kotlin.coroutines.experimental.Continuation,int)|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuation/resumeWithException(java.lang.Throwable)|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuation/initCancellability()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/channels/Closed/getSendException()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+constructor:///kotlinx/coroutines/experimental/channels/SendElement/SendElement(java.lang.Object,kotlinx.coroutines.experimental.CancellableContinuation)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/channels/AbstractSendChannel/access$enqueueSend(kotlinx.coroutines.experimental.channels.AbstractSendChannel,kotlinx.coroutines.experimental.channels.SendElement)|",
+      "|java+method:///kotlinx/coroutines/experimental/channels/AbstractSendChannel/offerInternal(java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationImpl/getResult()|",
+      "|java+method:///kotlin/coroutines/experimental/jvm/internal/CoroutineIntrinsics/normalizeContinuation(kotlin.coroutines.experimental.Continuation)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuation/resume(java.lang.Object)|",
+      "|java+constructor:///kotlinx/coroutines/experimental/CancellableContinuationImpl/CancellableContinuationImpl(kotlin.coroutines.experimental.Continuation,int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationKt/removeOnCancellation(kotlinx.coroutines.experimental.CancellableContinuation,kotlinx.coroutines.experimental.internal.LockFreeLinkedListNode)|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuation/resumeWithException(java.lang.Throwable)|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuation/initCancellability()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/channels/Closed/getSendException()|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/channels/BroadcastChannel$DefaultImpls/open(kotlinx.coroutines.experimental.channels.BroadcastChannel)|",
+    "called": "|java+constructor:///kotlin/TypeCastException/TypeCastException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///kotlinx/coroutines/experimental/channels/BroadcastChannel/openSubscription()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///kotlin/TypeCastException/TypeCastException(java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/channels/BroadcastChannel/openSubscription()|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/channels/AbstractSendChannel/conflatePreviousSendBuffered(kotlinx.coroutines.experimental.internal.LockFreeLinkedListNode)|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///kotlinx/coroutines/experimental/channels/AbstractSendChannel$SendBuffered/remove()|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/internal/LockFreeLinkedListNode/getPrev()|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlinx/coroutines/experimental/channels/AbstractSendChannel$SendBuffered/remove()|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/internal/LockFreeLinkedListNode/getPrevNode()|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/DispatchedKt/dispatch(kotlinx.coroutines.experimental.DispatchedTask,int)|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineDispatcher/isDispatchNeeded(kotlin.coroutines.experimental.CoroutineContext)|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineDispatcher/dispatch(kotlin.coroutines.experimental.CoroutineContext,java.lang.Runnable)|",
+      "|java+method:///kotlinx/coroutines/experimental/ResumeModeKt/resumeMode(kotlin.coroutines.experimental.Continuation,java.lang.Object,int)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedTask/getSuccessfulResult(java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedTask/getDelegate()|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedTask/getExceptionalResult(java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedTask/getResumeMode()|",
+      "|java+method:///kotlinx/coroutines/experimental/ResumeModeKt/isCancellableMode(int)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/getDispatcher()|",
+      "|java+method:///kotlin/coroutines/experimental/Continuation/getContext()|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/ResumeModeKt/isDispatchedMode(int)|",
+      "|java+method:///kotlinx/coroutines/experimental/ResumeModeKt/resumeWithExceptionMode(kotlin.coroutines.experimental.Continuation,java.lang.Throwable,int)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedTask/takeState()|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineDispatcher/isDispatchNeeded(kotlin.coroutines.experimental.CoroutineContext)|",
+      "|java+method:///kotlinx/coroutines/experimental/ResumeModeKt/isCancellableMode(int)|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineDispatcher/dispatch(kotlin.coroutines.experimental.CoroutineContext,java.lang.Runnable)|",
+      "|java+method:///kotlinx/coroutines/experimental/ResumeModeKt/resumeMode(kotlin.coroutines.experimental.Continuation,java.lang.Object,int)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedTask/getSuccessfulResult(java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedTask/getDelegate()|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedTask/getExceptionalResult(java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedTask/getResumeMode()|",
+      "|java+method:///kotlin/coroutines/experimental/Continuation/getContext()|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/ResumeModeKt/isDispatchedMode(int)|",
+      "|java+method:///kotlinx/coroutines/experimental/ResumeModeKt/resumeWithExceptionMode(kotlin.coroutines.experimental.Continuation,java.lang.Throwable,int)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedTask/takeState()|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/channels/ProduceKt/buildChannel(kotlin.coroutines.experimental.CoroutineContext,int,kotlin.jvm.functions.Function2)|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///kotlinx/coroutines/experimental/channels/ProduceKt/produce$default(kotlin.coroutines.experimental.CoroutineContext,int,kotlinx.coroutines.experimental.Job,kotlin.jvm.functions.Function2,int,java.lang.Object)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///kotlin/TypeCastException/TypeCastException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlinx/coroutines/experimental/channels/ProduceKt/produce$default(kotlin.coroutines.experimental.CoroutineContext,int,kotlinx.coroutines.experimental.Job,kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function2,int,java.lang.Object)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///kotlin/TypeCastException/TypeCastException(java.lang.String)|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/internal/LockFreeLinkedListHead/forEach(kotlin.jvm.functions.Function1)|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/reifiedOperationMarker(int,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///kotlin/jvm/functions/Function1/invoke(java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/internal/LockFreeLinkedListNode/getNext()|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/reifiedOperationMarker(int,java.lang.String)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/areEqual(java.lang.Object,java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/internal/LockFreeLinkedListKt/unwrap(java.lang.Object)|",
+      "|java+constructor:///kotlin/TypeCastException/TypeCastException(java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/internal/LockFreeLinkedListHead/getNext()|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlin/jvm/functions/Function1/invoke(java.lang.Object)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/reifiedOperationMarker(int,java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/internal/LockFreeLinkedListNode/getNextNode()|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/areEqual(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///kotlin/TypeCastException/TypeCastException(java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/internal/LockFreeLinkedListHead/getNext()|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationKt/removeOnCancel(kotlinx.coroutines.experimental.CancellableContinuation,kotlinx.coroutines.experimental.internal.LockFreeLinkedListNode)|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///kotlinx/coroutines/experimental/RemoveOnCancel/RemoveOnCancel(kotlinx.coroutines.experimental.CancellableContinuation,kotlinx.coroutines.experimental.internal.LockFreeLinkedListNode)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuation/invokeOnCompletion(kotlin.jvm.functions.Function1)|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationKt/removeOnCancellation(kotlinx.coroutines.experimental.CancellableContinuation,kotlinx.coroutines.experimental.internal.LockFreeLinkedListNode)|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+constructor:///kotlinx/coroutines/experimental/AbstractContinuation/AbstractContinuation(kotlin.coroutines.experimental.Continuation,int)|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///kotlinx/coroutines/experimental/JobSupport/JobSupport(boolean)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlinx/coroutines/experimental/AbstractContinuationKt/access$getACTIVE$p()|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/ResumeModeKt/resumeMode(kotlin.coroutines.experimental.Continuation,java.lang.Object,int)|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/getContext()|",
+      "|java+method:///kotlin/coroutines/experimental/Continuation/resume(java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedKt/resumeDirect(kotlin.coroutines.experimental.Continuation,java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedKt/resumeCancellable(kotlin.coroutines.experimental.Continuation,java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineContextKt/restoreThreadContext(java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/getContinuation()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineContextKt/updateThreadContext(kotlin.coroutines.experimental.CoroutineContext)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/getContext()|",
+      "|java+method:///kotlin/coroutines/experimental/Continuation/resume(java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedKt/resumeDirect(kotlin.coroutines.experimental.Continuation,java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedKt/resumeCancellable(kotlin.coroutines.experimental.Continuation,java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineContextKt/restoreThreadContext(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineContextKt/updateThreadContext(kotlin.coroutines.experimental.CoroutineContext)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/resumeUndispatchedWithException(java.lang.Throwable)|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/getContext()|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineContextKt/restoreThreadContext(java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/getContinuation()|",
+      "|java+method:///kotlin/jvm/internal/InlineMarker/finallyStart(int)|",
+      "|java+method:///kotlin/coroutines/experimental/Continuation/resumeWithException(java.lang.Throwable)|",
+      "|java+method:///kotlin/jvm/internal/InlineMarker/finallyEnd(int)|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineContextKt/updateThreadContext(kotlin.coroutines.experimental.CoroutineContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/getContext()|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineContextKt/restoreThreadContext(java.lang.String)|",
+      "|java+method:///kotlin/jvm/internal/InlineMarker/finallyStart(int)|",
+      "|java+method:///kotlin/coroutines/experimental/Continuation/resumeWithException(java.lang.Throwable)|",
+      "|java+method:///kotlin/jvm/internal/InlineMarker/finallyEnd(int)|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineContextKt/updateThreadContext(kotlin.coroutines.experimental.CoroutineContext)|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+constructor:///kotlinx/coroutines/experimental/EventLoopBase$DelayedResumeTask/EventLoopBase$DelayedResumeTask(kotlinx.coroutines.experimental.EventLoopBase,long,java.util.concurrent.TimeUnit,kotlinx.coroutines.experimental.CancellableContinuation)|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///kotlinx/coroutines/experimental/EventLoopBase$DelayedTask/EventLoopBase$DelayedTask(kotlinx.coroutines.experimental.EventLoopBase,long,java.util.concurrent.TimeUnit)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///kotlinx/coroutines/experimental/EventLoopBase$DelayedTask/EventLoopBase$DelayedTask(kotlinx.coroutines.experimental.EventLoopBase,long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationKt/disposeOnCancellation(kotlinx.coroutines.experimental.CancellableContinuation,kotlinx.coroutines.experimental.DisposableHandle)|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationImpl/tryResumeWithException(java.lang.Throwable)|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///kotlinx/coroutines/experimental/CompletedExceptionally/CompletedExceptionally(java.lang.Throwable)|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationImpl/getState$kotlinx_coroutines_core()|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationImpl/tryUpdateState$kotlinx_coroutines_core(kotlinx.coroutines.experimental.JobSupport$Incomplete,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///kotlinx/coroutines/experimental/CompletedExceptionally/CompletedExceptionally(java.lang.Throwable)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationImpl/tryUpdateStateToFinal(kotlinx.coroutines.experimental.NotCompleted,java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/AbstractContinuation/getState$kotlinx_coroutines_core()|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/channels/ConflatedBroadcastChannel/openSubscription()|",
+    "called": "|java+constructor:///kotlin/TypeCastException/TypeCastException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///kotlin/TypeCastException/TypeCastException(java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/channels/ConflatedBroadcastChannel/addSubscriber(kotlinx.coroutines.experimental.channels.ConflatedBroadcastChannel$Subscriber%5B%5D,kotlinx.coroutines.experimental.channels.ConflatedBroadcastChannel$Subscriber)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicReferenceFieldUpdater/compareAndSet(java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/channels/ConflatedBroadcastChannel$Subscriber/close(java.lang.Throwable)|",
+      "|java+method:///kotlinx/coroutines/experimental/channels/ConflatedBroadcastChannel$Subscriber/offerInternal(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+constructor:///kotlinx/coroutines/experimental/channels/ConflatedBroadcastChannel$State/ConflatedBroadcastChannel$State(java.lang.Object,kotlinx.coroutines.experimental.channels.ConflatedBroadcastChannel$Subscriber%5B%5D)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///kotlinx/coroutines/experimental/channels/ConflatedBroadcastChannel$Subscriber/ConflatedBroadcastChannel$Subscriber(kotlinx.coroutines.experimental.channels.ConflatedBroadcastChannel)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///kotlin/TypeCastException/TypeCastException(java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/channels/ConflatedBroadcastChannel/addSubscriber(kotlinx.coroutines.experimental.channels.ConflatedBroadcastChannel$Subscriber%5B%5D,kotlinx.coroutines.experimental.channels.ConflatedBroadcastChannel$Subscriber)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicReferenceFieldUpdater/compareAndSet(java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/channels/ConflatedBroadcastChannel$Subscriber/close(java.lang.Throwable)|",
+      "|java+method:///kotlinx/coroutines/experimental/channels/ConflatedBroadcastChannel$Subscriber/offerInternal(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/channels/BroadcastChannel$DefaultImpls/openSubscription(kotlinx.coroutines.experimental.channels.BroadcastChannel)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+constructor:///kotlinx/coroutines/experimental/channels/ConflatedBroadcastChannel$State/ConflatedBroadcastChannel$State(java.lang.Object,kotlinx.coroutines.experimental.channels.ConflatedBroadcastChannel$Subscriber%5B%5D)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///kotlinx/coroutines/experimental/channels/ConflatedBroadcastChannel$Subscriber/ConflatedBroadcastChannel$Subscriber(kotlinx.coroutines.experimental.channels.ConflatedBroadcastChannel)|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/YieldKt/yield(kotlin.coroutines.experimental.Continuation)|",
+    "called": "|java+method:///kotlin/coroutines/experimental/jvm/internal/CoroutineIntrinsics/normalizeContinuation(kotlin.coroutines.experimental.Continuation)|",
+    "v1Body": [
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineDispatcher/isDispatchNeeded(kotlin.coroutines.experimental.CoroutineContext)|",
+      "|java+method:///kotlinx/coroutines/experimental/YieldKt$yield$1/getLabel()|",
+      "|java+method:///kotlin/coroutines/experimental/Continuation/getContext()|",
+      "|java+method:///kotlin/coroutines/experimental/intrinsics/IntrinsicsKt/getCOROUTINE_SUSPENDED()|",
+      "|java+method:///kotlinx/coroutines/experimental/YieldKt/checkCompletion(kotlin.coroutines.experimental.CoroutineContext)|",
+      "|java+method:///kotlin/coroutines/experimental/jvm/internal/CoroutineIntrinsics/normalizeContinuation(kotlin.coroutines.experimental.Continuation)|",
+      "|java+constructor:///kotlinx/coroutines/experimental/YieldKt$yield$1/YieldKt$yield$1(kotlin.coroutines.experimental.Continuation)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/getDispatcher()|",
+      "|java+method:///kotlinx/coroutines/experimental/YieldKt$yield$1/setLabel(int)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/dispatchYield$kotlinx_coroutines_core(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineDispatcher/isDispatchNeeded(kotlin.coroutines.experimental.CoroutineContext)|",
+      "|java+method:///kotlin/coroutines/experimental/Continuation/getContext()|",
+      "|java+method:///kotlin/coroutines/experimental/intrinsics/IntrinsicsKt/getCOROUTINE_SUSPENDED()|",
+      "|java+method:///kotlinx/coroutines/experimental/YieldKt/checkCompletion(kotlin.coroutines.experimental.CoroutineContext)|",
+      "|java+method:///kotlin/coroutines/experimental/jvm/internal/CoroutineIntrinsics/normalizeContinuation(kotlin.coroutines.experimental.Continuation)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/dispatchYield$kotlinx_coroutines_core(java.lang.Object)|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/intrinsics/UndispatchedKt/startUndispatchedOrReturn(kotlinx.coroutines.experimental.AbstractCoroutine,kotlin.jvm.functions.Function1)|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///kotlinx/coroutines/experimental/CompletedExceptionally/CompletedExceptionally(java.lang.Throwable)|",
+      "|java+method:///kotlin/jvm/internal/TypeIntrinsics/beforeCheckcastToFunctionOfArity(java.lang.Object,int)|",
+      "|java+method:///kotlinx/coroutines/experimental/AbstractCoroutine/makeCompletingOnce$kotlinx_coroutines_core(java.lang.Object,int)|",
+      "|java+method:///kotlin/jvm/functions/Function1/invoke(java.lang.Object)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/CompletedExceptionally/getException()|",
+      "|java+method:///kotlinx/coroutines/experimental/AbstractCoroutine/initParentJob$kotlinx_coroutines_core()|",
+      "|java+method:///kotlin/coroutines/experimental/intrinsics/IntrinsicsKt/getCOROUTINE_SUSPENDED()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///kotlinx/coroutines/experimental/CompletedExceptionally/CompletedExceptionally(java.lang.Throwable)|",
+      "|java+method:///kotlin/jvm/internal/TypeIntrinsics/beforeCheckcastToFunctionOfArity(java.lang.Object,int)|",
+      "|java+method:///kotlinx/coroutines/experimental/AbstractCoroutine/makeCompletingOnce$kotlinx_coroutines_core(java.lang.Object,int)|",
+      "|java+method:///kotlin/jvm/functions/Function1/invoke(java.lang.Object)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/AbstractCoroutine/initParentJob$kotlinx_coroutines_core()|",
+      "|java+method:///kotlin/coroutines/experimental/intrinsics/IntrinsicsKt/getCOROUTINE_SUSPENDED()|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/intrinsics/UndispatchedKt/startUndispatchedOrReturn(kotlinx.coroutines.experimental.AbstractCoroutine,java.lang.Object,kotlin.jvm.functions.Function2)|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///kotlin/jvm/internal/TypeIntrinsics/beforeCheckcastToFunctionOfArity(java.lang.Object,int)|",
+      "|java+method:///kotlinx/coroutines/experimental/AbstractCoroutine/makeCompletingOnce$kotlinx_coroutines_core(java.lang.Object,int)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/CompletedExceptionally/getException()|",
+      "|java+constructor:///kotlinx/coroutines/experimental/CompletedExceptionally/CompletedExceptionally(java.lang.Throwable)|",
+      "|java+method:///kotlin/jvm/functions/Function2/invoke(java.lang.Object,java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/AbstractCoroutine/initParentJob$kotlinx_coroutines_core()|",
+      "|java+method:///kotlin/coroutines/experimental/intrinsics/IntrinsicsKt/getCOROUTINE_SUSPENDED()|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlin/jvm/internal/TypeIntrinsics/beforeCheckcastToFunctionOfArity(java.lang.Object,int)|",
+      "|java+method:///kotlinx/coroutines/experimental/AbstractCoroutine/makeCompletingOnce$kotlinx_coroutines_core(java.lang.Object,int)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///kotlinx/coroutines/experimental/CompletedExceptionally/CompletedExceptionally(java.lang.Throwable)|",
+      "|java+method:///kotlin/jvm/functions/Function2/invoke(java.lang.Object,java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/AbstractCoroutine/initParentJob$kotlinx_coroutines_core()|",
+      "|java+method:///kotlin/coroutines/experimental/intrinsics/IntrinsicsKt/getCOROUTINE_SUSPENDED()|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/DispatchedKt/resumeCancellable(kotlin.coroutines.experimental.Continuation,java.lang.Object)|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineDispatcher/isDispatchNeeded(kotlin.coroutines.experimental.CoroutineContext)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/getDispatcher()|",
+      "|java+method:///kotlin/coroutines/experimental/Continuation/resume(java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/access$set_state$p(kotlinx.coroutines.experimental.DispatchedContinuation,java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineContextKt/restoreThreadContext(java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/getContinuation()|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineContextKt/updateThreadContext(kotlin.coroutines.experimental.CoroutineContext)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/setResumeMode(int)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/getContext()|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineDispatcher/dispatch(kotlin.coroutines.experimental.CoroutineContext,java.lang.Runnable)|",
+      "|java+method:///kotlin/coroutines/experimental/Continuation/getContext()|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineDispatcher/isDispatchNeeded(kotlin.coroutines.experimental.CoroutineContext)|",
+      "|java+method:///kotlin/coroutines/experimental/Continuation/resume(java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/access$set_state$p(kotlinx.coroutines.experimental.DispatchedContinuation,java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineContextKt/restoreThreadContext(java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineContextKt/updateThreadContext(kotlin.coroutines.experimental.CoroutineContext)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/setResumeMode(int)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/getContext()|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineDispatcher/dispatch(kotlin.coroutines.experimental.CoroutineContext,java.lang.Runnable)|",
+      "|java+method:///kotlin/coroutines/experimental/Continuation/getContext()|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/JobSupport/removeNode$kotlinx_coroutines_core(kotlinx.coroutines.experimental.JobNode)|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///kotlinx/coroutines/experimental/JobSupport/getState$kotlinx_coroutines_core()|",
+      "|java+method:///kotlinx/coroutines/experimental/JobSupport$Incomplete/getList()|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicReferenceFieldUpdater/compareAndSet(java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/JobKt/access$getEmptyActive$p()|",
+      "|java+method:///kotlinx/coroutines/experimental/JobNode/remove()|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlinx/coroutines/experimental/JobSupport/getState$kotlinx_coroutines_core()|",
+      "|java+method:///kotlinx/coroutines/experimental/Incomplete/getList()|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicReferenceFieldUpdater/compareAndSet(java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/JobNode/remove()|",
+      "|java+method:///kotlinx/coroutines/experimental/JobSupportKt/access$getEmptyActive$p()|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/selects/SelectBuilderImpl/onTimeout(long,java.util.concurrent.TimeUnit,kotlin.jvm.functions.Function1)|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///kotlinx/coroutines/experimental/selects/SelectBuilderImpl/getContext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/intrinsics/UndispatchedKt/startCoroutineUndispatched(kotlin.jvm.functions.Function1,kotlin.coroutines.experimental.Continuation)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/selects/SelectBuilderImpl/trySelect(java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/Delay/invokeOnTimeout(long,java.util.concurrent.TimeUnit,java.lang.Runnable)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///kotlinx/coroutines/experimental/selects/SelectBuilderImpl$onTimeout$action$1/SelectBuilderImpl$onTimeout$action$1(kotlinx.coroutines.experimental.selects.SelectBuilderImpl,kotlin.jvm.functions.Function1)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/DelayKt/getDelay(kotlin.coroutines.experimental.CoroutineContext)|",
+      "|java+method:///kotlinx/coroutines/experimental/selects/SelectBuilderImpl/getCompletion()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///kotlinx/coroutines/experimental/selects/SelectBuilderImpl/disposeOnSelect(kotlinx.coroutines.experimental.DisposableHandle)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlinx/coroutines/experimental/selects/SelectBuilderImpl/getContext()|",
+      "|java+method:///kotlinx/coroutines/experimental/intrinsics/UndispatchedKt/startCoroutineUndispatched(kotlin.jvm.functions.Function1,kotlin.coroutines.experimental.Continuation)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/selects/SelectBuilderImpl/trySelect(java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/selects/SelectBuilderImpl/disposeOnSelect(kotlinx.coroutines.experimental.DisposableHandle)|",
+      "|java+method:///kotlinx/coroutines/experimental/Delay/invokeOnTimeout(long,java.util.concurrent.TimeUnit,java.lang.Runnable)|",
+      "|java+constructor:///kotlinx/coroutines/experimental/selects/SelectBuilderImpl$onTimeout$$inlined$Runnable$1/SelectBuilderImpl$onTimeout$$inlined$Runnable$1(kotlinx.coroutines.experimental.selects.SelectBuilderImpl,kotlin.jvm.functions.Function1)|",
+      "|java+method:///kotlinx/coroutines/experimental/DelayKt/getDelay(kotlin.coroutines.experimental.CoroutineContext)|",
+      "|java+method:///kotlinx/coroutines/experimental/selects/SelectBuilderImpl/getCompletion()|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationImpl/resumeUndispatchedWithException(kotlinx.coroutines.experimental.CoroutineDispatcher,java.lang.Throwable)|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationImpl/getDelegate()|",
+      "|java+constructor:///kotlinx/coroutines/experimental/CompletedExceptionally/CompletedExceptionally(java.lang.Throwable)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/getDispatcher()|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationImpl/resumeImpl(java.lang.Object,int)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationImpl/getResumeMode()|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationImpl/getDelegate()|",
+      "|java+constructor:///kotlinx/coroutines/experimental/CompletedExceptionally/CompletedExceptionally(java.lang.Throwable)|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationImpl/resumeImpl(java.lang.Object,int)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationImpl/getResumeMode()|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/DeferredKt/async(kotlin.coroutines.experimental.CoroutineContext,boolean,kotlin.jvm.functions.Function2)|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///kotlinx/coroutines/experimental/DeferredKt/async$default(kotlin.coroutines.experimental.CoroutineContext,kotlinx.coroutines.experimental.CoroutineStart,kotlinx.coroutines.experimental.Job,kotlin.jvm.functions.Function2,int,java.lang.Object)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlinx/coroutines/experimental/DeferredKt/async$default(kotlin.coroutines.experimental.CoroutineContext,kotlinx.coroutines.experimental.CoroutineStart,kotlinx.coroutines.experimental.Job,kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function2,int,java.lang.Object)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/channels/AbstractSendChannel/countQueueSize()|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/areEqual(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///kotlinx/coroutines/experimental/internal/LockFreeLinkedListNode/getNext()|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/areEqual(java.lang.Object,java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/internal/LockFreeLinkedListKt/unwrap(java.lang.Object)|",
+      "|java+constructor:///kotlin/TypeCastException/TypeCastException(java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/internal/LockFreeLinkedListHead/getNext()|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlinx/coroutines/experimental/internal/LockFreeLinkedListNode/getNextNode()|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/areEqual(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///kotlin/TypeCastException/TypeCastException(java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/internal/LockFreeLinkedListHead/getNext()|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/DeferredKt/async(kotlin.coroutines.experimental.CoroutineContext,kotlinx.coroutines.experimental.CoroutineStart,kotlinx.coroutines.experimental.Job,kotlin.jvm.functions.Function2)|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///kotlinx/coroutines/experimental/DeferredCoroutine/DeferredCoroutine(kotlin.coroutines.experimental.CoroutineContext,boolean)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/DeferredCoroutine/start(kotlinx.coroutines.experimental.CoroutineStart,java.lang.Object,kotlin.jvm.functions.Function2)|",
+      "|java+constructor:///kotlinx/coroutines/experimental/LazyDeferredCoroutine/LazyDeferredCoroutine(kotlin.coroutines.experimental.CoroutineContext,kotlin.jvm.functions.Function2)|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineStart/isLazy()|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineContextKt/newCoroutineContext(kotlin.coroutines.experimental.CoroutineContext,kotlinx.coroutines.experimental.Job)|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlinx/coroutines/experimental/DeferredKt/async$default(kotlin.coroutines.experimental.CoroutineContext,kotlinx.coroutines.experimental.CoroutineStart,kotlinx.coroutines.experimental.Job,kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function2,int,java.lang.Object)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/JobSupport/attachChild(kotlinx.coroutines.experimental.Job)|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///kotlinx/coroutines/experimental/Job$DefaultImpls/invokeOnCompletion$default(kotlinx.coroutines.experimental.Job,boolean,boolean,kotlin.jvm.functions.Function1,int,java.lang.Object)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///kotlinx/coroutines/experimental/Child/Child(kotlinx.coroutines.experimental.JobSupport,kotlinx.coroutines.experimental.Job)|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlinx/coroutines/experimental/Job$DefaultImpls/invokeOnCompletion$default(kotlinx.coroutines.experimental.Job,boolean,boolean,kotlin.jvm.functions.Function1,int,java.lang.Object)|",
+      "|java+constructor:///kotlinx/coroutines/experimental/ChildJob/ChildJob(kotlinx.coroutines.experimental.JobSupport,kotlinx.coroutines.experimental.Job)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/DeferredKt/async(kotlin.coroutines.experimental.CoroutineContext,kotlinx.coroutines.experimental.CoroutineStart,kotlin.jvm.functions.Function2)|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///kotlinx/coroutines/experimental/DeferredKt/async$default(kotlin.coroutines.experimental.CoroutineContext,kotlinx.coroutines.experimental.CoroutineStart,kotlinx.coroutines.experimental.Job,kotlin.jvm.functions.Function2,int,java.lang.Object)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlinx/coroutines/experimental/DeferredKt/async$default(kotlin.coroutines.experimental.CoroutineContext,kotlinx.coroutines.experimental.CoroutineStart,kotlinx.coroutines.experimental.Job,kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function2,int,java.lang.Object)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/channels/ActorKt/actor(kotlin.coroutines.experimental.CoroutineContext,int,kotlinx.coroutines.experimental.CoroutineStart,kotlin.jvm.functions.Function2)|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///kotlin/TypeCastException/TypeCastException(java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/channels/ActorKt/actor$default(kotlin.coroutines.experimental.CoroutineContext,int,kotlinx.coroutines.experimental.CoroutineStart,kotlinx.coroutines.experimental.Job,kotlin.jvm.functions.Function2,int,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///kotlin/TypeCastException/TypeCastException(java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/channels/ActorKt/actor$default(kotlin.coroutines.experimental.CoroutineContext,int,kotlinx.coroutines.experimental.CoroutineStart,kotlinx.coroutines.experimental.Job,kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function2,int,java.lang.Object)|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/ExecutorCoroutineDispatcherBase/scheduleResumeAfterDelay(long,java.util.concurrent.TimeUnit,kotlinx.coroutines.experimental.CancellableContinuation)|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/util/concurrent/ScheduledExecutorService/schedule(java.lang.Runnable,long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///kotlinx/coroutines/experimental/DefaultExecutor/scheduleResumeAfterDelay(long,java.util.concurrent.TimeUnit,kotlinx.coroutines.experimental.CancellableContinuation)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///kotlinx/coroutines/experimental/ResumeUndispatchedRunnable/ResumeUndispatchedRunnable(kotlinx.coroutines.experimental.CoroutineDispatcher,kotlinx.coroutines.experimental.CancellableContinuation)|",
+      "|java+method:///kotlinx/coroutines/experimental/JobKt/cancelFutureOnCompletion(kotlinx.coroutines.experimental.Job,java.util.concurrent.Future)|",
+      "|java+method:///kotlinx/coroutines/experimental/ExecutorCoroutineDispatcherBase/getExecutor$kotlinx_coroutines_core()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/ScheduledExecutorService/schedule(java.lang.Runnable,long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///kotlinx/coroutines/experimental/DefaultExecutor/scheduleResumeAfterDelay(long,java.util.concurrent.TimeUnit,kotlinx.coroutines.experimental.CancellableContinuation)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///kotlinx/coroutines/experimental/ResumeUndispatchedRunnable/ResumeUndispatchedRunnable(kotlinx.coroutines.experimental.CoroutineDispatcher,kotlinx.coroutines.experimental.CancellableContinuation)|",
+      "|java+method:///kotlinx/coroutines/experimental/JobKt/cancelFutureOnCancellation(kotlinx.coroutines.experimental.CancellableContinuation,java.util.concurrent.Future)|",
+      "|java+method:///kotlinx/coroutines/experimental/ExecutorCoroutineDispatcherBase/getExecutor$kotlinx_coroutines_core()|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/DispatchedKt/resumeDirect(kotlin.coroutines.experimental.Continuation,java.lang.Object)|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///kotlin/coroutines/experimental/Continuation/resume(java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/getContinuation()|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///kotlin/coroutines/experimental/Continuation/resume(java.lang.Object)|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/DispatchedKt/resumeDirectWithException(kotlin.coroutines.experimental.Continuation,java.lang.Throwable)|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/getContinuation()|",
+      "|java+method:///kotlin/coroutines/experimental/Continuation/resumeWithException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///kotlin/coroutines/experimental/Continuation/resumeWithException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/resumeCancellableWithException(java.lang.Throwable)|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/getDispatcher()|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/access$set_state$p(kotlinx.coroutines.experimental.DispatchedContinuation,java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineContextKt/restoreThreadContext(java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/getContinuation()|",
+      "|java+method:///kotlin/jvm/internal/InlineMarker/finallyStart(int)|",
+      "|java+method:///kotlin/coroutines/experimental/Continuation/resumeWithException(java.lang.Throwable)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/setResumeMode(int)|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineDispatcher/isDispatchNeeded(kotlin.coroutines.experimental.CoroutineContext)|",
+      "|java+constructor:///kotlinx/coroutines/experimental/CompletedExceptionally/CompletedExceptionally(java.lang.Throwable)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/getContext()|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineDispatcher/dispatch(kotlin.coroutines.experimental.CoroutineContext,java.lang.Runnable)|",
+      "|java+method:///kotlin/coroutines/experimental/Continuation/getContext()|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///kotlin/jvm/internal/InlineMarker/finallyEnd(int)|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineContextKt/updateThreadContext(kotlin.coroutines.experimental.CoroutineContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/access$set_state$p(kotlinx.coroutines.experimental.DispatchedContinuation,java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineContextKt/restoreThreadContext(java.lang.String)|",
+      "|java+method:///kotlin/jvm/internal/InlineMarker/finallyStart(int)|",
+      "|java+method:///kotlin/coroutines/experimental/Continuation/resumeWithException(java.lang.Throwable)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/setResumeMode(int)|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineDispatcher/isDispatchNeeded(kotlin.coroutines.experimental.CoroutineContext)|",
+      "|java+constructor:///kotlinx/coroutines/experimental/CompletedExceptionally/CompletedExceptionally(java.lang.Throwable)|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/getContext()|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineDispatcher/dispatch(kotlin.coroutines.experimental.CoroutineContext,java.lang.Runnable)|",
+      "|java+method:///kotlin/coroutines/experimental/Continuation/getContext()|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///kotlin/jvm/internal/InlineMarker/finallyEnd(int)|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineContextKt/updateThreadContext(kotlin.coroutines.experimental.CoroutineContext)|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/BlockingCoroutine/joinBlocking()|",
+    "called": "|java+constructor:///kotlin/TypeCastException/TypeCastException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///kotlinx/coroutines/experimental/BlockingEventLoop/shutdown()|",
+      "|java+method:///kotlinx/coroutines/experimental/BlockingCoroutine/getState$kotlinx_coroutines_core()|",
+      "|java+method:///kotlinx/coroutines/experimental/TimeSourceKt/getTimeSource()|",
+      "|java+method:///kotlinx/coroutines/experimental/BlockingCoroutine/isCompleted()|",
+      "|java+method:///kotlinx/coroutines/experimental/BlockingEventLoop/setCompleted(boolean)|",
+      "|java+method:///kotlinx/coroutines/experimental/EventLoop/processNextEvent()|",
+      "|java+method:///kotlinx/coroutines/experimental/TimeSource/registerTimeLoopThread()|",
+      "|java+method:///kotlinx/coroutines/experimental/CompletedExceptionally/getException()|",
+      "|java+constructor:///kotlin/TypeCastException/TypeCastException(java.lang.String)|",
+      "|java+method:///java/lang/Thread/interrupted()|",
+      "|java+method:///kotlinx/coroutines/experimental/BlockingCoroutine/cancel(java.lang.Throwable)|",
+      "|java+method:///kotlinx/coroutines/experimental/TimeSource/unregisterTimeLoopThread()|",
+      "|java+constructor:///java/lang/InterruptedException/InterruptedException()|",
+      "|java+method:///kotlinx/coroutines/experimental/TimeSource/parkNanos(java.lang.Object,long)|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlinx/coroutines/experimental/BlockingEventLoop/shutdown()|",
+      "|java+method:///kotlinx/coroutines/experimental/BlockingCoroutine/getState$kotlinx_coroutines_core()|",
+      "|java+method:///kotlinx/coroutines/experimental/TimeSourceKt/getTimeSource()|",
+      "|java+method:///kotlinx/coroutines/experimental/BlockingCoroutine/isCompleted()|",
+      "|java+method:///kotlinx/coroutines/experimental/BlockingEventLoop/setCompleted(boolean)|",
+      "|java+method:///kotlinx/coroutines/experimental/EventLoop/processNextEvent()|",
+      "|java+method:///kotlinx/coroutines/experimental/TimeSource/registerTimeLoopThread()|",
+      "|java+constructor:///kotlin/TypeCastException/TypeCastException(java.lang.String)|",
+      "|java+method:///java/lang/Thread/interrupted()|",
+      "|java+method:///kotlinx/coroutines/experimental/BlockingCoroutine/cancel(java.lang.Throwable)|",
+      "|java+method:///kotlinx/coroutines/experimental/TimeSource/unregisterTimeLoopThread()|",
+      "|java+constructor:///java/lang/InterruptedException/InterruptedException()|",
+      "|java+method:///kotlinx/coroutines/experimental/TimeSource/parkNanos(java.lang.Object,long)|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/JobSupport/invokeOnCompletion(boolean,boolean,kotlin.jvm.functions.Function1)|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///kotlinx/coroutines/experimental/JobSupport/getState$kotlinx_coroutines_core()|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///kotlin/jvm/functions/Function1/invoke(java.lang.Object)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///kotlin/TypeCastException/TypeCastException(java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/JobSupport/getOnCancelMode$kotlinx_coroutines_core()|",
+      "|java+method:///kotlinx/coroutines/experimental/JobSupport/addLastAtomic(java.lang.Object,kotlinx.coroutines.experimental.JobSupport$NodeList,kotlinx.coroutines.experimental.JobNode)|",
+      "|java+method:///kotlinx/coroutines/experimental/JobSupport/promoteSingleToNodeList(kotlinx.coroutines.experimental.JobNode)|",
+      "|java+method:///kotlinx/coroutines/experimental/JobSupport$Incomplete/getList()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicReferenceFieldUpdater/compareAndSet(java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/JobSupport/promoteEmptyToNodeList(kotlinx.coroutines.experimental.Empty)|",
+      "|java+method:///kotlinx/coroutines/experimental/JobSupport/makeNode(kotlin.jvm.functions.Function1,boolean)|",
+      "|java+method:///kotlinx/coroutines/experimental/Cancelled/getCause()|",
+      "|java+method:///kotlinx/coroutines/experimental/CompletedExceptionally/getCause()|",
+      "|java+method:///kotlinx/coroutines/experimental/Empty/isActive()|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlinx/coroutines/experimental/JobSupport/getState$kotlinx_coroutines_core()|",
+      "|java+method:///kotlinx/coroutines/experimental/JobSupport/promoteSingleToNodeList(kotlinx.coroutines.experimental.JobNode)|",
+      "|java+method:///kotlin/jvm/functions/Function1/invoke(java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/Incomplete/getList()|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///kotlin/TypeCastException/TypeCastException(java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/JobSupport/addLastAtomic(java.lang.Object,kotlinx.coroutines.experimental.NodeList,kotlinx.coroutines.experimental.JobNode)|",
+      "|java+method:///kotlinx/coroutines/experimental/JobSupport/makeNode(kotlin.jvm.functions.Function1,boolean)|",
+      "|java+method:///kotlinx/coroutines/experimental/Empty/isActive()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicReferenceFieldUpdater/compareAndSet(java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/JobSupport/promoteEmptyToNodeList(kotlinx.coroutines.experimental.Empty)|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationImpl/resumeUndispatched(kotlinx.coroutines.experimental.CoroutineDispatcher,java.lang.Object)|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationImpl/getDelegate()|",
+      "|java+method:///kotlinx/coroutines/experimental/DispatchedContinuation/getDispatcher()|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationImpl/resumeImpl(java.lang.Object,int)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationImpl/getResumeMode()|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationImpl/getDelegate()|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationImpl/resumeImpl(java.lang.Object,int)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationImpl/getResumeMode()|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+constructor:///kotlinx/coroutines/experimental/JobNode/JobNode(kotlinx.coroutines.experimental.Job)|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///kotlinx/coroutines/experimental/internal/LockFreeLinkedListNode/LockFreeLinkedListNode()|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///kotlinx/coroutines/experimental/CompletionHandlerBase/CompletionHandlerBase()|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/channels/ArrayBroadcastChannel/updateHead(kotlinx.coroutines.experimental.channels.ArrayBroadcastChannel$Subscriber,kotlinx.coroutines.experimental.channels.ArrayBroadcastChannel$Subscriber)|",
+    "called": "|java+constructor:///kotlin/TypeCastException/TypeCastException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/util/concurrent/locks/Lock/unlock()|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/throwNpe()|",
+      "|java+method:///kotlinx/coroutines/experimental/channels/Send/tryResumeSend(java.lang.Object)|",
+      "|java+method:///java/util/concurrent/locks/Lock/lock()|",
+      "|java+method:///kotlinx/coroutines/experimental/channels/ArrayBroadcastChannel/takeFirstSendOrPeekClosed()|",
+      "|java+method:///kotlinx/coroutines/experimental/channels/ArrayBroadcastChannel/checkSubOffers()|",
+      "|java+method:///java/util/concurrent/CopyOnWriteArrayList/isEmpty()|",
+      "|java+method:///java/util/concurrent/CopyOnWriteArrayList/remove(java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/channels/Send/getPollResult()|",
+      "|java+method:///kotlin/ranges/RangesKt/coerceAtMost(long,long)|",
+      "|java+method:///kotlinx/coroutines/experimental/channels/Send/completeResumeSend(java.lang.Object)|",
+      "|java+constructor:///kotlin/TypeCastException/TypeCastException(java.lang.String)|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError(java.lang.Object)|",
+      "|java+method:///java/util/concurrent/CopyOnWriteArrayList/add(java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/channels/ArrayBroadcastChannel/computeMinHead()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/locks/Lock/unlock()|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/throwNpe()|",
+      "|java+method:///kotlinx/coroutines/experimental/channels/Send/tryResumeSend(java.lang.Object)|",
+      "|java+method:///java/util/concurrent/locks/Lock/lock()|",
+      "|java+constructor:///kotlin/TypeCastException/TypeCastException(java.lang.String)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///kotlinx/coroutines/experimental/channels/ArrayBroadcastChannel/takeFirstSendOrPeekClosed()|",
+      "|java+method:///kotlinx/coroutines/experimental/channels/ArrayBroadcastChannel/checkSubOffers()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/channels/Send/getPollResult()|",
+      "|java+method:///java/util/List/remove(java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/channels/ArrayBroadcastChannel/computeMinHead()|",
+      "|java+method:///kotlin/ranges/RangesKt/coerceAtMost(long,long)|",
+      "|java+method:///kotlinx/coroutines/experimental/channels/Send/completeResumeSend(java.lang.Object)|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/selects/SelectBuilderImpl/doAfterSelect()|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/areEqual(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///kotlinx/coroutines/experimental/internal/LockFreeLinkedListNode/getNext()|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/areEqual(java.lang.Object,java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/internal/LockFreeLinkedListKt/unwrap(java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/DisposableHandle/dispose()|",
+      "|java+constructor:///kotlin/TypeCastException/TypeCastException(java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/internal/LockFreeLinkedListHead/getNext()|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlinx/coroutines/experimental/internal/LockFreeLinkedListNode/getNextNode()|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/areEqual(java.lang.Object,java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/DisposableHandle/dispose()|",
+      "|java+constructor:///kotlin/TypeCastException/TypeCastException(java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/internal/LockFreeLinkedListHead/getNext()|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/JobSupport/awaitSuspend(kotlin.coroutines.experimental.Continuation)|",
+    "called": "|java+method:///kotlin/coroutines/experimental/jvm/internal/CoroutineIntrinsics/normalizeContinuation(kotlin.coroutines.experimental.Continuation)|",
+    "v1Body": [
+      "|java+constructor:///kotlinx/coroutines/experimental/CancellableContinuationImpl/CancellableContinuationImpl(kotlin.coroutines.experimental.Continuation,int)|",
+      "|java+method:///kotlinx/coroutines/experimental/JobSupport/invokeOnCompletion(kotlin.jvm.functions.Function1)|",
+      "|java+method:///kotlinx/coroutines/experimental/JobKt/disposeOnCompletion(kotlinx.coroutines.experimental.Job,kotlinx.coroutines.experimental.DisposableHandle)|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationImpl/getResult()|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationImpl/initCancellability()|",
+      "|java+method:///kotlin/coroutines/experimental/jvm/internal/CoroutineIntrinsics/normalizeContinuation(kotlin.coroutines.experimental.Continuation)|",
+      "|java+constructor:///kotlinx/coroutines/experimental/JobSupport$awaitSuspend$$inlined$suspendCancellableCoroutine$lambda$1/JobSupport$awaitSuspend$$inlined$suspendCancellableCoroutine$lambda$1(kotlinx.coroutines.experimental.CancellableContinuation,kotlinx.coroutines.experimental.JobSupport)|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationKt/disposeOnCancellation(kotlinx.coroutines.experimental.CancellableContinuation,kotlinx.coroutines.experimental.DisposableHandle)|",
+      "|java+constructor:///kotlinx/coroutines/experimental/CancellableContinuationImpl/CancellableContinuationImpl(kotlin.coroutines.experimental.Continuation,int)|",
+      "|java+method:///kotlinx/coroutines/experimental/JobSupport/invokeOnCompletion(kotlin.jvm.functions.Function1)|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationImpl/getResult()|",
+      "|java+method:///kotlinx/coroutines/experimental/CancellableContinuationImpl/initCancellability()|",
+      "|java+method:///kotlin/coroutines/experimental/jvm/internal/CoroutineIntrinsics/normalizeContinuation(kotlin.coroutines.experimental.Continuation)|",
+      "|java+constructor:///kotlinx/coroutines/experimental/JobSupport$awaitSuspend$$inlined$suspendCancellableCoroutine$lambda$1/JobSupport$awaitSuspend$$inlined$suspendCancellableCoroutine$lambda$1(kotlinx.coroutines.experimental.CancellableContinuation,kotlinx.coroutines.experimental.JobSupport)|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/JobSupport/selectAwaitCompletion$kotlinx_coroutines_core(kotlinx.coroutines.experimental.selects.SelectInstance,kotlin.jvm.functions.Function2)|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///kotlinx/coroutines/experimental/JobSupport/getState$kotlinx_coroutines_core()|",
+      "|java+method:///kotlinx/coroutines/experimental/intrinsics/CancellableKt/startCoroutineCancellable(kotlin.jvm.functions.Function2,java.lang.Object,kotlin.coroutines.experimental.Continuation)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/selects/SelectInstance/getCompletion()|",
+      "|java+method:///kotlinx/coroutines/experimental/selects/SelectInstance/resumeSelectCancellableWithException(java.lang.Throwable)|",
+      "|java+method:///kotlinx/coroutines/experimental/CompletedExceptionally/getException()|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlinx/coroutines/experimental/JobSupport/getState$kotlinx_coroutines_core()|",
+      "|java+method:///kotlinx/coroutines/experimental/intrinsics/CancellableKt/startCoroutineCancellable(kotlin.jvm.functions.Function2,java.lang.Object,kotlin.coroutines.experimental.Continuation)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/selects/SelectInstance/getCompletion()|",
+      "|java+method:///kotlinx/coroutines/experimental/selects/SelectInstance/resumeSelectCancellableWithException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/internal/LockFreeLinkedListHead/validate$kotlinx_coroutines_core()|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/areEqual(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///kotlinx/coroutines/experimental/internal/LockFreeLinkedListHead/validateNode$kotlinx_coroutines_core(kotlinx.coroutines.experimental.internal.LockFreeLinkedListNode,kotlinx.coroutines.experimental.internal.LockFreeLinkedListNode)|",
+      "|java+method:///kotlinx/coroutines/experimental/internal/LockFreeLinkedListNode/validateNode$kotlinx_coroutines_core(kotlinx.coroutines.experimental.internal.LockFreeLinkedListNode,kotlinx.coroutines.experimental.internal.LockFreeLinkedListNode)|",
+      "|java+method:///kotlinx/coroutines/experimental/internal/LockFreeLinkedListNode/getNext()|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/areEqual(java.lang.Object,java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/internal/LockFreeLinkedListKt/unwrap(java.lang.Object)|",
+      "|java+constructor:///kotlin/TypeCastException/TypeCastException(java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/internal/LockFreeLinkedListHead/getNext()|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlinx/coroutines/experimental/internal/LockFreeLinkedListHead/validateNode$kotlinx_coroutines_core(kotlinx.coroutines.experimental.internal.LockFreeLinkedListNode,kotlinx.coroutines.experimental.internal.LockFreeLinkedListNode)|",
+      "|java+method:///kotlinx/coroutines/experimental/internal/LockFreeLinkedListNode/validateNode$kotlinx_coroutines_core(kotlinx.coroutines.experimental.internal.LockFreeLinkedListNode,kotlinx.coroutines.experimental.internal.LockFreeLinkedListNode)|",
+      "|java+method:///kotlinx/coroutines/experimental/internal/LockFreeLinkedListNode/getNextNode()|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/areEqual(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///kotlin/TypeCastException/TypeCastException(java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/internal/LockFreeLinkedListHead/getNext()|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/channels/ActorKt/actor(kotlin.coroutines.experimental.CoroutineContext,int,kotlinx.coroutines.experimental.CoroutineStart,kotlinx.coroutines.experimental.Job,kotlin.jvm.functions.Function2)|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///kotlinx/coroutines/experimental/channels/LazyActorCoroutine/LazyActorCoroutine(kotlin.coroutines.experimental.CoroutineContext,kotlinx.coroutines.experimental.channels.Channel,kotlin.jvm.functions.Function2)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/channels/ChannelKt/Channel(int)|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineStart/isLazy()|",
+      "|java+method:///kotlinx/coroutines/experimental/channels/ActorCoroutine/start(kotlinx.coroutines.experimental.CoroutineStart,java.lang.Object,kotlin.jvm.functions.Function2)|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineContextKt/newCoroutineContext(kotlin.coroutines.experimental.CoroutineContext,kotlinx.coroutines.experimental.Job)|",
+      "|java+constructor:///kotlinx/coroutines/experimental/channels/ActorCoroutine/ActorCoroutine(kotlin.coroutines.experimental.CoroutineContext,kotlinx.coroutines.experimental.channels.Channel,boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/channels/ActorKt/actor$default(kotlin.coroutines.experimental.CoroutineContext,int,kotlinx.coroutines.experimental.CoroutineStart,kotlinx.coroutines.experimental.Job,kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function2,int,java.lang.Object)|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/JobSupport/isCorrespondinglyCancelled(kotlinx.coroutines.experimental.Cancelled,java.lang.Object)|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/areEqual(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///kotlin/jvm/internal/Intrinsics/areEqual(java.lang.Object,java.lang.Object)|",
+      "|java+method:///kotlinx/coroutines/experimental/Cancelled/getCause()|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlin/jvm/internal/Intrinsics/areEqual(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5",
+    "coordinatesV2": "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0",
+    "caller": "|java+method:///kotlinx/coroutines/experimental/channels/ProduceKt/produce(kotlin.coroutines.experimental.CoroutineContext,int,kotlinx.coroutines.experimental.Job,kotlin.jvm.functions.Function2)|",
+    "called": "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///kotlinx/coroutines/experimental/channels/ProducerCoroutine/ProducerCoroutine(kotlin.coroutines.experimental.CoroutineContext,kotlinx.coroutines.experimental.channels.Channel)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///kotlinx/coroutines/experimental/CoroutineContextKt/newCoroutineContext(kotlin.coroutines.experimental.CoroutineContext,kotlinx.coroutines.experimental.Job)|",
+      "|java+method:///kotlinx/coroutines/experimental/channels/ProducerCoroutine/start(kotlinx.coroutines.experimental.CoroutineStart,java.lang.Object,kotlin.jvm.functions.Function2)|",
+      "|java+method:///kotlinx/coroutines/experimental/channels/ChannelKt/Channel(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///kotlinx/coroutines/experimental/channels/ProduceKt/produce$default(kotlin.coroutines.experimental.CoroutineContext,int,kotlinx.coroutines.experimental.Job,kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function2,int,java.lang.Object)|",
+      "|java+method:///kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull(java.lang.Object,java.lang.String)|"
+    ],
+    "affectedLib": "org.jetbrains.kotlin:kotlin-stdlib:1.2.41",
+    "change": "UPDATED"
+  }
+]

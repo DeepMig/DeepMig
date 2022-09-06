@@ -1,0 +1,65 @@
+[
+  {
+    "coordinatesV1": "net.abstractfactory.plum:plum-common:0.3.32",
+    "coordinatesV2": "net.abstractfactory.plum:plum-common:0.1.60",
+    "caller": "|java+constructor:///net/abstractfactory/plum/input/value/MemoryFile/MemoryFile(byte%5B%5D)|",
+    "called": "|java+method:///org/apache/tika/Tika/detect(java.io.InputStream)|",
+    "v1Body": [
+      "|java+method:///org/apache/tika/Tika/detect(java.io.InputStream)|",
+      "|java+constructor:///org/apache/tika/Tika/Tika()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+constructor:///net/abstractfactory/plum/input/value/AbstractFile/AbstractFile()|",
+      "|java+constructor:///java/io/ByteArrayInputStream/ByteArrayInputStream(byte%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///net/abstractfactory/plum/input/value/AbstractFile/AbstractFile()|",
+      "|java+constructor:///java/io/ByteArrayInputStream/ByteArrayInputStream(byte%5B%5D)|",
+      "|java+method:///eu/medsea/util/MimeUtil/getMimeType(java.io.InputStream)|"
+    ],
+    "affectedLib": "org.apache.tika:tika-core:1.8",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "net.abstractfactory.plum:plum-common:0.1.60",
+    "coordinatesV2": "net.abstractfactory.plum:plum-common:0.3.32",
+    "caller": "|java+constructor:///net/abstractfactory/plum/input/value/UrlFile/UrlFile(java.net.URL)|",
+    "called": "|java+method:///eu/medsea/util/MimeUtil/getMimeType(java.io.InputStream)|",
+    "v1Body": [
+      "|java+method:///java/net/URLConnection/getContentLengthLong()|",
+      "|java+method:///java/net/URL/openConnection()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+constructor:///net/abstractfactory/plum/input/value/AbstractFile/AbstractFile()|",
+      "|java+method:///java/net/URLConnection/getContentType()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/net/URLConnection/getContentLengthLong()|",
+      "|java+method:///java/net/URL/openConnection()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+constructor:///net/abstractfactory/plum/input/value/AbstractFile/AbstractFile()|",
+      "|java+method:///java/net/URLConnection/getInputStream()|",
+      "|java+method:///eu/medsea/util/MimeUtil/getMimeType(java.io.InputStream)|"
+    ],
+    "affectedLib": "net.sf.mime-util:mime-util:1.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.abstractfactory.plum:plum-common:0.1.60",
+    "coordinatesV2": "net.abstractfactory.plum:plum-common:0.3.32",
+    "caller": "|java+constructor:///net/abstractfactory/plum/input/value/MemoryFile/MemoryFile(byte%5B%5D)|",
+    "called": "|java+method:///eu/medsea/util/MimeUtil/getMimeType(java.io.InputStream)|",
+    "v1Body": [
+      "|java+method:///org/apache/tika/Tika/detect(java.io.InputStream)|",
+      "|java+constructor:///org/apache/tika/Tika/Tika()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+constructor:///net/abstractfactory/plum/input/value/AbstractFile/AbstractFile()|",
+      "|java+constructor:///java/io/ByteArrayInputStream/ByteArrayInputStream(byte%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///net/abstractfactory/plum/input/value/AbstractFile/AbstractFile()|",
+      "|java+constructor:///java/io/ByteArrayInputStream/ByteArrayInputStream(byte%5B%5D)|",
+      "|java+method:///eu/medsea/util/MimeUtil/getMimeType(java.io.InputStream)|"
+    ],
+    "affectedLib": "net.sf.mime-util:mime-util:1.2",
+    "change": "ADDED"
+  }
+]

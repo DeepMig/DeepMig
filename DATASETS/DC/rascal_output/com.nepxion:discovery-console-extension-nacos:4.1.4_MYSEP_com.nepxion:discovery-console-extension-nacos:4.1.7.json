@@ -1,0 +1,47 @@
+[
+  {
+    "coordinatesV1": "com.nepxion:discovery-console-extension-nacos:4.1.4",
+    "coordinatesV2": "com.nepxion:discovery-console-extension-nacos:4.1.7",
+    "caller": "|java+method:///com/nepxion/discovery/console/extension/nacos/adapter/NacosConfigAdapter/getConfig(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///com/nepxion/discovery/common/nacos/operation/NacosOperation/getConfig(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/springframework/core/env/Environment/getProperty(java.lang.String,java.lang.Class,java.lang.Object)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///com/alibaba/nacos/api/config/ConfigService/getConfig(java.lang.String,java.lang.String,long)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/nepxion/discovery/common/nacos/operation/NacosOperation/getConfig(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "com.nepxion:discovery-common-nacos:4.1.7",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.nepxion:discovery-console-extension-nacos:4.1.4",
+    "coordinatesV2": "com.nepxion:discovery-console-extension-nacos:4.1.7",
+    "caller": "|java+method:///com/nepxion/discovery/console/extension/nacos/adapter/NacosConfigAdapter/updateConfig(java.lang.String,java.lang.String,java.lang.String)|",
+    "called": "|java+method:///com/nepxion/discovery/common/nacos/operation/NacosOperation/publishConfig(java.lang.String,java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/alibaba/nacos/api/config/ConfigService/publishConfig(java.lang.String,java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/nepxion/discovery/common/nacos/operation/NacosOperation/publishConfig(java.lang.String,java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "com.nepxion:discovery-common-nacos:4.1.7",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.nepxion:discovery-console-extension-nacos:4.1.4",
+    "coordinatesV2": "com.nepxion:discovery-console-extension-nacos:4.1.7",
+    "caller": "|java+method:///com/nepxion/discovery/console/extension/nacos/adapter/NacosConfigAdapter/clearConfig(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///com/nepxion/discovery/common/nacos/operation/NacosOperation/removeConfig(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/alibaba/nacos/api/config/ConfigService/removeConfig(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/nepxion/discovery/common/nacos/operation/NacosOperation/removeConfig(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "com.nepxion:discovery-common-nacos:4.1.7",
+    "change": "ADDED"
+  }
+]

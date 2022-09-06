@@ -1,0 +1,84 @@
+[
+  {
+    "coordinatesV1": "com.github.sogyf:goja-test:0.0.10",
+    "coordinatesV2": "com.github.sogyf:goja-test:0.1",
+    "caller": "|java+method:///goja/test/ControllerTestCase/start(java.lang.Class)|",
+    "called": "|java+method:///goja/GojaConfig/getConfigProps()|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/newInstance()|",
+      "|java+method:///goja/test/ControllerTestCase/runScriptInitDb(java.util.Properties)|",
+      "|java+method:///goja/test/ControllerTestCase/initConfig(java.lang.Class,com.jfinal.core.JFinal,javax.servlet.ServletContext,com.jfinal.config.JFinalConfig)|",
+      "|java+method:///goja/GojaConfig/getConfigProps()|",
+      "|java+method:///goja/kits/Reflect/get(java.lang.String)|",
+      "|java+method:///com/jfinal/core/JFinal/me()|",
+      "|java+method:///com/jfinal/config/JFinalConfig/afterJFinalStart()|",
+      "|java+method:///goja/init/ctxbox/ClassFinder/findWithTest()|",
+      "|java+method:///goja/kits/Reflect/on(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/newInstance()|",
+      "|java+method:///goja/test/ControllerTestCase/initConfig(java.lang.Class,com.jfinal.core.JFinal,javax.servlet.ServletContext,com.jfinal.config.JFinalConfig)|",
+      "|java+method:///goja/kits/reflect/Reflect/on(java.lang.Object)|",
+      "|java+method:///goja/GojaConfig/getConfigProps()|",
+      "|java+method:///goja/init/ctxbox/ClassFinder/findWithTest()|",
+      "|java+method:///com/jfinal/core/JFinal/me()|",
+      "|java+method:///com/jfinal/config/JFinalConfig/afterJFinalStart()|",
+      "|java+method:///goja/test/ControllerTestCase/runScriptInitDb(java.util.Properties)|",
+      "|java+method:///goja/kits/reflect/Reflect/get(java.lang.String)|"
+    ],
+    "affectedLib": "com.github.sogyf:goja-core:0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.github.sogyf:goja-test:0.0.10",
+    "coordinatesV2": "com.github.sogyf:goja-test:0.1",
+    "caller": "|java+method:///goja/test/ControllerTestCase/initConfig(java.lang.Class,com.jfinal.core.JFinal,javax.servlet.ServletContext,com.jfinal.config.JFinalConfig)|",
+    "called": "|java+method:///goja/kits/reflect/Reflect/on(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///goja/kits/Reflect/on(java.lang.Object)|",
+      "|java+method:///goja/kits/Reflect/call(java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///goja/kits/reflect/Reflect/call(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///goja/kits/reflect/Reflect/on(java.lang.Object)|"
+    ],
+    "affectedLib": "com.github.sogyf:goja-core:0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.github.sogyf:goja-test:0.0.10",
+    "coordinatesV2": "com.github.sogyf:goja-test:0.1",
+    "caller": "|java+method:///goja/test/ControllerTestCase/invoke()|",
+    "called": "|java+method:///goja/kits/reflect/Reflect/on(java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///goja/test/MockHttpResponse/MockHttpResponse(java.io.StringWriter)|",
+      "|java+method:///com/google/common/base/Joiner/on(java.lang.String)|",
+      "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+      "|java+method:///com/google/common/io/Files/readLines(java.io.File,java.nio.charset.Charset)|",
+      "|java+constructor:///java/io/StringWriter/StringWriter()|",
+      "|java+method:///java/io/StringWriter/toString()|",
+      "|java+method:///goja/kits/Reflect/on(java.lang.Object)|",
+      "|java+constructor:///goja/test/MockHttpRequest/MockHttpRequest(java.lang.String)|",
+      "|java+method:///com/google/common/io/Files/write(java.lang.CharSequence,java.io.File,java.nio.charset.Charset)|",
+      "|java+method:///goja/kits/Reflect/call(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///goja/test/ControllerTestCase/getTarget(java.lang.String,goja.test.MockHttpRequest)|",
+      "|java+method:///com/google/common/base/Joiner/join(java.lang.Iterable)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///goja/test/MockHttpResponse/MockHttpResponse(java.io.StringWriter)|",
+      "|java+method:///com/google/common/base/Joiner/on(java.lang.String)|",
+      "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+      "|java+method:///com/google/common/io/Files/readLines(java.io.File,java.nio.charset.Charset)|",
+      "|java+constructor:///java/io/StringWriter/StringWriter()|",
+      "|java+method:///java/io/StringWriter/toString()|",
+      "|java+constructor:///goja/test/MockHttpRequest/MockHttpRequest(java.lang.String)|",
+      "|java+method:///com/google/common/io/Files/write(java.lang.CharSequence,java.io.File,java.nio.charset.Charset)|",
+      "|java+method:///goja/kits/reflect/Reflect/call(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///goja/kits/reflect/Reflect/on(java.lang.Object)|",
+      "|java+method:///goja/test/ControllerTestCase/getTarget(java.lang.String,goja.test.MockHttpRequest)|",
+      "|java+method:///com/google/common/base/Joiner/join(java.lang.Iterable)|"
+    ],
+    "affectedLib": "com.github.sogyf:goja-core:0.1",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-gua:5.2.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-gua:5.2.0-RC2",
+    "caller": "|java+method:///org/apereo/cas/gua/impl/LdapUserGraphicalAuthenticationRepository/searchForId(java.lang.String)|",
+    "called": "|java+method:///org/apereo/cas/util/LdapUtils/executeSearchOperation(org.ldaptive.ConnectionFactory,java.lang.String,org.ldaptive.SearchFilter,java.lang.String%5B%5D,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/gua/GraphicalUserAuthenticationProperties$Ldap/getBaseDn()|",
+      "|java+method:///org/apereo/cas/configuration/CasConfigurationProperties/getAuthn()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/gua/GraphicalUserAuthenticationProperties$Ldap/getImageAttribute()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/gua/GraphicalUserAuthenticationProperties$Ldap/getUserFilter()|",
+      "|java+method:///org/apereo/cas/configuration/support/Beans/newLdaptiveConnectionFactory(org.apereo.cas.configuration.model.support.ldap.AbstractLdapProperties)|",
+      "|java+method:///org/apereo/cas/configuration/support/Beans/newLdaptiveSearchFilter(java.lang.String,java.lang.String,java.util.List)|",
+      "|java+method:///org/apereo/cas/util/LdapUtils/executeSearchOperation(org.ldaptive.ConnectionFactory,java.lang.String,org.ldaptive.SearchFilter,java.lang.String%5B%5D,java.lang.String%5B%5D)|",
+      "|java+method:///org/apereo/cas/configuration/model/core/authentication/AuthenticationProperties/getGua()|",
+      "|java+method:///org/ldaptive/ReturnAttributes/value()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/gua/GraphicalUserAuthenticationProperties/getLdap()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apereo/cas/util/LdapUtils/newLdaptiveConnectionFactory(org.apereo.cas.configuration.model.support.ldap.AbstractLdapProperties)|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///org/apereo/cas/util/LdapUtils/newLdaptiveSearchFilter(java.lang.String,java.lang.String,java.util.List)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/gua/GraphicalUserAuthenticationProperties$Ldap/getBaseDn()|",
+      "|java+method:///org/apereo/cas/configuration/CasConfigurationProperties/getAuthn()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/gua/GraphicalUserAuthenticationProperties$Ldap/getImageAttribute()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/gua/GraphicalUserAuthenticationProperties$Ldap/getUserFilter()|",
+      "|java+method:///org/apereo/cas/util/LdapUtils/executeSearchOperation(org.ldaptive.ConnectionFactory,java.lang.String,org.ldaptive.SearchFilter,java.lang.String%5B%5D,java.lang.String%5B%5D)|",
+      "|java+method:///org/apereo/cas/configuration/model/core/authentication/AuthenticationProperties/getGua()|",
+      "|java+method:///org/ldaptive/ReturnAttributes/value()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/gua/GraphicalUserAuthenticationProperties/getLdap()|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-support-ldap-core:5.2.0-RC2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-gua:5.2.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-gua:5.2.0-RC2",
+    "caller": "|java+method:///org/apereo/cas/gua/config/GraphicalUserAuthenticationConfiguration/userGraphicalAuthenticationRepository()|",
+    "called": "|java+constructor:///org/springframework/beans/factory/BeanCreationException/BeanCreationException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apereo/cas/configuration/model/support/gua/GraphicalUserAuthenticationProperties/getResource()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/gua/GraphicalUserAuthenticationProperties$Ldap/getLdapUrl()|",
+      "|java+constructor:///org/apereo/cas/gua/impl/StaticUserGraphicalAuthenticationRepository/StaticUserGraphicalAuthenticationRepository()|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/gua/GraphicalUserAuthenticationProperties$Ldap/getBaseDn()|",
+      "|java+constructor:///org/springframework/beans/factory/BeanCreationException/BeanCreationException(java.lang.String)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/gua/GraphicalUserAuthenticationProperties$Ldap/getImageAttribute()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/gua/GraphicalUserAuthenticationProperties$Ldap/getUserFilter()|",
+      "|java+method:///org/apereo/cas/configuration/model/core/authentication/AuthenticationProperties/getGua()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/gua/GraphicalUserAuthenticationProperties/getLdap()|",
+      "|java+constructor:///org/apereo/cas/gua/impl/LdapUserGraphicalAuthenticationRepository/LdapUserGraphicalAuthenticationRepository()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/gua/GraphicalUserAuthenticationProperties$Resource/getLocation()|",
+      "|java+method:///org/apereo/cas/configuration/CasConfigurationProperties/getAuthn()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apereo/cas/configuration/model/support/gua/GraphicalUserAuthenticationProperties/getResource()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/gua/GraphicalUserAuthenticationProperties$Ldap/getLdapUrl()|",
+      "|java+constructor:///org/apereo/cas/gua/impl/StaticUserGraphicalAuthenticationRepository/StaticUserGraphicalAuthenticationRepository()|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/gua/GraphicalUserAuthenticationProperties$Ldap/getBaseDn()|",
+      "|java+method:///org/apereo/cas/configuration/CasConfigurationProperties/getAuthn()|",
+      "|java+constructor:///org/springframework/beans/factory/BeanCreationException/BeanCreationException(java.lang.String)|",
+      "|java+method:///org/apereo/cas/configuration/support/SpringResourceProperties/getLocation()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/gua/GraphicalUserAuthenticationProperties$Ldap/getImageAttribute()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/gua/GraphicalUserAuthenticationProperties$Ldap/getUserFilter()|",
+      "|java+method:///org/apereo/cas/configuration/model/core/authentication/AuthenticationProperties/getGua()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/gua/GraphicalUserAuthenticationProperties/getLdap()|",
+      "|java+constructor:///org/apereo/cas/gua/impl/LdapUserGraphicalAuthenticationRepository/LdapUserGraphicalAuthenticationRepository()|"
+    ],
+    "affectedLib": "org.springframework:spring-beans:4.3.10.RELEASE",
+    "change": "UPDATED"
+  }
+]

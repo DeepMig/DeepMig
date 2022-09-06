@@ -1,0 +1,166 @@
+[
+  {
+    "coordinatesV1": "org.umlg:sqlg-benchmark:1.1.0.RC2",
+    "coordinatesV2": "org.umlg:sqlg-benchmark:1.3.0",
+    "caller": "|java+method:///org/sqlg/benchmark/ServerSideBulkEdgeCreation/setup()|",
+    "called": "|java+method:///org/umlg/sqlg/structure/SqlgGraph/tx()|",
+    "v1Body": [
+      "|java+method:///org/sqlg/benchmark/ServerSideBulkEdgeCreation/getSqlgGraph()|",
+      "|java+method:///org/sqlg/benchmark/ServerSideBulkEdgeCreation/dropDb()|",
+      "|java+method:///org/umlg/sqlg/structure/SqlgGraph/traversal()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sqlg/benchmark/ServerSideBulkEdgeCreation/getSqlgGraph()|",
+      "|java+method:///org/umlg/sqlg/structure/SqlgGraph/tx()|",
+      "|java+method:///org/umlg/sqlg/structure/SqlgTransaction/commit()|",
+      "|java+method:///org/umlg/sqlg/util/SqlgUtil/dropDb(org.umlg.sqlg.structure.SqlgGraph)|",
+      "|java+method:///org/umlg/sqlg/structure/SqlgGraph/traversal()|"
+    ],
+    "affectedLib": "org.umlg:sqlg-core:1.3.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.umlg:sqlg-benchmark:1.1.0.RC2",
+    "coordinatesV2": "org.umlg:sqlg-benchmark:1.3.0",
+    "caller": "|java+method:///org/sqlg/benchmark/SimpleInsertBenchmark/setup()|",
+    "called": "|java+method:///org/umlg/sqlg/structure/SqlgGraph/tx()|",
+    "v1Body": [
+      "|java+method:///org/sqlg/benchmark/SimpleInsertBenchmark/dropDb()|",
+      "|java+method:///org/sqlg/benchmark/SimpleInsertBenchmark/getSqlgGraph()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sqlg/benchmark/SimpleInsertBenchmark/getSqlgGraph()|",
+      "|java+method:///org/umlg/sqlg/structure/SqlgGraph/tx()|",
+      "|java+method:///org/umlg/sqlg/structure/SqlgTransaction/commit()|",
+      "|java+method:///org/umlg/sqlg/util/SqlgUtil/dropDb(org.umlg.sqlg.structure.SqlgGraph)|"
+    ],
+    "affectedLib": "org.umlg:sqlg-core:1.3.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.umlg:sqlg-benchmark:1.1.0.RC2",
+    "coordinatesV2": "org.umlg:sqlg-benchmark:1.3.0",
+    "caller": "|java+method:///org/sqlg/benchmark/MultipleGraphSimpleReadBenchmark/setup()|",
+    "called": "|java+method:///org/umlg/sqlg/structure/SqlgGraph/tx()|",
+    "v1Body": [
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///org/sqlg/benchmark/MultipleGraphSimpleReadBenchmark/getSqlgGraph(boolean)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/umlg/sqlg/structure/SqlgGraph/addVertex(java.lang.String,java.util.Map)|",
+      "|java+method:///org/umlg/sqlg/structure/SqlgGraph/tx()|",
+      "|java+method:///org/umlg/sqlg/structure/SqlgTransaction/commit()|",
+      "|java+method:///org/umlg/sqlg/structure/SqlgGraph/traversal()|",
+      "|java+method:///org/sqlg/benchmark/MultipleGraphSimpleReadBenchmark/dropDb()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///org/sqlg/benchmark/MultipleGraphSimpleReadBenchmark/getSqlgGraph(boolean)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/umlg/sqlg/structure/SqlgGraph/addVertex(java.lang.String,java.util.Map)|",
+      "|java+method:///org/umlg/sqlg/structure/SqlgGraph/tx()|",
+      "|java+method:///org/umlg/sqlg/structure/SqlgTransaction/commit()|",
+      "|java+method:///org/umlg/sqlg/util/SqlgUtil/dropDb(org.umlg.sqlg.structure.SqlgGraph)|",
+      "|java+method:///org/umlg/sqlg/structure/SqlgGraph/traversal()|"
+    ],
+    "affectedLib": "org.umlg:sqlg-core:1.3.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.umlg:sqlg-benchmark:1.1.0.RC2",
+    "coordinatesV2": "org.umlg:sqlg-benchmark:1.3.0",
+    "caller": "|java+method:///org/sqlg/benchmark/WithinBenchmark/setup()|",
+    "called": "|java+method:///org/umlg/sqlg/structure/SqlgGraph/tx()|",
+    "v1Body": [
+      "|java+method:///org/sqlg/benchmark/WithinBenchmark/dropDb()|",
+      "|java+method:///org/umlg/sqlg/structure/SqlgTransaction/normalBatchModeOn()|",
+      "|java+method:///org/umlg/sqlg/sql/dialect/SqlDialect/supportsBatchMode()|",
+      "|java+method:///java/util/UUID/randomUUID()|",
+      "|java+method:///org/umlg/sqlg/structure/SqlgGraph/getSqlDialect()|",
+      "|java+method:///org/umlg/sqlg/structure/SqlgGraph/addVertex(java.lang.Object%5B%5D)|",
+      "|java+method:///org/sqlg/benchmark/WithinBenchmark/getSqlgGraph()|",
+      "|java+method:///java/util/List/clear()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///org/umlg/sqlg/structure/SqlgGraph/tx()|",
+      "|java+method:///org/umlg/sqlg/structure/SqlgGraph/traversal()|",
+      "|java+method:///java/util/UUID/toString()|",
+      "|java+method:///org/umlg/sqlg/structure/SqlgTransaction/commit()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/umlg/sqlg/structure/SqlgTransaction/normalBatchModeOn()|",
+      "|java+method:///org/umlg/sqlg/sql/dialect/SqlDialect/supportsBatchMode()|",
+      "|java+method:///java/util/UUID/randomUUID()|",
+      "|java+method:///org/umlg/sqlg/structure/SqlgGraph/getSqlDialect()|",
+      "|java+method:///org/umlg/sqlg/structure/SqlgGraph/addVertex(java.lang.Object%5B%5D)|",
+      "|java+method:///org/sqlg/benchmark/WithinBenchmark/getSqlgGraph()|",
+      "|java+method:///java/util/List/clear()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///org/umlg/sqlg/structure/SqlgGraph/tx()|",
+      "|java+method:///org/umlg/sqlg/util/SqlgUtil/dropDb(org.umlg.sqlg.structure.SqlgGraph)|",
+      "|java+method:///org/umlg/sqlg/structure/SqlgGraph/traversal()|",
+      "|java+method:///java/util/UUID/toString()|",
+      "|java+method:///org/umlg/sqlg/structure/SqlgTransaction/commit()|"
+    ],
+    "affectedLib": "org.umlg:sqlg-core:1.3.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.umlg:sqlg-benchmark:1.1.0.RC2",
+    "coordinatesV2": "org.umlg:sqlg-benchmark:1.3.0",
+    "caller": "|java+method:///org/sqlg/benchmark/MultipleGraphSimpleInsertBenchmark/setup()|",
+    "called": "|java+method:///org/umlg/sqlg/structure/SqlgGraph/tx()|",
+    "v1Body": [
+      "|java+method:///org/sqlg/benchmark/MultipleGraphSimpleInsertBenchmark/dropDb()|",
+      "|java+method:///org/sqlg/benchmark/MultipleGraphSimpleInsertBenchmark/getSqlgGraph(boolean)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///org/umlg/sqlg/structure/SqlgGraph/traversal()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sqlg/benchmark/MultipleGraphSimpleInsertBenchmark/getSqlgGraph(boolean)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///org/umlg/sqlg/structure/SqlgGraph/tx()|",
+      "|java+method:///org/umlg/sqlg/structure/SqlgTransaction/commit()|",
+      "|java+method:///org/umlg/sqlg/util/SqlgUtil/dropDb(org.umlg.sqlg.structure.SqlgGraph)|",
+      "|java+method:///org/umlg/sqlg/structure/SqlgGraph/traversal()|"
+    ],
+    "affectedLib": "org.umlg:sqlg-core:1.3.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.umlg:sqlg-benchmark:1.1.0.RC2",
+    "coordinatesV2": "org.umlg:sqlg-benchmark:1.3.0",
+    "caller": "|java+method:///org/sqlg/benchmark/ReadBenchmark/setup()|",
+    "called": "|java+method:///org/umlg/sqlg/structure/SqlgGraph/tx()|",
+    "v1Body": [
+      "|java+method:///org/sqlg/benchmark/ReadBenchmark/getSqlgGraph()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///org/sqlg/benchmark/ReadBenchmark/dropDb()|",
+      "|java+method:///org/umlg/sqlg/structure/SqlgGraph/addVertex(java.lang.String,java.util.Map)|",
+      "|java+method:///org/umlg/sqlg/structure/SqlgVertex/addEdge(java.lang.String,org.apache.tinkerpop.gremlin.structure.Vertex,java.lang.Object%5B%5D)|",
+      "|java+method:///org/umlg/sqlg/structure/SqlgGraph/tx()|",
+      "|java+method:///org/umlg/sqlg/structure/SqlgTransaction/commit()|",
+      "|java+method:///org/umlg/sqlg/structure/SqlgGraph/traversal()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/apache/tinkerpop/gremlin/structure/Vertex/addEdge(java.lang.String,org.apache.tinkerpop.gremlin.structure.Vertex,java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sqlg/benchmark/ReadBenchmark/getSqlgGraph()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///org/umlg/sqlg/structure/SqlgGraph/addVertex(java.lang.String,java.util.Map)|",
+      "|java+method:///org/umlg/sqlg/structure/SqlgVertex/addEdge(java.lang.String,org.apache.tinkerpop.gremlin.structure.Vertex,java.lang.Object%5B%5D)|",
+      "|java+method:///org/umlg/sqlg/structure/SqlgGraph/tx()|",
+      "|java+method:///org/umlg/sqlg/structure/SqlgTransaction/commit()|",
+      "|java+method:///org/umlg/sqlg/util/SqlgUtil/dropDb(org.umlg.sqlg.structure.SqlgGraph)|",
+      "|java+method:///org/umlg/sqlg/structure/SqlgGraph/traversal()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/apache/tinkerpop/gremlin/structure/Vertex/addEdge(java.lang.String,org.apache.tinkerpop.gremlin.structure.Vertex,java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "org.umlg:sqlg-core:1.3.0",
+    "change": "UPDATED"
+  }
+]

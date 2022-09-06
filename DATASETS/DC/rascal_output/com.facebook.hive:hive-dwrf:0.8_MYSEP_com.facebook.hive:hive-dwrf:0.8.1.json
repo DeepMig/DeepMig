@@ -1,0 +1,166 @@
+[
+  {
+    "coordinatesV1": "com.facebook.hive:hive-dwrf:0.8.1",
+    "coordinatesV2": "com.facebook.hive:hive-dwrf:0.8",
+    "caller": "|java+initializer:///com/facebook/hive/orc/WriterImpl/WriterImpl$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+      "|java+method:///java/sql/Timestamp/getTime()|",
+      "|java+method:///java/sql/Timestamp/valueOf(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/airlift/log/Logger/get(java.lang.Class)|",
+      "|java+method:///java/sql/Timestamp/getTime()|",
+      "|java+method:///java/sql/Timestamp/valueOf(java.lang.String)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.facebook.hive:hive-dwrf:0.8.1",
+    "coordinatesV2": "com.facebook.hive:hive-dwrf:0.8",
+    "caller": "|java+initializer:///com/facebook/hive/orc/MemoryManager/MemoryManager$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/airlift/log/Logger/get(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.facebook.hive:hive-dwrf:0.8",
+    "coordinatesV2": "com.facebook.hive:hive-dwrf:0.8.1",
+    "caller": "|java+method:///com/facebook/hive/orc/WriterImpl/checkMemory(double)|",
+    "called": "|java+method:///io/airlift/log/Logger/debug(java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/facebook/hive/orc/WriterImpl$MemoryEstimate/getDictionaryMemory()|",
+      "|java+method:///java/lang/Math/round(double)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///com/facebook/hive/orc/WriterImpl/estimateStripeSize()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/facebook/hive/orc/WriterImpl/flushStripe()|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///com/facebook/hive/orc/WriterImpl$MemoryEstimate/getTotalMemory()|",
+      "|java+method:///java/lang/StringBuilder/append(long)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/facebook/hive/orc/WriterImpl$MemoryEstimate/getDictionaryMemory()|",
+      "|java+method:///com/facebook/hive/orc/WriterImpl/flushStripe()|",
+      "|java+method:///java/lang/Math/round(double)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///io/airlift/log/Logger/debug(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/facebook/hive/orc/WriterImpl$MemoryEstimate/getTotalMemory()|",
+      "|java+method:///com/facebook/hive/orc/WriterImpl/estimateStripeSize()|"
+    ],
+    "affectedLib": "io.airlift:log:0.142",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.facebook.hive:hive-dwrf:0.8",
+    "coordinatesV2": "com.facebook.hive:hive-dwrf:0.8.1",
+    "caller": "|java+method:///com/facebook/hive/orc/MemoryManager/addWriter(org.apache.hadoop.fs.Path,long,com.facebook.hive.orc.MemoryManager$Callback,long)|",
+    "called": "|java+method:///io/airlift/log/Logger/info(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Map/values()|",
+      "|java+method:///org/apache/commons/logging/Log/info(java.lang.Object)|",
+      "|java+constructor:///com/facebook/hive/orc/MemoryManager$WriterInfo/MemoryManager$WriterInfo(long,com.facebook.hive.orc.MemoryManager$Callback)|",
+      "|java+method:///com/facebook/hive/orc/MemoryManager/updateScale(boolean)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///com/facebook/hive/orc/MemoryManager$Callback/enterLowMemoryMode()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/util/Map/values()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///io/airlift/log/Logger/info(java.lang.String)|",
+      "|java+constructor:///com/facebook/hive/orc/MemoryManager$WriterInfo/MemoryManager$WriterInfo(long,com.facebook.hive.orc.MemoryManager$Callback)|",
+      "|java+method:///com/facebook/hive/orc/MemoryManager/updateScale(boolean)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///com/facebook/hive/orc/MemoryManager$Callback/enterLowMemoryMode()|"
+    ],
+    "affectedLib": "io.airlift:log:0.142",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.facebook.hive:hive-dwrf:0.8",
+    "coordinatesV2": "com.facebook.hive:hive-dwrf:0.8.1",
+    "caller": "|java+method:///com/facebook/hive/orc/MemoryManager/notifyWriters()|",
+    "called": "|java+method:///io/airlift/log/Logger/debug(java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+method:///java/util/Map/values()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/facebook/hive/orc/MemoryManager$Callback/checkMemory(double)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/List/clear()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///com/facebook/hive/orc/MemoryManager/reallocateMemory(java.util.List,java.util.List)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///io/airlift/log/Logger/debug(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Map/values()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/facebook/hive/orc/MemoryManager$Callback/checkMemory(double)|",
+      "|java+method:///java/util/List/clear()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///com/facebook/hive/orc/MemoryManager/reallocateMemory(java.util.List,java.util.List)|",
+      "|java+method:///java/util/Collection/iterator()|"
+    ],
+    "affectedLib": "io.airlift:log:0.142",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.facebook.hive:hive-dwrf:0.8",
+    "coordinatesV2": "com.facebook.hive:hive-dwrf:0.8.1",
+    "caller": "|java+initializer:///com/facebook/hive/orc/WriterImpl/WriterImpl$initializer|",
+    "called": "|java+method:///io/airlift/log/Logger/get(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+      "|java+method:///java/sql/Timestamp/getTime()|",
+      "|java+method:///java/sql/Timestamp/valueOf(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/airlift/log/Logger/get(java.lang.Class)|",
+      "|java+method:///java/sql/Timestamp/getTime()|",
+      "|java+method:///java/sql/Timestamp/valueOf(java.lang.String)|"
+    ],
+    "affectedLib": "io.airlift:log:0.142",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.facebook.hive:hive-dwrf:0.8",
+    "coordinatesV2": "com.facebook.hive:hive-dwrf:0.8.1",
+    "caller": "|java+initializer:///com/facebook/hive/orc/MemoryManager/MemoryManager$initializer|",
+    "called": "|java+method:///io/airlift/log/Logger/get(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/airlift/log/Logger/get(java.lang.Class)|"
+    ],
+    "affectedLib": "io.airlift:log:0.142",
+    "change": "ADDED"
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "coordinatesV1": "ee.telekom.workflow:workflow-engine:1.0.3",
+    "coordinatesV2": "ee.telekom.workflow:workflow-engine:1.1.0",
+    "caller": "|java+method:///ee/telekom/workflow/executor/consumer/WorkConsumerJobImpl/start()|",
+    "called": "|java+constructor:///org/springframework/security/concurrent/DelegatingSecurityContextExecutorService/DelegatingSecurityContextExecutorService(java.util.concurrent.ExecutorService,org.springframework.security.core.context.SecurityContext)|",
+    "v1Body": [
+      "|java+constructor:///ee/telekom/workflow/executor/consumer/WorkConsumerJobImpl$ConsumerRunnable/WorkConsumerJobImpl$ConsumerRunnable(ee.telekom.workflow.executor.consumer.WorkConsumerJobImpl,ee.telekom.workflow.executor.consumer.WorkConsumerJobImpl$1)|",
+      "|java+constructor:///ee/telekom/workflow/util/NamedPoolThreadFactory/NamedPoolThreadFactory(java.lang.String)|",
+      "|java+method:///ee/telekom/workflow/core/common/WorkflowEngineConfiguration/getNumberOfConsumerThreads()|",
+      "|java+method:///java/util/concurrent/Executors/newFixedThreadPool(int,java.util.concurrent.ThreadFactory)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/util/concurrent/ExecutorService/execute(java.lang.Runnable)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicBoolean/set(boolean)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///ee/telekom/workflow/executor/consumer/WorkConsumerJobImpl$ConsumerRunnable/WorkConsumerJobImpl$ConsumerRunnable(ee.telekom.workflow.executor.consumer.WorkConsumerJobImpl,ee.telekom.workflow.executor.consumer.WorkConsumerJobImpl$1)|",
+      "|java+constructor:///org/springframework/security/authentication/UsernamePasswordAuthenticationToken/UsernamePasswordAuthenticationToken(java.lang.Object,java.lang.Object,java.util.Collection)|",
+      "|java+method:///org/springframework/security/core/context/SecurityContext/setAuthentication(org.springframework.security.core.Authentication)|",
+      "|java+method:///org/springframework/security/core/authority/AuthorityUtils/createAuthorityList(java.lang.String%5B%5D)|",
+      "|java+constructor:///ee/telekom/workflow/util/NamedPoolThreadFactory/NamedPoolThreadFactory(java.lang.String)|",
+      "|java+method:///java/util/concurrent/Executors/newFixedThreadPool(int,java.util.concurrent.ThreadFactory)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicBoolean/set(boolean)|",
+      "|java+method:///ee/telekom/workflow/core/common/WorkflowEngineConfiguration/getNumberOfConsumerThreads()|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/createEmptyContext()|",
+      "|java+constructor:///org/springframework/security/concurrent/DelegatingSecurityContextExecutorService/DelegatingSecurityContextExecutorService(java.util.concurrent.ExecutorService,org.springframework.security.core.context.SecurityContext)|",
+      "|java+method:///java/util/concurrent/ExecutorService/execute(java.lang.Runnable)|"
+    ],
+    "affectedLib": "org.springframework.security:spring-security-core:4.0.4.RELEASE",
+    "change": "ADDED"
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "coordinatesV1": "org.apache.james:apache-james-mailbox-lucene:0.5",
+    "coordinatesV2": "org.apache.james:apache-james-mailbox-lucene:3.0.0-RC1",
+    "caller": "|java+method:///org/apache/james/mailbox/lucene/search/LuceneMessageSearchIndex/search(org.apache.james.mailbox.MailboxSession,org.apache.james.mailbox.store.mail.model.Mailbox,org.apache.james.mailbox.model.SearchQuery)|",
+    "called": "|java+method:///org/apache/james/mailbox/model/MultimailboxesSearchQuery/from(org.apache.james.mailbox.model.SearchQuery)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/lucene/search/IndexSearcher/IndexSearcher(org.apache.lucene.index.IndexReader)|",
+      "|java+method:///org/apache/james/mailbox/store/mail/model/Mailbox/getMailboxId()|",
+      "|java+method:///org/apache/lucene/search/IndexSearcher/search(org.apache.lucene.search.Query,org.apache.lucene.search.Filter,int,org.apache.lucene.search.Sort)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///org/apache/james/mailbox/model/SearchQuery/getRecentMessageUids()|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/apache/james/mailbox/model/SearchQuery/getCriterias()|",
+      "|java+method:///org/apache/james/mailbox/model/SearchQuery/getSorts()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///org/apache/lucene/document/Document/get(java.lang.String)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///org/apache/james/mailbox/lucene/search/LuceneMessageSearchIndex/createQuery(org.apache.james.mailbox.model.SearchQuery$Criterion,org.apache.james.mailbox.store.mail.model.Mailbox,java.util.Collection)|",
+      "|java+method:///org/apache/lucene/search/IndexSearcher/close()|",
+      "|java+constructor:///org/apache/lucene/search/TermQuery/TermQuery(org.apache.lucene.index.Term)|",
+      "|java+method:///java/lang/Long/valueOf(java.lang.String)|",
+      "|java+constructor:///org/apache/james/mailbox/exception/MailboxException/MailboxException(java.lang.String,java.lang.Exception)|",
+      "|java+constructor:///org/apache/lucene/search/BooleanQuery/BooleanQuery()|",
+      "|java+method:///org/apache/lucene/index/IndexReader/open(org.apache.lucene.index.IndexWriter,boolean)|",
+      "|java+method:///org/apache/lucene/search/BooleanQuery/add(org.apache.lucene.search.Query,org.apache.lucene.search.BooleanClause$Occur)|",
+      "|java+constructor:///org/apache/lucene/index/Term/Term(java.lang.String,java.lang.String)|",
+      "|java+constructor:///java/util/LinkedHashSet/LinkedHashSet()|",
+      "|java+method:///org/apache/james/mailbox/lucene/search/LuceneMessageSearchIndex/createSort(java.util.List)|",
+      "|java+constructor:///org/apache/lucene/search/PrefixQuery/PrefixQuery(org.apache.lucene.index.Term)|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///org/apache/lucene/search/IndexSearcher/doc(int)|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/collect/FluentIterable/from(java.lang.Iterable)|",
+      "|java+constructor:///org/apache/james/mailbox/lucene/search/LuceneMessageSearchIndex$1/LuceneMessageSearchIndex$1(org.apache.james.mailbox.lucene.search.LuceneMessageSearchIndex)|",
+      "|java+method:///org/apache/james/mailbox/model/MultimailboxesSearchQuery$Builder/build()|",
+      "|java+method:///com/google/common/collect/FluentIterable/transform(com.google.common.base.Function)|",
+      "|java+method:///com/google/common/collect/FluentIterable/iterator()|",
+      "|java+method:///org/apache/james/mailbox/lucene/search/LuceneMessageSearchIndex/searchMultimap(org.apache.james.mailbox.model.MultimailboxesSearchQuery,org.apache.james.mailbox.MailboxSession)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+method:///org/apache/james/mailbox/model/MultimailboxesSearchQuery/from(org.apache.james.mailbox.model.SearchQuery)|",
+      "|java+method:///org/apache/james/mailbox/model/MultimailboxesSearchQuery$Builder/inMailboxes(org.apache.james.mailbox.model.MailboxId%5B%5D)|",
+      "|java+method:///org/apache/james/mailbox/store/mail/model/Mailbox/getMailboxId()|"
+    ],
+    "affectedLib": "org.apache.james:apache-james-mailbox-api:3.0.0-RC1",
+    "change": "UPDATED"
+  }
+]

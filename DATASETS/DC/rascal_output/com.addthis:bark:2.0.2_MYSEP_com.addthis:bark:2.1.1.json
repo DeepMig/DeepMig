@@ -1,0 +1,402 @@
+[
+  {
+    "coordinatesV1": "com.addthis:bark:2.1.1",
+    "coordinatesV2": "com.addthis:bark:2.0.2",
+    "caller": "|java+method:///com/addthis/bark/ZkGroupMembership/addToGroup(java.lang.String,java.lang.String,java.lang.String,java.util.concurrent.atomic.AtomicBoolean)|",
+    "called": "|java+method:///org/I0Itec/zkclient/ZkClient/createEphemeral(java.lang.String,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/lang/Thread/sleep(long)|",
+      "|java+method:///org/I0Itec/zkclient/ZkClient/createEphemeral(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/I0Itec/zkclient/ZkClient/exists(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/I0Itec/zkclient/ZkClient/createPersistent(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicBoolean/get()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/curator/framework/CuratorFramework/setData()|",
+      "|java+method:///java/lang/Thread/sleep(long)|",
+      "|java+method:///org/apache/curator/framework/api/CreateBuilder/withMode(org.apache.zookeeper.CreateMode)|",
+      "|java+method:///org/apache/curator/framework/api/ACLBackgroundPathAndBytesable/forPath(java.lang.String,byte%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/curator/framework/api/CreateBuilder/forPath(java.lang.String,byte%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apache/curator/framework/CuratorFramework/create()|",
+      "|java+method:///org/apache/curator/framework/api/ExistsBuilder/forPath(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicBoolean/get()|",
+      "|java+method:///org/apache/curator/framework/api/SetDataBuilder/forPath(java.lang.String,byte%5B%5D)|",
+      "|java+method:///com/addthis/bark/StringSerializer/serialize(java.lang.Object)|",
+      "|java+method:///org/apache/curator/framework/CuratorFramework/checkExists()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|"
+    ],
+    "affectedLib": "com.101tec:zkclient:0.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.addthis:bark:2.1.1",
+    "coordinatesV2": "com.addthis:bark:2.0.2",
+    "caller": "|java+method:///com/addthis/bark/ZkStartUtil/startKeepers()|",
+    "called": "|java+constructor:///org/I0Itec/zkclient/ZkClient/ZkClient(java.lang.String,int,int,org.I0Itec.zkclient.serialize.ZkSerializer)|",
+    "v1Body": [
+      "|java+method:///com/addthis/bark/ZkStartUtil/onAfterZKStart()|",
+      "|java+method:///com/addthis/bark/EmbeddedZookeeper/getPort()|",
+      "|java+constructor:///org/I0Itec/zkclient/ZkClient/ZkClient(java.lang.String,int,int,org.I0Itec.zkclient.serialize.ZkSerializer)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/System/setProperty(java.lang.String,java.lang.String)|",
+      "|java+constructor:///com/addthis/bark/StringSerializer/StringSerializer()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///com/addthis/bark/EmbeddedZookeeper/EmbeddedZookeeper(int)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/String/valueOf(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/addthis/bark/ZkStartUtil/onAfterZKStart()|",
+      "|java+constructor:///org/apache/curator/retry/RetryOneTime/RetryOneTime(int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/System/setProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/curator/framework/CuratorFramework/start()|",
+      "|java+constructor:///org/apache/curator/test/TestingServer/TestingServer(int)|",
+      "|java+method:///org/apache/curator/framework/CuratorFrameworkFactory$Builder/connectString(java.lang.String)|",
+      "|java+method:///org/apache/curator/framework/CuratorFrameworkFactory/builder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/curator/test/TestingServer/getConnectString()|",
+      "|java+method:///org/apache/curator/test/TestingServer/getPort()|",
+      "|java+method:///org/apache/curator/framework/CuratorFrameworkFactory$Builder/build()|",
+      "|java+method:///org/apache/curator/framework/CuratorFrameworkFactory$Builder/retryPolicy(org.apache.curator.RetryPolicy)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/String/valueOf(int)|"
+    ],
+    "affectedLib": "com.101tec:zkclient:0.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.addthis:bark:2.1.1",
+    "coordinatesV2": "com.addthis:bark:2.0.2",
+    "caller": "|java+method:///com/addthis/bark/ZkCmdLine/getFamily(java.lang.String)|",
+    "called": "|java+method:///org/I0Itec/zkclient/ZkClient/countChildren(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///com/addthis/bark/ZkCmdLine/getFamily(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/I0Itec/zkclient/ZkClient/countChildren(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/I0Itec/zkclient/ZkClient/getChildren(java.lang.String)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///com/addthis/bark/ZkCmdLine/getFamily(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/curator/framework/CuratorFramework/getChildren()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/curator/framework/api/GetChildrenBuilder/forPath(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "com.101tec:zkclient:0.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.addthis:bark:2.1.1",
+    "coordinatesV2": "com.addthis:bark:2.0.2",
+    "caller": "|java+method:///com/addthis/bark/ZkGroupMembership/removeFromGroup(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/I0Itec/zkclient/ZkClient/deleteRecursive(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/I0Itec/zkclient/ZkClient/deleteRecursive(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/curator/framework/api/BackgroundVersionable/forPath(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/curator/framework/api/DeleteBuilder/deletingChildrenIfNeeded()|",
+      "|java+method:///org/apache/curator/framework/CuratorFramework/delete()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "com.101tec:zkclient:0.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.addthis:bark:2.1.1",
+    "coordinatesV2": "com.addthis:bark:2.0.2",
+    "caller": "|java+method:///com/addthis/bark/ZkStartUtil/stopKeepers()|",
+    "called": "|java+method:///org/I0Itec/zkclient/ZkClient/close()|",
+    "v1Body": [
+      "|java+method:///com/addthis/bark/ZkStartUtil/onAfterZKStop()|",
+      "|java+method:///com/addthis/bark/EmbeddedZookeeper/shutdown()|",
+      "|java+method:///org/I0Itec/zkclient/ZkClient/close()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/curator/test/TestingServer/stop()|",
+      "|java+method:///org/apache/curator/framework/CuratorFramework/close()|",
+      "|java+method:///com/addthis/bark/ZkStartUtil/onAfterZKStop()|"
+    ],
+    "affectedLib": "com.101tec:zkclient:0.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.addthis:bark:2.1.1",
+    "coordinatesV2": "com.addthis:bark:2.0.2",
+    "caller": "|java+method:///com/addthis/bark/ZkCmdLine/cmdCopyZnode()|",
+    "called": "|java+constructor:///org/I0Itec/zkclient/ZkClient/ZkClient(java.lang.String,int,int,org.I0Itec.zkclient.serialize.ZkSerializer)|",
+    "v1Body": [
+      "|java+method:///com/addthis/bark/ZkCmdLine/copyZnode(java.lang.String,java.lang.String,org.I0Itec.zkclient.ZkClient,org.I0Itec.zkclient.ZkClient)|",
+      "|java+constructor:///org/I0Itec/zkclient/ZkClient/ZkClient(java.lang.String,int,int,org.I0Itec.zkclient.serialize.ZkSerializer)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///com/addthis/bark/StringSerializer/StringSerializer()|",
+      "|java+method:///org/apache/commons/cli/CommandLine/getOptionValue(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/commons/cli/CommandLine/hasOption(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/curator/framework/CuratorFrameworkFactory/newClient(java.lang.String,int,int,org.apache.curator.RetryPolicy)|",
+      "|java+constructor:///org/apache/curator/retry/RetryOneTime/RetryOneTime(int)|",
+      "|java+method:///com/addthis/bark/ZkCmdLine/copyZnode(java.lang.String,java.lang.String,org.apache.curator.framework.CuratorFramework,org.apache.curator.framework.CuratorFramework)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/commons/cli/CommandLine/getOptionValue(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/commons/cli/CommandLine/hasOption(java.lang.String)|"
+    ],
+    "affectedLib": "com.101tec:zkclient:0.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.addthis:bark:2.1.1",
+    "coordinatesV2": "com.addthis:bark:2.0.2",
+    "caller": "|java+method:///com/addthis/bark/ZkCmdLine/cmdDelete()|",
+    "called": "|java+method:///org/I0Itec/zkclient/ZkClient/delete(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/I0Itec/zkclient/ZkClient/delete(java.lang.String)|",
+      "|java+method:///org/apache/commons/cli/CommandLine/getOptionValue(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/curator/framework/CuratorFramework/delete()|",
+      "|java+method:///org/apache/curator/framework/api/DeleteBuilder/forPath(java.lang.String)|",
+      "|java+method:///org/apache/commons/cli/CommandLine/getOptionValue(java.lang.String)|"
+    ],
+    "affectedLib": "com.101tec:zkclient:0.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.addthis:bark:2.1.1",
+    "coordinatesV2": "com.addthis:bark:2.0.2",
+    "caller": "|java+method:///com/addthis/bark/ZkCmdLine/cmdKids()|",
+    "called": "|java+method:///org/I0Itec/zkclient/ZkClient/getChildren(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/I0Itec/zkclient/ZkClient/getChildren(java.lang.String)|",
+      "|java+method:///org/apache/commons/cli/CommandLine/getOptionValue(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/curator/framework/CuratorFramework/getChildren()|",
+      "|java+method:///org/apache/curator/framework/api/GetChildrenBuilder/forPath(java.lang.String)|",
+      "|java+method:///org/apache/commons/cli/CommandLine/getOptionValue(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.Object)|"
+    ],
+    "affectedLib": "com.101tec:zkclient:0.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.addthis:bark:2.1.1",
+    "coordinatesV2": "com.addthis:bark:2.0.2",
+    "caller": "|java+method:///com/addthis/bark/ZkCmdLine/cmdCopyZnodeRecur()|",
+    "called": "|java+constructor:///org/I0Itec/zkclient/ZkClient/ZkClient(java.lang.String,int,int,org.I0Itec.zkclient.serialize.ZkSerializer)|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///org/I0Itec/zkclient/ZkClient/ZkClient(java.lang.String,int,int,org.I0Itec.zkclient.serialize.ZkSerializer)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/addthis/bark/ZkCmdLine/flatten(java.util.List)|",
+      "|java+constructor:///com/addthis/bark/StringSerializer/StringSerializer()|",
+      "|java+method:///org/apache/commons/cli/CommandLine/getOptionValue(java.lang.String)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/addthis/bark/ZkCmdLine/getFamily(java.lang.String)|",
+      "|java+method:///com/addthis/bark/ZkCmdLine/copyZnode(java.lang.String,java.lang.String,org.I0Itec.zkclient.ZkClient,org.I0Itec.zkclient.ZkClient)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/commons/cli/CommandLine/hasOption(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/curator/framework/CuratorFrameworkFactory/newClient(java.lang.String,int,int,org.apache.curator.RetryPolicy)|",
+      "|java+method:///com/addthis/bark/ZkCmdLine/getFamily(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///org/apache/curator/retry/RetryOneTime/RetryOneTime(int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/addthis/bark/ZkCmdLine/flatten(java.util.List)|",
+      "|java+method:///org/apache/commons/cli/CommandLine/getOptionValue(java.lang.String)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/commons/cli/CommandLine/hasOption(java.lang.String)|",
+      "|java+method:///com/addthis/bark/ZkCmdLine/copyZnode(java.lang.String,java.lang.String,org.apache.curator.framework.CuratorFramework,org.apache.curator.framework.CuratorFramework)|",
+      "|java+method:///java/util/Iterator/next()|"
+    ],
+    "affectedLib": "com.101tec:zkclient:0.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.addthis:bark:2.1.1",
+    "coordinatesV2": "com.addthis:bark:2.0.2",
+    "caller": "|java+constructor:///com/addthis/bark/ZkCmdLine/ZkCmdLine(org.apache.commons.cli.CommandLine)|",
+    "called": "|java+constructor:///org/I0Itec/zkclient/ZkClient/ZkClient(java.lang.String,int,int,org.I0Itec.zkclient.serialize.ZkSerializer)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/I0Itec/zkclient/ZkClient/ZkClient(java.lang.String,int,int,org.I0Itec.zkclient.serialize.ZkSerializer)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///com/addthis/bark/StringSerializer/StringSerializer()|",
+      "|java+method:///org/apache/commons/cli/CommandLine/getOptionValue(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/curator/framework/CuratorFrameworkFactory/newClient(java.lang.String,int,int,org.apache.curator.RetryPolicy)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/apache/curator/retry/RetryOneTime/RetryOneTime(int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/commons/cli/CommandLine/getOptionValue(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "com.101tec:zkclient:0.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.addthis:bark:2.1.1",
+    "coordinatesV2": "com.addthis:bark:2.0.2",
+    "caller": "|java+method:///com/addthis/bark/ZkCmdLine/cmdExportChildren()|",
+    "called": "|java+method:///org/I0Itec/zkclient/ZkClient/getChildren(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/I0Itec/zkclient/ZkClient/getChildren(java.lang.String)|",
+      "|java+method:///org/apache/commons/cli/CommandLine/getOptionValue(java.lang.String)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/io/PrintStream/println(java.lang.Object)|",
+      "|java+method:///com/addthis/bark/ZkCmdLine/exportPath(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/curator/framework/CuratorFramework/getChildren()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/curator/framework/api/GetChildrenBuilder/forPath(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/commons/cli/CommandLine/getOptionValue(java.lang.String)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/io/PrintStream/println(java.lang.Object)|",
+      "|java+method:///com/addthis/bark/ZkCmdLine/exportPath(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "com.101tec:zkclient:0.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.addthis:bark:2.1.1",
+    "coordinatesV2": "com.addthis:bark:2.0.2",
+    "caller": "|java+method:///com/addthis/bark/ZkCmdLine/cleanNodeJsonString(java.lang.String)|",
+    "called": "|java+method:///org/I0Itec/zkclient/ZkClient/writeData(java.lang.String,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///org/I0Itec/zkclient/ZkClient/writeData(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/String/indexOf(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/addthis/bark/ZkHelpers/readData(org.I0Itec.zkclient.ZkClient,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/curator/framework/CuratorFramework/setData()|",
+      "|java+method:///org/apache/curator/framework/api/GetDataBuilder/forPath(java.lang.String)|",
+      "|java+method:///org/apache/curator/framework/CuratorFramework/getData()|",
+      "|java+method:///com/addthis/bark/StringSerializer/deserialize(byte%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/String/indexOf(java.lang.String)|",
+      "|java+method:///org/apache/curator/framework/api/SetDataBuilder/forPath(java.lang.String,byte%5B%5D)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///com/addthis/bark/StringSerializer/serialize(java.lang.Object)|"
+    ],
+    "affectedLib": "com.101tec:zkclient:0.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.addthis:bark:2.0.2",
+    "coordinatesV2": "com.addthis:bark:2.1.1",
+    "caller": "|java+method:///com/addthis/bark/ZkStartUtil/stopKeepers()|",
+    "called": "|java+method:///org/apache/curator/test/TestingServer/stop()|",
+    "v1Body": [
+      "|java+method:///com/addthis/bark/ZkStartUtil/onAfterZKStop()|",
+      "|java+method:///com/addthis/bark/EmbeddedZookeeper/shutdown()|",
+      "|java+method:///org/I0Itec/zkclient/ZkClient/close()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/curator/test/TestingServer/stop()|",
+      "|java+method:///org/apache/curator/framework/CuratorFramework/close()|",
+      "|java+method:///com/addthis/bark/ZkStartUtil/onAfterZKStop()|"
+    ],
+    "affectedLib": "org.apache.curator:curator-test:2.4.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.addthis:bark:2.0.2",
+    "coordinatesV2": "com.addthis:bark:2.1.1",
+    "caller": "|java+method:///com/addthis/bark/ZkStartUtil/startKeepers()|",
+    "called": "|java+method:///org/apache/curator/test/TestingServer/getPort()|",
+    "v1Body": [
+      "|java+method:///com/addthis/bark/ZkStartUtil/onAfterZKStart()|",
+      "|java+method:///com/addthis/bark/EmbeddedZookeeper/getPort()|",
+      "|java+constructor:///org/I0Itec/zkclient/ZkClient/ZkClient(java.lang.String,int,int,org.I0Itec.zkclient.serialize.ZkSerializer)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/System/setProperty(java.lang.String,java.lang.String)|",
+      "|java+constructor:///com/addthis/bark/StringSerializer/StringSerializer()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///com/addthis/bark/EmbeddedZookeeper/EmbeddedZookeeper(int)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/String/valueOf(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/addthis/bark/ZkStartUtil/onAfterZKStart()|",
+      "|java+constructor:///org/apache/curator/retry/RetryOneTime/RetryOneTime(int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/System/setProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/curator/framework/CuratorFramework/start()|",
+      "|java+constructor:///org/apache/curator/test/TestingServer/TestingServer(int)|",
+      "|java+method:///org/apache/curator/framework/CuratorFrameworkFactory$Builder/connectString(java.lang.String)|",
+      "|java+method:///org/apache/curator/framework/CuratorFrameworkFactory/builder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/curator/test/TestingServer/getConnectString()|",
+      "|java+method:///org/apache/curator/test/TestingServer/getPort()|",
+      "|java+method:///org/apache/curator/framework/CuratorFrameworkFactory$Builder/build()|",
+      "|java+method:///org/apache/curator/framework/CuratorFrameworkFactory$Builder/retryPolicy(org.apache.curator.RetryPolicy)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/String/valueOf(int)|"
+    ],
+    "affectedLib": "org.apache.curator:curator-test:2.4.0",
+    "change": "ADDED"
+  }
+]
