@@ -175,7 +175,7 @@ epochs = 1  # We should increase it to at least 40 epochs, and check the corresp
 
 for fold in range(1,11):
     DATA_PATH = DATA_PATH_ABS + str(fold)
-    print(f"JURI FOLD {DATA_PATH}")
+    print(f"FOLD {DATA_PATH}")
     training_file = join(DATA_PATH,'training_data.csv')
     training_pairs = load_data(training_file)
 
