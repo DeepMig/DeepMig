@@ -1,4 +1,4 @@
-# FOCUS
+# DeepMig
 
 This repository contains the source code implementation of DeepMig and the datasets used to replicate the experimental results of our paper submitted at ICSE 2023:
 
