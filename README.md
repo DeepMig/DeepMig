@@ -19,7 +19,7 @@ This repository is organized as follows:
 	* [Code exctractor](https://github.com/MDEGroup/aethereal/): A set of tools written in Java and [Rascal](https://www.rascal-mpl.org/) that are used to (i) transform raw Java source and binary code into DeepMig-processable data (ii) navigate the Maven Dependency Graph.
 	* [DeepLib](https://github.com/MDEGroup/DeepLib): The _DeepLib_ baseline for library migrations.
 	* [OpenRewrite](https://docs.openrewrite.org/): The _OpenRewrite_ baseline for code migration.
-* The [dataset](./dataset) directory contains the datasets described in the paper that we use to evaluate FOCUS:
+* The [dataset](./dataset) directory contains the datasets described in the paper that we use to evaluate DeepMig:
 
 	* [DL](./dataset/DL): meta-data consisting of 122,340 software projects relying on 35,543 TPLs,
 	* [DC](./dataset/DC): meta-data consisting of 3,699 update pairs counting 16,850 migration pairs,
